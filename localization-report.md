@@ -595,6 +595,8 @@
 * Archive Datetime: 2016-10-29 00:52:26
 * Handback File: [adallom_md.d1b518bca7d9aa221b90dc6cc2195be3f8c83d00.fr-fr.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/b0e0e0b580f062e52b8b079641826115403f3b3d/ol-handback/Microsoft/CloudAppSecurityDocs-pr.fr-fr/live/ht/adallom_md.d1b518bca7d9aa221b90dc6cc2195be3f8c83d00.fr-fr.xlf)
 * Handback Datetime: 2016-11-03 08:07:16
+* Bilingual File: [adallom_md.d1b518bca7d9aa221b90dc6cc2195be3f8c83d00.fr-fr.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/b0e0e0b580f062e52b8b079641826115403f3b3d/ol-handback/Microsoft/CloudAppSecurityDocs-pr.fr-fr/live/ht/adallom_md.d1b518bca7d9aa221b90dc6cc2195be3f8c83d00.fr-fr.xlf)
+* Bilingual Datetime: 2016-11-03 08:09:23
 * [Back to Top](#report-top)
 
 ##### <a name='2e7cec9538ebefe236d29dfaa1d2abcbbce98b9c30'></a> Source: [CloudAppSecurityDocs\includes\adallom1_md.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/8841b5eca8285935ec4b4c6134bd7514a2dc6ac9/CloudAppSecurityDocs/includes/adallom1_md.md)
@@ -607,6 +609,8 @@
 * Archive Datetime: 2016-10-29 00:52:26
 * Handback File: [adallom1_md.48f9b8ef1547f0fc495a6958228ba1fdb0ffffc1.fr-fr.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/b0e0e0b580f062e52b8b079641826115403f3b3d/ol-handback/Microsoft/CloudAppSecurityDocs-pr.fr-fr/live/ht/adallom1_md.48f9b8ef1547f0fc495a6958228ba1fdb0ffffc1.fr-fr.xlf)
 * Handback Datetime: 2016-11-03 08:07:16
+* Bilingual File: [adallom1_md.48f9b8ef1547f0fc495a6958228ba1fdb0ffffc1.fr-fr.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/b0e0e0b580f062e52b8b079641826115403f3b3d/ol-handback/Microsoft/CloudAppSecurityDocs-pr.fr-fr/live/ht/adallom1_md.48f9b8ef1547f0fc495a6958228ba1fdb0ffffc1.fr-fr.xlf)
+* Bilingual Datetime: 2016-11-03 08:09:23
 * [Back to Top](#report-top)
 
 ##### <a name='6e3913969e7c7ef949c149dc1d2e7a1befe0c85c32'></a> Source: [CloudAppSecurityDocs\index.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/dbd7814886fc79f0b9cccd55570547b0b7736c32/CloudAppSecurityDocs/index.md)
