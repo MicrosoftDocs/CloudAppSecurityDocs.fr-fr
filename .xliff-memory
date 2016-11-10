@@ -258,7 +258,7 @@
       "ArchivedDateTime": "2016-11-10T01:24:03.3843112Z",
       "SkeletonFile": "ol-xliffcache\\Microsoft\\CloudAppSecurityDocs-pr.fr-fr\\live\\ca51d36a6d899124d3d4eb84ded1972ad9c8bab4.556a51b8c87104c5f82a405e89d8b1d834f42dd0.xml",
       "LocXliff": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.fr-fr\\live\\ht\\anomaly-detection-policy.dd2b5dd1893cc80c78ec83f5577ce52762e7088f.fr-fr.xlf",
-      "LocXliffCommit": "14198260b7d797a2cb6fdc25695481d07288998b"
+      "LocXliffCommit": "bb8f713332910dbfd9b93e3d6472de3b6bab9fa5"
     },
     "CloudAppSecurityDocs\\index.md.c22b51cd2b9cea6ea29bf2395e8f08431e0321d9.HT": {
       "SourceFilename": "CloudAppSecurityDocs\\index.md",
@@ -457,8 +457,8 @@
       "IsArchived": true,
       "ArchivedDateTime": "2016-11-10T01:24:03.3999359Z",
       "SkeletonFile": "ol-xliffcache\\Microsoft\\CloudAppSecurityDocs-pr.fr-fr\\live\\3ea2fbe78b943513a1b6ce483bc50ed5d79ae7c5.9b2c82712ff7670b0e989be897dd0fd41dd71826.xml",
-      "LocXliff": null,
-      "LocXliffCommit": null
+      "LocXliff": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.fr-fr\\live\\ht\\enable-instant-visibility-protection-and-governance-actions-for-your-apps.cb5f69f35a41584708bb295f6c3c5c18850d95a6.fr-fr.xlf",
+      "LocXliffCommit": "bb8f713332910dbfd9b93e3d6472de3b6bab9fa5"
     },
     "CloudAppSecurityDocs\\TOC.md.4f5d3a3fd87b6fc6ae1eb71c621fbcd73cf72036.HT": {
       "SourceFilename": "CloudAppSecurityDocs\\TOC.md",
