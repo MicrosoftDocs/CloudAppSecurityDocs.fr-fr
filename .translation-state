@@ -866,9 +866,9 @@
       "ArchiveFileCommit": "4853af8fbfe905e3804ad585cdc25c7818d49fcf",
       "ArchiveFileDateTime": "2016-10-29T00:52:26.6840165Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.fr-fr\\live\\ht\\file-filters.9e3bd07111b91fd128d2565e14937c0a6ac16bf3.fr-fr.xlf",
+      "BilingualFileCommit": "fab05be5be948eea6d610ef985d4ede44e2f01e4",
+      "BilingualDateTime": "2016-11-10T13:00:56.7288003Z",
       "BilingualException": null
     },
     "1b131e3918a7623995656f03ba98aca698e3b0c9": {
@@ -904,9 +904,9 @@
       "ArchiveFileCommit": "4853af8fbfe905e3804ad585cdc25c7818d49fcf",
       "ArchiveFileDateTime": "2016-10-29T00:52:26.6840165Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.fr-fr\\live\\ht\\general-setup.8c0e330c3c16247d99408f1ffadf9002e1a7b5dd.fr-fr.xlf",
+      "BilingualFileCommit": "fab05be5be948eea6d610ef985d4ede44e2f01e4",
+      "BilingualDateTime": "2016-11-10T13:00:56.7288003Z",
       "BilingualException": null
     },
     "8b454edde557c408b644c9bff6f7bf6136ba9819": {
@@ -1122,9 +1122,9 @@
       "ArchiveFileCommit": "4853af8fbfe905e3804ad585cdc25c7818d49fcf",
       "ArchiveFileDateTime": "2016-10-29T00:52:26.6840165Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.fr-fr\\live\\ht\\investigate.52cb9236b6eb01254d5743c7e2666eef6f5b6adc.fr-fr.xlf",
+      "BilingualFileCommit": "fab05be5be948eea6d610ef985d4ede44e2f01e4",
+      "BilingualDateTime": "2016-11-10T13:00:56.7288003Z",
       "BilingualException": null
     },
     "8fd13ae3b7d8d7ffcb7dfea604239d245145e1f8": {
