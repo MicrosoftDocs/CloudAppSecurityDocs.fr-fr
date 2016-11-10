@@ -14,8 +14,8 @@ ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: e74cd96f9bf8537f230dcb58715492bc6fccd2f0
+ms.sourcegitcommit: 14de5a6b28c6593250a1a7827905fb0f8a6482b5
+ms.openlocfilehash: 3ea2fbe78b943513a1b6ce483bc50ed5d79ae7c5
 
 
 ---
@@ -24,11 +24,6 @@ ms.openlocfilehash: e74cd96f9bf8537f230dcb58715492bc6fccd2f0
 Les connecteurs d’applications utilisent les API des fournisseurs d’applications pour que Cloud App Security bénéficie d’une plus grande visibilité et d’un plus grand contrôle sur les applications auxquelles vous vous connectez.  
   
 Cloud App Security s’appuie sur les API données par le fournisseur de cloud, et chaque service a ses propres infrastructure et limitations d’API. Cloud App Security utilise les services pour optimiser l’utilisation des API et pour garantir des performances optimales. Compte tenu des différentes limitations qu’imposent les services aux API (telles que les limites d’API et les fenêtres d’API de décalage temporel dynamique), les moteurs Cloud App Security tirent parti de la capacité autorisée. Certaines opérations, comme l’analyse de tous les fichiers dans le client, nécessitent une grande quantité d’API et sont donc réparties sur une longue période. Il est normal que certaines stratégies s’exécutent pendant plusieurs heures ou jours.  
-  
-**ExpressRoute**  
-  
-Cloud App Security est déployé dans Azure et entièrement intégré à [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/). Toutes les interactions avec les applications Cloud App Security et le trafic envoyé vers Cloud App Security, notamment le chargement des journaux de découverte, sont acheminés via l’**homologation publique** ExpressRoute pour améliorer la latence, les performances et la sécurité. Aucune étape de configuration n’est nécessaire côté client.  
-Pour plus d’informations sur l’homologation publique, consultez [Circuits ExpressRoute et domaines de routage](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/).  
   
 ## <a name="how-it-works"></a>Fonctionnement  
 Cloud App Security est déployé avec des privilèges d’administrateur système qui autorisent un accès complet à tous les objets de votre environnement.  
@@ -71,10 +66,9 @@ Selon l’application à laquelle vous vous connectez (voir le tableau ci-dessou
      Possibilité de supprimer des jetons.  
   
 Le tableau suivant répertorie, par application cloud, les fonctionnalités prises en charge avec les connecteurs d’applications :  
-  
-||||||||||  
-|-|-|-|-|-|-|-|-|-|  
+
 ||**Office 365**|**Box**|**Okta**|**Google Apps**|**ServiceNow**|**Salesforce**|**Dropbox**|**AWS**|  
+|-|-|-|-|-|-|-|-|-|  
 |**Répertorier les comptes**|✔|✔|✔|✔|✔|✔|✔|✔|  
 |**Groupe**|✔|✔|✔|✔|✔|✔|✔|✔|  
 |**Privilèges**|✔|✔|Non prise en charge par le fournisseur|✔|✔|✔|✔||  
@@ -121,6 +115,12 @@ Pour utiliser des connecteurs d’applications, vous devez vérifier que vous av
 |ServiceNow|Eureka et au-dessus|Administrateur + rôle RestAPI|  
 |Salesforce||Administrateur|  
   
+
+**ExpressRoute**  
+  
+Cloud App Security est déployé dans Azure et entièrement intégré à [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/). Toutes les interactions avec les applications Cloud App Security et le trafic envoyé vers Cloud App Security, notamment le chargement des journaux de découverte, sont acheminés via l’**homologation publique** ExpressRoute pour améliorer la latence, les performances et la sécurité. Aucune étape de configuration n’est nécessaire côté client.  
+Pour plus d’informations sur l’homologation publique, consultez [Circuits ExpressRoute et domaines de routage](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/).  
+  
 ## <a name="see-also"></a>Voir aussi  
 [Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)   
 [Pour obtenir un support technique, visitez la page de support assisté Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
@@ -129,6 +129,6 @@ Pour utiliser des connecteurs d’applications, vous devez vérifier que vous av
    
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 
