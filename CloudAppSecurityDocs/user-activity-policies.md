@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/8/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: 99d5fd37-d922-4269-b557-86d7f84180eb
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: a88691fbe6c23fa537133c077402d8e9e1121047
+ms.sourcegitcommit: 97f270813beae64bf0572ac9e806290e4c2fcd22
+ms.openlocfilehash: e66cc36b7ff2591c9eff2b7399e7aba7304fd960
 
 
 ---
@@ -42,7 +42,7 @@ Pour créer une stratégie d’activité, procédez comme suit :
 4.  Pour définir les actions ou autres mesures susceptibles de déclencher cette stratégie, utilisez les **Filtres d’activité**.  
   
 5.  Sous **Paramètres de correspondance de l’activité**, indiquez si une violation de stratégie est déclenchée quand une seule activité satisfait aux filtres ou si une violation est détectée uniquement quand un **Nombre d’activités répétées** spécifié est constaté.  
-    Si vous choisissez **Activité répétée**, définissez les activités susceptibles de déclencher l’alerte, le nombre d’activités, la durée et si une violation est considérée comme telle pour un utilisateur dans une application spécifique ou pour un même utilisateur avec n’importe quelle application.  
+    Si vous choisissez **Activité répétée**, vous pouvez définir **Grouper les activités correspondantes par application**. Cela déclenche une correspondance de stratégie uniquement lorsque les activités répétées se produisent dans la même application (par exemple, 5 téléchargements depuis Box).  
   
 6.  Configurez les **Actions** à effectuer quand une correspondance est trouvée.  
   
@@ -133,6 +133,6 @@ Chaque stratégie comprend les éléments suivants :
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

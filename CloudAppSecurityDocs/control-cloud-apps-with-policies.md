@@ -14,8 +14,8 @@ ms.assetid: 14d10238-0f61-43e9-ab96-71534a27d3d4
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 10b4a9575951007dbee9003fd061fb5aaa2d3823
+ms.sourcegitcommit: 2cb87afa3c5342e01cfd4049669ac4b3b7efa4fe
+ms.openlocfilehash: 36f249cbb900bdb516ea6909a0ed6c76b4ea3ab4
 
 
 ---
@@ -26,15 +26,18 @@ Grâce aux stratégies, vous pouvez définir la façon dont vous souhaitez que v
 Par exemple, le type de stratégie à mettre en place diffère selon que vous souhaitez mettre en quarantaine une menace de violation de données ou empêcher votre organisation d’utiliser une application cloud à risque.  
   
 ## <a name="policy-types"></a>Types de stratégies  
+Lorsque vous examinez la page **Stratégie**, les différentes stratégies et les différents modèles peuvent être distingués par type et par icône pour savoir quelles stratégies seront disponibles. Les stratégies disponibles dépendent de la source de données et de ce que vous avez activé dans Cloud App Security pour votre organisation ; par exemple, si vous avez téléchargé des journaux Cloud Discovery, les stratégies relatives à Cloud Discovery sont affichées.
+
 Vous pouvez créer les types de stratégies suivants :  
   
-|Type de stratégie|Utilisez|  
-|-----------------|---------|  
-|Stratégie d’activité|Grâce aux stratégies d’activité, vous pouvez appliquer une large gamme de processus automatisés en exploitant les API du fournisseur d’application. Ces stratégies vous permettent de surveiller des activités spécifiques effectuées par différents utilisateurs ou de suivre les taux anormalement élevés d’un certain type d’activité.|  
-|Stratégie de détection d’anomalie|Grâce aux stratégies de détection d’anomalie, vous pouvez rechercher les activités inhabituelles sur votre cloud en fonction des facteurs de risque que vous définissez ici, afin d’être averti en cas d’événement anormal par rapport aux activités de référence ou habituelles de votre organisation ou de l’utilisateur.|  
-|Stratégie de détection des anomalies de Cloud Discovery|Les stratégies de détection des anomalies de Cloud Discovery examinent les journaux que vous utilisez pour découvrir les applications cloud et recherchent les occurrences inhabituelles. À titre d’exemple, citons un utilisateur qui n’a jamais utilisé Dropbox et qui y charge soudainement 600 Go de données ou une application qui fait l’objet de transactions dans des proportions inhabituelles.|  
-|Stratégie de découverte d’application|Grâce aux stratégies de découverte d’application, vous pouvez définir des alertes qui vous informent quand de nouvelles applications sont détectées au sein de votre organisation.|  
-|Stratégie de fichier|Grâce aux stratégies de fichier, vous pouvez déterminer si vos applications cloud comportent certains fichiers ou types de fichiers (partagés, partagés avec des domaines externes) ou certaines données (informations propriétaires, PII, informations de carte de crédit, etc.) et appliquer des actions de gouvernance aux fichiers (les actions de gouvernance sont spécifiques aux applications cloud).|  
+|Icône de type de stratégie|Type de stratégie|Utilisez|  
+|-----|-----------------|---------|  
+|![Icône de stratégie d’activité](./media/activity_policy.png)|Stratégie d’activité|Grâce aux stratégies d’activité, vous pouvez appliquer une large gamme de processus automatisés en exploitant les API du fournisseur d’application. Ces stratégies vous permettent de surveiller des activités spécifiques effectuées par différents utilisateurs ou de suivre les taux anormalement élevés d’un certain type d’activité.|  
+|![Icône de stratégie de détection d’anomalie](./media/anomaly_detection_policy.png)|Stratégie de détection d’anomalie|Grâce aux stratégies de détection d’anomalie, vous pouvez rechercher les activités inhabituelles sur votre cloud en fonction des facteurs de risque que vous définissez ici, afin d’être averti en cas d’événement anormal par rapport aux activités de référence ou habituelles de votre organisation ou de l’utilisateur.|  
+|![Icône de stratégie Cloud Discovery](./media/discovery_policy.png)|Stratégie de découverte d’application|Grâce aux stratégies de découverte d’application, vous pouvez définir des alertes qui vous informent quand de nouvelles applications sont détectées au sein de votre organisation.|  
+|![Icône de stratégie de détection d’anomalie](./media/anomaly_detection_policy.png)|Stratégie de détection des anomalies de Cloud Discovery|Les stratégies de détection des anomalies de Cloud Discovery examinent les journaux que vous utilisez pour découvrir les applications cloud et recherchent les occurrences inhabituelles. À titre d’exemple, citons un utilisateur qui n’a jamais utilisé Dropbox et qui y charge soudainement 600 Go de données ou une application qui fait l’objet de transactions dans des proportions inhabituelles.|  
+|![Icône de champ de stratégie](./media/field_policy.png)|Stratégie de champ|Les stratégies de champ vous permettent d’analyser vos applications cloud afin de rechercher les champs de votre environnement cloud susceptibles de contenir des données sensibles comme des billets, des messages de conversation, des descriptions et des champs de texte long.|  
+|![Icône de stratégie de fichier](./media/file_policy.png)|Stratégie de fichier|Grâce aux stratégies de fichier, vous pouvez déterminer si vos applications cloud comportent certains fichiers ou types de fichiers (partagés, partagés avec des domaines externes) ou certaines données (informations propriétaires, PII, informations de carte de crédit, etc.) et appliquer des actions de gouvernance aux fichiers (les actions de gouvernance sont spécifiques aux applications cloud).|  
   
 ## <a name="identifying-risk"></a>Identification des risques  
 Cloud App Security vous permet d’atténuer différents risques dans le cloud. Vous pouvez configurer n’importe quelles stratégie et alerte à associer à un des risques suivants :  
@@ -153,6 +156,6 @@ Après avoir créé plusieurs stratégies, il peut arriver que les stratégies s
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Oct16_HO5-->
 
 

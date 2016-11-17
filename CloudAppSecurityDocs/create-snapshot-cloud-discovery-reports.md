@@ -14,8 +14,8 @@ ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 669d1c1942e8c7e930cd2421e9b56821eff04d12
+ms.sourcegitcommit: 400741713d40422a3b1c7680663a572d18e9c692
+ms.openlocfilehash: 650bf424d77f6cbcf11e24058ec54278cfd579f5
 
 
 ---
@@ -48,17 +48,16 @@ Pour créer un rapport d’instantané :
 Après le traitement de vos fichiers journaux, vous recevrez un e-mail pour vous avertir que l’opération est terminée. 
   
 9. Une bannière de notification s’affiche dans la barre d’état en haut du portail pour vous informer de l’état de traitement de vos fichiers journaux.  
-  
 ![barre de menus de traitement des fichiers journaux](./media/processing-log-file-menu-bar.png) 
-  
-     After the logs are uploaded successfully, you should see a notification letting you know that the log file processing completed successfully.  
    
-10. À ce stade, vous pouvez afficher le rapport en cliquant sur le lien dans la barre d’état, ou en accédant à la dent Paramètres et en sélectionnant **Paramètres Cloud Discovery**.   
+10. Une fois les journaux téléchargés, une notification vous informant que le traitement du fichier journal s’est terminé correctement doit s’afficher. À ce stade, vous pouvez afficher le rapport en cliquant sur le lien dans la barre d’état, ou en accédant à la dent Paramètres et en sélectionnant **Paramètres Cloud Discovery**.   
   
      ![onglet Paramètres Cloud Discovery](./media/discovery-settings-tab.png)
 11. Sélectionnez ensuite **Gérer des rapports d’instantanés** et votre rapport d’instantané.
  
 ![gestion des rapports d’instantanés](./media/snapshot-report-managment.png)
+
+  
       
 ## <a name="see-also"></a>Voir aussi  
 [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)   
@@ -69,6 +68,6 @@ Après le traitement de vos fichiers journaux, vous recevrez un e-mail pour vous
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Oct16_HO5-->
 
 

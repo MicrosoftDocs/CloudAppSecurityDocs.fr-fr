@@ -13,8 +13,8 @@ ms.technology: techgroup-identity
 ms.suite: ems
 ms.assetid: 0f64ab44-50c4-46b7-8071-533f31fe3627
 translationtype: Human Translation
-ms.sourcegitcommit: 88cabd2002947a31592e3bf523ce2d7abf4d7a01
-ms.openlocfilehash: b61ffbf820d94f41afb0f595700cf95ad6180445
+ms.sourcegitcommit: dbd7814886fc79f0b9cccd55570547b0b7736c32
+ms.openlocfilehash: 6e3913969e7c7ef949c149dc1d2e7a1befe0c85c
 
 
 ---
@@ -94,59 +94,21 @@ ms.openlocfilehash: b61ffbf820d94f41afb0f595700cf95ad6180445
             <section class="journey-step-elements content">
               <ul class="row">
                 <li class="column-third">
-                  <a href="./getting-started-with-cloud-app-security.md">
-                    <h3>Configuration générale</h3>
-                    <p>Effectuez les étapes de configuration de base pour Cloud App Security.</p>
-                  </a>
-                </li>
-                <li class="column-third">
                   <a href="./set-up-cloud-discovery.md">
                     <h3>Configurer Cloud Discovery</h3>
                     <p>Utilisez la fonctionnalité Cloud Discovery pour gagner en visibilité sur l’usage des applications cloud et l’informatique fantôme dans votre organisation.</p>
                   </a>
                 </li>
                 <li class="column-third">
-                  <a href="./configure-automatic-log-upload-for-continuous-reports.md">
-                    <h3>Configurer le chargement automatique des journaux</h3>
-                    <p>Configurez le chargement automatique des journaux pour des rapports Cloud Discovery continus.</p>
-                  </a>
-                </li>
-              </ul>
-            </section>
-          </li>
-       </section>
-    </div>
-<div id="journeys">
-      <section class="container">
-        <ul class="journeys-list">
-          <li class="journey-step">
-            <header class="journey-step-header row">
-              <a href="./deploy.md">
-                <div class="title column-third">
-                  <span class="step-number">3</span>
-                  <p>Déployer</p>
-                </div>
-                <p class="description column-two-thirds">Améliorez la visibilité des connexions d’API et déployez des stratégies pour gérer vos applications.</p>
-              </a>
-            </header>
-            <section class="journey-step-elements content">
-              <ul class="row">
-                <li class="column-third">
                   <a href="./enable-instant-visibility-protection-and-governance-actions-for-your-apps.md">
-                    <h3>Activer les connecteurs API</h3>
-                    <p>Activez les connecteurs API pour améliorer la visibilité des applications, dont Office 365, Google Apps, Box, Dropbox et bien plus encore.</p>
-                  </a>
-                </li>
-                <li class="column-third">
-                  <a href="./connect-office-365-to-microsoft-cloud-app-security.md">
-                    <h3>Connecter Office 365 à Cloud App Security</h3>
-                    <p>Connectez Cloud App Security à votre compte Microsoft Office 365 existant à l’aide de l’API du connecteur d’applications.</p>
+                    <h3>Connecter des applications</h3>
+                    <p>Connectez des applications cloud à Cloud App Security pour une visibilité et un contrôle accrus.</p>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="./control-cloud-apps-with-policies.md">
                     <h3>Contrôler les applications cloud avec des stratégies</h3>
-                    <p>Définissez des stratégies pour contrôler et gérer l’utilisation du cloud de votre organisation.</p>
+                    <p>Définissez des stratégies pour surveiller et gérer l’utilisation d’applications cloud dans votre organisation.</p>
                   </a>
                 </li>
               </ul>
@@ -162,7 +124,7 @@ ms.openlocfilehash: b61ffbf820d94f41afb0f595700cf95ad6180445
               <a href="./daily-activities-to-protect-your-cloud-environment.md">
                 <div class="title column-third">
                   <span class="step-number">4</span>
-                  <p>Utilisez</p>
+                  <p>Utiliser</p>
                 </div>
                 <p class="description column-two-thirds">Apprenez à utiliser Cloud App Security via ces activités quotidiennes qui vous aident à examiner et contrôler l’usage des applications cloud de votre organisation.</p>
               </a>
@@ -241,6 +203,6 @@ ms.openlocfilehash: b61ffbf820d94f41afb0f595700cf95ad6180445
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Oct16_HO5-->
 
 

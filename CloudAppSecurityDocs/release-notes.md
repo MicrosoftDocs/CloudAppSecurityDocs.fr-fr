@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 10/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,13 +14,30 @@ ms.assetid: 4949ab4f-22c3-4371-b2dc-c8422a097dfe
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 6f204a955d3186013691fe876e185286a55dd8af
+ms.sourcegitcommit: 400741713d40422a3b1c7680663a572d18e9c692
+ms.openlocfilehash: d95ddaef15cbb11f005156f272578f49f012e16d
 
 
 ---
 
 # <a name="release-notes"></a>Notes de publication
+
+## <a name="cloud-app-security-release-83"></a>Cloud App Security version 83
+Publication : 30 octobre 2016
+
+**Nouvelles fonctionnalités**
+-   Pour simplifier le filtrage dans le [journal d’activité](activity-filters.md) et le [journal de fichier](file-filters.md), les filtres similaires ont été regroupés. Utilisez les filtres d’activité : objet d’activité, adresse IP et utilisateur. Utilisez le filtre de fichier Collaborateurs pour trouver ce dont vous avez besoin.
+-   Dans le tiroir du journal d’activité, sous **Source**, vous pouvez cliquer sur le lien **Afficher les données brutes** afin de télécharger les données brutes utilisées pour générer le journal d’activité et ainsi accéder aux événements de l’application. 
+-   Prise en charge d’activités de connexion supplémentaires dans Okta. [Private preview]
+-   Prise en charge d’activités de connexion supplémentaires dans Salesforce. 
+
+**Améliorations**
+-   Plus grande facilité d’utilisation des rapports d’instantané Cloud Discovery et de la résolution des problèmes.
+-   Meilleure visibilité des alertes portant sur plusieurs applications dans la liste des alertes.
+-   Plus grande facilité d’utilisation lors de la création de nouveaux rapports continus Cloud Discovery.
+-   Plus grande facilité d’utilisation dans le journal de gouvernance.
+
+
 
 ## <a name="cloud-app-security-release-82"></a>Cloud App Security version 82
 Publication : 9 octobre 2016
@@ -198,6 +215,6 @@ Publication : 15 mai 2016
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Oct16_HO5-->
 
 
