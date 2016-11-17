@@ -2,12 +2,6 @@
   "92507e352a88cd0c5ff4a7bc9f66b94defd864ff": [
     "CloudAppSecurityDocs\\activity-filters.md"
   ],
-  "59e97ef0bd0a1f3ed388c3d21cfe6a70abf7936a": [
-    "CloudAppSecurityDocs\\activity-filters.md"
-  ],
-  "401801da8a4439b3dc0cf5c2f150c72e169a6d16": [
-    "CloudAppSecurityDocs\\activity-filters.md"
-  ],
   "ca51d36a6d899124d3d4eb84ded1972ad9c8bab4": [
     "CloudAppSecurityDocs\\anomaly-detection-policy.md"
   ],
@@ -17,19 +11,10 @@
   "132b4d296b26dd187418734b40d08ecb243692da": [
     "CloudAppSecurityDocs\\cloud-discovery-anomaly-detection-policy.md"
   ],
-  "481ca3d68e5e7aea006eeff443ec521a374e6e11": [
-    "CloudAppSecurityDocs\\cloud-discovery-anomaly-detection-policy.md"
-  ],
   "a43f96ec1d0f6047570677f07281b3e5ad42a40e": [
     "CloudAppSecurityDocs\\cloud-discovery-policies.md"
   ],
   "c6103fffd99295eb37ad575680b4169cbbac42df": [
-    "CloudAppSecurityDocs\\configure-automatic-log-upload-for-continuous-reports.md"
-  ],
-  "046cc96c15f76e4196c60f9864c835f4e6595dfa": [
-    "CloudAppSecurityDocs\\configure-automatic-log-upload-for-continuous-reports.md"
-  ],
-  "9672336d69f19875d160eb414bf3ca2c525692e1": [
     "CloudAppSecurityDocs\\configure-automatic-log-upload-for-continuous-reports.md"
   ],
   "4b9ab028bb45f77513217dd3784cefc73e984962": [
@@ -50,25 +35,16 @@
   "2f07956782fb266eaa2eab1b0b0459c2d57f69fc": [
     "CloudAppSecurityDocs\\connect-office-365-to-microsoft-cloud-app-security.md"
   ],
-  "25adba6d9c2586d3fed162673008cd4212e22401": [
-    "CloudAppSecurityDocs\\connect-office-365-to-microsoft-cloud-app-security.md"
-  ],
   "3fd8ada1ce622da339368c64ecc8b1d319b9c333": [
     "CloudAppSecurityDocs\\connect-okta-to-microsoft-cloud-app-security.md"
   ],
   "c11e133f78c3973006c3e70dd1ccd719f7b639aa": [
     "CloudAppSecurityDocs\\connect-okta-to-microsoft-cloud-app-security.md"
   ],
-  "51b7e5246703c4a48214dc98e7d9247fee746c77": [
-    "CloudAppSecurityDocs\\connect-okta-to-microsoft-cloud-app-security.md"
-  ],
   "28ce67bd096d82e3775a281359fc100e2c214715": [
     "CloudAppSecurityDocs\\connect-salesforce-to-microsoft-cloud-app-security.md"
   ],
   "03dc58139a6739f5cc4294c1913ed8b6a720a9d2": [
-    "CloudAppSecurityDocs\\connect-salesforce-to-microsoft-cloud-app-security.md"
-  ],
-  "104a023cb210ff8d23d2ce57f41c0f511446bc57": [
     "CloudAppSecurityDocs\\connect-salesforce-to-microsoft-cloud-app-security.md"
   ],
   "30ddba23a0c481cb434e9239950cce90c52efc4f": [
@@ -86,13 +62,7 @@
   "36f249cbb900bdb516ea6909a0ed6c76b4ea3ab4": [
     "CloudAppSecurityDocs\\control-cloud-apps-with-policies.md"
   ],
-  "10b4a9575951007dbee9003fd061fb5aaa2d3823": [
-    "CloudAppSecurityDocs\\control-cloud-apps-with-policies.md"
-  ],
   "650bf424d77f6cbcf11e24058ec54278cfd579f5": [
-    "CloudAppSecurityDocs\\create-snapshot-cloud-discovery-reports.md"
-  ],
-  "669d1c1942e8c7e930cd2421e9b56821eff04d12": [
     "CloudAppSecurityDocs\\create-snapshot-cloud-discovery-reports.md"
   ],
   "d07f8cfebd5654036078d474656a6e73e24d93d0": [
@@ -131,9 +101,6 @@
   "e67fecd17b26314720a34691f83464c59a244ea6": [
     "CloudAppSecurityDocs\\governance-actions.md"
   ],
-  "052ca8e20e75fcae7687d17687d7dd1a645ae5e6": [
-    "CloudAppSecurityDocs\\governance-actions.md"
-  ],
   "1b95273f4f639ebd4bc1d0200fed97b9c1acb02d": [
     "CloudAppSecurityDocs\\includes\\adallom_md.md"
   ],
@@ -144,9 +111,6 @@
     "CloudAppSecurityDocs\\index.md"
   ],
   "6e3913969e7c7ef949c149dc1d2e7a1befe0c85c": [
-    "CloudAppSecurityDocs\\index.md"
-  ],
-  "b61ffbf820d94f41afb0f595700cf95ad6180445": [
     "CloudAppSecurityDocs\\index.md"
   ],
   "fbd75fadb63bbaecd1e0dbd12b9162c0d17ce50e": [
@@ -896,19 +860,10 @@
   "d95ddaef15cbb11f005156f272578f49f012e16d": [
     "CloudAppSecurityDocs\\release-notes.md"
   ],
-  "6f204a955d3186013691fe876e185286a55dd8af": [
-    "CloudAppSecurityDocs\\release-notes.md"
-  ],
   "cfca549e1e16ca83972876626771a55d698530a2": [
     "CloudAppSecurityDocs\\set-up-cloud-discovery.md"
   ],
   "93dc54bc2e38d880561c15a0f167f8246e1a6741": [
-    "CloudAppSecurityDocs\\TOC.md"
-  ],
-  "5488120792de84065932030030cbaad10743dfc1": [
-    "CloudAppSecurityDocs\\TOC.md"
-  ],
-  "b4a73c596c7fc91e75c6304d208f01b0423517e7": [
     "CloudAppSecurityDocs\\TOC.md"
   ],
   "7446c3eb17befdf473c8841a0d92524c029f67df": [
@@ -921,9 +876,6 @@
     "CloudAppSecurityDocs\\troubleshooting-cloud-discovery.md"
   ],
   "e66cc36b7ff2591c9eff2b7399e7aba7304fd960": [
-    "CloudAppSecurityDocs\\user-activity-policies.md"
-  ],
-  "a88691fbe6c23fa537133c077402d8e9e1121047": [
     "CloudAppSecurityDocs\\user-activity-policies.md"
   ],
   "690e58cd598ee9a6dd329e19cd65129df160e009": [
