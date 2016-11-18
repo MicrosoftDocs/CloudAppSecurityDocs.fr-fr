@@ -6629,9 +6629,9 @@
       "ArchiveFileCommit": "27090f9f75e448ef81d456f12f715047a54fb320",
       "ArchiveFileDateTime": "2016-11-03T13:00:37.1041442Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.fr-fr\\live\\ht\\file-filters.9e3bd07111b91fd128d2565e14937c0a6ac16bf3.fr-fr.xlf",
+      "BilingualFileCommit": "0be2e36b135b0ff6cbddef6641fa73e3fdee0451",
+      "BilingualDateTime": "2016-11-18T15:27:25.5017532Z",
       "BilingualException": null
     },
     "5c93d5c0f15c0ed6dfd44c0629b8413cdc980e3f": {
@@ -6667,9 +6667,9 @@
       "ArchiveFileCommit": "27090f9f75e448ef81d456f12f715047a54fb320",
       "ArchiveFileDateTime": "2016-11-03T13:00:37.1041442Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.fr-fr\\live\\ht\\general-setup.8c0e330c3c16247d99408f1ffadf9002e1a7b5dd.fr-fr.xlf",
+      "BilingualFileCommit": "0be2e36b135b0ff6cbddef6641fa73e3fdee0451",
+      "BilingualDateTime": "2016-11-18T15:27:25.5017532Z",
       "BilingualException": null
     },
     "6e3913969e7c7ef949c149dc1d2e7a1befe0c85c": {

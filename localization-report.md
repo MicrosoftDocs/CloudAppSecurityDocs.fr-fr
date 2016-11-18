@@ -629,8 +629,8 @@
 * Archive Datetime: 2016-11-03 13:00:37
 * Handback File: [file-filters.9e3bd07111b91fd128d2565e14937c0a6ac16bf3.fr-fr.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/0be2e36b135b0ff6cbddef6641fa73e3fdee0451/ol-handback/Microsoft/CloudAppSecurityDocs-pr.fr-fr/live/ht/file-filters.9e3bd07111b91fd128d2565e14937c0a6ac16bf3.fr-fr.xlf)
 * Handback Datetime: 2016-11-18 15:26:35
-* Bilingual File: [file-filters.9e3bd07111b91fd128d2565e14937c0a6ac16bf3.fr-fr.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/fab05be5be948eea6d610ef985d4ede44e2f01e4/ol-handback/Microsoft/CloudAppSecurityDocs-pr.fr-fr/live/ht/file-filters.9e3bd07111b91fd128d2565e14937c0a6ac16bf3.fr-fr.xlf)
-* Bilingual Datetime: 2016-11-10 13:00:56
+* Bilingual File: [file-filters.9e3bd07111b91fd128d2565e14937c0a6ac16bf3.fr-fr.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/0be2e36b135b0ff6cbddef6641fa73e3fdee0451/ol-handback/Microsoft/CloudAppSecurityDocs-pr.fr-fr/live/ht/file-filters.9e3bd07111b91fd128d2565e14937c0a6ac16bf3.fr-fr.xlf)
+* Bilingual Datetime: 2016-11-18 15:27:25
 * [Back to Top](#report-top)
 
 ##### <a name='b617a488dec97deb7c1e1d89cbaa62e496e1889128'></a> Source: [CloudAppSecurityDocs\general-setup.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/2d39b26629579905ea30f3f769ca2a16121d51d1/CloudAppSecurityDocs/general-setup.md)
@@ -646,8 +646,8 @@
 * Current Target File: [CloudAppSecurityDocs\general-setup.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr.fr-fr/blob/d591743a8fd9e5fe1ee5403bc5568c436a8f6adc/CloudAppSecurityDocs/general-setup.md)
 * Current Handback File: [general-setup.8c0e330c3c16247d99408f1ffadf9002e1a7b5dd.fr-fr.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/0be2e36b135b0ff6cbddef6641fa73e3fdee0451/ol-handback/Microsoft/CloudAppSecurityDocs-pr.fr-fr/live/ht/general-setup.8c0e330c3c16247d99408f1ffadf9002e1a7b5dd.fr-fr.xlf)
 * Current Handback Datetime: 2016-11-18 15:26:35
-* Bilingual File: [general-setup.8c0e330c3c16247d99408f1ffadf9002e1a7b5dd.fr-fr.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/fab05be5be948eea6d610ef985d4ede44e2f01e4/ol-handback/Microsoft/CloudAppSecurityDocs-pr.fr-fr/live/ht/general-setup.8c0e330c3c16247d99408f1ffadf9002e1a7b5dd.fr-fr.xlf)
-* Bilingual Datetime: 2016-11-10 13:00:56
+* Bilingual File: [general-setup.8c0e330c3c16247d99408f1ffadf9002e1a7b5dd.fr-fr.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/0be2e36b135b0ff6cbddef6641fa73e3fdee0451/ol-handback/Microsoft/CloudAppSecurityDocs-pr.fr-fr/live/ht/general-setup.8c0e330c3c16247d99408f1ffadf9002e1a7b5dd.fr-fr.xlf)
+* Bilingual Datetime: 2016-11-18 15:27:25
 * [Back to Top](#report-top)
 
 ##### <a name='2e9307b5166566efa65f4766c0331c6aa15118e929'></a> Source: [CloudAppSecurityDocs\getting-started-with-cloud-app-security.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/224c7039ecb7200ad951774ac5fb76202543a35c/CloudAppSecurityDocs/getting-started-with-cloud-app-security.md)
