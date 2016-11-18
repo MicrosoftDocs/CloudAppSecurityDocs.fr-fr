@@ -10,12 +10,12 @@ ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
 ms.technology: 
-ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
+ms.assetid: 776d7589-acdb-4cb6-99a0-3be2f7b6aab2
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a413236b04726dddc69068e39967f6ad17218719
-ms.openlocfilehash: 03dc58139a6739f5cc4294c1913ed8b6a720a9d2
+ms.sourcegitcommit: 759692e7b270d87dc1becf88453d095f2382c411
+ms.openlocfilehash: 28ce67bd096d82e3775a281359fc100e2c214715
 
 
 ---
@@ -105,6 +105,6 @@ Après avoir connecté SalesForce, vous recevrez les événements comme suit : 
   
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Nov16_HO3-->
 
 

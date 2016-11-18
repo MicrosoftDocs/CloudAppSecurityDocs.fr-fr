@@ -10,12 +10,12 @@ ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
 ms.technology: 
-ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
+ms.assetid: a79bf393-0d2c-44b6-8dab-86c740fd7333
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a413236b04726dddc69068e39967f6ad17218719
-ms.openlocfilehash: 2f07956782fb266eaa2eab1b0b0459c2d57f69fc
+ms.sourcegitcommit: 759692e7b270d87dc1becf88453d095f2382c411
+ms.openlocfilehash: 31abf4ad6ee9326894592e1a98b3232bd4c03787
 
 
 ---
@@ -58,6 +58,6 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
   
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Nov16_HO3-->
 
 
