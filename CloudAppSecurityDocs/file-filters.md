@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 10/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,15 +14,23 @@ ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 1687dd8d98a2e44acbf3f8ad34f875cbbc0bcdd1
+ms.sourcegitcommit: 400741713d40422a3b1c7680663a572d18e9c692
+ms.openlocfilehash: 95dab01c101b6e6171c7985b6571ddb6b4ff5923
 
 
 ---
 
 # <a name="files"></a>Fichiers
 
-###  <a name="a-namefilefiltersa-file-filters"></a> Filtres de fichiers 
+Le journal des fichiers peut être filtré pour vous permettre de trouver des fichiers spécifiques. Le filtre de base fournit des outils efficaces pour démarrer le filtrage de vos fichiers.
+
+ ![filtre de journal de fichiers de base](media/file-log-filter-basic.png)
+
+Pour explorer des fichiers plus spécifiques, vous pouvez développer le filtre de base en cliquant sur Avancé.
+
+ ![filtre de journal de fichiers avancé](media/file-log-filter-advanced.png)
+ 
+###  <a name="a-namefilefiltersa-file-filters"></a><a name="Filefilters"></a> Filtres de fichiers 
  
 Cloud App Security peut surveiller n’importe quel type de fichier en fonction de plus de 20 filtres de métadonnées (par exemple, niveau d’accès, type de fichier). 
  
@@ -32,16 +40,14 @@ Vous trouverez ci-dessous la liste des filtres de fichiers qui peuvent être app
 > [!NOTE] 
 > Quand vous utilisez des filtres de stratégie, le filtre **Contains (Contient)** recherche uniquement des mots entiers, séparés par des virgules, points, espaces ou traits de soulignement. Par exemple, si vous recherchez **malware** ou **virus**, il trouve virus_malware_file.exe, mais pas malwarevirusfile.exe. Si vous recherchez **malware.exe**, vous obtenez tous les fichiers exe dont le nom contient malware ou exe, tandis que si vous recherchez **"malware.exe"** (avec les guillemets), vous n’obtenez que les fichiers dont le nom contient exactement « malware.exe ».  **Equals (Est égal à)** recherche uniquement la chaîne complète ; par exemple, si vous recherchez **malware.exe**, il trouve malware.exe, mais pas malware.exe.txt. 
 
-   
-![filtres de type policy_file](./media/policy_file-type-filters.png "policy_file type filters")  
-  
 -   Niveau d’accès : Niveau d’accès de partage, à savoir public, externe, interne ou privé.  Pour plus d’informations sur les fichiers externes, voir [Configuration générale, Configurer le portail](getting-started-with-cloud-app-security.md). Les fichiers internes sont tous les fichiers dans les domaines internes que vous définissez dans [Configuration générale](General-setup.md). Les fichiers externes sont tous les fichiers enregistrés à des emplacements hors des domaines internes que vous définissez. Les fichiers partagés ont un niveau de partage au-dessus du niveau privé, ce qui inclut le partage interne (fichiers partagés au sein de vos domaines internes), le partage externe (fichiers partagés dans des domaines qui ne figurent pas dans vos domaines internes), les fichiers publics avec un lien (fichiers qui peuvent être partagés avec tout le monde via un lien) et les fichiers publics (fichiers accessibles via une recherche sur Internet). 
 
 > [!NOTE]
->  Les fichiers partagés dans vos applications de stockage connectées par des utilisateurs externes sont gérés comme suit par Cloud App Security :     - **OneDrive :** OneDrive affecte un utilisateur interne en tant que propriétaire de tout fichier placé dans OneDrive par un utilisateur externe. Étant donné que ces fichiers sont alors considérés comme appartenant à votre organisation, Cloud App Security les analyse et applique des stratégies comme à tout autre fichier dans OneDrive.
-     - **Google Drive :** Google Drive les considère comme appartenant à l’utilisateur externe et, en raison de restrictions légales sur les fichiers et données qui ne sont pas la propriété de votre organisation, Cloud App Security n’a pas accès à ces fichiers.
-    - **Box :** Étant donné que Box considère les fichiers appartenant à des sources externes comme des informations privées, ses administrateurs généraux ne peuvent pas afficher le contenu des fichiers. Pour cette raison, Cloud App Security n’a pas accès à ces fichiers. 
-    - **Dropbox :** Étant donné que Dropbox considère les fichiers appartenant à des sources externes comme des informations privées, ses administrateurs généraux ne peuvent pas afficher le contenu des fichiers. Pour cette raison, Cloud App Security n’a pas accès à ces fichiers.
+>  Les fichiers partagés dans vos applications de stockage connectées par des utilisateurs externes sont gérées comme suit par Cloud App Security :
+> - **OneDrive :** OneDrive attribue un utilisateur interne en tant que propriétaire de tout fichier placé dans votre OneDrive par un utilisateur externe. Étant donné que ces fichiers sont alors considérés comme appartenant à votre organisation, Cloud App Security les analyse et applique des stratégies comme à tout autre fichier dans OneDrive.
+> - **Google Drive :** Google Drive les considère comme appartenant à l’utilisateur externe et, en raison de restrictions légales sur les fichiers et données qui ne sont pas la propriété de votre organisation, Cloud App Security n’a pas accès à ces fichiers.
+> - **Box :** étant donné que Box considère les fichiers appartenant à des sources externes comme des informations privées, ses administrateurs généraux ne peuvent pas afficher le contenu des fichiers. Pour cette raison, Cloud App Security n’a pas accès à ces fichiers. 
+> - **Dropbox :** étant donné que Dropbox considère les fichiers appartenant à des sources externes comme des informations privées, ses administrateurs généraux ne peuvent pas afficher le contenu des fichiers. Pour cette raison, Cloud App Security n’a pas accès à ces fichiers.
 
 -   Application : Recherchez uniquement des fichiers au sein de ces applications.  
   
@@ -57,21 +63,26 @@ Vous trouverez ci-dessous la liste des filtres de fichiers qui peuvent être app
   
 -   Date de création : Date de création du fichier. Le filtre prend en charge des dates antérieures/ultérieures ainsi qu’une plage de dates.  
   
--   Dernière modification : Date de modification du fichier. Le filtre prend en charge des dates antérieures/ultérieures, une plage de dates et des expressions temporelles relatives comme Tous les fichiers qui n’ont pas été modifiés au cours des 6 derniers mois.  
-  
 -   Extension : Concentrez-vous sur des extensions de fichier spécifiques, par exemple tous les fichiers exécutables (exe).  
   
 -   ID de fichier : Recherchez des ID de fichier spécifiques. Il s’agit d’une fonctionnalité avancée qui vous permet d’effectuer le suivi de certains fichiers de valeur sans dépendre de leur propriétaire/emplacement/nom.  
   
 -   Nom de fichier : Nom de fichier ou sous-chaîne du nom comme défini dans l’application cloud, par exemple, Tous les fichiers avec un mot de passe dans leur nom.  
   
+-   Balise de fichier : rechercher des fichiers avec des balises spécifiques définies par Azure Information Protection. Une intégration à Azure Information Protection est alors nécessaire.
+
 -   Type de fichier : Cloud App Security accepte le type MIME reçu du service et analyse le fichier pour déterminer le type de fichier réel. Notez que cette analyse concerne les fichiers qui sont appropriés pour l’analyse de données (documents, images, présentations, feuilles de calcul, fichiers texte et compressés/d’archive). Le filtre fonctionne selon le type de fichier/dossier, par exemple Tous les dossiers qui... ou Tous les fichiers de feuille de calcul qui...
 
 
-     ![mettre à la corbeille des filtres policy_file](./media/policy_file-filters-trash.png "policy_file filters trash")  
+ ![mettre à la corbeille des filtres policy_file](./media/policy_file-filters-trash.png "policy_file filters trash")  
+
   
 -   Dans la Corbeille : Excluez/Incluez des fichiers dans le dossier Corbeille. Ces fichiers peuvent quand même être partagés et représentent un risque.  
   
+-   Dernière modification : Date de modification du fichier. Le filtre prend en charge des dates antérieures/ultérieures, une plage de dates et des expressions temporelles relatives comme Tous les fichiers qui n’ont pas été modifiés au cours des 6 derniers mois.  
+
+-   Stratégie de mise en correspondance : fichiers qui sont mis en correspondance par une stratégie Cloud App Security active.
+
 -   Type MIME : Vérification du type MIME de fichier, accepte le texte libre.  
   
 -   Propriétaire : Incluez/Excluez des propriétaires de fichiers spécifiques, par exemple Suivre tous les fichiers partagés par employé_non autorisé_#100.  
@@ -133,6 +144,6 @@ Vous pouvez également définir la stratégie pour qu’elle s’exécute sur de
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Oct16_HO5-->
 
 
