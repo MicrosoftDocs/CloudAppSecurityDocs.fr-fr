@@ -1,6 +1,6 @@
 ---
 title: "Activités quotidiennes pour protéger votre environnement cloud | Documentation Microsoft"
-description: "Cet article fournit une base pour la procédure à suivre régulièrement dans Cloud App Security pour utiliser Cloud App Security afin de surveiller l’usage des applications cloud dans votre organisation."
+description: "Cet article fournit la procédure de base que vous devez effectuer régulièrement dans Cloud App Security pour surveiller l’utilisation des applications cloud dans votre organisation."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
@@ -14,114 +14,122 @@ ms.assetid: a835fa24-15c5-4bbb-a25a-688444040f1f
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: cc6a6e4b41b6660462c9c873469a1e8c9af97c4e
+ms.sourcegitcommit: 42cd06942ef90bc40a191bc12ddc12a18388430d
+ms.openlocfilehash: d07f8cfebd5654036078d474656a6e73e24d93d0
 
 
 ---
 
 # <a name="daily-activities-to-protect-your-cloud-environment"></a>Activités quotidiennes pour protéger votre environnement cloud
-Une fois que vous avez rendu Cloud App Security opérationnel et configuré des flux de données, approuvé toutes les applications que vos utilisateurs doivent pouvoir utiliser et défini des stratégies pour surveiller votre environnement cloud, le moment est venu d’utiliser Cloud App Security pour contrôler et protéger votre cloud, et gérer les risques.  
-  
-Cette rubrique décrit la procédure à suivre au quotidien.  
-  
+Une fois que Cloud App Security est opérationnel, vous devez configurer des flux de données, approuver les applications que vos utilisateurs doivent pouvoir utiliser et définir des stratégies pour surveiller votre environnement cloud. Vous pouvez ensuite utiliser Cloud App Security pour contrôler et protéger votre cloud, et pour gérer les risques.  
+
+Cette rubrique décrit la procédure à suivre au quotidien avec Cloud App Security.  
+
 ## <a name="check-the-dashboard"></a>Consulter le tableau de bord  
-Quand vous ouvrez le portail Cloud App Security, vous voyez une vue d’ensemble des alertes ouvertes, des violations d’activité, des violations de contenu, une carte d’activités qui indique les emplacements géographiques desquels provient l’activité utilisateur, ainsi que des tendances d’utilisation des applications connectées dans votre environnement cloud.  
-  
-Il est recommandé de consulter le tableau de bord tous les jours pour voir quelles nouvelles alertes ont été déclenchées afin de les gérer. Le tableau de bord est aussi l’endroit idéal pour garder un œil sur l’intégrité de votre environnement cloud car il vous donne un aperçu de ce qui se passe, de façon précise, au sein de tout votre environnement cloud.  
-  
-![tableau de bord](./media/dashboard.png "dashboard")  
-  
+Le tableau de bord Cloud App Security donne une vue d’ensemble des activités et des fonctionnalités, notamment :
+
+- Alertes ouvertes.
+- Violations d’activité.
+- Violations de contenu.
+- Carte des activités qui représente l’origine de l’activité des utilisateurs.
+- Tendances de l’utilisation des applications connectées dans votre environnement cloud.  
+
+Nous vous recommandons de vérifier le tableau de bord tous les jours pour voir les nouvelles alertes déclenchées. Le tableau de bord est aussi l’endroit idéal pour garder un œil sur l’intégrité de votre environnement cloud, car il vous donne un aperçu de ce qui se passe au sein de tout votre environnement cloud.  
+
+![Tableau de bord Cloud App Security](./media/dashboard.png "dashboard")  
+
 ## <a name="handle-your-alerts"></a>Gérer vos alertes  
-Les alertes constituent un bon point de départ pour comprendre votre environnement cloud de façon plus approfondie. Vous pouvez créer des stratégies selon ce que vous trouvez. Par exemple, vous pouvez observer qu’un administrateur se connecte depuis le Groenland et décider qu’à l’avenir vous allez créer une stratégie qui suspend automatiquement un compte d’administrateur quand il est utilisé pour se connecter depuis le Groenland.  
-  
-Il est judicieux de consulter toutes vos alertes et de les utiliser comme un outil pour modifier vos stratégies. Si des événements sans incidence sont considérés comme des violations par des stratégies existantes, vous devez affiner vos stratégies afin de recevoir moins d’alertes inutiles.  
-  
--   Sous **Alertes ouvertes**, cliquez sur **Afficher toutes les alertes**.  
-  
-     Cette opération donne une visibilité complète à toute activité ou violation suspecte de vos stratégies établies, ce qui vous permet de protéger le cadre de sécurité que vous avez défini pour votre environnement cloud.  
-  
-     ![alertes](./media/alerts.png "alerts")  
-  
--   Pour chaque alerte, vous devez examiner et déterminer la nature de la violation et la réponse requise.  
-  
-     Vous pouvez filtrer les alertes par **type d’alerte** ou par **gravité** afin de traiter d’abord les plus importantes.  
-  
-     Cliquez sur une alerte spécifique. Selon le type d’alerte dont il s’agit, vous recevez diverses actions pouvant être effectuées avant de résoudre l’alerte.  
-  
+Les alertes constituent un bon point de départ pour comprendre votre environnement cloud de façon plus approfondie. Vous pouvez créer des stratégies selon ce que vous trouvez. Par exemple, vous pouvez voir un administrateur qui se connecte depuis un emplacement inconnu. Vous pouvez créer une stratégie qui suspend automatiquement un compte d’administrateur quand celui-ci est utilisé pour se connecter depuis cet emplacement.  
+
+Il est judicieux d’examiner toutes vos alertes et de vous en servir pour modifier vos stratégies. Si des événements sans incidence sont considérés comme des violations de stratégies existantes, affinez vos stratégies afin de recevoir moins d’alertes inutiles.  
+
+1.   Sous **Alertes ouvertes**, cliquez sur **Afficher toutes les alertes**.  
+
+     Cette section du tableau de bord fournit une visibilité totale de toute activité suspecte ou des violations de vos stratégies établies. Elle vous aide à préserver le plan de sécurité que vous avez défini pour votre environnement cloud.  
+
+     ![Alertes](./media/alerts.png "alerts")  
+
+2.   Pour chaque alerte, vous devez examiner et déterminer la nature de la violation et la réponse requise.  
+
+     Vous pouvez filtrer les alertes par type d’alerte ou par gravité de façon à traiter d’abord les plus importantes.  
+
+     Sélectionnez une alerte spécifique. Selon le type d’alerte dont il s’agit, vous voyez différentes actions que vous pouvez entreprendre avant de résoudre l’alerte.  
+
      Il existe trois types de violations que vous devez traiter quand vous examinez les alertes :  
-  
-    -   Les **violations graves** qui nécessitent une réponse immédiate  
-  
-         Exemples :  
-  
-         Pour une alerte d’activité suspecte, vous pouvez suspendre le compte jusqu’à ce que l’utilisateur modifie son mot de passe.  
-  
-         Pour une fuite de données, vous pouvez restreindre les autorisations ou mettre le fichier en quarantaine.  
-  
-         Si un nouveau service non approuvé est découvert, vous pouvez bloquer l’accès au service sur votre proxy ou pare-feu.  
-  
-    -   Les **violations discutables** qui requièrent un examen plus approfondi  
-  
-         Vous pouvez contacter l’utilisateur ou le responsable de l’utilisateur pour lui demander la nature de l’activité.  
-  
-         Laissez l’activité ouverte jusqu’à ce que vous ayez plus d’informations.  
-  
-    -   Les **violations autorisées ou un comportement anormal** résultant d’une utilisation légitime  
-  
-         Supprimez l’alerte.  
-  
--   Quand vous avez terminé ce processus, marquez l’alerte comme résolue.  
-  
-Le tableau suivant fournit la liste des types d’alertes qui peuvent être déclenchés et les méthodes recommandées pour y remédier.  
-  
+
+    #### <a name="serious-violations"></a>Violations graves
+     Les violations graves nécessitent une réponse immédiate.
+
+         Examples:  
+
+         For a suspicious activity alert, you might want to suspend the account until the user changes their password.  
+
+         For a data leak you might want to restrict permissions or quarantine the file.  
+
+         If a new, unsanctioned service is discovered, you might want to block access to the service on your proxy or firewall.  
+
+    #### <a name="questionable-violations"></a>Violations contestables
+    Les violations contestables nécessitent un examen plus approfondi.  
+
+         You can contact the  user or the user's manager about the nature of the activity.  
+
+         Leave the activity open until you have more information.  
+
+ #### <a name="authorized-violations-or-anomalous-behavior"></a>Violations autorisées ou comportements anormaux
+ Les violations autorisées ou les comportements anormaux peuvent provenir d’une utilisation légitime.  
+
+         Dismiss the alert.  
+
+3.   Quand vous avez terminé ce processus, marquez l’alerte comme résolue.  
+
+Le tableau suivant contient une liste des types d’alertes qui peuvent être déclenchées et les méthodes recommandées pour y remédier.  
+
 |Type d’alerte|Description|Résolution recommandée|  
 |----------------|-----------------|----------------------------|  
-|Violation de stratégie d’activité|Ce type d’alerte est le résultat d’une stratégie que vous avez créée.|- Pour utiliser ce type d’alerte en bloc, il est recommandé de travailler directement depuis le Centre de stratégie pour les atténuer.<br />- Ajustez la stratégie pour exclure les entités bruyantes en ajoutant davantage de filtres et de contrôles plus granulaires.<br />- Si la stratégie est très précise, que l’alerte était justifiée et qu’il s’agit d’une violation que vous voulez arrêter immédiatement, envisagez de passer à une réponse automatisée, en ajoutant la correction automatique à la stratégie.|  
-|Violation de stratégie de fichier|Ce type d’alerte est le résultat d’une stratégie que vous avez créée.|- Pour utiliser ce type d’alerte en bloc, il est recommandé de travailler directement depuis le Centre de stratégie pour les atténuer.<br />- Ajustez la stratégie pour exclure les entités bruyantes en ajoutant davantage de filtres et de contrôles plus granulaires.<br />- Si la stratégie est très précise, que l’alerte était justifiée et qu’il s’agit d’une violation que vous voulez arrêter immédiatement, envisagez de passer à une réponse automatisée, en ajoutant la correction automatique à la stratégie.|  
-|Compte compromis|Ce type d’alerte se déclenche quand Cloud App Security identifie un compte qui a été compromis (la probabilité que le compte ait été utilisé de façon non autorisée est très élevée).|Il est recommandé de suspendre le compte jusqu’à ce que vous puissiez contacter l’utilisateur et vous assurer qu’il a modifié son mot de passe.|  
+|Violation de stratégie d’activité|Ce type d’alerte est le résultat d’une stratégie que vous avez créée.|Pour utiliser en bloc ce type d’alerte, il est recommandé de travailler directement depuis le Centre de stratégie pour les limiter.<br /><br /> Ajustez la stratégie pour exclure les entités générant du bruit en ajoutant davantage de filtres et de contrôles plus granulaires.<br /><br /> Si la stratégie est précise, que l’alerte est justifiée et qu’il s’agit d’une violation que vous voulez arrêter immédiatement, ajoutez une correction automatique dans la stratégie.|  
+|Violation de stratégie de fichier|Ce type d’alerte est le résultat d’une stratégie que vous avez créée.| Pour utiliser en bloc ce type d’alerte, il est recommandé de travailler directement depuis le Centre de stratégie pour les limiter.<br /><br /> Ajustez la stratégie pour exclure les entités générant du bruit en ajoutant davantage de filtres et des contrôles plus granulaires.<br /><br /> Si la stratégie est précise, que l’alerte est justifiée et qu’il s’agit d’une violation que vous voulez arrêter immédiatement, ajoutez une correction automatique dans la stratégie.|  
+|Compte compromis|Ce type d’alerte se déclenche quand Cloud App Security identifie un compte qui a été compromis, ce qui signifie que la probabilité que le compte a été utilisé de façon non autorisée est très élevée.|Il est recommandé de suspendre le compte tant que vous n’avez pas contacté l’utilisateur et vérifié qu’il a changé son mot de passe.|  
 |Compte inactif|Cette alerte se déclenche quand un compte n’est plus utilisé dans l’une de vos applications cloud connectées.|Contactez l’utilisateur et le responsable de l’utilisateur pour déterminer si le compte est encore actif. Si ce n’est pas le cas, suspendez l’utilisateur et mettez un terme à sa licence pour l’application.|  
-|Nouvel utilisateur administrateur|Cette alerte vous signale que des modifications ont été apportées dans vos comptes privilégiés pour des applications connectées.|Vérifiez que les nouvelles autorisations administratives sont effectivement nécessaires à l’utilisateur, et dans le cas contraire, n’hésitez pas à révoquer les privilèges d’administrateur pour réduire l’exposition à des risques.|  
-|Nouvel emplacement administrateur|Cette alerte vous signale que des modifications ont été apportées dans vos comptes privilégiés pour des applications connectées.|Vérifiez que la connexion depuis cet emplacement anormal était légitime, et dans le cas contraire, n’hésitez pas à révoquer les autorisations administratives ou à suspendre le compte pour réduire l’exposition à des risques.|  
+|Nouvel utilisateur administrateur|Cette alerte vous signale que des modifications ont été apportées dans vos comptes privilégiés pour des applications connectées.|Vérifiez que les nouvelles autorisations d’administration sont bien nécessaires pour l’utilisateur. Si ce n’est pas le cas, nous recommandons de révoquer les privilèges d’administrateur de façon à réduire l’exposition.|  
+|Nouvel emplacement administrateur|Cette alerte vous signale que des modifications ont été apportées dans vos comptes privilégiés pour des applications connectées.|Vérifiez que la connexion depuis cet emplacement anormal était légitime. Si ce n’est pas le cas, nous recommandons de révoquer les autorisations d’administration ou de suspendre le compte de façon à réduire l’exposition.|  
 |Nouvel emplacement|Il s’agit d’une alerte à titre d’information sur l’accès à une application connectée à partir d’un nouvel emplacement. Elle se déclenche une seule fois par pays.|Examinez les activités de l’utilisateur concerné.|  
-|Nouveau service découvert|Il s’agit d’une alerte concernant l’informatique fantôme : une nouvelle application a été détectée par Cloud Discovery.|<ul><li>Évaluez le risque du service en fonction du catalogue d’applications.</li><li>Explorez l’activité au niveau du détail pour en comprendre les modèles d’utilisation et la fréquence.</li><li>Décidez d’approuver ou de ne pas approuver l’application.<br /><br />     Pour les applications non approuvées :<br /><br /> <ul><li>Vous pouvez en bloquer l’utilisation dans votre pare-feu ou proxy.</li><li>Si l’application est non approuvée et que vous avez une application approuvée de la même catégorie, vous pouvez explorer l’alerte au niveau du détail et exporter la liste des utilisateurs de l’application non approuvée, pour ensuite les contacter afin de les inviter à migrer vers l’application approuvée.</li></ul></li></ul>|  
-|Activité suspecte|Cette alerte vous indique qu’une activité anormale qui n’est pas conforme aux activités ou utilisateurs attendus de votre organisation a été détectée.|Examinez le comportement et vérifiez-le auprès de l’utilisateur.<br /><br /> Ce type d’alerte est l’élément idéal pour en savoir plus sur votre environnement et créer des stratégies. Par exemple, si un utilisateur charge soudainement une grande quantité de données dans l’une de vos applications connectées, vous pouvez définir une règle pour gérer ce type de comportement anormal.|  
-|Utilisation suspecte du cloud|Cette alerte vous indique qu’une activité anormale qui n’est pas conforme aux activités ou utilisateurs attendus de votre organisation a été détectée.|Examinez le comportement et vérifiez-le auprès de l’utilisateur.<br /><br /> Ce type d’alerte est l’élément idéal pour en savoir plus sur votre environnement et créer des stratégies. Par exemple, si un utilisateur charge soudainement une grande quantité de données dans l’une de vos applications connectées, vous pouvez définir une règle pour gérer ce type de comportement anormal.|  
-|Utilisation d’un compte personnel|Cette alerte vous informe qu’un nouveau compte personnel a accès aux ressources de vos applications connectées.|Dans le compte externe, supprimez les collaborations de l’utilisateur.|  
-  
+|Nouveau service découvert|Il s’agit d’une alerte concernant l’informatique fantôme : une nouvelle application a été détectée par Cloud Discovery.|<ul><li>Évaluez le risque du service en fonction du catalogue d’applications.</li><li>Explorez l’activité au niveau du détail pour en comprendre les modèles d’utilisation et la fréquence.</li><li>Décidez d’approuver ou de ne pas approuver l’application.</li><br /></ul>Pour les applications non approuvées :<br /><br /><ul><li>Vous pouvez en bloquer l’utilisation dans votre pare-feu ou proxy.</li><li>Si vous avez une application non approuvée et une application approuvée dans la même catégorie, vous pouvez explorer une liste des utilisateurs de l’application non approuvée, puis les contacter pour les inviter à migrer vers l’application approuvée.</li></ul></li>|  
+|Activité suspecte|Cette alerte vous indique qu’une activité anormale qui n’est pas conforme aux activités ou utilisateurs attendus de votre organisation a été détectée.|Examinez le comportement et vérifiez-le auprès de l’utilisateur.<br /><br /> Ce type d’alerte est l’élément idéal pour en savoir plus sur votre environnement et créer des stratégies avec ces alertes. Par exemple, si un utilisateur charge soudainement une grande quantité de données dans l’une de vos applications connectées, vous pouvez définir une règle pour gérer ce type de comportement anormal.|  
+|Utilisation suspecte du cloud|Cette alerte vous indique qu’une activité anormale qui n’est pas conforme aux activités ou utilisateurs attendus de votre organisation a été détectée.|Examinez le comportement et vérifiez-le auprès de l’utilisateur.<br /><br /> Ce type d’alerte est l’élément idéal pour en savoir plus sur votre environnement et créer des stratégies avec ces alertes. Par exemple, si un utilisateur charge soudainement une grande quantité de données dans l’une de vos applications connectées, vous pouvez définir une règle pour gérer ce type de comportement anormal.|  
+|Utilisation d’un compte personnel|Cette alerte vous informe qu’un nouveau compte personnel a accès aux ressources de vos applications connectées.|Supprimez les collaborations de l’utilisateur dans le compte externe.|  
+
 ## <a name="use-policies-to-assess-risk"></a>Utiliser des stratégies pour évaluer les risques  
-Quand vous examinez vos alertes ouvertes, accédez au **Centre de stratégie** pour passer en revue les violations de stratégie qui n’ont pas déclenché d’alertes.  
-  
--   Dans le portail Cloud App Security, cliquez sur **Contrôle**, puis sur **Stratégies**.  
-  
--   Cliquez sur une stratégie spécifique pour afficher la liste **Violation maintenant** des correspondances de stratégie qui n’ont pas déclenché d’alertes.  
-  
--   Cliquez sur les violations, une par une, puis déterminez ce que vous devez faire pour chacune. Pour plus d’informations sur les actions de gouvernance, voir ci-dessous.  
-  
-     Par exemple, si votre stratégie est définie pour rechercher des violations de conformité et que quelqu’un enregistre des numéros de carte de crédit dans des fichiers sur OneDrive, vous obtenez une correspondance dans la stratégie.  
-  
-     ![correspondances pci](./media/pci-matches.png "pci matches")  
-  
--   Cliquez sur la correspondance pour afficher les fichiers réels qui ont enfreint la stratégie.  
-  
-     ![pci, correspondances de contenu](./media/pci-content-matches.png "pci content matches")  
-  
-     Vous pouvez cliquer sur le fichier lui-même pour obtenir des informations sur les fichiers.  
-  
+Quand vous examinez vos alertes ouvertes, accédez au Centre de stratégie pour passer en revue les violations de stratégie qui n’ont pas déclenché d’alertes.  
+
+-   Dans le tableau de bord Cloud App Security, cliquez sur **Contrôle**, puis sur **Stratégies**.  
+
+-   Sélectionnez une stratégie spécifique pour afficher la liste **Violation maintenant** des correspondances de stratégie qui n’ont pas déclenché d’alertes.  
+
+-   Cliquez sur les violations une à une, puis décidez ce qu’il faut faire pour chacune d’elles. Pour plus d’informations sur les actions de gouvernance, consultez les figures suivantes.  
+
+     Si votre stratégie est définie pour rechercher des violations de conformité et qu’une personne enregistre des numéros de carte de crédit dans des fichiers sur OneDrive, vous obtenez une correspondance dans la stratégie.  
+
+     ![Correspondances PCI](./media/pci-matches.png "pci matches")  
+
+-   Sélectionnez la correspondance pour afficher les fichiers qui ont enfreint la stratégie.  
+
+     ![Correspondances de contenu PCI](./media/pci-content-matches.png "pci content matches")  
+
+     Vous pouvez sélectionner le fichier lui-même pour obtenir des informations sur les fichiers.  
+
      Vous pouvez cliquer sur **Collaborateurs** pour voir qui a accès à ce fichier.  
-  
-     Vous pouvez cliquer sur les **Correspondances** pour voir les numéros de carte de crédit réels.  
-  
-     ![correspondances de contenu ccn](./media/content-matches-ccn.png "content matches ccn")  
-  
-## <a name="see-also"></a>Voir aussi  
-[Examiner](investigate.md)   
-[Pour obtenir un support technique, visitez la page de support assisté Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
-[Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier.](https://premier.microsoft.com/)  
-  
-  
+
+     Vous pouvez cliquer sur **Correspondances** pour voir les numéros de carte de crédit.  
+
+     ![Correspondances de contenu CCN](./media/content-matches-ccn.png "content matches ccn")  
+
+## <a name="next-steps"></a>Étapes suivantes  
+Pour plus d’informations sur l’examen des alertes, consultez [Investiguer](investigate.md).  
+Pour obtenir du support technique, visitez la page du [support assisté de Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+Les clients Premier peuvent également choisir Cloud App Security directement depuis le [portail Premier](https://premier.microsoft.com/).  
 
 
-<!--HONumber=Oct16_HO4-->
+
+<!--HONumber=Nov16_HO3-->
 
 

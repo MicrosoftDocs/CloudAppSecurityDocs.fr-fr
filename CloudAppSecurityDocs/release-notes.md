@@ -5,22 +5,45 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/30/2016
+ms.date: 11/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
 ms.technology: 
-ms.assetid: 4949ab4f-22c3-4371-b2dc-c8422a097dfe
+ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 400741713d40422a3b1c7680663a572d18e9c692
-ms.openlocfilehash: d95ddaef15cbb11f005156f272578f49f012e16d
+ms.sourcegitcommit: 759692e7b270d87dc1becf88453d095f2382c411
+ms.openlocfilehash: 3161fd1c61779ba943d8269d2ec979050ee0ae1f
 
 
 ---
 
 # <a name="release-notes"></a>Notes de publication
+
+
+## <a name="cloud-app-security-release-84"></a>Cloud App Security version 84
+Publiée le 13 novembre 2016
+
+**Nouvelles fonctionnalités**
+-   Cloud App Security prend désormais en charge Microsoft Azure Information Protection, notamment une intégration améliorée et l’approvisionnement automatique. Vous pouvez filtrer vos fichiers et définir des stratégies de fichier à l’aide de la classification sécurisée des étiquettes, puis définir l’étiquette de classification que vous voulez afficher. Les étiquettes indiquent également si la classification a été définie par une personne de votre organisation ou d’un autre locataire (externe). Vous pouvez également définir des stratégies d’activité basées sur les étiquettes de classification d’Azure Information Protection et activer l’analyse automatique des étiquettes de classification dans Office 365. Pour plus d’informations sur la façon de tirer parti de cette nouvelle fonctionnalité intéressante, consultez [Intégration à Azure Information Protection](azip-integration.md).
+ 
+**Améliorations**
+-   Des améliorations ont été apportées au journal d’activité de Cloud App Security : 
+   -    Les événements Office 365 provenant du Centre de sécurité et conformité sont désormais intégrés à Cloud App Security et sont visibles dans le **journal d’activité**.
+   -    Toute l’activité de Cloud App Security est enregistrée dans le journal d’activité Cloud App Security comme activité d’administration.
+-   Pour vous permettre d’examiner les alertes relatives aux fichiers, dans chaque résultant d’une stratégie de fichier, vous pouvez désormais afficher la liste des activités qui ont été effectuées sur le fichier correspondant.
+-   L’algorithme de voyage impossible dans le moteur de détection d’anomalie a été amélioré pour fournir une meilleure prise en charge pour les petits locataires. 
+ 
+**Améliorations mineures**
+-   La **limite d’exportation d’activités** a été portée à 10 000. 
+-   Quand vous créez un **rapport d’instantané** dans le processus de chargement manuel du journal Cloud Discovery, vous recevez désormais une estimation précise de la durée de traitement du journal. 
+-   Dans une stratégie de fichier, l’action de gouvernance **Supprimer le collaborateur** fonctionne désormais sur les groupes.
+-   Des améliorations mineures ont été apportées dans la page **Autorisations d’applications**. 
+-   Quand plus de 10 000 utilisateurs avaient des autorisations pour une application qui se connecte à Office 365, la liste se chargeait lentement. Ce problème a été résolu.
+-   Des attributs supplémentaires ont été ajoutés au **Catalogue d’applications** en ce qui concerne le secteur des cartes de paiement.
+
 
 ## <a name="cloud-app-security-release-83"></a>Cloud App Security version 83
 Publication : 30 octobre 2016
@@ -215,6 +238,6 @@ Publication : 15 mai 2016
   
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Nov16_HO3-->
 
 

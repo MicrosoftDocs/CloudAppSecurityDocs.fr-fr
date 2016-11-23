@@ -10,17 +10,17 @@ ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
 ms.technology: 
-ms.assetid: bc11bbfe-ec6c-458c-8302-8112c383199d
+ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4ddfce677376f370e332938059e741af613853db
-ms.openlocfilehash: 1fda4411d17acf90338263df9df147ed0075881c
+ms.sourcegitcommit: 759692e7b270d87dc1becf88453d095f2382c411
+ms.openlocfilehash: 104dbdbc22d748e924f42c92ba2607e970f03b9e
 
 
 ---
 
-# <a name="azure-information-protection-integration-private-preview"></a>Intégration d’Azure Information Protection - **APERÇU PRIVÉ**
+# <a name="azure-information-protection-integration---private-preview"></a>Intégration d’Azure Information Protection - **APERÇU PRIVÉ**
 
 Cloud App Security vous permet d’examiner des fichiers et de définir des stratégies en fonction des étiquettes de fichiers Azure Information Protection pour une plus grande visibilité et un contrôle accru de vos données sensibles dans le cloud. Pour cela, dans Cloud App Security, vous devez définir une stratégie qui analyse les fichiers lorsque l’inspection du contenu est activée. Par ailleurs, dans le cadre de l’aperçu privé de Cloud App Security, vous pouvez déclencher des alertes sur des activités liées aux fichiers classifiés. Avec l’intégration d’Azure Information Protection, vous pouvez :
 -   quantifier l’exposition des données sensibles dans vos applications cloud ;
@@ -29,7 +29,7 @@ Cloud App Security vous permet d’examiner des fichiers et de définir des stra
 
 > [!NOTE] Par défaut, les étiquettes sont détectées dans les fichiers uniquement s’il existe une stratégie de fichier qui analyse les fichiers lorsque l’inspection du contenu est activée. Pour détecter les étiquettes dans tous les fichiers sans stratégie de fichier, activez l’analyse automatique.
 
-## <a name="terminology-overview"></a>Vue d’ensemble de la terminologie :
+## <a name="terminology-overview"></a>Vue d’ensemble de la terminologie
 -   Étiquette de classification Azure Information Protection : attribut qui est ajouté aux fichiers dans votre organisation soit automatiquement sur la base d’une stratégie, soit manuellement par les utilisateurs finaux.
 -   Externe : balise définie par une personne externe à votre organisation.
 -   Balise de fichier : présentation de l’étiquette de classification dans Cloud App Security. Ce champ est affiché pour chaque fichier de la table de fichiers et peut être utilisé dans les filtres.
@@ -63,7 +63,7 @@ Ou, pour rechercher les fichiers qui ont été marqués avec n’importe quelle 
 
 ![filtres toutes les balises de fichier](./media/azip-file-tags-all-filter.png)
 
-## <a name="enable-automatic-scan-coming-soon"></a>Activer l’analyse automatique (bientôt disponible)
+## <a name="enable-automatic-scan"></a>Activer l’analyse automatique
 Pour activer l’analyse automatique en vue de détecter les balises de fichier pour les nouveaux fichiers dans Office 365 :
 
 1. Dans Office 365, accédez à la page **Paramètres généraux**.
@@ -72,7 +72,7 @@ Pour activer l’analyse automatique en vue de détecter les balises de fichier 
 ![activer azure information protection](./media/enable-azip.png)
  
 
-## <a name="internal-and-external-tags-coming-soon"></a>Balises internes et externes (bientôt disponible)
+## <a name="internal-and-external-tags"></a>Étiquettes internes et externes
 Par défaut, Cloud App Security analyse les étiquettes de classification qui ont été définies dans votre organisation, ainsi que les étiquettes externes qui ont été définies par d’autres organisations. 
 
 Pour les ignorer, sous **Paramètres de sécurité Azure**, sélectionnez **Ignorer les étiquettes de classification Azure Information Protection des autres clients**.
@@ -119,6 +119,6 @@ En savoir plus sur [Azure Information Protection](https://docs.microsoft.com/en-
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 
