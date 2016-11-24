@@ -14073,9 +14073,9 @@
       "ArchiveFileCommit": "36a8e6f32438b2bb7e33d9b5f838599ec50f7c28",
       "ArchiveFileDateTime": "2016-11-24T01:30:32.4494191Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.fr-fr\\live\\ht\\file-filters.9e3bd07111b91fd128d2565e14937c0a6ac16bf3.fr-fr.xlf",
+      "BilingualFileCommit": "83c3ea234bca4a91edb49bf20a4920a76211e6a5",
+      "BilingualDateTime": "2016-11-24T02:34:36.2043967Z",
       "BilingualException": null
     },
     "57d01e08546885881da38835961cf6384c1c788e": {
