@@ -14,8 +14,8 @@ ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 400741713d40422a3b1c7680663a572d18e9c692
-ms.openlocfilehash: 95dab01c101b6e6171c7985b6571ddb6b4ff5923
+ms.sourcegitcommit: 3c342e019dfca316ee89f68de60886d848abdb17
+ms.openlocfilehash: f65d64b240eb26f13a70143f5fb84a4f84f4cb6d
 
 
 ---
@@ -97,45 +97,7 @@ Vous pouvez également définir la stratégie pour qu’elle s’exécute sur de
   
 ![filtre Appliquer à](./media/apply-to-filter.png "apply to filter")  
   
-### <a name="governance-actions"></a>Actions de gouvernance  
-  
--   Notifications  
-  
-    -   Alertes : Les alertes peuvent se déclencher dans le système et se propager par le biais de messages électroniques et texte, selon leur niveau de gravité.  
-  
-    -   Notification par e-mail à l’utilisateur : Les e-mails sont personnalisables et envoyés à tous les propriétaires de fichiers en situation de violation.  
-  
-    -   Mettre en copie le responsable : Selon l’intégration de l’annuaire des utilisateurs, des notifications par e-mail peuvent également être envoyées au responsable de la personne qui viole une stratégie.  
-  
--   Notifier des utilisateurs spécifiques : Liste spécifique d’adresses e-mail qui reçoivent ces notifications.  
-  
--   Notifier le dernier éditeur du fichier : Envoyez des notifications à la dernière personne qui a modifié le fichier.  
-  
--   Actions de gouvernance dans les applications  
-  
-     Des actions précises peuvent être appliquées par application. Ces actions spécifiques varient selon la terminologie de l’application.  
-  
-    -   Partage de modifications  
-  
-        -   Supprimer le partage public : Autoriser l’accès uniquement à des collaborateurs désignés, par exemple : Supprimer l’accès public pour Google Apps et Supprimer le lien partagé direct pour Box.  
-  
-        -   Supprimer les utilisateurs externes : Autorisez l’accès uniquement aux utilisateurs de l’entreprise.  
-  
-        -   Rendre privé : Seul le propriétaire peut accéder au fichier, tous les partages sont supprimés.  
-  
-        -   Supprimer un collaborateur : Supprimez un collaborateur spécifique du fichier.  
-  
-    -   Quarantaine  
-  
-        -   Mettre en quarantaine utilisateur : Autorisez le libre-service en déplaçant le fichier vers un dossier de quarantaine contrôlé par l’utilisateur  
-  
-        -   Mettre en quarantaine administrateur : Le fichier est placé en quarantaine sur le lecteur de l’administrateur, ce dernier devant l’approuver.  
-  
--   Mettre à la corbeille : Déplacez le fichier vers le dossier Corbeille.
-  
-![alertes policy_create](./media/policy_create-alerts.png "policy_create alerts")  
-  
- 
+
 ## <a name="see-also"></a>Voir aussi  
 [Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)   
 [Pour obtenir un support technique, visitez la page de support assisté Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
@@ -144,6 +106,6 @@ Vous pouvez également définir la stratégie pour qu’elle s’exécute sur de
   
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Nov16_HO4-->
 
 
