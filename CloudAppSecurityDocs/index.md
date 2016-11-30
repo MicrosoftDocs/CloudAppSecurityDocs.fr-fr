@@ -13,8 +13,8 @@ ms.technology: techgroup-identity
 ms.suite: ems
 ms.assetid: 0f64ab44-50c4-46b7-8071-533f31fe3627
 translationtype: Human Translation
-ms.sourcegitcommit: 23e30c53f65fd7a0357a7bb7f116727163e0800d
-ms.openlocfilehash: d35e70624ffa969c086ece8d67e209d7b168f674
+ms.sourcegitcommit: 3c342e019dfca316ee89f68de60886d848abdb17
+ms.openlocfilehash: 8a0e20692fbfe0054f8c5816bfe29fd1ac737820
 
 
 ---
@@ -24,10 +24,10 @@ ms.openlocfilehash: d35e70624ffa969c086ece8d67e209d7b168f674
     <section id="hero-content">
       <h1>Documentation Cloud App Security</h1>
       <h2>Découvrez comment configurer et utiliser Cloud App Security afin que votre organisation puisse tirer parti des avantages des applications cloud tout en conservant le contrôle grâce à une meilleure visibilité de l’activité et une protection accrue des données d’entreprise critiques. </h2>
-      <h3>Vous découvrez Cloud App Security ? <a href="https://go.microsoft.com/fwlink/?linkid=835379" target="_blank">Visiter le site du produit &rarr;</a></h3>
+      <h3>Vous découvrez Cloud App Security ? <a href="https://go.microsoft.com/fwlink/?linkid=835379" target="_blank">Visiter le site du produit &rarr;</a></h3>
     </section>
     <aside class="alert section-border">
-        <p>Prêt pour la pratique ?</p>
+        <p>Prêt pour la pratique ?</p>
         <ol class="action-list">
             <li><a href="https://go.microsoft.com/fwlink/?linkid=835380" target="_blank" class="button-bordered button-translucent">Acheter maintenant</a></li>
         </ol>
@@ -36,7 +36,7 @@ ms.openlocfilehash: d35e70624ffa969c086ece8d67e209d7b168f674
       <h2 class="section-heading"><span class="icon icon-warning"></span> Contenu spécifique</h2>
       <div class="features row">
         <ul class="column column-half">
-          <li><a href="./what-is-cloud-app-security.md">Qu’est-ce que Cloud App Security ?</a></li>
+          <li><a href="./what-is-cloud-app-security.md">Qu’est-ce que Cloud App Security ?</a></li>
           <li><a href="./set-up-cloud-discovery.md">Découvrir les applications cloud utilisées dans votre organisation</a></li>
         </ul>
         <ul class="column column-half">
@@ -62,7 +62,7 @@ ms.openlocfilehash: d35e70624ffa969c086ece8d67e209d7b168f674
               <ul class="row">
                 <li class="column-third">
                   <a href="./what-is-cloud-app-security.md">
-                    <h3>Qu’est-ce que Cloud App Security ?</h3>
+                    <h3>Qu’est-ce que Cloud App Security ?</h3>
                     <p>Découvrez Cloud App Security, une solution basée sur le cloud qui vous permet de gagner en visibilité et contrôle sur les applications cloud dans votre organisation ainsi que de protéger votre réseau cloud.</p>
                   </a>
                 </li>
@@ -145,7 +145,7 @@ ms.openlocfilehash: d35e70624ffa969c086ece8d67e209d7b168f674
                 </li>
                 <li class="column-third">
                   <a href="./governance-actions.md">
-                    <h3>Journal de gouvernance</h3>
+                    <h3>Gouvernance</h3>
                     <p>Utilisez le journal de gouvernance pour obtenir un enregistrement de l’état de chaque tâche que Cloud App Security doit exécuter, dont les tâches manuelles et automatiques.</p>
                   </a>
                 </li>
@@ -196,13 +196,13 @@ ms.openlocfilehash: d35e70624ffa969c086ece8d67e209d7b168f674
         <aside class="alert alert-social">
       <p>Dernières informations sur Cloud App Security <ol class="action-list">
         <li><a href="https://go.microsoft.com/fwlink/?linkid=835381" target="_blank" class="button-bordered button-translucent">Site officiel de Cloud App Security</a></li>
-        <li><a href="https://go.microsoft.com/fwlink/?linkid=835382" target="_blank" class="button-bordered button-translucent">Support assisté Cloud App Security</a></li>
+        <li><a href="http://support.microsoft.com/oas/default.aspx?prid=16031" target="_blank" class="button-bordered button-translucent">Support assisté Cloud App Security</a></li>
       </ol>
     </aside>
 </article>
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO5-->
 
 
