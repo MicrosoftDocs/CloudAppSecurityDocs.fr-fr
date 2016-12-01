@@ -22,7 +22,7 @@ ms.openlocfilehash: 77468efb5d4cb62f560c11e624545fc8abe8c99e
 
 # <a name="working-with-the-regex-engine"></a>En utilisant l’inspection du contenu
  
-Les stratégies d’inspection du contenu de Cloud App Security tirent parti de RegEx pour la correspondance au modèle. L’inspection du contenu peut être appliquée dans le cadre des stratégies de fichier. Pour tester des expressions régulières, vous pouvez utiliser les sites web suivants :  
+Les stratégies d’inspection du contenu de Cloud App Security tirent parti de RegEx pour la correspondance au modèle. L’inspection du contenu peut être appliquée dans le cadre des stratégies de fichier. Pour tester des expressions régulières, vous pouvez utiliser les sites web suivants :  
   
 -   [http://regexpal.com/](http://regexpal.com/)  
   
@@ -32,23 +32,23 @@ Les stratégies d’inspection du contenu de Cloud App Security tirent parti de 
   
      Fournit une analyse détaillée de RegEx.  
   
-Les limitations suivantes sont imposées sur les expressions régulières personnalisées :  
+Les limitations suivantes sont imposées sur les expressions régulières personnalisées :  
   
 -   Le non-respect de la casse est toujours appliqué à la recherche  
    
--   Quantificateurs autorisés : {n,m} où n, m < 10  
+-   Quantificateurs autorisés : {n,m} où n, m < 10  
   
--   Tous les groupes doivent être sans capture, par exemple : (?:xxx)  
+-   Tous les groupes doivent être sans capture, par exemple : (?:xxx)  
   
      Au lieu de (groupe), utilisez (?:groupe)  
   
--   Quantificateurs non autorisés : *, +, {n,}  
+-   Quantificateurs non autorisés : *, +, {n,}  
   
-     Au lieu de *, utilisez {0,9}  
+     Au lieu de *, utilisez {0,9}  
   
-     Au lieu de +, utilisez {1,9}  
+     Au lieu de +, utilisez {1,9}  
   
--   Références arrière non autorisées : \\<nombre\> ou \k\<nom>  
+-   Références arrière non autorisées : \\<nombre\> ou \k\<nom>  
   
 Exemples d’expressions  
   
@@ -69,6 +69,6 @@ Exemples d’expressions
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

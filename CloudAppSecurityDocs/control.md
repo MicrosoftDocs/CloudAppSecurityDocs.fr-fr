@@ -48,11 +48,11 @@ Après avoir défini et personnalisé vos filtres de stratégie, vous pouvez sé
 Cloud App Security vous permet d’introduire vos migrations en vous faisant savoir qui dans votre organisation utilise quelles applications et en vous donnant les outils nécessaires pour surveiller l’adoption de nouvelles applications. Ce composant peut également vous aider à déterminer quels types d’applications vous pouvez proposer dans votre organisation, en vous fournissant les outils nécessaires pour voir ce que tout le monde utilise déjà.  
 
 ### <a name="migrate-your-users-to-a-new-app"></a>Migrer vos utilisateurs vers une nouvelle application  
-Imaginons le scénario suivant : vous venez d’acheter Office 365 et vous voulez que tous les utilisateurs de votre organisation arrêtent d’utiliser toutes les autres applications de stockage cloud pour commencer à utiliser OneDrive. Voici comment vous pouvez procéder :  
+Imaginons le scénario suivant : vous venez d’acheter Office 365 et vous voulez que tous les utilisateurs de votre organisation arrêtent d’utiliser toutes les autres applications de stockage cloud pour commencer à utiliser OneDrive. Voici comment vous pouvez procéder :  
 
 1.   Accédez à votre **tableau de bord Cloud Discovery** et sous **Catégories**, filtrez les applications par **Stockage cloud**. Ensuite, triez les résultats par **Utilisateurs** ou **Adresses IP** et déterminez quelle est l’application la plus populaire.  
 
-2.   Vous pouvez voir quels utilisateurs utilisent d’autres applications. Vous pouvez également explorer ces applications de façon détaillée et avertir les utilisateurs que vous voulez qu’ils migrent vers OneDrive, comme suit :
+2.   Vous pouvez voir quels utilisateurs utilisent d’autres applications. Vous pouvez également explorer ces applications de façon détaillée et avertir les utilisateurs que vous voulez qu’ils migrent vers OneDrive, comme suit :
 
     1.  Dans votre **tableau de bord Cloud Discovery**, choisissez **Dropbox**, puis choisissez l’onglet **Adresse IP** ou **Utilisateurs**.  
 
@@ -61,7 +61,7 @@ Imaginons le scénario suivant : vous venez d’acheter Office 365 et vous vou
 ### <a name="find-more-secure-alternatives"></a>Trouver des alternatives plus sécurisées  
 Le catalogue de services Cloud App Security peut vous aider à trouver des alternatives satisfaisantes pour votre organisation et ainsi éviter les applications risquées auxquelles vos utilisateurs peuvent avoir recours.  
 
-Imaginons le scénario suivant : vous envisagez d’acheter une application de productivité mais vous n’êtes pas sûr que vos utilisateurs s’en serviront.  
+Imaginons le scénario suivant : vous envisagez d’acheter une application de productivité mais vous n’êtes pas sûr que vos utilisateurs s’en serviront.  
 
 1.   Accédez au **tableau de bord Cloud Discovery**.  
 
@@ -78,6 +78,6 @@ Les clients Premier peuvent également choisir Cloud App Security directement de
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO5-->
 
 
