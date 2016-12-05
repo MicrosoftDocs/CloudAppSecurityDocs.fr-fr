@@ -1,11 +1,11 @@
 ---
-title: "Stratégies d’activité utilisateur | Documentation Microsoft"
-description: "Cette rubrique fournit des instructions pour la création et l’utilisation de stratégies d’activité utilisateur."
+title: "Stratégies d’activité | Documentation Microsoft"
+description: "Cette rubrique fournit des instructions sur la création et l’utilisation de stratégies d’activité."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/8/2016
+ms.date: 11/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,16 +14,16 @@ ms.assetid: 99d5fd37-d922-4269-b557-86d7f84180eb
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 97f270813beae64bf0572ac9e806290e4c2fcd22
-ms.openlocfilehash: e66cc36b7ff2591c9eff2b7399e7aba7304fd960
+ms.sourcegitcommit: 9565d8a51e4c06963861d9dfaef9595944bda1ff
+ms.openlocfilehash: 68961bf66a0c0bb3b668e681502ccf10bc673197
 
 
 ---
 
-# <a name="user-activity-policies"></a>Stratégies d’activité utilisateur
+# <a name="activity-policies"></a>Stratégies d’activité
 Grâce aux stratégies d’activité, vous pouvez appliquer une large gamme de processus automatisés en exploitant les API du fournisseur d’application. Ces stratégies vous permettent de surveiller des activités spécifiques effectuées par différents utilisateurs ou de suivre les taux anormalement élevés d’un certain type d’activité.  
   
-Après avoir défini une stratégie de détection d’activité, elle commence à générer des alertes ; les alertes sont générées uniquement sur les activités qui se produisent après avoir créé la stratégie.
+Après avoir défini une stratégie de détection d’activité, elle commence à générer des alertes ; les alertes sont générées uniquement sur les activités qui se produisent après avoir créé la stratégie.
   
   
 ## <a name="custom-alerts"></a>Alertes personnalisées  
@@ -42,7 +42,7 @@ Pour créer une stratégie d’activité, procédez comme suit :
 4.  Pour définir les actions ou autres mesures susceptibles de déclencher cette stratégie, utilisez les **Filtres d’activité**.  
   
 5.  Sous **Paramètres de correspondance de l’activité**, indiquez si une violation de stratégie est déclenchée quand une seule activité satisfait aux filtres ou si une violation est détectée uniquement quand un **Nombre d’activités répétées** spécifié est constaté.  
-    Si vous choisissez **Activité répétée**, vous pouvez définir **Grouper les activités correspondantes par application**. Cela déclenche une correspondance de stratégie uniquement lorsque les activités répétées se produisent dans la même application (par exemple, 5 téléchargements depuis Box).  
+    Si vous choisissez **Activité répétée**, vous pouvez définir **Grouper les activités correspondantes par application**. Cela déclenche une correspondance de stratégie uniquement lorsque les activités répétées se produisent dans la même application (par exemple, 5 téléchargements depuis Box).  
   
 6.  Configurez les **Actions** à effectuer quand une correspondance est trouvée.  
   
@@ -109,7 +109,7 @@ Pour configurer une stratégie de détection d’anomalie :
   
      La valeur de la sensibilité détermine le nombre d’alertes hebdomadaires déclenchées en moyenne par tranche de 1 000 utilisateurs.  
   
-     ![Adresses IP de détection des anomalies](./media/anomaly-detection-ips.png "anomaly detection IPs")  
+     ![Adresses IP de détection des anomalies](./media/anomaly-detection-ips.png "anomaly detection IPs")  
   
 8.  Cliquez sur **Create (Créer)**.  
  
@@ -117,14 +117,14 @@ Pour configurer une stratégie de détection d’anomalie :
 ## <a name="activity-policy-reference"></a>Informations de référence sur les stratégies d’activité  
 Cette section fournit des informations de référence sur les stratégies, donne une explication de chaque type de stratégie et décrit les champs que vous pouvez configurer pour chacune d’elles.  
   
-Une **stratégie d’activité** est une stratégie basée sur une API qui vous permet de surveiller les activités de votre organisation dans le cloud, en prenant en considération plus de 20 filtres de métadonnées de fichiers (notamment le type et l’emplacement de l’appareil). Selon les résultats de la stratégie, des notifications peuvent être générées et des utilisateurs peuvent être exclus temporairement de l’application cloud.   
-Chaque stratégie comprend les éléments suivants :  
+Une **stratégie d’activité** est une stratégie basée sur une API qui vous permet de surveiller les activités de votre organisation dans le cloud, en prenant en considération plus de 20 filtres de métadonnées de fichiers (notamment le type et l’emplacement de l’appareil). Selon les résultats de la stratégie, des notifications peuvent être générées et des utilisateurs peuvent être exclus temporairement de l’application cloud.   
+Chaque stratégie comprend les éléments suivants :  
   
--   Filtres d’activité : Vous permettent de créer des conditions très précises en fonction de métadonnées.  
+-   Filtres d’activité : Vous permettent de créer des conditions très précises en fonction de métadonnées.  
   
--   Paramètres de correspondance de l’activité : Vous permettent de définir un seuil pour le nombre de fois qu’une activité se répète pour être considérée comme correspondant à la stratégie.  
+-   Paramètres de correspondance de l’activité : Vous permettent de définir un seuil pour le nombre de fois qu’une activité se répète pour être considérée comme correspondant à la stratégie.  
   
--   Actions : La stratégie fournit un ensemble d’actions de gouvernance automatiquement applicables en cas de violations détectées.  
+-   Actions : La stratégie fournit un ensemble d’actions de gouvernance automatiquement applicables en cas de violations détectées.  
 ## <a name="see-also"></a>Voir aussi  
 [Stratégies de protection des données](data-protection-policies.md)   
 [Pour obtenir un support technique, visitez la page de support assisté Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
@@ -133,6 +133,6 @@ Chaque stratégie comprend les éléments suivants :
   
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO5-->
 
 

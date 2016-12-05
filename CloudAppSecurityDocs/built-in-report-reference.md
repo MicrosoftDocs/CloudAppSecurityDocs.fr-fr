@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,24 +14,24 @@ ms.assetid: 588b3639-f748-45a6-bc4b-a6ee47c1865e
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 520017dab0301fe2a64c7b82d5e14c71efb2522f
+ms.sourcegitcommit: 9565d8a51e4c06963861d9dfaef9595944bda1ff
+ms.openlocfilehash: c7db3995c314dbc07cc1e0e2807476299d4446f7
 
 
 ---
 
-# <a name="builtin-report-reference"></a>Informations de référence sur les rapports intégrés
+# <a name="built-in-report-reference"></a>Informations de référence sur les rapports intégrés
 Nous vous recommandons de créer vos rapports personnalisés à partir de rapports intégrés, qui font ainsi office de modèle. Le tableau suivant dresse la liste des rapports intégrés et indique les types d’événements que vous pouvez surveiller avec ces rapports.  
   
-## <a name="builtin-report-list"></a>Liste des rapports intégrés  
+## <a name="built-in-report-list"></a>Liste des rapports intégrés  
   
 |Type de rapport|Nom du rapport intégré|Description|  
 |-----------------|---------------------------|-----------------|  
 |Sécurité|Activité par lieu|Ce rapport répertorie les pays d’où provient une activité dans vos applications cloud et différents paramètres représentant le volume d’activité dans chaque pays, tels que le nombre d’événements, le nombre d’utilisateurs, etc. Utilisez-le pour obtenir une vue d’ensemble de la distribution géographique de vos utilisateurs.|  
 |Sécurité|Source d’activité par utilisateur|Utilisateurs qui ont effectué une activité dans l’environnement cloud à partir de plusieurs emplacements ou en utilisant trop d’adresses IP. Ces utilisateurs pouvant, toutefois, être en déplacement, il est possible que leurs informations d’identification soient utilisées à mauvais escient.|  
 |Sécurité|Utilisation du navigateur|Les attaques par navigation font partie des vecteurs d’attaque les plus courants. Les fournisseurs investissent des ressources considérables dans la sécurisation des logiciels de navigation, créant un mécanisme de mise à jour efficace pour diffuser les mises à jour vers les points de terminaison. L’utilisation de navigateurs déconseillés longtemps après leur dernière mise à jour en fait des cibles de choix pour les entités malveillantes qui recourent à des kits d’attaque. Ce rapport répertorie les navigateurs utilisés au cours des 30 derniers jours par les utilisateurs qui accèdent à vos services cloud.|  
-|Sécurité|Adresses IP|Ce rapport répertorie les adresses IP utilisées par les appareils pour effectuer des activités dans votre environnement cloud protégé par Cloud App Security. Ce rapport est basé sur les journaux d’audit accumulés par Cloud App Security. Les adresses IP sont généralement associées à un emplacement géographique et à une organisation source. Utilisez ce rapport pour identifier les adresses IP suspectes qui se connectent à vos services protégés. Vous pouvez afficher les journaux d’audit propres à une adresse IP en cliquant sur celle-ci.|  
-|Sécurité|Adresses IP - comptes disposant de privilèges|Ce rapport répertorie les adresses IP utilisées par les appareils pour effectuer des activités administratives dans votre environnement cloud protégé par Cloud App Security. Ce rapport est basé sur les journaux d’audit accumulés par Cloud App Security. Les adresses IP sont généralement associées à un emplacement géographique et à une organisation source. Utilisez ce rapport pour identifier les adresses IP suspectes qui se connectent à vos services protégés. Vous pouvez afficher les journaux d’audit propres à une adresse IP en cliquant sur celle-ci.|  
+|Sécurité|Adresses IP|Ce rapport répertorie les adresses IP utilisées par les appareils pour effectuer des activités dans votre environnement cloud protégé par Cloud App Security. Ce rapport est basé sur les journaux d’audit accumulés par Cloud App Security. Les adresses IP sont généralement associées à un emplacement géographique et à une organisation source. Utilisez ce rapport pour identifier les adresses IP suspectes qui se connectent à vos services protégés. Vous pouvez afficher les journaux d’audit propres à une adresse IP en cliquant sur celle-ci.|  
+|Sécurité|Adresses IP - comptes disposant de privilèges|Ce rapport répertorie les adresses IP utilisées par les appareils pour effectuer des activités administratives dans votre environnement cloud protégé par Cloud App Security. Ce rapport est basé sur les journaux d’audit accumulés par Cloud App Security. Les adresses IP sont généralement associées à un emplacement géographique et à une organisation source. Utilisez ce rapport pour identifier les adresses IP suspectes qui se connectent à vos services protégés. Vous pouvez afficher les journaux d’audit propres à une adresse IP en cliquant sur celle-ci.|  
 |Sécurité|Utilisation du système d’exploitation|Les défauts de sécurité du système d’exploitation ont tendance à provoquer des vulnérabilités très dangereuses. Les fournisseurs investissent des ressources considérables dans la sécurisation des systèmes d’exploitation, créant un mécanisme de mise à jour efficace pour diffuser les mises à jour vers les points de terminaison. Toutefois, les systèmes d’exploitation déconseillés qui ne sont plus pris en charge ne sont pas inclus dans ces mécanismes de mise à jour et deviennent des cibles de choix pour les entités malveillantes qui recourent à des kits d’attaque. Ce rapport répertorie les systèmes d’exploitation utilisés au cours des 30 derniers jours par les utilisateurs qui accèdent à vos services cloud.|  
 |Sécurité|Utilisateurs distants véritables|Les utilisateurs suivants n’ont jamais partagé une adresse IP avec un autre employé de la société. Cela est caractéristique des employés ou équipes distants, des prestataires embauchés et des services de support externes. Toutefois, cela peut également indiquer une porte dérobée laissée par une personne malveillante.|  
 |Gestion des utilisateurs|Vue d’ensemble de l’application cloud|Ce rapport répertorie vos applications cloud et différents paramètres qui représentent le volume d’activité dans chaque application, comme le nombre de fichiers, d’utilisateurs, etc. Utilisez-le pour obtenir une vue d’ensemble des différentes applications et de leur degré d’utilisation par vos utilisateurs.|  
@@ -57,6 +57,6 @@ Nous vous recommandons de créer vos rapports personnalisés à partir de rappor
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

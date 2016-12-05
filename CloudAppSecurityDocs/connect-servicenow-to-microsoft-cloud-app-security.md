@@ -1,5 +1,5 @@
 ---
-title: "Connecter ServiceNow à Microsoft Cloud App Security | Documentation Microsoft"
+title: Connecter ServiceNow | Documentation Microsoft
 description: "Cette rubrique fournit des informations sur la connexion de votre application ServiceNow à Cloud App Security à l’aide du connecteur API."
 keywords: 
 author: rkarlin
@@ -14,8 +14,8 @@ ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 30ddba23a0c481cb434e9239950cce90c52efc4f
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: 7935006b6b28ed93601ca60adf3c1a408440eae7
 
 
 ---
@@ -36,13 +36,13 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
   
      ![servicenow, compte](./media/servicenow-account.png "servicenow account")  
   
-4.  Dans le portail Cloud App Security, cliquez sur **Examiner**, puis sur **Applications approuvées**.  
+4.  Dans le portail Cloud App Security, cliquez sur **Examiner**, puis sur **Applications connectées**.  
   
-5.  Dans la ligne ServiceNow, cliquez sur **Connecter** dans la colonne **État du connecteur d’applications** ou cliquez sur le bouton **Connecter une application**, puis sur **ServiceNow**.  
+5.  Dans la page **Connecteurs d’application**, cliquez sur le bouton plus (+), puis sur **ServiceNow**.  
   
      ![connecter servicenow](./media/connect-servicenow.png "connect servicenow")  
   
-6.  Dans la page Paramètres ServiceNow, sous l’onglet API, ajoutez votre nom d’utilisateur, mot de passe et URL d’instance ServiceNow dans les zones appropriées.  
+6.  Dans la fenêtre contextuelle, ajoutez votre nom d’utilisateur, mot de passe et URL d’instance ServiceNow dans les zones appropriées.  
   
 7.  Cliquez sur **Connexion**.  
   
@@ -52,7 +52,7 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
   
      Le test peut prendre quelques minutes. Une fois averti que la connexion a réussi, cliquez sur **Fermer**.  
   
-Après avoir connecté ServiceNow, vous recevrez les événements des 60 jours précédant la connexion.
+Après avoir connecté ServiceNow, vous recevrez les événements des 60 jours précédant la connexion.
   
 ## <a name="see-also"></a>Voir aussi  
 [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)   
@@ -62,6 +62,6 @@ Après avoir connecté ServiceNow, vous recevrez les événements des 60 jours 
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

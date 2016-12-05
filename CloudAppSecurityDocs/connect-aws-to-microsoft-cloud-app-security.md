@@ -1,5 +1,5 @@
 ---
-title: "Connecter AWS à Microsoft Cloud App Security | Documentation Microsoft"
+title: Connecter AWS | Documentation Microsoft
 description: "Cette rubrique fournit des informations sur la connexion de votre application AWS à Cloud App Security à l’aide du connecteur API."
 keywords: 
 author: rkarlin
@@ -14,8 +14,8 @@ ms.assetid: a6b4c745-cd5c-4458-819c-80cbe8b25f29
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 4b9ab028bb45f77513217dd3784cefc73e984962
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: a56257b7c149c3ea054f200ef88df0ab41b7e25b
 
 
 ---
@@ -52,8 +52,8 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
      ![vérifier la stratégie](./media/aws-review-policy.png "aws review policy")  
   
 
-8. Sous **Nom de la stratégie**, tapez « AdallomTrustPolicy ». 
-10. Sous **Policy Document** (Document de stratégie), copiez et collez les éléments suivants :  
+8. Sous **Nom de la stratégie**, tapez « AdallomTrustPolicy ». 
+10. Sous **Policy Document** (Document de stratégie), copiez et collez les éléments suivants :  
   
     ```     
     {  
@@ -94,21 +94,21 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
   
          ![aws, inclure des services globaux](./media/aws-include-global-svc.png "aws include global svc")  
   
-    3.  Répétez l’étape 11 pour toutes les régions, mais sans inclure de services globaux.  
+    3.  Répétez l’étape 11 pour toutes les régions, mais sans inclure de services globaux.  
   
-11. Dans le portail Cloud App Security, cliquez sur **Examiner**, puis sur **Applications approuvées**.  
+11. Dans le portail Cloud App Security, cliquez sur **Examiner**, puis sur **Applications connectées**.  
   
-12. Dans la ligne AWS, cliquez sur **Connecter** dans la colonne **État du connecteur d’applications**, ou cliquez sur le bouton **Connecter une application**, puis sur **AWS**.  
+12. Dans la page **Connecteurs d’application**, cliquez sur le signe plus (+), puis sur **AWS**.  
   
      ![connecter AWS](./media/connect-aws.png "connect AWS")  
   
-13. Dans la page des paramètres Amazon Web Services, collez la **clé d’accès** et la **clé secrète** issues du fichier csv dans les champs de la page de l’API, puis cliquez sur **Mettre à jour la clé d’accès**.  
+13. Dans la fenêtre contextuelle, collez la **clé d’accès** et la **clé secrète** issues du fichier CSV dans les champs de la page de l’API, puis cliquez sur **Mettre à jour la clé d’accès**.  
   
-14. Vérifiez que la connexion a réussi en cliquant sur **Tester l’API**.  
+14. Vérifiez la connexion en cliquant sur **Test API** (Tester l’API).  
   
      Le test peut prendre quelques minutes. Lorsqu’il est terminé, vous recevez une notification de réussite ou d’échec. Une fois que vous avez reçu une notification de réussite, cliquez sur **Terminé**.  
   
-Après avoir connecté AWS, vous recevrez les événements des 7 jours précédant la connexion.
+Après avoir connecté AWS, vous recevrez les événements des 7 jours précédant la connexion.
   
 ## <a name="see-also"></a>Voir aussi  
 [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)   
@@ -118,6 +118,6 @@ Après avoir connecté AWS, vous recevrez les événements des 7 jours précéd
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

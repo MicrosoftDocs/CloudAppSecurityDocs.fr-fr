@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: a9b00c2a-2f71-499e-8f57-67e560daedc1
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 23ec0b7bef05146d3ff4a953225b56b52aa4959f
-ms.openlocfilehash: fbd75fadb63bbaecd1e0dbd12b9162c0d17ce50e
+ms.sourcegitcommit: fd3be51a8a81b688383b40a19582f5739c889580
+ms.openlocfilehash: f1b32304a8218316f744defa4632b3e8a6af771d
 
 
 ---
@@ -26,106 +26,104 @@ Une fois que Cloud App Security s’exécute dans votre environnement cloud, vou
 Cette rubrique décrit comment effectuer une investigation pour mieux comprendre votre environnement cloud.  
 
 ## <a name="dashboards"></a>Tableaux de bord  
-Les tableaux de bord suivants sont disponibles pour vous aider à étudier les applications de votre environnement cloud :  
+Les tableaux de bord suivants sont disponibles pour vous aider à étudier les applications de votre environnement cloud :  
 
 |Tableau de bord|Description|  
 |---------------|-----------------|  
 |Tableau de bord principal|Vue d’ensemble de l’état du cloud (utilisateurs, fichiers, activités) et des actions nécessaires (alertes, violations d’activité et violations de contenu)|  
-|Tableau de bord Application : global|Vue d’ensemble de l’utilisation de l’application par emplacement, graphiques d’utilisation par nombre d’utilisateurs|  
-|Tableau de bord Application : informations|Analyse des données stockées dans l’application, ventilées par type de fichier et par niveau de partage de fichiers|  
-|Tableau de bord Application : fichiers|Exploration des fichiers au niveau du détail, possibilité de filtrer en fonction du propriétaire, du niveau de partage, etc., et d’effectuer des actions de gouvernance (comme la mise en quarantaine)|  
-|Tableau de bord Application : applications tierces|Exploration au niveau du détail des applications tierces actuellement déployées, comme Google Apps, et définition de stratégies pour celles-ci|  
+|Tableau de bord Application : global|Vue d’ensemble de l’utilisation de l’application par emplacement, graphiques d’utilisation par nombre d’utilisateurs|  
+|Tableau de bord Application : informations|Analyse des données stockées dans l’application, ventilées par type de fichier et par niveau de partage de fichiers|  
+|Tableau de bord Application : fichiers|Exploration des fichiers au niveau du détail, possibilité de filtrer en fonction du propriétaire, du niveau de partage, etc., et d’effectuer des actions de gouvernance (comme la mise en quarantaine)|  
+|Tableau de bord Application : applications tierces|Exploration au niveau du détail des applications tierces actuellement déployées, comme Google Apps, et définition de stratégies pour celles-ci|  
 |Tableau de bord Utilisateur|Vue d’ensemble complète du profil utilisateur dans le cloud, notamment les groupes, les emplacements, les activités récentes, les alertes associées et les navigateurs utilisés|  
 
-##  <a name="a-namesanctionappa-sanction-or-unsanction-apps"></a><a name="sanctionapp"></a> Approuver ou ne pas approuver des applications  
-La première étape pour comprendre votre cloud consiste à approuver des applications. Une fois que vous avez approuvé une application, vous pouvez filtrer les applications qui ne sont pas approuvées et lancer une migration vers des applications approuvées du même type.  
+##  <a name="a-namesanctionappa-tag-apps-as-sanctioned-or-unsanctioned"></a><a name="sanctionapp"></a> Marquer les applications comme approuvées ou non  
+Le marquage des applications comme approuvées ou non est une étape importante pour comprendre votre cloud. Une fois que vous avez approuvé une application, vous pouvez filtrer les applications qui ne sont pas approuvées et lancer une migration vers des applications approuvées du même type.  
 
--   Dans la console Cloud App Security, choisissez **Découvrir**, puis **Tableau de bord de découverte**.  
+-   Dans la console Cloud App Security, accédez au catalogue d’applications ou aux applications découvertes.  
 
--   Dans la liste des applications découvertes, sur la ligne où l’application que vous voulez approuver apparaît, cliquez sur les trois points à la fin de la ligne ![Approuver - 3 points](./media/sanction-three-dots.png "Sanction three dots") et choisissez **Marqué comme approuvé**.  
+-   Dans la liste des applications, sur la ligne contenant l’application à marquer comme approuvée, cliquez sur les trois points à la fin de la ligne ![Points pour marquer comme approuvé](./media/sanction-three-dots.png "Tag as sanctioned dots") et choisissez **Marquer comme approuvé**.  
 
-     ![Marqué comme approuvé](./media/mark-as-sanctioned.png "mark as sanctioned")  
+     ![Marquer comme approuvé](./media/mark-as-sanctioned.png "tag as sanctioned")  
 
-> [!NOTE]  
->  Pour chaque application à surveiller avec l’intégration de l’API Cloud App Security, nous recommandons de créer un compte de service d’administration dédié à Cloud App Security.  
 
 ## <a name="use-the-investigation-tools"></a>Utiliser les outils d’examen  
 
-1.  Dans le portail Cloud App Security, accédez à **Examiner**, puis consultez le **journal d’activité** et filtrez sur une application spécifique. Vérifiez les points suivants :  
+1.  Dans le portail Cloud App Security, accédez à **Examiner**, puis consultez le **journal d’activité** et filtrez sur une application spécifique. Vérifiez les points suivants :  
 
-    -   Qui accède à votre environnement cloud ?  
+    -   Qui accède à votre environnement cloud ?  
 
-    -   À partir de quelles plages d’adresses IP ?  
+    -   À partir de quelles plages d’adresses IP ?  
 
-    -   Quelle est l’activité administrative ?  
+    -   Quelle est l’activité administrative ?  
 
-    -   À partir de quels emplacements les administrateurs se connectent-ils ?  
+    -   À partir de quels emplacements les administrateurs se connectent-ils ?  
 
-    -   Des appareils obsolètes se connectent-ils à votre environnement cloud ?  
+    -   Des appareils obsolètes se connectent-ils à votre environnement cloud ?  
 
-    -   Les échecs de connexion proviennent-ils d’adresses IP attendues ?  
+    -   Les échecs de connexion proviennent-ils d’adresses IP attendues ?  
 
-2.  Accédez à **Examiner**, puis **Fichiers** et vérifiez les points suivants :  
+2.  Accédez à **Examiner**, puis **Fichiers** et vérifiez les points suivants :  
 
-    -   Combien de fichiers sont partagés publiquement pour permettre à toute personne d’y accéder sans aucun lien ?  
+    -   Combien de fichiers sont partagés publiquement pour permettre à toute personne d’y accéder sans aucun lien ?  
 
-    -   Avec quels partenaires partagez-vous des fichiers (partage sortant) ?  
+    -   Avec quels partenaires partagez-vous des fichiers (partage sortant) ?  
 
-    -   Des fichiers ont-ils un nom sensible ?  
+    -   Des fichiers ont-ils un nom sensible ?  
 
-    -   Certains fichiers partagés le sont-ils avec le compte personnel de quelqu’un ?  
+    -   Certains fichiers partagés le sont-ils avec le compte personnel de quelqu’un ?  
 
-3.  Accédez à **Examiner**, puis **Comptes** et vérifiez les points suivants :  
+3.  Accédez à **Examiner**, puis **Comptes** et vérifiez les points suivants :  
 
-    -   Des comptes ont-ils été inactifs dans un service particulier pendant une longue période de temps ? (Vous pouvez peut-être révoquer la licence de cet utilisateur pour ce service ?)  
+    -   Des comptes ont-ils été inactifs dans un service particulier pendant une longue période de temps ? (Vous pouvez peut-être révoquer la licence de cet utilisateur pour ce service ?)  
 
-    -   Voulez-vous connaître les utilisateurs qui remplissent un rôle spécifique ?  
+    -   Voulez-vous connaître les utilisateurs qui remplissent un rôle spécifique ?  
 
-    -   Certaines personnes qui ont été licenciées ont-elles toujours accès à une application, lequel accès pourrait leur permettre de dérober des informations ?  
+    -   Certaines personnes qui ont été licenciées ont-elles toujours accès à une application, lequel accès pourrait leur permettre de dérober des informations ?  
 
-    -   Voulez-vous révoquer l’autorisation d’un utilisateur sur une application spécifique ou exiger d’un utilisateur spécifique qu’il effectue une authentification multifacteur ?  
+    -   Voulez-vous révoquer l’autorisation d’un utilisateur sur une application spécifique ou exiger d’un utilisateur spécifique qu’il effectue une authentification multifacteur ?  
 
-4.  Accédez à **Examiner**, puis sélectionnez une application. Le tableau de bord Application s’ouvre et vous donne des informations. Vous pouvez utiliser les onglets en haut pour vérifier les éléments suivants :  
+4.  Accédez à **Examiner**, puis sélectionnez une application. Le tableau de bord Application s’ouvre et vous donne des informations. Vous pouvez utiliser les onglets en haut pour vérifier les éléments suivants :  
 
      ![Tableau de bord Application](./media/investigate-app.png "investigate app")  
 
-    -   Quels types d’appareils vos utilisateurs utilisent-ils pour se connecter à l’application ?  
+    -   Quels types d’appareils vos utilisateurs utilisent-ils pour se connecter à l’application ?  
 
-    -   Quels types de fichiers enregistrent-ils dans le cloud ?  
+    -   Quels types de fichiers enregistrent-ils dans le cloud ?  
 
-    -   Quelle activité se produit dans l’application en ce moment même ?  
+    -   Quelle activité se produit dans l’application en ce moment même ?  
 
-    -   Des applications tierces sont-elles connectées à votre environnement ?  
+    -   Des applications tierces sont-elles connectées à votre environnement ?  
 
-    -   Connaissez-vous ces applications ?  
+    -   Connaissez-vous ces applications ?  
 
-    -   Sont-elles autorisées pour le niveau d’accès auquel elles correspondent ?  
+    -   Sont-elles autorisées pour le niveau d’accès auquel elles correspondent ?  
 
-    -   Combien d’utilisateurs les ont déployées ? Quelle est la fréquence de ces applications en général ?  
+    -   Combien d’utilisateurs les ont déployées ? Quelle est la fréquence de ces applications en général ?  
 
-5.  Accédez au **tableau de bord Cloud Discovery** et vérifiez les points suivants :  
+5.  Accédez au **tableau de bord Cloud Discovery** et vérifiez les points suivants :  
 
-    -   Quelles sont les applications cloud utilisées, dans quelle mesure et par qui ?  
+    -   Quelles sont les applications cloud utilisées, dans quelle mesure et par qui ?  
 
-    -   À quelles fins sont-elles utilisées ?  
+    -   À quelles fins sont-elles utilisées ?  
 
-    -   Quelle quantité de données est chargée vers ces applications cloud ?  
+    -   Quelle quantité de données est chargée vers ces applications cloud ?  
 
-    -   Dans quelles catégories avez-vous des applications cloud approuvées, alors que les utilisateurs utilisent plutôt des solutions alternatives ?  
+    -   Dans quelles catégories avez-vous des applications cloud approuvées, alors que les utilisateurs utilisent plutôt des solutions alternatives ?  
 
-    -   Pour les solutions alternatives, voulez-vous rendre non approuvées des applications cloud dans votre organisation ?  
+    -   Pour les solutions alternatives, voulez-vous rendre non approuvées des applications cloud dans votre organisation ?  
 
-    -   Certaines applications cloud sont-elles utilisées, alors qu’elles ne sont pas conformes à la stratégie de votre organisation ?  
+    -   Certaines applications cloud sont-elles utilisées, alors qu’elles ne sont pas conformes à la stratégie de votre organisation ?  
 
 ## <a name="use-reports-to-investigate-risk"></a>Utiliser les rapports pour examiner les risques  
-Quand vous vous attelez à mieux contrôler votre environnement cloud, vous avancez certaines hypothèses selon ce que vous vous attendez à trouver : vous ne connaissez pas encore vraiment votre cloud. Sur la base de ces hypothèses, vous créez des stratégies.
+Quand vous vous attelez à mieux contrôler votre environnement cloud, vous avancez certaines hypothèses selon ce que vous vous attendez à trouver : vous ne connaissez pas encore vraiment votre cloud. Sur la base de ces hypothèses, vous créez des stratégies.
 
 Une fois que Cloud App Security s’exécute dans votre environnement cloud, vous utilisez les rapports intégrés (et des rapports personnalisés) pour voir ce qui se passe dans votre cloud. Sur cette base, vous ajustez à nouveau vos stratégies pour y inclure des exceptions, pour que votre stratégie intercepte au final très peu de faux positifs.  
 
 Les rapports intégrés vous offrent des vues agrégées à examiner. Pour utiliser les rapports intégrés, accédez à **Examiner**, puis **Rapports intégrés**. Pour plus d’informations sur les différents rapports intégrés, consultez les [informations de référence sur les rapports intégrés](built-in-report-reference.md).  
 
 ## <a name="sample-investigation"></a>Exemple d’examen  
-Partons du principe que vous pensez ne pas avoir d’accès à votre environnement cloud via des adresses IP risquées (par exemple des proxys anonymes et Tor). Vous créez cependant une stratégie pour les adresses IP à risques simplement pour vous en assurer :  
+Partons du principe que vous pensez ne pas avoir d’accès à votre environnement cloud via des adresses IP risquées (par exemple des proxys anonymes et Tor). Vous créez cependant une stratégie pour les adresses IP à risques simplement pour vous en assurer :  
 
 1.  Dans le portail, accédez à **Contrôle** et choisissez **Stratégies**.  
 
@@ -160,6 +158,6 @@ Les clients Premier peuvent également choisir Cloud App Security directement de
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO5-->
 
 

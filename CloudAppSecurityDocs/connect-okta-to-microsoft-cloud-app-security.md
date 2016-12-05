@@ -1,5 +1,5 @@
 ---
-title: "Connecter Okta à Microsoft Cloud App Security | Documentation Microsoft"
+title: Connecter Okta | Documentation Microsoft
 description: "Cette rubrique fournit des informations sur la connexion de votre application Okta à Cloud App Security à l’aide du connecteur API."
 keywords: 
 author: rkarlin
@@ -14,8 +14,8 @@ ms.assetid: 9c3673b9-99bd-400c-9da1-5bf809ea5892
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 759692e7b270d87dc1becf88453d095f2382c411
-ms.openlocfilehash: 3fd8ada1ce622da339368c64ecc8b1d319b9c333
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: 1e82f94cb8423bdaa3dcdc8d4a4f04179089546c
 
 
 ---
@@ -49,13 +49,13 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
   
          ![okta, valeur du jeton](./media/okta-token-value.png "okta token value")  
   
-3.  Dans la console Cloud App Security, cliquez sur **Examiner**, puis sur **Applications approuvées**.  
+3.  Dans la console Cloud App Security, cliquez sur **Examiner**, puis sur **Applications connectées**.  
   
-4.  Dans la ligne Okta, cliquez sur **Connect** (Connecter) dans la colonne **App Connector status** (État du connecteur d’applications), ou cliquez sur le bouton **Connect an app** (Connecter une application), puis sur **Okta**.  
+4.  Dans la page **Connecteurs d’application**, cliquez sur le bouton plus (+), puis sur **Okta**.  
   
      ![connecter okta](./media/connect-okta.png "connect okta")  
   
-5.  Dans la page de l’API, dans le champ **Domain** (Domaine), entrez votre domaine Okta et collez votre jeton dans le champ **Token** (Jeton).  
+5.  Dans la fenêtre contextuelle qui s’affiche, dans le champ **Domaine**, entrez votre domaine Okta et collez votre jeton dans le champ **Jeton**.  
   
 6.  Cliquez sur **Connect** (Connecter) pour créer le jeton pour Okta dans Cloud App Security.  
   
@@ -63,7 +63,7 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
   
      Le test peut prendre quelques minutes. Une fois averti que la connexion a réussi, cliquez sur **Fermer**.  
   
-Après avoir connecté Okta, vous recevrez les événements des 60 jours précédant la connexion.
+Après avoir connecté Okta, vous recevrez les événements des 60 jours précédant la connexion.
   
 ## <a name="see-also"></a>Voir aussi  
 [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)   
@@ -73,6 +73,6 @@ Après avoir connecté Okta, vous recevrez les événements des 60 jours préc�
   
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO5-->
 
 

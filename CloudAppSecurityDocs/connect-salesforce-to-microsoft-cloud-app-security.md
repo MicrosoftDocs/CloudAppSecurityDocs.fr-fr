@@ -1,5 +1,5 @@
 ---
-title: "Connecter Salesforce à Microsoft Cloud App Security | Documentation Microsoft"
+title: Connecter Salesforce | Documentation Microsoft
 description: "Cette rubrique fournit des informations sur la connexion de Salesforce à Cloud App Security à l’aide du connecteur API."
 keywords: 
 author: rkarlin
@@ -14,8 +14,8 @@ ms.assetid: 776d7589-acdb-4cb6-99a0-3be2f7b6aab2
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 759692e7b270d87dc1becf88453d095f2382c411
-ms.openlocfilehash: 28ce67bd096d82e3775a281359fc100e2c214715
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: af663e48d24a869b8a30b429accf8001a8584bb1
 
 
 ---
@@ -44,7 +44,7 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
   
          ![salesforce, gérer les profils des utilisateurs](./media/salesforce-manageusers-profiles.png "salesforce manageusers profiles")  
   
-    -   Choisissez le profil que vous utilisez pour déployer Cloud App Security, puis cliquez sur **Modifier**.  
+    -   Choisissez le profil que vous utilisez pour déployer Cloud App Security, puis cliquez sur **Modifier**. Il s’agit du profil à utiliser pour le compte de service Cloud App Security pour configurer le connecteur d’applications.  
   
          ![salesforce, modifier le profil](./media/salesforce-edit-profile.png "salesforce edit profile")  
   
@@ -72,9 +72,9 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
   
     5.  Cliquez sur **Save**.  
   
-4.  Dans la console Cloud App Security, cliquez sur **Examiner**, puis sur **Applications approuvées**.  
+4.  Dans la console Cloud App Security, cliquez sur **Examiner**, puis sur **Applications connectées**.  
   
-5.  Dans la ligne Salesforce, cliquez sur **Connecter** dans la colonne **État du connecteur d’applications**, ou cliquez sur le bouton **Connecter une application**, puis sur **Salesforce**.  
+5.  Dans la page **Connecteurs d’application**, cliquez sur le bouton plus (+), puis sur **Salesforce**.  
   
      ![connecter salesforce](./media/connect-salesforce.png "connect salesforce")  
   
@@ -95,7 +95,7 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
      Le test peut prendre quelques minutes. Une fois que vous avez reçu une notification de réussite, cliquez sur **Terminé**.  
   
   
-Après avoir connecté SalesForce, vous recevrez les événements comme suit : déclencheurs à partir du moment de connexion, événements de connexion et piste d’audit d’installation des 60 jours précédant la connexion, surveillance des événements remontant à 30 jours ou 1 jour, en fonction de votre licence de surveillance des événements SalesForce.
+Après avoir connecté SalesForce, vous recevrez les événements comme suit : déclencheurs à partir du moment de connexion, événements de connexion et piste d’audit d’installation des 60 jours précédant la connexion, surveillance des événements remontant à 30 jours ou 1 jour, en fonction de votre licence de surveillance des événements SalesForce.
   
 ## <a name="see-also"></a>Voir aussi  
 [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)   
@@ -105,6 +105,6 @@ Après avoir connecté SalesForce, vous recevrez les événements comme suit : 
   
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO5-->
 
 
