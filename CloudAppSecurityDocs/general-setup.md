@@ -25,7 +25,7 @@ La procédure suivante contient des instructions pour personnaliser le portail C
   
 ## <a name="set-up-the-portal"></a>Configurer le portail  
   
-1.  Dans le portail Cloud App Security, dans la barre de menus, cliquez sur l’icône des paramètres ![icône des paramètres](./media/settings-icon.png "settings icon") et sélectionnez **Paramètres généraux** pour configurer les éléments suivants :  
+1.  Dans le portail Cloud App Security, dans la barre de menus, cliquez sur l’icône des paramètres ![icône des paramètres](./media/settings-icon.png "settings icon") et sélectionnez **Paramètres généraux** pour configurer les éléments suivants :  
   
 3.  **Détails de l’organisation**  
   
@@ -51,7 +51,7 @@ Vous pouvez également fournir un **Logo**, qui apparaît dans les notifications
   
      ![langue du fuseau horaire](./media/timezone-language.png "timezone language")  
   
-     Définissez le **Fuseau horaire principal**. Cloud App Security analyse et rassemble vos données en continu. Par défaut, le fuseau horaire pour le portail Cloud App Security est défini sur UTC. Il est important de définir le fuseau horaire principal, afin que Cloud App Security puisse dater les incidents avec précision dans votre système. Par exemple, dans le graphique d’activité, les données sont organisées par date ; ces dates étant affectées par le fuseau horaire de votre système, si vous n’avez pas modifié le fuseau horaire par défaut, vos données sont organisées en journées de 24 heures selon le fuseau horaire UTC et peuvent se voir associer un horodatage plus ou moins décalé par rapport à la réalité.  
+     Définissez le **Fuseau horaire principal**. Cloud App Security analyse et rassemble vos données en continu. Par défaut, le fuseau horaire pour le portail Cloud App Security est défini sur UTC. Il est important de définir le fuseau horaire principal, afin que Cloud App Security puisse dater les incidents avec précision dans votre système. Par exemple, dans le graphique d’activité, les données sont organisées par date ; ces dates étant affectées par le fuseau horaire de votre système, si vous n’avez pas modifié le fuseau horaire par défaut, vos données sont organisées en journées de 24 heures selon le fuseau horaire UTC et peuvent se voir associer un horodatage plus ou moins décalé par rapport à la réalité.  
   
      ![fuseau horaire principal](./media/master-time-zone.png "master time zone")  
   
@@ -66,16 +66,16 @@ Vous pouvez également fournir un **Logo**, qui apparaît dans les notifications
 ![gérer l’accès administrateur](./media/manage-admin-access.png "manage admin access")  
   
 ##  <a name="a-nameadminsettingsa-customize-your-admin-settings"></a><a name="Adminsettings"></a> Personnaliser vos paramètres d’administration  
-Pour définir vos préférences en tant qu’administrateur de Cloud App Security, cliquez sur votre nom dans la barre de menus du portail, puis sélectionnez **Paramètres utilisateur** pour définir les éléments suivants :  
+Pour définir vos préférences en tant qu’administrateur de Cloud App Security, cliquez sur votre nom dans la barre de menus du portail, puis sélectionnez **Paramètres utilisateur** pour définir les éléments suivants :  
   
 1.  Cliquez sur **Paramètres du compte**. Vous pouvez ici personnaliser la langue que doit utiliser le portail. Vous pouvez définir la langue du portail sur la langue par défaut ou sur la langue de votre choix.  
   
      ![paramètres utilisateur personnalisés](./media/custom-user-settings.png "custom user settings")  
   
-2.  Cliquez sur **Notifications** et définissez les préférences de notification par courrier électronique et SMS pour les e-mails reçus du système.  Vous pouvez définir le niveau de gravité des alertes et des violations à recevoir par e-mail ; le niveau de gravité étant défini par stratégie, quand des violations sont déclenchées, vous recevez une notification par courrier électronique en fonction du paramètre défini ici et du paramètre de gravité défini dans la stratégie qui a été enfreinte. Les e-mails sont envoyés à l’alias associé au compte d’utilisateur administrateur que vous utilisez pour vous connecter à Cloud App Security. Entrez un numéro de téléphone afin que Cloud App Security puisse vous envoyer des SMS quand des alertes et des notifications sont envoyées et définissez le niveau de gravité pour lequel vous souhaitez recevoir des notifications par SMS.  
+2.  Cliquez sur **Notifications** et définissez les préférences de notification par courrier électronique et SMS pour les e-mails reçus du système.  Vous pouvez définir le niveau de gravité des alertes et des violations à recevoir par e-mail ; le niveau de gravité étant défini par stratégie, quand des violations sont déclenchées, vous recevez une notification par courrier électronique en fonction du paramètre défini ici et du paramètre de gravité défini dans la stratégie qui a été enfreinte. Les e-mails sont envoyés à l’alias associé au compte d’utilisateur administrateur que vous utilisez pour vous connecter à Cloud App Security. Entrez un numéro de téléphone afin que Cloud App Security puisse vous envoyer des SMS quand des alertes et des notifications sont envoyées et définissez le niveau de gravité pour lequel vous souhaitez recevoir des notifications par SMS.  
   
 > [!NOTE] 
-> Le nombre maximal d’alertes envoyées via SMS est de 10 par numéro de téléphone par jour. Notez que le jour est calculé selon le fuseau horaire UTC. 
+> Le nombre maximal d’alertes envoyées via SMS est de 10 par numéro de téléphone par jour. Notez que le jour est calculé selon le fuseau horaire UTC. 
   
   ![paramètres de notification](./media/notification-settings.png "notification settings")  
   
@@ -88,7 +88,7 @@ Chaque groupe de plages IP peut être classé selon une liste de catégories d�
   
 IPv4 et IPv6 sont pris en charge.  
   
-Dans la barre de menus, cliquez sur l’icône des paramètres ![icône des paramètres](./media/settings-icon.png "settings icon") et sélectionnez **Plages d’adresses IP**. Cliquez sur **Ajouter une plage d’adresses IP** et définissez les éléments suivants :  
+Dans la barre de menus, cliquez sur l’icône des paramètres ![icône des paramètres](./media/settings-icon.png "settings icon") et sélectionnez **Plages d’adresses IP**. Cliquez sur **Ajouter une plage d’adresses IP** et définissez les éléments suivants :  
   
 > [!NOTE]  
 >  L’emplacement et l’ISP enregistré remplacent les valeurs par défaut.   
@@ -96,9 +96,9 @@ Dans la barre de menus, cliquez sur l’icône des paramètres ![icône des para
   
 1.  Affectez un **Nom** à votre plage IP. Le nom n’apparaît pas dans le journal des activités ; il sert uniquement à gérer votre plage IP.  
   
-     Pour inclure la plage IP dans une catégorie d’adresses IP, sélectionnez une catégorie dans le menu déroulant.  
+     Pour inclure la plage IP dans une catégorie d’adresses IP, sélectionnez une catégorie dans le menu déroulant.  
   
-2.  Entrez la **plage d’adresses IP** que vous souhaitez configurer, puis cliquez sur le bouton « + ». Vous pouvez ajouter autant d’adresses et de sous-réseaux IP que vous le souhaitez en utilisant la notation de préfixe réseau (également appelée notation CIDR), par exemple 192.168.1.0/32.  
+2.  Entrez la **plage d’adresses IP** que vous souhaitez configurer, puis cliquez sur le bouton « + ». Vous pouvez ajouter autant d’adresses et de sous-réseaux IP que vous le souhaitez en utilisant la notation de préfixe réseau (également appelée notation CIDR), par exemple 192.168.1.0/32.  
   
 3.  Dans les champs qui permettent de **remplacer l’emplacement** ou l’ISP de l’organisation associés à ces adresses, entrez la nouvelle valeur. Par exemple, si vous avez une adresse IP publiquement considérée en Irlande, alors qu’elle se trouve aux États-Unis, vous pouvez remplacer ce paramètre.  
   
@@ -106,15 +106,15 @@ Dans la barre de menus, cliquez sur l’icône des paramètres ![icône des para
   
 5.  Pour **étiqueter** les activités liées à ces adresses IP, entrez une étiquette. Il suffit d’entrer un mot dans la zone pour créer l’étiquette. Une fois l’étiquette configurée, vous pouvez l’ajouter facilement à des plages IP supplémentaires en la sélectionnant dans la liste. Vous pouvez ajouter autant d’étiquettes IP que vous le souhaitez pour chaque plage. Vous pouvez utiliser des étiquettes IP quand vous créez des stratégies.  
   
-     Des **balises IP** Cloud App Security intégrées sont définies pour les adresses à risque et sont constamment mises à jour. Ces balises incluent les proxys anonymes, les fournisseurs satellites, les nœuds de sortie Tor et le réseau du proxy Cloud App Security. Ces balises intégrées ne sont pas visibles.  
+     Des **balises IP** Cloud App Security intégrées sont définies pour les adresses à risque et sont constamment mises à jour. Ces balises incluent les proxys anonymes, les fournisseurs satellites, les nœuds de sortie Tor et le réseau du proxy Cloud App Security. Ces balises intégrées ne sont pas visibles.  
   
-6.  Les **catégories IP** permettent d’identifier facilement les activités liées aux adresses IP intéressantes. Les catégories sont disponibles dans le portail, mais nécessitent une configuration utilisateur pour déterminer les adresses IP à inclure dans chaque catégorie, à l’exception de la catégorie « Risqué » qui comprend deux balises IP : Proxy anonyme et Tor.  
+6.  Les **catégories IP** permettent d’identifier facilement les activités liées aux adresses IP intéressantes. Les catégories sont disponibles dans le portail, mais nécessitent une configuration utilisateur pour déterminer les adresses IP à inclure dans chaque catégorie, à l’exception de la catégorie « Risqué » qui comprend deux balises IP : Proxy anonyme et Tor.  
   
      Les catégories IP suivantes sont disponibles :  
   
     -   **Administratif** : adresses IP de vos administrateurs  
   
-    -   **Interne** : adresses IP de votre réseau interne, de vos succursales et adresses d’itinérance Wi-Fi.  
+    -   **Interne** : adresses IP de votre réseau interne, de vos succursales et adresses d’itinérance Wi-Fi.  
   
     -   **Risqué** : toutes les adresses IP que vous considérez comme risquées. Celles-ci peuvent inclure les adresses IP suspectes déjà constatées, les adresses IP appartenant aux réseaux de vos concurrents, etc.  
   
@@ -127,17 +127,17 @@ Dans la barre de menus, cliquez sur l’icône des paramètres ![icône des para
      ![plage de nouvelles adresses IP](./media/newipaddress-range.png "newipaddress range")  
   
 ##  <a name="a-nameadallommailsettingsa-personalize-your-experience"></a><a name="Adallom_mailsettings"></a>Personnaliser votre expérience  
-Dans la barre de menus, cliquez sur l’icône des paramètres ![icône des paramètres](./media/settings-icon.png "settings icon") et sélectionnez **Paramètres de messagerie** pour définir les paramètres des notifications par courrier électronique envoyées par Cloud App Security aux administrateurs ; ce paramétrage définit l’envoi des alertes et des notifications aux utilisateurs finaux concernant les violations dans lesquelles ils sont impliqués.  
+Dans la barre de menus, cliquez sur l’icône des paramètres ![icône des paramètres](./media/settings-icon.png "settings icon") et sélectionnez **Paramètres de messagerie** pour définir les paramètres des notifications par courrier électronique envoyées par Cloud App Security aux administrateurs ; ce paramétrage définit l’envoi des alertes et des notifications aux utilisateurs finaux concernant les violations dans lesquelles ils sont impliqués.  
   
 ![menu des paramètres de messagerie](./media/mail-setting-menu.png "mail setting menu")  
   
-Configurez ce qui suit :  
+Configurez ce qui suit :  
   
 1.  **Adresse de l’expéditeur** : compte de messagerie à utiliser pour envoyer la notification.  
   
      **Nom complet de l’expéditeur** : nom à afficher dans le champ **De** de l’e-mail.  
   
-     **Adresse e-mail de réponse** : compte e-mail à utiliser pour les réponses au message.  
+     **Adresse e-mail de réponse** : compte e-mail à utiliser pour les réponses au message.  
   
      ![configuration des paramètres de messagerie](./media/mail-settings-config.png "mail settings config")  
   
@@ -145,13 +145,13 @@ Configurez ce qui suit :
   
     -   Tout le code CSS du modèle doit être inséré dans celui-ci.  
   
-    -   Le modèle doit avoir trois espaces réservés non modifiables :  
+    -   Le modèle doit avoir trois espaces réservés non modifiables :  
   
-         %%logo%% : URL vers le logo de votre société chargée par le biais de la page Paramètres généraux  
+         %%logo%% : URL vers le logo de votre société chargée par le biais de la page Paramètres généraux  
   
-         %%title%% : espace réservé pour le titre de l’e-mail, tel que défini par la stratégie  
+         %%title%% : espace réservé pour le titre de l’e-mail, tel que défini par la stratégie  
   
-         %%content%% : espace réservé pour le contenu à inclure pour les utilisateurs finaux, tel que défini par la stratégie  
+         %%content%% : espace réservé pour le contenu à inclure pour les utilisateurs finaux, tel que défini par la stratégie  
   
      Voici un exemple de modèle d’e-mail :  
   
@@ -216,7 +216,7 @@ Configurez ce qui suit :
      L’e-mail est envoyé au compte que vous avez utilisé pour vous connecter au portail. L’e-mail test comprend les champs de métadonnées, le modèle, l’objet de l’e-mail, le titre dans le corps de l’e-mail et le contenu.  
   
 ## <a name="single-sign-on"></a>Authentification unique  
-Cloud App Security est couplé à Azure Active Directory pour les activités d’authentification, de configuration et de gestion des licences. Pour plus d’informations sur la gestion de l’authentification unique, voir [Liste de compatibilité de fédération Azure Active Directory : fournisseurs d’identité tiers qui peuvent être utilisés pour implémenter l’authentification unique](https://msdn.microsoft.com/library/azure/jj679342.aspx).  
+Cloud App Security est couplé à Azure Active Directory pour les activités d’authentification, de configuration et de gestion des licences. Pour plus d’informations sur la gestion de l’authentification unique, voir [Liste de compatibilité de fédération Azure Active Directory : fournisseurs d’identité tiers qui peuvent être utilisés pour implémenter l’authentification unique](https://msdn.microsoft.com/library/azure/jj679342.aspx).  
 
 
 > [!NOTE] 

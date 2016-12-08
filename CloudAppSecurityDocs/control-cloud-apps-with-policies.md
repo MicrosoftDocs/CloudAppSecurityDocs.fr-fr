@@ -26,7 +26,7 @@ Grâce aux stratégies, vous pouvez définir la façon dont vous souhaitez que v
 Par exemple, le type de stratégie à mettre en place diffère selon que vous souhaitez mettre en quarantaine une menace de violation de données ou empêcher votre organisation d’utiliser une application cloud à risque.  
   
 ## <a name="policy-types"></a>Types de stratégies  
-Lorsque vous examinez la page **Stratégie**, les différentes stratégies et les différents modèles peuvent être distingués par type et par icône pour savoir quelles stratégies seront disponibles. Les stratégies disponibles dépendent de la source de données et de ce que vous avez activé dans Cloud App Security pour votre organisation ; par exemple, si vous avez téléchargé des journaux Cloud Discovery, les stratégies relatives à Cloud Discovery sont affichées.
+Lorsque vous examinez la page **Stratégie**, les différentes stratégies et les différents modèles peuvent être distingués par type et par icône pour savoir quelles stratégies seront disponibles. Les stratégies disponibles dépendent de la source de données et de ce que vous avez activé dans Cloud App Security pour votre organisation ; par exemple, si vous avez téléchargé des journaux Cloud Discovery, les stratégies relatives à Cloud Discovery sont affichées.
 
 Vous pouvez créer les types de stratégies suivants :  
   
@@ -53,7 +53,7 @@ Cloud App Security vous permet d’atténuer différents risques dans le cloud. 
   
      Surveillez les modifications de configuration, notamment la manipulation de la configuration à distance.  
   
--   **Cloud Discovery : ** Des applications nouvelles sont-elles utilisées dans votre organisation ? Des applications Shadow IT que vous ignorez sont-elles utilisées ?  
+-   **Cloud Discovery : ** Des applications nouvelles sont-elles utilisées dans votre organisation ? Des applications Shadow IT que vous ignorez sont-elles utilisées ?  
   
      Évaluez le risque global pour chaque application cloud en fonction de la réglementation, ainsi que des bonnes pratiques et certifications de l’industrie.  
     Grâce à cette approche, vous pouvez surveiller le nombre d’utilisateurs, les activités, le volume de trafic et les heures d’utilisation classiques pour  
@@ -100,20 +100,20 @@ Pour créer une stratégie à partir d’un **modèle de stratégie**, procédez
 3.  Modifiez le modèle en fonction des besoins de votre stratégie personnalisée. Vous pouvez modifier librement chaque propriété et champ de cette nouvelle stratégie basée sur un modèle.  
 > [!NOTE] 
 >Quand vous utilisez des filtres de stratégie, le filtre **Contains (Contient)** recherche uniquement des mots entiers, séparés par des virgules, points, espaces ou traits de soulignement. Par exemple, si vous recherchez **malware** ou **virus**, il trouve virus_malware_file.exe, mais pas malwarevirusfile.exe. Si vous recherchez **malware.exe**, vous obtenez tous les fichiers exe dont le nom contient malware ou exe, tandis que si vous recherchez **"malware.exe"** (avec les guillemets), vous n’obtenez que les fichiers dont le nom contient exactement « malware.exe ». 
-     **Equals (Est égal à)** recherche uniquement la chaîne complète ; par exemple, si vous recherchez **malware.exe**, il trouve malware.exe, mais pas malware.exe.txt.  
+     **Equals (Est égal à)** recherche uniquement la chaîne complète ; par exemple, si vous recherchez **malware.exe**, il trouve malware.exe, mais pas malware.exe.txt.  
 4.  Une fois la stratégie basée sur un modèle créée, un lien vers celle-ci s’affiche dans la colonne **Stratégies liées** de la table des modèles de stratégie, en regard du modèle à partir duquel la stratégie a été créée.  
      Vous pouvez, à partir de chaque modèle, créer autant de stratégies que vous le souhaitez, qui seront toutes liées au modèle d’origine ; ainsi, vous pouvez effectuer le suivi de toutes les stratégies créées à l’aide du même modèle.  
   
 Vous pouvez également **créer une stratégie au cours d’un examen**. Si vous examinez le **Journal d’activité**, les **Fichiers** ou les **Comptes** à la recherche d’un élément spécifique, à tout moment, vous pouvez créer une stratégie basée sur les résultats de votre examen.  
   
-Cela peut arriver si vous examinez le **Journal d’activité** et que vous constatez qu’une activité d’administration ne provient pas de la plage d’adresses IP de votre bureau.
+Cela peut arriver si vous examinez le **Journal d’activité** et que vous constatez qu’une activité d’administration ne provient pas de la plage d’adresses IP de votre bureau.
 
   
 Pour créer une stratégie basée sur les résultats de l’examen, procédez comme suit :  
   
 1.  Dans la console, cliquez sur **Examiner**, puis sur **Journal d’activité**, **Fichiers** ou **Comptes**.  
   
-2.  Utilisez les filtres en haut de la page pour limiter les résultats de la recherche à la zone suspecte. Par exemple, dans la page Journal d’activité, cliquez sur **Activité** et sélectionnez **Ouverture de session administrateur**. Ensuite, sous **Adresse IP**, sélectionnez **Catégorie** et définissez la valeur de manière à ne pas inclure les catégories d’adresses IP que vous avez créées pour vos domaines reconnus, notamment les adresses IP de l’administrateur, de l’entreprise et du réseau privé virtuel.  
+2.  Utilisez les filtres en haut de la page pour limiter les résultats de la recherche à la zone suspecte. Par exemple, dans la page Journal d’activité, cliquez sur **Activité** et sélectionnez **Ouverture de session administrateur**. Ensuite, sous **Adresse IP**, sélectionnez **Catégorie** et définissez la valeur de manière à ne pas inclure les catégories d’adresses IP que vous avez créées pour vos domaines reconnus, notamment les adresses IP de l’administrateur, de l’entreprise et du réseau privé virtuel.  
   
      ![](./media/create-file-from-investigation.png)  
   
@@ -125,7 +125,7 @@ Pour créer une stratégie basée sur les résultats de l’examen, procédez co
    
 > [!NOTE] 
 > Quand vous utilisez des filtres de stratégie, le filtre **Contains (Contient)** recherche uniquement des mots entiers, séparés par des virgules, points, espaces ou traits de soulignement. Par exemple, si vous recherchez **malware** ou **virus**, il trouve virus_malware_file.exe, mais pas malwarevirusfile.exe.  
-     **Equals (Est égal à)** recherche uniquement la chaîne complète ; par exemple, si vous recherchez **malware.exe**, il trouve malware.exe, mais pas malware.exe.txt.  
+     **Equals (Est égal à)** recherche uniquement la chaîne complète ; par exemple, si vous recherchez **malware.exe**, il trouve malware.exe, mais pas malware.exe.txt.  
   
  
  

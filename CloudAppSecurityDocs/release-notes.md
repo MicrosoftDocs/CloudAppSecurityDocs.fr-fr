@@ -23,8 +23,8 @@ ms.openlocfilehash: cbe341faf692772ac5461e038233e9b1a6b2694f
 # <a name="release-notes"></a>Notes de publication
 
 
-## <a name="cloud-app-security-release-85"></a>Cloud App Security version 85
-Publiée le 27 novembre 2016
+## <a name="cloud-app-security-release-85"></a>Cloud App Security version 85
+Publiée le 27 novembre 2016
 
 **Nouvelles fonctionnalités**
 - Une distinction a été établie entre les applications approuvées et les applications connectées. Vous pouvez désormais appliquer une balise aux applications découvertes et à toutes les applications du catalogue d’applications pour les marquer comme approuvées ou non. Les applications connectées sont des applications que vous avez connectées à l’aide du connecteur d’API pour une meilleure visibilité et un plus grand contrôle. Vous pouvez désormais soit marquer les applications comme approuvées ou non, soit les connecter à l’aide du connecteur d’application, le cas échéant. 
@@ -36,40 +36,40 @@ Publiée le 27 novembre 2016
 - Des améliorations ont été apportées au tiroir d’activité. À présent, quand vous cliquez sur un objet d’activité dans le tiroir d’activité, vous pouvez descendre dans la hiérarchie pour obtenir plus d’informations.
 
 **Améliorations**
-- Des améliorations ont été apportées au moteur de détection des anomalies, notamment au niveau des alertes de déplacement impossible. Des informations sur l’adresse IP sont désormais disponibles dans la description de l’alerte.
+- Des améliorations ont été apportées au moteur de détection des anomalies, notamment au niveau des alertes de déplacement impossible. Des informations sur l’adresse IP sont désormais disponibles dans la description de l’alerte.
 - Des améliorations ont été apportées aux filtres complexes. Vous pouvez ainsi ajouter plusieurs fois le même filtre pour ajuster les résultats filtrés. 
 - Les activités liées aux fichiers et aux dossiers dans Dropbox ont été séparées pour une meilleure visibilité. 
   
 **Résolutions de bogues**
 - Un bogue à l’origine de faux positifs a été résolu dans le mécanisme de déclenchement des alertes système.
 
-## <a name="cloud-app-security-release-84"></a>Cloud App Security version 84
-Publiée le 13 novembre 2016
+## <a name="cloud-app-security-release-84"></a>Cloud App Security version 84
+Publiée le 13 novembre 2016
 
 **Nouvelles fonctionnalités**
--   Cloud App Security prend désormais en charge Microsoft Azure Information Protection, notamment une intégration améliorée et l’approvisionnement automatique. Vous pouvez filtrer vos fichiers et définir des stratégies de fichier à l’aide de la classification sécurisée des étiquettes, puis définir l’étiquette de classification que vous voulez afficher. Les étiquettes indiquent également si la classification a été définie par une personne de votre organisation ou d’un autre locataire (externe). Vous pouvez également définir des stratégies d’activité basées sur les étiquettes de classification d’Azure Information Protection et activer l’analyse automatique des étiquettes de classification dans Office 365. Pour plus d’informations sur la façon de tirer parti de cette nouvelle fonctionnalité intéressante, consultez [Intégration à Azure Information Protection](azip-integration.md).
+-   Cloud App Security prend désormais en charge Microsoft Azure Information Protection, notamment une intégration améliorée et l’approvisionnement automatique. Vous pouvez filtrer vos fichiers et définir des stratégies de fichier à l’aide de la classification sécurisée des étiquettes, puis définir l’étiquette de classification que vous voulez afficher. Les étiquettes indiquent également si la classification a été définie par une personne de votre organisation ou d’un autre locataire (externe). Vous pouvez également définir des stratégies d’activité basées sur les étiquettes de classification d’Azure Information Protection et activer l’analyse automatique des étiquettes de classification dans Office 365. Pour plus d’informations sur la façon de tirer parti de cette nouvelle fonctionnalité intéressante, consultez [Intégration à Azure Information Protection](azip-integration.md).
  
 **Améliorations**
--   Des améliorations ont été apportées au journal d’activité de Cloud App Security : 
-   -    Les événements Office 365 provenant du Centre de sécurité et conformité sont désormais intégrés à Cloud App Security et sont visibles dans le **journal d’activité**.
+-   Des améliorations ont été apportées au journal d’activité de Cloud App Security : 
+   -    Les événements Office 365 provenant du Centre de sécurité et conformité sont désormais intégrés à Cloud App Security et sont visibles dans le **journal d’activité**.
    -    Toute l’activité de Cloud App Security est enregistrée dans le journal d’activité Cloud App Security comme activité d’administration.
 -   Pour vous permettre d’examiner les alertes relatives aux fichiers, dans chaque résultant d’une stratégie de fichier, vous pouvez désormais afficher la liste des activités qui ont été effectuées sur le fichier correspondant.
 -   L’algorithme de voyage impossible dans le moteur de détection d’anomalie a été amélioré pour fournir une meilleure prise en charge pour les petits locataires. 
  
 **Améliorations mineures**
--   La **limite d’exportation d’activités** a été portée à 10 000. 
+-   La **limite d’exportation d’activités** a été portée à 10 000. 
 -   Quand vous créez un **rapport d’instantané** dans le processus de chargement manuel du journal Cloud Discovery, vous recevez désormais une estimation précise de la durée de traitement du journal. 
 -   Dans une stratégie de fichier, l’action de gouvernance **Supprimer le collaborateur** fonctionne désormais sur les groupes.
 -   Des améliorations mineures ont été apportées dans la page **Autorisations d’applications**. 
--   Quand plus de 10 000 utilisateurs avaient des autorisations pour une application qui se connecte à Office 365, la liste se chargeait lentement. Ce problème a été résolu.
+-   Quand plus de 10 000 utilisateurs avaient des autorisations pour une application qui se connecte à Office 365, la liste se chargeait lentement. Ce problème a été résolu.
 -   Des attributs supplémentaires ont été ajoutés au **Catalogue d’applications** en ce qui concerne le secteur des cartes de paiement.
 
 
 ## <a name="cloud-app-security-release-83"></a>Cloud App Security version 83
-Publication : 30 octobre 2016
+Publication : 30 octobre 2016
 
 **Nouvelles fonctionnalités**
--   Pour simplifier le filtrage dans le [journal d’activité](activity-filters.md) et le [journal de fichier](file-filters.md), les filtres similaires ont été regroupés. Utilisez les filtres d’activité : objet d’activité, adresse IP et utilisateur. Utilisez le filtre de fichier Collaborateurs pour trouver ce dont vous avez besoin.
+-   Pour simplifier le filtrage dans le [journal d’activité](activity-filters.md) et le [journal de fichier](file-filters.md), les filtres similaires ont été regroupés. Utilisez les filtres d’activité : objet d’activité, adresse IP et utilisateur. Utilisez le filtre de fichier Collaborateurs pour trouver ce dont vous avez besoin.
 -   Dans le tiroir du journal d’activité, sous **Source**, vous pouvez cliquer sur le lien **Afficher les données brutes** afin de télécharger les données brutes utilisées pour générer le journal d’activité et ainsi accéder aux événements de l’application. 
 -   Prise en charge d’activités de connexion supplémentaires dans Okta. [Private preview]
 -   Prise en charge d’activités de connexion supplémentaires dans Salesforce. 
@@ -82,16 +82,16 @@ Publication : 30 octobre 2016
 
 
 
-## <a name="cloud-app-security-release-82"></a>Cloud App Security version 82
-Publication : 9 octobre 2016
+## <a name="cloud-app-security-release-82"></a>Cloud App Security version 82
+Publication : 9 octobre 2016
 
 **Améliorations**
 
 - Les activités **Change email** (Modifier l’e-mail) et **Modifier le mot de passe** sont maintenant indépendantes de l’activité générique **Manage users** (Gérer les utilisateurs) dans Salesforce.
-- Ajout d’une clarification concernant la limite d’alerte quotidienne par SMS. 10 messages au maximum sont envoyés par numéro de téléphone par jour (UTC).
+- Ajout d’une clarification concernant la limite d’alerte quotidienne par SMS. 10 messages au maximum sont envoyés par numéro de téléphone par jour (UTC).
 - Un nouveau certificat a été ajouté aux attributs Cloud Discovery pour le bouclier de protection des données qui a remplacé la mesure Safe Harbor (fournisseurs aux États-Unis uniquement).
 - La résolution des problèmes a été ajoutée aux messages d’erreur concernant les connecteurs API pour faciliter les actions correctives.
-- Amélioration de la fréquence des mises à jour de l’analyse des applications tierces Office 365.
+- Amélioration de la fréquence des mises à jour de l’analyse des applications tierces Office 365.
 - Améliorations apportées au tableau de bord Cloud Discovery.
 - L’analyseur Syslog de point de contrôle a été amélioré.
 - Améliorations apportées au journal de gouvernance pour l’exclusion et l’annulation de l’exclusion des applications tierces.
@@ -100,37 +100,37 @@ Publication : 9 octobre 2016
  
 - Processus amélioré pour le chargement d’un logo.
  
-## <a name="cloud-app-security-release-81"></a>Cloud App Security version 81
-Publication : 18 septembre 2016
+## <a name="cloud-app-security-release-81"></a>Cloud App Security version 81
+Publication : 18 septembre 2016
 
 **Améliorations**
-- Cloud App Security est maintenant une application interne dans Office 365 ! Vous pouvez désormais connecter Office 365 à Cloud App Security en un seul clic.
+- Cloud App Security est maintenant une application interne dans Office 365 ! Vous pouvez désormais connecter Office 365 à Cloud App Security en un seul clic.
 
-- Nouveau look pour le journal de gouvernance : il présente maintenant le même aspect clair et utile que le tableau des fichiers et du journal d’activité. Les nouveaux filtres permettent de trouver facilement ce dont vous avez besoin et de surveiller vos actions de gouvernance. 
+- Nouveau look pour le journal de gouvernance : il présente maintenant le même aspect clair et utile que le tableau des fichiers et du journal d’activité. Les nouveaux filtres permettent de trouver facilement ce dont vous avez besoin et de surveiller vos actions de gouvernance. 
 - Des améliorations ont été apportées au moteur de détection des anomalies en cas de plusieurs échecs de connexion et d’autres facteurs de risque.
 - Des améliorations ont été apportées aux rapports d’instantanés Cloud Discovery.
-- Des améliorations ont été apportées aux activités administratives dans le journal d’activité ; Modifier le mot de passe, Mettre à jour un utilisateur, Réinitialiser le mot de passe indiquent désormais si l’activité a été effectuée en tant qu’activité administrative.
+- Des améliorations ont été apportées aux activités administratives dans le journal d’activité ; Modifier le mot de passe, Mettre à jour un utilisateur, Réinitialiser le mot de passe indiquent désormais si l’activité a été effectuée en tant qu’activité administrative.
 - Les filtres d’alerte pour les alertes système ont été améliorés. 
 - L’étiquette pour une stratégie au sein d’une alerte permet maintenant de revenir au rapport de stratégie.
 - Si aucun propriétaire n’est spécifié pour un fichier Dropbox, les e-mails de notification sont envoyés au destinataire que vous définissez. 
-- Cloud App Security prend en charge 24 langues supplémentaires, ce qui étend la prise en charge à un total de 41 langues.  
+- Cloud App Security prend en charge 24 langues supplémentaires, ce qui étend la prise en charge à un total de 41 langues.  
 
 
-## <a name="cloud-app-security-release-80"></a>Cloud App Security version 80
-Publication : 4 septembre 2016 
+## <a name="cloud-app-security-release-80"></a>Cloud App Security version 80
+Publication : 4 septembre 2016 
 
 **Améliorations**
 - Quand l’analyse de protection contre la perte de données (DLP) échoue, vous recevez maintenant une explication des raisons pour lesquelles Cloud App Security n’a pas pu analyser le fichier. Pour plus d’informations, voir [Inspection du contenu](https://aka.ms/aka.ms/cas-contentinspection).
 - Des améliorations ont été apportées aux moteurs de détection des anomalies, notamment pour les alertes de voyage impossible.
-- Des améliorations ont été apportées pour les situations où vous voulez ignorer les alertes ; vous pouvez également ajouter des commentaires afin d’indiquer à l’équipe Cloud App Security si et pourquoi l’alerte était intéressante afin que ces commentaires permettent d’améliorer les détections Cloud App Security.
+- Des améliorations ont été apportées pour les situations où vous voulez ignorer les alertes ; vous pouvez également ajouter des commentaires afin d’indiquer à l’équipe Cloud App Security si et pourquoi l’alerte était intéressante afin que ces commentaires permettent d’améliorer les détections Cloud App Security.
 - Les analyseurs Cloud Discovery Cisco ASA ont été améliorés.
 - Vous recevez maintenant une notification par e-mail quand le chargement manuel de votre journal Cloud Discovery est terminé.
    
 
 
 
-## <a name="cloud-app-security-release-79"></a>Cloud App Security version 79
-Publication : 21 août 2016 
+## <a name="cloud-app-security-release-79"></a>Cloud App Security version 79
+Publication : 21 août 2016 
 
 **Nouvelles fonctionnalités**
 
@@ -142,70 +142,70 @@ Le nouveau tableau de bord présente davantage d’options pour filtrer les donn
 Les rapports d’instantanés fournissent une visibilité ad hoc sur un ensemble de journaux de trafic que vous chargez manuellement à partir de vos pare-feu et proxys. Les rapports continus présentent les résultats de tous les journaux qui sont transférés à partir de votre réseau à l’aide des collecteurs de journaux de Cloud App Security. Ces nouveaux rapports offrent une meilleure visibilité sur toutes les données, l’identification automatique d’une utilisation anormale identifiée par le moteur de détection des anomalies Machine Learning Cloud App Security ainsi que l’identification d’une utilisation anormale telle que vous l’avez définie avec le moteur de stratégie fiable et granulaire. Pour plus d’informations, voir [Configurer Cloud Discovery](set-up-cloud-discovery.md).
  
 **Améliorations**
-- Facilité d’utilisation globale améliorée dans les pages suivantes : pages de stratégies, paramètres généraux, paramètres de messagerie.
+- Facilité d’utilisation globale améliorée dans les pages suivantes : pages de stratégies, paramètres généraux, paramètres de messagerie.
 - Dans la table des alertes, il est maintenant plus facile de faire la distinction entre les alertes lues et non lues. Les alertes lues affichent une ligne bleue sur la gauche et apparaissent grisées pour indiquer que vous les avez déjà lues.
 - Les paramètres de la stratégie d’activité **Activité répétée** ont été mis à jour. 
 - Dans la page des comptes, une colonne **Type** pour l’utilisateur a été ajoutée et vous pouvez maintenant voir le type de compte d’utilisateur de chaque utilisateur. Les types d’utilisateurs sont spécifiques à l’application. 
 - Une prise en charge en temps quasi réel a été ajoutée pour les activités liées aux fichiers dans OneDrive et SharePoint. Quand un fichier est modifié, Cloud App Security déclenche une analyse presque immédiatement.
 
 
-## <a name="cloud-app-security-release-78"></a>Cloud App Security version 78
-Publication : 7 août 2016
+## <a name="cloud-app-security-release-78"></a>Cloud App Security version 78
+Publication : 7 août 2016
 
 **Améliorations**
 - À partir d’un fichier spécifique, vous pouvez désormais cliquer avec le bouton droit et **Rechercher des éléments associés**. À partir du journal d’activité, vous pouvez utiliser le filtre d’objet cible et sélectionner le fichier spécifique.
 
 - Des analyseurs de fichiers journaux Cloud Discovery optimisés, avec l’ajout de Juniper et Cisco ASA.
 - Cloud App Security vous permet désormais de fournir des commentaires relatifs à l’amélioration des alertes quand vous ignorez l’une d’elles. Vous pouvez aider à améliorer la qualité de la fonctionnalité d’alerte Cloud App Security en nous indiquant pourquoi vous ignorez l’alerte, par exemple parce qu’elle n’est pas intéressante, vous avez reçu un trop grand nombre d’alertes similaires, la gravité réelle doit être inférieure, l’alerte n’est pas exacte.
-- Dans la vue de stratégie de fichier, ou quand vous affichez un fichier, quand vous ouvrez le tiroir de fichiers, le nouveau lien vers Stratégies correspondantes a été ajouté. Quand vous cliquez dessus, vous pouvez afficher toutes les correspondances et vous pouvez désormais toutes les ignorer. 
+- Dans la vue de stratégie de fichier, ou quand vous affichez un fichier, quand vous ouvrez le tiroir de fichiers, le nouveau lien vers Stratégies correspondantes a été ajouté. Quand vous cliquez dessus, vous pouvez afficher toutes les correspondances et vous pouvez désormais toutes les ignorer. 
 - L’unité d’organisation à laquelle appartient un utilisateur est maintenant ajoutée à toutes les alertes pertinentes.
 - Une notification par e-mail est maintenant envoyée pour vous avertir de la fin du traitement de vos journaux chargés manuellement.
 
 
-## <a name="cloud-app-security-release-77"></a>Cloud App Security version 77
-Publication : 24 juillet 2016
+## <a name="cloud-app-security-release-77"></a>Cloud App Security version 77
+Publication : 24 juillet 2016
 
-**Améliorations :**
+**Améliorations :**
 - L’icône du bouton Exporter Cloud Discovery a été améliorée pour la facilité d’utilisation.
 - Quand vous examinez une activité, si l’agent utilisateur n’a pas été analysé, vous pouvez maintenant voir les données brutes.
-- Deux nouveaux facteurs de risque ont été ajoutés au moteur de détection des anomalies : 
-    - Cloud App Security utilise désormais les balises d’adresse IP qui sont associées à un botnet et les adresses IP anonymes dans le cadre du calcul de risque. 
-    - L’activité Office 365 est maintenant surveillée pour les taux de téléchargements élevés. Si le taux de téléchargement Office 365 est plus important que le taux de téléchargement standard de votre organisation ou d’un utilisateur spécifique, une alerte de détection d’anomalie est déclenchée. 
+- Deux nouveaux facteurs de risque ont été ajoutés au moteur de détection des anomalies : 
+    - Cloud App Security utilise désormais les balises d’adresse IP qui sont associées à un botnet et les adresses IP anonymes dans le cadre du calcul de risque. 
+    - L’activité Office 365 est maintenant surveillée pour les taux de téléchargements élevés. Si le taux de téléchargement Office 365 est plus important que le taux de téléchargement standard de votre organisation ou d’un utilisateur spécifique, une alerte de détection d’anomalie est déclenchée. 
 - Cloud App Security est désormais compatible avec la nouvelle API de [fonctionnalité de partage sécurisé](https://blogs.dropbox.com/dropbox/2016/06/new-dropbox-productivity-tools/) Dropbox. 
-- Des améliorations ont été apportées pour ajouter des détails aux erreurs d’analyse du journal Cloud Discovery, notamment : transactions non liées au cloud, tous les événements sont obsolètes, fichier endommagé, pas de correspondance du format de journal.
-- Le filtre de date du journal d’activité a été amélioré ; il inclut désormais la possibilité de filtrer par heure.
-- La page des plages d’adresses IP a été améliorée pour la facilité d’utilisation.
+- Des améliorations ont été apportées pour ajouter des détails aux erreurs d’analyse du journal Cloud Discovery, notamment : transactions non liées au cloud, tous les événements sont obsolètes, fichier endommagé, pas de correspondance du format de journal.
+- Le filtre de date du journal d’activité a été amélioré ; il inclut désormais la possibilité de filtrer par heure.
+- La page des plages d’adresses IP a été améliorée pour la facilité d’utilisation.
 - Cloud App Security inclut désormais la prise en charge de Microsoft Azure Information Protection (préversion). Vous pouvez filtrer vos fichiers et définir des stratégies de fichier à l’aide de la classification sécurisée des balises, puis définir le niveau de l’étiquette de classification que vous souhaitez afficher. Les étiquettes indiquent également si la classification a été définie par une personne de votre organisation ou d’un autre client (externe). 
 
 
 
-## <a name="cloud-app-security-release-76"></a>Cloud App Security version 76
-Publication : 10 juillet 2016
+## <a name="cloud-app-security-release-76"></a>Cloud App Security version 76
+Publication : 10 juillet 2016
 
-**Améliorations :**
+**Améliorations :**
 
 - Les listes d’utilisateurs dans les rapports intégrés peuvent maintenant être exportées.
 - Facilité d’utilisation améliorée pour la stratégie d’activité agrégée.
-- Prise en charge améliorée pour l’analyseur des messages du journal de pare-feu TMG W3C.
+- Prise en charge améliorée pour l’analyseur des messages du journal de pare-feu TMG W3C.
 - Facilité d’utilisation améliorée pour la liste déroulante des actions de gouvernance des fichiers, qui est désormais répartie en actions de collaboration, actions de sécurité et actions d’examen.
-- Détection de voyage impossible améliorée pour l’activité Exchange Online : Envoyer un message.
+- Détection de voyage impossible améliorée pour l’activité Exchange Online : Envoyer un message.
 - Une nouvelle liste de titres (barres de navigation) a été ajoutée en haut des pages d’alertes et de stratégies pour faciliter la navigation.
 
-**Résolutions de bogues :**
-- L’expression prédéfinie pour Carte de crédit dans le paramètre DLP pour les stratégies de fichier a été remplacée par Tout : Finance : Carte de crédit.
+**Résolutions de bogues :**
+- L’expression prédéfinie pour Carte de crédit dans le paramètre DLP pour les stratégies de fichier a été remplacée par Tout : Finance : Carte de crédit.
 
 
-## <a name="cloud-app-security-release-75"></a>Cloud App Security version 75
-Publication : 27 juin 2016
+## <a name="cloud-app-security-release-75"></a>Cloud App Security version 75
+Publication : 27 juin 2016
 
 
-**Nouvelles fonctionnalités :**
+**Nouvelles fonctionnalités :**
 * De nouveaux ajouts ont été effectués dans notre liste croissante d’événements Salesforce pris en charge, dont les événements qui fournissent des informations sur les rapports, des liens partagés, la distribution de contenu, une connexion avec emprunt d’identité et bien plus encore.
-* Les icônes des applications connectées sur le tableau de bord Cloud App Security ont été alignées sur l’état des applications affichées sur le tableau de bord pour refléter les 30 derniers jours.
+* Les icônes des applications connectées sur le tableau de bord Cloud App Security ont été alignées sur l’état des applications affichées sur le tableau de bord pour refléter les 30 derniers jours.
 * Prise en charge des écrans en pleine largeur.
 
 
-**Résolutions de bogues :**
+**Résolutions de bogues :**
 * Les numéros de téléphone des alertes par SMS sont maintenant validés lors de l’insertion.
 
 ## <a name="cloud-app-security-release-74"></a>Cloud App Security version 74
