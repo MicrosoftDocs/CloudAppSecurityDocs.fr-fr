@@ -14,8 +14,8 @@ ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 97f270813beae64bf0572ac9e806290e4c2fcd22
-ms.openlocfilehash: 92507e352a88cd0c5ff4a7bc9f66b94defd864ff
+ms.sourcegitcommit: 52f2245779568abbf41d47c4b45cdcced302529b
+ms.openlocfilehash: 40fd28f568aa9af32f9e2399435f48372ea62413
 
 
 ---
@@ -68,7 +68,10 @@ Vous trouverez ci-dessous une liste des filtres d’activité qui peuvent être 
 
 -   ISP enregistré : Fournisseur de services Internet à partir duquel l’activité a été effectuée.   
 
--  Source : Recherchez selon la source à partir de laquelle l’activité a été détectée, par exemple, Connecteur d’application. 
+-  Source : Effectuez la recherche en fonction de la source à partir de laquelle l’activité a été détectée. La source peut être l’un des éléments suivants :
+  - Connecteur d’application : journaux provenant directement du connecteur d’API de l’application.
+  - Analyse du connecteur d’application : enrichissements de Cloud App Security basés sur l’analyse des informations par le connecteur d’API.
+  
 
 -   Utilisateur : Utilisateur qui a exécuté l’activité, qui peut être filtré en domaine, groupe, nom ou organisation. Pour filtrer les activités sans utilisateur spécifique, vous pouvez utiliser l’opérateur « n’est pas défini ».  
     -   Domaine de l’utilisateur : Recherchez un domaine utilisateur spécifique.
@@ -94,34 +97,9 @@ Vous pouvez afficher des informations supplémentaires sur chaque activité en c
 
 ![tiroir activité](./media/activity-drawer.png "activity drawer")  
   
+Pour obtenir la liste des actions de gouvernance disponibles, consultez [Paramètres de correspondance de l’activité](governance-actions.md#activity-match-parameters).
 
 
-## <a name="activity-match-parameters"></a>Paramètres de correspondance de l’activité  
-Spécifiez le nombre requis de répétitions de l’activité pour correspondre à la stratégie, par exemple, en définissant une stratégie qui émet une alerte quand un utilisateur effectue sans succès 10 tentatives de connexion dans un délai d’exécution de 2 minutes.  
-Le paramètre par défaut, **Paramètres de correspondance de l’activité**, déclenche une correspondance pour chaque activité unique qui satisfait à tous les filtres d’activité.   
-À l’aide de l’option **Activité répétée**, vous pouvez définir le nombre d’activités répétées, la durée du délai d’exécution dans lequel les activités sont comptabilisées et même spécifier que toutes les activités doivent être effectuées par le même utilisateur et dans la même application cloud.  
-  
-### <a name="actions"></a>Actions  
-Notifications  
-  
--   Alertes : Les alertes peuvent se déclencher dans le système et se propager par le biais de messages électroniques et texte, selon leur niveau de gravité.  
-  
--   Notification par e-mail à l’utilisateur : Les e-mails sont personnalisables et envoyés à tous les propriétaires de fichiers en situation de violation.  
-  
--   Mettre en copie le responsable : Selon l’intégration de l’annuaire des utilisateurs, des notifications par e-mail peuvent également être envoyées au responsable de la personne qui viole une stratégie.  
-  
--   Notifier d’autres utilisateurs : Liste spécifique d’adresses e-mail qui reçoivent ces notifications.  
-  
-Actions de gouvernance dans les applications  
-  
--   Des actions précises peuvent être appliquées par application. Ces actions spécifiques varient selon la terminologie de l’application.  
-  
--   Suspendre l’utilisateur : Excluez temporairement l’utilisateur de l’application.  
-  
--   Révoquer le mot de passe : Révoquez le mot de passe de l’utilisateur et obligez-le à définir un nouveau mot de passe lors de sa prochaine connexion.  
-  
-     ![stratégie d’activité ref6](./media/activity-policy-ref6.png "activity policy ref6")  
-  
 ## <a name="see-also"></a>Voir aussi  
 [Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)   
 [Pour obtenir un support technique, visitez la page de support assisté Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
@@ -130,6 +108,6 @@ Actions de gouvernance dans les applications
   
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO1-->
 
 
