@@ -1,11 +1,11 @@
 ---
-title: "Connecter Google Apps à Microsoft Cloud App Security | Documentation Microsoft"
+title: Connecter Google Apps | Documentation Microsoft
 description: "Cette rubrique fournit des informations sur la connexion de votre application Google Apps à Cloud App Security à l’aide du connecteur API."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/23/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,14 +14,16 @@ ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 0f38f61be8a0db4a28d3c7df614807ace69bb38e
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: b28eaa521980cb7ec8eee94f0168ca07286533e7
 
 
 ---
 
 # <a name="connect-google-apps-to-microsoft-cloud-app-security"></a>Connecter Google Apps à Microsoft Cloud App Security
-Cette section fournit des instructions pour connecter Cloud App Security à votre compte Google Apps existant à l’aide des API du connecteur.  
+Cette section fournit des instructions pour connecter Cloud App Security à votre compte Google Apps existant à l’aide des API du connecteur.
+
+  
   
 ## <a name="configure-google-apps"></a>Configurer Google Apps  
   
@@ -31,7 +33,7 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
   
      ![google1](./media/google1.png "google1")  
   
-3.  Dans l’écran **New project (Nouveau projet)** :  
+3.  Dans l’écran **New project (Nouveau projet)** :  
   
     1.  Nommez votre projet **Cloud App Security pour Google**.  
   
@@ -51,7 +53,7 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
   
      ![google5](./media/google5.png "google5")  
   
-6.  Cliquez sur l’onglet **Google APIs** (API Google) et activez les API suivantes (utilisez la ligne de recherche si l’API n’est pas répertoriée dans la liste **Popular APIs** (API populaires)) :  
+6.  Cliquez sur l’onglet **Google APIs** (API Google) et activez les API suivantes (utilisez la ligne de recherche si l’API n’est pas répertoriée dans la liste **Popular APIs** (API populaires)) :  
   
      ![google8](./media/google8.png "google8")  
   
@@ -70,7 +72,7 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
   
          ![google11, avertissement](./media/google11-warning.png "google11 warning")  
   
-7.  Vous devez avoir 5 **API activées** :  
+7.  Vous devez avoir 5 **API activées** :  
   
      ![google15](./media/google15.png "google15")  
   
@@ -88,7 +90,7 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
   
      ![google17](./media/google17.png "google17")  
   
-10. Dans **Service account (Compte de service)**, choisissez **New service account (Nouveau compte de service)** et tapez un nom, par exemple, **Compte de service 1**.  
+10. Dans **Service account (Compte de service)**, choisissez **New service account (Nouveau compte de service)** et tapez un nom, par exemple, **Compte de service 1**.  
   
      ![google19](./media/google19.png "google19")  
   
@@ -102,7 +104,7 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
   
      ![informations d’identification google apps, compte de service](./media/google-apps-credentials-service-account.png "google apps credentials service account")  
   
-12. Cliquez sur les 3 points à droite du compte de service que vous avez créé et sélectionnez **Edit (Modifier)**.  
+12. Cliquez sur les 3 points à droite du compte de service que vous avez créé et sélectionnez **Edit (Modifier)**.  
   
      ![google22](./media/google22.png "google22")  
   
@@ -110,7 +112,7 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
   
      ![google24](./media/google24.png "google24")  
   
-14. Copiez l’**adresse e-mail** attribuée à votre service : vous en aurez besoin ultérieurement.  
+14. Copiez l’**adresse e-mail** attribuée à votre service : vous en aurez besoin ultérieurement.  
   
      ![google25](./media/google25.png "google25")  
   
@@ -122,17 +124,17 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
   
      ![google27](./media/google27.png "google27")  
   
-16. Cliquez sur l’icône Paramètres (symbolisée par une roue dentée) en regard de **Drive API** et sous **Drive UI Integration (Intégration de l’interface utilisateur de Drive)**, renseignez les valeurs suivantes :  
+16. Cliquez sur l’icône Paramètres (symbolisée par une roue dentée) en regard de **Drive API** et sous **Drive UI Integration (Intégration de l’interface utilisateur de Drive)**, renseignez les valeurs suivantes :  
   
-    -   **Application Name (Nom de l’application)** : Cloud App Security pour Google.  
+    -   **Application Name (Nom de l’application)** : Cloud App Security pour Google.  
   
-    -   **Short Description & Long Description (Description courte et description longue)** : Microsoft Cloud App Security donne de la visibilité sur les applications cloud, ce qui vous permet de contrôler, examiner et régir l’utilisation de ces applications cloud, de sécuriser les données d’entreprise et de détecter les activités suspectes liées aux applications cloud.  
+    -   **Short Description & Long Description (Description courte et description longue)** : Microsoft Cloud App Security donne de la visibilité sur les applications cloud, ce qui vous permet de contrôler, examiner et régir l’utilisation de ces applications cloud, de sécuriser les données d’entreprise et de détecter les activités suspectes liées aux applications cloud.  
   
-    -   Sous **Application icon (Icône de l’application)**, chargez les images 128 x 128 et 32 x 32.  
+    -   Sous **Application icon (Icône de l’application)**, chargez les images 128 x 128 et 32 x 32.  
   
-         Ces images se trouvent à l’adresse : [https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip](https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip)  
+         Ces images se trouvent à l’adresse : [https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip](https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip)  
   
-    -   Tapez la valeur suivante sous **Open URL (URL ouverte) :**  
+    -   Tapez la valeur suivante sous **Open URL (URL ouverte) :**  
   
          https://portal.cloudappsecurity.com/#/services/11770?tab=files  
   
@@ -144,25 +146,25 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
   
     -   Copiez la valeur **Project number (App ID)** (Numéro de projet (ID d’application)) qui apparaît en haut à des fins d’utilisation ultérieure.  
   
-    -   **Application Name (Nom de l’application)** : Cloud App Security pour Google.  
+    -   **Application Name (Nom de l’application)** : Cloud App Security pour Google.  
   
-         Renseignez le champ **Application description (Description de l’application)** par : « Microsoft Cloud App Security donne de la visibilité sur les applications cloud, ce qui vous permet de contrôler, examiner et régir l’utilisation de ces applications cloud, de sécuriser les données d’entreprise et de détecter les activités suspectes liées aux applications cloud. »  
+         Renseignez le champ **Application description (Description de l’application)** par : « Microsoft Cloud App Security donne de la visibilité sur les applications cloud, ce qui vous permet de contrôler, examiner et régir l’utilisation de ces applications cloud, de sécuriser les données d’entreprise et de détecter les activités suspectes liées aux applications cloud. »  
   
     -   Décochez la case **Enable individual install (Activer l’installation individuelle)**.  
   
-    -   Configurez les 4 images obligatoires sous **Application icons (Icônes de l’application)**.  
+    -   Configurez les 4 images obligatoires sous **Application icons (Icônes de l’application)**.  
   
-         Ces images se trouvent à l’adresse : [https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip](https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip)  
+         Ces images se trouvent à l’adresse : [https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip](https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip)  
   
          ![google31](./media/google31.png "google31")  
   
-    -   Renseignez les valeurs **Support URLs (URL d’assistance)** suivantes :  
+    -   Renseignez les valeurs **Support URLs (URL d’assistance)** suivantes :  
   
-        -   **URL des termes du contrat de service** : http://go.microsoft.com/fwlink/?LinkID=733268  
+        -   **URL des termes du contrat de service** : http://go.microsoft.com/fwlink/?LinkID=733268  
   
-        -   **URL de la politique de confidentialité** : http://go.microsoft.com/fwlink/?LinkId=512132  
+        -   **URL de la politique de confidentialité** : http://go.microsoft.com/fwlink/?LinkId=512132  
   
-    -   Sous **OAuth 2.0 scopes** (Étendues OAuth 2.0), tapez les valeurs suivantes (1 par ligne. Appuyez sur Entrée pour confirmer) :  
+    -   Sous **OAuth 2.0 scopes** (Étendues OAuth 2.0), tapez les valeurs suivantes (1 par ligne. Appuyez sur Entrée pour confirmer) :  
   
         -   https://www.googleapis.com/auth/admin.reports.audit.readonly  
   
@@ -218,21 +220,21 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
   
 ## <a name="configure-cloud-app-security"></a>Configurer Cloud App Security  
   
-1.  Dans le portail Cloud App Security, cliquez sur **Examiner**, puis sur **Applications approuvées**.  
+1.  Dans le portail Cloud App Security, cliquez sur **Examiner**, puis sur **Applications connectées**.  
   
-2.  Dans la ligne Google Apps, cliquez sur **Connecter** dans la colonne **État du connecteur d’applications** ou cliquez sur **Connecter une application** et sélectionnez **Google Apps**.  
+2.  Dans la page **Applications connectées**, cliquez sur le signe plus (+) et sélectionnez **Google Apps**.  
   
      ![connecter google apps](./media/connect-google-apps.png "connect google apps")  
   
-3.  Dans la page des paramètres de Google Apps, renseignez les valeurs suivantes :  
+3.  Dans la fenêtre contextuelle, renseignez les valeurs suivantes :  
   
      ![Configuration de Google Apps dans Cloud App Security](./media/google-apps-configuration-in-cloud-app-security.png "Google Apps Configuration in Cloud App Security")  
   
-    1.  **Adresse e-mail du compte de service Google** que vous avez copiée à l’étape 14.  
+    1.  **Adresse e-mail du compte de service Google** que vous avez copiée à l’étape 14.  
   
-    2.  **Numéro de projet Google (ID d’application)** que vous avez copié à l’étape 17.  
+    2.  **Numéro de projet Google (ID d’application)** que vous avez copié à l’étape 17.  
   
-    3.  Chargez le **certificat Google** P12 que vous avez enregistré à l’étape 10.  
+    3.  Chargez le **certificat Google** P12 que vous avez enregistré à l’étape 10.  
   
     4.  Entrez une seule **adresse e-mail d’administrateur** pour votre administrateur Google Apps.  
   
@@ -251,7 +253,7 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
          Après avoir reçu une notification de réussite, cliquez sur **Terminé** et fermez la page Google Apps.  
   
   
-Après avoir connecté Google Apps, vous recevrez les événements des 60 jours précédant la connexion.
+Après avoir connecté Google Apps, vous recevrez les événements des 60 jours précédant la connexion.
   
 Après la connexion de Google Apps, Cloud App Security effectue une analyse complète. Selon le nombre de fichiers et d’utilisateurs, l’exécution de l’analyse complète peut prendre du temps. Pour permettre une analyse en temps quasi réel, les fichiers sur lesquels une activité est détectée sont déplacés vers le début de la file d’attente d’analyse, par exemple un fichier qui est modifié, mis à jour ou partagé est analysé immédiatement et n’attend pas d’être traité par le processus d’analyse standard. Cela ne s’applique pas aux fichiers qui ne sont pas intrinsèquement modifiés, par exemple les fichiers qui sont affichés, prévisualisés, imprimés ou exportés.
   
@@ -264,6 +266,6 @@ Après la connexion de Google Apps, Cloud App Security effectue une analyse comp
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

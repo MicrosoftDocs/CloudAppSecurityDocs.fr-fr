@@ -1,5 +1,5 @@
 ---
-title: "Connecter Dropbox à Microsoft Cloud App Security | Documentation Microsoft"
+title: Connecter Dropbox | Documentation Microsoft
 description: "Cette rubrique fournit des informations sur la connexion de votre application Dropbox à Cloud App Security à l’aide du connecteur API."
 keywords: 
 author: rkarlin
@@ -14,8 +14,8 @@ ms.assetid: 4acd93f4-b885-4e1f-a385-43b5db02a3ee
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 105003dfbd8afbb10cdb2058e2da180d4b49e294
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: a2b9a7e9cf254c52465922af4b0e3a0256e60c5d
 
 
 ---
@@ -28,13 +28,13 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
 
 ## <a name="how-to-connect-dropbox-to-cloud-app-security"></a>Comment connecter Dropbox à Cloud App Security  
   
-1.  Dans la console Cloud App Security, cliquez sur **Examiner**, puis sur **Applications approuvées**.  
+1.  Dans la console Cloud App Security, cliquez sur **Examiner**, puis sur **Applications connectées**.  
   
-2.  Dans la ligne Dropbox, cliquez sur **Connecter** dans la colonne **État du connecteur d’applications**, ou cliquez sur le bouton **Connecter une application**, puis sur **Dropbox**.  
+2.  Dans la page **Connecteurs d’application**, cliquez sur le bouton plus (+), puis sur **Dropbox**.  
   
      ![connecter dropbox](./media/connect-dropbox.png "connect dropbox")  
   
-3.  Dans la page de paramètres de Dropbox, sous l’onglet API, entrez l’e-mail du compte d’administrateur.  
+3.  Dans le menu contextuel, entrez l’adresse e-mail du compte d’administrateur.  
   
 4.  Cliquez sur **Générer un lien**.  
   
@@ -50,7 +50,7 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
   
      Le test peut prendre quelques minutes. Une fois averti que la connexion a réussi, cliquez sur **Fermer**.  
   
-Après avoir connecté Dropbox, vous recevrez les événements des 60 jours précédant la connexion.
+Après avoir connecté Dropbox, vous recevrez les événements des 60 jours précédant la connexion.
 
 > [!NOTE] 
 > Tout événement Dropbox pour l’ajout d’un fichier est affiché dans Cloud App Security en tant que fichier de chargement pour l’aligner sur toutes les autres applications connectées à Cloud App Security. 
@@ -63,6 +63,6 @@ Après avoir connecté Dropbox, vous recevrez les événements des 60 jours pr�
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 
