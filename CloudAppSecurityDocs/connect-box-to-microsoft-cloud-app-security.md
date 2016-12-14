@@ -1,5 +1,5 @@
 ---
-title: "Connecter Box à Microsoft Cloud App Security | Documentation Microsoft"
+title: Connecter Box | Documentation Microsoft
 description: "Cette rubrique fournit des informations sur la connexion de votre application Box à Cloud App Security à l’aide du connecteur API."
 keywords: 
 author: rkarlin
@@ -14,8 +14,8 @@ ms.assetid: b3e4713e-986f-4a5e-9fcc-f8de94dd0df7
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 849408f84e2a80022623c11f7951e921a95625b6
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: 4aa741a90e356d440598eb9302dbd49f3b445c6c
 
 
 ---
@@ -28,7 +28,7 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
 > [!NOTE]  
 >  Le déploiement avec un compte qui n’est pas un compte d’administrateur entraîne un échec du test de l’API et n’autorise pas Cloud App Security à analyser tous les fichiers inclus dans Box. S’il s’agit d’un problème pour vous, vous pouvez effectuer le déploiement avec un coadministrateur qui a tous les privilèges cochés, mais le test de l’API continuera d’échouer et les fichiers appartenant aux autres administrateurs dans Box ne seront pas analysés.  
   
-1.  Si vous restreignez l’accès aux autorisations des applications, suivez cette étape. Sinon, passez à l’étape 2.  
+1.  Si vous restreignez l’accès aux autorisations des applications, suivez cette étape. Sinon, passez à l’étape 2.  
   
     -   Dans la console d’administration Box, cliquez sur l’icône des paramètres suivie de **Business settings (Paramètres d’entreprise)**.  
   
@@ -43,15 +43,15 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
          ![paramètres box, except for (à l’exception de)](./media/box-settings-except-for.png "box settings except for")  
   
     > [!NOTE]  
-    >  Si vous êtes un client Adallom existant et que votre URL de console concerne Adallom et non Cloud App Security, utilisez ce numéro de série d’application : bwahmilhdlpbqy2ongkl119o3lrkoshc.  
+    >  Si vous êtes un client Adallom existant et que votre URL de console concerne Adallom et non Cloud App Security, utilisez ce numéro de série d’application : bwahmilhdlpbqy2ongkl119o3lrkoshc.  
   
-2.  Dans le portail Cloud App Security, cliquez sur **Examiner**, puis sur **Applications approuvées**.  
+2.  Dans le portail Cloud App Security, cliquez sur **Examiner**, puis sur **Applications connectées**.  
   
-3.  Dans la ligne Box, cliquez sur **Connecter** dans la colonne **État du connecteur d’applications**, ou cliquez sur le bouton **Connecter une application**, puis sélectionnez **Box**.  
+3.  Dans la page **Connecteurs d’application**, cliquez sur le bouton plus (+), puis sélectionnez **Box**.  
   
      ![connecter box](./media/connect-box.png "connect box")  
   
-4.  Dans la page **Paramètres Box**, sous l’onglet **API**, cliquez sur **Suivez le lien**.  
+4.  Dans la fenêtre contextuelle **Paramètres Box**, cliquez sur **Suivez ce lien**.  
   
 5.  La page de connexion à Box s’ouvre. Entrez vos informations d’identification pour autoriser Cloud App Security à accéder à l’application Box de votre équipe.  
   
@@ -65,7 +65,7 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
   
 Box est maintenant connecté à Cloud App Security.  
  
-Après avoir connecté Box, vous recevrez les événements des 60 jours précédant la connexion.
+Après avoir connecté Box, vous recevrez les événements des 60 jours précédant la connexion.
   
 Après la connexion de Box, Cloud App Security effectue une analyse complète. Selon le nombre de fichiers et d’utilisateurs, l’exécution de l’analyse complète peut prendre du temps. Pour permettre une analyse en temps quasi réel, les fichiers sur lesquels une activité est détectée sont déplacés vers le début de la file d’attente d’analyse, par exemple un fichier qui est modifié, mis à jour ou partagé est analysé immédiatement et n’attend pas d’être traité par le processus d’analyse standard. Cela ne s’applique pas aux fichiers qui ne sont pas intrinsèquement modifiés, par exemple les fichiers qui sont affichés, prévisualisés, imprimés ou exportés.
   
@@ -77,6 +77,6 @@ Après la connexion de Box, Cloud App Security effectue une analyse complète. S
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

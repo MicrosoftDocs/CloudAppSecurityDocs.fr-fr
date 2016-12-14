@@ -49,13 +49,13 @@ Par exemple, pour découvrir les applications d’hébergement à risque détect
   
 Définissez les filtres de stratégie pour découvrir tout service figurant dans la catégorie **Services d’hébergement** et ayant un indice faible, donc présentant un risque.   
 Définissez la **Gravité** de la stratégie sur **Moyenne**.   
-En bas, définissez les seuils qui doivent déclencher une alerte pour une application découverte donnée : uniquement si plus de 100 utilisateurs dans l’environnement ont utilisé l’application, et seulement s’ils ont téléchargé une certaine quantité de données à partir du service.   
+En bas, définissez les seuils qui doivent déclencher une alerte pour une application découverte donnée : uniquement si plus de 100 utilisateurs dans l’environnement ont utilisé l’application, et seulement s’ils ont téléchargé une certaine quantité de données à partir du service.   
 En outre, vous pouvez définir la limite des alertes quotidiennes à recevoir.  
   
 ![exemple de stratégie de découverte d’application](./media/app-discovery-policy-example.png "app discovery policy example")  
   
 ## <a name="cloud-discovery-anomaly-detection"></a>Détection d’anomalie de Cloud Discovery  
-Cloud App Security examine tous les journaux de votre environnement Cloud Discovery pour déterminer s’ils contiennent des anomalies. À titre d’exemple, citons un utilisateur qui n’a jamais utilisé Dropbox et qui y charge soudainement 600 Go de données ou une application qui fait l’objet de transactions dans des proportions inhabituelles. Par défaut, la stratégie de détection des anomalies est activée ; ainsi, vous n’avez pas besoin de configurer une nouvelle stratégie pour qu’elle fonctionne, mais vous pouvez affiner les types d’anomalies dont vous souhaitez être averti dans la stratégie par défaut.  
+Cloud App Security examine tous les journaux de votre environnement Cloud Discovery pour déterminer s’ils contiennent des anomalies. À titre d’exemple, citons un utilisateur qui n’a jamais utilisé Dropbox et qui y charge soudainement 600 Go de données ou une application qui fait l’objet de transactions dans des proportions inhabituelles. Par défaut, la stratégie de détection des anomalies est activée ; ainsi, vous n’avez pas besoin de configurer une nouvelle stratégie pour qu’elle fonctionne, mais vous pouvez affiner les types d’anomalies dont vous souhaitez être averti dans la stratégie par défaut.  
   
 1.  Dans la console, cliquez sur **Contrôle**, puis sur **Stratégies**.  
   
@@ -88,6 +88,6 @@ Définissez une **Limite d’alerte quotidienne**, indiquez si l’alerte doit �
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 
