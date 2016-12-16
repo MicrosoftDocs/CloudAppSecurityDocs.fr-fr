@@ -14,8 +14,8 @@ ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 76c705a38ffb0d61b9ad2eeaf3bdb939f5326589
-ms.openlocfilehash: 912d3c5065722469c436446ba67511ffc6e44d77
+ms.sourcegitcommit: 525a6c5274843f63c300e97d1dbd40ece6465edf
+ms.openlocfilehash: 3a6750f244d3d0cd8d691ffd768cf5183da78d32
 
 
 ---
@@ -25,7 +25,7 @@ La procédure suivante contient des instructions pour personnaliser le portail C
   
 ## <a name="set-up-the-portal"></a>Configurer le portail  
   
-1.  Dans le portail Cloud App Security, dans la barre de menus, cliquez sur l’icône des paramètres ![icône des paramètres](./media/settings-icon.png "settings icon") et sélectionnez **Paramètres généraux** pour configurer les éléments suivants :  
+1.  Dans la barre de menus du portail Cloud App Security, cliquez sur l’icône des paramètres ![icône des paramètres](./media/settings-icon.png "icône des paramètres") et sélectionnez **Paramètres généraux** pour configurer les éléments suivants :  
   
 3.  **Détails de l’organisation**  
   
@@ -33,52 +33,52 @@ La procédure suivante contient des instructions pour personnaliser le portail C
   
      Fournissez un **Nom de l’environnement** (client). Cela est particulièrement important si vous gérez plusieurs clients.  
   
-     Ajoutez la liste de vos **Domaines gérés**. Grâce aux domaines gérés, Cloud App Security peut déterminer quels sont les utilisateurs internes, les utilisateurs externes, ainsi que les emplacements auxquels les fichiers doivent ou non être partagés. Ce dispositif est utilisé pour les rapports, ainsi que pour les alertes.  
+4. Vous pouvez également fournir un **Logo**, qui apparaît dans les notifications par courrier électronique et les pages web envoyées par le système. Le logo doit être un fichier png avec une taille maximale de 150 x 50 pixels sur un arrière-plan transparent.  
+
+4.  Ajoutez la liste de vos **Domaines gérés**. Grâce aux domaines gérés, Cloud App Security peut déterminer quels sont les utilisateurs internes, les utilisateurs externes, ainsi que les emplacements auxquels les fichiers doivent ou non être partagés. Ce dispositif est utilisé pour les rapports, ainsi que pour les alertes.  
 > [!NOTE] 
-> Les utilisateurs dans des domaines qui ne sont pas configurés comme internes seront marqués comme externes et aucune recherche d’activités ni de fichiers ne sera effectuée.
-   
-Vous pouvez également fournir un **Logo**, qui apparaît dans les notifications par courrier électronique et les pages web envoyées par le système. Le logo doit être un fichier png avec une taille maximale de 150 x 50 pixels sur un arrière-plan transparent.  
+> - Les utilisateurs dans des domaines qui ne sont pas configurés comme internes seront marqués comme externes et aucune recherche d’activités ni de fichiers ne sera effectuée.
+> - En cas d’intégration à Azure Information Protection, consultez [Intégration d’Azure Information Protection](azip-integration.md) pour obtenir des informations. 
   
 4.  **Paramètres de confidentialité d’e-mail du journal d’activité**  
   
      Quand des e-mails sont détectés à partir d’Exchange Online, il est possible de définir la façon dont ils sont affichés, afin de préserver la confidentialité. Plusieurs options sont disponibles pour l’affichage d’un e-mail : **Ligne Objet masquée**, **Ligne Objet entière** ou **Afficher l’ID d’e-mail uniquement**.  
   
-     ![paramètres généraux](./media/general-settings.png "general settings")  
+     ![paramètres généraux](./media/general-settings.png "paramètres généraux")  
   
 5.  **Paramètres linguistiques et régionaux**  
   
      Définissez la **Langue** à utiliser par défaut pour le portail. Pour modifier la langue pour un administrateur spécifique, accédez à **Paramètres utilisateur** > **Paramètres du compte**.  
   
-     ![langue du fuseau horaire](./media/timezone-language.png "timezone language")  
+     ![langue du fuseau horaire](./media/timezone-language.png "langue du fuseau horaire")  
   
      Définissez le **Fuseau horaire principal**. Cloud App Security analyse et rassemble vos données en continu. Par défaut, le fuseau horaire pour le portail Cloud App Security est défini sur UTC. Il est important de définir le fuseau horaire principal, afin que Cloud App Security puisse dater les incidents avec précision dans votre système. Par exemple, dans le graphique d’activité, les données sont organisées par date ; ces dates étant affectées par le fuseau horaire de votre système, si vous n’avez pas modifié le fuseau horaire par défaut, vos données sont organisées en journées de 24 heures selon le fuseau horaire UTC et peuvent se voir associer un horodatage plus ou moins décalé par rapport à la réalité.  
   
-     ![fuseau horaire principal](./media/master-time-zone.png "master time zone")  
+     ![fuseau horaire principal](./media/master-time-zone.png "fuseau horaire principal")  
   
 6.  Grâce à cet écran, vous pouvez à tout moment sauvegarder vos paramètres de portail. Cliquez sur Exporter les paramètres de portail pour créer un fichier json de tous vos paramètres de portail, y compris les règles de stratégie, les groupes d’utilisateurs et les plages d’adresses IP.  
   
-     ![console de sauvegarde](./media/backup-console.png "backup console")  
+     ![console de sauvegarde](./media/backup-console.png "console de sauvegarde")  
   
-7.  Pour ajouter d’autres administrateurs à Cloud App Security, cliquez sur la dent Paramètres ![icône des paramètres](./media/settings-icon.png "settings icon"), puis sur **Gérer l’accès administrateur**. Ajoutez les administrateurs qui doivent avoir accès à Cloud App Security, puis cliquez sur **Fermer**.  
+7.  Pour ajouter d’autres administrateurs à Cloud App Security, cliquez sur l’icône des paramètres ![icône des paramètres](./media/settings-icon.png "icône des paramètres"), puis sur **Gérer l’accès administrateur**. Ajoutez les administrateurs qui doivent avoir accès à Cloud App Security, puis cliquez sur **Fermer**.  
 >[!NOTE]
 >Tout utilisateur non invité (avec son propre rôle, comme un administrateur général, de mise en conformité ou de la sécurité) peut inviter d’autres utilisateurs dans Cloud App Security.
   
-![gérer l’accès administrateur](./media/manage-admin-access.png "manage admin access")  
+![gérer l’accès administrateur](./media/manage-admin-access.png "gérer l’accès administrateur")  
   
 ##  <a name="a-nameadminsettingsa-customize-your-admin-settings"></a><a name="Adminsettings"></a> Personnaliser vos paramètres d’administration  
 Pour définir vos préférences en tant qu’administrateur de Cloud App Security, cliquez sur votre nom dans la barre de menus du portail, puis sélectionnez **Paramètres utilisateur** pour définir les éléments suivants :  
   
 1.  Cliquez sur **Paramètres du compte**. Vous pouvez ici personnaliser la langue que doit utiliser le portail. Vous pouvez définir la langue du portail sur la langue par défaut ou sur la langue de votre choix.  
   
-     ![paramètres utilisateur personnalisés](./media/custom-user-settings.png "custom user settings")  
+     ![paramètres utilisateur personnalisés](./media/custom-user-settings.png "paramètres utilisateur personnalisés")  
   
 2.  Cliquez sur **Notifications** et définissez les préférences de notification par courrier électronique et SMS pour les e-mails reçus du système.  Vous pouvez définir le niveau de gravité des alertes et des violations à recevoir par e-mail ; le niveau de gravité étant défini par stratégie, quand des violations sont déclenchées, vous recevez une notification par courrier électronique en fonction du paramètre défini ici et du paramètre de gravité défini dans la stratégie qui a été enfreinte. Les e-mails sont envoyés à l’alias associé au compte d’utilisateur administrateur que vous utilisez pour vous connecter à Cloud App Security. Entrez un numéro de téléphone afin que Cloud App Security puisse vous envoyer des SMS quand des alertes et des notifications sont envoyées et définissez le niveau de gravité pour lequel vous souhaitez recevoir des notifications par SMS.  
   
 > [!NOTE] 
 > Le nombre maximal d’alertes envoyées via SMS est de 10 par numéro de téléphone par jour. Notez que le jour est calculé selon le fuseau horaire UTC. 
   
-  ![paramètres de notification](./media/notification-settings.png "notification settings")  
-  
+  ![paramètres de notification](./media/notification-settings.png "paramètres de notification")  
   
 3. Quand vous avez terminé, cliquez sur **Enregistrer**.  
   
@@ -88,7 +88,7 @@ Chaque groupe de plages IP peut être classé selon une liste de catégories d�
   
 IPv4 et IPv6 sont pris en charge.  
   
-Dans la barre de menus, cliquez sur l’icône des paramètres ![icône des paramètres](./media/settings-icon.png "settings icon") et sélectionnez **Plages d’adresses IP**. Cliquez sur **Ajouter une plage d’adresses IP** et définissez les éléments suivants :  
+Dans la barre de menus, cliquez sur l’icône des paramètres ![icône des paramètres](./media/settings-icon.png "icône des paramètres") et sélectionnez **Plages d’adresses IP**. Cliquez sur **Ajouter une plage d’adresses IP** et définissez les éléments suivants :  
   
 > [!NOTE]  
 >  L’emplacement et l’ISP enregistré remplacent les valeurs par défaut.   
@@ -124,12 +124,12 @@ Dans la barre de menus, cliquez sur l’icône des paramètres ![icône des para
   
 7.  Quand vous avez terminé, cliquez sur **Créer**.  
   
-     ![plage de nouvelles adresses IP](./media/newipaddress-range.png "newipaddress range")  
+     ![plage de nouvelles adresses IP](./media/newipaddress-range.png "plage de nouvelles adresses IP")  
   
 ##  <a name="a-nameadallommailsettingsa-personalize-your-experience"></a><a name="Adallom_mailsettings"></a>Personnaliser votre expérience  
-Dans la barre de menus, cliquez sur l’icône des paramètres ![icône des paramètres](./media/settings-icon.png "settings icon") et sélectionnez **Paramètres de messagerie** pour définir les paramètres des notifications par courrier électronique envoyées par Cloud App Security aux administrateurs ; ce paramétrage définit l’envoi des alertes et des notifications aux utilisateurs finaux concernant les violations dans lesquelles ils sont impliqués.  
+Dans la barre de menus, cliquez sur l’icône des paramètres ![icône des paramètres](./media/settings-icon.png "icône des paramètres") et sélectionnez **Paramètres de messagerie** pour définir les paramètres des notifications par e-mail envoyées par Cloud App Security aux administrateurs ; ce paramétrage définit l’envoi des alertes et des notifications aux utilisateurs finaux concernant les violations dans lesquelles ils sont impliqués.  
   
-![menu des paramètres de messagerie](./media/mail-setting-menu.png "mail setting menu")  
+![menu des paramètres de messagerie](./media/mail-setting-menu.png "menu des paramètres de messagerie")  
   
 Configurez ce qui suit :  
   
@@ -139,7 +139,7 @@ Configurez ce qui suit :
   
      **Adresse e-mail de réponse** : compte e-mail à utiliser pour les réponses au message.  
   
-     ![configuration des paramètres de messagerie](./media/mail-settings-config.png "mail settings config")  
+     ![configuration des paramètres de messagerie](./media/mail-settings-config.png "configuration des paramètres de messagerie")  
   
 2.  Vous pouvez utiliser un fichier html pour personnaliser et créer les e-mails envoyés par le système. Le fichier html utilisé pour votre modèle doit inclure les éléments suivants :  
   
@@ -153,62 +153,63 @@ Configurez ce qui suit :
   
          %%content%% : espace réservé pour le contenu à inclure pour les utilisateurs finaux, tel que défini par la stratégie  
   
-     Voici un exemple de modèle d’e-mail :  
-  
-    ```  
-    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
-    <html>  
-    <head>  
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
-    </head>  
-    <body class="end-user">  
-    <table border="0" cellpadding="20%" cellspacing="0" width="100%" id="background-table">  
-      <tr>  
-        <td align="center">  
-          <!--[if (gte mso 9)|(IE)]>  
-          <table width="600" align="center" cellpadding="0" cellspacing="0" border="0">  
+     Voici un exemple de modèle d’e-mail : 
+
+
+           
+          <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
+          <html>  
+          <head>  
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
+          </head>  
+          <body class="end-user">  
+          <table border="0" cellpadding="20%" cellspacing="0" width="100%" id="background-table">  
             <tr>  
-              <td>  
-          <![endif]-->  
-          <table bgcolor="#ffffff" align="center" border="0" cellpadding="0" cellspacing="0" style="padding-bottom: 40px;" id="container-table">  
-            <tr>  
-              <td align="right" id="header-table-cell">  
-                <img src="%%logo%%" alt="Microsoft Cloud App Security" id="org-logo" />  
-              </td>  
-            </tr>  
-            <tr>  
-              <td style="padding-top: 58px;" align="center" valign="top">  
-                <table width="100%" cellpadding="12">  
+              <td align="center">  
+                <!--[if (gte mso 9)|(IE)]>  
+                <table width="600" align="center" cellpadding="0" cellspacing="0" border="0">  
                   <tr>  
-                    <td align="center" class="round-title">  
-                      %%title%%  
+                    <td>  
+                <![endif]-->  
+                <table bgcolor="#ffffff" align="center" border="0" cellpadding="0" cellspacing="0" style="padding-bottom: 40px;" id="container-table">  
+                  <tr>  
+                    <td align="right" id="header-table-cell">  
+                      <img src="%%logo%%" alt="Microsoft Cloud App Security" id="org-logo" />  
                     </td>  
                   </tr>  
+                  <tr>  
+                    <td style="padding-top: 58px;" align="center" valign="top">  
+                      <table width="100%" cellpadding="12">  
+                        <tr>  
+                          <td align="center" class="round-title">  
+                            %%title%%  
+                          </td>  
+                        </tr>  
+                      </table>  
+                    </td>  
+                  </tr>  
+                  <tr>  
+                    <td style="padding: 0 40px 79px 40px;" class="content-table-cell" align="left" valign="top">  
+                        %%content%%  
+                    </td>  
+                  </tr>  
+                  <tr>  
+                    <td class="last-row"></td>  
+                  </tr>  
                 </table>  
+                <!--[if (gte mso 9)|(IE)]>  
+                </td>  
+                </tr>  
+                </table>  
+                  <![endif]-->  
               </td>  
-            </tr>  
-            <tr>  
-              <td style="padding: 0 40px 79px 40px;" class="content-table-cell" align="left" valign="top">  
-                  %%content%%  
-              </td>  
-            </tr>  
-            <tr>  
-              <td class="last-row"></td>  
-            </tr>  
+              </tr>  
           </table>  
-          <!--[if (gte mso 9)|(IE)]>  
-          </td>  
-          </tr>  
-          </table>  
-          <![endif]-->  
-        </td>  
-      </tr>  
-    </table>  
-    </body>  
-    </html>  
-  
-    ```  
+            </body>  
+          </html>  
+         
+
   
 3.  Cliquez sur **Charger un modèle...** et sélectionnez le fichier que vous avez créé.  
   
@@ -231,6 +232,6 @@ Cloud App Security est couplé à Azure Active Directory pour les activités d�
   
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

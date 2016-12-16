@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/26/2016
+ms.date: 12/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,12 +14,20 @@ ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 52f2245779568abbf41d47c4b45cdcced302529b
-ms.openlocfilehash: 40fd28f568aa9af32f9e2399435f48372ea62413
+ms.sourcegitcommit: 156dccf0c77bf7e46c0328ebf6bd1e0ad9609845
+ms.openlocfilehash: f1dc1e39309cfe06037a13da55d92935786bed81
 
 
 ---
 # <a name="activities"></a>Activités
+Pour garantir la protection des données, Cloud App Security vous permet de visualiser toutes les activités de vos applications connectées. Une fois connecté à une application à l’aide du connecteur d’applications, Cloud App Security analyse toutes les activités passées (la période d’analyse rétroactive varie par application). Cloud App Security est ensuite mis à jour en continu avec les nouvelles activités. Vous pouvez créer des stratégies basées sur les activités, puis définir les alertes que vous souhaitez recevoir. Vous pouvez également rechercher des activités effectuées sur certains fichiers. Les types d’activités et les informations que nous obtenons pour chaque activité varient selon l’application et le genre de données que l’application peut fournir. 
+
+Par exemple, vous pouvez utiliser le journal **Activité** pour trouver les utilisateurs de votre organisation qui utilisent des systèmes d’exploitation ou des navigateurs obsolètes. Pour cela, procédez comme suit : Après avoir connecté Office 365, Google Apps, Box, Dropbox, Okta, Amazon Web Services ou Salesforce à Cloud App Security dans la page **Journal d’activité**, utilisez le filtre avancé et sélectionnez la **balise Agent utilisateur**. Sélectionnez ensuite **Navigateur obsolète** ou **Système d’exploitation obsolète**. Si vous constatez que des fichiers **confidentiels** sont partagés à l’extérieur de votre organisation, vous pouvez cliquer sur **Nouvelle stratégie à partir de la recherche** pour créer une stratégie d’activité qui détecte les systèmes d’exploitation et les navigateurs obsolètes et notifier automatiquement les utilisateurs.
+
+ ![Exemple de navigateur obsolète dans une activité](media/activity-outdated-example.png)
+
+ 
+
 Le journal d’activité peut être filtré pour vous permettre de trouver des activités spécifiques. Le filtre de base fournit des outils efficaces pour démarrer vos activités de filtrage.
 
  ![filtre de base du journal d’activité](media/activity-log-filter-basic.png)
@@ -33,7 +41,8 @@ Vous trouverez ci-dessous une liste des filtres d’activité qui peuvent être 
   
 -   ID activité : Recherchez uniquement des activités spécifiques par leur ID. Ce filtre s’avère très utile quand vous connectez MCAS à votre SIEM (à l’aide de l’agent SIEM) et que vous voulez examiner davantage les alertes au sein du portail MCAS.  
   
--   Objets d’activité : Recherchez des fichiers, des dossiers ou des URL de site, ou encore des objets cibles (fichier/dossier).
+-   Objets d’activité : Recherchez les objets sur lesquels l’activité a été effectuée. Ce filtre s’applique aux objets fichier, dossier, utilisateur ou application.
+    - ID de l’objet d’activité : ID de l’objet (fichier, dossier, utilisateur ou application).
     - Fichier, dossier ou site URL : Vous permet de sélectionner des fichiers, des dossiers et des URL qui commencent par une chaîne spécifique.
     - Objet cible (fichier/dossier) : Vous permet de sélectionner un fichier ou un dossier spécifique. 
     
@@ -95,7 +104,7 @@ Vous pouvez afficher des informations supplémentaires sur chaque activité en c
 - Emplacement : Cliquez sur l’emplacement pour afficher l’emplacement dans des cartes Bing.
 - Catégorie d’adresse IP et balises : Cliquez sur la balise IP pour afficher la liste des balises IP trouvées dans cette activité. Vous pouvez ensuite filtrer selon toutes les activités correspondant à cette balise.    
 
-![tiroir activité](./media/activity-drawer.png "activity drawer")  
+![tiroir activité](./media/activity-drawer.png "tiroir activité")  
   
 Pour obtenir la liste des actions de gouvernance disponibles, consultez [Paramètres de correspondance de l’activité](governance-actions.md#activity-match-parameters).
 
@@ -108,6 +117,6 @@ Pour obtenir la liste des actions de gouvernance disponibles, consultez [Paramè
   
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

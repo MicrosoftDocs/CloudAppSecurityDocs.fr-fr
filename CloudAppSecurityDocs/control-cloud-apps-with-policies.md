@@ -14,8 +14,8 @@ ms.assetid: 14d10238-0f61-43e9-ab96-71534a27d3d4
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 37661b255147b3f43c5bfd8b5f6459bd4c25ac95
-ms.openlocfilehash: f6ba051dfbf443509323844c6327e18cde1ec29e
+ms.sourcegitcommit: 5fe0c3c04f290fb5a087e387560bf742a7192513
+ms.openlocfilehash: fcf5a37aa18ca7dd6fbb61c3e6100214048deeed
 
 
 ---
@@ -115,7 +115,7 @@ Pour créer une stratégie basée sur les résultats de l’examen, procédez co
   
 2.  Utilisez les filtres en haut de la page pour limiter les résultats de la recherche à la zone suspecte. Par exemple, dans la page Journal d’activité, cliquez sur **Activité** et sélectionnez **Ouverture de session administrateur**. Ensuite, sous **Adresse IP**, sélectionnez **Catégorie** et définissez la valeur de manière à ne pas inclure les catégories d’adresses IP que vous avez créées pour vos domaines reconnus, notamment les adresses IP de l’administrateur, de l’entreprise et du réseau privé virtuel.  
   
-     ![](./media/create-file-from-investigation.png)  
+     ![Créer un fichier à la suite d’un examen](./media/create-file-from-investigation.png)  
   
 3.  Dans l’angle supérieur droit de la console, cliquez sur **Nouvelle stratégie à partir de la recherche**![](./media/new-policy-from-search-button.png)  
   
@@ -142,7 +142,19 @@ Pour créer une stratégie basée sur les résultats de l’examen, procédez co
 >   
 >  [Stratégies Cloud Discovery](cloud-discovery-policies.md)  
   
+## <a name="enable-and-disable-policies"></a>Activer et désactiver des stratégies
 
+Une fois que vous avez créé une stratégie, vous pouvez l’activer ou la désactiver. Cela vous évite de devoir la supprimer pour l’arrêter. Donc, si vous souhaitez arrêter une stratégie pour une raison quelconque, il vous suffit de la désactiver. Vous pouvez la réactiver à tout moment.
+
+- Pour activer une stratégie, dans la page **Stratégie**, cliquez sur les trois points situés à la fin de la ligne de la stratégie à activer, puis sélectionnez **Activer**. 
+
+![Activer une stratégie](./media/enable-policy.png)
+
+- Pour désactiver une stratégie, dans la page **Stratégie**, cliquez sur les trois points situés à la fin de la ligne de la stratégie à désactiver, puis sélectionnez **Désactiver**.
+
+![Désactiver une stratégie](./media/disable-policy.png)
+
+Quand vous créez une stratégie, celle-ci est activée par défaut.
 
 ## <a name="see-also"></a>Voir aussi  
 [Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)   
@@ -151,6 +163,6 @@ Pour créer une stratégie basée sur les résultats de l’examen, procédez co
   
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

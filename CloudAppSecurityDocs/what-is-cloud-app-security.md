@@ -1,11 +1,11 @@
 ---
-title: "Qu’est-ce que Cloud App Security ? | Documentation Microsoft"
+title: "Qu’est-ce que Cloud App Security ? | Documentation Microsoft"
 description: "Cette rubrique décrit Cloud App Security et comment il fonctionne."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/23/2016
+ms.date: 12/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,15 +14,15 @@ ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 480a94edbb36cc421b5ff64ea29268f0041326bc
-ms.openlocfilehash: dfc9ec25d2c7822d9239685375136c1dc0d1a3bc
+ms.sourcegitcommit: 156dccf0c77bf7e46c0328ebf6bd1e0ad9609845
+ms.openlocfilehash: 4875a1ae80dae101416c9b26932bc57edf755a84
 
 
 ---
-# <a name="what-is-cloud-app-security"></a>Qu’est-ce que Cloud App Security ?
+# <a name="what-is-cloud-app-security"></a>Qu’est-ce que Cloud App Security ?
 
 > [!NOTE]
-> Pour plus d’informations sur la gestion de la sécurité avancée et Cloud App Security dans Office 365, consultez [Bien démarrer avec la gestion de la sécurité avancée](https://support.office.com/article/Get-started-with-Advanced-Management-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a).
+> Pour plus d’informations sur la gestion de la sécurité avancée et Cloud App Security dans Office 365, consultez [Bien démarrer avec la gestion de la sécurité avancée](https://support.office.com/article/Get-started-with-Advanced-Management-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a).
 
 Si le passage au cloud offre davantage de flexibilité aux employés et réduit les coûts informatiques, il introduit également une nouvelle complexité et de nouveaux défis pour le maintien de la sécurité de votre organisation. Pour tirer le meilleur parti des applications cloud, une équipe informatique doit trouver le juste équilibre entre la prise en charge des accès et la conservation du contrôle pour protéger les données critiques.  
 
@@ -30,17 +30,13 @@ Cloud App Security est un composant essentiel de la pile Microsoft Cloud Securit
 
 ## <a name="the-cloud-app-security-framework"></a>Infrastructure de Cloud App Security  
 
-|       |   |   |
-|-------|---|:---|
-|![Découvrir](./media/discovery-icon.png)|Découvrir|Découvrez l’informatique fantôme avec Cloud App Security. Gagnez en visibilité en découvrant les applications, les activités, les utilisateurs, les données et les fichiers de votre environnement cloud. Découvrez les applications tierces connectées à votre cloud.|
-|![Investiguer](./media/investigate-icon.png)|Investiguer|Examinez vos applications cloud en utilisant des outils d’investigation cloud pour étudier en détail des applications risquées, des utilisateurs spécifiques et des fichiers de votre réseau. Recherchez des modèles dans les données collectées à partir de votre cloud. Générez des rapports pour surveiller votre cloud.|
-|![Contrôler](./media/control-icon.png)|Contrôler|Réduisez les risques en définissant des stratégies et des alertes pour obtenir un contrôle maximal sur le trafic cloud du réseau. Utilisez Cloud App Security pour migrer vos utilisateurs vers des applications cloud alternatives approuvées et sécurisées.|
-|![Protéger](./media/protect-icon.png)|Protéger|Utilisez Cloud App Security pour approuver ou non des applications, appliquer une protection contre la perte de données, contrôler les autorisations et le partage, et générer des alertes et des rapports personnalisés.|
 
+**Cloud Discovery** Découvrez toutes les utilisations du cloud dans votre organisation. Contrôle de l’informatique fantôme et création de rapports : - Découvrir toutes les applications cloud du réseau, sur tous les appareils - Examiner et explorer en détail des applications, des utilisateurs, des adresses IP spécifiques, etc. - Gérer et contrôler l’utilisation du cloud en bloquant, en sanctionnant et en protégeant des applications Évaluation du risque : - Comprendre les risques associés à plus de 13 000 applications cloud - Prendre en compte plus de 60 facteurs de risque en matière de sécurité et de conformité Alertes en cas d’utilisation dangereuse du cloud : - Recevoir des alertes sur les modèles d’utilisation anormaux, les nouvelles applications et les applications tendancielles **Information Protection** Surveillez et contrôlez vos données dans le cloud. Visibilité accrue dans le cloud : - Gagner en visibilité, notamment au niveau du partage et de la confidentialité - Quantifier l’exposition et le risque - Détecter toutes les applications tierces ayant accès à vos données Appliquer des stratégies DLP et contrôler le partage : - Régir l’utilisation des données dans le cloud au moyen de stratégies DLP granulaires - Tirer parti des moteurs DLP Microsoft et tiers pour la classification Génération d’alertes et examen : - Identifier les violations de stratégie - Examiner les incidents et les activités connexes - Automatiser la correction, notamment la mise en quarantaine et la suppression des autorisations **Threat Protection** Détectez les utilisations anormales et les incidents de sécurité. Réduisez les risques en définissant des stratégies et des alertes pour obtenir un contrôle maximal sur le trafic cloud du réseau. Utilisez Cloud App Security pour migrer vos utilisateurs vers des applications cloud alternatives approuvées et sécurisées.
+Analytique comportementale : - Détection préconfigurée des activités suspectes - Moteur de détection des anomalies basé sur plus de 20 facteurs de risque Examen avancé : - Outils avancés d’examen des incidents - Axer l’examen sur les utilisateurs, les fichiers, les activités et les emplacements - Personnaliser les détections en fonction de vos constats Renseignements sur les menaces : - Tirer parti du flux de renseignements de Microsoft sur les menaces - Éclairage unique alimenté par des trillions de signaux envoyés par les clients Microsoft
 
 ## <a name="architecture"></a>Architecture  
 
-Cloud App Security intègre une visibilité à votre cloud :  
+Cloud App Security intègre une visibilité à votre cloud :  
 
 -   En utilisant Cloud Discovery pour mapper et identifier votre environnement cloud et les applications cloud que votre organisation utilise.
 -   En approuvant ou non des applications de votre cloud.  
@@ -50,11 +46,11 @@ Cloud App Security intègre une visibilité à votre cloud :
 ![Architecture de Cloud App Security](./media/architecture.png)  
 
 > [!NOTE]  
-> Quand Cloud App Security exécute une inspection du contenu, la confidentialité des données est respectée. Vos données ne sont pas stockées dans la base de données Cloud App Security. Seules les métadonnées des enregistrements de fichiers et toutes les violations qui ont été identifiées sont stockées dans la base de données Cloud App Security. Pour plus d’informations sur la conservation des données, consultez notre [politique de confidentialité](http://go.microsoft.com/fwlink/?LinkId=512132) et le [Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/TrustCenter/Privacy/You-are-in-control-of-your-data).
-Cloud App Security conserve les données comme suit :
->- Journal d’activité : 180 jours
->- Données de découverte : 90 jours
->- Alertes : 180 jours
+> Quand Cloud App Security exécute une inspection du contenu, la confidentialité des données est respectée. Le contenu du fichier n’est pas stocké dans la base de données Cloud App Security. Seules les métadonnées des enregistrements de fichiers et toutes les violations qui ont été identifiées sont stockées dans la base de données Cloud App Security. Pour plus d’informations sur la conservation des données, consultez notre [politique de confidentialité](http://go.microsoft.com/fwlink/?LinkId=512132) et le [Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/TrustCenter/Privacy/You-are-in-control-of-your-data).
+Cloud App Security conserve les données comme suit :
+>- Journal d’activité : 180 jours
+>- Données de découverte : 90 jours
+>- Alertes : 180 jours
 
 Une fois que les données sont collectées à partir de ces sources, Cloud App Security exécute une analyse avancée sur les données. Il vous alerte immédiatement des activités anormales et vous donne une visibilité détaillée de votre environnement cloud. Vous pouvez configurer une stratégie dans Cloud App Security et l’utiliser pour protéger tout ce qui se trouve dans votre environnement cloud.  
 
@@ -66,7 +62,7 @@ Pour plus d’informations sur Cloud Discovery, voir [Configurer Cloud Discovery
 
 ### <a name="sanctioning-and-unsanctioning-an-app"></a>Approbation et non-approbation d’une application  
 
-Vous pouvez utiliser Cloud App Security pour approuver/ne pas approuver des applications dans votre organisation en utilisant le *catalogue d’applications cloud*. L’équipe d’analystes Microsoft dispose d’un catalogue fourni et en constante évolution de plus de 13 000 applications cloud, classées et évaluées selon les normes du secteur. Vous pouvez utiliser le catalogue d’applications cloud pour évaluer les risques pour vos applications cloud selon les certifications réglementaires, les normes du secteur et les bonnes pratiques. Vous pouvez ensuite personnaliser les scores et les pondérations des différents paramètres selon les besoins de votre organisation. À partir de ces scores, Cloud App Security vous indique le degré de risque lié à une application en fonction de plus de 50 facteurs de risque susceptibles d’affecter votre environnement.  
+Vous pouvez utiliser Cloud App Security pour approuver/ne pas approuver des applications dans votre organisation en utilisant le *catalogue d’applications cloud*. L’équipe d’analystes Microsoft dispose d’un catalogue fourni et en constante évolution de plus de 13 000 applications cloud, classées et évaluées selon les normes du secteur. Vous pouvez utiliser le catalogue d’applications cloud pour évaluer les risques pour vos applications cloud selon les certifications réglementaires, les normes du secteur et les bonnes pratiques. Vous pouvez ensuite personnaliser les scores et les pondérations des différents paramètres selon les besoins de votre organisation. À partir de ces scores, Cloud App Security vous indique le degré de risque lié à une application en fonction de plus de 50 facteurs de risque susceptibles d’affecter votre environnement.  
 
 ### <a name="app-connectors"></a>Connecteurs d’application  
 Les connecteurs d’application utilisent les API des fournisseurs d’application cloud pour intégrer le cloud Cloud App Security à d’autres applications cloud. Les connecteurs d’application étendent le contrôle et la protection. Ils vous donnent aussi accès aux informations directement à partir des applications cloud, pour une analyse par Cloud App Security.  
@@ -87,6 +83,6 @@ Les clients Premier peuvent également choisir Cloud App Security directement de
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 
