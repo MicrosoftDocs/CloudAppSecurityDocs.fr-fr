@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/29/2016
+ms.date: 12/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,34 +14,39 @@ ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 851617bc68618b177600523a4d4432b3e557f394
-ms.openlocfilehash: abd134c9ff3b000170bce474e8ecebb71b762b98
+ms.sourcegitcommit: 2a2d4396a3960bd3124196b9c616f6a7765247ce
+ms.openlocfilehash: ce887ed4f8727b0c36f5e5e9a40b13b11dc78920
 
 
 ---
 
 # <a name="create-snapshot-cloud-discovery-reports"></a>Créer des rapports d’instantanés Cloud Discovery
 Il est important de charger un journal manuellement et de laisser Cloud App Security l’analyser avant de tenter d’utiliser le collecteur de journaux automatique.
+Si vous n’avez pas encore de journal et que vous aimeriez voir à quoi il doit ressembler, suivez la procédure ci-dessous pour télécharger un exemple de fichier journal.
 
-Pour créer un rapport d’instantané :
+
+Pour créer un rapport d’instantané :
   
 1.  Collectez les fichiers journaux de votre pare-feu et de votre proxy, via lesquels les utilisateurs de votre organisation accèdent à Internet. Veillez à collecter les journaux pendant les heures de pointe représentatives de toute l’activité utilisateur dans votre organisation.  
   
 2.  Dans le portail Cloud App Security, cliquez sur **Découvrir**, puis sur **Créer un rapport de capture instantanée**.  
   
-     ![Créer un rapport de capture instantanée](./media/create-new-snapshot-report.png)
+   ![Créer un rapport de capture instantanée](./media/create-new-snapshot-report.png)
      
-      
 3.  Renseignez **Nom du rapport** et **Description**
   
+     ![Nouveau rapport d’instantané](./media/new-snapshot-report.png) 
+
 4.  Sélectionnez la **source de données** à partir de laquelle vous voulez charger les fichiers journaux.  
   
-5.  **Choisissez les journaux de trafic** à charger. Vous pouvez charger jusqu’à 20 fichiers à la fois. Les fichiers compressés et zippés sont également pris en charge.  
+5. Examinez le format de votre journal pour vérifier qu’il convient à l’exemple à télécharger. Cliquez sur **Afficher et vérifier**, puis sur **Télécharger un exemple de journal**. Comparez ensuite votre journal à l’exemple fourni pour vérifier qu’il est compatible. 
+
+ ![Vérifier le format de votre journal](./media/cloud-discovery-snapshot-verify.png)  
+
+5.  **Choisissez les journaux de trafic** à charger. Vous pouvez charger jusqu’à 20 fichiers à la fois. Les fichiers compressés et zippés sont également pris en charge.  
   
 6.  Cliquez sur **Create (Créer)**.  
-  
-     ![Nouveau rapport d’instantané](./media/new-snapshot-report.png) 
-  
+
 7.  Une fois le chargement terminé, un message d’état s’affiche dans le coin supérieur droit de votre écran pour vous informer que le journal a correctement été chargé.  
   
 8.  Une fois que vos fichiers journaux sont chargés, un certain temps est nécessaire pour leur extraction et leur analyse.  
@@ -68,6 +73,6 @@ Après le traitement de vos fichiers journaux, vous recevrez un e-mail pour vous
   
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 
