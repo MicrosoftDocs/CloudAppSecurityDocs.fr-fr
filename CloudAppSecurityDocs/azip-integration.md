@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/23/2016
+ms.date: 12/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 86a5f7371b7a1d0fd16f68fd3060390b05601607
-ms.openlocfilehash: 3497225dfa98b487fd384a819cc51a51bd79a7cb
+ms.sourcegitcommit: 5fe0c3c04f290fb5a087e387560bf742a7192513
+ms.openlocfilehash: 0432ccf823234617bb4c8466f88ca8f385704928
 
 
 ---
@@ -76,10 +76,12 @@ L’analyse automatique vous permet de rechercher des étiquettes de classificat
 Pour activer les analyses automatiques de balises de fichier pour les nouveaux fichiers :
 
 1. Dans Cloud App Security, accédez à la page **Paramètres généraux**.
-2. Sous Paramètres de sécurité Azure, sélectionnez **Détecter automatiquement les étiquettes de classification Azure Information Protection dans les fichiers**. Par la suite, tous les nouveaux fichiers ajoutés à Office 365 (et pas seulement ceux dont le contenu est analysé par une stratégie de fichier) sont analysés pour détecter les balises de fichier.
+2. Sous Azure Information Protection, sélectionnez **Détecter automatiquement les étiquettes de classification Azure Information Protection dans les fichiers**. Par la suite, tous les nouveaux fichiers ajoutés à Office 365 (et pas seulement ceux dont le contenu est analysé par une stratégie de fichier) sont analysés pour détecter les balises de fichier.
 
 ![activer azure information protection](./media/enable-azip.png)
- 
+
+> [!NOTE] 
+> L’analyse automatique ne retraite les fichiers existants que s’ils sont modifiés. Pour analyser les fichiers existants à la recherche d’étiquettes de classification Azure Information Protection, créez une **stratégie Fichier** sans filtres, cochez **Inspection du contenu** et enregistrez la stratégie.
 
 ## <a name="internal-and-external-tags"></a>Étiquettes internes et externes
 Par défaut, Cloud App Security analyse les étiquettes de classification qui ont été définies dans votre organisation, ainsi que les étiquettes externes qui ont été définies par d’autres organisations. 
@@ -128,6 +130,6 @@ En savoir plus sur [Azure Information Protection](https://docs.microsoft.com/en-
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 
