@@ -1,11 +1,11 @@
 ---
-title: "Activités | Documentation Microsoft"
+title: "Activités | Microsoft Docs"
 description: "Cette rubrique fournit une liste des activités, filtres et paramètres de correspondance qui peuvent être appliqués aux stratégies d’activité."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/12/2016
+ms.date: 12/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,21 +14,24 @@ ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 156dccf0c77bf7e46c0328ebf6bd1e0ad9609845
-ms.openlocfilehash: f1dc1e39309cfe06037a13da55d92935786bed81
+ms.sourcegitcommit: 89f533e3b9c8397818e5aaa108dca168fda64db7
+ms.openlocfilehash: 7ad577c4b6222d96c21f51dd4023f10a9c402c55
 
 
 ---
 # <a name="activities"></a>Activités
-Pour garantir la protection des données, Cloud App Security vous permet de visualiser toutes les activités de vos applications connectées. Une fois connecté à une application à l’aide du connecteur d’applications, Cloud App Security analyse toutes les activités passées (la période d’analyse rétroactive varie par application). Cloud App Security est ensuite mis à jour en continu avec les nouvelles activités. Vous pouvez créer des stratégies basées sur les activités, puis définir les alertes que vous souhaitez recevoir. Vous pouvez également rechercher des activités effectuées sur certains fichiers. Les types d’activités et les informations que nous obtenons pour chaque activité varient selon l’application et le genre de données que l’application peut fournir. 
+Cloud App Security vous donne une visibilité sur toutes les activités de vos applications connectées. Une fois connecté à une application à l’aide du connecteur d’applications, Cloud App Security analyse toutes les activités passées (la période d’analyse rétroactive varie par application). Cloud App Security est ensuite mis à jour en continu avec les nouvelles activités. Le **journal d’activité** peut être filtré pour vous permettre de trouver des activités spécifiques. Vous pouvez créer des stratégies basées sur les activités, puis définir ce dont voulez être alerté pour y réagir. Vous pouvez également rechercher des activités effectuées sur certains fichiers. Les types d’activités et les informations que nous obtenons pour chaque activité varient selon l’application et le genre de données que l’application peut fournir. 
 
-Par exemple, vous pouvez utiliser le journal **Activité** pour trouver les utilisateurs de votre organisation qui utilisent des systèmes d’exploitation ou des navigateurs obsolètes. Pour cela, procédez comme suit : Après avoir connecté Office 365, Google Apps, Box, Dropbox, Okta, Amazon Web Services ou Salesforce à Cloud App Security dans la page **Journal d’activité**, utilisez le filtre avancé et sélectionnez la **balise Agent utilisateur**. Sélectionnez ensuite **Navigateur obsolète** ou **Système d’exploitation obsolète**. Si vous constatez que des fichiers **confidentiels** sont partagés à l’extérieur de votre organisation, vous pouvez cliquer sur **Nouvelle stratégie à partir de la recherche** pour créer une stratégie d’activité qui détecte les systèmes d’exploitation et les navigateurs obsolètes et notifier automatiquement les utilisateurs.
+Par exemple, vous pouvez utiliser le **journal d’activité** pour trouver les utilisateurs de votre organisation qui utilisent des systèmes d’exploitation ou des navigateurs obsolètes. Pour cela, procédez comme suit : après avoir connecté une application à Cloud App Security dans la page **Journal d’activité**, utilisez le filtre avancé et sélectionnez l’**étiquette Agent utilisateur**. Sélectionnez ensuite **Navigateur obsolète** ou **Système d’exploitation obsolète**.
 
- ![Exemple de navigateur obsolète dans une activité](media/activity-outdated-example.png)
+ ![Exemple de navigateur obsolète dans une activité](media/activity-example-outdated.png)
+
+Si vous voulez vérifier s’il y a des accès à des fichiers **confidentiels** depuis l’extérieur de votre organisation, définissez le filtre **Objet d’activité** pour rechercher **Étiquette de classification** et sélectionnez l’étiquette **Confidentiel**. Définissez le filtre **Adresse IP** pour une rechercher sur **Catégorie** et excluez les adresses IP de votre bureau (les catégories d’adresses IP peuvent être configurées dans le menu **Paramètres**. Vous pouvez cliquer sur **Nouvelle stratégie à partir de la recherche** pour créer une stratégie d’activité en fonction des filtres que vous avez définis et pour notifier automatiquement les utilisateurs.
+
+ ![Exemple d’activité Fichiers confidentiels externes](media/activity-example-ip.png)
 
  
-
-Le journal d’activité peut être filtré pour vous permettre de trouver des activités spécifiques. Le filtre de base fournit des outils efficaces pour démarrer vos activités de filtrage.
+Le filtre de base fournit des outils efficaces pour démarrer vos activités de filtrage.
 
  ![filtre de base du journal d’activité](media/activity-log-filter-basic.png)
 
@@ -66,9 +69,21 @@ Vous trouverez ci-dessous une liste des filtres d’activité qui peuvent être 
   
 -   Adresse IP : Adresse IP brute, catégorie IP ou balise IP à partir de laquelle l’activité a été réalisée.  
     - Adresse IP brute : Vous permet de rechercher des activités qui ont été réalisées sur ou par des adresses IP brutes qui sont égales à/ne sont pas égales à ou commencent par/ne commencent pas par une séquence particulière, ou des adresses IP brutes qui sont définies/ne sont pas définies. 
-    - Catégorie IP : Catégorie de l’adresse IP à partir de laquelle l’activité a été réalisée, par exemple, toutes les activités de la plage d’adresses IP administratives. Pour plus d’informations sur les catégories d’adresses IP, consultez [Organiser les données selon vos besoins](general-setup.md#IPtagsandRanges).  
-    - Balise IP : Balise de l’adresse IP à partir de laquelle l’activité a été exécutée, par exemple toutes les activités des adresses IP de proxy anonyme. Pour plus d’informations sur les balises IP, consultez [Organiser les données selon vos besoins](general-setup.md#IPtagsandRanges).
-  
+    - Catégorie IP : Catégorie de l’adresse IP à partir de laquelle l’activité a été réalisée, par exemple, toutes les activités de la plage d’adresses IP administratives. Les catégories doivent être configurées de façon à inclure les adresses IP appropriées, à l’exception de la catégorie « Risqué », qui est préconfigurée et inclut deux balises IP : Proxy anonyme et Tor. Pour découvrir comment configurer les catégories IP, consultez [Organiser les données selon vos besoins](general-setup.md#IPtagsandRanges).  
+    - Balise IP : Balise de l’adresse IP à partir de laquelle l’activité a été exécutée, par exemple toutes les activités des adresses IP de proxy anonyme. Cloud App Security crée un ensemble de balises IP prédéfinies qui ne sont pas configurables. Vous pouvez aussi configurer vos propres balises IP. Pour plus d’informations sur la configuration de vos propres balises IP, consultez [Organiser les données selon vos besoins](general-setup.md#IPtagsandRanges).
+   Les balises IP prédéfinies sont les suivantes :
+    - Applications Microsoft (14 applications)
+    - Proxy anonyme
+    - Botnet
+    - Adresse IP d’analyse du darknet
+    - Serveur de commande et contrôle de programmes malveillants
+    - Analyseur de connectivité à distance
+    - Fournisseurs par satellite
+    - Proxy intelligent et proxy d’accès (délibérément omis)
+    - Nœuds de sortie Tor
+    - Zscaler
+
+
 -   Activité représentée : Recherchez uniquement les activités qui ont été effectuées au nom d’un autre utilisateur.  
 
 -   Emplacement : Pays à partir duquel l’activité a été effectuée.  
@@ -106,7 +121,7 @@ Vous pouvez afficher des informations supplémentaires sur chaque activité en c
 
 ![tiroir activité](./media/activity-drawer.png "tiroir activité")  
   
-Pour obtenir la liste des actions de gouvernance disponibles, consultez [Paramètres de correspondance de l’activité](governance-actions.md#activity-match-parameters).
+Pour obtenir la liste des actions de gouvernance disponibles, consultez [Actions de gouvernance des activités](governance-actions.md#activity-governance-actions).
 
 
 ## <a name="see-also"></a>Voir aussi  
@@ -117,6 +132,6 @@ Pour obtenir la liste des actions de gouvernance disponibles, consultez [Paramè
   
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO4-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: Fichiers | Documentation Microsoft
+title: Fichiers | Microsoft Docs
 description: "Cette rubrique de référence fournit des informations sur les types de fichiers et les filtres de fichiers utilisés par Cloud App Security."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/12/2016
+ms.date: 12/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5fe0c3c04f290fb5a087e387560bf742a7192513
-ms.openlocfilehash: 9f180b0697fbf990534670050c555800d7ba83fb
+ms.sourcegitcommit: d11339040da669b77069c286f6171f7b3a6161db
+ms.openlocfilehash: 3262d01aed03bbb462832f8ff2836152e6208e74
 
 
 ---
@@ -23,17 +23,17 @@ ms.openlocfilehash: 9f180b0697fbf990534670050c555800d7ba83fb
 # <a name="files"></a>Fichiers
 
 
-Pour garantir la protection des données, Cloud App Security vous permet de visualiser tous les fichiers de vos applications connectées. Une fois connecté à une application à l’aide du connecteur d’applications, Cloud App Security analyse tous les fichiers, par exemple tous les fichiers stockés dans OneDrive et Salesforce. Cloud App Security analyse ensuite chaque fichier dès qu’une modification est apportée (à son contenu, à ses métadonnées ou à ses autorisations de partage). Les durées des analyses varient en fonction du nombre de fichiers stockés dans votre application. Utilisez la page **Fichiers** pour contrôler vos données et mieux comprendre les stratégies que vous devez créer. Vous pouvez également utiliser la page **Fichiers** pour filtrer les fichiers et examiner le genre des données enregistrées dans vos applications cloud. 
+Pour garantir la protection des données, Cloud App Security vous permet de visualiser tous les fichiers de vos applications connectées. Une fois connecté à une application à l’aide du connecteur d’applications, Cloud App Security analyse tous les fichiers, par exemple tous les fichiers stockés dans OneDrive et Salesforce. Cloud App Security analyse ensuite chaque fichier dès qu’une modification est apportée (à son contenu, à ses métadonnées ou à ses autorisations de partage). Les durées des analyses varient en fonction du nombre de fichiers stockés dans votre application. Vous pouvez également utiliser la page **Fichiers** pour filtrer les fichiers et examiner le genre des données enregistrées dans vos applications cloud. 
 
-Par exemple, pour utiliser la page **Fichiers** pour sécuriser les fichiers partagés en externe et étiquetés comme **confidentiels**, procédez comme suit : Après avoir connecté Office 365, Google Apps, Box, Dropbox ou Salesforce à Cloud App Security, vous pouvez procéder à l’intégration à Azure Information Protection. Ensuite, dans la page **Fichiers**, filtrez les fichiers étiquetés comme **confidentiels**. Si vous constatez que des fichiers **confidentiels** sont partagés à l’extérieur de votre organisation, vous pouvez créer une stratégie de fichier qui détecte les fichiers **confidentiels** avec des niveaux d’accès incorrects et appliquer des actions de gouvernance automatiques, comme **Mettre en quarantaine pour l’utilisateur**, pour mettre le fichier en quarantaine et éviter la perte de données pour votre organisation.
+Par exemple, si vous voulez utiliser la page **Fichiers** pour sécuriser des fichiers partagés en externe et étiquetés comme **confidentiels**, procédez comme suit : après avoir connecté une application à Cloud App Security, vous pouvez procéder à l’intégration à Azure Information Protection. Ensuite, dans la page **Fichiers**, filtrez les fichiers étiquetés comme **confidentiels**. Si vous constatez que des fichiers **confidentiels** sont partagés à l’extérieur de votre organisation en excluant votre domaine via le filtre **Collaborateurs**, vous pouvez créer une stratégie de fichier qui détecte les fichiers **confidentiels** avec des niveaux d’accès incorrects et appliquer des actions de gouvernance automatiques, comme **Supprimer des collaborateurs externes** et **Envoyer une synthèse de correspondance de stratégie au propriétaire du fichier** pour éviter la perte de données à votre organisation.
 
  ![Filtre de fichiers confidentiels](media/file-filter-confidential.png)
 
-Voici un autre exemple dans lequel vous pouvez utiliser la page **Fichiers** pour sécuriser les fichiers partagés avec des domaines non autorisés ou des comptes personnels : Après avoir connecté Office 365, Google Apps, Box ou Dropbox à Cloud App Security, dans la page **Fichiers**, filtrez les fichiers dont le niveau d’accès est **Interne** ou **Privé**. Si vous constatez que des fichiers **confidentiels** sont partagés avec des domaines externes ou des comptes personnels, vous pouvez créer une stratégie de fichier qui détecte les fichiers **confidentiels** avec des niveaux d’accès incorrects, cliquer sur **Nouvelle stratégie à partir de la recherche** et appliquer des actions de gouvernance automatiques, comme **Supprimer les utilisateurs externes**, pour éviter la perte de données pour votre organisation.
+Voici un autre exemple de la façon dont vous pouvez utiliser la page **Fichiers**. Pour faire en sorte que personne dans votre organisation ne partage publiquement ou en externe des fichiers qui n’ont pas été modifiés au cours des 6 derniers mois : après avoir connecté une application à Cloud App Security, dans la page **Fichiers**, filtrez les fichiers dont le niveau d’accès est **Externe** ou **Public** et définissez la **Date de dernière modification** à 6 mois auparavant. Vous pouvez créer une stratégie de fichier qui détecte les fichiers publics périmés en cliquant sur **Nouvelle stratégie à partir de la recherche** et appliquer des actions de gouvernance automatique, comme **Supprimer des utilisateurs externes**, pour éviter une perte de données à votre organisation.
 
- ![Filtre de fichiers non autorisés](media/file-filter-unauth.png)
+ ![Filtre de fichiers périmés externes](media/file-example-stale-external.png)
 
-Le journal des fichiers peut être filtré pour vous permettre de trouver des fichiers spécifiques. Le filtre de base fournit des outils efficaces pour démarrer le filtrage de vos fichiers.
+Le filtre de base fournit des outils efficaces pour démarrer le filtrage de vos fichiers.
 
  ![filtre de journal de fichiers de base](media/file-log-filter-basic.png)
 
@@ -134,6 +134,6 @@ Pour obtenir la liste des actions de gouvernance disponibles, consultez [Actions
   
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: "Stratégies d’activité | Documentation Microsoft"
+title: "Stratégies d’activité | Microsoft Docs"
 description: "Cette rubrique fournit des instructions sur la création et l’utilisation de stratégies d’activité."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/27/2016
+ms.date: 12/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: 99d5fd37-d922-4269-b557-86d7f84180eb
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9565d8a51e4c06963861d9dfaef9595944bda1ff
-ms.openlocfilehash: 68961bf66a0c0bb3b668e681502ccf10bc673197
+ms.sourcegitcommit: 2997a79f2e0fd730302be2602b6aee6ec56999db
+ms.openlocfilehash: 46ab0f13a8d0839f77525c334e75c840c9bfc73f
 
 
 ---
@@ -23,7 +23,7 @@ ms.openlocfilehash: 68961bf66a0c0bb3b668e681502ccf10bc673197
 # <a name="activity-policies"></a>Stratégies d’activité
 Grâce aux stratégies d’activité, vous pouvez appliquer une large gamme de processus automatisés en exploitant les API du fournisseur d’application. Ces stratégies vous permettent de surveiller des activités spécifiques effectuées par différents utilisateurs ou de suivre les taux anormalement élevés d’un certain type d’activité.  
   
-Après avoir défini une stratégie de détection d’activité, elle commence à générer des alertes ; les alertes sont générées uniquement sur les activités qui se produisent après avoir créé la stratégie.
+Après avoir défini une stratégie de détection d’activité, elle commence à générer des alertes ; les alertes sont générées uniquement sur les activités qui se produisent après avoir créé la stratégie.
   
   
 ## <a name="custom-alerts"></a>Alertes personnalisées  
@@ -35,14 +35,14 @@ Pour créer une stratégie d’activité, procédez comme suit :
   
 2.  Cliquez sur **Créer une stratégie** et sélectionnez **Stratégie d’activité**.  
   
-     ![menu Stratégie d’activité](./media/activity-policy-menu.png "activity policy menu")  
+     ![menu Stratégie d’activité](./media/activity-policy-menu.png "menu Stratégie d’activité")  
   
 3.  Donnez à votre stratégie un nom et une description. Si vous le souhaitez, vous pouvez la baser sur un modèle ; pour plus d’informations sur les modèles de stratégie, consultez [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md).  
   
 4.  Pour définir les actions ou autres mesures susceptibles de déclencher cette stratégie, utilisez les **Filtres d’activité**.  
   
 5.  Sous **Paramètres de correspondance de l’activité**, indiquez si une violation de stratégie est déclenchée quand une seule activité satisfait aux filtres ou si une violation est détectée uniquement quand un **Nombre d’activités répétées** spécifié est constaté.  
-    Si vous choisissez **Activité répétée**, vous pouvez définir **Grouper les activités correspondantes par application**. Cela déclenche une correspondance de stratégie uniquement lorsque les activités répétées se produisent dans la même application (par exemple, 5 téléchargements depuis Box).  
+    Si vous choisissez **Activité répétée**, vous pouvez définir **Grouper les activités correspondantes par application**. Cela déclenche une correspondance de stratégie uniquement lorsque les activités répétées se produisent dans la même application (par exemple, 5 téléchargements depuis Box).  
   
 6.  Configurez les **Actions** à effectuer quand une correspondance est trouvée.  
   
@@ -54,13 +54,13 @@ Jetez un œil aux exemples suivants :
   
      Sous le champ **Filtres d’activité**, configurez les paramètres pour lesquels l’alerte doit être déclenchée.  
   
-     ![exemple de stratégie, échec de plusieurs tentatives de connexion](./media/multiple-failed-log-on-attempts-policy-example.png "multiple failed log on attempts policy example")  
+     ![exemple de stratégie, échec de plusieurs tentatives de connexion](./media/multiple-failed-log-on-attempts-policy-example.png "exemple de stratégie, échec de plusieurs tentatives de connexion")  
   
 -   Taux de téléchargement élevé  
   
      Vous pouvez définir votre stratégie afin de recevoir une alerte en cas de niveau d’activité de téléchargement anormal ou inhabituel. Pour configurer une stratégie de ce type, sous les paramètres **Taux**, choisissez les paramètres devant déclencher l’alerte.  
   
-     ![exemple de taux de téléchargement élevé](./media/high-download-rate-example.png "high download rate example")  
+     ![exemple de taux de téléchargement élevé](./media/high-download-rate-example.png "exemple de taux de téléchargement élevé")  
   
 ## <a name="anomaly-detection"></a>Détection d’anomalie  
 Une fois votre organisation protégée par Cloud App Security, toute l’activité cloud est évaluée en fonction de différents facteurs de risque prédéfinis. Cloud App Security examine chaque session utilisateur sur votre cloud, puis prend en considération les facteurs de risque que vous définissez ici afin d’être averti en cas d’événement anormal par rapport aux activités de référence ou habituelles de votre organisation ou de l’utilisateur. La page Stratégie de détection d’anomalie vous permet de configurer et de personnaliser les familles de facteurs de risque à prendre en compte dans le processus d’évaluation des risques. Vous pouvez adapter la stratégie en fonction de l’utilisateur, de l’emplacement ou du secteur de l’organisation. Par exemple, vous pouvez créer une stratégie qui vous avertit quand des membres de votre équipe informatique sont actifs en dehors de vos bureaux.  
@@ -71,7 +71,7 @@ Pour configurer une stratégie de détection d’anomalie :
   
 2.  Cliquez sur **Créer une stratégie** et sélectionnez **Stratégie de détection d’anomalie**.  
   
-     ![menu Stratégie de détection d’anomalie](./media/anomaly-detection-policy-menu.png "Anomaly detection policy menu")  
+     ![menu Stratégie de détection d’anomalie](./media/anomaly-detection-policy-menu.png "menu Stratégie de détection d’anomalie")  
   
 3.  Indiquez le nom et la description de la stratégie et passez au champ **Filtres d’activité** où vous pouvez choisir l’activité pour laquelle vous souhaitez appliquer la stratégie.  
   
@@ -109,7 +109,7 @@ Pour configurer une stratégie de détection d’anomalie :
   
      La valeur de la sensibilité détermine le nombre d’alertes hebdomadaires déclenchées en moyenne par tranche de 1 000 utilisateurs.  
   
-     ![Adresses IP de détection des anomalies](./media/anomaly-detection-ips.png "anomaly detection IPs")  
+     ![adresses IP de détection des anomalies](./media/anomaly-detection-ips.png "adresses IP de détection des anomalies")  
   
 8.  Cliquez sur **Create (Créer)**.  
  
@@ -117,14 +117,16 @@ Pour configurer une stratégie de détection d’anomalie :
 ## <a name="activity-policy-reference"></a>Informations de référence sur les stratégies d’activité  
 Cette section fournit des informations de référence sur les stratégies, donne une explication de chaque type de stratégie et décrit les champs que vous pouvez configurer pour chacune d’elles.  
   
-Une **stratégie d’activité** est une stratégie basée sur une API qui vous permet de surveiller les activités de votre organisation dans le cloud, en prenant en considération plus de 20 filtres de métadonnées de fichiers (notamment le type et l’emplacement de l’appareil). Selon les résultats de la stratégie, des notifications peuvent être générées et des utilisateurs peuvent être exclus temporairement de l’application cloud.   
-Chaque stratégie comprend les éléments suivants :  
+Une **stratégie d’activité** est une stratégie basée sur une API qui vous permet de surveiller les activités de votre organisation dans le cloud, en prenant en considération plus de 20 filtres de métadonnées de fichiers (notamment le type et l’emplacement de l’appareil). Selon les résultats de la stratégie, des notifications peuvent être générées et des utilisateurs peuvent être exclus temporairement de l’application cloud.   
+Chaque stratégie comprend les éléments suivants :  
   
--   Filtres d’activité : Vous permettent de créer des conditions très précises en fonction de métadonnées.  
+-   Filtres d’activité : Vous permettent de créer des conditions très précises en fonction de métadonnées.  
   
--   Paramètres de correspondance de l’activité : Vous permettent de définir un seuil pour le nombre de fois qu’une activité se répète pour être considérée comme correspondant à la stratégie.  
+-   Paramètres de correspondance de l’activité : Vous permettent de définir un seuil pour le nombre de fois qu’une activité se répète pour être considérée comme correspondant à la stratégie.  Spécifiez le nombre d’activités répétées nécessaires pour correspondre à la stratégie, par exemple en définissant une stratégie qui émet une alerte quand un utilisateur effectue sans succès 10 tentatives de connexion dans un délai de 2 minutes.  Par défaut, **Paramètres de correspondance de l’activité**, déclenche une correspondance pour chaque activité unique qui satisfait à tous les filtres d’activité.   
+À l’aide de l’option **Activité répétée**, vous pouvez définir le nombre d’activités répétées, la durée du délai d’exécution dans lequel les activités sont comptabilisées et même spécifier que toutes les activités doivent être effectuées par le même utilisateur et dans la même application cloud.  
   
--   Actions : La stratégie fournit un ensemble d’actions de gouvernance automatiquement applicables en cas de violations détectées.  
+  
+-   Actions : La stratégie fournit un ensemble d’actions de gouvernance automatiquement applicables en cas de violations détectées.  
 ## <a name="see-also"></a>Voir aussi  
 [Stratégies de protection des données](data-protection-policies.md)   
 [Pour obtenir un support technique, visitez la page de support assisté Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
@@ -133,6 +135,6 @@ Chaque stratégie comprend les éléments suivants :
   
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO3-->
 
 
