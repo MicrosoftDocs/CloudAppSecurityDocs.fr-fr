@@ -1,11 +1,11 @@
 ---
-title: Personnaliser le portail | Documentation Microsoft
+title: Personnaliser le portail | Microsoft Docs
 description: "Cette rubrique présente les premières étapes de personnalisation du portail."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/21/2016
+ms.date: 12/21/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 525a6c5274843f63c300e97d1dbd40ece6465edf
-ms.openlocfilehash: 3a6750f244d3d0cd8d691ffd768cf5183da78d32
+ms.sourcegitcommit: 49b64ea6cee1a33fd4005388d5b09cfbdcf59052
+ms.openlocfilehash: b5250ccb93dda950b417bbbe3fc2e64f0bab8320
 
 
 ---
@@ -82,7 +82,7 @@ Pour définir vos préférences en tant qu’administrateur de Cloud App Securit
   
 3. Quand vous avez terminé, cliquez sur **Enregistrer**.  
   
-##  <a name="a-nameiptagsandrangesa-organize-the-data-according-to-your-needs"></a><a name="IPtagsandRanges"></a> Organiser les données selon vos besoins  
+##  <a name="a-nameiptagsandrangesa-set-ip-ranges"></a><a name="IPtagsandRanges"></a> Définir des plages d’adresses IP  
 Pour identifier facilement les adresses IP connues, telles que les adresses IP physiques de votre bureau, vous devez définir des plages d’adresses IP qui vous permettent de marquer et de classer les adresses de manière appropriée, ainsi que de personnaliser la façon dont les journaux et les alertes sont affichés et examinés.   
 Chaque groupe de plages IP peut être classé selon une liste de catégories d’adresses IP prédéfinies ou marqué avec des étiquettes IP créées par vos soins. En outre, ce paramètre vous permet de remplacer les informations de géolocalisation publiques en fonction de votre connaissance du réseau interne.  
   
@@ -104,9 +104,7 @@ Dans la barre de menus, cliquez sur l’icône des paramètres ![icône des para
   
 4.  Entrez un **ISP enregistré**. Cette opération remplace les données dans vos activités.  
   
-5.  Pour **étiqueter** les activités liées à ces adresses IP, entrez une étiquette. Il suffit d’entrer un mot dans la zone pour créer l’étiquette. Une fois l’étiquette configurée, vous pouvez l’ajouter facilement à des plages IP supplémentaires en la sélectionnant dans la liste. Vous pouvez ajouter autant d’étiquettes IP que vous le souhaitez pour chaque plage. Vous pouvez utiliser des étiquettes IP quand vous créez des stratégies.  
-  
-     Des **balises IP** Cloud App Security intégrées sont définies pour les adresses à risque et sont constamment mises à jour. Ces balises incluent les proxys anonymes, les fournisseurs satellites, les nœuds de sortie Tor et le réseau du proxy Cloud App Security. Ces balises intégrées ne sont pas visibles.  
+5.  Pour **étiqueter** les activités liées à ces adresses IP, entrez une étiquette. Il suffit d’entrer un mot dans la zone pour créer l’étiquette. Une fois l’étiquette configurée, vous pouvez l’ajouter facilement à des plages IP supplémentaires en la sélectionnant dans la liste. Vous pouvez ajouter autant d’étiquettes IP que vous le souhaitez pour chaque plage. Vous pouvez utiliser des étiquettes IP quand vous créez des stratégies.  En plus des étiquettes IP que vous configurez, Cloud App Security a des étiquettes prédéfinies qui ne sont pas configurables. Vous pouvez voir la liste des étiquettes sous le [filtre d’étiquettes IP](activity-filters.md).  
   
 6.  Les **catégories IP** permettent d’identifier facilement les activités liées aux adresses IP intéressantes. Les catégories sont disponibles dans le portail, mais nécessitent une configuration utilisateur pour déterminer les adresses IP à inclure dans chaque catégorie, à l’exception de la catégorie « Risqué » qui comprend deux balises IP : Proxy anonyme et Tor.  
   
@@ -232,6 +230,6 @@ Cloud App Security est couplé à Azure Active Directory pour les activités d�
   
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO4-->
 
 

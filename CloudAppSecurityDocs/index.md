@@ -5,7 +5,7 @@ title: Cloud App Security | Documentation Microsoft
 description: Documentation technique pour Cloud App Security
 author: msmbaldwin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 1/11/2017
 ms.topic: hubpage
 ms.prod: azure
 ms.service: cloud-app-security
@@ -24,10 +24,10 @@ ms.openlocfilehash: ed9c1bbdf3652cd8daff79ab41044e8f26429c8a
     <section id="hero-content">
       <h1>Documentation Cloud App Security</h1>
       <h2>Découvrez comment configurer et utiliser Cloud App Security afin que votre organisation puisse tirer parti des avantages des applications cloud tout en conservant le contrôle grâce à une meilleure visibilité de l’activité et une protection accrue des données d’entreprise critiques. </h2>
-      <h3>Vous découvrez Cloud App Security ? <a href="https://go.microsoft.com/fwlink/?linkid=835379" target="_blank">Visiter le site du produit &rarr;</a></h3>
+      <h3>Vous découvrez Cloud App Security ? <a href="https://go.microsoft.com/fwlink/?linkid=835379" target="_blank">Visiter le site du produit &rarr;</a></h3>
     </section>
     <aside class="alert section-border">
-        <p>Prêt pour la pratique ?</p>
+        <p>Prêt pour la pratique ?</p>
         <ol class="action-list">
             <li><a href="https://go.microsoft.com/fwlink/?linkid=835380" target="_blank" class="button-bordered button-translucent">Acheter maintenant</a></li>
         </ol>
@@ -36,7 +36,7 @@ ms.openlocfilehash: ed9c1bbdf3652cd8daff79ab41044e8f26429c8a
       <h2 class="section-heading"><span class="icon icon-warning"></span> Contenu spécifique</h2>
       <div class="features row">
         <ul class="column column-half">
-          <li><a href="./what-is-cloud-app-security.md">Qu’est-ce que Cloud App Security ?</a></li>
+          <li><a href="./what-is-cloud-app-security.md">Qu’est-ce que Cloud App Security ?</a></li>
           <li><a href="./set-up-cloud-discovery.md">Découvrir les applications cloud utilisées dans votre organisation</a></li>
         </ul>
         <ul class="column column-half">
@@ -62,7 +62,7 @@ ms.openlocfilehash: ed9c1bbdf3652cd8daff79ab41044e8f26429c8a
               <ul class="row">
                 <li class="column-third">
                   <a href="./what-is-cloud-app-security.md">
-                    <h3>Qu’est-ce que Cloud App Security ?</h3>
+                    <h3>Qu’est-ce que Cloud App Security ?</h3>
                     <p>Découvrez Cloud App Security, une solution basée sur le cloud qui vous permet de gagner en visibilité et contrôle sur les applications cloud dans votre organisation ainsi que de protéger votre réseau cloud.</p>
                   </a>
                 </li>
@@ -159,7 +159,7 @@ ms.openlocfilehash: ed9c1bbdf3652cd8daff79ab41044e8f26429c8a
         <ul class="journeys-list">
           <li class="journey-step">
             <header class="journey-step-header row">
-              <a href="./troubleshooting.md">
+              <a href="./troubleshooting-cloud-discovery.md">
                 <div class="title column-third">
                   <span class="step-number">5</span>
                   <p>Dépannage</p>
@@ -170,7 +170,7 @@ ms.openlocfilehash: ed9c1bbdf3652cd8daff79ab41044e8f26429c8a
             <section class="journey-step-elements content">
               <ul class="row">
                 <li class="column-third">
-                  <a href="./troubleshooting.md">
+                  <a href="./troubleshooting-cloud-discovery.md">
                     <h3>Dépannage</h3>
                     <p>Utilisez ces guides pour résoudre les problèmes de connecteurs API et Cloud Discovery.</p>
                   </a>

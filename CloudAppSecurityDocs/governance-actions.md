@@ -1,11 +1,11 @@
 ---
-title: Gouverner | Documentation Microsoft
+title: Gouverner | Microsoft Docs
 description: "Cette rubrique répertorie et décrit toutes les actions de gouvernance qui peuvent être effectuées dans Cloud App Security et les messages de journal qui les suivent."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/21/2016
+ms.date: 12/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,19 +14,91 @@ ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9565d8a51e4c06963861d9dfaef9595944bda1ff
-ms.openlocfilehash: 43069f7a9f91dc34f4ce3ebb52ca399441bbb1f1
+ms.sourcegitcommit: 89f533e3b9c8397818e5aaa108dca168fda64db7
+ms.openlocfilehash: f5107adbe61a9dff00754e39134a35b8f620fa4c
 
 
 ---
 
 # <a name="govern"></a>Gouverner
 
+## <a name="file-governance-actions"></a>Actions de gouvernance sur des fichiers  
+Les actions de gouvernance suivantes peuvent être effectuées sur un fichier spécifique, un utilisateur spécifique ou à partir d’une stratégie spécifique.
+  
+-   Notifications  
+  
+    -   Alertes : Les alertes peuvent se déclencher dans le système et se propager par le biais de messages électroniques et texte, selon leur niveau de gravité.  
+  
+    -   Notification par e-mail à l’utilisateur : Les e-mails sont personnalisables et envoyés à tous les propriétaires de fichiers en situation de violation.  
+  
+    -   Mettre en copie le responsable : Selon l’intégration de l’annuaire des utilisateurs, des notifications par e-mail peuvent également être envoyées au responsable de la personne qui viole une stratégie.  
+  
+-   Notifier des utilisateurs spécifiques : Liste spécifique d’adresses e-mail qui reçoivent ces notifications.  
+  
+-   Notifier le dernier éditeur du fichier : Envoyez des notifications à la dernière personne qui a modifié le fichier.  
+  
+-   Actions de gouvernance dans les applications  
+  
+     Des actions précises peuvent être appliquées par application. Ces actions spécifiques varient selon la terminologie de l’application.  
+  
+    -   Partage de modifications  
+  
+        -   Supprimer le partage public : Autoriser l’accès uniquement à des collaborateurs désignés, par exemple : Supprimer l’accès public pour Google Apps et Supprimer le lien partagé direct pour Box.  
+  
+        -   Supprimer les utilisateurs externes : Autorisez l’accès uniquement aux utilisateurs de l’entreprise.  
+  
+        -   Rendre privé : Seul le propriétaire peut accéder au fichier, tous les partages sont supprimés.  
+  
+        -   Supprimer un collaborateur : Supprimez un collaborateur spécifique du fichier.  
+  
+    -   Quarantaine  
+  
+        -   Mettre en quarantaine utilisateur : Autorisez le libre-service en déplaçant le fichier vers un dossier de quarantaine contrôlé par l’utilisateur  
+  
+        -   Mettre en quarantaine administrateur : Le fichier est placé en quarantaine sur le lecteur de l’administrateur, ce dernier devant l’approuver.  
+  
+-   Hériter des autorisations du parent : cette action de gouvernance vous permet de supprimer un ensemble d’autorisations spécifiques pour un fichier ou un dossier, et de les rétablir ensuite aux autorisations définies pour le dossier parent.
+-   Mettre à la corbeille : Déplacez le fichier vers le dossier Corbeille.
+  
+![policy_create alerts](./media/policy_create-alerts.png "policy_create alerts")  
+  
+ 
+## <a name="activity-governance-actions"></a>Actions de gouvernance des activités  
+
+- Notifications  
+  
+    -   Alertes : Les alertes peuvent se déclencher dans le système et se propager par le biais de messages électroniques et texte, selon leur niveau de gravité.  
+  
+    -   Notification par e-mail à l’utilisateur : Les e-mails sont personnalisables et envoyés à tous les propriétaires de fichiers en situation de violation.  
+  
+    -   Mettre en copie le responsable : Selon l’intégration de l’annuaire des utilisateurs, des notifications par e-mail peuvent également être envoyées au responsable de la personne qui viole une stratégie.  
+  
+    -   Notifier d’autres utilisateurs : Liste spécifique d’adresses e-mail qui reçoivent ces notifications.  
+  
+- Actions de gouvernance dans les applications  
+  
+    -   Des actions précises peuvent être appliquées par application. Ces actions spécifiques varient selon la terminologie de l’application.  
+  
+    -   Suspendre l’utilisateur : Excluez temporairement l’utilisateur de l’application.  
+  
+    -   Révoquer le mot de passe : Révoquez le mot de passe de l’utilisateur et obligez-le à définir un nouveau mot de passe lors de sa prochaine connexion.  
+  
+     ![stratégie d’activité ref6](./media/activity-policy-ref6.png "ref6")  
+  
+
+## <a name="governance-conflicts"></a>Conflits de gouvernance
+
+Si vous créez plusieurs stratégies, il peut arriver que les actions de gouvernance se chevauchent. Dans ce cas, Cloud App Security traite les actions de gouvernance comme suit :
+
+- Si deux stratégies contiennent des actions qui sont contenues dans l’une et l’autre (par exemple, l’action **Supprimer des partages externes** est incluse dans **Rendre privé**), Cloud App Security résout le conflit et l’action la plus forte est appliquée.
+- Si les actions sont complètement indépendantes (par exemple, **Notifier le propriétaire** et **Rendre privé**), les deux actions ont lieu.
+- Si les actions sont en conflit, (par exemple **Change owner to user A** [Remplacer le propriétaire par l’utilisateur A] et **Change owner to user B** [Remplacer le propriétaire par l’utilisateur B]), différents résultats peuvent provenir de chaque correspondance. Il est important de modifier vos stratégies pour éviter les conflits, car elles peuvent entraîner des modifications indésirables dans le lecteur qui seront difficiles à détecter.
+
 ## <a name="governance-log"></a>Journal de gouvernance
 Le journal de gouvernance fournit un enregistrement de l’état de chaque tâche que Cloud App Security doit exécuter, dont les tâches manuelles et automatiques. Ces tâches comprennent les tâches que vous définissez dans les stratégies, les actions de gouvernance que vous définissez sur des fichiers et des utilisateurs ainsi que toute autre action que Cloud App Security doit effectuer. Le journal de gouvernance fournit également des informations sur la réussite ou l’échec de ces actions. Vous pouvez choisir de retenter ou de rétablir certaines des actions de gouvernance à partir du journal de gouvernance. 
 
 Le portail Cloud App Security vous permet d’effectuer la liste complète d’actions suivantes. Ces dernières sont activées dans divers emplacements de la console décrits dans la colonne **Emplacement**. Chaque action de gouvernance effectuée est répertoriée dans le journal de gouvernance.
-Pour plus d’informations sur la façon dont les actions de gouvernance sont traitées en cas de conflits de stratégies, voir [Conflits de stratégies](control-cloud-apps-with-policies.md) 
+Pour plus d’informations sur la façon dont les actions de gouvernance sont traitées en cas de conflits de stratégies, consultez [Conflits de stratégies](control-cloud-apps-with-policies.md).
 
 **Emplacement**|**Type d’objet cible**|**Action de gouvernance**|**Description**|**Connecteurs associés** 
 ---------|---------|---------|---------|---------
@@ -37,10 +109,10 @@ Pour plus d’informations sur la façon dont les actions de gouvernance sont tr
 |Comptes, Stratégie d’activité|Compte|Suspendre l’utilisateur|Définit que l’utilisateur n’a aucun accès ni aucune possibilité de se connecter. S’il est connecté lorsque vous activez cette option, il est immédiatement verrouillé.|Google Apps, Box, Office|
 |Stratégie d’activité, Comptes|Compte|Révoquer le mot de passe|Révoque le mot de passe pour un compte d’utilisateur. Par exemple, avec la définition d’une stratégie de l’activité qui révoque un mot de passe après 10 échecs de tentative de connexion.|Google Apps|
 |Stratégie d’activité, Comptes|Compte|Révoquer les privilèges administratifs|Révoque les privilèges administratifs pour un compte administrateur. Par exemple, avec la définition d’une stratégie de l’activité qui révoque les privilèges administratifs après 10 échecs de tentative de connexion.|Google Apps|
-|Tableau de bord de l’application > Autorisations d’applications|Autorisations|Un-ban app (Annuler l’exclusion de l’application)|Dans Google et Salesforce : suppriment l’exclusion de l’application et permettent aux utilisateurs d’accorder des autorisations à l’application tierce avec Google et Salesforce. Dans Office 365 : restaure les autorisations d’accès de l’application tierce à Office.|Google Apps, Salesforce, Office|
+|Tableau de bord de l’application > Autorisations d’applications|Autorisations|Un-ban app (Annuler l’exclusion de l’application)|Dans Google et Salesforce : suppriment l’exclusion de l’application et permettent aux utilisateurs d’accorder des autorisations à l’application tierce avec Google et Salesforce. Dans Office 365 : restaure les autorisations d’accès de l’application tierce à Office.|Google Apps, Salesforce, Office|
 |Tableau de bord de l’application > Autorisations d’applications|Autorisations|Désactiver les autorisations d’application|Révoquent les autorisations d’accès d’une application tierce à Google, Salesforce ou Office. Il s’agit d’une action unique qui se produit sur toutes les autorisations existantes, mais qui n’empêche pas les connexions ultérieures. |Google Apps, Salesforce, Office|
 |Tableau de bord de l’application > Autorisations d’applications|Autorisations|Activer les autorisations d’application|Accorde les autorisations d’accès d’une application tierce à Google, Salesforce ou Office. Il s’agit d’une action unique qui se produit sur toutes les autorisations existantes, mais qui n’empêche pas les connexions ultérieures. |Google Apps, Salesforce, Office|
-|Tableau de bord de l’application > Autorisations d’applications|Autorisations|Exclure l’application|Dans Google et Salesforce : révoquent les autorisations d’accès d’une application tierce à Google ou Salesforce et lui interdisent de recevoir des autorisations dans le futur. Dans Office 365 : n’autorise pas les applications tierces à accéder à Office, mais ne les révoque pas.|Google Apps, Salesforce, Office|Stratégie de fichier|File|Restreindre aux collaborateurs uniquement|Seuls les collaborateurs répertoriés peuvent accéder au fichier.|Box|
+|Tableau de bord de l’application > Autorisations d’applications|Autorisations|Exclure l’application|Dans Google et Salesforce : révoquent les autorisations d’accès d’une application tierce à Google ou Salesforce et lui interdisent de recevoir des autorisations dans le futur. Dans Office 365 : n’autorise pas les applications tierces à accéder à Office, mais ne les révoque pas.|Google Apps, Salesforce, Office|Stratégie de fichier|File|Restreindre aux collaborateurs uniquement|Seuls les collaborateurs répertoriés peuvent accéder au fichier.|Box|
 |Tableau de bord de l’application > Autorisations d’applications|Autorisations|Révoquer l’application|Révoque les autorisations d’accès d’une application tierce à Google, Salesforce ou Office. Il s’agit d’une action unique qui se produit sur toutes les autorisations existantes, mais qui n’empêche pas les connexions ultérieures.|Google Apps, Salesforce|
 |Tableau de bord de l’application > Autorisations d’applications|Compte|Révoquer l’utilisateur de cette application|Vous pouvez révoquer des utilisateurs spécifiques en cliquant sur le nombre sous Utilisateurs. L’écran affiche les différents utilisateurs et vous avez pouvez utiliser la croix (X) pour supprimer les autorisations pour tout utilisateur.|Google Apps, Salesforce|
 |Découverte > Applications découvertes/Adresses IP/Utilisateurs|Cloud Discovery|Exporter les données de découverte|Crée un fichier CSV à partir de données de découverte.|Découverte|
@@ -70,83 +142,6 @@ Pour plus d’informations sur la façon dont les actions de gouvernance sont tr
 |Paramètres> Paramètres de Cloud Discovery > Charger les journaux manuellement/Charger les journaux automatiquement|Cloud Discovery|Analyser les données Cloud Discovery|Notification que toutes les données de journal ont été analysées.|Découverte|
 
 
-## <a name="file-governance-actions"></a>Actions de gouvernance sur des fichiers  
-Les actions de gouvernance suivantes peuvent être effectuées sur un fichier spécifique, un utilisateur spécifique ou à partir d’une stratégie spécifique.
-  
--   Notifications  
-  
-    -   Alertes : Les alertes peuvent se déclencher dans le système et se propager par le biais de messages électroniques et texte, selon leur niveau de gravité.  
-  
-    -   Notification par e-mail à l’utilisateur : Les e-mails sont personnalisables et envoyés à tous les propriétaires de fichiers en situation de violation.  
-  
-    -   Mettre en copie le responsable : Selon l’intégration de l’annuaire des utilisateurs, des notifications par e-mail peuvent également être envoyées au responsable de la personne qui viole une stratégie.  
-  
--   Notifier des utilisateurs spécifiques : Liste spécifique d’adresses e-mail qui reçoivent ces notifications.  
-  
--   Notifier le dernier éditeur du fichier : Envoyez des notifications à la dernière personne qui a modifié le fichier.  
-  
--   Actions de gouvernance dans les applications  
-  
-     Des actions précises peuvent être appliquées par application. Ces actions spécifiques varient selon la terminologie de l’application.  
-  
-    -   Partage de modifications  
-  
-        -   Supprimer le partage public : Autoriser l’accès uniquement à des collaborateurs désignés, par exemple : Supprimer l’accès public pour Google Apps et Supprimer le lien partagé direct pour Box.  
-  
-        -   Supprimer les utilisateurs externes : Autorisez l’accès uniquement aux utilisateurs de l’entreprise.  
-  
-        -   Rendre privé : Seul le propriétaire peut accéder au fichier, tous les partages sont supprimés.  
-  
-        -   Supprimer un collaborateur : Supprimez un collaborateur spécifique du fichier.  
-  
-    -   Quarantaine  
-  
-        -   Mettre en quarantaine utilisateur : Autorisez le libre-service en déplaçant le fichier vers un dossier de quarantaine contrôlé par l’utilisateur  
-  
-        -   Mettre en quarantaine administrateur : Le fichier est placé en quarantaine sur le lecteur de l’administrateur, ce dernier devant l’approuver.  
-  
--   Mettre à la corbeille : Déplacez le fichier vers le dossier Corbeille.
-  
-![alertes policy_create](./media/policy_create-alerts.png "policy_create alerts")  
-  
- 
-## <a name="activity-match-parameters"></a>Paramètres de correspondance de l’activité  
-Spécifiez le nombre requis de répétitions de l’activité pour correspondre à la stratégie, par exemple, en définissant une stratégie qui émet une alerte quand un utilisateur effectue sans succès 10 tentatives de connexion dans un délai d’exécution de 2 minutes.  
-Le paramètre par défaut, **Paramètres de correspondance de l’activité**, déclenche une correspondance pour chaque activité unique qui satisfait à tous les filtres d’activité.   
-À l’aide de l’option **Activité répétée**, vous pouvez définir le nombre d’activités répétées, la durée du délai d’exécution dans lequel les activités sont comptabilisées et même spécifier que toutes les activités doivent être effectuées par le même utilisateur et dans la même application cloud.  
-  
-### <a name="actions"></a>Actions  
-Notifications  
-  
--   Alertes : Les alertes peuvent se déclencher dans le système et se propager par le biais de messages électroniques et texte, selon leur niveau de gravité.  
-  
--   Notification par e-mail à l’utilisateur : Les e-mails sont personnalisables et envoyés à tous les propriétaires de fichiers en situation de violation.  
-  
--   Mettre en copie le responsable : Selon l’intégration de l’annuaire des utilisateurs, des notifications par e-mail peuvent également être envoyées au responsable de la personne qui viole une stratégie.  
-  
--   Notifier d’autres utilisateurs : Liste spécifique d’adresses e-mail qui reçoivent ces notifications.  
-  
-Actions de gouvernance dans les applications  
-  
--   Des actions précises peuvent être appliquées par application. Ces actions spécifiques varient selon la terminologie de l’application.  
-  
--   Suspendre l’utilisateur : Excluez temporairement l’utilisateur de l’application.  
-  
--   Révoquer le mot de passe : Révoquez le mot de passe de l’utilisateur et obligez-le à définir un nouveau mot de passe lors de sa prochaine connexion.  
-  
-     ![stratégie d’activité ref6](./media/activity-policy-ref6.png "activity policy ref6")  
-  
-
-## <a name="governance-conflicts"></a>Conflits de gouvernance
-
-Si vous créez plusieurs stratégies, il peut arriver que les actions de gouvernance se chevauchent. Dans ce cas, Cloud App Security traite les actions de gouvernance comme suit :
-
-- Si deux stratégies contiennent des actions qui sont contenues dans l’une et l’autre (par exemple, l’action **Supprimer des partages externes** est incluse dans **Rendre privé**), Cloud App Security résout le conflit et l’action la plus forte est appliquée.
-- Si les actions sont complètement indépendantes (par exemple, **Notifier le propriétaire** et **Rendre privé**), les deux actions ont lieu.
-- Si les actions sont en conflit, (par exemple **Change owner to user A** [Remplacer le propriétaire par l’utilisateur A] et **Change owner to user B** [Remplacer le propriétaire par l’utilisateur B]), différents résultats peuvent provenir de chaque correspondance. Il est important de modifier vos stratégies pour éviter les conflits, car elles peuvent entraîner des modifications indésirables dans le lecteur qui seront difficiles à détecter.
-
-
-
 ## <a name="see-also"></a>Voir aussi  
 [Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)   
 [Pour obtenir un support technique, visitez la page de support assisté Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
@@ -155,6 +150,6 @@ Si vous créez plusieurs stratégies, il peut arriver que les actions de gouvern
   
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO4-->
 
 

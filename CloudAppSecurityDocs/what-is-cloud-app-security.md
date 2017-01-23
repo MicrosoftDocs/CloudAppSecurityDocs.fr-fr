@@ -1,11 +1,11 @@
 ---
-title: "Qu’est-ce que Cloud App Security ? | Documentation Microsoft"
+title: "Qu’est-ce que Cloud App Security ? | Microsoft Docs"
 description: "Cette rubrique décrit Cloud App Security et comment il fonctionne."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/14/2016
+ms.date: 12/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 156dccf0c77bf7e46c0328ebf6bd1e0ad9609845
-ms.openlocfilehash: 4875a1ae80dae101416c9b26932bc57edf755a84
+ms.sourcegitcommit: 2997a79f2e0fd730302be2602b6aee6ec56999db
+ms.openlocfilehash: 64881249bbf81ad7b181eed53035b7b19791d0db
 
 
 ---
@@ -30,9 +30,11 @@ Cloud App Security est un composant essentiel de la pile Microsoft Cloud Securit
 
 ## <a name="the-cloud-app-security-framework"></a>Infrastructure de Cloud App Security  
 
-
-**Cloud Discovery** Découvrez toutes les utilisations du cloud dans votre organisation. Contrôle de l’informatique fantôme et création de rapports : - Découvrir toutes les applications cloud du réseau, sur tous les appareils - Examiner et explorer en détail des applications, des utilisateurs, des adresses IP spécifiques, etc. - Gérer et contrôler l’utilisation du cloud en bloquant, en sanctionnant et en protégeant des applications Évaluation du risque : - Comprendre les risques associés à plus de 13 000 applications cloud - Prendre en compte plus de 60 facteurs de risque en matière de sécurité et de conformité Alertes en cas d’utilisation dangereuse du cloud : - Recevoir des alertes sur les modèles d’utilisation anormaux, les nouvelles applications et les applications tendancielles **Information Protection** Surveillez et contrôlez vos données dans le cloud. Visibilité accrue dans le cloud : - Gagner en visibilité, notamment au niveau du partage et de la confidentialité - Quantifier l’exposition et le risque - Détecter toutes les applications tierces ayant accès à vos données Appliquer des stratégies DLP et contrôler le partage : - Régir l’utilisation des données dans le cloud au moyen de stratégies DLP granulaires - Tirer parti des moteurs DLP Microsoft et tiers pour la classification Génération d’alertes et examen : - Identifier les violations de stratégie - Examiner les incidents et les activités connexes - Automatiser la correction, notamment la mise en quarantaine et la suppression des autorisations **Threat Protection** Détectez les utilisations anormales et les incidents de sécurité. Réduisez les risques en définissant des stratégies et des alertes pour obtenir un contrôle maximal sur le trafic cloud du réseau. Utilisez Cloud App Security pour migrer vos utilisateurs vers des applications cloud alternatives approuvées et sécurisées.
-Analytique comportementale : - Détection préconfigurée des activités suspectes - Moteur de détection des anomalies basé sur plus de 20 facteurs de risque Examen avancé : - Outils avancés d’examen des incidents - Axer l’examen sur les utilisateurs, les fichiers, les activités et les emplacements - Personnaliser les détections en fonction de vos constats Renseignements sur les menaces : - Tirer parti du flux de renseignements de Microsoft sur les menaces - Éclairage unique alimenté par des trillions de signaux envoyés par les clients Microsoft
+- **Cloud Discovery** : découvrez toute les utilisations du cloud dans votre organisation, notamment la génération de rapports et le contrôle de l’informatique fantôme, et l’évaluation des risques.
+    
+- **Protection des données** : surveillez et contrôlez vos données dans le cloud grâce à une visibilité, à l’application de stratégies DLP, à la gestion des alertes et aux investigations. 
+    
+- **Protection contre les menaces** : détectez les utilisations anormales et les incidents de sécurité. Utiliser l’analyse des comportements et des outils d’investigation avancés pour réduire les risques, et définissez des stratégies et des alertes pour obtenir un contrôle maximal sur le trafic cloud réseau.
 
 ## <a name="architecture"></a>Architecture  
 
@@ -83,6 +85,6 @@ Les clients Premier peuvent également choisir Cloud App Security directement de
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 
