@@ -1,11 +1,11 @@
 ---
-title: Notes de publication | Documentation Microsoft
+title: Notes de publication | Microsoft Docs
 description: "Cette rubrique est mise à jour fréquemment pour vous informer des nouveautés de la dernière version de Cloud App Security."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/27/2016
+ms.date: 12/28/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,13 +14,50 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 52f2245779568abbf41d47c4b45cdcced302529b
-ms.openlocfilehash: cbe341faf692772ac5461e038233e9b1a6b2694f
+ms.sourcegitcommit: cc4f3db1307261c41786f7c4458b37ba9d7f620e
+ms.openlocfilehash: 2da187cd863af431c359b8079f6b30ebae0b615b
 
 
 ---
 
 # <a name="release-notes"></a>Notes de publication
+
+## <a name="cloud-app-security-release-87"></a>Cloud App Security version 87
+Publication le 25 décembre 2016
+
+**Nouvelles fonctionnalités**
+-   Nous sommes en train de mettre à disposition l’[anonymisation des données](cloud-discovery-anonymizer.md) pour vous permettre de bénéficier de Cloud Discovery tout en protégeant la vie privée des utilisateurs. L’anonymisation de données est effectuée en chiffrant les informations des noms d’utilisateur.
+-   Nous allons bientôt permettre d’exporter un script de blocage depuis Cloud App Security sur des appliances supplémentaires. Le script vous permet de réduire facilement l’informatique fantôme en bloquant le trafic pour des applications non approuvées. Cette option est maintenant disponible pour : 
+    -   BlueCoat ProxySG
+    -   Cisco ASA
+    -   Fortinet
+    -   Juniper SRX
+    -   Palo Alto
+    -   Websense
+-   Une nouvelle action de gouvernance de fichier a été ajoutée, qui vous permet de forcer un fichier à hériter des autorisations du parent, supprimant toutes les autorisations individuelles qui ont été définies pour le fichier ou le dossier. Cette action de gouvernance de fichier vous permet de changer les autorisations de votre fichier ou dossier qui doivent être héritées du dossier parent. 
+-   Un nouveau groupe d’utilisateurs nommé Externe a été ajouté. Il s’agit d’un groupe d’utilisateurs par défaut qui est préconfiguré par Cloud App Security de façon à inclure tous les utilisateurs qui ne font pas partie de vos domaines internes. Vous pouvez utiliser ce groupe d’utilisateurs comme filtre : par exemple, vous pouvez rechercher les activités effectuées par des utilisateurs externes.
+-   La fonctionnalité Cloud Discovery prend maintenant en charge les appliances Sophos Cyberoam.
+ 
+**Résolutions de bogues**
+-   Les fichiers SPO et OD4B apparaissaient dans le rapport Stratégie de fichier et dans la page Fichiers comme internes au lieu de privés. Ce problème a été corrigé.
+ 
+
+
+## <a name="cloud-app-security-release-86"></a>Cloud App Security version 86
+Publication le 13 décembre 2016
+
+**Nouvelles fonctionnalités**
+- Toutes les licences autonomes Cloud App Security vous permettent d’activer les analyses Azure Information Protection à partir des paramètres généraux (sans qu’il soit nécessaire de créer une stratégie). 
+ 
+**Améliorations**
+- Vous pouvez maintenant utiliser « ou » dans le filtre de fichiers pour le nom de fichier et le filtre de type MIME pour les fichiers et les stratégies. Ceci permet des scénarios comme la saisie du mot « passeport » ou « pilote » lors de la création d’une stratégie avec des informations d’identification personnelles, qui mettra en correspondance tout fichier ayant « passeport » ou « pilote » dans son nom de fichier. 
+- Par défaut, quand une stratégie d’inspection DLP s’exécute, les données des violations qui en résultent sont masquées. Vous pouvez maintenant afficher les 4 derniers caractères de la violation. 
+
+**Améliorations mineures**
+- Nouveaux événements liés à la boîte aux lettres d’Office 365 (Exchange) en relation avec des règles de transfert, et ajout et suppression de boîtes aux lettres déléguées.
+- Nouvel événement qui audite l’octroi d’un consentement à de nouvelles applications dans Azure Active Directory. 
+
+
 
 
 ## <a name="cloud-app-security-release-85"></a>Cloud App Security version 85
@@ -258,6 +295,6 @@ Publication : 15 mai 2016
   
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO4-->
 
 

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/21/2016
+ms.date: 1/9/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7901bb58f70949873fb3c423ae7951a67f7cd671
-ms.openlocfilehash: 4cfad222fb78e0bfc106fab64f6cc22d3819c1c8
+ms.sourcegitcommit: a6133e3cf0521515088dfd9d301aed2df2c4b430
+ms.openlocfilehash: 199a3c9909093551e3eca5e524f6bf04ce03aa4e
 
 
 ---
@@ -28,46 +28,46 @@ Cloud App Security s’appuie sur les API données par le fournisseur de cloud, 
 ## <a name="how-it-works"></a>Fonctionnement  
 Cloud App Security est déployé avec des privilèges d’administrateur système qui autorisent un accès complet à tous les objets de votre environnement.  
   
-Le flux de connecteur d’applications est le suivant :
+Le flux de connecteur d’applications est le suivant :
 1. Cloud App Security analyse et enregistre les autorisations d’authentification.
 2.  Cloud App Security demande la liste d’utilisateurs. La première fois que cette opération est effectuée, l’analyse peut prendre un certain temps. Une fois l’analyse des utilisateurs terminée, Cloud App Security passe aux activités et aux fichiers. Dès que l’analyse démarre, certaines activités sont disponibles dans Cloud App Security. 
 4. Une fois la demande de liste d’utilisateurs effectuée, Cloud App Security analyse périodiquement les utilisateurs, les groupes, les activités et les fichiers. Toutes les activités sont disponibles après la première analyse complète. 
  
 Cette analyse peut prendre du temps, en fonction de la taille du client, du nombre d’utilisateurs, et de la taille et du nombre de fichiers qui doivent être analysés. 
  
-Selon l’application à laquelle vous vous connectez (voir le tableau ci-dessous), la connexion d’API présente les caractéristiques suivantes :  
+Selon l’application à laquelle vous vous connectez (voir le tableau ci-dessous), la connexion d’API présente les caractéristiques suivantes :  
   
--   **Informations de compte :**  
+-   **Informations de compte :**  
   
      Visibilité des utilisateurs, des comptes, des informations de profil, de l’état (suspendu, actif, désactivé), des groupes et des privilèges.  
   
--   **Piste d’audit :**  
+-   **Piste d’audit :**  
   
      Visibilité des activités des utilisateurs, des administrateurs et des connexions.  
   
--   **Analyse de données :**  
+-   **Analyse de données :**  
   
-     Analyse des données non structurées à l’aide de deux processus : analyse régulière (toutes les 12 heures) et analyse en temps réel (chaque fois qu’une modification est détectée).  
+     Analyse des données non structurées à l’aide de deux processus : analyse régulière (toutes les 12 heures) et analyse en temps réel (chaque fois qu’une modification est détectée).  
   
--   **Autorisations d’application :**  
+-   **Autorisations d’application :**  
   
      Visibilité des jetons émis et de leurs autorisations.  
   
--   **Gouvernance des comptes :**  
+-   **Gouvernance des comptes :**  
   
      Possibilité de suspendre les utilisateurs, de révoquer des mots de passe, etc.  
   
--   **Gouvernance des données :**  
+-   **Gouvernance des données :**  
   
      Possibilité de mettre des fichiers en quarantaine, y compris les fichiers dans la corbeille, et d’écraser des fichiers.  
   
--   **Gouvernance des autorisations d’application :**  
+-   **Gouvernance des autorisations d’application :**  
   
      Possibilité de supprimer des jetons.  
   
 Le tableau suivant répertorie, par application cloud, les fonctionnalités prises en charge avec les connecteurs d’applications :  
 
-||**Office 365**|**Box**|**Okta**|**Google Apps**|**ServiceNow**|**Salesforce**|**Dropbox**|**AWS**|  
+||**Office 365**|**Box**|**Okta**|**Google Apps**|**ServiceNow**|**Salesforce**|**Dropbox**|**AWS**|  
 |-|-|-|-|-|-|-|-|-|  
 |**Répertorier les comptes**|✔|✔|✔|✔|✔|✔|✔|✔|  
 |**Groupe**|✔|✔|✔|✔|✔|✔|✔|✔|  
@@ -77,16 +77,15 @@ Le tableau suivant répertorie, par application cloud, les fonctionnalités pris
 |**Activité de l’utilisateur**|✔*|✔|✔|✔ - nécessite Google illimité|Partiel|Prise en charge avec Salesforce Shield|✔|Non applicable|  
 |**Activité d’administration**|✔|✔|✔|✔|Partiel|✔|✔|✔|  
 |**Analyse régulière des fichiers**|✔|✔|Non applicable|✔|✔|✔|✔|Bientôt disponible|  
-|**Analyse des fichiers pratiquement en temps réel**|Bientôt disponible|✔|Non applicable|✔ - nécessite Google illimité|||Bientôt disponible||  
+|**Analyse des fichiers pratiquement en temps réel**|✔|✔|Non applicable|✔ - nécessite Google illimité|||Bientôt disponible||  
 |**Contrôle partagé**|✔|✔|Non applicable|✔|Non applicable||✔||  
 |**Quarantaine**|✔|✔|Non applicable|Bientôt disponible|||Bientôt disponible||  
 |**Voir les autorisations d’application**|✔|Non prise en charge par le fournisseur|Non applicable|✔||✔|Non prise en charge par le fournisseur||  
 |**Révoquer les autorisations d’application**|✔||Non applicable|✔||✔|Non applicable||  
   
-\* Le connecteur d’applications Office 365 inclut une activité d’administration pour Exchange Online. Pour ajouter l’activité utilisateur pour Exchange Online, vous devez déployer le connecteur Exchange Online séparément.  
   
 ## <a name="prerequisites"></a>Conditions préalables  
-Pour certaines applications, vous pouvez être amené à ajouter les adresses IP suivantes à la liste approuvée pour permettre à Cloud App Security de collecter les journaux et de fournir un accès pour la console Cloud App Security :  
+Pour certaines applications, vous pouvez être amené à ajouter les adresses IP suivantes à la liste approuvée pour permettre à Cloud App Security de collecter les journaux et de fournir un accès pour la console Cloud App Security :  
   
 -   Pour les journaux :  
   
@@ -131,6 +130,6 @@ Pour plus d’informations sur l’homologation publique, consultez [Circuits Ex
    
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Jan17_HO2-->
 
 

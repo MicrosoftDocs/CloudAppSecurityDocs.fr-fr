@@ -1,16 +1,17 @@
 # [Comprendre & Explorer](what-is-cloud-app-security.md)
-## [Qu’est-ce que la mise à jour adaptée aux clusters ?](what-is-cloud-app-security.md)
+## [Qu’est-ce que la mise à jour adaptée aux clusters ?](what-is-cloud-app-security.md)
 ## [Notes de publication](release-notes.md)
 # [Déployer](getting-started-with-cloud-app-security.md)
 ## [Personnaliser le portail](general-setup.md)
 ## [Déployer Cloud Discovery](set-up-cloud-discovery.md)
 ### [Créer des rapports d’instantanés Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
 ### [Configurer le chargement automatique des journaux pour des rapports continus](configure-automatic-log-upload-for-continuous-reports.md)
+### [Anonymiser les données Cloud Discovery](cloud-discovery-anonymizer.md)
 ### [Personnaliser Cloud Discovery](working-with-cloud-discovery-data.md)
 ## [Connecter des applications](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
 ### [Connecter Box](connect-box-to-microsoft-cloud-app-security.md)
 ### [Connecter Google Apps](connect-google-apps-to-microsoft-cloud-app-security.md)
-### [Connecter Office 365](connect-office-365-to-microsoft-cloud-app-security.md)
+### [Connecter Office 365](connect-office-365-to-microsoft-cloud-app-security.md)
 ### [Connecter AWS](connect-aws-to-microsoft-cloud-app-security.md)
 ### [Connecter Dropbox](connect-dropbox-to-microsoft-cloud-app-security.md)
 ### [Connecter Okta](connect-okta-to-microsoft-cloud-app-security.md)
@@ -22,7 +23,6 @@
 ### [Fichiers](file-filters.md)
 ### [Activités](activity-filters.md)
 ### [Alertes](monitor-alerts.md)
-### [Intégrer à Azure Information Protection](azip-integration.md)
 ## [Contrôler](control.md)
 ### [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)
 #### [Stratégies Cloud Discovery](cloud-discovery-policies.md)
@@ -34,11 +34,14 @@
 ##### [Utilisation du moteur RegEx](working-with-the-regex-engine.md)
 ### [Gérer les autorisations d’application](manage-app-permissions.md)
 ## [Gouverner](governance-actions.md)
+## Intégrer
+### [Intégration d’Azure Information Protection](azip-integration.md)
+### [Intégration de SIEM](siem.md)
 # [Résoudre les problèmes](troubleshooting.md)
 ## [Résolution des problèmes de Cloud Discovery](troubleshooting-cloud-discovery.md)
 ## [Résolution des problèmes des connecteurs API à l’aide de messages d’erreur](troubleshooting-api-connectors-using-error-messages.md)
 ## [Résolution des problèmes d’inspection du contenu](troubleshooting-content-inspection.md)
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Jan17_HO1-->
 
 
