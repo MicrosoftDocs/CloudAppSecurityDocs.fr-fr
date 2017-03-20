@@ -1,11 +1,11 @@
 ---
-title: Personnaliser Cloud Discovery | Microsoft Docs
+title: "Utiliser les données Cloud Discovery pour détecter les comportements à risques | Microsoft Docs"
 description: "Cette rubrique fournit des instructions pour l’utilisation des données Cloud Discovery, notamment l’utilisation de l’indice de risque de l’application."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/26/2016
+ms.date: 2/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,11 @@ ms.technology:
 ms.assetid: cf94b290-b7ef-4fee-854e-c8ff8d11dea9
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 89f533e3b9c8397818e5aaa108dca168fda64db7
-ms.openlocfilehash: 0077b634d09cd9476d07c2de6a84d0c9396285da
-
-
+ms.openlocfilehash: 872c5839a3fbf54e4e4d07ef9ac0629aef29aaad
+ms.sourcegitcommit: 1a01ac2d5b4ff92e46e1bc4fd4318330f6ff41dd
+translationtype: HT
 ---
-
-# <a name="customize-cloud-discovery"></a>Personnaliser Cloud Discovery
+# <a name="working-with-cloud-discovery"></a>Utilisation de Cloud Discovery
 ## <a name="review-the-cloud-discovery-dashboard"></a>Consulter le tableau de bord Cloud Discovery
 
 Le tableau de bord Cloud Discovery est conçu pour vous donner plus d’informations sur l’utilisation des applications cloud dans votre organisation. Il fournit une vue d’ensemble en un clin d’œil des types d’applications utilisés, des alertes ouvertes et des niveaux de risque des applications dans votre organisation. Il vous montre également les principaux utilisateurs des applications et fournit un plan du lieu du siège social d’une application. Le tableau de bord Cloud Discovery présente de nombreuses options pour filtrer les données et vous permettre ainsi de générer des vues spécifiques selon ce qui vous intéresse le plus, et des graphiques faciles à comprendre pour vous donner une vision globale en un clin d’œil.
@@ -73,7 +70,7 @@ Pour créer un rapport continu :
   
 1.  Dans le portail, sous l’icône Paramètres, sélectionnez **Paramètres Cloud Discovery**.  
   
-2.  Cliquez sur l’onglet **Manage continuous report** (Gérer un rapport continu).  
+2.  Cliquez sur l’onglet **Gérer un rapport continu**.  
   
 3.  Cliquez sur le bouton **Créer un rapport**.  
   
@@ -103,7 +100,7 @@ Pour créer une exclusion :
 ## <a name="deleting-cloud-discovery-data"></a>Suppression de données Cloud Discovery  
 Plusieurs raisons peuvent vous amener à supprimer vos données Cloud Discovery. Nous vous recommandons de les supprimer dans les cas suivants :  
   
--   Vous avez chargé manuellement des fichiers journaux, l’eau a longtemps coulé sous les ponts avant que vous ne mettiez à jour le système avec de nouveaux fichiers journaux et vous ne voulez pas que les anciennes données affectent vos résultats.  
+-   Vous avez chargé manuellement les fichiers journaux, vous avez attendu longtemps avant de mettre à jour le système avec de nouveaux fichiers journaux et vous ne voulez pas que les anciennes données affectent vos résultats.  
   
 -   Vous définissez une nouvelle vue de données personnalisée qui s’applique uniquement aux nouvelles données à compter de moment-là, alors vous pouvez effacer les anciennes données, puis charger à nouveau vos fichiers journaux pour permettre à la vue de données personnalisée de sélectionner des événements dans les données de fichiers journaux.  
   
@@ -133,8 +130,3 @@ Pour supprimer des données Cloud Discovery :
 [Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Dec16_HO4-->
-
-

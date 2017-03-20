@@ -1,11 +1,11 @@
 ---
-title: "Activités | Microsoft Docs"
+title: "Visibilité sur les activités des applications cloud | Microsoft Docs"
 description: "Cette rubrique fournit une liste des activités, filtres et paramètres de correspondance qui peuvent être appliqués aux stratégies d’activité."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/26/2016
+ms.date: 3/6/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,9 @@ ms.technology:
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 89f533e3b9c8397818e5aaa108dca168fda64db7
-ms.openlocfilehash: 7ad577c4b6222d96c21f51dd4023f10a9c402c55
-
-
+ms.openlocfilehash: 548dceaedc5bc22a5ca6da0690702b411b2987fb
+ms.sourcegitcommit: 80d9396833957429cf4fe178f336ab2e1793069e
+translationtype: HT
 ---
 # <a name="activities"></a>Activités
 Cloud App Security vous donne une visibilité sur toutes les activités de vos applications connectées. Une fois connecté à une application à l’aide du connecteur d’applications, Cloud App Security analyse toutes les activités passées (la période d’analyse rétroactive varie par application). Cloud App Security est ensuite mis à jour en continu avec les nouvelles activités. Le **journal d’activité** peut être filtré pour vous permettre de trouver des activités spécifiques. Vous pouvez créer des stratégies basées sur les activités, puis définir ce dont voulez être alerté pour y réagir. Vous pouvez également rechercher des activités effectuées sur certains fichiers. Les types d’activités et les informations que nous obtenons pour chaque activité varient selon l’application et le genre de données que l’application peut fournir. 
@@ -42,12 +40,13 @@ Pour explorer des activités plus spécifiques, vous pouvez développer le filtr
 ## <a name="activity-filters"></a>Filtres d’activité
 Vous trouverez ci-dessous une liste des filtres d’activité qui peuvent être appliqués. La plupart des filtres prennent en charge plusieurs valeurs, ainsi que NOT, afin de vous fournir un outil très puissant pour créer des stratégies.  
   
--   ID activité : Recherchez uniquement des activités spécifiques par leur ID. Ce filtre s’avère très utile quand vous connectez MCAS à votre SIEM (à l’aide de l’agent SIEM) et que vous voulez examiner davantage les alertes au sein du portail MCAS.  
+-   ID activité : Recherchez uniquement des activités spécifiques par leur ID. Ce filtre est très utile quand vous connectez Cloud App Security à votre SIEM (à l’aide de l’agent SIEM) et que vous voulez examiner davantage les alertes dans le portail Cloud App Security.  
   
 -   Objets d’activité : Recherchez les objets sur lesquels l’activité a été effectuée. Ce filtre s’applique aux objets fichier, dossier, utilisateur ou application.
     - ID de l’objet d’activité : ID de l’objet (fichier, dossier, utilisateur ou application).
     - Fichier, dossier ou site URL : Vous permet de sélectionner des fichiers, des dossiers et des URL qui commencent par une chaîne spécifique.
     - Objet cible (fichier/dossier) : Vous permet de sélectionner un fichier ou un dossier spécifique. 
+    - Élément : vous permet de rechercher par nom ou par ID d’objet d’activité (par exemple des noms d’utilisateur, des fichiers, des paramètres, des sites). 
     
 -   Type d’activité : Recherchez l’activité de l’application.
 
@@ -93,15 +92,19 @@ Vous trouverez ci-dessous une liste des filtres d’activité qui peuvent être 
 -   ISP enregistré : Fournisseur de services Internet à partir duquel l’activité a été effectuée.   
 
 -  Source : Effectuez la recherche en fonction de la source à partir de laquelle l’activité a été détectée. La source peut être l’un des éléments suivants :
-  - Connecteur d’application : journaux provenant directement du connecteur d’API de l’application.
-  - Analyse du connecteur d’application : enrichissements de Cloud App Security basés sur l’analyse des informations par le connecteur d’API.
+  -    Connecteur d’application : journaux provenant directement du connecteur d’API de l’application.
+  -    Analyse du connecteur d’application : enrichissements de Cloud App Security basés sur l’analyse des informations par le connecteur d’API.
   
 
 -   Utilisateur : Utilisateur qui a exécuté l’activité, qui peut être filtré en domaine, groupe, nom ou organisation. Pour filtrer les activités sans utilisateur spécifique, vous pouvez utiliser l’opérateur « n’est pas défini ».  
     -   Domaine de l’utilisateur : Recherchez un domaine utilisateur spécifique.
-    -   Groupe d’utilisateurs : Groupes d’utilisateurs spécifiques importés automatiquement par Cloud App Security à partir de l’application cloud, par exemple, toutes les activités réalisées par les administrateurs Office 365.
-    -   Nom d’utilisateur : Recherchez un nom d’utilisateur spécifique.
     -   Organisation utilisateur : Unité d’organisation de l’utilisateur qui a effectué l’activité, par exemple toutes les activités effectuées par les utilisateurs EMEA_marketing.  
+    -   Groupe d’utilisateurs : Groupes d’utilisateurs spécifiques que vous pouvez importer à partir d’applications connectées, par exemple, les administrateurs Office 365.  
+    -   Nom d’utilisateur : Recherchez un nom d’utilisateur spécifique. Pour afficher la liste des utilisateurs membres d’un groupe d’utilisateurs spécifique, dans le **tiroir Activité**, cliquez sur le nom du groupe d’utilisateurs. Vous accédez alors à la page Comptes qui liste tous les utilisateurs figurant dans le groupe. À partir de cette page, vous pouvez explorer plus en détail les comptes d’utilisateurs spécifiques dans le groupe.
+       -  Vous pouvez affiner les filtres **Groupe d’utilisateurs** et **Nom d’utilisateur** en choisissant le filtre **En tant que**, puis en sélectionnant le rôle de l’utilisateur parmi les rôles suivants :
+            - Objet d’activité uniquement : cela signifie que l’utilisateur ou le groupe d’utilisateurs sélectionné n’a pas effectué l’activité en question, mais qu’il était l’objet de l’activité
+            - Acteur uniquement : cela signifie que l’utilisateur ou le groupe d’utilisateurs a effectué l’activité
+            - N’importe quel rôle : cela signifie que l’utilisateur ou le groupe d’utilisateurs a participé à l’activité, soit en effectuant l’activité, soit en étant l’objet de l’activité
 
 -   Agent utilisateur : Agent utilisateur à partir duquel l’activité a été effectuée.  
   
@@ -130,8 +133,3 @@ Pour obtenir la liste des actions de gouvernance disponibles, consultez [Actions
 [Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Dec16_HO4-->
-
-

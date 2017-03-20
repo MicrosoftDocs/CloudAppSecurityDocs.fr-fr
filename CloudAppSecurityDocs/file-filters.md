@@ -1,11 +1,11 @@
 ---
-title: Fichiers | Microsoft Docs
+title: "Présentation des données et des filtres de fichiers disponibles dans Cloud App Security | Microsoft Docs"
 description: "Cette rubrique de référence fournit des informations sur les types de fichiers et les filtres de fichiers utilisés par Cloud App Security."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/19/2016
+ms.date: 3/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: d11339040da669b77069c286f6171f7b3a6161db
-ms.openlocfilehash: 3262d01aed03bbb462832f8ff2836152e6208e74
-
-
+ms.openlocfilehash: 81330b5333050bea2352f0907ac5c83d71af14bf
+ms.sourcegitcommit: b840b945b270e616560f565bcc6590dd68ad5ebd
+translationtype: HT
 ---
-
 # <a name="files"></a>Fichiers
 
 
@@ -41,7 +38,7 @@ Pour explorer des fichiers plus spécifiques, vous pouvez développer le filtre 
 
  ![filtre de journal de fichiers avancé](media/file-log-filter-advanced.png)
  
-###  <a name="a-namefilefiltersa-file-filters"></a><a name="Filefilters"></a> Filtres de fichiers 
+###  <a name="Filefilters"></a> Filtres de fichiers 
  
 Cloud App Security peut surveiller n’importe quel type de fichier en fonction de plus de 20 filtres de métadonnées (par exemple, niveau d’accès, type de fichier). 
  
@@ -84,7 +81,7 @@ Vous trouverez ci-dessous la liste des filtres de fichiers qui peuvent être app
   
 -   Nom de fichier : Nom de fichier ou sous-chaîne du nom comme défini dans l’application cloud, par exemple, Tous les fichiers avec un mot de passe dans leur nom.   
   
--   Balise de fichier : rechercher des fichiers avec des balises spécifiques définies par Azure Information Protection. Une intégration à Azure Information Protection est alors nécessaire.
+-   Étiquette de classification : rechercher des fichiers avec des balises spécifiques définies par Azure Information Protection. Une intégration à Azure Information Protection est alors nécessaire.
 
 -   Type de fichier : Cloud App Security accepte le type MIME reçu du service et analyse le fichier pour déterminer le type de fichier réel. Notez que cette analyse concerne les fichiers qui sont appropriés pour l’analyse de données (documents, images, présentations, feuilles de calcul, fichiers texte et compressés/d’archive). Le filtre fonctionne selon le type de fichier/dossier, par exemple Tous les dossiers qui... ou Tous les fichiers de feuille de calcul qui...
 
@@ -132,8 +129,3 @@ Pour obtenir la liste des actions de gouvernance disponibles, consultez [Actions
 [Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Dec16_HO3-->
-
-

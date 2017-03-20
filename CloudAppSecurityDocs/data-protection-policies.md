@@ -1,11 +1,11 @@
 ---
-title: "Stratégies d’activité | Documentation Microsoft"
+title: "Créer des stratégies pour surveiller et protéger les fichiers dans vos applications cloud | Microsoft Docs"
 description: "Cette rubrique décrit la procédure de configuration d’une stratégie de données pour surveiller et contrôler les données et les fichiers lors de l’usage des applications cloud de votre organisation."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/27/2016
+ms.date: 3/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 156dccf0c77bf7e46c0328ebf6bd1e0ad9609845
-ms.openlocfilehash: 21edb17ac01d7f54cab9b7b2ced838752a916c1e
-
-
+ms.openlocfilehash: fdaacd43a21ec1cd8d0bf8fdee08e4918af47e68
+ms.sourcegitcommit: b840b945b270e616560f565bcc6590dd68ad5ebd
+translationtype: HT
 ---
-
 # <a name="file-policies"></a>Stratégies de fichier  
 Les stratégies de fichier vous permettent d’appliquer une large gamme de processus automatisés en exploitant les API du fournisseur de cloud. Vous pouvez définir des stratégies pour fournir des analyses de conformité en continu, des tâches eDiscovery réglementaires, une protection contre la perte de données (DLP, Data Loss Prevention) au contenu sensible partagé publiquement et de nombreux autres cas d’usage.  
 Cloud App Security peut surveiller n’importe quel type de fichier en fonction de plus de 20 filtres de métadonnées (par exemple, niveau d’accès, type de fichier). 
@@ -50,7 +47,7 @@ Voici quelques exemples de stratégies de fichier que vous pouvez créer :
     Recevez une alerte quand un fichier est partagé avec des comptes appartenant à des domaines externes spécifiques, par exemple, au domaine d’un concurrent. Sélectionnez le domaine externe avec lequel vous voulez limiter le partage.  
   
 -   Mettez en quarantaine les fichiers partagés qui n’ont pas été modifiés pendant la dernière période :  
-    Recevez une alerte sur les fichiers partagés que personne n’a modifié dernièrement, afin de les mettre en quarantaine ou d’activer une action automatisée. Excluez tous les fichiers privés qui n’ont pas été modifiés pendant une plage de dates spécifiée. Sur Google Apps, vous pouvez choisir de mettre en quarantaine ces fichiers, en cochant la case « Fichier en quarantaine » dans la page de création de stratégie.  
+    Recevez une alerte sur les fichiers partagés que personne n’a modifié dernièrement, afin de les mettre en quarantaine ou d’activer une action automatisée. Excluez tous les fichiers privés qui n’ont pas été modifiés pendant une plage de dates spécifiée. Sur G Suite, vous pouvez choisir de mettre en quarantaine ces fichiers, en cochant la case « Fichier en quarantaine » dans la page de création de stratégie.  
   
 -   Partage avec des utilisateurs non autorisés :  
     Recevez une alerte quand des fichiers sont partagés avec un groupe non autorisé d’utilisateurs dans votre organisation. Sélectionnez les utilisateurs avec lesquels le partage n’est pas autorisé.  
@@ -76,7 +73,7 @@ Pour créer une stratégie de fichier, procédez comme suit :
 7.  Sélectionnez la **Méthode d’inspection du contenu**. La protection contre la perte de données (DLP) intégrée vous permet de filtrer les fichiers par leur contenu. Pour analyser le contenu des fichiers, sélectionnez ensuite **DLP intégré**. Une fois que l’inspection du contenu est activée, vous pouvez choisir d’utiliser des expressions prédéfinies ou de rechercher d’autres expressions personnalisées, sous forme de sous-chaîne ou d’[expression régulière](working-with-the-regex-engine.md) de votre choix.  
     De plus, vous pouvez spécifier une expression régulière pour exclure un fichier des résultats. Cette possibilité s’avère très utile si vous avez des mots clés de classification interne standard à exclure de la stratégie.  
     Vous pouvez décider de définir le nombre minimal de violations de contenu à atteindre avant que le fichier ne soit considéré comme une violation. Par exemple, vous pouvez choisir 10 si vous souhaitez être alerté pour les fichiers comportant au moins 10 numéros de carte de crédit détectés dans leur contenu.  
-    Quand le contenu est mis en correspondance avec l’expression sélectionnée, vous pouvez choisir de masquer la correspondance elle-même dans la notification de violation et les journaux. Une fois vérifié, le texte en violation est remplacé par des caractères « X ». N’oubliez pas que les numéros sont remplacés par des caractères « # » et qu’ils ne sont jamais stockés dans Cloud App Security.  Vous pouvez également sélectionner l’option pour afficher les 4 derniers caractères d’une violation. Par défaut, les violations sont entièrement masquées. Seul leur contexte, 40 caractères avant et après la violation, est affiché. Cette option affiche les 4 derniers caractères de la violation.
+    Quand du contenu correspond à l’expression sélectionnée, le texte de la violation est remplacé par des caractères « X ». Par défaut, les violations sont entièrement masquées. Seul leur contexte, 40 caractères avant et après la violation, est affiché. Les chiffres dans le contexte de l’expression sont remplacés par des caractères « # » et ne sont jamais stockés dans Cloud App Security. Vous pouvez sélectionner l’option **Montrer les 4 derniers caractères d’une violation** pour annuler le masquage des 4 derniers caractères de la violation elle-même.
   
 8.  Choisissez les actions de **gouvernance** que Cloud App Security doit exécuter quand une correspondance est détectée.  
   
@@ -88,7 +85,7 @@ Pour créer une stratégie de fichier, procédez comme suit :
 >   
 >  Pour obtenir des instructions, vous pouvez utiliser le bouton **Modifier et afficher un aperçu des résultats** dans la section Filtres.  
   
-![stratégie de fichier, modifier et afficher un aperçu des résultats](./media/file-policy-edit-and-preview-results.png "stratégie de fichier, modifier et afficher un aperçu des résultats")  
+ ![stratégie de fichier, modifier et afficher un aperçu des résultats](./media/file-policy-edit-and-preview-results.png "stratégie de fichier, modifier et afficher un aperçu des résultats")  
   
 10. Pour afficher les correspondances de stratégie de fichier, les fichiers qui sont suspectés d’enfreindre la stratégie, cliquez sur **Contrôle**, puis sur **Stratégies**. Filtrez les résultats pour afficher uniquement les stratégies de fichier avec le filtre **Type** en haut. Pour plus d’informations sur les correspondances pour chaque stratégie, cliquez sur une stratégie. Vous affichez ainsi les fichiers Mise en correspondance maintenant pour la stratégie. Cliquez sur l’onglet **Historique** pour consulter un historique remontant jusqu’à 6 mois de fichiers correspondant à la stratégie.     
   
@@ -120,8 +117,3 @@ Chaque stratégie comprend les éléments suivants :
 [Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Dec16_HO2-->
-
-
