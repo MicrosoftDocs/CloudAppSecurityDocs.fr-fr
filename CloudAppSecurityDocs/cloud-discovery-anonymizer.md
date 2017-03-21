@@ -1,11 +1,11 @@
 ---
-title: "Anonymiser les données Cloud Discovery | Microsoft Docs"
+title: "Protéger la confidentialité des utilisateurs Cloud App Security en anonymisant les données | Microsoft Docs"
 description: "Cet article fournit des informations sur l’anonymisation des noms d’utilisateur dans vos données Cloud Discovery."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/27/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,10 @@ ms.technology:
 ms.assetid: eb250ede-fede-4699-a08b-b8ea4b232f07
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 99ad61811b68b47ac62b4bac83b611e535d4a6be
-ms.openlocfilehash: 049494e45caf670f753f6b5fbfbbf117462b7156
-
-
+ms.openlocfilehash: 5e3b10cc8fa00deb296076063a6b5f6cde76999e
+ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+translationtype: HT
 ---
-
-
 ## <a name="cloud-discovery-data-anonymization"></a>Anonymisation des données Cloud Discovery
 
 L’anonymisation de données Cloud Discovery vous permet de protéger la confidentialité des utilisateurs. Une fois que le journal des données est téléchargé sur le portail Cloud App Security, il est purgé et toutes les informations des noms d’utilisateur sont remplacées par des noms d’utilisateur chiffrés. De cette façon, toutes les activités cloud restent anonymes. Quand c’est nécessaire, pour une enquête de sécurité spécifique (par exemple en raison d’une violation de la sécurité ou d’une activité utilisateur suspecte), les administrateurs peuvent résoudre le nom d’utilisateur réel. Si un administrateur a une raison de suspecter un utilisateur spécifique, il peut également rechercher le nom d’utilisateur chiffré d’un nom d’utilisateur connu, puis commencer son investigation avec le nom d’utilisateur chiffré. La conversion de chaque nom d’utilisateur est auditée dans le **journal de gouvernance** du portail.
@@ -77,8 +73,3 @@ Fonctionnement de l’anonymisation des données :
     
       
   
-
-
-<!--HONumber=Dec16_HO4-->
-
-

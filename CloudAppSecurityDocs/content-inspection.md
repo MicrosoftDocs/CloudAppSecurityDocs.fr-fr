@@ -1,11 +1,11 @@
 ---
-title: Inspection du contenu | Documentation Microsoft
+title: "Comment Cloud App Security réalise l’inspection du contenu | Microsoft Docs"
 description: "Cet article décrit le processus suivi par Cloud App Security lors de l’exécution de l’inspection du contenu DLP sur les données de votre cloud."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/27/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,26 +13,23 @@ ms.technology:
 ms.assetid: 2401adbc-0011-4938-9e3a-a4c719a2f619
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 52f2245779568abbf41d47c4b45cdcced302529b
-ms.openlocfilehash: 19d5b0624233da2af64cf35bd2e7ef8ca118c638
-
-
+ms.openlocfilehash: a1ff57c60d8b35711330e8e4879fe1a48a7dee77
+ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+translationtype: HT
 ---
-
 # <a name="content-inspection"></a>Inspection du contenu
 Cet article décrit le processus suivi par Cloud App Security lors de l’exécution de l’inspection du contenu DLP sur les données de votre cloud. 
 
 
-L’inspection du contenu Cloud App Security fonctionne comme suit :
+L’inspection du contenu Cloud App Security fonctionne comme suit :
 1. Cloud App Security effectue une analyse en quasi temps réel des lecteurs et événements qui sont détectés comme étant nouveaux ou modifiés.
 2. Une fois cette opération terminée, Cloud App Security effectue une analyse continue de tous les fichiers pertinents dans tous les lecteurs.  
 
 Les fichiers de l’analyse en quasi temps réel et les fichiers de l’analyse continue sont ajoutés à la file d’attente pour l’inspection. L’ordre des fichiers dans la file d’attente d’analyse est défini selon l’activité sur les fichiers et l’analyse de vos lecteurs. Les fichiers sont analysés uniquement si les métadonnées de fichiers indiquent qu’il s’agit d’un type MIME pris en charge. Cette analyse concerne les fichiers qui sont appropriés pour l’analyse de données (documents, images, présentations, feuilles de calcul, fichiers texte et compressés/d’archive).  
 
-Une fois qu’un fichier est analysé, les événements suivants se produisent :
+Une fois qu’un fichier est analysé, les événements suivants se produisent :
 
-1. Cloud App Security applique toutes vos stratégies personnalisées qui sont liées aux métadonnées et non au contenu proprement dit, par exemple une stratégie qui vous avertit quand la taille des fichiers dépasse 20 Mo ou lorsque des fichiers docx sont enregistrés dans OneDrive. 
+1. Cloud App Security applique toutes vos stratégies personnalisées qui sont liées aux métadonnées et non au contenu proprement dit, par exemple une stratégie qui vous avertit quand la taille des fichiers dépasse 20 Mo ou lorsque des fichiers docx sont enregistrés dans OneDrive. 
 
 2. Si une stratégie nécessite une inspection du contenu et que le fichier répond aux exigences d’inspection du contenu, le contenu est mis en file d’attente pour l’inspection. La longueur de la file d’attente dépend de la taille du client et du nombre de fichiers qui nécessitent une analyse. 
 
@@ -41,7 +38,7 @@ Une fois qu’un fichier est analysé, les événements suivants se produisent :
 > [!NOTE]
 > Si vous voyez un tiret dans l’état d’analyse, cela signifie que le fichier ne figure pas dans une file d’attente en vue d’être analysé. Pour plus d’informations sur la définition de stratégies d’inspection du contenu, consultez [Stratégies de fichier](data-protection-policies.md).
 
-Les stratégies d’analyse d’inspection du contenu intégrées peuvent rechercher les éléments suivants :
+Les stratégies d’analyse d’inspection du contenu intégrées peuvent rechercher les éléments suivants :
 
 - Adresses e-mail 
 - Numéros de carte de crédit 
@@ -70,8 +67,3 @@ Les stratégies d’analyse d’inspection du contenu intégrées peuvent recher
 [Pour obtenir un support technique, visitez la page de support assisté Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier.](https://premier.microsoft.com/)  
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-

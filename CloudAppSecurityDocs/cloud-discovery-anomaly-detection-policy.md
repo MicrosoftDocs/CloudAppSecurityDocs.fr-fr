@@ -1,11 +1,11 @@
 ---
-title: "Stratégie de détection des anomalies Cloud Discovery | Microsoft Docs"
+title: "Créer une stratégie de détection des anomalies Cloud Discovery | Microsoft Docs"
 description: "Cette rubrique fournit des informations sur l’utilisation des stratégies de détection des anomalies Cloud Discovery."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/21/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: eaf73af0-7610-4903-b656-8d90b1d2b18c
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 3c78f9b9eca0c88256951ba5e58b656b6d5b14ab
-ms.openlocfilehash: 1bbf3b0b6c36cb7b29826efc598a66a41a53b3e2
-
-
+ms.openlocfilehash: 5c5d77a83d3eba40250ece02cfce4aa8f80d345d
+ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+translationtype: HT
 ---
-
 # <a name="cloud-discovery-anomaly-detection-policy"></a>Stratégie de détection des anomalies de Cloud Discovery
 Cet article fournit des informations de référence sur les stratégies, donne une explication de chaque type de stratégie et décrit les champs que vous pouvez configurer pour chacune d’elle.  
   
@@ -71,8 +68,3 @@ Pour chaque stratégie, définissez les paramètres suivants :
 [Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Dec16_HO4-->
-
-

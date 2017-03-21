@@ -1,11 +1,11 @@
 ---
-title: "Créer des rapports d’instantanés Cloud Discovery | Documentation Microsoft"
+title: "Créer des rapports d’instantané de l’utilisation des applications cloud Cloud Discovery | Microsoft Docs"
 description: "Cet article fournit des informations sur le chargement manuel de journaux pour créer un rapport d’instantané de vos applications Cloud Discovery."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/14/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2a2d4396a3960bd3124196b9c616f6a7765247ce
-ms.openlocfilehash: ce887ed4f8727b0c36f5e5e9a40b13b11dc78920
-
-
+ms.openlocfilehash: 189662f6122239a6db6533180265548297a5c795
+ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+translationtype: HT
 ---
-
 # <a name="create-snapshot-cloud-discovery-reports"></a>Créer des rapports d’instantanés Cloud Discovery
 Il est important de charger un journal manuellement et de laisser Cloud App Security l’analyser avant de tenter d’utiliser le collecteur de journaux automatique.
 Si vous n’avez pas encore de journal et que vous aimeriez voir à quoi il doit ressembler, suivez la procédure ci-dessous pour télécharger un exemple de fichier journal.
@@ -71,8 +68,3 @@ Après le traitement de vos fichiers journaux, vous recevrez un e-mail pour vous
     
       
   
-
-
-<!--HONumber=Dec16_HO2-->
-
-
