@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/12/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: a9b00c2a-2f71-499e-8f57-67e560daedc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c4bd7c44ec5ced6da82de3c7bf8f3aa1fd12a517
-ms.sourcegitcommit: b840b945b270e616560f565bcc6590dd68ad5ebd
+ms.openlocfilehash: 8e552aea95318288d329597ec2a0749535e06a52
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
 translationtype: HT
 ---
 # <a name="investigate"></a>Étudier
@@ -79,6 +79,8 @@ Le marquage des applications comme approuvées ou non est une étape importante 
     -   Certaines personnes qui ont été licenciées ont-elles toujours accès à une application, lequel accès pourrait leur permettre de dérober des informations ?  
 
     -   Voulez-vous révoquer l’autorisation d’un utilisateur sur une application spécifique ou exiger d’un utilisateur spécifique qu’il effectue une authentification multifacteur ?  
+    
+    -   Vous pouvez également explorer le compte de l’utilisateur en cliquant sur la roue dentée à la fin de la ligne du compte de l’utilisateur et en sélectionnant une action à effectuer, comme **Suspendre l’utilisateur** ou **Supprimer les collaborations d’utilisateur**. Si l’utilisateur a été importé depuis Azure Active Directory, vous pouvez également cliquer sur **Paramètres du compte Azure AD** pour accéder facilement aux fonctionnalités d’administration avancée de l’utilisateur, comme l’administration du groupe, l’authentification multifacteur, l’obtention d’informations sur les connexions de l’utilisateur et la possibilité de bloquer la connexion.
 
 4.  Accédez à **Examiner**, puis sélectionnez une application. Le tableau de bord Application s’ouvre et vous donne des informations. Vous pouvez utiliser les onglets en haut pour vérifier les éléments suivants :  
 
@@ -113,7 +115,7 @@ Le marquage des applications comme approuvées ou non est une étape importante 
     -   Certaines applications cloud sont-elles utilisées, alors qu’elles ne sont pas conformes à la stratégie de votre organisation ?  
 
 ## <a name="use-reports-to-investigate-risk"></a>Utiliser les rapports pour examiner les risques  
-Quand vous vous attelez à mieux contrôler votre environnement cloud, vous avancez certaines hypothèses selon ce que vous vous attendez à trouver : vous ne connaissez pas encore vraiment votre cloud. Sur la base de ces hypothèses, vous créez des stratégies.
+Quand vous vous attelez à mieux contrôler votre environnement cloud, vous faites certaines hypothèses en fonction de ce que vous vous attendez à trouver : en fait, vous ne connaissez pas encore vraiment votre cloud. Sur la base de ces hypothèses, vous créez des stratégies.
 
 Une fois que Cloud App Security s’exécute dans votre environnement cloud, vous utilisez les rapports intégrés (et des rapports personnalisés) pour voir ce qui se passe dans votre cloud. Sur cette base, vous ajustez à nouveau vos stratégies pour y inclure des exceptions, pour que votre stratégie intercepte au final très peu de faux positifs.  
 

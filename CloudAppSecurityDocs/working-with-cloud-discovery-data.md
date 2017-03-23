@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/19/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: cf94b290-b7ef-4fee-854e-c8ff8d11dea9
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 872c5839a3fbf54e4e4d07ef9ac0629aef29aaad
-ms.sourcegitcommit: 1a01ac2d5b4ff92e46e1bc4fd4318330f6ff41dd
+ms.openlocfilehash: 90a8354c8ec3c757ee145be29599b88b5eb7e58f
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
 translationtype: HT
 ---
 # <a name="working-with-cloud-discovery"></a>Utilisation de Cloud Discovery
@@ -33,9 +33,9 @@ La première chose à faire pour obtenir une vue d’ensemble de vos application
 3. Allez encore plus loin et affichez toutes les applications dans une catégorie spécifique dans le widget Applications découvertes.
 
 4. Vous pouvez voir les principaux utilisateurs et les adresses IP sources pour identifier les utilisateurs qui emploient le plus les applications cloud dans votre organisation.
-5. Vérifiez comment les applications découvertes sont réparties en fonction de l’emplacement géographique (selon leur siège social) dans le plan des sièges sociaux des applications.
+5. Vérifiez comment les applications découvertes sont réparties en fonction de l’emplacement géographique (d’après le siège social) dans le plan des sièges sociaux des applications.
 
-6. Enfin, n’oubliez pas de consulter l’indice de risque de l’application découverte dans la vue d’ensemble des risques des applications et de vérifier l’état des alertes de détection pour afficher le nombre d’alertes ouvertes à examiner.
+6. Enfin, n’oubliez pas de consulter le score de risque de l’application découverte dans la **Vue d’ensemble des risques des applications** et de vérifier l’état des alertes de découverte pour afficher le nombre d’alertes ouvertes à examiner.
 
 
 ## <a name="customize-the-risk-score"></a>Personnaliser le score de risque  

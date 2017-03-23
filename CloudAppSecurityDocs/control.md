@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: bc11bbfe-ec6c-458c-8302-8112c383199d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 947e7e7cee59090a71085a4544bc20449399181a
-ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+ms.openlocfilehash: f72c13059ebcb320bed24430b06061b1cbb884cd
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
 translationtype: HT
 ---
 # <a name="control"></a>Control
@@ -64,7 +64,7 @@ Imaginons le scénario suivant : vous envisagez d’acheter une application de 
 
 2.   Sous **Catégories**, filtrez les applications par **Productivité**.  
 
-3.   Pour chaque application utilisée, consultez le **Score** pour voir si elle est fiable et dans le cas contraire, pourquoi.  
+3.   Pour chaque application utilisée, consultez le **Score** pour voir si elle est fiable et, dans le cas contraire, pourquoi.  
 
 4.   Si vous décidez que vous voulez acheter une licence d’entreprise pour toute l’organisation, vous pouvez examiner la colonne **Utilisateurs**. Vous pouvez voir ici ce qui est déjà le plus répandu parmi vos utilisateurs, si ces applications sont fiables et quelles sont leurs fonctionnalités de sécurité avant de prendre votre décision.  
 

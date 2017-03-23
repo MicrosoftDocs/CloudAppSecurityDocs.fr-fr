@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/13/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e31fd5f40aa432fd149cef0b5923818247aed326
-ms.sourcegitcommit: 1a01ac2d5b4ff92e46e1bc4fd4318330f6ff41dd
+ms.openlocfilehash: 81ee0b71e6e66d102edf41269197d955b16fbeb4
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
 translationtype: HT
 ---
 # <a name="azure-information-protection-integration"></a>Intégration d’Azure Information Protection
@@ -43,7 +43,7 @@ Vous connaissez probablement déjà les étiquettes de classification des fichie
 
 Voici tout ce que vous avez à faire pour intégrer Azure Information Protection à Cloud App Security : activer l’analyse automatique pour permettre la recherche des étiquettes de classification Azure Information Protection sur vos fichiers Office 365 sans avoir à créer une stratégie. Après avoir activé cette option, si des fichiers de votre environnement cloud sont étiquetés avec des étiquettes de classification Azure Information Protection, vous les voyez dans Cloud App Security.
 
-Pour permettre à Cloud App Security d’analyser des fichiers quand l’inspection du contenu est activée pour les étiquettes de classification :
+Pour permettre à Cloud App Security d’analyser des fichiers quand l’inspection du contenu est activée pour les étiquettes de classification :
 
 1. Dans Cloud App Security, sous l’icône de roue dentée des paramètres, sélectionnez la page **Paramètres généraux**.
 2. Sous Azure Information Protection, sélectionnez **Détecter automatiquement les étiquettes de classification Azure Information Protection dans les fichiers**. 
@@ -77,7 +77,7 @@ Pour les ignorer l’ensemble des étiquettes de classification externes à votr
 
 ![tiroir du fichier](./media/azip-file-drawer.png)
 
-- Vous pouvez cliquer sur l’étiquette de classification pour afficher plus d’informations ou pour voir la liste complète des étiquettes de classification :
+- Vous pouvez cliquer sur l’étiquette de classification pour afficher plus d’informations ou pour voir la liste complète des étiquettes de classification :
  
 ![liste de balises](./media/azip-tags-list.png)
 
@@ -86,7 +86,8 @@ Pour les ignorer l’ensemble des étiquettes de classification externes à votr
 
 ![balises azure information protection dans cloud app security](./media/azip-tags-in-cas.png)
 
-**Stratégie n°1 - données confidentielles partagées en externe sur Box :**
+> ! [Remarque] Quand les étiquettes Azure Identity Protection sont désactivées sur un fichier, elles apparaissent désactivées dans Cloud App Security. Les étiquettes supprimées ne sont pas affichées.
+> **Stratégie n°1 - données confidentielles partagées en externe sur Box :**
 
 1.    Créez une stratégie de fichier.
 2.    Définissez le nom, la gravité et la catégorie de la stratégie.

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/12/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9797791f11e1329167252f713ecc0698572d2134
-ms.sourcegitcommit: b840b945b270e616560f565bcc6590dd68ad5ebd
+ms.openlocfilehash: 5db9f82b948f2db192b7c5ba47fb911413397271
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
 translationtype: HT
 ---
 # <a name="governing-connected-apps"></a>Gouvernance des applications connectées
@@ -103,10 +103,10 @@ Pour plus d’informations sur la façon dont les actions de gouvernance sont tr
 **Emplacement**|**Type d’objet cible**|**Action de gouvernance**|**Description**|**Connecteurs associés** 
 ---------|---------|---------|---------|---------
 |Comptes|File|Supprimer les collaborations de l’utilisateur|Supprime toutes les collaborations d’un utilisateur spécifique pour tous les fichiers - utile lorsque des personnes quittent l’entreprise.|Box, G Suite|
-|Comptes|Compte|Réhabiliter l’utilisateur|Réhabilite l’utilisateur|G Suite, Box, Office|
+|Comptes|Compte|Réhabiliter l’utilisateur|Réhabilite l’utilisateur|G Suite, Box, Office, Salesforce|
 |Comptes|Compte|Paramètres de compte|Vous permet d’accéder à la page de paramètres de compte dans une application donnée (par exemple, dans Salesforce).|Toutes les applications. Les paramètres de One Drive et SharePoint sont configurés dans Office.|
 |Comptes |File|Transférer la possession de tous les fichiers|Dans un compte, vous transférez les fichiers d’un utilisateur vers un nouveau propriétaire que vous sélectionnez. L’ancien propriétaire devient un éditeur. Une fois que vous transférez la propriété, admin@gtest1.adallom.com devient un éditeur et n’est plus en mesure de modifier les paramètres de partage. Le nouveau propriétaire reçoit une notification du transfert de possession par e-mail.|G Suite|
-|Comptes, Stratégie d’activité|Compte|Suspendre l’utilisateur|Définit que l’utilisateur n’a aucun accès ni aucune possibilité de se connecter. S’il est connecté lorsque vous activez cette option, il est immédiatement verrouillé.|G Suite, Box, Office|
+|Comptes, Stratégie d’activité|Compte|Suspendre l’utilisateur|Définit que l’utilisateur n’a aucun accès ni aucune possibilité de se connecter. S’il est connecté lorsque vous activez cette option, il est immédiatement verrouillé.|G Suite, Box, Office, Salesforce|
 |Stratégie d’activité, Comptes|Compte|Révoquer le mot de passe|Révoque le mot de passe pour un compte d’utilisateur. Par exemple, avec la définition d’une stratégie de l’activité qui révoque un mot de passe après 10 échecs de tentative de connexion.|G Suite|
 |Stratégie d’activité, Comptes|Compte|Révoquer les privilèges administratifs|Révoque les privilèges administratifs pour un compte administrateur. Par exemple, avec la définition d’une stratégie de l’activité qui révoque les privilèges administratifs après 10 échecs de tentative de connexion.|G Suite|
 |Tableau de bord de l’application > Autorisations d’applications|Autorisations|Un-ban app (Annuler l’exclusion de l’application)|Dans Google et Salesforce : suppriment l’exclusion de l’application et permettent aux utilisateurs d’accorder des autorisations à l’application tierce avec Google et Salesforce. Dans Office 365 : restaure les autorisations d’accès de l’application tierce à Office.|G Suite, Salesforce, Office|
@@ -140,6 +140,7 @@ Pour plus d’informations sur la façon dont les actions de gouvernance sont tr
 |Paramètres> Paramètres de Cloud Discovery > Gérer les vues de données|Cloud Discovery|Créer une vue de données de filtre Cloud Discovery|Crée une nouvelle vue de données pour une vue plus détaillée des résultats de découverte. Par exemple, des plages d’adresses IP spécifiques.|Découverte|
 |Paramètres> Paramètres de Cloud Discovery > Supprimer les données|Cloud Discovery|Supprimer les données Cloud Discovery|Supprime toutes les données collectées à partir de sources de découverte.|Découverte|
 |Paramètres> Paramètres de Cloud Discovery > Charger les journaux manuellement/Charger les journaux automatiquement|Cloud Discovery|Analyser les données Cloud Discovery|Notification que toutes les données de journal ont été analysées.|Découverte|
+
 
 
 ## <a name="see-also"></a>Voir aussi  

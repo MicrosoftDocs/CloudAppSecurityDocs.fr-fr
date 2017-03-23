@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/12/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 81330b5333050bea2352f0907ac5c83d71af14bf
-ms.sourcegitcommit: b840b945b270e616560f565bcc6590dd68ad5ebd
+ms.openlocfilehash: 1a44be5715d0a9af18afcafaeec3c6180d4e9283
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
 translationtype: HT
 ---
 # <a name="files"></a>Fichiers
@@ -111,10 +111,10 @@ Vous pouvez également définir la stratégie pour qu’elle s’exécute sur de
   
 ## <a name="working-with-the-file-drawer"></a>Utilisation du tiroir de fichier
 
-Vous pouvez afficher des informations supplémentaires sur chaque fichier en cliquant sur le fichier lui-même dans le journal du fichier. Cette opération ouvre le tiroir de fichier qui contient les actions supplémentaires suivantes que vous pouvez réaliser sur le fichier :
+Vous pouvez afficher plus d’informations sur chaque fichier en cliquant sur le fichier lui-même dans le journal des fichiers. Cette opération ouvre le tiroir de fichier qui contient les actions supplémentaires suivantes que vous pouvez réaliser sur le fichier :
 
 - URL : Pointe vers l’emplacement du fichier.
-- Identificateurs de fichier : Cliquez sur les identificateurs de fichier pour ouvrir une fenêtre contextuelle avec des détails en données brutes sur le fichier, notamment l’ID du fichier et les clés de chiffrement.
+- Identificateurs de fichier : Cliquez sur les identificateurs de fichier pour ouvrir une fenêtre contextuelle avec des détails en données brutes sur le fichier, notamment l’ID du fichier et les clés de chiffrement.
 - Propriétaire : Cliquez sur le propriétaire pour afficher la page de l’utilisateur pour le propriétaire de ce fichier.
 - Stratégies correspondantes : Cliquez sur le lien Stratégies correspondantes pour afficher la liste des stratégies correspondant à ce fichier.
 - Étiquette de classification : cliquez sur l’étiquette de Classification pour afficher la liste des étiquettes de classification Azure Information Protection trouvées dans ce fichier. Vous pouvez ensuite appliquer un filtre selon tous les fichiers correspondant à cette étiquette.    
