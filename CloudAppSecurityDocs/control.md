@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 3/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,12 +13,37 @@ ms.technology:
 ms.assetid: bc11bbfe-ec6c-458c-8302-8112c383199d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f72c13059ebcb320bed24430b06061b1cbb884cd
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+ms.openlocfilehash: b22b51e5d41f525240c0430c31760177bf62ca1f
+ms.sourcegitcommit: cda4a69f9ad9c6eb66fbdb98610f54d79585b84b
 translationtype: HT
 ---
 # <a name="control"></a>Control
 Vous pouvez appliquer des actions de gouvernance aux fichiers des utilisateurs dans tout votre environnement cloud. Après avoir soigneusement examiné et étudié votre cloud, vous pouvez utiliser des actions de gouvernance pour protéger votre organisation.  
+
+## <a name="use-policies-to-assess-risk"></a>Utiliser des stratégies pour évaluer les risques  
+Quand vous examinez vos alertes ouvertes, accédez au Centre de stratégie pour passer en revue les violations de stratégie qui n’ont pas déclenché d’alertes.  
+
+-   Dans le tableau de bord Cloud App Security, cliquez sur **Contrôle**, puis sur **Stratégies**.  
+
+-   Sélectionnez une stratégie spécifique pour afficher la liste **Violation maintenant** des correspondances de stratégie qui n’ont pas déclenché d’alertes.  
+
+-   Cliquez sur les violations une à une, puis décidez ce qu’il faut faire pour chacune d’elles. Pour plus d’informations sur les actions de gouvernance, consultez les figures suivantes.  
+
+     Si votre stratégie est définie pour rechercher des violations de conformité et qu’une personne enregistre des numéros de carte de crédit dans des fichiers sur OneDrive, vous obtenez une correspondance dans la stratégie.  
+
+     ![Correspondances PCI](./media/pci-matches.png "correspondances pci")  
+
+-   Sélectionnez la correspondance pour afficher les fichiers qui ont enfreint la stratégie.  
+
+     ![Correspondances de contenu PCI](./media/pci-content-matches.png "correspondances de contenu pci")  
+
+     Vous pouvez sélectionner le fichier lui-même pour obtenir des informations sur les fichiers.  
+
+     Vous pouvez cliquer sur **Collaborateurs** pour voir qui a accès à ce fichier.  
+
+     Vous pouvez cliquer sur **Correspondances** pour voir les numéros de carte de crédit.  
+
+     ![Correspondances de contenu CCN](./media/content-matches-ccn.png "correspondances de contenu ccn")  
 
 ## <a name="apply-governance-actions"></a>Appliquer des actions de gouvernance  
 Vous pouvez appliquer des actions de gouvernance depuis des stratégies, depuis des alertes et depuis le journal **Fichier**.  
