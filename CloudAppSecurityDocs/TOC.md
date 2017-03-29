@@ -35,7 +35,7 @@
 ##### [Stratégie de détection des anomalies Cloud Discovery](cloud-discovery-anomaly-detection-policy.md)
 #### [Stratégies d’activité](user-activity-policies.md)
 #### [Stratégie de détection des anomalies](anomaly-detection-policy.md)
-##### [Stratégies de fichier](data-protection-policies.md)
+#### [Stratégies de fichier](data-protection-policies.md)
 ##### [Inspection du contenu](content-inspection.md)
 ##### [Utilisation du moteur RegEx](working-with-the-regex-engine.md)
 #### [Informations de référence sur les modèles de stratégie](policy-template-reference.md)
