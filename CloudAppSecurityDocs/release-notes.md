@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/20/2017
+ms.date: 3/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e72aa915989592fda28f489d2dab0ddbe988dc31
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+ms.openlocfilehash: 2d9095a39f5000e88bd0ad94ba0ca9f4a780f58e
+ms.sourcegitcommit: cda4a69f9ad9c6eb66fbdb98610f54d79585b84b
 translationtype: HT
 ---
 # <a name="release-notes"></a>Notes de publication
@@ -23,6 +23,7 @@ translationtype: HT
 Publication : 20 mars 2017
 
 **Nouvelles fonctionnalités :**
+-   Vous pouvez maintenant appliquer des stratégies pour inclure ou exclure des groupes d’utilisateurs importés. 
 -    L’anonymisation de Cloud App Security vous permet désormais de configurer une clé de chiffrement personnalisée. Pour plus d’informations, consultez [Anonymisation de Cloud Discovery](cloud-discovery-anonymizer.md).
 -    Pour un contrôle plus étendu sur l’administration des utilisateurs et des comptes, vous disposez maintenant d’un accès direct aux paramètres des comptes Azure AD pour chaque utilisateur et chaque compte depuis la page **Compte** en cliquant sur la roue dentée à côté de chaque utilisateur. Vous pouvez ainsi accéder plus facilement à l’administration avancée des utilisateurs, à l’administration des groupes de fonctionnalités, à la configuration de l’authentification multifacteur, aux informations détaillées sur les connexions de l’utilisateur et à la possibilité de bloquer les connexions. 
 -    À partir de maintenant, vous pouvez exporter un script de blocage pour les applications non autorisées via l’API Cloud App Security. Pour plus d’informations sur nos API dans le portail Cloud App Security, cliquez sur le point d’interrogation dans la barre de menus et sur **Documentation des API**.
@@ -32,7 +33,7 @@ Publication : 20 mars 2017
 -    Pour les événements d’emprunt d’identité Exchange Online, vous pouvez maintenant filtrer par niveau d’autorisation utilisé : délégué, administrateur ou administrateur délégué. Vous pouvez rechercher des événements affichant le niveau d’emprunt d’identité qui vous intéresse dans le **Journal d’activité** en recherchant des **Objets d’activité** > **Élément**.
 -    Dans le tiroir des applications sous l’onglet Autorisations des applications, vous pouvez désormais voir **l’Éditeur** de chaque application. Vous pouvez également utiliser l’éditeur comme filtre pour rechercher les autres applications du même éditeur.
 -    Les adresses IP à risques apparaissent maintenant comme facteur de risque indépendant et non plus pondéré, sous le facteur de risque général **Emplacement**. 
--    Quand les étiquettes Azure Identity Protection sont désactivées sur un fichier, elles apparaissent désactivées dans Cloud App Security. Les étiquettes supprimées ne sont pas affichées.
+-    Quand les étiquettes Azure Information Protection sont désactivées sur un fichier, elles apparaissent désactivées dans Cloud App Security. Les étiquettes supprimées ne sont pas affichées.
  
 **Prise en charge supplémentaire de Salesforce :**
 -    Maintenant, vous pouvez suspendre et rétablir des utilisateurs Salesforce dans Cloud App Security. Vous pouvez effectuer ces opérations dans l’onglet **Comptes** du connecteur Salesforce en cliquant sur la roue dentée à la fin de la ligne d’un utilisateur spécifique, et en sélectionnant **Suspendre** ou **Rétablir**. Vous pouvez également l’appliquer comme action de gouvernance dans le cadre d’une stratégie. Toutes les activités Suspendre et Rétablir effectuées dans Cloud App Security sont consignées dans le [journal de gouvernance](governance-actions.md). 
