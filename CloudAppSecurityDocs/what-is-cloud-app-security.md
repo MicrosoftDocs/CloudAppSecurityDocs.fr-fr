@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 4/2/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4fc7ea83542a8fee5deb55b17337f3f9ccd3f3d0
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+ms.openlocfilehash: fceebaacf3cc2fc1df894f6d1078675ccf630264
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
 translationtype: HT
 ---
 # <a name="what-is-cloud-app-security"></a>Qu’est-ce que Cloud App Security ?
@@ -50,8 +50,8 @@ Cloud App Security intègre une visibilité à votre cloud :
 Cloud App Security est officiellement certifié avec la conformité Microsoft pour ISO, HIPAA, CSA STAR, les clauses contractuelles types de l'Union européenne et plus encore. Pour afficher la liste complète des certifications, accédez à la page des [produits de conformité Microsoft] (https://go.microsoft.com/fwlink/?linkid=842039) et sélectionnez Cloud App Security.  
 
 Quand Cloud App Security exécute une inspection du contenu, la confidentialité des données est respectée. Le contenu du fichier n’est pas stocké dans la base de données Cloud App Security. Seules les métadonnées des enregistrements de fichiers et les violations qui ont été identifiées sont stockées dans la base de données Cloud App Security. Pour plus d’informations sur la rétention des données, consultez notre [politique de confidentialité](http://go.microsoft.com/fwlink/?LinkId=512132) et le [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/You-are-in-control-of-your-data).
-Cloud App Security conserve les données comme suit : 
- 
+Cloud App Security conserve les données comme suit :
+
 - Journal d’activité : 180 jours 
 - Données de découverte : 90 jours 
 - Alertes : 180 jours 
