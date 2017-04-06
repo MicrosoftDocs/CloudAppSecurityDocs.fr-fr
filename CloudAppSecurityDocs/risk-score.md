@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/26/2017
+ms.date: 4/2/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,38 @@ ms.technology:
 ms.assetid: 9cb3594e-5007-48be-9b4f-e1d23355d86e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d617631819744211df5e6bee1f48df36dcedb7ce
-ms.sourcegitcommit: cda4a69f9ad9c6eb66fbdb98610f54d79585b84b
+ms.openlocfilehash: 2fcc085cc53d2d7580640022029b1a528bea416a
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
 translationtype: HT
 ---
 # <a name="working-with-the-risk-score"></a>Utilisation du score de risque  
+
+## <a name="the-cloud-app-catalog"></a>Catalogue d’applications cloud
+
+Pour mieux comprendre les applications cloud pouvant être découvertes par la fonction Cloud Discovery de Cloud App Security, utilisez le catalogue d’applications cloud.
+
+Ce catalogue répertorie plus de 14 000 applications SaaS qui peuvent être affichées (filtrées) par nom, domaine, indice de risque, catégorie ou fonctionnalités de sécurité disponibles.
+
+![accéder au catalogue d’applications cloud](./media/risk-cac-dropdown.png)
+
+## <a name="discovery-requests"></a>Requêtes de découverte
+
+Les informations et les indices de risque du catalogue d’applications cloud s’appuient sur de nombreuses sources. Microsoft s’efforce de maintenir à jour ces informations, mais n’offre aucune garantie quant à l’exactitude de toutes les sources de données. 
+
+Veuillez nous contacter si vous pensez que les informations relatives à une application sont obsolètes.
+
+-    Demandez une mise à jour des indices (si vous souhaitez que notre équipe réévalue une application cloud).
+-    Signalez de nouvelles données générales ou spécifiques (si vous pensez que les informations relatives à une application sont obsolètes).
+
+![mettre à jour des données de risque](./media/risk-cac-feedback.png)
+
+En outre, nous vous encourageons à demander l’ajout de toutes les applications cloud que votre organisation utilise et qui ne sont actuellement pas détectables par la fonction Cloud Discovery.
+
+![suggérer de nouvelles applications](./media/risk-suggest-app.png)
+
+
+## <a name="customizing-the-risk-score"></a>Personnalisation de l’indice de risque
+
 Cloud Discovery vous fournit des données importantes sur la crédibilité et la fiabilité des applications cloud qui sont utilisées au sein de l’environnement. Dans le portail, chaque application découverte est présentée avec un score total, qui représente l’évaluation par Cloud App Security du niveau de maturité de l’utilisation par les entreprises de cette application particulière. Le score total d’une application donnée est une moyenne pondérée de trois sous-scores liés à trois sous-catégories que Cloud App Security prend en compte pour évaluer la fiabilité :  
   
 -   **Général** : Cette catégorie fait référence à des informations basiques sur la société qui produit l’application, notamment son domaine, l’année de sa fondation et sa popularité. Ces champs ont vocation à illustrer la stabilité de la société au niveau le plus simple.  
@@ -32,74 +59,20 @@ Prenez le temps de passer en revue et modifier les pondérations par défaut don
   
 1.  Dans le portail, sous l’icône Paramètres, sélectionnez **Paramètres Cloud Discovery**.  
   
-2.  Sous **Configuration de la métrique du score**, faites glisser le curseur **Importance** pour choisir la pondération du champ parmi les options **Ignoré**, **Bas**, **Moyen**, **Élevé** ou **Très élevé**.  
+2.  Sous **Configurer la métrique du score**, faites glisser le curseur **Importance** pour modifier la pondération du champ ou la catégorie de risque. Vous avez le choix entre les options **Ignoré**, **Bas**, **Moyen**, **Élevé** ou **Très élevé**.  
   
 3.  De plus, vous pouvez déterminer si certaines valeurs sont soit non disponibles, soit non applicables dans le calcul du score. Quand elles sont incluses, les valeurs N/A contribuent négativement au score calculé.  
   
      ![score](./media/score.png "score")  
-  
-## <a name="manage-continuous-reports"></a>Gérer les rapports continus  
-Les rapports continus personnalisés vous apportent une plus grande granularité lors de la surveillance des données de journaux Cloud Discovery de votre organisation. En créant des rapports personnalisés, vous pouvez filtrer sur des emplacements géographiques, des réseaux et sites ou des unités d’organisation spécifiques. Par défaut, seuls les rapports suivants apparaissent dans votre sélecteur de rapports Cloud Discovery :  
-  
--  Le **rapport global** regroupe toutes les informations du portail provenant de toutes les sources de données que vous avez incluses dans vos journaux.  
-  
-- Le **rapport spécifique à la source de données** affiche uniquement les informations d’une source de données spécifique.  
-  
-Pour créer un rapport continu :  
-  
-1.  Dans le portail, sous l’icône Paramètres, sélectionnez **Paramètres Cloud Discovery**.  
-  
-2.  Cliquez sur l’onglet **Gérer un rapport continu**.  
-  
-3.  Cliquez sur le bouton **Créer un rapport**.  
-  
-4.  Entrez un nom de rapport.  
-  
-5.  Sélectionnez les sources de données à inclure (toutes ou certaines).  
-  
-6.  Définissez les filtres voulus sur les données, qui peuvent être **Unités d’organisation**, **Balises d’adresse IP** ou **Plages d’adresses IP**. Pour plus d’informations sur l’utilisation de balises d’adresse IP et de plages d’adresses IP, voir [Organiser les données selon vos besoins](general-setup.md#IPtagsandRanges).  
-  
-    ![créer un rapport continu personnalisé](./media/create-custom-continuous-report.png) 
-  
-## <a name="exclude-entities"></a>Exclure des entités  
-Si certains utilisateurs ou certaines adresses IP sont particulièrement bruyants et inintéressants ou si des applications ne sont pas pertinentes, vous pouvez exclure leurs données des données Cloud Discovery qui sont analysées. Par exemple, vous pouvez exclure toutes les informations provenant de 127.0.0.1 ou de l’hôte local.  
-  
-Pour créer une exclusion :  
-  
-1.  Dans le portail, sous l’icône Paramètres, sélectionnez **Paramètres Cloud Discovery**.  
-  
-2.  Cliquez sur l’onglet **Exclure des entités**.  
-  
-3.  Choisissez l’onglet **Utilisateurs exclus** ou **Adresses IP exclues**, puis cliquez sur le bouton **Ajouter un utilisateur** ou **Ajouter une adresse IP**.  
-  
-4.  Ajoutez une adresse IP ou un alias utilisateur. Nous vous recommandons d’ajouter des informations sur les raisons de l’exclusion de l’utilisateur ou de l’adresse IP.  
-  
-     ![exclure l’utilisateur](./media/exclude-user.png "exclure l’utilisateur")  
-  
-## <a name="deleting-cloud-discovery-data"></a>Suppression de données Cloud Discovery  
-Plusieurs raisons peuvent vous amener à supprimer vos données Cloud Discovery. Nous vous recommandons de les supprimer dans les cas suivants :  
-  
--   Vous avez chargé manuellement les fichiers journaux, vous avez attendu longtemps avant de mettre à jour le système avec de nouveaux fichiers journaux et vous ne voulez pas que les anciennes données affectent vos résultats.  
-  
--   Vous définissez une nouvelle vue de données personnalisée qui s’applique uniquement aux nouvelles données à compter de moment-là, alors vous pouvez effacer les anciennes données, puis charger à nouveau vos fichiers journaux pour permettre à la vue de données personnalisée de sélectionner des événements dans les données de fichiers journaux.  
-  
--   De nombreux utilisateurs ou adresses IP sont à nouveau actifs après une longue période hors connexion. Leur activité est identifiée comme étant anormale et vous risquez d’obtenir de nombreuses violations qui sont en fait des faux positifs.  
-  
-Pour supprimer des données Cloud Discovery :  
-  
-1.  Dans le portail, sous l’icône Paramètres, sélectionnez **Paramètres Cloud Discovery**.  
-  
-2.  Cliquez sur l’onglet **Supprimer les données**.  
-  
-     Il est important d’être sûr de vouloir supprimer les données avant de poursuivre : cette opération ne peut pas être annulée et **toutes** les données Cloud Discovery dans le système sont alors supprimées.  
-  
-3.  Cliquez sur le bouton **Supprimer**.  
-  
-     ![supprimer des données](./media/delete-data.png "supprimer des données")  
-  
-    > [!NOTE]  
-    >  Le processus de suppression peut prendre quelques minutes et il n’est pas immédiat.  
 
+Toutes les informations nécessaires pour comprendre le fonctionnement de nos indices de risque et leur empilement sont disponibles dans le portail Cloud App Security.
+Pour mieux comprendre le poids d’un facteur de risque dans une catégorie donnée, utilisez le bouton « i » à droite d’un nom de champ dans le profil de l’application. Il fournit des informations sur la façon dont Cloud App Security note précisément un facteur de risque. Ce score correspond à la valeur du facteur de risque sur une échelle de 1 à 10 et à son poids dans la catégorie de risque :
+
+![calcul du risque](./media/cac-weight.png)
+  
+Pour comprendre le poids d’une catégorie de risque dans le score total d’une application, déplacez le curseur sur le score de catégorie de risque :
+
+![poids de la catégorie de risque](./media/risk-category-weight.png)
 
 
  

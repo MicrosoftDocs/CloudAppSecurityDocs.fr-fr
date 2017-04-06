@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 3/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 2401adbc-0011-4938-9e3a-a4c719a2f619
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a1ff57c60d8b35711330e8e4879fe1a48a7dee77
-ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+ms.openlocfilehash: f6ed28c8edd3f2897de8bad368db1da78527aea1
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
 translationtype: HT
 ---
 # <a name="content-inspection"></a>Inspection du contenu
@@ -42,7 +42,7 @@ Les stratégies d’analyse d’inspection du contenu intégrées peuvent recher
 
 - Adresses e-mail 
 - Numéros de carte de crédit 
-  - Toutes les sociétés émettrices de cartes de crédit (Visa, MasterCard, American Express, Diners Club, Discover, JCB, Dankort, UnionPay) 
+  -    Toutes les sociétés émettrices de cartes de crédit (Visa, MasterCard, American Express, Diners Club, Discover, JCB, Dankort, UnionPay) 
   - Délimiteurs (espace, point ou tiret)
   - Cette analyse inclut également la validation de Luhn
 - Codes SWIFT
@@ -59,6 +59,15 @@ Les stratégies d’analyse d’inspection du contenu intégrées peuvent recher
 - Adresses personnelles
 - Passeports au format carte
 - Numéros de sécurité sociale
+
+## <a name="supported-languages"></a>Langues prises en charge
+
+Le moteur d’inspection du contenu Cloud App Security :
+-    Prend en charge tous les caractères Unicode
+-    Couvre plus de 1 000 types de fichiers
+-    Plusieurs langues sont prises en charge, tout particulièrement dans les fichiers qui utilisent des jeux de caractères Unicode. Veillez à définir vos stratégies pour prendre en charge ces langues. Par exemple, si vous recherchez des mots clés, vous devez les saisir dans les langues que vous prévoyez d’utiliser.
+-    Dans les types de fichiers texte qui utilisent du codage non-Unicode, par exemple le codage chinois GB2312, la comparaison avec les mots clés chinois Unicode ne fonctionnera pas comme prévu.
+-    Pour les types de fichiers qui s’appuient sur des bibliothèques tierces, la mise en correspondance des chaînes et des mots ne fonctionnera peut-être pas toujours comme prévu. C’est ce qui arrive fréquemment avec les fichiers (par exemple, les fichiers binaires) dans lesquels l’inspection du contenu s’appuie sur des bibliothèques tierces qui renvoient des chaînes en Java pour les jeux de caractères et de langues.
 
 
 

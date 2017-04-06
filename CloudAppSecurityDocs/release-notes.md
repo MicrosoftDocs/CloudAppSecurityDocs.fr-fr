@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/21/2017
+ms.date: 4/2/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,25 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2d9095a39f5000e88bd0ad94ba0ca9f4a780f58e
-ms.sourcegitcommit: cda4a69f9ad9c6eb66fbdb98610f54d79585b84b
+ms.openlocfilehash: 9de7c7770e567ffc79c6af98582d46d86115babe
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
 translationtype: HT
 ---
 # <a name="release-notes"></a>Notes de publication
+
+## <a name="cloud-app-security-release-94"></a>Cloud App Security version 94
+Publication : 2 avril 2017
+
+**Nouvelles fonctionnalités :**
+-    Cloud App Security est maintenant intégré à Azure RMS. Vous pouvez protéger vos fichiers dans Office 365 OneDrive et Sharepoint Online avec Microsoft Rights Management, directement à partir du portail Cloud App Security. Pour y parvenir, accédez à la page **Fichiers**. Pour plus d’informations, voir [Intégration à Azure Information Protection](azip-integration.md). La prise en charge d’applications supplémentaires sera proposée dans les prochaines versions.
+-    Jusqu’à présent, lorsqu’un robot ou un robot d’indexation intervenait sur votre réseau, il était tout particulièrement difficile à identifier. En effet, ces activités ne sont pas effectuées par un utilisateur. Ces robots peuvent exécuter des outils malveillants à votre insu sur les ordinateurs. Mais c’est sans compter Cloud App Security qui vous offre les outils nécessaires pour visualiser l’intervention de ces robots sur votre réseau. Vous pouvez utiliser la nouvelle balise de l’agent utilisateur pour filtrer les activités dans le journal d’activité. La balise de l’agent utilisateur vous permet de filtrer toutes les activités effectuées par les robots. Vous pouvez l’utiliser pour créer une stratégie qui vous alerte à chaque fois que ce type d’activité est détecté. Vous serez informé quand les prochaines versions intégreront cette activité à risque par le biais des alertes de détection d’anomalies. 
+-    La nouvelle page unifiée des autorisations d’applications vous permet de rechercher plus facilement les autorisations que vos utilisateurs ont accordées à des applications tierces. En cliquant sur **Examiner** > **Autorisations d’applications**, vous pouvez désormais afficher une liste de toutes les autorisations que vos utilisateurs ont accordées à des applications tierces. Vous obtenez une page d’autorisations par application connectée ce qui vous aide à mieux comparer les différentes applications et les autorisations accordées.  Pour plus d’informations, voir [Gérer les autorisations d’applications](manage-app-permissions.md).
+-    Pour faciliter les recherches, vous pouvez filtrer les données directement depuis le tiroir de table.
+Dans **Journal d’activité**, les pages **Fichiers** et **Autorisations d’applications** sont maintenant étoffées avec de nouvelles actions contextuelles qui facilitent le processus de recherche. Nous avons également ajouté des liens rapides vers les pages de configuration et nous permettons de copier les données d’un seul clic. Pour plus d’informations, voir [Utilisation des tiroirs de fichier et d’activité](file-filters.md).
+-    La prise en charge pour Microsoft Teams des journaux d’activité Office 365 et du déploiement des alertes est à présent terminée.
+ 
+
+
 
 ## <a name="cloud-app-security-release-93"></a>Cloud App Security version 93
 Publication : 20 mars 2017

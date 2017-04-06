@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 4/2/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5db9f82b948f2db192b7c5ba47fb911413397271
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+ms.openlocfilehash: 306cee70e89e232367f8f9312cde2a7db91879bf
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
 translationtype: HT
 ---
 # <a name="governing-connected-apps"></a>Gouvernance des applications connectées
@@ -127,6 +127,7 @@ Pour plus d’informations sur la façon dont les actions de gouvernance sont tr
 |Fichiers|File|Restaurer des fichiers mis en quarantaine utilisateur|Restaure un utilisateur mis en quarantaine.|Box|
 |Fichiers|File|M’auto-attribuer des permissions de lecture|Vous accorde des permissions de lecture pour le fichier afin de vous permettre d’y accéder et de déterminer s’il y a eu violation ou non.|G Suite|
 |Fichiers|File|Autoriser les éditeurs à partager|Dans Google Drive, les autorisations de l’éditeur par défaut d’un fichier permettent également le partage. Cette action de gouvernance est l’opposé de Supprimer la capacité des éditeurs à partager et permet à l’éditeur de partager le fichier.|G Suite|
+|Fichiers|File|Protéger|Protégez un fichier avec Microsoft Rights Management en appliquant un modèle d’organisation.|Office 365|
 |Fichiers|File|Révoquer les permissions de lecture pour moi-même|Révoque les permissions de lecture pour le fichier pour vous-même. Cette option est utile lorsque vous vous êtes attribué des permissions pour examiner si un fichier comprend une violation ou non.|G Suite|
 |Fichiers, Stratégie de fichier|File|Transférer la possession de fichier|Modifie le propriétaire (vous choisissez un propriétaire spécifique dans la stratégie).|G Suite|
 |Fichiers, Stratégie de fichier|File|Supprimer un collaborateur|Supprime un collaborateur donné d’un fichier.|G Suite, Box, One Drive, SharePoint|

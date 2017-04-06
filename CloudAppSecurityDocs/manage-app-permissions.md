@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 4/2/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 137e0630-5440-4c49-bfe4-48bbc64575e2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5205f05b470ed61d09a70e5be066e02f4f02a9cf
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+ms.openlocfilehash: 4e4641af039ba2ad7b0f36b0322277081170be01
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
 translationtype: HT
 ---
 # <a name="manage-app-permissions"></a>Gérer les autorisations d’applications
@@ -27,11 +27,7 @@ L’onglet **Autorisations d’applications** affiche des informations sur les a
 
 Pour accéder à l’onglet Autorisations d’applications :
 
-1. Dans le portail Cloud App Security, cliquez sur **Examiner**, puis sous **Applications connectées**, sélectionnez **Office 365**. 
-> [!Note]
-> Vous devez commencer par connecter Cloud App Security à Office 365 avant de pouvoir travailler avec les autorisations d’applications.
-
-2. Ensuite, dans le tableau de bord Office 365, cliquez sur l’onglet **Autorisations d’applications**.
+Dans le portail Cloud App Security, cliquez sur **Examiner**, puis sur **Autorisations d’applications**.
 
 
  ![autorisations d’applications](./media/app-permissions.png)

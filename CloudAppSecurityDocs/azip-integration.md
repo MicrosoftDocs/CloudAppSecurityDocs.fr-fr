@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 4/2/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 81ee0b71e6e66d102edf41269197d955b16fbeb4
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+ms.openlocfilehash: b78a120c64af1887e5768082e5c81776b509f5a6
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
 translationtype: HT
 ---
 # <a name="azure-information-protection-integration"></a>Intégration d’Azure Information Protection
@@ -107,6 +107,32 @@ Vous pouvez également définir des alertes ou une notification utilisateur ou e
 En savoir plus sur les [actions de gouvernance](governance-actions.md).
 
 En savoir plus sur [Azure Information Protection](https://docs.microsoft.com/en-us/information-protection/understand-explore/what-is-information-protection) et suivre le [didacticiel de démarrage rapide](https://docs.microsoft.com/en-us/information-protection/get-started/infoprotect-quick-start-tutorial) pour Azure Information Protection.
+
+
+## <a name="integration-with-azure-rights-management"></a>Intégration à Azure Rights Management
+
+Votre organisation doit posséder une licence Azure Rights Management et l’avoir activée pour faciliter l’intégration entre Cloud App Security et Azure RMS.  Vous trouverez ces deux étapes distinctes dans [Activation d’Azure Rights Management](https://docs.microsoft.com/information-protection/deploy-use/activate-service).
+
+Actuellement, Cloud App Security prend uniquement en charge le niveau de protection générique. La protection native pour les fichiers Office, PDF et image sera disponible dans les prochaines versions. 
+
+Cette fonctionnalité est actuellement disponible pour les fichiers stockés dans SharePoint Online et OneDrive Entreprise. D’autres applications cloud seront prises en charge dans les prochaines versions.
+
+Une fois Cloud App Security connecté à votre service Office 365, vous êtes en mesure d’utiliser les fonctionnalités d’intégration RMS de Cloud App Security. Ces dernières vous permettent de protéger vos documents avec RMS, directement dans le portail Cloud App Security, et ce, de la manière suivante :
+
+1. À partir de la page **ichiers**, sélectionnez le fichier que vous souhaitez protéger, cliquez sur les trois points à la fin de la ligne du fichier, puis choisissez **Protéger**. 
+![protéger l’application](./media/protect-app.png)
+2. Vous êtes invité à choisir l’un des modèles de votre organisation pour protéger le fichier. Cliquez ensuite sur **Protéger**. 
+![modèle de protection](./media/protect-template.png)
+3. Une fois que vous avez choisi un modèle et cliqué sur Protéger, Cloud App Security applique le modèle et protège le fichier d’origine. Le fichier protégé a le même nom que le fichier d’origine, à ceci près que son extension est « .pfile ».
+> [!NOTE]
+>     Nous vous recommandons d’appliquer aux fichiers les modèles RMS couvrant toute l’entreprise. De la sorte, tous les utilisateurs de l’organisation pourront accéder à ces fichiers, y compris le propriétaire d’origine du fichier. À partir du moment où le fichier est protégé, le propriétaire du fichier, la stratégie de partage du fichier et la liste des utilisateurs qui y ont déjà accès restent inchangés.
+
+4. Si les utilisateurs souhaitent accéder au fichier protégé, leur appareil doit être équipé de l’application de partage RMS. Pour plus d’informations, voir l’article [Présentation technique de l’application de partage Microsoft Rights Management et détails sur la protection](https://docs.microsoft.com/information-protection/rms-client/sharing-app-admin-guide-technical).
+
+5. Vous pouvez annuler cette action à tout moment dans le **journal de gouvernance**. Pour cela, cliquez sur le bouton **Rétablir** à la fin de la ligne de l’action Protéger précédemment entreprise. 
+
+
+
 
  
 ## <a name="see-also"></a>Voir aussi  
