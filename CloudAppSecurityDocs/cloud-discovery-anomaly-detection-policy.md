@@ -1,11 +1,11 @@
 ---
-title: "Stratégie de détection des anomalies Cloud Discovery | Microsoft Docs"
+title: "Créer une stratégie de détection des anomalies Cloud Discovery | Microsoft Docs"
 description: "Cette rubrique fournit des informations sur l’utilisation des stratégies de détection des anomalies Cloud Discovery."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/21/2016
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: eaf73af0-7610-4903-b656-8d90b1d2b18c
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 3c78f9b9eca0c88256951ba5e58b656b6d5b14ab
-ms.openlocfilehash: 1bbf3b0b6c36cb7b29826efc598a66a41a53b3e2
-
-
+ms.openlocfilehash: ddc5f406aaa9d18e605c796cc8dba6c3927c6d2b
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+translationtype: HT
 ---
-
 # <a name="cloud-discovery-anomaly-detection-policy"></a>Stratégie de détection des anomalies de Cloud Discovery
 Cet article fournit des informations de référence sur les stratégies, donne une explication de chaque type de stratégie et décrit les champs que vous pouvez configurer pour chacune d’elle.  
   
@@ -30,7 +27,7 @@ Pour chaque stratégie, vous pouvez définir des filtres qui vous permettent de 
 
 Pour chaque stratégie, définissez les paramètres suivants :
 
-1. Décidez si vous voulez baser la stratégie sur un modèle. Le modèles de stratégie approprié est le modèle **Comportement anormal dans les utilisateurs découverts**, qui alerte quand un comportement anormal est détecté dans des utilisateurs et des applications découverts, comme de grandes quantités de données chargées par rapport à d’autres utilisateurs ou des transactions utilisateur importantes par rapport à l’historique de l’utilisateur. Vous pouvez également sélectionner le modèle **Comportement anormal des adresses IP découvertes**, qui alerte quand un comportement anormal est détecté dans les adresses IP et les applications détectées, comme de grandes quantités de données chargées par rapport à d’autres adresses IP ou des transactions d’application importantes par rapport à l’historique de l’adresse IP. 
+1. Décidez si vous voulez baser la stratégie sur un modèle. Le modèle de stratégie approprié est le modèle **Comportement anormal dans les utilisateurs découverts**, qui alerte quand un comportement anormal est détecté dans des utilisateurs et des applications découverts, comme de grandes quantités de données chargées par rapport à d’autres utilisateurs ou des transactions utilisateur importantes par rapport à l’historique de l’utilisateur. Vous pouvez également sélectionner le modèle **Comportement anormal des adresses IP découvertes**, qui alerte quand un comportement anormal est détecté dans les adresses IP et les applications détectées, comme de grandes quantités de données chargées par rapport à d’autres adresses IP ou des transactions d’application importantes par rapport à l’historique de l’adresse IP. 
  
 2. Spécifiez un **Nom de stratégie** et une **Description**.  
 
@@ -71,8 +68,3 @@ Pour chaque stratégie, définissez les paramètres suivants :
 [Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Dec16_HO4-->
-
-

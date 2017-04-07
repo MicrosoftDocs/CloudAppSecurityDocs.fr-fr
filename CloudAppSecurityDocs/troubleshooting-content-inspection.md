@@ -1,11 +1,11 @@
 ---
-title: "Résolution des problèmes d’inspection du contenu | Documentation Microsoft"
+title: "Résolution des erreurs d’inspection du contenu dans Cloud App Security | Microsoft Docs"
 description: "Cette rubrique fournit une liste des états d’inspection du contenu et leur signification."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/23/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,28 +13,25 @@ ms.technology:
 ms.assetid: 359eb77f-e719-4c50-9b62-6ef64149a5a5
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 7901bb58f70949873fb3c423ae7951a67f7cd671
-ms.openlocfilehash: 65e1957f413ff72b4ddfc76dc01e9514c721104c
-
-
+ms.openlocfilehash: 02451f0bc49cc5b3365673806562708943de7cfd
+ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+translationtype: HT
 ---
-
 # <a name="troubleshooting-content-inspection"></a>Résolution des problèmes d’inspection du contenu
 |État de l’inspection du contenu|Description|
 |----|----|
 |Completed|L’inspection du contenu s’est terminée correctement.|
 |Non applicable|L’inspection du contenu n’était pas applicable pour ce fichier. Cela peut être dû au fait qu’aucune stratégie ne nécessite d’inspection du contenu de ce fichier ou que le type de fichier n’est pas pris en charge.|
 |Pending|Le fichier est actuellement dans la file d’attente de l’inspection du contenu.|
-|Échec : erreur de téléchargement|Cloud App Security n’a pas pu télécharger le fichier pour l’inspection.|
-|Échec : le fichier est chiffré|Le fichier n’a pas pu être déchiffré.|
-|Échec : le fichier est endommagé|Le fichier est endommagé et ne peut pas être inspecté.|
-|Échec : erreur interne|Un problème non identifié est survenu lors de la tentative d’inspection du fichier.|
-|Échec : erreur de la DLP externe|Un problème est survenu dans votre DLP externe et est à l’origine de l’échec de Cloud App Security lors de l’inspection du contenu.|
-|Failed: File size exceeded (Échec : taille maximale de fichier dépassée)|La limite de fichier varie selon la taille du fichier et le nombre de caractères.|
-|Échec : accès au fichier refusé|Le fichier est externe à votre cloud et n’est pas accessible par Cloud App Security.|
-|Échec : le fichier a été supprimé|Le fichier n’existe plus dans votre cloud et ne peut pas être inspecté.|
-|Échec : type de fichier non pris en charge|Cloud App Security ne peut pas effectuer d’inspection du contenu sur ce type de fichier. Cela peut être dû au fait que le type de fichier n’est pas pris en charge ou que le fichier n’est pas réellement au format du type attendu.|
+|Échec : erreur de téléchargement|Cloud App Security n’a pas pu télécharger le fichier pour l’inspection.|
+|Échec : le fichier est chiffré|Le fichier n’a pas pu être déchiffré.|
+|Échec : le fichier est endommagé|Le fichier est endommagé et ne peut pas être inspecté.|
+|Échec : erreur interne|Un problème non identifié est survenu lors de la tentative d’inspection du fichier.|
+|Échec : erreur de la DLP externe|Un problème est survenu dans votre DLP externe et est à l’origine de l’échec de Cloud App Security lors de l’inspection du contenu.|
+|Failed: File size exceeded (Échec : taille maximale de fichier dépassée)|La limite de fichier varie selon la taille du fichier et le nombre de caractères.|
+|Échec : accès au fichier refusé|Le fichier est externe à votre cloud et n’est pas accessible par Cloud App Security.|
+|Échec : le fichier a été supprimé|Le fichier n’existe plus dans votre cloud et ne peut pas être inspecté.|
+|Échec : type de fichier non pris en charge|Cloud App Security ne peut pas effectuer d’inspection du contenu sur ce type de fichier. Cela peut être dû au fait que le type de fichier n’est pas pris en charge ou que le fichier n’est pas réellement au format du type attendu.|
 
 > [!NOTE]
 > Si vous voyez un tiret dans l’état d’analyse, cela signifie que le fichier ne figure pas dans une file d’attente en vue d’être analysé. Pour plus d’informations sur la définition de stratégies d’inspection du contenu, consultez [Stratégies de fichier](data-protection-policies.md).
@@ -45,8 +42,3 @@ ms.openlocfilehash: 65e1957f413ff72b4ddfc76dc01e9514c721104c
 [Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-

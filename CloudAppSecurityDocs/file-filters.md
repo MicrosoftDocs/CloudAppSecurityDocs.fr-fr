@@ -1,11 +1,11 @@
 ---
-title: Fichiers | Microsoft Docs
+title: "Présentation des données et des filtres de fichiers disponibles dans Cloud App Security | Microsoft Docs"
 description: "Cette rubrique de référence fournit des informations sur les types de fichiers et les filtres de fichiers utilisés par Cloud App Security."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/19/2016
+ms.date: 4/2/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: d11339040da669b77069c286f6171f7b3a6161db
-ms.openlocfilehash: 3262d01aed03bbb462832f8ff2836152e6208e74
-
-
+ms.openlocfilehash: 046816dbffffb8f91b11656375730b07be4b4fb0
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
+translationtype: HT
 ---
-
 # <a name="files"></a>Fichiers
 
 
@@ -41,7 +38,7 @@ Pour explorer des fichiers plus spécifiques, vous pouvez développer le filtre 
 
  ![filtre de journal de fichiers avancé](media/file-log-filter-advanced.png)
  
-###  <a name="a-namefilefiltersa-file-filters"></a><a name="Filefilters"></a> Filtres de fichiers 
+###  <a name="Filefilters"></a> Filtres de fichiers 
  
 Cloud App Security peut surveiller n’importe quel type de fichier en fonction de plus de 20 filtres de métadonnées (par exemple, niveau d’accès, type de fichier). 
  
@@ -84,7 +81,7 @@ Vous trouverez ci-dessous la liste des filtres de fichiers qui peuvent être app
   
 -   Nom de fichier : Nom de fichier ou sous-chaîne du nom comme défini dans l’application cloud, par exemple, Tous les fichiers avec un mot de passe dans leur nom.   
   
--   Balise de fichier : rechercher des fichiers avec des balises spécifiques définies par Azure Information Protection. Une intégration à Azure Information Protection est alors nécessaire.
+-   Étiquette de classification : rechercher des fichiers avec des balises spécifiques définies par Azure Information Protection. Une intégration à Azure Information Protection est alors nécessaire.
 
 -   Type de fichier : Cloud App Security accepte le type MIME reçu du service et analyse le fichier pour déterminer le type de fichier réel. Notez que cette analyse concerne les fichiers qui sont appropriés pour l’analyse de données (documents, images, présentations, feuilles de calcul, fichiers texte et compressés/d’archive). Le filtre fonctionne selon le type de fichier/dossier, par exemple Tous les dossiers qui... ou Tous les fichiers de feuille de calcul qui...
 
@@ -114,13 +111,16 @@ Vous pouvez également définir la stratégie pour qu’elle s’exécute sur de
   
 ## <a name="working-with-the-file-drawer"></a>Utilisation du tiroir de fichier
 
-Vous pouvez afficher des informations supplémentaires sur chaque fichier en cliquant sur le fichier lui-même dans le journal du fichier. Cette opération ouvre le tiroir de fichier qui contient les actions supplémentaires suivantes que vous pouvez réaliser sur le fichier :
+Vous pouvez afficher plus d’informations sur chaque fichier en cliquant sur le fichier lui-même dans le journal des fichiers. Cette opération ouvre le tiroir de fichier qui contient les actions supplémentaires suivantes que vous pouvez réaliser sur le fichier :
 
 - URL : Pointe vers l’emplacement du fichier.
-- Identificateurs de fichier : Cliquez sur les identificateurs de fichier pour ouvrir une fenêtre contextuelle avec des détails en données brutes sur le fichier, notamment l’ID du fichier et les clés de chiffrement.
+- Identificateurs de fichier : Cliquez sur les identificateurs de fichier pour ouvrir une fenêtre contextuelle avec des détails en données brutes sur le fichier, notamment l’ID du fichier et les clés de chiffrement.
 - Propriétaire : Cliquez sur le propriétaire pour afficher la page de l’utilisateur pour le propriétaire de ce fichier.
 - Stratégies correspondantes : Cliquez sur le lien Stratégies correspondantes pour afficher la liste des stratégies correspondant à ce fichier.
 - Étiquette de classification : cliquez sur l’étiquette de Classification pour afficher la liste des étiquettes de classification Azure Information Protection trouvées dans ce fichier. Vous pouvez ensuite appliquer un filtre selon tous les fichiers correspondant à cette étiquette.    
+
+Les champs du tiroir de fichier fournissent des liens contextuels vers des fichiers supplémentaires et permettent d’effectuer un zoom avant, directement dans le tiroir. Par exemple, si vous déplacez votre curseur à côté du champ **Propriétaire**, vous pouvez utiliser l’icône ajouter au filtre ![ajouter au filtre](./media/add-to-filter-icon.png) pour ajouter le propriétaire immédiatement au filtre de la page actuelle. Vous pouvez également utiliser l’icône de roue dentée paramètres ![icône paramètres](./media/contextual-settings-icon.png) qui s’affiche pour accéder directement à la page des paramètres nécessaire pour modifier la configuration de l’un des champs, par exemple les **étiquettes de classification**.
+
 
 ![tiroir de fichier](./media/file-drawer.png "tiroir de fichier")  
   
@@ -132,8 +132,3 @@ Pour obtenir la liste des actions de gouvernance disponibles, consultez [Actions
 [Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Dec16_HO3-->
-
-

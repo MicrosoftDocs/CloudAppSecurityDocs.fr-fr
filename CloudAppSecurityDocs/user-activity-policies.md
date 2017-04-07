@@ -1,11 +1,11 @@
 ---
-title: "Stratégies d’activité | Microsoft Docs"
+title: "Création de stratégies pour contrôler les activités dans Cloud App Security | Microsoft Docs"
 description: "Cette rubrique fournit des instructions sur la création et l’utilisation de stratégies d’activité."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/19/2016
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 99d5fd37-d922-4269-b557-86d7f84180eb
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2997a79f2e0fd730302be2602b6aee6ec56999db
-ms.openlocfilehash: 46ab0f13a8d0839f77525c334e75c840c9bfc73f
-
-
+ms.openlocfilehash: 1aaf81fe759fabd6105076d22c65f20c149b8d19
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+translationtype: HT
 ---
-
 # <a name="activity-policies"></a>Stratégies d’activité
 Grâce aux stratégies d’activité, vous pouvez appliquer une large gamme de processus automatisés en exploitant les API du fournisseur d’application. Ces stratégies vous permettent de surveiller des activités spécifiques effectuées par différents utilisateurs ou de suivre les taux anormalement élevés d’un certain type d’activité.  
   
@@ -62,57 +59,6 @@ Jetez un œil aux exemples suivants :
   
      ![exemple de taux de téléchargement élevé](./media/high-download-rate-example.png "exemple de taux de téléchargement élevé")  
   
-## <a name="anomaly-detection"></a>Détection d’anomalie  
-Une fois votre organisation protégée par Cloud App Security, toute l’activité cloud est évaluée en fonction de différents facteurs de risque prédéfinis. Cloud App Security examine chaque session utilisateur sur votre cloud, puis prend en considération les facteurs de risque que vous définissez ici afin d’être averti en cas d’événement anormal par rapport aux activités de référence ou habituelles de votre organisation ou de l’utilisateur. La page Stratégie de détection d’anomalie vous permet de configurer et de personnaliser les familles de facteurs de risque à prendre en compte dans le processus d’évaluation des risques. Vous pouvez adapter la stratégie en fonction de l’utilisateur, de l’emplacement ou du secteur de l’organisation. Par exemple, vous pouvez créer une stratégie qui vous avertit quand des membres de votre équipe informatique sont actifs en dehors de vos bureaux.  
-  
-Pour configurer une stratégie de détection d’anomalie :  
-  
-1.  Dans la console, cliquez sur **Contrôle**, puis sur **Stratégies**.  
-  
-2.  Cliquez sur **Créer une stratégie** et sélectionnez **Stratégie de détection d’anomalie**.  
-  
-     ![menu Stratégie de détection d’anomalie](./media/anomaly-detection-policy-menu.png "menu Stratégie de détection d’anomalie")  
-  
-3.  Indiquez le nom et la description de la stratégie et passez au champ **Filtres d’activité** où vous pouvez choisir l’activité pour laquelle vous souhaitez appliquer la stratégie.  
-  
-4.  Donnez à votre stratégie un nom et une description. Si vous le souhaitez, vous pouvez la baser sur un modèle ; pour plus d’informations sur les modèles de stratégie, consultez [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md).  
-  
-5.  Pour appliquer la stratégie à toutes les activités dans votre environnement cloud, sélectionnez **Toutes les activités surveillées**. Pour limiter la stratégie à des types d’activités spécifiques, choisissez **Activité sélectionnée**. Cliquez sur **Ajouter des filtres** et définissez les paramètres appropriés en fonction desquels filtrer l’activité. Par exemple, pour appliquer la stratégie uniquement sur une activité effectuée par les administrateurs Salesforce, vous choisissez l’étiquette utilisateur correspondante.  
-  
-6.  En dessous de ce champ, définissez les **Facteurs de risque**. Vous pouvez choisir les familles de risques à prendre en compte pour le calcul de l’indice de risque. À droite de la ligne, vous pouvez utiliser le bouton Activer/Désactiver pour activer ou désactiver les différents risques. En outre, pour plus de précision, vous pouvez choisir l’activité sur laquelle activer chaque famille de risques particulière.  
-  
-     Les facteurs de risque sont les suivants :  
-  
-    -   **Échecs de connexion** : Des utilisateurs se connectent-ils sans succès plusieurs fois pendant une courte période ?  
-  
-    -   **Activité administrative** : Des administrateurs utilisent-ils leurs comptes privilégiés pour se connecter à partir des emplacements inhabituels ou à des heures inhabituelles ?  
-  
-    -   **Comptes inactifs** : Existe-t-il une activité soudaine sur un compte qui n’a pas été utilisé pendant un certain temps ?  
-  
-    -   **Lieu** : Y a-t-il une activité dans un emplacement inhabituel, suspect ou nouveau ?  
-  
-    -   **Voyage impossible** : Un utilisateur se connecte-t-il depuis Denver, puis dix minutes plus tard depuis Paris ?  
-  
-    -   **Agent Appareil et utilisateur** : Existe-t-il une activité à partir d’un appareil non reconnu ou non géré ?  
-  
-     Vous pouvez utiliser ces paramètres pour définir des scénarios complexes, par exemple, pour exclure la plage d’adresses IP de votre bureau des facteurs de risque pris en compte pour la détection d’anomalies ou pour créer une étiquette « Plage IP du bureau » spécifique et exclure la plage des paramètres pris en compte. Pour exclure la plage ainsi créée de la détection d’anomalie dans l’activité administrative, procédez comme suit :  
-  
-    -   Dans **Type de risque**, recherchez **Activité administrative**.  
-  
-    -   Définissez **Appliquer à** sur **Activité sélectionnée**.  
-  
-    -   Sous **Filtres d’activité**, définissez **Appliquer à** sur **Activité sélectionnée** et sous **Activities matching all of the following** (Les activités satisfont à toutes les conditions suivantes), choisissez **Activité administrative** est **Vrai**.  
-  
-    -   Cliquez sur l’icône **+** et sélectionnez **Étiquette IP n’est pas égal à** et sélectionnez la balise Plage IP du bureau.  
-  
-7.  Sous **Sensibilité**, sélectionnez la fréquence à laquelle vous souhaitez recevoir les alertes.  
-  
-     La valeur de la sensibilité détermine le nombre d’alertes hebdomadaires déclenchées en moyenne par tranche de 1 000 utilisateurs.  
-  
-     ![adresses IP de détection des anomalies](./media/anomaly-detection-ips.png "adresses IP de détection des anomalies")  
-  
-8.  Cliquez sur **Create (Créer)**.  
- 
   
 ## <a name="activity-policy-reference"></a>Informations de référence sur les stratégies d’activité  
 Cette section fournit des informations de référence sur les stratégies, donne une explication de chaque type de stratégie et décrit les champs que vous pouvez configurer pour chacune d’elles.  
@@ -133,8 +79,3 @@ Chaque stratégie comprend les éléments suivants :
 [Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Dec16_HO3-->
-
-
