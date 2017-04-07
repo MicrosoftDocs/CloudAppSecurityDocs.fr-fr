@@ -1,11 +1,11 @@
 ---
-title: "Activités | Microsoft Docs"
+title: "Visibilité sur les activités des applications cloud | Microsoft Docs"
 description: "Cette rubrique fournit une liste des activités, filtres et paramètres de correspondance qui peuvent être appliqués aux stratégies d’activité."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/26/2016
+ms.date: 4/2/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,17 @@ ms.technology:
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 89f533e3b9c8397818e5aaa108dca168fda64db7
-ms.openlocfilehash: 7ad577c4b6222d96c21f51dd4023f10a9c402c55
-
-
+ms.openlocfilehash: c8f22fc1c949a265b3a53cc4a534550be9601d10
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
+translationtype: HT
 ---
 # <a name="activities"></a>Activités
-Cloud App Security vous donne une visibilité sur toutes les activités de vos applications connectées. Une fois connecté à une application à l’aide du connecteur d’applications, Cloud App Security analyse toutes les activités passées (la période d’analyse rétroactive varie par application). Cloud App Security est ensuite mis à jour en continu avec les nouvelles activités. Le **journal d’activité** peut être filtré pour vous permettre de trouver des activités spécifiques. Vous pouvez créer des stratégies basées sur les activités, puis définir ce dont voulez être alerté pour y réagir. Vous pouvez également rechercher des activités effectuées sur certains fichiers. Les types d’activités et les informations que nous obtenons pour chaque activité varient selon l’application et le genre de données que l’application peut fournir. 
+Cloud App Security vous donne une visibilité sur toutes les activités de vos applications connectées. Une fois connecté à une application à l’aide du connecteur d’applications, Cloud App Security analyse toutes les activités passées (la période d’analyse rétroactive varie par application). Cloud App Security est ensuite mis à jour en continu avec les nouvelles activités. 
+
+> [!NOTE] 
+> Pour obtenir une liste complète des activités Office 365 surveillées par Cloud App Security, voir [Rechercher le journal d’audit dans le Centre de sécurité et conformité Office 365](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US#ID0EABAAA=Audited_activities).
+
+Le **journal d’activité** peut être filtré pour vous permettre de trouver des activités spécifiques. Vous pouvez créer des stratégies basées sur les activités, puis définir ce dont voulez être alerté pour y réagir. Vous pouvez également rechercher des activités effectuées sur certains fichiers. Les types d’activités et les informations que nous obtenons pour chaque activité varient selon l’application et le genre de données que l’application peut fournir. 
 
 Par exemple, vous pouvez utiliser le **journal d’activité** pour trouver les utilisateurs de votre organisation qui utilisent des systèmes d’exploitation ou des navigateurs obsolètes. Pour cela, procédez comme suit : après avoir connecté une application à Cloud App Security dans la page **Journal d’activité**, utilisez le filtre avancé et sélectionnez l’**étiquette Agent utilisateur**. Sélectionnez ensuite **Navigateur obsolète** ou **Système d’exploitation obsolète**.
 
@@ -42,12 +45,13 @@ Pour explorer des activités plus spécifiques, vous pouvez développer le filtr
 ## <a name="activity-filters"></a>Filtres d’activité
 Vous trouverez ci-dessous une liste des filtres d’activité qui peuvent être appliqués. La plupart des filtres prennent en charge plusieurs valeurs, ainsi que NOT, afin de vous fournir un outil très puissant pour créer des stratégies.  
   
--   ID activité : Recherchez uniquement des activités spécifiques par leur ID. Ce filtre s’avère très utile quand vous connectez MCAS à votre SIEM (à l’aide de l’agent SIEM) et que vous voulez examiner davantage les alertes au sein du portail MCAS.  
+-   ID activité : Recherchez uniquement des activités spécifiques par leur ID. Ce filtre est très utile quand vous connectez Cloud App Security à votre SIEM (à l’aide de l’agent SIEM) et que vous voulez examiner davantage les alertes dans le portail Cloud App Security.  
   
--   Objets d’activité : Recherchez les objets sur lesquels l’activité a été effectuée. Ce filtre s’applique aux objets fichier, dossier, utilisateur ou application.
+-   Objets d’activité : Recherchez les objets sur lesquels l’activité a été effectuée. Ce filtre s’applique aux objets fichier, dossier, utilisateur ou application. 
     - ID de l’objet d’activité : ID de l’objet (fichier, dossier, utilisateur ou application).
     - Fichier, dossier ou site URL : Vous permet de sélectionner des fichiers, des dossiers et des URL qui commencent par une chaîne spécifique.
     - Objet cible (fichier/dossier) : Vous permet de sélectionner un fichier ou un dossier spécifique. 
+    - Élément : vous permet de rechercher par nom ou par ID d’objet d’activité (par exemple des noms d’utilisateur, des fichiers, des paramètres, des sites). Pour le filtre **Élément d’objet d’activité**, vous pouvez choisir de filtrer les éléments qui **contiennent**, **sont égaux** ou **commencent par** l’élément spécifique.
     
 -   Type d’activité : Recherchez l’activité de l’application.
 
@@ -93,15 +97,19 @@ Vous trouverez ci-dessous une liste des filtres d’activité qui peuvent être 
 -   ISP enregistré : Fournisseur de services Internet à partir duquel l’activité a été effectuée.   
 
 -  Source : Effectuez la recherche en fonction de la source à partir de laquelle l’activité a été détectée. La source peut être l’un des éléments suivants :
-  - Connecteur d’application : journaux provenant directement du connecteur d’API de l’application.
-  - Analyse du connecteur d’application : enrichissements de Cloud App Security basés sur l’analyse des informations par le connecteur d’API.
+  -    Connecteur d’application : journaux provenant directement du connecteur d’API de l’application.
+  -    Analyse du connecteur d’application : enrichissements de Cloud App Security basés sur l’analyse des informations par le connecteur d’API.
   
 
 -   Utilisateur : Utilisateur qui a exécuté l’activité, qui peut être filtré en domaine, groupe, nom ou organisation. Pour filtrer les activités sans utilisateur spécifique, vous pouvez utiliser l’opérateur « n’est pas défini ».  
     -   Domaine de l’utilisateur : Recherchez un domaine utilisateur spécifique.
-    -   Groupe d’utilisateurs : Groupes d’utilisateurs spécifiques importés automatiquement par Cloud App Security à partir de l’application cloud, par exemple, toutes les activités réalisées par les administrateurs Office 365.
-    -   Nom d’utilisateur : Recherchez un nom d’utilisateur spécifique.
     -   Organisation utilisateur : Unité d’organisation de l’utilisateur qui a effectué l’activité, par exemple toutes les activités effectuées par les utilisateurs EMEA_marketing.  
+    -   Groupe d’utilisateurs : Groupes d’utilisateurs spécifiques que vous pouvez importer à partir d’applications connectées, par exemple, les administrateurs Office 365.  
+    -   Nom d’utilisateur : Recherchez un nom d’utilisateur spécifique. Pour afficher la liste des utilisateurs membres d’un groupe d’utilisateurs spécifique, dans le **tiroir Activité**, cliquez sur le nom du groupe d’utilisateurs. Vous accédez alors à la page Comptes qui liste tous les utilisateurs figurant dans le groupe. À partir de cette page, vous pouvez explorer plus en détail les comptes d’utilisateurs spécifiques dans le groupe.
+       -  Vous pouvez affiner les filtres **Groupe d’utilisateurs** et **Nom d’utilisateur** en choisissant le filtre **En tant que**, puis en sélectionnant le rôle de l’utilisateur parmi les rôles suivants :
+            - Objet d’activité uniquement : cela signifie que l’utilisateur ou le groupe d’utilisateurs sélectionné n’a pas effectué l’activité en question, mais qu’il était l’objet de l’activité
+            - Acteur uniquement : cela signifie que l’utilisateur ou le groupe d’utilisateurs a effectué l’activité
+            - N’importe quel rôle : cela signifie que l’utilisateur ou le groupe d’utilisateurs a participé à l’activité, soit en effectuant l’activité, soit en étant l’objet de l’activité
 
 -   Agent utilisateur : Agent utilisateur à partir duquel l’activité a été effectuée.  
   
@@ -110,7 +118,7 @@ Vous trouverez ci-dessous une liste des filtres d’activité qui peuvent être 
   
 ## <a name="working-with-the-activity-drawer"></a>Travailler avec le tiroir Activité
 
-Vous pouvez afficher des informations supplémentaires sur chaque activité en cliquant sur l’activité elle-même dans le journal d’activité. Cela ouvre le tiroir Activité qui contient les actions supplémentaires suivantes que vous pouvez réaliser sur le fichier :
+Vous pouvez afficher plus d’informations supplémentaires sur chaque activité en cliquant sur l’activité elle-même dans le journal d’activité. Cela ouvre le tiroir Activité qui contient les actions supplémentaires suivantes que vous pouvez réaliser sur le fichier :
 
 - Stratégies correspondantes : Cliquez sur le lien Stratégies correspondantes pour afficher la liste des stratégies que cette activité a mises en correspondance.
 - Afficher les données brutes : Cliquez sur Afficher les données brutes pour afficher les données réelles reçues de l’application.
@@ -118,6 +126,9 @@ Vous pouvez afficher des informations supplémentaires sur chaque activité en c
 - Type d’appareil : Cliquez sur le type d’appareil pour afficher les données d’agent utilisateur brutes. 
 - Emplacement : Cliquez sur l’emplacement pour afficher l’emplacement dans des cartes Bing.
 - Catégorie d’adresse IP et balises : Cliquez sur la balise IP pour afficher la liste des balises IP trouvées dans cette activité. Vous pouvez ensuite filtrer selon toutes les activités correspondant à cette balise.    
+
+Les champs du tiroir d’activité fournissent des liens contextuels vers des fichiers supplémentaires et permettent d’effectuer un zoom avant, directement dans le tiroir. Par exemple, si vous déplacez votre curseur à côté de la catégorie d’adresse IP, vous pouvez utiliser l’icône ajouter au filtre ![ajouter au filtre](./media/add-to-filter-icon.png) pour ajouter l’adresse IP immédiatement au filtre de la page actuelle. Vous pouvez également utiliser l’icône de roue dentée paramètres ![icône paramètres](./media/contextual-settings-icon.png) qui s’affiche pour accéder directement à la page des paramètres nécessaire pour modifier la configuration de l’un des champs, par exemple les **groupes d’utilisateurs**.
+
 
 ![tiroir activité](./media/activity-drawer.png "tiroir activité")  
   
@@ -130,8 +141,3 @@ Pour obtenir la liste des actions de gouvernance disponibles, consultez [Actions
 [Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Dec16_HO4-->
-
-
