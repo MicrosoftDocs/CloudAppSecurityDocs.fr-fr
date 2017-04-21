@@ -1,11 +1,11 @@
 ---
-title: Connecter Dropbox | Documentation Microsoft
+title: "Connecter Dropbox à Cloud App Security pour la visibilité et le contrôle d’utilisation | Microsoft Docs"
 description: "Cette rubrique fournit des informations sur la connexion de votre application Dropbox à Cloud App Security à l’aide du connecteur API."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 3/19/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 4acd93f4-b885-4e1f-a385-43b5db02a3ee
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
-ms.openlocfilehash: a2b9a7e9cf254c52465922af4b0e3a0256e60c5d
-
-
+ms.openlocfilehash: 02cf326722410041b112caf67dc7d33cf72fe375
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+translationtype: HT
 ---
-
 # <a name="connect-dropbox-to-microsoft-cloud-app-security"></a>Connecter Dropbox à Microsoft Cloud App Security
 Cette section fournit des instructions pour connecter Cloud App Security à votre compte Dropbox existant à l’aide des API du connecteur.  
  
@@ -30,17 +27,17 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
   
 1.  Dans la console Cloud App Security, cliquez sur **Examiner**, puis sur **Applications connectées**.  
   
-2.  Dans la page **Connecteurs d’application**, cliquez sur le bouton plus (+), puis sur **Dropbox**.  
+2.  Dans la page **Connecteurs d’application**, cliquez sur le bouton plus (+), puis sur **Dropbox**.  
   
-     ![connecter dropbox](./media/connect-dropbox.png "connect dropbox")  
+     ![connecter dropbox](./media/connect-dropbox.png "connecter dropbox")  
   
-3.  Dans le menu contextuel, entrez l’adresse e-mail du compte d’administrateur.  
+3.  Dans la fenêtre contextuelle, entrez l’adresse e-mail du compte d’administrateur.  
   
 4.  Cliquez sur **Générer un lien**.  
   
 5.  Cliquez sur **suivez ce lien**.  
   
-     Cette opération ouvre la page de connexion de Dropbox. Entrez vos informations d’identification pour autoriser Cloud App Security à accéder à l’instance Dropbox votre équipe.  
+     La page de connexion à Dropbox s’ouvre. Entrez vos informations d’identification pour autoriser Cloud App Security à accéder à l’instance Dropbox votre équipe.  
   
 6.  Dropbox vous demande si vous voulez autoriser Cloud App Security à accéder au journal d’informations et d’activité de votre équipe, et à effectuer toute activité en tant que membre de l’équipe. Pour continuer, cliquez sur **Autoriser**.  
   
@@ -50,7 +47,7 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
   
      Le test peut prendre quelques minutes. Une fois averti que la connexion a réussi, cliquez sur **Fermer**.  
   
-Après avoir connecté Dropbox, vous recevrez les événements des 60 jours précédant la connexion.
+Après avoir connecté Dropbox, vous recevrez les événements des 60 jours précédant la connexion.
 
 > [!NOTE] 
 > Tout événement Dropbox pour l’ajout d’un fichier est affiché dans Cloud App Security en tant que fichier de chargement pour l’aligner sur toutes les autres applications connectées à Cloud App Security. 
@@ -61,8 +58,3 @@ Après avoir connecté Dropbox, vous recevrez les événements des 60 jours pré
 [Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-

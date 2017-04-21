@@ -1,11 +1,11 @@
 ---
-title: Personnaliser le portail | Microsoft Docs
+title: "Personnaliser le portail Cloud App Security pour des résultats optimaux | Microsoft Docs"
 description: "Cette rubrique présente les premières étapes de personnalisation du portail."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/21/2016
+ms.date: 3/19/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 49b64ea6cee1a33fd4005388d5b09cfbdcf59052
-ms.openlocfilehash: b5250ccb93dda950b417bbbe3fc2e64f0bab8320
-
-
+ms.openlocfilehash: b55da41080d70a41382a94b9ff527d50046c61b2
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
+translationtype: HT
 ---
-
 # <a name="customize-the-portal"></a>Personnaliser le portail
 La procédure suivante contient des instructions pour personnaliser le portail Cloud App Security.
   
@@ -66,7 +63,7 @@ La procédure suivante contient des instructions pour personnaliser le portail C
   
 ![gérer l’accès administrateur](./media/manage-admin-access.png "gérer l’accès administrateur")  
   
-##  <a name="a-nameadminsettingsa-customize-your-admin-settings"></a><a name="Adminsettings"></a> Personnaliser vos paramètres d’administration  
+##  <a name="Adminsettings"></a> Personnaliser vos paramètres d’administration  
 Pour définir vos préférences en tant qu’administrateur de Cloud App Security, cliquez sur votre nom dans la barre de menus du portail, puis sélectionnez **Paramètres utilisateur** pour définir les éléments suivants :  
   
 1.  Cliquez sur **Paramètres du compte**. Vous pouvez ici personnaliser la langue que doit utiliser le portail. Vous pouvez définir la langue du portail sur la langue par défaut ou sur la langue de votre choix.  
@@ -82,49 +79,17 @@ Pour définir vos préférences en tant qu’administrateur de Cloud App Securit
   
 3. Quand vous avez terminé, cliquez sur **Enregistrer**.  
   
-##  <a name="a-nameiptagsandrangesa-set-ip-ranges"></a><a name="IPtagsandRanges"></a> Définir des plages d’adresses IP  
+##  <a name="IPtagsandRanges"></a> Définir des plages d’adresses IP  
 Pour identifier facilement les adresses IP connues, telles que les adresses IP physiques de votre bureau, vous devez définir des plages d’adresses IP qui vous permettent de marquer et de classer les adresses de manière appropriée, ainsi que de personnaliser la façon dont les journaux et les alertes sont affichés et examinés.   
-Chaque groupe de plages IP peut être classé selon une liste de catégories d’adresses IP prédéfinies ou marqué avec des étiquettes IP créées par vos soins. En outre, ce paramètre vous permet de remplacer les informations de géolocalisation publiques en fonction de votre connaissance du réseau interne.  
+Pour plus d’informations, consultez [Balises IP](ip-tags.md).
   
-IPv4 et IPv6 sont pris en charge.  
-  
-Dans la barre de menus, cliquez sur l’icône des paramètres ![icône des paramètres](./media/settings-icon.png "icône des paramètres") et sélectionnez **Plages d’adresses IP**. Cliquez sur **Ajouter une plage d’adresses IP** et définissez les éléments suivants :  
-  
-> [!NOTE]  
->  L’emplacement et l’ISP enregistré remplacent les valeurs par défaut.   
-> Toutefois, les étiquettes IP sont ajoutées à l’activité sans remplacer les données.  
-  
-1.  Affectez un **Nom** à votre plage IP. Le nom n’apparaît pas dans le journal des activités ; il sert uniquement à gérer votre plage IP.  
-  
-     Pour inclure la plage IP dans une catégorie d’adresses IP, sélectionnez une catégorie dans le menu déroulant.  
-  
-2.  Entrez la **plage d’adresses IP** que vous souhaitez configurer, puis cliquez sur le bouton « + ». Vous pouvez ajouter autant d’adresses et de sous-réseaux IP que vous le souhaitez en utilisant la notation de préfixe réseau (également appelée notation CIDR), par exemple 192.168.1.0/32.  
-  
-3.  Dans les champs qui permettent de **remplacer l’emplacement** ou l’ISP de l’organisation associés à ces adresses, entrez la nouvelle valeur. Par exemple, si vous avez une adresse IP publiquement considérée en Irlande, alors qu’elle se trouve aux États-Unis, vous pouvez remplacer ce paramètre.  
-  
-4.  Entrez un **ISP enregistré**. Cette opération remplace les données dans vos activités.  
-  
-5.  Pour **étiqueter** les activités liées à ces adresses IP, entrez une étiquette. Il suffit d’entrer un mot dans la zone pour créer l’étiquette. Une fois l’étiquette configurée, vous pouvez l’ajouter facilement à des plages IP supplémentaires en la sélectionnant dans la liste. Vous pouvez ajouter autant d’étiquettes IP que vous le souhaitez pour chaque plage. Vous pouvez utiliser des étiquettes IP quand vous créez des stratégies.  En plus des étiquettes IP que vous configurez, Cloud App Security a des étiquettes prédéfinies qui ne sont pas configurables. Vous pouvez voir la liste des étiquettes sous le [filtre d’étiquettes IP](activity-filters.md).  
-  
-6.  Les **catégories IP** permettent d’identifier facilement les activités liées aux adresses IP intéressantes. Les catégories sont disponibles dans le portail, mais nécessitent une configuration utilisateur pour déterminer les adresses IP à inclure dans chaque catégorie, à l’exception de la catégorie « Risqué » qui comprend deux balises IP : Proxy anonyme et Tor.  
-  
-     Les catégories IP suivantes sont disponibles :  
-  
-    -   **Administratif** : adresses IP de vos administrateurs  
-  
-    -   **Interne** : adresses IP de votre réseau interne, de vos succursales et adresses d’itinérance Wi-Fi.  
-  
-    -   **Risqué** : toutes les adresses IP que vous considérez comme risquées. Celles-ci peuvent inclure les adresses IP suspectes déjà constatées, les adresses IP appartenant aux réseaux de vos concurrents, etc.  
-  
-    -   **VPN** : toutes les adresses IP que vous utilisez pour les télétravailleurs  
-  
-    -   **Proxy du cloud** : adresse IP de votre proxy dans le cloud  
-  
-7.  Quand vous avez terminé, cliquez sur **Créer**.  
-  
-     ![plage de nouvelles adresses IP](./media/newipaddress-range.png "plage de nouvelles adresses IP")  
-  
-##  <a name="a-nameadallommailsettingsa-personalize-your-experience"></a><a name="Adallom_mailsettings"></a>Personnaliser votre expérience  
+## <a name="import-user-groups"></a>Importer des groupes d’utilisateurs
+
+Quand vous connectez des applications à l’aide de connecteurs API, Cloud App Security vous permet d’importer des groupes d’utilisateurs, par exemple à partir d’Office 365 et d’Azure Active Directory.
+
+Pour plus d’informations, consultez [Groupes d’utilisateurs](user-groups.md).
+
+##  <a name="Adallom_mailsettings"></a>Personnaliser votre expérience  
 Dans la barre de menus, cliquez sur l’icône des paramètres ![icône des paramètres](./media/settings-icon.png "icône des paramètres") et sélectionnez **Paramètres de messagerie** pour définir les paramètres des notifications par e-mail envoyées par Cloud App Security aux administrateurs ; ce paramétrage définit l’envoi des alertes et des notifications aux utilisateurs finaux concernant les violations dans lesquelles ils sont impliqués.  
   
 ![menu des paramètres de messagerie](./media/mail-setting-menu.png "menu des paramètres de messagerie")  
@@ -152,12 +117,10 @@ Configurez ce qui suit :
          %%content%% : espace réservé pour le contenu à inclure pour les utilisateurs finaux, tel que défini par la stratégie  
   
      Voici un exemple de modèle d’e-mail : 
-
-
-           
-          <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
-          <html>  
-          <head>  
+```html
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html>  
+       <head>  
             <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  
             <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
           </head>  
@@ -206,30 +169,25 @@ Configurez ce qui suit :
           </table>  
             </body>  
           </html>  
-         
+    ```
 
   
-3.  Cliquez sur **Charger un modèle...** et sélectionnez le fichier que vous avez créé.  
+3.  Click **Upload a template...** and select the file you created.  
   
-     Ensuite, cliquez sur **Envoyer un e-mail test** pour vous envoyer un e-mail test afin de voir un exemple du modèle que vous avez créé.  
-     L’e-mail est envoyé au compte que vous avez utilisé pour vous connecter au portail. L’e-mail test comprend les champs de métadonnées, le modèle, l’objet de l’e-mail, le titre dans le corps de l’e-mail et le contenu.  
+     Then, click **Send a test email** to send yourself a test email to see an example of the template you created.  
+     The email will be sent to the account you used to log into the portal. In the test email you will be able to see the metadata fields, the template, the email subject, the title in the email body and the content.  
   
-## <a name="single-sign-on"></a>Authentification unique  
-Cloud App Security est couplé à Azure Active Directory pour les activités d’authentification, de configuration et de gestion des licences. Pour plus d’informations sur la gestion de l’authentification unique, voir [Liste de compatibilité de fédération Azure Active Directory : fournisseurs d’identité tiers qui peuvent être utilisés pour implémenter l’authentification unique](https://msdn.microsoft.com/library/azure/jj679342.aspx).  
+## Single sign-on  
+Cloud App Security is coupled with Azure Active Directory for authentication, provisioning, and licensing related activities. For information on how to manage single sign-on, see [Azure Active Directory federation compatibility list: third-party identity providers that can be used to implement single sign-on](https://msdn.microsoft.com/library/azure/jj679342.aspx).  
 
 
 > [!NOTE] 
-> Si vous utilisez ExpressRoute, Cloud App Security est déployé dans Azure et entièrement intégré à [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/). Toutes les interactions avec les applications Cloud App Security et le trafic envoyé vers Cloud App Security, notamment le chargement des journaux de découverte, sont acheminés via l’**homologation publique** ExpressRoute pour améliorer la latence, les performances et la sécurité. Aucune étape de configuration n’est nécessaire côté client.  
-    Pour plus d’informations sur l’homologation publique, consultez [Circuits ExpressRoute et domaines de routage](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/).  
+> If you use ExpressRoute, Cloud App Security is deployed in Azure and fully integrated with [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/). All interactions with the Cloud App Security apps and traffic sent to Cloud App Security, including upload of discovery logs, is routed via ExpressRoute **public peering** for improved latency, performance and security. There are no configuration steps required from the customer side.  
+    For more information about  Public Peering, see [ExpressRoute circuits and routing domains](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/).  
     
-## <a name="see-also"></a>Voir aussi  
-[Configurer Cloud Discovery](set-up-cloud-discovery.md)   
-[Pour obtenir un support technique, visitez la page de support assisté Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
-[Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier.](https://premier.microsoft.com/)  
+## See Also  
+[Set up Cloud Discovery](set-up-cloud-discovery.md)   
+[For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Dec16_HO4-->
-
-

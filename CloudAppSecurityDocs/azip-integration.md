@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b78a120c64af1887e5768082e5c81776b509f5a6
-ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
+ms.openlocfilehash: b5807498a87c39b54ece698cd5bec10f05b29fe2
+ms.sourcegitcommit: f4fcea309a5ba8c99d1dea306abf5bf07649d6fb
 translationtype: HT
 ---
 # <a name="azure-information-protection-integration"></a>Intégration d’Azure Information Protection
@@ -86,8 +86,11 @@ Pour les ignorer l’ensemble des étiquettes de classification externes à votr
 
 ![balises azure information protection dans cloud app security](./media/azip-tags-in-cas.png)
 
-> ! [Remarque] Quand les étiquettes Azure Identity Protection sont désactivées sur un fichier, elles apparaissent désactivées dans Cloud App Security. Les étiquettes supprimées ne sont pas affichées.
-> **Stratégie n°1 - données confidentielles partagées en externe sur Box :**
+> [!Note]
+> Quand les étiquettes Azure Identity Protection sont désactivées sur un fichier, elles apparaissent désactivées dans Cloud App Security. Les étiquettes supprimées ne sont pas affichées.
+
+
+**Stratégie n°1 - données confidentielles partagées en externe sur Box :**
 
 1.    Créez une stratégie de fichier.
 2.    Définissez le nom, la gravité et la catégorie de la stratégie.
