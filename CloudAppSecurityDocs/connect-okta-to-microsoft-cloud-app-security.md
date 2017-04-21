@@ -1,11 +1,11 @@
 ---
-title: Connecter Okta | Documentation Microsoft
+title: "Connecter Okta à Cloud App Security pour la visibilité et le contrôle d’utilisation | Microsoft Docs"
 description: "Cette rubrique fournit des informations sur la connexion de votre application Okta à Cloud App Security à l’aide du connecteur API."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/26/2016
+ms.date: 3/19/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 9c3673b9-99bd-400c-9da1-5bf809ea5892
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
-ms.openlocfilehash: 1e82f94cb8423bdaa3dcdc8d4a4f04179089546c
-
-
+ms.openlocfilehash: e888fe124b72704309183be7c2516367f2a14a0d
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+translationtype: HT
 ---
-
 # <a name="connect-okta-to-microsoft-cloud-app-security"></a>Connecter Okta à Microsoft Cloud App Security
 Cette section fournit des instructions pour connecter Cloud App Security à votre compte Okta existant à l’aide des API du connecteur.  
   
@@ -35,25 +32,25 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
   
     -   Cliquez sur **Security** (Sécurité), puis sur **API**.  
   
-         ![okta, api](./media/okta-api.png "okta api")  
+         ![okta, api](./media/okta-api.png "okta, api")  
   
     -   Cliquez sur **Create Token** (Créer un jeton).  
   
-         ![okta, créer un jeton](./media/okta-createtoken.jpg "okta createtoken")  
+         ![okta, créer un jeton](./media/okta-createtoken.jpg "okta, créer un jeton")  
   
     -   Dans la fenêtre contextuelle **Create Token** (Créer un jeton), nommez votre jeton Cloud App Security et cliquez sur **Create Token** (Créer un jeton).  
   
-         ![okta, fenêtre contextuelle de jeton](./media/okta-token-popup.png "okta token popup")  
+         ![okta, fenêtre contextuelle de jeton](./media/okta-token-popup.png "okta, fenêtre contextuelle de jeton")  
   
-    -   Dans la fenêtre contextuelle **Token created successfully** (Jeton créé avec succès), copiez le contenu de **Token value** (Valeur du jeton).  
+    -   Dans la fenêtre contextuelle **Token created successfully** (Jeton créé), copiez le contenu de **Token value** (Valeur du jeton).  
   
-         ![okta, valeur du jeton](./media/okta-token-value.png "okta token value")  
+         ![okta, valeur du jeton](./media/okta-token-value.png "okta, valeur du jeton")  
   
 3.  Dans la console Cloud App Security, cliquez sur **Examiner**, puis sur **Applications connectées**.  
   
-4.  Dans la page **Connecteurs d’application**, cliquez sur le bouton plus (+), puis sur **Okta**.  
+4.  Dans la page **Connecteurs d’application**, cliquez sur le bouton plus (+), puis sur **Okta**.  
   
-     ![connecter okta](./media/connect-okta.png "connect okta")  
+     ![connecter okta](./media/connect-okta.png "connecter okta")  
   
 5.  Dans la fenêtre contextuelle qui s’affiche, dans le champ **Domaine**, entrez votre domaine Okta et collez votre jeton dans le champ **Jeton**.  
   
@@ -63,7 +60,7 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
   
      Le test peut prendre quelques minutes. Une fois averti que la connexion a réussi, cliquez sur **Fermer**.  
   
-Après avoir connecté Okta, vous recevrez les événements des 60 jours précédant la connexion.
+Après avoir connecté Okta, vous recevrez les événements des 60 jours précédant la connexion.
   
 ## <a name="see-also"></a>Voir aussi  
 [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)   
@@ -71,8 +68,3 @@ Après avoir connecté Okta, vous recevrez les événements des 60 jours précé
 [Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-
