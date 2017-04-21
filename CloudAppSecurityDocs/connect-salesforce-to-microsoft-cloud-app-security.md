@@ -1,11 +1,11 @@
 ---
-title: Connecter Salesforce | Documentation Microsoft
+title: "Connecter Salesforce à Cloud App Security pour la visibilité et le contrôle d’utilisation | Microsoft Docs"
 description: "Cette rubrique fournit des informations sur la connexion de Salesforce à Cloud App Security à l’aide du connecteur API."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/26/2016
+ms.date: 3/19/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,10 @@ ms.technology:
 ms.assetid: 776d7589-acdb-4cb6-99a0-3be2f7b6aab2
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 129181e4768f068a0e30f6ef3a2d3f7fc6d47024
-ms.openlocfilehash: 0932c6bc696e7b050eae543fbea7d847dfa42b4b
-
-
+ms.openlocfilehash: 6e4363db83a65fbb656a844086cc08fab8cdecbd
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+translationtype: HT
 ---
-
-
 # <a name="connect-salesforce-to-microsoft-cloud-app-security"></a>Connecter Salesforce à Microsoft Cloud App Security
 Cette section fournit des instructions pour connecter Cloud App Security à votre compte Salesforce existant à l’aide de l’API du connecteur d’applications.  
   
@@ -80,7 +76,7 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
   
 6.  Dans la page des paramètres Salesforce, sous l’onglet API, cliquez sur **suivez ce lien**, en fonction de l’instance que vous souhaitez installer.  
   
-7.  Cette opération ouvre la page de connexion de Salesforce. Entrez vos informations d’identification pour autoriser Cloud App Security à accéder à l’application Salesforce de votre équipe.  
+7.  La page de connexion à Salesforce s’ouvre. Entrez vos informations d’identification pour autoriser Cloud App Security à accéder à l’application Salesforce de votre équipe.  
   
      ![salesforce, connexion](./media/salesforce-logon.png "salesforce, connexion")  
   
@@ -95,16 +91,23 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
      Le test peut prendre quelques minutes. Une fois que vous avez reçu une notification de réussite, cliquez sur **Terminé**.  
   
   
-Après avoir connecté Salesforce, vous recevrez les événements comme suit : déclencheurs à partir du moment de connexion, événements de connexion et piste d’audit d’installation des 60 jours précédant la connexion, surveillance des événements remontant à 30 jours ou 1 jour, en fonction de votre licence de surveillance des événements Salesforce.
+Après avoir connecté Salesforce, vous recevrez les événements comme suit : déclencheurs à partir du moment de connexion, événements de connexion et piste d’audit d’installation des 60 jours précédant la connexion, surveillance des événements remontant à 30 jours ou 1 jour, en fonction de votre licence de surveillance des événements Salesforce. L’API Cloud App Security communique directement avec les API disponibles dans Salesforce. Comme Salesforce limite le nombre d’appels d’API qu’il peut recevoir, Cloud App Security prend ce point en considération et respecte la limite. Les API Salesforce envoient chaque réponse avec un champ pour les compteurs d’API, notamment le total disponible et le total restant. Cloud App Security calcule en pourcentage et veille à toujours garder 10 % des appels d’API disponibles restants. 
+
+> [!NOTE]
+> La limitation Cloud App Security est calculée uniquement à partir de ses propres appels d’API avec Salesforce, et non avec ceux des autres applications qui effectuent des appels d’API avec Salesforce.
+> La restriction des appels d’API en raison de la limitation peut ralentir la vitesse à laquelle les données sont absorbées dans Cloud App Security, mais le retard est généralement comblé dans la nuit.
+
+
+Les événements Salesforce sont traités par Cloud App Security de la façon suivante : 
   
+- Événements de connexion toutes les 15 minutes
+- Piste d’audit d’installation toutes les 15 minutes
+- Les analyses du journal des événements sont exportées toutes les 24 heures par Salesforce (12:00 UTC) 
+
+
 ## <a name="see-also"></a>Voir aussi  
 [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)   
 [Pour obtenir un support technique, visitez la page de support assisté Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Dec16_HO2-->
-
-

@@ -1,11 +1,11 @@
 ---
-title: "Déployer Cloud Discovery | Microsoft Docs"
+title: "Déployer Cloud Discovery avec Cloud App Security | Microsoft Docs"
 description: "Cette rubrique décrit la procédure de configuration pour rendre Cloud Discovery opérationnel."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/26/2016
+ms.date: 1/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,20 +13,17 @@ ms.technology:
 ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 99ad61811b68b47ac62b4bac83b611e535d4a6be
-ms.openlocfilehash: 2070adb26a6b23cd0d699f3c4b9241819e24928d
-
-
+ms.openlocfilehash: 17da11ad5ca10eba14410e0a0458980b3f88d123
+ms.sourcegitcommit: 8c7c25bc727d9c471261da144d5c1d430c26af56
+translationtype: HT
 ---
-
 # <a name="set-up-cloud-discovery"></a>Configurer Cloud Discovery
 Cloud Discovery analyse vos journaux de trafic par rapport au catalogue de plus de 13 000 applications cloud de Cloud App Security qui sont classées et évaluées selon plus de 50 attributs pour que vous bénéficiiez d’une visibilité permanente sur l’utilisation du cloud, l’informatique fantôme et le risque que ce dernier représente pour votre organisation.
 Le **catalogue d’applications cloud** évalue les risques pour vos applications cloud selon les certifications réglementaires, les normes du secteur et les bonnes pratiques. Quatre processus complémentaires s’exécutent dans le catalogue d’applications cloud pour le tenir à jour :
-1.  Extraction de données automatisée directement à partir de l’application cloud (pour les attributs tels que la conformité SOC 2).
-2.  Extraction de données avancée automatisée pour les données par les algorithmes de Cloud App Security (pour les attributs tels que les en-têtes de sécurité HTTP).
-3.  Analyse en continu par l’équipe d’analystes cloud Cloud App Security (pour les attributs tels que le chiffrement au repos).
-4.  Demandes de révisions basées sur le client, en fonction des demandes de soumissions du client des modifications à apporter au catalogue d’applications cloud. Toutes les demandes sont examinées par notre équipe d’analystes cloud et mises à jour en fonction de leurs conclusions.
+1.    Extraction de données automatisée directement à partir de l’application cloud (pour les attributs tels que la conformité SOC 2).
+2.    Extraction de données avancée automatisée pour les données par les algorithmes de Cloud App Security (pour les attributs tels que les en-têtes de sécurité HTTP).
+3.    Analyse en continu par l’équipe d’analystes cloud Cloud App Security (pour les attributs tels que le chiffrement au repos).
+4.    Demandes de révisions basées sur le client, en fonction des demandes de soumissions du client des modifications à apporter au catalogue d’applications cloud. Toutes les demandes sont examinées par notre équipe d’analystes cloud et mises à jour en fonction de leurs conclusions.
   
 ## <a name="cloud-discovery-data-anonymization"></a>Anonymisation des données Cloud Discovery
 
@@ -84,7 +81,7 @@ Pour générer correctement un rapport Cloud Discovery, vos journaux de trafic d
 - Cisco ScanSafe
 - Cisco Merkai – Journal des URL
 - Dell Sonicwall
-- Fortiner Fortigate
+- Fortinet Fortigate
 - Juniper SRX
 - McAfee Secure Web Gateway
 - Microsoft Forefront Threat Management Gateway (W3C)
@@ -113,16 +110,17 @@ Attributs de données (selon la documentation du fournisseur) :
 |Cisco Scansfe|**Oui**|Non|**Oui**|**Oui**|**Oui**|**Oui**|
 |Dell SonicWall|**Oui**|**Oui**|Non|**Oui**|**Oui**|**Oui**|
 |Fortigate|Non|**Oui**|Non|**Oui**|**Oui**|**Oui**|
-|Juniper SRX|Non|**Oui**|Non|**Oui**|**Oui**|**Oui**|
+|Juniper SRX|Non|**Oui**|Non|**Oui**\*|**Oui**|**Oui**|
 |McAfee SWG|**Oui**|Non|Non|**Oui**|**Oui**|**Oui**|
 |Meraki|**Oui**|**Oui**|Non|**Oui**|Non|Non|
 |MS TMG|**Oui**|Non|**Oui**|**Oui**|**Oui**|**Oui**|
-|PAN|**Oui**|**Oui**|**Oui**|**Oui**|**Oui**|**Oui**|
+|Palo Alto Networks|**Oui**|**Oui**|**Oui**|**Oui**\*|**Oui**|**Oui**|
 |Sophos|**Oui**|**Oui**|**Oui**|**Oui**|**Oui**|Non|
 |Websense - Rapport d’examen détaillé (CSV)|**Oui**|Non|Non|**Oui**|Non|Non|
 |Websense - Journal d’activité Internet (CEF)|**Oui**|**Oui**|**Oui**|**Oui**|**Oui**|**Oui**|
-|Zscaler|**Oui**|Non|**Oui**|Non|**Oui**|Non|
+|Zscaler|**Oui**|Non|**Oui**|Non|**Oui**|**Oui**|
 
+\* Cloud Discovery prend en charge IPv6.
 
 ## <a name="see-also"></a>Voir aussi
  
@@ -131,10 +129,3 @@ Attributs de données (selon la documentation du fournisseur) :
 [Configurer le chargement automatique des journaux pour des rapports continus](configure-automatic-log-upload-for-continuous-reports.md)
 
 [Utilisation des données Cloud Discovery](working-with-cloud-discovery-data.md)
-  
-  
-
-
-<!--HONumber=Dec16_HO4-->
-
-

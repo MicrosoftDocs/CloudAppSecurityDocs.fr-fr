@@ -1,11 +1,11 @@
 ---
-title: Connecter Google Apps | Microsoft Docs
-description: "Cette rubrique fournit des informations sur la connexion de votre application Google Apps à Cloud App Security à l’aide du connecteur API."
+title: "Connecter G Suite à Cloud App Security pour la visibilité et le contrôle d’utilisation | Microsoft Docs"
+description: "Cette rubrique fournit des informations sur la connexion de votre application G Suite à Cloud App Security à l’aide du connecteur API."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/19/2016
+ms.date: 3/28/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,50 +13,36 @@ ms.technology:
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2997a79f2e0fd730302be2602b6aee6ec56999db
-ms.openlocfilehash: 7734badea1da58b839d23842b73e9be57fe43be3
-
-
+ms.openlocfilehash: 29a52d474fdc09052506e88c8b871e611c3a5b27
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
+translationtype: HT
 ---
+# <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>Connecter G Suite à Microsoft Cloud App Security
+Cette section fournit des instructions pour connecter Cloud App Security à votre compte G Suite existant à l’aide des API du connecteur.
 
-# <a name="connect-google-apps-to-microsoft-cloud-app-security"></a>Connecter Google Apps à Microsoft Cloud App Security
-Cette section fournit des instructions pour connecter Cloud App Security à votre compte Google Apps existant à l’aide des API du connecteur.
-
   
   
-## <a name="configure-google-apps"></a>Configurer Google Apps  
+## <a name="configure-g-suite"></a>Configurer G Suite  
   
-1.  En tant que super administrateur Google Apps, connectez-vous à [https://cloud.google.com/console/project](https://cloud.google.com/console/project).  
+1.  En tant que super administrateur G Suite, connectez-vous à [https://cloud.google.com/console/project](https://cloud.google.com/console/project).  
   
-2.  Cliquez sur **Create an empty project (Créer un projet vide)** pour démarrer un nouveau projet.  
+2.  Cliquez sur **Créer un projet** pour démarrer un nouveau projet.  
   
      ![google1](./media/google1.png "google1")  
   
-3.  Dans l’écran **New project (Nouveau projet)** :  
+3.  Dans l’écran **Nouveau projet**, nommez votre projet comme suit :</br>
+    **Cloud App Security pour Google** et cliquez sur **Créer**.  
+           ![google2](./media/google2.png "google2")  
   
-    1.  Nommez votre projet comme suit :</br>
-    **Cloud App Security pour Google** 
-  
-    2.  Indiquez si vous voulez vous abonner aux mises à jour.  
-  
-    3.  Consultez et acceptez les termes du contrat de service.  
-  
-    4.  Cliquez sur **Create (Créer)**.  
-  
-         ![google2](./media/google2.png "google2")  
-  
-4.  Une fois le projet créé, cliquez sur **Enable and manage APIs (Activer et gérer les API)**.  
+4.  Une fois que le projet est créé, dans la barre d’outils, en regard de Google Cloud Platform, sélectionnez le projet puis, sous **API**, cliquez sur **Go to APIs overview** (Accéder à la vue d’ensemble des API).  
   
      ![google3](./media/google3.png "google3")  
   
-5.  Cliquez sur l’onglet **Enabled API (API activées)** et désactivez toutes les API répertoriées.  
+5.  Sous **API**, désactivez toutes les API répertoriées.  
+      
+6.  Cliquez sur **Bibliothèque** et activez les API suivantes (utilisez la ligne de recherche si l’API n’est pas répertoriée dans la liste **Popular APIs** (API populaires)) :  
   
-     ![google5](./media/google5.png "google5")  
-  
-6.  Cliquez sur l’onglet **Google APIs** (API Google) et activez les API suivantes (utilisez la ligne de recherche si l’API n’est pas répertoriée dans la liste **Popular APIs** (API populaires)) :  
-  
-     ![google8](./media/google8.png "google8")  
+     ![api google](./media/google4.png "google4")  
   
     > [!NOTE]  
     >  Ignorez l’avertissement sur les **informations d’identification** pour l’instant.  
@@ -65,99 +51,93 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
   
     -   Audit API  
   
-    -   Drive API  
+    -   API Google Drive  
   
     -   Google Apps Marketplace SDK  
   
     -   Gmail API  
-  
-         ![google11, avertissement](./media/google11-warning.png "google11, avertissement")  
-  
+            
 7.  Vous devez avoir 5 **API activées** :  
   
-     ![google15](./media/google15.png "google15")  
+     ![google, api activées](./media/google5.png "google5")  
   
-8.  Cliquez sur **Credentials (Informations d’identification)** puis sur **OAuth consent (Consentement OAuth)**.  
+8.  Cliquez sur **Credentials** (Informations d’identification), puis sur **OAuth consent screen** (Écran de consentement OAuth)  
   
     -   Dans **Product name shown to users (Nom de produit présenté aux utilisateurs)**, tapez **Cloud App Security pour Google**.  
   
     -   Tous les autres champs sont facultatifs.  
   
-    -   Cliquez sur **Save**.  
+    -   Cliquez sur **Enregistrer**.  
   
-     ![google16](./media/google16.png "google16")  
+     ![google, nom de produit](./media/google6.png "google6")  
   
-9. Sous l’onglet **Credentials (Informations d’identification)**, cliquez sur la flèche en regard de **Create credentials (Créer des informations d’identification)** et sélectionnez **Service account key (Clé de compte de service)**.  
+9. Dans l’écran **API Credentials** (Informations d’identification de l’API), cliquez sur la flèche en regard de **Create credentials** (Créer des informations d’identification).  
   
-     ![google17](./media/google17.png "google17")  
+     ![google, informations d’identification](./media/google7.png "google7")  
+
+10. Sélectionnez **Service account key** (Clé de compte de service).
+
+     ![google, clé de compte de service](./media/google8.png "google8")  
   
-10. Dans **Service account (Compte de service)**, choisissez **New service account (Nouveau compte de service)** et tapez un nom, par exemple, **Compte de service 1**.  
+11. Sous **Create service account key** (Créer une clé de compte de service), choisissez **New service account** (Nouveau compte de service) et tapez un nom, par exemple **Compte de service 1**, sous **Rôle** choisissez **Projet** et **Éditeur**, puis sous **Key type** (Type de clé), choisissez **P12** et cliquez sur **Créer**.  
   
-     ![google19](./media/google19.png "google19")  
+     ![google, créer une clé de compte de service](./media/google9.png "google9")  
   
-     Sous **Key type (Type de clé)**, choisissez **P12** et cliquez sur **Create (Créer)**.  
+12.  Un fichier de certificat P12 est enregistré sur votre ordinateur. Une fenêtre contextuelle vous indique le **mot de passe pour la clé privée**. VEILLEZ À L’ENREGISTRER pour l’utiliser plus tard.  
+        
+12. Dans l’écran **Credentials** (Informations d’identification), cliquez sur **Manage service accounts** (Gérer les comptes de service) à l’extrême droite.  
+       ![Compte de service des informations d’identification G Suite](./media/google10.png "G Suite credentials service account")  
   
-     Un fichier de certificat P12 est téléchargé. Enregistrez le certificat à des fins d’utilisation ultérieure.  
+13. Cliquez sur les 3 points à droite du compte de service que vous avez créé et sélectionnez **Edit (Modifier)**.  
   
-     ![google20](./media/google20.png "google20")  
+     ![google, modifier](./media/google11.png "google, modifier")  
   
-11. Sous l’onglet **Credentials (Informations d’identification)**, cliquez sur **Manage service accounts (Gérer les comptes de service)** à l’extrême droite.  
+14. Cochez la case **Enable G Suite Domain-wide Delegation** (Activer la délégation à l’échelle du domaine G Suite) et cliquez sur **Enregistrer**.  
   
-     ![informations d’identification google apps, compte de service](./media/google-apps-credentials-service-account.png "informations d’identification google apps, compte de service")  
+     ![google, à l’échelle du domaine](./media/google12.png "google, à l’échelle du domaine")  
   
-12. Cliquez sur les 3 points à droite du compte de service que vous avez créé et sélectionnez **Edit (Modifier)**.  
+15. Copiez l’**ID de compte de service** attribué à votre service, car vous en aurez besoin.  
   
-     ![google22](./media/google22.png "google22")  
+     ![google, ID de compte de service](./media/google13.png "google13")  
   
-13. Cochez la case **Enable Google Apps Domain-wide Delegation** (Activer la délégation à l’échelle du domaine Google Apps) et cliquez sur **Enregistrer**.  
-  
-     ![google24](./media/google24.png "google24")  
-  
-14. Copiez l’**adresse e-mail** attribuée à votre service : vous en aurez besoin ultérieurement.  
-  
-     ![google25](./media/google25.png "google25")  
-  
-15. Ouvrez le menu Google en cliquant sur les trois lignes horizontales en regard de Google Cloud Platform, puis sélectionnez **API manager (Gestionnaire d’API)**.  
-  
-     ![menu Google](./media/google-menu.png "menu Google")  
-  
-     Sélectionnez **Enabled APIs (API activées)**.  
-  
-     ![google27](./media/google27.png "google27")  
-  
-16. Cliquez sur l’icône Paramètres (symbolisée par une roue dentée) en regard de **Drive API** et sous **Drive UI Integration (Intégration de l’interface utilisateur de Drive)**, renseignez les valeurs suivantes :  
-  
+16. Ouvrez le menu Google en cliquant sur les trois lignes horizontales en regard de Google Cloud Platform dans la barre de titre, puis sélectionnez **API manager** (Gestionnaire d’API) et **Dashboard** (Tableau de bord).  
+    
+17. Accédez à la liste des API activées et cliquez sur l’icône des paramètres en regard d’**API Google Drive**.   
+       ![Google Drive, sélectionner](./media/google14.png "google14")  
+
+18. Renseignez les éléments suivants :
+
     -   **Application Name (Nom de l’application)** : Cloud App Security pour Google.  
   
-    -   **Short Description & Long Description (Description courte et description longue)** : Microsoft Cloud App Security donne de la visibilité sur les applications cloud, ce qui vous permet de contrôler, examiner et régir l’utilisation de ces applications cloud, de sécuriser les données d’entreprise et de détecter les activités suspectes liées aux applications cloud.  
+    -   **Short Description & Long Description** (Description courte et description longue) (facultatif) : Microsoft Cloud App Security offre une visibilité sur les applications cloud, ce qui vous permet de contrôler, d’examiner et de régir l’utilisation de ces applications cloud, de sécuriser les données d’entreprise et de détecter les activités suspectes liées aux applications cloud.  
   
-    -   Sous **Application icon (Icône de l’application)**, chargez les images 128 x 128 et 32 x 32.  
+    -   Google vous demande de charger au moins une icône d’application. Accédez à [https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip](https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip) pour télécharger un fichier zip contenant les icônes Cloud App Security. Ensuite, sous **Application icon** (Icône de l’application), effectuez un glisser-déplacer des images 128 x 128 et 32 x 32.  
   
-         Ces images se trouvent à l’adresse : [https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip](https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip)  
-  
-    -   Tapez la valeur suivante sous **Open URL (URL ouverte) :**  
+    -   Sous **Drive Integration** (Intégration du lecteur), tapez le code suivant sous **Open URL:** (Ouvrir l’URL :)  
   
          https://portal.cloudappsecurity.com/#/services/11770?tab=files  
   
     -   Cliquez sur **Save Changes (Enregistrer les modifications)**.  
   
-         ![google29](./media/google29.png "google29")  
+         ![google, configuration du lecteur](./media/google15.png "googledriveconfig")  
   
-17. Dans la liste **Enabled API (API activées)**, cliquez sur l’icône Paramètres (symbolisée par une roue dentée) en regard de **Google Apps Marketplace SDK** et sélectionnez l’onglet **Configuration**.  
+19. Dans la liste **Enabled APIs** (API activées), cliquez sur l’icône des paramètres en regard de **Google Apps Marketplace SDK**. 
+         ![google, configurer marketplace SDK](./media/google16.png "googledriveconfig")  
+20. Sélectionnez l’onglet **Configuration**.  
   
     -   Copiez la valeur **Project number (App ID)** (Numéro de projet (ID d’application)) qui apparaît en haut à des fins d’utilisation ultérieure.  
   
-    -   **Application Name (Nom de l’application)** : Cloud App Security pour Google.  
+    -   **Application Name** (Nom de l’application) doit indiquer **Cloud App Security pour Google**.
   
          Renseignez le champ **Application description (Description de l’application)** par : « Microsoft Cloud App Security donne de la visibilité sur les applications cloud, ce qui vous permet de contrôler, examiner et régir l’utilisation de ces applications cloud, de sécuriser les données d’entreprise et de détecter les activités suspectes liées aux applications cloud. »  
   
-    -   Décochez la case **Enable individual install (Activer l’installation individuelle)**.  
+    -   Décochez la case **Enable individual install** (Activer l’installation individuelle).  
   
     -   Configurez les 4 images obligatoires sous **Application icons (Icônes de l’application)**.  
   
          Ces images se trouvent à l’adresse : [https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip](https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip)  
   
-         ![google31](./media/google31.png "google31")  
+         ![google, configurer marketplace sdk](./media/google17.png "google17")  
   
     -   Renseignez les valeurs **Support URLs (URL d’assistance)** suivantes :  
   
@@ -165,98 +145,94 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
   
         -   **URL de la politique de confidentialité** : http://go.microsoft.com/fwlink/?LinkId=512132  
   
-    -   Sous **OAuth 2.0 scopes** (Étendues OAuth 2.0), tapez les valeurs suivantes (1 par ligne. Appuyez sur Entrée pour confirmer) :  
+    -   Sous **OAuth 2.0 scopes** (Étendues OAuth 2.0), copiez et collez les éléments suivants. Vous devez les copier un par un et appuyer sur Entrer à chaque fois :  
   
-        -   https://www.googleapis.com/auth/admin.reports.audit.readonly  
+           https://www.googleapis.com/auth/admin.reports.audit.readonly  
   
-        -   https://www.googleapis.com/auth/admin.reports.usage.readonly  
+           https://www.googleapis.com/auth/admin.reports.usage.readonly  
   
-        -   https://www.googleapis.com/auth/drive  
+           https://www.googleapis.com/auth/drive  
   
-        -   https://www.googleapis.com/auth/drive.appdata  
+           https://www.googleapis.com/auth/drive.appdata  
   
-        -   https://www.googleapis.com/auth/drive.apps.readonly  
+           https://www.googleapis.com/auth/drive.apps.readonly  
   
-        -   https://www.googleapis.com/auth/drive.file  
+           https://www.googleapis.com/auth/drive.file  
   
-        -   https://www.googleapis.com/auth/drive.metadata.readonly  
+           https://www.googleapis.com/auth/drive.metadata.readonly  
   
-        -   https://www.googleapis.com/auth/drive.readonly  
+           https://www.googleapis.com/auth/drive.readonly  
   
-        -   https://www.googleapis.com/auth/drive.scripts  
+           https://www.googleapis.com/auth/drive.scripts  
   
-        -   https://www.googleapis.com/auth/admin.directory.user.readonly  
+           https://www.googleapis.com/auth/admin.directory.user.readonly  
   
-        -   https://www.googleapis.com/auth/admin.directory.user.security  
+           https://www.googleapis.com/auth/admin.directory.user.security  
   
-        -   https://www.googleapis.com/auth/admin.directory.user.alias  
+           https://www.googleapis.com/auth/admin.directory.user.alias  
   
-        -   https://www.googleapis.com/auth/admin.directory.orgunit  
+           https://www.googleapis.com/auth/admin.directory.orgunit  
   
-        -   https://www.googleapis.com/auth/admin.directory.notifications  
+           https://www.googleapis.com/auth/admin.directory.notifications  
   
-        -   https://www.googleapis.com/auth/admin.directory.group.member  
+           https://www.googleapis.com/auth/admin.directory.group.member  
   
-        -   https://www.googleapis.com/auth/admin.directory.group  
+           https://www.googleapis.com/auth/admin.directory.group  
   
-        -   https://www.googleapis.com/auth/admin.directory.device.mobile.action  
+           https://www.googleapis.com/auth/admin.directory.device.mobile.action  
   
-        -   https://www.googleapis.com/auth/admin.directory.device.mobile  
+           https://www.googleapis.com/auth/admin.directory.device.mobile  
   
-        -   https://www.googleapis.com/auth/admin.directory.user  
+           https://www.googleapis.com/auth/admin.directory.user  
   
     -   Cliquez sur **Save Changes (Enregistrer les modifications)**.  
   
-18. Sélectionnez **Security (Sécurité)** dans la liste des contrôles. Si cette option n’apparaît pas, sélectionnez More controls (Autres contrôles) dans la barre grise située en bas de la page, puis sélectionnez **Security (Sécurité)**.  
-  
-     ![google apps, sécurité](./media/google-apps-security.png "google apps, sécurité")  
-  
+18. Accédez à [admin.google.com](https://admin.google.com/), puis choisissez **Sécurité**. 
+       ![google, sécurité](./media/googlesecurity.png "google8")  
+ 
 19. Choisissez **API reference (Informations de référence sur les API)**.  
-  
-     ![google, référence sur les api](./media/google-api-ref.png "google, référence sur les api")  
-  
+       ![google, activer l’api](./media/googleapi.png "google8")  
+      
 20. Sélectionnez **Enable API Access (Activer l’accès aux API)** et cliquez sur **Save changes (Enregistrer les modifications)**.  
   
-     ![google, accès aux api](./media/google-api-access.png "google, accès aux api")  
+    ![google, référence à l’api](./media/googleapiref.png "google8")  
+
   
 ## <a name="configure-cloud-app-security"></a>Configurer Cloud App Security  
   
 1.  Dans le portail Cloud App Security, cliquez sur **Examiner**, puis sur **Applications connectées**.  
   
-2.  Dans la page **Applications connectées**, cliquez sur le signe plus (+) et sélectionnez **Google Apps**.  
+2.  Dans la page **Applications connectées**, cliquez sur le signe plus (+) et sélectionnez **G Suite**.  
+       
   
-     ![connecter google apps](./media/connect-google-apps.png "connecter google apps")  
+3.  Dans la fenêtre contextuelle, renseignez les éléments suivants :  
   
-3.  Dans la fenêtre contextuelle, renseignez les valeurs suivantes :  
+     ![Configuration de G Suite dans Cloud App Security](./media/gsuite-config-cas.png "Configuration de G Suite dans Cloud App Security")  
   
-     ![Configuration de Google Apps dans Cloud App Security](./media/google-apps-configuration-in-cloud-app-security.png "Configuration de Google Apps dans Cloud App Security")  
+    1.  **Adresse e-mail du compte de service** que vous avez copiée à l’étape 16.  
   
-    1.  **Adresse e-mail du compte de service Google** que vous avez copiée à l’étape 14.  
+    2.  **Numéro de projet (ID d’application)** que vous avez copié à l’étape 21.  
   
-    2.  **Numéro de projet Google (ID d’application)** que vous avez copié à l’étape 17.  
+    3.  Chargez le **certificat** P12 que vous avez enregistré à l’étape 12. Pour ce faire, vous aurez besoin du mot de passe que vous avez enregistré.  
   
-    3.  Chargez le **certificat Google** P12 que vous avez enregistré à l’étape 10.  
+    4.  Entrez un **e-mail du compte d’administrateur** de votre administrateur G Suite.  
   
-    4.  Entrez une seule **adresse e-mail d’administrateur** pour votre administrateur Google Apps.  
-  
-    5.  Si vous avez un compte Google Apps illimité, cochez cette case. Pour plus d’informations sur les fonctionnalités disponibles dans Cloud App Security pour Google Apps illimité, voir [Activer la visibilité, la protection et des actions de gouvernance instantanées pour vos applications](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).  
+    5.  Si vous avez un compte G Suite Unlimited, cochez cette case. Pour plus d’informations sur les fonctionnalités disponibles dans Cloud App Security pour G Suite Unlimited, consultez [Activer la visibilité, la protection et des actions de gouvernance instantanées pour vos applications](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).  
   
     6.  Cliquez sur **Enregistrer les paramètres**.  
   
-    7.  **Suivez le lien** pour vous connecter à Google Apps. Google Apps s’ouvre et vous devez autoriser l’accès à Cloud App Security.  
-  
-         ![Demande d’autorisation Google Apps](./media/google-apps-authorization-request.png "Demande d’autorisation Google Apps")  
-  
-    8.  Vérifiez la connexion en cliquant sur **Test API** (Tester l’API).  
+    7.  **Suivez le lien** pour vous connecter à G Suite. G Suite s’ouvre et vous devez autoriser l’accès à Cloud App Security.  
+         
+    8.  Vérifiez la connexion en cliquant sur **Tester maintenant**.  
   
          Le test peut prendre quelques minutes.  
   
-         Après avoir reçu une notification de réussite, cliquez sur **Terminé** et fermez la page Google Apps.  
+         Après avoir reçu une notification de réussite, cliquez sur **Terminé** et fermez la page G Suite.  
   
   
-Après avoir connecté Google Apps, vous recevrez les événements des 60 jours précédant la connexion.
+Après avoir connecté G Suite, vous recevrez les événements des 60 jours précédant la connexion.
   
-Après la connexion de Google Apps, Cloud App Security effectue une analyse complète. Selon le nombre de fichiers et d’utilisateurs, l’exécution de l’analyse complète peut prendre du temps. Pour permettre une analyse en temps quasi réel, les fichiers sur lesquels une activité est détectée sont déplacés vers le début de la file d’attente d’analyse, par exemple un fichier qui est modifié, mis à jour ou partagé est analysé immédiatement et n’attend pas d’être traité par le processus d’analyse standard. Cela ne s’applique pas aux fichiers qui ne sont pas intrinsèquement modifiés, par exemple les fichiers qui sont affichés, prévisualisés, imprimés ou exportés.
+Après la connexion de G Suite, Cloud App Security effectue une analyse complète. Selon le nombre de fichiers et d’utilisateurs, l’exécution de l’analyse complète peut prendre du temps. Pour permettre une analyse en temps quasi réel, les fichiers sur lesquels une activité est détectée sont déplacés vers le début de la file d’attente d’analyse, par exemple un fichier qui est modifié, mis à jour ou partagé est analysé immédiatement et n’attend pas d’être traité par le processus d’analyse standard. Cela ne s’applique pas aux fichiers qui ne sont pas intrinsèquement modifiés, par exemple les fichiers qui sont affichés, prévisualisés, imprimés ou exportés.
   
   
 ## <a name="see-also"></a>Voir aussi  
@@ -265,8 +241,3 @@ Après la connexion de Google Apps, Cloud App Security effectue une analyse comp
 [Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Dec16_HO3-->
-
-

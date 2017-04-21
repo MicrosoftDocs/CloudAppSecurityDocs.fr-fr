@@ -1,11 +1,11 @@
 ---
-title: Connecter Box | Documentation Microsoft
+title: "Connecter Box à Cloud App Security pour la visibilité et le contrôle d’utilisation | Microsoft Docs"
 description: "Cette rubrique fournit des informations sur la connexion de votre application Box à Cloud App Security à l’aide du connecteur API."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 3/19/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: b3e4713e-986f-4a5e-9fcc-f8de94dd0df7
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
-ms.openlocfilehash: 4aa741a90e356d440598eb9302dbd49f3b445c6c
-
-
+ms.openlocfilehash: 11716fb83acfb893dce29c7f4179788d40bef7a4
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+translationtype: HT
 ---
-
 # <a name="connect-box-to-microsoft-cloud-app-security"></a>Connecter Box à Microsoft Cloud App Security
 Cette section fournit des instructions pour connecter Cloud App Security à votre compte Box existant à l’aide des API du connecteur d’applications.  
   
@@ -28,28 +25,28 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
 > [!NOTE]  
 >  Le déploiement avec un compte qui n’est pas un compte d’administrateur entraîne un échec du test de l’API et n’autorise pas Cloud App Security à analyser tous les fichiers inclus dans Box. S’il s’agit d’un problème pour vous, vous pouvez effectuer le déploiement avec un coadministrateur qui a tous les privilèges cochés, mais le test de l’API continuera d’échouer et les fichiers appartenant aux autres administrateurs dans Box ne seront pas analysés.  
   
-1.  Si vous restreignez l’accès aux autorisations des applications, suivez cette étape. Sinon, passez à l’étape 2.  
+1.  Si vous restreignez l’accès aux autorisations des applications, suivez cette étape. Sinon, passez à l’étape 2.  
   
     -   Dans la console d’administration Box, cliquez sur l’icône des paramètres suivie de **Business settings (Paramètres d’entreprise)**.  
   
-         ![box, paramètres d’entreprise](./media/box-business-settings.png "box business settings")  
+         ![box, paramètres d’entreprise](./media/box-business-settings.png "box, paramètres d’entreprise")  
   
     -   Cliquez sur l’onglet **Applications**.  
   
-         ![box, applications](./media/box-apps.png "box apps")  
+         ![box, applications](./media/box-apps.png "box, applications")  
   
     -   Si l’option **Unpublished Applications** (Applications non publiées) est sélectionnée, dans la zone de texte **Except for** (À l’exception de), ajoutez le numéro de série de l’application Cloud App Security `nduj1o3yavu30dii7e03c3n7p49cj2qh` et cliquez sur **Enregistrer**.  
   
-         ![paramètres box, except for (à l’exception de)](./media/box-settings-except-for.png "box settings except for")  
+         ![paramètres box, except for (à l’exception de)](./media/box-settings-except-for.png "paramètres box, except for (à l’exception de)")  
   
     > [!NOTE]  
-    >  Si vous êtes un client Adallom existant et que votre URL de console concerne Adallom et non Cloud App Security, utilisez ce numéro de série d’application : bwahmilhdlpbqy2ongkl119o3lrkoshc.  
+    >  Si vous êtes un client Adallom existant et que votre URL de console concerne Adallom et non Cloud App Security, utilisez ce numéro de série d’application : bwahmilhdlpbqy2ongkl119o3lrkoshc.  
   
 2.  Dans le portail Cloud App Security, cliquez sur **Examiner**, puis sur **Applications connectées**.  
   
-3.  Dans la page **Connecteurs d’application**, cliquez sur le bouton plus (+), puis sélectionnez **Box**.  
+3.  Dans la page **Connecteurs d’application**, cliquez sur le bouton plus (+), puis sélectionnez **Box**.  
   
-     ![connecter box](./media/connect-box.png "connect box")  
+     ![connecter box](./media/connect-box.png "connecter box")  
   
 4.  Dans la fenêtre contextuelle **Paramètres Box**, cliquez sur **Suivez ce lien**.  
   
@@ -65,7 +62,7 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
   
 Box est maintenant connecté à Cloud App Security.  
  
-Après avoir connecté Box, vous recevrez les événements des 60 jours précédant la connexion.
+Après avoir connecté Box, vous recevrez les événements des 60 jours précédant la connexion.
   
 Après la connexion de Box, Cloud App Security effectue une analyse complète. Selon le nombre de fichiers et d’utilisateurs, l’exécution de l’analyse complète peut prendre du temps. Pour permettre une analyse en temps quasi réel, les fichiers sur lesquels une activité est détectée sont déplacés vers le début de la file d’attente d’analyse, par exemple un fichier qui est modifié, mis à jour ou partagé est analysé immédiatement et n’attend pas d’être traité par le processus d’analyse standard. Cela ne s’applique pas aux fichiers qui ne sont pas intrinsèquement modifiés, par exemple les fichiers qui sont affichés, prévisualisés, imprimés ou exportés.
   
@@ -75,8 +72,3 @@ Après la connexion de Box, Cloud App Security effectue une analyse complète. S
 [Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-
