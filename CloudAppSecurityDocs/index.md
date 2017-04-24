@@ -1,13 +1,14 @@
 ---
 layout: LandingPage
 description: "Découvrez comment utiliser Cloud App Security."
-ms.openlocfilehash: a746de0da559ebe32f246fdb52601dc5f2309d42
-ms.sourcegitcommit: d52371ba06d72e742dd07d8a9c6db4c9ee5d5fa9
+ms.openlocfilehash: a181d0871c17e7f94b17d72182225652c9df2438
+ms.sourcegitcommit: ddfac1ff8a07ff34acfa1945400950b749bdcb4d
 translationtype: HT
 ---
 # <a name="cloud-app-security-documentation"></a>Documentation Cloud App Security
 
-Contrôlez et sécurisez la messagerie électronique, les documents et les données sensibles que vous partagez en dehors des murs de votre entreprise. Grâce à une classification facile, aux étiquettes incorporées et aux autorisations, améliorez la protection des données de façon permanente avec Azure Information Protection, quel que soit leur emplacement ou avec qui elles sont partagées.
+Fournissez une sécurité de niveau entreprise à vos applications cloud avec Cloud App Security.
+Que vous soyez ou non dans le cloud, vos employés, eux, le sont. Offrez la sécurité de vos systèmes locaux à vos applications cloud, approuvées ou pas, pour une plus grande visibilité, des contrôles complets et une protection améliorée contre les problèmes de sécurité cloud.
 
 <ul class="panelContent cardsFTitle">
     <li>
