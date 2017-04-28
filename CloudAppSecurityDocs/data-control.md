@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/2/2017
+ms.date: 4/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 57927618-cb66-4c7f-afd7-c96926460816
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e7e735519caa7da514f06db13afc737cf6ef1806
-ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
+ms.openlocfilehash: 25fef8249688d9116001fd7147a00aedf9d72ca7
+ms.sourcegitcommit: 3e0f91099a30e014badbf9e3cfb99b65337f239d
 translationtype: HT
 ---
 # <a name="controlling-and-protecting-your-files"></a>Contrôler et protéger vos fichiers  
@@ -27,10 +27,10 @@ Cloud App Security peut surveiller n’importe quel type de fichier en fonction 
 Ce cas de figure s’applique à Office 365, G Suite, Box, Dropbox et Salesforce.
 
 ### <a name="the-threat"></a>LA MENACE
-Les employés partagent en dehors de l’organisation des fichiers d’entreprise contenant des données sensibles. Cela peut occasionner des fuites de données, celles-ci échappant à toute surveillance. Il peut s’agir de fuites sans gravité qui n’enfreignent pas les stratégies de votre entreprise. Néanmoins, même dans ce cas, il est important de surveiller ce qui est partagé afin de toujours savoir comment votre réseau est utilisé et quelles données sont partagées en externe.
+L’un des avantages majeurs que présente la technologie cloud est la possibilité de partager n’importe quoi avec n’importe qui. Un grand pouvoir implique de grandes responsabilités et, pour garantir qu’aucune donnée sensible n’est partagée en externe, vous devez connaître les fichiers qui contiennent des données sensibles et avec qui ces fichiers sont partagés. En utilisant les outils fournis avec vos applications cloud, vous n’êtes pas en mesure de savoir ce qui est enregistré dans l’application cloud, ou qui y a accès, et les fuites de données possibles échappent à votre surveillance.
 
 ### <a name="the-solution"></a>LA SOLUTION
-Obtenez une réelle visibilité sur le partage des fichiers dans votre réseau et mettez en place des actions de gouvernance. Pour cela, déployez Cloud App Security.
+En recherchant et en recoupant ces deux paramètres, la sensibilité et le niveau de partage, vous pouvez identifier ces failles possibles. Cloud App Security analyse tous les fichiers enregistrés dans vos applications cloud et les classifie automatiquement selon leur niveau de partage. Vous pouvez ensuite configurer une stratégie de fichier dans Cloud App Security pour rechercher toutes les données sensibles enregistrées dans vos applications cloud. Une fois que vous avez trouvé un fichier sensible partagé en externe, vous pouvez entreprendre des actions de correction manuelles ou définir Cloud App Security pour le faire automatiquement pour vous. Vous pouvez ainsi éviter le risque de fuite de données en un clic.
 
 #### <a name="prerequisites"></a>Conditions préalables
 
@@ -38,7 +38,7 @@ Obtenez une réelle visibilité sur le partage des fichiers dans votre réseau e
 
 #### <a name="setting-up-monitoring"></a>Configurer la surveillance
 
-1.    Contrôler vos fichiers en créant une stratégie
+1.    Démarrez la surveillance de votre application en définissant une stratégie qui analyse tous les fichiers partagés en externe à la recherche de contenu sensible :
 
     1. Sur la page **Stratégies**, cliquez sur [ **Créer une stratégie de fichier**](data-protection-policies.md). 
     ![créer une stratégie de fichier](./media/create-file-policy.png)
@@ -66,7 +66,7 @@ Obtenez une réelle visibilité sur le partage des fichiers dans votre réseau e
 
 #### <a name="removing-the-risk"></a>Supprimer le risque
 
-Après avoir validé et affiné la stratégie pour vous assurer qu’elle fonctionne comme prévu, procédez comme suit : 
+Après avoir validé et affiné la stratégie, supprimez les faux positifs possibles qui peuvent avoir correspondu à votre stratégie. Effectuez ensuite les opérations suivantes : 
   1. Vous pouvez engager immédiatement des [actions de gouvernance](governance-actions.md) en cliquant sur les trois points à la fin de la ligne et en sélectionnant l’action de gouvernance appropriée, par exemple, **Put user in quarantine (Placer l’utilisateur en quarantaine)**.
 
  ![gouvernance automatique externe](./media/auto-gov-external.png)
@@ -81,21 +81,21 @@ Ce cas de figure s’applique à Office 365, G Suite, Box, Dropbox et Salesforce
 
 Il tire parti de l’intégration entre Cloud App Security et Azure Information Protection. Si vous exécutez Azure Information Protection au sein de votre organisation et si vous avez pris le temps d’apposer sur vos fichiers des étiquettes Azure Information Protection, Cloud App Security vous permet de surveiller et de contrôler ce qui arrivent à ces fichiers une fois étiquetés.
 
-## <a name="the-threat"></a>LA MENACE
+### <a name="the-threat"></a>LA MENACE
 
 Vous savez que vous avez besoin de protéger vos données. Vous vous êtes déjà donné la peine de classifier vos fichiers dans Azure Information Protection. Mais une fois que vous les avez classifiés, comment savoir où ils sont et qui les consulte ? 
 
-## <a name="the-solution"></a>LA SOLUTION
- Vous pouvez surveiller ces fichiers classifiés lorsqu’ils sont dans le cloud à l’aide de Cloud App Security. Cela vous permet de vous assurer que les données classifiées comme étant **confidentielles** (ou autrement sensibles) ne sont pas partagées de manière inappropriée. Cloud App Security permet de surveiller et de gérer les fichiers que vous avez classifiés dans Azure Information Protection en déployant la stratégie suivante et en effectuant les actions de gouvernant ci-après.
+### <a name="the-solution"></a>LA SOLUTION
+ Vous pouvez surveiller ces fichiers classifiés lorsqu’ils sont dans le cloud à l’aide de Cloud App Security. Cela vous permet de vous assurer que les données classifiées comme étant **confidentielles** (ou autrement sensibles) ne sont pas partagées de manière inappropriée. Cloud App Security permet de surveiller et de gérer les fichiers que vous avez classifiés dans Azure Information Protection en déployant la stratégie suivante et en effectuant les actions de gouvernance ci-après.
 
-### <a name="prerequisites"></a>Conditions préalables
+#### <a name="prerequisites"></a>Conditions préalables
 
 - [Connectez](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) au moins une application cloud à Cloud App Security.
 - Suivez les instructions d’intégration [d’Azure Information Protection](azip-integration.md) pour activer l’analyse automatique.
 
-### <a name="setting-up-monitoring"></a>Configurer la surveillance
+#### <a name="setting-up-monitoring"></a>Configurer la surveillance
 
-1. Contrôler vos données en créant une stratégie    
+1. Surveillez tous les fichiers avec les étiquettes de classification voulues qui sont publiquement partagés :    
     
     1. Sur la page **Stratégies**, cliquez sur [ **Créer une stratégie de fichier**](data-protection-policies.md). 
 
@@ -116,7 +116,7 @@ Vous savez que vous avez besoin de protéger vos données. Vous vous êtes déj�
     3. Si vous trouvez des faux positifs, marquez-les d’une coche pour les exclure du rapport et des correspondances. Vous pouvez utiliser la fonction de commentaires pour informer l’équipe Cloud App Security des améliorations que vous souhaitez ajouter. 
 
 
-### <a name="validating-your-policy"></a>Valider votre stratégie
+#### <a name="validating-your-policy"></a>Valider votre stratégie
 
 1. Créez un document Word et utilisez la barre d’outils Azure Information Protection pour définir une étiquette de sensibilité, par exemple **Confidentiel**. 
 
@@ -129,7 +129,7 @@ Vous savez que vous avez besoin de protéger vos données. Vous vous êtes déj�
 
 #### <a name="removing-the-risk"></a>Supprimer le risque
 
-Après avoir validé et affiné la stratégie pour vous assurer qu’elle fonctionne comme prévu, procédez comme suit : 
+Après avoir validé et affiné la stratégie pour supprimer les faux positifs possibles qui peuvent avoir correspondu à votre stratégie, effectuez les opérations suivantes : 
 
 1. Vous pouvez engager immédiatement des [actions de gouvernance](governance-actions.md) en cliquant sur les trois points à la fin de la ligne et en sélectionnant l’action de gouvernance appropriée, par exemple, **Put user in quarantine (Placer l’utilisateur en quarantaine)**.
     

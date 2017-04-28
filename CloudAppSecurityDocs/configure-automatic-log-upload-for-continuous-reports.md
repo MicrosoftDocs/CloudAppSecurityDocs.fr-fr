@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 4/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f6eb2a844d62848ad232a92609a02ddb6fcfe325
-ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+ms.openlocfilehash: 053ca16b0bff19d4c8bdd75350ed9b0bed4ce3d8
+ms.sourcegitcommit: 3e0f91099a30e014badbf9e3cfb99b65337f239d
 translationtype: HT
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports"></a>Configurer le chargement automatique des journaux pour des rapports continus
 Les collecteurs de journaux vous permettent d’automatiser facilement le chargement manuel des journaux de votre réseau. Le collecteur de journaux s’exécute sur votre réseau et reçoit les journaux par le biais de Syslog ou FTP. Chaque journal est automatiquement traité, compressé et transmis au portail. Les journaux FTP sont chargés sur Cloud App Security une fois que le fichier a terminé le transfert FTP vers le collecteur de journaux et, pour les journaux Syslog, le collecteur de journaux écrit les journaux reçus sur disque toutes les 20 minutes, puis charge le fichier sur Cloud App Security.
 
 Avant de configurer la collecte de fichiers journaux automatique, vérifiez que votre journal correspond au type attendu de journal pour vous assurer que Cloud App Security peut analyser votre fichier spécifique. 
+
+>[!NOTE]
+>Cloud App Security prend en charge le transfert des journaux de votre serveur SIEM au collecteur de journaux en partant du principe que les journaux sont transférés sous leur format d’origine. Cependant, il est fortement recommandé d’intégrer le collecteur de journaux directement à votre pare-feu et/ou proxy.
+
 
 ## <a name="technical-requirements"></a>Spécifications techniques
 - Hyperviseur : HyperV ou VMware
@@ -74,7 +78,7 @@ Le collecteur de journaux dispose d’un mécanisme de sécurité intégré qui 
   > - Copiez le contenu de l’écran, car vous aurez besoin des informations lors de la configuration du collecteur de journaux pour communiquer avec Cloud App Security. Si vous avez sélectionné Syslog, ces informations vont inclure des informations sur le port utilisé par l’écouteur Syslog pour écouter.
 4.  **Téléchargez** une nouvelle machine virtuelle de collecteur de journaux en cliquant sur Hyper-V ou VMWare et décompressez le fichier en utilisant le mot de passe que vous avez reçu dans le portail.  
   
-### <a name="step-2--on-premises-deployment-of-the-virtual-machine-and-network-configuration"></a>Étape 2 : déploiement local de la machine virtuelle et de la configuration réseau   
+###    <a name="step-2--on-premises-deployment-of-the-virtual-machine-and-network-configuration"></a>Étape 2 : déploiement local de la machine virtuelle et de la configuration réseau   
 
 > [!NOTE] 
 > La procédure suivante décrit le déploiement dans Hyper-V. La procédure de déploiement pour l’hyperviseur de machine virtuelle est légèrement différente.  

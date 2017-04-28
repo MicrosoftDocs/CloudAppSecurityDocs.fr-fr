@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/2/2017
+ms.date: 4/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,26 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9de7c7770e567ffc79c6af98582d46d86115babe
-ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
+ms.openlocfilehash: c6bffe24bc127b4435a7a334cdca001f6e5ad3c5
+ms.sourcegitcommit: fd3b6c04cec30f7c9300cc02d29d562d17bf43ea
 translationtype: HT
 ---
 # <a name="release-notes"></a>Notes de publication
+
+
+## <a name="cloud-app-security-release-95-in-roll-out"></a>Cloud App Security version 95 (déploiement)
+Publication : 24 avril 2017
+
+**Mises à jour**
+- La page **Comptes** a été mise à jour avec des améliorations qui simplifient la détection des risques. Vous pouvez maintenant filtrer plus facilement les comptes internes et externes, voir en un coup d’œil si un utilisateur dispose d’autorisations d’administrateur et savoir si vous pouvez effectuer des actions sur chaque compte simplement par application (telles que supprimer les autorisations, supprimer les collaborations de l’utilisateur, suspendre l’utilisateur). En outre, les [groupes d’utilisateurs](user-groups.md) importés pour chaque compte s’affichent. 
+
+- Pour les comptes Microsoft (Office 365 et Azure Active Directory), Cloud App Security regroupe différents identificateurs d’utilisateurs tels que des adresses proxy, des alias, des SID, entre autres, sous un compte unique. Tous les alias associés à un compte s’affichent sous l’adresse e-mail principale. Selon la liste des identificateurs d’utilisateurs, pour les activités dont l’acteur est un identificateur d’utilisateur, l’acteur s’affiche sous le nom d’utilisateur principal (UPN, User Principal Name). En fonction de l’UPN, les groupes sont affectés et les stratégies appliquées. Cela améliore l’examen des activités et réunit toutes les activités associées dans la même session pour les anomalies et les stratégies basées sur des groupes. Cette fonctionnalité sera progressivement déployée au cours du mois suivant.
+
+- La balise Robot a été ajoutée comme un facteur de risque possible dans le rapport intégré Utilisation du navigateur. Maintenant, en plus de l’utilisation du navigateur marquée comme obsolète, vous pouvez voir quand cette utilisation a été effectuée par un robot. En savoir plus sur les [rapports intégrés](built-in-report-reference.md).
+
+- Quand vous créez une stratégie de fichier d’inspection du contenu, vous pouvez maintenant définir le filtre pour inclure uniquement les fichiers avec au moins 50 correspondances.
+
+
 
 ## <a name="cloud-app-security-release-94"></a>Cloud App Security version 94
 Publication : 2 avril 2017
