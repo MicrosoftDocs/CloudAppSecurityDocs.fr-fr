@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 4/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 14d10238-0f61-43e9-ab96-71534a27d3d4
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 1f897a528e425a2abd74f6828a7785fdfe147286
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+ms.openlocfilehash: 2a87251a533a9e8fa68b8807966019c186d5669e
+ms.sourcegitcommit: 3e0f91099a30e014badbf9e3cfb99b65337f239d
 translationtype: HT
 ---
 # <a name="control-cloud-apps-with-policies"></a>Contrôler les applications cloud avec des stratégies
@@ -47,11 +47,11 @@ Cloud App Security vous permet d’atténuer différents risques dans le cloud. 
   
      Classez et identifiez les données sensibles ou réglementées, notamment les autorisations de partage pour chaque fichier, stockées dans des services de synchronisation de fichier pour assurer la conformité aux réglementations telles que PCI, SOX et HIPAA  
   
--   **Contrôle de configuration :** Votre configuration fait-elle l’objet de modifications non autorisées ?  
+-   **Contrôle de configuration :**  Votre configuration fait-elle l’objet de modifications non autorisées ?  
   
      Surveillez les modifications de configuration, notamment la manipulation de la configuration à distance.  
   
--   **Cloud Discovery :** Des applications nouvelles sont-elles utilisées dans votre organisation ? Des applications Shadow IT que vous ignorez sont-elles utilisées ?  
+-   **Cloud Discovery :**  Des applications nouvelles sont-elles utilisées dans votre organisation ? Des applications Shadow IT que vous ignorez sont-elles utilisées ?  
   
      Évaluez le risque global pour chaque application cloud en fonction de la réglementation, ainsi que des bonnes pratiques et certifications de l’industrie.  
     Grâce à cette approche, vous pouvez surveiller le nombre d’utilisateurs, les activités, le volume de trafic et les heures d’utilisation classiques pour  
@@ -139,7 +139,20 @@ Pour créer une stratégie basée sur les résultats de l’examen, procédez co
 >  [Stratégies de protection des données](data-protection-policies.md)  
 >   
 >  [Stratégies Cloud Discovery](cloud-discovery-policies.md)  
+
   
+### <a name="add-automated-actions-to-respond-and-remediate-risks-automatically"></a>Ajouter des actions automatisées pour réagir et remédier aux risques automatiquement
+
+Pour obtenir la liste des actions de gouvernance disponibles par application, consultez [Gouvernance des applications connectées](governance-actions.md).
+
+Vous pouvez également définir la stratégie pour qu’elle vous envoie une alerte par e-mail ou message texte lors de la détection de correspondances. 
+
+Pour définir vos préférences de notification, vous devez [personnaliser le portail](general-setup.md) 
+  
+> [!NOTE] 
+> Le nombre maximal d’alertes envoyées via SMS est de 10 par numéro de téléphone par jour. Notez que le jour est calculé selon le fuseau horaire UTC. 
+
+
 ## <a name="enable-and-disable-policies"></a>Activer et désactiver des stratégies
 
 Une fois que vous avez créé une stratégie, vous pouvez l’activer ou la désactiver. Cela vous évite de devoir la supprimer pour l’arrêter. Donc, si vous souhaitez arrêter une stratégie pour une raison quelconque, il vous suffit de la désactiver. Vous pouvez la réactiver à tout moment.

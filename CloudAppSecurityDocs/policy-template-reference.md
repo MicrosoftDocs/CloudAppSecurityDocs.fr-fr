@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 4/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: a6658937-57a2-484a-85cb-5a4cdbeeb002
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5a06dd9f53c4074b2842eee3f369611b5b6b274c
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+ms.openlocfilehash: 12b77282ebf900978efa6be7b6902aee5ad2eaaa
+ms.sourcegitcommit: 3e0f91099a30e014badbf9e3cfb99b65337f239d
 translationtype: HT
 ---
 # <a name="policy-templates"></a>Modèles de stratégie
@@ -36,7 +36,7 @@ Voici une liste de tous les modèles de stratégie qui existent dans Cloud App S
 |Nouvelle application à risques|Alerte quand de nouvelles applications dont le score de risque est inférieur à 6 sont utilisées par plus de 50 utilisateurs avec une utilisation quotidienne totale de plus de 50 Mo sont découvertes.|
 |Vérification de la conformité d’applications de collaboration|Alerte quand de nouvelles applications de collaboration non conformes à SOC2 et SSAE 16 et utilisées par plus de 50 utilisateurs avec une utilisation quotidienne totale de plus de 50 Mo sont découvertes.|
 |Connexion à partir d’une adresse IP à risques|Alerte quand un utilisateur se connecte à vos applications approuvées à partir d’une adresse IP à risques. Par défaut, la catégorie Adresses IP à risques contient les adresses qui ont des balises d’adresse IP Proxy anonyme, TOR ou Botnet. Vous pouvez ajouter d’autres adresses IP à cette catégorie dans la page des paramètres de plages d’adresses IP.|
-|Activités d’administration à partir d’une adresse IP non-administrateur|Alerte quand un utilisateur administrateur effectue une activité d’administration à partir d’une adresse IP qui n’est pas incluse dans une catégorie de plage d’adresses IP spécifique. Vous pouvez définir d’autres adresses IP à risques en accédant à la page Paramètres et en sélectionnant des plages d’adresses IP.|
+|Activités d’administration à partir d’une adresse IP externe à l’entreprise|Alerte quand un utilisateur administrateur effectue une activité d’administration à partir d’une adresse IP qui n’est pas incluse dans la catégorie de plage d’adresses IP de l’entreprise. Vous devez d’abord configurer vos adresses IP d’entreprise en accédant à la page Paramètres et en définissant **Plages d’adresses IP**.|
 |Ouverture de session utilisateur à partir d’une adresse IP sans catégorie|Alerte quand un utilisateur ouvre une session à partir d’une adresse IP qui n’est pas incluse dans une catégorie de plage d’adresses IP spécifique. Vous pouvez catégoriser d’autres adresses IP à risques en accédant à la page Paramètres et en sélectionnant des plages d’adresses IP.|
 |Fichier contenant des informations d’identification personnelle détecté dans le cloud (moteur DLP intégré)|Alerte quand un fichier contenant des informations d’identification personnelle est détecté par notre moteur de protection contre la perte de données intégré dans une application cloud approuvée.|
 |Nouvelle application de gestion des ressources humaines|Alerte quand de nouvelles applications de gestion des ressources humaines utilisées par plus de 50 utilisateurs avec une utilisation quotidienne totale de plus de 50 Mo sont découvertes.|

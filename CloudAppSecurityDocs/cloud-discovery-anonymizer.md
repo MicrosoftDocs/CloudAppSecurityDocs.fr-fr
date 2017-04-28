@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: eb250ede-fede-4699-a08b-b8ea4b232f07
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 72228b607c3006101f9f427b38de63b090cdb9a0
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+ms.openlocfilehash: 3d74621d1c173c51a9a3d0e08f261290a6d24835
+ms.sourcegitcommit: 122268f3e7b0cadf1a6a495a50f388fe4adbcc2b
 translationtype: HT
 ---
 ## <a name="cloud-discovery-data-anonymization"></a>Anonymisation des données Cloud Discovery
@@ -29,7 +29,7 @@ Points clés :
 
 Fonctionnement de l’anonymisation des données :
 
-1.    Il existe trois façons d’appliquer l’anonymisation des données : 
+1.  Il existe trois façons d’appliquer l’anonymisation des données : 
     
     - Vous pouvez anonymiser les données d’un fichier journal spécifique en [créant un rapport de capture instantanée](create-snapshot-cloud-discovery-reports.md) et en sélectionnant **Anonymiser les informations privées**.
  ![Anonymiser des données de capture instantanée](./media/anonymize-log.png)
@@ -48,20 +48,20 @@ Fonctionnement de l’anonymisation des données :
   ![Anonymisation](./media/anonymizer1.png)
   
 
-2.    Quand l’anonymisation est sélectionnée, Cloud App Security analyse le journal du trafic et extrait les attributs de données spécifiques.
-3.    Cloud App Security remplace le nom d’utilisateur par un nom d’utilisateur chiffré.
-4.    Il analyse ensuite les données d’utilisation cloud et génère des rapports Cloud Discovery basés sur les données anonymisées.
+2.  Quand l’anonymisation est sélectionnée, Cloud App Security analyse le journal du trafic et extrait les attributs de données spécifiques.
+3.  Cloud App Security remplace le nom d’utilisateur par un nom d’utilisateur chiffré.
+4.  Il analyse ensuite les données d’utilisation cloud et génère des rapports Cloud Discovery basés sur les données anonymisées.
  ![Anonymiser le tableau de bord Cloud Discovery](./media/anonymize-dashboard.png)
  
 
-5.    Pour des investigations spécifiques, comme pour une alerte d’utilisation anormale, vous pouvez résoudre le nom d’utilisateur spécifique dans le portail et spécifier une justification liée à l’activité de l’entreprise. Cette page peut également être utilisée pour rechercher le nom d’utilisateur chiffré d’un nom d’utilisateur connu. 
+5.  Pour des investigations spécifiques, comme pour une alerte d’utilisation anormale, vous pouvez résoudre le nom d’utilisateur spécifique dans le portail et spécifier une justification liée à l’activité de l’entreprise. Cette page peut également être utilisée pour rechercher le nom d’utilisateur chiffré d’un nom d’utilisateur connu. 
 
     1. Sous l’icône Paramètres, sélectionnez **Paramètres Cloud Discovery**.
     2. Sous l’onglet **Anonymisation**, sous **Anonymiser et résoudre les noms d’utilisateur**, entrez une justification expliquant pourquoi vous effectuez la résolution.
     3. Sous **Entrer le nom d’utilisateur à résoudre**, sélectionnez **À partir du nom anonymisé** et entrez le nom d’utilisateur anonymisé, ou sélectionnez **À anonymiser** et entrez le nom d’utilisateur d’origine à résoudre. Cliquez sur **Résoudre**. 
 ![Anonymisation](./media/anonymizer.png)
 
-6.    L’action est auditée dans le **journal de gouvernance** du portail. 
+6.  L’action est auditée dans le **journal de gouvernance** du portail. 
 ![Anonymisation](./media/anonymize-gov-log.png)
 
 
