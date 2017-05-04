@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/21/2017
+ms.date: 4/25/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,17 +13,22 @@ ms.technology:
 ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 1f4fd428f762bcbe1fb2a26bf44268cf985fbd4f
-ms.sourcegitcommit: c79c405a1277c5fcebbc245fa12ff8feb53248d5
+ms.openlocfilehash: 2e21e146ffc5043b6e5a6861422818328c3a0857
+ms.sourcegitcommit: 847f0425de7686b1b4a2b242930a0069e793436a
 translationtype: HT
 ---
 # <a name="connect-servicenow-to-microsoft-cloud-app-security"></a>Connecter ServiceNow à Microsoft Cloud App Security
-Cette section fournit des instructions pour connecter Cloud App Security à votre compte ServiceNow existant à l’aide de l’API du connecteur d’applications.  
-  
-## <a name="how-to-connect-servicenow-to-cloud-app-security"></a>La connexion de ServiceNow à Cloud App Security  
-  
-> [!NOTE]  
+
+Cette section fournit des instructions pour connecter Cloud App Security à votre compte ServiceNow existant à l’aide de l’API du connecteur d’applications. 
+
+ >  [!NOTE]
+>  Nous vous recommandons de déployer ServiceNow à l’aide de jetons d’application OAuth, disponibles pour Fuji et versions ultérieures (consultez la [documentation ServiceNow](http://wiki.servicenow.com/index.php?title=OAuth_Applications#gsc.tab=0) appropriée). Pour les versions antérieures, un [mode de connexion hérité](#legacy-servicenow-connection) est disponible en fonction de l’utilisateur/du mot de passe.
+
+ > [!NOTE]  
 >  Cloud App Security prend en charge les versions Eureka, Fiji, Geneva, Helsinki et Istanbul de ServiceNow. Pour connecter ServiceNow à Cloud App Security, vous devez avoir le rôle **Administrateur** et vérifier que l’instance ServiceNow prend en charge l’accès à l’API.  Pour plus d’informations, reportez-vous à la [documentation du produit ServiceNow](http://wiki.servicenow.com/index.php?title=Base_System_Roles#gsc.tab=0).
+  
+## <a name="how-to-connect-servicenow-to-cloud-app-security-using-oauth"></a>Comment connecter ServiceNow à Cloud App Security avec OAuth
+  
   
 1.  Connectez-vous avec un compte d’administrateur à votre compte ServiceNow.  
   
@@ -69,6 +74,36 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
   
 Après avoir connecté ServiceNow, vous recevrez les événements des 60 jours précédant la connexion.
   
+## <a name="legacy-servicenow-connection"></a>Connexion ServiceNow héritée
+
+Pour connecter ServiceNow à Cloud App Security, vous devez avoir des autorisations de niveau administrateur et vérifier que l’instance ServiceNow prend en charge l’accès à l’API.   
+
+1.  Connectez-vous avec un compte d’administrateur à votre compte ServiceNow.   
+
+2.  Créez un compte de service pour Cloud App Security et attachez le rôle d’administrateur au compte nouvellement créé.   
+
+3.  Vérifiez que le plug-in API REST est activé.   
+
+    ![compte servicenow](./media/servicenow-account.png "compte servicenow")   
+
+4.  Dans le portail Cloud App Security, cliquez sur **Examiner**, puis sur **Applications approuvées**.   
+
+5.  Dans la ligne ServiceNow, cliquez sur **Connecter** dans la colonne **État du connecteur d’applications** ou cliquez sur le bouton **Connecter une application**, puis sur **ServiceNow**.   
+
+    ![connecter servicenow](./media/connect-servicenow.png "connecter servicenow")   
+
+6.  Dans la page Paramètres ServiceNow, sous l’onglet API, ajoutez votre nom d’utilisateur, mot de passe et URL d’instance ServiceNow dans les zones appropriées.   
+
+7.  Cliquez sur **Connexion**.   
+
+   ![mot de passe de mise à jour servicenow](./media/servicenow-update-password.png "mot de passe de mise à jour servicenow")   
+
+8.  Vérifiez la connexion en cliquant sur **Test API** (Tester l’API).   
+  
+   Le test peut prendre quelques minutes. Une fois averti que la connexion a réussi, cliquez sur **Fermer**.   
+ Après avoir connecté ServiceNow, vous recevrez les événements des 60 jours précédant la connexion. 
+
+
 ## <a name="see-also"></a>Voir aussi  
 [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)   
 [Pour obtenir un support technique, visitez la page de support assisté Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   

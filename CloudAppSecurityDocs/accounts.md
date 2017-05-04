@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/23/2016
+ms.date: 4/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,30 +13,29 @@ ms.technology:
 ms.assetid: 7811f23b-6100-427f-93b1-44f5f81f6c76
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5d5ccc55fe0d9c3fea93446daebfcbd5bbed8c8d
-ms.sourcegitcommit: fd3b6c04cec30f7c9300cc02d29d562d17bf43ea
+ms.openlocfilehash: f6a8ad3618f27cbfecd11fd0f12817c030620c20
+ms.sourcegitcommit: 06809e22a767723a77a52b910aa41eca9728228b
 translationtype: HT
 ---
 # <a name="accounts"></a>Comptes
-Cloud App Security vous donne une visibilité sur tous les comptes de vos applications connectées. Une fois connecté à une application à l’aide du connecteur d’applications, Cloud App Security analyse tous les comptes associés aux applications. La page Comptes vous permet d’examiner ces comptes, les groupes dont ils sont membres, leurs alias et les applications qu’ils utilisent. 
+Cloud App Security vous donne une visibilité sur les comptes de vos applications connectées. Une fois connecté à une application à l’aide du connecteur d’applications, Cloud App Security lit les informations sur le compte qui sont associées aux applications connectées. La page Comptes vous permet d’examiner ces comptes, les autorisations, les groupes dont ils sont membres, leurs alias et les applications qu’ils utilisent. En outre, quand Cloud App Security détecte un nouveau compte qui n’a pas déjà été vu dans l’une des applications connectées (par exemple dans les activités ou le partage de fichiers), le compte est ajouté à la liste des comptes de cette application. Cela vous permet d’avoir une visibilité sur l’activité des utilisateurs externes interagissant avec vos applications cloud.
 
 
-Le journal **Comptes** peut être filtré pour vous permettre de trouver des comptes spécifiques et d’étudier plus en détail différents types de comptes ; par exemple, vous pouvez filtrer tous les comptes externes qui n’ont pas été consultés depuis l’année dernière. Vous pouvez créer des stratégies basées sur les comptes, puis définir les alertes que vous souhaitez recevoir pour y réagir. 
+Vous pouvez filtrer la page **Comptes** pour vous permettre de trouver des comptes spécifiques et d’étudier plus en détail différents types de comptes ; par exemple, vous pouvez filtrer tous les comptes externes qui n’ont pas été consultés depuis l’année dernière. 
 
 La page **Comptes** vous permet d’examiner facilement certains points dans vos comptes, notamment les suivants :  
 
 -   Vérifiez si certains comptes ont été inactifs dans un service particulier pendant une longue période (peut-être devez-vous révoquer la licence de cet utilisateur pour ce service)  
 -   Vous pouvez filtrer la liste des utilisateurs avec des autorisations d’administrateur  
 
--   Vous pouvez afficher les comptes qui sont actifs mais appartiennent à des utilisateurs qui ne font plus partie de votre organisation  
+-   Vous pouvez rechercher des utilisateurs qui ne font plus partie de votre organisation, mais peuvent toujours disposer de comptes actifs  
 
--   Vous pouvez révoquer l’autorisation d’un utilisateur sur une application spécifique (en fonction de l’application) ou exiger d’un utilisateur spécifique qu’il effectue une authentification Multi-Factor Authentication
+-   Vous pouvez engager des actions de gouvernance sur les comptes, comme la suspension d’une application, ou accéder à la page des paramètres de compte. Pour obtenir la liste complète des actions de gouvernance, consultez le [journal de gouvernance](governance-actions.md).
     
 -   Vous pouvez voir les comptes qui sont inclus dans chaque groupe d’utilisateurs  
 
 -   Vous pouvez voir les applications qui sont consultées par chaque compte et les applications qui sont supprimées pour des comptes spécifiques
     
--   Vous pouvez également analyser plus en détail le compte de l’utilisateur et sélectionner les actions de gouvernance pertinentes, telles que **Suspendre l’utilisateur** ou **Supprimer les collaborations de l’utilisateur**. Si l’utilisateur a été importé depuis Azure Active Directory, vous pouvez également cliquer sur **Paramètres du compte Azure AD** pour accéder facilement aux fonctionnalités d’administration avancée de l’utilisateur, comme l’administration du groupe, Multi-Factor Authentication, l’obtention d’informations sur les connexions de l’utilisateur et la possibilité de bloquer la connexion.
 
 ![écran des comptes](./media/accounts-page.png)
 
@@ -53,7 +52,7 @@ Vous trouverez ci-dessous une liste des filtres de comptes qui peuvent être app
 
 - **Dernière consultation** : le filtre **Dernière consultation** vous permet de rechercher des comptes qui sont sans mouvement et dont les utilisateurs n’ont effectué aucune activité depuis un certain temps.
 
-- **Organisation/Service** : vous permet de filtrer les membres de certains groupes d’organisation Azure Active Directory ou Office 365.
+- **Organisation/Service** : vous permet de filtrer les membres de certains groupes d’organisation définis dans vos applications connectées.
 
 - **Groupe d’utilisateurs** : vous permet de filtrer les membres des groupes d’utilisateurs dans Cloud App Security, à la fois les groupes d’utilisateurs intégrés et les groupes d’utilisateurs importés.
 

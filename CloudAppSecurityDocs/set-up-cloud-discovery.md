@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 4/30/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 17da11ad5ca10eba14410e0a0458980b3f88d123
-ms.sourcegitcommit: 8c7c25bc727d9c471261da144d5c1d430c26af56
+ms.openlocfilehash: f9c86d2ce7b45a8de88ebba84ff8608b67117080
+ms.sourcegitcommit: 7e9ae94cb4f90fbccaa84f19bdebb4652a425e45
 translationtype: HT
 ---
 # <a name="set-up-cloud-discovery"></a>Configurer Cloud Discovery
@@ -64,7 +64,7 @@ Cloud Discovery utilise les données dans vos journaux de trafic. Plus le journa
  
 Cloud Discovery ne peut pas afficher ni analyser des attributs qui ne sont pas inclus dans vos journaux.
 Par exemple, le format de journal standard **Pare-feu Cisco ASA** ne contient pas la **quantité d’octets chargés par transaction** ni le **nom d’utilisateur**, et ne contient pas l’**URL cible** (mais uniquement l’adresse IP cible).
-Par conséquent, ces attributs sont affichés dans les données Cloud Discovery pour ces journaux et la visibilité sur les applications cloud est limitée. Pour les pare-feu Cisco ASA, il est nécessaire de définir le niveau d’informations 6. 
+Par conséquent, ces attributs ne sont pas affichés dans les données Cloud Discovery pour ces journaux et la visibilité sur les applications cloud est limitée. Pour les pare-feu Cisco ASA, il est nécessaire de définir le niveau d’informations 6. 
  
 
 Pour générer correctement un rapport Cloud Discovery, vos journaux de trafic doivent respecter les conditions suivantes :
@@ -79,7 +79,7 @@ Pour générer correctement un rapport Cloud Discovery, vos journaux de trafic d
 - Pare-feu Cisco ASA (pour les pare-feu Cisco ASA, il est nécessaire de définir le niveau d’informations 6)
 - Cisco IronPort WSA
 - Cisco ScanSafe
-- Cisco Merkai – Journal des URL
+- Cisco Meraki – Journal des URL
 - Dell Sonicwall
 - Fortinet Fortigate
 - Juniper SRX
