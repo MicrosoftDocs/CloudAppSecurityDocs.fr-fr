@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b55da41080d70a41382a94b9ff527d50046c61b2
-ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
-translationtype: HT
+ms.openlocfilehash: f05a39b834178406a6b4b010cd7a1c6096f8c37f
+ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.translationtype: HT
+ms.contentlocale: fr-FR
 ---
 # <a name="customize-the-portal"></a>Personnaliser le portail
 La procédure suivante contient des instructions pour personnaliser le portail Cloud App Security.
@@ -89,7 +90,7 @@ Quand vous connectez des applications à l’aide de connecteurs API, Cloud App 
 
 Pour plus d’informations, consultez [Groupes d’utilisateurs](user-groups.md).
 
-##  <a name="Adallom_mailsettings"></a>Personnaliser votre expérience  
+##  <a name="mailsettings"></a>Personnaliser votre expérience  
 Dans la barre de menus, cliquez sur l’icône des paramètres ![icône des paramètres](./media/settings-icon.png "icône des paramètres") et sélectionnez **Paramètres de messagerie** pour définir les paramètres des notifications par e-mail envoyées par Cloud App Security aux administrateurs ; ce paramétrage définit l’envoi des alertes et des notifications aux utilisateurs finaux concernant les violations dans lesquelles ils sont impliqués.  
   
 ![menu des paramètres de messagerie](./media/mail-setting-menu.png "menu des paramètres de messagerie")  

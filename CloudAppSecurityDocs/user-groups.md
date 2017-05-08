@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 5/4/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology:
 ms.assetid: 87b831ef-5977-4df8-bed3-3ee54a8adbb5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a6a4b0e2c79fcb96a307d83a4077492138b73066
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
-translationtype: HT
+ms.openlocfilehash: 451d88f6403e62ed5cf68d5a932e5029f270df7a
+ms.sourcegitcommit: 34cd68651b5a1be9bc460d7175bc2711efa103b2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
 ---
-# <a name="import-user-groups-preview"></a>Importer des groupes d’utilisateurs (préversion)
+# <a name="import-user-groups"></a>Importer des groupes d’utilisateurs
 
 Quand vous connectez des applications à l’aide de connecteurs API, Cloud App Security vous permet d’importer des groupes d’utilisateurs, par exemple à partir d’Office 365 et d’Azure Active Directory.
 Il existe deux types de groupes d’utilisateurs : 
