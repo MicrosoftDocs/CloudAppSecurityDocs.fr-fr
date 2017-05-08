@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 5/3/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 26a89346868e4d8a5df450d30b69826b4791c1f8
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
-translationtype: HT
+ms.openlocfilehash: 04264ea25a987e2bfef60a0e77c0a227b650b740
+ms.sourcegitcommit: 34cd68651b5a1be9bc460d7175bc2711efa103b2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
 ---
 # <a name="file-policies"></a>Stratégies de fichier  
 Les stratégies de fichier vous permettent d’appliquer une large gamme de processus automatisés en exploitant les API du fournisseur de cloud. Vous pouvez définir des stratégies pour fournir des analyses de conformité en continu, des tâches eDiscovery réglementaires, une protection contre la perte de données (DLP, Data Loss Prevention) au contenu sensible partagé publiquement et de nombreux autres cas d’usage.  
@@ -103,10 +104,7 @@ Chaque stratégie comprend les éléments suivants :
 -   Actions : La stratégie fournit un ensemble d’actions de gouvernance automatiquement applicables en cas de violations.  Ces actions sont réparties en actions de collaboration, actions de sécurité et actions d’examen.
 
 -   Extensions  
-  
-    > [!NOTE]  
-    >  Les extensions sont uniquement disponibles avec la version d’évaluation technique Cloud App Security.  
-  
+   
     -  L’inspection du contenu peut être effectuée via des moteurs tiers pour améliorer les fonctionnalités DLP ou anti-programme malveillant.  
   
     -  Les [actions de gouvernance](governance-actions.md) peuvent être effectuées par le biais de moteurs tiers pour mettre en œuvre un contrôle de chiffrement personnalisé ou d’autres types de traitement de fichiers (par exemple, un filigrane personnalisé).  

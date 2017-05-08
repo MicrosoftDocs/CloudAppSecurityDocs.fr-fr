@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 8b429866b6a50becacf918aed8de24c741010621
-ms.sourcegitcommit: 7e9ae94cb4f90fbccaa84f19bdebb4652a425e45
-translationtype: HT
+ms.openlocfilehash: 220cce1ff4a7197a14f2076262f168a815471894
+ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.translationtype: HT
+ms.contentlocale: fr-FR
 ---
 # <a name="deploy-cloud-app-security"></a>Déployer Cloud App Security
 Cloud App Security vous permet de tirer parti des avantages des applications cloud tout en conservant le contrôle des ressources d’entreprise. Il fonctionne en améliorant la visibilité de l’activité cloud et contribue à renforcer la protection des données d’entreprise. Dans cette rubrique, nous vous guidons à travers les étapes permettant de configurer et d’utiliser Cloud App Security.  
@@ -98,7 +99,7 @@ Tâche obligatoire : Créer des stratégies
 Vous pouvez utiliser des stratégies pour surveiller les tendances, identifier les menaces à la sécurité, et générer des alertes et des rapports personnalisés. Avec les stratégies, vous pouvez créer des actions de gouvernance, et définir une protection contre la perte de données et des contrôles sur les partages de fichiers.
 
 
-### <a name="step-4-personalize-your-experiencegeneral-setupmdadallommailsettings"></a>Étape 4. [Personnaliser votre expérience](general-setup.md#Adallom_mailsettings).
+### <a name="step-4-personalize-your-experiencegeneral-setupmdmailsettings"></a>Étape 4. [Personnaliser votre expérience](general-setup.md#mailsettings).
 Tâche recommandée : Ajouter les détails de votre organisation
 
 **Pour entrer les paramètres d’e-mail**
