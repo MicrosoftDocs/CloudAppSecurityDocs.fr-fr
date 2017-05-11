@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 5/4/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ab0164181826368c2dae7836e9b8189bb907f790
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
-translationtype: HT
+ms.openlocfilehash: 19b1f69d61488fca523d09fa0fe752029ee0f8c2
+ms.sourcegitcommit: 34cd68651b5a1be9bc460d7175bc2711efa103b2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
 ---
-# <a name="siem-integration--public-preview-"></a>Intégration de SIEM - PRÉVERSION PUBLIQUE 
+# <a name="siem-integration"></a>Intégration à SIEM
     
 Vous pouvez maintenant intégrer Cloud App Security à votre serveur SIEM pour permettre la surveillance centralisée des alertes et des activités. L’intégration à un service SIEM vous permet de mieux protéger vos applications cloud tout en conservant votre flux de travail de sécurité habituel, en automatisant les procédures de sécurité et en établissant une corrélation entre les événements cloud et locaux. L’agent SIEM de Cloud App Security s’exécute sur votre serveur, extrait les alertes et les activités de Cloud App Security et les envoie sous forme de flux continu au serveur SIEM.
 
@@ -126,6 +127,9 @@ Après avoir créé l’agent, si vous voyez une des **notifications d’agent**
 |**Erreur de connexion du serveur de données**| Vous pouvez recevoir cette erreur si vous travaillez avec un serveur Syslog sur TCP. L’agent SIEM ne peut pas se connecter à votre serveur Syslog.  Si vous recevez cette erreur, l’agent cesse d’extraire de nouvelles activités tant qu’elle n’est pas résolue : veillez donc à suivre les étapes de correction jusqu’à ce que l’erreur n’apparaisse plus.|1. Vérifiez que vous avez défini correctement votre serveur Syslog : dans l’interface utilisateur de Cloud App Security, modifiez votre agent SIEM comme décrit ci-dessus, puis vérifiez que vous avez écrit correctement le nom du serveur et défini le port approprié. </br>2. Vérifiez la connectivité à votre serveur Syslog : vérifiez que votre pare-feu ne bloque la communication.|
 |**Erreur de l’agent SIEM**|L’agent SIEM est déconnecté depuis plus de X heures|Vérifiez que vous n’avez pas modifié la configuration de l’agent SIEM dans le portail Cloud App Security. Sinon, cette erreur peut signaler un problème de connectivité entre Cloud App Security et l’ordinateur sur lequel vous exécutez l’agent SIEM.|
 |**Erreur de notification de l’agent SIEM**|Des erreurs de transfert de notification de l’agent SIEM ont été reçues d’un agent SIEM.|Cela indique que vous avez reçu des erreurs de connexion entre l’agent SIEM et votre serveur SIEM. Assurez-vous qu’aucun pare-feu ne bloque votre serveur SIEM ou l’ordinateur sur lequel vous exécutez l’agent SIEM. Vérifiez aussi que l’adresse IP du serveur SIEM n’a pas été modifiée.|
+
+> [!NOTE]
+> Cette fonctionnalité est disponible dans la préversion publique.
 
 ## <a name="see-also"></a>Voir aussi  
 [Stratégies d’activité utilisateur](user-activity-policies.md)   

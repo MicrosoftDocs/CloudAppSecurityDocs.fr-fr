@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/23/2017
+ms.date: 5/7/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,34 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3e84ccc43212975cc40318a5b67ea60015fbde75
-ms.sourcegitcommit: 06809e22a767723a77a52b910aa41eca9728228b
-translationtype: HT
+ms.openlocfilehash: 4d65fec131538981f36660d2b5ec668fa11be86e
+ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.translationtype: HT
+ms.contentlocale: fr-FR
 ---
 # <a name="release-notes"></a>Notes de publication
+
+
+## <a name="cloud-app-security-release-96"></a>Cloud App Security version 96
+Publication : 8 mai 2017
+
+Nouvelles fonctionnalités :
+-    Lancement progressif de l’autorisation Lecteur Sécurité. Celle-ci vous permet de gérer les autorisations que vous accordez à vos administrateurs dans la console Cloud App Security. Par défaut, tous les administrateurs généraux Azure Active Directory et Office 365 et tous les administrateurs de sécurité disposent d’autorisations complètes dans le portail, tandis que tous les lecteurs Sécurité dans Azure Active Directory et Office 365 disposent d’un accès en lecture seule dans Cloud App Security. Pour plus d’informations, consultez [Gestion des autorisations d’administration](manage-admins.md).
+-    Lancement terminé de la prise en charge de Cloud Discovery pour les analyseurs de journaux définis par l’utilisateur pour les journaux CSV. Cloud App Security propose des outils de délimitation pour mettre en corrélation les colonnes à des données spécifiques, ce qui vous permet de configurer un analyseur pour vos appareils précédemment non pris en charge. Pour plus d’informations, consultez [Analyseur de journaux personnalisés](custom-log-parser.md).
+Améliorations :
+-    Cloud Discovery prend désormais en charge les appareils Juniper SSG.
+-    Amélioration de la prise en charge de des journaux Cisco ASA dans Cloud Discovery pour une meilleure visibilité.
+-    Agrandissement de la page pour faciliter l’exécution des actions en bloc et la sélection de plusieurs enregistrements dans les tables du portail Cloud App Security.
+-    Vous pouvez désormais exécuter les rapports intégrés **Partage sortant par domaine** et **Propriétaires de fichiers partagés** pour les données Salesforce.
+-    Nous avons commencé à lancer d’autres activités Salesforce pour vous permettre de suivre les informations pertinentes extraites des données d’activité. Ces activités comprennent l’affichage et la modification des comptes, des prospects, des opportunités ainsi que d’autres objets Salesforce intéressants.
+-    De nouvelles activités Exchange ont été ajoutées pour vous permettre de surveiller les autorisations accordées pour les boîtes aux lettres d’utilisateurs ou les dossiers de boîtes aux lettres. Parmi ces activités, citons les suivantes :
+    -    Ajouter des autorisations à des destinataires
+    -    Supprimer les autorisations de destinataires
+    -    Ajouter des autorisations à des dossiers de boîtes aux lettres
+    -    Supprimer les autorisations de dossiers de boîtes aux lettres
+    -    Définir des autorisations pour des dossiers de boîtes aux lettres
+
+    Par exemple, vous pouvez désormais surveiller les utilisateurs qui disposent d’autorisations **SendAs** sur les boîtes aux lettres d’autres utilisateurs et qui peuvent donc envoyer des e-mails en leur nom.
 
 
 ## <a name="cloud-app-security-release-95-in-roll-out"></a>Cloud App Security version 95 (déploiement)

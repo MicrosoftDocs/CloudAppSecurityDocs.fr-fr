@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/30/2017
+ms.date: 5/7/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f9c86d2ce7b45a8de88ebba84ff8608b67117080
-ms.sourcegitcommit: 7e9ae94cb4f90fbccaa84f19bdebb4652a425e45
-translationtype: HT
+ms.openlocfilehash: d12fa44f42c5545464c7e8ba9da366a2302f73c1
+ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.translationtype: HT
+ms.contentlocale: fr-FR
 ---
 # <a name="set-up-cloud-discovery"></a>Configurer Cloud Discovery
 Cloud Discovery analyse vos journaux de trafic par rapport au catalogue de plus de 13 000 applications cloud de Cloud App Security qui sont classées et évaluées selon plus de 50 attributs pour que vous bénéficiiez d’une visibilité permanente sur l’utilisation du cloud, l’informatique fantôme et le risque que ce dernier représente pour votre organisation.
@@ -74,15 +75,19 @@ Pour générer correctement un rapport Cloud Discovery, vos journaux de trafic d
 4.  Le fichier journal est valide et comprend des informations sur le trafic sortant.
  
 ## <a name="supported-firewalls-and-proxies"></a>Pare-feu et proxys pris en charge
+
+- Barracuda - Web Application Firewall (W3C)
 - Blue Coat Proxy SG - Journal d’accès (W3C)
 - Check Point
 - Pare-feu Cisco ASA (pour les pare-feu Cisco ASA, il est nécessaire de définir le niveau d’informations 6)
 - Cisco IronPort WSA
 - Cisco ScanSafe
 - Cisco Meraki – Journal des URL
+- Clavister NGFW (Syslog)
 - Dell Sonicwall
 - Fortinet Fortigate
 - Juniper SRX
+- Juniper SSG
 - McAfee Secure Web Gateway
 - Microsoft Forefront Threat Management Gateway (W3C)
 - Pare-feu de la série Palo Alto
@@ -95,24 +100,26 @@ Pour générer correctement un rapport Cloud Discovery, vos journaux de trafic d
 - Zscaler
 
 
-Si votre journal n’est pas pris en charge, sélectionnez **Autre** comme **Source de données** et spécifiez l’appareil et le journal que vous essayez de charger. Votre journal est examiné par l’équipe d’analystes cloud Cloud App Security et vous êtes averti si la prise en charge de votre type de journal est ajoutée. 
+Si votre journal n’est pas pris en charge, sélectionnez **Autre** comme **Source de données** et spécifiez l’appareil et le journal que vous essayez de charger. Votre journal est examiné par l’équipe d’analystes cloud Cloud App Security et vous êtes averti si la prise en charge de votre type de journal est ajoutée. Vous pouvez également définir un analyseur personnalisé qui correspond à votre format. Pour plus d’informations, consultez [Utiliser un analyseur de journaux personnalisé](custom-log-parser.md).
 
 
 Attributs de données (selon la documentation du fournisseur) :
 
 |Source de données|URL de l’application cible|Adresse IP de l’application cible|Nom d'utilisateur|Adresse IP d’origine|Total du trafic|Octets chargés|
 |----|----|----|-----|----|----|----|
+|Barracuda|**Oui**|**Oui**|**Oui**|**Oui**|Non|Non|
 |Blue Coat|**Oui**|Non|**Oui**|**Oui**|**Oui**|**Oui**|
 |Point de contrôle|Non|**Oui**|Non|**Oui**|Non|Non|
 |Cisco ASA|Non|**Oui**|Non|**Oui**|**Oui**|Non|
 |Cisco FWSM|Non|**Oui**|Non|**Oui**|**Oui**|Non|
 |Cisco Ironport WSA|**Oui**|**Oui**|**Oui**|**Oui**|**Oui**|**Oui**|
-|Cisco Scansfe|**Oui**|Non|**Oui**|**Oui**|**Oui**|**Oui**|
+|Cisco Meraki|**Oui**|**Oui**|Non|**Oui**|Non|Non||Cisco Scansafe|**Oui**|Non|**Oui**|**Oui**|**Oui**|**Oui**|
+|Clavister NGFW (Syslog)|**Oui**|**Oui**|**Oui**|**Oui**|**Oui**|**Oui**|
 |Dell SonicWall|**Oui**|**Oui**|Non|**Oui**|**Oui**|**Oui**|
 |Fortigate|Non|**Oui**|Non|**Oui**|**Oui**|**Oui**|
-|Juniper SRX|Non|**Oui**|Non|**Oui**\*|**Oui**|**Oui**|
+|Juniper SRX|Non|**Oui**|Non|**Oui**\**|**Oui**|**Oui**|
+|Juniper SSG|Non|**Oui**|Non|**Oui**|**Oui**|**Oui**|
 |McAfee SWG|**Oui**|Non|Non|**Oui**|**Oui**|**Oui**|
-|Meraki|**Oui**|**Oui**|Non|**Oui**|Non|Non|
 |MS TMG|**Oui**|Non|**Oui**|**Oui**|**Oui**|**Oui**|
 |Palo Alto Networks|**Oui**|**Oui**|**Oui**|**Oui**\*|**Oui**|**Oui**|
 |Sophos|**Oui**|**Oui**|**Oui**|**Oui**|**Oui**|Non|

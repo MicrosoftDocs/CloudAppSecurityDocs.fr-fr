@@ -13,12 +13,17 @@ ms.technology:
 ms.assetid: 588b3639-f748-45a6-bc4b-a6ee47c1865e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4191a3c73344eb631a989ba6942b7ac6a515940f
-ms.sourcegitcommit: fd3b6c04cec30f7c9300cc02d29d562d17bf43ea
-translationtype: HT
+ms.openlocfilehash: d159cb95c9f0468e8c658c13586d07f0f20049ef
+ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.translationtype: HT
+ms.contentlocale: fr-FR
 ---
 # <a name="built-in-report-reference"></a>Informations de référence sur les rapports intégrés
-Nous vous recommandons de créer vos rapports personnalisés à partir de rapports intégrés, qui font ainsi office de modèle. Le tableau suivant dresse la liste des rapports intégrés et indique les types d’événements que vous pouvez surveiller avec ces rapports.  
+
+CAS propose une liste complète de rapports intégrés prêts à l’emploi à l’aide desquels vous pouvez recueillir des insights et surveiller l’utilisation du cloud. Vous pouvez utiliser les filtres pour personnaliser les rapports et les exporter par souci pratique.
+
+
+Le tableau suivant dresse la liste des rapports intégrés et indique les types d’événements que vous pouvez surveiller avec ces rapports.  
   
 ## <a name="built-in-report-list"></a>Liste des rapports intégrés  
   
