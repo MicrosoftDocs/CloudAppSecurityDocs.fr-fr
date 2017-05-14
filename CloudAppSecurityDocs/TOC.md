@@ -3,7 +3,10 @@
 ## [Notes de publication](release-notes.md)
 # Déployer
 ## [Mise en route](getting-started-with-cloud-app-security.md)
-## [Personnaliser le portail](general-setup.md)
+## [Configuration de base](general-setup.md)
+### [Gérer les administrateurs](manage-admins.md)
+#### [Paramètres d’administration](admin-settings.md)
+### [Paramètres de messagerie](mail-settings.md)
 ### [Groupes d’utilisateurs](user-groups.md)
 ### [Balises et plages IP](ip-tags.md)
 ## [Déployer Cloud Discovery](set-up-cloud-discovery.md)
@@ -51,3 +54,4 @@
 ## [Résolution des problèmes de Cloud Discovery](troubleshooting-cloud-discovery.md)
 ## [Résolution des problèmes des connecteurs API à l’aide de messages d’erreur](troubleshooting-api-connectors-using-error-messages.md)
 ## [Résolution des problèmes d’inspection du contenu](troubleshooting-content-inspection.md)
+## [Résolution des problèmes d’intégration de SIEM](troubleshooting-siem.md)
