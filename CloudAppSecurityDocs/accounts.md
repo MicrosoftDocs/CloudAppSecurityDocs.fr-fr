@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/25/2016
+ms.date: 4/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 7811f23b-6100-427f-93b1-44f5f81f6c76
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f6a8ad3618f27cbfecd11fd0f12817c030620c20
-ms.sourcegitcommit: 06809e22a767723a77a52b910aa41eca9728228b
-translationtype: HT
+ms.openlocfilehash: cc25a661cf7bd18be19e9e6fd82a4d39cf132c66
+ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/10/2017
 ---
 # <a name="accounts"></a>Comptes
 Cloud App Security vous donne une visibilité sur les comptes de vos applications connectées. Une fois connecté à une application à l’aide du connecteur d’applications, Cloud App Security lit les informations sur le compte qui sont associées aux applications connectées. La page Comptes vous permet d’examiner ces comptes, les autorisations, les groupes dont ils sont membres, leurs alias et les applications qu’ils utilisent. En outre, quand Cloud App Security détecte un nouveau compte qui n’a pas déjà été vu dans l’une des applications connectées (par exemple dans les activités ou le partage de fichiers), le compte est ajouté à la liste des comptes de cette application. Cela vous permet d’avoir une visibilité sur l’activité des utilisateurs externes interagissant avec vos applications cloud.
