@@ -327,7 +327,7 @@ Publication : 7 août 2016
 
 - Des analyseurs de fichiers journaux Cloud Discovery optimisés, avec l’ajout de Juniper et Cisco ASA.
 - Cloud App Security vous permet désormais de fournir des commentaires relatifs à l’amélioration des alertes quand vous ignorez l’une d’elles. Vous pouvez aider à améliorer la qualité de la fonctionnalité d’alerte Cloud App Security en nous indiquant pourquoi vous ignorez l’alerte, par exemple parce qu’elle n’est pas intéressante, vous avez reçu un trop grand nombre d’alertes similaires, la gravité réelle doit être inférieure, l’alerte n’est pas exacte.
-- Dans la vue de stratégie de fichier, ou quand vous affichez un fichier, quand vous ouvrez le tiroir de fichiers, le nouveau lien vers Stratégies correspondantes a été ajouté. Quand vous cliquez dessus, vous pouvez afficher toutes les correspondances et vous pouvez désormais toutes les ignorer. 
+-Dans la vue de stratégie de fichier, ou quand vous affichez un fichier, quand vous ouvrez le tiroir de fichiers, le nouveau lien vers Stratégies correspondantes a été ajouté. Quand vous cliquez dessus, vous pouvez afficher toutes les correspondances et vous pouvez désormais toutes les ignorer. 
 - L’unité d’organisation à laquelle appartient un utilisateur est maintenant ajoutée à toutes les alertes pertinentes.
 - Une notification par e-mail est maintenant envoyée pour vous avertir de la fin du traitement de vos journaux chargés manuellement.
 
