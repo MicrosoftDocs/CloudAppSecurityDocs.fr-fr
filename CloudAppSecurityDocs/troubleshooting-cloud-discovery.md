@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 5/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,16 @@ ms.technology:
 ms.assetid: 76dfaebb-d477-4bdb-b3d7-04cc3fe6431d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 1cd697631f776c55fbedcec9a0ed34a3b68d8ac0
-ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
-translationtype: HT
+ms.openlocfilehash: 35d965d753dae9013a42f89ded8a87c461baa330
+ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/10/2017
 ---
 # <a name="troubleshooting-cloud-discovery"></a>Dépannage de Cloud Discovery
 ## <a name="log-parsing-errors"></a>Erreurs d’analyse du journal
 
-Vous pouvez suivre le traitement des journaux Cloud Discovery à l’aide du journal de gouvernance. Ce guide fournit des actions de résolution à entreprendre pour chaque erreur qui peut s’afficher ici.
+Vous pouvez suivre le traitement des journaux Cloud Discovery à l’aide du journal de gouvernance. Cet article fournit des actions de résolution à entreprendre pour chaque erreur qui peut s’afficher ici.
 
 ### <a name="governance-log-errors"></a>Erreurs du journal de gouvernance
 |ERREUR|DESCRIPTION|RÉSOLUTION|
@@ -30,7 +32,7 @@ Vous pouvez suivre le traitement des journaux Cloud Discovery à l’aide du jou
 |Le format de journal ne correspond pas|Le format de journal que vous avez chargé ne correspond pas au format attendu pour cette source de données.|1. Vérifiez que le journal n’est pas endommagé. <br /> 2. Comparez et associez votre journal à l’exemple de format illustré dans la page de chargement.|
 |Les transaction datent de plus de 90 jours|Toutes les transactions datent de plus de 90 jours et sont par conséquent ignorées.|Exportez un nouveau journal avec des événements récents et rechargez ce dernier.|
 |Aucune transaction pour les applications cloud cataloguées|Aucune transaction pour les applications cloud reconnues ne figure dans le journal.|Vérifiez que le journal contient des informations sur le trafic sortant.|
-|Type de journal non pris en charge|Quand vous sélectionnez **Data source = Other (unsupported)** [Source de données = autre (non prise en charge)], le journal n’est pas analysé. Au lieu de cela, il est envoyé à l’équipe technique Cloud App Security pour y être examiné.|L’équipe technique Cloud App Security génère un analyseur dédié par source de données. Les sources de données les plus utilisées sont [déjà prises en charge](set-up-cloud-discovery.md). Chaque chargement d’une source de données non prise en charge est examiné et ajouté au pipeline pour les nouveaux analyseurs de sources de données. Les notifications des nouveaux analyseurs sont publiées dans le cadre des notes de publication Cloud App Security.|
+|Type de journal non pris en charge|Quand vous sélectionnez **Data source = Other (unsupported)** [Source de données = autre (non prise en charge)], le journal n’est pas analysé. Au lieu de cela, il est envoyé à l’équipe technique Cloud App Security pour y être examiné.|L’équipe technique Cloud App Security génère un analyseur dédié par source de données. Les sources de données les plus utilisées sont [déjà prises en charge](set-up-cloud-discovery.md). Chaque chargement d’une source de données non prise en charge est examiné et ajouté au pipeline pour les nouveaux analyseurs de sources de données. Les notifications des nouveaux analyseurs sont publiées dans le cadre des [notes de publication](release-notes.md) Cloud App Security.|
 ## <a name="log-collector-errors"></a>Erreurs du collecteur de journaux
 
 |PROBLÈME|RÉSOLUTION|
