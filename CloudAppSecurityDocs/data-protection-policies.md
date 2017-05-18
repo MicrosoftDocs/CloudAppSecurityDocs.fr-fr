@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/3/2017
+ms.date: 5/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,10 +13,11 @@ ms.technology:
 ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 04264ea25a987e2bfef60a0e77c0a227b650b740
-ms.sourcegitcommit: 34cd68651b5a1be9bc460d7175bc2711efa103b2
+ms.openlocfilehash: 5d8ff332a58da395a8284dfd3416e54624b739ef
+ms.sourcegitcommit: f1ac8ccd470229078aaf1b58234a9a2095fa9550
 ms.translationtype: HT
 ms.contentlocale: fr-FR
+ms.lasthandoff: 05/15/2017
 ---
 # <a name="file-policies"></a>Stratégies de fichier  
 Les stratégies de fichier vous permettent d’appliquer une large gamme de processus automatisés en exploitant les API du fournisseur de cloud. Vous pouvez définir des stratégies pour fournir des analyses de conformité en continu, des tâches eDiscovery réglementaires, une protection contre la perte de données (DLP, Data Loss Prevention) au contenu sensible partagé publiquement et de nombreux autres cas d’usage.  
@@ -64,12 +65,16 @@ Pour créer une stratégie de fichier, procédez comme suit :
   
 3.  Donnez à votre stratégie un nom et une description. Si vous le souhaitez, vous pouvez la baser sur un modèle ; pour plus d’informations sur les modèles de stratégie, consultez [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md).  
   
-4.  Dans **Type de risque**, liez la stratégie au type de risque le plus approprié. Ce champ est à titre informatif uniquement et vous permet de rechercher ultérieurement des stratégies et alertes spécifiques, selon le type de risque.  Le risque est peut-être déjà présélectionné en fonction de la catégorie pour laquelle vous avez choisi de créer la stratégie. Par défaut, les stratégies de fichier ont la valeur DLP.  
+3. Définissez une **Gravité de la stratégie**. Si Cloud App Security est défini pour vous envoyer des notifications en cas de correspondances de stratégie pour un niveau de gravité de stratégie spécifique, votre sélection détermine si les correspondances de cette stratégie déclenchent une notification.
+
+4.  Dans **Catégorie**, liez la stratégie au type de risque le plus approprié. Ce champ est à titre informatif uniquement et vous permet de rechercher ultérieurement des stratégies et alertes spécifiques, selon le type de risque.  Le risque est peut-être déjà présélectionné en fonction de la catégorie pour laquelle vous avez choisi de créer la stratégie. Par défaut, les stratégies de fichier ont la valeur DLP.  
   
 5.  Pour définir les applications découvertes qui déclenchent cette stratégie, **Créer un filtre pour les fichiers sur lesquels cette stratégie s’appliquera**, limitez les filtres de stratégie jusqu’à atteindre l’ensemble de fichiers le plus précis sur lequel vous voulez agir. Soyez aussi restrictif que possible afin d’éviter les faux positifs. Par exemple, si vous voulez supprimer les autorisations publiques, n’oubliez pas d’ajouter le filtre **Public** ; si vous voulez supprimer un utilisateur externe, utilisez le filtre « Externe », etc.  
 > [!NOTE] 
 > Quand vous utilisez des filtres de stratégie, le filtre **Contains (Contient)** recherche uniquement des mots entiers, séparés par des virgules, points, espaces ou traits de soulignement. Par exemple, si vous recherchez **malware** ou **virus**, il trouve virus_malware_file.exe, mais pas malwarevirusfile.exe. Si vous recherchez **malware.exe**, vous obtenez tous les fichiers exe dont le nom contient malware ou exe, tandis que si vous recherchez **"malware.exe"** (avec les guillemets), vous n’obtenez que les fichiers dont le nom contient exactement « malware.exe ». **Equals (Est égal à)** recherche uniquement la chaîne complète ; par exemple, si vous recherchez **malware.exe**, il trouve malware.exe, mais pas malware.exe.txt.  
-6.  Pour Box, SharePoint, Dropbox et OneDrive, vous pouvez appliquer votre stratégie de fichier à tous les fichiers de l’application ou à des dossiers spécifiques. Sous **Appliquer à**, sélectionnez **dossiers sélectionnés** ou **tous les fichiers excepté les dossiers sélectionnés**. Vous êtes alors redirigé pour vous connecter à l’application cloud, puis vous ajoutez les dossiers appropriés.  
+6.   Sous le premier filtre **Appliquer à**, sélectionnez **dossiers sélectionnés** ou **tous les fichiers excepté les dossiers sélectionnés** pour Box, SharePoint, Dropbox, OneDrive. Vous pouvez ainsi appliquer votre stratégie de fichiers à tous les fichiers de l’application ou à des dossiers spécifiques. Votre êtes redirigé pour vous connecter à l’application cloud. Ajoutez ensuite les dossiers appropriés.  
+
+6. Sous le deuxième filtre **Appliquer à**, sélectionnez **tous les propriétaires de fichiers**, **propriétaires de fichiers de groupes d’utilisateurs sélectionnés** ou **tous les propriétaires de fichiers à l’exception de groupes sélectionnés**, puis sélectionnez les groupes d’utilisateurs appropriés pour déterminer les utilisateurs et les groupes à inclure dans la stratégie.
   
 7.  Sélectionnez la **Méthode d’inspection du contenu**. La protection contre la perte de données (DLP) intégrée vous permet de filtrer les fichiers par leur contenu. Pour analyser le contenu des fichiers, sélectionnez ensuite **DLP intégré**. Une fois que l’inspection du contenu est activée, vous pouvez choisir d’utiliser des expressions prédéfinies ou de rechercher d’autres expressions personnalisées, sous forme de sous-chaîne ou d’[expression régulière](working-with-the-regex-engine.md) de votre choix.  
     De plus, vous pouvez spécifier une expression régulière pour exclure un fichier des résultats. Cette possibilité s’avère très utile si vous avez des mots clés de classification interne standard à exclure de la stratégie.  
@@ -78,15 +83,9 @@ Pour créer une stratégie de fichier, procédez comme suit :
   
 8.  Choisissez les actions de **gouvernance** que Cloud App Security doit exécuter quand une correspondance est détectée.  
   
-9. Une fois que vous avez créé votre stratégie, vous pouvez l’afficher sous l’onglet **Stratégie de fichier**. Vous pouvez toujours modifier une stratégie, ajuster ses filtres ou modifier les actions automatisées. La stratégie est automatiquement activée lors de la création et démarre immédiatement l’analyse de vos fichiers cloud.  
+9. Une fois que vous avez créé votre stratégie, vous pouvez l’afficher sous l’onglet **Stratégie de fichier**. Vous pouvez toujours modifier une stratégie, ajuster ses filtres ou modifier les actions automatisées. La stratégie est automatiquement activée lors de la création et démarre immédiatement l’analyse de vos fichiers cloud.  Soyez vigilant quand vous définissez des actions de gouvernance. Elles peuvent entraîner une perte irréversible des autorisations d’accès à vos fichiers. Il est recommandé d’affiner les filtres pour représenter exactement les fichiers sur lesquels vous voulez agir, en utilisant plusieurs champs de recherche. Plus les filtres sont précis, mieux c’est. Pour obtenir des instructions, vous pouvez utiliser le bouton **Modifier et afficher un aperçu des résultats** dans la section Filtres.  
   
-> [!NOTE]  
->  Soyez vigilant quand vous définissez des actions de gouvernance. Elles peuvent entraîner une perte irréversible des autorisations d’accès à vos fichiers.  
-> Il est recommandé d’affiner les filtres pour représenter exactement les fichiers sur lesquels vous voulez agir, en utilisant plusieurs champs de recherche. Plus les filtres sont précis, mieux c’est.  
->   
->  Pour obtenir des instructions, vous pouvez utiliser le bouton **Modifier et afficher un aperçu des résultats** dans la section Filtres.  
-  
- ![stratégie de fichier, modifier et afficher un aperçu des résultats](./media/file-policy-edit-and-preview-results.png "stratégie de fichier, modifier et afficher un aperçu des résultats")  
+   ![stratégie de fichier, modifier et afficher un aperçu des résultats](./media/file-policy-edit-and-preview-results.png "stratégie de fichier, modifier et afficher un aperçu des résultats")  
   
 10. Pour afficher les correspondances de stratégie de fichier, les fichiers qui sont suspectés d’enfreindre la stratégie, cliquez sur **Contrôle**, puis sur **Stratégies**. Filtrez les résultats pour afficher uniquement les stratégies de fichier avec le filtre **Type** en haut. Pour plus d’informations sur les correspondances pour chaque stratégie, cliquez sur une stratégie. Vous affichez ainsi les fichiers Mise en correspondance maintenant pour la stratégie. Cliquez sur l’onglet **Historique** pour consulter un historique remontant jusqu’à 6 mois de fichiers correspondant à la stratégie.     
   
