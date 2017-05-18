@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/9/2017
+ms.date: 5/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5880ea404d6830c5d8f12534c04f123d8c517946
-ms.sourcegitcommit: ea8207f412f31127beafd18a0bd028052fbadf90
+ms.openlocfilehash: ad09d594b73ecd24066db10a19caf39580ad040e
+ms.sourcegitcommit: f1ac8ccd470229078aaf1b58234a9a2095fa9550
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2017
+ms.lasthandoff: 05/15/2017
 ---
 # <a name="siem-integration"></a>Intégration à SIEM
     
@@ -25,12 +25,38 @@ Vous pouvez maintenant intégrer Cloud App Security à votre serveur SIEM pour p
 
 Quand vous intégrez pour la première fois votre serveur SIEM à Cloud App Security, les activités et les alertes des deux derniers jours sont transférées vers le serveur SIEM, ainsi que toutes les activités et alertes (en fonction du filtre que vous sélectionnez) à partir de ce moment-là. En outre, si vous désactivez cette fonctionnalité pour une période prolongée, quand vous la réactivez, elle transfère les deux derniers jours d’alertes et d’activités, et puis toutes les alertes et activités à partir de ce moment-là.
 
+## <a name="siem-integration-architecture"></a>Architecture d'intégration SIEM
+
+L’agent SIEM est déployé dans le réseau de votre organisation. Lorsqu’il est déployé et configuré, il interroge les types de données qui ont été configurés (alertes et activités) à l’aide d’API RESTful de Cloud App Security.
+Le trafic est ensuite envoyé via un canal HTTPS chiffré sur le port 443.
+
+Une fois que l’agent SIEM extrait les données à partir de Cloud App Security, il envoie les messages Syslog à votre SIEM local en utilisant les configurations réseau que vous avez fournies lors de l’installation (TCP ou UDP avec un port personnalisé). 
+
+![Architecture d'intégration SIEM](./media/siem-architecture.png)
+
+## <a name="sample-siem-logs"></a>Exemples de journaux SIEM
+
+Les journaux fournis à votre serveur SIEM à partir de Cloud App Security sont de type CEF sur Syslog. Dans les exemples de journaux suivants, vous pouvez voir le type d’événement généralement envoyé par Cloud App Security à votre serveur SIEM. Dans ces exemples, vous pouvez voir quand l’alerte a été déclenchée, le **type d’événement**, la **stratégie** qui a été enfreinte, **l’utilisateur** qui a déclenché l’événement, **l’application** utilisée par l’utilisateur pour créer la violation de la sécurité et **l’URL** d’où provient l’alerte :
+
+Exemple de journal d’activité : 
+  
+2017-05-12T13:15:32.131Z CEF:0|MCAS|SIEM_Agent|0.97.33|EVENT_CATEGORY_UPLOAD_FILE|**Charger un fichier**|0|externalId=AVv8zNojeXPEqTlM-j6M start=1494594932131 end=1494594932131 msg=**Charger un fichier : passwords.txt** **suser=admin@contoso.com** destination**ServiceName=Jive Software** dvc= requestClientApplication= cs1Label=**portalURL cs1=https://contoso.cloudappsecurity.com**/#/audits?activity.id\=eq(AVv8zNojeXPEqTlM-j6M,) cs2Label=uniqueServiceAppIds cs2=APPID_JIVE cs3Label=targetObjects cs3=test.txt c6a1Label="Adresse IPv6 de l’appareil" c6a1=
+
+
+
+Exemple de journal d’alerte : 
+
+2017-05-12T13:25:57.640Z CEF:0|MCAS|SIEM_Agent|0.97.33|ALERT_CABINET_EVENT_MATCH_AUDIT|asddsddas|3|externalId=5915b7e50d5d72daaf394da9 start=1494595557640 end=1494595557640 msg=**La stratégie d’activité 'connexions à Jive'** a été déclenchée par 'admin@contoso.com' **suser=admin@contoso.com** destination**ServiceName=Jive Software** cn1Label=riskScore cn1= cs1Label=portal**URL cs1=https://contoso.cloudappsecurity.com**/#/alerts/5915b7e50d5d72daaf394da9 cs2Label=uniqueServiceAppIds cs2=APPID_JIVE cs3Label=relatedAudits cs3=AVv81ljWeXPEqTlM-j-j
+
+
+## <a name="how-to-integrate"></a>Procédure d’intégration
+
 L’intégration à votre serveur SIEM s’effectue en trois étapes :
 1. Configurez-le dans le portail Cloud App Security. 
 2. Téléchargez le fichier JAR et exécutez-le sur votre serveur.
 3. Vérifiez que l’agent SIEM fonctionne.
 
-## <a name="prerequisites"></a>Conditions préalables
+### <a name="prerequisites"></a>Conditions préalables
 
 - Un serveur Windows ou Linux standard (il peut s’agir d’une machine virtuelle).
 - Le serveur doit exécuter Java 8 ; les versions antérieures ne sont pas prises en charge.
