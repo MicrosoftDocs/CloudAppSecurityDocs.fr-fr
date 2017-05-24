@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ad09d594b73ecd24066db10a19caf39580ad040e
-ms.sourcegitcommit: f1ac8ccd470229078aaf1b58234a9a2095fa9550
+ms.openlocfilehash: 292b4c6408aa526184aefb57ee594b72b3262ce7
+ms.sourcegitcommit: cb8238610222953751ff714b346a0b4cf73ac40c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2017
+ms.lasthandoff: 05/16/2017
 ---
 # <a name="siem-integration"></a>Intégration à SIEM
     
@@ -73,7 +73,7 @@ L’intégration à votre serveur SIEM s’effectue en trois étapes :
 
    ![Paramètres SIEM généraux](./media/siem1.png)
 
-5. Entrez l’adresse IP de l’**hôte Syslog distant** et le **numéro de port Syslog**. Sélectionnez TCP ou UDP comme protocole Syslog distant.
+5. Entrez l’adresse IP ou le nom d’hôte de **l’hôte Syslog distant** et le **numéro de port Syslog**. Sélectionnez TCP ou UDP comme protocole Syslog distant.
 Vous pouvez travailler avec votre administrateur de la sécurité pour obtenir ces informations si vous n’en disposez pas.
 Cliquez sur **Suivant**.
   ![Paramètres Syslog distants](./media/siem2.png)
