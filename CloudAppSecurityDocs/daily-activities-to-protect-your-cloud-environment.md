@@ -14,8 +14,10 @@ ms.assetid: a835fa24-15c5-4bbb-a25a-688444040f1f
 ms.reviewer: reutam
 ms.suite: ems
 ms.openlocfilehash: 62463e7336c58eefb3c82bc0e24261ba31684d5c
-ms.sourcegitcommit: cda4a69f9ad9c6eb66fbdb98610f54d79585b84b
-translationtype: HT
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="working-with-the-dashboard"></a>Utilisation du tableau de bord
 Une fois que Cloud App Security est opérationnel, vous devez configurer des flux de données, approuver les applications que vos utilisateurs doivent pouvoir utiliser et définir des stratégies pour surveiller votre environnement cloud. Vous pouvez ensuite utiliser Cloud App Security pour contrôler et protéger votre cloud, et pour gérer les risques.  
