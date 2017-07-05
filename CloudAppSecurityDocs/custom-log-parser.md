@@ -14,9 +14,10 @@ ms.assetid: a612d87e-5471-4add-b4b1-dbbb530f2b61
 ms.reviewer: reutam
 ms.suite: ems
 ms.openlocfilehash: 73da4104de24a7b2e6814f04b227140b0b57235f
-ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="use-a-custom-log-parser"></a>Utiliser un analyseur de journal personnalisé
 Cloud App Security vous permet de configurer un analyseur personnalisé correspondant au format de vos journaux. Vous pouvez ainsi les utiliser avec Cloud Discovery, même s’ils proviennent d’un pare-feu ou d’un appareil qui n’est pas explicitement pris en charge par Cloud App Security. 
@@ -26,7 +27,7 @@ L’analyseur personnalisé vous permet d’utiliser les journaux de pare-feu no
 
  
 Pour configurer un analyseur CSV personnalisé :
-1.    Dans le portail Cloud App Security, cliquez sur **Découvrir**, puis sur **Créer un rapport de capture instantanée**.  
+1.  Dans le portail Cloud App Security, cliquez sur **Découvrir**, puis sur **Créer un rapport de capture instantanée**.  
   
     ![Créer un rapport de capture instantanée](./media/create-new-snapshot-report.png)
      
