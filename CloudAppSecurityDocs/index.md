@@ -1,9 +1,11 @@
 ---
 layout: LandingPage
 description: "Découvrez comment utiliser Cloud App Security."
-ms.openlocfilehash: a181d0871c17e7f94b17d72182225652c9df2438
-ms.sourcegitcommit: ddfac1ff8a07ff34acfa1945400950b749bdcb4d
-translationtype: HT
+ms.openlocfilehash: d499b8abe9aa775dbd0c248cf117040c322111de
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="cloud-app-security-documentation"></a>Documentation Cloud App Security
 

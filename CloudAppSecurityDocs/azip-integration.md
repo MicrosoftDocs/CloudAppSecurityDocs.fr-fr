@@ -14,10 +14,10 @@ ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
 ms.openlocfilehash: 79e784c332045ebe300a34f5c6da918343a0df45
-ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="azure-information-protection-integration"></a>Intégration d’Azure Information Protection
 
@@ -94,17 +94,17 @@ Pour les ignorer l’ensemble des étiquettes de classification externes à votr
 
 **Stratégie n°1 - données confidentielles partagées en externe sur Box :**
 
-1.    Créez une stratégie de fichier.
-2.    Définissez le nom, la gravité et la catégorie de la stratégie.
-3.    Ajoutez les filtres suivants pour rechercher toutes les données confidentielles qui sont partagées en externe sur Box :
+1.  Créez une stratégie de fichier.
+2.  Définissez le nom, la gravité et la catégorie de la stratégie.
+3.  Ajoutez les filtres suivants pour rechercher toutes les données confidentielles qui sont partagées en externe sur Box :
 
 ![stratégie confidentialité](./media/azip-confidentiality-policy.png) 
 
 **Stratégie n°2 : données restreintes qui ont été modifiées récemment en dehors du dossier Finance sur SharePoint :**
 
-1.    Créez une stratégie de fichier.
-2.    Définissez le nom, la gravité et la catégorie de la stratégie.
-3.    Ajoutez les filtres suivants pour rechercher toutes les données restreintes qui ont été modifiées récemment et ajouter le dossier Finance dans l’option de sélection de dossier : 
+1.  Créez une stratégie de fichier.
+2.  Définissez le nom, la gravité et la catégorie de la stratégie.
+3.  Ajoutez les filtres suivants pour rechercher toutes les données restreintes qui ont été modifiées récemment et ajouter le dossier Finance dans l’option de sélection de dossier : 
  
 ![stratégie données restreintes](./media/azip-restricted-data-policy.png) 
 
@@ -130,7 +130,7 @@ Une fois Cloud App Security connecté à votre service Office 365, vous êtes en
 ![modèle de protection](./media/protect-template.png)
 3. Une fois que vous avez choisi un modèle et cliqué sur Protéger, Cloud App Security applique le modèle et protège le fichier d’origine. Le fichier protégé a le même nom que le fichier d’origine, à ceci près que son extension est « .pfile ».
 > [!NOTE]
->     Nous vous recommandons d’appliquer aux fichiers les modèles RMS couvrant toute l’entreprise. De la sorte, tous les utilisateurs de l’organisation pourront accéder à ces fichiers, y compris le propriétaire d’origine du fichier. À partir du moment où le fichier est protégé, le propriétaire du fichier, la stratégie de partage du fichier et la liste des utilisateurs qui y ont déjà accès restent inchangés.
+>   Nous vous recommandons d’appliquer aux fichiers les modèles RMS couvrant toute l’entreprise. De la sorte, tous les utilisateurs de l’organisation pourront accéder à ces fichiers, y compris le propriétaire d’origine du fichier. À partir du moment où le fichier est protégé, le propriétaire du fichier, la stratégie de partage du fichier et la liste des utilisateurs qui y ont déjà accès restent inchangés.
 
 4. Si les utilisateurs souhaitent accéder au fichier protégé, leur appareil doit être équipé de l’application de partage RMS. Pour plus d’informations, voir l’article [Présentation technique de l’application de partage Microsoft Rights Management et détails sur la protection](https://docs.microsoft.com/information-protection/rms-client/sharing-app-admin-guide-technical).
 

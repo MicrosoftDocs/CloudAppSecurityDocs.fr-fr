@@ -14,17 +14,19 @@ ms.assetid: eb250ede-fede-4699-a08b-b8ea4b232f07
 ms.reviewer: reutam
 ms.suite: ems
 ms.openlocfilehash: 3d74621d1c173c51a9a3d0e08f261290a6d24835
-ms.sourcegitcommit: 122268f3e7b0cadf1a6a495a50f388fe4adbcc2b
-translationtype: HT
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 06/28/2017
 ---
 ## <a name="cloud-discovery-data-anonymization"></a>Anonymisation des données Cloud Discovery
 
 L’anonymisation de données Cloud Discovery vous permet de protéger la confidentialité des utilisateurs. Une fois que le journal des données est téléchargé sur le portail Cloud App Security, il est purgé et toutes les informations des noms d’utilisateur sont remplacées par des noms d’utilisateur chiffrés. De cette façon, toutes les activités cloud restent anonymes. Quand c’est nécessaire, pour une enquête de sécurité spécifique (par exemple en raison d’une violation de la sécurité ou d’une activité utilisateur suspecte), les administrateurs peuvent résoudre le nom d’utilisateur réel. Si un administrateur a une raison de suspecter un utilisateur spécifique, il peut également rechercher le nom d’utilisateur chiffré d’un nom d’utilisateur connu, puis commencer son investigation avec le nom d’utilisateur chiffré. La conversion de chaque nom d’utilisateur est auditée dans le **journal de gouvernance** du portail.
 
 Points clés :
--    Aucune information privée n’est stockée ou affichée. Seulement des informations chiffrées.
--    Les données privées sont chiffrées en utilisant AES-128 avec une clé dédiée par client.
--    La résolution des noms d’utilisateur est effectuée ad hoc, par nom d’utilisateur en déchiffrant un nom d’utilisateur chiffré donné.
+-   Aucune information privée n’est stockée ou affichée. Seulement des informations chiffrées.
+-   Les données privées sont chiffrées en utilisant AES-128 avec une clé dédiée par client.
+-   La résolution des noms d’utilisateur est effectuée ad hoc, par nom d’utilisateur en déchiffrant un nom d’utilisateur chiffré donné.
 
 
 Fonctionnement de l’anonymisation des données :
