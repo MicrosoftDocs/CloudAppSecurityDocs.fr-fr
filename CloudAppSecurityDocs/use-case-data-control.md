@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/9/2017
+ms.date: 6/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 57927618-cb66-4c7f-afd7-c96926460816
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a74df6095107943630e8bc39c0c702471325adfc
-ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
+ms.openlocfilehash: c218a1aa02aafaa38107bc6072a810dec2e5a0a4
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="controlling-and-protecting-your-files"></a>Contrôler et protéger vos fichiers  
 
@@ -40,7 +40,7 @@ En recherchant et en recoupant ces deux paramètres, la sensibilité et le nivea
 
 #### <a name="setting-up-monitoring"></a>Configurer la surveillance
 
-1.    Démarrez la surveillance de votre application en définissant une stratégie qui analyse tous les fichiers partagés en externe à la recherche de contenu sensible :
+1.  Démarrez la surveillance de votre application en définissant une stratégie qui analyse tous les fichiers partagés en externe à la recherche de contenu sensible :
 
     1. Sur la page **Stratégies**, cliquez sur [ **Créer une stratégie de fichier**](data-protection-policies.md). 
     ![créer une stratégie de fichier](./media/create-file-policy.png)
@@ -101,11 +101,11 @@ Vous savez que vous avez besoin de protéger vos données. Vous vous êtes déj�
     
     1. Sur la page **Stratégies**, cliquez sur [ **Créer une stratégie de fichier**](data-protection-policies.md). 
 
-    2.    Dans la section filtre, vous pouvez supprimer les filtres correspondant au **niveau d’accès** et à la **dernière modification** pour exécuter cette stratégie sur tous les fichiers de votre cloud. Ces filtres s’appliquent uniquement aux fichiers modifiés à partir de maintenant. Ajoutez le filtre **Étiquette de classification**, puis **est égal à** et sélectionnez l’étiquette de classification de votre organisation. 
+    2.  Dans la section filtre, vous pouvez supprimer les filtres correspondant au **niveau d’accès** et à la **dernière modification** pour exécuter cette stratégie sur tous les fichiers de votre cloud. Ces filtres s’appliquent uniquement aux fichiers modifiés à partir de maintenant. Ajoutez le filtre **Étiquette de classification**, puis **est égal à** et sélectionnez l’étiquette de classification de votre organisation. 
     
     ![étiquette de classification de stratégie de fichier](./media/file-policy-class-label.png)
 
-    3.    Pour surveiller le partage inapproprié de ces fichiers classifiés, ajoutez un filtre avec le niveau d’accès que vous voulez empêcher, par exemple, **Niveau d’accès est égal à Public, Public (Internet)**.  Une fois que vous démarrez la stratégie, il faut du temps pour que Cloud App Security puisse analyser les fichiers existants ainsi que les nouveaux fichiers que vous ajoutez. Selon la quantité de données dont vous disposez dans le cloud, l’analyse peut être plus ou moins longue.
+    3.  Pour surveiller le partage inapproprié de ces fichiers classifiés, ajoutez un filtre avec le niveau d’accès que vous voulez empêcher, par exemple, **Niveau d’accès est égal à Public, Public (Internet)**.  Une fois que vous démarrez la stratégie, il faut du temps pour que Cloud App Security puisse analyser les fichiers existants ainsi que les nouveaux fichiers que vous ajoutez. Selon la quantité de données dont vous disposez dans le cloud, l’analyse peut être plus ou moins longue.
 
     ![filtre de stratégie de fichier public](./media/file-policy-filter-public.png)
 

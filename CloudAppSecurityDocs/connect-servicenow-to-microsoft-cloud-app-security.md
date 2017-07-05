@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a2b6658e14438e3504fde61605505abae8d65839
-ms.sourcegitcommit: cb8238610222953751ff714b346a0b4cf73ac40c
+ms.openlocfilehash: a70e561150ef8d00a3815eb4332868f4c1fbeece
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/16/2017
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="connect-servicenow-to-microsoft-cloud-app-security"></a>Connecter ServiceNow à Microsoft Cloud App Security
 
@@ -66,7 +66,7 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
   
 8.  Dans la fenêtre contextuelle, ajoutez vos ID d’utilisateur, mot de passe, URL d’instance, ID de client et secret client ServiceNow dans les zones appropriées. Pour trouver votre ID d’utilisateur ServiceNow, dans le portail ServiceNow, accédez à **Utilisateurs**, puis recherchez votre nom dans la table, celui-ci s’affiche en regard de votre ID d’utilisateur.
 
-![ID d’utilisateur ServiceNow](./media/servicenow-userid.png)
+    ![ID d’utilisateur ServiceNow](./media/servicenow-userid.png)
   
 9.  Cliquez sur **Connexion**.  
   

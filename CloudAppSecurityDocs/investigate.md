@@ -14,8 +14,10 @@ ms.assetid: a9b00c2a-2f71-499e-8f57-67e560daedc1
 ms.reviewer: reutam
 ms.suite: ems
 ms.openlocfilehash: 8e552aea95318288d329597ec2a0749535e06a52
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
-translationtype: HT
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="investigate"></a>Étudier
 Une fois que Cloud App Security s’exécute dans votre environnement cloud, vous avez besoin d’une phase de formation et d’étude sur la façon d’utiliser les outils de Cloud App Security pour mieux comprendre ce qui se passe dans votre environnement cloud. Ensuite, selon votre environnement particulier et la façon dont il est utilisé, vous pouvez identifier ce qui est nécessaire pour protéger votre organisation contre les risques.

@@ -14,8 +14,10 @@ ms.assetid: 2401adbc-0011-4938-9e3a-a4c719a2f619
 ms.reviewer: reutam
 ms.suite: ems
 ms.openlocfilehash: 1083a743f2602bab6e55e96e1e7f7dd4c0b77bce
-ms.sourcegitcommit: fd3b6c04cec30f7c9300cc02d29d562d17bf43ea
-translationtype: HT
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="content-inspection"></a>Inspection du contenu
 Cet article décrit le processus suivi par Cloud App Security lors de l’exécution de l’inspection du contenu DLP sur les données de votre cloud. 
@@ -42,7 +44,7 @@ Les stratégies d’analyse d’inspection du contenu intégrées peuvent recher
 
 - Adresses e-mail 
 - Numéros de carte de crédit 
-  -    Toutes les sociétés émettrices de cartes de crédit (Visa, MasterCard, American Express, Diners Club, Discover, JCB, Dankort, UnionPay) 
+  - Toutes les sociétés émettrices de cartes de crédit (Visa, MasterCard, American Express, Diners Club, Discover, JCB, Dankort, UnionPay) 
   - Délimiteurs (espace, point ou tiret)
   - Cette analyse inclut également la validation de Luhn
 - Codes SWIFT
@@ -63,11 +65,11 @@ Les stratégies d’analyse d’inspection du contenu intégrées peuvent recher
 ## <a name="supported-languages"></a>Langues prises en charge
 
 Le moteur d’inspection du contenu Cloud App Security :
--    Prend en charge tous les caractères Unicode
--    Couvre plus de 1 000 types de fichiers
--    Plusieurs langues sont prises en charge, tout particulièrement dans les fichiers qui utilisent des jeux de caractères Unicode. Veillez à définir vos stratégies pour prendre en charge ces langues. Par exemple, si vous recherchez des mots clés, vous devez les saisir dans les langues que vous prévoyez d’utiliser.
--    Dans les types de fichiers texte qui utilisent du codage non-Unicode, par exemple le codage chinois GB2312, la comparaison avec les mots clés chinois Unicode ne fonctionnera pas comme prévu.
--    Pour les types de fichiers qui s’appuient sur des bibliothèques tierces, la mise en correspondance des chaînes et des mots ne fonctionnera peut-être pas toujours comme prévu. C’est ce qui arrive fréquemment avec les fichiers (par exemple, les fichiers binaires) dans lesquels l’inspection du contenu s’appuie sur des bibliothèques tierces qui renvoient des chaînes en Java pour les jeux de caractères et de langues.
+-   Prend en charge tous les caractères Unicode
+-   Couvre plus de 1 000 types de fichiers
+-   Plusieurs langues sont prises en charge, tout particulièrement dans les fichiers qui utilisent des jeux de caractères Unicode. Veillez à définir vos stratégies pour prendre en charge ces langues. Par exemple, si vous recherchez des mots clés, vous devez les saisir dans les langues que vous prévoyez d’utiliser.
+-   Dans les types de fichiers texte qui utilisent du codage non-Unicode, par exemple le codage chinois GB2312, la comparaison avec les mots clés chinois Unicode ne fonctionnera pas comme prévu.
+-   Pour les types de fichiers qui s’appuient sur des bibliothèques tierces, la mise en correspondance des chaînes et des mots ne fonctionnera peut-être pas toujours comme prévu. C’est ce qui arrive fréquemment avec les fichiers (par exemple, les fichiers binaires) dans lesquels l’inspection du contenu s’appuie sur des bibliothèques tierces qui renvoient des chaînes en Java pour les jeux de caractères et de langues.
 
 
 
