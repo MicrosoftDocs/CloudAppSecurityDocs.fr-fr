@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/10/2017
+ms.date: 7/3/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 049ff6838e03e8d6d2fca49b4dd32c60a1a9db93
-ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
+ms.openlocfilehash: 104f44cb4dc890753551d23682a77b75bba510b1
+ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 07/03/2017
 ---
 # <a name="activities"></a>Activités
 Cloud App Security vous donne une visibilité sur toutes les activités de vos applications connectées. Une fois connecté à une application à l’aide du connecteur d’applications, Cloud App Security analyse toutes les activités passées (la période d’analyse rétroactive varie par application). Cloud App Security est ensuite mis à jour en continu avec les nouvelles activités. 
@@ -80,7 +80,7 @@ Vous trouverez ci-dessous une liste des filtres d’activité qui peuvent être 
    Les balises IP prédéfinies sont les suivantes :
     - Applications Microsoft (14 applications)
     - Proxy anonyme
-    - Botnet
+    - Botnet (vous voyez que l’activité a été effectuée par un botnet avec un lien qui vous permet d’en savoir plus sur le botnet spécifique)
     - Adresse IP d’analyse du darknet
     - Serveur de commande et contrôle de programmes malveillants
     - Analyseur de connectivité à distance
@@ -99,8 +99,8 @@ Vous trouverez ci-dessous une liste des filtres d’activité qui peuvent être 
 -   ISP enregistré : Fournisseur de services Internet à partir duquel l’activité a été effectuée.   
 
 -  Source : Effectuez la recherche en fonction de la source à partir de laquelle l’activité a été détectée. La source peut être l’un des éléments suivants :
-  -    Connecteur d’application : journaux provenant directement du connecteur d’API de l’application.
-  -    Analyse du connecteur d’application : enrichissements de Cloud App Security basés sur l’analyse des informations par le connecteur d’API.
+  - Connecteur d’application : journaux provenant directement du connecteur d’API de l’application.
+  - Analyse du connecteur d’application : enrichissements de Cloud App Security basés sur l’analyse des informations par le connecteur d’API.
   
 
 -   Utilisateur : Utilisateur qui a exécuté l’activité, qui peut être filtré en domaine, groupe, nom ou organisation. Pour filtrer les activités sans utilisateur spécifique, vous pouvez utiliser l’opérateur « n’est pas défini ».  
@@ -117,10 +117,14 @@ Vous trouverez ci-dessous une liste des filtres d’activité qui peuvent être 
   
 -   Étiquette agent utilisateur : Balise d’agent utilisateur intégrée, par exemple toutes les activités d’un navigateur obsolète ou d’anciens systèmes d’exploitation.  
     
-  
-## <a name="working-with-the-activity-drawer"></a>Travailler avec le tiroir Activité
+>[!NOTE]
+> Si vous voulez effacer les filtres, vous pouvez le faire à tout moment en cliquant sur l’icône d’effacement des filtres ![icône d’effacement des filtres](./media/clear-filters.png).
 
-Vous pouvez afficher plus d’informations supplémentaires sur chaque activité en cliquant sur l’activité elle-même dans le journal d’activité. Cela ouvre le tiroir Activité qui contient les actions supplémentaires suivantes que vous pouvez réaliser sur le fichier :
+## <a name="the-activity-drawer"></a>Tiroir Activité
+
+### <a name="working-with-the-activity-drawer"></a>Travailler avec le tiroir Activité
+
+Vous pouvez afficher plus d’informations supplémentaires sur chaque activité en cliquant sur l’activité elle-même dans le journal d’activité. Cette opération ouvre le tiroir Activité qui contient les actions supplémentaires suivantes que vous pouvez appliquer à l’activité :
 
 - Stratégies correspondantes : Cliquez sur le lien Stratégies correspondantes pour afficher la liste des stratégies que cette activité a mises en correspondance.
 - Afficher les données brutes : Cliquez sur Afficher les données brutes pour afficher les données réelles reçues de l’application.
@@ -135,6 +139,22 @@ Les champs du tiroir d’activité fournissent des liens contextuels vers des fi
 ![tiroir activité](./media/activity-drawer.png "tiroir activité")  
   
 Pour obtenir la liste des actions de gouvernance disponibles, consultez [Actions de gouvernance des activités](governance-actions.md#activity-governance-actions).
+
+### <a name="user-insights"></a>Insights utilisateur
+
+L’expérience d’investigation comprend des insights prêts à l’emploi sur l’utilisateur responsable de l’action. En un seul clic, vous pouvez obtenir une vue d’ensemble complète de l’utilisateur, notamment l’endroit à partir duquel il s’est connecté, le nombre d’alertes ouvertes qui le concernent et ses informations de métadonnées.
+
+Pour afficher les insights utilisateur :
+
+1. Cliquez sur l’activité elle-même dans le **Journal d’activité**.
+
+2. Ensuite, cliquez sur l’onglet **Utilisateur**. <br></br> Cette opération ouvre l’onglet **Utilisateur** du tiroir Activité qui fournit les insights suivants sur l’utilisateur :
+    - **Alertes ouvertes** : Nombre d’alertes ouvertes concernant l’utilisateur.
+    - **Violation de fichiers** : Nombre de violations des fichiers appartenant à l’utilisateur.
+    - **Activités** : Nombre d’activités effectuées par l’utilisateur au cours des 30 derniers jours.
+    - **Pays** : Nombre de pays à partir desquels l’utilisateur s’est connecté au cours des 30 derniers jours.
+    - **ISP** : Nombre d’ISP à partir desquels l’utilisateur s’est connecté au cours des 30 derniers jours.
+    - **Adresses IP** : Nombre d’adresses IP à partir desquelles l’utilisateur s’est connecté au cours des 30 derniers jours.
 
 
 ## <a name="see-also"></a>Voir aussi  
