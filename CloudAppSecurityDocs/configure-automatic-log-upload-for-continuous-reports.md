@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/16/2017
+ms.date: 7/3/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,16 @@ ms.technology:
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a5f360181eb9a39bfe50660cfd733ecb51aa161d
-ms.sourcegitcommit: cb8238610222953751ff714b346a0b4cf73ac40c
+ms.openlocfilehash: 11d3a78803c2a22f7d08bdab9d70aec73124ff8b
+ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/16/2017
+ms.lasthandoff: 07/03/2017
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports"></a>Configurer le chargement automatique des journaux pour des rapports continus
-Les collecteurs de journaux vous permettent d’automatiser facilement le chargement manuel des journaux de votre réseau. Le collecteur de journaux s’exécute sur votre réseau et reçoit les journaux par le biais de Syslog ou FTP. Chaque journal est automatiquement traité, compressé et transmis au portail. Les journaux FTP sont chargés sur Cloud App Security une fois que le fichier a terminé le transfert FTP vers le collecteur de journaux et, pour les journaux Syslog, le collecteur de journaux écrit les journaux reçus sur disque toutes les 20 minutes, puis charge le fichier sur Cloud App Security.
+Les collecteurs de journaux vous permettent d’automatiser facilement le chargement manuel des journaux de votre réseau. Le collecteur de journaux s’exécute sur votre réseau et reçoit les journaux par le biais de Syslog ou FTP. Chaque journal est automatiquement traité, compressé et transmis au portail. Les journaux FTP sont chargés dans Cloud App Security une fois que le fichier a terminé le transfert FTP vers le collecteur de journaux et, pour Syslog, le collecteur de journaux écrit les journaux reçus sur le disque et charge le fichier dans Cloud App Security quand la taille de fichier dépasse 40 Ko.
+
+Une fois qu’un journal est chargé dans Cloud App Security, il est déplacé dans un répertoire de sauvegarde qui stocke les 20 derniers journaux à un moment donné. Quand de nouveaux journaux arrivent, les anciens sont supprimés. Quand l’espace disque du collecteur de journaux est plein, le collecteur de journaux supprime les nouveaux journaux tant qu’il ne dispose pas de davantage d’espace disque libre.
 
 Avant de configurer la collecte de fichiers journaux automatique, vérifiez que votre journal correspond au type attendu de journal pour vous assurer que Cloud App Security peut analyser votre fichier spécifique. 
 
@@ -80,7 +82,7 @@ Le collecteur de journaux dispose d’un mécanisme de sécurité intégré qui 
   > - Copiez le contenu de l’écran, car vous aurez besoin des informations lors de la configuration du collecteur de journaux pour communiquer avec Cloud App Security. Si vous avez sélectionné Syslog, ces informations vont inclure des informations sur le port utilisé par l’écouteur Syslog pour écouter.
 4.  **Téléchargez** une nouvelle machine virtuelle de collecteur de journaux en cliquant sur Hyper-V ou VMWare et décompressez le fichier en utilisant le mot de passe que vous avez reçu dans le portail.  
   
-###    <a name="step-2--on-premises-deployment-of-the-virtual-machine-and-network-configuration"></a>Étape 2 : déploiement local de la machine virtuelle et de la configuration réseau   
+### <a name="step-2--on-premises-deployment-of-the-virtual-machine-and-network-configuration"></a>Étape 2 : déploiement local de la machine virtuelle et de la configuration réseau   
 
 > [!NOTE] 
 > La procédure suivante décrit le déploiement dans Hyper-V. La procédure de déploiement pour l’hyperviseur de machine virtuelle est légèrement différente.  
@@ -146,11 +148,23 @@ Configurez vos pare-feu réseau et proxys pour exporter régulièrement les jour
   
 ### <a name="step-5---verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>Étape 5 : vérifier la réussite du déploiement dans le portail Cloud App Security
 
+Consultez l’état du collecteur dans le tableau **Collecteur de journaux** et vérifiez que l’état est **Connecté**. Si l’état est **Créé**, il est possible que la connexion du collecteur de journaux et l’analyse ne soient pas effectuées.
+
+![état du collecteur de journaux](./media/log-collector-status.png)
+
 Accédez au journal de gouvernance et vérifiez que les journaux sont régulièrement chargés sur le portail.  
   
 Si vous rencontrez des problèmes lors du déploiement, consultez [Dépannage de Cloud Discovery](troubleshooting-cloud-discovery.md).
 
+### <a name="optional---create-custom-continuous-reports"></a>Facultatif : Créer des rapports continus personnalisés
 
+Après avoir vérifié que les journaux sont en cours de chargement dans Cloud App Security et que les rapports sont générés, vous pouvez créer des rapports personnalisés. Vous pouvez maintenant créer des rapports de découverte personnalisés basés sur les groupes d’utilisateurs Azure Active Directory. Par exemple, si vous voulez afficher l’utilisation cloud de votre service marketing, vous pouvez importer le groupe marketing à l’aide de la fonctionnalité d’importation des groupes d’utilisateurs, puis créer un rapport personnalisé pour ce groupe. Vous pouvez également personnaliser un rapport en fonction d’une balise d’adresse IP ou de plages d’adresses IP.
+
+1. Dans le portail Cloud App Security, dans les Paramètres (roue crantée), sélectionnez **Paramètres Cloud Discovery**, puis **Gérer les rapports continus**. 
+2. Cliquez sur le bouton **Créer un rapport** et renseignez les champs.
+3. Sous **Filtres**, vous pouvez filtrer les données par source de données, par [groupe d’utilisateurs importé](user-groups.md) ou par [balises et plages d’adresses IP](ip-tags.md). 
+
+![Rapport continu personnalisé](./media/custom-continuous-report.png)
 
 ## <a name="see-also"></a>Voir aussi  
 [Utilisation des données Cloud Discovery](working-with-cloud-discovery-data.md)   
