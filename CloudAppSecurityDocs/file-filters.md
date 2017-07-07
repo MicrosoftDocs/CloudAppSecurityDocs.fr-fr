@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/10/2017
+ms.date: 7/1/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 305c7ab0293e35ffbabc9b665a5b797619111131
-ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
+ms.openlocfilehash: deabe5b6ccb46ad766ba8e4c206abaf021cd5b72
+ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 07/03/2017
 ---
 # <a name="files"></a>Fichiers
 
@@ -83,7 +83,12 @@ Vous trouverez ci-dessous la liste des filtres de fichiers qui peuvent être app
   
 -   Nom de fichier : Nom de fichier ou sous-chaîne du nom comme défini dans l’application cloud, par exemple, Tous les fichiers avec un mot de passe dans leur nom.   
   
--   Étiquette de classification : rechercher des fichiers avec des balises spécifiques définies par Azure Information Protection. Une intégration à Azure Information Protection est alors nécessaire.
+-   Étiquette de classification : Rechercher des fichiers avec des balises spécifiques définies. Il peut s’agir des balises suivantes :
+    - Balises Azure Information Protection. Une intégration à Azure Information Protection est alors nécessaire.
+    - Balises Cloud App Security. Fournit désormais un meilleur insight sur les fichiers qu’il analyse. Pour chaque fichier analysé par Cloud App Security DLP, vous pouvez maintenant savoir si les fichiers n’ont pas pu être inspectés parce qu’ils ont été chiffrés ou corrompus. Par exemple, vous pouvez configurer des stratégies pour vous alerter et mettre en quarantaine les fichiers protégés par mot de passe qui sont partagés en externe, comme suit : 
+        - Chiffré par Azure RMS : Les fichiers dont le contenu n’a pas été inspecté parce qu’ils ont un chiffrement Azure RMS défini.
+        - Chiffré par mot de passe : Les fichiers dont le contenu n’a pas été inspecté parce qu’ils sont protégés par un mot de passe de l’utilisateur.
+        - Fichier corrompu : Les fichiers dont le contenu n’a pas été inspecté parce qu’il n’a pas pu être lu.
 
 -   Type de fichier : Cloud App Security accepte le type MIME reçu du service et analyse le fichier pour déterminer le type de fichier réel. Notez que cette analyse concerne les fichiers qui sont appropriés pour l’analyse de données (documents, images, présentations, feuilles de calcul, fichiers texte et compressés/d’archive). Le filtre fonctionne selon le type de fichier/dossier, par exemple Tous les dossiers qui... ou Tous les fichiers de feuille de calcul qui...
 
@@ -111,6 +116,9 @@ Vous pouvez également définir la stratégie pour qu’elle s’exécute sur de
   
 ![filtre Appliquer à](./media/apply-to-filter.png "filtre Appliquer à")  
   
+>[!NOTE]
+> Si vous voulez effacer les filtres, vous pouvez le faire à tout moment en cliquant sur l’icône d’effacement des filtres ![icône d’effacement des filtres](./media/clear-filters.png).
+
 ## <a name="working-with-the-file-drawer"></a>Utilisation du tiroir de fichier
 
 Vous pouvez afficher plus d’informations sur chaque fichier en cliquant sur le fichier lui-même dans le journal des fichiers. Cette opération ouvre le tiroir de fichier qui contient les actions supplémentaires suivantes que vous pouvez réaliser sur le fichier :

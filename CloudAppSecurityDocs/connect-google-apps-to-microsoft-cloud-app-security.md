@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 29a52d474fdc09052506e88c8b871e611c3a5b27
-ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
-translationtype: HT
+ms.openlocfilehash: 95c92a7767f369d323d226c4362288ce043f905d
+ms.sourcegitcommit: 38e3c6749e3c746ab73b8da96cd81219781a7998
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/04/2017
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>Connecter G Suite à Microsoft Cloud App Security
 Cette section fournit des instructions pour connecter Cloud App Security à votre compte G Suite existant à l’aide des API du connecteur.
@@ -31,7 +33,7 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
      ![google1](./media/google1.png "google1")  
   
 3.  Dans l’écran **Nouveau projet**, nommez votre projet comme suit :</br>
-    **Cloud App Security pour Google** et cliquez sur **Créer**.  
+    **Microsoft Cloud App Security** et cliquez sur **Créer**.  
            ![google2](./media/google2.png "google2")  
   
 4.  Une fois que le projet est créé, dans la barre d’outils, en regard de Google Cloud Platform, sélectionnez le projet puis, sous **API**, cliquez sur **Go to APIs overview** (Accéder à la vue d’ensemble des API).  
@@ -63,7 +65,7 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
   
 8.  Cliquez sur **Credentials** (Informations d’identification), puis sur **OAuth consent screen** (Écran de consentement OAuth)  
   
-    -   Dans **Product name shown to users (Nom de produit présenté aux utilisateurs)**, tapez **Cloud App Security pour Google**.  
+    -   Dans **Nom de produit présenté aux utilisateurs**, tapez **Microsoft Cloud App Security**.  
   
     -   Tous les autres champs sont facultatifs.  
   
@@ -79,11 +81,11 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
 
      ![google, clé de compte de service](./media/google8.png "google8")  
   
-11. Sous **Create service account key** (Créer une clé de compte de service), choisissez **New service account** (Nouveau compte de service) et tapez un nom, par exemple **Compte de service 1**, sous **Rôle** choisissez **Projet** et **Éditeur**, puis sous **Key type** (Type de clé), choisissez **P12** et cliquez sur **Créer**.  
+11. Sous **Create service account key** (Créer une clé de compte de service), choisissez **New service account** (Nouveau compte de service) et tapez un nom, par exemple **Compte de service 1**, sous **Rôle** choisissez **Projet** et **Éditeur**, puis sous **Key type** (Type de clé), choisissez **P12** et cliquez sur **Créer**. Cochez la case **Enable G Suite Domain-wide Delegation** (Activer la délégation à l’échelle du domaine G Suite) et cliquez sur **Enregistrer**.  
   
      ![google, créer une clé de compte de service](./media/google9.png "google9")  
   
-12.  Un fichier de certificat P12 est enregistré sur votre ordinateur. Une fenêtre contextuelle vous indique le **mot de passe pour la clé privée**. VEILLEZ À L’ENREGISTRER pour l’utiliser plus tard.  
+12.  Un fichier de certificat P12 est enregistré sur votre ordinateur.  
         
 12. Dans l’écran **Credentials** (Informations d’identification), cliquez sur **Manage service accounts** (Gérer les comptes de service) à l’extrême droite.  
        ![Compte de service des informations d’identification G Suite](./media/google10.png "G Suite credentials service account")  
@@ -91,10 +93,6 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
 13. Cliquez sur les 3 points à droite du compte de service que vous avez créé et sélectionnez **Edit (Modifier)**.  
   
      ![google, modifier](./media/google11.png "google, modifier")  
-  
-14. Cochez la case **Enable G Suite Domain-wide Delegation** (Activer la délégation à l’échelle du domaine G Suite) et cliquez sur **Enregistrer**.  
-  
-     ![google, à l’échelle du domaine](./media/google12.png "google, à l’échelle du domaine")  
   
 15. Copiez l’**ID de compte de service** attribué à votre service, car vous en aurez besoin.  
   
@@ -107,7 +105,7 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
 
 18. Renseignez les éléments suivants :
 
-    -   **Application Name (Nom de l’application)** : Cloud App Security pour Google.  
+    -   **Nom de l’application** : Microsoft Cloud App Security.  
   
     -   **Short Description & Long Description** (Description courte et description longue) (facultatif) : Microsoft Cloud App Security offre une visibilité sur les applications cloud, ce qui vous permet de contrôler, d’examiner et de régir l’utilisation de ces applications cloud, de sécuriser les données d’entreprise et de détecter les activités suspectes liées aux applications cloud.  
   
@@ -116,18 +114,16 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
     -   Sous **Drive Integration** (Intégration du lecteur), tapez le code suivant sous **Open URL:** (Ouvrir l’URL :)  
   
          https://portal.cloudappsecurity.com/#/services/11770?tab=files  
-  
-    -   Cliquez sur **Save Changes (Enregistrer les modifications)**.  
-  
+     
          ![google, configuration du lecteur](./media/google15.png "googledriveconfig")  
   
 19. Dans la liste **Enabled APIs** (API activées), cliquez sur l’icône des paramètres en regard de **Google Apps Marketplace SDK**. 
          ![google, configurer marketplace SDK](./media/google16.png "googledriveconfig")  
-20. Sélectionnez l’onglet **Configuration**.  
+20. Sélectionnez l’onglet **Configuration**. 
   
     -   Copiez la valeur **Project number (App ID)** (Numéro de projet (ID d’application)) qui apparaît en haut à des fins d’utilisation ultérieure.  
   
-    -   **Application Name** (Nom de l’application) doit indiquer **Cloud App Security pour Google**.
+    -   Le **Nom de l’application** doit être **Microsoft Cloud App Security**.
   
          Renseignez le champ **Application description (Description de l’application)** par : « Microsoft Cloud App Security donne de la visibilité sur les applications cloud, ce qui vous permet de contrôler, examiner et régir l’utilisation de ces applications cloud, de sécuriser les données d’entreprise et de détecter les activités suspectes liées aux applications cloud. »  
   

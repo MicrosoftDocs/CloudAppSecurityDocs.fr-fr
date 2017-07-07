@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 6/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 776d7589-acdb-4cb6-99a0-3be2f7b6aab2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6e4363db83a65fbb656a844086cc08fab8cdecbd
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
-translationtype: HT
+ms.openlocfilehash: d50f77f5b19f9d965209639861a5672d2bcfc730
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="connect-salesforce-to-microsoft-cloud-app-security"></a>Connecter Salesforce à Microsoft Cloud App Security
 Cette section fournit des instructions pour connecter Cloud App Security à votre compte Salesforce existant à l’aide de l’API du connecteur d’applications.  
@@ -44,10 +46,14 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
   
          ![salesforce, modifier le profil](./media/salesforce-edit-profile.png "salesforce, modifier le profil")  
   
-    -   Vérifiez que la case **API Enabled** (API activée) est cochée. Si ce n’est pas le cas, vous devez peut-être contacter Salesforce pour l’ajouter à votre compte.  
-  
-         ![salesforce, api activée](./media/salesforce-api-enabled.png "salesforce, api activée")  
-  
+    -   Vérifiez que les cases suivantes sont cochées :   
+        - **API activée**
+        - **Afficher toutes les données** 
+        - **Gérer le contenu Salesforce CRM**
+        - **Gérer les utilisateurs**
+        
+        Si ces cases ne sont pas cochées, vous devez peut-être contacter Salesforce pour les ajouter à votre compte.  
+             
 3.  Si **Salesforce CRM Content** (Contenu CRM Salesforce) est activé pour votre organisation, vérifiez que le compte administratif actuel est également activé.  
   
     1.  Accédez à votre page de configuration de Salesforce.  

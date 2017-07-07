@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 7/1/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 45446111-ed1a-4699-9df5-840cc6664a6b
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9d525cd9d4856c4c8c25323a656c686a4d9b944e
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
-translationtype: HT
+ms.openlocfilehash: ad1b3e4c94458a35aa3f4230fe48d29e5f2f8461
+ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/03/2017
 ---
 # <a name="cloud-discovery-policies"></a>Stratégies Cloud Discovery
     
@@ -30,22 +32,22 @@ Grâce aux stratégies de découverte, vous pouvez définir des alertes qui vous
   
 3.  Donnez à votre stratégie un nom et une description. Si vous le souhaitez, vous pouvez la baser sur un modèle ; pour plus d’informations sur les modèles de stratégie, consultez [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md).  
   
-4.  Pour définir les applications découvertes qui doivent déclencher cette stratégie, cliquez sur **Ajouter des filtres**.  
+4.  Définissez la **Gravité** de la stratégie.
+
+5. Pour définir les applications découvertes qui doivent déclencher cette stratégie, ajoutez des filtres.  
   
-     Vous pouvez choisir les filtres dans la partie gauche de la page de la fenêtre contextuelle des filtres. Vous pouvez filtrer par **Nom de l’application**, **Domaine**, **Facteur de risque**, **Indice de risque** et **Catégorie**. Le côté droit de la page affiche les résultats des filtres choisis à partir du catalogue de services actuel. Après avoir choisi les filtres, enregistrez votre configuration et vérifiez que les étiquettes appropriées apparaissent dans la zone des filtres.  
-  
-5.  Sous **Appliquer à**, choisissez **Utilisateurs**, **Adresses IP** ou les deux.  
-  
-6.  Définissez le seuil **Utilisation quotidienne** que l’application doit respecter vis-à-vis de la stratégie.  
+6.  Vous pouvez définir un seuil pour la sensibilité de la stratégie. Après avoir activé l’option **Déclencher une correspondance de stratégie si tous les éléments suivants se produisent le même jour**, vous pouvez définir une valeur minimum pour le **Nombre d’utilisateurs**, le **Nombre d’adresses IP**, le **Trafic quotidien**, les **Données téléchargées**, les **Données chargées** et le **Nombre de transactions** que l’application doit respecter pour correspondre à la stratégie.  
   
 7.  Définissez une **Limite d’alerte quotidienne**, indiquez si l’alerte doit être envoyée sous forme d’e-mail et/ou de SMS et fournissez les détails nécessaires. Vous pouvez cliquer sur Enregistrer les paramètres d’alerte en tant que paramètres par défaut pour que les stratégies futures puissent enregistrer ces paramètres d’alerte, y compris les adresses de messagerie et le numéro de téléphone, en tant que paramètres par défaut.  
   
-8.  Cliquez sur **Create (Créer)**.  
+8. Sélectionnez les actions de **gouvernance** possibles à appliquer quand une application correspond à cette stratégie. Il est possible de marquer automatiquement les stratégies comme **Approuvées** ou **Non approuvées** 
+
+8.  Cliquez sur **Créer**.  
   
 Par exemple, pour découvrir les applications d’hébergement à risque détectées dans votre environnement cloud, définissez votre stratégie comme suit :  
   
 Définissez les filtres de stratégie pour découvrir tout service figurant dans la catégorie **Services d’hébergement** et ayant un indice faible, donc présentant un risque.   
-Définissez la **Gravité** de la stratégie sur **Moyenne**.   
+   
 En bas, définissez les seuils qui doivent déclencher une alerte pour une application découverte donnée : uniquement si plus de 100 utilisateurs dans l’environnement ont utilisé l’application, et seulement s’ils ont téléchargé une certaine quantité de données à partir du service.   
 En outre, vous pouvez définir la limite des alertes quotidiennes à recevoir.  
   

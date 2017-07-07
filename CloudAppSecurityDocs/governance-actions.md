@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/2/2017
+ms.date: 6/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,10 +13,11 @@ ms.technology:
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f6b7a2d88c748f8e5b379fb5d70b603c2b6f0e95
-ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.openlocfilehash: a30cf7f973daadd38a2049183ab1800d8d210cf4
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="governing-connected-apps"></a>Gouvernance des applications connectées
 La gouvernance vous permet de contrôler en temps réel les actions des utilisateurs dans les applications. Pour les applications connectées, vous pouvez appliquer des actions de gouvernance aux fichiers ou aux activités.
@@ -80,20 +81,28 @@ Vous pouvez effectuer les actions de gouvernance suivantes sur un fichier ou un 
   
     -   Des actions précises peuvent être appliquées par application. Ces actions spécifiques varient selon la terminologie de l’application.  
   
-    -   Suspendre l’utilisateur : Excluez temporairement l’utilisateur de l’application.  
+    -   Suspendre l’utilisateur : Excluez temporairement l’utilisateur de l’application. 
+    > [!NOTE] 
+    > Si votre Azure Active Directory est défini pour se synchroniser automatiquement avec les utilisateurs de votre environnement local Active Directory, les paramètres de l’environnement local remplacent les paramètres Azure AD et cette action de gouvernance est rétablie. 
   
     -   Révoquer le mot de passe : Révoquez le mot de passe de l’utilisateur et obligez-le à définir un nouveau mot de passe lors de sa prochaine connexion.  
   
-     ![stratégie d’activité ref6](./media/activity-policy-ref6.png "ref6")  
+     ![Actions de gouvernance des stratégies d’activité Cloud App Security](./media/activity-policy-ref6.png "stratégie d’activité ref6")  
   
 
 ### <a name="governance-conflicts"></a>Conflits de gouvernance
 
 Si vous créez plusieurs stratégies, il peut arriver que les actions de gouvernance se chevauchent. Dans ce cas, Cloud App Security traite les actions de gouvernance comme suit :
 
+#### <a name="conflicts-between-policies"></a>Conflits de stratégies
+
 - Si deux stratégies contiennent des actions qui sont contenues dans l’une et l’autre (par exemple, l’action **Supprimer des partages externes** est incluse dans **Rendre privé**), Cloud App Security résout le conflit et l’action la plus forte est appliquée.
 - Si les actions sont complètement indépendantes (par exemple, **Notifier le propriétaire** et **Rendre privé**), les deux actions ont lieu.
 - Si les actions sont en conflit, (par exemple **Change owner to user A** [Remplacer le propriétaire par l’utilisateur A] et **Change owner to user B** [Remplacer le propriétaire par l’utilisateur B]), différents résultats peuvent provenir de chaque correspondance. Il est important de modifier vos stratégies pour éviter les conflits, car elles peuvent entraîner des modifications indésirables dans le lecteur qui seront difficiles à détecter.
+
+#### <a name="conflicts-in-user-sync"></a>Conflits de synchronisation d’utilisateur
+
+- Si votre Azure Active Directory est défini pour se synchroniser automatiquement avec les utilisateurs de votre environnement local Active Directory, les paramètres de l’environnement local remplacent les paramètres Azure AD et cette action de gouvernance est rétablie. 
 
 ### <a name="governance-log"></a>Journal de gouvernance
 Le journal de gouvernance fournit un enregistrement de l’état de chaque tâche que Cloud App Security doit exécuter, dont les tâches manuelles et automatiques. Ces tâches comprennent les tâches que vous définissez dans les stratégies, les actions de gouvernance que vous définissez sur des fichiers et des utilisateurs ainsi que toute autre action que Cloud App Security doit effectuer. Le journal de gouvernance fournit également des informations sur la réussite ou l’échec de ces actions. Vous pouvez choisir de retenter ou de rétablir certaines des actions de gouvernance à partir du journal de gouvernance. 
@@ -124,7 +133,8 @@ Pour plus d’informations sur la façon dont les actions de gouvernance sont tr
 |Stratégie de fichier, Stratégie d’activité|Fichier, Activité|Notifier des utilisateurs spécifiques|Envoie un e-mail pour notifier des utilisateurs spécifiques qu’un fichier viole une stratégie.|Toutes les applications|
 |Stratégie de fichier et Stratégie d’activité|Fichier, Activité|Notifier l’utilisateur|Envoie un e-mail aux utilisateurs pour les informer qu’une de leurs actions ou qu’un fichier qu’ils possèdent viole une stratégie. Vous pouvez ajouter une notification personnalisée lui indiquant la violation.|Tous|
 |Stratégie de fichiers et fichiers|File|Supprimer la capacité des éditeurs à partager|Dans Google Drive, les autorisations de l’éditeur par défaut d’un fichier permettent également le partage. Cette action de gouvernance restreint cette option et restreint le partage de fichiers au propriétaire.|G Suite|
-|Stratégie de fichiers et fichiers|File|Mettre en quarantaine administrateur|Supprime toute autorisation du fichier et déplace le fichier vers un dossier de quarantaine sur le lecteur racine de l’utilisateur. De cette manière, l’administrateur peut examiner le fichier et le déplacer.|Box|
+|Stratégie de fichiers et fichiers|File|[Mettre en quarantaine administrateur](use-case-admin-quarantine.md)|Supprime toutes les autorisations du fichier et déplace le fichier vers un dossier de quarantaine dans un emplacement réservé à l’administrateur. De cette manière, l’administrateur peut examiner le fichier et le supprimer.|Office 365 SharePoint, OneDrive Entreprise, Box|
+|Stratégie de fichier, Stratégie d’activité, Alertes|Application|Demander aux utilisateurs de se reconnecter|Vous pouvez demander aux utilisateurs de se reconnecter à toutes les applications Office 365 et Azure AD pour corriger de manière rapide et efficace les alertes d’activité suspecte de l’utilisateur et les comptes corrompus. La nouvelle gouvernance se trouve dans les paramètres de stratégie et les pages d’alerte, à côté de l’option Interrompre la synchronisation de l’utilisateur.|Office 365, Azure AD|
 |Fichiers|File|Restaurer des fichiers mis en quarantaine utilisateur|Restaure un utilisateur mis en quarantaine.|Box|
 |Fichiers|File|M’auto-attribuer des permissions de lecture|Vous accorde des permissions de lecture pour le fichier afin de vous permettre d’y accéder et de déterminer s’il y a eu violation ou non.|G Suite|
 |Fichiers|File|Autoriser les éditeurs à partager|Dans Google Drive, les autorisations de l’éditeur par défaut d’un fichier permettent également le partage. Cette action de gouvernance est l’opposé de Supprimer la capacité des éditeurs à partager et permet à l’éditeur de partager le fichier.|G Suite|

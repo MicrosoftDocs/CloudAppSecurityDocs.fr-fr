@@ -13,6 +13,7 @@
 ### [Créer des rapports d’instantanés Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
 ### [Configurer le chargement automatique des journaux pour des rapports continus](configure-automatic-log-upload-for-continuous-reports.md)
 ### [Utiliser l’analyseur de journal personnalisé](custom-log-parser.md)
+### [Enrichissement de Cloud Discovery](cloud-discovery-aad-enrichment.md)
 ### [Anonymiser les données Cloud Discovery](cloud-discovery-anonymizer.md)
 ## [Connecter des applications](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
 ### [Connecter Box](connect-box-to-microsoft-cloud-app-security.md)
@@ -25,7 +26,10 @@
 ### [Connecter Salesforce](connect-salesforce-to-microsoft-cloud-app-security.md)
 # Utilisez
 ## [Utilisation du tableau de bord](daily-activities-to-protect-your-cloud-environment.md)
-## [Découvrir](working-with-cloud-discovery-data.md)
+## Scénarios
+### [Protection de votre organisation contre les ransomwares](use-case-ransomware.md)
+## Découvrir
+### [Utilisation des applications découvertes](discovered-apps.md)
 ### [Utilisation du score de risque](risk-score.md)
 ## [Examiner](investigate.md)
 ### [Activités](activity-filters.md)
@@ -47,9 +51,11 @@
 #### [Informations de référence sur les modèles de stratégie](policy-template-reference.md)
 ### [Gouverner les applications connectées](governance-actions.md)
 ### [Gouverner les applications découvertes](governance-discovery.md)
-## Intégrer
+## Intégration à l’aide des extensions de sécurité
 ### [Intégration d’Azure Information Protection](azip-integration.md)
 ### [Intégration de SIEM](siem.md)
+### [Intégration DLP externe](icap-stunnel.md)
+### [Jetons d’API](api-tokens.md)
 # Dépannage
 ## [Résolution des problèmes de Cloud Discovery](troubleshooting-cloud-discovery.md)
 ## [Résolution des problèmes des connecteurs API à l’aide de messages d’erreur](troubleshooting-api-connectors-using-error-messages.md)

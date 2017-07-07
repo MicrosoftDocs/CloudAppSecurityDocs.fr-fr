@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b694b6f117b0c5249520a43154675cdac70361b4
-ms.sourcegitcommit: cb8238610222953751ff714b346a0b4cf73ac40c
+ms.openlocfilehash: 746727ee96513e473911a286fb53ea8cec52c3cc
+ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/16/2017
+ms.lasthandoff: 07/03/2017
 ---
 # <a name="create-snapshot-cloud-discovery-reports"></a>Créer des rapports d’instantanés Cloud Discovery
 Il est important de charger un journal manuellement et de laisser Cloud App Security l’analyser avant de tenter d’utiliser le collecteur de journaux automatique.
@@ -41,6 +41,11 @@ Pour créer un rapport d’instantané :
 5. Examinez le format de votre journal pour vérifier qu’il convient à l’exemple à télécharger. Cliquez sur **Afficher et vérifier**, puis sur **Télécharger un exemple de journal**. Comparez ensuite votre journal à l’exemple fourni pour vérifier qu’il est compatible. 
 
  ![Vérifier le format de votre journal](./media/cloud-discovery-snapshot-verify.png)  
+
+  > [!NOTE]
+  > L’exemple de format FTP est pris en charge dans les captures instantanées et le chargement automatique alors que syslog est pris en charge dans le chargement automatique uniquement.<br></br>
+Le téléchargement d’un exemple de journal télécharge un exemple de journal FTP.
+
 
 5.  **Choisissez les journaux de trafic** à charger. Vous pouvez charger jusqu’à 20 fichiers à la fois. Les fichiers compressés et zippés sont également pris en charge.  
   
