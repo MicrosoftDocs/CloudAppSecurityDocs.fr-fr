@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/29/2017
+ms.date: 6/18/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: bbf54f66-4ce2-428c-afc8-b5a64277014f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b3c8c8917606f3c34055eef0334f010d8aab7998
-ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
-translationtype: HT
+ms.openlocfilehash: a80fec6fe57d643655df2e57ef980b6395d4dcfc
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 06/28/2017
 ---
 #  <a name="IPtagsandRanges"></a> Utilisation des balises et des plages d’adresses IP
 
@@ -29,7 +31,7 @@ Cloud App Security est préconfiguré avec des balises intégrées pour les adre
 - Système d’exploitation obsolète
 - Appareils gérés
 - Proxy anonyme
-- Botnet
+- Botnet (quand une activité a été effectuée par un botnet, vous recevez un lien pour avoir plus d’informations sur le botnet spécifique)
 - Tor
 - Appareil conforme
 - Appareil vérifié
@@ -37,7 +39,7 @@ Cloud App Security est préconfiguré avec des balises intégrées pour les adre
 
 Pour utiliser ces balises intégrées dans le cadre d’une recherche, reportez-vous à leur ID dans la documentation des API Cloud App Security. 
 
-
+Les balises d’adresse IP intégrées et les balises d’adresse IP personnalisées sont considérées de manière hiérarchique, les balises d’adresse IP personnalisées étant prioritaires sur les balises d’adresse IP intégrées. Par exemple, si une adresse IP est marquée comme étant **Risquée** en fonction de l’intelligence des menaces, mais qu’il existe une balise d’adresse IP personnalisée qui l’identifie comme appartenant à **l’Entreprise**, les balises et la catégorie personnalisées sont prioritaires.
 
 Dans la barre de menus, cliquez sur l’icône des paramètres ![icône des paramètres](./media/settings-icon.png "icône des paramètres") et sélectionnez **Plages d’adresses IP**. Cliquez sur **Ajouter une plage d’adresses IP** et définissez les éléments suivants :  
   

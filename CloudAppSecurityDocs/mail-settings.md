@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/10/2017
+ms.date: 5/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 49c2c444b0ae378584f3ddbccccf7c8b34bb50d3
-ms.sourcegitcommit: 26ae7b0e1ee0ec3b2c7464a6424d4ebd1cd436ac
+ms.openlocfilehash: ce24e4c25ab4d8b85e4ddb6d6d574dd29b8c2003
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 06/28/2017
 ---
 ##  <a name="mailsettings"></a> Définir les préférences de notification par e-mail  
 Dans la barre de menus, cliquez sur l’icône des paramètres ![icône des paramètres](./media/settings-icon.png "icône des paramètres") et sélectionnez **Paramètres de messagerie** pour définir les paramètres des notifications par e-mail envoyées par Cloud App Security aux administrateurs ; ce paramétrage définit l’envoi des alertes et des notifications aux utilisateurs finaux concernant les violations dans lesquelles ils sont impliqués.  
@@ -33,6 +33,9 @@ Configurez ce qui suit :
      **Adresse e-mail de réponse** : compte e-mail à utiliser pour les réponses au message.  
   
      ![configuration des paramètres de messagerie](./media/mail-settings-config.png "configuration des paramètres de messagerie")  
+
+  >[!NOTE]
+  >Pour remplacer la valeur du champ **Adresse de l’expéditeur** par un domaine de votre choix, reportez-vous aux instructions [ici](https://mandrill.zendesk.com/hc/articles/205582277-How-do-I-add-DNS-records-for-my-sending-domains-).
   
 2.  Pour la **Conception de l’e-mail**, vous pouvez utiliser un fichier html pour personnaliser et créer les e-mails envoyés par le système. Le fichier html utilisé pour votre modèle doit inclure les éléments suivants :  
   

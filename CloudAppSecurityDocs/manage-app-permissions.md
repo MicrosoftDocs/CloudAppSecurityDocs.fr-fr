@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 137e0630-5440-4c49-bfe4-48bbc64575e2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4f0793afc91b7bf29afe56bc5fa2218fb07dc6bf
-ms.sourcegitcommit: 25564029fb94c1e37e7072775c88a0456089224c
-translationtype: HT
+ms.openlocfilehash: 23eedf73a5b3eec883da5e64a9db98f6ec895098
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="manage-app-permissions"></a>Gérer les autorisations d’applications
 Les applications de productivité tierces installées par des utilisateurs professionnels dans votre organisation ont souvent besoin d’une autorisation pour pouvoir accéder aux informations et données utilisateur, et se connecter au nom de l’utilisateur à d’autres applications cloud, comme Office 365, G Suite et Salesforce.  Lorsque les utilisateurs installent ces applications, ils cliquent souvent sur Accepter sans examiner attentivement les détails du message d’invite, notamment concernant l’octroi d’autorisations à l’application.  Ce problème est d’autant plus complexe que le service informatique ne dispose pas toujours d’informations suffisantes pour mettre en balance le risque de sécurité d’une application et les avantages qu’elle offre en termes de productivité. Dans la mesure où l’acceptation des autorisations d’applications tierces représente un risque de sécurité potentiel pour votre organisation, la surveillance des autorisations d’applications accordées par vos utilisateurs, vous donne la visibilité et le contrôle nécessaires pour protéger vos utilisateurs et vos applications. Les autorisations d’applications Cloud App Security vous permettent de savoir quelles applications installées par les utilisateurs ont accès aux données Office 365, G Suite et Salesforce, de quelles autorisations disposent ces applications et quels utilisateurs ont accordé à ces applications l’accès à leur compte Office 365, G Suite et Salesforce. Avec les autorisations d’applications vous décidez à quelles applications vous autorisez les utilisateurs à accéder et quelles autres vous voulez exclure.
@@ -51,7 +53,7 @@ La page Autorisations d’applications fournit les informations suivantes sur ch
 
 
 ## <a name="ban-or-approve-an-app"></a>Exclure ou approuver une application
-1. Dans la page Autorisations d’applications, cliquez sur l’application pour ouvrir le tiroir Application et afficher plus d’informations sur l’application et les autorisations qui lui ont été accordées. Vous pouvez cliquer sur le lien Autorisations pour afficher la liste complète des autorisations qui ont été accordées à l’application. Sous Utilisation communautaire, vous pouvez afficher la fréquence d’utilisation de cette application dans d’autres organisations. Vous pouvez également cliquer sur le lien Activité associée pour afficher les activités qui sont répertoriées dans le journal de gouvernance lié à cette application.
+1. Dans la page Autorisations d’applications, cliquez sur l’application pour ouvrir le tiroir Application, et afficher plus d’informations sur l’application et les autorisations qui lui ont été accordées. Vous pouvez cliquer sur le lien Autorisations pour afficher la liste complète des autorisations qui ont été accordées à l’application. Sous Utilisation communautaire, vous pouvez afficher la fréquence d’utilisation de cette application dans d’autres organisations. Vous pouvez également cliquer sur le lien Activité associée pour afficher les activités qui sont répertoriées dans le journal de gouvernance lié à cette application.
 2. Pour exclure l’application, cliquez sur l’icône d’exclusion à l’extrémité de la ligne de l’application dans le tableau. <br></br>
  ![icône d’exclusion de l’application](./media/ban-app-icon.png) <br></br>
 Quand vous excluez une application, vous pouvez choisir d’informer les utilisateurs que l’application qu’ils ont déjà installée et autorisée a été exclue, sera par conséquent désactivée et n’aura pas accès à l’application connectée. Si vous ne souhaitez pas les en informer, désélectionnez Avertir les utilisateurs qui ont accordé l'accès à cette application interdite dans la boîte de dialogue Exclure l’application.
@@ -69,6 +71,14 @@ L’icône prend la couleur verte et l’application est approuvée pour tous le
 3. Tapez le message à envoyer aux utilisateurs de l’application dans la zone Entrez un message de notification personnalisé, puis mettez si nécessaire à jour l’adresse de réponse de l’e-mail de notification. 
  Cliquez sur **Exclure l’application** pour envoyer l’e-mail et exclure l’application des utilisateurs de votre application connectée.
 
+## <a name="revoke-app-and-notify-user"></a>Révoquer l’application et avertir l’utilisateur
+
+Pour G Suite et Salesforce, vous pouvez révoquer l’autorisation d’une application ou avertir l’utilisateur qu’une autorisation doit être révoquée. 
+
+1. Dans la page Autorisations d’applications, cliquez sur les points de suspension à la fin de la ligne de l’application et sélectionnez **Notifier l’utilisateur**. Par défaut, l’utilisateur est averti de la façon suivante : *Vous avez autorisé l’application Adallom Google Protector à accéder à votre compte G Suite. Cette application est en conflit avec la stratégie de sécurité de votre organisation. Vous devez fournir ou révoquer les autorisations que vous avez attribuées à cette application dans votre compte G Suite. Pour révoquer l’accès de l’application, rendez-vous sur : https://security.google.com/settings/security/permissions?hl=en&pli=1  Sélectionnez l’application et cliquez sur « Révoquer l’accès » dans la barre de menu située à droite.* Vous pouvez personnaliser le message envoyé.
+2. Vous pouvez également révoquer l’autorisation d’utilisation de l’application pour l’utilisateur en cliquant sur l’icône située à la fin de la ligne de l’application dans le tableau et en sélectionnant **Révoquer l’application**. 
+
+ ![révoquer l’application](./media/revoke-app.png)
 
 ## <a name="query-app-permissions"></a>Interroger les autorisations d’applications
 

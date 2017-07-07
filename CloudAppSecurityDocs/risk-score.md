@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/2/2017
+ms.date: 7/2/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,34 +13,73 @@ ms.technology:
 ms.assetid: 9cb3594e-5007-48be-9b4f-e1d23355d86e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2fcc085cc53d2d7580640022029b1a528bea416a
-ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
-translationtype: HT
+ms.openlocfilehash: 87653e25b6bb7344aa7670329d50aadae9cc9e02
+ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/03/2017
 ---
 # <a name="working-with-the-risk-score"></a>Utilisation du score de risque  
 
 ## <a name="the-cloud-app-catalog"></a>Catalogue d’applications cloud
 
-Pour mieux comprendre les applications cloud pouvant être découvertes par la fonction Cloud Discovery de Cloud App Security, utilisez le catalogue d’applications cloud.
+Le catalogue d’applications cloud vous donne une vue d’ensemble complète des éléments identifiés par Cloud Discovery. Cloud Discovery analyse les journaux de votre trafic en se basant sur le catalogue d’applications cloud de Cloud App Security, qui contient plus de 14 000 applications cloud classées et évaluées selon plus de 50 critères, pour vous offrir une visibilité en continu de l’utilisation du cloud, de l’informatique fantôme et du risque que cette dernière représente pour votre organisation.
+Le **catalogue d’applications cloud** évalue les risques pour vos applications cloud selon les certifications réglementaires, les normes du secteur et les bonnes pratiques. Quatre processus complémentaires s’exécutent dans le catalogue d’applications cloud pour le tenir à jour :
+1.  Extraction de données automatisée directement à partir de l’application cloud (pour les attributs tels que la conformité SOC 2).
+2.  Extraction de données avancée automatisée pour les données par les algorithmes de Cloud App Security (pour les attributs tels que les en-têtes de sécurité HTTP).
+3.  Analyse en continu par l’équipe d’analystes cloud Cloud App Security (pour les attributs tels que le chiffrement au repos).
+4.  Demandes de révisions basées sur le client, en fonction des demandes de soumissions du client des modifications à apporter au catalogue d’applications cloud. Toutes les demandes sont examinées par notre équipe d’analystes cloud et mises à jour en fonction de leurs conclusions.
+  
+![Catalogue d’applications cloud](./media/cloud-app-catalog.png)  
 
-Ce catalogue répertorie plus de 14 000 applications SaaS qui peuvent être affichées (filtrées) par nom, domaine, indice de risque, catégorie ou fonctionnalités de sécurité disponibles.
+Les divisions sont de plus en plus à la recherche d’applications cloud pour répondre à leurs besoins changeants. Le catalogue d’applications cloud vous permet de choisir judicieusement les applications compatibles avec les critères de sécurité de votre organisation et vous permet de vous tenir informé des dernières normes de sécurité, vulnérabilités et violations. Par exemple, si vous voulez comparer des applications CRM et vérifier qu’elles sont suffisamment sécurisées, vous pouvez utiliser la page du catalogue d’applications cloud pour filtrer les applications appropriées de votre choix : dans la page **Catalogue d’applications cloud**, sous **Parcourir par catégorie**, sélectionnez les deux **CRM**. 
 
-![accéder au catalogue d’applications cloud](./media/risk-cac-dropdown.png)
+Ensuite, utilisez les filtres **Avancés** et définissez **Facteur de risque de conformité** > **SOC 2** égal à **True** ; **Facteur de risque de conformité** > **ISO 27001** égal à **True** ; **Facteur de risque de sécurité** > **Chiffrement de données au repos** égal à **True** ; **Facteur de risque de sécurité** > **Chiffrement de données au repos** égal à **True** ; **Facteur de risque de sécurité** > **Suivi d’audit administratif** égal à **True** et **Facteur de risque de sécurité** > **Suivi d’audit d’utilisateur** égal à **True**.
 
-## <a name="discovery-requests"></a>Requêtes de découverte
+![Filtres du catalogue d’applications cloud](./media/cloud-app-catalog-filters.png)
 
-Les informations et les indices de risque du catalogue d’applications cloud s’appuient sur de nombreuses sources. Microsoft s’efforce de maintenir à jour ces informations, mais n’offre aucune garantie quant à l’exactitude de toutes les sources de données. 
+Une fois que les résultats sont filtrés, vous pouvez passer en revue les applications qui vous intéressent et rechercher celle qui répond le mieux à vos besoins.
 
-Veuillez nous contacter si vous pensez que les informations relatives à une application sont obsolètes.
+## <a name="cloud-app-catalog-filters"></a>Filtres du catalogue d’applications cloud
 
--    Demandez une mise à jour des indices (si vous souhaitez que notre équipe réévalue une application cloud).
--    Signalez de nouvelles données générales ou spécifiques (si vous pensez que les informations relatives à une application sont obsolètes).
+Le catalogue d’applications cloud contient des filtres de base et avancés. Pour obtenir un filtre complexe, utilisez l’option avancée qui inclut tous les éléments suivants :
 
-![mettre à jour des données de risque](./media/risk-cac-feedback.png)
+- **Balises d’application** : Les balises vous permettent de personnaliser le catalogue d’applications cloud. 
+  Vous avez le choix entre **Approuvée**, **Non approuvée** ou vous pouvez créer des balises personnalisées pour les applications. Ces balises peuvent ensuite servir de filtres pour rechercher plus précisément des types spécifiques d’applications que vous voulez examiner. 
+- **Applications et domaines** : Permet de rechercher des applications spécifiques ou des applications utilisées dans des domaines spécifiques. 
+- **Catégories** : Le filtre de catégories, qui se trouve à gauche de la page, vous permet de rechercher des types d’applications selon des catégories d’applications, par exemple, des applications de réseau social, des applications de stockage cloud, etc. Vous pouvez sélectionner plusieurs catégories à la fois, ou une seule catégorie, puis leur appliquer des filtres de base et avancés.
+- **Facteur de risque de conformité** : Permet de rechercher des normes, certifications et conformités spécifiques auxquelles l’application doit se conformer (HIPAA, ISO 27001, SOC 2, PCI-DSS, etc.).
+- **Facteur de risque général** : Permet de rechercher des facteurs de risque général comme la popularité auprès des consommateurs, les paramètres régionaux du centre de données, etc.
+- **Score de risque** : Permet de filtrer les applications par score de risque pour que vous puissiez vous concentrer uniquement sur les applications très risquées, par exemple.
+- **Facteur de risque de sécurité** : Permet de filtrer en fonction de mesures de sécurité spécifiques (comme le chiffrement au repos, l’authentification multifacteur, etc.).
 
-En outre, nous vous encourageons à demander l’ajout de toutes les applications cloud que votre organisation utilise et qui ne sont actuellement pas détectables par la fonction Cloud Discovery.
+## <a name="suggesting-a-change"></a>Proposition de changement
 
-![suggérer de nouvelles applications](./media/risk-suggest-app.png)
+Si vous trouvez une nouvelle application dans votre environnement qui n’a pas été évaluée par Cloud App Security, un nouveau facteur de risque, une mise à jour de score ou des données d’application obsolètes, vous pouvez demander une révision de l’application :
+
+**Pour suggérer une nouvelle application :**
+1. En haut de la page **Applications découvertes**, cliquez sur les points de suspension, puis sélectionnez **Suggérer une nouvelle application**. 
+
+  ![Suggérer une application à Cloud App Security](./media/suggest-new-app.png)
+
+2. Dans la fenêtre contextuelle **Suggérer une nouvelle application cloud**, renseignez les détails sur la nouvelle application, notamment le nom et le domaine de l’application. 
+
+  ![Fenêtre contextuelle Suggérer une application à Cloud App Security](./media/suggest-new-app-popup.png)
+
+3. Nous vous recommandons de cocher la case qui permet aux analystes Cloud App Security de vous contacter au cas où des informations supplémentaires sur l’application seraient nécessaires, et pour que vous soyez tenu informé à la fin de l’analyse.
+
+**Pour mettre à jour un facteur de risque, un score ou des données d’application :**
+
+1. Dans la page **Catalogue d’applications cloud**, sur la ligne de l’application que vous voulez mettre à jour, cliquez sur les points de suspension à la fin de la ligne et sélectionnez **Demander une mise à jour du score**.
+
+  ![Demander une mise à jour du score](./media/request-score-update.png)
+
+2. Dans la fenêtre contextuelle **Suggérer une amélioration**, indiquez si vous voulez demander une mise à jour de score, suggérer un nouveau facteur de risque ou mettre à jour des données d’application.
+
+  ![suggérer une amélioration à Cloud App Security](./media/suggest-improvement-popup.png)
+
+3. Nous vous recommandons de cocher la case qui permet aux analystes Cloud App Security de vous contacter au cas où des informations supplémentaires sur l’application seraient nécessaires, et pour que vous soyez tenu informé à la fin de l’analyse.
+ 
 
 
 ## <a name="customizing-the-risk-score"></a>Personnalisation de l’indice de risque
@@ -63,7 +102,7 @@ Prenez le temps de passer en revue et modifier les pondérations par défaut don
   
 3.  De plus, vous pouvez déterminer si certaines valeurs sont soit non disponibles, soit non applicables dans le calcul du score. Quand elles sont incluses, les valeurs N/A contribuent négativement au score calculé.  
   
-     ![score](./media/score.png "score")  
+  ![score](./media/score.png "score")  
 
 Toutes les informations nécessaires pour comprendre le fonctionnement de nos indices de risque et leur empilement sont disponibles dans le portail Cloud App Security.
 Pour mieux comprendre le poids d’un facteur de risque dans une catégorie donnée, utilisez le bouton « i » à droite d’un nom de champ dans le profil de l’application. Il fournit des informations sur la façon dont Cloud App Security note précisément un facteur de risque. Ce score correspond à la valeur du facteur de risque sur une échelle de 1 à 10 et à son poids dans la catégorie de risque :
@@ -73,6 +112,17 @@ Pour mieux comprendre le poids d’un facteur de risque dans une catégorie donn
 Pour comprendre le poids d’une catégorie de risque dans le score total d’une application, déplacez le curseur sur le score de catégorie de risque :
 
 ![poids de la catégorie de risque](./media/risk-category-weight.png)
+
+## <a name="overriding-the-risk-score"></a>Remplacement du score de risque
+Vous pouvez remplacer le score de risque d’une application sans changer la façon dont elle est pondérée afin d’obtenir des résultats immédiats pour votre organisation. Par exemple, si le score de risque d’une application métier que vous utilisez est 8 et qu’elle est approuvée et proposée par votre organisation, vous pouvez remplacer le score de risque par 10. 
+
+Pour remplacer le score de risque, dans le tableau **Applications découvertes** ou dans le **Catalogue d’applications cloud**, cliquez sur les points de suspension à droite d’une application et sélectionnez **Remplacer le score de risque**.
+
+![remplacer le score de risque d’une application découverte dans cloud app security](./media/override-risk-score.png)
+
+Une fois que vous avez mis à jour le score, vous pouvez ajouter des notes d’application pour justifier le changement du score de l’application aux autres administrateurs. 
+
+Vous pouvez également ajouter des notes pour clarifier la justification du changement quand une personne examine l’application.
 
 
  

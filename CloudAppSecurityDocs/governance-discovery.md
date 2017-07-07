@@ -13,16 +13,31 @@ ms.technology:
 ms.assetid: e451031e-4764-411a-b366-73a49d4f25df
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ca4a10f64429c481f49c75740f651302b1c7d1ef
-ms.sourcegitcommit: 7493d88e4fe7c827f870b81e2090ffcc77f1408a
-translationtype: HT
+ms.openlocfilehash: cf14aaa243baaea8223cc6a271e7a237a0a1e287
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 06/28/2017
 ---
-# <a name="governing-discovered-apps"></a>Gouvernance des applications découvertes
-Cloud App Security vous permet de bloquer l’accès aux applications non approuvées en optimisant vos appliances de sécurité locales existantes. Générez un script de blocage dédié et importez-le dans votre appliance.
-Pour cette solution, vous n’avez pas besoin de rediriger tout le trafic web de l’organisation vers un proxy.
+## <a name="govern-discovered-apps"></a>Gouverner les applications découvertes
+
+Une fois que vous avez consulté la liste des applications découvertes dans votre environnement, vous pouvez sécuriser de plusieurs façons l’environnement contre l’utilisation d’applications indésirables.
+
+### <a name="sanctioningunsanctioning-an-app"></a>Approbation/non-approbation d’une application 
+
+Pour ne pas approuver une application présentant un risque spécifique, cliquez sur les points de suspension à la fin de la ligne et sélectionnez **Ne pas approuver**.
+Vous avez toujours la possibilité d’utiliser une application non approuvée, mais grâce aux filtres Cloud Discovery vous surveillez plus facilement son utilisation. Vous pouvez alors informer les utilisateurs de l’application qu’elle n’est pas approuvée et leur suggérer d’utiliser une autre application sécurisée.
+
+![Marquer comme non approuvées](./media/tag-as-unsanctioned.png)  
+
+
+Si vous voulez approuver/ne pas approuver une liste d’applications, cochez les cases des applications que vous voulez gérer, puis sélectionnez l’action appropriée.
 
 
 ## <a name="export-a-block-script-to-govern-discovered-apps"></a>Exporter un script de blocage pour gouverner les applications découvertes
+
+Cloud App Security vous permet de bloquer l’accès aux applications non approuvées en optimisant vos appliances de sécurité locales existantes. Générez un script de blocage dédié et importez-le dans votre appliance.
+Pour cette solution, vous n’avez pas besoin de rediriger tout le trafic web de l’organisation vers un proxy.
 
 1. Dans le tableau de bord Cloud Discovery, marquez toutes les applications que vous souhaitez bloquer comme **Non approuvées**.
 
