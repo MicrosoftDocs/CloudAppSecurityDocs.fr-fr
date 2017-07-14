@@ -11,7 +11,10 @@
 ### [Balises et plages IP](ip-tags.md)
 ## [Déployer Cloud Discovery](set-up-cloud-discovery.md)
 ### [Créer des rapports d’instantanés Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
-### [Configurer le chargement automatique des journaux pour des rapports continus](configure-automatic-log-upload-for-continuous-reports.md)
+### [Configurer le chargement automatique des journaux pour des rapports continus](discovery-docker.md)
+#### [Docker sur Windows Server](discovery-docker-windows.md)
+#### [Docker sur Ubuntu](discovery-docker-ubuntu.md)
+#### [Utilisation d’une appliance virtuelle (déprécié)](configure-automatic-log-upload-for-continuous-reports.md)
 ### [Utiliser l’analyseur de journal personnalisé](custom-log-parser.md)
 ### [Enrichissement de Cloud Discovery](cloud-discovery-aad-enrichment.md)
 ### [Anonymiser les données Cloud Discovery](cloud-discovery-anonymizer.md)
@@ -24,7 +27,7 @@
 ### [Connecter Okta](connect-okta-to-microsoft-cloud-app-security.md)
 ### [Connecter ServiceNow](connect-servicenow-to-microsoft-cloud-app-security.md)
 ### [Connecter Salesforce](connect-salesforce-to-microsoft-cloud-app-security.md)
-# Utilisez
+# Utiliser
 ## [Utilisation du tableau de bord](daily-activities-to-protect-your-cloud-environment.md)
 ## Scénarios
 ### [Protection de votre organisation contre les ransomwares](use-case-ransomware.md)
