@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/3/2017
+ms.date: 7/5/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 824dd288e821289b0d09569d461a498d87e30705
-ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
+ms.openlocfilehash: ced7bfb6581612610fab57529df3c87d36a97ae5
+ms.sourcegitcommit: dc386d21f9196c30460ca57e85a9a52077c44bf5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 07/05/2017
 ---
 # <a name="working-with-discovered-apps"></a>Utilisation des applications découvertes
 
@@ -59,7 +59,7 @@ Il existe des filtres d’application découverte de base et avancés. Pour obte
 ![Applications découvertes](./media/discovered-apps.png)  
 
 
-- **Balise d’application** : Indiquez si l’application a été approuvée, non approuvée ou non marquée. Par ailleurs, vous pouvez créer une balise personnalisée pour votre application et l’utiliser pour filtrer des types spécifiques d’applications.
+- **Balise d’application** : Indiquez si l’application a été approuvée, non approuvée ou non marquée. Par ailleurs, vous pouvez créer une balise personnalisée pour votre application et l’utiliser pour filtrer des types spécifiques d’applications. 
 - **Applications et domaines** : Permet de rechercher des applications spécifiques ou des applications utilisées dans des domaines spécifiques. 
 - **Catégories** : Le filtre de catégories, qui se trouve à gauche de la page, vous permet de rechercher des types d’applications selon des catégories d’applications, par exemple, des applications de réseau social, des applications de stockage cloud, etc. Vous pouvez sélectionner plusieurs catégories à la fois, ou une seule catégorie, puis leur appliquer des filtres de base et avancés.
 - **Facteur de risque de conformité** : Permet de rechercher des normes, certifications et conformités spécifiques auxquelles l’application doit se conformer (HIPAA, ISO 27001, SOC 2, PCI-DSS, etc.).
@@ -70,7 +70,7 @@ Il existe des filtres d’application découverte de base et avancés. Pour obte
 
 ## <a name="creating-and-managing-custom-app-tags"></a>Création et gestion des balises d’application personnalisées
 
-Vous pouvez créer une balise d’application personnalisée. Ces balises peuvent ensuite servir de filtres pour rechercher plus précisément des types spécifiques d’applications que vous voulez examiner. 
+Vous pouvez créer une balise d’application personnalisée. Ces balises peuvent ensuite servir de filtres pour rechercher plus précisément des types spécifiques d’applications que vous voulez examiner. Par exemple, une liste de suivi personnalisée, l’attribution à une division spécifique ou des approbations personnalisées, comme « approuvé par le service juridique ».
 
 Pour créer une balise d’application personnalisée :
 
@@ -126,7 +126,7 @@ Pour créer un rapport continu :
 ## <a name="deleting-cloud-discovery-data"></a>Suppression de données Cloud Discovery  
 Plusieurs raisons peuvent vous amener à supprimer vos données Cloud Discovery. Nous vous recommandons de les supprimer dans les cas suivants :  
   
--   Vous avez chargé manuellement les fichiers journaux, vous avez attendu longtemps avant de mettre à jour le système avec de nouveaux fichiers journaux et vous ne voulez pas que les anciennes données affectent vos résultats.  
+-   Vous avez chargé manuellement des fichiers journaux, l’eau a longtemps coulé sous les ponts avant que vous ne mettiez à jour le système avec de nouveaux fichiers journaux et vous ne voulez pas que les anciennes données affectent vos résultats.  
   
 -   Vous définissez une nouvelle vue de données personnalisée qui s’applique uniquement aux nouvelles données à compter de moment-là, alors vous pouvez effacer les anciennes données, puis charger à nouveau vos fichiers journaux pour permettre à la vue de données personnalisée de sélectionner des événements dans les données de fichiers journaux.  
   
