@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 7/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 746727ee96513e473911a286fb53ea8cec52c3cc
-ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
+ms.openlocfilehash: bce725777964ac46a21b03434d24ac725280d84d
+ms.sourcegitcommit: ae4c8226f6037c5eb286eb27142d6bbb397609e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 07/16/2017
 ---
 # <a name="create-snapshot-cloud-discovery-reports"></a>Créer des rapports d’instantanés Cloud Discovery
 Il est important de charger un journal manuellement et de laisser Cloud App Security l’analyser avant de tenter d’utiliser le collecteur de journaux automatique.
@@ -36,7 +36,7 @@ Pour créer un rapport d’instantané :
   
      ![Nouveau rapport d’instantané](./media/new-snapshot-report.png) 
 
-4.  Sélectionnez la **source de données** à partir de laquelle vous voulez charger les 13 fichiers journaux.  
+4.  Sélectionnez la **source de données** à partir de laquelle vous voulez charger les fichiers journaux.  
   
 5. Examinez le format de votre journal pour vérifier qu’il convient à l’exemple à télécharger. Cliquez sur **Afficher et vérifier**, puis sur **Télécharger un exemple de journal**. Comparez ensuite votre journal à l’exemple fourni pour vérifier qu’il est compatible. 
 
