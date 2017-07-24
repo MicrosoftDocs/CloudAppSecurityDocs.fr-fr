@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/3/2017
+ms.date: 7/9/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,22 +13,13 @@ ms.technology:
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 11d3a78803c2a22f7d08bdab9d70aec73124ff8b
-ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
+ms.openlocfilehash: ac5720bf4dd571d56bf7c41631d2a0f866146a56
+ms.sourcegitcommit: ae4c8226f6037c5eb286eb27142d6bbb397609e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 07/16/2017
 ---
-# <a name="configure-automatic-log-upload-for-continuous-reports"></a>Configurer le chargement automatique des journaux pour des rapports continus
-Les collecteurs de journaux vous permettent d’automatiser facilement le chargement manuel des journaux de votre réseau. Le collecteur de journaux s’exécute sur votre réseau et reçoit les journaux par le biais de Syslog ou FTP. Chaque journal est automatiquement traité, compressé et transmis au portail. Les journaux FTP sont chargés dans Cloud App Security une fois que le fichier a terminé le transfert FTP vers le collecteur de journaux et, pour Syslog, le collecteur de journaux écrit les journaux reçus sur le disque et charge le fichier dans Cloud App Security quand la taille de fichier dépasse 40 Ko.
-
-Une fois qu’un journal est chargé dans Cloud App Security, il est déplacé dans un répertoire de sauvegarde qui stocke les 20 derniers journaux à un moment donné. Quand de nouveaux journaux arrivent, les anciens sont supprimés. Quand l’espace disque du collecteur de journaux est plein, le collecteur de journaux supprime les nouveaux journaux tant qu’il ne dispose pas de davantage d’espace disque libre.
-
-Avant de configurer la collecte de fichiers journaux automatique, vérifiez que votre journal correspond au type attendu de journal pour vous assurer que Cloud App Security peut analyser votre fichier spécifique. 
-
->[!NOTE]
->Cloud App Security prend en charge le transfert des journaux de votre serveur SIEM au collecteur de journaux en partant du principe que les journaux sont transférés sous leur format d’origine. Cependant, il est fortement recommandé d’intégrer le collecteur de journaux directement à votre pare-feu et/ou proxy.
-
+# <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance"></a>Configurer le chargement automatique des journaux pour des rapports continus sur une appliance virtuelle
 
 ## <a name="technical-requirements"></a>Spécifications techniques
 - Hyperviseur : HyperV ou VMware
@@ -98,7 +89,7 @@ Le collecteur de journaux dispose d’un mécanisme de sécurité intégré qui 
   
 5.  Affectez à la **mémoire de démarrage** la valeur **4 096 Mo**.  
         
-6. Cochez **Utiliser la mémoire dynamique** pour cette machine virtuelle et cliquez sur **Suivant**.  
+6. Cochez **Use Dynamic Memory (Utiliser la mémoire dynamique)** pour cette machine virtuelle et cliquez sur **Suivant**.  
   
 7.  Si disponible, choisissez la **connexion** réseau et cliquez sur **Suivant**.  
   
@@ -144,7 +135,7 @@ Configurez vos pare-feu réseau et proxys pour exporter régulièrement les jour
   
      `London Zscaler - Destination path: 614`  
   
-     `SF Blue Coat - Destination path: \\CloudAppSecurityCollector01\BlueCoat\`  
+     BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\  
   
 ### <a name="step-5---verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>Étape 5 : vérifier la réussite du déploiement dans le portail Cloud App Security
 

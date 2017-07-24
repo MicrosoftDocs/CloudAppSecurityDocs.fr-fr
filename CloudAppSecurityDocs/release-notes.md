@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4918b2765be87cb4090c6a55351f6fb0afe07339
-ms.sourcegitcommit: 83d3c800e268091a69e5dc2a229e6453d3243a62
+ms.openlocfilehash: 893f06d222c52e5e39231378062c3742b81f655f
+ms.sourcegitcommit: cfbfd9103406c69505eb6273f9bb97bd57bb5a44
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/04/2017
+ms.lasthandoff: 07/09/2017
 ---
 # <a name="release-notes"></a>Notes de publication
 
@@ -44,6 +44,10 @@ Publication : 3 juillet 2017
     - **Notes personnalisées** : Quand vous passez en revue et évaluez les différentes applications qui ont été découvertes dans votre environnement, vous pouvez maintenant enregistrer votre conclusions et insights dans les Notes.
     - **Score de risque personnalisé** : Vous pouvez désormais remplacer le score de risque d’une application. Par exemple, si le score de risque d’une application est 8 et qu’il s’agit d’une application approuvée dans votre organisation, vous pouvez remplacer ce score de risque par 10 pour votre organisation. Vous pouvez également ajouter des notes pour clarifier la justification du changement quand une personne examine l’application.
 -   **Nouveau mode de déploiement du collecteur de journaux :** Nous avons commencé à développer un nouveau mode de déploiement désormais disponible pour le collecteur de journaux. En plus du déploiement actuel basé sur l’appliance virtuelle, le nouveau collecteur de journaux basé sur Docker (conteneur) peut être installé comme un package sur les ordinateurs Windows et Ubuntu à la fois localement et dans Azure. Quand vous utilisez le collecteur Docker, l’ordinateur hôte est détenu par le client, qui peut librement le corriger et le surveiller.
+
+### <a name="announcements"></a>Annonces : 
+-   Le catalogue d’applications Cloud prend désormais en charge plus de 15 000 applications détectables
+-   Conformité : Cloud App Security est officiellement certifié SOC1/2/3 par Azure. Pour consulter la liste complète des certifications, consultez la page des [offres de conformité](https://www.microsoft.com/trustcenter/compliance/complianceofferings) et filtrez les résultats pour Cloud App Security.
 
 ### <a name="other-improvements"></a>Autres améliorations : 
 -   **Amélioration de l’analyse :** Des améliorations ont été apportées au mécanisme d’analyse du journal Cloud Discovery. Les erreurs internes sont beaucoup moins susceptibles de se produire.
