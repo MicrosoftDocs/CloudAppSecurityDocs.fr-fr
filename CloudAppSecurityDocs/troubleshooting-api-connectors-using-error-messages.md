@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/26/2017
+ms.date: 7/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,17 +13,18 @@ ms.technology:
 ms.assetid: 4b6ac04a-4653-4c4a-bd6f-5926743475cc
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c046cefa687b67796e2039db079e51f510ea2ff0
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 1c796c3933be0678183eae6e52ffd92097880ed8
+ms.sourcegitcommit: c6f917ed0fc2329a72b1e5cbb8ccd5e4832c8695
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 07/23/2017
 ---
 # <a name="troubleshooting-app-connectors-using-error-messages"></a>Résolution des problèmes des connecteurs d’application à l’aide de messages d’erreur
 
 Quand vous tentez de connecter une application cloud à l’aide du connecteur d’application API, la boîte de dialogue du connecteur d’application peut afficher des erreurs.
 
 
+> [!div class="mx-tableFixed"]
 |Message d’erreur|Application correspondante|Description|Solution|
 |----|----|----|------------|
 |HttpRequestFailure: 400 Requête incorrecte retourné par le serveur : {"error":{"code":"AF20012","message":"L’ID de client spécifié (emplacement de Tenant_ID) est configuré de façon incorrecte dans le système."|Office 365 |Aucune licence Office 365 attribuée n’a été trouvée. |Attribuez au moins une licence Office 365 à votre client.| 
