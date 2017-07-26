@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 96f6aeb2ec67175bde4ed94199405d6457797659
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 9ed4b87b3665509a4e842d985e02d414bfa532bf
+ms.sourcegitcommit: b39c171da0f2df49a9293b343b404d26574d78ef
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 07/23/2017
 ---
 # <a name="connect-apps"></a>Connecter des applications 
 Les connecteurs d’applications utilisent les API des fournisseurs d’applications pour que Cloud App Security bénéficie d’une plus grande visibilité et d’un plus grand contrôle sur les applications auxquelles vous vous connectez.  
@@ -66,6 +66,7 @@ Selon l’application à laquelle vous vous connectez (voir le tableau ci-dessou
   
 Le tableau suivant répertorie, par application cloud, les fonctionnalités prises en charge avec les connecteurs d’applications :  
 
+> [!div class="mx-tableFixed"]
 ||**Office 365**|**Box**|**Okta**|**G Suite**|**ServiceNow**|**Salesforce**|**Dropbox**|**AWS**|  
 |-|-|-|-|-|-|-|-|-|  
 |**Répertorier les comptes**|✔|✔|✔|✔|✔|✔|✔|✔|  
