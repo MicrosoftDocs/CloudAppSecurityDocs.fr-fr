@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/16/2017
+ms.date: 7/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,16 +13,16 @@ ms.technology:
 ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ccc2197943c81b1a871375d4134c5aaf01876345
-ms.sourcegitcommit: ae4c8226f6037c5eb286eb27142d6bbb397609e9
+ms.openlocfilehash: b3c9181bf1d56fe515d3e1356d38d631fee2cac5
+ms.sourcegitcommit: c6f917ed0fc2329a72b1e5cbb8ccd5e4832c8695
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/16/2017
+ms.lasthandoff: 07/23/2017
 ---
 # <a name="external-dlp-integration"></a>Intégration DLP externe
 
 > [!NOTE] 
-> Cette fonctionnalité est en préversion. Veuillez contacter <mcaspreview@microsoft.com> pour essayer cette fonctionnalité dans votre client.
+> Cette fonctionnalité est en préversion. Veuillez contacter <Cloud App Securitypreview@microsoft.com> pour essayer cette fonctionnalité dans votre client.
 
 Cloud App Security peut s’intégrer à des solutions DLP existantes pour étendre ces contrôles au cloud tout en conservant une stratégie cohérente et unifiée pour les activités locales et dans le cloud. La plateforme exporte des interfaces faciles à utiliser, notamment l’API REST et ICAP, qui permettent d’intégrer des systèmes de classification du contenu comme Symantec Data Loss Prevention (anciennement Vontu Data Loss Prevention) ou Forcepoint DLP. 
 
@@ -88,7 +88,7 @@ Consultez le [site web du stunnel](https://www.stunnel.org/index.html) pour plus
       
      ` ..\bin\openssl.exe  req -new -x509 -config ".\openssl.cnf" -key key.pem -out .\cert.pem -days 1095`
 
-8. Concaténez les variables cert.pem et key.pem et enregistrez-les dans le fichier : `cat cert.pem key.pem >> stunnel-key.pem`
+8. Concaténez les variables cert.pem et key.pem et enregistrez-les dans le fichier : `type cert.pem key.pem >> stunnel-key.pem`
 
 9. [Téléchargez la clé publique](https://adaprodconsole.blob.core.windows.net/icap/publicCert.pem) et enregistrez-la à cet emplacement **C:\Program Files (x86)\stunnel\config\CAfile.pem**.
 
@@ -96,7 +96,7 @@ Consultez le [site web du stunnel](https://www.stunnel.org/index.html) pour plus
 
         rem Open TCP Port 11344 inbound and outbound
         netsh advfirewall firewall add rule name="Secure ICAP TCP Port 11344" dir=in action=allow protocol=TCP localport=11344
-        netsh advfirewall firewall add rule name=" Secure ICAP Port 11344" dir=out action=allow protocol=TCP localport=11344
+        netsh advfirewall firewall add rule name="Secure ICAP TCP Port 11344" dir=out action=allow protocol=TCP localport=11344
 
 11. Exécutez `c:\Program Files (x86)\stunnel\bin\stunnel.exe` pour ouvrir l’application de stunnel. 
 
@@ -112,7 +112,7 @@ Consultez le [site web du stunnel](https://www.stunnel.org/index.html) pour plus
         cert = C:\Program Files (x86)\stunnel\config\**stunnel-key**.pem
         CAfile = C:\Program Files (x86)\stunnel\config\**CAfile**.pem
         TIMEOUTclose = 0
-
+        client = no
 12. Enregistrez le fichier, puis cliquez sur **Recharger la configuration**.
 
 13. Pour vérifier que tout s’exécute comme prévu, à partir d’une invite de commandes, exécutez `netstat -nao  | findstr 11344`
@@ -159,12 +159,12 @@ La configuration du stunnel est définie dans le fichier stunnel.conf.
 3.  Ouvrez le fichier et collez les lignes de configuration de serveur suivantes, où **Adresse IP du serveur DLP** désigne l’adresse IP de votre serveur ICAP, **stunnel-key** est la clé que vous avez créée à l’étape précédente et **CAfile** est le certificat public du client stunnel de Cloud App Security :
 
         [microsoft-Cloud App Security]
-         accept = 0.0.0.0:11344
-         connect = **ICAP Server IP**:1344
-          cert = /etc/ssl/private/**stunnel-key**.pem
-          CAfile = /etc/ssl/certs/**CAfile**.pem
-          TIMEOUTclose = 1
-
+        accept = 0.0.0.0:11344
+        connect = **ICAP Server IP**:1344
+        cert = /etc/ssl/private/**stunnel-key**.pem
+        CAfile = /etc/ssl/certs/**CAfile**.pem
+        TIMEOUTclose = 1
+        client = no
 > [!NOTE] 
 > Par défaut, le numéro de port du stunnel a la valeur 11344. Vous pouvez le remplacer par un autre port si nécessaire, mais n’oubliez pas de noter le nouveau numéro de port, vous en aurez besoin à l’étape suivante.
 
@@ -250,6 +250,54 @@ Dans ForcePoint, définissez votre appliance en suivant ces étapes :
     ![Blocage ICAP](./media/icap-blocking.png)
  
 
+## <a name="appendix-b-symantec-deployment-guide"></a>Annexe B : Guide de déploiement de Symantec
+
+Les versions Symantec DLP prises en charge sont 11-14.6. Comme indiqué ci-dessus, vous devez déployer un serveur de détection dans le même centre de données Azure que celui où se trouve votre client Cloud App Security. Le serveur de détection se synchronise avec le serveur d’application via un tunnel IPSec dédié. 
+ 
+### <a name="detection-server-installation"></a>Installation du serveur de détection 
+Le serveur de détection utilisé par Cloud App Security est un serveur Network Prevent for Web standard. Plusieurs options de la configuration doivent être modifiées :
+1.  Désactivez le **Mode d’évaluation** :
+    1. Sous **Système** > **Serveurs et détecteurs**, cliquez sur la cible ICAP. 
+    
+      ![Cible ICAP](./media/icap-target.png)
+    
+    2. Cliquez sur **Configurer**. 
+    
+      ![Configurer la cible ICAP](./media/configure-icap-target.png)
+    
+    3. Désactivez le **Mode d’évaluation**.
+    
+      ![désactiver le mode d’évaluation](./media/icap-disable-trial-mode.png)
+    
+2. Sous **ICAP** > **Filtrage de réponse**, définissez la valeur de l’option **Ignorer les réponses inférieures à** sur 1.
+
+3. Et ajoutez « application/* » à la liste **Inspecter le type de contenu**.
+     ![inspecter le type de contenu](./media/icap-inspect-content-type.png)
+4. Cliquez sur **Enregistrer**.
+
+
+### <a name="policy-configuration"></a>Configuration de la stratégie
+Cloud App Security prend parfaitement en charge tous les types de règle de détection inclus avec Symantec DLP, il est donc inutile de modifier les règles existantes. Toutefois, il existe une modification de configuration qui doit être appliquée à toutes les stratégies existantes et nouvelles pour activer l’intégration complète. Cette modification correspond à l’ajout d’une règle de réponse spécifique pour toutes les stratégies. Ajoutez la modification de configuration à Vontu :
+1.  Accédez à **Gérer** > **Stratégies** > **Règles de réponse** et cliquez sur **Ajouter une règle de réponse**.
+    
+    ![ajouter une règle de réponse](./media/icap-add-response-rule.png)
+
+2.  Vérifiez que l’option **Réponse automatique** est sélectionnée et cliquez sur **Suivant**.
+
+    ![réponse automatique](./media/icap-automated-response.png)
+
+3. Tapez un nom pour la règle, par exemple, **Bloquer HTTP/HTTPS**. Sous **Actions** sélectionnez **Bloquer HTTP/HTTPS** et cliquez sur **Enregistrer**.
+
+    ![bloquer http](./media/icap-block-http.png)
+
+Ajoutez la règle que vous avez créée à des stratégies existantes :
+1. Dans chaque stratégie, accédez à l’onglet **Réponse**.
+2. Dans la liste déroulante **Règle de réponse**, sélectionnez la règle de réponse de blocage que vous avez créée ci-dessus.
+3. Enregistrez la stratégie.
+   
+    ![désactiver le mode d’évaluation](./media/icap-add-policy.png)
+
+Cette règle doit être ajoutée à toutes les stratégies existantes.
 
 
 
