@@ -49,11 +49,11 @@ Cloud App Security vous permet d’atténuer différents risques dans le cloud. 
   
      Classez et identifiez les données sensibles ou réglementées, notamment les autorisations de partage pour chaque fichier, stockées dans des services de synchronisation de fichier pour assurer la conformité aux réglementations telles que PCI, SOX et HIPAA  
   
--   **Contrôle de configuration : ** Votre configuration fait-elle l’objet de modifications non autorisées ?  
+-   **Contrôle de configuration :**  Votre configuration fait-elle l’objet de modifications non autorisées ?  
   
      Surveillez les modifications de configuration, notamment la manipulation de la configuration à distance.  
   
--   **Cloud Discovery : ** Des applications nouvelles sont-elles utilisées dans votre organisation ? Des applications Shadow IT que vous ignorez sont-elles utilisées ?  
+-   **Cloud Discovery :**  Des applications nouvelles sont-elles utilisées dans votre organisation ? Des applications Shadow IT que vous ignorez sont-elles utilisées ?  
   
      Évaluez le risque global pour chaque application cloud en fonction de la réglementation, ainsi que des bonnes pratiques et certifications de l’industrie.  
     Grâce à cette approche, vous pouvez surveiller le nombre d’utilisateurs, les activités, le volume de trafic et les heures d’utilisation classiques pour  
