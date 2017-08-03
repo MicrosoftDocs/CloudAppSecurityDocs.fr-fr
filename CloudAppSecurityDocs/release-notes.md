@@ -1,5 +1,5 @@
 ---
-title: Notes de publication et versions de Cloud App Security | Microsoft Docs
+title: "Nouveautés dans Cloud App Security | Microsoft Docs"
 description: "Cette rubrique est mise à jour fréquemment pour vous informer des nouveautés de la dernière version de Cloud App Security."
 keywords: 
 author: rkarlin
@@ -13,13 +13,13 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 893f06d222c52e5e39231378062c3742b81f655f
-ms.sourcegitcommit: cfbfd9103406c69505eb6273f9bb97bd57bb5a44
+ms.openlocfilehash: 7fe4b327e3f90bf98f4796d1b9b3149435b0ccd5
+ms.sourcegitcommit: b39c171da0f2df49a9293b343b404d26574d78ef
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2017
+ms.lasthandoff: 07/23/2017
 ---
-# <a name="release-notes"></a>Notes de publication
+# <a name="whats-new-with-cloud-app-security"></a>Nouveautés dans Cloud App Security
 
 ## <a name="cloud-app-security-release-100"></a>Cloud App Security version 100 
 Publication : 3 juillet 2017
