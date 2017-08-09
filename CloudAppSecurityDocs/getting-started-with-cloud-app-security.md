@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/10/2017
+ms.date: 7/30/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7f1b4f7fc213dee315b723bf09d88dd7867c14e6
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 148c9b275ce77a963dc27c77be791d5dcd37379a
+ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="deploy-cloud-app-security"></a>Déployer Cloud App Security
 Cloud App Security vous permet de tirer parti des avantages des applications cloud tout en conservant le contrôle des ressources d’entreprise. Il fonctionne en améliorant la visibilité de l’activité cloud et contribue à renforcer la protection des données d’entreprise. Dans cette rubrique, nous vous guidons à travers les étapes permettant de configurer et d’utiliser Cloud App Security.  
@@ -65,7 +65,7 @@ Tâche obligatoire : Charger les journaux de trafic **Pour créer un rapport Cl
  3. Sous l’onglet **Sources de données**, ajoutez vos sources.
  4. Sous l’onglet **Collecteurs de journaux**, configurez le collecteur de journaux.
  
- **Pour créer un rapport d’instantané Cloud Discovery**
+**Pour créer un rapport d’instantané Cloud Discovery**
 
  1. Accédez à **Découvrir** > **Créer un rapport d’instantané** et suivez les étapes indiquées.
 
@@ -109,19 +109,19 @@ Tâche recommandée : Ajouter les détails de votre organisation
 2. Sous **Identité de l’expéditeur de l’e-mail**, entrez vos adresses e-mail et votre nom d’affichage.
 3. Sous **Conception de l’e-mail**, chargez le modèle d’e-mail de votre organisation.
 
- **Pour définir des notifications d’administrateur**
+**Pour définir des notifications d’administrateur**
 
 1. Dans la barre de navigation, choisissez votre nom d’utilisateur, puis accédez à **Paramètres utilisateur**.
 2. Sous **Notifications**, configurez les méthodes à définir pour les notifications système.
 3. Choisissez **Enregistrer**.
 
- **Pour personnaliser les métriques de score**
+**Pour personnaliser les métriques de score**
 
 1. Accédez à **Paramètres** > **Paramètres Cloud Discovery**.
 2. Sous **Configurer la métrique du score**, configurez l’importance des différentes valeurs de risque.
 3. Choisissez **Enregistrer**.
 
- Les scores de risque attribués aux applications découvertes sont maintenant configurés précisément selon les besoins et priorités de votre organisation.
+Les scores de risque attribués aux applications découvertes sont maintenant configurés précisément selon les besoins et priorités de votre organisation.
 
 **Pourquoi personnaliser votre environnement ?**
 Certaines fonctionnalités fonctionnent mieux quand elles sont adaptées à vos besoins. Améliorez l’expérience de vos utilisateurs avec vos propres modèles de message électronique, choisissez les notifications que vous recevez et personnalisez vos métriques de score de risque selon les préférences de votre organisation.
@@ -137,12 +137,12 @@ Tâche recommandée : Configurer des paramètres importants
 3. Entrez les **détails**, l’**emplacement**, les **étiquettes** et la **catégorie** de la plage d’adresses IP.
 4. Choisissez **Créer**.
 
- Vous pouvez maintenant utiliser des étiquettes d’adresse IP quand vous créez des stratégies, et quand vous filtrez et créez des vues de données.
+ Vous pouvez maintenant utiliser des étiquettes d’adresse IP quand vous créez des stratégies, et quand vous filtrez et créez des rapports continus.
 
- **Pour créer des vues**
+**Pour créer des rapports continus**
 
 1. Accédez à **Paramètres** > **Paramètres Cloud Discovery**.
-2. Sous **Vues de données**, cliquez sur (+) **Ajouter une vue de données**.
+2. Sous **Gérer les rapports continus**, choisissez **Créer un rapport**.
 3. Suivez les étapes de configuration.
 4. Choisissez **Créer**.
 

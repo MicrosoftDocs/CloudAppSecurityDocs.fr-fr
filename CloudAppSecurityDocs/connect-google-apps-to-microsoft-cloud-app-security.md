@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 95c92a7767f369d323d226c4362288ce043f905d
-ms.sourcegitcommit: 38e3c6749e3c746ab73b8da96cd81219781a7998
+ms.openlocfilehash: 12ea0c3833c4ff4b2a3c5c7d4478f0603e471547
+ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/04/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>Connecter G Suite à Microsoft Cloud App Security
 Cette section fournit des instructions pour connecter Cloud App Security à votre compte G Suite existant à l’aide des API du connecteur.
@@ -88,7 +88,7 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
 12.  Un fichier de certificat P12 est enregistré sur votre ordinateur.  
         
 12. Dans l’écran **Credentials** (Informations d’identification), cliquez sur **Manage service accounts** (Gérer les comptes de service) à l’extrême droite.  
-       ![Compte de service des informations d’identification G Suite](./media/google10.png "G Suite credentials service account")  
+       ![informations d’identification G Suite, compte de service](./media/google10.png "informations d’identification G Suite, compte de service")  
   
 13. Cliquez sur les 3 points à droite du compte de service que vous avez créé et sélectionnez **Edit (Modifier)**.  
   
@@ -119,6 +119,9 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
   
 19. Dans la liste **Enabled APIs** (API activées), cliquez sur l’icône des paramètres en regard de **Google Apps Marketplace SDK**. 
          ![google, configurer marketplace SDK](./media/google16.png "googledriveconfig")  
+
+       >[!NOTE]
+       > Si la roue dentée est désactivée, vous pouvez cliquer sur **Google Apps Marketplace SDK** à la place. 
 20. Sélectionnez l’onglet **Configuration**. 
   
     -   Copiez la valeur **Project number (App ID)** (Numéro de projet (ID d’application)) qui apparaît en haut à des fins d’utilisation ultérieure.  

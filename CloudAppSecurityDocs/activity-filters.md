@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/9/2017
+ms.date: 7/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 8899715f7da9433646e3b007ca971b191b602a3a
-ms.sourcegitcommit: cfbfd9103406c69505eb6273f9bb97bd57bb5a44
+ms.openlocfilehash: 7d74bb482f44e2845d348dd18777d72910b7e18b
+ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="activities"></a>Activités
 Cloud App Security vous donne une visibilité sur toutes les activités de vos applications connectées. Une fois connecté à une application à l’aide du connecteur d’applications, Cloud App Security analyse toutes les activités passées (la période d’analyse rétroactive varie par application). Cloud App Security est ensuite mis à jour en continu avec les nouvelles activités. 
@@ -124,23 +124,22 @@ Vous trouverez ci-dessous une liste des filtres d’activité qui peuvent être 
 
 ### <a name="working-with-the-activity-drawer"></a>Travailler avec le tiroir Activité
 
-Vous pouvez afficher plus d’informations supplémentaires sur chaque activité en cliquant sur l’activité elle-même dans le journal d’activité. Cette opération ouvre le tiroir Activité qui contient les actions supplémentaires suivantes que vous pouvez appliquer à l’activité :
+Vous pouvez afficher plus d’informations supplémentaires sur chaque activité en cliquant sur l’activité elle-même dans le journal d’activité. Cette opération ouvre le tiroir Activité qui contient les actions et insights supplémentaires suivants pour chaque activité :
+    - Stratégies correspondantes : Cliquez sur le lien Stratégies correspondantes pour afficher la liste des stratégies que cette activité a mises en correspondance.
+    - Afficher les données brutes : Cliquez sur Afficher les données brutes pour afficher les données réelles reçues de l’application.
+    - Utilisateur : Cliquez sur l’utilisateur pour afficher la page utilisateur de l’utilisateur ayant réalisé l’activité. 
+    - Type d’appareil : Cliquez sur le type d’appareil pour afficher les données d’agent utilisateur brutes. 
+    - Emplacement : Cliquez sur l’emplacement pour afficher l’emplacement dans des cartes Bing.
+    - Catégorie d’adresse IP et balises : Cliquez sur la balise IP pour afficher la liste des balises IP trouvées dans cette activité. Vous pouvez ensuite filtrer selon toutes les activités correspondant à cette balise.    
 
-- Stratégies correspondantes : Cliquez sur le lien Stratégies correspondantes pour afficher la liste des stratégies que cette activité a mises en correspondance.
-- Afficher les données brutes : Cliquez sur Afficher les données brutes pour afficher les données réelles reçues de l’application.
-- Utilisateur : Cliquez sur l’utilisateur pour afficher la page utilisateur de l’utilisateur ayant réalisé l’activité. 
-- Type d’appareil : Cliquez sur le type d’appareil pour afficher les données d’agent utilisateur brutes. 
-- Emplacement : Cliquez sur l’emplacement pour afficher l’emplacement dans des cartes Bing.
-- Catégorie d’adresse IP et balises : Cliquez sur la balise IP pour afficher la liste des balises IP trouvées dans cette activité. Vous pouvez ensuite filtrer selon toutes les activités correspondant à cette balise.    
-
-Les champs du tiroir d’activité fournissent des liens contextuels vers des fichiers supplémentaires et permettent d’effectuer un zoom avant, directement dans le tiroir. Par exemple, si vous déplacez votre curseur à côté de la catégorie d’adresse IP, vous pouvez utiliser l’icône ajouter au filtre ![ajouter au filtre](./media/add-to-filter-icon.png) pour ajouter l’adresse IP immédiatement au filtre de la page actuelle. Vous pouvez également utiliser l’icône de roue dentée paramètres ![icône paramètres](./media/contextual-settings-icon.png) qui s’affiche pour accéder directement à la page des paramètres nécessaire pour modifier la configuration de l’un des champs, par exemple les **groupes d’utilisateurs**.
+ Les champs du tiroir d’activité fournissent des liens contextuels vers des fichiers supplémentaires et permettent d’effectuer un zoom avant, directement dans le tiroir. Par exemple, si vous déplacez votre curseur à côté de la catégorie d’adresse IP, vous pouvez utiliser l’icône ajouter au filtre ![ajouter au filtre](./media/add-to-filter-icon.png) pour ajouter l’adresse IP immédiatement au filtre de la page actuelle. Vous pouvez également utiliser l’icône de roue dentée paramètres ![icône paramètres](./media/contextual-settings-icon.png) qui s’affiche pour accéder directement à la page des paramètres nécessaire pour modifier la configuration de l’un des champs, par exemple les **groupes d’utilisateurs**.
 
 
 ![tiroir activité](./media/activity-drawer.png "tiroir activité")  
   
 Pour obtenir la liste des actions de gouvernance disponibles, consultez [Actions de gouvernance des activités](governance-actions.md#activity-governance-actions).
 
-### <a name="user-insights"></a>Insights utilisateur
+#### <a name="user-insights"></a>Insights utilisateur
 
 L’expérience d’investigation comprend des insights prêts à l’emploi sur l’utilisateur responsable de l’action. En un seul clic, vous pouvez obtenir une vue d’ensemble complète de l’utilisateur, notamment l’endroit à partir duquel il s’est connecté, le nombre d’alertes ouvertes qui le concernent et ses informations de métadonnées.
 
@@ -156,7 +155,29 @@ Pour afficher les insights utilisateur :
     - **ISP** : Nombre d’ISP à partir desquels l’utilisateur s’est connecté au cours des 30 derniers jours.
     - **Adresses IP** : Nombre d’adresses IP à partir desquelles l’utilisateur s’est connecté au cours des 30 derniers jours.
 
-![Insights utilisateur dans Cloud App Security](./media/user-insights.png)
+![insights sur l’utilisateur dans Cloud App Security](./media/user-insights.png)
+
+#### <a name="ip-address-insights"></a>Insights sur l’adresse IP
+
+Parce que les informations d’adresse IP sont essentielles dans la quasi-totalité des examens, vous pouvez afficher les informations détaillées des adresses IP dans le tiroir Activité. Dans une activité spécifique, vous pouvez cliquer sur l’onglet Adresse IP pour afficher des données consolidées concernant l’adresse IP, y compris le nombre d’alertes actives pour l’adresse IP spécifique, un graphique de tendance de l’activité récente et une carte d’emplacement. Cela vous permet de faire des examens approfondis, par exemple, quand vous recherchez la cause d’alertes Voyage impossible, vous pouvez facilement déterminer où a été utilisée l’adresse IP et si elle a été impliquée ou non dans des activités suspectes. Vous pouvez également effectuer des actions directement dans le tiroir Adresse IP, où vous pouvez marquer une adresse IP comme étant risquée, VPN ou d’entreprise pour faciliter par la suite l’examen et la création de stratégie.
+
+Pour afficher les insights sur l’adresse IP :
+
+1. Cliquez sur l’activité elle-même dans le **Journal d’activité**.
+
+2. Ensuite, cliquez sur l’onglet **Adresse IP**. <br></br> Cette opération ouvre l’onglet **Adresse IP** du tiroir Activité qui fournit les insights suivants sur l’adresse IP :
+    - **Alertes ouvertes** : Nombre d’alertes ouvertes concernant l’adresse IP.
+    - **Activités** : Nombre d’activités effectuées par l’adresse IP au cours des 30 derniers jours.
+    - **Emplacement IP** : Emplacements géographiques à partir desquels l’adresse IP s’est connectée au cours des 30 derniers jours.
+    - **Activités** : Nombre d’activités effectuées à partir de l’adresse IP au cours des 30 derniers jours.
+    - **Activités administratives**  : Nombre d’activités administratives effectuées à partir de l’adresse IP au cours des 30 derniers jours.
+    - Vous pouvez effectuer les actions d’adresse IP suivantes :
+        - Marquer comme adresse IP risquée 
+        - Marquer comme adresse IP VPN
+        - Marquer comme adresse IP risquée et l’ajouter à un groupe bloqué
+
+![Insights sur l’adresse IP dans Cloud App Security](./media/ip-address-insights.png)
+
 
 ## <a name="see-also"></a>Voir aussi  
 [Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)   

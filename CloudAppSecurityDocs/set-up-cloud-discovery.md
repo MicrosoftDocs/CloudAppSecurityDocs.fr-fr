@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/7/2017
+ms.date: 7/30/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,23 +13,15 @@ ms.technology:
 ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d12fa44f42c5545464c7e8ba9da366a2302f73c1
-ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.openlocfilehash: 5d8a60d15ae730cfa3fb1a851bf588d291f5287e
+ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="set-up-cloud-discovery"></a>Configurer Cloud Discovery
-Cloud Discovery analyse vos journaux de trafic par rapport au catalogue de plus de 13 000 applications cloud de Cloud App Security qui sont classées et évaluées selon plus de 50 attributs pour que vous bénéficiiez d’une visibilité permanente sur l’utilisation du cloud, l’informatique fantôme et le risque que ce dernier représente pour votre organisation.
-Le **catalogue d’applications cloud** évalue les risques pour vos applications cloud selon les certifications réglementaires, les normes du secteur et les bonnes pratiques. Quatre processus complémentaires s’exécutent dans le catalogue d’applications cloud pour le tenir à jour :
-1.    Extraction de données automatisée directement à partir de l’application cloud (pour les attributs tels que la conformité SOC 2).
-2.    Extraction de données avancée automatisée pour les données par les algorithmes de Cloud App Security (pour les attributs tels que les en-têtes de sécurité HTTP).
-3.    Analyse en continu par l’équipe d’analystes cloud Cloud App Security (pour les attributs tels que le chiffrement au repos).
-4.    Demandes de révisions basées sur le client, en fonction des demandes de soumissions du client des modifications à apporter au catalogue d’applications cloud. Toutes les demandes sont examinées par notre équipe d’analystes cloud et mises à jour en fonction de leurs conclusions.
-  
-## <a name="cloud-discovery-data-anonymization"></a>Anonymisation des données Cloud Discovery
-
-L’anonymisation de données Cloud Discovery vous permet de protéger la confidentialité des utilisateurs. Une fois que le journal des données est téléchargé sur le portail Cloud App Security, il est purgé et toutes les informations des noms d’utilisateur sont remplacées par des noms d’utilisateur chiffrés. De cette façon, toutes les activités cloud restent anonymes. Pour plus d’informations, consultez [Anonymisation de Cloud Discovery](cloud-discovery-anonymizer.md).
-
+Cloud Discovery analyse les journaux de votre trafic en se basant sur le catalogue d’applications cloud de Cloud App Security, qui contient plus de 15 000 applications cloud classées et évaluées selon plus de 60 facteurs de risque, afin de vous offrir une visibilité en continu de l’utilisation du cloud, de l’informatique fantôme et du risque que cette dernière représente pour votre organisation.
+ 
 ## <a name="snapshot-and-continuous-risk-assessment-reports"></a>Rapports d’instantanés et continus d’évaluation des risques 
 
 Il existe deux types de rapports que vous pouvez générer : 
@@ -44,7 +36,7 @@ Le processus de génération d’une évaluation des risques comporte les étape
   
 -   **Extraction** : Cloud App Security analyse et extrait les données de trafic depuis les journaux de trafic à l’aide d’un analyseur dédié pour chaque source de données.  
   
--   **Analyse** : Les données de trafic sont analysées par rapport au catalogue d’applications cloud dans le but d’identifier plus de 13 000 applications cloud et d’évaluer leur score de risque. Les utilisateurs et adresses IP actifs sont également identifiés dans le cadre de l’analyse.  
+-   **Analyse** : Les données de trafic sont analysées par rapport au catalogue d’applications cloud dans le but d’identifier plus de 15 000 applications cloud et d’évaluer leur score de risque. Les utilisateurs et adresses IP actifs sont également identifiés dans le cadre de l’analyse.  
   
 -   **Générer un rapport** : Un rapport d’évaluation des risques sur les données extraites des fichiers journaux est généré.   
  
@@ -74,6 +66,8 @@ Pour générer correctement un rapport Cloud Discovery, vos journaux de trafic d
 3.  Les événements ne datent pas de plus de 90 jours.
 4.  Le fichier journal est valide et comprend des informations sur le trafic sortant.
  
+
+
 ## <a name="supported-firewalls-and-proxies"></a>Pare-feu et proxys pris en charge
 
 - Barracuda - Web Application Firewall (W3C)
@@ -99,6 +93,8 @@ Pour générer correctement un rapport Cloud Discovery, vos journaux de trafic d
 - Websense - Solutions de sécurité web - Journal d’activité Internet (CEF)
 - Zscaler
 
+> [!NOTE]
+> Cloud Discovery prend en charge les adresses IPv4 et IPv6.
 
 Si votre journal n’est pas pris en charge, sélectionnez **Autre** comme **Source de données** et spécifiez l’appareil et le journal que vous essayez de charger. Votre journal est examiné par l’équipe d’analystes cloud Cloud App Security et vous êtes averti si la prise en charge de votre type de journal est ajoutée. Vous pouvez également définir un analyseur personnalisé qui correspond à votre format. Pour plus d’informations, consultez [Utiliser un analyseur de journaux personnalisé](custom-log-parser.md).
 
@@ -117,17 +113,19 @@ Attributs de données (selon la documentation du fournisseur) :
 |Clavister NGFW (Syslog)|**Oui**|**Oui**|**Oui**|**Oui**|**Oui**|**Oui**|
 |Dell SonicWall|**Oui**|**Oui**|Non|**Oui**|**Oui**|**Oui**|
 |Fortigate|Non|**Oui**|Non|**Oui**|**Oui**|**Oui**|
-|Juniper SRX|Non|**Oui**|Non|**Oui**\**|**Oui**|**Oui**|
+|Juniper SRX|Non|**Oui**|Non|**Oui**|**Oui**|**Oui**|
 |Juniper SSG|Non|**Oui**|Non|**Oui**|**Oui**|**Oui**|
 |McAfee SWG|**Oui**|Non|Non|**Oui**|**Oui**|**Oui**|
 |MS TMG|**Oui**|Non|**Oui**|**Oui**|**Oui**|**Oui**|
-|Palo Alto Networks|**Oui**|**Oui**|**Oui**|**Oui**\*|**Oui**|**Oui**|
+|Palo Alto Networks|**Oui**|**Oui**|**Oui**|**Oui**|**Oui**|**Oui**|
 |Sophos|**Oui**|**Oui**|**Oui**|**Oui**|**Oui**|Non|
-|Websense - Rapport d’examen détaillé (CSV)|**Oui**|Non|Non|**Oui**|Non|Non|
+|Squid (commun)|**Oui**|Non|**Oui**|**Oui**|Non|**Oui**|
+|Squid (natif)|**Oui**|Non|**Oui**|**Oui**|Non|**Oui**|
+|Websense - Rapport d’examen détaillé (CSV)|**Oui**|**Oui**|**Oui**|**Oui**|**Oui**|**Oui**|
 |Websense - Journal d’activité Internet (CEF)|**Oui**|**Oui**|**Oui**|**Oui**|**Oui**|**Oui**|
 |Zscaler|**Oui**|Non|**Oui**|Non|**Oui**|**Oui**|
 
-\* Cloud Discovery prend en charge IPv6.
+
 
 ## <a name="see-also"></a>Voir aussi
  
