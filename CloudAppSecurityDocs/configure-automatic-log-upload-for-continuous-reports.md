@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/9/2017
+ms.date: 7/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ac5720bf4dd571d56bf7c41631d2a0f866146a56
-ms.sourcegitcommit: ae4c8226f6037c5eb286eb27142d6bbb397609e9
+ms.openlocfilehash: d5f618feb038083dd9140a1c53d301788f561a4e
+ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/16/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance"></a>Configurer le chargement automatique des journaux pour des rapports continus sur une appliance virtuelle
 
@@ -43,7 +43,7 @@ Le collecteur de journaux dispose d’un mécanisme de sécurité intégré qui 
 ### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>Étape 1 : configuration du portail web  - définir les sources de données et les lier à un collecteur de journaux  
   
 1.  Accédez à la page des paramètres de chargement automatisé :  
-    Dans le portail Cloud App Security, cliquez sur l’icône des paramètres ![icône des paramètres](./media/settings-icon.png "settings icon"), puis sur **Collecteurs de journaux**.  
+    Dans le portail Cloud App Security, cliquez sur l’icône des paramètres ![icône des paramètres](./media/settings-icon.png "icône des paramètres"), puis sur **Collecteurs de journaux**.  
   
 3.  Pour chaque pare-feu ou proxy à partir desquels vous voulez charger des journaux, créez une source de données correspondante :  
   
@@ -51,7 +51,7 @@ Le collecteur de journaux dispose d’un mécanisme de sécurité intégré qui 
   
     b.  **Nommez** votre proxy ou pare-feu.  
   
-    c.  Sélectionnez l’appareil dans la liste **Source**.  
+    c.  Sélectionnez l’appareil dans la liste **Source**. Si vous sélectionnez **Format de journal personnalisé** pour utiliser une appliance réseau qui n’est pas spécifiquement répertoriée, consultez [Utilisation de l’analyseur de journal personnalisé](custom-log-parser.md) pour obtenir des instructions de configuration.
   
     d.  Comparez votre journal à l’exemple de format de journal attendu. Si votre format de fichier journal ne correspond pas à cet exemple, vous devez ajouter votre source de données en tant qu’**Autre**.  
   
@@ -81,7 +81,7 @@ Le collecteur de journaux dispose d’un mécanisme de sécurité intégré qui 
 1.  Ouvrez le Gestionnaire Hyper-V.  
   
 2.  Sélectionnez **Nouveau**, puis **Machine virtuelle** et cliquez sur **Suivant**.  
- ![découverte machine virtuelle hyperv](./media/discovery-hyperv-virtual-machine.png "discovery hyperv virtual machine")  
+ ![découverte machine virtuelle hyperv](./media/discovery-hyperv-virtual-machine.png "découverte machine virtuelle hyperv")  
   
 3.  Fournissez un **nom** à la nouvelle machine virtuelle, par exemple, CloudAppSecurityLogCollector01, puis cliquez sur **Suivant**.  
   
@@ -89,7 +89,7 @@ Le collecteur de journaux dispose d’un mécanisme de sécurité intégré qui 
   
 5.  Affectez à la **mémoire de démarrage** la valeur **4 096 Mo**.  
         
-6. Cochez **Use Dynamic Memory (Utiliser la mémoire dynamique)** pour cette machine virtuelle et cliquez sur **Suivant**.  
+6. Cochez **Utiliser la mémoire dynamique** pour cette machine virtuelle et cliquez sur **Suivant**.  
   
 7.  Si disponible, choisissez la **connexion** réseau et cliquez sur **Suivant**.  
   

@@ -1,11 +1,11 @@
 ---
-title: "Nouveautés dans Cloud App Security | Microsoft Docs"
+title: "Nouveautés de Cloud App Security | Microsoft Docs"
 description: "Cette rubrique est mise à jour fréquemment pour vous informer des nouveautés de la dernière version de Cloud App Security."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/3/2017
+ms.date: 7/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,30 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7fe4b327e3f90bf98f4796d1b9b3149435b0ccd5
-ms.sourcegitcommit: b39c171da0f2df49a9293b343b404d26574d78ef
+ms.openlocfilehash: 29df61beb80e931d9d4b0c90a3e89a2b9f496740
+ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2017
+ms.lasthandoff: 08/03/2017
 ---
-# <a name="whats-new-with-cloud-app-security"></a>Nouveautés dans Cloud App Security
+# <a name="whats-new-with-cloud-app-security"></a>Nouveautés de Cloud App Security
+
+## <a name="cloud-app-security-release-102"></a>Cloud App Security version 102 
+Publication : 30 juillet 2017
+ 
+-   Parce que les informations d’adresse IP sont essentielles pour la quasi-totalité des examens, vous pouvez maintenant afficher les informations détaillées des adresses IP dans le tiroir Activité. Dans une activité spécifique, vous pouvez maintenant cliquer sur l’onglet Adresse IP pour afficher des données consolidées concernant l’adresse IP, y compris le nombre d’alertes actives pour l’adresse IP spécifique, un graphique de tendance de l’activité récente et une carte d’emplacement. Cela vous permet de faire des examens approfondis, par exemple, quand vous recherchez la cause d’alertes Voyage impossible, vous pouvez facilement déterminer où a été utilisée l’adresse IP et si elle a été impliquée ou non dans des activités suspectes. Vous pouvez également effectuer des actions directement dans le tiroir Adresse IP, où vous pouvez marquer une adresse IP comme étant risquée, VPN ou d’entreprise pour faciliter par la suite l’examen et la création de stratégie. Pour plus d'informations, consultez [Insights sur l’adresse IP](activity-filters.md#ip-address-insights)
+
+-   Dans Cloud Discovery, vous pouvez désormais aussi utiliser des [formats de fichiers journaux personnalisés](custom-log-parser.md) pour [le chargement automatique des journaux](discovery-docker.md). Cela vous permet de facilement automatiser le chargement des journaux de vos serveurs SIEM (par ex., des serveurs Splunk) ou de tout autre format non pris en charge. 
+ 
+-   Les nouvelles actions d’examen d’utilisateur donnent accès à un niveau supplémentaire d’exploration. Dans les pages **Examen**, vous pouvez maintenant cliquer avec le bouton droit sur une activité, un utilisateur ou un compte, et appliquer un des nouveaux filtres pour un examen et un filtrage avancés : **Afficher les activités associées**, **Afficher la gouvernance relative**, **Afficher les alertes associées**, **Afficher les fichiers possédés**, **Afficher les fichiers partagés avec cet utilisateur**.
+
+-   Le catalogue d’applications cloud contient désormais un nouveau champ de rétention des données après l’arrêt du compte. Ce facteur de risque vous permet de vérifier que vos données sont totalement supprimées après l’arrêt d’un compte dans une application cloud.
+
+-   Cloud App Security offre maintenant une visibilité améliorée des activités relatives aux objets Salesforce comme les prospects, les comptes, les campagnes, les opportunités, les profils et les cas. Par exemple, la visibilité de l’accès aux pages de compte vous permet de configurer une stratégie qui vous alerte si un utilisateur affiche un nombre exceptionnellement élevé de pages de compte. Cette fonctionnalité est disponible dans le connecteur d’applications Salesforce, une fois que vous avez activé la surveillance des événements Salesforce dans Salesforce (intégrée à Salesforce Shield).
+
+- La fonctionnalité Ne pas me suivre est désormais disponible pour les clients de la préversion limitée ! Vous pouvez maintenant contrôler les données d’activité de l’utilisateur qui sont à traiter. Cela vous permet de définir des groupes spécifiques dans Cloud App Security avec « Ne pas me suivre ». Par exemple, vous pouvez désormais décidez de ne traiter aucune donnée d’activité pour les utilisateurs situés en Allemagne ou dans un pays non soumis à une loi de conformité spécifique. Cette fonctionnalité peut être implémentée pour toutes les applications dans Cloud App Security, pour une application spécifique ou même pour une sous-application spécifique. Par ailleurs, cette fonctionnalité peut être utilisée pour faciliter le déploiement progressif de Cloud App Security. Pour plus d’informations ou pour participer à la préversion limitée de cette fonctionnalité, contactez le support ou votre responsable de compte. 
+
+
 
 ## <a name="cloud-app-security-release-100"></a>Cloud App Security version 100 
 Publication : 3 juillet 2017
@@ -46,8 +63,8 @@ Publication : 3 juillet 2017
 -   **Nouveau mode de déploiement du collecteur de journaux :** Nous avons commencé à développer un nouveau mode de déploiement désormais disponible pour le collecteur de journaux. En plus du déploiement actuel basé sur l’appliance virtuelle, le nouveau collecteur de journaux basé sur Docker (conteneur) peut être installé comme un package sur les ordinateurs Windows et Ubuntu à la fois localement et dans Azure. Quand vous utilisez le collecteur Docker, l’ordinateur hôte est détenu par le client, qui peut librement le corriger et le surveiller.
 
 ### <a name="announcements"></a>Annonces : 
--   Le catalogue d’applications Cloud prend désormais en charge plus de 15 000 applications détectables
--   Conformité : Cloud App Security est officiellement certifié SOC1/2/3 par Azure. Pour consulter la liste complète des certifications, consultez la page des [offres de conformité](https://www.microsoft.com/trustcenter/compliance/complianceofferings) et filtrez les résultats pour Cloud App Security.
+-   Le catalogue d’applications cloud prend désormais en charge plus de 15 000 applications détectables
+-   Conformité : Cloud App Security est officiellement certifié SOC1/2/3 par Azure. Pour consulter la liste complète des certifications, consultez les [offres de conformité](https://www.microsoft.com/trustcenter/compliance/complianceofferings) et recherchez Cloud App Security.
 
 ### <a name="other-improvements"></a>Autres améliorations : 
 -   **Amélioration de l’analyse :** Des améliorations ont été apportées au mécanisme d’analyse du journal Cloud Discovery. Les erreurs internes sont beaucoup moins susceptibles de se produire.
@@ -175,7 +192,7 @@ Publication : 20 mars 2017
 -   Si vous avez configuré d’autres analyseurs DLP tiers, l’état d’analyse DLP affiche individuellement l’état de chaque connecteur de façon à améliorer la visibilité.
 -   Cloud App Security prend maintenant en charge les activités Microsoft Teams qui sont prises en charge dans le journal d’audit d’Office 365. Cette fonctionnalité est déployée progressivement.
 -   Pour les événements d’emprunt d’identité Exchange Online, vous pouvez maintenant filtrer par niveau d’autorisation utilisé : délégué, administrateur ou administrateur délégué. Vous pouvez rechercher des événements affichant le niveau d’emprunt d’identité qui vous intéresse dans le **Journal d’activité** en recherchant des **Objets d’activité** > **Élément**.
--   Dans le tiroir des applications sous l’onglet Autorisations des applications, vous pouvez désormais voir **l’Éditeur** de chaque application. Vous pouvez également utiliser l’éditeur comme filtre pour rechercher les autres applications du même éditeur.
+-   Dans le tiroir des applications sous l’onglet **Autorisations des applications** des applications Office 365, vous pouvez désormais voir l’**Éditeur** de chaque application. Vous pouvez également utiliser l’éditeur comme filtre pour rechercher les autres applications du même éditeur.
 -   Les adresses IP à risques apparaissent maintenant comme facteur de risque indépendant et non plus pondéré, sous le facteur de risque général **Emplacement**. 
 -   Quand les étiquettes Azure Information Protection sont désactivées sur un fichier, elles apparaissent désactivées dans Cloud App Security. Les étiquettes supprimées ne sont pas affichées.
  

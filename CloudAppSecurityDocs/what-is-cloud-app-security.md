@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/16/2017
+ms.date: 8/2/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b76354c792ba75ab30b977112d3d0897ca4229a6
-ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
+ms.openlocfilehash: ce0856ac24e20c1ca2ed8cdde3787d931d451bb7
+ms.sourcegitcommit: f9851779aa15b11f559e56ac818f1333f027c000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="what-is-cloud-app-security"></a>Qu’est-ce que Cloud App Security ?
 
@@ -68,7 +68,7 @@ Pour plus d’informations sur Cloud Discovery, voir [Configurer Cloud Discovery
 
 ### <a name="sanctioning-and-unsanctioning-an-app"></a>Approbation et non-approbation d’une application  
 
-Vous pouvez utiliser Cloud App Security pour approuver/ne pas approuver des applications dans votre organisation en utilisant le *catalogue d’applications cloud*. L’équipe d’analystes Microsoft dispose d’un catalogue fourni et en constante évolution de plus de 15 000 applications cloud, classées et évaluées selon les normes du secteur. Vous pouvez utiliser le catalogue d’applications cloud pour évaluer les risques pour vos applications cloud selon les certifications réglementaires, les normes du secteur et les bonnes pratiques. Vous pouvez ensuite personnaliser les scores et les pondérations des différents paramètres selon les besoins de votre organisation. À partir de ces scores, Cloud App Security vous indique le degré de risque lié à une application en fonction de plus de 50 facteurs de risque susceptibles d’affecter votre environnement.  
+Vous pouvez utiliser Cloud App Security pour approuver/ne pas approuver des applications dans votre organisation en utilisant le *catalogue d’applications cloud*. L’équipe d’analystes Microsoft dispose d’un catalogue fourni et en constante évolution de plus de 15 000 applications cloud, classées et évaluées selon les normes du secteur. Vous pouvez utiliser le catalogue d’applications cloud pour évaluer les risques pour vos applications cloud selon les certifications réglementaires, les normes du secteur et les bonnes pratiques. Vous pouvez ensuite personnaliser les scores et les pondérations des différents paramètres selon les besoins de votre organisation. À partir de ces scores, Cloud App Security vous indique le degré de risque lié à une application en fonction de plus de 60 facteurs de risque susceptibles d’affecter votre environnement.  
 
 ### <a name="app-connectors"></a>Connecteurs d’application  
 Les connecteurs d’application utilisent les API des fournisseurs d’application cloud pour intégrer le cloud Cloud App Security à d’autres applications cloud. Les connecteurs d’application étendent le contrôle et la protection. Ils vous donnent aussi accès aux informations directement à partir des applications cloud, pour une analyse par Cloud App Security.  

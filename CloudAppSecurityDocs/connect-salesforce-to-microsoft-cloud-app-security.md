@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 776d7589-acdb-4cb6-99a0-3be2f7b6aab2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 974c7dd6ec3dcd1244b2c8840c9084d68df8c56f
-ms.sourcegitcommit: ae4c8226f6037c5eb286eb27142d6bbb397609e9
+ms.openlocfilehash: ef16afaa0990b86703f76fe817f86bcdd6ba38e6
+ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/16/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="connect-salesforce-to-microsoft-cloud-app-security"></a>Connecter Salesforce à Microsoft Cloud App Security
 Cette section fournit des instructions pour connecter Cloud App Security à votre compte Salesforce existant à l’aide de l’API du connecteur d’applications.  
@@ -38,11 +38,12 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
   
     -   Connectez-vous à votre compte Salesforce et accédez à la page **Setup** (Configuration).  
   
-    -   Sous **Manage Users** (Gérer les utilisateurs), accédez à la page **Profiles** (Profils).  
+    -   Sous **Gérer les utilisateurs**, accédez à la page **Profils**.  
   
          ![salesforce, gérer les profils des utilisateurs](./media/salesforce-manageusers-profiles.png "salesforce, gérer les profils des utilisateurs")  
   
-    -   Choisissez le profil que vous utilisez pour déployer Cloud App Security, puis cliquez sur **Modifier**. Il s’agit du profil à utiliser pour le compte de service Cloud App Security pour configurer le connecteur d’applications.  
+    -   Créez un profil en cliquant sur **Nouveau**. 
+    - Choisissez le profil que vous venez de créer pour déployer Cloud App Security, puis cliquez sur **Modifier**. Il s’agit du profil à utiliser pour le compte de service Cloud App Security pour configurer le connecteur d’applications.  
   
          ![salesforce, modifier le profil](./media/salesforce-edit-profile.png "salesforce, modifier le profil")  
   
@@ -108,7 +109,7 @@ Les événements Salesforce sont traités par Cloud App Security de la façon su
   
 - Événements de connexion toutes les 15 minutes
 - Piste d’audit d’installation toutes les 15 minutes
-- Les journaux Salesforce effectuent le suivi de l’activité d’utilisation pendant 24 heures, de 00h00 à 23h59 UTC (temps universel coordonné). Les événements dans Salesforce génèrent des données de journal en temps réel. Toutefois, les fichiers journaux sont générés par Salesforce le jour suivant l’événement, durant les heures creuses. Par conséquent, les données du fichier journal ne sont pas disponibles pendant au moins un jour après un événement. Pour plus d’informations sur les événements Salesforce, consultez [Utilisation de la surveillance des événements](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/using_resources_event_log_files.htm).
+- Les journaux de Salesforce suivent l’activité d’utilisation sur une période de 24 heures, de 00:00 à 23:59 heure UTC. Les événements dans Salesforce génèrent des données de journal en temps réel. Toutefois, les fichiers journaux sont générés par Salesforce le lendemain d’un événement, pendant les heures creuses. Par conséquent, les données du fichier journal ne sont disponibles qu’au moins un jour après l’événement. Pour plus d’informations sur les événements Salesforce, consultez [Using Event Monitoring](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/using_resources_event_log_files.htm) (Utilisation de la surveillance des événements).
 
 
 ## <a name="see-also"></a>Voir aussi  

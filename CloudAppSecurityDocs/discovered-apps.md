@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ced7bfb6581612610fab57529df3c87d36a97ae5
-ms.sourcegitcommit: dc386d21f9196c30460ca57e85a9a52077c44bf5
+ms.openlocfilehash: 7e0287543014e7bc1807d0ccceb302a75cbaa91b
+ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/05/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="working-with-discovered-apps"></a>Utilisation des applications découvertes
 
@@ -51,6 +51,9 @@ Dans la page **Applications découvertes**, sous **Parcourir par catégorie**, s
 ![Filtres d’application découverte](./media/discovered-app-filters.png)
 
 Une fois que les résultats sont filtrés, vous pouvez [ne pas approuver et bloquer](governance-discovery.md) ces applications en cochant la case d’action en bloc pour ne pas les approuver toutes en une seule action. Une fois qu’elles sont non approuvées, vous pouvez utiliser un script de blocage pour empêcher leur utilisation dans votre environnement.
+
+Pour approfondir, vous pouvez examiner les applications découvertes au niveau du sous-domaine et identifier les instances spécifiques qui sont en cours d’utilisation. 
+
 
 ## <a name="discovered-app-filters"></a>Filtres d’application découverte
 
@@ -126,7 +129,7 @@ Pour créer un rapport continu :
 ## <a name="deleting-cloud-discovery-data"></a>Suppression de données Cloud Discovery  
 Plusieurs raisons peuvent vous amener à supprimer vos données Cloud Discovery. Nous vous recommandons de les supprimer dans les cas suivants :  
   
--   Vous avez chargé manuellement des fichiers journaux, l’eau a longtemps coulé sous les ponts avant que vous ne mettiez à jour le système avec de nouveaux fichiers journaux et vous ne voulez pas que les anciennes données affectent vos résultats.  
+-   Vous avez chargé manuellement les fichiers journaux, vous avez attendu longtemps avant de mettre à jour le système avec de nouveaux fichiers journaux et vous ne voulez pas que les anciennes données affectent vos résultats.  
   
 -   Vous définissez une nouvelle vue de données personnalisée qui s’applique uniquement aux nouvelles données à compter de moment-là, alors vous pouvez effacer les anciennes données, puis charger à nouveau vos fichiers journaux pour permettre à la vue de données personnalisée de sélectionner des événements dans les données de fichiers journaux.  
   
