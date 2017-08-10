@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/3/2017
+ms.date: 8/6/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 49c12f7c-3fb8-46ac-b2ab-59ba6cf2ddfb
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e383ffb16a30f7888d4a170aac0289c3fb8bb99b
-ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
+ms.openlocfilehash: 4d96a143f8cf1aa79fe716e8939452f7699d0eac
+ms.sourcegitcommit: f9851779aa15b11f559e56ac818f1333f027c000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="what-are-the-differences-between-cloud-app-security-and-asm-for-office-365"></a>Quelles sont les différences entre Cloud App Security et la gestion de sécurité avancée pour Office 365 ?
 
@@ -26,11 +26,11 @@ ms.lasthandoff: 08/03/2017
 
 ## <a name="cloud-app-security"></a>Cloud App Security 
 
-La version autonome de Cloud App Security est un composant essentiel de la pile Microsoft Cloud Security. Il s’agit d’une solution complète qui permet à votre organisation de tirer pleinement parti de la promesse des applications cloud tout en vous permettant de conserver le contrôle grâce à une meilleure visibilité de l’activité. Elle renforce également la protection des données critiques des applications cloud. Avec des outils permettant de découvrir l’informatique fantôme, d’évaluer les risques, d’appliquer des stratégies, d’examiner les activités et de stopper les menaces, votre organisation peut passer plus tranquillement au cloud tout en conservant le contrôle des données critiques. 
+La version autonome de Cloud App Security est une solution inter-SaaS qui offre une fonctionnalité Shadow IT Discovery pour les applications non approuvées, et pour vos applications approuvées elle fournit la protection des informations, la détection des menaces et l’accès conditionnel entre les applications cloud dans votre organisation. 
 
-## <a name="advanced-security-management"></a>Gestion de sécurité avancée
+## <a name="advanced-security-management"></a>Gestion de la sécurité avancée
 
-La gestion de sécurité avancée est une solution complète qui permet de sécuriser le cloud par le biais de la gestion de sécurité avancée d’Office 365. La gestion de sécurité avancée permet aux administrateurs généraux ou de sécurité de gérer l’activité cloud de votre organisation avec plus de sécurité. Une fois que vous avez activé la gestion de sécurité avancée, vous définissez des stratégies et des alertes, vous étudiez l’utilisation du cloud dans votre organisation et vous gérez les applications que votre organisation utilise avec Office 365. Toutes ces étapes sont effectuées dans le portail de gestion de sécurité avancée.
+La Gestion de la sécurité avancée constitue une partie de Cloud App Security qui offre des fonctionnalités de sécurité Office 365 de base directement dans le portail Gestion de la sécurité avancée. Cela comprend la détection des menaces basée sur les journaux d’activité utilisateur, la découverte Shadow IT pour les applications qui proposent des offres parallèles à Office 365, ainsi que des autorisations de contrôle d’application pour Office 365.
 
 ## <a name="feature-support"></a>Prise en charge de la fonctionnalité
 
@@ -38,21 +38,22 @@ La gestion de sécurité avancée est une solution complète qui permet de sécu
 |----|----|----|----|
 |Shadow IT Discovery||||
 ||Prise en charge des applications découvertes|Plus de 15 000, et évaluation automatique des risques|Plus de 750 applications similaires à Office 365|
-||Évaluation des risques en continu||
-||Détection d’anomalie|Oui||
 ||Chargement des journaux|Manuel et automatique|Manuelle|
 ||Anonymat des journaux pour la confidentialité de l’utilisateur|Oui|Oui|
+||Évaluation des risques en continu : scores de risque d’application et nouvelles alertes d’application|Oui||
+||Détection d’anomalie|Oui||
 ||Accès au catalogue d’applications complet|Oui||
+||Génération de rapports détaillés par application, utilisateur, adresse IP|Oui||
 |Protection des informations||||
-||Paramètre et application de stratégies|Oui||
 ||Prise en charge de DLP|DLP multi-SaaS et contrôle du partage des données|DLP Office 365 et gouvernance des données avancée|
-||Intégration à des solutions DLP tierces|Oui||
 ||Identification et contrôle des applications connectées (y compris révocation de l’accès)|Oui|Oui|
+||Paramètre et application de stratégies|Oui||
 ||Intégration d’Azure Information Protection|Oui||
-|Prévention contre les menaces||||
-||Prise en charge des alertes|Tableau de bord complet multiapplication des alertes, menaces et violations|Détection des anomalies et alertes de sécurité Office 365|
+||Intégration à des solutions DLP tierces|Oui||
+|Détection des menaces||||
+||Couverture de détection|Tableau de bord complet multiapplication des alertes, menaces et violations|Détection des anomalies et alertes de sécurité Office 365|
 ||Correction d’alerte automatique et manuelle|Oui|Oui|
-||Connecteur SIEM|Alertes et journal d’activité multiapplication|Alertes Office 365|
+||Connecteur SIEM|Alertes et journal d’activité|Alertes Office 365|
 ||Amélioration de Microsoft Intelligent Security Graph|Oui|Oui|
 
 
