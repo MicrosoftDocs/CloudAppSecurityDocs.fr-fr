@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/5/2017
+ms.date: 8/6/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7e0287543014e7bc1807d0ccceb302a75cbaa91b
-ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
+ms.openlocfilehash: 683815d0db528ac65b0d547cd8e5ab09ea64321f
+ms.sourcegitcommit: f9851779aa15b11f559e56ac818f1333f027c000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="working-with-discovered-apps"></a>Utilisation des applications découvertes
 
@@ -52,8 +52,13 @@ Dans la page **Applications découvertes**, sous **Parcourir par catégorie**, s
 
 Une fois que les résultats sont filtrés, vous pouvez [ne pas approuver et bloquer](governance-discovery.md) ces applications en cochant la case d’action en bloc pour ne pas les approuver toutes en une seule action. Une fois qu’elles sont non approuvées, vous pouvez utiliser un script de blocage pour empêcher leur utilisation dans votre environnement.
 
-Pour approfondir, vous pouvez examiner les applications découvertes au niveau du sous-domaine et identifier les instances spécifiques qui sont en cours d’utilisation. 
+Cloud Discovery vous permet d’analyser de manière encore plus approfondie l’utilisation du cloud au sein de votre organisation, et d’identifier les instances spécifiques qui sont en cours d’utilisation en étudiant les sous-domaines de découverte.
 
+Vous pouvez par exemple effectuer la distinction entre différents sites SharePoint.
+
+Cette fonctionnalité est prise en charge uniquement dans les pare-feu et les proxys qui contiennent des données d’URL cibles. Consultez la liste des appliances prises en charge dans [Pare-feu et proxys pris en charge](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
+
+![informations sur les sous-domaines](./media/discovery-domains.png)  
 
 ## <a name="discovered-app-filters"></a>Filtres d’application découverte
 

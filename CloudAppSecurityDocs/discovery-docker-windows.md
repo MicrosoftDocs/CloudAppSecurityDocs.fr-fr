@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/30/2017
+ms.date: 8/6/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,16 @@ ms.technology:
 ms.assetid: 308c06b3-f58b-4a21-86f6-8f87823a893a
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3f17a43fb231ec9175cbfb2485ea363f6285e167
-ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
+ms.openlocfilehash: dfa0e6d884fde67f901c9dcdec208a447f2c6cb9
+ms.sourcegitcommit: f9851779aa15b11f559e56ac818f1333f027c000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="set-up-and-configure-the-automatic-log-collector-docker-on-windows-server-2016"></a>Installer et configurer le Docker de collecteur de journaux automatique sur Windows Server 2016
+
+> [!NOTE]
+> Cette fonctionnalité est progressivement déployée sur les locataires. Contactez le support technique si vous souhaitez être ajouté à la préversion.
 
 ## <a name="technical-requirements"></a>Spécifications techniques
 
@@ -45,7 +48,9 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
 
 -   Performances d’E/S de la machine virtuelle allouées par votre service informatique : détermine la vitesse à laquelle les journaux sont écrits sur le disque du collecteur de journaux. Le collecteur de journaux dispose d’un mécanisme de sécurité intégré qui surveille le débit auquel les journaux arrivent et le compare au débit de chargement. En cas de congestion, le collecteur de journaux commence à supprimer des fichiers journaux. Si votre configuration dépasse généralement 50 Go par heure, il est recommandé de diviser le trafic entre plusieurs collecteurs de journaux.
 
-## <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>Étape 1 : configuration du portail web  - définir les sources de données et les lier à un collecteur de journaux
+## <a name="set-up-and-configuration"></a>Installation et configuration  
+
+### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>Étape 1 : configuration du portail web  - définir les sources de données et les lier à un collecteur de journaux
 
 1.  Accédez à la page des paramètres de chargement automatisé :<br></br> Dans le portail Cloud App Security, cliquez sur l’icône des paramètres [icône des paramètres](./media/settings-icon.png), puis sur **Collecteurs de journaux**.
 
@@ -95,7 +100,7 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
 
     ![Windows4](./media/windows4.png)
 
-## <a name="step-2--on-premises-deployment-of-your-machine"></a>Étape 2 : Déploiement local de votre ordinateur
+### <a name="step-2--on-premises-deployment-of-your-machine"></a>Étape 2 : Déploiement local de votre ordinateur
 
 >[!NOTE]
 >Les étapes suivantes décrivent le déploiement dans Windows Server. Les étapes de déploiement pour d’autres plateformes sont légèrement différentes.
@@ -135,13 +140,13 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
 Vous devez voir le message **Opération terminée**.
   ![windows10](./media/windows10.png)
 
-## <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>Étape 3 : Configuration locale de vos appliances réseau
+### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>Étape 3 : Configuration locale de vos appliances réseau
 
 Configurez vos pare-feu réseau et proxys pour exporter régulièrement les journaux vers le port Syslog dédié du répertoire FTP selon les instructions données dans la boîte de dialogue, par exemple :
 
         BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
 
-## <a name="step-4---verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>Étape 4 : Vérifier la réussite du déploiement dans le portail Cloud App Security
+### <a name="step-4---verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>Étape 4 : Vérifier la réussite du déploiement dans le portail Cloud App Security
 
 Consultez l’état du collecteur dans le tableau **Collecteur de journaux** et vérifiez que l’état est **Connecté**. Si l’état est **Créé**, il est possible que la connexion du collecteur de journaux et l’analyse ne soient pas effectuées.
 
