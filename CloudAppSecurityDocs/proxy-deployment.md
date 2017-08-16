@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 75094bde-e135-47fb-b5c6-7e1168919771
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 245e44cdf56b15795f67340442babcb0f688ea9d
-ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
+ms.openlocfilehash: 2cabdaa94c36dcf7496cc1d1126e720871ee80b9
+ms.sourcegitcommit: 4cf65f627f2d370ee4a4decae1acbb9658874056
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/13/2017
 ---
 # <a name="deploying-the-cloud-app-security-proxy"></a>Déploiement du proxy Cloud App Security
 
@@ -25,6 +25,10 @@ ms.lasthandoff: 08/03/2017
 > Il est fortement recommandé d’essayer l’installation dans un environnement de bac à sable ou de test avant de l’installer dans un environnement de production.
 
 Les étapes décrites ci-dessous permettent de déployer le proxy Cloud App Security, et d’activer le contrôle d’accès et le contrôle de session.
+
+Dans le cadre du déploiement du proxy, vous devez modifier les configurations du fournisseur d’identité et de l’application que vous voulez contrôler. Cela inclut des changements d’URL pour que le fournisseur d’identité et l’application redirigent les demandes de connexion vers le proxy. Par ailleurs et si cela est nécessaire, les certificats sont également remplacés.
+
+Une fois ces étapes terminées, tous les événements de connexion passent par le proxy et ce dernier peut décider s’ils sont autorisés à accéder à l’application, si l’accès est refusé ou si l’accès est autorisé en mode surveillé. Notez qu’à ce stade, le proxy peut demander des certificats clients à l’appareil et utiliser l’état de l’appareil pour prendre des décisions en matière de stratégie.
 
 ## <a name="prerequisites"></a>Conditions préalables
 
