@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c356900333b41a0aeecd8a19eea1b85305f45ba6
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 3cbe85149a2e632b7f9804652953728945532bcb
+ms.sourcegitcommit: 4cf65f627f2d370ee4a4decae1acbb9658874056
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 08/13/2017
 ---
 # <a name="file-policies"></a>Stratégies de fichier  
 Les stratégies de fichier vous permettent d’appliquer une large gamme de processus automatisés en exploitant les API du fournisseur de cloud. Vous pouvez définir des stratégies pour fournir des analyses de conformité en continu, des tâches eDiscovery réglementaires, une protection contre la perte de données (DLP, Data Loss Prevention) au contenu sensible partagé publiquement et de nombreux autres cas d’usage.  
@@ -79,7 +79,7 @@ Pour créer une stratégie de fichier, procédez comme suit :
 7.  Sélectionnez la **Méthode d’inspection du contenu**. La protection contre la perte de données (DLP) intégrée vous permet de filtrer les fichiers par leur contenu. Pour analyser le contenu des fichiers, sélectionnez ensuite **DLP intégré**. Une fois que l’inspection du contenu est activée, vous pouvez choisir d’utiliser des expressions prédéfinies ou de rechercher d’autres expressions personnalisées, sous forme de sous-chaîne ou d’[expression régulière](working-with-the-regex-engine.md) de votre choix.  
     De plus, vous pouvez spécifier une expression régulière pour exclure un fichier des résultats. Cette possibilité s’avère très utile si vous avez des mots clés de classification interne standard à exclure de la stratégie.  
     Vous pouvez décider de définir le nombre minimal de violations de contenu à atteindre avant que le fichier ne soit considéré comme une violation. Par exemple, vous pouvez choisir 10 si vous souhaitez être alerté pour les fichiers comportant au moins 10 numéros de carte de crédit détectés dans leur contenu.  
-    Quand du contenu correspond à l’expression sélectionnée, le texte de la violation est remplacé par des caractères « X ». Par défaut, les violations sont entièrement masquées. Seul leur contexte, 40 caractères avant et après la violation, est affiché. Les chiffres dans le contexte de l’expression sont remplacés par des caractères « # » et ne sont jamais stockés dans Cloud App Security. Vous pouvez sélectionner l’option **Montrer les 4 derniers caractères d’une violation** pour annuler le masquage des 4 derniers caractères de la violation elle-même.
+    Quand du contenu correspond à l’expression sélectionnée, le texte de la violation est remplacé par des caractères « X ». Par défaut, les violations sont entièrement masquées. Seul leur contexte, 100 caractères avant et après la violation, est affiché. Les chiffres dans le contexte de l’expression sont remplacés par des caractères « # » et ne sont jamais stockés dans Cloud App Security. Vous pouvez sélectionner l’option **Montrer les 4 derniers caractères d’une violation** pour annuler le masquage des 4 derniers caractères de la violation elle-même.
   
 8.  Choisissez les actions de **gouvernance** que Cloud App Security doit exécuter quand une correspondance est détectée.  
   
