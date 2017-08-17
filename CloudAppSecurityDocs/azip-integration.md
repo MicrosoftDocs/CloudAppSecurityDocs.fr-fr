@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/10/2017
+ms.date: 8/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 79e784c332045ebe300a34f5c6da918343a0df45
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 350f90af7114d8b34aaaa6062bb3c14379fd3dfa
+ms.sourcegitcommit: 4cf65f627f2d370ee4a4decae1acbb9658874056
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 08/13/2017
 ---
 # <a name="azure-information-protection-integration"></a>Intégration d’Azure Information Protection
 
@@ -118,7 +118,7 @@ En savoir plus sur [Azure Information Protection](https://docs.microsoft.com/en-
 
 Votre organisation doit posséder une licence Azure Rights Management et l’avoir activée pour faciliter l’intégration entre Cloud App Security et Azure RMS.  Vous trouverez ces deux étapes distinctes dans [Activation d’Azure Rights Management](https://docs.microsoft.com/information-protection/deploy-use/activate-service).
 
-Actuellement, Cloud App Security prend uniquement en charge le niveau de protection générique. La protection native pour les fichiers Office, PDF et image sera disponible dans les prochaines versions. 
+Cloud App Security prend actuellement en charge la protection native des fichiers Office (2016 et supérieur). Les fichiers PDF et image seront disponibles dans les prochaines versions. 
 
 Cette fonctionnalité est actuellement disponible pour les fichiers stockés dans SharePoint Online et OneDrive Entreprise. D’autres applications cloud seront prises en charge dans les prochaines versions.
 
@@ -126,11 +126,11 @@ Une fois Cloud App Security connecté à votre service Office 365, vous êtes en
 
 1. À partir de la page **ichiers**, sélectionnez le fichier que vous souhaitez protéger, cliquez sur les trois points à la fin de la ligne du fichier, puis choisissez **Protéger**. 
 ![protéger l’application](./media/protect-app.png)
-2. Vous êtes invité à choisir l’un des modèles de votre organisation pour protéger le fichier. Cliquez ensuite sur **Protéger**. 
-![modèle de protection](./media/protect-template.png)
-3. Une fois que vous avez choisi un modèle et cliqué sur Protéger, Cloud App Security applique le modèle et protège le fichier d’origine. Le fichier protégé a le même nom que le fichier d’origine, à ceci près que son extension est « .pfile ».
+2. Vous êtes invité à choisir une étiquette de classification de votre organisation pour protéger le fichier. Cliquez ensuite sur **Protéger**. 
+![étiquette de classification de protection](./media/protect-template.png)
+3. Une fois que vous avez choisi une étiquette de classification et cliqué sur Protéger, Cloud App Security applique l’étiquette de classification et protège le fichier d’origine. T
 > [!NOTE]
->   Nous vous recommandons d’appliquer aux fichiers les modèles RMS couvrant toute l’entreprise. De la sorte, tous les utilisateurs de l’organisation pourront accéder à ces fichiers, y compris le propriétaire d’origine du fichier. À partir du moment où le fichier est protégé, le propriétaire du fichier, la stratégie de partage du fichier et la liste des utilisateurs qui y ont déjà accès restent inchangés.
+>   Nous vous recommandons d’appliquer aux fichiers les étiquettes de classification RMS dans toute l’entreprise, pour que tous les utilisateurs puissent accéder à ces fichiers, y compris le propriétaire d’origine du fichier. À partir du moment où le fichier est protégé, le propriétaire du fichier, la stratégie de partage du fichier et la liste des utilisateurs qui y ont déjà accès restent inchangés.
 
 4. Si les utilisateurs souhaitent accéder au fichier protégé, leur appareil doit être équipé de l’application de partage RMS. Pour plus d’informations, voir l’article [Présentation technique de l’application de partage Microsoft Rights Management et détails sur la protection](https://docs.microsoft.com/information-protection/rms-client/sharing-app-admin-guide-technical).
 

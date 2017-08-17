@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/30/2017
+ms.date: 8/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,30 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 29df61beb80e931d9d4b0c90a3e89a2b9f496740
-ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
+ms.openlocfilehash: c0fead3fc70636ad96c365ec89060006124024b5
+ms.sourcegitcommit: 4cf65f627f2d370ee4a4decae1acbb9658874056
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/13/2017
 ---
 # <a name="whats-new-with-cloud-app-security"></a>Nouveautés de Cloud App Security
+
+
+## <a name="cloud-app-security-release-103"></a>Cloud App Security version 103 
+Publication : 13 août 2017
+
+- Ajout dans Cloud App Security de la prise en charge de la protection native Azure Information Protection pour les fichiers Office suivants .docm, .docx, .dotm, .dotx, .xlam, .xlsb, .xlsm, .xlsx, .xltx, .xps, .potm, .potx, .ppsx, .ppsm, .pptm, .pptx, .thmx, .vsdx, .vsdm, .vssx, .vssm, .vstx, .vstm (à la place d’une protection générique).
+
+- Tous les administrateurs de conformité Azure Active Directory reçoivent automatiquement des autorisations similaires dans Cloud App Security, notamment la possibilité de lire uniquement et gérer les alertes, de créer et modifier des stratégies de fichier, d’autoriser des actions de gouvernance de fichier et d’afficher tous les rapports intégrés sous Gestion des données. 
+
+- Nous avons étendu le contexte de violation DLP de 40 à 100 caractères pour en améliorer la compréhension.
+
+- Ajout de messages d’erreur détaillés au chargeur de journal personnalisé Cloud Discovery pour vous permettre de résoudre facilement les erreurs de chargement de journaux.
+
+- Le script de bloc Cloud Discovery a été étendu pour prendre en charge le format Zscaler.
+
+- Nouveau facteur de risque du catalogue d’applications cloud : rétention des données après l’arrêt du compte. Cela vous permet de vérifier que vos données sont totalement supprimées après l’arrêt d’un compte dans une application cloud.
+
 
 ## <a name="cloud-app-security-release-102"></a>Cloud App Security version 102 
 Publication : 30 juillet 2017
