@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ed24b4020cd96db0bcb84378110499b289d583da
-ms.sourcegitcommit: ae4c8226f6037c5eb286eb27142d6bbb397609e9
+ms.openlocfilehash: db600c90983cc90ad55b994a22af0ed8bb6f288a
+ms.sourcegitcommit: 27170447acfaeded585c264e425a46a485e7fb19
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/16/2017
+ms.lasthandoff: 08/20/2017
 ---
 # <a name="governing-connected-apps"></a>Gouvernance des applications connectées
 La gouvernance vous permet de contrôler en temps réel les actions des utilisateurs dans les applications. Pour les applications connectées, vous pouvez appliquer des actions de gouvernance aux fichiers ou aux activités.
@@ -29,7 +29,7 @@ Vous pouvez effectuer les actions de gouvernance suivantes sur un fichier ou un 
   
 -   Notifications  
   
-    -   Alertes : Les alertes peuvent se déclencher dans le système et se propager par le biais de messages électroniques et texte, selon leur niveau de gravité.  
+    -   Alertes : Les alertes peuvent se déclencher dans le système et se propager par e-mail et SMS, selon leur niveau de gravité.  
   
     -   Notification par e-mail à l’utilisateur : Les e-mails sont personnalisables et envoyés à tous les propriétaires de fichiers en situation de violation.  
   
@@ -69,7 +69,7 @@ Vous pouvez effectuer les actions de gouvernance suivantes sur un fichier ou un 
 
 - Notifications  
   
-    -   Alertes : Les alertes peuvent se déclencher dans le système et se propager par le biais de messages électroniques et texte, selon leur niveau de gravité.  
+    -   Alertes : Les alertes peuvent se déclencher dans le système et se propager par e-mail et SMS, selon leur niveau de gravité.  
   
     -   Notification par e-mail à l’utilisateur : Les e-mails sont personnalisables et envoyés à tous les propriétaires de fichiers en situation de violation.  
   
@@ -85,7 +85,7 @@ Vous pouvez effectuer les actions de gouvernance suivantes sur un fichier ou un 
     > [!NOTE] 
     > Si votre Azure Active Directory est défini pour se synchroniser automatiquement avec les utilisateurs de votre environnement local Active Directory, les paramètres de l’environnement local remplacent les paramètres Azure AD et cette action de gouvernance est rétablie. 
   
-    -   Révoquer le mot de passe : révoquez le mot de passe de l’utilisateur et obligez-le à définir un nouveau mot de passe lors de sa prochaine connexion.  
+    -   Révoquer le mot de passe : Révoquez le mot de passe de l’utilisateur et obligez-le à définir un nouveau mot de passe lors de sa prochaine connexion.  
   
      ![Actions de gouvernance des stratégies d’activité Cloud App Security](./media/activity-policy-ref6.png "stratégie d’activité ref6")  
   
@@ -138,7 +138,7 @@ Pour plus d’informations sur la façon dont les actions de gouvernance sont tr
 |Fichiers|File|Restaurer des fichiers mis en quarantaine utilisateur|Restaure un utilisateur mis en quarantaine.|Box|
 |Fichiers|File|M’auto-attribuer des permissions de lecture|Vous accorde des permissions de lecture pour le fichier afin de vous permettre d’y accéder et de déterminer s’il y a eu violation ou non.|G Suite|
 |Fichiers|File|Autoriser les éditeurs à partager|Dans Google Drive, les autorisations de l’éditeur par défaut d’un fichier permettent également le partage. Cette action de gouvernance est l’opposé de Supprimer la capacité des éditeurs à partager et permet à l’éditeur de partager le fichier.|G Suite|
-|Fichiers|File|Protéger|Protégez un fichier avec Microsoft Rights Management en appliquant un modèle d’organisation.|Office 365|
+|Fichiers|File|Protéger|Protégez un fichier avec Azure Information Protection en appliquant un modèle d’organisation.|Office 365 (SharePoint et OneDrive)|
 |Fichiers|File|Révoquer les permissions de lecture pour moi-même|Révoque les permissions de lecture pour le fichier pour vous-même. Cette option est utile lorsque vous vous êtes attribué des permissions pour examiner si un fichier comprend une violation ou non.|G Suite|
 |Fichiers, Stratégie de fichier|File|Transférer la possession de fichier|Modifie le propriétaire (vous choisissez un propriétaire spécifique dans la stratégie).|G Suite|
 |Fichiers, Stratégie de fichier|File|Supprimer un collaborateur|Supprime un collaborateur donné d’un fichier.|G Suite, Box, One Drive, SharePoint|
