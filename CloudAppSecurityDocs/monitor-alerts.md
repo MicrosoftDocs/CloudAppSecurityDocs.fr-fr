@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/12/2017
+ms.date: 8/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: f118a3bf-1663-46ba-884f-b1b03a84ab66
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b3d0aacdef885ba89638628b6d485ef81c3b26f3
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: b5027699862a6cfe4b8dd8037f26d569b788a412
+ms.sourcegitcommit: 27170447acfaeded585c264e425a46a485e7fb19
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 08/20/2017
 ---
 # <a name="alerts"></a>Alertes
 Pour afficher les alertes :
@@ -27,6 +27,11 @@ Dans le portail Cloud App Security, cliquez sur Alertes.
 
 ![menu Alerte](./media/alert-menu.png)
 
+Pour gérer chaque alerte, cliquez sur l’alerte dans la table et sélectionnez l’une des options suivantes :
+- **Résoudre l’alerte** : Après avoir examiné l’alerte et pris des mesures pour la solutionner, cliquez sur **résoudre l’alerte**. Vous pouvez entrer un commentaire pour garder une trace des actions prises, mais également **envoyer des commentaires à l’équipe de Cloud App Security** concernant l’alerte. Lorsqu’une alerte est résolue, elle n’apparaît plus dans la table des alertes.
+- Résoudre l’alerte et **Marquer comme lu** : Vous pouvez laisser l’alerte ouverte, mais la marquer comme lue.
+- Résoudre l’alerte et **Ajuster la stratégie** : Vous pouvez modifier la stratégie de mise en correspondance de l’alerte en réponse à l’alerte.
+- **Masquer** : Vous pouvez masquer l’alerte pour qu’elle n’apparaisse plus dans la table, mais elle ne n’affichera pas comme résolue. Cette option est plus susceptible d’être utilisée lorsque l’alerte est un faux positif ou bénigne.
 
 Les types d’alertes suivants sont affichés. 
 

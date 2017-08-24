@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/2/2017
+ms.date: 8/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ce0856ac24e20c1ca2ed8cdde3787d931d451bb7
-ms.sourcegitcommit: f9851779aa15b11f559e56ac818f1333f027c000
+ms.openlocfilehash: f3bb5b1618f9bc872f1171f73c2dc529b3679aec
+ms.sourcegitcommit: 9111960557afb30ea2d6c155afd4885a7ca1b278
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/20/2017
 ---
 # <a name="what-is-cloud-app-security"></a>Qu’est-ce que Cloud App Security ?
 
@@ -80,6 +80,9 @@ Cloud App Security utilise les API fournies par le fournisseur cloud. Chaque app
 ### <a name="policy-control"></a>Contrôle des stratégies  
 
 Vous pouvez utiliser des stratégies pour définir le comportement de vos utilisateurs dans le cloud. Utilisez des stratégies pour détecter des comportements à risques, des violations, ou des points de données et des activités suspectes dans votre environnement cloud. Si nécessaire, vous pouvez utiliser des stratégies pour intégrer des processus de correction de façon à réduire complètement les risques. Plusieurs types de stratégies sont en corrélation avec les différents types d’informations que vous voulez collecter sur votre environnement cloud et les types d’actions correctives que vous pouvez entreprendre.  
+
+## <a name="related-videos"></a>Vidéos connexes
+- [Rejoindre la communauté sur la sécurité](https://channel9.msdn.com/Shows/Microsoft-Security/Join-the-Security-Community)
 
 ## <a name="see-also"></a>Voir aussi  
 
