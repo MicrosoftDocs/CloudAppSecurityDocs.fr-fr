@@ -5,6 +5,7 @@
 # Déployer
 ## [Mise en route](getting-started-with-cloud-app-security.md)
 ## [Configuration de base](general-setup.md)
+### [Configuration requise pour le réseau](network-requirements.md)
 ### [Gérer les administrateurs](manage-admins.md)
 #### [Paramètres d’administration](admin-settings.md)
 ### [Paramètres de messagerie](mail-settings.md)

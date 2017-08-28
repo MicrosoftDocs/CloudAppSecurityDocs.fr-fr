@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/21/2017
+ms.date: 8/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a6658937-57a2-484a-85cb-5a4cdbeeb002
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 038d3c12a63f12d6b0b506de439a91e4d2d027f2
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 00534bda0a515099a486f731e0297b9fd6dec8e3
+ms.sourcegitcommit: c3fda43ef6fe0d15f0eb9ea23a6f245bad8c371b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 08/27/2017
 ---
 # <a name="policy-templates"></a>Modèles de stratégie
 
@@ -49,7 +49,7 @@ Voici une liste de tous les modèles de stratégie qui existent dans Cloud App S
 |Détection des menaces|Activités d’administration à partir d’une adresse IP externe à l’entreprise|Alerte quand un utilisateur administrateur effectue une activité d’administration à partir d’une adresse IP qui n’est pas incluse dans la catégorie de plage d’adresses IP de l’entreprise. Vous devez d’abord configurer vos adresses IP d’entreprise en accédant à la page Paramètres et en définissant **Plages d’adresses IP**.|
 |Détection des menaces|Détection d’anomalie générale|Alerte quand une session anormale est détectée dans une des applications approuvées, comme voyage impossible, modèle de connexion, compte inactif.|
 |Détection des menaces|Connexion à partir d’une adresse IP à risques|Alerte quand un utilisateur se connecte à vos applications approuvées à partir d’une adresse IP à risques. Par défaut, la catégorie Adresses IP à risques contient les adresses qui ont des balises d’adresse IP Proxy anonyme, TOR ou Botnet. Vous pouvez ajouter d’autres adresses IP à cette catégorie dans la page des paramètres de plages d’adresses IP.|
-|Détection des menaces|Téléchargement massif par un même utilisateur|Alerte quand un même utilisateur effectue plus de 30 téléchargements en 5 minutes.|
+|Détection des menaces|Téléchargement massif par un même utilisateur|Alerte quand un même utilisateur effectue plus de 50 téléchargements en 1 minutes.|
 |Détection des menaces|Plusieurs tentatives de connexion à une application ayant échoué pour un utilisateur|Alerte quand un utilisateur tente de se connecter à une même application et y échoue plus de 10 fois en 5 minutes.|
 |Détection des menaces|Activité de ransomware potentielle|Alerte quand un utilisateur charge des fichiers dans le cloud susceptibles d’être infectés par un ransomware.|
 |Détection des menaces|Ouverture de session utilisateur à partir d’une adresse IP sans catégorie|Alerte quand un utilisateur ouvre une session à partir d’une adresse IP qui n’est pas incluse dans une catégorie de plage d’adresses IP spécifique. Vous pouvez catégoriser d’autres adresses IP à risques en accédant à la page Paramètres et en sélectionnant des plages d’adresses IP.|
