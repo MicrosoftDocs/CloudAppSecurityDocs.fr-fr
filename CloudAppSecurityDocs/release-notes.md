@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/13/2017
+ms.date: 8/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,21 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c0fead3fc70636ad96c365ec89060006124024b5
-ms.sourcegitcommit: 4cf65f627f2d370ee4a4decae1acbb9658874056
+ms.openlocfilehash: f2df50b089cf7a2b5aa989b56c243faa2dd251b2
+ms.sourcegitcommit: c3fda43ef6fe0d15f0eb9ea23a6f245bad8c371b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2017
+ms.lasthandoff: 08/27/2017
 ---
 # <a name="whats-new-with-cloud-app-security"></a>Nouveautés de Cloud App Security
+
+
+## <a name="cloud-app-security-release-104"></a>Cloud App Security version 104 
+Publication : 27 août 2017
+
+-   Vous pouvez désormais ajouter des plages d’adresses IP en bloc en créant un script à l’aide de l’[API des plages d’adresses IP](https://portal.cloudappsecurity.com/api-docs/). 
+-   Cloud Discovery fournit une meilleure visibilité des transactions bloquées en présentant à la fois la totalité des transactions et les transactions bloquées.
+-   Vous pouvez filtrer sur les applications cloud selon si elles sont certifiées **ISO 27017** ou pas. Ce nouveau facteur de risque du Catalogue d'applications cloud détermine si le fournisseur de l’application détient cette certification, qui établit des contrôles communément acceptés et des instructions pour le traitement et la protection des informations utilisateur dans un environnement de cloud computing public.
 
 
 ## <a name="cloud-app-security-release-103"></a>Cloud App Security version 103 
