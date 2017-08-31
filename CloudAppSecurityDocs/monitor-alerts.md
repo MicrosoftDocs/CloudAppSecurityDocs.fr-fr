@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: f118a3bf-1663-46ba-884f-b1b03a84ab66
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b5027699862a6cfe4b8dd8037f26d569b788a412
-ms.sourcegitcommit: 27170447acfaeded585c264e425a46a485e7fb19
+ms.openlocfilehash: 91a1ea2434b90207701a01bd8087b38c1c0f864b
+ms.sourcegitcommit: c3fda43ef6fe0d15f0eb9ea23a6f245bad8c371b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2017
+ms.lasthandoff: 08/27/2017
 ---
 # <a name="alerts"></a>Alertes
 Pour afficher les alertes :
@@ -27,11 +27,11 @@ Dans le portail Cloud App Security, cliquez sur Alertes.
 
 ![menu Alerte](./media/alert-menu.png)
 
-Pour gérer chaque alerte, cliquez sur l’alerte dans la table et sélectionnez l’une des options suivantes :
-- **Résoudre l’alerte** : Après avoir examiné l’alerte et pris des mesures pour la solutionner, cliquez sur **résoudre l’alerte**. Vous pouvez entrer un commentaire pour garder une trace des actions prises, mais également **envoyer des commentaires à l’équipe de Cloud App Security** concernant l’alerte. Lorsqu’une alerte est résolue, elle n’apparaît plus dans la table des alertes.
-- Résoudre l’alerte et **Marquer comme lu** : Vous pouvez laisser l’alerte ouverte, mais la marquer comme lue.
-- Résoudre l’alerte et **Ajuster la stratégie** : Vous pouvez modifier la stratégie de mise en correspondance de l’alerte en réponse à l’alerte.
-- **Masquer** : Vous pouvez masquer l’alerte pour qu’elle n’apparaisse plus dans la table, mais elle ne n’affichera pas comme résolue. Cette option est plus susceptible d’être utilisée lorsque l’alerte est un faux positif ou bénigne.
+Si l’alerte que vous consultez n’est pas intéressante, vous pouvez la **Faire disparaître**. Vous pouvez entrer un commentaire pour expliquer la raison pour laquelle vous avez fait disparaître l’alerte et vous pouvez **Envoyer des commentaires à l’équipe de Cloud App Security**. Ces commentaires sont examinés par notre équipe de recherche de sécurité pour améliorer en permanence le mécanisme d’alerte. 
+
+Si vous examinez l’alerte et éliminez le risque, vous pouvez **Résoudre** l’alerte. L’alerte n’apparaîtra plus dans le tableau des alertes. Si vous avez commencé à étudier le problème et que vous ne voulez pas oublier de continuer vos recherches, vous pouvez choisir l’option **Marquer comme non lue**. Vous pouvez également **Ajuster la stratégie** correspondant à l’alerte pour améliorer les prochaines correspondances d’alerte. La résolution d’une alerte vous donne également la possibilité d’entrer un commentaire et d’**Envoyer des commentaires à l’équipe de Cloud App Security**.
+
+
 
 Les types d’alertes suivants sont affichés. 
 

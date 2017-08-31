@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/11/2017
+ms.date: 8/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: db600c90983cc90ad55b994a22af0ed8bb6f288a
-ms.sourcegitcommit: 27170447acfaeded585c264e425a46a485e7fb19
+ms.openlocfilehash: c0c3487980cdd5c1a3dad08e280de43ea714fadd
+ms.sourcegitcommit: c3fda43ef6fe0d15f0eb9ea23a6f245bad8c371b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2017
+ms.lasthandoff: 08/27/2017
 ---
 # <a name="governing-connected-apps"></a>Gouvernance des applications connectées
 La gouvernance vous permet de contrôler en temps réel les actions des utilisateurs dans les applications. Pour les applications connectées, vous pouvez appliquer des actions de gouvernance aux fichiers ou aux activités.
@@ -33,7 +33,7 @@ Vous pouvez effectuer les actions de gouvernance suivantes sur un fichier ou un 
   
     -   Notification par e-mail à l’utilisateur : Les e-mails sont personnalisables et envoyés à tous les propriétaires de fichiers en situation de violation.  
   
-    -   Mettre en copie le responsable : Selon l’intégration de l’annuaire des utilisateurs, des notifications par e-mail peuvent également être envoyées au responsable de la personne qui viole une stratégie.  
+    -   Mettre en copie le responsable : Selon l’intégration de l’annuaire des utilisateurs, des notifications par e-mail peuvent également être envoyées au responsable de la personne qui viole une stratégie. (Salesforce uniquement)
   
 -   Notifier des utilisateurs spécifiques : Liste spécifique d’adresses e-mail qui reçoivent ces notifications.  
   
@@ -73,7 +73,7 @@ Vous pouvez effectuer les actions de gouvernance suivantes sur un fichier ou un 
   
     -   Notification par e-mail à l’utilisateur : Les e-mails sont personnalisables et envoyés à tous les propriétaires de fichiers en situation de violation.  
   
-    -   Mettre en copie le responsable : Selon l’intégration de l’annuaire des utilisateurs, des notifications par e-mail peuvent également être envoyées au responsable de la personne qui viole une stratégie.  
+    -   Mettre en copie le responsable : Selon l’intégration de l’annuaire des utilisateurs, des notifications par e-mail peuvent également être envoyées au responsable de la personne qui viole une stratégie. (Salesforce uniquement)
   
     -   Notifier d’autres utilisateurs : Liste spécifique d’adresses e-mail qui reçoivent ces notifications.  
   
@@ -128,8 +128,8 @@ Pour plus d’informations sur la façon dont les actions de gouvernance sont tr
 |Découverte > Applications découvertes/Adresses IP/Utilisateurs|Cloud Discovery|Exporter les données de découverte|Crée un fichier CSV à partir de données de découverte.|Découverte|
 |Stratégie de fichier|File|Mettre à la corbeille|Met un fichier dans la corbeille de l’utilisateur.|One Drive, SharePoint|
 |Stratégie de fichier|File|Notifier le dernier éditeur du fichier|Envoie un e-mail pour notifier la dernière personne qui a modifié le fichier qu’il viole une stratégie.|G Suite, Box|
-|Stratégie de fichier|File|Notifier le propriétaire du fichier|Envoie un e-mail au propriétaire du fichier avec l’option d’envoyer une copie à son responsable lorsqu’un fichier viole une stratégie. Dans Dropbox, si aucun propriétaire n’est associé à un fichier, la notification est envoyée à l’utilisateur spécifique que vous définissez.|Toutes les applications|
-|Stratégie de fichier, Stratégie d’activité|Fichier, Activité|Mettre en copie le responsable du propriétaire/de l’utilisateur|Lorsque le propriétaire du fichier reçoit une notification par e-mail spécifiant que son fichier viole une stratégie, le responsable du propriétaire du fichier/l’utilisateur peut éventuellement être notifié.|Toutes les applications à l’exception de Service Now|
+|Stratégie de fichier|File|Notifier le propriétaire du fichier|Envoie un e-mail au propriétaire quand un fichier ne respecte pas une stratégie. Dans Dropbox, si aucun propriétaire n’est associé à un fichier, la notification est envoyée à l’utilisateur spécifique que vous définissez.|Toutes les applications|
+|Stratégie de fichier, Stratégie d’activité|Fichier, Activité|Mettre en copie le responsable du propriétaire/de l’utilisateur|Lorsque le propriétaire du fichier reçoit une notification par e-mail spécifiant que son fichier viole une stratégie, le responsable du propriétaire du fichier/l’utilisateur peut éventuellement être notifié.|Salesforce|
 |Stratégie de fichier, Stratégie d’activité|Fichier, Activité|Notifier des utilisateurs spécifiques|Envoie un e-mail pour notifier des utilisateurs spécifiques qu’un fichier viole une stratégie.|Toutes les applications|
 |Stratégie de fichier et Stratégie d’activité|Fichier, Activité|Notifier l’utilisateur|Envoie un e-mail aux utilisateurs pour les informer qu’une de leurs actions ou qu’un fichier qu’ils possèdent viole une stratégie. Vous pouvez ajouter une notification personnalisée lui indiquant la violation.|Tous|
 |Stratégie de fichiers et fichiers|File|Supprimer la capacité des éditeurs à partager|Dans Google Drive, les autorisations de l’éditeur par défaut d’un fichier permettent également le partage. Cette action de gouvernance restreint cette option et restreint le partage de fichiers au propriétaire.|G Suite|
