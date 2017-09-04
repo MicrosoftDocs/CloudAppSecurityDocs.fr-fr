@@ -33,6 +33,7 @@
 ## [Utilisation du tableau de bord](daily-activities-to-protect-your-cloud-environment.md)
 ## Scénarios
 ### [Protection de votre organisation contre les ransomwares](use-case-ransomware.md)
+### [Protection de vos fichiers avec la mise en quarantaine administrateur](use-case-admin-quarantine.md)
 ## Découvrir
 ### [Utilisation des applications découvertes](discovered-apps.md)
 ### [Utilisation du score de risque](risk-score.md)
