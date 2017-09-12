@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/13/2017
+ms.date: 9/03/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: eb3ad41fd9e7600d4825f4bf5100ed59663a4254
-ms.sourcegitcommit: 4cf65f627f2d370ee4a4decae1acbb9658874056
+ms.openlocfilehash: be08317610ec1f32c78be9c942c64bba7bbdcd0f
+ms.sourcegitcommit: de133f251ceab10d9c2306dd76e75a68db206743
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2017
+ms.lasthandoff: 09/03/2017
 ---
 # <a name="set-up-cloud-discovery"></a>Configurer Cloud Discovery
 Cloud Discovery analyse les journaux de votre trafic en se basant sur le catalogue d’applications cloud de Cloud App Security, qui contient plus de 15 000 applications cloud classées et évaluées selon plus de 60 facteurs de risque, afin de vous offrir une visibilité en continu de l’utilisation du cloud, de l’informatique fantôme et du risque que cette dernière représente pour votre organisation.
@@ -42,9 +42,10 @@ Le processus de génération d’une évaluation des risques comporte les étape
  
  
 >[!NOTE]
->Les données des rapports continus sont analysées deux fois par jour.
+>- Les données des rapports continus sont analysées deux fois par jour.
+>- Le collecteur de journaux compresse les données avant leur chargement. Le trafic sortant du collecteur de journaux a un volume égal à 10 % de celui des journaux de trafic reçus. 
  
-## <a name="using-traffic-logs-for--cloud-discovery"></a>Utilisation de journaux de trafic pour Cloud Discovery
+## <a name="using-traffic-logs-for-cloud-discovery"></a>Utiliser les journaux de trafic pour Cloud Discovery
 Cloud Discovery utilise les données dans vos journaux de trafic. Plus le journal est détaillé, meilleure est la visibilité. Cloud Discovery nécessite des données de trafic web avec les attributs suivants :
 - Date de la transaction
 - Adresse IP source
