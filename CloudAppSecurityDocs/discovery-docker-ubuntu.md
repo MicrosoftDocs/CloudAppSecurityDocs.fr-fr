@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7fe91dbeba5b899ca7e19a2b8bf3458fa36f52fe
-ms.sourcegitcommit: f9851779aa15b11f559e56ac818f1333f027c000
+ms.openlocfilehash: dba7c5cf9a5160e4bd6be4a236f8e64ac4a412e2
+ms.sourcegitcommit: d012fc1a099773bd9e9dc61906faab68dae0e996
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/17/2017
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Installation et configuration sur Ubuntu
 
@@ -105,7 +105,7 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
 
 1.  Ouvrez un terminal sur votre ordinateur Ubuntu.
 
-2.  Changez les privilèges racine à l’aide de la commande : `sudo - i`
+2.  Changez les privilèges racine à l’aide de la commande : `sudo -i`
 
 3.  Désinstallez les anciennes versions et installez Docker CE en exécutant la commande suivante :
 
