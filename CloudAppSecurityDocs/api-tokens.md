@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/1/2017
+ms.date: 9/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4f5e6b1e-6b2c-4358-98f0-945e2993d5fe
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 291a9bf9a0c45a7ef2667b5a4266ebb582d3a23b
-ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
+ms.openlocfilehash: a4d882791554344926b99320bf6d7fd4678af0b5
+ms.sourcegitcommit: d012fc1a099773bd9e9dc61906faab68dae0e996
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 09/17/2017
 ---
 # <a name="api-tokens"></a>Jetons d’API
     
@@ -49,7 +49,11 @@ L’onglet Jetons d’API vous aide à gérer tous les jetons d’API de votre l
   - L’état Généré désigne les jetons qui n’ont jamais été utilisés. 
   - Les jetons actifs sont ceux qui ont été générés et utilisés au cours des 7 derniers jours. 
   - Les jetons inactifs sont ceux qui ont été utilisés, mais n’ont pas eu d’activité au cours des 7 derniers jours.
+5. Après avoir généré un nouveau jeton, vous recevrez une nouvelle URL à utiliser pour accéder au portail Cloud App Security. 
 
+ ![Jeton d’API Cloud App Security](./media/generate-api-token.png)
+
+L’URL du portail générique continuera de fonctionner, mais sera beaucoup plus lente que l’URL personnalisée fournie avec votre jeton. Si vous oubliez l’URL, vous pouvez la voir en accédant à l’icône **?** du menu et en sélectionnant **À propos de**.
 
 ## <a name="api-token-management"></a>Gestion des jetons d’API
 
@@ -63,6 +67,14 @@ Une fois qu’un jeton est révoqué, il est supprimé du tableau, et le logicie
 
 > [!NOTE]
 > Les collecteurs de journaux et les connecteurs SIEM utilisent également des jetons d’API. Ces jetons doivent être gérés à partir des sections des collecteurs de journaux et de l’agent SIEM, et n’apparaissent pas dans ce tableau. 
+
+
+## <a name="view-your-data-center"></a>Afficher votre centre de données
+
+Pour voir à quel centre de données vous êtes connecté, dans le portail Cloud App Security, cliquez sur **?** dans la barre de menus et sélectionnez **À propos de**. 
+
+Dans l’écran de la version Cloud App Security, vous pouvez voir le centre de données.
+
 
 ## <a name="see-also"></a>Voir aussi  
 [Résolution des problèmes d’intégration de SIEM](troubleshooting-siem.md)   
