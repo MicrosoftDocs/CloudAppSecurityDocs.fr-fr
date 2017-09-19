@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/12/2017
+ms.date: 9/18/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9ed4b87b3665509a4e842d985e02d414bfa532bf
-ms.sourcegitcommit: b39c171da0f2df49a9293b343b404d26574d78ef
+ms.openlocfilehash: 9ee63f826e3ab23f20f7a0d3f3ccf37d63e16345
+ms.sourcegitcommit: 60fea672ed205ae9cbe622646b2681c69cf8ac7a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2017
+ms.lasthandoff: 09/18/2017
 ---
 # <a name="connect-apps"></a>Connecter des applications 
 Les connecteurs d’applications utilisent les API des fournisseurs d’applications pour que Cloud App Security bénéficie d’une plus grande visibilité et d’un plus grand contrôle sur les applications auxquelles vous vous connectez.  
@@ -85,34 +85,8 @@ Le tableau suivant répertorie, par application cloud, les fonctionnalités pris
   
   
 ## <a name="prerequisites"></a>Conditions préalables  
-Pour certaines applications, vous pouvez être amené à ajouter les adresses IP suivantes à la liste approuvée pour permettre à Cloud App Security de collecter les journaux et de fournir un accès pour la console Cloud App Security :  
-  
--   Pour les journaux :  
-  
-    104.209.35.177  
-  
-    13.91.98.185
- 
-    40.118.211.172
 
-    13.93.216.68
-
-    13.91.61.249
-
-    13.93.233.42
-
-    13.64.196.27
-
-    13.64.198.97
-
-    13.64.199.41
-
-    13.64.198.19
-  
-  
--   Pour la console :  
-  
-     104.42.231.28  
+- Pour certaines applications, vous pouvez être amené à ajouter des adresses IP à la liste verte pour permettre à Cloud App Security de collecter les journaux et de fournir un accès pour la console Cloud App Security. Pour plus d’informations, voir [Configuration requise pour le réseau](network-requirements.md).
 
 - Pour chaque application à connecter avec l’intégration de l’API Cloud App Security, nous recommandons de créer un compte de service d’administration dédié à Cloud App Security.  
   
