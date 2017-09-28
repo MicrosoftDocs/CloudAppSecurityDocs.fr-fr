@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/3/2017
+ms.date: 9/24/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: c75ba963-ad5a-48e6-8d5d-610fc6e0b990
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 37f288aa66213fde4ad3a0146064b2c44ea79e4a
-ms.sourcegitcommit: de133f251ceab10d9c2306dd76e75a68db206743
+ms.openlocfilehash: f0f6f0de46e8833b4f4ffb6bd31c7c46eeacac9a
+ms.sourcegitcommit: 13148ac82e496e8d4e0d10851e5d6e4f231229e4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2017
+ms.lasthandoff: 09/24/2017
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports"></a>Configurer le chargement automatique des journaux pour des rapports continus
 
@@ -40,7 +40,7 @@ Le collecteur de journaux prend en charge deux modes de déploiement :
 
 
 
--   **Appliance virtuelle** (*dépréciée*) : [s’exécute en tant qu’image sur l’hyperviseur Hyper-V ou VMware](configure-automatic-log-upload-for-continuous-reports.md).
+-   **Appliance virtuelle**: [s’exécute en tant qu’image sur l’hyperviseur Hyper-V ou VMware](configure-automatic-log-upload-for-continuous-reports.md)
 
 
 
