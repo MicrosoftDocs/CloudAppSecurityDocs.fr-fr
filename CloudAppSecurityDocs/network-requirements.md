@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/17/2017
+ms.date: 9/27/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 82bdda2ab26fa1c954edb5186eeb37d909d65e64
-ms.sourcegitcommit: d012fc1a099773bd9e9dc61906faab68dae0e996
+ms.openlocfilehash: a43adb2dfbfce0164384bd9fccb87d602e9eb7b7
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="network-requirements"></a>Configuration requise pour le réseau
 
@@ -69,7 +69,13 @@ Pour que Cloud App Security envoie des données via votre stunnel à votre serve
 > [!NOTE] 
 > Par défaut, le numéro de port du stunnel a la valeur 11344. Vous pouvez le remplacer par un autre port si nécessaire, mais n’oubliez pas de noter le nouveau numéro de port.
 
+## <a name="email-server"></a>Serveur de courrier
 
+L’adresse IP de courrier dédiée à Cloud App Security est la suivante : 
+
+198.2.134.139 (mail1.cloudappsecurity.com)
+
+N’oubliez pas d’ajouter cette adresse IP à la liste verte de votre service anti-courrier indésirable pour activer les notifications à envoyer.
     
 
 

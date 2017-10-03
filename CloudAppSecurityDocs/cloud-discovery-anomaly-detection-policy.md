@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 9/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: eaf73af0-7610-4903-b656-8d90b1d2b18c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ddc5f406aaa9d18e605c796cc8dba6c3927c6d2b
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 07f4f1028a0601582e88988b6656bfdfaf2c3c5b
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="cloud-discovery-anomaly-detection-policy"></a>Stratégie de détection des anomalies de Cloud Discovery
 Cet article fournit des informations de référence sur les stratégies, donne une explication de chaque type de stratégie et décrit les champs que vous pouvez configurer pour chacune d’elle.  
@@ -33,7 +33,7 @@ Pour chaque stratégie, définissez les paramètres suivants :
  
 2. Spécifiez un **Nom de stratégie** et une **Description**.  
 
-3. Créez un filtre pour les applications que vous voulez surveiller en cliquant sur **Ajouter un filtre**. Vous pouvez sélectionner une application spécifique, une **Catégorie** d’applications ou filtrer par **Nom**, par **Domaine** et par **Facteur de risque**, et cliquer sur **Enregistrer**.
+3. Créez un filtre pour les applications que vous voulez surveiller en cliquant sur **Ajouter un filtre**. Vous pouvez sélectionner une application spécifique, une **Catégorie** d’applications ou filtrer par **Nom**, par **Domaine et par **Facteur de risque**, et cliquer sur **Enregistrer**.
 
 4. Sous **Appliquer à**, définissez comment vous voulez que l’utilisation soit filtrée. L’utilisation en cours de surveillance peut être filtrée de deux manières différentes :  
   
@@ -60,13 +60,13 @@ Pour chaque stratégie, définissez les paramètres suivants :
 
     - Vous pouvez également choisir d’**Utiliser les paramètres par défaut de votre organisation**, qui affecte des valeurs aux paramètres de **Limite quotidienne d’alertes**, d’e-mail et de SMS à partir des paramètres par défaut de votre organisation. Pour définir la valeur par défaut, complétez la **Configuration des alertes**, puis cliquez sur **Enregistrer ces paramètres d’alerte comme valeurs par défaut pour votre organisation**.
 
-6. Cliquez sur **Créer**.
+6. Cliquez sur **Create (Créer)**.
 
 7. Comme avec toutes les stratégies, vous pouvez **Modifier**, **Désactiver** et **Activer** la stratégie en cliquant sur les trois points à la fin de la ligne dans la page **Stratégies**. Par défaut, quand vous créez une stratégie, celle-ci est activée.
 
 ## <a name="see-also"></a>Voir aussi  
 [Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)   
-[Pour obtenir un support technique, visitez la page de support assisté Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[Pour obtenir du support technique, consultez la page Support assisté Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier.](https://premier.microsoft.com/)  
   
   

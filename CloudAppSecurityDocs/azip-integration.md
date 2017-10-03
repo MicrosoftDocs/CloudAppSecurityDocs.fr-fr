@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/20/2017
+ms.date: 9/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 003c56d1d05c35adac55c568d72beab18243519f
-ms.sourcegitcommit: 9111960557afb30ea2d6c155afd4885a7ca1b278
+ms.openlocfilehash: b22d1ad368b05b5cee7d7459f199ce1ff2769cc4
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="azure-information-protection-integration"></a>Intégration d’Azure Information Protection
 
@@ -55,7 +55,7 @@ Après avoir activé Azure Information Protection, vous pouvez voir les fichiers
  ![activer azure information protection](./media/enable-azip.png)
 
 > [!NOTE] 
-> L’analyse automatique ne retraite les fichiers existants que s’ils sont modifiés. Si vous voulez analyser les fichiers existants pour les étiquettes de classification Azure Information Protection, vous devez avoir au moins une **stratégie Fichier d’inspection de contenu**. Si vous n’en avez aucune, créez une **stratégie Fichier**, supprimez tous les filtres prédéfinis et sélectionnez l’option **Inspection de contenu**. Ensuite, sous **Inspection de contenu**, cliquez sur **Inclure les fichiers qui correspondent à une expression prédéfinie**, sélectionnez une valeur prédéfinie et enregistrez la stratégie. Cette opération permet d’activer l’inspection de contenu qui détectera automatiquement les étiquettes de classification Azure Information Protection.
+> L’analyse automatique ne retraite les fichiers existants que s’ils sont modifiés. Si vous voulez analyser les fichiers existants pour les étiquettes de classification Azure Information Protection, vous devez avoir au moins une **stratégie Fichier d’inspection de contenu**. Si vous n’en avez aucune, créez une **stratégie Fichier**, supprimez tous les filtres prédéfinis et sélectionnez l’option **Inspection de contenu**. Ensuite, sous **Inspection de contenu**, cliquez sur **Inclure les fichiers qui correspondent à une expression prédéfinie**, sélectionnez une valeur prédéfinie et enregistrez la stratégie. Cette opération permet d’activer l’inspection de contenu qui détecte automatiquement les étiquettes de classification Azure Information Protection.
 
 ### <a name="set-internal-and-external-tags"></a>Définir des étiquettes internes et externes
 Par défaut, Cloud App Security analyse les étiquettes de classification qui ont été définies dans votre organisation, ainsi que les étiquettes externes qui ont été définies par d’autres organisations. 
@@ -67,11 +67,11 @@ Pour les ignorer l’ensemble des étiquettes de classification externes à votr
 ### <a name="control-file-exposure"></a>Contrôler l’exposition des fichiers
 - Si ceci est le document que vous avez étiqueté avec une étiquette de classification Azure Information Protection :
 
-![exemple d’écran azip](./media/azip-screen.png)
+![exemple d’écran Azure Information Protection](./media/azip-screen.png)
 
 - Vous pouvez voir ce fichier dans Cloud App Security, dans la page **Fichiers**, en filtrant sur l’étiquette de classification :
 
-![cas comparé à azip](./media/cas-compared-azip.png)
+![Comparaison de Cloud App Security et d’Azure Information Protection](./media/cas-compared-azip.png)
 
 - Vous pouvez obtenir plus d’informations sur ces fichiers et leurs étiquettes de classification dans le tiroir des fichiers.
 
@@ -126,6 +126,9 @@ Une fois Cloud App Security connecté à votre service Office 365, vous êtes en
 
 1. À partir de la page **ichiers**, sélectionnez le fichier que vous souhaitez protéger, cliquez sur les trois points à la fin de la ligne du fichier, puis choisissez **Protéger**. 
 ![protéger l’application](./media/protect-app.png)
+>[!NOTE]
+>Azure Information Protection protège les fichiers d’une taille maximale de 50 Mo. 
+
 2. Vous êtes invité à choisir une étiquette de classification de votre organisation pour protéger le fichier. Cliquez ensuite sur **Protéger**. 
 ![étiquette de classification de protection](./media/protect-template.png)
 3. Une fois que vous avez choisi une étiquette de classification et cliqué sur Protéger, Cloud App Security applique l’étiquette de classification et protège le fichier d’origine. T
@@ -145,6 +148,6 @@ Pour plus d’informations sur l’interaction entre Cloud App Security et Azure
 
 ## <a name="see-also"></a>Voir aussi  
 [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)   
-[Pour obtenir un support technique, visitez la page de support assisté Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[Pour obtenir du support technique, consultez la page Support assisté Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier.](https://premier.microsoft.com/)  
   
