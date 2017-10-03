@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/19/2017
+ms.date: 9/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,18 +13,18 @@ ms.technology:
 ms.assetid: ab9bc377-d2f5-4f4c-a419-f1728a15d1c7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d6c1851b1903159d40c0daa256fbb28bdb1268bd
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 5ffc6d748e8a4050a40cfadc81d5b2267eae934d
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="anomaly-detection-policy"></a>Stratégie de détection d’anomalie
 Cet article fournit des informations de référence sur les stratégies, donne une explication de chaque type de stratégie et décrit les champs que vous pouvez configurer pour chacune d’elle.  
 
 Une fois votre organisation protégée par Cloud App Security, toute l’activité cloud est évaluée en fonction de différents facteurs de risque prédéfinis. Cloud App Security examine chaque session utilisateur sur votre cloud, puis prend en considération les facteurs de risque que vous définissez ici afin d’être averti en cas d’événement anormal par rapport aux activités de référence ou habituelles de votre organisation ou de l’utilisateur. La page Stratégie de détection d’anomalie vous permet de configurer et de personnaliser les familles de facteurs de risque à prendre en compte dans le processus d’évaluation des risques. Vous pouvez adapter la stratégie en fonction de l’utilisateur, de l’emplacement ou du secteur de l’organisation. Par exemple, vous pouvez créer une stratégie qui vous avertit quand des membres de votre équipe informatique sont actifs en dehors de vos bureaux.  
 
-Cloud App Security passe par une période d’apprentissage initiale de 7 jours au cours de laquelle il ne signale pas les nouveaux utilisateurs, activités, appareils ni emplacements comme anormaux. Après cela, chaque session est comparée aux activités (activité des utilisateurs, adresses IP, appareils, etc.) détectées au cours du mois passé et à l’indice de risque de ces activités. Utilisez le curseur de sensibilité de la stratégie pour définir l’indice de risque minimal à partir duquel les alertes seront déclenchées. Quand vous créez une stratégie de détection d’anomalie, il est recommandé d’utiliser le seuil de sensibilité par défaut pendant une semaine avant de le modifier selon le nombre d’alertes reçues ; Cloud App Security vous envoie plus ou moins d’alertes pour les différents indices de risque quand vous modifiez le niveau de sensibilité.
+Cloud App Security passe par une période d’apprentissage initiale de sept jours au cours de laquelle il ne signale pas les nouveaux utilisateurs, activités, appareils ni emplacements comme anormaux. Après cela, chaque session est comparée aux activités (activité des utilisateurs, adresses IP, appareils, etc.) détectées au cours du mois passé et à l’indice de risque de ces activités. Utilisez le curseur de sensibilité de la stratégie pour définir l’indice de risque minimal à partir duquel les alertes sont déclenchées. Quand vous créez une stratégie de détection d’anomalie, il est recommandé d’utiliser le seuil de sensibilité par défaut pendant une semaine avant de le modifier selon le nombre d’alertes reçues ; Cloud App Security vous envoie plus ou moins d’alertes pour les différents indices de risque quand vous modifiez le niveau de sensibilité.
   
 ![curseur de sensibilité](./media/sensitivity-slider.png)
 
@@ -54,7 +54,7 @@ Pour configurer une stratégie de détection d’anomalie :
   
     -   **Lieu** : Y a-t-il une activité dans un emplacement inhabituel, suspect ou nouveau ?  
   
-    -   **Voyage impossible** : Un utilisateur se connecte-t-il depuis Denver, puis dix minutes plus tard depuis Paris ?  
+    -   **Voyage impossible** : Un utilisateur se connecte-t-il depuis Denver, puis 10 minutes plus tard depuis Paris ?  
   
     -   **Agent Appareil et utilisateur** : Existe-t-il une activité à partir d’un appareil non reconnu ou non géré ?  
 
@@ -111,20 +111,20 @@ Chaque facteur de risque, s’il est inclus dans l’évaluation des risques, a 
   
 -   Voyage impossible : Activité à partir d’emplacements distants pendant un laps de temps court.  
   
--   Agent Appareil et utilisateur : Activité effectuée par un utilisateur à l’aide d’un agent utilisateur ou d’un appareil qui n’ont jamais été utilisés par un autre utilisateur, jamais été utilisés par cet utilisateur particulier ou jamais été utilisés du tout.  
+-   Agent Appareil et utilisateur : Activité effectuée par un utilisateur à l’aide d’un agent utilisateur ou d’un appareil qui n’a jamais été utilisé par un autre utilisateur, jamais été utilisé par cet utilisateur particulier ou jamais été utilisé du tout.  
   
 -   Taux d’activité : activités répétées effectuées par un utilisateur sur une courte période. 
 
 ### <a name="sensitivity"></a>Sensibilité  
 Il existe deux façons de contrôler le nombre d’alertes déclenchées par la stratégie :  
   
--   Curseur Sensibilité : Choisissez le nombre d’alertes à déclencher pour 1 000 utilisateurs par semaine. Les alertes liées aux activités dont le risque est le plus élevé sont déclenchées.  
+-   Curseur Sensibilité : Choisissez le nombre d’alertes à déclencher pour 1 000 utilisateurs par semaine. Les alertes sont déclenchées pour les activités dont le risque est le plus élevé.  
   
 -   Limite d’alerte quotidienne : Restreignez le nombre d’alertes générées sur une journée.  
   
 ## <a name="see-also"></a>Voir aussi  
 [Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)   
-[Pour obtenir un support technique, visitez la page de support assisté Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[Pour obtenir du support technique, consultez la page Support assisté Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier.](https://premier.microsoft.com/)  
   
   

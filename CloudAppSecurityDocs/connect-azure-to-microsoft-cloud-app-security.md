@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/3/2017
+ms.date: 9/25/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3a677bc7-c8b7-4c6a-aada-82c8b3778352
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7e2b6d0f02d49eaa4354f5344d0555fc3f503fb8
-ms.sourcegitcommit: 5688d3916a54deada225f7a83c34a7c501953960
+ms.openlocfilehash: 7497a52a48a7cb3b943da847b85144d0ce78ca84
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/04/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="connect-azure-to-microsoft-cloud-app-security"></a>Connecter Azure à Microsoft Cloud App Security
 
@@ -32,18 +32,18 @@ Cloud App Security se connecte à Azure par le biais d’Event Hubs. Cette secti
 1.  Diffusez le journal d’activité Azure de votre abonnement Azure sur un hub d’événements. Suivez le guide officiel dans la documentation Azure : https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitoring-stream-activity-logs-event-hubs
 
  > [!NOTE]
- > Si vous avez plusieurs abonnements Azure, répétez cette étape pour chaque abonnement, mais n’utilisez qu’un seul hub d’événements qui sera partagé entre vos abonnements.
+ > Si vous avez plusieurs abonnements Azure, répétez cette étape pour chaque abonnement à l’aide d’un seul hub d’événements, partagé entre vos abonnements.
 
  Une fois que vous avez suivi les instructions, un nouvel hub d’événements s’affiche dans l’espace de noms choisi.
  
  > [!NOTE]
- > Si vous obtenez une erreur après avoir essayé d’exporter les journaux d’activité, accédez au panneau **Fournisseurs de ressources** dans Azure et vérifiez que 'microsoft.insights' est inscrit.
+ > Si vous obtenez une erreur après avoir essayé d’exporter les journaux d’activité, accédez à **Fournisseurs de ressources** dans Azure, dans le menu gauche, et vérifiez que 'microsoft.insights' est inscrit.
 
 ### <a name="step-2-get-a-connection-string-to-your-event-hub"></a>Étape 2 : Obtenir une chaîne de connexion à votre hub d’événements
 
-1.  Accédez au panneau **Event Hubs - Preview**.
+1.  Accédez à **Event Hubs - Preview** dans le menu gauche.
   
-   ![Panneau Event Hubs](media/azure-event-hubs.png "Event Hubs Azure")
+   ![Menu Event Hubs](media/azure-event-hubs.png "Event Hubs Azure")
 
 2.  Sélectionnez votre espace de noms de hub d’événements.
   
@@ -66,11 +66,11 @@ Cloud App Security se connecte à Azure par le biais d’Event Hubs. Cette secti
 
 6.  Entrez un nom pour la nouvelle stratégie et veillez à inclure au moins la **revendication Écouter**. Quand vous avez terminé, cliquez sur **Créer**.
   
-    ![Nouvelle stratégie Azure](media/azure-new-policy.png "Créer une stratégie Azure")
+    ![Nouvelle stratégie Azure](media/azure-new-policy.png "Nouvelle stratégie Azure")
 
-7.  Sous **Paramètres**, puis **Stratégies d’accès partagé**, cliquez sur la stratégie d’accès que vous venez de créer.   
+7.  Sous **Paramètres**, puis **Stratégies d’accès partagé**, cliquez sur la stratégie d’accès que vous avez créée.   
   
-    ![Sélectionner une stratégie Azure](media/azure-select-policy.png "Sélectionner une stratégie Azure")
+    ![Stratégie Azure](media/azure-select-policy.png "Stratégie Azure")
 
 8. Dans la fenêtre Stratégie, copiez l’une des chaînes de connexion en cliquant sur le bouton suivant en regard de **Chaîne de connexion - Clé primaire** ou **Chaîne de connexion - Clé secondaire**.
 
@@ -89,8 +89,7 @@ Cloud App Security se connecte à Azure par le biais d’Event Hubs. Cette secti
    >[!NOTE] 
    > Si vous avez créé un autre groupe de consommateurs à utiliser, utilisez ce nom de **Groupe de consommateurs**.
   
-6.  Cliquez sur **Connexion**.
-     La connexion sera testée et peut prendre quelques minutes. Une fois averti que la connexion a réussi, cliquez sur **Fermer**.  
+6.  Cliquez sur **Se connecter** pour vous connecter et tester la connexion. Cela peut prendre quelques minutes. Une fois averti que la connexion a réussi, cliquez sur **Fermer**.  
 
 
 > [!NOTE]
@@ -99,7 +98,7 @@ Cloud App Security se connecte à Azure par le biais d’Event Hubs. Cette secti
 
 ## <a name="see-also"></a>Voir aussi  
 [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)   
-[Pour obtenir un support technique, visitez la page de support assisté Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[Pour obtenir du support technique, consultez la page Support assisté Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier.](https://premier.microsoft.com/)  
   
   

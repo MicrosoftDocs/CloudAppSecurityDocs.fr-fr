@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/17/2017
+ms.date: 9/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4f5e6b1e-6b2c-4358-98f0-945e2993d5fe
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a4d882791554344926b99320bf6d7fd4678af0b5
-ms.sourcegitcommit: d012fc1a099773bd9e9dc61906faab68dae0e996
+ms.openlocfilehash: d4e56bc0b09b27b600d1f397f89ba13e5ee15350
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="api-tokens"></a>Jetons d’API
     
@@ -40,20 +40,20 @@ L’onglet Jetons d’API vous aide à gérer tous les jetons d’API de votre l
 1. Dans le menu **Paramètres**, sélectionnez **Extensions de sécurité**, puis **Jetons d’API**.
 
 2. Cliquez sur l’icône plus, **Générer un nouveau jeton** et indiquez un nom pour identifier le jeton plus tard, puis cliquez sur **Suivant**.
-![Cloud App Security Générer un jeton d’API](./media/api-token-gen.png)
+![Cloud App Security génère un jeton d’API](./media/api-token-gen.png)
 
 3. Copiez la valeur du jeton et enregistrez-la quelque part pour pouvoir la récupérer (si vous la perdez, vous devez regénérer le jeton). Le jeton hérite des privilèges de l’utilisateur qui l’émet. Par exemple, un lecteur Sécurité ne peut pas émettre de jeton pouvant modifier des données.
 
 4. Vous pouvez filtrer les jetons par état : Actif, Inactif ou Généré. 
 
   - L’état Généré désigne les jetons qui n’ont jamais été utilisés. 
-  - Les jetons actifs sont ceux qui ont été générés et utilisés au cours des 7 derniers jours. 
-  - Les jetons inactifs sont ceux qui ont été utilisés, mais n’ont pas eu d’activité au cours des 7 derniers jours.
+  - Les jetons actifs sont ceux qui ont été générés et utilisés au cours des sept derniers jours. 
+  - Les jetons inactifs sont ceux qui ont été utilisés, mais n’ont pas eu d’activité au cours des sept derniers jours.
 5. Après avoir généré un nouveau jeton, vous recevrez une nouvelle URL à utiliser pour accéder au portail Cloud App Security. 
 
  ![Jeton d’API Cloud App Security](./media/generate-api-token.png)
 
-L’URL du portail générique continuera de fonctionner, mais sera beaucoup plus lente que l’URL personnalisée fournie avec votre jeton. Si vous oubliez l’URL, vous pouvez la voir en accédant à l’icône **?** du menu et en sélectionnant **À propos de**.
+L’URL du portail générique continue de fonctionner, mais est beaucoup plus lente que l’URL personnalisée fournie avec votre jeton. Si vous oubliez l’URL, vous pouvez la voir en accédant à l’icône **?** du menu et en sélectionnant **À propos de**.
 
 ## <a name="api-token-management"></a>Gestion des jetons d’API
 
@@ -78,7 +78,7 @@ Dans l’écran de la version Cloud App Security, vous pouvez voir le centre de 
 
 ## <a name="see-also"></a>Voir aussi  
 [Résolution des problèmes d’intégration de SIEM](troubleshooting-siem.md)   
-[Pour obtenir un support technique, visitez la page de support assisté Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[Pour obtenir du support technique, consultez la page Support assisté Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier.](https://premier.microsoft.com/)  
   
   
