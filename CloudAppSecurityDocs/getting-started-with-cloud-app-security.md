@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/3/2017
+ms.date: 10/1/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,23 +13,23 @@ ms.technology:
 ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b16231a0456cce028e69add3d6a643a9698ea0f1
-ms.sourcegitcommit: 5688d3916a54deada225f7a83c34a7c501953960
+ms.openlocfilehash: bdde7b7c25244b2b11710d998754e5e115c40c9a
+ms.sourcegitcommit: 55f06262640332e5c02c5fa1c6db74789dbdd552
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/04/2017
+ms.lasthandoff: 10/03/2017
 ---
 # <a name="deploy-cloud-app-security"></a>Déployer Cloud App Security
 Cloud App Security vous permet de tirer parti des avantages des applications cloud tout en conservant le contrôle des ressources d’entreprise. Il fonctionne en améliorant la visibilité de l’activité cloud et contribue à renforcer la protection des données d’entreprise. Dans cette rubrique, nous vous guidons à travers les étapes permettant de configurer et d’utiliser Cloud App Security.  
 
-Votre organisation doit avoir une licence pour utiliser Cloud App Security. Pour plus d’informations, consultez la section des ressources concernant les licences dans [Comment acheter Cloud App Security](https://www.microsoft.com/en-us/cloud-platform/cloud-app-security).  
+Votre organisation doit avoir une licence pour utiliser Cloud App Security. Pour plus d’informations, consultez la section [Comment acheter Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security) dans la page d’accueil de Cloud App Security.  
 
 >[!NOTE]
 >Vous n’avez pas besoin d’une licence Office 365 pour utiliser Cloud App Security.  
 
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Prérequis  
   
--   Votre organisation doit détenir une licence Cloud App Security pour pouvoir utiliser le produit. Pour plus d’informations, consultez [Comment acheter Cloud App Security](https://www.microsoft.com/server-cloud/products/cloud-app-security/default.aspx) pour découvrir les [offres de licence](https://www.microsoft.com/server-cloud/products/cloud-app-security/default.aspx).  
+-   Votre organisation doit détenir une licence Cloud App Security pour pouvoir utiliser le produit. Pour plus d’informations, consultez la section [Comment acheter Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security) dans la page d’accueil de Cloud App Security.  
   
      Pour la prise en charge de l’activation client, consultez [Contacter le support Office 365 pour les entreprises - Aide de l’administrateur](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).  
   
