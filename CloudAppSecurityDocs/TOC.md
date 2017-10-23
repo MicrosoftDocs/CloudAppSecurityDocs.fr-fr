@@ -1,7 +1,9 @@
 # Comprendre et explorer
-## [Qu’est-ce que la mise à jour adaptée aux clusters ?](what-is-cloud-app-security.md)
+## [Qu’est-ce que Cloud App Security ?](what-is-cloud-app-security.md)
 ## [Nouveautés](release-notes.md)
-## [CAS éditions](editions-cloud-app-security.md)
+## Comparer
+### [Office 365](editions-cloud-app-security-o365.md)
+### [Azure AD](editions-cloud-app-security-aad.md)
 # Déployer
 ## [Mise en route](getting-started-with-cloud-app-security.md)
 ## [Configuration de base](general-setup.md)
