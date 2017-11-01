@@ -5,7 +5,7 @@
 ### [Office 365](editions-cloud-app-security-o365.md)
 ### [Azure AD](editions-cloud-app-security-aad.md)
 # Déployer
-## [Mise en route](getting-started-with-cloud-app-security.md)
+## [Bien démarrer](getting-started-with-cloud-app-security.md)
 ## [Configuration de base](general-setup.md)
 ### [Configuration requise pour le réseau](network-requirements.md)
 ### [Gérer les administrateurs](manage-admins.md)
@@ -31,10 +31,13 @@
 ### [Connecter Okta](connect-okta-to-microsoft-cloud-app-security.md)
 ### [Connecter ServiceNow](connect-servicenow-to-microsoft-cloud-app-security.md)
 ### [Connecter Salesforce](connect-salesforce-to-microsoft-cloud-app-security.md)
-# Utilisez
+## [Protéger les applications avec un proxy](proxy-intro-aad.md)
+### [Déployer un proxy pour les applications Azure AD](proxy-deployment-aad.md)
+# Utiliser
 ## [Utilisation du tableau de bord](daily-activities-to-protect-your-cloud-environment.md)
 ## Scénarios
 ### [Protection de votre organisation contre les ransomwares](use-case-ransomware.md)
+### [Téléchargements en bloc d’informations sensibles](use-case-proxy-block-session-aad.md)
 ### [Protection de vos fichiers avec la mise en quarantaine administrateur](use-case-admin-quarantine.md)
 ## Découvrir
 ### [Utilisation des applications découvertes](discovered-apps.md)
@@ -56,15 +59,16 @@
 #### [Stratégies de fichier](data-protection-policies.md)
 ##### [Inspection du contenu](content-inspection.md)
 ##### [Utilisation du moteur RegEx](working-with-the-regex-engine.md)
+#### [Stratégies de session](session-policy-aad.md)
 #### [Informations de référence sur les modèles de stratégie](policy-template-reference.md)
 ### [Gouverner les applications connectées](governance-actions.md)
 ### [Gouverner les applications découvertes](governance-discovery.md)
-## Intégration à l’aide des extensions de sécurité
+## Intégrer avec des extensions de sécurité
 ### [Intégration d’Azure Information Protection](azip-integration.md)
 ### [Intégration de SIEM](siem.md)
 ### [Intégration DLP externe](icap-stunnel.md)
 ### [Jetons d’API](api-tokens.md)
-# Dépannage
+# Dépanner
 ## [Résolution des problèmes de Cloud Discovery](troubleshooting-cloud-discovery.md)
 ## [Résolution des problèmes des connecteurs API à l’aide de messages d’erreur](troubleshooting-api-connectors-using-error-messages.md)
 ## [Résolution des problèmes d’inspection du contenu](troubleshooting-content-inspection.md)
