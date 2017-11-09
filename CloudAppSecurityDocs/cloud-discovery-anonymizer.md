@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/24/2017
+ms.date: 10/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: eb250ede-fede-4699-a08b-b8ea4b232f07
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e6f9377942a969137fe766b4b146662d359b0224
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: f3d710cabf1477ea248182a994dee8c00e2c4536
+ms.sourcegitcommit: f9c6bd3c629cc48ce771fec47dd6e40bc4c7a197
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/30/2017
 ---
 # <a name="cloud-discovery-data-anonymization"></a>Anonymisation des données Cloud Discovery
 
@@ -34,10 +34,12 @@ Fonctionnement de l’anonymisation des données :
 1.  Il existe trois façons d’appliquer l’anonymisation des données : 
     
     - Vous pouvez anonymiser les données d’un fichier journal spécifique en [créant un rapport de capture instantanée](create-snapshot-cloud-discovery-reports.md) et en sélectionnant **Anonymiser les informations privées**.
- ![Anonymiser des données de capture instantanée](./media/anonymize-log.png)
+
+      ![Anonymiser les données de capture instantanée](./media/anonymize-log.png)
 
     - Vous pouvez anonymiser les données d’un [chargement automatisé d’une nouvelle source de données](configure-automatic-log-upload-for-continuous-reports.md) en sélectionnant **Anonymiser les informations privées** quand vous ajoutez la nouvelle source de données.  
- ![Anonymiser les données des journaux](./media/anonymize-autolog.png)
+  
+      ![Anonymiser les données des journaux](./media/anonymize-autolog.png)
 
     - Vous pouvez définir le comportement par défaut dans Cloud App Security pour anonymiser toutes les données des rapports de capture instantanée des fichiers journaux chargés et celles des rapports continus du collecteur de journaux comme suit :
      
@@ -47,24 +49,27 @@ Fonctionnement de l’anonymisation des données :
 
         3. Sous Clé de chiffrement, choisissez si vous voulez **Utiliser la clé dédiée générée pour votre portail** ou **Utiliser une clé personnalisée**. Si vous voulez **Utiliser une clé personnalisée**, entrez une clé de chiffrement UTF8 de 16 octets.
         4. Cliquez sur **Enregistrer**.
-  ![Anonymisation](./media/anonymizer1.png)
+ 
+       ![Anonymisation](./media/anonymizer1.png)
   
 
 2.  Quand l’anonymisation est sélectionnée, Cloud App Security analyse le journal du trafic et extrait les attributs de données spécifiques.
 3.  Cloud App Security remplace le nom d’utilisateur par un nom d’utilisateur chiffré.
 4.  Il analyse ensuite les données d’utilisation cloud et génère des rapports Cloud Discovery basés sur les données anonymisées.
- ![Anonymiser le tableau de bord Cloud Discovery](./media/anonymize-dashboard.png)
  
-
+    ![Anonymiser le tableau de bord Cloud Discovery](./media/anonymize-dashboard.png)
+ 
 5.  Pour des investigations spécifiques, comme pour une alerte d’utilisation anormale, vous pouvez résoudre le nom d’utilisateur spécifique dans le portail et spécifier une justification liée à l’activité de l’entreprise. Cette page peut également être utilisée pour rechercher le nom d’utilisateur chiffré d’un nom d’utilisateur connu. 
 
     1. Sous l’icône Paramètres, sélectionnez **Paramètres Cloud Discovery**.
     2. Sous l’onglet **Anonymisation**, sous **Anonymiser et résoudre les noms d’utilisateur**, entrez une justification expliquant pourquoi vous effectuez la résolution.
     3. Sous **Entrer le nom d’utilisateur à résoudre**, sélectionnez **À partir du nom anonymisé** et entrez le nom d’utilisateur anonymisé, ou sélectionnez **À anonymiser** et entrez le nom d’utilisateur d’origine à résoudre. Cliquez sur **Résoudre**. 
-![Anonymisation](./media/anonymizer.png)
+
+   ![Anonymisation](./media/anonymizer.png)
 
 6.  L’action est auditée dans le **journal de gouvernance** du portail. 
-![Anonymisation](./media/anonymize-gov-log.png)
+
+     ![Anonymisation](./media/anonymize-gov-log.png)
 
 
 

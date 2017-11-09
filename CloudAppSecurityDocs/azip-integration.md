@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/24/2017
+ms.date: 10/9/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b22d1ad368b05b5cee7d7459f199ce1ff2769cc4
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: e7b4fbb7ed71e1a49de93447c3c00dbff43f2894
+ms.sourcegitcommit: 4daaec64c5a773cd092d94ee17ca05dfbd9e92c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/09/2017
 ---
 # <a name="azure-information-protection-integration"></a>Intégration d’Azure Information Protection
 
@@ -30,6 +30,8 @@ En intégrant Azure Information Protection dans Cloud App Security, vous pouvez 
 
 > [!NOTE] 
 > Pour activer cette fonctionnalité, vous avez besoin d’une licence Cloud App Security et d’une licence pour Azure Information Protection Premium P1 ou P2. Dès que ces deux licences sont en place, Cloud App Security synchronise les étiquettes des organisations à partir du service Azure Information Protection.
+> Cloud App Security ne prend pas en charge les stratégies étendues Azure Information Protection.
+
 
 ## <a name="how-it-works"></a>Fonctionnement
 Vous connaissez probablement déjà les étiquettes de classification des fichiers dans [Azure Information Protection](https://docs.microsoft.com/information-protection/). Vous pouvez voir les étiquettes de classification d’Azure Information Protection dans Cloud App Security. Dès que vous intégrez Cloud App Security à Azure Information Protection, Cloud App Security analyse les fichiers comme suit :
@@ -124,7 +126,7 @@ Cette fonctionnalité est actuellement disponible pour les fichiers stockés dan
 
 Une fois Cloud App Security connecté à votre service Office 365, vous êtes en mesure d’utiliser les fonctionnalités d’intégration RMS de Cloud App Security. Ces dernières vous permettent de protéger vos documents avec RMS, directement dans le portail Cloud App Security, et ce, de la manière suivante :
 
-1. À partir de la page **ichiers**, sélectionnez le fichier que vous souhaitez protéger, cliquez sur les trois points à la fin de la ligne du fichier, puis choisissez **Protéger**. 
+1. À partir de la page **Fichiers**, sélectionnez le fichier que vous souhaitez protéger, cliquez sur les trois points à la fin de la ligne du fichier, puis choisissez **Protéger**. 
 ![protéger l’application](./media/protect-app.png)
 >[!NOTE]
 >Azure Information Protection protège les fichiers d’une taille maximale de 50 Mo. 

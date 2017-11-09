@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f3bb5b1618f9bc872f1171f73c2dc529b3679aec
-ms.sourcegitcommit: 9111960557afb30ea2d6c155afd4885a7ca1b278
+ms.openlocfilehash: 2d085cb1df45748ec869766f7c6824dc427b61fe
+ms.sourcegitcommit: 991e957c70d49e3fbf77828c2d2064fa363da667
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="what-is-cloud-app-security"></a>Qu’est-ce que Cloud App Security ?
 
@@ -43,9 +43,10 @@ Cloud App Security intègre une visibilité à votre cloud :
 -   En utilisant Cloud Discovery pour mapper et identifier votre environnement cloud et les applications cloud que votre organisation utilise.
 -   En approuvant ou non des applications de votre cloud.  
 -   En utilisant des connecteurs d’application faciles à déployer qui tirent parti des API du fournisseur, ce qui permet une visibilité et une gouvernance des applications auxquelles vous vous connectez.  
+-   En utilisant une protection de proxy pour obtenir une visibilité en temps réel et contrôler l’accès et les activités effectuées au sein de vos applications cloud.
 -   En vous permettant un contrôle continu via la définition et l’optimisation permanente de stratégies.  
 
-![Schéma de l’architecture Cloud App Security](./media/architecture.png)  
+![Schéma de l’architecture Cloud App Security](./media/proxy-architecture.png)  
 
 ### <a name="data-retention--compliance"></a>Conservation des données et conformité
 
@@ -58,7 +59,7 @@ Cloud App Security conserve les données comme suit :
 - Données de découverte : 90 jours 
 - Alertes : 180 jours 
 
-Une fois que les données sont collectées à partir de ces sources, Cloud App Security exécute une analyse avancée sur les données. Il vous alerte immédiatement des activités anormales et vous donne une visibilité détaillée de votre environnement cloud. Vous pouvez configurer une stratégie dans Cloud App Security et l’utiliser pour protéger tout ce qui se trouve dans votre environnement cloud.  
+Une fois que les données sont collectées à partir de ces sources, Cloud App Security exécute un moteur de détection d’anomalie heuristique sophistiqué qui établit le profil de votre environnement et vous avertit des activités anormales par rapport à la base de référence apprise, ce qui vous donne une visibilité plus grande dans votre environnement cloud. Vous pouvez configurer une stratégie dans Cloud App Security et l’utiliser pour protéger tout ce qui se trouve dans votre environnement cloud.  
 
 ### <a name="cloud-discovery"></a>Cloud Discovery  
 
@@ -76,6 +77,13 @@ Les connecteurs d’application utilisent les API des fournisseurs d’applicati
 Pour connecter une application et étendre la protection, l’administrateur de l’application autorise Cloud App Security à accéder à l’application. Ensuite, Cloud App Security récupère les journaux d’activité de l’application et analyse les données, les comptes et le contenu cloud. Cloud App Security peut appliquer des stratégies, détecter des menaces et appliquer des actions de gouvernance pour résoudre les problèmes.  
 
 Cloud App Security utilise les API fournies par le fournisseur cloud. Chaque application a ses propres limitations de framework et d’API. Cloud App Security fonctionne avec les fournisseurs d’applications pour optimiser l’utilisation des API et garantir des performances optimales. Compte tenu des différentes limitations que les applications imposent sur les API (comme les limitations, les limites d’API et les fenêtres d’API de décalage temporel dynamique), les moteurs de Cloud App Security utilisent la capacité autorisée. Certaines opérations, comme l’analyse de tous les fichiers dans le locataire, nécessitent une grande quantité d’API et sont donc réparties sur une période plus longue. Il est normal que certaines stratégies s’exécutent pendant plusieurs heures ou jours.  
+
+### <a name="proxy-protection"></a>Protection de proxy
+Le proxy Cloud App Security vous propose les outils dont vous avez besoin pour obtenir une visibilité et un contrôle en temps réel de l’accès et des activités effectuées au sein de votre environnement cloud. Avec le proxy, vous pouvez protéger votre organisation : 
+-   Éviter les fuites de données en bloquant les téléchargements avant qu’ils se produisent
+-   Définir des règles qui forcent le chiffrement des données stockées dans le cloud et téléchargées à partir du cloud
+-   Obtenir une visibilité sur les points de terminaison non protégés afin de surveiller les opérations réalisées sur les appareils non gérés
+-   Contrôler l’accès depuis des réseaux hors entreprise ou des adresses IP à risque
 
 ### <a name="policy-control"></a>Contrôle des stratégies  
 

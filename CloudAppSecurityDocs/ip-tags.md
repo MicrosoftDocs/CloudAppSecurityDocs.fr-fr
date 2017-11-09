@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: bbf54f66-4ce2-428c-afc8-b5a64277014f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: edf852bf90a0d4b9345f1beb675ef5ee3c4f941d
-ms.sourcegitcommit: c3fda43ef6fe0d15f0eb9ea23a6f245bad8c371b
+ms.openlocfilehash: 8076ba72f8e431145be3df8e9b371cd1175a5c4d
+ms.sourcegitcommit: 4daaec64c5a773cd092d94ee17ca05dfbd9e92c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2017
+ms.lasthandoff: 10/09/2017
 ---
 #  <a name="IPtagsandRanges"></a> Utilisation des balises et des plages d’adresses IP
 
@@ -69,14 +69,15 @@ Dans la barre de menus, cliquez sur l’icône des paramètres ![icône des para
   
     -   **Administratif** : adresses IP de vos administrateurs  
   
-    -   **Interne** : adresses IP de votre réseau interne, de vos succursales et adresses d’itinérance Wi-Fi.  
+    -  **Fournisseur de cloud** : adresses IP utilisées par votre fournisseur de cloud.
+  
+    -   **Entreprise** : adresses IP de votre réseau interne, de vos succursales et adresses d’itinérance Wi-Fi.  
   
     -   **Risqué** : toutes les adresses IP que vous considérez comme risquées. Celles-ci peuvent inclure les adresses IP suspectes déjà constatées, les adresses IP appartenant aux réseaux de vos concurrents, etc.  
   
     -   **VPN** : toutes les adresses IP que vous utilisez pour les télétravailleurs  
-  
-    -   **Proxy du cloud** : adresse IP de votre proxy dans le cloud  
-  
+ 
+
 7.  Quand vous avez terminé, cliquez sur **Créer**.  
   
      ![plage de nouvelles adresses IP](./media/newipaddress-range.png "plage de nouvelles adresses IP")  
