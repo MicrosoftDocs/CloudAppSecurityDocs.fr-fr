@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/18/2017
+ms.date: 10/9/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9ee63f826e3ab23f20f7a0d3f3ccf37d63e16345
-ms.sourcegitcommit: 60fea672ed205ae9cbe622646b2681c69cf8ac7a
+ms.openlocfilehash: 437504a73f9b3ae4a8a21b379356934b76d2430b
+ms.sourcegitcommit: 4daaec64c5a773cd092d94ee17ca05dfbd9e92c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2017
+ms.lasthandoff: 10/09/2017
 ---
 # <a name="connect-apps"></a>Connecter des applications 
 Les connecteurs d’applications utilisent les API des fournisseurs d’applications pour que Cloud App Security bénéficie d’une plus grande visibilité et d’un plus grand contrôle sur les applications auxquelles vous vous connectez.  
@@ -84,7 +84,7 @@ Le tableau suivant répertorie, par application cloud, les fonctionnalités pris
 |**Révoquer les autorisations d’application**|✔||Non applicable|✔||✔|Non applicable||  
   
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Prérequis  
 
 - Pour certaines applications, vous pouvez être amené à ajouter des adresses IP à la liste verte pour permettre à Cloud App Security de collecter les journaux et de fournir un accès pour la console Cloud App Security. Pour plus d’informations, voir [Configuration requise pour le réseau](network-requirements.md).
 
@@ -119,4 +119,6 @@ Pour plus d’informations sur l’homologation publique, consultez [Circuits Ex
 [Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier.](https://premier.microsoft.com/)  
   
 
+## <a name="check-out-this-video"></a>Regardez cette vidéo !
+[Microsoft Cloud App Security – API REST et jetons](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security--REST-APIs-and-Tokens)  
    

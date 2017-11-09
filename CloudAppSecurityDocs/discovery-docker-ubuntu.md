@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/27/2017
+ms.date: 11/6/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 42e562f484ee5e0a980ab3678c34508cbff113f3
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: 2e762f9f4a90a9777ef1782c1c12305ea7d065ef
+ms.sourcegitcommit: 4f87ebd072c54232692483dcf07ccc2ac5daf445
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/06/2017
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Installation et configuration sur Ubuntu
 
@@ -39,6 +39,8 @@ ms.lasthandoff: 09/28/2017
     -   Autorisez le collecteur de journaux à recevoir le trafic FTP et Syslog entrant.
 
     -   Autorisez le collecteur de journaux à lancer le trafic sortant sur le portail (par exemple, contoso.cloudappsecurity.com) sur le port 443.
+
+    - Autorisez le collecteur de journaux à initier le trafic sortant vers le stockage Blob Azure (https://adaprodconsole.blob.core.windows.net/) sur les ports 80 et 443.
 
 > [!NOTE]
 > Si votre pare-feu requiert une liste d’accès à une adresse IP statique et ne prend pas en charge la mise sur liste verte en fonction de l’URL, autorisez le collecteur de journaux à initier le trafic sortant vers les [plages IP du centre de données Microsoft Azure sur le port 443](https://www.microsoft.com/download/details.aspx?id=41653&751be11f-ede8-5a0c-058c-2ee190a24fa6=True).
@@ -91,15 +93,11 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
     > - Un seul collecteur de journaux peut gérer plusieurs sources de données.
     >- Copiez le contenu de l’écran, car vous aurez besoin des informations lors de la configuration du collecteur de journaux pour communiquer avec Cloud App Security. Si vous avez sélectionné Syslog, ces informations vont inclure des informations sur le port utilisé par l’écouteur Syslog pour écouter.
 
-4.  Des informations supplémentaires sur le déploiement s’affichent.
-
- ![ubuntu3](./media/ubuntu3.png)
-
-5.  **Copiez** la commande d’exécution à partir de la boîte de dialogue. Vous pouvez utiliser l’icône de copie dans le Presse-papiers ![icône de copie dans le Presse-papiers](./media/copy-icon.png).
+4.  Des informations supplémentaires sur le déploiement s’affichent. **Copiez** la commande d’exécution à partir de la boîte de dialogue. Vous pouvez utiliser l’icône de copie dans le Presse-papiers ![icône de copie dans le Presse-papiers](./media/copy-icon.png).
 
 6.  **Exportez** la configuration de sources de données attendue. Cette configuration décrit comment définir l’exportation du journal dans vos appliances.
 
-  ![ubuntu4](./media/ubuntu4.png)
+   ![Créer le collecteur de journaux](./media/windows7.png)
 
 ### <a name="step-2--on-premises-deployment-of-your-machine"></a>Étape 2 : Déploiement local de votre ordinateur
 
@@ -120,17 +118,10 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
 
 4.  Déployez l’image du collecteur à l’aide de la commande d’exécution générée dans le portail.
 
-    ![ubuntu6](./media/ubuntu6.png)
+   ![Créer le collecteur de journaux](./media/windows7.png)
 
-    >[!NOTE]
-    >Si vous devez configurer un proxy, ajoutez dessous l’adresse IP et le port du proxy. Par exemple, si les détails de votre proxy sont 192.168.10.1:8080, votre commande d’exécution mise à jour est :<br></br>
-     `sudo docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e
-    "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e
-    "TOKEN=41f8f442c9a30519a058dd3bb9a19c79eb67f34a8816270dc4a384493988863a" -e
-    "CONSOLE=tenant2.eu1-rs.adallom.com" -e "COLLECTOR=MyLogCollector" --security-opt
-    apparmor:unconfined --cap-add=SYS_ADMIN -dt microsoft/caslogcollector starter`
-
-    ![ubuntu7](./media/ubuntu7.png)
+   Si vous devez configurer un proxy, ajoutez l’adresse IP et le numéro de port du proxy. Par exemple, si les détails de votre proxy sont 192.168.10.1:8080, votre commande d’exécution mise à jour est :<br></br>
+     `sudo (echo 6f19225ea69cf5f178139551986d3d797c92a5a43bef46469fcc997aec2ccc6f) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.2.2.2'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=tenant2.eu1-rs.adallom.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter`
 
 5.  Vérifiez que le collecteur s’exécute correctement à l’aide de la commande suivante : `docker logs \<collector_name\>`
 

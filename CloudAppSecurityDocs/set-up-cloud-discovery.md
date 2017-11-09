@@ -1,11 +1,11 @@
 ---
-title: "Déployer Cloud Discovery avec Cloud App Security | Microsoft Docs"
+title: "Déployer Cloud Discovery avec Microsoft Cloud App Security | Microsoft Docs"
 description: "Cette rubrique décrit la procédure de configuration pour rendre Cloud Discovery opérationnel."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/03/2017
+ms.date: 10/29/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: be08317610ec1f32c78be9c942c64bba7bbdcd0f
-ms.sourcegitcommit: de133f251ceab10d9c2306dd76e75a68db206743
+ms.openlocfilehash: 0fa9125b611574d4f4fafb18c8bc649de82b1ad6
+ms.sourcegitcommit: 1c9ed4923cb6b761aebd13a6caa3a6605412419a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2017
+ms.lasthandoff: 10/29/2017
 ---
 # <a name="set-up-cloud-discovery"></a>Configurer Cloud Discovery
 Cloud Discovery analyse les journaux de votre trafic en se basant sur le catalogue d’applications cloud de Cloud App Security, qui contient plus de 15 000 applications cloud classées et évaluées selon plus de 60 facteurs de risque, afin de vous offrir une visibilité en continu de l’utilisation du cloud, de l’informatique fantôme et du risque que cette dernière représente pour votre organisation.
@@ -75,6 +75,7 @@ Pour générer correctement un rapport Cloud Discovery, vos journaux de trafic d
 - Blue Coat Proxy SG - Journal d’accès (W3C)
 - Check Point
 - Pare-feu Cisco ASA (pour les pare-feu Cisco ASA, il est nécessaire de définir le niveau d’informations 6)
+- Cisco ASA avec FirePOWER
 - Cisco IronPort WSA
 - Cisco ScanSafe
 - Cisco Meraki – Journal des URL
@@ -108,6 +109,7 @@ Attributs de données (selon la documentation du fournisseur) :
 |Blue Coat|**Oui**|Non|**Oui**|**Oui**|**Oui**|**Oui**|
 |Point de contrôle|Non|**Oui**|Non|**Oui**|Non|Non|
 |Cisco ASA|Non|**Oui**|Non|**Oui**|**Oui**|Non|
+|Cisco ASA avec FirePOWER|**Oui**|**Oui**|**Oui**|**Oui**|**Oui**|**Oui**|
 |Cisco FWSM|Non|**Oui**|Non|**Oui**|**Oui**|Non|
 |Cisco Ironport WSA|**Oui**|**Oui**|**Oui**|**Oui**|**Oui**|**Oui**|
 |Cisco Meraki|**Oui**|**Oui**|Non|**Oui**|Non|Non||Cisco Scansafe|**Oui**|Non|**Oui**|**Oui**|**Oui**|**Oui**|

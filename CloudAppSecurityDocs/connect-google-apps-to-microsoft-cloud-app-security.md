@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/3/2017
+ms.date: 10/22/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9c97187c93391c3cfd754e9bad0daab3d6ce496f
-ms.sourcegitcommit: 55f06262640332e5c02c5fa1c6db74789dbdd552
+ms.openlocfilehash: 59337a573abce3fb057d7d8056034daa54737c4a
+ms.sourcegitcommit: 8dd7c155538ec9b95be3902c7ece95f6d0edde25
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2017
+ms.lasthandoff: 10/22/2017
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>Connecter G Suite à Microsoft Cloud App Security
 Cette section fournit des instructions pour connecter Cloud App Security à votre compte G Suite existant à l’aide des API du connecteur.
@@ -36,7 +36,9 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
     **Microsoft Cloud App Security** et cliquez sur **Créer**.  
            ![google2](./media/google2.png "google2")  
   
-4.  Une fois que le projet est créé, dans la barre d’outils, cliquez sur Google Cloud Platform.
+4.  Une fois que le projet est créé, dans la barre d’outils, cliquez sur **Google Cloud Platform** et vérifiez que le projet approprié est sélectionné dans la liste déroulante située en haut.
+       
+       ![projet Google](./media/googleverify-project.png "projet googleverify")  
 
 5. Sous **API**, cliquez sur **Go to APIs overview** (Accéder à la vue d’ensemble des API).  
   
@@ -112,7 +114,7 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
   
     -   **Short Description & Long Description** (Description courte et description longue) (facultatif) : Microsoft Cloud App Security offre une visibilité sur les applications cloud, ce qui vous permet de contrôler, d’examiner et de régir l’utilisation de ces applications cloud, de sécuriser les données d’entreprise et de détecter les activités suspectes liées aux applications cloud.  
   
-    -   Google vous demande de charger au moins une icône d’application. Accédez à [https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip](https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip) pour télécharger un fichier zip contenant les icônes Cloud App Security. Ensuite, sous **Application icon** (Icône de l’application), effectuez un glisser-déplacer des images 128 x 128 et 32 x 32.  
+    -   Google vous demande de charger au moins une icône d’application. Accédez à [https://us.portal.cloudappsecurity.com/cas/static/files/MSLogos.zip](https://us.portal.cloudappsecurity.com/cas/static/files/MSLogos.zip) pour télécharger un fichier zip contenant les icônes Cloud App Security. Ensuite, sous **Application icon** (Icône de l’application), effectuez un glisser-déplacer des images 128 x 128 et 32 x 32.  
   
     -   Faites défiler et dans la section **Drive Integration** (Intégration de Drive), tapez l’URL suivante sous **Open URL:** (Ouvrir l’URL :)  
   

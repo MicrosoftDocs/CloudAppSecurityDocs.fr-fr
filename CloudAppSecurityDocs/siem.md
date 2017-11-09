@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/1/2017
+ms.date: 11/5/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f13b48876c91f88143ecb9bb846a654fe9fa34f8
-ms.sourcegitcommit: 55f06262640332e5c02c5fa1c6db74789dbdd552
+ms.openlocfilehash: 6abf7cbaf3f13bd84255846f3d2430a67a0db523
+ms.sourcegitcommit: 2b8965381d94a5bb6349d8e25e1dc29b092a88b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2017
+ms.lasthandoff: 11/05/2017
 ---
 # <a name="siem-integration"></a>Intégration à SIEM
     
@@ -82,8 +82,10 @@ Vous pouvez cliquer sur **Modifier et afficher un aperçu des résultats** pour 
       java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory NOM_RÉPERTOIRE] [--proxy ADRESSE[:PORT]] --token JETON
 > [!NOTE]
 > - Le nom de fichier peut différer selon la version de l’agent SIEM.
-> - Les paramètres entre crochets [] sont facultatifs et doivent être utilisés seulement si nécessaire.
-> - Lors de l’exécution sur Windows, il est recommandé de configurer une tâche planifiée pour exécuter la commande. Cette opération permet de garantir que le service fonctionne toujours.
+> - Les paramètres entre crochets [ ] sont facultatifs et doivent être utilisés seulement si nécessaire.
+> - Il est recommandé d’exécuter le fichier JAR lors du démarrage du serveur.
+>   - Windows : Exécutez en tant que tâche planifiée et vérifiez que vous configurez la tâche pour qu’elle **s’exécute si l’utilisateur est connecté ou non** et que la case **Arrêter la tâche si elle s’exécute plus de** est décochée.
+>   - Linux : Ajoutez la commande d’exécution avec un **&** au fichier rc.local. Par exemple : `java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN &`
 
 Où les variables suivantes sont utilisées :
 - NOM_RÉPERTOIRE est le chemin du répertoire à utiliser pour les journaux de débogage de l’agent local.
@@ -142,10 +144,6 @@ Si vous devez supprimer l’agent SIEM à l’avenir, vous pouvez cliquer sur tr
 ## <a name="high-availability-options"></a>Options de haute disponibilité
 
 L’agent SIEM est un point de terminaison unique qui prend en charge la récupération d’un temps d’arrêt allant jusqu'à deux jours. Le fait de disposer d’un équilibreur de charge en tant que point de terminaison client constitue une mesure supplémentaire pour la haute disponibilité.
-
-
-## <a name="related-videos"></a>Vidéos connexes  
-[Installation du connecteur SIEM pour Cloud App Security](https://channel9.msdn.com/Shows/Microsoft-Security/Install-the-SIEM-Connector-for-Cloud-App-Security)  
 
 ## <a name="see-also"></a>Voir aussi  
 [Résolution des problèmes d’intégration de SIEM](troubleshooting-siem.md)   

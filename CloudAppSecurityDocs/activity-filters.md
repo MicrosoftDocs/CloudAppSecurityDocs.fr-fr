@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/24/2017
+ms.date: 11/5/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 835ffc05fb84117bf9bbf848d5718de4557e5e15
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: 148884c2709658d53b658e3b3a7d9f33daf18771
+ms.sourcegitcommit: 2b8965381d94a5bb6349d8e25e1dc29b092a88b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/05/2017
 ---
 # <a name="activities"></a>Activités
 Cloud App Security vous donne une visibilité sur toutes les activités de vos applications connectées. Une fois connecté à une application à l’aide du connecteur d’applications, Cloud App Security analyse toutes les activités passées (la période d’analyse rétroactive varie par application). Cloud App Security est ensuite mis à jour en continu avec les nouvelles activités. 
@@ -51,11 +51,11 @@ Vous trouverez ci-dessous une liste des filtres d’activité qui peuvent être 
   
 -   Objets d’activité : Recherchez les objets sur lesquels l’activité a été effectuée. Ce filtre s’applique aux objets fichier, dossier, utilisateur ou application. 
     - ID de l’objet d’activité : ID de l’objet (fichier, dossier, utilisateur ou application).
-    - Fichier, dossier ou site URL : vous permet de sélectionner des fichiers, des dossiers et des URL qui commencent par une chaîne spécifique.
-    - Objet cible (fichier/dossier) : Vous permet de sélectionner un fichier ou un dossier spécifique. 
     - Élément : vous permet de rechercher par nom ou par ID d’objet d’activité (par exemple des noms d’utilisateur, des fichiers, des paramètres, des sites). Pour le filtre **Élément d’objet d’activité**, vous pouvez choisir de filtrer les éléments qui **contiennent**, **sont égaux** ou **commencent par** l’élément spécifique.
     
 -   Type d’activité : Recherchez l’activité de l’application.
+
+-   Type d’activité (préversion) : En cours de lancement. Permet de rechercher une activité de l’application avec plus de précision, en utilisant la catégorie ou le nom de l’activité que l’application fournit directement.
 
 -   Activité administrative : Recherchez uniquement les activités administratives.  
   

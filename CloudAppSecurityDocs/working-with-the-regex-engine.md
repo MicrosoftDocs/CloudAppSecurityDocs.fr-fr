@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/26/2017
+ms.date: 10/9/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: dc8b87e5-e6c1-4a65-ab8c-067fb527fce4
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0b635a9d2f2e5befa53abea6b7d59876def0a115
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 2c5f767745079d9e1e4d796dc236a210f95d9b85
+ms.sourcegitcommit: 4daaec64c5a773cd092d94ee17ca05dfbd9e92c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 10/09/2017
 ---
 # <a name="working-with-the-regex-engine"></a>En utilisant l’inspection du contenu
  
@@ -65,4 +65,6 @@ Exemples d’expressions
 [Pour obtenir un support technique, visitez la page de support assisté Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier.](https://premier.microsoft.com/)  
   
-  
+
+## <a name="check-out-this-video"></a>Regardez cette vidéo !
+[Utilisation du moteur RegEx](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security-Working-with-the-Regex-Engine)    
