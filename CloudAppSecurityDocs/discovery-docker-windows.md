@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 11/7/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 308c06b3-f58b-4a21-86f6-8f87823a893a
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: cd118d67089fbda869c223129b7edc574af1cb28
-ms.sourcegitcommit: 4f87ebd072c54232692483dcf07ccc2ac5daf445
+ms.openlocfilehash: 0bda9f2ccc5c2e74e11edddf32789216f32958f7
+ms.sourcegitcommit: 938c799a13a81f3289229ea883c65bd1669b2ec4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="set-up-and-configure-the-automatic-log-collector-docker-on-windows-server-2016"></a>Installer et configurer le Docker de collecteur de journaux automatique sur Windows Server 2016
 
@@ -38,7 +38,7 @@ ms.lasthandoff: 11/06/2017
 
     -   Autorisez le collecteur de journaux à recevoir le trafic FTP et Syslog entrant.
 
-    -   Autorisez le collecteur de journaux à lancer le trafic sortant sur le portail (par exemple, contoso.cloudappsecurity.com) sur le port 443.
+    -   Autorisez le collecteur de journaux à lancer le trafic sortant sur le portail (par exemple, portal.contoso.cloudappsecurity.com) sur le port 443.
 
     - Autorisez le collecteur de journaux à initier le trafic sortant vers le stockage Blob Azure (https://adaprodconsole.blob.core.windows.net/) sur les ports 80 et 443.
 

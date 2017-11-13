@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2e762f9f4a90a9777ef1782c1c12305ea7d065ef
-ms.sourcegitcommit: 4f87ebd072c54232692483dcf07ccc2ac5daf445
+ms.openlocfilehash: 1e7596ff9bb62f998a98fe9ff09e37ef0f93a906
+ms.sourcegitcommit: 938c799a13a81f3289229ea883c65bd1669b2ec4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Installation et configuration sur Ubuntu
 
@@ -38,7 +38,7 @@ ms.lasthandoff: 11/06/2017
 
     -   Autorisez le collecteur de journaux à recevoir le trafic FTP et Syslog entrant.
 
-    -   Autorisez le collecteur de journaux à lancer le trafic sortant sur le portail (par exemple, contoso.cloudappsecurity.com) sur le port 443.
+    -   Autorisez le collecteur de journaux à lancer le trafic sortant sur le portail (par exemple, portal.contoso.cloudappsecurity.com) sur le port 443.
 
     - Autorisez le collecteur de journaux à initier le trafic sortant vers le stockage Blob Azure (https://adaprodconsole.blob.core.windows.net/) sur les ports 80 et 443.
 
