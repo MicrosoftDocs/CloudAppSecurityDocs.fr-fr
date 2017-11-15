@@ -5,7 +5,7 @@
 ### [Office 365](editions-cloud-app-security-o365.md)
 ### [Azure AD](editions-cloud-app-security-aad.md)
 # Déployer
-## [Bien démarrer](getting-started-with-cloud-app-security.md)
+## [Mise en route](getting-started-with-cloud-app-security.md)
 ## [Configuration de base](general-setup.md)
 ### [Configuration requise pour le réseau](network-requirements.md)
 ### [Gérer les administrateurs](manage-admins.md)
@@ -16,8 +16,8 @@
 ## [Déployer Cloud Discovery](set-up-cloud-discovery.md)
 ### [Créer des rapports d’instantanés Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
 ### [Configurer le chargement automatique des journaux pour des rapports continus](discovery-docker.md)
-#### [Docker sur Windows Server (préversion)](discovery-docker-windows.md)
-#### [Docker sur Ubuntu (préversion)](discovery-docker-ubuntu.md)
+#### [Docker sur Ubuntu (local)](discovery-docker-ubuntu.md)
+#### [Docker sur Ubuntu (dans Azure)](discovery-docker-ubuntu-azure.md)
 #### [Utilisation d’une appliance virtuelle](configure-automatic-log-upload-for-continuous-reports.md)
 ### [Utiliser l’analyseur de journal personnalisé](custom-log-parser.md)
 ### [Enrichissement de Cloud Discovery](cloud-discovery-aad-enrichment.md)
@@ -33,7 +33,7 @@
 ### [Connecter Salesforce](connect-salesforce-to-microsoft-cloud-app-security.md)
 ## [Protéger les applications avec un proxy](proxy-intro-aad.md)
 ### [Déployer un proxy pour les applications Azure AD](proxy-deployment-aad.md)
-# Utiliser
+# Utilisez
 ## [Utilisation du tableau de bord](daily-activities-to-protect-your-cloud-environment.md)
 ## Scénarios
 ### [Protection de votre organisation contre les ransomwares](use-case-ransomware.md)
@@ -63,12 +63,12 @@
 #### [Informations de référence sur les modèles de stratégie](policy-template-reference.md)
 ### [Gouverner les applications connectées](governance-actions.md)
 ### [Gouverner les applications découvertes](governance-discovery.md)
-## Intégrer avec des extensions de sécurité
+## Intégration à l’aide des extensions de sécurité
 ### [Intégration d’Azure Information Protection](azip-integration.md)
 ### [Intégration de SIEM](siem.md)
 ### [Intégration DLP externe](icap-stunnel.md)
 ### [Jetons d’API](api-tokens.md)
-# Dépanner
+# Dépannage
 ## [Résolution des problèmes de Cloud Discovery](troubleshooting-cloud-discovery.md)
 ## [Résolution des problèmes des connecteurs API à l’aide de messages d’erreur](troubleshooting-api-connectors-using-error-messages.md)
 ## [Résolution des problèmes d’inspection du contenu](troubleshooting-content-inspection.md)
