@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,16 +13,16 @@ ms.technology:
 ms.assetid: 745df28a-654c-4abf-9c90-203841169f90
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 97ebb7db49fcf5ed524a05943557d616487294f8
-ms.sourcegitcommit: 3bc510959e66a29d474cbef412deac0daefa8a24
+ms.openlocfilehash: c955e20b4abd506f5e44659fbdd921bb54def131
+ms.sourcegitcommit: eb4e70b6fa15cfff01932a711cecee38f67bc058
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/13/2017
 ---
 # <a name="session-policies"></a>Stratégies de session 
 
 > [!NOTE]
-> Le lancement de la fonctionnalité de proxy Microsoft Cloud App Security est en cours.
+> Il s’agit d’une fonctionnalité en préversion.
 
 Les stratégies de session Cloud App Security permettent la surveillance en temps réel au niveau de la session, vous offrant une visibilité plus précise dans les applications cloud et la possibilité de prendre des mesures différentes selon la stratégie que vous définissez pour une session utilisateur. Au lieu d’autoriser ou de bloquer complètement l’accès, vous pouvez utiliser le contrôle de session, lequel vous permet d’autoriser l’accès pendant la surveillance de la session et/ou de limiter des activités de session particulières. 
 
@@ -159,7 +159,7 @@ Quand la valeur **Bloquer** est affectée à l’**action** à effectuer dans la
 
 Quand la valeur **Protéger** est affectée à l’**action** à effectuer dans la stratégie de session du proxy Cloud App Security, le proxy applique l’étiquetage et la protection ultérieure d’un fichier conformément aux filtres de fichiers de la stratégie. Les étiquettes sont configurées dans la console Azure Information Protection dans Azure et l’option **Protéger** doit être sélectionnée dans l’étiquette pour qu’elle apparaisse en tant qu’option dans la stratégie Cloud App Security. Quand une étiquette est sélectionnée et qu’un fichier correspondant aux critères de la stratégie Cloud App Security est téléchargé, l’étiquette et la protection correspondante (avec les autorisations) sont appliquées au fichier lors de son téléchargement. Le fichier original reste inchangé dans l’application cloud, tandis que le fichier téléchargé est désormais protégé. Les utilisateurs qui essaient d’accéder au fichier doivent respecter les exigences d’autorisation déterminées par la protection appliquée.  
  
-  
+ 
 ## <a name="see-also"></a>Voir aussi  
 [Blocage des téléchargements sur des appareils non gérés à l’aide des fonctionnalités de proxy Azure AD](use-case-proxy-block-session-aad.md)   
 [Pour obtenir du support technique, consultez la page Support assisté Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   

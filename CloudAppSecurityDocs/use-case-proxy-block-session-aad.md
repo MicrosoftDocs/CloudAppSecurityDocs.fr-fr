@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,16 +13,14 @@ ms.technology:
 ms.assetid: 06238ebc-2088-4372-9412-96cceaf3b145
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c84cadea48fb131c4602cbaa5377827236764690
-ms.sourcegitcommit: 3bc510959e66a29d474cbef412deac0daefa8a24
+ms.openlocfilehash: 5d49c04f6ddfda778bc3775805a42383a41f88c4
+ms.sourcegitcommit: eb4e70b6fa15cfff01932a711cecee38f67bc058
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/13/2017
 ---
 # <a name="blocking-downloads-of-sensitive-information-using-the-microsoft-cloud-app-security-proxy"></a>Blocage des téléchargements d’informations sensibles avec le proxy Microsoft Cloud App Security
 
-> [!NOTE]
-> Le lancement de la fonctionnalité de proxy Microsoft Cloud App Security est en cours.
 
 Aujourd’hui, l’administration informatique est prise entre deux feux : d’un côté, vous avez besoin que vos employés soient productifs. Ce qui implique de les autoriser à accéder à des applications pour qu’ils puissent travailler à tout moment, depuis n’importe quel appareil. De l’autre, vous devez protéger les ressources de l’entreprise, notamment les informations propriétaires et privilégiées. Comment permettre à vos employés d’accéder à vos applications cloud tout en protégeant vos données ? **Ce cas d’usage vous permet de bloquer les téléchargements effectués par des utilisateurs qui ont accès à vos données sensibles dans des applications cloud d’entreprise depuis des appareils non gérés ou des emplacements réseau hors entreprise.**
 
@@ -33,7 +31,7 @@ Un responsable de compte de votre organisation veut vérifier une information da
 ## <a name="the-solution"></a>La solution
 Protégez votre organisation en surveillant et en contrôlant l’usage des applications cloud à l’aide de l’accès conditionnel Azure AD et du proxy Cloud App Security.  
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Conditions préalables
 
 - Une licence valide pour Azure AD Premium P2
 - Configurer une application cloud pour l’authentification unique dans Azure AD  
@@ -127,7 +125,9 @@ Une fois cette tâche terminée, accédez au portail Cloud App Security et crée
 
 4. Dans le rapport de stratégie, vous pouvez voir quelles connexions ont été redirigées vers le proxy à des fins de contrôle de session et quels fichiers ont été téléchargés ou bloqués depuis les sessions surveillées.
 
-  
+
+
+
 ## <a name="see-also"></a>Voir aussi  
 [Créer une stratégie de session](session-policy-aad.md)   
 [Pour obtenir un support technique, visitez la page de support assisté Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
