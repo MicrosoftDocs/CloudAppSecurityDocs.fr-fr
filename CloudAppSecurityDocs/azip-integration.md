@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e7b4fbb7ed71e1a49de93447c3c00dbff43f2894
-ms.sourcegitcommit: 4daaec64c5a773cd092d94ee17ca05dfbd9e92c5
+ms.openlocfilehash: 64fd889e309be254d5aa99320e040129a5de8e1d
+ms.sourcegitcommit: fbeb299e8c41fc57b50d491b1becbf488fdd3642
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="azure-information-protection-integration"></a>Intégration d’Azure Information Protection
 
@@ -61,6 +61,7 @@ Après avoir activé Azure Information Protection, vous pouvez voir les fichiers
 
 ### <a name="set-internal-and-external-tags"></a>Définir des étiquettes internes et externes
 Par défaut, Cloud App Security analyse les étiquettes de classification qui ont été définies dans votre organisation, ainsi que les étiquettes externes qui ont été définies par d’autres organisations. 
+
 
 Pour les ignorer l’ensemble des étiquettes de classification externes à votre organisation, dans le portail Cloud App Security, sous **Paramètres généraux**, sous **Paramètres de sécurité Azure**, sélectionnez **Ignorer les étiquettes de classification Azure Information Protection des autres locataires**.
  
@@ -118,7 +119,7 @@ En savoir plus sur [Azure Information Protection](https://docs.microsoft.com/en-
 
 ## <a name="integration-with-azure-rights-management"></a>Intégration à Azure Rights Management
 
-Votre organisation doit posséder une licence Azure Rights Management et l’avoir activée pour faciliter l’intégration entre Cloud App Security et Azure RMS.  Vous trouverez ces deux étapes distinctes dans [Activation d’Azure Rights Management](https://docs.microsoft.com/information-protection/deploy-use/activate-service).
+Votre organisation doit posséder une licence Azure Rights Management et l’avoir activée pour faciliter l’intégration entre Cloud App Security et Azure RMS. Vous trouverez ces deux étapes distinctes dans [Activation d’Azure Rights Management](https://docs.microsoft.com/information-protection/deploy-use/activate-service).
 
 Cloud App Security prend actuellement en charge la protection native des fichiers Office (2016 et supérieur). Les fichiers PDF et image seront disponibles dans les prochaines versions. 
 
@@ -126,14 +127,14 @@ Cette fonctionnalité est actuellement disponible pour les fichiers stockés dan
 
 Une fois Cloud App Security connecté à votre service Office 365, vous êtes en mesure d’utiliser les fonctionnalités d’intégration RMS de Cloud App Security. Ces dernières vous permettent de protéger vos documents avec RMS, directement dans le portail Cloud App Security, et ce, de la manière suivante :
 
-1. À partir de la page **Fichiers**, sélectionnez le fichier que vous souhaitez protéger, cliquez sur les trois points à la fin de la ligne du fichier, puis choisissez **Protéger**. 
+1. À partir de la page **ichiers**, sélectionnez le fichier que vous souhaitez protéger, cliquez sur les trois points à la fin de la ligne du fichier, puis choisissez **Protéger**. 
 ![protéger l’application](./media/protect-app.png)
 >[!NOTE]
 >Azure Information Protection protège les fichiers d’une taille maximale de 50 Mo. 
 
 2. Vous êtes invité à choisir une étiquette de classification de votre organisation pour protéger le fichier. Cliquez ensuite sur **Protéger**. 
 ![étiquette de classification de protection](./media/protect-template.png)
-3. Une fois que vous avez choisi une étiquette de classification et cliqué sur Protéger, Cloud App Security applique l’étiquette de classification et protège le fichier d’origine. T
+3. Une fois que vous avez choisi une étiquette de classification et cliqué sur Protéger, Cloud App Security applique l’étiquette de classification et protège le fichier d’origine.
 > [!NOTE]
 >   Nous vous recommandons d’appliquer aux fichiers les étiquettes de classification RMS dans toute l’entreprise, pour que tous les utilisateurs puissent accéder à ces fichiers, y compris le propriétaire d’origine du fichier. À partir du moment où le fichier est protégé, le propriétaire du fichier, la stratégie de partage du fichier et la liste des utilisateurs qui y ont déjà accès restent inchangés.
 
