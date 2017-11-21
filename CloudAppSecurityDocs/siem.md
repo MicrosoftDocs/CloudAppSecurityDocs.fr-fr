@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/5/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6abf7cbaf3f13bd84255846f3d2430a67a0db523
-ms.sourcegitcommit: 2b8965381d94a5bb6349d8e25e1dc29b092a88b0
+ms.openlocfilehash: 3a1799636f58eb9c53cce3975ebc80aba3799d4e
+ms.sourcegitcommit: fbeb299e8c41fc57b50d491b1becbf488fdd3642
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="siem-integration"></a>Intégration à SIEM
     
@@ -34,7 +34,9 @@ Une fois que l’agent SIEM extrait les données à partir de Cloud App Security
 
 ![Architecture d'intégration SIEM](./media/siem-architecture.png)
 
+## <a name="supported-siems"></a>SIEM pris en charge
 
+Actuellement, Cloud App Security prend en charge HP ArcSight et le format CEF générique.
 
 ## <a name="how-to-integrate"></a>Procédure d’intégration
 
@@ -43,7 +45,7 @@ L’intégration à votre serveur SIEM s’effectue en trois étapes :
 2. Téléchargez le fichier JAR et exécutez-le sur votre serveur.
 3. Vérifiez que l’agent SIEM fonctionne.
 
-### <a name="prerequisites"></a>Prérequis
+### <a name="prerequisites"></a>Conditions préalables
 
 - Un serveur Windows ou Linux standard (il peut s’agir d’une machine virtuelle).
 - Le serveur doit exécuter Java 8 ; les versions antérieures ne sont pas prises en charge.
@@ -63,6 +65,7 @@ L’intégration à votre serveur SIEM s’effectue en trois étapes :
 5. Entrez l’adresse IP ou le nom d’hôte de **l’hôte Syslog distant** et le **numéro de port Syslog**. Sélectionnez TCP ou UDP comme protocole Syslog distant.
 Vous pouvez travailler avec votre administrateur de la sécurité pour obtenir ces informations si vous n’en disposez pas.
 Cliquez sur **Suivant**.
+
   ![Paramètres Syslog distants](./media/siem2.png)
 
 6. Sélectionnez les types de données, les **Alertes** et les **Activités** que vous voulez exporter vers votre serveur SIEM. Utilisez le curseur pour les activer et les désactiver. Par défaut, tout est sélectionné. Vous pouvez utiliser la liste déroulante **Appliquer à** pour définir des filtres pour envoyer seulement des alertes et des activités spécifiques à votre serveur SIEM.
@@ -74,12 +77,13 @@ Vous pouvez cliquer sur **Modifier et afficher un aperçu des résultats** pour 
 
 ### <a name="step-2-download-the-jar-file-and-run-it-on-your-server"></a>Étape 2 : Téléchargez le fichier JAR et exécutez-le sur votre serveur
 
-1. [Téléchargez le fichier .zip à partir du Centre de téléchargement Microsoft](https://go.microsoft.com/fwlink/?linkid=838596) et décompressez-le.
+1. Dans le [Centre de téléchargement Microsoft](https://go.microsoft.com/fwlink/?linkid=838596), après avoir accepté les [termes du contrat de licence logiciel](https://go.microsoft.com/fwlink/?linkid=862491), téléchargez le fichier zip et décompressez-le.
 
 2. Extrayez le fichier .jar du fichier ZIP et exécutez-le sur votre serveur.
  Après avoir exécuté le fichier, exécutez la commande suivante :
     
-      java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory NOM_RÉPERTOIRE] [--proxy ADRESSE[:PORT]] --token JETON
+        java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN
+
 > [!NOTE]
 > - Le nom de fichier peut différer selon la version de l’agent SIEM.
 > - Les paramètres entre crochets [ ] sont facultatifs et doivent être utilisés seulement si nécessaire.

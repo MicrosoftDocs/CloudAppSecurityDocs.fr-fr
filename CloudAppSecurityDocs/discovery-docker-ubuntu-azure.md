@@ -1,6 +1,6 @@
 ---
 title: Configurer le chargement automatique des journaux pour des rapports continus | Documentation Microsoft
-description: "Cette rubrique décrit la procédure de configuration du chargement automatique des journaux pour des rapports continus dans Cloud App Security à l’aide d’un Docker sous Ubuntu sur un serveur local."
+description: "Cette rubrique décrit la procédure de configuration du chargement automatique des journaux pour des rapports continus dans Cloud App Security à l’aide d’un Docker sur Ubuntu dans Azure."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
@@ -10,10 +10,10 @@ ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
 ms.technology: 
-ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
+ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 660857c34b6a8ff7dccffc581901e52061df937f
+ms.openlocfilehash: b75fbd49bb55160b66ad028cbd68ef5eb61c5d9f
 ms.sourcegitcommit: ab552b8e663033f4758b6a600f6d620a80c1c7e0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
@@ -97,42 +97,56 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
 
    ![Créer le collecteur de journaux](./media/windows7.png)
 
-### <a name="step-2--on-premises-deployment-of-your-machine"></a>Étape 2 : Déploiement local de votre ordinateur
+### <a name="step-2--deployment-of-your-machine-in-azure"></a>Étape 2 : déploiement de la machine dans Azure
 
-> [!Note]
+> [!NOTE]
 > La procédure suivante décrit le déploiement dans Ubuntu. Les étapes de déploiement pour d’autres plateformes sont légèrement différentes.
 
-1.  Ouvrez un terminal sur votre ordinateur Ubuntu.
 
-2.  Changez les privilèges racine à l’aide de la commande : `sudo -i`
-
-3. Pour contourner un proxy dans votre réseau, exécutez les deux commandes suivantes :
-        
-        export http_proxy='<IP>:<PORT>' (e.g. 168.192.1.1:8888)
-        export https_proxy='<IP>:<PORT>'
-
-3.  Si vous acceptez les [termes du contrat de licence logiciel](https://go.microsoft.com/fwlink/?linkid=862492), désinstallez les anciennes versions et installez Docker CE en exécutant la commande suivante :
-
-    `curl -o /tmp/MCASInstallDocker.sh
-    https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh
-    && chmod +x /tmp/MCASInstallDocker.sh; sudo /tmp/MCASInstallDocker.sh`
-
-     > [!NOTE] 
-     > Si cette commande ne parvient pas à valider votre certificat de proxy, exécutez la commande en ajoutant `curl -k` au début.
+1.  Créez une nouvelle machine Ubuntu dans votre environnement Azure. 
+2.  Une fois la machine configurée, ouvrez les ports ainsi :
+    1.  Dans l’affichage Ordinateur, accédez à **Réseau** et sélectionner l’interface souhaitée en double-cliquant dessus.
+    2.  Accédez à **Groupe de sécurité réseau** et sélectionnez le groupe de sécurité réseau qui convient.
+    3.  Accédez à **Règles de sécurité du trafic entrant** et cliquez sur **Ajouter**,
+      
+      ![Ubuntu Azure](./media/ubuntu-azure.png)
     
-    ![ubuntu5](./media/ubuntu5.png)
+    4. Ajoutez les règles suivantes (en mode **Avancé**) :
 
-4.  Déployez l’image du collecteur sur la machine hôte en important la configuration du collecteur. Pour cela, copiez la commande d’exécution générée sur le portail. Si vous devez configurer un proxy, ajoutez l’adresse IP et le numéro de port du proxy. Par exemple, si les détails de votre proxy sont 192.168.10.1:8080, votre commande d’exécution mise à jour est :
+    |Nom|Plages du port de destination|Protocol|Source|Destination|
+    |----|----|----|----|----|
+    |caslogcollector_ftp|21|TCP|Indifférent|Indifférent|
+    |caslogcollector_ftp_passive|20000-20099|TCP|Indifférent|Indifférent|
+    |caslogcollector_syslogs_tcp|601-700|TCP|Indifférent|Indifférent|
+    |caslogcollector_syslogs_tcp|514-600|UDP|Indifférent|Indifférent|
+      
+      ![Règles Ubuntu Azure](./media/ubuntu-azure-rules.png)
 
-            sudo (echo 6f19225ea69cf5f178139551986d3d797c92a5a43bef46469fcc997aec2ccc6f) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.2.2.2'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=tenant2.eu1-rs.adallom.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
+3.  Revenez à l’ordinateur et cliquez sur **Se connecter** pour ouvrir un terminal dessus.
 
-   ![Créer le collecteur de journaux](./media/windows7.png)
+4.  Appliquez les privilèges racines avec `sudo -i`.
 
-5.  Vérifiez que le collecteur s’exécute correctement à l’aide de la commande suivante : `docker logs \<collector_name\>`
+5.  Si vous acceptez les [termes du contrat de licence logiciel](https://go.microsoft.com/fwlink/?linkid=862492), désinstallez les anciennes versions et installez Docker CE en exécutant la commande suivante :
+        
+        curl -o /tmp/MCASInstallDocker.sh https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh && chmod +x /tmp/MCASInstallDocker.sh; sudo /tmp/MCASInstallDocker.sh
 
-Vous devez voir le message **Opération terminée**
+6. Dans la fenêtre **Créer un collecteur de journaux** du portail Cloud App Security, copiez la commande pour importer la configuration du collecteur sur la machine hôte :
 
-  ![ubuntu8](./media/ubuntu8.png)
+      ![Ubuntu Azure](./media/ubuntu-azure.png)
+
+7. Exécutez la commande pour déployer le collecteur de journaux.
+
+      ![Commande Ubuntu Azure](./media/ubuntu-azure-command.png)
+
+>[!NOTE]
+>Pour configurer un proxy, ajoutez l’adresse IP et le port correspondants. Par exemple, si votre proxy correspond à 192.168.10.1:8080, votre commande d’exécution deviendra : 
+
+        (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | sudo docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
+
+         ![Ubuntu proxy](./media/ubuntu-proxy.png)
+
+8. Pour vérifier que le collecteur s’exécute correctement, exécutez la commande suivante : `Docker logs <collector_name>`. Vous devriez obtenir les résultats : **Terminé avec succès !**
+
 
 ### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>Étape 3 : Configuration locale de vos appliances réseau
 
