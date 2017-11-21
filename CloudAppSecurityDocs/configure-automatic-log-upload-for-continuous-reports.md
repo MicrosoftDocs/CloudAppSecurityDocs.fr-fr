@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/27/2017
+ms.date: 11/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: bf434c9f9ed1cc4c2d0edd375e0f51b45fdf6571
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: 057de59d0688b28ca9f9265ff7b4010ae9b3c3aa
+ms.sourcegitcommit: 7e0d28b1ac39f7e44e258ab2a0d9563b8fd2aba6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/13/2017
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance"></a>Configurer le chargement automatique des journaux pour des rapports continus sur une appliance virtuelle
 
@@ -76,7 +76,7 @@ Le collecteur de journaux dispose d’un mécanisme de sécurité intégré qui 
   > [!NOTE] 
   > - Un seul collecteur de journaux peut gérer plusieurs sources de données.
   > - Copiez le contenu de l’écran, car vous l’utiliserez lors de la configuration du collecteur de journaux pour communiquer avec Cloud App Security. Si vous avez sélectionné Syslog, ces informations incluent des informations sur le port utilisé par l’écouteur Syslog pour écouter.
-4.  **Téléchargez** une nouvelle machine virtuelle pour le collecteur de journaux en cliquant sur Hyper-V ou VMWare. Ensuite, décompressez le fichier en utilisant le mot de passe que vous avez reçu sur le portail.  
+4.  Si vous acceptez les [termes du contrat de licence logiciel](https://go.microsoft.com/fwlink/?linkid=862492), **téléchargez** une nouvelle machine virtuelle pour le collecteur de journaux en cliquant sur Hyper-V ou VMware. Ensuite, décompressez le fichier avec le mot de passe que vous avez reçu sur le portail.  
   
 ### <a name="step-2--on-premises-deployment-of-the-virtual-machine-and-network-configuration"></a>Étape 2 : déploiement local de la machine virtuelle et de la configuration réseau   
 

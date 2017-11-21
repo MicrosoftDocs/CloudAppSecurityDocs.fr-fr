@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/24/2017
+ms.date: 11/12/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: c75ba963-ad5a-48e6-8d5d-610fc6e0b990
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f0f6f0de46e8833b4f4ffb6bd31c7c46eeacac9a
-ms.sourcegitcommit: 13148ac82e496e8d4e0d10851e5d6e4f231229e4
+ms.openlocfilehash: f05fd8f548067c7e9ceb32c93e739072d682d15c
+ms.sourcegitcommit: 7e0d28b1ac39f7e44e258ab2a0d9563b8fd2aba6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2017
+ms.lasthandoff: 11/13/2017
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports"></a>Configurer le chargement automatique des journaux pour des rapports continus
 
@@ -36,9 +36,7 @@ Avant de configurer la collecte de fichiers journaux automatique, vérifiez que 
 
 Le collecteur de journaux prend en charge deux modes de déploiement :
 
--   **Conteneur** (*préversion*) : s’exécute en tant qu’image Docker sur [Windows](discovery-docker-windows.md) et [Ubuntu](discovery-docker-ubuntu.md), soit localement, soit sur Azure. 
-
-
+-   **Conteneur** : s’exécute comme une image Docker sur [Ubuntu en local](discovery-docker-ubuntu.md) ou sur [Ubuntu dans Azure](discovery-docker-ubuntu-azure.md). 
 
 -   **Appliance virtuelle**: [s’exécute en tant qu’image sur l’hyperviseur Hyper-V ou VMware](configure-automatic-log-upload-for-continuous-reports.md)
 

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/22/2017
+ms.date: 11/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 59337a573abce3fb057d7d8056034daa54737c4a
-ms.sourcegitcommit: 8dd7c155538ec9b95be3902c7ece95f6d0edde25
+ms.openlocfilehash: 9d813ecc39da6c26b81f459a278aa7eb42ca72f9
+ms.sourcegitcommit: fbeb299e8c41fc57b50d491b1becbf488fdd3642
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>Connecter G Suite à Microsoft Cloud App Security
 Cette section fournit des instructions pour connecter Cloud App Security à votre compte G Suite existant à l’aide des API du connecteur.
@@ -114,7 +114,7 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
   
     -   **Short Description & Long Description** (Description courte et description longue) (facultatif) : Microsoft Cloud App Security offre une visibilité sur les applications cloud, ce qui vous permet de contrôler, d’examiner et de régir l’utilisation de ces applications cloud, de sécuriser les données d’entreprise et de détecter les activités suspectes liées aux applications cloud.  
   
-    -   Google vous demande de charger au moins une icône d’application. Accédez à [https://us.portal.cloudappsecurity.com/cas/static/files/MSLogos.zip](https://us.portal.cloudappsecurity.com/cas/static/files/MSLogos.zip) pour télécharger un fichier zip contenant les icônes Cloud App Security. Ensuite, sous **Application icon** (Icône de l’application), effectuez un glisser-déplacer des images 128 x 128 et 32 x 32.  
+    -   Google vous demande de charger au moins une icône d’application. Accédez à [https://go.microsoft.com/fwlink/?linkid=862826](https://go.microsoft.com/fwlink/?linkid=862826) pour télécharger un fichier zip contenant des icônes Cloud App Security. Ensuite, sous **Application icon** (Icône de l’application), effectuez un glisser-déplacer des images 128 x 128 et 32 x 32.  
   
     -   Faites défiler et dans la section **Drive Integration** (Intégration de Drive), tapez l’URL suivante sous **Open URL:** (Ouvrir l’URL :)  
   
@@ -136,7 +136,7 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
   
     -   Configurez les quatre images obligatoires sous **Application icons (Icônes de l’application)**.  
   
-         Ces images se trouvent à l’adresse : [https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip](https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip)  
+         Les images se trouvent à la page : [https://go.microsoft.com/fwlink/?linkid=856644](https://go.microsoft.com/fwlink/?linkid=856644).  
   
     -   Renseignez les valeurs **Support URLs (URL d’assistance)** suivantes :  
   
