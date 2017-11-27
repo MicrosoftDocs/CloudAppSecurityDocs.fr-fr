@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/9/2017
+ms.date: 11/22/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 437504a73f9b3ae4a8a21b379356934b76d2430b
-ms.sourcegitcommit: 4daaec64c5a773cd092d94ee17ca05dfbd9e92c5
+ms.openlocfilehash: a87855be812c7f4228cb78eda2a023faad436011
+ms.sourcegitcommit: 6e4eac42e553fd288da7de9c67eb79f11a420245
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="connect-apps"></a>Connecter des applications 
 Les connecteurs d’applications utilisent les API des fournisseurs d’applications pour que Cloud App Security bénéficie d’une plus grande visibilité et d’un plus grand contrôle sur les applications auxquelles vous vous connectez.  
@@ -76,7 +76,7 @@ Le tableau suivant répertorie, par application cloud, les fonctionnalités pris
 |**Activité de connexion**|✔|✔|✔|✔|✔|✔|✔|✔|  
 |**Activité de l’utilisateur**|✔*|✔|✔|✔ - nécessite Google illimité|Partiel|Prise en charge avec Salesforce Shield|✔|Non applicable|  
 |**Activité d’administration**|✔|✔|✔|✔|Partiel|✔|✔|✔|  
-|**Analyse régulière des fichiers**|✔|✔|Non applicable|✔|✔|✔|✔|Bientôt disponible|  
+|**Analyse régulière des fichiers**|✔|✔|Non applicable|✔|✔|✔|✔|Non applicable|  
 |**Analyse des fichiers pratiquement en temps réel**|✔|✔|Non applicable|✔ - nécessite Google illimité|||Bientôt disponible||  
 |**Contrôle partagé**|✔|✔|Non applicable|✔|Non applicable||✔||  
 |**Quarantaine**|✔|✔|Non applicable|Bientôt disponible|||Bientôt disponible||  
@@ -84,7 +84,7 @@ Le tableau suivant répertorie, par application cloud, les fonctionnalités pris
 |**Révoquer les autorisations d’application**|✔||Non applicable|✔||✔|Non applicable||  
   
   
-## <a name="prerequisites"></a>Prérequis  
+## <a name="prerequisites"></a>Conditions préalables  
 
 - Pour certaines applications, vous pouvez être amené à ajouter des adresses IP à la liste verte pour permettre à Cloud App Security de collecter les journaux et de fournir un accès pour la console Cloud App Security. Pour plus d’informations, voir [Configuration requise pour le réseau](network-requirements.md).
 
