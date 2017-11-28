@@ -18,6 +18,9 @@
 ### [Configurer le chargement automatique des journaux pour des rapports continus](discovery-docker.md)
 #### [Docker sur Ubuntu (local)](discovery-docker-ubuntu.md)
 #### [Docker sur Ubuntu (dans Azure)](discovery-docker-ubuntu-azure.md)
+##### Modification de la configuration du docker
+###### [Personnalisation des fichiers de certificats](discovery-docker-custom-cert.md)
+###### [Modification du mot de passe FTP](discovery-docker-change-ftp.md)
 #### [Utilisation d’une appliance virtuelle](configure-automatic-log-upload-for-continuous-reports.md)
 ### [Utiliser l’analyseur de journal personnalisé](custom-log-parser.md)
 ### [Enrichissement de Cloud Discovery](cloud-discovery-aad-enrichment.md)
