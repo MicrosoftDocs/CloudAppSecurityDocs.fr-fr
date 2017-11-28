@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 11/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 76066e4747630b1aa7cb5c3301c8053c8254a8a0
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: c0de0f106ce5505edcc437b1d94084759eac2838
+ms.sourcegitcommit: 473d96a6383a6e4d01ef03ed31f2e773cea82cab
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 11/27/2017
 ---
 # <a name="governing-connected-apps"></a>Gouvernance des applications connectées
 La gouvernance vous permet de contrôler en temps réel les actions des utilisateurs dans les applications. Pour les applications connectées, vous pouvez appliquer des actions de gouvernance aux fichiers ou aux activités.
@@ -52,6 +52,8 @@ Vous pouvez effectuer les actions de gouvernance suivantes sur un fichier ou un 
         -   Rendre privé : Seul le propriétaire peut accéder au fichier, tous les partages sont supprimés.  
   
         -   Supprimer un collaborateur : Supprimez un collaborateur spécifique du fichier.  
+
+        - Réduire l’accès public : définissez les fichiers publiquement disponibles comme étant accessibles uniquement avec un lien partagé.
   
     -   Quarantaine  
   
@@ -141,6 +143,7 @@ Pour plus d’informations sur la façon dont les actions de gouvernance sont tr
 |Fichiers|File|Protéger|Protégez un fichier avec Azure Information Protection en appliquant un modèle d’organisation.|Office 365 (SharePoint et OneDrive)|
 |Fichiers|File|Révoquer les permissions de lecture pour moi-même|Révoque les permissions de lecture pour le fichier pour vous-même. Cette option est utile lorsque vous vous êtes attribué des permissions pour examiner si un fichier comprend une violation ou non.|G Suite|
 |Fichiers, Stratégie de fichier|File|Transférer la possession de fichier|Modifie le propriétaire (vous choisissez un propriétaire spécifique dans la stratégie).|G Suite|
+|Fichiers, Stratégie de fichier|File|Réduire l’accès public|Ceci vous permet de définir les fichiers publiquement disponibles comme étant accessibles uniquement avec un lien partagé.|G Suite|
 |Fichiers, Stratégie de fichier|File|Supprimer un collaborateur|Supprime un collaborateur donné d’un fichier.|G Suite, Box, One Drive, SharePoint|
 |Fichiers, Stratégie de fichier|File|Rendre privé|Rendre le fichier privé (aucun collaborateur, aucun lien public, aucun partage).|G Suite, One Drive, SharePoint|
 |Fichiers, Stratégie de fichier|File|Supprimer les utilisateurs externes|Supprime tous les collaborateurs externes - configurés comme internes dans les paramètres en dehors des domaines.|G Suite, Box |

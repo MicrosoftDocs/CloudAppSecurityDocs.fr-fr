@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/14/2017
+ms.date: 12/11/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b75fbd49bb55160b66ad028cbd68ef5eb61c5d9f
-ms.sourcegitcommit: ab552b8e663033f4758b6a600f6d620a80c1c7e0
+ms.openlocfilehash: 139d848936def3e97d8270027a3e288196e96f90
+ms.sourcegitcommit: f23705ee51c6cb0113191aef9545e7ec3111f75d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Installation et configuration sur Ubuntu
 
@@ -32,16 +32,7 @@ ms.lasthandoff: 11/14/2017
 
 -   RAM : 4 Go
 
--   Paramètres du pare-feu :
-
-    -   Autorisez le collecteur de journaux à recevoir le trafic FTP et Syslog entrant.
-
-    -   Autorisez le collecteur de journaux à lancer le trafic sortant sur le portail (par exemple, portal.contoso.cloudappsecurity.com) sur le port 443.
-
-    - Autorisez le collecteur de journaux à initier le trafic sortant vers le stockage Blob Azure (https://adaprodconsole.blob.core.windows.net/) sur les ports 80 et 443.
-
-> [!NOTE]
-> Si votre pare-feu requiert une liste d’accès à une adresse IP statique et ne prend pas en charge la mise sur liste verte en fonction de l’URL, autorisez le collecteur de journaux à initier le trafic sortant vers les [plages IP du centre de données Microsoft Azure sur le port 443](https://www.microsoft.com/download/details.aspx?id=41653&751be11f-ede8-5a0c-058c-2ee190a24fa6=True).
+-   Configurez votre pare-feu, comme décrit dans [Configuration réseau requise](network-requirements#log-collector)
 
 ## <a name="log-collector-performance"></a>Performances du collecteur de journaux
 
@@ -118,7 +109,7 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
     |caslogcollector_ftp|21|TCP|Indifférent|Indifférent|
     |caslogcollector_ftp_passive|20000-20099|TCP|Indifférent|Indifférent|
     |caslogcollector_syslogs_tcp|601-700|TCP|Indifférent|Indifférent|
-    |caslogcollector_syslogs_tcp|514-600|UDP|Indifférent|Indifférent|
+    |caslogcollector_syslogs_udp|514-600|UDP|Indifférent|Indifférent|
       
       ![Règles Ubuntu Azure](./media/ubuntu-azure-rules.png)
 
@@ -128,7 +119,7 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
 
 5.  Si vous acceptez les [termes du contrat de licence logiciel](https://go.microsoft.com/fwlink/?linkid=862492), désinstallez les anciennes versions et installez Docker CE en exécutant la commande suivante :
         
-        curl -o /tmp/MCASInstallDocker.sh https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh && chmod +x /tmp/MCASInstallDocker.sh; sudo /tmp/MCASInstallDocker.sh
+        curl -o /tmp/MCASInstallDocker.sh https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh && chmod +x /tmp/MCASInstallDocker.sh; /tmp/MCASInstallDocker.sh
 
 6. Dans la fenêtre **Créer un collecteur de journaux** du portail Cloud App Security, copiez la commande pour importer la configuration du collecteur sur la machine hôte :
 
@@ -138,12 +129,12 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
 
       ![Commande Ubuntu Azure](./media/ubuntu-azure-command.png)
 
->[!NOTE]
->Pour configurer un proxy, ajoutez l’adresse IP et le port correspondants. Par exemple, si votre proxy correspond à 192.168.10.1:8080, votre commande d’exécution deviendra : 
+     >[!NOTE]
+     >Pour configurer un proxy, ajoutez l’adresse IP et le port correspondants. Par exemple, si votre proxy correspond à 192.168.10.1:8080, votre commande d’exécution deviendra : 
 
-        (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | sudo docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
+        (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
 
-         ![Ubuntu proxy](./media/ubuntu-proxy.png)
+     ![Proxy Ubuntu](./media/ubuntu-proxy.png)
 
 8. Pour vérifier que le collecteur s’exécute correctement, exécutez la commande suivante : `Docker logs <collector_name>`. Vous devriez obtenir les résultats : **Terminé avec succès !**
 

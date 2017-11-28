@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/14/2017
+ms.date: 12/11/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 660857c34b6a8ff7dccffc581901e52061df937f
-ms.sourcegitcommit: ab552b8e663033f4758b6a600f6d620a80c1c7e0
+ms.openlocfilehash: 64f37fe71c89a4a9f57542255d7d044164d7d3f3
+ms.sourcegitcommit: 4d84f9d15256b05c785a1886338651b86622070c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Installation et configuration sur Ubuntu
 
@@ -32,16 +32,8 @@ ms.lasthandoff: 11/14/2017
 
 -   RAM : 4 Go
 
--   Paramètres du pare-feu :
+-   Configurez votre pare-feu, comme décrit dans [Configuration réseau requise](network-requirements#log-collector)
 
-    -   Autorisez le collecteur de journaux à recevoir le trafic FTP et Syslog entrant.
-
-    -   Autorisez le collecteur de journaux à lancer le trafic sortant sur le portail (par exemple, portal.contoso.cloudappsecurity.com) sur le port 443.
-
-    - Autorisez le collecteur de journaux à initier le trafic sortant vers le stockage Blob Azure (https://adaprodconsole.blob.core.windows.net/) sur les ports 80 et 443.
-
-> [!NOTE]
-> Si votre pare-feu requiert une liste d’accès à une adresse IP statique et ne prend pas en charge la mise sur liste verte en fonction de l’URL, autorisez le collecteur de journaux à initier le trafic sortant vers les [plages IP du centre de données Microsoft Azure sur le port 443](https://www.microsoft.com/download/details.aspx?id=41653&751be11f-ede8-5a0c-058c-2ee190a24fa6=True).
 
 ## <a name="log-collector-performance"></a>Performances du collecteur de journaux
 
@@ -115,7 +107,7 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
 
     `curl -o /tmp/MCASInstallDocker.sh
     https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh
-    && chmod +x /tmp/MCASInstallDocker.sh; sudo /tmp/MCASInstallDocker.sh`
+    && chmod +x /tmp/MCASInstallDocker.sh; /tmp/MCASInstallDocker.sh`
 
      > [!NOTE] 
      > Si cette commande ne parvient pas à valider votre certificat de proxy, exécutez la commande en ajoutant `curl -k` au début.
@@ -124,7 +116,7 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
 
 4.  Déployez l’image du collecteur sur la machine hôte en important la configuration du collecteur. Pour cela, copiez la commande d’exécution générée sur le portail. Si vous devez configurer un proxy, ajoutez l’adresse IP et le numéro de port du proxy. Par exemple, si les détails de votre proxy sont 192.168.10.1:8080, votre commande d’exécution mise à jour est :
 
-            sudo (echo 6f19225ea69cf5f178139551986d3d797c92a5a43bef46469fcc997aec2ccc6f) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.2.2.2'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=tenant2.eu1-rs.adallom.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
+            (echo 6f19225ea69cf5f178139551986d3d797c92a5a43bef46469fcc997aec2ccc6f) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.2.2.2'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=tenant2.eu1-rs.adallom.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
 
    ![Créer le collecteur de journaux](./media/windows7.png)
 

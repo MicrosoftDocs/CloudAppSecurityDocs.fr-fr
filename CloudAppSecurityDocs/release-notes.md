@@ -13,13 +13,26 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f8b50bd5b3524a782888dcd73f0f6690a2b13a89
-ms.sourcegitcommit: 7e0d28b1ac39f7e44e258ab2a0d9563b8fd2aba6
+ms.openlocfilehash: c40d24a20e6a05a0cec29cd99f66d7937f10e73d
+ms.sourcegitcommit: 473d96a6383a6e4d01ef03ed31f2e773cea82cab
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 11/27/2017
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Nouveautés de Microsoft Cloud App Security
+
+## <a name="cloud-app-security-release-111"></a>Cloud App Security version 111
+Publiée le 26 novembre 2017
+
+-   Les stratégies de découverte prennent désormais en charge les balises d’application en tant que condition et en tant qu’action de gouvernance. Ceci vous permet de baliser automatiquement les applications nouvellement découvertes à l’aide de balises personnalisées telles que **Applications tendancielles**. Vous pouvez également utiliser la balise d’application en tant que filtre, par exemple « M’alerter lorsqu’une application sur la Watchlist a plus de 100 utilisateurs en une seule journée ».
+
+-   Le filtre **Heure** a été amélioré pour le rendre plus convivial.
+
+-   L’inspection de contenu vous permet désormais de faire la distinction entre le contenu, les métadonnées et le nom de fichier, pour vous permettre de sélectionner l’élément à inspecter.
+
+-   Une nouvelle action de gouvernance a été ajoutée pour G Suite. Vous pouvez désormais **Réduire l’accès public** aux fichiers partagés. Ceci vous permet de définir les fichiers publiquement disponibles comme étant accessibles uniquement avec un lien partagé.
+
+-   Toutes les activités de connexion OKTA à d’autres applications s’affichent désormais dans Cloud App Security comme provenant d’OKTA. Vous pouvez afficher et filtrer en fonction de l’application cible vers laquelle la connexion a été effectuée dans le champ **Objets d’activité** de l’activité.
 
 
 ## <a name="cloud-app-security-release-110"></a>Cloud App Security version 110
