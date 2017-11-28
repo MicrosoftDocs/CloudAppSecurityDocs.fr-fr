@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/12/2017
+ms.date: 12/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 057de59d0688b28ca9f9265ff7b4010ae9b3c3aa
-ms.sourcegitcommit: 7e0d28b1ac39f7e44e258ab2a0d9563b8fd2aba6
+ms.openlocfilehash: c5c8f7a8a6203f23be30ea160d8867163d8f360b
+ms.sourcegitcommit: 4d84f9d15256b05c785a1886338651b86622070c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance"></a>Configurer le chargement automatique des journaux pour des rapports continus sur une appliance virtuelle
 
@@ -29,12 +29,8 @@ ms.lasthandoff: 11/13/2017
 - Espace disque : 250 Go
 - Processeur : 2
 - RAM : 4 Go 
-- Paramètres du pare-feu : 
-    - Autoriser le collecteur de journaux à recevoir le trafic FTP et Syslog entrant
-    - Autoriser le collecteur de journaux à lancer le trafic sortant sur le portail (par exemple, contoso.cloudappsecurity.com) sur le port 443
+- Configurez votre pare-feu, comme décrit dans [Configuration réseau requise](network-requirements#log-collector)
 
-> [!NOTE]
-> Si votre pare-feu requiert une liste d’accès à une adresse IP statique et ne prend pas en charge la mise sur liste verte en fonction de l’URL, autorisez le collecteur de journaux à initier le trafic sortant vers les [plages IP du centre de données Microsoft Azure sur le port 443](https://www.microsoft.com/download/details.aspx?id=41653&751be11f-ede8-5a0c-058c-2ee190a24fa6=True).
 
 ## <a name="log-collector-performance"></a>Performances du collecteur de journaux
 Le collecteur de journaux peut gérer correctement une capacité allant jusqu’à 50 Go par heure.

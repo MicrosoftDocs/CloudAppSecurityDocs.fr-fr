@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/30/2017
+ms.date: 12/11/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f67e363f9b6cdb866124960037ecb81e07756d8a
-ms.sourcegitcommit: 9eb5c9c43629329a081f970b480956975e424ecb
+ms.openlocfilehash: 4b681ef0cd982b79ae096f257f793920607669a2
+ms.sourcegitcommit: 4d84f9d15256b05c785a1886338651b86622070c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="network-requirements"></a>Configuration requise pour le réseau
 
@@ -47,6 +47,7 @@ Pour accéder au portail Cloud App Security, ajoutez le **port sortant 443** pou
 |Centre de données|Adresses IP|  
 |----|----|
 |US1|13.80.125.22<br></br>52.183.75.62<br></br>13.91.91.243|
+|US2|13.80.125.22<br></br>52.183.75.62<br></br>52.184.165.82|
 |EU1|13.80.125.22<br></br>52.183.75.62<br></br>52.174.56.180|
 
 ## <a name="siem-agent-connection"></a>Connexion de l’agent SIEM
@@ -58,6 +59,7 @@ Pour permettre à Cloud App Security de se connecter à votre SIEM, ajoutez le *
 |Centre de données|Adresses IP|  
 |----|----|
 |US1|13.91.91.243|
+|US2|52.184.165.82|
 |EU1|52.174.56.180|
 
 ## <a name="app-connector-access-and-external-dlp-integration"></a>Accès au connecteur d’application et intégration DLP externe
@@ -68,8 +70,9 @@ Pour se connecter à des applications tierces et intégrer des solutions DLP ext
 > [!div class="mx-tableFixed"]
 |Centre de données|Adresses IP|  
 |----|----|
-|US1|104.209.35.177<br></br>13.91.98.185<br></br>40.118.211.172<br></br>13.93.216.68<br></br>13.91.61.249<br></br>13.93.233.42<br></br>13.64.196.27<br></br>13.64.198.97<br></br>13.64.199.41<br></br>13.64.198.19|
-|EU1|13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
+|US1|13.91.91.243 <br></br> 104.209.35.177 <br></br> 13.91.98.185 <br></br> 40.118.211.172 <br></br> 13.93.216.68 <br></br> 13.91.61.249 <br></br> 13.93.233.42 <br></br> 13.64.196.27 <br></br> 13.64.198.97 <br></br> 13.64.199.41 <br></br> 13.64.198.19|
+|US2|52.184.165.82<br></br> 40.84.4.93 <br></br> 40.84.4.119 <br></br> 40.84.2.83 |
+|EU1|52.174.56.180<br></br>13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
 
 
 ### <a name="app-connector"></a>Connecteur d’applications
@@ -105,7 +108,13 @@ Pour activer les fonctionnalités Cloud Discovery à l’aide d’un collecteur 
 
 - Autorisez le collecteur de journaux à recevoir le trafic FTP et Syslog entrant.
 - Autorisez le collecteur de journaux à lancer le trafic sortant sur le portail (par exemple, contoso.cloudappsecurity.com) sur le port 443.
-- Autorisez le collecteur de journaux à initier le trafic sortant vers le stockage Blob Azure (https://adaprodconsole.blob.core.windows.net/) sur les ports 80 et 443.
+- Autorisez le collecteur de journaux à diriger le trafic sortant vers le stockage Blob Azure sur les ports 80 et 443 :
+   
+    |Centre de données|URL|
+    |----|----|
+    |US1|https://adaprodconsole.blob.core.windows.net/|
+    |US2|https://prod03use2console1.blob.core.windows.net/|
+    |EU1|https://prod02euwconsole1.blob.core.windows.net/|
 
 > [!NOTE]
 > Si votre pare-feu exige une liste d’accès à une adresse IP statique et ne prend pas en charge la mise sur liste verte en fonction de l’URL, autorisez le collecteur de journaux à initier le trafic sortant vers les plages IP du centre de données Microsoft Azure sur le port 443.

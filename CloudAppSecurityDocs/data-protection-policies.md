@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 11/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a68112f2425b993d8f2eb05200aa800ee09869d5
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: fb64a080a1b74b89be98410fefba5f9821704645
+ms.sourcegitcommit: 473d96a6383a6e4d01ef03ed31f2e773cea82cab
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 11/27/2017
 ---
 # <a name="file-policies"></a>Stratégies de fichier  
 Les stratégies de fichier vous permettent d’appliquer une large gamme de processus automatisés en exploitant les API du fournisseur de cloud. Vous pouvez définir des stratégies pour fournir des analyses de conformité en continu, des tâches eDiscovery réglementaires, une protection contre la perte de données (DLP, Data Loss Prevention) au contenu sensible partagé publiquement et de nombreux autres cas d’usage.  
@@ -79,7 +79,7 @@ Pour créer une stratégie de fichier, procédez comme suit :
 7.  Sélectionnez la **Méthode d’inspection du contenu**. La protection contre la perte de données (DLP) intégrée vous permet de filtrer les fichiers par leur contenu. Pour analyser le contenu des fichiers, sélectionnez ensuite **DLP intégré**. Une fois que l’inspection du contenu est activée, vous pouvez choisir d’utiliser des expressions prédéfinies ou de rechercher d’autres expressions personnalisées, sous forme de sous-chaîne ou d’[expression régulière](working-with-the-regex-engine.md) de votre choix.  
     De plus, vous pouvez spécifier une expression régulière pour exclure un fichier des résultats. Cette possibilité s’avère très utile si vous avez des mots clés de classification interne standard à exclure de la stratégie.  
     Vous pouvez décider de définir le nombre minimal de violations de contenu à atteindre avant que le fichier ne soit considéré comme une violation. Par exemple, vous pouvez choisir 10 si vous souhaitez être alerté pour les fichiers comportant au moins 10 numéros de carte de crédit détectés dans leur contenu.  
-    Quand du contenu correspond à l’expression sélectionnée, le texte de la violation est remplacé par des caractères « X ». Par défaut, les violations sont entièrement masquées. Seul leur contexte, 100 caractères avant et après la violation, est affiché. Les chiffres dans le contexte de l’expression sont remplacés par des caractères « # » et ne sont jamais stockés dans Cloud App Security. Vous pouvez sélectionner l’option **Montrer les 4 derniers caractères d’une violation** pour annuler le masquage des 4 derniers caractères de la violation elle-même.
+    Quand du contenu correspond à l’expression sélectionnée, le texte de la violation est remplacé par des caractères « X ». Par défaut, les violations sont entièrement masquées. Seul leur contexte, 100 caractères avant et après la violation, est affiché. Les chiffres dans le contexte de l’expression sont remplacés par des caractères « # » et ne sont jamais stockés dans Cloud App Security. Vous pouvez sélectionner l’option **Montrer les 4 derniers caractères d’une violation** pour annuler le masquage des 4 derniers caractères de la violation elle-même. Il est nécessaire de définir les types de données que l’expression régulière recherchera : contenu, métadonnées et/ou nom de fichier. Par défaut, elle recherche le contenu et les métadonnées. Notez que vous devez définir au moins un type de données à rechercher, sinon l’expression régulière ne fonctionne pas et la stratégie ne peut pas être créée. 
   
 8.  Choisissez les actions de **gouvernance** que Cloud App Security doit exécuter quand une correspondance est détectée.  
   
