@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/11/2017
+ms.date: 29/11/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,18 +13,18 @@ ms.technology:
 ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 64f37fe71c89a4a9f57542255d7d044164d7d3f3
-ms.sourcegitcommit: 4d84f9d15256b05c785a1886338651b86622070c
+ms.openlocfilehash: c09c0204028f3c6be91950be4780646cbc0ac077
+ms.sourcegitcommit: 48cc077576b04dfc1cc75af9fafbdc60ed7992c9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Installation et configuration sur Ubuntu
 
 
 ## <a name="technical-requirements"></a>Spécifications techniques
 
--   Système d’exploitation : Ubuntu 14.04 ou version ultérieure
+-   Système d’exploitation : Ubuntu 14.04 ou ultérieur (aucune version stable du docker ne prend en charge Ubuntu 17.10)
 
 -   Espace disque : 250 Go
 
@@ -153,7 +153,7 @@ Après avoir vérifié que les journaux sont en cours de chargement dans Cloud A
 ![Rapport continu personnalisé](./media/custom-continuous-report.png)
 
 ## <a name="see-also"></a>Voir aussi
-[Utilisation des données Cloud Discovery](working-with-cloud-discovery-data.md)  
+[Résolution des problèmes du déploiement docker Cloud Discovery](troubleshoot-docker.md)  
 [Pour obtenir un support technique, visitez la page de support assisté de Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)  
 [Les clients Premier peuvent également choisir Cloud App Security directement dans le portail Premier.](https://premier.microsoft.com/)
 

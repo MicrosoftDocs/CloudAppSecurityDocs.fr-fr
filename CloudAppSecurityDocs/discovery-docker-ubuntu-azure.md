@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/11/2017
+ms.date: 29/11/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,18 +13,18 @@ ms.technology:
 ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 139d848936def3e97d8270027a3e288196e96f90
-ms.sourcegitcommit: f23705ee51c6cb0113191aef9545e7ec3111f75d
+ms.openlocfilehash: 2f17135950b24bf6132ae09a132e557f42dcff14
+ms.sourcegitcommit: 48cc077576b04dfc1cc75af9fafbdc60ed7992c9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Installation et configuration sur Ubuntu
 
 
 ## <a name="technical-requirements"></a>Spécifications techniques
 
--   Système d’exploitation : Ubuntu 14.04 ou version ultérieure
+-   Système d’exploitation : Ubuntu 14.04 ou ultérieur (aucune version stable du docker ne prend en charge Ubuntu 17.10)
 
 -   Espace disque : 250 Go
 
@@ -111,7 +111,7 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
     |caslogcollector_syslogs_tcp|601-700|TCP|Indifférent|Indifférent|
     |caslogcollector_syslogs_udp|514-600|UDP|Indifférent|Indifférent|
       
-      ![Règles Ubuntu Azure](./media/ubuntu-azure-rules.png)
+      ![Règles Ubuntu Azure](./media/inbound-rule.png)
 
 3.  Revenez à l’ordinateur et cliquez sur **Se connecter** pour ouvrir un terminal dessus.
 
@@ -121,23 +121,21 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
         
         curl -o /tmp/MCASInstallDocker.sh https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh && chmod +x /tmp/MCASInstallDocker.sh; /tmp/MCASInstallDocker.sh
 
-6. Dans la fenêtre **Créer un collecteur de journaux** du portail Cloud App Security, copiez la commande pour importer la configuration du collecteur sur la machine hôte :
-
-      ![Ubuntu Azure](./media/ubuntu-azure.png)
-
-7. Exécutez la commande pour déployer le collecteur de journaux.
-
       ![Commande Ubuntu Azure](./media/ubuntu-azure-command.png)
 
-     >[!NOTE]
-     >Pour configurer un proxy, ajoutez l’adresse IP et le port correspondants. Par exemple, si votre proxy correspond à 192.168.10.1:8080, votre commande d’exécution deviendra : 
+6. Dans la fenêtre **Créer un collecteur de journaux** du portail Cloud App Security, copiez la commande pour importer la configuration du collecteur sur la machine hôte :
 
+      ![Ubuntu Azure](./media/windows7.png)
+
+7. Exécutez la commande pour déployer le collecteur de journaux.
+     
         (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
 
      ![Proxy Ubuntu](./media/ubuntu-proxy.png)
 
 8. Pour vérifier que le collecteur s’exécute correctement, exécutez la commande suivante : `Docker logs <collector_name>`. Vous devriez obtenir les résultats : **Terminé avec succès !**
 
+   ![ubuntu8](./media/ubuntu8.png)
 
 ### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>Étape 3 : Configuration locale de vos appliances réseau
 
@@ -166,7 +164,7 @@ Après avoir vérifié que les journaux sont en cours de chargement dans Cloud A
 ![Rapport continu personnalisé](./media/custom-continuous-report.png)
 
 ## <a name="see-also"></a>Voir aussi
-[Utilisation des données Cloud Discovery](working-with-cloud-discovery-data.md)  
-[Pour obtenir un support technique, visitez la page de support assisté de Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)  
+[Dépanner le déploiement du docker Cloud Discovery](troubleshoot-docker.md)
+[Pour obtenir un support technique, visitez la page de support assisté Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)  
 [Les clients Premier peuvent également choisir Cloud App Security directement dans le portail Premier.](https://premier.microsoft.com/)
 
