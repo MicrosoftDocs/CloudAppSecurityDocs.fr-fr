@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/27/2017
+ms.date: 11/6/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: bbf54f66-4ce2-428c-afc8-b5a64277014f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 8076ba72f8e431145be3df8e9b371cd1175a5c4d
-ms.sourcegitcommit: 4daaec64c5a773cd092d94ee17ca05dfbd9e92c5
+ms.openlocfilehash: 2b82ea305209555d48d3b47489a28f19249b29c3
+ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 11/06/2017
 ---
 #  <a name="IPtagsandRanges"></a> Utilisation des balises et des plages d’adresses IP
 
