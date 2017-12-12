@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2f17135950b24bf6132ae09a132e557f42dcff14
-ms.sourcegitcommit: 48cc077576b04dfc1cc75af9fafbdc60ed7992c9
+ms.openlocfilehash: ce0a16c3f02c4a39b36766c532ea4e50868c3425
+ms.sourcegitcommit: 2e89f41bc2581859a24d55b700dcd89e70e730a5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/10/2017
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Installation et configuration sur Ubuntu
 
@@ -106,11 +106,12 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
 
     |Nom|Plages du port de destination|Protocol|Source|Destination|
     |----|----|----|----|----|
-    |caslogcollector_ftp|21|TCP|Indifférent|Indifférent|
-    |caslogcollector_ftp_passive|20000-20099|TCP|Indifférent|Indifférent|
-    |caslogcollector_syslogs_tcp|601-700|TCP|Indifférent|Indifférent|
-    |caslogcollector_syslogs_udp|514-600|UDP|Indifférent|Indifférent|
+    |caslogcollector_ftp|21|TCP|<Sous-réseau d’adresse IP de votre appliance>|Indifférent|
+    |caslogcollector_ftp_passive|20000-20099|TCP|<Sous-réseau d’adresse IP de votre appliance>|Indifférent|
+    |caslogcollector_syslogs_tcp|601-700|TCP|<Sous-réseau d’adresse IP de votre appliance>|Indifférent|
+    |caslogcollector_syslogs_udp|514-600|UDP|<Sous-réseau d’adresse IP de votre appliance>|Indifférent|
       
+    
       ![Règles Ubuntu Azure](./media/inbound-rule.png)
 
 3.  Revenez à l’ordinateur et cliquez sur **Se connecter** pour ouvrir un terminal dessus.

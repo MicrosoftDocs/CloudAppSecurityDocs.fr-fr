@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 148884c2709658d53b658e3b3a7d9f33daf18771
-ms.sourcegitcommit: 2b8965381d94a5bb6349d8e25e1dc29b092a88b0
+ms.openlocfilehash: b13f7c6270b79050e8ba0f871f2096f420bf6691
+ms.sourcegitcommit: 2e89f41bc2581859a24d55b700dcd89e70e730a5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2017
+ms.lasthandoff: 12/10/2017
 ---
 # <a name="activities"></a>Activités
 Cloud App Security vous donne une visibilité sur toutes les activités de vos applications connectées. Une fois connecté à une application à l’aide du connecteur d’applications, Cloud App Security analyse toutes les activités passées (la période d’analyse rétroactive varie par application). Cloud App Security est ensuite mis à jour en continu avec les nouvelles activités. 
@@ -134,7 +134,13 @@ Vous pouvez afficher plus d’informations supplémentaires sur chaque activité
 
  Les champs du tiroir d’activité fournissent des liens contextuels vers des fichiers supplémentaires et permettent d’effectuer un zoom avant, directement dans le tiroir. Par exemple, si vous déplacez votre curseur à côté de la catégorie d’adresse IP, vous pouvez utiliser l’icône ajouter au filtre ![ajouter au filtre](./media/add-to-filter-icon.png) pour ajouter l’adresse IP immédiatement au filtre de la page actuelle. Vous pouvez également utiliser l’icône de roue dentée paramètres ![icône paramètres](./media/contextual-settings-icon.png) qui s’affiche pour accéder directement à la page des paramètres nécessaire pour modifier la configuration de l’un des champs, par exemple les **groupes d’utilisateurs**.
 
-
+ Vous pouvez aussi utiliser les icônes au sommet de l’onglet pour :
+ - Afficher des activités du même type
+ - Afficher toutes les activités du même utilisateur
+ - Afficher les activités à partir de la même adresse IP
+ - Afficher les activités à partir du même emplacement géographique
+ - Afficher les activités dans la même période (48 heures)
+ 
 ![tiroir activité](./media/activity-drawer.png "tiroir activité")  
   
 Pour obtenir la liste des actions de gouvernance disponibles, consultez [Actions de gouvernance des activités](governance-actions.md#activity-governance-actions).
@@ -175,6 +181,7 @@ Pour afficher les insights sur l’adresse IP :
         - Marquer comme adresse IP risquée 
         - Marquer comme adresse IP VPN
         - Marquer comme adresse IP risquée et l’ajouter à un groupe bloqué
+
 
 ![Insights sur l’adresse IP dans Cloud App Security](./media/ip-address-insights.png)
 
