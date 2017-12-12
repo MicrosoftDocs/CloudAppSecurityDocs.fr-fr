@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2017
+ms.date: 12/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,22 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c40d24a20e6a05a0cec29cd99f66d7937f10e73d
-ms.sourcegitcommit: 473d96a6383a6e4d01ef03ed31f2e773cea82cab
+ms.openlocfilehash: e3426172efe25f641af4757a1bc77d6aec3624d2
+ms.sourcegitcommit: 2e89f41bc2581859a24d55b700dcd89e70e730a5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 12/10/2017
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Nouveautés de Microsoft Cloud App Security
+
+## <a name="cloud-app-security-release-112"></a>Cloud App Security version 112
+Publication le 10 décembre 2017
+
+-   Vous pouvez désormais accéder au tiroir d’insight pertinent en cliquant sur un nom d’utilisateur ou une adresse IP Dans le journal des activités. 
+-   Lorsque vous enquêtez sur des activités, vous pouvez désormais afficher facilement toutes les activités durant la même période à partir du tiroir d’insight en cliquant sur l’icône d’horloge. Cela vous permet d’afficher toutes les activités effectuées dans un délai de 48 heures par rapport à l’activité actuellement affichée.
+-   Des améliorations ont été apportées à l’analyseur de journal Cloud Discovery pour Juniper SRX.
+-   Pour les activités surveillées par le proxy, **l’objet Activité** a été étendu pour inclure des informations concernant les numérisations DLP et les stratégies correspondantes ont été étendues pour inclure les violations DLP le cas échéant.
+
 
 ## <a name="cloud-app-security-release-111"></a>Cloud App Security version 111
 Publiée le 26 novembre 2017
@@ -72,7 +81,7 @@ Publication : septembre/octobre 2017
 ## <a name="cloud-app-security-release-104"></a>Cloud App Security version 104 
 Publication : 27 août 2017
 
--   Vous pouvez désormais ajouter des plages d’adresses IP en bloc en créant un script à l’aide de l’[API des plages d’adresses IP](https://portal.cloudappsecurity.com/api-docs/). 
+-   Vous pouvez maintenant ajouter des plages IP en bloc en créant un script à l’aide de **l’API de plages d’adresses IP**, accessible à partir de la barre de menu du portail Cloud App Security, en cliquant sur le point d’interrogation, puis sur **Documentation de l’API**. 
 -   Cloud Discovery fournit une meilleure visibilité des transactions bloquées en présentant à la fois la totalité des transactions et les transactions bloquées.
 -   Vous pouvez filtrer sur les applications cloud selon si elles sont certifiées **ISO 27017** ou pas. Ce nouveau facteur de risque du Catalogue d'applications cloud détermine si le fournisseur de l’application détient cette certification, qui établit des contrôles communément acceptés et des instructions pour le traitement et la protection des informations utilisateur dans un environnement de cloud computing public.
 - Pour vous aider à vous préparer à la mise en conformité au RGPD, nous avons rassemblé les déclarations associées à partir des applications cloud du catalogue. Cela n’affecte pas encore le score de risque des applications, mais fournit un lien vers la page de préparation au RGPD de l’éditeur d’applications, le cas échéant. Microsoft n’a pas vérifié ce contenu et n’est pas responsable de sa validité.

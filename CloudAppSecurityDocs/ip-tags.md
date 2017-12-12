@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 12/10/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: bbf54f66-4ce2-428c-afc8-b5a64277014f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2b82ea305209555d48d3b47489a28f19249b29c3
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: 758605fddf97c0f35cbc0c3029d20e536fc9dee1
+ms.sourcegitcommit: 2e89f41bc2581859a24d55b700dcd89e70e730a5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 12/10/2017
 ---
 #  <a name="IPtagsandRanges"></a> Utilisation des balises et des plages d’adresses IP
 
@@ -40,7 +40,7 @@ Cloud App Security est préconfiguré avec des balises intégrées pour les adre
 Pour utiliser ces balises intégrées dans le cadre d’une recherche, reportez-vous à leur ID dans la documentation des API Cloud App Security. 
 
 > [!NOTE]
-> Vous pouvez ajouter des plages d’adresses IP en bloc en créant un script à l’aide de l’[API des plages d’adresses IP](https://portal.cloudappsecurity.com/api-docs/).
+> Vous pouvez ajouter des plages IP en bloc en créant un script à l’aide de **l’API de plages d’adresses IP**, accessible à partir de la barre de menu du portail Cloud App Security, en cliquant sur le point d’interrogation, puis sur **Documentation de l’API**.
 
 
 Les balises d’adresse IP intégrées et les balises d’adresse IP personnalisées sont considérées de manière hiérarchique, les balises d’adresse IP personnalisées étant prioritaires sur les balises d’adresse IP intégrées. Par exemple, si une adresse IP est marquée comme étant **Risquée** en fonction de l’intelligence des menaces, mais qu’il existe une balise d’adresse IP personnalisée qui l’identifie comme appartenant à **l’Entreprise**, les balises et la catégorie personnalisées sont prioritaires.
