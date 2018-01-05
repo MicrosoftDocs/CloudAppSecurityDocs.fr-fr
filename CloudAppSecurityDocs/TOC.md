@@ -33,7 +33,7 @@
 ### [Connecter Salesforce](connect-salesforce-to-microsoft-cloud-app-security.md)
 ## [Protéger les applications avec un proxy](proxy-intro-aad.md)
 ### [Déployer un proxy pour les applications Azure AD](proxy-deployment-aad.md)
-# Utilisez
+# Utiliser
 ## [Utilisation du tableau de bord](daily-activities-to-protect-your-cloud-environment.md)
 ## Scénarios
 ### [Protection de votre organisation contre les ransomwares](use-case-ransomware.md)
@@ -41,9 +41,11 @@
 ### [Protection de vos fichiers avec la mise en quarantaine administrateur](use-case-admin-quarantine.md)
 ## Découvrir
 ### [Utilisation des applications découvertes](discovered-apps.md)
+#### [Filtres d’application découverte et requêtes](discovered-app-queries.md)
 ### [Utilisation du score de risque](risk-score.md)
 ## [Examiner](investigate.md)
 ### [Activités](activity-filters.md)
+#### [Filtres d’activité et requêtes](activity-filters-queries.md)
 ### [Fichiers](file-filters.md)
 ### [Comptes](accounts.md)
 ### [Informations de référence sur les rapports intégrés](built-in-report-reference.md)
@@ -69,6 +71,7 @@
 ### [Intégration DLP externe](icap-stunnel.md)
 ### [Jetons d’API](api-tokens.md)
 # Dépannage
+## [Résolution des problèmes d’état du service](troubleshooting-status.md)
 ## [Résolution des problèmes de Cloud Discovery](troubleshooting-cloud-discovery.md)
 ## [Résolution des problèmes des connecteurs API à l’aide de messages d’erreur](troubleshooting-api-connectors-using-error-messages.md)
 ## [Résolution des problèmes d’inspection du contenu](troubleshooting-content-inspection.md)
