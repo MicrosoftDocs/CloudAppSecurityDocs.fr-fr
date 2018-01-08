@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/26/2017
+ms.date: 1/3/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d349488692f006908426fd8f33eb6ae654350958
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: 23fe601cba94ad58f4baceb0df461faafbe7a974
+ms.sourcegitcommit: bbf4a2715d1ea3fd21c1a1b87c7f5a2947d2ca68
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="working-with-discovered-apps"></a>Utilisation des applications découvertes
 
@@ -52,46 +52,6 @@ Dans la page **Applications découvertes**, sous **Parcourir par catégorie**, s
 
 Une fois que les résultats sont filtrés, vous pouvez [ne pas approuver et bloquer](governance-discovery.md) ces applications en cochant la case d’action en bloc pour ne pas les approuver toutes en une seule action. Une fois qu’elles sont non approuvées, vous pouvez utiliser un script de blocage pour empêcher leur utilisation dans votre environnement.
 
-Cloud Discovery vous permet d’analyser de manière encore plus approfondie l’utilisation du cloud au sein de votre organisation, et d’identifier les instances spécifiques qui sont en cours d’utilisation en étudiant les sous-domaines de découverte.
-
-Vous pouvez par exemple effectuer la distinction entre différents sites SharePoint.
-
-Cette fonctionnalité est prise en charge uniquement dans les pare-feu et les proxys qui contiennent des données d’URL cibles. Consultez la liste des appliances prises en charge dans [Pare-feu et proxys pris en charge](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
-
-![informations sur les sous-domaines](./media/discovery-domains.png)  
-
-## <a name="discovered-app-filters"></a>Filtres d’application découverte
-
-Il existe des filtres d’application découverte de base et avancés. Pour obtenir un filtre complexe (comme dans l’exemple ci-dessus), utilisez l’option avancée qui inclut tous les éléments suivants :
-
-![Applications découvertes](./media/discovered-apps.png)  
-
-
-- **Balise d’application** : Indiquez si l’application a été approuvée, non approuvée ou non marquée. Par ailleurs, vous pouvez créer une balise personnalisée pour votre application et l’utiliser pour filtrer des types spécifiques d’applications. 
-- **Applications et domaines** : Permet de rechercher des applications spécifiques ou des applications utilisées dans des domaines spécifiques. 
-- **Catégories** : Le filtre de catégories, qui se trouve à gauche de la page, vous permet de rechercher des types d’applications selon des catégories d’applications, par exemple, des applications de réseau social, des applications de stockage cloud, etc. Vous pouvez sélectionner plusieurs catégories à la fois, ou une seule catégorie, puis leur appliquer des filtres de base et avancés.
-- **Facteur de risque de conformité** : Permet de rechercher des normes, certifications et conformités spécifiques auxquelles l’application doit se conformer (HIPAA, ISO 27001, SOC 2, PCI-DSS, etc.).
-- **Facteur de risque général** : Permet de rechercher des facteurs de risque général comme la popularité auprès des consommateurs, les paramètres régionaux du centre de données, etc.
-- **Score de risque** : Permet de filtrer les applications par score de risque pour que vous puissiez vous concentrer uniquement sur les applications très risquées, par exemple. Vous pouvez également remplacer le score de risque défini par Cloud App Security. Pour plus d’informations, consultez [Utilisation du score de risque](risk-score.md).
-- **Facteur de risque de sécurité** : Permet de filtrer en fonction de mesures de sécurité spécifiques (comme le chiffrement au repos, l’authentification multifacteur, etc.).
-- **Utilisation** : Permet de filtrer en fonction des statistiques d’utilisation de cette application, comme les applications avec une quantité supérieure ou inférieure de **chargements de données** que la quantité spécifiée, les applications avec un nombre supérieur ou inférieur **d’utilisateurs** que le nombre spécifié.
-
-## <a name="creating-and-managing-custom-app-tags"></a>Création et gestion des balises d’application personnalisées
-
-Vous pouvez créer une balise d’application personnalisée. Ces balises peuvent ensuite servir de filtres pour rechercher plus précisément des types spécifiques d’applications que vous voulez examiner. Par exemple, une liste de suivi personnalisée, l’attribution à une division spécifique ou des approbations personnalisées, comme « approuvé par le service juridique ».
-
-Pour créer une balise d’application personnalisée :
-
-1. Dans le menu **Paramètres** (roue dentée), sélectionnez **Cloud Discovery** et sous l’onglet **Gérer les balises d’application**, cliquez sur l’icône ![plus](./media/plus-icon.png). 
-
-![créer une balise d’application personnalisée](./media/create-app-tag.png)
-
-2. Vous pouvez utiliser le tableau **Gérer les balises d’application** pour consulter les applications qui sont actuellement marquées avec chaque balise d’application et vous pouvez supprimer les balises d’application inutilisées.
-
-3. Pour appliquer une balise d’application, sous l’onglet **Applications découvertes**, cliquez sur les points de suspension complètement à droite du tableau et sélectionnez la balise d’application à appliquer. 
-
-> [!NOTE]
->Vous pouvez également créer une balise d’application directement dans le tableau **Applications découvertes** en cliquant sur **Créer une balise d’application** après avoir sélectionné les points de suspension à droite de n’importe quelle application sélectionnée. Vous pouvez également accéder à l’écran **Gérer les balises d’application** en cliquant sur le lien dans le coin de la fenêtre contextuelle **Créer une balise d’application**.
 
 ## <a name="exclude-entities"></a>Exclure des entités  
 Si certains utilisateurs ou certaines adresses IP sont particulièrement bruyants et inintéressants ou si des applications ne sont pas pertinentes, vous pouvez exclure leurs données des données Cloud Discovery qui sont analysées. Par exemple, vous pouvez exclure toutes les informations provenant de 127.0.0.1 ou de l’hôte local.  
