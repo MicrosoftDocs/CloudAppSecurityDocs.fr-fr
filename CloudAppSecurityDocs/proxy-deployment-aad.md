@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2017
+ms.date: 12/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3717d7358b3b869dca918fcaa60a2b2b465df367
-ms.sourcegitcommit: eb4e70b6fa15cfff01932a711cecee38f67bc058
+ms.openlocfilehash: a784b9e935bfa3396a64edb12202b50be17a7319
+ms.sourcegitcommit: e547c4c91d8de9d4da376e4d4eebbe18c503b7ca
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/18/2017
 ---
 # <a name="deploy-proxy-for-azure-ad-apps"></a>Déployer un proxy pour les applications Azure AD
 
@@ -78,7 +78,7 @@ Suivez ces étapes pour configurer des applications Azure AD à contrôler avec 
 
         ![Identification de l’appareil](./media/device-identification.png)
  
-       Une fois le certificat chargé, vous pouvez créer des stratégies de session basées sur une **balise de l’appareil** égale au ou différente du **certificat client valide**.
+       Une fois le certificat chargé, vous pouvez créer des stratégies d’accès et des stratégies de session basées sur une **étiquette d’appareil** égale à ou différente de la **certification client valide**.
  
       > [!NOTE]
       >Un certificat est uniquement demandé à un utilisateur si la session correspond à une stratégie qui utilise le filtre du certificat client valide. 
@@ -99,7 +99,7 @@ Pour vérifier que les activités sont correctement capturées, cliquez sur une 
  ![étiquette de l’agent utilisateur de test](./media/domain-joined.png)
 
 
-Vous êtes maintenant prêt à créer des [stratégies de session](session-policy-aad.md) pour contrôler vos applications de proxy.
+Vous êtes maintenant prêt à créer des [stratégies d’accès](access-policy-aad.md) et des [stratégies de session](session-policy-aad.md) pour contrôler vos applications proxy.
 
 
 

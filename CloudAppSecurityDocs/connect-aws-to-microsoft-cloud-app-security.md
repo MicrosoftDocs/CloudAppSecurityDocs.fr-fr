@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/25/2017
+ms.date: 12/31/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a6b4c745-cd5c-4458-819c-80cbe8b25f29
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: bb0703442d3568556dc54df5e1bd7901906ca9b3
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: ed30e0b0e3d49db23e404ef87454e48361996443
+ms.sourcegitcommit: 2544faf07c6373ac5505bbdf4ebd5d184daf68db
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/31/2017
 ---
 # <a name="connect-aws-to-microsoft-cloud-app-security"></a>Connecter AWS à Microsoft Cloud App Security
 Cette section fournit des instructions pour connecter Cloud App Security à votre compte Amazon Web Services existant à l’aide des API du connecteur.  
@@ -36,20 +36,12 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
 
      ![créer un utilisateur dans AWS](./media/aws-create-user.png "Créer un utilisateur dans AWS")
 
-5. Dans l’étape **Permissions** (Autorisations), sélectionnez **Attach existing policies directly** (Attacher directement les stratégies existantes), puis cliquez sur **Create policy** (Créer une stratégie).
+5. Cliquez sur l’onglet JSON :
 
-   ![Joindre un utilisateur dans AWS](./media/aws-attach-user-policy.png "Joindre une stratégie d’utilisateur dans AWS")
+     ![AWS JSON](./media/aws-json.png "Onglet AWS JSON")
 
-6.  Sous **Create policy** (Créer une stratégie), sélectionnez **Create Your Own Policy** (Créer votre propre stratégie).
- 
-    ![Créer votre propre stratégie dans AWS](./media/aws-create-own-policy.png "Créer une stratégie dans AWS")
- 
-7.  Sous **Review Policy** (Vérifier la stratégie), fournissez un **Policy Name** (Nom de la stratégie), par exemple CloudAppSecurityPolicy.
+6. Collez le script suivant dans la zone fournie :
 
-    ![Vérifier la stratégie dans AWS](./media/aws-review-policy.png "Vérifier la stratégie dans AWS")
-
-8. Collez ensuite le script suivant dans le champ **Policy Document** (Document de stratégie) et cliquez sur **Create policy** (Créer une stratégie) :
-  
     ```     
     {  
       "Version" : "2012-10-17",  
@@ -71,7 +63,15 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
      }  
   
     ```  
-  
+
+     ![Code AWS](./media/aws-code.png "Code AWS")
+    
+6. Cliquez sur **Vérifier la stratégie**.
+
+7. Spécifiez un **Nom** et cliquez sur **Créer une stratégie**.
+
+     ![Nom de la stratégie AWS](./media/aws-create-policy.png "AWS : créer une stratégie")
+
 9. De retour à l’écran **Add user** (Ajouter un utilisateur), actualisez la liste si nécessaire et sélectionnez l’utilisateur que vous avez créé, puis cliquez sur **Next Review** (Prochaine vérification).
 
    ![Vérifier la stratégie d’utilisateur dans AWS](./media/aws-review-user.png "Vérifier un utilisateur dans AWS")

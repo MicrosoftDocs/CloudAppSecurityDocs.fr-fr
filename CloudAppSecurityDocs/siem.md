@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2acabcc195b8496f0a9bda812cc11b289911b81a
-ms.sourcegitcommit: 2e89f41bc2581859a24d55b700dcd89e70e730a5
+ms.openlocfilehash: beaf31d7c365f62fb9c9dc7b79b0d89f31ee694d
+ms.sourcegitcommit: e547c4c91d8de9d4da376e4d4eebbe18c503b7ca
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2017
+ms.lasthandoff: 12/18/2017
 ---
 # <a name="siem-integration"></a>Intégration à SIEM
     
@@ -45,7 +45,7 @@ L’intégration à votre serveur SIEM s’effectue en trois étapes :
 2. Téléchargez le fichier JAR et exécutez-le sur votre serveur.
 3. Vérifiez que l’agent SIEM fonctionne.
 
-### <a name="prerequisites"></a>Conditions préalables
+### <a name="prerequisites"></a>Prérequis
 
 - Un serveur Windows ou Linux standard (il peut s’agir d’une machine virtuelle).
 - Le serveur doit exécuter Java 8 ; les versions antérieures ne sont pas prises en charge.
@@ -130,57 +130,25 @@ Ainsi que l’exemple de fichier journal d’alertes suivant :
 #### <a name="sample-cloud-app-security-alerts-in-cef-format"></a>Exemples d’alertes Cloud App Security au format CEF
 
 
-##### <a name="activity-logs"></a>Journaux d’activité
+|Applicable à|Nom du champ CEF|Description|
+|----|-----|----|
+|Activités/Alertes|start| Horodatage d’activité ou d’alerte|
+|Activités/Alertes|end|Horodatage d’activité ou d’alerte|
+|Activités/Alertes|rt|Horodatage d’activité ou d’alerte|
+|Activités/Alertes|msg |Description de l’activité ou de l’alerte telle qu’elle apparaît dans le portail|
+|Activités/Alertes|suser| Utilisateur de l’objet de l’activité ou de l’alerte|
+|Activités/Alertes|destinationServiceName| Application à l’origine de l’activité ou de l’alerte, par exemple Office 365, Sharepoint, Box.|
+|Activités/Alertes|cs<X>Label|Chaque étiquette a une signification différente, mais l’étiquette elle-même l’explique, par exemple targetObjects.|
+|Activités/Alertes|cs<X>|Informations correspondant à l’étiquette (l’utilisateur cible de l’activité ou de l’alerte, selon l’exemple d’étiquette).|
+|Activités|EVENT_CATEGORY_* |Catégorie générale de l’activité|
+|Activités|<ACTION> |Type d’activité, tel qu’il apparaît dans le portail|
+|Activités|externalId| ID d’événement|
+|Activités|dvc| Adresse IP de l’appareil client|
+|Activités|requestClientApplication|Agent utilisateur de l’appareil client|
+|Alertes|<alert type>|Par exemple « ALERT_CABINET_EVENT_MATCH_AUDIT »|
+|Alertes|<name>|Nom de la stratégie correspondante|
+|Alertes|externalId|ID de l’alerte|
 
--   EVENT_CATEGORY_* - Catégorie générale de l’activité
-
--   <ACTION> - Type d’activité, tel qu’il apparaît dans le portail
-
--   externalId – ID d’événement
-
--   start – Horodatage d’activité
-
--   end – Horodatage d’activité
-
--   rt - Horodatage d’activité
-
--   msg – description de l’événement comme illustré dans le portail
-
--   suser – Utilisateur de l’activité
-
--   destinationServiceName – Application à l’origine de l’activité, par exemple Office 365, Sharepoint, Box.
-
--   dvc – IP de l’appareil client
-
--   requestClientApplication – Agent utilisateur de l’appareil client
-
--   cs<X>Label – Chaque étiquette a une signification différente, mais l’étiquette elle-même l’explique, par exemple targetObjects.
-
--   cs<X> - Informations correspondant à l’étiquette (utilisateur cible de l’activité ou de l’alerte, selon l’exemple d’étiquette).
-
-##### <a name="alerts"></a>Alertes
-
--   <alert type> - Par exemple “ALERT_CABINET_EVENT_MATCH_AUDIT”
-
--   <name> - Nom de la stratégie correspondante
-
--   externalId – ID d’alerte
-
--   start – Horodatage de l’alerte
-
--   end – Horodatage de l’alerte
-
--   rt – Horodatage de l’alerte
-
--   msg – Description de l’alerte comme illustré dans le portail
-
--   suser – Utilisateur de l’objet de l’alerte
-
--   destinationServiceName – Application à l’origine de l’alerte, par exemple Office 365, Sharepoint, Box
-
--   cs<X>Label – Chaque étiquette a une signification différente, mais l’étiquette elle-même l’explique, par exemple targetObjects.
-
--   cs<X> - Informations correspondant à l’étiquette (utilisateur cible de l’activité ou de l’alerte, selon l’exemple d’étiquette).
 
 
 ### <a name="step-3-validate-that-the-siem-agent-is-working"></a>Étape 3 : Vérifiez que l’agent SIEM fonctionne

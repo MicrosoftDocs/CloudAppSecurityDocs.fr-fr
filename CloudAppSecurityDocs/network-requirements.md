@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/11/2017
+ms.date: 1/4/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4b681ef0cd982b79ae096f257f793920607669a2
-ms.sourcegitcommit: 4d84f9d15256b05c785a1886338651b86622070c
+ms.openlocfilehash: 27e14be8501964ea62d2e5df84d96a9553d30ad6
+ms.sourcegitcommit: f96793b1b6d0a88cf52279fff0ab6bf4bddc5c6b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="network-requirements"></a>Configuration requise pour le réseau
 
@@ -40,15 +40,19 @@ Pour déterminer à quel centre de données vous vous connectez :
 
 ## <a name="portal-access"></a>Accès au portail
 
-Pour accéder au portail Cloud App Security, ajoutez le **port sortant 443** pour les adresses IP suivantes à la liste verte de votre pare-feu :  
+Pour accéder au portail Cloud App Security, ajoutez le **port de sortie 443** pour les adresses IP et les noms DNS suivants à la liste verte de votre pare-feu :  
 
 
 > [!div class="mx-tableFixed"]
-|Centre de données|Adresses IP|  
-|----|----|
-|US1|13.80.125.22<br></br>52.183.75.62<br></br>13.91.91.243|
-|US2|13.80.125.22<br></br>52.183.75.62<br></br>52.184.165.82|
-|EU1|13.80.125.22<br></br>52.183.75.62<br></br>52.174.56.180|
+|Centre de données|Adresses IP|Nom DNS|
+|----|----|----|
+|US|13.80.125.22<br></br>52.183.75.62<br></br>13.91.91.243|portal.cloudappsecurity.com<br></br>\*.portal.cloudappsecurity.com <br></br>\*.us.portal.cloudappsecurity.com|
+|US2|13.80.125.22<br></br>52.183.75.62<br></br>52.184.165.82|portal.cloudappsecurity.com<br></br>\*.portal.cloudappsecurity.com <br></br>\*.us2.portal.cloudappsecurity.com|
+|EU|13.80.125.22<br></br>52.183.75.62<br></br>52.174.56.180|portal.cloudappsecurity.com<br></br>\*.portal.cloudappsecurity.com <br></br>\*.eu.portal.cloudappsecurity.com|
+
+
+>[!NOTE]
+>Au lieu d’un caractère générique (\*) vous pouvez ouvrir seulement l’URL de votre locataire spécifique. Par exemple, d’après la capture d’écran ci-dessus, vous pouvez ouvrir : mod244533.us.portal.cloudappsecurity.com
 
 ## <a name="siem-agent-connection"></a>Connexion de l’agent SIEM
 
@@ -58,29 +62,30 @@ Pour permettre à Cloud App Security de se connecter à votre SIEM, ajoutez le *
 > [!div class="mx-tableFixed"]
 |Centre de données|Adresses IP|  
 |----|----|
-|US1|13.91.91.243|
+|US|13.91.91.243|
 |US2|52.184.165.82|
-|EU1|52.174.56.180|
+|EU|52.174.56.180|
 
 ## <a name="app-connector-access-and-external-dlp-integration"></a>Accès au connecteur d’application et intégration DLP externe
 
-Pour se connecter à des applications tierces et intégrer des solutions DLP externes, autorisez Cloud App Security à se connecter à ces adresses IP :
+
+### <a name="app-connector"></a>Connecteur d’applications
+
+Pour que Cloud App Security puisse accéder à certaines applications tierces, vous devez utiliser ces adresses IP pour permettre à Cloud App Security de collecter les journaux et de fournir un accès pour la console Cloud App Security. 
+
+> [!NOTE]
+>Vous verrez peut-être ces adresses IP dans les journaux d’activité du fournisseur, car Cloud App Security effectue des actions de gouvernance et des analyses à partir de ces adresses IP. 
+
+Pour se connecter à des applications tierces et s’intégrer à des solutions DLP externes, autorisez Cloud App Security à se connecter à partir de ces adresses IP :
 
 
 > [!div class="mx-tableFixed"]
 |Centre de données|Adresses IP|  
 |----|----|
-|US1|13.91.91.243 <br></br> 104.209.35.177 <br></br> 13.91.98.185 <br></br> 40.118.211.172 <br></br> 13.93.216.68 <br></br> 13.91.61.249 <br></br> 13.93.233.42 <br></br> 13.64.196.27 <br></br> 13.64.198.97 <br></br> 13.64.199.41 <br></br> 13.64.198.19|
+|US|13.91.91.243 <br></br> 104.209.35.177 <br></br> 13.91.98.185 <br></br> 40.118.211.172 <br></br> 13.93.216.68 <br></br> 13.91.61.249 <br></br> 13.93.233.42 <br></br> 13.64.196.27 <br></br> 13.64.198.97 <br></br> 13.64.199.41 <br></br> 13.64.198.19|
 |US2|52.184.165.82<br></br> 40.84.4.93 <br></br> 40.84.4.119 <br></br> 40.84.2.83 |
-|EU1|52.174.56.180<br></br>13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
-
-
-### <a name="app-connector"></a>Connecteur d’applications
-Pour que Cloud App Security puisse accéder à certaines applications tierces, vous devez utiliser ces adresses IP pour permettre à Cloud App Security de collecter les journaux et de fournir un accès pour la console Cloud App Security. 
-
-> [!NOTE]
->Vous verrez peut-être ces adresses IP dans les journaux d’activité du fournisseur, car Cloud App Security effectue des actions de gouvernance et des analyses à partir de ces adresses IP. 
-  
+|EU|52.174.56.180<br></br>13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
+ 
 
 ### <a name="dlp-integration"></a>Intégration DLP
 
@@ -112,12 +117,12 @@ Pour activer les fonctionnalités Cloud Discovery à l’aide d’un collecteur 
    
     |Centre de données|URL|
     |----|----|
-    |US1|https://adaprodconsole.blob.core.windows.net/|
+    |US|https://adaprodconsole.blob.core.windows.net/|
     |US2|https://prod03use2console1.blob.core.windows.net/|
-    |EU1|https://prod02euwconsole1.blob.core.windows.net/|
+    |EU|https://prod02euwconsole1.blob.core.windows.net/|
 
 > [!NOTE]
-> Si votre pare-feu exige une liste d’accès à une adresse IP statique et ne prend pas en charge la mise sur liste verte en fonction de l’URL, autorisez le collecteur de journaux à initier le trafic sortant vers les plages IP du centre de données Microsoft Azure sur le port 443.
+> Si votre pare-feu nécessite une liste d’accès à d’adresses IP statiques et qu’il ne prend pas en charge une liste verte basée sur des URL, autorisez le collecteur de journaux à émettre le trafic sortant vers les [plages IP du centre de données Microsoft Azure](https://www.microsoft.com/download/details.aspx?id=41653) sur le port 443.
 
 
 
