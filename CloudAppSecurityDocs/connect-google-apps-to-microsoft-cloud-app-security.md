@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/14/2017
+ms.date: 12/31/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,15 +13,14 @@ ms.technology:
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9d813ecc39da6c26b81f459a278aa7eb42ca72f9
-ms.sourcegitcommit: fbeb299e8c41fc57b50d491b1becbf488fdd3642
+ms.openlocfilehash: a76b9eac65a82ece148eaaf05dead1c920d0fb62
+ms.sourcegitcommit: 2544faf07c6373ac5505bbdf4ebd5d184daf68db
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 12/31/2017
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>Connecter G Suite à Microsoft Cloud App Security
 Cette section fournit des instructions pour connecter Cloud App Security à votre compte G Suite existant à l’aide des API du connecteur.
-
   
   
 ## <a name="configure-g-suite"></a>Configurer G Suite  
@@ -44,9 +43,9 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
   
      ![google3](./media/google3.png "google3")  
   
-5.  Sous **API**, désactivez toutes les API répertoriées.  
+6.  Sous **API**, désactivez toutes les API répertoriées.  
       
-6.  Cliquez sur **Bibliothèque** et activez les API suivantes (utilisez la ligne de recherche si l’API n’est pas répertoriée dans la liste **Popular APIs** (API populaires)) :  
+7.  Cliquez sur **Bibliothèque** et activez les API suivantes (utilisez la ligne de recherche si l’API n’est pas répertoriée dans la liste **Popular APIs** (API populaires)) :  
      
     -   Admin SDK  
   
@@ -63,11 +62,11 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
    > [!NOTE]  
    >  Ignorez l’avertissement sur les **informations d’identification** pour l’instant.  
 
-7.  Vous devez avoir 5 **API activées** :  
+8.  Vous devez avoir 5 **API activées** :  
   
      ![google, api activées](./media/google5.png "google5")  
   
-8.  Cliquez sur **Credentials** (Informations d’identification)et sélectionnez l’onglet de l’**écran de consentement OAuth**.
+9.  Cliquez sur **Credentials** (Informations d’identification)et sélectionnez l’onglet de l’**écran de consentement OAuth**.
   
     -   Dans **Nom de produit présenté aux utilisateurs**, tapez **Microsoft Cloud App Security**.  
   
@@ -77,38 +76,38 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
   
      ![Nom de produit Google](./media/google6.png "google6")  
   
-9. Sous l’onglet **Credentials** (Informations d’identification), cliquez sur la flèche en regard de **Create credentials** (Créer des informations d’identification).  
+10. Sous l’onglet **Credentials** (Informations d’identification), cliquez sur la flèche en regard de **Create credentials** (Créer des informations d’identification).  
   
      ![Informations d’identification Google](./media/google7.png "google7")  
 
-10. Sélectionnez **Service account key** (Clé de compte de service).
+11. Sélectionnez **Service account key** (Clé de compte de service).
 
      ![Clé de compte de service Google](./media/google8.png "google8")  
   
-11. Sous **Create service account key (Créer une clé de compte de service)**, choisissez **New service account (Nouveau compte de service)** et tapez un nom, par exemple, **Compte de service 1**. Sous **Role** (Rôle), choisissez **Project** (Projet), puis **Editor** (Éditeur). Sous **Key type (Type de clé)**, choisissez **P12** et cliquez sur **Create (Créer)**. Un fichier de certificat P12 est enregistré sur votre ordinateur.
+12. Sous **Create service account key (Créer une clé de compte de service)**, choisissez **New service account (Nouveau compte de service)** et tapez un nom, par exemple, **Compte de service 1**. Sous **Role** (Rôle), choisissez **Project** (Projet), puis **Editor** (Éditeur). Sous **Key type (Type de clé)**, choisissez **P12** et cliquez sur **Create (Créer)**. Un fichier de certificat P12 est enregistré sur votre ordinateur.
  
      ![Créer une clé de compte de service dans Google](./media/google9.png "google9")  
   
-12.  Copiez **l’ID de compte de service** attribué à votre service, car vous en aurez besoin.    
+13.  Copiez **l’ID de compte de service** attribué à votre service, car vous en aurez besoin.    
         
-12. Dans l’écran **Credentials** (Informations d’identification), cliquez sur **Manage service accounts** (Gérer les comptes de service) à l’extrême droite.  
+14. Dans l’écran **Credentials** (Informations d’identification), cliquez sur **Manage service accounts** (Gérer les comptes de service) à l’extrême droite.  
      
     ![informations d’identification G Suite, compte de service](./media/google10.png "informations d’identification G Suite, compte de service")  
   
-13. Cliquez sur les points de suspension à droite du compte de service que vous avez créé et sélectionnez **Edit (Modifier)**.  
+15. Cliquez sur les points de suspension à droite du compte de service que vous avez créé et sélectionnez **Edit (Modifier)**.  
   
      ![google, modifier](./media/google11.png "google, modifier")  
   
-15. Cochez la case **Enable G Suite Domain-wide Delegation** (Activer la délégation à l’échelle du domaine G Suite) et cliquez sur **Enregistrer**.  
+16. Cochez la case **Enable G Suite Domain-wide Delegation** (Activer la délégation à l’échelle du domaine G Suite) et cliquez sur **Enregistrer**.  
   
      ![google, ID de compte de service](./media/google12.png "google12")  
   
-16. Ouvrez le menu Google en cliquant sur les trois lignes horizontales en regard de Google Cloud Platform dans la barre de titre. Cliquez sur **Google Cloud Platform**, puis sur l’onglet **APIs and services** (API et services) dans le menu de gauche.  
+17. Ouvrez le menu Google en cliquant sur les trois lignes horizontales en regard de Google Cloud Platform dans la barre de titre. Cliquez sur **Google Cloud Platform**, puis sur l’onglet **APIs and services** (API et services) dans le menu de gauche.  
     
-17. Dans le tableau de bord qui s’ouvre, faites défiler la liste des API activées et cliquez sur **Google Drive API**.   
+18. Dans le tableau de bord qui s’ouvre, faites défiler la liste des API activées et cliquez sur **Google Drive API**.   
        ![Sélectionner le lecteur Google](./media/google14.png "google14")  
 
-18. Cliquez sur l’onglet **Drive UI integration** (Intégration de l’interface utilisateur Drive) et fournissez les informations suivantes :
+19. Cliquez sur l’onglet **Drive UI integration** (Intégration de l’interface utilisateur Drive) et fournissez les informations suivantes :
 
     -   **Nom de l’application** : Microsoft Cloud App Security.  
   
@@ -122,9 +121,11 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
     
        ![Modifier Google Drive](./media/google15.png "google15")  
 
-19. Revenez à la liste **Enabled APIs** (API activées). Cliquez sur **Google Apps Marketplace SDK**. 
+20. Cliquez sur **Save Changes (Enregistrer les modifications)**.
+
+20. Revenez à la liste **Enabled APIs** (API activées). Cliquez sur **Google Apps Marketplace SDK**. 
       
-20. Sélectionnez l’onglet **Configuration**. 
+21. Sélectionnez l’onglet **Configuration**. 
   
     -   Copiez la valeur **Project number (App ID)** (Numéro de projet (ID d’application)) qui apparaît en haut à des fins d’utilisation ultérieure.  
   
@@ -136,7 +137,7 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
   
     -   Configurez les quatre images obligatoires sous **Application icons (Icônes de l’application)**.  
   
-         Les images se trouvent à la page : [https://go.microsoft.com/fwlink/?linkid=856644](https://go.microsoft.com/fwlink/?linkid=856644).  
+         Vous pouvez trouver les images à l’adresse : [https://go.microsoft.com/fwlink/?linkid=862826](https://go.microsoft.com/fwlink/?linkid=862826)  
   
     -   Renseignez les valeurs **Support URLs (URL d’assistance)** suivantes :  
   
@@ -186,14 +187,14 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
   
     -   Cliquez sur **Save Changes (Enregistrer les modifications)**.  
   
-18. Accédez à [admin.google.com](https://admin.google.com/), puis choisissez **Sécurité**. 
+22. Accédez à [admin.google.com](https://admin.google.com/), puis choisissez **Sécurité**. 
    
       ![sécurité de Google](./media/googlesec.png "sécurité de google")  
  
-19. Choisissez **API reference (Informations de référence sur les API)**.  
+23. Choisissez **API reference (Informations de référence sur les API)**.  
        ![google, activer l’api](./media/googleapi.png "google api")  
       
-20. Sélectionnez **Enable API Access (Activer l’accès aux API)** et cliquez sur **Save changes (Enregistrer les modifications)**.  
+24. Sélectionnez **Enable API Access (Activer l’accès aux API)** et cliquez sur **Save changes (Enregistrer les modifications)**.  
   
     ![google, référence à l’api](./media/googleapiref.png "google8")  
 
@@ -209,7 +210,7 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
   
      ![Configuration de G Suite dans Cloud App Security](./media/gsuite-config-cas.png "Configuration de G Suite dans Cloud App Security")  
   
-    1.  **Adresse e-mail du compte de service** que vous avez copiée à l’étape 16.  
+    1.  **ID de compte de service** que vous avez copié à l’étape 13.  
   
     2.  **Numéro de projet (ID d’application)** que vous avez copié à l’étape 21.  
   

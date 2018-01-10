@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2017
+ms.date: 12/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,18 +13,18 @@ ms.technology:
 ms.assetid: 745df28a-654c-4abf-9c90-203841169f90
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c955e20b4abd506f5e44659fbdd921bb54def131
-ms.sourcegitcommit: eb4e70b6fa15cfff01932a711cecee38f67bc058
+ms.openlocfilehash: 62694b685bb82074d74c72b4ec60f4e0e7436fd1
+ms.sourcegitcommit: 3d943dbb0e0850af0dc390a78d8feca2f3fde61b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/20/2017
 ---
 # <a name="session-policies"></a>Stratégies de session 
 
 > [!NOTE]
 > Il s’agit d’une fonctionnalité en préversion.
 
-Les stratégies de session Cloud App Security permettent la surveillance en temps réel au niveau de la session, vous offrant une visibilité plus précise dans les applications cloud et la possibilité de prendre des mesures différentes selon la stratégie que vous définissez pour une session utilisateur. Au lieu d’autoriser ou de bloquer complètement l’accès, vous pouvez utiliser le contrôle de session, lequel vous permet d’autoriser l’accès pendant la surveillance de la session et/ou de limiter des activités de session particulières. 
+Les stratégies de session Cloud App Security permettent la surveillance en temps réel au niveau de la session, vous offrant une visibilité plus précise dans les applications cloud et la possibilité de prendre des mesures différentes selon la stratégie que vous définissez pour une session utilisateur. Au lieu [d’autoriser ou de bloquer complètement l’accès](access-policy-aad.md), vous pouvez utiliser le contrôle de session, lequel vous permet d’autoriser l’accès pendant la surveillance de la session et/ou de limiter des activités de session particulières. 
 
 Par exemple, vous pouvez décider que pour les appareils non gérés ou pour les sessions provenant d’emplacements spécifiques, vous voulez autoriser l’utilisateur à accéder à l’application, mais aussi limiter le téléchargement des fichiers sensibles ou exiger que certains documents soient protégés lors de leur téléchargement. Les stratégies de session vous permettent de définir ces contrôles de session utilisateur. 
 
@@ -34,6 +34,8 @@ Par exemple, vous pouvez décider que pour les appareils non gérés ou pour les
 - Les applications appropriées doivent être [déployées avec un proxy](proxy-deployment-aad.md).
 - Une [stratégie d’accès conditionnel Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) doit être en place pour rediriger les utilisateurs vers le proxy Cloud App Security, comme décrit ci-dessous.
 
+> [!NOTE]
+> - En préversion privée, les stratégies de session prennent également en charge les applications qui sont configurées avec des fournisseurs d’identité autres qu’Azure AD. Pour plus d’informations sur la préversion privée, envoyez un e-mail à mcaspreview@microsoft.com.
 
 ## <a name="create-an-azure-ad-conditional-access-policy"></a>Créer une stratégie d’accès conditionnel Azure AD
 

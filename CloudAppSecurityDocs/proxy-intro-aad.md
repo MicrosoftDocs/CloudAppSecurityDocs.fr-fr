@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2017
+ms.date: 12/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 35a43120-bf67-4cf9-9b48-ebe157dbbd18
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6174cfe5fc0c5ba1bbde2b1f68234f727c7db223
-ms.sourcegitcommit: eb4e70b6fa15cfff01932a711cecee38f67bc058
+ms.openlocfilehash: d180fce8789fa20bea7135ce3fba437db996dcce
+ms.sourcegitcommit: 3d943dbb0e0850af0dc390a78d8feca2f3fde61b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/20/2017
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-proxy"></a>Protéger des applications avec le proxy Microsoft Cloud App Security
 
@@ -29,9 +29,9 @@ Dans l’espace de travail actuel, souvent il ne suffit pas de savoir ce qui se 
 
 ## <a name="how-it-works"></a>Fonctionnement
 
-Le proxy Cloud App Security est intégré à l’accès conditionnel Azure AD. L’accès conditionnel Azure AD vous permet d’appliquer des contrôles d’accès sur les applications de votre organisation en fonction de certaines conditions. Ces conditions définissent à *quelles personnes* (par exemple, un utilisateur ou un groupe d’utilisateurs), à *quelles applications* (applications cloud) et à *quels endroits* (emplacements et réseaux) une stratégie d’accès conditionnel est appliquée. Une fois que vous avez déterminé les conditions, vous pouvez diriger les utilisateurs vers le proxy Cloud App Security où vous pouvez appliquer un contrôle de session.
+Le proxy Cloud App Security est intégré à l’accès conditionnel Azure AD. L’accès conditionnel Azure AD vous permet d’appliquer des contrôles d’accès sur les applications de votre organisation en fonction de certaines conditions. Ces conditions définissent à *quelles personnes* (par exemple, un utilisateur ou un groupe d’utilisateurs), à *quelles applications* (applications cloud) et à *quels endroits* (emplacements et réseaux) une stratégie d’accès conditionnel est appliquée. Une fois que vous avez déterminé les conditions, vous pouvez router les utilisateurs vers le proxy Cloud App Security où vous pouvez appliquer des contrôles d’accès et de session.
 
-Une fois que l’utilisateur est dirigé vers le proxy Cloud App Security, ses sessions d’application peuvent être surveillées et contrôlées en temps réel selon des stratégies de session. Les stratégies de session sont utilisées au sein du portail Cloud App Security pour affiner les filtres de session et définir les actions à effectuer sur un utilisateur. Avec les stratégies de session, vous pouvez :
+Une fois qu’un utilisateur est routé vers le proxy Cloud App Security, ses accès et ses sessions d’application peuvent être surveillés et contrôlés en temps réel, en fonction des stratégies d’accès et de session. Les stratégies d’accès et de session sont utilisées dans le portail Cloud App Security pour affiner les filtres et définir les actions à effectuer sur un utilisateur. Avec les stratégies d’accès et de session, vous pouvez :
 
 -   **Bloquer en cas de téléchargement** : vous pouvez bloquer le téléchargement de documents sensibles. Par exemple, sur les appareils non gérés.
 
@@ -40,6 +40,9 @@ Une fois que l’utilisateur est dirigé vers le proxy Cloud App Security, ses s
 -   **Limiter les sessions utilisateur à partir des réseaux hors entreprise** : les utilisateurs accédant à une application protégée à partir d’un emplacement qui ne fait pas partie de votre réseau d’entreprise se voient attribuer un accès restreint et le téléchargement de documents sensibles est bloqué ou protégé.
 
 -   **Surveiller les sessions utilisateur de confiance basse** : les utilisateurs à risque sont surveillés quand ils se connectent à des applications et leurs actions sont journalisées depuis la session. Vous pouvez examiner et analyser le comportement des utilisateurs pour comprendre où et dans quelles conditions les stratégies de session devront être appliquées à l’avenir. 
+
+- **Bloquer l’accès** : vous pouvez bloquer complètement l’accès à des applications spécifiques pour les utilisateurs provenant d’appareils non gérés ou de réseaux qui ne sont pas des réseaux de l’entreprise.
+
 
 ### <a name="how-session-control-works"></a>Fonctionnement du contrôle de session
 
@@ -66,7 +69,7 @@ Le proxy vous permet de créer des stratégies qui déterminent si un appareil e
  
  
 ### <a name="compliant-and-domain-joined-devices"></a>Appareils conformes et joints à un domaine
-L’accès conditionnel Azure AD permet aux informations sur les appareils conformes et joints à un domaine d’être directement transmises au proxy Cloud App Security. À partir de là, vous pouvez développer une stratégie de session qui utilise l’état de l’appareil en tant que filtre.
+L’accès conditionnel Azure AD permet aux informations sur les appareils conformes et joints à un domaine d’être directement transmises au proxy Cloud App Security. À partir de là, vous pouvez développer une stratégie d’accès ou de session qui utilise l’état de l’appareil comme filtre.
 Pour plus d’informations, consultez [Présentation de la gestion des appareils dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction). 
 
 ### <a name="client-certificate-authenticated-devices"></a>Appareils authentifiés par certificat client
@@ -75,11 +78,15 @@ Le mécanisme d’identification des appareils par le proxy peut exiger une auth
  
 ## <a name="supported-apps-and-clients"></a>Applications et clients pris en charge
 
-Le proxy prend actuellement en charge les applications configurées avec l’authentification unique SAML dans Azure AD. De plus, le contrôle de session n’est pas automatiquement disponible pour toutes les applications. L’équipe Cloud App Security a testé de nombreuses applications populaires avec le contrôle de session. D’autres applications peuvent nécessiter un processus d’intégration effectué avec le client.
-En termes de clients, le contrôle de session est disponible sur tous les navigateurs de toutes les plateformes majeures. Toutefois, les applications mobiles et les applications de bureau ne sont pas prises en charge. 
+Le proxy prend actuellement en charge les applications configurées avec l’authentification unique SAML dans Azure AD. 
 
 > [!NOTE]
-> Les applications Office 365 ne sont pas configurées avec le format SAML si bien qu’elles ne sont pour le moment pas prises en charge.
+> - En préversion privée, le proxy prend également en charge les applications qui sont configurées avec des fournisseurs d’identité autres qu’Azure AD. Pour plus d’informations sur la préversion privée, envoyez un e-mail à mcaspreview@microsoft.com.
+> - Les applications Office 365 ne sont pas configurées avec le format SAML si bien qu’elles ne sont pour le moment pas prises en charge.
+
+De plus, le contrôle de session n’est pas automatiquement disponible pour toutes les applications. L’équipe Cloud App Security a testé de nombreuses applications populaires avec le contrôle de session. D’autres applications peuvent nécessiter un processus d’intégration effectué avec le client.
+En termes de clients, le contrôle de session est disponible sur tous les navigateurs de toutes les plateformes majeures. Cependant, les applications mobiles et les applications de poste de travail ne sont pas prises en charge par le contrôle de session. 
+
 
 
 ## <a name="see-also"></a>Voir aussi  

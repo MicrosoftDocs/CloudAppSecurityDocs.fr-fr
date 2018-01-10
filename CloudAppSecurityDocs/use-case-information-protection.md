@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2017
+ms.date: 12/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6e6c7365be26dc379bcf0269812931387972bc8f
-ms.sourcegitcommit: 3bc510959e66a29d474cbef412deac0daefa8a24
+ms.openlocfilehash: 6ef94215cbb07dd35e9353e3a63b9e575905b16b
+ms.sourcegitcommit: c0c0612cdf6805c8e92d7929be0f12f33660b2d2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/25/2017
 ---
 # <a name="automatically-apply-azure-information-protection-classification-labels"></a>Appliquer automatiquement des étiquettes de classification Azure Information Protection  
 
@@ -41,16 +41,16 @@ Ce niveau de protection élevé se déplace avec le fichier : si vous envoyez, 
 Un utilisateur de votre organisation enregistre des fichiers contenant des informations confidentielles sur vos clients dans Box et en définit le partage avec tous les utilisateurs de l’organisation. L’utilisateur ne réalise pas que, en plus de son équipe immédiate, tout le personnel du support a accès à ce compte Box, notamment les fournisseurs, les partenaires et les visiteurs qui viennent parfois au bureau. Toutes les personnes ayant accès au compte Box de votre organisation ont désormais accès à ces informations. Non seulement cela peut s’avérer dangereux pour votre organisation, mais aussi contraire aux réglementations PII de nombreux pays, ce qui peut entraîner des problèmes légaux.
 
 ## <a name="the-solution"></a>La solution
-Utilisez Cloud App Security avec Azure Information Protection pour incorporer des informations de classification et de protection afin de mettre en place une protection permanente qui suit vos données (et ainsi s’assurer que les données restent protégées, où qu’elles soient stockées et quelles que soient les personnes avec lesquelles vous les partagez). Cette pratique vous permet également de partager en toute sécurité des données avec vos collègues, mais aussi vos clients et partenaires. Définir qui peut accéder aux données et ce que ces personnes peuvent en faire, notamment autoriser des utilisateurs à afficher et modifier des fichiers, mais pas à les imprimer ni les transférer, en plus des autres [actions de gouvernance](governance-actions.md) prises en charge par Cloud App Security, comme la suppression de collègues et des capacités de partage.
+Utilisez Cloud App Security avec Azure Information Protection pour incorporer des informations de classification et de protection afin de mettre en place une protection permanente qui suit vos données (et ainsi s’assurer que les données restent protégées, où qu’elles soient stockées et quelles que soient les personnes avec lesquelles vous les partagez). Cette pratique vous permet également de partager en toute sécurité des données avec vos collègues, mais aussi vos clients et partenaires. Définissez qui peut accéder aux données et ce que ces personnes peuvent en faire, notamment autoriser des utilisateurs à afficher et modifier des fichiers, mais pas à les imprimer ni les transférer, ceci en plus des autres [actions de gouvernance](governance-actions.md) prises en charge par Cloud App Security, comme retirer des collaborateurs et les possibilités de partage.
 
 ## <a name="prerequisites"></a>Prérequis
 
-- Activer Cloud App Security et Azure Information Protection pour votre locataire
+- [Activez Cloud App Security et Azure Information Protection](azip-integration.md) pour votre locataire.
 - [Connectez Box](connect-box-to-microsoft-cloud-app-security.md) à Cloud App Security.
 
 ## <a name="setting-up-data-protection"></a>Configuration de la protection des données
 
-Définissons une stratégie qui recherche des numéros de carte de crédit dans des fichiers stockés dans votre compte Box.
+Définissons une stratégie qui recherche des numéros de carte de crédit dans les fichiers stockés dans votre compte Box et qui, quand ils sont trouvés, applique automatiquement une étiquette Azure Information Protection, puis contrôle ce qui se passe pour tous les fichiers ayant cette étiquette.
 
 1. Commencez à protéger les données que vous stockez dans Box en définissant une stratégie qui chiffre toutes les données sensibles stockées dans Box :
 

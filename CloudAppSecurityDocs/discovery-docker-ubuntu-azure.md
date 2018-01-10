@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ce0a16c3f02c4a39b36766c532ea4e50868c3425
-ms.sourcegitcommit: 2e89f41bc2581859a24d55b700dcd89e70e730a5
+ms.openlocfilehash: 161fbf275bfea2ceafbb36e56b1ba91fcd564543
+ms.sourcegitcommit: e547c4c91d8de9d4da376e4d4eebbe18c503b7ca
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2017
+ms.lasthandoff: 12/18/2017
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Installation et configuration sur Ubuntu
 
@@ -72,7 +72,10 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
 
     b. Donnez un **nom** au collecteur de journaux.
 
-    c. Entrez **l’adresse IP hôte** de l’ordinateur sur lequel est déployé le Docker.
+    c. Entrez **l’adresse IP hôte** de l’ordinateur sur lequel est déployé le Docker. 
+
+     > [!NOTE]
+     > L’adresse IP de l’hôte peut être remplacée par le nom de l’ordinateur s’il existe un serveur DNS (ou un équivalent) qui résout le nom d’hôte.
 
     d. Sélectionnez toutes les **Sources de données** que vous voulez connecter au collecteur, puis cliquez sur **Mettre à jour** pour enregistrer la configuration et consulter les étapes suivantes du déploiement.
 
@@ -111,8 +114,7 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
     |caslogcollector_syslogs_tcp|601-700|TCP|<Sous-réseau d’adresse IP de votre appliance>|Indifférent|
     |caslogcollector_syslogs_udp|514-600|UDP|<Sous-réseau d’adresse IP de votre appliance>|Indifférent|
       
-    
-      ![Règles Ubuntu Azure](./media/inbound-rule.png)
+     ![Règles Ubuntu Azure](./media/inbound-rule.png)
 
 3.  Revenez à l’ordinateur et cliquez sur **Se connecter** pour ouvrir un terminal dessus.
 
