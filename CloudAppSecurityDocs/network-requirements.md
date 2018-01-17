@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/4/2018
+ms.date: 1/15/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 27e14be8501964ea62d2e5df84d96a9553d30ad6
-ms.sourcegitcommit: f96793b1b6d0a88cf52279fff0ab6bf4bddc5c6b
+ms.openlocfilehash: ad089d71975a83c2f41fb9a9694acb8d01defdc7
+ms.sourcegitcommit: c4b40afff6a66b101fadfc1bd221c10186bad71a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/15/2018
 ---
 # <a name="network-requirements"></a>Configuration requise pour le réseau
 
@@ -66,17 +66,14 @@ Pour permettre à Cloud App Security de se connecter à votre SIEM, ajoutez le *
 |US2|52.184.165.82|
 |EU|52.174.56.180|
 
-## <a name="app-connector-access-and-external-dlp-integration"></a>Accès au connecteur d’application et intégration DLP externe
-
-
-### <a name="app-connector"></a>Connecteur d’applications
+## <a name="app-connector"></a>Connecteur d’applications
 
 Pour que Cloud App Security puisse accéder à certaines applications tierces, vous devez utiliser ces adresses IP pour permettre à Cloud App Security de collecter les journaux et de fournir un accès pour la console Cloud App Security. 
 
 > [!NOTE]
 >Vous verrez peut-être ces adresses IP dans les journaux d’activité du fournisseur, car Cloud App Security effectue des actions de gouvernance et des analyses à partir de ces adresses IP. 
 
-Pour se connecter à des applications tierces et s’intégrer à des solutions DLP externes, autorisez Cloud App Security à se connecter à partir de ces adresses IP :
+Pour se connecter à des applications tierces, autorisez Cloud App Security à se connecter à partir de ces adresses IP :
 
 
 > [!div class="mx-tableFixed"]
@@ -87,7 +84,7 @@ Pour se connecter à des applications tierces et s’intégrer à des solutions 
 |EU|52.174.56.180<br></br>13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
  
 
-### <a name="dlp-integration"></a>Intégration DLP
+## <a name="dlp-integration"></a>Intégration DLP
 
 Pour que Cloud App Security envoie des données via votre stunnel à votre serveur ICAP, ouvrez votre pare-feu DMZ à ces adresses IP avec un numéro de port source dynamique. 
 
@@ -97,8 +94,18 @@ Pour que Cloud App Security envoie des données via votre stunnel à votre serve
 4.  Port TCP de destination : comme défini dans votre réseau
 
 > [!NOTE] 
-> Par défaut, le numéro de port du stunnel a la valeur 11344. Vous pouvez le remplacer par un autre port si nécessaire, mais n’oubliez pas de noter le nouveau numéro de port.
+> -  Par défaut, le numéro de port du stunnel a la valeur 11344. Vous pouvez le remplacer par un autre port si nécessaire, mais n’oubliez pas de noter le nouveau numéro de port.
+> - Vous verrez peut-être ces adresses IP dans les journaux d’activité du fournisseur, car Cloud App Security effectue des actions de gouvernance et des analyses à partir de ces adresses IP. 
 
+Pour se connecter à des applications tierces et s’intégrer à des solutions DLP externes, autorisez Cloud App Security à se connecter à partir de ces adresses IP :
+
+> [!div class="mx-tableFixed"]
+|Centre de données|Adresses IP|  
+|----|----|
+|US|13.91.91.243 <br></br> 104.209.35.177 <br></br> 13.91.98.185 <br></br> 40.118.211.172 <br></br> 13.93.216.68 <br></br> 13.91.61.249 <br></br> 13.93.233.42 <br></br> 13.64.196.27 <br></br> 13.64.198.97 <br></br> 13.64.199.41 <br></br> 13.64.198.19|
+|US2|52.184.165.82<br></br> 40.84.4.93 <br></br> 40.84.4.119 <br></br> 40.84.2.83 |
+|EU|52.174.56.180<br></br>13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
+ 
 ## <a name="email-server"></a>Serveur de courrier
 
 L’adresse IP de courrier dédiée à Cloud App Security est la suivante : 
