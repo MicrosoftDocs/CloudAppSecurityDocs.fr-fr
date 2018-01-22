@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,13 @@ ms.technology:
 ms.assetid: a9b00c2a-2f71-499e-8f57-67e560daedc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7ffb49e882856b144fff028c7b10167b5c55356f
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: e0d61fcd3147b25b84c7e5071ba8e7a02bc05f67
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 01/16/2018
 ---
-# <a name="investigate"></a>Étudier
+# <a name="investigate"></a>Investiguer
 Une fois que Cloud App Security s’exécute dans votre environnement cloud, vous avez besoin d’une phase de formation et d’étude sur la façon d’utiliser les outils de Cloud App Security pour mieux comprendre ce qui se passe dans votre environnement cloud. Ensuite, selon votre environnement particulier et la façon dont il est utilisé, vous pouvez identifier ce qui est nécessaire pour protéger votre organisation contre les risques.
 
 Cette rubrique décrit comment effectuer une investigation pour mieux comprendre votre environnement cloud.  
@@ -154,5 +154,5 @@ Maintenant que la stratégie est en place, vous vous étonnez de voir que vous r
 
 ## <a name="see-also"></a>Voir aussi  
 Pour découvrir comment contrôler l’application cloud de votre organisation, consultez [Contrôle](control.md).   
-Pour obtenir du support technique, accédez à la page [Support assisté Cloud App Security](http://support.microsoft.com/oas/default.aspx?prid=16031).  
+
 Les clients Premier peuvent également choisir Cloud App Security directement depuis le [portail Premier](https://premier.microsoft.com/).  

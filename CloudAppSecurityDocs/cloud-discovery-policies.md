@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/24/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 45446111-ed1a-4699-9df5-840cc6664a6b
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c909125b57f2ee341f6621f33b43c522cfc6d32c
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: 0f2a08facca3c932d5ee8890e295041dcc4e63d4
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="cloud-discovery-policies"></a>Stratégies Cloud Discovery
     
@@ -75,13 +75,13 @@ Cloud App Security examine tous les journaux de votre environnement Cloud Discov
 7.  Sous **Alertes**, vous pouvez définir le niveau de sensibilité de la détection d’anomalies (de faible à élevé) pour configurer la fréquence des alertes à recevoir.  
 Définissez une **Limite d’alerte quotidienne**, indiquez si l’alerte doit être envoyée sous forme d’e-mail et/ou de SMS et fournissez les détails nécessaires. Vous pouvez cliquer sur Enregistrer les paramètres d’alerte en tant que paramètres par défaut pour que les stratégies futures puissent enregistrer ces paramètres d’alerte, y compris les adresses de messagerie et le numéro de téléphone, en tant que paramètres par défaut. Vous pouvez également cliquer sur **Utiliser les paramètres par défaut de l’organisation** pour définir ces paramètres en fonction de la configuration par défaut de votre organisation.  
   
-9. Cliquez sur **Create (Créer)**.  
+9. Cliquez sur **Créer**.  
   
 ![nouvelle stratégie de détection d’anomalie](./media/new-discovery-anomaly-policy.png "nouvelle stratégie de détection d’anomalie")  
   
 ## <a name="see-also"></a>Voir aussi  
 [Stratégies d’activité utilisateur](user-activity-policies.md)   
-[Pour obtenir du support technique, consultez la page Support assisté Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier.](https://premier.microsoft.com/)  
   
   

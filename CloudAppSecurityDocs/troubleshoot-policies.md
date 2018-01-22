@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 29/11/2017
+ms.date: 1/15/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 828cc94a-248b-44f6-a1ba-c28c0a135f8c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6c8cbfa8899a6cfa66f6fc2a9ec9ff75375acecb
-ms.sourcegitcommit: f4ec7f2cb81c9d83bb7f406ddcca91ab07790a98
+ms.openlocfilehash: ccd15579fd18616dccd663947d6513c21e1e1527
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="troubleshooting-cloud-app-security-policies"></a>Résolution des problèmes des stratégies Cloud App Security
 
@@ -29,6 +29,6 @@ ms.lasthandoff: 11/28/2017
 
 ## <a name="see-also"></a>Voir aussi
 [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)
-[Pour obtenir un support technique, visitez la page de support assisté Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)  
+
 [Les clients Premier peuvent également choisir Cloud App Security directement dans le portail Premier.](https://premier.microsoft.com/)
 
