@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 1/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6277f0789780a2ae4fe9a4978af970f7ad961503
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: eeda929ecc4bc029f0fd292f4276ba55f202d314
+ms.sourcegitcommit: 9cfb4b4e91e37fa3acf238b729cb68be0adc7086
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 01/21/2018
 ---
 # <a name="external-dlp-integration"></a>Intégration DLP externe
 
@@ -37,7 +37,7 @@ Cloud App Security analyse votre environnement cloud et décide en fonction de l
 
 Comme Cloud App Security s’exécute dans Azure, un déploiement dans Azure améliore les performances. Toutefois, d’autres options, notamment le déploiement sur d’autres clouds et emplacements locaux sont pris en charge. Le déploiement dans d’autres environnements peut entraîner une dégradation des performances à cause d’une latence plus élevée et de la réduction du débit. Le serveur ICAP et le stunnel doivent être déployés simultanément sur le même réseau pour assurer que le trafic est chiffré.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 Pour que Cloud App Security envoie des données via votre stunnel à votre serveur ICAP, ouvrez le pare-feu DMZ aux adresses IP externes utilisées par Cloud App Security avec un numéro de port source dynamique. 
 
 1.  Adresses sources : consultez [Connecter des applications, sous Prérequis](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md#prerequisites)
@@ -254,7 +254,9 @@ Dans ForcePoint, définissez votre appliance en suivant ces étapes :
 
 ## Annexe B : Guide de déploiement de Symantec <a name="symantec"></a>
 
-Les versions prises en charge de Symantec DLP sont les versions 11 et ultérieures. Comme indiqué ci-dessus, vous devez déployer un serveur de détection dans le même centre de données Azure où se trouve votre locataire Cloud App Security. Le serveur de détection se synchronise avec le serveur d’application via un tunnel IPSec dédié. 
+Les versions prises en charge de Symantec DLP sont les versions 11 et ultérieures. 
+
+Comme indiqué ci-dessus, vous devez déployer un serveur de détection dans le même centre de données Azure où se trouve votre locataire Cloud App Security. Le serveur de détection se synchronise avec le serveur d’application via un tunnel IPSec dédié. 
  
 ### <a name="detection-server-installation"></a>Installation du serveur de détection 
 Le serveur de détection utilisé par Cloud App Security est un Network Prevent standard pour serveur web. Plusieurs options de configuration doivent être changées :
@@ -279,7 +281,10 @@ Le serveur de détection utilisé par Cloud App Security est un Network Prevent 
 
 
 ### <a name="policy-configuration"></a>Configuration de la stratégie
-Cloud App Security prend en charge tous les types de règle de détection inclus avec Symantec DLP, il est donc inutile de modifier les règles existantes. Toutefois, une modification de configuration doit être appliquée à toutes les stratégies existantes et nouvelles pour activer l’intégration complète. Il s’agit de l’ajout d’une règle de réponse spécifique à toutes les stratégies. Ajoutez la modification de configuration à votre Vontu :
+Cloud App Security prend en charge tous les types de règle de détection inclus avec Symantec DLP, il est donc inutile de modifier les règles existantes. Toutefois, une modification de configuration doit être appliquée à toutes les stratégies existantes et nouvelles pour activer l’intégration complète. Il s’agit de l’ajout d’une règle de réponse spécifique à toutes les stratégies. 
+
+Ajoutez la modification de configuration à votre Vontu :
+
 1.  Accédez à **Gérer** > **Stratégies** > **Règles de réponse** et cliquez sur **Ajouter une règle de réponse**.
     
     ![ajouter une règle de réponse](./media/icap-add-response-rule.png)
@@ -293,13 +298,22 @@ Cloud App Security prend en charge tous les types de règle de détection inclus
     ![bloquer http](./media/icap-block-http.png)
 
 Ajoutez la règle que vous avez créée aux stratégies existantes :
+
 1. Dans chaque stratégie, basculez vers l’onglet **Réponse**.
+
 2. Dans la liste déroulante **Règle de réponse**, sélectionnez la règle de réponse Bloquer que vous avez créée ci-dessus.
+
 3. Enregistrez la stratégie.
    
     ![désactiver le mode d’évaluation](./media/icap-add-policy.png)
 
 Cette règle doit être ajoutée à toutes les stratégies existantes.
 
+>[!NOTE]
+> Si vous utilisez Symantec vontu pour analyser des fichiers issus de Dropbox, l’autorité de certification affichera automatiquement le fichier comme provenant de l’URL suivante : http://misc/filename. Il s’agit d’un espace réservé qui ne mène nulle part, mais qui est utilisé à des fins de journalisation.
 
 
+## <a name="see-also"></a>Voir aussi  
+[Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)   
+
+[Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier.](https://premier.microsoft.com/)  

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/11/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 06238ebc-2088-4372-9412-96cceaf3b145
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d086dc6e05d64662625340594f0bb355936c0a7a
-ms.sourcegitcommit: 4d84f9d15256b05c785a1886338651b86622070c
+ms.openlocfilehash: fd3d2abe04206926ec86f05a21f3bc0ecbe13728
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="blocking-downloads-of-sensitive-information-using-the-microsoft-cloud-app-security-proxy"></a>Blocage des téléchargements d’informations sensibles avec le proxy Microsoft Cloud App Security
 
@@ -31,7 +31,7 @@ Un responsable de compte de votre organisation veut vérifier une information da
 ## <a name="the-solution"></a>La solution
 Protégez votre organisation en surveillant et en contrôlant l’usage des applications cloud à l’aide de l’accès conditionnel Azure AD et du proxy Cloud App Security.  
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 
 - Une licence valide pour Azure AD Premium P2
 - Configurer une application cloud pour l’authentification unique dans Azure AD  
@@ -130,7 +130,7 @@ Une fois cette tâche terminée, accédez au portail Cloud App Security et crée
 
 ## <a name="see-also"></a>Voir aussi  
 [Créer une stratégie de session](session-policy-aad.md)   
-[Pour obtenir un support technique, visitez la page de support assisté Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier.](https://premier.microsoft.com/)  
   
   
