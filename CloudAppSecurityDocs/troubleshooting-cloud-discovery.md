@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 1/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 76dfaebb-d477-4bdb-b3d7-04cc3fe6431d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ae08c4e39fa01b1007dc0e14d8235558d2180372
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 0e3ed6adf784f1252e02c4abe847a7b3741d11ca
+ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="troubleshooting-cloud-discovery"></a>Dépannage de Cloud Discovery
 ## <a name="log-parsing-errors"></a>Erreurs d’analyse du journal
@@ -28,7 +28,6 @@ Vous pouvez suivre le traitement des journaux Cloud Discovery à l’aide du jou
 |ERREUR|DESCRIPTION|RÉSOLUTION|
 |----|----|----|
 |Type de fichier non pris en charge|Le fichier chargé n’est pas un fichier journal valide (par exemple, un fichier image).|Chargez un fichier **texte**, **zip** ou **gzip** exporté directement à partir de votre pare-feu ou proxy.|
-|Erreur interne|Un échec de ressource interne a été détecté|Cliquez sur **Réessayer** pour réexécuter la tâche.|
 |Le format de journal ne correspond pas|Le format de journal que vous avez chargé ne correspond pas au format attendu pour cette source de données.|1. Vérifiez que le journal n’est pas endommagé. <br /> 2. Comparez et associez votre journal à l’exemple de format illustré dans la page de chargement.|
 |Les transaction datent de plus de 90 jours|Toutes les transactions datent de plus de 90 jours et sont par conséquent ignorées.|Exportez un nouveau journal avec des événements récents et rechargez ce dernier.|
 |Aucune transaction pour les applications cloud cataloguées|Aucune transaction pour les applications cloud reconnues ne figure dans le journal.|Vérifiez que le journal contient des informations sur le trafic sortant.|
