@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 1/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,20 +13,43 @@ ms.technology:
 ms.assetid: ab9bc377-d2f5-4f4c-a419-f1728a15d1c7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d23922461638b819b1f102a56dd86c01f544bfa8
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 9d93cf34908a357a80d5f98ec5c6ebe401789845
+ms.sourcegitcommit: 4fdf9ae2e2b189d4efa6a6588898c8d46d0dda70
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="anomaly-detection-policy"></a>Stratégie de détection d’anomalie
 Cet article fournit des informations de référence sur les stratégies, donne une explication de chaque type de stratégie et décrit les champs que vous pouvez configurer pour chacune d’elle.  
 
-Une fois votre organisation protégée par Cloud App Security, toute l’activité cloud est évaluée en fonction de différents facteurs de risque prédéfinis. Cloud App Security examine chaque session utilisateur sur votre cloud, puis prend en considération les facteurs de risque que vous définissez ici afin d’être averti en cas d’événement anormal par rapport aux activités de référence ou habituelles de votre organisation ou de l’utilisateur. La page Stratégie de détection d’anomalie vous permet de configurer et de personnaliser les familles de facteurs de risque à prendre en compte dans le processus d’évaluation des risques. Vous pouvez adapter la stratégie en fonction de l’utilisateur, de l’emplacement ou du secteur de l’organisation. Par exemple, vous pouvez créer une stratégie qui vous avertit quand des membres de votre équipe informatique sont actifs en dehors de vos bureaux.  
+Une fois votre organisation protégée par Cloud App Security, toute l’activité cloud est évaluée en fonction de différents facteurs de risque prédéfinis. Cloud App Security examine chaque session utilisateur sur votre cloud, puis prend en considération les facteurs de risque que vous définissez ici afin d’être averti en cas d’événement anormal par rapport aux activités de référence ou habituelles de votre organisation ou de l’utilisateur. Vous pouvez adapter la stratégie en fonction de l’utilisateur, de l’emplacement ou du secteur de l’organisation. Par exemple, vous pouvez créer une stratégie qui vous avertit quand des membres de votre équipe informatique sont actifs en dehors de vos bureaux.  
 
-Cloud App Security passe par une période d’apprentissage initiale de sept jours au cours de laquelle il ne signale pas les nouveaux utilisateurs, activités, appareils ni emplacements comme anormaux. Après cela, chaque session est comparée aux activités (activité des utilisateurs, adresses IP, appareils, etc.) détectées au cours du mois passé et à l’indice de risque de ces activités. Utilisez le curseur de sensibilité de la stratégie pour définir l’indice de risque minimal à partir duquel les alertes sont déclenchées. Quand vous créez une stratégie de détection d’anomalie, il est recommandé d’utiliser le seuil de sensibilité par défaut pendant une semaine avant de le modifier selon le nombre d’alertes reçues ; Cloud App Security vous envoie plus ou moins d’alertes pour les différents indices de risque quand vous modifiez le niveau de sensibilité.
-  
-![curseur de sensibilité](./media/sensitivity-slider.png)
+Cloud App Security passe par une période d’apprentissage initiale de sept jours au cours de laquelle il ne signale pas les nouveaux utilisateurs, activités, appareils ni emplacements comme anormaux. Après cela, chaque session est comparée aux activités (activité des utilisateurs, adresses IP, appareils, etc.) détectées au cours du mois passé et à l’indice de risque de ces activités. 
+
+
+Les stratégies de détection d’anomalie suivantes sont disponibles :
+
+**Voyage impossible**
+- Cette détection fait partie du moteur de détection des anomalies global qui profile votre environnement et déclenche des alertes suivant une base de référence qui a été définie par rapport à l’activité de votre organisation. Elle identifie deux activités de l’utilisateur (dans une ou plusieurs sessions) provenant d’emplacements éloignés sur une durée plus courte que la durée nécessaire à l’utilisateur pour aller du premier emplacement au second, ce qui indique qu’un autre utilisateur utilise les mêmes informations d’identification. Cette détection s’appuie sur un algorithme d’apprentissage automatique qui ignore les « faux positifs » évidents contribuant à la condition de voyage impossible, comme les réseaux privés virtuels et les emplacements régulièrement utilisés par d’autres utilisateurs de l’organisation. La détection a une période d’apprentissage initiale de 7 jours au cours de laquelle elle apprend le modèle d’activité d’un nouvel utilisateur.
+
+
+**Activité à partir de pays peu fréquents**
+- Cette détection fait partie du moteur de détection des anomalies global qui profile votre environnement et déclenche des alertes suivant une base de référence qui a été définie par rapport à l’activité de votre organisation. Cette détection prend en compte les emplacements d’activité précédents pour identifier les emplacements nouveaux et peu fréquentés. Le moteur de détection des anomalies stocke les informations sur les emplacements précédents employés par les utilisateurs de l’organisation. Une alerte est déclenchée quand une activité se produit à partir d’un emplacement qui n’a pas été récemment visité ou qui ne l’a jamais été par l’utilisateur ou par aucun utilisateur de l’organisation. La détection a une période d’apprentissage initiale de 7 jours au cours de laquelle elle n’envoie aucune alerte sur aucun emplacement nouveau.
+
+
+**Activité depuis des adresses IP anonymes**
+- Cette détection fait partie du moteur de détection des anomalies global qui profile votre environnement et déclenche des alertes suivant une base de référence qui a été définie par rapport à l’activité de votre organisation. Cette détection identifie que des utilisateurs étaient actifs à partir d’une adresse IP qui a été identifiée comme adresse IP proxy anonyme. Ces proxys sont utilisés par des personnes qui veulent masquer l’adresse IP de leur appareil dans un but qui peut être malveillant. Cette détection s’appuie sur un algorithme d’apprentissage automatique qui réduit les « faux positifs », comme les adresses IP mal balisées qui sont couramment utilisées par les utilisateurs de l’organisation.
+
+**Activité à partir d’adresses IP suspectes**
+- Cette détection fait partie du moteur de détection des anomalies global qui profile votre environnement et déclenche des alertes suivant une base de référence qui a été définie par rapport à l’activité de votre organisation. Cette détection identifie que des utilisateurs étaient actifs à partir d’une adresse IP qui a été identifiée comme à risque par Microsoft Threat Intelligence. Ces IP sont impliqués dans des activités malveillantes, comme Botnet C&C, et peuvent être le signe de compte compromis. Cette détection s’appuie sur un algorithme d’apprentissage automatique qui réduit les « faux positifs », comme les adresses IP mal balisées qui sont couramment utilisées par les utilisateurs de l’organisation.
+
+
+**Activité X inhabituelle (par utilisateur)**
+- Cette détection fait partie du moteur de détection des anomalies global qui profile votre environnement et déclenche des alertes suivant une base de référence qui a été définie par rapport à l’activité de votre organisation. Cette détection identifie des utilisateurs qui effectuent plusieurs activités X dans une seule session en prenant en compte la base de référence apprise, ce qui peut indiquer une tentative de violation. Cette détection s’appuie sur un algorithme d’apprentissage automatique qui profile le modèle de connexion des utilisateurs et réduit les « faux positifs ».
+
+
+**Plusieurs tentatives de connexion infructueuses**
+- Cette détection fait partie du moteur de détection des anomalies global qui profile votre environnement et déclenche des alertes suivant une base de référence qui a été définie par rapport à l’activité de votre organisation. Cette détection identifie des utilisateurs qui tentent de se connecter plusieurs fois sans succès dans une seule session en prenant en compte la base de référence apprise, ce qui peut indiquer une tentative de violation. Cette détection s’appuie sur un algorithme d’apprentissage automatique qui profile le modèle de connexion des utilisateurs et réduit les « faux positifs ».
 
 Pour configurer une stratégie de détection d’anomalie :  
   
@@ -116,11 +139,7 @@ Chaque facteur de risque, s’il est inclus dans l’évaluation des risques, a 
 -   Taux d’activité : activités répétées effectuées par un utilisateur sur une courte période. 
 
 ### <a name="sensitivity"></a>Sensibilité  
-Il existe deux façons de contrôler le nombre d’alertes déclenchées par la stratégie :  
-  
--   Curseur Sensibilité : Choisissez le nombre d’alertes à déclencher pour 1 000 utilisateurs par semaine. Les alertes sont déclenchées pour les activités dont le risque est le plus élevé.  
-  
--   Limite d’alerte quotidienne : Restreignez le nombre d’alertes générées sur une journée.  
+Pour contrôler le nombre d’alertes déclenchées par la stratégie, définissez la **limite d’alerte quotidienne** et limitez le nombre d’alertes déclenchées par jour.  
   
 ## <a name="see-also"></a>Voir aussi  
 [Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)   

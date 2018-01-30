@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 1/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: e451031e-4764-411a-b366-73a49d4f25df
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 702c91ea2c1c57dc8d095697498bc75066df05b4
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: f970c293c5a1576db1800adc7870cd6f6088ab64
+ms.sourcegitcommit: 4fdf9ae2e2b189d4efa6a6588898c8d46d0dda70
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/29/2018
 ---
 ## <a name="govern-discovered-apps"></a>Gouverner les applications découvertes
 
@@ -33,6 +33,7 @@ Vous avez toujours la possibilité d’utiliser une application non approuvée, 
 
 Si vous voulez approuver/ne pas approuver une liste d’applications, cochez les cases des applications que vous voulez gérer, puis sélectionnez l’action appropriée.
 
+Pour interroger une liste d’applications non approuvées, vous pouvez [générer un script de bloc en utilisant les API Cloud App Security](https://mod636914.us.portal.cloudappsecurity.com/api-docs/#generate-block-script).
 
 ## <a name="export-a-block-script-to-govern-discovered-apps"></a>Exporter un script de blocage pour gouverner les applications découvertes
 

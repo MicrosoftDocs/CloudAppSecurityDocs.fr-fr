@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 1/21/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: fb7f64198ad2b7cbdcf8f9ff25e38611255f1fcf
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 9988a610e9768173f0c89458974997647cabceaa
+ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="connect-servicenow-to-microsoft-cloud-app-security"></a>Connecter ServiceNow à Microsoft Cloud App Security
 
@@ -48,7 +48,7 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
     
     - Dans le champ **Nom**, nommez le nouveau profil OAuth, par exemple CloudAppSecurity. 
     
-    - L’**ID de client** va être généré automatiquement. Copiez cet ID, vous devrez le coller dans Cloud App Security pour établir la connexion.
+    - L’**ID de client** est généré automatiquement. Copiez cet ID et collez-le dans Cloud App Security pour établir la connexion.
     
     - Dans le champ **Secret client**, entrez une chaîne. Si ce champ reste vide, un secret aléatoire est généré automatiquement. Copiez la clé et enregistrez-la pour l’utiliser ultérieurement. 
     
@@ -64,7 +64,7 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
   
      ![connecter servicenow](./media/connect-servicenow.png "connecter servicenow")  
   
-8.  Dans la fenêtre contextuelle, ajoutez vos ID d’utilisateur, mot de passe, URL d’instance, ID de client et secret client ServiceNow dans les zones appropriées. Pour trouver votre ID d’utilisateur ServiceNow, dans le portail ServiceNow, accédez à **Utilisateurs**, puis recherchez votre nom dans la table, celui-ci s’affiche en regard de votre ID d’utilisateur.
+8.  Dans la fenêtre contextuelle, ajoutez vos ID d’utilisateur, mot de passe, URL d’instance, ID de client et secret client ServiceNow dans les zones appropriées. Pour trouver votre ID d’utilisateur ServiceNow, dans le portail ServiceNow, accédez à **Utilisateurs**, puis recherchez votre nom dans la table, celui-ci s’affiche à côté de votre ID d’utilisateur.
 
     ![ID d’utilisateur ServiceNow](./media/servicenow-userid.png)
   
@@ -104,7 +104,7 @@ Pour connecter ServiceNow à Cloud App Security, vous devez avoir des autorisati
 
 8.  Vérifiez la connexion en cliquant sur **Test API** (Tester l’API).   
   
-   Le test peut prendre quelques minutes. Une fois averti que la connexion a réussi, cliquez sur **Fermer**.   
+   Le test peut prendre quelques minutes. Une fois averti que la connexion a réussi, cliquez sur **Fermer**.    
  Après avoir connecté ServiceNow, vous recevrez les événements des 60 jours précédant la connexion. 
 
 

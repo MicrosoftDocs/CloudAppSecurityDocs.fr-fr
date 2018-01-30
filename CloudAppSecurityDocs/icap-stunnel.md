@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: eeda929ecc4bc029f0fd292f4276ba55f202d314
-ms.sourcegitcommit: 9cfb4b4e91e37fa3acf238b729cb68be0adc7086
+ms.openlocfilehash: 6d0de456770d06967db07bb0d145908405196968
+ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/21/2018
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="external-dlp-integration"></a>Intégration DLP externe
 
@@ -232,7 +232,7 @@ Si le processus n’est toujours pas en cours d’exécution, consultez la [docu
    ![Connexion ICAP de Cloud App Security](./media/icap-wizard2.png)
 6. Cliquez sur **Suivant**. Cloud App Security teste la connectivité au serveur que vous avez configuré. Si vous recevez une erreur, passez en revue les instructions et les paramètres réseau. Une fois connecté, vous pouvez cliquer sur **Quitter**.
 
-7. Ensuite, pour diriger le trafic sur ce serveur DLP externe, quand vous créez une **Stratégie de fichier**, sous **Méthode d’inspection du contenu**, sélectionnez la connexion que vous venez de créer. En savoir plus sur la [création d’une stratégie de fichier](data-protection-policies.md).
+7. Ensuite, pour diriger le trafic sur ce serveur DLP externe, quand vous créez une **Stratégie de fichier**, sous **Méthode d’inspection du contenu**, sélectionnez la connexion que vous avez créée. En savoir plus sur la [création d’une stratégie de fichier](data-protection-policies.md).
 
 
 ## Annexe A : Configuration du serveur ICAP Forcepoint<a name="forcepoint"></a>
@@ -301,7 +301,7 @@ Ajoutez la règle que vous avez créée aux stratégies existantes :
 
 1. Dans chaque stratégie, basculez vers l’onglet **Réponse**.
 
-2. Dans la liste déroulante **Règle de réponse**, sélectionnez la règle de réponse Bloquer que vous avez créée ci-dessus.
+2. Dans la liste déroulante **Règle de réponse**, sélectionnez la règle de réponse Bloquer que vous avez créée plus tôt.
 
 3. Enregistrez la stratégie.
    
@@ -310,7 +310,7 @@ Ajoutez la règle que vous avez créée aux stratégies existantes :
 Cette règle doit être ajoutée à toutes les stratégies existantes.
 
 >[!NOTE]
-> Si vous utilisez Symantec vontu pour analyser des fichiers issus de Dropbox, l’autorité de certification affichera automatiquement le fichier comme provenant de l’URL suivante : http://misc/filename. Il s’agit d’un espace réservé qui ne mène nulle part, mais qui est utilisé à des fins de journalisation.
+> Si vous utilisez Symantec vontu pour analyser des fichiers issus de Dropbox, l’Autorité de certification affiche automatiquement le fichier comme provenant de l’URL suivante : http://misc/filename. Il s’agit d’un espace réservé qui ne mène nulle part, mais qui est utilisé à des fins de journalisation.
 
 
 ## <a name="see-also"></a>Voir aussi  

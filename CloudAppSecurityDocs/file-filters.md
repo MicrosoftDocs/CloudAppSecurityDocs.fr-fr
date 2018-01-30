@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 1/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c7c9fe0a5ace1bfd464160ee4c1c777cdc5f4195
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 995bcacd450856fb9aa75a4c7d48596a7fbc168c
+ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="files"></a>Fichiers
 
@@ -54,7 +54,10 @@ Vous trouverez ci-dessous la liste des filtres de fichiers qui peuvent être app
 
 >**Equals (Est égal à)** recherche uniquement la chaîne complète ; par exemple, si vous recherchez **malware.exe**, il trouve malware.exe, mais pas malware.exe.txt. 
 
--   Niveau d’accès : Niveau d’accès de partage, à savoir public, externe, interne ou privé.  Pour plus d’informations sur les fichiers externes, voir [Configuration générale, Configurer le portail](getting-started-with-cloud-app-security.md). Les fichiers internes sont tous les fichiers dans les domaines internes que vous définissez dans [Configuration générale](General-setup.md). Les fichiers externes sont tous les fichiers enregistrés à des emplacements hors des domaines internes que vous définissez. Les fichiers partagés ont un niveau de partage au-dessus du niveau privé, ce qui inclut le partage interne (fichiers partagés au sein de vos domaines internes), le partage externe (fichiers partagés dans des domaines qui ne figurent pas dans vos domaines internes), les fichiers publics avec un lien (fichiers qui peuvent être partagés avec tout le monde via un lien) et les fichiers publics (fichiers accessibles via une recherche sur Internet). 
+-   Niveau d’accès : Niveau d’accès de partage, à savoir public, externe, interne ou privé.  Pour plus d’informations sur les fichiers externes, consultez [Configuration générale, configurer le portail](getting-started-with-cloud-app-security.md)
+    - Les fichiers internes se trouvent dans les domaines internes que vous définissez dans [Configuration générale](General-setup.md). 
+    - Les fichiers externes sont tous les fichiers enregistrés à des emplacements hors des domaines internes que vous définissez. 
+    - Les fichiers partagés ont un niveau de partage au-dessus du niveau privé, ce qui inclut le partage interne (fichiers partagés au sein de vos domaines internes), le partage externe (fichiers partagés dans des domaines qui ne figurent pas dans vos domaines internes), les fichiers publics avec un lien (fichiers qui peuvent être partagés avec tout le monde via un lien) et les fichiers publics (fichiers accessibles via une recherche sur Internet). 
 
 > [!NOTE]
 >  Les fichiers partagés dans vos applications de stockage connectées par des utilisateurs externes sont gérées comme suit par Cloud App Security :
