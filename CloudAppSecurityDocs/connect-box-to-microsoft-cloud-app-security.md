@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 2/5/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b3e4713e-986f-4a5e-9fcc-f8de94dd0df7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7bceda231435dad7b669a38d06611fc551c38c08
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 54dd79b76386eda64e06936801849089c5f7d438
+ms.sourcegitcommit: 8bfb8236b83f7423e73fe449d662935c084ff844
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="connect-box-to-microsoft-cloud-app-security"></a>Connecter Box à Microsoft Cloud App Security
 Cette section fournit des instructions pour connecter Cloud App Security à votre compte Box existant à l’aide des API du connecteur d’applications.  
@@ -37,7 +37,7 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
   
          ![box, applications](./media/box-apps.png "box, applications")  
   
-    -   Si l’option **Unpublished Applications** (Applications non publiées) est sélectionnée, dans la zone de texte **Except for** (À l’exception de), ajoutez le numéro de série de l’application Cloud App Security :<br></br>Centre de données US1 : `nduj1o3yavu30dii7e03c3n7p49cj2qh` <br></br>Centre de données EU1 : `me9cm6n7kr4mfz135yt0ab9f5k4ze8qp`<br></br>Cliquez ensuite sur **Enregistrer**. Pour savoir à quel centre de données Cloud App Security vous êtes connecté, consultez [Jetons d’API](api-tokens.md). 
+    -   Si l’option **Unpublished Applications** (Applications non publiées) est sélectionnée, dans la zone de texte **Except for** (À l’exception de), ajoutez le numéro de série de l’application Cloud App Security :<br></br>Centre de données US1 : `nduj1o3yavu30dii7e03c3n7p49cj2qh` <br></br>Centre de données US2 : `w0ouf1apiii9z8o0r6kpr4nu1pvyec75`<br></br>Centre de données EU1 : `me9cm6n7kr4mfz135yt0ab9f5k4ze8qp`<br></br>Cliquez ensuite sur **Enregistrer**. Pour savoir à quel centre de données Cloud App Security vous êtes connecté, consultez [Jetons d’API](api-tokens.md). 
   
          ![paramètres box, except for (à l’exception de)](./media/box-settings-except-for.png "paramètres box, except for (à l’exception de)")  
   
