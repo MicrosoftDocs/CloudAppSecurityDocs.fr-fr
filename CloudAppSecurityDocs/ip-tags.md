@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2017
+ms.date: 1/21/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,15 +13,15 @@ ms.technology:
 ms.assetid: bbf54f66-4ce2-428c-afc8-b5a64277014f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 758605fddf97c0f35cbc0c3029d20e536fc9dee1
-ms.sourcegitcommit: 2e89f41bc2581859a24d55b700dcd89e70e730a5
+ms.openlocfilehash: dc032e1e5b560a8f6550a091c6694d0f63ff5822
+ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2017
+ms.lasthandoff: 01/24/2018
 ---
 #  <a name="IPtagsandRanges"></a> Utilisation des balises et des plages d’adresses IP
 
-Pour identifier facilement les adresses IP connues, telles que les adresses IP physiques de votre bureau, vous devez définir des plages d’adresses IP qui vous permettent de marquer et de classer les adresses de manière appropriée, ainsi que de personnaliser la façon dont les journaux et les alertes sont affichés et examinés.   
+Pour identifier facilement les adresses IP connues, telles que les adresses IP physiques de votre bureau, vous devez définir des plages d’adresses IP qui vous permettent de marquer et de classer les adresses de manière appropriée, ainsi que de personnaliser la façon dont les journaux et les alertes sont affichés et examinés. <br></br>  
 Chaque groupe de plages IP peut être classé selon une liste de catégories d’adresses IP prédéfinies ou marqué avec des étiquettes IP créées par vos soins. En outre, ce paramètre vous permet de remplacer les informations de géolocalisation publiques en fonction de votre connaissance du réseau interne.  
   
 IPv4 et IPv6 sont pris en charge.  
@@ -45,11 +45,11 @@ Pour utiliser ces balises intégrées dans le cadre d’une recherche, reportez-
 
 Les balises d’adresse IP intégrées et les balises d’adresse IP personnalisées sont considérées de manière hiérarchique, les balises d’adresse IP personnalisées étant prioritaires sur les balises d’adresse IP intégrées. Par exemple, si une adresse IP est marquée comme étant **Risquée** en fonction de l’intelligence des menaces, mais qu’il existe une balise d’adresse IP personnalisée qui l’identifie comme appartenant à **l’Entreprise**, les balises et la catégorie personnalisées sont prioritaires.
 
-Dans la barre de menus, cliquez sur l’icône des paramètres ![icône des paramètres](./media/settings-icon.png "icône des paramètres") et sélectionnez **Plages d’adresses IP**. Cliquez sur **Ajouter une plage d’adresses IP** et définissez les éléments suivants :  
+Dans la barre de menus, cliquez sur l’icône des paramètres ![icône des paramètres](./media/settings-icon.png "icône des paramètres") et sélectionnez **Plages d’adresses IP**. Cliquez sur **+Ajouter une plage d’adresses IP** et définissez les champs suivants :  
   
 > [!NOTE]  
->  L’emplacement et l’ISP enregistré remplacent les valeurs par défaut.   
-> Toutefois, les étiquettes IP sont ajoutées à l’activité sans remplacer les données.  
+> - L’emplacement et l’ISP enregistré remplacent les valeurs par défaut.   
+> - Toutefois, les étiquettes IP sont ajoutées à l’activité sans remplacer les données.  
   
 1.  Affectez un **Nom** à votre plage IP. Le nom n’apparaît pas dans le journal des activités ; il sert uniquement à gérer votre plage IP.  
   
@@ -71,7 +71,7 @@ Dans la barre de menus, cliquez sur l’icône des paramètres ![icône des para
   
     -  **Fournisseur de cloud** : adresses IP utilisées par votre fournisseur de cloud.
   
-    -   **Entreprise** : adresses IP de votre réseau interne, de vos succursales et adresses d’itinérance Wi-Fi.  
+    -   **Entreprise** : adresses IP de votre réseau interne, de vos succursales et de vos adresses d’itinérance Wi-Fi.  
   
     -   **Risqué** : toutes les adresses IP que vous considérez comme risquées. Celles-ci peuvent inclure les adresses IP suspectes déjà constatées, les adresses IP appartenant aux réseaux de vos concurrents, etc.  
   
@@ -86,7 +86,7 @@ Dans la barre de menus, cliquez sur l’icône des paramètres ![icône des para
     
 ## <a name="see-also"></a>Voir aussi  
 [Configurer Cloud Discovery](set-up-cloud-discovery.md)   
-[Pour obtenir un support technique, visitez la page de support assisté Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier.](https://premier.microsoft.com/)  
   
   

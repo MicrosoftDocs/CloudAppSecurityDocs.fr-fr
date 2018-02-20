@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 7a06a243-9ec2-4a11-8db2-bc065cdfef64
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 66fbed4fd298b73e53245d2cc50ebdd4b0bb3486
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: 4bb90d94fdab3725c853a772df1c484260a6c5ec
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="protecting-your-organization-from-ransomware"></a>Protection de votre organisation contre les ransomwares
 
@@ -35,7 +35,7 @@ Un utilisateur de votre organisation est la cible d’une attaque de ransomware.
 ## <a name="the-solution"></a>LA SOLUTION
 Détectez les ransomwares potentiels dans votre environnement cloud en créant une stratégie qui vous alerte quand une activité suspecte est détectée, et configurez des actions automatiques pour empêcher les fichiers infectés par le ransomware d’être enregistrés dans votre cloud.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 
 [Connectez](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) au moins une application cloud (Office 365, G Suite, Box et Dropbox) à Cloud App Security.
 
@@ -75,7 +75,7 @@ Après avoir validé et affiné la stratégie, supprimez les faux positifs possi
 
  ## <a name="see-also"></a>Voir aussi  
 [Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)   
-[Pour obtenir un support technique, visitez la page de support assisté Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier.](https://premier.microsoft.com/)  
   
   

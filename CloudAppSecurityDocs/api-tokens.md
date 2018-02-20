@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/9/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4f5e6b1e-6b2c-4358-98f0-945e2993d5fe
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e8e86368429fac280b5555d85a0de3ec1789effa
-ms.sourcegitcommit: 2fe9475d428855a6dab6fa2edd0ccd56d66f87ec
+ms.openlocfilehash: a7ae478fcd85bdb16a1783886f274a8ab81462bb
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="api-tokens"></a>Jetons d’API
     
@@ -74,7 +74,7 @@ Une fois qu’un jeton est révoqué, il est supprimé du tableau, et le logicie
 
 ## <a name="see-also"></a>Voir aussi  
 [Résolution des problèmes d’intégration de SIEM](troubleshooting-siem.md)   
-[Pour obtenir du support technique, consultez la page Support assisté Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier.](https://premier.microsoft.com/)  
 
 ## <a name="check-out-this-video"></a>Regardez cette vidéo !

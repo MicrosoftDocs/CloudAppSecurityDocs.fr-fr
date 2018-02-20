@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 1/30/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ad089d71975a83c2f41fb9a9694acb8d01defdc7
-ms.sourcegitcommit: c4b40afff6a66b101fadfc1bd221c10186bad71a
+ms.openlocfilehash: 939e5c13f786adff59db189b1e54cc414f61c1b5
+ms.sourcegitcommit: 8d137c4ee27819cde6fb966d71b7809818347e5f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="network-requirements"></a>Configuration requise pour le réseau
 
@@ -84,7 +84,7 @@ Pour se connecter à des applications tierces, autorisez Cloud App Security à s
 |EU|52.174.56.180<br></br>13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
  
 
-## <a name="dlp-integration"></a>Intégration DLP
+## <a name="third-party-dlp-integration"></a>Intégration de solutions DLP tierces
 
 Pour que Cloud App Security envoie des données via votre stunnel à votre serveur ICAP, ouvrez votre pare-feu DMZ à ces adresses IP avec un numéro de port source dynamique. 
 
@@ -129,14 +129,14 @@ Pour activer les fonctionnalités Cloud Discovery à l’aide d’un collecteur 
     |EU|https://prod02euwconsole1.blob.core.windows.net/|
 
 > [!NOTE]
-> Si votre pare-feu nécessite une liste d’accès à d’adresses IP statiques et qu’il ne prend pas en charge une liste verte basée sur des URL, autorisez le collecteur de journaux à émettre le trafic sortant vers les [plages IP du centre de données Microsoft Azure](https://www.microsoft.com/download/details.aspx?id=41653) sur le port 443.
-
+> - Si votre pare-feu nécessite une liste d’accès à d’adresses IP statiques et qu’il ne prend pas en charge une liste verte basée sur des URL, autorisez le collecteur de journaux à émettre le trafic sortant vers les [plages IP du centre de données Microsoft Azure](https://www.microsoft.com/download/details.aspx?id=41653) sur le port 443.
+>- Autorisez le collecteur de journaux à diriger le trafic sortant vers le portail Cloud App Security.
 
 
 
 ## <a name="see-also"></a>Voir aussi  
 [Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)   
-[Pour obtenir un support technique, visitez la page de support assisté Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier.](https://premier.microsoft.com/)  
   
 

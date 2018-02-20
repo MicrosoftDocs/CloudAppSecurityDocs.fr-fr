@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2017
+ms.date: 1/15/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 1742fbaae18fe4624bf057e54b9e11d2d68c5335
-ms.sourcegitcommit: c4b40afff6a66b101fadfc1bd221c10186bad71a
+ms.openlocfilehash: 4b673fa732e553319483f11af5c95e33148bb05f
+ms.sourcegitcommit: 9cfb4b4e91e37fa3acf238b729cb68be0adc7086
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2018
+ms.lasthandoff: 01/21/2018
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>Connecter G Suite à Microsoft Cloud App Security
 Cette section fournit des instructions pour connecter Cloud App Security à votre compte G Suite existant à l’aide des API du connecteur.
@@ -185,7 +185,7 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
   
            https://www.googleapis.com/auth/admin.directory.user  
 
-    -   Quand G Suite demande une visibilité, sélectionnez **Mon domaine** (et non pas public). 
+    -   Sous **Visibilité**, sélectionnez **Mon domaine** (et non pas public). 
     -   Cliquez sur **Save Changes (Enregistrer les modifications)**.  
   
 22. Accédez à [admin.google.com](https://admin.google.com/), puis choisissez **Sécurité**. 
@@ -239,7 +239,7 @@ Après la connexion de G Suite, Cloud App Security effectue une analyse complè
   
 ## <a name="see-also"></a>Voir aussi  
 [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)   
-[Pour obtenir du support technique, consultez la page Support assisté Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier.](https://premier.microsoft.com/)  
   
   

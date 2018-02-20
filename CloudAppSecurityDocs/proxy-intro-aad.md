@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/20/2017
+ms.date: 2/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 35a43120-bf67-4cf9-9b48-ebe157dbbd18
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d180fce8789fa20bea7135ce3fba437db996dcce
-ms.sourcegitcommit: 3d943dbb0e0850af0dc390a78d8feca2f3fde61b
+ms.openlocfilehash: 850436b8cb0c7a8e63a67a408ba51b6fecd9ac19
+ms.sourcegitcommit: 8bfb8236b83f7423e73fe449d662935c084ff844
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/20/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-proxy"></a>Protéger des applications avec le proxy Microsoft Cloud App Security
 
@@ -84,14 +84,42 @@ Le proxy prend actuellement en charge les applications configurées avec l’aut
 > - En préversion privée, le proxy prend également en charge les applications qui sont configurées avec des fournisseurs d’identité autres qu’Azure AD. Pour plus d’informations sur la préversion privée, envoyez un e-mail à mcaspreview@microsoft.com.
 > - Les applications Office 365 ne sont pas configurées avec le format SAML si bien qu’elles ne sont pour le moment pas prises en charge.
 
-De plus, le contrôle de session n’est pas automatiquement disponible pour toutes les applications. L’équipe Cloud App Security a testé de nombreuses applications populaires avec le contrôle de session. D’autres applications peuvent nécessiter un processus d’intégration effectué avec le client.
-En termes de clients, le contrôle de session est disponible sur tous les navigateurs de toutes les plateformes majeures. Cependant, les applications mobiles et les applications de poste de travail ne sont pas prises en charge par le contrôle de session. 
+Le contrôle de session est disponible pour tous les navigateurs de toutes les principales plateformes (les applications de bureau et les applications mobiles ne sont pas prises en charge pour l’instant). Avec l’intégration en mode natif à Azure AD, toutes les applications qui sont configurées avec l’authentification unique SAML dans Azure AD peuvent être prises en charge, notamment les applications proposées suivantes :
+
+-   Salesforce
+
+-   Box
+
+-   G Suite
+
+-   Workday
+
+-   Slack
+
+-   Workplace by Facebook
+
+-   ServiceNow
+
+-   JIRA/Confluence
+
+-   AWS
+
+-   Workiva
+
+-   CornerStone on Demand
+
+-   DocuSign
+
+-   HighQ 
+
+De nouvelles applications sont intégrées au contrôle de session en continu. Si vous êtes intéressé par une application spécifique qui n’est pas mentionnée ici, [envoyez-nous des détails sur l’application](mailto:casfeedback@microsoft.com) et le cas d’utilisation qui vous intéresse et nous l’intégrerons.
+
 
 
 
 ## <a name="see-also"></a>Voir aussi  
 [Déployer le proxy Cloud App Security](proxy-deployment-aad.md)   
-[Pour obtenir du support technique, consultez la page Support assisté Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier.](https://premier.microsoft.com/)  
   
 

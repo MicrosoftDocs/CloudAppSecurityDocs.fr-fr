@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/18/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 14d10238-0f61-43e9-ab96-71534a27d3d4
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 342f0eb03a79bfc3ee1d43d101d0c27769e1b9d4
-ms.sourcegitcommit: 0dc6e8eae04e8b5901eef7dbe558238790f07140
+ms.openlocfilehash: 89a71f9274d5005a93576dfc4ef6436870b9bd4b
+ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="control-cloud-apps-with-policies"></a>Contrôler les applications cloud avec des stratégies
 
@@ -26,11 +26,11 @@ Grâce aux stratégies, vous pouvez définir la façon dont vous souhaitez que v
 Par exemple, le type de stratégie à mettre en place diffère selon que vous souhaitez mettre en quarantaine une menace de violation de données ou empêcher votre organisation d’utiliser une application cloud à risque.  
   
 ## <a name="policy-types"></a>Types de stratégies  
-Lorsque vous examinez la page **Stratégie**, les différentes stratégies et les différents modèles peuvent être distingués par type et par icône pour savoir quelles stratégies seront disponibles. Les stratégies disponibles dépendent de la source de données et de ce que vous avez activé dans Cloud App Security pour votre organisation ; par exemple, si vous avez téléchargé des journaux Cloud Discovery, les stratégies relatives à Cloud Discovery sont affichées.
+Lorsque vous examinez la page **Stratégie**, les différentes stratégies et les différents modèles peuvent être distingués par type et par icône pour savoir quelles stratégies sont disponibles. Les stratégies disponibles dépendent de la source de données et de ce que vous avez activé dans Cloud App Security pour votre organisation ; par exemple, si vous avez téléchargé des journaux Cloud Discovery, les stratégies relatives à Cloud Discovery sont affichées.
 
 Vous pouvez créer les types de stratégies suivants :  
   
-|Icône de type de stratégie|Type de stratégie|Utilisation|  
+|Icône de type de stratégie|Type de stratégie|Utiliser|  
 |-----|-----------------|---------|  
 |![icône de stratégie d’accès](./media/proxy-policy.png)|Stratégie d’accès|Les stratégies d’accès vous offrent une surveillance et un contrôle en temps réel des connexions utilisateur à vos applications cloud.|
 |![Icône de stratégie d’activité](./media/activity_policy.png)|Stratégie d’activité|Grâce aux stratégies d’activité, vous pouvez appliquer une large gamme de processus automatisés en exploitant les API du fournisseur d’application. Ces stratégies vous permettent de surveiller des activités spécifiques effectuées par différents utilisateurs ou de suivre les taux anormalement élevés d’un certain type d’activité.|  
@@ -58,8 +58,7 @@ Cloud App Security vous permet d’atténuer différents risques dans le cloud. 
   
 -   **Cloud Discovery :**  Des applications nouvelles sont-elles utilisées dans votre organisation ? Des applications Shadow IT que vous ignorez sont-elles utilisées ?  
   
-     Évaluez le risque global pour chaque application cloud en fonction de la réglementation, ainsi que des bonnes pratiques et certifications de l’industrie.  
-    Grâce à cette approche, vous pouvez surveiller le nombre d’utilisateurs, les activités, le volume de trafic et les heures d’utilisation classiques pour  
+     L’évaluation du risque global pour chaque application cloud en fonction des certifications réglementaires et du secteur et des bonnes pratiques vous permet de surveiller le nombre d’utilisateurs, les activités, le volume du trafic et les heures d’utilisation classiques pour  
     chaque application cloud.  
   
 -   **DLP :** Des fichiers propriétaires sont-ils partagés publiquement ? Devez-vous mettre des fichiers en quarantaine ?  
@@ -92,7 +91,7 @@ Vous pouvez baser toutes vos stratégies sur les modèles de stratégie de Cloud
   
 Les modèles de stratégie vous aident à définir les filtres et configurations nécessaires pour détecter dans votre environnement des événements spécifiques dignes d’intérêt. Les modèles comprennent des stratégies de tous types et peuvent s’appliquer à divers services.  
   
-Pour créer une stratégie à partir d’un **modèle de stratégie**, procédez comme suit :  
+Pour créer une stratégie à partir de **modèles de stratégie**, effectuez les étapes suivantes :  
   
 1.  Dans la console, cliquez sur **Contrôle**, puis sur **Modèles**.  
   
@@ -102,9 +101,9 @@ Pour créer une stratégie à partir d’un **modèle de stratégie**, procédez
   
 3.  Modifiez le modèle en fonction des besoins de votre stratégie personnalisée. Vous pouvez modifier librement chaque propriété et champ de cette nouvelle stratégie basée sur un modèle.  
 > [!NOTE] 
->Quand vous utilisez des filtres de stratégie, le filtre **Contains (Contient)** recherche uniquement des mots entiers, séparés par des virgules, points, espaces ou traits de soulignement. Par exemple, si vous recherchez **malware** ou **virus**, il trouve virus_malware_file.exe, mais pas malwarevirusfile.exe. Si vous recherchez **malware.exe**, vous obtenez tous les fichiers exe dont le nom contient malware ou exe, tandis que si vous recherchez **"malware.exe"** (avec les guillemets), vous n’obtenez que les fichiers dont le nom contient exactement « malware.exe ». 
-     **Equals (Est égal à)** recherche uniquement la chaîne complète ; par exemple, si vous recherchez **malware.exe**, il trouve malware.exe, mais pas malware.exe.txt.  
-4.  Une fois la stratégie basée sur un modèle créée, un lien vers celle-ci s’affiche dans la colonne **Stratégies liées** de la table des modèles de stratégie, en regard du modèle à partir duquel la stratégie a été créée.  
+>Quand vous utilisez des filtres de stratégie, le filtre **Contains (Contient)** recherche uniquement des mots entiers, séparés par des virgules, points, espaces ou traits de soulignement. Par exemple, si vous recherchez **malware** ou **virus**, il trouve virus_malware_file.exe, mais pas malwarevirusfile.exe. Si vous recherchez *malware.exe*, vous obtenez TOUS les fichiers exe dont le nom contient malware ou exe, tandis que si vous recherchez **"malware.exe"** (avec les guillemets), vous n’obtenez que les fichiers dont le nom contient exactement « malware.exe ». 
+     **Equals (Est égal à)** recherche uniquement la chaîne complète ; par exemple, si vous recherchez *malware.exe*, il trouve malware.exe, mais pas malware.exe.txt.  
+4.  Une fois la stratégie basée sur un modèle créée, un lien vers celle-ci s’affiche dans la colonne **Stratégies liées** de la table des modèles de stratégie, en regard du modèle à partir duquel la stratégie a été créée.   
      Vous pouvez, à partir de chaque modèle, créer autant de stratégies que vous le souhaitez, qui seront toutes liées au modèle d’origine ; ainsi, vous pouvez effectuer le suivi de toutes les stratégies créées à l’aide du même modèle.  
   
 Vous pouvez également **créer une stratégie au cours d’un examen**. Si vous examinez le **Journal d’activité**, les **Fichiers** ou les **Comptes** à la recherche d’un élément spécifique, à tout moment, vous pouvez créer une stratégie basée sur les résultats de votre examen.  
@@ -112,7 +111,7 @@ Vous pouvez également **créer une stratégie au cours d’un examen**. Si vous
 Cela peut arriver si vous examinez le **Journal d’activité** et que vous constatez qu’une activité d’administration ne provient pas de la plage d’adresses IP de votre bureau.
 
   
-Pour créer une stratégie basée sur les résultats de l’examen, procédez comme suit :  
+Pour créer une stratégie basée sur les résultats de l’examen, effectuez les étapes suivantes :  
   
 1.  Dans la console, cliquez sur **Examiner**, puis sur **Journal d’activité**, **Fichiers** ou **Comptes**.  
   
@@ -137,7 +136,7 @@ Pour créer une stratégie basée sur les résultats de l’examen, procédez co
  
   
 > [!NOTE]  
->  Pour plus d’informations sur la définition des champs d’une stratégie, reportez-vous à la documentation de stratégie correspondante :  
+>  Pour plus d’informations sur la définition des champs d’une stratégie, consultez la documentation de stratégie correspondante :  
 >   
 >  [Stratégies d’activité utilisateur](user-activity-policies.md)  
 >   
@@ -155,12 +154,12 @@ Vous pouvez également définir la stratégie pour qu’elle vous envoie une ale
 Pour définir vos préférences de notification, vous devez [personnaliser le portail](general-setup.md) 
   
 > [!NOTE] 
-> Le nombre maximal d’alertes envoyées via SMS est de 10 par numéro de téléphone par jour. Notez que le jour est calculé selon le fuseau horaire UTC. 
+> Le nombre maximal d’alertes envoyées via SMS est de 10 par numéro de téléphone par jour. Le jour est calculé selon le fuseau horaire UTC. 
 
 
 ## <a name="enable-and-disable-policies"></a>Activer et désactiver des stratégies
 
-Une fois que vous avez créé une stratégie, vous pouvez l’activer ou la désactiver. Cela vous évite de devoir la supprimer pour l’arrêter. Donc, si vous souhaitez arrêter une stratégie pour une raison quelconque, il vous suffit de la désactiver. Vous pouvez la réactiver à tout moment.
+Une fois que vous avez créé une stratégie, vous pouvez l’activer ou la désactiver. Cela vous évite de devoir la supprimer pour l’arrêter. Donc, si vous souhaitez arrêter une stratégie pour une raison ou une autre, désactivez-la. Vous pouvez la réactiver à tout moment.
 
 - Pour activer une stratégie, dans la page **Stratégie**, cliquez sur les trois points situés à la fin de la ligne de la stratégie à activer, puis sélectionnez **Activer**. 
 
@@ -174,6 +173,6 @@ Quand vous créez une stratégie, celle-ci est activée par défaut.
 
 ## <a name="see-also"></a>Voir aussi  
 [Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)   
-[Pour obtenir un support technique, visitez la page de support assisté Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier.](https://premier.microsoft.com/)  
   

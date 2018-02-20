@@ -1,11 +1,11 @@
 ---
-title: Configurer le chargement automatique des journaux pour des rapports continus | Microsoft Docs
+title: Configurer le chargement automatique des journaux pour des rapports continus | Documentation Microsoft
 description: "Cette rubrique décrit la procédure de configuration du chargement automatique des journaux pour des rapports continus dans Cloud App Security à l’aide d’un Docker sous Ubuntu sur un serveur local."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2017
+ms.date: 1/15/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b1155fa6ade88636f2dac575bfaa84db0f7bdd8b
-ms.sourcegitcommit: e547c4c91d8de9d4da376e4d4eebbe18c503b7ca
+ms.openlocfilehash: 4d1e5c839f6cd8e22cb10182b26d3158e33f3b59
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Installation et configuration sur Ubuntu
 
@@ -159,8 +159,6 @@ Après avoir vérifié que les journaux sont en cours de chargement dans Cloud A
 ## <a name="see-also"></a>Voir aussi
 
 [Résolution des problèmes du déploiement docker Cloud Discovery](troubleshoot-docker.md)
-
-[Pour obtenir un support technique, visitez la page de support assisté de Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)  
 
 [Les clients Premier peuvent également choisir Cloud App Security directement dans le portail Premier.](https://premier.microsoft.com/)
 

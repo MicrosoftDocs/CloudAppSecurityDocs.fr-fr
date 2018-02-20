@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/20/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,15 @@ ms.technology:
 ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ebf5f375cdb0df5f844452beea8259a190d3c0c1
-ms.sourcegitcommit: 3d943dbb0e0850af0dc390a78d8feca2f3fde61b
+ms.openlocfilehash: 7b8fad0013cc645d380a0c967049937a479b344d
+ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/20/2017
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="file-policies"></a>Stratégies de fichier  
-Les stratégies de fichier vous permettent d’appliquer une large gamme de processus automatisés en exploitant les API du fournisseur de cloud. Vous pouvez définir des stratégies pour fournir des analyses de conformité en continu, des tâches eDiscovery réglementaires, une protection contre la perte de données (DLP, Data Loss Prevention) au contenu sensible partagé publiquement et de nombreux autres cas d’usage.  
+Les stratégies de fichier vous permettent d’appliquer une large gamme de processus automatisés en exploitant les API du fournisseur de cloud. Vous pouvez définir des stratégies pour fournir des analyses de conformité en continu, des tâches eDiscovery réglementaires, une protection contre la perte de données (DLP, Data Loss Prevention) au contenu sensible partagé publiquement et de nombreux autres cas d’usage.  <br></br>
+
 Cloud App Security peut surveiller n’importe quel type de fichier en fonction de plus de 20 filtres de métadonnées (par exemple, niveau d’accès, type de fichier). 
  
 **Types de fichiers pris en charge** 
@@ -39,22 +40,21 @@ Une fois activée, la stratégie analyse en permanence votre environnement cloud
   
 Voici quelques exemples de stratégies de fichier que vous pouvez créer :  
   
--   Fichiers partagés publiquement :  
+-   Fichiers partagés publiquement : <br></br>
     Recevez une alerte quand un fichier situé dans le cloud est publiquement partagé en sélectionnant tous les fichiers dont le niveau de partage est public.  
   
--   Le nom de fichier publiquement partagé contient le nom de l’organisation :  
-    Recevez une alerte quand un fichier contient le nom de votre organisation et qu’il est publiquement partagé. Sélectionnez les fichiers dont le nom contient celui de votre organisation et qui sont publiquement partagés.  
+-   Le nom de fichier publiquement partagé contient le nom de l’organisation : <br></br> Recevez une alerte quand un fichier contient le nom de votre organisation et qu’il est publiquement partagé. Sélectionnez les fichiers dont le nom contient celui de votre organisation et qui sont publiquement partagés.  
   
--   Partage avec des domaines externes :  
+-   Partage avec des domaines externes :  <br></br>
     Recevez une alerte quand un fichier est partagé avec des comptes appartenant à des domaines externes spécifiques, par exemple, au domaine d’un concurrent. Sélectionnez le domaine externe avec lequel vous voulez limiter le partage.  
   
--   Mettez en quarantaine les fichiers partagés qui n’ont pas été modifiés pendant la dernière période :  
+-   Mettez en quarantaine les fichiers partagés qui n’ont pas été modifiés pendant la dernière période :  <br></br>
     Recevez une alerte sur les fichiers partagés que personne n’a modifié dernièrement, afin de les mettre en quarantaine ou d’activer une action automatisée. Excluez tous les fichiers privés qui n’ont pas été modifiés pendant une plage de dates spécifiée. Sur G Suite, vous pouvez choisir de mettre en quarantaine ces fichiers, en cochant la case « Fichier en quarantaine » dans la page de création de stratégie.  
   
--   Partage avec des utilisateurs non autorisés :  
-    Recevez une alerte quand des fichiers sont partagés avec un groupe non autorisé d’utilisateurs dans votre organisation. Sélectionnez les utilisateurs avec lesquels le partage n’est pas autorisé.  
+-   Partage avec des utilisateurs non autorisés :  <br></br>
+    Recevez une alerte quand des fichiers sont partagés avec un groupe non autorisé d’utilisateurs dans votre organisation. Sélectionnez les utilisateurs pour lesquels le partage n’est pas autorisé.  
   
--   Extension de fichier sensible :  
+-   Extension de fichier sensible :  <br></br>
     Recevez une alerte quand des fichiers portant des extensions spécifiques sont potentiellement très exposés. Sélectionnez l’extension spécifique (par exemple, crt pour les certificats) ou le nom de fichier et excluez celles avec le niveau de partage privé.  
   
 Pour créer une stratégie de fichier, procédez comme suit :  
@@ -69,17 +69,17 @@ Pour créer une stratégie de fichier, procédez comme suit :
 
 4.  Dans **Catégorie**, liez la stratégie au type de risque le plus approprié. Ce champ est à titre informatif uniquement et vous permet de rechercher ultérieurement des stratégies et alertes spécifiques, selon le type de risque.  Le risque est peut-être déjà présélectionné en fonction de la catégorie pour laquelle vous avez choisi de créer la stratégie. Par défaut, les stratégies de fichier ont la valeur DLP.  
   
-5.  Pour définir les applications découvertes qui déclenchent cette stratégie, **Créer un filtre pour les fichiers sur lesquels cette stratégie s’appliquera**, limitez les filtres de stratégie jusqu’à atteindre l’ensemble de fichiers le plus précis sur lequel vous voulez agir. Soyez aussi restrictif que possible afin d’éviter les faux positifs. Par exemple, si vous voulez supprimer les autorisations publiques, n’oubliez pas d’ajouter le filtre **Public** ; si vous voulez supprimer un utilisateur externe, utilisez le filtre « Externe », etc.  
+5.  Pour définir les applications découvertes qui déclenchent cette stratégie, **Créez un filtre pour les fichiers sur lesquels cette stratégie s’appliquera**. Limitez les filtres de stratégie jusqu’à atteindre l’ensemble de fichiers le plus précis sur lequel vous voulez agir. Soyez aussi restrictif que possible pour éviter les faux positifs. Par exemple, si vous voulez supprimer les autorisations publiques, n’oubliez pas d’ajouter le filtre **Public** ; si vous voulez supprimer un utilisateur externe, utilisez le filtre « Externe », etc.  
 > [!NOTE] 
-> Quand vous utilisez des filtres de stratégie, le filtre **Contains (Contient)** recherche uniquement des mots entiers, séparés par des virgules, points, espaces ou traits de soulignement. Par exemple, si vous recherchez **malware** ou **virus**, il trouve virus_malware_file.exe, mais pas malwarevirusfile.exe. Si vous recherchez **malware.exe**, vous obtenez tous les fichiers exe dont le nom contient malware ou exe, tandis que si vous recherchez **"malware.exe"** (avec les guillemets), vous n’obtenez que les fichiers dont le nom contient exactement « malware.exe ». **Equals (Est égal à)** recherche uniquement la chaîne complète ; par exemple, si vous recherchez **malware.exe**, il trouve malware.exe, mais pas malware.exe.txt.  
+> Quand vous utilisez des filtres de stratégie, le filtre **Contains (Contient)** recherche uniquement des mots entiers, séparés par des virgules, points, espaces ou traits de soulignement. Par exemple, si vous recherchez **malware** ou **virus**, il trouve virus_malware_file.exe, mais pas malwarevirusfile.exe. Si vous recherchez **malware.exe**, vous obtenez TOUS les fichiers exe dont le nom contient malware ou exe, tandis que si vous recherchez **"malware.exe"** (avec les guillemets), vous n’obtenez que les fichiers dont le nom contient exactement « malware.exe ». **Equals (Est égal à)** recherche uniquement la chaîne complète ; par exemple, si vous recherchez **malware.exe**, il trouve malware.exe, mais pas malware.exe.txt.  
 6.   Sous le premier filtre **Appliquer à**, sélectionnez **dossiers sélectionnés** ou **tous les fichiers excepté les dossiers sélectionnés** pour Box, SharePoint, Dropbox, OneDrive. Vous pouvez ainsi appliquer votre stratégie de fichiers à tous les fichiers de l’application ou à des dossiers spécifiques. Votre êtes redirigé pour vous connecter à l’application cloud. Ajoutez ensuite les dossiers appropriés.  
 
 6. Sous le deuxième filtre **Appliquer à**, sélectionnez **tous les propriétaires de fichiers**, **propriétaires de fichiers de groupes d’utilisateurs sélectionnés** ou **tous les propriétaires de fichiers à l’exception de groupes sélectionnés**, puis sélectionnez les groupes d’utilisateurs appropriés pour déterminer les utilisateurs et les groupes à inclure dans la stratégie.
   
-7.  Sélectionnez la **Méthode d’inspection du contenu**. La protection contre la perte de données (DLP) intégrée vous permet de filtrer les fichiers par leur contenu. Pour analyser le contenu des fichiers, sélectionnez ensuite **DLP intégré**. Une fois que l’inspection du contenu est activée, vous pouvez choisir d’utiliser des expressions prédéfinies ou de rechercher d’autres expressions personnalisées, sous forme de sous-chaîne ou d’[expression régulière](working-with-the-regex-engine.md) de votre choix.  
-    De plus, vous pouvez spécifier une expression régulière pour exclure un fichier des résultats. Cette possibilité s’avère très utile si vous avez des mots clés de classification interne standard à exclure de la stratégie.  
-    Vous pouvez décider de définir le nombre minimal de violations de contenu à atteindre avant que le fichier ne soit considéré comme une violation. Par exemple, vous pouvez choisir 10 si vous souhaitez être alerté pour les fichiers comportant au moins 10 numéros de carte de crédit détectés dans leur contenu.  
-    Quand du contenu correspond à l’expression sélectionnée, le texte de la violation est remplacé par des caractères « X ». Par défaut, les violations sont entièrement masquées. Seul leur contexte, 100 caractères avant et après la violation, est affiché. Les chiffres dans le contexte de l’expression sont remplacés par des caractères « # » et ne sont jamais stockés dans Cloud App Security. Vous pouvez sélectionner l’option **Montrer les 4 derniers caractères d’une violation** pour annuler le masquage des 4 derniers caractères de la violation elle-même. Il est nécessaire de définir les types de données que l’expression régulière recherchera : contenu, métadonnées et/ou nom de fichier. Par défaut, elle recherche le contenu et les métadonnées. Notez que vous devez définir au moins un type de données à rechercher, sinon l’expression régulière ne fonctionne pas et la stratégie ne peut pas être créée. 
+7.  Sélectionnez la **Méthode d’inspection du contenu**. La protection contre la perte de données (DLP) intégrée vous permet de filtrer les fichiers par leur contenu. Pour analyser le contenu des fichiers, sélectionnez ensuite **DLP intégré**. Une fois que l’inspection du contenu est activée, vous pouvez choisir d’utiliser des expressions prédéfinies ou de rechercher d’autres expressions personnalisées, sous forme de sous-chaîne ou d’[expression régulière](working-with-the-regex-engine.md) de votre choix.  <br></br>
+
+    De plus, vous pouvez spécifier une expression régulière pour exclure un fichier des résultats. Cette possibilité s’avère très utile si vous avez des mots clés de classification interne standard à exclure de la stratégie. <br></br> Vous pouvez décider de définir le nombre minimal de violations de contenu à atteindre avant que le fichier ne soit considéré comme une violation. Par exemple, vous pouvez choisir 10 si vous souhaitez être alerté pour les fichiers comportant au moins 10 numéros de carte de crédit détectés dans leur contenu.  <br></br>
+    Quand du contenu correspond à l’expression sélectionnée, le texte de la violation est remplacé par des caractères « X ». Par défaut, les violations sont masquées. Seul leur contexte, 100 caractères avant et après la violation, est affiché. Les chiffres dans le contexte de l’expression sont remplacés par des caractères « # » et ne sont jamais stockés dans Cloud App Security. Vous pouvez sélectionner l’option **Montrer les quatre derniers caractères d’une violation** pour annuler le masquage des quatre derniers caractères de la violation elle-même. Il est nécessaire de définir les types de données que l’expression régulière recherche : contenu, métadonnées et/ou nom de fichier. Par défaut, elle recherche le contenu et les métadonnées. Vous devez définir au moins un type de données à rechercher, sinon l’expression régulière ne fonctionne pas et la stratégie ne peut pas être créée. 
   
 8.  Choisissez les actions de **gouvernance** que Cloud App Security doit exécuter quand une correspondance est détectée.  
   
@@ -87,7 +87,7 @@ Pour créer une stratégie de fichier, procédez comme suit :
   
    ![stratégie de fichier, modifier et afficher un aperçu des résultats](./media/file-policy-edit-and-preview-results.png "stratégie de fichier, modifier et afficher un aperçu des résultats")  
   
-10. Pour afficher les correspondances de stratégie de fichier, les fichiers qui sont suspectés d’enfreindre la stratégie, cliquez sur **Contrôle**, puis sur **Stratégies**. Filtrez les résultats pour afficher uniquement les stratégies de fichier avec le filtre **Type** en haut. Pour plus d’informations sur les correspondances pour chaque stratégie, cliquez sur une stratégie. Vous affichez ainsi les fichiers Mise en correspondance maintenant pour la stratégie. Cliquez sur l’onglet **Historique** pour consulter un historique remontant jusqu’à 6 mois de fichiers correspondant à la stratégie.     
+10. Pour afficher les correspondances de stratégie de fichier, les fichiers qui sont suspectés d’enfreindre la stratégie, cliquez sur **Contrôle**, puis sur **Stratégies**. Filtrez les résultats pour afficher uniquement les stratégies de fichier avec le filtre **Type** en haut. Pour plus d’informations sur les correspondances pour chaque stratégie, cliquez sur une stratégie. Vous affichez ainsi les fichiers Mise en correspondance maintenant pour la stratégie. Cliquez sur l’onglet **Historique** pour consulter un historique remontant jusqu’à six mois de fichiers correspondant à la stratégie.     
   
 ## <a name="file-policy-reference"></a>Informations de référence sur les stratégies de fichier  
 Cette section fournit des informations de référence sur les stratégies, donne une explication de chaque type de stratégie et décrit les champs que vous pouvez configurer pour chacune d’elles. 
@@ -96,7 +96,7 @@ Une **stratégie de fichier** est une stratégie basée sur une API qui vous per
   
 Chaque stratégie comprend les éléments suivants :  
   
--   Filtres de fichiers : Vous permettent de créer des conditions très précises en fonction de métadonnées.  
+-   Filtres de fichiers : Vous permettent de créer des conditions précises en fonction des métadonnées.  
   
 -   Inspection du contenu : Vous permet de limiter la stratégie, en fonction de résultats de moteur DLP. Vous pouvez inclure une expression personnalisée ou prédéfinie. Vous pouvez définir des exclusions et choisir le nombre de correspondances. Vous pouvez aussi utiliser l’anonymisation pour masquer le nom de l’utilisateur. 
   
@@ -110,7 +110,7 @@ Chaque stratégie comprend les éléments suivants :
   
 ## <a name="see-also"></a>Voir aussi  
 [Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)   
-[Pour obtenir un support technique, visitez la page de support assisté Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier.](https://premier.microsoft.com/)  
   
   

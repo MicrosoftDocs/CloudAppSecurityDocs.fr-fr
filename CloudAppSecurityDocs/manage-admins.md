@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 1/15/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e1c38d54a503f84a68a60812c1a6558ff7f92a4b
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: af4552c9ffac66fae14b3fc5f84860e2d3761f88
+ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 01/24/2018
 ---
 ## <a name="managing-admin-access"></a>Gestion de l’accès d’administrateur
 
@@ -41,7 +41,7 @@ Cloud App Security prend en charge le contrôle d’accès basé sur les rôles.
 
 Pour plus d’informations, consultez [Affectation des rôles d’administrateur dans Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles).
 
-Vous pouvez également ajouter des administrateurs à Cloud App Security, sans ajouter d’utilisateurs aux rôles administratifs Azure Active Directory, en effectuant les opérations suivantes :
+Vous pouvez également ajouter des administrateurs à Cloud App Security, sans ajouter d’utilisateurs aux rôles administratifs Azure Active Directory, en effectuant les étapes suivantes :
 
 1. Cliquez sur l’icône des paramètres ![icône des paramètres](./media/settings-icon.png "icône des paramètres"), puis sur **Gérer l’accès administrateur**. 
 
@@ -69,13 +69,13 @@ Par exemple, pour affecter à Stéphanie, qui est titulaire du rôle Lecteur Sé
 Pour ajouter des administrateurs à Cloud App Security :
 1. Cliquez sur l’icône des paramètres ![icône des paramètres](./media/settings-icon.png "icône des paramètres"), puis sur **Gérer l’accès administrateur**. 
 
-2. Ajoutez les administrateurs qui doivent avoir accès à Cloud App Security, sélectionnez leur niveau d’accès, puis cliquez sur **Fermer**.
+2. Ajoutez les administrateurs qui doivent avoir accès à Cloud App Security. Sélectionnez leur niveau d’accès et cliquez sur **Fermer**.
 
 
 
 ## <a name="see-also"></a>Voir aussi  
 [Configurer Cloud Discovery](set-up-cloud-discovery.md)   
-[Pour obtenir un support technique, visitez la page de support assisté Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier.](https://premier.microsoft.com/)  
   
   
