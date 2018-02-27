@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/31/2018
+ms.date: 2/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9682c7badb19365ea74ffc78a7a2a38152f84669
-ms.sourcegitcommit: bfe898e82c195981cc2fdaa899b0f8ab48957a00
+ms.openlocfilehash: 048b2e594190ad19d20fcba57767b6fcf6ebd2fd
+ms.sourcegitcommit: 4f9a4884672633927ce649e51df3b10c547787af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2018
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="azure-information-protection-integration"></a>Intégration d’Azure Information Protection
 
@@ -45,7 +45,7 @@ Cloud App Security prend actuellement en charge l’application d’étiquettes 
 - PowerPoint : potm, potx, ppsx, ppsm, pptm, pptx
 - Les fichiers PDF et image seront disponibles dans des versions ultérieures. 
 
-Cette fonctionnalité est actuellement disponible pour les fichiers stockés dans Box, SharePoint Online et OneDrive Entreprise. D’autres applications cloud seront prises en charge dans les prochaines versions.
+Cette fonctionnalité est actuellement disponible pour les fichiers stockés dans Box, G Suite, SharePoint Online et OneDrive Entreprise. D’autres applications cloud seront prises en charge dans les prochaines versions.
 
 Les fichiers qui ont été étiquetés avec la protection en dehors de Cloud App Security ne peuvent pas être analysés ou modifiés par Cloud App Security pour l’instant. Les fichiers qui ont été étiquetés (sans protection) en dehors de Cloud App Security peuvent être analysés, et Cloud App Security peut appliquer une autre étiquette (avec ou sans protection) telle qu’elle est définie dans les stratégies Cloud App Security.
 
@@ -116,6 +116,9 @@ Suivez ces instructions pour créer la stratégie de fichier :
 3.  Sous les actions de gouvernance pour l’application concernées, choisissez **Appliquer une étiquette de classification**, puis sélectionnez le type d’étiquette.
 
    ![Appliquer une étiquette](./media/aip-gov-action.png)
+
+> [!NOTE]
+> La possibilité d’appliquer automatiquement une étiquette Azure Information Protection via une stratégie de fichier est une puissante fonctionnalité. Pour protéger les clients contre l’application par erreur d’une étiquette à un grand nombre de fichiers, il existe, pour des raisons de sécurité, une limite quotidienne de 100 actions **Appliquer une étiquette** par application et par client. Une fois cette limite quotidienne atteinte, l’action Appliquer une étiquette s’interrompt temporairement et reprend automatiquement le jour suivant (après 12:00 UTC). Pour augmenter la limite de votre client, [contactez le support Cloud App Security](mailto:cascoresupport@microsoft.com).
 
 ### <a name="control-file-exposure"></a>Contrôler l’exposition des fichiers
 
