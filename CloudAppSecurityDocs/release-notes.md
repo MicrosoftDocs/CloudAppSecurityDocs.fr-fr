@@ -1,11 +1,11 @@
 ---
-title: "Nouveautés de Cloud App Security | Microsoft Docs"
+title: "Nouveautés dans Cloud App Security | Microsoft Docs"
 description: "Cette rubrique est mise à jour fréquemment pour vous informer des nouveautés de la dernière version de Cloud App Security."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/12/2018
+ms.date: 2/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,17 +13,25 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ae784655539e62358aabf7094f7b6b1634e6386d
-ms.sourcegitcommit: e1868428958901c51091b23fa032a989b3059b4b
+ms.openlocfilehash: a8b6d36419d1553dcc5f3257a3dee22944f60d41
+ms.sourcegitcommit: 79cdf84f6fd60a57b771a7fd4e5a37d4cc8d9aed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 02/20/2018
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Nouveautés de Microsoft Cloud App Security
 
+## <a name="cloud-app-security-release-117"></a>Cloud App Security version 117
+Date de publication : 20 février 2018
+
+-   L’intégration plus poussée de Cloud App Security avec Azure Information Protection vous permet désormais de protéger les fichiers dans G Suite. Cette fonctionnalité en préversion publique vous permet d’analyser et de classifier des fichiers dans G Suite, et d’appliquer automatiquement des étiquettes Azure Information Protection pour la protection. Pour plus d’informations, consultez [Intégration d’Azure Information Protection](azip-integration.md).
+
+-   Cloud Discovery prend désormais en charge i-FILTER.
+
+-   Le tableau des agents SIEM fournit désormais plus de détails pour faciliter la gestion.
+
 ## <a name="cloud-app-security-release-116"></a>Cloud App Security version 116
 Date de publication : 4 février 2018
-
 - La stratégie de détection d’anomalie de Cloud App Security a été améliorée grâce à de nouvelles **détections basées sur des scénarios**, notamment les activités de type Voyage impossible, les échecs de tentatives de connexion multiples et les activités provenant d’adresses IP suspectes. Les nouvelles stratégies sont automatiquement activées et fournissent une solution de détection des menaces prête à l’emploi pour votre environnement cloud. En outre, les nouvelles stratégies exposent davantage de données à partir du moteur de détection de Cloud App Security afin d’accélérer le processus d’investigation, et contiennent des menaces permanentes. Pour plus d’informations, consultez [Obtenir instantanément une détection des anomalies et une analytique comportementale](https://docs.microsoft.com/en-us/cloud-app-security/anomaly-detection-policy).
 
 - Déploiement progressif : Cloud App Security met désormais en corrélation les utilisateurs et leurs comptes dans les applications SaaS. Cela vous permet d’examiner facilement toutes les activités d’un utilisateur, dans toutes ses différentes applications SaaS corrélées, peu importe l’application ou le compte qu’il a utilisé.  
@@ -184,8 +192,8 @@ Publication : 3 juillet 2017
 -   **Nouveau mode de déploiement du collecteur de journaux :** Nous avons commencé à développer un nouveau mode de déploiement désormais disponible pour le collecteur de journaux. En plus du déploiement actuel basé sur l’appliance virtuelle, le nouveau collecteur de journaux basé sur Docker (conteneur) peut être installé comme un package sur les ordinateurs Windows et Ubuntu à la fois localement et dans Azure. Quand vous utilisez le collecteur Docker, l’ordinateur hôte est détenu par le client, qui peut librement le corriger et le surveiller.
 
 ### <a name="announcements"></a>Annonces : 
--   Le catalogue d’applications cloud prend désormais en charge plus de 15 000 applications détectables
--   Conformité : Cloud App Security est officiellement certifié SOC1/2/3 par Azure. Pour consulter la liste complète des certifications, consultez les [offres de conformité](https://www.microsoft.com/trustcenter/compliance/complianceofferings) et recherchez Cloud App Security.
+-   Le catalogue d’applications Cloud prend désormais en charge plus de 15 000 applications détectables
+-   Conformité : Cloud App Security est officiellement certifié SOC1/2/3 par Azure. Pour consulter la liste complète des certifications, consultez la page des [offres de conformité](https://www.microsoft.com/trustcenter/compliance/complianceofferings) et filtrez les résultats pour Cloud App Security.
 
 ### <a name="other-improvements"></a>Autres améliorations : 
 -   **Amélioration de l’analyse :** Des améliorations ont été apportées au mécanisme d’analyse du journal Cloud Discovery. Les erreurs internes sont beaucoup moins susceptibles de se produire.
