@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 2/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a612d87e-5471-4add-b4b1-dbbb530f2b61
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 8463285f9462296188bc015b455fad824b3660cb
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: 859cba7daf575b41b33380eeec33288a17e64d91
+ms.sourcegitcommit: 85d90d51e9e265d077f38b0188bcfdab2ce63ed1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="use-a-custom-log-parser"></a>Utiliser un analyseur de journal personnalisé
 Cloud App Security vous permet de configurer un analyseur personnalisé correspondant au format de vos journaux. Vous pouvez ainsi les utiliser avec Cloud Discovery, même s’ils proviennent d’un pare-feu ou d’un appareil qui n’est pas explicitement pris en charge par Cloud App Security. 
@@ -56,7 +56,7 @@ Pour configurer un analyseur CSV personnalisé :
 5. Sous **Choisir les journaux de trafic**, sélectionnez le fichier journal que vous avez modifié et chargez-le. Vous pouvez charger jusqu’à 20 fichiers à la fois. Les fichiers compressés et zippés sont également pris en charge.  
   
 
-6.  Cliquez sur **Create (Créer)**.  
+6.  Cliquez sur **Créer**.  
 
 7.  Une fois le chargement terminé, un message d’état s’affiche dans le coin supérieur droit de votre écran pour vous informer que le journal a correctement été chargé.  
   
