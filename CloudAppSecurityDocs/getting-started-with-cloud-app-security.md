@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 3/3/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4526b93a0d95f4bd1cc0a97867ba585002408130
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: e33f277a9576ab1855cf5700584d7ddbb7dfac6c
+ms.sourcegitcommit: c47fd92c71028ede8840e0766f20eb0ad2898e70
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="deploy-cloud-app-security"></a>Déployer Cloud App Security
 Cloud App Security vous permet de tirer parti des avantages des applications cloud tout en conservant le contrôle des ressources d’entreprise. Il fonctionne en améliorant la visibilité de l’activité cloud et contribue à renforcer la protection des données d’entreprise. Dans cette rubrique, nous vous guidons à travers les étapes permettant de configurer et d’utiliser Cloud App Security.  
@@ -60,14 +60,14 @@ Vous pouvez également accéder au portail par le biais du **Centre d’administ
 ### <a name="step-1-set-up-cloud-discoveryset-up-cloud-discoverymd"></a>Étape 1. [Configurer Cloud Discovery](set-up-cloud-discovery.md).
 Tâche obligatoire : Charger les journaux de trafic **Pour créer un rapport Cloud Discovery continu**
 
- 1. Accédez à **Paramètres** > **Paramètres Cloud Discovery**.
- 2. Choisissez **Charger les journaux automatiquement**.
+ 1. Dans la roue dentée des paramètres, sélectionnez **Paramètres Cloud Discovery**.
+ 2. Choisissez **Chargement automatique des journaux**.
  3. Sous l’onglet **Sources de données**, ajoutez vos sources.
  4. Sous l’onglet **Collecteurs de journaux**, configurez le collecteur de journaux.
  
 **Pour créer un rapport d’instantané Cloud Discovery**
 
- 1. Accédez à **Découvrir** > **Créer un rapport d’instantané** et suivez les étapes indiquées.
+ 1. Accédez à **Découvrir** > **Rapport d’instantané** et suivez les étapes indiquées.
 
 **Pourquoi configurer les rapports Cloud Discovery ?**
 Obtenir une visibilité sur l’informatique fantôme dans votre organisation est critique.
@@ -77,8 +77,8 @@ Une fois vos journaux analysés, vous pouvez facilement découvrir quelles appli
 ### <a name="step-2-set-instant-visibility-protection-and-governance-actions-for-your-appsenable-instant-visibility-protection-and-governance-actions-for-your-appsmd"></a>Étape 2. [Définissez une visibilité instantanée, une protection et des actions de gouvernance pour vos applications](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 Tâche obligatoire : Connecter des applications
 
-1. Accédez à **Paramètres** > **Connecteurs d’application**.
-2. Choisissez **Connecter l’application** et sélectionnez une application.
+1. Dans la roue dentée des paramètres, sélectionnez **Connecteurs d’application**.
+2. Cliquez sur le signe plus pour ajouter une application puis sélectionnez une application.
 3. Suivez les étapes de configuration pour connecter l’application.
 
 **Pourquoi connecter une application ?**
@@ -105,7 +105,7 @@ Tâche recommandée : Ajouter les détails de votre organisation
 
 **Pour entrer les paramètres d’e-mail**
 
-1. Accédez à **Paramètres** > **Paramètres de messagerie**.
+1. Dans la roue dentée des paramètres, sélectionnez **Paramètres de messagerie**.
 2. Sous **Identité de l’expéditeur de l’e-mail**, entrez vos adresses e-mail et votre nom d’affichage.
 3. Sous **Conception de l’e-mail**, chargez le modèle d’e-mail de votre organisation.
 
@@ -117,8 +117,9 @@ Tâche recommandée : Ajouter les détails de votre organisation
 
 **Pour personnaliser les métriques de score**
 
-1. Accédez à **Paramètres** > **Paramètres Cloud Discovery**.
-2. Sous **Configurer la métrique du score**, configurez l’importance des différentes valeurs de risque.
+1. Dans la roue dentée des paramètres, sélectionnez **Paramètres Cloud Discovery**.
+1. Dans la roue dentée des paramètres, sélectionnez **Paramètres Cloud Discovery**.
+2. Sous **Métriques de score**, configurez l’importance des différentes valeurs de risque.
 3. Choisissez **Enregistrer**.
 
 Les scores de risque attribués aux applications découvertes sont maintenant configurés précisément selon les besoins et priorités de votre organisation.
@@ -132,8 +133,9 @@ Tâche recommandée : Configurer des paramètres importants
 
 **Pour créer des étiquettes d’adresse IP**
 
-1. Accédez à **Paramètres** > **Balises d’adresse IP**.
-2. Choisissez (+) **Ajouter une plage d’adresses IP**.
+1. Dans la roue dentée des paramètres, sélectionnez **Paramètres Cloud Discovery**.
+1. Dans la roue dentée des paramètres, sélectionnez **Plages d’adresses IP**.
+2. Cliquez sur le signe plus pour ajouter une plage d’adresses IP.
 3. Entrez les **détails**, l’**emplacement**, les **étiquettes** et la **catégorie** de la plage d’adresses IP.
 4. Choisissez **Créer**.
 
@@ -141,8 +143,8 @@ Tâche recommandée : Configurer des paramètres importants
 
 **Pour créer des rapports continus**
 
-1. Accédez à **Paramètres** > **Paramètres Cloud Discovery**.
-2. Sous **Gérer les rapports continus**, choisissez **Créer un rapport**.
+1. Dans la roue dentée des paramètres, sélectionnez **Paramètres Cloud Discovery**.
+2. Sous **Rapports continus**, choisissez **Créer un rapport**.
 3. Suivez les étapes de configuration.
 4. Choisissez **Créer**.
 
@@ -150,7 +152,7 @@ Vous pouvez maintenant afficher les données découvertes selon vos propres pré
 
 **Pour ajouter des domaines**
 
-1. Accédez à **Paramètres** > **Paramètres généraux**.
+1. Dans la roue dentée des paramètres, sélectionnez **Paramètres**.
 2. Sous **Détails de l’organisation**, ajoutez les domaines internes de votre organisation.
 3. Choisissez **Enregistrer**.
 

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/21/2018
+ms.date: 3/3/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 048b2e594190ad19d20fcba57767b6fcf6ebd2fd
-ms.sourcegitcommit: 4f9a4884672633927ce649e51df3b10c547787af
+ms.openlocfilehash: 92182731b6ee80c24aa2f3d7836415b2dfa4da2c
+ms.sourcegitcommit: c5533d66b8e037d6221c48bdbad81574f25f2817
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="azure-information-protection-integration"></a>Intégration d’Azure Information Protection
 
@@ -43,7 +43,7 @@ Cloud App Security prend actuellement en charge l’application d’étiquettes 
 - Word : docm, docx, dotm, dotx
 - Excel : xlam, xlsm, xlsx, xltx
 - PowerPoint : potm, potx, ppsx, ppsm, pptm, pptx
-- Les fichiers PDF et image seront disponibles dans des versions ultérieures. 
+- Les fichiers PDF seront disponibles dans des versions ultérieures 
 
 Cette fonctionnalité est actuellement disponible pour les fichiers stockés dans Box, G Suite, SharePoint Online et OneDrive Entreprise. D’autres applications cloud seront prises en charge dans les prochaines versions.
 
@@ -118,7 +118,7 @@ Suivez ces instructions pour créer la stratégie de fichier :
    ![Appliquer une étiquette](./media/aip-gov-action.png)
 
 > [!NOTE]
-> La possibilité d’appliquer automatiquement une étiquette Azure Information Protection via une stratégie de fichier est une puissante fonctionnalité. Pour protéger les clients contre l’application par erreur d’une étiquette à un grand nombre de fichiers, il existe, pour des raisons de sécurité, une limite quotidienne de 100 actions **Appliquer une étiquette** par application et par client. Une fois cette limite quotidienne atteinte, l’action Appliquer une étiquette s’interrompt temporairement et reprend automatiquement le jour suivant (après 12:00 UTC). Pour augmenter la limite de votre client, [contactez le support Cloud App Security](mailto:cascoresupport@microsoft.com).
+> La possibilité d’appliquer automatiquement une étiquette Azure Information Protection via la stratégie de fichier est une puissante fonctionnalité. Pour protéger les clients contre toute application par erreur d’une étiquette à un grand nombre de fichiers, il existe, pour des raisons de sécurité, une limite quotidienne de 100 actions **Appliquer une étiquette** par application et le client. Une fois la limite quotidienne atteinte, l’action Appliquer une étiquette est temporairement interrompue, puis reprend automatiquement le jour suivant (après 12:00 UTC). Pour augmenter la limite de votre client, [contactez le support Cloud App Security](mailto:cascoresupport@microsoft.com).
 
 ### <a name="control-file-exposure"></a>Contrôler l’exposition des fichiers
 

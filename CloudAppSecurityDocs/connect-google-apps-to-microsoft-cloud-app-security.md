@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 3/3/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4b673fa732e553319483f11af5c95e33148bb05f
-ms.sourcegitcommit: 9cfb4b4e91e37fa3acf238b729cb68be0adc7086
+ms.openlocfilehash: cf4f05f7605a15682141ae321bba3aad70d463fd
+ms.sourcegitcommit: c47fd92c71028ede8840e0766f20eb0ad2898e70
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/21/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>Connecter G Suite à Microsoft Cloud App Security
 Cette section fournit des instructions pour connecter Cloud App Security à votre compte G Suite existant à l’aide des API du connecteur.
@@ -62,7 +62,9 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
    > [!NOTE]  
    >  Ignorez l’avertissement sur les **informations d’identification** pour l’instant.  
 
-8.  Vous devez avoir 5 **API activées** :  
+8. Cliquez sur Activer pour chaque API.
+     ![activer Google APPI](./media/google-api.png "google-api")  
+1. Vous devriez avoir 5 **API activées**. Veillez à désactiver toutes les autres API :
   
      ![google, api activées](./media/google5.png "google5")  
   
@@ -187,7 +189,7 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
 
     -   Sous **Visibilité**, sélectionnez **Mon domaine** (et non pas public). 
     -   Cliquez sur **Save Changes (Enregistrer les modifications)**.  
-  
+        ![visibilité de Google](./media/google-visibility.png "visibilité de Google")  
 22. Accédez à [admin.google.com](https://admin.google.com/), puis choisissez **Sécurité**. 
    
       ![sécurité de Google](./media/googlesec.png "sécurité de google")  
@@ -219,7 +221,7 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
   
     4.  Entrez un **e-mail du compte d’administrateur** de votre administrateur G Suite.  
   
-    5.  Si vous avez un compte G Suite Unlimited, cochez cette case. Pour plus d’informations sur les fonctionnalités disponibles dans Cloud App Security pour G Suite Unlimited, consultez [Activer la visibilité, la protection et des actions de gouvernance instantanées pour vos applications](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).  
+    5.  Si vous avez un compte G Suite Business ou Enterprise, cochez cette case. Pour plus d’informations sur les fonctionnalités disponibles dans Cloud App Security pour G Suite Business ou Enterprise, consultez [Activer la visibilité, la protection et des actions de gouvernance instantanées pour vos applications](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).  
   
     6.  Cliquez sur **Enregistrer les paramètres**.  
   
