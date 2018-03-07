@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: af4552c9ffac66fae14b3fc5f84860e2d3761f88
-ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
+ms.openlocfilehash: e20af36ddf5d3758d42a13caab89663ec1fab985
+ms.sourcegitcommit: c47fd92c71028ede8840e0766f20eb0ad2898e70
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 03/05/2018
 ---
 ## <a name="managing-admin-access"></a>Gestion de l’accès d’administrateur
 
@@ -43,7 +43,7 @@ Pour plus d’informations, consultez [Affectation des rôles d’administrateur
 
 Vous pouvez également ajouter des administrateurs à Cloud App Security, sans ajouter d’utilisateurs aux rôles administratifs Azure Active Directory, en effectuant les étapes suivantes :
 
-1. Cliquez sur l’icône des paramètres ![icône des paramètres](./media/settings-icon.png "icône des paramètres"), puis sur **Gérer l’accès administrateur**. 
+1. Cliquez sur la roue dentée des paramètres ![icône des paramètres](./media/settings-icon.png "icône des paramètres"), puis sur **Gérer les administrateurs**. 
 
 2. Ajoutez les administrateurs qui doivent avoir accès à Cloud App Security.
   
