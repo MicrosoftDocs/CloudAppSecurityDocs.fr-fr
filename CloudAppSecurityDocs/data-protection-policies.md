@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 3/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7b8fad0013cc645d380a0c967049937a479b344d
-ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
+ms.openlocfilehash: 63024ea9395c6f765928076a8d6eb9861fa35238
+ms.sourcegitcommit: 2f1ccff60194573325afa01f1634eea373c829b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="file-policies"></a>Stratégies de fichier  
 Les stratégies de fichier vous permettent d’appliquer une large gamme de processus automatisés en exploitant les API du fournisseur de cloud. Vous pouvez définir des stratégies pour fournir des analyses de conformité en continu, des tâches eDiscovery réglementaires, une protection contre la perte de données (DLP, Data Loss Prevention) au contenu sensible partagé publiquement et de nombreux autres cas d’usage.  <br></br>
@@ -69,7 +69,7 @@ Pour créer une stratégie de fichier, procédez comme suit :
 
 4.  Dans **Catégorie**, liez la stratégie au type de risque le plus approprié. Ce champ est à titre informatif uniquement et vous permet de rechercher ultérieurement des stratégies et alertes spécifiques, selon le type de risque.  Le risque est peut-être déjà présélectionné en fonction de la catégorie pour laquelle vous avez choisi de créer la stratégie. Par défaut, les stratégies de fichier ont la valeur DLP.  
   
-5.  Pour définir les applications découvertes qui déclenchent cette stratégie, **Créez un filtre pour les fichiers sur lesquels cette stratégie s’appliquera**. Limitez les filtres de stratégie jusqu’à atteindre l’ensemble de fichiers le plus précis sur lequel vous voulez agir. Soyez aussi restrictif que possible pour éviter les faux positifs. Par exemple, si vous voulez supprimer les autorisations publiques, n’oubliez pas d’ajouter le filtre **Public** ; si vous voulez supprimer un utilisateur externe, utilisez le filtre « Externe », etc.  
+5.  Pour définir les applications découvertes qui déclenchent cette stratégie, **Créez un filtre pour les fichiers sur lesquels cette stratégie s’appliquera**. limitez les filtres de stratégie jusqu’à atteindre l’ensemble de fichiers le plus précis sur lequel vous voulez agir. Soyez aussi restrictif que possible pour éviter les faux positifs. Par exemple, si vous voulez supprimer les autorisations publiques, n’oubliez pas d’ajouter le filtre **Public** ; si vous voulez supprimer un utilisateur externe, utilisez le filtre « Externe », etc.  
 > [!NOTE] 
 > Quand vous utilisez des filtres de stratégie, le filtre **Contains (Contient)** recherche uniquement des mots entiers, séparés par des virgules, points, espaces ou traits de soulignement. Par exemple, si vous recherchez **malware** ou **virus**, il trouve virus_malware_file.exe, mais pas malwarevirusfile.exe. Si vous recherchez **malware.exe**, vous obtenez TOUS les fichiers exe dont le nom contient malware ou exe, tandis que si vous recherchez **"malware.exe"** (avec les guillemets), vous n’obtenez que les fichiers dont le nom contient exactement « malware.exe ». **Equals (Est égal à)** recherche uniquement la chaîne complète ; par exemple, si vous recherchez **malware.exe**, il trouve malware.exe, mais pas malware.exe.txt.  
 6.   Sous le premier filtre **Appliquer à**, sélectionnez **dossiers sélectionnés** ou **tous les fichiers excepté les dossiers sélectionnés** pour Box, SharePoint, Dropbox, OneDrive. Vous pouvez ainsi appliquer votre stratégie de fichiers à tous les fichiers de l’application ou à des dossiers spécifiques. Votre êtes redirigé pour vous connecter à l’application cloud. Ajoutez ensuite les dossiers appropriés.  
@@ -105,8 +105,7 @@ Chaque stratégie comprend les éléments suivants :
 -   Extensions  
    
     -  L’inspection du contenu peut être effectuée via des moteurs tiers pour améliorer les fonctionnalités DLP ou anti-programme malveillant.  
-  
-    -  Les [actions de gouvernance](governance-actions.md) peuvent être effectuées par le biais de moteurs tiers pour mettre en œuvre un contrôle de chiffrement personnalisé ou d’autres types de traitement de fichiers (par exemple, un filigrane personnalisé).  
+
   
 ## <a name="see-also"></a>Voir aussi  
 [Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)   
