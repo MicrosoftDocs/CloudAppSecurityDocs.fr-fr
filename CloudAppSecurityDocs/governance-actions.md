@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 3/7/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a61579877c230849ef721a923d4148ea4950c8d3
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: a010bdab8d58ca3454ab3a47d181fe999e3bee54
+ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="governing-connected-apps"></a>Gouvernance des applications connectées
 La gouvernance vous permet de contrôler en temps réel les actions des utilisateurs dans les applications. Pour les applications connectées, vous pouvez appliquer des actions de gouvernance aux fichiers ou aux activités.
@@ -87,7 +87,7 @@ Vous pouvez effectuer les actions de gouvernance suivantes sur un fichier ou un 
     > [!NOTE] 
     > Si votre Azure Active Directory est défini pour se synchroniser automatiquement avec les utilisateurs de votre environnement local Active Directory, les paramètres de l’environnement local remplacent les paramètres Azure AD et cette action de gouvernance est rétablie. 
   
-    -   Révoquer le mot de passe : Révoquez le mot de passe de l’utilisateur et obligez-le à définir un nouveau mot de passe lors de sa prochaine connexion.  
+    -   Demander à l’utilisateur de se reconnecter : déconnectez l’utilisateur et demandez-lui de se reconnecter.  
   
      ![Actions de gouvernance des stratégies d’activité Cloud App Security](./media/activity-policy-ref6.png "stratégie d’activité ref6")  
   
@@ -119,7 +119,7 @@ Pour plus d’informations sur la façon dont les actions de gouvernance sont tr
 |Comptes|Compte|Paramètres de compte|Vous permet d’accéder à la page de paramètres de compte dans une application donnée (par exemple, dans Salesforce).|Toutes les applications. Les paramètres de One Drive et SharePoint sont configurés dans Office.|
 |Comptes |File|Transférer la possession de tous les fichiers|Dans un compte, vous transférez les fichiers d’un utilisateur vers un nouveau propriétaire que vous sélectionnez. L’ancien propriétaire devient un éditeur et ne peut plus changer les paramètres de partage. Le nouveau propriétaire reçoit une notification du transfert de possession par e-mail.|G Suite|
 |Comptes, Stratégie d’activité|Compte|Suspendre l’utilisateur|Définit que l’utilisateur n’a aucun accès ni aucune possibilité de se connecter. S’il est connecté lorsque vous activez cette option, il est immédiatement verrouillé.|G Suite, Box, Office, Salesforce|
-|Stratégie d’activité, Comptes|Compte|Révoquer le mot de passe|Révoque le mot de passe pour un compte d’utilisateur. Par exemple, avec la définition d’une stratégie de l’activité qui révoque un mot de passe après 10 échecs de tentative de connexion.|G Suite|
+|Stratégie d’activité, Comptes|Compte|Demander à l’utilisateur de se reconnecter|Révoque tous les jetons d’actualisation et les cookies de session émis aux applications par l’utilisateur. Cela empêche l’accès aux données de l’organisation et force l’utilisateur à se connecter à toutes les applications.|G Suite|
 |Stratégie d’activité, Comptes|Compte|Révoquer les privilèges administratifs|Révoque les privilèges administratifs pour un compte administrateur. Par exemple, avec la définition d’une stratégie de l’activité qui révoque les privilèges administratifs après 10 échecs de tentative de connexion.|G Suite|
 |Tableau de bord de l’application > Autorisations d’applications|Autorisations|Un-ban app (Annuler l’exclusion de l’application)|Dans Google et Salesforce : suppriment l’exclusion de l’application et permettent aux utilisateurs d’accorder des autorisations à l’application tierce avec Google et Salesforce. Dans Office 365 : restaure les autorisations d’accès de l’application tierce à Office.|G Suite, Salesforce, Office|
 |Tableau de bord de l’application > Autorisations d’applications|Autorisations|Désactiver les autorisations d’application|Révoquent les autorisations d’accès d’une application tierce à Google, Salesforce ou Office. Il s’agit d’une action unique qui se produit sur toutes les autorisations existantes, mais qui n’empêche pas les connexions ultérieures. |G Suite, Salesforce, Office|

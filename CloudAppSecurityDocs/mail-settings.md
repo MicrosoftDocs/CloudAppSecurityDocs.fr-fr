@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 3/3/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,26 +13,24 @@ ms.technology:
 ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 50bf7a8bb69e20b1f4f8e54b22dfad47d2a81690
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: de4e7025f046f15e0aa36f2cf45d17a3502a0644
+ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 03/08/2018
 ---
 ##  <a name="mailsettings"></a> Définir les préférences de notification par e-mail  
-Dans la barre de menus, cliquez sur l’icône des paramètres ![icône des paramètres](./media/settings-icon.png "icône des paramètres") et sélectionnez **Paramètres de messagerie** pour définir les paramètres des notifications par e-mail envoyées par Cloud App Security aux administrateurs ; ce paramétrage définit l’envoi des alertes et des notifications aux utilisateurs finaux concernant les violations dans lesquelles ils sont impliqués.  
 
-Pour plus d’informations sur l’adresse IP du serveur e-mail Cloud App Security à ajouter à la liste verte de votre service anti-courrier indésirable consultez [Configuration requise pour le réseau](network-requirements.md). 
+Pour définir les paramètres des notifications par courrier électronique envoyées par Cloud App Security aux administrateurs demandant l’envoi des alertes et des notifications aux utilisateurs finaux concernant les violations dans lesquelles ils sont impliqués, suivez cette procédure. Pour plus d’informations sur l’adresse IP du serveur e-mail Cloud App Security à ajouter à la liste verte de votre service anti-courrier indésirable consultez [Configuration requise pour le réseau](network-requirements.md). 
+
+
+1. Dans la barre de menus, cliquez sur la roue dentée des paramètres ![icône des paramètres](./media/settings-icon.png "icône des paramètres") et sélectionnez **Paramètres**, puis sélectionnez l’onglet **Paramètres de messagerie**.  
+
+2. **Adresse de l’expéditeur** : compte de messagerie à utiliser pour envoyer la notification.  
+   
+   **Nom complet de l’expéditeur** : nom à afficher dans le champ **De** de l’e-mail.  
   
-![menu des paramètres de messagerie](./media/mail-setting-menu.png "menu des paramètres de messagerie")  
-  
-Configurez ce qui suit :  
-  
-1.  **Adresse de l’expéditeur** : compte de messagerie à utiliser pour envoyer la notification.  
-  
-     **Nom complet de l’expéditeur** : nom à afficher dans le champ **De** de l’e-mail.  
-  
-     **Adresse e-mail de réponse** : compte e-mail à utiliser pour les réponses au message.  
+   **Adresse e-mail de réponse** : compte e-mail à utiliser pour les réponses au message.  
   
      ![configuration des paramètres de messagerie](./media/mail-settings-config.png "configuration des paramètres de messagerie")  
 
@@ -41,7 +39,7 @@ Configurez ce qui suit :
   
 2.  Pour la **Conception de l’e-mail**, vous pouvez utiliser un fichier html pour personnaliser et créer les e-mails envoyés par le système. Le fichier html utilisé pour votre modèle doit inclure les éléments suivants :  
   
-    -   Tout le code CSS du modèle doit être inséré dans celui-ci.  
+    -   Tous les fichiers CSS du modèle doivent être insérés dans celui-ci.  
   
     -   Le modèle doit avoir trois espaces réservés non modifiables :  
   
