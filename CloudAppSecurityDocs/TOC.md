@@ -43,6 +43,7 @@
 ### [Protection de vos fichiers avec la mise en quarantaine administrateur](use-case-admin-quarantine.md)
 ## Découvrir
 ### [Utilisation des applications découvertes](discovered-apps.md)
+#### [Ajouter des applications personnalisées à Cloud Discovery](cloud-discovery-custom-apps.md)
 #### [Filtres d’application découverte et requêtes](discovered-app-queries.md)
 ### [Utilisation du score de risque](risk-score.md)
 ## [Examiner](investigate.md)
