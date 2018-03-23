@@ -41,6 +41,7 @@
 ### [Protection de votre organisation contre les ransomwares](use-case-ransomware.md)
 ### [Téléchargements en bloc d’informations sensibles](use-case-proxy-block-session-aad.md)
 ### [Protection de vos fichiers avec la mise en quarantaine administrateur](use-case-admin-quarantine.md)
+### [Appliquer automatiquement des étiquettes Azure Information Protection](use-case-information-protection.md)
 ## Découvrir
 ### [Utilisation des applications découvertes](discovered-apps.md)
 #### [Ajouter des applications personnalisées à Cloud Discovery](cloud-discovery-custom-apps.md)
