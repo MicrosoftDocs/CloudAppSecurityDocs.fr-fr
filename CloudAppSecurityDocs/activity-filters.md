@@ -1,23 +1,23 @@
 ---
-title: "Visibilité sur les activités des applications cloud | Microsoft Docs"
-description: "Cette rubrique fournit une liste des activités, filtres et paramètres de correspondance qui peuvent être appliqués aux stratégies d’activité."
-keywords: 
+title: Visibilité sur les activités des applications cloud | Microsoft Docs
+description: Cette rubrique fournit une liste des activités, filtres et paramètres de correspondance qui peuvent être appliqués aux stratégies d’activité.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 1/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b2880e9cb1569f018f0e9234e2ff75ec872f5470
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: b628b06e5e5c26ec153d7a4b1a9ef9483c15618a
+ms.sourcegitcommit: 716699286f8ebb33327eac28ca9b7bf9742daf32
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="activities"></a>Activités
 Cloud App Security vous donne une visibilité sur toutes les activités de vos applications connectées. Une fois connecté à une application à l’aide du connecteur d’applications, Cloud App Security analyse toutes les activités passées (la période d’analyse rétroactive varie par application). Cloud App Security est ensuite mis à jour en continu avec les nouvelles activités. 
@@ -30,11 +30,6 @@ Le **journal d’activité** peut être filtré pour vous permettre de trouver d
 Par exemple, vous pouvez utiliser le **journal d’activité** pour trouver les utilisateurs de votre organisation qui utilisent des systèmes d’exploitation ou des navigateurs obsolètes. Pour cela, procédez comme suit : après avoir connecté une application à Cloud App Security dans la page **Journal d’activité**, utilisez le filtre avancé et sélectionnez l’**étiquette Agent utilisateur**. Sélectionnez ensuite **Navigateur obsolète** ou **Système d’exploitation obsolète**.
 
  ![Exemple de navigateur obsolète dans une activité](media/activity-example-outdated.png)
-
-Si vous voulez vérifier s’il y a des accès à des fichiers **confidentiels** depuis l’extérieur de votre organisation, définissez le filtre **Objet d’activité** pour rechercher **Étiquette de classification** et sélectionnez l’étiquette **Confidentiel**. Définissez le filtre **Adresse IP** pour une rechercher sur **Catégorie** et excluez les adresses IP de votre bureau (les catégories d’adresses IP peuvent être configurées dans le menu **Paramètres**. Vous pouvez cliquer sur **Nouvelle stratégie à partir de la recherche** pour créer une stratégie d’activité en fonction des filtres que vous avez définis et pour notifier automatiquement les utilisateurs.
-
- ![Exemple d’activité Fichiers confidentiels externes](media/activity-example-ip.png)
-
  
 Le filtre de base fournit des outils efficaces pour démarrer vos activités de filtrage.
 
