@@ -1,27 +1,31 @@
 ---
-title: "Guide pratique pour appliquer des actions de gouvernance visant à contrôler les applications connectées | Microsoft Docs"
-description: "Cette rubrique répertorie et décrit toutes les actions de gouvernance qui peuvent être effectuées dans Cloud App Security et les messages de journal qui les suivent."
-keywords: 
+title: Guide pratique pour appliquer des actions de gouvernance visant à contrôler les applications connectées | Microsoft Docs
+description: Cette rubrique répertorie et décrit toutes les actions de gouvernance qui peuvent être effectuées dans Cloud App Security et les messages de journal qui les suivent.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 3/7/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a010bdab8d58ca3454ab3a47d181fe999e3bee54
-ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
+ms.openlocfilehash: 8339081e7600faf417a35ff4a4318b60d84eece1
+ms.sourcegitcommit: a074880eed43cf6e5ae95807640e99655b24d9be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="governing-connected-apps"></a>Gouvernance des applications connectées
 La gouvernance vous permet de contrôler en temps réel les actions des utilisateurs dans les applications. Pour les applications connectées, vous pouvez appliquer des actions de gouvernance aux fichiers ou aux activités.
 Les actions de gouvernance sont des actions intégrées que vous pouvez exécuter sur des fichiers ou des activités directement à partir de Cloud App Security pour contrôler en temps réel les actions de vos utilisateurs dans les applications connectées. 
+
+> [!NOTE]
+> Lorsque Cloud App Security tente d’exécuter une action de gouvernance sur un fichier, mais échoue parce que le fichier est verrouillé, il retente automatiquement l’action de gouvernance. 
+
 
 ### <a name="file-governance-actions"></a>Actions de gouvernance sur des fichiers  
 

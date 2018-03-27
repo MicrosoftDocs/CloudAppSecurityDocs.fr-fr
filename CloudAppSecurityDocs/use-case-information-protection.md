@@ -1,23 +1,23 @@
 ---
-title: "Appliquer automatiquement des étiquettes de classification Azure Information Protection | Microsoft Docs"
-description: "Cette rubrique décrit le processus d’application automatique des étiquettes de classification Azure Information Protection dans Microsoft Cloud App Security."
-keywords: 
+title: Appliquer automatiquement des étiquettes de classification Azure Information Protection | Microsoft Docs
+description: Cette rubrique décrit le processus d’application automatique des étiquettes de classification Azure Information Protection dans Microsoft Cloud App Security.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 3/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f9addebb97bc57b14c5c666b73a0d0d8e21a23ff
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: dbbab2b59c8e44433e3895fc63fefff562a44a29
+ms.sourcegitcommit: 716699286f8ebb33327eac28ca9b7bf9742daf32
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="automatically-apply-azure-information-protection-classification-labels"></a>Appliquer automatiquement des étiquettes de classification Azure Information Protection  
 
@@ -86,8 +86,8 @@ Définissons une stratégie qui recherche des numéros de carte de crédit dans 
 4. Vous pouvez cliquer sur la correspondance pour voir quels fichiers ont été protégés. La correspondance elle-même est masquée pour protéger les données sensibles. 
 
 >[!NOTE]
->Cloud App Security prend actuellement en charge l’application automatique des étiquettes Azure Information Protection sur Box, SharePoint et OneDrive Entreprise.
-
+> - Cloud App Security prend actuellement en charge l’application automatique des étiquettes Azure Information Protection sur Box, SharePoint et OneDrive Entreprise.
+> - Lorsqu’un document est étiqueté en utilisant Cloud App Security, les marquages visuels ne sont pas appliqués immédiatement. Ils le sont quand le document est ouvert dans une application Office et qu’il est enregistré pour la première fois. Pour plus d’informations, consultez [Comment configurer les marquages visuels d’une étiquette pour Azure Information Protection](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-markings#when-visual-markings-are-applied).
 
  ## <a name="see-also"></a>Voir aussi  
 [Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)   

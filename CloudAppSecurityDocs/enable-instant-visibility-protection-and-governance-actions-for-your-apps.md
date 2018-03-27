@@ -1,29 +1,33 @@
 ---
-title: "Connecter des applications pour obtenir une visibilité et un contrôle complets avec Cloud App Security | Microsoft Docs"
-description: "Cette rubrique décrit le processus de connexion d’applications à des applications dans le cloud de votre organisation avec des connecteurs d’API."
-keywords: 
+title: Connecter des applications pour obtenir une visibilité et un contrôle complets avec Cloud App Security | Microsoft Docs
+description: Cette rubrique décrit le processus de connexion d’applications à des applications dans le cloud de votre organisation avec des connecteurs d’API.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 1/15/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b1bc4f7455736f57cf4bb43d8c7d7d020e749f7c
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: c14ba598a593dd8711151eb58e0eab75d0ea8791
+ms.sourcegitcommit: 716699286f8ebb33327eac28ca9b7bf9742daf32
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="connect-apps"></a>Connecter des applications 
 Les connecteurs d’applications utilisent les API des fournisseurs d’applications pour que Cloud App Security bénéficie d’une plus grande visibilité et d’un plus grand contrôle sur les applications auxquelles vous vous connectez.  
   
 Cloud App Security s’appuie sur les API données par le fournisseur de cloud, et chaque service a ses propres infrastructure et limitations d’API. Cloud App Security utilise les services pour optimiser l’utilisation des API et pour garantir des performances optimales. Compte tenu des différentes limitations qu’imposent les services aux API (telles que les limites d’API et les fenêtres d’API de décalage temporel dynamique), les moteurs Cloud App Security tirent parti de la capacité autorisée. Certaines opérations, comme l’analyse de tous les fichiers dans le client, nécessitent une grande quantité d’API et sont donc réparties sur une longue période. Il est normal que certaines stratégies s’exécutent pendant plusieurs heures ou jours.  
   
+## <a name="multi-instance-support"></a>Prise en charge de plusieurs instances
+
+Cloud App Security prend en charge plusieurs instances de la même application connectée. Si vous utilisez plusieurs instances, par exemple, Salesforce (une pour le service commercial et une autre pour le département marketing), vous pourrez les connecter à la fois à Cloud App Security et les gérer à partir de la même console pour créer des stratégies granulaires et obtenir une investigation plus approfondie. Cette prise en charge s’applique uniquement aux applications connectées à des API, pas aux applications découvertes dans le cloud ni aux applications connectées à des proxys.
+
 ## <a name="how-it-works"></a>Fonctionnement  
 Cloud App Security est déployé avec des privilèges d’administrateur système qui autorisent un accès complet à tous les objets de votre environnement.  
   
