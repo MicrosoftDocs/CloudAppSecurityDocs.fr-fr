@@ -1,23 +1,23 @@
 ---
-title: "Définir les préférences de notification par e-mail | Microsoft Docs"
-description: "Cet article fournit des informations sur la procédure de personnalisation des notifications par e-mail envoyées par Cloud App Security."
-keywords: 
+title: Définir les préférences de notification par e-mail | Microsoft Docs
+description: Cet article fournit des informations sur la procédure de personnalisation des notifications par e-mail envoyées par Cloud App Security.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/3/2018
+ms.date: 3/21/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: de4e7025f046f15e0aa36f2cf45d17a3502a0644
-ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
+ms.openlocfilehash: 1c15a5ca97ecf130d8202975d6ddcba1e1d69d0e
+ms.sourcegitcommit: 716699286f8ebb33327eac28ca9b7bf9742daf32
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 ---
 ##  <a name="mailsettings"></a> Définir les préférences de notification par e-mail  
 
@@ -29,7 +29,9 @@ Pour définir les paramètres des notifications par courrier électronique envoy
 2. **Adresse de l’expéditeur** : compte de messagerie à utiliser pour envoyer la notification.  
    
    **Nom complet de l’expéditeur** : nom à afficher dans le champ **De** de l’e-mail.  
-  
+   > [!NOTE]
+   > Seuls les caractères Unicode sont pris en charge dans le nom d’affichage selon le [protocole rfc822](http://www.rfc-editor.org/rfc/rfc822.txt).
+
    **Adresse e-mail de réponse** : compte e-mail à utiliser pour les réponses au message.  
   
      ![configuration des paramètres de messagerie](./media/mail-settings-config.png "configuration des paramètres de messagerie")  

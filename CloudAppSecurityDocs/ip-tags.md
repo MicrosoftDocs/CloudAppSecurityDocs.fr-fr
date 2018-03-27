@@ -1,23 +1,23 @@
 ---
-title: "Définir des balises et des plages d’adresses IP | Microsoft Docs"
-description: "Cette rubrique fournit des instructions sur l’utilisation des balises et des catégories d’adresses IP."
-keywords: 
+title: Définir des balises et des plages d’adresses IP | Microsoft Docs
+description: Cette rubrique fournit des instructions sur l’utilisation des balises et des catégories d’adresses IP.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/7/2018
+ms.date: 3/18/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: bbf54f66-4ce2-428c-afc8-b5a64277014f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d05b1151383526ff37821c7d15abbd9b0f4f4f41
-ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
+ms.openlocfilehash: f066e17f8b4f2e54a65abb5c58095c0917e4e985
+ms.sourcegitcommit: a074880eed43cf6e5ae95807640e99655b24d9be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/19/2018
 ---
 #  <a name="IPtagsandRanges"></a> Utilisation des balises et des plages d’adresses IP
 
@@ -26,16 +26,7 @@ Chaque groupe de plages IP peut être classé selon une liste de catégories d�
   
 IPv4 et IPv6 sont pris en charge.  
   
-Cloud App Security est préconfiguré avec des balises intégrées pour les adresses IP suivantes : 
-- Client natif
-- Système d’exploitation obsolète
-- Appareils gérés
-- Proxy anonyme
-- Botnet (quand une activité a été effectuée par un botnet, vous recevez un lien pour avoir plus d’informations sur le botnet spécifique)
-- Tor
-- Appareil conforme
-- Appareil vérifié
-- Emprunter l’identité
+Cloud App Security est préconfiguré avec des plages d’adresses IP intégrées pour les fournisseurs de cloud répandus comme Azure et Office 365. De plus, nous avons des balises intégrées basées sur Microsoft Threat Intelligence, notamment pour le proxy anonyme, Botnet et Tor. Vous pouvez voir la liste complète dans la liste déroulante de la page des plages d’adresses IP.
 
 Pour utiliser ces balises intégrées dans le cadre d’une recherche, reportez-vous à leur ID dans la documentation des API Cloud App Security. 
 

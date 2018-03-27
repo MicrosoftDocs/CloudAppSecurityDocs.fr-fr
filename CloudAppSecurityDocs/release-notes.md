@@ -1,26 +1,31 @@
 ---
-title: "Nouveautés de Cloud App Security | Microsoft Docs"
-description: "Cette rubrique est mise à jour fréquemment pour vous informer des nouveautés de la dernière version de Cloud App Security."
-keywords: 
+title: Nouveautés de Cloud App Security | Microsoft Docs
+description: Cette rubrique est mise à jour fréquemment pour vous informer des nouveautés de la dernière version de Cloud App Security.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 3/7/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 08a798bb20830afcbdb498c2ac72787873f72fab
-ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
+ms.openlocfilehash: 887745913039d7e94930bdf8b30000bdfeea90ff
+ms.sourcegitcommit: a074880eed43cf6e5ae95807640e99655b24d9be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Nouveautés de Microsoft Cloud App Security
 
+## <a name="cloud-app-security-release-119"></a>Cloud App Security version 119
+Date de publication : 18 mars 2018
+
+-   La page des plages d’adresses IP contient les adresses IP intégrées qui sont découvertes par Cloud App Security. Cela inclut les adresses IP des services cloud identifiés, comme Azure et Office 365, ainsi que le flux de Threat Intelligence qui enrichit automatiquement les adresses IP avec des informations sur les adresses IP risquées connues. 
+-   Lorsque Cloud App Security tente d’exécuter une action de gouvernance sur un fichier, mais échoue parce que le fichier est verrouillé, il retente automatiquement l’action de gouvernance. 
 
 ## <a name="cloud-app-security-release-118"></a>Cloud App Security version 118
 Date de publication : 4 mars 2018
