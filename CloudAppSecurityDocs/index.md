@@ -1,11 +1,11 @@
 ---
 layout: LandingPage
-description: "Découvrez comment utiliser Cloud App Security."
-ms.openlocfilehash: d499b8abe9aa775dbd0c248cf117040c322111de
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+description: Découvrez comment utiliser Cloud App Security.
+ms.openlocfilehash: 681344fdb313421429484427b7e5899d418cf8a8
+ms.sourcegitcommit: 3c66f12aa31ba211235787ee6f233138ea5f8a75
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="cloud-app-security-documentation"></a>Documentation Cloud App Security
 
@@ -138,5 +138,4 @@ Que vous soyez ou non dans le cloud, vos employés, eux, le sont. Offrez la séc
                 </div>
             </div>
         </div>
-    </li>    
-</ul>
+    </li><br/></ul>
