@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/7/2018
+ms.date: 4/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,13 +13,21 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 887745913039d7e94930bdf8b30000bdfeea90ff
-ms.sourcegitcommit: a074880eed43cf6e5ae95807640e99655b24d9be
+ms.openlocfilehash: 9f76d43ab9bda33632502ea2acd7491d8ec7b32a
+ms.sourcegitcommit: d9b65152d06b9924231b296ffe565689b44ab93e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Nouveautés de Microsoft Cloud App Security
+
+## <a name="cloud-app-security-release-120"></a>Cloud App Security version 120
+Publication : 8 avril 2018
+
+-   Pour Office 365 et Azure AD, nous développons progressivement la possibilité de détecter les applications internes en tant qu’activités de compte d’utilisateur effectuées par les applications Office 365 et Azure AD (internes et externes). Cela vous permet de créer des stratégies qui vous avertissent si une application effectue des activités inattendues et non autorisées. 
+-   Lors de l’exportation d’une liste d’autorisations d’application au format csv, des champs supplémentaires, comme l’éditeur, le niveau d’autorisation et l’utilisation de la Communauté, sont ajoutés pour vous aider dans le processus d’investigation et de conformité.
+-   L’application connectée ServiceNow a été améliorée pour que les activités de service interne ne soient plus enregistrées comme ayant été effectuées par « Invité » et ne déclenchent plus d’alertes fausses positives. Ces activités sont maintenant représentées par N/A comme toutes les autres applications connectées.
+
 
 ## <a name="cloud-app-security-release-119"></a>Cloud App Security version 119
 Date de publication : 18 mars 2018
@@ -64,11 +72,11 @@ Date de publication : 4 février 2018
 ## <a name="cloud-app-security-release-115"></a>Cloud App Security version 115
 Publiée le 21 janvier 2018
 
--   Cette version offre une meilleure expérience lors de la sélection de dossiers spécifiques dans les stratégies de fichier. Vous pouvez désormais facilement afficher et sélectionner plusieurs dossiers à inclure dans une stratégie. 
--   Dans la page **Applications découvertes** : 
-   - La fonctionnalité de balisage en bloc vous permet d’appliquer des balises personnalisées (en plus des balises approuvées et non approuvées). 
-   - Lorsque vous **générez un rapport d’adresses IP** ou **générez un rapport d’utilisateurs**, les rapports exportés incluent désormais les informations sur le trafic provenant d’applications approuvées non approuvées. 
--   Vous pouvez maintenant demander à l’équipe Microsoft Cloud App Security un nouveau connecteur d’application API directement depuis le portail, dans la page **Connecter une application**. 
+- Cette version offre une meilleure expérience lors de la sélection de dossiers spécifiques dans les stratégies de fichier. Vous pouvez désormais facilement afficher et sélectionner plusieurs dossiers à inclure dans une stratégie. 
+- Dans la page **Applications découvertes** : 
+  - La fonctionnalité de balisage en bloc vous permet d’appliquer des balises personnalisées (en plus des balises approuvées et non approuvées). 
+  - Lorsque vous **générez un rapport d’adresses IP** ou **générez un rapport d’utilisateurs**, les rapports exportés incluent désormais les informations sur le trafic provenant d’applications approuvées non approuvées. 
+- Vous pouvez maintenant demander à l’équipe Microsoft Cloud App Security un nouveau connecteur d’application API directement depuis le portail, dans la page **Connecter une application**. 
 
 
 ## <a name="cloud-app-security-release-114"></a>Cloud App Security version 114
