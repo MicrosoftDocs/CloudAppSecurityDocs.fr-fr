@@ -38,7 +38,6 @@
 # Utiliser
 ## [Utilisation du tableau de bord](daily-activities-to-protect-your-cloud-environment.md)
 ## Scénarios
-### [Protection de votre organisation contre les ransomwares](use-case-ransomware.md)
 ### [Téléchargements en bloc d’informations sensibles](use-case-proxy-block-session-aad.md)
 ### [Protection de vos fichiers avec la mise en quarantaine administrateur](use-case-admin-quarantine.md)
 ### [Appliquer automatiquement des étiquettes Azure Information Protection](use-case-information-protection.md)
@@ -52,7 +51,6 @@
 #### [Filtres d’activité et requêtes](activity-filters-queries.md)
 ### [Fichiers](file-filters.md)
 ### [Comptes](accounts.md)
-### [Informations de référence sur les rapports intégrés](built-in-report-reference.md)
 ### [Gérer les autorisations d’application](manage-app-permissions.md)
 ### [Surveillance des applications](monitor-alerts.md)
 #### [Gérer les alertes](managing-alerts.md)
@@ -65,8 +63,9 @@
 #### [Stratégies de fichier](data-protection-policies.md)
 ##### [Inspection du contenu](content-inspection.md)
 ##### [Utilisation du moteur RegEx](working-with-the-regex-engine.md)
-#### [Stratégies d’accès](access-policy-aad.md)
-#### [Stratégies de session](session-policy-aad.md)
+#### Stratégies de contrôle d’application d’accès conditionnel
+##### [Stratégies d’accès](access-policy-aad.md)
+##### [Stratégies de session](session-policy-aad.md)
 #### [Informations de référence sur les modèles de stratégie](policy-template-reference.md)
 ### [Gouverner les applications connectées](governance-actions.md)
 ### [Gouverner les applications découvertes](governance-discovery.md)

@@ -1,15 +1,15 @@
 ---
 layout: LandingPage
-description: Découvrez comment utiliser Cloud App Security.
-ms.openlocfilehash: 681344fdb313421429484427b7e5899d418cf8a8
-ms.sourcegitcommit: 3c66f12aa31ba211235787ee6f233138ea5f8a75
+description: Découvrez comment utiliser Microsoft Cloud App Security.
+ms.openlocfilehash: 63bdaefbb58fed837aa9d9ce363801693b3eafbf
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 04/23/2018
 ---
-# <a name="cloud-app-security-documentation"></a>Documentation Cloud App Security
+# <a name="microsoft-cloud-app-security-documentation"></a>Documentation de Microsoft Cloud App Security
 
-Fournissez une sécurité de niveau entreprise à vos applications cloud avec Cloud App Security.
+Fournissez une sécurité de niveau entreprise à vos applications cloud avec Microsoft Cloud App Security.
 Que vous soyez ou non dans le cloud, vos employés, eux, le sont. Offrez la sécurité de vos systèmes locaux à vos applications cloud, approuvées ou pas, pour une plus grande visibilité, des contrôles complets et une protection améliorée contre les problèmes de sécurité cloud.
 
 <ul class="panelContent cardsFTitle">
@@ -24,7 +24,7 @@ Que vous soyez ou non dans le cloud, vos employés, eux, le sont. Offrez la séc
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>En savoir plus sur Cloud App Security</h3>
+                        <h3>En savoir plus sur Microsoft Cloud App Security</h3>
                     </div>
                 </div>
             </div>
@@ -78,7 +78,7 @@ Que vous soyez ou non dans le cloud, vos employés, eux, le sont. Offrez la séc
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Utiliser Cloud App Security pour contrôler l’usage des applications cloud</h3>
+                        <h3>Utiliser Microsoft Cloud App Security pour contrôler l’usage des applications cloud</h3>
                     </div>
                 </div>
             </div>
@@ -96,7 +96,7 @@ Que vous soyez ou non dans le cloud, vos employés, eux, le sont. Offrez la séc
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Plus d’informations sur Cloud App Security</h3>
+                        <h3>Plus d’informations sur Microsoft Cloud App Security</h3>
                     </div>
                 </div>
             </div>
@@ -114,7 +114,7 @@ Que vous soyez ou non dans le cloud, vos employés, eux, le sont. Offrez la séc
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Obtenir du support technique pour Cloud App Security</h3>
+                        <h3>Obtenir du support pour Microsoft Cloud App Security</h3>
                     </div>
                 </div>
             </div>
