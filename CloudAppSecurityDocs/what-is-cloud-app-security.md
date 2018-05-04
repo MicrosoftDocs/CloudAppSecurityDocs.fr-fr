@@ -1,25 +1,28 @@
 ---
-title: "Qu’est-ce que Cloud App Security ? | Microsoft Docs"
-description: "Cette rubrique décrit Cloud App Security et comment il fonctionne."
-keywords: 
+title: Qu’est-ce que Cloud App Security ? | Microsoft Docs
+description: Cette rubrique décrit Cloud App Security et comment il fonctionne.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a5b663fc96400902854d7c6901885a3220ca4c3c
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 7bda3cc88e28d8a8a99252556360cc57d36dd02f
+ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/30/2018
 ---
-# <a name="what-is-cloud-app-security"></a>Qu’est-ce que Cloud App Security ?
+*S’applique à : Microsoft Cloud App Security*
+
+
+# <a name="what-is-microsoft-cloud-app-security"></a>Qu’est-ce que Microsoft Cloud App Security ?
 
 > [!NOTE]
 > Pour plus d’informations sur la Gestion de la sécurité avancée et Cloud App Security dans Office 365, consultez [Bien démarrer avec la Gestion de la sécurité avancée](https://support.office.com/article/Get-started-with-Advanced-Management-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a).
@@ -43,14 +46,14 @@ Cloud App Security intègre une visibilité à votre cloud :
 -   En utilisant Cloud Discovery pour mapper et identifier votre environnement cloud et les applications cloud que votre organisation utilise.
 -   En approuvant ou non des applications de votre cloud.  
 -   En utilisant des connecteurs d’application faciles à déployer qui tirent parti des API du fournisseur, ce qui permet une visibilité et une gouvernance des applications auxquelles vous vous connectez.  
--   En utilisant une protection de proxy pour obtenir une visibilité en temps réel et contrôler l’accès et les activités effectuées au sein de vos applications cloud.
+-   à l’aide d’une protection du Contrôle d’accès conditionnel aux applications pour obtenir une visibilité en temps réel et contrôler l’accès et les activités effectuées au sein de vos applications cloud.
 -   En vous permettant un contrôle continu via la définition et l’optimisation permanente de stratégies.  
 
 ![Schéma de l’architecture Cloud App Security](./media/proxy-architecture.png)  
 
 ### <a name="data-retention--compliance"></a>Conservation des données et conformité
 
-Cloud App Security est officiellement certifié avec la conformité Microsoft pour ISO, HIPAA, CSA STAR, les clauses contractuelles types de l'Union européenne et plus encore. Pour afficher la liste complète des certifications, accédez à la page des [produits de conformité Microsoft] (https://go.microsoft.com/fwlink/?linkid=842039) et sélectionnez Cloud App Security.  
+Cloud App Security est officiellement certifié avec la conformité Microsoft pour ISO, HIPAA, CSA STAR, les clauses contractuelles types de l'Union européenne et plus encore. Pour consulter la liste complète des certifications, accédez à la page des [offres de conformité Microsoft](https://go.microsoft.com/fwlink/?linkid=842039) et sélectionnez Cloud App Security.  
 
 Quand Cloud App Security exécute une inspection du contenu, la confidentialité des données est respectée. Le contenu du fichier n’est pas stocké dans la base de données Cloud App Security. Seules les métadonnées des enregistrements de fichiers et les violations qui ont été identifiées sont stockées dans la base de données Cloud App Security. Pour plus d’informations sur la rétention des données, consultez notre [politique de confidentialité](http://go.microsoft.com/fwlink/?LinkId=512132) et le [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/You-are-in-control-of-your-data).
 Cloud App Security conserve les données comme suit : 
@@ -78,8 +81,8 @@ Pour connecter une application et étendre la protection, l’administrateur de 
 
 Cloud App Security utilise les API fournies par le fournisseur cloud. Chaque application a ses propres limitations de framework et d’API. Cloud App Security fonctionne avec les fournisseurs d’applications pour optimiser l’utilisation des API et garantir des performances optimales. Compte tenu des différentes limitations que les applications imposent sur les API (comme les limitations, les limites d’API et les fenêtres d’API de décalage temporel dynamique), les moteurs de Cloud App Security utilisent la capacité autorisée. Certaines opérations, comme l’analyse de tous les fichiers dans le locataire, nécessitent une grande quantité d’API et sont donc réparties sur une période plus longue. Il est normal que certaines stratégies s’exécutent pendant plusieurs heures ou jours.  
 
-### <a name="proxy-protection"></a>Protection de proxy
-Le proxy Cloud App Security vous propose les outils dont vous avez besoin pour obtenir une visibilité et un contrôle en temps réel de l’accès et des activités effectuées au sein de votre environnement cloud. Avec le proxy, vous pouvez protéger votre organisation : 
+### <a name="conditional-access-app-control-protection"></a>Protection du Contrôle d’accès conditionnel aux applications
+Le Contrôle d’accès conditionnel aux applications de Microsoft Cloud App Security utilise une architecture de proxy inversée et vous propose les outils dont vous avez besoin pour obtenir une visibilité et un contrôle en temps réel de l’accès à votre environnement cloud et des activités qui y sont effectuées. Avec le Contrôle d’accès conditionnel aux applications, vous pouvez protéger votre organisation : 
 -   Éviter les fuites de données en bloquant les téléchargements avant qu’ils se produisent
 -   Définir des règles qui forcent le chiffrement des données stockées dans le cloud et téléchargées à partir du cloud
 -   Obtenir une visibilité sur les points de terminaison non protégés afin de surveiller les opérations réalisées sur les appareils non gérés

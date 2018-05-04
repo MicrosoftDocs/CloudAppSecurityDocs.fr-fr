@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,14 +13,17 @@ ms.technology: ''
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b628b06e5e5c26ec153d7a4b1a9ef9483c15618a
-ms.sourcegitcommit: 716699286f8ebb33327eac28ca9b7bf9742daf32
+ms.openlocfilehash: 6f34fbcf5c268518c269f98838321e134c6e7279
+ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/30/2018
 ---
+*S’applique à : Microsoft Cloud App Security*
+
+
 # <a name="activities"></a>Activités
-Cloud App Security vous donne une visibilité sur toutes les activités de vos applications connectées. Une fois connecté à une application à l’aide du connecteur d’applications, Cloud App Security analyse toutes les activités passées (la période d’analyse rétroactive varie par application). Cloud App Security est ensuite mis à jour en continu avec les nouvelles activités. 
+Microsoft Cloud App Security vous donne une visibilité sur toutes les activités de vos applications connectées. Une fois connecté à une application à l’aide du connecteur d’applications, Cloud App Security analyse toutes les activités passées (la période d’analyse rétroactive varie par application). Cloud App Security est ensuite mis à jour en continu avec les nouvelles activités. 
 
 > [!NOTE] 
 > Pour obtenir une liste complète des activités Office 365 surveillées par Cloud App Security, voir [Rechercher le journal d’audit dans le Centre de sécurité et conformité Office 365](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US#ID0EABAAA=Audited_activities).
@@ -39,7 +42,9 @@ Pour explorer des activités plus spécifiques, vous pouvez développer le filtr
 
  ![filtre avancé du journal d’activité](media/activity-log-filter-advanced.png)
 
-
+> [!NOTE] 
+> La balise héritée est ajoutée à toute stratégie d’activité qui utilisent l’ancien filtre « utilisateur ». Ce filtre continue à fonctionner comme d’habitude. Si vous souhaitez supprimer la balise héritée, vous pouvez supprimer le filtre et l’ajouter à nouveau à l’aide du nouveau filtre **Nom d’utilisateur**.
+ 
 ## <a name="the-activity-drawer"></a>Tiroir Activité
 
 ### <a name="working-with-the-activity-drawer"></a>Travailler avec le tiroir Activité

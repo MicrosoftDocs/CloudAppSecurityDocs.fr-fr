@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/11/2018
+ms.date: 4/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,13 +13,31 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9f76d43ab9bda33632502ea2acd7491d8ec7b32a
-ms.sourcegitcommit: d9b65152d06b9924231b296ffe565689b44ab93e
+ms.openlocfilehash: 0cae8e65e5dea1c0a661959ea99ec19cfbc0da94
+ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/30/2018
 ---
+*S’applique à : Microsoft Cloud App Security*
+
+
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Nouveautés de Microsoft Cloud App Security
+
+
+## <a name="cloud-app-security-release-122"></a>Cloud App Security version 122
+Publication : 29 avril 2018
+
+-   Lancement progressif : vous pouvez maintenant définir des autorisations administratives aux administrateurs de Microsoft Cloud App Security par application. Par exemple, vous pouvez définir un utilisateur spécifique en tant qu’administrateur de la Suite G uniquement. Cela permet à l’utilisateur d’afficher et de modifier les informations de Microsoft Cloud App Security uniquement lorsqu’il se rapporte exclusivement à la Suite G. Pour plus d’informations, consultez [Gestion des accès d’administration](manage-admins.md).
+- Lancement progressif : les rôles d’administrateur Okta sont désormais visibles dans Microsoft Cloud App Security et sont disponibles pour chaque rôle en tant que balise sous **Paramètres** > **Groupes d’utilisateurs**.
+
+
+## <a name="cloud-app-security-release-121"></a>Cloud App Security version 121
+Publication : 22 avril 2018
+
+-   La préversion publique du **contrôle d’application d’accès conditionnel (anciennement appelé Proxy Cloud App Security)** a été enrichie de fonctionnalités qui approfondissent la visibilité et le contrôle de diverses applications. Vous pouvez à présent créer une stratégie de session avec un filtre *Type d’activité*, pour surveiller et bloquer un éventail d’activités propres à l’application. Ce nouveau filtre augmente les fonctionnalités existantes de contrôle de téléchargement de fichiers pour vous fournir un contrôle total sur les applications de votre organisation. Il fonctionne avec l’accès conditionnel Azure Active Directory pour offrir une visibilité en temps réel et un contrôle des sessions utilisateur présentant un risque (par exemple, les sessions avec des collaborateurs B2B ou des utilisateurs d’appareils non gérés). Pour plus d’informations, consultez [Stratégies de session](session-policy-aad.md).
+-   Lancement progressif : les **stratégies de détection d’anomalie de Cloud App Security ont été améliorées** de sorte à inclure deux nouveaux types de détection des menaces : l’activité de ransomware et l’activité des utilisateurs en fin de contrat. Cloud App Security a étendu ses capacités de détection de ransomware à la détection d’anomalie pour garantir une couverture plus complète contre les attaques de ransomware complexes. Fort de notre expertise en recherche dans la sécurité visant à identifier les modèles comportementaux qui reflètent des activités de ransomware, Cloud App Security assure une protection complète et solide. L’activité des utilisateurs en fin de contrat vous permet de surveiller les comptes des utilisateurs en fin de contrat, qui ont été peut-être été déprovisionnés des applications d’entreprise, mais qui, dans de nombreux cas, conservent toujours l’accès à certaines ressources de l’entreprise. Pour plus d’informations, consultez [Obtenir instantanément une détection d’anomalie et une analytique comportementale](anomaly-detection-policy.md).
+
 
 ## <a name="cloud-app-security-release-120"></a>Cloud App Security version 120
 Publication : 8 avril 2018
