@@ -1,24 +1,26 @@
 ---
-title: "Utilisation des filtres et des requêtes d’applications découvertes de Cloud App Security | Microsoft Docs"
-description: "Cette rubrique fournit une liste de filtres et de requêtes d’applications découvertes de Cloud App Security, et explique comment les utiliser."
-keywords: 
+title: Utilisation des filtres et des requêtes d’applications découvertes de Cloud App Security | Microsoft Docs
+description: Cette rubrique fournit une liste de filtres et de requêtes d’applications découvertes de Cloud App Security, et explique comment les utiliser.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/3/2018
+ms.date: 5/9/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1a2d3aeb-4e28-4c73-804b-95e862b08e43
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ea1b0b150f1028e8a8d4edac32aa6d8a4f59b564
-ms.sourcegitcommit: bbf4a2715d1ea3fd21c1a1b87c7f5a2947d2ca68
+ms.openlocfilehash: 3a89faa350a35d7b5bfd5b2cfe7fdc0263bb2566
+ms.sourcegitcommit: 5d549d7e2d15f36452fe3c3d143493a7014b457b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 05/09/2018
 ---
+*S’applique à : Microsoft Cloud App Security*
+
 # <a name="discovered-app-filters-and-queries"></a>Filtres et requêtes d’applications découvertes
 
 ## <a name="discovered-app-filters"></a>Filtres d’application découverte
@@ -64,11 +66,11 @@ Pour faciliter encore plus les recherches, vous pouvez désormais créer des req
 
 3. Dans la fenêtre contextuelle **Enregistrer la requête**, nommez votre requête.
 
- ![nouvelle requête](./media/new-query.png)
+   ![nouvelle requête](./media/new-query.png)
 
 4. Pour réutiliser cette requête plus tard, sous **Requêtes**, faites défiler jusqu’à **Requêtes enregistrées** et sélectionnez votre requête. 
 
- ![ouvrir une requête](./media/open-query.png)
+   ![ouvrir une requête](./media/discovered-app-query.png)
 
 
 Cloud App Security vous fournit également des **requêtes suggérées** et vous permet d’enregistrer des requêtes personnalisées que vous utilisez fréquemment. Les requêtes suggérées vous fournissent des zones de recherche recommandées qui filtrent vos applications découvertes en utilisant les requêtes suggérées facultatives suivantes :
