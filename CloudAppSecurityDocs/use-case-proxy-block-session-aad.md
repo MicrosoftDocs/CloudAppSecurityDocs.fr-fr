@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/25/2018
+ms.date: 5/9/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,20 @@ ms.technology: ''
 ms.assetid: 06238ebc-2088-4372-9412-96cceaf3b145
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 72d43369ca7f8405463bbe66f7df80b8f5797149
-ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
+ms.openlocfilehash: df7fa13ece4f375751152db48114d0f2edd04362
+ms.sourcegitcommit: 5d549d7e2d15f36452fe3c3d143493a7014b457b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2018
+ms.lasthandoff: 05/09/2018
 ---
 *S’applique à : Microsoft Cloud App Security*
 
 
+
 # <a name="blocking-downloads-of-sensitive-information-using-microsoft-cloud-app-security-conditional-access-app-control"></a>Blocage des téléchargements d’informations sensibles avec le Contrôle d’accès conditionnel aux applications Microsoft Cloud App Security
 
+>[!div class="step-by-step"]
+[« Précédent : Stratégies d’accès](access-policy-aad.md)
 
 Aujourd’hui, l’administration informatique est prise entre deux feux : d’un côté, vous avez besoin que vos employés soient productifs. Ce qui implique de les autoriser à accéder à des applications pour qu’ils puissent travailler à tout moment, depuis n’importe quel appareil. De l’autre, vous devez protéger les ressources de l’entreprise, notamment les informations propriétaires et privilégiées. Comment permettre à vos employés d’accéder à vos applications cloud tout en protégeant vos données ? **Ce cas d’usage vous permet de bloquer les téléchargements effectués par des utilisateurs qui ont accès à vos données sensibles dans des applications cloud d’entreprise depuis des appareils non gérés ou des emplacements réseau hors entreprise.**
 
@@ -128,6 +131,9 @@ Une fois cette tâche terminée, accédez au portail Cloud App Security et crée
 
 4. Dans le rapport de stratégie, vous pouvez voir quelles connexions ont été redirigées vers Microsoft Cloud App Security à des fins de contrôle de session et quels fichiers ont été téléchargés ou bloqués depuis les sessions surveillées.
 
+
+>[!div class="step-by-step"]
+[« Précédent : Stratégies d’accès](access-policy-aad.md)
 
 
 

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/25/2018
+ms.date: 5/9/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 745df28a-654c-4abf-9c90-203841169f90
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7ae1fa26f818fa652570dc6752028c3addbd3b2a
-ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
+ms.openlocfilehash: cf13b7439baafa11a94aa8420ec050781fde88fc
+ms.sourcegitcommit: 5d549d7e2d15f36452fe3c3d143493a7014b457b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2018
+ms.lasthandoff: 05/09/2018
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -25,6 +25,12 @@ ms.lasthandoff: 04/30/2018
 
 > [!NOTE]
 > Il s’agit d’une fonctionnalité en préversion.
+
+
+>[!div class="step-by-step"]
+[« Précédent : Déployer le Contrôle d’accès conditionnel aux applications](proxy-deployment-aad.md)
+[Suivant : Stratégies d’accès »](access-policy-aad.md)
+
 
 Les stratégies de session Microsoft Cloud App Security permettent une surveillance en temps réel au niveau de la session, qui vous offre une visibilité plus précise des applications cloud et la possibilité de prendre différentes mesures selon la stratégie que vous définissez pour une session utilisateur. Au lieu [d’autoriser ou de bloquer complètement l’accès](access-policy-aad.md), avec le contrôle de session, vous pouvez autoriser l’accès pendant la surveillance de la session et/ou limiter des activités de session particulières à l’aide des fonctionnalités du proxy inversé du Contrôle d’accès conditionnel aux applications. 
 
@@ -175,6 +181,10 @@ Quand l’option **Bloquer les activités** est définie pour le **Type d’acti
 Sélectionnez **Bloquer les activités** pour bloquer des activités spécifiques que vous pouvez sélectionner à l’aide du filtre **Type d’activité**. Toutes les activités des applications sélectionnées sont surveillées (et signalées dans le journal d’activité). Les activités spécifiques que vous sélectionnez sont bloquées si vous sélectionnez l’action **Bloquer** et déclenchent des alertes si vous sélectionnez l’action **Tester** et que les alertes sont activées.
 Quand la valeur **Protéger** est définie sur **Action** à prendre dans la stratégie de session de Cloud App Security, le Contrôle d’accès conditionnel aux applications applique l’étiquetage et la protection ultérieure d’un fichier conformément aux filtres de fichiers de la stratégie. Les étiquettes sont configurées dans la console Azure Information Protection dans Azure et l’option **Protéger** doit être sélectionnée dans l’étiquette pour qu’elle apparaisse en tant qu’option dans la stratégie Cloud App Security. Quand une étiquette est sélectionnée et qu’un fichier correspondant aux critères de la stratégie Cloud App Security est téléchargé, l’étiquette et la protection correspondante (avec les autorisations) sont appliquées au fichier lors de son téléchargement. Le fichier original reste inchangé dans l’application cloud, tandis que le fichier téléchargé est désormais protégé. Les utilisateurs qui essaient d’accéder au fichier doivent respecter les exigences d’autorisation déterminées par la protection appliquée.  
  
+>[!div class="step-by-step"]
+[« Précédent : Déployer le Contrôle d’accès conditionnel aux applications](proxy-deployment-aad.md)
+[Suivant : Stratégies d’accès »](access-policy-aad.md)
+
  
 ## <a name="see-also"></a>Voir aussi  
 [Blocage des téléchargements sur des appareils non gérés à l’aide des fonctionnalités du Contrôle d’accès conditionnel aux applications Azure AD](use-case-proxy-block-session-aad.md)   

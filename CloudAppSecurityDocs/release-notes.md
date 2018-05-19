@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/29/2018
+ms.date: 5/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,23 +13,30 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0cae8e65e5dea1c0a661959ea99ec19cfbc0da94
-ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
+ms.openlocfilehash: 545d7cb0e7152918e8f9b1e37ff1d7a210605342
+ms.sourcegitcommit: aebd4dd970465a7f5818329f344c24fe73f616dd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2018
+ms.lasthandoff: 05/13/2018
 ---
 *S’applique à : Microsoft Cloud App Security*
 
 
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Nouveautés de Microsoft Cloud App Security
 
+## <a name="cloud-app-security-release-123"></a>Cloud App Security version 123
+
+Publication : 13 mai 2018
+
+- **Délimitation des stratégies de détection d’anomalie** :<br>
+Les stratégies de détection d’anomalie peuvent désormais être délimitées. Cela vous permet, pour chaque stratégie de détection d’anomalie, d’inclure ou d’exclure certains utilisateurs ou groupes. Par exemple, vous pouvez configurer l’option Activité à partir de pays peu fréquents de manière à ignorer un utilisateur qui voyage fréquemment. 
+
 
 ## <a name="cloud-app-security-release-122"></a>Cloud App Security version 122
 Publication : 29 avril 2018
 
--   Lancement progressif : vous pouvez maintenant définir des autorisations administratives aux administrateurs de Microsoft Cloud App Security par application. Par exemple, vous pouvez définir un utilisateur spécifique en tant qu’administrateur de la Suite G uniquement. Cela permet à l’utilisateur d’afficher et de modifier les informations de Microsoft Cloud App Security uniquement lorsqu’il se rapporte exclusivement à la Suite G. Pour plus d’informations, consultez [Gestion des accès d’administration](manage-admins.md).
-- Lancement progressif : les rôles d’administrateur Okta sont désormais visibles dans Microsoft Cloud App Security et sont disponibles pour chaque rôle en tant que balise sous **Paramètres** > **Groupes d’utilisateurs**.
+-   Lancement progressif : vous pouvez maintenant **définir des autorisations administratives pour les administrateurs Microsoft Cloud App Security pour chaque application**. Par exemple, vous pouvez définir un utilisateur spécifique en tant qu’administrateur de la Suite G uniquement. Cela permet à l’utilisateur d’afficher et de modifier les informations de Microsoft Cloud App Security uniquement lorsqu’il se rapporte exclusivement à la Suite G. Pour plus d’informations, consultez [Gestion des accès d’administration](manage-admins.md).
+- Lancement progressif : les **rôles d’administrateur Okta sont désormais visibles** dans Microsoft Cloud App Security et sont disponibles pour chaque rôle en tant que balise sous **Paramètres** > **Groupes d’utilisateurs**.
 
 
 ## <a name="cloud-app-security-release-121"></a>Cloud App Security version 121
