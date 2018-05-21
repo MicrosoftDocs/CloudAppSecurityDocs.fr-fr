@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/9/2018
+ms.date: 5/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 745df28a-654c-4abf-9c90-203841169f90
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: cf13b7439baafa11a94aa8420ec050781fde88fc
-ms.sourcegitcommit: 5d549d7e2d15f36452fe3c3d143493a7014b457b
+ms.openlocfilehash: 2cf378e8490ebf1e0cb7d35fe3842800a08290e2
+ms.sourcegitcommit: 2ca1f7b11679d15faa1abdf0b8a805c9aff89d2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/14/2018
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -28,8 +28,8 @@ ms.lasthandoff: 05/09/2018
 
 
 >[!div class="step-by-step"]
-[« Précédent : Déployer le Contrôle d’accès conditionnel aux applications](proxy-deployment-aad.md)
-[Suivant : Stratégies d’accès »](access-policy-aad.md)
+[« PRÉCÉDENT : Déployer le Contrôle d’accès conditionnel aux applications](proxy-deployment-aad.md)<br>
+[SUIVANT : Guide pratique pour créer une stratégie d’accès »](access-policy-aad.md)
 
 
 Les stratégies de session Microsoft Cloud App Security permettent une surveillance en temps réel au niveau de la session, qui vous offre une visibilité plus précise des applications cloud et la possibilité de prendre différentes mesures selon la stratégie que vous définissez pour une session utilisateur. Au lieu [d’autoriser ou de bloquer complètement l’accès](access-policy-aad.md), avec le contrôle de session, vous pouvez autoriser l’accès pendant la surveillance de la session et/ou limiter des activités de session particulières à l’aide des fonctionnalités du proxy inversé du Contrôle d’accès conditionnel aux applications. 
@@ -182,8 +182,8 @@ Sélectionnez **Bloquer les activités** pour bloquer des activités spécifique
 Quand la valeur **Protéger** est définie sur **Action** à prendre dans la stratégie de session de Cloud App Security, le Contrôle d’accès conditionnel aux applications applique l’étiquetage et la protection ultérieure d’un fichier conformément aux filtres de fichiers de la stratégie. Les étiquettes sont configurées dans la console Azure Information Protection dans Azure et l’option **Protéger** doit être sélectionnée dans l’étiquette pour qu’elle apparaisse en tant qu’option dans la stratégie Cloud App Security. Quand une étiquette est sélectionnée et qu’un fichier correspondant aux critères de la stratégie Cloud App Security est téléchargé, l’étiquette et la protection correspondante (avec les autorisations) sont appliquées au fichier lors de son téléchargement. Le fichier original reste inchangé dans l’application cloud, tandis que le fichier téléchargé est désormais protégé. Les utilisateurs qui essaient d’accéder au fichier doivent respecter les exigences d’autorisation déterminées par la protection appliquée.  
  
 >[!div class="step-by-step"]
-[« Précédent : Déployer le Contrôle d’accès conditionnel aux applications](proxy-deployment-aad.md)
-[Suivant : Stratégies d’accès »](access-policy-aad.md)
+[« PRÉCÉDENT : Déployer le Contrôle d’accès conditionnel aux applications](proxy-deployment-aad.md)<br>
+[SUIVANT : Guide pratique pour créer une stratégie d’accès »](access-policy-aad.md)
 
  
 ## <a name="see-also"></a>Voir aussi  

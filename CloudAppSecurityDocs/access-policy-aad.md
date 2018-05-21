@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/9/2018
+ms.date: 5/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 9095cff1-f8b0-44a7-b1df-a83e674abbc6
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: dbf878e3dee283c6d200008b414fb062f9e79723
-ms.sourcegitcommit: aefbc9e0a381f0b7b6ef70c4a74b4b31d8bd9c62
+ms.openlocfilehash: 06a78107b33613fe8d947ed55e057990268c7026
+ms.sourcegitcommit: 2ca1f7b11679d15faa1abdf0b8a805c9aff89d2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/14/2018
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -28,8 +28,8 @@ ms.lasthandoff: 05/09/2018
 
 
 >[!div class="step-by-step"]
-[« Stratégie de session](session-policy-aad.md)<br>
-[Cas d’utilisation »](use-case-proxy-block-session-aad.md)
+[« PRÉCÉDENT : Guide pratique pour créer une stratégie de session](session-policy-aad.md)<br>
+[SUIVANT : Explorer les cas d’usage courants »](use-case-proxy-block-session-aad.md)
 
 
 Les stratégies d’accès Microsoft Cloud App Security permettent la surveillance et le contrôle en temps réel de l’accès à des applications cloud, en fonction de l’utilisateur, de l’emplacement, de l’appareil et de l’application. Vous pouvez créer des stratégies d’accès pour n’importe quel appareil, notamment les appareils qui ne sont pas joint à un domaine et qui ne sont pas gérés par Windows Intune, en déployant des certificats clients sur des appareils gérés ou en tirant parti de certificats existants, comme des certificats MDM tiers. Par exemple, vous pouvez déployer des certificats clients sur des appareils gérés, puis bloquer l’accès à partir des appareils sans certificat. 
@@ -95,8 +95,9 @@ Pour créer une stratégie d’activité, suivez cette procédure :
 
 
 >[!div class="step-by-step"]
-[« Précédent : Stratégies de session](session-policy-aad.md)
-[Suivant : Blocage des téléchargements d’informations sensibles avec le Contrôle d’accès conditionnel aux applications Microsoft Cloud App Security »](use-case-proxy-block-session-aad.md)
+[« PRÉCÉDENT : Guide pratique pour créer une stratégie de session](session-policy-aad.md)<br>
+[SUIVANT : Explorer les cas d’usage courants »](use-case-proxy-block-session-aad.md)
+
  
 ## <a name="see-also"></a>Voir aussi  
 [Blocage des téléchargements sur des appareils non gérés à l’aide des fonctionnalités du Contrôle d’accès conditionnel aux applications Azure AD](use-case-proxy-block-session-aad.md)   
