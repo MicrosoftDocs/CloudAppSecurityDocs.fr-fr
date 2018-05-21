@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/9/2018
+ms.date: 5/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 35a43120-bf67-4cf9-9b48-ebe157dbbd18
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 88e201e498ae4bf6369996be682d1d91bc324b04
-ms.sourcegitcommit: 5d549d7e2d15f36452fe3c3d143493a7014b457b
+ms.openlocfilehash: 4ef6f91c13e2dc997efe51856d53775e124e0b4d
+ms.sourcegitcommit: 2ca1f7b11679d15faa1abdf0b8a805c9aff89d2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/14/2018
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -127,6 +127,7 @@ De nouvelles applications sont intégrées au contrôle de session en continu. S
 
 >[!div class="step-by-step"]
 [Suivant : Déployer le Contrôle d’accès conditionnel aux applications »](proxy-deployment-aad.md)
+
 
 ## <a name="see-also"></a>Voir aussi  
 [Déployer le Contrôle d’applications par accès conditionnel pour les applications Azure AD](proxy-deployment-aad.md)   
