@@ -1,24 +1,27 @@
 ---
-title: "Contrôler l’utilisation des applications cloud en créant des stratégies dans Cloud App Security | Microsoft Docs"
-description: "Cette rubrique fournit des informations sur la façon dont les stratégies sont utilisées et configurées pour contrôler l’usage des applications cloud."
-keywords: 
+title: Contrôler l’utilisation des applications cloud en créant des stratégies dans Cloud App Security | Microsoft Docs
+description: Cette rubrique fournit des informations sur la façon dont les stratégies sont utilisées et configurées pour contrôler l’usage des applications cloud.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 14d10238-0f61-43e9-ab96-71534a27d3d4
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 89a71f9274d5005a93576dfc4ef6436870b9bd4b
-ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
+ms.openlocfilehash: 578cedd1f499f91ae2e740a7e0e0f1495d86f3cb
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 04/23/2018
 ---
+*S’applique à : Microsoft Cloud App Security*
+
+
 # <a name="control-cloud-apps-with-policies"></a>Contrôler les applications cloud avec des stratégies
 
 Grâce aux stratégies, vous pouvez définir la façon dont vous souhaitez que vos utilisateurs se comportent dans le cloud. Vous pouvez détecter les comportements à risques, les violations ou les activités et les points de données suspects dans votre environnement cloud et, si nécessaire, intégrer des flux de travail de correction pour atténuer les risques de façon efficace. Il existe plusieurs types de stratégies suivant les différents types d’informations que vous voulez collecter sur votre environnement cloud et les types de mesures correctives que vous pouvez souhaiter prendre.  
@@ -93,18 +96,18 @@ Les modèles de stratégie vous aident à définir les filtres et configurations
   
 Pour créer une stratégie à partir de **modèles de stratégie**, effectuez les étapes suivantes :  
   
-1.  Dans la console, cliquez sur **Contrôle**, puis sur **Modèles**.  
+1. Dans la console, cliquez sur **Contrôle**, puis sur **Modèles**.  
   
-     ![](./media/create-policy-from-template.png)  
+    ![](./media/create-policy-from-template.png)  
   
-2.  Cliquez sur le signe **+** tout à droite de la ligne du modèle à utiliser. Une page de création de stratégie s’ouvre, contenant la configuration prédéfinie du modèle.  
+2. Cliquez sur le signe **+** tout à droite de la ligne du modèle à utiliser. Une page de création de stratégie s’ouvre, contenant la configuration prédéfinie du modèle.  
   
-3.  Modifiez le modèle en fonction des besoins de votre stratégie personnalisée. Vous pouvez modifier librement chaque propriété et champ de cette nouvelle stratégie basée sur un modèle.  
-> [!NOTE] 
->Quand vous utilisez des filtres de stratégie, le filtre **Contains (Contient)** recherche uniquement des mots entiers, séparés par des virgules, points, espaces ou traits de soulignement. Par exemple, si vous recherchez **malware** ou **virus**, il trouve virus_malware_file.exe, mais pas malwarevirusfile.exe. Si vous recherchez *malware.exe*, vous obtenez TOUS les fichiers exe dont le nom contient malware ou exe, tandis que si vous recherchez **"malware.exe"** (avec les guillemets), vous n’obtenez que les fichiers dont le nom contient exactement « malware.exe ». 
-     **Equals (Est égal à)** recherche uniquement la chaîne complète ; par exemple, si vous recherchez *malware.exe*, il trouve malware.exe, mais pas malware.exe.txt.  
-4.  Une fois la stratégie basée sur un modèle créée, un lien vers celle-ci s’affiche dans la colonne **Stratégies liées** de la table des modèles de stratégie, en regard du modèle à partir duquel la stratégie a été créée.   
-     Vous pouvez, à partir de chaque modèle, créer autant de stratégies que vous le souhaitez, qui seront toutes liées au modèle d’origine ; ainsi, vous pouvez effectuer le suivi de toutes les stratégies créées à l’aide du même modèle.  
+3. Modifiez le modèle en fonction des besoins de votre stratégie personnalisée. Vous pouvez modifier librement chaque propriété et champ de cette nouvelle stratégie basée sur un modèle.  
+   > [!NOTE] 
+   >Quand vous utilisez des filtres de stratégie, le filtre **Contains (Contient)** recherche uniquement des mots entiers, séparés par des virgules, points, espaces ou traits de soulignement. Par exemple, si vous recherchez **malware** ou **virus**, il trouve virus_malware_file.exe, mais pas malwarevirusfile.exe. Si vous recherchez *malware.exe*, vous obtenez TOUS les fichiers exe dont le nom contient malware ou exe, tandis que si vous recherchez **"malware.exe"** (avec les guillemets), vous n’obtenez que les fichiers dont le nom contient exactement « malware.exe ». 
+    **Equals (Est égal à)** recherche uniquement la chaîne complète ; par exemple, si vous recherchez *malware.exe*, il trouve malware.exe, mais pas malware.exe.txt.  
+4. Une fois la stratégie basée sur un modèle créée, un lien vers celle-ci s’affiche dans la colonne **Stratégies liées** de la table des modèles de stratégie, en regard du modèle à partir duquel la stratégie a été créée.   
+    Vous pouvez, à partir de chaque modèle, créer autant de stratégies que vous le souhaitez, qui seront toutes liées au modèle d’origine ; ainsi, vous pouvez effectuer le suivi de toutes les stratégies créées à l’aide du même modèle.  
   
 Vous pouvez également **créer une stratégie au cours d’un examen**. Si vous examinez le **Journal d’activité**, les **Fichiers** ou les **Comptes** à la recherche d’un élément spécifique, à tout moment, vous pouvez créer une stratégie basée sur les résultats de votre examen.  
   

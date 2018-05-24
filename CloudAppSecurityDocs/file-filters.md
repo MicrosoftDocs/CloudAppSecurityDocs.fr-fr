@@ -1,28 +1,30 @@
 ---
-title: "Présentation des données et des filtres de fichiers disponibles dans Cloud App Security | Microsoft Docs"
-description: "Cette rubrique de référence fournit des informations sur les types de fichiers et les filtres de fichiers utilisés par Cloud App Security."
-keywords: 
+title: Présentation des données et des filtres de fichiers disponibles dans Cloud App Security | Microsoft Docs
+description: Cette rubrique de référence fournit des informations sur les types de fichiers et les filtres de fichiers utilisés par Cloud App Security.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 995bcacd450856fb9aa75a4c7d48596a7fbc168c
-ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
+ms.openlocfilehash: e34ff5bd2e25b4c25f314c35f2ffc3ab4b41c24a
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 04/23/2018
 ---
+*S’applique à : Microsoft Cloud App Security*
+
 # <a name="files"></a>Fichiers
 
 
-Pour garantir la protection des données, Cloud App Security vous permet de visualiser tous les fichiers de vos applications connectées. Une fois connecté à une application à l’aide du connecteur d’applications, Cloud App Security analyse tous les fichiers, par exemple tous les fichiers stockés dans OneDrive et Salesforce. Cloud App Security analyse ensuite chaque fichier dès qu’une modification est apportée (à son contenu, à ses métadonnées ou à ses autorisations de partage). Les durées des analyses varient en fonction du nombre de fichiers stockés dans votre application. Vous pouvez également utiliser la page **Fichiers** pour filtrer les fichiers et examiner le genre des données enregistrées dans vos applications cloud. 
+Pour garantir la protection des données, Microsoft Cloud App Security vous permet de visualiser tous les fichiers de vos applications connectées. Une fois connecté à une application à l’aide du connecteur d’applications, Microsoft Cloud App Security analyse tous les fichiers, par exemple tous les fichiers stockés dans OneDrive et Salesforce. Cloud App Security analyse ensuite chaque fichier dès qu’une modification est apportée (à son contenu, à ses métadonnées ou à ses autorisations de partage). Les durées des analyses varient en fonction du nombre de fichiers stockés dans votre application. Vous pouvez également utiliser la page **Fichiers** pour filtrer les fichiers et examiner le genre des données enregistrées dans vos applications cloud. 
 
 Par exemple, si vous voulez utiliser la page **Fichiers** pour sécuriser des fichiers partagés en externe et étiquetés comme **confidentiels**, procédez comme suit : après avoir connecté une application à Cloud App Security, vous pouvez procéder à l’intégration à Azure Information Protection. Ensuite, dans la page **Fichiers**, filtrez les fichiers étiquetés comme **confidentiels**. Si vous constatez que des fichiers **confidentiels** sont partagés à l’extérieur de votre organisation en excluant votre domaine via le filtre **Collaborateurs**, vous pouvez créer une stratégie de fichier qui détecte les fichiers **confidentiels** avec des niveaux d’accès incorrects et appliquer des actions de gouvernance automatiques, comme **Supprimer des collaborateurs externes** et **Envoyer une synthèse de correspondance de stratégie au propriétaire du fichier** pour éviter la perte de données à votre organisation.
 
@@ -47,12 +49,12 @@ Cloud App Security peut surveiller n’importe quel type de fichier en fonction 
 Les moteurs intégrés de protection contre la perte de données (DLP) de Cloud App Security effectuent l’inspection du contenu en extrayant le texte des types de fichiers courants (PDF, fichiers Office, RTF, HTML, fichiers de code, etc.).
 
 Vous trouverez ci-dessous la liste des filtres de fichiers qui peuvent être appliqués. La plupart des filtres prennent en charge plusieurs valeurs, ainsi que NOT, afin de vous fournir un outil très puissant pour créer des stratégies.  
-> [!NOTE] 
+> [!NOTE]
 > Quand vous utilisez des filtres de stratégie de fichier, le filtre **Contains (Contient)** recherche uniquement des **mots entiers** séparés par des virgules, points, espaces ou traits de soulignement. 
 > - Les espaces entre les mots agissent comme l’opérateur OR. Par exemple, si vous recherchez **malware** **virus**, le filtre trouve tous les fichiers dont le nom contient malware ou virus. Il trouve donc malware-virus.exe et virus.exe.  
 > - Si vous souhaitez rechercher une chaîne, placez les mots entre guillemets. Ceux-ci fonctionnent comme l’opérateur AND. Ainsi, si vous recherchez **"malware"** **"virus"**, le filtre trouve virus_malware_file.exe, mais pas malwarevirusfile.exe et malware.exe. Toutefois, il recherche la chaîne exacte. Si vous recherchez **"malware virus"**, il ne trouve ni **"virus"** ni **"virus_malware"**.
-
->**Equals (Est égal à)** recherche uniquement la chaîne complète ; par exemple, si vous recherchez **malware.exe**, il trouve malware.exe, mais pas malware.exe.txt. 
+> 
+> **Equals (Est égal à)** recherche uniquement la chaîne complète ; par exemple, si vous recherchez **malware.exe**, il trouve malware.exe, mais pas malware.exe.txt. 
 
 -   Niveau d’accès : Niveau d’accès de partage, à savoir public, externe, interne ou privé.  Pour plus d’informations sur les fichiers externes, consultez [Configuration générale, configurer le portail](getting-started-with-cloud-app-security.md)
     - Les fichiers internes se trouvent dans les domaines internes que vous définissez dans [Configuration générale](General-setup.md). 
