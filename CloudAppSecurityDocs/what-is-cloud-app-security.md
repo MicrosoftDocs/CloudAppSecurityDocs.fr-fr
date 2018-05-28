@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7bda3cc88e28d8a8a99252556360cc57d36dd02f
-ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
+ms.openlocfilehash: e7531650e17fb7cca2a187bece484e48fe406aae
+ms.sourcegitcommit: 0d73d21f961dc883f01a329bcf16dcaf070dca2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2018
+ms.lasthandoff: 05/27/2018
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -25,7 +25,7 @@ ms.lasthandoff: 04/30/2018
 # <a name="what-is-microsoft-cloud-app-security"></a>Qu’est-ce que Microsoft Cloud App Security ?
 
 > [!NOTE]
-> Pour plus d’informations sur la Gestion de la sécurité avancée et Cloud App Security dans Office 365, consultez [Bien démarrer avec la Gestion de la sécurité avancée](https://support.office.com/article/Get-started-with-Advanced-Management-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a).
+> Pour plus d’informations sur Office 365 Cloud App Security, consultez [Bien démarrer avec Office 365 Cloud App Security](https://support.office.com/article/Get-started-with-Advanced-Management-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a).
 
 Si le passage au cloud offre davantage de flexibilité aux employés et réduit les coûts informatiques, il introduit également une nouvelle complexité et de nouveaux défis pour le maintien de la sécurité de votre organisation. Pour tirer le meilleur parti des applications cloud, une équipe informatique doit trouver le juste équilibre entre la prise en charge des accès et la conservation du contrôle pour protéger les données critiques.  
 

@@ -1,27 +1,30 @@
 ---
-title: "Intégrer Azure Information Protection à Cloud App Security | Microsoft Docs"
-description: "Cet article fournit des informations sur la façon de tirer parti de vos balises Azure Information Protection dans Cloud App Security afin de renforcer le contrôle de l’utilisation des applications cloud de votre organisation."
-keywords: 
+title: Intégrer Azure Information Protection à Cloud App Security | Microsoft Docs
+description: Cet article fournit des informations sur la façon de tirer parti de vos balises Azure Information Protection dans Cloud App Security afin de renforcer le contrôle de l’utilisation des applications cloud de votre organisation.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/3/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 92182731b6ee80c24aa2f3d7836415b2dfa4da2c
-ms.sourcegitcommit: c5533d66b8e037d6221c48bdbad81574f25f2817
+ms.openlocfilehash: 97aeddd863ce34da0ebe5f6a5b74606212ef8f54
+ms.sourcegitcommit: f34a20a079863dd916343dd59aeff8a221831866
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 05/25/2018
 ---
+*S’applique à : Microsoft Cloud App Security*
+
+
 # <a name="azure-information-protection-integration"></a>Intégration d’Azure Information Protection
 
-Cloud App Security vous permet d’appliquer des étiquettes de classification Azure Information Protection automatiquement, avec ou sans protection, à des fichiers, en tant qu’action de gouvernance de stratégie de fichier. Vous pouvez également rechercher des fichiers en filtrant sur l’étiquette de classification appliquée dans le portail Cloud App Security. Ceci accroît la visibilité et le contrôle de vos données sensibles dans le cloud. Pour intégrer Azure Information Protection à Cloud App Security, il suffit de cocher une seule case. 
+Microsoft Cloud App Security vous permet d’appliquer des étiquettes de classification Azure Information Protection automatiquement, avec ou sans protection, à des fichiers, en tant qu’action de gouvernance de stratégie de fichier. Vous pouvez également rechercher des fichiers en filtrant sur l’étiquette de classification appliquée dans le portail Cloud App Security. Ceci accroît la visibilité et le contrôle de vos données sensibles dans le cloud. Pour intégrer Azure Information Protection à Cloud App Security, il suffit de cocher une seule case. 
 
 En intégrant Azure Information Protection dans Cloud App Security, vous pouvez tirer parti de toute la puissance des services et des fichiers sécurisés dans le cloud, notamment :
 - La possibilité d’appliquer des étiquettes de classification en tant qu’action de gouvernance aux fichiers qui correspondent à des stratégies spécifiques
@@ -90,17 +93,17 @@ Pour les ignorer l’ensemble des étiquettes de classification externes à votr
 
 1. Dans la page **Fichiers**, sélectionnez le fichier que vous voulez protéger, cliquez sur les trois points à la fin de la ligne correspondant au fichier, puis choisissez **Appliquer l’étiquette de classification**.
 
- ![protéger une application](./media/protect-app.png)
+   ![protéger une application](./media/protect-app.png)
   
-  >[!NOTE]
-  > Cloud App Security peut appliquer Azure Information Protection sur des fichiers de 50 Mo maximum.  
+   >[!NOTE]
+   > Cloud App Security peut appliquer Azure Information Protection sur des fichiers de 50 Mo maximum.  
 
 2. Vous êtes invité à choisir une des étiquettes de classification de votre organisation à appliquer au fichier. Cliquez ensuite sur **Appliquer**. 
-![étiquette de classification de protection](./media/protect-template.png)
+   ![étiquette de classification de protection](./media/protect-template.png)
 
 3. Une fois que vous avez choisi une étiquette de classification et que vous avez cliqué sur Appliquer, Cloud App Security applique cette étiquette au fichier d’origine.
 
-5. Vous pouvez également supprimer des étiquettes de classification en choisissant l’option **Supprimer l’étiquette de classement**. 
+4. Vous pouvez également supprimer des étiquettes de classification en choisissant l’option **Supprimer l’étiquette de classement**. 
 
 
 Pour plus d’informations sur l’interaction entre Cloud App Security et Azure Information Protection, consultez [Protéger les données contre les erreurs des utilisateurs](https://docs.microsoft.com/enterprise-mobility-security/solutions/protect-data-user-mistake).
@@ -111,9 +114,9 @@ Vous pouvez appliquer automatiquement des étiquettes de classification à des f
 
 Suivez ces instructions pour créer la stratégie de fichier :
 
-1.  Créez une stratégie de fichier.
-2.  Définissez la stratégie en incluant le type de fichier que vous voulez détecter, par exemple tous les fichiers où **Niveau d’accès** n’est pas égal à **Interne** et où **UO propriétaire** est égal à votre équipe Finance. 
-3.  Sous les actions de gouvernance pour l’application concernées, choisissez **Appliquer une étiquette de classification**, puis sélectionnez le type d’étiquette.
+1. Créez une stratégie de fichier.
+2. Définissez la stratégie en incluant le type de fichier que vous voulez détecter, par exemple tous les fichiers où **Niveau d’accès** n’est pas égal à **Interne** et où **UO propriétaire** est égal à votre équipe Finance. 
+3. Sous les actions de gouvernance pour l’application concernées, choisissez **Appliquer une étiquette de classification**, puis sélectionnez le type d’étiquette.
 
    ![Appliquer une étiquette](./media/aip-gov-action.png)
 
@@ -165,7 +168,7 @@ Suivez ces instructions pour créer la stratégie de fichier :
 Vous pouvez également définir des alertes ou une notification utilisateur ou encore prendre des mesures immédiates pour ces stratégies.
 En savoir plus sur les [actions de gouvernance](governance-actions.md).
 
-En savoir plus sur [Azure Information Protection](https://docs.microsoft.com/en-us/information-protection/understand-explore/what-is-information-protection) et suivre le [didacticiel de démarrage rapide](https://docs.microsoft.com/en-us/information-protection/get-started/infoprotect-quick-start-tutorial) pour Azure Information Protection.
+En savoir plus sur [Azure Information Protection](https://docs.microsoft.com/information-protection/understand-explore/what-is-information-protection) et suivre le [didacticiel de démarrage rapide](https://docs.microsoft.com/information-protection/get-started/infoprotect-quick-start-tutorial) pour Azure Information Protection.
 
 
  
