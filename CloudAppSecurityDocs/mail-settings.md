@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/21/2018
+ms.date: 5/27/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,47 +13,46 @@ ms.technology: ''
 ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 1c15a5ca97ecf130d8202975d6ddcba1e1d69d0e
-ms.sourcegitcommit: 716699286f8ebb33327eac28ca9b7bf9742daf32
+ms.openlocfilehash: 6b9ec2fca122bfdfdea4e6ad298a689dd79bcaf6
+ms.sourcegitcommit: 0d73d21f961dc883f01a329bcf16dcaf070dca2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/27/2018
+ms.locfileid: "34558887"
 ---
+*S’applique à : Microsoft Cloud App Security*
+
+
 ##  <a name="mailsettings"></a> Définir les préférences de notification par e-mail  
 
-Pour définir les paramètres des notifications par courrier électronique envoyées par Cloud App Security aux administrateurs demandant l’envoi des alertes et des notifications aux utilisateurs finaux concernant les violations dans lesquelles ils sont impliqués, suivez cette procédure. Pour plus d’informations sur l’adresse IP du serveur e-mail Cloud App Security à ajouter à la liste verte de votre service anti-courrier indésirable consultez [Configuration requise pour le réseau](network-requirements.md). 
+Pour définir les paramètres des e-mails de notification envoyés par Microsoft Cloud App Security aux administrateurs demandant l’envoi des alertes et des notifications aux utilisateurs finaux concernant les violations dans lesquelles ils sont impliqués, suivez cette procédure. Pour plus d’informations sur l’adresse IP du serveur de messagerie Microsoft Cloud App Security à ajouter à la liste verte de votre service antispam, consultez [Configuration requise pour le réseau](network-requirements.md). 
 
 
 1. Dans la barre de menus, cliquez sur la roue dentée des paramètres ![icône des paramètres](./media/settings-icon.png "icône des paramètres") et sélectionnez **Paramètres**, puis sélectionnez l’onglet **Paramètres de messagerie**.  
 
-2. **Adresse de l’expéditeur** : compte de messagerie à utiliser pour envoyer la notification.  
+ ![Paramètres de messagerie](./media/mail-settings-config.png)
+
+2. Sous **Identité de l’expéditeur de l’e-mail** : si vous envisagez d’utiliser les paramètres de messagerie par défaut, vous n’avez pas besoin de modifier quoi que ce soit dans cette section. Si vous souhaitez personnaliser l’identité de l’expéditeur de l’e-mail, vous pouvez définir le **Nom complet de l’expéditeur**, **l’Adresse de messagerie de l'expéditeur** et **l’Adresse e-mail de réponse**. Microsoft Cloud App Security effectue cela pour vous à l’aide d’un service de messagerie tiers appelé MailChimp®. Veillez à lire et à accepter les Conditions d’utilisation et la Déclaration de confidentialité de MailChimp pour pouvoir activer cette option, sinon Microsoft Cloud App Security enverra les notifications à l’aide des paramètres par défaut.
    
-   **Nom complet de l’expéditeur** : nom à afficher dans le champ **De** de l’e-mail.  
    > [!NOTE]
-   > Seuls les caractères Unicode sont pris en charge dans le nom d’affichage selon le [protocole rfc822](http://www.rfc-editor.org/rfc/rfc822.txt).
+   > Seuls les caractères Unicode sont pris en charge dans le nom complet et l’adresse e-mail conformément à la [norme rfc822](http://www.rfc-editor.org/rfc/rfc822.txt).
 
-   **Adresse e-mail de réponse** : compte e-mail à utiliser pour les réponses au message.  
   
-     ![configuration des paramètres de messagerie](./media/mail-settings-config.png "configuration des paramètres de messagerie")  
+3. Pour la **Conception de l’e-mail**, vous pouvez utiliser un fichier html pour personnaliser et créer les e-mails envoyés par le système. Le fichier html utilisé pour votre modèle doit inclure les éléments suivants :  
+  
+   -   Tous les fichiers CSS du modèle doivent être insérés dans celui-ci.  
+  
+   -   Le modèle doit avoir trois espaces réservés non modifiables :  
+  
+        %%logo%% : URL vers le logo de votre société chargée par le biais de la page Paramètres généraux  
+  
+        %%title%% : espace réservé pour le titre de l’e-mail, tel que défini par la stratégie  
 
-  >[!NOTE]
-  >Pour remplacer la valeur du champ **Adresse de l’expéditeur** par un domaine de votre choix, reportez-vous aux instructions [ici](https://mandrill.zendesk.com/hc/articles/205582277-How-do-I-add-DNS-records-for-my-sending-domains-).
-  
-2.  Pour la **Conception de l’e-mail**, vous pouvez utiliser un fichier html pour personnaliser et créer les e-mails envoyés par le système. Le fichier html utilisé pour votre modèle doit inclure les éléments suivants :  
-  
-    -   Tous les fichiers CSS du modèle doivent être insérés dans celui-ci.  
-  
-    -   Le modèle doit avoir trois espaces réservés non modifiables :  
-  
-         %%logo%% : URL vers le logo de votre société chargée par le biais de la page Paramètres généraux  
-  
-         %%title%% : espace réservé pour le titre de l’e-mail, tel que défini par la stratégie  
-
-         %%content%% : espace réservé pour le contenu à inclure pour les utilisateurs finaux, tel que défini par la stratégie  
+        %%content%% : espace réservé pour le contenu à inclure pour les utilisateurs finaux, tel que défini par la stratégie  
      
-3.  Cliquez sur **Charger un modèle...** et sélectionnez le fichier que vous avez créé. 
+4. Cliquez sur **Charger un modèle...** et sélectionnez le fichier que vous avez créé. 
 
-4. Ensuite, cliquez sur **Envoyer un e-mail test** pour vous envoyer un e-mail test afin de voir un exemple du modèle que vous avez créé. L’e-mail est envoyé au compte que vous avez utilisé pour vous connecter au portail. L’e-mail test comprend les champs de métadonnées, le modèle, l’objet de l’e-mail, le titre dans le corps de l’e-mail et le contenu.  Voici un exemple de modèle d’e-mail : 
+5. Ensuite, cliquez sur **Envoyer un e-mail test** pour vous envoyer un e-mail test afin de voir un exemple du modèle que vous avez créé. L’e-mail est envoyé au compte que vous avez utilisé pour vous connecter au portail. L’e-mail test comprend les champs de métadonnées, le modèle, l’objet de l’e-mail, le titre dans le corps de l’e-mail et le contenu.  Voici un exemple de modèle d’e-mail : 
 
 
 

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/14/2018
+ms.date: 5/27/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: df50762bc16e9d272312d88bbc584a86615d17ee
-ms.sourcegitcommit: 2ca1f7b11679d15faa1abdf0b8a805c9aff89d2a
+ms.openlocfilehash: e6db675140d808b6dc8f7cd0d742a6745591e913
+ms.sourcegitcommit: 0d73d21f961dc883f01a329bcf16dcaf070dca2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 05/27/2018
+ms.locfileid: "34558921"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -124,9 +125,20 @@ Pour se connecter à des applications tierces et s’intégrer à des solutions 
 
 ## <a name="email-server"></a>Serveur de courrier
 
-L’adresse IP de courrier dédiée à Cloud App Security est la suivante : 
+Pour envoyer des notifications en utilisant le modèle et les paramètres par défaut, ajoutez ces adresses IP à votre liste verte anti-spam. Les adresses IP de courrier dédiées à Cloud App Security sont les suivantes : 
 
-198.2.134.139 (mail1.cloudappsecurity.com)
+- 65.55.234.192/26
+- 207.46.200.0/27
+- 65.55.52.224/27
+- 94.245.112.0/27
+- 111.221.26.0/27
+- 207.46.50.192/26
+
+Si vous souhaitez personnaliser vos notifications, Microsoft Cloud App Security vous permet de le faire automatiquement à l’aide de MailChimp®, un service de messagerie tiers. Pour cela, dans le portail Microsoft Cloud App Security, sous **Paramètres**, sélectionnez **Paramètres de messagerie** puis passez en revue les Conditions d’utilisation et la Déclaration de confidentialité de MailChimp, puis autorisez Microsoft à utiliser MailChimp en votre nom.
+
+Si vous ne le faites pas, vos notifications par e-mail seront envoyées avec tous les paramètres par défaut.
+
+Pour utiliser MailChimp, ajoutez cette adresse IP à votre liste verte anti-spam afin d’autoriser l’envoi des notifications : 198.2.134.139 (mail1.cloudappsecurity.com)
 
 N’oubliez pas d’ajouter cette adresse IP à la liste verte de votre service anti-courrier indésirable pour activer les notifications à envoyer.
 

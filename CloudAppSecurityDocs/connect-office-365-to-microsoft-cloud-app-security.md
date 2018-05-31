@@ -1,26 +1,31 @@
 ---
-title: "Connecter Office 365 à Cloud App Security pour la visibilité et le contrôle d’utilisation | Microsoft Docs"
-description: "Cette rubrique fournit des informations sur la connexion d’Office 365 à Cloud App Security à l’aide du connecteur API."
-keywords: 
+title: Connecter Office 365 à Cloud App Security pour la visibilité et le contrôle d’utilisation | Microsoft Docs
+description: Cette rubrique fournit des informations sur la connexion d’Office 365 à Cloud App Security à l’aide du connecteur API.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 5/27/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: a79bf393-0d2c-44b6-8dab-86c740fd7333
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 08f7aba84ab68e583f267717ba42ee1b1adf7922
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 8d8a91193d6162cc6f37e905bdcb6b32a9c53784
+ms.sourcegitcommit: 0d73d21f961dc883f01a329bcf16dcaf070dca2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 05/27/2018
+ms.locfileid: "34558972"
 ---
+*S’applique à : Microsoft Cloud App Security*
+
+
+
 # <a name="connect-office-365-to-microsoft-cloud-app-security"></a>Connecter Office 365 à Microsoft Cloud App Security
-Cette section fournit des instructions pour connecter Cloud App Security à votre compte Microsoft Office 365 existant à l’aide de l’API du connecteur d’applications.  
+Cette section fournit des instructions pour connecter Microsoft Cloud App Security à votre compte Microsoft Office 365 existant à l’aide de l’API du connecteur d’applications.  
   
 Cloud App Security prend en charge la plateforme dédiée Office 365 héritée, ainsi que les dernières offres de services Office 365 (communément appelés la famille de mises en production vNext d’Office 365).  Cloud App Security ne prend pas en charge la suite héritée Microsoft Business Productivity Online Standard Suite. 
 
@@ -49,15 +54,13 @@ Cloud App Security prend en charge les applications Office 365 suivantes :
  
 1.  Dans la page **Applications connectées**, cliquez sur le bouton plus (+) et sélectionnez **Office 365**.  
 
-2.  Dans la fenêtre contextuelle Office 365, cliquez sur Connecter Office 365.
+    ![connecter 0365](./media/connect-0365.png) 
 
-      ![connecter 0365](./media/connect-0365.png) 
+2.  Dans la fenêtre contextuelle Office 365, cliquez sur **Connecter Office 365**.
+
+    ![connecter 0365](./media/office-connect.png) 
  
-3.  Cliquez sur Tester maintenant pour tester la connexion à Office 365. Le test peut prendre quelques minutes.
-  
-    ![O365, tester la connexion](./media/o365-test-connection.png) 
- 
-4.   Une fois Office 365 affiché comme correctement connecté, cliquez sur **Fermer**.
+3.   Une fois Office 365 affiché comme correctement connecté, cliquez sur **Fermer**.
   
      ![O365 connecté](./media/o365-connected.png) 
 
