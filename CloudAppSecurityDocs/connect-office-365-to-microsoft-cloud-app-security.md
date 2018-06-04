@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/27/2018
+ms.date: 5/30/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: a79bf393-0d2c-44b6-8dab-86c740fd7333
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 8d8a91193d6162cc6f37e905bdcb6b32a9c53784
-ms.sourcegitcommit: 0d73d21f961dc883f01a329bcf16dcaf070dca2a
+ms.openlocfilehash: f37b1a828ab13bd2b66a9b43bcb2c625fab0cc00
+ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2018
-ms.locfileid: "34558972"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34568439"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -54,16 +54,14 @@ Cloud App Security prend en charge les applications Office 365 suivantes :
  
 1.  Dans la page **Applications connectées**, cliquez sur le bouton plus (+) et sélectionnez **Office 365**.  
 
-    ![connecter 0365](./media/connect-0365.png) 
+      ![connecter 0365](./media/connect-0365.png) 
 
 2.  Dans la fenêtre contextuelle Office 365, cliquez sur **Connecter Office 365**.
 
-    ![connecter 0365](./media/office-connect.png) 
+      ![connecter 0365](./media/office-connect.png) 
  
 3.   Une fois Office 365 affiché comme correctement connecté, cliquez sur **Fermer**.
   
-     ![O365 connecté](./media/o365-connected.png) 
-
 > [!NOTE] 
 > Après la connexion d’Office 365, des données qui remontent à une semaine s’affichent, dont les applications tierces connectées à Office 365 qui extraient des API. Pour les applications tierces qui n’extrayaient pas d’API avant la connexion, vous voyez les événements à partir du moment où vous avez connecté Office 365, car Cloud App Security active toutes les API désactivées par défaut.
 

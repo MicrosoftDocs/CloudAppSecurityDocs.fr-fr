@@ -14,10 +14,10 @@ ms.assetid: 828cc94a-248b-44f6-a1ba-c28c0a135f8c
 ms.reviewer: reutam
 ms.suite: ems
 ms.openlocfilehash: cfc1d9442c50153ce06a358ccdd88b4ab316a88d
-ms.sourcegitcommit: 592478b77531328e23bedd6e8964c07321e6b1a9
+ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34445333"
 ---
 *S’applique à : Microsoft Cloud App Security*

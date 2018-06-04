@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/29/2018
+ms.date: 5/30/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 82df91691ec5543075a9b3c11dfef1e11eb4fae9
-ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
+ms.openlocfilehash: 1d7d73fcc4dd31874613cb0e31e21b1bb21060db
+ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34568388"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -31,28 +32,39 @@ Microsoft Cloud App Security prend en charge le contrôle d’accès basé sur l
 - Administrateur de conformité : dispose d’autorisations en lecture seule et peut gérer les alertes. Peut créer et modifier des stratégies de fichier, autoriser des actions de gouvernance de fichier et afficher tous les rapports intégrés sous Gestion des données. 
 
 - Lecteur Sécurité : dispose d’autorisations en lecture seule et peut gérer les alertes. Le Lecteur Sécurité ne peut pas effectuer les actions suivantes :
-      - Créer des stratégies ou modifier et changer des stratégies existantes 
-      - Effectuer des actions de gouvernance 
-      - Charger des journaux de découverte
-      - Interdire ou approuver des applications tierces
-      - Accéder à la page de paramètres de la plage d’adresses IP
-      - Accéder aux pages contenant des paramètres 
-      - Accéder aux paramètres de découverte 
-      - Accéder à la page de connecteurs d’application
-      - Accéder au journal de gouvernance 
-      - Accéder à la page Gérer des rapports d’instantanés 
+
+   - Créer des stratégies ou modifier et changer des stratégies existantes 
+
+   - Effectuer des actions de gouvernance 
+
+   - Charger des journaux de découverte
+
+   - Interdire ou approuver des applications tierces
+
+   - Accéder à la page de paramètres de la plage d’adresses IP
+
+   - Accéder aux pages contenant des paramètres 
+
+   - Accéder aux paramètres de découverte 
+
+   - Accéder à la page de connecteurs d’application
+
+   - Accéder au journal de gouvernance 
+
+   - Accéder à la page Gérer des rapports d’instantanés 
 
 - Administrateur d’application/d’instance : dispose des autorisations pour toutes les données dans Microsoft Cloud App Security qui portent exclusivement sur l’instance ou l’application spécifique d’une application sélectionnée ici. Par exemple, si vous accordez une autorisation d’administrateur utilisateur à votre instance encadré Européen, l’administrateur sera en mesure d’afficher uniquement les données relatives à cette instance d’application, qu’il s’agisse de fichiers, d’activités, de stratégies ou d’alertes, comme suit :
-      - Page des activités : seules les activités concernant les entités avec balises
-      - Alertes : seules les alertes relatives à l’application spécifique
-      - Stratégies : peut afficher toutes les stratégies et modifier ou créer uniquement les stratégies qui traitent exclusivement de l’application/instance
-      - Compte : seuls les comptes de l’application/instance spécifique
-      - Autorisations d’application : seules les autorisations pour l’application/instance spécifique
-      - Page des fichiers : seuls les fichiers à partir de l’application/instance spécifique
-      - Contrôle d’accès conditionnel aux applications : aucune autorisation
-      - Activité Cloud Discovery : aucune autorisation
-      - Extensions de sécurité : autorisations uniquement pour un jeton d’API avec des autorisations utilisateur
-      - Actions de gouvernance : uniquement pour l’application/instance spécifique 
+- 
+  - Page des activités : seules les activités concernant les entités avec balises
+  - Alertes : seules les alertes relatives à l’application spécifique
+  - Stratégies : peut afficher toutes les stratégies et modifier ou créer uniquement les stratégies qui traitent exclusivement de l’application/instance
+  - Compte : seuls les comptes de l’application/instance spécifique
+  - Autorisations d’application : seules les autorisations pour l’application/instance spécifique
+  - Page des fichiers : seuls les fichiers à partir de l’application/instance spécifique
+  - Contrôle d’accès conditionnel aux applications : aucune autorisation
+  - Activité Cloud Discovery : aucune autorisation
+  - Extensions de sécurité : autorisations uniquement pour un jeton d’API avec des autorisations utilisateur
+  - Actions de gouvernance : uniquement pour l’application/instance spécifique 
 
 Pour plus d’informations, consultez [Affectation des rôles d’administrateur dans Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles).
 

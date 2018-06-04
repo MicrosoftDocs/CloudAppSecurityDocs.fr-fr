@@ -1,26 +1,29 @@
 ---
-title: "Connecter AWS à Cloud App Security pour la visibilité et le contrôle d’utilisation | Microsoft Docs"
-description: "Cette rubrique fournit des informations sur la connexion de votre application AWS à Cloud App Security à l’aide du connecteur API."
-keywords: 
+title: Connecter AWS à Cloud App Security pour la visibilité et le contrôle d’utilisation | Microsoft Docs
+description: Cette rubrique fournit des informations sur la connexion de votre application AWS à Cloud App Security à l’aide du connecteur API.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 5/30/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: a6b4c745-cd5c-4458-819c-80cbe8b25f29
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 06844dfc86947bff1baaf3234b3c2949b57ff49a
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: ac168d889c237eb2987979be88662228239a75b7
+ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34568643"
 ---
+*S’applique à : Microsoft Cloud App Security*
+
 # <a name="connect-aws-to-microsoft-cloud-app-security"></a>Connecter AWS à Microsoft Cloud App Security
-Cette section fournit des instructions pour connecter Cloud App Security à votre compte Amazon Web Services existant à l’aide des API du connecteur.  
+Cette section fournit des instructions pour connecter Microsoft Cloud App Security à votre compte Amazon Web Services existant à l’aide des API du connecteur.  
   
 ## <a name="how-to-connect-amazon-web-services-to-cloud-app-security"></a>Comment connecter Amazon Web Services à Cloud App Security  
   
@@ -54,7 +57,11 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
             "cloudwatch:Get*",  
             "cloudwatch:List*",  
             "iam:List*",  
-            "iam:Get*"  
+            "iam:Get*",
+            "s3:ListAllMyBuckets",
+            "s3:PutBucketAcl",
+            "s3:GetBucketAcl",
+            "s3:GetBucketLocation"
           ],  
           "Effect" : "Allow",  
           "Resource" : "*"  
