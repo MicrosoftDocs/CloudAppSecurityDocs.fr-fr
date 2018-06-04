@@ -1,27 +1,30 @@
 ---
-title: "Ajouter des applications personnalisées à Cloud Discovery dans Cloud App Security | Microsoft Docs"
-description: "Cette rubrique fournit des informations sur la façon d’ajouter des applications personnalisées à Cloud Discovery dans Cloud App Security pour surveiller le Shadow IT."
-keywords: 
+title: Ajouter des applications personnalisées à Cloud Discovery dans Cloud App Security | Microsoft Docs
+description: Cette rubrique fournit des informations sur la façon d’ajouter des applications personnalisées à Cloud Discovery dans Cloud App Security pour surveiller le Shadow IT.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/27/2018
+ms.date: 5/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 98b0d841-b33d-4ae9-b48b-d9ee77785eaa
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d8ccd44e3c488b9adb0d4cd9df96b29b6bcc3e2d
-ms.sourcegitcommit: 85d90d51e9e265d077f38b0188bcfdab2ce63ed1
+ms.openlocfilehash: 4a304dc7e4da6282fe350fbb6d25825957d723fd
+ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34567572"
 ---
+*S’applique à : Microsoft Cloud App Security*
+
 # <a name="add-custom-apps-to-cloud-discovery"></a>Ajouter des applications personnalisées à Cloud Discovery
     
-Cloud Discovery analyse vos journaux de trafic en s’appuyant sur le catalogue d’applications cloud Microsoft Cloud App Security, qui contient plus de 15 000 applications cloud. Le catalogue contient uniquement des applications cloud disponibles publiquement et pour lesquelles Cloud App Security fournit des informations sur la visibilité et les risques.
+Cloud Discovery analyse vos journaux de trafic en s’appuyant sur le catalogue d’applications cloud Microsoft Cloud App Security, qui contient plus de 16 000 applications cloud. Le catalogue contient uniquement des applications cloud disponibles publiquement et pour lesquelles Cloud App Security fournit des informations sur la visibilité et les risques.
 
 Pour gagner en visibilité dans les applications cloud exclues du catalogue d’applications cloud, Cloud App Security vous permet de découvrir l’utilisation d’applications cloud personnalisées (applications métier) qui ont été développées ou affectées spécifiquement pour votre organisation.
 
@@ -29,20 +32,20 @@ En ajoutant une nouvelle application cloud personnalisée, Cloud App Security pe
 
 Pour ajouter une nouvelle application cloud personnalisée :
 
-1.  Dans le portail Cloud App Security, cliquez sur **Découvrir**, puis sur **Tableau de bord Cloud Discovery**. 
+1. Dans le portail Cloud App Security, cliquez sur **Découvrir**, puis sur **Tableau de bord Cloud Discovery**. 
   
- ![menu du tableau de bord Cloud Discovery](./media/cloud-discovery-dashboard-menu.png)
+   ![menu du tableau de bord Cloud Discovery](./media/cloud-discovery-dashboard-menu.png)
 
-2.  Dans l’angle supérieur droit, cliquez sur les 3 points, puis sélectionnez **Ajouter une nouvelle application personnalisée**. 
+2. Dans l’angle supérieur droit, cliquez sur les 3 points, puis sélectionnez **Ajouter une nouvelle application personnalisée**. 
 
- ![menu ajouter une nouvelle application personnalisée](./media/add-custom-app-menu.png)
+   ![menu ajouter une nouvelle application personnalisée](./media/add-custom-app-menu.png)
 
-3.  Renseignez les champs pour définir le nouvel enregistrement d’application qui apparaîtra dans le catalogue d’applications cloud et Cloud Discovery, une fois qu’il est découvert dans les journaux de votre pare-feu.
+3. Renseignez les champs pour définir le nouvel enregistrement d’application qui apparaîtra dans le catalogue d’applications cloud et Cloud Discovery, une fois qu’il est découvert dans les journaux de votre pare-feu.
 
-  ![application personnalisée](./media/add-custom-app.png)
+   ![application personnalisée](./media/add-custom-app.png)
 
 4. Sous **Domaines**, renseignez les domaines uniques utilisés lors de l’accès à l’application personnalisée. Ces domaines servent à faire correspondre des messages du journal de trafic avec cette application. Si la source de données que vous utilisez ne contient pas d’informations sur l’URL de l’application, veillez à renseigner les champs d’adresse **IPv4** et **IPv6**.
-4.  Il est recommandé d’ajouter des notes pour faciliter le suivi des modifications apportées à cet enregistrement.
+5. Il est recommandé d’ajouter des notes pour faciliter le suivi des modifications apportées à cet enregistrement.
 
 Une fois créée, l’application est disponible dans le catalogue d’applications cloud.
 

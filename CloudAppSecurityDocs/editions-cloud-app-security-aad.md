@@ -1,23 +1,24 @@
 ---
-title: "Quelles sont les différences entre les fonctionnalités de découverte dans Microsoft Cloud App Security et Azure AD ? | Microsoft Docs"
-description: "Cette rubrique décrit les différences entre les fonctionnalités de découverte dans Microsoft Cloud App Security et Azure AD."
-keywords: 
+title: Quelles sont les différences entre les fonctionnalités de découverte dans Microsoft Cloud App Security et Azure AD ? | Microsoft Docs
+description: Cette rubrique décrit les différences entre les fonctionnalités de découverte dans Microsoft Cloud App Security et Azure AD.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 5/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4422e847-9a87-4d60-ad55-346ea50a768c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5f4fd69cc11e5e7a3659b342c7c043f2a1eff5ae
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 9e4ba6be74994f097cbe225815a71b58b268e65f
+ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34567541"
 ---
 # <a name="what-are-the-differences-discovery-capabilities-in-azure-active-directory-and-microsoft-cloud-app-security"></a>Quelles sont les différences entre les fonctionnalités de découverte dans Azure Active Directory et Microsoft Cloud App Security ?
 
@@ -35,7 +36,7 @@ Voici une comparaison des fonctionnalités de découverte de Microsoft Cloud App
 
 |Fonctionnalité|Fonctionnalité|Microsoft Cloud App Security|Azure AD Cloud App Discovery|
 |----|----|----|----|
-|Cloud Discovery|Applications découvertes|Plus de 15 000 applications cloud|Plus de 15 000 applications cloud|
+|Cloud Discovery|Applications découvertes|Plus de 16 000 applications cloud|Plus de 16 000 applications cloud|
 ||Déploiement de l’analyse de découverte|Chargement de journaux manuel et automatique|Chargement de journaux manuel et automatique|
 ||Anonymat des journaux pour la confidentialité de l’utilisateur|Oui|Oui|
 ||Accès au catalogue d’applications cloud complet|Oui||
@@ -49,4 +50,3 @@ Voici une comparaison des fonctionnalités de découverte de Microsoft Cloud App
 Découvrez les concepts de base dans [Bien démarrer avec Cloud App Security](getting-started-with-cloud-app-security.md).    
 
 Les clients Premier peuvent également choisir Cloud App Security directement depuis le [portail Premier](https://premier.microsoft.com/).   
-

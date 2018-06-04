@@ -1,23 +1,24 @@
 ---
-title: "Quelles sont les différences entre Cloud App Security et Office 365 Cloud App Security ? | Microsoft Docs"
-description: "Cette rubrique décrit les différences entre Cloud App Security et Office 365 Cloud App Security."
-keywords: 
+title: Quelles sont les différences entre Cloud App Security et Office 365 Cloud App Security ? | Microsoft Docs
+description: Cette rubrique décrit les différences entre Cloud App Security et Office 365 Cloud App Security.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 5/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 49c12f7c-3fb8-46ac-b2ab-59ba6cf2ddfb
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: cfe5f1170793249290e0785c99bd94548dbef92f
-ms.sourcegitcommit: 9cfb4b4e91e37fa3acf238b729cb68be0adc7086
+ms.openlocfilehash: 5edbb6a812060cee1fef9b0bdf78bc31d362dfaf
+ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/21/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34567606"
 ---
 # <a name="what-are-the-differences-between-microsoft-cloud-app-security-and-office-365-cloud-app-security"></a>Quelles sont les différences entre Microsoft Cloud App Security et Office 365 Cloud App Security ?
 
@@ -36,7 +37,7 @@ Office 365 Cloud App Security est une partie de Microsoft Cloud App Security qui
 
 |Fonctionnalité|Fonctionnalité|Microsoft Cloud App Security|Office 365 Cloud App Security|
 |----|----|----|----|
-|Cloud Discovery|Applications découvertes |Plus de 15 000 applications cloud  |Plus de 750 applications cloud avec des fonctionnalités similaires à celles d’Office 365|
+|Cloud Discovery|Applications découvertes |Plus de 16 000 applications cloud  |Plus de 750 applications cloud avec des fonctionnalités similaires à celles d’Office 365|
 ||Déploiement de l’analyse de découverte|Chargement de journaux manuel et automatique|Chargement de journaux manuel|
 ||Anonymat des journaux pour la confidentialité de l’utilisateur|Oui||
 ||Accès au catalogue d’applications cloud complet|Oui||
@@ -62,4 +63,3 @@ Office 365 Cloud App Security est une partie de Microsoft Cloud App Security qui
 Découvrez les concepts de base dans [Bien démarrer avec Cloud App Security](getting-started-with-cloud-app-security.md).    
 
 Les clients Premier peuvent également choisir Cloud App Security directement depuis le [portail Premier](https://premier.microsoft.com/).   
-

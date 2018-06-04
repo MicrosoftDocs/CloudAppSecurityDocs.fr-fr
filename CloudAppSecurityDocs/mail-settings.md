@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/27/2018
+ms.date: 5/29/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6b9ec2fca122bfdfdea4e6ad298a689dd79bcaf6
-ms.sourcegitcommit: 0d73d21f961dc883f01a329bcf16dcaf070dca2a
+ms.openlocfilehash: 6d19e90b8eda14868f1b25e6d9a776b030aeedbd
+ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2018
-ms.locfileid: "34558887"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34568422"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -30,9 +30,9 @@ Pour définir les paramètres des e-mails de notification envoyés par Microsoft
 
 1. Dans la barre de menus, cliquez sur la roue dentée des paramètres ![icône des paramètres](./media/settings-icon.png "icône des paramètres") et sélectionnez **Paramètres**, puis sélectionnez l’onglet **Paramètres de messagerie**.  
 
- ![Paramètres de messagerie](./media/mail-settings-config.png)
+   ![Paramètres de messagerie](./media/mail-settings-config.png)
 
-2. Sous **Identité de l’expéditeur de l’e-mail** : si vous envisagez d’utiliser les paramètres de messagerie par défaut, vous n’avez pas besoin de modifier quoi que ce soit dans cette section. Si vous souhaitez personnaliser l’identité de l’expéditeur de l’e-mail, vous pouvez définir le **Nom complet de l’expéditeur**, **l’Adresse de messagerie de l'expéditeur** et **l’Adresse e-mail de réponse**. Microsoft Cloud App Security effectue cela pour vous à l’aide d’un service de messagerie tiers appelé MailChimp®. Veillez à lire et à accepter les Conditions d’utilisation et la Déclaration de confidentialité de MailChimp pour pouvoir activer cette option, sinon Microsoft Cloud App Security enverra les notifications à l’aide des paramètres par défaut.
+2. Sous **Identité de l’expéditeur de l’e-mail** : si vous envisagez d’utiliser les paramètres de messagerie par défaut, vous n’avez pas besoin de modifier quoi que ce soit dans cette section. Si vous voulez personnaliser l’identité de l’expéditeur de l’e-mail, vous pouvez définir tous les paramètres ici pour personnaliser le champ à modifier. Vous pouvez changer tout ou partie des champs suivants : **Nom complet de l’expéditeur**, **Adresse e-mail de l’expéditeur**, **Adresse e-mail de réponse**. Microsoft Cloud App Security effectue cela pour vous à l’aide d’un service de messagerie tiers appelé MailChimp®. Veillez à lire et à accepter les Conditions d’utilisation et la Déclaration de confidentialité de MailChimp pour pouvoir activer cette option, sinon Microsoft Cloud App Security enverra les notifications à l’aide des paramètres par défaut.
    
    > [!NOTE]
    > Seuls les caractères Unicode sont pris en charge dans le nom complet et l’adresse e-mail conformément à la [norme rfc822](http://www.rfc-editor.org/rfc/rfc822.txt).

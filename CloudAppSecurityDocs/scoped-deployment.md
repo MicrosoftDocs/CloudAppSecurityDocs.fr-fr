@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/27/2018
+ms.date: 5/30/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: fe2ce27b-1020-45e9-ad72-fad93d197169
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0b9a5ccee5fed0df3ebe29f8549473ffbb36a0b3
-ms.sourcegitcommit: 0d73d21f961dc883f01a329bcf16dcaf070dca2a
+ms.openlocfilehash: d7148854286218172fdbeb7c9e651a49cb721980
+ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2018
-ms.locfileid: "34559092"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34568660"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -45,7 +45,7 @@ Il est envisageable, dans certains cas, de ne pas utiliser Microsoft Cloud App S
      
      ![règle d’inclusion](./media/include-rule.png)
 
-4. Pour définir des groupes ou des utilisateurs à exclure du monitoring, cliquez sur ![l’icône](./media/plus-icon.png) plus dans l’onglet **Exclure**. <br>Dans la boîte de dialogue **Créer une règle d’inclusion**, définissez les paramètres suivants :
+4. Pour définir des groupes à exclure du monitoring, cliquez sur ![l’icône](./media/plus-icon.png) plus sous l’onglet **Exclure**. <br>Dans la boîte de dialogue **Créer une règle d’inclusion**, définissez les paramètres suivants :
 
     1. Sous **Taper le nom de la règle**, donnez un nom descriptif à la règle.
     Sous **Sélectionner des groupes d’utilisateurs**, sélectionnez tous les groupes pour lesquels vous ne souhaitez pas effectuer un monitoring avec Cloud App Security.
@@ -62,6 +62,7 @@ Si l’on crée les règles suivantes :
 - Exclure le groupe d’utilisateurs « Germany all users » (« Tous les utilisateurs d’Allemagne »)
 - Pour le groupe d’utilisateurs « Global sales » (« Ventes à l’international »), inclure seulement les activités Office 365
 - Pour le groupe d’utilisateurs « Sales managers » (« Directeurs commerciaux »), inclure seulement les activités Power BI
+- Salesforce est connecté à Microsoft Cloud App Security et aucune règle n’est définie pour celui-ci
 
 Les activités suivantes des utilisateurs font l’objet d’un monitoring :
 
@@ -72,6 +73,9 @@ Les activités suivantes des utilisateurs font l’objet d’un monitoring :
 |Cornel|Global sales<br>Sales managers|Office 365 et toutes les sous-applications|
 |Raymond|Sales managers|Power BI uniquement|
 
+> [!NOTE] 
+> Les autres applications ne sont pas affectées par l’étendue de groupe dans ces règles.
+> Dans l’exemple, pour Salesforce, toutes les activités sont surveillées sur tous les groupes d’utilisateurs.
 
   
     

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/27/2018
+ms.date: 5/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e5d7d03bc2c30716c9c449f66734ea65c58220eb
-ms.sourcegitcommit: 0d73d21f961dc883f01a329bcf16dcaf070dca2a
+ms.openlocfilehash: 8777b2e073482c8528f70072a97172cd9904e58d
+ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2018
-ms.locfileid: "34559057"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34568578"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -39,21 +39,28 @@ Le service de classification des données de Microsoft fournit une expérience d
 
 -   **Se connecter à Microsoft Azure** (déploiement progressif)<br>
 Microsoft Cloud App Security étend ses fonctionnalités de surveillance IaaS au-delà d’Amazon Web Services et prend désormais en charge Microsoft Azure. Cela vous permet de vous connecter rapidement et de surveiller tous vos abonnements Azure avec Cloud App Security. Cette connexion vous offre un ensemble puissant d’outils pour protéger votre environnement Azure, notamment : 
- -  Visibilité de toutes les activités effectuées via le portail
- -  Possibilité de créer des stratégies personnalisées pour signaler un comportement non désiré, de protéger automatiquement les utilisateurs présentant des risques en les suspendant ou en les forçant à se reconnecter.
- -  Toutes les activités Azure sont contrôlées par notre moteur de détection des anomalies, qui vous signale automatiquement tout comportement suspect dans le portail Azure, notamment les voyages impossibles, les activités de masse suspectes et les activités provenant d’un nouveau pays.<br>
-Pour plus d’informations, consultez [Connecter Azure à Microsoft Cloud App Security](connect-azure-to-microsoft-cloud-app-security.md).
+
+       -    Visibilité de toutes les activités effectuées via le portail
+
+       -    Possibilité de créer des stratégies personnalisées pour signaler un comportement non désiré, de protéger automatiquement les utilisateurs présentant des risques en les suspendant ou en les forçant à se reconnecter.
+
+       -    Toutes les activités Azure sont contrôlées par notre moteur de détection des anomalies, qui vous signale automatiquement tout comportement suspect dans le portail Azure, notamment les voyages impossibles, les activités de masse suspectes et les activités provenant d’un nouveau pays.<br>
+
+  Pour plus d’informations, consultez [Connecter Azure à Microsoft Cloud App Security](connect-azure-to-microsoft-cloud-app-security.md).
  
--   **Déploiements étendus**<br> (déploiement progressif) Microsoft Cloud App Security offre aux entreprises la possibilité d’identifier de façon granulaire les utilisateurs à surveiller et à protéger en fonction de l’appartenance à un groupe. Cette fonctionnalité vous permet de sélectionner les utilisateurs dont les activités n’apparaîtront pas pour les applications protégées. La fonctionnalité de surveillance étendue est particulièrement dans les cas suivants : 
-  - Conformité : si vos réglementations de conformité vous interdisent de surveiller les utilisateurs de certains pays en raison de réglementations locales.
-  - Gestion des licences : si vous souhaitez surveiller un nombre restreint d’utilisateurs afin de rester dans les limites de vos licences Microsoft Cloud App Security.
-Pour plus d'informations, consultez [Déploiement étendu](scoped-deployment.md).
+-   **Déploiements étendus** (déploiement progressif) <br>
+Microsoft Cloud App Security offre aux entreprises la possibilité d’identifier de façon granulaire les utilisateurs à surveiller et à protéger en fonction de l’appartenance à un groupe. Cette fonctionnalité vous permet de sélectionner les utilisateurs dont les activités n’apparaîtront pas pour les applications protégées. La fonctionnalité de surveillance étendue est particulièrement dans les cas suivants : 
+
+    -   Conformité : si vos réglementations de conformité vous interdisent de surveiller les utilisateurs de certains pays en raison de réglementations locales.
+
+       -    Gestion des licences : si vous souhaitez surveiller un nombre restreint d’utilisateurs afin de rester dans les limites de vos licences Microsoft Cloud App Security.
+   Pour plus d'informations, consultez [Déploiement étendu](scoped-deployment.md).
 
 -   **Alerte de violation d’application pour les applications découvertes**<br>
-Nous proposons désormais une alerte intégrée qui vous avertit en cas de violation d’une des applications découvertes du client. L’alerte précise la date et l’heure de la violation ainsi que les utilisateurs qui ont ouvert l’application, puis vous dirige vers des sources publiques contenant des informations sur cette violation.
+ Nous proposons désormais une alerte intégrée qui vous avertit en cas de violation d’une des applications découvertes du client. L’alerte précise la date et l’heure de la violation ainsi que les utilisateurs qui ont ouvert l’application, puis vous dirige vers des sources publiques contenant des informations sur cette violation.
 
 -   **Nouveau serveur de messagerie**<br>
-Le serveur de messagerie de Cloud App Security a été modifié et utilise d’autres plages d’adresses IP. Pour être certain de recevoir les notifications, ajoutez les nouvelles adresses IP à votre liste verte anti-spam. Pour les utilisateurs qui souhaitent personnaliser leurs notifications, Microsoft Cloud App Security permet de le faire automatiquement à l’aide de MailChimp®, un service de messagerie tiers. Pour obtenir la liste des adresses IP du serveur de messagerie et des instructions sur l’utilisation de MailChimp, consultez les rubriques [Configuration requise pour le réseau](https://docs.microsoft.com/cloud-app-security/network-requirements#email-server) et [Paramètres de messagerie](mail-settings.md).
+ Le serveur de messagerie de Cloud App Security a été modifié et utilise d’autres plages d’adresses IP. Pour être certain de recevoir les notifications, ajoutez les nouvelles adresses IP à votre liste verte anti-spam. Pour les utilisateurs qui souhaitent personnaliser leurs notifications, Microsoft Cloud App Security permet de le faire automatiquement à l’aide de MailChimp®, un service de messagerie tiers. Pour obtenir la liste des adresses IP du serveur de messagerie et des instructions sur l’utilisation de MailChimp, consultez les rubriques [Configuration requise pour le réseau](https://docs.microsoft.com/cloud-app-security/network-requirements#email-server) et [Paramètres de messagerie](mail-settings.md).
 
 
 ## <a name="cloud-app-security-release-123"></a>Cloud App Security version 123
