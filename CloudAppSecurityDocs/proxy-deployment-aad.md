@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/14/2018
+ms.date: 6/4/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a89c20e728d852ee3220be861e3e0f5988418a21
-ms.sourcegitcommit: 2ca1f7b11679d15faa1abdf0b8a805c9aff89d2a
+ms.openlocfilehash: 61a4381ac3c337d7a983c9e3fbfacaca91c4575c
+ms.sourcegitcommit: c95c913d384f32d6dab00e4f22804113596de3f1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34759979"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -77,7 +78,7 @@ Suivez ces étapes pour configurer des applications Azure AD à contrôler par l
 
 6. Dans la table des applications de Contrôle d’accès conditionnel aux applications, examinez la colonne **Contrôles disponibles** et vérifiez que l’accès conditionnel Azure AD et le contrôle de session apparaissent. <br></br>Si le contrôle de session n’apparaît pas pour une application, cela signifie qu’il n’est pas encore disponible pour cette application spécifique et un lien **Demander le contrôle de la session** est alors proposé. Cliquez dessus pour ouvrir une boîte de dialogue et demander l’intégration de l’application au contrôle de session. Pendant la période de préversion publique du Contrôle d’accès conditionnel aux applications, le processus d’intégration sera effectué avec vous par l’équipe Microsoft Cloud App Security.
   
-   ![demander le contrôle de la session](./media/request-session-control.png)
+   ![demander le contrôle de la session](./media/proxy-view-new-apps.png)
 
 7. Facultatif - Identifier les appareils qui utilisent des certificats clients :
 
