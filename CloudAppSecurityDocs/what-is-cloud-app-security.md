@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 59d949723939c2e82887044ce0a4c325019f5b6c
-ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
+ms.openlocfilehash: e4e2c77d3bb3b8f6a2a83b73aa9f16ae356b374f
+ms.sourcegitcommit: c95c913d384f32d6dab00e4f22804113596de3f1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34568677"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34759931"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -53,17 +53,7 @@ Cloud App Security intègre une visibilité à votre cloud :
 ![Schéma de l’architecture Cloud App Security](./media/proxy-architecture.png)  
 
 ### <a name="data-retention--compliance"></a>Conservation des données et conformité
-
-Cloud App Security est officiellement certifié avec la conformité Microsoft pour ISO, HIPAA, CSA STAR, les clauses contractuelles types de l'Union européenne et plus encore. Pour consulter la liste complète des certifications, accédez à la page des [offres de conformité Microsoft](https://go.microsoft.com/fwlink/?linkid=842039) et sélectionnez Cloud App Security.  
-
-Quand Cloud App Security exécute une inspection du contenu, la confidentialité des données est respectée. Le contenu du fichier n’est pas stocké dans la base de données Cloud App Security. Seules les métadonnées des enregistrements de fichiers et les violations qui ont été identifiées sont stockées dans la base de données Cloud App Security. Pour plus d’informations sur la rétention des données, consultez notre [politique de confidentialité](http://go.microsoft.com/fwlink/?LinkId=512132) et le [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/You-are-in-control-of-your-data).
-Cloud App Security conserve les données comme suit : 
- 
-- Journal d’activité : 180 jours 
-- Données de découverte : 90 jours 
-- Alertes : 180 jours 
-
-Une fois que les données sont collectées à partir de ces sources, Cloud App Security exécute un moteur de détection d’anomalie heuristique sophistiqué qui établit le profil de votre environnement et vous avertit des activités anormales par rapport à la base de référence apprise, ce qui vous donne une visibilité plus grande dans votre environnement cloud. Vous pouvez configurer une stratégie dans Cloud App Security et l’utiliser pour protéger tout ce qui se trouve dans votre environnement cloud.  
+Pour plus d’informations sur la conservation des données et la conformité de Microsoft Cloud App Security, consultez [Sécurité et confidentialité des données Microsoft Cloud App Security](cas-compliance-trust.md).
 
 ### <a name="cloud-discovery"></a>Cloud Discovery  
 

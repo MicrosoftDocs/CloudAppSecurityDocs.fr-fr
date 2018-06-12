@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/27/2018
+ms.date: 6/5/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 9cb3594e-5007-48be-9b4f-e1d23355d86e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ed1896655c6d94eb134c3dd0aa0bac345f08aa89
-ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
+ms.openlocfilehash: 40b477b3618e39473fe09568b3da761ce4d3b898
+ms.sourcegitcommit: c95c913d384f32d6dab00e4f22804113596de3f1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34567674"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34759914"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -102,7 +102,7 @@ Prenez le temps de passer en revue et modifier les pondérations par défaut don
   
 1. Dans le portail, sous l’icône Paramètres, sélectionnez **Paramètres Cloud Discovery**.  
   
-2. Sous **Configurer la métrique du score**, faites glisser le curseur **Importance** pour modifier la pondération du champ ou la catégorie de risque. Vous avez le choix entre les options **Ignoré**, **Bas**, **Moyen**, **Élevé** ou **Très élevé**.  
+2. Sous **Métrique du score**, faites glisser le curseur **Importance** pour modifier la pondération du champ ou la catégorie de risque. Vous avez le choix entre les options **Ignoré**, **Bas**, **Moyen**, **Élevé** ou **Très élevé**.  
   
 3. De plus, vous pouvez déterminer si certaines valeurs sont soit non disponibles, soit non applicables dans le calcul du score. Quand elles sont incluses, les valeurs N/A contribuent négativement au score calculé.  
   

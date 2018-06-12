@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/30/2018
+ms.date: 6/10/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 1d7d73fcc4dd31874613cb0e31e21b1bb21060db
-ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
+ms.openlocfilehash: 6e9a2f9466352296caea57ee3219fa6a5151f1c8
+ms.sourcegitcommit: 41fbc8e235befd240ad7a1eed52339cfafb5d906
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34568388"
+ms.lasthandoff: 06/10/2018
+ms.locfileid: "35251767"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -54,8 +54,8 @@ Microsoft Cloud App Security prend en charge le contrôle d’accès basé sur l
    - Accéder à la page Gérer des rapports d’instantanés 
 
 - Administrateur d’application/d’instance : dispose des autorisations pour toutes les données dans Microsoft Cloud App Security qui portent exclusivement sur l’instance ou l’application spécifique d’une application sélectionnée ici. Par exemple, si vous accordez une autorisation d’administrateur utilisateur à votre instance encadré Européen, l’administrateur sera en mesure d’afficher uniquement les données relatives à cette instance d’application, qu’il s’agisse de fichiers, d’activités, de stratégies ou d’alertes, comme suit :
-- 
-  - Page des activités : seules les activités concernant les entités avec balises
+
+  - Page des activités : seules les activités concernant l’application spécifique
   - Alertes : seules les alertes relatives à l’application spécifique
   - Stratégies : peut afficher toutes les stratégies et modifier ou créer uniquement les stratégies qui traitent exclusivement de l’application/instance
   - Compte : seuls les comptes de l’application/instance spécifique
@@ -65,6 +65,21 @@ Microsoft Cloud App Security prend en charge le contrôle d’accès basé sur l
   - Activité Cloud Discovery : aucune autorisation
   - Extensions de sécurité : autorisations uniquement pour un jeton d’API avec des autorisations utilisateur
   - Actions de gouvernance : uniquement pour l’application/instance spécifique 
+
+- Administrateur de groupe : dispose des autorisations pour toutes les données dans Microsoft Cloud App Security qui portent exclusivement sur le groupe spécifique sélectionné ici. Par exemple, si vous donnez à un administrateur utilisateur l’autorisation sur le groupe « Allemagne - tous les utilisateurs », l’administrateur sera en mesure de visualiser et de modifier les informations dans Microsoft Cloud App Security uniquement pour ce groupe d’utilisateurs, comme suit :
+
+  - Page des activités : seules les activités concernant les utilisateurs dans le groupe
+  -     Alertes : seules les alertes relatives aux utilisateurs dans le groupe
+  -     Stratégies : peut afficher toutes les stratégies et modifier ou créer uniquement les stratégies qui traitent exclusivement des utilisateurs dans le groupe
+  -     Compte : seuls les comptes pour les utilisateurs spécifiques dans le groupe
+  -     Autorisations d’application : aucune autorisation
+  -     Page Fichiers : aucune autorisation
+  -     Contrôle d’accès conditionnel aux applications : aucune autorisation
+  -     Activité Cloud Discovery : aucune autorisation
+  -     Extensions de sécurité : autorisations uniquement pour un jeton d’API avec les utilisateurs dans le groupe
+  -     Actions de gouvernance : uniquement pour les utilisateurs spécifiques dans le groupe
+
+
 
 Pour plus d’informations, consultez [Affectation des rôles d’administrateur dans Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles).
 

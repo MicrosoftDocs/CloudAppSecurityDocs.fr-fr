@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/22/2018
+ms.date: 6/10/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e456940a-88f1-4767-ae3d-4a57548f4179
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6db4518feb2c212feaece9bcd216a8ed25f7af2f
-ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
+ms.openlocfilehash: b23559bfa872c39fc878864f64caa1e174d35f3e
+ms.sourcegitcommit: 41fbc8e235befd240ad7a1eed52339cfafb5d906
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34470659"
+ms.lasthandoff: 06/10/2018
+ms.locfileid: "35251750"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -58,7 +58,7 @@ Microsoft Cloud App Security est conforme à de nombreuses normes de conformité
 |![logo SOC](./media/soc-logo.png)|SOC 3|Les services de cloud computing Microsoft sont conformes aux normes Service Organization Controls pour la sécurité opérationnelle.|
 |![logo g-cloud](./media/g-cloud.png)|UK G-Cloud|Crown Commercial Service a renouvelé la classification de services cloud Microsoft de la norme Government Cloud v6.|
 
-Pour plus d’informations, accédez aux [produits de conformité Microsoft](https://go.microsoft.com/fwlink/?linkid=842039) et sélectionnez Cloud App Security.  
+Pour plus d’informations, accédez aux [produits de conformité Microsoft](https://servicetrust.microsoft.com) et sélectionnez Cloud App Security.  
 
 ## <a name="privacy"></a>Confidentialité
 
@@ -137,9 +137,9 @@ Microsoft Cloud App Security prend en charge le contrôle d’accès basé sur l
 
 ## <a name="customer-controls-for-organizational-compliance"></a>Contrôles du client en matière de conformité de l’organisation
 
-### <a name="do-not-track"></a>Règle Do Not Track
+### <a name="scoped-deployment"></a>Déploiement étendu
 
-Microsoft Cloud App Security vous permet de définir certains utilisateurs pour la règle Do Not Track (DNT). Ceci vous permet de gouverner uniquement des groupes spécifiques à l’aide de Cloud App Security, ou d’exclure des groupes spécifiques de la gouvernance de Cloud App Security.
+Microsoft Cloud App Security vous permet de délimiter votre déploiement. Ceci vous permet de gouverner uniquement des groupes spécifiques à l’aide de Cloud App Security, ou d’exclure des groupes spécifiques de la gouvernance de Cloud App Security. Pour plus d'informations, consultez [Déploiement étendu](scoped-deployment.md).
 
 ### <a name="anonymization"></a>Anonymisation 
 

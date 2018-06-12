@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 745df28a-654c-4abf-9c90-203841169f90
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2cf378e8490ebf1e0cb7d35fe3842800a08290e2
-ms.sourcegitcommit: 2ca1f7b11679d15faa1abdf0b8a805c9aff89d2a
+ms.openlocfilehash: cf8f0230b2316646b49bd2f80f688d47229625c6
+ms.sourcegitcommit: c95c913d384f32d6dab00e4f22804113596de3f1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34759861"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -146,7 +147,7 @@ Si vous ne voulez pas informer l’utilisateur de cette surveillance, vous pouve
 
 1. Sous la roue dentée des paramètres, sélectionnez **Paramètres généraux**. 
 
-2. Puis, sous les paramètres du Contrôle d’accès conditionnel aux applications, décochez la case **Aviser les utilisateurs**.
+2. Puis, sous **Contrôle d’accès conditionnel aux applications**, sélectionnez **Suivi des utilisateurs** et décochez la case **Aviser les utilisateurs**.
 
     ![désactiver la notification de surveillance de session](./media/disable-session-monitoring-notice.png)
 
