@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/16/2018
+ms.date: 6/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b981a885d36f5a6aee8c605c049894d3f07a64e2
-ms.sourcegitcommit: de99734dd98ac36b56ee6a759b45a12f007eff80
+ms.openlocfilehash: 650107deb070b0442312de441877b29d5da93358
+ms.sourcegitcommit: 3177ffcbdabbddc6c758e9a1994fb21fde939ffc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35259617"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -189,9 +190,7 @@ Si vous devez supprimer l’agent SIEM à l’avenir, vous pouvez cliquer sur tr
 > [!NOTE]
 > Cette fonctionnalité est disponible dans la préversion publique.
 
-## <a name="high-availability-options"></a>Options de haute disponibilité
 
-L’agent SIEM est un point de terminaison unique qui prend en charge la récupération d’un temps d’arrêt allant jusqu'à deux jours. Le fait de disposer d’un équilibreur de charge en tant que point de terminaison client constitue une mesure supplémentaire pour la haute disponibilité.
 
 ## <a name="see-also"></a>Voir aussi  
 [Résolution des problèmes d’intégration de SIEM](troubleshooting-siem.md)   
