@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/14/2018
+ms.date: 6/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 06238ebc-2088-4372-9412-96cceaf3b145
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 8686ebcddd2d2eef02970facfddca65fde3f02ae
-ms.sourcegitcommit: 2ca1f7b11679d15faa1abdf0b8a805c9aff89d2a
+ms.openlocfilehash: 4c4a78501732282f7ff3885e0662afa05c161f0b
+ms.sourcegitcommit: 49a06f2169af74304eef0288e31783c06ccd3b74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/24/2018
+ms.locfileid: "36746940"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -52,8 +53,6 @@ Les stratégies de session Cloud App Security vous permettent de restreindre dav
 1. Créez une stratégie d’accès conditionnel Azure AD avec des utilisateurs et une application affectés.
 2. Sélectionnez **Utiliser les restrictions appliquées au Contrôle d’accès conditionnel aux applications** sous les contrôles de session dans la stratégie d’accès conditionnel.   
 
-   ![Accès conditionnel Azure AD](./media/proxy-deploy-restrictions-aad.png)
-
 Une fois cette tâche terminée, accédez au portail Cloud App Security et créez une stratégie de session pour surveiller et contrôler les téléchargements de fichiers dans la session.
 
 ### <a name="step-2-create-a-session-policy"></a>Étape 2 : Créer une stratégie de session
@@ -62,17 +61,11 @@ Une fois cette tâche terminée, accédez au portail Cloud App Security et crée
 
 2. Dans la page **Stratégies**, cliquez sur **Créer une stratégie**, puis sur **Stratégie de session**.
  
-   ![créer une stratégie de session](./media/create-session-policy.png)
-
 3. Dans la page **Créer une stratégie de session**, donnez à votre stratégie un nom et une description. Par exemple, **Bloquer les téléchargements depuis Salesforce pour les appareils non gérés**.
 
 4. Affectez une **gravité de la stratégie** et une **catégorie**.
 
-   ![Nouvelle stratégie de session](./media/new-session-policy.png)
-
 5. Sous **Type de contrôle de session**, sélectionnez **Contrôler le téléchargement du fichier (avec DLP)**. Cela vous permet de surveiller tout ce que font vos utilisateurs dans une session Salesforce, et de bloquer et protéger les téléchargements en temps réel.
-
-   ![type de contrôle de stratégie de session](./media/session-policy-control-type.png)
 
 6. Sous **Source de l’activité** dans la section **Activités remplissant toutes les conditions suivantes**, sélectionnez les filtres : 
     
@@ -98,21 +91,11 @@ Une fois cette tâche terminée, accédez au portail Cloud App Security et crée
    - **Étiquettes de classification** : pour utiliser des étiquettes de classification Azure Information Protection et filtrer les fichiers selon une étiquette de classification Azure Information Protection spécifique.
    
    - Sélectionnez **Nom de fichier** ou **Type de fichier** pour appliquer des restrictions en fonction de celles-ci.
- 
-     ![filtres de fichiers de la stratégie de session](./media/session-policy-file-filters.png)
-
 9. Activez l’option **Inspection du contenu** pour permettre à la protection contre la perte de données (DLP) interne d’analyser vos fichiers pour en détecter le contenu sensible. 
-
-   ![inspection du contenu dans la stratégie de session](./media/session-policy-content-inspection.png)
 
 10. Sous **Actions**, sélectionnez **Bloquer**. Personnalisez le message de blocage que vos utilisateurs reçoivent quand ils ne parviennent pas à télécharger des fichiers.  
 
-    ![actions de stratégie de session](./media/session-policy-actions.png)
-
 11. Définissez les alertes que vous voulez recevoir quand la stratégie trouve une correspondance. Vous pouvez définir une limite pour ne pas recevoir trop d’alertes et choisir de recevoir les alertes par e-mail, par SMS, ou les deux.
-
-    ![alertes de stratégie de session](./media/session-policy-alert.png)
-
 
 12. Cliquez sur **Créer**.  
  
@@ -123,11 +106,7 @@ Une fois cette tâche terminée, accédez au portail Cloud App Security et crée
 
 2. Ce fichier doit être bloqué et vous devez recevoir le message que vous avez défini sous **Personnaliser les messages de blocage**. 
 
-   ![message de blocage de téléchargement](./media/block-download-message.png)
-
 3. Dans le portail Cloud App Security, cliquez sur **Contrôle**, puis sur **Stratégies** et cliquez sur la stratégie que vous avez créée pour afficher le rapport de stratégie. Une correspondance de stratégie de session doit apparaître rapidement. 
- 
-   ![rapport de stratégie de session](./media/session-policy-report.png)
 
 4. Dans le rapport de stratégie, vous pouvez voir quelles connexions ont été redirigées vers Microsoft Cloud App Security à des fins de contrôle de session et quels fichiers ont été téléchargés ou bloqués depuis les sessions surveillées.
 

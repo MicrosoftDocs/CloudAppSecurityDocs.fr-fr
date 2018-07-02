@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/10/2018
+ms.date: 6/27/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e456940a-88f1-4767-ae3d-4a57548f4179
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b23559bfa872c39fc878864f64caa1e174d35f3e
-ms.sourcegitcommit: 41fbc8e235befd240ad7a1eed52339cfafb5d906
+ms.openlocfilehash: 122c2027573d20b81e7a604396201f6485c028ab
+ms.sourcegitcommit: c7e4351345d55cfeb0517651446490ce5f208651
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2018
-ms.locfileid: "35251750"
+ms.lasthandoff: 07/01/2018
+ms.locfileid: "37140752"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -64,7 +64,6 @@ Pour plus d’informations, accédez aux [produits de conformité Microsoft](htt
 
 ### <a name="you-are-the-owner-of-your-data"></a>Vous êtes le propriétaire de vos données
 - Dans Microsoft Cloud App Security, vos administrateurs peuvent afficher les données personnelles identifiables stockées dans le service à partir du portail à l’aide de la barre de recherche.
-- 
 - Les administrateurs peuvent rechercher les métadonnées ou l’activité d’un utilisateur spécifique. Un clic sur une entité ouvre la page [**Utilisateurs et comptes**](accounts.md). La page **Utilisateurs et comptes** vous fournit des détails complets sur l’entité qui sont extraits à partir d’applications cloud connectées. Elle fournit également l’historique d’activité de l’utilisateur et les alertes de sécurité liées à l’utilisateur.
 
 -   Vous possédez vos données et pouvez à tout moment annuler des abonnements et demander la suppression de vos données. Si vous ne renouvelez pas votre abonnement, vos données seront supprimées dans le délai spécifié dans les [termes du contrat des services en ligne](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
