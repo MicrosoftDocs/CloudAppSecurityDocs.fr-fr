@@ -55,6 +55,7 @@
 #### [Générer des rapports de gestion des données](built-in-reports.md)
 ### [Comptes](accounts.md)
 ### [Gérer les autorisations d’application](manage-app-permissions.md)
+### [Configuration de la sécurité](security-config.md)
 ### [Surveillance des applications](monitor-alerts.md)
 #### [Gérer les alertes](managing-alerts.md)
 ## [Contrôler](control.md)
@@ -62,7 +63,8 @@
 #### [Stratégies Cloud Discovery](cloud-discovery-policies.md)
 ##### [Stratégie de détection des anomalies Cloud Discovery](cloud-discovery-anomaly-detection-policy.md)
 #### [Stratégies d’activité](user-activity-policies.md)
-#### [Stratégie de détection des anomalies](anomaly-detection-policy.md)
+#### [Stratégies de détection des anomalies](anomaly-detection-policy.md)
+#### [Stratégie d’autorisation d’application](app-permission-policy.md)
 #### [Stratégies de fichier](data-protection-policies.md)
 ##### Inspection du contenu
 ###### [Inspection du contenu intégré](content-inspection.md)
