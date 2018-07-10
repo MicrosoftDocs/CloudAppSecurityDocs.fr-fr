@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/10/2018
+ms.date: 6/24/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,17 @@ ms.technology: ''
 ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6e9a2f9466352296caea57ee3219fa6a5151f1c8
-ms.sourcegitcommit: 41fbc8e235befd240ad7a1eed52339cfafb5d906
+ms.openlocfilehash: 7153b1361f7192a51763355bccc055017834e229
+ms.sourcegitcommit: 49a06f2169af74304eef0288e31783c06ccd3b74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2018
-ms.locfileid: "35251767"
+ms.lasthandoff: 06/24/2018
+ms.locfileid: "36747145"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
 
-## <a name="managing-admin-access"></a>Gestion de l’accès d’administrateur
+# <a name="manage-admin-access"></a>Gérer l’accès administrateur
 
 Microsoft Cloud App Security prend en charge le contrôle d’accès basé sur les rôles. Par défaut, les rôles d’administrateur Office 365 et Azure AD suivants ont accès à Microsoft Cloud App Security :
 
@@ -33,25 +33,16 @@ Microsoft Cloud App Security prend en charge le contrôle d’accès basé sur l
 
 - Lecteur Sécurité : dispose d’autorisations en lecture seule et peut gérer les alertes. Le Lecteur Sécurité ne peut pas effectuer les actions suivantes :
 
-   - Créer des stratégies ou modifier et changer des stratégies existantes 
-
-   - Effectuer des actions de gouvernance 
-
-   - Charger des journaux de découverte
-
-   - Interdire ou approuver des applications tierces
-
-   - Accéder à la page de paramètres de la plage d’adresses IP
-
-   - Accéder aux pages contenant des paramètres 
-
-   - Accéder aux paramètres de découverte 
-
-   - Accéder à la page de connecteurs d’application
-
-   - Accéder au journal de gouvernance 
-
-   - Accéder à la page Gérer des rapports d’instantanés 
+  - Créer des stratégies ou modifier et changer des stratégies existantes 
+  - Effectuer des actions de gouvernance 
+  - Charger des journaux de découverte
+  - Interdire ou approuver des applications tierces
+  - Accéder à la page de paramètres de la plage d’adresses IP
+  - Accéder aux pages contenant des paramètres 
+  - Accéder aux paramètres de découverte 
+  - Accéder à la page de connecteurs d’application
+  - Accéder au journal de gouvernance 
+  - Accéder à la page Gérer des rapports d’instantanés 
 
 - Administrateur d’application/d’instance : dispose des autorisations pour toutes les données dans Microsoft Cloud App Security qui portent exclusivement sur l’instance ou l’application spécifique d’une application sélectionnée ici. Par exemple, si vous accordez une autorisation d’administrateur utilisateur à votre instance encadré Européen, l’administrateur sera en mesure d’afficher uniquement les données relatives à cette instance d’application, qu’il s’agisse de fichiers, d’activités, de stratégies ou d’alertes, comme suit :
 
@@ -69,15 +60,15 @@ Microsoft Cloud App Security prend en charge le contrôle d’accès basé sur l
 - Administrateur de groupe : dispose des autorisations pour toutes les données dans Microsoft Cloud App Security qui portent exclusivement sur le groupe spécifique sélectionné ici. Par exemple, si vous donnez à un administrateur utilisateur l’autorisation sur le groupe « Allemagne - tous les utilisateurs », l’administrateur sera en mesure de visualiser et de modifier les informations dans Microsoft Cloud App Security uniquement pour ce groupe d’utilisateurs, comme suit :
 
   - Page des activités : seules les activités concernant les utilisateurs dans le groupe
-  -     Alertes : seules les alertes relatives aux utilisateurs dans le groupe
-  -     Stratégies : peut afficher toutes les stratégies et modifier ou créer uniquement les stratégies qui traitent exclusivement des utilisateurs dans le groupe
-  -     Compte : seuls les comptes pour les utilisateurs spécifiques dans le groupe
-  -     Autorisations d’application : aucune autorisation
-  -     Page Fichiers : aucune autorisation
-  -     Contrôle d’accès conditionnel aux applications : aucune autorisation
-  -     Activité Cloud Discovery : aucune autorisation
-  -     Extensions de sécurité : autorisations uniquement pour un jeton d’API avec les utilisateurs dans le groupe
-  -     Actions de gouvernance : uniquement pour les utilisateurs spécifiques dans le groupe
+  - Alertes : seules les alertes relatives aux utilisateurs dans le groupe
+  - Stratégies : peut afficher toutes les stratégies et modifier ou créer uniquement les stratégies qui traitent exclusivement des utilisateurs dans le groupe
+  - Compte : seuls les comptes pour les utilisateurs spécifiques dans le groupe
+  - Autorisations d’application : aucune autorisation
+  - Page Fichiers : aucune autorisation
+  - Contrôle d’accès conditionnel aux applications : aucune autorisation
+  - Activité Cloud Discovery : aucune autorisation
+  - Extensions de sécurité : autorisations uniquement pour un jeton d’API avec les utilisateurs dans le groupe
+  - Actions de gouvernance : uniquement pour les utilisateurs spécifiques dans le groupe
 
 
 
@@ -87,7 +78,7 @@ Vous pouvez également ajouter des administrateurs à Cloud App Security, sans a
 
 1. Cliquez sur la roue dentée des paramètres ![icône des paramètres](./media/settings-icon.png "icône des paramètres"), puis sur **Gérer les administrateurs**. 
 
-2. Cliquez sur le signe plus pour ajouter les administrateurs qui doivent avoir accès à Cloud App Security.
+2. Cliquez sur le signe plus pour ajouter les administrateurs qui doivent avoir accès à Cloud App Security. Vous pouvez taper une adresse e-mail interne ou externe pour permettre aux administrateurs de votre organisation ou aux fournisseurs MSSP (Managed Security Service Provider) externes d’administrer vos alertes de sécurité.
   
   ![ajouter des administrateurs](./media/add-admin.png)
     
@@ -99,17 +90,28 @@ Vous pouvez également ajouter des administrateurs à Cloud App Security, sans a
 
    >[!NOTE]
     >Seuls les administrateurs généraux ou de sécurité peuvent accorder l’accès à Cloud App Security à d’autres utilisateurs.
-  
-**Pour remplacer les autorisations d’administrateur :**
+
+
+## <a name="override-admin-permissions"></a>Remplacer les autorisations d’administrateur
 
 Si vous souhaitez remplacer une autorisation d’administrateur dans Azure Active Directory ou Office 365, vous pouvez le faire manuellement en ajoutant l’utilisateur à Cloud App Security et en lui affectant des autorisations.
 Par exemple, pour affecter à Stéphanie, qui est titulaire du rôle Lecteur Sécurité dans Azure Active Directory, un **accès total** à Cloud App Security, vous pouvez l’ajouter manuellement à Cloud App Security et lui accorder un **accès total**. Son rôle est ainsi remplacé, et elle dispose des autorisations désirées dans Cloud App Security. 
 
+## <a name="add-additional-admins"></a>Ajouter des administrateurs supplémentaires
 
 Pour ajouter des administrateurs à Cloud App Security :
 1. Cliquez sur l’icône des paramètres ![icône des paramètres](./media/settings-icon.png "icône des paramètres"), puis sur **Gérer l’accès administrateur**. 
 
 2. Ajoutez les administrateurs qui doivent avoir accès à Cloud App Security. Sélectionnez leur niveau d’accès et cliquez sur **Fermer**.
+
+  
+## <a name="invite-external-admins"></a>Inviter des administrateurs externes
+
+Microsoft Cloud App Security vous permet d’inviter des fournisseurs MSSP (Managed Security Service Provider) comme administrateurs de votre portail Microsoft Cloud App Security. Les utilisateurs externes peuvent maintenant être configurés en tant qu’administrateurs et se voir attribuer les rôles actuellement disponibles dans Microsoft Cloud App Security. De plus, pour autoriser les fournisseurs MSSP à offrir des services sur plusieurs locataires de clients, les administrateurs disposant des droits d’accès sur plus d’un locataire peuvent facilement passer d’un locataire à l’autre au sein du portail. 
+
+Une fois que vous avez les autorisations sur plusieurs locataires, cliquez sur l’icône utilisateur ![icône utilisateur](./media/user-icon.png "icône utilisateur") pour passer d’un locataire à l’autre. Vous devriez voir la liste des locataires sur lesquels vous avez des autorisations. Sélectionnez le locataire que vous voulez gérer.
+
+![choisir le locataire](./media/choose-tenant.png "choisir le locataire")
 
 ## <a name="see-also"></a>Voir aussi  
 [Configurer Cloud Discovery](set-up-cloud-discovery.md)   

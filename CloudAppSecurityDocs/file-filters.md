@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 7/2/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e34ff5bd2e25b4c25f314c35f2ffc3ab4b41c24a
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: ea0eaa4831dce2ba19b434e6ebc91c8b59661834
+ms.sourcegitcommit: 9d2a34a2d4145b39d855dd6f596c0fc858b92f9b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37339962"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -86,7 +87,7 @@ Vous trouverez ci-dessous la liste des filtres de fichiers qui peuvent être app
   
 -   ID de fichier : Recherchez des ID de fichier spécifiques. Il s’agit d’une fonctionnalité avancée qui vous permet d’effectuer le suivi de certains fichiers de valeur sans dépendre de leur propriétaire/emplacement/nom.  
   
--   Nom de fichier : Nom de fichier ou sous-chaîne du nom comme défini dans l’application cloud, par exemple, Tous les fichiers avec un mot de passe dans leur nom.   
+-   Nom de fichier : Nom de fichier ou sous-chaîne du nom comme défini dans l’application cloud, par exemple, tous les fichiers avec un mot de passe dans leur nom.   
   
 -   Étiquette de classification : Rechercher des fichiers avec des balises spécifiques définies. Il peut s’agir des balises suivantes :
     - Balises Azure Information Protection. Une intégration à Azure Information Protection est alors nécessaire.
@@ -103,7 +104,7 @@ Vous trouverez ci-dessous la liste des filtres de fichiers qui peuvent être app
   
 -   Dans la Corbeille : Excluez/Incluez des fichiers dans le dossier Corbeille. Ces fichiers peuvent quand même être partagés et représentent un risque.  
   
--   Dernière modification : Date de modification du fichier. Le filtre prend en charge des dates antérieures/ultérieures, une plage de dates et des expressions temporelles relatives comme Tous les fichiers qui n’ont pas été modifiés au cours des 6 derniers mois.  
+-   Dernière modification : Date de modification du fichier. Le filtre prend en charge des dates antérieures/ultérieures, une plage de dates et des expressions temporelles relatives comme tous les fichiers qui n’ont pas été modifiés au cours des 6 derniers mois.  
 
 -   Stratégie de mise en correspondance : fichiers qui sont mis en correspondance par une stratégie Cloud App Security active.
 

@@ -1,67 +1,67 @@
 ---
-title: "Gérer les alertes déclenchées dans le portail Cloud App Security | Microsoft Docs"
-description: "Cet article explique comment utiliser les alertes déclenchées dans le portail Cloud App Security."
-keywords: 
+title: Gérer les alertes déclenchées dans le portail Cloud App Security | Microsoft Docs
+description: Cet article explique comment utiliser les alertes déclenchées dans le portail Cloud App Security.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 6/24/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1b1dbcc6-472f-43ea-af59-2aa926e3e5a9
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a674379eea455c1a7f384c56f1c3a6013f8aac6e
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: fc9832d9eb41be007edc213e457bc9fe00ffb115
+ms.sourcegitcommit: 49a06f2169af74304eef0288e31783c06ccd3b74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 06/24/2018
+ms.locfileid: "36746974"
 ---
+*S’applique à : Microsoft Cloud App Security*
+
+
 ## <a name="manage-your-alerts"></a>Gérer vos alertes  
 Les alertes constituent un bon point de départ pour comprendre votre environnement cloud de façon plus approfondie. Vous pouvez créer des stratégies selon ce que vous trouvez. Par exemple, vous pouvez voir un administrateur qui se connecte depuis le Groenland, alors que personne dans votre organisation ne s’est jamais connecté à partir de là auparavant. Vous pouvez créer une stratégie qui suspend automatiquement un compte d’administrateur quand celui-ci est utilisé pour se connecter depuis cet emplacement.  
 
 Il est judicieux d’examiner toutes vos alertes et de vous en servir pour modifier vos stratégies. Si des événements sans incidence sont considérés comme des violations de stratégies existantes, affinez vos stratégies afin de recevoir moins d’alertes inutiles.  
 
-1.   Sous **Alertes ouvertes**, cliquez sur **Afficher toutes les alertes**.  
+1. Sous **Alertes ouvertes**, cliquez sur **Afficher toutes les alertes**.  
 
-     Cette section du tableau de bord fournit une visibilité totale de toute activité suspecte ou des violations de vos stratégies établies. Elle vous aide à préserver le plan de sécurité que vous avez défini pour votre environnement cloud.  
+   Cette section du tableau de bord fournit une visibilité totale de toute activité suspecte ou des violations de vos stratégies établies. Elle vous aide à préserver le plan de sécurité que vous avez défini pour votre environnement cloud.  
 
-     ![Alertes](./media/alerts.png "alertes")  
+   ![Alertes](./media/alerts.png "alertes")  
 
-2.   Pour chaque alerte, vous devez examiner et déterminer la nature de la violation et la réponse requise.  
+2. Pour chaque alerte, vous devez examiner et déterminer la nature de la violation et la réponse requise.  
 
-     Vous pouvez filtrer les alertes par type d’alerte ou par gravité de façon à traiter d’abord les plus importantes.  
+   Vous pouvez filtrer les alertes par type d’alerte ou par gravité de façon à traiter d’abord les plus importantes.  
 
-     Sélectionnez une alerte spécifique. Selon le type d’alerte dont il s’agit, vous voyez différentes actions que vous pouvez entreprendre avant de résoudre l’alerte.  
+   Sélectionnez une alerte spécifique. Selon le type d’alerte dont il s’agit, vous voyez différentes actions que vous pouvez entreprendre avant de résoudre l’alerte.  
 
-     Il existe trois types de violations que vous devez traiter quand vous examinez les alertes :  
+   Il existe trois types de violations que vous devez traiter quand vous examinez les alertes :  
 
-    #### <a name="serious-violations"></a>Violations graves
-     Les violations graves nécessitent une réponse immédiate.
+   - **Violations graves**<br>
+     Les violations graves nécessitent une réponse immédiate. <br>
+     Exemples :<br>
+     Pour une alerte d’activité suspecte, vous pouvez suspendre le compte jusqu’à ce que l’utilisateur change son mot de passe.  
 
-         Examples:  
+     Pour une fuite de données, vous voudrez probablement restreindre les autorisations ou mettre le fichier en quarantaine.  
 
-         For a suspicious activity alert, you might want to suspend the account until the user changes their password.  
+     Si une nouvelle application est découverte, vous voudrez probablement bloquer l’accès au service sur votre proxy ou pare-feu.  
 
-         For a data leak you might want to restrict permissions or quarantine the file.  
+   - **Violations contestables**<br>
+     Les violations contestables nécessitent un examen plus approfondi.  <br>
+     Vous pouvez contacter l’utilisateur ou le responsable de l’utilisateur pour lui demander la nature de l’activité. <br>  
+     Laissez l’activité ouverte jusqu’à ce que vous ayez plus d’informations.  
 
-         If a new app is discovered, you might want to block access to the service on your proxy or firewall.  
+   - **Violations autorisées ou comportements anormaux**<br>
+     Les violations autorisées ou les comportements anormaux peuvent provenir d’une utilisation légitime.  
 
-    #### <a name="questionable-violations"></a>Violations contestables
-    Les violations contestables nécessitent un examen plus approfondi.  
+     Supprimez l’alerte.  
 
-         You can contact the  user or the user's manager about the nature of the activity.  
-
-         Leave the activity open until you have more information.  
-
- #### <a name="authorized-violations-or-anomalous-behavior"></a>Violations autorisées ou comportements anormaux
- Les violations autorisées ou les comportements anormaux peuvent provenir d’une utilisation légitime.  
-
-         Dismiss the alert.  
-
-3.   Quand vous avez terminé ce processus, marquez l’alerte comme résolue.  
+3. Quand vous avez terminé ce processus, marquez l’alerte comme résolue.  
 
 Le tableau suivant contient une liste des types d’alertes qui peuvent être déclenchées et les méthodes recommandées pour y remédier.  
 

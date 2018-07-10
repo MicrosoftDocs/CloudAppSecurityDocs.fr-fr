@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/22/2018
+ms.date: 7/1/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c80a67b0daa9191764528c0fcc2ed8fe5795541a
-ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
+ms.openlocfilehash: 75731e401111286d3760163e512b623d6e85fdf2
+ms.sourcegitcommit: 9d2a34a2d4145b39d855dd6f596c0fc858b92f9b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34559074"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37340020"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -51,12 +51,18 @@ Pour explorer des activités plus spécifiques, vous pouvez développer le filtr
 ### <a name="working-with-the-activity-drawer"></a>Travailler avec le tiroir Activité
 
 Vous pouvez afficher plus d’informations supplémentaires sur chaque activité en cliquant sur l’activité elle-même dans le journal d’activité. Cette opération ouvre le tiroir Activité qui contient les actions et insights supplémentaires suivants pour chaque activité :
-    - Stratégies correspondantes : Cliquez sur le lien Stratégies correspondantes pour afficher la liste des stratégies que cette activité a mises en correspondance.
-    - Afficher les données brutes : Cliquez sur Afficher les données brutes pour afficher les données réelles reçues de l’application.
-    - Utilisateur : Cliquez sur l’utilisateur pour afficher la page utilisateur de l’utilisateur ayant réalisé l’activité. 
-    - Type d’appareil : Cliquez sur le type d’appareil pour afficher les données d’agent utilisateur brutes. 
-    - Emplacement : Cliquez sur l’emplacement pour afficher l’emplacement dans des cartes Bing.
-    - Catégorie d’adresse IP et balises : Cliquez sur la balise IP pour afficher la liste des balises IP trouvées dans cette activité. Vous pouvez ensuite filtrer selon toutes les activités correspondant à cette balise.    
+
+   - Stratégies correspondantes : Cliquez sur le lien Stratégies correspondantes pour afficher la liste des stratégies que cette activité a mises en correspondance.
+
+   - Afficher les données brutes : Cliquez sur Afficher les données brutes pour afficher les données réelles reçues de l’application.
+
+   - Utilisateur : Cliquez sur l’utilisateur pour afficher la page utilisateur de l’utilisateur ayant réalisé l’activité. 
+
+   - Type d’appareil : Cliquez sur le type d’appareil pour afficher les données d’agent utilisateur brutes. 
+
+   - Emplacement : Cliquez sur l’emplacement pour afficher l’emplacement dans des cartes Bing.
+
+   - Catégorie d’adresse IP et balises : Cliquez sur la balise IP pour afficher la liste des balises IP trouvées dans cette activité. Vous pouvez ensuite filtrer selon toutes les activités correspondant à cette balise.    
 
  Les champs du tiroir d’activité fournissent des liens contextuels vers des fichiers supplémentaires et permettent d’effectuer un zoom avant, directement dans le tiroir. Par exemple, si vous déplacez votre curseur à côté de la catégorie d’adresse IP, vous pouvez utiliser l’icône ajouter au filtre ![ajouter au filtre](./media/add-to-filter-icon.png) pour ajouter l’adresse IP immédiatement au filtre de la page actuelle. Vous pouvez également utiliser l’icône de roue dentée paramètres ![icône paramètres](./media/contextual-settings-icon.png) qui s’affiche pour accéder directement à la page des paramètres nécessaire pour modifier la configuration de l’un des champs, par exemple les **groupes d’utilisateurs**.
 

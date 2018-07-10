@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/22/2018
+ms.date: 7/1/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,22 @@ ms.technology: ''
 ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a2ee6fc6e54daa84414565dbb7a61fa2e169a7a0
-ms.sourcegitcommit: 1a445f6c5cbfbeb3adbbaff85909c35de949918c
+ms.openlocfilehash: 623c644b68a625a1c67c8e071fda975c12847f60
+ms.sourcegitcommit: c7e4351345d55cfeb0517651446490ce5f208651
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 07/01/2018
+ms.locfileid: "37140803"
 ---
+*S’applique à : Microsoft Cloud App Security*
+
+
 # <a name="docker-on-ubuntu-and-rhel-on-premises"></a>Docker sur Ubuntu et RHEL (local)
 
 
 ## <a name="technical-requirements"></a>Spécifications techniques
 
--   Système d’exploitation : Ubuntu 14.04 ou ultérieur (aucune version stable du docker ne prend en charge Ubuntu 17.10) ou RHEL 7.2 ou ultérieur 
+-   Système d’exploitation : Ubuntu 14.04 et 16.04 (pour les versions plus récentes, contactez le support) ou RHEL 7.2 ou ultérieur 
 
 -   Espace disque : 250 Go
 
@@ -32,7 +36,7 @@ ms.lasthandoff: 03/22/2018
 
 -   RAM : 4 Go
 
--   Configurez votre pare-feu, comme décrit dans [Configuration réseau requise](network-requirements#log-collector)
+-   Configurez votre pare-feu, comme décrit dans [Configuration réseau requise](network-requirements.md#log-collector)
 
 
 ## <a name="log-collector-performance"></a>Performances du collecteur de journaux
@@ -47,49 +51,49 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
 
 ### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>Étape 1 : configuration du portail web  - définir les sources de données et les lier à un collecteur de journaux
 
-1.  Accédez à la page des paramètres de chargement automatisé :  <br></br>Dans le portail Cloud App Security, cliquez sur l’icône des paramètres ![icône des paramètres](./media/settings-icon.png), puis sur **Collecteurs de journaux**.
+1. Accédez à la page des paramètres de chargement automatisé :  <br></br>Dans le portail Cloud App Security, cliquez sur l’icône des paramètres ![icône des paramètres](./media/settings-icon.png), puis sur **Collecteurs de journaux**.
 
-2.  Pour chaque pare-feu ou proxy à partir desquels vous voulez charger des journaux, créez une source de données correspondante :
+2. Pour chaque pare-feu ou proxy à partir desquels vous voulez charger des journaux, créez une source de données correspondante :
 
-    ![ubuntu1](./media/ubuntu1.png)
+   ![ubuntu1](./media/ubuntu1.png)
 
-    a. Cliquez sur **Ajouter une source de données**.
+   a. Cliquez sur **Ajouter une source de données**.
 
-    b. **Nommez** votre proxy ou pare-feu.
+   b. **Nommez** votre proxy ou pare-feu.
 
-    c. Sélectionnez l’appareil dans la liste **Source**. Si vous sélectionnez **Format de journal personnalisé** pour utiliser une appliance réseau qui n’est pas spécifiquement répertoriée, consultez [Utilisation de l’analyseur de journal personnalisé](custom-log-parser.md) pour obtenir des instructions de configuration.
+   c. Sélectionnez l’appareil dans la liste **Source**. Si vous sélectionnez **Format de journal personnalisé** pour utiliser une appliance réseau qui n’est pas spécifiquement répertoriée, consultez [Utilisation de l’analyseur de journal personnalisé](custom-log-parser.md) pour obtenir des instructions de configuration.
 
-    d. Comparez votre journal à l’exemple de format de journal attendu. Si votre format de fichier journal ne correspond pas à cet exemple, vous devez ajouter votre source de données en tant qu’**Autre**.
+   d. Comparez votre journal à l’exemple de format de journal attendu. Si votre format de fichier journal ne correspond pas à cet exemple, vous devez ajouter votre source de données en tant qu’**Autre**.
 
-    e. Définissez le **Type de récepteur** sur **FTP**, **FTPS**, **Syslog – UDP** ou **Syslog – TCP** ou **Syslog – TLS**.
+   e. Définissez le **Type de récepteur** sur **FTP**, **FTPS**, **Syslog – UDP** ou **Syslog – TCP** ou **Syslog – TLS**.
     
-     >[!NOTE]
-     >L’intégration à des protocoles de transfert sécurisés (FTPS et Syslog – TLS) nécessite souvent un paramètre supplémentaire ou votre pare-feu/proxy.
+    >[!NOTE]
+    >L’intégration à des protocoles de transfert sécurisés (FTPS et Syslog – TLS) nécessite souvent un paramètre supplémentaire ou votre pare-feu/proxy.
 
-    f. Répétez ce processus pour chaque pare-feu ou proxy dont les journaux peuvent être utilisés pour détecter le trafic sur votre réseau.
+   f. Répétez ce processus pour chaque pare-feu ou proxy dont les journaux peuvent être utilisés pour détecter le trafic sur votre réseau.
 
-3.  Accédez à l’onglet **Collecteurs de journaux** en haut.
+3. Accédez à l’onglet **Collecteurs de journaux** en haut.
 
-    a. Cliquez sur **Ajouter un collecteur de journaux**.
+   a. Cliquez sur **Ajouter un collecteur de journaux**.
 
-    b. Donnez un **nom** au collecteur de journaux.
+   b. Donnez un **nom** au collecteur de journaux.
 
-    c. Entrez **l’adresse IP hôte** de l’ordinateur sur lequel est déployé le Docker. 
+   c. Entrez **l’adresse IP hôte** de l’ordinateur sur lequel est déployé le Docker. 
        
-       > [!NOTE]
-       > L’adresse IP de l’hôte peut être remplacée par le nom de l’ordinateur s’il existe un serveur DNS (ou un équivalent) qui résout le nom d’hôte.
+      > [!NOTE]
+      > L’adresse IP de l’hôte peut être remplacée par le nom de l’ordinateur s’il existe un serveur DNS (ou un équivalent) qui résout le nom d’hôte.
 
-    d. Sélectionnez toutes les **Sources de données** que vous voulez connecter au collecteur, puis cliquez sur **Mettre à jour** pour enregistrer la configuration et consulter les étapes suivantes du déploiement.
+   d. Sélectionnez toutes les **Sources de données** que vous voulez connecter au collecteur, puis cliquez sur **Mettre à jour** pour enregistrer la configuration et consulter les étapes suivantes du déploiement.
 
-    ![ubuntu2](./media/ubuntu2.png)
+   ![ubuntu2](./media/ubuntu2.png)
 
-     >  [!NOTE]
-     > - Un seul collecteur de journaux peut gérer plusieurs sources de données.
-     > - Copiez le contenu de l’écran, car vous aurez besoin des informations lors de la configuration du collecteur de journaux pour communiquer avec Cloud App Security. Si vous avez sélectionné Syslog, ces informations vont inclure des informations sur le port utilisé par l’écouteur Syslog pour écouter.
+   > [!NOTE]
+   > - Un seul collecteur de journaux peut gérer plusieurs sources de données.
+   > - Copiez le contenu de l’écran, car vous aurez besoin des informations lors de la configuration du collecteur de journaux pour communiquer avec Cloud App Security. Si vous avez sélectionné Syslog, ces informations vont inclure des informations sur le port utilisé par l’écouteur Syslog pour écouter.
 
-4.  Des informations supplémentaires sur le déploiement s’affichent. **Copiez** la commande d’exécution à partir de la boîte de dialogue. Vous pouvez utiliser l’icône de copie dans le Presse-papiers ![icône de copie dans le Presse-papiers](./media/copy-icon.png).
+4. Des informations supplémentaires sur le déploiement s’affichent. **Copiez** la commande d’exécution à partir de la boîte de dialogue. Vous pouvez utiliser l’icône de copie dans le Presse-papiers ![icône de copie dans le Presse-papiers](./media/copy-icon.png).
 
-6.  **Exportez** la configuration de sources de données attendue. Cette configuration décrit comment définir l’exportation du journal dans vos appliances.
+5. **Exportez** la configuration de sources de données attendue. Cette configuration décrit comment définir l’exportation du journal dans vos appliances.
 
    ![Créer le collecteur de journaux](./media/windows7.png)
 
@@ -98,33 +102,33 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
 > [!NOTE]
 > La procédure suivante décrit le déploiement dans Ubuntu. Les étapes de déploiement pour d’autres plateformes sont légèrement différentes.
 
-1.  Ouvrez un terminal sur votre ordinateur Ubuntu.
+1. Ouvrez un terminal sur votre ordinateur Ubuntu.
 
-2.  Changez les privilèges racine à l’aide de la commande : `sudo -i`
+2. Changez les privilèges racine à l’aide de la commande : `sudo -i`
 
 3. Pour contourner un proxy dans votre réseau, exécutez les deux commandes suivantes :
         
         export http_proxy='<IP>:<PORT>' (e.g. 168.192.1.1:8888)
         export https_proxy='<IP>:<PORT>'
 
-3.  Si vous acceptez les [termes du contrat de licence logiciel](https://go.microsoft.com/fwlink/?linkid=862492), désinstallez les anciennes versions et installez Docker CE en exécutant la commande suivante :
+4. Si vous acceptez les [termes du contrat de licence logiciel](https://go.microsoft.com/fwlink/?linkid=862492), désinstallez les anciennes versions et installez Docker CE en exécutant la commande suivante :
 
-    `curl -o /tmp/MCASInstallDocker.sh
-    https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh
-    && chmod +x /tmp/MCASInstallDocker.sh; /tmp/MCASInstallDocker.sh`
+   `curl -o /tmp/MCASInstallDocker.sh
+   https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh
+   && chmod +x /tmp/MCASInstallDocker.sh; /tmp/MCASInstallDocker.sh`
 
-     > [!NOTE] 
-     > Si cette commande ne parvient pas à valider votre certificat de proxy, exécutez la commande en ajoutant `curl -k` au début.
+    > [!NOTE] 
+    > Si cette commande ne parvient pas à valider votre certificat de proxy, exécutez la commande en ajoutant `curl -k` au début.
     
-    ![ubuntu5](./media/ubuntu5.png)
+   ![ubuntu5](./media/ubuntu5.png)
 
-4.  Déployez l’image du collecteur sur la machine hôte en important la configuration du collecteur. Pour cela, copiez la commande d’exécution générée sur le portail. Si vous devez configurer un proxy, ajoutez l’adresse IP et le numéro de port du proxy. Par exemple, si les détails de votre proxy sont 192.168.10.1:8080, votre commande d’exécution mise à jour est :
+5. Déployez l’image du collecteur sur la machine hôte en important la configuration du collecteur. Pour cela, copiez la commande d’exécution générée sur le portail. Si vous devez configurer un proxy, ajoutez l’adresse IP et le numéro de port du proxy. Par exemple, si les détails de votre proxy sont 192.168.10.1:8080, votre commande d’exécution mise à jour est :
 
-            (echo 6f19225ea69cf5f178139551986d3d797c92a5a43bef46469fcc997aec2ccc6f) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.2.2.2'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=tenant2.eu1-rs.adallom.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
+           (echo 6f19225ea69cf5f178139551986d3d797c92a5a43bef46469fcc997aec2ccc6f) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.2.2.2'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=tenant2.eu1-rs.adallom.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
 
    ![Créer le collecteur de journaux](./media/windows7.png)
 
-5.  Vérifiez que le collecteur s’exécute correctement à l’aide de la commande suivante : `docker logs \<collector_name\>`
+6. Vérifiez que le collecteur s’exécute correctement à l’aide de la commande suivante : `docker logs \<collector_name\>`
 
 Vous devez voir le message **Opération terminée**
 

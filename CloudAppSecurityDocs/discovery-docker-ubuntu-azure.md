@@ -1,30 +1,33 @@
 ---
 title: Configurer le chargement automatique des journaux pour des rapports continus | Documentation Microsoft
-description: "Cette rubrique décrit la procédure de configuration du chargement automatique des journaux pour des rapports continus dans Cloud App Security à l’aide d’un Docker sur Ubuntu dans Azure."
-keywords: 
+description: Cette rubrique décrit la procédure de configuration du chargement automatique des journaux pour des rapports continus dans Cloud App Security à l’aide d’un Docker sur Ubuntu dans Azure.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 03ace8d5bf61ed623ad90b3717c4d35b767498a3
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 3eb6f6b5338273abc31d0019a967d269aa51bed4
+ms.sourcegitcommit: c7e4351345d55cfeb0517651446490ce5f208651
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 07/01/2018
+ms.locfileid: "37140735"
 ---
+*S’applique à : Microsoft Cloud App Security*
+
 # <a name="set-up-and-configuration-on-ubuntu"></a>Installation et configuration sur Ubuntu
 
 
 ## <a name="technical-requirements"></a>Spécifications techniques
 
--   Système d’exploitation : Ubuntu 14.04 ou ultérieur (aucune version stable du docker ne prend en charge Ubuntu 17.10)
+-   Système d’exploitation : Ubuntu 14.04 et 16.04 (pour les versions plus récentes, contactez le support)
 
 -   Espace disque : 250 Go
 
@@ -32,7 +35,7 @@ ms.lasthandoff: 01/16/2018
 
 -   RAM : 4 Go
 
--   Configurez votre pare-feu, comme décrit dans [Configuration réseau requise](network-requirements#log-collector)
+-   Configurez votre pare-feu, comme décrit dans [Configuration réseau requise](network-requirements.md#log-collector)
 
 ## <a name="log-collector-performance"></a>Performances du collecteur de journaux
 
@@ -46,48 +49,48 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
 
 ### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>Étape 1 : configuration du portail web  - définir les sources de données et les lier à un collecteur de journaux
 
-1.  Accédez à la page des paramètres de chargement automatisé :  <br></br>Dans le portail Cloud App Security, cliquez sur l’icône des paramètres ![icône des paramètres](./media/settings-icon.png), puis sur **Collecteurs de journaux**.
+1. Accédez à la page des paramètres de chargement automatisé :  <br></br>Dans le portail Cloud App Security, cliquez sur l’icône des paramètres ![icône des paramètres](./media/settings-icon.png), puis sur **Collecteurs de journaux**.
 
-2.  Pour chaque pare-feu ou proxy à partir desquels vous voulez charger des journaux, créez une source de données correspondante :
+2. Pour chaque pare-feu ou proxy à partir desquels vous voulez charger des journaux, créez une source de données correspondante :
 
-    ![ubuntu1](./media/ubuntu1.png)
+   ![ubuntu1](./media/ubuntu1.png)
 
-    a. Cliquez sur **Ajouter une source de données**.
+   a. Cliquez sur **Ajouter une source de données**.
 
-    b. **Nommez** votre proxy ou pare-feu.
+   b. **Nommez** votre proxy ou pare-feu.
 
-    c. Sélectionnez l’appareil dans la liste **Source**. Si vous sélectionnez **Format de journal personnalisé** pour utiliser une appliance réseau qui n’est pas spécifiquement répertoriée, consultez [Utilisation de l’analyseur de journal personnalisé](custom-log-parser.md) pour obtenir des instructions de configuration.
+   c. Sélectionnez l’appareil dans la liste **Source**. Si vous sélectionnez **Format de journal personnalisé** pour utiliser une appliance réseau qui n’est pas spécifiquement répertoriée, consultez [Utilisation de l’analyseur de journal personnalisé](custom-log-parser.md) pour obtenir des instructions de configuration.
 
-    d. Comparez votre journal à l’exemple de format de journal attendu. Si votre format de fichier journal ne correspond pas à cet exemple, vous devez ajouter votre source de données en tant qu’**Autre**.
+   d. Comparez votre journal à l’exemple de format de journal attendu. Si votre format de fichier journal ne correspond pas à cet exemple, vous devez ajouter votre source de données en tant qu’**Autre**.
 
-    e. Définissez le **Type de récepteur** sur **FTP**, **FTPS**, **Syslog – UDP** ou **Syslog – TCP** ou **Syslog – TLS**.
-    >[!NOTE]
-    >L’intégration à des protocoles de transfert sécurisés (FTPS et Syslog – TLS) nécessite souvent un paramètre supplémentaire ou votre pare-feu/proxy.
+   e. Définissez le **Type de récepteur** sur **FTP**, **FTPS**, **Syslog – UDP** ou **Syslog – TCP** ou **Syslog – TLS**.
+   >[!NOTE]
+   >L’intégration à des protocoles de transfert sécurisés (FTPS et Syslog – TLS) nécessite souvent un paramètre supplémentaire ou votre pare-feu/proxy.
 
-    f. Répétez ce processus pour chaque pare-feu ou proxy dont les journaux peuvent être utilisés pour détecter le trafic sur votre réseau.
+   f. Répétez ce processus pour chaque pare-feu ou proxy dont les journaux peuvent être utilisés pour détecter le trafic sur votre réseau.
 
-3.  Accédez à l’onglet **Collecteurs de journaux** en haut.
+3. Accédez à l’onglet **Collecteurs de journaux** en haut.
 
-    a. Cliquez sur **Ajouter un collecteur de journaux**.
+   a. Cliquez sur **Ajouter un collecteur de journaux**.
 
-    b. Donnez un **nom** au collecteur de journaux.
+   b. Donnez un **nom** au collecteur de journaux.
 
-    c. Entrez **l’adresse IP hôte** de l’ordinateur sur lequel est déployé le Docker. 
+   c. Entrez **l’adresse IP hôte** de l’ordinateur sur lequel est déployé le Docker. 
 
-     > [!NOTE]
-     > L’adresse IP de l’hôte peut être remplacée par le nom de l’ordinateur s’il existe un serveur DNS (ou un équivalent) qui résout le nom d’hôte.
+    > [!NOTE]
+    > L’adresse IP de l’hôte peut être remplacée par le nom de l’ordinateur s’il existe un serveur DNS (ou un équivalent) qui résout le nom d’hôte.
 
-    d. Sélectionnez toutes les **Sources de données** que vous voulez connecter au collecteur, puis cliquez sur **Mettre à jour** pour enregistrer la configuration et consulter les étapes suivantes du déploiement.
+   d. Sélectionnez toutes les **Sources de données** que vous voulez connecter au collecteur, puis cliquez sur **Mettre à jour** pour enregistrer la configuration et consulter les étapes suivantes du déploiement.
 
-    ![ubuntu2](./media/ubuntu2.png)
+   ![ubuntu2](./media/ubuntu2.png)
 
-    >  [!NOTE]
-    > - Un seul collecteur de journaux peut gérer plusieurs sources de données.
-    >- Copiez le contenu de l’écran, car vous aurez besoin des informations lors de la configuration du collecteur de journaux pour communiquer avec Cloud App Security. Si vous avez sélectionné Syslog, ces informations vont inclure des informations sur le port utilisé par l’écouteur Syslog pour écouter.
+   > [!NOTE]
+   > - Un seul collecteur de journaux peut gérer plusieurs sources de données.
+   > - Copiez le contenu de l’écran, car vous aurez besoin des informations lors de la configuration du collecteur de journaux pour communiquer avec Cloud App Security. Si vous avez sélectionné Syslog, ces informations vont inclure des informations sur le port utilisé par l’écouteur Syslog pour écouter.
 
-4.  Des informations supplémentaires sur le déploiement s’affichent. **Copiez** la commande d’exécution à partir de la boîte de dialogue. Vous pouvez utiliser l’icône de copie dans le Presse-papiers ![icône de copie dans le Presse-papiers](./media/copy-icon.png).
+4. Des informations supplémentaires sur le déploiement s’affichent. **Copiez** la commande d’exécution à partir de la boîte de dialogue. Vous pouvez utiliser l’icône de copie dans le Presse-papiers ![icône de copie dans le Presse-papiers](./media/copy-icon.png).
 
-6.  **Exportez** la configuration de sources de données attendue. Cette configuration décrit comment définir l’exportation du journal dans vos appliances.
+5. **Exportez** la configuration de sources de données attendue. Cette configuration décrit comment définir l’exportation du journal dans vos appliances.
 
    ![Créer le collecteur de journaux](./media/windows7.png)
 
@@ -97,34 +100,34 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
 > La procédure suivante décrit le déploiement dans Ubuntu. Les étapes de déploiement pour d’autres plateformes sont légèrement différentes.
 
 
-1.  Créez une nouvelle machine Ubuntu dans votre environnement Azure. 
-2.  Une fois la machine configurée, ouvrez les ports ainsi :
-    1.  Dans l’affichage Ordinateur, accédez à **Réseau** et sélectionner l’interface souhaitée en double-cliquant dessus.
-    2.  Accédez à **Groupe de sécurité réseau** et sélectionnez le groupe de sécurité réseau qui convient.
-    3.  Accédez à **Règles de sécurité du trafic entrant** et cliquez sur **Ajouter**,
+1. Créez une nouvelle machine Ubuntu dans votre environnement Azure. 
+2. Une fois la machine configurée, ouvrez les ports ainsi :
+   1. Dans l’affichage Ordinateur, accédez à **Réseau** et sélectionner l’interface souhaitée en double-cliquant dessus.
+   2. Accédez à **Groupe de sécurité réseau** et sélectionnez le groupe de sécurité réseau qui convient.
+   3. Accédez à **Règles de sécurité du trafic entrant** et cliquez sur **Ajouter**,
       
       ![Ubuntu Azure](./media/ubuntu-azure.png)
     
-    4. Ajoutez les règles suivantes (en mode **Avancé**) :
+   4. Ajoutez les règles suivantes (en mode **Avancé**) :
 
-    |Nom|Plages du port de destination|Protocol|Source|Destination|
-    |----|----|----|----|----|
-    |caslogcollector_ftp|21|TCP|<Sous-réseau d’adresse IP de votre appliance>|Indifférent|
-    |caslogcollector_ftp_passive|20000-20099|TCP|<Sous-réseau d’adresse IP de votre appliance>|Indifférent|
-    |caslogcollector_syslogs_tcp|601-700|TCP|<Sous-réseau d’adresse IP de votre appliance>|Indifférent|
-    |caslogcollector_syslogs_udp|514-600|UDP|<Sous-réseau d’adresse IP de votre appliance>|Indifférent|
+   |Nom|Plages du port de destination|Protocol|Source|Destination|
+   |----|----|----|----|----|
+   |caslogcollector_ftp|21|TCP|<Sous-réseau d’adresse IP de votre appliance>|Indifférent|
+   |caslogcollector_ftp_passive|20000-20099|TCP|<Sous-réseau d’adresse IP de votre appliance>|Indifférent|
+   |caslogcollector_syslogs_tcp|601-700|TCP|<Sous-réseau d’adresse IP de votre appliance>|Indifférent|
+   |caslogcollector_syslogs_udp|514-600|UDP|<Sous-réseau d’adresse IP de votre appliance>|Indifférent|
       
-     ![Règles Ubuntu Azure](./media/inbound-rule.png)
+    ![Règles Ubuntu Azure](./media/inbound-rule.png)
 
-3.  Revenez à l’ordinateur et cliquez sur **Se connecter** pour ouvrir un terminal dessus.
+3. Revenez à l’ordinateur et cliquez sur **Se connecter** pour ouvrir un terminal dessus.
 
-4.  Appliquez les privilèges racines avec `sudo -i`.
+4. Appliquez les privilèges racines avec `sudo -i`.
 
-5.  Si vous acceptez les [termes du contrat de licence logiciel](https://go.microsoft.com/fwlink/?linkid=862492), désinstallez les anciennes versions et installez Docker CE en exécutant la commande suivante :
+5. Si vous acceptez les [termes du contrat de licence logiciel](https://go.microsoft.com/fwlink/?linkid=862492), désinstallez les anciennes versions et installez Docker CE en exécutant la commande suivante :
         
-        curl -o /tmp/MCASInstallDocker.sh https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh && chmod +x /tmp/MCASInstallDocker.sh; /tmp/MCASInstallDocker.sh
+       curl -o /tmp/MCASInstallDocker.sh https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh && chmod +x /tmp/MCASInstallDocker.sh; /tmp/MCASInstallDocker.sh
 
-      ![Commande Ubuntu Azure](./media/ubuntu-azure-command.png)
+     ![Commande Ubuntu Azure](./media/ubuntu-azure-command.png)
 
 6. Dans la fenêtre **Créer un collecteur de journaux** du portail Cloud App Security, copiez la commande pour importer la configuration du collecteur sur la machine hôte :
 

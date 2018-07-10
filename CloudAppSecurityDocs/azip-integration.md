@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/11/2018
+ms.date: 7/2/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 62c2eca135031d756864a268c57677a31dad4746
-ms.sourcegitcommit: 3177ffcbdabbddc6c758e9a1994fb21fde939ffc
+ms.openlocfilehash: 2e81d57768f552f5564e35733f5a09ca17f9217c
+ms.sourcegitcommit: 9d2a34a2d4145b39d855dd6f596c0fc858b92f9b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35259688"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37340054"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -56,11 +56,18 @@ Les fichiers qui ont été étiquetés avec la protection en dehors de Cloud App
 
 ## <a name="how-it-works"></a>Fonctionnement
 Vous connaissez probablement déjà les étiquettes de classification des fichiers dans [Azure Information Protection](https://docs.microsoft.com/information-protection/). Vous pouvez voir les étiquettes de classification d’Azure Information Protection dans Cloud App Security. Dès que vous intégrez Cloud App Security à Azure Information Protection, Cloud App Security analyse les fichiers comme suit :
+
 1. Cloud App Security récupère la liste de toutes les étiquettes de classification utilisées dans votre locataire (tenant). Cette opération est effectuée toutes les heures pour maintenir la liste à jour.
-2. Cloud App Security recherche ensuite les étiquettes de classification pour les fichiers, comme suit : a. Si vous avez autorisé une analyse automatique (voir ci-dessous), tous les fichiers nouveaux ou modifiés sont ajoutés à la file d’attente de l’analyse tandis que tous les fichiers et référentiels existants sont analysés, classés et protégés.
-    b. Si vous définissez une stratégie de fichier (voir ci-dessous) pour rechercher les étiquettes de classification, ces fichiers sont ajoutés à la file d’attente d’analyse pour les étiquettes de classification.
+
+2. Cloud App Security recherche ensuite les étiquettes de classification pour les fichiers, comme suit :
+
+   1. Si vous avez autorisé une analyse automatique (voir ci-dessous), tous les fichiers nouveaux ou modifiés sont ajoutés à la file d’attente de l’analyse tandis que tous les fichiers et référentiels existants sont analysés, classés et protégés.
+   2. Si vous définissez une stratégie de fichier (voir ci-dessous) pour rechercher les étiquettes de classification, ces fichiers sont ajoutés à la file d’attente d’analyse pour les étiquettes de classification.
+
 3. Comme indiqué ci-dessus, ces analyses concernent les étiquettes de classification découvertes lors de l’analyse initiale que Cloud App Security réalise pour déterminer les étiquettes de classification utilisées dans votre locataire. Les étiquettes externes, qui sont des étiquettes de classification définies par une personne externe à votre locataire, sont ajoutées à la liste des étiquettes de classification. Si vous ne voulez pas rechercher ces étiquettes, cochez la case **Analyser uniquement les fichiers pour les étiquettes de classification Azure Information Protection de ce locataire** (voir ci-dessous).
+
 4. Une fois que vous avez activé Azure Information Protection sur Cloud App Security, les étiquettes de classification sont également recherchées dans tous les nouveaux fichiers ajoutés à Office 365.
+
 5. Vous pouvez créer des stratégies dans Cloud App Security qui appliquent automatiquement vos étiquettes de classification.
 
 ## <a name="how-to-integrate-azure-information-protection-with-cloud-app-security"></a>Comment intégrer Azure Information Protection à Cloud App Security

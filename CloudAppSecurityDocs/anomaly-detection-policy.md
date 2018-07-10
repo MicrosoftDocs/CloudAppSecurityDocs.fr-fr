@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/13/2018
+ms.date: 6/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: ab9bc377-d2f5-4f4c-a419-f1728a15d1c7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9fdc726b65d404ad0bc3aeb7296ac2c82dc54208
-ms.sourcegitcommit: aebd4dd970465a7f5818329f344c24fe73f616dd
+ms.openlocfilehash: c182ea9cfebd7161e637cbd1460ac6b56b17362d
+ms.sourcegitcommit: 49a06f2169af74304eef0288e31783c06ccd3b74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2018
+ms.lasthandoff: 06/24/2018
+ms.locfileid: "36746998"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -55,7 +56,9 @@ Les stratégies de détection d’anomalie suivantes sont disponibles :
 **Activité à partir de pays peu fréquents**
 - Cette détection prend en compte les emplacements d’activité précédents pour identifier les emplacements nouveaux et peu fréquentés. Le moteur de détection des anomalies stocke les informations sur les emplacements précédents employés par les utilisateurs de l’organisation. Une alerte est déclenchée quand une activité se produit à partir d’un emplacement qui n’a pas été récemment visité ou qui ne l’a jamais été par l’utilisateur ou par aucun utilisateur de l’organisation. 
 
-
+**Détection de programme malveillant**
+- Cette détection identifie les fichiers malveillants dans votre stockage cloud, qu’ils viennent de vos applications Microsoft ou tierces. Microsoft Cloud App Security utilise la Threat Intelligence de Microsoft pour savoir si certains fichiers sont associés à des attaques par programme malveillant connues et s’ils sont potentiellement dangereux. Cette stratégie intégrée est désactivée par défaut. Les fichiers ne sont pas tous analysés, mais des solutions sont utilisées pour rechercher les fichiers qui présentent un risque potentiel. Une fois que les fichiers sont détectés, vous pouvez voir une liste des **fichiers infectés**. Cliquez sur le nom du fichier malveillant dans le tiroir de fichier pour ouvrir un rapport sur les programmes malveillants qui vous fournit des informations sur le type de programme malveillant dont le fichier est infecté.
+    
 **Activité depuis des adresses IP anonymes**
 - Cette détection identifie que des utilisateurs étaient actifs à partir d’une adresse IP qui a été identifiée comme adresse IP proxy anonyme. Ces proxys sont utilisés par des personnes qui veulent masquer l’adresse IP de leur appareil dans un but qui peut être malveillant. Cette détection s’appuie sur un algorithme d’apprentissage automatique qui réduit les « faux positifs », comme les adresses IP mal balisées qui sont couramment utilisées par les utilisateurs de l’organisation.
 
@@ -86,6 +89,15 @@ Ces stratégies recherchent les activités dans une seule session en prenant en 
 **Plusieurs tentatives de connexion infructueuses**
 - Cette détection identifie des utilisateurs qui tentent de se connecter plusieurs fois sans succès dans une seule session en prenant en compte la base de référence apprise, ce qui peut indiquer une tentative de violation. 
 
+## Activer la gouvernance automatisée<a name="adp-automated-gov"></a>
+
+Vous pouvez lancer des actions de correction automatisées sur les alertes générées par les stratégies de détection d’anomalie. 
+
+1. Cliquez sur le nom de la stratégie de détection dans la page **Stratégie**.
+2. Dans la fenêtre **Modifier la stratégie de détection d’anomalie** qui s’ouvre, sous **Gouvernance**, définissez les actions de correction que vous souhaitez pour chaque application connectée ou pour toutes les applications. 
+3. Cliquez sur **Mettre à jour**.
+
+ 
 ## <a name="scope-anomaly-detection-policies"></a>Délimiter des stratégies de détection d’anomalie
 
 Chaque stratégie de détection d’anomalie peut être délimitée indépendamment. Vous pouvez donc inclure et exclure les utilisateurs et les groupes de votre choix.
@@ -107,14 +119,13 @@ Vous pouvez trier rapidement les diverses alertes déclenchées par les nouvelle
 
    ![alerte de détection des anomalies1](./media/anomaly-alert-user1.png)
    ![alerte de détection des anomalies1](./media/anomaly-alert-user2.png)
-
  
 2. Cela vous permet d’identifier les activités suspectes que l’utilisateur a effectuées et d’obtenir ainsi plus d’indices démontrant que le compte a été compromis. Par exemple, une alerte sur plusieurs échecs de connexion peut en effet être suspecte et indiquer une éventuelle attaque par force brute, mais elle peut également signaler un problème de configuration d’application, transformant cette alerte en un « faux positif » bénin. Mais si vous voyez une alerte d’échecs de connexion pour d’autres activités suspectes, la probabilité que le compte est compromis augmente. Dans l’exemple ci-dessous, vous pouvez voir que l’alerte **Plusieurs tentatives de connexion infructueuses** a été suivie par les alertes **Activité à partir d’une adresse IP TOR** et **Activité de type Voyage impossible**, deux indicateurs flagrants d’une compromission (IOCs). Si cela n’était pas assez suspect, vous pouvez constater que le même utilisateur a effectué une **activité de téléchargement en masse**, ce qui est souvent un indicateur qu’une personne malveillante tente d’exfiltrer des données. 
 
    ![alerte de détection des anomalies1](./media/anomaly-alert-user3.png)
    ![alerte de détection des anomalies1](./media/anomaly-alert-user4.png)
 
- 
+3.  Une fois que les fichiers infectés sont détectés, vous pouvez voir une liste des **fichiers infectés**. Cliquez sur le nom du fichier malveillant dans le tiroir de fichier pour ouvrir un rapport sur les programmes malveillants qui vous fournit des informations sur le type de programme malveillant dont le fichier est infecté. 
 
 
   
