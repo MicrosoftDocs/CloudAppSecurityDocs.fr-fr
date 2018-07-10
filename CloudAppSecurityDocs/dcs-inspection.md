@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/11/2018
+ms.date: 7/1/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: bf25d1e6-e5dc-449f-b50e-1cd4a21b6d3d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ebba40c8f04dd644711a172fcf150761db3e11cc
-ms.sourcegitcommit: 3177ffcbdabbddc6c758e9a1994fb21fde939ffc
+ms.openlocfilehash: a1a9455681106c066888cf29c83971914e35babb
+ms.sourcegitcommit: 9d2a34a2d4145b39d855dd6f596c0fc858b92f9b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35259758"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37340003"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -28,6 +28,9 @@ ms.locfileid: "35259758"
 
 Microsoft Cloud App Security vous permet d’utiliser le service de classification des données Microsoft en mode natif pour classer les fichiers dans vos applications cloud.
 Le service de classification des données de Microsoft fournit une expérience de protection unifiée sur Office 365, Azure Information Protection et Microsoft Cloud App Security. Il vous permet ainsi d'étendre vos efforts de classification des données aux applications cloud tierces protégées par Microsoft Cloud App Security, en s’appuyant sur les décisions que vous avez déjà prises et d'un nombre encore plus grand d'applications.
+
+>[!NOTE]
+> Cette fonctionnalité est actuellement uniquement disponible aux États-Unis et en Europe (à l’exclusion de la France).
 
 Sans aucune configuration supplémentaire, lors de la création d’une stratégie de prévention des fuites de données pour vos fichiers dans Microsoft Cloud App Security, vous aurez automatiquement la possibilité de définir la **méthode d’inspection** afin d’utiliser le **service de classification des données Microsoft**.
 
