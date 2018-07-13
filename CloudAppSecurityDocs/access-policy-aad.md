@@ -1,6 +1,6 @@
 ---
 title: Créer des stratégies d’accès Cloud App Security pour autoriser et bloquer l’accès | Microsoft Docs
-description: Cette rubrique décrit la procédure pour configurer une stratégie d’accès Contrôle d’application par accès conditionnel de Cloud App Security Proxy pour autoriser et bloquer l’accès à des applications connectées via Azure AD, à l’aide de fonctionnalités de proxy.
+description: Cette rubrique décrit la procédure pour configurer une stratégie d’accès au Contrôle d’accès conditionnel aux applications de Cloud App Security Proxy pour autoriser et bloquer l’accès à des applications connectées via Azure AD, à l’aide de fonctionnalités de proxy.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 9095cff1-f8b0-44a7-b1df-a83e674abbc6
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f25b827c7b0ff635789a4ef721b538598729d0e9
-ms.sourcegitcommit: 49a06f2169af74304eef0288e31783c06ccd3b74
+ms.openlocfilehash: fcd4f6a16f4783fc7b2b7b5446e1a57aa23488a4
+ms.sourcegitcommit: 9d2a34a2d4145b39d855dd6f596c0fc858b92f9b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/24/2018
-ms.locfileid: "36746913"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37340156"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -38,8 +38,8 @@ Les stratégies d’accès Microsoft Cloud App Security permettent la surveillan
 
 ## <a name="prerequisites-to-using-access-policies"></a>Prérequis à l’utilisation des stratégies d’accès
 
-- Licence Azure AD Premium P2.
-- Les applications appropriées doivent être [déployées avec le contrôle d’application par accès conditionnel](proxy-deployment-aad.md)
+- Licence Azure AD Premium P1
+- Les applications appropriées doivent être [déployées avec le Contrôle d’accès conditionnel aux applications](proxy-deployment-aad.md)
 - Une [stratégie d’accès conditionnel Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) doit être en place pour rediriger les utilisateurs vers le Microsoft Cloud App Security, comme décrit ci-dessous.
 
 > [!NOTE]
@@ -49,12 +49,12 @@ Les stratégies d’accès Microsoft Cloud App Security permettent la surveillan
 
 Les stratégies d’accès conditionnel Azure Active Directory et les stratégies de session Cloud App Security travaillent conjointement pour examiner chaque session utilisateur et prendre des décisions stratégiques pour chaque application. Pour configurer une stratégie d’accès conditionnel dans Azure AD, procédez comme suit :
 
-1. Configurez une [stratégie d’accès conditionnel Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) avec des attributions pour l’utilisateur ou le groupe d’utilisateurs et l’application SAML que vous souhaitez contrôler avec le contrôle d’application par accès conditionnel. 
+1. Configurez une [stratégie d’accès conditionnel Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) avec des attributions pour l’utilisateur ou le groupe d’utilisateurs et l’application SAML que vous souhaitez contrôler avec le Contrôle d’accès conditionnel aux applications. 
 
    > [!NOTE]
-   > Seules les applications [déployées avec le contrôle d’application par accès conditionnel](proxy-deployment-aad.md) sont concernées par cette stratégie.
+   > Seules les applications [déployées avec le Contrôle d’accès conditionnel aux applications](proxy-deployment-aad.md) sont concernées par cette stratégie.
 
-2. Acheminez les utilisateurs vers Microsoft Cloud App Security en sélectionnant **Utiliser les restrictions appliquées au contrôle d’application par accès conditionnel** dans le panneau **Session**.
+2. Acheminez les utilisateurs vers Microsoft Cloud App Security en sélectionnant **Utiliser les restrictions appliquées au Contrôle d’accès conditionnel aux applications** dans le panneau **Session**.
  
 ## <a name="create-a-cloud-app-security-access-policy"></a>Créer une stratégie d’accès Cloud App Security 
 
@@ -91,7 +91,7 @@ Pour créer une stratégie d’activité, suivez cette procédure :
 
  
 ## <a name="see-also"></a>Voir aussi  
-[Blocage des téléchargements sur des appareils non gérés à l’aide des fonctionnalités du contrôle d’application par accès conditionnel Azure AD](use-case-proxy-block-session-aad.md)   
+[Blocage des téléchargements sur des appareils non gérés à l’aide des fonctionnalités du Contrôle d’accès conditionnel aux applications Azure AD](use-case-proxy-block-session-aad.md)   
 
 [Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier.](https://premier.microsoft.com/)  
   

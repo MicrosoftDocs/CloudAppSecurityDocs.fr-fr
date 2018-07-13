@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/24/2018
+ms.date: 7/1/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,24 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: bec87e3db09ee14320371cfbffba0d3d9a2cd55a
-ms.sourcegitcommit: 49a06f2169af74304eef0288e31783c06ccd3b74
+ms.openlocfilehash: 4dace36a95c01ec08fe1bca42477121fa977dc6a
+ms.sourcegitcommit: 3f02b02c294c4d7575702d9083ea3f94d3169ebc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/24/2018
-ms.locfileid: "36747049"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37843521"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
 
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Nouveautés de Microsoft Cloud App Security
 
+
+## <a name="cloud-app-security-release-127"></a>Cloud App Security version 127
+
+Publication : 8 juillet 2018
+
+- Vous pouvez désormais voir les activités génériques pour Office 365 dans le **Journal d’activité** et filtrer les activités Office 365 ayant pour état **Non spécifié** dans les **Stratégies d’activité**. Vous pouvez examiner ces activités pour rechercher des informations sur les activités effectuées non encore classées par type dans Cloud App Security, et vous pouvez utiliser ces activités pour envoyer des demandes à l’équipe Cloud App Security afin de créer des types d’activités en fonction de ces activités. 
 
 ## <a name="cloud-app-security-release-126"></a>Cloud App Security version 126
 
@@ -36,7 +42,7 @@ Publication : 24 juin 2018
     -   Dans le cadre du réseau mondial Azure, l’intégration et l’interface ont été améliorées pour que les utilisateurs bénéficient d’une expérience fluide, où qu’ils se trouvent.
  
 
--   **Inspection du contenu avec les services de classification des données Microsoft en disponibilité générale**<br>L’intégration de Microsoft Cloud App Security avec les services de classification des données Microsoft est maintenant en disponibilité générale. Cette intégration vous permet d’utiliser le service de classification des données Microsoft en mode natif pour classer les fichiers dans vos applications cloud. Pour plus d’informations, consultez [Intégration des services de classification des données Microsoft](dcs-inspection.md).
+-   **Inspection du contenu avec les services de classification des données Microsoft en disponibilité générale**<br>L’intégration de Microsoft Cloud App Security avec les services de classification des données Microsoft est maintenant en disponibilité générale. Cette intégration vous permet d’utiliser le service de classification des données Microsoft en mode natif pour classer les fichiers dans vos applications cloud. Pour plus d’informations, consultez [Intégration des services de classification des données Microsoft](dcs-inspection.md). Cette fonctionnalité est actuellement uniquement disponible aux États-Unis et en Europe (à l’exclusion de la France).
 
 - **Rapport exécutif Cloud Discovery**<br>Microsoft Cloud App Security met progressivement en place la possibilité de générer un rapport exécutif Cloud Discovery au format PDF. Ce rapport fournit une vue d’ensemble de l’utilisation du Shadow IT qui a été identifiée dans votre organisation, en mettant en avant les principaux utilisateurs et principales applications utilisées en général et dans les catégories dominantes, et se concentre sur le risque que pose le Shadow IT dans votre organisation. De plus, le rapport fournit une liste de recommandations pour améliorer la visibilité et le contrôle du Shadow IT dans votre organisation. Utilisez ce rapport pour vous assurer que les menaces et risques potentiels sont supprimés et que votre organisation reste sûr et sécurisé.
 
@@ -59,7 +65,7 @@ Publication : 10 juin 2018
 
 
 - **Nouvelle fonctionnalité d’investigation basée sur les utilisateurs avec le plus de sessions suspectes :**<br>
-Microsoft Cloud App Security a ajouté un nouveau widget d’investigation au tableau de bord qui affiche les utilisateurs selon le nombre d’alertes de détection de menace ouvertes. Ce widget d’investigation vous permet de concentrer votre recherche de menace sur les utilisateurs avec le plus grand nombre de sessions suspectes.
+Microsoft Cloud App Security a ajouté un nouveau widget d’enquête au tableau de bord qui affiche les principaux utilisateurs en fonction du nombre d’alertes de détection de menace ouvertes. Ce widget d’enquête vous permet de concentrer votre recherche de menace sur les utilisateurs avec le plus grand nombre de sessions suspectes.
 
 - **Prise en charge des compartiments AWS S3 :**<br>
 Microsoft Cloud App Security peut désormais détecter les compartiments AWS S3 et leurs niveaux de partage. Vous obtenez ainsi des alertes et une visibilité des compartiments AWS accessibles publiquement. Cela vous permet également de créer des stratégies basées sur les compartiments et d’appliquer la gouvernance automatique. En outre, il existe un nouveau modèle de stratégie disponible appelé **Compartiments S3 (AWS) accessibles publiquement** que vous pouvez utiliser pour créer facilement une stratégie régissant votre stockage AWS. Pour activer ces nouvelles fonctionnalités, assurez-vous de mettre à jour vos applications connectées à AWS en ajoutant les nouvelles autorisations décrites dans [Connecter AWS](connect-aws-to-microsoft-cloud-app-security.md).

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/27/2018
+ms.date: 7/1/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: c6d8f8af-867b-43ab-adee-f06520577fe7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0d21df4cac9ca31207b94061d5bb18ec857668ac
-ms.sourcegitcommit: c7e4351345d55cfeb0517651446490ce5f208651
+ms.openlocfilehash: e5d95b5b1e97eb1758c8f62b238ef1bdbb9f8a9c
+ms.sourcegitcommit: 9d2a34a2d4145b39d855dd6f596c0fc858b92f9b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2018
-ms.locfileid: "37140769"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37339945"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -36,7 +36,7 @@ Par défaut, le rôle d’administrateur général Azure AD ne vous donne pas ac
 
 Pour obtenir des recommandations sur la configuration de la sécurité dans Microsoft Cloud App Security :
 
-1. <a href="https://docs.microsoft.com/azure/security-center/security-center-management-groups" target="_blank">Gagnez en visibilité au niveau locataire dans Azure Security Center</a> en accordant à vous-même et à tous les autres administrateurs Microsoft Cloud App Security auxquels vous souhaitez accorder l’accès à cette page le rôle de Lecteur pour tous les abonnements, en attribuant le rôle au groupe d’administration racine dans Azure Security Center et en élevant votre administrateur général Azure AD pour lui donner accès aux abonnements Azure. 
+1. <a href="https://docs.microsoft.com/azure/security-center/security-center-management-groups" target="_blank">Gagnez en visibilité au niveau locataire dans Azure Security Center</a>. Ce processus vous permet d’accorder à vous-même et à tous les autres administrateurs Microsoft Cloud App Security auxquels vous souhaitez accorder l’accès à cette page le rôle de Lecteur pour tous les abonnements, d’attribuer le rôle au groupe d’administration racine dans Azure Security Center et d’élever votre administrateur général Azure AD pour lui donner accès aux abonnements Azure. 
 
    > [!NOTE]
    > L’article décrit la procédure permettant de devenir administrateur de la sécurité. Pour que cette intégration fonctionne, les autorisations minimales nécessaires sont Lecteur.
