@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/21/2018
+ms.date: 4/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,19 +13,24 @@ ms.technology: ''
 ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: dbbab2b59c8e44433e3895fc63fefff562a44a29
-ms.sourcegitcommit: 716699286f8ebb33327eac28ca9b7bf9742daf32
+ms.openlocfilehash: b4d507b5fb3a646b31ba3c380b170c2abca18ddf
+ms.sourcegitcommit: 3f02b02c294c4d7575702d9083ea3f94d3169ebc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38775886"
 ---
+*S’applique à : Microsoft Cloud App Security*
+
+
+
 # <a name="automatically-apply-azure-information-protection-classification-labels"></a>Appliquer automatiquement des étiquettes de classification Azure Information Protection  
 
 Dans un monde parfait, tous les employés comprennent l’importance de la protection des informations et respectent vos stratégies. Mais dans le monde réel, l’un de vos partenaires qui collabore avec la comptabilité peut facilement charger un document sur votre dépôt Box avec des autorisations incorrectes. Une semaine plus tard, vous vous rendez compte que des informations confidentielles de votre entreprise ont été exposées à votre concurrent. 
 
 Microsoft Cloud App Security vous permet d’éviter ce genre de catastrophe avant qu’elle n’arrive.
 
-En effet, Cloud App Security identifie la présence d’autorisations publiques dans un document enregistré dans votre compte Box, puis utilise un moteur de classification pour identifier la présence d’informations confidentielles dans le document partagé publiquement. Cloud App Security vous envoie alors une alerte pour vous informer de cet événement, puis applique automatiquement votre étiquette de classification Azure Information Protection **Confidentiel** pour renforcer le chiffrement du fichier. 
+En effet, Microsoft Cloud App Security identifie la présence d’autorisations publiques dans un document enregistré dans votre compte Box, puis utilise un moteur de classification pour identifier la présence d’informations confidentielles dans le document partagé publiquement. Cloud App Security vous envoie alors une alerte pour vous informer de cet événement, puis applique automatiquement votre étiquette de classification Azure Information Protection **Confidentiel** pour renforcer le chiffrement du fichier. 
 
 >[!NOTE]
 > - L’application d’une étiquette Azure Information Protection est l’un des éléments figurant dans la longue liste [des actions de gouvernance](governance-actions.md) disponibles.
