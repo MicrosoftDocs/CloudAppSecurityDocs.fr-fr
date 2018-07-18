@@ -1,26 +1,30 @@
 ---
-title: "Connecter Box à Cloud App Security pour la visibilité et le contrôle d’utilisation | Microsoft Docs"
-description: "Cette rubrique fournit des informations sur la connexion de votre application Box à Cloud App Security à l’aide du connecteur API."
-keywords: 
+title: Connecter Box à Cloud App Security pour la visibilité et le contrôle d’utilisation | Microsoft Docs
+description: Cette rubrique fournit des informations sur la connexion de votre application Box à Cloud App Security à l’aide du connecteur API.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/3/2018
+ms.date: 7/15/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: b3e4713e-986f-4a5e-9fcc-f8de94dd0df7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2b9239b43d2f104f6e54c519ba089346c7672456
-ms.sourcegitcommit: c5533d66b8e037d6221c48bdbad81574f25f2817
+ms.openlocfilehash: a9a89450ed04b21159b7f4323f2e4b01a8e81d28
+ms.sourcegitcommit: 70e685dc53c70b719b707e685d5ef45cec445891
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 07/15/2018
+ms.locfileid: "39063943"
 ---
+*S’applique à : Microsoft Cloud App Security*
+
+
 # <a name="connect-box-to-microsoft-cloud-app-security"></a>Connecter Box à Microsoft Cloud App Security
-Cette section fournit des instructions pour connecter Cloud App Security à votre compte Box existant à l’aide des API du connecteur d’applications.  
+Cette section fournit des instructions pour connecter Microsoft Cloud App Security à votre compte Box existant à l’aide des API du connecteur d’applications.  
   
 ## <a name="how-to-connect-box-to-cloud-app-security"></a>Comment connecter Box à Cloud App Security  
   
@@ -37,7 +41,17 @@ Cette section fournit des instructions pour connecter Cloud App Security à votr
   
          ![box, applications](./media/box-apps.png "box, applications")  
   
-    -   Si l’option **Unpublished Applications** (Applications non publiées) est sélectionnée, dans la zone de texte **Except for** (À l’exception de), ajoutez le numéro de série de l’application Cloud App Security :<br></br>Centre de données US1 : `nduj1o3yavu30dii7e03c3n7p49cj2qh` <br></br>Centre de données US2 : `w0ouf1apiii9z8o0r6kpr4nu1pvyec75`<br></br>Centre de données EU1 : `me9cm6n7kr4mfz135yt0ab9f5k4ze8qp`<br></br>Cliquez ensuite sur **Enregistrer**. Pour savoir à quel centre de données Cloud App Security vous êtes connecté, consultez [Jetons d’API](api-tokens.md). 
+    -   Si l’option **Unpublished Applications** (Applications non publiées) est sélectionnée, dans la zone de texte **Except for** (À l’exception de), ajoutez le numéro de série de l’application Cloud App Security :
+     
+         |Centre de données|Numéro de série de Microsoft Cloud App Security|
+         |----|----|    
+         |US1| `nduj1o3yavu30dii7e03c3n7p49cj2qh`|
+         |US2|`w0ouf1apiii9z8o0r6kpr4nu1pvyec75`|
+         |US3|`dmcyvu1s9284i2u6gw9r2kb0hhve4a0r`|
+         |EU1|`me9cm6n7kr4mfz135yt0ab9f5k4ze8qp`|
+         |EU2|`uwdy5r40t7jprdlzo85v8suw1l4cdsbf`|
+
+        Cliquez ensuite sur **Enregistrer**. Pour savoir à quel centre de données Cloud App Security vous êtes connecté, consultez [Jetons d’API](api-tokens.md). 
   
          ![paramètres box, except for (à l’exception de)](./media/box-settings-except-for.png "paramètres box, except for (à l’exception de)")  
   
