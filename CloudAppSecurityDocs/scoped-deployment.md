@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: fe2ce27b-1020-45e9-ad72-fad93d197169
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d7148854286218172fdbeb7c9e651a49cb721980
-ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
+ms.openlocfilehash: 26f6314dd1a3285049b4bf2bbd46467e63fca8ac
+ms.sourcegitcommit: 92ffce1e6067b087732f617cf56ca904ee3691de
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34568660"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175415"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -45,7 +45,7 @@ Il est envisageable, dans certains cas, de ne pas utiliser Microsoft Cloud App S
      
      ![règle d’inclusion](./media/include-rule.png)
 
-4. Pour définir des groupes à exclure du monitoring, cliquez sur ![l’icône](./media/plus-icon.png) plus sous l’onglet **Exclure**. <br>Dans la boîte de dialogue **Créer une règle d’inclusion**, définissez les paramètres suivants :
+4. Pour définir des groupes à exclure du monitoring, cliquez sur ![l’icône](./media/plus-icon.png) plus sous l’onglet **Exclure**. <br>Dans la boîte de dialogue **Créer une règle d’exclusion**, définissez les paramètres suivants :
 
     1. Sous **Taper le nom de la règle**, donnez un nom descriptif à la règle.
     Sous **Sélectionner des groupes d’utilisateurs**, sélectionnez tous les groupes pour lesquels vous ne souhaitez pas effectuer un monitoring avec Cloud App Security.
