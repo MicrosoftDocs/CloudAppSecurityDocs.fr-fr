@@ -26,6 +26,10 @@ Les stratégies d’inspection du contenu de Cloud App Security tirent parti de 
 -   [http://regexpal.com/](http://regexpal.com/)  
   
      Veillez à sélectionner **Casse non prise en compte**.  
+
+-   [https://www.debuggex.com/](https://www.debuggex.com/)
+
+-   [https://extendsclass.com/regex-tester.html](https://extendsclass.com/regex-tester.html)
   
 -   [https://regex101.com/](https://regex101.com/)  
   
