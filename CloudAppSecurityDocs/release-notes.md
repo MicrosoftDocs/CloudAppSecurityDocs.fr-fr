@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/1/2018
+ms.date: 7/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,40 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4dace36a95c01ec08fe1bca42477121fa977dc6a
-ms.sourcegitcommit: 3f02b02c294c4d7575702d9083ea3f94d3169ebc
+ms.openlocfilehash: 02e1036b6ab8b4796080bb3e91007e6d2dd365ce
+ms.sourcegitcommit: 8a31b9bb4594c74cf200cf81e31c0fd9d6d776a6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37843521"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39220641"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
 
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Nouveautés de Microsoft Cloud App Security
+
+## <a name="cloud-app-security-release-128"></a>Cloud App Security version 128
+
+Publication : 22 juillet 2018
+
+-   **Actions d’autorisations d’application sur plusieurs applications**<br>
+Pour les applications qui ont reçu des autorisations d’application, vous pouvez maintenant en interdire ou en approuver plusieurs en une seule action. Par exemple, vous pouvez consulter toutes les applications qui ont reçu une autorisation par les utilisateurs de votre organisation, sélectionner toutes les applications que vous voulez interdire et cliquer sur Interdire des applications pour révoquer tous les consentements accordés et cesser d’autoriser les utilisateurs à accorder des autorisations à ces applications.  Pour plus d’informations, consultez [Gérer une autorisation d’application](manage-app-permissions.md).
+-   **Prise en charge avancée des applications Azure**<br>
+Pour Azure, nous offrons progressivement la possibilité de détecter les applications en tant qu’activités de compte d’utilisateur effectuées par les applications Azure (internes et externes). Cela vous permet de créer des stratégies qui vous avertissent si une application effectue des activités inattendues et non autorisées. Pour plus d’informations, consultez [Connecter Azure à Microsoft Cloud App Security](connect-azure-to-microsoft-cloud-app-security.md).
+-   **Moteur de classification des données mis à jour avec de nouveaux types de contenu sensible du RGPD**<br>
+Le [Service de classification des données Cloud App Security](dcs-inspection.md) a ajouté de nouveaux types de contenu sensible à notre moteur de classification des données pour vous permettre de détecter du contenu relatif au RGPD dans vos fichiers.
+-   **Mises à jour du catalogue des applications cloud**<br>
+Le catalogue d’applications cloud comprend maintenant une catégorie de risque Légal (en plus de Général, Sécurité et Conformité) pour vous aider à gérer la conformité à la confidentialité et à la propriété des données, notamment la préparation au RGPD.
+Pour vous permettre d’évaluer la préparation au RGPD de chaque application cloud, la nouvelle catégorie de risque contient l’instruction de préparation au RGPD du service cloud et l’état de chaque contrôle de structure du RGPD.
+Notez que, dans le cadre de cette amélioration, les attributs de risque suivants ont été déplacés de l’autre catégorie de risque à la catégorie Légal :
+     - DMCA
+     - Propriété des données
+     - Stratégie de conservation des données
+
+     De plus, la nouvelle catégorie de risque est évaluée séparément pour vous permettre de configurer la pondération du score en fonction de vos préférences et de vos priorités. Pour plus d’informations, consultez [Score du risque](risk-score.md).
+
+-   **Nouvelle requête proposée : prête pour le RGPD** <br>
+Il existe une nouvelle proposition de requête qui vous permet d’identifier les applications découvertes qui sont prêtes pour le RGPD. Étant donné que le RGPD est récemment devenu une priorité absolue pour les administrateurs de sécurité, cette requête vous aide à identifier les applications qui sont prêtes pour le RGPD et à atténuer les menaces en évaluant le risque de celles qui ne le sont pas.
 
 
 ## <a name="cloud-app-security-release-127"></a>Cloud App Security version 127
