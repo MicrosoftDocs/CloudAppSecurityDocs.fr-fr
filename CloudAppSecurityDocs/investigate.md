@@ -1,26 +1,30 @@
 ---
-title: "Examiner les risques et les activités suspectes des applications cloud avec Cloud App Security | Microsoft Docs"
-description: "Cette rubrique présente le processus d’examen des alertes, des problèmes et des activités suspectes en utilisant Cloud App Security."
-keywords: 
+title: Examiner les risques et les activités suspectes des applications cloud avec Cloud App Security | Microsoft Docs
+description: Cette rubrique présente le processus d’examen des alertes, des problèmes et des activités suspectes en utilisant Cloud App Security.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: a9b00c2a-2f71-499e-8f57-67e560daedc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e0d61fcd3147b25b84c7e5071ba8e7a02bc05f67
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 0187adc2115e835c246b31c8412a359a4d3e2bc3
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
+ms.locfileid: "31774135"
 ---
+*S’applique à : Microsoft Cloud App Security*
+
+
 # <a name="investigate"></a>Investiguer
-Une fois que Cloud App Security s’exécute dans votre environnement cloud, vous avez besoin d’une phase de formation et d’étude sur la façon d’utiliser les outils de Cloud App Security pour mieux comprendre ce qui se passe dans votre environnement cloud. Ensuite, selon votre environnement particulier et la façon dont il est utilisé, vous pouvez identifier ce qui est nécessaire pour protéger votre organisation contre les risques.
+Une fois que Microsoft Cloud App Security s’exécute dans votre environnement cloud, vous avez besoin d’une phase de formation et d’étude sur la façon d’utiliser les outils de Microsoft Cloud App Security pour mieux comprendre ce qui se passe dans votre environnement cloud. Ensuite, selon votre environnement particulier et la façon dont il est utilisé, vous pouvez identifier ce qui est nécessaire pour protéger votre organisation contre les risques.
 
 Cette rubrique décrit comment effectuer une investigation pour mieux comprendre votre environnement cloud.  
 
@@ -115,13 +119,6 @@ Le marquage des applications comme approuvées ou non est une étape importante 
     -   Pour les solutions alternatives, voulez-vous rendre non approuvées des applications cloud dans votre organisation ?  
 
     -   Certaines applications cloud sont-elles utilisées, alors qu’elles ne sont pas conformes à la stratégie de votre organisation ?  
-
-## <a name="use-reports-to-investigate-risk"></a>Utiliser les rapports pour examiner les risques  
-Quand vous vous attelez à mieux contrôler votre environnement cloud, vous faites certaines hypothèses en fonction de ce que vous vous attendez à trouver : en fait, vous ne connaissez pas encore vraiment votre cloud. Sur la base de ces hypothèses, vous créez des stratégies.
-
-Une fois que Cloud App Security s’exécute dans votre environnement cloud, vous utilisez les rapports intégrés (et des rapports personnalisés) pour voir ce qui se passe dans votre cloud. Sur cette base, vous ajustez à nouveau vos stratégies pour y inclure des exceptions, pour que votre stratégie intercepte au final très peu de faux positifs.  
-
-Les rapports intégrés vous offrent des vues agrégées à examiner. Pour utiliser les rapports intégrés, accédez à **Examiner**, puis **Rapports intégrés**. Pour plus d’informations sur les différents rapports intégrés, consultez les [informations de référence sur les rapports intégrés](built-in-report-reference.md).  
 
 ## <a name="sample-investigation"></a>Exemple d’examen  
 Partons du principe que vous pensez ne pas avoir d’accès à votre environnement cloud via des adresses IP risquées (par exemple des proxys anonymes et Tor). Vous créez cependant une stratégie pour les adresses IP à risques simplement pour vous en assurer :  
