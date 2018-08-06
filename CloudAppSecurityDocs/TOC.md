@@ -16,7 +16,7 @@
 ### [Groupes d’utilisateurs](user-groups.md)
 ### [Déploiement étendu](scoped-deployment.md)
 ### [Balises et plages IP](ip-tags.md)
-## [Déployer Cloud Discovery](set-up-cloud-discovery.md)
+## [Configurer Cloud Discovery](set-up-cloud-discovery.md)
 ### [Créer des rapports d’instantanés Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
 ### [Configurer le chargement automatique des journaux pour des rapports continus](discovery-docker.md)
 #### [Docker sur Ubuntu et RHEL (local)](discovery-docker-ubuntu.md)
