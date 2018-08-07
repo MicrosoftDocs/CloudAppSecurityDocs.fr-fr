@@ -1,24 +1,28 @@
 ---
-title: "Utilisation des applications découvertes dans Cloud App Security | Microsoft Docs"
-description: "Cette rubrique décrit le processus d’identification et de correction des applications Cloud Discovery à risque dans Cloud App Security."
-keywords: 
+title: Utilisation des applications découvertes dans Cloud App Security | Microsoft Docs
+description: Cette rubrique décrit le processus d’identification et de correction des applications Cloud Discovery à risque dans Cloud App Security.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/5/2018
+ms.date: 8/6/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 276af05cd289496c277a5ab0709e7fca3453d469
-ms.sourcegitcommit: c47fd92c71028ede8840e0766f20eb0ad2898e70
+ms.openlocfilehash: 9c9cae44e8ecbd3856495723f951c050fa8f50e3
+ms.sourcegitcommit: a97e6d93124433547149fd8a642fcb77e02a75f2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39519055"
 ---
+*S’applique à : Microsoft Cloud App Security*
+
+
 # <a name="working-with-discovered-apps"></a>Utilisation des applications découvertes
 
 ## <a name="review-the-cloud-discovery-dashboard"></a>Consulter le tableau de bord Cloud Discovery
@@ -56,9 +60,17 @@ Cloud Discovery vous permet d’analyser de manière encore plus approfondie l�
      
 Vous pouvez par exemple effectuer la distinction entre différents sites SharePoint.
 
-Cette fonctionnalité est prise en charge uniquement dans les pare-feu et les proxys qui contiennent des données d’URL cibles. Consultez la liste des appliances prises en charge dans [Pare-feu et proxys pris en charge](set-up-cloud-discovery#supported-firewalls-and-proxies).
+Cette fonctionnalité est prise en charge uniquement dans les pare-feu et les proxys qui contiennent des données d’URL cibles. Consultez la liste des appliances prises en charge dans [Pare-feu et proxys pris en charge](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
 
  ![informations sur les sous-domaines](./media/discovery-domains.png) 
+
+## <a name="generate-cloud-discovery-executive-report"></a>Générer un rapport exécutif Cloud Discovery
+
+La meilleure façon d’obtenir une vue d’ensemble de l’utilisation du Shadow IT dans votre organisation est de générer un rapport exécutif Cloud Discovery. Ce rapport identifie les principaux risques potentiels et vous permet de planifier un flux de travail pour atténuer et gérer les risques jusqu’à leur résolution.
+
+Pour générer un rapport Cloud Discovery efficace : 
+
+À partir du tableau de bord Cloud Discovery, cliquez sur les trois points en haut à droite du menu et sélectionnez **Générer un rapport exécutif Cloud Discovery**.
 
 ## <a name="exclude-entities"></a>Exclure des entités  
 Si certains utilisateurs ou certaines adresses IP sont particulièrement bruyants et inintéressants ou si des applications ne sont pas pertinentes, vous pouvez exclure leurs données des données Cloud Discovery qui sont analysées. Par exemple, vous pouvez exclure toutes les informations provenant de 127.0.0.1 ou de l’hôte local.  
@@ -113,15 +125,15 @@ Plusieurs raisons peuvent vous amener à supprimer vos données Cloud Discovery.
   
 Pour supprimer des données Cloud Discovery :  
   
-1.  Dans le portail, sous l’icône Paramètres, sélectionnez **Paramètres Cloud Discovery**.  
+1. Dans le portail, sous l’icône Paramètres, sélectionnez **Paramètres Cloud Discovery**.  
   
-2.  Cliquez sur l’onglet **Supprimer les données**.  
+2. Cliquez sur l’onglet **Supprimer les données**.  
   
-     Il est important d’être sûr de vouloir supprimer les données avant de poursuivre : cette opération ne peut pas être annulée et **toutes** les données Cloud Discovery dans le système sont alors supprimées.  
+    Il est important d’être sûr de vouloir supprimer les données avant de poursuivre : cette opération ne peut pas être annulée et **toutes** les données Cloud Discovery dans le système sont alors supprimées.  
   
-3.  Cliquez sur le bouton **Supprimer**.  
+3. Cliquez sur le bouton **Supprimer**.  
   
-     ![supprimer des données](./media/delete-data.png "supprimer des données")  
+    ![supprimer des données](./media/delete-data.png "supprimer des données")  
   
    > [!NOTE]  
    >  Le processus de suppression peut prendre quelques minutes et il n’est pas immédiat.  

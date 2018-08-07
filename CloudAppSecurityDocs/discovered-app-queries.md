@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/9/2018
+ms.date: 8/6/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 1a2d3aeb-4e28-4c73-804b-95e862b08e43
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3a89faa350a35d7b5bfd5b2cfe7fdc0263bb2566
-ms.sourcegitcommit: 5d549d7e2d15f36452fe3c3d143493a7014b457b
+ms.openlocfilehash: 2032d5fbfc78e734abd747dc6f6f84fca1f95f95
+ms.sourcegitcommit: a97e6d93124433547149fd8a642fcb77e02a75f2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39519004"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -25,7 +26,7 @@ ms.lasthandoff: 05/09/2018
 
 ## <a name="discovered-app-filters"></a>Filtres d’application découverte
 
-Il existe des filtres d’application découverte de base et avancés. Pour obtenir un filtre complexe (comme dans l’exemple ci-dessus), utilisez l’option avancée qui inclut tous les éléments suivants :
+Il existe des filtres d’application découverte de base et avancés. Pour obtenir un filtre complexe (comme dans l’exemple ci-dessus), utilisez l’option avancée qui inclut tous les filtres suivants :
 
 ![Applications découvertes](./media/discovered-apps.png)  
 
@@ -33,11 +34,12 @@ Il existe des filtres d’application découverte de base et avancés. Pour obte
 - **Balise d’application** : Indiquez si l’application a été approuvée, non approuvée ou non marquée. Par ailleurs, vous pouvez créer une balise personnalisée pour votre application et l’utiliser pour filtrer des types spécifiques d’applications. 
 - **Applications et domaines** : Permet de rechercher des applications spécifiques ou des applications utilisées dans des domaines spécifiques. 
 - **Catégories** : Le filtre de catégories, qui se trouve à gauche de la page, vous permet de rechercher des types d’applications selon des catégories d’applications, par exemple, des applications de réseau social, des applications de stockage cloud, etc. Vous pouvez sélectionner plusieurs catégories à la fois, ou une seule catégorie, puis leur appliquer des filtres de base et avancés.
-- **Facteur de risque de conformité** : Permet de rechercher des normes, certifications et conformités spécifiques auxquelles l’application doit se conformer (HIPAA, ISO 27001, SOC 2, PCI-DSS, etc.).
+- **Facteur de risque de conformité** : Permet de rechercher une norme, une certification et une conformité spécifique auxquelles l’application doit se conformer (HIPAA, ISO 27001, SOC 2, PCI-DSS, etc.).
 - **Facteur de risque général** : Permet de rechercher des facteurs de risque général comme la popularité auprès des consommateurs, les paramètres régionaux du centre de données, etc.
 - **Score de risque** : Permet de filtrer les applications par score de risque pour que vous puissiez vous concentrer uniquement sur les applications très risquées, par exemple. Vous pouvez également remplacer le score de risque défini par Cloud App Security. Pour plus d’informations, consultez [Utilisation du score de risque](risk-score.md).
 - **Facteur de risque de sécurité** : Permet de filtrer en fonction de mesures de sécurité spécifiques (comme le chiffrement au repos, l’authentification multifacteur, etc.).
-- **Utilisation** : Permet de filtrer en fonction des statistiques d’utilisation de cette application, comme les applications avec une quantité supérieure ou inférieure de **chargements de données** que la quantité spécifiée, les applications avec un nombre supérieur ou inférieur **d’utilisateurs** que le nombre spécifié.
+- **Utilisation** : Permet de filtrer en fonction des statistiques d’utilisation de cette application, comme les applications avec un nombre supérieur ou inférieur de **chargements de données** que la quantité spécifiée, les applications avec un nombre supérieur ou inférieur **d’utilisateurs** que le nombre spécifié.
+- **Légal** : vous permet de filtrer selon l’ensemble des réglementations et des stratégies qui sont en place pour garantir la protection et la confidentialité des données des utilisateurs de l’application, comme la stratégie de conservation des données, le RGPD et le DMCA.
 
 ### <a name="creating-and-managing-custom-app-tags"></a>Création et gestion des balises d’application personnalisées
 
@@ -89,6 +91,8 @@ Cloud App Security vous fournit également des **requêtes suggérées** et vous
 
  - Applications cloud d’entreprise qui ont un chiffrement faible : filtre toutes vos applications découvertes pour afficher uniquement les applications qui sont risquées, car elles ne chiffrent pas les données au repos et ne prennent en charge aucun protocole de chiffrement.
 
+- Prêt pour le RGPD : filtre toutes vos applications découvertes pour afficher uniquement les applications qui sont prêtes pour le RGPD. Étant donné que la conformité au RGPD est une priorité absolue, cette requête vous aide à identifier les applications qui sont prêtes pour le RGPD et à atténuer les menaces en évaluant le risque de celles qui ne le sont pas.
+ 
 ![interroger les applications découvertes](./media/queries-discovered-apps.png)
 
  

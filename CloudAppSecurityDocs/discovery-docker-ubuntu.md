@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/1/2018
+ms.date: 8/6/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 623c644b68a625a1c67c8e071fda975c12847f60
-ms.sourcegitcommit: c7e4351345d55cfeb0517651446490ce5f208651
+ms.openlocfilehash: 9c01b8780bd0e177dc20bf407a924f2648bae6e6
+ms.sourcegitcommit: a97e6d93124433547149fd8a642fcb77e02a75f2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2018
-ms.locfileid: "37140803"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39519089"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -71,6 +71,11 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
     >L’intégration à des protocoles de transfert sécurisés (FTPS et Syslog – TLS) nécessite souvent un paramètre supplémentaire ou votre pare-feu/proxy.
 
    f. Répétez ce processus pour chaque pare-feu ou proxy dont les journaux peuvent être utilisés pour détecter le trafic sur votre réseau.
+    > [!NOTE]
+    >Il est recommandé de définir une source de données dédiée par appareil réseau pour vous permettre de :
+    <br>- Surveiller l’état de chaque appareil séparément à des fins d’investigation.
+    <br>- Explorer le Shadow IT Discovery par appareil, si chaque appareil est utilisé par un segment d’utilisateur différent.
+
 
 3. Accédez à l’onglet **Collecteurs de journaux** en haut.
 

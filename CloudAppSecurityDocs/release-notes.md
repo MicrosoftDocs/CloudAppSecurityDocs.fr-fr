@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3e477e1551f9004e31a5743b67a99ecef4e95d7f
-ms.sourcegitcommit: b4bc20170a97e4fedc47cf67906a13aa0b70bcb6
+ms.openlocfilehash: 266af546cd795c3675676b43f0830818af10ebab
+ms.sourcegitcommit: a97e6d93124433547149fd8a642fcb77e02a75f2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2018
-ms.locfileid: "39518174"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39519106"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -29,7 +29,7 @@ ms.locfileid: "39518174"
 
 ## <a name="cloud-app-security-release-129"></a>Cloud App Security version 129
 
-Publication : 22 juillet 2018
+Publication : 5 août 2018
 
 - **Nouvelles stratégies de détection des anomalies : règles concernant les e-mails suspects**<br>De nouvelles stratégies de détection des anomalies ont été ajoutées pour détecter les règles de transfert des e-mails suspects, par exemple, si un utilisateur a créé une règle de boîte de réception assurant le transfert d’une copie de tous les e-mails à une adresse externe. 
 - Cette version inclut des correctifs et améliorations ciblant plusieurs problèmes. 
