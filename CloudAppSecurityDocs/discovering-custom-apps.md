@@ -1,24 +1,28 @@
 ---
-title: "Utilisation des applications découvertes dans Cloud App Security | Microsoft Docs"
-description: "Cette rubrique décrit le processus d’identification et de correction des applications Cloud Discovery à risque dans Cloud App Security."
-keywords: 
+title: Utilisation des applications découvertes dans Cloud App Security | Microsoft Docs
+description: Cette rubrique décrit le processus d’identification et de correction des applications Cloud Discovery à risque dans Cloud App Security.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/3/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 23fe601cba94ad58f4baceb0df461faafbe7a974
-ms.sourcegitcommit: 85d90d51e9e265d077f38b0188bcfdab2ce63ed1
+ms.openlocfilehash: 24fb4cd0d7b4c927081e07ef4a35d18582af1135
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/23/2018
+ms.locfileid: "31772567"
 ---
+*S’applique à : Microsoft Cloud App Security*
+
+
 # <a name="working-with-discovered-apps"></a>Utilisation des applications découvertes
 
 ## <a name="review-the-cloud-discovery-dashboard"></a>Consulter le tableau de bord Cloud Discovery
@@ -106,15 +110,15 @@ Plusieurs raisons peuvent vous amener à supprimer vos données Cloud Discovery.
   
 Pour supprimer des données Cloud Discovery :  
   
-1.  Dans le portail, sous l’icône Paramètres, sélectionnez **Paramètres Cloud Discovery**.  
+1. Dans le portail, sous l’icône Paramètres, sélectionnez **Paramètres Cloud Discovery**.  
   
-2.  Cliquez sur l’onglet **Supprimer les données**.  
+2. Cliquez sur l’onglet **Supprimer les données**.  
   
-     Il est important d’être sûr de vouloir supprimer les données avant de poursuivre : cette opération ne peut pas être annulée et **toutes** les données Cloud Discovery dans le système sont alors supprimées.  
+    Il est important d’être sûr de vouloir supprimer les données avant de poursuivre : cette opération ne peut pas être annulée et **toutes** les données Cloud Discovery dans le système sont alors supprimées.  
   
-3.  Cliquez sur le bouton **Supprimer**.  
+3. Cliquez sur le bouton **Supprimer**.  
   
-     ![supprimer des données](./media/delete-data.png "supprimer des données")  
+    ![supprimer des données](./media/delete-data.png "supprimer des données")  
   
    > [!NOTE]  
    >  Le processus de suppression peut prendre quelques minutes et il n’est pas immédiat.  
