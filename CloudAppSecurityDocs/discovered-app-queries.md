@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/6/2018
+ms.date: 8/8/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 1a2d3aeb-4e28-4c73-804b-95e862b08e43
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2032d5fbfc78e734abd747dc6f6f84fca1f95f95
-ms.sourcegitcommit: a97e6d93124433547149fd8a642fcb77e02a75f2
+ms.openlocfilehash: a2b5ec778ef7e9cd5968353b247f117f3019d3be
+ms.sourcegitcommit: 96f82381a17b89f9aef384f760ebf142695a6051
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39519004"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39653279"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -39,7 +39,7 @@ Il existe des filtres d’application découverte de base et avancés. Pour obte
 - **Score de risque** : Permet de filtrer les applications par score de risque pour que vous puissiez vous concentrer uniquement sur les applications très risquées, par exemple. Vous pouvez également remplacer le score de risque défini par Cloud App Security. Pour plus d’informations, consultez [Utilisation du score de risque](risk-score.md).
 - **Facteur de risque de sécurité** : Permet de filtrer en fonction de mesures de sécurité spécifiques (comme le chiffrement au repos, l’authentification multifacteur, etc.).
 - **Utilisation** : Permet de filtrer en fonction des statistiques d’utilisation de cette application, comme les applications avec un nombre supérieur ou inférieur de **chargements de données** que la quantité spécifiée, les applications avec un nombre supérieur ou inférieur **d’utilisateurs** que le nombre spécifié.
-- **Légal** : vous permet de filtrer selon l’ensemble des réglementations et des stratégies qui sont en place pour garantir la protection et la confidentialité des données des utilisateurs de l’application, comme la stratégie de conservation des données, le RGPD et le DMCA.
+- **Facteur de risque légal** : vous permet de filtrer selon l’ensemble des réglementations et des stratégies qui sont en place pour garantir la protection et la confidentialité des données des utilisateurs de l’application, comme la stratégie de conservation des données, les applications cloud prêtes pour le RGPD et le DMCA.
 
 ### <a name="creating-and-managing-custom-app-tags"></a>Création et gestion des balises d’application personnalisées
 
@@ -91,7 +91,7 @@ Cloud App Security vous fournit également des **requêtes suggérées** et vous
 
  - Applications cloud d’entreprise qui ont un chiffrement faible : filtre toutes vos applications découvertes pour afficher uniquement les applications qui sont risquées, car elles ne chiffrent pas les données au repos et ne prennent en charge aucun protocole de chiffrement.
 
-- Prêt pour le RGPD : filtre toutes vos applications découvertes pour afficher uniquement les applications qui sont prêtes pour le RGPD. Étant donné que la conformité au RGPD est une priorité absolue, cette requête vous aide à identifier les applications qui sont prêtes pour le RGPD et à atténuer les menaces en évaluant le risque de celles qui ne le sont pas.
+- Applications cloud prêtes pour le RGPD : filtre toutes vos applications découvertes pour afficher uniquement les applications qui sont prêtes pour le RGPD. Étant donné que la conformité au RGPD est une priorité absolue, cette requête vous aide à identifier les applications qui sont prêtes pour le RGPD et à atténuer les menaces en évaluant le risque de celles qui ne le sont pas.
  
 ![interroger les applications découvertes](./media/queries-discovered-apps.png)
 
