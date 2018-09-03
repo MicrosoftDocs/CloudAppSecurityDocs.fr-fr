@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/5/2018
+ms.date: 8/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 35a43120-bf67-4cf9-9b48-ebe157dbbd18
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 94b44acb3335df4c1dceaa59308faa9fba20806e
-ms.sourcegitcommit: b4bc20170a97e4fedc47cf67906a13aa0b70bcb6
+ms.openlocfilehash: 4bb0a02b9577470ae35fb79d4cc74b1c6ad48d66
+ms.sourcegitcommit: b439f29dc1d0aa8eec783ba45e3d517722a5ebe0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2018
-ms.locfileid: "39518157"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43016712"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -91,41 +91,25 @@ Le Contrôle d’accès conditionnel aux applications prend actuellement en char
 
 Le contrôle de session est disponible pour tous les navigateurs de toutes les principales plateformes (les applications de bureau et les applications mobiles peuvent aussi être bloquées ou autorisées). Avec l’intégration en mode natif à Azure AD, toutes les applications qui sont configurées avec l’authentification unique SAML dans Azure AD peuvent être prises en charge, notamment les applications proposées suivantes :
 
--   Salesforce
+- AWS
+- Box
+- Concur
+- CornerStone on Demand
+- DocuSign
+- Dropbox
+- Egnyte
+- G Suite
+- GitHub
+- HighQ
+- JIRA/Confluence
+- Salesforce
+- ServiceNow
+- Slack
+- Tableau
+- Workday
+- Workiva
+- Workplace by Facebook
 
--   Box
-
--   G Suite
-
--   Workday
-
--   Slack
-
--   Workplace by Facebook
-
--   ServiceNow
-
--   JIRA/Confluence
-
--   AWS
-
--   Workiva
-
--   CornerStone on Demand
-
--   DocuSign
-
--   HighQ 
-
--   Concur
-
--   Tableau
-
--  Dropbox
-
--  Egnyte
-
--  GitHub
 
 De nouvelles applications sont intégrées au contrôle de session en continu. Si vous êtes intéressé par une application spécifique qui n’est pas mentionnée ici, [envoyez-nous des détails sur l’application](mailto:casfeedback@microsoft.com) et le cas d’utilisation qui vous intéresse et nous l’intégrerons.
 
