@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/05/2018
+ms.date: 8/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,32 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 266af546cd795c3675676b43f0830818af10ebab
-ms.sourcegitcommit: a97e6d93124433547149fd8a642fcb77e02a75f2
+ms.openlocfilehash: 9d64ca397930ba2f93e36c6689e32bda11218486
+ms.sourcegitcommit: b439f29dc1d0aa8eec783ba45e3d517722a5ebe0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39519106"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43017035"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
 
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Nouveautés de Microsoft Cloud App Security
 
+
+## <a name="cloud-app-security-release-130"></a>Cloud App Security version 130
+
+Publication : 22 août 2018
+
+
+- **Nouvelle barre de menus**<br>
+Pour fournir une expérience d’administration plus cohérente entre les produits Microsoft 365 et vous permettre de naviguer plus facilement entre les solutions de sécurité Microsoft, la barre de menus du portail Cloud App Security a été déplacée vers le côté gauche de l’écran. Cette expérience de navigation cohérente vous aide à vous orienter lorsque vous passez d’un portail de sécurité Microsoft à l’autre.
+
+- **Impact sur le score de l’application OAuth**<br>
+Vous pouvez désormais envoyer des commentaires à l’équipe Cloud App Security pour nous indiquer s’il existe une application OAuth découverte dans votre organisation qui semble malveillante. Cette nouvelle fonctionnalité vous permet de faire partie de notre communauté de sécurité et d’améliorer l’analyse et le score de risque de l’application OAuth. Pour plus d’informations, consultez [Gérer les autorisations d’applications](manage-app-permissions.md).
+
+- **Nouveaux analyseurs Cloud Discovery**<br>
+Les analyseurs Cloud Discovery prennent désormais en charge iboss Secure Cloud Gateway et Sophos XG.
 
 
 ## <a name="cloud-app-security-release-129"></a>Cloud App Security version 129

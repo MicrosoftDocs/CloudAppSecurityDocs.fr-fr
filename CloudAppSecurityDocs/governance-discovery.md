@@ -1,27 +1,32 @@
 ---
-title: "Blocage des applications découvertes | Microsoft Docs"
-description: "Cette rubrique décrit la procédure d’exportation de scripts de blocage pour les applications découvertes."
-keywords: 
+title: Blocage des applications découvertes | Microsoft Docs
+description: Cette rubrique décrit la procédure d’exportation de scripts de blocage pour les applications découvertes.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/28/2018
+ms.date: 8/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: e451031e-4764-411a-b366-73a49d4f25df
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f970c293c5a1576db1800adc7870cd6f6088ab64
-ms.sourcegitcommit: 4fdf9ae2e2b189d4efa6a6588898c8d46d0dda70
+ms.openlocfilehash: 394a6db8cc79ab5c52cb6775394f7b939b02f9d5
+ms.sourcegitcommit: b439f29dc1d0aa8eec783ba45e3d517722a5ebe0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43016823"
 ---
+*S’applique à : Microsoft Cloud App Security*
+
+
 ## <a name="govern-discovered-apps"></a>Gouverner les applications découvertes
 
 Une fois que vous avez consulté la liste des applications découvertes dans votre environnement, vous pouvez sécuriser de plusieurs façons l’environnement contre l’utilisation d’applications indésirables.
+
 
 ### <a name="sanctioningunsanctioning-an-app"></a>Approbation/non-approbation d’une application 
 
@@ -30,10 +35,12 @@ Vous avez toujours la possibilité d’utiliser une application non approuvée, 
 
 ![Marquer comme non approuvées](./media/tag-as-unsanctioned.png)  
 
-
 Si vous voulez approuver/ne pas approuver une liste d’applications, cochez les cases des applications que vous voulez gérer, puis sélectionnez l’action appropriée.
 
 Pour interroger une liste d’applications non approuvées, vous pouvez [générer un script de bloc en utilisant les API Cloud App Security](https://mod636914.us.portal.cloudappsecurity.com/api-docs/#generate-block-script).
+
+> [!NOTE]
+> Si votre locataire utilise Zscaler NSS, n’importe quelle application que vous marquez comme non approuvée est automatiquement bloquée par Cloud App Security et les sections suivantes concernant la création de scripts de blocage ne sont pas nécessaires. Pour plus d’informations, consultez [Intégration avec Zscaler](zscaler-integration.md).
 
 ## <a name="export-a-block-script-to-govern-discovered-apps"></a>Exporter un script de blocage pour gouverner les applications découvertes
 

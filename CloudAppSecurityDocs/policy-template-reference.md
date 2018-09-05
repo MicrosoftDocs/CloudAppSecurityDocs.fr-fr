@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/10/2018
+ms.date: 8/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: a6658937-57a2-484a-85cb-5a4cdbeeb002
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: feab5ecc5705fe0d0f43c2b49a15e970c8f54f67
-ms.sourcegitcommit: 41fbc8e235befd240ad7a1eed52339cfafb5d906
+ms.openlocfilehash: 85985a9ad83cff0bb68b3d1fd310e98bbea09181
+ms.sourcegitcommit: 1744ef45b9c5ac8e08b3489bb9b73fc1347587ac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2018
-ms.locfileid: "35251794"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43115724"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -61,7 +61,7 @@ Ceci est la liste des modèles de stratégie qui existent dans Microsoft Cloud A
 |Contrôle partagé|Fichier partagé avec un domaine non autorisé|Alerte quand un fichier est partagé avec un domaine non autorisé (par exemple votre concurrent).|
 |Contrôle partagé|Certificats numériques partagés (extensions de fichier)|Alerte quand un fichier contenant des certificats numériques est partagé publiquement. Utilisez ce modèle afin de régir votre stockage AWS.|
 |Contrôle partagé|Compartiments S3 accessibles publiquement (AWS)|Alerte quand un compartiment AWS S3 est publiquement partagé.|
-|Contrôle partagé|Fichiers obsolètes partagés en externe|Recherche les fichiers partagés en externe qui n’ont pas été ouverts ou modifiés au cours des 6 derniers mois et les supprime de votre lecteur.|
+|Contrôle partagé|Fichiers obsolètes partagés en externe|Rechercher les fichiers partagés en externe qui n’ont pas été ouverts ou modifiés au cours des 6 derniers mois.|
 
 
 

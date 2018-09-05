@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/2/2018
+ms.date: 8/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 1b1dbcc6-472f-43ea-af59-2aa926e3e5a9
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 537f95a46164678e921b5f6b4644d864bea24316
-ms.sourcegitcommit: 9d2a34a2d4145b39d855dd6f596c0fc858b92f9b
+ms.openlocfilehash: 1131a736fa630e9507427267fc9865723d5eaf82
+ms.sourcegitcommit: b439f29dc1d0aa8eec783ba45e3d517722a5ebe0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37340071"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43017052"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -39,6 +39,8 @@ Il est judicieux d’examiner toutes vos alertes et de vous en servir pour modif
    Vous pouvez filtrer les alertes par type d’alerte ou par gravité de façon à traiter d’abord les plus importantes.  
 
    Sélectionnez une alerte spécifique. Selon le type d’alerte dont il s’agit, vous voyez différentes actions que vous pouvez entreprendre avant de résoudre l’alerte.  
+   
+   Vous pouvez filtrer en fonction de l’application : les applications répertoriées sont celles pour lesquelles des activités ont été détectées par Cloud App Security.
 
    Il existe trois types de violations que vous devez traiter quand vous examinez les alertes :  
 

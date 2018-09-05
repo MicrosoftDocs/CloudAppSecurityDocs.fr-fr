@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/11/2018
+ms.date: 8/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 137e0630-5440-4c49-bfe4-48bbc64575e2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 36798d23961f34a0c97fbe6a1547c558668640e6
-ms.sourcegitcommit: 3177ffcbdabbddc6c758e9a1994fb21fde939ffc
+ms.openlocfilehash: f391b886783934a07aa295e882ec845fdf74f149
+ms.sourcegitcommit: b439f29dc1d0aa8eec783ba45e3d517722a5ebe0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35259485"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43016987"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -79,7 +79,7 @@ La page Autorisations d’applications fournit les informations suivantes sur ch
 
 Pour G Suite et Salesforce, vous pouvez révoquer l’autorisation d’une application ou avertir l’utilisateur qu’une autorisation doit être révoquée. 
 
-1. Dans la page Autorisations d’applications, cliquez sur les points de suspension à la fin de la ligne de l’application et sélectionnez **Notifier l’utilisateur**. Par défaut, l’utilisateur est averti de la façon suivante : *Vous avez autorisé l’application Adallom Google Protector à accéder à votre compte G Suite. Cette application est en conflit avec la stratégie de sécurité de votre organisation. Vous devez fournir ou révoquer les autorisations que vous avez attribuées à cette application dans votre compte G Suite. Pour révoquer l’accès à l’application, accédez à : https://security.google.com/settings/security/permissions?hl=en&pli=1 Sélectionnez l’application et cliquez sur « Révoquer l’accès » dans la barre de menu de droite.* Vous pouvez personnaliser le message envoyé.
+1. Dans la page **Autorisations d’applications**, cliquez sur les points de suspension à la fin de la ligne de l’application et sélectionnez **Notifier l’utilisateur**. Par défaut, l’utilisateur est averti de la façon suivante : *Vous avez autorisé l’application Adallom Google Protector à accéder à votre compte G Suite. Cette application est en conflit avec la stratégie de sécurité de votre organisation. Vous devez fournir ou révoquer les autorisations que vous avez attribuées à cette application dans votre compte G Suite. Pour révoquer l’accès à l’application, accédez à : https://security.google.com/settings/security/permissions?hl=en&pli=1 Sélectionnez l’application et cliquez sur « Révoquer l’accès » dans la barre de menu de droite.* Vous pouvez personnaliser le message envoyé.
 2. Vous pouvez également révoquer l’autorisation d’utilisation de l’application pour l’utilisateur en cliquant sur l’icône située à la fin de la ligne de l’application dans le tableau et en sélectionnant **Révoquer l’application**. 
 
    ![révoquer l’application](./media/revoke-app.png)
@@ -92,7 +92,15 @@ Vous pouvez interroger les autorisations d’applications dans la vue **de base*
 
 - Cliquez sur l’icône **Supprimer un filtre** en regard d’un filtre pour le supprimer.
 
+## <a name="send-feedback"></a>Envoyer des commentaires
 
+Vous pouvez envoyer des commentaires à l’équipe Cloud App Security pour nous indiquer s’il existe une application OAuth découverte dans votre organisation qui semble malveillante. Cette nouvelle fonctionnalité vous permet de faire partie de notre communauté de sécurité et d’améliorer l’analyse et le score de risque de l’application OAuth.
+1. Dans la page **Autorisations d’applications**, cliquez sur les points de suspension à la fin de la ligne de l’application et sélectionnez **Signaler l’application**.  
+
+   ![signaler l’application](./media/report-app.png)
+2. Dans l’écran **Signaler cette application**, vous pouvez choisir de signaler l’application comme étant malveillante ou de signaler tout autre problème avec la façon dont Cloud App Security perçoit l’application, par exemple, **Éditeur incorrect** ou **Autorisations incorrectes**. Les données que vous envoyez permettent de mettre à jour le score de risque de l’application, ainsi que d’autres données analytiques sur l’application.
+
+ 
 ## <a name="see-also"></a>Voir aussi  
 [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)   
 

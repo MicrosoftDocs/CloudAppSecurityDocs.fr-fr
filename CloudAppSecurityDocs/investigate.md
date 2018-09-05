@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 8/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: a9b00c2a-2f71-499e-8f57-67e560daedc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0187adc2115e835c246b31c8412a359a4d3e2bc3
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 27d13ace0f278a8191f99e0436c056d90948bf8a
+ms.sourcegitcommit: b439f29dc1d0aa8eec783ba45e3d517722a5ebe0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2018
-ms.locfileid: "31774135"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43016908"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -88,9 +88,7 @@ Le marquage des applications comme approuvées ou non est une étape importante 
     
     -   Vous pouvez également explorer le compte de l’utilisateur en cliquant sur la roue dentée à la fin de la ligne du compte de l’utilisateur et en sélectionnant une action à effectuer, comme **Suspendre l’utilisateur** ou **Supprimer les collaborations d’utilisateur**. Si l’utilisateur a été importé depuis Azure Active Directory, vous pouvez également cliquer sur **Paramètres du compte Azure AD** pour accéder facilement aux fonctionnalités d’administration avancée de l’utilisateur, comme l’administration du groupe, l’authentification multifacteur, l’obtention d’informations sur les connexions de l’utilisateur et la possibilité de bloquer la connexion.
 
-4.  Accédez à **Examiner**, puis sélectionnez une application. Le tableau de bord Application s’ouvre et vous donne des informations. Vous pouvez utiliser les onglets en haut pour vérifier les éléments suivants :  
-
-     ![Tableau de bord des applications](./media/investigate-app.png "examiner l’application")  
+4.  Accédez à **Investiguer**, **Applications connectées**, puis sélectionnez une application. Le tableau de bord Application s’ouvre et vous donne des informations. Vous pouvez utiliser les onglets en haut pour vérifier :  
 
     -   Quels types d’appareils vos utilisateurs utilisent-ils pour se connecter à l’application ?  
 
@@ -105,6 +103,8 @@ Le marquage des applications comme approuvées ou non est une étape importante 
     -   Sont-elles autorisées pour le niveau d’accès auquel elles correspondent ?  
 
     -   Combien d’utilisateurs les ont déployées ? Quelle est la fréquence de ces applications en général ?  
+ 
+    ![Tableau de bord des applications](./media/investigate-app.png "examiner l’application")  
 
 5.  Accédez au **tableau de bord Cloud Discovery** et vérifiez les points suivants :  
 

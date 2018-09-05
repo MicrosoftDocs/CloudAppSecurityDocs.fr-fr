@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 8/22/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 670d5f479d53741d4cd047b9ad9c864e1239d5d8
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 8fe064b9955e0b2b5db5d40f0450c4af63d352b3
+ms.sourcegitcommit: b439f29dc1d0aa8eec783ba45e3d517722a5ebe0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43017004"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -44,9 +45,7 @@ Cette section fournit des instructions pour connecter Microsoft Cloud App Securi
 5. Sous **API**, cliquez sur **Go to APIs overview** (Accéder à la vue d’ensemble des API).  
   
      ![google3](./media/google3.png "google3")  
-  
-6. Sous **API**, désactivez toutes les API répertoriées.  
-      
+   
 7. Cliquez sur **Bibliothèque** et activez les API suivantes (utilisez la ligne de recherche si l’API n’est pas répertoriée dans la liste **Popular APIs** (API populaires)) :  
      
    -   Admin SDK  
@@ -66,7 +65,7 @@ Cette section fournit des instructions pour connecter Microsoft Cloud App Securi
 
 8. Cliquez sur Activer pour chaque API.
      ![activer Google APPI](./media/google-api.png "google-api")  
-9. Vous devriez avoir 5 **API activées**. Veillez à désactiver toutes les autres API :
+9. Vérifiez que les API suivantes sont activées :
   
      ![google, api activées](./media/google5.png "google5")  
   
