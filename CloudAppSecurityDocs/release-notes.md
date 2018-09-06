@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/22/2018
+ms.date: 9/3/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9d64ca397930ba2f93e36c6689e32bda11218486
-ms.sourcegitcommit: b439f29dc1d0aa8eec783ba45e3d517722a5ebe0
+ms.openlocfilehash: c966c33a1ed31c1e5981600750760493133c8493
+ms.sourcegitcommit: 9ae2e002db44ed8a808351cec5eda305e4c0bd92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43017035"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43486449"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -26,6 +26,16 @@ ms.locfileid: "43017035"
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Nouveautés de Microsoft Cloud App Security
 
 
+## <a name="cloud-app-security-release-131"></a>Cloud App Security version 131
+
+Publication : 2 septembre 2018
+
+- **Révoquer automatiquement des autorisations sur les applications OAuth à risque**<br>
+Vous pouvez désormais contrôler à quelles applications OAuth vos utilisateurs ont accès, en révoquant l’autorisation d’application pour les applications OAuth sur Office, Google ou Salesforce. Lorsque vous créez une **stratégie d’autorisation d’application**, vous pouvez maintenant définir la stratégie pour révoquer l’autorisation d’une application. 
+
+- **Analyseur intégré supplémentaire Cloud Discovery pris en charge**<br>Cloud Discovery prend désormais en charge le format de journal Forcepoint Web Security Cloud.
+
+ 
 ## <a name="cloud-app-security-release-130"></a>Cloud App Security version 130
 
 Publication : 22 août 2018
