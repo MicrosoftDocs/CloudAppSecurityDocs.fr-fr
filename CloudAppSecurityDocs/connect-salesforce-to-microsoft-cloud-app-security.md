@@ -1,26 +1,29 @@
 ---
-title: "Connecter Salesforce à Cloud App Security pour la visibilité et le contrôle d’utilisation | Microsoft Docs"
-description: "Cette rubrique fournit des informations sur la connexion de Salesforce à Cloud App Security à l’aide du connecteur API."
-keywords: 
+title: Connecter Salesforce à Cloud App Security pour la visibilité et le contrôle d’utilisation | Microsoft Docs
+description: Cette rubrique fournit des informations sur la connexion de Salesforce à Cloud App Security à l’aide du connecteur API.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
-ms.topic: get-started-article
-ms.prod: 
+ms.date: 4/22/2018
+ms.topic: conceptual
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 776d7589-acdb-4cb6-99a0-3be2f7b6aab2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 81072ab5e45d7a97c8daf89db3c029ee53632f00
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 52b24a6aa80ee3283a5f2f6b96a3b1b51ce07d8b
+ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44143936"
 ---
+*S’applique à : Microsoft Cloud App Security*
+
 # <a name="connect-salesforce-to-microsoft-cloud-app-security"></a>Connecter Salesforce à Microsoft Cloud App Security
-Cette section fournit des instructions pour connecter Cloud App Security à votre compte Salesforce existant à l’aide de l’API du connecteur d’applications.  
+Cette section fournit des instructions pour connecter Microsoft Cloud App Security à votre compte Salesforce existant à l’aide de l’API du connecteur d’applications.  
   
 ## <a name="how-to-connect-salesforce-to-cloud-app-security"></a>Comment connecter Salesforce à Cloud App Security  
   

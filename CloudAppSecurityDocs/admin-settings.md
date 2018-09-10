@@ -1,26 +1,29 @@
 ---
-title: "Définir les préférences d’administration | Microsoft Docs"
-description: "Cet article fournit des instructions sur la définition des préférences d’administration dans Cloud App Security."
-keywords: 
+title: Définir les préférences d’administration | Microsoft Docs
+description: Cet article fournit des instructions sur la définition des préférences d’administration dans Cloud App Security.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/3/2018
-ms.topic: get-started-article
-ms.prod: 
+ms.date: 4/22/2018
+ms.topic: conceptual
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 85cae50d-f571-4907-9600-da4cc187b43b
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: eee24bc5079fd187f5515f96cdba760c507b1465
-ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
+ms.openlocfilehash: 4588924877236b23dc3aa328a0d60863b48341c2
+ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44142746"
 ---
+*S’applique à : Microsoft Cloud App Security*
+
 ##  <a name="Adminsettings"></a> Personnaliser vos paramètres d’administration  
-Pour définir vos préférences en tant qu’administrateur de Cloud App Security, cliquez sur votre nom dans la barre de menus du portail, puis sélectionnez **Paramètres utilisateur** pour définir les paramètres suivants :  
+Pour définir vos préférences en tant qu’administrateur de Microsoft Cloud App Security, cliquez sur votre nom dans la barre de menus du portail, puis sélectionnez **Paramètres utilisateur** pour définir les paramètres suivants :  
   
 1.  Cliquez sur **Paramètres du compte**. Ici, vous pouvez définir et renouveler votre mot de passe pour accéder au portail Cloud App Security.  
   

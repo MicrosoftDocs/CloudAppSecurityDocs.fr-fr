@@ -1,24 +1,28 @@
 ---
 title: Forum Aux Questions sur Cloud App Security | Microsoft Docs
-description: "Cet article fournit les réponses aux questions fréquentes sur Cloud App Security."
-keywords: 
+description: Cet article fournit les réponses aux questions fréquentes sur Cloud App Security.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
-ms.topic: article
-ms.prod: 
+ms.date: 4/22/2018
+ms.topic: conceptual
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 081c2cf4-2750-4546-9490-4b65e87ae48c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: acc80f823431f5f903412b8e984683a3e8f62d34
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: b53a360b743e80c85dcced8dd2bef7eae8c60f36
+ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44144004"
 ---
+*S’applique à : Microsoft Cloud App Security*
+
+
 # <a name="frequently-asked-questions"></a>Forum aux questions
 
 ## <a name="what-kind-of-permissions-do-i-need-to-have-in-order-to-access-cloud-app-security"></a>Quels types d’autorisations dois-je avoir pour accéder à Cloud App Security ?

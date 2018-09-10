@@ -1,24 +1,28 @@
 ---
-title: "Enrichir les données Cloud App Security Discovery avec des noms d’utilisateur Azure AD | Microsoft Docs"
-description: "Cet article fournit des informations sur la façon d’enrichir les données Cloud App Security Discovery avec des noms d’utilisateur Azure AD."
-keywords: 
+title: Enrichir les données Cloud App Security Discovery avec des noms d’utilisateur Azure AD | Microsoft Docs
+description: Cet article fournit des informations sur la façon d’enrichir les données Cloud App Security Discovery avec des noms d’utilisateur Azure AD.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/3/2018
-ms.topic: article
-ms.prod: 
+ms.date: 4/22/2018
+ms.topic: conceptual
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 45295c2c-3e4d-4482-bf95-2e47072f9236
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 88bc530ec33f03da650dba558123ac1e0c217183
-ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
+ms.openlocfilehash: 0bf959510ac5daf87c421ed9977479a7e037d6d7
+ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44144582"
 ---
+*S’applique à : Microsoft Cloud App Security*
+
+
 # <a name="cloud-discovery-enrichment"></a>Enrichissement de Cloud Discovery
 
 Les données Cloud Discovery peuvent maintenant être enrichies avec des données de nom d’utilisateur Azure Active Directory. Quand vous activez cette fonctionnalité, le nom d’utilisateur reçu dans les journaux de trafic de découverte est mis en correspondance et remplacé par le nom d’utilisateur Azure AD, ce qui active les fonctionnalités suivantes :

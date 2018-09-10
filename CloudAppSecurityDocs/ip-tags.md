@@ -5,20 +5,24 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/18/2018
-ms.topic: get-started-article
+ms.date: 4/22/2018
+ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.assetid: bbf54f66-4ce2-428c-afc8-b5a64277014f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f066e17f8b4f2e54a65abb5c58095c0917e4e985
-ms.sourcegitcommit: a074880eed43cf6e5ae95807640e99655b24d9be
+ms.openlocfilehash: a25a8aff6a945e8500405a23fca4e55150c114af
+ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44144361"
 ---
+*S’applique à : Microsoft Cloud App Security*
+ 
+ 
 #  <a name="IPtagsandRanges"></a> Utilisation des balises et des plages d’adresses IP
 
 Pour identifier facilement les adresses IP connues, telles que les adresses IP physiques de votre bureau, vous devez définir des plages d’adresses IP qui vous permettent de marquer et de classer les adresses de manière appropriée, ainsi que de personnaliser la façon dont les journaux et les alertes sont affichés et examinés. <br></br>  

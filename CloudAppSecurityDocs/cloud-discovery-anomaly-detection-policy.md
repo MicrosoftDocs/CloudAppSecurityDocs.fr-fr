@@ -1,24 +1,28 @@
 ---
-title: "Créer une stratégie de détection des anomalies Cloud Discovery | Microsoft Docs"
-description: "Cette rubrique fournit des informations sur l’utilisation des stratégies de détection des anomalies Cloud Discovery."
-keywords: 
+title: Créer une stratégie de détection des anomalies Cloud Discovery | Microsoft Docs
+description: Cette rubrique fournit des informations sur l’utilisation des stratégies de détection des anomalies Cloud Discovery.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
-ms.topic: article
-ms.prod: 
+ms.date: 4/22/2018
+ms.topic: conceptual
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: eaf73af0-7610-4903-b656-8d90b1d2b18c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 408b136764fd5e16f47772fb73ff6588d9b5bc8e
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 016d2862e122da72330fd98a61194442b71c7892
+ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44144242"
 ---
+*S’applique à : Microsoft Cloud App Security*
+
+
 # <a name="cloud-discovery-anomaly-detection-policy"></a>Stratégie de détection des anomalies de Cloud Discovery
 Cet article fournit des informations de référence sur les stratégies, donne une explication de chaque type de stratégie et décrit les champs que vous pouvez configurer pour chacune d’elle.  
   
@@ -33,7 +37,8 @@ Pour chaque stratégie, définissez les paramètres suivants :
  
 2. Spécifiez un **Nom de stratégie** et une **Description**.  
 
-3. Créez un filtre pour les applications que vous voulez surveiller en cliquant sur **Ajouter un filtre**. Vous pouvez sélectionner une application spécifique, une **Catégorie** d’applications ou filtrer par **Nom**, par **Domaine et par **Facteur de risque**, et cliquer sur **Enregistrer**.
+3. Créez un filtre pour les applications que vous voulez surveiller en cliquant sur <strong>Ajouter un filtre</strong>. 
+   Vous pouvez sélectionner une application spécifique, une <strong>Catégorie</strong> d’applications ou filtrer par <strong>Nom</strong>, par <strong>Domaine et par **Facteur de risque</strong>, et cliquer sur <strong>Enregistrer</strong>.
 
 4. Sous **Appliquer à**, définissez comment vous voulez que l’utilisation soit filtrée. L’utilisation en cours de surveillance peut être filtrée de deux manières différentes :  
   

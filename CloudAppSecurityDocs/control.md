@@ -1,24 +1,28 @@
 ---
-title: "Comment utiliser des actions de gouvernance pour contrôler l’utilisation des applications cloud | Microsoft Docs"
-description: "Cet article fournit des informations sur les actions de gouvernance à entreprendre dans Cloud App Security pour contrôler l’usage des applications cloud de votre organisation."
-keywords: 
+title: Comment utiliser des actions de gouvernance pour contrôler l’utilisation des applications cloud | Microsoft Docs
+description: Cet article fournit des informations sur les actions de gouvernance à entreprendre dans Cloud App Security pour contrôler l’usage des applications cloud de votre organisation.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
-ms.topic: article
-ms.prod: 
+ms.date: 4/22/2018
+ms.topic: conceptual
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: bc11bbfe-ec6c-458c-8302-8112c383199d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b7586c32819f106e563eddf5bcda2af805f89310
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: b6d426b1b59dc8f62322d404b1cd18e829611ba6
+ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44143970"
 ---
+*S’applique à : Microsoft Cloud App Security*
+
+
 # <a name="control"></a>Contrôler
 Vous pouvez appliquer des actions de gouvernance aux fichiers des utilisateurs dans tout votre environnement cloud. Après avoir soigneusement examiné et étudié votre cloud, vous pouvez utiliser des actions de gouvernance pour protéger votre organisation.  
 
@@ -74,13 +78,13 @@ Cloud App Security vous permet d’introduire vos migrations en vous faisant sav
 ### <a name="migrate-your-users-to-a-new-app"></a>Migrer vos utilisateurs vers une nouvelle application  
 Imaginons le scénario suivant : vous venez d’acheter Office 365 et vous voulez que tous les utilisateurs de votre organisation arrêtent d’utiliser toutes les autres applications de stockage cloud pour commencer à utiliser OneDrive. Voici comment vous pouvez procéder :  
 
-1.   Accédez à votre **tableau de bord Cloud Discovery** et sous **Catégories**, filtrez les applications par **Stockage cloud**. Ensuite, triez les résultats par **Utilisateurs** ou **Adresses IP** et déterminez quelle est l’application la plus populaire.  
+1. Accédez à votre **tableau de bord Cloud Discovery** et sous **Catégories**, filtrez les applications par **Stockage cloud**. Ensuite, triez les résultats par **Utilisateurs** ou **Adresses IP** et déterminez quelle est l’application la plus populaire.  
 
-2.   Vous pouvez voir quels utilisateurs utilisent d’autres applications. Vous pouvez également explorer ces applications de façon détaillée et avertir les utilisateurs que vous voulez qu’ils migrent vers OneDrive, comme suit :
+2. Vous pouvez voir quels utilisateurs utilisent d’autres applications. Vous pouvez également explorer ces applications de façon détaillée et avertir les utilisateurs que vous voulez qu’ils migrent vers OneDrive, comme suit :
 
-    1.  Dans votre **tableau de bord Cloud Discovery**, choisissez **Dropbox**, puis choisissez l’onglet **Adresse IP** ou **Utilisateurs**.  
+   1.  Dans votre **tableau de bord Cloud Discovery**, choisissez **Dropbox**, puis choisissez l’onglet **Adresse IP** ou **Utilisateurs**.  
 
-    2.  Choisissez la flèche ![Icône de flèche](./media/arrow-icon.png "icône de flèche") et choisissez **Exporter**.  
+   2.  Choisissez la flèche ![Icône de flèche](./media/arrow-icon.png "icône de flèche") et choisissez **Exporter**.  
 
 ### <a name="find-more-secure-alternatives"></a>Trouver des alternatives plus sécurisées  
 Le catalogue de services Cloud App Security peut vous aider à trouver des alternatives satisfaisantes pour votre organisation et ainsi éviter les applications risquées auxquelles vos utilisateurs peuvent avoir recours.  

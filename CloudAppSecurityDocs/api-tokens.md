@@ -1,27 +1,31 @@
 ---
-title: "Gestion des jetons d’API dans Cloud App Security | Microsoft Docs"
-description: "Cette rubrique fournit des informations sur la génération de jetons d’API pour Cloud App Security."
-keywords: 
+title: Gestion des jetons d’API dans Cloud App Security | Microsoft Docs
+description: Cette rubrique fournit des informations sur la génération de jetons d’API pour Cloud App Security.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
-ms.topic: article
-ms.prod: 
+ms.date: 4/22/2018
+ms.topic: conceptual
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4f5e6b1e-6b2c-4358-98f0-945e2993d5fe
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a7ae478fcd85bdb16a1783886f274a8ab81462bb
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: e7ae8a06cc54eaa274b951a0762a589437c13ee0
+ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44142406"
 ---
+*S’applique à : Microsoft Cloud App Security*
+
+
 # <a name="api-tokens"></a>Jetons d’API
     
-L’API Cloud App Security fournit l’accès par programmation à Cloud App Security via des points de terminaison API REST. Les applications peuvent utiliser l’API pour effectuer des opérations de lecture et de mise à jour sur les objets et les données Cloud App Security. Par exemple, l’API Cloud App Security prend en charge les opérations courantes suivantes pour un objet utilisateur :
+L’API Microsoft Cloud App Security fournit l’accès par programmation à Cloud App Security par le biais de points de terminaison API REST. Les applications peuvent utiliser l’API pour effectuer des opérations de lecture et de mise à jour sur les objets et les données Cloud App Security. Par exemple, l’API Cloud App Security prend en charge les opérations courantes suivantes pour un objet utilisateur :
 
 - Charger des fichiers journaux pour Cloud Discovery
 - Générer un script de blocage
@@ -40,18 +44,18 @@ L’onglet Jetons d’API vous aide à gérer tous les jetons d’API de votre l
 1. Dans le menu **Paramètres**, sélectionnez **Extensions de sécurité**, puis **Jetons d’API**.
 
 2. Cliquez sur l’icône plus, **Générer un nouveau jeton** et indiquez un nom pour identifier le jeton plus tard, puis cliquez sur **Suivant**.
-![Cloud App Security génère un jeton d’API](./media/api-token-gen.png)
+   ![Cloud App Security génère un jeton d’API](./media/api-token-gen.png)
 
 3. Copiez la valeur du jeton et enregistrez-la quelque part pour pouvoir la récupérer (si vous la perdez, vous devez regénérer le jeton). Le jeton hérite des privilèges de l’utilisateur qui l’émet. Par exemple, un lecteur Sécurité ne peut pas émettre de jeton pouvant modifier des données.
 
 4. Vous pouvez filtrer les jetons par état : Actif, Inactif ou Généré. 
 
-  - L’état Généré désigne les jetons qui n’ont jamais été utilisés. 
-  - Les jetons actifs sont ceux qui ont été générés et utilisés au cours des sept derniers jours. 
-  - Les jetons inactifs sont ceux qui ont été utilisés, mais n’ont pas eu d’activité au cours des sept derniers jours.
+   - L’état Généré désigne les jetons qui n’ont jamais été utilisés. 
+   - Les jetons actifs sont ceux qui ont été générés et utilisés au cours des sept derniers jours. 
+   - Les jetons inactifs sont ceux qui ont été utilisés, mais n’ont pas eu d’activité au cours des sept derniers jours.
 5. Après avoir généré un nouveau jeton, vous recevrez une nouvelle URL à utiliser pour accéder au portail Cloud App Security. 
 
- ![Jeton d’API Cloud App Security](./media/generate-api-token.png)
+   ![Jeton d’API Cloud App Security](./media/generate-api-token.png)
 
 L’URL du portail générique continue de fonctionner, mais est beaucoup plus lente que l’URL personnalisée fournie avec votre jeton. Si vous oubliez l’URL, vous pouvez la voir en accédant à l’icône **?** du menu et en sélectionnant **À propos de**.
 
