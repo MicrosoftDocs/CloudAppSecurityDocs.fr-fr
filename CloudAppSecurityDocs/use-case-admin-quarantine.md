@@ -6,19 +6,19 @@ author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 4/22/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.assetid: 3fc04cfb-ad4c-4ac2-980a-ee9f4c740d88
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 38faca2d4d8da2802ca0043bf53564d840645523
-ms.sourcegitcommit: 1744ef45b9c5ac8e08b3489bb9b73fc1347587ac
+ms.openlocfilehash: b61244a1c611355cf5ce9b0ca4f073c1ebccb765
+ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "31773091"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44144038"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -51,26 +51,28 @@ Les [stratégies de fichier](data-protection-policies.md) sont un excellent outi
    1. Le fichier d’origine est déplacé vers le dossier de quarantaine administrateur que vous définissez.
    2. Le fichier d'origine est supprimé.
    3. Un fichier résiduel est chargé dans l’emplacement du fichier d’origine.
-
+      
       ![fichier résiduel mis en quarantaine](./media/quarantine-tombstone.png)
-
+      
    4. L’utilisateur a accès uniquement au fichier résiduel, où se trouvent les instructions personnalisées fournies par le service informatique et l’ID de corrélation permettant de contacter le service informatique pour libérer le fichier.
 
 4. Quand vous recevez l’alerte qu’un fichier a été mis en quarantaine, recherchez le fichier dans la page **Alertes** de Cloud App Security :
-
+   
    ![alertes de mise en quarantaine](./media/quarantine-alerts.png)
- 
+   
 5. Ainsi que dans le **Rapport de stratégie** sous l’onglet **Mis en quarantaine** :
-
+   
    ![rapport de mise en quarantaine](./media/quarantine-report.png)
     
 6. Une fois qu’un fichier est en quarantaine, utilisez le processus suivant pour corriger la situation de menace :
-       
+    
     1. Examinez le fichier dans le dossier de quarantaine sur SharePoint Online.
-    3. Vous pouvez également consulter les journaux d’audit pour un examen approfondi des propriétés du fichier.
-    4. Si le fichier va à l’encontre de la stratégie d’entreprise, exécutez le processus de réponse aux incidents applicable dans l’organisation.
-    5. Si le fichier est inoffensif, vous pouvez le restaurer à partir du dossier de quarantaine, ce qui entraîne la libération du fichier d’origine. Autrement dit, il est copié dans l’emplacement d’origine, le fichier résiduel est supprimé et l’utilisateur peut accéder au fichier.
+    2. Vous pouvez également consulter les journaux d’audit pour un examen approfondi des propriétés du fichier.
+    3. Si le fichier va à l’encontre de la stratégie d’entreprise, exécutez le processus de réponse aux incidents applicable dans l’organisation.
+    4. Si le fichier est inoffensif, vous pouvez le restaurer à partir du dossier de quarantaine, ce qui entraîne la libération du fichier d’origine. Autrement dit, il est copié dans l’emplacement d’origine, le fichier résiduel est supprimé et l’utilisateur peut accéder au fichier.
+       
        ![restauration après quarantaine](./media/quarantine-restore.png)
+       
 7. Une fois que vous avez validé que la stratégie s’exécute correctement, vous pouvez utiliser les actions de gouvernance automatiques de la stratégie pour éviter d’autres fuites et appliquer automatiquement la mise en quarantaine administrateur quand la stratégie trouve une correspondance.
 
 > [!NOTE]

@@ -1,35 +1,35 @@
 ---
-title: "Utilisation du moteur RegEx pour les stratégies d’inspection du contenu | Microsoft Docs"
-description: "Cette rubrique fournit des instructions d’utilisation du moteur RegEx pour la correspondance au modèle dans les stratégies Cloud App Security."
-keywords: 
+title: Utilisation du moteur RegEx pour les stratégies d’inspection du contenu | Microsoft Docs
+description: Cette rubrique fournit des instructions d’utilisation du moteur RegEx pour la correspondance au modèle dans les stratégies Cloud App Security.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
-ms.topic: article
-ms.prod: 
+ms.date: 4/22/2018
+ms.topic: conceptual
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: dc8b87e5-e6c1-4a65-ab8c-067fb527fce4
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 1f6ee1a96a7f65c903fe6e0978fd9a31d850697e
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 52a18f28382ffefca7785419fb67e8b0f2de66df
+ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44143243"
 ---
+*S’applique à : Microsoft Cloud App Security*
+
+
 # <a name="working-with-the-regex-engine"></a>En utilisant l’inspection du contenu
  
-Les stratégies d’inspection du contenu de Cloud App Security tirent parti de RegEx pour la correspondance au modèle. L’inspection du contenu peut être appliquée dans le cadre des stratégies de fichier. Pour tester des expressions régulières, vous pouvez utiliser les sites web suivants :  
+Les stratégies d’inspection du contenu de Microsoft Cloud App Security tirent parti de RegEx pour la correspondance au modèle. L’inspection du contenu peut être appliquée dans le cadre des stratégies de fichier. Pour tester des expressions régulières, vous pouvez utiliser les sites web suivants :  
   
 -   [http://regexpal.com/](http://regexpal.com/)  
   
      Veillez à sélectionner **Casse non prise en compte**.  
-
--   [https://www.debuggex.com/](https://www.debuggex.com/)
-
--   [https://extendsclass.com/regex-tester.html](https://extendsclass.com/regex-tester.html)
   
 -   [https://regex101.com/](https://regex101.com/)  
   
@@ -49,20 +49,20 @@ Les limitations suivantes sont imposées sur les expressions régulières person
   
      Au lieu de *, utilisez {0,9}  
   
-     Au lieu de +, utilisez {1,9}  
+     Au lieu de +, utilisez {1,9}  
   
 -   Références arrière non autorisées : \\<nombre\> ou \k\<nom>  
   
 Exemples d’expressions  
   
-||||  
-|-|-|-|  
-|**Expression régulière**|**Données**|**Correspondances**|  
-|Colou?r (?:black&#124;blue&#124;white)|Noir<br /><br /> Blanc<br /><br /> Rouge|Oui<br /><br /> Oui<br /><br /> Non|  
-|[a-z0-9]{1,9}@[a-z0-9]{1,9}\\.[a-z]{2,3}|Some1@abc.com<br /><br /> user@host.org<br /><br /> @bad.com|Oui<br /><br /> Oui<br /><br /> Non|  
-|20\d{2}-(?:0[1-9]&#124;1[0-2])-(?:[0-2][0-9]&#124;30&#124;31)|2015-12-31<br /><br /> 2015-01-09<br /><br /> 1999-12-31|Oui<br /><br /> Oui<br /><br /> Non|  
-|d.n't\s{0,10}c.r.|Don’t     care<br /><br /> D!n'tcor0<br /><br /> Doesn’t care|Oui<br /><br /> Oui<br /><br /> Non|  
- 
+
+|                                                               |                                                               |                                    |
+|---------------------------------------------------------------|---------------------------------------------------------------|------------------------------------|
+|              <strong>Expression régulière</strong>              |                     <strong>Données</strong>                     |      <strong>Correspondances</strong>      |
+|            Colou?r (?:black&#124;blue&#124;white)             |   Noir<br /><br /> Blanc<br /><br /> Rouge   | Oui<br /><br /> Oui<br /><br /> Non |
+|           [a-z0-9]{1,9}@[a-z0-9]{1,9}\\.[a-z]{2,3}            | Some1@abc.com<br /><br /> user@host.org<br /><br /> @bad.com  | Oui<br /><br /> Oui<br /><br /> Non |
+| 20\d{2}-(?:0[1-9]&#124;1[0-2])-(?:[0-2][0-9]&#124;30&#124;31) |   2015-12-31<br /><br /> 2015-01-09<br /><br /> 1999-12-31    | Oui<br /><br /> Oui<br /><br /> Non |
+|                       d.n't\s{0,10}c.r.                       | Don’t     care<br /><br /> D!n'tcor0<br /><br /> Doesn’t care | Oui<br /><br /> Oui<br /><br /> Non |
 
 ## <a name="see-also"></a>Voir aussi  
 [Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)   
