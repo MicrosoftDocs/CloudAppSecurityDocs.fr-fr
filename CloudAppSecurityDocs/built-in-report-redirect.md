@@ -8,17 +8,17 @@ manager: mbaldwin
 ms.date: 4/22/2018
 ms.topic: conceptual
 ms.prod: ''
-ms.app: cloud-app-security
+ms.service: cloud-app-security
 ms.technology: ''
 ms.assetid: a9660e5b-d5bd-4a32-8cb9-0de70af6f1e9
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c988ffd83a377927eddb025696778a8070e3a3de
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 11a29a2bece001aa665546b74055de552985c578
+ms.sourcegitcommit: e500101377562f4432a5a3c21b97e67a8b788e88
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144106"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46563158"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
