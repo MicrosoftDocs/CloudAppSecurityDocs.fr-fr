@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: ab9bc377-d2f5-4f4c-a419-f1728a15d1c7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0735a00693c1f744867d577ae46e1709b4f24cc9
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 9d86355440c92ab832257de1876be5653ae1db8d
+ms.sourcegitcommit: 13bdf7cc2df122d42e6d66ce2ffb58de3796accd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144208"
+ms.lasthandoff: 09/16/2018
+ms.locfileid: "45683381"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -74,8 +74,11 @@ Cette détection exploite la capacité de Cloud App Security à surveiller le co
 - Cette détection identifie que des utilisateurs étaient actifs à partir d’une adresse IP qui a été identifiée comme à risque par Microsoft Threat Intelligence. Ces adresses IP sont impliquées dans des activités malveillantes, comme Botnet C&C, et peuvent être le signe de compte compromis. Cette détection s’appuie sur un algorithme d’apprentissage automatique qui réduit les « faux positifs », comme les adresses IP mal balisées qui sont couramment utilisées par les utilisateurs de l’organisation.
 
 
-**Activités inhabituelles (par utilisateur)**
+**Règles concernant les e-mails suspects**
 
+- Cette détection recherche les règles de transfert des e-mails suspects, par exemple, si un utilisateur a créé une règle de boîte de réception assurant le transfert d’une copie de tous les e-mails à une adresse externe. 
+
+**Activités inhabituelles (par utilisateur)**<br>
 Ces détections identifient les utilisateurs dans les cas suivants :
 
  - Plusieurs activités inhabituelles de téléchargement de fichiers
