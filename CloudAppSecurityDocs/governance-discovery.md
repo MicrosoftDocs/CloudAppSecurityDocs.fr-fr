@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/22/2018
+ms.date: 10/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e451031e-4764-411a-b366-73a49d4f25df
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e6976c39a644fe96f1d9ec431df08c9737026ffd
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: e0e616914ce44ca28938298a5a0f3951b83454dc
+ms.sourcegitcommit: 53a1c990ff06674c26563a9ebcb1979818c3c063
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143037"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881786"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -37,7 +37,7 @@ Vous avez toujours la possibilité d’utiliser une application non approuvée, 
 
 Si vous voulez approuver/ne pas approuver une liste d’applications, cochez les cases des applications que vous voulez gérer, puis sélectionnez l’action appropriée.
 
-Pour interroger une liste d’applications non approuvées, vous pouvez [générer un script de bloc en utilisant les API Cloud App Security](https://mod636914.us.portal.cloudappsecurity.com/api-docs/#generate-block-script).
+Pour interroger une liste d’applications non approuvées, vous pouvez [générer un script de bloc en utilisant les API Cloud App Security](https://us.portal.cloudappsecurity.com/api-docs/#generate-block-script).
 
 > [!NOTE]
 > Si votre locataire utilise Zscaler NSS, n’importe quelle application que vous marquez comme non approuvée est automatiquement bloquée par Cloud App Security et les sections suivantes concernant la création de scripts de blocage ne sont pas nécessaires. Pour plus d’informations, consultez [Intégration avec Zscaler](zscaler-integration.md).

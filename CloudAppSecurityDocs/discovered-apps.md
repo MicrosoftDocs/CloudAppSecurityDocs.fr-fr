@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/6/2018
+ms.date: 10/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 476906fe636c6d7618344bcb7c0aadbc979a6366
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 0f5bdc1459b14442dfc8db45e4b0001c04add80f
+ms.sourcegitcommit: 53a1c990ff06674c26563a9ebcb1979818c3c063
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144225"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881854"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -60,7 +60,7 @@ Cloud Discovery vous permet d’analyser de manière encore plus approfondie l�
      
 Vous pouvez par exemple effectuer la distinction entre différents sites SharePoint.
 
-Cette fonctionnalité est prise en charge uniquement dans les pare-feu et les proxys qui contiennent des données d’URL cibles. Consultez la liste des appliances prises en charge dans [Pare-feu et proxys pris en charge](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
+Cette fonctionnalité est prise en charge uniquement dans les pare-feu et les proxys qui contiennent des données d’URL cibles. Consultez la liste des appliances prises en charge dans [Pare-feu et proxys pris en charge](create-snapshot-cloud-discovery-reports.md#supported-firewalls-and-proxies).
 
  ![informations sur les sous-domaines](./media/discovery-domains.png) 
 
