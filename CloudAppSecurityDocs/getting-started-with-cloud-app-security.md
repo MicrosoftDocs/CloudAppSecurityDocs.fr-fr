@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: cc2099958c64448931c1211fa9a5fe76d82f1422
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 066618c4e1096df0436a3b1bd40eb2563a35ae59
+ms.sourcegitcommit: c80c584c444b12dc8c788208cf973b46192b0cf0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144378"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49072852"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -61,24 +61,7 @@ Vous pouvez également accéder au portail par le biais du **Centre d’administ
 
  
 
-### <a name="step-1-set-up-cloud-discoveryset-up-cloud-discoverymd"></a>Étape 1. [Configurer Cloud Discovery](set-up-cloud-discovery.md).
-Tâche obligatoire : Charger les journaux de trafic **Pour créer un rapport Cloud Discovery continu**
-
- 1. Dans la roue dentée des paramètres, sélectionnez **Paramètres Cloud Discovery**.
- 2. Choisissez **Chargement automatique des journaux**.
- 3. Sous l’onglet **Sources de données**, ajoutez vos sources.
- 4. Sous l’onglet **Collecteurs de journaux**, configurez le collecteur de journaux.
- 
-**Pour créer un rapport d’instantané Cloud Discovery**
-
- 1. Accédez à **Découvrir** > **Rapport d’instantané** et suivez les étapes indiquées.
-
-**Pourquoi configurer les rapports Cloud Discovery ?**
-Obtenir une visibilité sur l’informatique fantôme dans votre organisation est critique.
-Une fois vos journaux analysés, vous pouvez facilement découvrir quelles applications cloud sont utilisées, par qui et sur quels appareils.
-
-
-### <a name="step-2-set-instant-visibility-protection-and-governance-actions-for-your-appsenable-instant-visibility-protection-and-governance-actions-for-your-appsmd"></a>Étape 2. [Définissez une visibilité instantanée, une protection et des actions de gouvernance pour vos applications](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+### <a name="step-1-set-instant-visibility-protection-and-governance-actions-for-your-appsenable-instant-visibility-protection-and-governance-actions-for-your-appsmd"></a>Étape 1. [Définissez une visibilité instantanée, une protection et des actions de gouvernance pour vos applications](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 Tâche obligatoire : Connecter des applications
 
 1. Dans la roue dentée des paramètres, sélectionnez **Connecteurs d’application**.
@@ -89,7 +72,7 @@ Tâche obligatoire : Connecter des applications
 Après avoir connecté une application, vous pouvez obtenir une visibilité plus approfondie et ainsi examiner les activités, les fichiers et les comptes pour les applications de votre environnement cloud.
 
 
-### <a name="step-3-control-cloud-apps-with-policiescontrol-cloud-apps-with-policiesmd"></a>Étape 3. [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md).
+### <a name="step-2-control-cloud-apps-with-policiescontrol-cloud-apps-with-policiesmd"></a>Étape 2. [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md).
 Tâche obligatoire : Créer des stratégies
 
 **Pour créer des stratégies**
@@ -103,6 +86,27 @@ Tâche obligatoire : Créer des stratégies
 **Comment les stratégies peuvent-elles aider votre organisation ?**
 Vous pouvez utiliser des stratégies pour surveiller les tendances, identifier les menaces à la sécurité, et générer des alertes et des rapports personnalisés. Avec les stratégies, vous pouvez créer des actions de gouvernance, et définir une protection contre la perte de données et des contrôles sur les partages de fichiers.
 
+
+### <a name="step-3-set-up-cloud-discoveryset-up-cloud-discoverymd"></a>Étape 3. [Configurer Cloud Discovery](set-up-cloud-discovery.md).
+
+Tâche obligatoire : activer Cloud App Security pour afficher votre utilisation d’applications cloud
+
+1. [Effectuez une intégration à Windows Defender ATP](wdatp-integration.md) pour activer automatiquement Cloud App Security afin de superviser vos appareils Windows 10 à l’intérieur et en dehors de votre entreprise.
+2. Si vous utilisez [Zscaler, intégrez](zscaler-integration.md)-le à Cloud App Security.
+3. Pour obtenir une couverture complète, créez un rapport Cloud Discovery continu.
+
+   1. Dans la roue dentée des paramètres, sélectionnez **Paramètres Cloud Discovery**.
+   2. Choisissez **Chargement automatique des journaux**.
+   3. Sous l’onglet **Sources de données**, ajoutez vos sources.
+   4. Sous l’onglet **Collecteurs de journaux**, configurez le collecteur de journaux.
+ 
+**Pour créer un rapport d’instantané Cloud Discovery**
+
+ Accédez à **Découvrir** > **Rapport d’instantané** et suivez les étapes indiquées.
+
+**Pourquoi configurer les rapports Cloud Discovery ?**
+Obtenir une visibilité sur l’informatique fantôme dans votre organisation est critique.
+Une fois vos journaux analysés, vous pouvez facilement découvrir quelles applications cloud sont utilisées, par qui et sur quels appareils.
 
 ### <a name="step-4-personalize-your-experiencemail-settingsmd"></a>Étape 4. [Personnaliser votre expérience](mail-settings.md).
 Tâche recommandée : Ajouter les détails de votre organisation

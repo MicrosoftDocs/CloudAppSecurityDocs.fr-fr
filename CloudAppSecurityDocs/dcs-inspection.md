@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/1/2018
+ms.date: 9/21/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: bf25d1e6-e5dc-449f-b50e-1cd4a21b6d3d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9d3abbd87822d97b0c72f20ff42f3aa18b6e57db
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 46f948064bfea4aa921fd5b269f6576ec0f75d97
+ms.sourcegitcommit: da651fb36d26d0dfe796b988e86205f41f7dc5de
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143358"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48251469"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -26,8 +26,7 @@ ms.locfileid: "44143358"
 
 # <a name="microsoft-data-classification-services-integration"></a>Intégration du service de classification des données Microsoft
 
-Microsoft Cloud App Security vous permet d’utiliser le service de classification des données Microsoft en mode natif pour classer les fichiers dans vos applications cloud.
-Le service de classification des données de Microsoft fournit une expérience de protection unifiée sur Office 365, Azure Information Protection et Microsoft Cloud App Security. Il vous permet ainsi d'étendre vos efforts de classification des données aux applications cloud tierces protégées par Microsoft Cloud App Security, en s’appuyant sur les décisions que vous avez déjà prises et d'un nombre encore plus grand d'applications.
+Microsoft Cloud App Security vous permet d’utiliser le service de classification des données Microsoft en mode natif pour classer les fichiers dans vos applications cloud. Le service de classification des données de Microsoft fournit une expérience de protection unifiée sur Office 365, Azure Information Protection et Microsoft Cloud App Security. Il vous permet ainsi d'étendre vos efforts de classification des données aux applications cloud tierces protégées par Microsoft Cloud App Security, en s’appuyant sur les décisions que vous avez déjà prises dans un nombre encore plus grand d'applications.
 
 >[!NOTE]
 > Cette fonctionnalité est actuellement uniquement disponible aux États-Unis et en Europe (à l’exclusion de la France).

@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 745df28a-654c-4abf-9c90-203841169f90
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f241033fc56cb1c9adea4cb2c9c8facd95c82d73
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 6614c845fad94880883dccff14f5f7f9d110dfa1
+ms.sourcegitcommit: da651fb36d26d0dfe796b988e86205f41f7dc5de
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144497"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48251402"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -53,7 +53,7 @@ Par exemple, vous pouvez décider que pour les appareils non gérés ou pour les
 
 Les stratégies d’accès conditionnel Azure Active Directory et les stratégies de session Cloud App Security travaillent conjointement pour examiner chaque session utilisateur et prendre des décisions stratégiques pour chaque application. Pour configurer une stratégie d’accès conditionnel dans Azure AD, procédez comme suit :
 
-1. Configurez une [stratégie d’accès conditionnel Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) avec des attributions pour l’utilisateur ou le groupe d’utilisateurs et l’application SAML que vous souhaitez contrôler avec le Contrôle d’accès conditionnel aux applications. 
+1. Configurez une [stratégie d’accès conditionnel Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) avec des attributions pour l’utilisateur ou le groupe d’utilisateurs et l’application que vous souhaitez contrôler avec le contrôle d’application par accès conditionnel. 
 
    > [!NOTE]
    > Seules les applications [déployées avec le Contrôle d’accès conditionnel aux applications](proxy-deployment-aad.md) sont concernées par cette stratégie.
@@ -142,7 +142,7 @@ Pour télécharger le journal exporté :
 
 ## Bloquer tous les téléchargements <a name="block-download"></a>
 
-Quand la valeur **Bloquer** est définie sur **Action** à prendre dans la stratégie de session de Cloud App Security, le Contrôle d’accès conditionnel aux applications empêche un utilisateur de télécharger un fichier conformément aux filtres de fichiers de la stratégie. Un événement de téléchargement est reconnu par Microsoft Cloud App Security pour chaque application SAML et lorsqu’un utilisateur lance cet événement, le Contrôle d’accès conditionnel aux applications intervient en temps réel pour l’empêcher de s’exécuter. À la réception d’un signal de téléchargement par un utilisateur, le Contrôle d’accès conditionnel aux applications renvoie un message **Téléchargement restreint** à l’utilisateur et remplace le fichier téléchargé par un fichier texte qui contient un message personnalisable adressé à l’utilisateur, que vous pouvez configurer à partir de la stratégie de session.  
+Quand la valeur **Bloquer** est définie sur **Action** à prendre dans la stratégie de session de Cloud App Security, le Contrôle d’accès conditionnel aux applications empêche un utilisateur de télécharger un fichier conformément aux filtres de fichiers de la stratégie. Un événement de téléchargement est reconnu par Microsoft Cloud App Security pour chaque application et lorsqu’un utilisateur lance cet événement, le contrôle d’application par accès conditionnel intervient en temps réel pour l’empêcher de s’exécuter. À la réception d’un signal de téléchargement par un utilisateur, le Contrôle d’accès conditionnel aux applications renvoie un message **Téléchargement restreint** à l’utilisateur et remplace le fichier téléchargé par un fichier texte qui contient un message personnalisable adressé à l’utilisateur, que vous pouvez configurer à partir de la stratégie de session.  
 
 ## Bloquer des activités spécifiques <a name="block-activities"></a>
 

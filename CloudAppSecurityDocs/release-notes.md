@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/3/2018
+ms.date: 10/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,32 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b4f96e969a4276e6f2456659dfcae7243a791232
-ms.sourcegitcommit: bb44de2ebaf2526cc04e08c3737f77f73f219310
+ms.openlocfilehash: 84db548efef74a84e2b97419eb6f5d213512b6c7
+ms.sourcegitcommit: 53a1c990ff06674c26563a9ebcb1979818c3c063
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45561199"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881905"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
 
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Nouveautés de Microsoft Cloud App Security
 
+
+## <a name="cloud-app-security-release-132"></a>Cloud App Security version 132
+
+Publication : 25 septembre 2018
+
+- **Le Contrôle d’application par accès conditionnel pour Office 365 est désormais disponible en préversion publique**
+    - Désormais, le Contrôle d’application par accès conditionnel prend également en charge Office 365 et toute application configurée avec Open ID Connect.
+    - Fournir des commentaires à partir d’une session : ce nouvel outil vous permet de fournir des commentaires à l’équipe Cloud App Security concernant les performances d’une application sous contrôle de session, directement à partir de la session.
+
+
+- **Intégration native avec Windows Defender ATP pour Shadow IT Discovery au-delà de votre société**
+    - Microsoft Cloud App Security s’intègre désormais en mode natif à au module Windows Defender - Protection avancée contre les menaces (ATP) pour fournir des fonctionnalités de découverte Shadow IT sans déploiement pour activer et désactiver l’utilisation de réseau d’entreprise par des applications cloud.  Cela vous permet d’effectuer une découverte Cloud Discovery sur les ordinateurs, même quand ils ne se trouvent pas sur votre réseau d’entreprise. Cela permet également d’effectuer un examen basé sur l’ordinateur : après avoir identifié un utilisateur à risque, vous pouvez vérifier tous les ordinateurs auxquels l’utilisateur a accédé pour détecter les risques potentiels. Si vous identifiez un ordinateur à risque, vous pouvez vérifier tous les utilisateurs qui l’ont utilisé pour rechercher les risques potentiels. Pour plus d’informations, consultez la rubrique relative à l’intégration du module Windows Defender - Protection avancée contre les menaces à [Microsoft Cloud App Security](wdatp-integration.md).
+- **Inspection du contenu pour les fichiers chiffrés**
+    - Cloud App Security prend désormais en charge l’inspection de contenu des fichiers protégés qui sont chiffrés et qui ont été protégés à l’aide d’Azure Information Protection. Vous pouvez maintenant examiner ces fichiers chiffrés à des fins de reclassification et identifier d’autres violations de stratégies d’exposition et de sécurité DLP. 
 
 ## <a name="cloud-app-security-release-131"></a>Cloud App Security version 131
 

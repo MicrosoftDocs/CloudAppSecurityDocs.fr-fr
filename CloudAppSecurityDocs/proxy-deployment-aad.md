@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 636c0e407db3a7460cf64a76dc82133e7febf4c9
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 39b9a5554e326e2d1a9237b1999e316949aad607
+ms.sourcegitcommit: da651fb36d26d0dfe796b988e86205f41f7dc5de
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143341"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48251503"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -60,7 +60,7 @@ Suivez ces étapes pour configurer des applications Azure AD à contrôler par l
    4. Dans la stratégie TEST, sous **Application cloud**, assignez les applications que vous voulez contrôler avec le Contrôle d’accès conditionnel aux applications. 
 
       > [!NOTE]
-      >Veillez à choisir des applications prises en charge par le Contrôle d’accès conditionnel aux applications. Le Contrôle d’accès conditionnel aux applications prend en charge les applications configurées avec l’authentification unique SAML dans Azure AD. À titre d’exemple, les applications Office 365 ne sont pas configurées avec le format SAML si bien qu’elles ne sont pour le moment pas prises en charge.
+      >Veillez à choisir des applications prises en charge par le Contrôle d’accès conditionnel aux applications. Le Contrôle d’application par accès conditionnel prend en charge des applications configurées avec des applications SAML et Open ID Connect avec l’authentification unique dans Azure AD. 
 
 ## Étape 2 : connectez-vous avec un utilisateur inclus dans l’étendue de la stratégie dans les applications <a name="sign-in-scoped"></a>
 

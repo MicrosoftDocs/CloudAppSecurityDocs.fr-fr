@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/11/2018
+ms.date: 10/09/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: c75ba963-ad5a-48e6-8d5d-610fc6e0b990
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 06b011e28a293c09f6d3f40e904252178045431d
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 9f312f02b6fa24b7726ebbd927fc8b272a2359b3
+ms.sourcegitcommit: 53a1c990ff06674c26563a9ebcb1979818c3c063
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143562"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881837"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -26,11 +26,12 @@ ms.locfileid: "44143562"
 # <a name="configure-automatic-log-upload-for-continuous-reports"></a>Configurer le chargement automatique des journaux pour des rapports continus
 
 
-Les collecteurs de journaux vous permettent d’automatiser facilement le chargement manuel des journaux de votre réseau. Le collecteur de journaux s’exécute sur votre réseau et reçoit les journaux par le biais de Syslog ou FTP. Chaque journal est automatiquement traité, compressé et transmis au portail. Les journaux FTP sont chargés sur Microsoft Cloud App Security une fois que le fichier a terminé le transfert FTP vers le collecteur de journaux.  Pour Syslog, le collecteur de journaux écrit les journaux reçus sur le disque et charge le fichier sur Cloud App Security quand la taille du fichier est supérieure à 40 Ko.
+Les collecteurs de journaux vous permettent d’automatiser facilement le chargement manuel des journaux de votre réseau. Le collecteur de journaux s’exécute sur votre réseau et reçoit les journaux par le biais de Syslog ou FTP. Chaque journal est automatiquement traité, compressé et transmis au portail. Les journaux FTP sont chargés sur Microsoft Cloud App Security une fois que le fichier a terminé le transfert FTP vers le collecteur de journaux.  Pour Syslog, le collecteur de journaux écrit les journaux reçus sur le disque et charge le fichier sur Cloud App Security quand la taille du fichier est supérieure à 40 Ko. 
 
 Une fois qu’un journal est chargé dans Cloud App Security, il est déplacé dans un répertoire de sauvegarde qui stocke les 20 derniers journaux à un moment donné. Quand de nouveaux journaux arrivent, les anciens sont supprimés. Quand l’espace disque du collecteur de journaux est plein, le collecteur de journaux supprime les nouveaux journaux tant qu’il ne dispose pas de davantage d’espace disque libre. Dans ce cas, un avertissement s’affiche sous l’onglet **Collecteurs de journaux** des paramètres **Charger les journaux automatiquement**.
 
-Avant de configurer la collecte de fichiers journaux automatique, vérifiez que votre journal correspond au type attendu de journal pour vous assurer que Cloud App Security peut analyser votre fichier spécifique.
+Avant de configurer la collecte de fichiers journaux automatique, vérifiez que votre journal correspond au type attendu de journal pour garantir que Cloud App Security peut analyser votre fichier spécifique, dans [Utilisation de journaux de trafic pour Cloud Discovery](create-snapshot-cloud-discovery-reports.md#log-format).
+
 
 > [!NOTE]
 >-  Cloud App Security prend en charge le transfert des journaux de votre serveur SIEM au collecteur de journaux en partant du principe que les journaux sont transférés sous leur format d’origine. Cependant, nous vous recommandons fortement d’intégrer le collecteur de journaux directement à votre pare-feu et/ou proxy.

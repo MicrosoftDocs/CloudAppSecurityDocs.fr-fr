@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 10/08/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 4f5e6b1e-6b2c-4358-98f0-945e2993d5fe
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e7ae8a06cc54eaa274b951a0762a589437c13ee0
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 81632b9be284d3c772544900d2b88b3f5eedf37b
+ms.sourcegitcommit: c80c584c444b12dc8c788208cf973b46192b0cf0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44142406"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49072733"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -53,7 +53,7 @@ L’onglet Jetons d’API vous aide à gérer tous les jetons d’API de votre l
    - L’état Généré désigne les jetons qui n’ont jamais été utilisés. 
    - Les jetons actifs sont ceux qui ont été générés et utilisés au cours des sept derniers jours. 
    - Les jetons inactifs sont ceux qui ont été utilisés, mais n’ont pas eu d’activité au cours des sept derniers jours.
-5. Après avoir généré un nouveau jeton, vous recevrez une nouvelle URL à utiliser pour accéder au portail Cloud App Security. 
+5. Après avoir généré un nouveau jeton, vous recevez une nouvelle URL à utiliser pour accéder au portail Cloud App Security. 
 
    ![Jeton d’API Cloud App Security](./media/generate-api-token.png)
 

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 10/07/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,23 @@ ms.technology: ''
 ms.assetid: 776e834f-3c20-4d5f-9fab-4c5b975edb06
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6e251ff0ede60e0d612eb7741ec949877bde8b38
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: f53eca16b08b72798e2b3b0ababcad7ae676765d
+ms.sourcegitcommit: 53a1c990ff06674c26563a9ebcb1979818c3c063
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44142559"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881769"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
-# <a name="troubleshooting-the-microsoft-cloud-app-security-cloud-discovery-docker"></a>Résolution des problèmes du déploiement du docker Cloud Discovery de Microsoft Cloud App Security
+# <a name="troubleshooting-the-microsoft-cloud-app-security-cloud-discovery-deployment"></a>Résolution des problèmes liés au déploiement Cloud Discovery de Microsoft Cloud App Security
 
-## <a name="changing-the-ftp-password"></a>Modification du mot de passe FTP
+## <a name="windows-defender-atp-integration"></a>Intégration de Windows Defender ATP
+Si vous avez intégré Windows Defender ATP à Cloud App Security et que vous ne voyez pas les résultats de cette intégration (aucun rapport **Utilisateurs de point de terminaison Win10**), vérifiez que les ordinateurs auxquels vous vous connectez disposent de Windows 10 version 1809 ou d’une version ultérieure et que vous avez attendu les deux heures nécessaires pour que vos données soient accessibles.
+
+## <a name="docker-deployment"></a>Déploiement de Docker
+
+### <a name="changing-the-ftp-password"></a>Modification du mot de passe FTP
 
 
 1. Connectez-vous à l’hôte du collecteur de journaux.
@@ -39,7 +44,7 @@ ms.locfileid: "44142559"
 
   ![modifier le mot de passe FTP](./media/ftp-connect.png)
 
-## <a name="customize-certificate-files"></a>Personnaliser les fichiers de certificats
+### <a name="customize-certificate-files"></a>Personnaliser les fichiers de certificats
 
 Suivez cette procédure pour personnaliser les fichiers de certificats que vous utilisez pour obtenir des connexions sécurisées au docker Cloud Discovery.
 

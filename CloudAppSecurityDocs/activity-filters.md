@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/1/2018
+ms.date: 10/5/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 15dc221b188aa2c72d8791ac511e7216c896861d
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 55427fdfa73893fae763304eda6b73d19dac3f93
+ms.sourcegitcommit: c80c584c444b12dc8c788208cf973b46192b0cf0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144140"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49072886"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -29,7 +29,7 @@ Microsoft Cloud App Security vous donne une visibilité sur toutes les activité
 > [!NOTE] 
 > Pour obtenir une liste complète des activités Office 365 surveillées par Cloud App Security, voir [Rechercher le journal d’audit dans le Centre de sécurité et conformité Office 365](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US#ID0EABAAA=Audited_activities).
 
-Le **journal d’activité** peut être filtré pour vous permettre de trouver des activités spécifiques. Vous pouvez créer des stratégies basées sur les activités, puis définir ce dont voulez être alerté pour y réagir. Vous pouvez également rechercher des activités effectuées sur certains fichiers. Les types d’activités et les informations que nous obtenons pour chaque activité varient selon l’application et le genre de données que l’application peut fournir. 
+Le **journal d’activité** peut être filtré pour vous permettre de trouver des activités spécifiques. Vous créez des stratégies basées sur les activités, puis définissez ce sur quoi vous voulez être alerté pour y réagir. Vous êtes en mesure de rechercher des activités effectuées sur certains fichiers. Les types d’activités et les informations que nous obtenons pour chaque activité varient selon l’application et le genre de données que l’application peut fournir. 
 
 Par exemple, vous pouvez utiliser le **journal d’activité** pour trouver les utilisateurs de votre organisation qui utilisent des systèmes d’exploitation ou des navigateurs obsolètes. Pour cela, procédez comme suit : après avoir connecté une application à Cloud App Security dans la page **Journal d’activité**, utilisez le filtre avancé et sélectionnez l’**étiquette Agent utilisateur**. Sélectionnez ensuite **Navigateur obsolète** ou **Système d’exploitation obsolète**.
 
@@ -79,7 +79,7 @@ Pour obtenir la liste des actions de gouvernance disponibles, consultez [Actions
 
 #### <a name="user-insights"></a>Insights utilisateur
 
-L’expérience d’investigation comprend des insights prêts à l’emploi sur l’utilisateur responsable de l’action. En un seul clic, vous pouvez obtenir une vue d’ensemble complète de l’utilisateur, notamment l’endroit à partir duquel il s’est connecté, le nombre d’alertes ouvertes qui le concernent et ses informations de métadonnées.
+L’expérience d’investigation comprend des insights sur l’utilisateur responsable de l’action. En un seul clic, vous pouvez obtenir une vue d’ensemble complète de l’utilisateur, notamment l’endroit à partir duquel il s’est connecté, le nombre d’alertes ouvertes qui le concernent et ses informations de métadonnées.
 
 Pour afficher les insights utilisateur :
 
@@ -87,7 +87,8 @@ Pour afficher les insights utilisateur :
 
 2. Ensuite, cliquez sur l’onglet **Utilisateur**. <br></br> Cette opération ouvre l’onglet **Utilisateur** du tiroir Activité qui fournit les insights suivants sur l’utilisateur :
     - **Alertes ouvertes** : Nombre d’alertes ouvertes concernant l’utilisateur.
-    - **Violation de fichiers** : Nombre de violations des fichiers appartenant à l’utilisateur.
+    - **Correspondances** : Nombre de correspondances de stratégie pour les fichiers appartenant à l’utilisateur. 
+   <!-- - **File violation**: The number of file violations for files owned by the user. -->
     - **Activités** : Nombre d’activités effectuées par l’utilisateur au cours des 30 derniers jours.
     - **Pays** : Nombre de pays à partir desquels l’utilisateur s’est connecté au cours des 30 derniers jours.
     - **ISP** : Nombre d’ISP à partir desquels l’utilisateur s’est connecté au cours des 30 derniers jours.
@@ -97,7 +98,7 @@ Pour afficher les insights utilisateur :
 
 #### <a name="ip-address-insights"></a>Insights sur l’adresse IP
 
-Parce que les informations d’adresse IP sont essentielles dans la quasi-totalité des examens, vous pouvez afficher les informations détaillées des adresses IP dans le tiroir Activité. Dans une activité spécifique, vous pouvez cliquer sur l’onglet Adresse IP pour afficher des données consolidées concernant l’adresse IP, y compris le nombre d’alertes actives pour l’adresse IP spécifique, un graphique de tendance de l’activité récente et une carte d’emplacement. Cela vous permet de faire des examens approfondis, par exemple, quand vous recherchez la cause d’alertes Voyage impossible, vous pouvez facilement déterminer où a été utilisée l’adresse IP et si elle a été impliquée ou non dans des activités suspectes. Vous pouvez également effectuer des actions directement dans le tiroir Adresse IP, où vous pouvez marquer une adresse IP comme étant risquée, VPN ou d’entreprise pour faciliter par la suite l’examen et la création de stratégie.
+Parce que les informations d’adresse IP sont essentielles dans la quasi-totalité des examens, vous pouvez afficher les informations détaillées des adresses IP dans le tiroir Activité. Dans une activité spécifique, vous pouvez cliquer sur l’onglet Adresse IP pour afficher des données consolidées concernant l’adresse IP, y compris le nombre d’alertes actives pour l’adresse IP spécifique, un graphique de tendance de l’activité récente et une carte d’emplacement. Cela permet des examens approfondis lors de l’étude d’alertes de déplacement impossible, par exemple. Vous pouvez facilement comprendre où l’adresse IP a été utilisée et si elle était impliquée dans des activités suspectes ou non. Vous pouvez également effectuer des actions directement dans le tiroir Adresse IP, où vous pouvez marquer une adresse IP comme étant risquée, VPN ou d’entreprise pour faciliter par la suite l’examen et la création de stratégie.
 
 Pour afficher les insights sur l’adresse IP :
 
@@ -110,9 +111,9 @@ Pour afficher les insights sur l’adresse IP :
     - **Activités** : Nombre d’activités effectuées à partir de l’adresse IP au cours des 30 derniers jours.
     - **Activités administratives**  : Nombre d’activités administratives effectuées à partir de l’adresse IP au cours des 30 derniers jours.
     - Vous pouvez effectuer les actions d’adresse IP suivantes :
-        - Marquer comme adresse IP risquée 
-        - Marquer comme adresse IP VPN
-        - Marquer comme adresse IP risquée et l’ajouter à un groupe bloqué
+        - Marquer comme adresse IP d’entreprise et ajouter à la liste autorisée
+        - Marquer comme adresse IP VPN et ajouter à la liste autorisée
+        - Marquer comme adresse IP risquée et ajouter à la liste bloquée
 
 
 ![Insights sur l’adresse IP dans Cloud App Security](./media/ip-address-insights.png)
@@ -121,13 +122,13 @@ Pour afficher les insights sur l’adresse IP :
 
 Vous pouvez exporter toutes les activités utilisateur dans un fichier CSV. 
 
-Dans le **Journal d’activité**, dans l’angle supérieur droit, cliquez sur le bouton **Exporter** ![bouton Exporter](./media/export-button.png).
+Dans le **Journal d’activité** en haut à droite, cliquez sur le bouton **Exporter**. ![bouton Exporter](./media/export-button.png)
 
 [!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 
 
 
-## <a name="see-also"></a>Voir aussi  
+## <a name="next-steps"></a>Étapes suivantes  
 [Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)   
 
 [Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier.](https://premier.microsoft.com/)  

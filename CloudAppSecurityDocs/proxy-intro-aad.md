@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/15/2018
+ms.date: 10/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 35a43120-bf67-4cf9-9b48-ebe157dbbd18
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e6007579b9c83b83a1fa24502249437f645aeb94
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 629e1133b57a9d2aef7e83390aee156b71c53b8e
+ms.sourcegitcommit: 53a1c990ff06674c26563a9ebcb1979818c3c063
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144446"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881820"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -30,6 +30,10 @@ ms.locfileid: "44144446"
 
 
 Dans l’espace de travail actuel, souvent il ne suffit pas de savoir ce qui se passe dans votre environnement cloud après coup, vous devez pouvoir stopper les violations de sécurité et les fuites en temps réel, avant que les employés exposent par inadvertance ou intentionnellement vos données et votre organisation. Il est important d’autoriser les utilisateurs de votre organisation à accéder à la plupart des services et outils des applications cloud, et de les laisser apporter leurs propres appareils au travail. En même temps, vous avez besoin d’outils pour protéger votre organisation contre les fuites et le vol de données, en temps réel. Avec Azure Active Directory, Microsoft Cloud App Security offre ces fonctionnalités dans une expérience globale et intégrée avec le Contrôle d’accès conditionnel aux applications.
+
+> [!NOTE]
+> Pour utiliser la fonctionnalité Contrôle d’application par accès conditionnel de Cloud App Security, vous devez disposer d’une [licence Azure Active Directory P1](https://azure.microsoft.com/pricing/details/active-directory/) et d’un abonnement Microsoft Cloud App Security actif.
+>
 
 ## <a name="how-it-works"></a>Fonctionnement
 
@@ -83,13 +87,12 @@ Le mécanisme d’identification des appareils peut exiger une authentification 
  
 ## <a name="supported-apps-and-clients"></a>Applications et clients pris en charge
 
-Le Contrôle d’accès conditionnel aux applications prend actuellement en charge des applications configurées avec l’authentification unique SAML dans Azure AD. 
+Le Contrôle d’application par accès conditionnel prend actuellement en charge des applications configurées avec des applications SAML et Open ID Connect avec l’authentification unique dans Azure AD. 
 
 > [!NOTE]
-> - Le contrôle d’application par accès conditionnel prend également en charge des applications qui sont configurées avec des fournisseurs d’identité non-Azure AD. Pour plus d'informations sur ce scénario, envoyez un e-mail à mcaspreview@microsoft.com.
-> - Les applications Office 365 ne sont pas configurées avec le format SAML si bien qu’elles ne sont pour le moment pas prises en charge.
+> Le contrôle d’application par accès conditionnel prend également en charge des applications qui sont configurées avec des fournisseurs d’identité non-Azure AD. Pour plus d'informations sur ce scénario, envoyez un e-mail à mcaspreview@microsoft.com.
 
-Le contrôle de session est disponible pour tous les navigateurs de toutes les principales plateformes (les applications de bureau et les applications mobiles peuvent aussi être bloquées ou autorisées). Avec l’intégration en mode natif à Azure AD, toutes les applications qui sont configurées avec l’authentification unique SAML dans Azure AD peuvent être prises en charge, notamment les applications proposées suivantes :
+Le contrôle de session est disponible pour tous les navigateurs de toutes les principales plateformes (les applications de bureau et les applications mobiles peuvent aussi être bloquées ou autorisées). Avec l’intégration en mode natif à Azure AD, toutes les applications qui sont configurées avec des applications SAML ou Open ID Connect avec l’authentification unique dans Azure AD peuvent être prises en charge, notamment les applications proposées suivantes :
 
 - AWS
 - Box
@@ -109,6 +112,13 @@ Le contrôle de session est disponible pour tous les navigateurs de toutes les p
 - Workday
 - Workiva
 - Workplace by Facebook
+- Exchange Online (préversion)
+- OneDrive Entreprise (préversion)
+- Power BI (préversion)
+- SharePoint Online (préversion)
+- Azure DevOps (Visual Studio Team Services) (préversion)
+- Yammer (préversion)
+
 
 
 De nouvelles applications sont intégrées au contrôle de session en continu. Si vous êtes intéressé par une application spécifique qui n’est pas mentionnée ici, [envoyez-nous des détails sur l’application](mailto:casfeedback@microsoft.com) et le cas d’utilisation qui vous intéresse et nous l’intégrerons.

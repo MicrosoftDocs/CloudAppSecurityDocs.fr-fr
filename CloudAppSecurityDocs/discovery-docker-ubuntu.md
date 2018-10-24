@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/6/2018
+ms.date: 10/5/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0cef5b710462c8c7e90256c43cc7a37da0d3b11e
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: d23ee52b6186280e7b27b56b5516a6bd9dc436f3
+ms.sourcegitcommit: da651fb36d26d0dfe796b988e86205f41f7dc5de
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143953"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48251537"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -28,7 +28,7 @@ ms.locfileid: "44143953"
 
 ## <a name="technical-requirements"></a>Spécifications techniques
 
--   Système d’exploitation : Ubuntu 14.04 et 16.04 (pour les versions plus récentes, contactez le support) ou RHEL 7.2 ou ultérieur 
+-   Système d’exploitation : Ubuntu 14.04, 16.04 et 18.04 ; ou RHEL 7.2 ou ultérieur 
 
 -   Espace disque : 250 Go
 
