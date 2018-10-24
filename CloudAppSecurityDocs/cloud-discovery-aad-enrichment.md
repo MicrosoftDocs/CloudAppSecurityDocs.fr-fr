@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 10/11/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,22 +13,22 @@ ms.technology: ''
 ms.assetid: 45295c2c-3e4d-4482-bf95-2e47072f9236
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0bf959510ac5daf87c421ed9977479a7e037d6d7
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 02c09c05ca89e58bc45648fc592c8b5a79aaf4f3
+ms.sourcegitcommit: 82052a88acbc33893f7b9e0d10cc2e8c652ef003
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144582"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49349523"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
 
 # <a name="cloud-discovery-enrichment"></a>Enrichissement de Cloud Discovery
 
-Les données Cloud Discovery peuvent maintenant être enrichies avec des données de nom d’utilisateur Azure Active Directory. Quand vous activez cette fonctionnalité, le nom d’utilisateur reçu dans les journaux de trafic de découverte est mis en correspondance et remplacé par le nom d’utilisateur Azure AD, ce qui active les fonctionnalités suivantes :
--   Vous pouvez examiner l’utilisation de l’informatique fantôme par l’utilisateur Azure Active Directory.
--   Vous pouvez mettre en corrélation l’utilisation de l’application cloud découverte avec les activités collectées par l’API.
--   Vous pouvez ensuite créer des journaux personnalisés basés sur des groupes d’utilisateurs Azure AD. Par exemple, un rapport d’informatique fantôme pour un service marketing spécifique.
+Les données Cloud Discovery peuvent maintenant être enrichies avec des données de nom d’utilisateur Azure Active Directory. Quand vous activez cette fonctionnalité, le nom d’utilisateur reçu dans les journaux de trafic de découverte est mis en correspondance et remplacé par le nom d’utilisateur Azure AD. Avez l’enrichissement de Cloud Discovery, vous disposez des fonctionnalités suivantes :
+- Vous pouvez examiner l’utilisation de l’informatique fantôme par l’utilisateur Azure Active Directory.
+- Vous pouvez mettre en corrélation l’utilisation de l’application cloud découverte avec les activités collectées par l’API.
+- Vous pouvez ensuite créer des journaux personnalisés basés sur des groupes d’utilisateurs Azure AD. Par exemple, un rapport d’informatique fantôme pour un service marketing spécifique.
 
 
 ## <a name="prerequisites"></a>Conditions préalables :
@@ -39,7 +39,7 @@ Les données Cloud Discovery peuvent maintenant être enrichies avec des donnée
     
 1. Sous l’icône Paramètres, sélectionnez **Paramètres Cloud Discovery**.
      
-2. Sous l’onglet **Enrichissement d’utilisateur**, pour permettre à Cloud App Security d’utiliser les données Azure Active Directory pour enrichir les noms d’utilisateur par défaut, sélectionnez **Enrichir les identificateurs des utilisateurs découverts avec les noms d’utilisateur Azure Active Directory**.
+2. Sous l’onglet **Enrichissement de l’utilisateur**, sélectionnez **Enrichir les identificateurs d’utilisateurs découverts avec les noms d’utilisateurs Azure Active Directory**. Cette option permet à Cloud App Security d’utiliser les données Azure Active Directory pour enrichir les noms d’utilisateur par défaut.
 
 3. Cliquez sur **Enregistrer**.
  
@@ -48,7 +48,8 @@ Les données Cloud Discovery peuvent maintenant être enrichies avec des donnée
 
   
       
-## <a name="see-also"></a>Voir aussi  
+## <a name="next-steps"></a>Étapes suivantes
+  
 [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)   
 
 [Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier.](https://premier.microsoft.com/)  
