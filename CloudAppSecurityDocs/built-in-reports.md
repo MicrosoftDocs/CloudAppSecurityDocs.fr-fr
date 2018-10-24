@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/10/2018
+ms.date: 10/11/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 0dcc3c35-f787-4822-84c6-d4dff897dd6c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 41129ee4329c17b6a87aac367ff91708c5a382f3
-ms.sourcegitcommit: e500101377562f4432a5a3c21b97e67a8b788e88
+ms.openlocfilehash: 7684e6e3172076d8f7e8a4d69b1ddd70d322a200
+ms.sourcegitcommit: 82052a88acbc33893f7b9e0d10cc2e8c652ef003
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46563124"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49349506"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -33,22 +33,27 @@ Pour générer ces rapports
 1. Accédez à **Fichiers**. 
 2. En haut à droite, cliquez sur les trois points et sous **Rapports de gestion de données**, sélectionnez un des rapports suivants.
 
-   ![rapports](./media/reports.png) I
+ ![rapports](./media/reports.png)
+
 ## <a name="data-sharing-overview"></a>Vue d’ensemble du partage de données 
 
-Ce rapport répertorie le nombre de fichiers stockés dans vos applications cloud, par autorisation d’accès. Le partage est devenu facile avec les applications cloud en raison de la facilité d’accès et de l’omniprésence. Un fichier qui n’est partagé avec personne d’autre que son propriétaire est appelé fichier privé. Si le fichier est partagé, Cloud App Security distingue quatre types d’états : <br> - Un fichier (web) partagé publiquement est un fichier accessible sans aucune authentification, même par le biais d’un résultat de moteur de recherche.<br> - Un fichier partagé publiquement est un fichier accessible sans aucune authentification, au moyen d’un lien.<br> - Un fichier partagé en externe est un fichier auquel peuvent accéder des personnes n’appartenant pas à l’organisation une fois qu’elles se sont authentifiées auprès de l’application cloud.<br> - Un fichier partagé en interne est un fichier accessible à la totalité ou à une partie des utilisateurs de votre organisation.
+Ce rapport liste le nombre de fichiers, par autorisation d’accès, qui sont stockés dans vos applications cloud. Le partage de fichiers est devenu facile avec les applications cloud en raison de la facilité d’accès et de l’omniprésence. Un **fichier privé** n’est partagé avec personne d’autre que son propriétaire. Si le fichier est partagé, Cloud App Security distingue quatre types d’états :
+- Un fichier en **Partage public (Internet)** est un fichier accessible sans aucune authentification, même par le biais d’un résultat de moteur de recherche.
+ - Un fichier en **Partage public** est un fichier accessible sans aucune authentification, au moyen d’un lien.
+ - Un fichier en **Partage externe** est un fichier auquel peuvent accéder des personnes n’appartenant pas à l’organisation une fois qu’elles se sont authentifiées auprès de l’application cloud.
+- Un fichier en **Partage interne** est un fichier accessible à la totalité ou à une partie des utilisateurs de votre organisation.
 
 ## <a name="outbound-sharing-by-domain"></a>Partage sortant par domaine
 
-Ce rapport répertorie les domaines avec lesquels des fichiers d’entreprise sont partagés par vos employés. Pour chaque domaine, le rapport détaille les utilisateurs de l’entreprise qui partagent des fichiers avec ce domaine, les fichiers effectivement partagés et les collaborateurs avec lesquels ces fichiers sont partagés. Nous vous recommandons de gérer le partage avec ces domaines par le biais de l’onglet Fichiers dans la page de chaque application concernée.
+Ce rapport répertorie les domaines avec lesquels des fichiers d’entreprise sont partagés par vos employés. Pour chaque domaine, le rapport affiche les utilisateurs qui partagent des fichiers avec ce domaine. Le rapport affiche également les fichiers qui sont partagés et avec qui les fichiers de collaborateur sont partagés. Il est recommandé de gérer le partage avec ces domaines. Vous pouvez gérer le partage sous l’onglet Fichiers de la page de chaque application concernée.
 
 ## <a name="owners-of-shared-files"></a>Propriétaires de fichiers partagés
 
-Ce rapport répertorie les utilisateurs qui partagent des fichiers d’entreprise avec le monde extérieur. Les fichiers partagés en externe sont partagés avec des collaborateurs externes spécifiques. Les fichiers partagés publiquement sont accessibles sur Internet à toute personne par le biais d’une liaison privée à laquelle cette personne est explicitement exposée. Les fichiers partagés publiquement (Internet) sont accessibles à toute personne sur Internet, y compris par le biais d’un résultat de moteur de recherche. Si vous constatez que des utilisateurs partagent un nombre excessif de fichiers, nous vous recommandons d’examiner la nature des autorisations correspondantes à l’aide de l’onglet Fichiers et de contacter ces utilisateurs pour mieux comprendre la façon dont ils recourent au partage externe.
+Ce rapport répertorie les utilisateurs qui partagent des fichiers d’entreprise avec le monde extérieur. Les fichiers en partage externe sont des fichiers partagés avec des collaborateurs externes spécifiques. Les fichiers en partage public sont accessibles à toute personne sur Internet, via une lien privé. Ces fichiers sont uniquement accessibles par des personnes qui ont explicitement le lien. Les fichiers en partage public (Internet) sont accessibles à toute personne sur Internet, notamment dans un résultat de moteur de recherche. Si vous trouvez des utilisateurs qui partagent un nombre excessif de fichiers, il est recommandé d’en rechercher la raison. Vous pouvez regarder dans l’onglet Fichiers, puis contacter ces utilisateurs pour mieux comprendre leur utilisation du partage externe.
 
 
   
-## <a name="see-also"></a>Voir aussi 
+## <a name="next-steps"></a>Étapes suivantes 
 [Contrôler](control.md)   
 
 [Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier.](https://premier.microsoft.com/)  

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/2/2018
+ms.date: 10/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 17aed7570f5f0cb68c89bfebe25969b0bf713aba
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: d477439e05f8c6a9a29b8ad28fa4381b5e93274c
+ms.sourcegitcommit: 82052a88acbc33893f7b9e0d10cc2e8c652ef003
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144055"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49349591"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -112,7 +112,7 @@ Vous trouverez ci-dessous la liste des filtres de fichiers qui peuvent être app
   
 -   Propriétaire : Incluez/Excluez des propriétaires de fichiers spécifiques, par exemple Suivre tous les fichiers partagés par employé_non autorisé_#100.  
   
--   UO propriétaire : Incluez/Excluez les propriétaires de fichiers qui appartiennent à certains groupes d’organisation, par exemple Tous les fichiers publics à l’exception de ceux partagés par EMEA_marketing.  
+-   UO propriétaire : Incluez/Excluez les propriétaires de fichiers qui appartiennent à certains groupes d’organisation, par exemple Tous les fichiers publics à l’exception de ceux partagés par EMEA_marketing. Cela s’applique uniquement aux fichiers stockés dans Google Drive.
   
 -   Dossier parent : Incluez/Excluez selon le dossier parent, par exemple Tous les fichiers partagés publiquement à l’exception des fichiers contenus dans ce dossier.  
   
