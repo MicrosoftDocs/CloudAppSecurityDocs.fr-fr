@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/04/2018
+ms.date: 10/11/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 9ba5c7d3-c733-4048-9b99-bf41a0f46695
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c3e0231d2b4f289ec460adc2d4d90e56443bb10f
-ms.sourcegitcommit: c80c584c444b12dc8c788208cf973b46192b0cf0
+ms.openlocfilehash: 6b2028a8b62413cccefdab0fb529fb42fa57c221
+ms.sourcegitcommit: 82052a88acbc33893f7b9e0d10cc2e8c652ef003
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49072835"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49349642"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -35,7 +35,7 @@ Vous trouverez ci-dessous une liste des filtres d’activité qui peuvent être 
   - ID de l’objet d’activité : ID de l’objet (ID de fichier, de dossier, d’utilisateur ou d’application).
   <!-- - File, folder or site URL - Enables you to select files, folders and URLs that start with a specific string.-->
   <!-- - Target object (file/folder) - Enables you to select a specific file or folder. -->
-  - Élément : vous permet de rechercher par nom ou par ID d’objet d’activité (par exemple des noms d’utilisateur, des fichiers, des paramètres, des sites). Pour le filtre **Élément d’objet d’activité**, vous pouvez choisir de filtrer les éléments qui contiennent (**Contient**), sont égaux à (**Égal à) ou commencent par (**Commence par**) l’élément spécifique.
+  - Élément : vous permet de rechercher par nom ou par ID d’objet d’activité (par exemple des noms d’utilisateur, des fichiers, des paramètres, des sites). Pour le filtre **Élément d’objet d’activité**, vous pouvez choisir de filtrer les éléments qui **contiennent**, **sont égaux** ou **commencent par** l’élément spécifique.
     
 - Type d’activité : Recherchez l’activité de l’application.
 
@@ -61,7 +61,7 @@ Vous trouverez ci-dessous une liste des filtres d’activité qui peuvent être 
     - Fichiers ou dossiers spécifiques : vous permet d’inclure ou d’exclure des fichiers ou des dossiers spécifiques. Lors de la sélection de fichiers ou de dossiers, vous pouvez filtrer la liste par **Application**, par **Propriétaire** ou par **Nom de fichier** partiel. 
   
 - Adresse IP : adresse IP brute, catégorie IP ou balise IP à partir de laquelle l’activité a été réalisée.  
-  - Adresse IP brute : Vous permet de rechercher des activités qui ont été effectuées sur ou par des adresses IP brutes qui sont égales à, ne sont pas égales à, commencent par ou ne commencent pas par une séquence particulière, ou des adresses IP brutes. 
+  - Adresse IP brute : vous permet de rechercher des activités qui ont été réalisées sur ou par des adresses IP brutes. Les adresses IP brutes peuvent être égales à, ne pas être égales à, commencer par ou ne pas commencer par une séquence spécifique. 
   - Catégorie IP : Catégorie de l’adresse IP à partir de laquelle l’activité a été réalisée, par exemple, toutes les activités de la plage d’adresses IP administratives. Les catégories doivent être configurées de façon à inclure les adresses IP appropriées, à l’exception de la catégorie « Risqué », qui est préconfigurée et qui inclut deux balises IP : Proxy anonyme et Tor. Pour découvrir comment configurer les catégories IP, consultez [Organiser les données selon vos besoins](ip-tags.md).  
   - Balise IP : Balise de l’adresse IP à partir de laquelle l’activité a été exécutée, par exemple toutes les activités des adresses IP de proxy anonyme. Cloud App Security crée un ensemble de balises IP prédéfinies qui ne sont pas configurables. Vous pouvez également configurer vos propres balises IP. Pour plus d’informations sur la configuration de vos propres balises IP, consultez [Organiser les données selon vos besoins](ip-tags.md).
   Les balises IP prédéfinies sont les suivantes :
@@ -128,7 +128,7 @@ Pour faciliter encore plus les recherches, vous pouvez désormais créer des req
    ![ouvrir une requête](./media/select-activity-query.png)
 
 
-Cloud App Security vous propose également des **Requêtes suggérées** Les requêtes suggérées vous fournissent des zones de recherche recommandées qui filtrent vos activités. Vous pouvez modifier ces requêtes et les enregistrer en tant que requêtes personnalisées. Les requêtes suggérées suivantes sont facultatives :
+Cloud App Security vous fournit également des **requêtes suggérées**. Les requêtes suggérées vous fournissent des zones de recherche recommandées qui filtrent vos activités. Vous pouvez modifier ces requêtes et les enregistrer en tant que requêtes personnalisées. Les requêtes suggérées suivantes sont facultatives :
 
  - Activités d’administration : filtre toutes vos activités pour afficher uniquement les activités ayant impliqué des administrateurs.
 
@@ -136,7 +136,7 @@ Cloud App Security vous propose également des **Requêtes suggérées** Les req
 
  - Connexion ayant échoué : filtre toutes vos activités pour afficher uniquement les ouvertures de session et les connexions en échec via l’authentification unique 
 
- - Activités de fichiers et de dossiers : filtre toutes vos activités pour afficher uniquement les activités impliquant des fichiers et des dossiers, y compris charger et télécharger des dossiers, l’accès à des dossiers, ainsi que la création, la suppression, le chargement, le téléchargement, la mise en quarantaine et l’accès à des fichiers, et le transfert de contenu. 
+ - Activités liées au fichier et au dossier : filtre toutes vos activités pour afficher uniquement les activités liées à des fichiers et des dossiers. Le filtre inclut le chargement, le téléchargement et l’accès aux dossiers, ainsi que la création, la suppression, le chargement, le téléchargement, la mise en quarantaine, l’accès aux fichiers et le transfert de contenu. 
 
  - Activités d’emprunt d’identité : filtre toutes vos activités pour afficher uniquement les activités d’emprunt d’identité.
 

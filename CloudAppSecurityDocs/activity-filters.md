@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/5/2018
+ms.date: 10/11/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 55427fdfa73893fae763304eda6b73d19dac3f93
-ms.sourcegitcommit: c80c584c444b12dc8c788208cf973b46192b0cf0
+ms.openlocfilehash: 87aa9ac1cb823222230d24d667c1bcfa7e702104
+ms.sourcegitcommit: 82052a88acbc33893f7b9e0d10cc2e8c652ef003
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49072886"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49349455"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -39,7 +39,7 @@ Le filtre de base fournit des outils efficaces pour démarrer vos activités de 
 
  ![filtre de base du journal d’activité](media/activity-log-filter-basic.png)
 
-Pour explorer des activités plus spécifiques, vous pouvez développer le filtre de base en cliquant sur Avancé.
+Pour explorer des activités plus spécifiques, vous pouvez développer le filtre de base en cliquant sur **Avancé**.
 
  ![filtre avancé du journal d’activité](media/activity-log-filter-advanced.png)
 
