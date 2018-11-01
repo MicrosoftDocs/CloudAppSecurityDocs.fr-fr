@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 10/23/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,22 +13,22 @@ ms.technology: ''
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 843b58567b87793cc5c46c0d10d5b94127a4b156
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 6bc011f2e5d42f49d679260a2c36f977ba1b004f
+ms.sourcegitcommit: 9c314d566a1dd35e32650928052b8a817dd20d9d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144157"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49990696"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
 # <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance---deprecated"></a>Configurer le chargement automatique des journaux pour des rapports continus sur une appliance virtuelle - Déconseillé
 
 > [!WARNING] 
-> Il est fortement recommandé de configurer le chargement du journal avec [Docker](discovery-docker.md) pour un déploiement plus souple.
+> Il est fortement recommandé de configurer le chargement du journal avec [Docker](discovery-docker.md) pour une plus grande flexibilité de déploiement.
 
 ## <a name="technical-requirements"></a>Spécifications techniques
-- Hyperviseur : HyperV ou VMware
+- Hyperviseur : Hyper-V ou VMware
 - Espace disque : 250 Go
 - Processeur : 2
 - RAM : 4 Go 
@@ -39,8 +39,8 @@ ms.locfileid: "44144157"
 Le collecteur de journaux peut gérer correctement une capacité allant jusqu’à 50 Go par heure.
 Les principaux goulots d’étranglement dans le processus de collecte des journaux sont les suivants :
 - Bande passante réseau : votre bande passante réseau détermine la vitesse de chargement des journaux.
-- Performances d’E/S de la machine virtuelle allouées par votre service informatique : détermine la vitesse à laquelle les journaux sont écrits sur le disque du collecteur de journaux.
-Le collecteur de journaux dispose d’un mécanisme de sécurité intégré qui surveille le débit auquel les journaux arrivent et le compare au débit de chargement. En cas de congestion, le collecteur de journaux commence à supprimer des fichiers journaux. Si votre configuration dépasse généralement 50 Go par heure, il est recommandé de diviser le trafic entre plusieurs collecteurs de journaux.
+- Performances d’E/S de la machine virtuelle : détermine la vitesse à laquelle les journaux sont écrits sur le disque du collecteur de journaux.
+Le collecteur de journaux dispose d’un mécanisme de sécurité intégré qui surveille le débit auquel les journaux arrivent et le compare au débit de chargement. En cas de congestion, le collecteur de journaux commence à supprimer des fichiers journaux. Si votre configuration dépasse généralement 50 Go par heure, il est recommandé de répartir le trafic entre plusieurs collecteurs de journaux.
 
 ## <a name="set-up-and-configuration"></a>Installation et configuration  
   
@@ -55,21 +55,21 @@ Le collecteur de journaux dispose d’un mécanisme de sécurité intégré qui 
   
    b.  **Nommez** votre proxy ou pare-feu.  
   
-   c.  Sélectionnez l’appareil dans la liste **Source**. Si vous sélectionnez **Format de journal personnalisé** pour utiliser une appliance réseau qui n’est pas répertoriée, consultez [Utilisation de l’analyseur de journal personnalisé](custom-log-parser.md) pour obtenir des instructions de configuration.
+   c.  Sélectionnez l’appareil dans la liste **Source**. Si vous sélectionnez **Format de journal personnalisé** pour utiliser une appliance réseau qui n’est pas listée, consultez [Utilisation de l’analyseur de journal personnalisé](custom-log-parser.md) pour obtenir des instructions de configuration.
   
-   d.  Comparez votre journal à l’exemple de format de journal attendu. Si votre format de fichier journal ne correspond pas à cet exemple, vous devez ajouter votre source de données en tant qu’**Autre**.  
+   d.  Comparez votre journal à l’exemple de format de journal attendu. Si le format de votre fichier journal ne correspond pas à cet exemple, vous devez ajouter votre source de données en sélectionnant **Autre**.  
   
-   e.  Affectez à l’option **Type de récepteur** la valeur **FTP** ou **Syslog**. Pour **Syslog**, choisissez **UDP** ou **TCP**.  
+   e.  Affectez à l’option **Type de récepteur** la valeur **FTP** ou **Syslog**. Pour **Syslog**, choisissez **UDP**, **TCP** ou **TLS**.  
   
-   f.  Répétez ce processus pour chaque pare-feu ou proxy dont les journaux peuvent être utilisés pour détecter le trafic sur votre réseau.  
+   f.  Cliquez sur **Ajouter** pour enregistrer la source de données. Répétez ce processus pour chaque pare-feu ou proxy dont les journaux peuvent être utilisés pour détecter le trafic sur votre réseau.  
   
 3. Accédez à l’onglet **Collecteurs de journaux** en haut.  
   
    a.  Cliquez sur **Ajouter un collecteur de journaux**.  
   
-   b.  Donnez un **nom** au collecteur de journaux.  
+   b.  Attribuez un **nom** au collecteur de journaux.  
   
-   c.  Sélectionnez toutes les **sources de données** que vous voulez connecter au collecteur, puis cliquez sur **Mettre à jour** pour enregistrer la configuration et générer un jeton d’accès.  
+   c.  Sélectionnez toutes les **Sources de données** que vous voulez connecter au collecteur. Cliquez sur **Mettre à jour** pour enregistrer la configuration et générer un jeton d’accès.  
    ![sources de données de découverte](./media/discovery-data-sources.png)
   
    > [!NOTE] 
@@ -97,14 +97,14 @@ Le collecteur de journaux dispose d’un mécanisme de sécurité intégré qui 
   
 7. Si disponible, choisissez la **connexion** réseau et cliquez sur **Suivant**.  
   
-8. Choisissez **Utiliser un disque dur virtuel existant** et sélectionnez le fichier **.vhd** qui était inclus dans le fichier Zip que vous avez téléchargé.  
+8. Choisissez **Utiliser un disque dur virtuel existant**. Sélectionnez le fichier **.vhd** qui était inclus dans le fichier zip que vous avez téléchargé.  
   
 9. Cliquez sur **Suivant** , puis sur **Terminer**.  
    La machine est ajoutée à votre environnement Hyper-V.  
   
 10. Cliquez sur la machine dans le tableau **Machines virtuelles** et cliquez sur **Démarrer**.   
   
-11. Connectez-vous à la machine virtuelle du collecteur de journaux pour déterminer si une adresse DHCP lui a été attribuée : cliquez sur la machine virtuelle, puis sélectionnez **Connect** (Connecter). Vous devez voir l’invite de connexion. Si vous voyez une adresse IP, vous pouvez vous connecter à la machine virtuelle à l’aide d’un outil Terminal Server/SSH.  Si vous ne voyez pas une adresse IP, connectez-vous en utilisant les outils de connexion Hyper-V/VMWare avec les informations d’identification que vous avez copiées quand vous avez créé le collecteur de journaux précédemment. Vous pouvez modifier le mot de passe et configurer la machine virtuelle à l’aide de l’utilitaire de configuration réseau en exécutant la commande suivante :
+11. Connectez-vous à la machine virtuelle du collecteur de journaux pour déterminer si une adresse DHCP lui a été attribuée : cliquez sur la machine virtuelle, puis sélectionnez **Connect** (Connecter). L’invite de connexion doit s’afficher. Si vous voyez une adresse IP, vous pouvez vous connecter à la machine virtuelle à l’aide d’un outil Terminal Server/SSH.  Si vous ne voyez pas d’adresse IP, connectez-vous à l’aide des outils de connexion Hyper-V/VMWare et des informations d’identification que vous avez copiées quand vous avez créé le collecteur de journaux. Vous pouvez modifier le mot de passe et configurer la machine virtuelle à l’aide de l’utilitaire de configuration réseau en exécutant la commande suivante :
     ```
     sudo network_config
     ```
@@ -115,9 +115,9 @@ Le collecteur de journaux dispose d’un mécanisme de sécurité intégré qui 
 À ce stade, votre collecteur de journaux doit être connecté à votre réseau et en mesure d’atteindre le portail Cloud App Security.  
 
 ### <a name="step-3--on-premises-configuration-of-the-log-collection"></a>Étape 3 : configuration locale de la collecte de journaux 
-La première fois que vous vous connectez au collecteur de journaux et importez sa configuration à partir du portail, procédez comme suit. 
+La première fois que vous vous connectez au collecteur de journaux et que vous importez sa configuration à partir du portail, effectuez les étapes suivantes. 
 
-1.  Connectez-vous au collecteur de journaux via SSH, à l’aide des informations d’identification d’administrateur interactives qui vous ont été fournies dans le portail. (S’il s’agit de votre première connexion à la console, vous devrez modifier le mot de passe et vous reconnecter après la modification. Si vous utilisez une session Terminal Server, vous devrez peut-être la redémarrer. )
+1.  Connectez-vous au collecteur de journaux via une connexion SSH, à l’aide des informations d’identification d’administrateur interactives qui vous ont été fournies dans le portail. S’il s’agit de votre première connexion à la console, vous devrez modifier le mot de passe, puis vous reconnecter. Si vous utilisez une session Terminal Server, vous devrez peut-être la redémarrer. )
 2.  Exécutez l’utilitaire de configuration de collecteur avec le jeton d’accès fourni quand vous avez créé le collecteur de journaux.```sudo collector_config <access token> ```
 3. Entrez le domaine de la console, par exemple : ```contoso.portal.cloudappsecurity.com```. Celui-ci est disponible à partir de l’URL qui s’affiche après la connexion au portail Cloud App Security. 
 
@@ -125,7 +125,7 @@ La première fois que vous vous connectez au collecteur de journaux et importez 
 
 5.  Importez la configuration du collecteur de journaux à partir du portail, comme suit :  
   
-      a.  Connectez-vous au collecteur de journaux via SSH, à l’aide des informations d’identification d’administrateur interactives qui vous ont été fournies dans le portail.  
+      a.  Connectez-vous au collecteur de journaux via une connexion SSH, à l’aide des informations d’identification d’administrateur interactives qui vous ont été fournies dans le portail.  
   
       b.  Exécutez l’utilitaire de configuration de collecteur avec le jeton d’accès fourni dans la commande ```sudo collector_config \<access token>```.  
      
@@ -143,7 +143,7 @@ Configurez vos pare-feu réseau et proxys pour exporter régulièrement les jour
   
 ### <a name="step-5---verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>Étape 5 : vérifier la réussite du déploiement dans le portail Cloud App Security
 
-Consultez l’état du collecteur dans le tableau **Collecteur de journaux** et vérifiez que l’état est **Connecté**. Si l’état est **Créé**, il est possible que la connexion du collecteur de journaux et l’analyse ne soient pas effectuées.
+Consultez l’état du collecteur dans le tableau **Collecteur de journaux** et vérifiez que l’état est **Connecté**. Si l’état est **Créé**, il est possible que la connexion du collecteur de journaux et l’analyse ne soient pas terminées.
 
 ![état du collecteur de journaux](./media/log-collector-status.png)
 
@@ -153,9 +153,9 @@ Si vous rencontrez des problèmes lors du déploiement, consultez [Dépannage de
 
 ### <a name="optional---create-custom-continuous-reports"></a>Facultatif : Créer des rapports continus personnalisés
 
-Après avoir vérifié que les journaux sont en cours de chargement dans Cloud App Security et que les rapports sont générés, vous pouvez créer des rapports personnalisés. Vous pouvez maintenant créer des rapports de découverte personnalisés basés sur les groupes d’utilisateurs Azure Active Directory. Par exemple, si vous voulez afficher l’utilisation cloud de votre service marketing, vous pouvez importer le groupe marketing à l’aide de la fonctionnalité d’importation des groupes d’utilisateurs, puis créer un rapport personnalisé pour ce groupe. Vous pouvez également personnaliser un rapport en fonction d’une balise d’adresse IP ou de plages d’adresses IP.
+Après avoir vérifié que les journaux sont bien chargés dans Cloud App Security et que les rapports sont générés, vous pouvez créer des rapports personnalisés. Vous pouvez maintenant créer des rapports de découverte personnalisés basés sur les groupes d’utilisateurs Azure Active Directory. Par exemple, si vous voulez afficher l’utilisation cloud de votre service marketing, vous pouvez importer le groupe marketing à l’aide de la fonctionnalité d’importation des groupes d’utilisateurs, puis créer un rapport personnalisé pour ce groupe. Vous pouvez également personnaliser un rapport en fonction d’une balise d’adresse IP ou de plages d’adresses IP.
 
-1. Dans le portail Cloud App Security, dans les Paramètres (roue crantée), sélectionnez **Paramètres Cloud Discovery**, puis **Gérer les rapports continus**. 
+1. Dans le portail Cloud App Security, dans les Paramètres (roue crantée), sélectionnez **Paramètres Cloud Discovery**, puis **Rapports continus**. 
 2. Cliquez sur le bouton **Créer un rapport** et renseignez les champs.
 3. Sous **Filtres**, vous pouvez filtrer les données par source de données, par [groupe d’utilisateurs importé](user-groups.md) ou par [balises et plages d’adresses IP](ip-tags.md). 
 
@@ -164,7 +164,7 @@ Après avoir vérifié que les journaux sont en cours de chargement dans Cloud A
 
 ![Rapport continu personnalisé](./media/custom-continuous-report.png)
 
-## <a name="see-also"></a>Voir aussi  
+## <a name="next-steps"></a>Étapes suivantes 
 [Utilisation des données Cloud Discovery](working-with-cloud-discovery-data.md)   
 
 [Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier.](https://premier.microsoft.com/)  
