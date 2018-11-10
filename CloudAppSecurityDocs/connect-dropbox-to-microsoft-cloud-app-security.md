@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 10/29/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 4acd93f4-b885-4e1f-a385-43b5db02a3ee
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 347a0fe95fc27212e76f294047c408e2b6aaa36d
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: b3e6e9a25c419aa9453e4771b477c068b9ad902c
+ms.sourcegitcommit: bb010d8dd0a6eff39df31e33c2cc9c37ec321b46
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143698"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50217235"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -51,14 +51,14 @@ Cette section fournit des instructions pour connecter Microsoft Cloud App Securi
   
 8.  Vérifiez la connexion en cliquant sur **Test API** (Tester l’API).  
   
-     Le test peut prendre quelques minutes. Une fois averti que la connexion a réussi, cliquez sur **Fermer**.  
+     Le test peut prendre quelques minutes. Une fois que vous êtes averti que la connexion a réussi, cliquez sur **Fermer**.  
   
-Après avoir connecté Dropbox, vous recevrez les événements des 60 jours précédant la connexion.
+Après avoir connecté Dropbox, vous recevez les événements des 60 jours précédant la connexion.
 
 > [!NOTE] 
 > Tout événement Dropbox pour l’ajout d’un fichier est affiché dans Cloud App Security en tant que fichier de chargement pour l’aligner sur toutes les autres applications connectées à Cloud App Security. 
  
-## <a name="see-also"></a>Voir aussi  
+## <a name="next-steps"></a>Étapes suivantes 
 [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)   
 
 [Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier.](https://premier.microsoft.com/)  

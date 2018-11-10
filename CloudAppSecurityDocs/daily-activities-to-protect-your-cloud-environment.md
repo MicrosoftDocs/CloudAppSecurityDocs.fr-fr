@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/10/2018
+ms.date: 10/31/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,19 +13,25 @@ ms.technology: ''
 ms.assetid: a835fa24-15c5-4bbb-a25a-688444040f1f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b71ff344dc6d1e821a3462ff36f302d49d90b281
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 71fe930881b792661b782b9d88782c9272216702
+ms.sourcegitcommit: d70e5bf78a1db6d9e277c486638a08a474942edb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143426"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50745678"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
 # <a name="working-with-the-dashboard"></a>Utilisation du tableau de bord
-Une fois que Microsoft Cloud App Security est opérationnel, vous devez configurer des flux de données, approuver les applications que vos utilisateurs doivent pouvoir utiliser et définir des stratégies pour surveiller votre environnement cloud. Vous pouvez ensuite utiliser Cloud App Security pour contrôler et protéger votre cloud, et pour gérer les risques.  
+Cet article décrit la procédure à suivre au quotidien avec Cloud App Security.  Une fois que Microsoft Cloud App Security est opérationnel, vous devez :
 
-Cette rubrique décrit la procédure à suivre au quotidien avec Cloud App Security.  
+- Configurer les flux de données
+- Approuver les applications que vous voulez autoriser les utilisateurs à utiliser 
+- Configurer des stratégies pour surveiller votre environnement cloud. 
+
+Vous pouvez ensuite utiliser Cloud App Security pour contrôler et protéger votre cloud, et pour gérer les risques.  
+
+
 
 ## <a name="check-the-dashboard"></a>Consulter le tableau de bord  
 Le tableau de bord Cloud App Security donne une vue d’ensemble des activités et des fonctionnalités, notamment :
@@ -37,7 +43,7 @@ Le tableau de bord Cloud App Security donne une vue d’ensemble des activités 
 - Tendances de l’utilisation des applications connectées dans votre environnement cloud
 - Utilisateurs principaux par détection de menace
 
-Nous vous recommandons de vérifier le tableau de bord tous les jours pour voir les nouvelles alertes déclenchées. Le tableau de bord est aussi l’endroit idéal pour garder un œil sur l’intégrité de votre environnement cloud, car il vous donne un aperçu de ce qui se passe au sein de tout votre environnement cloud.  
+Nous vous recommandons de vérifier le tableau de bord tous les jours pour voir les nouvelles alertes déclenchées. C’est un bon endroit pour surveiller l’intégrité de votre environnement cloud. Le tableau de bord vous permet de vous faire une idée de ce qui se passe.  
 
 ![Tableau de bord Cloud App Security](./media/dashboard.png "tableau de bord")  
 

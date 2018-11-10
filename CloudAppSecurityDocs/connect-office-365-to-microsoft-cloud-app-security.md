@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/30/2018
+ms.date: 10/29/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: a79bf393-0d2c-44b6-8dab-86c740fd7333
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 1960d9801ad24b880bd2f4eaad3947b26d87437e
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: ef40ee52ca592de3feef2998ea6b753436c4d0fa
+ms.sourcegitcommit: bb010d8dd0a6eff39df31e33c2cc9c37ec321b46
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144463"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50217255"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -38,7 +38,7 @@ Cloud App Security prend en charge les applications Office 365 suivantes :
 - SharePoint
 - OneDrive
 - Teams (apparaît uniquement une fois que des activités Teams sont détectées dans le portail)
-- Power BI (apparaît uniquement une fois que des activités Power BI sont détectées dans le portail et nécessite l’activation de l’audit)
+- Power BI (apparaît seulement une fois que des activités Power BI sont détectées dans le portail, et nécessite l’activation de l’audit)
 - Exchange (apparaît uniquement une fois que des activités Exchange sont détectées dans le portail et nécessite l’activation de l’audit)
 
  
@@ -65,7 +65,7 @@ Cloud App Security prend en charge les applications Office 365 suivantes :
 > [!NOTE] 
 > Après la connexion d’Office 365, des données qui remontent à une semaine s’affichent, dont les applications tierces connectées à Office 365 qui extraient des API. Pour les applications tierces qui n’extrayaient pas d’API avant la connexion, vous voyez les événements à partir du moment où vous avez connecté Office 365, car Cloud App Security active toutes les API désactivées par défaut.
 
-## <a name="see-also"></a>Voir aussi  
+## <a name="next-steps"></a>Étapes suivantes  
 [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)   
 
 [Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier.](https://premier.microsoft.com/)  

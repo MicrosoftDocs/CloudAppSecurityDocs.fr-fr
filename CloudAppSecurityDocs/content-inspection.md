@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/11/2018
+ms.date: 10/29/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 2401adbc-0011-4938-9e3a-a4c719a2f619
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c40e7081cab923f5778912425e3f34776b849bbd
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 534a5e6c89fff6899c31db8377590ec492fc454e
+ms.sourcegitcommit: bb010d8dd0a6eff39df31e33c2cc9c37ec321b46
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143766"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50217258"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -31,22 +31,22 @@ Cet article décrit le processus suivi par Microsoft Cloud App Security lors de 
 
 L’inspection du contenu Cloud App Security fonctionne comme suit :
 1. Cloud App Security effectue une analyse en quasi temps réel des lecteurs et événements qui sont détectés comme étant nouveaux ou modifiés.
-2. Une fois cette opération terminée, Cloud App Security effectue une analyse continue de tous les fichiers pertinents dans tous les lecteurs.  
+2. Une fois cette analyse terminée, Cloud App Security effectue une analyse continue de tous les fichiers pertinents dans tous les lecteurs.  
 
-Les fichiers de l’analyse en quasi temps réel et les fichiers de l’analyse continue sont ajoutés à la file d’attente pour l’inspection. L’ordre des fichiers dans la file d’attente d’analyse est défini selon l’activité sur les fichiers et l’analyse de vos lecteurs. Les fichiers sont analysés uniquement si les métadonnées de fichiers indiquent qu’il s’agit d’un type MIME pris en charge. Cette analyse concerne les fichiers qui sont appropriés pour l’analyse de données (documents, images, présentations, feuilles de calcul, fichiers texte et compressés/d’archive).  
+Les fichiers de l’analyse en quasi temps réel et les fichiers de l’analyse continue sont ajoutés à la file d’attente pour l’inspection. L’ordre des fichiers dans la file d’attente d’analyse est défini selon l’activité sur les fichiers et l’analyse de vos lecteurs. Les fichiers sont analysés seulement si les métadonnées des fichiers indiquent qu’il s’agit d’un type MIME pris en charge. Cette analyse concerne les fichiers appropriés pour l’analyse des données (documents, images, présentations, feuilles de calcul, fichiers texte et compressés/archives).  
 
-Une fois qu’un fichier est analysé, les événements suivants se produisent :
+Une fois qu’un fichier est analysé, les actions suivantes se produisent :
 
 1. Cloud App Security applique toutes vos stratégies personnalisées qui sont liées aux métadonnées et non au contenu proprement dit, par exemple une stratégie qui vous avertit quand la taille des fichiers dépasse 20 Mo ou lorsque des fichiers docx sont enregistrés dans OneDrive. 
 
-2. Si une stratégie nécessite une inspection du contenu et que le fichier répond aux exigences d’inspection du contenu, le contenu est mis en file d’attente pour l’inspection. La longueur de la file d’attente dépend de la taille du client et du nombre de fichiers qui nécessitent une analyse. 
+2. Si une stratégie nécessite une inspection du contenu et que le fichier répond aux critères d’inspection du contenu, le contenu est mis en file d’attente pour inspection. La longueur de la file d’attente dépend de la taille du client et du nombre de fichiers qui nécessitent une analyse. 
 
-3. À ce stade, vous pouvez afficher l’état de l’inspection du contenu en accédant à **Examiner** > **Fichiers** et en cliquant sur un fichier. Dans le tiroir de fichier qui s’ouvre avec les détails du fichier, l’**état d’inspection du contenu** indique **Terminé**, **En attente**, **Non applicable** (si le type de fichier n’est pas pris en charge) ou un message d’échec. Pour plus d’informations sur les messages d’échec relatifs à l’analyse du contenu, consultez [Résolution des problèmes d’inspection du contenu](troubleshooting-content-inspection.md).
+3. À ce stade, vous pouvez afficher l’état de l’inspection du contenu en accédant à **Examiner** > **Fichiers** et en cliquant sur un fichier. Dans le tiroir de fichier qui s’ouvre avec les détails du fichier, **l’état d’inspection du contenu** indique **Terminé**, **En attente**, **Non applicable** (si le type de fichier n’est pas pris en charge) ou un message d’échec. Pour plus d’informations sur les messages d’échec relatifs à l’analyse du contenu, consultez [Résolution des problèmes d’inspection du contenu](troubleshooting-content-inspection.md).
 
 > [!NOTE]
 > Si vous voyez un tiret dans l’état d’analyse, cela signifie que le fichier ne figure pas dans une file d’attente en vue d’être analysé. Pour plus d’informations sur la définition de stratégies d’inspection du contenu, consultez [Stratégies de fichier](data-protection-policies.md).
 
-Les stratégies d’analyse d’inspection du contenu intégrées peuvent rechercher les éléments suivants :
+Les stratégies d’analyse d’inspection du contenu intégrées peuvent rechercher les éléments suivants :
 
 - Adresses e-mail 
 - Numéros de carte de crédit 
@@ -73,13 +73,13 @@ Les stratégies d’analyse d’inspection du contenu intégrées peuvent recher
 Le moteur d’inspection du contenu Cloud App Security :
 -   Prend en charge tous les caractères Unicode
 -   Couvre plus de 1 000 types de fichiers
--   Plusieurs langues sont prises en charge, tout particulièrement dans les fichiers qui utilisent des jeux de caractères Unicode. Veillez à définir vos stratégies pour prendre en charge ces langues. Par exemple, si vous recherchez des mots clés, vous devez les saisir dans les langues que vous prévoyez d’utiliser.
--   Dans les types de fichiers texte qui utilisent du codage non-Unicode, par exemple le codage chinois GB2312, la comparaison avec les mots clés chinois Unicode ne fonctionnera pas comme prévu.
+-   Plusieurs langues sont prises en charge, tout particulièrement dans les fichiers qui utilisent des jeux de caractères Unicode. Veillez à définir vos stratégies de façon à prendre en compte ces langues. Par exemple, si vous recherchez des mots clés, vous devez entrer les mots clés pour les langues que vous prévoyez d’utiliser.
+-   Dans les types de fichiers texte qui utilisent un codage non-Unicode, par exemple le codage chinois GB2312, la comparaison avec les mots clés chinois Unicode ne fonctionnera pas comme attendu.
 -   Pour les types de fichiers qui s’appuient sur des bibliothèques tierces, la mise en correspondance des chaînes et des mots ne fonctionnera peut-être pas toujours comme prévu. C’est ce qui arrive fréquemment avec les fichiers (par exemple, les fichiers binaires) dans lesquels l’inspection du contenu s’appuie sur des bibliothèques tierces qui renvoient des chaînes en Java pour les jeux de caractères et de langues.
 
 
 
-## <a name="see-also"></a>Voir aussi  
+## <a name="next-steps"></a>Étapes suivantes
 [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)   
 
 [Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier.](https://premier.microsoft.com/)  

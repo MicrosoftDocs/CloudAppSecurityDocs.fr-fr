@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 10/29/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 776d7589-acdb-4cb6-99a0-3be2f7b6aab2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 52b24a6aa80ee3283a5f2f6b96a3b1b51ce07d8b
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 1a2830cb7813eb5b86fc56751f628b6b9d5a630e
+ms.sourcegitcommit: bb010d8dd0a6eff39df31e33c2cc9c37ec321b46
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143936"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50217303"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -35,7 +35,7 @@ Cette section fournit des instructions pour connecter Microsoft Cloud App Securi
   
      **Performance**, **Enterprise**, **Unlimited** ou **Developer**.  
   
-     L’édition **Professional** n’a pas l’API REST par défaut, mais elle peut être ajoutée sur demande.  
+     L’édition **Professional** ne comprend pas l’API REST par défaut, mais elle peut être ajoutée sur demande.  
   
      Vérifiez que l’API REST est disponible et activée dans votre édition, comme suit :  
   
@@ -43,10 +43,10 @@ Cette section fournit des instructions pour connecter Microsoft Cloud App Securi
   
     -   Sous **Gérer les utilisateurs**, accédez à la page **Profils**.  
   
-         ![salesforce, gérer les profils des utilisateurs](./media/salesforce-manageusers-profiles.png "salesforce, gérer les profils des utilisateurs")  
+         ![Salesforce - gérer les profils des utilisateurs](./media/salesforce-manageusers-profiles.png "Salesforce - gérer les profils des utilisateurs")  
   
     -   Créez un profil en cliquant sur **Nouveau**. 
-    - Choisissez le profil que vous venez de créer pour déployer Cloud App Security, puis cliquez sur **Modifier**. Il s’agit du profil à utiliser pour le compte de service Cloud App Security pour configurer le connecteur d’applications.  
+    - Choisissez le profil que vous venez de créer pour déployer Cloud App Security, puis cliquez sur **Modifier**.  Il s’agit du profil à utiliser pour le compte de service Cloud App Security pour configurer le connecteur d’applications.  
   
          ![salesforce, modifier le profil](./media/salesforce-edit-profile.png "salesforce, modifier le profil")  
   
@@ -56,7 +56,7 @@ Cette section fournit des instructions pour connecter Microsoft Cloud App Securi
         - **Gérer le contenu Salesforce CRM**
         - **Gérer les utilisateurs**
         
-        Si ces cases ne sont pas cochées, vous devez peut-être contacter Salesforce pour les ajouter à votre compte.  
+        Si ces cases ne sont pas cochées, il peut être nécessaire de contacter Salesforce pour les ajouter à votre compte.  
              
 3.  Si **Salesforce CRM Content** (Contenu CRM Salesforce) est activé pour votre organisation, vérifiez que le compte administratif actuel est également activé.  
   
@@ -86,13 +86,13 @@ Cette section fournit des instructions pour connecter Microsoft Cloud App Securi
   
 6.  Dans la page des paramètres Salesforce, sous l’onglet API, cliquez sur **suivez ce lien**, en fonction de l’instance que vous souhaitez installer.  
   
-7.  La page de connexion à Salesforce s’ouvre. Entrez vos informations d’identification pour autoriser Cloud App Security à accéder à l’application Salesforce de votre équipe.  
+7.  Ceci ouvre la page de connexion à Salesforce. Entrez vos informations d’identification pour autoriser Cloud App Security à accéder à l’application Salesforce de votre équipe.  
   
-     ![salesforce, connexion](./media/salesforce-logon.png "salesforce, connexion")  
+     ![Salesforce - connexion](./media/salesforce-logon.png "Salesforce - connexion")  
   
 8.  Salesforce vous demande si vous voulez autoriser Cloud App Security à accéder au journal d’informations et d’activité de votre équipe, et à effectuer toute activité en tant que membre de l’équipe. Pour continuer, cliquez sur **Autoriser**.  
   
-9. À ce stade, vous recevez une notification de réussite ou d’échec concernant le déploiement. Cloud App Security est désormais autorisé dans Salesforce.com.  
+9. À ce stade, vous recevez une notification de réussite ou d’échec du déploiement. Cloud App Security est désormais autorisé dans Salesforce.com.  
   
 10. De retour dans la console Cloud App Security, vous devez recevoir un message indiquant que Salesforce a été correctement connecté.  
   
@@ -101,7 +101,7 @@ Cette section fournit des instructions pour connecter Microsoft Cloud App Securi
      Le test peut prendre quelques minutes. Une fois que vous avez reçu une notification de réussite, cliquez sur **Terminé**.  
   
   
-Après avoir connecté Salesforce, vous recevrez les événements comme suit : déclencheurs à partir du moment de connexion, événements de connexion et piste d’audit d’installation des 60 jours précédant la connexion, surveillance des événements remontant à 30 jours ou 1 jour, en fonction de votre licence de surveillance des événements Salesforce. L’API Cloud App Security communique directement avec les API disponibles dans Salesforce. Comme Salesforce limite le nombre d’appels d’API qu’il peut recevoir, Cloud App Security prend ce point en considération et respecte la limite. Les API Salesforce envoient chaque réponse avec un champ pour les compteurs d’API, notamment le total disponible et le total restant. Cloud App Security calcule en pourcentage et veille à toujours garder 10 % des appels d’API disponibles restants. 
+Après avoir connecté Salesforce, vous recevez les événements comme suit : déclencheurs à partir du moment de la connexion, événements de connexion et piste d’audit d’installation pour les 60 jours précédant la connexion, surveillance des événements remontant à 30 jours ou à 1 jour, en fonction de votre licence Salesforce EventMonitoring. L’API Cloud App Security communique directement avec les API disponibles dans Salesforce. Comme Salesforce limite le nombre d’appels d’API qu’il peut recevoir, Cloud App Security prend ce point en considération et respecte la limite. Les API Salesforce envoient chaque réponse avec un champ pour les compteurs d’API, notamment le total disponible et le total restant. Cloud App Security calcule en pourcentage et veille à toujours garder 10 % des appels d’API disponibles restants. 
 
 > [!NOTE]
 > La limitation Cloud App Security est calculée uniquement à partir de ses propres appels d’API avec Salesforce, et non avec ceux des autres applications qui effectuent des appels d’API avec Salesforce.
@@ -110,12 +110,12 @@ Après avoir connecté Salesforce, vous recevrez les événements comme suit : 
 
 Les événements Salesforce sont traités par Cloud App Security de la façon suivante : 
   
-- Événements de connexion toutes les 15 minutes
-- Piste d’audit d’installation toutes les 15 minutes
+- Événements de connexion toutes les 15 minutes
+- Piste d’audit d’installation toutes les 15 minutes
 - Les journaux de Salesforce suivent l’activité d’utilisation sur une période de 24 heures, de 00:00 à 23:59 heure UTC. Les événements dans Salesforce génèrent des données de journal en temps réel. Toutefois, les fichiers journaux sont générés par Salesforce le lendemain d’un événement, pendant les heures creuses. Par conséquent, les données du fichier journal ne sont disponibles qu’au moins un jour après l’événement. Pour plus d’informations sur les événements Salesforce, consultez [Using Event Monitoring](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/using_resources_event_log_files.htm) (Utilisation de la surveillance des événements).
 
 
-## <a name="see-also"></a>Voir aussi  
+## <a name="next-steps"></a>Étapes suivantes  
 [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)   
 
 [Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier.](https://premier.microsoft.com/)  

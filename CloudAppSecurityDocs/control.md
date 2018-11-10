@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 10/29/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: bc11bbfe-ec6c-458c-8302-8112c383199d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b6d426b1b59dc8f62322d404b1cd18e829611ba6
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: e67ba01b00af1f8af9bdd5e282f0fac74afa0183
+ms.sourcegitcommit: bb010d8dd0a6eff39df31e33c2cc9c37ec321b46
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143970"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50217337"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -31,7 +31,7 @@ Quand vous examinez vos alertes ouvertes, accédez au Centre de stratégie pour 
 
 -   Dans le tableau de bord Cloud App Security, cliquez sur **Contrôle**, puis sur **Stratégies**.  
 
--   Sélectionnez une stratégie spécifique pour afficher la liste **Violation maintenant** des correspondances de stratégie qui n’ont pas déclenché d’alertes.  
+-   Sélectionnez une stratégie spécifique pour afficher la liste **Mise en correspondance maintenant** des correspondances de stratégie qui n’ont pas déclenché d’alertes.  
 
 -   Cliquez sur les violations une à une, puis décidez ce qu’il faut faire pour chacune d’elles. Pour plus d’informations sur les actions de gouvernance, consultez les figures suivantes.  
 
@@ -49,7 +49,7 @@ Quand vous examinez vos alertes ouvertes, accédez au Centre de stratégie pour 
 
      Vous pouvez cliquer sur **Correspondances** pour voir les numéros de carte de crédit.  
 
-     ![Correspondances de contenu CCN](./media/content-matches-ccn.png "correspondances de contenu ccn")  
+     ![Correspondances de contenu - numéros de carte de crédit](./media/content-matches-ccn.png "Correspondances de contenu - numéros de carte de crédit")  
 
 ## <a name="apply-governance-actions"></a>Appliquer des actions de gouvernance  
 Vous pouvez appliquer des actions de gouvernance depuis des stratégies, depuis des alertes et depuis le journal **Fichier**.  
@@ -78,13 +78,13 @@ Cloud App Security vous permet d’introduire vos migrations en vous faisant sav
 ### <a name="migrate-your-users-to-a-new-app"></a>Migrer vos utilisateurs vers une nouvelle application  
 Imaginons le scénario suivant : vous venez d’acheter Office 365 et vous voulez que tous les utilisateurs de votre organisation arrêtent d’utiliser toutes les autres applications de stockage cloud pour commencer à utiliser OneDrive. Voici comment vous pouvez procéder :  
 
-1. Accédez à votre **tableau de bord Cloud Discovery** et sous **Catégories**, filtrez les applications par **Stockage cloud**. Ensuite, triez les résultats par **Utilisateurs** ou **Adresses IP** et déterminez quelle est l’application la plus populaire.  
+1. Accédez à votre **tableau de bord Cloud Discovery** et, sous **Catégories**, filtrez les applications par **Stockage cloud**. Triez les résultats par **Utilisateurs** ou par **Adresses IP**, et déterminez quelle est l’application la plus populaire.  
 
 2. Vous pouvez voir quels utilisateurs utilisent d’autres applications. Vous pouvez également explorer ces applications de façon détaillée et avertir les utilisateurs que vous voulez qu’ils migrent vers OneDrive, comme suit :
 
-   1.  Dans votre **tableau de bord Cloud Discovery**, choisissez **Dropbox**, puis choisissez l’onglet **Adresse IP** ou **Utilisateurs**.  
+   1. Dans votre **tableau de bord Cloud Discovery**, choisissez **Dropbox**, puis choisissez l’onglet **Adresse IP** ou **Utilisateurs**.  
 
-   2.  Choisissez la flèche ![Icône de flèche](./media/arrow-icon.png "icône de flèche") et choisissez **Exporter**.  
+   2. Choisissez l’icône de flèche **Exporter** ![Icône de flèche](./media/arrow-icon.png "icône de flèche") et choisissez vos options d’exportation.  
 
 ### <a name="find-more-secure-alternatives"></a>Trouver des alternatives plus sécurisées  
 Le catalogue de services Cloud App Security peut vous aider à trouver des alternatives satisfaisantes pour votre organisation et ainsi éviter les applications risquées auxquelles vos utilisateurs peuvent avoir recours.  
@@ -99,7 +99,7 @@ Imaginons le scénario suivant : vous envisagez d’acheter une application de 
 
 4.   Si vous décidez que vous voulez acheter une licence d’entreprise pour toute l’organisation, vous pouvez examiner la colonne **Utilisateurs**. Vous pouvez voir ici ce qui est déjà le plus répandu parmi vos utilisateurs, si ces applications sont fiables et quelles sont leurs fonctionnalités de sécurité avant de prendre votre décision.  
 
-## <a name="see-also"></a>Voir aussi  
+## <a name="next-steps"></a>Étapes suivantes
 Pour savoir comment utiliser et configurer des stratégies permettant de contrôler l’utilisation des applications cloud, consultez [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md).   
 
 Les clients Premier peuvent également choisir Cloud App Security directement depuis le [portail Premier](https://premier.microsoft.com/).  

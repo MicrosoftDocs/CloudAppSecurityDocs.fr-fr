@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/11/2018
+ms.date: 10/28/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: ab9bc377-d2f5-4f4c-a419-f1728a15d1c7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: dc5249ae183da37293920aade12346aaca46eb32
-ms.sourcegitcommit: 82052a88acbc33893f7b9e0d10cc2e8c652ef003
+ms.openlocfilehash: a6ac7a6f8fcfbcde01dbcdcb9eaaaac82da3c8bc
+ms.sourcegitcommit: d70e5bf78a1db6d9e277c486638a08a474942edb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49349622"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50745729"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -78,6 +78,9 @@ Cette détection exploite la capacité de Cloud App Security à surveiller le co
 **Transfert de boîte de réception suspect**
 
 - Cette détection recherche les règles de transfert des e-mails suspects, par exemple, si un utilisateur a créé une règle de boîte de réception assurant le transfert d’une copie de tous les e-mails à une adresse externe. 
+ 
+> [!NOTE]
+> Cloud App Security vous avertit seulement pour chaque règle de transfert qui est identifiée comme suspecte, en fonction du comportement habituel pour l’utilisateur. 
 
 **Activités inhabituelles (par utilisateur)**<br>
 Ces détections identifient les utilisateurs dans les cas suivants :
@@ -92,6 +95,13 @@ Ces stratégies recherchent les activités dans une seule session en prenant en 
 
 **Plusieurs tentatives de connexion infructueuses**
 - Cette détection identifie des utilisateurs qui tentent de se connecter plusieurs fois sans succès dans une seule session en prenant en compte la base de référence apprise, ce qui peut indiquer une tentative de violation. 
+
+**Exfiltration de données vers des applications non approuvées**
+- Cette stratégie est activée automatiquement pour vous avertir quand un utilisateur ou une adresse IP utilise une application qui n’est pas approuvée pour effectuer une activité qui ressemble à une tentative d’exfiltration des informations en dehors de votre organisation.
+
+**Plusieurs activités de suppression de machine virtuelle**
+- Cette stratégie profile votre environnement et déclenche des alertes quand des utilisateurs suppriment plusieurs machines virtuelles dans une même session, relativement à la base de référence de votre organisation. Ceci peut indiquer une tentative de violation.
+
 
 ## Activer la gouvernance automatisée<a name="adp-automated-gov"></a>
 

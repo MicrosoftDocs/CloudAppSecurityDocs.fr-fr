@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/11/2018
+ms.date: 10/29/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,18 @@ ms.technology: ''
 ms.assetid: a612d87e-5471-4add-b4b1-dbbb530f2b61
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f9a1bd913c139b7af83aa210bc185c83a5b4bd0a
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 3d70d71364157d6e3eca2a97574a2cbd82020e78
+ms.sourcegitcommit: bb010d8dd0a6eff39df31e33c2cc9c37ec321b46
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143245"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50217184"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
 
 # <a name="use-a-custom-log-parser"></a>Utiliser un analyseur de journal personnalisé
-Cloud App Security vous permet de configurer un analyseur personnalisé correspondant au format de vos journaux. Vous pouvez ainsi les utiliser avec Cloud Discovery, même s’ils proviennent d’un pare-feu ou d’un appareil qui n’est pas explicitement pris en charge par Cloud App Security. 
+Cloud App Security vous permet de configurer un analyseur personnalisé correspondant au format de vos journaux et de traiter le format de vos journaux pour qu’ils soient utilisables avec Cloud Discovery. En règle générale, vous utilisez un analyseur personnalisé si le pare-feu ou l’appareil n’est pas explicitement pris en charge par Cloud App Security. 
 
 L’analyseur personnalisé vous permet d’utiliser les journaux de pare-feu non pris en charge. 
 
@@ -43,7 +43,7 @@ Pour configurer un analyseur CSV personnalisé :
 
 4. Collectez les journaux de votre pare-feu et de votre proxy, par le biais desquels les utilisateurs de votre organisation accèdent à Internet. Veillez à collecter les journaux pendant les heures de pointe représentatives de toute l’activité utilisateur dans votre organisation. 
 
-5. Ouvrez les journaux à traiter dans un éditeur de texte et examinez leur format pour vérifier que les noms des colonnes dans le journal correspondent aux champs de l’écran **Format de journal personnalisé**.
+5. Ouvrez les journaux que vous voulez traiter dans un éditeur de texte. Examinez leur format pour vérifier que les noms des colonnes dans le journal correspondent aux champs de l’écran **Format de journal personnalisé**.
 
    ![analyseur de journal personnalisé](./media/log-data.png) 
 
@@ -65,12 +65,12 @@ Pour configurer un analyseur CSV personnalisé :
 10. Une fois le chargement terminé, un message d’état s’affiche dans le coin supérieur droit de votre écran pour vous informer que le journal a correctement été chargé.  
   
 11. Une fois que vos fichiers journaux sont chargés, un certain temps est nécessaire pour leur extraction et leur analyse.  
-    Après le traitement de vos fichiers journaux, vous recevrez un e-mail pour vous avertir que l’opération est terminée. 
+    Après le traitement de vos fichiers journaux, vous recevez un e-mail pour vous avertir que l’opération est terminée. 
   
-12. Une bannière de notification s’affiche dans la barre d’état en haut du portail pour vous informer de l’état de traitement de vos fichiers journaux.  
-    ![barre de menus de traitement des fichiers journaux](./media/processing-log-file-menu-bar.png) 
+12. Une bannière de notification apparaît dans la barre d’état en haut du **tableau de bord Cloud Discovery**. La bannière se met à jour avec l’état du traitement de vos fichiers journaux.  
+    ![barre de menus du traitement des fichiers journaux](./media/processing-log-file-menu-bar.png) 
    
-13. Une fois les journaux téléchargés, une notification vous informant que le traitement du fichier journal s’est terminé correctement doit s’afficher. À ce stade, vous pouvez afficher le rapport en cliquant sur le lien dans la barre d’état, ou en accédant à la dent Paramètres et en sélectionnant **Paramètres Cloud Discovery**.   
+13. Une fois les journaux téléchargés, une notification vous informant que le traitement du fichier journal s’est terminé correctement doit s’afficher. À ce stade, vous pouvez afficher le rapport en cliquant sur le lien dans la barre d’état, ou en accédant à l’icône d’engrenage Paramètres et en sélectionnant **Paramètres Cloud Discovery**.   
   
      ![onglet Paramètres Cloud Discovery](./media/discovery-settings-tab.png)
 14. Sélectionnez ensuite **Gérer des rapports d’instantanés** et votre rapport d’instantané.
@@ -83,7 +83,7 @@ Pour configurer un analyseur CSV personnalisé :
 
 
 
-## <a name="see-also"></a>Voir aussi
+## <a name="next-steps"></a>Étapes suivantes
  
 [Créer des rapports d’instantanés Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
 

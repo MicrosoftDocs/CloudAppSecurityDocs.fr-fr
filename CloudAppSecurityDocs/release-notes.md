@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/9/2018
+ms.date: 10/28/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,32 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 84db548efef74a84e2b97419eb6f5d213512b6c7
-ms.sourcegitcommit: 53a1c990ff06674c26563a9ebcb1979818c3c063
+ms.openlocfilehash: 2c82311bacf965d12e7f23aa4769862aba6d3207
+ms.sourcegitcommit: d70e5bf78a1db6d9e277c486638a08a474942edb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881905"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50745746"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
 
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Nouveautés de Microsoft Cloud App Security
 
+
+## <a name="cloud-app-security-release-133-134-135"></a>Cloud App Security version 133, 134, 135
+
+Publication : octobre 2018
+
+**Nouvelles stratégies de détection des anomalies progressivement déployées**
+- La nouvelle stratégie Exfiltration de données vers une application non approuvée est activée automatiquement pour vous avertir quand un utilisateur ou une adresse IP utilise une application qui n’est pas approuvée pour effectuer une activité qui ressemble à une tentative d’exfiltration des informations en dehors de votre organisation.
+- La nouvelle stratégie Plusieurs activités de suppression de machine virtuelle profile votre environnement et déclenche des alertes quand des utilisateurs suppriment plusieurs machines virtuelles dans une même session, relativement à la base de référence de votre organisation.
+
+**Service de classification des données disponible pour la région Asie-Pacifique**
+- Le service de classification des données est désormais disponible pour les clients de la région Asie-Pacifique. Pour obtenir la liste complète de la prise en charge par région, consultez [Intégration des services de classification des données Microsoft](dcs-inspection.md).
+
+**Prise en charge d’i-Filter par Cloud Discovery**
+-  La fonctionnalité Cloud Discovery de Cloud App Security intègre désormais une prise en charge améliorée de l’analyseur syslog i-Filter.
 
 ## <a name="cloud-app-security-release-132"></a>Cloud App Security version 132
 

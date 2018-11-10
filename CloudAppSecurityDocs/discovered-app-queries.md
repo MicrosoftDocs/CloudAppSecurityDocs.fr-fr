@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/8/2018
+ms.date: 10/31/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 1a2d3aeb-4e28-4c73-804b-95e862b08e43
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9663e2c6948565f1a9f7118d88a4d85087588811
-ms.sourcegitcommit: da651fb36d26d0dfe796b988e86205f41f7dc5de
+ms.openlocfilehash: 65dfb8411910747db2d12f6757218fca93b362f2
+ms.sourcegitcommit: d70e5bf78a1db6d9e277c486638a08a474942edb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48251554"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50745763"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
 # <a name="discovered-app-filters-and-queries"></a>Filtres et requêtes d’applications découvertes
+Quand vous avez un grand nombre d’applications découvertes, il est pratique de les filtrer et de leur appliquer des requêtes. Cet article décrit les filtres disponibles et comment faire des requêtes sur vos applications découvertes.  
 
 ## <a name="discovered-app-filters"></a>Filtres d’application découverte
 
@@ -31,15 +32,15 @@ Il existe des filtres d’application découverte de base et avancés. Pour obte
 ![Applications découvertes](./media/discovered-apps.png)  
 
 
-- **Balise d’application** : Indiquez si l’application a été approuvée, non approuvée ou non marquée. Par ailleurs, vous pouvez créer une balise personnalisée pour votre application et l’utiliser pour filtrer des types spécifiques d’applications. 
+- **Balise d’application** : Indiquez si l’application a été approuvée, non approuvée ou non marquée. Par ailleurs, vous pouvez créer une balise personnalisée pour votre application, puis l’utiliser pour filtrer des types spécifiques d’applications. 
 - **Applications et domaines** : Permet de rechercher des applications spécifiques ou des applications utilisées dans des domaines spécifiques. 
-- **Catégories** : Le filtre de catégories, qui se trouve à gauche de la page, vous permet de rechercher des types d’applications selon des catégories d’applications, par exemple, des applications de réseau social, des applications de stockage cloud, etc. Vous pouvez sélectionner plusieurs catégories à la fois, ou une seule catégorie, puis leur appliquer des filtres de base et avancés.
-- **Facteur de risque de conformité** : Permet de rechercher une norme, une certification et une conformité spécifique auxquelles l’application doit se conformer (HIPAA, ISO 27001, SOC 2, PCI-DSS, etc.).
-- **Facteur de risque général** : Permet de rechercher des facteurs de risque général comme la popularité auprès des consommateurs, les paramètres régionaux du centre de données, etc.
-- **Score de risque** : Permet de filtrer les applications par score de risque pour que vous puissiez vous concentrer uniquement sur les applications très risquées, par exemple. Vous pouvez également remplacer le score de risque défini par Cloud App Security. Pour plus d’informations, consultez [Utilisation du score de risque](risk-score.md).
+- **Catégories** : Le filtre de catégories, qui se trouve à gauche de la page, vous permet de rechercher des types d’applications selon des catégories d’applications. Voici des exemples de catégories : applications de réseaux sociaux, applications de stockage cloud et services d’hébergement. Vous pouvez sélectionner plusieurs catégories à la fois ou une seule catégorie, puis leur appliquer des filtres de base et des filtres avancés.
+- **Facteur de risque de conformité** : permet de rechercher un standard, une certification et une conformité spécifiques auxquels l’application doit être conforme (HIPAA, ISO 27001, SOC 2, PCI-DSS, etc.).
+- **Facteur de risque général** : permet de rechercher des facteurs de risque généraux, comme la popularité auprès des consommateurs, les paramètres régionaux du centre de données, etc.
+- **Score de risque** : permet de filtrer les applications par score de risque, et donc par exemple de se concentrer uniquement sur les applications très risquées. Vous pouvez également remplacer le score de risque défini par Cloud App Security. Pour plus d’informations, consultez [Utilisation du score de risque](risk-score.md).
 - **Facteur de risque de sécurité** : Permet de filtrer en fonction de mesures de sécurité spécifiques (comme le chiffrement au repos, l’authentification multifacteur, etc.).
-- **Utilisation** : Permet de filtrer en fonction des statistiques d’utilisation de cette application, comme les applications avec un nombre supérieur ou inférieur de **chargements de données** que la quantité spécifiée, les applications avec un nombre supérieur ou inférieur **d’utilisateurs** que le nombre spécifié.
-- **Facteur de risque légal** : vous permet de filtrer selon l’ensemble des réglementations et des stratégies qui sont en place pour garantir la protection et la confidentialité des données des utilisateurs de l’application, comme la stratégie de conservation des données, les applications cloud prêtes pour le RGPD et le DMCA.
+- **Utilisation** : permet de filtrer selon les statistiques d’utilisation de cette application. Il peut s’agir d’applications avec un nombre de **chargements de données** ou **d’utilisateurs** supérieur ou inférieur à une quantité spécifiée.
+- **Facteur de risque légal** : permet de filtrer selon l’ensemble des réglementations et des stratégies qui sont en place pour garantir la protection et la confidentialité des données des utilisateurs de l’application. Il peut s’agir par exemple des applications cloud prêtes pour le RGPD, de DMCA et de la stratégie de conservation des données.
 
 ### <a name="creating-and-managing-custom-app-tags"></a>Création et gestion des balises d’application personnalisées
 
@@ -47,24 +48,25 @@ Vous pouvez créer une balise d’application personnalisée. Ces balises peuven
 
 Pour créer une balise d’application personnalisée :
 
-1. Dans le menu **Paramètres** (roue dentée), sélectionnez **Cloud Discovery** et sous l’onglet **Gérer les balises d’application**, cliquez sur l’icône ![plus](./media/plus-icon.png). 
+1. À partir de l’icône d’engrenage **Paramètres**, sélectionnez **Paramètres Cloud Discovery**, puis l’onglet **Balises d’application**. Cliquez sur l’icône Plus (+). ![Icône « Plus »](./media/plus-icon.png)
 
-![créer une balise d’application personnalisée](./media/create-app-tag.png)
+   ![créer une balise d’application personnalisée](./media/create-app-tag.png)
 
-2. Vous pouvez utiliser le tableau **Gérer les balises d’application** pour consulter les applications qui sont actuellement marquées avec chaque balise d’application et vous pouvez supprimer les balises d’application inutilisées.
+2. Vous pouvez utiliser le tableau **Balises d’application** pour voir les applications qui sont actuellement marquées avec chaque balise d’application, et vous pouvez supprimer les balises d’application inutilisées.
 
-3. Pour appliquer une balise d’application, sous l’onglet **Applications découvertes**, cliquez sur les points de suspension complètement à droite du tableau et sélectionnez la balise d’application à appliquer. 
+3. Pour appliquer une balise d’application, sous l’onglet **Applications découvertes**, cliquez sur les points de suspension tout à droite du nom de l’application. Sélectionnez la balise d’application à appliquer. 
 
 > [!NOTE]
->Vous pouvez également créer une balise d’application directement dans le tableau **Applications découvertes** en cliquant sur **Créer une balise d’application** après avoir sélectionné les points de suspension à droite de n’importe quelle application sélectionnée. Vous pouvez également accéder à l’écran **Gérer les balises d’application** en cliquant sur le lien dans le coin de la fenêtre contextuelle **Créer une balise d’application**.
+>Vous pouvez également créer une balise d’application directement dans le tableau **Applications découvertes** en cliquant sur **Créer une balise d’application** après avoir sélectionné les points de suspension à droite de n’importe quelle application sélectionnée. Quand vous créez la balise à partir de l’application découverte, vous pouvez l’appliquer à l’application. Vous pouvez également accéder à l’écran **Balises d’application** en cliquant sur le lien **Gérer les balises**.
+> ![Créer une balise d’application personnalisée à partir de l’application](./media/create-app-tag-from-app.png)
 
 ## <a name="discovered-app-queries"></a>Requêtes d’applications découvertes
 
-Pour faciliter encore plus les recherches, vous pouvez désormais créer des requêtes personnalisées et les enregistrer pour les utiliser ultérieurement. 
+Pour faciliter encore plus les recherches, vous pouvez créer des requêtes personnalisées et les enregistrer pour les utiliser ultérieurement. 
 
 1. Dans la page **Applications découvertes**, utilisez les filtres comme décrit ci-dessus pour explorer vos applications selon vos besoins. 
 
-2. Une fois que vous avez atteint les résultats souhaités, cliquez sur le bouton **Enregistrer sous** en haut à droite des filtres. 
+2. Une fois que vous avez obtenu les résultats souhaités, cliquez sur le bouton **Enregistrer sous** en haut à droite des filtres. 
 
 3. Dans la fenêtre contextuelle **Enregistrer la requête**, nommez votre requête.
 
@@ -99,7 +101,7 @@ Cloud App Security vous fournit également des **requêtes suggérées** et vous
 De plus, vous pouvez utiliser les requêtes suggérées comme point de départ d’une nouvelle requête. Sélectionnez d’abord une des requêtes suggérées. Ensuite, apportez les modifications nécessaires et cliquez sur **Enregistrer sous** pour créer une **requête enregistrée**.
 
 
-## <a name="see-also"></a>Voir aussi
+## <a name="next-steps"></a>Étapes suivantes
  
 [Créer des rapports d’instantanés Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
 
