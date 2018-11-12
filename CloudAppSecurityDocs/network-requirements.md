@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3e0a56c9c174765660dfd19cad0c3cced1d74cd7
-ms.sourcegitcommit: 6069639ae538cc23831bbcaf61f18d92c6a5117d
+ms.openlocfilehash: a3c955a037f7ea81e0a06e673fd18030c0cbbf9b
+ms.sourcegitcommit: 3253c98f1bf2fafc2578a87ee2db9698caa05c5b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2018
-ms.locfileid: "50982069"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51265322"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -89,6 +89,8 @@ Pour permettre à Cloud App Security de se connecter à votre SIEM, ajoutez le *
 > |US3|40.90.218.198<br>40.90.218.196|
 > |EU|52.174.56.180|
 > |EU2|40.81.156.154<br>40.81.156.156|
+
+Si vous n’avez pas spécifié un proxy lorsque vous avez configuré l’agent SIEM Cloud App Security, vous devez autoriser les connexions HTTP à http://ocsp.msocsp.com/ sur le port 80. Il est utilisé pour vérifier l’état de révocation du certificat lorsque vous vous connectez au portail Cloud App Security.
 
 ## <a name="app-connector"></a>Connecteur d’applications
 
@@ -174,6 +176,7 @@ Pour activer les fonctionnalités Cloud Discovery à l’aide d’un collecteur 
 > [!NOTE]
 > - Si votre pare-feu nécessite une liste d’accès à d’adresses IP statiques et qu’il ne prend pas en charge une liste verte basée sur des URL, autorisez le collecteur de journaux à émettre le trafic sortant vers les [plages IP du centre de données Microsoft Azure](https://www.microsoft.com/download/details.aspx?id=41653) sur le port 443.
 >- Autorisez le collecteur de journaux à diriger le trafic sortant vers le portail Cloud App Security.
+>- Si vous n’avez pas spécifié de proxy quand vous avez configuré le collecteur de journaux,vous devez autoriser les connexions HTTP à http://ocsp.msocsp.com/ sur le port 80. Il est utilisé pour vérifier l’état de révocation du certificat lorsque vous vous connectez au portail Cloud App Security.
 
 
 
