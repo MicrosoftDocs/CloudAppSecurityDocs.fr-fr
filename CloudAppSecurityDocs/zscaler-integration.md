@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 8abeab8e-3b7a-46a7-bbec-9aaf26f778a8
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: bb408b5422e2b9ed4eb0ab5287a67a929ec680c0
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 972ee25a77f491704b6ebc17a059c2d1f7e4d367
+ms.sourcegitcommit: 79e5aa5a5f90223a5963eb8f6df81a80578e9ce9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44142729"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51644312"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -54,7 +54,7 @@ Si vous travaillez avec Cloud App Security et Zscaler, vous pouvez intégrer les
     
 3. Examinez les applications cloud découvertes sur votre réseau, consultez [Utilisation de Cloud Discovery](working-with-cloud-discovery-data.md) pour obtenir plus d’informations et connaître les étapes d’investigation.
  
-4. Toute application que vous définissez comme non approuvée dans Cloud App Security est soumise à un test Ping par Zscaler toutes les deux heures, puis bloquée automatiquement par Zscaler. Pour plus d’informations sur la non-approbation des applications, consultez [Approbation/non-approbation d’une application](governance-discovery.md#govern-discovered-apps).
+4. Toute application que vous définissez comme non approuvée dans Cloud App Security est soumise à un test Ping par Zscaler toutes les deux heures, puis bloquée automatiquement par Zscaler. Pour plus d’informations sur la non-approbation des applications, consultez [Approbation/non-approbation d’une application](governance-discovery.md#BKMK_SanctionApp).
     
     
     

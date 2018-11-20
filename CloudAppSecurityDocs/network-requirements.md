@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/5/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a3c955a037f7ea81e0a06e673fd18030c0cbbf9b
-ms.sourcegitcommit: 3253c98f1bf2fafc2578a87ee2db9698caa05c5b
+ms.openlocfilehash: 38c2e52118cd896f9cfe148647b43d72a154647f
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51265322"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51597457"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -90,7 +90,8 @@ Pour permettre à Cloud App Security de se connecter à votre SIEM, ajoutez le *
 > |EU|52.174.56.180|
 > |EU2|40.81.156.154<br>40.81.156.156|
 
-Si vous n’avez pas spécifié un proxy lorsque vous avez configuré l’agent SIEM Cloud App Security, vous devez autoriser les connexions HTTP à http://ocsp.msocsp.com/ sur le port 80. Il est utilisé pour vérifier l’état de révocation du certificat lorsque vous vous connectez au portail Cloud App Security.
+> [!NOTE]
+> Si vous n’avez pas spécifié un proxy lorsque vous avez configuré l’agent SIEM Cloud App Security, vous devez autoriser les connexions HTTP à http://ocsp.msocsp.com/ sur le port 80. Il est utilisé pour vérifier l’état de révocation du certificat lorsque vous vous connectez au portail Cloud App Security.
 
 ## <a name="app-connector"></a>Connecteur d’applications
 
