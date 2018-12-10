@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7f81855eab2ed8ec2b4fe3f151116f91ad29aae6
-ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
+ms.openlocfilehash: 9e20a02b3075a496e30c99d8ae3d0364b7e60d82
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51597100"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53124279"
 ---
 # <a name="docker-on-ubuntu-and-rhel-on-premises"></a>Docker sur Ubuntu et RHEL (local)
 
@@ -130,7 +130,7 @@ La procédure suivante décrit le déploiement dans Ubuntu. Les étapes de dépl
 
    ![Créer le collecteur de journaux](./media/windows7.png)
 
-6. Vérifiez que le collecteur s’exécute correctement à l’aide de la commande suivante : `docker logs \<collector_name\>`
+6. Vérifiez que le collecteur s’exécute correctement à l’aide de la commande suivante : `docker logs <collector_name>`
 
 Vous devez voir le message **Opération terminée**
 

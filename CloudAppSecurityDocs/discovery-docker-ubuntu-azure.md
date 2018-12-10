@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9ca0c80c87ad942c5b8e04fd7c840558b276ba34
-ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
+ms.openlocfilehash: 2be66b030b7b46b55ab9c757a3ae036ebad14c5f
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51597304"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53124721"
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Installation et configuration sur Ubuntu
 
@@ -42,9 +42,9 @@ Vous pouvez configurer le chargement automatique des journaux pour des rapports 
 
 Le collecteur de journaux peut gérer correctement une capacité allant jusqu’à 50 Go par heure. Les principaux goulots d’étranglement dans le processus de collecte des journaux sont les suivants :
 
-- Bande passante réseau : votre bande passante réseau détermine la vitesse de chargement des journaux.
+- Bande passante réseau - Votre bande passante réseau détermine la vitesse de chargement des journaux.
 
-- Performances d’E/S de la machine virtuelle : détermine la vitesse à laquelle les journaux sont écrits sur le disque du collecteur de journaux. Le collecteur de journaux dispose d’un mécanisme de sécurité intégré qui surveille le débit auquel les journaux arrivent et le compare au débit de chargement. En cas de congestion, le collecteur de journaux commence à supprimer des fichiers journaux. Si votre configuration dépasse généralement 50 Go par heure, nous vous recommandons de diviser le trafic entre plusieurs collecteurs de journaux.
+- Performances d’E/S de la machine virtuelle - Détermine la vitesse à laquelle les journaux sont écrits sur le disque du collecteur de journaux. Le collecteur de journaux dispose d’un mécanisme de sécurité intégré qui surveille le débit auquel les journaux arrivent et le compare au débit de chargement. En cas de congestion, le collecteur de journaux commence à supprimer des fichiers journaux. Si votre configuration dépasse généralement 50 Go par heure, nous vous recommandons de diviser le trafic entre plusieurs collecteurs de journaux.
 
 ## <a name="set-up-and-configuration"></a>Installation et configuration  
 
@@ -56,7 +56,7 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
 
       ![icône des paramètres](./media/settings-icon.png)
 
-2. Pour chaque pare-feu ou proxy à partir duquel vous voulez charger des journaux, créez une source de données correspondante.
+2. Pour chaque pare-feu ou proxy à partir duquel vous souhaitez charger des journaux, créez une source de données correspondante.
 
      a. Cliquez sur **Ajouter une source de données**.
 
@@ -75,9 +75,9 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
      >[!NOTE]
      >L’intégration à des protocoles de transfert sécurisés (FTPS et Syslog – TLS) nécessite souvent un paramètre supplémentaire ou votre pare-feu/proxy.
 
-     f. Répétez ce processus pour chaque pare-feu ou proxy dont les journaux peuvent être utilisés pour détecter le trafic sur votre réseau. Nous vous recommandons de définir une source de données dédiée par appareil réseau pour vous permettre de :
-     - Superviser l’état de chaque appareil séparément à des fins d’investigation.
-     - Explorer le Shadow IT Discovery par appareil, si chaque appareil est utilisé par un segment d’utilisateur différent.
+     f. Répétez ce processus pour chaque pare-feu ou proxy dont les journaux peuvent être utilisés pour détecter le trafic sur votre réseau. Nous vous recommandons de configurer une source de données dédiée par appareil réseau pour vous permettre de :
+     - Superviser l’état de chaque appareil séparément à des fins d’investigation
+     - Explorer le Shadow IT Discovery par appareil, si chaque appareil est utilisé par un segment d’utilisateur différent
 
      
 3. Accédez à l’onglet **Collecteurs de journaux** en haut.
@@ -86,7 +86,7 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
 
      b. Donnez un **nom** au collecteur de journaux.
 
-     c. Entrez l’**adresse IP hôte** de l’ordinateur sur lequel sera déployé le Docker. L’adresse IP de l’hôte peut être remplacée par le nom de l’ordinateur s’il existe un serveur DNS (ou un équivalent) qui résout le nom d’hôte.
+     c. Entrez l’**adresse IP de l’hôte** de la machine sur laquelle sera déployé le Docker. L’adresse IP de l’hôte peut être remplacée par le nom de l’ordinateur s’il existe un serveur DNS (ou un équivalent) qui résout le nom d’hôte.
 
      d. Sélectionnez toutes les **Sources de données** que vous voulez connecter au collecteur, puis cliquez sur **Mettre à jour** pour enregistrer la configuration et consulter les étapes suivantes du déploiement.
 
@@ -156,23 +156,23 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
 
 ### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>Étape 3 : Configuration locale de vos appliances réseau
 
-Configurez vos pare-feu réseau et proxys pour exporter régulièrement les journaux vers le port Syslog dédié du répertoire FTP conformément aux instructions données dans la boîte de dialogue. Par exemple :
+Configurez vos pare-feu et proxies réseau pour exporter régulièrement les journaux vers le port Syslog dédié du répertoire FTP conformément aux instructions données dans la boîte de dialogue. Par exemple :
 
     BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
 
 ### <a name="step-4---verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>Étape 4 : Vérifier la réussite du déploiement dans le portail Cloud App Security
 
-Consultez l’état du collecteur dans le tableau  **Collecteur de journaux**  et vérifiez que l’état est  **Connecté**. Si l’état est  **Créé**, il est possible que la connexion du collecteur de journaux et l’analyse ne soient pas terminées.
+Consultez l’état du collecteur dans le tableau  **Collecteur de journaux**  et vérifiez que l’état est  **Connecté**. Si l’état est  **Créé**, il est possible que la connexion du collecteur de journaux et l’analyse n’aient pas été effectuées.
 
  ![ubuntu9](./media/ubuntu9.png)
 
 Vous pouvez aussi accéder au **journal de gouvernance** et vérifier que les journaux sont régulièrement chargés sur le portail.
 
-Si vous rencontrez des problèmes lors du déploiement, consultez  [Dépannage de Cloud Discovery](troubleshooting-cloud-discovery.md).
+Si vous rencontrez des problèmes durant le déploiement, consultez  [Dépannage de Cloud Discovery](troubleshooting-cloud-discovery.md).
 
 ### <a name="optional---create-custom-continuous-reports"></a>Facultatif : Créer des rapports continus personnalisés
 
-Vérifiez que les journaux sont chargés sur Cloud App Security et que les rapports sont générés. Après vérification, créez des rapports personnalisés. Vous pouvez créer des rapports de découverte personnalisés basés sur les groupes d’utilisateurs Azure Active Directory. Par exemple, si vous voulez afficher l’utilisation cloud de votre service marketing, importez le groupe marketing à l’aide de la fonctionnalité d’importation des groupes d’utilisateurs. Ensuite, créez un rapport personnalisé pour ce groupe. Vous pouvez également personnaliser un rapport en fonction d’une balise d’adresse IP ou de plages d’adresses IP.
+Vérifiez que les journaux sont chargés sur Cloud App Security et que les rapports sont générés. Après vérification, créez des rapports personnalisés. Vous pouvez créer des rapports de découverte personnalisés basés sur les groupes d’utilisateurs Azure Active Directory. Par exemple, pour voir l’utilisation cloud de votre service marketing, importez le groupe marketing à l’aide de la fonctionnalité d’importation des groupes d’utilisateurs. Créez ensuite un rapport personnalisé pour ce groupe. Vous pouvez également personnaliser un rapport en fonction d’une balise d’adresse IP ou de plages d’adresses IP.
 
 1. Dans le portail Cloud App Security, dans les Paramètres (icône d’engrenage), sélectionnez Paramètres Cloud Discovery, puis **Rapports continus**. 
 2. Cliquez sur le bouton **Créer un rapport** et renseignez les champs.
