@@ -1,11 +1,11 @@
 ---
 title: Connecter AWS à Cloud App Security pour la visibilité et le contrôle d’utilisation | Microsoft Docs
-description: Cette rubrique fournit des informations sur la connexion de votre application AWS à Cloud App Security à l’aide du connecteur API.
+description: Cet article fournit des informations sur la connexion de votre application AWS à Cloud App Security à l’aide du connecteur d’API.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/29/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,18 @@ ms.technology: ''
 ms.assetid: a6b4c745-cd5c-4458-819c-80cbe8b25f29
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d6c3e680ec17d8a62977e4c25af5b9163244afea
-ms.sourcegitcommit: bb010d8dd0a6eff39df31e33c2cc9c37ec321b46
+ms.openlocfilehash: 3a8936a8a3f9a9e2198edbdec3111f1cccad0c90
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50217286"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51597157"
 ---
+# <a name="connect-aws-to-microsoft-cloud-app-security"></a>Connecter AWS à Microsoft Cloud App Security
+
 *S’applique à : Microsoft Cloud App Security*
 
-# <a name="connect-aws-to-microsoft-cloud-app-security"></a>Connecter AWS à Microsoft Cloud App Security
-Cette section fournit des instructions pour connecter Microsoft Cloud App Security à votre compte Amazon Web Services existant à l’aide des API du connecteur.  
+Cet article fournit des instructions pour connecter Microsoft Cloud App Security à votre compte Amazon Web Services existant à l’aide des API de connecteur.  
   
 ## <a name="how-to-connect-amazon-web-services-to-cloud-app-security"></a>Comment connecter Amazon Web Services à Cloud App Security  
   

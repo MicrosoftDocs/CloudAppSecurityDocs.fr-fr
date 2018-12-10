@@ -1,11 +1,11 @@
 ---
 title: Configuration requise du réseau Cloud App Security | Microsoft Docs
-description: Cette rubrique décrit les adresses IP et les ports à ouvrir pour fonctionner avec Cloud App Security.
+description: Cet article décrit les adresses IP et les ports à ouvrir pour utiliser Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2018
+ms.date: 11/22/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,28 +13,26 @@ ms.technology: ''
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 38c2e52118cd896f9cfe148647b43d72a154647f
-ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
+ms.openlocfilehash: 25ebeff05dc6fc7afd5e16de2076534c7f5070a3
+ms.sourcegitcommit: b0b3e6c6f150fff8c286185826ce099601a12679
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51597457"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52280593"
 ---
-*S’applique à : Microsoft Cloud App Security*
-
-
 # <a name="network-requirements"></a>Configuration requise pour le réseau
 
-Cette rubrique fournit une liste de ports et d’adresses IP que vous devez autoriser et ajouter à la liste verte pour qu’ils fonctionnent avec Microsoft Cloud App Security. 
+*S’applique à : Microsoft Cloud App Security*
 
+Cet article fournit une liste des ports et adresses IP que vous devez autoriser et ajouter à la liste verte pour pouvoir utiliser Microsoft Cloud App Security. 
 
 ## <a name="view-your-data-center"></a>Afficher votre centre de données
 
-Certaines exigences stipulées ci-dessous varient selon le centre de données auquel vous êtes connecté. 
+Certaines exigences stipulées ci-dessous varient en fonction du centre de données auquel vous êtes connecté. 
 
-Pour déterminer à quel centre de données vous vous connectez :
+Pour savoir à quel centre de données vous vous connectez, effectuez les étapes suivantes :
 
-1. Dans le portail Cloud App Security, cliquez sur **?** dans la barre de menus et sélectionnez **À propos de**. 
+1. Dans le portail Cloud App Security, cliquez sur l’**icône de point d’interrogation** dans la barre de menus. Ensuite, sélectionnez **À propos de**. 
 
     ![cliquez sur À propos de](./media/about-menu.png)
 
@@ -59,7 +57,7 @@ Pour accéder au portail Cloud App Security, ajoutez le **port de sortie 443** p
     dc.services.visualstudio.com
     *.blob.core.windows.net
 
-En outre, les éléments suivants doivent être répertoriés dans la liste verte, selon le centre de données que vous utilisez :
+En outre, les éléments suivants doivent figurer dans la liste verte, en fonction du centre de données que vous utilisez :
 > [!div class="mx-tableFixed"]
 > 
 > |Centre de données|Adresses IP|Nom DNS|
@@ -95,7 +93,7 @@ Pour permettre à Cloud App Security de se connecter à votre SIEM, ajoutez le *
 
 ## <a name="app-connector"></a>Connecteur d’applications
 
-Pour que Cloud App Security puisse accéder à certaines applications tierces, vous devez utiliser ces adresses IP pour permettre à Cloud App Security de collecter les journaux et de fournir un accès pour la console Cloud App Security. 
+Pour que certaines applications tierces soient accessibles par Cloud App Security, ces adresses IP peuvent être utilisées. Les adresses IP permettent à Cloud App Security de collecter les journaux et de fournir un accès pour la console Cloud App Security. 
 
 > [!NOTE]
 >Vous verrez peut-être ces adresses IP dans les journaux d’activité du fournisseur, car Cloud App Security effectue des actions de gouvernance et des analyses à partir de ces adresses IP. 
@@ -116,12 +114,12 @@ Pour se connecter à des applications tierces, autorisez Cloud App Security à s
 
 ## <a name="third-party-dlp-integration"></a>Intégration de solutions DLP tierces
 
-Pour que Cloud App Security envoie des données via votre stunnel à votre serveur ICAP, ouvrez votre pare-feu DMZ à ces adresses IP avec un numéro de port source dynamique. 
+Pour que Cloud App Security puisse envoyer des données via votre stunnel à votre serveur ICAP, ouvrez votre pare-feu DMZ à ces adresses IP avec un numéro de port source dynamique. 
 
-1.  Adresses sources : elles doivent figurer sur la liste verte, comme ci-dessus pour les applications tierces du connecteur d’API
-2.  Port TCP source : dynamique
-3.  Adresse(s) de destination : une ou deux adresses IP du stunnel connecté au serveur ICAP externe
-4.  Port TCP de destination : comme défini dans votre réseau
+1. **Adresses sources** : ces adresses doivent figurer sur la liste verte, comme mentionné ci-dessus pour les applications tierces du connecteur d’API
+2. **Port TCP source** : dynamique
+3. **Adresse(s) de destination** : une ou deux adresses IP du stunnel connecté au serveur ICAP externe
+4. **Port TCP de destination** : comme défini dans votre réseau
 
 > [!NOTE] 
 > -  Par défaut, le numéro de port du stunnel a la valeur 11344. Vous pouvez le remplacer par un autre port si nécessaire, mais n’oubliez pas de noter le nouveau numéro de port.
@@ -150,16 +148,16 @@ Pour envoyer des notifications en utilisant le modèle et les paramètres par d�
 - 111.221.26.0/27
 - 207.46.50.192/26
 
-Si vous voulez personnaliser l’identité de l’expéditeur de l’e-mail, Microsoft Cloud App Security vous permet de le faire à l’aide de MailChimp®, un service de messagerie tiers. Pour cela, dans le portail Microsoft Cloud App Security, sous **Paramètres**, sélectionnez **Paramètres de messagerie**, passez en revue les Conditions d’utilisation et la Déclaration de confidentialité de MailChimp, puis autorisez Microsoft à utiliser MailChimp en votre nom.
+Si vous voulez personnaliser l’identité de l’expéditeur de l’e-mail, Microsoft Cloud App Security vous permet de le faire à l’aide de MailChimp®, un service de messagerie tiers. Pour cela, dans le portail Microsoft Cloud App Security, accédez à **Paramètres**. Sélectionnez **Paramètres de messagerie** et passez en revue les termes du contrat de service et la déclaration de confidentialité de MailChimp. Ensuite, autorisez Microsoft à utiliser MailChimp en votre nom.
 
-Si vous ne le faites pas, vos notifications par e-mail seront envoyées avec tous les paramètres par défaut.
+Si vous ne personnalisez pas l’identité de l’expéditeur, vos notifications par e-mail seront envoyées avec tous les paramètres par défaut.
 
 Pour utiliser MailChimp, ajoutez cette adresse IP à votre liste verte anti-spam afin d’autoriser l’envoi des notifications : 198.2.134.139 (mail1.cloudappsecurity.com)
 
 
 ## <a name="log-collector"></a>Collecteur de journaux 
 
-Pour activer les fonctionnalités Cloud Discovery à l’aide d’un collecteur de journaux et détecter Shadow IT dans votre organisation, il est nécessaire d’ouvrir les éléments suivants :
+Pour activer les fonctionnalités Cloud Discovery à l’aide d’un collecteur de journaux et détecter l’informatique fantôme dans votre organisation, ouvrez les éléments suivants :
 
 - Autorisez le collecteur de journaux à recevoir le trafic FTP et Syslog entrant.
 - Autorisez le collecteur de journaux à lancer le trafic sortant sur le portail (par exemple, contoso.cloudappsecurity.com) sur le port 443.
@@ -179,9 +177,8 @@ Pour activer les fonctionnalités Cloud Discovery à l’aide d’un collecteur 
 >- Autorisez le collecteur de journaux à diriger le trafic sortant vers le portail Cloud App Security.
 >- Si vous n’avez pas spécifié de proxy quand vous avez configuré le collecteur de journaux,vous devez autoriser les connexions HTTP à http://ocsp.msocsp.com/ sur le port 80. Il est utilisé pour vérifier l’état de révocation du certificat lorsque vous vous connectez au portail Cloud App Security.
 
-
-
-## <a name="see-also"></a>Voir aussi  
+## <a name="next-steps"></a>Étapes suivantes
+ 
 [Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)   
 
 [Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier.](https://premier.microsoft.com/)  

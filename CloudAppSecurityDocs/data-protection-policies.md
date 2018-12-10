@@ -1,11 +1,11 @@
 ---
 title: Créer des stratégies pour surveiller et protéger les fichiers dans vos applications cloud | Microsoft Docs
-description: Cette rubrique décrit la procédure de configuration d’une stratégie de données pour surveiller et contrôler les données et les fichiers lors de l’usage des applications cloud de votre organisation.
+description: Cet article décrit la procédure de configuration d’une stratégie de données pour superviser et contrôler les données ainsi que les fichiers durant l’usage des applications cloud de votre organisation.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,53 +13,49 @@ ms.technology: ''
 ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2445c88a6fae504b51b5d4a0cb32ba00c936681e
-ms.sourcegitcommit: d70e5bf78a1db6d9e277c486638a08a474942edb
+ms.openlocfilehash: 388fca467f4ef83f2494caab411d242a8a273e36
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50745780"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51597372"
 ---
+# <a name="file-policies"></a>Stratégies de fichier  
+
 *S’applique à : Microsoft Cloud App Security*
 
-# <a name="file-policies"></a>Stratégies de fichier  
-Les stratégies de fichier vous permettent d’appliquer une large gamme de processus automatisés en utilisant les API du fournisseur de cloud. Vous pouvez définir des stratégies pour fournir des analyses de conformité en continu, des tâches eDiscovery réglementaires, une protection contre la perte de données (DLP, Data Loss Prevention) au contenu sensible partagé publiquement et de nombreux autres cas d’usage.  <br></br>
-
-Cloud App Security peut surveiller n’importe quel type de fichier en fonction de plus de 20 filtres de métadonnées (par exemple, niveau d’accès, type de fichier). 
+Les stratégies de fichier vous permettent d’appliquer une large gamme de processus automatisés en utilisant les API du fournisseur de cloud. Vous pouvez définir des stratégies pour fournir des analyses de conformité en continu, des tâches eDiscovery réglementaires, une protection contre la perte de données (DLP, Data Loss Prevention) au contenu sensible partagé publiquement et de nombreux autres cas d’usage. Cloud App Security peut surveiller n’importe quel type de fichier en fonction de plus de 20 filtres de métadonnées (par exemple, niveau d’accès, type de fichier). 
  
-**Types de fichiers pris en charge** 
+**Types de fichiers pris en charge**
 
 Les moteurs intégrés de protection contre la perte de données (DLP) de Cloud App Security effectuent l’inspection du contenu en extrayant le texte de tous les types de fichiers courants (plus de 100), dont Office, Open Office, les fichiers compressés, différents formats de texte enrichi, XML, HTML et bien plus encore.
 
+## <a name="policies"></a>Stratégies 
 Le moteur combine trois aspects sous chaque stratégie :  
   
--   Analyse du contenu basé sur des modèles prédéfinis ou des expressions personnalisées.  
+- Analyse du contenu basé sur des modèles prédéfinis ou des expressions personnalisées.  
   
--   Filtres de contexte comprenant des rôles d’utilisateur, des métadonnées de fichiers, un niveau de partage, une intégration des groupes d’organisation, un contexte de collaboration et d’autres attributs personnalisables.  
+- Filtres de contexte comprenant des rôles d’utilisateur, des métadonnées de fichiers, un niveau de partage, une intégration des groupes d’organisation, un contexte de collaboration et d’autres attributs personnalisables.  
   
--   Actions automatisées pour la gouvernance et la correction. Pour plus d’informations, consultez [Contrôle](control.md).  
+- Actions automatisées pour la gouvernance et la correction. Pour plus d’informations, consultez [Contrôle](control.md).  
   
 Une fois activée, la stratégie analyse en permanence votre environnement cloud et identifie les fichiers qui correspondent aux filtres de contenu et de contexte, puis applique les actions automatisées demandées. Ces stratégies détectent et corrigent toutes les violations concernant les informations au repos ou le contenu nouvellement créé. Les stratégies peuvent être surveillées avec des alertes en temps réel ou des rapports générés sur une console.  
   
 Voici quelques exemples de stratégies de fichier que vous pouvez créer :  
   
--   Fichiers partagés publiquement : <br></br>
-    Recevez une alerte quand un fichier situé dans le cloud est publiquement partagé en sélectionnant tous les fichiers dont le niveau de partage est public.  
+-  **Fichiers en partage public** - Recevez une alerte quand un fichier situé dans le cloud est partagé publiquement en sélectionnant tous les fichiers dont le niveau de partage est public.  
   
--   Le nom de fichier publiquement partagé contient le nom de l’organisation : <br></br> Recevez une alerte quand un fichier contient le nom de votre organisation et qu’il est publiquement partagé. Sélectionnez les fichiers dont le nom contient celui de votre organisation et qui sont publiquement partagés.  
+- **Le nom du fichier en partage public contient le nom de l’organisation** - Recevez une alerte quand un fichier contient le nom de votre organisation et qu’il est en partage public. Sélectionnez les fichiers dont le nom contient celui de votre organisation et qui sont publiquement partagés.  
   
--   Partage avec des domaines externes :  <br></br>
-    Recevez une alerte quand un fichier est partagé avec des comptes appartenant à des domaines externes spécifiques, par exemple des fichiers partagés avec le domaine d’un concurrent. Sélectionnez le domaine externe avec lequel vous voulez limiter le partage.  
+- **Partage avec des domaines externes** - Recevez une alerte quand un fichier est partagé avec des comptes appartenant à des domaines externes spécifiques. par exemple des fichiers partagés avec le domaine d’un concurrent. Sélectionnez le domaine externe avec lequel vous voulez limiter le partage.  
   
--   Mettez en quarantaine les fichiers partagés qui n’ont pas été modifiés pendant la dernière période :  <br></br>
-    Recevez une alerte sur les fichiers partagés que personne n’a modifié dernièrement, afin de les mettre en quarantaine ou d’activer une action automatisée. Excluez tous les fichiers privés qui n’ont pas été modifiés pendant une plage de dates spécifiée. Sur G Suite, vous pouvez choisir de mettre en quarantaine ces fichiers, en cochant la case « Fichier en quarantaine » dans la page de création de stratégie.  
+- **Mettez en quarantaine les fichiers partagés qui n’ont pas été modifiés pendant la dernière période** - Recevez une alerte sur les fichiers partagés que personne n’a modifié dernièrement, pour les mettre en quarantaine ou activer une action automatisée. Excluez tous les fichiers privés qui n’ont pas été modifiés pendant une plage de dates spécifiée. Sur G Suite, vous pouvez choisir de mettre en quarantaine ces fichiers, en cochant la case « Fichier en quarantaine » dans la page de création de stratégie.  
   
--   Partage avec des utilisateurs non autorisés :  <br></br>
-    Recevez une alerte quand des fichiers sont partagés avec un groupe d’utilisateurs non autorisé dans votre organisation. Sélectionnez les utilisateurs pour lesquels le partage n’est pas autorisé.  
+- **Partage avec des utilisateurs non autorisés** - Recevez une alerte quand des fichiers sont partagés avec un groupe d’utilisateurs non autorisés dans votre organisation. Sélectionnez les utilisateurs pour lesquels le partage n’est pas autorisé.  
   
--   Extension de fichier sensible :  <br></br>
-    Recevez une alerte quand des fichiers portant des extensions spécifiques sont potentiellement très exposés. Sélectionnez l’extension (par exemple crt pour les certificats) ou le nom de fichier spécifique, et excluez les fichiers avec le niveau de partage privé.  
-  
+- **Extension de fichier sensible** - Recevez une alerte quand des fichiers ayant des extensions spécifiques sont potentiellement très exposés. Sélectionnez l’extension (par exemple crt pour les certificats) ou le nom de fichier spécifique, et excluez les fichiers avec le niveau de partage privé.  
+
+## <a name="create-a-new-file-policy"></a>Créer une stratégie de fichier  
 Pour créer une stratégie de fichier, procédez comme suit :  
   
 1. Dans la console, cliquez sur **Contrôle**, puis sur **Stratégies**.  
@@ -99,15 +95,13 @@ Une **stratégie de fichier** est une stratégie basée sur une API qui vous per
   
 Chaque stratégie comprend les éléments suivants :  
   
--   Filtres de fichiers : Vous permettent de créer des conditions précises en fonction des métadonnées.  
+- **Filtres de fichiers** - Vous permettent de créer des conditions précises en fonction des métadonnées.  
   
--   Inspection du contenu : Vous permet de limiter la stratégie, en fonction de résultats de moteur DLP. Vous pouvez inclure une expression personnalisée ou prédéfinie. Vous pouvez définir des exclusions et choisir le nombre de correspondances. Vous pouvez aussi utiliser l’anonymisation pour masquer le nom de l’utilisateur. 
+- **Inspection du contenu** - Vous permet de limiter la stratégie, en fonction des résultats du moteur DLP. Vous pouvez inclure une expression personnalisée ou prédéfinie. Vous pouvez définir des exclusions et choisir le nombre de correspondances. Vous pouvez aussi utiliser l’anonymisation pour masquer le nom de l’utilisateur. 
   
--   Actions : La stratégie fournit un ensemble d’actions de gouvernance automatiquement applicables en cas de violations.  Ces actions sont réparties en actions de collaboration, de sécurité et d’examen.
+- **Actions** - La stratégie fournit un ensemble d’actions de gouvernance automatiquement applicables en cas de violations.  Ces actions sont réparties en actions de collaboration, de sécurité et d’examen.
 
--   Extensions  
-   
-    -  L’inspection du contenu peut être effectuée via des moteurs tiers pour améliorer les fonctionnalités DLP ou anti-programme malveillant.  
+- **Extensions** - L’inspection du contenu peut être effectuée via des moteurs tiers pour améliorer les fonctionnalités DLP ou antiprogramme malveillant.  
 
   
 ## <a name="next-steps"></a>Étapes suivantes 

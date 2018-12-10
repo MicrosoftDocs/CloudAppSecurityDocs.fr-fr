@@ -1,11 +1,11 @@
 ---
 title: Quelles sont les différences entre Cloud App Security et Office 365 Cloud App Security ? | Microsoft Docs
-description: Cette rubrique décrit les différences entre Cloud App Security et Office 365 Cloud App Security.
+description: Cet article décrit les différences entre Cloud App Security et Office 365 Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/21/2018
+ms.date: 11/12/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,25 +13,26 @@ ms.technology: ''
 ms.assetid: 49c12f7c-3fb8-46ac-b2ab-59ba6cf2ddfb
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0ece617169af47eeaa83ec626667d81ea8a394ad
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: fa11ebe67ddf86995a404ec386d0c601fd4dc021
+ms.sourcegitcommit: e424807015f33aa359d9e29e13cc2faac5adcb92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44142894"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51561119"
 ---
 # <a name="what-are-the-differences-between-microsoft-cloud-app-security-and-office-365-cloud-app-security"></a>Quelles sont les différences entre Microsoft Cloud App Security et Office 365 Cloud App Security ?
 
-> [!NOTE]
-> Pour plus d’informations sur Office 365 Cloud App Security, consultez [Bien démarrer avec Office 365 Cloud App Security](https://support.office.com/article/Get-started-with-Advanced-Management-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a).
+*S’applique à : Microsoft Cloud App Security*
+
+Cet article décrit les différences entre Cloud App Security et Office 365 Cloud App Security. Pour plus d’informations sur Office 365 Cloud App Security, consultez [Bien démarrer avec Office 365 Cloud App Security](https://support.office.com/article/Get-started-with-Advanced-Management-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a).
 
 ## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security 
 
-Cloud App Security est une solution complète multi-SaaS qui offre à vos applications cloud une meilleure visibilité, des contrôles de données puissants et une protection améliorée contre les menaces. Avec ce service, votre visibilité de l’informatique fantôme est améliorée grâce à la découverte des applications cloud en cours d’utilisation, et vous pouvez contrôler et protéger les données dans les applications dès que vous les avez approuvées dans le service. 
+Microsoft Cloud App Security est une solution complète multiSaaS qui offre à vos applications cloud une meilleure visibilité, des contrôles de données puissants et une protection améliorée contre les menaces. Avec ce service, votre visibilité de l’informatique fantôme est améliorée grâce à la découverte des applications cloud utilisées. Vous pouvez contrôler et protéger les données des applications une fois que vous les avez approuvées auprès du service.
 
 ## <a name="office-365-cloud-app-security"></a>Office 365 Cloud App Security
 
-Office 365 Cloud App Security est une partie de Microsoft Cloud App Security qui offre une meilleure visibilité et un meilleur contrôle pour Office 365. Elle comprend la détection des menaces basée sur les journaux d’activité utilisateur, la découverte Shadow IT pour les applications qui ont des fonctionnalités similaires aux produits Office 365, ainsi que des autorisations de contrôle d’application dans Office 365.
+Office 365 Cloud App Security est une partie de Microsoft Cloud App Security qui offre une meilleure visibilité et un meilleur contrôle pour Office 365. Office 365 Cloud App Security comprend la détection des menaces basée sur les journaux d’activité des utilisateurs, la découverte de l’informatique fantôme pour les applications qui ont des fonctionnalités similaires aux produits Office 365 ainsi que le contrôle des autorisations d’applications dans Office 365.
 
 ### <a name="feature-support"></a>Prise en charge de la fonctionnalité
 
@@ -58,7 +59,7 @@ Office 365 Cloud App Security est une partie de Microsoft Cloud App Security qui
 
 
 
-## <a name="see-also"></a>Voir aussi  
+## <a name="next-steps"></a>Étapes suivantes  
 
 Découvrez les concepts de base dans [Bien démarrer avec Cloud App Security](getting-started-with-cloud-app-security.md).    
 

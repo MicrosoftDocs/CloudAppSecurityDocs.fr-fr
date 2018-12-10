@@ -1,11 +1,11 @@
 ---
 title: Configurer le chargement automatique des journaux pour des rapports continus | Documentation Microsoft
-description: Cette rubrique décrit la procédure de configuration du chargement automatique des journaux pour des rapports continus dans Cloud App Security.
+description: Cet article décrit la procédure de configuration du chargement automatique des journaux pour des rapports continus dans Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/10/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,24 +13,22 @@ ms.technology: ''
 ms.assetid: c75ba963-ad5a-48e6-8d5d-610fc6e0b990
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: dc77a77b8a72192bc7b588b758d68136c7a2399b
-ms.sourcegitcommit: 82052a88acbc33893f7b9e0d10cc2e8c652ef003
+ms.openlocfilehash: 379d2153f0e309ca5694f132432249c7df81010d
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49349557"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51596721"
 ---
-*S’applique à : Microsoft Cloud App Security*
-
-
 # <a name="configure-automatic-log-upload-for-continuous-reports"></a>Configurer le chargement automatique des journaux pour des rapports continus
 
+*S’applique à : Microsoft Cloud App Security*
 
-Les collecteurs de journaux vous permettent d’automatiser facilement le chargement manuel des journaux de votre réseau. Le collecteur de journaux s’exécute sur votre réseau et reçoit les journaux par le biais de Syslog ou FTP. Chaque journal est automatiquement traité, compressé et transmis au portail. Les journaux FTP sont chargés sur Microsoft Cloud App Security une fois que le fichier a terminé le transfert FTP vers le collecteur de journaux. Pour Syslog, le collecteur de journaux écrit les journaux reçus sur le disque et charge le fichier sur Cloud App Security quand la taille du fichier est supérieure à 40 Ko. 
+Les collecteurs de journaux vous permettent d’automatiser facilement le chargement manuel des journaux de votre réseau. Le collecteur de journaux s’exécute sur votre réseau et reçoit les journaux par le biais de Syslog ou FTP. Chaque journal est automatiquement traité, compressé et transmis au portail. Les journaux FTP sont chargés sur Microsoft Cloud App Security une fois que le fichier a terminé le transfert FTP vers le collecteur de journaux. Pour Syslog, le collecteur de journaux écrit les journaux reçus sur le disque. Le collecteur de journaux charge ensuite le fichier sur Cloud App Security quand la taille du fichier est supérieure à 40 Ko. 
 
-Une fois qu’un journal est chargé dans Cloud App Security, il est déplacé dans un répertoire de sauvegarde qui stocke les 20 derniers journaux à un moment donné. Quand de nouveaux journaux arrivent, les anciens sont supprimés. Quand l’espace disque du collecteur de journaux est plein, le collecteur de journaux supprime les nouveaux journaux tant qu’il ne dispose pas de davantage d’espace disque libre. Dans ce cas, un avertissement s’affiche sous l’onglet **Collecteurs de journaux** des paramètres **Charger les journaux automatiquement**.
+Une fois qu’un journal est chargé dans Cloud App Security, il est déplacé dans un répertoire de sauvegarde. Le répertoire de sauvegarde stocke les 20 derniers journaux. Quand de nouveaux journaux arrivent, les anciens sont supprimés. Chaque fois que l’espace disque du collecteur de journaux est plein, le collecteur de journaux supprime les nouveaux journaux tant qu’il ne dispose pas de davantage d’espace disque libre. Dans ce cas, vous voyez s’afficher un avertissement sous l’onglet **Collecteurs de journaux** des paramètres **Charger les journaux automatiquement**.
 
-Avant de configurer la collecte de fichiers journaux automatique, vérifiez que votre journal correspond au type attendu de journal pour garantir que Cloud App Security peut analyser votre fichier spécifique, dans [Utilisation de journaux de trafic pour Cloud Discovery](create-snapshot-cloud-discovery-reports.md#log-format).
+Avant de configurer la collecte automatique de fichiers journaux, vérifiez que votre journal correspond au type de journal attendu. Vous souhaitez vérifier que cloud App Security peut analyser votre fichier spécifique. Pour plus d’informations, consultez [Utiliser les journaux de trafic pour Cloud Discovery](create-snapshot-cloud-discovery-reports.md#log-format).
 
 
 > [!NOTE]
@@ -50,7 +48,7 @@ Le collecteur de journaux prend en charge deux modes de déploiement :
 
 
 
-## <a name="see-also"></a>Voir aussi
+## <a name="next-steps"></a>Étapes suivantes
  
 [Créer des rapports d’instantanés Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
 

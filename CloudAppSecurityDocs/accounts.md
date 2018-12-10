@@ -1,11 +1,11 @@
 ---
 title: Visibilité sur les comptes d’application cloud | Microsoft Docs
-description: Dans cette rubrique
+description: Cet article fournit des informations sur la vérification des comptes à partir de vos applications connectées.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/11/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,17 @@ ms.technology: ''
 ms.assetid: 7811f23b-6100-427f-93b1-44f5f81f6c76
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 06662cea3c0712fb26f6afdab1e83ab330b076e1
-ms.sourcegitcommit: 82052a88acbc33893f7b9e0d10cc2e8c652ef003
+ms.openlocfilehash: 7785b9ea4e9f9d6dbc164ec7636e4f7a8ec79121
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49349540"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51596692"
 ---
+# <a name="accounts"></a>Comptes
+
 *S’applique à : Microsoft Cloud App Security*
 
-
-# <a name="accounts"></a>Comptes
 Microsoft Cloud App Security vous donne une visibilité sur les comptes de vos applications connectées. Une fois connecté à une application à l’aide du connecteur d’applications, Cloud App Security lit les informations sur le compte qui sont associées aux applications connectées. La page Comptes vous permet d’examiner ces comptes, les autorisations, les groupes dont ils sont membres, leurs alias et les applications qu’ils utilisent. De plus, quand Cloud App Security détecte un nouveau compte qui n’a pas déjà été vu dans l’une des applications connectées (par exemple dans les activités ou le partage de fichiers), le compte est ajouté à la liste des comptes de cette application. Cela vous permet d’avoir une visibilité sur l’activité des utilisateurs externes interagissant avec vos applications cloud.
 
 Les administrateurs peuvent rechercher les métadonnées ou l’activité d’un utilisateur spécifique. La page **Utilisateurs et comptes** vous fournit des détails complets sur l’entité qui sont extraits à partir d’applications cloud connectées. Elle fournit également l’historique d’activité de l’utilisateur et les alertes de sécurité liées à l’utilisateur.

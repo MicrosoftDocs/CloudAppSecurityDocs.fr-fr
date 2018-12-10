@@ -1,11 +1,11 @@
 ---
 title: Connecter Box à Cloud App Security pour la visibilité et le contrôle d’utilisation | Microsoft Docs
-description: Cette rubrique fournit des informations sur la connexion de votre application Box à Cloud App Security à l’aide du connecteur API.
+description: Cet article fournit des informations sur la connexion de votre application Box à Cloud App Security à l’aide du connecteur API.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/29/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,18 @@ ms.technology: ''
 ms.assetid: b3e4713e-986f-4a5e-9fcc-f8de94dd0df7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f246cff6e48d07f52d0b40d37599e5dcd89d7d2e
-ms.sourcegitcommit: bb010d8dd0a6eff39df31e33c2cc9c37ec321b46
+ms.openlocfilehash: 7485128c46fcbf64811299489a2108b3b2ce66d3
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50217201"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51596964"
 ---
+# <a name="connect-box-to-microsoft-cloud-app-security"></a>Connecter Box à Microsoft Cloud App Security
+
 *S’applique à : Microsoft Cloud App Security*
 
-
-# <a name="connect-box-to-microsoft-cloud-app-security"></a>Connecter Box à Microsoft Cloud App Security
-Cette section fournit des instructions pour connecter Microsoft Cloud App Security à votre compte Box existant à l’aide des API du connecteur d’applications.  
+Cet article fournit des instructions pour connecter Microsoft Cloud App Security à votre compte Box existant à l’aide des API du connecteur d’applications.  
   
 ## <a name="how-to-connect-box-to-cloud-app-security"></a>Comment connecter Box à Cloud App Security  
   

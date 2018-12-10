@@ -1,11 +1,11 @@
 ---
 title: Connecter Dropbox à Cloud App Security pour la visibilité et le contrôle d’utilisation | Microsoft Docs
-description: Cette rubrique fournit des informations sur la connexion de votre application Dropbox à Cloud App Security à l’aide du connecteur API.
+description: Cet article fournit des informations sur la connexion de votre application Dropbox à Cloud App Security à l’aide du connecteur d’API.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/29/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,18 @@ ms.technology: ''
 ms.assetid: 4acd93f4-b885-4e1f-a385-43b5db02a3ee
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b3e6e9a25c419aa9453e4771b477c068b9ad902c
-ms.sourcegitcommit: bb010d8dd0a6eff39df31e33c2cc9c37ec321b46
+ms.openlocfilehash: 6a994e5ef04a18299d78613adfb74147787c862c
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50217235"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51596794"
 ---
+# <a name="connect-dropbox-to-microsoft-cloud-app-security"></a>Connecter Dropbox à Microsoft Cloud App Security
+
 *S’applique à : Microsoft Cloud App Security*
 
-
-# <a name="connect-dropbox-to-microsoft-cloud-app-security"></a>Connecter Dropbox à Microsoft Cloud App Security
-Cette section fournit des instructions pour connecter Microsoft Cloud App Security à votre compte Dropbox existant à l’aide des API du connecteur.  
+Cet article fournit des instructions pour connecter Microsoft Cloud App Security à un compte Dropbox existant à l’aide des API de connecteur.  
  
  
 Étant donné que Dropbox permet d’accéder aux fichiers à partir de liens partagés sans connexion, Cloud App Security inscrit ces utilisateurs en tant qu’utilisateurs non authentifiés. Si vous voyez des utilisateurs Dropbox non authentifiés, il peut s’agir d’utilisateurs qui n’appartiennent pas à votre organisation ou d’utilisateurs reconnus de votre organisation qui ne se sont pas connectés.

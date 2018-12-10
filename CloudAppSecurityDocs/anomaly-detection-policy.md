@@ -1,11 +1,11 @@
 ---
 title: Créer une stratégie de détection des anomalies dans Cloud App Security | Microsoft Docs
-description: Cette rubrique fournit une description des stratégies de détection des anomalies ainsi que des informations de référence sur les composantes d’une stratégie de détection des anomalies.
+description: Cet article fournit une description des stratégies de détection des anomalies ainsi que des informations de référence sur les composantes d’une stratégie de détection des anomalies.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/28/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,16 @@ ms.technology: ''
 ms.assetid: ab9bc377-d2f5-4f4c-a419-f1728a15d1c7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a6ac7a6f8fcfbcde01dbcdcb9eaaaac82da3c8bc
-ms.sourcegitcommit: d70e5bf78a1db6d9e277c486638a08a474942edb
+ms.openlocfilehash: e29456add1796ea13c67b44f61c628cdb924f0dc
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50745729"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51596947"
 ---
-*S’applique à : Microsoft Cloud App Security*
-
- 
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>Obtenir instantanément une détection des anomalies et une analytique comportementale
+
+*S’applique à : Microsoft Cloud App Security*
 
 Les stratégies de détection des anomalies de Microsoft Cloud App Security intègrent une analytique comportementale des utilisateurs et des entités (UEBA) et un apprentissage automatique (ML) pour vous permettre de lancer immédiatement une détection avancée des menaces dans tout votre environnement cloud. Comme ces stratégies sont automatiquement activées, les nouvelles stratégies de détection des anomalies fournissent des résultats immédiats grâce à des détections immédiates, le ciblage de nombreuses anomalies comportementales entre vos utilisateurs et les ordinateurs et appareils connectés à votre réseau.  En outre, les nouvelles stratégies exposent davantage de données à partir du moteur de détection de Cloud App Security afin d’accélérer le processus d’investigation, et contiennent des menaces permanentes. 
 
@@ -81,6 +80,9 @@ Cette détection exploite la capacité de Cloud App Security à surveiller le co
  
 > [!NOTE]
 > Cloud App Security vous avertit seulement pour chaque règle de transfert qui est identifiée comme suspecte, en fonction du comportement habituel pour l’utilisateur. 
+
+**Règles de manipulation de boîte de réception suspecte**
+- Cette détection profile votre environnement et déclenche des alertes quand des règles de boîte de réception suspectes qui suppriment ou déplacent des messages ou des dossiers sont définies sur la boîte de réception d’un utilisateur. Cela peut indiquer que le compte de l’utilisateur est compromis, que des messages sont masqués intentionnellement, et que la boîte aux lettres est utilisée pour distribuer du courrier indésirable ou des programmes malveillants dans votre organisation.
 
 **Activités inhabituelles (par utilisateur)**<br>
 Ces détections identifient les utilisateurs dans les cas suivants :

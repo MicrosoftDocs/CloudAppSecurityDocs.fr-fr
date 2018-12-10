@@ -1,6 +1,6 @@
 ---
 title: Connecter ServiceNow à Cloud App Security pour la visibilité et le contrôle d’utilisation | Microsoft Docs
-description: Cette rubrique fournit des informations sur la connexion de votre application ServiceNow à Cloud App Security à l’aide du connecteur API.
+description: Cet article fournit des informations sur la connexion de votre application ServiceNow à Cloud App Security à l’aide du connecteur d’API.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
@@ -13,18 +13,18 @@ ms.technology: ''
 ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 75e22bb5ff151ea71ea2a48e5aef45f22fc4b5f8
-ms.sourcegitcommit: bb010d8dd0a6eff39df31e33c2cc9c37ec321b46
+ms.openlocfilehash: f81623e718d9cf4329f3e738c1b585cb6b33b102
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50217320"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51597270"
 ---
-*S’applique à : Microsoft Cloud App Security*
-
 # <a name="connect-servicenow-to-microsoft-cloud-app-security"></a>Connecter ServiceNow à Microsoft Cloud App Security
 
-Cette section fournit des instructions pour connecter Microsoft Cloud App Security à votre compte ServiceNow existant à l’aide de l’API du connecteur d’applications. 
+*S’applique à : Microsoft Cloud App Security*
+
+Cet article fournit des instructions pour connecter Microsoft Cloud App Security à un compte ServiceNow existant à l’aide de l’API de connecteur d’applications. 
 
 > [!NOTE]
 >  Nous vous recommandons de déployer ServiceNow à l’aide de jetons d’application OAuth, disponibles pour Fuji et versions ultérieures (consultez la [documentation ServiceNow](http://wiki.servicenow.com/index.php?title=OAuth_Applications#gsc.tab=0) appropriée). Pour les versions antérieures, un [mode de connexion hérité](#legacy-servicenow-connection) est disponible en fonction de l’utilisateur/du mot de passe. Le nom d’utilisateur et le mot de passe fournis sont utilisés uniquement pour générer les jetons API, et ils ne sont pas enregistrés après le processus initial de connexion.

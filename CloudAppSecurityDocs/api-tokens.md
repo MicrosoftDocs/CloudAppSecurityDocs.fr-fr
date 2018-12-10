@@ -1,11 +1,11 @@
 ---
 title: Gestion des jetons d’API dans Cloud App Security | Microsoft Docs
-description: Cette rubrique fournit des informations sur la génération de jetons d’API pour Cloud App Security.
+description: Cet article fournit des informations sur la génération de jetons d’API pour Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/11/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,17 @@ ms.technology: ''
 ms.assetid: 4f5e6b1e-6b2c-4358-98f0-945e2993d5fe
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 772c140ac178f65f1d558c69b732de6925ce0d51
-ms.sourcegitcommit: 82052a88acbc33893f7b9e0d10cc2e8c652ef003
+ms.openlocfilehash: 849669dc659d3abfb4787d3a94edadc170db485e
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49349489"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51597066"
 ---
+# <a name="api-tokens"></a>Jetons d’API
+
 *S’applique à : Microsoft Cloud App Security*
 
-
-# <a name="api-tokens"></a>Jetons d’API
-    
 L’API Microsoft Cloud App Security fournit l’accès par programmation à Cloud App Security par le biais de points de terminaison API REST. Les applications peuvent utiliser l’API pour effectuer des opérations de lecture et de mise à jour sur les objets et les données Cloud App Security. Par exemple, l’API Cloud App Security prend en charge les opérations courantes suivantes pour un objet utilisateur :
 
 - Charger des fichiers journaux pour Cloud Discovery
@@ -76,7 +75,7 @@ Une fois qu’un jeton est révoqué, il est supprimé du tableau, et le logicie
 
 
 
-## <a name="see-also"></a>Voir aussi  
+## <a name="next-steps"></a>Étapes suivantes
 [Résolution des problèmes d’intégration de SIEM](troubleshooting-siem.md)   
 
 [Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier.](https://premier.microsoft.com/)  

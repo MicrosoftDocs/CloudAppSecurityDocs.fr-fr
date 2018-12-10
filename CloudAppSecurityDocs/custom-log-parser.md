@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2018
+ms.date: 11/22/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,24 +13,24 @@ ms.technology: ''
 ms.assetid: a612d87e-5471-4add-b4b1-dbbb530f2b61
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d8b15a5ce0deebb90b40d5a4bcd7c1aefd9bfc8a
-ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
+ms.openlocfilehash: 593c54aa44b2345e1c0b7e3ad7dab9b6e50e774a
+ms.sourcegitcommit: cae782d508db9d1a7c0c362e9a23e83f74d48b21
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51596811"
+ms.lasthandoff: 12/02/2018
+ms.locfileid: "52743639"
 ---
 # <a name="use-a-custom-log-parser"></a>Utiliser un analyseur de journal personnalisé
 
 *S’applique à : Microsoft Cloud App Security*
 
-Cloud App Security vous permet de configurer un analyseur personnalisé correspondant au format de vos journaux et de traiter le format de vos journaux pour qu’ils soient utilisables avec Cloud Discovery. En règle générale, vous utilisez un analyseur personnalisé si le pare-feu ou l’appareil n’est pas explicitement pris en charge par Cloud App Security. 
+Cloud App Security vous permet de configurer un analyseur personnalisé correspondant au format de vos journaux et de traiter le format de vos journaux pour qu’ils soient utilisables avec Cloud Discovery. En règle générale, vous utilisez un analyseur personnalisé si le pare-feu ou l’appareil n’est pas explicitement pris en charge par Cloud App Security. Il peut s’agir d’un analyseur CSV ou d’un analyseur Clé-Valeur personnalisé.
 
 L’analyseur personnalisé vous permet d’utiliser les journaux de pare-feu non pris en charge. 
 
 
  
-Pour configurer un analyseur CSV personnalisé :
+Pour configurer un analyseur personnalisé :
 1. Dans le portail Cloud App Security, cliquez sur **Découvrir**, puis sur **Créer un rapport de capture instantanée**.  
   
    ![Créer un rapport de capture instantanée](./media/create-new-snapshot-report.png)
@@ -55,7 +55,7 @@ Pour configurer un analyseur CSV personnalisé :
    ![analyseur de journal personnalisé](./media/custom-log-parser.png) 
 
 
-7. Cliquez sur **Enregistrer**. Le format de journal personnalisé que vous configurez est enregistré comme analyseur personnalisé par défaut. Vous pouvez le modifier à tout moment en cliquant sur Modifier.
+7. Cliquez sur **Enregistrer**. Le format de journal personnalisé que vous configurez est enregistré comme analyseur personnalisé par défaut. Vous pouvez le modifier à tout moment en cliquant sur **Modifier**.
 
 8. Sous **Choisir les journaux de trafic**, sélectionnez le fichier journal que vous avez modifié et chargez-le. Vous pouvez charger jusqu’à 20 fichiers à la fois. Les fichiers compressés et zippés sont également pris en charge.  
   

@@ -1,11 +1,11 @@
 ---
 title: Blocage des applications découvertes | Microsoft Docs
-description: Cette rubrique décrit la procédure d’exportation de scripts de blocage pour les applications découvertes.
+description: Cet article décrit la procédure d’exportation de scripts de blocage pour les applications découvertes.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/9/2018
+ms.date: 11/15/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,25 +13,23 @@ ms.technology: ''
 ms.assetid: e451031e-4764-411a-b366-73a49d4f25df
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e0e616914ce44ca28938298a5a0f3951b83454dc
-ms.sourcegitcommit: 53a1c990ff06674c26563a9ebcb1979818c3c063
+ms.openlocfilehash: 7664ad859d0fb069c524b8fa61f5e7c2cbd3b3ec
+ms.sourcegitcommit: 79e5aa5a5f90223a5963eb8f6df81a80578e9ce9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881786"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51644295"
 ---
+# <a name="govern-discovered-apps"></a>Gouverner les applications découvertes
+
 *S’applique à : Microsoft Cloud App Security*
-
-
-## <a name="govern-discovered-apps"></a>Gouverner les applications découvertes
 
 Une fois que vous avez consulté la liste des applications découvertes dans votre environnement, vous pouvez sécuriser de plusieurs façons l’environnement contre l’utilisation d’applications indésirables.
 
 
-### <a name="sanctioningunsanctioning-an-app"></a>Approbation/non-approbation d’une application 
+## <a name="BKMK_SanctionApp"></a> Approbation/non-approbation d’une application 
 
-Pour ne pas approuver une application présentant un risque spécifique, cliquez sur les points de suspension à la fin de la ligne et sélectionnez **Ne pas approuver**.
-Vous avez toujours la possibilité d’utiliser une application non approuvée, mais grâce aux filtres Cloud Discovery vous surveillez plus facilement son utilisation. Vous pouvez alors informer les utilisateurs de l’application qu’elle n’est pas approuvée et leur suggérer d’utiliser une autre application sécurisée.
+Pour ne pas approuver une application présentant un risque spécifique, cliquez sur les points de suspension à la fin de la ligne. Ensuite, sélectionnez **Ne pas approuver**. Vous avez toujours la possibilité d’utiliser une application non approuvée, mais grâce aux filtres Cloud Discovery vous surveillez plus facilement son utilisation. Vous pouvez alors informer les utilisateurs de l’application non approuvée et leur suggérer d’utiliser une autre application sécurisée.
 
 ![Marquer comme non approuvées](./media/tag-as-unsanctioned.png)  
 
@@ -44,8 +42,7 @@ Pour interroger une liste d’applications non approuvées, vous pouvez [génér
 
 ## <a name="export-a-block-script-to-govern-discovered-apps"></a>Exporter un script de blocage pour gouverner les applications découvertes
 
-Cloud App Security vous permet de bloquer l’accès aux applications non approuvées en optimisant vos appliances de sécurité locales existantes. Générez un script de blocage dédié et importez-le dans votre appliance.
-Pour cette solution, vous n’avez pas besoin de rediriger tout le trafic web de l’organisation vers un proxy.
+Cloud App Security vous permet de bloquer l’accès aux applications non approuvées en utilisant vos appliances de sécurité locales existantes. Vous pouvez générer un script de blocage dédié et l’importer dans votre appliance. Pour cette solution, vous n’avez pas besoin de rediriger tout le trafic web de l’organisation vers un proxy.
 
 1. Dans le tableau de bord Cloud Discovery, marquez toutes les applications que vous souhaitez bloquer comme **Non approuvées**.
 
@@ -59,7 +56,7 @@ Pour cette solution, vous n’avez pas besoin de rediriger tout le trafic web de
 
    ![Générer la fenêtre pop-up du script de blocage](./media/generate-block-script-popup.png)  
 
-4. Cliquez ensuite sur le bouton Générer un script. Cette action crée un script de blocage pour toutes vos applications non approuvées. Par défaut, le fichier est renommé avec la date à laquelle il a été exporté et le type d’appliance sélectionné, par exemple *2017-02-19_CAS_Fortigate_block_script.txt* 
+4. Ensuite, cliquez sur le bouton Générer un script afin de créer un script de blocage pour toutes vos applications non approuvées. Par défaut, le fichier est renommé avec la date à laquelle il a été exporté et le type d’appliance sélectionné. *2017-02-19_CAS_Fortigate_block_script.txt* serait un exemple de nom de fichier. 
 
    ![Bouton Générer un script de blocage](./media/generate-block-script-button.png)  
 
@@ -67,7 +64,7 @@ Pour cette solution, vous n’avez pas besoin de rediriger tout le trafic web de
 
 
 
-## <a name="see-also"></a>Voir aussi  
+## <a name="next-steps"></a>Étapes suivantes  
 [Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)   
 
 [Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier.](https://premier.microsoft.com/)  

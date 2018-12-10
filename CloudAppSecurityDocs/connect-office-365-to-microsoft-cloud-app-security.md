@@ -1,11 +1,11 @@
 ---
 title: Connecter Office 365 à Cloud App Security pour la visibilité et le contrôle d’utilisation | Microsoft Docs
-description: Cette rubrique fournit des informations sur la connexion d’Office 365 à Cloud App Security à l’aide du connecteur API.
+description: Cet article fournit des informations sur la connexion d’Office 365 à Cloud App Security à l’aide du connecteur d’API.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/29/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,21 +13,20 @@ ms.technology: ''
 ms.assetid: a79bf393-0d2c-44b6-8dab-86c740fd7333
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ef40ee52ca592de3feef2998ea6b753436c4d0fa
-ms.sourcegitcommit: bb010d8dd0a6eff39df31e33c2cc9c37ec321b46
+ms.openlocfilehash: 3bfbdaef4a62ba100710709703b6cdf0a53e9f64
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50217255"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51596760"
 ---
+# <a name="connect-office-365-to-microsoft-cloud-app-security"></a>Connecter Office 365 à Microsoft Cloud App Security
+
 *S’applique à : Microsoft Cloud App Security*
 
-
-
-# <a name="connect-office-365-to-microsoft-cloud-app-security"></a>Connecter Office 365 à Microsoft Cloud App Security
-Cette section fournit des instructions pour connecter Microsoft Cloud App Security à votre compte Microsoft Office 365 existant à l’aide de l’API du connecteur d’applications.  
+Cet article fournit des instructions pour connecter Microsoft Cloud App Security à un compte Microsoft Office 365 existant à l’aide de l’API de connecteur d’applications.  
   
-Cloud App Security prend en charge la plateforme dédiée Office 365 héritée, ainsi que les dernières offres de services Office 365 (communément appelés la famille de mises en production vNext d’Office 365).  Cloud App Security ne prend pas en charge la suite héritée Microsoft Business Productivity Online Standard Suite. 
+Cloud App Security prend en charge la plateforme dédiée Office 365 héritée, ainsi que les dernières offres de services Office 365 (communément appelés la famille de mises en production vNext d’Office 365).  Cloud App Security ne prend pas en charge la suite héritée Microsoft Business Productivity Online Standard Suite (BPOS). 
 
 > [!NOTE]
 > Dans certains cas, une mise en production de service vNext diffère légèrement de l’offre Office 365 standard sur les plans de l’administration et de la gestion.

@@ -1,11 +1,11 @@
 ---
 title: Contrôler l’utilisation des applications cloud en créant des stratégies dans Cloud App Security | Microsoft Docs
-description: Cette rubrique fournit des informations sur la façon dont les stratégies sont utilisées et configurées pour contrôler l’usage des applications cloud.
+description: Cet article fournit des informations sur la façon dont les stratégies sont utilisées et configurées pour contrôler l’usage des applications cloud.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/29/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,16 @@ ms.technology: ''
 ms.assetid: 14d10238-0f61-43e9-ab96-71534a27d3d4
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 24b3148a5de7e0367076b740242a583f68e4856f
-ms.sourcegitcommit: bb010d8dd0a6eff39df31e33c2cc9c37ec321b46
+ms.openlocfilehash: a1d79ec9dffe5e0b60a71106d4b4907ed8c5ee0d
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50217354"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51597117"
 ---
-*S’applique à : Microsoft Cloud App Security*
-
-
 # <a name="control-cloud-apps-with-policies"></a>Contrôler les applications cloud avec des stratégies
+
+*S’applique à : Microsoft Cloud App Security*
 
 Grâce aux stratégies, vous pouvez définir la façon dont vous souhaitez que vos utilisateurs se comportent dans le cloud. Elles vous permettent de détecter des comportements à risques, des violations, ou des points de données et des activités suspectes dans votre environnement cloud. Si nécessaire, vous pouvez intégrer des flux de travail de correction pour atténuer les risques. Il existe plusieurs types de stratégies suivant les différents types d’informations que vous voulez collecter sur votre environnement cloud et les types de mesures correctives que vous pouvez souhaiter prendre.  
   
@@ -56,11 +55,11 @@ Cloud App Security vous permet d’atténuer différents risques dans le cloud. 
   
      Classez et identifiez les données sensibles ou réglementées, notamment les autorisations de partage pour chaque fichier, stockées dans des services de synchronisation de fichier pour assurer la conformité aux réglementations telles que PCI, SOX et HIPAA  
   
--   **Contrôle de configuration :**  Votre configuration fait-elle l’objet de modifications non autorisées ?  
+-   **Contrôle de configuration : ** Votre configuration fait-elle l’objet de modifications non autorisées ?  
   
      Surveillez les modifications de configuration, notamment la manipulation de la configuration à distance.  
   
--   **Cloud Discovery :**  Des applications nouvelles sont-elles utilisées dans votre organisation ? Des applications Shadow IT que vous ignorez sont-elles utilisées ?  
+-   **Cloud Discovery : ** Des applications nouvelles sont-elles utilisées dans votre organisation ? Des applications Shadow IT que vous ignorez sont-elles utilisées ?  
   
      Évaluez le risque global pour chaque application cloud en fonction de la réglementation, et des bonnes pratiques et des certifications du secteur. Vous permet de surveiller le nombre d’utilisateurs, les activités, le volume de trafic et les heures d’utilisation habituelles pour chaque application cloud.  
   
@@ -122,7 +121,9 @@ Pour créer une stratégie basée sur les résultats d’un examen, effectuez le
   
      ![Créer un fichier à la suite d’un examen](./media/create-file-from-investigation.png)  
   
-3. Dans le coin supérieur droit de la console, cliquez sur **Nouvelle stratégie à partir de la recherche** ![Bouton Nouvelle stratégie à partir de la recherche](./media/new-policy-from-search-button.png)  
+3. Dans le coin supérieur droit de la console, cliquez sur **Nouvelle stratégie à partir de la recherche**.
+
+     ![Bouton Nouvelle stratégie à partir de la recherche](./media/new-policy-from-search-button.png)
   
 4. Une page de création de stratégie s’ouvre, contenant les filtres que vous avez utilisés dans votre examen.  
   

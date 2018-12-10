@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/29/2018
+ms.date: 11/16/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,48 +13,57 @@ ms.technology: ''
 ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 682d3e7a988e7662f393b20296322ee590d85315
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 2d1621dd7a1e082631b941ecfb711a686a69991a
+ms.sourcegitcommit: 851ff017c226435d38bed18dbece640a632cd2a0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143205"
+ms.lasthandoff: 11/18/2018
+ms.locfileid: "51943699"
 ---
+# <a name="email-notification-preferences"></a>Préférences de notification par e-mail
+
 *S’applique à : Microsoft Cloud App Security*
 
+Cet article fournit des informations sur la procédure de personnalisation des notifications par e-mail envoyées par Cloud App Security.
 
-##  <a name="mailsettings"></a> Définir les préférences de notification par e-mail  
+## <a name="mailsettings"></a> Définir les préférences de notification par e-mail  
 
-Pour définir les paramètres des e-mails de notification envoyés par Microsoft Cloud App Security aux administrateurs demandant l’envoi des alertes et des notifications aux utilisateurs finaux concernant les violations dans lesquelles ils sont impliqués, suivez cette procédure. Pour plus d’informations sur l’adresse IP du serveur de messagerie Microsoft Cloud App Security à ajouter à la liste verte de votre service antispam, consultez [Configuration requise pour le réseau](network-requirements.md). 
+ Microsoft Cloud App Security envoie des notifications par e-mail aux administrateurs ayant demandé à recevoir des alertes et aux utilisateurs finaux impliqués dans les violations. Pour définir les paramètres des notifications par e-mail, effectuez les étapes suivantes. Pour plus d’informations sur l’adresse IP du serveur de messagerie Microsoft Cloud App Security à ajouter à la liste verte de votre service antispam, consultez [Configuration requise pour le réseau](network-requirements.md).
 
-
-1. Dans la barre de menus, cliquez sur la roue dentée des paramètres ![icône des paramètres](./media/settings-icon.png "icône des paramètres") et sélectionnez **Paramètres**, puis sélectionnez l’onglet **Paramètres de messagerie**.  
+1. Dans la barre de menus, cliquez sur l’icône des paramètres (engrenage), sélectionnez **Paramètres**, puis sélectionnez l’onglet **Paramètres de messagerie**.  
 
    ![Paramètres de messagerie](./media/mail-settings-config.png)
 
-2. Sous **Identité de l’expéditeur de l’e-mail** : si vous envisagez d’utiliser les paramètres de messagerie par défaut, vous n’avez pas besoin de modifier quoi que ce soit dans cette section. Si vous voulez personnaliser l’identité de l’expéditeur de l’e-mail, vous pouvez définir tous les paramètres ici pour personnaliser le champ à modifier. Vous pouvez changer tout ou partie des champs suivants : **Nom complet de l’expéditeur**, **Adresse e-mail de l’expéditeur**, **Adresse e-mail de réponse**. Microsoft Cloud App Security effectue cela pour vous à l’aide d’un service de messagerie tiers appelé MailChimp®. Veillez à lire et à accepter les Conditions d’utilisation et la Déclaration de confidentialité de MailChimp pour pouvoir activer cette option, sinon Microsoft Cloud App Security enverra les notifications à l’aide des paramètres par défaut.
-   
+2. Sous **Identité de l’expéditeur de l’e-mail** : si vous envisagez d’utiliser les paramètres de messagerie par défaut, vous n’avez pas besoin de modifier quoi que ce soit dans cette section. Si vous voulez personnaliser l’identité de l’expéditeur de l’e-mail, vous pouvez définir tous les paramètres ici pour personnaliser le champ à modifier. Vous pouvez changer tout ou partie des éléments suivants : **Nom complet de l’expéditeur**, **Adresse e-mail de l’expéditeur**, **Adresse e-mail de réponse**. Microsoft Cloud App Security effectue la personnalisation à l’aide d’un service de messagerie tiers appelé MailChimp®. N’oubliez pas de consulter et d’accepter les termes du contrat de service et la déclaration de confidentialité de MailChimp avant d’activer la personnalisation. Si vous oubliez, Microsoft Cloud App Security enverra les notifications en utilisant les paramètres par défaut.
+ 
    > [!NOTE]
    > Seuls les caractères Unicode sont pris en charge dans le nom complet et l’adresse e-mail conformément à la [norme rfc822](http://www.rfc-editor.org/rfc/rfc822.txt).
 
   
-3. Pour la **Conception de l’e-mail**, vous pouvez utiliser un fichier html pour personnaliser et créer les e-mails envoyés par le système. Le fichier html utilisé pour votre modèle doit inclure les éléments suivants :  
+3. Pour la **Conception de l’e-mail**, vous pouvez utiliser un fichier html pour personnaliser et créer les e-mails envoyés par le système. Le fichier html utilisé pour votre modèle doit inclure les éléments suivants :  
   
-   -   Tous les fichiers CSS du modèle doivent être insérés dans celui-ci.  
+   - Tous les fichiers CSS du modèle doivent être insérés dans celui-ci.  
   
-   -   Le modèle doit avoir trois espaces réservés non modifiables :  
+   - Le modèle doit avoir trois espaces réservés non modifiables :  
   
-        %%logo%% : URL vers le logo de votre société chargée par le biais de la page Paramètres généraux  
+        - **%%logo%%**  : URL vers le logo de votre société chargée par le biais de la page Paramètres généraux.  
   
-        %%title%% : espace réservé pour le titre de l’e-mail, tel que défini par la stratégie  
+        - **%%title%%**  : espace réservé pour le titre de l’e-mail, tel que défini par la stratégie.  
 
-        %%content%% : espace réservé pour le contenu à inclure pour les utilisateurs finaux, tel que défini par la stratégie  
-     
+        - **%%content%%**  : espace réservé pour le contenu à inclure pour les utilisateurs finaux, tel que défini par la stratégie.  
+
 4. Cliquez sur **Charger un modèle...** et sélectionnez le fichier que vous avez créé. 
 
-5. Ensuite, cliquez sur **Envoyer un e-mail test** pour vous envoyer un e-mail test afin de voir un exemple du modèle que vous avez créé. L’e-mail est envoyé au compte que vous avez utilisé pour vous connecter au portail. L’e-mail test comprend les champs de métadonnées, le modèle, l’objet de l’e-mail, le titre dans le corps de l’e-mail et le contenu.  Voici un exemple de modèle d’e-mail : 
+5. Cliquez sur **Envoyer un e-mail test** pour vous envoyer un e-mail d’un exemple du modèle que vous avez créé. L’e-mail est envoyé au compte que vous avez utilisé pour vous connecter au portail. Dans l’e-mail de test, vous verrez et vérifierez les éléments suivants :
+    - Les champs de métadonnées
+    - Le modèle
+    - L’objet de l’e-mail
+    - Le titre dans le corps du message
+    - Le contenu
 
+## <a name="sample-email-template"></a>Exemple de modèle d’e-mail
 
+Voici un exemple de modèle d’e-mail :
 
 ```html
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -108,15 +117,10 @@ Pour définir les paramètres des e-mails de notification envoyés par Microsoft
           </table>  
             </body>  
           </html>  
-   ```
-  
+```
 
-  
-  
+## <a name="next-steps"></a>Étapes suivantes
 
-  
-    
-## <a name="see-also"></a>Voir aussi  
 [Configurer Cloud Discovery](set-up-cloud-discovery.md)   
 
 [Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier.](https://premier.microsoft.com/)  

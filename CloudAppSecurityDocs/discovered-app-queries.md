@@ -1,11 +1,11 @@
 ---
 title: Utilisation des filtres et des requêtes d’applications découvertes de Cloud App Security | Microsoft Docs
-description: Cette rubrique fournit une liste de filtres et de requêtes d’applications découvertes de Cloud App Security, et explique comment les utiliser.
+description: Cet article fournit une liste de filtres et de requêtes d’applications découvertes de Cloud App Security, et explique comment les utiliser.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 1a2d3aeb-4e28-4c73-804b-95e862b08e43
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 65dfb8411910747db2d12f6757218fca93b362f2
-ms.sourcegitcommit: d70e5bf78a1db6d9e277c486638a08a474942edb
+ms.openlocfilehash: f72d5e96d5013684f163a645fbf3e5795cc7639c
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50745763"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51597287"
 ---
+# <a name="discovered-app-filters-and-queries"></a>Filtres et requêtes d’applications découvertes
+
 *S’applique à : Microsoft Cloud App Security*
 
-# <a name="discovered-app-filters-and-queries"></a>Filtres et requêtes d’applications découvertes
 Quand vous avez un grand nombre d’applications découvertes, il est pratique de les filtrer et de leur appliquer des requêtes. Cet article décrit les filtres disponibles et comment faire des requêtes sur vos applications découvertes.  
 
 ## <a name="discovered-app-filters"></a>Filtres d’application découverte
@@ -79,21 +80,21 @@ Pour faciliter encore plus les recherches, vous pouvez créer des requêtes pers
 
 Cloud App Security vous fournit également des **requêtes suggérées** et vous permet d’enregistrer des requêtes personnalisées que vous utilisez fréquemment. Les requêtes suggérées vous fournissent des zones de recherche recommandées qui filtrent vos applications découvertes en utilisant les requêtes suggérées facultatives suivantes :
 
- - Applications cloud autorisant l’utilisation anonyme : filtre toutes vos applications découvertes pour afficher uniquement les applications représentant des risques de sécurité, car elles ne nécessitent pas l’authentification des utilisateurs et permettent aux utilisateurs de charger des données.
+ - **Applications cloud autorisant l’utilisation anonyme** - Filtre toutes vos applications découvertes pour afficher uniquement les applications représentant des risques de sécurité, car elles ne nécessitent pas l’authentification des utilisateurs et permettent à ces derniers de charger des données.
 
- - Applications cloud certifiées CSA STAR : filtre toutes vos applications découvertes pour afficher uniquement les applications qui ont une certification CSA STAR par auto-évaluation, par certification, par attestation ou par surveillance continue.
+ - **Applications cloud certifiées CSA STAR** - Filtre toutes vos applications découvertes pour afficher uniquement les applications qui ont une certification CSA STAR par autoévaluation, par certification, par attestation ou par supervision continue.
 
- - Applications cloud conformes à FedRAMP : filtre toutes vos applications découvertes pour afficher uniquement celles dont le facteur de risque de conformité FedRAMP est élevé, moyen ou faible. 
+ - **Applications cloud conformes à FedRAMP** - Filtre toutes vos applications découvertes pour afficher uniquement celles dont le facteur de risque de conformité FedRAMP est élevé, moyen ou faible. 
 
- - Applications de stockage et de collaboration cloud qui ont des filtres de données : filtre toutes vos applications découvertes pour afficher uniquement les applications qui présentent un risque, car elles ne vous permettent pas d’être propriétaire de vos données alors qu’elles les conservent.
+ - **Applications de stockage et de collaboration cloud qui possèdent les données utilisateur** - Filtre toutes vos applications découvertes pour afficher uniquement les applications qui présentent un risque, car elles ne vous permettent pas d’être propriétaire de vos données alors qu’elles les conservent.
 
- - Applications de stockage cloud risquées et non conformes : filtre toutes vos applications découvertes pour afficher uniquement les applications qui ne sont pas conformes à SOC 2 ou à HIPAA, qui ne prennent pas en charge la version de PCI DSS, et qui ont un score de risque inférieur ou égal à 5.
+ - **Applications de stockage cloud risquées et non conformes** - Filtre toutes vos applications découvertes pour afficher uniquement les applications qui ne sont pas conformes à SOC 2 ou à HIPAA, qui ne prennent pas en charge la version PCI DSS et qui ont un score de risque inférieur ou égal à 5.
 
- - Applications cloud d’entreprise qui ont une authentification faible : filtre toutes vos applications découvertes pour afficher uniquement les applications qui ne prennent pas en charge SAML, qui n’ont pas de stratégie de mot de passe et qui ne permettent pas l’authentification multifacteur.
+ - **Applications cloud d’entreprise avec une authentification faible** - Filtre toutes vos applications découvertes pour afficher uniquement les applications qui ne prennent pas en charge SAML, qui n’ont pas de stratégie de mot de passe et qui ne permettent pas l’utilisation de MFA.
 
- - Applications cloud d’entreprise qui ont un chiffrement faible : filtre toutes vos applications découvertes pour afficher uniquement les applications qui sont risquées, car elles ne chiffrent pas les données au repos et ne prennent en charge aucun protocole de chiffrement.
+ - **Applications cloud d’entreprise avec un chiffrement faible** - Filtre toutes vos applications découvertes pour afficher uniquement les applications qui présentent des risques, car elles ne chiffrent pas les données au repos et ne prennent en charge aucun protocole de chiffrement.
 
-- Applications cloud prêtes pour le RGPD : filtre toutes vos applications découvertes pour afficher uniquement les applications qui sont prêtes pour le RGPD. Étant donné que la conformité au RGPD est une priorité absolue, cette requête vous aide à identifier les applications qui sont prêtes pour le RGPD et à atténuer les menaces en évaluant le risque de celles qui ne le sont pas.
+- **Applications cloud prêtes pour le RGPD** - Filtre toutes vos applications découvertes pour afficher uniquement les applications qui sont prêtes pour le RGPD. Étant donné que la conformité au RGPD est une priorité absolue, cette requête vous aide à identifier les applications qui sont prêtes pour le RGPD et à atténuer les menaces en évaluant le risque de celles qui ne le sont pas.
  
 ![interroger les applications découvertes](./media/queries-discovered-apps.png)
 

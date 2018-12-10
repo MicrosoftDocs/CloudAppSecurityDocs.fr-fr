@@ -1,11 +1,11 @@
 ---
 title: Utilisation des filtres et des requêtes d’activités de Cloud App Security | Microsoft Docs
-description: Cette rubrique fournit une liste de filtres et de requêtes d’activités de Cloud App Security, et explique comment les utiliser.
+description: Cet article fournit une liste de filtres et de requêtes d’activité de Cloud App Security, et explique comment les utiliser.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/11/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,18 @@ ms.technology: ''
 ms.assetid: 9ba5c7d3-c733-4048-9b99-bf41a0f46695
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6b2028a8b62413cccefdab0fb529fb42fa57c221
-ms.sourcegitcommit: 82052a88acbc33893f7b9e0d10cc2e8c652ef003
+ms.openlocfilehash: 25d173e873e8e8cd49b47559a58240a93cc030b1
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49349642"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51597253"
 ---
+# <a name="activity-filters-and-queries"></a>Filtres et requêtes d’activités
+
 *S’applique à : Microsoft Cloud App Security*
 
-
-# <a name="activity-filters-and-queries"></a>Filtres et requêtes d’activités
+Cet article fournit des descriptions et des instructions pour les filtres et les requêtes d’activité de Cloud App Security.
 
 ## <a name="activity-filters"></a>Filtres d’activité
 

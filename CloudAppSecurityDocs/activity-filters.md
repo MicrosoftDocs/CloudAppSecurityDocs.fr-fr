@@ -1,11 +1,11 @@
 ---
 title: Visibilité sur les activités des applications cloud | Microsoft Docs
-description: Cette rubrique fournit une liste des activités, filtres et paramètres de correspondance qui peuvent être appliqués aux stratégies d’activité.
+description: Cet article fournit la liste des activités, des filtres et des paramètres de correspondance qui peuvent être appliqués aux stratégies d’activité.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/11/2018
+ms.date: 11/30/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,17 @@ ms.technology: ''
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 87aa9ac1cb823222230d24d667c1bcfa7e702104
-ms.sourcegitcommit: 82052a88acbc33893f7b9e0d10cc2e8c652ef003
+ms.openlocfilehash: ed2628a18eaa777b8ad849cf2cc9f4417589685c
+ms.sourcegitcommit: cae782d508db9d1a7c0c362e9a23e83f74d48b21
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49349455"
+ms.lasthandoff: 12/02/2018
+ms.locfileid: "52743520"
 ---
+# <a name="activities"></a>Activités
+
 *S’applique à : Microsoft Cloud App Security*
 
-
-# <a name="activities"></a>Activités
 Microsoft Cloud App Security vous donne une visibilité sur toutes les activités de vos applications connectées. Une fois connecté à une application à l’aide du connecteur d’applications, Cloud App Security analyse toutes les activités passées (la période d’analyse rétroactive varie par application). Cloud App Security est ensuite mis à jour en continu avec les nouvelles activités. 
 
 > [!NOTE] 
@@ -109,7 +109,7 @@ Pour afficher les insights sur l’adresse IP :
     - **Activités** : Nombre d’activités effectuées par l’adresse IP au cours des 30 derniers jours.
     - **Emplacement IP** : Emplacements géographiques à partir desquels l’adresse IP s’est connectée au cours des 30 derniers jours.
     - **Activités** : Nombre d’activités effectuées à partir de l’adresse IP au cours des 30 derniers jours.
-    - **Activités administratives**  : Nombre d’activités administratives effectuées à partir de l’adresse IP au cours des 30 derniers jours.
+    - **Activités administratives ** : Nombre d’activités administratives effectuées à partir de l’adresse IP au cours des 30 derniers jours.
     - Vous pouvez effectuer les actions d’adresse IP suivantes :
         - Marquer comme adresse IP d’entreprise et ajouter à la liste autorisée
         - Marquer comme adresse IP VPN et ajouter à la liste autorisée
@@ -122,7 +122,9 @@ Pour afficher les insights sur l’adresse IP :
 
 Vous pouvez exporter toutes les activités utilisateur dans un fichier CSV. 
 
-Dans le **Journal d’activité** en haut à droite, cliquez sur le bouton **Exporter**. ![bouton Exporter](./media/export-button.png)
+Dans le **Journal d’activité** en haut à droite, cliquez sur le bouton **Exporter**.
+
+ ![bouton d’exportation](./media/export-button.png)
 
 [!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 

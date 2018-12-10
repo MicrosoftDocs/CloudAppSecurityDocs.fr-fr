@@ -1,11 +1,11 @@
 ---
 title: Utilisation des applications découvertes dans Cloud App Security | Microsoft Docs
-description: Cette rubrique décrit le processus d’identification et de correction des applications Cloud Discovery à risque dans Cloud App Security.
+description: Cet article décrit le processus d’identification et de correction des applications Cloud Discovery à risque dans Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,23 +13,22 @@ ms.technology: ''
 ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 8cc854e387cb563ca488c299f17b6553905ac6d7
-ms.sourcegitcommit: d70e5bf78a1db6d9e277c486638a08a474942edb
+ms.openlocfilehash: 403eb991a33fd8f0deda7212b0ec180fe23f8551
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50745695"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53122834"
 ---
-*S’applique à : Microsoft Cloud App Security*
-
-
 # <a name="working-with-discovered-apps"></a>Utilisation des applications découvertes
 
-## <a name="review-the-cloud-discovery-dashboard"></a>Consulter le tableau de bord Cloud Discovery
+*S’applique à : Microsoft Cloud App Security*
 
 Le tableau de bord Cloud Discovery est conçu pour vous donner plus d’informations sur l’utilisation des applications cloud dans votre organisation. Il fournit une vue d’ensemble en un clin d’œil des types d’applications utilisés, des alertes ouvertes et des niveaux de risque des applications dans votre organisation. Il vous montre également les principaux utilisateurs des applications et fournit un plan du lieu du siège social d’une application. Le tableau de bord Cloud Discovery a de nombreuses options pour filtrer les données. Le filtrage vous permet de générer des vues spécifiques selon ce qui vous intéresse le plus, avec des graphiques faciles à comprendre pour vous donner une vision globale en un clin d’œil.
 
 ![tableau de bord Cloud Discovery](./media/cloud-discovery-dashboard.png)
+
+## <a name="review-the-cloud-discovery-dashboard"></a>Consulter le tableau de bord Cloud Discovery
 
 La première chose à faire pour obtenir une vue d’ensemble de vos applications Cloud Discovery consiste à examiner les informations suivantes du tableau de bord Cloud Discovery :
  
@@ -42,7 +41,7 @@ La première chose à faire pour obtenir une vue d’ensemble de vos application
 4. Vous pouvez voir les **principaux utilisateurs et adresses IP sources** pour identifier les utilisateurs qui emploient le plus les applications cloud dans votre organisation.
 5. Vérifiez comment les applications découvertes sont réparties en fonction de l’emplacement géographique (d’après le siège social) dans le **Plan des sièges sociaux des applications**.
 
-6. Enfin, n’oubliez pas de consulter le score de risque de l’application découverte dans la **vue d’ensemble des risques de l’application**.  Vérifiez **l’état des alertes de découverte** pour voir le nombre d’alertes ouvertes à passer en revue.
+6. Enfin, n’oubliez pas de consulter le score de risque de l’application découverte dans la **vue d’ensemble des risques de l’application**. Vérifiez **l’état des alertes de découverte** pour voir le nombre d’alertes ouvertes à passer en revue.
 
 ## <a name="deep-dive-into-discovered-apps"></a>Examen approfondi des applications découvertes
 Si vous voulez examiner en détail les données fournies par Cloud Discovery, utilisez les filtres pour vérifier les applications qui sont considérées comme étant à risque et celles qui sont couramment utilisées.
@@ -109,7 +108,7 @@ Pour créer un rapport continu :
   
 5. Sélectionnez les sources de données à inclure (toutes ou certaines).  
   
-6. Définissez les filtres souhaités sur les données. Ces filtres peuvent être **Groupes d’utilisateurs**, **Balises d’adresse IP ou **Plages d’adresses IP**. Pour plus d’informations sur l’utilisation de balises d’adresse IP et de plages d’adresses IP, voir [Organiser les données selon vos besoins](ip-tags.md).  
+6. Définissez les filtres souhaités sur les données. Ces filtres peuvent être **Groupes d’utilisateurs**, **Balises d’adresse IP** ou **Plages d’adresses IP**. Pour plus d’informations sur l’utilisation de balises d’adresse IP et de plages d’adresses IP, voir [Organiser les données selon vos besoins](ip-tags.md).  
   
     ![créer un rapport continu personnalisé](./media/create-custom-continuous-report.png) 
 
