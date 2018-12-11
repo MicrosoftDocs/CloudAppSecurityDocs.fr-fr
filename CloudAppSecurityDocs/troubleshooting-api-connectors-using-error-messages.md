@@ -1,11 +1,11 @@
 ---
 title: Résolution des problèmes des connecteurs d’application en utilisant les messages d’erreur dans Cloud App Security | Microsoft Docs
-description: Cette rubrique fournit une liste de messages d’erreur relatifs aux connecteurs d’application API ainsi que des solutions recommandées pour chacun.
+description: Cet article fournit la liste des messages d’erreur relatifs aux connecteurs d’application API ainsi que les solutions recommandées pour chacun d’eux.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,20 @@ ms.technology: ''
 ms.assetid: 4b6ac04a-4653-4c4a-bd6f-5926743475cc
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 38a1699644d5c04197d46a88bb86586a7c9b0c99
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 22eb82fc88af490979b9b66b7a54628a92aba220
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144531"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53124245"
 ---
+# <a name="troubleshooting-app-connectors-using-error-messages"></a>Résolution des problèmes des connecteurs d’application à l’aide de messages d’erreur
+
 *S’applique à : Microsoft Cloud App Security*
 
-# <a name="troubleshooting-app-connectors-using-error-messages"></a>Résolution des problèmes des connecteurs d’application à l’aide de messages d’erreur
+Cet article fournit la liste des messages d’erreur relatifs aux connecteurs d’application API ainsi que les solutions recommandées pour chacun d’eux.
+
+## <a name="troubleshooting"></a>Résolution des problèmes
 
 Quand vous tentez de connecter une application cloud à l’aide du connecteur d’application API, la boîte de dialogue du connecteur d’application peut afficher des erreurs.
 
@@ -59,8 +63,9 @@ Quand vous tentez de connecter une application cloud à l’aide du connecteur d
 > |HttpRequestFailure: 500 Erreur interne au serveur retourné par le serveur|Toutes les applications|Une erreur s’est produite dans l’application.|Vérifiez l’état de l’application|
 > |Le service a expiré|Toutes les applications|Un délai d’attente a été détecté dans la connexion entre Cloud App Security et l’application. Un problème au niveau de l’application peut en être la cause.|Réessayez ultérieurement.|
 
-## <a name="see-also"></a>Voir aussi  
+## <a name="next-steps"></a>Étapes suivantes
+
 [Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)   
 
-[Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier.](https://premier.microsoft.com/)  
+[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)  
 

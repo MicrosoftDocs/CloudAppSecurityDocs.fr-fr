@@ -1,11 +1,11 @@
 ---
 title: Résolution des problèmes du déploiement du docker Cloud Discovery | Microsoft Docs
-description: Cette rubrique décrit la procédure de modification de la configuration du docker Cloud Discovery Cloud App Security.
+description: Cet article décrit la procédure de modification de la configuration du docker Cloud Discovery Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/07/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,34 +13,37 @@ ms.technology: ''
 ms.assetid: 776e834f-3c20-4d5f-9fab-4c5b975edb06
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f53eca16b08b72798e2b3b0ababcad7ae676765d
-ms.sourcegitcommit: 53a1c990ff06674c26563a9ebcb1979818c3c063
+ms.openlocfilehash: 69ff240426b86a254128e241c66c59fff1a10c36
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881769"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53122993"
 ---
-*S’applique à : Microsoft Cloud App Security*
-
 # <a name="troubleshooting-the-microsoft-cloud-app-security-cloud-discovery-deployment"></a>Résolution des problèmes liés au déploiement Cloud Discovery de Microsoft Cloud App Security
 
+*S’applique à : Microsoft Cloud App Security*
+
+Cet article décrit comment modifier la configuration du docker Cloud Discovery Cloud App Security.
+
 ## <a name="windows-defender-atp-integration"></a>Intégration de Windows Defender ATP
-Si vous avez intégré Windows Defender ATP à Cloud App Security et que vous ne voyez pas les résultats de cette intégration (aucun rapport **Utilisateurs de point de terminaison Win10**), vérifiez que les ordinateurs auxquels vous vous connectez disposent de Windows 10 version 1809 ou d’une version ultérieure et que vous avez attendu les deux heures nécessaires pour que vos données soient accessibles.
+
+Si vous avez intégré Windows Defender ATP à Cloud App Security et que vous ne voyez pas les résultats de cette intégration (aucun rapport **Utilisateurs de point de terminaison Win10**), vérifiez que les ordinateurs auxquels vous vous connectez disposent de Windows 10 version 1809 ou ultérieure et que vous avez attendu les deux heures nécessaires pour que vos données soient accessibles.
 
 ## <a name="docker-deployment"></a>Déploiement de Docker
 
-### <a name="changing-the-ftp-password"></a>Modification du mot de passe FTP
+Il peut être nécessaire de modifier la configuration du docker Cloud Discovery Cloud App Security. 
 
+### <a name="changing-the-ftp-password"></a>Modification du mot de passe FTP
 
 1. Connectez-vous à l’hôte du collecteur de journaux.
 
-2.  Exécutez `docker exec -it <collector name> pure-pw passwd <ftp user>`
+2. Exécutez `docker exec -it <collector name> pure-pw passwd <ftp user>`
 
     1. Saisissez le nouveau mot de passe.
     2. Saisissez à nouveau le nouveau mot de passe pour le confirmer.
  
-3.  Exécutez `docker exec -it <collector name> pure-pw mkdb` pour appliquer la modification.
-
+3. Exécutez `docker exec -it <collector name> pure-pw mkdb` pour appliquer la modification.
 
   ![modifier le mot de passe FTP](./media/ftp-connect.png)
 
@@ -57,16 +60,15 @@ Suivez cette procédure pour personnaliser les fichiers de certificats que vous 
 
    ![Modifier le mot de passe FTP](./media/new-certs.png)
 
-   1.  Pour FTP : un seul fichier est nécessaire, il doit contenir la clé et les données du certificat, dans cet ordre, et être nommé **pure-ftpd.pem**.
-    
-   2.  Pour Syslog : trois fichiers sont nécessaires : **ca.pem**, **server-key.pem** et **server-cert.pem**. Si l’un des fichiers est absent, la mise à jour n’aura pas lieu.
+    - **Pour FTP :** un seul fichier est nécessaire. Le fichier a la clé et les données de certificat, dans cet ordre, et est nommé **pure-ftpd.pem**.
+    - **Pour Syslog :** trois fichiers sont nécessaires (**ca.pem**, **server-key.pem et **server-cert.pem**). Si l’un des fichiers est absent, la mise à jour n’a pas lieu.
 
-4. Sur un terminal, exécutez : `docker exec -t <collector name> update_certs`. Vous devez obtenir une sortie semblable à celle illustrée dans l’écran ci-dessous.
+4. Sur un terminal, exécutez : `docker exec -t <collector name> update_certs`. La commande doit produire une sortie semblable à celle illustrée dans la capture d’écran suivante.
 
    ![Modifier le mot de passe FTP](./media/update-certs.png)
 
-## <a name="see-also"></a>Voir aussi
+## <a name="next-steps"></a>Étapes suivantes
+
 [Déployer Cloud Discovery](set-up-cloud-discovery.md)
 
 [Les clients Premier peuvent également choisir Cloud App Security directement dans le portail Premier.](https://premier.microsoft.com/)
-

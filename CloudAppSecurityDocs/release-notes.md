@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/22/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,27 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 16d39803071d000e6394caaef94787182c82cea0
-ms.sourcegitcommit: cae782d508db9d1a7c0c362e9a23e83f74d48b21
+ms.openlocfilehash: 0c994ed22caae6daed57a6514c0ac6496abacf8d
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2018
-ms.locfileid: "52743690"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53124823"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
 
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Nouveautés de Microsoft Cloud App Security
+
+
+## <a name="cloud-app-security-release-138"></a>Cloud App Security version 138
+
+Date de publication : 9 décembre 2018
+
+- **Chargement automatique de journal à l’aide de Docker sur Windows**<br>Cloud App Security prend désormais en charge le chargement automatique de journal pour Windows 10 (Fall Creators Update) et Windows Server (version 1709 et ultérieure) à l’aide d’un Docker pour Windows.
+Pour obtenir plus d’informations et des instructions sur la configuration de cette fonctionnalité, consultez [Docker sur Windows en local](discovery-docker-windows.md).
+- Vous pouvez intégrer Cloud App Security à [Microsoft Flow](https://docs.microsoft.com/flow/getting-started) pour assurer l’automatisation et fournir des playbooks d’orchestration à la suite d’alertes personnalisées. Pour obtenir plus d’informations et des instructions sur l’intégration, consultez [Intégration à Microsoft Flow](flow-integration.md).
+
 
 ## <a name="cloud-app-security-release-137"></a>Cloud App Security version 137
 
@@ -313,6 +323,6 @@ Publiée le 7 janvier 2018
 
 Pour obtenir une description des versions antérieures à celles répertoriées ici, consultez [Versions précédentes de Microsoft Cloud App Security](release-note-archive.md).
 
-[Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier.](https://premier.microsoft.com/)  
+[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)  
   
   

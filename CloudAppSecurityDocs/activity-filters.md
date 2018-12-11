@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/30/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ed2628a18eaa777b8ad849cf2cc9f4417589685c
-ms.sourcegitcommit: cae782d508db9d1a7c0c362e9a23e83f74d48b21
+ms.openlocfilehash: 4de076e4cf683efc8bd17347fa189bb13b53df74
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2018
-ms.locfileid: "52743520"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53124432"
 ---
 # <a name="activities"></a>Activités
 
@@ -109,7 +109,7 @@ Pour afficher les insights sur l’adresse IP :
     - **Activités** : Nombre d’activités effectuées par l’adresse IP au cours des 30 derniers jours.
     - **Emplacement IP** : Emplacements géographiques à partir desquels l’adresse IP s’est connectée au cours des 30 derniers jours.
     - **Activités** : Nombre d’activités effectuées à partir de l’adresse IP au cours des 30 derniers jours.
-    - **Activités administratives ** : Nombre d’activités administratives effectuées à partir de l’adresse IP au cours des 30 derniers jours.
+    - **Activités administratives**  : Nombre d’activités administratives effectuées à partir de l’adresse IP au cours des 30 derniers jours.
     - Vous pouvez effectuer les actions d’adresse IP suivantes :
         - Marquer comme adresse IP d’entreprise et ajouter à la liste autorisée
         - Marquer comme adresse IP VPN et ajouter à la liste autorisée
@@ -133,6 +133,6 @@ Dans le **Journal d’activité** en haut à droite, cliquez sur le bouton **Exp
 ## <a name="next-steps"></a>Étapes suivantes  
 [Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)   
 
-[Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier.](https://premier.microsoft.com/)  
+[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)  
   
   

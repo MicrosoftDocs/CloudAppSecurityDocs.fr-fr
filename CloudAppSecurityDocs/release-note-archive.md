@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/28/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 185c3a46-ede8-4d58-b232-111807845c8f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 85df15750e00185c2bc6ee95c6cd6425c43454cd
-ms.sourcegitcommit: 5d3a057a8bb2cb98fd7350775e46b0e4d34763ed
+ms.openlocfilehash: 67dfb4aef96f59e41f0a42e44d95cc92bdcd0112
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52386318"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53124840"
 ---
 # <a name="past-release-archive-of-microsoft-cloud-app-security"></a>Archive des versions précédentes de Microsoft Cloud App Security
 
@@ -554,7 +554,7 @@ Publication : 21 août 2016
 
 **Nouvelles fonctionnalités :**
 
-- **Nouveau tableau de bord Cloud Discovery ** : un tout nouveau tableau de bord Cloud Discovery est disponible, conçu pour vous donner plus d’informations sur l’utilisation des applications cloud dans votre organisation. Il fournit une vue d’ensemble en un clin d’œil des types d’applications utilisés, des alertes ouvertes et des niveaux de risque des applications dans votre organisation. Il vous permet également de connaître les principaux utilisateurs des applications dans votre organisation et fournit un plan du lieu du siège social d’une application. Le nouveau tableau de bord présente davantage d’options pour filtrer les données et vous permettre ainsi de générer des vues spécifiques selon ce qui vous intéresse le plus, et des graphiques faciles à comprendre pour vous donner une vision globale en un clin d’œil.
+- **Nouveau tableau de bord Cloud Discovery**  : un tout nouveau tableau de bord Cloud Discovery est disponible, conçu pour vous donner plus d’informations sur l’utilisation des applications cloud dans votre organisation. Il fournit une vue d’ensemble en un clin d’œil des types d’applications utilisés, des alertes ouvertes et des niveaux de risque des applications dans votre organisation. Il vous permet également de connaître les principaux utilisateurs des applications dans votre organisation et fournit un plan du lieu du siège social d’une application. Le nouveau tableau de bord présente davantage d’options pour filtrer les données et vous permettre ainsi de générer des vues spécifiques selon ce qui vous intéresse le plus, et des graphiques faciles à comprendre pour vous donner une vision globale en un clin d’œil.
 
 - **Nouveaux rapports Cloud Discovery** : pour voir les résultats de Cloud Discovery, vous pouvez désormais générer deux types de rapports : les rapports d’instantanés et les rapports continus. Les rapports d’instantanés fournissent une visibilité ad hoc sur un ensemble de journaux de trafic que vous chargez manuellement à partir de vos pare-feu et proxys. Les rapports continus présentent les résultats de tous les journaux qui sont transférés à partir de votre réseau à l’aide des collecteurs de journaux de Cloud App Security. Ces nouveaux rapports offrent une meilleure visibilité sur toutes les données, l’identification automatique d’une utilisation anormale par le moteur de détection des anomalies Machine Learning de Cloud App Security ainsi que l’identification d’une utilisation anormale, telle que vous l’avez définie avec le moteur de stratégie robuste et granulaire. Pour plus d’informations, consultez [Configurer Cloud Discovery](set-up-cloud-discovery.md).
  
@@ -682,6 +682,6 @@ Publication : 15 mai 2016
 
 ### <a name="next-steps"></a>Étapes suivantes 
 
-[Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier.](https://premier.microsoft.com/)  
+[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)  
   
   

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/15/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b8b2f176b5df84e48420ada5d7f78bcf6ec24c35
-ms.sourcegitcommit: 79e5aa5a5f90223a5963eb8f6df81a80578e9ce9
+ms.openlocfilehash: 39022433ffb09410d883728a3f0ce2cae4d30d88
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51644363"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53124636"
 ---
 # <a name="governing-connected-apps"></a>Gouvernance des applications connectées
 
@@ -166,5 +166,5 @@ Pour plus d’informations sur la façon dont les actions de gouvernance sont tr
 ## <a name="next-steps"></a>Étapes suivantes 
 [Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)
 
-[Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier.](https://premier.microsoft.com/) 
+[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/) 
 

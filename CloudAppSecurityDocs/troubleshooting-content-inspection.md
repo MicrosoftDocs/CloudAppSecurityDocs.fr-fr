@@ -1,11 +1,11 @@
 ---
 title: Résolution des erreurs d’inspection du contenu dans Cloud App Security | Microsoft Docs
-description: Cette rubrique fournit une liste des états d’inspection du contenu et leur signification.
+description: Cet article fournit la liste des états d’inspection du contenu et leur signification.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,22 +13,27 @@ ms.technology: ''
 ms.assetid: 359eb77f-e719-4c50-9b62-6ef64149a5a5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9d0ab35fc93da0a459a7e0672d78bd88f98039e6
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 5656b08aa4a15161fa57c6584dac15b978396997
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143783"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53124024"
 ---
+# <a name="troubleshooting-content-inspection"></a>Résolution des problèmes d’inspection du contenu
+
 *S’applique à : Microsoft Cloud App Security*
 
+Cet article fournit la liste des états d’inspection du contenu et leur signification.
 
-# <a name="troubleshooting-content-inspection"></a>Résolution des problèmes d’inspection du contenu
+## <a name="content-inspection-status"></a>État de l’inspection du contenu
+
+Le tableau liste les états d’inspection du contenu et leur description.
 
 |État de l’inspection du contenu|Description|
 |----|----|
 |Completed|L’inspection du contenu s’est terminée correctement.|
-|Non applicable|L’inspection du contenu n’était pas applicable pour ce fichier. Cela peut être dû au fait qu’aucune stratégie ne nécessite d’inspection du contenu de ce fichier ou que le type de fichier n’est pas pris en charge.|
+|Non applicable|L’inspection du contenu n’était pas applicable pour ce fichier. Cet état peut apparaître si aucune stratégie ne nécessite l’inspection du contenu de ce fichier ou si le type de fichier n’est pas pris en charge.|
 |Pending|Le fichier est actuellement dans la file d’attente de l’inspection du contenu.|
 |Échec : erreur de téléchargement|Microsoft Cloud App Security n’a pas pu télécharger le fichier pour l’inspection.|
 |Échec : le fichier est chiffré|Le fichier n’a pas pu être déchiffré.|
@@ -38,7 +43,7 @@ ms.locfileid: "44143783"
 |Failed: File size exceeded (Échec : taille maximale de fichier dépassée)|La limite de fichier varie selon la taille du fichier et le nombre de caractères.|
 |Échec : accès au fichier refusé|Le fichier est externe à votre cloud et n’est pas accessible par Cloud App Security.|
 |Échec : le fichier a été supprimé|Le fichier n’existe plus dans votre cloud et ne peut pas être inspecté.|
-|Échec : type de fichier non pris en charge|Cloud App Security ne peut pas effectuer d’inspection du contenu sur ce type de fichier. Cela peut être dû au fait que le type de fichier n’est pas pris en charge ou que le fichier n’est pas réellement au format du type attendu.|
+|Échec : type de fichier non pris en charge|Cloud App Security ne peut pas effectuer d’inspection du contenu sur ce type de fichier. Cet état peut apparaître si le type de fichier n’est pas pris en charge ou si le fichier n’est pas réellement au format du type attendu.|
 
 > [!NOTE]
 > Si vous voyez un tiret dans l’état d’analyse, cela signifie que le fichier ne figure pas dans une file d’attente en vue d’être analysé. Pour plus d’informations sur la définition de stratégies d’inspection du contenu, consultez [Stratégies de fichier](data-protection-policies.md).
@@ -46,5 +51,9 @@ ms.locfileid: "44143783"
 ## <a name="see-also"></a>Voir aussi  
 [Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)   
 
-[Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier.](https://premier.microsoft.com/)  
+[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)  
+
+## <a name="next-steps"></a>Étapes suivantes
+ 
+[Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)
 
