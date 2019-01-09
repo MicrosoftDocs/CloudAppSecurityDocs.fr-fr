@@ -1,11 +1,11 @@
 ---
-title: Visibilité sur les comptes d’application cloud | Microsoft Docs
+title: Visibilité sur les comptes d’application cloud – Cloud App Security | Microsoft Docs
 description: Cet article fournit des informations sur la vérification des comptes à partir de vos applications connectées.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 7811f23b-6100-427f-93b1-44f5f81f6c76
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a48077187ace1980cf819a32514c9fbbb930c444
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 7b04724605eba07b2adbd952f634bd92496d772e
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123633"
+ms.locfileid: "53175666"
 ---
 # <a name="accounts"></a>Comptes
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Microsoft Cloud App Security vous donne une visibilité sur les comptes de vos applications connectées. Une fois connecté à une application à l’aide du connecteur d’applications, Cloud App Security lit les informations sur le compte qui sont associées aux applications connectées. La page Comptes vous permet d’examiner ces comptes, les autorisations, les groupes dont ils sont membres, leurs alias et les applications qu’ils utilisent. De plus, quand Cloud App Security détecte un nouveau compte qui n’a pas déjà été vu dans l’une des applications connectées (par exemple dans les activités ou le partage de fichiers), le compte est ajouté à la liste des comptes de cette application. Cela vous permet d’avoir une visibilité sur l’activité des utilisateurs externes interagissant avec vos applications cloud.
 
@@ -54,27 +55,27 @@ Vous trouverez ci-dessous une liste des filtres de comptes qui peuvent être app
   
 <!--- **Account name**: The account name is the primary alias of the user, but other identifiers from other Microsoft accounts (Office 365 and Azure Active Directory) such as proxy addresses, aliases, SID are supported and consolidated beneath the primary alias. -->
 
-- **Affiliation** : l’affiliation est **interne** ou **externe**. Pour définir les utilisateurs et les comptes qui sont internes, sous **Paramètres**, veillez à définir la **plage d’adresses IP** de votre organisation interne. Dans le cas où le compte dispose d’autorisations d’administrateur, l’icône dans la table Comptes s’affiche avec l’ajout de la cravate rouge. ![icône d’administration des comptes](./media/accounts-admin-icon.png)
+- **Affiliation** : L’affiliation est **interne** ou **externe**. Pour définir les utilisateurs et les comptes qui sont internes, sous **Paramètres**, veillez à définir la **plage d’adresses IP** de votre organisation interne. Dans le cas où le compte dispose d’autorisations d’administrateur, l’icône dans la table Comptes s’affiche avec l’ajout de la cravate rouge. ![icône d’administration des comptes](./media/accounts-admin-icon.png)
 
-- **Application** : vous pouvez filtrer n’importe quelle application connectée à l’API utilisée par les comptes de votre organisation.
+- **Application** : Vous pouvez filtrer n’importe quelle application connectée à l’API utilisée par les comptes de votre organisation.
 
-- **Domaine** : vous permet de filtrer des utilisateurs dans des domaines spécifiques.
+- **Domaine** : Vous permet de filtrer des utilisateurs dans des domaines spécifiques.
 
-- **Groupes**: vous permet de filtrer les membres des groupes d’utilisateurs dans Cloud App Security, à la fois les groupes d’utilisateurs intégrés et les groupes d’utilisateurs importés.
+- **Groupes** : Vous permet de filtrer les membres des groupes d’utilisateurs dans Cloud App Security, à la fois les groupes d’utilisateurs intégrés et les groupes d’utilisateurs importés.
 
-- **Instance** : vous permet de filtrer les membres d’une instance d’application spécifique. 
+- **Instance** : Vous permet de filtrer les membres d’une instance d’application spécifique. 
 
-- **Dernière consultation** : le filtre **Dernière consultation** vous permet de rechercher des comptes qui sont sans mouvement et dont les utilisateurs n’ont effectué aucune activité depuis un certain temps.
+- **Dernière consultation** : Le filtre **Dernière consultation** vous permet de rechercher des comptes qui sont sans mouvement et dont les utilisateurs n’ont effectué aucune activité depuis un certain temps.
 
-- **Organisation** : vous permet de filtrer les membres de groupes d’organisation spécifiques définis dans vos applications connectées.
+- **Organisation** : Vous permet de filtrer les membres de groupes d’organisation spécifiques définis dans vos applications connectées.
 
-- **Afficher uniquement les administrateurs** : filtres pour les comptes et les utilisateurs qui sont des administrateurs.
+- **Afficher uniquement les administrateurs** : Filtres pour les comptes et les utilisateurs qui sont des administrateurs.
 
-- **État** : filtre basé sur l’état de compte utilisateur N/A, intermédiaire, actif, suspendu ou supprimé.
+- **État** : Filtre basé sur l’état de compte utilisateur N/A, intermédiaire, actif, suspendu ou supprimé.
 
-- **Type** : vous permet de filtrer sur l’utilisateur ou sur le type de compte.
+- **Type** : Vous permet de filtrer sur l’utilisateur ou sur le type de compte.
 
-- **Nom d’utilisateur** : vous permet de filtrer sur des utilisateurs spécifiques. 
+- **Nom d’utilisateur** : Vous permet de filtrer sur des utilisateurs spécifiques. 
 
 
 ## <a name="next-steps"></a>Étapes suivantes  

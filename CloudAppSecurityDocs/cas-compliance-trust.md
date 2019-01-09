@@ -1,11 +1,11 @@
 ---
-title: 'Cloud App Security : conformité, sécurité des données, confidentialité, confiance | Microsoft Docs'
-description: 'Cette rubrique décrit Cloud App Security : offre de conformité, centre de confiance, confidentialité et sécurité des données.'
+title: 'Cloud App Security : conformité, sécurité des données, confidentialité, confiance'
+description: 'Cet article décrit plusieurs facettes de Cloud App Security : offre de conformité, centre de confiance, confidentialité et sécurité des données.'
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: e456940a-88f1-4767-ae3d-4a57548f4179
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 54b58aa5b8aa098addbb2f10b7615da91676befe
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 75480c8e243573922864845ffea617b49b22404c
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124007"
+ms.locfileid: "53177281"
 ---
 # <a name="microsoft-cloud-app-security-data-security-and-privacy"></a>Sécurité et confidentialité des données Microsoft Cloud App Security
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 [!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 
@@ -65,7 +66,7 @@ Pour plus d’informations, accédez aux [produits de conformité Microsoft](htt
 - Dans Microsoft Cloud App Security, vos administrateurs peuvent afficher les données personnelles identifiables stockées dans le service à partir du portail à l’aide de la barre de recherche.
 - Les administrateurs peuvent rechercher les métadonnées ou l’activité d’un utilisateur spécifique. Un clic sur une entité ouvre la page [**Utilisateurs et comptes**](accounts.md). La page **Utilisateurs et comptes** vous fournit des détails complets sur l’entité qui sont extraits à partir d’applications cloud connectées. Elle fournit également l’historique d’activité de l’utilisateur et les alertes de sécurité liées à l’utilisateur.
 
-- Vous possédez vos données et pouvez à tout moment annuler des abonnements et demander la suppression de vos données. Si vous ne renouvelez pas votre abonnement, vos données seront supprimées dans le délai spécifié dans les  [termes du contrat des services en ligne](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
+- Vous possédez vos données et pouvez à tout moment annuler des abonnements et demander la suppression de vos données. Si vous ne renouvelez pas votre abonnement, vos données seront supprimées dans le délai spécifié dans les  [termes du contrat des services en ligne](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
 
 - Si vous choisissez d’arrêter le service, vous pourrez récupérer vos données.
 
@@ -107,13 +108,13 @@ Microsoft Cloud App Security applique la protection des données lors de l’ins
 
 Microsoft Cloud App Security conserve les données comme suit :
 
-- Journal d’activité : 180 jours
+- Journal d’activité : 180 jours
 
-- Données de découverte : 90 jours
+- Données de découverte : 90 jours
 
-- Alertes : 180 jours
+- Alertes : 180 jours
 
-Vous pouvez en savoir plus sur les pratiques de Microsoft relatives aux données en lisant les  [termes du contrat de service en ligne](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
+Vous pouvez en savoir plus sur les pratiques de Microsoft relatives aux données en lisant les  [termes du contrat de service en ligne](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
 
 [En savoir plus sur la transparence](https://www.microsoft.com/en-us/trustcenter/about/transparency) 
 

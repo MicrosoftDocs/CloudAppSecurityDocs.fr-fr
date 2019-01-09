@@ -1,11 +1,11 @@
 ---
-title: Intégration de SIEM à Cloud App Security | Microsoft Docs
+title: Intégration de SIEM à Cloud App Security
 description: Cet article fournit des informations sur l’intégration de votre serveur SIEM à Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b7eec71a7ed224f76830fa7387bdf5e320f61eb6
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 41143a1c953306d05f6a18f07d4083b565a77d93
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124211"
+ms.locfileid: "53177009"
 ---
 # <a name="siem-integration"></a>Intégration à SIEM
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Vous pouvez intégrer Microsoft Cloud App Security à votre serveur SIEM pour centraliser la supervision des alertes et des activités des applications connectées. Comme les nouveaux événements et nouvelles activités sont pris en charge par les applications connectées, ils deviennent visibles dans Microsoft Cloud App Security. L’intégration à un service SIEM vous permet de mieux protéger vos applications cloud tout en conservant votre workflow de sécurité habituel, en automatisant les procédures de sécurité et en établissant une corrélation entre les événements cloud et les événements locaux. L’agent SIEM de Microsoft Cloud App Security s’exécute sur votre serveur, extrait les alertes et les activités de Microsoft Cloud App Security et les envoie en flux continu au serveur SIEM.
 
@@ -52,17 +53,17 @@ L’intégration à votre serveur SIEM s’effectue en trois étapes :
 
 - Un serveur Windows ou Linux standard (il peut s’agir d’une machine virtuelle).
 - Le serveur doit exécuter Java 8. Les versions antérieures ne sont pas prises en charge.
-- Système d’exploitation : Windows ou Linux
-- Processeur : 2
-- Espace disque : 20 Go
-- RAM : 2 Go
+- Système d’exploitation : Windows ou Linux
+- UC : 2
+- Espace disque : 20 Go
+- RAM : 2 Go
 - Le serveur doit exécuter Java 8. Les versions antérieures ne sont pas prises en charge.
 - Configurez votre pare-feu, comme décrit dans [Configuration réseau requise](network-requirements.md)
  
 
 ## <a name="integrating-with-your-siem"></a>Intégration à votre serveur SIEM
 
-### <a name="step-1-set-it-up-in-the-cloud-app-security-portal"></a>Étape 1 : Configurez-le dans le portail Cloud App Security
+### <a name="step-1-set-it-up-in-the-cloud-app-security-portal"></a>Étape 1 : Configurez-le dans le portail Cloud App Security
 
 1. Dans le portail Cloud App Security, sous la roue dentée représentant les paramètres, cliquez sur Extensions de sécurité, puis sur l’onglet **Agents SIEM**.
 
@@ -105,8 +106,8 @@ L’intégration à votre serveur SIEM s’effectue en trois étapes :
 > - Le nom de fichier peut différer selon la version de l’agent SIEM.
 > - Les paramètres entre crochets [ ] sont facultatifs et doivent être utilisés seulement si nécessaire.
 > - Il est recommandé d’exécuter le fichier JAR lors du démarrage du serveur.
->   - Windows : Exécutez en tant que tâche planifiée et vérifiez que vous configurez la tâche pour qu’elle **s’exécute si l’utilisateur est connecté ou non** et que la case **Arrêter la tâche si elle s’exécute plus de** est décochée.
->   - Linux : Ajoutez la commande d’exécution avec un **&** au fichier rc.local. Par exemple : `java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN &`
+>   - Windows : Exécutez-le en tant que tâche planifiée et vérifiez que vous configurez la tâche pour qu’elle **s’exécute si l’utilisateur est connecté ou non** et que la case **Arrêter la tâche si elle s’exécute plus de** est désélectionnée.
+>   - Linux : Ajoutez la commande d’exécution avec un **&** au fichier rc.local. Par exemple : `java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN &`
 
 Où les variables suivantes sont utilisées :
 - NOM_RÉPERTOIRE est le chemin du répertoire à utiliser pour les journaux de débogage de l’agent local.
@@ -171,12 +172,12 @@ Le texte suivant est un exemple de fichier journal d’alertes :
 |      Alertes       |          <name>          |                                             Nom de la stratégie correspondante                                             |
 |      Alertes       |        externalId        |                                                    ID de l’alerte                                                     |
 
-### <a name="step-3-validate-that-the-siem-agent-is-working"></a>Étape 3 : Vérifiez que l’agent SIEM fonctionne
+### <a name="step-3-validate-that-the-siem-agent-is-working"></a>Étape 3 : Vérifiez que l’agent SIEM fonctionne.
 
 1. Vérifiez que l’agent SIEM n’affiche pas l’état **Erreur de connexion** ou **Déconnecté** dans le portail Cloud App Security et qu’il ne fait pas l’objet de notifications. Si la connexion est interrompue pendant plus de deux heures, l’état affiché est le suivant : **Erreur de connexion**. Si la connexion est interrompue depuis plus de 12 heures, l’état affiché est **Déconnecté**.
  ![SIEM déconnecté](./media/siem-not-connected.png)
 
-   Au lieu de cela, l’état doit être connecté, comme illustré ici : ![SIEM connecté](./media/siem-connected.png)
+   Au lieu de cela, l’état doit être connecté, comme illustré ici :  ![SIEM connecté](./media/siem-connected.png)
 
 2. Dans votre serveur Syslog/SIEM, vérifiez que vous voyez des activités et des alertes provenant de Cloud App Security.
 

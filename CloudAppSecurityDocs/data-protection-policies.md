@@ -1,11 +1,11 @@
 ---
-title: Créer des stratégies pour surveiller et protéger les fichiers dans vos applications cloud | Microsoft Docs
+title: Surveiller et protéger les fichiers dans les applications cloud - Cloud App Security | Microsoft Docs
 description: Cet article décrit la procédure de configuration d’une stratégie de données pour superviser et contrôler les données ainsi que les fichiers durant l’usage des applications cloud de votre organisation.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c0a92453831cad191b2c69ebdf5b45deaf7c0b94
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: d4ab929752a0e90026104f0451932c6a89a50ad2
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124619"
+ms.locfileid: "53177366"
 ---
 # <a name="file-policies"></a>Stratégies de fichier  
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Les stratégies de fichier vous permettent d’appliquer une large gamme de processus automatisés en utilisant les API du fournisseur de cloud. Vous pouvez définir des stratégies pour fournir des analyses de conformité en continu, des tâches eDiscovery réglementaires, une protection contre la perte de données (DLP, Data Loss Prevention) au contenu sensible partagé publiquement et de nombreux autres cas d’usage. Cloud App Security peut surveiller n’importe quel type de fichier en fonction de plus de 20 filtres de métadonnées (par exemple, niveau d’accès, type de fichier). 
  

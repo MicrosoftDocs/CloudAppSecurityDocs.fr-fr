@@ -1,11 +1,11 @@
 ---
-title: Utilisation du score de risque | Microsoft Docs
+title: Utiliser l’indice de risque – Cloud App Security | Microsoft Docs
 description: Cet article fournit des instructions sur l’utilisation et la personnalisation de l’indice de risque Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 9cb3594e-5007-48be-9b4f-e1d23355d86e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: bb6539d5e80f4918d1e6b49bc244c0e58a94b092
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 8427aa87af9b986b482901cf3671e54a6aa6fac3
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124500"
+ms.locfileid: "53177434"
 ---
 # <a name="working-with-the-risk-score"></a>Utilisation du score de risque
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Le catalogue d’applications cloud vous donne une vue d’ensemble complète des éléments identifiés par Cloud Discovery. Cloud Discovery analyse vos journaux de trafic en s’appuyant sur le catalogue d’applications cloud Microsoft Cloud App Security, qui contient plus de 16 000 applications cloud. Les applications sont classées et évaluées selon plus de 70 facteurs de risque, afin de vous offrir une visibilité en continu de l’utilisation du cloud, du « Shadow IT » et du risque que celui-ci représente pour votre organisation. Cet article fournit des instructions sur l’utilisation et la personnalisation de l’indice de risque Cloud App Security.
 
@@ -55,15 +56,15 @@ Une fois que les résultats sont filtrés, vous pouvez passer en revue les appli
 
 Le catalogue d’applications cloud contient des filtres de base et avancés. Pour créer un filtre complexe, utilisez l’option avancée qui inclut tous les filtres suivants :
 
-- **Balises d’application** : Les balises vous permettent de personnaliser le catalogue d’applications cloud. 
+- **Balises d’application** : Les balises vous permettent de personnaliser le catalogue d’applications cloud. 
   Vous avez le choix entre **Approuvée**, **Non approuvée** ou créer vos propres étiquettes personnalisées pour les applications. Ces étiquettes peuvent ensuite servir de filtres. Les filtres permettent de rechercher plus précisément les types d’applications que vous voulez étudier. 
-- **Applications et domaines** : Permet de rechercher des applications spécifiques ou des applications utilisées dans des domaines spécifiques. 
-- **Catégories** : le filtre de catégories, qui se trouve à gauche de la page, vous permet de rechercher des types d’applications selon des catégories d’applications. Par exemple, les applications de réseaux sociaux, les applications de stockage cloud, etc. Vous pouvez sélectionner plusieurs catégories à la fois. Ensuite, appliquez les filtres de base ou avancés aux catégories.
-- **Facteur de risque de conformité** : permet de rechercher une norme, une certification ou une conformité auxquelles l’application doit se conformer. Par exemple, les normes HIPAA, ISO 27001, SOC 2 ou PCI-DSS.
-- **Facteur de risque général** : permet de rechercher des facteurs de risque généraux, comme la popularité auprès des consommateurs, les paramètres régionaux du centre de données, etc.
-- **Facteur de risque juridique** : permet de filtrer les réglementations et les stratégies qui sont en place. L’utilisation des facteurs de risque juridique permet de garantir la protection et la confidentialité des données des utilisateurs de l’application (par exemple, le RGPD, le DMCA ou la stratégie de conservation des données).
-- **Indice de risque** : permet de filtrer les applications selon l’indice de risque qui leur est associé. Par exemple, vous pouvez examiner uniquement les applications à risque.
-- **Facteur de risque de sécurité** : permet de filtrer les applications en fonction des mesures de sécurité qui leur sont appliquées. Il peut s’agir du chiffrement des données au repos, de l’authentification multifacteur, etc.
+- **Applications et domaines** : Ils vous permettent de rechercher des applications spécifiques ou des applications utilisées dans des domaines spécifiques. 
+- **Catégories** : Le filtre de catégories, qui se trouve à gauche de la page, vous permet de rechercher des types d’applications selon des catégories d’applications. Par exemple, les applications de réseaux sociaux, les applications de stockage cloud, etc. Vous pouvez sélectionner plusieurs catégories à la fois. Ensuite, appliquez les filtres de base ou avancés aux catégories.
+- **Facteur de risque de conformité** : Il vous permet de rechercher une norme, une certification ou une conformité auxquelles l’application doit se conformer. Par exemple, les normes HIPAA, ISO 27001, SOC 2 ou PCI-DSS.
+- **Facteur de risque général** : Il vous permet de rechercher des facteurs de risque généraux, comme la popularité auprès des consommateurs, les paramètres régionaux du centre de données, etc.
+- **Facteur de risque juridique** : Il vous permet de filtrer les réglementations et les stratégies qui sont en place. L’utilisation des facteurs de risque juridique permet de garantir la protection et la confidentialité des données des utilisateurs de l’application (par exemple, le RGPD, le DMCA ou la stratégie de conservation des données).
+- **Indice de risque** : Il vous permet de filtrer les applications selon l’indice de risque qui leur est associé. Par exemple, vous pouvez examiner uniquement les applications à risque.
+- **Facteur de risque de sécurité** : Il vous permet de filtrer les applications en fonction des mesures de sécurité qui leur sont appliquées. Il peut s’agir du chiffrement des données au repos, de l’authentification multifacteur, etc.
 
 ## <a name="suggesting-a-change"></a>Proposition de changement
 
@@ -103,7 +104,7 @@ Cloud Discovery vous fournit des données importantes sur la crédibilité et la
   
 - **Conformité** : Cette catégorie présente les normes de conformité issues des bonnes pratiques en usage que la société qui produit l’application respecte. La liste des spécifications inclut des normes telles que HIPAA, CSA et PCI-DSS.  
 
-- **Légal** : cette catégorie représente les applications avec des réglementations et des stratégies en place pour garantir la protection et la confidentialité des données des utilisateurs de l’application, comme la stratégie de conservation des données, le RGPD et le DMCA.
+- **Légal** : Cette catégorie représente les applications avec des réglementations et des stratégies en place pour garantir la protection et la confidentialité des données des utilisateurs de l’application, comme la stratégie de conservation des données, le RGPD et le DMCA.
   
 Chacune de ces catégories comprend de nombreuses propriétés spécifiques. Selon notre algorithme de scoring Cloud App Security, chaque propriété reçoit un score préliminaire compris entre 0 et 10, selon sa valeur. Les valeurs True/False reçoivent 10 ou 0. Cependant, les propriétés continues, telles que l’âge du domaine, reçoivent une valeur comprise dans le spectre. Le score de chaque propriété est pondéré par rapport à tous les autres champs existants dans la catégorie, afin de créer le sous-score de la catégorie. Si vous rencontrez une application sans score, cela indique généralement que les propriétés de cette application sont inconnues et qu’elle n’a donc pas de score.  
   

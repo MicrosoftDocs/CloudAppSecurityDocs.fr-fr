@@ -1,11 +1,11 @@
 ---
-title: Utiliser l’analyseur de journal personnalisé pour les journaux qui ne sont pas pris en charge | Microsoft Docs
+title: Analyseur de journal personnalisé Cloud App Security pour les journaux qui ne sont pas pris en charge
 description: Cet article fournit des informations sur l’utilisation de l’analyseur de journal personnalisé pour charger les journaux des appareils qui ne sont pas pris en charge dans Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: a612d87e-5471-4add-b4b1-dbbb530f2b61
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 10d6e40ef8b2634fbcac3677ce37bd695141507a
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 80eef93d11e11025d9e6cf01138bc9fab6a6fc19
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123724"
+ms.locfileid: "53177213"
 ---
 # <a name="use-a-custom-log-parser"></a>Utiliser un analyseur de journal personnalisé
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Cloud App Security vous permet de configurer un analyseur personnalisé correspondant au format de vos journaux et de traiter le format de vos journaux pour qu’ils soient utilisables avec Cloud Discovery. En règle générale, vous utilisez un analyseur personnalisé si le pare-feu ou l’appareil n’est pas explicitement pris en charge par Cloud App Security. Il peut s’agir d’un analyseur CSV ou d’un analyseur Clé-Valeur personnalisé.
 

@@ -1,11 +1,11 @@
 ---
-title: Ajouter des applications personnalisées à Cloud Discovery dans Cloud App Security | Microsoft Docs
+title: Ajouter des applications personnalisées à Cloud Discovery dans Cloud App Security
 description: Cette rubrique fournit des informations sur la façon d’ajouter des applications personnalisées à Cloud Discovery dans Cloud App Security pour surveiller le Shadow IT.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 98b0d841-b33d-4ae9-b48b-d9ee77785eaa
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 12d7d295db014a34fc8cce847f722867580b744b
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 8a55110ceaaf4ad1a512714e5d93a2de0d207384
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123463"
+ms.locfileid: "53176516"
 ---
 # <a name="add-custom-apps-to-cloud-discovery"></a>Ajouter des applications personnalisées à Cloud Discovery
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
     
 Cloud Discovery analyse vos journaux de trafic en s’appuyant sur le catalogue d’applications cloud Microsoft Cloud App Security. Ce catalogue comprend plus de 16 000 applications. Le catalogue contient uniquement des applications cloud disponibles publiquement et pour lesquelles Cloud App Security fournit des informations sur la visibilité et les risques.
 

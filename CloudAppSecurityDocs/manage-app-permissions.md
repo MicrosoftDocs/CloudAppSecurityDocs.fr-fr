@@ -1,11 +1,11 @@
 ---
-title: Contrôler quelles applications cloud tierces OAuth obtiennent des autorisations | Microsoft Docs
+title: Contrôler quelles applications cloud tierces OAuth obtiennent des autorisations - Cloud App Security | Microsoft Docs
 description: Cet article fournit des informations sur la manière dont vous pouvez contrôler, bloquer et autoriser les applications OAuth tierces.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 137e0630-5440-4c49-bfe4-48bbc64575e2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5984b4c7067086d11f2504f7bd1cdb186ccc8788
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: d4b6911ac508d9b52fd54c3afe3b33ede4ffdc45
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124602"
+ms.locfileid: "53175620"
 ---
 # <a name="manage-oauth-apps"></a>Gérer les applications OAuth
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Les applications de productivité tierces installées par des utilisateurs professionnels dans votre organisation ont souvent besoin d’une autorisation pour pouvoir accéder aux informations et données utilisateur, et se connecter au nom de l’utilisateur à d’autres applications cloud, comme Office 365, G Suite et Salesforce. Lorsque les utilisateurs installent ces applications, ils cliquent souvent sur Accepter sans examiner attentivement les détails du message d’invite, notamment concernant l’octroi d’autorisations à l’application. Ce problème est d’autant plus complexe que le service informatique ne dispose pas toujours d’informations suffisantes pour mettre en balance le risque de sécurité d’une application et les avantages qu’elle offre en termes de productivité. Dans la mesure où l’acceptation des autorisations d’applications tierces représente un risque de sécurité potentiel pour votre organisation, la surveillance des autorisations d’applications accordées par vos utilisateurs, vous donne la visibilité et le contrôle nécessaires pour protéger vos utilisateurs et vos applications. Les autorisations d’applications Microsoft Cloud App Security vous permettent de savoir quelles applications OAuth installées par l’utilisateur ont accès aux données Office 365, G Suite et Salesforce. Cloud App Security vous indique de quelles autorisations les applications disposent, et quels utilisateurs ont accordé à ces applications l’accès à leurs comptes Office 365, G Suite et Salesforce. Avec les autorisations d’applications, vous décidez à quelles applications vous autorisez les utilisateurs à accéder, et quelles autres vous voulez exclure.
 
@@ -88,7 +89,7 @@ La page Applications OAuth fournit les informations suivantes sur chaque applica
 
 Pour G Suite et Salesforce, vous pouvez révoquer l’autorisation d’une application ou avertir l’utilisateur qu’il doit la changer. 
 
-1. Dans la page **Applications OAuth**, cliquez sur les points de suspension à la fin de la ligne de l’application et sélectionnez **Notifier l’utilisateur**. Par défaut, l’utilisateur est averti de la façon suivante : *Vous avez autorisé l’application à accéder à votre compte G Suite. Cette application est en conflit avec la stratégie de sécurité de votre organisation. Vous devez fournir ou révoquer les autorisations que vous avez attribuées à cette application dans votre compte G Suite. Pour révoquer l’accès à l’application, accédez à : https://security.google.com/settings/security/permissions?hl=en&pli=1 Sélectionnez l’application et cliquez sur « Révoquer l’accès » dans la barre de menu de droite.* Vous pouvez personnaliser le message envoyé.
+1. Dans la page **Applications OAuth**, cliquez sur les points de suspension à la fin de la ligne de l’application et sélectionnez **Notifier l’utilisateur**. Par défaut, l’utilisateur sera informé comme suit : *Vous avez autorisé l’application à accéder à votre compte G Suite. Cette application est en conflit avec la stratégie de sécurité de votre organisation. Vous devez fournir ou révoquer les autorisations que vous avez attribuées à cette application dans votre compte G Suite. Pour révoquer l’accès à l’application, accédez à : https://security.google.com/settings/security/permissions?hl=en&pli=1 Sélectionnez l’application et cliquez sur « Révoquer l’accès » dans la barre de menu de droite.* Vous pouvez personnaliser le message envoyé.
 2. Vous pouvez également révoquer des autorisations d’utilisation de l’application pour l’utilisateur. Cliquez sur l’icône à la fin de la ligne de l’application dans le tableau et sélectionnez **Révoquer l’application**. 
 
    ![révoquer l’application](./media/revoke-app.png)

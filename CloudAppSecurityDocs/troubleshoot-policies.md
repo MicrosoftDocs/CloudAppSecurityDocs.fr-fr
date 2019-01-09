@@ -1,11 +1,11 @@
 ---
-title: Résolution des problèmes des stratégies Cloud App Security | Microsoft Docs
+title: Résolution des problèmes des stratégies Cloud App Security
 description: Cet article décrit la procédure de résolution des problèmes liés à la création de stratégies dans Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 828cc94a-248b-44f6-a1ba-c28c0a135f8c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 31c07ffe1f19de86ce23cad099bd238d254c0bab
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: cd309d6997486dcd84c072c28aedba1ef75d4284
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123174"
+ms.locfileid: "53175717"
 ---
 # <a name="troubleshooting-microsoft-cloud-app-security-policies"></a>Résolution des problèmes des stratégies Microsoft Cloud App Security
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Cet article décrit la procédure de résolution des problèmes liés à la création de stratégies dans Cloud App Security.
 

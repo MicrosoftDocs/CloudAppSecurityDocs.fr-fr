@@ -1,11 +1,11 @@
 ---
-title: Connecter G Suite à Cloud App Security pour la visibilité et le contrôle d’utilisation | Microsoft Docs
-description: Cet article fournit des informations sur la connexion de votre application G Suite à Cloud App Security à l’aide du connecteur API.
+title: Connecter G Suite à Cloud App Security
+description: Cet article vous explique comment connecter votre application G Suite à Cloud App Security à l’aide du connecteur d’API, afin de bénéficier de plus de contrôle et de visibilité lors de l’utilisation.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,19 @@ ms.technology: ''
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: df026fdf654703e61c87419df5dfd31558319e7a
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 48be91b9bcdd6689f5e0af138176a8bbd8033301
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124551"
+ms.locfileid: "53177264"
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>Connecter G Suite à Microsoft Cloud App Security
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
-Cet article fournit des instructions pour connecter Microsoft Cloud App Security à votre compte G Suite existant à l’aide des API du connecteur.
+Cet article fournit des instructions pour connecter Microsoft Cloud App Security à votre compte G Suite existant à l’aide des API du connecteur. Cette connexion vous permet de bénéficier de plus de visibilité et de contrôle lors de l’utilisation de G Suite. 
     
 ## <a name="configure-g-suite"></a>Configurer G Suite  
   
@@ -114,7 +115,7 @@ Cet article fournit des instructions pour connecter Microsoft Cloud App Security
 
     - **Nom de l’application** : Microsoft Cloud App Security.  
   
-    - **Short Description & Long Description** (Description courte et description longue) (facultatif) : Microsoft Cloud App Security offre une visibilité sur les applications cloud, ce qui vous permet de contrôler, d’examiner et de régir l’utilisation de ces applications cloud, de sécuriser les données d’entreprise et de détecter les activités suspectes liées aux applications cloud.  
+    - **Description courte et description longue** (facultatif) : Microsoft Cloud App Security offre une visibilité sur les applications cloud, ce qui vous permet de contrôler, d’examiner et de régir l’utilisation de ces applications cloud, de sécuriser les données d’entreprise et de détecter les activités suspectes liées aux applications cloud.  
   
     - Google vous demande de charger au moins une icône d’application. Accédez à [ https://go.microsoft.com/fwlink/?linkid=862826 ](https://go.microsoft.com/fwlink/?linkid=862826) pour télécharger un fichier zip contenant les icônes de Cloud App Security. Ensuite, sous **Icône de l’application**, cliquez sur **Sélectionner** en regard de l’image 128 x 128 et faites-la glisser jusqu’à la fenêtre contextuelle. Cliquez sur **Sélectionner** en regard de l’image 32 x 32 et faites-la glisser jusqu’à la fenêtre contextuelle.  
   
@@ -147,9 +148,9 @@ Cet article fournit des instructions pour connecter Microsoft Cloud App Security
   
     -   Renseignez les valeurs **Support URLs (URL d’assistance)** suivantes :  
   
-        -   **Terms of service URL** : http://go.microsoft.com/fwlink/?LinkID=733268 (URL des conditions générales du service)  
+        -   **Terms of service URL** : https://go.microsoft.com/fwlink/?LinkID=733268 (URL des conditions générales du service)  
   
-        -   **Privacy policy URL** : http://go.microsoft.com/fwlink/?LinkId=512132 (URL de la politique de confidentialité)  
+        -   **Privacy policy URL** : https://go.microsoft.com/fwlink/?LinkId=512132 (URL de la politique de confidentialité)  
   
     -   Sous **OAuth 2.0 scopes** (Étendues OAuth 2.0), copiez et collez les URL suivantes (copiez-les une à la fois et appuyez sur Entrée après chacune d’elles) :  
   

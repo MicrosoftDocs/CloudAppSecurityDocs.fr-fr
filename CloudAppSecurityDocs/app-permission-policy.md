@@ -1,11 +1,11 @@
 ---
-title: Créer des stratégies pour contrôler les applications OAuth dans Cloud App Security | Microsoft Docs
+title: Créer des stratégies pour contrôler les applications OAuth dans Cloud App Security
 description: Cet article fournit des instructions sur la création et l’utilisation de stratégies d’autorisation d’application dans Microsoft Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 9f68302c-bb3d-450c-bbf5-f8130cb163e3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 76278a51608ca12f1091514d8fdfef29aa304b1f
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 49ef099623e23454c6699f40b8b2178bb8ebb784
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124449"
+ms.locfileid: "53176703"
 ---
 # <a name="oauth-app-policies"></a>Stratégies d’application OAuth
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 En plus de l’[investigation existante des applications OAuth](manage-app-permissions.md) connectées à votre environnement, vous pouvez définir des stratégies d’autorisation pour recevoir des notifications automatisées quand une application OAuth répond à certains critères. Par exemple, vous pouvez être automatiquement alerté quand des applications exigent un niveau d’autorisation élevé et que plus de 50 utilisateurs l’ont accordé. 
 

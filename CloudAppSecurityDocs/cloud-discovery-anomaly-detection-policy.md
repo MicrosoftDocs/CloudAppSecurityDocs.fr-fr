@@ -1,11 +1,11 @@
 ---
-title: Créer une stratégie de détection des anomalies Cloud Discovery | Microsoft Docs
+title: Créer une stratégie de détection des anomalies Cloud Discovery dans Cloud App Security
 description: Cette rubrique fournit des informations sur l’utilisation des stratégies de détection des anomalies Cloud Discovery.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: eaf73af0-7610-4903-b656-8d90b1d2b18c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 871027dc667bcb83e904c512c6b21e7fb817cf36
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 2d4979204779192e784bd6a6159750f61fe37723
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123888"
+ms.locfileid: "53177026"
 ---
 # <a name="cloud-discovery-anomaly-detection-policy"></a>Stratégie de détection des anomalies de Cloud Discovery
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Cet article vous fournit des détails de référence sur les stratégies. Les explications relatives à chaque type de stratégie et aux champs que vous pouvez configurer pour chaque stratégie sont listées.  
   

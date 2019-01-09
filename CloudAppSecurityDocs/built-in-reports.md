@@ -1,11 +1,11 @@
 ---
-title: Guide pratique pour générer des rapports dans Microsoft Cloud App Security | Microsoft Docs
+title: Générer des rapports - Microsoft Cloud App Security | Microsoft Docs
 description: Cet article fournit des instructions pour générer des rapports de gestion des données dans Microsoft Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 0dcc3c35-f787-4822-84c6-d4dff897dd6c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b110094777e9bb7b3b94a6f5531a4a53db43ef71
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 10db997cbd537587b3571560207680db6b73b4a6
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123820"
+ms.locfileid: "53176830"
 ---
 # <a name="generate-data-management-reports"></a>Générer des rapports de gestion de données
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Microsoft Cloud App Security vous permet de générer des rapports qui fournissent une vue d’ensemble des fichiers dans vos applications cloud.
 

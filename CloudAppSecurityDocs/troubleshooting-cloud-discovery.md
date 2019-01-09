@@ -1,11 +1,11 @@
 ---
-title: Résolution des erreurs de Cloud Discovery dans Cloud App Security | Microsoft Docs
+title: Résolution des erreurs Cloud Discovery – Cloud App Security | Microsoft Docs
 description: Cet article fournit la liste des erreurs fréquentes relatives à Cloud Discovery ainsi que des solutions recommandées pour chacune.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 76dfaebb-d477-4bdb-b3d7-04cc3fe6431d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 8229eec0452cbb6c34a9c16ab7711455e63f01af
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 17890e4b54b4ed6447b274dc7e266011f8be236d
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124653"
+ms.locfileid: "53176924"
 ---
 # <a name="troubleshooting-cloud-discovery"></a>Dépannage de Cloud Discovery
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Cet article fournit la liste des erreurs relatives à Cloud Discovery ainsi que des solutions recommandées pour chacune.
 
@@ -47,8 +48,8 @@ Vous pouvez suivre le traitement des journaux Cloud Discovery à l’aide du jou
 |Connexion impossible au collecteur de journaux via FTP| 1. Vérifiez que vous utilisez des informations d’identification FTP et non des informations d’identification SSH. <br />2. Vérifiez que le client FTP que vous utilisez n’est pas défini sur SFTP.  |
 |Échec de la mise à jour de la configuration du collecteur | 1. Vérifiez que vous avez entré le dernier jeton d’accès. <br />2. Dans votre pare-feu, vérifiez que le collecteur de journaux est autorisé à lancer le trafic sortant sur le port 443.|
 |Les journaux envoyés au collecteur n’apparaissent pas dans le portail | 1.  Vérifiez si des tâches d’analyse ont échoué dans le journal de gouvernance.  <br />  &nbsp;&nbsp;&nbsp;&nbsp;Si tel est le cas, corrigez l’erreur avec le tableau des erreurs d’analyse du journal ci-dessus.<br /> 2. Si ce n’est pas le cas, vérifiez la configuration des sources de données et du collecteur de journaux dans le portail. <br /> &nbsp;&nbsp;&nbsp;&nbsp;a. Dans la page des sources de données, vérifiez que la source de données que vous utilisez est correctement configurée. <br />&nbsp;&nbsp;&nbsp;&nbsp;b. Dans la page des collecteurs de journaux, vérifiez que la source de données est liée au collecteur de journaux approprié. <br /> 3. Vérifiez la configuration locale de l’ordinateur du collecteur de journaux local.  <br />&nbsp;&nbsp;&nbsp;&nbsp;a. Connectez-vous au collecteur de journaux via SSH et exécutez l’utilitaire collector_config.<br/>&nbsp;&nbsp;&nbsp;&nbsp;b. Vérifiez que votre pare-feu ou proxy envoie des journaux au collecteur de journaux en utilisant le protocole que vous avez défini (Syslog/TCP, Syslog/UDP ou FTP) et qu’il les envoie au port et au répertoire corrects.<br /> &nbsp;&nbsp;&nbsp;&nbsp;c. Exécutez netstat sur l’ordinateur et vérifiez qu’il reçoit les connexions entrantes à partir de votre pare-feu ou proxy <br /> 4.   Vérifiez que le collecteur de journaux est autorisé à lancer le trafic sortant sur le port 443. |
-|État du collecteur de journaux : Créé | Le déploiement du collecteur de journaux n’a pas été effectué. Effectuez les étapes de déploiement local conformément au guide de déploiement.|
-|État du collecteur de journaux : Déconnecté | Aucune donnée n’a été reçue au cours des dernières 24 heures à partir des sources de données liées. |
+|État du collecteur de journaux : Créé le | Le déploiement du collecteur de journaux n’a pas été effectué. Effectuez les étapes de déploiement local conformément au guide de déploiement.|
+|État du collecteur de journaux : Disconnected | Aucune donnée n’a été reçue au cours des dernières 24 heures à partir des sources de données liées. |
 
 
 ## <a name="discovery-dashboard-errors"></a>Erreurs du tableau de bord de découverte

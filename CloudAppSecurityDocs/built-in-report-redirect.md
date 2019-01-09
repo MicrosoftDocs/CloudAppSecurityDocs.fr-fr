@@ -1,11 +1,11 @@
 ---
-title: Guide pratique pour rechercher des rapports intégrés dépréciés dans Cloud App Security | Microsoft Docs
+title: Rechercher des rapports intégrés dépréciés dans Cloud App Security | Microsoft Docs
 description: Cet article fournit des instructions pour générer des rapports dépréciés dans Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: a9660e5b-d5bd-4a32-8cb9-0de70af6f1e9
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a26a055137aa64391fedf8399e35ec9f112858ee
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: d0dbd2d945660ce57c832e8ff5678008268403a4
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124743"
+ms.locfileid: "53176771"
 ---
 # <a name="how-to-find-built-in-deprecating-reports"></a>Guide pratique pour rechercher des rapports intégrés dépréciés
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Nous mettons à jour la fonctionnalité de rapports intégrés en l’incorporant à d’autres parties du portail. La mise à jour de cette fonctionnalité est en cours afin d’améliorer les rapports de Microsoft Cloud App Security.
 

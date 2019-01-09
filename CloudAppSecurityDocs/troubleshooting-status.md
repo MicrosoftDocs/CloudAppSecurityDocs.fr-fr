@@ -1,11 +1,11 @@
 ---
-title: Résolution des problèmes d’état du service Cloud App Security | Microsoft Docs
+title: Résolution des problèmes d’état du service Cloud App Security
 description: Cet article fournit un lien vers la page d’état de Cloud App Security
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 0eac8ac2-c8bc-4719-b45d-30a1da4e3424
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 138790d8a6aed062b0ada67f1bc60b1a0d5ebc09
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: fa47fde4ae0277ab18eb478d67526e75450a87e9
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123429"
+ms.locfileid: "53176618"
 ---
 # <a name="troubleshooting-microsoft-cloud-app-security-status"></a>Résolution des problèmes d’état de Microsoft Cloud App Security
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Cet article fournit des instructions et un lien pour accéder à la page d’état de Cloud App Security.
 

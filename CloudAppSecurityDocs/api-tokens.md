@@ -1,11 +1,11 @@
 ---
-title: Gestion des jetons d’API dans Cloud App Security | Microsoft Docs
+title: Gestion des jetons d’API dans Cloud App Security
 description: Cet article fournit des informations sur la génération de jetons d’API pour Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 4f5e6b1e-6b2c-4358-98f0-945e2993d5fe
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a2b20d5bd3f2379c26e0e1262c9a5f57295ec939
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 871ad62cf4daf7a84bfc65724fb61413d70fafa3
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123446"
+ms.locfileid: "53176346"
 ---
 # <a name="api-tokens"></a>Jetons d’API
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 L’API Microsoft Cloud App Security fournit l’accès par programmation à Cloud App Security par le biais de points de terminaison API REST. Les applications peuvent utiliser l’API pour effectuer des opérations de lecture et de mise à jour sur les objets et les données Cloud App Security. Par exemple, l’API Cloud App Security prend en charge les opérations courantes suivantes pour un objet utilisateur :
 

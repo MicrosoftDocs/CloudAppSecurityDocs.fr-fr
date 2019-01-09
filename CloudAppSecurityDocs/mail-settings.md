@@ -1,11 +1,11 @@
 ---
-title: Définir les préférences de notification par e-mail | Microsoft Docs
+title: Définir les préférences de notification par e-mail – Cloud App Security | Microsoft Docs
 description: Cet article fournit des informations sur la procédure de personnalisation des notifications par e-mail envoyées par Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 686ea1838ea0f034e48ef320d106149ad51db5b0
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: f51db980e6a30f0e2c0f21c25982f6c95b51ea2c
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123548"
+ms.locfileid: "53177043"
 ---
 # <a name="email-notification-preferences"></a>Préférences de notification par e-mail
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Cet article fournit des informations sur la procédure de personnalisation des notifications par e-mail envoyées par Cloud App Security.
 
@@ -34,10 +35,10 @@ Cet article fournit des informations sur la procédure de personnalisation des n
 
    ![Paramètres de messagerie](./media/mail-settings-config.png)
 
-2. Sous **Identité de l’expéditeur de l’e-mail** : si vous envisagez d’utiliser les paramètres de messagerie par défaut, vous n’avez pas besoin de modifier quoi que ce soit dans cette section. Si vous voulez personnaliser l’identité de l’expéditeur de l’e-mail, vous pouvez définir tous les paramètres ici pour personnaliser le champ à modifier. Vous pouvez changer tout ou partie des éléments suivants : **Nom complet de l’expéditeur**, **Adresse e-mail de l’expéditeur**, **Adresse e-mail de réponse**. Microsoft Cloud App Security effectue la personnalisation à l’aide d’un service de messagerie tiers appelé MailChimp®. N’oubliez pas de consulter et d’accepter les termes du contrat de service et la déclaration de confidentialité de MailChimp avant d’activer la personnalisation. Si vous oubliez, Microsoft Cloud App Security enverra les notifications en utilisant les paramètres par défaut.
+2. Dans **Identité de l’expéditeur de l’e-mail** : Si vous envisagez d’utiliser les paramètres de messagerie par défaut, vous n’avez pas besoin de modifier quoi que ce soit dans cette section. Si vous voulez personnaliser l’identité de l’expéditeur de l’e-mail, vous pouvez définir tous les paramètres ici pour personnaliser le champ à modifier. Vous pouvez modifier tout ou partie des éléments suivants : **From display name** (Du nom d’affichage), **From email address** (De l’adresse e-mail), **Reply-to email address** (Répondre à l’adresse e-mail). Microsoft Cloud App Security effectue la personnalisation à l’aide d’un service de messagerie tiers appelé MailChimp®. N’oubliez pas de consulter et d’accepter les termes du contrat de service et la déclaration de confidentialité de MailChimp avant d’activer la personnalisation. Si vous oubliez, Microsoft Cloud App Security enverra les notifications en utilisant les paramètres par défaut.
  
    > [!NOTE]
-   > Seuls les caractères Unicode sont pris en charge dans le nom complet et l’adresse e-mail conformément à la [norme rfc822](http://www.rfc-editor.org/rfc/rfc822.txt).
+   > Seuls les caractères Unicode sont pris en charge dans le nom complet et l’adresse e-mail conformément à la [norme rfc822](https://www.rfc-editor.org/rfc/rfc822.txt).
 
   
 3. Pour la **Conception de l’e-mail**, vous pouvez utiliser un fichier html pour personnaliser et créer les e-mails envoyés par le système. Le fichier html utilisé pour votre modèle doit inclure les éléments suivants :  
@@ -66,7 +67,7 @@ Cet article fournit des informations sur la procédure de personnalisation des n
 Voici un exemple de modèle d’e-mail :
 
 ```html
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
   <html>  
        <head>  
             <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  

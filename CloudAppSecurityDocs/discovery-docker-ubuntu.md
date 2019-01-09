@@ -1,11 +1,11 @@
 ---
-title: Configurer le chargement automatique des journaux pour des rapports continus | Documentation Microsoft
+title: Configurer le chargement automatique de journal à l’aide de Docker en local
 description: Cet article décrit la procédure de configuration du chargement automatique des journaux pour des rapports continus dans Cloud App Security à l’aide d’un Docker sur un serveur Ubuntu ou RHEL local.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,28 +13,29 @@ ms.technology: ''
 ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9e20a02b3075a496e30c99d8ae3d0364b7e60d82
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: add574af2b6ff28191b4f6ecf5a21746913cd8d5
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124279"
+ms.locfileid: "53177111"
 ---
 # <a name="docker-on-ubuntu-and-rhel-on-premises"></a>Docker sur Ubuntu et RHEL (local)
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Vous pouvez configurer le chargement automatique des journaux pour des rapports continus dans Cloud App Security à l’aide d’un Docker sur un serveur Ubuntu ou RHEL local.
 
 ## <a name="technical-requirements"></a>Spécifications techniques
 
-- Système d’exploitation : Ubuntu 14.04, 16.04 et 18.04 ; ou RHEL 7.2 ou ultérieur 
+- Système d’exploitation : Ubuntu 14.04, 16.04 et 18.04 ; ou RHEL 7.2 ou ultérieur 
 
-- Espace disque : 250 Go
+- Espace disque : 250 Go
 
-- Processeur : 2
+- UC : 2
 
-- RAM : 4 Go
+- RAM : 4 Go
 
 - Configurez votre pare-feu, comme décrit dans [Configuration réseau requise](network-requirements.md#log-collector)
 
@@ -48,7 +49,7 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
 
 ## <a name="set-up-and-configuration"></a>Installation et configuration  
 
-### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>Étape 1 : configuration du portail web  - définir les sources de données et les lier à un collecteur de journaux
+### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>Étape 1 – Configuration du portail web : Définir les sources de données et les lier à un collecteur de journaux
 
 1. Accédez à la page de paramètres **Chargement automatique de journal**. 
 
@@ -132,13 +133,13 @@ La procédure suivante décrit le déploiement dans Ubuntu. Les étapes de dépl
 
 6. Vérifiez que le collecteur s’exécute correctement à l’aide de la commande suivante : `docker logs <collector_name>`
 
-Vous devez voir le message **Opération terminée**
+Vous devez recevoir le message suivant : **Opération correctement terminée.**
 
   ![ubuntu8](./media/ubuntu8.png)
 
 ### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>Étape 3 : Configuration locale de vos appliances réseau
 
-Configurez vos pare-feu et proxies réseau pour exporter régulièrement les journaux vers le port Syslog dédié du répertoire FTP conformément aux instructions données dans la boîte de dialogue. Par exemple :
+Configurez vos pare-feu et proxys réseau pour exporter régulièrement les journaux vers le port Syslog dédié du répertoire FTP conformément aux instructions données dans la boîte de dialogue. Par exemple :
 
     BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
 

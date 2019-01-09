@@ -1,11 +1,11 @@
 ---
-title: Configuration requise du réseau Cloud App Security | Microsoft Docs
+title: Configuration requise du réseau - Cloud App Security | Microsoft Docs
 description: Cet article décrit les adresses IP et les ports à ouvrir pour utiliser Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 06de1b58f2a9a13559f4ac04a594ac681376e696
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: df90f8a2b2a52f9dbaacac3e317b1354bdbe1d8a
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124364"
+ms.locfileid: "53176601"
 ---
 # <a name="network-requirements"></a>Configuration requise pour le réseau
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Cet article fournit une liste des ports et adresses IP que vous devez autoriser et ajouter à la liste verte pour pouvoir utiliser Microsoft Cloud App Security. 
 

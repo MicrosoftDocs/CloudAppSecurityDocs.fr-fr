@@ -1,11 +1,11 @@
 ---
-title: Guide pratique pour appliquer des actions de gouvernance visant à contrôler les applications connectées | Microsoft Docs
+title: Actions de gouvernance visant à contrôler les applications connectées | Microsoft Docs
 description: Cet article liste et décrit toutes les actions de gouvernance qui peuvent être effectuées dans Cloud App Security ainsi que les messages de journal qui les suivent.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 39022433ffb09410d883728a3f0ce2cae4d30d88
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 48708ea18227a68a780c6ed02905cda51cea48e0
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124636"
+ms.locfileid: "53177455"
 ---
 # <a name="governing-connected-apps"></a>Gouvernance des applications connectées
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 La gouvernance vous permet de contrôler en temps réel les actions des utilisateurs dans les applications. Pour les applications connectées, vous pouvez appliquer des actions de gouvernance aux fichiers ou aux activités. Les actions de gouvernance sont des actions intégrées que vous pouvez exécuter sur des fichiers ou des activités directement à partir de Microsoft Cloud App Security. Les actions de gouvernance contrôlent en temps réel les actions de vos utilisateurs dans les applications connectées. 
 
@@ -50,7 +51,7 @@ Vous pouvez effectuer les actions de gouvernance suivantes sur un fichier ou un 
 
      - **Modifier le partage** 
 
-        - **Supprimer le partage public** - Autoriser l’accès uniquement à des collaborateurs désignés, par exemple Supprimer l’accès public pour G Suite et Supprimer le lien partagé direct pour Box. 
+        - **Supprimer le partage public** – Autorisez l’accès uniquement à des collaborateurs désignés, par exemple : Supprimez l’accès public à G Suite, et supprimez le lien partagé direct pour Box. 
 
        - **Supprimer les utilisateurs externes** - Autorisez l’accès uniquement aux utilisateurs de l’entreprise. 
 

@@ -1,11 +1,11 @@
 ---
-title: Protéger la confidentialité des utilisateurs Cloud App Security en anonymisant les données | Microsoft Docs
-description: Cet article fournit des informations sur l’anonymisation des noms d’utilisateur dans vos données Cloud Discovery.
+title: Anonymisation des données d’utilisateur dans Cloud App Security
+description: Cet article fournit des informations sur la façon de protéger la confidentialité des utilisateurs en anonymisant les noms d’utilisateur dans vos données Cloud Discovery.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: eb250ede-fede-4699-a08b-b8ea4b232f07
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: cfb7463e20f0756a08a7df1169996911908c8cd3
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: b1eceacb47e8339bb0b7162d27f13866188d10e7
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123480"
+ms.locfileid: "53176431"
 ---
 # <a name="cloud-discovery-data-anonymization"></a>Anonymisation des données Cloud Discovery
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 L’anonymisation de données Cloud Discovery vous permet de protéger la confidentialité des utilisateurs. Une fois que le journal des données est téléchargé sur le portail Microsoft Cloud App Security, il est purgé et toutes les informations des noms d’utilisateur sont remplacées par des noms d’utilisateur chiffrés. De cette façon, toutes les activités cloud restent anonymes. Quand c’est nécessaire, pour une enquête de sécurité spécifique (par exemple une violation de la sécurité ou une activité utilisateur suspecte), les administrateurs peuvent résoudre le nom d’utilisateur réel. Si un administrateur a une raison de suspecter un utilisateur spécifique, il peut également rechercher le nom d’utilisateur chiffré d’un nom d’utilisateur connu, puis commencer son investigation avec le nom d’utilisateur chiffré. La conversion de chaque nom d’utilisateur est auditée dans le **journal de gouvernance** du portail.
 

@@ -1,11 +1,11 @@
 ---
-title: Utilisation du tableau de bord Cloud App Security | Microsoft Docs
+title: Utilisation du tableau de bord Cloud App Security
 description: Cet article fournit des informations de base sur l’utilisation du tableau de bord Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: a835fa24-15c5-4bbb-a25a-688444040f1f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3c261adfbec2044ae2625f7ffb3b851907e2e223
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 480ac5273eaca15252c0a216147c1d6d3711a266
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123010"
+ms.locfileid: "53175224"
 ---
 # <a name="working-with-the-dashboard"></a>Utilisation du tableau de bord
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Cet article décrit la procédure à suivre au quotidien avec Cloud App Security.  Une fois que Microsoft Cloud App Security est opérationnel, vous devez :
 

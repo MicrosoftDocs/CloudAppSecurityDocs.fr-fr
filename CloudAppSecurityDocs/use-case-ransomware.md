@@ -1,11 +1,11 @@
 ---
-title: Vue d’ensemble du scénario de protection contre les menaces | Microsoft Docs
+title: Vue d’ensemble du scénario de protection contre les menaces – Cloud App Security | Microsoft Docs
 description: Cette rubrique décrit le scénario de protection de votre organisation contre les menaces présentes dans l’environnement cloud.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/14/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,19 +13,19 @@ ms.technology: ''
 ms.assetid: 7a06a243-9ec2-4a11-8db2-bc065cdfef64
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: cf9da01f896b1f9509918bca73c3d189e9d4557e
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 65135d0afa0074b9cd3ac944e62de15eb030e17e
+ms.sourcegitcommit: 420a0119513e3f4a8651f6a9e66c56fe442a31c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123582"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53347296"
 ---
-*S’applique à : Microsoft Cloud App Security*
-
-
 # <a name="protecting-your-organization-from-ransomware"></a>Protection de votre organisation contre les ransomwares
 
-Dans la dernière attaque massive par un ransomware, WannaCry a fortement frappé le cybermonde en infectant un nombre estimé de 200 000 ordinateurs dans 150 pays. Avec l’augmentation des attaques de ransomwares ces dernières années, en moyenne 25 000 attaques par mois en 2015 et 56 000 en 2016, il devient nécessaire de mettre en place une cybersécurité proactive pour garantir que votre réseau et votre cloud ne sont pas exposés. Cet article explique comment vous pouvez utiliser Cloud App Security pour surveiller votre cloud, détecter et atténuer les menaces, et appliquer les bonnes pratiques pour protéger votre environnement contre les ransomwares.
+*S’applique à : Microsoft Cloud App Security*
+
+Dans la dernière attaque massive par un ransomware, WannaCry a fortement frappé le cybermonde en infectant un nombre estimé de 200 000 ordinateurs dans 150 pays. Avec l’augmentation des attaques de ransomwares ces dernières années, en moyenne 25 000 attaques par mois en 2015 et 56 000 en 2016, il devient nécessaire de mettre en place une cybersécurité proactive pour garantir que votre réseau et votre cloud ne sont pas exposés. Cet article explique comment vous pouvez utiliser Cloud App Security pour surveiller votre cloud, détecter et atténuer les menaces, et appliquer les meilleures pratiques pour protéger votre environnement contre les ransomwares.
 
 ## <a name="what-is-ransomware"></a>Qu’est-ce qu’un ransomware ?
 Un ransomware est une cyberattaque dans laquelle l’attaquant vous envoie un fichier capable de vous empêcher d’accéder à votre ordinateur et de chiffrer vos fichiers personnels. Les fichiers sont parfois retenus contre une rançon et ne sont pas déchiffrés tant que vous ne payez pas l’attaquant pour qu’il restaure l’accès à votre ordinateur, vos fichiers ou vos applications métier critiques. Les attaques de ransomware peuvent affecter n’importe quel ordinateur, domicile, bureau, réseau ou serveur. En fait, parce que les grandes organisations emploient de nombreux utilisateurs susceptibles d’ouvrir par inadvertance un fichier qui libère un ransomware sur votre réseau, elles sont encore plus exposées au risque de devoir payer une rançon pour arrêter le ransomware et restaurer l’accès aux ordinateurs ou fichiers.
@@ -50,8 +50,9 @@ Détectez les ransomwares potentiels dans votre environnement cloud en créant u
 
 
 
-   ## <a name="see-also"></a>Voir aussi  
-   [Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)   
+## <a name="next-steps"></a>Étapes suivantes 
+
+[Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)   
 
 [Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)  
   

@@ -1,11 +1,11 @@
 ---
-title: Utilisation des applications découvertes dans Cloud App Security | Microsoft Docs
+title: Utilisation des applications découvertes dans Cloud App Security
 description: Cet article décrit le processus d’identification et de correction des applications Cloud Discovery à risque dans Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 403eb991a33fd8f0deda7212b0ec180fe23f8551
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: a70dc1796304a32606e54d4e9e93f6cf3169c6a6
+ms.sourcegitcommit: 475dc75456f4683336e3e4875e3155677e4fb827
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53122834"
+ms.lasthandoff: 12/16/2018
+ms.locfileid: "53450583"
 ---
 # <a name="working-with-discovered-apps"></a>Utilisation des applications découvertes
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Le tableau de bord Cloud Discovery est conçu pour vous donner plus d’informations sur l’utilisation des applications cloud dans votre organisation. Il fournit une vue d’ensemble en un clin d’œil des types d’applications utilisés, des alertes ouvertes et des niveaux de risque des applications dans votre organisation. Il vous montre également les principaux utilisateurs des applications et fournit un plan du lieu du siège social d’une application. Le tableau de bord Cloud Discovery a de nombreuses options pour filtrer les données. Le filtrage vous permet de générer des vues spécifiques selon ce qui vous intéresse le plus, avec des graphiques faciles à comprendre pour vous donner une vision globale en un clin d’œil.
 
@@ -44,6 +45,7 @@ La première chose à faire pour obtenir une vue d’ensemble de vos application
 6. Enfin, n’oubliez pas de consulter le score de risque de l’application découverte dans la **vue d’ensemble des risques de l’application**. Vérifiez **l’état des alertes de découverte** pour voir le nombre d’alertes ouvertes à passer en revue.
 
 ## <a name="deep-dive-into-discovered-apps"></a>Examen approfondi des applications découvertes
+
 Si vous voulez examiner en détail les données fournies par Cloud Discovery, utilisez les filtres pour vérifier les applications qui sont considérées comme étant à risque et celles qui sont couramment utilisées.
 
 
@@ -62,7 +64,7 @@ Cloud Discovery vous permet de voir de façon encore plus approfondie l’utilis
      
 Vous pouvez par exemple effectuer la distinction entre différents sites SharePoint.
 
-Cette fonctionnalité est prise en charge uniquement dans les pare-feu et les proxys qui contiennent des données d’URL cibles. Consultez la liste des appliances prises en charge dans [Pare-feu et proxys pris en charge](create-snapshot-cloud-discovery-reports.md#supported-firewalls-and-proxies).
+Cette fonctionnalité est prise en charge uniquement dans les pare-feu et les proxys qui contiennent des données d’URL cibles. Pour plus d’informations, consultez la liste des appliances prises en charge dans [Pare-feux et proxys pris en charge](create-snapshot-cloud-discovery-reports.md#supported-firewalls-and-proxies).
 
  ![informations sur les sous-domaines](./media/discovery-domains.png) 
 
@@ -75,21 +77,20 @@ Pour générer un rapport Cloud Discovery efficace :
 Dans le **tableau de bord Cloud Discovery**, cliquez sur les trois points en haut à droite du menu et sélectionnez **Générer un rapport exécutif Cloud Discovery**.
 
 ## <a name="exclude-entities"></a>Exclure des entités
+
 Si des utilisateurs, des adresses IP ou des machines génèrent du bruit mais ne sont pas intéressants, ou si des applications ne sont pas pertinentes, vous pouvez exclure leurs données des données Cloud Discovery qui sont analysées. Par exemple, vous pouvez exclure toutes les informations provenant de 127.0.0.1 ou de l’hôte local.  
   
 Pour créer une exclusion :  
   
 1. Dans le portail, sous l’icône Paramètres, sélectionnez **Paramètres Cloud Discovery**.  
-  
 2. Cliquez sur l’onglet **Exclure des entités**.  
-  
-3. Choisissez l’onglet **Utilisateurs exclus**, **Adresses IP exclues** ou **Machines exclues**, puis cliquez sur le bouton + pour ajouter votre exclusion.  
-  
-4. Ajoutez un alias utilisateur, une adresse IP ou un nom de machine. Nous vous recommandons d’ajouter des informations sur les raisons de l’exclusion.  
+3. Choisissez l’onglet **Utilisateurs exclus**, **Adresses IP exclues** ou **Machines exclues**, puis cliquez sur le bouton + pour ajouter votre exclusion.
+4. Ajoutez un alias utilisateur, une adresse IP ou un nom de machine. Nous vous recommandons d’ajouter des informations sur les raisons de l’exclusion.
   
      ![exclure l’utilisateur](./media/exclude-user.png "exclure l’utilisateur")  
   
-## <a name="manage-continuous-reports"></a>Gérer les rapports continus  
+## <a name="manage-continuous-reports"></a>Gérer les rapports continus
+
 Les rapports continus personnalisés vous apportent une plus grande granularité lors de la surveillance des données de journaux Cloud Discovery de votre organisation. En créant des rapports personnalisés, vous pouvez filtrer sur des emplacements géographiques, des réseaux, des sites ou des unités d’organisation spécifiques. Par défaut, seuls les rapports suivants apparaissent dans votre sélecteur de rapports Cloud Discovery :  
   
 - Le **rapport global** regroupe toutes les informations du portail provenant de toutes les sources de données que vous avez incluses dans vos journaux.  
@@ -116,7 +117,8 @@ Pour créer un rapport continu :
 > Tous les rapports personnalisés sont limitées à 1 Go de données maximum non compressées. En cas de dépassement, le premier 1 Go de données est exporté dans le rapport.
 
 
-## <a name="deleting-cloud-discovery-data"></a>Suppression de données Cloud Discovery  
+## <a name="deleting-cloud-discovery-data"></a>Suppression de données Cloud Discovery
+
 Plusieurs raisons peuvent vous amener à supprimer vos données Cloud Discovery. Nous vous recommandons de les supprimer dans les cas suivants :  
   
 - Vous avez chargé manuellement les fichiers journaux, vous avez attendu longtemps avant de mettre à jour le système avec de nouveaux fichiers journaux et vous ne voulez pas que les anciennes données affectent vos résultats.  
@@ -138,10 +140,7 @@ Pour supprimer des données Cloud Discovery :
     ![supprimer des données](./media/delete-data.png "supprimer des données")  
   
    > [!NOTE]  
-   >  Le processus de suppression peut prendre quelques minutes et il n’est pas immédiat.  
-
-
-
+   >  Le processus de suppression peut prendre quelques minutes et il n’est pas immédiat.
 
 ## <a name="next-steps"></a>Étapes suivantes
  

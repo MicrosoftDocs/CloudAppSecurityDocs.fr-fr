@@ -1,11 +1,11 @@
 ---
-title: Créer des stratégies d’accès Cloud App Security pour autoriser et bloquer l’accès | Microsoft Docs
+title: Créer des stratégies d’accès Cloud App Security pour autoriser et bloquer l’accès
 description: Cet article décrit la procédure de configuration d’une stratégie d’accès Cloud App Security avec contrôle d’application par accès conditionnel pour autoriser et bloquer l’accès aux applications connectées via Azure AD, à l’aide de fonctionnalités de proxy.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,21 +13,21 @@ ms.technology: ''
 ms.assetid: 9095cff1-f8b0-44a7-b1df-a83e674abbc6
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 60d85d25400386161dacd09e359353e96dac6b94
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 8252c3ec83dd2e37663c5c13df8fa56e333af19c
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124126"
+ms.locfileid: "53176176"
 ---
-# <a name="access-policies"></a>Stratégies d’accès 
+# <a name="access-policies"></a>Stratégies d’accès
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 >[!div class="step-by-step"]
-[« PRÉCÉDENT : Guide pratique pour créer une stratégie de session](session-policy-aad.md)<br>
-[SUIVANT : Explorer les cas d’usage courants »](use-case-proxy-block-session-aad.md)
-
+[« PRÉCÉDENT : Guide pratique pour créer une stratégie de session](session-policy-aad.md)<br>
+[SUIVANT : Explorer les cas d’usage courants »](use-case-proxy-block-session-aad.md)
 
 Les stratégies d’accès Microsoft Cloud App Security permettent la surveillance et la supervision en temps réel de l’accès à des applications cloud, en fonction de l’utilisateur, de l’emplacement, de l’appareil et de l’application. Vous pouvez créer des stratégies d’accès pour n’importe quel appareil, notamment les appareils qui ne sont pas joints à un domaine et qui ne sont pas gérés par Windows Intune, en déployant des certificats clients sur des appareils gérés ou en utilisant des certificats existants, par exemple des certificats MDM tiers. Par exemple, vous pouvez déployer des certificats clients sur des appareils gérés, puis bloquer l’accès à partir des appareils sans certificat. 
 
@@ -65,13 +65,13 @@ Pour créer une stratégie d’activité, suivez cette procédure :
 
 4. Dans la section **Activités remplissant toutes les conditions suivantes**, sous **Source de l’activité**, sélectionnez des filtres d’activité supplémentaires à appliquer à la stratégie. Les filtres incluent les options suivantes : 
      
-   - **Balise de l’appareil** : Utilisez ce filtre pour identifier les appareils non gérés.
+   - **Balises de l’appareil** : Utilisez ce filtre pour identifier les appareils non gérés.
 
-   - **Emplacement** : Utilisez ce filtre pour identifier les emplacements inconnus (et par conséquent à risque). 
+   - **Emplacement** : Utilisez ce filtre pour identifier les emplacements inconnus (et par conséquent à risque). 
 
-   - **Adresse IP** : Utilisez ce filtre pour filtrer selon des adresses IP ou utiliser des balises d’adresse IP déjà attribuées. 
+   - **Adresse IP** : Utilisez ce filtre pour filtrer en fonction d’adresses IP ou utiliser des balises d’adresse IP déjà attribuées. 
 
-   - **Étiquette agent utilisateur** : Utilisez ce filtre pour activer l’heuristique afin d’identifier les applications mobiles et de bureau. Ce filtre peut avoir la valeur est égal à ou n’est pas égal à. Vous devez tester ces valeurs par rapport à vos applications mobiles et vos applications de bureau pour chaque application cloud.
+   - **Étiquette agent utilisateur** : Utilisez ce filtre pour activer l’heuristique afin d’identifier les applications mobiles et de bureau. Ce filtre peut avoir la valeur est égal à ou n’est pas égal à. Vous devez tester ces valeurs par rapport à vos applications mobiles et vos applications de bureau pour chaque application cloud.
   
 5. Sous **Actions**, sélectionnez l’une des options suivantes : 
 
@@ -84,8 +84,8 @@ Pour créer une stratégie d’activité, suivez cette procédure :
 
 
 >[!div class="step-by-step"]
-[« PRÉCÉDENT : Guide pratique pour créer une stratégie de session](session-policy-aad.md)<br>
-[SUIVANT : Explorer les cas d’usage courants »](use-case-proxy-block-session-aad.md)
+[« PRÉCÉDENT : Guide pratique pour créer une stratégie de session](session-policy-aad.md)<br>
+[SUIVANT : Explorer les cas d’usage courants »](use-case-proxy-block-session-aad.md)
 
  
 ## <a name="next-steps"></a>Étapes suivantes  

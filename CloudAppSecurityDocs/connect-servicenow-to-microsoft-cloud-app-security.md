@@ -1,11 +1,11 @@
 ---
-title: Connecter ServiceNow à Cloud App Security pour la visibilité et le contrôle d’utilisation | Microsoft Docs
-description: Cet article fournit des informations sur la connexion de votre application ServiceNow à Cloud App Security à l’aide du connecteur d’API.
+title: Connecter ServiceNow à Cloud App Security
+description: Cet article vous explique comment connecter votre application ServiceNow à Cloud App Security à l’aide du connecteur d’API, afin de bénéficier de plus de visibilité et de contrôle lors de l’utilisation.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,24 +13,25 @@ ms.technology: ''
 ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: db322502c8036e6e8d6060aa9e8f313e3893d0b7
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 773efcb800ffbd2fada86910d4393aa16143c199
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123973"
+ms.locfileid: "53176754"
 ---
 # <a name="connect-servicenow-to-microsoft-cloud-app-security"></a>Connecter ServiceNow à Microsoft Cloud App Security
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
-Cet article fournit des instructions pour connecter Microsoft Cloud App Security à un compte ServiceNow existant à l’aide de l’API de connecteur d’applications. 
+Cet article fournit des instructions pour connecter Microsoft Cloud App Security à un compte ServiceNow existant à l’aide de l’API de connecteur d’applications. Cette connexion vous permet de bénéficier de plus de visibilité et de contrôle lors de l’utilisation de ServiceNow.
 
 > [!NOTE]
->  Nous vous recommandons de déployer ServiceNow à l’aide de jetons d’application OAuth, disponibles pour Fuji et versions ultérieures (consultez la [documentation ServiceNow](http://wiki.servicenow.com/index.php?title=OAuth_Applications#gsc.tab=0) appropriée). Pour les versions antérieures, un [mode de connexion hérité](#legacy-servicenow-connection) est disponible en fonction de l’utilisateur/du mot de passe. Le nom d’utilisateur et le mot de passe fournis sont utilisés uniquement pour générer les jetons API, et ils ne sont pas enregistrés après le processus initial de connexion.
+>  Nous vous recommandons de déployer ServiceNow à l’aide de jetons d’application OAuth, disponibles pour Fuji et versions ultérieures (consultez la [documentation ServiceNow](https://wiki.servicenow.com/index.php?title=OAuth_Applications#gsc.tab=0) appropriée). Pour les versions antérieures, un [mode de connexion hérité](#legacy-servicenow-connection) est disponible en fonction de l’utilisateur/du mot de passe. Le nom d’utilisateur et le mot de passe fournis sont utilisés uniquement pour générer les jetons API, et ils ne sont pas enregistrés après le processus initial de connexion.
 > 
 > [!NOTE]
->  Cloud App Security prend en charge les versions Eureka, Fiji, Geneva, Helsinki et Istanbul de ServiceNow. Pour connecter ServiceNow à Cloud App Security, vous devez avoir le rôle **Administrateur** et vérifier que l’instance ServiceNow prend en charge l’accès à l’API.  Pour plus d’informations, consultez la [documentation du produit ServiceNow](http://wiki.servicenow.com/index.php?title=Base_System_Roles#gsc.tab=0).
+>  Cloud App Security prend en charge les versions Eureka, Fiji, Geneva, Helsinki et Istanbul de ServiceNow. Pour connecter ServiceNow à Cloud App Security, vous devez avoir le rôle **Administrateur** et vérifier que l’instance ServiceNow prend en charge l’accès à l’API.  Pour plus d’informations, consultez la [documentation du produit ServiceNow](https://wiki.servicenow.com/index.php?title=Base_System_Roles#gsc.tab=0).
   
 ## <a name="how-to-connect-servicenow-to-cloud-app-security-using-oauth"></a>Comment connecter ServiceNow à Cloud App Security avec OAuth
   

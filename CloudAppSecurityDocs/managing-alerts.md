@@ -1,11 +1,11 @@
 ---
-title: Gérer les alertes déclenchées dans le portail Cloud App Security | Microsoft Docs
+title: Gérer les alertes déclenchées dans Cloud App Security
 description: Cet article explique comment utiliser les alertes déclenchées dans le portail Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 1b1dbcc6-472f-43ea-af59-2aa926e3e5a9
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 97cc1a6bee2c8264b7dfc430f555219ccd40ffd9
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 34fe83d4d6300037d31f577029f0b4887c7108e2
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124483"
+ms.locfileid: "53176823"
 ---
 # <a name="manage-alerts"></a>Gérer les alertes
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Cet article explique comment utiliser les alertes déclenchées dans le portail Cloud App Security.
 
@@ -58,11 +59,17 @@ Il est judicieux d’examiner toutes vos alertes et de vous en servir pour modif
          - Vous pouvez contacter l’utilisateur ou le responsable de l’utilisateur pour lui demander la nature de l’activité.
          - Laissez l’activité ouverte jusqu’à ce que vous ayez plus d’informations.  
 
-       - **Violations autorisées ou comportements anormaux** : les violations autorisées ou les comportements anormaux peuvent provenir d’une utilisation légitime.  
+       - **Violations autorisées ou comportements anormaux** : les violations autorisées ou les comportements anormaux peuvent provenir d’une utilisation légitime. <br>
+         - Vous pouvez ignorer l’alerte.
 
-   - Supprimez l’alerte.  
 
-3. Quand vous avez terminé ce processus, marquez l’alerte comme résolue.  
+3. Chaque fois que vous ignorez une alerte, il est important d’envoyer des commentaires sur la raison pour laquelle vous l’ignorez. L’équipe Cloud App Security utilise ces commentaires pour évaluer la précision de l’alerte. Ces informations sont ensuite utilisées pour affiner nos modèles Machine Learning pour les futures alertes. Vous pouvez suivre ces instructions pour décider comment catégoriser l’alerte :
+   - Si une utilisation légitime a déclenché l’alerte et qu’il ne s’agit pas d’un problème de sécurité, il peut s’agir d’un événement de ce type : 
+
+     - Positif sans gravité : L’alerte est exacte, mais l’activité est légitime. Vous pouvez ignorer l’alerte et définir la raison sur **La gravité réelle est inférieure** ou sur **Sans intérêt**.
+     -  Faux positif : L’alerte est inexacte. Ignorez l’alerte et définissez la raison sur **L’alerte n’est pas exacte**.
+   - S’il y a trop de bruit pour déterminer la légitimité et l’exactitude d’une alerte, ignorez-la et définissez la raison sur **Trop d’alertes similaires**.
+   - Vrai positif : Si l’alerte concerne un événement à risques réel qui a été commis à des fins malveillantes ou involontairement par un utilisateur interne ou externe, il est recommandé de définir l’événement sur **Résolution** après que toutes les actions appropriées ont été effectuées pour remédier à l’événement.
 
 ## <a name="alert-types"></a>Types d’alertes
 

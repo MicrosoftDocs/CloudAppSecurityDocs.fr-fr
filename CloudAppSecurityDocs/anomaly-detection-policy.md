@@ -1,11 +1,11 @@
 ---
-title: Créer une stratégie de détection des anomalies dans Cloud App Security | Microsoft Docs
+title: Créer une stratégie de détection des anomalies dans Cloud App Security
 description: Cet article fournit une description des stratégies de détection des anomalies ainsi que des informations de référence sur les composantes d’une stratégie de détection des anomalies.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: ab9bc377-d2f5-4f4c-a419-f1728a15d1c7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 91733a1219befb3aac5ac48a4a3fe19368ea4d10
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 6c0e3ac17aa5bc8d3cb5d7b32d4556c3d5cd0a33
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124704"
+ms.locfileid: "53176781"
 ---
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>Obtenir instantanément une détection des anomalies et une analytique comportementale
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Les stratégies de détection des anomalies de Microsoft Cloud App Security intègrent une analytique comportementale des utilisateurs et des entités (UEBA) et un apprentissage automatique (ML) pour vous permettre de lancer immédiatement une détection avancée des menaces dans tout votre environnement cloud. Comme ces stratégies sont automatiquement activées, les nouvelles stratégies de détection des anomalies fournissent des résultats immédiats grâce à des détections immédiates, le ciblage de nombreuses anomalies comportementales entre vos utilisateurs et les ordinateurs et appareils connectés à votre réseau.  En outre, les nouvelles stratégies exposent davantage de données à partir du moteur de détection de Cloud App Security afin d’accélérer le processus d’investigation, et contiennent des menaces permanentes. 
 

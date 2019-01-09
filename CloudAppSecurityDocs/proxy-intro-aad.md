@@ -1,11 +1,11 @@
 ---
-title: Protéger avec le Contrôle d’accès conditionnel aux applications Microsoft Cloud App Security | Microsoft Docs
+title: Protéger avec le contrôle d’application par accès conditionnel Microsoft Cloud App Security
 description: Cet article fournit des informations sur le fonctionnement du proxy inverse du contrôle d’application par accès conditionnel de Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/18/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,19 +13,20 @@ ms.technology: ''
 ms.assetid: 35a43120-bf67-4cf9-9b48-ebe157dbbd18
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 620bcbc8751ac782c947b2a761e8250ddc0f5807
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: a9f3b2282d4a62706e72500db9bb3c57f7598029
+ms.sourcegitcommit: 96fabfedfe747bb02379876d34f0f5ac8019c1a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124262"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53587832"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Protéger les applications avec le Contrôle d’accès conditionnel aux applications Microsoft Cloud App Security
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 >[!div class="step-by-step"]
-[Suivant : Déployer le Contrôle d’accès conditionnel aux applications »](proxy-deployment-aad.md)
+[SUIVANT : Déployer le contrôle d’application par accès conditionnel »](proxy-deployment-aad.md)
 
 
 En entreprise, le fait de savoir ce qui s’est passé dans votre environnement cloud après coup n’est pas suffisant. En effet, vous devez pouvoir arrêter les violations et les fuites en temps réel, avant que les employés ne puissent, par inadvertance ou intentionnellement, compromettre vos données et votre organisation. Il est important d’autoriser les utilisateurs de votre organisation à accéder à la plupart des services et outils des applications cloud, et de leur permettre d’apporter leurs propres appareils au travail. En même temps, vous avez besoin d’outils pour protéger votre organisation contre les fuites et le vol de données, en temps réel. Avec Azure Active Directory, Microsoft Cloud App Security offre ces fonctionnalités dans une expérience globale et intégrée avec le Contrôle d’accès conditionnel aux applications.
@@ -40,17 +41,17 @@ Le contrôle d’application par accès conditionnel utilise une architecture de
 
 Le Contrôle d’accès conditionnel aux applications active l’accès aux applications des utilisateurs et les sessions à surveiller et à contrôler en temps réel, en fonction des stratégies d’accès et de session. Les stratégies d’accès et de session sont utilisées dans le portail Cloud App Security pour affiner les filtres et définir les actions à effectuer sur un utilisateur. Avec les stratégies d’accès et de session, vous pouvez :
 
-- **Bloquer en cas de téléchargement** : vous pouvez bloquer le téléchargement de documents sensibles. Par exemple, sur les appareils non gérés.
+- **Bloquer en cas de téléchargement** : Vous pouvez bloquer le téléchargement de documents sensibles. Par exemple, sur les appareils non gérés.
 
-- **Protéger en cas de téléchargement** : au lieu de bloquer le téléchargement des documents sensibles, vous pouvez exiger que les documents soient protégés par chiffrement lors de leur téléchargement. Ce chiffrement garantit que le document est protégé et que l’accès utilisateur est authentifié, si les données sont téléchargées sur un appareil non approuvé. 
+- **Protéger en cas de téléchargement** : Au lieu de bloquer le téléchargement des documents sensibles, vous pouvez exiger que les documents soient protégés par chiffrement lors de leur téléchargement. Ce chiffrement garantit que le document est protégé et que l’accès utilisateur est authentifié, si les données sont téléchargées sur un appareil non approuvé. 
 
-- **Surveiller les sessions utilisateur de confiance basse** : les utilisateurs à risque sont surveillés quand ils se connectent à des applications et leurs actions sont journalisées depuis la session. Vous pouvez examiner et analyser le comportement des utilisateurs pour comprendre où et dans quelles conditions les stratégies de session devront être appliquées à l’avenir. 
+- **Surveiller les sessions utilisateur de confiance basse** : Les utilisateurs à risque sont surveillés lorsqu’ils se connectent à des applications et leurs actions sont journalisées depuis la session. Vous pouvez examiner et analyser le comportement des utilisateurs pour comprendre où et dans quelles conditions les stratégies de session devront être appliquées à l’avenir. 
 
-- **Bloquer l’accès** : vous pouvez bloquer complètement l’accès à des applications spécifiques pour les utilisateurs provenant d’appareils non gérés ou de réseaux qui ne sont pas des réseaux de l’entreprise.
+- **Bloquer l’accès** : Vous pouvez bloquer complètement l’accès à des applications spécifiques pour les utilisateurs provenant d’appareils non gérés ou de réseaux qui ne sont pas des réseaux de l’entreprise.
 
-- **Créer un mode Lecture seule** : en supervisant et en bloquant des activités personnalisées dans l’application, vous pouvez créer un mode Lecture seule pour certaines applications et certains utilisateurs.  
+- **Créer un mode Lecture seule** : En supervisant et en bloquant des activités personnalisées dans l’application, vous pouvez créer un mode Lecture seule pour certaines applications et certains utilisateurs.  
 
-- **Limiter les sessions utilisateur à partir des réseaux hors entreprise** : les utilisateurs accédant à une application protégée à partir d’un emplacement qui ne fait pas partie de votre réseau d’entreprise se voient attribuer un accès restreint. Le téléchargement des documents sensibles est bloqué ou protégé.
+- **Limiter les sessions utilisateur à partir des réseaux hors entreprise** : Les utilisateurs accédant à une application protégée à partir d’un emplacement qui ne fait pas partie de votre réseau d’entreprise se voient attribuer un accès restreint. Le téléchargement des documents sensibles est bloqué ou protégé.
 
 ### <a name="how-session-control-works"></a>Fonctionnement du contrôle de session
 
@@ -117,6 +118,7 @@ Le contrôle de session est disponible sur tous les navigateurs de toutes les pl
 - SharePoint Online (préversion)
 - Azure DevOps (Visual Studio Team Services) (préversion)
 - Yammer (préversion)
+- Microsoft Flow (préversion)
 
 
 
@@ -125,7 +127,7 @@ De nouvelles applications sont intégrées au contrôle de session en continu. S
 
 
 >[!div class="step-by-step"]
-[Suivant : Déployer le Contrôle d’accès conditionnel aux applications »](proxy-deployment-aad.md)
+[SUIVANT : Déployer le contrôle d’application par accès conditionnel »](proxy-deployment-aad.md)
 
 
 ## <a name="next-steps"></a>Étapes suivantes

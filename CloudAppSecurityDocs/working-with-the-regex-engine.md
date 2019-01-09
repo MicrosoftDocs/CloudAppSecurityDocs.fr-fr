@@ -1,11 +1,11 @@
 ---
-title: Utilisation du moteur RegEx pour les stratégies d’inspection du contenu | Microsoft Docs
-description: Cette rubrique fournit des instructions d’utilisation du moteur RegEx pour la correspondance au modèle dans les stratégies Cloud App Security.
+title: Utiliser le moteur RegEx dans Cloud App Security pour les stratégies d’inspection du contenu
+description: Cet article fournit des instructions d’utilisation du moteur RegEx pour la correspondance au modèle dans les stratégies Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/14/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,48 +13,55 @@ ms.technology: ''
 ms.assetid: dc8b87e5-e6c1-4a65-ab8c-067fb527fce4
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 792a03ce890a6848fd89d1cff6ff6a544300b728
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 92cb0d5dcadacf167cb085af5d84ef199f3a8029
+ms.sourcegitcommit: 475dc75456f4683336e3e4875e3155677e4fb827
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123565"
+ms.lasthandoff: 12/16/2018
+ms.locfileid: "53450611"
 ---
-*S’applique à : Microsoft Cloud App Security*
-
-
 # <a name="working-with-the-regex-engine"></a>En utilisant l’inspection du contenu
+
+*S’applique à : Microsoft Cloud App Security*
  
-Les stratégies d’inspection du contenu de Microsoft Cloud App Security tirent parti de RegEx pour la correspondance au modèle. L’inspection du contenu peut être appliquée dans le cadre des stratégies de fichier. Pour tester des expressions régulières, vous pouvez utiliser les sites web suivants :  
+Cet article fournit des instructions d’utilisation du moteur RegEx pour la correspondance au modèle dans les stratégies Cloud App Security.
+
+## <a name="regular-expressions-in-cloud-app-security"></a>Expressions régulières dans Cloud App Security
+
+Les stratégies d’inspection du contenu de Microsoft Cloud App Security utilisent RegEx pour la correspondance au modèle. L’inspection du contenu peut être appliquée dans le cadre des stratégies de fichier.
+
+### <a name="testing-regular-expressions"></a>Test des expressions régulières
+
+Pour tester des expressions régulières, vous pouvez utiliser les sites web suivants :  
   
--   [http://regexpal.com/](http://regexpal.com/)  
+- [https://regexpal.com/](https://regexpal.com/) - Veillez à sélectionner **Casse non prise en compte**.  
   
-     Veillez à sélectionner **Casse non prise en compte**.  
-  
--   [https://regex101.com/](https://regex101.com/)  
-  
-     Fournit une analyse détaillée de RegEx.  
-  
+- [https://regex101.com/](https://regex101.com/) - Fournit une analyse détaillée de RegEx.  
+
+### <a name="limitations-of-regular-expressions-in-cloud-app-security"></a>Limitations des expressions régulières dans Cloud App Security
+
 Les limitations suivantes sont imposées sur les expressions régulières personnalisées :  
   
--   Le non-respect de la casse est toujours appliqué à la recherche  
-   
--   Quantificateurs autorisés : {n,m} où n, m < 10  
+- Le non-respect de la casse est toujours appliqué à la recherche  
+
+- Quantificateurs autorisés : {n,m} où n, m < 10  
   
--   Tous les groupes doivent être sans capture, par exemple : (?:xxx)  
+- Tous les groupes doivent être sans capture, par exemple : (?:xxx)  
   
      Au lieu de (groupe), utilisez (?:groupe)  
   
--   Quantificateurs non autorisés : *, +, {n,}  
+- Quantificateurs non autorisés : *, +, {n,}  
   
      Au lieu de *, utilisez {0,9}  
   
      Au lieu de +, utilisez {1,9}  
   
--   Références arrière non autorisées : \\<nombre\> ou \k\<nom>  
+- Références arrière non autorisées : \\<nombre\> ou \k\<nom>  
   
-Exemples d’expressions  
-  
+### <a name="example-expressions"></a>Exemples d’expressions  
+
+Le tableau suivant vous présente des exemples d’expressions et si elles correspondraient ou non.
 
 |                                                               |                                                               |                                    |
 |---------------------------------------------------------------|---------------------------------------------------------------|------------------------------------|
@@ -64,11 +71,13 @@ Exemples d’expressions
 | 20\d{2}-(?:0[1-9]&#124;1[0-2])-(?:[0-2][0-9]&#124;30&#124;31) |   2015-12-31<br /><br /> 2015-01-09<br /><br /> 1999-12-31    | Oui<br /><br /> Oui<br /><br /> Non |
 |                       d.n't\s{0,10}c.r.                       | Don’t     care<br /><br /> D!n'tcor0<br /><br /> Doesn’t care | Oui<br /><br /> Oui<br /><br /> Non |
 
-## <a name="see-also"></a>Voir aussi  
+## <a name="check-out-this-video"></a>Regardez cette vidéo !
+
+[Utilisation du moteur RegEx](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security-Working-with-the-Regex-Engine)
+
+## <a name="next-steps"></a>Étapes suivantes
+
 [Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)   
 
 [Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)  
   
-
-## <a name="check-out-this-video"></a>Regardez cette vidéo !
-[Utilisation du moteur RegEx](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security-Working-with-the-Regex-Engine)    

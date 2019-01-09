@@ -1,11 +1,11 @@
 ---
-title: Configurer le chargement automatique des journaux pour des rapports continus | Documentation Microsoft
+title: Configurer le chargement automatique des journaux pour des rapports continus dans Cloud App Security
 description: Cet article décrit la procédure de configuration du chargement automatique des journaux pour des rapports continus dans Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: c75ba963-ad5a-48e6-8d5d-610fc6e0b990
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0b62a5b7b3270076efd3763488d87b14b8c78632
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: e1f5023c31d5f2d33573ee99c2b363535c87e085
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123752"
+ms.locfileid: "53176720"
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports"></a>Configurer le chargement automatique des journaux pour des rapports continus
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Les collecteurs de journaux vous permettent d’automatiser facilement le chargement manuel des journaux de votre réseau. Le collecteur de journaux s’exécute sur votre réseau et reçoit les journaux par le biais de Syslog ou FTP. Chaque journal est automatiquement traité, compressé et transmis au portail. Les journaux FTP sont chargés sur Microsoft Cloud App Security une fois que le fichier a terminé le transfert FTP vers le collecteur de journaux. Pour Syslog, le collecteur de journaux écrit les journaux reçus sur le disque. Le collecteur de journaux charge ensuite le fichier sur Cloud App Security quand la taille du fichier est supérieure à 40 Ko. 
 
@@ -41,9 +42,9 @@ Avant de configurer la collecte automatique de fichiers journaux, vérifiez que 
 
 Le collecteur de journaux prend en charge deux modes de déploiement :
 
--   **Conteneur** : s’exécute comme une image Docker sur [Ubuntu en local](discovery-docker-ubuntu.md), sur [Ubuntu dans Azure](discovery-docker-ubuntu-azure.md) ou sur [RHEL en local](discovery-docker-ubuntu.md). 
+-   **Conteneur** : S’exécute comme une image Docker sur [Ubuntu en local](discovery-docker-ubuntu.md), sur [Ubuntu dans Azure](discovery-docker-ubuntu-azure.md) ou sur [RHEL en local](discovery-docker-ubuntu.md). 
 
--   **Appliance virtuelle**: [s’exécute en tant qu’image sur l’hyperviseur Hyper-V ou VMware](configure-automatic-log-upload-for-continuous-reports.md)
+-   **Appliance virtuelle** :  [S’exécute en tant qu’image sur l’hyperviseur Hyper-V ou VMware](configure-automatic-log-upload-for-continuous-reports.md)
 
 
 

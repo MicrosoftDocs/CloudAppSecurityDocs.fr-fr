@@ -1,11 +1,11 @@
 ---
-title: Contrôler l’utilisation des applications cloud en créant des stratégies dans Cloud App Security | Microsoft Docs
+title: Contrôler l’utilisation des applications cloud en créant des stratégies - Cloud App Security | Microsoft Docs
 description: Cet article fournit des informations sur la façon dont les stratégies sont utilisées et configurées pour contrôler l’usage des applications cloud.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 14d10238-0f61-43e9-ab96-71534a27d3d4
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b15e3f54b8aabe4dff37597fa78465d34ad6c144
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: e73f9e3ab8de86bd2ea7a010435b93e860cf54a4
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124806"
+ms.locfileid: "53177060"
 ---
 # <a name="control-cloud-apps-with-policies"></a>Contrôler les applications cloud avec des stratégies
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Grâce aux stratégies, vous pouvez définir la façon dont vous souhaitez que vos utilisateurs se comportent dans le cloud. Elles vous permettent de détecter des comportements à risques, des violations, ou des points de données et des activités suspectes dans votre environnement cloud. Si nécessaire, vous pouvez intégrer des flux de travail de correction pour atténuer les risques. Il existe plusieurs types de stratégies suivant les différents types d’informations que vous voulez collecter sur votre environnement cloud et les types de mesures correctives que vous pouvez souhaiter prendre.  
   
@@ -47,19 +48,19 @@ Vous pouvez créer les types de stratégies suivants :
 ## <a name="identifying-risk"></a>Identification des risques  
 Cloud App Security vous permet d’atténuer différents risques dans le cloud. Vous pouvez configurer n’importe quelles stratégie et alerte à associer à un des risques suivants :  
   
--   **Contrôle d’accès :** Qui accède à quoi à partir d’où ?  
+-   **Contrôle d’accès :** Qui accède à quoi et à partir d’où ?  
   
      Surveillez le comportement et détectez les activités anormales en continu, notamment les attaques externes et internes à haut risque, et appliquez une stratégie d’alerte, de blocage ou de vérification d’identité pour toute application ou action spécifique dans une application. Cette approche permet de mettre en place des stratégies de contrôle d’accès locales et mobiles basées sur l’utilisateur, l’appareil et la zone géographique, avec un blocage grossier et des procédures d’affichage, de modification et de blocage précises. Détectez les événements de connexion suspects, notamment les échecs d’authentification multifacteur, les échecs de connexion de compte désactivé et les événements d’emprunt d’identité.  
   
--   **Conformité :** Vos contraintes de conformité sont-elles enfreintes ?  
+-   **Conformité :** Vos exigences de conformité sont-elles enfreintes ?  
   
      Classez et identifiez les données sensibles ou réglementées, notamment les autorisations de partage pour chaque fichier, stockées dans des services de synchronisation de fichier pour assurer la conformité aux réglementations telles que PCI, SOX et HIPAA  
   
--   **Contrôle de configuration :**  Votre configuration fait-elle l’objet de modifications non autorisées ?  
+-   **Contrôle de configuration :** Votre configuration fait-elle l’objet de modifications non autorisées ?  
   
      Surveillez les modifications de configuration, notamment la manipulation de la configuration à distance.  
   
--   **Cloud Discovery :**  Des applications nouvelles sont-elles utilisées dans votre organisation ? Des applications Shadow IT que vous ignorez sont-elles utilisées ?  
+-   **Cloud Discovery :** Des applications nouvelles sont-elles utilisées dans votre organisation ? Des applications Shadow IT que vous ignorez sont-elles utilisées ?  
   
      Évaluez le risque global pour chaque application cloud en fonction de la réglementation, et des bonnes pratiques et des certifications du secteur. Vous permet de surveiller le nombre d’utilisateurs, les activités, le volume de trafic et les heures d’utilisation habituelles pour chaque application cloud.  
   
@@ -75,7 +76,7 @@ Cloud App Security vous permet d’atténuer différents risques dans le cloud. 
   
      Inspectez le contenu des fichiers et du cloud et appliquez des stratégies de partage interne et externe. Surveillez la collaboration et appliquez des stratégies de partage, telles que l’interdiction de partager des fichiers à l’extérieur de votre organisation.  
   
--   **Détection de menaces :** Des activités suspectes menacent-elles votre environnement cloud ?  
+-   **Détection des menaces :** Des activités suspectes menacent-elles votre environnement cloud ?  
   
      Recevez des notifications en temps réel pour toute violation de stratégie ou franchissement de seuil d’activité par SMS ou e-mail. En appliquant des algorithmes de Machine Learning, Cloud App Security vous permet de détecter un comportement qui peut indiquer qu’un utilisateur exploite des données de façon inappropriée.  
   
@@ -97,7 +98,7 @@ Pour créer une stratégie à partir de **modèles de stratégie**, effectuez le
   
 1. Dans la console, cliquez sur **Contrôle**, puis sur **Modèles**.  
   
-    ![](./media/create-policy-from-template.png)  
+    ![Créer la stratégie à partir d’un modèle](./media/create-policy-from-template.png)  
   
 2. Cliquez sur le signe **+** tout à droite de la ligne du modèle à utiliser. Une page de création de stratégie s’ouvre, avec la configuration prédéfinie du modèle.  
   

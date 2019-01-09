@@ -1,11 +1,11 @@
 ---
-title: Connecter Salesforce à Cloud App Security pour la visibilité et le contrôle d’utilisation | Microsoft Docs
-description: Cet article fournit des informations sur la connexion de Salesforce à Cloud App Security à l’aide du connecteur d’API.
+title: Connecter Salesforce à Cloud App Security
+description: Cet article vous explique comment connecter votre application Salesforce à Cloud App Security à l’aide du connecteur d’API, afin de bénéficier de plus de contrôle et de visibilité lors de l’utilisation.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,19 @@ ms.technology: ''
 ms.assetid: 776d7589-acdb-4cb6-99a0-3be2f7b6aab2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 83b2f4572c2e5714867ed529c6199e441da5234f
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 322e5d0564e70ff4e8ff85bdd3f798f43aacf235
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124687"
+ms.locfileid: "53176737"
 ---
 # <a name="connect-salesforce-to-microsoft-cloud-app-security"></a>Connecter Salesforce à Microsoft Cloud App Security
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
-Cet article fournit des instructions pour connecter Microsoft Cloud App Security à un compte Salesforce existant à l’aide de l’API de connecteur d’applications.  
+Cet article fournit des instructions pour connecter Microsoft Cloud App Security à un compte Salesforce existant à l’aide de l’API de connecteur d’applications. Cette connexion vous permet de bénéficier de plus de visibilité et de contrôle lors de l’utilisation de Salesforce. 
   
 ## <a name="how-to-connect-salesforce-to-cloud-app-security"></a>Comment connecter Salesforce à Cloud App Security  
   
@@ -102,7 +103,7 @@ Cet article fournit des instructions pour connecter Microsoft Cloud App Security
      Le test peut prendre quelques minutes. Une fois que vous avez reçu une notification de réussite, cliquez sur **Terminé**.  
   
   
-Après avoir connecté Salesforce, vous recevez les événements comme suit : déclencheurs à partir du moment de la connexion, événements de connexion et piste d’audit d’installation pour les 60 jours précédant la connexion, surveillance des événements remontant à 30 jours ou à 1 jour, en fonction de votre licence Salesforce EventMonitoring. L’API Cloud App Security communique directement avec les API disponibles dans Salesforce. Comme Salesforce limite le nombre d’appels d’API qu’il peut recevoir, Cloud App Security prend ce point en considération et respecte la limite. Les API Salesforce envoient chaque réponse avec un champ pour les compteurs d’API, notamment le total disponible et le total restant. Cloud App Security calcule en pourcentage et veille à toujours garder 10 % des appels d’API disponibles restants. 
+Après avoir connecté Salesforce, vous recevrez les événements comme suit : Déclencheurs à partir du moment de la connexion, événements de connexion et piste d’audit d’installation pour les 60 jours précédant la connexion, surveillance des événements remontant à 30 jours ou à 1 jour, en fonction de votre licence Salesforce EventMonitoring. L’API Cloud App Security communique directement avec les API disponibles dans Salesforce. Comme Salesforce limite le nombre d’appels d’API qu’il peut recevoir, Cloud App Security prend ce point en considération et respecte la limite. Les API Salesforce envoient chaque réponse avec un champ pour les compteurs d’API, notamment le total disponible et le total restant. Cloud App Security calcule en pourcentage et veille à toujours garder 10 % des appels d’API disponibles restants. 
 
 > [!NOTE]
 > La limitation Cloud App Security est calculée uniquement à partir de ses propres appels d’API avec Salesforce, et non avec ceux des autres applications qui effectuent des appels d’API avec Salesforce.

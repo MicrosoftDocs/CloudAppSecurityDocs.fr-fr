@@ -1,11 +1,11 @@
 ---
-title: Définir l’étendue d’un déploiement Microsoft Cloud App Security | Microsoft Docs
+title: Définir l’étendue d’un déploiement Microsoft Cloud App Security
 description: Cet article donne des informations sur la marche à suivre pour définir l’étendue d’un déploiement Cloud App Security, en incluant et en excluant certains utilisateurs ou certains groupes.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: fe2ce27b-1020-45e9-ad72-fad93d197169
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: bf0a19b89d79b6bc6f3bb6edf51cf4392621ab68
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 899a6000674163f250dc981c58a800133902973f
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124744"
+ms.locfileid: "53176377"
 ---
 # Déploiement étendu <a name="scoped-deployment"></a> 
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Microsoft Cloud App Security vous permet de délimiter votre déploiement. La délimitation vous permet de sélectionner certains groupes d’utilisateurs à surveiller pour des applications ou à exclure de la surveillance.
 

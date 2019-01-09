@@ -1,11 +1,11 @@
 ---
-title: Déployer Cloud App Security pour des insights et un contrôle sur l’utilisation des applications cloud | Microsoft Docs
-description: Cet article décrit le processus permettant de rendre Cloud App Security opérationnel.
+title: Déployer Cloud App Security
+description: Cet article décrit le processus permettant d’opérationnaliser Cloud App Security afin que vous puissiez utiliser les applications cloud, les contrôler et obtenir des insights.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ba1b2af9267595bfed88d34a280774aa47411786
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 240a2831ca31945cff4b957c21096d2ed0a64b42
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124092"
+ms.locfileid: "53177247"
 ---
 # <a name="deploy-microsoft-cloud-app-security"></a>Déployer Microsoft Cloud App Security
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Microsoft Cloud App Security vous permet de tirer parti des avantages des applications cloud tout en conservant le contrôle des ressources d’entreprise. Il fonctionne en améliorant la visibilité de l’activité cloud et contribue à renforcer la protection des données d’entreprise. Dans cet article, nous vous guidons à travers les étapes à suivre pour configurer et utiliser Microsoft Cloud App Security.  
 
@@ -57,7 +58,7 @@ Vous pouvez également accéder au portail via le **Centre d’administration Of
  
 
 ### <a name="step-1-set-instant-visibility-protection-and-governance-actions-for-your-appsenable-instant-visibility-protection-and-governance-actions-for-your-appsmd"></a>Étape 1. [Définissez une visibilité instantanée, une protection et des actions de gouvernance pour vos applications](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
-Tâche obligatoire : Connecter des applications
+Tâche obligatoire : Connecter des applications
 
 1. Dans la roue dentée des paramètres, sélectionnez **Connecteurs d’application**.
 2. Cliquez sur le signe plus pour ajouter une application puis sélectionnez une application.
@@ -68,7 +69,7 @@ Après avoir connecté une application, vous pouvez obtenir une visibilité plus
 
 
 ### <a name="step-2-control-cloud-apps-with-policiescontrol-cloud-apps-with-policiesmd"></a>Étape 2. [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md).
-Tâche obligatoire : Créer des stratégies
+Tâche obligatoire : Créer des stratégies
 
 **Pour créer des stratégies**
 
@@ -76,7 +77,7 @@ Tâche obligatoire : Créer des stratégies
 2. Sélectionnez un modèle de stratégie dans la liste, puis choisissez (+) **Créer une stratégie**.
 3. Personnalisez la stratégie (sélectionnez des filtres, des actions et d’autres paramètres), puis choisissez **Créer**.
 4. Sous l’onglet **Stratégies**, choisissez la stratégie pour afficher les correspondances pertinentes (activités, fichiers, alertes).
- Conseil : Pour couvrir tous les scénarios de sécurité de votre environnement cloud, créez une stratégie pour chaque **catégorie de risque**.
+ Conseil : Pour couvrir tous les scénarios de sécurité de votre environnement cloud, créez une stratégie pour chaque **catégorie de risque**.
 
 **Comment les stratégies peuvent-elles aider votre organisation ?**
 Vous pouvez utiliser des stratégies pour surveiller les tendances, identifier les menaces à la sécurité, et générer des alertes et des rapports personnalisés. Avec les stratégies, vous pouvez créer des actions de gouvernance, et définir une protection contre la perte de données et des contrôles sur les partages de fichiers.
@@ -84,7 +85,7 @@ Vous pouvez utiliser des stratégies pour surveiller les tendances, identifier l
 
 ### <a name="step-3-set-up-cloud-discoveryset-up-cloud-discoverymd"></a>Étape 3. [Configurer Cloud Discovery](set-up-cloud-discovery.md).
 
-Tâche obligatoire : activer Cloud App Security pour afficher votre utilisation d’applications cloud
+Tâche obligatoire : Activer Cloud App Security pour afficher votre utilisation d’applications cloud
 
 1. [Effectuez une intégration à Windows Defender ATP](wdatp-integration.md) pour activer automatiquement Cloud App Security afin de superviser vos appareils Windows 10 à l’intérieur et en dehors de votre entreprise.
 2. Si vous utilisez [Zscaler, intégrez](zscaler-integration.md)-le à Cloud App Security.
@@ -104,7 +105,7 @@ Obtenir une visibilité sur l’informatique fantôme dans votre organisation es
 Une fois vos journaux analysés, vous pouvez facilement identifier les applications cloud utilisées, par quelles personnes et sur quels appareils.
 
 ### <a name="step-4-personalize-your-experiencemail-settingsmd"></a>Étape 4. [Personnaliser votre expérience](mail-settings.md).
-Tâche recommandée : Ajouter les détails de votre organisation
+Tâche recommandée : Ajouter les détails de votre organisation
 
 **Pour entrer les paramètres d’e-mail**
 
@@ -132,7 +133,7 @@ Certaines fonctionnalités sont plus efficaces quand elles sont adaptées à vos
 
 
 ### <a name="step-5-organize-the-data-according-to-your-needsip-tagsmd"></a>Étape 5. [Organiser les données selon vos besoins](ip-tags.md).
-Tâche recommandée : Configurer des paramètres importants
+Tâche recommandée : Configurer des paramètres importants
 
 **Pour créer des étiquettes d’adresse IP**
 

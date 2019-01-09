@@ -1,11 +1,11 @@
 ---
-title: Gérer l’accès administrateur au portail Cloud App Security | Microsoft Docs
+title: Gérer l’accès administrateur au portail Cloud App Security
 description: Cet article explique comment définir l’accès au portail Cloud App Security pour vos administrateurs.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 23fe11600fc802e0c4f4d8024b78fa2713cc4a63
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 7fff5cffcae418225af7f1f14e98bf0c42e6811c
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123956"
+ms.locfileid: "53175700"
 ---
 # <a name="manage-admin-access"></a>Gérer l’accès administrateur
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Microsoft Cloud App Security prend en charge le contrôle d’accès basé sur les rôles. Par défaut, certains [rôles d’administrateur Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) et [rôles d’administrateur Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) ont accès à Microsoft Cloud App Security. Cet article explique comment définir l’accès au portail Cloud App Security pour vos administrateurs. Pour plus d’informations sur l’affectation des rôles d’administrateur, consultez les articles pour [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles) et [Office 365](https://docs.microsoft.com/office365/admin/add-users/assign-admin-roles).
 
@@ -30,11 +31,11 @@ Microsoft Cloud App Security prend en charge le contrôle d’accès basé sur l
 
 Par défaut, les rôles d’administrateur Office 365 et Azure AD suivants ont accès à Microsoft Cloud App Security :
 
-- **Administrateur général et Administrateur de la sécurité :** les administrateurs avec un **Accès total** disposent d’autorisations complètes dans Cloud App Security. Ils peuvent ajouter des administrateurs, ajouter des stratégies et des paramètres, charger des journaux et effectuer des actions de gouvernance.
+- **Administrateur général et administrateur de sécurité :** Les administrateurs avec **Accès complet** disposent d’autorisations complètes dans Cloud App Security. Ils peuvent ajouter des administrateurs, ajouter des stratégies et des paramètres, charger des journaux et effectuer des actions de gouvernance.
 
-- **Administrateur de conformité** : dispose d’autorisations en lecture seule et peut gérer les alertes. Peut créer et modifier des stratégies de fichier, autoriser des actions de gouvernance de fichier et afficher tous les rapports intégrés sous Gestion des données. 
+- **Administrateur de conformité :** Dispose d’autorisations en lecture seule et peut gérer les alertes. Peut créer et modifier des stratégies de fichier, autoriser des actions de gouvernance de fichier et afficher tous les rapports intégrés sous Gestion des données. 
 
-- **Lecteur Sécurité** : dispose d’autorisations en lecture seule et peut gérer les alertes. Le Lecteur Sécurité ne peut pas effectuer les actions suivantes :
+- **Lecteur Sécurité** : Dispose d’autorisations en lecture seule et peut gérer les alertes. Le Lecteur Sécurité ne peut pas effectuer les actions suivantes :
 
   - Créer des stratégies ou modifier et changer des stratégies existantes 
   - Effectuer des actions de gouvernance 
@@ -47,7 +48,7 @@ Par défaut, les rôles d’administrateur Office 365 et Azure AD suivants ont
   - Accéder au journal de gouvernance 
   - Accéder à la page Gérer des rapports d’instantanés 
 
-- **Administrateur d’application/d’instance** : dispose des autorisations pour toutes les données dans Microsoft Cloud App Security qui portent exclusivement sur l’application spécifique ou l’instance d’une application sélectionnée. Par exemple, vous accordez à un utilisateur l’autorisation d’administrateur sur votre instance de Box European. L’administrateur verra uniquement les données qui sont liées à l’instance de Box European, qu’il s’agisse de fichiers, d’activités, de stratégies ou d’alertes, comme suit :
+- **Administrateur d’application/d’instance :** Dispose des autorisations pour toutes les données dans Microsoft Cloud App Security qui portent exclusivement sur l’application spécifique ou l’instance d’une application sélectionnée. Par exemple, vous accordez à un utilisateur l’autorisation d’administrateur sur votre instance de Box European. L’administrateur verra uniquement les données qui sont liées à l’instance de Box European, qu’il s’agisse de fichiers, d’activités, de stratégies ou d’alertes, comme suit :
 
   - Page des activités : seules les activités concernant l’application spécifique
   - Alertes : seules les alertes relatives à l’application spécifique
@@ -60,7 +61,7 @@ Par défaut, les rôles d’administrateur Office 365 et Azure AD suivants ont
   - Extensions de sécurité : autorisations uniquement pour un jeton d’API avec des autorisations utilisateur
   - Actions de gouvernance : uniquement pour l’application/instance spécifique 
 
-- **Administrateur de groupe** : dispose des autorisations pour toutes les données dans Microsoft Cloud App Security qui portent exclusivement sur le groupe spécifique sélectionné ici. Par exemple, si vous accordez à un utilisateur l’autorisation d’administrateur sur le groupe « Allemagne - tous les utilisateurs », l’administrateur peut visualiser et modifier les informations dans Microsoft Cloud App Security uniquement pour ce groupe d’utilisateurs, comme suit :
+- **Administrateur de groupe :** Dispose des autorisations pour toutes les données dans Microsoft Cloud App Security qui portent exclusivement sur le groupe spécifique sélectionné ici. Par exemple, si vous accordez à un utilisateur l’autorisation d’administrateur sur le groupe « Allemagne - tous les utilisateurs », l’administrateur peut visualiser et modifier les informations dans Microsoft Cloud App Security uniquement pour ce groupe d’utilisateurs, comme suit :
 
   - Page des activités : seules les activités concernant les utilisateurs dans le groupe
   - Alertes : seules les alertes relatives aux utilisateurs dans le groupe

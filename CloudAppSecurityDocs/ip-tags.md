@@ -1,11 +1,11 @@
 ---
-title: Définir des balises et des plages d’adresses IP | Microsoft Docs
+title: Définir des plages d’adresses IP et des balises - Cloud App Security | Microsoft Docs
 description: Cet article fournit des instructions sur l’utilisation des balises et des catégories d’adresses IP.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/16/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: bbf54f66-4ce2-428c-afc8-b5a64277014f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2ab846dd42e668e947ec82d9e2b707adc4526e3d
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: beb18c3c79ba1c4da96982f93b290d324347303d
+ms.sourcegitcommit: a55a20b8613755068e52b5cf65ad333fddd29688
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123395"
+ms.lasthandoff: 12/16/2018
+ms.locfileid: "53450987"
 ---
 #  <a name="IPtagsandRanges"></a> Utilisation des balises et des plages d’adresses IP
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Pour identifier facilement les adresses IP connues, telles que celles de votre bureau, vous devez définir des plages d’adresses IP. Les plages d’adresses IP vous permettent de baliser, classer et personnaliser la façon dont les journaux et les alertes sont affichés et examinés. Chaque groupe de plages IP peut être classé selon une liste prédéfinie de catégories d’adresses IP. Vous pouvez également créer des balises IP personnalisées pour vos plages d’adresses IP. En outre, vous pouvez remplacer les informations de géolocalisation publiques en fonction de votre connaissance du réseau interne. IPv4 et IPv6 sont pris en charge. 
 
@@ -35,6 +36,11 @@ Cloud App Security est préconfiguré avec des plages d’adresses IP intégrée
 
 
 Les balises d’adresse IP intégrées et les balises IP personnalisées sont considérées de manière hiérarchique. Les balises IP personnalisées sont prioritaires par rapport aux balises IP intégrées. Par exemple, si une adresse IP est marquée comme étant **Risquée** en fonction de l’intelligence des menaces, mais qu’il existe une balise IP personnalisée qui l’identifie comme appartenant à l’**Entreprise**, les balises et la catégorie personnalisées sont prioritaires.
+
+>[!NOTE]
+> Lorsqu’une adresse IP est marquée comme une adresse d’entreprise, elle est indiquée dans le portail, et les adresses IP sont exclues du déclenchement de détections spécifiques (par exemple, un déplacement impossible), car ces adresses IP sont considérées comme approuvées.
+>
+
 
 ## <a name="create-an-ip-address-range"></a>Créer une plage d’adresses IP 
 
@@ -51,15 +57,15 @@ Dans la barre de menus, cliquez sur l’icône des paramètres. Sélectionnez **
   
      Les catégories IP suivantes sont disponibles :  
   
-    - **Administratif** : toutes les adresses IP de vos administrateurs.  
+    - **Administratif** : Toutes les adresses IP de vos administrateurs.  
   
-    - **Fournisseur de cloud** : adresses IP utilisées par votre fournisseur de cloud.
+    - **Fournisseur de cloud** : Adresses IP utilisées par votre fournisseur de cloud.
   
-    - **Entreprise** : toutes les adresses IP de votre réseau interne, de vos succursales et de vos adresses d’itinérance Wi-Fi.  
+    - **Entreprise** : Toutes les adresses IP de votre réseau interne, de vos succursales et de vos adresses d’itinérance Wi-Fi.  
   
-    - **Risqué** : toutes les adresses IP que vous considérez comme risquées. Celles-ci peuvent inclure les adresses IP suspectes déjà constatées, les adresses IP appartenant aux réseaux de vos concurrents, et ainsi de suite.  
+    - **Risqué** : Toutes les adresses IP que vous considérez comme risquées. Celles-ci peuvent inclure les adresses IP suspectes déjà constatées, les adresses IP appartenant aux réseaux de vos concurrents, et ainsi de suite.  
   
-    - **VPN** : toutes les adresses IP que vous utilisez pour les télétravailleurs.
+    - **VPN** : Toutes les adresses IP que vous utilisez pour les télétravailleurs.
   
 4. Pour **baliser** les activités liées à ces adresses IP, entrez une balise. Il suffit d’entrer un mot dans la zone pour créer la balise. Une fois la balise configurée, vous pouvez l’ajouter facilement à des plages IP supplémentaires en la sélectionnant dans la liste. Vous pouvez ajouter autant de balises IP que vous le souhaitez pour chaque plage. Vous pouvez utiliser des balises IP quand vous créez des stratégies.  En plus des balises IP que vous configurez, Cloud App Security a des balises intégrées qui ne sont pas configurables. Vous pouvez voir la liste des balises sous le [filtre de balises IP](activity-filters.md).  
     > [!NOTE]  

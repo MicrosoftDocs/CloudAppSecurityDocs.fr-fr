@@ -1,11 +1,11 @@
 ---
-title: Configurer le chargement automatique des journaux pour des rapports continus dans Cloud App Security | Microsoft Docs
-description: Cette rubrique fournit des informations sur le chargement de journaux pour créer des rapports Cloud Discovery automatiques.
+title: Configurer le chargement automatique des journaux pour des rapports continus - Cloud App Security | Microsoft Docs
+description: Cet article fournit des informations sur le chargement de journaux pour créer des rapports Cloud Discovery automatiques.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,25 +13,26 @@ ms.technology: ''
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 331ae314d77cbc2ea85d8b714823a392d40fa209
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 389760b6e5279668ec2b2fe389dccdbe647b7f5b
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124568"
+ms.locfileid: "53176975"
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance---deprecated"></a>Configurer le chargement automatique des journaux pour des rapports continus sur une appliance virtuelle - Déconseillé
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 > [!WARNING] 
 > Il est fortement recommandé de configurer le chargement du journal avec [Docker](discovery-docker.md) pour une plus grande flexibilité de déploiement.
 
 ## <a name="technical-requirements"></a>Spécifications techniques
 - Hyperviseur : Hyper-V ou VMware
-- Espace disque : 250 Go
-- Processeur : 2
-- RAM : 4 Go 
+- Espace disque : 250 Go
+- UC : 2
+- RAM : 4 Go 
 - Configurez votre pare-feu, comme décrit dans [Configuration réseau requise](network-requirements.md#log-collector)
 
 
@@ -44,7 +45,7 @@ Le collecteur de journaux dispose d’un mécanisme de sécurité intégré qui 
 
 ## <a name="set-up-and-configuration"></a>Installation et configuration  
   
-### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>Étape 1 : configuration du portail web  - définir les sources de données et les lier à un collecteur de journaux  
+### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>Étape 1 - Configuration du portail web : Définir les sources de données et les lier à un collecteur de journaux  
   
 1. Accédez à la page des paramètres de chargement automatisé :  
    Dans le portail Cloud App Security, cliquez sur l’icône des paramètres ![icône des paramètres](./media/settings-icon.png "icône des paramètres"), puis sur **Collecteurs de journaux**.  
@@ -104,7 +105,7 @@ Le collecteur de journaux dispose d’un mécanisme de sécurité intégré qui 
   
 10. Cliquez sur la machine dans le tableau **Machines virtuelles** et cliquez sur **Démarrer**.   
   
-11. Connectez-vous à la machine virtuelle du collecteur de journaux pour déterminer si une adresse DHCP lui a été attribuée : cliquez sur la machine virtuelle, puis sélectionnez **Connect** (Connecter). L’invite de connexion doit s’afficher. Si vous voyez une adresse IP, vous pouvez vous connecter à la machine virtuelle à l’aide d’un outil Terminal Server/SSH.  Si vous ne voyez pas d’adresse IP, connectez-vous à l’aide des outils de connexion Hyper-V/VMWare et des informations d’identification que vous avez copiées quand vous avez créé le collecteur de journaux. Vous pouvez modifier le mot de passe et configurer la machine virtuelle à l’aide de l’utilitaire de configuration réseau en exécutant la commande suivante :
+11. Connectez-vous à la machine virtuelle du collecteur de journaux pour déterminer si une adresse DHCP lui a été attribuée : Cliquez sur la machine virtuelle, puis sélectionnez **Connecter**. L’invite de connexion doit s’afficher. Si vous voyez une adresse IP, vous pouvez vous connecter à la machine virtuelle à l’aide d’un outil Terminal Server/SSH.  Si vous ne voyez pas d’adresse IP, connectez-vous à l’aide des outils de connexion Hyper-V/VMWare et des informations d’identification que vous avez copiées quand vous avez créé le collecteur de journaux. Vous pouvez modifier le mot de passe et configurer la machine virtuelle à l’aide de l’utilitaire de configuration réseau en exécutant la commande suivante :
     ```
     sudo network_config
     ```
@@ -119,9 +120,9 @@ La première fois que vous vous connectez au collecteur de journaux et que vous 
 
 1.  Connectez-vous au collecteur de journaux via une connexion SSH, à l’aide des informations d’identification d’administrateur interactives qui vous ont été fournies dans le portail. S’il s’agit de votre première connexion à la console, vous devrez modifier le mot de passe, puis vous reconnecter. Si vous utilisez une session Terminal Server, vous devrez peut-être la redémarrer. )
 2.  Exécutez l’utilitaire de configuration de collecteur avec le jeton d’accès fourni quand vous avez créé le collecteur de journaux.```sudo collector_config <access token> ```
-3. Entrez le domaine de la console, par exemple : ```contoso.portal.cloudappsecurity.com```. Celui-ci est disponible à partir de l’URL qui s’affiche après la connexion au portail Cloud App Security. 
+3. Entrez le domaine de la console, par exemple : ```contoso.portal.cloudappsecurity.com``` Il est disponible à partir de l’URL qui s’affiche après la connexion au portail Cloud App Security. 
 
-4. Entrez le nom du collecteur de journaux que vous souhaitez configurer, par exemple : **CloudAppSecurityLogCollector01** ou **NewYork** à partir de l’image précédente.
+4. Entrez le nom du collecteur de journaux à configurer, par exemple : **CloudAppSecurityLogCollector01** ou **NewYork** à partir de l’image précédente.
 
 5.  Importez la configuration du collecteur de journaux à partir du portail, comme suit :  
   

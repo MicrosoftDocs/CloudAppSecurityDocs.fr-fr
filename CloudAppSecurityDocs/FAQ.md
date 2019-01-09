@@ -1,11 +1,11 @@
 ---
-title: Forum Aux Questions sur Cloud App Security | Microsoft Docs
+title: Forum Aux Questions - Cloud App Security | Microsoft Docs
 description: Cet article fournit les réponses aux questions fréquentes sur Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/12/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 081c2cf4-2750-4546-9490-4b65e87ae48c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 071c2aefff1b885f5f63ee6403a6228250cb8686
-ms.sourcegitcommit: e424807015f33aa359d9e29e13cc2faac5adcb92
+ms.custom: seodec18
+ms.openlocfilehash: 53477b78350b2377e71780769cf50c1df48bcbdf
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51560983"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53176669"
 ---
 # <a name="frequently-asked-questions"></a>Forum aux questions
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Cet article fournit les réponses aux questions fréquentes sur Cloud App Security.
 

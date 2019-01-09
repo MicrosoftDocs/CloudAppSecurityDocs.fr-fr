@@ -1,11 +1,11 @@
 ---
-title: Utilisation des filtres et des requêtes d’applications découvertes de Cloud App Security | Microsoft Docs
+title: Filtres et requêtes d’applications découvertes de Cloud App Security
 description: Cet article fournit une liste de filtres et de requêtes d’applications découvertes de Cloud App Security, et explique comment les utiliser.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 1a2d3aeb-4e28-4c73-804b-95e862b08e43
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e62fca426ddd1d3a6ec1adde6ccbdb5f2d0bf0f8
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: a91520a7334694b0e5a4416a9db5f22877ec55d9
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123854"
+ms.locfileid: "53175785"
 ---
 # <a name="discovered-app-filters-and-queries"></a>Filtres et requêtes d’applications découvertes
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Quand vous avez un grand nombre d’applications découvertes, il est pratique de les filtrer et de leur appliquer des requêtes. Cet article décrit les filtres disponibles et comment faire des requêtes sur vos applications découvertes.  
 
@@ -36,12 +37,12 @@ Il existe des filtres d’application découverte de base et avancés. Pour obte
 - **Balise d’application** : Indiquez si l’application a été approuvée, non approuvée ou non marquée. Par ailleurs, vous pouvez créer une balise personnalisée pour votre application, puis l’utiliser pour filtrer des types spécifiques d’applications. 
 - **Applications et domaines** : Permet de rechercher des applications spécifiques ou des applications utilisées dans des domaines spécifiques. 
 - **Catégories** : Le filtre de catégories, qui se trouve à gauche de la page, vous permet de rechercher des types d’applications selon des catégories d’applications. Voici des exemples de catégories : applications de réseaux sociaux, applications de stockage cloud et services d’hébergement. Vous pouvez sélectionner plusieurs catégories à la fois ou une seule catégorie, puis leur appliquer des filtres de base et des filtres avancés.
-- **Facteur de risque de conformité** : permet de rechercher un standard, une certification et une conformité spécifiques auxquels l’application doit être conforme (HIPAA, ISO 27001, SOC 2, PCI-DSS, etc.).
-- **Facteur de risque général** : permet de rechercher des facteurs de risque généraux, comme la popularité auprès des consommateurs, les paramètres régionaux du centre de données, etc.
-- **Score de risque** : permet de filtrer les applications par score de risque, et donc par exemple de se concentrer uniquement sur les applications très risquées. Vous pouvez également remplacer le score de risque défini par Cloud App Security. Pour plus d’informations, consultez [Utilisation du score de risque](risk-score.md).
+- **Facteur de risque de conformité** : Permet de rechercher un standard, une certification et une conformité spécifiques auxquels l’application doit être conforme (HIPAA, ISO 27001, SOC 2, PCI-DSS, etc.).
+- **Facteur de risque général** : Permet de rechercher des facteurs de risque généraux, comme la popularité auprès des consommateurs, les paramètres régionaux du centre de données, etc.
+- **Score de risque** : Permet de filtrer les applications par score de risque, et donc par exemple de se concentrer uniquement sur les applications très risquées. Vous pouvez également remplacer le score de risque défini par Cloud App Security. Pour plus d’informations, consultez [Utilisation du score de risque](risk-score.md).
 - **Facteur de risque de sécurité** : Permet de filtrer en fonction de mesures de sécurité spécifiques (comme le chiffrement au repos, l’authentification multifacteur, etc.).
-- **Utilisation** : permet de filtrer selon les statistiques d’utilisation de cette application. Il peut s’agir d’applications avec un nombre de **chargements de données** ou **d’utilisateurs** supérieur ou inférieur à une quantité spécifiée.
-- **Facteur de risque légal** : permet de filtrer selon l’ensemble des réglementations et des stratégies qui sont en place pour garantir la protection et la confidentialité des données des utilisateurs de l’application. Il peut s’agir par exemple des applications cloud prêtes pour le RGPD, de DMCA et de la stratégie de conservation des données.
+- **Utilisation** : Permet de filtrer selon les statistiques d’utilisation de cette application. Il peut s’agir d’applications avec un nombre de **chargements de données** ou **d’utilisateurs** supérieur ou inférieur à une quantité spécifiée.
+- **Facteur de risque légal** : Permet de filtrer selon l’ensemble des réglementations et des stratégies qui sont en place pour garantir la protection et la confidentialité des données des utilisateurs de l’application. Il peut s’agir par exemple des applications cloud prêtes pour le RGPD, de DMCA et de la stratégie de conservation des données.
 
 ### <a name="creating-and-managing-custom-app-tags"></a>Création et gestion des balises d’application personnalisées
 

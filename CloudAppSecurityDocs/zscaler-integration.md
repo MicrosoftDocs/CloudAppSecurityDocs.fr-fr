@@ -1,11 +1,11 @@
 ---
-title: Intégrer Cloud App Security à Zscaler pour une expérience Cloud Discovery fluide et un bloc automatisé d’applications approuvées | Microsoft Docs
-description: Intégrer Cloud App Security à Zscaler pour une expérience Cloud Discovery fluide et un bloc automatisé d’applications approuvées.
+title: Intégrer Cloud App Security à Zscaler
+description: Cet article décrit comment intégrer Microsoft Cloud App Security à Zscaler pour une expérience Cloud Discovery fluide et un bloc automatisé d’applications approuvées.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/14/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,23 +13,23 @@ ms.technology: ''
 ms.assetid: 8abeab8e-3b7a-46a7-bbec-9aaf26f778a8
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2935fc6a68f73e6d69c237c6efbab3971a6b0e6a
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 0acb52d2a22fe05a293db6158df13d174bad3e49
+ms.sourcegitcommit: 475dc75456f4683336e3e4875e3155677e4fb827
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123514"
+ms.lasthandoff: 12/16/2018
+ms.locfileid: "53450543"
 ---
-*S’applique à : Microsoft Cloud App Security*
-
 # <a name="integrate-cloud-app-security-with-zscaler"></a>Intégrer Cloud App Security à Zscaler
+
+*S’applique à : Microsoft Cloud App Security*
 
 Si vous travaillez avec Cloud App Security et Zscaler, vous pouvez intégrer les deux produits pour améliorer la sécurité de votre expérience Cloud Discovery. Zscaler, en tant que proxy cloud autonome, surveille le trafic de votre organisation, ce qui vous permet de définir des stratégies pour le blocage des transactions. Ensemble, Cloud App Security et Zscaler fournissent les fonctionnalités suivantes :
 
 - Déploiement fluide de Cloud Discovery : le fait d’utiliser Zscaler comme proxy de votre trafic avant de l’envoyer à Cloud App Security élimine la nécessité d’installer des collecteurs de journaux sur vos points de terminaison réseau pour activer Cloud Discovery.
 - Les fonctionnalités de blocage de Zscaler sont automatiquement appliquées sur les applications que vous définissez comme non approuvées dans Cloud App Security.
-- Améliorez votre portail Zscaler avec l’évaluation du risque de Cloud App Security pour 200 applications cloud de pointe qui peuvent être affichées directement dans le portail Zscaler.
-    
+- Améliorez votre portail Zscaler avec l’évaluation du risque de Cloud App Security pour 200 applications cloud de pointe, qui peuvent être affichées directement dans le portail Zscaler.
 
 ## <a name="prerequisites"></a>Prérequis
 
@@ -39,32 +39,27 @@ Si vous travaillez avec Cloud App Security et Zscaler, vous pouvez intégrer les
 
 ## <a name="deployment"></a>Déploiement
 
-1. Dans le portail Zscaler, effectuez les étapes nécessaires pour terminer [l’intégration du partenaire Zscaler avec Microsoft Cloud App Security](https://help.zscaler.com/zia/configuring-mcas-integration).
-2. Dans le portail Cloud App Security, effectuez les étapes d’intégration suivantes :
+1. Dans le portail Zscaler, procédez aux étapes permettant de terminer [l’intégration du partenaire Zscaler à Microsoft Cloud App Security](https://help.zscaler.com/zia/configuring-mcas-integration).
+2. Dans le portail Cloud App Security, effectuez les étapes d’intégration suivantes :
     1. Cliquez sur la roue dentée des paramètres et sélectionnez **Paramètres Cloud Discovery**. 
     2. Cliquez sur l’onglet **Chargement automatique des journaux**, puis cliquez sur **Ajouter une source de données**.
     3. Dans la page **Ajouter une source de données**, entrez les paramètres suivants :
-        - Nom = NSS
-        - Source = Zscaler QRadar LEEF
-        - Type de récepteur = Syslog - UDP
 
-          ![source de données zscaler](./media/data-source-zscaler.png)
+       - Nom = NSS
+       - Source = Zscaler QRadar LEEF
+       - Type de récepteur = Syslog - UDP
+
+         ![source de données Zscaler](./media/data-source-zscaler.png)
 
     4. Cliquez sur **Afficher un exemple du fichier journal attendu**. Puis cliquez sur **Télécharger l’exemple de journal** pour afficher un exemple de journal Discovery et vous assurer qu’il correspond à vos journaux.<br>
-    
-3. Examinez les applications cloud découvertes sur votre réseau, consultez [Utilisation de Cloud Discovery](working-with-cloud-discovery-data.md) pour obtenir plus d’informations et connaître les étapes d’investigation.
- 
-4. Toute application que vous définissez comme non approuvée dans Cloud App Security est soumise à un test Ping par Zscaler toutes les deux heures, puis bloquée automatiquement par Zscaler. Pour plus d’informations sur la non-approbation des applications, consultez [Approbation/non-approbation d’une application](governance-discovery.md#BKMK_SanctionApp).
-    
-    
-    
-    
-    
 
- 
-## <a name="see-also"></a>Voir aussi  
-[Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)   
+3. Examinez les applications cloud découvertes sur votre réseau. Pour plus d’informations et de méthodes d’examen, consultez la page [Utilisation de Cloud Discovery](working-with-cloud-discovery-data.md).
+
+4. Toute application que vous définissez comme non approuvée dans Cloud App Security est soumise à un test Ping par Zscaler toutes les deux heures, puis bloquée automatiquement par Zscaler. Pour plus d’informations sur la non-approbation des applications, consultez [Approbation/non-approbation d’une application](governance-discovery.md#BKMK_SanctionApp).
+
+## <a name="next-steps"></a>Étapes suivantes
+
+[Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)
 
 [Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)  
-  
   

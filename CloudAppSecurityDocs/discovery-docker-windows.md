@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/16/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,28 +13,28 @@ ms.technology: ''
 ms.assetid: ff73a393-da43-4954-8b02-38d2a48d39b3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 37eab4a159d0791f5cc84a42eb7db3da4797ff92
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.openlocfilehash: 44cea3dcb50132a79db54d6b741ade1784014e09
+ms.sourcegitcommit: 475dc75456f4683336e3e4875e3155677e4fb827
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124398"
+ms.lasthandoff: 12/16/2018
+ms.locfileid: "53450645"
 ---
 # <a name="docker-on-windows-on-premises"></a>Docker sur Windows en local
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Vous pouvez configurer le chargement automatique des journaux pour des rapports continus dans Cloud App Security à l’aide d’un Docker sur Windows.
 
 ## <a name="technical-requirements"></a>Spécifications techniques
 
-- Système d’exploitation : Windows 10 (Fall Creators Update) et Windows Server, version 1709+ 
+- Système d’exploitation : Windows 10 (Fall Creators Update) et Windows Server, version 1709+ 
 
-- Espace disque : 250 Go
+- Espace disque : 250 Go
 
-- Processeur : 2
+- UC : 2
 
-- RAM : 4 Go
+- RAM : 4 Go
 
 - Configurez votre pare-feu, comme décrit dans [Configuration réseau requise](network-requirements.md#log-collector)
 
@@ -48,7 +48,7 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
 
 ## <a name="set-up-and-configuration"></a>Installation et configuration  
 
-### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>Étape 1 : configuration du portail web  - définir les sources de données et les lier à un collecteur de journaux
+### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>Étape 1 – Configuration du portail web : Définir les sources de données et les lier à un collecteur de journaux
 
 1. Accédez à la page de paramètres **Chargement automatique de journal**. 
 
@@ -126,7 +126,7 @@ Cette commande installe le client Docker sur votre ordinateur. L’installation 
    ![Créer le collecteur de journaux](./media/windows7.png)
 8. Vérifiez que le collecteur s’exécute correctement à l’aide de la commande suivante : `docker logs <collector_name>`
 
-Vous devez voir le message **Opération terminée**
+Vous devez recevoir le message suivant : **Opération correctement terminée.**
 
   ![ubuntu8](./media/ubuntu8.png)
 
@@ -160,12 +160,12 @@ Vérifiez que les journaux sont chargés sur Cloud App Security et que les rappo
 
 Pour vérifier que le programme d’installation de Docker est signé par Microsoft :
 1. Cliquez avec le bouton droit sur le fichier et sélectionnez **Propriétés**.
-2. Cliquez sur **Général** et vérifiez la présence du message **Cette signature numérique est valide**.  
-3. Cliquez sur **Signatures numériques** et vérifiez que Microsoft figure dans la **Liste des signatures**.  
+2. Cliquez sur **Signatures numériques** et vérifiez la présence du message **Cette signature numérique est valide**.  
+3. Vérifiez que l’option **Microsoft Corporation** figure en tant qu’entrée unique sous **Nom du signataire**.  
 
 ![Signature numérique valide](./media/digital-signature-successful.png)
 
-Si la signature numérique n’est pas valide, le message suivant s’affiche :
+Si la signature numérique n’est pas valide, vous recevez le message **Cette signature numérique n’est pas valide** :
 
 ![La signature numérique n’est pas valide](./media/digital-signature-unsuccessful.png)
 

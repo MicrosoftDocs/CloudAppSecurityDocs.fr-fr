@@ -1,11 +1,11 @@
 ---
-title: Définir les préférences d’administration | Microsoft Docs
+title: Définir les préférences d’administration – Cloud App Security | Microsoft Docs
 description: Cet article fournit des instructions sur la définition des préférences d’administration dans Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 85cae50d-f571-4907-9600-da4cc187b43b
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7b975907e6a2d1b78a61fd5e1960496b44ade234
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 09b9be9508f6dcb1f76bed691695050ab7d43a66
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53122817"
+ms.locfileid: "53176792"
 ---
 # <a name="admin-user-settings"></a>Paramètres utilisateur administrateur
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Microsoft Cloud App Security vous permet de personnaliser vos paramètres utilisateur administrateur. Les paramètres de notification permettent aux administrateurs de spécifier s’ils souhaitent recevoir des notifications par e-mail ou par SMS pour les alertes. 
 
