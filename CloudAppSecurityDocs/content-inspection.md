@@ -5,76 +5,46 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2018
+ms.date: 1/6/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: 2401adbc-0011-4938-9e3a-a4c719a2f619
+ms.assetid: c67a387f-8c88-4018-9e80-0fb1455cf768
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 10af8ae009e425f2795818dd2d9089c76814685b
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: 7af4c6f3cc82accdd231f4d02403948698dd67ee
+ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53177162"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54059263"
 ---
-# <a name="built-in-content-inspection"></a>Inspection du contenu intégré
+# <a name="content-inspection"></a>Inspection du contenu
 
 *S’applique à : Microsoft Cloud App Security*
 
-Cet article décrit le processus suivi par Microsoft Cloud App Security lors de l’exécution de l’inspection du contenu DLP intégrée sur les données de votre cloud. 
+
+Une fois que l’inspection du contenu est activée, vous pouvez choisir d’utiliser des expressions prédéfinies ou de rechercher d’autres expressions personnalisées.  
+
+Vous pouvez spécifier une expression régulière pour exclure un fichier des résultats. Cette option s’avère très utile si vous avez un standard interne de mots clés de classification à exclure de la stratégie.  
+   
+Vous pouvez décider de définir le nombre minimal de violations de contenu à atteindre avant que le fichier ne soit considéré comme une violation. Par exemple, vous pouvez choisir 10 si vous souhaitez être alerté pour les fichiers comportant au moins 10 numéros de carte de crédit détectés dans leur contenu.  
+
+Quand du contenu correspond à l’expression sélectionnée, le texte de la violation est remplacé par des caractères « X ». Par défaut, les violations sont masquées. Seul leur contexte, 100 caractères avant et après la violation, est affiché. Les chiffres dans le contexte de l’expression sont remplacés par des caractères « # » et ne sont jamais stockés dans Cloud App Security. Vous pouvez sélectionner l’option **Montrer les quatre derniers caractères d’une violation** pour annuler le masquage des quatre derniers caractères de la violation elle-même. Il est nécessaire de définir les types de données que l’expression régulière recherche : contenu, métadonnées et/ou nom de fichier. Par défaut, elle recherche le contenu et les métadonnées. 
 
 
-L’inspection du contenu Cloud App Security fonctionne comme suit :
-1. Cloud App Security effectue une analyse en quasi temps réel des lecteurs et événements qui sont détectés comme étant nouveaux ou modifiés.
-2. Une fois cette analyse terminée, Cloud App Security effectue une analyse continue de tous les fichiers pertinents dans tous les lecteurs.  
+## <a name="content-inspection-for-protected-files"></a>Inspection du contenu pour les fichiers protégés
 
-Les fichiers de l’analyse en quasi temps réel et les fichiers de l’analyse continue sont ajoutés à la file d’attente pour l’inspection. L’ordre des fichiers dans la file d’attente d’analyse est défini selon l’activité sur les fichiers et l’analyse de vos lecteurs. Les fichiers sont analysés seulement si les métadonnées des fichiers indiquent qu’il s’agit d’un type MIME pris en charge. Cette analyse concerne les fichiers appropriés pour l’analyse des données (documents, images, présentations, feuilles de calcul, fichiers texte et compressés/archives).  
+Cloud App Security permet aux administrateurs d’accorder l’autorisation à Cloud App Security de déchiffrer les fichiers chiffrés et d’analyser leur contenu à la recherche de violations.
 
-Une fois qu’un fichier est analysé, les actions suivantes se produisent :
+Afin d’octroyer les autorisations nécessaires à Cloud App Security :
 
-1. Cloud App Security applique toutes vos stratégies personnalisées qui sont liées aux métadonnées et non au contenu proprement dit, par exemple une stratégie qui vous avertit quand la taille des fichiers dépasse 20 Mo ou lorsque des fichiers docx sont enregistrés dans OneDrive. 
-
-2. Si une stratégie nécessite une inspection du contenu et que le fichier répond aux critères d’inspection du contenu, le contenu est mis en file d’attente pour inspection. La longueur de la file d’attente dépend de la taille du client et du nombre de fichiers qui nécessitent une analyse. 
-
-3. À ce stade, vous pouvez afficher l’état de l’inspection du contenu en accédant à **Examiner** > **Fichiers** et en cliquant sur un fichier. Dans le tiroir de fichier qui s’ouvre avec les détails du fichier, **l’état d’inspection du contenu** indique **Terminé**, **En attente**, **Non applicable** (si le type de fichier n’est pas pris en charge) ou un message d’échec. Pour plus d’informations sur les messages d’échec relatifs à l’analyse du contenu, consultez [Résolution des problèmes d’inspection du contenu](troubleshooting-content-inspection.md).
-
-> [!NOTE]
-> Si vous voyez un tiret dans l’état d’analyse, cela signifie que le fichier ne figure pas dans une file d’attente en vue d’être analysé. Pour plus d’informations sur la définition de stratégies d’inspection du contenu, consultez [Stratégies de fichier](data-protection-policies.md).
-
-Les stratégies d’analyse d’inspection du contenu intégrées peuvent rechercher les éléments suivants :
-
-- Adresses e-mail 
-- Numéros de carte de crédit 
-  - Toutes les sociétés émettrices de cartes de crédit (Visa, MasterCard, American Express, Diners Club, Discover, JCB, Dankort, UnionPay) 
-  - Délimiteurs (espace, point ou tiret)
-  - Cette analyse inclut également la validation de Luhn
-- Codes SWIFT
-- Numéros de passeports internationaux
-- Numéros de permis de conduire
-- Dates
-- Numéros d’acheminement bancaire ABA
-- Codes d’identification bancaire
-- Numéros de demande d’assurance-maladie (HICN) HIPAA
-- Numéros d’identification de prestataire national (NPI) HIPAA
-- Dates de naissance et noms complets dans le cadre des informations de santé protégées (PHI)
-- Numéros de permis de conduire et d’identité de l’État de Californie
-- Numéros de permis de conduire
-- Adresses personnelles
-- Passeports au format carte
-- Numéros de sécurité sociale
-
-## <a name="supported-languages"></a>Langues prises en charge
-
-Le moteur d’inspection du contenu Cloud App Security :
--   Prend en charge tous les caractères Unicode
--   Couvre plus de 1 000 types de fichiers
--   Plusieurs langues sont prises en charge, tout particulièrement dans les fichiers qui utilisent des jeux de caractères Unicode. Veillez à définir vos stratégies de façon à prendre en compte ces langues. Par exemple, si vous recherchez des mots clés, vous devez entrer les mots clés pour les langues que vous prévoyez d’utiliser.
--   Dans les types de fichiers texte qui utilisent un codage non-Unicode, par exemple le codage chinois GB2312, la comparaison avec les mots clés chinois Unicode ne fonctionnera pas comme attendu.
--   Pour les types de fichiers qui s’appuient sur des bibliothèques tierces, la mise en correspondance des chaînes et des mots ne fonctionnera peut-être pas toujours comme prévu. C’est ce qui arrive fréquemment avec les fichiers (par exemple, les fichiers binaires) dans lesquels l’inspection du contenu s’appuie sur des bibliothèques tierces qui renvoient des chaînes en Java pour les jeux de caractères et de langues.
+1.  Accédez à **Paramètres**, puis **Azure Information Protection**.
+2.  Activez **Inspecter les fichiers protégés**.
+3. Suivez les instructions pour accorder les autorisations requises dans Azure Active Directory.
+4. Vous pouvez configurer les paramètres pour chaque stratégie de fichier afin de déterminer quelles stratégies analyseront les fichiers protégés.
 
 
 

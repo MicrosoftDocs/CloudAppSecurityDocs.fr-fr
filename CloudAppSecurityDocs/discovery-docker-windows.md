@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: ff73a393-da43-4954-8b02-38d2a48d39b3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 44cea3dcb50132a79db54d6b741ade1784014e09
-ms.sourcegitcommit: 475dc75456f4683336e3e4875e3155677e4fb827
+ms.openlocfilehash: 37eed2eb11dfd3f77a1cf26281af6d867c9e9c4d
+ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/16/2018
-ms.locfileid: "53450645"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54059464"
 ---
 # <a name="docker-on-windows-on-premises"></a>Docker sur Windows en local
 
@@ -146,7 +146,7 @@ Vous pouvez aussi accéder au **journal de gouvernance** et vérifier que les jo
 
 Si vous rencontrez des problèmes durant le déploiement, consultez  [Dépannage de Cloud Discovery](troubleshooting-cloud-discovery.md).
 
-### <a name="optional---create-custom-continuous-reports"></a>Facultatif : Créer des rapports continus personnalisés
+### Facultatif : Créer des rapports continus personnalisés <a name="continuous-reports"></a>
 
 Vérifiez que les journaux sont chargés sur Cloud App Security et que les rapports sont générés. Après vérification, créez des rapports personnalisés. Vous pouvez créer des rapports de découverte personnalisés basés sur les groupes d’utilisateurs Azure Active Directory. Par exemple, pour voir l’utilisation cloud de votre service marketing, importez le groupe marketing à l’aide de la fonctionnalité d’importation des groupes d’utilisateurs. Créez ensuite un rapport personnalisé pour ce groupe. Vous pouvez également personnaliser un rapport en fonction d’une balise d’adresse IP ou de plages d’adresses IP.
 

@@ -1,12 +1,12 @@
 ---
 title: Appliquer automatiquement des étiquettes de classification Azure Information Protection
-description: Cet article explique comment appliquer automatiquement des étiquettes de classification Azure Information Protection dans Microsoft Cloud App Security.
+description: Ce tutoriel explique comment appliquer automatiquement des étiquettes de classification Azure Information Protection dans Microsoft Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/14/2018
-ms.topic: conceptual
+ms.date: 1/3/2019
+ms.topic: tutorial
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
@@ -14,27 +14,25 @@ ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 85dd32e95cfa866b7ac1f75f87685466b1bcb3db
-ms.sourcegitcommit: 420a0119513e3f4a8651f6a9e66c56fe442a31c0
+ms.openlocfilehash: 12c3e913a66813f234040272eba638c9dae5e9f5
+ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53347323"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54059381"
 ---
-# <a name="automatically-apply-azure-information-protection-classification-labels"></a>Appliquer automatiquement des étiquettes de classification Azure Information Protection
+# <a name="tutorial-automatically-apply-azure-information-protection-classification-labels"></a>Didacticiel : Appliquer automatiquement des étiquettes de classification Azure Information Protection
 
 *S’applique à : Microsoft Cloud App Security*
 
-Dans un monde parfait, tous les employés comprennent l’importance de la protection des informations et respectent vos stratégies. Mais dans le monde réel, il est probable qu’un partenaire qui travaille avec la comptabilité charge un document dans votre référentiel Box avec des autorisations incorrectes. Une semaine plus tard, vous réalisez que des informations confidentielles de votre entreprise ont été exposées à vos concurrents.
+Dans un monde parfait, tous les employés comprennent l’importance de la protection des informations et respectent vos stratégies. Mais dans le monde réel, il est probable qu’un partenaire qui travaille avec la comptabilité charge un document dans votre référentiel Box avec des autorisations incorrectes. Une semaine plus tard, vous réalisez que des informations confidentielles de votre entreprise ont été exposées à vos concurrents. Microsoft Cloud App Security vous permet d’éviter ce genre de catastrophe avant qu’elle n’arrive. Cette fonctionnalité est disponible pour Box, SharePoint et OneDrive Entreprise. L’application d’une étiquette Azure Information Protection est l’un des éléments figurant dans la longue liste [des actions de gouvernance](governance-actions.md) disponibles.
 
-Microsoft Cloud App Security vous permet d’éviter ce genre de catastrophe avant qu’elle n’arrive.
+Ce tutoriel vous aide à identifier les autorisations publiques définies sur un document enregistré dans votre stockage cloud, afin de vous avertir en cas de violation. En outre, vous pouvez appliquer automatiquement votre étiquette de classification Azure Information Protection **Confidentiel** pour renforcer le chiffrement des fichiers.
 
-Microsoft Cloud App Security identifie la présence d’autorisations publiques sur un document qui est enregistré dans votre compte Box, puis utilise un moteur de classification qui identifie la présence d’informations confidentielles dans ce document. Une alerte est envoyée pour vous informer que ce problème s’est produit. Cloud App Security applique alors automatiquement votre étiquette de classification Azure Information Protection **Confidentiel** pour renforcer le chiffrement du fichier.
+> [!div class="checklist"]
+> * Configurer la protection des données 
+> * Valider votre stratégie
 
->[!NOTE]
->
-> - L’application d’une étiquette Azure Information Protection est l’un des éléments figurant dans la longue liste [des actions de gouvernance](governance-actions.md) disponibles.
-> - Cette fonctionnalité est disponible pour Box, SharePoint et OneDrive Entreprise.
 
 ## <a name="enhanced-data-level-encryption-protection"></a>Protection par chiffrement renforcé au niveau des données
 
@@ -55,7 +53,7 @@ Utilisez Cloud App Security avec Azure Information Protection pour incorporer de
 - [Activez Cloud App Security et Azure Information Protection](azip-integration.md) pour votre locataire.
 - [Connectez Box](connect-box-to-microsoft-cloud-app-security.md) à Cloud App Security.
 
-## <a name="setting-up-data-protection"></a>Configuration de la protection des données
+## <a name="set-up-data-protection"></a>Configurer la protection des données
 
 Définissons une stratégie qui recherche des numéros de carte de crédit dans des fichiers stockés dans votre compte Box. Lorsque des fichiers sont trouvés, appliquez automatiquement une étiquette Azure Information Protection et contrôlez les actions effectuées sur tous les fichiers portant cette étiquette.
 
@@ -86,7 +84,7 @@ Définissons une stratégie qui recherche des numéros de carte de crédit dans 
 
     2. Pour examiner une correspondance, cliquez sur celle-ci et ouvrez le tiroir de fichier. Dans le tiroir, vous pouvez voir les autres stratégies correspondant à ce fichier.
 
-## <a name="validating-your-policy"></a>Valider votre stratégie
+## <a name="validate-your-policy"></a>Valider votre stratégie
 
 1. Pour simuler une alerte, accédez à votre compte Box et tentez d’accéder à un fichier dans le dossier **Données client**.
 2. Accédez au rapport de stratégie. Une correspondance de stratégie de fichier devrait apparaître sous peu. 

@@ -1,12 +1,12 @@
 ---
 title: Protéger les fichiers avec la mise en quarantaine administrateur Cloud App Security
-description: Cet article décrit le scénario d’utilisation de la mise en quarantaine administrateur pour contrôler les violations de données.
+description: Ce tutoriel décrit le scénario d’utilisation de la mise en quarantaine administrateur pour contrôler les violations de données.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/14/2018
-ms.topic: conceptual
+ms.date: 1/6/2019
+ms.topic: tutorial
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
@@ -14,24 +14,33 @@ ms.assetid: 3fc04cfb-ad4c-4ac2-980a-ee9f4c740d88
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 82398a5fad8f2d5b3da67a7932b9df6857dd9355
-ms.sourcegitcommit: 420a0119513e3f4a8651f6a9e66c56fe442a31c0
+ms.openlocfilehash: 825645f44ff2d7dd0d6ba289608f10a23ff62dea
+ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53347257"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54059351"
 ---
-# <a name="protecting-your-files-with-admin-quarantine"></a>Protection de vos fichiers avec la mise en quarantaine administrateur
+# <a name="tutorial-protect-files-with-admin-quarantine"></a>Didacticiel : Protéger les fichiers avec la mise en quarantaine administrateur
 
 *S’applique à : Microsoft Cloud App Security*
 
-Les [stratégies de fichier](data-protection-policies.md) sont un excellent outil pour rechercher les menaces sur vos stratégies de protection des informations. Par exemple, créez des stratégies de fichier qui recherchent les emplacements où les utilisateurs ont stocké des informations sensibles, des numéros de carte de crédit et des fichiers ICAP tiers dans votre cloud. Avec Microsoft Cloud App Security, non seulement vous pouvez détecter ces fichiers indésirables stockés dans votre cloud qui vous rendent vulnérable, mais vous pouvez aussi prendre des mesures immédiates pour les arrêter dans leur action et verrouiller les fichiers qui représentent une menace. La **Mise en quarantaine administrateur** vous permet de protéger vos fichiers dans le cloud, de corriger les problèmes et d’éviter que des fuites se produisent à l’avenir.
+Les [stratégies de fichier](data-protection-policies.md) sont un excellent outil pour rechercher les menaces sur vos stratégies de protection des informations. Par exemple, créez des stratégies de fichier qui recherchent les emplacements où les utilisateurs ont stocké des informations sensibles, des numéros de carte de crédit et des fichiers ICAP tiers dans votre cloud. 
+
+Ce tutoriel vous aide à utiliser Microsoft Cloud App Security pour détecter les fichiers indésirables stockés dans votre cloud qui vous rendent vulnérable, et vous aider à prendre des mesures immédiates pour les arrêter et verrouiller les fichiers qui représentent une menace à l’aide de la **mise en quarantaine administrateur**  pour protéger vos fichiers dans le cloud, corriger les problèmes et empêcher les fuites futures.
+
+
+
+> [!div class="checklist"]
+> * Comprendre le fonctionnement de la mise en quarantaine 
+> * Configurer la mise en quarantaine administrateur
+
+
+## <a name="understand-how-quarantine-works"></a>Comprendre le fonctionnement de la mise en quarantaine 
 
 >[!NOTE] 
 > - Il s’agit d’une fonctionnalité en préversion.
 > - Pour obtenir la liste des applications qui prennent en charge la mise en quarantaine administrateur, consultez la liste des [actions de gouvernance](governance-actions.md).
- 
-## <a name="how-quarantine-works"></a>Comment fonctionne la mise en quarantaine 
 
 1. Quand un fichier correspond à une stratégie, l’option **Mise en quarantaine administrateur** est disponible pour le fichier.
 

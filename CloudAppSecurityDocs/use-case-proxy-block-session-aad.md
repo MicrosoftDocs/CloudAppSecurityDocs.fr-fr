@@ -1,12 +1,12 @@
 ---
 title: Bloquer les téléchargements venant d’appareils non gérés avec le contrôle d’application par accès conditionnel Cloud App Security
-description: Cet article décrit le scénario permettant de protéger votre organisation contre les téléchargements de données sensibles par des appareils non gérés en utilisant les fonctionnalités du proxy inversé Azure AD.
+description: Ce tutoriel décrit le scénario permettant de protéger votre organisation contre les téléchargements de données sensibles sur des appareils non gérés en utilisant les fonctionnalités du proxy inversé Azure AD.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/14/2018
-ms.topic: conceptual
+ms.date: 1/4/2019
+ms.topic: tutorial
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
@@ -14,21 +14,26 @@ ms.assetid: 06238ebc-2088-4372-9412-96cceaf3b145
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: aab9063ad057abfe3dce3860494b1d20abe74f0f
-ms.sourcegitcommit: 420a0119513e3f4a8651f6a9e66c56fe442a31c0
+ms.openlocfilehash: 25f08416549e8dbcf5cdb4dc15f0e2412381366e
+ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53347343"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54059285"
 ---
-# <a name="block-downloads-of-sensitive-information-using-microsoft-cloud-app-security-conditional-access-app-control"></a>Blocage des téléchargements d’informations sensibles avec le contrôle d’application par accès conditionnel Microsoft Cloud App Security
+# <a name="tutorial-block-download-of-sensitive-information"></a>Didacticiel : Bloquer le téléchargement d’informations sensibles 
 
 *S’applique à : Microsoft Cloud App Security*
 
 >[!div class="step-by-step"]
 [« PRÉCÉDENT : Guide pratique pour créer une stratégie d’accès](access-policy-aad.md)
 
-De nos jours, l’administration informatique est coincée entre le marteau et l’enclume. Vous voulez donner à vos employés les moyens d’être productifs. Ce qui implique de les autoriser à accéder à des applications pour qu’ils puissent travailler à tout moment, depuis n’importe quel appareil. Mais vous devez également protéger les ressources de l’entreprise, notamment les informations propriétaires et privilégiées. Comment permettre à vos employés d’accéder à vos applications cloud tout en protégeant vos données ? **Ce cas d’usage vous permet de bloquer les téléchargements effectués par des utilisateurs qui ont accès à vos données sensibles dans des applications cloud d’entreprise depuis des appareils non gérés ou des emplacements réseau hors entreprise.**
+De nos jours, l’administration informatique est coincée entre le marteau et l’enclume. Vous voulez donner à vos employés les moyens d’être productifs. Ce qui implique de les autoriser à accéder à des applications pour qu’ils puissent travailler à tout moment, depuis n’importe quel appareil. Mais vous devez également protéger les ressources de l’entreprise, notamment les informations propriétaires et privilégiées. Comment permettre à vos employés d’accéder à vos applications cloud tout en protégeant vos données ? **Ce tutoriel vous permet de bloquer les téléchargements effectués par des utilisateurs qui ont accès à vos données sensibles dans des applications cloud d’entreprise depuis des appareils non gérés ou des emplacements réseau hors entreprise.**
+
+> [!div class="checklist"]
+> * Créer une stratégie de blocage de téléchargement pour les appareils non gérés
+> * Valider votre stratégie
+
 
 ## <a name="the-threat"></a>La menace
 

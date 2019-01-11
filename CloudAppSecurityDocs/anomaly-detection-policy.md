@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2018
+ms.date: 1/3/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.assetid: ab9bc377-d2f5-4f4c-a419-f1728a15d1c7
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6c0e3ac17aa5bc8d3cb5d7b32d4556c3d5cd0a33
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: 5c207fb951a1bd8120da694e07232c3851486b9c
+ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53176781"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54059377"
 ---
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>Obtenir instantanément une détection des anomalies et une analytique comportementale
 
@@ -71,6 +71,8 @@ Les stratégies de détection d’anomalie suivantes sont disponibles :
 - Cette détection permet de déterminer si un employé en fin de contrat continue d’effectuer des actions sur vos applications SaaS. Étant donné que les données montrent que le plus grand risque de menaces internes vient des employés partis en mauvais termes, il est important de garder un œil sur l’activité des comptes des employés dont le contrat de travail est terminé. Parfois, quand un employé quitte une entreprise, son compte est déprovisionné des applications d’entreprise, mais dans de nombreux cas, il conserve quand même un accès à certaines ressources de l’entreprise. Ces menaces sont encore plus importantes quand il s’agit de comptes privilégiés, puisque le risque de dommage causé par un ancien administrateur est par définition plus élevé.
 Cette détection exploite la capacité de Cloud App Security à surveiller le comportement de l’utilisateur dans toutes les applications, ce qui permet d’identifier l’activité normale de l’utilisateur, le fait que le compte a été résilié et l’activité réelle dans d’autres applications. Par exemple, un employé dont le compte Azure AD a été résilié, mais qui a encore accès à l’infrastructure AWS de l’entreprise, est en mesure de provoquer des dégâts à grande échelle.  
 
+La détection recherche les utilisateurs dont le compte a été clôturé dans Azure AD, mais qui effectuent encore des activités sur d’autres plateformes comme AWS ou Salesforce. Cela est particulièrement pertinent pour les utilisateurs qui utilisent un autre compte (pas leur compte d’authentification unique principal) pour gérer les ressources, étant donné que ces comptes ne sont souvent pas clôturés lorsqu’un utilisateur quitte l’entreprise.
+
 **Activité à partir d’adresses IP suspectes**
 - Cette détection identifie que des utilisateurs étaient actifs à partir d’une adresse IP qui a été identifiée comme à risque par Microsoft Threat Intelligence. Ces adresses IP sont impliquées dans des activités malveillantes, comme Botnet C&C, et peuvent être le signe de compte compromis. Cette détection utilise un algorithme d’apprentissage automatique qui réduit les « faux positifs », comme les adresses IP mal balisées qui sont couramment utilisées par les utilisateurs de l’organisation.
 
@@ -114,7 +116,14 @@ Vous pouvez lancer des actions de correction automatisées sur les alertes gén�
 2. Dans la fenêtre **Modifier la stratégie de détection d’anomalie** qui s’ouvre, sous **Gouvernance**, définissez les actions de correction que vous souhaitez pour chaque application connectée ou pour toutes les applications. 
 3. Cliquez sur **Mettre à jour**.
 
- 
+## <a name="tune-anomaly-detection-policies"></a>Paramétrer des stratégies de détection d’anomalie
+
+Pour que le moteur de détection d’anomalie supprime ou déclenche des alertes en fonction de vos préférences :
+   - Dans la stratégie Voyage impossible, vous pouvez définir le curseur de sensibilité pour déterminer le niveau d’un comportement anormal nécessaire avant qu’une alerte ne soit déclenchée. Par exemple, si vous le définissez sur Faible, il supprime les alertes Voyage impossible des emplacements courants d’un utilisateur, et si vous le définissez sur Élevé, il déclenche ce type d’alerte. 
+
+   - Vous pouvez également configurer si les alertes pour Activité à partir de pays peu fréquents, d’adresses IP anonymes, d’adresses IP suspectes et Voyage impossible doivent analyser les échecs et les réussites de connexion ou juste les réussites de connexion. 
+   
+   
 ## <a name="scope-anomaly-detection-policies"></a>Délimiter des stratégies de détection d’anomalie
 
 Chaque stratégie de détection d’anomalie peut être délimitée indépendamment. Vous pouvez donc inclure et exclure les utilisateurs et les groupes de votre choix.

@@ -14,18 +14,22 @@ ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 590027f7769637188fc77aad882cedbc41158012
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: bbe1bd310f7c661ba631f088a474baf536fb8d32
+ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53177332"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54059459"
 ---
 # <a name="azure-information-protection-integration"></a>Intégration d’Azure Information Protection
 
 *S’applique à : Microsoft Cloud App Security*
 
 Microsoft Cloud App Security vous permet d’appliquer des étiquettes de classification Azure Information Protection automatiquement, avec ou sans protection, à des fichiers, en tant qu’action de gouvernance de stratégie de fichier. Vous pouvez également rechercher des fichiers en filtrant sur l’étiquette de classification appliquée dans le portail Cloud App Security. L’utilisation de classifications accroît la visibilité et le contrôle de vos données sensibles dans le cloud. Pour intégrer Azure Information Protection à Cloud App Security, il suffit de cocher une seule case. 
+
+> [!NOTE]
+> Cet article est également approprié pour les étiquettes unifiées Microsoft Information Protection si vous avez déjà [migré vos étiquettes de classification pour le Centre de conformité et de sécurité Office 365](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels). Si vous n’avez pas migré vos étiquettes de classification existantes et que vous commencez à créer de nouvelles étiquettes dans le Centre de conformité et de sécurité Office 365, Cloud App Security utilise uniquement les étiquettes préexistantes configurées dans le portail Azure Information Protection.
+
 
 En intégrant Azure Information Protection à Cloud App Security, vous pouvez utiliser toute la puissance des services et des fichiers sécurisés dans votre cloud, notamment :
 - La possibilité d’appliquer des étiquettes de classification en tant qu’action de gouvernance aux fichiers qui correspondent à des stratégies spécifiques
