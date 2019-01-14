@@ -1,12 +1,12 @@
 ---
 title: Utilisation des applications découvertes dans Cloud App Security
-description: Cet article décrit le processus d’identification et de correction des applications Cloud Discovery à risque dans Cloud App Security.
+description: Ce démarrage rapide décrit le processus d’identification et de correction des applications Cloud Discovery à risque dans Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2018
-ms.topic: conceptual
+ms.date: 1/10/2019
+ms.topic: quickstart
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
@@ -14,18 +14,18 @@ ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a70dc1796304a32606e54d4e9e93f6cf3169c6a6
-ms.sourcegitcommit: 475dc75456f4683336e3e4875e3155677e4fb827
+ms.openlocfilehash: 589f0d11d7fac47a4080926f6aa4f654c17deb34
+ms.sourcegitcommit: 076705cc9684fe5fb35c33a51e3319ba2ccfd24e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/16/2018
-ms.locfileid: "53450583"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54060171"
 ---
-# <a name="working-with-discovered-apps"></a>Utilisation des applications découvertes
+# <a name="quickstart-work-with-discovered-apps"></a>Démarrage rapide : Utiliser des applications découvertes
 
 *S’applique à : Microsoft Cloud App Security*
 
-Le tableau de bord Cloud Discovery est conçu pour vous donner plus d’informations sur l’utilisation des applications cloud dans votre organisation. Il fournit une vue d’ensemble en un clin d’œil des types d’applications utilisés, des alertes ouvertes et des niveaux de risque des applications dans votre organisation. Il vous montre également les principaux utilisateurs des applications et fournit un plan du lieu du siège social d’une application. Le tableau de bord Cloud Discovery a de nombreuses options pour filtrer les données. Le filtrage vous permet de générer des vues spécifiques selon ce qui vous intéresse le plus, avec des graphiques faciles à comprendre pour vous donner une vision globale en un clin d’œil.
+Ce démarrage rapide vous fournit des informations de prise en main sur la façon de surveiller et de gérer des applications découvertes. Le tableau de bord Cloud Discovery est conçu pour vous donner plus d’informations sur l’utilisation des applications cloud dans votre organisation. Il fournit une vue d’ensemble en un clin d’œil des types d’applications utilisés, des alertes ouvertes et des niveaux de risque des applications dans votre organisation. Il vous montre également les principaux utilisateurs des applications et fournit un plan du lieu du siège social d’une application. Le tableau de bord Cloud Discovery a de nombreuses options pour filtrer les données. Le filtrage vous permet de générer des vues spécifiques selon ce qui vous intéresse le plus, avec des graphiques faciles à comprendre pour vous donner une vision globale en un clin d’œil.
 
 ![tableau de bord Cloud Discovery](./media/cloud-discovery-dashboard.png)
 

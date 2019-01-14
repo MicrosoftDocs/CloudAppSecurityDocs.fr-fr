@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/6/2019
+ms.date: 1/9/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b7ac2458af007fa556cf7212281154174fe2276e
-ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
+ms.openlocfilehash: 9955c7e88caffd83859dd404e1615384f9a05490
+ms.sourcegitcommit: 2a25d1af0560243d7f926c87bf56230bdf336ba9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54059503"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54142333"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Nouveautés de Microsoft Cloud App Security
 
@@ -47,9 +47,9 @@ Vous pouvez désormais configurer le moteur de détection d’anomalie pour supp
 
 - **Nouveau rôle Cloud Discovery** (déploiement progressif) Cloud App Security fournit désormais un nouveau rôle administrateur pour les utilisateurs de Cloud Discovery. Ce rôle peut être utilisé afin de limiter l’accès d’un utilisateur administrateur uniquement aux données et paramètres Cloud Discovery dans le portail Cloud App Security.
 
-- **Prise en charge des étiquettes unifiées Microsoft Information Protection** Cloud App Security prend désormais en charge les étiquettes unifiées Microsoft Information Protection. Pour les clients qui ont déjà [migré leurs étiquettes de classification pour leur Centre de conformité et de sécurité Office 365](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels), Cloud App Security identifie et utilise ces étiquettes, comme décrit dans [Intégration avec Azure Information Protection](azip-integration.md). 
+- **Prise en charge des étiquettes unifiées Microsoft Information Protection** (déploiement progressif) Cloud App Security prend désormais en charge les étiquettes unifiées Microsoft Information Protection. Pour les clients qui ont déjà [migré leurs étiquettes de classification pour leur Centre de conformité et de sécurité Office 365](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels), Cloud App Security identifie et utilise ces étiquettes, comme décrit dans [Intégration avec Azure Information Protection](azip-integration.md). 
 
-**Prise en charge de l’étiquetage de fichier PDF** Pour les clients qui utilisent des étiquettes unifiées, Cloud App Security prend désormais en charge l’étiquetage automatique des fichiers PDF.
+**Prise en charge de l’étiquetage de fichier PDF** (déploiement progressif) Pour les clients qui utilisent des étiquettes unifiées, Cloud App Security prend désormais en charge l’étiquetage automatique des fichiers PDF.
 
 ## <a name="cloud-app-security-release-138"></a>Cloud App Security version 138
 

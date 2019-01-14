@@ -14,22 +14,22 @@ ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9c0387aaaf2bfc9de3a560c53c4b0e822e26e57d
-ms.sourcegitcommit: 8ed1a81e3e27c4fd0e1e131a7c8527fbb264b9fe
+ms.openlocfilehash: 37cf8aef54b1d44d3036530544d9ffe25acf2073
+ms.sourcegitcommit: 2a25d1af0560243d7f926c87bf56230bdf336ba9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54059864"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54142265"
 ---
 # <a name="manage-admin-access"></a>Gérer l’accès administrateur
 
 *S’applique à : Microsoft Cloud App Security*
 
-Microsoft Cloud App Security prend en charge le contrôle d’accès basé sur les rôles. Par défaut, les [rôles d’administrateur Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) ont accès à Microsoft Cloud App Security. Cet article explique comment définir l’accès au portail Cloud App Security pour vos administrateurs. Pour plus d’informations sur l’affectation des rôles d’administrateur, consultez les articles pour [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles) et [Office 365](https://docs.microsoft.com/office365/admin/add-users/assign-admin-roles).
+Microsoft Cloud App Security prend en charge le contrôle d’accès basé sur les rôles. Cet article explique comment définir l’accès au portail Cloud App Security pour vos administrateurs. Pour plus d’informations sur l’affectation des rôles d’administrateur, consultez les articles pour [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles) et [Office 365](https://docs.microsoft.com/office365/admin/add-users/assign-admin-roles).
 
 ## <a name="office-365-and-azure-ad-roles-with-access-to-cloud-app-security"></a>Rôles Office 365 et Azure AD avec accès à Cloud App Security
 
-Par défaut, les rôles d’administrateur Office 365 et Azure AD suivants ont accès à Microsoft Cloud App Security :
+Par défaut, les rôles d’administrateur Office 365 et [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) suivants ont accès à Microsoft Cloud App Security :
 
 - **Administrateur général et administrateur de sécurité :** Les administrateurs avec **Accès complet** disposent d’autorisations complètes dans Cloud App Security. Ils peuvent ajouter des administrateurs, ajouter des stratégies et des paramètres, charger des journaux et effectuer des actions de gouvernance.
 
