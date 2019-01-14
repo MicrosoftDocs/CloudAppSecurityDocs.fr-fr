@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: ccf52abaad217c257bbab14b886f6af120721c8c
-ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
+ms.openlocfilehash: 3e31313739befa39b11853df971dd0c490884e07
+ms.sourcegitcommit: 2a25d1af0560243d7f926c87bf56230bdf336ba9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54059556"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54142282"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -93,8 +93,9 @@ Consultez la page des alertes et utilisez le filtre du **type de stratégie** po
 
 ### <a name="phase-4-control-sanctioned-apps"></a>Phase 4 : Contrôler les applications approuvées
 
-    1. Pour activer le contrôle d’application via des API, [connectez des applications via une API](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) (enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) pour la surveillance continue.
-    2. Protégez les applications à l’aide du [contrôle d’application par accès conditionnel](proxy-intro-aad.md).
+1. Pour activer le contrôle d’application via des API, [connectez des applications via une API](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) (enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) pour la surveillance continue.
+
+2. Protégez les applications à l’aide du [contrôle d’application par accès conditionnel](proxy-intro-aad.md).
 
 
 La nature des applications cloud implique qu’elles sont mises à jour quotidiennement et que de nouvelles applications apparaissent tout le temps. Pour cette raison, les employés utilisent en permanence de nouvelles applications et il est important de sans cesse surveiller, réviser et mettre à jour vos stratégies, en vérifiant les applications exploitées par vos utilisateurs, ainsi que leurs modèles d’utilisation et de comportement. Vous pouvez toujours accéder au tableau de bord Cloud Discovery et voir les nouvelles applications utilisées. Suivez alors de nouveau les instructions de cet article pour vous assurer que votre organisation et vos données sont protégées.
