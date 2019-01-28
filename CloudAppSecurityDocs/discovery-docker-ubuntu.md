@@ -14,12 +14,12 @@ ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: add574af2b6ff28191b4f6ecf5a21746913cd8d5
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: e1ac4a86306ecd5262dc066e770eedeae448cf3b
+ms.sourcegitcommit: 7cda3fb3fac6bf1452582f20596f5b6c6a995a68
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53177111"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54751632"
 ---
 # <a name="docker-on-ubuntu-and-rhel-on-premises"></a>Docker sur Ubuntu et RHEL (local)
 
@@ -145,13 +145,13 @@ Configurez vos pare-feu et proxys réseau pour exporter régulièrement les jour
 
 ### <a name="step-4---verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>Étape 4 : Vérifier la réussite du déploiement dans le portail Cloud App Security
 
-Consultez l’état du collecteur dans le tableau  **Collecteur de journaux**  et vérifiez que l’état est  **Connecté**. Si l’état est  **Créé**, il est possible que la connexion du collecteur de journaux et l’analyse n’aient pas été effectuées.
+Consultez l’état du collecteur dans le tableau **Collecteur de journaux** et vérifiez que l’état est **Connecté**. Si l’état est **Créé**, il est possible que la connexion du collecteur de journaux et l’analyse n’aient pas été effectuées.
 
  ![ubuntu9](./media/ubuntu9.png)
 
 Vous pouvez aussi accéder au **journal de gouvernance** et vérifier que les journaux sont régulièrement chargés sur le portail.
 
-Si vous rencontrez des problèmes durant le déploiement, consultez  [Dépannage de Cloud Discovery](troubleshooting-cloud-discovery.md).
+Si vous rencontrez des problèmes lors du déploiement, consultez [Dépannage de Cloud Discovery](troubleshooting-cloud-discovery.md).
 
 ### <a name="optional---create-custom-continuous-reports"></a>Facultatif : Créer des rapports continus personnalisés
 
