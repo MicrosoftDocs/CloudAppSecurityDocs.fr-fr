@@ -14,12 +14,12 @@ ms.assetid: 9095cff1-f8b0-44a7-b1df-a83e674abbc6
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 8252c3ec83dd2e37663c5c13df8fa56e333af19c
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: 9df20f08928d1745578bf9eab2a1718f0ee8831f
+ms.sourcegitcommit: f9f50480f5353b395e1c6b0dd8ac6b0c7243aa77
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53176176"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55071114"
 ---
 # <a name="access-policies"></a>Stratégies d’accès
 
@@ -50,7 +50,7 @@ Les stratégies d’accès conditionnel Azure Active Directory et les stratégie
 1. Configurez une [stratégie d’accès conditionnel Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) avec des attributions pour l’utilisateur ou le groupe d’utilisateurs et l’application que vous souhaitez contrôler avec le contrôle d’application par accès conditionnel. 
 
    > [!NOTE]
-   > Seules les applications [déployées avec le Contrôle d’accès conditionnel aux applications](proxy-deployment-aad.md) sont concernées par cette stratégie.
+   > Seules les applications [déployées avec le Contrôle d’accès conditionnel aux applications](proxy-deployment-aad.md) sont concernées par cette stratégie. 
 
 2. Routez les utilisateurs vers Microsoft Cloud App Security en sélectionnant **Utiliser le contrôle d’application par accès conditionnel** sous **Session**.
  
