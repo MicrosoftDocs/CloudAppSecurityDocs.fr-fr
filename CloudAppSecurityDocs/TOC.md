@@ -40,6 +40,7 @@
 #### [Docker sur Windows](discovery-docker-windows.md)
 #### [Docker sur Ubuntu et RHEL (local)](discovery-docker-ubuntu.md)
 #### [Docker sur Ubuntu (dans Azure)](discovery-docker-ubuntu-azure.md)
+#### [Résolution des problèmes du déploiement docker Cloud Discovery](troubleshoot-docker.md)
 #### [Collecteur de journaux derrière un proxy](log-collector-proxy.md)
 #### [Utilisation d’une appliance virtuelle - Dépréciée](configure-automatic-log-upload-for-continuous-reports.md)
 ### [Utiliser l’analyseur de journal personnalisé](custom-log-parser.md)
@@ -94,7 +95,6 @@
 ### [Intégrer avec Microsoft Flow](flow-integration.md)
 ### [Jetons d’API](api-tokens.md)
 # Référence
-## [Résolution des problèmes d’état du service](troubleshooting-status.md)
 ## [Résolution des problèmes de Cloud Discovery](troubleshooting-cloud-discovery.md)
 ## [Résolution des problèmes des connecteurs API à l’aide de messages d’erreur](troubleshooting-api-connectors-using-error-messages.md)
 ## [Résolution des problèmes d’inspection du contenu](troubleshooting-content-inspection.md)
@@ -102,6 +102,7 @@
 ## [Résolution des problèmes du déploiement docker Cloud Discovery](troubleshoot-docker.md)
 ## [Résolution des problèmes des stratégies](troubleshoot-policies.md)
 # Ressources
+## [Support et dépannage](support-and-ts.md)
 ## [Portail du Support Premier](https://premier.microsoft.com/)
 ## [Portail Cloud Apps Security](https://portal.cloudappsecurity.com)
 ## [Comment acheter Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security)
