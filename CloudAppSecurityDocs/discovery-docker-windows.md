@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/16/2018
+ms.date: 1/29/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: ff73a393-da43-4954-8b02-38d2a48d39b3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 37eed2eb11dfd3f77a1cf26281af6d867c9e9c4d
-ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
+ms.openlocfilehash: 9e645becc555c73dc7403dc3075095f903e760f9
+ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54059464"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55086105"
 ---
 # <a name="docker-on-windows-on-premises"></a>Docker sur Windows en local
 
@@ -28,7 +28,7 @@ Vous pouvez configurer le chargement automatique des journaux pour des rapports 
 
 ## <a name="technical-requirements"></a>Spécifications techniques
 
-- Système d’exploitation : Windows 10 (Fall Creators Update) et Windows Server, version 1709+ 
+- Système d’exploitation : **Windows 10** (Fall Creators Update) et Windows Server **version 1709+**
 
 - Espace disque : 250 Go
 
@@ -37,6 +37,8 @@ Vous pouvez configurer le chargement automatique des journaux pour des rapports 
 - RAM : 4 Go
 
 - Configurez votre pare-feu, comme décrit dans [Configuration réseau requise](network-requirements.md#log-collector)
+
+- La virtualisation du système d’exploitation doit être activée avec Hyper-V
 
 ## <a name="log-collector-performance"></a>Performances du collecteur de journaux
 

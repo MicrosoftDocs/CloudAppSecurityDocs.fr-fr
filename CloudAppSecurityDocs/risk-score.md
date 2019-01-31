@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2018
+ms.date: 1/27/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.assetid: 9cb3594e-5007-48be-9b4f-e1d23355d86e
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 8427aa87af9b986b482901cf3671e54a6aa6fac3
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: b58ab490123824a0e0ba211cc1382a750985a0a0
+ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53177434"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55086343"
 ---
 # <a name="working-with-the-risk-score"></a>Utilisation du score de risque
 
@@ -104,7 +104,7 @@ Cloud Discovery vous fournit des données importantes sur la crédibilité et la
   
 - **Conformité** : Cette catégorie présente les normes de conformité issues des bonnes pratiques en usage que la société qui produit l’application respecte. La liste des spécifications inclut des normes telles que HIPAA, CSA et PCI-DSS.  
 
-- **Légal** : Cette catégorie représente les applications avec des réglementations et des stratégies en place pour garantir la protection et la confidentialité des données des utilisateurs de l’application, comme la stratégie de conservation des données, le RGPD et le DMCA.
+- **Légal** : cette catégorie représente les applications comportant des réglementations et des stratégies visant à garantir la protection et la confidentialité des données des utilisateurs, comme la stratégie de rétention des données, le RGPD et le DMCA.
   
 Chacune de ces catégories comprend de nombreuses propriétés spécifiques. Selon notre algorithme de scoring Cloud App Security, chaque propriété reçoit un score préliminaire compris entre 0 et 10, selon sa valeur. Les valeurs True/False reçoivent 10 ou 0. Cependant, les propriétés continues, telles que l’âge du domaine, reçoivent une valeur comprise dans le spectre. Le score de chaque propriété est pondéré par rapport à tous les autres champs existants dans la catégorie, afin de créer le sous-score de la catégorie. Si vous rencontrez une application sans score, cela indique généralement que les propriétés de cette application sont inconnues et qu’elle n’a donc pas de score.  
   

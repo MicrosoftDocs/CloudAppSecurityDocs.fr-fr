@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/9/2019
+ms.date: 1/27/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,18 +14,33 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9955c7e88caffd83859dd404e1615384f9a05490
-ms.sourcegitcommit: 2a25d1af0560243d7f926c87bf56230bdf336ba9
+ms.openlocfilehash: d4372f4877a9c839b6cc75b374e742a61500f18c
+ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54142333"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55086360"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Nouveautés de Microsoft Cloud App Security
 
 *S’applique à : Microsoft Cloud App Security*
 
 Cet article est mis à jour fréquemment pour vous informer des nouveautés de la dernière version de Cloud App Security.
+
+## <a name="cloud-app-security-release-141"></a>Cloud App Security version 141
+
+Publiée le 20 janvier 2019
+
+**Améliorations apportées à l’analyse de risque cloud**
+- L’analyse de risque des applications cloud a été enrichie de deux nouvelles expériences. 
+    - Un nouvel attribut **Type de données** évalue le type de contenu que les utilisateurs peuvent charger sur l’application. Vous pouvez l’utiliser pour analyser une application en fonction de la sensibilité des différents types de données de votre organisation. 
+    - Pour profiter d’une vue d’ensemble plus complète du risque d’une application, vous pouvez maintenant facilement basculer de l’analyse de risque de l’application à celle de la société d’hébergement en cliquant sur l’attribut **Société d’hébergement**.
+
+**Amélioration du contexte de fichier à des fins d’examen des alertes de détection d’anomalie**
+- L’examen de la détection d’anomalie a été amélioré de façon à donner des informations supplémentaires sur les fichiers impliqués dans l’alerte. Lorsque des alertes sont déclenchées en cas d’activité inhabituelle liée à des fichiers (téléchargement, partage, suppression), ce zoom avant est disponible. Par exemple, si la plupart des fichiers affectés proviennent du même dossier ou partagent la même extension, ces informations apparaissent dans la section Risque supplémentaire de l’alerte.
+
+**Demandes d’examen de fichier**
+- La capacité de Cloud App Security à créer et à enregistrer des requêtes personnalisées a été étendue à la page **Fichiers**. Les requêtes de la page **Fichier** permettent de créer des modèles de requête réutilisables à des fins d’examen approfondi. 
 
 
 ## <a name="cloud-app-security-release-139-140"></a>Cloud App Security versions 139, 140

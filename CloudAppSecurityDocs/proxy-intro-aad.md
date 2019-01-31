@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/18/2018
+ms.date: 1/29/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.assetid: 35a43120-bf67-4cf9-9b48-ebe157dbbd18
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a9f3b2282d4a62706e72500db9bb3c57f7598029
-ms.sourcegitcommit: 96fabfedfe747bb02379876d34f0f5ac8019c1a8
+ms.openlocfilehash: 319fa2395e972d79b3d010a88b0758752103c345
+ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53587832"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55086139"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Protéger les applications avec le Contrôle d’accès conditionnel aux applications Microsoft Cloud App Security
 
@@ -92,33 +92,36 @@ Le contrôle d’application par accès conditionnel prend en charge les applica
 > [!NOTE]
 > Le contrôle d’application par accès conditionnel prend également en charge des applications qui sont configurées avec des fournisseurs d’identité non-Azure AD. Pour plus d'informations sur ce scénario, envoyez un e-mail à mcaspreview@microsoft.com.
 
-Le contrôle de session est disponible sur tous les navigateurs de toutes les plateformes majeures. Les applications mobiles et les applications de bureau peuvent également être bloquées ou autorisées. Avec l’intégration en mode natif à Azure AD, toutes les applications qui sont configurées avec des applications SAML ou Open ID Connect avec l’authentification unique dans Azure AD peuvent être prises en charge, notamment les applications proposées suivantes :
+**Le contrôle de session est disponible sur tous les navigateurs de toutes les plateformes majeures, quel que soit le système d’exploitation**. Les applications mobiles et les applications de bureau peuvent également être bloquées ou autorisées. Avec l’intégration en mode natif à Azure AD, toutes les applications qui sont configurées avec des applications SAML ou Open ID Connect avec l’authentification unique dans Azure AD peuvent être prises en charge, notamment les applications proposées suivantes :
 
 - AWS
+- Azure DevOps (Visual Studio Team Services) (préversion)
+- Portail Azure (préversion)
 - Box
 - Concur
 - CornerStone on Demand
 - DocuSign
 - Dropbox
 - Egnyte
+- Exchange Online (préversion)
 - G Suite
 - GitHub
 - HighQ
 - JIRA/Confluence
+- OneDrive Entreprise (préversion)
+- LinkedIn Learning
+- Power BI (préversion)
 - Salesforce
 - ServiceNow
+- SharePoint Online (préversion)
 - Slack
 - Tableau
+- Microsoft Teams (préversion)
 - Workday
 - Workiva
 - Workplace by Facebook
-- Exchange Online (préversion)
-- OneDrive Entreprise (préversion)
-- Power BI (préversion)
-- SharePoint Online (préversion)
-- Azure DevOps (Visual Studio Team Services) (préversion)
 - Yammer (préversion)
-- Microsoft Flow (préversion)
+
 
 
 

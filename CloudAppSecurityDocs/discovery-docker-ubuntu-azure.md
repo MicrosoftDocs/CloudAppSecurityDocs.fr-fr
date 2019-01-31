@@ -1,11 +1,11 @@
 ---
 title: Configurer le chargement automatique de journal à l’aide de Docker dans Azure
-description: Cet article décrit la procédure de configuration du chargement automatique des journaux pour des rapports continus dans Cloud App Security à l’aide d’un Docker sur Ubuntu dans Azure.
+description: Cet article décrit la procédure de configuration du chargement automatique de journaux pour des rapports continus dans Cloud App Security à l’aide de Docker sur Ubuntu ou RHEL dans Azure.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2018
+ms.date: 1/27/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,22 +14,22 @@ ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 3b274bd8515fc893fb92af0c96f34d99d68d0bdc
-ms.sourcegitcommit: 900fce2575c39acda71ba42589f75d4c935fecb3
+ms.openlocfilehash: 9d3d0aad417050011a5a5780e5563ac3d040eb37
+ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54460019"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55086445"
 ---
-# <a name="set-up-and-configuration-on-ubuntu"></a>Installation et configuration sur Ubuntu
+# <a name="set-up-and-configuration-on-ubuntu-or-rhel-in-azure"></a>Installation et configuration sur Ubuntu ou RHEL dans Azure
 
 *S’applique à : Microsoft Cloud App Security*
 
-Vous pouvez configurer le chargement automatique des journaux pour des rapports continus dans Cloud App Security à l’aide d’un Docker sur Ubuntu dans Azure. Cet article décrit comment configurer le chargement automatique des journaux. 
+Vous pouvez configurer le chargement automatique de journaux pour des rapports continus dans Cloud App Security à l’aide de Docker sur Ubuntu ou Red Hat Enterprise Linux (RHEL) dans Azure. Cet article décrit comment configurer le chargement automatique des journaux. 
 
 ## <a name="technical-requirements"></a>Spécifications techniques
 
-- Système d’exploitation : Ubuntu 14.04 et 16.04 (pour les versions plus récentes, contactez le support)
+- Système d’exploitation : Ubuntu 14.04 et 16.04 (pour les versions plus récentes, contactez le support) ou RHEL 7.2 (ou version ultérieure)
 
 - Espace disque : 250 Go
 

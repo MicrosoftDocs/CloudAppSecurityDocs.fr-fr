@@ -1,11 +1,11 @@
 ---
 title: Intégrer Cloud App Security à Zscaler
-description: Cet article décrit comment intégrer Microsoft Cloud App Security à Zscaler pour une expérience Cloud Discovery fluide et un bloc automatisé d’applications approuvées.
+description: Cet article explique comment intégrer Microsoft Cloud App Security à Zscaler pour offrir une expérience Cloud Discovery fluide et créer un bloc automatisé d’applications non approuvées.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/14/2018
+ms.date: 1/29/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.assetid: 8abeab8e-3b7a-46a7-bbec-9aaf26f778a8
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0acb52d2a22fe05a293db6158df13d174bad3e49
-ms.sourcegitcommit: 475dc75456f4683336e3e4875e3155677e4fb827
+ms.openlocfilehash: d26ba74ff95df4fc2def9cfff0acd41dcef358a4
+ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/16/2018
-ms.locfileid: "53450543"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55086394"
 ---
 # <a name="integrate-cloud-app-security-with-zscaler"></a>Intégrer Cloud App Security à Zscaler
 

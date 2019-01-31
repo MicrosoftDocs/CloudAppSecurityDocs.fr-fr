@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/6/2019
+ms.date: 1/28/2019
 ms.topic: tutorial
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: 3e31313739befa39b11853df971dd0c490884e07
-ms.sourcegitcommit: 2a25d1af0560243d7f926c87bf56230bdf336ba9
+ms.openlocfilehash: 579359640f5c2e53f2267938620908be70ad617f
+ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54142282"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55086615"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
@@ -44,15 +44,15 @@ Utilisez ce processus pour déployer la solution Cloud Discovery pour l’inform
 ### <a name="phase-1-discover-and-identify-shadow-it"></a>Phase 1 : Découvrir et identifier l’informatique fantôme
     
 1. **Découvrir l’informatique fantôme** : Identifiez la position de votre organisation en matière de sécurité en exécutant Cloud Discovery dans votre organisation pour voir ce qui se passe réellement sur votre réseau. Pour plus d’informations, voir [Configurer Cloud Discovery](set-up-cloud-discovery.md). Pour ce faire, utilisez l’une des méthodes suivantes :
-  
-    - Intégrez Cloud App Security à votre proxy. Cloud App Security s’intègre en mode natif avec certains proxies tiers, y compris [Zscaler](zscaler-integration.md).
-    
+   
     - Soyez opérationnel rapidement avec Cloud Discovery en l’intégrant à [Windows Defender ATP](wdatp-integration.md). Cette intégration native vous permet de commencer immédiatement à collecter des données sur le trafic cloud sur vos appareils Windows 10, sur votre réseau et en dehors.
    
     - Pour couvrir tous les appareils connectés à votre réseau, il est important de déployer le [collecteur de journaux Cloud App Security](discovery-docker.md) sur vos pare-feu et autres proxies, afin de collecter des données à partir de vos points de terminaison et de les envoyer à Cloud App Security pour analyse.
 
-
-Étant donné que les stratégies diffèrent en fonction du groupe d’utilisateurs, de la région et du groupe d’entreprise, vous souhaiterez peut-être créer un rapport dédié sur l’informatique fantôme et ce, pour chacune de ces unités. Pour plus d’informations, voir (discovery-docker-windows#continuous-reports).
+   - Intégrez Cloud App Security à votre proxy. Cloud App Security s’intègre en mode natif avec certains proxies tiers, y compris [Zscaler](zscaler-integration.md).
+   
+ 
+Étant donné que les stratégies diffèrent en fonction du groupe d’utilisateurs, de la région et du groupe d’entreprise, vous souhaiterez peut-être créer un rapport dédié sur l’informatique fantôme et ce, pour chacune de ces unités. Pour plus d’informations, voir [Docker sur Windows en local](discovery-docker-windows.md#continuous-reports).
 
 
 Maintenant que Cloud Discovery est en cours d’exécution sur votre réseau, examinez les rapports continus générés et étudiez le [tableau de bord Cloud Discovery](working-with-cloud-discovery-data.md) pour bénéficier d’un aperçu complet des applications utilisées dans votre organisation. Il est judicieux de les examiner par catégorie : vous constaterez souvent que les applications non approuvées sont utilisées à des fins professionnelles légitimes qui ne sont pas couvertes par les applications approuvées. 
@@ -79,10 +79,10 @@ Maintenant que Cloud Discovery est en cours d’exécution sur votre réseau, ex
     
 - **Gérer les applications cloud** : Cloud App Security vous aide à gérer l’utilisation des applications dans votre organisation. Une fois que vous avez identifié les différents modèles et comportements utilisés dans votre organisation, vous pouvez créer de nouvelles balises d’application personnalisées afin de classer chaque application en fonction de son état professionnel ou des besoins auxquels elle répond.
 Ces balises peuvent ensuite servir à une surveillance particulière, par exemple pour identifier un trafic élevé vers les applications qui sont marquées comme applications de stockage cloud à risque. Les balises d’application peuvent être gérées sous **Cloud Discovery settings (Paramètres Cloud Discovery)** > **Balises d’application**. Ces balises peuvent ensuite être utilisées pour filtrer le contenu des pages Cloud Discovery et créer des stratégies.
-    
-Il est maintenant temps de créer des stratégies afin que vous soyez automatiquement alerté en cas d’événement pertinent pour vous. Par exemple, vous souhaiterez peut-être créer une **stratégie de découverte d’application** qui vous préviendra si un pic survient dans les téléchargements ou le trafic en provenance d’une application qui vous intéresse. Vous pouvez définir la stratégie pour être averti par e-mail ou SMS. Pour plus d’informations, voir la [référence de modèle de stratégie](policy-template-reference.md) et les informations complémentaires sur les [stratégies Cloud Discovery](cloud-discovery-policies.md).
 
 - **Supervision continue** : Maintenant que vous avez examiné soigneusement les applications, vous souhaiterez peut-être définir des stratégies qui les surveillent et offrent des fonctionnalités de contrôle lorsque cela est nécessaire.
+
+Il est maintenant temps de créer des stratégies afin que vous soyez automatiquement alerté en cas d’événement pertinent pour vous. Par exemple, vous pouvez créer une **stratégie de découverte d’application** qui vous préviendra si un pic survient dans les téléchargements ou le trafic en provenance d’une application donnée. Vous pouvez définir la stratégie pour être averti par e-mail ou SMS. Pour plus d’informations, voir la [référence de modèle de stratégie](policy-template-reference.md) et les informations complémentaires sur les [stratégies Cloud Discovery](cloud-discovery-policies.md).
 
 
 Configurez les [**stratégies de découverte des applications**](cloud-discovery-policies.md). Par exemple, vous devez activer les fonctions **Comportement anormal par des utilisateurs découverts**, **Vérification de conformité des applications de stockage cloud** et **Nouvelle application à risques**.

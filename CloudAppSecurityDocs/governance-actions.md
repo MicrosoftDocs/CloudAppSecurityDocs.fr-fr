@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2018
+ms.date: 1/29/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 48708ea18227a68a780c6ed02905cda51cea48e0
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: 037687d0883ed7a50eb4c27df1a551695c175c5f
+ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53177455"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55086564"
 ---
 # <a name="governing-connected-apps"></a>Gouvernance des applications connectées
 
@@ -41,14 +41,16 @@ Vous pouvez effectuer les actions de gouvernance suivantes sur un fichier ou un 
 
      - **Notification par e-mail à l’utilisateur** - Les e-mails sont personnalisables et envoyés à tous les propriétaires de fichiers en situation de non-conformité. 
 
-     - **Mettre en copie le responsable** - Selon l’intégration d’annuaire des utilisateurs, des notifications par e-mail peuvent également être envoyées au responsable de la personne qui viole une stratégie. (Salesforce uniquement)
-
      - **Notifier des utilisateurs spécifiques** - Liste spécifique d’adresses e-mail qui reçoivent ces notifications. 
 
      - **Notifier le dernier éditeur du fichier** - Envoyez des notifications à la dernière personne qui a modifié le fichier. 
 
 - **Actions de gouvernance dans les applications** - Des actions précises peuvent être appliquées par application. Ces actions spécifiques varient selon la terminologie de l’application. 
 
+     
+     - **Étiquetage**
+         - **Appliquer une étiquette** – Capacité à ajouter une étiquette de classification Azure Information Protection.
+         - **Supprimer une étiquette** – Capacité à supprimer une étiquette de classification Azure Information Protection.
      - **Modifier le partage** 
 
         - **Supprimer le partage public** – Autorisez l’accès uniquement à des collaborateurs désignés, par exemple : Supprimez l’accès public à G Suite, et supprimez le lien partagé direct pour Box. 
@@ -59,7 +61,11 @@ Vous pouvez effectuer les actions de gouvernance suivantes sur un fichier ou un 
 
        - **Supprimer un collaborateur** - Supprimez un collaborateur spécifique du fichier. 
 
-       - **Réduire l’accès public** - Définissez les fichiers publiquement disponibles comme étant accessibles uniquement avec un lien partagé.
+       - **Réduire l’accès public** - Définissez les fichiers publiquement disponibles comme étant accessibles uniquement avec un lien partagé. (Google)
+        
+       - **Faire expirer le lien partagé** – Capacité à définir la date d’expiration d’un lien partagé, après laquelle il ne sera plus actif. (Box)
+
+       - **Modifier le niveau d’accès du lien de partage** – Capacité à modifier le niveau d’accès du lien partagé (entreprise uniquement, collaborateurs uniquement ou public). (Box)
 
   - **Quarantaine** 
 
@@ -69,7 +75,7 @@ Vous pouvez effectuer les actions de gouvernance suivantes sur un fichier ou un 
 
   - **Hériter des autorisations du parent** - Cette action de gouvernance vous permet de supprimer un ensemble d’autorisations spécifiques pour un fichier ou un dossier dans Office 365. Rétablissez ensuite les autorisations définies pour le dossier parent.
 
-  - **Mettre à la corbeille** - Déplacez le fichier vers le dossier de corbeille.
+  - **Mettre à la corbeille** - Déplacez le fichier vers le dossier de corbeille. (SharePoint et OneDrive)
 
    ![policy_create alerts](./media/policy_create-alerts.png "policy_create alerts") 
 
@@ -81,8 +87,6 @@ Vous pouvez effectuer les actions de gouvernance suivantes sur un fichier ou un 
     - **Alertes** - Les alertes peuvent se déclencher dans le système et se propager par e-mail et SMS, selon leur niveau de gravité. 
 
     - **Notification par e-mail à l’utilisateur** - Les e-mails sont personnalisables et envoyés à tous les propriétaires de fichiers en situation de non-conformité. 
-
-    - **Mettre en copie le responsable** - Selon l’intégration d’annuaire des utilisateurs, des notifications par e-mail peuvent également être envoyées au responsable de la personne qui viole une stratégie. (Salesforce uniquement)
 
     - **Notifier d’autres utilisateurs** - Liste spécifique d’adresses e-mail qui reçoivent ces notifications. 
 
@@ -137,13 +141,12 @@ Pour plus d’informations sur la façon dont les actions de gouvernance sont tr
 |Stratégie de fichier|File |Mettre à la corbeille|Met un fichier dans la corbeille de l’utilisateur.| One Drive, SharePoint |
 |Stratégie de fichier|File | Notifier le dernier éditeur du fichier |Envoie un e-mail pour notifier la dernière personne qui a modifié le fichier qu’il viole une stratégie. |G Suite, Box|
 |Stratégie de fichier|File |Notifier le propriétaire du fichier|Envoie un e-mail au propriétaire quand un fichier ne respecte pas une stratégie. Dans Dropbox, si aucun propriétaire n’est associé à un fichier, la notification est envoyée à l’utilisateur spécifique que vous définissez. | Toutes les applications |
-|Stratégie de fichier, Stratégie d’activité | Fichier, Activité |Mettre en copie le responsable du propriétaire/de l’utilisateur| Quand le propriétaire du fichier reçoit une notification par e-mail spécifiant que son fichier viole une stratégie. Cette action envoie éventuellement une notification au propriétaire/à l’utilisateur du fichier. | Salesforce |
 |Stratégie de fichier, Stratégie d’activité | Fichier, Activité | Notifier des utilisateurs spécifiques |Envoie un e-mail pour notifier des utilisateurs spécifiques qu’un fichier viole une stratégie.| Toutes les applications |
 |Stratégie de fichier et Stratégie d’activité | Fichier, Activité |Notifier l’utilisateur|Envoie un e-mail aux utilisateurs pour les informer qu’une de leurs actions ou qu’un fichier qu’ils possèdent viole une stratégie. Vous pouvez ajouter une notification personnalisée lui indiquant la violation. |Tous |
 |Stratégie de fichiers et fichiers|File | Supprimer la capacité des éditeurs à partager|Dans Google Drive, les autorisations de l’éditeur par défaut d’un fichier permettent également le partage. Cette action de gouvernance restreint cette option et restreint le partage de fichiers au propriétaire.| G Suite|
 |Stratégie de fichiers et fichiers|File | [Mettre en quarantaine administrateur](use-case-admin-quarantine.md) |Supprime toutes les autorisations du fichier et déplace le fichier vers un dossier de quarantaine dans un emplacement réservé à l’administrateur. Cette action permet à l’administrateur d’examiner le fichier et de le supprimer.| Office 365 SharePoint, OneDrive Entreprise, Box|
 |Stratégie de fichiers et fichiers|File | Appliquer l’étiquette de classification|Applique automatiquement une étiquette de classification Azure Information Protection à des fichiers, en fonction des conditions définies dans la stratégie.| Box, One Drive, G Suite, SharePoint |
-|Stratégie de fichiers et fichiers|File | Supprimer l’étiquette de classement | Supprime automatiquement une étiquette de classification Azure Information Protection pour des fichiers, en fonction des conditions définies dans la stratégie. | Box, One Drive, G Suite, SharePoint |
+|Stratégie de fichiers et fichiers|File | Supprimer l’étiquette de classement | Supprime automatiquement une étiquette de classification Azure Information Protection pour des fichiers, en fonction des conditions définies dans la stratégie. Seules sont supprimables les étiquettes qui ne comportent pas de protection et ont été appliquées dans Cloud App Security, et non celles qui ont été appliquées directement dans Information Protection.| Box, One Drive, G Suite, SharePoint |
 |Stratégie de fichier, Stratégie d’activité, Alertes | Application |Demander aux utilisateurs de se reconnecter| Vous pouvez demander aux utilisateurs de se reconnecter à toutes les applications Office 365 et Azure AD pour corriger de manière rapide et efficace les alertes d’activité suspecte de l’utilisateur et les comptes corrompus. La nouvelle gouvernance se trouve dans les paramètres de stratégie et les pages d’alerte, à côté de l’option Interrompre la synchronisation de l’utilisateur. | Office 365, Azure AD |
 |Fichiers |File |Restaurer des fichiers mis en quarantaine utilisateur |Restaure un utilisateur mis en quarantaine. |Box |
 |Fichiers |File | M’auto-attribuer des permissions de lecture| Vous accorde des permissions de lecture pour le fichier afin de vous permettre d’y accéder et de déterminer s’il y a eu violation ou non.| G Suite|
@@ -157,6 +160,8 @@ Pour plus d’informations sur la façon dont les actions de gouvernance sont tr
 |Fichiers, Stratégie de fichier|File | Supprimer les utilisateurs externes | Supprime tous les collaborateurs externes - configurés comme internes dans les paramètres en dehors des domaines. |G Suite, Box|
 |Fichiers, Stratégie de fichier|File |Attribuer une permission de lecture au domaine|Accorde une permission de lecture pour le fichier sur le domaine spécifié pour tout votre domaine ou un domaine spécifique. Cet accès est utile si vous souhaitez supprimer l’accès public après l’octroi d’un accès au domaine des personnes qui doivent y travailler.| G Suite|
 |Fichiers, Stratégie de fichier|File | Mettre en quarantaine utilisateur | Supprime toutes les autorisations du fichier et déplace le fichier vers un dossier de quarantaine sur le lecteur racine de l’utilisateur. Cette action permet à l’utilisateur d’examiner le fichier et de le déplacer. S’il est déplacé manuellement, le partage de fichiers n’est pas restauré. | Box, One Drive, SharePoint |
+|Fichiers|File|Faire expirer le lien partagé| Définit la date d’expiration d’un lien partagé, après laquelle il ne sera plus actif.|Box|
+|Fichiers|File|Modifier le niveau d’accès du lien de partage|Modifie le niveau d’accès du lien partagé (entreprise uniquement, collaborateurs uniquement ou public).| Box|
 |Fichiers, Stratégie de fichier|File | Supprimer l’accès public| Si vous êtes propriétaire d’un fichier auquel vous autorisez un accès public, il devient accessible uniquement aux autres personnes disposant d’un droit d’accès au fichier (selon le genre d’accès au fichier). | G Suite|
 |Fichiers, Stratégie de fichier|File |Supprimer le lien partagé direct| Supprime un lien créé pour le fichier qui est public, mais partagé uniquement avec des personnes spécifiques.|Box |
 |Paramètres> Paramètres de Cloud Discovery| Cloud Discovery | Recalculer les scores Cloud Discovery |Recalcule les scores dans le catalogue d’applications cloud après une modification d’une mesure de score.| Découverte |
