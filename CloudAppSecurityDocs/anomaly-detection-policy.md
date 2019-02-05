@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/3/2019
+ms.date: 2/4/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.assetid: ab9bc377-d2f5-4f4c-a419-f1728a15d1c7
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5c207fb951a1bd8120da694e07232c3851486b9c
-ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
+ms.openlocfilehash: 40b514ce50cf03bd111adcd615dff5616908d933
+ms.sourcegitcommit: cd0500c7338917ce2a33fab5537966bb34544d19
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54059377"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55689175"
 ---
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>Obtenir instantanément une détection des anomalies et une analytique comportementale
 
@@ -51,7 +51,9 @@ Vous pouvez afficher les stratégies de détection des anomalies dans le portail
 Les stratégies de détection d’anomalie suivantes sont disponibles :
 
 **Voyage impossible**
--  Cette détection identifie deux activités de l’utilisateur (dans une ou plusieurs sessions) provenant d’emplacements éloignés sur une durée plus courte que la durée nécessaire à l’utilisateur pour aller du premier emplacement au second, ce qui indique qu’un autre utilisateur utilise les mêmes informations d’identification. Cette détection utilise un algorithme d’apprentissage automatique qui ignore les « faux positifs » évidents contribuant à la condition de voyage impossible, comme les réseaux privés virtuels et les emplacements régulièrement utilisés par d’autres utilisateurs de l’organisation. La détection a une période d’apprentissage initiale de sept jours au cours de laquelle elle apprend le modèle d’activité d’un nouvel utilisateur.
+-  Cette détection identifie deux activités de l’utilisateur (dans une ou plusieurs sessions) provenant d’emplacements éloignés sur une durée plus courte que la durée nécessaire à l’utilisateur pour aller du premier emplacement au second, ce qui indique qu’un autre utilisateur utilise les mêmes informations d’identification. Cette détection utilise un algorithme d’apprentissage automatique qui ignore les « faux positifs » évidents contribuant à la condition de voyage impossible, comme les réseaux privés virtuels et les emplacements régulièrement utilisés par d’autres utilisateurs de l’organisation. La détection a une période d’apprentissage initiale de sept jours au cours de laquelle elle apprend le modèle d’activité d’un nouvel utilisateur. La détection de voyage impossible identifie l’activité utilisateur inhabituelle et impossible entre deux emplacements. L’activité doit être suffisamment inhabituelle pour être considérée comme un indicateur de compromission et justifier le déclenchement d’une alerte. Pour que cela fonctionne, la logique de détection inclut différents niveaux de suppression pour répondre aux besoins des scénarios susceptibles de déclencher des « faux positifs », comme les activités des réseaux privés virtuels. Le curseur de sensibilité vous permet d’agir sur l’algorithme et de définir une logique de détection plus ou moins stricte.
+Plus le niveau de sensibilité est élevé, plus le niveau de suppression appliqué dans le cadre de la logique de détection est bas. De cette façon, vous pouvez adapter la détection en fonction de vos besoins de couverture et de vos cibles SNR.
+
 
 
 **Activité à partir de pays peu fréquents**

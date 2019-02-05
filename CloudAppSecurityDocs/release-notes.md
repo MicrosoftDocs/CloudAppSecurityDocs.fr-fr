@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/27/2019
+ms.date: 2/4/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,18 +14,42 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d4372f4877a9c839b6cc75b374e742a61500f18c
-ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
+ms.openlocfilehash: 191664850596aad2ab4bc7ed0bc78600004382f0
+ms.sourcegitcommit: cd0500c7338917ce2a33fab5537966bb34544d19
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55086360"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55689209"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Nouveautés de Microsoft Cloud App Security
 
 *S’applique à : Microsoft Cloud App Security*
 
 Cet article est mis à jour fréquemment pour vous informer des nouveautés de la dernière version de Cloud App Security.
+
+- **Configuration de stratégies de session dans Azure AD**<br>
+Vous pouvez maintenant configurer des stratégies de session pour superviser les utilisateurs ou bloquer les téléchargements en temps réel, directement dans l’accès conditionnel Azure AD. Vous pouvez toujours configurer des stratégies de session avancées directement dans Cloud App Security. Pour connaître la procédure pas à pas de ce déploiement, consultez [Déployer le contrôle d’application par accès conditionnel pour les applications Azure AD](proxy-deployment-aad.md). 
+
+- **Requêtes suggérées et enregistrées pour les applications OAuth** <br>
+Les requêtes suggérées ont été ajoutées à la page des applications OAuth. Elles fournissent des modèles d’examen prédéfinis qui vous permettent de filtrer vos applications OAuth. Les requêtes suggérées incluent des filtres personnalisés qui identifient les applications à risque telles que les applications autorisées par les administrateurs. Les requêtes enregistrées permettent d’enregistrer des requêtes personnalisées pour une utilisation ultérieure, de manière similaire aux requêtes enregistrées déjà disponibles dans les pages Découverte et Journal d’activité. 
+
+- **Configuration par défaut de l’audit Office 365**<br>
+Si vous souhaitez activer la supervision des activités Office 365 dans Cloud App Security, vous devez maintenant activer l’audit dans le [Centre de sécurité et conformité Office 365]( https://support.microsoft.com/help/4026501/office-auditing-in-office-365-for-admins). Cela est dû à un [changement apporté à l’audit Office 365]( https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-faq#what-happens-if-i-disable-auditing-for-my-office-365-organization-will-i-still-get-events-via-the-management-activity-api). Ce changement est nécessaire uniquement si vous n’avez pas encore activé la supervision des activités Office 365 dans Cloud App Security.
+
+- **Prise en charge améliorée de Box**<br>
+Cloud App Security prend en charge deux nouvelles actions de gouvernance pour Box :
+
+   - **Faire expirer le lien partagé** – Cette action de gouvernance vous permet de définir la date d’expiration d’un lien partagé, date après laquelle ce lien ne sera plus actif. 
+
+   - **Modifier le niveau d’accès du lien de partage** – Cette action de gouvernance vous permet de modifier le niveau d’accès du lien partagé (entreprise uniquement, collaborateurs uniquement ou public).
+
+- **Prise en charge des emplacements multiples dans OneDrive**<br>
+Avec Cloud App Security, vous voyez désormais l’intégralité des fichiers dans OneDrive, même s’ils sont répartis entre plusieurs emplacements géographiques. La protection est maintenant disponible pour les fichiers situés aux emplacements supplémentaires ainsi qu’à l’emplacement principal.
+
+- **Amélioration de la navigation dans le portail**<br>
+Le portail Cloud App Security a été amélioré pour fluidifier la navigation et mieux aligner Cloud App Security avec les autres services de sécurité de Microsoft, pour une plus grande simplicité d’utilisation.
+
+
 
 ## <a name="cloud-app-security-release-141"></a>Cloud App Security version 141
 

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/29/2019
+ms.date: 2/2/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,16 +14,16 @@ ms.assetid: 6bde2a6c-60cc-4a7d-9e83-e8b81ac229b0
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d69444a4baa4e861c1ffa14c081f77a584911431
-ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
+ms.openlocfilehash: b256affd64705b874e68359c51af118b355330df
+ms.sourcegitcommit: 7b1b1e80f90bd12e38a2e14dfea6708341eb0f34
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55086581"
+ms.lasthandoff: 02/03/2019
+ms.locfileid: "55668926"
 ---
 # <a name="enable-the-log-collector-behind-a-proxy"></a>Activer le collecteur de journaux derrière un proxy
 
-Une fois que vous avez configuré le collecteur de journaux, si vous travaillez derrière un proxy, le collecteur de journaux peut avoir des difficultés pour envoyer des données à Cloud App Security. Cela peut être dû au fait que le collecteur de journaux ne fait pas confiance à l’autorité de certification racine du proxy et qu’il ne peut pas se connecter à Microsoft Cloud App Security pour récupérer sa configuration ou charger les journaux reçus.
+Une fois que vous avez configuré le collecteur de journaux, si vous travaillez derrière un proxy, le collecteur de journaux peut avoir des difficultés pour envoyer des données à Cloud App Security. Cela peut se produire quand le collecteur de journaux ne fait pas confiance à l’autorité de certification racine du proxy et qu’il ne peut pas se connecter à Microsoft Cloud App Security pour récupérer sa configuration ou charger les journaux reçus.
 
 >[!NOTE] 
 > Pour plus d’informations sur la façon de modifier les certificats utilisés par le collecteur de journaux pour Syslog ou FTP, et pour résoudre les problèmes de connectivité à partir des pare-feux et proxys au collecteur de journaux, consultez [Dépannage du déploiement de Microsoft Cloud App Security Cloud Discovery](troubleshoot-docker.md).
@@ -46,7 +46,7 @@ Dans l’interpréteur de commandes, vérifiez que le conteneur a été créé e
 ### <a name="copy-proxy-root-ca-certificate-to-the-container"></a>Copier le certificat d’autorité de certification racine du proxy sur le conteneur
 
 À partir de votre machine virtuelle, copiez le certificat d’autorité de certification sur le conteneur Cloud App Security. Dans l’exemple suivant, le conteneur est nommé *Ubuntu-LogCollector* et le certificat d’autorité de certification est nommé *Proxy-CA.crt*.
-Exécutez la commande sur l’hôte Ubuntu et il copie le certificat vers un dossier dans le conteneur d’exécution :
+Exécutez la commande sur l’hôte Ubuntu. La commande copie le certificat dans un dossier du conteneur d’exécution :
 
     bash
     docker cp Proxy-CA.crt Ubuntu-LogCollector:/var/adallom/ftp/discovery
