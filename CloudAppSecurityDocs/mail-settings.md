@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2018
+ms.date: 2/4/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,22 +14,25 @@ ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f51db980e6a30f0e2c0f21c25982f6c95b51ea2c
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: de5474e2fd65d21f3221dd562f63a8ddc3bd9566
+ms.sourcegitcommit: b32fb2c561108cf280cd9098da20b0cb9aab4273
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53177043"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55740063"
 ---
 # <a name="email-notification-preferences"></a>Préférences de notification par e-mail
 
 *S’applique à : Microsoft Cloud App Security*
 
-Cet article fournit des informations sur la procédure de personnalisation des notifications par e-mail envoyées par Cloud App Security.
+Cet article fournit des informations sur la procédure de personnalisation des notifications par e-mail envoyées par Cloud App Security à vos utilisateurs quand une violation de la sécurité est détectée.
+
+> [!NOTE]
+> Cette personnalisation affecte uniquement les notifications envoyées à vos utilisateurs finaux, pas les notifications envoyées aux administrateurs Cloud App Security.
 
 ## <a name="mailsettings"></a> Définir les préférences de notification par e-mail  
 
- Microsoft Cloud App Security envoie des notifications par e-mail aux administrateurs ayant demandé à recevoir des alertes et aux utilisateurs finaux impliqués dans les violations. Pour définir les paramètres des notifications par e-mail, effectuez les étapes suivantes. Pour plus d’informations sur l’adresse IP du serveur de messagerie Microsoft Cloud App Security à ajouter à la liste verte de votre service antispam, consultez [Configuration requise pour le réseau](network-requirements.md).
+ Microsoft Cloud App Security vous permet de personnaliser les notifications par e-mail envoyées aux utilisateurs finaux impliqués dans les violations. Pour définir les paramètres des notifications par e-mail, effectuez les étapes suivantes. Pour plus d’informations sur l’adresse IP du serveur de messagerie Microsoft Cloud App Security à ajouter à la liste verte de votre service antispam, consultez [Configuration requise pour le réseau](network-requirements.md).
 
 1. Dans la barre de menus, cliquez sur l’icône des paramètres (engrenage), sélectionnez **Paramètres**, puis sélectionnez l’onglet **Paramètres de messagerie**.  
 
