@@ -4,9 +4,10 @@ description: Cet article fournit des informations sur la façon de tirer parti d
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 1/21/2019
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
@@ -14,12 +15,12 @@ ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d0858c2cadf3e36ed70ae59b715cfa9b7c7469c4
-ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
+ms.openlocfilehash: 2d17d646479e9686c2ebbeb3c4675cf8dff2ee1d
+ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55086292"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56281659"
 ---
 # <a name="azure-information-protection-integration"></a>Intégration d’Azure Information Protection
 

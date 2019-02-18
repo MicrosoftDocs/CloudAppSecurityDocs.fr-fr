@@ -4,9 +4,10 @@ description: Cet article fournit une liste de filtres et de requêtes d’applic
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 12/10/2018
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
@@ -14,12 +15,12 @@ ms.assetid: 1a2d3aeb-4e28-4c73-804b-95e862b08e43
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a91520a7334694b0e5a4416a9db5f22877ec55d9
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: 0871d2a24cfea8a5ca5e9bcd5397cde13dc8ea28
+ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53175785"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56282645"
 ---
 # <a name="discovered-app-filters-and-queries"></a>Filtres et requêtes d’applications découvertes
 
@@ -35,7 +36,7 @@ Il existe des filtres d’application découverte de base et avancés. Pour obte
 
 
 - **Balise d’application** : Indiquez si l’application a été approuvée, non approuvée ou non marquée. Par ailleurs, vous pouvez créer une balise personnalisée pour votre application, puis l’utiliser pour filtrer des types spécifiques d’applications. 
-- **Applications et domaines** : Permet de rechercher des applications spécifiques ou des applications utilisées dans des domaines spécifiques. 
+- **Applications et domaines** : Ils vous permettent de rechercher des applications spécifiques ou des applications utilisées dans des domaines spécifiques. 
 - **Catégories** : Le filtre de catégories, qui se trouve à gauche de la page, vous permet de rechercher des types d’applications selon des catégories d’applications. Voici des exemples de catégories : applications de réseaux sociaux, applications de stockage cloud et services d’hébergement. Vous pouvez sélectionner plusieurs catégories à la fois ou une seule catégorie, puis leur appliquer des filtres de base et des filtres avancés.
 - **Facteur de risque de conformité** : Permet de rechercher un standard, une certification et une conformité spécifiques auxquels l’application doit être conforme (HIPAA, ISO 27001, SOC 2, PCI-DSS, etc.).
 - **Facteur de risque général** : Permet de rechercher des facteurs de risque généraux, comme la popularité auprès des consommateurs, les paramètres régionaux du centre de données, etc.

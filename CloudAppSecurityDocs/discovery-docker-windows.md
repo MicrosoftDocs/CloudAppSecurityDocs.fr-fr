@@ -4,21 +4,22 @@ description: Cet article décrit la procédure de configuration du chargement au
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 1/29/2019
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.assetid: ff73a393-da43-4954-8b02-38d2a48d39b3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9e645becc555c73dc7403dc3075095f903e760f9
-ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
+ms.openlocfilehash: 1a4f5fdb9bfe807729bf29de370bca913b3409ce
+ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55086105"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56282237"
 ---
 # <a name="docker-on-windows-on-premises"></a>Docker sur Windows en local
 
@@ -140,13 +141,13 @@ Configurez vos pare-feu et proxys réseau pour exporter régulièrement les jour
 
 ### <a name="step-4---verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>Étape 4 : Vérifier la réussite du déploiement dans le portail Cloud App Security
 
-Consultez l’état du collecteur dans le tableau  **Collecteur de journaux**  et vérifiez que l’état est  **Connecté**. Si l’état est  **Créé**, il est possible que la connexion du collecteur de journaux et l’analyse n’aient pas été effectuées.
+Consultez l’état du collecteur dans le tableau **Collecteur de journaux** et vérifiez que l’état est **Connecté**. Si l’état est **Créé**, il est possible que la connexion du collecteur de journaux et l’analyse n’aient pas été effectuées.
 
  ![ubuntu9](./media/ubuntu9.png)
 
 Vous pouvez aussi accéder au **journal de gouvernance** et vérifier que les journaux sont régulièrement chargés sur le portail.
 
-Si vous rencontrez des problèmes durant le déploiement, consultez  [Dépannage de Cloud Discovery](troubleshooting-cloud-discovery.md).
+Si vous rencontrez des problèmes lors du déploiement, consultez [Dépannage de Cloud Discovery](troubleshooting-cloud-discovery.md).
 
 ### Facultatif : Créer des rapports continus personnalisés <a name="continuous-reports"></a>
 

@@ -4,9 +4,10 @@ description: Cet article fournit des informations sur la procédure de personnal
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 2/4/2019
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
@@ -14,12 +15,12 @@ ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: de5474e2fd65d21f3221dd562f63a8ddc3bd9566
-ms.sourcegitcommit: b32fb2c561108cf280cd9098da20b0cb9aab4273
+ms.openlocfilehash: 6066b40cd4de3695a9ed2f1fc0fbd6b460cdf187
+ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "55740063"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56280979"
 ---
 # <a name="email-notification-preferences"></a>Préférences de notification par e-mail
 
