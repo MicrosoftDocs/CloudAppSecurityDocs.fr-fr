@@ -4,9 +4,10 @@ description: Cet article décrit les options de support et de résolution des pr
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 1/27/2019
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
@@ -14,12 +15,12 @@ ms.assetid: 86204ff4-dc1d-489f-b5fd-a43930fd49d3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 01c0384cab92f82dabadfccd78acffd4837e4803
-ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
+ms.openlocfilehash: 6269c121552a310646e02da21771bbea12aa1c18
+ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55086633"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56282152"
 ---
 # <a name="support-and-troubleshooting-microsoft-cloud-app-security"></a>Support et résolution des problèmes pour Microsoft Cloud App Security
 
@@ -31,13 +32,13 @@ Cet article décrit les options de support et de résolution des problèmes disp
 
 Microsoft fournit un support global pour Microsoft Cloud App Security (support technique, prévente, facturation et abonnement), en ligne et par téléphone pour les abonnements payants et les versions d'évaluation. Le support technique en ligne est disponible en anglais et japonais. Le support téléphonique et le support en ligne pour la facturation sont disponibles dans d’autres langues.
 
-En tant qu’administrateur, vous pouvez utiliser l’option  **Aide + support**  afin de formuler une demande de support en ligne pour Cloud App Security sur le Portail Azure. Votre compte doit pour cela avoir l’un des  [rôles d’administrateur suivants dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) :
+En tant qu’administrateur, vous pouvez utiliser l’option **Aide + support** afin de formuler une demande de support en ligne pour Cloud App Security sur le Portail Azure. Pour ce faire, votre compte doit avoir l’un des [rôles d’administrateur suivants dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) :
 
 -   Administrateur général
 
 -   Administrateur de services fédérés
 
-Sélectionnez  **Demande de support**  pour créer une demande de support qui s’ouvre sur l’onglet  **Informations de base**  de la page  *Aide + support*  Azure en suivant le protocole ci-dessous.
+Sélectionnez **Demande de support** pour créer une demande de support qui s’ouvre sur l’onglet **Informations de base** de la page *Aide + support* Azure en suivant le protocole ci-dessous.
 
 >[!NOTE]
 > Pour un support technique sur des produits tiers qui fonctionnent avec Microsoft Cloud App Security (par exemple, Box, Salesforce et G Suite), contactez d’abord le fournisseur du produit.
@@ -45,17 +46,17 @@ Sélectionnez  **Demande de support**  pour créer une demande de support qui 
 
 ### <a name="create-an-online-support-request"></a>Créer une demande de support en ligne
 
-1.  Connectez-vous au Portail Azure [https://portal.azure.com](https://portal.azure.com/) avec vos informations d’identification d’administration, sélectionnez l’icône  **?**  dans le coin supérieur droit du portail, puis sélectionnez  **Aide + support**  pour accéder à la page  [Aide + support Azure](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview).
+1.  Connectez-vous au portail Azure [https://portal.azure.com](https://portal.azure.com/) avec vos informations d’identification administrateur, sélectionnez l’icône **?** dans le coin supérieur droit du portail, puis sélectionnez **Aide + support** pour accéder à la page [Aide + support Azure](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview).
 
-2.  Sur la page  **Aide + support**  Azure, sélectionnez  **Nouvelle demande de support**.
+2.  Sur la page Azure **Aide + support**, sélectionnez **Nouvelle demande de support**.
 
-3.  Sur l’onglet  **Informations de base** , choisissez les options suivantes pour la plupart des problèmes de support :
+3.  Sur l’onglet **Informations de base**, choisissez les options suivantes pour la plupart des problèmes de support :
 
-    -   **Type de problème** :  **Technique**
+    -   **Type de problème** : **Technique**
 
     -   **Abonnement** : \<*votre abonnement*\>
 
-    -   **Service** :  **Cloud Application Security**
+    -   **Service** : **Cloud Application Security**
 
     -   **Type de problème** : Choisissez votre type de problème dans le menu déroulant
 
@@ -63,19 +64,19 @@ Sélectionnez  **Demande de support**  pour créer une demande de support qui 
 
     -   **Objet** : Décrivez en quelques mots le problème que vous rencontrez
 
-4.  Sur l’onglet  **Détails** , renseignez les détails de votre problème, la méthode de support, vos coordonnées, puis cliquez sur  **Suivant : Vérifier + créer**.
+4.  Sur l’onglet **Détails**, renseignez les détails de votre problème, la méthode de support, vos coordonnées, puis cliquez sur **Suivant : Vérifier + créer**.
 
-5.  Vérifiez que les informations sont correctes, puis choisissez  **Créer**  pour envoyer votre demande de support.
+5.  Vérifiez que les informations sont correctes, puis choisissez **Créer** pour envoyer votre demande de support.
 
-**Remarque :** si vous avez une question sur la facturation ou l’abonnement, vous pouvez ouvrir un incident pour obtenir un support sur le  [Centre d’administration Office](https://portal.office.com/Support/SupportEntry.aspx).
+**Remarque :** Si vous avez une question sur la facturation ou sur l’abonnement, vous pouvez ouvrir un incident pour obtenir un support du [Centre d’administration Office](https://portal.office.com/Support/SupportEntry.aspx).
 
 ### <a name="view-open-support-requests"></a>Afficher les demandes de support ouvertes
 
 Vous pouvez afficher une demande de support sur le Portail Azure. Pour ce faire :
 
-1.  Connectez-vous à Azure [https://portal.azure.com](https://portal.azure.com/) avec vos informations d’identification d’administration, sélectionnez l’icône  **?**  dans le coin supérieur droit du portail, puis sélectionnez  **Aide + support**  pour accéder à la page  [Aide + support Azure](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) .
+1.  Connectez-vous à Azure [https://portal.azure.com](https://portal.azure.com/) avec vos informations d’identification administrateur, sélectionnez l’icône **?** dans le coin supérieur droit du portail, puis sélectionnez **Aide + support** pour accéder à la page [Aide + support Azure](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview).
 
-2.  Sur la page  **Aide + support** , vous pouvez voir la liste des  **Demandes de support récentes** et les sélectionner pour afficher des détails supplémentaires.
+2.  Sur la page **Aide + support**, vous pouvez voir la liste des **Demandes de support récentes** et les sélectionner pour afficher des détails supplémentaires.
 
 ## <a name="troubleshooting-microsoft-cloud-app-security-status"></a>Résolution des problèmes d’état de Microsoft Cloud App Security
 
@@ -98,9 +99,9 @@ Consultez [l’état actuel de Microsoft Cloud App Security](https://status.clou
 
 L’équipe Cloud App Security est toujours intéressée par vos commentaires sur notre produit. Plusieurs options s’offrent à vous :
 
-[Commentaires sur le produit](https://microsoftsecurity.uservoice.com/forums/905161-cloud-app-security) 
+[Commentaires sur le produit](https://microsoftsecurity.uservoice.com/forums/905161-cloud-app-security) 
 
-Commentaires sur la documentation. Notre nouveau système de commentaires est basé sur GitHub Issues. Pour faire des commentaires sur la documentation, vous devez tout d’abord créer un compte GitHub. Pour plus d’informations sur cette modification, lisez  [notre billet de blog](https://docs.microsoft.com/teamblog/a-new-feedback-system-is-coming-to-docs).
+Commentaires sur la documentation. Notre nouveau système de commentaires est basé sur GitHub Issues. Pour faire des commentaires sur la documentation, vous devez tout d’abord créer un compte GitHub. Pour plus d’informations sur cette modification, lisez [notre billet de blog](https://docs.microsoft.com/teamblog/a-new-feedback-system-is-coming-to-docs).
 
 
 
