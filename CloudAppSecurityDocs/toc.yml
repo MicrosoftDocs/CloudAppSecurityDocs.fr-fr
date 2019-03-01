@@ -9,9 +9,6 @@ items:
     href: cas-compliance-trust.md
   - name: Nouveautés
     href: release-notes.md
-    items:
-    - name: Archives des notes de publication
-      href: release-note-archive.md
   - name: Comparer
     items:
     - name: Office 365
@@ -216,6 +213,8 @@ items:
     href: troubleshoot-policies.md
 - name: Ressources
   items:
+  - name: Archives des notes de publication
+    href: release-note-archive.md
   - name: Support et dépannage
     href: support-and-ts.md
   - name: Portail du Support Premier
@@ -224,9 +223,9 @@ items:
     href: https://portal.cloudappsecurity.com
   - name: Comment acheter Cloud App Security
     href: https://www.microsoft.com/cloud-platform/cloud-app-security
-ms.openlocfilehash: 564eaaa5992f0f212f23c8979e8db0fe4fc4972f
-ms.sourcegitcommit: fd1bf30af3117d8ad6cf241f3e02ad5e4c4bc9a1
+ms.openlocfilehash: 1e60193523c6b8c9b456f89c18d77a5de32a3352
+ms.sourcegitcommit: e096d06d92c4b2ab4f416c8c6cf956cc503380d3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56409631"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57014829"
