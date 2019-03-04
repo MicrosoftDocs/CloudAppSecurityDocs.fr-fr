@@ -6,7 +6,7 @@ author: rkarlin
 ms.author: rkarlin
 manager: barbkess
 ms.date: 2/17/2019
-ms.topic: conceptual
+ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -15,18 +15,30 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 554983cb38a566c96f8232a614f44d0505a70c75
-ms.sourcegitcommit: fba10a43f04823e4de5050dc94328bf76940656d
+ms.openlocfilehash: 75beec72a8d182e08334d51fc5654da3fc1cea32
+ms.sourcegitcommit: e096d06d92c4b2ab4f416c8c6cf956cc503380d3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56444053"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57014862"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Nouveautés de Microsoft Cloud App Security
 
 *S’applique à : Microsoft Cloud App Security*
 
-Cet article est mis à jour fréquemment pour vous informer des nouveautés de la dernière version de Cloud App Security.
+Cet article est mis à jour fréquemment pour vous informer des nouveautés de la dernière version de Cloud App Security. Les anciennes mises à jour sont disponibles dans [l’archive des notes de publication](release-note-archive.md).
+
+
+## <a name="cloud-app-security-release-144"></a>Cloud App Security version 144
+
+Date de publication : 24 février 2019
+
+- **Déploiement étendu pour les instances d’applications** Le déploiement étendu peut maintenant être configuré au niveau de l’instance de l’application, permettant ainsi davantage de granularité et de contrôle.
+- **Améliorations des rôles** 
+   - Les rôles d’administrateur de données et d’opérateur de sécurité pour Office 365 sont désormais pris en charge dans Cloud App Security. Le rôle d’administrateur de données permet aux utilisateurs de gérer tout ce qui est lié aux fichiers ainsi que d’afficher les rapports Cloud Discovery. Les opérateurs de sécurité sont autorisés à gérer les alertes et à afficher la configuration de la stratégie.
+   - Le rôle de lecteur de sécurité a maintenant la possibilité de configurer l’agent SIEM, ce qui permet une meilleure étendue des autorisations.
+- **Prise en charge de Microsoft Flow** Cloud App Security analyse désormais les activités des utilisateurs dans Microsoft Flow. Les activités prises en charge sont les activités signalées par Flow au journal d’audit Office 365.
+- **Regroupement des entités d’alerte** La page Alerte regroupe désormais des entités associées qui ont été impliquées dans une alerte pour vous aider dans votre investigation.
 
 ## <a name="cloud-app-security-release-143"></a>Cloud App Security mise en production 143
 
