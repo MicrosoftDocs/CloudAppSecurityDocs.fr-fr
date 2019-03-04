@@ -14,17 +14,16 @@ ms.technology: ''
 ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: 748d4daa5f3ca47b652888ee382bc22eff0f340c
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
+ms.openlocfilehash: d2ddae1fe570b975a021ec882058465a53edac3e
+ms.sourcegitcommit: e096d06d92c4b2ab4f416c8c6cf956cc503380d3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281772"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57014836"
 ---
-*S’applique à : Microsoft Cloud App Security*
-
-
 # <a name="tutorial-discover-and-manage-shadow-it-in-your-network"></a>Didacticiel : Découvrir et gérer l’informatique fantôme sur votre réseau
+
+*S’applique à : Microsoft Cloud App Security*
 
 Lorsque les administrateurs informatiques doivent dire combien d’applications cloud ils pensent que leurs employés utilisent en moyenne, leur réponse est généralement 30 ou 40, alors qu’en réalité, la moyenne est de plus de 1 000 applications distinctes utilisées par les employés de votre organisation. L’informatique fantôme vous aide à savoir quelles applications sont utilisées et à les identifier, mais aussi à connaître votre niveau de risque. 80 % des employés utilisent des applications non approuvées que personne n’a analysées et qui ne sont peut-être pas conformes à vos stratégies de sécurité et de conformité. Étant donné que vos employés sont en mesure d’accéder à vos ressources et applications en dehors de votre réseau d’entreprise, il n’est plus suffisant de mettre en place des règles et stratégies sur vos pare-feu. 
 
