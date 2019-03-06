@@ -15,12 +15,12 @@ ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: db58f8d47b84cbf63321982c24759f060fd1ca07
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
+ms.openlocfilehash: 665deae5a23a81113b9d9c091fec14230e904b55
+ms.sourcegitcommit: e88ec011088f7f6f4ccad58c86dc7e3aa908b05f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281693"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57254374"
 ---
 # <a name="connect-apps"></a>Connecter des applications 
 
@@ -72,10 +72,10 @@ Le tableau suivant répertorie, par application cloud, les fonctionnalités pris
 > |**Privilèges**|✔|✔|Non prise en charge par le fournisseur|✔|✔|✔|✔||  
 > |**Gouvernance des utilisateurs**|✔|✔||✔|Bientôt disponible|Bientôt disponible|Bientôt disponible||  
 > |**Activité de connexion**|✔|✔|✔|✔|✔|✔|✔|✔|  
-> |**Activité de l’utilisateur**|✔*|✔|✔|✔ - nécessite Google illimité|Partiel|Prise en charge avec Salesforce Shield|✔|Non applicable|  
+> |**Activité de l’utilisateur**|✔*|✔|✔|✔ - nécessite Google Business ou Entreprises|Partiel|Prise en charge avec Salesforce Shield|✔|Non applicable|  
 > |**Activité d’administration**|✔|✔|✔|✔|Partiel|✔|✔|✔|  
 > |**Analyse régulière des fichiers**|✔|✔|Non applicable|✔|✔|✔|✔|Non applicable|  
-> |**Analyse des fichiers pratiquement en temps réel**|✔|✔|Non applicable|✔ - nécessite Google illimité|||Bientôt disponible||  
+> |**Analyse des fichiers pratiquement en temps réel**|✔|✔|Non applicable|✔ - nécessite Google Business ou Entreprises|||Bientôt disponible||  
 > |**Contrôle partagé**|✔|✔|Non applicable|✔|Non applicable||✔||  
 > |**Quarantaine**|✔|✔|Non applicable|Bientôt disponible|||Bientôt disponible||  
 > |**Voir les autorisations d’application**|✔|Non prise en charge par le fournisseur|Non applicable|✔||✔|Non prise en charge par le fournisseur||  
@@ -96,7 +96,7 @@ Pour utiliser des connecteurs d’applications, vous devez vérifier que vous av
 |Application|Type de licence|Utilisateur|  
 |---------|------------------|----------|  
 |Box|Enterprise|Il est fortement recommandé de vous connecter à Box en tant qu’administrateur. Une connexion en tant que coadministrateur entraîne une visibilité uniquement partielle des données. Si vous vous connectez en tant que coadministrateur, sélectionnez toutes les autorisations.|  
-|G Suite|G Suite Unlimited de préférence<br /><br /> G Suite Enterprise (au minimum)|Super administrateur|  
+|G Suite|Compte G Suite Business ou Entreprise<br /><br /> G Suite Enterprise (au minimum)|Super administrateur|  
 |Office 365||Administrateur général|  
 |AWS||Utilisateur récemment créé|  
 |Dropbox|Business/Entreprises|Administrateur|  
