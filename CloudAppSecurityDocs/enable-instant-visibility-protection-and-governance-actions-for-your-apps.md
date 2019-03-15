@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 12/10/2018
+ms.date: 3/10/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 665deae5a23a81113b9d9c091fec14230e904b55
-ms.sourcegitcommit: e88ec011088f7f6f4ccad58c86dc7e3aa908b05f
-ms.translationtype: HT
+ms.openlocfilehash: 1c0c01b0de154528413f05caed780b7995420ba1
+ms.sourcegitcommit: cb049bf15ccc02ec462d7ea6bbaa99ac8c0fa18d
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57254374"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57830470"
 ---
 # <a name="connect-apps"></a>Connecter des applications 
 
@@ -33,6 +33,9 @@ Microsoft Cloud App Security tire profit des API proposées par le fournisseur d
 ## <a name="multi-instance-support"></a>Prise en charge de plusieurs instances
 
 Cloud App Security prend en charge plusieurs instances de la même application connectée. Par exemple, si vous avez plusieurs instances de Salesforce (une pour les ventes, une pour le marketing), vous pouvez vous connecter à Cloud App Security. Vous pouvez gérer les différentes instances à partir de la même console pour créer des stratégies granulaires et mener une investigation plus approfondie. Cette prise en charge s’applique uniquement aux applications connectées à des API, pas aux applications découvertes dans le cloud ni aux applications connectées à des proxys.
+
+> [!NOTE]
+> Instances multiples n’est pas pris en charge pour Office 365 et Azure.
 
 ## <a name="how-it-works"></a>Fonctionnement  
 Cloud App Security est déployé avec des privilèges d’administrateur système qui autorisent un accès complet à tous les objets de votre environnement.  

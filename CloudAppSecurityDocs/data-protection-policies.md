@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 1/6/2019
+ms.date: 3/5/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2a0d2f550deb598fc565210bf0d1addf7b9cfad9
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 51d9c16f4a5946568bfbd13d364347bc3b2a81a2
+ms.sourcegitcommit: cb049bf15ccc02ec462d7ea6bbaa99ac8c0fa18d
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281013"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57830402"
 ---
 # <a name="file-policies"></a>Stratégies de fichier  
 
@@ -108,7 +108,19 @@ Chaque stratégie comprend les éléments suivants :
 
 - **Extensions** - L’inspection du contenu peut être effectuée via des moteurs tiers pour améliorer les fonctionnalités DLP ou antiprogramme malveillant.  
 
-  
+## <a name="file-queries"></a>Requêtes de fichier
+
+Pour faciliter encore plus les recherches, vous pouvez désormais créer des requêtes personnalisées et les enregistrer pour les utiliser ultérieurement. 
+
+1. Dans le **fichier** page, utilisez les filtres comme décrit ci-dessus pour descendre dans vos applications en fonction des besoins. 
+
+2. Une fois que vous avez terminé de générer votre requête, cliquez sur le bouton **Enregistrer sous** en haut à droite des filtres. 
+
+3. Dans la fenêtre contextuelle **Enregistrer la requête**, nommez votre requête.
+
+4. Pour réutiliser cette requête plus tard, sous **Requêtes**, faites défiler jusqu’à **Requêtes enregistrées** et sélectionnez votre requête. 
+
+ 
 ## <a name="next-steps"></a>Étapes suivantes 
 [Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)   
 

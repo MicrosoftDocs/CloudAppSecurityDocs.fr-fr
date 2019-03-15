@@ -15,22 +15,22 @@ ms.assetid: 86204ff4-dc1d-489f-b5fd-a43930fd49d3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6269c121552a310646e02da21771bbea12aa1c18
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 85a9071abc625e580e27b2a01220ac76104bda45
+ms.sourcegitcommit: cb049bf15ccc02ec462d7ea6bbaa99ac8c0fa18d
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56282152"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57830453"
 ---
 # <a name="support-and-troubleshooting-microsoft-cloud-app-security"></a>Support et résolution des problèmes pour Microsoft Cloud App Security
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Cet article décrit les options de support et de résolution des problèmes disponibles pour Cloud App Security.
 
 ## <a name="manage-support-requests-for-cloud-app-security"></a>Gérer les demandes de support pour Cloud App Security
 
-Microsoft fournit un support global pour Microsoft Cloud App Security (support technique, prévente, facturation et abonnement), en ligne et par téléphone pour les abonnements payants et les versions d'évaluation. Le support technique en ligne est disponible en anglais et japonais. Le support téléphonique et le support en ligne pour la facturation sont disponibles dans d’autres langues.
+Microsoft fournit un support global pour Microsoft Cloud App Security (support technique, prévente, facturation et abonnement), en ligne et par téléphone pour les abonnements payants et les versions d'évaluation. Le support technique en ligne est disponible en anglais et japonais. Le support par téléphone et le support à la facturation en ligne sont disponibles dans d’autres langues.
 
 En tant qu’administrateur, vous pouvez utiliser l’option **Aide + support** afin de formuler une demande de support en ligne pour Cloud App Security sur le Portail Azure. Pour ce faire, votre compte doit avoir l’un des [rôles d’administrateur suivants dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) :
 
@@ -68,7 +68,7 @@ Sélectionnez **Demande de support** pour créer une demande de support qui s’
 
 5.  Vérifiez que les informations sont correctes, puis choisissez **Créer** pour envoyer votre demande de support.
 
-**Remarque :** Si vous avez une question sur la facturation ou sur l’abonnement, vous pouvez ouvrir un incident pour obtenir un support du [Centre d’administration Office](https://portal.office.com/Support/SupportEntry.aspx).
+**Remarque :** Si vous avez une question de facturation ou d’abonnement, vous pouvez ouvrir un incident pour obtenir un support technique le [centre d’administration Microsoft 365](https://portal.office.com/Support/SupportEntry.aspx).
 
 ### <a name="view-open-support-requests"></a>Afficher les demandes de support ouvertes
 
