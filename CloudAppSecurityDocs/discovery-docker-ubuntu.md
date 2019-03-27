@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 12/10/2018
+ms.date: 3/19/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 7e0c1d5bc257c6f4c9586a607ccaf26b7c5d6aea
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 4085cff828e8af6190bb0a46ff0306e2c64d87ab
+ms.sourcegitcommit: fe4cd2174f6dc83811a2d484f079e8dfbac5d082
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56282016"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476601"
 ---
 # <a name="docker-on-ubuntu-and-rhel-on-premises"></a>Docker sur Ubuntu et RHEL (local)
 
@@ -30,11 +30,11 @@ Vous pouvez configurer le chargement automatique des journaux pour des rapports 
 
 ## <a name="technical-requirements"></a>Spécifications techniques
 
-- Système d’exploitation : Ubuntu 14.04, 16.04 et 18.04 ; ou RHEL 7.2 ou ultérieur 
+- Système d’exploitation : Ubuntu 14.04, 16.04 et 18.04 ; RHEL 7.2 ou ultérieur, ou CentOS 7.2 ou ultérieur 
 
 - Espace disque : 250 Go
 
-- UC : 2
+- PROCESSEUR : 2
 
 - RAM : 4 Go
 
@@ -72,10 +72,10 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
 
      d. Comparez votre journal à l’exemple de format de journal attendu. Si le format de votre fichier journal ne correspond pas à cet exemple, vous devez ajouter votre source de données en sélectionnant **Autre**.
 
-     e. Définissez le **Type de récepteur** sur **FTP**, **FTPS**, **Syslog – UDP** ou **Syslog – TCP** ou **Syslog – TLS**.
+     e. Définissez le **Type de récepteur** sur **FTP**, **FTPS**, **Syslog – UDP**, **Syslog – TCP** ou **Syslog – TLS**.
      
      >[!NOTE]
-     >L’intégration à des protocoles de transfert sécurisés (FTPS et Syslog – TLS) nécessite souvent un paramètre supplémentaire ou votre pare-feu/proxy.
+     >L’intégration aux protocoles de transfert sécurisé (FTPS et Syslog – TLS) nécessite souvent que des paramètres supplémentaires soient configurés dans votre pare-feu/proxy.
 
       f. Répétez ce processus pour chaque pare-feu ou proxy dont les journaux peuvent être utilisés pour détecter le trafic sur votre réseau. Nous vous recommandons de configurer une source de données dédiée par appareil réseau pour vous permettre de :
      - Superviser l’état de chaque appareil séparément à des fins d’investigation
@@ -89,7 +89,7 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
 
    c. Entrez l’**adresse IP de l’hôte** de la machine sur laquelle sera déployé le Docker. L’adresse IP de l’hôte peut être remplacée par le nom de l’ordinateur s’il existe un serveur DNS (ou un équivalent) qui résout le nom d’hôte.
 
-   d. Sélectionnez toutes les **Sources de données** que vous voulez connecter au collecteur, puis cliquez sur **Mettre à jour** pour enregistrer la configuration et consulter les étapes suivantes du déploiement.
+   d. Sélectionnez toutes les **sources de données** que vous voulez connecter au collecteur, puis cliquez sur **Mettre à jour** pour enregistrer la configuration et afficher les étapes de déploiement suivantes.
 
    ![ubuntu2](./media/ubuntu2.png)
 
@@ -104,9 +104,9 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
    ![Créer le collecteur de journaux](./media/windows7.png)
 
 ### <a name="step-2--on-premises-deployment-of-your-machine"></a>Étape 2 : Déploiement local de votre ordinateur
-La procédure suivante décrit le déploiement dans Ubuntu. Les étapes de déploiement pour d’autres plateformes sont légèrement différentes.
+La procédure suivante décrit le déploiement dans Ubuntu. La procédure de déploiement pour les autres plateformes est légèrement différente.
 
-1. Ouvrez un terminal sur votre ordinateur Ubuntu.
+1. Ouvrez un terminal sur votre machine Ubuntu.
 
 2. Changez les privilèges racine à l’aide de la commande : `sudo -i`
 
@@ -150,7 +150,7 @@ Consultez l’état du collecteur dans le tableau **Collecteur de journaux** et 
 
  ![ubuntu9](./media/ubuntu9.png)
 
-Vous pouvez aussi accéder au **journal de gouvernance** et vérifier que les journaux sont régulièrement chargés sur le portail.
+Vous pouvez également accéder au **Journal de gouvernance** et vérifier que les journaux sont régulièrement chargés sur le portail.
 
 Si vous rencontrez des problèmes lors du déploiement, consultez [Dépannage de Cloud Discovery](troubleshooting-cloud-discovery.md).
 

@@ -15,12 +15,12 @@ ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2d17d646479e9686c2ebbeb3c4675cf8dff2ee1d
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: cc861a9b9c655039bc9fa87298d553a7bf9a9294
+ms.sourcegitcommit: fe4cd2174f6dc83811a2d484f079e8dfbac5d082
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281659"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476669"
 ---
 # <a name="azure-information-protection-integration"></a>Intégration d’Azure Information Protection
 
@@ -92,7 +92,7 @@ Après avoir activé Azure Information Protection, vous pouvez voir les fichiers
 
 
 > [!NOTE] 
-> L’analyse automatique ne retraite les fichiers existants que s’ils sont modifiés. Si vous voulez analyser les fichiers existants pour les étiquettes de classification Azure Information Protection, vous devez avoir au moins une **stratégie Fichier d’inspection de contenu**. Si vous n’en avez aucune, créez une **stratégie Fichier**, supprimez tous les filtres prédéfinis et sélectionnez l’option **Inspection de contenu**. Ensuite, sous **Inspection de contenu**, cliquez sur **Inclure les fichiers qui correspondent à une expression prédéfinie**, sélectionnez une valeur prédéfinie et enregistrez la stratégie. Cette opération permet d’activer l’inspection de contenu qui détecte automatiquement les étiquettes de classification Azure Information Protection.
+> L’analyse automatique ne retraite les fichiers existants que s’ils sont modifiés. Pour analyser les fichiers existants pour les étiquettes de classification Azure Information Protection, vous devez avoir au moins une **stratégie de fichier** qui inclut l’inspection du contenu. Si vous avez none, créez un **stratégie de fichier**, supprimez tous les filtres prédéfinis, sous **méthode d’Inspection** sélectionnez **DLP intégré**. Dans le **inspection du contenu** champ, sélectionnez **incluent les fichiers qui correspondent à une expression prédéfinie** et sélectionnez une valeur prédéfinie et enregistrez la stratégie. Cette opération permet d’activer l’inspection de contenu qui détecte automatiquement les étiquettes de classification Azure Information Protection.
 
 #### <a name="set-internal-and-external-tags"></a>Définir des étiquettes internes et externes
 Par défaut, Cloud App Security analyse les étiquettes de classification qui ont été définies dans votre organisation, ainsi que les étiquettes externes définies par d’autres organisations. 
@@ -137,7 +137,7 @@ Suivez ces instructions pour créer la stratégie de fichier :
    ![Appliquer une étiquette](./media/aip-gov-action.png)
 
 > [!NOTE]
-> La possibilité d’appliquer automatiquement une étiquette Azure Information Protection via la stratégie de fichier est une puissante fonctionnalité. Pour protéger les clients contre toute application par erreur d’une étiquette à un grand nombre de fichiers, il existe, pour des raisons de sécurité, une limite quotidienne de 100 actions **Appliquer une étiquette** par application et le client. Une fois la limite quotidienne atteinte, l’action Appliquer une étiquette est temporairement interrompue, puis reprend automatiquement le jour suivant (après 12:00 UTC). Pour augmenter la limite de votre client, [contactez le support Cloud App Security](mailto:cascoresupport@microsoft.com).
+> La possibilité d’appliquer automatiquement une étiquette Azure Information Protection via une stratégie de fichier est une puissante fonctionnalité. Pour protéger les clients contre l’application par erreur d’une étiquette à un grand nombre de fichiers, il existe, pour des raisons de sécurité, une limite quotidienne de 100 actions **Appliquer une étiquette** par application et par client. Une fois cette limite quotidienne atteinte, l’action Appliquer une étiquette s’interrompt temporairement et reprend automatiquement le jour suivant (après 12:00 UTC). Pour augmenter la limite de votre client, [contactez le support Cloud App Security](mailto:cascoresupport@microsoft.com).
 
 ### <a name="control-file-exposure"></a>Contrôler l’exposition des fichiers
 

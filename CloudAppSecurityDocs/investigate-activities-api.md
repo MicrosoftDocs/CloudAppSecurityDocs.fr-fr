@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 3/17/2019
+ms.date: 03/26/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,23 +15,25 @@ ms.assetid: 0f2f971d-10e3-496d-8004-96d9fad71cae
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 233df1cf7f01266bbca6c122a6908811e4c6649b
-ms.sourcegitcommit: 57bad4dc9b28326c93ee480d308d52ea23c42089
+ms.openlocfilehash: a4d91f196cb8d2bab51a2688c07f0654317765f3
+ms.sourcegitcommit: fe4cd2174f6dc83811a2d484f079e8dfbac5d082
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58163870"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476448"
 ---
 # <a name="investigate-activities-using-the-api"></a>Examiner les activités à l’aide de l’API
 
 *S’applique à : Microsoft Cloud App Security*
+
+Microsoft Cloud App Security vous offre une API REST entièrement pris en charge pour vous permettre d’interagir par programmation avec le service.
 
 Vous pouvez utiliser l’API Microsoft Cloud App Security pour examiner les activités effectuées par vos utilisateurs sur des applications cloud connectées. 
 
 Le mode de API d’activités Cloud App Security est optimisé pour l’analyse et la récupération de grandes quantités de données (plus de 5 000 activités). L’API analyse les données d’activité des requêtes à plusieurs reprises jusqu'à ce que tous les résultats ont été analysés. 
 
 > [!NOTE] 
-> Pour grandes quantités d’activités et les déploiements à grande échelle, nous recommendedthat que vous utilisez le [agent SIEM](siem.md) pour l’analyse de l’activité.
+> Pour grandes quantités d’activités et les déploiements à grande échelle, il est recommandé que vous utilisez le [agent SIEM](siem.md) pour l’analyse de l’activité.
 
 **Pour utiliser l’analyse de l’activité API :**
 
@@ -53,7 +55,7 @@ Le mode de API d’activités Cloud App Security est optimisé pour l’analyse 
 - « hasNext » : Valeur booléenne. Indique si une autre itération sur les données est nécessaire.
 - “nextQueryFilters”: Si une autre itération est nécessaire, elle contient la requête JSON consécutif à exécuter. Utilisez-le en tant que le paramètre « filtres » dans la demande suivante.
 
-
+L’exemple Python suivant obtient toutes les activités à partir du jour de cours à partir d’Exchange Online.
 
       import requests
       import json
