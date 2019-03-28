@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 2/17/2019
+ms.date: 3/17/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b8d55cfc5034048a3dbd4833f7d663f7d1f8dbce
-ms.sourcegitcommit: cb049bf15ccc02ec462d7ea6bbaa99ac8c0fa18d
+ms.openlocfilehash: 71e6de2b5894c3d0600f0fad6b4c1972868a1586
+ms.sourcegitcommit: fe4cd2174f6dc83811a2d484f079e8dfbac5d082
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57830504"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476652"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Nouveautés de Microsoft Cloud App Security
 
@@ -28,7 +28,34 @@ ms.locfileid: "57830504"
 
 Cet article est mis à jour fréquemment pour vous informer des nouveautés de la dernière version de Cloud App Security.
 
-Flux RSS : Recevez une notification quand cette page est mise à jour en copiant et collant l’URL suivante dans votre lecteur de flux : `https://docs.microsoft.com/api/search/rss?search=%22What%27s+new+with+microsoft+cloud+app+security%3F+-+Azure%22&locale=en-us`
+Flux RSS : Recevez une notification quand cette page est mise à jour en copiant et collant l’URL suivante dans votre lecteur de flux : `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
+
+
+## <a name="cloud-app-security-release-145"></a>Cloud App Security version 145
+
+Date de publication : 17 mars 2019
+
+- **L’intégration de Windows Defender ATP est en disponibilité générale** <br>
+L’année dernière, nous avons annoncé l’[intégration à Windows Defender Advanced Threat Protection](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Microsoft-Cloud-App-Security-and-Windows-Defender-ATP-better/ba-p/263265) qui améliore la découverte de Shadow IT dans votre organisation et l’étend au-delà du réseau d’entreprise. [Activée en un seul clic](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWtNmG), nous sommes heureux d’annoncer que cette intégration unique est maintenant en disponibilité générale.
+- **Prise en charge de Dynamics 365** <br>Cloud App Security a ajouté des fonctionnalités de supervision et de contrôle en temps réel pour Dynamics 365, afin de vous permettre de protéger vos applications métier et le contenu sensible stocké dans ces applications. 
+
+## <a name="cloud-app-security-release-144"></a>Cloud App Security version 144
+
+Date de publication : 3 mars 2019
+
+- **Investigation unifiée de SecOps pour les environnements hybrides**<br> Étant donné que de nombreuses organisations ont des environnements hybrides, les attaques démarrent dans le cloud avant de basculer en local, ce qui signifie que les équipes SecOps doivent investiguer ces attaques depuis différents endroits. En combinant les signaux provenant de sources cloud et locales, dont Microsoft Cloud App Security, Azure ATP et Azure AD Identity Protection, Microsoft donne une plus grande autonomie aux analystes de sécurité en fournissant des informations unifiées sur les identités et les utilisateurs dans une console unique, ce qui élimine le besoin de basculer entre les solutions de sécurité. Vos équipes SecOps disposent ainsi de plus de temps et des bonnes informations pour prendre de meilleures décisions et pallier activement les véritables risques et menaces relatives à l’identité. Pour plus d’informations, consultez [Unified SecOps Investigation for Hybrid Environments](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Unified-SecOps-Investigation-for-Hybrid-Environments/ba-p/360850)
+
+
+- **Fonctionnalités de sandboxing pour la détection de programmes malveillants** (lancement progressif)<br>
+Les fonctionnalités de détection de programmes malveillants de Cloud App Security sont développées pour inclure la capacité à identifier les logiciels malveillants à effet immédiat via une technologie de sandboxing avancée.<br>
+Dans le cadre de cette fonctionnalité, Cloud App Security identifie automatiquement les fichiers suspects et les détone pour rechercher un comportement de fichier suspect et des indicateurs que le fichier a un but malveillant (programme malveillant). <br>
+Dans le cadre de ce changement, les stratégies de détection de programmes malveillants incluent désormais un champ de type de détection qui vous permet de filtrer par Threat Intelligence ainsi que par sandboxing.
+- **Mises à jour de l’accès conditionnel**<br> Avec le contrôle d’application par accès conditionnel, vous avez maintenant la possibilité de superviser et de bloquer les activités suivantes :
+    - Chargements de fichiers dans les applications : permet des scénarios tels que l’interdiction du chargement des extensions de logiciels malveillants connus et la garantie que les utilisateurs protègent les fichiers avec AIP avant le chargement.
+    - Fonction copier-coller dans les applications : complète les contrôles fiables d’exfiltration de données qui comprenaient déjà le contrôle des activités de téléchargement, d’impression et personnalisées telles que le partage.
+    - Envoyer un message : garantie que les données PII comme les mots de passe ne sont pas partagées dans les outils de collaboration populaires tels que Slack, Salesforce et Workplace by Facebook.
+- Les stratégies de session incluent désormais des modèles intégrés pour permettre à votre organisation d’activer sans effort une supervision et un contrôle en temps réel de vos applications approuvées, comme **Bloquer le chargement en fonction de l’inspection du contenu en temps réel**.
+
 
 
 ## <a name="cloud-app-security-release-143"></a>Cloud App Security mise en production 143
