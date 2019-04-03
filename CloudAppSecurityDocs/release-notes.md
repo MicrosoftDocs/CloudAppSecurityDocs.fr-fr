@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 3/17/2019
+ms.date: 3/31/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 71e6de2b5894c3d0600f0fad6b4c1972868a1586
-ms.sourcegitcommit: fe4cd2174f6dc83811a2d484f079e8dfbac5d082
+ms.openlocfilehash: ba30d7e563b7b36c8be6bfcb30eccbe93cba1cd2
+ms.sourcegitcommit: 465b386d56f64d81a72fa03326c9ad19079362cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476652"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58763696"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Nouveautés de Microsoft Cloud App Security
 
@@ -30,6 +30,19 @@ Cet article est mis à jour fréquemment pour vous informer des nouveautés de l
 
 Flux RSS : Recevez une notification quand cette page est mise à jour en copiant et collant l’URL suivante dans votre lecteur de flux : `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
 
+
+## <a name="cloud-app-security-release-146"></a>Cloud App Security version 146
+
+Date de publication : 31 mars 2019
+
+- **Amélioration du voyage impossible**<br>
+La détection d’un voyage impossible a été améliorée avec une prise en charge dédiée pour les pays voisins.
+- **Prise en charge d’attributs supplémentaires pour l’analyseur CEF générique**<br>
+La prise en charge de l’analyseur du journal Cloud Discovery pour le format CEF générique a été améliorée pour prendre en charge des attributs supplémentaires.
+- **Accès étendu aux rapports Cloud Discovery**<br>
+En plus du rôle Discovery Admin, vous pouvez maintenant étendre l’accès à des rapports Discovery spécifiques. Cette amélioration vous permet de configurer des privilèges d’accès aux données de sites et divisions spécifiques.
+- **Nouvelle prise en charge de rôle : lecteur général**<br>
+Microsoft Cloud App Security prend désormais en charge le rôle de lecteur général Azure AD. Le lecteur général dispose d’un accès complet en lecture seule à tous les aspects de Microsoft Cloud App Security, mais il ne peut ni modifier des paramètres ni prendre aucune mesure.
 
 ## <a name="cloud-app-security-release-145"></a>Cloud App Security version 145
 
@@ -390,9 +403,9 @@ Date de publication : 4 mars 2018
 - Vous pouvez désormais effectuer des actions en bloc dans les pages Exclure des entités et Exclure une adresse IP. Vous pouvez ainsi sélectionner plus facilement plusieurs utilisateurs, groupes ou adresses IP, et les exclure de l’analyse dans le cadre de la solution Cloud Discovery de votre organisation. 
 
 ## <a name="cloud-app-security-release-117"></a>Cloud App Security version 117
-Date de publication : 20 février 2018
+Date de publication : 20 février 2018
 
--   L’intégration approfondie de Cloud App Security avec Azure Information Protection vous permet désormais de protéger des fichiers dans G Suite. Cette fonctionnalité en préversion publique vous permet d’analyser et de classifier des fichiers dans G Suite, et d’appliquer automatiquement des étiquettes Azure Information Protection pour la protection. Pour plus d’informations, consultez [Intégration d’Azure Information Protection](azip-integration.md).
+-   L’intégration plus poussée de Cloud App Security avec Azure Information Protection vous permet désormais de protéger les fichiers dans G Suite. Cette fonctionnalité en préversion publique vous permet d’analyser et de classifier des fichiers dans G Suite, et d’appliquer automatiquement des étiquettes Azure Information Protection pour la protection. Pour plus d’informations, consultez [Intégration d’Azure Information Protection](azip-integration.md).
 
 -   Cloud Discovery prend désormais en charge [Digital Arts i-FILTER](https://www.daj.jp/en/products/if/).
 
