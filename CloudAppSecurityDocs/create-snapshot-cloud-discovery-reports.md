@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 1/27/2019
+ms.date: 04/07/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9c819aa1e9b71007a158a388272d1f37cf9412df
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 4381c872d9e17294e1a5b8767243f9afc6e797b0
+ms.sourcegitcommit: 28b3ab878b1fc403d2c3b617e989f711320530d4
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281336"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59233562"
 ---
 # <a name="create-snapshot-cloud-discovery-reports"></a>Créer des rapports d’instantanés Cloud Discovery
 
@@ -56,7 +56,7 @@ Pour créer un rapport d’instantané :
 
 6. **Choisissez les journaux de trafic** à charger. Vous pouvez charger jusqu’à 20 fichiers à la fois. Les fichiers compressés et zippés sont également pris en charge.  
   
-7. Cliquez sur **Créer**.  
+7. Cliquez sur **Create (Créer)**.  
 
 8. Une fois le chargement terminé, un message d’état s’affiche dans le coin supérieur droit de votre écran pour vous informer que le journal a correctement été chargé.  
   
@@ -91,7 +91,7 @@ Par conséquent, ces attributs ne sont pas affichés dans les données Cloud Dis
 
 
 Pour générer correctement un rapport Cloud Discovery, vos journaux de trafic doivent respecter les conditions suivantes :
-1. La source de données est prise en charge (voir la liste ci-dessous).
+1. [Source de données est prise en charge](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
 2. Le format de journal correspond au format standard attendu (le format est vérifié lors du chargement par l’outil Log).
 3. Les événements ne datent pas de plus de 90 jours.
 4. Le fichier journal est valide et comprend des informations sur le trafic sortant.

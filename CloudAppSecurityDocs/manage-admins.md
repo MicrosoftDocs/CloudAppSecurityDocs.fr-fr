@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 1/27/2019
+ms.date: 04/04/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 90cc081f33b30ac3b4774c7292752d1c27dddd0c
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 83e2adb5d0890c926843403a6bdf1d0087abb007
+ms.sourcegitcommit: 28b3ab878b1fc403d2c3b617e989f711320530d4
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281223"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59233545"
 ---
 # <a name="manage-admin-access"></a>Gérer l’accès administrateur
 
@@ -62,7 +62,7 @@ Par défaut, les rôles d’administrateur Office 365 et [Azure Active Director
   - Extensions de sécurité : autorisations uniquement pour un jeton d’API avec des autorisations utilisateur
   - Actions de gouvernance : uniquement pour l’application/instance spécifique 
 
-- **Administrateur de groupe :** Dispose des autorisations pour toutes les données dans Microsoft Cloud App Security qui portent exclusivement sur le groupe spécifique sélectionné ici. Par exemple, si vous accordez à un utilisateur l’autorisation d’administrateur sur le groupe « Allemagne - tous les utilisateurs », l’administrateur peut visualiser et modifier les informations dans Microsoft Cloud App Security uniquement pour ce groupe d’utilisateurs :
+- **Administrateur de groupe utilisateur :** Dispose des autorisations pour toutes les données dans Microsoft Cloud App Security qui portent exclusivement sur le groupe spécifique sélectionné ici. Par exemple, si vous accordez à un utilisateur l’autorisation d’administrateur sur le groupe « Allemagne - tous les utilisateurs », l’administrateur peut visualiser et modifier les informations dans Microsoft Cloud App Security uniquement pour ce groupe d’utilisateurs :
 
   - Page des activités : seules les activités concernant les utilisateurs dans le groupe
   - Alertes : seules les alertes relatives aux utilisateurs dans le groupe
@@ -75,7 +75,7 @@ Par défaut, les rôles d’administrateur Office 365 et [Azure Active Director
   - Extensions de sécurité : autorisations uniquement pour un jeton d’API avec les utilisateurs dans le groupe
   - Actions de gouvernance : uniquement pour les utilisateurs spécifiques dans le groupe
 
-- **Administrateur Global Discovery :**  A l’autorisation d’afficher et de modifier l’ensemble des données et paramètres Cloud Discovery. L’administrateur Global Discovery a accès comme suit :
+- **Administrateur général de cloud Discovery :**  A l’autorisation d’afficher et de modifier l’ensemble des données et paramètres Cloud Discovery. L’administrateur Global Discovery a accès comme suit :
 
   - Paramètres - 
      -  Paramètres du système - Affichage uniquement
@@ -91,6 +91,11 @@ Par défaut, les rôles d’administrateur Office 365 et [Azure Active Director
   - Extensions de sécurité - Aucune autorisation
   - Actions liées à la gouvernance - Cloud Discovery uniquement
 
+- **Administrateur de rapports cloud Discovery :** Dispose des autorisations pour afficher toutes les données dans Microsoft Cloud App Security qui concerne exclusivement les rapports Cloud Discovery spécifiques sélectionné. Par exemple, vous pouvez autoriser un utilisateur admin pour le rapport continu à partir de Windows Defender ATP. L’administrateur de découverte s’affiche uniquement les données de découverte du Cloud est lié à la source de données et au catalogue d’applications.
+Cet administrateur n’a pas accès à la **activités** ou **fichiers** pages et un accès limité aux stratégies.
+
+- **Lecteur global :** A un accès complet en lecture seule à tous les aspects de Microsoft Cloud App Security. Impossible de modifier des paramètres ou de prendre toutes les actions.
+ 
 ## <a name="override-admin-permissions"></a>Remplacer les autorisations d’administrateur
 
 Si vous souhaitez remplacer une autorisation d’administrateur dans Azure Active Directory ou Office 365, vous pouvez le faire manuellement en ajoutant l’utilisateur à Cloud App Security et en lui affectant des autorisations.
