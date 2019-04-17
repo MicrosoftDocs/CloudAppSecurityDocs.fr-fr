@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 3/22/2019
+ms.date: 04/16/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: c43271fd-9a61-4727-9945-de1c6ea5422c
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 09555165697ee66a84c99d4f3a5790f22b4d17d6
-ms.sourcegitcommit: fe4cd2174f6dc83811a2d484f079e8dfbac5d082
+ms.openlocfilehash: 764ca55b076c837b784ddc82ef3b4337bc9a8fcd
+ms.sourcegitcommit: ec7ae3cd7648fa62d7a7925f8693dcb99b0b0d26
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476964"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "59622352"
 ---
 # <a name="connect-cisco-webex-to-microsoft-cloud-app-security"></a>Connecter Cisco WebEx à Microsoft Cloud App Security
 
@@ -30,7 +30,9 @@ Cet article fournit des instructions pour connecter Microsoft Cloud App Security
  
 ## <a name="prerequisites"></a>Prérequis
 
-Nous vous suggérons de créer un compte de service dédié pour la connexion. Elles permettent de voir que les actions de gouvernance effectuées dans WebEx comme en cours d’exécution à partir de ce compte, telles que suppriment les messages envoyés dans WebEx. Sinon, le nom de l’administrateur qui se sont connectés de Cloud App Security à WebEx apparaîtra en tant que l’utilisateur qui a effectué les actions.  
+- Nous vous suggérons de créer un compte de service dédié pour la connexion. Cela vous permet de voir que les actions de gouvernance effectuées dans WebEx comme en cours d’exécution à partir de ce compte, telles que suppriment les messages envoyés dans WebEx. Sinon, le nom de l’administrateur qui se sont connectés de Cloud App Security à WebEx apparaîtra en tant que l’utilisateur qui a effectué les actions.  
+- Vous devez disposer d’administrateur complet **et** autorisations d’administrateur de conformité dans WebEx.
+
 
 ## <a name="how-to-connect-webex-to-cloud-app-security"></a>Comment se connecter WebEx à Cloud App Security  
   
