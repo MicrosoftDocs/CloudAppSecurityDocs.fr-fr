@@ -1,240 +1,231 @@
-items:
 - name: Documentation de Microsoft Cloud App Security
   href: index.yml
 - name: Vue d’ensemble
   items:
-  - name: Qu’est-ce que Microsoft Cloud App Security ?
-    href: what-is-cloud-app-security.md
-  - name: Sécurité et confidentialité des données Cloud App Security
-    href: cas-compliance-trust.md
-  - name: Nouveautés
-    href: release-notes.md
-  - name: Comparer
-    items:
-    - name: Office 365
-      href: editions-cloud-app-security-o365.md
-    - name: Azure AD
-      href: editions-cloud-app-security-aad.md
+    - name: "Qu’est-ce que Microsoft Cloud App Security\_?"
+      href: what-is-cloud-app-security.md
+    - name: Sécurité et confidentialité des données Cloud App Security
+      href: cas-compliance-trust.md
+    - name: Nouveautés
+      href: release-notes.md
+    - name: Comparer
+      items:
+        - name: Office 365
+          href: editions-cloud-app-security-o365.md
+        - name: Azure AD
+          href: editions-cloud-app-security-aad.md
 - name: Guides de démarrage rapide
-  items:
-  - name: Mise en route
-    href: getting-started-with-cloud-app-security.md
-  - name: Utiliser des applications découvertes
-    href: discovered-apps.md
   expanded: true
+  items:
+    - name: Mise en route
+      href: getting-started-with-cloud-app-security.md
+    - name: Utiliser des applications découvertes
+      href: discovered-apps.md
 - name: Didacticiels
   items:
-  - name: Découvrir et gérer le shadow IT
-    href: tutorial-shadow-it.md
-  - name: Examiner des applications OAuth à risque
-    href: investigate-risky-oauth.md
-  - name: Téléchargements en bloc d’informations sensibles
-    href: use-case-proxy-block-session-aad.md
-  - name: Protection de vos fichiers avec la mise en quarantaine administrateur
-    href: use-case-admin-quarantine.md
-  - name: Appliquer automatiquement des étiquettes Azure Information Protection
-    href: use-case-information-protection.md
+    - name: Découvrir et gérer le shadow IT
+      href: tutorial-shadow-it.md
+    - name: Examiner des applications OAuth à risque
+      href: investigate-risky-oauth.md
+    - name: Téléchargements en bloc d’informations sensibles
+      href: use-case-proxy-block-session-aad.md
+    - name: Protection de vos fichiers avec la mise en quarantaine administrateur
+      href: use-case-admin-quarantine.md
+    - name: Appliquer automatiquement des étiquettes Azure Information Protection
+      href: use-case-information-protection.md
 - name: Concepts
   items:
-  - name: Protéger les applications à l’aide du contrôle d’application par accès conditionnel
-    href: proxy-intro-aad.md
-  - name: Utilisation du tableau de bord
-    href: daily-activities-to-protect-your-cloud-environment.md
-  - name: Utilisation du score de risque
-    href: risk-score.md
+    - name: Protéger les applications à l’aide du contrôle d’application par accès conditionnel
+      href: proxy-intro-aad.md
+    - name: Utilisation du tableau de bord
+      href: daily-activities-to-protect-your-cloud-environment.md
+    - name: Utilisation du score de risque
+      href: risk-score.md
 - name: Guides pratiques
   items:
-  - name: Configuration de base
-    href: general-setup.md
-    items:
-    - name: Conditions requises en matière de réseau
-      href: network-requirements.md
-    - name: Gérer les administrateurs
-      href: manage-admins.md
+    - name: Configuration de base
+      href: general-setup.md
       items:
-      - name: Paramètres d’administration
-        href: admin-settings.md
-    - name: Paramètres de messagerie
-      href: mail-settings.md
-    - name: Groupes d'utilisateurs
-      href: user-groups.md
-    - name: Déploiement étendu
-      href: scoped-deployment.md
-    - name: Balises et plages IP
-      href: ip-tags.md
-  - name: Configurer Cloud Discovery
-    href: set-up-cloud-discovery.md
-    items:
-    - name: Intégrer avec Windows Defender ATP
-      href: wdatp-integration.md
-    - name: Intégrer avec Zscaler
-      href: zscaler-integration.md
-    - name: Intégrer à iboss
-      href: iboss-integration.md
-    - name: Créer des rapports d’instantanés Cloud Discovery
-      href: create-snapshot-cloud-discovery-reports.md
-    - name: Configurer le chargement automatique des journaux pour des rapports continus
-      href: discovery-docker.md
-      items:
-      - name: Docker sur Windows
-        href: discovery-docker-windows.md
-      - name: Docker sur Ubuntu et RHEL (local)
-        href: discovery-docker-ubuntu.md
-      - name: Docker sur Ubuntu dans Azure
-        href: discovery-docker-ubuntu-azure.md
-      - name: Résolution des problèmes du déploiement Docker Cloud Discovery
-        href: troubleshoot-docker.md
-      - name: Collecteur de journaux derrière un proxy
-        href: log-collector-proxy.md
-      - name: Utilisation d’une appliance virtuelle - Dépréciée
-        href: configure-automatic-log-upload-for-continuous-reports.md
-    - name: Utiliser l’analyseur de journal personnalisé
-      href: custom-log-parser.md
-    - name: Enrichissement de Cloud Discovery
-      href: cloud-discovery-aad-enrichment.md
-    - name: Anonymiser les données Cloud Discovery
-      href: cloud-discovery-anonymizer.md
-  - name: Connecter des applications
-    href: enable-instant-visibility-protection-and-governance-actions-for-your-apps.md
-    items:
-    - name: Connecter Azure
-      href: connect-azure-to-microsoft-cloud-app-security.md
-    - name: Connecter AWS
-      href: connect-aws-to-microsoft-cloud-app-security.md
-    - name: Connecter Box
-      href: connect-box-to-microsoft-cloud-app-security.md
-    - name: Connecter Dropbox
-      href: connect-dropbox-to-microsoft-cloud-app-security.md
-    - name: Connecter G Suite
-      href: connect-google-apps-to-microsoft-cloud-app-security.md
-    - name: Connecter Office 365
-      href: connect-office-365-to-microsoft-cloud-app-security.md
-    - name: Connecter Okta
-      href: connect-okta-to-microsoft-cloud-app-security.md
-    - name: Connecter Salesforce
-      href: connect-salesforce-to-microsoft-cloud-app-security.md
-    - name: Connecter ServiceNow
-      href: connect-servicenow-to-microsoft-cloud-app-security.md
-  - name: Déployer le Contrôle d’application par accès conditionnel Azure AD
-    href: proxy-deployment-aad.md
-  - name: Découvrir
-    items:
-    - name: Ajouter des applications personnalisées à Cloud Discovery
-      href: cloud-discovery-custom-apps.md
-    - name: Filtres et requêtes d’applications découvertes
-      href: discovered-app-queries.md
-  - name: Investigation
-    href: investigate.md
-    items:
-    - name: Activités
-      href: activity-filters.md
-      items:
-      - name: Filtres et requêtes d’activités
-        href: activity-filters-queries.md
-    - name: Fichiers
-      href: file-filters.md
-      items:
-      - name: Générer des rapports de gestion de données
-        href: built-in-reports.md
-    - name: Comptes
-      href: accounts.md
-    - name: Gérer les applications OAuth
-      href: manage-app-permissions.md
-    - name: Configuration de la sécurité
-      href: security-config.md
-    - name: Superviser les applications
-      href: monitor-alerts.md
-      items:
-      - name: Gérer les alertes
-        href: managing-alerts.md
-  - name: Control
-    href: control.md
-    items:
-    - name: Contrôler les applications cloud avec des stratégies
-      href: control-cloud-apps-with-policies.md
-      items:
-      - name: Stratégies Cloud Discovery
-        href: cloud-discovery-policies.md
-        items:
-        - name: Stratégie de détection des anomalies de Cloud Discovery
-          href: cloud-discovery-anomaly-detection-policy.md
-      - name: Stratégies d’activité
-        href: user-activity-policies.md
-      - name: Stratégies de détection des anomalies
-        href: anomaly-detection-policy.md
-      - name: Stratégies d’OAuth
-        href: app-permission-policy.md
-      - name: Stratégies de fichier
-        href: data-protection-policies.md
-        items:
-        - name: Inspection du contenu
-          href: content-inspection.md
+        - name: Conditions requises en matière de réseau
+          href: network-requirements.md
+        - name: Gérer les administrateurs
+          href: manage-admins.md
           items:
-          - name: Inspection du contenu intégré
-            href: content-inspection-built-in.md
-          - name: Intégration du Service de classification des données
-            href: dcs-inspection.md
-          - name: En utilisant l’inspection du contenu
-            href: working-with-the-regex-engine.md
-      - name: Stratégies de contrôle d’application d’accès conditionnel
-        items:
-        - name: Stratégies d’accès
-          href: access-policy-aad.md
-        - name: Stratégies de session
-          href: session-policy-aad.md
-      - name: Informations de référence sur les modèles de stratégie
-        href: policy-template-reference.md
-    - name: Gouverner les applications connectées
-      href: governance-actions.md
-    - name: Gouverner les applications découvertes
-      href: governance-discovery.md
-    - name: Intégration d’Azure Information Protection
-      href: azip-integration.md
-    - name: Intégrer avec des solutions externes
+            - name: Paramètres d’administration
+              href: admin-settings.md
+        - name: Paramètres de messagerie
+          href: mail-settings.md
+        - name: Groupes d'utilisateurs
+          href: user-groups.md
+        - name: Déploiement étendu
+          href: scoped-deployment.md
+        - name: Balises et plages IP
+          href: ip-tags.md
+    - name: Configurer Cloud Discovery
+      href: set-up-cloud-discovery.md
       items:
-      - name: Intégration à SIEM
-        href: siem.md
-      - name: Intégration DLP externe
-        href: icap-stunnel.md
-    - name: Automatiser les processus et les workflows
+        - name: Intégrer avec Microsoft Defender ATP
+          href: wdatp-integration.md
+        - name: Intégrer avec Zscaler
+          href: zscaler-integration.md
+        - name: Intégrer à iboss
+          href: iboss-integration.md
+        - name: Créer des rapports d’instantanés Cloud Discovery
+          href: create-snapshot-cloud-discovery-reports.md
+        - name: Configurer le chargement automatique des journaux pour des rapports continus
+          href: discovery-docker.md
+          items:
+            - name: Docker sur Windows
+              href: discovery-docker-windows.md
+            - name: Docker sur Ubuntu et RHEL (local)
+              href: discovery-docker-ubuntu.md
+            - name: Docker sur Ubuntu dans Azure
+              href: discovery-docker-ubuntu-azure.md
+            - name: Résolution des problèmes du déploiement Docker Cloud Discovery
+              href: troubleshoot-docker.md
+            - name: Collecteur de journaux derrière un proxy
+              href: log-collector-proxy.md
+        - name: Utiliser l’analyseur de journal personnalisé
+          href: custom-log-parser.md
+        - name: Enrichissement de Cloud Discovery
+          href: cloud-discovery-aad-enrichment.md
+        - name: Anonymiser les données Cloud Discovery
+          href: cloud-discovery-anonymizer.md
+    - name: Connecter des applications
+      href: enable-instant-visibility-protection-and-governance-actions-for-your-apps.md
       items:
-      - name: Utiliser l’API REST
-        href: api-tokens.md
-      - name: Examiner les activités avec des API
-        href: investigate-activities-api.md
-      - name: Utiliser Microsoft Flow
-        href: flow-integration.md
+        - name: Connecter Azure
+          href: connect-azure-to-microsoft-cloud-app-security.md
+        - name: Connecter AWS
+          href: connect-aws-to-microsoft-cloud-app-security.md
+        - name: Connecter Box
+          href: connect-box-to-microsoft-cloud-app-security.md
+        - name: Connecter Dropbox
+          href: connect-dropbox-to-microsoft-cloud-app-security.md
+        - name: Connecter G Suite
+          href: connect-google-apps-to-microsoft-cloud-app-security.md
+        - name: "Connecter Office\_365"
+          href: connect-office-365-to-microsoft-cloud-app-security.md
+        - name: Connecter Okta
+          href: connect-okta-to-microsoft-cloud-app-security.md
+        - name: Connecter Salesforce
+          href: connect-salesforce-to-microsoft-cloud-app-security.md
+        - name: Connecter ServiceNow
+          href: connect-servicenow-to-microsoft-cloud-app-security.md
+    - name: Déployer le Contrôle d’application par accès conditionnel Azure AD
+      href: proxy-deployment-aad.md
+    - name: Découvrir
+      items:
+        - name: Ajouter des applications personnalisées à Cloud Discovery
+          href: cloud-discovery-custom-apps.md
+        - name: Filtres et requêtes d’applications découvertes
+          href: discovered-app-queries.md
+    - name: Investigation
+      href: investigate.md
+      items:
+        - name: Activités
+          href: activity-filters.md
+          items:
+            - name: Filtres et requêtes d’activités
+              href: activity-filters-queries.md
+        - name: Fichiers
+          href: file-filters.md
+          items:
+            - name: Générer des rapports de gestion de données
+              href: built-in-reports.md
+        - name: Comptes
+          href: accounts.md
+        - name: Gérer les applications OAuth
+          href: manage-app-permissions.md
+        - name: Configuration de la sécurité
+          href: security-config.md
+        - name: Superviser les applications
+          href: monitor-alerts.md
+          items:
+            - name: Gérer les alertes
+              href: managing-alerts.md
+    - name: Control
+      href: control.md
+      items:
+        - name: Contrôler les applications cloud avec des stratégies
+          href: control-cloud-apps-with-policies.md
+          items:
+            - name: Stratégies Cloud Discovery
+              href: cloud-discovery-policies.md
+              items:
+                - name: Stratégie de détection des anomalies de Cloud Discovery
+                  href: cloud-discovery-anomaly-detection-policy.md
+            - name: Stratégies d’activité
+              href: user-activity-policies.md
+            - name: Stratégies de détection des anomalies
+              href: anomaly-detection-policy.md
+            - name: Stratégies d’OAuth
+              href: app-permission-policy.md
+            - name: Stratégies de fichier
+              href: data-protection-policies.md
+              items:
+                - name: Inspection du contenu
+                  href: content-inspection.md
+                  items:
+                    - name: Inspection du contenu intégré
+                      href: content-inspection-built-in.md
+                    - name: Intégration du Service de classification des données
+                      href: dcs-inspection.md
+                    - name: En utilisant l’inspection du contenu
+                      href: working-with-the-regex-engine.md
+            - name: Stratégies de contrôle d’application d’accès conditionnel
+              items:
+                - name: Stratégies d’accès
+                  href: access-policy-aad.md
+                - name: Stratégies de session
+                  href: session-policy-aad.md
+            - name: Informations de référence sur les modèles de stratégie
+              href: policy-template-reference.md
+        - name: Gouverner les applications connectées
+          href: governance-actions.md
+        - name: Gouverner les applications découvertes
+          href: governance-discovery.md
+        - name: Intégration d’Azure Information Protection
+          href: azip-integration.md
+        - name: Intégrer avec des solutions externes
+          items:
+            - name: Intégration à SIEM
+              href: siem.md
+            - name: Intégration DLP externe
+              href: icap-stunnel.md
+        - name: Automatiser les processus et les workflows
+          items:
+            - name: Utiliser l’API REST
+              href: api-tokens.md
+            - name: Examiner les activités avec des API
+              href: investigate-activities-api.md
+            - name: Utiliser Microsoft Flow
+              href: flow-integration.md
 - name: Référence
   items:
-  - name: Dépannage de Cloud Discovery
-    href: troubleshooting-cloud-discovery.md
-  - name: Résolution des problèmes des connecteurs API à l’aide de messages d’erreur
-    href: troubleshooting-api-connectors-using-error-messages.md
-  - name: Résolution des problèmes d’inspection du contenu
-    href: troubleshooting-content-inspection.md
-  - name: Résolution des problèmes d’intégration de SIEM
-    href: troubleshooting-siem.md
-  - name: Résolution des problèmes du déploiement Docker Cloud Discovery
-    href: troubleshoot-docker.md
-  - name: Résolution des problèmes des stratégies
-    href: troubleshoot-policies.md
+    - name: Dépannage de Cloud Discovery
+      href: troubleshooting-cloud-discovery.md
+    - name: Résolution des problèmes des connecteurs API à l’aide de messages d’erreur
+      href: troubleshooting-api-connectors-using-error-messages.md
+    - name: Résolution des problèmes d’inspection du contenu
+      href: troubleshooting-content-inspection.md
+    - name: Résolution des problèmes d’intégration de SIEM
+      href: troubleshooting-siem.md
+    - name: Résolution des problèmes du déploiement Docker Cloud Discovery
+      href: troubleshoot-docker.md
+    - name: Résolution des problèmes des stratégies
+      href: troubleshoot-policies.md
 - name: Ressources
   items:
-  - name: Archives des notes de publication
-    href: release-note-archive.md
-  - name: Fiche technique sur les licences
-    href: https://aka.ms/mcaslicensing
-  - name: Support et dépannage
-    href: support-and-ts.md
-  - name: Portail du Support Premier
-    href: https://premier.microsoft.com/
-  - name: Portail Cloud App Security
-    href: https://portal.cloudappsecurity.com
-  - name: Comment acheter Cloud App Security
-    href: https://www.microsoft.com/cloud-platform/cloud-app-security
-ms.openlocfilehash: d8ffcb45236d42317c4ca0f0fde899f7b0c1d4ac
-ms.sourcegitcommit: ec7ae3cd7648fa62d7a7925f8693dcb99b0b0d26
-ms.translationtype: HT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "59622369"
+    - name: Archives des notes de publication
+      href: release-note-archive.md
+    - name: Fiche technique sur les licences
+      href: 'https://aka.ms/mcaslicensing'
+    - name: Support et dépannage
+      href: support-and-ts.md
+    - name: Portail du Support Premier
+      href: 'https://premier.microsoft.com/'
+    - name: Portail Cloud App Security
+      href: 'https://portal.cloudappsecurity.com'
+    - name: Comment acheter Cloud App Security
+      href: 'https://www.microsoft.com/cloud-platform/cloud-app-security'
