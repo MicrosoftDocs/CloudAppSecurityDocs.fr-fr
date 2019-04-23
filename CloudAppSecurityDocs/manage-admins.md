@@ -15,12 +15,12 @@ ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 83e2adb5d0890c926843403a6bdf1d0087abb007
-ms.sourcegitcommit: ec7ae3cd7648fa62d7a7925f8693dcb99b0b0d26
+ms.openlocfilehash: ad619e9d8d1503fc91b4e52b0b11bfaf22b8124e
+ms.sourcegitcommit: b0ae3a969a85a1ae0332a30efd058e415d9efb5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59745981"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59904309"
 ---
 # <a name="manage-admin-access"></a>Gérer l’accès administrateur
 
@@ -91,7 +91,7 @@ Par défaut, les rôles d’administrateur Office 365 et [Azure Active Director
   - Extensions de sécurité - Aucune autorisation
   - Actions liées à la gouvernance - Cloud Discovery uniquement
 
-- **Administrateur de rapports cloud Discovery :** Dispose des autorisations pour afficher toutes les données dans Microsoft Cloud App Security qui concerne exclusivement les rapports Cloud Discovery spécifiques sélectionné. Par exemple, vous pouvez autoriser un utilisateur admin pour le rapport continu à partir de Windows Defender ATP. L’administrateur de découverte s’affiche uniquement les données de découverte du Cloud est lié à la source de données et au catalogue d’applications.
+- **Administrateur de rapports cloud Discovery :** Dispose des autorisations pour afficher toutes les données dans Microsoft Cloud App Security qui concerne exclusivement les rapports Cloud Discovery spécifiques sélectionné. Par exemple, vous pouvez autoriser un utilisateur admin pour le rapport continu à partir de Microsoft Defender ATP. L’administrateur de découverte s’affiche uniquement les données de découverte du Cloud est lié à la source de données et au catalogue d’applications.
 Cet administrateur n’a pas accès à la **activités** ou **fichiers** pages et un accès limité aux stratégies.
 
 - **Lecteur global :** A un accès complet en lecture seule à tous les aspects de Microsoft Cloud App Security. Impossible de modifier des paramètres ou de prendre toutes les actions.

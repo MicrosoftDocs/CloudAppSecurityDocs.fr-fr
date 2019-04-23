@@ -1,11 +1,11 @@
 ---
-title: Résolution des problèmes du déploiement Docker Cloud Discovery
+title: Modifier les paramètres FTP
 description: Cet article décrit la procédure de modification de la configuration du docker Cloud Discovery Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 12/10/2018
+ms.date: 04/18/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,22 +15,18 @@ ms.assetid: 776e834f-3c20-4d5f-9fab-4c5b975edb06
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 01fa2f69422bd3c1c272a76c113254f819b90137
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 305281ec527f605951d4d0c7f720c054ac444cf3
+ms.sourcegitcommit: b0ae3a969a85a1ae0332a30efd058e415d9efb5c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56280877"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59904207"
 ---
-# <a name="troubleshooting-the-microsoft-cloud-app-security-cloud-discovery-deployment"></a>Résolution des problèmes liés au déploiement Cloud Discovery de Microsoft Cloud App Security
+# <a name="log-collector-ftp-configuration"></a>Configuration du collecteur FTP de journal
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Cet article décrit comment modifier la configuration du docker Cloud Discovery Cloud App Security.
-
-## <a name="windows-defender-atp-integration"></a>Intégration de Windows Defender ATP
-
-Si vous avez intégré Windows Defender ATP à Cloud App Security et que vous ne voyez pas les résultats de cette intégration (aucun rapport **Utilisateurs de point de terminaison Win10**), vérifiez que les ordinateurs auxquels vous vous connectez disposent de Windows 10 version 1809 ou ultérieure et que vous avez attendu les deux heures nécessaires pour que vos données soient accessibles.
 
 ## <a name="docker-deployment"></a>Déploiement de Docker
 
@@ -73,4 +69,4 @@ Suivez cette procédure pour personnaliser les fichiers de certificats que vous 
 
 [Déployer Cloud Discovery](set-up-cloud-discovery.md)
 
-[Les clients Premier peuvent également choisir Cloud App Security directement dans le portail Premier.](https://premier.microsoft.com/)
+[Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier](https://premier.microsoft.com/)

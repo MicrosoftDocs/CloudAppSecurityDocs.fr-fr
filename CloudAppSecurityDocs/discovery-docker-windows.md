@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 1/29/2019
+ms.date: 4/19/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ff73a393-da43-4954-8b02-38d2a48d39b3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 1a4f5fdb9bfe807729bf29de370bca913b3409ce
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 6f97426e1e1c18e2be3adb61ad5b3df95fb2c9c4
+ms.sourcegitcommit: b0ae3a969a85a1ae0332a30efd058e415d9efb5c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56282237"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59904275"
 ---
 # <a name="docker-on-windows-on-premises"></a>Docker sur Windows en local
 
@@ -33,7 +33,7 @@ Vous pouvez configurer le chargement automatique des journaux pour des rapports 
 
 - Espace disque : 250 Go
 
-- UC : 2
+- PROCESSEUR : 2
 
 - RAM : 4 Go
 
@@ -73,10 +73,10 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
 
      d. Comparez votre journal à l’exemple de format de journal attendu. Si le format de votre fichier journal ne correspond pas à cet exemple, vous devez ajouter votre source de données en sélectionnant **Autre**.
 
-     e. Définissez le **Type de récepteur** sur **FTP**, **FTPS**, **Syslog – UDP** ou **Syslog – TCP** ou **Syslog – TLS**.
+     e. Définissez le **Type de récepteur** sur **FTP**, **FTPS**, **Syslog – UDP**, **Syslog – TCP** ou **Syslog – TLS**.
      
      >[!NOTE]
-     >L’intégration à des protocoles de transfert sécurisés (FTPS et Syslog – TLS) nécessite souvent un paramètre supplémentaire ou votre pare-feu/proxy.
+     >L’intégration aux protocoles de transfert sécurisé (FTPS et Syslog – TLS) nécessite souvent que des paramètres supplémentaires soient configurés dans votre pare-feu/proxy.
 
       f. Répétez ce processus pour chaque pare-feu ou proxy dont les journaux peuvent être utilisés pour détecter le trafic sur votre réseau. Nous vous recommandons de configurer une source de données dédiée par appareil réseau pour vous permettre de :
      - Superviser l’état de chaque appareil séparément à des fins d’investigation
@@ -90,7 +90,7 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
 
    c. Entrez l’**adresse IP de l’hôte** de la machine sur laquelle sera déployé le Docker. L’adresse IP de l’hôte peut être remplacée par le nom de l’ordinateur s’il existe un serveur DNS (ou un équivalent) qui résout le nom d’hôte.
 
-   d. Sélectionnez toutes les **Sources de données** que vous voulez connecter au collecteur, puis cliquez sur **Mettre à jour** pour enregistrer la configuration et consulter les étapes suivantes du déploiement.
+   d. Sélectionnez toutes les **sources de données** que vous voulez connecter au collecteur, puis cliquez sur **Mettre à jour** pour enregistrer la configuration et afficher les étapes de déploiement suivantes.
 
    ![ubuntu2](./media/ubuntu2.png)
 
@@ -100,12 +100,12 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
 
 4. Des informations supplémentaires sur le déploiement s’affichent. **Copiez** la commande d’exécution à partir de la boîte de dialogue. Vous pouvez utiliser l’icône de copie dans le Presse-papiers. ![icône de copie dans le Presse-papiers](./media/copy-icon.png) Vous en aurez besoin plus tard.
 
-5. **Exportez** la configuration de sources de données attendue. Cette configuration décrit comment définir l’exportation du journal dans vos appliances.
+5. **Exportez** la configuration de source de données attendue. Cette configuration décrit comment définir l’exportation du journal dans vos appliances.
 
    ![Créer le collecteur de journaux](./media/windows7.png)
 
-### <a name="step-2--on-premises-deployment-of-your-machine"></a>Étape 2 : Déploiement local de votre ordinateur
-La procédure suivante décrit le déploiement dans Windows. Les étapes de déploiement pour d’autres plateformes sont légèrement différentes.
+### <a name="step-2--on-premises-deployment-of-your-machine"></a>Étape 2 : Déploiement local de votre machine
+La procédure suivante décrit le déploiement dans Windows. La procédure de déploiement pour les autres plateformes est légèrement différente.
 
 1. Ouvrez un terminal PowerShell en tant qu’administrateur sur votre ordinateur Windows.
 
@@ -116,7 +116,7 @@ La procédure suivante décrit le déploiement dans Windows. Les étapes de dép
 3. Pour activer l’exécution du script PowerShell, exécutez `Set-ExecutionPolicy RemoteSigned`.
 
 4. Exécutez la commande suivante : `& (Join-Path $Env:Temp LogCollectorInstaller.ps1)`<br>
-Cette commande installe le client Docker sur votre ordinateur. L’installation du conteneur de collecteur de journaux redémarre deux fois l’ordinateur et vous oblige à vous reconnecter.
+Cette commande installe le client Docker sur votre ordinateur. L’installation du conteneur de collecteur de journaux redémarre deux fois l’ordinateur et vous oblige à vous reconnecter. **Assurez-vous que le client Docker est configuré pour utiliser des conteneurs Linux.**
 
 5. Après chaque redémarrage, réexécutez la commande suivante à partir du répertoire où vous avez enregistré le programme d’installation : `& (Join-Path $Env:Temp LogCollectorInstaller.ps1)`<br>  
 
@@ -145,7 +145,7 @@ Consultez l’état du collecteur dans le tableau **Collecteur de journaux** et 
 
  ![ubuntu9](./media/ubuntu9.png)
 
-Vous pouvez aussi accéder au **journal de gouvernance** et vérifier que les journaux sont régulièrement chargés sur le portail.
+Vous pouvez également accéder au **Journal de gouvernance** et vérifier que les journaux sont régulièrement chargés sur le portail.
 
 Si vous rencontrez des problèmes lors du déploiement, consultez [Dépannage de Cloud Discovery](troubleshooting-cloud-discovery.md).
 
