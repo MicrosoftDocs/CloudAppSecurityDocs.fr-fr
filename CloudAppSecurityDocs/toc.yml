@@ -203,6 +203,8 @@
               href: flow-integration.md
 - name: Référence
   items:
+    - name: Attester votre application
+      href: attest-your-app.md
     - name: Dépannage de Cloud Discovery
       href: troubleshooting-cloud-discovery.md
     - name: Résolution des problèmes des connecteurs API à l’aide de messages d’erreur
