@@ -1,76 +1,70 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: a2120eeec08bd7be58d883c87a039ab2d7733a87
-ms.sourcegitcommit: a592f734a803493e9dd10e632922e68f9760b93e
-ms.translationtype: HT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56090968"
 documentType: LandingData
 title: Microsoft Cloud App Security
 metadata:
   title: Microsoft Cloud App Security
-  description: Avec Microsoft Cloud App Security, appliquez une sécurité de classe entreprise à vos applications cloud et profitez d’une plus grande visibilité, de contrôles complets et d’une protection avancée contre les problèmes de sécurité cloud.
-  author: msmbaldwin
-  manager: barbkess
+  description: 'Avec Microsoft Cloud App Security, appliquez une sécurité de classe entreprise à vos applications cloud et profitez d’une plus grande visibilité, de contrôles complets et d’une protection avancée contre les problèmes de sécurité cloud.'
+  author: rkarlin
+  manager: angrobe
   ms.prod: cloud-app-security
   ms.tgt_pltfrm: na
   ms.devlang: na
   ms.topic: landing-page
-  ms.date: 01/30/2019
-  ms.author: mbaldwin
+  ms.date: 06/05/2019
+  ms.author: rkarlin
   layout: LandingPage
 abstract:
-  description: Microsoft Cloud App Security (MCAS) offre une sécurité de classe entreprise pour vos applications cloud en appliquant la sécurité de vos systèmes locaux à vos applications cloud pour profiter d’une plus grande visibilité, de contrôles complets et d’une protection avancée contre les problèmes de sécurité cloud.
+  description: 'Microsoft Cloud App Security est un Cloud accès sécurité Service Broker (CASB) qui fonctionne sur plusieurs clouds. Il offre une visibilité riche, contrôler les déplacements de données et l’analytique sophistiquées pour identifier et combattre les cybermenaces entre tous vos services cloud.'
 sections:
-- title: En savoir plus
-  items:
-  - type: list
-    style: cards
-    className: cardsFTitle
+  - title: En savoir plus
     items:
-    - title: Découvrez plus en détail Microsoft Cloud App Security.
-      href: what-is-cloud-app-security.md
-      image:
-        src: https://docs.microsoft.com/media/common/i_learn-about.svg
-        href: what-is-cloud-app-security.md
-    - title: Sécurité et confidentialité des données MCAS
-      href: cas-compliance-trust.md
-      image:
-        src: https://docs.microsoft.com/media/common/i_architecture.svg
-        href: cas-compliance-trust.md
-    - title: Nouveautés de MCAS
-      href: release-notes.md
-      image:
-        src: https://docs.microsoft.com/media/common/i_whats-new.svg
-        href: release-notes.md
-    - title: Explorer Microsoft 365, une solution complète qui inclut Cloud App Security
-      href: https://docs.microsoft.com/microsoft-365/
-      image:
-        src: /office/media/icons/caret-right-blue.svg
-        href: https://docs.microsoft.com/microsoft-365/
-- title: Guides de démarrage rapide de 5 minutes
-  items:
-  - type: paragraph
-    text: Découvrez les principes fondamentaux de Microsoft Cloud App Security.
-  - type: list
-    style: icon48
+      - type: list
+        style: cards
+        className: cardsFTitle
+        items:
+          - title: Découvrez plus en détail Microsoft Cloud App Security.
+            href: what-is-cloud-app-security.md
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_learn-about.svg'
+              href: what-is-cloud-app-security.md
+          - title: Sécurité et confidentialité des données MCAS
+            href: cas-compliance-trust.md
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_architecture.svg'
+              href: cas-compliance-trust.md
+          - title: Nouveautés de MCAS
+            href: release-notes.md
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_whats-new.svg'
+              href: release-notes.md
+          - title: "Explorer Microsoft\_365, une solution complète qui inclut Cloud App Security"
+            href: 'https://docs.microsoft.com/microsoft-365/'
+            image:
+              src: /office/media/icons/caret-right-blue.svg
+              href: 'https://docs.microsoft.com/microsoft-365/'
+  - title: Guides de démarrage rapide de 5 minutes
     items:
-    - image:
-        src: https://docs.microsoft.com/media/common/i_design.svg
-      text: Bien démarrer avec Microsoft Cloud App Security
-      href: getting-started-with-cloud-app-security.md
-    - image:
-        src: https://docs.microsoft.com/media/common/i_event.svg
-      text: Utiliser des applications découvertes
-      href: discovered-apps.md
-- title: Didacticiels pas à pas
-  items:
-  - type: paragraph
-    text: Apprenez à comprendre les alertes et à procéder à des investigations avec ces tutoriels.
-  - type: list
-    style: unordered
+      - type: paragraph
+        text: Découvrez les principes fondamentaux de Microsoft Cloud App Security.
+      - type: list
+        style: icon48
+        items:
+          - image:
+              src: 'https://docs.microsoft.com/media/common/i_design.svg'
+            text: Bien démarrer avec Microsoft Cloud App Security
+            href: getting-started-with-cloud-app-security.md
+          - image:
+              src: 'https://docs.microsoft.com/media/common/i_event.svg'
+            text: Utiliser des applications découvertes
+            href: discovered-apps.md
+  - title: Didacticiels pas à pas
     items:
-    - html: <a href="/cloud-app-security/tutorial-shadow-it">Découvrir et gérer le Shadow IT sur votre réseau</a>
-    - html: <a href="/cloud-app-security/use-case-proxy-block-session-aad">Bloquer le téléchargement d’informations sensibles</a>
-    - html: <a href="/cloud-app-security/use-case-admin-quarantine">Protéger les fichiers avec la mise en quarantaine administrateur</a>
-    - html: <a href="/cloud-app-security/use-case-information-protection">Appliquer des étiquettes de classification Azure Information Protection</a>
+      - type: paragraph
+        text: Apprenez à comprendre les alertes et à procéder à des investigations avec ces tutoriels.
+      - type: list
+        style: unordered
+        items:
+          - html: <a href="/cloud-app-security/tutorial-shadow-it">Découvrir et gérer le Shadow IT sur votre réseau</a>
+          - html: <a href="/cloud-app-security/use-case-proxy-block-session-aad">Bloquer le téléchargement d’informations sensibles</a>
+          - html: <a href="/cloud-app-security/use-case-admin-quarantine">Protéger les fichiers avec la mise en quarantaine administrateur</a>
+          - html: <a href="/cloud-app-security/use-case-information-protection">Appliquer des étiquettes de classification Azure Information Protection</a>

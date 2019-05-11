@@ -4,8 +4,8 @@ description: Cette rubrique fournit des instructions pour l’utilisation des do
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
-ms.date: 12/14/2018
+manager: angrobe
+ms.date: 06/05/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: cf94b290-b7ef-4fee-854e-c8ff8d11dea9
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f760a9aa5bb80d1301cf6125eeeec22a8e9a8a7a
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: ffba8584bcd9b7521f3fc1ec8b8774e096a32854
+ms.sourcegitcommit: 9553aed06ebb2378d44bb5685439ae5cba605171
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56282305"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65047779"
 ---
 # <a name="working-with-discovery-data"></a>Utilisation des données de découverte
 
@@ -62,7 +62,7 @@ Pour créer une exclusion :
 
 Les rapports continus personnalisés vous apportent une plus grande granularité lors de la surveillance des données de journaux Cloud Discovery de votre organisation. En créant des rapports personnalisés, vous pouvez filtrer sur des emplacements géographiques, des réseaux, des sites ou des unités d’organisation spécifiques. Par défaut, seuls les rapports suivants apparaissent dans votre sélecteur de rapports Cloud Discovery :  
   
-- Le **rapport global** regroupe toutes les informations du portail provenant de toutes les sources de données que vous avez incluses dans vos journaux.  
+- Le **rapport global** regroupe toutes les informations du portail provenant de toutes les sources de données que vous avez incluses dans vos journaux.  Le rapport global n’inclut pas les données à partir de Microsoft Defender ATP.
   
 - Le **rapport spécifique à la source de données** affiche uniquement les informations d’une source de données spécifique.  
   
