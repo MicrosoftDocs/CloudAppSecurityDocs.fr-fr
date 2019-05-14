@@ -4,7 +4,7 @@ description: Cet article fournit des informations sur le déploiement du proxy i
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 2/2/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 8e74b6280175c459d9153dc267e16e91ad218b8c
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 14e5f822c5075f1d59dc7ecef350b46e3c8c0f0c
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281948"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568661"
 ---
 # <a name="deploy-conditional-access-app-control-for-azure-ad-apps"></a>Déployer le Contrôle d’application par accès conditionnel Azure AD
 
@@ -37,14 +37,14 @@ Suivez ces étapes pour configurer des applications Azure AD à contrôler par l
 
 **Étape 2 : [Connectez-vous avec un utilisateur inclus dans l’étendue de la stratégie dans les applications](#sign-in-scoped).**
 
-**Étape 3 : Si vous n’avez pas sélectionné de stratégie Cloud App Security intégrée dans Azure AD ou si vous souhaitez appliquer la stratégie à une application non proposée, [accédez au portail Cloud App Security](#portal)**
+**Étape 3 : Si vous n’avez pas sélectionné de stratégie Cloud App Security intégrée dans Azure AD ou si vous souhaitez appliquer la stratégie à une application non proposée, [accédez au portail Cloud App Security](#portal)**
 
 [**Étape 4 : Testez le déploiement**](#test)
 
 > [!NOTE]
 > Pour déployer le contrôle d’application par accès conditionnel pour des applications Azure AD, vous avez besoin d’une [licence valide pour Azure AD Premium P1](https://docs.microsoft.com/azure/active-directory/license-users-groups), ainsi que d’une licence Cloud App Security.
 
-## Étape 1 : Créez une stratégie de test d’accès conditionnel Azure AD <a name="add-azure-ad"></a>  
+## Étape 1 : Créez une stratégie de test d’accès conditionnel Azure AD <a name="add-azure-ad"></a>  
 
 1. Dans Azure Active Directory, sous **Sécurité**, cliquez sur **Accès conditionnel**.
 
@@ -58,7 +58,7 @@ Suivez ces étapes pour configurer des applications Azure AD à contrôler par l
 
 6. Ajoutez des **Conditions d’affectation** ou des **Contrôles d’octroi** (facultatif).
 
-   ![Accès conditionnel Azure AD](./media/azure-ad-caac-policy.png)
+   ![Accès conditionnel Azure AD](./media/azure-ad-caac-policy.png)
 
   
       > [!NOTE]
@@ -117,7 +117,7 @@ Pour demander la prise en charge d’une application non proposée :
 > Un certificat est uniquement demandé à un utilisateur si la session correspond à une stratégie qui utilise le filtre du certificat client valide.
 
 
-## Étape 4 : Testez le déploiement <a name="test"></a>
+## Étape 4 : Testez le déploiement <a name="test"></a>
 
 1. Tout d’abord, déconnectez-vous de toutes les sessions existantes. Ensuite, essayez de vous connecter à chaque application qui a été déployée avec succès. Connectez-vous sous un utilisateur qui correspond à la stratégie configurée dans Azure AD. 
 

@@ -4,7 +4,7 @@ description: Cet article fournit des informations sur la façon dont les straté
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: a6658937-57a2-484a-85cb-5a4cdbeeb002
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 77402ec7fa10eb9b91ee2822e5ebaf544b65b1dc
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 9e75ee880c2d198c3665c3e1271e71a351e973ec
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281812"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568921"
 ---
 # <a name="policy-template-reference"></a>Informations de référence sur les modèles de stratégie
 

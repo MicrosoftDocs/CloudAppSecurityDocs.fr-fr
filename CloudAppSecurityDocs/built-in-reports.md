@@ -4,7 +4,7 @@ description: Cet article fournit des instructions pour générer des rapports de
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 0dcc3c35-f787-4822-84c6-d4dff897dd6c
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0f3889a51db5abcf2c4e979456bcb2f01f5bb162
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 70ea54352c717d8423826ca4c1f4160eb96cd327
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281200"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65567535"
 ---
 # <a name="generate-data-management-reports"></a>Générer des rapports de gestion de données
 

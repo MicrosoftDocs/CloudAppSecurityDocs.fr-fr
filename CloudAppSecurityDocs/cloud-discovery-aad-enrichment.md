@@ -4,7 +4,7 @@ description: Cet article fournit des informations sur la façon d’enrichir les
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 45295c2c-3e4d-4482-bf95-2e47072f9236
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 67917683d40763be574a20398fe7b5919fef0f5e
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: f7e1e2b9035711d0f12f23da8809f470bb2da557
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281421"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65567718"
 ---
 # <a name="cloud-discovery-enrichment"></a>Enrichissement de Cloud Discovery
 
@@ -32,7 +32,7 @@ Les données Cloud Discovery peuvent maintenant être enrichies avec des donnée
 - Vous pouvez ensuite créer des journaux personnalisés basés sur des groupes d’utilisateurs Azure AD. Par exemple, un rapport d’informatique fantôme pour un service marketing spécifique.
 
 
-## <a name="prerequisites"></a>Conditions préalables :
+## <a name="prerequisites"></a>Prérequis :
 - La source de données doit fournir les informations de nom d’utilisateur
 - Le connecteur d’applications Office 365 doit être connecté
 

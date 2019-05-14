@@ -4,7 +4,7 @@ description: Cet article fournit des instructions sur la définition des préfé
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 85cae50d-f571-4907-9600-da4cc187b43b
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 63c572e6c1741db72a16a298addc1850480ff35d
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: fc31a86e7ea2c0e4086417a5362befbd04d16da2
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281081"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65565857"
 ---
 # <a name="admin-user-settings"></a>Paramètres utilisateur administrateur
 

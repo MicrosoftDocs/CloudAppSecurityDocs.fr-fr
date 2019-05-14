@@ -4,7 +4,7 @@ description: Cet article liste et décrit toutes les actions de gouvernance qui 
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 1/29/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6bce6df97a83e6a0a8e65c4eed8d8ac955ab9a1f
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: dfed20fd3b39395affce66098ebd0e7a16100a5e
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56282067"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65567832"
 ---
 # <a name="governing-connected-apps"></a>Gouvernance des applications connectées
 
@@ -161,8 +161,8 @@ Pour plus d’informations sur la façon dont les actions de gouvernance sont tr
 |Fichiers, Stratégie de fichier|File | Supprimer les utilisateurs externes | Supprime tous les collaborateurs externes - configurés comme internes dans les paramètres en dehors des domaines. |G Suite, Box|
 |Fichiers, Stratégie de fichier|File |Attribuer une permission de lecture au domaine|Accorde une permission de lecture pour le fichier sur le domaine spécifié pour tout votre domaine ou un domaine spécifique. Cet accès est utile si vous souhaitez supprimer l’accès public après l’octroi d’un accès au domaine des personnes qui doivent y travailler.| G Suite|
 |Fichiers, Stratégie de fichier|File | Mettre en quarantaine utilisateur | Supprime toutes les autorisations du fichier et déplace le fichier vers un dossier de quarantaine sur le lecteur racine de l’utilisateur. Cette action permet à l’utilisateur d’examiner le fichier et de le déplacer. S’il est déplacé manuellement, le partage de fichiers n’est pas restauré. | Box, One Drive, SharePoint |
-|Fichiers|File|Faire expirer le lien partagé| Définit la date d’expiration d’un lien partagé, après laquelle il ne sera plus actif.|Box|
-|Fichiers|File|Modifier le niveau d’accès du lien de partage|Modifie le niveau d’accès du lien partagé (entreprise uniquement, collaborateurs uniquement ou public).| Box|
+|Fichiers|Fichier|Faire expirer le lien partagé| Définit la date d’expiration d’un lien partagé, après laquelle il ne sera plus actif.|Box|
+|Fichiers|Fichier|Modifier le niveau d’accès du lien de partage|Modifie le niveau d’accès du lien partagé (entreprise uniquement, collaborateurs uniquement ou public).| Box|
 |Fichiers, Stratégie de fichier|File | Supprimer l’accès public| Si vous êtes propriétaire d’un fichier auquel vous autorisez un accès public, il devient accessible uniquement aux autres personnes disposant d’un droit d’accès au fichier (selon le genre d’accès au fichier). | G Suite|
 |Fichiers, Stratégie de fichier|File |Supprimer le lien partagé direct| Supprime un lien créé pour le fichier qui est public, mais partagé uniquement avec des personnes spécifiques.|Box |
 |Paramètres> Paramètres de Cloud Discovery| Cloud Discovery | Recalculer les scores Cloud Discovery |Recalcule les scores dans le catalogue d’applications cloud après une modification d’une mesure de score.| Découverte |

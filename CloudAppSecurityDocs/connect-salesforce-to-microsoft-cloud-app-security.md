@@ -4,7 +4,7 @@ description: Cet article vous explique comment connecter votre application Sales
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 776d7589-acdb-4cb6-99a0-3be2f7b6aab2
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b3ac3ffcef0dfaaad492c0794eee9841a899b0eb
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 16e149d5b79d22c512cd1c318e69b89b2880cace
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281880"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65567197"
 ---
 # <a name="connect-salesforce-to-microsoft-cloud-app-security"></a>Connecter Salesforce à Microsoft Cloud App Security
 
@@ -79,7 +79,7 @@ Cet article fournit des instructions pour connecter Microsoft Cloud App Security
   
          ![salesforce, utilisateur de contenu crm](./media/salesforce-crm-content-user.png "salesforce, utilisateur de contenu crm")  
   
-    5.  Cliquez sur **Enregistrer**.  
+    5.  Cliquez sur **Save**.  
   
 4.  Dans la console Cloud App Security, cliquez sur **Examiner**, puis sur **Applications connectées**.  
   
@@ -115,7 +115,7 @@ Les événements Salesforce sont traités par Cloud App Security de la façon su
   
 - Événements de connexion toutes les 15 minutes
 - Piste d’audit d’installation toutes les 15 minutes
-- Les journaux de Salesforce suivent l’activité d’utilisation sur une période de 24 heures, de 00:00 à 23:59 heure UTC. Les événements dans Salesforce génèrent des données de journal en temps réel. Toutefois, les fichiers journaux sont générés par Salesforce le lendemain d’un événement, pendant les heures creuses. Par conséquent, les données du fichier journal ne sont disponibles qu’au moins un jour après l’événement. Pour plus d’informations sur les événements Salesforce, consultez [Using Event Monitoring](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/using_resources_event_log_files.htm) (Utilisation de la surveillance des événements).
+- Les journaux de Salesforce suivent l’activité d’utilisation sur une période de 24 heures, de 00:00 à 23h59 UTC (temps universel coordonné). Les événements dans Salesforce génèrent des données de journal en temps réel. Toutefois, les fichiers journaux sont générés par Salesforce le jour suivant l’événement, durant les heures creuses. Par conséquent, les données du fichier journal ne sont pas disponibles pendant au moins un jour après un événement. Pour plus d’informations sur les événements Salesforce, consultez [Using Event Monitoring](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/using_resources_event_log_files.htm) (Utilisation de la surveillance des événements).
 
 
 ## <a name="next-steps"></a>Étapes suivantes  

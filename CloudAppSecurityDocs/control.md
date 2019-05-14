@@ -4,7 +4,7 @@ description: Cet article fournit des informations sur les actions de gouvernance
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,14 +15,14 @@ ms.assetid: bc11bbfe-ec6c-458c-8302-8112c383199d
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b884901c044f55ce0868be4df495d81e823d597e
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 25a04977f628981a64fac86f325bf3883e9cc3e4
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281353"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568039"
 ---
-# <a name="control"></a>Contrôler
+# <a name="control"></a>Control
 
 *S’applique à : Microsoft Cloud App Security*
 

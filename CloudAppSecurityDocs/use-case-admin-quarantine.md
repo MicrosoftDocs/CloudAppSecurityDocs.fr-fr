@@ -4,7 +4,7 @@ description: Ce tutoriel décrit le scénario d’utilisation de la mise en quar
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 1/27/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
@@ -15,16 +15,16 @@ ms.assetid: 3fc04cfb-ad4c-4ac2-980a-ee9f4c740d88
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: e7ccd9d5b818361889755137f088ba833fec24c8
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
+ms.openlocfilehash: b175cc1e6556289ecb4dc255d39e0ca733546cb0
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56282475"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568698"
 ---
-# <a name="tutorial-protect-files-with-admin-quarantine"></a>Didacticiel : Protéger les fichiers avec la mise en quarantaine administrateur
+# <a name="tutorial-protect-files-with-admin-quarantine"></a>Tutoriel : Protéger les fichiers avec la mise en quarantaine administrateur
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Les [stratégies de fichier](data-protection-policies.md) sont un excellent outil pour rechercher les menaces sur vos stratégies de protection des informations. Par exemple, créez des stratégies de fichier qui recherchent les emplacements où les utilisateurs ont stocké des informations sensibles, des numéros de carte de crédit et des fichiers ICAP tiers dans votre cloud. 
 
@@ -42,6 +42,7 @@ Ce tutoriel vous aide à utiliser Microsoft Cloud App Security pour détecter le
 >[!NOTE] 
 > - Il s’agit d’une fonctionnalité en préversion.
 > - Pour obtenir la liste des applications qui prennent en charge la mise en quarantaine administrateur, consultez la liste des [actions de gouvernance](governance-actions.md).
+> - Si un fichier dans SharePoint ou OneDrive est détecté comme étant un logiciel malveillant, il n'est pas mis en quarantaine dans le portail Cloud App Security. 
 
 1. Quand un fichier correspond à une stratégie, l’option **Mise en quarantaine administrateur** est disponible pour le fichier.
 

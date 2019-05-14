@@ -4,7 +4,7 @@ description: Cet article fournit des informations sur le chargement de journaux 
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 88e84e64bb93d39f83296b77ce83bde4738ba715
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 5cd93f4a98572af44b17515ac6bd0c4ed94e789f
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281999"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65567698"
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance---deprecated"></a>Configurer le chargement automatique des journaux pour des rapports continus sur une appliance virtuelle - Déconseillé
 
@@ -32,7 +32,7 @@ ms.locfileid: "56281999"
 ## <a name="technical-requirements"></a>Spécifications techniques
 - Hyperviseur : Hyper-V ou VMware
 - Espace disque : 250 Go
-- UC : 2
+- PROCESSEUR : 2
 - RAM : 4 Go 
 - Configurez votre pare-feu, comme décrit dans [Configuration réseau requise](network-requirements.md#log-collector)
 
@@ -95,7 +95,7 @@ Le collecteur de journaux dispose d’un mécanisme de sécurité intégré qui 
   
 5. Affectez à la **mémoire de démarrage** la valeur **4 096 Mo**.  
         
-6. Cochez **Utiliser la mémoire dynamique** pour cette machine virtuelle et cliquez sur **Suivant**.  
+6. Cochez **Use Dynamic Memory (Utiliser la mémoire dynamique)** pour cette machine virtuelle et cliquez sur **Suivant**.  
   
 7. Si disponible, choisissez la **connexion** réseau et cliquez sur **Suivant**.  
   

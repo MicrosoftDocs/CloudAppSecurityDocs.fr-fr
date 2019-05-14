@@ -4,7 +4,7 @@ description: 'Cet article décrit plusieurs facettes de Cloud App Security : off
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 03/01/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: e456940a-88f1-4767-ae3d-4a57548f4179
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 26a199d0e92c48258b49ef69ddf0473584c54287
-ms.sourcegitcommit: 0b913d3a91e236d60ac8aede566cfd9a4f757abd
+ms.openlocfilehash: ff64d0afc590312a877c81797e79ff7a7b05dbf9
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57305879"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568141"
 ---
 # <a name="microsoft-cloud-app-security-data-security-and-privacy"></a>Sécurité et confidentialité des données Microsoft Cloud App Security
 
@@ -45,16 +45,16 @@ Microsoft Cloud App Security est conforme à de nombreuses normes de conformité
 
 | |Title|Description|
 |----|----|----|
-|![logo csa](./media/csastar-attest.png)|Attestation CSA STAR|Azure et Intune ont reçu l’attestation Cloud Security Alliance STAR basée sur un audit indépendant.|
-|![logo csa](./media/csastar.png)|Certification CSA STAR|Azure, Intune et Power BI ont reçu la certification Cloud Security Alliance STAR de niveau Gold.|
+|![logo csa](./media/csastar-attest.png)|CSA STAR Attestation|Azure et Intune ont obtenu la certification CSA (Cloud Security Alliance) STAR basée sur un audit indépendant.|
+|![logo csa](./media/csastar.png)|CSA STAR Certification|Azure, Intune et Power BI ont obtenu la certification CSA (Cloud Security Alliance) STAR au niveau « Gold ».|
 |![logo des clauses contractuelles types de l’Union Européenne](./media/eu-model-icon.png)|[Clauses contractuelles types de l’Union Européenne](https://www.microsoft.com/en-us/trustcenter/compliance/eu-model-clauses)|Microsoft offre par le biais des Clauses contractuelles standard de l’Union Européenne des garanties pour les transferts de données personnelles.|
-|![logo du bouclier de protection des données](./media/privacy_shield.png)|Union Européenne – États-Unis Bouclier de protection des données|Microsoft est conforme à cette infrastructure de protection des données personnelles transférées de l’Union Européenne vers les États-Unis.|
-|![logo FISC](./media/logo_fisc.png)|FISC|Microsoft répond aux exigences de la norme Financial Industry Information Systems v8 au Japon.|
+|![logo privacy shield](./media/privacy_shield.png)|EU-U.S. Privacy Shield|Microsoft est conforme à cette infrastructure pour la protection des données personnelles transférées à partir de l'UE vers les États-Unis.|
+|![logo FISC](./media/logo_fisc.png)|FISC|Microsoft respecte les exigences de la norme Financial Industry Information Systems v8 du Japon.|
 |![logo HIPAA](./media/hipaa-logo.png)|[HIPAA/HI-TECH](https://www.microsoft.com/en-us/trustcenter/compliance/hipaa)|Microsoft propose des accords de partenariat sur la transférabilité de l'assurance maladie et la responsabilité des assureurs.|
-|![logo iso 9001](./media/iso-9001.png)|ISO 9001|Microsoft est certifié pour son implémentation de ces normes de gestion de la qualité.|
+|![logo iso 9001](./media/iso-9001.png)|ISO 9001|Microsoft est certifié pour son implémentation en matière des normes de gestion de la qualité.|
 |![logo iso 27001](./media/iso-27001.png)|[ISO/IEC 27001](https://www.microsoft.com/en-us/trustcenter/compliance/iso-iec-27001)|Microsoft est certifié pour son implémentation de ces normes de gestion de la sécurité des informations.|
 |![logo iso 27018](./media/iso-27018.png)|[ISO/IEC 27018](https://www.microsoft.com/en-us/trustcenter/compliance/iso-iec-27018)|Microsoft a été le premier fournisseur de cloud à adhérer à ce code de pratique en matière de confidentialité du cloud.|
-|![logo PCI](./media/pci-logo.png)|PCI DSS|Azure est conforme aux normes Payment Card Industry Data Security Standards, niveau 1, version 3.1.|
+|![logo PCI](./media/pci-logo.png)|PCI DSS|Azure est conforme aux PCI DSS (normes de sécurité des données de l'industrie des cartes de paiement) Niveau 1 version 3.1.|
 |![logo SOC](./media/soc-logo.png)|[Rapports SOC 1 et SOC 2 type 2](https://www.microsoft.com/en-us/trustcenter/compliance/soc)|Les services de cloud computing Microsoft sont conformes aux normes Service Organization Controls pour la sécurité opérationnelle.|
 |![logo SOC](./media/soc-logo.png)|SOC 3|Les services de cloud computing Microsoft sont conformes aux normes Service Organization Controls pour la sécurité opérationnelle.|
 |![logo g-cloud](./media/g-cloud.png)|UK G-Cloud|Crown Commercial Service a renouvelé la classification de services cloud Microsoft de la norme Government Cloud v6.|

@@ -4,7 +4,7 @@ description: Cette rubrique fournit des informations sur la façon d’ajouter d
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 98b0d841-b33d-4ae9-b48b-d9ee77785eaa
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 7edc445fef65e414fa088c46f7329811e0ce2cff
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: c44772dc46d04c46eb1d22b2440d06d338d448db
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281404"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65567566"
 ---
 # <a name="add-custom-apps-to-cloud-discovery"></a>Ajouter des applications personnalisées à Cloud Discovery
 
@@ -49,7 +49,7 @@ En ajoutant une nouvelle application cloud personnalisée, Cloud App Security pe
 4. Sous **Domaines**, renseignez les domaines uniques utilisés lors de l’accès à l’application personnalisée. Ces domaines servent à faire correspondre des messages du journal de trafic avec cette application. Si la source de données que vous utilisez ne contient pas d’informations sur l’URL de l’application, renseignez les champs d’adresse **IPv4** et **IPv6**.
 5. Renseignez les champs **Plateforme d’hébergement** et **ID d’abonnement Azure**. Si vous le souhaitez, spécifiez une **Unité commerciale** pour l’application. 
 6. Attribuez un **Score** relatif au risque et ajoutez des informations dans **Notes de l’application** pour faciliter le suivi des modifications de cet enregistrement.
-7. Cliquez sur **Créer**.
+7. Cliquez sur **Create (Créer)**.
 
 Une fois créée, l’application est disponible dans le catalogue d’applications cloud.
 

@@ -4,7 +4,7 @@ description: Cet article fournit des informations sur l’utilisation des strat�
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 45446111-ed1a-4699-9df5-840cc6664a6b
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 88573259fb2fd5296703fe18abf15c90eaa21e50
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: bf54021007d891b78577bd646c43ec5377421bfd
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281829"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65567524"
 ---
 # <a name="cloud-discovery-policies"></a>Stratégies Cloud Discovery
 
@@ -58,7 +58,7 @@ Grâce aux stratégies de découverte, vous pouvez définir des alertes qui vous
   
 8. Sélectionnez les actions de **gouvernance** à appliquer quand une application remplit tous les critères de cette stratégie. Vous pouvez étiqueter les stratégies comme étant **Approuvées** ou **Non approuvées**, ou bien utiliser une étiquette personnalisée. 
 
-9. Cliquez sur **Créer**.  
+9. Cliquez sur **Create (Créer)**.  
   
 Par exemple, pour découvrir les applications d’hébergement à risque qui ont été détectées dans votre environnement cloud, définissez votre stratégie de la façon suivante :  
   
@@ -93,7 +93,7 @@ Cloud App Security examine tous les journaux de votre environnement Cloud Discov
      - Si vous cliquez sur **Enregistrer ces paramètres d’alerte en tant que paramètres par défaut pour votre organisation**, les prochaines stratégies qui seront définies utiliseront ces paramètres.
      - Si vous avez déjà configuré des paramètres par défaut, vous pouvez sélectionner **Utiliser les paramètres par défaut de votre organisation**.
   
-8. Cliquez sur **Créer**.  
+8. Cliquez sur **Create (Créer)**.  
   
 ![nouvelle stratégie de détection d’anomalie](./media/new-discovery-anomaly-policy.png "nouvelle stratégie de détection d’anomalie")  
   

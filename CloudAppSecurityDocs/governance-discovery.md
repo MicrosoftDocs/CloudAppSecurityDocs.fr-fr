@@ -4,7 +4,7 @@ description: Cet article décrit la procédure d’exportation de scripts de blo
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: e451031e-4764-411a-b366-73a49d4f25df
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 902b919a801a6c3b077e930593ba74023efded9f
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 1f760c3481877a91f5395bc00d613bb72bb995e1
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281047"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568154"
 ---
 # <a name="govern-discovered-apps"></a>Gouverner les applications découvertes
 

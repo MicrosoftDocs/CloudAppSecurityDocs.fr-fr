@@ -4,7 +4,7 @@ description: Cet article liste les problèmes qui peuvent se produire lors de la
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: de64d9ca-eaed-4243-bcf7-adca5aff18c8
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: cd9f5ffff1208a3fd6e24954c02b7ba1574d6022
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 47158a4fba1027f4e1ac3bfe0a73b2b1014375e8
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281540"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568803"
 ---
 # <a name="troubleshooting-the-siem-agent"></a>Résolution des problèmes de l’agent SIEM
 
@@ -34,7 +34,7 @@ Vérifiez que l’agent SIEM n’affiche pas l’état **Erreur de connexion** o
 
 Si vous voyez une des erreurs suivantes dans l’invite de commandes lors de l’exécution de l’agent, procédez comme suit pour corriger le problème :
 
-|Erreur|Description|Solution|
+|Erreur|Description|Résolution|
 |----|----|----|
 |Erreur générale pendant l’amorçage|Erreur inattendue pendant le démarrage de l’agent.|Contactez le support technique.|
 |Trop d’erreurs critiques|Trop d’erreurs critiques se sont produites lors de la connexion de la console. Arrêt.|Contactez le support technique.|
@@ -44,7 +44,7 @@ Si vous voyez une des erreurs suivantes dans l’invite de commandes lors de l�
 
 Après avoir créé l’agent, consultez la page de l’agent SIEM dans le portail Cloud App Security. Si vous voyez l’une des **Notifications de l’agent** suivantes, procédez comme suit pour corriger le problème :
 
-|Erreur|Description|Solution|
+|Erreur|Description|Résolution|
 |----|----|----|
 |**Erreur interne**|Quelque chose d’inconnu s’est produit avec votre agent SIEM.|Contactez le support technique.|
 |**Erreur d’envoi du serveur de données**|Vous pouvez recevoir cette erreur si vous travaillez avec un serveur Syslog sur TCP. L’agent SIEM ne peut pas se connecter à votre serveur Syslog.  Si vous recevez cette erreur, l’agent cesse d’extraire de nouvelles activités tant qu’elle n’est pas résolue. Veillez à suivre les étapes de correction jusqu’à ce que l’erreur n’apparaisse plus.|1. Vérifiez que vous avez correctement défini votre serveur Syslog : Dans l’interface utilisateur de Cloud App Security, modifiez votre agent SIEM comme indiqué ci-dessus. Vérifiez que vous avez écrit correctement le nom du serveur et défini le port approprié. </br>2. Vérifiez la connectivité à votre serveur Syslog : Assurez-vous que le pare-feu ne bloque pas la communication.| 

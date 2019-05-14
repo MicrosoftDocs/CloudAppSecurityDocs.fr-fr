@@ -4,7 +4,7 @@ description: Ce tutoriel décrit le scénario permettant de protéger votre orga
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 1/24/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
@@ -15,16 +15,16 @@ ms.assetid: 06238ebc-2088-4372-9412-96cceaf3b145
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2aa85bd282344143cd360c35e229ea51edc96a65
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
+ms.openlocfilehash: 55f6943b6631178dbdc732264082715e2565b633
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56282696"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568440"
 ---
-# <a name="tutorial-block-download-of-sensitive-information"></a>Didacticiel : Bloquer le téléchargement d’informations sensibles 
+# <a name="tutorial-block-download-of-sensitive-information"></a>Tutoriel : Bloquer le téléchargement d’informations sensibles 
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 >[!div class="step-by-step"]
 [« PRÉCÉDENT : Guide pratique pour créer une stratégie d’accès](access-policy-aad.md)
@@ -54,7 +54,7 @@ Protégez votre organisation en surveillant et en contrôlant l’utilisation de
 
 Les stratégies de session Cloud App Security vous permettent de restreindre une session en fonction de l’état de l’appareil. Pour contrôler une session en utilisant son appareil comme condition, créez à la fois une stratégie d’accès conditionnel ET une stratégie de session.
 
-### <a name="step-1-create-an-azure-ad-conditional-access-policy"></a>Étape 1 : Créer une stratégie d’accès conditionnel Azure AD
+### <a name="step-1-create-an-azure-ad-conditional-access-policy"></a>Étape 1 : Créer une stratégie d’accès conditionnel Azure AD
 
 1. Créez une stratégie d’accès conditionnel Azure AD avec des utilisateurs et une application affectés.
 2. Sélectionnez **Utiliser les restrictions appliquées au Contrôle d’accès conditionnel aux applications** sous les contrôles de session dans la stratégie d’accès conditionnel.
@@ -103,7 +103,7 @@ Une fois cette tâche terminée, accédez au portail Cloud App Security et crée
 
 11. Définissez les alertes que vous voulez recevoir quand la stratégie trouve une correspondance. Vous pouvez définir une limite afin de ne pas recevoir trop d’alertes. Choisissez si l’alerte doit être envoyée par e-mail, par SMS, ou les deux.
 
-12. Cliquez sur **Créer**.  
+12. Cliquez sur **Créer**  
 
 ## <a name="validate-your-policy"></a>Valider votre stratégie
 

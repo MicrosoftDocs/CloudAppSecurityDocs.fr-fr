@@ -4,7 +4,7 @@ description: Cet article fournit la liste des messages d’erreur relatifs aux c
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 4b6ac04a-4653-4c4a-bd6f-5926743475cc
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: abb1622c3cd88120dc9ad748ef8fa0c5fa2d9b43
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: acdb5bee55a296af2886c39010ce524a39de5f2d
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56282084"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568489"
 ---
 # <a name="troubleshooting-app-connectors-using-error-messages"></a>Résolution des problèmes des connecteurs d’application à l’aide de messages d’erreur
 
@@ -35,7 +35,7 @@ Quand vous tentez de connecter une application cloud à l’aide du connecteur d
 
 > [!div class="mx-tableFixed"]
 > 
-> |Message d’erreur|Application correspondante|Description|Solution|
+> |Message d'erreur|Application correspondante|Description|Résolution|
 > |----|----|----|------------|
 > |HttpRequestFailure : Retourné par le serveur : 400 Requête incorrecte : {"error":{"code":"AF20012","message":"L’ID de client spécifié (emplacement de Tenant_ID) est configuré de façon incorrecte dans le système."|Office 365 |Aucune licence Office 365 attribuée n’a été trouvée. |Attribuez au moins une licence Office 365 à votre client.| 
 > |AuthFatalFailureException: com.box.boxjavalibv2.exceptions.BoxServerException: {"error":"invalid_grant","error_description":"Jeton d’actualisation non valide"}|Box|Le jeton d’actualisation Box n’est pas valide|Suivez le processus pour reconnecter Box à Cloud App Security.|
@@ -63,7 +63,7 @@ Quand vous tentez de connecter une application cloud à l’aide du connecteur d
 > |HttpRequestFailure : Retourné par le serveur : 404 Introuvable|Exchange Online|L’utilisateur que vous utilisez pour vous connecter à Exchange Online ne dispose pas d’une boîte aux lettres principale dans Exchange Online (par exemple, un utilisateur qui n’existe pas dans Azure AD ou un utilisateur qui existe dans Azure AD, mais ne dispose pas d’une licence Exchange Online).|Suivez le processus pour reconnecter Exchange Online à Cloud App Security à l’aide d’un nouveau compte d’administrateur.|
 > |NullPointerException|AWS|Erreur interne|Contactez le support technique|
 > |HttpRequestFailure : Retourné par le serveur : 500 Erreur de serveur interne|Toutes les applications|Une erreur s’est produite dans l’application.|Vérifiez l’état de l’application|
-> |Le service a expiré|Toutes les applications|Un délai d’attente a été détecté dans la connexion entre Cloud App Security et l’application. Un problème au niveau de l’application peut en être la cause.|Réessayez ultérieurement.|
+> |Le service a expiré|Toutes les applications|Un délai d’attente a été détecté dans la connexion entre Cloud App Security et l’application. Un problème au niveau de l’application peut en être la cause.|Réessayez plus tard.|
 
 ## <a name="next-steps"></a>Étapes suivantes
 

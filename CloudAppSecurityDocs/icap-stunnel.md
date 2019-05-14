@@ -4,7 +4,7 @@ description: Cet article décrit les étapes nécessaires pour configurer la con
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5eb92181f0c05b0659b4e157c1e5188103ae680e
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 731a2593972754ac95dd39b16b0c7529783c2636
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281676"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568234"
 ---
 # <a name="external-dlp-integration"></a>Intégration DLP externe
 
@@ -44,7 +44,7 @@ Comme Cloud App Security s’exécute dans Azure, un déploiement dans Azure am�
 Pour que Cloud App Security envoie des données via votre stunnel à votre serveur ICAP, ouvrez le pare-feu DMZ aux adresses IP externes utilisées par Cloud App Security avec un numéro de port source dynamique. 
 
 1.  Adresses sources : Consultez [Connecter des applications, sous Prérequis](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md#prerequisites)
-2.  Port TCP source : Dynamique
+2.  Port TCP source : dynamique
 3.  Adresse(s) de destination : une ou deux adresses IP du stunnel connecté au serveur ICAP externe que vous configurez dans les étapes suivantes
 4.  Port TCP de destination : Comme défini dans votre réseau
 
@@ -239,7 +239,7 @@ Si le processus n’est toujours pas en cours d’exécution, consultez la [docu
 7. Ensuite, pour diriger le trafic sur ce serveur DLP externe, quand vous créez une **Stratégie de fichier**, sous **Méthode d’inspection du contenu**, sélectionnez la connexion que vous avez créée. En savoir plus sur la [création d’une stratégie de fichier](data-protection-policies.md).
 
 
-## Annexe A : Configuration du serveur ICAP Forcepoint<a name="forcepoint"></a>
+## Annexe a : Configuration du serveur ICAP Forcepoint<a name="forcepoint"></a>
 
 Dans ForcePoint, définissez votre appliance en suivant ces étapes :
 
@@ -256,14 +256,14 @@ Dans ForcePoint, définissez votre appliance en suivant ces étapes :
     ![Blocage ICAP](./media/icap-blocking.png)
  
 
-## Annexe B : Guide de déploiement de Symantec<a name="symantec"></a>
+## Annexe b : Guide de déploiement de Symantec<a name="symantec"></a>
 
 Les versions prises en charge de Symantec DLP sont les versions 11 et ultérieures. 
 
 Comme indiqué ci-dessus, vous devez déployer un serveur de détection dans le même centre de données Azure où se trouve votre locataire Cloud App Security. Le serveur de détection se synchronise avec le serveur d’application via un tunnel IPSec dédié. 
  
 ### <a name="detection-server-installation"></a>Installation du serveur de détection 
-Le serveur de détection utilisé par Cloud App Security est un Network Prevent standard pour serveur web. Plusieurs options de configuration doivent être changées :
+Le serveur de détection utilisé par Cloud App Security est un serveur Network Prevent for Web standard. Plusieurs options de la configuration doivent être modifiées :
 1. Désactivez le **Mode d’évaluation** :
    1. Sous **Système** > **Serveurs et détecteurs**, cliquez sur la cible ICAP. 
     
@@ -289,13 +289,13 @@ Le serveur de détection utilisé par Cloud App Security est un Network Prevent 
 ### <a name="policy-configuration"></a>Configuration de la stratégie
 Cloud App Security prend en charge tous les types de règle de détection inclus avec Symantec DLP. Il est donc inutile de modifier les règles existantes. Toutefois, une modification de configuration doit être appliquée à toutes les stratégies existantes et nouvelles pour activer l’intégration complète. Il s’agit de l’ajout d’une règle de réponse spécifique à toutes les stratégies. 
 
-Ajoutez la modification de configuration à votre Vontu :
+Ajoutez la modification de configuration à Vontu :
 
 1.  Accédez à **Gérer** > **Stratégies** > **Règles de réponse** et cliquez sur **Ajouter une règle de réponse**.
     
     ![ajouter une règle de réponse](./media/icap-add-response-rule.png)
 
-2.  Vérifiez que **Réponse automatique** est sélectionné et cliquez sur **Suivant**.
+2.  Vérifiez que l’option **Réponse automatique** est sélectionnée et cliquez sur **Suivant**.
 
     ![réponse automatique](./media/icap-automated-response.png)
 
@@ -303,7 +303,7 @@ Ajoutez la modification de configuration à votre Vontu :
 
     ![bloquer http](./media/icap-block-http.png)
 
-Ajoutez la règle que vous avez créée aux stratégies existantes :
+Ajoutez la règle que vous avez créée à des stratégies existantes :
 
 1. Dans chaque stratégie, basculez vers l’onglet **Réponse**.
 

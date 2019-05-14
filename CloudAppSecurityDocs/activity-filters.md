@@ -4,7 +4,7 @@ description: Cet article fournit la liste des activités, des filtres et des par
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/16/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 3043de593036dc5f8eec0ac9be2aca9b195f32c9
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 1db651146978c187a043abce78b4d92d819df217
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281914"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65565724"
 ---
 # <a name="activities"></a>Activités
 
@@ -60,7 +60,7 @@ Vous pouvez afficher plus d’informations supplémentaires sur chaque activité
 
    - Utilisateur : Cliquez sur l’utilisateur pour afficher la page utilisateur de l’utilisateur ayant réalisé l’activité. 
 
-   - Type de périphérique : Cliquez sur le type de périphérique pour afficher les données d’agent utilisateur brutes. 
+   - Type d’appareil : Cliquez sur le type de périphérique pour afficher les données d’agent utilisateur brutes. 
 
    - Emplacement : Cliquez sur l’emplacement pour afficher l’emplacement dans des cartes Bing.
 
@@ -95,7 +95,7 @@ Pour afficher les insights utilisateur :
     - **ISP** : Nombre d’ISP à partir desquels l’utilisateur s’est connecté au cours des 30 derniers jours.
     - **Adresses IP** : Nombre d’adresses IP à partir desquelles l’utilisateur s’est connecté au cours des 30 derniers jours.
 
-![insights sur l’utilisateur dans Cloud App Security](./media/user-insights.png)
+![Insights utilisateur dans Cloud App Security](./media/user-insights.png)
 
 #### <a name="ip-address-insights"></a>Insights sur l’adresse IP
 
