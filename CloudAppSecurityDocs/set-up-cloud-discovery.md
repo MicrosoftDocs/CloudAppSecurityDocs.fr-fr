@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: rkarlin
-ms.date: 3/18/2019
+ms.date: 05/23/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a8e7c476690b1831b78a59c7c63b061aef0dc78e
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 6f41d30f14f517e682e2535a908650c898ba13fa
+ms.sourcegitcommit: 235b7d5f1f49075c199b154abc38e51326c0493e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568515"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66173539"
 ---
 # <a name="set-up-cloud-discovery"></a>Configurer Cloud Discovery
 
@@ -36,20 +36,20 @@ Il existe deux types de rapports que vous pouvez générer :
 
 - **Rapports continus** : ils analysent tous les journaux qui sont transférés à partir de votre réseau à l’aide de Cloud App Security. Ils offrent une meilleure visibilité sur toutes les données et identifient automatiquement toute utilisation anormale à l’aide du moteur de détection des anomalies Machine Learning ou des stratégies personnalisées que vous définissez. Ces rapports peuvent être créés en vous connectant des façons suivantes :
 
-  - [Intégration de Microsoft Defender ATP](wdatp-integration.md): Cloud App Security s’intègre avec le module Microsoft Defender Advanced Threat Protection (ATP) d’en mode natif, pour simplifier le déploiement de Cloud Discovery, étendre les fonctionnalités de Cloud Discovery au-delà de votre réseau d’entreprise et activer l’enquête sur l’ordinateur.
-  - [Collecteur de journaux](discovery-docker.md) : Les collecteurs de journaux vous permettent d’automatiser facilement le chargement manuel des journaux de votre réseau. Le collecteur de journaux s’exécute sur votre réseau et reçoit les journaux par le biais de Syslog ou FTP.
-  - [Intégration de Zscaler](zscaler-integration.md) : Si vous travaillez avec Cloud App Security et Zscaler, vous pouvez intégrer les deux produits pour améliorer la sécurité de votre expérience Cloud Discovery. Ensemble, Cloud App Security et Zscaler offrent un déploiement fluide de Cloud Discovery, le blocage automatique des applications non approuvées et l’évaluation des risques directement dans le portail de Zscaler.
+ - [Intégration de Microsoft Defender ATP](wdatp-integration.md): Cloud App Security s’intègre avec le module Microsoft Defender Advanced Threat Protection (ATP) d’en mode natif, pour simplifier le déploiement de Cloud Discovery, étendre les fonctionnalités de Cloud Discovery au-delà de votre réseau d’entreprise et activer l’enquête sur l’ordinateur.
+ - [Collecteur de journaux](discovery-docker.md) : Les collecteurs de journaux vous permettent d’automatiser facilement le chargement manuel des journaux de votre réseau. Le collecteur de journaux s’exécute sur votre réseau et reçoit les journaux par le biais de Syslog ou FTP.
+ - [Intégration de Zscaler](zscaler-integration.md) : Si vous travaillez avec Cloud App Security et Zscaler, vous pouvez intégrer les deux produits pour améliorer la sécurité de votre expérience Cloud Discovery. Ensemble, Cloud App Security et Zscaler offrent un déploiement fluide de Cloud Discovery, le blocage automatique des applications non approuvées et l’évaluation des risques directement dans le portail de Zscaler.
  - [intégration d’iboss](iboss-integration.md): Si vous utilisez Cloud App Security et iboss, vous pouvez intégrer ces deux produits pour rendre votre expérience Cloud Discovery encore plus sûre. Cloud App Security et iboss constituer un déploiement transparent de Cloud Discovery, automatique de blocage des applications non approuvées et évaluation des risques directement dans le portail iboss.
 
 ## <a name="log-process-flow-from-raw-data-to-risk-assessment"></a>Flux du processus de journalisation : Des données brutes à l’évaluation des risques
 
-Le processus de génération d’une évaluation des risques se compose des étapes suivantes. Le processus dure de quelques minutes à plusieurs heures en fonction de la quantité de données traitées.  
+Le processus de génération d’une évaluation des risques se compose des étapes suivantes. Le processus dure de quelques minutes à plusieurs heures en fonction de la quantité de données traitées. 
 
-- **Chargement** : Les journaux de trafic web de votre réseau sont chargés vers le portail.  
+- **Chargement** : Les journaux de trafic web de votre réseau sont chargés vers le portail. 
 
-- **Extraction** : Cloud App Security analyse et extrait les données de trafic depuis les journaux de trafic à l’aide d’un analyseur dédié pour chaque source de données.  
+- **Extraction** : Cloud App Security analyse et extrait les données de trafic depuis les journaux de trafic à l’aide d’un analyseur dédié pour chaque source de données. 
 
-- **Analyse** : Les données de trafic sont analysées par rapport au catalogue d’applications cloud dans le but d’identifier plus de 16 000 applications cloud et d’évaluer leur score de risque. Les utilisateurs et adresses IP actifs sont également identifiés dans le cadre de l’analyse.  
+- **Analyse** : Les données de trafic sont analysées par rapport au catalogue d’applications cloud dans le but d’identifier plus de 16 000 applications cloud et d’évaluer leur score de risque. Les utilisateurs et adresses IP actifs sont également identifiés dans le cadre de l’analyse. 
 
 - **Générer un rapport** : Un rapport d’évaluation des risques sur les données extraites des fichiers journaux est généré.
 
@@ -97,32 +97,36 @@ Si votre journal n’est pas pris en charge, sélectionnez **Autre** comme **Sou
 Attributs de données (selon la documentation du fournisseur) :
 
 
-|                 Source de données                  |    URL de l’application cible    |    Adresse IP de l’application cible     |       Nom d'utilisateur       |      Adresse IP d’origine       |    Total du trafic     |    Octets chargés    |
+| Source de données | URL de l’application cible | Adresse IP de l’application cible | Nom d'utilisateur | Adresse IP d’origine | Total du trafic | Octets chargés |
 |----------------------------------------------|----------------------|----------------------|----------------------|----------------------|----------------------|----------------------|
-|                  Barracuda                   | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> |          Non          |          Non          |
-|                  Blue Coat                   | <strong>Oui</strong> |          Non          | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> |
-|                  Point de contrôle                  |          Non          | <strong>Oui</strong> |          Non          | <strong>Oui</strong> |          Non          |          Non          |
-|              Cisco ASA (Syslog)              |          Non          | <strong>Oui</strong> |          Non          | <strong>Oui</strong> | <strong>Oui</strong> |          Non          |
-|           Cisco ASA avec FirePOWER           | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> |
-|                  Cisco FWSM                  |          Non          | <strong>Oui</strong> |          Non          | <strong>Oui</strong> | <strong>Oui</strong> |          Non          |
-|              Cisco Ironport WSA              | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> |
-|                 Cisco Meraki                 | <strong>Oui</strong> | <strong>Oui</strong> |          Non          | <strong>Oui</strong> |          Non          |          Non          |
-|           Clavister NGFW (Syslog)            | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> |
-|                SonicWall (anciennement Dell)                | <strong>Oui</strong> | <strong>Oui</strong> |          Non          | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> |
-|            Digital Arts i-FILTER             | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> |
-|                  Fortigate                   |          Non          | <strong>Oui</strong> |          Non          | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> |
-|                 Juniper SRX                  |          Non          | <strong>Oui</strong> |          Non          | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> |
-|                 Juniper SSG                  |          Non          | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> |
-|                  McAfee SWG                  | <strong>Oui</strong> |          Non          |          Non          | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> |
-|                    MS TMG                    | <strong>Oui</strong> |          Non          | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> |
-|              Palo Alto Networks              |          Non          | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> |
-|                    Sophos                    | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> |          Non          |
-|                Squid (commun)                | <strong>Oui</strong> |          Non          | <strong>Oui</strong> | <strong>Oui</strong> |          Non          | <strong>Oui</strong> |
-|                Squid (natif)                | <strong>Oui</strong> |          Non          | <strong>Oui</strong> | <strong>Oui</strong> |          Non          | <strong>Oui</strong> |
+| Barracuda | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | Non | Non |
+| Blue Coat | <strong>Oui</strong> | Non | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> |
+| Point de contrôle | Non | <strong>Oui</strong> | Non | <strong>Oui</strong> | Non | Non |
+| Cisco ASA (Syslog) | Non | <strong>Oui</strong> | Non | <strong>Oui</strong> | <strong>Oui</strong> | Non |
+| Cisco ASA avec FirePOWER | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> |
+| Cisco FWSM | Non | <strong>Oui</strong> | Non | <strong>Oui</strong> | <strong>Oui</strong> | Non |
+| Cisco Ironport WSA | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> |
+| Cisco Meraki | <strong>Oui</strong> | <strong>Oui</strong> | Non | <strong>Oui</strong> | Non | Non |
+|Cisco ScanSafe|<strong>Oui</strong>|<strong>Oui</strong>|<strong>Oui</strong>|<strong>Oui</strong>|<strong>Oui</strong>|<strong>Oui</strong>|
+| Clavister NGFW (Syslog) | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> |
+| SonicWall (anciennement Dell) | <strong>Oui</strong> | <strong>Oui</strong> | Non | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> |
+| Digital Arts i-FILTER | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> |
+|ForcePoint Web sécurité Cloud|<strong>Oui</strong>|<strong>Oui</strong>|<strong>Oui</strong>|<strong>Oui</strong>|<strong>Oui</strong>|<strong>Oui</strong>|
+| Fortigate | Non | <strong>Oui</strong> | Non | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> |
+|Fortinet FortiOS|<strong>Oui</strong>|<strong>Oui</strong>|Non|<strong>Oui</strong>|<strong>Oui</strong>|<strong>Oui</strong>|
+|iboss|<strong>Oui</strong>|<strong>Oui</strong>|<strong>Oui</strong>|<strong>Oui</strong>|<strong>Oui</strong>|<strong>Oui</strong>|
+| Juniper SRX | Non | <strong>Oui</strong> | Non | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> |
+| Juniper SSG | Non | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> |
+| McAfee SWG | <strong>Oui</strong> | Non | Non | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> |
+| MS TMG | <strong>Oui</strong> | Non | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> |
+| Palo Alto Networks | Non | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> |
+| Sophos | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | Non |
+| Squid (commun) | <strong>Oui</strong> | Non | <strong>Oui</strong> | <strong>Oui</strong> | Non | <strong>Oui</strong> |
+| Squid (natif) | <strong>Oui</strong> | Non | <strong>Oui</strong> | <strong>Oui</strong> | Non | <strong>Oui</strong> |
 | Websense - Rapport d’examen détaillé (CSV) | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> |
-|    Websense - Journal d’activité Internet (CEF)    | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> |
-|                   Zscaler                    | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> |
-     
+| Websense - Journal d’activité Internet (CEF) | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> |
+| Zscaler | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> |
+
 
 
 ## <a name="next-steps"></a>Étapes suivantes

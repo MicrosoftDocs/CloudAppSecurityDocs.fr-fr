@@ -61,20 +61,22 @@
           href: scoped-deployment.md
         - name: Balises et plages IP
           href: ip-tags.md
-    - name: Configurer Cloud Discovery
-      href: set-up-cloud-discovery.md
+    - name: Cloud Discovery
       items:
-        - name: Intégrer avec Microsoft Defender ATP
-          href: wdatp-integration.md
-        - name: Intégrer avec Zscaler
-          href: zscaler-integration.md
-        - name: Intégrer à iboss
-          href: iboss-integration.md
-        - name: Créer des rapports d’instantanés Cloud Discovery
-          href: create-snapshot-cloud-discovery-reports.md
-        - name: Configurer le chargement automatique des journaux pour des rapports continus
-          href: discovery-docker.md
+        - name: Configurer
           items:
+            - name: Configurer Cloud Discovery
+              href: set-up-cloud-discovery.md
+            - name: Intégrer avec Microsoft Defender ATP
+              href: wdatp-integration.md
+            - name: Intégrer avec Zscaler
+              href: zscaler-integration.md
+            - name: Intégrer à iboss
+              href: iboss-integration.md
+            - name: Créer des rapports d’instantanés Cloud Discovery
+              href: create-snapshot-cloud-discovery-reports.md
+            - name: Configurer le chargement automatique des journaux pour des rapports continus
+              href: discovery-docker.md
             - name: Docker sur Windows
               href: discovery-docker-windows.md
             - name: Docker sur Ubuntu et RHEL (local)
@@ -85,14 +87,19 @@
               href: troubleshoot-docker.md
             - name: Collecteur de journaux derrière un proxy
               href: log-collector-proxy.md
-        - name: Utiliser l’analyseur de journal personnalisé
-          href: custom-log-parser.md
-        - name: Enrichissement de Cloud Discovery
-          href: cloud-discovery-aad-enrichment.md
-        - name: Anonymiser les données Cloud Discovery
-          href: cloud-discovery-anonymizer.md
-    - name: Connecter des applications
-      href: enable-instant-visibility-protection-and-governance-actions-for-your-apps.md
+            - name: Utiliser l’analyseur de journal personnalisé
+              href: custom-log-parser.md
+    - name: Enrichissement de Cloud Discovery
+      href: cloud-discovery-aad-enrichment.md
+    - name: Anonymiser les données Cloud Discovery
+      href: cloud-discovery-anonymizer.md
+    - name: Utilisation de Cloud Discovery
+      items:
+        - name: Ajouter des applications personnalisées à Cloud Discovery
+          href: cloud-discovery-custom-apps.md
+        - name: Filtres et requêtes d’applications découvertes
+          href: discovered-app-queries.md
+    - name: Configurer le chargement automatique des journaux pour des rapports continus
       items:
         - name: Connecter Azure
           href: connect-azure-to-microsoft-cloud-app-security.md
@@ -112,15 +119,12 @@
           href: connect-salesforce-to-microsoft-cloud-app-security.md
         - name: Connecter ServiceNow
           href: connect-servicenow-to-microsoft-cloud-app-security.md
+        - name: Connecter WebEx
+          href: connect-webex-to-microsoft-cloud-app-security.md
+      href: enable-instant-visibility-protection-and-governance-actions-for-your-apps.md
     - name: Déployer le Contrôle d’application par accès conditionnel Azure AD
       href: proxy-deployment-aad.md
-    - name: Découvrir
-      items:
-        - name: Ajouter des applications personnalisées à Cloud Discovery
-          href: cloud-discovery-custom-apps.md
-        - name: Filtres et requêtes d’applications découvertes
-          href: discovered-app-queries.md
-    - name: Investigation
+    - name: Examen
       href: investigate.md
       items:
         - name: Activités

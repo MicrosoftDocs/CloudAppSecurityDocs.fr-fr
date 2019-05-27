@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: rkarlin
-ms.date: 1/27/2019
+ms.date: 05/23/2019
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 8324b5584cc49edcb15f356e6d255333f153b5bc
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: ac3ec9e33f017c655c174d7304b4de4ac364c0fa
+ms.sourcegitcommit: 235b7d5f1f49075c199b154abc38e51326c0493e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65567923"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66173502"
 ---
 # <a name="quickstart-work-with-discovered-apps"></a>Démarrage rapide : Utiliser des applications découvertes
 
@@ -68,6 +68,28 @@ Vous pouvez par exemple effectuer la distinction entre différents sites SharePo
 Cette fonctionnalité est prise en charge uniquement dans les pare-feu et les proxys qui contiennent des données d’URL cibles. Pour plus d’informations, consultez la liste des appliances prises en charge dans [Pare-feux et proxys pris en charge](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
 
  ![informations sur les sous-domaines](./media/discovery-domains.png) 
+
+## <a name="discover-resources-and-custom-apps"></a>Découvrir les ressources et les applications personnalisées
+
+Cloud Discovery vous permet également d’explorer en profondeur vos ressources IaaS et PaaS. Vous pouvez découvrir les activités de vos plateformes d’hébergement de ressources en voyant les accès aux données de vos ressources et de vos applications auto-hébergées, notamment les comptes de stockage, l’infrastructure et les applications personnalisées hébergées sur Azure, Google Cloud Platform et AWS. Non seulement vous pouvez voir l’utilisation générale dans vos solutions IaaS, mais aussi obtenir une visibilité sur les ressources spécifiques qui sont hébergées sur chacune d’elles et l’utilisation générale des ressources pour aider à atténuer les risques par ressource.
+
+Par exemple, à partir de Cloud App Security, vous pouvez superviser l’activité de chargement d’une grande quantité de données en découvrant sur quelle ressource elles sont chargées et en explorant les détails pour voir qui a effectué l’activité.
+
+> [!NOTE]
+> Cette fonctionnalité est prise en charge uniquement dans les pare-feu et les proxys qui contiennent des données d’URL cibles. Pour plus d’informations, consultez la liste des appliances prises en charge dans [Pare-feux et proxys pris en charge](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
+
+Pour voir les ressources découvertes :
+
+1. Dans le portail Cloud App Security, sélectionnez **Découvrir**, puis **Ressources découvertes**.
+
+  ![Menu des ressources découvertes](./media/discovered-resources-menu.png) 
+
+2. Dans la page des ressources découvertes, vous pouvez explorer chaque ressource pour voir les types de transactions effectuées, qui y a accédé et aller encore plus dans les détails pour en savoir plus sur les utilisateurs.
+ 
+  ![Découverte de ressources](./media/discovery-resources.png) 
+
+3. Pour les applications personnalisées, vous pouvez cliquer sur les trois boutons à la fin de la ligne et sélectionnez **Ajouter une application personnalisée**. Cette opération ouvre la fenêtre **Ajouter une application personnalisée** qui vous permet de nommer et identifier l’application afin de pouvoir l’inclure dans le tableau de bord Cloud Discovery.
+
 
 ## <a name="generate-cloud-discovery-executive-report"></a>Générer un rapport exécutif Cloud Discovery
 
