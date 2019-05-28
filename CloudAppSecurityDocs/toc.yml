@@ -89,18 +89,18 @@
               href: log-collector-proxy.md
             - name: Utiliser l’analyseur de journal personnalisé
               href: custom-log-parser.md
-    - name: Enrichissement de Cloud Discovery
-      href: cloud-discovery-aad-enrichment.md
-    - name: Anonymiser les données Cloud Discovery
-      href: cloud-discovery-anonymizer.md
-    - name: Utilisation de Cloud Discovery
-      items:
+        - name: Enrichissement de Cloud Discovery
+          href: cloud-discovery-aad-enrichment.md
+        - name: Anonymiser les données Cloud Discovery
+          href: cloud-discovery-anonymizer.md
         - name: Ajouter des applications personnalisées à Cloud Discovery
           href: cloud-discovery-custom-apps.md
         - name: Filtres et requêtes d’applications découvertes
           href: discovered-app-queries.md
-    - name: Configurer le chargement automatique des journaux pour des rapports continus
+    - name: Connecter des applications
       items:
+        - name: Connecter des applications pour obtenir une visibilité et une protection
+          href: enable-instant-visibility-protection-and-governance-actions-for-your-apps.md
         - name: Connecter Azure
           href: connect-azure-to-microsoft-cloud-app-security.md
         - name: Connecter AWS
@@ -121,7 +121,6 @@
           href: connect-servicenow-to-microsoft-cloud-app-security.md
         - name: Connecter WebEx
           href: connect-webex-to-microsoft-cloud-app-security.md
-      href: enable-instant-visibility-protection-and-governance-actions-for-your-apps.md
     - name: Déployer le Contrôle d’application par accès conditionnel Azure AD
       href: proxy-deployment-aad.md
     - name: Examen
