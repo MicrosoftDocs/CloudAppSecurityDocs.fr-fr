@@ -15,12 +15,12 @@ ms.assetid: c67a387f-8c88-4018-9e80-0fb1455cf768
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b0fcd13550d62d5ff96462b7d3f9f4a7437c1a44
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 7b0cdcca52b8be95e146af09595849b7c9dc1129
+ms.sourcegitcommit: 0303627fb0ceb460c50071d0b20e33aa94ccff8d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568055"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66491585"
 ---
 # <a name="content-inspection"></a>Inspection du contenu
 
@@ -42,8 +42,8 @@ Cloud App Security permet aux administrateurs d’accorder l’autorisation à C
 
 Afin d’octroyer les autorisations nécessaires à Cloud App Security :
 
-1.  Accédez à **Paramètres**, puis **Azure Information Protection**.
-2.  Activez **Inspecter les fichiers protégés**.
+1. Accédez à **Paramètres**, puis **Azure Information Protection**.
+2. Activez **Inspecter les fichiers protégés**.
 3. Suivez les instructions pour accorder les autorisations requises dans Azure Active Directory.
 4. Vous pouvez configurer les paramètres pour chaque stratégie de fichier afin de déterminer quelles stratégies analyseront les fichiers protégés.
 
