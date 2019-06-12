@@ -15,12 +15,12 @@ ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2889bbf3c837e0d8e086d7e7a579f2839c42b5f3
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: d3339c5b0edc1fd9ee3b3b201fb9fa66531d7694
+ms.sourcegitcommit: 9f671d5dd5e5da023d598425442d8736546ca183
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65567844"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66837470"
 ---
 # <a name="basic-setup-for-cloud-app-security"></a>Configuration de base pour Cloud App Security
 
@@ -54,6 +54,9 @@ Pour accéder au portail, vous devez ajouter les adresses IP suivantes à la lis
 
     - Pour utiliser l’intégration à Azure Information Protection, vous devez activer le [connecteur d’applications pour Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
   
+7. Si vous intégrez avec l’intégration de Azure-Protection avancée contre les menaces, consultez [intégration d’Azure Advanced Threat Protection](azip-integration.md) pour plus d’informations. 
+
+
 7. Grâce à cet écran, vous pouvez à tout moment sauvegarder vos paramètres de portail. Cliquez sur **Exporter les paramètres de portail** pour créer un fichier json de tous vos paramètres de portail, notamment les règles de stratégie, les groupes d’utilisateurs et les plages d’adresses IP.  
   
    

@@ -1,0 +1,75 @@
+---
+title: Intégrer la Protection contre les menaces avancées Azure avec Cloud App Security
+description: Cet article fournit des informations sur la façon de tirer parti des insights d’Azure-Protection avancée contre les menaces dans Cloud App Security pour la détection de risque hybride.
+keywords: ''
+author: rkarlin
+ms.author: rkarlin
+manager: rkarlin
+ms.date: 6/21/2019
+ms.topic: conceptual
+ms.collection: M365-security-compliance
+ms.prod: ''
+ms.service: cloud-app-security
+ms.technology: ''
+ms.assetid: 63e82b47-bb08-4614-af55-f85d04edfc5a
+ms.reviewer: reutam
+ms.suite: ems
+ms.custom: seodec18
+ms.openlocfilehash: 3d5563b73c8b813608c5fd5bc0ea9120ba930e61
+ms.sourcegitcommit: 9f671d5dd5e5da023d598425442d8736546ca183
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66837727"
+---
+# <a name="azure-information-protection-integration"></a>Intégration d’Azure Information Protection
+
+*S’applique à : Microsoft Cloud App Security*
+
+Microsoft Cloud App Security s’intègre à Azure Advanced Threat Protection (ATP Azure) pour fournir l’analytique comportementale de l’entité d’utilisateur (UEBA) dans un environnement hybride - application cloud et locales. Pour plus d’informations sur l’apprentissage automatique et analytique comportementale fournies par Azure ATP, consultez [What ' s Azure ATP ?](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp).
+
+En intégrant Azure ATP, votre portail Cloud App Security fournissent des alertes et des informations à partir de :
+- Microsoft Cloud App Security, qui identifie les attaques au sein d’une session de cloud, couvrant non seulement des produits Microsoft, mais également des applications tierces
+- Azure Advanced Threat Protection, qui utilise l’apprentissage automatique et analytique comportementale pour identifier les attaques de votre réseau local
+- Azure Active Directory Identity Protection, qui détecte et empêche proactive des risques utilisateur et connectez-vous aux identités dans le cloud
+
+
+## <a name="prerequisites"></a>Prérequis
+
+Pour un examen complet de l’utilisateur dans un environnement hybride, vous devez disposer de :
+
+- Licence valide pour Microsoft Cloud App Security
+- Une licence valide pour Azure ATP connecté à votre instance Active Directory
+
+>[!NOTE]
+>Si vous n’avez pas un abonnement pour Azure ATP, vous serez toujours en mesure d’utiliser le portail Cloud App Security pour enquêter sur les utilisateurs, mais vous ne recevrez des insights à partir de votre environnement local.
+
+
+## <a name="enable-azure-advanced-threat-protection"></a>Activer la Protection contre les menaces avancées Azure
+
+Il vous suffit pour intégrer Azure-Protection avancée contre les menaces avec Cloud App Security est cliquez sur une seule case à cocher. En activant l’intégration, vous autorisez le Cloud App Security accéder et analyser les activités suspectes locales vues par Azure ATP, les extraire dans le Cloud App Security et vous fournissez une image complète de votre environnement hybride et toutes les activités à risque effectuée par vos utilisateurs.
+
+Pour permettre à Cloud App Security à intégrer à Azure ATP :
+
+1. Dans Cloud App Security, sous la roue dentée des paramètres, sélectionnez **paramètres**.
+    
+   ![Menu Paramètres](./media/azip-system-settings.png)
+
+1. Sous **Protection contre les menaces**, sélectionnez **Azure ATP**.
+   
+    ![Activer la protection contre les menaces avancées azure](./media/aatp-integration.png)
+
+3. Cochez la case pour **données connecter Azure ATP, y compris des alertes et des activités avec Cloud App Security**.
+ 
+Après avoir activé l’intégration Azure-Protection avancée contre les menaces, vous serez en mesure de voir les activités en local pour tous les utilisateurs de votre organisation. Vous serez également obtenir des avancées insights sur vos utilisateurs qui combinent des alertes et les activités suspectes dans vos environnements cloud et locales.
+
+
+
+En savoir plus sur [examen des utilisateurs à risque](tutorial-ueba.md).
+
+
+## <a name="next-steps"></a>Étapes suivantes 
+[Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)   
+
+[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)  
+  
