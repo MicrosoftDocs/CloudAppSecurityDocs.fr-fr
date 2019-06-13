@@ -25,6 +25,8 @@
   items:
     - name: Découvrir et gérer le shadow IT
       href: tutorial-shadow-it.md
+    - name: Examiner des utilisateurs à risque
+      href: tutorial-ueba.md
     - name: Examiner des applications OAuth à risque
       href: investigate-risky-oauth.md
     - name: Téléchargements en bloc d’informations sensibles
@@ -208,18 +210,28 @@
   items:
     - name: Attester votre application
       href: attest-your-app.md
-    - name: Dépannage de Cloud Discovery
-      href: troubleshooting-cloud-discovery.md
-    - name: Résolution des problèmes des connecteurs API à l’aide de messages d’erreur
-      href: troubleshooting-api-connectors-using-error-messages.md
-    - name: Résolution des problèmes d’inspection du contenu
-      href: troubleshooting-content-inspection.md
-    - name: Résolution des problèmes d’intégration de SIEM
-      href: troubleshooting-siem.md
-    - name: Résolution des problèmes du déploiement Docker Cloud Discovery
-      href: troubleshoot-docker.md
-    - name: Résolution des problèmes des stratégies
-      href: troubleshoot-policies.md
+    - name: Stratégies courantes
+      items:
+        - name: Stratégies Cloud Discovery
+          href: policies-cloud-discovery.md
+        - name: Stratégies de protection contre les menaces
+          href: policies-threat-protection.md
+        - name: Stratégies de protection des informations
+          href: policies-information-protection.md
+    - name: Résolution des problèmes
+      items:
+        - name: Dépannage de Cloud Discovery
+          href: troubleshooting-cloud-discovery.md
+        - name: Résolution des problèmes des connecteurs API à l’aide de messages d’erreur
+          href: troubleshooting-api-connectors-using-error-messages.md
+        - name: Résolution des problèmes d’inspection du contenu
+          href: troubleshooting-content-inspection.md
+        - name: Résolution des problèmes d’intégration de SIEM
+          href: troubleshooting-siem.md
+        - name: Résolution des problèmes du déploiement Docker Cloud Discovery
+          href: troubleshoot-docker.md
+        - name: Résolution des problèmes des stratégies
+          href: troubleshoot-policies.md
 - name: Ressources
   items:
     - name: Archives des notes de publication
