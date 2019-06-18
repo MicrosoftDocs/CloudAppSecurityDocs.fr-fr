@@ -2,10 +2,10 @@
 title: Intégrer Azure Information Protection à Cloud App Security
 description: Cet article fournit des informations sur la façon de tirer parti de vos balises Azure Information Protection dans Cloud App Security afin de renforcer le contrôle de l’utilisation des applications cloud de votre organisation.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 1/21/2019
+author: ShlomoSagir-MS
+ms.author: ShlomoSagir-MS
+manager: ShlomoSagir-MS
+ms.date: 6/13/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b7792d594cd2345a93f57942ee032d6387f82b27
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 44fdf94cafa684e7a452155e2b5531bd0868d783
+ms.sourcegitcommit: 5c6d41aae2d9ac461917338f4a423f7a2683aca1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65567593"
+ms.lasthandoff: 06/16/2019
+ms.locfileid: "67149564"
 ---
 # <a name="azure-information-protection-integration"></a>Intégration d’Azure Information Protection
 
@@ -29,7 +29,7 @@ ms.locfileid: "65567593"
 Microsoft Cloud App Security vous permet d’appliquer des étiquettes de classification Azure Information Protection automatiquement, avec ou sans protection, à des fichiers, en tant qu’action de gouvernance de stratégie de fichier. Vous pouvez également rechercher des fichiers en filtrant sur l’étiquette de classification appliquée dans le portail Cloud App Security. L’utilisation de classifications accroît la visibilité et le contrôle de vos données sensibles dans le cloud. Pour intégrer Azure Information Protection à Cloud App Security, il suffit de cocher une seule case. 
 
 > [!NOTE]
-> Cet article est également approprié pour les étiquettes unifiées Microsoft Information Protection si vous avez déjà [migré vos étiquettes de classification pour le Centre de conformité et de sécurité Office 365](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels). Si vous n’avez pas migré vos étiquettes de classification existantes et que vous commencez à créer de nouvelles étiquettes dans le Centre de conformité et de sécurité Office 365, Cloud App Security utilise uniquement les étiquettes préexistantes configurées dans le portail Azure Information Protection.
+> Cet article est également approprié pour les étiquettes unifiées Microsoft Information Protection si vous avez déjà [migré vos étiquettes de classification pour le Centre de conformité et de sécurité Office 365](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels). Si vous n’avez pas migré vos étiquettes de classification existant et commencer à créer de nouvelles étiquettes dans le centre de la conformité et de sécurité Office 365, Cloud App Security utilise uniquement les étiquettes préexistants configurés dans le portail Azure Information Protection.
 
 
 En intégrant Azure Information Protection à Cloud App Security, vous pouvez utiliser toute la puissance des services et des fichiers sécurisés dans votre cloud, notamment :
@@ -47,12 +47,14 @@ En intégrant Azure Information Protection à Cloud App Security, vous pouvez ut
 
 - Pour utiliser l’intégration à Azure Information Protection, vous devez activer le [connecteur d’applications pour Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
 
+Pour utiliser des étiquettes dans Cloud App Security, les étiquettes doivent être publiées dans le cadre de la stratégie globale. Si vous utilisez Azure Information Protection, les étiquettes doivent être publiées via le portail Azure Information Protection. Si vous avez migré vers étiquettes unifiées, les étiquettes doivent être publiées via Office 365 centre de sécurité et conformité.
+
 Cloud App Security prend actuellement en charge l’application d’étiquettes de classification Azure Information Protection pour les types de fichiers suivants :
 
 - Word : docm, docx, dotm, dotx
 - Excel : xlam, xlsm, xlsx, xltx
 - PowerPoint : potm, potx, ppsx, ppsm, pptm, pptx
-- Les fichiers PDF seront disponibles dans des versions ultérieures 
+- PDF
 
 Cette fonctionnalité est actuellement disponible pour les fichiers stockés dans Box, G Suite, SharePoint Online et OneDrive Entreprise. D’autres applications cloud seront prises en charge dans les prochaines versions.
 

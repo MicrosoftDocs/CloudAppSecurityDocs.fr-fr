@@ -5,7 +5,7 @@ keywords: ''
 author: ShlomoSagir-MS
 ms.author: ShlomoSagir-MS
 manager: ShlomoSagir-MS
-ms.date: 06/10/2019
+ms.date: 06/13/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: bf25d1e6-e5dc-449f-b50e-1cd4a21b6d3d
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0424af7b50aea3bfe77ae0cb2fe1e7d66f6f1fde
-ms.sourcegitcommit: a5b9089b381bcf8bb48031a5a9141e4e20955aaf
+ms.openlocfilehash: b970a947475b449534ad1ac3d28db2dd1984fc15
+ms.sourcegitcommit: 5c6d41aae2d9ac461917338f4a423f7a2683aca1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66830327"
+ms.lasthandoff: 06/16/2019
+ms.locfileid: "67149521"
 ---
 # <a name="microsoft-data-classification-services-integration"></a>Intégration du service de classification des données Microsoft
 
@@ -29,7 +29,7 @@ ms.locfileid: "66830327"
 Microsoft Cloud App Security vous permet d’utiliser le service de classification des données Microsoft en mode natif pour classer les fichiers de vos applications cloud. Le service de classification des données Microsoft fournit une expérience unifiée de protection des informations via Office 365, Azure Information Protection et Microsoft Cloud App Security. Le service de classification vous permet d’étendre votre travail de classification des données aux applications cloud tierces protégées par Microsoft Cloud App Security, en appliquant les décisions que vous avez déjà prises à un plus grand nombre d’applications.
 
 >[!NOTE]
-> Cette fonctionnalité est actuellement disponible aux États-Unis, en Europe (à l’exception de la France) et dans la région Asie-Pacifique.
+> Cette fonctionnalité est actuellement disponible dans des États-Unis, Europe (à l’exception de la France), Australie, Inde, au Canada, Japon et Asie-Pacifique.
 
 
 ## <a name="enable-content-inspection-with-data-classification-services"></a>Activer l’inspection du contenu avec les services de classification des données

@@ -1,8 +1,8 @@
 ---
 title: Stratégies cloud Discovery - Cloud App Security | Microsoft Docs
-description: Cette rubrique décrit les étapes pour configurer de nombreuses stratégies Cloud Discovery dans Cloud App Security.
-author: rkarlin
-ms.author: rkarlin
+description: Cet article décrit les étapes pour configurer de nombreuses stratégies Cloud Discovery dans Cloud App Security.
+author: ShlomoSagir-MS
+ms.author: ShlomoSagir-MS
 ms.date: 06/13/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -10,12 +10,12 @@ ms.service: cloud-app-security
 ms.assetid: 570da960-771d-484f-932d-b086f2ec2978
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4c9d90852f1dbdf18da285f63abbb46e91595655
-ms.sourcegitcommit: 9f671d5dd5e5da023d598425442d8736546ca183
+ms.openlocfilehash: f301e5796fe408b9c1fb00b859c848bf4b62ba5f
+ms.sourcegitcommit: 5c6d41aae2d9ac461917338f4a423f7a2683aca1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66837757"
+ms.lasthandoff: 06/16/2019
+ms.locfileid: "67149536"
 ---
 # <a name="cloud-discovery-policies"></a>Stratégies Cloud Discovery
 
@@ -60,7 +60,7 @@ Rapports de chargement automatique des journaux de configurer pour continus Clou
 
 2.  Dans le **modèle de stratégie** champ, sélectionnez le **nouvelle application à risques** modèle et appliquer le modèle.
 
-3.  Sous **application remplissant toutes les conditions suivantes** définir le [Score de risque](risk-score.md) slider et et le facteur de risque de conformité pour la personnalisation, vous êtes le niveau de risque que vous souhaitez déclencher une alerte, puis définissez les filtres de stratégie pour répondre aux exigences de sécurité de votre organisation.
+3.  Sous **application remplissant toutes les conditions suivantes** définir le [Score de risque](risk-score.md) slider et le facteur de risque de conformité pour personnaliser vous sont le niveau de risque que vous souhaitez déclencher une alerte, puis définissez les filtres de stratégie pour répondre aux exigences de sécurité de votre organisation.
 
     1.  Facultatif : Pour obtenir des détections plus explicites, personnaliser la quantité de trafic qui déclenchera une alerte.
 
@@ -131,15 +131,15 @@ Rapports de chargement automatique des journaux de configurer pour continus Clou
 
 3.  Cochez la case pour **créer une alerte pour chaque événement correspondant avec le niveau de gravité de la stratégie**.
 
-4.  Configurer les actions à prendre lorsqu’une alerte est déclenchée.
+4.  Configurer les actions à entreprendre lorsqu’une alerte est déclenchée.
 
 ## <a name="detect-risky-oauth-apps"></a>Détecter les applications OAuth à risque
 
-Bénéficiez d’une visibilité et contrôle accrus de [applications OAuth](investigate-risky-oauth.md) qui sont installés à l’intérieur d’applications comme Salesforce, Office 365 et G Suite. Les applications OAuth qui demandent des autorisations élevées et ont Communauté rares à utiliser peuvent être considérées comme risquées.
+Bénéficiez d’une visibilité et contrôle accrus de [applications OAuth](investigate-risky-oauth.md) qui sont installés à l’intérieur d’applications comme G Suite, Office 365 et Salesforce. Les applications OAuth qui demandent des autorisations élevées et ont Communauté rares à utiliser peuvent être considérées comme risquées.
 
 ### <a name="prerequisites"></a>Prérequis
 
-Rapports de chargement automatique des journaux de configurer pour continus Cloud Discovery, comme décrit dans [chargement automatique des journaux de configuration pour des rapports continus](configure-automatic-log-upload-for-continuous-reports.md).
+Vous devez disposer de l’application G Suite, Office 365 ou Salesforce connectée à l’aide de [connecteurs d’application](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
 ### <a name="steps"></a>Étapes
 
@@ -151,10 +151,10 @@ Rapports de chargement automatique des journaux de configurer pour continus Clou
 
 4.  Ajoutez le filtre **utilisation communautaire** est égal à **rares**.
 
-4.  Configurer les actions à prendre lorsqu’une alerte est déclenchée. Par exemple, pour Office 365, consultez **révoquer l’application** pour les applications OAuth détectées par la stratégie.
+4.  Configurer les actions à entreprendre lorsqu’une alerte est déclenchée. Par exemple, pour Office 365, consultez **révoquer l’application** pour les applications OAuth détectées par la stratégie.
 
 > [!NOTE]
->  Prise en charge pour les magasins d’applications Office 365, Salesforce et G Suite.
+>  Prise en charge pour les magasins d’applications de G Suite, Office 365 et Salesforce.
 
 ## <a name="next-steps"></a>Étapes suivantes 
 
