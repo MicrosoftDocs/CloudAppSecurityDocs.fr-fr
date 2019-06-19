@@ -2,10 +2,10 @@
 title: Intégrer Flow à Cloud App Security pour bénéficier de l’automatisation avec des alertes personnalisées
 description: Cet article explique comment bénéficier de l’automatisation avec des alertes personnalisées en intégrant Flow à Cloud App Security.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 12/10/2018
+author: ShlomoSagir-MS
+ms.author: ShlomoSagir-MS
+manager: ShlomoSagir-MS
+ms.date: 6/18/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,16 +14,16 @@ ms.technology: ''
 ms.assetid: 344f92e2-6b3b-46db-bfd0-3b1016e0bc34
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5a85f97480953951d281bc8e951293310ed29a19
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: a9bdc83e18f82f60719e4080aacecdf4eea0580e
+ms.sourcegitcommit: 62778bfbc010b95cdef4c8aed23b0f195f382242
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65567766"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67171537"
 ---
-# <a name="integrate-with-flow-for-custom-alert-automation---preview"></a>Effectuer l’intégration à Flow pour assurer l’automatisation avec des alertes personnalisées - Préversion
+# <a name="integrate-with-flow-for-custom-alert-automation"></a>Intégrer avec Flow automatisation d’alerte personnalisée
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Vous pouvez intégrer Cloud App Security à [Microsoft Flow](https://docs.microsoft.com/flow/getting-started) pour assurer l’automatisation et fournir des playbooks d’orchestration à la suite d’alertes personnalisées. Grâce à l’[écosystème de connecteurs](https://docs.microsoft.com/connectors/) disponible dans Microsoft Flow, vous pouvez automatiser le déclenchement de playbooks quand Cloud App Security génère des alertes. Vous pouvez par exemple créer automatiquement un problème dans un système de gestion de tickets à l’aide du [connecteur ServiceNow](https://docs.microsoft.com/connectors/service-now/) ou envoyer un e-mail d’approbation pour exécuter une action de gouvernance personnalisée quand une alerte est déclenchée dans Cloud App Security.  
 

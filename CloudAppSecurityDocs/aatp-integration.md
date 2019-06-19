@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: rkarlin
-ms.date: 6/21/2019
+ms.date: 6/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,34 +15,34 @@ ms.assetid: 63e82b47-bb08-4614-af55-f85d04edfc5a
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4ca98ab0cb5655d774c6ee4e7f917a6e9456092a
-ms.sourcegitcommit: a25543c14c35f159dd06f7c0c89d6bc0e36a0413
+ms.openlocfilehash: 1f920a6cb1ddcc00930527b9ba22264d4b4637a6
+ms.sourcegitcommit: 62778bfbc010b95cdef4c8aed23b0f195f382242
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67031063"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67171485"
 ---
-# <a name="azure-information-protection-integration"></a>Intégration d’Azure Information Protection
+# <a name="azure-advanced-threat-protection-integration"></a>Intégration d’Azure-Protection avancée contre les menaces
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Microsoft Cloud App Security s’intègre à Azure Advanced Threat Protection (ATP Azure) pour fournir l’analytique comportementale de l’entité d’utilisateur (UEBA) dans un environnement hybride - application cloud et locales. Pour plus d’informations sur l’apprentissage automatique et analytique comportementale fournies par Azure ATP, consultez [What ' s Azure ATP ?](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp).
 
 En intégrant Azure ATP, votre portail Cloud App Security fournissent des alertes et des informations à partir de :
-- Microsoft Cloud App Security, qui identifie les attaques au sein d’une session de cloud, couvrant non seulement des produits Microsoft, mais également des applications tierces
+- Microsoft Cloud App Security, qui identifie les attaques au sein d'une session cloud, couvrant non seulement les produits Microsoft mais aussi les applications tierces
 - Azure Advanced Threat Protection, qui utilise l’apprentissage automatique et analytique comportementale pour identifier les attaques de votre réseau local
-- Azure Active Directory Identity Protection, qui détecte et empêche proactive des risques utilisateur et connectez-vous aux identités dans le cloud
+- Azure Active Directory Identity Protection, qui détecte et prévient de manière proactive les risques pouvant affecter les identités dans le cloud au niveau des utilisateurs et des connexions
 
 
 ## <a name="prerequisites"></a>Prérequis
 
-Pour un examen complet de l’utilisateur dans un environnement hybride, vous devez disposer de :
+Pour procéder à un examen complet d’un utilisateur dans un environnement hybride, les éléments suivants sont nécessaires :
 
 - Licence valide pour Microsoft Cloud App Security
-- Une licence valide pour Azure ATP connecté à votre instance Active Directory
+- Licence valide pour Azure ATP connectée à votre instance Active Directory
 
 >[!NOTE]
->Si vous n’avez pas un abonnement pour Azure ATP, vous serez toujours en mesure d’utiliser le portail Cloud App Security pour enquêter sur les utilisateurs, mais vous ne recevrez des insights à partir de votre environnement local.
+>Si vous n’avez pas d'abonnement à Azure ATP, vous pourrez toujours utiliser le portail Cloud App Security pour examiner les utilisateurs, mais vous ne recevrez pas d’informations de votre environnement local.
 
 
 ## <a name="enable-azure-advanced-threat-protection"></a>Activer la Protection contre les menaces avancées Azure
@@ -60,6 +60,10 @@ Pour permettre à Cloud App Security à intégrer à Azure ATP :
     ![Activer la protection contre les menaces avancées azure](./media/aatp-integration.png)
 
 3. Cochez la case pour **données connecter Azure ATP, y compris des alertes et des activités avec Cloud App Security**.
+
+
+> [!NOTE]
+> Il peut prendre jusqu'à 12 heures jusqu'à ce que l’intégration entre en vigueur.
  
 Après avoir activé l’intégration Azure-Protection avancée contre les menaces, vous serez en mesure de voir les activités en local pour tous les utilisateurs de votre organisation. Vous serez également obtenir des avancées insights sur vos utilisateurs qui combinent des alertes et les activités suspectes dans vos environnements cloud et locales.
 
