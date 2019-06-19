@@ -2,10 +2,10 @@
 title: Qu’est-ce que Cloud App Security ?
 description: Cet article décrit Microsoft Cloud App Security et son fonctionnement.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 1/27/2019
+author: ShlomoSagir-MS
+ms.author: ShlomoSagir-MS
+manager: ShlomoSagir-MS
+ms.date: 6/17/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 525df694492667bf12ceb8a9fe30654f97c19935
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 0271b75da9b9d8e18deb99503e4cfe78660ea704
+ms.sourcegitcommit: b679efee6d54931c6b5f123324b3b4dd791ddca6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568780"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67157071"
 ---
 # <a name="microsoft-cloud-app-security-overview"></a>Présentation de Microsoft Cloud App Security
 
@@ -29,19 +29,23 @@ ms.locfileid: "65568780"
 > [!NOTE]
 > Pour plus d’informations sur Office 365 Cloud App Security, consultez [Bien démarrer avec Office 365 Cloud App Security](https://support.office.com/article/Get-started-with-Advanced-Management-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a).
 
-Le passage au cloud donne plus de flexibilité aux employés et réduit les coûts informatiques. Toutefois, il apporte son lot de nouveaux défis et problématiques quant à la sécurisation de votre organisation. Pour tirer profit des applications cloud, l’équipe informatique doit trouver le juste équilibre entre la prise en charge des accès et la conservation du contrôle pour protéger les données critiques.  
+Le passage au cloud donne plus de flexibilité aux employés et aux équipes informatiques. Toutefois, il apporte son lot de nouveaux défis et problématiques quant à la sécurisation de votre organisation. Pour tirer profit des applications cloud et des services, l’équipe informatique doit trouver le juste équilibre entre la prise en charge des accès et la conservation du contrôle pour protéger les données critiques.
 
-Cloud App Security est un composant essentiel de la pile Microsoft Cloud Security. Il s’agit d’une solution complète qui permet à votre organisation de tirer pleinement parti de la promesse des applications cloud tout en vous permettant de conserver le contrôle grâce à une meilleure visibilité de l’activité. Elle renforce également la protection des données critiques des applications cloud. Avec des outils permettant de découvrir l’informatique fantôme, d’évaluer les risques, d’appliquer des stratégies, d’examiner les activités et de stopper les menaces, votre organisation peut passer plus tranquillement au cloud tout en conservant le contrôle des données critiques. 
+Microsoft Cloud App Security est un répartiteur de sécurité d’accès cloud (CASB) qui prend en charge différents modes de déploiement, y compris la collecte de journaux, les connecteurs API et un proxy inverse. Il offre une grande visibilité, un contrôle des déplacements des données, et des analyses sophistiquées pour identifier et combattre les cybermenaces sur l'ensemble de vos services cloud Microsoft et tiers.
+
+Microsoft Cloud App Security s’intègre en mode natif aux principales solutions Microsoft, et il a été conçu en tenant compte des besoins des professionnels de la sécurité. Il fournit un déploiement simple, une gestion centralisée et des capacités d’automatisation innovantes.
 
 Pour plus d’informations sur les licences, consultez la [fiche technique sur les licences Microsoft Cloud App Security](https://aka.ms/mcaslicensing).
 
 ## <a name="the-cloud-app-security-framework"></a>Infrastructure de Cloud App Security  
 
-- **Cloud Discovery** : Découvrez toute les utilisations du cloud dans votre organisation, notamment la génération de rapports et le contrôle de l’informatique fantôme, et l’évaluation des risques.
+- **Découvrir et contrôler l’utilisation de l’informatique fantôme**: Identifier les applications cloud, IaaS, et les services PaaS utilisés par votre organisation. Examiner les modèles d’utilisation, évaluer les risques et le niveau de préparation de plus de 16 000 applications SaaS face à plus de 80 risques. Commencez à gérer ces éléments pour garantir la sécurité et la conformité.
 
-- **Protection des données** : Surveillez et contrôlez vos données dans le cloud grâce à une visibilité, à l’application de stratégies DLP, à la gestion des alertes et aux investigations. 
+- **Protection de vos informations sensibles, où qu’elles se trouvent dans le cloud** : Comprenez, classifiez et protégez l’exposition des informations sensibles au repos. Tirez parti des stratégies et des processus automatisés fournis par défaut pour appliquer des contrôles en temps réel dans toutes vos applications cloud.
 
-- **Protection contre les menaces** : Détectez les utilisations anormales et les incidents de sécurité. Utiliser l’analyse des comportements et des outils d’investigation avancés pour réduire les risques, et définissez des stratégies et des alertes pour obtenir un contrôle maximal sur le trafic cloud réseau.
+- **Protection contre les cybermenaces et les anomalies** : Détectez tout comportement inhabituel dans les applications cloud pour identifier les ransomware, les utilisateurs compromis ou les applications non autorisées, analysez l’utilisation à haut risque et corrigez automatiquement les erreurs afin d’en limiter les risques pour votre organisation.
+
+- **Évaluation de la compatibilité de vos applications cloud** : Évaluez si vos applications cloud répondent aux exigences de conformité appropriées, notamment la conformité aux réglementations et normes du secteur. Empêchez les fuites de données pour les applications non conformes, et limitez l’accès aux données réglementées.
 
 ## <a name="architecture"></a>Architecture  
 
