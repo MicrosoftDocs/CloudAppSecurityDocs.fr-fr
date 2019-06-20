@@ -23,6 +23,8 @@
       href: discovered-apps.md
 - name: Didacticiels
   items:
+    - name: Examiner des utilisateurs à risque
+      href: tutorial-ueba.md
     - name: Découvrir et gérer le shadow IT
       href: tutorial-shadow-it.md
     - name: Examiner des applications OAuth à risque
@@ -188,6 +190,8 @@
           href: governance-actions.md
         - name: Gouverner les applications découvertes
           href: governance-discovery.md
+        - name: Intégration d’Azure ATP
+          href: aatp-integration.md
         - name: Intégration d’Azure Information Protection
           href: azip-integration.md
         - name: Intégrer avec des solutions externes
