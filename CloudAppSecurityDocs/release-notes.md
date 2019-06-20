@@ -15,12 +15,12 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 958d005a9c2a34bb714fc5b2a4f17b04eb727df2
-ms.sourcegitcommit: 9f671d5dd5e5da023d598425442d8736546ca183
+ms.openlocfilehash: 33bd8a0642be1b3dd6a52b9ce93bf432d5b6836a
+ms.sourcegitcommit: 917d8cf85ac0b58a3b1788067c2ff92101eb3ccf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66837521"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67237225"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Nouveautés de Microsoft Cloud App Security
 
@@ -128,7 +128,7 @@ Vous pouvez maintenant configurer des stratégies de session pour superviser les
 Les requêtes suggérées ont été ajoutées à la page des applications OAuth. Elles fournissent des modèles d’examen prédéfinis qui vous permettent de filtrer vos applications OAuth. Les requêtes suggérées incluent des filtres personnalisés qui identifient les applications à risque telles que les applications autorisées par les administrateurs. Les requêtes enregistrées permettent d’enregistrer des requêtes personnalisées pour une utilisation ultérieure, de manière similaire aux requêtes enregistrées déjà disponibles dans les pages Découverte et Journal d’activité. 
 
 - **Configuration par défaut de l’audit Office 365**<br>
-Si vous souhaitez activer la supervision des activités Office 365 dans Cloud App Security, vous devez maintenant activer l’audit dans le [Centre de sécurité et conformité Office 365]( https://support.microsoft.com/help/4026501/office-auditing-in-office-365-for-admins). Cela est dû à un [changement apporté à l’audit Office 365]( https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-faq#what-happens-if-i-disable-auditing-for-my-office-365-organization-will-i-still-get-events-via-the-management-activity-api). Ce changement est nécessaire uniquement si vous n’avez pas encore activé la supervision des activités Office 365 dans Cloud App Security.
+Si vous souhaitez activer la supervision des activités Office 365 dans Cloud App Security, vous devez maintenant activer l’audit dans le [Centre de sécurité et conformité Office 365](https://docs.microsoft.com/office365/securitycompliance/turn-audit-log-search-on-or-off#turn-on-audit-log-search). Cela est dû à un [changement apporté à l’audit Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-faq#what-happens-if-i-disable-auditing-for-my-office-365-organization-will-i-still-get-events-via-the-management-activity-api). Ce changement est nécessaire uniquement si vous n’avez pas encore activé la supervision des activités Office 365 dans Cloud App Security.
 
 - **Prise en charge améliorée de Box**<br>
 Cloud App Security prend en charge deux nouvelles actions de gouvernance pour Box :
