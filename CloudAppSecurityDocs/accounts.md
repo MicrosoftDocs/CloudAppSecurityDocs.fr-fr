@@ -15,12 +15,12 @@ ms.assetid: 7811f23b-6100-427f-93b1-44f5f81f6c76
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 35b9bdf9e1b59bfecefe18f5fcaacd4ce6b73edf
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 86dad8f925f3ffd95a36787112482625c10c23d1
+ms.sourcegitcommit: 917d8cf85ac0b58a3b1788067c2ff92101eb3ccf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65565882"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67237164"
 ---
 # <a name="accounts"></a>Comptes
 
@@ -28,7 +28,7 @@ ms.locfileid: "65565882"
 
 Microsoft Cloud App Security vous donne une visibilité sur les comptes de vos applications connectées. Une fois connecté à une application à l’aide du connecteur d’applications, Cloud App Security lit les informations sur le compte qui sont associées aux applications connectées. La page Comptes vous permet d’examiner ces comptes, les autorisations, les groupes dont ils sont membres, leurs alias et les applications qu’ils utilisent. De plus, quand Cloud App Security détecte un nouveau compte qui n’a pas déjà été vu dans l’une des applications connectées (par exemple dans les activités ou le partage de fichiers), le compte est ajouté à la liste des comptes de cette application. Cela vous permet d’avoir une visibilité sur l’activité des utilisateurs externes interagissant avec vos applications cloud.
 
-Les administrateurs peuvent rechercher les métadonnées ou l’activité d’un utilisateur spécifique. La page **Utilisateurs et comptes** vous fournit des détails complets sur l’entité qui sont extraits à partir d’applications cloud connectées. Elle fournit également l’historique d’activité de l’utilisateur et les alertes de sécurité liées à l’utilisateur.
+Les administrateurs peuvent rechercher les métadonnées ou l’activité d’un utilisateur spécifique. Le **utilisateurs et comptes** page vous fournit des informations plus détaillées sur les entités qui sont extraits à partir d’applications de cloud connectées. Elle fournit également l’historique d’activité de l’utilisateur et les alertes de sécurité liées à l’utilisateur.
 
 [!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 

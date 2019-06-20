@@ -15,12 +15,12 @@ ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 841255c2d313c510374458316184161359c7855f
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: ed441d1832ce9f6d0ce070fc58baa058a34bcadc
+ms.sourcegitcommit: 917d8cf85ac0b58a3b1788067c2ff92101eb3ccf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65567859"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67237208"
 ---
 # <a name="files"></a>Fichiers
 
@@ -56,7 +56,7 @@ Vous trouverez ci-dessous la liste des filtres de fichiers qui peuvent être app
 > [!NOTE]
 > Quand vous utilisez des filtres de stratégie de fichier, le filtre **Contains (Contient)** recherche uniquement des **mots entiers** séparés par des virgules, points, espaces ou traits de soulignement. 
 > - Les espaces entre les mots agissent comme l’opérateur OR. Par exemple, si vous recherchez **malware** **virus**, le filtre trouve tous les fichiers dont le nom contient malware ou virus. Il trouve donc malware-virus.exe et virus.exe.  
-> - Si vous souhaitez rechercher une chaîne, placez les mots entre guillemets. Ceux-ci fonctionnent comme l’opérateur AND. Ainsi, si vous recherchez **"malware"** **"virus"**, le filtre trouve virus_malware_file.exe, mais pas malwarevirusfile.exe et malware.exe. Toutefois, il recherche la chaîne exacte. Si vous recherchez **"malware virus"**, il ne trouve ni **"virus"** ni **"virus_malware"**.
+> - Si vous souhaitez rechercher une chaîne, placez les mots entre guillemets. Ceux-ci fonctionnent comme l’opérateur AND. Ainsi, si vous recherchez **"malware"** **"virus"** , le filtre trouve virus_malware_file.exe, mais pas malwarevirusfile.exe et malware.exe. Toutefois, il recherche la chaîne exacte. Si vous recherchez **"malware virus"** , il ne trouve ni **"virus"** ni **"virus_malware"** .
 >
 > **Equals (Est égal à)** recherche uniquement la chaîne complète ; par exemple, si vous recherchez **malware.exe**, il trouve malware.exe, mais pas malware.exe.txt. 
 
@@ -136,7 +136,7 @@ Vous pouvez également configurer la stratégie pour qu’elle s’exécute sur 
 
 ## <a name="working-with-the-file-drawer"></a>Utilisation du tiroir de fichier
 
-Vous pouvez afficher plus d’informations sur chaque fichier en cliquant sur le fichier lui-même dans le journal des fichiers. Le fait de cliquer permet d’ouvrir le **tiroir de fichier qui contient les actions supplémentaires suivantes pouvant être effectuées sur le fichier :
+Vous pouvez afficher plus d’informations sur chaque fichier en cliquant sur le fichier lui-même dans le journal des fichiers. Cliquant sur le **tiroir de fichier** qui fournit les actions supplémentaires suivantes, vous pouvez effectuer sur le fichier :
 
 - **URL** - Pointe vers l’emplacement du fichier.
 - **Identificateurs de fichier** - Ouvre une fenêtre contextuelle avec des détails en données brutes sur le fichier, notamment l’ID du fichier et les clés de chiffrement.

@@ -15,12 +15,12 @@ ms.assetid: 9ba5c7d3-c733-4048-9b99-bf41a0f46695
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 098855853ea933e5319198978cb771c220ec22be
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 4f25b48ece9782e75c20cfa8516183c953d05bb3
+ms.sourcegitcommit: 917d8cf85ac0b58a3b1788067c2ff92101eb3ccf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65565905"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67237138"
 ---
 # <a name="activity-filters-and-queries"></a>Filtres et requêtes d’activités
 
@@ -68,16 +68,16 @@ Vous trouverez ci-dessous une liste des filtres d’activité qui peuvent être 
   - Catégorie IP : Catégorie de l’adresse IP à partir de laquelle l’activité a été réalisée, par exemple, toutes les activités de la plage d’adresses IP administratives. Les catégories doivent être configurées de façon à inclure les adresses IP appropriées, à l’exception de la catégorie « Risqué », qui est préconfigurée et qui inclut deux balises IP : Proxy anonyme et Tor. Pour découvrir comment configurer les catégories IP, consultez [Organiser les données selon vos besoins](ip-tags.md).  
   - Balise IP : Balise de l’adresse IP à partir de laquelle l’activité a été exécutée, par exemple toutes les activités des adresses IP de proxy anonyme. Cloud App Security crée un ensemble de balises IP prédéfinies qui ne sont pas configurables. Vous pouvez également configurer vos propres balises IP. Pour plus d’informations sur la configuration de vos propres balises IP, consultez [Organiser les données selon vos besoins](ip-tags.md).
   Les balises IP prédéfinies sont les suivantes :
-  - Applications Microsoft (14 applications)
-  - Proxy anonyme
-  - Botnet (vous verrez que l’activité a été effectuée par un botnet avec un lien qui vous permet d’en savoir plus sur le botnet spécifique)
-  - Adresse IP d’analyse du darknet
-  - Serveur de commande et contrôle de programmes malveillants
-  - Analyseur de connectivité à distance
-  - Fournisseurs par satellite
-  - Proxy intelligent et proxy d’accès (délibérément omis)
-  - Nœuds de sortie Tor
-  - Zscaler
+    - Applications Microsoft (14 applications)
+    - Proxy anonyme
+    - Botnet (vous verrez que l’activité a été effectuée par un botnet avec un lien qui vous permet d’en savoir plus sur le botnet spécifique)
+    - Adresse IP d’analyse du darknet
+    - Serveur de commande et contrôle de programmes malveillants
+    - Analyseur de connectivité à distance
+    - Fournisseurs par satellite
+    - Proxy intelligent et proxy d’accès (délibérément omis)
+    - Nœuds de sortie Tor
+    - Zscaler
 
 
 - Activité représentée : Recherchez uniquement les activités qui ont été effectuées au nom d’un autre utilisateur.  
