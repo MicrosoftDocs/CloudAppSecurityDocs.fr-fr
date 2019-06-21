@@ -3,8 +3,8 @@ title: Inspection du contenu par Cloud App Security à l’aide du service de cl
 description: Cet article décrit le processus suivi par Cloud App Security quand il effectue l’inspection du contenu DLP avec le service de classification des données Microsoft.
 keywords: ''
 author: ShlomoSagir-MS
-ms.author: ShlomoSagir-MS
-manager: ShlomoSagir-MS
+ms.author: shsagir
+manager: shsagir
 ms.date: 06/13/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: bf25d1e6-e5dc-449f-b50e-1cd4a21b6d3d
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b970a947475b449534ad1ac3d28db2dd1984fc15
-ms.sourcegitcommit: 5c6d41aae2d9ac461917338f4a423f7a2683aca1
+ms.openlocfilehash: 6266ecaa462be0d2b9bd86abfcb9ccfa5aa38abf
+ms.sourcegitcommit: ea1c0f7638eaf0601ae476fea0d40e01bf8a6f4d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/16/2019
-ms.locfileid: "67149521"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67298859"
 ---
 # <a name="microsoft-data-classification-services-integration"></a>Intégration du service de classification des données Microsoft
 
