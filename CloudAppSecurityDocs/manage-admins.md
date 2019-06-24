@@ -2,10 +2,10 @@
 title: Gérer l’accès administrateur au portail Cloud App Security
 description: Cet article explique comment définir l’accès au portail Cloud App Security pour vos administrateurs.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 04/04/2019
+author: ShlomoSagir-MS
+ms.author: ShlomoSagir-MS
+manager: ShlomoSagir-MS
+ms.date: 6/20/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9a086df199107c08481c464fd5a15769b6c00921
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: cea30130ec0f9f548b93fb09250ef8a6a8a3678a
+ms.sourcegitcommit: 7a03921f9e337f73ddf812105b72ea260582a3d3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568647"
+ms.lasthandoff: 06/23/2019
+ms.locfileid: "67333636"
 ---
 # <a name="manage-admin-access"></a>Gérer l’accès administrateur
 
@@ -49,11 +49,11 @@ Par défaut, les rôles d’administrateur Office 365 et [Azure Active Director
   - Accéder au journal de gouvernance 
   - Accéder à la page Gérer des rapports d’instantanés 
 
-- **Administrateur d’application/d’instance :** Dispose des autorisations pour toutes les données dans Microsoft Cloud App Security qui portent exclusivement sur l’application spécifique ou l’instance d’une application sélectionnée. Par exemple, vous accordez à un utilisateur l’autorisation d’administrateur sur votre instance de Box European. L’administrateur verra uniquement les données qui sont liées à l’instance de Box European, qu’il s’agisse de fichiers, d’activités, de stratégies ou d’alertes :
+- **Administrateur d’application/d’instance :** A des autorisations complètes ou en lecture seule à toutes les données dans Microsoft Cloud App Security qui concerne exclusivement l’instance d’une application ou une application spécifique est sélectionné. Par exemple, vous accordez à un utilisateur l’autorisation d’administrateur sur votre instance de Box European. L’administrateur verra uniquement les données qui sont liées à l’instance de Box European, qu’il s’agisse de fichiers, d’activités, de stratégies ou d’alertes :
 
   - Page des activités : seules les activités concernant l’application spécifique
   - Alertes : seules les alertes relatives à l’application spécifique
-  - Stratégies : peut afficher toutes les stratégies et modifier ou créer uniquement les stratégies qui traitent exclusivement de l’application/instance
+  - Stratégies - peut afficher toutes les stratégies et si attribué complète autorisations peuvent modifier ou créer uniquement les stratégies qui traitent exclusivement de l’application/instance
   - Page Comptes : seuls les comptes de l’application/instance spécifique
   - Autorisations d’application : seules les autorisations pour l’application/instance spécifique
   - Page des fichiers : seuls les fichiers de l’application/instance spécifique
@@ -62,11 +62,11 @@ Par défaut, les rôles d’administrateur Office 365 et [Azure Active Director
   - Extensions de sécurité : autorisations uniquement pour un jeton d’API avec des autorisations utilisateur
   - Actions de gouvernance : uniquement pour l’application/instance spécifique 
 
-- **Administrateur de groupe utilisateur :** Dispose des autorisations pour toutes les données dans Microsoft Cloud App Security qui portent exclusivement sur le groupe spécifique sélectionné ici. Par exemple, si vous accordez à un utilisateur l’autorisation d’administrateur sur le groupe « Allemagne - tous les utilisateurs », l’administrateur peut visualiser et modifier les informations dans Microsoft Cloud App Security uniquement pour ce groupe d’utilisateurs :
+- **Administrateur de groupe utilisateur :** A des autorisations complètes ou en lecture seule à toutes les données dans Microsoft Cloud App Security traite exclusivement le groupe sélectionné ici. Par exemple, si vous accordez à un utilisateur l’autorisation d’administrateur sur le groupe « Allemagne - tous les utilisateurs », l’administrateur peut visualiser et modifier les informations dans Microsoft Cloud App Security uniquement pour ce groupe d’utilisateurs :
 
   - Page des activités : seules les activités concernant les utilisateurs dans le groupe
   - Alertes : seules les alertes relatives aux utilisateurs dans le groupe
-  - Stratégies : peut afficher toutes les stratégies et modifier ou créer uniquement les stratégies qui traitent exclusivement des utilisateurs dans le groupe
+  - Stratégies - peut afficher toutes les stratégies et si attribué complète les autorisations peuvent modifier ou créer uniquement les stratégies qui traitent exclusivement avec les utilisateurs du groupe
   - Page Comptes : seuls les comptes pour les utilisateurs spécifiques dans le groupe
   - Autorisations d’application : aucune autorisation
   - Page Fichiers : aucune autorisation

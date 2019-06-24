@@ -15,12 +15,12 @@ ms.assetid: 9cb3594e-5007-48be-9b4f-e1d23355d86e
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b6f158408422a8b04dbabefe089d30b464ac4ac3
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 48488ef57ee48791eca3a05a061154d51777c577
+ms.sourcegitcommit: 7a03921f9e337f73ddf812105b72ea260582a3d3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568591"
+ms.lasthandoff: 06/23/2019
+ms.locfileid: "67333652"
 ---
 # <a name="working-with-the-risk-score"></a>Utilisation du score de risque
 
@@ -58,8 +58,8 @@ Une fois que les résultats sont filtrés, vous pouvez passer en revue les appli
 Le catalogue d’applications cloud contient des filtres de base et avancés. Pour créer un filtre complexe, utilisez l’option avancée qui inclut tous les filtres suivants :
 
 - **Balises d’application** : Les balises vous permettent de personnaliser le catalogue d’applications cloud. 
-  Vous avez le choix entre **Approuvée**, **Non approuvée** ou créer vos propres étiquettes personnalisées pour les applications. Ces étiquettes peuvent ensuite servir de filtres. Les filtres permettent de rechercher plus précisément les types d’applications que vous voulez étudier. 
-- **Applications et domaines** : Ils vous permettent de rechercher des applications spécifiques ou des applications utilisées dans des domaines spécifiques. 
+  Vous avez le choix entre **Approuvée**, **Non approuvée** ou créer vos propres étiquettes personnalisées pour les applications. Ces étiquettes peuvent ensuite servir de filtres. Les filtres permettent de rechercher plus précisément les types d’applications que vous voulez étudier.
+- **Applications et domaines** : Ils vous permettent de rechercher des applications spécifiques ou des applications utilisées dans des domaines spécifiques.
 - **Catégories** : Le filtre de catégories, qui se trouve à gauche de la page, vous permet de rechercher des types d’applications selon des catégories d’applications. Par exemple, les applications de réseaux sociaux, les applications de stockage cloud, etc. Vous pouvez sélectionner plusieurs catégories à la fois. Ensuite, appliquez les filtres de base ou avancés aux catégories.
 - **Facteur de risque de conformité** : Il vous permet de rechercher une norme, une certification ou une conformité auxquelles l’application doit se conformer. Par exemple, les normes HIPAA, ISO 27001, SOC 2 ou PCI-DSS.
 - **Facteur de risque général** : Il vous permet de rechercher des facteurs de risque généraux, comme la popularité auprès des consommateurs, les paramètres régionaux du centre de données, etc.

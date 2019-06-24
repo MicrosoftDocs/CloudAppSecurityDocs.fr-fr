@@ -2,10 +2,10 @@
 title: Actions de gouvernance visant à contrôler les applications connectées | Microsoft Docs
 description: Cet article liste et décrit toutes les actions de gouvernance qui peuvent être effectuées dans Cloud App Security ainsi que les messages de journal qui les suivent.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 1/29/2019
+author: ShlomoSagir-MS
+ms.author: ShlomoSagir-MS
+manager: ShlomoSagir-MS
+ms.date: 6/20/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 12f099db6c23836fbcbb35d17c12a3736b76cf20
-ms.sourcegitcommit: 917d8cf85ac0b58a3b1788067c2ff92101eb3ccf
+ms.openlocfilehash: 534ff73e8d68e2422dfb5bbf9a4d94a95026c288
+ms.sourcegitcommit: 7a03921f9e337f73ddf812105b72ea260582a3d3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67237146"
+ms.lasthandoff: 06/23/2019
+ms.locfileid: "67333608"
 ---
 # <a name="governing-connected-apps"></a>Gouvernance des applications connectées
 
@@ -76,7 +76,7 @@ Vous pouvez effectuer les actions de gouvernance suivantes sur un fichier ou un 
 
   - **Hériter des autorisations du parent** - Cette action de gouvernance vous permet de supprimer un ensemble d’autorisations spécifiques pour un fichier ou un dossier dans Office 365. Rétablissez ensuite les autorisations définies pour le dossier parent.
 
-  - **Mettre à la corbeille** - Déplacez le fichier vers le dossier de corbeille. (SharePoint et OneDrive)
+  - **Mettre à la corbeille** - Déplacez le fichier vers le dossier de corbeille. (Box, Google Drive, OneDrive, SharePoint)
 
    ![policy_create alerts](./media/policy_create-alerts.png "policy_create alerts") 
 
@@ -139,7 +139,7 @@ Pour plus d’informations sur la façon dont les actions de gouvernance sont tr
 |Tableau de bord de l’application > Autorisations d’applications |Autorisations|Révoquer l’application|Révoque les autorisations d’accès d’une application tierce à Google, Salesforce ou Office. Il s’agit d’une seule action qui se produit sur toutes les autorisations existantes, mais qui n’empêche pas les connexions futures. | G Suite, Salesforce|
 |Tableau de bord de l’application > Autorisations d’applications | Compte | Révoquer l’utilisateur de cette application|Vous pouvez révoquer des utilisateurs spécifiques en cliquant sur le nombre sous Utilisateurs. L’écran affiche des utilisateurs spécifiques, et vous pouvez utiliser la croix (X) pour supprimer les autorisations d’un utilisateur.| G Suite, Salesforce|
 |Découverte > Applications découvertes/Adresses IP/Utilisateurs| Cloud Discovery | Exporter les données de découverte | Crée un fichier CSV à partir de données de découverte. | Découverte |
-|Stratégie de fichier|File |Mettre à la corbeille|Met un fichier dans la corbeille de l’utilisateur.| One Drive, SharePoint |
+|Stratégie de fichier|File |Mettre à la corbeille|Déplace le fichier dans la Corbeille de l’utilisateur.| Zone, Google Drive, OneDrive, SharePoint |
 |Stratégie de fichier|File | Notifier le dernier éditeur du fichier |Envoie un e-mail pour notifier la dernière personne qui a modifié le fichier qu’il viole une stratégie. |G Suite, Box|
 |Stratégie de fichier|File |Notifier le propriétaire du fichier|Envoie un e-mail au propriétaire quand un fichier ne respecte pas une stratégie. Dans Dropbox, si aucun propriétaire n’est associé à un fichier, la notification est envoyée à l’utilisateur spécifique que vous définissez. | Toutes les applications |
 |Stratégie de fichier, Stratégie d’activité | Fichier, Activité | Notifier des utilisateurs spécifiques |Envoie un e-mail pour notifier des utilisateurs spécifiques qu’un fichier viole une stratégie.| Toutes les applications |

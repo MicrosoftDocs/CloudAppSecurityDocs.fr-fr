@@ -2,10 +2,10 @@
 title: Attester de vos applications - Cloud App Security | Microsoft Docs
 description: Cet article fournit des instructions pour attester de vos applications dans Cloud App Security.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: barbkess
-ms.date: 04/29/2019
+author: ShlomoSagir-MS
+ms.author: ShlomoSagir-MS
+manager: ShlomoSagir-MS
+ms.date: 6/20/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: e395e0ca1ee0fe0805a37e75a6201c6d9a224cdf
-ms.sourcegitcommit: ea1c0f7638eaf0601ae476fea0d40e01bf8a6f4d
+ms.openlocfilehash: 6beaeba5c522aacb8a6d0c9612df318b267d2612
+ms.sourcegitcommit: 7a03921f9e337f73ddf812105b72ea260582a3d3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67298873"
+ms.lasthandoff: 06/23/2019
+ms.locfileid: "67333565"
 ---
 # <a name="attest-your-app"></a>Attester votre application
 
@@ -47,6 +47,7 @@ Suivez les attributs de service décrites ci-dessous pour mener à bien la soumi
 | Fabricant | Général | Chaîne | Texte libre | Le nom du fournisseur qui fournit cette application. |
 | Types de données | Général | Chaîne | Liste Fermer - fournie dans le questionnaire | Les types de données peuvent être téléchargés par l’utilisateur à l’application ?|
 | Page d’accueil | Général | Adresse URL | Texte libre | URL de page d’accueil du fournisseur. |
+| Plan de récupération d’urgence | Général | Booléen | True, False | Cette application dispose d’un plan de récupération d’urgence qui inclut une stratégie de sauvegarde et restauration ? |
 | Dernière violation | Sécurité | Date | MMM-JJ-AAAA | Incident le plus récent dans lequel les données sensibles, protégées ou confidentielles appartienne à l’application a été affichées, de vol ou utilisées par un individu non autorisé à le faire. |
 | Méthode de chiffrement des données au repos | Sécurité | Chaîne | Liste Fermer - fournie dans le questionnaire | Le type de chiffrement des données au repos effectué sur l’application. |
 | Authentification multifacteur | Sécurité | Booléen | True, False | Cette application prend-elle en charge les solutions d’authentification multifacteur ? |
