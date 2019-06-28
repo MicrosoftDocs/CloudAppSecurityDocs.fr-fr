@@ -15,12 +15,12 @@ ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: cea30130ec0f9f548b93fb09250ef8a6a8a3678a
-ms.sourcegitcommit: 7a03921f9e337f73ddf812105b72ea260582a3d3
+ms.openlocfilehash: 941c72af9a2b5f1b30faf1b6f7bc0e0b12baf389
+ms.sourcegitcommit: ae617f23b36be665439dcedfbcf346715a526d7e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2019
-ms.locfileid: "67333636"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67411831"
 ---
 # <a name="manage-admin-access"></a>Gérer l’accès administrateur
 
@@ -108,8 +108,7 @@ Vous pouvez ajouter des administrateurs à Cloud App Security sans ajouter d’u
    >[!IMPORTANT]
    > Seuls les administrateurs généraux ou de sécurité peuvent accorder l’accès à Cloud App Security à d’autres utilisateurs.
 
-
-1. Cliquez sur l’icône des paramètres ![icône des paramètres](./media/settings-icon.png "icône des paramètres"), puis sur **Gérer l’accès administrateur**. 
+1. Cliquez sur l’icône des paramètres ![icône des paramètres](./media/settings-icon.png "icône des paramètres"), puis sur **Gérer l’accès administrateur**.
 
 2. Cliquez sur le signe plus pour ajouter les administrateurs qui doivent avoir accès à Cloud App Security. Vous pouvez taper une adresse e-mail interne ou externe pour permettre aux administrateurs de votre organisation ou aux fournisseurs MSSP (Managed Security Service Provider) externes d’administrer vos alertes de sécurité.
   
@@ -122,16 +121,25 @@ Vous pouvez ajouter des administrateurs à Cloud App Security sans ajouter d’u
 
 4. Cliquez sur **Ajouter un administrateur**.  
 
+## <a name="admin-activity-auditing"></a>L’audit des activités Admin
+
+Cloud App Security vous permet d’exporter un journal de toutes les activités d’administration, y compris l’audit d’un administrateur de l’examen d’un utilisateur spécifique ou à l’affichage des alertes spécifiques.
+
+Pour exporter un journal, procédez comme suit :
+
+1. Dans le **gérer l’accès des administrateurs** page, sélectionnez **exporter les activités d’administration**.
+
+1. Spécifiez l’intervalle de temps requis.
+
+1. Cliquez sur **exporter**.
+
 ## <a name="invite-external-admins"></a>Inviter des administrateurs externes
 
-Microsoft Cloud App Security vous permet d’inviter des fournisseurs MSSP (Managed Security Service Provider) comme administrateurs de votre portail Microsoft Cloud App Security. Les utilisateurs externes peuvent maintenant être configurés en tant qu’administrateurs et se voir attribuer les rôles disponibles dans Microsoft Cloud App Security. De plus, pour autoriser les fournisseurs MSSP à offrir des services sur plusieurs locataires de clients, les administrateurs disposant des droits d’accès sur plus d’un locataire peuvent facilement passer d’un locataire à l’autre au sein du portail. 
+Cloud App Security vous permet d’inviter externe sécurité fournisseurs de services gérés (MSSPs) en tant qu’administrateurs de votre portail Cloud App Security. Les utilisateurs externes peuvent maintenant être configurés en tant qu’administrateurs et attribuées les rôles disponibles dans Cloud App Security. De plus, pour autoriser les fournisseurs MSSP à offrir des services sur plusieurs locataires de clients, les administrateurs disposant des droits d’accès sur plus d’un locataire peuvent facilement passer d’un locataire à l’autre au sein du portail.
 
 Une fois que vous avez les autorisations sur plusieurs locataires, cliquez sur l’icône utilisateur pour passer d’un locataire à l’autre. Vous verrez la liste des locataires pour lesquels vous avez des autorisations. Sélectionnez le locataire que vous voulez gérer.
 
 ![choisir le locataire](./media/choose-tenant.png "choisir le locataire")
 
 ## <a name="next-steps"></a>Étapes suivantes  
-[Configurer Cloud Discovery](set-up-cloud-discovery.md)   
-  
-  
-  
+[Configurer Cloud Discovery](set-up-cloud-discovery.md)
