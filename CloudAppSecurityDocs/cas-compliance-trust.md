@@ -15,12 +15,12 @@ ms.assetid: e456940a-88f1-4767-ae3d-4a57548f4179
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ff64d0afc590312a877c81797e79ff7a7b05dbf9
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 0e85d167300c3102db74092cd4f52afe9c24a21e
+ms.sourcegitcommit: 7a03921f9e337f73ddf812105b72ea260582a3d3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568141"
+ms.lasthandoff: 06/23/2019
+ms.locfileid: "67333598"
 ---
 # <a name="microsoft-cloud-app-security-data-security-and-privacy"></a>Sécurité et confidentialité des données Microsoft Cloud App Security
 
@@ -114,6 +114,8 @@ Microsoft Cloud App Security conserve les données comme suit :
 - Données de découverte : 90 jours
 
 - Alertes : 180 jours
+
+- Journal de gouvernance : 120 jours
 
 Vous pouvez en savoir plus sur les pratiques de Microsoft relatives aux données en lisant les  [termes du contrat de service en ligne](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
 
