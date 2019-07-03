@@ -4,8 +4,8 @@ description: Cet article fournit des informations sur le fonctionnement du proxy
 keywords: ''
 author: ShlomoSagir-MS
 ms.author: shsagir
-manager: shsagir
-ms.date: 06/04/2019
+manager: ShlomoSagir-MS
+ms.date: 7/2/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: 35a43120-bf67-4cf9-9b48-ebe157dbbd18
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 60b24e5da6fb0e8962426a49a2e568672c4ac6a9
-ms.sourcegitcommit: ea1c0f7638eaf0601ae476fea0d40e01bf8a6f4d
+ms.openlocfilehash: fca34e1bb6a9f83928ef3a4eaf388090468ce06a
+ms.sourcegitcommit: ee00e0033bf45a5f795bfd3e1d71fa1f70f97acb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67298922"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67511368"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Protéger les applications avec le Contrôle d’accès conditionnel aux applications Microsoft Cloud App Security
 
@@ -28,7 +28,6 @@ ms.locfileid: "67298922"
 
 >[!div class="step-by-step"]
 [SUIVANT : Déployer le contrôle d’application par accès conditionnel »](proxy-deployment-aad.md)
-
 
 En entreprise, le fait de savoir ce qui s’est passé dans votre environnement cloud après coup n’est pas suffisant. En effet, vous devez pouvoir arrêter les violations et les fuites en temps réel, avant que les employés ne puissent, par inadvertance ou intentionnellement, compromettre vos données et votre organisation. Il est important d’autoriser les utilisateurs de votre organisation à accéder à la plupart des services et outils des applications cloud, et de leur permettre d’apporter leurs propres appareils au travail. En même temps, vous avez besoin d’outils pour protéger votre organisation contre les fuites et le vol de données, en temps réel. Avec Azure Active Directory, Microsoft Cloud App Security offre ces fonctionnalités dans une expérience globale et intégrée avec le Contrôle d’accès conditionnel aux applications.
 
@@ -42,33 +41,25 @@ Le contrôle d’application par accès conditionnel utilise une architecture de
 
 Le Contrôle d’accès conditionnel aux applications active l’accès aux applications des utilisateurs et les sessions à surveiller et à contrôler en temps réel, en fonction des stratégies d’accès et de session. Les stratégies d’accès et de session sont utilisées dans le portail Cloud App Security pour affiner les filtres et définir les actions à effectuer sur un utilisateur. Avec les stratégies d’accès et de session, vous pouvez :
 
-- **Bloquer en cas de téléchargement** : Vous pouvez bloquer le téléchargement de documents sensibles. Par exemple, sur les appareils non gérés.
+- **Empêcher l’exfiltration de données**: Vous pouvez bloquer la téléchargement, couper, copier et imprimer des documents sensibles sur, par exemple, les appareils non gérés.
 
-- **Protéger en cas de téléchargement** : Au lieu de bloquer le téléchargement des documents sensibles, vous pouvez exiger que les documents soient protégés par chiffrement lors de leur téléchargement. Ce chiffrement garantit que le document est protégé et que l’accès utilisateur est authentifié, si les données sont téléchargées sur un appareil non approuvé. 
+- **Protéger en cas de téléchargement** : Au lieu de bloquer le téléchargement des documents sensibles, vous pouvez exiger des documents d’être étiquetés et protégés avec Azure Information Protection. Cette action garantit que le document est protégé et l’accès utilisateur est limité dans une session potentiellement dangereuse.
 
-- **Surveiller les sessions utilisateur de confiance basse** : Les utilisateurs à risque sont surveillés lorsqu’ils se connectent à des applications et leurs actions sont journalisées depuis la session. Vous pouvez examiner et analyser le comportement des utilisateurs pour comprendre où et dans quelles conditions les stratégies de session devront être appliquées à l’avenir. 
+- **Empêcher le téléchargement de fichiers sans étiquette**: Avant d’un fichier sensible est chargé, distribué utilisé par d’autres, il est important de s’assurer que le fichier comporte la bonne étiquette et la protection. Vous pouvez vous assurer que les fichiers sans étiquette contenant des données sensibles sont bloqués à partir d’en cours de téléchargement jusqu'à ce que l’utilisateur classifie le contenu.
 
-- **Bloquer l’accès** : Vous pouvez bloquer complètement l’accès à des applications spécifiques pour les utilisateurs provenant d’appareils non gérés ou de réseaux qui ne sont pas des réseaux de l’entreprise.
+- **Analyser les sessions utilisateur pour la conformité**: Les utilisateurs à risque sont surveillés lorsqu’ils se connectent à des applications et leurs actions sont journalisées depuis la session. Vous pouvez examiner et analyser le comportement des utilisateurs pour comprendre où et dans quelles conditions les stratégies de session devront être appliquées à l’avenir.
 
-- **Créer un mode Lecture seule** : En supervisant et en bloquant des activités personnalisées dans l’application, vous pouvez créer un mode Lecture seule pour certaines applications et certains utilisateurs.  
+- **Bloquer l’accès** : Vous pouvez définir de façon précise bloquer l’accès pour des applications spécifiques et des utilisateurs en fonction de plusieurs facteurs de risque. Par exemple, vous pouvez les bloquer si elles sont à l’aide de certificats de client comme une forme de gestion des appareils.
 
-- **Limiter les sessions utilisateur à partir des réseaux hors entreprise** : Les utilisateurs accédant à une application protégée à partir d’un emplacement qui ne fait pas partie de votre réseau d’entreprise se voient attribuer un accès restreint. Le téléchargement des documents sensibles est bloqué ou protégé.
+- **Bloquer les activités personnalisées**: Certaines applications possèdent des scénarios uniques qui comportent le risque, par exemple, l’envoi de messages contenant des données sensibles dans des applications telles que Microsoft Teams ou Slack. Dans ces types de scénarios, vous pouvez analyser les messages pour le contenu sensible et les bloquer en temps réel.
 
 ### <a name="how-session-control-works"></a>Fonctionnement du contrôle de session
 
-La création d’une stratégie de session avec le Contrôle d’accès conditionnel aux applications vous permet de contrôler des sessions utilisateur en redirigeant l’utilisateur via un proxy inversé plutôt que directement vers l’application. Dès lors, les requêtes et réponses de l’utilisateur passent par Microsoft Cloud App Security plutôt que directement par l’application.
+La création d’une stratégie de session avec le Contrôle d’accès conditionnel aux applications vous permet de contrôler des sessions utilisateur en redirigeant l’utilisateur via un proxy inversé plutôt que directement vers l’application. Dès lors, les requêtes utilisateur et les réponses passent par Cloud App Security plutôt que directement à l’application.
 
-Pour garder l’utilisateur dans la session, les URL, scripts Java et cookies appropriés dans la session de l’application sont remplacés par des URL Microsoft Cloud App Security. Par exemple, si l’application retourne une page avec des liens dont les domaines se terminent par myapp.com, le lien est remplacé par des domaines se terminant par quelque chose comme : myapp.com.us.cas.ms 
+Quand une session est protégée par un proxy, toutes les URL pertinentes et les cookies sont remplacés par Cloud App Security. Par exemple, si l’application retourne une page avec des liens dont les domaines se terminent par myapp.com, le lien est remplacé par des domaines se terminant par quelque chose comme : myapp.com.us.cas.ms
 
-Cette méthode ne vous oblige pas à installer un programme sur l’appareil. Elle est idéale pour superviser les sessions sur les appareils non gérés. 
-
-Une fois qu’une session est redirigée via Microsoft Cloud App Security, les actions suivantes peuvent être effectuées :
-
-1. Inspecter le trafic à la recherche des activités des utilisateurs
-2. Afficher les activités identifiées dans le journal d’activité de Microsoft Cloud App Security
-3. Enregistrer les journaux de trafic et les analyser
-4. Permettre à l’administrateur d’exporter les journaux de trafic
-5. Appliquer des stratégies sur la session
+Cette méthode ne vous oblige à installer quoi que ce soit sur l’appareil idéale lors de la surveillance ou le contrôle de sessions à partir d’appareils non gérés ou les utilisateurs partenaires.
 
 ## <a name="managed-device-identification"></a>Identification des appareils gérés
 
@@ -85,18 +76,29 @@ Pour plus d’informations, consultez [Présentation de la gestion des appareils
 
 ### <a name="client-certificate-authenticated-devices"></a>Appareils authentifiés par certificat client
 
-Le mécanisme d’identification des appareils peut exiger une authentification desdits appareils à l’aide de certificats clients. Vous pouvez utiliser des certificats clients existants déjà déployés dans votre organisation ou déployer de nouveaux certificats clients sur des appareils gérés. Vous profitez ensuite de la présence de ces certificats pour définir des stratégies d’accès et de session. Pour plus d’informations sur la façon de déployer des certificats clients, consultez [Déployer un Contrôle d’accès conditionnel aux applications pour les applications Azure AD](proxy-deployment-aad.md).
- 
+Le mécanisme d’identification des appareils peut exiger une authentification desdits appareils à l’aide de certificats clients. Vous pouvez utiliser des certificats clients existants déjà déployés dans votre organisation ou déployer de nouveaux certificats clients sur des appareils gérés. Vous profitez ensuite de la présence de ces certificats pour définir des stratégies d’accès et de session.
+
+Les certificats clients SSL sont vérifiés via une chaîne d’approbation. Vous pouvez télécharger une racine X.509 ou une autorité de certification intermédiaire (CA) mis en forme dans le format du certificat PEM. Ces certificats doivent contenir la clé publique de l’autorité de certification, qui est ensuite utilisée pour signer les certificats de client présentés pendant une session.
+
+Une fois que le certificat est chargé et une stratégie appropriée est configurée, lorsqu’une session applicable traverse le contrôle d’accès conditionnel, le point de terminaison Cloud App Security demande le navigateur pour présenter des certificats client SSL. Le navigateur fait Office de client SSL certificats qui sont installés avec une clé privée. Cette combinaison de certificat et la clé privée est effectuée en utilisant le PKCS #12 format de fichier, généralement .p12 ou .pfx.
+
+Lorsqu’une vérification de certificat client est effectuée, Cloud App Security vérifie les conditions suivantes :
+
+1. Le certificat client sélectionné est valide et trouve sous la racine appropriée ou l’autorité de certification intermédiaire.
+1. Le certificat n’est pas révoqué (si la CRL est activée).
+
+Pour plus d’informations sur la façon de déployer des certificats clients, consultez [Déployer un Contrôle d’accès conditionnel aux applications pour les applications Azure AD](proxy-deployment-aad.md).
+
 ## <a name="supported-apps-and-clients"></a>Applications et clients pris en charge
 
 Le contrôle d’application par accès conditionnel prend en charge les applications SAML et Open ID Connect configurées avec l’authentification unique, ainsi que les applications web hébergées localement qui sont configurées avec le [proxy d’application Azure AD](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy).
 > [!NOTE]
 > Le contrôle d’application par accès conditionnel prend également en charge des applications qui sont configurées avec des fournisseurs d’identité non-Azure AD. Pour plus d'informations sur ce scénario, envoyez un e-mail à mcaspreview@microsoft.com.
 
-**Le contrôle de session est disponible sur tous les navigateurs de toutes les plateformes majeures, quel que soit le système d’exploitation**. Les applications mobiles et les applications de bureau peuvent également être bloquées ou autorisées. Avec l’intégration en mode natif à Azure AD, toutes les applications qui sont configurées avec des applications SAML ou Open ID Connect avec l’authentification unique dans Azure AD peuvent être prises en charge, notamment les applications proposées suivantes :
+**Le contrôle de session est disponible sur tous les navigateurs de toutes les plateformes majeures, quel que soit le système d’exploitation**. Nous vous recommandons d’utiliser Internet Explorer 11, Microsoft Edge (dernière version), Google Chrome (dernière version), Mozilla Firefox (dernière version) ou Apple Safari (dernière version). Les applications mobiles et les applications de bureau peuvent également être bloquées ou autorisées. En intégrant en mode natif avec Azure AD, n’importe quelle application qui est configurée avec SAML ou Open ID Connect peut être self-intégrée. En outre, les applications suivantes sont proposées par Cloud App Security et déjà intégré et prêt à utiliser dans n’importe quel client :
 
 - AWS
-- Azure DevOps (Visual Studio Team Services) (préversion)
+- Azure DevOps (Visual Studio Team Services)
 - Portail Azure (préversion)
 - Box
 - Concur
@@ -105,17 +107,17 @@ Le contrôle d’application par accès conditionnel prend en charge les applica
 - Dropbox
 - Dynamics 365 CRM (version préliminaire)
 - Egnyte
-- Exchange Online (préversion)
+- Exchange Online
 - G Suite
 - GitHub
 - HighQ
 - JIRA/Confluence
-- OneDrive Entreprise (préversion)
+- OneDrive Entreprise
 - LinkedIn Learning
-- Power BI (préversion)
+- Power BI
 - Salesforce
 - ServiceNow
-- SharePoint Online (préversion)
+- SharePoint Online
 - Slack
 - Tableau
 - Microsoft Teams (préversion)
@@ -124,21 +126,12 @@ Le contrôle d’application par accès conditionnel prend en charge les applica
 - Workplace by Facebook
 - Yammer (préversion)
 
-
-
-
-De nouvelles applications sont intégrées au contrôle de session en continu. Si vous souhaitez en savoir plus sur une application qui n’est pas mentionnée ici, [envoyez-nous des informations sur cette application](mailto:casfeedback@microsoft.com). Envoyez-nous également le cas d’usage qui vous intéresse pour que nous puissions l’intégrer.
-
-
+Si vous êtes intéressé par une application spécifique en cours proposée, [envoyez-nous des détails sur l’application](mailto:casfeedback@microsoft.com). Envoyez-nous également le cas d’usage qui vous intéresse pour que nous puissions l’intégrer.
 
 >[!div class="step-by-step"]
 [SUIVANT : Déployer le contrôle d’application par accès conditionnel »](proxy-deployment-aad.md)
 
-
 ## <a name="next-steps"></a>Étapes suivantes
-[Déployer le Contrôle d’applications par accès conditionnel pour les applications Azure AD](proxy-deployment-aad.md)   
+[Déployer le Contrôle d’applications par accès conditionnel pour les applications Azure AD](proxy-deployment-aad.md)
 
-[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)  
-  
-
-
+[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)
