@@ -15,14 +15,14 @@ ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 13ec7114bc38cb44dab2f8728d38b9ba64e67455
-ms.sourcegitcommit: ee00e0033bf45a5f795bfd3e1d71fa1f70f97acb
+ms.openlocfilehash: 511512c6d615f1e0fe09640bb7b02b2df694c6de
+ms.sourcegitcommit: 8fd13c10c2f66a553a8a8fc413555ca837fc9c56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67511394"
+ms.lasthandoff: 07/07/2019
+ms.locfileid: "67610747"
 ---
-# <a name="deploy-conditional-access-app-control-for-featured-apps"></a>Déployer le contrôle d’accès conditionnel pour les applications proposées
+# <a name="deploy-conditional-access-app-control-for-featured-apps"></a>Déployer le contrôle d’application par accès conditionnel pour les applications à la une
 
 *S’applique à : Microsoft Cloud App Security*
 
@@ -131,10 +131,9 @@ Pour vérifier que les activités sont correctement capturées, cliquez sur une 
 > Après son déploiement, vous ne pouvez pas supprimer une application à partir de la page Contrôle d’application par accès conditionnel. Tant que vous ne définissez pas une stratégie d’accès ou de session sur l’application, le contrôle d’application par accès conditionnel ne change pas le comportement de l’application.
 
 >[!div class="step-by-step"]
-[« Précédent : Introduction au contrôle d’application par accès conditionnel](proxy-intro-aad.md)<br>
-[Suivant : Guide pratique pour créer une stratégie de session »](session-policy-aad.md)
+[« Précédent : Introduction au contrôle d’application par accès conditionnel](proxy-intro-aad.md)<br>[Suivant : Intégrer et déployer le contrôle d’accès conditionnel pour n’importe quelle application »](proxy-deployment-any-app.md)
 
 ## <a name="next-steps"></a>Étapes suivantes 
-[Utilisation avec le Contrôle d’accès conditionnel aux applications de Cloud App Security](proxy-intro-aad.md)   
+[Utilisation de contrôle d’accès conditionnel Cloud App Security](proxy-intro-aad.md)
 
 [Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)

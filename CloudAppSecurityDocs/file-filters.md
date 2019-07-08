@@ -2,10 +2,10 @@
 title: Présentation des données et des filtres de fichiers disponibles dans Cloud App Security
 description: Cet article de référence fournit des informations sur les types de fichier et les filtres de fichiers utilisés par Cloud App Security.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 12/10/2018
+author: ShlomoSagir-MS
+ms.author: shsagir
+manager: ShlomoSagir-MSn
+ms.date: 7/7/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ed441d1832ce9f6d0ce070fc58baa058a34bcadc
-ms.sourcegitcommit: 917d8cf85ac0b58a3b1788067c2ff92101eb3ccf
+ms.openlocfilehash: 82332b70c58f81e5084b3d26394430e429490b54
+ms.sourcegitcommit: 0249f6e4a51240e6e37bc67430304e5a261e340a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67237208"
+ms.lasthandoff: 07/07/2019
+ms.locfileid: "67610897"
 ---
 # <a name="files"></a>Fichiers
 
@@ -134,6 +134,23 @@ Vous pouvez également configurer la stratégie pour qu’elle s’exécute sur 
 > If at any point you want to clear the filters, you can do so by clicking the clear filters icon ![clear filters icon](./media/clear-filters.png).
 -->
 
+## <a name="authorizing-files"></a>Autorisation de fichiers
+
+Une fois que Cloud App Security a identifié des fichiers comme présentant un risque DLP ou un programme malveillant, nous vous recommandons de rechercher les fichiers. Si vous déterminez que les fichiers sont sécurisés, vous pouvez les autoriser. Autoriser un fichier supprime de l’état de détection de programmes malveillants et supprime les correspondances futures sur ce fichier.
+
+### <a name="to-authorize-files"></a>Pour autoriser les fichiers
+
+1. Dans Cloud App Security, cliquez sur **contrôle** , puis **stratégies**.
+1. Dans la liste des stratégies, sur la ligne dans laquelle la stratégie qui a déclenché l’investigation s’affiche, dans le **nombre** colonne, cliquez sur Lier les correspondances.
+    > [!TIP]
+    > Vous pouvez filtrer la liste des stratégies par type. Le tableau suivant répertorie, par type de risque, lequel filtrer le type à utiliser :
+    >
+    > | Type de risque | Type de filtre |
+    > | --- | --- |
+    > | DLP | Stratégie de fichier |
+    > | Programme malveillant | Stratégie de détection des programmes malveillants |
+1. Dans la liste des fichiers de mise en correspondance, sur la ligne dans laquelle le fichier sous investigation s’affiche, cliquez sur **Authorize**.
+
 ## <a name="working-with-the-file-drawer"></a>Utilisation du tiroir de fichier
 
 Vous pouvez afficher plus d’informations sur chaque fichier en cliquant sur le fichier lui-même dans le journal des fichiers. Cliquant sur le **tiroir de fichier** qui fournit les actions supplémentaires suivantes, vous pouvez effectuer sur le fichier :
@@ -152,8 +169,6 @@ Pour obtenir la liste des actions de gouvernance disponibles, consultez [Actions
 
 ## <a name="next-steps"></a>Étapes suivantes
   
-[Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)   
+[Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)
 
-[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)  
-  
-  
+[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)
