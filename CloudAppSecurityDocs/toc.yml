@@ -23,10 +23,10 @@
       href: discovered-apps.md
 - name: Didacticiels
   items:
-    - name: Examiner des utilisateurs à risque
-      href: tutorial-ueba.md
     - name: Découvrir et gérer le shadow IT
       href: tutorial-shadow-it.md
+    - name: Examiner des utilisateurs à risque
+      href: tutorial-ueba.md
     - name: Examiner des applications OAuth à risque
       href: investigate-risky-oauth.md
     - name: Téléchargements en bloc d’informations sensibles
