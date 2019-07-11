@@ -4,48 +4,37 @@ description: Ce tutoriel décrit le processus permettant d’examiner les utilis
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: rkarlin
-ms.date: 06/27/2019
+ms.date: 07/02/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
-ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: ''
-ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: 654cc70f9e5322f608eedb55042f60d558d858a6
-ms.sourcegitcommit: 3938edadc5f89f87cdeba607476cf3983b2413e8
+ms.openlocfilehash: 8099d38309703b4258d1b8234537d3b172df52b2
+ms.sourcegitcommit: d35baa4f55a3ab4cd8df478adaf10579a00f603d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67411940"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67622463"
 ---
 # <a name="tutorial-investigate-risky-users"></a>Tutoriel : Examiner des utilisateurs à risque
 
 *S’applique à : Microsoft Cloud App Security*
 
-Des équipes des opérations de sécurité sont mises au défi de surveiller l’activité de l’utilisateur, suspecte ou pas, dans toutes les dimensions de la surface d’attaque d’identité, à l’aide de plusieurs solutions de sécurité qui souvent ne sont pas connectées.
+Des équipes des opérations de sécurité sont mises au défi de surveiller l’activité de l’utilisateur, suspecte ou pas, dans toutes les dimensions de la surface d’attaque d’identité, à l’aide de plusieurs solutions de sécurité qui souvent ne sont pas connectées. Alors que de nombreuses sociétés ont maintenant des équipes de chasse pour identifier de façon proactive les menaces dans leurs environnements, le fait de connaître ce que vous recherchez dans la vaste quantité de données peut être un défi. Microsoft Cloud App Security simplifie désormais le problème en éliminant la nécessité de créer des règles de corrélation complexes et vous permet de détecter les attaques qui s’étendent sur votre cloud et réseau local.
 
-Afin de vous permettre de mieux vous concentrer sur l’identité de l’utilisateur, Microsoft Cloud App Security s’intègre avec Azure Advanced Threat Protection (ATP) à l’analyse comportementale des entités et utilisateurs fournie (UEBA).
+Pour vous aider à vous concentrer sur l’identité des utilisateurs, Microsoft Cloud App Security fournit l’analyse comportementale des utilisateurs et des entités (UEBA) dans le cloud. Vous pouvez l’étendre à votre environnement local en l’intégrant à Azure Advanced Threat Protection (ATP). Une fois l’intégration à Azure ATP terminée, vous obtiendrez également le contexte de l’identité de l’utilisateur grâce à son intégration native à Active Directory.
 
-Alors que de nombreuses sociétés ont maintenant des équipes de chasse pour identifier de façon proactive les menaces dans leurs environnements, le fait de connaître ce que vous recherchez dans la vaste quantité de données peut être un défi. Microsoft Cloud App Security simplifie désormais le problème en éliminant la nécessité de créer des règles de corrélation complexes et vous permet de détecter les attaques qui s’étendent sur votre cloud et réseau local.
 
-Que vous commenciez à enquêter sur un utilisateur en fonction d’un risque affiché dans le tableau de bord Cloud App Security ou sur utilisateur dont l’intention n’a pas été identifiée par le système, commencez par le tableau de bord Cloud App Security pour examiner profondément ces utilisateurs à risque.  
+Que votre déclencheur soit une alerte visible dans le tableau de bord Cloud App Security ou que vous disposiez d’informations provenant d’un service de sécurité tiers, démarrez votre enquête à partir du tableau de bord Cloud App Security pour explorer en profondeur les utilisateurs à risque.  
 
-Ce tutoriel fournit des instructions afin d’utiliser Cloud Discovery pour examiner des utilisateurs à risque.
+Ce tutoriel fournit des instructions sur l’utilisation de Cloud App Security pour examiner les utilisateurs à risque.
 
 > [!div class="checklist"]
-> * Prérequis
-> * Identifier les principaux utilisateurs à risque
-> * Procéder à une investigation sur un utilisateur
-> * Comprendre le risque de l’utilisateur
-> * Protéger votre organisation
-
-
-## <a name="prerequisites"></a>Prérequis
-
-L’analyse comportementale des utilisateurs et des entités (UEBA) fonctionne sur le cloud et localement. Pour détecter les menaces locales, vous devez posséder une licence valide pour Azure ATP connectée à votre instance Active Directory et Cloud App Security doit être configuré pour [s’intégrer à votre environnement Azure ATP](aatp-integration.md).
+> * 1 : [Se connecter aux applications à protéger](#connect-apps-protect)
+> * 2 : [Identifier les principaux utilisateurs à risque](#identify)
+> * 3 : [Examiner davantage les utilisateurs](#investigate)
+> * 4 : [Protéger votre organisation](#protect)
 
 
 ## Comprendre le score de priorité d’examen <a name ="risk-score"></a>
@@ -56,11 +45,11 @@ Utilisez le **score de priorité d’examen** pour identifier les utilisateurs �
 
 Le **score de priorité d'examen** vous permet de détecter à la fois les employés malveillants et les menaces externes qui se propagent latéralement dans votre organisation, sans avoir à vous fier aux détections déterministes standard.
 
-En évaluant l'urgence de l'examen pour chaque utilisateur spécifique, le score de priorité d’examen est basé sur les alertes de sécurité, les activités anormales et l'impact potentiel sur les activités et les ressources de chaque utilisateur. 
+Le score de priorité d’examen est basé sur les alertes de sécurité, les activités anormales et l’impact potentiel sur les activités et les ressources de chaque utilisateur pour vous aider à déterminer à quel point il est urgent d’examiner chaque utilisateur spécifique. 
 
 Si vous cliquez sur le score d'une alerte ou d'une activité, vous pouvez voir les preuves sur lesquelles Cloud App Security s’est appuyé pour noter l'activité.
 
-Chaque utilisateur Azure AD dispose d’un score de priorité d'examen dynamique, constamment mis à jour en fonction du comportement et de l'impact récents, calculé à partir des données évaluées par Azure ATP, Microsoft Cloud App Security et Azure AD Identity Protection. Vous pouvez maintenant identifier immédiatement les principaux utilisateurs à risque par **score de priorité d'examen**, puis vérifier directement leur impact sur l’entreprise et examiner toutes les activités connexes, qu'il s’agisse d’informations compromises, de données exfiltrées ou de menaces provenant des employés.
+Chaque utilisateur Azure AD dispose d’un score de priorité d’examen dynamique, constamment mis à jour en fonction du comportement et de l’impact récents, calculé à partir des données évaluées par Azure ATP, Microsoft Cloud App Security et Azure AD Identity Protection. Vous pouvez maintenant identifier immédiatement les principaux utilisateurs à risque en les filtrant par **score de priorité d’examen**, puis vérifier directement leur impact sur l’entreprise et examiner toutes les activités connexes, qu’il s’agisse d’informations compromises, de données exfiltrées ou de menaces provenant des employés.
 
 Cloud App Security utilise les fonctionnalités suivantes pour mesurer le risque : 
 
@@ -68,7 +57,13 @@ Cloud App Security utilise les fonctionnalités suivantes pour mesurer le risque
 
 - **Score d’activité**<br> Le score d'activité détermine la probabilité qu'un utilisateur donné effectue une activité spécifique, en fonction de l'apprentissage comportemental de l'utilisateur et de ses collègues. Les activités identifiées comme étant les plus anormales reçoivent les scores les plus élevés. 
 
-## <a name="identify-top-risky-users"></a>Identifier les principaux utilisateurs à risque
+## Phase 1 : Se connecter aux applications à protéger<a name="connect-apps-protect"></a>
+
+1. Connectez au moins une application à Microsoft Cloud App Security à l’aide de [connecteurs API](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md). Pour commencer, nous vous recommandons de connecter [Office 365](connect-office-365-to-microsoft-cloud-app-security.md). 
+1. Connectez des applications supplémentaires à l’aide du [proxy pour mettre en place le contrôle d’application par accès conditionnel](proxy-deployment-aad.md).
+1. Pour activer les insights sur votre environnement local, configurez Cloud App Security pour [s’intégrer à votre environnement Azure ATP](aatp-integration.md).
+
+## Phase 2 : Identifier les principaux utilisateurs à risque<a name="identify"></a>
 
 Pour identifier vos utilisateurs présentant le plus de risques dans Cloud App Security :
 
@@ -79,7 +74,7 @@ Pour identifier vos utilisateurs présentant le plus de risques dans Cloud App S
 2. Cliquez sur un utilisateur pour accéder à la page **Utilisateur**. 
    ![Page Utilisateur](./media/user-page.png) 
 
-4. Passez en revue les informations de la page **Utilisateur** pour obtenir une vue d’ensemble de l’utilisateur et vérifier s’il existe des cas où l'utilisateur a effectué des activités inhabituelles pour lui, ou effectuées à un moment inhabituel. Le **score de l’utilisateur par rapport à l’organisation** représente le centile de cet utilisateur dans le classement dans votre organisation, c’est-à-dire à quel niveau il figure sur la liste des utilisateurs que vous devriez examiner, par rapport aux autres utilisateurs de votre organisation. Le chiffre s’affiche en rouge si un utilisateur se situe dans ou au-dessus du 90e centile des utilisateurs à risque de votre organisation.<br>La page **Utilisateur** vous aide à répondre aux questions suivantes :
+4. Passez en revue les informations de la page Utilisateur pour obtenir une vue d’ensemble de l’utilisateur et vérifier s’il existe des cas où l’utilisateur a effectué des activités inhabituelles pour lui ou si elles ont été réalisées à un moment inhabituel. Le **score de l’utilisateur par rapport à l’organisation** représente le centile de cet utilisateur dans le classement dans votre organisation, c’est-à-dire à quel niveau il figure sur la liste des utilisateurs que vous devriez examiner, par rapport aux autres utilisateurs de votre organisation. Le chiffre s’affiche en rouge si un utilisateur se situe dans ou au-dessus du 90e centile des utilisateurs à risque de votre organisation.<br>La page Utilisateur vous aide à répondre aux questions suivantes :
     - Qui est l’utilisateur ?<br>Consultez le volet de gauche pour obtenir des informations sur l’identité de l’utilisateur et ce que l’on sait sur lui. Ce volet vous fournit des informations sur le rôle de l'utilisateur dans votre entreprise et son service. L'utilisateur est-il un ingénieur DevOps qui effectue souvent des activités inhabituelles dans le cadre de son travail ? L'utilisateur est-il un employé mécontent qui s’est vu refuser une promotion ?
       
    - S’agit-il d’un utilisateur à risque ?<br>Consultez la partie supérieure du volet de droite pour savoir l’examen de cet utilisateur est justifié. Quel est le [score de risque](#risk-score) de l'employé ?
@@ -87,10 +82,10 @@ Pour identifier vos utilisateurs présentant le plus de risques dans Cloud App S
    - Quel risque l’utilisateur présente-t-il pour votre organisation ?<br>Consultez la liste dans le volet inférieur, qui vous indique chaque activité et chaque alerte liées à l'utilisateur. Cette liste vous aide à comprendre quel type de risque l'utilisateur représente. Dans la chronologie, cliquez sur chaque ligne afin de descendre encore plus dans la hiérarchie de l’activité ou de l’alerte elle-même. Vous pouvez cliquer également sur le numéro en regard de l’activité afin que vous puissiez comprendre la preuve qui influence le score lui-même.
 
   >[!NOTE]
-  >Remarque importante : même si la page **Utilisateur** fournit des informations sur les appareils, les ressources et les comptes pour toutes les activités, le score de priorité d'examen correspond à la somme de toutes les activités et alertes à risque identifiées au cours des 7 derniers jours.
+  >Remarque importante : même si la page Utilisateur fournit des informations sur les appareils, les ressources et les comptes pour toutes les activités, le score de priorité d’examen correspond à la somme de toutes les activités et alertes à risque identifiées au cours des 7 derniers jours.
  
  
-## <a name="investigate-a-user"></a>Procéder à une investigation sur un utilisateur
+## Phase 3 : Examiner davantage les utilisateurs<a name="investigate"></a>
 
 Lorsque vous examinez un utilisateur en fonction d’une alerte ou si vous avez vu une alerte dans un système externe, il peut y avoir des activités qui peuvent ne pas être la cause d’une alerte seules, mais lorsque Cloud App Security les agrège avec d’autres activités, l’alerte peut indiquer un événement suspect.
  
@@ -102,15 +97,14 @@ Lorsque vous examinez un utilisateur, posez-vous ces questions sur les activité
 
 
 
-## <a name="protect-your-organization"></a>Protéger votre organisation
+## Phase 4 : Protéger votre organisation<a name="protect"></a>
 
-Si vous constatez qu'un utilisateur a été victime d’une attaque ou que vous soupçonnez l'existence d'un problème, il est temps d'agir.
+Si votre enquête débouche sur la conclusion qu’un utilisateur est compromis, effectuez les étapes suivantes pour réduire le risque.
 
-Une fois l’examen terminé, vous pouvez contacter l’utilisateur : les informations de contact de tous les utilisateurs à partir d’Azure Active Directory sont ajoutées au Cloud App Security afin que vous puissiez voir qui a effectué chaque activité. Assurez-vous que l’utilisateur est familiarisé avec les activités.
+- Contactez l’utilisateur : utilisez les informations de contact de l’utilisateur intégrées à Cloud App Security à partir d’Active Directory pour explorer au niveau du détail chaque alerte et activité afin de résoudre l’identité de l’utilisateur. Assurez-vous que l’utilisateur est familiarisé avec les activités.
 
-
-- Directement depuis le portail Cloud App Security, vous pouvez cliquer sur le bouton **Actions de l’utilisateur** et classer cet utilisateur comme un utilisateur à risque élevé ou le suspendre.
-- Dans le cas d’une identité compromise, vous pouvez demander à l’utilisateur de réinitialiser son mot de passe et vous assurer que le mot de passe est suffisamment complexe pour être plus difficile à pirater.
+- Cliquez sur le bouton **Actions de l’utilisateur** directement à partir du portail Cloud App Security et définissez cet utilisateur comme présentant un risque élevé ou suspendez-le.
+- Dans le cas d’une identité compromise, vous pouvez demander à l’utilisateur de réinitialiser son mot de passe et de vérifier que le mot de passe répond aux bonnes pratiques en matière de longueur et de complexité.
 - Si vous examinez une alerte et estimez que l'activité n'aurait pas dû déclencher cette alerte, dans le [tiroir Activité](activity-filters.md), cliquez sur le lien **Envoyez-nous des commentaires** pour nous permettre d'ajuster notre système d'alerte en fonction de votre organisation.
 - Une fois le problème résolu, fermez l’alerte.
 
