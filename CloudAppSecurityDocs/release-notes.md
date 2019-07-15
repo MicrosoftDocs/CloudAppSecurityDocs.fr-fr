@@ -15,12 +15,12 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 01ad42b053b6a0cb482f59c7473fbb40ce49f2e8
-ms.sourcegitcommit: 0249f6e4a51240e6e37bc67430304e5a261e340a
+ms.openlocfilehash: 96444fd79bebda2b7092e1dbae9a449f0be0bd06
+ms.sourcegitcommit: 1b6b827c149b195a241440929970a2ccbb136b83
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2019
-ms.locfileid: "67610865"
+ms.lasthandoff: 07/14/2019
+ms.locfileid: "67870192"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Nouveautés de Microsoft Cloud App Security
 
@@ -46,13 +46,13 @@ Le contrôle d’application par accès conditionnel pour les applications propo
     - Power BI
 
 - **Autoriser les fichiers identifiés comme programme malveillant**<br>
-Cloud App Security analyse tous les fichiers à partir de vos applications connectées pour rechercher l’exposition DLP et les programmes malveillants. Vous pouvez maintenant autoriser les fichiers identifiés comme programme malveillant mais confirmés sans échec après examen. Autoriser un fichier le supprime du rapport de détection des programmes malveillants et supprime les correspondances futures sur ce fichier.
+Cloud App Security analyse les fichiers à partir de vos applications connectées pour rechercher l’exposition DLP et les programmes malveillants. Vous pouvez maintenant autoriser les fichiers identifiés comme programme malveillant mais confirmés sans échec après examen. Autoriser un fichier le supprime du rapport de détection des programmes malveillants et supprime les correspondances futures sur ce fichier. Pour plus d’informations sur la détection de programme malveillant, consultez [Détection d’anomalie Cloud App Security](anomaly-detection-policy.md).
 
 ## <a name="cloud-app-security-release-152"></a>Cloud App Security version 152
 
 Publication : 23 juin 2019
 
-- **Déployer le contrôle d’application par accès conditionnel pour tous les types d’applications**<br>
+- **Déployer le contrôle d’application par accès conditionnel pour tous les types d’applications (préversion)**<br>
 Nous sommes heureux d’annoncer que nous avons étendu notre prise en charge du contrôle d’application par accès conditionnel à l’ensemble des applications web, en plus de la prise en charge que nous proposons déjà pour les [applications à la une](proxy-intro-aad.md). Cette nouvelle fonctionnalité vous permet de déployer n’importe quelle application web en vue d’utiliser des stratégies de session et d’accès, et de bénéficier de puissantes fonctionnalités de supervision et de contrôle en temps réel. Par exemple, vous pouvez protéger les téléchargements avec des étiquettes Azure Information Protection, bloquer le chargement des documents sensibles, effectuer des audits, et bien plus encore.
 - **Audit des activités dans le portail**<br>
 Cloud App Security audite toutes les activités d’administration du portail, vous permettant ainsi de superviser et d’analyser les activités de manière approfondie. À présent, vous pouvez également exporter jusqu’à 90 jours d’activités en vue de procéder à une analyse. Par exemple, vous pouvez auditer un administrateur qui analyse les activités d’un utilisateur ou qui affiche certaines alertes. Pour exporter le journal, accédez à la page de paramètres **Gérer l’accès administrateur**.
