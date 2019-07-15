@@ -2,10 +2,10 @@
 title: Lancer des rapports continus pour Cloud App Security à l’aide d’un Docker sur Windows | Microsoft Docs
 description: Cet article décrit la procédure de configuration du chargement automatique des journaux pour des rapports continus dans Cloud App Security à l’aide d’un Docker sur Windows dans une serveur local.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 4/19/2019
+author: ShlomoSagir-MS
+ms.author: shsagir
+manager: ShlomoSagir-MS
+ms.date: 7/10/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ff73a393-da43-4954-8b02-38d2a48d39b3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 31fba210aeee0796e7ba3e7386348888ce877a1c
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 470b1082a51568aed7018eae2d74afe83d94a071
+ms.sourcegitcommit: 1b6b827c149b195a241440929970a2ccbb136b83
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568469"
+ms.lasthandoff: 07/14/2019
+ms.locfileid: "67870215"
 ---
 # <a name="docker-on-windows-on-premises"></a>Docker sur Windows en local
 
@@ -27,19 +27,22 @@ ms.locfileid: "65568469"
 
 Vous pouvez configurer le chargement automatique des journaux pour des rapports continus dans Cloud App Security à l’aide d’un Docker sur Windows.
 
-## <a name="technical-requirements"></a>Spécifications techniques
+## <a name="prerequisites"></a>Prérequis
 
 - Système d’exploitation : **Windows 10** (Fall Creators Update) et Windows Server **version 1709+**
 
-- Espace disque : 250 Go
+- Espace disque: 250 Go
 
-- PROCESSEUR : 2
+- Processeur : 2
 
-- RAM : 4 Go
+- RAM : 4 Go
 
 - Configurez votre pare-feu, comme décrit dans [Configuration réseau requise](network-requirements.md#log-collector)
 
 - La virtualisation du système d’exploitation doit être activée avec Hyper-V
+
+> [!IMPORTANT]
+> Un utilisateur doit être connecté pour que l’arrimeur collecte les journaux. Nous vous recommandons de vous informer de la déconnexion de l’utilisateur de l’ancrage.
 
 ## <a name="log-collector-performance"></a>Performances du collecteur de journaux
 
@@ -116,7 +119,7 @@ La procédure suivante décrit le déploiement dans Windows. La procédure de d�
 3. Pour activer l’exécution du script PowerShell, exécutez `Set-ExecutionPolicy RemoteSigned`.
 
 4. Exécutez la commande suivante : `& (Join-Path $Env:Temp LogCollectorInstaller.ps1)`<br>
-Cette commande installe le client Docker sur votre ordinateur. L’installation du conteneur de collecteur de journaux redémarre deux fois l’ordinateur et vous oblige à vous reconnecter. **Assurez-vous que le client Docker est configuré pour utiliser des conteneurs Linux.**
+Cette commande installe le client Docker sur votre ordinateur. L’installation du conteneur de collecteur de journaux redémarre deux fois l’ordinateur et vous oblige à vous reconnecter. **Assurez-vous que le client Dockr est configuré pour utiliser des conteneurs Linux.**
 
 5. Après chaque redémarrage, réexécutez la commande suivante à partir du répertoire où vous avez enregistré le programme d’installation : `& (Join-Path $Env:Temp LogCollectorInstaller.ps1)`<br>  
 

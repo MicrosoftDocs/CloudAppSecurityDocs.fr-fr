@@ -1,11 +1,11 @@
 ---
-title: Intégrer Microsoft Defender ATP à Cloud App Security
-description: Cet article décrit comment intégrer Microsoft Defender Advanced Threat Protection Cloud App Security pour améliorant la visibilité dans l’informatique fantôme et gestion des risques.
+title: Intégrer Microsoft Defender ATP avec Cloud App Security
+description: Cet article explique comment intégrer Microsoft Defender-protection avancée contre les menaces avec Cloud App Security pour une meilleure visibilité de la gestion des risques et de l’informatique cachée.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 12/14/2018
+author: ShlomoSagir-MS
+ms.author: shsagir
+manager: ShlomoSagir-MS
+ms.date: 7/11/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,48 +15,48 @@ ms.assetid: b35ca44c-da8e-49ec-89d1-c076d123c14f
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b49ab77b33548d6fd188eadde97294ceb6c62ca5
-ms.sourcegitcommit: 235b7d5f1f49075c199b154abc38e51326c0493e
+ms.openlocfilehash: 982846a7ada1d2b50c28373c48e635a5fad9ec30
+ms.sourcegitcommit: 1b6b827c149b195a241440929970a2ccbb136b83
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66173520"
+ms.lasthandoff: 07/14/2019
+ms.locfileid: "67870172"
 ---
-# <a name="microsoft-defender-advanced-threat-protection-integration-with-microsoft-cloud-app-security"></a>Intégration de Microsoft Defender Advanced Threat Protection avec Microsoft Cloud App Security
+# <a name="microsoft-defender-advanced-threat-protection-integration-with-microsoft-cloud-app-security"></a>Intégration de Microsoft Defender-protection avancée contre les menaces avec Microsoft Cloud App Security
 
 *S’applique à : Microsoft Cloud App Security*
 
-Microsoft Cloud App Security s’intègre avec le module Microsoft Defender Advanced Threat Protection (ATP) en mode natif. L’intégration simplifie le lancement de Cloud Discovery, étend les fonctionnalités de Cloud Discovery au-delà de votre réseau d’entreprise et permet d’effectuer des recherches basées sur la machine. [Microsoft Defender Advanced Threat Protection (ATP)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) est une plateforme de sécurité pour une protection intelligente, détection, investigation et de réponse. Microsoft Defender ATP protège les points de terminaison contre les cybermenaces détecte avancées violations les attaques et les données, automatise les incidents de sécurité et améliore la posture de sécurité.
+Microsoft Cloud App Security s’intègre à Microsoft Defender-protection avancée contre les menaces (ATP) en mode natif. L’intégration simplifie le lancement de Cloud Discovery, étend les fonctionnalités de Cloud Discovery au-delà de votre réseau d’entreprise et permet d’effectuer des recherches basées sur la machine. [Microsoft Defender-protection avancée contre les menaces (ATP)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) est une plateforme de sécurité pour la protection, la détection, l’investigation et la réponse intelligentes. Microsoft Defender ATP protège les points de terminaison contre les menaces informatiques, détecte les attaques avancées et les violations de données, automatise les incidents de sécurité et améliore la sécurité.
 
-Microsoft Cloud App Security utilise les informations de trafic collectées par Microsoft Defender ATP sur les applications et services cloud est accessibles à partir de l’informatique Windows 10 machines. L’intégration vous permet d’exécuter Cloud Discovery sur n’importe quelle machine du réseau d’entreprise à l’aide du Wi-Fi public, en cas d’itinérance et d’accès à distance. Elle permet également d’effectuer des recherches basées sur la machine.
+Microsoft Cloud App Security utilise les informations de trafic collectées par Microsoft Defender ATP sur les applications Cloud et les services accessibles à partir d’ordinateurs Windows 10 gérés par le service informatique. L’intégration vous permet d’exécuter Cloud Discovery sur n’importe quelle machine du réseau d’entreprise à l’aide du Wi-Fi public, en cas d’itinérance et d’accès à distance. Elle permet également d’effectuer des recherches basées sur la machine.
 
-Après avoir identifié un utilisateur à risque, vous pouvez vérifier toutes les machines auxquelles l’utilisateur a accédé pour détecter des risques potentiels. Si vous identifiez une machine à risque, vérifiez tous les utilisateurs qui l’ont utilisée pour détecter des risques potentiels. Les journaux de vos points de terminaison routés vers Cloud App Security fournissent des informations utilisateur pour les activités de trafic. Activité du réseau Microsoft Defender ATP fournit le contexte de périphérique. Associez le contexte d’appareil au nom d’utilisateur pour disposer d’une image complète de votre réseau indiquant quel utilisateur a effectué quelle activité et à partir de quelle machine.
+Après avoir identifié un utilisateur à risque, vous pouvez vérifier toutes les machines auxquelles l’utilisateur a accédé pour détecter des risques potentiels. Si vous identifiez une machine à risque, vérifiez tous les utilisateurs qui l’ont utilisée pour détecter des risques potentiels. Les journaux de vos points de terminaison routés vers Cloud App Security fournissent des informations utilisateur pour les activités de trafic. L’activité réseau Microsoft Defender ATP fournit le contexte de périphérique. Associez le contexte d’appareil au nom d’utilisateur pour disposer d’une image complète de votre réseau indiquant quel utilisateur a effectué quelle activité et à partir de quelle machine.
 
-Microsoft Cloud App Security utilise l’intégration native avec Microsoft Defender ATP à exploiter les données relatives à cloud app service du trafic et les appareils Windows gérés. L’intégration est prête à l’emploi et ne nécessite pas de déploiement supplémentaire . Vous ne devez pas router ou mettre en miroir le trafic en provenance de vos points de terminaison ou effectuer des étapes d’intégration complexes.
+Microsoft Cloud App Security utilise l’intégration native avec Microsoft Defender ATP pour exploiter les données sur l’application Cloud et le trafic de service à partir d’appareils Windows gérés. L’intégration est prête à l’emploi et ne nécessite pas de déploiement supplémentaire . Vous ne devez pas router ou mettre en miroir le trafic en provenance de vos points de terminaison ou effectuer des étapes d’intégration complexes.
 
 > [!NOTE]
-> Vous voulez découvrir Microsoft Defender ATP ? [Inscrivez-vous pour obtenir un essai gratuit](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-assignaccess-abovefoldlink).
+> Vous souhaitez découvrir Microsoft Defender ATP? [Inscrivez-vous pour obtenir un essai gratuit](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-assignaccess-abovefoldlink).
 >
 
 
 ## <a name="prerequisites"></a>Prérequis
 
 - Licence Microsoft Cloud App Security
-- Licence de Microsoft Defender ATP
-- Ordinateurs Windows 10 exécutant la version 1809 ou une version ultérieure
+- Licence Microsoft Defender ATP
+- Windows 10 version 1709 (version du système d’exploitation 16299,1085 avec KB4493441), Windows 10 version 1803 (version du système d’exploitation 17134,704 avec KB4493464), Windows 10 version 1809 (système d’exploitation version 17763,379 avec KB4489899) ou versions ultérieures de Windows 10
 - Activer/désactiver **Fonctionnalités d’évaluation** pour activer cette fonctionnalité dans Cloud App Security
 
 ## <a name="how-it-works"></a>Fonctionnement
 
-Seul, Cloud App Security collecte des journaux de vos points de terminaison en utilisant des [journaux que vous chargez](create-snapshot-cloud-discovery-reports.md) ou en [configurant le chargement automatique de journaux](discovery-docker.md). Intégration native vous permet de tirer parti des journaux d’agent de Microsoft Defender ATP crée lorsqu’elle s’exécute sur Windows et surveille les transactions réseau. Utilisez ces informations pour la découverte Shadow IT sur les machines Windows de votre réseau.
+Seul, Cloud App Security collecte des journaux de vos points de terminaison en utilisant des [journaux que vous chargez](create-snapshot-cloud-discovery-reports.md) ou en [configurant le chargement automatique de journaux](discovery-docker.md). L’intégration native vous permet de tirer parti des journaux créés par l’agent Microsoft Defender ATP lorsqu’il s’exécute sur Windows et surveille les transactions réseau. Utilisez ces informations pour la découverte Shadow IT sur les machines Windows de votre réseau.
 
-Pour vous permettre d’effectuer la découverte de Cloud sur d’autres plateformes, il est préférable d’utiliser Cloud App Security [collecteur de journaux](discovery-docker.md), ainsi que de l’intégration de Microsoft Defender ATP pour surveiller vos machines Windows 10.
+Pour vous permettre d’effectuer des Cloud Discovery sur d’autres plateformes, il est préférable d’utiliser le collecteur de [journaux](discovery-docker.md)Cloud App Security, ainsi que l’intégration de Microsoft Defender ATP pour surveiller vos ordinateurs Windows 10.
 
-## <a name="how-to-integrate-microsoft-defender-atp-with-cloud-app-security"></a>Apprendre à intégrer Microsoft Defender ATP à Cloud App Security
+## <a name="how-to-integrate-microsoft-defender-atp-with-cloud-app-security"></a>Intégration de Microsoft Defender ATP à Cloud App Security
 
-Pour activer l’intégration à Cloud App Security à partir de Microsoft Defender ATP :
+Pour activer l’intégration à Cloud App Security à partir de Microsoft Defender ATP:
 
-1. Dans le portail Microsoft Defender ATP, dans le volet de navigation, sélectionnez **le programme d’installation de préférences**.
+1. Dans le portail Microsoft Defender ATP, dans le volet de navigation, sélectionnez **préférences configuration**.
 2. Dans le menu **Paramètres**, sous **Général**, sélectionnez **Fonctionnalités avancées**.
 3. Basculez **Microsoft Cloud App Security** sur **Activé**.
 4. Cliquez sur **Enregistrer les préférences**.
@@ -69,7 +69,7 @@ Pour activer l’intégration à Cloud App Security à partir de Microsoft Defen
 
 ## <a name="investigate-machines-in-cloud-app-security"></a>Examiner des ordinateurs dans Cloud App Security
 
-Une fois que vous intégrez Microsoft Defender ATP avec Cloud App Security, vous pouvez examiner les données d’ordinateur découvert dans le tableau de bord Cloud Discovery.
+Une fois que vous avez intégré Microsoft Defender ATP à Cloud App Security, vous pouvez examiner les données d’ordinateur découvertes dans le tableau de bord Cloud Discovery.
 
 1. Dans le portail Cloud App Security, cliquez sur **Cloud Discovery**, puis sur **Tableau de bord Cloud Discovery**.
 2. Dans la barre de navigation supérieure, sous **Rapports continus**, sélectionnez **Utilisateurs de point de terminaison Win10**.
@@ -93,12 +93,12 @@ Une fois que vous intégrez Microsoft Defender ATP avec Cloud App Security, vous
 Comme avec n’importe quelle autre source Cloud Discovery, vous pouvez exporter les données du rapport sur les utilisateurs de point de terminaison Win10 pour un examen plus approfondi. 
 
 > [!NOTE]
-> - Defender ATP transfère les données à Cloud App Security en segments d’environ 4 Mo (transactions de point de terminaison de 4 000)
-> - Si la limite de 4 Mo n’est pas atteinte dans l’heure, rapports Defender ATP toutes les transactions effectuées sur la dernière heure.
+> - Defender ATP transfère les données à Cloud App Security dans des segments de environ 4 Mo (environ 4000 transactions de point de terminaison)
+> - Si la limite de 4 Mo n’est pas atteinte dans un délai de 1 heure, Defender ATP signale toutes les transactions effectuées au cours de la dernière heure.
 
 ## <a name="related-videos"></a>Vidéos connexes
 
-[Clichés instantanés IT discovery au-delà du réseau d’entreprise avec Microsoft Defender ATP et Cloud App Security](https://www.youtube.com/watch?v=f8hbvbY1Hnc)  
+[Capture instantanée de la découverte informatique au-delà du réseau d’entreprise avec Microsoft Defender ATP et Cloud App Security](https://www.youtube.com/watch?v=f8hbvbY1Hnc)  
 
 ## <a name="next-steps"></a>Étapes suivantes 
 [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md) 

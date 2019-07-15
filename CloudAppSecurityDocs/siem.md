@@ -2,10 +2,10 @@
 title: Intégration de SIEM à Cloud App Security
 description: Cet article fournit des informations sur l’intégration de votre serveur SIEM à Cloud App Security.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 12/10/2018
+author: ShlomoSagir-MS
+ms.author: shsagir
+manager: ShlomoSagir-MS
+ms.date: 7/11/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 25968245abd28b6a97cebda85c5092cd0a8d35fe
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 449be026e0c13723f886089cae3c9d2f7a181d78
+ms.sourcegitcommit: 1b6b827c149b195a241440929970a2ccbb136b83
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568865"
+ms.lasthandoff: 07/14/2019
+ms.locfileid: "67870231"
 ---
 # <a name="siem-integration"></a>Intégration à SIEM
 
@@ -29,6 +29,11 @@ ms.locfileid: "65568865"
 Vous pouvez intégrer Microsoft Cloud App Security à votre serveur SIEM pour centraliser la supervision des alertes et des activités des applications connectées. Comme les nouveaux événements et nouvelles activités sont pris en charge par les applications connectées, ils deviennent visibles dans Microsoft Cloud App Security. L’intégration à un service SIEM vous permet de mieux protéger vos applications cloud tout en conservant votre workflow de sécurité habituel, en automatisant les procédures de sécurité et en établissant une corrélation entre les événements cloud et les événements locaux. L’agent SIEM de Microsoft Cloud App Security s’exécute sur votre serveur, extrait les alertes et les activités de Microsoft Cloud App Security et les envoie en flux continu au serveur SIEM.
 
 Quand vous intégrez pour la première fois votre serveur SIEM à Cloud App Security, les activités et les alertes des deux derniers jours sont transférées vers le serveur SIEM, ainsi que toutes les activités et alertes (en fonction du filtre que vous sélectionnez) à partir de ce moment-là. Si vous désactivez cette fonctionnalité pendant une période prolongée, au moment de la réactiver, celle-ci transférera les deux derniers jours d’alertes et d’activités, puis toutes les alertes et activités à partir de ce moment-là.
+
+> [!IMPORTANT]
+> Si vous intégrez Azure-protection avancée contre les menaces dans Cloud App Security et que les deux services sont configurés pour envoyer des notifications d’alerte à une SIEM, vous commencerez à recevoir des notifications SIEM dupliquées pour la même alerte. Chaque service émet une alerte avec un ID d’alerte différent. Pour éviter la duplication et la confusion, veillez à gérer le scénario. Par exemple, choisissez l’emplacement où vous souhaitez effectuer la gestion des alertes, puis arrêtez les notifications SIEM envoyées à partir de l’autre service.
+
+
 
 ## <a name="siem-integration-architecture"></a>Architecture d'intégration SIEM
 
@@ -55,8 +60,8 @@ L’intégration à votre serveur SIEM s’effectue en trois étapes :
 - Un serveur Windows ou Linux standard (il peut s’agir d’une machine virtuelle).
 - Le serveur doit exécuter Java 8. Les versions antérieures ne sont pas prises en charge.
 - Système d’exploitation : Windows ou Linux
-- PROCESSEUR : 2
-- Espace disque : 20 Go
+- Processeur : 2
+- Espace disque: 20 Go
 - RAM : 2 Go
 - Le serveur doit exécuter Java 8. Les versions antérieures ne sont pas prises en charge.
 - Configurez votre pare-feu, comme décrit dans [Configuration réseau requise](network-requirements.md)
@@ -64,7 +69,7 @@ L’intégration à votre serveur SIEM s’effectue en trois étapes :
 
 ## <a name="integrating-with-your-siem"></a>Intégration à votre serveur SIEM
 
-### <a name="step-1-set-it-up-in-the-cloud-app-security-portal"></a>Étape 1 : Configurez-le dans le portail Cloud App Security
+### <a name="step-1-set-it-up-in-the-cloud-app-security-portal"></a>Étape 1 : Configurez-le dans le portail Cloud App Security
 
 1. Dans le portail Cloud App Security, sous la roue dentée représentant les paramètres, cliquez sur Extensions de sécurité, puis sur l’onglet **Agents SIEM**.
 
@@ -95,7 +100,7 @@ L’intégration à votre serveur SIEM s’effectue en trois étapes :
 > Tout jeton que vous créez est lié à l’administrateur qui l’a créé. Cela signifie que si l’utilisateur administrateur est supprimé de Cloud App Security, le jeton n’est plus valide.
 
 
-### <a name="step-2-download-the-jar-file-and-run-it-on-your-server"></a>Étape 2 : Téléchargez le fichier JAR et exécutez-le sur votre serveur
+### <a name="step-2-download-the-jar-file-and-run-it-on-your-server"></a>Étape 2 : Téléchargez le fichier JAR et exécutez-le sur votre serveur
 
 1. Dans le [Centre de téléchargement Microsoft](https://go.microsoft.com/fwlink/?linkid=838596), après avoir accepté les [termes du contrat de licence logiciel](https://go.microsoft.com/fwlink/?linkid=862491), téléchargez le fichier zip et décompressez-le.
 
@@ -173,7 +178,7 @@ Le texte suivant est un exemple de fichier journal d’alertes :
 |      Alertes       |          <name>          |                                             Nom de la stratégie correspondante                                             |
 |      Alertes       |        externalId        |                                                    ID de l’alerte                                                     |
 
-### <a name="step-3-validate-that-the-siem-agent-is-working"></a>Étape 3 : Vérifiez que l’agent SIEM fonctionne.
+### <a name="step-3-validate-that-the-siem-agent-is-working"></a>Étape 3 : Vérifiez que l’agent SIEM fonctionne.
 
 1. Vérifiez que l’agent SIEM n’affiche pas l’état **Erreur de connexion** ou **Déconnecté** dans le portail Cloud App Security et qu’il ne fait pas l’objet de notifications. Si la connexion est interrompue pendant plus de deux heures, l’état affiché est le suivant : **Erreur de connexion**. Si la connexion est interrompue depuis plus de 12 heures, l’état affiché est **Déconnecté**.
  ![SIEM déconnecté](./media/siem-not-connected.png)
