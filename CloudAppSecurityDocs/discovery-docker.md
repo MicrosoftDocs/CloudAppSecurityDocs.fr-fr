@@ -2,10 +2,10 @@
 title: Configurer le chargement automatique des journaux pour des rapports continus dans Cloud App Security
 description: Cet article décrit la procédure de configuration du chargement automatique des journaux pour des rapports continus dans Cloud App Security.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 04/04/2019
+author: ShlomoSagir-MS
+ms.author: shsagir
+manager: ShlomoSagir-MS
+ms.date: 15/7/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: c75ba963-ad5a-48e6-8d5d-610fc6e0b990
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5802b6b9a4a467e4ffcc4882a5e1738ddac14f05
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 6b6be306035cf9ebf9ff74fce78795b8c74f436e
+ms.sourcegitcommit: 7a01493423369b663195277a2046a76393b44987
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65567885"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67880923"
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports"></a>Configurer le chargement automatique des journaux pour des rapports continus
 
@@ -43,9 +43,9 @@ Avant de configurer la collecte automatique de fichiers journaux, vérifiez que 
 
 Le collecteur de journaux prend en charge deux modes de déploiement :
 
--   **Conteneur** : S’exécute comme une image Docker sur [Ubuntu en local](discovery-docker-ubuntu.md), sur [Ubuntu dans Azure](discovery-docker-ubuntu-azure.md) ou sur [RHEL en local](discovery-docker-ubuntu.md). 
+-   **Conteneur** : S’exécute en tant qu’image de l’arrimeur sur [Windows](discovery-docker-windows.md), [Ubuntu localement](discovery-docker-ubuntu.md), [Ubuntu dans Azure](discovery-docker-ubuntu-azure.md) ou [RHEL localement](discovery-docker-ubuntu.md). 
 
--   **Appliance virtuelle** :  S’exécute en tant qu’image sur l’hyperviseur Hyper-V ou VMware (déconseillée)
+-   **Appliance virtuelle** :  S’exécute en tant qu’image sur l’hyperviseur Hyper-V ou VMware (déconseillé)
 
 
 
