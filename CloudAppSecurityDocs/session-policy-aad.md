@@ -15,19 +15,19 @@ ms.assetid: 745df28a-654c-4abf-9c90-203841169f90
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 428c36837a8162c94ca95afbdabe7a3d424d9c1e
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 9f5588893c39aab13c131ad76c89bc189a115b52
+ms.sourcegitcommit: cad2ead82bb76e4749c75eb7a0594e97f40545db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568939"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68372329"
 ---
 # <a name="session-policies"></a>Stratégies de session 
 
 *S’applique à : Microsoft Cloud App Security*
 
 >[!div class="step-by-step"]
-[« PRÉCÉDENT : Déployer le contrôle d’application par accès conditionnel](proxy-deployment-aad.md)<br>
+[« PRÉCÉDENT : Intégrer et déployer des contrôle d’application par accès conditionnel pour n’importe quelle application»](proxy-deployment-any-app.md)<br>
 [SUIVANT : Guide pratique pour créer une stratégie d’accès »](access-policy-aad.md)
 
 
@@ -73,7 +73,7 @@ Pour créer une stratégie de session, suivez cette procédure :
 
    1. Sélectionnez **Surveiller uniquement** pour surveiller uniquement les activités des utilisateurs. De cette façon, vous créez une stratégie de type « Superviser uniquement », dans laquelle toutes les connexions, tous les téléchargements heuristiques et tous les types d’activités sont téléchargés pour les applications que vous avez sélectionnées.
 
-   2. Si vous souhaitez superviser les activités de l’utilisateur, sélectionnez **Contrôler le téléchargement du fichier (avec DLP)**. Vous pouvez exécuter des actions supplémentaires, comme bloquer ou protéger les téléchargements pour les utilisateurs.
+   2. Si vous souhaitez superviser les activités de l’utilisateur, sélectionnez **Contrôler le téléchargement du fichier (avec DLP)** . Vous pouvez exécuter des actions supplémentaires, comme bloquer ou protéger les téléchargements pour les utilisateurs.
    
    3. Sélectionnez **Bloquer les activités** pour bloquer certaines activités, que vous pouvez sélectionner à l’aide du filtre **Type d’activité**. Toutes les activités des applications sélectionnées sont surveillées (et signalées dans le journal d’activité). Les activités que vous sélectionnez sont bloquées si vous sélectionnez l’action **Bloquer**. Les activités que vous avez sélectionnées déclencheront des alertes si vous sélectionnez l’action **Tester** et si vous activez les alertes.
 
@@ -161,7 +161,7 @@ Sélectionnez **Bloquer les activités** pour bloquer certaines activités, que 
 Quand vous sélectionnez **Protéger** sous **Action** dans la stratégie de session Cloud App Security, le contrôle d’application par accès conditionnel applique l’étiquetage et la protection ultérieure d’un fichier, conformément aux filtres de fichiers de la stratégie. Les étiquettes sont configurées dans la console Azure Information Protection, et l’option **Protéger** doit être sélectionnée dans l’étiquette pour qu’elle apparaisse en tant qu’option dans la stratégie Cloud App Security. Quand une étiquette est sélectionnée et qu’un fichier correspondant aux critères de la stratégie Cloud App Security est téléchargé, l’étiquette et la protection correspondante (avec les autorisations) sont appliquées au fichier lors de son téléchargement. Le fichier original reste inchangé dans l’application cloud, tandis que le fichier téléchargé est désormais protégé. Les utilisateurs qui tentent d’accéder au fichier doivent respecter les exigences d’autorisation déterminées par la protection appliquée.  
  
 >[!div class="step-by-step"]
-[« PRÉCÉDENT : Déployer le contrôle d’application par accès conditionnel](proxy-deployment-aad.md)<br>
+[« PRÉCÉDENT : Intégrer et déployer des contrôle d’application par accès conditionnel pour n’importe quelle application»](proxy-deployment-any-app.md)<br>
 [SUIVANT : Guide pratique pour créer une stratégie d’accès »](access-policy-aad.md)
 
 ## <a name="next-steps"></a>Étapes suivantes

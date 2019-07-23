@@ -2,10 +2,10 @@
 title: Configurer le chargement automatique de journal à l’aide de Docker dans Azure
 description: Cet article décrit la procédure de configuration du chargement automatique de journaux pour des rapports continus dans Cloud App Security à l’aide de Docker sur Ubuntu ou RHEL dans Azure.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 1/27/2019
+author: ShlomoSagir-MS
+ms.author: shsagir
+manager: ShlomoSagir-MS
+ms.date: 7/18/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4799b0f835960d8170d1305406418734b65185d6
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: b094682bc0f3b9ae6ebe6f0594a842a5e2e50458
+ms.sourcegitcommit: cad2ead82bb76e4749c75eb7a0594e97f40545db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65567992"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68372307"
 ---
 # <a name="set-up-and-configuration-on-ubuntu-or-rhel-in-azure"></a>Installation et configuration sur Ubuntu ou RHEL dans Azure
 
@@ -28,15 +28,15 @@ ms.locfileid: "65567992"
 
 Vous pouvez configurer le chargement automatique de journaux pour des rapports continus dans Cloud App Security à l’aide de Docker sur Ubuntu ou Red Hat Enterprise Linux (RHEL) dans Azure. Cet article décrit comment configurer le chargement automatique des journaux. 
 
-## <a name="technical-requirements"></a>Spécifications techniques
+## <a name="prerequisites"></a>Prérequis
 
-- Système d’exploitation : Ubuntu 14.04 et 16.04 (pour les versions plus récentes, contactez le support) ou RHEL 7.2 (ou version ultérieure)
+- Système d’exploitation : Ubuntu 14,04 et 16,04 (pour les versions plus récentes, contactez le support technique), RHEL 7,2 ou une version ultérieure, ou CentOS 7,2 ou version ultérieure
 
-- Espace disque : 250 Go
+- Espace disque: 250 Go
 
-- PROCESSEUR : 2
+- Processeur : 2
 
-- RAM : 4 Go
+- RAM : 4 Go
 
 - Configurez votre pare-feu, comme décrit dans [Configuration réseau requise](network-requirements.md#log-collector)
 
@@ -63,9 +63,9 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
      a. Cliquez sur **Ajouter une source de données**.
 
       ![Ajouter une source de données](./media/add-data-source.png)
-          
+
      b. **Nommez** votre proxy ou pare-feu.
-      
+
       ![ubuntu1](./media/ubuntu1.png)
 
      c. Sélectionnez l’appareil dans la liste **Source**. Si vous sélectionnez **Format de journal personnalisé** pour utiliser une appliance réseau qui n’est pas listée, consultez [Utilisation de l’analyseur de journal personnalisé](custom-log-parser.md) pour obtenir des instructions de configuration.

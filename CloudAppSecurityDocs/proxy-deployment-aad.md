@@ -5,7 +5,7 @@ keywords: ''
 author: ShlomoSagir-MS
 ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 7/2/2019
+ms.date: 7/12/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 511512c6d615f1e0fe09640bb7b02b2df694c6de
-ms.sourcegitcommit: 8fd13c10c2f66a553a8a8fc413555ca837fc9c56
+ms.openlocfilehash: 6f12926e79e7f3311737cc734e2eec8a60bfb752
+ms.sourcegitcommit: cad2ead82bb76e4749c75eb7a0594e97f40545db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2019
-ms.locfileid: "67610747"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68372370"
 ---
 # <a name="deploy-conditional-access-app-control-for-featured-apps"></a>Déployer le contrôle d’application par accès conditionnel pour les applications à la une
 
@@ -28,22 +28,22 @@ ms.locfileid: "67610747"
 
 >[!div class="step-by-step"]
 [« Précédent : Introduction au contrôle d’application par accès conditionnel](proxy-intro-aad.md)<br>
-[Suivant : Guide pratique pour créer une stratégie de session »](session-policy-aad.md)
+[Suivant : Intégrer et déployer des contrôle d’application par accès conditionnel pour n’importe quelle application»](proxy-deployment-any-app.md)
 
-Suivez ces étapes pour configurer des applications proposées contrôlés par Microsoft Cloud App Security contrôle d’accès conditionnel.
+Procédez comme suit pour configurer les applications proposées pour qu’elles soient contrôlées par Microsoft Cloud App Security contrôle d’application par accès conditionnel.
 
-**Étape 1 : [Accédez au portail Azure AD, créez une stratégie d’accès conditionnel pour les applications et acheminez la session vers Cloud App Security](#add-azure-ad).**
+**Étape 1 : [Accédez au portail Azure AD et créez une stratégie d’accès conditionnel pour les applications et acheminez la session vers Cloud App Security](#add-azure-ad)**
 
-**Étape 2 : [Connectez-vous à chaque application à l’aide d’un utilisateur limité à la stratégie](#sign-in-scoped).**
+**Étape 2 : [Se connecter à chaque application à l’aide d’un utilisateur dont l’étendue est limitée à la stratégie](#sign-in-scoped)**
 
-**Étape 3 : Si vous n’avez pas sélectionné une stratégie de Cloud App Security intégrée dans Azure AD ou si vous souhaitez appliquer la stratégie à une n’importe quelle application, [accédez au portail Cloud App Security](#portal)**
+**Étape 3 : Si vous n’avez pas sélectionné de stratégie de Cloud App Security intégrée dans Azure AD ou si vous souhaitez appliquer la stratégie à une application, accédez au [portail Cloud App Security](#portal)**
 
-[**Étape 4 : Testez le déploiement**](#test)
+[**Étape 4 : Testez le déploiement**](#test)
 
 > [!NOTE]
 > Pour déployer le contrôle d’application par accès conditionnel pour des applications Azure AD, vous avez besoin d’une [licence valide pour Azure AD Premium P1](https://docs.microsoft.com/azure/active-directory/license-users-groups), ainsi que d’une licence Cloud App Security.
 
-## Étape 1 : Créez une stratégie de test d’accès conditionnel Azure AD <a name="add-azure-ad"></a>  
+## Étape 1 : Créez une stratégie de test d’accès conditionnel Azure AD <a name="add-azure-ad"></a>  
 
 1. Dans Azure Active Directory, sous **sécurité**, cliquez sur **accès conditionnel**.
 
@@ -62,23 +62,23 @@ Suivez ces étapes pour configurer des applications proposées contrôlés par M
       > [!NOTE]
       >Le Contrôle d'application par accès conditionnel prend en charge toute application SAML ou Open ID Connect configurée avec l’authentification unique dans Azure AD, notamment ces applications proposées. Les applications non proposées peuvent être configurées avec le contrôle d’accès dans le portail Cloud App Security en effectuant une demande pour les intégrer avec le contrôle de session. 
 
-7. Cliquez sur **activer** et **enregistrer**.
+7. Cliquez sur **activer** et **Enregistrer**.
 
-## Étape 2 : Connectez-vous à chaque application à l’aide d’un utilisateur limité à la stratégie<a name="sign-in-scoped"></a>
+## Étape 2 : Se connecter à chaque application à l’aide d’un utilisateur dont l’étendue est limitée à la stratégie<a name="sign-in-scoped"></a>
 
 Une fois que vous avez créé la stratégie, connectez-vous à chaque application configurée dans cette stratégie. Veillez à vous connecter à l’aide d’un utilisateur configuré dans la stratégie. Veillez tout d’abord à vous déconnecter des sessions existantes.
 
-Cloud App Security synchronise vos détails de la stratégie à ses serveurs pour chaque nouvelle application que vous êtes connecté à.  Cette opération peut prendre jusqu’à une minute.
+Cloud App Security synchronisera vos détails de stratégie sur ses serveurs pour chaque nouvelle application à laquelle vous vous connectez.  Cette opération peut prendre jusqu’à une minute.
 
-## Étape 3 : Configurer des contrôles avancés et toutes les applications dans le portail Cloud App Security<a name="portal"></a>
+## Étape 3 : Configurer des contrôles avancés et des applications dans le portail Cloud App Security<a name="portal"></a>
 
 Les instructions ci-dessus vous ont aidé à créer une stratégie Cloud App Security intégrée pour les applications proposées directement dans Azure AD.
 
-Pour configurer une stratégie avancée, créez un [stratégie d’accès](access-policy-aad.md) ou un [stratégie de session](session-policy-aad.md) dans Cloud App Security.
+Pour configurer une stratégie avancée, créez une stratégie d' [accès](access-policy-aad.md) ou de [session](session-policy-aad.md) dans Cloud App Security.
 
-Pour appliquer la stratégie à une n’importe quelle application, suivez les instructions pour [self-intégrer une n’importe quelle application pour une utilisation avec le contrôle d’accès conditionnel](proxy-deployment-any-app.md).
+Pour appliquer la stratégie à une application, suivez les instructions de l' [auto-intégration d’une application à utiliser avec contrôle d’application par accès conditionnel](proxy-deployment-any-app.md).
 
-Pour demander la prise en charge pour une n’importe quelle application :
+Pour demander la prise en charge d’une application quelconque:
 
 1. Dans le portail Cloud App Security, accédez à la roue dentée des paramètres et choisissez **Contrôle d'application par accès conditionnel**. Un message doit vous informer que de nouvelles applications Azure AD ont été découvertes par le Contrôle d'application par accès conditionnel.
 
@@ -104,7 +104,7 @@ Pour demander la prise en charge pour une n’importe quelle application :
 
 5. Cliquez sur **Demander le contrôle de session** pour demander que l’application soit intégrée au contrôle de session. Le processus d’intégration est effectué par l’équipe Microsoft Cloud App Security et avec vous.
 
-6. Pour configurer une stratégie pour tirer parti de gestion des appareils via des certificats de client :
+6. Pour configurer une stratégie pour tirer parti de la gestion des appareils via des certificats clients:
     1. Accédez à la roue dentée des paramètres et choisissez **Identification de périphérique**.
     2. Charger un ou plusieurs certificats intermédiaires ou racines.
     3. Une fois le certificat chargé, vous pouvez créer des stratégies d’accès et des stratégies de session basées sur une **balise d’appareil** et un **certification client valide**.
@@ -114,7 +114,7 @@ Pour demander la prise en charge pour une n’importe quelle application :
 > [!NOTE]
 > Un certificat est uniquement demandé à un utilisateur si la session correspond à une stratégie qui utilise le filtre du certificat client valide.
 
-## Étape 4 : Testez le déploiement<a name="test"></a>
+## Étape 4 : Testez le déploiement<a name="test"></a>
 
 1. Tout d’abord, déconnectez-vous de toutes les sessions existantes. Ensuite, essayez de vous connecter à chaque application qui a été déployée avec succès. Connectez-vous sous un utilisateur qui correspond à la stratégie configurée dans Azure AD.
 
@@ -131,9 +131,9 @@ Pour vérifier que les activités sont correctement capturées, cliquez sur une 
 > Après son déploiement, vous ne pouvez pas supprimer une application à partir de la page Contrôle d’application par accès conditionnel. Tant que vous ne définissez pas une stratégie d’accès ou de session sur l’application, le contrôle d’application par accès conditionnel ne change pas le comportement de l’application.
 
 >[!div class="step-by-step"]
-[« Précédent : Introduction au contrôle d’application par accès conditionnel](proxy-intro-aad.md)<br>[Suivant : Intégrer et déployer le contrôle d’accès conditionnel pour n’importe quelle application »](proxy-deployment-any-app.md)
+[« Précédent : Introduction au contrôle d’application par accès conditionnel](proxy-intro-aad.md)<br>[Suivant : Intégrer et déployer des contrôle d’application par accès conditionnel pour n’importe quelle application»](proxy-deployment-any-app.md)
 
 ## <a name="next-steps"></a>Étapes suivantes 
-[Utilisation de contrôle d’accès conditionnel Cloud App Security](proxy-intro-aad.md)
+[Utilisation de Cloud App Security contrôle d’application par accès conditionnel](proxy-intro-aad.md)
 
 [Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)

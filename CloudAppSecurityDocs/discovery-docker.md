@@ -5,7 +5,7 @@ keywords: ''
 author: ShlomoSagir-MS
 ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 15/7/2019
+ms.date: 7/22/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: c75ba963-ad5a-48e6-8d5d-610fc6e0b990
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6b6be306035cf9ebf9ff74fce78795b8c74f436e
-ms.sourcegitcommit: 7a01493423369b663195277a2046a76393b44987
+ms.openlocfilehash: 9fb6b01bfa9dbe54c219ef3ff2061e1470483e95
+ms.sourcegitcommit: cad2ead82bb76e4749c75eb7a0594e97f40545db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67880923"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68372302"
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports"></a>Configurer le chargement automatique des journaux pour des rapports continus
 
@@ -36,14 +36,14 @@ Avant de configurer la collecte automatique de fichiers journaux, vérifiez que 
 > [!NOTE]
 >-  Cloud App Security prend en charge le transfert des journaux de votre serveur SIEM au collecteur de journaux en partant du principe que les journaux sont transférés sous leur format d’origine. Cependant, nous vous recommandons fortement d’intégrer le collecteur de journaux directement à votre pare-feu et/ou proxy.
 >- Le collecteur de journaux compresse les données avant leur chargement. Le trafic sortant du collecteur de journaux a un volume égal à 10 % de celui des journaux de trafic reçus. 
->-  Si le collecteur de journaux rencontre des problèmes, vous recevrez une alerte si aucune donnée n’a été reçue pendant 48 heures.
+>- Si le collecteur de journaux rencontre des problèmes, vous recevrez une alerte si aucune donnée n’a été reçue pendant 48 heures.
 >
 
 ## <a name="deployment-modes"></a>Modes de déploiement
 
 Le collecteur de journaux prend en charge deux modes de déploiement :
 
--   **Conteneur** : S’exécute en tant qu’image de l’arrimeur sur [Windows](discovery-docker-windows.md), [Ubuntu localement](discovery-docker-ubuntu.md), [Ubuntu dans Azure](discovery-docker-ubuntu-azure.md) ou [RHEL localement](discovery-docker-ubuntu.md). 
+-   **Conteneur** : S’exécute en tant qu’image de l’arrimeur sur [Windows](discovery-docker-windows.md), [Ubuntu localement](discovery-docker-ubuntu.md), [Ubuntu dans Azure](discovery-docker-ubuntu-azure.md), [RHEL localement](discovery-docker-ubuntu.md) ou CentOS.
 
 -   **Appliance virtuelle** :  S’exécute en tant qu’image sur l’hyperviseur Hyper-V ou VMware (déconseillé)
 
