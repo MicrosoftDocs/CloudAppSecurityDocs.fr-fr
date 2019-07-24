@@ -1,6 +1,6 @@
 ---
-title: Intégrer la Protection contre les menaces avancées Azure avec Cloud App Security
-description: Cet article fournit des informations sur la façon de tirer parti des insights d’Azure-Protection avancée contre les menaces dans Cloud App Security pour la détection de risque hybride.
+title: Intégrer Azure-protection avancée contre les menaces avec Cloud App Security
+description: Cet article fournit des informations sur la façon d’exploiter Azure Advanced Threat Protection Insights dans Cloud App Security pour la détection hybride des risques.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
@@ -15,51 +15,51 @@ ms.assetid: 63e82b47-bb08-4614-af55-f85d04edfc5a
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 99c866a8b2571c9572e042572d0f5160d0ae56e5
-ms.sourcegitcommit: 3938edadc5f89f87cdeba607476cf3983b2413e8
+ms.openlocfilehash: 63da07db9a3fa29c49f08f8082b969adcbda6bca
+ms.sourcegitcommit: 4861a99debc71f266de738d5db78b711590b5e88
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67411923"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68431148"
 ---
-# <a name="azure-advanced-threat-protection-integration"></a>Intégration d’Azure-Protection avancée contre les menaces
+# <a name="azure-advanced-threat-protection-integration"></a>Intégration d’Azure-protection avancée contre les menaces
 
 *S’applique à : Microsoft Cloud App Security*
 
-Microsoft Cloud App Security s’intègre à Azure Advanced Threat Protection (ATP Azure) pour fournir l’analytique comportementale de l’entité d’utilisateur (UEBA) dans un environnement hybride - application cloud et localement, pour plus d’informations, consultez [didacticiel : Enquêter sur les utilisateurs à risque]() pour plus d’informations sur l’apprentissage automatique et analytique comportementale fournies par Azure ATP, consultez [What ' s Azure ATP ?](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp).
+Microsoft Cloud App Security s’intègre à Azure-protection avancée contre les menaces (Azure ATP) pour fournir une analyse comportementale des entités utilisateur (UEBA) dans un environnement hybride (à la fois dans l’application Cloud et [localement). pour plus d’informations, consultez le didacticiel: Examiner les utilisateurs](tutorial-ueba.md) à risque pour plus d’informations sur les machine learning et l’analyse comportementale fournis par Azure ATP, voir [qu’est-ce que Azure ATP?](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp).
 
 ## <a name="prerequisites"></a>Prérequis
 
 Pour procéder à un examen complet d’un utilisateur dans un environnement hybride, les éléments suivants sont nécessaires :
 
 - Licence valide pour Azure ATP connectée à votre instance Active Directory
-- Vous devez être administrateur général pour permettre une intégration entre Azure ATP et Microsoft Cloud App Security 
-- Si ne pas avoir d’Azure ATP, essayez dès maintenant
+- Vous devez être administrateur général pour activer l’intégration entre Azure ATP et Microsoft Cloud App Security 
+- Si vous n’avez pas Azure ATP, essayez-le maintenant
 
 
 >[!NOTE]
->Si vous n’avez pas un abonnement pour Microsoft Cloud App Security, vous serez toujours en mesure d’utiliser le portail Cloud App Security pour obtenir des informations d’Azure ATP.
+>Si vous n’avez pas d’abonnement pour Microsoft Cloud App Security, vous pouvez toujours utiliser le portail Cloud App Security pour obtenir Azure ATP Insights.
 
 
-## <a name="enable-azure-advanced-threat-protection"></a>Activer la Protection contre les menaces avancées Azure
+## <a name="enable-azure-advanced-threat-protection"></a>Activer Azure-protection avancée contre les menaces
 
-Pour permettre à Cloud App Security à intégrer à Azure ATP :
+Pour permettre l’intégration de Cloud App Security avec Azure ATP:
 
-1. Dans Cloud App Security, sous la roue dentée des paramètres, sélectionnez **paramètres**.
+1. Dans Cloud App Security, sous l’roue dentée paramètres, sélectionnez **paramètres**.
     
-   ![Menu Paramètres](./media/azip-system-settings.png)
+   ![Menu paramètres](./media/azip-system-settings.png)
 
-1. Sous **Protection contre les menaces**, sélectionnez **Azure ATP**.
+1. Sous **protection contre les menaces**, sélectionnez **Azure ATP**.
    
-    ![Activer la protection contre les menaces avancées azure](./media/aatp-integration.png)
+    ![activer Azure-protection avancée contre les menaces](./media/aatp-integration.png)
 
-3. Cochez la case pour **données connecter Azure ATP, y compris des alertes et des activités avec Cloud App Security**.
+3. Cochez la case pour **vous connecter Azure ATP données, notamment les alertes et les activités avec Cloud App Security**.
 
 
 > [!NOTE]
-> Il peut prendre jusqu'à 12 heures jusqu'à ce que l’intégration entre en vigueur.
+> Cela peut prendre jusqu’à 12 heures jusqu’à ce que l’intégration prenne effet.
  
-Après avoir activé l’intégration Azure-Protection avancée contre les menaces, vous serez en mesure de voir les activités en local pour tous les utilisateurs de votre organisation. Vous serez également obtenir des avancées insights sur vos utilisateurs qui combinent des alertes et les activités suspectes dans vos environnements cloud et locales.
+Après l’activation de l’intégration d’Azure-protection avancée contre les menaces, vous pouvez voir les activités locales pour tous les utilisateurs de votre organisation. Vous obtiendrez également des Insights avancés sur vos utilisateurs qui combinent des alertes et des activités suspectes dans vos environnements Cloud et local.
 
 
 
