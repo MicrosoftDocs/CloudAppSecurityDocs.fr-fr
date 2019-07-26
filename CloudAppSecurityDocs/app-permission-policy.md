@@ -2,10 +2,10 @@
 title: Créer des stratégies pour contrôler les applications OAuth dans Cloud App Security
 description: Cet article fournit des instructions sur la création et l’utilisation de stratégies d’autorisation d’application dans Microsoft Cloud App Security.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 12/10/2018
+author: ShlomoSagir-MS
+ms.author: shsagir
+manager: ShlomoSagir-MS
+ms.date: 7/25/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: 9f68302c-bb3d-450c-bbf5-f8130cb163e3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b765424ce19004b984a360d49193445f2a53a033
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 93d23f46dc5c0225d32f75876386375b402f3897
+ms.sourcegitcommit: d1eb8ccf09840c659ba7170a2b92cd62d9d97a02
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65567934"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68494215"
 ---
 # <a name="oauth-app-policies"></a>Stratégies d’application OAuth
 
@@ -31,6 +31,7 @@ En plus de l’[investigation existante des applications OAuth](manage-app-permi
 Les stratégies d’application OAuth vous permettent de rechercher les autorisations exigées par chaque application ainsi que les utilisateurs qui les ont accordées pour Office 365, G Suite et Salesforce. Vous pouvez également marquer ces autorisations comme approuvées ou interdites. Le fait de les marquer comme interdites révoque les autorisations de chaque application pour chaque utilisateur qui les a accordées. 
 
 ## <a name="create-a-new-oauth-app-policy"></a>Créer une stratégie d’application OAuth
+
 Il existe deux façons de créer une stratégie d’application OAuth. La première se trouve sous **Examiner**, tandis que la seconde se trouve sous **Contrôler**. 
 
 Pour créer une stratégie d’application OAuth :
@@ -44,14 +45,23 @@ Pour créer une stratégie d’application OAuth :
 
 Sinon, vous pouvez aussi créer la stratégie en cliquant sur **Contrôler** suivi de **Stratégies**. Cliquez ensuite sur **Créer une stratégie** suivi de **OAuth app policy** (Stratégie d’application OAuth).
 
-  
    ![Nouvelle stratégie d’application OAuth](./media/app-permissions-policy.png)
 
+## <a name="oauth-app-anomaly-detection-policies"></a>Stratégies de détection des anomalies d’application OAuth
 
+En plus des stratégies d’application OAuth que vous pouvez créer, les stratégies de détection des anomalies prêtes à l’emploi suivantes permettent de profiler les métadonnées des applications OAuth pour identifier celles qui sont potentiellement malveillantes:
+
+| Nom de la stratégie | Description de la stratégie |
+| --- | --- |
+| Nom d’application OAuth trompeur | Analyse les applications OAuth connectées à votre environnement et déclenche une alerte lorsqu’une application avec un nom trompeur est détectée. Les noms trompeurs, tels que les lettres étrangères ressemblant à des lettres latines, peuvent indiquer une tentative de déguisage d’une application malveillante en tant qu’application connue et approuvée. |
+| Nom d’application OAuth suspect | Analyse les applications OAuth connectées à votre environnement et déclenche une alerte lorsqu’une application avec un nom suspect est détectée. Les noms suspects, tels que les noms des applications connues publiées par des serveurs de publication inconnus, peuvent indiquer une tentative de déguisage d’une application malveillante en tant qu’application connue et approuvée. |
+| Une URL de redirection non sécurisée est utilisée par une application OAuth | Analyse les applications OAuth connectées à votre environnement et déclenche une alerte lorsqu’une application utilise une URL de redirection non sécurisée (par exemple, n’utilise pas le protocole HTTPs), qui expose des données sensibles pour l’interception. |
+| Nom du serveur de publication trompeur pour une application OAuth | Analyse les applications OAuth connectées à votre environnement et déclenche une alerte lorsqu’une application avec un nom d’éditeur trompeur est détectée. Les noms de serveur de publication trompeurs, tels que les lettres étrangères ressemblant à des lettres latines, peuvent indiquer une tentative de déguisement d’application malveillante en tant qu’application provenant d’un éditeur connu et approuvé. |
+
+> [!NOTE]
+> Les stratégies de détection des anomalies sont uniquement disponibles pour les applications OAuth autorisées dans votre Azure Active Directory.
 
   ## <a name="next-steps"></a>Étapes suivantes 
-  [Stratégies de protection des données](data-protection-policies.md)   
+  [Stratégies de protection des données](data-protection-policies.md)
 
-[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)  
-  
-  
+[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)
