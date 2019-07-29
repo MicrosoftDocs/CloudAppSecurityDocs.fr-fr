@@ -5,7 +5,7 @@ keywords: ''
 author: ShlomoSagir-MS
 ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 7/7/2019
+ms.date: 7/21/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 96444fd79bebda2b7092e1dbae9a449f0be0bd06
-ms.sourcegitcommit: 1b6b827c149b195a241440929970a2ccbb136b83
+ms.openlocfilehash: c903276df9f2c8bcbfa374cdcb571a26b1c26014
+ms.sourcegitcommit: 66dab812232ff95c67d2b17421ec91b0b1f67400
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2019
-ms.locfileid: "67870192"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68508157"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Nouveautés de Microsoft Cloud App Security
 
@@ -29,6 +29,22 @@ ms.locfileid: "67870192"
 Cet article est mis à jour fréquemment pour vous informer des nouveautés de la dernière version de Cloud App Security.
 
 Flux RSS : Recevez une notification quand cette page est mise à jour en copiant et collant l’URL suivante dans votre lecteur de flux : `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
+
+## <a name="cloud-app-security-release-154"></a>Cloud App Security version 154
+
+Publication : 21 juillet 2019
+
+- **Intégrer et déployer le contrôle d’application par accès conditionnel pour tous les types d’applications maintenant en GA**<br>
+Depuis que nous vous avons montré un aperçu du contrôle d’application par accès conditionnel pour toutes les applications le mois dernier, nous avons reçu un feedback incroyable et nous sommes donc très contents d’annoncer sa disponibilité générale. Cette nouvelle fonctionnalité vous permet de déployer n’importe quelle application web en vue d’utiliser des stratégies de session et d’accès, et de bénéficier de puissantes fonctionnalités de supervision et de contrôle en temps réel.
+
+<!-- **Workday app connector available (Preview)**<br>
+A new app connector is now available for Workday. You can now connect Microsoft Cloud App Security to Workday to monitor activities and protect its users. For more information, see [Connect Workday](connect-workday-to-microsoft-cloud-app-security.md).-->
+
+- **Évaluation de la configuration de la sécurité pour AWS**<br>
+Cloud App Security met progressivement en place la possibilité d’obtenir une évaluation de la configuration de la sécurité de votre environnement Amazon Web Services à des fins de conformité CIS, et fournit des recommandations s’il manque des configurations et des contrôles de la sécurité. Cette fonctionnalité permet aux organisations de superviser l’état de conformité de tous les comptes AWS connectés à partir d’une seule vue.
+
+- **Détections d’anomalies d’application OAuth (déploiement graduel)**<br>
+Nous avons étendu notre actuelle fonctionnalité de détection d’applications OAuth suspectes. Quatre nouvelles détections sont maintenant prêtes à l’emploi, qui profilent les métadonnées des applications OAuth autorisées dans votre organisation pour identifier celles qui sont potentiellement malveillantes.
 
 ## <a name="cloud-app-security-release-153"></a>Cloud App Security mise en production 153
 
