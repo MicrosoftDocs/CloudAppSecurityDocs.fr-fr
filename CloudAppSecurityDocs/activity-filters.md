@@ -15,12 +15,12 @@ ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1db651146978c187a043abce78b4d92d819df217
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 7104207cc15fa915b3e08bcfe130d5bd43702340
+ms.sourcegitcommit: 0ea0ea939df9f9367f10fc60908d4f9fb9b06de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65565724"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68601472"
 ---
 # <a name="activities"></a>Activités
 
@@ -58,11 +58,11 @@ Vous pouvez afficher plus d’informations supplémentaires sur chaque activité
 
    - Afficher les données brutes : Cliquez sur Afficher les données brutes pour afficher les données réelles reçues de l’application.
 
-   - Utilisateur : Cliquez sur l’utilisateur pour afficher la page utilisateur de l’utilisateur ayant réalisé l’activité. 
+   - Utilisateur : Cliquez sur l’utilisateur pour afficher la page utilisateur de l’utilisateur ayant réalisé l’activité. 
 
-   - Type d’appareil : Cliquez sur le type de périphérique pour afficher les données d’agent utilisateur brutes. 
+   - Type d’appareil: Cliquez sur le type de périphérique pour afficher les données d’agent utilisateur brutes. 
 
-   - Emplacement : Cliquez sur l’emplacement pour afficher l’emplacement dans des cartes Bing.
+   - Localisation : Cliquez sur l’emplacement pour afficher l’emplacement dans des cartes Bing.
 
    - Catégorie d’adresse IP et balises : Cliquez sur la balise IP pour afficher la liste des balises IP trouvées dans cette activité. Vous pouvez ensuite filtrer selon toutes les activités correspondant à cette balise.    
 

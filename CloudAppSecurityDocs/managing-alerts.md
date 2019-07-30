@@ -2,10 +2,10 @@
 title: Gérer les alertes déclenchées dans Cloud App Security
 description: Cet article explique comment utiliser les alertes déclenchées dans le portail Cloud App Security.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 12/10/2018
+author: ShlomoSagir-MS
+ms.author: shsagir
+manager: ShlomoSagir-MS
+ms.date: 7/28/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,18 +15,21 @@ ms.assetid: 1b1dbcc6-472f-43ea-af59-2aa926e3e5a9
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 97be32220886f60efa6c3e60c82ccb13e5adfe1d
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: f5fea33082c52fea5bb7a1664a23ff9a18b26adb
+ms.sourcegitcommit: 0ea0ea939df9f9367f10fc60908d4f9fb9b06de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568326"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68601482"
 ---
 # <a name="manage-alerts"></a>Gérer les alertes
 
 *S’applique à : Microsoft Cloud App Security*
 
 Cet article explique comment utiliser les alertes déclenchées dans le portail Cloud App Security.
+
+> [!NOTE]
+> Les alertes sont gérées dans leurs stratégies respectives et peuvent être configurées pour être envoyées en tant que courrier électronique, SMS, ou les deux.
 
 ## <a name="manage-your-alerts"></a>Gérer vos alertes
 
