@@ -4,8 +4,8 @@ description: Cet article décrit le processus suivi par Cloud App Security quand
 keywords: ''
 author: ShlomoSagir-MS
 ms.author: shsagir
-manager: shsagir
-ms.date: 06/13/2019
+manager: ShlomoSagir-MS
+ms.date: 7/30/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: bf25d1e6-e5dc-449f-b50e-1cd4a21b6d3d
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6266ecaa462be0d2b9bd86abfcb9ccfa5aa38abf
-ms.sourcegitcommit: ea1c0f7638eaf0601ae476fea0d40e01bf8a6f4d
+ms.openlocfilehash: 455f21d2c294d54203057a2cbdaf117de0073eca
+ms.sourcegitcommit: 5c8678d44aa73375703fd54fc7e0386b704bd3bc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67298859"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68633136"
 ---
 # <a name="microsoft-data-classification-services-integration"></a>Intégration du service de classification des données Microsoft
 
@@ -29,32 +29,30 @@ ms.locfileid: "67298859"
 Microsoft Cloud App Security vous permet d’utiliser le service de classification des données Microsoft en mode natif pour classer les fichiers de vos applications cloud. Le service de classification des données Microsoft fournit une expérience unifiée de protection des informations via Office 365, Azure Information Protection et Microsoft Cloud App Security. Le service de classification vous permet d’étendre votre travail de classification des données aux applications cloud tierces protégées par Microsoft Cloud App Security, en appliquant les décisions que vous avez déjà prises à un plus grand nombre d’applications.
 
 >[!NOTE]
-> Cette fonctionnalité est actuellement disponible dans des États-Unis, Europe (à l’exception de la France), Australie, Inde, au Canada, Japon et Asie-Pacifique.
-
+> Cette fonctionnalité est actuellement disponible aux États-Unis, en Europe (à l’exception de la France), en Australie, en Inde, au Canada, au Japon et à l’Asie-Pacifique.
 
 ## <a name="enable-content-inspection-with-data-classification-services"></a>Activer l’inspection du contenu avec les services de classification des données
 
 Vous avez la possibilité de définir la **méthode d’inspection** pour qu’elle utilise le **service de classification des données Microsoft** sans aucune configuration supplémentaire. Cette option est utile quand vous créez une stratégie de prévention de fuite de données pour vos fichiers dans Microsoft Cloud App Security.
 
-
-1. Dans la page [Stratégie de fichier](data-protection-policies.md), sous **Méthode d’inspection**, sélectionnez **Service de classification des données**. Vous pouvez également définir le **méthode d’Inspection** dans le [stratégie de session](session-policy-aad.md) page avec **contrôler le téléchargement du fichier (avec DLP)** sélectionné.
+1. Dans la page [Stratégie de fichier](data-protection-policies.md), sous **Méthode d’inspection**, sélectionnez **Service de classification des données**. Vous pouvez également définir la **méthode d’inspection** dans la page [stratégie de session](session-policy-aad.md) avec l’option **contrôler le téléchargement du fichier (avec DLP)** sélectionnée.
      ![définition du service de classification des données](./media/dcs-enable.png)
 2. Indiquez si la stratégie doit s’appliquer quand **un** ou **tous** les critères sont remplis.
 3. **Choisissez un type d’inspection** en sélectionnant les **types d’informations sensibles**.
  ![définition du service de classification des données](./media/dcs-sensitive-information-type.png)
 
 4. Vous pouvez utiliser les [types d’informations sensibles par défaut ](https://support.office.com/article/what-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b) pour définir ce qui se passe pour les fichiers protégés par Microsoft Cloud App Security. Vous pouvez également réutiliser vos [types d’informations sensibles personnalisés d’Office 365](https://support.office.com/article/create-a-custom-sensitive-information-type-82c382a5-b6db-44fd-995d-b333b3c7fc30).
+    > [!NOTE]
+    > Vous pouvez configurer votre stratégie pour utiliser des types de classification avancés tels que les empreintes digitales et la correspondance exacte des données.
 
 5. Si vous le souhaitez, vous pouvez afficher les quatre derniers caractères d’une correspondance. Par défaut, les correspondances sont masquées et s’affichent dans leur contexte, avec 40 caractères avant et après la violation. Si vous activez cette case à cocher, les quatre derniers caractères de la correspondance elle-même seront affichés.
 
-6. Tirant parti des stratégies de fichier, vous pouvez également définir des alertes et des actions de gouvernance pour la stratégie. Pour plus d’informations, consultez les [stratégies de fichier](data-protection-policies.md) et les [actions de gouvernance](governance-actions.md). En tirant parti des stratégies de session, vous pouvez également surveiller et contrôler des actions en temps réel lorsque un fichier correspond à un type de contrôleurs de domaine. Pour plus d’informations, consultez [stratégie de session](session-policy-aad.md).
+6. En tirant parti des stratégies de fichiers, vous pouvez également définir des alertes et des actions de gouvernance pour la stratégie. Pour plus d’informations, consultez les [stratégies de fichier](data-protection-policies.md) et les [actions de gouvernance](governance-actions.md). En tirant parti des stratégies de session, vous pouvez également surveiller et contrôler les actions en temps réel lorsqu’un fichier correspond à un type de contrôleur de contrôle d’accès. Pour plus d’informations, consultez [stratégie de session](session-policy-aad.md).
 
 La définition de ces stratégies vous permet d’étendre facilement la puissance des fonctionnalités DLP Office 365 à toutes vos autres applications cloud approuvées et de protéger les données qu’elles stockent, avec l’ensemble complet d’outils que vous fournit Microsoft Cloud App Security, notamment la capacité à [appliquer automatiquement des étiquettes de classification Azure Information Protection](azip-integration.md) et de contrôler les autorisations de partage.
 
+## <a name="next-steps"></a>Étapes suivantes
 
+[Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)
 
-## <a name="next-steps"></a>Étapes suivantes  
-[Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)   
-
-[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)  
-  
+[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)
