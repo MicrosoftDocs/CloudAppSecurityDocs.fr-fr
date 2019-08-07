@@ -12,12 +12,12 @@ ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
-ms.openlocfilehash: 1bb39de6eafda31df7df07d177050cbb0f02031a
-ms.sourcegitcommit: cad2ead82bb76e4749c75eb7a0594e97f40545db
+ms.openlocfilehash: 7b86bc5f344f097c4c4e45c9d25123c5b361ebb2
+ms.sourcegitcommit: e9c93f69f280a929b2802619d24f59ea830b783f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68372343"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68782878"
 ---
 # <a name="onboard-and-deploy-conditional-access-app-control-for-any-app"></a>Intégration et déploiement de contrôle d’application par accès conditionnel pour n’importe quelle application
 
@@ -109,7 +109,7 @@ Procédez comme suit pour configurer une application devant être contrôlée pa
     1. Cliquez sur **Terminer**.
 
     > [!NOTE]
-    > Pour que les certificats soient reconnus, une fois que vous avez installé le certificat, vous devez redémarrer le navigateur et accéder à la même page. Une coche s’affiche en indiquant les liens de certificat qui confirment qu’un certificat valide est installé.
+    > Pour que les certificats soient reconnus, une fois que vous avez installé le certificat, vous devez redémarrer le navigateur et accéder à la même page.<!-- You'll see a check-mark by the certificates links confirmation they are installed.-->
 
 1. Cliquez sur **Continuer**.
 
