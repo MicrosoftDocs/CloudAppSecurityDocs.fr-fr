@@ -5,7 +5,7 @@ keywords: ''
 author: ShlomoSagir-MS
 ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 7/10/2019
+ms.date: 8/7/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ff73a393-da43-4954-8b02-38d2a48d39b3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 470b1082a51568aed7018eae2d74afe83d94a071
-ms.sourcegitcommit: 1b6b827c149b195a241440929970a2ccbb136b83
+ms.openlocfilehash: 4d9e8e8f4ba01dba7da8f792315d9aa2f033a157
+ms.sourcegitcommit: 39faa183e7d781660d475c79c827adbb4cc635fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2019
-ms.locfileid: "67870215"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68861594"
 ---
 # <a name="docker-on-windows-on-premises"></a>Docker sur Windows en local
 
@@ -67,9 +67,9 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
      a. Cliquez sur **Ajouter une source de données**.
 
       ![Ajouter une source de données](./media/add-data-source.png)
-          
+
      b. **Nommez** votre proxy ou pare-feu.
-      
+
       ![ubuntu1](./media/ubuntu1.png)
 
      c. Sélectionnez l’appareil dans la liste **Source**. Si vous sélectionnez **Format de journal personnalisé** pour utiliser une appliance réseau qui n’est pas listée, consultez [Utilisation de l’analyseur de journal personnalisé](custom-log-parser.md) pour obtenir des instructions de configuration.
@@ -77,7 +77,7 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
      d. Comparez votre journal à l’exemple de format de journal attendu. Si le format de votre fichier journal ne correspond pas à cet exemple, vous devez ajouter votre source de données en sélectionnant **Autre**.
 
      e. Définissez le **Type de récepteur** sur **FTP**, **FTPS**, **Syslog – UDP**, **Syslog – TCP** ou **Syslog – TLS**.
-     
+
      >[!NOTE]
      >L’intégration aux protocoles de transfert sécurisé (FTPS et Syslog – TLS) nécessite souvent que des paramètres supplémentaires soient configurés dans votre pare-feu/proxy.
 
@@ -177,7 +177,6 @@ Si la signature numérique n’est pas valide, vous recevez le message **Cette s
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Résolution des problèmes du déploiement docker Cloud Discovery](troubleshoot-docker.md)
+[Configuration FTP du collecteur de journaux](log-collector-ftp.md)
 
 [Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)
-

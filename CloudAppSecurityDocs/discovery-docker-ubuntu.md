@@ -2,10 +2,10 @@
 title: Configurer le chargement automatique de journal à l’aide de Docker en local
 description: Cet article décrit la procédure de configuration du chargement automatique des journaux pour des rapports continus dans Cloud App Security à l’aide d’un Docker sur un serveur Ubuntu ou RHEL local.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 3/19/2019
+author: ShlomoSagir-MS
+ms.author: shsagir
+manager: ShlomoSagir-MS
+ms.date: 8/6/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: cac1c58bb8985065e4b99f179a544d08c3f31c6b
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 4832e73409e0c48a02bb0aff94236b45661acd06
+ms.sourcegitcommit: 39faa183e7d781660d475c79c827adbb4cc635fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65567822"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68861556"
 ---
 # <a name="docker-on-ubuntu-and-rhel-on-premises"></a>Docker sur Ubuntu et RHEL (local)
 
@@ -30,13 +30,13 @@ Vous pouvez configurer le chargement automatique des journaux pour des rapports 
 
 ## <a name="technical-requirements"></a>Spécifications techniques
 
-- Système d’exploitation : Ubuntu 14.04, 16.04 et 18.04 ; RHEL 7.2 ou ultérieur, ou CentOS 7.2 ou ultérieur 
+- Système d’exploitation : Ubuntu 14,04, 16,04 et 18,04; RHEL 7,2 ou version ultérieure, ou CentOS 7,2 ou version ultérieure 
 
-- Espace disque : 250 Go
+- Espace disque: 250 Go
 
-- PROCESSEUR : 2
+- Processeur : 2
 
-- RAM : 4 Go
+- RAM : 4 Go
 
 - Configurez votre pare-feu, comme décrit dans [Configuration réseau requise](network-requirements.md#log-collector)
 
@@ -52,7 +52,7 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
 
 ### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>Étape 1 – Configuration du portail web : Définir les sources de données et les lier à un collecteur de journaux
 
-1. Accédez à la page de paramètres **Chargement automatique de journal**. 
+1. Accédez à la page de paramètres **Chargement automatique de journal**.
 
      a. Dans le portail Cloud App Security, cliquez sur l’icône des paramètres, puis sur **Collecteurs de journaux**.
 
@@ -63,9 +63,9 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
      a. Cliquez sur **Ajouter une source de données**.
 
       ![Ajouter une source de données](./media/add-data-source.png)
-          
+
      b. **Nommez** votre proxy ou pare-feu.
-      
+
       ![ubuntu1](./media/ubuntu1.png)
 
      c. Sélectionnez l’appareil dans la liste **Source**. Si vous sélectionnez **Format de journal personnalisé** pour utiliser une appliance réseau qui n’est pas listée, consultez [Utilisation de l’analyseur de journal personnalisé](custom-log-parser.md) pour obtenir des instructions de configuration.
@@ -73,7 +73,7 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
      d. Comparez votre journal à l’exemple de format de journal attendu. Si le format de votre fichier journal ne correspond pas à cet exemple, vous devez ajouter votre source de données en sélectionnant **Autre**.
 
      e. Définissez le **Type de récepteur** sur **FTP**, **FTPS**, **Syslog – UDP**, **Syslog – TCP** ou **Syslog – TLS**.
-     
+
      >[!NOTE]
      >L’intégration aux protocoles de transfert sécurisé (FTPS et Syslog – TLS) nécessite souvent que des paramètres supplémentaires soient configurés dans votre pare-feu/proxy.
 
@@ -104,6 +104,7 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
    ![Créer le collecteur de journaux](./media/windows7.png)
 
 ### <a name="step-2--on-premises-deployment-of-your-machine"></a>Étape 2 : Déploiement local de votre ordinateur
+
 La procédure suivante décrit le déploiement dans Ubuntu. La procédure de déploiement pour les autres plateformes est légèrement différente.
 
 1. Ouvrez un terminal sur votre machine Ubuntu.
@@ -111,7 +112,7 @@ La procédure suivante décrit le déploiement dans Ubuntu. La procédure de dé
 2. Changez les privilèges racine à l’aide de la commande : `sudo -i`
 
 3. Pour contourner un proxy dans votre réseau, exécutez les deux commandes suivantes :
-        
+
         export http_proxy='<IP>:<PORT>' (e.g. 168.192.1.1:8888)
         export https_proxy='<IP>:<PORT>'
 
@@ -123,7 +124,7 @@ La procédure suivante décrit le déploiement dans Ubuntu. La procédure de dé
 
     > [!NOTE] 
     > Si cette commande ne parvient pas à valider votre certificat de proxy, exécutez la commande en ajoutant `curl -k` au début.
-    
+
    ![ubuntu5](./media/ubuntu5.png)
 
 5. Déployez l’image du collecteur sur la machine hôte en important la configuration du collecteur. Importez la configuration en copiant la commande d’exécution générée dans le portail. Si vous devez configurer un proxy, ajoutez l’adresse IP et le numéro de port du proxy. Par exemple, si les détails de votre proxy sont 192.168.10.1:8080, votre commande d’exécution mise à jour est :
@@ -158,15 +159,14 @@ Si vous rencontrez des problèmes lors du déploiement, consultez [Dépannage de
 
 Vérifiez que les journaux sont chargés sur Cloud App Security et que les rapports sont générés. Après vérification, créez des rapports personnalisés. Vous pouvez créer des rapports de découverte personnalisés basés sur les groupes d’utilisateurs Azure Active Directory. Par exemple, pour voir l’utilisation cloud de votre service marketing, importez le groupe marketing à l’aide de la fonctionnalité d’importation des groupes d’utilisateurs. Créez ensuite un rapport personnalisé pour ce groupe. Vous pouvez également personnaliser un rapport en fonction d’une balise d’adresse IP ou de plages d’adresses IP.
 
-1. Dans le portail Cloud App Security, dans les Paramètres (icône d’engrenage), sélectionnez Paramètres Cloud Discovery, puis **Rapports continus**. 
+1. Dans le portail Cloud App Security, dans les Paramètres (icône d’engrenage), sélectionnez Paramètres Cloud Discovery, puis **Rapports continus**.
 2. Cliquez sur le bouton **Créer un rapport** et renseignez les champs.
-3. Sous **Filtres**, vous pouvez filtrer les données par source de données, par [groupe d’utilisateurs importé](user-groups.md) ou par [balises et plages d’adresses IP](ip-tags.md). 
+3. Sous **Filtres**, vous pouvez filtrer les données par source de données, par [groupe d’utilisateurs importé](user-groups.md) ou par [balises et plages d’adresses IP](ip-tags.md).
 
 ![Rapport continu personnalisé](./media/custom-continuous-report.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Résolution des problèmes du déploiement docker Cloud Discovery](troubleshoot-docker.md)
+[Configuration FTP du collecteur de journaux](log-collector-ftp.md)
 
-[Les clients Premier peuvent également choisir Cloud App Security directement dans le portail Premier.](https://premier.microsoft.com/)
-
+[Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier](https://premier.microsoft.com/)

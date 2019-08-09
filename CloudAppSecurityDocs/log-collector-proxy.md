@@ -2,10 +2,10 @@
 title: Activer le collecteur de journaux derrière un proxy - Cloud App Security | Microsoft Docs
 description: Cet article fournit des informations sur la façon d’activer le collecteur de journaux Cloud App Security Cloud Discovery derrière un proxy.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 2/2/2019
+author: ShlomoSagir-MS
+ms.author: shsagir
+manager: ShlomoSagir-MS
+ms.date: 8/6/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,19 +15,19 @@ ms.assetid: 6bde2a6c-60cc-4a7d-9e83-e8b81ac229b0
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: affc3cf96644e6997aa2f49870d33fa93c1484f1
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 4b468fa4361ed6278845ffad33594bc5543f1a03
+ms.sourcegitcommit: 39faa183e7d781660d475c79c827adbb4cc635fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568227"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68861540"
 ---
 # <a name="enable-the-log-collector-behind-a-proxy"></a>Activer le collecteur de journaux derrière un proxy
 
 Une fois que vous avez configuré le collecteur de journaux, si vous travaillez derrière un proxy, le collecteur de journaux peut avoir des difficultés pour envoyer des données à Cloud App Security. Cela peut se produire quand le collecteur de journaux ne fait pas confiance à l’autorité de certification racine du proxy et qu’il ne peut pas se connecter à Microsoft Cloud App Security pour récupérer sa configuration ou charger les journaux reçus.
 
->[!NOTE] 
-> Pour plus d’informations sur la façon de modifier les certificats utilisés par le collecteur de journaux pour Syslog ou FTP, et pour résoudre les problèmes de connectivité à partir des pare-feux et proxys au collecteur de journaux, consultez [Dépannage du déploiement de Microsoft Cloud App Security Cloud Discovery](troubleshoot-docker.md).
+>[!NOTE]
+> Pour plus d’informations sur la façon de modifier les certificats utilisés par le collecteur de journaux pour syslog ou FTP, et pour résoudre les problèmes de connectivité à partir des pare-feu et proxys vers le collecteur de journaux, consultez [configuration du protocole FTP](log-collector-ftp.md)du collecteur de journaux.
 >
 
 ## <a name="set-up-the-log-collector-behind-a-proxy"></a>Configurer le collecteur de journaux derrière un proxy
@@ -41,7 +41,6 @@ Dans l’interpréteur de commandes, vérifiez que le conteneur a été créé e
     bash
     docker ps
 
-
 ![docker ps](./media/docker-1.png "docker ps")
 
 ### <a name="copy-proxy-root-ca-certificate-to-the-container"></a>Copier le certificat d’autorité de certification racine du proxy sur le conteneur
@@ -51,7 +50,6 @@ Exécutez la commande sur l’hôte Ubuntu. La commande copie le certificat dans
 
     bash
     docker cp Proxy-CA.crt Ubuntu-LogCollector:/var/adallom/ftp/discovery
-
 
 ### <a name="set-the-configuration-to-work-with-the-ca-certificate"></a>Définir la configuration pour qu’elle fonctionne avec le certificat d’autorité de certification
 
@@ -70,12 +68,10 @@ Exécutez la commande sur l’hôte Ubuntu. La commande copie le certificat dans
        bash
        ./keytool --import --noprompt --trustcacerts --alias SelfSignedCert --file /var/adallom/ftp/discovery/Proxy-CA.crt --keystore ../lib/security/cacerts --storepass changeit
 
-
 4. Confirmez que le certificat a été importé correctement dans le magasin de clés d’autorité de certification, en utilisant la commande suivante pour rechercher l’alias que vous avez fourni lors de l’importation (*SelfSignedCert*) :
 
        bash
        ./keytool --list --keystore ../lib/security/cacerts | grep self
-
 
 ![keytool](./media/docker-2.png "keytool")
 
@@ -83,7 +79,7 @@ Votre certificat d’autorité de certification de proxy importé doit s’affic
 
 ### <a name="set-the-log-collector-to-run-with-the-new-configuration"></a>Configurer le collecteur de journaux pour qu’il s’exécute avec la nouvelle configuration
 
-Le conteneur est maintenant prêt. 
+Le conteneur est maintenant prêt.
 
 Exécutez la commande **collector_config** à l’aide du jeton d’API que vous avez utilisé lors de la création de votre collecteur de journaux :
 
@@ -104,13 +100,8 @@ Le collecteur de journaux est désormais en mesure de communiquer avec Cloud App
 >[!NOTE]
 > Si vous devez mettre à jour la configuration du collecteur de journaux, pour ajouter ou supprimer une source de données, par exemple, vous devez normalement **supprimer** le conteneur et effectuer de nouveau les étapes précédentes. Pour éviter cela, vous pouvez réexécuter l’outil *collector_config* avec le nouveau jeton d’API généré dans le portail Cloud App Security.
 
+## <a name="next-steps"></a>Étapes suivantes
 
+[Stratégies d’activité utilisateur](user-activity-policies.md)
 
- 
-  
-## <a name="next-steps"></a>Étapes suivantes 
-[Stratégies d’activité utilisateur](user-activity-policies.md)   
-
-[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)  
-  
-  
+[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)

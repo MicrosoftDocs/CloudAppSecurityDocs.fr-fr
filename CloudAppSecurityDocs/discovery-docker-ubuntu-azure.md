@@ -5,7 +5,7 @@ keywords: ''
 author: ShlomoSagir-MS
 ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 7/18/2019
+ms.date: 8/6/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,18 +15,18 @@ ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b094682bc0f3b9ae6ebe6f0594a842a5e2e50458
-ms.sourcegitcommit: cad2ead82bb76e4749c75eb7a0594e97f40545db
+ms.openlocfilehash: 9d094c35565b416a8a5c048c09abad90dacb425c
+ms.sourcegitcommit: 39faa183e7d781660d475c79c827adbb4cc635fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68372307"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68861580"
 ---
 # <a name="set-up-and-configuration-on-ubuntu-or-rhel-in-azure"></a>Installation et configuration sur Ubuntu ou RHEL dans Azure
 
 *S’applique à : Microsoft Cloud App Security*
 
-Vous pouvez configurer le chargement automatique de journaux pour des rapports continus dans Cloud App Security à l’aide de Docker sur Ubuntu ou Red Hat Enterprise Linux (RHEL) dans Azure. Cet article décrit comment configurer le chargement automatique des journaux. 
+Vous pouvez configurer le chargement automatique de journaux pour des rapports continus dans Cloud App Security à l’aide de Docker sur Ubuntu ou Red Hat Enterprise Linux (RHEL) dans Azure. Cet article décrit comment configurer le chargement automatique des journaux.
 
 ## <a name="prerequisites"></a>Prérequis
 
@@ -52,7 +52,7 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
 
 ### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>Étape 1 – Configuration du portail web : Définir les sources de données et les lier à un collecteur de journaux
 
-1. Accédez à la page de paramètres **Chargement automatique de journal**. 
+1. Accédez à la page de paramètres **Chargement automatique de journal**.
 
      a. Dans le portail Cloud App Security, cliquez sur l’icône des paramètres, puis sur **Collecteurs de journaux**.
 
@@ -73,7 +73,7 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
      d. Comparez votre journal à l’exemple de format de journal attendu. Si le format de votre fichier journal ne correspond pas à cet exemple, vous devez ajouter votre source de données en sélectionnant **Autre**.
 
      e. Définissez le **Type de récepteur** sur **FTP**, **FTPS**, **Syslog – UDP**, **Syslog – TCP** ou **Syslog – TLS**.
-     
+
      >[!NOTE]
      >L’intégration aux protocoles de transfert sécurisé (FTPS et Syslog – TLS) nécessite souvent que des paramètres supplémentaires soient configurés dans votre pare-feu/proxy.
 
@@ -81,7 +81,6 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
      - Superviser l’état de chaque appareil séparément à des fins d’investigation
      - Explorer le Shadow IT Discovery par appareil, si chaque appareil est utilisé par un segment d’utilisateur différent
 
-     
 3. Accédez à l’onglet **Collecteurs de journaux** en haut.
 
      a. Cliquez sur **Ajouter un collecteur de journaux**.
@@ -109,8 +108,7 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
 > [!NOTE]
 > La procédure suivante décrit le déploiement dans Ubuntu. Les étapes de déploiement pour d’autres plateformes sont légèrement différentes.
 
-
-1. Créez une nouvelle machine Ubuntu dans votre environnement Azure. 
+1. Créez une nouvelle machine Ubuntu dans votre environnement Azure.
 2. Une fois la machine configurée, ouvrez les ports ainsi :
 
      a. Dans l’affichage Ordinateur, accédez à **Réseau** et sélectionnez l’interface souhaitée en double-cliquant dessus.
@@ -118,9 +116,9 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
      b. Accédez à **Groupe de sécurité réseau** et sélectionnez le groupe de sécurité réseau qui convient.
 
      c. Accédez à **Règles de sécurité du trafic entrant** et cliquez sur **Ajouter**,
-      
+
       ![Ubuntu Azure](./media/ubuntu-azure.png)
-    
+
      d. Ajoutez les règles suivantes (en mode **Avancé**) :
 
       |Nom|Plages du port de destination|Protocol|Source|Destination|
@@ -129,7 +127,7 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
       |caslogcollector_ftp_passive|20000-20099|TCP|<Sous-réseau d’adresse IP de votre appliance>|Indifférent|
       |caslogcollector_syslogs_tcp|601-700|TCP|<Sous-réseau d’adresse IP de votre appliance>|Indifférent|
       |caslogcollector_syslogs_udp|514-600|UDP|<Sous-réseau d’adresse IP de votre appliance>|Indifférent|
-      
+
       ![Règles Ubuntu Azure](./media/inbound-rule.png)
 
 3. Revenez à l’ordinateur et cliquez sur **Se connecter** pour ouvrir un terminal dessus.
@@ -137,7 +135,7 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
 4. Appliquez les privilèges racines avec `sudo -i`.
 
 5. Si vous acceptez les [termes du contrat de licence logiciel](https://go.microsoft.com/fwlink/?linkid=862492), désinstallez les anciennes versions et installez Docker CE en exécutant la commande suivante :
-        
+
        curl -o /tmp/MCASInstallDocker.sh https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh && chmod +x /tmp/MCASInstallDocker.sh; /tmp/MCASInstallDocker.sh
 
      ![Commande Ubuntu Azure](./media/ubuntu-azure-command.png)
@@ -147,7 +145,7 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
       ![Ubuntu Azure](./media/windows7.png)
 
 7. Exécutez la commande pour déployer le collecteur de journaux.
-     
+
         (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
 
      ![Proxy Ubuntu](./media/ubuntu-proxy.png)
@@ -183,7 +181,7 @@ Vérifiez que les journaux sont chargés sur Cloud App Security et que les rappo
      ![Rapport continu personnalisé](./media/custom-continuous-report.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
-[Résolution des problèmes du déploiement docker Cloud Discovery](troubleshoot-docker.md)
 
-[Les clients Premier peuvent également choisir Cloud App Security directement dans le portail Premier.](https://premier.microsoft.com/)
+[Configuration FTP du collecteur de journaux](log-collector-ftp.md)
 
+[Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier](https://premier.microsoft.com/)
