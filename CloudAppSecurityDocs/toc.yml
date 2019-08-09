@@ -85,8 +85,8 @@
               href: discovery-docker-ubuntu.md
             - name: Docker sur Ubuntu dans Azure
               href: discovery-docker-ubuntu-azure.md
-            - name: Résolution des problèmes du déploiement Docker Cloud Discovery
-              href: troubleshoot-docker.md
+            - name: Configuration FTP du collecteur de journaux
+              href: log-collector-ftp.md
             - name: Collecteur de journaux derrière un proxy
               href: log-collector-proxy.md
             - name: Utiliser l’analyseur de journal personnalisé
@@ -234,8 +234,6 @@
           href: troubleshooting-content-inspection.md
         - name: Résolution des problèmes d’intégration de SIEM
           href: troubleshooting-siem.md
-        - name: Résolution des problèmes du déploiement Docker Cloud Discovery
-          href: troubleshoot-docker.md
         - name: Résolution des problèmes des stratégies
           href: troubleshoot-policies.md
 - name: Ressources
