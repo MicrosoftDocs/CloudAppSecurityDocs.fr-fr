@@ -14,14 +14,14 @@ ms.technology: ''
 ms.assetid: 344f92e2-6b3b-46db-bfd0-3b1016e0bc34
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 965abb1f4fe68a7bfb4fc16818ced07b22dcda3f
-ms.sourcegitcommit: ea1c0f7638eaf0601ae476fea0d40e01bf8a6f4d
+ms.openlocfilehash: 251eec930864bc5baee4b0c7922f5abc8429e867
+ms.sourcegitcommit: 12dfc4c0b8d72aad8cfae9c70f0014ca312b9e4e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67298818"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69037409"
 ---
-# <a name="integrate-with-flow-for-custom-alert-automation"></a>Intégrer avec Flow automatisation d’alerte personnalisée
+# <a name="integrate-with-flow-for-custom-alert-automation"></a>Intégrer avec Flow pour l’automatisation des alertes personnalisée
 
 *S’applique à : Microsoft Cloud App Security*
 
@@ -29,13 +29,13 @@ Vous pouvez intégrer Cloud App Security à [Microsoft Flow](https://docs.micros
 
 ## <a name="prerequisites"></a>Prérequis 
 
- - Vous devez avoir un [plan Microsoft Flow](https://flow.microsoft.com/en-us/pricing) valide.
+ - Vous devez avoir un [plan Microsoft Flow](https://flow.microsoft.com/pricing) valide.
 
 ## <a name="how-it-works"></a>Fonctionnement
 
 Seul, Cloud App Security fournit des options de gouvernance prédéfinies. Il permet notamment de suspendre un utilisateur ou de rendre un fichier privé lors de la définition de stratégies. En créant un playbook dans Microsoft Flow à l’aide du connecteur Cloud App Security, vous pouvez créer des workflows pour activer des options de gouvernance personnalisées pour vos stratégies. Une fois le playbook créé dans Flow, il vous suffit de l’associer à une stratégie dans Cloud App Security pour envoyer des alertes à Flow. Microsoft Flow propose plusieurs connecteurs et conditions pour créer un workflow personnalisé pour votre organisation. 
 
-Le [connecteur de Cloud App Security](https://docs.microsoft.com/connectors/cloudappsecurity/) dans le flux prend en charge automatisée des déclencheurs et les actions. Flow est déclenché automatiquement quand Cloud App Security génère une alerte. Les actions incluent le changement de l’état de l’alerte dans Cloud App Security. 
+Le [connecteur Cloud App Security](https://docs.microsoft.com/connectors/cloudappsecurity/) dans Flow prend en charge le déclencheur et les actions automatisés. Flow est déclenché automatiquement quand Cloud App Security génère une alerte. Les actions incluent le changement de l’état de l’alerte dans Cloud App Security. 
 
 ## <a name="how-to-create-playbooks-with-microsoft-flow"></a>Comment créer des playbooks avec Microsoft Flow
 
