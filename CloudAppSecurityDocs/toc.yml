@@ -35,6 +35,8 @@
       href: use-case-admin-quarantine.md
     - name: Appliquer automatiquement des étiquettes Azure Information Protection
       href: use-case-information-protection.md
+    - name: Automatiser les alertes pour protéger les points de terminaison
+      href: tutorial-flow.md
 - name: Concepts
   items:
     - name: Protéger les applications à l’aide du contrôle d’application par accès conditionnel
@@ -147,8 +149,12 @@
         - name: Gérer les applications OAuth
           href: manage-app-permissions.md
         - name: Configuration de la sécurité
-          href: security-config.md
-        - name: Superviser les applications
+          items:
+            - name: Configuration de la sécurité pour Azure
+              href: security-config.md
+            - name: Configuration de la sécurité pour AWS
+              href: security-config-aws.md
+        - name: Surveiller les applications
           href: monitor-alerts.md
           items:
             - name: Gérer les alertes
