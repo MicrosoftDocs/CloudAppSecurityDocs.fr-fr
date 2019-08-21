@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: 8099d38309703b4258d1b8234537d3b172df52b2
-ms.sourcegitcommit: d35baa4f55a3ab4cd8df478adaf10579a00f603d
+ms.openlocfilehash: 284470013b01b7af96f2e8b0b271b00bf7a7ff4b
+ms.sourcegitcommit: 7eecf2f863c410abe0ba6eafd65777973de011cb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67622463"
+ms.lasthandoff: 08/18/2019
+ms.locfileid: "69573012"
 ---
 # <a name="tutorial-investigate-risky-users"></a>Tutoriel : Examiner des utilisateurs à risque
 
@@ -36,8 +36,7 @@ Ce tutoriel fournit des instructions sur l’utilisation de Cloud App Security p
 > * 3 : [Examiner davantage les utilisateurs](#investigate)
 > * 4 : [Protéger votre organisation](#protect)
 
-
-## Comprendre le score de priorité d’examen <a name ="risk-score"></a>
+## Comprendre le score de priorité d’examen<a name="risk-score"></a>
 
 Le score de priorité d’examen est fourni par Cloud App Security à chaque utilisateur pour vous permettre de savoir quel risque présente un utilisateur par rapport à d’autres utilisateurs de votre organisation.
     

@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: 669dad9c8ee0fc99f523fe43349ce6b5f2044398
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 19b505545afa1c3afea00c69cbe621b860e7f1db
+ms.sourcegitcommit: 7eecf2f863c410abe0ba6eafd65777973de011cb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568960"
+ms.lasthandoff: 08/18/2019
+ms.locfileid: "69573017"
 ---
 # <a name="tutorial-discover-and-manage-shadow-it-in-your-network"></a>Tutoriel : Découvrir et gérer l’informatique fantôme sur votre réseau 
 
@@ -57,7 +57,7 @@ Utilisez ce processus pour déployer la solution Cloud Discovery pour l’inform
 
 Maintenant que Cloud Discovery est en cours d’exécution sur votre réseau, examinez les rapports continus générés et étudiez le [tableau de bord Cloud Discovery](working-with-cloud-discovery-data.md) pour bénéficier d’un aperçu complet des applications utilisées dans votre organisation. Il est judicieux de les examiner par catégorie : vous constaterez souvent que les applications non approuvées sont utilisées à des fins professionnelles légitimes qui ne sont pas couvertes par les applications approuvées. 
 
-2. **Identifier les niveaux de risque de vos applications** : Utilisez le catalogue des applications cloud de Cloud App Security pour analyser dans le détail les risques qu’implique chaque application découverte. Le catalogue des risques de Cloud App Security inclut plus de 16 000 applications, qui sont évaluées selon plus de 70 facteurs de risque. Les facteurs de risque vont des informations générales sur l’application (où se trouve le siège social de l’application, qui en est l’éditeur) aux mesures de sécurité et aux contrôles (prise en charge du chiffrement au repos, existence d’un journal d’audit sur l’activité des utilisateurs). Pour plus d’informations, voir [Utilisation du score de risque](risk-score.md).
+2. **Identifier les niveaux de risque de vos applications** : Utilisez le catalogue des applications cloud de Cloud App Security pour analyser dans le détail les risques qu’implique chaque application découverte. Le catalogue des risques de Cloud App Security inclut plus de 16 000 applications, qui sont évaluées selon plus de 80 facteurs de risque. Les facteurs de risque vont des informations générales sur l’application (où se trouve le siège social de l’application, qui en est l’éditeur) aux mesures de sécurité et aux contrôles (prise en charge du chiffrement au repos, existence d’un journal d’audit sur l’activité des utilisateurs). Pour plus d’informations, voir [Utilisation du score de risque](risk-score.md).
     
    - Dans le portail Cloud App Security, sous **Découvrir**, cliquez sur **Applications découvertes**. Filtrez la liste des applications découvertes en cours d’utilisation dans votre organisation selon les facteurs de risque qui vous intéressent. Par exemple, vous pouvez utiliser les filtres avancés pour trouver toutes les applications avec un score de risque inférieur à 8. 
 
@@ -70,7 +70,7 @@ Maintenant que Cloud Discovery est en cours d’exécution sur votre réseau, ex
    - Vous pouvez explorer une application pour en savoir plus sur sa conformité en cliquant sur le nom de l’application, puis sur l’onglet **Infos** pour afficher les détails sur les facteurs de risque de conformité de l’application.
 
 2. **Analyser l’utilisation** : Maintenant que vous savez si vous voulez que l’application soit ou non utilisée dans votre organisation, vous désirez savoir comment elle est utilisée et par qui. Si elle est uniquement utilisée de manière limitée dans votre organisation, ce n’est peut-être pas grave, mais si son utilisation s’étend, vous souhaiterez peut-être en être averti afin de décider si vous voulez la bloquer.
-    - Dans le portail Cloud App Security, sous **Découvrir**, cliquez sur **Applications découvertes** et descendez dans la hiérarchie en cliquant sur l’application qui vous intéresse. L’onglet **Utilisation** vous permet de savoir combien d’utilisateurs actifs se servent de l’application et la quantité de trafic qu’elle génère. Vous aurez ainsi un premier aperçu assez clair de ce qui se passe avec cette application. Ensuite, si vous souhaitez voir qui, en particulier, utilise l’application, vous pouvez aller plus loin en cliquant sur **Total Active Users (Nombre total d’utilisateurs actifs)**. Cette étape importante peut vous fournir des informations pertinentes. Par exemple, si vous découvrez que tous les utilisateurs d’une application donnée font partie du service Marketing, il est possible qu’il existe un besoin métier pour cette application, et si l’application présente des risques, il peut être judicieux de discuter avec les employés d’une alternative avant de bloquer l’application.
+    - Dans le portail Cloud App Security, sous **Découvrir**, cliquez sur **Applications découvertes** et descendez dans la hiérarchie en cliquant sur l’application qui vous intéresse. L’onglet **Utilisation** vous permet de savoir combien d’utilisateurs actifs se servent de l’application et la quantité de trafic qu’elle génère. Vous aurez ainsi un premier aperçu assez clair de ce qui se passe avec cette application. Ensuite, si vous souhaitez voir qui, en particulier, utilise l’application, vous pouvez aller plus loin en cliquant sur **Total Active Users (Nombre total d’utilisateurs actifs)** . Cette étape importante peut vous fournir des informations pertinentes. Par exemple, si vous découvrez que tous les utilisateurs d’une application donnée font partie du service Marketing, il est possible qu’il existe un besoin métier pour cette application, et si l’application présente des risques, il peut être judicieux de discuter avec les employés d’une alternative avant de bloquer l’application.
 
 4. Utilisez le catalogue d’applications cloud et filtrez les applications qui appartiennent à la même catégorie d’applications. À l’aide des filtres avancés, identifiez la solution conforme aux différents contrôles de sécurité requis pour respecter la stratégie de votre organisation.
 
@@ -78,7 +78,7 @@ Maintenant que Cloud Discovery est en cours d’exécution sur votre réseau, ex
 ### <a name="phase-3-manage-your-apps"></a>Phase 3 : Gérer vos applications
     
 - **Gérer les applications cloud** : Cloud App Security vous aide à gérer l’utilisation des applications dans votre organisation. Une fois que vous avez identifié les différents modèles et comportements utilisés dans votre organisation, vous pouvez créer de nouvelles balises d’application personnalisées afin de classer chaque application en fonction de son état professionnel ou des besoins auxquels elle répond.
-Ces balises peuvent ensuite servir à une surveillance particulière, par exemple pour identifier un trafic élevé vers les applications qui sont marquées comme applications de stockage cloud à risque. Les balises d’application peuvent être gérées sous **Cloud Discovery settings (Paramètres Cloud Discovery)** > **Balises d’application**. Ces balises peuvent ensuite être utilisées pour filtrer le contenu des pages Cloud Discovery et créer des stratégies.
+Ces balises peuvent ensuite servir à une surveillance particulière, par exemple pour identifier un trafic élevé vers les applications qui sont marquées comme applications de stockage cloud à risque. Les balises d’application peuvent être gérées sous **Cloud Discovery settings (Paramètres Cloud Discovery)**  > **Balises d’application**. Ces balises peuvent ensuite être utilisées pour filtrer le contenu des pages Cloud Discovery et créer des stratégies.
 
 - **Supervision continue** : Maintenant que vous avez examiné soigneusement les applications, vous souhaiterez peut-être définir des stratégies qui les surveillent et offrent des fonctionnalités de contrôle lorsque cela est nécessaire.
 

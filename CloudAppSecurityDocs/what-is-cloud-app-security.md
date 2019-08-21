@@ -3,9 +3,9 @@ title: Qu’est-ce que Cloud App Security ?
 description: Cet article décrit Microsoft Cloud App Security et son fonctionnement.
 keywords: ''
 author: ShlomoSagir-MS
-ms.author: ShlomoSagir-MS
+ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 6/17/2019
+ms.date: 8/15/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0271b75da9b9d8e18deb99503e4cfe78660ea704
-ms.sourcegitcommit: b679efee6d54931c6b5f123324b3b4dd791ddca6
+ms.openlocfilehash: bee3eb97503d4ce0da3d7fbe04ea9781d759c5c7
+ms.sourcegitcommit: 7eecf2f863c410abe0ba6eafd65777973de011cb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67157071"
+ms.lasthandoff: 08/18/2019
+ms.locfileid: "69572984"
 ---
 # <a name="microsoft-cloud-app-security-overview"></a>Présentation de Microsoft Cloud App Security
 
@@ -71,7 +71,7 @@ Pour plus d’informations sur Cloud Discovery, voir [Configurer Cloud Discovery
 
 ### <a name="sanctioning-and-unsanctioning-an-app"></a>Approbation et non-approbation d’une application  
 
-Vous pouvez utiliser Cloud App Security pour approuver/ne pas approuver des applications dans votre organisation en utilisant le *catalogue d’applications cloud*. L’équipe d’analystes Microsoft a un catalogue fourni et en constante évolution de plus de 16 000 applications cloud, classées et évaluées selon les standards du secteur. Vous pouvez utiliser le catalogue d’applications cloud pour évaluer les risques pour vos applications cloud selon les certifications réglementaires, les normes du secteur et les bonnes pratiques. Vous pouvez ensuite personnaliser les scores et les pondérations des différents paramètres selon les besoins de votre organisation. En fonction de ces scores, Cloud App Security vous permet de connaître l’indice de risque d’une application. L’indice se base sur plus de 70 facteurs de risque susceptibles d’affecter votre environnement.  
+Vous pouvez utiliser Cloud App Security pour approuver/ne pas approuver des applications dans votre organisation en utilisant le *catalogue d’applications cloud*. L’équipe d’analystes Microsoft a un catalogue fourni et en constante évolution de plus de 16 000 applications cloud, classées et évaluées selon les standards du secteur. Vous pouvez utiliser le catalogue d’applications cloud pour évaluer les risques pour vos applications cloud selon les certifications réglementaires, les normes du secteur et les bonnes pratiques. Vous pouvez ensuite personnaliser les scores et les pondérations des différents paramètres selon les besoins de votre organisation. En fonction de ces scores, Cloud App Security vous permet de connaître l’indice de risque d’une application. Le scoring est basé sur plus de 80 facteurs de risque susceptibles d’affecter votre environnement.  
 
 ### <a name="app-connectors"></a>Connecteurs d’application
 
@@ -90,7 +90,7 @@ Le contrôle d’application par accès conditionnel de Microsoft Cloud App Secu
 - Obtenir une visibilité sur les points de terminaison non protégés afin de surveiller les opérations réalisées sur les appareils non gérés
 - Contrôler l’accès depuis des réseaux hors entreprise ou des adresses IP à risque
 
-### <a name="policy-control"></a>Contrôle des stratégies  
+### <a name="policy-control"></a>Contrôle de stratégie  
 
 Vous pouvez utiliser des stratégies pour définir le comportement de vos utilisateurs dans le cloud. Utilisez des stratégies pour détecter des comportements à risques, des violations, ou des points de données et des activités suspectes dans votre environnement cloud. Si nécessaire, vous pouvez utiliser des stratégies pour intégrer des processus de correction de façon à réduire complètement les risques. Les types de stratégies sont en corrélation avec les différents types d’informations que vous voulez collecter sur votre environnement cloud et les types d’actions correctives que vous pouvez entreprendre.  
 
