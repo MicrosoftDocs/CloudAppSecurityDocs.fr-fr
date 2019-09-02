@@ -5,87 +5,100 @@ keywords: ''
 author: ShlomoSagir-MS
 ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 7/18/2019
+ms.date: 9/1/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 7b591250343b97534fc4dba6b3322289b1adb4ce
-ms.sourcegitcommit: d1eb8ccf09840c659ba7170a2b92cd62d9d97a02
+ms.openlocfilehash: 1b467600661209d299ca5f5f4079a572aa3016c2
+ms.sourcegitcommit: 0b78b13bc163bfcd6f2ae13b1f57acee05e5b423
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68496724"
+ms.lasthandoff: 09/01/2019
+ms.locfileid: "70208907"
 ---
-# <a name="placeholder-article"></a>Article d’espace réservé
-<!--
-# Connect Workday to Microsoft Cloud App Security
+# <a name="connect-workday-to-microsoft-cloud-app-security"></a>Connecter un jour ouvré à Microsoft Cloud App Security
 
-*Applies to: Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
-This article provides instructions for connecting Microsoft Cloud App Security to your existing Workday account using the app connector API. This connection gives you visibility into and control over Workday use.
+Cet article fournit des instructions pour connecter Microsoft Cloud App Security à votre compte de jour de travail existant à l’aide de l’API du connecteur d’applications. Cette connexion vous donne une visibilité et un contrôle sur l’utilisation des jours de travail.
 
-## How to connect Workday to Cloud App Security using OAuth
+## <a name="prerequisites"></a>Prérequis
 
-1. Sign in with an Admin account to your Workday account.
+Le compte de jour de travail utilisé pour la connexion à Cloud App Security doit être membre d’un groupe de sécurité pour lequel les domaines suivants sont activés:
 
-1. Search for "Edit tenant setup – system", and under **User Activity Logging**, select **Enable User Activity Logging**.
+- Administration de la sécurité du système
+- Audit système
+- Personnel-données de travail: Public Worker Reports
 
-    ![Screenshot of allowing user activity logging](media/connect-workday-enable-logging.png)
+Nous vous recommandons d’utiliser un utilisateur système d’intégration de jours ouvrables.
 
-1. Search for "Register API Client" and select **Register API Client – Task**.
+## <a name="how-to-connect-workday-to-cloud-app-security-using-oauth"></a>Connexion de la journée de travail à Cloud App Security à l’aide d’OAuth
 
-1. On the **Register API Client** page, fill out the following information, and then click **OK**.
+1. Connectez-vous avec un compte d’administrateur à votre compte de jours ouvrés.
 
-    | Field name | Value |
+1. Recherchez «modifier le paramétrage du locataire – système», puis, sous **Journal d’activité utilisateur**, sélectionnez Activer la journalisation de l' **activité des utilisateurs**.
+
+    ![Capture d’écran de l’autorisation de la journalisation des activités des utilisateurs](media/connect-workday-enable-logging.png)
+
+1. Recherchez «modifier le paramétrage du locataire – sécurité», puis sous **paramètres oauth 2,0**, sélectionnez **clients OAuth 2,0 activés**.
+
+1. Recherchez «Register API client» et sélectionnez **Register API client-Task**.
+
+1. Dans la page **inscrire le client** de l’API, renseignez les informations suivantes, puis cliquez sur **OK**.
+
+    | Nom du champ | Valeur |
     | ---- | ---- |
-    | Client Name | Microsoft Cloud App Security |
-    | Client Grant Type | Authorization Code Grant |
-    | Access Token Type | Bearer |
-    | Redirection URI | https://portal.cloudappsecurity.com/api/oauth/connect |
-    | OAuth2 Scopes | **Staffing** and **System** |
-    | Scope (Functional Areas) | **Staffing** and **System** |
+    | Nom du client | Microsoft Cloud App Security |
+    | Type d’octroi client | Octroi de code d’autorisation |
+    | Type de jeton d’accès | Porteur |
+    | URI de redirection | `https://portal.cloudappsecurity.com/api/oauth/connect` |
+    | Étendues OAuth2 | **Personnel** et **système** |
+    | Étendue (zones fonctionnelles) | **Personnel** et **système** |
 
-    ![Screenshot of registering API client](media/connect-workday-register-api-client.png)
+    ![Capture d’écran de l’inscription du client API](media/connect-workday-register-api-client.png)
 
-1. Once registered, make a note for the following parameters, and then click **Done**.
+1. Une fois inscrit, prenez note des paramètres suivants, puis cliquez sur **terminé**.
 
-    - Client ID
-    - Client Secret
-    - Workday REST API Endpoint
-    - Token Endpoint
-    - Authorization Endpoint
+    - ID client
+    - Clé secrète client
+    - Point de terminaison de l’API REST de travail
+    - Point de terminaison de jeton
+    - Point de terminaison d’autorisation
 
-    ![Screenshot of confirming registration of API client](media/connect-workday-register-api-client-confirm.png)
+    ![Capture d’écran de confirmation de l’inscription de l’API client](media/connect-workday-register-api-client-confirm.png)
 
-1. In the Cloud App Security portal, click **Investigate** and then click **Connected Apps**.
+1. Dans le portail Cloud App Security, cliquez sur **examiner** , puis sur **applications connectées**.
 
-1. In the **App connectors** page, click the plus button and then **Workday**.
+1. Dans la page **connecteurs d’application** , cliquez sur le bouton plus, puis sur jour de **travail**.
 
-    ![Screenshot of adding app connector](media/connect-workday-add-app.png)
+    ![Capture d’écran de l’ajout d’un connecteur d’application](media/connect-workday-add-app.png)
 
-1. In the popup, add your instance name and then click **Connect Workday**.
+1. Dans la fenêtre contextuelle, ajoutez le nom de votre instance, puis cliquez sur **connecter un jour ouvré**.
 
-    ![Screenshot of adding instance name](media/connect-workday-add-app-connect.png)
+    ![Capture d’écran de l’ajout d’un nom d’instance](media/connect-workday-add-app-connect.png)
 
-1. On the next page, fill out the details with the information you noted earlier, and then click **Connect in Workday**.
+1. Sur la page suivante, renseignez les détails avec les informations que vous avez notées précédemment, puis cliquez sur **se connecter dans les jours ouvrés**.
 
-    ![Screenshot of filling out app details](media/connect-workday-add-app-connect-details.png)
+    ![Capture d’écran de remplissage des détails de l’application](media/connect-workday-add-app-connect-details.png)
 
-1. In Workday, a popup will ask you if you want to allow Cloud App Security access to your Workday account. To proceed, click **Allow**.
+1. Dans la journée de travail, une fenêtre contextuelle vous demande si vous souhaitez autoriser Cloud App Security accès à votre compte de jours ouvrés. Pour continuer, cliquez sur **Autoriser**.
 
-    ![Screenshot of authorizing access to app](media/connect-workday-add-app-allow.png)
+    ![Capture d’écran de l’autorisation d’accès à l’application](media/connect-workday-add-app-allow.png)
 
-1. Back in the Cloud App Security console, you should see a message that Workday was successfully connected. Make sure the connection succeeded by clicking **Test API**.
+1. De retour dans le portail Cloud App Security, vous devriez voir un message indiquant que la journée de travail a été correctement connectée. Vérifiez la connexion en cliquant sur **Test API** (Tester l’API).
 
-    Testing may take a couple of minutes. After receiving a success notice, click **Close**.
+    Le test peut prendre quelques minutes. Une fois averti que la connexion a réussi, cliquez sur **Fermer**.
 
-## Next steps 
-[Control cloud apps with policies](control-cloud-apps-with-policies.md)   
+> [!NOTE]
+> Après la connexion de la journée de travail, vous recevrez des événements pendant sept jours avant la connexion.
 
-[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)-->
+## <a name="next-steps"></a>Étapes suivantes
+
+[Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)
+
+[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)

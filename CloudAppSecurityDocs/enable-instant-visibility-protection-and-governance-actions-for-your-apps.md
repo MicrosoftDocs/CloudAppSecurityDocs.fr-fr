@@ -5,7 +5,7 @@ keywords: ''
 author: ShlomoSagir-MS
 ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 8/26/2019
+ms.date: 9/1/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5d6b659fd25e17e2c3e4ac22749057a9e2ec70ac
-ms.sourcegitcommit: 4179e4ad0fbabf08a24a176bbe21cad1f8cc35da
+ms.openlocfilehash: 3c5847c321712b8dfb61aae13521dab1c4b17ce3
+ms.sourcegitcommit: 0b78b13bc163bfcd6f2ae13b1f57acee05e5b423
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2019
-ms.locfileid: "70019480"
+ms.lasthandoff: 09/01/2019
+ms.locfileid: "70208832"
 ---
 # <a name="connect-apps"></a>Connecter des applications
 
@@ -108,8 +108,7 @@ Pour utiliser des connecteurs d’applications, vous devez vérifier que vous av
 | Salesforce | | Admin |
 | ServiceNow | Eureka et au-dessus | Rôle admin + RestAPI |
 | WebEx | | Admin + conformité administrateur |
-
-<!--| Workday | | Admin |-->
+| Workday | | Consultez les [conditions préalables Connect](connect-workday-to-microsoft-cloud-app-security.md#prerequisites) de la journée de travail |
 
 ### <a name="expressroute"></a>ExpressRoute
 

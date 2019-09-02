@@ -2,25 +2,24 @@
 title: Contrôler quelles applications cloud tierces OAuth obtiennent des autorisations - Cloud App Security | Microsoft Docs
 description: Cet article fournit des informations sur la manière dont vous pouvez contrôler, bloquer et autoriser les applications OAuth tierces.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 04/15/2019
+author: ShlomoSagir-MS
+ms.author: shsagir
+manager: ShlomoSagir-MS
+ms.date: 9/1/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: 137e0630-5440-4c49-bfe4-48bbc64575e2
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9f6242c6c378805c91c1707f9e22d1e48008d6de
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: d65c332cbf464a17fc3919d1a08fd7ff7a7a9493
+ms.sourcegitcommit: 0b78b13bc163bfcd6f2ae13b1f57acee05e5b423
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568524"
+ms.lasthandoff: 09/01/2019
+ms.locfileid: "70208887"
 ---
 # <a name="manage-oauth-apps"></a>Gérer les applications OAuth
 
@@ -28,7 +27,7 @@ ms.locfileid: "65568524"
 
 Les applications de productivité tierces installées par des utilisateurs professionnels dans votre organisation ont souvent besoin d’une autorisation pour pouvoir accéder aux informations et données utilisateur, et se connecter au nom de l’utilisateur à d’autres applications cloud, comme Office 365, G Suite et Salesforce. Lorsque les utilisateurs installent ces applications, ils cliquent souvent sur Accepter sans examiner attentivement les détails du message d’invite, notamment concernant l’octroi d’autorisations à l’application. Ce problème est d’autant plus complexe que le service informatique ne dispose pas toujours d’informations suffisantes pour mettre en balance le risque de sécurité d’une application et les avantages qu’elle offre en termes de productivité. Dans la mesure où l’acceptation des autorisations d’applications tierces représente un risque de sécurité potentiel pour votre organisation, la surveillance des autorisations d’applications accordées par vos utilisateurs, vous donne la visibilité et le contrôle nécessaires pour protéger vos utilisateurs et vos applications. Les autorisations d’applications Microsoft Cloud App Security vous permettent de savoir quelles applications OAuth installées par l’utilisateur ont accès aux données Office 365, G Suite et Salesforce. Cloud App Security vous indique de quelles autorisations les applications disposent, et quels utilisateurs ont accordé à ces applications l’accès à leurs comptes Office 365, G Suite et Salesforce. Avec les autorisations d’applications, vous décidez à quelles applications vous autorisez les utilisateurs à accéder, et quelles autres vous voulez exclure.
 
-Pour plus d’informations sur l’examen des applications Oauth, consultez 
+Pour plus d’informations sur l’examen des applications OAuth, consultez [examiner les applications OAuth risquées](investigate-risky-oauth.md).
 
 ## <a name="working-with-the-oauth-apps-page"></a>Utilisation de la page Applications OAuth
 
@@ -38,8 +37,7 @@ Pour accéder à l’onglet OAuth
 
 Dans le portail Cloud App Security, cliquez sur **Examiner**, puis sur **Applications OAuth**.
 
-
- ![autorisations d’applications](./media/app-permissions.png)
+![autorisations d’applications](./media/app-permissions.png)
 
 La page Applications OAuth fournit les informations suivantes sur chaque application OAuth à laquelle des autorisations ont été accordées :
 
@@ -58,44 +56,40 @@ La page Applications OAuth fournit les informations suivantes sur chaque applica
 |Éditeur|Nom du fournisseur qui fournit l’application.|Office 365|
 |Dernière utilisation|Date la plus récente à laquelle cette application a été utilisée par une personne de votre organisation.|Salesforce|
 
-
 ## <a name="ban-or-approve-an-app"></a>Exclure ou approuver une application
 
 1. Dans la page **Applications OAuth**, cliquez sur l’application pour ouvrir le **tiroir Application** et afficher plus d’informations sur l’application et les autorisations qui lui ont été accordées.
-   
-   - Cliquez sur le lien **Autorisations** pour afficher la liste complète des autorisations qui ont été accordées à l’application. 
-   - Sous **Utilisation communautaire**, vous pouvez afficher la fréquence d’utilisation de cette application dans d’autres organisations.  
+
+   - Cliquez sur le lien **Autorisations** pour afficher la liste complète des autorisations qui ont été accordées à l’application.
+   - Sous **Utilisation communautaire**, vous pouvez afficher la fréquence d’utilisation de cette application dans d’autres organisations.
    - Cliquez sur le lien **Activité associée** pour afficher les activités qui sont listées dans le journal de gouvernance lié à cette application.
 
 2. Pour exclure l’application, cliquez sur l’icône d’exclusion à l’extrémité de la ligne de l’application dans le tableau.
-   
-     ![icône d’exclusion de l’application](./media/ban-app-icon.png) 
 
-    - Vous pouvez choisir de signaler aux utilisateurs que l’application qu’ils ont installée et autorisée a été interdite. La notification signale aux utilisateurs que l’application sera désactivée et qu’ils n’auront pas accès à l’application connectée. Si vous ne souhaitez pas les en informer, désélectionnez **Avertir les utilisateurs qui ont accordé l’accès à cette application interdite** dans la boîte de dialogue. 
+     ![icône d’exclusion de l’application](./media/ban-app-icon.png)
+
+    - Vous pouvez choisir de signaler aux utilisateurs que l’application qu’ils ont installée et autorisée a été interdite. La notification signale aux utilisateurs que l’application sera désactivée et qu’ils n’auront pas accès à l’application connectée. Si vous ne souhaitez pas les en informer, désélectionnez **Avertir les utilisateurs qui ont accordé l’accès à cette application interdite** dans la boîte de dialogue.
     - Nous vous recommandons d’avertir les utilisateurs que leur application est sur le point d’être exclue.
 
       ![exclure l’application](./media/ban-app.png)
 
 3. Tapez le message à envoyer aux utilisateurs de l’application dans la zone Entrez un message de notification personnalisé. Cliquez sur **Exclure l’application** pour envoyer l’e-mail et exclure l’application des utilisateurs de votre application connectée.
 
+4. Pour approuver l’application, cliquez sur l’icône d’approbation à l’extrémité de la ligne dans le tableau.
 
-4. Pour approuver l’application, cliquez sur l’icône d’approbation à l’extrémité de la ligne dans le tableau. 
-
-   ![approuver l’application](./media/approve-app.png) 
+   ![approuver l’application](./media/approve-app.png)
 
    - L’icône prend la couleur verte et l’application est approuvée pour tous les utilisateurs de votre application connectée.
    - Quand vous marquez une application comme approuvée, il n’y a aucune incidence sur l’utilisateur final. Ce changement de couleur vous aide simplement à identifier les applications que vous avez approuvées, pour les distinguer de celles que vous n’avez pas encore vérifiées.
 
-
-
 ## <a name="revoke-app-and-notify-user"></a>Révoquer l’application et avertir l’utilisateur
 
-Pour G Suite et Salesforce, vous pouvez révoquer l’autorisation d’une application ou avertir l’utilisateur qu’il doit la changer. Lorsque vous révoquez l’autorisation, il supprime toutes les autorisations qui ont été accordées à l’application sous « Applications d’entreprise » dans Azure AD.
+Pour G Suite et Salesforce, vous pouvez révoquer l’autorisation d’une application ou avertir l’utilisateur qu’il doit la changer. Quand vous révoquez l’autorisation, elle supprime toutes les autorisations qui ont été accordées à l’application sous «applications d’entreprise» dans Azure AD.
 
 1. Dans la page **Applications OAuth**, cliquez sur les points de suspension à la fin de la ligne de l’application et sélectionnez **Notifier l’utilisateur**. Par défaut, l’utilisateur sera informé comme suit : *Vous avez autorisé l’application à accéder à votre compte G Suite. Cette application est en conflit avec la stratégie de sécurité de votre organisation. Vous devez fournir ou révoquer les autorisations que vous avez attribuées à cette application dans votre compte G Suite. Pour révoquer l’accès à l’application, accédez à : https://security.google.com/settings/security/permissions?hl=en&pli=1 Sélectionnez l’application et cliquez sur « Révoquer l’accès » dans la barre de menu de droite.* Vous pouvez personnaliser le message envoyé.
-2. Vous pouvez également révoquer des autorisations d’utilisation de l’application pour l’utilisateur. Cliquez sur l’icône à la fin de la ligne de l’application dans le tableau et sélectionnez **Révoquer l’application**. 
+2. Vous pouvez également révoquer des autorisations d’utilisation de l’application pour l’utilisateur. Cliquez sur l’icône à la fin de la ligne de l’application dans le tableau et sélectionnez **Révoquer l’application**.
 
-   ![révoquer l’application](./media/revoke-app.png)
+    ![révoquer l’application](./media/revoke-app.png)
 
 ## <a name="query-oauth-apps"></a>Interroger des applications OAuth
 
@@ -105,16 +99,29 @@ Vous pouvez interroger des applications OAuth dans la vue **De base** ou la vue 
 
 - Cliquez sur l’icône **Supprimer un filtre** en regard d’un filtre pour le supprimer.
 
+## <a name="oauth-app-auditing"></a>Audit d’application OAuth
+
+Cloud App Security audite toutes les activités d’autorisation OAuth pour vous fournir une surveillance et une investigation complètes sur les activités effectuées. Vous pouvez également exporter les détails des utilisateurs qui ont autorisé une application OAuth spécifique, en fournissant des informations supplémentaires sur les utilisateurs, que vous pouvez ensuite utiliser pour une analyse plus poussée.
+
+Pour exporter le journal, procédez comme suit:
+
+1. Sur la page **applications OAuth** , sur la ligne où l’application correspondante s’affiche, sous **autorisé par**, cliquez sur le lien indiquant le nombre d’utilisateurs qui ont autorisé l’application.
+
+1. Dans la fenêtre contextuelle, cliquez sur **Exporter**.
+
+    ![Capture d’écran montrant l’exportation de l’audit d’application OAuth](media/oauth-export-users.png)
+
 ## <a name="send-feedback"></a>Envoyer des commentaires
 
 Vous pouvez envoyer des commentaires à l’équipe Cloud App Security pour nous indiquer s’il existe une application OAuth découverte dans votre organisation qui semble malveillante. Cette fonctionnalité vous permet de faire partie de notre communauté de sécurité et d’améliorer l’analyse et le score de risque de l’application OAuth.
-1. Dans la page **Applications OAuth**, cliquez sur les points de suspension à la fin de la ligne de l’application et sélectionnez **Signaler l’application**.  
 
-   ![signaler l’application](./media/report-app.png)
+1. Dans la page **Applications OAuth**, cliquez sur les points de suspension à la fin de la ligne de l’application et sélectionnez **Signaler l’application**.
+
+    ![signaler l’application](./media/report-app.png)
 2. Dans l’écran **Signaler cette application**, vous pouvez choisir de signaler l’application comme étant malveillante ou de signaler tout autre problème lié à la façon dont Cloud App Security perçoit l’application. Par exemple, vous pourriez utiliser **Éditeur incorrect**, **Autorisations incorrectes** ou **Autre**. Les données que vous envoyez permettent de mettre à jour le score de risque de l’application et d’autres données analytiques sur l’application.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)   
+[Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)
 
-[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)  
+[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)

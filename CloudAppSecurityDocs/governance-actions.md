@@ -5,102 +5,97 @@ keywords: ''
 author: ShlomoSagir-MS
 ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 7/7/2019
+ms.date: 9/1/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b87b67df8e975bb6bf48d693aa11fcdf1018336f
-ms.sourcegitcommit: 0249f6e4a51240e6e37bc67430304e5a261e340a
+ms.openlocfilehash: f23494744e629990f6bcc68e1c22fb73b2db6033
+ms.sourcegitcommit: a2dd3bcc00d2bd1d2e4c3fd9f8c0fd7ac4a25091
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2019
-ms.locfileid: "67610888"
+ms.lasthandoff: 09/01/2019
+ms.locfileid: "70206668"
 ---
 # <a name="governing-connected-apps"></a>Gouvernance des applications connectées
 
 *S’applique à : Microsoft Cloud App Security*
 
-La gouvernance vous permet de contrôler en temps réel les actions des utilisateurs dans les applications. Pour les applications connectées, vous pouvez appliquer des actions de gouvernance aux fichiers ou aux activités. Les actions de gouvernance sont des actions intégrées que vous pouvez exécuter sur des fichiers ou des activités directement à partir de Microsoft Cloud App Security. Les actions de gouvernance contrôlent en temps réel les actions de vos utilisateurs dans les applications connectées. 
+La gouvernance vous permet de contrôler en temps réel les actions des utilisateurs dans les applications. Pour les applications connectées, vous pouvez appliquer des actions de gouvernance aux fichiers ou aux activités. Les actions de gouvernance sont des actions intégrées que vous pouvez exécuter sur des fichiers ou des activités directement à partir de Microsoft Cloud App Security. Les actions de gouvernance contrôlent en temps réel les actions de vos utilisateurs dans les applications connectées.
 
 > [!NOTE]
-> Lorsque Microsoft Cloud App Security tente d’exécuter une action de gouvernance sur un fichier, mais échoue parce que le fichier est verrouillé, il retente automatiquement l’action de gouvernance. 
+> Lorsque Microsoft Cloud App Security tente d’exécuter une action de gouvernance sur un fichier, mais échoue parce que le fichier est verrouillé, il retente automatiquement l’action de gouvernance.
 
-
-## <a name="file-governance-actions"></a>Actions de gouvernance sur des fichiers 
+## <a name="file-governance-actions"></a>Actions de gouvernance sur des fichiers
 
 Vous pouvez effectuer les actions de gouvernance suivantes sur un fichier ou un utilisateur spécifique, ou à partir d’une stratégie donnée.
 
-- **Notifications :** 
+- **Notifications :**
 
-     - **Alertes** - Les alertes peuvent se déclencher dans le système et se propager par e-mail et SMS, selon leur niveau de gravité. 
+  - **Alertes** - Les alertes peuvent se déclencher dans le système et se propager par e-mail et SMS, selon leur niveau de gravité.
 
-     - **Notification par e-mail à l’utilisateur** - Les e-mails sont personnalisables et envoyés à tous les propriétaires de fichiers en situation de non-conformité. 
+  - **Notification par e-mail à l’utilisateur** - Les e-mails sont personnalisables et envoyés à tous les propriétaires de fichiers en situation de non-conformité.
 
-     - **Notifier des utilisateurs spécifiques** - Liste spécifique d’adresses e-mail qui reçoivent ces notifications. 
+  - **Notifier des utilisateurs spécifiques** - Liste spécifique d’adresses e-mail qui reçoivent ces notifications.
 
-     - **Notifier le dernier éditeur du fichier** - Envoyez des notifications à la dernière personne qui a modifié le fichier. 
+  - **Notifier le dernier éditeur du fichier** - Envoyez des notifications à la dernière personne qui a modifié le fichier.
 
-- **Actions de gouvernance dans les applications** - Des actions précises peuvent être appliquées par application. Ces actions spécifiques varient selon la terminologie de l’application. 
+- **Actions de gouvernance dans les applications** - Des actions précises peuvent être appliquées par application. Ces actions spécifiques varient selon la terminologie de l’application.
 
-     
-     - **Étiquetage**
-         - **Appliquer une étiquette** – Capacité à ajouter une étiquette de classification Azure Information Protection.
-         - **Supprimer une étiquette** – Capacité à supprimer une étiquette de classification Azure Information Protection.
-     - **Modifier le partage** 
+  - **Étiquetage**
+    - **Appliquer une étiquette** – Capacité à ajouter une étiquette de classification Azure Information Protection.
+    - **Supprimer une étiquette** – Capacité à supprimer une étiquette de classification Azure Information Protection.
+  - **Modifier le partage**
 
-        - **Supprimer le partage public** – Autorisez l’accès uniquement à des collaborateurs désignés, par exemple : Supprimez l’accès public à G Suite, et supprimez le lien partagé direct pour Box. 
+    - **Supprimer le partage public** – Autorisez l’accès uniquement à des collaborateurs désignés, par exemple : Supprimez l’accès public à G Suite, et supprimez le lien partagé direct pour Box.
 
-       - **Supprimer les utilisateurs externes** - Autorisez l’accès uniquement aux utilisateurs de l’entreprise. 
+    - **Supprimer les utilisateurs externes** - Autorisez l’accès uniquement aux utilisateurs de l’entreprise.
 
-       - **Rendre privé** - Seul le propriétaire peut accéder au fichier, tous les partages sont supprimés. 
+    - **Rendre privé** - Seul le propriétaire peut accéder au fichier, tous les partages sont supprimés.
 
-       - **Supprimer un collaborateur** - Supprimez un collaborateur spécifique du fichier. 
+    - **Supprimer un collaborateur** - Supprimez un collaborateur spécifique du fichier.
 
-       - **Réduire l’accès public** - Définissez les fichiers publiquement disponibles comme étant accessibles uniquement avec un lien partagé. (Google)
-        
-       - **Faire expirer le lien partagé** – Capacité à définir la date d’expiration d’un lien partagé, après laquelle il ne sera plus actif. (Box)
+    - **Réduire l’accès public** - Définissez les fichiers publiquement disponibles comme étant accessibles uniquement avec un lien partagé. (Google)
 
-       - **Modifier le niveau d’accès du lien de partage** – Capacité à modifier le niveau d’accès du lien partagé (entreprise uniquement, collaborateurs uniquement ou public). (Box)
+    - **Faire expirer le lien partagé** – Capacité à définir la date d’expiration d’un lien partagé, après laquelle il ne sera plus actif. (Box)
 
-  - **Quarantaine** 
+    - **Modifier le niveau d’accès du lien de partage** – Capacité à modifier le niveau d’accès du lien partagé (entreprise uniquement, collaborateurs uniquement ou public). (Box)
 
-       - **Mettre en quarantaine utilisateur** - Autorisez le libre-service en déplaçant le fichier vers un dossier de quarantaine contrôlé par l’utilisateur 
+  - **Quarantaine**
 
-       - **Mettre en quarantaine administrateur** - Le fichier est placé en quarantaine sur le lecteur de l’administrateur, ce dernier devant l’approuver. 
+    - **Mettre en quarantaine utilisateur** - Autorisez le libre-service en déplaçant le fichier vers un dossier de quarantaine contrôlé par l’utilisateur
+
+    - **Mettre en quarantaine administrateur** - Le fichier est placé en quarantaine sur le lecteur de l’administrateur, ce dernier devant l’approuver.
 
   - **Hériter des autorisations du parent** - Cette action de gouvernance vous permet de supprimer un ensemble d’autorisations spécifiques pour un fichier ou un dossier dans Office 365. Rétablissez ensuite les autorisations définies pour le dossier parent.
 
-  - **Mettre à la corbeille** - Déplacez le fichier vers le dossier de corbeille. (Box, Dropbox, Google lecteur, OneDrive, SharePoint)
+  - **Mettre à la corbeille** - Déplacez le fichier vers le dossier de corbeille. (Box, Dropbox, Google Drive, OneDrive, SharePoint)
 
-   ![policy_create alerts](./media/policy_create-alerts.png "policy_create alerts") 
+   ![policy_create alerts](./media/policy_create-alerts.png "policy_create alerts")
 
-
-## <a name="activity-governance-actions"></a>Actions de gouvernance des activités 
+## <a name="activity-governance-actions"></a>Actions de gouvernance des activités
 
 - **Notifications**
 
-    - **Alertes** - Les alertes peuvent se déclencher dans le système et se propager par e-mail et SMS, selon leur niveau de gravité. 
+  - **Alertes** - Les alertes peuvent se déclencher dans le système et se propager par e-mail et SMS, selon leur niveau de gravité.
 
-    - **Notification par e-mail à l’utilisateur** - Les e-mails sont personnalisables et envoyés à tous les propriétaires de fichiers en situation de non-conformité. 
+  - **Notification par e-mail à l’utilisateur** - Les e-mails sont personnalisables et envoyés à tous les propriétaires de fichiers en situation de non-conformité.
 
-    - **Notifier d’autres utilisateurs** - Liste spécifique d’adresses e-mail qui reçoivent ces notifications. 
+  - **Notifier d’autres utilisateurs** - Liste spécifique d’adresses e-mail qui reçoivent ces notifications.
 
-- **Actions de gouvernance dans les applications** - Des actions précises peuvent être appliquées par application. Ces actions spécifiques varient selon la terminologie de l’application. 
+- **Actions de gouvernance dans les applications** - Des actions précises peuvent être appliquées par application. Ces actions spécifiques varient selon la terminologie de l’application.
 
-    - **Suspendre l’utilisateur** - Excluez temporairement l’utilisateur de l’application. 
-      > [!NOTE] 
-      > Si votre Azure Active Directory est défini pour se synchroniser automatiquement avec les utilisateurs de votre environnement local Active Directory, les paramètres de l’environnement local remplacent les paramètres Azure AD et cette action de gouvernance est rétablie. 
+  - **Suspendre l’utilisateur** - Excluez temporairement l’utilisateur de l’application.
+    > [!NOTE]
+    > Si votre Azure Active Directory est défini pour se synchroniser automatiquement avec les utilisateurs de votre environnement local Active Directory, les paramètres de l’environnement local remplacent les paramètres Azure AD et cette action de gouvernance est rétablie.
 
-    - **Demander à l’utilisateur de se reconnecter** - Déconnectez l’utilisateur et demandez-lui de se reconnecter. 
+  - **Demander à l’utilisateur de se reconnecter** - Déconnectez l’utilisateur et demandez-lui de se reconnecter.
 
-    ![Actions de gouvernance des stratégies d’activité Cloud App Security](./media/activity-policy-ref6.png "stratégie d’activité ref6") 
-
+  ![Actions de gouvernance des stratégies d’activité Cloud App Security](./media/activity-policy-ref6.png "stratégie d’activité ref6")
 
 ## <a name="governance-conflicts"></a>Conflits de gouvernance
 
@@ -114,22 +109,22 @@ Si vous créez plusieurs stratégies, il peut arriver que les actions de gouvern
 
 ### <a name="conflicts-in-user-sync"></a>Conflits de synchronisation d’utilisateur
 
-- Si votre annuaire Azure Active Directory est défini pour se synchroniser automatiquement avec les utilisateurs de votre environnement local Active Directory, les paramètres de l’environnement local remplacent les paramètres Azure AD et cette action de gouvernance est rétablie. 
+- Si votre annuaire Azure Active Directory est défini pour se synchroniser automatiquement avec les utilisateurs de votre environnement local Active Directory, les paramètres de l’environnement local remplacent les paramètres Azure AD et cette action de gouvernance est rétablie.
 
 ## <a name="governance-log"></a>Journal de gouvernance
-Le journal de gouvernance fournit un enregistrement de l’état de chaque tâche que Cloud App Security doit exécuter, dont les tâches manuelles et automatiques. Ces tâches incluent celles que vous définissez dans les stratégies, les actions de gouvernance que vous définissez sur des fichiers et des utilisateurs ainsi que toute autre action que Cloud App Security doit effectuer. Le journal de gouvernance fournit également des informations sur la réussite ou l’échec de ces actions. Vous pouvez choisir de retenter ou de rétablir certaines des actions de gouvernance à partir du journal de gouvernance. 
+
+Le journal de gouvernance fournit un enregistrement de l’état de chaque tâche que Cloud App Security doit exécuter, dont les tâches manuelles et automatiques. Ces tâches incluent celles que vous définissez dans les stratégies, les actions de gouvernance que vous définissez sur des fichiers et des utilisateurs ainsi que toute autre action que Cloud App Security doit effectuer. Le journal de gouvernance fournit également des informations sur la réussite ou l’échec de ces actions. Vous pouvez choisir de retenter ou de rétablir certaines des actions de gouvernance à partir du journal de gouvernance.
 
 Le tableau suivant contient la liste complète des actions que le portail Cloud App Security vous permet d’effectuer. Ces actions sont activées à divers emplacements de la console décrits dans la colonne **Emplacement**. Chaque action de gouvernance effectuée est répertoriée dans le journal de gouvernance.
 Pour plus d’informations sur la façon dont les actions de gouvernance sont traitées en cas de conflits de stratégies, consultez [Conflits de stratégies](control-cloud-apps-with-policies.md).
 
-
-|<strong>Emplacement</strong> | <strong>Type d’objet cible</strong> | <strong>Action de gouvernance</strong> |<strong>Description</strong>| <strong>Connecteurs associés</strong>|
+| Lieu | Type d’objet cible | Action de gouvernance |Description| Connecteurs associés|
 |-------------------|---------|-----|--------|-------|
 |Comptes |File |Supprimer les collaborations de l’utilisateur | Supprime toutes les collaborations d’un utilisateur spécifique pour tous les fichiers - utile lorsque des personnes quittent l’entreprise. |Box, G Suite|
 |Comptes | Compte | Réhabiliter l’utilisateur |Réhabilite l’utilisateur |G Suite, Box, Office, Salesforce|
 |Comptes | Compte |Paramètres de compte | Vous permet d’accéder à la page de paramètres de compte dans une application donnée (par exemple, dans Salesforce). | Toutes les applications. Les paramètres de One Drive et SharePoint sont configurés dans Office. |
 |Comptes |File |Transférer la possession de tous les fichiers | Dans un compte, vous transférez les fichiers d’un utilisateur vers un nouveau propriétaire que vous sélectionnez. L’ancien propriétaire devient éditeur et ne peut plus changer les paramètres de partage. Le nouveau propriétaire reçoit une notification du transfert de possession par e-mail. | G Suite|
-|Comptes, Stratégie d’activité | Compte | Suspendre l’utilisateur| Empêche tout accès et toute connexion de l’utilisateur. S’il est connecté quand vous définissez cette action, il est immédiatement bloqué. |G Suite, Box, Office, Salesforce|
+|Comptes, Stratégie d’activité | Compte | Suspendre l’utilisateur| Empêche tout accès et toute connexion de l’utilisateur. Si elles sont connectées lorsque vous définissez cette action, elles sont immédiatement verrouillées. |G Suite, Box, Office, Salesforce|
 |Stratégie d’activité, Comptes | Compte |Demander à l’utilisateur de se reconnecter|Révoque tous les jetons d’actualisation et les cookies de session émis aux applications par l’utilisateur. Cette action empêche l’accès aux données de l’organisation et force l’utilisateur à se connecter à toutes les applications.| G Suite|
 |Stratégie d’activité, Comptes | Compte | Révoquer les privilèges administratifs |Révoque les privilèges d’un compte Administrateur. Par exemple, la définition d’une stratégie d’activité qui révoque les privilèges Administrateur après 10 échecs de tentative de connexion. | G Suite|
 |Tableau de bord de l’application > Autorisations d’applications |Autorisations|Annuler l’exclusion de l’application| Dans Google et Salesforce : supprimez l’exclusion de l’application et permettez aux utilisateurs d’accorder des autorisations à l’application tierce avec Google et Salesforce. Dans Office 365 : restaure les autorisations d’accès de l’application tierce à Office. |G Suite, Salesforce, Office |
@@ -139,7 +134,7 @@ Pour plus d’informations sur la façon dont les actions de gouvernance sont tr
 |Tableau de bord de l’application > Autorisations d’applications |Autorisations|Révoquer l’application|Révoque les autorisations d’accès d’une application tierce à Google, Salesforce ou Office. Il s’agit d’une seule action qui se produit sur toutes les autorisations existantes, mais qui n’empêche pas les connexions futures. | G Suite, Salesforce|
 |Tableau de bord de l’application > Autorisations d’applications | Compte | Révoquer l’utilisateur de cette application|Vous pouvez révoquer des utilisateurs spécifiques en cliquant sur le nombre sous Utilisateurs. L’écran affiche des utilisateurs spécifiques, et vous pouvez utiliser la croix (X) pour supprimer les autorisations d’un utilisateur.| G Suite, Salesforce|
 |Découverte > Applications découvertes/Adresses IP/Utilisateurs| Cloud Discovery | Exporter les données de découverte | Crée un fichier CSV à partir de données de découverte. | Découverte |
-|Stratégie de fichier|File |Mettre à la corbeille|Déplace le fichier dans la Corbeille de l’utilisateur.| SharePoint de lecteur, OneDrive, box, Dropbox, Google |
+|Stratégie de fichier|File |Mettre à la corbeille|Déplace le fichier dans la corbeille de l’utilisateur.| Box, Dropbox, Google Drive, OneDrive, SharePoint |
 |Stratégie de fichier|File | Notifier le dernier éditeur du fichier |Envoie un e-mail pour notifier la dernière personne qui a modifié le fichier qu’il viole une stratégie. |G Suite, Box|
 |Stratégie de fichier|File |Notifier le propriétaire du fichier|Envoie un e-mail au propriétaire quand un fichier ne respecte pas une stratégie. Dans Dropbox, si aucun propriétaire n’est associé à un fichier, la notification est envoyée à l’utilisateur spécifique que vous définissez. | Toutes les applications |
 |Stratégie de fichier, Stratégie d’activité | Fichier, Activité | Notifier des utilisateurs spécifiques |Envoie un e-mail pour notifier des utilisateurs spécifiques qu’un fichier viole une stratégie.| Toutes les applications |
@@ -158,7 +153,7 @@ Pour plus d’informations sur la façon dont les actions de gouvernance sont tr
 |Fichiers, Stratégie de fichier|File | Réduire l’accès public|Cette action vous permet de définir les fichiers publiquement disponibles comme étant accessibles uniquement avec un lien partagé.| G Suite|
 |Fichiers, Stratégie de fichier|File | Supprimer un collaborateur | Supprime un collaborateur donné d’un fichier. | G Suite, Box, One Drive, SharePoint|
 |Fichiers, Stratégie de fichier|File | Rendre privé| Rendre le fichier privé (aucun collaborateur, aucun lien public, aucun partage). | G Suite, One Drive, SharePoint |
-|Fichiers, Stratégie de fichier|File | Supprimer les utilisateurs externes | Supprime tous les collaborateurs externes - configurés comme internes dans les paramètres en dehors des domaines. |G Suite, Box|
+|Fichiers, Stratégie de fichier|File | Supprimer les utilisateurs externes | Supprime tous les collaborateurs externes - configurés comme internes dans les paramètres en dehors des domaines. |G Suite, Box, One Drive, SharePoint|
 |Fichiers, Stratégie de fichier|File |Attribuer une permission de lecture au domaine|Accorde une permission de lecture pour le fichier sur le domaine spécifié pour tout votre domaine ou un domaine spécifique. Cet accès est utile si vous souhaitez supprimer l’accès public après l’octroi d’un accès au domaine des personnes qui doivent y travailler.| G Suite|
 |Fichiers, Stratégie de fichier|File | Mettre en quarantaine utilisateur | Supprime toutes les autorisations du fichier et déplace le fichier vers un dossier de quarantaine sur le lecteur racine de l’utilisateur. Cette action permet à l’utilisateur d’examiner le fichier et de le déplacer. S’il est déplacé manuellement, le partage de fichiers n’est pas restauré. | Box, One Drive, SharePoint |
 |Fichiers|Fichier|Faire expirer le lien partagé| Définit la date d’expiration d’un lien partagé, après laquelle il ne sera plus actif.|Box|
@@ -170,9 +165,8 @@ Pour plus d’informations sur la façon dont les actions de gouvernance sont tr
 |Paramètres> Paramètres de Cloud Discovery > Supprimer les données| Cloud Discovery | Supprimer les données Cloud Discovery |Supprime toutes les données collectées à partir de sources de découverte.| Découverte |
 |Paramètres> Paramètres de Cloud Discovery > Charger les journaux manuellement/Charger les journaux automatiquement | Cloud Discovery | Analyser les données Cloud Discovery| Notification que toutes les données de journal ont été analysées. | Découverte |
 
-## <a name="next-steps"></a>Étapes suivantes 
+## <a name="next-steps"></a>Étapes suivantes
+
 [Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)
 
-[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/) 
-
-
+[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)

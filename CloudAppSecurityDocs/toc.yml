@@ -35,7 +35,7 @@
       href: use-case-admin-quarantine.md
     - name: Appliquer automatiquement des étiquettes Azure Information Protection
       href: use-case-information-protection.md
-    - name: Automatiser les alertes pour protéger les points de terminaison
+    - name: Extension de la gouvernance à la correction des points de terminaison
       href: tutorial-flow.md
 - name: Concepts
   items:
@@ -244,6 +244,10 @@
           href: troubleshoot-policies.md
 - name: Ressources
   items:
+    - name: Regardez nos webinaires
+      href: webinars.md
+    - name: Lisez nos livres électroniques
+      href: e-books.md
     - name: Archives des notes de publication
       href: release-note-archive.md
     - name: Fiche technique sur les licences
