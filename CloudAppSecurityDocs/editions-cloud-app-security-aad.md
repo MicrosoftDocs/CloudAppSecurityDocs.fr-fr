@@ -2,25 +2,23 @@
 title: Différences de fonctionnalités de découverte pour Cloud App Security et Azure AD
 description: Cet article décrit les différences qui existent entre les fonctionnalités de découverte de Microsoft Cloud App Security et celles d’Azure AD.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 03/25/2019
+author: ShlomoSagir-MS
+ms.author: shsagir
+manager: ShlomoSagir-MS
+ms.date: 8/29/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: ''
-ms.assetid: 4422e847-9a87-4d60-ad55-346ea50a768c
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ccae964e3d8dc264f5e6a8f1165c990a50320e9c
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 811bd97ea687d89032fed1e685e40bcf044d2564
+ms.sourcegitcommit: 36b330b0ac03ccc0ac5b04dbd0f65106b033bd2b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65567755"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70134671"
 ---
 # <a name="what-are-the-differences-in-discovery-capabilities-for-azure-active-directory-and-microsoft-cloud-app-security"></a>Quelles sont les différences qui existent entre les fonctionnalités de découverte d’Azure Active Directory et celles de Microsoft Cloud App Security ?
 
@@ -30,9 +28,9 @@ Cet article décrit les différences qui existent entre les fonctionnalités de 
 
 Pour plus d’informations sur les licences, consultez la [fiche technique sur les licences Microsoft Cloud App Security](https://aka.ms/mcaslicensing).
 
-## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security 
+## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
 
-Microsoft Cloud App Security est une solution complète multi-SaaS qui offre à vos applications cloud une meilleure visibilité, des contrôles de données puissants et une protection améliorée contre les menaces. Cloud Discovery est une fonctionnalité Cloud App Security qui vous permet de mieux détecter le « Shadow IT » en découvrant les applications cloud qui sont en cours d’utilisation. 
+Microsoft Cloud App Security est une solution complète multi-SaaS qui offre à vos applications cloud une meilleure visibilité, des contrôles de données puissants et une protection améliorée contre les menaces. Cloud Discovery est une fonctionnalité Cloud App Security qui vous permet de mieux détecter le « Shadow IT » en découvrant les applications cloud qui sont en cours d’utilisation.
 
 ## <a name="enhanced-cloud-app-discovery-in-azure-active-directory"></a>Cloud App Discovery améliorée dans Azure Active Directory
 
@@ -52,9 +50,19 @@ Le tableau suivant compare les fonctionnalités de découverte de Microsoft Clou
 ||Analytique de l’utilisation du cloud par application, utilisateur, adresse IP|Oui|Oui|
 ||Analytique et création de rapports en continu|Oui|Oui|
 ||Détection d’anomalie pour les applications découvertes|Oui||
+|Protection des informations|Prise en charge de la protection contre la perte de données (DLP)|DLP multi-SaaS et contrôle du partage des données||
+||Autorisations d’application et possibilité de révoquer l’accès|Oui||
+||Paramètre et application de stratégies|Oui||
+||Intégration à Azure Information Protection |Oui||
+||Intégration à des solutions DLP tierces|Oui||
+|Détection des menaces|Détection d’anomalies et analytique comportementale|Pour les applications multi-SaaS||
+||Correction d’alerte automatique et manuelle|Oui||
+||Connecteur SIEM|Oui. Alertes et journaux d’activité pour les applications multi-SaaS.||
+||Intégration à Microsoft Intelligent Security Graph|Oui||
+||Stratégies d’activité|Oui||
 
-## <a name="next-steps"></a>Étapes suivantes 
+## <a name="next-steps"></a>Étapes suivantes
 
-Découvrez les concepts de base dans [Bien démarrer avec Cloud App Security](getting-started-with-cloud-app-security.md).    
+Découvrez les concepts de base dans [Bien démarrer avec Cloud App Security](getting-started-with-cloud-app-security.md).
 
-[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)   
+[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)

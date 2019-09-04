@@ -15,12 +15,12 @@ ms.assetid: 3fc04cfb-ad4c-4ac2-980a-ee9f4c740d88
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1754c11414521c058e51851132a08eb7a9725fb9
-ms.sourcegitcommit: 5c8678d44aa73375703fd54fc7e0386b704bd3bc
+ms.openlocfilehash: 6756ee0043ce99f3323c03a0f43bab3ba6d0cce9
+ms.sourcegitcommit: 1801e4c65222b215fb62471854f4c501d4cd6c93
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68633169"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70104497"
 ---
 # <a name="tutorial-protect-files-with-admin-quarantine"></a>Tutoriel : Protéger les fichiers avec la mise en quarantaine administrateur
 
