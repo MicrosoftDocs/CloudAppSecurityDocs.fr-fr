@@ -5,7 +5,7 @@ keywords: ''
 author: ShlomoSagir-MS
 ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 9/1/2019
+ms.date: 9/5/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1b467600661209d299ca5f5f4079a572aa3016c2
-ms.sourcegitcommit: 0b78b13bc163bfcd6f2ae13b1f57acee05e5b423
+ms.openlocfilehash: fefff041971b65d27e4a3409034af0569894dc04
+ms.sourcegitcommit: 24c0dd16c7e8212f614fb6fd66c9f18ce75c0b45
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2019
-ms.locfileid: "70208907"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70373124"
 ---
 # <a name="connect-workday-to-microsoft-cloud-app-security"></a>Connecter un jour ouvré à Microsoft Cloud App Security
 
@@ -29,25 +29,27 @@ Cet article fournit des instructions pour connecter Microsoft Cloud App Security
 
 ## <a name="prerequisites"></a>Prérequis
 
-Le compte de jour de travail utilisé pour la connexion à Cloud App Security doit être membre d’un groupe de sécurité pour lequel les domaines suivants sont activés:
+- Le compte de jour de travail utilisé pour la connexion à Cloud App Security doit être membre d’un groupe de sécurité pour lequel les domaines suivants sont activés :
 
-- Administration de la sécurité du système
-- Audit système
-- Personnel-données de travail: Public Worker Reports
+  - Administration de la sécurité du système
+  - Audit système
+  - Personnel-données de travail : Public Worker Reports
 
-Nous vous recommandons d’utiliser un utilisateur système d’intégration de jours ouvrables.
+  Nous vous recommandons d’utiliser un utilisateur système d’intégration de jours ouvrables.
+
+- Si votre déploiement de jours de travail gère des plages d’adresses IP, vous devez autoriser toutes les adresses IP de Cloud App Security. Pour obtenir la liste des adresses IP, consultez [Configuration réseau requise-connecteur d’applications](network-requirements.md#app-connector).
 
 ## <a name="how-to-connect-workday-to-cloud-app-security-using-oauth"></a>Connexion de la journée de travail à Cloud App Security à l’aide d’OAuth
 
 1. Connectez-vous avec un compte d’administrateur à votre compte de jours ouvrés.
 
-1. Recherchez «modifier le paramétrage du locataire – système», puis, sous **Journal d’activité utilisateur**, sélectionnez Activer la journalisation de l' **activité des utilisateurs**.
+1. Recherchez « modifier le paramétrage du locataire – système », puis, sous **Journal d’activité utilisateur**, sélectionnez **activer la journalisation**de l’activité des utilisateurs.
 
     ![Capture d’écran de l’autorisation de la journalisation des activités des utilisateurs](media/connect-workday-enable-logging.png)
 
-1. Recherchez «modifier le paramétrage du locataire – sécurité», puis sous **paramètres oauth 2,0**, sélectionnez **clients OAuth 2,0 activés**.
+1. Recherchez « modifier le paramétrage du locataire – sécurité », puis sous **paramètres oauth 2,0**, sélectionnez **clients OAuth 2,0 activés**.
 
-1. Recherchez «Register API client» et sélectionnez **Register API client-Task**.
+1. Recherchez « Register API client » et sélectionnez **Register API client-Task**.
 
 1. Dans la page **inscrire le client** de l’API, renseignez les informations suivantes, puis cliquez sur **OK**.
 
