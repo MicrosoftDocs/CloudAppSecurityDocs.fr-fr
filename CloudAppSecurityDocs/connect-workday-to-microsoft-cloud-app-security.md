@@ -5,7 +5,7 @@ keywords: ''
 author: ShlomoSagir-MS
 ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 9/5/2019
+ms.date: 9/8/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: fefff041971b65d27e4a3409034af0569894dc04
-ms.sourcegitcommit: 24c0dd16c7e8212f614fb6fd66c9f18ce75c0b45
+ms.openlocfilehash: d22d5e20ca3ad8f8484fb22f16b595c91d27aa22
+ms.sourcegitcommit: 5929f232232f2c3cba460680d959b121dff1aa3a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "70373124"
+ms.lasthandoff: 09/08/2019
+ms.locfileid: "70803044"
 ---
 # <a name="connect-workday-to-microsoft-cloud-app-security"></a>Connecter un jour ouvré à Microsoft Cloud App Security
 
@@ -29,19 +29,22 @@ Cet article fournit des instructions pour connecter Microsoft Cloud App Security
 
 ## <a name="prerequisites"></a>Prérequis
 
-- Le compte de jour de travail utilisé pour la connexion à Cloud App Security doit être membre d’un groupe de sécurité pour lequel les domaines suivants sont activés :
+Le compte de jour de travail utilisé pour la connexion à Cloud App Security doit être membre d’un groupe de sécurité (nouveau ou existant). Les autorisations suivantes doivent être sélectionnées pour le groupe de sécurité pour les domaines suivants :
 
-  - Administration de la sécurité du système
-  - Audit système
-  - Personnel-données de travail : Public Worker Reports
+| Zone fonctionnelle | Domaine | Sous-domaine | Autorisations de rapport/tâche | Autorisations d’intégration |
+| --- | --- | --- | --- | --- |
+| System | Configuration : Configuration du locataire – général | Configuration : Configuration du locataire – sécurité | Afficher, modifier | Acquérir, put |
+| System | Administration de la sécurité | | Afficher, modifier | Acquérir, put |
+| System | Audit du système | | Vue | Obtenir |
+| Personnel | Worker Data: Personnel | Worker Data: Public Worker Reports | Vue | Obtenir |
 
-  Nous vous recommandons d’utiliser un utilisateur système d’intégration de jours ouvrables.
+Pour plus d’informations sur la configuration des utilisateurs d’intégration des jours de travail, des groupes de sécurité et des autorisations, consultez les étapes 1 à 4 du Guide d' [intégration ou d’accès du point de terminaison externe au jour](https://go.microsoft.com/fwlink/?linkid=2103212) ouvrable (accessible avec la documentation des jours de travail/informations d’identification de la Communauté).
 
-- Si votre déploiement de jours de travail gère des plages d’adresses IP, vous devez autoriser toutes les adresses IP de Cloud App Security. Pour obtenir la liste des adresses IP, consultez [Configuration réseau requise-connecteur d’applications](network-requirements.md#app-connector).
+Nous vous recommandons d’utiliser un utilisateur système d’intégration de jours ouvrables.
 
 ## <a name="how-to-connect-workday-to-cloud-app-security-using-oauth"></a>Connexion de la journée de travail à Cloud App Security à l’aide d’OAuth
 
-1. Connectez-vous avec un compte d’administrateur à votre compte de jours ouvrés.
+1. Connectez-vous à votre compte de jour de travail avec un utilisateur administrateur membre du groupe de sécurité mentionné dans les conditions préalables.
 
 1. Recherchez « modifier le paramétrage du locataire – système », puis, sous **Journal d’activité utilisateur**, sélectionnez **activer la journalisation**de l’activité des utilisateurs.
 
