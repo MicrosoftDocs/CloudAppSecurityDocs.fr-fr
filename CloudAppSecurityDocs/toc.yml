@@ -12,7 +12,7 @@
       items:
         - name: Office 365
           href: editions-cloud-app-security-o365.md
-        - name: Azure AD
+        - name: "Azure\_AD"
           href: editions-cloud-app-security-aad.md
 - name: Guides de démarrage rapide
   expanded: true
@@ -35,7 +35,7 @@
       href: use-case-admin-quarantine.md
     - name: Appliquer automatiquement des étiquettes Azure Information Protection
       href: use-case-information-protection.md
-    - name: Extension de la gouvernance à la correction des points de terminaison
+    - name: Étendre la gouvernance à la correction des points de terminaison
       href: tutorial-flow.md
 - name: Concepts
   items:
@@ -50,7 +50,7 @@
     - name: Configuration de base
       href: general-setup.md
       items:
-        - name: Conditions requises en matière de réseau
+        - name: Configuration requise pour le réseau
           href: network-requirements.md
         - name: Gérer les administrateurs
           href: manage-admins.md
@@ -133,7 +133,7 @@
           href: proxy-deployment-aad.md
         - name: Intégrer et déployer le contrôle d’application par accès conditionnel pour tous les types d’applications
           href: proxy-deployment-any-app.md
-    - name: Examen
+    - name: Investigation
       href: investigate.md
       items:
         - name: Activités
@@ -156,12 +156,12 @@
               href: security-config.md
             - name: Configuration de la sécurité pour AWS
               href: security-config-aws.md
-        - name: Surveiller les applications
+        - name: Superviser les applications
           href: monitor-alerts.md
           items:
             - name: Gérer les alertes
               href: managing-alerts.md
-    - name: Control
+    - name: Contrôler
       href: control.md
       items:
         - name: Contrôler les applications cloud avec des stratégies

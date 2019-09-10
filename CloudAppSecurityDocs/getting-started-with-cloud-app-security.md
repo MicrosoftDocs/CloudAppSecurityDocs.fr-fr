@@ -4,19 +4,19 @@ description: Ce démarrage rapide décrit le processus permettant d’opération
 author: ShlomoSagir-MS
 ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 8/28/2019
+ms.date: 9/9/2019
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 489bdc036d8e2b51303e79509af39d851385aa00
-ms.sourcegitcommit: 0552bfd3f75ed24b2b9de668c0c25bf7be5f5526
+ms.openlocfilehash: fb673cf1e242a80d2b9b4b8a318607ae8f49ebdf
+ms.sourcegitcommit: 07fed3b2d6e926614d33d22d3dbcadf2c97d4fe5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70076437"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70805885"
 ---
 # <a name="quickstart-get-started-with-microsoft-cloud-app-security"></a>Démarrage rapide : Bien démarrer avec Microsoft Cloud App Security
 
@@ -42,10 +42,15 @@ Votre organisation doit avoir une licence pour utiliser Cloud App Security. Pour
 
 ## <a name="to-access-the-portal"></a>Pour accéder au portail
 
-Pour accéder au portail Cloud App Security, accédez à [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com).
-Vous pouvez également accéder au portail via le **centre d’administration Microsoft 365** en cliquant sur l’icône Centres d’administration. ![Icône Centres d’administration O365](./media/o365-admin-centers-icon.png "Icône Centres d’administration O365"), puis sélectionnez **Cloud App Security**.
+Pour accéder au portail Cloud App Security, accédez à [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com). Vous pouvez également accéder au portail via le **centre d’administration Microsoft 365** comme suit :
 
-![Accès à partir d’O365](./media/access-from-o365.png "Accès à partir d’O365")
+1. Dans le centre d’administration Microsoft 365, cliquez sur l’icône du **lanceur d’applications** ![icône du lanceur d’applications Office 365](media/o365-admin-centers-icon.png), puis sélectionnez **Sécurité**.
+
+    ![Accès à partir d’Office 365](media/access-from-o365.png)
+
+1. Dans la page sécurité de Microsoft 365, cliquez sur **Plus de ressources**, puis sélectionnez **Cloud App Security**.
+
+    ![Sélectionner Cloud App Security](media/access-from-o365-s2.png)
 
 ## <a name="step-1-set-instant-visibility-protection-and-governance-actions-for-your-appsenable-instant-visibility-protection-and-governance-actions-for-your-appsmd"></a>Étape 1. [Définir une visibilité instantanée, une protection et des actions de gouvernance pour vos applications](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
 
