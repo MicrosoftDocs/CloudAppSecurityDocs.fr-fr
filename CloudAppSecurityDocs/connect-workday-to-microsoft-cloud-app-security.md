@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d22d5e20ca3ad8f8484fb22f16b595c91d27aa22
-ms.sourcegitcommit: 5929f232232f2c3cba460680d959b121dff1aa3a
+ms.openlocfilehash: 0530cfa93edd96bf805df3ac62b900b50fa5978b
+ms.sourcegitcommit: 6105add524e33adaa389bcf0f5baf4f1fdfd7f7d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2019
-ms.locfileid: "70803044"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70804901"
 ---
 # <a name="connect-workday-to-microsoft-cloud-app-security"></a>Connecter un jour ouvré à Microsoft Cloud App Security
 
@@ -44,7 +44,7 @@ Nous vous recommandons d’utiliser un utilisateur système d’intégration de 
 
 ## <a name="how-to-connect-workday-to-cloud-app-security-using-oauth"></a>Connexion de la journée de travail à Cloud App Security à l’aide d’OAuth
 
-1. Connectez-vous à votre compte de jour de travail avec un utilisateur administrateur membre du groupe de sécurité mentionné dans les conditions préalables.
+1. Connectez-vous à la journée de travail à l’aide d’un compte membre du groupe de sécurité mentionné dans les conditions préalables.
 
 1. Recherchez « modifier le paramétrage du locataire – système », puis, sous **Journal d’activité utilisateur**, sélectionnez **activer la journalisation**de l’activité des utilisateurs.
 
@@ -56,7 +56,7 @@ Nous vous recommandons d’utiliser un utilisateur système d’intégration de 
 
 1. Dans la page **inscrire le client** de l’API, renseignez les informations suivantes, puis cliquez sur **OK**.
 
-    | Nom du champ | Valeur |
+    | Nom du champ | `Value` |
     | ---- | ---- |
     | Nom du client | Microsoft Cloud App Security |
     | Type d’octroi client | Octroi de code d’autorisation |
