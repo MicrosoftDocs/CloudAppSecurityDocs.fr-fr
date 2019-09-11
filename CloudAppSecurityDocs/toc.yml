@@ -12,15 +12,13 @@
       items:
         - name: Office 365
           href: editions-cloud-app-security-o365.md
-        - name: "Azure\_AD"
+        - name: Azure AD
           href: editions-cloud-app-security-aad.md
 - name: Guides de démarrage rapide
   expanded: true
   items:
     - name: Mise en route
       href: getting-started-with-cloud-app-security.md
-    - name: Utiliser des applications découvertes
-      href: discovered-apps.md
 - name: Didacticiels
   items:
     - name: Découvrir et gérer le shadow IT
@@ -43,14 +41,16 @@
       href: proxy-intro-aad.md
     - name: Utilisation du tableau de bord
       href: daily-activities-to-protect-your-cloud-environment.md
-    - name: Utilisation du score de risque
+    - name: Utilisation des scores de risque d’application
       href: risk-score.md
+    - name: Utilisation des applications découvertes
+      href: discovered-apps.md
 - name: Guides pratiques
   items:
     - name: Configuration de base
       href: general-setup.md
       items:
-        - name: Configuration requise pour le réseau
+        - name: Conditions requises en matière de réseau
           href: network-requirements.md
         - name: Gérer les administrateurs
           href: manage-admins.md
@@ -133,7 +133,7 @@
           href: proxy-deployment-aad.md
         - name: Intégrer et déployer le contrôle d’application par accès conditionnel pour tous les types d’applications
           href: proxy-deployment-any-app.md
-    - name: Investigation
+    - name: Examen
       href: investigate.md
       items:
         - name: Activités
@@ -156,12 +156,12 @@
               href: security-config.md
             - name: Configuration de la sécurité pour AWS
               href: security-config-aws.md
-        - name: Superviser les applications
+        - name: Surveiller les applications
           href: monitor-alerts.md
           items:
             - name: Gérer les alertes
               href: managing-alerts.md
-    - name: Contrôler
+    - name: Control
       href: control.md
       items:
         - name: Contrôler les applications cloud avec des stratégies
