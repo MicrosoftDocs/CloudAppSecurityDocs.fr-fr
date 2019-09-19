@@ -2,9 +2,9 @@
 title: Configuration requise du réseau - Cloud App Security | Microsoft Docs
 description: Cet article décrit les adresses IP et les ports à ouvrir pour utiliser Cloud App Security.
 keywords: ''
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 8/4/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0ef957575f3bb3047c6b0f73057dd0a78abd9e1f
-ms.sourcegitcommit: dc8b370e62e61a4f2f8a2baea75b564c3bdbc345
+ms.openlocfilehash: 975e7699a22b3c3b4267d59ecfe0229beaf3132c
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70259879"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71085131"
 ---
 # <a name="network-requirements"></a>Configuration requise pour le réseau
 
@@ -43,7 +43,7 @@ Pour savoir à quel centre de données vous vous connectez, effectuez les étape
 
 ## <a name="portal-access"></a>Accès au portail
 
-Pour accéder au portail Cloud App Security, ajoutez le **port de sortie 443** pour les adresses IP et les noms DNS suivants à la liste verte de votre pare-feu :
+Pour accéder au portail Cloud App Security, ajoutez le **port de sortie 443** pour les adresses IP et les noms DNS suivants à la liste verte de votre pare-feu:
 
     portal.cloudappsecurity.com
     *.portal.cloudappsecurity.com
@@ -74,7 +74,7 @@ En outre, les éléments suivants doivent figurer dans la liste verte, en foncti
 
 ## <a name="siem-agent-connection"></a>Connexion de l’agent SIEM
 
-Pour permettre à Cloud App Security de se connecter à votre serveur SIEM, ajoutez le **port de sortie 443** pour les adresses IP suivantes à la liste verte de votre pare-feu :
+Pour permettre à Cloud App Security de se connecter à votre serveur SIEM, ajoutez le **port de sortie 443** pour les adresses IP suivantes à la liste verte de votre pare-feu:
 
 > [!div class="mx-tableFixed"]
 >
@@ -148,7 +148,7 @@ Si vous voulez personnaliser l’identité de l’expéditeur de l’e-mail, Mic
 
 Si vous ne personnalisez pas l’identité de l’expéditeur, vos notifications par e-mail seront envoyées avec tous les paramètres par défaut.
 
-Pour utiliser MailChimp, ajoutez cette adresse IP à votre liste d’autorisation anti-spam pour permettre l’envoi de notifications : 198.2.134.139 (mail1.cloudappsecurity.com)
+Pour utiliser MailChimp, ajoutez cette adresse IP à votre liste d’autorisation anti-spam pour permettre l’envoi de notifications: 198.2.134.139 (mail1.cloudappsecurity.com)
 
 ## <a name="log-collector"></a>Collecteur de journaux
 
@@ -160,11 +160,11 @@ Pour activer les fonctionnalités Cloud Discovery à l’aide d’un collecteur 
 
   | Centre de données |                        URL                        |
   |-------------|---------------------------------------------------|
-  |     US1     | https :\//adaprodconsole.blob.Core.Windows.net/     |
-  |     US2     | https :\//prod03use2console1.blob.Core.Windows.net/ |
-  |     US3     | https :\//prod5usw2console1.blob.Core.Windows.net/  |
-  |     EU1     | https :\//prod02euwconsole1.blob.Core.Windows.net/  |
-  |     EU2     | https :\//prod4uksconsole1.blob.Core.Windows.net/   |
+  |     US1     | https:\//adaprodconsole.blob.Core.Windows.net/     |
+  |     US2     | https:\//prod03use2console1.blob.Core.Windows.net/ |
+  |     US3     | https:\//prod5usw2console1.blob.Core.Windows.net/  |
+  |     EU1     | https:\//prod02euwconsole1.blob.Core.Windows.net/  |
+  |     EU2     | https:\//prod4uksconsole1.blob.Core.Windows.net/   |
 
 > [!NOTE]
 > - Si votre pare-feu nécessite une liste d’accès à d’adresses IP statiques et qu’il ne prend pas en charge une liste verte basée sur des URL, autorisez le collecteur de journaux à émettre le trafic sortant vers les [plages IP du centre de données Microsoft Azure](https://www.microsoft.com/download/details.aspx?id=41653) sur le port 443.

@@ -1,7 +1,7 @@
 ---
-title: Stratégies cloud Discovery - Cloud App Security | Microsoft Docs
-description: Cet article décrit les étapes pour configurer de nombreuses stratégies Cloud Discovery dans Cloud App Security.
-author: ShlomoSagir-MS
+title: Stratégies de Cloud Discovery-Cloud App Security | Microsoft Docs
+description: Cet article décrit les étapes permettant de configurer de nombreuses stratégies de Cloud Discovery dans Cloud App Security.
+author: shsagir
 ms.author: shsagir
 ms.date: 06/13/2019
 ms.topic: conceptual
@@ -10,151 +10,151 @@ ms.service: cloud-app-security
 ms.assetid: 570da960-771d-484f-932d-b086f2ec2978
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a8cf4f7564cdb8dd0470bfa6cc2c0c013b95f52e
-ms.sourcegitcommit: ea1c0f7638eaf0601ae476fea0d40e01bf8a6f4d
+ms.openlocfilehash: ffcb2b67c03cf93843faf8255af86f4cb1c80a53
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67298941"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71085085"
 ---
 # <a name="cloud-discovery-policies"></a>Stratégies Cloud Discovery
 
 *S’applique à : Microsoft Cloud App Security*
 
-Cet article fournit une vue d’ensemble de la prise en main à l’aide de Cloud App Security de gagner en visibilité au sein de votre organisation Shadow It à l’aide de Cloud Discovery.
+Cet article fournit une vue d’ensemble de la prise en main de l’utilisation de Cloud App Security pour obtenir une visibilité de l’ensemble de votre organisation en utilisant des Cloud Discovery.
 
-Cloud App Security vous permet de découvrir et d’analyser les applications cloud qui sont en cours d’utilisation dans l’environnement de votre organisation. Le tableau de bord Cloud Discovery affiche toutes les applications de cloud en cours d’exécution dans l’environnement et les classe par la disponibilité de la fonction et d’entreprise. Pour chaque application, Découvrez les utilisateurs associés, IP adresses machines, transactions et évaluation des risques effectue sans avoir à installer un agent sur vos appareils de point de terminaison.
+Cloud App Security vous permet de détecter et d’analyser les applications Cloud en cours d’utilisation dans l’environnement de votre organisation. Le tableau de bord Cloud Discovery affiche toutes les applications Cloud en cours d’exécution dans l’environnement et les classe par fonction et préparation de l’entreprise. Pour chaque application, Découvrez les utilisateurs, les adresses IP, les machines, les transactions et l’évaluation des risques associés sans avoir à installer un agent sur vos appareils de point de terminaison.
 
-## Détecter l’utilisation d’application volumineux ou large nouveau <a name= "detect-volume"></a>
+## Détection d’une nouvelle utilisation d’applications volumineuses ou à grande quantité<a name= "detect-volume"></a>
 
-Détecter les nouvelles applications fréquemment utilisées, en termes de nombre d’utilisateurs ou de la quantité de trafic de votre organisation.
+Détectez les nouvelles applications qui sont fortement utilisées, en termes de nombre d’utilisateurs ou de volume de trafic dans votre organisation.
 
 ### <a name="prerequisites"></a>Prérequis
 
-Rapports de chargement automatique des journaux de configurer pour continus Cloud Discovery, comme décrit dans [chargement automatique des journaux de configuration pour des rapports continus](configure-automatic-log-upload-for-continuous-reports.md).
+Configurez le chargement automatique des journaux pour les rapports de Cloud Discovery continus, comme décrit dans [configurer le chargement automatique des journaux pour les rapports continus](configure-automatic-log-upload-for-continuous-reports.md).
 
 ### <a name="steps"></a>Étapes
 
-1.  Sur le **stratégies** page, créez une nouvelle **stratégie de découverte d’application**
+1.  Dans la page **stratégies** , créez une **stratégie de découverte d’application** .
 
-2.  Dans le **modèle de stratégie** champ, sélectionnez **nouvelle application avec volume élevé** ou **nouvelle application populaire** et appliquer le modèle.
+2.  Dans le champ **modèle de stratégie** , sélectionnez **nouvelle application à volume élevé** ou **nouvelle application populaire** et appliquez le modèle.
 
 3.  Personnaliser les filtres de stratégie pour répondre aux besoins de votre organisation.
 
-4.  Configurer les actions à prendre lorsqu’une alerte est déclenchée.
+4.  Configurez les actions à entreprendre lorsqu’une alerte est déclenchée.
 
 > [!NOTE]
->  Une alerte est générée une fois pour chaque nouvelle application qui n’est pas détectée au cours des 90 derniers jours.
+>  Une alerte est générée une fois pour chaque nouvelle application qui n’a pas été découverte au cours des 90 derniers jours.
 
-## <a name="detect-new-risky-or-non-compliant-app-use"></a>Détecter la nouvelle utilisation de l’application à risque ou non conforme
+## <a name="detect-new-risky-or-non-compliant-app-use"></a>Détecter les nouvelles utilisation d’applications risquées ou non conformes
 
-Détecter les risques d’exposition de votre organisation dans les applications de cloud qui ne répondent pas à vos normes de sécurité.
-
-### <a name="prerequisites"></a>Prérequis
-
-Rapports de chargement automatique des journaux de configurer pour continus Cloud Discovery, comme décrit dans [chargement automatique des journaux de configuration pour des rapports continus](configure-automatic-log-upload-for-continuous-reports.md).
-
-### <a name="steps"></a>Étapes
-
-1.  Sur le **stratégies** page, créez une nouvelle **stratégie de découverte d’application.**
-
-2.  Dans le **modèle de stratégie** champ, sélectionnez le **nouvelle application à risques** modèle et appliquer le modèle.
-
-3.  Sous **application remplissant toutes les conditions suivantes** définir le [Score de risque](risk-score.md) slider et le facteur de risque de conformité pour personnaliser vous sont le niveau de risque que vous souhaitez déclencher une alerte, puis définissez les filtres de stratégie pour répondre aux exigences de sécurité de votre organisation.
-
-    1.  Facultatif : Pour obtenir des détections plus explicites, personnaliser la quantité de trafic qui déclenchera une alerte.
-
-        1.  Vérifier le **déclencher une correspondance de stratégie si tous les éléments suivants se produisent sur le même jour** case à cocher.
-
-        2.  Sélectionnez **trafic quotidien** supérieure à 2 000 Go (ou autre).
-
-4.  Configurer des actions de gouvernance à entreprendre lorsqu’une alerte est déclenchée. Sous **gouvernance**, sélectionnez **baliser l’application comme non approuvées.**<br>Accès à l’application est bloqué automatiquement lorsque la stratégie trouve une correspondance.
-
-5.  Facultatif : Tirez parti [intégrations natives Cloud App Security](set-up-cloud-discovery.md) avec des passerelles de Web sécurisé pour bloquer l’accès de l’application.
-
-## <a name="detect-use-of-unsanctioned-business-apps"></a>Détecter l’utilisation des applications métier non approuvées
-
-Vous pouvez détecter lorsque vos employés continuent d’utiliser des applications non approuvées en remplacement pour les applications d’entreprise approuvées.
+Détectez les risques potentiels de votre organisation dans les applications Cloud qui ne répondent pas à vos normes de sécurité.
 
 ### <a name="prerequisites"></a>Prérequis
 
--   Rapports de chargement automatique des journaux de configurer pour continus Cloud Discovery, comme décrit dans [chargement automatique des journaux de configuration pour des rapports continus](configure-automatic-log-upload-for-continuous-reports.md).
+Configurez le chargement automatique des journaux pour les rapports de Cloud Discovery continus, comme décrit dans [configurer le chargement automatique des journaux pour les rapports continus](configure-automatic-log-upload-for-continuous-reports.md).
 
 ### <a name="steps"></a>Étapes
 
-1.  Dans le catalogue d’applications Cloud, recherchez vos applications d’entreprise et les marquer avec un [balise d’application personnalisée](discovered-app-queries.md#creating-and-managing-custom-app-tags).
+1.  Dans la page **stratégies** , créez une nouvelle **stratégie de découverte d’application.**
 
-2.  Suivez les étapes de [détecter le nouveau volume élevé ou l’utilisation des applications large](#detect-volume).
+2.  Dans le champ **modèle de stratégie** , sélectionnez le nouveau modèle d' **application risquée** et appliquez le modèle.
 
-3.  Ajouter un **balise d’application** de filtrer et les balises d’application que vous avez créé pour vos applications d’entreprise.
+3.  Sous **application correspondant à tous les éléments suivants** , définissez le curseur [score de risque](risk-score.md) et le facteur de risque de conformité pour personnaliser le niveau de risque auquel vous souhaitez déclencher une alerte et définissez les autres filtres de stratégie en fonction des exigences de sécurité de votre organisation.
 
-4.  Configurer des actions de gouvernance à entreprendre lorsqu’une alerte est déclenchée. Sous la gouvernance, sélectionnez **baliser l’application comme non approuvées**.<br>Accès à l’application est bloqué automatiquement lorsque la stratégie trouve une correspondance.
+    1.  Facultatif : Pour obtenir des détections plus explicites, personnalisez la quantité de trafic qui déclenchera une alerte.
 
-5.  Facultatif : Tirez parti [intégrations natives Cloud App Security](set-up-cloud-discovery.md) avec des passerelles de Web sécurisé pour bloquer l’accès de l’application.
+        1.  Cochez la case **déclencher une correspondance de stratégie si tous les éléments suivants se produisent le même jour** .
 
-## <a name="detect-unusual-usage-patterns-on-your-network"></a>Détecter les modèles d’utilisation inhabituelles sur votre réseau
+        2.  Sélectionnez **le trafic quotidien** supérieur à 2000 Go (ou autre).
 
-Détecter les modèles d’utilisation de trafic anormaux (chargements/téléchargements) dans vos applications cloud, qui proviennent d’utilisateurs ou adresses IP à l’intérieur du réseau de votre organisation.
+4.  Configurez les actions de gouvernance à entreprendre lorsqu’une alerte est déclenchée. Sous **gouvernance**, sélectionnez **baliser l’application comme** non approuvée.<br>L’accès à l’application est automatiquement bloqué lorsque la stratégie est mise en correspondance.
+
+5.  Facultatif : Tirez parti de [Cloud App Security intégration natives](set-up-cloud-discovery.md) avec des passerelles Web sécurisées pour bloquer l’accès aux applications.
+
+## <a name="detect-use-of-unsanctioned-business-apps"></a>Détecter l’utilisation d’applications professionnelles non approuvées
+
+Vous pouvez détecter quand vos employés continuent d’utiliser des applications non approuvées en remplacement des applications approuvées pour l’entreprise.
 
 ### <a name="prerequisites"></a>Prérequis
 
-Rapports de chargement automatique des journaux de configurer pour continus Cloud Discovery, comme décrit dans [chargement automatique des journaux de configuration pour des rapports continus](configure-automatic-log-upload-for-continuous-reports.md).
+-   Configurez le chargement automatique des journaux pour les rapports de Cloud Discovery continus, comme décrit dans [configurer le chargement automatique des journaux pour les rapports continus](configure-automatic-log-upload-for-continuous-reports.md).
 
 ### <a name="steps"></a>Étapes
 
-1.  Sur le **stratégies** page, créez une nouvelle **stratégie de détection des anomalies Cloud Discovery**.
+1.  Dans le catalogue d’applications Cloud, recherchez vos applications professionnelles et marquez-les avec une [balise d’application personnalisée](discovered-app-queries.md#creating-and-managing-custom-app-tags).
 
-2.  Dans le **modèle de stratégie** champ, sélectionnez **un comportement anormal dans les utilisateurs découverts** ou **un comportement anormal dans les adresses IP découvertes**.
+2.  Suivez les étapes de la section [détecter une utilisation élevée du volume ou de l’application étendue](#detect-volume).
 
-3.  Personnaliser les filtres pour répondre aux besoins de votre organisation.
+3.  Ajoutez un filtre d' **étiquette d’application** et choisissez les balises d’application que vous avez créées pour vos applications professionnelles.
 
-4. Si vous voulez être alerté uniquement en cas d’anomalies impliquant des applications à risque, utilisez le **score de risque** filtre et définir la plage dans laquelle les applications sont considérées comme risquées.
+4.  Configurez les actions de gouvernance à entreprendre lorsqu’une alerte est déclenchée. Sous gouvernance, sélectionnez **baliser l’application comme**non approuvée.<br>L’accès à l’application est automatiquement bloqué lorsque la stratégie est mise en correspondance.
 
-4.  Utilisez le curseur pour **sélectionner la sensibilité de détection d’anomalie**.
+5.  Facultatif : Tirez parti de [Cloud App Security intégration natives](set-up-cloud-discovery.md) avec des passerelles Web sécurisées pour bloquer l’accès aux applications.
+
+## <a name="detect-unusual-usage-patterns-on-your-network"></a>Détecter les modèles d’utilisation inhabituels sur votre réseau
+
+Détectez les modèles d’utilisation du trafic anormal (chargements/téléchargements) dans vos applications Cloud, qui proviennent d’utilisateurs ou d’adresses IP au sein du réseau de votre organisation.
+
+### <a name="prerequisites"></a>Prérequis
+
+Configurez le chargement automatique des journaux pour les rapports de Cloud Discovery continus, comme décrit dans [configurer le chargement automatique des journaux pour les rapports continus](configure-automatic-log-upload-for-continuous-reports.md).
+
+### <a name="steps"></a>Étapes
+
+1.  Dans la page **stratégies** , créez une **stratégie de détection des anomalies Cloud Discovery**.
+
+2.  Dans le champ **modèle de stratégie** , sélectionnez **comportement anormal dans les utilisateurs découverts** ou **comportement anormal dans les adresses IP découvertes**.
+
+3.  Personnalisez les filtres pour répondre aux besoins de votre organisation.
+
+4. Si vous souhaitez être alerté uniquement lorsqu’il existe des anomalies impliquant des applications risquées, utilisez les filtres de **score de risque** et définissez la plage dans laquelle les applications sont considérées comme risquées.
+
+4.  Utilisez le curseur pour sélectionner la sensibilité de la **détection des anomalies**.
 
 > [!NOTE]
->  Une fois le chargement des journaux en continu est établi, le moteur de détection des anomalies prend quelques jours jusqu'à une ligne de base (période d’apprentissage), est établi pour le comportement attendu dans votre organisation. Après l’établie d’une ligne de base, commencer à recevoir des alertes basées sur les différences du comportement attendu le trafic entre les applications cloud effectuées par les utilisateurs ou à partir d’adresses IP.
+>  Une fois le chargement continu du journal établi, le moteur de détection des anomalies prend quelques jours jusqu’à ce qu’une ligne de base (période d’apprentissage) soit établie pour le comportement attendu de votre organisation. Après avoir établi une ligne de base, vous commencez à recevoir des alertes en fonction des différences par rapport au comportement de trafic attendu sur les applications Cloud effectuées par les utilisateurs ou à partir d’adresses IP.
 
-## <a name="detect-data-exfiltration-to-unsanctioned-storage-apps"></a>Détecter l’exfiltration des données pour les applications de stockage non approuvées
+## <a name="detect-data-exfiltration-to-unsanctioned-storage-apps"></a>Détecter l’exfiltration de données vers des applications de stockage non approuvées
 
-Détecter l’exfiltration de données potentielle par un utilisateur à une application de stockage cloud non approuvées.
-
-### <a name="prerequisites"></a>Prérequis
-
-Rapports de chargement automatique des journaux de configurer pour continus Cloud Discovery, comme décrit dans [chargement automatique des journaux de configuration pour des rapports continus](configure-automatic-log-upload-for-continuous-reports.md).
-
-### <a name="steps"></a>Étapes
-
-1.  Sur le **stratégies** page, de modifier la stratégie intégrée **exfiltration des données aux applications non approuvées**.
-
-2.  Sélectionnez le filtre **catégorie d’application** est égal à **stockage Cloud**.
-
-3.  Cochez la case pour **créer une alerte pour chaque événement correspondant avec le niveau de gravité de la stratégie**.
-
-4.  Configurer les actions à entreprendre lorsqu’une alerte est déclenchée.
-
-## <a name="detect-risky-oauth-apps"></a>Détecter les applications OAuth à risque
-
-Bénéficiez d’une visibilité et contrôle accrus de [applications OAuth](investigate-risky-oauth.md) qui sont installés à l’intérieur d’applications comme G Suite, Office 365 et Salesforce. Les applications OAuth qui demandent des autorisations élevées et ont Communauté rares à utiliser peuvent être considérées comme risquées.
+Détection de l’exfiltration des données potentielles par un utilisateur vers une application de stockage cloud non approuvée.
 
 ### <a name="prerequisites"></a>Prérequis
 
-Vous devez disposer de l’application G Suite, Office 365 ou Salesforce connectée à l’aide de [connecteurs d’application](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+Configurez le chargement automatique des journaux pour les rapports de Cloud Discovery continus, comme décrit dans [configurer le chargement automatique des journaux pour les rapports continus](configure-automatic-log-upload-for-continuous-reports.md).
 
 ### <a name="steps"></a>Étapes
 
-1.  Sur le **stratégies** page, créez une nouvelle **stratégie d’application OAuth**.
+1.  Sur la page **stratégies** , modifiez l' **exfiltration des données**de stratégie intégrée en applications non approuvées.
 
-2.  Sélectionnez le filtre **application** et définir l’application de la stratégie doit couvrir, G Suite, Office 365 ou Salesforce.
+2.  Sélectionnez la catégorie de l' **application** de filtre est égale à **stockage cloud**.
 
-3.  Sélectionnez **niveau d’autorisation** filtrer equals **haute** (disponible pour G Suite et Office 365).
+3.  Cochez la case pour **créer une alerte pour chaque événement correspondant avec la gravité de la stratégie**.
 
-4.  Ajoutez le filtre **utilisation communautaire** est égal à **rares**.
+4.  Configurez les actions à entreprendre lorsqu’une alerte est déclenchée.
 
-4.  Configurer les actions à entreprendre lorsqu’une alerte est déclenchée. Par exemple, pour Office 365, consultez **révoquer l’application** pour les applications OAuth détectées par la stratégie.
+## <a name="detect-risky-oauth-apps"></a>Détecter les applications OAuth risquées
+
+Bénéficiez d’une visibilité et d’un contrôle sur les [applications OAuth](investigate-risky-oauth.md) installées dans des applications telles que G suite, Office 365 et Salesforce. Les applications OAuth qui demandent des autorisations élevées et qui ont une utilisation communautaire rare peuvent être considérées comme risquées.
+
+### <a name="prerequisites"></a>Prérequis
+
+L’application G suite, Office 365 ou Salesforce doit être connectée à l’aide de [connecteurs d’application](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+
+### <a name="steps"></a>Étapes
+
+1.  Dans la page **stratégies** , créez une nouvelle **stratégie d’application OAuth**.
+
+2.  Sélectionnez l' **application** de filtre et définissez l’application que la stratégie doit couvrir, G suite, Office 365 ou Salesforce.
+
+3.  Sélectionnez le filtre de **niveau d’autorisation** est égal à **élevé** (disponible pour G suite et O365).
+
+4.  Ajoutez le filtre l’utilisation de la **communauté** est égale à **rare**.
+
+4.  Configurez les actions à entreprendre lorsqu’une alerte est déclenchée. Par exemple, pour Office 365, activez la case à cocher **révoquer l’application** pour les applications OAuth détectées par la stratégie.
 
 > [!NOTE]
->  Prise en charge pour les magasins d’applications de G Suite, Office 365 et Salesforce.
+>  Pris en charge pour les magasins d’applications G suite, Office 365 et Salesforce.
 
 ## <a name="next-steps"></a>Étapes suivantes 
 

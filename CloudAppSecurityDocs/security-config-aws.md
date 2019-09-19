@@ -2,9 +2,9 @@
 title: Obtenir des recommandations en matière de configuration de la sécurité pour AWS-Cloud App Security | Microsoft Docs
 description: Cet article fournit des informations sur la façon d’obtenir des recommandations en matière de configuration de la sécurité dans Cloud App Security en s’intégrant à Amazon Web Services.
 keywords: ''
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 8/1/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: c6d8f8af-867b-43ab-adee-f06520577fe7
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5464ad83485068d41e6930c31b057d2530622d85
-ms.sourcegitcommit: 3fe4489cbb2c7d7e8f26aa358511e9f738596e98
+ms.openlocfilehash: 40d8d1f578f826f1782cfbf643f8b2db136f24d2
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69013249"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71084999"
 ---
 # <a name="security-configuration-for-aws"></a>Configuration de la sécurité pour AWS
 
@@ -30,7 +30,7 @@ Microsoft Cloud App Security vous fournit une évaluation de la configuration de
 
 ## <a name="prerequisites"></a>Prérequis
 
-- Le concentrateur de sécurité AWS doit être configuré pour toutes les régions de votre compte AWS. Pour plus d’informations, consultez Configuration du concentrateur de [sécurité AWS](https://go.microsoft.com/fwlink/?linkid=2100208).
+- Le concentrateur de sécurité AWS doit être configuré pour toutes les régions de votre compte AWS. Pour plus d’informations, consultez [configuration du concentrateur de sécurité AWS](https://go.microsoft.com/fwlink/?linkid=2100208).
     > [!NOTE]
     > Si c’est la première fois que vous activez le hub de sécurité, plusieurs heures peuvent être nécessaires pour que les données initiales deviennent disponibles.
 - Votre Amazon Web Services doit être connectée à Cloud App Security. Pour plus d’informations, consultez [connecter AWS à Microsoft Cloud App Security](connect-aws-to-microsoft-cloud-app-security.md).

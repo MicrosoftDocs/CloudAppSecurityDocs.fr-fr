@@ -1,7 +1,7 @@
 ---
 title: Créer des stratégies pour contrôler les activités dans Cloud App Security
 description: Cet article fournit des instructions sur la création et l’utilisation de stratégies d’activité.
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
 ms.service: cloud-app-security
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: e9e5cc5aeb0e71bb30469176c4580f2f7c11d156
-ms.sourcegitcommit: c2dea6106266f1ef1790797f484914c20c7baffa
+ms.openlocfilehash: 490a2f56090973991fcb7e236310bd83b3012806
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69489657"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71084869"
 ---
 # <a name="activity-policies"></a>Stratégies d’activité
 

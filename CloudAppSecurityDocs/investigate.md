@@ -2,9 +2,9 @@
 title: Examiner les risques et les activités suspectes des applications cloud – Cloud App Security | Microsoft Docs
 description: Cet article décrit le processus d’investigation des alertes, des problèmes et des activités suspectes à l’aide de Cloud App Security.
 keywords: ''
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 8/11/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: a9b00c2a-2f71-499e-8f57-67e560daedc1
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 7c39307e1e6a01fe23684eb20b3547cb4437e88c
-ms.sourcegitcommit: fec0fd5fcdd9830f59e69e502902bfb7bc90f5ba
+ms.openlocfilehash: 4ef6132edd549f9d2552932bb9532650719331a4
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/11/2019
-ms.locfileid: "68948560"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71084270"
 ---
 # <a name="investigate"></a>Examiner
 
@@ -34,15 +34,15 @@ Les tableaux de bord suivants sont disponibles pour vous aider à étudier les a
 |Tableau de bord|Description|
 |---------------|-----------------|
 |Tableau de bord principal|Vue d’ensemble de l’état du Cloud (utilisateurs, fichiers, activités) et actions requises (alertes, violations d’activité et violations de contenu).|
-|Tableau de bord de l’application: vue d’ensemble|Vue d’ensemble de l’utilisation de l’application par emplacement, graphiques d’utilisation par nombre d’utilisateurs.|
-|Tableau de bord de l’application: info|Informations sur les détails de l’application, la sécurité et la conformité.|
-|Tableau de bord de l’application: Insights<br />*(le cas échéant)*|Analyse des données stockées dans l’application, ventilées par type de fichier et niveau de partage de fichiers.|
-|Tableau de bord de l’application: fichiers<br />*(le cas échéant)*|Explorez les fichiers; possibilité de filtrer en fonction du propriétaire, du niveau de partage, etc. Effectuer des actions de gouvernance comme la mise en quarantaine.|
-|Tableau de bord d’application: comptes|Vue d’ensemble de tous les comptes/utilisateurs liés à l’application.|
-|Tableau de bord de l’application: Applications OAuth<br />*(le cas échéant)*|Explorez les applications OAuth actuellement déployées, comme G suite, et définissez des stratégies.|
-|Tableau de bord d’application: journal d’activité|Explorez l’ensemble de l’activité de l’application; possibilité de filtrer en fonction des utilisateurs, de l’adresse IP, etc.|
-|Tableau de bord de l’application: alertes|Explorez toutes les alertes d’application; possibilité de filtrer en fonction de l’État, de la catégorie, de la gravité et bien plus encore.|
-|Tableau de bord d’application: comptes avec privilèges spéciaux<br />*(Salesforce uniquement)*|Vue d’ensemble des utilisateurs par type d’utilisateur privilégié.|
+|Tableau de bord de l’application : vue d’ensemble|Vue d’ensemble de l’utilisation de l’application par emplacement, graphiques d’utilisation par nombre d’utilisateurs.|
+|Tableau de bord de l’application : info|Informations sur les détails de l’application, la sécurité et la conformité.|
+|Tableau de bord de l’application : Insights<br />*(le cas échéant)*|Analyse des données stockées dans l’application, ventilées par type de fichier et niveau de partage de fichiers.|
+|Tableau de bord de l’application : fichiers<br />*(le cas échéant)*|Explorez les fichiers ; possibilité de filtrer en fonction du propriétaire, du niveau de partage, etc. Effectuer des actions de gouvernance comme la mise en quarantaine.|
+|Tableau de bord d’application : comptes|Vue d’ensemble de tous les comptes/utilisateurs liés à l’application.|
+|Tableau de bord de l’application : Applications OAuth<br />*(le cas échéant)*|Explorez les applications OAuth actuellement déployées, comme G suite, et définissez des stratégies.|
+|Tableau de bord d’application : journal d’activité|Explorez l’ensemble de l’activité de l’application ; possibilité de filtrer en fonction des utilisateurs, de l’adresse IP, etc.|
+|Tableau de bord de l’application : alertes|Explorez toutes les alertes d’application ; possibilité de filtrer en fonction de l’État, de la catégorie, de la gravité et bien plus encore.|
+|Tableau de bord d’application : comptes avec privilèges spéciaux<br />*(Salesforce uniquement)*|Vue d’ensemble des utilisateurs par type d’utilisateur privilégié.|
 |Tableau de bord Utilisateur|Vue d’ensemble complète du profil utilisateur dans le Cloud, notamment des groupes, emplacements, activités récentes, alertes associées et navigateurs utilisés.|
 
 ##  <a name="sanctionapp"></a> Marquer les applications comme approuvées ou non

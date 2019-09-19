@@ -2,9 +2,9 @@
 title: Se connecter Amazon Web Services avec Cloud App Security
 description: Cet article vous explique comment connecter votre application AWS à Cloud App Security à l’aide du connecteur d’API, afin de bénéficier de plus de contrôle et de visibilité lors de l’utilisation.
 keywords: ''
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 8/13/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: a6b4c745-cd5c-4458-819c-80cbe8b25f29
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 93cdbd2875aceadce5aab680c1d1ecd9c974f809
-ms.sourcegitcommit: 3fe4489cbb2c7d7e8f26aa358511e9f738596e98
+ms.openlocfilehash: 34e1c361d5b1a49093f927dfde1ae2391570b958
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69024116"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71083827"
 ---
 # <a name="connect-aws-to-microsoft-cloud-app-security"></a>Connecter AWS à Microsoft Cloud App Security
 
@@ -28,10 +28,10 @@ ms.locfileid: "69024116"
 
 Cet article fournit des instructions pour connecter votre compte Amazon Web Services (AWS) existant à Microsoft Cloud App Security à l’aide des API du connecteur.
 
-Vous pouvez connecter l’un des deux AWS suivants au Cloud App Security connexions suivantes:
+Vous pouvez connecter l’un des deux AWS suivants au Cloud App Security connexions suivantes :
 
 - **Audit de sécurité**: Cette connexion vous permet de bénéficier de plus de visibilité et de contrôle lors de l’utilisation de l’application AWS.
-- **Configuration**de la sécurité: Cette connexion vous donne des recommandations de sécurité fondamentales basées sur la référence de la sécurité Internet (CIS) du Centre pour AWS.
+- **Configuration**de la sécurité : Cette connexion vous donne des recommandations de sécurité fondamentales basées sur la référence de la sécurité Internet (CIS) du Centre pour AWS.
 
 Dans la mesure où vous pouvez ajouter une connexion ou les deux, les étapes décrites dans cet article sont écrites en tant qu’instructions indépendantes. Si vous avez déjà ajouté une des connexions, le cas échéant, modifiez les configurations existantes.
 
@@ -117,7 +117,7 @@ Dans la mesure où vous pouvez ajouter une connexion ou les deux, les étapes d�
 
 1. Dans le portail Cloud App Security, cliquez sur **Examiner**, puis sur **Applications connectées**.
 
-1. Dans la page **connecteurs d’application** , pour fournir les informations d’identification du connecteur AWS, effectuez l’une des opérations suivantes:
+1. Dans la page **connecteurs d’application** , pour fournir les informations d’identification du connecteur AWS, effectuez l’une des opérations suivantes :
 
     **Pour un nouveau connecteur**
 
@@ -174,7 +174,7 @@ Suivez les étapes [de connexion de l’audit de sécurité AWS](#how-to-connect
 
 1. Dans le portail Cloud App Security, cliquez sur **Examiner**, puis sur **Applications connectées**.
 
-1. Dans la page **connecteurs d’application** , pour fournir les informations d’identification du connecteur AWS, effectuez l’une des opérations suivantes:
+1. Dans la page **connecteurs d’application** , pour fournir les informations d’identification du connecteur AWS, effectuez l’une des opérations suivantes :
 
     **Pour un nouveau connecteur**
     1. Cliquez sur le signe plus, puis sur **Amazon Web services**.<br>

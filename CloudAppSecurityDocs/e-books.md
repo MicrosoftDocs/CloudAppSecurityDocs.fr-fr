@@ -1,18 +1,18 @@
 ---
 title: Lire notre livre électronique-Cloud App Security | Microsoft Docs
 description: Affiche la liste des livres électroniques, y compris une description.
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
 ms.service: cloud-app-security
 ms.topic: conceptual
 ms.date: 8/22/2019
 ms.collection: M365-security-compliance
-ms.openlocfilehash: a890f59a14842b217a1707b8950cb67b6d3f3799
-ms.sourcegitcommit: 33257c7a1017ee0a4ff8f4f8cc7ef018c9be00e5
+ms.openlocfilehash: 35c20daf40d2e1b5c61bcc7d9d2f3589dbb95834
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2019
-ms.locfileid: "70206612"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71084599"
 ---
 # <a name="microsoft-cloud-app-security-webinars"></a>Webinaires Microsoft Cloud App Security
 

@@ -1,10 +1,10 @@
 ---
-title: Configurer les paramètres de votre organisation dans Cloud App Security
+title: Configurez les paramètres de votre organisation dans Cloud App Security
 description: Cet article explique comment fournir des informations sur votre organisation dans Cloud App Security.
 keywords: ''
-author: ShlomoSagir-MS
-ms.author: ShlomoSagir-MS
-manager: ShlomoSagir-MS
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 6/24/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a05ea9152c0071ee61b9e5037dd00cb1de328da5
-ms.sourcegitcommit: ae617f23b36be665439dcedfbcf346715a526d7e
+ms.openlocfilehash: 6ca87c02f9eed0bbba8383d46ebb621dc4be31b5
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67411810"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71084460"
 ---
 # <a name="basic-setup-for-cloud-app-security"></a>Configuration de base pour Cloud App Security
 
@@ -29,7 +29,7 @@ ms.locfileid: "67411810"
 La procédure suivante contient des instructions pour personnaliser le portail Microsoft Cloud App Security.
 
 ## <a name="prerequisites"></a>Prérequis 
-Pour accéder au portail, il est nécessaire d’ajouter que les adresses IP suivantes à votre pare-feu autorise la liste fournir l’accès pour le portail Cloud App Security :  
+Pour l’accès au portail, il est nécessaire d’ajouter les adresses IP suivantes à la liste verte de votre pare-feu pour fournir l’accès au portail Cloud App Security :  
   
 - 104.42.231.28  
   
@@ -50,13 +50,13 @@ Pour accéder au portail, il est nécessaire d’ajouter que les adresses IP sui
 
     - Les utilisateurs dans des domaines qui ne sont pas configurés comme internes sont marqués comme externes. Aucune recherche d’activités ou de fichiers n’est exécutée sur les utilisateurs externes.
 
-1. Sous **automatique se déconnecter**, spécifiez la durée pendant laquelle une session peut rester inactive avant que la session est automatiquement déconnectée.
+1. Sous **déconnexion automatique**, spécifiez la durée pendant laquelle une session peut rester inactive avant que la session ne soit déconnectée automatiquement.
 
 1. En cas d’intégration à Azure Information Protection, consultez [Intégration d’Azure Information Protection](azip-integration.md) pour obtenir des informations. 
 
     - Pour utiliser l’intégration à Azure Information Protection, vous devez activer le [connecteur d’applications pour Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
   
-1. Si vous intégrez avec l’intégration de Azure-Protection avancée contre les menaces, consultez [intégration d’Azure Advanced Threat Protection](azip-integration.md) pour plus d’informations.
+1. Si vous effectuez l’intégration avec l’intégration d’Azure-protection avancée contre les menaces, consultez [intégration d’Azure-protection avancée contre les menaces](azip-integration.md) pour plus d’informations.
 
 1. Grâce à cet écran, vous pouvez à tout moment sauvegarder vos paramètres de portail. Cliquez sur **Exporter les paramètres de portail** pour créer un fichier json de tous vos paramètres de portail, notamment les règles de stratégie, les groupes d’utilisateurs et les plages d’adresses IP.  
   

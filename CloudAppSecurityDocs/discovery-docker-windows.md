@@ -2,9 +2,9 @@
 title: Lancer des rapports continus pour Cloud App Security à l’aide d’un Docker sur Windows | Microsoft Docs
 description: Cet article décrit la procédure de configuration du chargement automatique des journaux pour des rapports continus dans Cloud App Security à l’aide d’un Docker sur Windows dans une serveur local.
 keywords: ''
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 8/7/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ff73a393-da43-4954-8b02-38d2a48d39b3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4d9e8e8f4ba01dba7da8f792315d9aa2f033a157
-ms.sourcegitcommit: 39faa183e7d781660d475c79c827adbb4cc635fb
+ms.openlocfilehash: 724ff32cbdf4d3d81d60ac1359b5c07fe22bb6e1
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68861594"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71084744"
 ---
 # <a name="docker-on-windows-on-premises"></a>Docker sur Windows en local
 

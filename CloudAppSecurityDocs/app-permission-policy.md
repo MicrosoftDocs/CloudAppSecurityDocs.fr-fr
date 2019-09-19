@@ -2,9 +2,9 @@
 title: Créer des stratégies pour contrôler les applications OAuth dans Cloud App Security
 description: Cet article fournit des instructions sur la création et l’utilisation de stratégies d’autorisation d’application dans Microsoft Cloud App Security.
 keywords: ''
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 7/25/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 9f68302c-bb3d-450c-bbf5-f8130cb163e3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 93d23f46dc5c0225d32f75876386375b402f3897
-ms.sourcegitcommit: d1eb8ccf09840c659ba7170a2b92cd62d9d97a02
+ms.openlocfilehash: 2046536e45f6ecd7f1ede6249c69b0c7f09b6f57
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68494215"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71083851"
 ---
 # <a name="oauth-app-policies"></a>Stratégies d’application OAuth
 
@@ -49,7 +49,7 @@ Sinon, vous pouvez aussi créer la stratégie en cliquant sur **Contrôler** sui
 
 ## <a name="oauth-app-anomaly-detection-policies"></a>Stratégies de détection des anomalies d’application OAuth
 
-En plus des stratégies d’application OAuth que vous pouvez créer, les stratégies de détection des anomalies prêtes à l’emploi suivantes permettent de profiler les métadonnées des applications OAuth pour identifier celles qui sont potentiellement malveillantes:
+En plus des stratégies d’application OAuth que vous pouvez créer, les stratégies de détection des anomalies prêtes à l’emploi suivantes permettent de profiler les métadonnées des applications OAuth pour identifier celles qui sont potentiellement malveillantes :
 
 | Nom de la stratégie | Description de la stratégie |
 | --- | --- |

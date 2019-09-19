@@ -2,9 +2,9 @@
 title: Contrôler quelles applications cloud tierces OAuth obtiennent des autorisations - Cloud App Security | Microsoft Docs
 description: Cet article fournit des informations sur la manière dont vous pouvez contrôler, bloquer et autoriser les applications OAuth tierces.
 keywords: ''
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 9/1/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d65c332cbf464a17fc3919d1a08fd7ff7a7a9493
-ms.sourcegitcommit: 0b78b13bc163bfcd6f2ae13b1f57acee05e5b423
+ms.openlocfilehash: 856acde6b2c0339921b8bd198b2e42cf4e5cfd1b
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2019
-ms.locfileid: "70208887"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71084221"
 ---
 # <a name="manage-oauth-apps"></a>Gérer les applications OAuth
 
@@ -84,7 +84,7 @@ La page Applications OAuth fournit les informations suivantes sur chaque applica
 
 ## <a name="revoke-app-and-notify-user"></a>Révoquer l’application et avertir l’utilisateur
 
-Pour G Suite et Salesforce, vous pouvez révoquer l’autorisation d’une application ou avertir l’utilisateur qu’il doit la changer. Quand vous révoquez l’autorisation, elle supprime toutes les autorisations qui ont été accordées à l’application sous «applications d’entreprise» dans Azure AD.
+Pour G Suite et Salesforce, vous pouvez révoquer l’autorisation d’une application ou avertir l’utilisateur qu’il doit la changer. Quand vous révoquez l’autorisation, elle supprime toutes les autorisations qui ont été accordées à l’application sous « applications d’entreprise » dans Azure AD.
 
 1. Dans la page **Applications OAuth**, cliquez sur les points de suspension à la fin de la ligne de l’application et sélectionnez **Notifier l’utilisateur**. Par défaut, l’utilisateur sera informé comme suit : *Vous avez autorisé l’application à accéder à votre compte G Suite. Cette application est en conflit avec la stratégie de sécurité de votre organisation. Vous devez fournir ou révoquer les autorisations que vous avez attribuées à cette application dans votre compte G Suite. Pour révoquer l’accès à l’application, accédez à : https://security.google.com/settings/security/permissions?hl=en&pli=1 Sélectionnez l’application et cliquez sur « Révoquer l’accès » dans la barre de menu de droite.* Vous pouvez personnaliser le message envoyé.
 2. Vous pouvez également révoquer des autorisations d’utilisation de l’application pour l’utilisateur. Cliquez sur l’icône à la fin de la ligne de l’application dans le tableau et sélectionnez **Révoquer l’application**.
@@ -101,9 +101,9 @@ Vous pouvez interroger des applications OAuth dans la vue **De base** ou la vue 
 
 ## <a name="oauth-app-auditing"></a>Audit d’application OAuth
 
-Cloud App Security audite toutes les activités d’autorisation OAuth pour vous fournir une surveillance et une investigation complètes sur les activités effectuées. Vous pouvez également exporter les détails des utilisateurs qui ont autorisé une application OAuth spécifique, en fournissant des informations supplémentaires sur les utilisateurs, que vous pouvez ensuite utiliser pour une analyse plus poussée.
+Cloud App Security audite toutes les activités d’autorisation OAuth, vous permettant ainsi de superviser et d’analyser les activités effectuées de manière approfondie. Vous pouvez également exporter les détails des utilisateurs qui ont autorisé une application OAuth spécifique, en fournissant des informations supplémentaires sur les utilisateurs, que vous pouvez ensuite utiliser pour une analyse plus poussée.
 
-Pour exporter le journal, procédez comme suit:
+Pour exporter le journal, procédez comme suit :
 
 1. Sur la page **applications OAuth** , sur la ligne où l’application correspondante s’affiche, sous **autorisé par**, cliquez sur le lien indiquant le nombre d’utilisateurs qui ont autorisé l’application.
 

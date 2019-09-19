@@ -2,9 +2,9 @@
 title: Obtenir des recommandations en matière de configuration de la sécurité pour Azure-Cloud App Security | Microsoft Docs
 description: Cet article fournit des informations sur l’obtention de recommandations sur la configuration de la sécurité dans Cloud App Security avec l’intégration d’Azure Security Center.
 keywords: ''
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 8/1/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: c6d8f8af-867b-43ab-adee-f06520577fe7
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: eba84847208b3dc020e9efec47a4215439751a60
-ms.sourcegitcommit: 3fe4489cbb2c7d7e8f26aa358511e9f738596e98
+ms.openlocfilehash: c68cf2cb1df5c61a2f3685818320cd3ffd30eb15
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69013226"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71084973"
 ---
 # <a name="security-configuration-for-azure"></a>Configuration de la sécurité pour Azure
 
