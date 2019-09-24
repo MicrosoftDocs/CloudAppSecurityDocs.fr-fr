@@ -2,9 +2,9 @@
 title: Examiner des applications OAuth à risque – Cloud App Security | Microsoft Docs
 description: Cet article fournit des informations sur la façon d’examiner des applications OAuth à risque dans Cloud App Security.
 keywords: ''
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 9/1/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5c4e9207445a603ca6410e4aa3440ce429cf8e6c
-ms.sourcegitcommit: 0b78b13bc163bfcd6f2ae13b1f57acee05e5b423
+ms.openlocfilehash: adb9c8cceaab8158c194256ccd1e5cb0ecbaaa8a
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2019
-ms.locfileid: "70208846"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71084354"
 ---
-# <a name="tutorial-investigate-risky-oauth-apps"></a>Tutoriel : Examiner des applications OAuth à risque
+# <a name="tutorial-investigate-risky-oauth-apps"></a>Didacticiel : Examiner des applications OAuth à risque
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 OAuth est un standard ouvert pour l’authentification basée sur un jeton et sur une autorisation. OAuth permet à des services tiers d’utiliser les informations de compte d’un utilisateur sans exposer le mot de passe d’utilisateur. OAuth fait Office d’intermédiaire pour le compte de l’utilisateur et fournit le service avec un jeton d’accès qui autorise le partage d’informations de compte spécifiques.
 

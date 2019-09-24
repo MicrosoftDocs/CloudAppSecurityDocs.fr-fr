@@ -1,19 +1,19 @@
 ---
 title: Étendre la gouvernance à la correction des points de terminaison | Microsoft Docs
 description: Ce tutoriel décrit le processus de configuration des alertes de stratégie Microsoft Cloud App Security pour déclencher des workflows Microsoft Flow afin d’exécuter des actions correctives Microsoft Defender Advanced Threat Protection.
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
 ms.service: cloud-app-security
 ms.topic: tutorial
 ms.date: 9/8/2019
-ms.openlocfilehash: ab9ab1a0e616ec25f7316691e6f747b20226cc10
-ms.sourcegitcommit: e1b3e3b45d39e46734e3a994bd8d0d1459be585a
+ms.openlocfilehash: df591023c15990ec4c00060c34a9d5671b5da3b1
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2019
-ms.locfileid: "70800868"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71084949"
 ---
-# <a name="tutorial-extend-governance-to-endpoint-remediation"></a>Tutoriel : Étendre la gouvernance à la correction des points de terminaison
+# <a name="tutorial-extend-governance-to-endpoint-remediation"></a>Didacticiel : Étendre la gouvernance à la correction des points de terminaison
 
 Cloud App Security fournit des options de gouvernance prédéfinies pour les stratégies. Il permet notamment de suspendre un utilisateur ou de rendre un fichier privé. À l’aide de l’intégration native avec Microsoft Flow, vous pouvez utiliser un large écosystème de connecteurs SaaS (Software as a service) pour générer des workflows afin d’automatiser les processus, dont la correction.
 
@@ -74,7 +74,7 @@ Si vous n’avez pas de plan Microsoft Flow, [inscrivez-vous pour un compte d’
 > [!NOTE]
 > Si vous avez déjà créé un flux en utilisant un connecteur Azure AD, Microsoft Flow réutilise automatiquement le jeton et vous pouvez ignorer cette étape.
 
-1. Cliquez sur **Create (Créer)** .
+1. Cliquez sur **Créer**.
 
     ![Capture d’écran de la page de modèles de Microsoft Flow, montrant le bouton Créer Cloud App Security.](media/tutorial-flow-templates-create.png)
 
@@ -88,7 +88,7 @@ Si vous n’avez pas de plan Microsoft Flow, [inscrivez-vous pour un compte d’
 
     ![Capture d’écran de la fenêtre HTTP avec Azure AD, montrant les champs des ressources et le bouton de connexion.](media/tutorial-flow-templates-azure.png)
 
-1. Cliquez sur **Continue** (Continuer).
+1. Cliquez sur **Continuer**.
 
     ![Capture d’écran de la fenêtre des modèles Microsoft Flow, montrant les actions effectuées et le bouton Continuer.](media/tutorial-flow-templates-continue.png)
 

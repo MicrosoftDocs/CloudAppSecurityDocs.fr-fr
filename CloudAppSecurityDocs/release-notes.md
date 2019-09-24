@@ -1,9 +1,9 @@
 ---
 title: Nouveautés de Cloud App Security
 description: Cet article est mis à jour fréquemment pour vous informer des nouveautés de la dernière version de Cloud App Security.
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 9/1/2019
 ms.topic: overview
 ms.service: cloud-app-security
@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6fe0f633b55a718b9a4b2be8fef2de4be87cd0ca
-ms.sourcegitcommit: 0b78b13bc163bfcd6f2ae13b1f57acee05e5b423
+ms.openlocfilehash: 4fa24ef9d5d6dae715eedbf9967b3c2251eb03a5
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2019
-ms.locfileid: "70209034"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71084977"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Nouveautés de Microsoft Cloud App Security
 
@@ -96,7 +96,7 @@ Cloud App Security prend désormais en charge l’action de gouvernance **Corbei
 - **Nouvelles applications proposées pour le contrôle d’application par accès Cloud**<br>
 Le contrôle d’application par accès conditionnel pour les applications proposées suivantes est généralement disponible :
 
-    - OneDrive Entreprise
+    - OneDrive Entreprise
     - SharePoint Online
     - Azure DevOps
     - Exchange Online
@@ -184,7 +184,7 @@ Microsoft Cloud App Security prend désormais en charge le rôle de lecteur gén
 
 ## <a name="cloud-app-security-release-145"></a>Cloud App Security version 145
 
-Date de publication : 17 mars 2019
+Date de publication : 17 mars 2019
 
 - **L’intégration de Microsoft Defender ATP est en disponibilité générale** <br>
 L’année dernière, nous avons annoncé l’[intégration à Windows Defender Advanced Threat Protection](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Microsoft-Cloud-App-Security-and-Windows-Defender-ATP-better/ba-p/263265) qui améliore la découverte de Shadow IT dans votre organisation et l’étend au-delà du réseau d’entreprise. [Activée en un seul clic](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWtNmG), nous sommes heureux d’annoncer que cette intégration unique est maintenant en disponibilité générale.
@@ -525,9 +525,9 @@ Date de publication : 4 mars 2018
 
 ## <a name="cloud-app-security-release-117"></a>Cloud App Security version 117
 
-Date de publication : 20 février 2018
+Date de publication : 20 février 2018
 
-- L’intégration plus poussée de Cloud App Security avec Azure Information Protection vous permet désormais de protéger les fichiers dans G Suite. Cette fonctionnalité en préversion publique vous permet d’analyser et de classifier des fichiers dans G Suite, et d’appliquer automatiquement des étiquettes Azure Information Protection pour la protection. Pour plus d’informations, consultez [Intégration d’Azure Information Protection](azip-integration.md).
+- L’intégration approfondie de Cloud App Security avec Azure Information Protection vous permet désormais de protéger des fichiers dans G Suite. Cette fonctionnalité en préversion publique vous permet d’analyser et de classifier des fichiers dans G Suite, et d’appliquer automatiquement des étiquettes Azure Information Protection pour la protection. Pour plus d’informations, consultez [Intégration d’Azure Information Protection](azip-integration.md).
 
 - Cloud Discovery prend désormais en charge [Digital Arts i-FILTER](https://www.daj.jp/en/products/if/).
 

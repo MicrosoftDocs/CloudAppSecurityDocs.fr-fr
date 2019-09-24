@@ -2,9 +2,9 @@
 title: Qu’est-ce que Cloud App Security ?
 description: Cet article décrit Microsoft Cloud App Security et son fonctionnement.
 keywords: ''
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 8/15/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: bee3eb97503d4ce0da3d7fbe04ea9781d759c5c7
-ms.sourcegitcommit: 7eecf2f863c410abe0ba6eafd65777973de011cb
+ms.openlocfilehash: 5976d520187ba9e76c314bcddae5dd8c9b5f553b
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/18/2019
-ms.locfileid: "69572984"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71084796"
 ---
 # <a name="microsoft-cloud-app-security-overview"></a>Présentation de Microsoft Cloud App Security
 
@@ -90,7 +90,7 @@ Le contrôle d’application par accès conditionnel de Microsoft Cloud App Secu
 - Obtenir une visibilité sur les points de terminaison non protégés afin de surveiller les opérations réalisées sur les appareils non gérés
 - Contrôler l’accès depuis des réseaux hors entreprise ou des adresses IP à risque
 
-### <a name="policy-control"></a>Contrôle de stratégie  
+### <a name="policy-control"></a>Contrôle des stratégies  
 
 Vous pouvez utiliser des stratégies pour définir le comportement de vos utilisateurs dans le cloud. Utilisez des stratégies pour détecter des comportements à risques, des violations, ou des points de données et des activités suspectes dans votre environnement cloud. Si nécessaire, vous pouvez utiliser des stratégies pour intégrer des processus de correction de façon à réduire complètement les risques. Les types de stratégies sont en corrélation avec les différents types d’informations que vous voulez collecter sur votre environnement cloud et les types d’actions correctives que vous pouvez entreprendre.  
 
