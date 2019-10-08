@@ -4,19 +4,19 @@ description: Cet article est mis à jour fréquemment pour vous informer des nou
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 09/25/2019
+ms.date: 10/06/2019
 ms.topic: overview
 ms.service: cloud-app-security
 ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6c78fc716caa1c43c0d0b1a24f5dfaa8adcd72e1
-ms.sourcegitcommit: be21e0f68f5e4d23bde661485bd9338e74bd6e45
+ms.openlocfilehash: 97d006399582e653322910803aaeec04f74582d0
+ms.sourcegitcommit: 2e8488efcc2253e0b5fa33db308e4986a9cdefd5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71307720"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71997425"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Nouveautés de Microsoft Cloud App Security
 
@@ -25,6 +25,28 @@ ms.locfileid: "71307720"
 Cet article est mis à jour fréquemment pour vous informer des nouveautés de la dernière version de Cloud App Security.
 
 Flux RSS : Recevez une notification quand cette page est mise à jour en copiant et collant l’URL suivante dans votre lecteur de flux : `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
+
+## <a name="cloud-app-security-release-159"></a>Cloud App Security version 159
+
+Publication : 6 octobre 2019
+
+- **Nouvel analyseur de journal Cloud Discovery ContentKeeper**  
+Cloud App Security Cloud Discovery analyse une large gamme de journaux de trafic pour classer et noter les applications. Cloud Discovery intègre désormais un analyseur de journal intégré pour prendre en charge les formats de journaux ContentKeeper. Consultez la liste des analyseurs de journal pris en charge dans [Pare-feu et proxys pris en charge](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
+
+- **Nouvelles détections**  
+Les nouvelles stratégies de détection d'anomalies suivantes sont prêtes à l’emploi et automatiquement activées :
+
+  - **Activité suspecte de suppression d’e-mails (préversion)**  
+    Vous avertit lorsqu'un utilisateur effectue des activités inhabituelles de suppression d'e-mails. Cette stratégie peut vous aider à détecter les piratages de boîtes aux lettres d’utilisateurs par des vecteurs d'attaque potentiels comme les communications de commande et de contrôle (C&C/C2) par e-mail.
+
+  - **Multiples partages de rapports Power BI (préversion)**  
+    Vous alerte lorsqu'un utilisateur effectue un nombre inhabituel d'activités de partage de rapports Power BI par rapport à la référence apprise.
+
+  - **Multiples activités de création de machines virtuelles (préversion)**  
+    Vous alerte lorsqu'un utilisateur effectue un nombre inhabituel d'activités de création de machines virtuelles par rapport à la référence apprise. S’applique actuellement à Azure.
+
+  - **Multiples activités de suppression de stockage (préversion)**  
+    Vous alerte lorsqu'un utilisateur effectue un nombre inhabituel d'activités de suppression de stockage par rapport à la référence apprise. S’applique actuellement à Azure.
 
 ## <a name="cloud-app-security-release-158"></a>Cloud App Security version 158
 
