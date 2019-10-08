@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 838676a48aa92016f6ff3fc198423668f0ecaf77
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: f6c3408b7887ac35924ff647bbe67d8525bef9ed
+ms.sourcegitcommit: 2e8488efcc2253e0b5fa33db308e4986a9cdefd5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71084914"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71997397"
 ---
 # <a name="set-up-cloud-discovery"></a>Configurer Cloud Discovery
 
@@ -63,6 +63,7 @@ Le processus de génération d’une évaluation des risques se compose des éta
 - Cisco IronPort WSA
 - Cisco Meraki – Journal des URL
 - Clavister NGFW (Syslog)
+- ContentKeeper
 - Digital Arts i-FILTER
 - Forcepoint
 - Fortinet Fortigate
@@ -102,6 +103,7 @@ Attributs de données (selon la documentation du fournisseur) :
 | Cisco Ironport WSA | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** |
 | Cisco Meraki | **Oui** | **Oui** | Non | **Oui** | Non | Non |
 | Clavister NGFW (Syslog) | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** |
+| ContentKeeper | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** |
 | SonicWall (anciennement Dell) | **Oui** | **Oui** | Non | **Oui** | **Oui** | **Oui** |
 | Digital Arts i-FILTER | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** |
 | ForcePoint LEEF |**Oui**|**Oui**|**Oui**|**Oui**|**Oui**|**Oui**|

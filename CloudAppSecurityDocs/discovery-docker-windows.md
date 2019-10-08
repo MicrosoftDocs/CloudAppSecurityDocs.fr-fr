@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ff73a393-da43-4954-8b02-38d2a48d39b3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 724ff32cbdf4d3d81d60ac1359b5c07fe22bb6e1
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: ab709236d98ee33fbf6ebf7b2f9d5cdfcb5a32ab
+ms.sourcegitcommit: 207543b3f7d0489b1275d20c3543964bc6525d1a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71084744"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71996002"
 ---
 # <a name="docker-on-windows-on-premises"></a>Docker sur Windows en local
 
@@ -29,13 +29,13 @@ Vous pouvez configurer le chargement automatique des journaux pour des rapports 
 
 ## <a name="prerequisites"></a>Prérequis
 
-- Système d’exploitation : **Windows 10** (Fall Creators Update) et Windows Server **version 1709+**
+- Système d’exploitation : **Windows 10** (mise à jour des créateurs de automne) ou Windows Server **version 1709 +**
 
-- Espace disque: 250 Go
+- Espace disque : 250 Go
 
-- Processeur : 2
+- POURCENTAGE 2
 
-- RAM : 4 Go
+- RAM : 4 Go
 
 - Configurez votre pare-feu, comme décrit dans [Configuration réseau requise](network-requirements.md#log-collector)
 
