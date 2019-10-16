@@ -2,9 +2,9 @@
 title: Créer une stratégie de détection des anomalies Cloud Discovery dans Cloud App Security
 description: Cette rubrique fournit des informations sur l’utilisation des stratégies de détection des anomalies Cloud Discovery.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,16 +15,16 @@ ms.assetid: eaf73af0-7610-4903-b656-8d90b1d2b18c
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a52810dd0eb421dbeac4963a7d97010d272b4966
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: af1f264152beae38ed0d5369bea890509b979b95
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65567666"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72335403"
 ---
 # <a name="cloud-discovery-anomaly-detection-policy"></a>Stratégie de détection des anomalies de Cloud Discovery
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Cet article vous fournit des détails de référence sur les stratégies. Les explications relatives à chaque type de stratégie et aux champs que vous pouvez configurer pour chaque stratégie sont listées.  
   
@@ -68,7 +68,7 @@ Pour chaque stratégie, définissez les paramètres suivants :
 
     - Vous pouvez également sélectionner l’option pour **Utiliser les paramètres par défaut de votre organisation**. Cette option permet d’affecter des valeurs aux paramètres de **Limite d’alerte quotidienne**, d’e-mail et de SMS à partir des paramètres par défaut de votre organisation. Pour définir la valeur par défaut, complétez la **Configuration des alertes**, puis cliquez sur **Enregistrer ces paramètres d’alerte comme valeurs par défaut pour votre organisation**.
 
-6. Cliquez sur **Créer**.
+6. Cliquez sur **Create (Créer)** .
 
 7. Comme avec toutes les stratégies, vous pouvez **Modifier**, **Désactiver** et **Activer** la stratégie en cliquant sur les trois points à la fin de la ligne dans la page **Stratégies**. Par défaut, quand vous créez une stratégie, celle-ci est activée.
 

@@ -2,9 +2,9 @@
 title: Créer des stratégies de session dans Cloud App Security
 description: Cet article décrit la procédure de configuration d’une stratégie de session du contrôle d'application par accès conditionnel de Cloud App Security pour améliorer la visibilité des activités de session utilisateur et bloquer les téléchargements à l’aide des fonctionnalités de proxy inverse.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,20 +15,20 @@ ms.assetid: 745df28a-654c-4abf-9c90-203841169f90
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9f5588893c39aab13c131ad76c89bc189a115b52
-ms.sourcegitcommit: cad2ead82bb76e4749c75eb7a0594e97f40545db
+ms.openlocfilehash: 0288d0f5e570f8b129c7706fa29ad5c4d361c8bf
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68372329"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72336239"
 ---
 # <a name="session-policies"></a>Stratégies de session 
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 >[!div class="step-by-step"]
-[« PRÉCÉDENT : Intégrer et déployer des contrôle d’application par accès conditionnel pour n’importe quelle application»](proxy-deployment-any-app.md)<br>
-[SUIVANT : Guide pratique pour créer une stratégie d’accès »](access-policy-aad.md)
+[« PRÉCÉDENT : intégration et déploiement contrôle d’application par accès conditionnel pour une application »](proxy-deployment-any-app.md)<br>
+[SUIVANT : Guide pratique pour créer une stratégie d’accès »](access-policy-aad.md)
 
 
 Les stratégies de session Microsoft Cloud App Security permettent une surveillance en temps réel au niveau de la session, qui vous offre une visibilité plus précise des applications cloud et la possibilité de prendre différentes mesures selon la stratégie que vous définissez pour une session utilisateur. Au lieu [d’autoriser ou de bloquer complètement l’accès](access-policy-aad.md), avec le contrôle de session, vous pouvez autoriser l’accès pendant la surveillance de la session et/ou limiter des activités de session particulières à l’aide des fonctionnalités du proxy inversé du Contrôle d’accès conditionnel aux applications. 
@@ -79,13 +79,13 @@ Pour créer une stratégie de session, suivez cette procédure :
 
 5. Sous **Source de l’activité** dans la section **Activités remplissant toutes les conditions suivantes**, sélectionnez d’autres filtres d’activité à appliquer à la stratégie. Ces filtres peuvent inclure les options suivantes : 
 
-   - **Balise de l’appareil** : Utilisez ce filtre pour identifier les appareils non gérés.
+   - **Balise de l’appareil** : Utilisez ce filtre pour identifier les appareils non gérés.
 
-   - **Emplacement** : Utilisez ce filtre pour identifier les emplacements inconnus (et par conséquent à risque). 
+   - **Emplacement** : Utilisez ce filtre pour identifier les emplacements inconnus (et par conséquent à risque). 
 
-   - **Adresse IP** : Utilisez ce filtre pour filtrer en fonction d’adresses IP ou utiliser des balises d’adresse IP déjà attribuées. 
+   - **Adresse IP** : Utilisez ce filtre pour filtrer selon des adresses IP ou utiliser des balises d’adresse IP déjà attribuées. 
 
-   - **Étiquette agent utilisateur** : Utilisez ce filtre pour activer l’heuristique afin d’identifier les applications mobiles et de bureau. Ce filtre peut être défini de manière à être égal ou différent de **Client natif**. Ce filtre doit être testé sur vos applications mobiles et de bureau pour chacune des applications cloud.
+   - **Étiquette agent utilisateur** : Utilisez ce filtre pour activer l’heuristique afin d’identifier les applications mobiles et de bureau. Ce filtre peut être défini de manière à être égal ou différent de **Client natif**. Ce filtre doit être testé sur vos applications mobiles et de bureau pour chacune des applications cloud.
        
  
      >[!NOTE]
@@ -105,11 +105,11 @@ Pour créer une stratégie de session, suivez cette procédure :
  
    3. Sous **Actions**, sélectionnez l’un des éléments suivants : 
 
-      - **Tester (Surveiller toutes les activités)** : Définissez cette action pour autoriser explicitement le téléchargement selon les filtres de stratégie que vous définissez.
+      - **Tester (Surveiller toutes les activités)**  : définissez cette action pour autoriser explicitement le téléchargement selon les filtres de stratégie que vous définissez.
 
-      - **Bloquer (Bloquer le téléchargement du fichier et surveiller toutes les activités)** : Définissez cette action pour bloquer explicitement le téléchargement selon les filtres de stratégie que vous définissez. Pour plus d’informations, consultez [Fonctionnement du blocage du téléchargement](#block-download).
+      - **Bloquer (Bloquer le téléchargement de fichiers et surveiller toutes les activités)**  : définissez cette action pour bloquer explicitement le téléchargement selon les filtres de stratégie que vous définissez. Pour plus d’informations, consultez [Fonctionnement du blocage du téléchargement](#block-download).
 
-      - **Protéger (Appliquer une étiquette de classification aux téléchargements et surveiller toutes les activités)** : Cette option est uniquement disponible si vous avez sélectionné **Contrôler le téléchargement du fichier (avec DLP)** sous **Stratégie de session**. Si votre organisation utilise Azure Information Protection, vous pouvez définir une **action** pour appliquer une étiquette de classification définie dans Azure Information Protection sur le fichier. Pour plus d’informations, consultez [Fonctionnement de la protection du téléchargement](#protect-download).
+      - **Protéger (Appliquer l’étiquette de classification pour télécharger et superviser toutes les activités)**  : cette option est uniquement disponible si vous avez sélectionné **Contrôler le téléchargement du fichier (avec DLP)** sous **Stratégie de session**. Si votre organisation utilise Azure Information Protection, vous pouvez définir une **action** pour appliquer une étiquette de classification définie dans Azure Information Protection sur le fichier. Pour plus d’informations, consultez [Fonctionnement de la protection du téléchargement](#protect-download).
 
 7. Vous pouvez **Créer une alerte pour chaque événement correspondant avec le niveau de gravité de la stratégie** et définir un seuil d’alerte. Choisissez si l’alerte doit être envoyée par e-mail, par SMS, ou les deux.
 
@@ -161,8 +161,8 @@ Sélectionnez **Bloquer les activités** pour bloquer certaines activités, que 
 Quand vous sélectionnez **Protéger** sous **Action** dans la stratégie de session Cloud App Security, le contrôle d’application par accès conditionnel applique l’étiquetage et la protection ultérieure d’un fichier, conformément aux filtres de fichiers de la stratégie. Les étiquettes sont configurées dans la console Azure Information Protection, et l’option **Protéger** doit être sélectionnée dans l’étiquette pour qu’elle apparaisse en tant qu’option dans la stratégie Cloud App Security. Quand une étiquette est sélectionnée et qu’un fichier correspondant aux critères de la stratégie Cloud App Security est téléchargé, l’étiquette et la protection correspondante (avec les autorisations) sont appliquées au fichier lors de son téléchargement. Le fichier original reste inchangé dans l’application cloud, tandis que le fichier téléchargé est désormais protégé. Les utilisateurs qui tentent d’accéder au fichier doivent respecter les exigences d’autorisation déterminées par la protection appliquée.  
  
 >[!div class="step-by-step"]
-[« PRÉCÉDENT : Intégrer et déployer des contrôle d’application par accès conditionnel pour n’importe quelle application»](proxy-deployment-any-app.md)<br>
-[SUIVANT : Guide pratique pour créer une stratégie d’accès »](access-policy-aad.md)
+[« PRÉCÉDENT : intégration et déploiement contrôle d’application par accès conditionnel pour une application »](proxy-deployment-any-app.md)<br>
+[SUIVANT : Guide pratique pour créer une stratégie d’accès »](access-policy-aad.md)
 
 ## <a name="next-steps"></a>Étapes suivantes
  

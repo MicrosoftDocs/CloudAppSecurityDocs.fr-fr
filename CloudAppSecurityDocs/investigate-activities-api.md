@@ -1,10 +1,10 @@
 ---
-title: Examiner les activités à l’aide de l’API - Cloud App Security | Microsoft Docs
-description: Cet article fournit des informations sur l’utilisation de l’API pour examiner les activités utilisateur dans Cloud App Security.
+title: Examiner les activités à l’aide de l’API-Cloud App Security | Microsoft Docs
+description: Cet article fournit des informations sur l’utilisation de l’API pour examiner l’activité des utilisateurs dans Cloud App Security.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 03/26/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,47 +15,47 @@ ms.assetid: 0f2f971d-10e3-496d-8004-96d9fad71cae
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: db4e10c7ecc8e82795d3a75fb915757bfada6bb9
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 98b1811fb17b0ade9a7901761e10c9dbb28d01f3
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568293"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72335750"
 ---
 # <a name="investigate-activities-using-the-api"></a>Examiner les activités à l’aide de l’API
 
 *S’applique à : Microsoft Cloud App Security*
 
-Microsoft Cloud App Security vous offre une API REST entièrement pris en charge pour vous permettre d’interagir par programmation avec le service.
+Microsoft Cloud App Security vous fournit une API REST entièrement prise en charge pour vous permettre d’interagir par programmation avec le service.
 
-Vous pouvez utiliser l’API Microsoft Cloud App Security pour examiner les activités effectuées par vos utilisateurs sur des applications cloud connectées. 
+Vous pouvez utiliser les API Microsoft Cloud App Security pour analyser les activités effectuées par vos utilisateurs dans les applications Cloud connectées. 
 
-Le mode de API d’activités Cloud App Security est optimisé pour l’analyse et la récupération de grandes quantités de données (plus de 5 000 activités). L’API analyse les données d’activité des requêtes à plusieurs reprises jusqu'à ce que tous les résultats ont été analysés. 
+Le mode API des activités de Cloud App Security est optimisé pour l’analyse et la récupération de grandes quantités de données (plus de 5 000 activités). L’analyse des API interroge les données d’activité à plusieurs reprises jusqu’à ce que tous les résultats aient été analysés. 
 
 > [!NOTE] 
-> Pour grandes quantités d’activités et les déploiements à grande échelle, il est recommandé que vous utilisez le [agent SIEM](siem.md) pour l’analyse de l’activité.
+> Pour les grandes quantités d’activités et les déploiements à grande échelle, nous vous recommandons d’utiliser l' [agent Siem](siem.md) pour l’analyse des activités.
 
-**Pour utiliser l’analyse de l’activité API :**
+**Pour utiliser l’API d’analyse des activités :**
 
 1. Exécutez la requête sur vos données.
-1. S’il y a plus d’enregistrements que peuvent apparaître dans une seule analyse, vous obtiendrez une commande retournée avec `nextQueryFilters` que vous devez exécuter. Vous obtiendrez cette commande chaque fois que vous scannez jusqu'à ce que la requête a retourné tous les résultats.
+1. S’il y a plus d’enregistrements qu’il n’est possible de répertorier dans une seule analyse, vous obtiendrez une commande de retour avec `nextQueryFilters` que vous devez exécuter. Vous obtiendrez cette commande chaque fois que vous analyserez jusqu’à ce que la requête retournait tous les résultats.
  
  
-**Paramètres de corps de la demande**:
-- « filtres » : Filtre des objets avec tous les filtres de recherche pour la demande, consultez [filtres d’activité](activity-filters.md) pour plus d’informations. Pour éviter que vos demandes limitées, veillez à inclure une limitation de votre requête, par exemple, les activités du dernier jour de la requête ou de filtre pour une application particulière.
-- « isScan » : Valeur booléenne. Active le mode d’analyse.
-- « sortDirection » : Le sens de tri, les valeurs possibles sont « asc » et « desc » 
-- « sortField » : Champs utilisés pour trier des activités. Les valeurs possibles sont les suivantes : 
-    - date : date lorsque puis l’activité s’est produite (il s’agit de la valeur par défaut).
-    - a été créé : l’horodatage lorsque l’activité a été enregistrée.
-- « limite » : Entier. En mode d’analyse, entre 500 et 5 000 (500 par défaut). Contrôle le nombre d’itérations utilisées pour l’analyse de toutes les données. 
+**Paramètres du corps**de la demande :
+- « filters » : filtrez les objets avec tous les filtres de recherche de la demande. pour plus d’informations, consultez [filtres d’activité](activity-filters.md) . Pour éviter que vos demandes ne soient limitées, veillez à inclure une limitation sur votre requête, par exemple, à interroger les activités du dernier jour ou à filtrer une application particulière.
+- « isScan » : valeur booléenne. Active le mode d’analyse.
+- "sortDirection" : le sens de tri, les valeurs possibles sont "ASC" et "desc" 
+- « sortField » : champs utilisés pour trier les activités. Les valeurs possibles sont les suivantes : 
+    - Date : date à laquelle l’activité s’est produite (valeur par défaut).
+    - created : horodatage de l’enregistrement de l’activité.
+- « Limit » : entier. En mode d’analyse, entre 500 et 5000 (la valeur par défaut est 500). Contrôle le nombre d’itérations utilisées pour l’analyse de toutes les données. 
 
 **Paramètres de réponse**:
-- « données » : les données retournées. Contient jusqu'à « limiter » le nombre d’enregistrements de chaque itération. S’il existe plusieurs enregistrements à collecter (hasNext = true), le dernier peu d’enregistrements est supprimés pour vous assurer que toutes les données est répertoriée une seule fois.
-- « hasNext » : Valeur booléenne. Indique si une autre itération sur les données est nécessaire.
-- “nextQueryFilters”: Si une autre itération est nécessaire, elle contient la requête JSON consécutif à exécuter. Utilisez-le en tant que le paramètre « filtres » dans la demande suivante.
+- « Data » : données retournées. Va contenir jusqu’à « Limit » le nombre d’enregistrements de chaque itération. S’il y a plus d’enregistrements à extraire (hasNext = true), les derniers enregistrements seront supprimés pour s’assurer que toutes les données ne sont répertoriées qu’une seule fois.
+- « hasNext » : valeur booléenne. Indique si une autre itération sur les données est nécessaire.
+- « nextQueryFilters » : si une autre itération est nécessaire, elle contient la requête JSON consécutive à exécuter. Utilisez-le comme paramètre « Filters » dans la requête suivante.
 
-L’exemple Python suivant obtient toutes les activités à partir du jour de cours à partir d’Exchange Online.
+L’exemple Python suivant obtient toutes les activités du jour précédent à partir d’Exchange Online.
 
       import requests
       import json

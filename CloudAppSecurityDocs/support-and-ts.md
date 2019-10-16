@@ -2,9 +2,9 @@
 title: Informations de support et de résolution des problèmes pour Cloud App Security
 description: Cet article décrit les options de support et de résolution des problèmes disponibles pour Microsoft Cloud App Security.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 1/28/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 86204ff4-dc1d-489f-b5fd-a43930fd49d3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1a64f46730e5c9cec50acab6750305ce9004c410
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: a8a8570cfa27bdc9e05af3a8917bf0ce55a56be9
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568478"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72336200"
 ---
 # <a name="support-and-troubleshooting-microsoft-cloud-app-security"></a>Support et résolution des problèmes pour Microsoft Cloud App Security
 
@@ -30,7 +30,7 @@ Cet article décrit les options de support et de résolution des problèmes disp
 
 ## <a name="manage-support-requests-for-cloud-app-security"></a>Gérer les demandes de support pour Cloud App Security
 
-Microsoft fournit un support global pour Microsoft Cloud App Security (support technique, prévente, facturation et abonnement), en ligne et par téléphone pour les abonnements payants et les versions d'évaluation. Le support technique en ligne est disponible en anglais et japonais. Le support par téléphone et le support à la facturation en ligne sont disponibles dans d’autres langues.
+Microsoft fournit un support global pour Microsoft Cloud App Security (support technique, prévente, facturation et abonnement), en ligne et par téléphone pour les abonnements payants et les versions d'évaluation. Le support technique en ligne est disponible en anglais et japonais. Le support téléphonique et le support en ligne pour la facturation sont disponibles dans d’autres langues.
 
 En tant qu’administrateur, vous pouvez utiliser l’option **Aide + support** afin de formuler une demande de support en ligne pour Cloud App Security sur le Portail Azure. Pour ce faire, votre compte doit avoir l’un des [rôles d’administrateur suivants dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) :
 
@@ -52,27 +52,27 @@ Sélectionnez **Demande de support** pour créer une demande de support qui s’
 
 3.  Sur l’onglet **Informations de base**, choisissez les options suivantes pour la plupart des problèmes de support :
 
-    -   **Type de problème** : **Technique**
+    -   **Type de problème** : **Technique**
 
     -   **Abonnement** : \<*votre abonnement*\>
 
-    -   **Service** : **Cloud Application Security**
+    -   **Service**: **sécurité des applications Cloud**
 
-    -   **Type de problème** : Choisissez votre type de problème dans le menu déroulant
+    -   **Type de problème**: choisissez votre type de problème dans le menu déroulant
 
-    -   **Sous-type de problème** : Choisissez votre sous-type de problème dans le menu déroulant
+    -   Sous- **type de problème**: choisissez le sous-type de problème dans le menu déroulant
 
-    -   **Objet** : Décrivez en quelques mots le problème que vous rencontrez
+    -   **Objet**: Décrivez brièvement le problème que vous rencontrez
 
-4.  Sur l’onglet **Détails**, renseignez les détails de votre problème, la méthode de support, vos coordonnées, puis cliquez sur **Suivant : Vérifier + créer**.
+4.  Dans l’onglet **Détails** , renseignez les détails de votre problème, la méthode de support, vos informations de contact, puis cliquez sur **suivant : passer en revue + créer**.
 
 5.  Vérifiez que les informations sont correctes, puis choisissez **Créer** pour envoyer votre demande de support.
 
-**Remarque :** Si vous avez une question de facturation ou d’abonnement, vous pouvez ouvrir un incident pour obtenir un support technique le [centre d’administration Microsoft 365](https://admin.microsoft.com/Support/SupportEntry.aspx).
+**Remarque :** Si vous avez une question relative à la facturation ou à l’abonnement, vous pouvez ouvrir un cas pour obtenir de l’aide via le [Centre d’administration Microsoft 365](https://admin.microsoft.com/Support/SupportEntry.aspx).
 
 ### <a name="view-open-support-requests"></a>Afficher les demandes de support ouvertes
 
-Vous pouvez afficher une demande de support sur le Portail Azure. Pour ce faire :
+Vous pouvez afficher une demande de support sur le Portail Azure. Pour cela :
 
 1.  Connectez-vous à Azure [https://portal.azure.com](https://portal.azure.com/) avec vos informations d’identification administrateur, sélectionnez l’icône **?** dans le coin supérieur droit du portail, puis sélectionnez **Aide + support** pour accéder à la page [Aide + support Azure](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview).
 

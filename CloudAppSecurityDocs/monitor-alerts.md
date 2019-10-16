@@ -2,9 +2,9 @@
 title: Surveiller les alertes déclenchées dans Cloud App Security
 description: Cet article fournit une liste et une description de toutes les alertes.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,16 +15,16 @@ ms.assetid: f118a3bf-1663-46ba-884f-b1b03a84ab66
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: e5b144b4c260aa55f3bd6546f76c1802c10631e0
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 9e697d86bd7279e445a8fa40bf9fd5000081e469
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568911"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72335907"
 ---
 # <a name="monitor-alerts-in-cloud-app-security"></a>Surveiller les alertes dans Cloud App Security
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Les alertes constituent un bon point de départ pour comprendre votre environnement cloud de façon plus approfondie. Cet article fournit une liste et une description de toutes les alertes.
 
@@ -32,7 +32,7 @@ Les alertes constituent un bon point de départ pour comprendre votre environnem
 
 Nous vous incitons à examiner vos alertes. En comprenant le déclenchement des alertes, vous pouvez les utiliser en tant qu’outils pour modifier vos stratégies. 
 
-**Pour afficher les alertes :** Dans le portail Microsoft Cloud App Security, cliquez sur **Alertes**.
+**Pour afficher les alertes :** Dans le portail Microsoft Cloud App Security, cliquez sur **alertes**.
 
 
 ![menu Alerte](./media/alert-menu.png)
@@ -66,7 +66,7 @@ Les types d’alertes suivants sont affichés.
 
 |Nom d'alerte|ID d’alerte|Description|
 |----|----|----|
-|Alerte d’activité suspecte|ALERT_SUSPICIOUS_ACTIVITY|Les activités suspectes sont évaluées en fonction du degré de suspicion de l’activité anormale (Un compte inactif est-il impliqué ? À partir d’un nouvel emplacement ?) Ces critères sont tous calculés ensemble pour fournir un indice de risque selon les facteurs de risque suivants : <br>L’utilisateur est administrateur <br>Utilisateur strictement à distance<br>Proxy anonyme<br> Toute la session ne compte que des échecs de connexion<br>Nombreux échecs de connexion<br>Nouveau (administrateur)<br>IP/ISP/pays/agent utilisateur pour utilisateur/client<br> IP/ISP/pays/agent utilisateur utilisé uniquement par utilisateur (administrateur)<br>Première activité utilisateur (administrateur) depuis un certain temps<br>Première fois que cette activité administrative particulière est exécutée depuis un certain temps<br>Cette activité administrative particulière n’est pas courante/n’a jamais été exécutée auparavant<br>Cette adresse IP ne présentait que des échecs de connexion dans le passé<br>Voyage impossible|
+|Alerte d’activité suspecte|ALERT_SUSPICIOUS_ACTIVITY|Les activités suspectes sont évaluées en fonction du degré de suspicion de l’activité anormale (Un compte inactif est-il impliqué ? S’agit-il d’un nouvel emplacement ?) Ces critères sont tous calculés ensemble pour fournir un score de risque en fonction des facteurs de risque suivants : <br>L’utilisateur est administrateur <br>Utilisateur strictement à distance<br>Proxy anonyme<br> Toute la session ne compte que des échecs de connexion<br>Nombreux échecs de connexion<br>Nouveau (administrateur)<br>IP/ISP/pays/agent utilisateur pour utilisateur/client<br> IP/ISP/pays/agent utilisateur utilisé uniquement par utilisateur (administrateur)<br>Première activité utilisateur (administrateur) depuis un certain temps<br>Première fois que cette activité administrative particulière est exécutée depuis un certain temps<br>Cette activité administrative particulière n’est pas courante/n’a jamais été exécutée auparavant<br>Cette adresse IP ne présentait que des échecs de connexion dans le passé<br>Voyage impossible|
 |Alerte d’utilisation suspecte du cloud|ALERT_DISCOVERY_ANOMALY_DETECTION|La détection des anomalies Cloud Discovery vérifie le modèle du comportement normal et recherche des utilisateurs ou des applications qui sont utilisés de façon inhabituelle. |
 |Violation de stratégie d’activité|ALERT_CABINET_EVENT_MATCH_AUDIT|Cette alerte vous informe quand une correspondance de stratégie a été détectée.|
 |Violation de stratégie de fichier|ALERT_CABINET_EVENT_MATCH_FILE|Cette alerte vous informe quand une correspondance de stratégie a été détectée.|

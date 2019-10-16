@@ -2,9 +2,9 @@
 title: Importer des groupes d’utilisateurs à partir d’applications connectées dans Cloud App Security
 description: Cet article fournit des instructions sur l’importation de groupes d’utilisateurs issus d’applications connectées vers Cloud App Security.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/14/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,16 +15,16 @@ ms.assetid: 87b831ef-5977-4df8-bed3-3ee54a8adbb5
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 7b5ec7e2ce37442b81838f7577cf4e11b260b09d
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: cef7e5743d591cd1a9b4bf7912eddb598dbfb148
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568744"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72335990"
 ---
 # <a name="importing-user-groups-from-connected-apps"></a>Importation de groupes d’utilisateurs à partir d’applications connectées
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Quand vous connectez des applications à l’aide de connecteurs API, Microsoft Cloud App Security vous permet d’importer des groupes d’utilisateurs, par exemple à partir d’Office 365 et d’Azure Active Directory.
 Il existe deux types de groupes d’utilisateurs : 

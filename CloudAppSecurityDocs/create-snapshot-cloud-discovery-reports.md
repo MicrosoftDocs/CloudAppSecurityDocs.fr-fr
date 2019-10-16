@@ -2,9 +2,9 @@
 title: Créer des rapports d’instantané de l’utilisation des applications cloud dans Cloud Discovery
 description: Cet article fournit des informations sur le chargement manuel de journaux pour créer un rapport d’instantané de vos applications Cloud Discovery.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 04/07/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,16 +15,16 @@ ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a06200e0256bac49f8a4a4e169898dcb3a09aa7b
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: af9db528ae9e3c3c21e67d502baf2f026d722f68
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65567997"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72335661"
 ---
 # <a name="create-snapshot-cloud-discovery-reports"></a>Créer des rapports d’instantanés Cloud Discovery
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Il est important de charger un journal manuellement et de laisser Microsoft Cloud App Security l’analyser avant d’essayer d’utiliser le collecteur de journaux automatique. Pour plus d’informations sur le fonctionnement du collecteur de journaux et le format de journal attendu, consultez [Utilisation de journaux de trafic pour Cloud Discovery](#log-format).
 
@@ -56,7 +56,7 @@ Pour créer un rapport d’instantané :
 
 6. **Choisissez les journaux de trafic** à charger. Vous pouvez charger jusqu’à 20 fichiers à la fois. Les fichiers compressés et zippés sont également pris en charge.  
   
-7. Cliquez sur **Create (Créer)**.  
+7. Cliquez sur **Create (Créer)** .  
 
 8. Une fois le chargement terminé, un message d’état s’affiche dans le coin supérieur droit de votre écran pour vous informer que le journal a correctement été chargé.  
   
@@ -91,7 +91,7 @@ Par conséquent, ces attributs ne sont pas affichés dans les données Cloud Dis
 
 
 Pour générer correctement un rapport Cloud Discovery, vos journaux de trafic doivent respecter les conditions suivantes :
-1. [Source de données est prise en charge](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
+1. La [source de données est prise en charge](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
 2. Le format de journal correspond au format standard attendu (le format est vérifié lors du chargement par l’outil Log).
 3. Les événements ne datent pas de plus de 90 jours.
 4. Le fichier journal est valide et comprend des informations sur le trafic sortant.

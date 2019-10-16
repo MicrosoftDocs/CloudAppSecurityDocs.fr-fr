@@ -2,9 +2,9 @@
 title: Comment Cloud App Security réalise l’inspection du contenu
 description: Cet article décrit le processus suivi par Cloud App Security lors de l’exécution de l’inspection du contenu DLP sur les données de votre cloud.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 1/6/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: c67a387f-8c88-4018-9e80-0fb1455cf768
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 7b0cdcca52b8be95e146af09595849b7c9dc1129
-ms.sourcegitcommit: 0303627fb0ceb460c50071d0b20e33aa94ccff8d
+ms.openlocfilehash: e267f0c80d21f7aaec91ca43152fbba58d89feaf
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66491585"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72335586"
 ---
 # <a name="content-inspection"></a>Inspection du contenu
 

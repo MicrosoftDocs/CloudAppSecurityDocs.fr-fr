@@ -2,9 +2,9 @@
 title: Blocage des applications découvertes – Cloud App Security | Microsoft Docs
 description: Cet article décrit la procédure d’exportation de scripts de blocage pour les applications découvertes.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,16 +15,16 @@ ms.assetid: e451031e-4764-411a-b366-73a49d4f25df
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1f760c3481877a91f5395bc00d613bb72bb995e1
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: ab6a8d276cdd3ce1963be2e5a0c28b42bc8eeaa6
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568154"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72335797"
 ---
 # <a name="govern-discovered-apps"></a>Gouverner les applications découvertes
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Une fois que vous avez consulté la liste des applications découvertes dans votre environnement, vous pouvez sécuriser de plusieurs façons l’environnement contre l’utilisation d’applications indésirables.
 
@@ -50,7 +50,7 @@ Cloud App Security vous permet de bloquer l’accès aux applications non approu
 
    ![Marquer comme non approuvées](./media/tag-as-unsanctioned.png)  
 
-2. Dans la barre de titre, cliquez sur les trois points et sélectionnez **Générer un script de blocage...**. 
+2. Dans la barre de titre, cliquez sur les trois points et sélectionnez **Générer un script de blocage...** . 
 
    ![Générer un script de blocage](./media/generate-block-script.png)  
 

@@ -2,9 +2,9 @@
 title: Informations de référence sur les modèles de stratégie pour Cloud App Security
 description: Cet article fournit des informations sur la façon dont les stratégies sont utilisées et configurées pour contrôler l’usage des applications cloud.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,16 +15,16 @@ ms.assetid: a6658937-57a2-484a-85cb-5a4cdbeeb002
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9e75ee880c2d198c3665c3e1271e71a351e973ec
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 0cdb9fbc855f957c579d3a62f8120a96bdd8a1c0
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568921"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72336278"
 ---
 # <a name="policy-template-reference"></a>Informations de référence sur les modèles de stratégie
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Cet article fournit des informations sur les modèles de stratégie inclus dans Microsoft Cloud App Security. 
 

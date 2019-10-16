@@ -2,9 +2,9 @@
 title: Intégrer Cloud App Security à iboss
 description: Cet article explique comment intégrer Microsoft Cloud App Security à la passerelle cloud sécurisée iboss pour offrir une expérience Cloud Discovery fluide et créer un bloc automatisé d’applications non approuvées.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 2/2/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 920d4272-685b-4c4d-9b31-94a2c6f3503e
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 31316c4a8902ed85489e03a82dde3fb3ec7962b8
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 344fe833f5684de7bd944f3825c393bc9c02f021
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568187"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72335781"
 ---
 # <a name="integrate-cloud-app-security-with-iboss"></a>Intégrer Cloud App Security à iboss
 
@@ -32,7 +32,7 @@ Si vous utilisez Cloud App Security et iboss, vous pouvez intégrer ces deux pro
 - Les fonctionnalités de blocage d’iboss sont automatiquement activées pour les applications que vous définissez comme non approuvées dans Cloud App Security.
 - Améliorez votre portail d’administration d’iboss en activant l’évaluation des risques de Cloud App Security pour les 100 applications cloud les plus utilisées dans votre organisation. Vous pouvez ainsi voir toutes ces applications directement dans le portail d’administration d’iboss.
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Conditions préalables
 
 - Licence valide pour Microsoft Cloud App Security
 - Licence valide pour la passerelle iboss Secure Cloud Gateway (version 9.1.100.0 ou ultérieure)

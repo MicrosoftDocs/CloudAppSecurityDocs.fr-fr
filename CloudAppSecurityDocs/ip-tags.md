@@ -2,9 +2,9 @@
 title: Définir des plages d’adresses IP et des balises - Cloud App Security | Microsoft Docs
 description: Cet article fournit des instructions sur l’utilisation des balises et des catégories d’adresses IP.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/16/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,16 +15,16 @@ ms.assetid: bbf54f66-4ce2-428c-afc8-b5a64277014f
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2fd5e509b9d7d75c93291833baeb06d1bee1a8f6
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: ef9645a99e7fde05b2bcc801744fb19489d26a29
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568264"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72335824"
 ---
 #  <a name="IPtagsandRanges"></a> Utilisation des balises et des plages d’adresses IP
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Pour identifier facilement les adresses IP connues, telles que celles de votre bureau, vous devez définir des plages d’adresses IP. Les plages d’adresses IP vous permettent de baliser, classer et personnaliser la façon dont les journaux et les alertes sont affichés et examinés. Chaque groupe de plages IP peut être classé selon une liste prédéfinie de catégories d’adresses IP. Vous pouvez également créer des balises IP personnalisées pour vos plages d’adresses IP. En outre, vous pouvez remplacer les informations de géolocalisation publiques en fonction de votre connaissance du réseau interne. IPv4 et IPv6 sont pris en charge. 
 
@@ -58,15 +58,15 @@ Dans la barre de menus, cliquez sur l’icône des paramètres. Sélectionnez **
   
      Les catégories IP suivantes sont disponibles :  
   
-    - **Administratif** : Toutes les adresses IP de vos administrateurs.  
+    - **Administratif** : toutes les adresses IP de vos administrateurs.  
   
-    - **Fournisseur de cloud** : Adresses IP utilisées par votre fournisseur de cloud.
+    - **Fournisseur de cloud** : adresses IP utilisées par votre fournisseur de cloud.
   
-    - **Entreprise** : Toutes les adresses IP de votre réseau interne, de vos succursales et de vos adresses d’itinérance Wi-Fi.  
+    - **Entreprise** : toutes les adresses IP de votre réseau interne, de vos succursales et de vos adresses d’itinérance Wi-Fi.  
   
-    - **Risqué** : Toutes les adresses IP que vous considérez comme risquées. Celles-ci peuvent inclure les adresses IP suspectes déjà constatées, les adresses IP appartenant aux réseaux de vos concurrents, et ainsi de suite.  
+    - **Risqué** : toutes les adresses IP que vous considérez comme risquées. Celles-ci peuvent inclure les adresses IP suspectes déjà constatées, les adresses IP appartenant aux réseaux de vos concurrents, et ainsi de suite.  
   
-    - **VPN** : Toutes les adresses IP que vous utilisez pour les télétravailleurs.
+    - **VPN** : toutes les adresses IP que vous utilisez pour les télétravailleurs.
   
 4. Pour **baliser** les activités liées à ces adresses IP, entrez une balise. Il suffit d’entrer un mot dans la zone pour créer la balise. Une fois la balise configurée, vous pouvez l’ajouter facilement à des plages IP supplémentaires en la sélectionnant dans la liste. Vous pouvez ajouter autant de balises IP que vous le souhaitez pour chaque plage. Vous pouvez utiliser des balises IP quand vous créez des stratégies.  En plus des balises IP que vous configurez, Cloud App Security a des balises intégrées qui ne sont pas configurables. Vous pouvez voir la liste des balises sous le [filtre de balises IP](activity-filters.md).  
     > [!NOTE]  

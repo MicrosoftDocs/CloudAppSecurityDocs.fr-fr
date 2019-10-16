@@ -15,16 +15,16 @@ ms.assetid: a79bf393-0d2c-44b6-8dab-86c740fd7333
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: fc9c45a20e59c7dd4591cbeda53df6951c3cac44
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: e8be0a2cd23a23d223fff12e956eb7152fa9fa14
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71084063"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72335617"
 ---
 # <a name="connect-office-365-to-microsoft-cloud-app-security"></a>Connecter Office 365 à Microsoft Cloud App Security
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Cet article fournit des instructions pour connecter Microsoft Cloud App Security à un compte Microsoft Office 365 existant à l’aide de l’API de connecteur d’applications.  Cette connexion vous permet de bénéficier de plus de visibilité et de contrôle lors de l’utilisation d’Office 365.
   
@@ -37,7 +37,7 @@ Cloud App Security prend en charge les applications Office 365 suivantes :
 
 - Office 365
 - SharePoint
-- OneDrive
+- OneDrive Entreprise
 - Teams (apparaît uniquement une fois que des activités Teams sont détectées dans le portail)
 - Power BI (apparaît seulement une fois que des activités Power BI sont détectées dans le portail, et nécessite l’activation de l’audit)
 - Exchange (apparaît uniquement une fois que des activités Exchange sont détectées dans le portail et nécessite l’activation de l’audit)
@@ -54,6 +54,7 @@ Cloud App Security prend en charge les applications Office 365 suivantes :
 >- Vous devez [activer l’audit dans Power BI](https://powerbi.microsoft.com/documentation/powerbi-admin-auditing/) pour obtenir les journaux. Une fois l’audit activé, Cloud App Security commence à obtenir les journaux (avec un délai de 24 à 72 heures).
 >- Vous devez [activer l’audit dans Dynamincs 365](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-use-comprehensive-auditing#enable-auditing-in-dynamics-365-for-customer-engagement/) pour récupérer les journaux à partir de là. Une fois l’audit activé, Cloud App Security commence à obtenir les journaux (avec un délai de 24 à 72 heures).
 >- Si votre Azure Active Directory est défini pour se synchroniser automatiquement avec les utilisateurs de votre environnement local Active Directory, les paramètres de l’environnement local remplacent les paramètres Azure AD et l’utilisation de l’action de gouvernance **Interrompre la synchronisation de l’utilisateur** est rétablie.
+>- Pour les activités de connexion Azure AD, Cloud App Security ne couvre que les activités de connexion interactives et les activités de connexion à partir de protocoles hérités tels qu’ActiveSync. Les activités de connexion non interactives peuvent être affichées dans le journal d’audit Azure AD.
 
 1. Dans la page **Applications connectées**, cliquez sur le bouton plus (+) et sélectionnez **Office 365**.  
 

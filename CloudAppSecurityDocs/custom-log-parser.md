@@ -2,9 +2,9 @@
 title: Analyseur de journal personnalisé Cloud App Security pour les journaux qui ne sont pas pris en charge
 description: Cet article fournit des informations sur l’utilisation de l’analyseur de journal personnalisé pour charger les journaux des appareils qui ne sont pas pris en charge dans Cloud App Security.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,16 +15,16 @@ ms.assetid: a612d87e-5471-4add-b4b1-dbbb530f2b61
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 15d1e8ce0ceff2c4d3e77fdfc522df777a583041
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 3f1e38f31a125dcad562f321aa8eac87a0a0fd31
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65567955"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72335689"
 ---
 # <a name="use-a-custom-log-parser"></a>Utiliser un analyseur de journal personnalisé
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Cloud App Security vous permet de configurer un analyseur personnalisé correspondant au format de vos journaux et de traiter le format de vos journaux pour qu’ils soient utilisables avec Cloud Discovery. En règle générale, vous utilisez un analyseur personnalisé si le pare-feu ou l’appareil n’est pas explicitement pris en charge par Cloud App Security. Il peut s’agir d’un analyseur CSV ou d’un analyseur Clé-Valeur personnalisé.
 
@@ -57,12 +57,12 @@ Pour configurer un analyseur personnalisé :
    ![analyseur de journal personnalisé](./media/custom-log-parser.png) 
 
 
-7. Cliquez sur **Enregistrer**. Le format de journal personnalisé que vous configurez est enregistré comme analyseur personnalisé par défaut. Vous pouvez le modifier à tout moment en cliquant sur **Modifier**.
+7. Cliquez sur **Save**. Le format de journal personnalisé que vous configurez est enregistré comme analyseur personnalisé par défaut. Vous pouvez le modifier à tout moment en cliquant sur **Modifier**.
 
 8. Sous **Choisir les journaux de trafic**, sélectionnez le fichier journal que vous avez modifié et chargez-le. Vous pouvez charger jusqu’à 20 fichiers à la fois. Les fichiers compressés et zippés sont également pris en charge.  
   
 
-9. Cliquez sur **Create (Créer)**.  
+9. Cliquez sur **Create (Créer)** .  
 
 10. Une fois le chargement terminé, un message d’état s’affiche dans le coin supérieur droit de votre écran pour vous informer que le journal a correctement été chargé.  
   

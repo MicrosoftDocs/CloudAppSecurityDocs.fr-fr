@@ -2,9 +2,9 @@
 title: Ajouter des applications personnalisées à Cloud Discovery dans Cloud App Security
 description: Cette rubrique fournit des informations sur la façon d’ajouter des applications personnalisées à Cloud Discovery dans Cloud App Security pour surveiller le Shadow IT.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,16 +15,16 @@ ms.assetid: 98b0d841-b33d-4ae9-b48b-d9ee77785eaa
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c44772dc46d04c46eb1d22b2440d06d338d448db
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: b3d8fe254888eb442479c9d4ef5f328898a97dfb
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65567566"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72335533"
 ---
 # <a name="add-custom-apps-to-cloud-discovery"></a>Ajouter des applications personnalisées à Cloud Discovery
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
     
 Cloud Discovery analyse vos journaux de trafic en s’appuyant sur le catalogue d’applications cloud Microsoft Cloud App Security. Ce catalogue comprend plus de 16 000 applications. Le catalogue contient uniquement des applications cloud disponibles publiquement et pour lesquelles Cloud App Security fournit des informations sur la visibilité et les risques.
 
@@ -49,7 +49,7 @@ En ajoutant une nouvelle application cloud personnalisée, Cloud App Security pe
 4. Sous **Domaines**, renseignez les domaines uniques utilisés lors de l’accès à l’application personnalisée. Ces domaines servent à faire correspondre des messages du journal de trafic avec cette application. Si la source de données que vous utilisez ne contient pas d’informations sur l’URL de l’application, renseignez les champs d’adresse **IPv4** et **IPv6**.
 5. Renseignez les champs **Plateforme d’hébergement** et **ID d’abonnement Azure**. Si vous le souhaitez, spécifiez une **Unité commerciale** pour l’application. 
 6. Attribuez un **Score** relatif au risque et ajoutez des informations dans **Notes de l’application** pour faciliter le suivi des modifications de cet enregistrement.
-7. Cliquez sur **Create (Créer)**.
+7. Cliquez sur **Create (Créer)** .
 
 Une fois créée, l’application est disponible dans le catalogue d’applications cloud.
 

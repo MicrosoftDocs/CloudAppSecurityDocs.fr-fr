@@ -2,9 +2,9 @@
 title: Comment utiliser des actions de gouvernance dans Cloud App Security
 description: Cet article fournit des informations sur les actions de gouvernance à entreprendre dans Cloud App Security pour contrôler l’usage des applications cloud de votre organisation.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,16 +15,16 @@ ms.assetid: bc11bbfe-ec6c-458c-8302-8112c383199d
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 25a04977f628981a64fac86f325bf3883e9cc3e4
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 8830e76a266d9ab5fb0e552cccd6e73cbf2bc700
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568039"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72335644"
 ---
 # <a name="control"></a>Control
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Vous pouvez appliquer des actions de gouvernance aux fichiers des utilisateurs dans tout votre environnement cloud. Après avoir soigneusement examiné et étudié votre cloud, vous pouvez utiliser des actions de gouvernance pour protéger votre organisation.  
 
@@ -56,7 +56,7 @@ Quand vous examinez vos alertes ouvertes, accédez au Centre de stratégie pour 
 ## <a name="apply-governance-actions"></a>Appliquer des actions de gouvernance  
 Vous pouvez appliquer des actions de gouvernance depuis des stratégies, depuis des alertes et depuis le journal **Fichier**.  
 
-À tout moment, vous pouvez passer en revue et voir l’état de toutes les actions de gouvernance appliquées en accédant à l’icône **Paramètres** (symbolisée par un engrenage) et en choisissant **Journal de gouvernance**. ![icône de paramètres](./media/settings-icon.png "icône de paramètres")
+À tout moment, vous pouvez passer en revue et voir l’état de toutes les actions de gouvernance appliquées en accédant à l’icône **Paramètres** (symbolisée par un engrenage) et en choisissant **Journal de gouvernance**. ![icône des paramètres](./media/settings-icon.png "icône des paramètres")
 
 En cas d’échec d’une action de gouvernance, choisissez l’icône **Nouvelle tentative** pour l’appliquer à nouveau. ![Icône de nouvelle tentative](./media/retry-icon.png "Icône de nouvelle tentative")   
 

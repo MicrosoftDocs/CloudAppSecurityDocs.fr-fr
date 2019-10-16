@@ -2,8 +2,8 @@
 title: Utiliser les données Cloud Discovery pour détecter les comportements à risques - Cloud App Security | Microsoft Docs
 description: Cette rubrique fournit des instructions pour l’utilisation des données Cloud Discovery, notamment l’utilisation de l’indice de risque de l’application.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: shsagir
+ms.author: shsagir
 manager: angrobe
 ms.date: 05/06/2019
 ms.topic: conceptual
@@ -15,16 +15,16 @@ ms.assetid: cf94b290-b7ef-4fee-854e-c8ff8d11dea9
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 8d3c5d1dc7c2f3a1b4d36db94198adc910879921
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 34127140ac088352b35ffedd03c53f9b046e07a7
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568385"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72335947"
 ---
 # <a name="working-with-discovery-data"></a>Utilisation des données de découverte
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Le tableau de bord Cloud Discovery est conçu pour vous donner plus d’informations sur l’utilisation des applications cloud dans votre organisation. Il fournit une vue d’ensemble en un clin d’œil des types d’applications utilisés, des alertes ouvertes et des niveaux de risque des applications dans votre organisation. Il vous montre également les principaux utilisateurs des applications et fournit un plan du lieu du siège social d’une application. Le tableau de bord Cloud Discovery a de nombreuses options pour filtrer les données. Le filtrage vous permet de générer des vues spécifiques selon ce qui vous intéresse le plus, avec des graphiques faciles à comprendre pour vous donner une vision globale en un clin d’œil.
 
