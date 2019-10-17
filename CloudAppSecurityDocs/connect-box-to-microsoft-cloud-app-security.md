@@ -2,9 +2,9 @@
 title: Connecter Box à Cloud App Security
 description: Cet article vous explique comment connecter votre application Box à Cloud App Security à l’aide du connecteur d’API, afin de bénéficier de plus de contrôle et de visibilité lors de l’utilisation.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,16 +15,16 @@ ms.assetid: b3e4713e-986f-4a5e-9fcc-f8de94dd0df7
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5d9a5835473eb6a6012c315a1313fbf05cd9ced5
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: bcef6b51eac8b9ddf0f348bfa42b2936a4ad85e8
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568119"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72334573"
 ---
 # <a name="connect-box-to-microsoft-cloud-app-security"></a>Connecter Box à Microsoft Cloud App Security
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Cet article fournit des instructions pour connecter Microsoft Cloud App Security à votre compte Box existant à l’aide des API du connecteur d’applications. Cette connexion vous permet de bénéficier de plus de visibilité et de contrôle lors de l’utilisation de Box.
   
@@ -74,7 +74,7 @@ Cet article fournit des instructions pour connecter Microsoft Cloud App Security
   
 7.  De retour dans le portail Cloud App Security, vous devez recevoir un message indiquant que Box a été correctement connecté.  
   
-8.  Vérifiez la connexion en cliquant sur **Test API** (Tester l’API).  
+8.  Vérifiez que la connexion a réussi en cliquant sur **Tester l’API**.  
   
      Le test peut prendre quelques minutes. Une fois averti que la connexion a réussi, cliquez sur **Fermer**.  
   

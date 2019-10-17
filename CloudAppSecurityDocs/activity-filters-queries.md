@@ -2,9 +2,9 @@
 title: Utilisation des filtres et des requêtes d’activités Cloud App Security
 description: Cet article fournit une liste de filtres et de requêtes d’activité de Cloud App Security, et explique comment les utiliser.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,16 +15,16 @@ ms.assetid: 9ba5c7d3-c733-4048-9b99-bf41a0f46695
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4f25b48ece9782e75c20cfa8516183c953d05bb3
-ms.sourcegitcommit: 917d8cf85ac0b58a3b1788067c2ff92101eb3ccf
+ms.openlocfilehash: c5f6884d34bc8f2076a40b5de48fe2ef99adfa02
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67237138"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72334956"
 ---
 # <a name="activity-filters-and-queries"></a>Filtres et requêtes d’activités
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Cet article fournit des descriptions et des instructions pour les filtres et les requêtes d’activité de Cloud App Security.
 
@@ -48,7 +48,7 @@ Vous trouverez ci-dessous une liste des filtres d’activité qui peuvent être 
 
 - Application : Recherchez uniquement des activités au sein d’applications spécifiques.  
   
-- Action appliquée : Recherchez par action de gouvernance appliquée : Bloqué, Contournement proxy, Déchiffré, Chiffré, Échec du chiffrement, Aucune action.
+- Action appliquée : Recherchez par action de gouvernance appliquée (Bloqué, Proxy de contournement, Déchiffré, Chiffré, Échec du chiffrement, Aucune action).
 
 - Date : Date à laquelle l’activité s’est produite. Le filtre prend en charge des dates antérieures/ultérieures et une plage de dates.  
   

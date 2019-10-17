@@ -2,9 +2,9 @@
 title: Visibilité sur les activités des applications cloud - Cloud App Security | Microsoft Docs
 description: Cet article fournit la liste des activités, des filtres et des paramètres de correspondance qui peuvent être appliqués aux stratégies d’activité.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/16/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,16 +15,16 @@ ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 7104207cc15fa915b3e08bcfe130d5bd43702340
-ms.sourcegitcommit: 0ea0ea939df9f9367f10fc60908d4f9fb9b06de1
+ms.openlocfilehash: ce5cd7c341a6d255572763b879181ef2ca8f0cd6
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68601472"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72334968"
 ---
 # <a name="activities"></a>Activités
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Microsoft Cloud App Security vous donne une visibilité sur toutes les activités de vos applications connectées. Une fois connecté à une application à l’aide du connecteur d’applications, Cloud App Security analyse toutes les activités passées (la période d’analyse rétroactive varie par application). Cloud App Security est ensuite mis à jour en continu avec les nouvelles activités. 
 
@@ -33,7 +33,7 @@ Microsoft Cloud App Security vous donne une visibilité sur toutes les activité
 
 Le **journal d’activité** peut être filtré pour vous permettre de trouver des activités spécifiques. Vous créez des stratégies basées sur les activités, puis définissez ce sur quoi vous voulez être alerté pour y réagir. Vous êtes en mesure de rechercher des activités effectuées sur certains fichiers. Les types d’activités et les informations que nous obtenons pour chaque activité varient selon l’application et le genre de données que l’application peut fournir. 
 
-Par exemple, vous pouvez utiliser le **journal d’activité** pour rechercher des utilisateurs dans votre organisation qui utilisent des systèmes d’exploitation ou des navigateurs qui sont obsolètes, comme suit : Lorsque vous avez connecté une application à Cloud App Security dans la page **Journal d’activité**, utilisez le filtre avancé et sélectionnez **Étiquette agent utilisateur**. Sélectionnez ensuite **Navigateur obsolète** ou **Système d’exploitation obsolète**.
+Par exemple, vous pouvez utiliser le **journal d’activité** pour trouver les utilisateurs de votre organisation qui utilisent des systèmes d’exploitation ou des navigateurs obsolètes. Pour cela, procédez comme suit : après avoir connecté une application à Cloud App Security dans la page **Journal d’activité**, utilisez le filtre avancé et sélectionnez l’**étiquette Agent utilisateur**. Sélectionnez ensuite **Navigateur obsolète** ou **Système d’exploitation obsolète**.
 
  ![Exemple de navigateur obsolète dans une activité](media/activity-example-outdated.png)
  
@@ -54,17 +54,17 @@ Pour explorer des activités plus spécifiques, vous pouvez développer le filtr
 
 Vous pouvez afficher plus d’informations supplémentaires sur chaque activité en cliquant sur l’activité elle-même dans le journal d’activité. Cette opération ouvre le tiroir Activité qui contient les actions et insights supplémentaires suivants pour chaque activité :
 
-   - Stratégies correspondantes : Cliquez sur le lien Stratégies correspondantes pour afficher la liste des stratégies que cette activité a mises en correspondance.
+   - Stratégies correspondantes : Cliquez sur le lien Stratégies correspondantes pour afficher la liste des stratégies que cette activité a mises en correspondance.
 
-   - Afficher les données brutes : Cliquez sur Afficher les données brutes pour afficher les données réelles reçues de l’application.
+   - Afficher les données brutes : Cliquez sur Afficher les données brutes pour afficher les données réelles reçues de l’application.
 
-   - Utilisateur : Cliquez sur l’utilisateur pour afficher la page utilisateur de l’utilisateur ayant réalisé l’activité. 
+   - Utilisateur : Cliquez sur l’utilisateur pour afficher la page utilisateur de l’utilisateur ayant réalisé l’activité. 
 
-   - Type d’appareil: Cliquez sur le type de périphérique pour afficher les données d’agent utilisateur brutes. 
+   - Type d’appareil : Cliquez sur le type d’appareil pour afficher les données d’agent utilisateur brutes. 
 
-   - Localisation : Cliquez sur l’emplacement pour afficher l’emplacement dans des cartes Bing.
+   - Emplacement : Cliquez sur l’emplacement pour afficher l’emplacement dans des cartes Bing.
 
-   - Catégorie d’adresse IP et balises : Cliquez sur la balise IP pour afficher la liste des balises IP trouvées dans cette activité. Vous pouvez ensuite filtrer selon toutes les activités correspondant à cette balise.    
+   - Catégorie d’adresse IP et balises : Cliquez sur la balise IP pour afficher la liste des balises IP trouvées dans cette activité. Vous pouvez ensuite filtrer selon toutes les activités correspondant à cette balise.    
 
  Les champs du tiroir d’activité fournissent des liens contextuels vers des fichiers supplémentaires et permettent d’effectuer un zoom avant, directement dans le tiroir. Par exemple, si vous déplacez votre curseur à côté de la catégorie d’adresse IP, vous pouvez utiliser l’icône ajouter au filtre ![ajouter au filtre](./media/add-to-filter-icon.png) pour ajouter l’adresse IP immédiatement au filtre de la page actuelle. Vous pouvez également utiliser l’icône de roue dentée paramètres ![icône paramètres](./media/contextual-settings-icon.png) qui s’affiche pour accéder directement à la page des paramètres nécessaire pour modifier la configuration de l’un des champs, par exemple les **groupes d’utilisateurs**.
 
@@ -95,7 +95,7 @@ Pour afficher les insights utilisateur :
     - **ISP** : Nombre d’ISP à partir desquels l’utilisateur s’est connecté au cours des 30 derniers jours.
     - **Adresses IP** : Nombre d’adresses IP à partir desquelles l’utilisateur s’est connecté au cours des 30 derniers jours.
 
-![Insights utilisateur dans Cloud App Security](./media/user-insights.png)
+![insights sur l’utilisateur dans Cloud App Security](./media/user-insights.png)
 
 #### <a name="ip-address-insights"></a>Insights sur l’adresse IP
 
@@ -110,7 +110,7 @@ Pour afficher les insights sur l’adresse IP :
     - **Activités** : Nombre d’activités effectuées par l’adresse IP au cours des 30 derniers jours.
     - **Emplacement IP** : Emplacements géographiques à partir desquels l’adresse IP s’est connectée au cours des 30 derniers jours.
     - **Activités** : Nombre d’activités effectuées à partir de l’adresse IP au cours des 30 derniers jours.
-    - **Activités administratives** : Nombre d’activités administratives effectuées à partir de l’adresse IP au cours des 30 derniers jours.
+    - **Activités administratives ** : Nombre d’activités administratives effectuées à partir de l’adresse IP au cours des 30 derniers jours.
     - Vous pouvez effectuer les actions d’adresse IP suivantes :
         - Marquer comme adresse IP d’entreprise et ajouter à la liste autorisée
         - Marquer comme adresse IP VPN et ajouter à la liste autorisée

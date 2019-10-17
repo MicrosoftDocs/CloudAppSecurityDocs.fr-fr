@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6f81cfa5dc504e8b88574a8bc72fb219ad85a95f
-ms.sourcegitcommit: 2e8488efcc2253e0b5fa33db308e4986a9cdefd5
+ms.openlocfilehash: f63c05f9584b960ee5ac7b01bd06a4971e02bfe0
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71997393"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72334818"
 ---
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>Obtenir instantanément une détection des anomalies et une analytique comportementale
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Les stratégies de détection des anomalies de Microsoft Cloud App Security intègrent une analytique comportementale des utilisateurs et des entités (UEBA) et un apprentissage automatique (ML) pour vous permettre de lancer immédiatement une détection avancée des menaces dans tout votre environnement cloud. Comme ces stratégies sont automatiquement activées, les nouvelles stratégies de détection des anomalies fournissent des résultats immédiats grâce à des détections immédiates, le ciblage de nombreuses anomalies comportementales entre vos utilisateurs et les ordinateurs et appareils connectés à votre réseau.  En outre, les nouvelles stratégies exposent davantage de données à partir du moteur de détection de Cloud App Security afin d’accélérer le processus d’investigation, et contiennent des menaces permanentes.
 
@@ -35,7 +35,7 @@ Ces anomalies sont détectées en analysant l’activité des utilisateurs. Le r
 * Échecs de connexion
 * Activité administrative
 * Comptes inactifs
-* Emplacement
+* Localisation
 * Voyage impossible
 * Agent Appareil et utilisateur
 * Fréquence d'activité
@@ -62,6 +62,14 @@ Plus le niveau de sensibilité est élevé, plus le niveau de suppression appliq
 ### <a name="malware-detection"></a>Détection de programmes malveillants
 
 * Cette détection identifie les fichiers malveillants dans votre stockage cloud, qu’ils viennent de vos applications Microsoft ou tierces. Microsoft Cloud App Security utilise la Threat Intelligence de Microsoft pour savoir si certains fichiers sont associés à des attaques par programme malveillant connues et s’ils sont potentiellement dangereux. Cette stratégie intégrée est désactivée par défaut. Les fichiers ne sont pas tous analysés, mais des solutions sont utilisées pour rechercher les fichiers qui présentent un risque potentiel. Une fois que les fichiers sont détectés, vous pouvez voir une liste des **fichiers infectés**. Cliquez sur le nom du fichier malveillant dans le tiroir de fichier pour ouvrir un rapport sur les programmes malveillants qui vous fournit des informations sur le type de programme malveillant dont le fichier est infecté.
+
+    > [!NOTE]
+    >- Pour la détection de programmes malveillants Office 365, vous avez besoin d’une licence valide pour Office 365-protection avancée contre les menaces P1.
+    >- Cloud App Security prend en charge la détection de programmes malveillants pour les applications suivantes :
+    >    - Zone
+    >    - Dropbox
+    >    - G Suite
+    >    - Office 365
 
 ### <a name="activity-from-anonymous-ip-addresses"></a>Activité à partir d’adresses IP anonymes
 
@@ -159,7 +167,7 @@ Pour délimiter une stratégie de détection d’anomalie :
 
 Vous pouvez trier rapidement les diverses alertes déclenchées par les nouvelles stratégies de détection des anomalies afin de déterminer celles qui doivent être prises en charge en priorité. Pour cela, vous avez besoin du contexte de l’alerte, afin de pouvoir obtenir une vue plus globale et identifier si une action malveillante se produit effectivement.
 
-1. Dans le **journal d’activité**, vous pouvez ouvrir une activité afin d’afficher son contenu. Cliquez sur **Utilisateur** pour afficher l’onglet Insights utilisateur. Cet onglet inclut des informations comme le nombre d’alertes, les activités et les emplacements à partir desquels l’utilisateur s’est connecté, ce qui est important dans le cadre d’une enquête.
+1. Dans le **journal d’activité**, vous pouvez ouvrir une activité afin d’afficher son contenu. Cliquez sur **utilisateur** pour afficher l’onglet Insights utilisateur. Cet onglet contient des informations telles que le nombre d’alertes, les activités et l’emplacement à partir duquel ils sont connectés, ce qui est important dans le cas d’une investigation.
 
     ![anomaly détection alert1 @ no__t-1 @no__t-détection 2anomaly alert1 @ no__t-3
 
