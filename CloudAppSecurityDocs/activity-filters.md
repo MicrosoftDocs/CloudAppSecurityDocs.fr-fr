@@ -110,7 +110,7 @@ Pour afficher les insights sur l’adresse IP :
     - **Activités** : Nombre d’activités effectuées par l’adresse IP au cours des 30 derniers jours.
     - **Emplacement IP** : Emplacements géographiques à partir desquels l’adresse IP s’est connectée au cours des 30 derniers jours.
     - **Activités** : Nombre d’activités effectuées à partir de l’adresse IP au cours des 30 derniers jours.
-    - **Activités administratives ** : Nombre d’activités administratives effectuées à partir de l’adresse IP au cours des 30 derniers jours.
+    - **Activités administratives**  : Nombre d’activités administratives effectuées à partir de l’adresse IP au cours des 30 derniers jours.
     - Vous pouvez effectuer les actions d’adresse IP suivantes :
         - Marquer comme adresse IP d’entreprise et ajouter à la liste autorisée
         - Marquer comme adresse IP VPN et ajouter à la liste autorisée

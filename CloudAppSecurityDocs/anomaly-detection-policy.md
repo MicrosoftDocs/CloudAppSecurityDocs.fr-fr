@@ -169,7 +169,7 @@ Vous pouvez trier rapidement les diverses alertes déclenchées par les nouvelle
 
 1. Dans le **journal d’activité**, vous pouvez ouvrir une activité afin d’afficher son contenu. Cliquez sur **utilisateur** pour afficher l’onglet Insights utilisateur. Cet onglet contient des informations telles que le nombre d’alertes, les activités et l’emplacement à partir duquel ils sont connectés, ce qui est important dans le cas d’une investigation.
 
-    ![anomaly détection alert1 @ no__t-1 @no__t-détection 2anomaly alert1 @ no__t-3
+    détection de ![anomaly ](./media/anomaly-alert-user1.png) alert1 de détection de ![anomaly alert1 ](./media/anomaly-alert-user2.png)
 
 1. Cela vous permet d’identifier les activités suspectes que l’utilisateur a effectuées et d’obtenir ainsi plus d’indices démontrant que le compte a été compromis. Par exemple, une alerte sur plusieurs échecs de connexion peut en effet être suspecte et indiquer une éventuelle attaque par force brute, mais elle peut également signaler un problème de configuration d’application, transformant cette alerte en un « faux positif » bénin. Mais si vous voyez une alerte d’échecs de connexion pour d’autres activités suspectes, la probabilité que le compte est compromis augmente. Dans l’exemple ci-dessous, vous pouvez voir que l’alerte **Plusieurs tentatives de connexion infructueuses** a été suivie par les alertes **Activité à partir d’une adresse IP TOR** et **Activité de type Voyage impossible**, deux indicateurs flagrants d’une compromission (IOCs). Si cela n’était pas assez suspect, vous pouvez constater que le même utilisateur a effectué une **activité de téléchargement en masse**, ce qui est souvent un indicateur qu’une personne malveillante tente d’exfiltrer des données.
 
