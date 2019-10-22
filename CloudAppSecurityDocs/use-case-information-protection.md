@@ -2,9 +2,9 @@
 title: Appliquer automatiquement des étiquettes de classification Azure Information Protection
 description: Ce tutoriel explique comment appliquer automatiquement des étiquettes de classification Azure Information Protection dans Microsoft Cloud App Security.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 3/5/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f3c3afbf03acca812b47388c956ab22dbffd5dd0
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 2bf268c1591a66dd19d933a62d94807ddbbb2cc1
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568728"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72336116"
 ---
 # <a name="tutorial-automatically-apply-azure-information-protection-classification-labels"></a>Tutoriel : Appliquer automatiquement des étiquettes de classification Azure Information Protection
 
@@ -75,7 +75,7 @@ Définissons une stratégie qui recherche des numéros de carte de crédit dans 
 
     7. Étant donné que [Cloud App Security est intégré avec Azure Information Protection](azip-integration.md), vous pouvez effectuer une sélection dans votre liste d’étiquettes de classification que vous utiliserez pour protéger les données.
 
-    8. Cliquez sur **Create (Créer)**. 
+    8. Cliquez sur **Create (Créer)** . 
 
    ![Ajouter l’étiquette de classification à la stratégie](./media/aip-auto-policy.png)
 

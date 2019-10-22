@@ -2,9 +2,9 @@
 title: Bloquer les téléchargements venant d’appareils non gérés avec le contrôle d’application par accès conditionnel Cloud App Security
 description: Ce tutoriel décrit le scénario permettant de protéger votre organisation contre les téléchargements de données sensibles sur des appareils non gérés en utilisant les fonctionnalités du proxy inversé Azure AD.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 1/24/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 06238ebc-2088-4372-9412-96cceaf3b145
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 55f6943b6631178dbdc732264082715e2565b633
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: b7f4bc220c7643d8aaca34f409ceeb262d5358e4
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568440"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72336094"
 ---
 # <a name="tutorial-block-download-of-sensitive-information"></a>Tutoriel : Bloquer le téléchargement d’informations sensibles 
 
@@ -71,7 +71,7 @@ Une fois cette tâche terminée, accédez au portail Cloud App Security et crée
 
 4. Affectez une **gravité de la stratégie** et une **catégorie**.
 
-5. Sous **Type de contrôle de session**, sélectionnez **Contrôler le téléchargement du fichier (avec DLP)**. Ce paramètre vous permet de surveiller tout ce que font vos utilisateurs dans une session Salesforce, et de bloquer et protéger les téléchargements en temps réel.
+5. Sous **Type de contrôle de session**, sélectionnez **Contrôler le téléchargement du fichier (avec DLP)** . Ce paramètre vous permet de surveiller tout ce que font vos utilisateurs dans une session Salesforce, et de bloquer et protéger les téléchargements en temps réel.
 
 6. Sous **Source de l’activité** dans la section **Activités remplissant toutes les conditions suivantes**, sélectionnez les filtres : 
 

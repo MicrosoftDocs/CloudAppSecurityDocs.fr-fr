@@ -2,9 +2,9 @@
 title: Découvrir et gérer l’informatique fantôme | Microsoft Docs
 description: Ce didacticiel décrit le processus d’application automatique des étiquettes de classification Azure Information Protection dans Microsoft Cloud App Security.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 04/21/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: 19b505545afa1c3afea00c69cbe621b860e7f1db
-ms.sourcegitcommit: 7eecf2f863c410abe0ba6eafd65777973de011cb
+ms.openlocfilehash: 31cc0a6eed8887d184b8a3912decb586dd9a46b4
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/18/2019
-ms.locfileid: "69573017"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72335993"
 ---
 # <a name="tutorial-discover-and-manage-shadow-it-in-your-network"></a>Tutoriel : Découvrir et gérer l’informatique fantôme sur votre réseau 
 

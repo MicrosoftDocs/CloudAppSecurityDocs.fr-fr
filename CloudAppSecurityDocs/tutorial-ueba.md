@@ -2,20 +2,20 @@
 title: Examiner des utilisateurs à risque | Microsoft Docs
 description: Ce tutoriel décrit le processus permettant d’examiner les utilisateurs à risque dans Microsoft Cloud App Security, dans des environnements hybrides, en utilisant une intégration à Azure ATP.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: shsagir
+ms.author: shsagir
 ms.date: 07/02/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: 284470013b01b7af96f2e8b0b271b00bf7a7ff4b
-ms.sourcegitcommit: 7eecf2f863c410abe0ba6eafd65777973de011cb
+ms.openlocfilehash: d7373fb53984b84095fb08522f2f1922c9a0b947
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/18/2019
-ms.locfileid: "69573012"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72336142"
 ---
 # <a name="tutorial-investigate-risky-users"></a>Tutoriel : Examiner des utilisateurs à risque
 
