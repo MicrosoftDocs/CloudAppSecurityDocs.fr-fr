@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 97d006399582e653322910803aaeec04f74582d0
-ms.sourcegitcommit: 2e8488efcc2253e0b5fa33db308e4986a9cdefd5
+ms.openlocfilehash: f9aa6d02b22719fa23d76ef619461a273e267740
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71997425"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72336219"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Nouveautés de Microsoft Cloud App Security
 
@@ -106,6 +106,9 @@ Cloud App Security intègre maintenant de nouveaux modèles de stratégies d'act
 - **Avertissement : Fin de la prise en charge de TLS 1.0 et 1.1 le 8 septembre**  
 Microsoft transfère tous ses services en ligne vers Transport Layer Security (TLS) 1.2+ pour fournir le meilleur chiffrement de sa catégorie. Par conséquent, à partir du 8 septembre 2019, Cloud App Security ne prendra plus en charge TLS 1.0/1.1 et les connexions utilisant ces protocoles. Pour plus d'informations sur l’impact de ce changement, lisez [notre billet de blog](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/End-of-support-for-TLS-1-0-and-1-1-in-Microsoft-Cloud-App/ba-p/770507).
 
+- **Logique améliorée pour les activités de connexion interactives (déploiement graduel)**  
+Nous déployons progressivement une nouvelle logique pour déterminer si une activité de connexion Azure Active Directory est interactive. La nouvelle logique améliore la capacité de Cloud App Security à signaler uniquement les activités de connexion qui sont lancées par un utilisateur.
+
 ## <a name="cloud-app-security-release-154"></a>Cloud App Security version 154
 
 Publication : 21 juillet 2019
@@ -166,6 +169,8 @@ Cloud App Security prend désormais en charge la configuration de l’action de 
 Cloud App Security prend désormais en charge l’action de gouvernance **Mettre à la corbeille** pour les stratégies de fichiers. Cette action de gouvernance vous permet de déplacer automatiquement des fichiers Google Drive vers le dossier Corbeille.
 - **Nouvelle autorisation pour les rôles d’administrateur d’application et d’administrateur de groupe**  
 Les rôles *Administrateur d’application/d’instance* et *Administrateur de groupe d’utilisateurs* prennent désormais en charge l’accès en lecture seule.
+- **Activités de connexion d’authentification héritées (déploiement graduel)**  
+Cloud App Security signale maintenant les activités de connexion Azure Active Directory qui utilisent des protocoles hérités comme ActiveSync. Ces activités de connexion peuvent être consultées dans le journal d’activité et peuvent être utilisées lors de la configuration des stratégies.
 
 ## <a name="cloud-app-security-release-150"></a>Cloud App Security version 150
 
