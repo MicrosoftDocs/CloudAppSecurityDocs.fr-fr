@@ -12,12 +12,12 @@ metadata:
   author: shsagir
   ms.author: shsagir
   ms.date: 09/24/2019
-  ms.openlocfilehash: 2256a6ea3afda0856bd4ec6b088ec64c1cf61b73
-  ms.sourcegitcommit: dc0063b35fe22476581cd5e70c8dbd1e2e2b5c0d
+  ms.openlocfilehash: fd20bf2a372c934f0603ba6cf709a5220c3f91a8
+  ms.sourcegitcommit: 3a44f020c6ae7f6c4956bf53727dfb0e82fd7cf0
   ms.translationtype: HT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 09/26/2019
-  ms.locfileid: "71310742"
+  ms.lasthandoff: 10/24/2019
+  ms.locfileid: "72887886"
 landingContent:
 - title: À propos de Cloud App Security
   linkLists:
@@ -67,6 +67,30 @@ landingContent:
       url: risk-score.md
     - text: Utilisation des applications découvertes
       url: discovered-apps.md
+- title: Bonnes pratiques
+  linkLists:
+  - linkListType: quickstart
+    links:
+    - text: Découvrir et évaluer des applications cloud
+      url: best-practices.md#discover-and-assess-cloud-apps
+    - text: Appliquer des stratégies de gouvernance cloud
+      url: best-practices.md#apply-cloud-governance-policies
+    - text: Limiter l’exposition des données partagées et appliquer des stratégies de collaboration
+      url: best-practices.md#limit-exposure-of-shared-data-and-enforce-collaboration-policies
+    - text: Découvrir, classifier, étiqueter et protéger des données réglementées et sensibles stockées dans le cloud
+      url: best-practices.md#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud
+    - text: Appliquer des stratégies de conformité et DLP aux données stockées dans le cloud
+      url: best-practices.md#enforce-dlp-and-compliance-policies-for-data-stored-in-the-cloud
+    - text: Bloquer et protéger le téléchargement de données sensibles sur des appareils non gérés ou à risque
+      url: best-practices.md#block-and-protect-download-of-sensitive-data-to-unmanaged-or-risky-devices
+    - text: Sécuriser votre collaboration avec les utilisateurs externes en appliquant des contrôles de session en temps réel
+      url: best-practices.md#secure-collaboration-with-external-users-by-enforcing-real-time-session-controls
+    - text: Détecter les menaces cloud, les comptes compromis, les insiders malveillants et les ransomware
+      url: best-practices.md#detect-cloud-threats-compromised-accounts-malicious-insiders-and-ransomware
+    - text: Utiliser la piste d’audit des activités pour des investigations forensiques
+      url: best-practices.md#use-the-audit-trail-of-activities-for-forensic-investigations
+    - text: Sécuriser les services IaaS et les applications personnalisées
+      url: best-practices.md#secure-iaas-services-and-custom-apps
 - title: Ressources supplémentaires
   linkLists:
   - linkListType: learn
