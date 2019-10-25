@@ -19,6 +19,8 @@
   items:
     - name: Mise en route
       href: getting-started-with-cloud-app-security.md
+    - name: meilleures pratiques recommandées.
+      href: best-practices.md
 - name: Didacticiels
   items:
     - name: Découvrir et gérer le shadow IT
