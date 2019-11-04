@@ -12,14 +12,16 @@
       items:
         - name: Office 365
           href: editions-cloud-app-security-o365.md
-        - name: Azure AD
+        - name: "Azure\_AD"
           href: editions-cloud-app-security-aad.md
+        - name: US Government GCC High
+          href: editions-cloud-app-security-gcc.md
 - name: Guides de démarrage rapide
   expanded: true
   items:
     - name: Mise en route
       href: getting-started-with-cloud-app-security.md
-    - name: meilleures pratiques recommandées.
+    - name: Bonnes pratiques
       href: best-practices.md
 - name: Didacticiels
   items:
@@ -52,7 +54,7 @@
     - name: Configuration de base
       href: general-setup.md
       items:
-        - name: Conditions requises en matière de réseau
+        - name: Configuration requise pour le réseau
           href: network-requirements.md
         - name: Gérer les administrateurs
           href: manage-admins.md
@@ -117,6 +119,8 @@
           href: connect-dropbox-to-microsoft-cloud-app-security.md
         - name: Connecter G Suite
           href: connect-google-apps-to-microsoft-cloud-app-security.md
+        - name: Connecter GCP
+          href: connect-google-gcp-to-microsoft-cloud-app-security.md
         - name: "Connecter Office\_365"
           href: connect-office-365-to-microsoft-cloud-app-security.md
         - name: Connecter Okta
@@ -125,7 +129,7 @@
           href: connect-salesforce-to-microsoft-cloud-app-security.md
         - name: Connecter ServiceNow
           href: connect-servicenow-to-microsoft-cloud-app-security.md
-        - name: Connecter WebEx
+        - name: Connecter Webex
           href: connect-webex-to-microsoft-cloud-app-security.md
         - name: Se connecter à Workday
           href: connect-workday-to-microsoft-cloud-app-security.md
@@ -135,7 +139,7 @@
           href: proxy-deployment-aad.md
         - name: Intégrer et déployer le contrôle d’application par accès conditionnel pour tous les types d’applications
           href: proxy-deployment-any-app.md
-    - name: Examen
+    - name: Investigation
       href: investigate.md
       items:
         - name: Activités
@@ -158,12 +162,12 @@
               href: security-config.md
             - name: Configuration de la sécurité pour AWS
               href: security-config-aws.md
-        - name: Surveiller les applications
+        - name: Superviser les applications
           href: monitor-alerts.md
           items:
             - name: Gérer les alertes
               href: managing-alerts.md
-    - name: Control
+    - name: Contrôler
       href: control.md
       items:
         - name: Contrôler les applications cloud avec des stratégies
