@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 9/12/2019
+ms.date: 11/01/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,16 +14,16 @@ ms.technology: ''
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6d1bb49f9af2ee64c191a3cc06c42c021f474c3e
-ms.sourcegitcommit: 069f717a99a2e5a87702c45265dda45ad3901a41
+ms.openlocfilehash: 42e745feff8fbe9f17673cb15f0f8688ceeb1fe2
+ms.sourcegitcommit: e7af22892c56d03490d1e6241c0a74d2e11e9fe2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71185209"
+ms.lasthandoff: 11/03/2019
+ms.locfileid: "73462173"
 ---
 # <a name="network-requirements"></a>Conditions requises en matière de réseau
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Cet article fournit une liste de ports et d’adresses IP que vous devez autoriser et autoriser à utiliser avec Microsoft Cloud App Security.
 
@@ -43,7 +43,7 @@ Pour savoir à quel centre de données vous vous connectez, effectuez les étape
 
 ## <a name="portal-access"></a>Accès au portail
 
-Pour accéder au portail Cloud App Security, ajoutez le **port de sortie 443** pour les adresses IP et les noms DNS suivants à la liste verte de votre pare-feu:
+Pour accéder au portail Cloud App Security, ajoutez le **port de sortie 443** pour les adresses IP et les noms DNS suivants à la liste verte de votre pare-feu :
 
     portal.cloudappsecurity.com
     *.portal.cloudappsecurity.com
@@ -58,16 +58,23 @@ Pour accéder au portail Cloud App Security, ajoutez le **port de sortie 443** p
     dc.services.visualstudio.com
     *.blob.core.windows.net
 
+Pour les clients du gouvernement des États-Unis, il est également nécessaire d’ajouter les noms DNS suivants à la liste verte de votre pare-feu pour fournir l’accès au portail Cloud App Security GCC High :
+
+    portal.cloudappsecurity.us
+    *.portal.cloudappsecurity.us
+    cdn.cloudappsecurity.com
+
 En outre, les éléments suivants doivent figurer dans la liste verte, en fonction du centre de données que vous utilisez :
 > [!div class="mx-tableFixed"]
 >
-> |Centre de données|Adresses IP|Nom DNS|
+> |Centre de données|Adresses IP|Nom DNS|
 > |----|----|----|
 > |US1|13.64.26.88<br>13.64.29.32<br>13.80.125.22<br>13.91.91.243<br>40.74.1.235<br>40.74.6.204<br>51.143.58.207<br>52.137.89.147<br>52.183.75.62|\*.us.portal.cloudappsecurity.com|
 > |US2|13.80.125.22<br>20.36.222.59<br>20.36.222.60<br>40.74.1.235<br>40.74.6.204<br>51.143.58.207<br>52.137.89.147<br>52.183.75.62<br>52.184.165.82|\*.us2.portal.cloudappsecurity.com|
 > |US3|13.80.125.22<br>40.74.1.235<br>40.74.6.204<br>40.90.218.196<br>40.90.218.198<br>51.143.58.207<br>52.137.89.147<br>52.183.75.62|*.us3.portal.cloudappsecurity.com|
 > |EU1|13.80.125.22<br>40.119.154.72<br>40.74.1.235<br>40.74.6.204<br>51.143.58.207<br>52.137.89.147<br>52.157.238.58<br>52.174.56.180<br>52.183.75.62|\*.eu.portal.cloudappsecurity.com<|
 > |EU2|13.80.125.22<br>40.74.1.235<br>40.74.6.204<br>40.81.156.154<br>40.81.156.156<br>51.143.58.207<br>52.137.89.147<br>52.183.75.62|*.eu2.portal.cloudappsecurity.com|
+> |Gov US1|13.72.19.4<br>52.227.143.223|*. us1.portal.cloudappsecurity.us|
 
 > [!NOTE]
 > Au lieu d’un caractère générique (\*) vous pouvez ouvrir seulement l’URL de votre locataire spécifique. Par exemple, d’après la capture d’écran ci-dessus, vous pouvez ouvrir : mod244533.us.portal.cloudappsecurity.com
@@ -82,7 +89,7 @@ En outre, les éléments suivants doivent figurer dans la liste verte, en foncti
 
 > [!div class="mx-tableFixed"]
 >
-> |Centre de données|Adresses IP|||Nom DNS|
+> |Centre de données|Adresses IP|||Nom DNS|
 > |----|----|----|----|----|
 > |US1|40.81.63.1<br>40.81.63.4<br>52.142.112.145<br>52.142.116.135<br>51.105.163.8<br>51.105.163.43<br>40.66.60.118<br>40.66.60.200<br>40.65.169.97<br>40.65.169.236<br>40.81.121.111<br>40.81.120.187<br>40.91.114.46<br>40.91.114.47<br>40.81.63.5<br>40.81.63.2<br>20.40.163.133<br>20.40.163.97<br>52.142.116.174<br>52.142.117.183<br>52.142.121.75<br>52.142.121.6<br>51.105.166.102<br>51.105.165.116|51.105.165.37<br>51.105.165.31<br>40.66.60.207<br>40.66.60.208<br>40.66.62.78<br>20.40.134.94<br>40.65.169.46<br>40.65.169.196<br>52.148.116.37<br>52.148.115.238<br>40.81.127.140<br>40.81.121.107<br>51.137.136.14<br>51.137.136.13<br>40.91.114.49<br>40.91.114.44<br>51.143.111.58<br>40.91.127.44<br>40.81.63.8<br>40.81.62.255<br>52.142.112.146<br>52.142.116.250<br>51.105.166.103<br>51.105.164.8|40.66.60.180<br>40.66.60.206<br>40.119.215.167<br>40.65.170.17<br>40.81.121.127<br>40.81.121.108<br>40.91.114.48<br>40.91.114.45<br>20.40.161.119<br>20.40.161.135<br>52.156.197.254<br>52.156.198.196<br>51.105.166.106<br>51.105.165.63<br>40.66.60.185<br>40.66.59.41<br>20.184.63.216<br>20.184.63.232<br>40.81.122.76<br>40.81.123.124<br>40.90.220.37<br>40.91.126.157|\*. us1.cas.ms<br>\*. us1.access-control.cas.ms<br>\*. us1.saml.cas.ms|
 > |US2|40.81.63.7<br>40.81.59.90<br>40.67.251.0<br>52.156.206.47<br>40.66.60.209<br>40.66.60.216<br>40.65.170.137<br>40.65.170.26<br>40.81.127.139<br>40.81.127.25<br>104.45.170.184<br>104.45.170.185<br>40.81.58.184<br>40.81.58.180<br>20.40.163.96<br>20.40.163.88<br>52.156.205.222<br>52.156.204.99<br>52.155.166.50<br>52.142.127.127|40.66.60.219<br>40.66.60.215<br>40.66.63.148<br>20.40.132.195<br>40.65.170.125<br>40.65.170.123<br>52.139.245.40<br>52.139.245.48<br>40.81.121.140<br>40.81.121.135<br>51.137.137.121<br>51.137.137.118<br>104.45.170.196<br>104.45.170.182<br>52.151.238.5<br>52.151.237.243<br>40.81.58.193<br>40.81.59.93<br>52.156.197.208<br>52.156.206.46|40.66.60.210<br>40.66.60.217<br>40.65.170.128<br>40.65.170.133<br>40.81.127.230<br>40.81.127.141<br>104.45.170.188<br>104.45.170.194<br>20.40.161.141<br>20.40.161.140<br>52.156.205.226<br>52.156.206.45<br>40.66.62.130<br>40.66.56.158<br>40.119.207.131<br>40.119.207.144<br>40.81.124.185<br>40.81.122.62<br>52.191.238.65<br>52.191.237.188|\*. us2.cas.ms<br>\*. us2.access-control.cas.ms<br>\*. us2.saml.cas.ms|
@@ -92,7 +99,7 @@ En outre, les éléments suivants doivent figurer dans la liste verte, en foncti
 
 ## <a name="siem-agent-connection"></a>Connexion de l’agent SIEM
 
-Pour permettre à Cloud App Security de se connecter à votre serveur SIEM, ajoutez le **port de sortie 443** pour les adresses IP suivantes à la liste verte de votre pare-feu:
+Pour permettre à Cloud App Security de se connecter à votre serveur SIEM, ajoutez le **port de sortie 443** pour les adresses IP suivantes à la liste verte de votre pare-feu :
 
 > [!div class="mx-tableFixed"]
 >
@@ -103,9 +110,10 @@ Pour permettre à Cloud App Security de se connecter à votre serveur SIEM, ajou
 > |US3|13.80.125.22<br>40.74.1.235<br>40.74.6.204<br>40.90.218.196<br>40.90.218.198<br>51.143.58.207<br>52.137.89.147<br>52.183.75.62|
 > |EU1|13.80.125.22<br>40.119.154.72<br>40.74.1.235<br>40.74.6.204<br>51.143.58.207<br>52.137.89.147<br>52.157.238.58<br>52.174.56.180<br>52.183.75.62|
 > |EU2|13.80.125.22<br>40.74.1.235<br>40.74.6.204<br>40.81.156.154<br>40.81.156.156<br>51.143.58.207<br>52.137.89.147<br>52.183.75.62|
+> |Gov US1|13.72.19.4<br>52.227.143.223|
 
 > [!NOTE]
-> Si vous n’avez pas spécifié de proxy lors de la configuration de l’agent Siem Cloud App Security, vous devez autoriser les http://ocsp.msocsp.com/ connexions http à et OCSP.DigiCert.com sur le port 80. Il est utilisé pour vérifier l’état de révocation du certificat lorsque vous vous connectez au portail Cloud App Security.
+> Si vous n’avez pas spécifié de proxy lors de la configuration de l’agent SIEM Cloud App Security, vous devez autoriser les connexions http à http://ocsp.msocsp.com/ et ocsp.digicert.com sur le port 80. Il est utilisé pour vérifier l’état de révocation du certificat lorsque vous vous connectez au portail Cloud App Security.
 
 ## <a name="app-connector"></a>Connecteur d’applications
 
@@ -125,6 +133,7 @@ Pour se connecter à des applications tierces, autorisez Cloud App Security à s
 > |US3|13.68.76.47<br>40.90.218.196<br>40.90.218.197<br>40.90.218.198<br>40.90.218.203<br>40.90.220.190<br>40.90.220.196<br>51.143.120.236<br>51.143.120.242<br>104.42.54.148||
 > |EU1|13.80.22.71<br>13.95.29.177<br>13.95.30.46<br>40.114.217.8<br>40.114.217.8<br>40.115.24.65<br>40.115.24.65<br>40.115.25.50<br>40.115.25.50<br>40.119.154.72|40.67.219.133<br>51.105.55.62<br>51.105.179.157<br>51.137.200.32<br>52.157.232.110<br>52.157.233.133<br>52.157.233.92<br>52.157.238.58<br>52.157.239.110<br>52.174.56.180|
 > |EU2|40.81.152.171<br>40.81.152.172<br>40.81.156.153<br>40.81.156.154<br>40.81.156.155<br>40.81.156.156<br>51.105.55.62<br>51.137.200.32<br>51.145.108.227<br>51.145.108.250|
+> |Gov US1|52.227.138.248<br>52.227.142.192<br>52.227.143.223|
 
 ## <a name="third-party-dlp-integration"></a>Intégration de solutions DLP tierces
 
@@ -166,7 +175,7 @@ Si vous voulez personnaliser l’identité de l’expéditeur de l’e-mail, Mic
 
 Si vous ne personnalisez pas l’identité de l’expéditeur, vos notifications par e-mail seront envoyées avec tous les paramètres par défaut.
 
-Pour utiliser MailChimp, ajoutez cette adresse IP à votre liste d’autorisation anti-spam pour permettre l’envoi de notifications: 198.2.134.139 (mail1.cloudappsecurity.com)
+Pour utiliser MailChimp, ajoutez cette adresse IP à votre liste d’autorisation anti-spam pour permettre l’envoi de notifications : 198.2.134.139 (mail1.cloudappsecurity.com)
 
 ## <a name="log-collector"></a>Collecteur de journaux
 
@@ -176,18 +185,19 @@ Pour activer les fonctionnalités Cloud Discovery à l’aide d’un collecteur 
 - Autorisez le collecteur de journaux à lancer le trafic sortant sur le portail (par exemple, contoso.cloudappsecurity.com) sur le port 443.
 - Autorisez le collecteur de journaux à initier le trafic sortant vers le stockage Blob Azure sur le port 443 :
 
-  | Centre de données |                        URL                        |
-  |-------------|---------------------------------------------------|
-  |     US1     | https:\//adaprodconsole.blob.Core.Windows.net/     |
-  |     US2     | https:\//prod03use2console1.blob.Core.Windows.net/ |
-  |     US3     | https:\//prod5usw2console1.blob.Core.Windows.net/  |
-  |     EU1     | https:\//prod02euwconsole1.blob.Core.Windows.net/  |
-  |     EU2     | https:\//prod4uksconsole1.blob.Core.Windows.net/   |
+  | Centre de données |                        une adresse URL                                 |
+  |-------------|------------------------------------------------------------|
+  |     US1     | https :\//adaprodconsole.blob.core.windows.net/             |
+  |     US2     | https :\//prod03use2console1.blob.core.windows.net/         |
+  |     US3     | https :\//prod5usw2console1.blob.core.windows.net/          |
+  |     EU1     | https :\//prod02euwconsole1.blob.core.windows.net/          |
+  |     EU2     | https :\//prod4uksconsole1.blob.core.windows.net/           |
+  |   Gov US1   | https :\//gprd1usgvconsole1.blob.core.usgovcloudapi.net/    |
 
 > [!NOTE]
 > - Si votre pare-feu nécessite une liste d’accès à d’adresses IP statiques et qu’il ne prend pas en charge une liste verte basée sur des URL, autorisez le collecteur de journaux à émettre le trafic sortant vers les [plages IP du centre de données Microsoft Azure](https://www.microsoft.com/download/details.aspx?id=41653) sur le port 443.
 >- Autorisez le collecteur de journaux à diriger le trafic sortant vers le portail Cloud App Security.
->- Si vous n’avez pas spécifié de proxy lors de la configuration du collecteur de journaux, vous devez autoriser http://ocsp.msocsp.com/ les connexions http à et OCSP.DigiCert.com sur le port 80. Il est utilisé pour vérifier l’état de révocation du certificat lorsque vous vous connectez au portail Cloud App Security.
+>- Si vous n’avez pas spécifié de proxy lors de la configuration du collecteur de journaux, vous devez autoriser les connexions http à http://ocsp.msocsp.com/ et ocsp.digicert.com sur le port 80. Il est utilisé pour vérifier l’état de révocation du certificat lorsque vous vous connectez au portail Cloud App Security.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
