@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9de8c36beed2ffb83152f2ff58da36b897c7026f
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: d435d8b12e5cc90de2c8d4816d1f1b93ddb5d0a8
+ms.sourcegitcommit: b592226ec8a07b4bc87720ea8611cd6edc8d7f8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71084573"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73463614"
 ---
 # <a name="connect-apps"></a>Connecter des applications
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Les connecteurs d’applications utilisent les API des fournisseurs d’applications pour que Microsoft Cloud App Security bénéficie d’une plus grande visibilité et d’un plus grand contrôle sur les applications auxquelles vous vous connectez.
 
@@ -68,24 +68,24 @@ Le tableau suivant répertorie, par application cloud, les fonctionnalités pris
 
 > [!div class="mx-tableFixed"]
 >
-> ||**Office 365**|**Box**|**Okta**|**G Suite**|**ServiceNow**|**Salesforce**|**Dropbox**|**AWS**|**WebEx**|**Workday**|
-> |-|-|-|-|-|-|-|-|-|-|-|
-> |**Répertorier les comptes**|✔|✔|✔|✔|✔|✔|✔|✔|✔|✔|
-> |**Groupe**|✔|✔|✔|✔|✔|✔|✔|✔|Non applicable|Non applicable|
-> |**Privilèges**|✔|✔|Non prise en charge par le fournisseur|✔|✔|✔|✔||✔|Non applicable|
-> |**Gouvernance des utilisateurs**|✔|✔||✔|Bientôt disponible|Bientôt disponible|Bientôt disponible||Bientôt disponible|Bientôt disponible|
-> |**Activité de connexion**|✔|✔|✔|✔|✔|✔|✔|✔|✔|✔|
-> |**Activité de l’utilisateur**|✔*|✔|✔|✔ - nécessite Google Business ou Entreprises|Partielle|Prise en charge avec Salesforce Shield|✔|Non applicable|✔|✔|
-> |**Activité d’administration**|✔|✔|✔|✔|Partiel|✔|✔|✔|✔|✔|
-> |**Analyse régulière des fichiers**|✔|✔|Non applicable|✔|✔|✔|✔|Non applicable|||
-> |**Analyse des fichiers pratiquement en temps réel**|✔|✔|Non applicable|✔ - nécessite Google Business ou Entreprises|||Bientôt disponible||✔||
-> |**Contrôle partagé**|✔|✔|Non applicable|✔|Non applicable||✔||✔||
-> |**Quarantaine**|✔|✔|Non applicable|Bientôt disponible|||Bientôt disponible||Non applicable|Non applicable|
-> |**Voir les autorisations d’application**|✔|Non prise en charge par le fournisseur|Non applicable|✔||✔|Non prise en charge par le fournisseur||Non applicable|Non applicable|
-> |**Révoquer les autorisations d’application**|✔||Non applicable|✔||✔|Non applicable||Non applicable|Non applicable|
-> |**Appliquer des étiquettes Azure Information Protection**|✔|✔||✔|||||Non applicable|Non applicable|
+> ||**Office 365**|**Box**|**Okta**|**GCP**|**G Suite**|**ServiceNow**|**Salesforce**|**Dropbox**|**AWS**|**WebEx**|**Workday**|
+> |-|-|-|-|-|-|-|-|-|-|-|-|
+> |**Répertorier les comptes**|✔|✔|✔|Sujet à la connexion de G suite|✔|✔|✔|✔|✔|✔|✔|
+> |**Groupe**|✔|✔|✔|Sujet à la connexion de G suite|✔|✔|✔|✔|✔|Not applicable|Not applicable|
+> |**Privilèges**|✔|✔|Non prise en charge par le fournisseur|Sujet à la connexion de G suite|✔|✔|✔|✔||✔|Not applicable|
+> |**Gouvernance des utilisateurs**|✔|✔||Sujet à la connexion de G suite|✔|Bientôt disponible|✔|Bientôt disponible||Bientôt disponible|Bientôt disponible|
+> |**Activité de connexion**|✔|✔|✔|Sujet à la connexion de G suite|✔|✔|✔|✔|✔|✔|✔|
+> |**Activité de l’utilisateur**|✔*|✔|✔|✔|✔ - nécessite Google Business ou Entreprises|Partielle|Prise en charge avec Salesforce Shield|✔|Not applicable|✔|✔|
+> |**Activité d’administration**|✔|✔|✔|✔|✔|Partielle|✔|✔|✔|✔|✔|
+> |**Analyse régulière des fichiers**|✔|✔|Not applicable||✔|✔|✔|✔|Not applicable|||
+> |**Analyse des fichiers pratiquement en temps réel**|✔|✔|Not applicable||✔ - nécessite Google Business ou Entreprises|||Bientôt disponible||✔||
+> |**Contrôle partagé**|✔|✔|Not applicable||✔|Not applicable||✔||✔||
+> |**Quarantaine**|✔|✔|Not applicable||Bientôt disponible|||Bientôt disponible||Not applicable|Not applicable|
+> |**Voir les autorisations d’application**|✔|Non prise en charge par le fournisseur|Not applicable||✔||✔|Non prise en charge par le fournisseur||Not applicable|Not applicable|
+> |**Révoquer les autorisations d’application**|✔||Not applicable||✔||✔|Not applicable||Not applicable|Not applicable|
+> |**Appliquer des étiquettes Azure Information Protection**|✔|✔|||✔|||||Not applicable|Not applicable|
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Conditions préalables
 
 - Pour certaines applications, vous pouvez être amené à ajouter des adresses IP à la liste verte pour permettre à Cloud App Security de collecter les journaux et de fournir un accès pour la console Cloud App Security. Pour plus d’informations, consultez [Configuration requise pour le réseau](network-requirements.md).
 
@@ -100,12 +100,13 @@ Pour utiliser des connecteurs d’applications, vous devez vérifier que vous av
 |-----|--------------|------|
 | Azure | | Administrateur général |
 | AWS | | Utilisateur récemment créé |
-| Box | Enterprise | Il est fortement recommandé de vous connecter à Box en tant qu’administrateur. Une connexion en tant que coadministrateur entraîne une visibilité uniquement partielle des données. Si vous vous connectez en tant que coadministrateur, sélectionnez toutes les autorisations. |
-| Dropbox | Business/Entreprises | Admin |
-| G Suite | Compte G Suite Business ou Entreprise<br /><br /> G Suite Enterprise (au minimum) | Super administrateur |
+| Zone | Enterprise | Il est fortement recommandé de vous connecter à Box en tant qu’administrateur. La connexion en tant que coadministrateur entraînera uniquement une visibilité partielle des données. Si vous vous connectez en tant que coadministrateur, sélectionnez toutes les autorisations. |
+| Dropbox | Business/Entreprises | Administration |
+| GCP | | Consultez les [conditions préalables Connect GCP](connect-google-gcp-to-microsoft-cloud-app-security.md#prerequisites) |
+| G Suite | Compte G Suite Business ou Entreprise<br /><br />G Suite Enterprise (au minimum) | Super administrateur |
 | Office 365 | | Administrateur général |
-| Okta | Enterprise (pas la version d’essai) | Admin |
-| Salesforce | | Admin |
+| Okta | Enterprise (pas la version d’essai) | Administration |
+| Salesforce | | Administration |
 | ServiceNow | Eureka et au-dessus | Rôle admin + RestAPI |
 | WebEx | | Admin + conformité administrateur |
 | Workday | | Consultez les [conditions préalables Connect](connect-workday-to-microsoft-cloud-app-security.md#prerequisites) de la journée de travail |
