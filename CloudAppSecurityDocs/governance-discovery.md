@@ -15,19 +15,18 @@ ms.assetid: e451031e-4764-411a-b366-73a49d4f25df
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ab6a8d276cdd3ce1963be2e5a0c28b42bc8eeaa6
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: a5b75eb8a376a83791f44986b446b8a22ed8d832
+ms.sourcegitcommit: 474cc4e6874224295931089af0cc8c5d93916627
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335797"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73612228"
 ---
 # <a name="govern-discovered-apps"></a>Gouverner les applications découvertes
 
 *S’applique à : Microsoft Cloud App Security*
 
-Une fois que vous avez consulté la liste des applications découvertes dans votre environnement, vous pouvez sécuriser de plusieurs façons l’environnement contre l’utilisation d’applications indésirables.
-
+Une fois que vous avez consulté la liste des applications découvertes dans votre environnement, vous pouvez sécuriser votre environnement en approuvant les applications sécurisées (approuvées) ou en interdisant les applications indésirables **(non**approuvées **) des**manières suivantes.
 
 ## <a name="BKMK_SanctionApp"></a> Approbation/non-approbation d’une application 
 
