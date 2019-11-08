@@ -5,16 +5,16 @@ author: shsagir
 ms.author: shsagir
 ms.service: cloud-app-security
 ms.topic: overview
-ms.date: 8/21/2019
+ms.date: 11/01/2019
 ms.collection: M365-security-compliance
 ms.custom: seodec18
 ms.suite: ems
-ms.openlocfilehash: 84c33ba29a0d63e5476186a417aae749f6f97825
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: de625987873d60b99f39579ea6694dacccfd4479
+ms.sourcegitcommit: e7af22892c56d03490d1e6241c0a74d2e11e9fe2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71083818"
+ms.lasthandoff: 11/03/2019
+ms.locfileid: "73462102"
 ---
 # <a name="microsoft-cloud-app-security-data-security-and-privacy"></a>Sécurité et confidentialité des données Microsoft Cloud App Security
 
@@ -38,16 +38,16 @@ Microsoft Cloud App Security est conforme à de nombreuses normes de conformité
 
 | |Title|Description|
 |----|----|----|
-|![logo csa](./media/csastar-attest.png)|Attestation CSA STAR|Azure et Intune ont reçu l’attestation Cloud Security Alliance STAR basée sur un audit indépendant.|
-|![logo csa](./media/csastar.png)|Certification CSA STAR|Azure, Intune et Power BI ont reçu la certification Cloud Security Alliance STAR de niveau Gold.|
+|![logo csa](./media/csastar-attest.png)|CSA STAR Attestation|Azure et Intune ont obtenu la certification CSA (Cloud Security Alliance) STAR basée sur un audit indépendant.|
+|![logo csa](./media/csastar.png)|CSA STAR Certification|Azure, Intune et Power BI ont obtenu la certification CSA (Cloud Security Alliance) STAR au niveau « Gold ».|
 |![logo des clauses contractuelles types de l’Union Européenne](./media/eu-model-icon.png)|[Clauses contractuelles types de l’Union Européenne](https://www.microsoft.com/en-us/trustcenter/compliance/eu-model-clauses)|Microsoft offre par le biais des Clauses contractuelles standard de l’Union Européenne des garanties pour les transferts de données personnelles.|
-|![logo du bouclier de protection des données](./media/privacy_shield.png)|Union Européenne – États-Unis Bouclier de protection des données|Microsoft est conforme à cette infrastructure de protection des données personnelles transférées de l’Union Européenne vers les États-Unis.|
-|![logo FISC](./media/logo_fisc.png)|FISC|Microsoft répond aux exigences de la norme Financial Industry Information Systems v8 au Japon.|
+|![logo privacy shield](./media/privacy_shield.png)|EU-U.S. Privacy Shield|Microsoft est conforme à cette infrastructure pour la protection des données personnelles transférées à partir de l'UE vers les États-Unis.|
+|![logo FISC](./media/logo_fisc.png)|FISC|Microsoft respecte les exigences de la norme Financial Industry Information Systems v8 du Japon.|
 |![logo HIPAA](./media/hipaa-logo.png)|[HIPAA/HI-TECH](https://www.microsoft.com/en-us/trustcenter/compliance/hipaa)|Microsoft propose des accords de partenariat sur la transférabilité de l'assurance maladie et la responsabilité des assureurs.|
-|![logo iso 9001](./media/iso-9001.png)|ISO 9001|Microsoft est certifié pour son implémentation de ces normes de gestion de la qualité.|
+|![logo iso 9001](./media/iso-9001.png)|ISO 9001|Microsoft est certifié pour son implémentation en matière des normes de gestion de la qualité.|
 |![logo iso 27001](./media/iso-27001.png)|[ISO/IEC 27001](https://www.microsoft.com/en-us/trustcenter/compliance/iso-iec-27001)|Microsoft est certifié pour son implémentation de ces normes de gestion de la sécurité des informations.|
 |![logo iso 27018](./media/iso-27018.png)|[ISO/IEC 27018](https://www.microsoft.com/en-us/trustcenter/compliance/iso-iec-27018)|Microsoft a été le premier fournisseur de cloud à adhérer à ce code de pratique en matière de confidentialité du cloud.|
-|![logo PCI](./media/pci-logo.png)|PCI DSS|Azure est conforme aux normes Payment Card Industry Data Security Standards, niveau 1, version 3.1.|
+|![logo PCI](./media/pci-logo.png)|PCI DSS|Azure est conforme aux PCI DSS (normes de sécurité des données de l'industrie des cartes de paiement) Niveau 1 version 3.1.|
 |![logo SOC](./media/soc-logo.png)|[Rapports SOC 1 et SOC 2 type 2](https://www.microsoft.com/en-us/trustcenter/compliance/soc)|Les services de cloud computing Microsoft sont conformes aux normes Service Organization Controls pour la sécurité opérationnelle.|
 |![logo SOC](./media/soc-logo.png)|SOC 3|Les services de cloud computing Microsoft sont conformes aux normes Service Organization Controls pour la sécurité opérationnelle.|
 |![logo g-cloud](./media/g-cloud.png)|UK G-Cloud|Crown Commercial Service a renouvelé la classification de services cloud Microsoft de la norme Government Cloud v6.|
@@ -135,13 +135,13 @@ Microsoft utilise la technologie de chiffrement pour protéger vos données lors
 > [!NOTE]
 > Cloud App Security s’appuie sur les protocoles TLS (Transport Layer Security) 1.2+ pour fournir un chiffrement de pointe. Les applications clientes natives et les navigateurs qui ne prennent pas en charge TLS 1.2+ ne sont pas accessibles lorsqu’ils sont configurés avec le contrôle de session. Toutefois, les applications SaaS qui utilisent TLS 1.1 ou une version antérieure apparaissent dans le navigateur comme utilisant TLS 1.2+ lorsqu’elles sont configurées avec Cloud App Security.
 
-### <a name="identity-and-access-management"></a>Gestion de l’identité et de l'accès
+### <a name="identity-and-access-management"></a>Gestion des identités et des accès
 
 Microsoft Cloud App Security vous permet de limiter l’accès des administrateurs au portail en fonction de la géolocalisation à l’aide d’Azure Active Directory. Il est possible d’exiger l’authentification multifacteur pour accéder au portail Microsoft Cloud App Security à l’aide d’Azure Active Directory.
 
 ### <a name="permissions"></a>Autorisations
 
-Microsoft Cloud App Security prend en charge le contrôle d’accès basé sur les rôles. Les administrateurs généraux et les rôles d’administrateur de sécurité d’Office 365 et d’Azure Active Directory ont un accès complet à Cloud App Security, et les lecteurs de sécurité ont un accès en lecture. [Pour plus d'informations](https://docs.microsoft.com/cloud-app-security/manage-admins).
+Microsoft Cloud App Security prend en charge le contrôle d’accès basé sur les rôles. Les administrateurs généraux et les rôles d’administrateur de sécurité d’Office 365 et d’Azure Active Directory ont un accès complet à Cloud App Security, et les lecteurs de sécurité ont un accès en lecture. [Pour plus d'informations](/cloud-app-security/manage-admins).
 
 ## <a name="customer-controls-for-organizational-compliance"></a>Contrôles du client en matière de conformité de l’organisation
 
@@ -151,13 +151,17 @@ Microsoft Cloud App Security vous permet de délimiter votre déploiement. Le d�
 
 ### <a name="anonymization"></a>Anonymisation
 
-Vous pouvez choisir de préserver l’anonymat de rapports **Cloud Discovery**. Une fois vos fichiers journaux téléchargés vers **Microsoft** Cloud App Security, toutes les informations relatives au nom de l’utilisateur sont remplacées par des noms d’utilisateur chiffrés. Pour les examens de sécurité spécifiques, vous pouvez résoudre le nom d’utilisateur réel. Les données privées sont chiffrées en utilisant AES-128 avec une clé dédiée par client. [Pour plus d'informations](https://docs.microsoft.com/cloud-app-security/cloud-discovery-anonymizer).
+Vous pouvez choisir de préserver l’anonymat de rapports **Cloud Discovery**. Une fois vos fichiers journaux téléchargés vers **Microsoft** Cloud App Security, toutes les informations relatives au nom de l’utilisateur sont remplacées par des noms d’utilisateur chiffrés. Pour les examens de sécurité spécifiques, vous pouvez résoudre le nom d’utilisateur réel. Les données privées sont chiffrées en utilisant AES-128 avec une clé dédiée par client. [Pour plus d'informations](/cloud-app-security/cloud-discovery-anonymizer).
+
+## <a name="security-and-privacy-for-cloud-app-security-us-government-gcc-high-customers"></a>Sécurité et confidentialité pour les clients US Government GCC High de Cloud App Security
+
+Pour avoir des informations sur les normes de conformité Cloud App Security et sur l’emplacement des données des clients US Government GCC High, consultez la [description Enterprise Mobility + Security for US Government](/enterprise-mobility-security/solution/ems-cloud-app-security-govt-service-description).
 
 ## <a name="next-steps"></a>Étapes suivantes
 
 [Vue d’ensemble de Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security)
 
-[Documentation Cloud App Security](https://docs.microsoft.com/cloud-app-security/)
+[Documentation Cloud App Security](/cloud-app-security/)
 
 [S’inscrire à Cloud App Security](https://signup.microsoft.com/Signup?OfferId=757c4c34-d589-46e4-9579-120bba5c92ed&ali=1)
 
