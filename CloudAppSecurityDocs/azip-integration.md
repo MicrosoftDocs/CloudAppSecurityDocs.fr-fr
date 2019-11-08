@@ -15,16 +15,16 @@ ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d9c8385efac05367213fed4bd484509a9ba76a25
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: e9f6fe5bd55f94777901748778e40b7e00ba07ae
+ms.sourcegitcommit: 1d5e5a5c418d698ba624660abf2873fce47da999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71083790"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73732010"
 ---
 # <a name="azure-information-protection-integration"></a>Intégration d’Azure Information Protection
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Microsoft Cloud App Security vous permet d’appliquer des étiquettes de classification Azure Information Protection automatiquement, avec ou sans protection, à des fichiers, en tant qu’action de gouvernance de stratégie de fichier. Vous pouvez également rechercher des fichiers en filtrant sur l’étiquette de classification appliquée dans le portail Cloud App Security. L’utilisation de classifications accroît la visibilité et le contrôle de vos données sensibles dans le cloud. Pour intégrer Azure Information Protection à Cloud App Security, il suffit de cocher une seule case.
 
@@ -41,11 +41,11 @@ En intégrant Azure Information Protection à Cloud App Security, vous pouvez ut
 > [!NOTE]
 > Pour activer cette fonctionnalité, vous avez besoin d’une licence Cloud App Security et d’une licence pour Azure Information Protection Premium P1. Dès que ces deux licences sont en place, Cloud App Security synchronise les étiquettes des organisations à partir du service Azure Information Protection.
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Conditions préalables
 
 - Pour utiliser l’intégration à Azure Information Protection, vous devez activer le [connecteur d’applications pour Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
 
-Pour utiliser des étiquettes dans Cloud App Security, les étiquettes doivent être publiées dans le cadre de la stratégie globale. Si vous utilisez Azure Information Protection, les étiquettes doivent être publiées via le portail Azure Information Protection. Si vous avez migré vers des étiquettes unifiées, les étiquettes doivent être publiées via le centre de sécurité et conformité Office 365.
+Pour utiliser des étiquettes dans Cloud App Security, les étiquettes doivent être publiées dans le cadre de la stratégie. Si vous utilisez Azure Information Protection, les étiquettes doivent être publiées via le portail Azure Information Protection. Si vous avez migré vers des étiquettes unifiées, les étiquettes doivent être publiées via le centre de sécurité et conformité Office 365.
 
 Cloud App Security prend actuellement en charge l’application d’étiquettes de classification Azure Information Protection pour les types de fichiers suivants :
 
@@ -58,7 +58,7 @@ Cloud App Security prend actuellement en charge l’application d’étiquettes 
 
 Cette fonctionnalité est actuellement disponible pour les fichiers stockés dans Box, G Suite, SharePoint Online et OneDrive Entreprise. D’autres applications cloud seront prises en charge dans les prochaines versions.
 
-Les fichiers qui ont été étiquetés avec une protection en dehors de Cloud App Security ne peuvent pas être modifiés par Cloud App Security. Toutefois, vous pouvez analyser ces fichiers en accordant des autorisations pour inspecter le [contenu des fichiers protégés](content-inspection.md#content-inspection-for-protected-files). Les fichiers qui ont été étiquetés (sans protection) en dehors de Cloud App Security peuvent être analysés, et Cloud App Security peut appliquer une autre étiquette (avec ou sans protection) telle qu’elle est définie dans les stratégies Cloud App Security.
+Les fichiers qui ont été étiquetés avec une protection en dehors de Cloud App Security ne peuvent pas être modifiés par Cloud App Security. Toutefois, vous pouvez analyser ces fichiers en accordant des autorisations pour [inspecter le contenu des fichiers protégés](content-inspection.md#content-inspection-for-protected-files). Les fichiers qui ont été étiquetés (sans protection) en dehors de Cloud App Security peuvent être analysés, et Cloud App Security peut appliquer une autre étiquette (avec ou sans protection) telle qu’elle est définie dans les stratégies Cloud App Security.
 
 ## <a name="how-it-works"></a>Fonctionnement
 
@@ -93,7 +93,7 @@ Pour permettre à Cloud App Security d’analyser des fichiers quand l’inspect
 Après avoir activé Azure Information Protection, vous pouvez voir les fichiers qui ont des étiquettes de classification et les filtrer par étiquette dans Cloud App Security. Une fois Cloud App Security connecté à l’application cloud, vous pouvez utiliser les fonctionnalités d’intégration Azure Information Protection pour appliquer des étiquettes de classification Azure Information Protection (avec ou sans protection) dans le portail Cloud App Security, en les ajoutant directement aux fichiers ou en configurant une stratégie de fichier pour appliquer automatiquement des étiquettes de classification en tant qu’action de gouvernance.
 
 > [!NOTE]
-> L’analyse automatique ne retraite les fichiers existants que s’ils sont modifiés. Pour analyser les fichiers existants en vue d’Azure Information Protection étiquettes de classification, vous devez avoir au moins une **stratégie de fichier** qui comprend l’inspection du contenu. Si vous n’en avez pas, créez une nouvelle **stratégie de fichier**, supprimez tous les filtres prédéfinis, sous **méthode d’inspection** , sélectionnez **DLP intégré**. Dans le champ **inspection du contenu** , sélectionnez inclure les **fichiers qui correspondent à une expression** prédéfinie et sélectionnez une valeur prédéfinie, puis enregistrez la stratégie. Cette opération permet d’activer l’inspection de contenu qui détecte automatiquement les étiquettes de classification Azure Information Protection.
+> L’analyse automatique ne retraite les fichiers existants que s’ils sont modifiés. Pour analyser les fichiers existants en vue d’Azure Information Protection étiquettes de classification, vous devez avoir au moins une **stratégie de fichier** qui comprend l’inspection du contenu. Si vous n’en avez pas, créez une nouvelle **stratégie de fichier**, supprimez tous les filtres prédéfinis, sous **méthode d’inspection** , sélectionnez **DLP intégré**. Dans le champ **inspection du contenu** , sélectionnez inclure les **fichiers qui correspondent à une expression prédéfinie** et sélectionnez une valeur prédéfinie, puis enregistrez la stratégie. Cette opération permet d’activer l’inspection de contenu qui détecte automatiquement les étiquettes de classification Azure Information Protection.
 
 #### <a name="set-internal-and-external-tags"></a>Définir des étiquettes internes et externes
 
@@ -137,7 +137,7 @@ Suivez ces instructions pour créer la stratégie de fichier :
    ![Appliquer une étiquette](./media/aip-gov-action.png)
 
 > [!NOTE]
-> La possibilité d’appliquer automatiquement une étiquette Azure Information Protection via une stratégie de fichier est une puissante fonctionnalité. Pour protéger les clients contre l’application par erreur d’une étiquette à un grand nombre de fichiers, il existe, pour des raisons de sécurité, une limite quotidienne de 100 actions **Appliquer une étiquette** par application et par client. Une fois cette limite quotidienne atteinte, l’action Appliquer une étiquette s’interrompt temporairement et reprend automatiquement le jour suivant (après 12:00 UTC). Pour augmenter la limite pour votre locataire, ouvrez un ticket de support.
+> La possibilité d’appliquer automatiquement une étiquette Azure Information Protection via la stratégie de fichier est une puissante fonctionnalité. Pour protéger les clients contre toute application par erreur d’une étiquette à un grand nombre de fichiers, il existe, pour des raisons de sécurité, une limite quotidienne de 100 actions **Appliquer une étiquette** par application et le client. Une fois la limite quotidienne atteinte, l’action Appliquer une étiquette est temporairement interrompue, puis reprend automatiquement le jour suivant (après 12:00 UTC). Pour augmenter la limite pour votre locataire, ouvrez un ticket de support.
 
 ### <a name="control-file-exposure"></a>Contrôler l’exposition des fichiers
 
