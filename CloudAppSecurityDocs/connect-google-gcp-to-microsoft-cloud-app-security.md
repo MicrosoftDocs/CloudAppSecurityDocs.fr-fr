@@ -9,12 +9,12 @@ ms.date: 10/16/2019
 ms.topic: conceptual
 ms.service: cloud-app-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 80bc690185f9161137bc34c59e307894b05969a3
-ms.sourcegitcommit: 7c8e798e1a15a0b37899fa5e3f8ea29f6721d0a8
+ms.openlocfilehash: 27d32ca6daf7221d84b0cb0942d42c3555049e43
+ms.sourcegitcommit: b48842b6622bd45af66afbffc70f92d31ec232a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73536727"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73934478"
 ---
 # <a name="connect-google-cloud-platform-to-microsoft-cloud-app-security-preview"></a>Se connecter Google Cloud Platform à Microsoft Cloud App Security (version préliminaire)
 
@@ -53,11 +53,10 @@ Créer un projet dédié dans GCP dans le cadre de votre organisation pour perme
 
     ![Capture d’écran montrant la boîte de dialogue de création de projet GCP](media/connect-gcp-create-project.png)
 
-> [!NOTE]
-> Une fois le projet créé, assurez-vous que :
->
-> * Le projet dédié est sélectionné dans la liste déroulante en haut.
-> * L’API Pub/Sub est activée. Pour activer, accédez à l’onglet Pub/Sub.
+### <a name="enable-the-pubsub-api"></a>Activer l’API Pub/Sub
+
+1. Basculez vers le projet dédié.
+1. Accédez à l’onglet Pub/Sub. Un message d’activation de service doit s’afficher.
 
 ### <a name="create-a-dedicated-service-account-for-the-integration"></a>Créer un compte de service dédié pour l’intégration
 
