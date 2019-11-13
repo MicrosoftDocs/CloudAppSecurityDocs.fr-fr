@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 9/1/2019
+ms.date: 11/12/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d435d8b12e5cc90de2c8d4816d1f1b93ddb5d0a8
-ms.sourcegitcommit: b592226ec8a07b4bc87720ea8611cd6edc8d7f8c
+ms.openlocfilehash: 1b153713784c737aeb5e863f99ed2196d471b2b8
+ms.sourcegitcommit: b48842b6622bd45af66afbffc70f92d31ec232a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73463614"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73934471"
 ---
 # <a name="connect-apps"></a>Connecter des applications
 
@@ -68,22 +68,22 @@ Le tableau suivant répertorie, par application cloud, les fonctionnalités pris
 
 > [!div class="mx-tableFixed"]
 >
-> ||**Office 365**|**Box**|**Okta**|**GCP**|**G Suite**|**ServiceNow**|**Salesforce**|**Dropbox**|**AWS**|**WebEx**|**Workday**|
+> | | AWS | Zone | Dropbox | GCP | G Suite | Office 365 | Okta | Service maintenant | Salesforce | WebEx | Workday |
 > |-|-|-|-|-|-|-|-|-|-|-|-|
-> |**Répertorier les comptes**|✔|✔|✔|Sujet à la connexion de G suite|✔|✔|✔|✔|✔|✔|✔|
-> |**Groupe**|✔|✔|✔|Sujet à la connexion de G suite|✔|✔|✔|✔|✔|Not applicable|Not applicable|
-> |**Privilèges**|✔|✔|Non prise en charge par le fournisseur|Sujet à la connexion de G suite|✔|✔|✔|✔||✔|Not applicable|
-> |**Gouvernance des utilisateurs**|✔|✔||Sujet à la connexion de G suite|✔|Bientôt disponible|✔|Bientôt disponible||Bientôt disponible|Bientôt disponible|
-> |**Activité de connexion**|✔|✔|✔|Sujet à la connexion de G suite|✔|✔|✔|✔|✔|✔|✔|
-> |**Activité de l’utilisateur**|✔*|✔|✔|✔|✔ - nécessite Google Business ou Entreprises|Partielle|Prise en charge avec Salesforce Shield|✔|Not applicable|✔|✔|
-> |**Activité d’administration**|✔|✔|✔|✔|✔|Partielle|✔|✔|✔|✔|✔|
-> |**Analyse régulière des fichiers**|✔|✔|Not applicable||✔|✔|✔|✔|Not applicable|||
-> |**Analyse des fichiers pratiquement en temps réel**|✔|✔|Not applicable||✔ - nécessite Google Business ou Entreprises|||Bientôt disponible||✔||
-> |**Contrôle partagé**|✔|✔|Not applicable||✔|Not applicable||✔||✔||
-> |**Quarantaine**|✔|✔|Not applicable||Bientôt disponible|||Bientôt disponible||Not applicable|Not applicable|
-> |**Voir les autorisations d’application**|✔|Non prise en charge par le fournisseur|Not applicable||✔||✔|Non prise en charge par le fournisseur||Not applicable|Not applicable|
-> |**Révoquer les autorisations d’application**|✔||Not applicable||✔||✔|Not applicable||Not applicable|Not applicable|
-> |**Appliquer des étiquettes Azure Information Protection**|✔|✔|||✔|||||Not applicable|Not applicable|
+> | **Répertorier les comptes** | ✔ | ✔ | ✔ | Connexion de l’objet G suite | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+> | **Liste des groupes** | ✔ | ✔ | ✔ | Connexion de l’objet G suite | ✔ | ✔ | ✔ | ✔ | ✔ | | Non prise en charge par le fournisseur |
+> | **Liste des privilèges** | | ✔ | ✔ | Connexion de l’objet G suite | ✔ | ✔ | Non prise en charge par le fournisseur | ✔ | ✔ | ✔ | Non pported par le fournisseur |
+> | **Gouvernance des utilisateurs** | | ✔ | Bientôt disponible | Connexion de l’objet G suite | ✔ | ✔ | | Bientôt disponible | ✔ | Bientôt disponible | t pris en charge par le fournisseur |
+> | **Activité de connexion** | ✔ | ✔ | ✔ | Connexion de l’objet G suite | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+> | **Activité de l’utilisateur** | Not applicable | ✔ | ✔ | ✔ | ✔ - nécessite Google Business ou Entreprises | ✔ | ✔ | Partielle | Pris en charge avec lesforce Shield | ✔ | ✔ |
+> | **Activité d’administration** | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | Partielle | ✔ | ✔ | Non prise en charge par le fournisseur |
+> | **DLP-analyse périodique** | | ✔ | Bientôt disponible | Not applicable | ✔ | ✔ | Not applicable | | | | Non pris en charge par ovider |
+> | **Analyse DLP en temps quasi réel** | | ✔ | ✔ | Not applicable | ✔-nécessite Google Business Enterprise | ✔ | Not applicable | ✔ | ✔ | ✔ | Non prise en charge par le fournisseur |
+> | **Contrôle partagé** | ✔ | ✔ | ✔ | Not applicable | ✔ | ✔ | Not applicable | Not applicable | | ✔ | Non pris en charge par ovider |
+> | **Gouvernance des fichiers** | ✔ | ✔ | ✔ | Not applicable | ✔ | ✔ | Not applicable | | ✔ | | Non prise en charge par le fournisseur |
+> | **Voir les autorisations d’application** | Not applicable | Non prise en charge par le fournisseur | En provenance | Not applicable | ✔ | ✔ | Not applicable | | ✔ | Not applicable | Not applicable |
+> | **Révoquer les autorisations d’application** | Not applicable | Non prise en charge par le fournisseur | Ming bientôt | Not applicable | ✔ | ✔ | Not applicable | | ✔ | Not applicable | Not applicable |
+> | **Appliquer des étiquettes Azure Information Protection** | Not applicable | ✔ | | Not applicable | ✔ | ✔ | Not applicable | | | Not applicable | Not applicable |
 
 ## <a name="prerequisites"></a>Conditions préalables
 
