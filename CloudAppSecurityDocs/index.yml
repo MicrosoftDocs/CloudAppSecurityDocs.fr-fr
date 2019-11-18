@@ -12,12 +12,12 @@ metadata:
   author: shsagir
   ms.author: shsagir
   ms.date: 09/24/2019
-  ms.openlocfilehash: e998c613f893791e089c27a5f75daaa579bd3ea6
-  ms.sourcegitcommit: b0361f470e6bdcd0a8a502c5bf1f8a09533eaa14
+  ms.openlocfilehash: 4e09b5a658ad60b5cf38f8f94528469ca6add6fd
+  ms.sourcegitcommit: 02f1992367d6de5c1b2c49935ada3c54167ff757
   ms.translationtype: HT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/06/2019
-  ms.locfileid: "73649259"
+  ms.lasthandoff: 11/17/2019
+  ms.locfileid: "74153264"
 landingContent:
 - title: À propos de Cloud App Security
   linkLists:
@@ -45,8 +45,6 @@ landingContent:
   linkLists:
   - linkListType: tutorial
     links:
-    - text: Découvrir et gérer l’informatique fantôme sur votre réseau
-      url: tutorial-shadow-it.md
     - text: Examiner des utilisateurs à risque
       url: tutorial-ueba.md
     - text: Examiner des applications OAuth à risque
@@ -73,7 +71,7 @@ landingContent:
       url: discovered-apps.md
 - title: meilleures pratiques recommandées.
   linkLists:
-  - linkListType: quickstart
+  - linkListType: get-started
     links:
     - text: Découvrir et évaluer des applications cloud
       url: best-practices.md#discover-and-assess-cloud-apps
@@ -95,6 +93,42 @@ landingContent:
       url: best-practices.md#use-the-audit-trail-of-activities-for-forensic-investigations
     - text: Sécuriser les services IaaS et les applications personnalisées
       url: best-practices.md#secure-iaas-services-and-custom-apps
+- title: Découvrir et contrôler l’informatique fantôme
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Découvrir et identifier l’informatique fantôme
+      url: tutorial-shadow-it.md#phase-1-discover-and-identify-shadow-it
+    - text: Évaluer et analyser
+      url: tutorial-shadow-it.md##phase-2-evaluate-and-analyze
+    - text: Gérer vos applications
+      url: tutorial-shadow-it.md#phase-3-manage-your-apps
+  - linkListType: concept
+    links:
+    - text: Utilisation du tableau de bord
+      url: daily-activities-to-protect-your-cloud-environment.md
+    - text: Utilisation des applications découvertes
+      url: discovered-apps.md
+    - text: Utilisation des scores de risque d’application
+      url: risk-score.md
+  - linkListType: deploy
+    links:
+    - text: Déployer Cloud Discovery
+      url: set-up-cloud-discovery.md
+  - linkListType: how-to-guide
+    links:
+    - text: Intégrer à Microsoft Defender Advanced Threat Protection
+      url: wdatp-integration.md
+    - text: Enrichissement de Cloud Discovery
+      url: cloud-discovery-aad-enrichment.md
+  - linkListType: reference
+    links:
+    - text: Découvrir et évaluer des applications cloud
+      url: best-practices.md#discover-and-assess-cloud-apps
+  - linkListType: video
+    links:
+    - text: Découverte de l’informatique fantôme au-delà du réseau d’entreprise
+      url: https://www.youtube.com/watch?v=f8hbvbY1Hnc
 - title: Ressources supplémentaires
   linkLists:
   - linkListType: learn
