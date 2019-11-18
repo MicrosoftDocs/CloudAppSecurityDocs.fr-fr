@@ -7,12 +7,12 @@ ms.service: cloud-app-security
 ms.topic: best-practice
 ms.date: 10/24/2019
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 9e505044d94ce633bdba5f2b684873391d57f772
-ms.sourcegitcommit: 3a44f020c6ae7f6c4956bf53727dfb0e82fd7cf0
+ms.openlocfilehash: e90a340c206c0bfb1c01542dd184664d1fe87dfe
+ms.sourcegitcommit: e434c19fbbb67cf70bbf70729d03e38b4779ce25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72887941"
+ms.lasthandoff: 11/17/2019
+ms.locfileid: "74143445"
 ---
 # <a name="cloud-app-security-best-practices"></a>Meilleures pratiques en matière de Cloud App Security
 
@@ -34,7 +34,7 @@ Les meilleures pratiques décrites dans cet article sont les suivantes :
 > * [Utiliser la piste d’audit des activités pour des investigations d’investigation](#use-the-audit-trail-of-activities-for-forensic-investigations)
 > * [Sécuriser les services IaaS et les applications personnalisées](#secure-iaas-services-and-custom-apps)
 
-## <a name="discover-and-assess-cloud-apps"></a>Découvrir et évaluer les applications Cloud
+## <a name="discover-and-assess-cloud-apps"></a>Découvrir et évaluer des applications cloud
 
 L’intégration de Cloud App Security avec Microsoft Defender-protection avancée contre les menaces (Microsoft Defender ATP) vous donne la possibilité d’utiliser des Cloud Discovery au-delà de votre réseau d’entreprise ou de passerelles Web sécurisées. Avec les informations de l’utilisateur et de l’ordinateur combinés, vous pouvez identifier les utilisateurs ou les ordinateurs à risque, voir les applications qu’ils utilisent et approfondir les recherches dans le portail Microsoft Defender ATP.
 
@@ -72,7 +72,7 @@ Cloud App Security vous offre la possibilité d’examiner et de surveiller les 
 ---
 ---
 
-## <a name="apply-cloud-governance-policies"></a>Appliquer les stratégies de gouvernance Cloud
+## <a name="apply-cloud-governance-policies"></a>Appliquer des stratégies de gouvernance cloud
 
 **Recommandation : applications**de balises et scripts de bloc d’exportation  
 **Détail**: une fois que vous avez consulté la liste des applications découvertes dans votre organisation, vous pouvez sécuriser votre environnement contre toute utilisation d’application indésirable. Vous pouvez appliquer la balise approuvée aux applications qui sont approuvées par votre organisation et **la balise** non approuvée aux applications qui **ne le sont** pas. Vous pouvez surveiller les applications non approuvées à l’aide de filtres de découverte ou exporter un script pour bloquer les applications non approuvées à l’aide de vos appliances de sécurité locales. L’utilisation de balises et de scripts d’exportation vous permet d’organiser vos applications et de protéger votre environnement en n’autorisant l’accès qu’aux applications sécurisées.  
@@ -127,7 +127,7 @@ Cloud App Security vous offre la possibilité d’examiner et de surveiller les 
 ---
 ---
 
-## <a name="discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud"></a>Découverte, classification, étiquetage et protection des données réglementées et sensibles stockées dans le Cloud
+## <a name="discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud"></a>Découvrir, classifier, étiqueter et protéger des données réglementées et sensibles stockées dans le cloud
 
 **Bonne pratique**: intégration avec Azure information protection  
 **Détail**: l’intégration avec Azure information protection vous donne la possibilité d’appliquer automatiquement des étiquettes de classification et d’ajouter éventuellement la protection de chiffrement. Une fois l’intégration activée, vous pouvez appliquer des étiquettes en tant qu’action de gouvernance, afficher les fichiers par classification, analyser les fichiers par niveau de classification et créer des stratégies granulaires pour vous assurer que les fichiers classifiés sont correctement gérés. Si vous n’activez pas l’intégration, vous ne pouvez pas tirer parti de la possibilité d’analyser, d’étiqueter et de chiffrer automatiquement les fichiers dans le Cloud.  
@@ -167,7 +167,7 @@ Cloud App Security vous offre la possibilité d’examiner et de surveiller les 
 ---
 ---
 
-## <a name="enforce-dlp-and-compliance-policies-for-data-stored-in-the-cloud"></a>Appliquer des stratégies de conformité et DLP pour les données stockées dans le Cloud
+## <a name="enforce-dlp-and-compliance-policies-for-data-stored-in-the-cloud"></a>Appliquer des stratégies de conformité et DLP aux données stockées dans le cloud
 
 **Meilleure pratique**: protéger les données confidentielles contre le partage avec des utilisateurs externes  
 **Détails**: créez une stratégie de fichier qui détecte quand un utilisateur tente de partager un fichier avec l’étiquette classification **confidentielle** avec une personne externe à votre organisation et configure son action de gouvernance pour supprimer les utilisateurs externes. Cette stratégie garantit que vos données confidentielles ne laissent pas votre organisation et que les utilisateurs externes ne peuvent pas y accéder.  
@@ -180,7 +180,7 @@ Cloud App Security vous offre la possibilité d’examiner et de surveiller les 
 ---
 ---
 
-## <a name="block-and-protect-download-of-sensitive-data-to-unmanaged-or-risky-devices"></a>Bloquer et protéger le téléchargement de données sensibles sur des appareils non gérés ou risqués
+## <a name="block-and-protect-download-of-sensitive-data-to-unmanaged-or-risky-devices"></a>Bloquer et protéger le téléchargement de données sensibles sur des appareils non gérés ou à risque
 
 **Meilleure pratique**: gérer et contrôler l’accès aux appareils à haut risque  
 **Détail**: utilisez contrôle d’application par accès conditionnel pour définir des contrôles sur vos applications SaaS. Vous pouvez créer des stratégies de session pour surveiller vos sessions à risque élevé et faible niveau de confiance. De même, vous pouvez créer des stratégies de session pour bloquer et protéger les téléchargements par les utilisateurs qui essaient d’accéder à des données sensibles à partir d’appareils non gérés ou risqués. Si vous ne créez pas de stratégies de session pour surveiller les sessions à haut risque, vous perdez la possibilité de bloquer et de protéger les téléchargements dans le client Web, ainsi que la possibilité de surveiller la session de faible confiance dans les applications Microsoft et tierces.  
@@ -194,7 +194,7 @@ Cloud App Security vous offre la possibilité d’examiner et de surveiller les 
 ---
 ---
 
-## <a name="secure-collaboration-with-external-users-by-enforcing-real-time-session-controls"></a>Sécuriser la collaboration avec les utilisateurs externes en appliquant des contrôles de session en temps réel
+## <a name="secure-collaboration-with-external-users-by-enforcing-real-time-session-controls"></a>Sécuriser votre collaboration avec les utilisateurs externes en appliquant des contrôles de session en temps réel
 
 **Meilleure pratique**: surveiller les sessions avec des utilisateurs externes à l’aide de contrôle d’application par accès conditionnel  
 **Détails**: pour sécuriser la collaboration dans votre environnement, vous pouvez créer une stratégie de session pour surveiller les sessions entre vos utilisateurs internes et externes. Cela vous permet non seulement de surveiller la session entre vos utilisateurs (et de les informer que leurs activités de session sont surveillées), mais également de limiter les activités spécifiques. Lorsque vous créez des stratégies de session pour surveiller l’activité, vous pouvez choisir les applications et les utilisateurs que vous souhaitez analyser.  
@@ -208,7 +208,7 @@ Cloud App Security vous offre la possibilité d’examiner et de surveiller les 
 ---
 ---
 
-## <a name="detect-cloud-threats-compromised-accounts-malicious-insiders-and-ransomware"></a>Détectez les menaces du Cloud, les comptes compromis, les Insiders malveillants et les ransomware
+## <a name="detect-cloud-threats-compromised-accounts-malicious-insiders-and-ransomware"></a>Détecter les menaces cloud, les comptes compromis, les insiders malveillants et les ransomware
 
 **Recommandation : régler**les stratégies d’anomalie, définir des plages d’adresses IP, envoyer des commentaires pour les alertes  
 **Détail**: les stratégies de détection des anomalies fournissent une analyse comportementale des utilisateurs et des entités (UEBA) et machine learning (ml), afin que vous puissiez exécuter immédiatement la détection avancée des menaces dans votre environnement Cloud.
@@ -250,7 +250,7 @@ Les stratégies de détection des anomalies sont déclenchées lorsque des activ
 ---
 ---
 
-## <a name="use-the-audit-trail-of-activities-for-forensic-investigations"></a>Utiliser la piste d’audit des activités pour des investigations d’investigation
+## <a name="use-the-audit-trail-of-activities-for-forensic-investigations"></a>Utiliser la piste d’audit des activités pour des investigations forensiques
 
 **Meilleure pratique**: utiliser la piste d’audit des activités lors de l’examen des alertes  
 **Détail**: les alertes sont déclenchées lorsque les activités de l’utilisateur, de l’administrateur ou de la connexion ne sont pas conformes à vos stratégies. Il est important d’examiner les alertes pour déterminer s’il existe une menace possible dans votre environnement.
@@ -278,7 +278,7 @@ Lorsque vous ignorez des alertes, il est important d’examiner et de comprendre
 
 ---
 
-**Recommandation : consultez**CSPM pour Azure et AWS  
+**Recommandation : examiner**les évaluations de la configuration de la sécurité pour Azure et AWS  
 **Détail**: l’intégration à Azure Security Center vous fournit une évaluation de la configuration de la sécurité de votre environnement Azure. L’évaluation fournit des recommandations pour le contrôle de la configuration et de la sécurité manquant. L’examen de ces recommandations vous aide à identifier les anomalies et les vulnérabilités potentielles dans votre environnement, et à accéder directement à l’emplacement approprié dans le portail Azure Security pour les résoudre.
 
 AWS vous donne la possibilité d’obtenir une visibilité de vos recommandations en matière de configurations de sécurité sur la façon d’améliorer la sécurité du Cloud. Grâce à ces recommandations, vous pouvez surveiller l’état de conformité de vos comptes AWS.  
