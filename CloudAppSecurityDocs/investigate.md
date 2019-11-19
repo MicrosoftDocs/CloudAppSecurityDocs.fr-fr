@@ -5,55 +5,59 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 8/11/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: a9b00c2a-2f71-499e-8f57-67e560daedc1
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4ef6132edd549f9d2552932bb9532650719331a4
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: 390a9d5e9bff785b67f21802d4d0800af5640193
+ms.sourcegitcommit: 748c6f8cb234b303770814d8e63406a0bad36cd1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71084270"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74154875"
 ---
-# <a name="investigate"></a>Examiner
+# <a name="investigate"></a>Investiguer
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Une fois que Microsoft Cloud App Security est exécuté dans votre environnement cloud, vous avez besoin d’une phase d’apprentissage et d’investigation. Apprenez à utiliser les outils Microsoft Cloud App Security pour mieux comprendre ce qui se passe dans votre environnement cloud. Selon les spécificités de votre environnement et la façon dont il est utilisé, vous pouvez identifier les exigences relatives à la protection de votre organisation. Cet article décrit comment effectuer une investigation pour mieux comprendre l’environnement cloud.
 
 ## <a name="dashboards"></a>Tableaux de bord
+
 Les tableaux de bord suivants sont disponibles pour vous aider à étudier les applications de votre environnement cloud :
 
-|Tableau de bord|Description|
+|Dashboard|Description|
 |---------------|-----------------|
 |Tableau de bord principal|Vue d’ensemble de l’état du Cloud (utilisateurs, fichiers, activités) et actions requises (alertes, violations d’activité et violations de contenu).|
 |Tableau de bord de l’application : vue d’ensemble|Vue d’ensemble de l’utilisation de l’application par emplacement, graphiques d’utilisation par nombre d’utilisateurs.|
 |Tableau de bord de l’application : info|Informations sur les détails de l’application, la sécurité et la conformité.|
-|Tableau de bord de l’application : Insights<br />*(le cas échéant)*|Analyse des données stockées dans l’application, ventilées par type de fichier et niveau de partage de fichiers.|
-|Tableau de bord de l’application : fichiers<br />*(le cas échéant)*|Explorez les fichiers ; possibilité de filtrer en fonction du propriétaire, du niveau de partage, etc. Effectuer des actions de gouvernance comme la mise en quarantaine.|
+|Tableau de bord de l’application : Insights  
+*(le cas échéant)*|Analyse des données stockées dans l’application, ventilées par type de fichier et niveau de partage de fichiers.|
+|Tableau de bord de l’application : fichiers  
+*(le cas échéant)*|Explorez les fichiers ; possibilité de filtrer en fonction du propriétaire, du niveau de partage, etc. Effectuer des actions de gouvernance comme la mise en quarantaine.|
 |Tableau de bord d’application : comptes|Vue d’ensemble de tous les comptes/utilisateurs liés à l’application.|
-|Tableau de bord de l’application : Applications OAuth<br />*(le cas échéant)*|Explorez les applications OAuth actuellement déployées, comme G suite, et définissez des stratégies.|
+|Tableau de bord d’application : applications OAuth  
+*(le cas échéant)*|Explorez les applications OAuth actuellement déployées, comme G suite, et définissez des stratégies.|
 |Tableau de bord d’application : journal d’activité|Explorez l’ensemble de l’activité de l’application ; possibilité de filtrer en fonction des utilisateurs, de l’adresse IP, etc.|
 |Tableau de bord de l’application : alertes|Explorez toutes les alertes d’application ; possibilité de filtrer en fonction de l’État, de la catégorie, de la gravité et bien plus encore.|
-|Tableau de bord d’application : comptes avec privilèges spéciaux<br />*(Salesforce uniquement)*|Vue d’ensemble des utilisateurs par type d’utilisateur privilégié.|
-|Tableau de bord Utilisateur|Vue d’ensemble complète du profil utilisateur dans le Cloud, notamment des groupes, emplacements, activités récentes, alertes associées et navigateurs utilisés.|
+|Tableau de bord d’application : comptes avec privilèges spéciaux  
+*(Salesforce uniquement)*|Vue d’ensemble des utilisateurs par type d’utilisateur privilégié.|
+|Tableau de bord Utilisateur|Vue d’ensemble complète du profil utilisateur dans le Cloud, emplacements, activités récentes, alertes associées.|
 
-##  <a name="sanctionapp"></a> Marquer les applications comme approuvées ou non
+## <a name="a-namesanctionapp-tag-apps-as-sanctioned-or-unsanctioned"></a><a name="sanctionapp" />marquer les applications comme approuvées ou non approuvées
+
 Le marquage des applications comme approuvées ou non est une étape importante pour comprendre votre cloud. Une fois que vous avez approuvé une application, vous pouvez filtrer les applications qui ne sont pas approuvées et lancer une migration vers des applications approuvées du même type.
 
 - Dans la console Cloud App Security, accédez au catalogue d’applications ou aux applications découvertes.
 
-- Dans la liste des applications, sur la ligne contenant l’application à marquer comme approuvée, cliquez sur les trois points à la fin de la ligne ![Points pour marquer comme approuvé](./media/sanction-three-dots.png "Points pour marquer comme approuvé") et choisissez **Marquer comme approuvé**.
+- Dans la liste des applications, sur la ligne contenant l’application à marquer comme approuvée, cliquez sur les trois points à la fin de la ligne ![Points pour marquer comme approuvé](./media/sanction-three-dots.png "Marquer en tant que points approuvés") et choisissez **Marquer comme approuvé**.
 
-     ![Marquer comme approuvé](./media/mark-as-sanctioned.png "marquer comme approuvé")
-
+    ![Marquer comme approuvé](./media/mark-as-sanctioned.png "marquer comme approuvé")
 
 ## <a name="use-the-investigation-tools"></a>Utiliser les outils d’examen
 
@@ -109,7 +113,7 @@ Le marquage des applications comme approuvées ou non est une étape importante 
 
     - Combien d’utilisateurs les ont déployées ? Quelle est la fréquence de ces applications en général ?
 
-    ![Tableau de bord des applications](./media/investigate-app.png "examiner l’application")
+    ![Tableau de bord de l’application](./media/investigate-app.png "examiner l’application")
 
 5. Accédez au **tableau de bord Cloud Discovery** et vérifiez les points suivants :
 
@@ -139,7 +143,7 @@ Partons du principe que vous pensez ne pas avoir d’accès à votre environneme
 
 5. Sous **Activités remplissant toutes les conditions suivantes**, choisissez **+** pour ajouter un filtre. Faites défiler jusqu’à **Balises IP**, puis choisissez **Tor**.
 
-     ![Exemple de stratégie pour les adresses IP avec risques](./media/example-policy-risky-ips.png "exemple de stratégie pour les adresses IP avec risques")
+    ![Exemple de stratégie pour les adresses IP à risque](./media/example-policy-risky-ips.png "exemple de stratégie, adresses IP risquées")
 
 Maintenant que la stratégie est en place, vous vous étonnez de voir que vous recevez une alerte indiquant que la stratégie a été violée.
 
@@ -147,13 +151,13 @@ Maintenant que la stratégie est en place, vous vous étonnez de voir que vous r
 
 2. Si vous constatez qu’il semble s’agir d’une réelle violation, vous pouvez contenir le risque ou le corriger.
 
-     Pour contenir le risque, vous pouvez envoyer à l’utilisateur une notification l’invitant à préciser si la violation était délibérée et s’il en avait conscience.
+    Pour contenir le risque, vous pouvez envoyer à l’utilisateur une notification l’invitant à préciser si la violation était délibérée et s’il en avait conscience.
 
-     Vous pouvez également explorer l’alerte au niveau du détail et suspendre l’utilisateur jusqu’à ce que vous décidiez des mesures à prendre.
+    Vous pouvez également explorer l’alerte au niveau du détail et suspendre l’utilisateur jusqu’à ce que vous décidiez des mesures à prendre.
 
 3. S’il s’agit d’un événement autorisé qui a peu de chances de se reproduire, vous pouvez rejeter l’alerte.
 
-     S’il est autorisé et que vous pensez qu’il va se reproduire, vous pouvez modifier la stratégie pour éviter que ce type d’événement soit considéré comme une violation à l’avenir.
+    S’il est autorisé et que vous pensez qu’il va se reproduire, vous pouvez modifier la stratégie pour éviter que ce type d’événement soit considéré comme une violation à l’avenir.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
