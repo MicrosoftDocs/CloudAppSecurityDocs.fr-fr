@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 11/11/2019
+ms.date: 11/19/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d2f83f10a3158881a35efa845a8cefe85df64146
-ms.sourcegitcommit: b39dbead19ac8b81e6aad93cf6c454032eeb0858
+ms.openlocfilehash: 12e09ac4a3f7e15aecbdac15c781e59f618850ac
+ms.sourcegitcommit: aa227a88d09eff15953d10663386f85ff68095b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "73906603"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74203518"
 ---
 # <a name="docker-on-ubuntu-and-rhel-on-premises"></a>Docker sur Ubuntu et RHEL (local)
 
@@ -29,7 +29,7 @@ Vous pouvez configurer le chargement automatique des journaux pour des rapports 
 
 ## <a name="technical-requirements"></a>Spécifications techniques
 
-* Système d’exploitation : Ubuntu 14,04, 16,04 et 18,04 ; RHEL 7,2 ou version ultérieure, ou CentOS 7,2 ou version ultérieure 
+* OS: Ubuntu 14.04, 16.04, and 18.04; RHEL 7.2 or higher, or CentOS 7.2 or higher 
 
 * Espace disque : 250 Go
 
@@ -40,7 +40,7 @@ Vous pouvez configurer le chargement automatique des journaux pour des rapports 
 * Configurez votre pare-feu, comme décrit dans [Configuration réseau requise](network-requirements.md#log-collector)
 
 > [!NOTE]
-> Si vous disposez d’un collecteur de journaux existant et que vous souhaitez le supprimer avant de le déployer à nouveau, ou si vous souhaitez simplement le supprimer, exécutez les commandes suivantes :
+> If you have an existing log collector and want to remove it before deploying it again, or if you simply want to remove it, run the following commands:
 >
 > ```console
 > docker stop <collector_name>
@@ -63,14 +63,14 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
 
     1. Dans le portail Cloud App Security, cliquez sur l’icône des paramètres, puis sur **Collecteurs de journaux**.
 
-    ![icône des paramètres](./media/settings-icon.png)
+    ![icône des paramètres](media/settings-icon.png)
 
 1. Pour chaque pare-feu ou proxy à partir duquel vous souhaitez charger des journaux, créez une source de données correspondante.
 
-    1. Cliquez sur **Ajouter une source de données**.
-    ![ajouter une source de données](./media/add-data-source.png)
-    1. **Nommez** votre proxy ou pare-feu.
-    ![ubuntu1](./media/ubuntu1.png)
+    1. Cliquez sur **Ajouter une source de données**.  
+    ![Add a data source](media/add-data-source.png)
+    1. **Nommez** votre proxy ou pare-feu.  
+    ![ubuntu1](media/ubuntu1.png)
     1. Sélectionnez l’appareil dans la liste **Source**. Si vous sélectionnez **Format de journal personnalisé** pour utiliser une appliance réseau qui n’est pas listée, consultez [Utilisation de l’analyseur de journal personnalisé](custom-log-parser.md) pour obtenir des instructions de configuration.
     1. Comparez votre journal à l’exemple de format de journal attendu. Si le format de votre fichier journal ne correspond pas à cet exemple, vous devez ajouter votre source de données en sélectionnant **Autre**.
     1. Définissez le **Type de récepteur** sur **FTP**, **FTPS**, **Syslog – UDP** ou **Syslog – TCP** ou **Syslog – TLS**.
@@ -88,20 +88,21 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
     1. Cliquez sur **Ajouter un collecteur de journaux**.
     1. Donnez un **nom** au collecteur de journaux.
     1. Entrez l’**adresse IP de l’hôte** de la machine sur laquelle sera déployé le Docker. L’adresse IP de l’hôte peut être remplacée par le nom de l’ordinateur s’il existe un serveur DNS (ou un équivalent) qui résout le nom d’hôte.
-    1. Sélectionnez toutes les **Sources de données** que vous voulez connecter au collecteur, puis cliquez sur **Mettre à jour** pour enregistrer la configuration et consulter les étapes suivantes du déploiement.
+    1. Select all **Data sources** that you want to connect to the collector, and click **Update** to save the configuration.
 
-    ![ubuntu2](./media/ubuntu2.png)
+    ![ubuntu2](media/ubuntu2.png)
+
+1. Des informations supplémentaires sur le déploiement s’affichent. **Copiez** la commande d’exécution à partir de la boîte de dialogue. Vous pouvez utiliser l’icône de copie dans le Presse-papiers. ![icône de copie dans le Presse-papiers](media/copy-icon.png)
+
+1. **Exportez** la configuration de sources de données attendue. Cette configuration décrit comment définir l’exportation du journal dans vos appliances.
+
+    ![Créer le collecteur de journaux](media/windows7.png)
 
     > [!NOTE]
     >
     > * Un seul collecteur de journaux peut gérer plusieurs sources de données.
     > * Copiez le contenu de l’écran, car vous aurez besoin des informations lors de la configuration du collecteur de journaux pour communiquer avec Cloud App Security. Si vous avez sélectionné Syslog, ces informations vont inclure des informations sur le port utilisé par l’écouteur Syslog pour écouter.
-
-1. Des informations supplémentaires sur le déploiement s’affichent. **Copiez** la commande d’exécution à partir de la boîte de dialogue. Vous pouvez utiliser l’icône de copie dans le Presse-papiers. ![icône de copie dans le Presse-papiers](./media/copy-icon.png)
-
-1. **Exportez** la configuration de sources de données attendue. Cette configuration décrit comment définir l’exportation du journal dans vos appliances.
-
-    ![Créer le collecteur de journaux](./media/windows7.png)
+    > * For users sending log data via FTP for the first time, we recommend changing the password for the FTP user. For more information, see [Changing the FTP password](log-collector-ftp.md#changing-the-ftp-password).
 
 ### <a name="step-2--on-premises-deployment-of-your-machine"></a>Étape 2 : Déploiement local de votre ordinateur
 
@@ -127,7 +128,7 @@ La procédure suivante décrit le déploiement dans Ubuntu. Les étapes de dépl
     > [!NOTE]
     > Si cette commande ne parvient pas à valider votre certificat de proxy, exécutez la commande en ajoutant `curl -k` au début.
 
-    ![ubuntu5](./media/ubuntu5.png)
+    ![ubuntu5](media/ubuntu5.png)
 
 1. Déployez l’image du collecteur sur la machine hôte en important la configuration du collecteur. Importez la configuration en copiant la commande d’exécution générée dans le portail. Si vous devez configurer un proxy, ajoutez l’adresse IP et le numéro de port du proxy. Par exemple, si les détails de votre proxy sont 192.168.10.1:8080, votre commande d’exécution mise à jour est :
 
@@ -135,12 +136,12 @@ La procédure suivante décrit le déploiement dans Ubuntu. Les étapes de dépl
     (echo 6f19225ea69cf5f178139551986d3d797c92a5a43bef46469fcc997aec2ccc6f) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.2.2.2'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=tenant2.eu1-rs.adallom.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
     ```
 
-    ![Créer le collecteur de journaux](./media/windows7.png)
+    ![Créer le collecteur de journaux](media/windows7.png)
 
 1. Vérifiez que le collecteur s’exécute correctement à l’aide de la commande suivante : `docker logs <collector_name>`
 
-Le message suivant doit s’afficher : **terminé !** 
-![ubuntu8](./media/ubuntu8.png)
+You should see the message: **Finished successfully!** 
+![ubuntu8](media/ubuntu8.png)
 
 ### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>Étape 3 : Configuration locale de vos appliances réseau
 
@@ -154,7 +155,7 @@ BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
 
 Consultez l’état du collecteur dans le tableau **Collecteur de journaux** et vérifiez que l’état est **Connecté**. Si l’état est **Créé**, il est possible que la connexion du collecteur de journaux et l’analyse n’aient pas été effectuées.
 
-![ubuntu9](./media/ubuntu9.png)
+![ubuntu9](media/ubuntu9.png)
 
 Vous pouvez aussi accéder au **journal de gouvernance** et vérifier que les journaux sont régulièrement chargés sur le portail.
 
@@ -168,11 +169,11 @@ Vérifiez que les journaux sont chargés sur Cloud App Security et que les rappo
 1. Cliquez sur le bouton **Créer un rapport** et renseignez les champs.
 1. Sous **Filtres**, vous pouvez filtrer les données par source de données, par [groupe d’utilisateurs importé](user-groups.md) ou par [balises et plages d’adresses IP](ip-tags.md).
 
-![Rapport continu personnalisé](./media/custom-continuous-report.png)
+![Rapport continu personnalisé](media/custom-continuous-report.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
 
 > [!div class="nextstepaction"]
-> [Configuration FTP du collecteur de journaux](log-collector-ftp.md)
+> [Log collector FTP configuration](log-collector-ftp.md)
 
 [Les clients Premier peuvent également choisir Cloud App Security directement dans le portail Premier.](https://premier.microsoft.com/)
