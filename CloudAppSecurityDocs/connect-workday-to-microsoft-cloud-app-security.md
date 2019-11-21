@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: da2f55e9f3be36d34bc7398258d96e28aae9b4b5
-ms.sourcegitcommit: 3996c1fe9a258c925e18c744447cb1574cce85d1
+ms.openlocfilehash: 3ce27d2efc4535d8ee594145c27ce3948c6be90d
+ms.sourcegitcommit: 474c052a3f705973ebe83da3a03be3008fdf85ff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72323878"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74203813"
 ---
 # <a name="connect-workday-to-microsoft-cloud-app-security-preview"></a>Connecter un jour ouvré à Microsoft Cloud App Security (version préliminaire)
 
@@ -29,18 +29,22 @@ Cet article fournit des instructions pour connecter Microsoft Cloud App Security
 
 ## <a name="prerequisites"></a>Conditions préalables
 
-Le compte de jour de travail utilisé pour la connexion à Cloud App Security doit être membre d’un groupe de sécurité (nouveau ou existant). Les autorisations suivantes doivent être sélectionnées pour le groupe de sécurité pour les domaines suivants :
+Le compte de jour de travail utilisé pour la connexion à Cloud App Security doit être membre d’un groupe de sécurité (nouveau ou existant). Nous vous recommandons d’utiliser un utilisateur système d’intégration de jours ouvrables. Les autorisations suivantes doivent être sélectionnées pour le groupe de sécurité pour les stratégies de sécurité de domaine suivantes :
 
-| Zone fonctionnelle | domaine. | Sous-domaine | Autorisations de rapport/tâche | Autorisations d'intégration |
+| Zone fonctionnelle | Stratégie de sécurité du domaine | Stratégie de sécurité des sous-domaines | Autorisations de rapport/tâche | Autorisations d'intégration |
 | --- | --- | --- | --- | --- |
 | d'exploitation | Configuration : configuration du locataire – général | Configuration : configuration du client – sécurité | Afficher, modifier | Acquérir, put |
 | d'exploitation | Administration de la sécurité | | Afficher, modifier | Acquérir, put |
-| d'exploitation | Audit du système | | Affichez | Obtenir |
-| Effectifs | Données de travail : personnel | Données de travail : rapports de travail public | Affichez | Obtenir |
+| d'exploitation | Audit du système | | Affichage | Obtenir |
+| Effectifs | Données de travail : personnel | Données de travail : rapports de travail public | Affichage | Obtenir |
+
+> [!NOTE]
+>
+> * Le compte utilisé pour configurer les autorisations pour le groupe de sécurité doit être un administrateur de jours de travail.
+> * Pour définir des autorisations, recherchez « stratégies de sécurité de domaine pour la zone fonctionnelle », puis recherchez chaque zone fonctionnelle (« système »/« personnel ») et accordez les autorisations indiquées dans le tableau.
+> * Une fois que toutes les autorisations ont été définies, recherchez « activer les modifications de stratégie de sécurité en attente » et approuvez les modifications.
 
 Pour plus d’informations sur la configuration des utilisateurs d’intégration des jours de travail, des groupes de sécurité et des autorisations, consultez les étapes 1 à 4 du Guide d' [intégration ou d’accès du point de terminaison externe au jour](https://go.microsoft.com/fwlink/?linkid=2103212) ouvrable (accessible avec la documentation des jours de travail/informations d’identification de la Communauté).
-
-Nous vous recommandons d’utiliser un utilisateur système d’intégration de jours ouvrables.
 
 ## <a name="how-to-connect-workday-to-cloud-app-security-using-oauth"></a>Connexion de la journée de travail à Cloud App Security à l’aide d’OAuth
 
@@ -56,7 +60,7 @@ Nous vous recommandons d’utiliser un utilisateur système d’intégration de 
 
 1. Dans la page **inscrire le client** de l’API, renseignez les informations suivantes, puis cliquez sur **OK**.
 
-    | Nom de champ | Value |
+    | Nom du champ | Valeur |
     | ---- | ---- |
     | Nom du client | Microsoft Cloud App Security |
     | Type d’octroi client | Octroi de code d’autorisation |
@@ -69,11 +73,11 @@ Nous vous recommandons d’utiliser un utilisateur système d’intégration de 
 
 1. Une fois inscrit, prenez note des paramètres suivants, puis cliquez sur **terminé**.
 
-    - ID de client
-    - Clé secrète client
-    - Point de terminaison de l’API REST de travail
-    - Point de terminaison de jeton
-    - Point de terminaison d’autorisation
+    * ID de client
+    * Clé secrète client
+    * Point de terminaison de l’API REST de travail
+    * Point de terminaison de jeton
+    * Point de terminaison d’autorisation
 
     ![Capture d’écran de confirmation de l’inscription de l’API client](media/connect-workday-register-api-client-confirm.png)
 
@@ -95,7 +99,7 @@ Nous vous recommandons d’utiliser un utilisateur système d’intégration de 
 
     ![Capture d’écran de l’autorisation d’accès à l’application](media/connect-workday-add-app-allow.png)
 
-1. De retour dans le portail Cloud App Security, vous devriez voir un message indiquant que la journée de travail a été correctement connectée. Vérifiez que la connexion a réussi en cliquant sur **Tester l’API**.
+1. De retour dans le portail Cloud App Security, vous devriez voir un message indiquant que la journée de travail a été correctement connectée. Vérifiez la connexion en cliquant sur **Test API** (Tester l’API).
 
     Le test peut prendre quelques minutes. Une fois averti que la connexion a réussi, cliquez sur **Fermer**.
 
