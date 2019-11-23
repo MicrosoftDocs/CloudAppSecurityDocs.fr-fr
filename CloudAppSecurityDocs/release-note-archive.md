@@ -59,7 +59,7 @@ Publiée le 26 novembre 2017
 
 - L’inspection de contenu vous permet désormais de faire la distinction entre le contenu, les métadonnées et le nom de fichier, pour vous permettre de sélectionner l’élément à inspecter.
 
-- Une nouvelle action de gouvernance a été ajoutée pour G Suite. Vous pouvez désormais **Réduire l’accès public** aux fichiers partagés. Cette action vous permet de définir les fichiers disponibles publiquement comme étant accessibles uniquement avec un lien partagé.
+- Une nouvelle action de gouvernance a été ajoutée pour G Suite. Vous pouvez désormais **Réduire l’accès public** aux fichiers partagés. Cette action vous permet de définir les fichiers publiquement disponibles comme étant accessibles uniquement avec un lien partagé.
 
 - Toutes les activités de connexion OKTA à d’autres applications s’affichent désormais dans Cloud App Security comme provenant d’OKTA. Vous pouvez afficher et filtrer en fonction de l’application cible vers laquelle la connexion a été effectuée dans le champ **Objets d’activité** de l’activité.
 
@@ -78,7 +78,7 @@ Publiée le 12 novembre 2017
 
 Publication : 29 octobre 2017 
 
-- Le lancement de la fonctionnalité de proxy Microsoft Cloud App Security est en cours. Le proxy Microsoft Cloud App Security vous fournit les outils dont vous avez besoin pour obtenir une visibilité et un contrôle en temps réel de l’accès à votre environnement cloud et des activités qui y sont effectuées. Exemple :
+- Le lancement de la fonctionnalité de proxy Microsoft Cloud App Security est en cours. Le proxy Microsoft Cloud App Security vous fournit les outils dont vous avez besoin pour obtenir une visibilité et un contrôle en temps réel de l’accès à votre environnement cloud et des activités qui y sont effectuées. Par exemple :
 
   - Évitez les fuites de données en bloquant les téléchargements avant qu’ils ne se produisent.
   - Définissez des règles qui forcent le chiffrement des données stockées dans le cloud et téléchargées à partir du cloud.
@@ -314,7 +314,7 @@ Publication : 20 mars 2017
 - Le connecteur d’applications Cloud App Security pour ServiceNow a été étendu pour prendre en charge les jetons OAuth (nouveauté pour Genève, Helsinki, Istanbul). Cette modification fournit une connexion d’API plus robuste à ServiceNow, qui ne s’appuie pas sur l’utilisateur du déploiement. Pour plus d’informations, consultez [Connecter ServiceNow à Microsoft Cloud App Security](connect-servicenow-to-microsoft-cloud-app-security.md). Les clients existants peuvent mettre à jour leurs paramètres dans la page du connecteur d’applications ServiceNow.
 - Si vous avez configuré d’autres analyseurs DLP tiers, l’état d’analyse DLP affiche individuellement l’état de chaque connecteur de façon à améliorer la visibilité.
 - Cloud App Security prend maintenant en charge les activités Microsoft Teams qui sont prises en charge dans le journal d’audit d’Office 365. Cette fonctionnalité est déployée progressivement.
-- Pour les événements d’emprunt d’identité Exchange Online, vous pouvez désormais filtrer en fonction du niveau d’autorisation utilisé : délégué, administrateur ou administrateur délégué. Vous pouvez rechercher des événements affichant le niveau d’emprunt d’identité qui vous intéresse dans le **Journal d’activité** en recherchant des objets d' **activité**@no__t **-2.**
+- Pour les événements d’emprunt d’identité Exchange Online, vous pouvez désormais filtrer en fonction du niveau d’autorisation utilisé : délégué, administrateur ou administrateur délégué. Vous pouvez rechercher des événements affichant le niveau d’emprunt d’identité qui vous intéresse dans le **Journal d’activité** en recherchant des objets d' **activité** > **élément**.
 - Dans le tiroir des applications sous l’onglet **Autorisations des applications** des applications Office 365, vous pouvez désormais voir l’**Éditeur** de chaque application. Vous pouvez également utiliser l’éditeur comme filtre pour rechercher les autres applications du même éditeur.
 - Les adresses IP à risques apparaissent maintenant comme facteur de risque indépendant et non plus pondéré, sous le facteur de risque général **Emplacement**. 
 - Quand les étiquettes Azure Information Protection sont désactivées sur un fichier, elles apparaissent désactivées dans Cloud App Security. Les étiquettes supprimées ne sont pas affichées.
