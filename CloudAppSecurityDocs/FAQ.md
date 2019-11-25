@@ -15,12 +15,12 @@ ms.assetid: 081c2cf4-2750-4546-9490-4b65e87ae48c
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f2d2fc6ef5753cbca977e785249ddf61a3664eb5
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: 6e2464988eb075e3dd3bd345716b5ec71dec8ba6
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72334445"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460844"
 ---
 # <a name="frequently-asked-questions"></a>Forum aux questions
 
@@ -48,4 +48,4 @@ Vous devez être administrateur général, administrateur de conformité ou admi
 ## <a name="next-steps"></a>Étapes suivantes  
 Pour apprendre à configurer et utiliser les stratégies de contrôle des applications cloud, consultez [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md).   
 
-Les clients Premier peuvent également choisir Cloud App Security directement depuis le [portail Premier](https://premier.microsoft.com/).  
+[!INCLUDE [Open support ticket](includes/support.md)]  

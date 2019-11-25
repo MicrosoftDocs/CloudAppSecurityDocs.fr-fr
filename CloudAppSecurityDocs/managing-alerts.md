@@ -15,21 +15,21 @@ ms.assetid: 1b1dbcc6-472f-43ea-af59-2aa926e3e5a9
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 340e1919afc9ce5c72efb82825ddc6cd9579dbd3
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: 0e0142cfaa91197084636cf1c3b9064f0fce021a
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71084113"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460864"
 ---
 # <a name="manage-alerts"></a>Gérer les alertes
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Cet article explique comment utiliser les alertes déclenchées dans le portail Cloud App Security.
 
 > [!NOTE]
-> Les alertes sont gérées dans leurs stratégies respectives et peuvent être configurées pour être envoyées en tant que courrier électronique, SMS, ou les deux.
+> Alerts are managed in their respective policies and can be configured to be sent as an email, text message, or both.
 
 ## <a name="manage-your-alerts"></a>Gérer vos alertes
 
@@ -70,10 +70,10 @@ Il est judicieux d’examiner toutes vos alertes et de vous en servir pour modif
 3. Chaque fois que vous ignorez une alerte, il est important d’envoyer des commentaires sur la raison pour laquelle vous l’ignorez. L’équipe Cloud App Security utilise ces commentaires pour évaluer la précision de l’alerte. Ces informations sont ensuite utilisées pour affiner nos modèles Machine Learning pour les futures alertes. Vous pouvez suivre ces instructions pour décider comment catégoriser l’alerte :
    - Si une utilisation légitime a déclenché l’alerte et qu’il ne s’agit pas d’un problème de sécurité, il peut s’agir d’un événement de ce type : 
 
-     - Positif sans gravité : L’alerte est exacte, mais l’activité est légitime. Vous pouvez ignorer l’alerte et définir la raison sur **La gravité réelle est inférieure** ou sur **Sans intérêt**.
-     -  Faux positif : L’alerte est inexacte. Ignorez l’alerte et définissez la raison sur **L’alerte n’est pas exacte**.
+     - Benign positive: The alert is accurate but the activity is legitimate. Vous pouvez ignorer l’alerte et définir la raison sur **La gravité réelle est inférieure** ou sur **Sans intérêt**.
+     -  Faux positif : l’alerte est inexacte. Ignorez l’alerte et définissez la raison sur **L’alerte n’est pas exacte**.
    - S’il y a trop de bruit pour déterminer la légitimité et l’exactitude d’une alerte, ignorez-la et définissez la raison sur **Trop d’alertes similaires**.
-   - Vrai positif : Si l’alerte concerne un événement à risques réel qui a été commis à des fins malveillantes ou involontairement par un utilisateur interne ou externe, il est recommandé de définir l’événement sur **Résolution** après que toutes les actions appropriées ont été effectuées pour remédier à l’événement.
+   - Vrai positif : si l’alerte concerne un événement à risques réel qui a été commis à des fins malveillantes ou involontairement par un utilisateur interne ou externe, il est recommandé de définir l’événement sur **Résolution** après que toutes les actions appropriées ont été effectuées pour remédier à l’événement.
 
 ## <a name="alert-types"></a>Types d’alertes
 
@@ -97,4 +97,4 @@ Le tableau suivant contient une liste des types d’alertes qui peuvent être d�
 ## <a name="next-steps"></a>Étapes suivantes  
 Pour plus d’informations sur l’examen des alertes, consultez [Investiguer](investigate.md).  
 
-[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  

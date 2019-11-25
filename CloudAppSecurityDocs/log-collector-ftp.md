@@ -15,12 +15,12 @@ ms.assetid: 776e834f-3c20-4d5f-9fab-4c5b975edb06
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 457d2cfd0a5b1c25b8463a8d48e3172c044a673e
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: 4dabcc39d9688b8595b574b6806bcc7eb3e8780b
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71084135"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74458738"
 ---
 # <a name="log-collector-ftp-configuration"></a>Configuration FTP du collecteur de journaux
 
@@ -58,8 +58,8 @@ Suivez cette procédure pour personnaliser les fichiers de certificats que vous 
 
     ![Modifier le mot de passe FTP](./media/new-certs.png)
 
-    - **Pour FTP :** Un seul fichier est nécessaire. Le fichier a la clé et les données de certificat, dans cet ordre, et est nommé **pure-ftpd.pem**.
-    - **Pour Syslog :** Trois fichiers sont nécessaires (**ca.pem**, **server-key.pem et **server-cert.pem**). Si l’un des fichiers est absent, la mise à jour n’a pas lieu.
+    - **Pour FTP :** un seul fichier est nécessaire. Le fichier a la clé et les données de certificat, dans cet ordre, et est nommé **pure-ftpd.pem**.
+    - **Pour Syslog :** trois fichiers sont nécessaires (**ca.pem**, **server-key.pem et **server-cert.pem**). Si l’un des fichiers est absent, la mise à jour n’a pas lieu.
 
 4. Sur un terminal, exécutez : `docker exec -t <collector name> update_certs`. La commande doit produire une sortie semblable à celle illustrée dans la capture d’écran suivante.
 
@@ -69,4 +69,4 @@ Suivez cette procédure pour personnaliser les fichiers de certificats que vous 
 
 [Déployer Cloud Discovery](set-up-cloud-discovery.md)
 
-[Les clients Premier peuvent également choisir Cloud App Security directement depuis le portail Premier](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

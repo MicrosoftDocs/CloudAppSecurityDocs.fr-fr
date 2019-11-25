@@ -1,6 +1,6 @@
 ---
-title: Certifiez vos applications-Cloud App Security | Microsoft Docs
-description: Cet article fournit des instructions pour l’attestation de vos applications dans Cloud App Security.
+title: Attest your apps - Cloud App Security | Microsoft Docs
+description: This article provides instructions for attesting your apps in Cloud App Security.
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -15,121 +15,121 @@ ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 681ce6935353ab25968bb8955873188e0c839c3e
-ms.sourcegitcommit: 2e8488efcc2253e0b5fa33db308e4986a9cdefd5
+ms.openlocfilehash: 2ab3cd3c8a25ba9aab9ddf5639d393786fbbb5bd
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71997368"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460759"
 ---
 # <a name="attest-your-app"></a>Attester votre application
 
-Microsoft Cloud App Security vous permet d’attester votre application pour vous assurer que les détails de conformité et de sécurité que nous utilisons pour évaluer votre application dans le catalogue d’applications Cloud sont à jour.
+Microsoft Cloud App Security enables you to attest your app, so that you make sure that the compliance and security details we use to rate your app in our Cloud App Catalog are up to date.
 
-Si votre application est déjà listée dans le catalogue d’applications Cloud, ou si elle est nouvelle, soumettez un [questionnaire d’auto-attestation](https://go.microsoft.com/fwlink/?linkid=2106624). Pour plus d’informations sur le processus d’auto-attestation, contactez casfeedback@microsoft.com.
+Whether your app is already listed in the Cloud App Catalog, or it's new, submit a [self-attestation questionnaire](https://go.microsoft.com/fwlink/?linkid=2106624). For details on the self-attestation process, contact casfeedback@microsoft.com.
 
-Suivez les attributs de service décrits ci-dessous pour terminer avec succès la soumission du questionnaire :
+Follow the service attributes described below to successfully complete the submission of the questionnaire:
 
-| Champ | Catégorie d’informations | Type | Valeurs acceptées | Description |
+| Champ | Info category | Type | Valeurs acceptées | Description |
 |------|-------|------|---------|----------|
-| Nom de l’application | Général | Chaîne | Texte libre | Nom de votre application tel qu’il doit apparaître dans le catalogue d’applications Cloud. |
-| Description | Général | Chaîne | Texte libre | Brève explication de ce que votre application permet aux utilisateurs d’effectuer ou d’atteindre. |
-| Catégorie| Général | Chaîne | Fermer la liste-fourni dans le questionnaire | Classification de l’application en fonction du champ auquel elle se rapporte. |
-| Siège social | Général | Code du pays | Fermer la liste-fourni dans le questionnaire | Pays du siège du fournisseur.|
-| Centre de données| Général | Tableau de codes de pays * | Fermer la liste-fourni dans le questionnaire (sélection multiple) | Le pays dans lequel se trouve votre centre de données (peut être plusieurs emplacements) |
-| Société d’hébergement | Général | Chaîne | Texte libre | Nom de la société qui fournit l’hébergement de serveur pour l’application. |
-| Doutes | Général | Integer | AAAA (pas plus de 2019) | Année de Fondation du fournisseur. |
-| Détenteur | Général | Chaîne | Privé, public | Indique si le fournisseur est une société publique ou privée |
-| Domaine d’application | Général | Tableau d’URL * | Texte libre | Liste des domaines utilisés pour interagir avec le service (par exemple, « teams.microsoft.com » pour Microsoft Teams) |
-| Conditions d’accès | Général | URL | Texte libre | Cette application fournit-elle un ensemble de réglementations que les utilisateurs doivent accepter de suivre pour pouvoir utiliser l’application ? |
-| Politique de confidentialité | Général | URL | Texte libre | Lien vers un document juridiquement contraignant relatif à la façon dont ce fournisseur gère les informations sur les clients, les clients ou les employés rassemblées dans le cadre de l’application. |
-| URL de connexion | Général | Tableau d’URL * | Texte libre | URL via laquelle les utilisateurs se connectent à l’application. |
-| Fabricant | Général | Chaîne | Texte libre | Nom du fournisseur qui fournit cette application. |
-| Types de données | Général | Chaîne | Fermer la liste-fourni dans le questionnaire | Quels types de données peuvent être téléchargés par l’utilisateur vers l’application ?|
-| Homepage | Général | URL | Texte libre | URL de la page d’hébergement du fournisseur. |
-| Plan de récupération d’urgence | Général | Booléen | True, False | Cette application a-t-elle un plan de récupération d’urgence qui comprend une stratégie de sauvegarde et de restauration ? |
-| Dernière violation | Sécurité | Date | MMM-jj-aaaa | Incident le plus récent dans lequel les données sensibles, protégées ou confidentielles détenues par l’application ont été affichées, volées ou utilisées par un individu non autorisé à cette fin. |
-| Méthode de chiffrement des données au repos | Sécurité | Chaîne | Fermer la liste-fourni dans le questionnaire | Type de chiffrement des données au repos effectuées sur l’application. |
-| Authentification multifacteur | Sécurité | Booléen | True, False | Cette application prend-elle en charge les solutions multi-Factor Authentication ? |
-| Restriction d’adresse IP | Sécurité | Booléen | True, False | Cette application prend-elle en charge la restriction d’adresses IP spécifiques par l’application ? |
-| Piste d’audit de l’utilisateur | Sécurité | Booléen | True, False | Cette application prend-elle en charge la disponibilité de la piste d’audit par compte d’utilisateur ? |
-| Piste d’audit de l’administrateur | Sécurité | Booléen | True, False | Cette application prend-elle en charge la disponibilité d’une piste d’audit de l’administrateur dans l’application ? |
-| Piste d’audit des données | Sécurité | Booléen | True, False | Cette application prend-elle en charge la disponibilité d’une piste d’audit des données dans l’application ? |
-| L’utilisateur peut charger des données | Sécurité | Booléen | True, False | Cette application prend-elle en charge les données chargées par l’utilisateur ? |
-| Classification des données | Sécurité | Booléen | True, False | Cette application active-t-elle l’option de classification des données chargées dans l’application ? |
-| Mémoriser le mot de passe | Sécurité | Booléen | True, False | Cette application active-t-elle l’option de mémorisation et d’enregistrement des mots de passe utilisateur dans l’application ? |
-| Prise en charge des rôles d’utilisateur | Sécurité | Booléen | True, False | Cette application prend-elle en charge la distribution des utilisateurs par rôles et niveaux d’autorisation ? |
-| Partage de fichiers | Sécurité | Booléen | True, False | Cette application inclut-elle des fonctionnalités qui permettent le partage de fichiers entre les utilisateurs ? |
-| Nom de certificat valide | Sécurité | Booléen | True, False | Le serveur fournit-il un certificat SSL correspondant au nom de domaine ? |
-| Certificat approuvé | Sécurité | Booléen | True, False | Le serveur fournit-il un certificat SSL approuvé (qui n’a pas expiré, vérifié, et une chaîne de signature approuvée, etc.) ? |
-| Protocole de chiffrement | Sécurité | Chaîne | Fermer la liste-fourni dans le questionnaire | La dernière version du protocole de chiffrement TLS (Transport Layer Security) prise en charge entre le point de terminaison de l’utilisateur et le fournisseur de l’application. Si le certificat du serveur n’existe pas ou n’est pas valide, le chiffrement est considéré comme non pris en charge.|
-| Heartbleed corrigé | Sécurité | Booléen | True, False | L’implémentation SSL du serveur a-t-elle été corrigée pour le bogue Heartbleed afin de réduire les vulnérabilités ? |
-| En-têtes de sécurité HTTP : Strict-transport-Security | Sécurité | Booléen | True, False | Les en-têtes HTTP strict-transport-Security sont-ils implémentés par l’application sur son site Web ? |
-| En-têtes de sécurité HTTP : Content-Security-Policy | Sécurité | Booléen | True, False | Les en-têtes de stratégie de sécurité de contenu HTTP sont-ils implémentés par l’application sur son site Web ? |
-| En-têtes de sécurité HTTP : X-Frame-options | Sécurité | Booléen | True, False | Les en-têtes HTTP X-Frame-options sont-ils implémentés par l’application sur son site Web ? |
-| En-têtes de sécurité HTTP : X-Content-Type-Options | Sécurité | Booléen | True, False | Les en-têtes HTTP X-Content-type-options sont-ils implémentés par l’application sur son site Web ? |
-| En-têtes de sécurité HTTP : X-XSS-protection | Sécurité | Booléen | True, False | Les en-têtes HTTP X-XSS-protection sont-ils implémentés par l’application sur son site Web ? |
-| Prend en charge SAML | Sécurité | Booléen | True, False | Cette application prend-elle en charge la norme SAML pour l’échange de données d’authentification et d’autorisation ? |
-| Protégé contre les NOYERs | Sécurité | Booléen | True, False | Les serveurs d’applications sont-ils protégés contre les attaques par noyer ? |
-| Test d’intrusion | Sécurité | Booléen | True, False | Cette application effectue-t-elle des tests d’intrusion pour détecter et évaluer les vulnérabilités du réseau ? |
-| Nécessite l’authentification de l’utilisateur | Sécurité | Booléen | True, False | Cette application nécessite-t-elle une authentification et interdit l’utilisation anonyme ? |
-| Stratégie de mot de passe : Longueur maximale du mot de passe | Sécurité | Booléen | True, False | Cette application applique-t-elle une longueur limite à la création du mot de passe ? |
-| Stratégie de mot de passe : Combinaison de caractères | Sécurité | Booléen | True, False | Cette application applique-t-elle une combinaison de caractères lors de la création du mot de passe ? |
-| Stratégie de mot de passe : Modifier la période de mot de passe | Sécurité | Booléen | True, False | Cette application impose-t-elle aux utilisateurs de réinitialiser leur mot de passe régulièrement ? |
-| Stratégie de mot de passe : Historique et réutilisation des mots de passe | Sécurité | Booléen | True, False | Cette application interdit-t-elle la réutilisation des anciens mots de passe ? |
-| Stratégie de mot de passe : Utilisation des informations personnelles | Sécurité | Booléen | True, False | Cette application interdit-t-elle l’utilisation d’informations personnelles dans les mots de passe ? |
-| Stratégie de mot de passe | Sécurité | Booléen | True, False | Cette application applique-t-elle une stratégie de mot de passe conforme aux meilleures pratiques ? |
-| FINRA | Compatibilité | Booléen | True, false, N/A | Cette application est-elle conforme à FINRA, un ensemble standard pour les organisations à but non lucratif autorisées par le Congrès, qui réglemente et applique l’amélioration de la protection des investisseurs et de l’intégrité du marché ? |
-| FISMA | Compatibilité | Booléen | True, false, N/A | Cette application est-elle conforme à FISMA, la législation américaine qui définit une infrastructure complète pour protéger les informations, les opérations et les ressources gouvernementales au sein des agences fédérales, contre les menaces ? |
-| PCGR | Compatibilité | Booléen | True, false, N/A | Cette application est-elle conforme à PCGR, une collection de règles et de normes de comptabilité couramment suivies pour la création de rapports financiers ? |
-| HIPAA | Compatibilité | Booléen | True, false, N/A | Cette application est-elle conforme à la loi HIPAA, la législation américaine qui définit des normes pour la protection de la confidentialité et de la sécurité des informations d’intégrité identifiables individuellement ? |
-| ISAE 3402 | Compatibilité | Booléen | True, false, N/A | Cette application est-elle conforme à ISAE 3402, la norme mondiale fournissant l’assurance qu’une organisation de service a des contrôles appropriés en place ? |
-| ISO 27001 | Compatibilité | Booléen | True, false, N/A | Cette application est-elle conforme à la norme ISO 27001, un certificat donné aux entreprises qui a fourni aux entreprises des directives et des principes généraux reconnus au niveau international pour initier, implémenter, maintenir et améliorer la gestion de la sécurité des informations au sein d’une organisation ? |
-| ITAR | Compatibilité | Booléen | True, false, N/A | Cette application est-elle conforme à ITAR, règlements contrôlant l’exportation et l’importation d’articles et de services liés à la défense figurant dans la liste des munitions des États-Unis ? |
-| SOC 1 | Compatibilité | Booléen | True, false, N/A | Cette application est-elle conforme à SOC 1 et signale-t-elle les contrôles d’une organisation de service qui sont pertinents pour le contrôle interne des entités utilisateur sur les rapports financiers ? |
-| SOC 2 | Compatibilité | Booléen | True, false, N/A | Cette application est-elle conforme à la société SOC 2, qui signale un traitement non financier basé sur un ou plusieurs des critères de service d’approbation relatifs à la sécurité, la confidentialité, la disponibilité, la confidentialité et l’intégrité du traitement ? |
-| SOC 3 | Compatibilité | Booléen | True, false, N/A | Cette application est-elle conforme à la société SOC 3, qui signale les critères du service d’approbation, qui peuvent être distribués librement et qui ne contiennent que l’assertion de la direction selon laquelle ils ont répondu aux exigences des critères choisis. |
-| SOX | Compatibilité | Booléen | True, false, N/A | Cette application est-elle conforme à la législation SOX et aux États-Unis visant à protéger les actionnaires et le grand public contre les erreurs et les fraudes comptables, ainsi qu’à améliorer la précision des divulgations d’entreprise ? |
-| SP 800-53 | Compatibilité | Booléen | True, false, N/A | Cette application est-elle conforme à SP80053, les contrôles de sécurité recommandés pour les organisations et les systèmes d’information fédéraux ? |
-| SSAE 16 | Compatibilité | Booléen | True, false, N/A | Cette application est-elle conforme à la norme SSAE 16 pour l’audit des contrôles de conformité internes et des processus de création de rapports d’une organisation de service ? |
-| Version de PCI DSS | Compatibilité | Chaîne | 1, 2, 3, 3,1, 3,2, N/A | Version du protocole PCI-DSS prise en charge par cette application. |
-| ISO 27018 | Compatibilité | Booléen | True, false, N/A | Cette application est-elle conforme à la norme ISO 27018, qui établit des contrôles et des instructions couramment acceptés pour le traitement et la protection des informations d’identification personnelle (PII) dans un environnement de cloud computing public ? |
-| GLBA | Compatibilité | Booléen | True, false, N/A | Cette application est-elle conforme à la loi Gramm-Leach-Bliley Act (GLBA), qui exige que les institutions financières établissent des normes de protection de la sécurité et de la confidentialité des informations personnelles des clients ? |
-| Niveau FedRAMP | Compatibilité | Chaîne | Élevé, modéré, faible, N/A | Niveau de la solution conforme à FedRAMP fournie par cette application. |
-| Niveau CSA STAR | Compatibilité | Chaîne | Auto-évaluation, certification, attestation, évaluation C-STAR, surveillance continue, N/A | Niveau du programme CSA STAR sur lequel l’application est certifiée |
-| Privacy Shield | Compatibilité | Booléen | True, false, N/A | Cette application est-elle conforme à l’infrastructure de protection de la confidentialité UE-US, qui impose des obligations plus fortes aux entreprises américaines pour protéger les données personnelles des européens ? |
-| ISO 27017 | Compatibilité | Booléen | True, false, N/A | Cette application est-elle conforme à la norme ISO 27017, qui établit des contrôles et des recommandations couramment acceptés pour le traitement et la protection des informations utilisateur dans un environnement de Cloud Computing public ? |
-| COBIT | Compatibilité | Booléen | True, false, N/A | Cette application est-elle conforme à COBIT, qui définit les meilleures pratiques pour la gouvernance et le contrôle des systèmes d’information et de la technologie, et l’aligne sur les principes de l’entreprise ? |
-| COPPA | Compatibilité | Booléen | True, false, N/A | Cette application est-elle conforme à la réglementation COPPA, qui définit les exigences relatives au site Web et aux opérateurs de services en ligne qui fournissent du contenu aux enfants âgés de moins de 13 ans ? |
-| FERPA | Compatibilité | Booléen | True, false, N/A | Cette application est-elle conforme à FERPA, une loi fédérale qui protège la confidentialité des dossiers de formation des élèves ? |
-| GAPP | Compatibilité | Booléen | True, false, N/A | Cette application est-elle conforme à GAPP, un ensemble de règles couramment suivies qui répondent aux risques de confidentialité dans une organisation ? |
-| CSF HITRUST | Compatibilité | Booléen | True, false, N/A | Cette application est-elle conforme à HITRUST CSF, un ensemble de contrôles qui harmonise les exigences des normes et des réglementations en matière de sécurité des informations ? |
-| Commandes du Forum Jéricho | Compatibilité | Booléen | True, false, N/A | Cette application suit-elle les commandes de Forum Jéricho, une série de principes à observer lors de l’architecture de systèmes pour une opération sécurisée dans des environnements désous-périmètres ? |
-| ISO 27002 | Compatibilité | Booléen | True, false, N/A | Cette application est-elle conforme à la norme ISO 27002, qui établit des recommandations communes pour les normes de sécurité des informations de l’organisation et les pratiques de gestion de la sécurité des informations ? |
-| FFIEC | Compatibilité | Booléen | True, false, N/A | Cette application est-elle conforme aux conseils du Conseil de l’examen des institutions financières fédérales sur les contrôles de gestion des risques nécessaires à l’authentification des services dans un environnement bancaire Internet ? |
-| Propriété des données | Juridique | Booléen | True, False | Cette application conserve-t-elle entièrement la propriété des données téléchargées par l’utilisateur ? |
-| DMCA | Juridique | Booléen | True, False | Cette application est-elle conforme à la DMCA (Digital Millenium Copyright Act), qui criminalise toute tentative d’accès illégal à des documents protégés par des droits d’auteur ? |
-| Stratégie de conservation des données | Juridique | Booléen | True, False | Quelle est la stratégie de l’application pour la rétention des données utilisateur après l’arrêt du compte ? |
-| RGPD Readiness (instruction) | Juridique | URL | Texte libre | Un lien vers votre site Web, le cas échéant, lié à la façon dont ce fournisseur prévoit de gérer la conformité RGPD. |
-| RGPD-droit d’effacement | Juridique | Booléen | True, false, N/A | Cette application arrête-t-elle le traitement et supprime les données personnelles d’un individu à la demande ? |
-| RGPD-violations de données de rapport | Juridique | Booléen | True, false, N/A | Cette application signale-t-elle les violations de données aux autorités de supervision et aux personnes concernées par la violation, dans un délai de 72 heures de détection de violation ? |
-| RGPD-impact de l’évaluation | Juridique | Booléen | True, false, N/A | Cette application effectue-t-elle des évaluations d’impact sur la protection des données pour identifier les risques pour les individus ? |
-| RGPD-contrôle de données croisées sécurisées | Juridique | Booléen | True, false, N/A | Cette application transfère-t-elle les données en toute sécurité entre les bordures ? |
-| RGPD-responsable de la protection des données | Juridique | Booléen | True, false, N/A | Cette application désigne-t-elle un responsable de la protection des données pour superviser la stratégie de sécurité des données et la conformité RGPD ? |
-| RGPD-droit à Object | Juridique | Booléen | True, false, N/A | Cette application fournit-elle aux individus la possibilité d’effectuer des objets sur le traitement de leurs données personnelles dans certaines circonstances ? |
-| RGPD-droit d’accès | Juridique | Booléen | True, false, N/A | Cette application fournit-elle aux individus la possibilité de savoir, à la demande, quelles données personnelles une société utilise et comment elle est utilisée ? |
-| RGPD-Right to Data portablility | Juridique | Booléen | True, false, N/A | Cette application fournit-elle aux individus la possibilité d’obtenir et de réutiliser leurs données personnelles à des fins différentes sur différents services à la demande ? |
-| RGPD-right pour être informé | Juridique | Booléen | True, false, N/A | Cette application informe-elle les individus des protections appropriées qu’elle prend lorsque les données personnelles sont transférées à un pays non-UE ou à une organisation internationale ? |
-| RGPD-droit à la restriction du traitement | Juridique | Booléen | True, false, N/A | Cette application fournit-elle aux individus la possibilité de bloquer ou de supprimer le traitement des données personnelles ? |
-| RGPD-droits liés à la prise de décision automatisée | Juridique | Booléen | True, false, N/A | Cette application fournit-elle aux individus la possibilité de choisir de ne pas être soumis à une décision basée uniquement sur le traitement automatisé ? Cela comprend le profilage, qui peut avoir des ramifications légales. |
-| RGPD-licite pour le traitement | Juridique | Booléen | True, false, N/A | Cette application traite-t-elle les données personnelles licitement conformément à l’accord, au contrat, à l’obligation légale, aux intérêts essentiels, aux intérêts légitimes, aux catégories spéciales, aux données et au délit criminel ? |
-| RGPD-droit à rectification | Juridique | Booléen | True, false, N/A | Cette application fournit-elle aux individus la possibilité de corriger leurs données personnelles ? Le contrôleur doit répondre à toutes les demandes de ses sujets de données dans un délai d’un mois. |
+| Nom de l’application | Général | String | Free text | The name for your application as it should appear in the Cloud App Catalog. |
+| Description | Général | String | Free text | Short explanation of what your application enables users to do or achieve. |
+| Category| Général | String | Close list - provided in questionnaire | Classification of the app according to the field to which it relates. |
+| Siège social | Général | Code du pays | Close list - provided in questionnaire | The country of the provider's headquarters.|
+| Centre de données| Général | Country code array* | Close list - provided in questionnaire (Multi selection) | The country in which your data center resides (can be multiple locations) |
+| Hosting company | Général | String | Free text | The name of the company that provides server hosting for the app. |
+| Founded | Général | Entier | YYYY (no later than 2019) | The year in which the provider was founded. |
+| Holding | Général | String | Private, Public | Displays whether the provider is a publicly or privately held company |
+| App domain | Général | URL array* | Free text | The list of domains that are used to interact with the service (for example, 'teams.microsoft.com' for Microsoft Teams) |
+| Terms of service | Général | une adresse URL | Free text | Does this app provide a set of regulations that users must agree to follow in order to use the app? |
+| Privacy policy | Général | une adresse URL | Free text | A link to a legally binding document relating to how this provider handles customer, client, or employee information gathered as part of the app. |
+| Logon URL | Général | URL array* | Free text | The URL through which users log on to the app. |
+| Fabricant | Général | String | Free text | The name of the vendor who provides this app. |
+| Types de données | Général | String | Close list - provided in questionnaire | Which data types can be uploaded by the user to the app?|
+| Homepage | Général | une adresse URL | Free text | The provider's home page URL. |
+| Disaster recovery plan | Général | Booléen | True, False | Does this app have a disaster recovery plan that includes a backup and restore strategy? |
+| Latest breach | Sécurité | Date | MMM-dd-YYYY | Most recent incident in which sensitive, protected, or confidential data owned by the app was viewed, stolen, or used by an individual unauthorized to do so. |
+| Data-at-rest encryption method | Sécurité | String | Close list - provided in questionnaire | The type of encryption of data-at-rest performed on the app. |
+| Authentification multifacteur | Sécurité | Booléen | True, False | Does this app support multi-factor authentication solutions? |
+| IP address restriction | Sécurité | Booléen | True, False | Does this app support restriction of specific IP addresses by the app? |
+| User audit trail | Sécurité | Booléen | True, False | Does this app support availability of audit trail per user account? |
+| Admin audit trail | Sécurité | Booléen | True, False | Does this app support availability of an admin audit trail in the app? |
+| Data audit trail | Sécurité | Booléen | True, False | Does this app support availability of a data audit trail in the app? |
+| User can upload data | Sécurité | Booléen | True, False | Does this app support user uploaded data? |
+| Classification des données | Sécurité | Booléen | True, False | Does this app enable the option for classification of the data uploaded to the app? |
+| Mémoriser le mot de passe | Sécurité | Booléen | True, False | Does this app enable the option for remembering and saving user passwords in the app? |
+| User-roles support | Sécurité | Booléen | True, False | Does this app support distribution of users by roles and levels of permission? |
+| File sharing | Sécurité | Booléen | True, False | Does this app include features that allow file sharing between users? |
+| Valid certificate name | Sécurité | Booléen | True, False | Does the server provide an SSL certificate matching the domain name? |
+| Certificat approuvé | Sécurité | Booléen | True, False | Does the server provide a trusted SSL certificate (not expired, verified, and trusted signature chain, etc.)? |
+| Encryption protocol | Sécurité | String | Close list - provided in questionnaire | The latest version of Transport Layer Security (TLS) encryption protocol supported between user endpoint and app provider. If the server's certificate is non-existent or not valid, encryption is considered unsupported.|
+| Heartbleed patched | Sécurité | Booléen | True, False | Is the SSL implementation of the server patched for the Heartbleed bug to reduce vulnerability? |
+| HTTP security headers: Strict-Transport-Security | Sécurité | Booléen | True, False | Are HTTP Strict-Transport-Security headers implemented by the app on its website? |
+| HTTP security headers: Content-Security-Policy | Sécurité | Booléen | True, False | Are HTTP Content-Security-Policy headers implemented by the app on its website? |
+| HTTP security headers: X-Frame-Options | Sécurité | Booléen | True, False | Are HTTP X-Frame-Options headers implemented by the app on its website? |
+| HTTP security headers: X-Content-Type-Options | Sécurité | Booléen | True, False | Are HTTP X-Content-Type-Options headers implemented by the app on its website? |
+| HTTP security headers: X-XSS-Protection | Sécurité | Booléen | True, False | Are HTTP X-XSS-Protection headers implemented by the app on its website? |
+| Supports SAML | Sécurité | Booléen | True, False | Does this app support the SAML standard for exchanging authentication and authorization data? |
+| Protected against DROWN | Sécurité | Booléen | True, False | Are the application servers protected from DROWN attacks? |
+| Penetration Testing | Sécurité | Booléen | True, False | Does this app carry out penetration testing to detect and assess network vulnerabilities? |
+| Requires user authentication | Sécurité | Booléen | True, False | Does this app require authentication and disallow anonymous use? |
+| Password policy: Password length limit | Sécurité | Booléen | True, False | Does this app enforce a length limit on password creation? |
+| Password policy: Character combination | Sécurité | Booléen | True, False | Does this app enforce a character combination on password creation? |
+| Password policy: Change password period | Sécurité | Booléen | True, False | Does this app enforce users to reset their password periodically? |
+| Password policy: Password history and reuse | Sécurité | Booléen | True, False | Does this app disallow the reuse of old passwords? |
+| Password policy: Personal information use | Sécurité | Booléen | True, False | Does this app disallow the use of personal information in passwords? |
+| Password policy | Sécurité | Booléen | True, False | Does this app enforce a password policy that complies with best practices? |
+| FINRA | Compatibilité | Booléen | True, False, N/A | Does this app comply with FINRA, a standard set for not-for-profit organizations authorized by Congress that regulates and enforces the enhancement of investor safeguards and market integrity? |
+| FISMA | Compatibilité | Booléen | True, False, N/A | Does this app comply with FISMA, the US legislation that defines a comprehensive framework to protect government information, operations and assets within federal agencies, against threats? |
+| GAAP | Compatibilité | Booléen | True, False, N/A | Does this app comply with GAAP, a collection of commonly-followed accounting rules and standards for financial reporting? |
+| HIPAA | Compatibilité | Booléen | True, False, N/A | Does this app comply with HIPAA, the US legislation that sets standards for protecting the confidentiality and security of individually identifiable health information? |
+| ISAE 3402 | Compatibilité | Booléen | True, False, N/A | Does this app comply with ISAE 3402, the global standard providing assurance that a service organization has appropriate controls in place? |
+| ISO 27001 | Compatibilité | Booléen | True, False, N/A | Is this app ISO 27001 certified, a certificate given to companies upholding internationally recognized guidelines and general principles for initiating, implementing, maintaining, and improving information security management within an organization? |
+| ITAR | Compatibilité | Booléen | True, False, N/A | Does this app comply with ITAR, regulations controlling the export and import of defense-related articles and services found on the US Munitions List? |
+| SOC 1 | Compatibilité | Booléen | True, False, N/A | Does this app comply with SOC 1, reporting on controls at a service organization which are relevant to user entities' internal control over financial reporting? |
+| SOC 2 | Compatibilité | Booléen | True, False, N/A | Does this app comply with SOC 2, reporting on non-financial processing based on one or more of the Trust service criteria on security, privacy, availability, confidentiality, and processing integrity? |
+| SOC 3 | Compatibilité | Booléen | True, False, N/A | Does this app comply with SOC 3, reporting based on the Trust service criteria, that may be distributed freely and only contain management's assertion that they have met the requirements of the chosen criteria? |
+| SOX | Compatibilité | Booléen | True, False, N/A | Does this app comply with SOX, US legislation aimed at protecting shareholders and the general public from accounting errors and frauds, as well as improving the accuracy of corporate disclosures? |
+| SP 800-53 | Compatibilité | Booléen | True, False, N/A | Does this app comply with SP80053, recommended security controls for federal information systems and organizations? |
+| SSAE 16 | Compatibilité | Booléen | True, False, N/A | Does this app comply with the SSAE 16 standard for auditing a service organization's internal compliance controls and reporting processes? |
+| PCI DSS version | Compatibilité | String | 1, 2, 3, 3.1, 3.2, N/A | The version of the PCI-DSS protocol supported by this app. |
+| ISO 27018 | Compatibilité | Booléen | True, False, N/A | Does this app comply with ISO 27018, which establishes commonly accepted controls and guidelines for processing and protecting Personally Identifiable Information (PII) in a public cloud computing environment? |
+| GLBA | Compatibilité | Booléen | True, False, N/A | Does this app comply with the Gramm-Leach-Bliley Act (GLBA), which requires financial institutions to establish standards for protecting the security and confidentiality of customers' personal information? |
+| FedRAMP level | Compatibilité | String | High, Moderate, Low, N/A | The level of the FedRAMP-compliant solution provided by this app. |
+| CSA STAR level | Compatibilité | String | Self-assessment, Certification, Attestation, C-STAR assessment, Continuous monitoring, N/A | The level of CSA STAR program at which the app is certified |
+| Bouclier de protection des données | Compatibilité | Booléen | True, False, N/A | Does this app comply with the EU-US Privacy Shield Framework, which imposes stronger obligations on US companies to protect Europeans' personal data? |
+| ISO 27017 | Compatibilité | Booléen | True, False, N/A | Does this app comply with ISO 27017, which establishes commonly accepted controls and guidelines for processing and protecting user information in a public cloud-computing environment? |
+| COBIT | Compatibilité | Booléen | True, False, N/A | Does this app comply with COBIT, which sets best practices for the governance and control of information systems and technology, and aligns IT with business principles? |
+| COPPA | Compatibilité | Booléen | True, False, N/A | Does this app comply with COPPA, which defines requirements on website and online services operators that provide content to children under 13 years of age? |
+| FERPA | Compatibilité | Booléen | True, False, N/A | Does this app comply with FERPA, a federal law that protects the privacy of student education records? |
+| GAPP | Compatibilité | Booléen | True, False, N/A | Does this app comply with GAPP, a collection of commonly-followed rules that address privacy risks in an organization? |
+| HITRUST CSF | Compatibilité | Booléen | True, False, N/A | Does this app comply with HITRUST CSF, a set of controls that harmonizes the requirements of information security regulations and standards? |
+| Jericho Forum Commandments | Compatibilité | Booléen | True, False, N/A | Does this app follow Jericho Forum Commandments, a set if principles to be observed when architecting systems for secure operation in de-perimeterized environments? |
+| ISO 27002 | Compatibilité | Booléen | True, False, N/A | Does this app comply with ISO 27002, which establishes common guidelines for organizational information security standards and information security management practices? |
+| FFIEC | Compatibilité | Booléen | True, False, N/A | Does this app comply with the Federal Financial Institutions Examination Council’s guidance on the risk management controls necessary to authenticate services in an Internet banking environment? |
+| Propriété des données | Juridique | Booléen | True, False | Does this app fully preserve the user's ownership of uploaded data? |
+| DMCA | Juridique | Booléen | True, False | Does this app comply with the Digital Millennium Copyright Act (DMCA), which criminalizes any attempt to unlawfully access copyrighted material? |
+| Stratégie de conservation des données | Juridique | Booléen | True, False | What is the app’s policy for user data retention after account termination? |
+| GDPR readiness statement | Juridique | une adresse URL | Free text | A link to your website, when relevant, relating how this provider plans to handle GDPR compliance. |
+| GDPR - Right to erasure | Juridique | Booléen | True, False, N/A | Does this app stop processing and delete an individual’s personal data upon request? |
+| GDPR - Report data breaches | Juridique | Booléen | True, False, N/A | Does this app report data breaches to supervisory authorities and individuals affected by the breach, within 72 hours of breach detection? |
+| GDPR - Impact assessment | Juridique | Booléen | True, False, N/A | Does this app conduct data protection impact assessments to identify risk to individuals? |
+| GDPR - Secure cross border data control | Juridique | Booléen | True, False, N/A | Does this app securely transfer data across borders? |
+| GDPR - Data protection officer | Juridique | Booléen | True, False, N/A | Does this app appoint a data protection officer to oversee data security strategy and GDPR compliance? |
+| GDPR - Right to object | Juridique | Booléen | True, False, N/A | Does this app provide individuals with the ability to object to the processing of their personal data in certain circumstances? |
+| GDPR - Right to access | Juridique | Booléen | True, False, N/A | Does this app provide individuals with the ability to know, upon request, what personal data a company is using and how it is being used? |
+| GDPR - Right to data Portablility | Juridique | Booléen | True, False, N/A | Does this app provide individuals with the ability to obtain and reuse their personal data for their own purposes across different services upon request? |
+| GDPR - Right to be informed | Juridique | Booléen | True, False, N/A | Does this app inform individuals of the appropriate safeguards it takes when personal data is transferred to a non-EU country or to an international organization? |
+| GDPR - Right to restriction of processing | Juridique | Booléen | True, False, N/A | Does this app provide individuals with the ability to block or suppress processing of personal data? |
+| GDPR - Rights related to automated decision making | Juridique | Booléen | True, False, N/A | Does this app provide individuals with the ability to choose not to be subject to a decision that is based solely on automated processing? This includes profiling, which may have legal ramifications. |
+| GDPR - lawful basis for processing | Juridique | Booléen | True, False, N/A | Does this app process personal data lawfully in accordance with consent, contract, legal obligation, vital interests, legitimate interests, special category, data, and criminal offense data? |
+| GDPR - Right to rectification | Juridique | Booléen | True, False, N/A | Does this app provide individuals with the ability to rectify their personal data? The controller must respond to all requests from its data subjects within one month. |
 
 
-les champs \* de type *tableau* doivent être séparés par un point-virgule (;).
+\* Fields of type *Array* should be separated with semicolon (;).
 
 ## <a name="next-steps"></a>Étapes suivantes 
 [Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)
 
-[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/) 
+[!INCLUDE [Open support ticket](includes/support.md)] 
 

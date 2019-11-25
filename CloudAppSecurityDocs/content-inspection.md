@@ -15,12 +15,12 @@ ms.assetid: c67a387f-8c88-4018-9e80-0fb1455cf768
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: e267f0c80d21f7aaec91ca43152fbba58d89feaf
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: ef3da968aeb3148365937f94110108a9785894ce
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335586"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74458782"
 ---
 # <a name="content-inspection"></a>Inspection du contenu
 
@@ -52,5 +52,5 @@ Afin d’octroyer les autorisations nécessaires à Cloud App Security :
 ## <a name="next-steps"></a>Étapes suivantes
 [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)   
 
-[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   

@@ -15,12 +15,12 @@ ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 13e1aad4a3ad2b8a93e291e019b637866acabffc
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: 26046b25636523aab8494dcb122660d94e3182b9
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335763"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460725"
 ---
 # <a name="external-dlp-integration"></a>Intégration DLP externe
 
@@ -322,4 +322,4 @@ Cette règle doit être ajoutée à toutes les stratégies existantes.
 ## <a name="next-steps"></a>Étapes suivantes 
 [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)   
 
-[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  

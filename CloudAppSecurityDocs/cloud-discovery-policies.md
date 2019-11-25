@@ -15,12 +15,12 @@ ms.assetid: 45446111-ed1a-4699-9df5-840cc6664a6b
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 719d09c3d35f14e66862718e19562c7a16c18bf8
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: 274dace6a7d6c4b1e083f689568d4e9247f3c44a
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335563"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74461238"
 ---
 # <a name="cloud-discovery-policies"></a>Stratégies Cloud Discovery
 
@@ -35,7 +35,7 @@ Grâce aux stratégies de découverte, vous pouvez définir des alertes qui vous
   
 2. Cliquez sur **Créer une stratégie** et sélectionnez **Stratégie de découverte d’application**.  
   
-     ![menu Stratégie de découverte d’application](./media/app-discovery-policy-menu.png "menu Stratégie de découverte d’application")  
+     ![app discovery policy menu](./media/app-discovery-policy-menu.png "menu de stratégie de découverte d’application")  
   
 3. Attribuez un nom et une description à votre stratégie. Si vous le souhaitez, vous pouvez baser votre stratégie sur un modèle. Pour plus d’informations sur les modèles de stratégies, consultez [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md).  
   
@@ -67,7 +67,7 @@ Définissez des filtres de stratégie afin de découvrir les services appartenan
  Définissez les seuils qui doivent déclencher une alerte en cas de découverte d’une application donnée. Par exemple, déclenchez une alerte uniquement si plus de 100 utilisateurs de l’environnement ont utilisé l’application et s’ils ont téléchargé une certaine quantité de données à partir du service.
 En outre, vous pouvez définir la limite des alertes quotidiennes à recevoir.  
   
-![exemple de stratégie de découverte d’application](./media/app-discovery-policy-example.png "exemple de stratégie de découverte d’application")  
+![app discovery policy example](./media/app-discovery-policy-example.png "exemple de stratégie de découverte d’application")  
   
 ## <a name="cloud-discovery-anomaly-detection"></a>Détection d’anomalie de Cloud Discovery
 
@@ -77,7 +77,7 @@ Cloud App Security examine tous les journaux de votre environnement Cloud Discov
   
 2. Cliquez sur **Créer une stratégie** et sélectionnez **Créer une stratégie de détection des anomalies de Cloud Discovery**.  
   
-     ![menu Stratégie de détection des anomalies de Cloud Discovery](./media/cloud-discovery-anomaly-detection-policy-menu.png "menu Stratégie de détection des anomalies de Cloud Discovery")  
+     ![cloud discovery anomaly detection policy menu](./media/cloud-discovery-anomaly-detection-policy-menu.png "menu de stratégie de détection des anomalies cloud discovery")  
   
 3. Attribuez un nom et une description à votre stratégie. Si vous le souhaitez, vous pouvez baser la stratégie sur un modèle. Pour plus d’informations sur les modèles de stratégie, consultez [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md).  
   
@@ -95,11 +95,11 @@ Cloud App Security examine tous les journaux de votre environnement Cloud Discov
   
 8. Cliquez sur **Create (Créer)** .  
   
-![nouvelle stratégie de détection d’anomalie](./media/new-discovery-anomaly-policy.png "nouvelle stratégie de détection d’anomalie")  
+![new discovery anomaly policy](./media/new-discovery-anomaly-policy.png "nouvelle stratégie de détection d’anomalie")  
   
 ## <a name="next-steps"></a>Étapes suivantes 
 [Stratégies d’activité utilisateur](user-activity-policies.md)   
 
-[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   
   

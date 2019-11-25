@@ -15,12 +15,12 @@ ms.assetid: 4acd93f4-b885-4e1f-a385-43b5db02a3ee
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 711c0cdf6a9678a63a19987f2c84101acf9de5ba
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: 0cd3952207ebc863000243f0eb78661fe9622fd5
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72334472"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74461426"
 ---
 # <a name="connect-dropbox-to-microsoft-cloud-app-security"></a>Connecter Dropbox à Microsoft Cloud App Security
 
@@ -37,7 +37,7 @@ Cet article fournit des instructions pour connecter Microsoft Cloud App Security
   
 2.  Dans la page **Connecteurs d’application**, cliquez sur le bouton plus (+), puis sur **Dropbox**.  
   
-     ![connecter dropbox](./media/connect-dropbox.png "connecter dropbox")  
+     ![connect dropbox](./media/connect-dropbox.png "connecter dropbox")  
   
 3.  Dans la fenêtre contextuelle, entrez l’adresse e-mail du compte d’administrateur.  
   
@@ -63,6 +63,6 @@ Après avoir connecté Dropbox, vous recevez les événements des 60 jours préc
 ## <a name="next-steps"></a>Étapes suivantes 
 [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)   
 
-[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   
   

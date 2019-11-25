@@ -15,12 +15,12 @@ ms.assetid: 9cb3594e-5007-48be-9b4f-e1d23355d86e
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5947a83b6a09f5c25b8f3e3cf82318717e9aaca6
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: 55bba38323d9f826504f5e288613feb2ca5f45da
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71085069"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460522"
 ---
 # <a name="working-with-app-risk-scores"></a>Utilisation des scores de risque d’application
 
@@ -57,15 +57,15 @@ Une fois que les résultats sont filtrés, vous pouvez passer en revue les appli
 
 Le catalogue d’applications cloud contient des filtres de base et avancés. Pour créer un filtre complexe, utilisez l’option avancée qui inclut tous les filtres suivants :
 
-- **Balises d’application** : Les balises vous permettent de personnaliser le catalogue d’applications cloud. 
+- **Balises d’application** : Les balises vous permettent de personnaliser le catalogue d’applications cloud. 
   Vous avez le choix entre **Approuvée**, **Non approuvée** ou créer vos propres étiquettes personnalisées pour les applications. Ces étiquettes peuvent ensuite servir de filtres. Les filtres permettent de rechercher plus précisément les types d’applications que vous voulez étudier.
-- **Applications et domaines** : Ils vous permettent de rechercher des applications spécifiques ou des applications utilisées dans des domaines spécifiques.
-- **Catégories** : Le filtre de catégories, qui se trouve à gauche de la page, vous permet de rechercher des types d’applications selon des catégories d’applications. Par exemple, les applications de réseaux sociaux, les applications de stockage cloud, etc. Vous pouvez sélectionner plusieurs catégories à la fois. Ensuite, appliquez les filtres de base ou avancés aux catégories.
-- **Facteur de risque de conformité** : Il vous permet de rechercher une norme, une certification ou une conformité auxquelles l’application doit se conformer. Par exemple, les normes HIPAA, ISO 27001, SOC 2 ou PCI-DSS.
-- **Facteur de risque général** : Il vous permet de rechercher des facteurs de risque généraux, comme la popularité auprès des consommateurs, les paramètres régionaux du centre de données, etc.
-- **Facteur de risque juridique** : Il vous permet de filtrer les réglementations et les stratégies qui sont en place. L’utilisation des facteurs de risque juridique permet de garantir la protection et la confidentialité des données des utilisateurs de l’application (par exemple, le RGPD, le DMCA ou la stratégie de conservation des données).
-- **Indice de risque** : Il vous permet de filtrer les applications selon l’indice de risque qui leur est associé. Par exemple, vous pouvez examiner uniquement les applications à risque.
-- **Facteur de risque de sécurité** : Il vous permet de filtrer les applications en fonction des mesures de sécurité qui leur sont appliquées. Il peut s’agir du chiffrement des données au repos, de l’authentification multifacteur, etc.
+- **Applications et domaines** : Permet de rechercher des applications spécifiques ou des applications utilisées dans des domaines spécifiques.
+- **Catégories** : le filtre de catégories, qui se trouve à gauche de la page, vous permet de rechercher des types d’applications selon des catégories d’applications. Par exemple, les applications de réseaux sociaux, les applications de stockage cloud, etc. Vous pouvez sélectionner plusieurs catégories à la fois. Ensuite, appliquez les filtres de base ou avancés aux catégories.
+- **Facteur de risque de conformité** : permet de rechercher une norme, une certification ou une conformité auxquelles l’application doit se conformer. Par exemple, les normes HIPAA, ISO 27001, SOC 2 ou PCI-DSS.
+- **Facteur de risque général** : permet de rechercher des facteurs de risque généraux, comme la popularité auprès des consommateurs, les paramètres régionaux du centre de données, etc.
+- **Facteur de risque juridique** : permet de filtrer les réglementations et les stratégies qui sont en place. L’utilisation des facteurs de risque juridique permet de garantir la protection et la confidentialité des données des utilisateurs de l’application (par exemple, le RGPD, le DMCA ou la stratégie de conservation des données).
+- **Indice de risque** : permet de filtrer les applications selon l’indice de risque qui leur est associé. Par exemple, vous pouvez examiner uniquement les applications à risque.
+- **Facteur de risque de sécurité** : permet de filtrer les applications en fonction des mesures de sécurité qui leur sont appliquées. Il peut s’agir du chiffrement des données au repos, de l’authentification multifacteur, etc.
 
 ## <a name="suggesting-a-change"></a>Proposition de changement
 
@@ -117,7 +117,7 @@ Prenez le temps de passer en revue et d’éventuellement modifier les pondérat
   
 3. De plus, vous pouvez déterminer si certaines valeurs sont soit non disponibles, soit non applicables dans le calcul du score. Quand elles sont incluses, les valeurs N/A contribuent négativement au score calculé.  
   
-   ![score](./media/score.png "métriques de score")  
+   ![score](./media/score.png "score metrics")  
 
 Toutes les informations nécessaires pour comprendre le fonctionnement des indices de risque Cloud App Security et leur empilement sont disponibles dans le portail Cloud App Security. Pour mieux comprendre la pondération d’un facteur de risque dans une catégorie donnée, utilisez le bouton « i » à droite d’un nom de champ, dans le profil de l’application. Il fournit des informations sur la façon dont Cloud App Security note précisément un facteur de risque. Ce score correspond à la valeur du facteur de risque sur une échelle de 1 à 10 et à son poids dans la catégorie de risque :
 
@@ -144,6 +144,6 @@ Vous pouvez également ajouter des notes pour clarifier la justification du chan
  
 [Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)   
 
-[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   
   

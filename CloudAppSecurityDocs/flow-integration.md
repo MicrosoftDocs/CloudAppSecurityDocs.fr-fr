@@ -14,20 +14,20 @@ ms.technology: ''
 ms.assetid: 344f92e2-6b3b-46db-bfd0-3b1016e0bc34
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 15a1f64077671b1ec703a967f04638098aa531dd
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: d9922f1b905e57cd43c9e4e8d25d2224e3f32c64
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71084619"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74459186"
 ---
-# <a name="integrate-with-flow-for-custom-alert-automation"></a>Intégrer avec Flow pour l’automatisation des alertes personnalisée
+# <a name="integrate-with-flow-for-custom-alert-automation"></a>Integrate with Flow for custom alert automation
 
 *S’applique à : Microsoft Cloud App Security*
 
 Vous pouvez intégrer Cloud App Security à [Microsoft Flow](https://docs.microsoft.com/flow/getting-started) pour assurer l’automatisation et fournir des playbooks d’orchestration à la suite d’alertes personnalisées. Grâce à l’[écosystème de connecteurs](https://docs.microsoft.com/connectors/) disponible dans Microsoft Flow, vous pouvez automatiser le déclenchement de playbooks quand Cloud App Security génère des alertes. Vous pouvez par exemple créer automatiquement un problème dans un système de gestion de tickets à l’aide du [connecteur ServiceNow](https://docs.microsoft.com/connectors/service-now/) ou envoyer un e-mail d’approbation pour exécuter une action de gouvernance personnalisée quand une alerte est déclenchée dans Cloud App Security.  
 
-## <a name="prerequisites"></a>Prérequis 
+## <a name="prerequisites"></a>Conditions préalables 
 
  - Vous devez avoir un [plan Microsoft Flow](https://flow.microsoft.com/pricing) valide.
 
@@ -68,4 +68,4 @@ Le [connecteur Cloud App Security](https://docs.microsoft.com/connectors/cloudap
 ## <a name="next-steps"></a>Étapes suivantes 
 [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)   
 
-[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  

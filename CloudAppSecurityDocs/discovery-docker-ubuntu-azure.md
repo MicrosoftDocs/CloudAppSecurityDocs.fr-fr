@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4ad5620aaa7ae1643de731d6d4d254be058991ee
-ms.sourcegitcommit: aa227a88d09eff15953d10663386f85ff68095b3
+ms.openlocfilehash: 1c058f817e4fffa4f40060ad0bc865bb6798e771
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74203500"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460813"
 ---
 # <a name="set-up-and-configuration-on-ubuntu-or-rhel-in-azure"></a>Installation et configuration sur Ubuntu ou RHEL dans Azure
 
@@ -186,4 +186,4 @@ Vérifiez que les journaux sont chargés sur Cloud App Security et que les rappo
 > [!div class="nextstepaction"]
 > [Log collector FTP configuration](log-collector-ftp.md)
 
-[Les clients Premier peuvent également choisir Cloud App Security directement dans le portail Premier.](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

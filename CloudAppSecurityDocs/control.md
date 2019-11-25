@@ -15,12 +15,12 @@ ms.assetid: bc11bbfe-ec6c-458c-8302-8112c383199d
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 8830e76a266d9ab5fb0e552cccd6e73cbf2bc700
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: d6c535c0ae8abb280265d5ae2f9b5c92fe462905
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335644"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460907"
 ---
 # <a name="control"></a>Control
 
@@ -39,11 +39,11 @@ Quand vous examinez vos alertes ouvertes, accédez au Centre de stratégie pour 
 
      Si votre stratégie est définie pour rechercher des violations de conformité et qu’une personne enregistre des numéros de carte de crédit dans des fichiers sur OneDrive, vous obtenez une correspondance dans la stratégie.  
 
-     ![Correspondances PCI](./media/pci-matches.png "correspondances pci")  
+     ![PCI matches](./media/pci-matches.png "correspondances pci")  
 
 -   Sélectionnez la correspondance pour afficher les fichiers qui ont enfreint la stratégie.  
 
-     ![Correspondances de contenu PCI](./media/pci-content-matches.png "correspondances de contenu pci")  
+     ![PCI content matches](./media/pci-content-matches.png "pci, correspondances de contenu")  
 
      Vous pouvez sélectionner le fichier lui-même pour obtenir des informations sur les fichiers.  
 
@@ -51,14 +51,14 @@ Quand vous examinez vos alertes ouvertes, accédez au Centre de stratégie pour 
 
      Vous pouvez cliquer sur **Correspondances** pour voir les numéros de carte de crédit.  
 
-     ![Correspondances de contenu - numéros de carte de crédit](./media/content-matches-ccn.png "Correspondances de contenu - numéros de carte de crédit")  
+     ![Content matches credit card numbers](./media/content-matches-ccn.png "content matches credit card numbers")  
 
 ## <a name="apply-governance-actions"></a>Appliquer des actions de gouvernance  
 Vous pouvez appliquer des actions de gouvernance depuis des stratégies, depuis des alertes et depuis le journal **Fichier**.  
 
-À tout moment, vous pouvez passer en revue et voir l’état de toutes les actions de gouvernance appliquées en accédant à l’icône **Paramètres** (symbolisée par un engrenage) et en choisissant **Journal de gouvernance**. ![icône des paramètres](./media/settings-icon.png "icône des paramètres")
+À tout moment, vous pouvez passer en revue et voir l’état de toutes les actions de gouvernance appliquées en accédant à l’icône **Paramètres** (symbolisée par un engrenage) et en choisissant **Journal de gouvernance**. ![settings icon](./media/settings-icon.png "settings icon")
 
-En cas d’échec d’une action de gouvernance, choisissez l’icône **Nouvelle tentative** pour l’appliquer à nouveau. ![Icône de nouvelle tentative](./media/retry-icon.png "Icône de nouvelle tentative")   
+En cas d’échec d’une action de gouvernance, choisissez l’icône **Nouvelle tentative** pour l’appliquer à nouveau. ![Retry icon](./media/retry-icon.png "retry icon")   
 
 Selon le type de stratégie, violation et application, différentes actions de gouvernance sont disponibles.  
 
@@ -72,7 +72,7 @@ Après avoir défini et personnalisé vos filtres de stratégie, vous pouvez sé
 >   
 >  Pour obtenir des instructions, vous pouvez utiliser le bouton **Modifier et afficher un aperçu des résultats** dans la section **Filtres**.  
 
-![Modification et aperçu des résultats des stratégies de fichiers](./media/file-policy-edit-and-preview-results.png "modification et aperçu des résultats des stratégies de fichiers")  
+![File policy edit and preview results](./media/file-policy-edit-and-preview-results.png "stratégie de fichier, modifier et afficher un aperçu des résultats")  
 
 ## <a name="migration"></a>Migration  
 Cloud App Security vous permet d’introduire vos migrations en vous faisant savoir qui dans votre organisation utilise quelles applications et en vous donnant les outils nécessaires pour surveiller l’adoption de nouvelles applications. Ce composant peut également vous aider à déterminer quels types d’applications vous pouvez proposer dans votre organisation, en vous fournissant les outils nécessaires pour voir ce que tout le monde utilise déjà.  
@@ -86,7 +86,7 @@ Imaginons le scénario suivant : vous venez d’acheter Office 365 et vous vou
 
    1. Dans votre **tableau de bord Cloud Discovery**, choisissez **Dropbox**, puis choisissez l’onglet **Adresse IP** ou **Utilisateurs**.  
 
-   2. Choisissez l’icône de flèche **Exporter**, puis choisissez vos options d’exportation. ![Icône de flèche](./media/arrow-icon.png "Icône de flèche")
+   2. Choisissez l’icône de flèche **Exporter**, puis choisissez vos options d’exportation. ![Arrow icon](./media/arrow-icon.png "arrow icon")
 
 ### <a name="find-more-secure-alternatives"></a>Trouver des alternatives plus sécurisées  
 Le catalogue de services Cloud App Security peut vous aider à trouver des alternatives satisfaisantes pour votre organisation et ainsi éviter les applications risquées auxquelles vos utilisateurs peuvent avoir recours.  
@@ -104,4 +104,4 @@ Imaginons le scénario suivant : vous envisagez d’acheter une application de 
 ## <a name="next-steps"></a>Étapes suivantes
 Pour savoir comment utiliser et configurer des stratégies permettant de contrôler l’utilisation des applications cloud, consultez [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md).   
 
-[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  

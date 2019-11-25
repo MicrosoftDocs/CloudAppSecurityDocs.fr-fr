@@ -15,16 +15,16 @@ ms.assetid: 4f5e6b1e-6b2c-4358-98f0-945e2993d5fe
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9a6695d1b55237d79ae64c395d269d624891f796
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: bcb98ccaad997a0d98df6d7ecb6eee876c64622e
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71083728"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74461290"
 ---
 # <a name="api-tokens"></a>Jetons d’API
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 L’API Microsoft Cloud App Security fournit l’accès par programmation à Cloud App Security par le biais de points de terminaison API REST. Les applications peuvent utiliser l’API pour effectuer des opérations de lecture et de mise à jour sur les objets et les données Cloud App Security. Par exemple, l’API Cloud App Security prend en charge les opérations courantes suivantes pour un objet utilisateur :
 
@@ -60,7 +60,7 @@ L’onglet Jetons d’API vous aide à gérer tous les jetons d’API de votre l
     L’URL du portail générique continue de fonctionner, mais est beaucoup plus lente que l’URL personnalisée fournie avec votre jeton. Si vous oubliez l’URL, vous pouvez la voir en accédant à l’icône **?** du menu et en sélectionnant **À propos de**.
 
 > [!NOTE]
-> Si vous utilisez Azure Active Directory Privileged Identity Management activation du rôle, votre jeton d’API ne sera effectif qu’une fois le rôle activé. Pour plus d’informations, consultez [activer mes Azure ad des rôles dans PIM](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-how-to-activate-role).
+> If you are using Azure Active Directory Privileged Identity Management role activation, your API token will only be effective once the role is activated. For more information, see [Activate my Azure AD roles in PIM](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-how-to-activate-role).
 
 ## <a name="api-token-management"></a>Gestion des jetons d’API
 
@@ -82,7 +82,7 @@ Une fois qu’un jeton est révoqué, il est supprimé du tableau, et le logicie
 ## <a name="next-steps"></a>Étapes suivantes
 [Résolution des problèmes d’intégration de SIEM](troubleshooting-siem.md)   
 
-[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
 
 ## <a name="check-out-this-video"></a>Regardez cette vidéo !
 [Microsoft Cloud App Security – API REST et jetons](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security--REST-APIs-and-Tokens)  

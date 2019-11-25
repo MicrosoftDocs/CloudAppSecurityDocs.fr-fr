@@ -10,16 +10,16 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 490a2f56090973991fcb7e236310bd83b3012806
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: 1f860400ec95d0aa2584eb1fd4a8682bb5a9ac58
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71084869"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74459582"
 ---
 # <a name="activity-policies"></a>Stratégies d’activité
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Avec les stratégies d’activité, vous pouvez appliquer une large gamme de processus automatisés en utilisant les API du fournisseur d’application. Ces stratégies vous permettent de surveiller des activités spécifiques effectuées par différents utilisateurs ou de suivre les taux anormalement élevés d’un certain type d’activité.
 
@@ -47,9 +47,9 @@ Pour créer une stratégie d’activité, procédez comme suit :
 
 4. Pour définir les actions ou autres mesures susceptibles de déclencher cette stratégie, utilisez les **Filtres d’activité**.
     > [!NOTE]
-    > Pour vous assurer que vous incluez uniquement les résultats où le champ de filtre spécifié a une valeur, nous vous recommandons d’ajouter à nouveau le même champ à l’aide de l' **ensemble** de tests. Par exemple, lorsque le filtrage par **emplacement** *n’est pas égal* à une liste de pays spécifiée, ajoutez également un filtre pour l' **emplacement** *est défini*. Vous pouvez également afficher un aperçu des résultats du filtre en sélectionnant **modifier et afficher un aperçu des résultats**.
+    > To ensure you only include results where the specified filter field has a value, we recommend adding the same field again using the **is set** test. For example, when filtering by **Location** *does not equal* a specified list of countries, also add a filter for **Location** *is set*. You can also preview the filter results by selecting **Edit and preview results**.
     >
-    > ![Capture d’écran des paramètres de filtre, indication du champ d’emplacement défini](media/activity-example-location-isset.png)
+    > ![Screenshot of filter settings, showing location field is set](media/activity-example-location-isset.png)
 
 5. Sous **Paramètres de correspondance de l’activité**, sélectionnez le moment auquel la violation de stratégie est déclenchée. Vous pouvez choisir de déclencher l’action lorsqu’une seule activité correspond aux filtres, ou lorsqu’un certain nombre d’**activités répétées** sont détectées.
     - Si vous choisissez **Activité répétée**, vous pouvez également définir **Dans une seule application**. Ce paramètre déclenchera une correspondance de stratégie uniquement lorsque les activités répétées se produisent dans la même application. Par exemple, 5 téléchargements depuis Box en 30 minutes déclenchent une correspondance de stratégie.
@@ -64,13 +64,13 @@ Jetez un œil aux exemples suivants :
 
      Sous le champ **Filtres d’activité**, configurez les paramètres pour lesquels l’alerte doit être déclenchée.
 
-     ![Exemple de stratégie en cas d’échec de plusieurs tentatives de connexion](./media/multiple-failed-log-on-attempts-policy-example.png "exemple de stratégie en cas d’échec de plusieurs tentatives d’ouverture de session")
+     ![Policy example for multiple failed sign-in attempts](./media/multiple-failed-log-on-attempts-policy-example.png "exemple de stratégie, échec de plusieurs tentatives de connexion")
 
 - Taux de téléchargement élevé
 
      Vous pouvez définir votre stratégie afin de recevoir une alerte en cas de niveau d’activité de téléchargement anormal ou inhabituel. Pour configurer ce type de stratégie, sous les paramètres **Taux**, choisissez les paramètres devant déclencher l’alerte.
 
-     ![exemple de taux de téléchargement élevé](./media/high-download-rate-example.png "exemple de taux de téléchargement élevé")
+     ![high download rate example](./media/high-download-rate-example.png "exemple de taux de téléchargement élevé")
 
 ## <a name="activity-policy-reference"></a>Informations de référence sur les stratégies d’activité
 
@@ -91,4 +91,4 @@ Chaque stratégie comprend les éléments suivants :
 
 [Stratégies de protection des données](data-protection-policies.md)
 
-[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

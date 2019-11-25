@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: bb91534942fd95f04ebf1f87ac5582a14aed6a55
-ms.sourcegitcommit: 474c052a3f705973ebe83da3a03be3008fdf85ff
+ms.openlocfilehash: 5e5d6c141777c2e6351d8a98448a29f6d36dca5d
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74203837"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74459452"
 ---
 # <a name="importing-user-groups-from-connected-apps"></a>Importation de groupes d’utilisateurs à partir d’applications connectées
 
@@ -48,7 +48,7 @@ Vous pouvez importer n’importe quel groupe à partir de vos applications conne
 
 ## <a name="how-to-import-user-groups"></a>Importer des groupes d’utilisateurs
 
-1. Dans la barre de menus, cliquez sur l' ![icône](./media/settings-icon.png "icône des paramètres") des paramètres icône des paramètres et sélectionnez **groupes d’utilisateurs**.
+1. In the menu bar, click the settings icon ![settings icon](./media/settings-icon.png "icône des paramètres") and select **User groups**.
 1. Cliquez sur **Importer le groupe d’utilisateurs**.
 
     ![Importer des groupes d’utilisateurs](./media/user-groups-add.png)
@@ -63,7 +63,7 @@ L’importation de groupes vous permet de sélectionner ces groupes comme filtre
 
 > [!NOTE]
 >
-> - Il peut y avoir un bref délai jusqu’à ce que les groupes d’utilisateurs importés soient disponibles dans les filtres.
+> - There may be a short delay until imported user groups are available in filters.
 > - Seules les activités effectuées après l’importation d’un groupe d’utilisateurs sont marquées comme ayant été effectuées par un membre du groupe d’utilisateurs.
 > - Après la synchronisation initiale, les groupes sont mis à jour toutes les heures.
 
@@ -74,4 +74,4 @@ Pour plus d’informations sur l’utilisation des filtres Groupe d’utilisateu
 > [!div class="nextstepaction"]
 > [Configurer Cloud Discovery](set-up-cloud-discovery.md)
 
-[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

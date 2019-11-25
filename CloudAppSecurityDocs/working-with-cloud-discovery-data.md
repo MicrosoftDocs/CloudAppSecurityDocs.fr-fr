@@ -15,12 +15,12 @@ ms.assetid: cf94b290-b7ef-4fee-854e-c8ff8d11dea9
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 34127140ac088352b35ffedd03c53f9b046e07a7
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: 5e289a3eea5bbc3306bfe6fa07c5a9084145e6d1
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335947"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74459254"
 ---
 # <a name="working-with-discovery-data"></a>Utilisation des données de découverte
 
@@ -56,7 +56,7 @@ Pour créer une exclusion :
 3. Choisissez l’onglet **Utilisateurs exclus**, **Adresses IP exclues** ou **Machines exclues**, puis cliquez sur le bouton + pour ajouter votre exclusion.
 4. Ajoutez un alias utilisateur, une adresse IP ou un nom de machine. Nous vous recommandons d’ajouter des informations sur les raisons de l’exclusion.
   
-     ![exclure l’utilisateur](./media/exclude-user.png "exclure l’utilisateur")  
+     ![exclude user](./media/exclude-user.png "exclure l’utilisateur")  
 
 ## <a name="manage-continuous-reports"></a>Gérer les rapports continus
 
@@ -105,7 +105,7 @@ Pour supprimer des données Cloud Discovery :
   
 3. Cliquez sur le bouton **Supprimer**.  
   
-    ![supprimer des données](./media/delete-data.png "supprimer des données")  
+    ![delete data](./media/delete-data.png "supprimer des données")  
   
    > [!NOTE]  
    >  Le processus de suppression peut prendre quelques minutes et il n’est pas immédiat.
@@ -116,6 +116,6 @@ Pour supprimer des données Cloud Discovery :
 
 [Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)   
 
-[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   
   

@@ -15,12 +15,12 @@ ms.assetid: 0dcc3c35-f787-4822-84c6-d4dff897dd6c
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: debfe7e7cd464420e26d4619f2303c69d6a14363
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: a9dfc6e859b28450d32fcb7ce925ad5209dd0c5f
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335460"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74458343"
 ---
 # <a name="generate-data-management-reports"></a>Générer des rapports de gestion de données
 
@@ -56,6 +56,6 @@ Ce rapport répertorie les utilisateurs qui partagent des fichiers d’entrepris
 ## <a name="next-steps"></a>Étapes suivantes 
 [Contrôler](control.md)   
 
-[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   
   

@@ -15,12 +15,12 @@ ms.assetid: a835fa24-15c5-4bbb-a25a-688444040f1f
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b5c87765b8a87beec784fb580b90d21d2c5e4596
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: f184081a9911cb04a281419ae5c8f2048c7a690d
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335710"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74461394"
 ---
 # <a name="working-with-the-dashboard"></a>Utilisation du tableau de bord
 
@@ -48,10 +48,10 @@ Le tableau de bord Cloud App Security donne une vue d’ensemble des activités 
 
 Nous vous recommandons de vérifier le tableau de bord tous les jours pour voir les nouvelles alertes déclenchées. C’est un bon endroit pour surveiller l’intégrité de votre environnement cloud. Le tableau de bord vous permet de vous faire une idée de ce qui se passe.  
 
-![Tableau de bord Cloud App Security](./media/dashboard.png "tableau de bord")  
+![Cloud App Security dashboard](./media/dashboard.png "tableau de bord")  
 
 
 ## <a name="next-steps"></a>Étapes suivantes  
 Pour plus d’informations sur l’examen des alertes, consultez [Investiguer](investigate.md).  
 
-[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  

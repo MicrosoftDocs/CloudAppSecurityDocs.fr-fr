@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 7391832b1be0ed9b50d54f22ee324879fd588d38
-ms.sourcegitcommit: 207543b3f7d0489b1275d20c3543964bc6525d1a
+ms.openlocfilehash: 1689bccc5c2dd55ca719159697986f7c317be1af
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71995989"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74461372"
 ---
 # <a name="file-policies"></a>Stratégies de fichier
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Les stratégies de fichier vous permettent d’appliquer une large gamme de processus automatisés en utilisant les API du fournisseur de cloud. Vous pouvez définir des stratégies pour fournir des analyses de conformité en continu, des tâches eDiscovery réglementaires, une protection contre la perte de données (DLP, Data Loss Prevention) au contenu sensible partagé publiquement et de nombreux autres cas d’usage. Cloud App Security peut surveiller n’importe quel type de fichier en fonction de plus de 20 filtres de métadonnées (par exemple, niveau d’accès, type de fichier).
 
@@ -41,7 +41,7 @@ Le moteur combine trois aspects sous chaque stratégie :
 
 * Actions automatisées pour la gouvernance et la correction. Pour plus d’informations, consultez [Contrôle](control.md).
     > [!NOTE]
-    > Une seule action de gouvernance peut être appliquée par fichier ; par conséquent, lorsqu’il existe plusieurs correspondances de stratégie de fichier pour un fichier, l’action de gouvernance de la première stratégie déclenchée est appliquée. Par exemple, si une stratégie de fichier a déjà appliqué une étiquette AIP à un fichier, une deuxième stratégie de fichier ne peut pas déplacer le fichier vers la quarantaine administrateur.
+    > Only one governance action can be applied per file; hence, where there are multiple file policy matches for a file, the governance action of the first triggered policy will be applied. For example, if a file policy has already applied an AIP label to a file, a second file policy cannot move the file to admin quarantine.
 
 Une fois activée, la stratégie analyse en permanence votre environnement cloud et identifie les fichiers qui correspondent aux filtres de contenu et de contexte, puis applique les actions automatisées demandées. Ces stratégies détectent et corrigent toutes les violations concernant les informations au repos ou le contenu nouvellement créé. Les stratégies peuvent être surveillées avec des alertes en temps réel ou des rapports générés sur une console.
 
@@ -92,7 +92,7 @@ Pour créer une stratégie de fichier, procédez comme suit :
 
 1. Choisissez les actions de **gouvernance** que Cloud App Security doit exécuter quand une correspondance est détectée.
 
-1. Une fois que vous avez créé votre stratégie, vous pouvez l’afficher sous l’onglet **Stratégie de fichier**. Vous pouvez toujours modifier une stratégie, ajuster ses filtres ou modifier les actions automatisées. La stratégie est automatiquement activée lors de la création et démarre immédiatement l’analyse de vos fichiers cloud.  Soyez vigilant quand vous définissez des actions de gouvernance. Elles peuvent entraîner une perte irréversible des autorisations d’accès à vos fichiers. Il est recommandé d’affiner les filtres pour représenter exactement les fichiers sur lesquels vous voulez agir, en utilisant plusieurs champs de recherche. Plus les filtres sont précis, mieux c’est. Pour obtenir des instructions, vous pouvez utiliser le bouton **Modifier et afficher un aperçu des résultats** dans la section Filtres.
+1. Once you’ve created your policy, you can view it in the **File policy** tab. You can always edit a policy, calibrate its filters, or change the automated actions. La stratégie est automatiquement activée lors de la création et démarre immédiatement l’analyse de vos fichiers cloud.  Soyez vigilant quand vous définissez des actions de gouvernance. Elles peuvent entraîner une perte irréversible des autorisations d’accès à vos fichiers. Il est recommandé d’affiner les filtres pour représenter exactement les fichiers sur lesquels vous voulez agir, en utilisant plusieurs champs de recherche. Plus les filtres sont précis, mieux c’est. Pour obtenir des instructions, vous pouvez utiliser le bouton **Modifier et afficher un aperçu des résultats** dans la section Filtres.
 
     ![stratégie de fichier, modifier et afficher un aperçu des résultats](./media/file-policy-edit-and-preview-results.png)
 
@@ -114,11 +114,11 @@ Chaque stratégie comprend les éléments suivants :
 
 * **Extensions** - L’inspection du contenu peut être effectuée via des moteurs tiers pour améliorer les fonctionnalités DLP ou antiprogramme malveillant.
 
-## <a name="file-queries"></a>Requêtes de fichier
+## <a name="file-queries"></a>File queries
 
 Pour faciliter encore plus les recherches, vous pouvez désormais créer des requêtes personnalisées et les enregistrer pour les utiliser ultérieurement.
 
-1. Dans la page **fichier** , utilisez les filtres comme décrit ci-dessus pour accéder à vos applications en fonction des besoins.
+1. In the **File** page, use the filters as described above to drill down into your apps as necessary.
 
 1. Une fois que vous avez terminé de générer votre requête, cliquez sur le bouton **Enregistrer sous** en haut à droite des filtres.
 
@@ -130,4 +130,4 @@ Pour faciliter encore plus les recherches, vous pouvez désormais créer des req
 
 [Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)
 
-[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

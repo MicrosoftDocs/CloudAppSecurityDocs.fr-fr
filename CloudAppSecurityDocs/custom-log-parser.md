@@ -15,12 +15,12 @@ ms.assetid: a612d87e-5471-4add-b4b1-dbbb530f2b61
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 3f1e38f31a125dcad562f321aa8eac87a0a0fd31
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: 2887a52e6e1db18a59f8d24dc8bcf95875b432db
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335689"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74461049"
 ---
 # <a name="use-a-custom-log-parser"></a>Utiliser un analyseur de journal personnalisé
 
@@ -93,4 +93,4 @@ Pour configurer un analyseur personnalisé :
 
 [Utilisation des données Cloud Discovery](working-with-cloud-discovery-data.md)
 
-[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  

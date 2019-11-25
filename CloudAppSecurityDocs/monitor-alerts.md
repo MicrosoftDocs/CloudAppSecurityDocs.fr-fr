@@ -15,12 +15,12 @@ ms.assetid: f118a3bf-1663-46ba-884f-b1b03a84ab66
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9e697d86bd7279e445a8fa40bf9fd5000081e469
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: 2980fa8d9d784ce0e3169ed42359522885fcf320
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335907"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460656"
 ---
 # <a name="monitor-alerts-in-cloud-app-security"></a>Surveiller les alertes dans Cloud App Security
 
@@ -32,7 +32,7 @@ Les alertes constituent un bon point de départ pour comprendre votre environnem
 
 Nous vous incitons à examiner vos alertes. En comprenant le déclenchement des alertes, vous pouvez les utiliser en tant qu’outils pour modifier vos stratégies. 
 
-**Pour afficher les alertes :** Dans le portail Microsoft Cloud App Security, cliquez sur **alertes**.
+**To view alerts:** In the Microsoft Cloud App Security portal, click on **Alerts**.
 
 
 ![menu Alerte](./media/alert-menu.png)
@@ -66,7 +66,7 @@ Les types d’alertes suivants sont affichés.
 
 |Nom d'alerte|ID d’alerte|Description|
 |----|----|----|
-|Alerte d’activité suspecte|ALERT_SUSPICIOUS_ACTIVITY|Les activités suspectes sont évaluées en fonction du degré de suspicion de l’activité anormale (Un compte inactif est-il impliqué ? S’agit-il d’un nouvel emplacement ?) Ces critères sont tous calculés ensemble pour fournir un score de risque en fonction des facteurs de risque suivants : <br>L’utilisateur est administrateur <br>Utilisateur strictement à distance<br>Proxy anonyme<br> Toute la session ne compte que des échecs de connexion<br>Nombreux échecs de connexion<br>Nouveau (administrateur)<br>IP/ISP/pays/agent utilisateur pour utilisateur/client<br> IP/ISP/pays/agent utilisateur utilisé uniquement par utilisateur (administrateur)<br>Première activité utilisateur (administrateur) depuis un certain temps<br>Première fois que cette activité administrative particulière est exécutée depuis un certain temps<br>Cette activité administrative particulière n’est pas courante/n’a jamais été exécutée auparavant<br>Cette adresse IP ne présentait que des échecs de connexion dans le passé<br>Voyage impossible|
+|Alerte d’activité suspecte|ALERT_SUSPICIOUS_ACTIVITY|Les activités suspectes sont évaluées en fonction du degré de suspicion de l’activité anormale (Un compte inactif est-il impliqué ? Is it from a new location?) These criteria are all calculated together to provide a risk score based on the following risk factors: <br>L’utilisateur est administrateur <br>Utilisateur strictement à distance<br>Proxy anonyme<br> Toute la session ne compte que des échecs de connexion<br>Nombreux échecs de connexion<br>Nouveau (administrateur)<br>IP/ISP/pays/agent utilisateur pour utilisateur/client<br> IP/ISP/pays/agent utilisateur utilisé uniquement par utilisateur (administrateur)<br>Première activité utilisateur (administrateur) depuis un certain temps<br>Première fois que cette activité administrative particulière est exécutée depuis un certain temps<br>Cette activité administrative particulière n’est pas courante/n’a jamais été exécutée auparavant<br>Cette adresse IP ne présentait que des échecs de connexion dans le passé<br>Voyage impossible|
 |Alerte d’utilisation suspecte du cloud|ALERT_DISCOVERY_ANOMALY_DETECTION|La détection des anomalies Cloud Discovery vérifie le modèle du comportement normal et recherche des utilisateurs ou des applications qui sont utilisés de façon inhabituelle. |
 |Violation de stratégie d’activité|ALERT_CABINET_EVENT_MATCH_AUDIT|Cette alerte vous informe quand une correspondance de stratégie a été détectée.|
 |Violation de stratégie de fichier|ALERT_CABINET_EVENT_MATCH_FILE|Cette alerte vous informe quand une correspondance de stratégie a été détectée.|
@@ -79,4 +79,4 @@ Les types d’alertes suivants sont affichés.
 
 [Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)
 
-[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  

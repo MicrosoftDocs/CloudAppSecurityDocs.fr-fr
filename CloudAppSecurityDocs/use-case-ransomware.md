@@ -15,12 +15,12 @@ ms.assetid: 7a06a243-9ec2-4a11-8db2-bc065cdfef64
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ce6abab8e9790119b02dc80e5dcf63625e1dcf4b
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: 432455571af72e2ac76ce034775443aae817a386
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72336092"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74459489"
 ---
 # <a name="protecting-your-organization-from-ransomware"></a>Protection de votre organisation contre les ransomwares
 
@@ -55,6 +55,6 @@ Détectez les ransomwares potentiels dans votre environnement cloud en créant u
 
 [Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)   
 
-[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   
   

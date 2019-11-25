@@ -15,12 +15,12 @@ ms.assetid: a9660e5b-d5bd-4a32-8cb9-0de70af6f1e9
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: dd064eb77955213a8fbcb2c655a86678ca4f0db8
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: d72344a45a744ceb21d8387d5991e9d895fd274d
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335510"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460901"
 ---
 # <a name="how-to-find-built-in-deprecating-reports"></a>Guide pratique pour rechercher des rapports intégrés dépréciés
 
@@ -50,6 +50,6 @@ Ce tableau vous permet de voir les informations que fournissaient les rapports d
 ## <a name="next-steps"></a>Étapes suivantes 
 [Contrôler](control.md)   
 
-[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   
   

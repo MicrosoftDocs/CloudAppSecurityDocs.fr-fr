@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a0fd462818e843556820a1a54a6c1d3a0b9c90ea
-ms.sourcegitcommit: be21e0f68f5e4d23bde661485bd9338e74bd6e45
+ms.openlocfilehash: 7b333509cd00b2a17b3a3984da30e4e8142daf88
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71307698"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460749"
 ---
 # <a name="control-cloud-apps-with-policies"></a>Contrôler les applications cloud avec des stratégies
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Grâce aux stratégies, vous pouvez définir la façon dont vous souhaitez que vos utilisateurs se comportent dans le cloud. Elles vous permettent de détecter des comportements à risques, des violations, ou des points de données et des activités suspectes dans votre environnement cloud. Si nécessaire, vous pouvez intégrer des flux de travail de correction pour atténuer les risques. Il existe plusieurs types de stratégies suivant les différents types d’informations que vous voulez collecter sur votre environnement cloud et les types de mesures correctives que vous pouvez souhaiter prendre.
 
@@ -35,7 +35,7 @@ Lorsque vous examinez la page **Stratégie**, les différentes stratégies et le
 
 Vous pouvez créer les types de stratégies suivants :
 
-|Icône de type de stratégie|Type de stratégie|Utiliser|
+|Icône de type de stratégie|Type de stratégie|Utilisez les stratégies de gestion des applications mobiles|
 |-----|-----------------|---------|
 |![icône de stratégie d’accès](./media/proxy-policy.png)|Stratégie d’accès|Les stratégies d’accès vous offrent une surveillance et un contrôle en temps réel des connexions utilisateur à vos applications cloud.|
 |![Icône de stratégie d’activité](./media/activity_policy.png)|Stratégie d’activité|Avec les stratégies d’activité, vous pouvez appliquer une large gamme de processus automatisés en utilisant les API du fournisseur d’application. Ces stratégies vous permettent de surveiller des activités spécifiques effectuées par différents utilisateurs ou de suivre les taux anormalement élevés d’un certain type d’activité.|
@@ -49,19 +49,19 @@ Vous pouvez créer les types de stratégies suivants :
 
 Cloud App Security vous permet d’atténuer différents risques dans le cloud. Vous pouvez configurer n’importe quelles stratégie et alerte à associer à un des risques suivants :
 
-- **Contrôle d’accès :** Qui accède à quoi et à partir d’où ?
+- **Contrôle d’accès :** Qui accède à quoi à partir d’où ?
 
     Surveillez le comportement et détectez les activités anormales en continu, notamment les attaques externes et internes à haut risque, et appliquez une stratégie d’alerte, de blocage ou de vérification d’identité pour toute application ou action spécifique dans une application. Cette approche permet de mettre en place des stratégies de contrôle d’accès locales et mobiles basées sur l’utilisateur, l’appareil et la zone géographique, avec un blocage grossier et des procédures d’affichage, de modification et de blocage précises. Détectez les événements de connexion suspects, notamment les échecs d’authentification multifacteur, les échecs de connexion de compte désactivé et les événements d’emprunt d’identité.
 
-- **Conformité :** Vos exigences de conformité sont-elles enfreintes ?
+- **Conformité :** Vos contraintes de conformité sont-elles enfreintes ?
 
     Classez et identifiez les données sensibles ou réglementées, notamment les autorisations de partage pour chaque fichier, stockées dans des services de synchronisation de fichier pour assurer la conformité aux réglementations telles que PCI, SOX et HIPAA
 
-- **Contrôle de configuration :** Votre configuration fait-elle l’objet de modifications non autorisées ?
+- **Contrôle de configuration :**  Votre configuration fait-elle l’objet de modifications non autorisées ?
 
     Surveillez les modifications de configuration, notamment la manipulation de la configuration à distance.
 
-- **Cloud Discovery :** Des applications nouvelles sont-elles utilisées dans votre organisation ? Des applications Shadow IT que vous ignorez sont-elles utilisées ?
+- **Cloud Discovery :**  Des applications nouvelles sont-elles utilisées dans votre organisation ? Des applications Shadow IT que vous ignorez sont-elles utilisées ?
 
     Évaluez le risque global pour chaque application cloud en fonction de la réglementation, et des bonnes pratiques et des certifications du secteur. Vous permet de surveiller le nombre d’utilisateurs, les activités, le volume de trafic et les heures d’utilisation habituelles pour chaque application cloud.
 
@@ -77,7 +77,7 @@ Cloud App Security vous permet d’atténuer différents risques dans le cloud. 
 
     Inspectez le contenu des fichiers et du cloud et appliquez des stratégies de partage interne et externe. Surveillez la collaboration et appliquez des stratégies de partage, telles que l’interdiction de partager des fichiers à l’extérieur de votre organisation.
 
-- **Détection des menaces :** Des activités suspectes menacent-elles votre environnement cloud ?
+- **Détection de menaces :** Des activités suspectes menacent-elles votre environnement cloud ?
 
     Recevez des notifications en temps réel pour toute violation de stratégie ou franchissement de seuil d’activité par SMS ou e-mail. En appliquant des algorithmes de Machine Learning, Cloud App Security vous permet de détecter un comportement qui peut indiquer qu’un utilisateur exploite des données de façon inappropriée.
 
@@ -173,23 +173,23 @@ Une fois que vous avez créé une stratégie, vous pouvez l’activer ou la dés
 
 Quand vous créez une stratégie, celle-ci est activée par défaut.
 
-## <a name="policies-overview-report"></a>Rapport vue d’ensemble des stratégies
+## <a name="policies-overview-report"></a>Policies overview report
 
-Cloud App Security vous permet d’exporter un rapport vue d’ensemble des stratégies présentant des métriques d’alerte agrégées par stratégie pour vous aider à surveiller, à comprendre et à personnaliser vos stratégies afin de mieux protéger votre organisation.
+Cloud App Security lets you export a policies overview report showing aggregated alert metrics per policy to help you monitor, understand, and customize your policies to better protect your organization.
 
-Pour exporter un journal, procédez comme suit :
+To export a log, perform the following steps:
 
-1. Dans la page **stratégies** , cliquez sur le bouton **Exporter** .
+1. In the **Policies** page, click the **Export** button.
 
-1. Spécifiez l’intervalle de temps requis.
+1. Specify the required time range.
 
-1. Cliquez sur **Exporter**. Ce processus peut prendre un certain temps.
+1. Click **Export**. Ce processus peut prendre un certain temps.
 
-Pour télécharger le rapport exporté :
+To download the exported report:
 
 1. Une fois que le rapport est prêt, accédez à **Paramètres**, puis à **Rapports exportés**.
 
-1. Dans le tableau, sélectionnez le rapport approprié dans le **rapport vue d’ensemble** de la liste des stratégies, puis cliquez sur Télécharger.
+1. In the table, select the relevant report from the list of **Policies overview report** and click download.
 
     ![Bouton Télécharger](./media/download-button.png)
 
@@ -197,4 +197,4 @@ Pour télécharger le rapport exporté :
 
 [Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)
 
-[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

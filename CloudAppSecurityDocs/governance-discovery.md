@@ -14,18 +14,18 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 49fb3555da13a013655850b089f590821e3e7cb3
-ms.sourcegitcommit: 2a52a0f00d2c8317964d4e15aca8925ccd107a38
+ms.openlocfilehash: 8464851432d8fce81baa624738c6f73da1d68413
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650918"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74461359"
 ---
 # <a name="govern-discovered-apps"></a>Gouverner les applications découvertes
 
 *S’applique à : Microsoft Cloud App Security*
 
-Une fois que vous avez consulté la liste des applications découvertes dans votre environnement, vous pouvez sécuriser votre environnement en approuvant les applications sécurisées (approuvées) ou en interdisant les applications indésirables **(non**approuvées **) des**manières suivantes.
+After you've reviewed the list of discovered apps in your environment, you can secure your environment by approving safe apps (**Sanctioned**) or prohibiting unwanted apps (**Unsanctioned**) in the following ways.
 
 ## <a name="BKMK_SanctionApp"></a> Approbation/non-approbation d’une application
 
@@ -38,7 +38,7 @@ Si vous voulez approuver/ne pas approuver une liste d’applications, cochez les
 Pour interroger une liste d’applications non approuvées, vous pouvez [générer un script de bloc en utilisant les API Cloud App Security](https://us.portal.cloudappsecurity.com/api-docs/#generate-block-script).
 
 > [!NOTE]
-> Si votre locataire utilise Zscaler NSS ou iboss, toute application que vous marquez comme non approuvée est automatiquement bloquée par Cloud App Security, et les sections suivantes relatives à la création de scripts de blocage ne sont pas nécessaires. Pour plus d’informations, consultez [intégration de avec Zscaler](zscaler-integration.md) et [intégration de Cloud App Security avec iboss](iboss-integration.md) , respectivement.
+> If your tenant uses Zscaler NSS or iboss, any app you mark as unsanctioned is automatically blocked by Cloud App Security, and the following sections regarding creating blocking scripts are unnecessary. For more information, see [Integrating with Zscaler](zscaler-integration.md) and [Integrate Cloud App Security with iboss](iboss-integration.md) respectively.
 
 ## <a name="export-a-block-script-to-govern-discovered-apps"></a>Exporter un script de blocage pour gouverner les applications découvertes
 
@@ -67,4 +67,4 @@ Cloud App Security vous permet de bloquer l’accès aux applications non approu
 > [!div class="nextstepaction"]
 > [Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)
 
-[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

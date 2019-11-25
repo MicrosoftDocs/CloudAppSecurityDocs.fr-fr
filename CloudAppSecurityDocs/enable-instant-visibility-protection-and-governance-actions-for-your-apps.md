@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1b153713784c737aeb5e863f99ed2196d471b2b8
-ms.sourcegitcommit: b48842b6622bd45af66afbffc70f92d31ec232a8
+ms.openlocfilehash: e22b7d7f1b59c49470426080bf822fa070a1af6d
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "73934471"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74458178"
 ---
 # <a name="connect-apps"></a>Connecter des applications
 
@@ -34,7 +34,7 @@ Microsoft Cloud App Security tire profit des API proposées par le fournisseur d
 Cloud App Security prend en charge plusieurs instances de la même application connectée. Par exemple, si vous avez plusieurs instances de Salesforce (une pour les ventes, une pour le marketing), vous pouvez vous connecter à Cloud App Security. Vous pouvez gérer les différentes instances à partir de la même console pour créer des stratégies granulaires et mener une investigation plus approfondie. Cette prise en charge s’applique uniquement aux applications connectées à des API, pas aux applications découvertes dans le cloud ni aux applications connectées à des proxys.
 
 > [!NOTE]
-> Multi-instance n’est pas pris en charge pour Office 365 et Azure.
+> Multi-instance is not supported for Office 365 and Azure.
 
 ## <a name="how-it-works"></a>Fonctionnement
 
@@ -68,21 +68,21 @@ Le tableau suivant répertorie, par application cloud, les fonctionnalités pris
 
 > [!div class="mx-tableFixed"]
 >
-> | | AWS | Zone | Dropbox | GCP | G Suite | Office 365 | Okta | Service maintenant | Salesforce | WebEx | Workday |
+> | | AWS | Zone | Dropbox | GCP | G Suite | Office 365 | Okta | Service Now | Salesforce | Webex | Workday |
 > |-|-|-|-|-|-|-|-|-|-|-|-|
-> | **Répertorier les comptes** | ✔ | ✔ | ✔ | Connexion de l’objet G suite | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-> | **Liste des groupes** | ✔ | ✔ | ✔ | Connexion de l’objet G suite | ✔ | ✔ | ✔ | ✔ | ✔ | | Non prise en charge par le fournisseur |
-> | **Liste des privilèges** | | ✔ | ✔ | Connexion de l’objet G suite | ✔ | ✔ | Non prise en charge par le fournisseur | ✔ | ✔ | ✔ | Non pported par le fournisseur |
-> | **Gouvernance des utilisateurs** | | ✔ | Bientôt disponible | Connexion de l’objet G suite | ✔ | ✔ | | Bientôt disponible | ✔ | Bientôt disponible | t pris en charge par le fournisseur |
-> | **Activité de connexion** | ✔ | ✔ | ✔ | Connexion de l’objet G suite | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-> | **Activité de l’utilisateur** | Not applicable | ✔ | ✔ | ✔ | ✔ - nécessite Google Business ou Entreprises | ✔ | ✔ | Partielle | Pris en charge avec lesforce Shield | ✔ | ✔ |
+> | **Répertorier les comptes** | ✔ | ✔ | ✔ | Subject G Suite connection | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+> | **List groups** | ✔ | ✔ | ✔ | Subject G Suite connection | ✔ | ✔ | ✔ | ✔ | ✔ | | Non prise en charge par le fournisseur |
+> | **List privileges** | | ✔ | ✔ | Subject G Suite connection | ✔ | ✔ | Non prise en charge par le fournisseur | ✔ | ✔ | ✔ | Not pported by provider |
+> | **Gouvernance des utilisateurs** | | ✔ | Bientôt disponible | Subject G Suite connection | ✔ | ✔ | | Bientôt disponible | ✔ | Bientôt disponible | t supported by provider |
+> | **Activité de connexion** | ✔ | ✔ | ✔ | Subject G Suite connection | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+> | **Activité de l’utilisateur** | Not applicable | ✔ | ✔ | ✔ | ✔ - nécessite Google Business ou Entreprises | ✔ | ✔ | Partielle | Supported with lesforce Shield | ✔ | ✔ |
 > | **Activité d’administration** | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | Partielle | ✔ | ✔ | Non prise en charge par le fournisseur |
-> | **DLP-analyse périodique** | | ✔ | Bientôt disponible | Not applicable | ✔ | ✔ | Not applicable | | | | Non pris en charge par ovider |
-> | **Analyse DLP en temps quasi réel** | | ✔ | ✔ | Not applicable | ✔-nécessite Google Business Enterprise | ✔ | Not applicable | ✔ | ✔ | ✔ | Non prise en charge par le fournisseur |
-> | **Contrôle partagé** | ✔ | ✔ | ✔ | Not applicable | ✔ | ✔ | Not applicable | Not applicable | | ✔ | Non pris en charge par ovider |
-> | **Gouvernance des fichiers** | ✔ | ✔ | ✔ | Not applicable | ✔ | ✔ | Not applicable | | ✔ | | Non prise en charge par le fournisseur |
-> | **Voir les autorisations d’application** | Not applicable | Non prise en charge par le fournisseur | En provenance | Not applicable | ✔ | ✔ | Not applicable | | ✔ | Not applicable | Not applicable |
-> | **Révoquer les autorisations d’application** | Not applicable | Non prise en charge par le fournisseur | Ming bientôt | Not applicable | ✔ | ✔ | Not applicable | | ✔ | Not applicable | Not applicable |
+> | **DLP - Periodic scan** | | ✔ | Bientôt disponible | Not applicable | ✔ | ✔ | Not applicable | | | | Not supported by ovider |
+> | **DLP - Near-real-time scan** | | ✔ | ✔ | Not applicable | ✔ - requires Google Business Enterprise | ✔ | Not applicable | ✔ | ✔ | ✔ | Non prise en charge par le fournisseur |
+> | **Contrôle partagé** | ✔ | ✔ | ✔ | Not applicable | ✔ | ✔ | Not applicable | Not applicable | | ✔ | Not supported by ovider |
+> | **File governance** | ✔ | ✔ | ✔ | Not applicable | ✔ | ✔ | Not applicable | | ✔ | | Non prise en charge par le fournisseur |
+> | **Voir les autorisations d’application** | Not applicable | Non prise en charge par le fournisseur | Coming on | Not applicable | ✔ | ✔ | Not applicable | | ✔ | Not applicable | Not applicable |
+> | **Révoquer les autorisations d’application** | Not applicable | Non prise en charge par le fournisseur | ming soon | Not applicable | ✔ | ✔ | Not applicable | | ✔ | Not applicable | Not applicable |
 > | **Appliquer des étiquettes Azure Information Protection** | Not applicable | ✔ | | Not applicable | ✔ | ✔ | Not applicable | | | Not applicable | Not applicable |
 
 ## <a name="prerequisites"></a>Conditions préalables
@@ -100,16 +100,16 @@ Pour utiliser des connecteurs d’applications, vous devez vérifier que vous av
 |-----|--------------|------|
 | Azure | | Administrateur général |
 | AWS | | Utilisateur récemment créé |
-| Zone | Enterprise | Il est fortement recommandé de vous connecter à Box en tant qu’administrateur. La connexion en tant que coadministrateur entraînera uniquement une visibilité partielle des données. Si vous vous connectez en tant que coadministrateur, sélectionnez toutes les autorisations. |
+| Zone | Enterprise | It's strongly recommended that you connect to Box as an Admin. Connecting as a Coadmin will result in only partial data visibility. Si vous vous connectez en tant que coadministrateur, sélectionnez toutes les autorisations. |
 | Dropbox | Business/Entreprises | Administration |
-| GCP | | Consultez les [conditions préalables Connect GCP](connect-google-gcp-to-microsoft-cloud-app-security.md#prerequisites) |
+| GCP | | See the [connect GCP prerequisites](connect-google-gcp-to-microsoft-cloud-app-security.md#prerequisites) |
 | G Suite | Compte G Suite Business ou Entreprise<br /><br />G Suite Enterprise (au minimum) | Super administrateur |
 | Office 365 | | Administrateur général |
 | Okta | Enterprise (pas la version d’essai) | Administration |
 | Salesforce | | Administration |
-| ServiceNow | Eureka et au-dessus | Rôle admin + RestAPI |
-| WebEx | | Admin + conformité administrateur |
-| Workday | | Consultez les [conditions préalables Connect](connect-workday-to-microsoft-cloud-app-security.md#prerequisites) de la journée de travail |
+| ServiceNow | Eureka et au-dessus | Admin + RestAPI role |
+| Webex | | Admin + Compliance Admin |
+| Workday | | See the [connect Workday prerequisites](connect-workday-to-microsoft-cloud-app-security.md#prerequisites) |
 
 ### <a name="expressroute"></a>ExpressRoute
 
@@ -120,7 +120,7 @@ Pour plus d’informations sur le peering public, consultez [Circuits ExpressRou
 
 [Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)
 
-[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]
 
 ## <a name="check-out-this-video"></a>Regardez cette vidéo !
 

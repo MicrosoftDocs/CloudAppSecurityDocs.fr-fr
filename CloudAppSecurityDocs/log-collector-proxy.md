@@ -15,19 +15,19 @@ ms.assetid: 6bde2a6c-60cc-4a7d-9e83-e8b81ac229b0
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9b0b9380d3cc2780dd17e3c3a53c374bca38b6e9
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: 0879c468f48c68214db8a4ff77e5f7ccb0eba252
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71084243"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74458402"
 ---
 # <a name="enable-the-log-collector-behind-a-proxy"></a>Activer le collecteur de journaux derrière un proxy
 
 Une fois que vous avez configuré le collecteur de journaux, si vous travaillez derrière un proxy, le collecteur de journaux peut avoir des difficultés pour envoyer des données à Cloud App Security. Cela peut se produire quand le collecteur de journaux ne fait pas confiance à l’autorité de certification racine du proxy et qu’il ne peut pas se connecter à Microsoft Cloud App Security pour récupérer sa configuration ou charger les journaux reçus.
 
 >[!NOTE]
-> Pour plus d’informations sur la façon de modifier les certificats utilisés par le collecteur de journaux pour syslog ou FTP, et pour résoudre les problèmes de connectivité à partir des pare-feu et proxys vers le collecteur de journaux, consultez [configuration du protocole FTP du collecteur de journaux](log-collector-ftp.md).
+> For information on how to change the certificates used by the log collector for Syslog or FTP, and to resolve connectivity issues from the firewalls and proxies to the log collector, see [Log collector FTP configuration](log-collector-ftp.md).
 >
 
 ## <a name="set-up-the-log-collector-behind-a-proxy"></a>Configurer le collecteur de journaux derrière un proxy
@@ -83,7 +83,7 @@ Le conteneur est maintenant prêt.
 
 Exécutez la commande **collector_config** à l’aide du jeton d’API que vous avez utilisé lors de la création de votre collecteur de journaux :
 
-![Jeton d’API](./media/docker-3.png "Jeton d’API")
+![API token](./media/docker-3.png "API token")
 
 Lorsque vous exécutez la commande, spécifiez votre propre jeton d’API :
 
@@ -91,11 +91,11 @@ Lorsque vous exécutez la commande, spécifiez votre propre jeton d’API :
       collector_config abcd1234abcd1234abcd1234abcd1234 ${CONSOLE} ${COLLECTOR}
 
 
-![Mise à jour de la configuration](./media/docker-4.png "Mise à jour de la configuration")
+![Configuration update](./media/docker-4.png "Configuration update")
 
 Le collecteur de journaux est désormais en mesure de communiquer avec Cloud App Security. Après lui avoir envoyé des données, l’état passe de **Sain** à **Connecté** dans le portail Cloud App Security.
 
-![État](./media/docker-5.png "État")
+![Status](./media/docker-5.png "Status")
 
 >[!NOTE]
 > Si vous devez mettre à jour la configuration du collecteur de journaux, pour ajouter ou supprimer une source de données, par exemple, vous devez normalement **supprimer** le conteneur et effectuer de nouveau les étapes précédentes. Pour éviter cela, vous pouvez réexécuter l’outil *collector_config* avec le nouveau jeton d’API généré dans le portail Cloud App Security.
@@ -104,4 +104,4 @@ Le collecteur de journaux est désormais en mesure de communiquer avec Cloud App
 
 [Stratégies d’activité utilisateur](user-activity-policies.md)
 
-[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

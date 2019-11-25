@@ -14,20 +14,20 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 856acde6b2c0339921b8bd198b2e42cf4e5cfd1b
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: 4dd033c3cf181e2e18e8ab8e2fc1d48b62865901
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71084221"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74461008"
 ---
 # <a name="manage-oauth-apps"></a>Gérer les applications OAuth
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Les applications de productivité tierces installées par des utilisateurs professionnels dans votre organisation ont souvent besoin d’une autorisation pour pouvoir accéder aux informations et données utilisateur, et se connecter au nom de l’utilisateur à d’autres applications cloud, comme Office 365, G Suite et Salesforce. Lorsque les utilisateurs installent ces applications, ils cliquent souvent sur Accepter sans examiner attentivement les détails du message d’invite, notamment concernant l’octroi d’autorisations à l’application. Ce problème est d’autant plus complexe que le service informatique ne dispose pas toujours d’informations suffisantes pour mettre en balance le risque de sécurité d’une application et les avantages qu’elle offre en termes de productivité. Dans la mesure où l’acceptation des autorisations d’applications tierces représente un risque de sécurité potentiel pour votre organisation, la surveillance des autorisations d’applications accordées par vos utilisateurs, vous donne la visibilité et le contrôle nécessaires pour protéger vos utilisateurs et vos applications. Les autorisations d’applications Microsoft Cloud App Security vous permettent de savoir quelles applications OAuth installées par l’utilisateur ont accès aux données Office 365, G Suite et Salesforce. Cloud App Security vous indique de quelles autorisations les applications disposent, et quels utilisateurs ont accordé à ces applications l’accès à leurs comptes Office 365, G Suite et Salesforce. Avec les autorisations d’applications, vous décidez à quelles applications vous autorisez les utilisateurs à accéder, et quelles autres vous voulez exclure.
 
-Pour plus d’informations sur l’examen des applications OAuth, consultez [examiner les applications OAuth risquées](investigate-risky-oauth.md).
+For more information on investigating OAuth apps, see [Investigate risky OAuth apps](investigate-risky-oauth.md).
 
 ## <a name="working-with-the-oauth-apps-page"></a>Utilisation de la page Applications OAuth
 
@@ -53,7 +53,7 @@ La page Applications OAuth fournit les informations suivantes sur chaque applica
 |État de l’application|Un administrateur peut marquer une application comme approuvée, exclue ou laisser le statut non défini.|Office 365, G Suite, Salesforce|
 |Utilisation communautaire|Indique la cote de popularité de l’application parmi tous vos utilisateurs (utilisation courante, peu courante, rare)|Office 365, G Suite, Salesforce|
 |Dernière autorisation|Date la plus récente à laquelle un utilisateur a accordé des autorisations pour cette application.|Office 365, Salesforce|
-|Éditeur|Nom du fournisseur qui fournit l’application.|Office 365|
+|Publisher|Nom du fournisseur qui fournit l’application.|Office 365|
 |Dernière utilisation|Date la plus récente à laquelle cette application a été utilisée par une personne de votre organisation.|Salesforce|
 
 ## <a name="ban-or-approve-an-app"></a>Exclure ou approuver une application
@@ -84,9 +84,9 @@ La page Applications OAuth fournit les informations suivantes sur chaque applica
 
 ## <a name="revoke-app-and-notify-user"></a>Révoquer l’application et avertir l’utilisateur
 
-Pour G Suite et Salesforce, vous pouvez révoquer l’autorisation d’une application ou avertir l’utilisateur qu’il doit la changer. Quand vous révoquez l’autorisation, elle supprime toutes les autorisations qui ont été accordées à l’application sous « applications d’entreprise » dans Azure AD.
+Pour G Suite et Salesforce, vous pouvez révoquer l’autorisation d’une application ou avertir l’utilisateur qu’il doit la changer. When you revoke permission it removes all permissions that were granted to the application under “Enterprise Applications” in Azure AD.
 
-1. Dans la page **Applications OAuth**, cliquez sur les points de suspension à la fin de la ligne de l’application et sélectionnez **Notifier l’utilisateur**. Par défaut, l’utilisateur sera informé comme suit : *Vous avez autorisé l’application à accéder à votre compte G Suite. Cette application est en conflit avec la stratégie de sécurité de votre organisation. Vous devez fournir ou révoquer les autorisations que vous avez attribuées à cette application dans votre compte G Suite. Pour révoquer l’accès à l’application, accédez à : https://security.google.com/settings/security/permissions?hl=en&pli=1 Sélectionnez l’application et cliquez sur « Révoquer l’accès » dans la barre de menu de droite.* Vous pouvez personnaliser le message envoyé.
+1. Dans la page **Applications OAuth**, cliquez sur les points de suspension à la fin de la ligne de l’application et sélectionnez **Notifier l’utilisateur**. By default, the user will be notified as follows: *You authorized the app to access your G Suite account. This app conflicts with your organization's security policy. Reconsider giving or revoking the permissions you gave this app in your G Suite account. To revoke app access, go to: https://security.google.com/settings/security/permissions?hl=en&pli=1  Select the app and click 'Revoke access' on the right menu bar.* Vous pouvez personnaliser le message envoyé.
 2. Vous pouvez également révoquer des autorisations d’utilisation de l’application pour l’utilisateur. Cliquez sur l’icône à la fin de la ligne de l’application dans le tableau et sélectionnez **Révoquer l’application**.
 
     ![révoquer l’application](./media/revoke-app.png)
@@ -99,17 +99,17 @@ Vous pouvez interroger des applications OAuth dans la vue **De base** ou la vue 
 
 - Cliquez sur l’icône **Supprimer un filtre** en regard d’un filtre pour le supprimer.
 
-## <a name="oauth-app-auditing"></a>Audit d’application OAuth
+## <a name="oauth-app-auditing"></a>OAuth app auditing
 
-Cloud App Security audite toutes les activités d’autorisation OAuth, vous permettant ainsi de superviser et d’analyser les activités effectuées de manière approfondie. Vous pouvez également exporter les détails des utilisateurs qui ont autorisé une application OAuth spécifique, en fournissant des informations supplémentaires sur les utilisateurs, que vous pouvez ensuite utiliser pour une analyse plus poussée.
+Cloud App Security audite toutes les activités d’autorisation OAuth, vous permettant ainsi de superviser et d’analyser les activités effectuées de manière approfondie. You can also export the details of users that authorized a specific OAuth app, providing you with additional information on the users, which you can then use for further analysis.
 
-Pour exporter le journal, procédez comme suit :
+To export the log, perform the following steps:
 
-1. Sur la page **applications OAuth** , sur la ligne où l’application correspondante s’affiche, sous **autorisé par**, cliquez sur le lien indiquant le nombre d’utilisateurs qui ont autorisé l’application.
+1. On the **OAuth apps** page, on the row where the relevant app appears, under **Authorized by**, click the link showing the number of users that authorized the app.
 
-1. Dans la fenêtre contextuelle, cliquez sur **Exporter**.
+1. In the pop-up window, click **Export**.
 
-    ![Capture d’écran montrant l’exportation de l’audit d’application OAuth](media/oauth-export-users.png)
+    ![Screenshot showing export of OAuth app auditing](media/oauth-export-users.png)
 
 ## <a name="send-feedback"></a>Envoyer des commentaires
 
@@ -124,4 +124,4 @@ Vous pouvez envoyer des commentaires à l’équipe Cloud App Security pour nous
 
 [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)
 
-[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

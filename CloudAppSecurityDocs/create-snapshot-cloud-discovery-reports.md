@@ -15,12 +15,12 @@ ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: af9db528ae9e3c3c21e67d502baf2f026d722f68
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: 05e579a46bc8367f8968f7a5028bae42e840844c
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335661"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74459015"
 ---
 # <a name="create-snapshot-cloud-discovery-reports"></a>Créer des rapports d’instantanés Cloud Discovery
 
@@ -91,7 +91,7 @@ Par conséquent, ces attributs ne sont pas affichés dans les données Cloud Dis
 
 
 Pour générer correctement un rapport Cloud Discovery, vos journaux de trafic doivent respecter les conditions suivantes :
-1. La [source de données est prise en charge](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
+1. [Data source is supported](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
 2. Le format de journal correspond au format standard attendu (le format est vérifié lors du chargement par l’outil Log).
 3. Les événements ne datent pas de plus de 90 jours.
 4. Le fichier journal est valide et comprend des informations sur le trafic sortant.
@@ -101,7 +101,7 @@ Pour générer correctement un rapport Cloud Discovery, vos journaux de trafic d
 ## <a name="next-steps"></a>Étapes suivantes  
 [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)   
 
-[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
     
       
   

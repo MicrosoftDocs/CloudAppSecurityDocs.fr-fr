@@ -15,12 +15,12 @@ ms.assetid: 828cc94a-248b-44f6-a1ba-c28c0a135f8c
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 440739f3f8f3f735630c78c602761b636c8e5f9e
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: a02715120efe84707866b4b9e655e9d1d5fe5ace
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72336183"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460238"
 ---
 # <a name="troubleshooting-microsoft-cloud-app-security-policies"></a>Résolution des problèmes des stratégies Microsoft Cloud App Security
 
@@ -40,5 +40,5 @@ Le tableau suivant décrit les erreurs qui peuvent s’afficher pour des straté
 
 [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)
 
-[Les clients Premier peuvent également choisir Cloud App Security directement dans le portail Premier.](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]
 

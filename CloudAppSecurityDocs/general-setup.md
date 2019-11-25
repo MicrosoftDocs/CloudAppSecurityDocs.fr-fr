@@ -1,5 +1,5 @@
 ---
-title: Configurez les paramètres de votre organisation dans Cloud App Security
+title: Set up your organization's settings in Cloud App Security
 description: Cet article explique comment fournir des informations sur votre organisation dans Cloud App Security.
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f9ad51d83ca6368f182178b209f7cf95393df458
-ms.sourcegitcommit: e7af22892c56d03490d1e6241c0a74d2e11e9fe2
+ms.openlocfilehash: 2708e8606e1838678e7d2b66fcb4e32584d475fc
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2019
-ms.locfileid: "73462085"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74458752"
 ---
 # <a name="basic-setup-for-cloud-app-security"></a>Configuration de base pour Cloud App Security
 
@@ -29,11 +29,11 @@ La procédure suivante contient des instructions pour personnaliser le portail M
 
 ## <a name="prerequisites"></a>Conditions préalables
 
-Pour l’accès au portail, il est nécessaire d’ajouter les adresses IP suivantes à la liste verte de votre pare-feu pour fournir l’accès au portail Cloud App Security :
+For portal access, it's necessary to add the following IP addresses to your Firewall's allow list to provide access for the Cloud App Security portal:
 
 * 104.42.231.28
 
-Pour les clients du gouvernement des États-Unis, il est également nécessaire d’ajouter les adresses IP suivantes à la liste verte de votre pare-feu pour fournir l’accès au portail Cloud App Security GCC High :
+For US Government GCC High customers, it's also necessary to add the following IP addresses to your Firewall’s allow list to provide access for the Cloud App Security GCC High portal:
 
 * 52.227.143.223
 * 13.72.19.4
@@ -43,7 +43,7 @@ Pour les clients du gouvernement des États-Unis, il est également nécessaire 
 
 ## <a name="set-up-the-portal"></a>Configurer le portail
 
-1. Dans le portail Cloud App Security, dans la barre de menus, cliquez sur l' ![icône](./media/settings-icon.png "icône des paramètres") paramètres roue dentée paramètres, puis sélectionnez **paramètres** pour configurer les détails de votre organisation.
+1. In the Cloud App Security portal, in the menu bar, click the settings cog ![settings icon](./media/settings-icon.png "icône des paramètres") and select **Settings** to configure your organization's details.
 
 1. Sous **Détails de l’organisation**, vous devez absolument fournir un **Nom d’affichage de l’organisation** pour votre organisation. Il apparaît dans les e-mails et les pages web envoyés par le système.
 
@@ -55,13 +55,13 @@ Pour les clients du gouvernement des États-Unis, il est également nécessaire 
 
     * Les utilisateurs dans des domaines qui ne sont pas configurés comme internes sont marqués comme externes. Aucune recherche d’activités ou de fichiers n’est exécutée sur les utilisateurs externes.
 
-1. Sous **déconnexion automatique**, spécifiez la durée pendant laquelle une session peut rester inactive avant que la session ne soit déconnectée automatiquement.
+1. Under **Auto sign out**, specify the amount of time a session can remain inactive before the session is automatically signed out.
 
 1. En cas d’intégration à Azure Information Protection, consultez [Intégration d’Azure Information Protection](azip-integration.md) pour obtenir des informations.
 
     * Pour utiliser l’intégration à Azure Information Protection, vous devez activer le [connecteur d’applications pour Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
 
-1. Si vous effectuez l’intégration avec l’intégration d’Azure-protection avancée contre les menaces, consultez [intégration d’Azure-protection avancée contre les menaces](azip-integration.md) pour plus d’informations.
+1. If you're integrating with Azure Advanced Threat Protection integration, see [Azure Advanced Threat Protection Integration](azip-integration.md) for information.
 
 1. Grâce à cet écran, vous pouvez à tout moment sauvegarder vos paramètres de portail. Cliquez sur **Exporter les paramètres de portail** pour créer un fichier json de tous vos paramètres de portail, notamment les règles de stratégie, les groupes d’utilisateurs et les plages d’adresses IP.
 
@@ -74,4 +74,4 @@ Pour les clients du gouvernement des États-Unis, il est également nécessaire 
 
 [Configurer Cloud Discovery](set-up-cloud-discovery.md)
 
-[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

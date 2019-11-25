@@ -15,12 +15,12 @@ ms.assetid: 45295c2c-3e4d-4482-bf95-2e47072f9236
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b3c595b1d45ee378eccace39ca4cf27f8a5f8867
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: a49b5a068ae8a2292d4e98314676d8c5389b5520
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335428"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74461247"
 ---
 # <a name="cloud-discovery-enrichment"></a>Enrichissement de Cloud Discovery
 
@@ -53,7 +53,7 @@ Les données Cloud Discovery peuvent maintenant être enrichies avec des donnée
   
 [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)   
 
-[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
     
       
   

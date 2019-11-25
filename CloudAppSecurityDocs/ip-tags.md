@@ -15,12 +15,12 @@ ms.assetid: bbf54f66-4ce2-428c-afc8-b5a64277014f
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ef9645a99e7fde05b2bcc801744fb19489d26a29
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: 1b033c2d228d3c7b117c960ffb68b7d778c5629d
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335824"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74461304"
 ---
 #  <a name="IPtagsandRanges"></a> Utilisation des balises et des plages d’adresses IP
 
@@ -79,12 +79,12 @@ Dans la barre de menus, cliquez sur l’icône des paramètres. Sélectionnez **
  
 7. Quand vous avez terminé, cliquez sur **Créer**.  
   
-     ![plage de nouvelles adresses IP](./media/newipaddress-range.png "plage de nouvelles adresses IP")  
+     ![newipaddress range](./media/newipaddress-range.png "plage de nouvelles adresses IP")  
 
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Configurer Cloud Discovery](set-up-cloud-discovery.md)   
 
-[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   
   

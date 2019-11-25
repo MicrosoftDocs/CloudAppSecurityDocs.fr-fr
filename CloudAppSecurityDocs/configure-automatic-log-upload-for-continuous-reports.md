@@ -15,12 +15,12 @@ ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d049cdbb7a85f2728a83120214a870747abbe6c3
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: ac416d39f0884a417396fe121ccd8eb8f09fdbda
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335035"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460795"
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance---deprecated"></a>Configurer le chargement automatique des journaux pour des rapports continus sur une appliance virtuelle - Déconseillé
 
@@ -87,7 +87,7 @@ Le collecteur de journaux dispose d’un mécanisme de sécurité intégré qui 
 1. Ouvrez le Gestionnaire Hyper-V.  
   
 2. Sélectionnez **Nouveau**, puis **Machine virtuelle** et cliquez sur **Suivant**.  
-   ![Détection de machine virtuelle Hyper-V](./media/discovery-hyperv-virtual-machine.png "Détection de machine virtuelle Hyper-V")  
+   ![discovery Hyper-V virtual machine](./media/discovery-hyperv-virtual-machine.png "discovery Hyper-V virtual machine")  
   
 3. Fournissez un **nom** à la nouvelle machine virtuelle, par exemple, CloudAppSecurityLogCollector01, puis cliquez sur **Suivant**.  
   
@@ -169,4 +169,4 @@ Après avoir vérifié que les journaux sont bien chargés dans Cloud App Securi
 ## <a name="next-steps"></a>Étapes suivantes 
 [Utilisation des données Cloud Discovery](working-with-cloud-discovery-data.md)   
 
-[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  

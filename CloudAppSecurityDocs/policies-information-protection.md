@@ -1,6 +1,6 @@
 ---
-title: Stratégies de protection des informations-Cloud App Security | Microsoft Docs
-description: Cette rubrique décrit les étapes permettant de configurer de nombreuses stratégies de protection des informations dans Cloud App Security.
+title: Information protection policies - Cloud App Security | Microsoft Docs
+description: This topic outlines the steps to configure many information protection policies in Cloud App Security.
 author: shsagir
 ms.author: shsagir
 ms.date: 06/13/2019
@@ -10,338 +10,338 @@ ms.service: cloud-app-security
 ms.assetid: 9a616767-4558-46f1-9da8-aa337920ae45
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 98ae6e5c4646ce59a9681a13043ba6f27d7ca3c5
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: 89cf851ec023d7ad2ebeaf4698df6e060a98b7c2
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72336258"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460591"
 ---
 # <a name="information-protection-policies"></a>Stratégies de protection des informations
 
 *S’applique à : Microsoft Cloud App Security*
 
-Cloud App Security les stratégies de fichiers vous permettent d’appliquer un large éventail de processus automatisés. Les stratégies peuvent être définies de manière à fournir une protection des informations, notamment des analyses de conformité continue, des tâches eDiscovery juridiques et la protection contre la perte de contenu sensible partagée publiquement.
+Cloud App Security file policies allow you to enforce a wide range of automated processes. Policies can be set to provide information protection, including continuous compliance scans, legal eDiscovery tasks, and DLP for sensitive content shared publicly.
 
-Cloud App Security pouvez surveiller n’importe quel type de fichier en fonction de plus de 20 filtres de métadonnées, par exemple, le niveau d’accès et le type de fichier. Pour plus d’informations, consultez [stratégies de fichier](data-protection-policies.md).
+Cloud App Security can monitor any file type based on more than 20 metadata filters, for example, access level, and file type. For more information, see [File policies](data-protection-policies.md).
 
-## <a name="detect-and-prevent-external-sharing-of-sensitive-data"></a>Détecter et empêcher le partage externe de données sensibles
+## <a name="detect-and-prevent-external-sharing-of-sensitive-data"></a>Detect and prevent external sharing of sensitive data
 
-Détectez le moment où les fichiers contenant des informations d’identification personnelle ou d’autres données sensibles sont stockés dans un service Cloud et partagés avec des utilisateurs externes à votre organisation qui enfreignent la stratégie de sécurité de votre entreprise et créent une violation potentielle de la conformité.
+Detect when files with personally identifying information or other sensitive data are stored in a Cloud service and shared with users who are external to your organization that violates your company's security policy and creates a potential compliance breach.
 
 ### <a name="prerequisites"></a>Conditions préalables
 
-Vous devez disposer d’au moins une application connectée à l’aide de [connecteurs d’application](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
  
 ### <a name="steps"></a>Étapes
 
-1. Dans la page **stratégies** , créez une **stratégie de fichier**.
+1. On the **Policies** page, create a new **File policy**.
 
-2. Définissez le **niveau d’accès** du filtre sur **public (Internet)/public/External**.
+2. Set the filter **Access Level** equals **Public (Internet) / Public / External**.
 
-3. Sous **méthode d’inspection**, sélectionnez **service de classification des données (DC)** , puis sous sélectionner un **type** , sélectionnez le type d’informations sensibles que vous voulez que les contrôleurs de service inspectent.
+3. Under **Inspection method**, select **Data Classification Service (DCS)** , and under **Select type** select the type of sensitive information you want DCS to inspect.
 
-6. Configurez les actions de **gouvernance** à entreprendre lorsqu’une alerte est déclenchée. Par exemple, vous pouvez créer une action de gouvernance qui s’exécute sur les violations de fichiers détectés dans G suite dans laquelle vous sélectionnez l’option permettant de **Supprimer les utilisateurs externes** et de **Supprimer l’accès public**.
+6. Configure the **Governance** actions to be take when an alert is triggered. For example, you can create a governance action that runs on detected file violations in G Suite in which you select the option to **Remove external users** and **Remove public access**.
 
-7. Créez la stratégie de fichier.
+7. Create the file policy.
 
-## <a name="detect-externally-shared-confidential-data"></a>Détecter les données confidentielles partagées en externe
+## <a name="detect-externally-shared-confidential-data"></a>Detect externally shared confidential data
 
-Détecte quand les fichiers étiquetés comme **confidentiels** et stockés dans un service Cloud sont partagés avec des utilisateurs externes, enfreignant ainsi les stratégies de l’entreprise.
+Detect when files that are labeled **Confidential** and are stored in a cloud service are shared with external users, violating company policies.
 
 ### <a name="prerequisites"></a>Conditions préalables
 
-- Vous devez disposer d’au moins une application connectée à l’aide de [connecteurs d’application](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+- You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
-- Activez l' [intégration de Azure information protection](azip-integration.md).
+- Enable [Azure Information Protection integration](azip-integration.md).
 
 ### <a name="steps"></a>Étapes
 
-1.  Dans la page **stratégies** , créez une **stratégie de fichier**.
+1.  On the **Policies** page, create a new **File policy**.
 
-2.  Définissez l' **étiquette de classification** de filtre sur **Azure information protection** est égal à l’étiquette **confidentiel** ou à l’équivalent de votre entreprise.
+2.  Set the filter **Classification label** to **Azure Information Protection** equals the **Confidential** label, or your company's equivalent.
 
-3.  Définissez le **niveau d’accès** du filtre sur **public (Internet)/public/External**.
+3.  Set the filter **Access Level** equals **Public (Internet) / Public / External**.
 
-1.  Facultatif : définissez les actions de **gouvernance** à effectuer sur les fichiers lorsqu’une violation est détectée. Les actions de gouvernance disponibles varient d’un service à l’autre.
+1.  Optional: Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services.
 
-5.  Créez la stratégie de fichier.
+5.  Create the file policy.
 
-## <a name="detect-and-encrypt-sensitive-data-at-rest"></a>Détecter et chiffrer les données sensibles au repos
+## <a name="detect-and-encrypt-sensitive-data-at-rest"></a>Detect and encrypt sensitive data at rest
 
-Détectez les fichiers contenant des informations d’identification personnelle et d’autres données sensibles qui sont partagées dans une application Cloud et appliquez des étiquettes de classification pour limiter l’accès aux employés de votre entreprise.
+Detect files containing personally identifying information and other sensitive data that is share in a cloud app and apply classification labels to limit access only to employees in your company.
 
 ### <a name="prerequisites"></a>Conditions préalables
 
-- Vous devez disposer d’au moins une application connectée à l’aide de [connecteurs d’application](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+- You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
-- Activez l' [intégration de Azure information protection](azip-integration.md).
+- Enable [Azure Information Protection integration](azip-integration.md).
  
 ### <a name="steps"></a>Étapes
 
-1.  Dans la page **stratégies** , créez une **stratégie de fichier**.
+1.  On the **Policies** page, create a new **File policy**.
 
-2.  Sous **méthode d’inspection**, sélectionnez **service de classification des données (DC)** et sous sélectionner un **type** , sélectionnez le type d’informations sensibles que vous voulez que les contrôleurs de service inspectent.
+2.  Under **Inspection method**, select **Data Classification Service (DCS)** and under **Select type** select the type of sensitive information you want DCS to inspect.
 
-5.  Sous **alerte**, activez la case à cocher **appliquer la gouvernance des étiquettes de classification** et sélectionnez l’étiquette de classification que votre entreprise utilise pour limiter l’accès aux employés de l’entreprise. 
+5.  Under **Alert**, check **Apply classification label governance** and select the classification label that your company uses to restrict access to company employees. 
 
-6.  Créez la stratégie de fichier.
-
-> [!NOTE]
-> La possibilité d’appliquer une étiquette de classification directement dans Cloud App Security n’est actuellement prise en charge que pour Box, G suite, SharePoint Online et OneDrive entreprise.
-
-## <a name="detect-stale-externally-shared-data"></a>Détecter les données partagées en externe obsolètes
-
-Détectez les fichiers inutilisés et obsolètes, les fichiers qui n’ont pas été mis à jour récemment, qui sont accessibles publiquement via un lien public direct, une recherche Web ou des utilisateurs externes spécifiques.
-
-### <a name="prerequisites"></a>Conditions préalables
-
-Vous devez disposer d’au moins une application connectée à l’aide de [connecteurs d’application](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
-
-### <a name="steps"></a>Étapes
-
-1.  Dans la page **stratégies** , créez une **stratégie de fichier**.
-
-2.  Sélectionnez et appliquez le modèle de stratégie **anciens fichiers partagés en externe**.
-
-3.  Personnaliser le filtre **modifié** pour qu’il corresponde à la stratégie de votre organisation.
-
-4.  Facultatif : définissez des actions de **gouvernance** à effectuer sur les fichiers lorsqu’une violation est détectée. Les actions de gouvernance disponibles varient d’un service à l’autre. Exemple :
-
-    - G suite : rendre le fichier privé et notifier le dernier éditeur de fichier
-
-    - Box : notifier le dernier éditeur de fichier
-
-    - SharePoint Online : rendre le fichier privé et envoyer un condensé de correspondance de stratégie au propriétaire du fichier
-
-6.  Créez la stratégie de fichier.
-
-## <a name="detect-data-access-from-an-unauthorized-location"></a>Détecter l’accès aux données à partir d’un emplacement non autorisé
-
-Détectez le moment où les fichiers sont accessibles à partir d’un emplacement non autorisé, en fonction des emplacements communs de votre organisation, afin d’identifier une fuite de données potentielle ou un accès malveillant.
-
-### <a name="prerequisites"></a>Conditions préalables
-
-Vous devez disposer d’au moins une application connectée à l’aide de [connecteurs d’application](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
-### <a name="steps"></a>Étapes
-
-1. Dans la page **stratégies** , créez une nouvelle **stratégie d’activité**.
-
-2. Définissez le **type d’activité** de filtre sur les activités de fichier et de dossier qui vous intéressent, telles que l' **affichage**, le **Téléchargement**, **l’accès**et la **modification**.
-
-3. Définissez l' **emplacement** du filtre n’est pas égal à, puis entrez les pays à partir desquels votre organisation attend une activité. 
-
-    1.  Facultatif : vous pouvez utiliser l’approche opposée et définir le filtre sur **emplacement** égal si votre organisation bloque l’accès à partir de pays spécifiques.
-
-4.  Facultatif : créez des actions de **gouvernance** à appliquer à une violation détectée (la disponibilité varie d’un service à l’autre), par exemple **suspendre l’utilisateur**.
-
-6.  Créez la stratégie d’activité.
-
-## <a name="detect-and-protect-confidential-data-store-in-a-non-compliant-sp-site"></a>Détecter et protéger la Banque de données confidentielles dans un site SP non conforme
-
-Détectez les fichiers qui sont étiquetés comme confidentiels et qui sont stockés dans un site SharePoint non compatible.
-
-### <a name="prerequisites"></a>Conditions préalables
-
-Azure Information Protection étiquettes sont configurées et utilisées au sein de l’organisation.
-
-### <a name="steps"></a>Étapes
-
-1.  Dans la page **stratégies** , créez une **stratégie de fichier**.
-
-2.  Définissez l' **étiquette de classification** de filtre sur **Azure information protection** est égal à l’étiquette **confidentiel** ou à l’équivalent de votre entreprise.
-
-3.  Définir le **dossier parent** du filtre n’est pas égal à, puis sous **Sélectionner un dossier** , choisissez tous les dossiers conformes dans votre organisation.
-
-6.  Sous **alertes** , sélectionnez **créer une alerte pour chaque fichier correspondant**.
-
-7.  Facultatif : définissez les actions de **gouvernance** à effectuer sur les fichiers lorsqu’une violation est détectée. Les actions de gouvernance disponibles varient d’un service à l’autre. Par exemple, définissez **Box** sur **Envoyer la stratégie de correspondance de la stratégie au propriétaire du fichier** et mettez-la **en quarantaine administrateur**.
-
-8.  Créez la stratégie de fichier.
-
-## <a name="detect-externally-shared-source-code"></a>Détection du code source partagé en externe
-
-Détectez quand des fichiers contenant du contenu pouvant être du code source sont partagés publiquement ou partagés avec des utilisateurs en dehors de votre organisation.
-
-### <a name="prerequisites"></a>Conditions préalables
-
-Vous devez disposer d’au moins une application connectée à l’aide de [connecteurs d’application](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
-
-### <a name="steps"></a>Étapes
-
-1.  Dans la page **stratégies** , créez une **stratégie de fichier**.
-
-2.  Sélectionner et appliquer le **code source partagé en externe** du modèle de stratégie
-
-3.  Facultatif : Personnalisez la liste des **Extensions** de fichier pour qu’elles correspondent aux extensions de fichier de code source de votre organisation.
-
-4. Facultatif : définissez les actions de **gouvernance** à effectuer sur les fichiers lorsqu’une violation est détectée. Les actions de gouvernance disponibles varient d’un service à l’autre. Par exemple, dans Box, **Envoyer une stratégie-faire correspondre le condensé au propriétaire du fichier** et **mettre en quarantaine administrateur**.
-
-5. Sélectionner et appliquer le modèle de stratégie
-
-## <a name="detect-unauthorized-access-to-group-data"></a>Détecter les accès non autorisés aux données de groupe
-
-Détecte lorsque certains fichiers appartenant à un groupe d’utilisateurs spécifique sont accessibles de façon excessive par un utilisateur qui ne fait pas partie du groupe, ce qui peut constituer une menace Insider potentielle.
-
-### <a name="prerequisites"></a>Conditions préalables
-
-Vous devez disposer d’au moins une application connectée à l’aide de [connecteurs d’application](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
-
-### <a name="steps"></a>Étapes
-
-1. Dans la page **stratégies** , créez une nouvelle **stratégie d’activité**.
-
-2.  Sous **agir sur** sélectionner une **activité répétée** et personnaliser les **activités répétitives minimales** et définir une **plage** de temps conforme à la stratégie de votre organisation.
-
-3.  Définissez le **type d’activité** de filtre sur les activités de fichier et de dossier qui vous intéressent, telles que l' **affichage**, le **Téléchargement**, **l’accès**et la **modification**.
-
-4.  Affectez à l' **utilisateur** du filtre la valeur **à partir du groupe** égal, puis sélectionnez les groupes d’utilisateurs appropriés. 
+6.  Create the file policy.
 
 > [!NOTE]
-> Les [groupes d’utilisateurs peuvent être importés manuellement](user-groups.md) à partir d’applications prises en charge.
+> The ability to apply a classification label directly in Cloud App Security is currently only supported for Box, G Suite, SharePoint online and OneDrive for business.
 
-6.  Définissez les fichiers **et** les dossiers de filtre sur **des fichiers ou dossiers spécifiques** , puis choisissez les fichiers et les dossiers qui appartiennent au groupe d’utilisateurs audités.
+## <a name="detect-stale-externally-shared-data"></a>Detect stale externally shared data
 
-9.  Définissez les actions de **gouvernance** à effectuer sur les fichiers lorsqu’une violation est détectée. Les actions de gouvernance disponibles varient d’un service à l’autre. Par exemple, vous pouvez choisir de **suspendre l’utilisateur**.
-
-11. Créez la stratégie de fichier.
-
-## <a name="detect-publicly-accessible-s3-buckets"></a>Détecter les compartiments S3 accessibles publiquement
-
-Détectez et protégez-vous contre les fuites de données potentielles provenant de compartiments AWS S3.
+Detect unused and stale files, files that were not updated recently, that are accessible publicly via direct public link, web search, or to specific external users.
 
 ### <a name="prerequisites"></a>Conditions préalables
 
-Vous devez disposer d’une instance AWS connectée à l’aide de [connecteurs d’application](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
 ### <a name="steps"></a>Étapes
 
-1.  Dans la page **stratégies** , créez une **stratégie de fichier**.
+1.  On the **Policies** page, create a new **File policy**.
 
-2.  Sélectionnez et appliquez le modèle de stratégie **S3 compartiments (AWS)** .
+2.  Select and apply the policy template **Stale externally shared files**.
 
-3.  Définissez les actions de **gouvernance** à effectuer sur les fichiers lorsqu’une violation est détectée. Les actions de gouvernance disponibles varient d’un service à l’autre. Par exemple, définissez AWS pour **rendre privé** , ce qui rend les compartiments S3 privés.
+3.  Customize the filter **Last modified** to match your organization’s policy.
 
-5.  Créez la stratégie de fichier.
+4.  Optional: Set **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services. Exemple :
 
-## <a name="detect-and-protect-gdpr-related-data-across-file-storage-apps"></a>Détectez et protégez les données liées à RGPD dans les applications de stockage de fichiers 
+    - G Suite: Make the file private and notify the last file editor
 
-Détectez les fichiers qui sont partagés dans les applications de stockage cloud et qui contiennent des informations d’identification personnelle et d’autres données sensibles qui sont liées par une stratégie de conformité RGPD. Ensuite, appliquez automatiquement des étiquettes de classification pour limiter l’accès uniquement au personnel autorisé.
+    - Box: Notify the last file editor
+
+    - SharePoint online: Make the file private and send a policy-match digest to the file owner
+
+6.  Create the file policy.
+
+## <a name="detect-data-access-from-an-unauthorized-location"></a>Detect data access from an unauthorized location
+
+Detect when files are accessed from an unauthorized location, based on your organization’s common locations, to identify a potential data leak or malicious access.
 
 ### <a name="prerequisites"></a>Conditions préalables
 
-- Vous devez disposer d’au moins une application connectée à l’aide de [connecteurs d’application](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+### <a name="steps"></a>Étapes
 
-- [Azure information protection intégration](azip-integration.md) est activée et l’étiquette RGPD est configurée dans AIP.
+1. On the **Policies** page, create a new **Activity policy**.
+
+2. Set the filter **Activity type** to the file and folder activities that interest you, such as **View**, **Download**, **Access**, and **Modify**.
+
+3. Set the filter **Location** does not equal, and then enter the countries from which your organization expects activity. 
+
+    1.  Optional: You can use the opposite approach and set the filter to **Location** equals if your organization blocks access from specific countries.
+
+4.  Optional: Create **Governance** actions to be applied to detected violation (availability varies between services), such as  **Suspend user**.
+
+6.  Create the Activity policy.
+
+## <a name="detect-and-protect-confidential-data-store-in-a-non-compliant-sp-site"></a>Detect and protect confidential data store in a non-compliant SP site
+
+Detect files that are labeled as confidential and are stored in a non-compliant SharePoint site.
+
+### <a name="prerequisites"></a>Conditions préalables
+
+Azure Information Protection labels are configured and used inside the organization.
 
 ### <a name="steps"></a>Étapes
 
-1.  Dans la page **stratégies** , créez une **stratégie de fichier**.
+1.  On the **Policies** page, create a new **File policy**.
 
-2.  Sous **méthode d’inspection**, sélectionnez **service de classification des données (DC)** , puis sous sélectionner un **type** , sélectionnez un ou plusieurs types d’informations conformes à la conformité RGPD, par exemple : numéro de carte de débit UE, numéro de licence des pilotes européens, UE Numéro d’identification nationale, numéro de passeport de l’Union européenne, numéro d’identification sociale de l’Union européenne.
+2.  Set the filter **Classification label** to **Azure Information Protection** equals the **Confidential** label, or your company's equivalent.
 
-5.  Définissez les actions de **gouvernance** à effectuer sur les fichiers lors de la détection d’une violation, en sélectionnant **appliquer la gouvernance des étiquettes de classification** pour chaque application prise en charge.
+3.  Set the filter **Parent folder** does not equal, and then under **Select a folder** choose all the compliant folders in your organization.
 
-7.  Créer la stratégie de fichier
+6.  Under **Alerts** select **Create an alert for each matching file**.
+
+7.  Optional: Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services. For example, Set **Box** to **Send policy-match digest to file owner** and **Put in admin quarantine**.
+
+8.  Create the file policy.
+
+## <a name="detect-externally-shared-source-code"></a>Detect externally shared source code
+
+Detect when files that contain content that might be source code are shared publicly or are shared with users outside of your organization.
+
+### <a name="prerequisites"></a>Conditions préalables
+
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+
+### <a name="steps"></a>Étapes
+
+1.  On the **Policies** page, create a new **File policy**.
+
+2.  Select and apply the policy template **Externally shared source code**
+
+3.  Optional: Customize the list of file **Extensions** to match your organization's source code file extensions.
+
+4. Optional: Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services. For example, in Box, **Send policy-match digest to file owner** and **Put in admin quarantine**.
+
+5. Select and apply the policy template
+
+## <a name="detect-unauthorized-access-to-group-data"></a>Detect unauthorized access to group data
+
+Detect when certain files that belong to a specific user group are being accessed excessively by a user who is not part of the group, which could be a potential insider threat.
+
+### <a name="prerequisites"></a>Conditions préalables
+
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+
+### <a name="steps"></a>Étapes
+
+1. On the **Policies** page, create a new **Activity policy**.
+
+2.  Under **Act on** select **Repeated activity** and customize the **Minimum repeated activities** and set a **Timeframe** to comply with your organization's policy.
+
+3.  Set the filter **Activity type** to the file and folder activities that interest you, such as **View**, **Download**, **Access**, and **Modify**.
+
+4.  Set the filter **User** to **From group** equals and then select the relevant user groups. 
 
 > [!NOTE]
->  Actuellement, l' **étiquette de classification appliquer** est uniquement prise en charge pour Box, G suite, SharePoint Online et OneDrive entreprise.
+> [User groups can be imported manually](user-groups.md) from supported apps.
 
-## <a name="block-downloads-for-external-users-in-real-time"></a>Bloquer les téléchargements pour les utilisateurs externes en temps réel
+6.  Set the filter **Files and folders** to **Specific files or folders** equals and then choose the files and folders that belong to the audited user group.
 
-Empêchez les données d’entreprise d’être défiltrées par des utilisateurs externes, en bloquant les téléchargements de fichiers en temps réel, en utilisant les [contrôles de session](proxy-intro-aad.md)de Cloud App Security.
+9.  Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services. For example, you can choose to **Suspend user**.
+
+11. Create the file policy.
+
+## <a name="detect-publicly-accessible-s3-buckets"></a>Detect publicly accessible S3 buckets
+
+Detect and protect against potential data leaks from AWS S3 buckets.
 
 ### <a name="prerequisites"></a>Conditions préalables
 
-- [Déployez le contrôle d’accès conditionnel aux applications pour les applications Azure ad](proxy-deployment-aad.md).
-
-- Assurez-vous que votre application est une application basée sur SAML qui utilise Azure AD pour l’authentification unique. Pour plus d’informations sur les applications prises en charge, consultez [applications et clients pris en charge](proxy-intro-aad.md#supported-apps-and-clients).
+You must have an AWS instance connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
 ### <a name="steps"></a>Étapes
 
-1. Dans la page **stratégies** , créez une **stratégie de session**.
+1.  On the **Policies** page, create a new **File policy**.
+
+2.  Select and apply the policy template **Publicly accessible S3 buckets (AWS)** .
+
+3.  Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services. For example, set AWS to **Make private** which would make the S3 buckets private.
+
+5.  Create the file policy.
+
+## <a name="detect-and-protect-gdpr-related-data-across-file-storage-apps"></a>Detect and protect GDPR related data across file storage apps 
+
+Detect files that are shared in cloud storage apps and contain personally identifying information and other sensitive data that is bound by a GDPR compliance policy. Then, automatically apply classification labels to limit access only to authorized personnel.
+
+### <a name="prerequisites"></a>Conditions préalables
+
+- You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+
+- [Azure Information Protection integration](azip-integration.md) is enabled and GDPR label is configured in AIP.
+
+### <a name="steps"></a>Étapes
+
+1.  On the **Policies** page, create a new **File policy**.
+
+2.  Under **Inspection method**, select **Data Classification Service (DCS)** , and under **Select type** select one or more information types that comply with the GDPR compliance, for example: EU debit card number, EU drivers license number, EU national identification number, EU passport number, EU SSN, SU tax identification number.
+
+5.  Set the **Governance** actions to be taken on files when a violation is detected, by selecting **Apply Classification label governance** for each supported app.
+
+7.  Create the file policy
+
+> [!NOTE]
+>  Currently, **Apply classification label** is only supported for Box, G Suite, SharePoint online and OneDrive for business.
+
+## <a name="block-downloads-for-external-users-in-real-time"></a>Block downloads for external users in real time
+
+Prevent company data from being exfiltrated by external users, by blocking file downloads in real time, utilizing Cloud App Security’s [session controls](proxy-intro-aad.md).
+
+### <a name="prerequisites"></a>Conditions préalables
+
+- [Deploy conditional access app control for Azure AD apps](proxy-deployment-aad.md).
+
+- Make sure your app is a SAML-based apps that utilizes Azure AD for single sign-on. For more information on supported apps, see [Supported apps and clients](proxy-intro-aad.md#supported-apps-and-clients).
+
+### <a name="steps"></a>Étapes
+
+1. On the **Policies** page, create a new **Session policy**.
 
 2. Sous **Type de contrôle de session**, sélectionnez **Contrôler le téléchargement du fichier (avec DLP)** .
 
-3. Sous **filtres d’activité**, **Sélectionnez utilisateur** et affectez-lui la valeur **à partir du groupe** est égal à **utilisateurs externes**.
+3. Under **Activity filters**, select **User** and set it to **From group** equals **External users**.
 
    >[!NOTE]
-   > Vous n’avez pas besoin de définir de filtres d’application pour permettre à cette stratégie de s’appliquer à toutes les applications.
+   > You don't need to set any app filters to enable this policy to apply to all apps.
 
-1. Vous pouvez utiliser le **filtre de fichiers** pour personnaliser le type de fichier. Vous bénéficiez ainsi d’un contrôle plus granulaire sur le type de fichiers contrôlés par la stratégie de session.
+1. You can use the **File filter** to customize the file type. This gives you more granular control over what type of files the session policy controls.
 
-2. Sous **actions**, sélectionnez **bloquer**. Vous pouvez sélectionner **personnaliser le message de blocage** pour définir un message personnalisé à envoyer à vos utilisateurs afin qu’ils comprennent la raison pour laquelle le contenu est bloqué et comment il peut l’activer en appliquant l’étiquette de classification appropriée.
+2. Under **Actions**, select **Block**. You can select **Customize block message** to set a custom message to be sent to your users so they understand the reason the content is blocked and how they can enable it by applying the right classification label.
 
 3. Cliquez sur **Create (Créer)** .
 
   
-## <a name="enforce-read-only-mode-for-external-users-in-real-time"></a>Appliquer le mode lecture seule pour les utilisateurs externes en temps réel
+## <a name="enforce-read-only-mode-for-external-users-in-real-time"></a>Enforce read-only mode for external users in real time
 
-Empêchez les données d’entreprise d’être défiltrées par des utilisateurs externes, en bloquant les activités d’impression et de copie/collage en temps réel, en utilisant les [contrôles de session](proxy-intro-aad.md)de Cloud App Security.
+Prevent company data from being exfiltrated by external users, by blocking print and copy/paste activities in real-time, utilizing Cloud App Security’s [session controls](proxy-intro-aad.md).
 
 ### <a name="prerequisites"></a>Conditions préalables
 
--   [Déployez le contrôle d’accès conditionnel aux applications pour les applications Azure ad](proxy-deployment-aad.md).
--   Assurez-vous que votre application est une application basée sur SAML qui utilise Azure AD pour l’authentification unique. Pour plus d’informations sur les applications prises en charge, consultez [applications et clients pris en charge](proxy-intro-aad.md#supported-apps-and-clients).
+-   [Deploy conditional access app control for Azure AD apps](proxy-deployment-aad.md).
+-   Make sure your app is a SAML-based apps that utilizes Azure AD for single sign-on. For more information on supported apps, see [Supported apps and clients](proxy-intro-aad.md#supported-apps-and-clients).
  
 ### <a name="steps"></a>Étapes
 
-1. Dans la page **stratégies** , créez une **stratégie de session**.
+1. On the **Policies** page, create a new **Session policy**.
 
-2. Sous **type de contrôle de session**, sélectionnez **bloquer les activités**.
+2. Under **Session control type**, select **Block activities**.
 
-3. Dans le filtre de la **source d’activité** :
+3. In the **Activity source** filter:
    
-    1. Sélectionnez **utilisateur** et définissez **les utilisateurs externes** **dans groupe** .
+    1. Select **User** and set **From group** to **External users**.
 
-    2. Sélectionnez le **type d’activité** est égal à **Imprimer** et **couper/copier l’élément**.
+    2. Select **Activity type** equals **Print** and **Cut/copy item**.
 
     > [!NOTE]
-    > Vous n’avez pas besoin de définir de filtres d’application pour permettre à cette stratégie de s’appliquer à toutes les applications.
+    > You don't need to set any app filters to enable this policy to apply to all apps.
 
-4. Facultatif : sous **méthode d’inspection**, sélectionnez le type d’inspection à appliquer et définissez les conditions requises pour l’analyse DLP.
+4. Optional: Under **Inspection method**, select the type of inspection to apply and set the necessary conditions for the DLP scan.
 
-5. Sous **actions**, sélectionnez **bloquer**. Vous pouvez sélectionner **personnaliser le message de blocage** pour définir un message personnalisé à envoyer à vos utilisateurs afin qu’ils comprennent la raison pour laquelle le contenu est bloqué et comment il peut l’activer en appliquant l’étiquette de classification appropriée.
+5. Under **Actions**, select **Block**. You can select **Customize block message** to set a custom message to be sent to your users so they understand the reason the content is blocked and how they can enable it by applying the right classification label.
 
 6. Cliquez sur **Create (Créer)** .
 
-## <a name="block-upload-of-unclassified-documents-in-real-time"></a>Bloquer le téléchargement de documents non classifiés en temps réel
+## <a name="block-upload-of-unclassified-documents-in-real-time"></a>Block upload of unclassified documents in real time
 
-Empêchez les utilisateurs de charger des données non protégées dans le Cloud, en utilisant les [contrôles de session](proxy-intro-aad.md)de Cloud App Security.
+Prevent users from uploading unprotected data to the cloud, by utilizing Cloud App Security’s [session controls](proxy-intro-aad.md).
 
 ### <a name="prerequisites"></a>Conditions préalables
 
-- [Déployez le contrôle d’accès conditionnel aux applications pour les applications Azure ad](proxy-deployment-aad.md).
+- [Deploy conditional access app control for Azure AD apps](proxy-deployment-aad.md).
 
-- Assurez-vous que votre application est une application basée sur SAML qui utilise Azure AD pour l’authentification unique. Pour plus d’informations sur les applications prises en charge, consultez [applications et clients pris en charge](proxy-intro-aad.md#supported-apps-and-clients).
+- Make sure your app is a SAML-based apps that utilizes Azure AD for single sign-on. For more information on supported apps, see [Supported apps and clients](proxy-intro-aad.md#supported-apps-and-clients).
 
-- Azure Information Protection étiquettes de classification doivent être configurées et utilisées au sein de votre organisation.
+- Azure Information Protection classification labels must be configured and used inside your organization.
 
 ### <a name="steps"></a>Étapes
 
-1. Dans la page **stratégies** , créez une **stratégie de session**.
+1. On the **Policies** page, create a new **Session policy**.
 
-2. Sous **type de contrôle de session**, sélectionnez **contrôler le chargement du fichier (avec DLP)** ou **Télécharger le fichier de contrôle (avec DLP)** .
+2. Under **Session control type**, select **Control file upload (with DLP)** or **Control file download (with DLP)** .
 
    >[!NOTE]
-   > Vous n’avez pas besoin de définir de filtres pour permettre l’application de cette stratégie à tous les utilisateurs et applications.
+   > You don't need to set any filters to enable this policy to apply to all users and apps.
 
-3. Sélectionnez l’étiquette de **classification** de filtre de fichier n’est pas égale, puis sélectionnez les étiquettes que votre entreprise utilise pour baliser les fichiers classifiés.
+3. Select the file filter **Classification label** does not equal and then select the labels your company uses to tag classified files.
 
-2. Facultatif : sous **méthode d’inspection**, sélectionnez le type d’inspection à appliquer et définissez les conditions requises pour l’analyse DLP.
+2. Optional: Under **Inspection method**, select the type of inspection to apply and set the necessary conditions for the DLP scan.
 
-3. Sous **actions**, sélectionnez **bloquer**. Vous pouvez sélectionner **personnaliser le message de blocage** pour définir un message personnalisé à envoyer à vos utilisateurs afin qu’ils comprennent la raison pour laquelle le contenu est bloqué et comment il peut l’activer en appliquant l’étiquette de classification appropriée.
+3. Under **Actions**, select **Block**. You can select **Customize block message** to set a custom message to be sent to your users so they understand the reason the content is blocked and how they can enable it by applying the right classification label.
 
 4. Cliquez sur **Create (Créer)** .
 
 > [!NOTE]
-> Pour obtenir la liste des types de fichiers actuellement pris en charge par Cloud App Security pour Azure Information Protection des étiquettes de classification, voir [conditions préalables](azip-integration.md#prerequisites)à l’intégration de Azure information protection.
+> For the list of file types that Cloud App Security currently supports for Azure Information Protection classification labels, see [Azure Information Protection integration prerequisites](azip-integration.md#prerequisites).
 
 
 ## <a name="next-steps"></a>Étapes suivantes 
 
 [Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)   
 
-[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   
   

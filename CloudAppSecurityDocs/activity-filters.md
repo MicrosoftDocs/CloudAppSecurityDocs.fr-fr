@@ -15,12 +15,12 @@ ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ce5cd7c341a6d255572763b879181ef2ca8f0cd6
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: 0b0db06ebce6bb5757adbdc1439d332a20f063e6
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72334968"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74461168"
 ---
 # <a name="activities"></a>Activités
 
@@ -72,10 +72,10 @@ Vous pouvez afficher plus d’informations supplémentaires sur chaque activité
  - Afficher des activités du même type
  - Afficher toutes les activités du même utilisateur
  - Afficher les activités à partir de la même adresse IP
- - Afficher les activités à partir du même emplacement géographique
+ - View activities from the same geographic location
  - Afficher les activités dans la même période (48 heures)
  
-![tiroir activité](./media/activity-drawer.png "tiroir activité")  
+![activity drawer](./media/activity-drawer.png "tiroir activité")  
   
 Pour obtenir la liste des actions de gouvernance disponibles, consultez [Actions de gouvernance des activités](governance-actions.md#activity-governance-actions).
 
@@ -136,6 +136,6 @@ Dans le **Journal d’activité** en haut à droite, cliquez sur le bouton **Exp
 ## <a name="next-steps"></a>Étapes suivantes  
 [Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)   
 
-[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   
   

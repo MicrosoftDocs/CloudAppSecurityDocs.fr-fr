@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 43d88d9364d911ae1ead982a4a39beb211af9331
-ms.sourcegitcommit: a73578f79801de3625ac4c9a35f1d22d74831c4a
+ms.openlocfilehash: 4d4e3798b0b404a8c58317880c08e6c045389d45
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2019
-ms.locfileid: "71976081"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74461399"
 ---
 # <a name="connect-salesforce-to-microsoft-cloud-app-security"></a>Connecter Salesforce à Microsoft Cloud App Security
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Cet article fournit des instructions pour connecter Microsoft Cloud App Security à un compte Salesforce existant à l’aide de l’API de connecteur d’applications. Cette connexion vous permet de bénéficier de plus de visibilité et de contrôle lors de l’utilisation de Salesforce.
 
@@ -45,19 +45,19 @@ Cet article fournit des instructions pour connecter Microsoft Cloud App Security
 
     * Sous **Gérer les utilisateurs**, accédez à la page **Profils**.
 
-        ![Salesforce - gérer les profils des utilisateurs](./media/salesforce-manageusers-profiles.png "Salesforce - gérer les profils des utilisateurs")
+        ![salesforce manage users profiles](./media/salesforce-manageusers-profiles.png "salesforce manage users profiles")
 
     * Créez un profil en cliquant sur **Nouveau**.
-    * Choisissez le profil que vous venez de créer pour déployer Cloud App Security, puis cliquez sur **Modifier**. Ce profil sera utilisé pour le compte de service Cloud App Security pour configurer le connecteur d’applications.
+    * Choisissez le profil que vous venez de créer pour déployer Cloud App Security, puis cliquez sur **Modifier**. This profile will be used for the Cloud App Security service account to set up the App connector.
 
-         ![salesforce, modifier le profil](./media/salesforce-edit-profile.png "salesforce, modifier le profil")
+         ![salesforce edit profile](./media/salesforce-edit-profile.png "salesforce, modifier le profil")
 
     * Vérifiez que les cases suivantes sont cochées :
       * **API activée**
       * **Afficher toutes les données**
       * **Gérer le contenu Salesforce CRM**
       * **Gérer les utilisateurs**
-      * **[Interroger tous les fichiers](https://go.microsoft.com/fwlink/?linkid=2106480)**
+      * **[Query All Files](https://go.microsoft.com/fwlink/?linkid=2106480)**
 
       Si ces cases ne sont pas cochées, il peut être nécessaire de contacter Salesforce pour les ajouter à votre compte.
 
@@ -65,11 +65,11 @@ Cet article fournit des instructions pour connecter Microsoft Cloud App Security
 
     1. Accédez à votre page de configuration de Salesforce.
 
-        ![salesforce, configuration](./media/salesforce-setup.png "salesforce, configuration")
+        ![salesforce setup](./media/salesforce-setup.png "salesforce, configuration")
 
     1. Dans le menu latéral, sélectionnez **Manage Users** (Gérer les utilisateurs), puis cliquez sur **Utilisateurs**.
 
-        ![menu salesforce, utilisateurs](./media/salesforce-menu-users.png "menu salesforce, utilisateurs")
+        ![salesforce menu users](./media/salesforce-menu-users.png "menu salesforce, utilisateurs")
 
     1. Sélectionnez l’utilisateur administratif actuel pour votre utilisateur Cloud App Security dédié.
 
@@ -77,7 +77,7 @@ Cet article fournit des instructions pour connecter Microsoft Cloud App Security
 
         Si ce n’est pas le cas, cliquez sur **Edit** (Modifier), puis cochez la case.
 
-        ![salesforce, utilisateur de contenu crm](./media/salesforce-crm-content-user.png "salesforce, utilisateur de contenu crm")
+        ![salesforce crm content user](./media/salesforce-crm-content-user.png "salesforce, utilisateur de contenu crm")
 
     1. Cliquez sur **Save**.
 
@@ -85,13 +85,13 @@ Cet article fournit des instructions pour connecter Microsoft Cloud App Security
 
 1. Dans la page **Connecteurs d’application**, cliquez sur le bouton plus (+), puis sur **Salesforce**.
 
-    ![connecter salesforce](./media/connect-salesforce.png "connecter salesforce")
+    ![connect salesforce](./media/connect-salesforce.png "connecter salesforce")
 
 1. Dans la page des paramètres Salesforce, sous l’onglet API, cliquez sur **suivez ce lien**, en fonction de l’instance que vous souhaitez installer.
 
 1. Ceci ouvre la page de connexion à Salesforce. Entrez vos informations d’identification pour autoriser Cloud App Security à accéder à l’application Salesforce de votre équipe.
 
-    ![Salesforce - connexion](./media/salesforce-logon.png "Salesforce - connexion")
+    ![salesforce sign-in](./media/salesforce-logon.png "salesforce, connexion")
 
 1. Salesforce vous demande si vous voulez autoriser Cloud App Security à accéder au journal d’informations et d’activité de votre équipe, et à effectuer toute activité en tant que membre de l’équipe. Pour continuer, cliquez sur **Autoriser**.
 
@@ -99,11 +99,11 @@ Cet article fournit des instructions pour connecter Microsoft Cloud App Security
 
 1. De retour dans la console Cloud App Security, vous devez recevoir un message indiquant que Salesforce a été correctement connecté.
 
-1. Vérifiez la connexion en cliquant sur **Test API** (Tester l’API).
+1. Vérifiez que la connexion a réussi en cliquant sur **Tester l’API**.
 
     Le test peut prendre quelques minutes. Une fois que vous avez reçu une notification de réussite, cliquez sur **Terminé**.
 
-Après avoir connecté Salesforce, vous recevrez les événements comme suit : Déclencheurs à partir du moment de la connexion, événements de connexion et piste d’audit d’installation pour les 60 jours précédant la connexion, surveillance des événements remontant à 30 jours ou à 1 jour, en fonction de votre licence Salesforce EventMonitoring. L’API Cloud App Security communique directement avec les API disponibles dans Salesforce. Comme Salesforce limite le nombre d’appels d’API qu’il peut recevoir, Cloud App Security prend ce point en considération et respecte la limite. Les API Salesforce envoient chaque réponse avec un champ pour les compteurs d’API, notamment le total disponible et le total restant. Cloud App Security calcule en pourcentage et veille à toujours garder 10 % des appels d’API disponibles restants.
+Après avoir connecté Salesforce, vous recevez les événements comme suit : déclencheurs à partir du moment de la connexion, événements de connexion et piste d’audit d’installation pour les 60 jours précédant la connexion, surveillance des événements remontant à 30 jours ou à 1 jour, en fonction de votre licence Salesforce EventMonitoring. L’API Cloud App Security communique directement avec les API disponibles dans Salesforce. Comme Salesforce limite le nombre d’appels d’API qu’il peut recevoir, Cloud App Security prend ce point en considération et respecte la limite. Les API Salesforce envoient chaque réponse avec un champ pour les compteurs d’API, notamment le total disponible et le total restant. Cloud App Security calcule en pourcentage et veille à toujours garder 10 % des appels d’API disponibles restants.
 
 > [!NOTE]
 > La limitation Cloud App Security est calculée uniquement à partir de ses propres appels d’API avec Salesforce, et non avec ceux des autres applications qui effectuent des appels d’API avec Salesforce.
@@ -113,10 +113,10 @@ Les événements Salesforce sont traités par Cloud App Security de la façon su
 
 * Événements de connexion toutes les 15 minutes
 * Piste d’audit d’installation toutes les 15 minutes
-* Les journaux de Salesforce suivent l’activité d’utilisation sur une période de 24 heures, de 00:00 à 23h59 UTC (temps universel coordonné). Les événements dans Salesforce génèrent des données de journal en temps réel. Toutefois, les fichiers journaux sont générés par Salesforce le jour suivant l’événement, durant les heures creuses. Par conséquent, les données du fichier journal ne sont pas disponibles pendant au moins un jour après un événement. Pour plus d’informations sur les événements Salesforce, consultez [Using Event Monitoring](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/using_resources_event_log_files.htm) (Utilisation de la surveillance des événements).
+* Les journaux de Salesforce suivent l’activité d’utilisation sur une période de 24 heures, de 00:00 à 23:59 heure UTC. Les événements dans Salesforce génèrent des données de journal en temps réel. Toutefois, les fichiers journaux sont générés par Salesforce le lendemain d’un événement, pendant les heures creuses. Par conséquent, les données du fichier journal ne sont disponibles qu’au moins un jour après l’événement. Pour plus d’informations sur les événements Salesforce, consultez [Using Event Monitoring](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/using_resources_event_log_files.htm) (Utilisation de la surveillance des événements).
 
 ## <a name="next-steps"></a>Étapes suivantes
 
 [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)
 
-[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

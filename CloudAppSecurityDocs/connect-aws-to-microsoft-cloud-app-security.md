@@ -1,5 +1,5 @@
 ---
-title: Se connecter Amazon Web Services avec Cloud App Security
+title: Connect Amazon Web Services with Cloud App Security
 description: Cet article vous explique comment connecter votre application AWS à Cloud App Security à l’aide du connecteur d’API, afin de bénéficier de plus de contrôle et de visibilité lors de l’utilisation.
 keywords: ''
 author: shsagir
@@ -15,43 +15,43 @@ ms.assetid: a6b4c745-cd5c-4458-819c-80cbe8b25f29
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 34e1c361d5b1a49093f927dfde1ae2391570b958
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: 387a9a9184bb805db7659d6f67eae26239f812f3
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "71083827"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74461059"
 ---
 # <a name="connect-aws-to-microsoft-cloud-app-security"></a>Connecter AWS à Microsoft Cloud App Security
 
 *S’applique à : Microsoft Cloud App Security*
 
-Cet article fournit des instructions pour connecter votre compte Amazon Web Services (AWS) existant à Microsoft Cloud App Security à l’aide des API du connecteur.
+This article provides instructions for connecting your existing Amazon Web Services (AWS) account to Microsoft Cloud App Security using the connector APIs.
 
-Vous pouvez connecter l’un des deux AWS suivants au Cloud App Security connexions suivantes :
+You can connect one or both of the following AWS to Cloud App Security connections:
 
-- **Audit de sécurité**: cette connexion vous offre une visibilité et un contrôle sur l’utilisation des applications AWS.
-- **Configuration**de la sécurité : cette connexion vous donne des recommandations de sécurité fondamentales basées sur le benchmark Center for Internet Security (CIS) pour AWS.
+- **Security auditing**: This connection gives you visibility into and control over AWS app use.
+- **Security configuration**: This connection gives you fundamental security recommendations based on the Center for Internet Security (CIS) benchmark for AWS.
 
-Dans la mesure où vous pouvez ajouter une connexion ou les deux, les étapes décrites dans cet article sont écrites en tant qu’instructions indépendantes. Si vous avez déjà ajouté une des connexions, le cas échéant, modifiez les configurations existantes.
+Since you can add either or both of the connections, the steps in this article are written as independent instructions. If you have already added one of the connections, where relevant edit the existing configurations.
 
-## <a name="how-to-connect-aws-security-auditing-to-cloud-app-security"></a>Comment connecter l’audit de sécurité AWS à Cloud App Security
+## <a name="how-to-connect-aws-security-auditing-to-cloud-app-security"></a>How to connect AWS Security auditing to Cloud App Security
 
-1. Dans la [console Amazon Web services](https://console.aws.amazon.com/), sous **sécurité, identité & conformité**, cliquez sur **IAM**.
+1. In your [Amazon Web Services console](https://console.aws.amazon.com/), under **Security, Identity & Compliance**, click **IAM**.
 
-    ![Identité AWS et accès](media/aws-identity-and-access.png "Identité AWS et accès")
+    ![AWS identity and access](media/aws-identity-and-access.png "AWS identity and access")
 
-1. Sélectionnez **utilisateurs** , puis cliquez sur **Ajouter un utilisateur**.
+1. Select **Users** and then click **Add user**.
 
-    ![Utilisateurs AWS](media/aws-users.png "Utilisateurs AWS")
+    ![AWS users](media/aws-users.png "AWS users")
 
-1. À l’étape **Details** (Détails), indiquez un nouveau nom d’utilisateur pour Cloud App Security. Assurez-vous que sous **type d’accès** , sélectionnez **accès par programme** , puis cliquez sur **autorisations suivantes**.<a name="set-permissions"></a>
+1. À l’étape **Details** (Détails), indiquez un nouveau nom d’utilisateur pour Cloud App Security. Make sure that under **Access type** you select **Programmatic access** and click **Next Permissions**.<a name="set-permissions"></a>
 
-    ![Créer un utilisateur dans AWS](media/aws-create-user.png "Créer un utilisateur dans AWS")
+    ![Create user in AWS](media/aws-create-user.png "Create user in AWS")
 
-1. Cliquez sur l’onglet **JSON** :
+1. Click on the **JSON** tab:
 
-    ![Onglet JSON AWS](media/aws-json.png "Onglet JSON AWS")
+    ![AWS JSON tab](media/aws-json.png "AWS JSON tab")
 
 1. Collez le script suivant dans la zone fournie :
 
@@ -80,25 +80,25 @@ Dans la mesure où vous pouvez ajouter une connexion ou les deux, les étapes d�
      }
     ```
 
-     ![Code AWS](media/aws-code.png "Code AWS")
+     ![AWS code](media/aws-code.png "AWS code")
 
 1. Cliquez sur **Vérifier la stratégie**.
 
 1. Spécifiez un **Nom** et cliquez sur **Créer une stratégie**.
 
-    ![Fournir le nom de la stratégie AWS](media/aws-create-policy.png "Fournir le nom de la stratégie AWS")
+    ![Provide AWS policy name](media/aws-create-policy.png "Provide AWS policy name")
 
 1. De retour à l’écran **Add user** (Ajouter un utilisateur), actualisez la liste si nécessaire et sélectionnez l’utilisateur que vous avez créé, puis cliquez sur **Next Review** (Prochaine vérification).
 
-    ![Attacher une stratégie existante dans AWS](media/aws-attach-policy.png "Attacher une stratégie existante dans AWS")
+    ![Attach existing policy in AWS](media/aws-attach-policy.png "Attach existing policy in AWS")
 
 1. Si tous les détails sont corrects, cliquez sur **Create user** (Créer un utilisateur).
 
-    ![Autorisations utilisateur dans AWS](media/aws-user-permissions.png "Examiner les autorisations utilisateur dans AWS")
+    ![User permissions in AWS](media/aws-user-permissions.png "Review user permissions in AWS")
 
 1. Quand vous obtenez le message de réussite, cliquez sur **Download .csv** (Télécharger .csv) pour enregistrer une copie des informations d’identification du nouvel utilisateur, car vous en aurez besoin ultérieurement.
 
-    ![Télécharger CSV dans AWS](media/aws-download-csv.png "Télécharger CSV dans AWS")
+    ![Download csv in AWS](media/aws-download-csv.png "Download csv in AWS")
 
 1. Dans la console AWS, cliquez sur **Services** puis, sous **Management Tools** (Outils de gestion), cliquez sur **CloudTrail**.
 
@@ -106,97 +106,97 @@ Dans la mesure où vous pouvez ajouter une connexion ou les deux, les étapes d�
 
     Si vous n’avez pas encore utilisé CloudTrail, cliquez sur **Get Started** (Commencer) et configurez-le en indiquant un nom et en sélectionnant le compartiment S3 approprié, puis cliquez sur **Turn On** (Activer). Pour vérifier que vous disposez d’une couverture complète, affectez à **Apply to all regions** (Appliquer à toutes les régions) la valeur **Oui**.
 
-    ![Activer CloudTrail dans AWS](media/aws-turnon-cloudtrail.png "Activer CloudTrail dans AWS")
+    ![Turn on CloudTrail in AWS](media/aws-turnon-cloudtrail.png "Turn on CloudTrail in AWS")
 
     Vous devez voir le nouveau nom CloudTrail dans la liste **Trails** (Pistes).
 
-    ![Liste CloudTrail dans AWS](media/aws-cloudtrail-list.png "Liste CloudTrail dans AWS")
+    ![CloudTrail list in AWS](media/aws-cloudtrail-list.png "CloudTrail list in AWS")
 
     > [!NOTE]
-    > Après avoir connecté AWS, vous recevez les événements des 7 jours précédant la connexion. Si vous venez d’activer CloudTrail, vous recevrez des événements à partir du moment où vous avez activé CloudTrail.
+    > Après avoir connecté AWS, vous recevez les événements des 7 jours précédant la connexion. If you just enabled CloudTrail, you'll receive events from the time you enabled CloudTrail.
 
 1. Dans le portail Cloud App Security, cliquez sur **Examiner**, puis sur **Applications connectées**.
 
-1. Dans la page **connecteurs d’application** , pour fournir les informations d’identification du connecteur AWS, effectuez l’une des opérations suivantes :
+1. In the **App connectors** page, to provide the AWS connector credentials, do one of the following:
 
-    **Pour un nouveau connecteur**
+    **For a new connector**
 
-    1. Cliquez sur le signe plus, puis sur **Amazon Web services**.
+    1. Click the plus sign followed by **Amazon Web Services**.
 
-        ![connecter AWS](media/connect-aws.png "connecter AWS")
+        ![connect AWS](media/connect-aws.png "connecter AWS")
 
-    1. Dans la fenêtre contextuelle, fournissez un nom pour le connecteur, puis cliquez sur **se connecter Amazon Web services**.
+    1. In the pop-up, provide a name for the connector, and then click **Connect Amazon Web Services**.
 
-        ![Nom du connecteur AWS](media/aws-connect-name.png)
+        ![AWS connector name](media/aws-connect-name.png)
 
-    1. Dans la page connecter Amazon Web services, sélectionnez **audit de sécurité**, collez **la clé d’accès** et la **clé secrète** du fichier. csv dans les champs appropriés, puis cliquez sur **se connecter**.
+    1. On the Connect Amazon Web services page, select **Security auditing**, paste the **Access key** and **Secret key** from the .csv file into the relevant fields, and click **Connect**.
 
-        ![Connecter l’audit de sécurité des applications AWS](media/aws-connect-app-audit.png "Connecter l’audit de sécurité des applications AWS")
+        ![Connect AWS app security auditing](media/aws-connect-app-audit.png "Connect AWS app security auditing")
 
-    **Pour un connecteur existant**
+    **For an existing connector**
 
-    1. Dans la liste des connecteurs, sur la ligne dans laquelle le connecteur AWS s’affiche, cliquez sur **connecter l’audit de sécurité**.
+    1. In the list of connectors, on the row in which the AWS connector appears, click **Connect security auditing**.
 
-        ![Capture d’écran de la page applications connectées, montrant le lien modifier l’audit de sécurité](media/aws-connect-app-edit-audit.png)
+        ![Screenshot of the Connected Apps page, showing edit Security Auditing link](media/aws-connect-app-edit-audit.png)
 
-    1. Sur la page se connecter Amazon Web Services, collez la **clé d’accès** et la **clé secrète** du fichier. csv dans les champs appropriés, puis cliquez sur **se connecter**.
+    1. On the Connect Amazon Web Services page, paste the **Access key** and **Secret key** from the .csv file into the relevant fields, and click **Connect**.
 
-        ![Connecter l’audit de sécurité des applications AWS](media/aws-connect-app-edit-audit-creds.png "Connecter l’audit de sécurité des applications AWS")
+        ![Connect AWS app security auditing](media/aws-connect-app-edit-audit-creds.png "Connect AWS app security auditing")
 
 1. Vérifiez que la connexion a réussi en cliquant sur **Tester l’API**.  
 
     Le test peut prendre quelques minutes. Quand il est terminé, vous recevez une notification de réussite ou d’échec. Une fois que vous avez reçu une notification de réussite, cliquez sur **Terminé**.
 
-## <a name="how-to-connect-aws-security-configuration-to-cloud-app-security"></a>Comment connecter la configuration de sécurité AWS à Cloud App Security
+## <a name="how-to-connect-aws-security-configuration-to-cloud-app-security"></a>How to connect AWS Security configuration to Cloud App Security
 
-Suivez les étapes [de connexion de l’audit de sécurité AWS](#how-to-connect-aws-security-auditing-to-cloud-app-security) pour accéder à la page [autorisations](#set-permissions) .
+Follow the [How to connect AWS Security auditing](#how-to-connect-aws-security-auditing-to-cloud-app-security) steps to get to the [permissions](#set-permissions) page.
 
-1. Sur la page autorisations, cliquez sur **attacher les stratégies existantes directement**, appliquez les stratégies **AWSSecurityHubReadOnlyAccess** et **SecurityAudit** , puis cliquez sur **balises suivantes**.
+1. On the permissions page, click **Attach existing policies directly**, apply the **AWSSecurityHubReadOnlyAccess** and **SecurityAudit** policies, and then click **Next Tags**.
 
-    ![Attacher une stratégie existante dans AWS](media/aws-attach-policy.png "Attacher une stratégie existante dans AWS")
+    ![Attach existing policy in AWS](media/aws-attach-policy.png "Attach existing policy in AWS")
 
-1. Facultatif : ajoutez des balises à l’utilisateur.
+1. Optional: Add tags to the user.
 
-    ![Ajouter des balises à l’utilisateur dans AWS](media/aws-add-tags.png)
+    ![Add tags to user in AWS](media/aws-add-tags.png)
 
     > [!NOTE]
-    > L’ajout de balises à l’utilisateur n’affecte pas la connexion.
+    > Adding tags to the user won't affect the connection.
 
-1. Cliquez sur **révision suivante**.
+1. Click **Next Review**.
 
 1. Si tous les détails sont corrects, cliquez sur **Create user** (Créer un utilisateur).
 
-    ![Autorisations utilisateur dans AWS](media/aws-user-permissions.png "Examiner les autorisations utilisateur dans AWS")
+    ![User permissions in AWS](media/aws-user-permissions.png "Review user permissions in AWS")
 
-1. Lorsque vous recevez le message de réussite, cliquez sur **download. csv** pour enregistrer une copie de l’ID de la **clé d’accès** et de la **clé d’accès secrète**. vous en aurez besoin plus tard.
+1. When you get the success message, click **Download .csv** to save a copy of the **Access key ID** and the **Secret access key**, you need these later.
 
-    ![Télécharger CSV dans AWS](media/aws-download-csv.png "Télécharger CSV dans AWS")
+    ![Download csv in AWS](media/aws-download-csv.png "Download csv in AWS")
 
 1. Dans le portail Cloud App Security, cliquez sur **Examiner**, puis sur **Applications connectées**.
 
-1. Dans la page **connecteurs d’application** , pour fournir les informations d’identification du connecteur AWS, effectuez l’une des opérations suivantes :
+1. In the **App connectors** page, to provide the AWS connector credentials, do one of the following:
 
-    **Pour un nouveau connecteur**
-    1. Cliquez sur le signe plus, puis sur **Amazon Web services**.<br>
+    **For a new connector**
+    1. Click the plus sign followed by **Amazon Web Services**.<br>
 
-        ![connecter AWS](media/connect-aws.png "connecter AWS")
+        ![connect AWS](media/connect-aws.png "connecter AWS")
 
-    1. Dans la fenêtre contextuelle, fournissez un nom pour le connecteur, puis cliquez sur **se connecter Amazon Web services**.
+    1. In the pop-up, provide a name for the connector, and then click **Connect Amazon Web Services**.
 
-        ![Nom du connecteur AWS](media/aws-connect-name.png)
+        ![AWS connector name](media/aws-connect-name.png)
 
-    1. Dans la page connecter Amazon Web services, sélectionnez **configuration**de la sécurité, collez la **clé d’accès** et la **clé secrète** du fichier. csv dans les champs appropriés, puis cliquez sur **se connecter**.
+    1. On the Connect Amazon Web services page, select **Security configuration**, paste the **Access key** and **Secret key** from the .csv file into the relevant fields, and click **Connect**.
 
-        ![Connexion de la configuration de sécurité de l’application AWS](media/aws-connect-app-config.png "Connexion de la configuration de sécurité de l’application AWS")
+        ![Connect AWS app security configuration](media/aws-connect-app-config.png "Connect AWS app security configuration")
 
-    **Pour un connecteur existant**
-    1. Dans la liste des connecteurs, sur la ligne dans laquelle le connecteur AWS s’affiche, cliquez sur **connecter la configuration**de la sécurité.
+    **For an existing connector**
+    1. In the list of connectors, on the row in which the AWS connector appears, click **Connect security configuration**.
 
-        ![Capture d’écran de la page applications connectées, montrant le lien modifier la configuration de la sécurité](media/aws-connect-app-edit-config.png)
+        ![Screenshot of the Connected Apps page, showing edit Security Configuration link](media/aws-connect-app-edit-config.png)
 
-    1. Sur la page se connecter Amazon Web Services, collez la **clé d’accès** et la **clé secrète** du fichier. csv dans les champs appropriés, puis cliquez sur **se connecter**.
+    1. On the Connect Amazon Web Services page, paste the **Access key** and **Secret key** from the .csv file into the relevant fields, and click **Connect**.
 
-        ![Connexion de la configuration de sécurité de l’application AWS](media/aws-connect-app-edit-config-creds.png "Connexion de la configuration de sécurité de l’application AWS")
+        ![Connect AWS app security configuration](media/aws-connect-app-edit-config-creds.png "Connect AWS app security configuration")
 
 1. Vérifiez que la connexion a réussi en cliquant sur **Tester l’API**.  
 
@@ -206,4 +206,4 @@ Suivez les étapes [de connexion de l’audit de sécurité AWS](#how-to-connect
 
 [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)
 
-[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]
