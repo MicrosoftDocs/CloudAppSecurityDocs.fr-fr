@@ -15,16 +15,16 @@ ms.assetid: 3fc04cfb-ad4c-4ac2-980a-ee9f4c740d88
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6a147b9db857ee3e8c791f193be4b84e29c3c148
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: bd4788bfa165a709c22d388dc521e65b6fd405e1
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71084895"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74459775"
 ---
-# <a name="tutorial-protect-files-with-admin-quarantine"></a>Didacticiel : Protéger les fichiers avec la mise en quarantaine administrateur
+# <a name="tutorial-protect-files-with-admin-quarantine"></a>Tutoriel : Protéger les fichiers avec la mise en quarantaine administrateur
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Les [stratégies de fichier](data-protection-policies.md) sont un excellent outil pour rechercher les menaces sur vos stratégies de protection des informations. Par exemple, créez des stratégies de fichier qui recherchent les emplacements où les utilisateurs ont stocké des informations sensibles, des numéros de carte de crédit et des fichiers ICAP tiers dans votre cloud.
 
@@ -106,4 +106,4 @@ Ce tutoriel vous aide à utiliser Microsoft Cloud App Security pour détecter le
 ## <a name="next-steps"></a>Étapes suivantes 
 [Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)
 
-[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  

@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 220c8c7d486bd1e92a9b880fd54f3651f63eaec0
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: 825a8532588cc479bcc37e5373bff23ccc841d8d
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71084609"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74461041"
 ---
 # <a name="what-are-the-differences-in-discovery-capabilities-for-azure-active-directory-and-microsoft-cloud-app-security"></a>Quelles sont les différences qui existent entre les fonctionnalités de découverte d’Azure Active Directory et celles de Microsoft Cloud App Security ?
 
@@ -65,4 +65,4 @@ Le tableau suivant compare les fonctionnalités de découverte de Microsoft Clou
 
 Découvrez les concepts de base dans [Bien démarrer avec Cloud App Security](getting-started-with-cloud-app-security.md).
 
-[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)].

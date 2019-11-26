@@ -15,12 +15,12 @@ ms.assetid: 06238ebc-2088-4372-9412-96cceaf3b145
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b7f4bc220c7643d8aaca34f409ceeb262d5358e4
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: a0c1699c3626e7582a3099b4481fce06ae5635d2
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72336094"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74459578"
 ---
 # <a name="tutorial-block-download-of-sensitive-information"></a>Tutoriel : Bloquer le téléchargement d’informations sensibles 
 
@@ -122,6 +122,6 @@ Une fois cette tâche terminée, accédez au portail Cloud App Security et crée
   
 [Créer une stratégie de session](session-policy-aad.md)   
 
-[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   
   

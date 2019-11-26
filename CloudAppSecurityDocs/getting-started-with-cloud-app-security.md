@@ -11,16 +11,16 @@ ms.service: cloud-app-security
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c6e185d3c2b6cc6d18468f97981233b9f0756f29
-ms.sourcegitcommit: 37e7568ae5b78fb52bc7bd66261a2d2fbf50c1dd
+ms.openlocfilehash: 0f79fea252ed16a603b75ea20e5641b3be2f963f
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71185119"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460872"
 ---
 # <a name="quickstart-get-started-with-microsoft-cloud-app-security"></a>Démarrage rapide : Bien démarrer avec Microsoft Cloud App Security
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Ce démarrage rapide vous explique comment bien démarrer avec Cloud App Security. Microsoft Cloud App Security vous permet de tirer parti des avantages des applications cloud tout en conservant le contrôle des ressources d’entreprise. Il fonctionne en améliorant la visibilité de l’activité cloud et contribue à renforcer la protection des données d’entreprise. Dans cet article, nous vous guidons à travers les étapes à suivre pour configurer et utiliser Microsoft Cloud App Security.
 
@@ -52,7 +52,7 @@ Pour accéder au portail Cloud App Security, accédez à [https://portal.cloudap
 
     ![Sélectionner Cloud App Security](media/access-from-o365-s2.png)
 
-## <a name="step-1-set-instant-visibility-protection-and-governance-actions-for-your-appsenable-instant-visibility-protection-and-governance-actions-for-your-appsmd"></a>Étape 1. [Définir une visibilité instantanée, une protection et des actions de gouvernance pour vos applications](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
+## <a name="step-1-set-instant-visibility-protection-and-governance-actions-for-your-appsenable-instant-visibility-protection-and-governance-actions-for-your-appsmd"></a>Étape 1. [Définir une visibilité instantanée, une protection et des actions de gouvernance pour vos applications](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
 
 Tâche obligatoire : Connecter des applications
 
@@ -63,7 +63,7 @@ Tâche obligatoire : Connecter des applications
 **Pourquoi connecter une application ?**
 Après avoir connecté une application, vous pouvez obtenir une visibilité plus approfondie et ainsi examiner les activités, les fichiers et les comptes pour les applications de votre environnement cloud.
 
-## <a name="step-2-control-cloud-apps-with-policiescontrol-cloud-apps-with-policiesmd"></a>Étape 2. [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)
+## <a name="step-2-control-cloud-apps-with-policiescontrol-cloud-apps-with-policiesmd"></a>Étape 2. [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)
 
 Tâche obligatoire : Créer des stratégies
 
@@ -79,7 +79,7 @@ Tâche obligatoire : Créer des stratégies
 
 Vous pouvez utiliser des stratégies pour surveiller les tendances, identifier les menaces à la sécurité, et générer des alertes et des rapports personnalisés. Avec les stratégies, vous pouvez créer des actions de gouvernance, et définir une protection contre la perte de données et des contrôles sur les partages de fichiers.
 
-## <a name="step-3-set-up-cloud-discoveryset-up-cloud-discoverymd"></a>Étape 3. [Configurer Cloud Discovery](set-up-cloud-discovery.md)
+## <a name="step-3-set-up-cloud-discoveryset-up-cloud-discoverymd"></a>Étape 3. [Configurer Cloud Discovery](set-up-cloud-discovery.md)
 
 Tâche obligatoire : Activer Cloud App Security pour afficher votre utilisation d’applications cloud
 
@@ -101,7 +101,7 @@ Tâche obligatoire : Activer Cloud App Security pour afficher votre utilisation 
 Obtenir une visibilité sur l’informatique fantôme dans votre organisation est critique.
 Une fois vos journaux analysés, vous pouvez facilement identifier les applications cloud utilisées, par quelles personnes et sur quels appareils.
 
-## <a name="step-4-personalize-your-experiencemail-settingsmd"></a>Étape 4. [Personnaliser votre expérience](mail-settings.md)
+## <a name="step-4-personalize-your-experiencemail-settingsmd"></a>Étape 4. [Personnaliser votre expérience](mail-settings.md)
 
 Tâche recommandée : Ajouter les détails de votre organisation
 
@@ -131,7 +131,7 @@ Les scores de risque attribués aux applications découvertes sont maintenant co
 Certaines fonctionnalités sont plus efficaces quand elles sont adaptées à vos besoins.
 Offrez une meilleure expérience à vos utilisateurs avec vos propres modèles d’e-mail. Choisissez les notifications que vous recevez et personnalisez vos métriques de score de risque selon les préférences de votre organisation.
 
-## <a name="step-5-organize-the-data-according-to-your-needsip-tagsmd"></a>Étape 5. [Organiser les données selon vos besoins](ip-tags.md)
+## <a name="step-5-organize-the-data-according-to-your-needsip-tagsmd"></a>Étape 5. [Organiser les données selon vos besoins](ip-tags.md)
 
 Tâche recommandée : Configurer des paramètres importants
 
@@ -168,4 +168,4 @@ Ces paramètres permettent d’exercer un meilleur contrôle des fonctionnalité
 
 Définir des stratégies [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md).
 
-[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)].

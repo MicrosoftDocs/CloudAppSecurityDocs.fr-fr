@@ -15,12 +15,12 @@ ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5976d520187ba9e76c314bcddae5dd8c9b5f553b
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: d96699387b302a30c1ffeffe7712f116d9ca3649
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71084796"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74459349"
 ---
 # <a name="microsoft-cloud-app-security-overview"></a>Présentation de Microsoft Cloud App Security
 
@@ -90,7 +90,7 @@ Le contrôle d’application par accès conditionnel de Microsoft Cloud App Secu
 - Obtenir une visibilité sur les points de terminaison non protégés afin de surveiller les opérations réalisées sur les appareils non gérés
 - Contrôler l’accès depuis des réseaux hors entreprise ou des adresses IP à risque
 
-### <a name="policy-control"></a>Contrôle des stratégies  
+### <a name="policy-control"></a>Contrôle de stratégie  
 
 Vous pouvez utiliser des stratégies pour définir le comportement de vos utilisateurs dans le cloud. Utilisez des stratégies pour détecter des comportements à risques, des violations, ou des points de données et des activités suspectes dans votre environnement cloud. Si nécessaire, vous pouvez utiliser des stratégies pour intégrer des processus de correction de façon à réduire complètement les risques. Les types de stratégies sont en corrélation avec les différents types d’informations que vous voulez collecter sur votre environnement cloud et les types d’actions correctives que vous pouvez entreprendre.  
 
@@ -102,4 +102,4 @@ Vous pouvez utiliser des stratégies pour définir le comportement de vos utilis
 
 Découvrez les concepts de base dans [Bien démarrer avec Cloud App Security](getting-started-with-cloud-app-security.md).    
 
-[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)   
+[!INCLUDE [Open support ticket](includes/support.md)].   

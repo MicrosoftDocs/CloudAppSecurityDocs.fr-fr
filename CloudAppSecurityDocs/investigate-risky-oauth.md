@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: adb9c8cceaab8158c194256ccd1e5cb0ecbaaa8a
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: e27aa1efc0abfa5af6d7005015062b7d8c43dcac
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71084354"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460693"
 ---
-# <a name="tutorial-investigate-risky-oauth-apps"></a>Didacticiel : Examiner des applications OAuth à risque
+# <a name="tutorial-investigate-risky-oauth-apps"></a>Tutoriel : Examiner des applications OAuth à risque
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 OAuth est un standard ouvert pour l’authentification basée sur un jeton et sur une autorisation. OAuth permet à des services tiers d’utiliser les informations de compte d’un utilisateur sans exposer le mot de passe d’utilisateur. OAuth fait Office d’intermédiaire pour le compte de l’utilisateur et fournit le service avec un jeton d’accès qui autorise le partage d’informations de compte spécifiques.
 
@@ -100,4 +100,4 @@ Après avoir déterminé qu’une application OAuth est risquée, Cloud App Secu
 
 [Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)
 
-[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

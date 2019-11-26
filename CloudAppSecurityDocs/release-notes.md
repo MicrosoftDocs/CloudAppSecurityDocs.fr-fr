@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ac326458d6e0f38c6ae9f8d21adcc0b31d412eed
-ms.sourcegitcommit: 1d5e5a5c418d698ba624660abf2873fce47da999
+ms.openlocfilehash: f8388a63aafc72981ae304c74e9ab545a4cb90fe
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73732015"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460475"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Nouveautés de Microsoft Cloud App Security
 
@@ -643,4 +643,4 @@ Publiée le 7 janvier 2018
 
 Pour obtenir une description des versions antérieures à celles répertoriées ici, consultez [Versions précédentes de Microsoft Cloud App Security](release-note-archive.md).
 
-[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]
