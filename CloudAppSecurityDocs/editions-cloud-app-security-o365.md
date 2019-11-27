@@ -5,22 +5,21 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 03/6/2019
+ms.date: 11/17/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: 49c12f7c-3fb8-46ac-b2ab-59ba6cf2ddfb
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 48338744f06740b88262e4a6fade7ab174b37400
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: fcaf4dab75d85a392ad4b1f8607f9e43d2a9be4c
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335699"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74459023"
 ---
 # <a name="what-are-the-differences-between-microsoft-cloud-app-security-and-office-365-cloud-app-security"></a>Quelles sont les différences entre Microsoft Cloud App Security et Office 365 Cloud App Security ?
 
@@ -30,13 +29,13 @@ Cet article décrit les différences entre Cloud App Security et Office 365 Clo
 
 Pour plus d’informations sur les licences, consultez la [fiche technique sur les licences Microsoft Cloud App Security](https://aka.ms/mcaslicensing).
 
-## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security 
+## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
 
 Microsoft Cloud App Security est une solution complète multiSaaS qui offre à vos applications cloud une meilleure visibilité, des contrôles de données puissants et une protection améliorée contre les menaces. Avec ce service, votre visibilité de l’informatique fantôme est améliorée grâce à la découverte des applications cloud utilisées. Vous pouvez contrôler et protéger les données des applications une fois que vous les avez approuvées auprès du service.
 
 ## <a name="office-365-cloud-app-security"></a>Office 365 Cloud App Security
 
-Office 365 Cloud App Security est une partie de Microsoft Cloud App Security qui offre une meilleure visibilité et un meilleur contrôle pour Office 365. Office 365 Cloud App Security comprend la détection des menaces basée sur les journaux d’activité des utilisateurs, la découverte de l’informatique fantôme pour les applications qui ont des fonctionnalités similaires aux produits Office 365 ainsi que le contrôle des autorisations d’applications dans Office 365.
+Office 365 Cloud App Security est une partie de Microsoft Cloud App Security qui offre une meilleure visibilité et un meilleur contrôle pour Office 365. Office 365 Cloud App Security comprend la détection des menaces basée sur les journaux d’activité des utilisateurs, la découverte de l’informatique fantôme pour les applications qui ont des fonctionnalités similaires aux produits Office 365, le contrôle des autorisations d’applications dans Office 365 ainsi que des contrôles d’application d’accès et de session.
 
 ### <a name="feature-support"></a>Prise en charge de la fonctionnalité
 
@@ -57,14 +56,13 @@ Office 365 Cloud App Security est une partie de Microsoft Cloud App Security qui
 ||Intégration à des solutions DLP tierces|Oui||
 |Détection des menaces|Détection d’anomalies et analytique comportementale|Pour les applications multi-SaaS, notamment Office 365|Pour les applications Office 365 |
 ||Correction d’alerte automatique et manuelle|Oui|Oui|
-||Connecteur SIEM|Oui. Alertes et journaux d’activité pour les applications multi-SaaS.|Oui. Alertes Office 365 uniquement.|
+||Connecteur SIEM|Oui. Alertes et journaux d’activité pour les applications multi-SaaS.|Pour les alertes Office 365 uniquement|
 ||Intégration à Microsoft Intelligent Security Graph|Oui|Oui|
 ||Stratégies d’activité|Oui|Oui|
+|Contrôle d’application par accès conditionnel|Surveillance et contrôle des sessions en temps réel|Toute application cloud ou locale|Pour les applications Office 365|
 
+## <a name="next-steps"></a>Étapes suivantes
 
+Découvrez les concepts de base dans [Bien démarrer avec Cloud App Security](getting-started-with-cloud-app-security.md).
 
-## <a name="next-steps"></a>Étapes suivantes  
-
-Découvrez les concepts de base dans [Bien démarrer avec Cloud App Security](getting-started-with-cloud-app-security.md).    
-
-[Les clients Premier peuvent également créer une demande de support directement dans le portail Premier.](https://premier.microsoft.com/)   
+[!INCLUDE [Open support ticket](includes/support.md)].
