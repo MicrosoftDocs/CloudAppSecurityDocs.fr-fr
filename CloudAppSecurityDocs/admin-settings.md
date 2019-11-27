@@ -33,14 +33,14 @@ Pour définir vos préférences en tant qu’administrateur de Microsoft Cloud A
   
 1.  Cliquez sur **Paramètres du compte**. Ici, vous pouvez définir et renouveler votre mot de passe pour accéder au portail Cloud App Security.  
   
-     ![custom user settings](./media/custom-user-settings.png "paramètres utilisateur personnalisés")  
+     ![paramètres utilisateur personnalisés](./media/custom-user-settings.png "paramètres utilisateur personnalisés")  
   
 2.  Cliquez sur **Notifications** et définissez les préférences de notification par courrier électronique et SMS pour les e-mails reçus du système.  Vous pouvez définir le niveau de gravité des alertes et des violations à recevoir par e-mail. Le niveau de gravité est défini par stratégie. Quand des violations sont déclenchées, vous recevez une notification par e-mail en fonction du paramètre défini ici et du paramètre de gravité défini dans la stratégie qui a été enfreinte. Les e-mails sont envoyés à l’alias associé au compte d’utilisateur administrateur que vous avez utilisé pour vous connecter à Cloud App Security. Entrez un numéro de téléphone afin que Cloud App Security puisse vous envoyer des SMS quand des alertes et des notifications sont envoyées et définissez le niveau de gravité pour lequel vous souhaitez recevoir des notifications par SMS.  
   
     > [!NOTE] 
     > Le nombre maximal d’alertes envoyées via SMS est de 10 par numéro de téléphone par jour. Le jour est calculé selon le fuseau horaire UTC. 
   
-    ![notification settings](./media/notification-settings.png "paramètres de notification")  
+    ![paramètres de notification](./media/notification-settings.png "paramètres de notification")  
   
 3. Quand vous avez terminé, cliquez sur **Enregistrer**.  
   

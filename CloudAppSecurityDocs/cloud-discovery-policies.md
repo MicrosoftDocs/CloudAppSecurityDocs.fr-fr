@@ -35,7 +35,7 @@ Grâce aux stratégies de découverte, vous pouvez définir des alertes qui vous
   
 2. Cliquez sur **Créer une stratégie** et sélectionnez **Stratégie de découverte d’application**.  
   
-     ![app discovery policy menu](./media/app-discovery-policy-menu.png "menu de stratégie de découverte d’application")  
+     ![menu stratégie de découverte d’application](./media/app-discovery-policy-menu.png "menu de stratégie de découverte d’application")  
   
 3. Attribuez un nom et une description à votre stratégie. Si vous le souhaitez, vous pouvez baser votre stratégie sur un modèle. Pour plus d’informations sur les modèles de stratégies, consultez [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md).  
   
@@ -67,7 +67,7 @@ Définissez des filtres de stratégie afin de découvrir les services appartenan
  Définissez les seuils qui doivent déclencher une alerte en cas de découverte d’une application donnée. Par exemple, déclenchez une alerte uniquement si plus de 100 utilisateurs de l’environnement ont utilisé l’application et s’ils ont téléchargé une certaine quantité de données à partir du service.
 En outre, vous pouvez définir la limite des alertes quotidiennes à recevoir.  
   
-![app discovery policy example](./media/app-discovery-policy-example.png "exemple de stratégie de découverte d’application")  
+![exemple de stratégie de découverte d’application](./media/app-discovery-policy-example.png "exemple de stratégie de découverte d’application")  
   
 ## <a name="cloud-discovery-anomaly-detection"></a>Détection d’anomalie de Cloud Discovery
 
@@ -77,7 +77,7 @@ Cloud App Security examine tous les journaux de votre environnement Cloud Discov
   
 2. Cliquez sur **Créer une stratégie** et sélectionnez **Créer une stratégie de détection des anomalies de Cloud Discovery**.  
   
-     ![cloud discovery anomaly detection policy menu](./media/cloud-discovery-anomaly-detection-policy-menu.png "menu de stratégie de détection des anomalies cloud discovery")  
+     ![menu de stratégie de détection des anomalies Cloud Discovery](./media/cloud-discovery-anomaly-detection-policy-menu.png "menu de stratégie de détection des anomalies cloud discovery")  
   
 3. Attribuez un nom et une description à votre stratégie. Si vous le souhaitez, vous pouvez baser la stratégie sur un modèle. Pour plus d’informations sur les modèles de stratégie, consultez [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md).  
   
@@ -95,7 +95,7 @@ Cloud App Security examine tous les journaux de votre environnement Cloud Discov
   
 8. Cliquez sur **Create (Créer)** .  
   
-![new discovery anomaly policy](./media/new-discovery-anomaly-policy.png "nouvelle stratégie de détection d’anomalie")  
+![nouvelle stratégie d’anomalie de découverte](./media/new-discovery-anomaly-policy.png "nouvelle stratégie de détection d’anomalie")  
   
 ## <a name="next-steps"></a>Étapes suivantes 
 [Stratégies d’activité utilisateur](user-activity-policies.md)   

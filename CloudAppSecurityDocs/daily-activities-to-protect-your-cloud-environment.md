@@ -48,7 +48,7 @@ Le tableau de bord Cloud App Security donne une vue d’ensemble des activités 
 
 Nous vous recommandons de vérifier le tableau de bord tous les jours pour voir les nouvelles alertes déclenchées. C’est un bon endroit pour surveiller l’intégrité de votre environnement cloud. Le tableau de bord vous permet de vous faire une idée de ce qui se passe.  
 
-![Cloud App Security dashboard](./media/dashboard.png "tableau de bord")  
+![Tableau de bord Cloud App Security](./media/dashboard.png "tableau de bord")  
 
 
 ## <a name="next-steps"></a>Étapes suivantes  

@@ -41,7 +41,7 @@ Le moteur combine trois aspects sous chaque stratégie :
 
 * Actions automatisées pour la gouvernance et la correction. Pour plus d’informations, consultez [Contrôle](control.md).
     > [!NOTE]
-    > Only one governance action can be applied per file; hence, where there are multiple file policy matches for a file, the governance action of the first triggered policy will be applied. For example, if a file policy has already applied an AIP label to a file, a second file policy cannot move the file to admin quarantine.
+    > Une seule action de gouvernance peut être appliquée par fichier ; par conséquent, lorsqu’il existe plusieurs correspondances de stratégie de fichier pour un fichier, l’action de gouvernance de la première stratégie déclenchée est appliquée. Par exemple, si une stratégie de fichier a déjà appliqué une étiquette AIP à un fichier, une deuxième stratégie de fichier ne peut pas déplacer le fichier vers la quarantaine administrateur.
 
 Une fois activée, la stratégie analyse en permanence votre environnement cloud et identifie les fichiers qui correspondent aux filtres de contenu et de contexte, puis applique les actions automatisées demandées. Ces stratégies détectent et corrigent toutes les violations concernant les informations au repos ou le contenu nouvellement créé. Les stratégies peuvent être surveillées avec des alertes en temps réel ou des rapports générés sur une console.
 
@@ -92,7 +92,7 @@ Pour créer une stratégie de fichier, procédez comme suit :
 
 1. Choisissez les actions de **gouvernance** que Cloud App Security doit exécuter quand une correspondance est détectée.
 
-1. Once you’ve created your policy, you can view it in the **File policy** tab. You can always edit a policy, calibrate its filters, or change the automated actions. La stratégie est automatiquement activée lors de la création et démarre immédiatement l’analyse de vos fichiers cloud.  Soyez vigilant quand vous définissez des actions de gouvernance. Elles peuvent entraîner une perte irréversible des autorisations d’accès à vos fichiers. Il est recommandé d’affiner les filtres pour représenter exactement les fichiers sur lesquels vous voulez agir, en utilisant plusieurs champs de recherche. Plus les filtres sont précis, mieux c’est. Pour obtenir des instructions, vous pouvez utiliser le bouton **Modifier et afficher un aperçu des résultats** dans la section Filtres.
+1. Une fois que vous avez créé votre stratégie, vous pouvez l’afficher sous l’onglet **stratégie de fichier** . Vous pouvez toujours modifier une stratégie, étalonner ses filtres ou modifier les actions automatisées. La stratégie est automatiquement activée lors de la création et démarre immédiatement l’analyse de vos fichiers cloud.  Soyez vigilant quand vous définissez des actions de gouvernance. Elles peuvent entraîner une perte irréversible des autorisations d’accès à vos fichiers. Il est recommandé d’affiner les filtres pour représenter exactement les fichiers sur lesquels vous voulez agir, en utilisant plusieurs champs de recherche. Plus les filtres sont précis, mieux c’est. Pour obtenir des instructions, vous pouvez utiliser le bouton **Modifier et afficher un aperçu des résultats** dans la section Filtres.
 
     ![stratégie de fichier, modifier et afficher un aperçu des résultats](./media/file-policy-edit-and-preview-results.png)
 
@@ -114,11 +114,11 @@ Chaque stratégie comprend les éléments suivants :
 
 * **Extensions** - L’inspection du contenu peut être effectuée via des moteurs tiers pour améliorer les fonctionnalités DLP ou antiprogramme malveillant.
 
-## <a name="file-queries"></a>File queries
+## <a name="file-queries"></a>Requêtes de fichier
 
 Pour faciliter encore plus les recherches, vous pouvez désormais créer des requêtes personnalisées et les enregistrer pour les utiliser ultérieurement.
 
-1. In the **File** page, use the filters as described above to drill down into your apps as necessary.
+1. Dans la page **fichier** , utilisez les filtres comme décrit ci-dessus pour accéder à vos applications en fonction des besoins.
 
 1. Une fois que vous avez terminé de générer votre requête, cliquez sur le bouton **Enregistrer sous** en haut à droite des filtres.
 

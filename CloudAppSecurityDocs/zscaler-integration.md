@@ -32,7 +32,7 @@ Si vous travaillez avec Cloud App Security et Zscaler, vous pouvez intégrer les
 - Les fonctionnalités de blocage de Zscaler sont automatiquement appliquées sur les applications que vous définissez comme non approuvées dans Cloud App Security.
 - Améliorez votre portail Zscaler avec l’évaluation du risque de Cloud App Security pour 200 applications cloud de pointe, qui peuvent être affichées directement dans le portail Zscaler.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Conditions préalables requises
 
 - Licence valide pour Microsoft Cloud App Security
 - Licence valide pour Zscaler Cloud 5.6

@@ -48,7 +48,7 @@ Vous pouvez importer n’importe quel groupe à partir de vos applications conne
 
 ## <a name="how-to-import-user-groups"></a>Importer des groupes d’utilisateurs
 
-1. In the menu bar, click the settings icon ![settings icon](./media/settings-icon.png "icône des paramètres") and select **User groups**.
+1. Dans la barre de menus, cliquez sur l' ![icône](./media/settings-icon.png "icône des paramètres") des paramètres icône des paramètres et sélectionnez **groupes d’utilisateurs**.
 1. Cliquez sur **Importer le groupe d’utilisateurs**.
 
     ![Importer des groupes d’utilisateurs](./media/user-groups-add.png)
@@ -63,7 +63,7 @@ L’importation de groupes vous permet de sélectionner ces groupes comme filtre
 
 > [!NOTE]
 >
-> - There may be a short delay until imported user groups are available in filters.
+> - Il peut y avoir un bref délai jusqu’à ce que les groupes d’utilisateurs importés soient disponibles dans les filtres.
 > - Seules les activités effectuées après l’importation d’un groupe d’utilisateurs sont marquées comme ayant été effectuées par un membre du groupe d’utilisateurs.
 > - Après la synchronisation initiale, les groupes sont mis à jour toutes les heures.
 

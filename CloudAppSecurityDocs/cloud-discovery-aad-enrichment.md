@@ -42,7 +42,7 @@ Les données Cloud Discovery peuvent maintenant être enrichies avec des donnée
      
 2. Sous l’onglet **Enrichissement de l’utilisateur**, sélectionnez **Enrichir les identificateurs d’utilisateurs découverts avec les noms d’utilisateurs Azure Active Directory**. Cette option permet à Cloud App Security d’utiliser les données Azure Active Directory pour enrichir les noms d’utilisateur par défaut.
 
-3. Cliquez sur **Save**.
+3. Cliquez sur **Enregistrer**.
  
 ![Enrichir Cloud App Security Discovery avec des noms d’utilisateur Azure AD](./media/discovery-enrichment.png)
   

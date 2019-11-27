@@ -22,7 +22,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 11/24/2019
 ms.locfileid: "74461168"
 ---
-# <a name="activities"></a>Activités
+# <a name="activities"></a>activités
 
 *S’applique à : Microsoft Cloud App Security*
 
@@ -72,10 +72,10 @@ Vous pouvez afficher plus d’informations supplémentaires sur chaque activité
  - Afficher des activités du même type
  - Afficher toutes les activités du même utilisateur
  - Afficher les activités à partir de la même adresse IP
- - View activities from the same geographic location
+ - Afficher les activités à partir du même emplacement géographique
  - Afficher les activités dans la même période (48 heures)
  
-![activity drawer](./media/activity-drawer.png "tiroir activité")  
+![tiroir activité](./media/activity-drawer.png "tiroir activité")  
   
 Pour obtenir la liste des actions de gouvernance disponibles, consultez [Actions de gouvernance des activités](governance-actions.md#activity-governance-actions).
 

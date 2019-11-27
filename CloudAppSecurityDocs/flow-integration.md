@@ -21,13 +21,13 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 11/24/2019
 ms.locfileid: "74459186"
 ---
-# <a name="integrate-with-flow-for-custom-alert-automation"></a>Integrate with Flow for custom alert automation
+# <a name="integrate-with-flow-for-custom-alert-automation"></a>Intégrer avec Flow pour l’automatisation des alertes personnalisée
 
 *S’applique à : Microsoft Cloud App Security*
 
 Vous pouvez intégrer Cloud App Security à [Microsoft Flow](https://docs.microsoft.com/flow/getting-started) pour assurer l’automatisation et fournir des playbooks d’orchestration à la suite d’alertes personnalisées. Grâce à l’[écosystème de connecteurs](https://docs.microsoft.com/connectors/) disponible dans Microsoft Flow, vous pouvez automatiser le déclenchement de playbooks quand Cloud App Security génère des alertes. Vous pouvez par exemple créer automatiquement un problème dans un système de gestion de tickets à l’aide du [connecteur ServiceNow](https://docs.microsoft.com/connectors/service-now/) ou envoyer un e-mail d’approbation pour exécuter une action de gouvernance personnalisée quand une alerte est déclenchée dans Cloud App Security.  
 
-## <a name="prerequisites"></a>Conditions préalables 
+## <a name="prerequisites"></a>Conditions préalables requises 
 
  - Vous devez avoir un [plan Microsoft Flow](https://flow.microsoft.com/pricing) valide.
 

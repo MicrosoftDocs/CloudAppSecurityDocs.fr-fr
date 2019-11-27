@@ -34,7 +34,7 @@ Microsoft Cloud App Security tire profit des API proposées par le fournisseur d
 Cloud App Security prend en charge plusieurs instances de la même application connectée. Par exemple, si vous avez plusieurs instances de Salesforce (une pour les ventes, une pour le marketing), vous pouvez vous connecter à Cloud App Security. Vous pouvez gérer les différentes instances à partir de la même console pour créer des stratégies granulaires et mener une investigation plus approfondie. Cette prise en charge s’applique uniquement aux applications connectées à des API, pas aux applications découvertes dans le cloud ni aux applications connectées à des proxys.
 
 > [!NOTE]
-> Multi-instance is not supported for Office 365 and Azure.
+> Multi-instance n’est pas pris en charge pour Office 365 et Azure.
 
 ## <a name="how-it-works"></a>Fonctionnement
 
@@ -68,24 +68,24 @@ Le tableau suivant répertorie, par application cloud, les fonctionnalités pris
 
 > [!div class="mx-tableFixed"]
 >
-> | | AWS | Zone | Dropbox | GCP | G Suite | Office 365 | Okta | Service Now | Salesforce | Webex | Workday |
+> | | AWS | Box | Dropbox | GCP | G Suite | Office 365 | Okta | Service maintenant | Salesforce | WebEx | Workday |
 > |-|-|-|-|-|-|-|-|-|-|-|-|
-> | **Répertorier les comptes** | ✔ | ✔ | ✔ | Subject G Suite connection | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-> | **List groups** | ✔ | ✔ | ✔ | Subject G Suite connection | ✔ | ✔ | ✔ | ✔ | ✔ | | Non prise en charge par le fournisseur |
-> | **List privileges** | | ✔ | ✔ | Subject G Suite connection | ✔ | ✔ | Non prise en charge par le fournisseur | ✔ | ✔ | ✔ | Not pported by provider |
-> | **Gouvernance des utilisateurs** | | ✔ | Bientôt disponible | Subject G Suite connection | ✔ | ✔ | | Bientôt disponible | ✔ | Bientôt disponible | t supported by provider |
-> | **Activité de connexion** | ✔ | ✔ | ✔ | Subject G Suite connection | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-> | **Activité de l’utilisateur** | Not applicable | ✔ | ✔ | ✔ | ✔ - nécessite Google Business ou Entreprises | ✔ | ✔ | Partielle | Supported with lesforce Shield | ✔ | ✔ |
-> | **Activité d’administration** | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | Partielle | ✔ | ✔ | Non prise en charge par le fournisseur |
-> | **DLP - Periodic scan** | | ✔ | Bientôt disponible | Not applicable | ✔ | ✔ | Not applicable | | | | Not supported by ovider |
-> | **DLP - Near-real-time scan** | | ✔ | ✔ | Not applicable | ✔ - requires Google Business Enterprise | ✔ | Not applicable | ✔ | ✔ | ✔ | Non prise en charge par le fournisseur |
-> | **Contrôle partagé** | ✔ | ✔ | ✔ | Not applicable | ✔ | ✔ | Not applicable | Not applicable | | ✔ | Not supported by ovider |
-> | **File governance** | ✔ | ✔ | ✔ | Not applicable | ✔ | ✔ | Not applicable | | ✔ | | Non prise en charge par le fournisseur |
-> | **Voir les autorisations d’application** | Not applicable | Non prise en charge par le fournisseur | Coming on | Not applicable | ✔ | ✔ | Not applicable | | ✔ | Not applicable | Not applicable |
-> | **Révoquer les autorisations d’application** | Not applicable | Non prise en charge par le fournisseur | ming soon | Not applicable | ✔ | ✔ | Not applicable | | ✔ | Not applicable | Not applicable |
-> | **Appliquer des étiquettes Azure Information Protection** | Not applicable | ✔ | | Not applicable | ✔ | ✔ | Not applicable | | | Not applicable | Not applicable |
+> | **Répertorier les comptes** | ✔ | ✔ | ✔ | Connexion de l’objet G suite | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+> | **Liste des groupes** | ✔ | ✔ | ✔ | Connexion de l’objet G suite | ✔ | ✔ | ✔ | ✔ | ✔ | | Non prise en charge par le fournisseur |
+> | **Liste des privilèges** | | ✔ | ✔ | Connexion de l’objet G suite | ✔ | ✔ | Non prise en charge par le fournisseur | ✔ | ✔ | ✔ | Non pported par le fournisseur |
+> | **Gouvernance des utilisateurs** | | ✔ | Bientôt disponible | Connexion de l’objet G suite | ✔ | ✔ | | Bientôt disponible | ✔ | Bientôt disponible | t pris en charge par le fournisseur |
+> | **Activité de connexion** | ✔ | ✔ | ✔ | Connexion de l’objet G suite | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+> | **Activité de l’utilisateur** | Non applicable | ✔ | ✔ | ✔ | ✔ - nécessite Google Business ou Entreprises | ✔ | ✔ | Partiel | Pris en charge avec lesforce Shield | ✔ | ✔ |
+> | **Activité d’administration** | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | Partiel | ✔ | ✔ | Non prise en charge par le fournisseur |
+> | **DLP-analyse périodique** | | ✔ | Bientôt disponible | Non applicable | ✔ | ✔ | Non applicable | | | | Non pris en charge par ovider |
+> | **Analyse DLP en temps quasi réel** | | ✔ | ✔ | Non applicable | ✔-nécessite Google Business Enterprise | ✔ | Non applicable | ✔ | ✔ | ✔ | Non prise en charge par le fournisseur |
+> | **Contrôle partagé** | ✔ | ✔ | ✔ | Non applicable | ✔ | ✔ | Non applicable | Non applicable | | ✔ | Non pris en charge par ovider |
+> | **Gouvernance des fichiers** | ✔ | ✔ | ✔ | Non applicable | ✔ | ✔ | Non applicable | | ✔ | | Non prise en charge par le fournisseur |
+> | **Voir les autorisations d’application** | Non applicable | Non prise en charge par le fournisseur | En provenance | Non applicable | ✔ | ✔ | Non applicable | | ✔ | Non applicable | Non applicable |
+> | **Révoquer les autorisations d’application** | Non applicable | Non prise en charge par le fournisseur | Ming bientôt | Non applicable | ✔ | ✔ | Non applicable | | ✔ | Non applicable | Non applicable |
+> | **Appliquer des étiquettes Azure Information Protection** | Non applicable | ✔ | | Non applicable | ✔ | ✔ | Non applicable | | | Non applicable | Non applicable |
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Conditions préalables requises
 
 - Pour certaines applications, vous pouvez être amené à ajouter des adresses IP à la liste verte pour permettre à Cloud App Security de collecter les journaux et de fournir un accès pour la console Cloud App Security. Pour plus d’informations, consultez [Configuration requise pour le réseau](network-requirements.md).
 
@@ -100,16 +100,16 @@ Pour utiliser des connecteurs d’applications, vous devez vérifier que vous av
 |-----|--------------|------|
 | Azure | | Administrateur général |
 | AWS | | Utilisateur récemment créé |
-| Zone | Enterprise | It's strongly recommended that you connect to Box as an Admin. Connecting as a Coadmin will result in only partial data visibility. Si vous vous connectez en tant que coadministrateur, sélectionnez toutes les autorisations. |
-| Dropbox | Business/Entreprises | Administration |
-| GCP | | See the [connect GCP prerequisites](connect-google-gcp-to-microsoft-cloud-app-security.md#prerequisites) |
+| Box | Entreprise | Il est fortement recommandé de vous connecter à Box en tant qu’administrateur. La connexion en tant que coadministrateur entraînera uniquement une visibilité partielle des données. Si vous vous connectez en tant que coadministrateur, sélectionnez toutes les autorisations. |
+| Dropbox | Business/Entreprises | Administrateur |
+| GCP | | Consultez les [conditions préalables Connect GCP](connect-google-gcp-to-microsoft-cloud-app-security.md#prerequisites) |
 | G Suite | Compte G Suite Business ou Entreprise<br /><br />G Suite Enterprise (au minimum) | Super administrateur |
 | Office 365 | | Administrateur général |
-| Okta | Enterprise (pas la version d’essai) | Administration |
-| Salesforce | | Administration |
-| ServiceNow | Eureka et au-dessus | Admin + RestAPI role |
-| Webex | | Admin + Compliance Admin |
-| Workday | | See the [connect Workday prerequisites](connect-workday-to-microsoft-cloud-app-security.md#prerequisites) |
+| Okta | Enterprise (pas la version d’essai) | Administrateur |
+| Salesforce | | Administrateur |
+| ServiceNow | Eureka et au-dessus | Rôle admin + RestAPI |
+| WebEx | | Admin + conformité administrateur |
+| Workday | | Consultez les [conditions préalables Connect](connect-workday-to-microsoft-cloud-app-security.md#prerequisites) de la journée de travail |
 
 ### <a name="expressroute"></a>ExpressRoute
 

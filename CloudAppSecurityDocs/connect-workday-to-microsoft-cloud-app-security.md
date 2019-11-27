@@ -1,6 +1,6 @@
 ---
-title: Connect Workday to Cloud App Security (Preview)
-description: This article provides information about how to connect your Workday app to Cloud App Security using the API connector for visibility and control over use.
+title: Connecter un jour ouvré à Cloud App Security (version préliminaire)
+description: Cet article fournit des informations sur la connexion de votre application de jour de travail à Cloud App Security à l’aide du connecteur API pour la visibilité et le contrôle de l’utilisation.
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -21,90 +21,90 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 11/24/2019
 ms.locfileid: "74461006"
 ---
-# <a name="connect-workday-to-microsoft-cloud-app-security-preview"></a>Connect Workday to Microsoft Cloud App Security (Preview)
+# <a name="connect-workday-to-microsoft-cloud-app-security-preview"></a>Connecter un jour ouvré à Microsoft Cloud App Security (version préliminaire)
 
 *S’applique à : Microsoft Cloud App Security*
 
-This article provides instructions for connecting Microsoft Cloud App Security to your existing Workday account using the app connector API. This connection gives you visibility into and control over Workday use.
+Cet article fournit des instructions pour connecter Microsoft Cloud App Security à votre compte de jour de travail existant à l’aide de l’API du connecteur d’applications. Cette connexion vous donne une visibilité et un contrôle sur l’utilisation des jours de travail.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Conditions préalables requises
 
-The Workday account used for connecting to Cloud App Security must be a member of a security group (new or existing). We recommended using a Workday Integration System User. The security group must have the following permissions selected for the following domain security policies:
+Le compte de jour de travail utilisé pour la connexion à Cloud App Security doit être membre d’un groupe de sécurité (nouveau ou existant). Nous vous recommandons d’utiliser un utilisateur système d’intégration de jours ouvrables. Les autorisations suivantes doivent être sélectionnées pour le groupe de sécurité pour les stratégies de sécurité de domaine suivantes :
 
-| Functional area | Domain Security policy | Subdomain Security policy | Autorisations de rapport/tâche | Autorisations d'intégration |
+| Zone fonctionnelle | Stratégie de sécurité du domaine | Stratégie de sécurité des sous-domaines | Autorisations de rapport/tâche | Autorisations d'intégration |
 | --- | --- | --- | --- | --- |
-| d'exploitation | Set Up: Tenant Setup – General | Set Up: Tenant Setup –  Security | View, Modify | Get, Put |
-| d'exploitation | Administration de la sécurité | | View, Modify | Get, Put |
-| d'exploitation | System auditing | | Affichez | Obtenir |
-| Effectifs | Worker Data: Staffing | Worker Data: Public Worker Reports | Affichez | Obtenir |
+| System | Configuration : configuration du locataire – général | Configuration : configuration du client – sécurité | Afficher, modifier | Acquérir, put |
+| System | Administration de la sécurité | | Afficher, modifier | Acquérir, put |
+| System | Audit du système | | Vue | Obtenir |
+| Effectifs | Données de travail : personnel | Données de travail : rapports de travail public | Vue | Obtenir |
 
 > [!NOTE]
 >
-> * The account that is used to set up permissions for the security group must be a Workday Administrator.
-> * To set permissions, search for "Domain Security Policies for Functional Area", then search for each functional area ("System"/"Staffing") and grant the permissions listed in the table.
-> * Once all permissions have been set, search for "Activate Pending Security Policy Changes" and approve the changes.
+> * Le compte utilisé pour configurer les autorisations pour le groupe de sécurité doit être un administrateur de jours de travail.
+> * Pour définir des autorisations, recherchez « stratégies de sécurité de domaine pour la zone fonctionnelle », puis recherchez chaque zone fonctionnelle (« système »/« personnel ») et accordez les autorisations indiquées dans le tableau.
+> * Une fois que toutes les autorisations ont été définies, recherchez « activer les modifications de stratégie de sécurité en attente » et approuvez les modifications.
 
-For more information about setting up Workday integration users, security groups, and permissions, see steps 1 to 4 of the [Grant Integration or External Endpoint Access to Workday](https://go.microsoft.com/fwlink/?linkid=2103212) guide (accessible with Workday documentation/community credentials).
+Pour plus d’informations sur la configuration des utilisateurs d’intégration des jours de travail, des groupes de sécurité et des autorisations, consultez les étapes 1 à 4 du Guide d' [intégration ou d’accès du point de terminaison externe au jour](https://go.microsoft.com/fwlink/?linkid=2103212) ouvrable (accessible avec la documentation des jours de travail/informations d’identification de la Communauté).
 
-## <a name="how-to-connect-workday-to-cloud-app-security-using-oauth"></a>How to connect Workday to Cloud App Security using OAuth
+## <a name="how-to-connect-workday-to-cloud-app-security-using-oauth"></a>Connexion de la journée de travail à Cloud App Security à l’aide d’OAuth
 
-1. Sign in to Workday with an account that is a member of the security group mentioned in the prerequisites.
+1. Connectez-vous à la journée de travail à l’aide d’un compte membre du groupe de sécurité mentionné dans les conditions préalables.
 
-1. Search for "Edit tenant setup – system", and under **User Activity Logging**, select **Enable User Activity Logging**.
+1. Recherchez « modifier le paramétrage du locataire – système », puis, sous **Journal d’activité utilisateur**, sélectionnez **activer la journalisation**de l’activité des utilisateurs.
 
-    ![Screenshot of allowing user activity logging](media/connect-workday-enable-logging.png)
+    ![Capture d’écran de l’autorisation de la journalisation des activités des utilisateurs](media/connect-workday-enable-logging.png)
 
-1. Search for "Edit tenant setup – security", and under **OAuth 2.0 Settings**, select **OAuth 2.0 Clients Enabled**.
+1. Recherchez « modifier le paramétrage du locataire – sécurité », puis sous **paramètres oauth 2,0**, sélectionnez **clients OAuth 2,0 activés**.
 
-1. Search for "Register API Client" and select **Register API Client – Task**.
+1. Recherchez « Register API client » et sélectionnez **Register API client-Task**.
 
-1. On the **Register API Client** page, fill out the following information, and then click **OK**.
+1. Dans la page **inscrire le client** de l’API, renseignez les informations suivantes, puis cliquez sur **OK**.
 
-    | Nom de champ | Value |
+    | Nom du champ | Valeur |
     | ---- | ---- |
-    | Client Name | Microsoft Cloud App Security |
-    | Client Grant Type | Authorization Code Grant |
-    | Access Token Type | Porteur |
-    | Redirection URI | `https://portal.cloudappsecurity.com/api/oauth/connect` |
-    | OAuth2 Scopes | **Staffing** and **System** |
-    | Scope (Functional Areas) | **Staffing** and **System** |
+    | Nom du client | Microsoft Cloud App Security |
+    | Type d’octroi client | Octroi de code d’autorisation |
+    | Type de jeton d’accès | Porteur |
+    | URI de redirection | `https://portal.cloudappsecurity.com/api/oauth/connect` |
+    | Étendues OAuth2 | **Personnel** et **système** |
+    | Étendue (zones fonctionnelles) | **Personnel** et **système** |
 
-    ![Screenshot of registering API client](media/connect-workday-register-api-client.png)
+    ![Capture d’écran de l’inscription du client API](media/connect-workday-register-api-client.png)
 
-1. Once registered, make a note for the following parameters, and then click **Done**.
+1. Une fois inscrit, prenez note des paramètres suivants, puis cliquez sur **terminé**.
 
     * ID de client
-    * Client Secret
-    * Workday REST API Endpoint
-    * Token Endpoint
-    * Authorization Endpoint
+    * Clé secrète client
+    * Point de terminaison de l’API REST de travail
+    * Point de terminaison de jeton
+    * Point de terminaison d’autorisation
 
-    ![Screenshot of confirming registration of API client](media/connect-workday-register-api-client-confirm.png)
+    ![Capture d’écran de confirmation de l’inscription de l’API client](media/connect-workday-register-api-client-confirm.png)
 
-1. In the Cloud App Security portal, click **Investigate** and then click **Connected Apps**.
+1. Dans le portail Cloud App Security, cliquez sur **examiner** , puis sur **applications connectées**.
 
-1. In the **App connectors** page, click the plus button and then **Workday**.
+1. Dans la page **connecteurs d’application** , cliquez sur le bouton plus, puis sur jour de **travail**.
 
-    ![Screenshot of adding app connector](media/connect-workday-add-app.png)
+    ![Capture d’écran de l’ajout d’un connecteur d’application](media/connect-workday-add-app.png)
 
-1. In the popup, add your instance name and then click **Connect Workday**.
+1. Dans la fenêtre contextuelle, ajoutez le nom de votre instance, puis cliquez sur **connecter un jour ouvré**.
 
-    ![Screenshot of adding instance name](media/connect-workday-add-app-connect.png)
+    ![Capture d’écran de l’ajout d’un nom d’instance](media/connect-workday-add-app-connect.png)
 
-1. On the next page, fill out the details with the information you noted earlier, and then click **Connect in Workday**.
+1. Sur la page suivante, renseignez les détails avec les informations que vous avez notées précédemment, puis cliquez sur **se connecter dans les jours ouvrés**.
 
-    ![Screenshot of filling out app details](media/connect-workday-add-app-connect-details.png)
+    ![Capture d’écran de remplissage des détails de l’application](media/connect-workday-add-app-connect-details.png)
 
-1. In Workday, a popup will ask you if you want to allow Cloud App Security access to your Workday account. Pour continuer, cliquez sur **Autoriser**.
+1. Dans la journée de travail, une fenêtre contextuelle vous demande si vous souhaitez autoriser Cloud App Security accès à votre compte de jours ouvrés. Pour continuer, cliquez sur **Autoriser**.
 
-    ![Screenshot of authorizing access to app](media/connect-workday-add-app-allow.png)
+    ![Capture d’écran de l’autorisation d’accès à l’application](media/connect-workday-add-app-allow.png)
 
-1. Back in the Cloud App Security portal, you should see a message that Workday was successfully connected. Vérifiez que la connexion a réussi en cliquant sur **Tester l’API**.
+1. De retour dans le portail Cloud App Security, vous devriez voir un message indiquant que la journée de travail a été correctement connectée. Vérifiez la connexion en cliquant sur **Test API** (Tester l’API).
 
     Le test peut prendre quelques minutes. Une fois averti que la connexion a réussi, cliquez sur **Fermer**.
 
 > [!NOTE]
-> After connecting Workday, you'll receive events for seven days prior to connection.
+> Après la connexion de la journée de travail, vous recevrez des événements pendant sept jours avant la connexion.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

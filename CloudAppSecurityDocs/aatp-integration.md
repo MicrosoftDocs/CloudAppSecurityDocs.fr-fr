@@ -1,6 +1,6 @@
 ---
-title: Integrate Azure Advanced Threat Protection with Cloud App Security
-description: This article provides information about how to leverage Azure Advanced Threat Protection insights in Cloud App Security for hybrid risk detection.
+title: Intégrer Azure-protection avancée contre les menaces avec Cloud App Security
+description: Cet article fournit des informations sur la façon d’exploiter Azure Advanced Threat Protection Insights dans Cloud App Security pour la détection hybride des risques.
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -21,54 +21,54 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 11/24/2019
 ms.locfileid: "74460934"
 ---
-# <a name="azure-advanced-threat-protection-integration"></a>Azure Advanced Threat Protection integration
+# <a name="azure-advanced-threat-protection-integration"></a>Intégration d’Azure-protection avancée contre les menaces
 
 *S’applique à : Microsoft Cloud App Security*
 
-Microsoft Cloud App Security integrates with Azure Advanced Threat Protection (Azure ATP) to provide user entity behavioral analytics (UEBA) across a hybrid environment - both cloud app and on-premises, for more information, see [Tutorial: Investigate risky users](tutorial-ueba.md) For more information about the machine learning and behavioral analytics provided by Azure ATP, see [What is Azure ATP?](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp).
+Microsoft Cloud App Security s’intègre à Azure-protection avancée contre les menaces (Azure ATP) pour fournir une analyse comportementale des entités utilisateur (UEBA) dans un environnement hybride (à la fois une application Cloud et une application en local). pour plus d’informations, consultez [Didacticiel : examiner les utilisateurs à risque](tutorial-ueba.md) pour plus d’informations sur les machine learning et l’analyse comportementale fournis par [Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)Azure ATP
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Conditions préalables requises
 
 Pour procéder à un examen complet d’un utilisateur dans un environnement hybride, les éléments suivants sont nécessaires :
 
 - Licence valide pour Azure ATP connectée à votre instance Active Directory
-- You must be a global admin to enable integration between Azure ATP and Microsoft Cloud App Security
-- If do not have Azure ATP, try it now
+- Vous devez être administrateur général pour activer l’intégration entre Azure ATP et Microsoft Cloud App Security
+- Si vous n’avez pas Azure ATP, essayez-le maintenant
 
 >[!NOTE]
->If you don't have a subscription for Microsoft Cloud App Security, you will still be able to use the Cloud App Security portal to get Azure ATP insights.
+>Si vous n’avez pas d’abonnement pour Microsoft Cloud App Security, vous pouvez toujours utiliser le portail Cloud App Security pour obtenir Azure ATP Insights.
 
-## <a name="enable-azure-advanced-threat-protection"></a>Enable Azure Advanced Threat Protection
+## <a name="enable-azure-advanced-threat-protection"></a>Activer Azure-protection avancée contre les menaces
 
-To enable Cloud App Security integration with Azure ATP:
+Pour activer l’intégration de Cloud App Security avec Azure ATP :
 
-1. In Cloud App Security, under the settings cog, select **Settings**.
+1. Dans Cloud App Security, sous l’roue dentée paramètres, sélectionnez **paramètres**.
 
-   ![Settings menu](media/azip-system-settings.png)
+   ![Menu paramètres](media/azip-system-settings.png)
 
-1. Under **Threat Protection**, select **Azure ATP**.
+1. Sous **protection contre les menaces**, sélectionnez **Azure ATP**.
 
-    ![enable azure advanced threat protection](media/aatp-integration.png)
+    ![activer Azure-protection avancée contre les menaces](media/aatp-integration.png)
 
-1. Select **Connect Azure ATP data including alerts and activities with Cloud App Security** and then click **Save**.
-
-> [!NOTE]
-> It may take up to 12 hours until the integration takes effect.
-
-After enabling Azure Advanced Threat Protection integration, you'll be able to see on-premises activities for all the users in your organization. You will also get advanced insights on your users that combine alerts and suspicious activities across your cloud and on-premises environments.
-
-## <a name="disable-azure-advanced-threat-protection"></a>Disable Azure Advanced Threat Protection
-
-To disable Cloud App Security integration with Azure ATP:
-
-1. In Cloud App Security, under the settings cog, select **Settings**.
-
-1. Under **Threat Protection**, select **Azure ATP**.
-
-1. Clear **Connect Azure ATP data including alerts and activities with Cloud App Security** and then click **Save**.
+1. Sélectionnez **se connecter Azure ATP données, notamment les alertes et les activités avec Cloud App Security** puis cliquez sur **Enregistrer**.
 
 > [!NOTE]
-> Existing azure ATP data is kept in accordance with Cloud App Security retention policies but the Identity Security Posture assessments are removed.
+> Cela peut prendre jusqu’à 12 heures jusqu’à ce que l’intégration prenne effet.
+
+Après l’activation de l’intégration d’Azure-protection avancée contre les menaces, vous pouvez voir les activités locales pour tous les utilisateurs de votre organisation. Vous obtiendrez également des Insights avancés sur vos utilisateurs qui combinent des alertes et des activités suspectes dans vos environnements Cloud et locaux.
+
+## <a name="disable-azure-advanced-threat-protection"></a>Désactiver Azure-protection avancée contre les menaces
+
+Pour désactiver l’intégration Cloud App Security avec Azure ATP :
+
+1. Dans Cloud App Security, sous l’roue dentée paramètres, sélectionnez **paramètres**.
+
+1. Sous **protection contre les menaces**, sélectionnez **Azure ATP**.
+
+1. Désactivez **connexion Azure ATP données, notamment les alertes et les activités avec Cloud App Security** puis cliquez sur **Enregistrer**.
+
+> [!NOTE]
+> Les données Azure ATP existantes sont conservées conformément aux stratégies de rétention de Cloud App Security, mais les évaluations de la sécurité des identités sont supprimées.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

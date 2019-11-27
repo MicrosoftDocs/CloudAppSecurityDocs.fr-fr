@@ -59,7 +59,7 @@ Publiée le 26 novembre 2017
 
 - L’inspection de contenu vous permet désormais de faire la distinction entre le contenu, les métadonnées et le nom de fichier, pour vous permettre de sélectionner l’élément à inspecter.
 
-- Une nouvelle action de gouvernance a été ajoutée pour G Suite. Vous pouvez désormais **Réduire l’accès public** aux fichiers partagés. Cette action vous permet de définir les fichiers disponibles publiquement comme étant accessibles uniquement avec un lien partagé.
+- Une nouvelle action de gouvernance a été ajoutée pour G Suite. Vous pouvez désormais **Réduire l’accès public** aux fichiers partagés. Cette action vous permet de définir les fichiers publiquement disponibles comme étant accessibles uniquement avec un lien partagé.
 
 - Toutes les activités de connexion OKTA à d’autres applications s’affichent désormais dans Cloud App Security comme provenant d’OKTA. Vous pouvez afficher et filtrer en fonction de l’application cible vers laquelle la connexion a été effectuée dans le champ **Objets d’activité** de l’activité.
 
@@ -78,7 +78,7 @@ Publiée le 12 novembre 2017
 
 Publication : 29 octobre 2017 
 
-- Le lancement de la fonctionnalité de proxy Microsoft Cloud App Security est en cours. Le proxy Microsoft Cloud App Security vous fournit les outils dont vous avez besoin pour obtenir une visibilité et un contrôle en temps réel de l’accès à votre environnement cloud et des activités qui y sont effectuées. Exemple :
+- Le lancement de la fonctionnalité de proxy Microsoft Cloud App Security est en cours. Le proxy Microsoft Cloud App Security vous fournit les outils dont vous avez besoin pour obtenir une visibilité et un contrôle en temps réel de l’accès à votre environnement cloud et des activités qui y sont effectuées. Par exemple :
 
   - Évitez les fuites de données en bloquant les téléchargements avant qu’ils ne se produisent.
   - Définissez des règles qui forcent le chiffrement des données stockées dans le cloud et téléchargées à partir du cloud.
@@ -221,7 +221,7 @@ Publication : 4 juin 2017
 
 **Nouvelles fonctionnalités :**
 
-- RBAC for Security Readers completed roll out. This feature enables you to manage the permissions you grant to your admins inside the Cloud App Security console. Par défaut, tous les administrateurs Azure Active Directory, les administrateurs généraux Office 365 et les administrateurs de sécurité disposent des autorisations complètes dans le portail. Tous les lecteurs Sécurité dans Azure Active Directory et Office 365 ont un accès en lecture seule dans Cloud App Security. Vous pouvez ajouter des administrateurs ou remplacer des autorisations à l’aide de l’option « Gérer l’accès ». Pour plus d’informations, consultez [Gestion des autorisations d’administration](manage-admins.md).
+- Déploiement terminé du RBAC pour les lecteurs de sécurité. Cette fonctionnalité vous permet de gérer les autorisations que vous accordez à vos administrateurs à l’intérieur de la console Cloud App Security. Par défaut, tous les administrateurs Azure Active Directory, les administrateurs généraux Office 365 et les administrateurs de sécurité disposent des autorisations complètes dans le portail. Tous les lecteurs Sécurité dans Azure Active Directory et Office 365 ont un accès en lecture seule dans Cloud App Security. Vous pouvez ajouter des administrateurs ou remplacer des autorisations à l’aide de l’option « Gérer l’accès ». Pour plus d’informations, consultez [Gestion des autorisations d’administration](manage-admins.md).
 - Nous déployons maintenant des rapports détaillés d’intelligence des menaces pour les adresses IP à risque détectées par Microsoft Intelligent Security Graph. Quand une activité est effectuée par un botnet, vous voyez le nom du botnet (s’il est disponible) avec un lien vers un rapport détaillé sur ce botnet.
  
 ### <a name="cloud-app-security-release-97"></a>Cloud App Security version 97
@@ -314,7 +314,7 @@ Publication : 20 mars 2017
 - Le connecteur d’applications Cloud App Security pour ServiceNow a été étendu pour prendre en charge les jetons OAuth (nouveauté pour Genève, Helsinki, Istanbul). Cette modification fournit une connexion d’API plus robuste à ServiceNow, qui ne s’appuie pas sur l’utilisateur du déploiement. Pour plus d’informations, consultez [Connecter ServiceNow à Microsoft Cloud App Security](connect-servicenow-to-microsoft-cloud-app-security.md). Les clients existants peuvent mettre à jour leurs paramètres dans la page du connecteur d’applications ServiceNow.
 - Si vous avez configuré d’autres analyseurs DLP tiers, l’état d’analyse DLP affiche individuellement l’état de chaque connecteur de façon à améliorer la visibilité.
 - Cloud App Security prend maintenant en charge les activités Microsoft Teams qui sont prises en charge dans le journal d’audit d’Office 365. Cette fonctionnalité est déployée progressivement.
-- For Exchange Online impersonation events, you can now filter by the permission level used - delegated, admin, or delegated admin. You can search for events displaying the impersonation level that interests you in the **Activity log** by searching for **Activity objects** > **Item**.
+- Pour les événements d’emprunt d’identité Exchange Online, vous pouvez désormais filtrer en fonction du niveau d’autorisation utilisé : délégué, administrateur ou administrateur délégué. Vous pouvez rechercher des événements affichant le niveau d’emprunt d’identité qui vous intéresse dans le **Journal d’activité** en recherchant des objets d' **activité** > **élément**.
 - Dans le tiroir des applications sous l’onglet **Autorisations des applications** des applications Office 365, vous pouvez désormais voir l’**Éditeur** de chaque application. Vous pouvez également utiliser l’éditeur comme filtre pour rechercher les autres applications du même éditeur.
 - Les adresses IP à risques apparaissent maintenant comme facteur de risque indépendant et non plus pondéré, sous le facteur de risque général **Emplacement**. 
 - Quand les étiquettes Azure Information Protection sont désactivées sur un fichier, elles apparaissent désactivées dans Cloud App Security. Les étiquettes supprimées ne sont pas affichées.

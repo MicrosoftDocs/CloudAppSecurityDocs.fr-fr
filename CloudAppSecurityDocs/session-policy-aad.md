@@ -27,7 +27,7 @@ ms.locfileid: "74460425"
 *S’applique à : Microsoft Cloud App Security*
 
 >[!div class="step-by-step"]
-[« PREVIOUS: Onboard and deploy Conditional Access App Control for any app »](proxy-deployment-any-app.md)<br>
+[« PRÉCÉDENT : intégration et déploiement contrôle d’application par accès conditionnel pour une application »](proxy-deployment-any-app.md)<br>
 [SUIVANT : Guide pratique pour créer une stratégie d’accès »](access-policy-aad.md)
 
 
@@ -161,7 +161,7 @@ Sélectionnez **Bloquer les activités** pour bloquer certaines activités, que 
 Quand vous sélectionnez **Protéger** sous **Action** dans la stratégie de session Cloud App Security, le contrôle d’application par accès conditionnel applique l’étiquetage et la protection ultérieure d’un fichier, conformément aux filtres de fichiers de la stratégie. Les étiquettes sont configurées dans la console Azure Information Protection, et l’option **Protéger** doit être sélectionnée dans l’étiquette pour qu’elle apparaisse en tant qu’option dans la stratégie Cloud App Security. Quand une étiquette est sélectionnée et qu’un fichier correspondant aux critères de la stratégie Cloud App Security est téléchargé, l’étiquette et la protection correspondante (avec les autorisations) sont appliquées au fichier lors de son téléchargement. Le fichier original reste inchangé dans l’application cloud, tandis que le fichier téléchargé est désormais protégé. Les utilisateurs qui tentent d’accéder au fichier doivent respecter les exigences d’autorisation déterminées par la protection appliquée.  
  
 >[!div class="step-by-step"]
-[« PREVIOUS: Onboard and deploy Conditional Access App Control for any app »](proxy-deployment-any-app.md)<br>
+[« PRÉCÉDENT : intégration et déploiement contrôle d’application par accès conditionnel pour une application »](proxy-deployment-any-app.md)<br>
 [SUIVANT : Guide pratique pour créer une stratégie d’accès »](access-policy-aad.md)
 
 ## <a name="next-steps"></a>Étapes suivantes

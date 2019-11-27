@@ -31,9 +31,9 @@ ms.locfileid: "74460541"
 En entreprise, le fait de savoir ce qui s’est passé dans votre environnement cloud après coup n’est pas suffisant. En effet, vous devez pouvoir arrêter les violations et les fuites en temps réel, avant que les employés ne puissent, par inadvertance ou intentionnellement, compromettre vos données et votre organisation. Il est important d’autoriser les utilisateurs de votre organisation à accéder à la plupart des services et outils des applications cloud, et de leur permettre d’apporter leurs propres appareils au travail. En même temps, vous avez besoin d’outils pour protéger votre organisation contre les fuites et le vol de données, en temps réel. Avec Azure Active Directory, Microsoft Cloud App Security offre ces fonctionnalités dans une expérience globale et intégrée avec le Contrôle d’accès conditionnel aux applications.
 
 > [!NOTE]
-> To use Cloud App Security Conditional Access App Control, you need an [Azure Active Directory P1 license](https://azure.microsoft.com/pricing/details/active-directory/), and an active Microsoft Cloud App Security subscription or Office 365 E5 license. For a list of featured apps included with Office 365 E5, see [Office 365 featured apps](#O365-apps).
+> Pour utiliser Cloud App Security contrôle d’application par accès conditionnel, vous avez besoin d’une [licence Azure Active Directory P1](https://azure.microsoft.com/pricing/details/active-directory/)et d’un abonnement actif Microsoft Cloud App Security ou d’une licence Office 365 E5. Pour obtenir la liste des applications proposées incluses avec Office 365 E5, consultez [applications proposées par office 365](#O365-apps).
 
-Office 365 E5 license. For a list of apps included with supported Office 365 E5, see Office 365 featured apps
+Licence Office 365 E5. Pour obtenir la liste des applications incluses avec Office 365 E5 pris en charge, consultez applications Office 365 proposées.
 
 ## <a name="how-it-works"></a>Fonctionnement
 
@@ -41,25 +41,25 @@ Le contrôle d’application par accès conditionnel utilise une architecture de
 
 Le Contrôle d’accès conditionnel aux applications active l’accès aux applications des utilisateurs et les sessions à surveiller et à contrôler en temps réel, en fonction des stratégies d’accès et de session. Les stratégies d’accès et de session sont utilisées dans le portail Cloud App Security pour affiner les filtres et définir les actions à effectuer sur un utilisateur. Avec les stratégies d’accès et de session, vous pouvez :
 
-- **Prevent data exfiltration**: You can block the download, cut, copy, and print of sensitive documents on, for example, unmanaged devices.
+- **Empêcher l’exfiltration de données**: vous pouvez bloquer le téléchargement, couper, copier et imprimer des documents sensibles sur, par exemple les appareils non gérés.
 
-- **Protect on download**: Instead of blocking the download of sensitive documents, you can require documents to be labeled and protected with Azure Information Protection. This action ensures the document is protected and user access is restricted in a potentially risky session.
+- **Protéger au téléchargement**: au lieu de bloquer le téléchargement de documents sensibles, vous pouvez exiger que les documents soient étiquetés et protégés par Azure information protection. Cette action garantit que le document est protégé et que l’accès utilisateur est limité dans une session potentiellement risquée.
 
-- **Prevent upload of unlabeled files**: Before a sensitive file is uploaded, distributed, and used by others, it’s important to make sure that the file has the right label and protection. You can ensure that unlabeled files with sensitive content are blocked from being uploaded until the user classifies the content.
+- **Empêcher le téléchargement de fichiers sans étiquette**: avant qu’un fichier sensible ne soit téléchargé, distribué et utilisé par d’autres utilisateurs, il est important de s’assurer que le fichier a l’étiquette et la protection appropriées. Vous pouvez vous assurer que les fichiers sans étiquette avec du contenu sensible ne peuvent pas être téléchargés tant que l’utilisateur n’a pas classé le contenu.
 
-- **Monitor user sessions for compliance**: Risky users are monitored when they sign into apps and their actions are logged from within the session. Vous pouvez examiner et analyser le comportement des utilisateurs pour comprendre où et dans quelles conditions les stratégies de session devront être appliquées à l’avenir.
+- **Surveiller les sessions utilisateur pour la conformité**: les utilisateurs risqués sont analysés lorsqu’ils se connectent à des applications et que leurs actions sont journalisées depuis la session. Vous pouvez examiner et analyser le comportement des utilisateurs pour comprendre où et dans quelles conditions les stratégies de session devront être appliquées à l’avenir.
 
-- **Block access**: You can granularly block access for specific apps and users depending on several risk factors. For example, you can block them if they are using client certificates as a form of device management.
+- **Bloquer l’accès**: vous pouvez bloquer l’accès de façon granulaire pour des applications et des utilisateurs spécifiques en fonction de plusieurs facteurs de risque. Par exemple, vous pouvez les bloquer s’ils utilisent des certificats clients comme forme de gestion des périphériques.
 
-- **Block custom activities**: Some applications have unique scenarios that carry risk, for example, sending messages with sensitive content in applications like Microsoft Teams or Slack. In these kinds of scenarios, you can scan messages for sensitive content and block them in real time.
+- **Bloquer les activités personnalisées**: certaines applications ont des scénarios uniques qui comportent un risque, par exemple, l’envoi de messages avec du contenu sensible dans des applications telles que Microsoft teams ou la marge. Dans ce type de scénario, vous pouvez analyser les messages pour rechercher du contenu sensible et les bloquer en temps réel.
 
 ### <a name="how-session-control-works"></a>Fonctionnement du contrôle de session
 
-La création d’une stratégie de session avec le Contrôle d’accès conditionnel aux applications vous permet de contrôler des sessions utilisateur en redirigeant l’utilisateur via un proxy inversé plutôt que directement vers l’application. From then on, user requests and responses go through Cloud App Security rather than directly to the app.
+La création d’une stratégie de session avec le Contrôle d’accès conditionnel aux applications vous permet de contrôler des sessions utilisateur en redirigeant l’utilisateur via un proxy inversé plutôt que directement vers l’application. À partir de là, les demandes et les réponses de l’utilisateur passent par Cloud App Security plutôt que directement à l’application.
 
-When a session is protected by proxy, all the relevant URLs and cookies are replaced by Cloud App Security. Par exemple, si l’application retourne une page avec des liens dont les domaines se terminent par myapp.com, le lien est remplacé par des domaines se terminant par quelque chose comme : myapp.com.us.cas.ms
+Quand une session est protégée par proxy, toutes les URL et cookies appropriés sont remplacés par Cloud App Security. Par exemple, si l’application retourne une page avec des liens dont les domaines se terminent par myapp.com, le lien est remplacé par des domaines se terminant par quelque chose comme : myapp.com.us.cas.ms
 
-This method doesn't require you to install anything on the device making it ideal when monitoring or controlling sessions from unmanaged devices or partner users.
+Cette méthode ne vous oblige à installer quoi que ce soit sur l’appareil, ce qui la rend idéale lors de l’analyse ou du contrôle des sessions à partir d’appareils non gérés ou d’utilisateurs partenaires.
 
 > [!NOTE]
 > Cloud App Security tire parti des centres de données Azure dans le monde entier pour offrir des performances optimisées grâce à la géolocalisation. Cela signifie que la session d’un utilisateur peut être hébergée en dehors d’une région particulière, en fonction des modèles de trafic et de leur emplacement. Toutefois, pour protéger votre confidentialité, aucune donnée de session n’est stockée dans ces centres de données.
@@ -72,11 +72,11 @@ Le Contrôle d’accès conditionnel aux applications vous permet de créer des 
 - Appareils joints à un domaine
 - Déploiement de certificats clients
 
-To configure a policy to leverage device management via client certificates:
+Pour configurer une stratégie pour tirer parti de la gestion des appareils via des certificats clients :
 
 1. Accédez à la roue dentée des paramètres et choisissez **Identification de périphérique**.
 1. Charger un ou plusieurs certificats intermédiaires ou racines.
-1. After the certificate is uploaded, you can create [access policies](access-policy-aad.md) and [session policies](session-policy-aad.md) based on **Device tag** and **Valid client certificate**.
+1. Une fois le certificat chargé, vous pouvez créer des [stratégies d’accès](access-policy-aad.md) et des [stratégies de session](session-policy-aad.md) basées sur une **balise d’appareil** et un **certificat client valide**.
 
     ![ID d’appareil du Contrôle d’application par accès conditionnel](./media/caac-device-id.png)
 
@@ -88,62 +88,62 @@ To configure a policy to leverage device management via client certificates:
 L’accès conditionnel Azure AD permet aux informations sur les appareils conformes et joints à un domaine d’être directement transmises à Microsoft Cloud App Security. À partir de là, vous pouvez développer une stratégie d’accès ou de session qui utilise l’état de l’appareil comme filtre. Pour plus d’informations, consultez [Présentation de la gestion des appareils dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction).
 
 > [!NOTE]
-> Some browsers may require additional configuration such as installing an extension. For more information, see [Conditional Access browser support](https://go.microsoft.com/fwlink/?linkid=2102732).
+> Certains navigateurs peuvent nécessiter une configuration supplémentaire telle que l’installation d’une extension. Pour plus d’informations, consultez [prise en charge du navigateur d’accès conditionnel](https://go.microsoft.com/fwlink/?linkid=2102732).
 
 ### <a name="client-certificate-authenticated-devices"></a>Appareils authentifiés par certificat client
 
 Le mécanisme d’identification des appareils peut exiger une authentification desdits appareils à l’aide de certificats clients. Vous pouvez utiliser des certificats clients existants déjà déployés dans votre organisation ou déployer de nouveaux certificats clients sur des appareils gérés. Vous profitez ensuite de la présence de ces certificats pour définir des stratégies d’accès et de session.
 
-SSL client certificates are verified via a trust chain. You can upload an X.509 root or intermediate certificate authority (CA) formatted in the PEM certificate format. These certificates must contain the public key of the CA, which is then used to sign the client certificates presented during a session.
+Les certificats clients SSL sont vérifiés par le biais d’une chaîne d’approbation. Vous pouvez télécharger une racine X. 509 ou une autorité de certification intermédiaire au format de certificat PEM. Ces certificats doivent contenir la clé publique de l’autorité de certification, qui est ensuite utilisée pour signer les certificats clients présentés au cours d’une session.
 
-Once the certificate is uploaded and a relevant policy is configured, when an applicable session traverses Conditional Access App Control, the Cloud App Security endpoint requests the browser to present the SSL client certificates. The browser serves the SSL client certificates that are installed with a private key. This combination of certificate and private key is done by using the PKCS #12 file format, typically .p12 or .pfx.
+Une fois le certificat téléchargé et une stratégie pertinente configurée, lorsqu’une session applicable parcourt contrôle d’application par accès conditionnel, le point de terminaison Cloud App Security demande au navigateur de présenter les certificats clients SSL. Le navigateur dessert les certificats clients SSL installés avec une clé privée. Cette combinaison de certificat et de clé privée s’effectue à l’aide du format de fichier PKCS #12, généralement. P12 ou. pfx.
 
-When a client certificate check is performed, Cloud App Security checks for the following conditions:
+Lorsqu’une vérification de certificat client est effectuée, Cloud App Security vérifie les conditions suivantes :
 
-1. The selected client certificate is valid and is under the correct root or intermediate CA.
-1. The certificate is not revoked (if CRL is enabled).
+1. Le certificat client sélectionné est valide et se trouve sous l’autorité de certification racine ou intermédiaire appropriée.
+1. Le certificat n’est pas révoqué (si la liste de révocation des certificats est activée).
 
 > [!NOTE]
-> Most major browsers support performing a client certificate check. However, mobile and desktop apps often leverage built-in browsers that may not support this check and therefore affect authentication for these apps.
+> La plupart des navigateurs principaux prennent en charge l’exécution d’une vérification de certificat client. Toutefois, les applications mobiles et de bureau utilisent souvent des navigateurs intégrés qui ne prennent peut-être pas en charge cette vérification et affectent donc l’authentification pour ces applications.
 
 Pour plus d’informations sur la façon de déployer des certificats clients, consultez [Déployer un Contrôle d’accès conditionnel aux applications pour les applications Azure AD](proxy-deployment-aad.md).
 
 ## <a name="supported-apps-and-clients"></a>Applications et clients pris en charge
 
-Conditional Access App Control currently supports SAML and Open ID Connect apps configured with single sign-on, along with web apps hosted on-premises configured with the [Azure AD App Proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy).
+Contrôle d’application par accès conditionnel prend actuellement en charge les applications SAML et Open ID Connect configurées avec l’authentification unique, ainsi que les applications Web hébergées localement configurées avec le [Proxy Azure ad App](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy).
 > [!NOTE]
 > Le contrôle d’application par accès conditionnel prend également en charge des applications qui sont configurées avec des fournisseurs d’identité non-Azure AD. Pour plus d'informations sur ce scénario, envoyez un e-mail à mcaspreview@microsoft.com.
 
-**Le contrôle de session est disponible sur tous les navigateurs de toutes les plateformes majeures, quel que soit le système d’exploitation**. We recommend using Internet Explorer 11, Microsoft Edge (latest), Google Chrome (latest), Mozilla Firefox (latest), or Apple Safari (latest). Access to mobile and desktop apps can also be blocked or allowed.
+**Le contrôle de session est disponible sur tous les navigateurs de toutes les plateformes majeures, quel que soit le système d’exploitation**. Nous vous recommandons d’utiliser Internet Explorer 11, Microsoft Edge (dernière version), Google Chrome (dernière version), Mozilla Firefox (dernière version) ou Apple Safari (dernière version). L’accès aux applications mobiles et de bureau peut également être bloqué ou autorisé.
 
 > [!NOTE]
-> Using the **Client app** filter in access policies can cause the resulting user session to be proxied by Cloud App Security.
+> L’utilisation du filtre d' **application cliente** dans les stratégies d’accès peut entraîner le proxy de la session utilisateur résultante par Cloud App Security.
 >
-> In access policies, when using the **Client app** filter it defaults to **Mobile and desktop**. This can cause the resulting user session to be proxied by Cloud App Security. To void this behavior, set the value to **Browser**.
+> Dans les stratégies d’accès, lorsque vous utilisez le filtre d' **application cliente** , la valeur par défaut est **mobile et Desktop**. Cela peut entraîner le proxy de la session utilisateur résultante par Cloud App Security. Pour annuler ce comportement, définissez la valeur sur **Browser**.
 >
-> By default, evaluating whether an app is mobile or desktop can cause the resulting user session to be proxied by Cloud App Security. To avoid this behavior, set the Client App filter in your Access policies to be equal to **Browser**.
+> Par défaut, l’évaluation de la présence d’une application mobile ou Desktop peut entraîner le proxy de la session utilisateur résultante par Cloud App Security. Pour éviter ce comportement, configurez le filtre d’application cliente dans vos stratégies d’accès pour qu’il soit égal à **Browser**.
 
 > [!NOTE]
 > Cloud App Security s’appuie sur les protocoles TLS (Transport Layer Security) 1.2+ pour fournir un chiffrement de pointe. Les applications clientes natives et les navigateurs qui ne prennent pas en charge TLS 1.2+ ne sont pas accessibles lorsqu’ils sont configurés avec le contrôle de session. Toutefois, les applications SaaS qui utilisent TLS 1.1 ou une version antérieure apparaissent dans le navigateur comme utilisant TLS 1.2+ lorsqu’elles sont configurées avec Cloud App Security.
 
-<a name="featured-apps"></a>By natively integrating with Azure AD, any app that is configured with SAML or Open ID Connect you can onboard any app yourself. In addition, the following apps are featured by Cloud App Security and are already onboarded and ready to use in any tenant:
+<a name="featured-apps"></a>En intégrant en mode natif avec Azure AD, toute application configurée avec SAML ou Open ID Connect vous permet d’intégrer n’importe quelle application vous-même. En outre, les applications suivantes sont proposées par Cloud App Security et sont déjà intégrées et prêtes à être utilisées dans n’importe quel locataire :
 
 - AWS
-- Azure DevOps (Visual Studio Team Services)
+- DevOps Azure (Visual Studio Team Services)
 - Portail Azure (préversion)
-- Zone
+- Box
 - Concur
 - CornerStone on Demand
 - DocuSign
 - Dropbox
-- Dynamics 365 CRM (preview)
+- Dynamics 365 CRM (version préliminaire)
 - Egnyte
 - Exchange Online
 - G Suite
 - GitHub
 - HighQ
 - JIRA/Confluence
-- OneDrive Entreprise
+- OneDrive Entreprise
 - LinkedIn Learning
 - Power BI
 - Salesforce
@@ -157,18 +157,18 @@ Conditional Access App Control currently supports SAML and Open ID Connect apps 
 - Workplace by Facebook
 - Yammer (préversion)
 
-### <a name="a-ido365-apps-office-365-featured-apps"></a><a id="O365-apps" />Office 365 featured apps
+### <a name="a-ido365-apps-office-365-featured-apps"></a><a id="O365-apps" />les applications Office 365 proposées
 
-The following is a list of featured apps that are supported in Office 365 Cloud App Security:
+La liste suivante répertorie les applications proposées qui sont prises en charge dans Office 365 Cloud App Security :
 
 - Exchange Online
-- OneDrive Entreprise
+- OneDrive Entreprise
 - Power BI
 - SharePodanst Onldanse
 - Microsoft Teams (préversion)
 - Yammer (préversion)
 
-If you're interested in a specific app being featured, [send us details about the app](mailto:casfeedback@microsoft.com). Envoyez-nous également le cas d’usage qui vous intéresse pour que nous puissions l’intégrer.
+Si vous êtes intéressé par une application spécifique, [envoyez-nous des informations sur l’application](mailto:casfeedback@microsoft.com). Envoyez-nous également le cas d’usage qui vous intéresse pour que nous puissions l’intégrer.
 
 > [!div class="step-by-step"]
 > [Suivant : Déployer le Contrôle d’accès conditionnel aux applications »](proxy-deployment-aad.md)

@@ -68,7 +68,7 @@ Dans la barre de menus, cliquez sur l’icône des paramètres. Sélectionnez **
   
     - **VPN** : toutes les adresses IP que vous utilisez pour les télétravailleurs.
   
-4. Pour **baliser** les activités liées à ces adresses IP, entrez une balise. Il suffit d’entrer un mot dans la zone pour créer la balise. Une fois la balise configurée, vous pouvez l’ajouter facilement à des plages IP supplémentaires en la sélectionnant dans la liste. Vous pouvez ajouter autant de balises IP que vous le souhaitez pour chaque plage. Vous pouvez utiliser des balises IP quand vous créez des stratégies.  En plus des balises IP que vous configurez, Cloud App Security a des balises intégrées qui ne sont pas configurables. Vous pouvez voir la liste des balises sous le [filtre de balises IP](activity-filters.md).  
+4. Pour **étiqueter** les activités liées à ces adresses IP, entrez une étiquette. Il suffit d’entrer un mot dans la zone pour créer l’étiquette. Une fois l’étiquette configurée, vous pouvez l’ajouter facilement à des plages IP supplémentaires en la sélectionnant dans la liste. Vous pouvez ajouter autant d’étiquettes IP que vous le souhaitez pour chaque plage. Vous pouvez utiliser des étiquettes IP quand vous créez des stratégies.  En plus des balises IP que vous configurez, Cloud App Security a des balises intégrées qui ne sont pas configurables. Vous pouvez voir la liste des étiquettes sous le [filtre d’étiquettes IP](activity-filters.md).  
     > [!NOTE]  
     > - L’emplacement et l’ISP enregistré remplacent les valeurs par défaut.
     > - Les balises IP sont ajoutées à l’activité sans remplacer les données.
@@ -79,7 +79,7 @@ Dans la barre de menus, cliquez sur l’icône des paramètres. Sélectionnez **
  
 7. Quand vous avez terminé, cliquez sur **Créer**.  
   
-     ![newipaddress range](./media/newipaddress-range.png "plage de nouvelles adresses IP")  
+     ![plage plage](./media/newipaddress-range.png "plage de nouvelles adresses IP")  
 
 
 ## <a name="next-steps"></a>Étapes suivantes

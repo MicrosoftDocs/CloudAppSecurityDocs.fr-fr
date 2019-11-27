@@ -31,33 +31,33 @@ Une fois que Microsoft Cloud App Security est exécuté dans votre environnement
 
 Les tableaux de bord suivants sont disponibles pour vous aider à étudier les applications de votre environnement cloud :
 
-|Dashboard|Description|
+|Tableau de bord|Description|
 |---------------|-----------------|
-|Tableau de bord principal|Overview of cloud status (users, files, activities) and required actions (alerts, activity violations, and content violations).|
-|App dashboard: overview|Overview of app usage per location, usage graphs per number of users.|
-|App dashboard: info|Information about app details, security, and compliance.|
-|App dashboard: insights  
-*(where applicable)*|Analysis of data stored in the app, broken down by file type and file-sharing level.|
-|App dashboard: files  
-*(where applicable)*|Drill down into files; ability to filter according to owner, sharing level, and more. Perform governance actions like quarantine.|
-|App dashboard: accounts|Overview of all accounts/users linked to the app.|
-|App dashboard: OAuth apps  
-*(where applicable)*|Drill down into OAuth apps currently deployed, like G Suite, and define policies.|
-|App dashboard: activity log|Drill down into all app activity; ability to filter according to users, ip address, and more.|
-|App dashboard: alerts|Drill down into all app alerts; ability to filter according to status, category, severity, and more.|
-|App dashboard: special privileged accounts  
-*(Salesforce only)*|Overview of users by privileged user type.|
-|Tableau de bord Utilisateur|A complete overview of the user profile in the cloud, locations, recent activities, related alerts.|
+|Tableau de bord principal|Vue d’ensemble de l’état du Cloud (utilisateurs, fichiers, activités) et actions requises (alertes, violations d’activité et violations de contenu).|
+|Tableau de bord de l’application : vue d’ensemble|Vue d’ensemble de l’utilisation de l’application par emplacement, graphiques d’utilisation par nombre d’utilisateurs.|
+|Tableau de bord de l’application : info|Informations sur les détails de l’application, la sécurité et la conformité.|
+|Tableau de bord de l’application : Insights  
+*(le cas échéant)*|Analyse des données stockées dans l’application, ventilées par type de fichier et niveau de partage de fichiers.|
+|Tableau de bord de l’application : fichiers  
+*(le cas échéant)*|Explorez les fichiers ; possibilité de filtrer en fonction du propriétaire, du niveau de partage, etc. Effectuer des actions de gouvernance comme la mise en quarantaine.|
+|Tableau de bord d’application : comptes|Vue d’ensemble de tous les comptes/utilisateurs liés à l’application.|
+|Tableau de bord d’application : applications OAuth  
+*(le cas échéant)*|Explorez les applications OAuth actuellement déployées, comme G suite, et définissez des stratégies.|
+|Tableau de bord d’application : journal d’activité|Explorez l’ensemble de l’activité de l’application ; possibilité de filtrer en fonction des utilisateurs, de l’adresse IP, etc.|
+|Tableau de bord de l’application : alertes|Explorez toutes les alertes d’application ; possibilité de filtrer en fonction de l’État, de la catégorie, de la gravité et bien plus encore.|
+|Tableau de bord d’application : comptes avec privilèges spéciaux  
+*(Salesforce uniquement)*|Vue d’ensemble des utilisateurs par type d’utilisateur privilégié.|
+|Tableau de bord Utilisateur|Vue d’ensemble complète du profil utilisateur dans le Cloud, emplacements, activités récentes, alertes associées.|
 
-## <a name="a-namesanctionapp-tag-apps-as-sanctioned-or-unsanctioned"></a><a name="sanctionapp" />Tag apps as sanctioned or unsanctioned
+## <a name="a-namesanctionapp-tag-apps-as-sanctioned-or-unsanctioned"></a><a name="sanctionapp" />marquer les applications comme approuvées ou non approuvées
 
 Le marquage des applications comme approuvées ou non est une étape importante pour comprendre votre cloud. Une fois que vous avez approuvé une application, vous pouvez filtrer les applications qui ne sont pas approuvées et lancer une migration vers des applications approuvées du même type.
 
 - Dans la console Cloud App Security, accédez au catalogue d’applications ou aux applications découvertes.
 
-- Dans la liste des applications, sur la ligne contenant l’application à marquer comme approuvée, cliquez sur les trois points à la fin de la ligne ![Points pour marquer comme approuvé](./media/sanction-three-dots.png "Tag as sanctioned dots") et choisissez **Marquer comme approuvé**.
+- Dans la liste des applications, sur la ligne contenant l’application à marquer comme approuvée, cliquez sur les trois points à la fin de la ligne ![Points pour marquer comme approuvé](./media/sanction-three-dots.png "Marquer en tant que points approuvés") et choisissez **Marquer comme approuvé**.
 
-    ![Tag as sanctioned](./media/mark-as-sanctioned.png "tag as sanctioned")
+    ![Marquer comme approuvé](./media/mark-as-sanctioned.png "marquer comme approuvé")
 
 ## <a name="use-the-investigation-tools"></a>Utiliser les outils d’examen
 
@@ -113,7 +113,7 @@ Le marquage des applications comme approuvées ou non est une étape importante 
 
     - Combien d’utilisateurs les ont déployées ? Quelle est la fréquence de ces applications en général ?
 
-    ![App dashboard](./media/investigate-app.png "examiner l’application")
+    ![Tableau de bord de l’application](./media/investigate-app.png "examiner l’application")
 
 5. Accédez au **tableau de bord Cloud Discovery** et vérifiez les points suivants :
 
@@ -143,7 +143,7 @@ Partons du principe que vous pensez ne pas avoir d’accès à votre environneme
 
 5. Sous **Activités remplissant toutes les conditions suivantes**, choisissez **+** pour ajouter un filtre. Faites défiler jusqu’à **Balises IP**, puis choisissez **Tor**.
 
-    ![Example policy for risky IPs](./media/example-policy-risky-ips.png "exemple de stratégie, adresses IP risquées")
+    ![Exemple de stratégie pour les adresses IP à risque](./media/example-policy-risky-ips.png "exemple de stratégie, adresses IP risquées")
 
 Maintenant que la stratégie est en place, vous vous étonnez de voir que vous recevez une alerte indiquant que la stratégie a été violée.
 

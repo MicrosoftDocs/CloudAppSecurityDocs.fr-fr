@@ -27,9 +27,9 @@ ms.locfileid: "74460813"
 
 Vous pouvez configurer le chargement automatique de journaux pour des rapports continus dans Cloud App Security à l’aide de Docker sur Ubuntu ou Red Hat Enterprise Linux (RHEL) dans Azure. Cet article décrit comment configurer le chargement automatique des journaux.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Conditions préalables requises
 
-* OS: Ubuntu 14.04 and 16.04 (for newer versions, contact support), RHEL 7.2 or higher, or CentOS 7.2 or higher
+* Système d’exploitation : Ubuntu 14,04 et 16,04 (pour les versions plus récentes, contactez le support technique), RHEL 7,2 ou une version ultérieure, ou CentOS 7,2 ou version ultérieure
 
 * Espace disque : 250 Go
 
@@ -40,7 +40,7 @@ Vous pouvez configurer le chargement automatique de journaux pour des rapports c
 * Configurez votre pare-feu, comme décrit dans [Configuration réseau requise](network-requirements.md#log-collector)
 
 > [!NOTE]
-> If you have an existing log collector and want to remove it before deploying it again, or if you simply want to remove it, run the following commands:
+> Si vous disposez d’un collecteur de journaux existant et que vous souhaitez le supprimer avant de le déployer à nouveau, ou si vous souhaitez simplement le supprimer, exécutez les commandes suivantes :
 >
 > ```console
 > docker stop <collector_name>
@@ -68,7 +68,7 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
 1. Pour chaque pare-feu ou proxy à partir duquel vous souhaitez charger des journaux, créez une source de données correspondante.
 
     1. Cliquez sur **Ajouter une source de données**.  
-    ![Add a data source](media/add-data-source.png)
+    ![ajouter une source de données](media/add-data-source.png)
     1. **Nommez** votre proxy ou pare-feu.  
       ![ubuntu1](media/ubuntu1.png)
     1. Sélectionnez l’appareil dans la liste **Source**. Si vous sélectionnez **Format de journal personnalisé** pour utiliser une appliance réseau qui n’est pas listée, consultez [Utilisation de l’analyseur de journal personnalisé](custom-log-parser.md) pour obtenir des instructions de configuration.
@@ -88,7 +88,7 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
     1. Cliquez sur **Ajouter un collecteur de journaux**.
     1. Donnez un **nom** au collecteur de journaux.
     1. Entrez l’**adresse IP de l’hôte** de la machine sur laquelle sera déployé le Docker. L’adresse IP de l’hôte peut être remplacée par le nom de l’ordinateur s’il existe un serveur DNS (ou un équivalent) qui résout le nom d’hôte.
-    1. Select all **Data sources** that you want to connect to the collector, and click **Update** to save the configuration.  
+    1. Sélectionnez toutes les **sources de données** que vous souhaitez connecter au collecteur, puis cliquez sur **mettre à jour** pour enregistrer la configuration.  
     ![ubuntu2](media/ubuntu2.png)
 
 1. Des informations supplémentaires sur le déploiement s’affichent. **Copiez** la commande d’exécution à partir de la boîte de dialogue. Vous pouvez utiliser l’icône de copie dans le Presse-papiers. ![icône de copie dans le Presse-papiers](media/copy-icon.png)
@@ -101,7 +101,7 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
     >
     > * Un seul collecteur de journaux peut gérer plusieurs sources de données.
     > * Copiez le contenu de l’écran, car vous aurez besoin des informations lors de la configuration du collecteur de journaux pour communiquer avec Cloud App Security. Si vous avez sélectionné Syslog, ces informations vont inclure des informations sur le port utilisé par l’écouteur Syslog pour écouter.
-    > * For users sending log data via FTP for the first time, we recommend changing the password for the FTP user. For more information, see [Changing the FTP password](log-collector-ftp.md#changing-the-ftp-password).
+    > * Pour les utilisateurs qui envoient des données de journal via FTP pour la première fois, nous vous recommandons de modifier le mot de passe de l’utilisateur FTP. Pour plus d’informations, consultez [modification du mot de passe FTP](log-collector-ftp.md#changing-the-ftp-password).
 
 ### <a name="step-2--deployment-of-your-machine-in-azure"></a>Étape 2 : déploiement de la machine dans Azure
 
@@ -113,10 +113,10 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
 
     1. Dans l’affichage Ordinateur, accédez à **Réseau** et sélectionnez l’interface souhaitée en double-cliquant dessus.
     1. Accédez à **Groupe de sécurité réseau** et sélectionnez le groupe de sécurité réseau qui convient.
-    1. Go to **Inbound security rules** and click **Add**, ![Ubuntu Azure](media/ubuntu-azure.png)
+    1. Accédez à **règles de sécurité de trafic entrant** , puis cliquez sur **Ajouter**, ![Ubuntu Azure](media/ubuntu-azure.png)
     1. Ajoutez les règles suivantes (en mode **Avancé**) :
 
-    |Nom|Plages du port de destination|Protocol|Source|Destination|
+    |Nom|Plages du port de destination|Protocol|`Source`|Destination|
     |----|----|----|----|----|
     |caslogcollector_ftp|21|TCP|<Sous-réseau d’adresse IP de votre appliance>|Indifférent|
     |caslogcollector_ftp_passive|20000-20099|TCP|<Sous-réseau d’adresse IP de votre appliance>|Indifférent|
@@ -155,7 +155,7 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
 
 ### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>Étape 3 : Configuration locale de vos appliances réseau
 
-Configurez vos pare-feu et proxys réseau pour exporter régulièrement les journaux vers le port Syslog dédié du répertoire FTP conformément aux instructions données dans la boîte de dialogue. Exemple :
+Configurez vos pare-feu et proxys réseau pour exporter régulièrement les journaux vers le port Syslog dédié du répertoire FTP conformément aux instructions données dans la boîte de dialogue. Par exemple :
 
 ```bash
 BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
@@ -184,6 +184,6 @@ Vérifiez que les journaux sont chargés sur Cloud App Security et que les rappo
 ## <a name="next-steps"></a>Étapes suivantes
 
 > [!div class="nextstepaction"]
-> [Log collector FTP configuration](log-collector-ftp.md)
+> [Configuration FTP du collecteur de journaux](log-collector-ftp.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

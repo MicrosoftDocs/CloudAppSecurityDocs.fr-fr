@@ -29,7 +29,7 @@ ms.locfileid: "74460864"
 Cet article explique comment utiliser les alertes déclenchées dans le portail Cloud App Security.
 
 > [!NOTE]
-> Alerts are managed in their respective policies and can be configured to be sent as an email, text message, or both.
+> Les alertes sont gérées dans leurs stratégies respectives et peuvent être configurées pour être envoyées en tant que courrier électronique, SMS, ou les deux.
 
 ## <a name="manage-your-alerts"></a>Gérer vos alertes
 
@@ -70,7 +70,7 @@ Il est judicieux d’examiner toutes vos alertes et de vous en servir pour modif
 3. Chaque fois que vous ignorez une alerte, il est important d’envoyer des commentaires sur la raison pour laquelle vous l’ignorez. L’équipe Cloud App Security utilise ces commentaires pour évaluer la précision de l’alerte. Ces informations sont ensuite utilisées pour affiner nos modèles Machine Learning pour les futures alertes. Vous pouvez suivre ces instructions pour décider comment catégoriser l’alerte :
    - Si une utilisation légitime a déclenché l’alerte et qu’il ne s’agit pas d’un problème de sécurité, il peut s’agir d’un événement de ce type : 
 
-     - Benign positive: The alert is accurate but the activity is legitimate. Vous pouvez ignorer l’alerte et définir la raison sur **La gravité réelle est inférieure** ou sur **Sans intérêt**.
+     - Positif inoffensif : l’alerte est exacte, mais l’activité est légitime. Vous pouvez ignorer l’alerte et définir la raison sur **La gravité réelle est inférieure** ou sur **Sans intérêt**.
      -  Faux positif : l’alerte est inexacte. Ignorez l’alerte et définissez la raison sur **L’alerte n’est pas exacte**.
    - S’il y a trop de bruit pour déterminer la légitimité et l’exactitude d’une alerte, ignorez-la et définissez la raison sur **Trop d’alertes similaires**.
    - Vrai positif : si l’alerte concerne un événement à risques réel qui a été commis à des fins malveillantes ou involontairement par un utilisateur interne ou externe, il est recommandé de définir l’événement sur **Résolution** après que toutes les actions appropriées ont été effectuées pour remédier à l’événement.

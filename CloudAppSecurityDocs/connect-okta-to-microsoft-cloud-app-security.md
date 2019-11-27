@@ -39,31 +39,31 @@ Cet article fournit des instructions pour connecter Microsoft Cloud App Security
 
     - Cliquez sur **Security** (Sécurité), puis sur **API**.
 
-         ![Okta api](./media/okta-api.png "Okta api")
+         ![API Okta](./media/okta-api.png "API Okta")
 
     - Cliquez sur **Create Token** (Créer un jeton).
 
-         ![Okta create token](./media/okta-createtoken.jpg "Okta create token")
+         ![Okta créer un jeton](./media/okta-createtoken.jpg "Okta créer un jeton")
 
     - Dans la fenêtre contextuelle **Create Token** (Créer un jeton), nommez votre jeton Cloud App Security et cliquez sur **Create Token** (Créer un jeton).
 
-         ![Okta token popup](./media/okta-token-popup.png "Okta token popup")
+         ![Menu contextuel Okta Token](./media/okta-token-popup.png "Menu contextuel Okta Token")
 
     - Dans la fenêtre contextuelle **Token created successfully** (Jeton créé), copiez le contenu de **Token value** (Valeur du jeton).
 
-         ![Okta token value](./media/okta-token-value.png "Okta token value")
+         ![Valeur du jeton Okta](./media/okta-token-value.png "Valeur du jeton Okta")
 
 1. Dans la console Cloud App Security, cliquez sur **Examiner**, puis sur **Applications connectées**.
 
 1. Dans la page **Connecteurs d’application**, cliquez sur le bouton plus (+), puis sur **Okta**.
 
-    ![connect Okta](./media/connect-okta.png "connect Okta")
+    ![connecter Okta](./media/connect-okta.png "connecter Okta")
 
 1. Dans la fenêtre contextuelle qui s’affiche, dans le champ **Domaine**, entrez votre domaine Okta et collez votre jeton dans le champ **Jeton**.
 
 1. Cliquez sur **Connect** (Connecter) pour créer le jeton pour Okta dans Cloud App Security.
 
-1. Vérifiez que la connexion a réussi en cliquant sur **Tester l’API**.
+1. Vérifiez la connexion en cliquant sur **Test API** (Tester l’API).
 
     Le test peut prendre quelques minutes. Une fois averti que la connexion a réussi, cliquez sur **Fermer**.
 

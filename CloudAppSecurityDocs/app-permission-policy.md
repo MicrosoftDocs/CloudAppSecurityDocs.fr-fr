@@ -47,19 +47,19 @@ Sinon, vous pouvez aussi créer la stratégie en cliquant sur **Contrôler** sui
 
    ![Nouvelle stratégie d’application OAuth](./media/app-permissions-policy.png)
 
-## <a name="oauth-app-anomaly-detection-policies"></a>OAuth app anomaly detection policies
+## <a name="oauth-app-anomaly-detection-policies"></a>Stratégies de détection des anomalies d’application OAuth
 
-In addition to OAuth app policies you can create, there are the following out-of-the-box anomaly detection policies that profile metadata of OAuth apps to identify ones that are potentially malicious:
+En plus des stratégies d’application OAuth que vous pouvez créer, les stratégies de détection des anomalies prêtes à l’emploi suivantes permettent de profiler les métadonnées des applications OAuth pour identifier celles qui sont potentiellement malveillantes :
 
 | Nom de la stratégie | Description de la stratégie |
 | --- | --- |
-| Misleading OAuth app name | Scans OAuth apps connected to your environment and triggers an alert when an app with a misleading name is detected. Misleading names, such as foreign letters that resemble Latin letters, could indicate an attempt to disguise a malicious app as a known and trusted app. |
-| Suspicious OAuth app name | Scans OAuth apps connected to your environment and triggers an alert when an app with a suspicious name is detected. Suspicious names, such as names of known apps published by unknown publishers, could indicate an attempt to disguise a malicious app as a known and trusted app. |
-| Non-secure redirect URL is used by an OAuth app | Scans OAuth apps connected to your environment and triggers an alert when an app uses a non-secure redirect URL (for example, does not use the HTTPS protocol), which exposes sensitive data to interception. |
-| Misleading publisher name for an OAuth app | Scans OAuth apps connected to your environment and triggers an alert when an app with a misleading publisher name is detected. Misleading publisher names, such as foreign letters that resemble Latin letters, could indicate an attempt to disguise a malicious app as an app coming from a known and trusted publisher. |
+| Nom d’application OAuth trompeur | Analyse les applications OAuth connectées à votre environnement et déclenche une alerte lorsqu’une application avec un nom trompeur est détectée. Les noms trompeurs, tels que les lettres étrangères ressemblant à des lettres latines, peuvent indiquer une tentative de déguisage d’une application malveillante en tant qu’application connue et approuvée. |
+| Nom d’application OAuth suspect | Analyse les applications OAuth connectées à votre environnement et déclenche une alerte lorsqu’une application avec un nom suspect est détectée. Les noms suspects, tels que les noms des applications connues publiées par des serveurs de publication inconnus, peuvent indiquer une tentative de déguisage d’une application malveillante en tant qu’application connue et approuvée. |
+| Une URL de redirection non sécurisée est utilisée par une application OAuth | Analyse les applications OAuth connectées à votre environnement et déclenche une alerte lorsqu’une application utilise une URL de redirection non sécurisée (par exemple, n’utilise pas le protocole HTTPs), qui expose des données sensibles pour l’interception. |
+| Nom du serveur de publication trompeur pour une application OAuth | Analyse les applications OAuth connectées à votre environnement et déclenche une alerte lorsqu’une application avec un nom d’éditeur trompeur est détectée. Les noms de serveur de publication trompeurs, tels que les lettres étrangères ressemblant à des lettres latines, peuvent indiquer une tentative de déguisement d’application malveillante en tant qu’application provenant d’un éditeur connu et approuvé. |
 
 > [!NOTE]
-> Anomaly detection policies are only available for OAuth apps that are authorized in your Azure Active Directory.
+> Les stratégies de détection des anomalies sont uniquement disponibles pour les applications OAuth autorisées dans votre Azure Active Directory.
 
   ## <a name="next-steps"></a>Étapes suivantes 
   [Stratégies de protection des données](data-protection-policies.md)

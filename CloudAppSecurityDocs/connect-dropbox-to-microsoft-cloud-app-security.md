@@ -37,7 +37,7 @@ Cet article fournit des instructions pour connecter Microsoft Cloud App Security
   
 2.  Dans la page **Connecteurs d’application**, cliquez sur le bouton plus (+), puis sur **Dropbox**.  
   
-     ![connect dropbox](./media/connect-dropbox.png "connecter dropbox")  
+     ![connecter Dropbox](./media/connect-dropbox.png "connecter dropbox")  
   
 3.  Dans la fenêtre contextuelle, entrez l’adresse e-mail du compte d’administrateur.  
   
@@ -51,7 +51,7 @@ Cet article fournit des instructions pour connecter Microsoft Cloud App Security
   
 7.  De retour dans la console Cloud App Security, vous devez recevoir un message indiquant que Dropbox a été correctement connecté.  
   
-8.  Vérifiez que la connexion a réussi en cliquant sur **Tester l’API**.  
+8.  Vérifiez la connexion en cliquant sur **Test API** (Tester l’API).  
   
      Le test peut prendre quelques minutes. Une fois que vous êtes averti que la connexion a réussi, cliquez sur **Fermer**.  
   

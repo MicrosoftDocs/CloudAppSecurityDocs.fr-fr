@@ -47,9 +47,9 @@ Pour créer une stratégie d’activité, procédez comme suit :
 
 4. Pour définir les actions ou autres mesures susceptibles de déclencher cette stratégie, utilisez les **Filtres d’activité**.
     > [!NOTE]
-    > To ensure you only include results where the specified filter field has a value, we recommend adding the same field again using the **is set** test. For example, when filtering by **Location** *does not equal* a specified list of countries, also add a filter for **Location** *is set*. You can also preview the filter results by selecting **Edit and preview results**.
+    > Pour vous assurer que vous incluez uniquement les résultats où le champ de filtre spécifié a une valeur, nous vous recommandons d’ajouter à nouveau le même champ à l’aide de l' **ensemble** de tests. Par exemple, lorsque le filtrage par **emplacement** *n’est pas égal* à une liste de pays spécifiée, ajoutez également un filtre pour l' **emplacement** *est défini*. Vous pouvez également afficher un aperçu des résultats du filtre en sélectionnant **modifier et afficher un aperçu des résultats**.
     >
-    > ![Screenshot of filter settings, showing location field is set](media/activity-example-location-isset.png)
+    > ![Capture d’écran des paramètres de filtre, indication du champ d’emplacement défini](media/activity-example-location-isset.png)
 
 5. Sous **Paramètres de correspondance de l’activité**, sélectionnez le moment auquel la violation de stratégie est déclenchée. Vous pouvez choisir de déclencher l’action lorsqu’une seule activité correspond aux filtres, ou lorsqu’un certain nombre d’**activités répétées** sont détectées.
     - Si vous choisissez **Activité répétée**, vous pouvez également définir **Dans une seule application**. Ce paramètre déclenchera une correspondance de stratégie uniquement lorsque les activités répétées se produisent dans la même application. Par exemple, 5 téléchargements depuis Box en 30 minutes déclenchent une correspondance de stratégie.
@@ -64,13 +64,13 @@ Jetez un œil aux exemples suivants :
 
      Sous le champ **Filtres d’activité**, configurez les paramètres pour lesquels l’alerte doit être déclenchée.
 
-     ![Policy example for multiple failed sign-in attempts](./media/multiple-failed-log-on-attempts-policy-example.png "exemple de stratégie, échec de plusieurs tentatives de connexion")
+     ![Exemple de stratégie pour plusieurs tentatives de connexion ayant échoué](./media/multiple-failed-log-on-attempts-policy-example.png "exemple de stratégie, échec de plusieurs tentatives de connexion")
 
 - Taux de téléchargement élevé
 
      Vous pouvez définir votre stratégie afin de recevoir une alerte en cas de niveau d’activité de téléchargement anormal ou inhabituel. Pour configurer ce type de stratégie, sous les paramètres **Taux**, choisissez les paramètres devant déclencher l’alerte.
 
-     ![high download rate example](./media/high-download-rate-example.png "exemple de taux de téléchargement élevé")
+     ![exemple de taux de téléchargement élevé](./media/high-download-rate-example.png "exemple de taux de téléchargement élevé")
 
 ## <a name="activity-policy-reference"></a>Informations de référence sur les stratégies d’activité
 

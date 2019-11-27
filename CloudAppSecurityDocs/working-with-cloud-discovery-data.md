@@ -56,7 +56,7 @@ Pour créer une exclusion :
 3. Choisissez l’onglet **Utilisateurs exclus**, **Adresses IP exclues** ou **Machines exclues**, puis cliquez sur le bouton + pour ajouter votre exclusion.
 4. Ajoutez un alias utilisateur, une adresse IP ou un nom de machine. Nous vous recommandons d’ajouter des informations sur les raisons de l’exclusion.
   
-     ![exclude user](./media/exclude-user.png "exclure l’utilisateur")  
+     ![exclure un utilisateur](./media/exclude-user.png "exclure l’utilisateur")  
 
 ## <a name="manage-continuous-reports"></a>Gérer les rapports continus
 
@@ -105,7 +105,7 @@ Pour supprimer des données Cloud Discovery :
   
 3. Cliquez sur le bouton **Supprimer**.  
   
-    ![delete data](./media/delete-data.png "supprimer des données")  
+    ![supprimer des données](./media/delete-data.png "supprimer des données")  
   
    > [!NOTE]  
    >  Le processus de suppression peut prendre quelques minutes et il n’est pas immédiat.

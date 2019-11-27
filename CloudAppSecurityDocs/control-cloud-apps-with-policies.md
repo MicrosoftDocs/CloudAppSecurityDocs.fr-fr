@@ -35,7 +35,7 @@ Lorsque vous examinez la page **Stratégie**, les différentes stratégies et le
 
 Vous pouvez créer les types de stratégies suivants :
 
-|Icône de type de stratégie|Type de stratégie|Utilisez les stratégies de gestion des applications mobiles|
+|Icône de type de stratégie|Type de stratégie|Utiliser|
 |-----|-----------------|---------|
 |![icône de stratégie d’accès](./media/proxy-policy.png)|Stratégie d’accès|Les stratégies d’accès vous offrent une surveillance et un contrôle en temps réel des connexions utilisateur à vos applications cloud.|
 |![Icône de stratégie d’activité](./media/activity_policy.png)|Stratégie d’activité|Avec les stratégies d’activité, vous pouvez appliquer une large gamme de processus automatisés en utilisant les API du fournisseur d’application. Ces stratégies vous permettent de surveiller des activités spécifiques effectuées par différents utilisateurs ou de suivre les taux anormalement élevés d’un certain type d’activité.|
@@ -173,23 +173,23 @@ Une fois que vous avez créé une stratégie, vous pouvez l’activer ou la dés
 
 Quand vous créez une stratégie, celle-ci est activée par défaut.
 
-## <a name="policies-overview-report"></a>Policies overview report
+## <a name="policies-overview-report"></a>Rapport vue d’ensemble des stratégies
 
-Cloud App Security lets you export a policies overview report showing aggregated alert metrics per policy to help you monitor, understand, and customize your policies to better protect your organization.
+Cloud App Security vous permet d’exporter un rapport vue d’ensemble des stratégies présentant des métriques d’alerte agrégées par stratégie pour vous aider à surveiller, à comprendre et à personnaliser vos stratégies afin de mieux protéger votre organisation.
 
-To export a log, perform the following steps:
+Pour exporter un journal, procédez comme suit :
 
-1. In the **Policies** page, click the **Export** button.
+1. Dans la page **stratégies** , cliquez sur le bouton **Exporter** .
 
-1. Specify the required time range.
+1. Spécifiez l’intervalle de temps requis.
 
-1. Click **Export**. Ce processus peut prendre un certain temps.
+1. Cliquez sur **Exporter**. Ce processus peut prendre un certain temps.
 
-To download the exported report:
+Pour télécharger le rapport exporté :
 
 1. Une fois que le rapport est prêt, accédez à **Paramètres**, puis à **Rapports exportés**.
 
-1. In the table, select the relevant report from the list of **Policies overview report** and click download.
+1. Dans le tableau, sélectionnez le rapport approprié dans le **rapport vue d’ensemble** de la liste des stratégies, puis cliquez sur Télécharger.
 
     ![Bouton Télécharger](./media/download-button.png)
 

@@ -91,7 +91,7 @@ Par conséquent, ces attributs ne sont pas affichés dans les données Cloud Dis
 
 
 Pour générer correctement un rapport Cloud Discovery, vos journaux de trafic doivent respecter les conditions suivantes :
-1. [Data source is supported](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
+1. La [source de données est prise en charge](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
 2. Le format de journal correspond au format standard attendu (le format est vérifié lors du chargement par l’outil Log).
 3. Les événements ne datent pas de plus de 90 jours.
 4. Le fichier journal est valide et comprend des informations sur le trafic sortant.

@@ -107,7 +107,7 @@ Vous trouverez ci-dessous la liste des filtres de fichiers qui peuvent être app
 - **Type de fichier** - Cloud App Security accepte le type MIME reçu de la part du service et analyse le fichier pour déterminer le type de fichier réel. Cette analyse concerne les fichiers appropriés pour l’analyse des données (documents, images, présentations, feuilles de calcul, fichiers texte et fichiers compressés/archives). Le filtre fonctionne par type de fichier/dossier. Par exemple, Tous les dossiers qui... ou Tous les fichiers de feuille de calcul qui...
 
 
-   ![policy_file filters trash](./media/policy_file-filters-trash.png "mettre à la corbeille des filtres policy_file")  
+   ![filtres de policy_file poubelle](./media/policy_file-filters-trash.png "mettre à la corbeille des filtres policy_file")  
 
   
 - **Dans la corbeille** - Excluez/Incluez des fichiers dans le dossier de corbeille. Ces fichiers peuvent quand même être partagés et représentent un risque.  
@@ -128,32 +128,32 @@ Vous trouverez ci-dessous la liste des filtres de fichiers qui peuvent être app
   
 Vous pouvez également configurer la stratégie pour qu’elle s’exécute sur des fichiers spécifiques en définissant le filtre **Appliquer à**. Appliquez le filtre **tous les fichiers**, **les dossiers sélectionnés** ou **tous les fichiers exceptés les dossiers sélectionnés**. Sélectionnez ensuite les fichiers ou dossiers appropriés.  
   
-![apply to filter](./media/apply-to-filter.png "filtre Appliquer à")  
+![appliquer au filtre](./media/apply-to-filter.png "filtre Appliquer à")  
 <!-- 
 >[!NOTE]
 > If at any point you want to clear the filters, you can do so by clicking the clear filters icon ![clear filters icon](./media/clear-filters.png).
 -->
 
-## <a name="authorizing-files"></a>Authorizing files
+## <a name="authorizing-files"></a>Autorisation de fichiers
 
-After Cloud App Security has identified files as posing a malware or DLP risk, we recommend that you investigate the files. If you determine that the files are safe, you can authorize them. Autoriser un fichier le supprime du rapport de détection des programmes malveillants et supprime les correspondances futures sur ce fichier.
+Une fois que Cloud App Security a identifié des fichiers comme présentant un risque de logiciel malveillant ou DLP, nous vous recommandons d’examiner les fichiers. Si vous déterminez que les fichiers sont sûrs, vous pouvez les autoriser. Autoriser un fichier le supprime du rapport de détection des programmes malveillants et supprime les correspondances futures sur ce fichier.
 
-### <a name="to-authorize-files"></a>To authorize files
+### <a name="to-authorize-files"></a>Pour autoriser des fichiers
 
-1. In Cloud App Security, click **Control** and then **Policies**.
-1. In the list of policies, on the row in which the policy that triggered the investigation appears, in the **Count** column, click the matches link.
+1. Dans Cloud App Security, cliquez sur **contrôle** , puis sur **stratégies**.
+1. Dans la liste des stratégies, sur la ligne dans laquelle la stratégie qui a déclenché l’investigation s’affiche, dans la colonne **nombre** , cliquez sur le lien correspond.
     > [!TIP]
-    > You can filter the list of policies by type. The following table lists, per risk type, which filter type to use:
+    > Vous pouvez filtrer la liste des stratégies par type. Le tableau suivant répertorie, par type de risque, le type de filtre à utiliser :
     >
-    > | Risk type | Filter type |
+    > | Type de risque | Type de filtre |
     > | --- | --- |
     > | DLP | Stratégie de fichier |
-    > | Programme malveillant | Malware detection policy |
-1. In the list of matched files, on the row in which the file under investigation appears, click **Authorize**.
+    > | Programme malveillant | Stratégie de détection des programmes malveillants |
+1. Dans la liste des fichiers correspondants, sur la ligne dans laquelle le fichier en cours d’investigation s’affiche, cliquez sur **autoriser**.
 
 ## <a name="working-with-the-file-drawer"></a>Utilisation du tiroir de fichier
 
-Vous pouvez afficher plus d’informations sur chaque fichier en cliquant sur le fichier lui-même dans le journal des fichiers. Clicking opens the **File drawer** that provides the following additional actions you can take on the file:
+Vous pouvez afficher plus d’informations sur chaque fichier en cliquant sur le fichier lui-même dans le journal des fichiers. Cliquer sur ouvre le **tiroir de fichier** qui fournit les actions supplémentaires suivantes que vous pouvez effectuer sur le fichier :
 
 - **URL** - Pointe vers l’emplacement du fichier.
 - **Identificateurs de fichier** - Ouvre une fenêtre contextuelle avec des détails en données brutes sur le fichier, notamment l’ID du fichier et les clés de chiffrement.
@@ -163,7 +163,7 @@ Vous pouvez afficher plus d’informations sur chaque fichier en cliquant sur le
 
 Les champs du tiroir de fichier fournissent des liens contextuels vers des fichiers supplémentaires et permettent d’effectuer un zoom avant, directement dans le tiroir. Par exemple, si vous déplacez votre curseur à côté du champ **Propriétaire**, vous pouvez utiliser l’icône « ajouter au filtre » ![ajouter au filtre](./media/add-to-filter-icon.png) pour ajouter le propriétaire immédiatement au filtre de la page active. Vous pouvez également utiliser l’icône de roue dentée paramètres ![icône paramètres](./media/contextual-settings-icon.png) qui s’affiche pour accéder directement à la page des paramètres nécessaire pour modifier la configuration de l’un des champs, par exemple les **étiquettes de classification**.
 
-![File drawer](./media/file-drawer.png "Tiroir de fichier")  
+![Tiroir de fichier](./media/file-drawer.png "Tiroir de fichier")  
   
 Pour obtenir la liste des actions de gouvernance disponibles, consultez [Actions de gouvernance sur des fichiers](governance-actions.md#file-governance-actions).
 

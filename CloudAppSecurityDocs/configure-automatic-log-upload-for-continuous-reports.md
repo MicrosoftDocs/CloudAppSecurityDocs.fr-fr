@@ -87,7 +87,7 @@ Le collecteur de journaux dispose d’un mécanisme de sécurité intégré qui 
 1. Ouvrez le Gestionnaire Hyper-V.  
   
 2. Sélectionnez **Nouveau**, puis **Machine virtuelle** et cliquez sur **Suivant**.  
-   ![discovery Hyper-V virtual machine](./media/discovery-hyperv-virtual-machine.png "discovery Hyper-V virtual machine")  
+   ![détection de machine virtuelle Hyper-V](./media/discovery-hyperv-virtual-machine.png "détection de machine virtuelle Hyper-V")  
   
 3. Fournissez un **nom** à la nouvelle machine virtuelle, par exemple, CloudAppSecurityLogCollector01, puis cliquez sur **Suivant**.  
   

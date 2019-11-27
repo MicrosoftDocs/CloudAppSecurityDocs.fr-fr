@@ -27,7 +27,7 @@ ms.locfileid: "74458402"
 Une fois que vous avez configuré le collecteur de journaux, si vous travaillez derrière un proxy, le collecteur de journaux peut avoir des difficultés pour envoyer des données à Cloud App Security. Cela peut se produire quand le collecteur de journaux ne fait pas confiance à l’autorité de certification racine du proxy et qu’il ne peut pas se connecter à Microsoft Cloud App Security pour récupérer sa configuration ou charger les journaux reçus.
 
 >[!NOTE]
-> For information on how to change the certificates used by the log collector for Syslog or FTP, and to resolve connectivity issues from the firewalls and proxies to the log collector, see [Log collector FTP configuration](log-collector-ftp.md).
+> Pour plus d’informations sur la façon de modifier les certificats utilisés par le collecteur de journaux pour syslog ou FTP, et pour résoudre les problèmes de connectivité à partir des pare-feu et proxys vers le collecteur de journaux, consultez [configuration du protocole FTP du collecteur de journaux](log-collector-ftp.md).
 >
 
 ## <a name="set-up-the-log-collector-behind-a-proxy"></a>Configurer le collecteur de journaux derrière un proxy
@@ -41,7 +41,7 @@ Dans l’interpréteur de commandes, vérifiez que le conteneur a été créé e
     bash
     docker ps
 
-![docker ps](./media/docker-1.png "docker ps")
+![dockr PS](./media/docker-1.png "dockr PS")
 
 ### <a name="copy-proxy-root-ca-certificate-to-the-container"></a>Copier le certificat d’autorité de certification racine du proxy sur le conteneur
 
@@ -83,7 +83,7 @@ Le conteneur est maintenant prêt.
 
 Exécutez la commande **collector_config** à l’aide du jeton d’API que vous avez utilisé lors de la création de votre collecteur de journaux :
 
-![API token](./media/docker-3.png "API token")
+![Jeton d’API](./media/docker-3.png "Jeton d’API")
 
 Lorsque vous exécutez la commande, spécifiez votre propre jeton d’API :
 
@@ -91,11 +91,11 @@ Lorsque vous exécutez la commande, spécifiez votre propre jeton d’API :
       collector_config abcd1234abcd1234abcd1234abcd1234 ${CONSOLE} ${COLLECTOR}
 
 
-![Configuration update](./media/docker-4.png "Configuration update")
+![Mise à jour de la configuration](./media/docker-4.png "Mise à jour de la configuration")
 
 Le collecteur de journaux est désormais en mesure de communiquer avec Cloud App Security. Après lui avoir envoyé des données, l’état passe de **Sain** à **Connecté** dans le portail Cloud App Security.
 
-![Status](./media/docker-5.png "Status")
+![État](./media/docker-5.png "Statut")
 
 >[!NOTE]
 > Si vous devez mettre à jour la configuration du collecteur de journaux, pour ajouter ou supprimer une source de données, par exemple, vous devez normalement **supprimer** le conteneur et effectuer de nouveau les étapes précédentes. Pour éviter cela, vous pouvez réexécuter l’outil *collector_config* avec le nouveau jeton d’API généré dans le portail Cloud App Security.

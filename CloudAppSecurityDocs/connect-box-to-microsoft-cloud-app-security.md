@@ -37,11 +37,11 @@ Cet article fournit des instructions pour connecter Microsoft Cloud App Security
   
     -   Dans la console d’administration Box, cliquez sur l’icône des paramètres puis sur **Business settings** ou **Enterprise settings** (Paramètres d’entreprise).  
   
-         ![box business settings](./media/box-business-settings.png "box, paramètres d’entreprise")  
+         ![paramètres d’entreprise Box](./media/box-business-settings.png "box, paramètres d’entreprise")  
   
     -   Cliquez sur l’onglet **Applications**.  
   
-         ![box apps](./media/box-apps.png "box, applications")  
+         ![applications Box](./media/box-apps.png "box, applications")  
   
     -   Si l’option **Unpublished Applications** (Applications non publiées) est sélectionnée, dans la zone de texte **Except for** (À l’exception de), ajoutez le numéro de série de l’application Cloud App Security :
      
@@ -55,7 +55,7 @@ Cet article fournit des instructions pour connecter Microsoft Cloud App Security
 
         Cliquez ensuite sur **Enregistrer**. Pour savoir à quel centre de données Cloud App Security vous êtes connecté, consultez [Jetons d’API](api-tokens.md). 
   
-         ![box settings except for](./media/box-settings-except-for.png "paramètres box, except for (à l’exception de)")  
+         ![paramètres Box à l’exception de](./media/box-settings-except-for.png "paramètres box, except for (à l’exception de)")  
   
     > [!NOTE]  
     >  Si vous êtes un client Adallom existant et que votre URL de console concerne Adallom et non Cloud App Security, utilisez ce numéro de série d’application : bwahmilhdlpbqy2ongkl119o3lrkoshc.  
@@ -64,7 +64,7 @@ Cet article fournit des instructions pour connecter Microsoft Cloud App Security
   
 3.  Dans la page **Connecteurs d’application**, cliquez sur le bouton plus (+), puis sélectionnez **Box**.  
   
-     ![connect box](./media/connect-box.png "connecter box")  
+     ![zone de connexion](./media/connect-box.png "connecter box")  
   
 4.  Dans la fenêtre contextuelle **Paramètres Box**, cliquez sur **Suivez ce lien**.  
   
@@ -74,7 +74,7 @@ Cet article fournit des instructions pour connecter Microsoft Cloud App Security
   
 7.  De retour dans le portail Cloud App Security, vous devez recevoir un message indiquant que Box a été correctement connecté.  
   
-8.  Vérifiez que la connexion a réussi en cliquant sur **Tester l’API**.  
+8.  Vérifiez la connexion en cliquant sur **Test API** (Tester l’API).  
   
      Le test peut prendre quelques minutes. Une fois averti que la connexion a réussi, cliquez sur **Fermer**.  
   

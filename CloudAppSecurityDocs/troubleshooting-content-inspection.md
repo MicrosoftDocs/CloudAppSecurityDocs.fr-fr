@@ -34,8 +34,8 @@ Le tableau liste les états d’inspection du contenu et leur description.
 
 |État de l’inspection du contenu|Description|
 |----|----|
-|Completed|L’inspection du contenu s’est terminée correctement.|
-|Not applicable|L’inspection du contenu n’était pas applicable pour ce fichier. Cet état peut apparaître si aucune stratégie ne nécessite l’inspection du contenu de ce fichier ou si le type de fichier n’est pas pris en charge.|
+|Terminé|L’inspection du contenu s’est terminée correctement.|
+|Non applicable|L’inspection du contenu n’était pas applicable pour ce fichier. Cet état peut apparaître si aucune stratégie ne nécessite l’inspection du contenu de ce fichier ou si le type de fichier n’est pas pris en charge.|
 |Pending|Le fichier est actuellement dans la file d’attente de l’inspection du contenu.|
 |Échec : erreur de téléchargement|Microsoft Cloud App Security n’a pas pu télécharger le fichier pour l’inspection.|
 |Échec : le fichier est chiffré|Le fichier n’a pas pu être déchiffré.|
