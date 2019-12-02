@@ -5,28 +5,27 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 12/10/2018
+ms.date: 12/1/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: a6658937-57a2-484a-85cb-5a4cdbeeb002
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 09a5702f5a1e1d28dc64172bf6a8204d2bfce5d0
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 79b4bbd6e73a07820524df571ddf9cebe407c5af
+ms.sourcegitcommit: d6ba570c9fbb3c176dab2004c5712c889c759eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74460562"
+ms.lasthandoff: 12/01/2019
+ms.locfileid: "74666749"
 ---
 # <a name="policy-template-reference"></a>Informations de référence sur les modèles de stratégie
 
 *S’applique à : Microsoft Cloud App Security*
 
-Cet article fournit des informations sur les modèles de stratégie inclus dans Microsoft Cloud App Security. 
+Cet article fournit des informations sur les modèles de stratégie inclus dans Microsoft Cloud App Security.
 
 ## <a name="policy-templates"></a>Modèles de stratégie
 
@@ -66,12 +65,11 @@ Il est recommandé de commencer avec une stratégie créée à partir d’un mod
 |Contrôle partagé|Fichier partagé avec un domaine non autorisé|Alerte quand un fichier est partagé avec un domaine non autorisé (par exemple votre concurrent).|
 |Contrôle partagé|Certificats numériques partagés (extensions de fichier)|Alerte quand un fichier contenant des certificats numériques est partagé publiquement. Utilisez ce modèle afin de régir votre stockage AWS.|
 |Contrôle partagé|Compartiments S3 accessibles publiquement (AWS)|Alerte quand un compartiment AWS S3 est publiquement partagé.|
-|Contrôle partagé|Fichiers obsolètes partagés en externe|Rechercher les fichiers partagés en externe qui n’ont pas été ouverts ou modifiés au cours des 6 derniers mois.|
+|Contrôle partagé|Fichiers obsolètes partagés en externe|Alerte lorsque des fichiers partagés en externe n’ont pas été modifiés depuis au moins 6 mois.|
 
+## <a name="next-steps"></a>Étapes suivantes
 
+> [!div class="nextstepaction"]
+> [Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)
 
-## <a name="next-steps"></a>Étapes suivantes 
-[Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)   
-
-[!INCLUDE [Open support ticket](includes/support.md)]  
-  
+[!INCLUDE [Open support ticket](includes/support.md)]
