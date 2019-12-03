@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 10/06/2019
+ms.date: 12/1/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 710c42d0fa307c30919ac8383e7e46881ae0b131
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
-ms.translationtype: MT
+ms.openlocfilehash: b9c354d752b9d960669223c4928453acf323d4bb
+ms.sourcegitcommit: 84d56e4953dd771b099261e10a59cf611dd6280a
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74461152"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74669318"
 ---
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>Obtenir instantanément une détection des anomalies et une analytique comportementale
 
@@ -35,7 +35,7 @@ Ces anomalies sont détectées en analysant l’activité des utilisateurs. Le r
 * Échecs de connexion
 * Activité administrative
 * Comptes inactifs
-* Location
+* Localisation
 * Voyage impossible
 * Agent Appareil et utilisateur
 * Fréquence d'activité
@@ -66,7 +66,7 @@ Plus le niveau de sensibilité est élevé, plus le niveau de suppression appliq
     > [!NOTE]
     >- Pour la détection de programmes malveillants Office 365, vous avez besoin d’une licence valide pour Office 365-protection avancée contre les menaces P1.
     >- Cloud App Security prend en charge la détection de programmes malveillants pour les applications suivantes :
-    >    - Box
+    >    - Zone
     >    - Dropbox
     >    - G Suite
     >    - Office 365
@@ -147,6 +147,9 @@ Pour que le moteur de détection d’anomalie supprime ou déclenche des alertes
 * Dans la stratégie Voyage impossible, vous pouvez définir le curseur de sensibilité pour déterminer le niveau d’un comportement anormal nécessaire avant qu’une alerte ne soit déclenchée. Par exemple, si vous le définissez sur Faible, il supprime les alertes Voyage impossible des emplacements courants d’un utilisateur, et si vous le définissez sur Élevé, il déclenche ce type d’alerte.
 
 * Vous pouvez également configurer si les alertes pour Activité à partir de pays peu fréquents, d’adresses IP anonymes, d’adresses IP suspectes et Voyage impossible doivent analyser les échecs et les réussites de connexion ou juste les réussites de connexion.
+
+> [!NOTE]
+> Par défaut, les protocoles de connexion hérités, tels que ceux qui n’utilisent pas multi-Factor Authentication (par exemple, WS-Trust), ne sont pas contrôlés par la stratégie de voyage impossible. Si votre organisation utilise des protocoles hérités, pour éviter les activités pertinentes manquantes, modifiez la stratégie et, sous **Configuration avancée**, définissez **analyser les activités de connexion** à **toutes les connexions**.
 
 ## <a name="scope-anomaly-detection-policies"></a>Délimiter des stratégies de détection d’anomalie
 
