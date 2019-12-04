@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1f860400ec95d0aa2584eb1fd4a8682bb5a9ac58
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 5272eec53b28fd55886586d06a035f36f70e6e8f
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74459582"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720446"
 ---
 # <a name="activity-policies"></a>Stratégies d’activité
 
@@ -41,7 +41,7 @@ Pour créer une stratégie d’activité, procédez comme suit :
 
 2. Cliquez sur **Créer une stratégie** et sélectionnez **Stratégie d’activité**.
 
-     ![menu Stratégie d’activité](./media/activity-policy-menu.png)
+     ![menu Stratégie d’activité](media/activity-policy-menu.png)
 
 3. Donnez à votre stratégie un nom et une description. Si vous le souhaitez, vous pouvez la baser sur un modèle ; pour plus d’informations sur les modèles de stratégie, consultez [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md).
 
@@ -60,17 +60,17 @@ Jetez un œil aux exemples suivants :
 
 - Plusieurs échecs de connexion
 
-     Vous pouvez définir la stratégie de sorte à recevoir une alerte lorsqu’un grand nombre d’échecs de connexion se produisent sur une courte durée. Pour configurer ce type de stratégie, choisissez le filtre d’activité approprié dans la page **Nouvelle stratégie d’activité**.
+    Vous pouvez définir la stratégie de sorte à recevoir une alerte lorsqu’un grand nombre d’échecs de connexion se produisent sur une courte durée. Pour configurer ce type de stratégie, choisissez le filtre d’activité approprié dans la page **Nouvelle stratégie d’activité**.
 
-     Sous le champ **Filtres d’activité**, configurez les paramètres pour lesquels l’alerte doit être déclenchée.
+    Sous le champ **Filtres d’activité**, configurez les paramètres pour lesquels l’alerte doit être déclenchée.
 
-     ![Exemple de stratégie pour plusieurs tentatives de connexion ayant échoué](./media/multiple-failed-log-on-attempts-policy-example.png "exemple de stratégie, échec de plusieurs tentatives de connexion")
+    ![Exemple de stratégie pour plusieurs tentatives de connexion ayant échoué](media/multiple-failed-log-on-attempts-policy-example.png "exemple de stratégie, échec de plusieurs tentatives de connexion")
 
 - Taux de téléchargement élevé
 
-     Vous pouvez définir votre stratégie afin de recevoir une alerte en cas de niveau d’activité de téléchargement anormal ou inhabituel. Pour configurer ce type de stratégie, sous les paramètres **Taux**, choisissez les paramètres devant déclencher l’alerte.
+    Vous pouvez définir votre stratégie afin de recevoir une alerte en cas de niveau d’activité de téléchargement anormal ou inhabituel. Pour configurer ce type de stratégie, sous les paramètres **Taux**, choisissez les paramètres devant déclencher l’alerte.
 
-     ![exemple de taux de téléchargement élevé](./media/high-download-rate-example.png "exemple de taux de téléchargement élevé")
+    ![exemple de taux de téléchargement élevé](media/high-download-rate-example.png "exemple de taux de téléchargement élevé")
 
 ## <a name="activity-policy-reference"></a>Informations de référence sur les stratégies d’activité
 
@@ -89,6 +89,7 @@ Chaque stratégie comprend les éléments suivants :
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Stratégies de protection des données](data-protection-policies.md)
+> [!div class="nextstepaction"]
+> [Stratégies de protection des données](data-protection-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

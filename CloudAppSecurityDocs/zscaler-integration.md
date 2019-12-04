@@ -11,16 +11,15 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: 8abeab8e-3b7a-46a7-bbec-9aaf26f778a8
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 038e46762ddc24934e9e926cd6a29ae3ec11067a
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 90cd689f45d3889d457e0ab6b953baff8cb8f79d
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74459206"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720407"
 ---
 # <a name="integrate-cloud-app-security-with-zscaler"></a>Intégrer Cloud App Security à Zscaler
 
@@ -32,27 +31,27 @@ Si vous travaillez avec Cloud App Security et Zscaler, vous pouvez intégrer les
 - Les fonctionnalités de blocage de Zscaler sont automatiquement appliquées sur les applications que vous définissez comme non approuvées dans Cloud App Security.
 - Améliorez votre portail Zscaler avec l’évaluation du risque de Cloud App Security pour 200 applications cloud de pointe, qui peuvent être affichées directement dans le portail Zscaler.
 
-## <a name="prerequisites"></a>Conditions préalables requises
+## <a name="prerequisites"></a>Conditions préalables
 
 - Licence valide pour Microsoft Cloud App Security
 - Licence valide pour Zscaler Cloud 5.6
-- Abonnement à Zscaler NSS actif 
+- Abonnement à Zscaler NSS actif
 
 ## <a name="deployment"></a>Déploiement
 
 1. Dans le portail Zscaler, procédez aux étapes permettant de terminer [l’intégration du partenaire Zscaler à Microsoft Cloud App Security](https://help.zscaler.com/zia/configuring-mcas-integration).
 2. Dans le portail Cloud App Security, effectuez les étapes d’intégration suivantes :
-    1. Cliquez sur la roue dentée des paramètres et sélectionnez **Paramètres Cloud Discovery**. 
+    1. Cliquez sur la roue dentée des paramètres et sélectionnez **Paramètres Cloud Discovery**.
     2. Cliquez sur l’onglet **Chargement automatique des journaux**, puis cliquez sur **Ajouter une source de données**.
     3. Dans la page **Ajouter une source de données**, entrez les paramètres suivants :
 
-       - Nom = NSS
-       - Source = Zscaler QRadar LEEF
-       - Type de récepteur = Syslog - UDP
+        - Nom = NSS
+        - Source = Zscaler QRadar LEEF
+        - Type de récepteur = Syslog - UDP
 
-         ![source de données Zscaler](./media/data-source-zscaler.png)
+        ![source de données Zscaler](media/data-source-zscaler.png)
 
-    4. Cliquez sur **Afficher un exemple du fichier journal attendu**. Puis cliquez sur **Télécharger l’exemple de journal** pour afficher un exemple de journal Discovery et vous assurer qu’il correspond à vos journaux.<br>
+    4. Cliquez sur **Afficher un exemple du fichier journal attendu**. Puis cliquez sur **Télécharger l’exemple de journal** pour afficher un exemple de journal Discovery et vous assurer qu’il correspond à vos journaux.<br />
 
 3. Examinez les applications cloud découvertes sur votre réseau. Pour plus d’informations et de méthodes d’examen, consultez la page [Utilisation de Cloud Discovery](working-with-cloud-discovery-data.md).
 
@@ -60,7 +59,7 @@ Si vous travaillez avec Cloud App Security et Zscaler, vous pouvez intégrer les
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)
+> [!div class="nextstepaction"]
+> [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]  
-  
+[!INCLUDE [Open support ticket](includes/support.md)]

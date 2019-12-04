@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 3a0756e8e2ffc9d351013b03e037fa996cbf341f
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: b31876240187e3f95ff2a8d10632b54de37e6ed6
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74461006"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720758"
 ---
 # <a name="connect-workday-to-microsoft-cloud-app-security-preview"></a>Connecter un jour ouvré à Microsoft Cloud App Security (version préliminaire)
 
@@ -27,16 +27,16 @@ ms.locfileid: "74461006"
 
 Cet article fournit des instructions pour connecter Microsoft Cloud App Security à votre compte de jour de travail existant à l’aide de l’API du connecteur d’applications. Cette connexion vous donne une visibilité et un contrôle sur l’utilisation des jours de travail.
 
-## <a name="prerequisites"></a>Conditions préalables requises
+## <a name="prerequisites"></a>Conditions préalables
 
 Le compte de jour de travail utilisé pour la connexion à Cloud App Security doit être membre d’un groupe de sécurité (nouveau ou existant). Nous vous recommandons d’utiliser un utilisateur système d’intégration de jours ouvrables. Les autorisations suivantes doivent être sélectionnées pour le groupe de sécurité pour les stratégies de sécurité de domaine suivantes :
 
 | Zone fonctionnelle | Stratégie de sécurité du domaine | Stratégie de sécurité des sous-domaines | Autorisations de rapport/tâche | Autorisations d'intégration |
 | --- | --- | --- | --- | --- |
-| System | Configuration : configuration du locataire – général | Configuration : configuration du client – sécurité | Afficher, modifier | Acquérir, put |
-| System | Administration de la sécurité | | Afficher, modifier | Acquérir, put |
-| System | Audit du système | | Vue | Obtenir |
-| Effectifs | Données de travail : personnel | Données de travail : rapports de travail public | Vue | Obtenir |
+| d'exploitation | Configuration : configuration du locataire – général | Configuration : configuration du client – sécurité | Afficher, modifier | Acquérir, put |
+| d'exploitation | Administration de la sécurité | | Afficher, modifier | Acquérir, put |
+| d'exploitation | Audit du système | | Affichez | Obtenir |
+| Effectifs | Données de travail : personnel | Données de travail : rapports de travail public | Affichez | Obtenir |
 
 > [!NOTE]
 >
@@ -60,7 +60,7 @@ Pour plus d’informations sur la configuration des utilisateurs d’intégratio
 
 1. Dans la page **inscrire le client** de l’API, renseignez les informations suivantes, puis cliquez sur **OK**.
 
-    | Nom du champ | Valeur |
+    | Nom de champ | Value |
     | ---- | ---- |
     | Nom du client | Microsoft Cloud App Security |
     | Type d’octroi client | Octroi de code d’autorisation |
@@ -99,7 +99,7 @@ Pour plus d’informations sur la configuration des utilisateurs d’intégratio
 
     ![Capture d’écran de l’autorisation d’accès à l’application](media/connect-workday-add-app-allow.png)
 
-1. De retour dans le portail Cloud App Security, vous devriez voir un message indiquant que la journée de travail a été correctement connectée. Vérifiez la connexion en cliquant sur **Test API** (Tester l’API).
+1. De retour dans le portail Cloud App Security, vous devriez voir un message indiquant que la journée de travail a été correctement connectée. Vérifiez que la connexion a réussi en cliquant sur **Tester l’API**.
 
     Le test peut prendre quelques minutes. Une fois averti que la connexion a réussi, cliquez sur **Fermer**.
 
@@ -108,6 +108,7 @@ Pour plus d’informations sur la configuration des utilisateurs d’intégratio
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)
+> [!div class="nextstepaction"]
+> [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

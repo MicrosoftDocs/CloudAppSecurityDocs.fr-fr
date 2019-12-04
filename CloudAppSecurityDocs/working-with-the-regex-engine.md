@@ -11,21 +11,20 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: dc8b87e5-e6c1-4a65-ab8c-067fb527fce4
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 803fa93c683acaaf7dac3e2705836973a898f839
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 5c055cebf7bf63f50fcea997648316f25a7b4429
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74459226"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74721157"
 ---
 # <a name="working-with-the-regex-engine"></a>En utilisant l’inspection du contenu
 
 *S’applique à : Microsoft Cloud App Security*
- 
+
 Cet article fournit des instructions d’utilisation du moteur RegEx pour la correspondance au modèle dans les stratégies Cloud App Security.
 
 ## <a name="regular-expressions-in-cloud-app-security"></a>Expressions régulières dans Cloud App Security
@@ -34,39 +33,38 @@ Les stratégies d’inspection du contenu de Microsoft Cloud App Security utilis
 
 ### <a name="testing-regular-expressions"></a>Test des expressions régulières
 
-Pour tester des expressions régulières, vous pouvez utiliser les sites web suivants :  
-  
-- [https://regexpal.com/](https://regexpal.com/) - Veillez à sélectionner **Casse non prise en compte**.  
-  
-- [https://regex101.com/](https://regex101.com/) - Fournit une analyse détaillée de RegEx.  
+Pour tester des expressions régulières, vous pouvez utiliser les sites web suivants :
+
+- [https://regexpal.com/](https://regexpal.com/) - Veillez à sélectionner **Casse non prise en compte**.
+
+- [https://regex101.com/](https://regex101.com/) - Fournit une analyse détaillée de RegEx.
 
 ### <a name="limitations-of-regular-expressions-in-cloud-app-security"></a>Limitations des expressions régulières dans Cloud App Security
 
-Les limitations suivantes sont imposées sur les expressions régulières personnalisées :  
-  
-- Le non-respect de la casse est toujours appliqué à la recherche  
+Les limitations suivantes sont imposées sur les expressions régulières personnalisées :
 
-- Quantificateurs autorisés : {n,m} où n, m < 10  
-  
-- Tous les groupes doivent être sans capture, par exemple : (?:xxx)  
-  
-     Au lieu de (groupe), utilisez (?:groupe)  
-  
-- Quantificateurs non autorisés : *, +, {n,}  
-  
-     Au lieu de *, utilisez {0,9}  
-  
-     Au lieu de +, utilisez {1,9}  
-  
-- Références arrière non autorisées : \\<nombre\> ou \k\<nom>  
-  
-### <a name="example-expressions"></a>Exemples d’expressions  
+- Le non-respect de la casse est toujours appliqué à la recherche
+
+- Quantificateurs autorisés : {n,m} où n, m < 10
+
+- Tous les groupes doivent être sans capture, par exemple : (?:xxx)
+
+    Au lieu de (groupe), utilisez (?:groupe)
+
+- Quantificateurs non autorisés : *, +, {n,}
+
+    Au lieu de *, utilisez {0,9}
+
+    Au lieu de +, utilisez {1,9}
+
+- Références arrière non autorisées : \\<nombre\> ou \k\<nom>
+
+### <a name="example-expressions"></a>Exemples d’expressions
 
 Le tableau suivant vous présente des exemples d’expressions et si elles correspondraient ou non.
 
-|                                                               |                                                               |                                    |
+|              Regular expression              |                     Niveau                     |      Correspond à      |
 |---------------------------------------------------------------|---------------------------------------------------------------|------------------------------------|
-|              <strong>Expression régulière</strong>              |                     <strong>Données</strong>                     |      <strong>Correspondances</strong>      |
 |            Colou?r (?:black&#124;blue&#124;white)             |   Noir<br /><br /> Blanc<br /><br /> Rouge   | Oui<br /><br /> Oui<br /><br /> Non |
 |           [a-z0-9]{1,9}@[a-z0-9]{1,9}\\.[a-z]{2,3}            | Some1@abc.com<br /><br /> user@host.org<br /><br /> @bad.com  | Oui<br /><br /> Oui<br /><br /> Non |
 | 20\d{2}-(?:0[1-9]&#124;1[0-2])-(?:[0-2][0-9]&#124;30&#124;31) |   2015-12-31<br /><br /> 2015-01-09<br /><br /> 1999-12-31    | Oui<br /><br /> Oui<br /><br /> Non |
@@ -74,14 +72,12 @@ Le tableau suivant vous présente des exemples d’expressions et si elles corre
 
 ## <a name="check-out-this-video"></a>Regardez cette vidéo !
 
-[Utilisation du moteur RegEx](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security-Working-with-the-Regex-Engine)
+> [!div class="nextstepaction"]
+> [Utilisation du moteur RegEx](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security-Working-with-the-Regex-Engine)
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)   
+> [!div class="nextstepaction"]
+> [Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]  
-  
-
-## <a name="check-out-this-video"></a>Regardez cette vidéo !
-[Utilisation du moteur RegEx](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security-Working-with-the-Regex-Engine)    
+[!INCLUDE [Open support ticket](includes/support.md)]

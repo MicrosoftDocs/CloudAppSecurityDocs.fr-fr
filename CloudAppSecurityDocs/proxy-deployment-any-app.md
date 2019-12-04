@@ -12,26 +12,22 @@ ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
-ms.openlocfilehash: f6de75de67bc81b1f12da30cc7a54a6d6b95b324
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: a4d58378bc8502a9022f51d3794d3175df8596de
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74460612"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720865"
 ---
 # <a name="onboard-and-deploy-conditional-access-app-control-for-any-app"></a>Intégration et déploiement de contrôle d’application par accès conditionnel pour n’importe quelle application
 
 *S’applique à : Microsoft Cloud App Security*
 
->[!div class="step-by-step"]
-[«Précédent : déployer contrôle d’application par accès conditionnel pour les applications proposées](proxy-deployment-aad.md)<br>
-[Suivant : Guide pratique pour créer une stratégie de session »](session-policy-aad.md)
-
 Les contrôles de session dans Microsoft Cloud App Security peuvent être configurés pour fonctionner avec n’importe quelle application Web. Cet article explique comment intégrer et déployer des applications métier personnalisées, des applications SaaS non proposées et des applications locales hébergées via le proxy d’application Azure Active Directory (Azure AD) avec des contrôles de session.
 
 Pour obtenir la liste des applications qui sont proposées par Cloud App Security pour un travail prêt à l’emploi, consultez [protéger les applications avec Microsoft Cloud App Security contrôle d’application par accès conditionnel](proxy-intro-aad.md#featured-apps).
 
-## <a name="prerequisites"></a>Conditions préalables requises
+## <a name="prerequisites"></a>Conditions préalables
 
 - Votre organisation doit disposer des licences suivantes pour utiliser contrôle d’application par accès conditionnel :
 
@@ -74,7 +70,7 @@ Procédez comme suit pour configurer une application devant être contrôlée pa
 
 1. Sous **contrôles d’accès**, cliquez sur **session**, sélectionnez **utiliser contrôle d’application par accès conditionnel** et choisissez des stratégies intégrées (**surveiller uniquement** ou **bloquer les téléchargements**) ou **Utilisez une stratégie personnalisée** pour définir une stratégie avancée dans Cloud App Security, puis cliquez sur **Sélectionner**.
 
-   ![Accès conditionnel Azure AD](./media/azure-ad-caac-policy.png)
+    ![Accès conditionnel Azure AD](media/azure-ad-caac-policy.png)
 
 1. Facultatif : ajoutez des conditions et accordez des contrôles en fonction des besoins.
 
@@ -82,7 +78,7 @@ Procédez comme suit pour configurer une application devant être contrôlée pa
 
 ## Étape 2 : configurer les utilisateurs qui déploieront l’application<a name="conf-users"></a>
 
-1. Dans Cloud App Security, dans la barre de menus, cliquez sur l' ![icône](./media/settings-icon.png "icône des paramètres") paramètres roue dentée paramètres, puis sélectionnez **paramètres**.
+1. Dans Cloud App Security, dans la barre de menus, cliquez sur l' ![icône](media/settings-icon.png "icône des paramètres") paramètres roue dentée paramètres, puis sélectionnez **paramètres**.
 
 1. Sous **contrôle d’application par accès conditionnel**, sélectionnez **intégration/maintenance**de l’application.
 
@@ -92,16 +88,16 @@ Procédez comme suit pour configurer une application devant être contrôlée pa
 
 ## Étape 3 : configurer l’application que vous déployez<a name="conf-app"></a>
 
-Accédez à l’application que vous déployez. La page que vous voyez varie selon que l’application est reconnue ou non. Effectuez l’une des opérations suivantes :
+Accédez à l’application que vous déployez. La page que vous voyez varie selon que l’application est reconnue ou non. Procédez de l'une des façons suivantes :
 
 | État de l’application | Description | Étapes |
 | --- | --- | --- |
-| Non reconnu | Une page application non reconnue s’affiche et vous invite à configurer votre application. | 1. [Ajoutez l’application à contrôle d’application par accès conditionnel](#add-app).<br> 2. [Ajoutez les domaines pour l’application](#add-domains), puis revenez à l’application et actualisez la page.<br> 3. [Installez les certificats pour l’application](#install-certs). |
-| Reconnu | Une page d’intégration s’affiche pour vous inviter à poursuivre le processus de configuration de l’application. | - [installer les certificats pour l’application](#install-certs). <br><br> **Remarque :** Assurez-vous que l’application est configurée avec tous les domaines requis pour que l’application fonctionne correctement. Pour configurer des domaines supplémentaires, continuez à [Ajouter les domaines pour l’application](#add-domains), puis revenez à la page de l’application. |
+| Non reconnu | Une page application non reconnue s’affiche et vous invite à configurer votre application. | 1. [Ajoutez l’application à contrôle d’application par accès conditionnel](#add-app).<br /> 2. [Ajoutez les domaines pour l’application](#add-domains), puis revenez à l’application et actualisez la page.<br /> 3. [Installez les certificats pour l’application](#install-certs). |
+| Reconnu | Une page d’intégration s’affiche pour vous inviter à poursuivre le processus de configuration de l’application. | - [installer les certificats pour l’application](#install-certs). <br /><br /> **Remarque :** Assurez-vous que l’application est configurée avec tous les domaines requis pour que l’application fonctionne correctement. Pour configurer des domaines supplémentaires, continuez à [Ajouter les domaines pour l’application](#add-domains), puis revenez à la page de l’application. |
 
 ### Pour ajouter une nouvelle application<a name="add-app"></a>
 
-1. Dans la barre de menus, cliquez sur l' ![icône](./media/settings-icon.png "icône des paramètres")paramètres roue dentée paramètres, puis sélectionnez **contrôle d’application par accès conditionnel**.
+1. Dans la barre de menus, cliquez sur l' ![icône](media/settings-icon.png "icône des paramètres")paramètres roue dentée paramètres, puis sélectionnez **contrôle d’application par accès conditionnel**.
 
 1. Cliquez sur **Afficher les nouvelles applications**.
 
@@ -109,8 +105,8 @@ Accédez à l’application que vous déployez. La page que vous voyez varie sel
 
 1. Dans l’écran qui s’ouvre, vous pouvez voir une liste de nouvelles applications. Pour chaque application que vous intégrez, cliquez sur le signe **+** , puis cliquez sur **Ajouter**.
 
-   > [!NOTE]
-   > Si une application n’apparaît pas dans le catalogue d’applications Cloud App Security, elle figure, dans la boîte de dialogue, sous les applications non identifiées, avec son URL de connexion. Lorsque vous cliquez sur le signe + pour ces applications, vous pouvez intégrer l’application en tant qu’application personnalisée.
+    > [!NOTE]
+    > Si une application n’apparaît pas dans le catalogue d’applications Cloud App Security, elle figure, dans la boîte de dialogue, sous les applications non identifiées, avec son URL de connexion. Lorsque vous cliquez sur le signe + pour ces applications, vous pouvez intégrer l’application en tant qu’application personnalisée.
 
     ![Applications Azure AD découvertes du Contrôle d’application par accès conditionnel](media/caac-discovered-aad-apps.png)
 
@@ -128,7 +124,7 @@ Par exemple, si vous avez configuré une stratégie qui bloque le téléchargeme
 1. Dans le volet domaines découverts, prenez note des noms de domaine ou exportez la liste sous forme de fichier. csv.
     > [!NOTE]
     > Le volet affiche la liste des domaines détectés qui ne sont pas associés à l’application. Les noms de domaine sont qualifiés complets.
-1. Accédez à Cloud App Security, dans la barre de menus, cliquez sur l' ![icône](./media/settings-icon.png "icône des paramètres") paramètres roue dentée paramètres, puis sélectionnez **contrôle d’application par accès conditionnel**.
+1. Accédez à Cloud App Security, dans la barre de menus, cliquez sur l' ![icône](media/settings-icon.png "icône des paramètres") paramètres roue dentée paramètres, puis sélectionnez **contrôle d’application par accès conditionnel**.
 1. Dans la liste des applications, sur la ligne dans laquelle l’application que vous déployez s’affiche, choisissez les trois points à la fin de la ligne, puis sous **Détails**de l’application, choisissez **modifier**.
     > [!TIP]
     > Pour afficher la liste des domaines configurés dans l’application, cliquez sur **afficher les domaines d’application**.
@@ -150,7 +146,7 @@ Par exemple, si vous avez configuré une stratégie qui bloque le téléchargeme
     > [!NOTE]
     > Pour que les certificats soient reconnus, une fois que vous avez installé le certificat, vous devez redémarrer le navigateur et accéder à la même page.<!-- You'll see a check-mark by the certificates links confirmation they are installed.-->
 
-1. Cliquez sur **Continuer**.
+1. Cliquez sur **Continue** (Continuer).
 
 ## Étape 4 : vérifier que l’application fonctionne correctement<a name="verify-app"></a>
 
@@ -167,7 +163,7 @@ Par exemple, si vous avez configuré une stratégie qui bloque le téléchargeme
 
 Une fois que vous êtes prêt à activer l’application en vue de son utilisation dans l’environnement de production de votre organisation, procédez comme suit.
 
-1. Dans Cloud App Security, cliquez sur l’icône Paramètres roue dentée ![paramètres](./media/settings-icon.png "icône des paramètres"), puis sélectionnez **contrôle d’application par accès conditionnel**.
+1. Dans Cloud App Security, cliquez sur l’icône Paramètres roue dentée ![paramètres](media/settings-icon.png "icône des paramètres"), puis sélectionnez **contrôle d’application par accès conditionnel**.
 1. Dans la liste des applications, sur la ligne dans laquelle l’application que vous déployez s’affiche, choisissez les trois points à la fin de la ligne, puis choisissez **modifier l’application**.
 1. Sélectionnez **utiliser avec contrôle d’application par accès conditionnel** , puis cliquez sur **Enregistrer**.
 
@@ -177,12 +173,20 @@ Une fois que vous êtes prêt à activer l’application en vue de son utilisati
 1. Mettez à jour la stratégie que vous avez créée précédemment pour inclure les utilisateurs, les groupes et les contrôles appropriés dont vous avez besoin.
 1. Sous **Session** > **utiliser contrôle d’application par accès conditionnel**, si vous avez sélectionné **utiliser une stratégie personnalisée**, accédez à Cloud App Security et créez une stratégie de session correspondante. Pour plus d’informations, consultez [Stratégies de session](session-policy-aad.md).
 
->[!div class="step-by-step"]
-[«Précédent : déployer contrôle d’application par accès conditionnel pour les applications proposées](proxy-deployment-aad.md)<br>
-[Suivant : Guide pratique pour créer une stratégie de session »](session-policy-aad.md)
-
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Utilisation avec le Contrôle d’accès conditionnel aux applications de Cloud App Security](proxy-intro-aad.md)
+> [!div class="nextstepaction"]
+> [Comment créer une stratégie de session»](session-policy-aad.md)
+
+## <a name="see-also"></a>Voir aussi
+
+> [!div class="nextstepaction"]
+> [Présentation de contrôle d’application par accès conditionnel](proxy-intro-aad.md)
+
+> [!div class="nextstepaction"]
+> [Utilisation avec le Contrôle d’accès conditionnel aux applications de Cloud App Security](proxy-intro-aad.md)
+
+> [!div class="nextstepaction"]
+> [Déployer des contrôle d’application par accès conditionnel pour les applications proposées](proxy-deployment-aad.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

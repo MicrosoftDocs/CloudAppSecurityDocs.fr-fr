@@ -11,16 +11,15 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: f118a3bf-1663-46ba-884f-b1b03a84ab66
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2980fa8d9d784ce0e3169ed42359522885fcf320
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 5cea905e2d7e0b157d757fef1056c2e7a289153c
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74460656"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74719609"
 ---
 # <a name="monitor-alerts-in-cloud-app-security"></a>Surveiller les alertes dans Cloud App Security
 
@@ -30,27 +29,26 @@ Les alertes constituent un bon point de départ pour comprendre votre environnem
 
 ## <a name="monitoring-your-alerts"></a>Surveillance de vos alertes
 
-Nous vous incitons à examiner vos alertes. En comprenant le déclenchement des alertes, vous pouvez les utiliser en tant qu’outils pour modifier vos stratégies. 
+Nous vous incitons à examiner vos alertes. En comprenant le déclenchement des alertes, vous pouvez les utiliser en tant qu’outils pour modifier vos stratégies.
 
 **Pour afficher les alertes :** Dans le portail Microsoft Cloud App Security, cliquez sur **alertes**.
 
+![menu Alerte](media/alert-menu.png)
 
-![menu Alerte](./media/alert-menu.png)
+- **Ignorez** une alerte lorsque vous l’avez vue et que vous avez déterminé qu’elle était sans importance.
+  - Entrez un **commentaire** pour expliquer pourquoi vous avez ignoré l’alerte.
+  - **Envoyez-nous vos commentaires sur cette alerte**. Ils seront examinés par notre équipe de recherche de sécurité afin d’améliorer les alertes.
 
- - **Ignorez** une alerte lorsque vous l’avez vue et que vous avez déterminé qu’elle était sans importance. 
-     - Entrez un **commentaire** pour expliquer pourquoi vous avez ignoré l’alerte. 
-     - **Envoyez-nous vos commentaires sur cette alerte**. Ils seront examinés par notre équipe de recherche de sécurité afin d’améliorer les alertes.
+- **Résolvez** l’alerte si vous vous y intéressez et éliminez le risque.
 
-- **Résolvez** l’alerte si vous vous y intéressez et éliminez le risque. 
+  - L’alerte n’apparaîtra plus dans le tableau des alertes.
+  - **Marquez l’alerte comme non lue** si vous avez commencé à vous y intéresser et que vous poursuivrez vos recherches plus tard.
+  - **Ajustez la stratégie** correspondant à l’alerte pour améliorer les prochaines correspondances d’alerte.
+  - La résolution d’une alerte vous donne la possibilité d’entrer un commentaire et d’**Envoyer des commentaires à l’équipe de Cloud App Security**.
 
-     - L’alerte n’apparaîtra plus dans le tableau des alertes.
-     - **Marquez l’alerte comme non lue** si vous avez commencé à vous y intéresser et que vous poursuivrez vos recherches plus tard. 
-     -  **Ajustez la stratégie** correspondant à l’alerte pour améliorer les prochaines correspondances d’alerte. 
-     - La résolution d’une alerte vous donne la possibilité d’entrer un commentaire et d’**Envoyer des commentaires à l’équipe de Cloud App Security**.
- 
 ## <a name="built-in-alerts"></a>Alertes intégrées
 
-Les types d’alertes suivants sont affichés. 
+Les types d’alertes suivants sont affichés.
 
 |Nom d'alerte|ID d’alerte|Description|
 |----|----|----|
@@ -62,11 +60,11 @@ Les types d’alertes suivants sont affichés.
 
 ## <a name="custom-alerts"></a>Alertes personnalisées
 
-Les types d’alertes suivants sont affichés. 
+Les types d’alertes suivants sont affichés.
 
 |Nom d'alerte|ID d’alerte|Description|
 |----|----|----|
-|Alerte d’activité suspecte|ALERT_SUSPICIOUS_ACTIVITY|Les activités suspectes sont évaluées en fonction du degré de suspicion de l’activité anormale (Un compte inactif est-il impliqué ? S’agit-il d’un nouvel emplacement ?) Ces critères sont tous calculés ensemble pour fournir un score de risque en fonction des facteurs de risque suivants : <br>L’utilisateur est administrateur <br>Utilisateur strictement à distance<br>Proxy anonyme<br> Toute la session ne compte que des échecs de connexion<br>Nombreux échecs de connexion<br>Nouveau (administrateur)<br>IP/ISP/pays/agent utilisateur pour utilisateur/client<br> IP/ISP/pays/agent utilisateur utilisé uniquement par utilisateur (administrateur)<br>Première activité utilisateur (administrateur) depuis un certain temps<br>Première fois que cette activité administrative particulière est exécutée depuis un certain temps<br>Cette activité administrative particulière n’est pas courante/n’a jamais été exécutée auparavant<br>Cette adresse IP ne présentait que des échecs de connexion dans le passé<br>Voyage impossible|
+|Alerte d’activité suspecte|ALERT_SUSPICIOUS_ACTIVITY|Les activités suspectes sont évaluées en fonction du degré de suspicion de l’activité anormale (Un compte inactif est-il impliqué ? S’agit-il d’un nouvel emplacement ?) Ces critères sont tous calculés ensemble pour fournir un score de risque en fonction des facteurs de risque suivants : <br />L’utilisateur est administrateur <br />Utilisateur strictement à distance<br />Proxy anonyme<br /> Toute la session ne compte que des échecs de connexion<br />Nombreux échecs de connexion<br />Nouveau (administrateur)<br />IP/ISP/pays/agent utilisateur pour utilisateur/client<br /> IP/ISP/pays/agent utilisateur utilisé uniquement par utilisateur (administrateur)<br />Première activité utilisateur (administrateur) depuis un certain temps<br />Première fois que cette activité administrative particulière est exécutée depuis un certain temps<br />Cette activité administrative particulière n’est pas courante/n’a jamais été exécutée auparavant<br />Cette adresse IP ne présentait que des échecs de connexion dans le passé<br />Voyage impossible|
 |Alerte d’utilisation suspecte du cloud|ALERT_DISCOVERY_ANOMALY_DETECTION|La détection des anomalies Cloud Discovery vérifie le modèle du comportement normal et recherche des utilisateurs ou des applications qui sont utilisés de façon inhabituelle. |
 |Violation de stratégie d’activité|ALERT_CABINET_EVENT_MATCH_AUDIT|Cette alerte vous informe quand une correspondance de stratégie a été détectée.|
 |Violation de stratégie de fichier|ALERT_CABINET_EVENT_MATCH_FILE|Cette alerte vous informe quand une correspondance de stratégie a été détectée.|
@@ -75,8 +73,9 @@ Les types d’alertes suivants sont affichés.
 |Nouveau service découvert|ALERT_CABINET_DISCOVERY_NEW_SERVICE|Une nouvelle application a été découverte.|
 |Utilisation d’un compte personnel|ALERT_PERSONAL_USER_SAGE|Selon les partages de fichiers et les noms d’utilisateur, le moteur de détection recherche des comptes personnels. |
 
-## <a name="next-steps"></a>Étapes suivantes 
+## <a name="next-steps"></a>Étapes suivantes
 
-[Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)
+> [!div class="nextstepaction"]
+> [Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]  
+[!INCLUDE [Open support ticket](includes/support.md)]

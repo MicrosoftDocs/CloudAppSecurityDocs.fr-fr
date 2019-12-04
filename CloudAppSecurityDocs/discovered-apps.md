@@ -14,20 +14,20 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4a9d504193061091352985a616893f2220c5d040
-ms.sourcegitcommit: 254d5be2b002c5658803923aa9ef97240dcdc917
+ms.openlocfilehash: a63546a3404cdf4c48a56b800f5d80d09ee5971e
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71263269"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74719348"
 ---
 # <a name="working-with-discovered-apps"></a>Utilisation des applications découvertes
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Le tableau de bord Cloud Discovery est conçu pour vous donner plus d’informations sur l’utilisation des applications cloud dans votre organisation. Il fournit une vue d’ensemble des types d’applications utilisés, des alertes ouvertes et des niveaux de risque des applications de votre organisation. Il vous montre également les principaux utilisateurs des applications et fournit un plan du lieu du siège social d’une application. Le tableau de bord Cloud Discovery a de nombreuses options pour filtrer les données. Le filtrage vous permet de générer des vues spécifiques selon ce qui vous intéresse le plus, avec des graphiques faciles à comprendre pour vous donner une vision globale en un clin d’œil.
 
-![tableau de bord Cloud Discovery](./media/cloud-discovery-dashboard.png)
+![tableau de bord Cloud Discovery](media/cloud-discovery-dashboard.png)
 
 ## <a name="review-the-cloud-discovery-dashboard"></a>Consulter le tableau de bord Cloud Discovery
 
@@ -58,7 +58,7 @@ Par exemple, si vous voulez identifier les applications de collaboration et de s
 
 1. Définissez le **Facteur de risque de sécurité** pour **Chiffrement des données au repos** sur **Non pris en charge**. Définissez ensuite **Score de risque** sur une valeur inférieure ou égale à 6.
 
-![Filtres d’application découverte](./media/discovered-app-filters.png)
+![Filtres d’application découverte](media/discovered-app-filters.png)
 
 Une fois que les résultats sont filtrés, vous pouvez [ne pas approuver et bloquer](governance-discovery.md) ces applications en cochant la case d’action en bloc pour ne pas les approuver toutes en une seule action. Une fois qu’elles sont non approuvées, vous pouvez utiliser un script de blocage pour empêcher leur utilisation dans votre environnement.
 
@@ -68,7 +68,7 @@ Vous pouvez par exemple effectuer la distinction entre différents sites SharePo
 
 Cette fonctionnalité est prise en charge uniquement dans les pare-feu et les proxys qui contiennent des données d’URL cibles. Pour plus d’informations, consultez la liste des appliances prises en charge dans [Pare-feux et proxys pris en charge](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
 
-![informations sur les sous-domaines](./media/discovery-domains.png)
+![informations sur les sous-domaines](media/discovery-domains.png)
 
 ## <a name="discover-resources-and-custom-apps"></a>Découvrir les ressources et les applications personnalisées
 
@@ -83,11 +83,11 @@ Pour voir les ressources découvertes :
 
 1. Dans le portail Cloud App Security, sélectionnez **Découvrir**, puis **Ressources découvertes**.
 
-    ![Menu des ressources découvertes](./media/discovered-resources-menu.png)
+    ![Menu des ressources découvertes](media/discovered-resources-menu.png)
 
 1. Dans la page des ressources découvertes, vous pouvez explorer chaque ressource pour voir les types de transactions effectuées, qui y a accédé et aller encore plus dans les détails pour en savoir plus sur les utilisateurs.
 
-   ![Découverte de ressources](./media/discovery-resources.png)
+   ![Découverte de ressources](media/discovery-resources.png)
 
 1. Pour les applications personnalisées, vous pouvez cliquer sur les trois boutons à la fin de la ligne et sélectionnez **Ajouter une application personnalisée**. Cette opération ouvre la fenêtre **Ajouter une application personnalisée** qui vous permet de nommer et identifier l’application afin de pouvoir l’inclure dans le tableau de bord Cloud Discovery.
 
@@ -115,7 +115,7 @@ Pour créer une exclusion :
 
 1. Ajoutez un alias utilisateur, une adresse IP ou un nom de machine. Nous vous recommandons d’ajouter des informations sur les raisons de l’exclusion.
 
-    ![exclure l’utilisateur](./media/exclude-user.png "exclure l’utilisateur")
+    ![exclure un utilisateur](media/exclude-user.png "exclure l’utilisateur")
 
 ## <a name="manage-continuous-reports"></a>Gérer les rapports continus
 
@@ -139,7 +139,7 @@ Pour créer un rapport continu :
 
 1. Définissez les filtres souhaités sur les données. Ces filtres peuvent être **Groupes d’utilisateurs**, **Balises d’adresse IP** ou **Plages d’adresses IP**. Pour plus d’informations sur l’utilisation de balises d’adresse IP et de plages d’adresses IP, voir [Organiser les données selon vos besoins](ip-tags.md).
 
-    ![créer un rapport continu personnalisé](./media/create-custom-continuous-report.png)
+    ![créer un rapport continu personnalisé](media/create-custom-continuous-report.png)
 
 > [!NOTE]
 > Tous les rapports personnalisés sont limitées à 1 Go de données maximum non compressées. En cas de dépassement, le premier 1 Go de données est exporté dans le rapport.
@@ -164,15 +164,18 @@ Pour supprimer des données Cloud Discovery :
 
 1. Cliquez sur le bouton **Supprimer**.
 
-    ![supprimer des données](./media/delete-data.png "supprimer des données")
+    ![supprimer des données](media/delete-data.png "supprimer des données")
 
     > [!NOTE]
     > Le processus de suppression peut prendre quelques minutes et il n’est pas immédiat.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Créer des rapports d’instantanés Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
+> [!div class="nextstepaction"]
+> [Créer des rapports d’instantanés Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
 
-[Configurer le chargement automatique des journaux pour des rapports continus](configure-automatic-log-upload-for-continuous-reports.md)
+> [!div class="nextstepaction"]
+> [Configurer le chargement automatique des journaux pour des rapports continus](configure-automatic-log-upload-for-continuous-reports.md)
 
-[Utilisation des données Cloud Discovery](working-with-cloud-discovery-data.md)
+> [!div class="nextstepaction"]
+> [Utilisation des données Cloud Discovery](working-with-cloud-discovery-data.md)

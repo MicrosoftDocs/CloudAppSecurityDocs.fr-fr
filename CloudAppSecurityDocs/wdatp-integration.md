@@ -11,16 +11,15 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: b35ca44c-da8e-49ec-89d1-c076d123c14f
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: aeddfb56542309b0ee6b1f0d4cdec85bb36a120e
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 90efa85fccd71e488f80db290b09b1636013304b
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74459432"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720388"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-integration-with-microsoft-cloud-app-security"></a>Intégration de Microsoft Defender-protection avancée contre les menaces avec Microsoft Cloud App Security
 
@@ -36,10 +35,8 @@ Microsoft Cloud App Security utilise l’intégration native avec Microsoft Defe
 
 > [!NOTE]
 > Vous souhaitez découvrir Microsoft Defender ATP ? [Inscrivez-vous pour obtenir un essai gratuit](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-assignaccess-abovefoldlink).
->
 
-
-## <a name="prerequisites"></a>Conditions préalables requises
+## <a name="prerequisites"></a>Conditions préalables
 
 - Licence Microsoft Cloud App Security
 - Licence Microsoft Defender ATP
@@ -65,7 +62,7 @@ Pour activer l’intégration à Cloud App Security à partir de Microsoft Defen
 > Il faut jusqu’à deux heures après l’activation de l’intégration pour que les données s’affichent dans Cloud App Security.
 >
 
-   ![Paramètres WD ATP](./media/wdatp-settings.png)
+![Paramètres WD ATP](media/wdatp-settings.png)
 
 ## <a name="investigate-machines-in-cloud-app-security"></a>Examiner des ordinateurs dans Cloud App Security
 
@@ -73,35 +70,40 @@ Une fois que vous avez intégré Microsoft Defender ATP à Cloud App Security, v
 
 1. Dans le portail Cloud App Security, cliquez sur **Cloud Discovery**, puis sur **Tableau de bord Cloud Discovery**.
 2. Dans la barre de navigation supérieure, sous **Rapports continus**, sélectionnez **Utilisateurs de point de terminaison Win10**.
-  ![Rapport WD ATP](./media/win10-dashboard-report.png)
+  ![Rapport WD ATP](media/win10-dashboard-report.png)
 3. En haut, vous voyez le nombre de machines détectées ajoutées après l’intégration.
 4. Cliquez sur l’onglet **Ordinateurs**.
 5. Vous pouvez explorer chaque machine répertoriée et utiliser les onglets pour afficher les données de la recherche. Recherchez des corrélations entre les machines, les utilisateurs, les adresses IP et les applications qui ont été impliqués dans des incidents :
-   - **Vue d’ensemble**
-      - Transactions : informations sur le nombre de transactions qui ont eu lieu sur l’ordinateur pendant la période sélectionnée.
-      - Trafic total : informations sur la quantité totale de trafic (en Mo) sur la période sélectionnée.
-     - Charge : informations sur la quantité totale de trafic (en Mo) téléchargée par l’ordinateur sur la période sélectionnée.
-     - Téléchargements : informations sur la quantité totale de trafic (en Mo) téléchargée par l’ordinateur sur la période sélectionnée.
-   - **Applications découvertes**<br>
+
+    - **Vue d’ensemble**
+        - Transactions : informations sur le nombre de transactions qui ont eu lieu sur l’ordinateur pendant la période sélectionnée.
+        - Trafic total : informations sur la quantité totale de trafic (en Mo) sur la période sélectionnée.
+        - Charge : informations sur la quantité totale de trafic (en Mo) téléchargée par l’ordinateur sur la période sélectionnée.
+        - Téléchargements : informations sur la quantité totale de trafic (en Mo) téléchargée par l’ordinateur sur la période sélectionnée.
+    - **Applications découvertes**  
   Répertorie toutes les applications découvertes qui ont fait l’objet d’un accès par l’ordinateur.
-   - **Historique de l’utilisateur**<br>
+    - **Historique de l’utilisateur**  
     Répertorie tous les utilisateurs qui se sont connectés à l’ordinateur.
-   - **Historique de l’adresse IP**<br>
+    - **Historique de l’adresse IP**  
     Répertorie toutes les adresses IP qui ont été attribuées à l’ordinateur.
- ![Vue d’ensemble des ordinateurs](./media/machines-overview.png)
- 
-Comme avec n’importe quelle autre source Cloud Discovery, vous pouvez exporter les données du rapport sur les utilisateurs de point de terminaison Win10 pour un examen plus approfondi. 
+ ![Vue d’ensemble des ordinateurs](media/machines-overview.png)
+
+Comme avec n’importe quelle autre source Cloud Discovery, vous pouvez exporter les données du rapport sur les utilisateurs de point de terminaison Win10 pour un examen plus approfondi.
 
 > [!NOTE]
+>
 > - Defender ATP transfère les données à Cloud App Security dans des segments de environ 4 Mo (environ 4000 transactions de point de terminaison)
 > - Si la limite de 4 Mo n’est pas atteinte dans un délai de 1 heure, Defender ATP signale toutes les transactions effectuées au cours de la dernière heure.
+> - Si l’appareil de point de terminaison se trouve derrière un proxy direct, le volume de trafic n’est pas visible par Microsoft Defender ATP et ne sera donc pas inclus dans les rapports Cloud Discovery. Pour plus d’informations, consultez surveillance de la [connexion réseau derrière le proxy direct](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/MDATP-Monitoring-network-connection-behind-forward-proxy-Public/ba-p/758274).
 
-## <a name="related-videos"></a>Vidéos connexes
+## <a name="next-steps"></a>Étapes suivantes
 
-[Capture instantanée de la découverte informatique au-delà du réseau d’entreprise avec Microsoft Defender ATP et Cloud App Security](https://www.youtube.com/watch?v=f8hbvbY1Hnc)  
+> [!div class="nextstepaction"]
+> [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)
 
-## <a name="next-steps"></a>Étapes suivantes 
-[Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md) 
+## <a name="related-videos"></a>Vidéos associées
 
-[!INCLUDE [Open support ticket](includes/support.md)]  
-  
+> [!div class="nextstepaction"]
+> [Découverte de l’informatique cachée au-delà du réseau d’entreprise](https://www.youtube.com/watch?v=f8hbvbY1Hnc)
+
+[!INCLUDE [Open support ticket](includes/support.md)]

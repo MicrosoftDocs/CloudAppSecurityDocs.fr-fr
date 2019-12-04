@@ -11,16 +11,15 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: a9660e5b-d5bd-4a32-8cb9-0de70af6f1e9
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d72344a45a744ceb21d8387d5991e9d895fd274d
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 5f149c3f1eeb960169feac803db7cd2e7f2e62c2
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74460901"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720208"
 ---
 # <a name="how-to-find-built-in-deprecating-reports"></a>Guide pratique pour rechercher des rapports intégrés dépréciés
 
@@ -40,16 +39,13 @@ Ce tableau vous permet de voir les informations que fournissaient les rapports d
 | Gestion des utilisateurs | Comptes inactifs | Les comptes inactifs sont des comptes qui ont accès à votre instance cloud, mais qui ne sont à l’origine d’aucun événement au cours des 60 derniers jours. L’absence d’action suggère que ces comptes ne sont plus actifs et qu’ils doivent être suspendus afin d’empêcher tout accès ultérieur par des entités malveillantes ou des employés sur le départ. Le respect de cette bonne pratique non seulement améliore votre posture de sécurité, mais permet également de réduire les coûts d’exploitation. | Accédez à la page **Utilisateurs et comptes** et utilisez le filtre **Dernière consultation** pour générer la liste de tous les utilisateurs qui n’ont pas effectué d’activités récemment. |
 | Gestion des utilisateurs | Utilisateurs disposant de privilèges | Ce rapport liste les utilisateurs qui ont eu des privilèges élevés dans les applications de l’entreprise, comme les administrateurs, au cours des 7 derniers jours. Les comptes disposant de privilèges de ce type sont un vecteur d’attaque de choix pour les entités malveillantes, car ils peuvent leur permettre d’accéder largement à la configuration réseau et aux informations de l’entreprise. Si des comptes disposant de privilèges n’ont pas été utilisés récemment, cela peut indiquer un manque de sensibilisation à la sécurité informatique dans les entreprises, pouvant favoriser une vague de violations des données. Vous pouvez examiner l’utilisation des privilèges utilisateur élevés par le biais du journal d’audit et envisager la révocation des privilèges superflus. | Accédez à la page **Utilisateurs et comptes**, utilisez le filtre **Groupes** pour générer la liste des utilisateurs privilégiés qui appartiennent au groupe Administrateurs. |
 | Gestion des utilisateurs | Comptes spéciaux disposant de privilèges | Salesforce a plusieurs types de comptes disposant de privilèges, tels que la modification de toutes les données, l’affichage de toutes les données et la gestion de tous les utilisateurs. Étant donné que les comptes privilégiés comme ceux-ci sont un vecteur d’attaque de choix pour les personnes malveillantes, car ils peuvent leur permettre d’accéder largement aux configurations et informations de l’entreprise, dresser la liste des comptes privilégiés se révèle très utile. | Accédez à Salesforce. Cliquez sur l’onglet **Comptes spéciaux disposant de privilèges**. |
-| Gestion des données | Vue d’ensemble du partage de données | Ce rapport répertorie le nombre de fichiers stockés dans vos applications cloud, par autorisation d’accès. Le partage est devenu facile avec les applications cloud en raison de la facilité d’accès et de l’omniprésence. Un fichier qui n’est partagé avec personne d’autre que son propriétaire est appelé fichier privé. Si le fichier est partagé, Cloud App Security distingue quatre types d’états : <br> - Un fichier (web) partagé publiquement est un fichier accessible sans aucune authentification, même par le biais d’un résultat de moteur de recherche.<br> - Un fichier partagé publiquement est un fichier accessible sans aucune authentification, au moyen d’un lien.<br> - Un fichier partagé en externe est un fichier auquel peuvent accéder des personnes n’appartenant pas à l’organisation une fois qu’elles se sont authentifiées auprès de l’application cloud.<br> - Un fichier partagé en interne est un fichier accessible à la totalité ou à une partie des utilisateurs de votre organisation.|Accédez à **Fichiers**. Dans le coin supérieur droit, cliquez sur les trois points et, sous **Rapports de gestion des données**, sélectionnez **Vue d’ensemble du partage de données**. |
+| Gestion des données | Vue d’ensemble du partage de données | Ce rapport répertorie le nombre de fichiers stockés dans vos applications cloud, par autorisation d’accès. Le partage est devenu facile avec les applications cloud en raison de la facilité d’accès et de l’omniprésence. Un fichier qui n’est partagé avec personne d’autre que son propriétaire est appelé fichier privé. Si le fichier est partagé, Cloud App Security distingue quatre types d’états : <br /> - Un fichier (web) partagé publiquement est un fichier accessible sans aucune authentification, même par le biais d’un résultat de moteur de recherche.<br /> - Un fichier partagé publiquement est un fichier accessible sans aucune authentification, au moyen d’un lien.<br /> - Un fichier partagé en externe est un fichier auquel peuvent accéder des personnes n’appartenant pas à l’organisation une fois qu’elles se sont authentifiées auprès de l’application cloud.<br /> - Un fichier partagé en interne est un fichier accessible à la totalité ou à une partie des utilisateurs de votre organisation.|Accédez à **Fichiers**. Dans le coin supérieur droit, cliquez sur les trois points et, sous **Rapports de gestion des données**, sélectionnez **Vue d’ensemble du partage de données**. |
 | Gestion des données | Partage sortant par domaine | Ce rapport répertorie les domaines avec lesquels des fichiers d’entreprise sont partagés par vos employés. Pour chaque domaine, le rapport détaille les utilisateurs de l’entreprise qui partagent des fichiers avec ce domaine, les fichiers effectivement partagés et les collaborateurs avec lesquels ces fichiers sont partagés. Nous vous recommandons de gérer le partage avec ces domaines par le biais de l’onglet Fichiers dans la page de chaque application concernée. | Accédez à **Fichiers**. Dans le coin supérieur droit, cliquez sur les trois points et, sous **Rapports de gestion des données**, sélectionnez **Partage sortant par domaine**. |
 | Gestion des données | Propriétaires de fichiers partagés | Ce rapport répertorie les utilisateurs qui partagent des fichiers d’entreprise avec le monde extérieur. Les fichiers partagés en externe sont partagés avec des collaborateurs externes spécifiques. Les fichiers partagés publiquement sont accessibles sur Internet à toute personne par le biais d’un lien privé auquel cette personne est explicitement exposée. Les fichiers partagés publiquement (Internet) sont accessibles à toute personne sur Internet, y compris par le biais d’un résultat de moteur de recherche. Si vous constatez que des utilisateurs partagent un nombre excessif de fichiers, nous vous recommandons d’examiner la nature des autorisations correspondantes à l’aide de l’onglet Fichiers et de contacter ces utilisateurs pour mieux comprendre la façon dont ils recourent au partage externe. | Accédez à **Fichiers**. Dans le coin supérieur droit, cliquez sur les trois points et, sous **Rapports de gestion des données**, sélectionnez **Propriétaires de fichiers partagés**. |
 
+## <a name="next-steps"></a>Étapes suivantes
 
+> [!div class="nextstepaction"]
+> [Contrôler](control.md)
 
-  
-## <a name="next-steps"></a>Étapes suivantes 
-[Contrôler](control.md)   
-
-[!INCLUDE [Open support ticket](includes/support.md)]  
-  
-  
+[!INCLUDE [Open support ticket](includes/support.md)]

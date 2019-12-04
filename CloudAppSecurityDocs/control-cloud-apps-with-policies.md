@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 7b333509cd00b2a17b3a3984da30e4e8142daf88
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: e4675430b45e92579cd4c692247c5a481bad233e
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74460749"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720716"
 ---
 # <a name="control-cloud-apps-with-policies"></a>Contrôler les applications cloud avec des stratégies
 
@@ -35,15 +35,15 @@ Lorsque vous examinez la page **Stratégie**, les différentes stratégies et le
 
 Vous pouvez créer les types de stratégies suivants :
 
-|Icône de type de stratégie|Type de stratégie|Utiliser|
+|Icône de type de stratégie|Type de stratégie|Utilisez les stratégies de gestion des applications mobiles|
 |-----|-----------------|---------|
-|![icône de stratégie d’accès](./media/proxy-policy.png)|Stratégie d’accès|Les stratégies d’accès vous offrent une surveillance et un contrôle en temps réel des connexions utilisateur à vos applications cloud.|
-|![Icône de stratégie d’activité](./media/activity_policy.png)|Stratégie d’activité|Avec les stratégies d’activité, vous pouvez appliquer une large gamme de processus automatisés en utilisant les API du fournisseur d’application. Ces stratégies vous permettent de surveiller des activités spécifiques effectuées par différents utilisateurs ou de suivre les taux anormalement élevés d’un certain type d’activité.|
-|![Icône de stratégie de détection d’anomalie](./media/anomaly_detection_policy.png)|Stratégie de détection d’anomalie|Les stratégies de détection des anomalies vous permettent de rechercher des activités inhabituelles sur votre cloud. La détection est basée sur les facteurs de risque que vous définissez pour vous alerter en cas d’événement anormal par rapport aux activités de référence ou habituelles de votre organisation ou des utilisateurs.|
-|![Icône de stratégie Cloud Discovery](./media/discovery_policy.png)|Stratégie de découverte d’application|Grâce aux stratégies de découverte d’application, vous pouvez définir des alertes qui vous informent quand de nouvelles applications sont détectées au sein de votre organisation.|
-|![Icône de stratégie de détection d’anomalie](./media/anomaly_detection_policy.png)|Stratégie de détection des anomalies de Cloud Discovery|Les stratégies de détection des anomalies de Cloud Discovery examinent les journaux que vous utilisez pour découvrir les applications cloud et recherchent les occurrences inhabituelles. À titre d’exemple, citons un utilisateur qui n’a jamais utilisé Dropbox et qui y charge soudainement 600 Go de données ou une application qui fait l’objet de transactions dans des proportions inhabituelles.|
-|![Icône de stratégie de fichier](./media/file_policy.png)|Stratégie de fichier|Avec les stratégies de fichier, vous pouvez déterminer si vos applications cloud comportent certains fichiers ou types de fichiers (partagés, partagés avec des domaines externes), ou certaines données (informations propriétaires, informations personnelles, informations de carte de crédit et d’autres types de données), et appliquer des actions de gouvernance aux fichiers (les actions de gouvernance sont spécifiques aux applications cloud).|
-|![icône de stratégie de session](./media/proxy-policy.png)|Stratégie de session|Les stratégies de session vous offrent une surveillance et un contrôle en temps réel des activités utilisateur dans vos applications cloud.|
+|![icône de stratégie d’accès](media/proxy-policy.png)|Stratégie d’accès|Les stratégies d’accès vous offrent une surveillance et un contrôle en temps réel des connexions utilisateur à vos applications cloud.|
+|![Icône de stratégie d’activité](media/activity_policy.png)|Stratégie d’activité|Avec les stratégies d’activité, vous pouvez appliquer une large gamme de processus automatisés en utilisant les API du fournisseur d’application. Ces stratégies vous permettent de surveiller des activités spécifiques effectuées par différents utilisateurs ou de suivre les taux anormalement élevés d’un certain type d’activité.|
+|![Icône de stratégie de détection d’anomalie](media/anomaly_detection_policy.png)|Stratégie de détection d’anomalie|Les stratégies de détection des anomalies vous permettent de rechercher des activités inhabituelles sur votre cloud. La détection est basée sur les facteurs de risque que vous définissez pour vous alerter en cas d’événement anormal par rapport aux activités de référence ou habituelles de votre organisation ou des utilisateurs.|
+|![Icône de stratégie Cloud Discovery](media/discovery_policy.png)|Stratégie de découverte d’application|Grâce aux stratégies de découverte d’application, vous pouvez définir des alertes qui vous informent quand de nouvelles applications sont détectées au sein de votre organisation.|
+|![Icône de stratégie de détection d’anomalie](media/anomaly_detection_policy.png)|Stratégie de détection des anomalies de Cloud Discovery|Les stratégies de détection des anomalies de Cloud Discovery examinent les journaux que vous utilisez pour découvrir les applications cloud et recherchent les occurrences inhabituelles. À titre d’exemple, citons un utilisateur qui n’a jamais utilisé Dropbox et qui y charge soudainement 600 Go de données ou une application qui fait l’objet de transactions dans des proportions inhabituelles.|
+|![Icône de stratégie de fichier](media/file_policy.png)|Stratégie de fichier|Avec les stratégies de fichier, vous pouvez déterminer si vos applications cloud comportent certains fichiers ou types de fichiers (partagés, partagés avec des domaines externes), ou certaines données (informations propriétaires, informations personnelles, informations de carte de crédit et d’autres types de données), et appliquer des actions de gouvernance aux fichiers (les actions de gouvernance sont spécifiques aux applications cloud).|
+|![icône de stratégie de session](media/proxy-policy.png)|Stratégie de session|Les stratégies de session vous offrent une surveillance et un contrôle en temps réel des activités utilisateur dans vos applications cloud.|
 
 ## <a name="identifying-risk"></a>Identification des risques
 
@@ -101,7 +101,7 @@ Pour créer une stratégie à partir de **modèles de stratégie**, effectuez le
 
 1. Dans la console, cliquez sur **Contrôle**, puis sur **Modèles**.
 
-    ![Créer la stratégie à partir d’un modèle](./media/create-policy-from-template.png)
+    ![Créer la stratégie à partir d’un modèle](media/create-policy-from-template.png)
 
 1. Cliquez sur le signe **+** tout à droite de la ligne du modèle à utiliser. Une page de création de stratégie s’ouvre, avec la configuration prédéfinie du modèle.
 
@@ -123,11 +123,11 @@ Pour créer une stratégie basée sur les résultats d’un examen, effectuez le
 
 1. Utilisez les filtres en haut de la page pour limiter les résultats de la recherche à la zone suspecte. Par exemple, dans la page Journal d’activité, cliquez sur **Type d’activité** et sélectionnez **Écrire - Administrateurs** sous Opération Azure. Ensuite, sous **Adresse IP**, sélectionnez **Catégorie** et définissez la valeur de manière à ne pas inclure les catégories d’adresses IP que vous avez créées pour vos domaines reconnus, notamment les adresses IP de l’administrateur, de l’entreprise et du réseau privé virtuel.
 
-    ![Créer un fichier à la suite d’un examen](./media/create-file-from-investigation.png)
+    ![Créer un fichier à la suite d’un examen](media/create-file-from-investigation.png)
 
 1. Dans le coin supérieur droit de la console, cliquez sur **Nouvelle stratégie à partir de la recherche**.
 
-    ![Bouton Nouvelle stratégie à partir de la recherche](./media/new-policy-from-search-button.png)
+    ![Bouton Nouvelle stratégie à partir de la recherche](media/new-policy-from-search-button.png)
 
 1. Une page de création de stratégie s’ouvre, contenant les filtres que vous avez utilisés dans votre examen.
 
@@ -137,7 +137,7 @@ Pour créer une stratégie basée sur les résultats d’un examen, effectuez le
     > Quand vous utilisez des filtres de stratégie, le filtre **Contains (Contient)** recherche uniquement des mots entiers, séparés par des virgules, points, espaces ou traits de soulignement. Par exemple, si vous recherchez **malware** ou **virus**, il trouve virus_malware_file.exe, mais pas malwarevirusfile.exe.  
 **Equals (Est égal à)** recherche uniquement la chaîne complète ; par exemple, si vous recherchez **malware.exe**, il trouve malware.exe, mais pas malware.exe.txt.
 
-    ![créer une stratégie d’activité basée sur un examen](./media/create-activity-policy-from-investigation.png)
+    ![créer une stratégie d’activité basée sur un examen](media/create-activity-policy-from-investigation.png)
 
     > [!NOTE]
     > Pour plus d’informations sur la définition des champs d’une stratégie, consultez la documentation de stratégie correspondante :
@@ -165,11 +165,11 @@ Une fois que vous avez créé une stratégie, vous pouvez l’activer ou la dés
 
 - Pour activer une stratégie, dans la page **Stratégie**, cliquez sur les trois points situés à la fin de la ligne de la stratégie à activer. Sélectionnez **Activer**.
 
-    ![Activer une stratégie](./media/enable-policy.png)
+    ![Activer une stratégie](media/enable-policy.png)
 
 - Pour désactiver une stratégie, dans la page **Stratégie**, cliquez sur les trois points à la fin de la ligne de la stratégie à désactiver. Sélectionnez **Désactiver**.
 
-    ![Désactiver une stratégie](./media/disable-policy.png)
+    ![Désactiver une stratégie](media/disable-policy.png)
 
 Quand vous créez une stratégie, celle-ci est activée par défaut.
 
@@ -191,10 +191,11 @@ Pour télécharger le rapport exporté :
 
 1. Dans le tableau, sélectionnez le rapport approprié dans le **rapport vue d’ensemble** de la liste des stratégies, puis cliquez sur Télécharger.
 
-    ![Bouton Télécharger](./media/download-button.png)
+    ![Bouton Télécharger](media/download-button.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)
+> [!div class="nextstepaction"]
+> [Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 9/1/2019
+ms.date: 12/03/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 73778b6e0c7630779899e48b08ba872ef846ca93
-ms.sourcegitcommit: 89183b53608bb4fd4715d7682fb6996ea427ef6a
+ms.openlocfilehash: 5ae82c1acddf3bbf1ee711a108234d6b69cd8ee4
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74536414"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74733714"
 ---
 # <a name="governing-connected-apps"></a>Gouvernance des applications connectées
 
@@ -75,7 +75,7 @@ Vous pouvez effectuer les actions de gouvernance suivantes sur un fichier ou un 
 
   - **Mettre à la corbeille** - Déplacez le fichier vers le dossier de corbeille. (Box, Dropbox, Google Drive, OneDrive, SharePoint)
 
-   ![alertes de policy_create](./media/policy_create-alerts.png "alertes policy_create")
+   ![alertes de policy_create](media/policy_create-alerts.png "alertes policy_create")
 
 ## <a name="activity-governance-actions"></a>Actions de gouvernance des activités
 
@@ -91,11 +91,13 @@ Vous pouvez effectuer les actions de gouvernance suivantes sur un fichier ou un 
 
   - **Suspendre l’utilisateur** - Excluez temporairement l’utilisateur de l’application.
     > [!NOTE]
-    > Si votre Azure Active Directory est défini pour se synchroniser automatiquement avec les utilisateurs de votre environnement local Active Directory, les paramètres de l’environnement local remplacent les paramètres Azure AD et cette action de gouvernance est rétablie.
+    > Si votre Azure Active Directory (Azure AD) est configurée pour se synchroniser automatiquement avec les utilisateurs de votre Active Directory environnement local, les paramètres de l’environnement local remplacent les paramètres de Azure AD et cette action de gouvernance est rétablie.
 
   - **Demander à l’utilisateur de se reconnecter** - Déconnectez l’utilisateur et demandez-lui de se reconnecter.
 
-  ![Cloud App Security les actions de gouvernance des stratégies d’activité](./media/activity-policy-ref6.png "stratégie d’activité ref6")
+  - **Confirmer** que l’utilisateur est compromis-définir le niveau de risque de l’utilisateur sur élevé. Cela entraîne l’application des actions de stratégie appropriées définies dans Azure AD. Pour plus d’informations sur le fonctionnement de Azure AD avec les niveaux de risque, consultez [comment Azure ad utiliser mes commentaires](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-risk-feedback#how-does-azure-ad-use-my-risk-feedback)sur les risques.
+
+  ![Cloud App Security les actions de gouvernance des stratégies d’activité](media/activity-policy-ref6.png "stratégie d’activité ref6")
 
 ## <a name="governance-conflicts"></a>Conflits de gouvernance
 
@@ -109,7 +111,7 @@ Si vous créez plusieurs stratégies, il peut arriver que les actions de gouvern
 
 ### <a name="conflicts-in-user-sync"></a>Conflits de synchronisation d’utilisateur
 
-- Si votre annuaire Azure Active Directory est défini pour se synchroniser automatiquement avec les utilisateurs de votre environnement local Active Directory, les paramètres de l’environnement local remplacent les paramètres Azure AD et cette action de gouvernance est rétablie.
+- Si votre Azure AD est configurée pour se synchroniser automatiquement avec les utilisateurs de votre Active Directory environnement local, les paramètres de l’environnement local remplacent les paramètres de Azure AD et cette action de gouvernance est rétablie.
 
 ## <a name="governance-log"></a>Journal de gouvernance
 
@@ -125,7 +127,8 @@ Pour plus d’informations sur la façon dont les actions de gouvernance sont tr
 |Comptes | Compte |Paramètres de compte | Vous permet d’accéder à la page de paramètres de compte dans une application donnée (par exemple, dans Salesforce). | Toutes les applications. Les paramètres de One Drive et SharePoint sont configurés dans Office. |
 |Comptes |File |Transférer la possession de tous les fichiers | Dans un compte, vous transférez les fichiers d’un utilisateur vers un nouveau propriétaire que vous sélectionnez. L’ancien propriétaire devient éditeur et ne peut plus changer les paramètres de partage. Le nouveau propriétaire reçoit une notification du transfert de possession par e-mail. | G Suite|
 |Comptes, Stratégie d’activité | Compte | Suspendre l’utilisateur| Empêche tout accès et toute connexion de l’utilisateur. Si elles sont connectées lorsque vous définissez cette action, elles sont immédiatement verrouillées. |G Suite, Box, Office, Salesforce|
-|Stratégie d’activité, Comptes | Compte |Demander à l’utilisateur de se reconnecter|Révoque tous les jetons d’actualisation et les cookies de session émis aux applications par l’utilisateur. Cette action empêche l’accès aux données de l’organisation et force l’utilisateur à se connecter à toutes les applications.| G Suite|
+|Stratégie d’activité, Comptes | Compte |Demander à l’utilisateur de se reconnecter|Révoque tous les jetons d’actualisation et les cookies de session émis aux applications par l’utilisateur. Cette action empêche l’accès aux données de l’organisation et force l’utilisateur à se connecter à toutes les applications.| G suite, Office|
+|Stratégie d’activité, Comptes | Compte |Confirmer que l’utilisateur a été compromis|Définissez le niveau de risque de l’utilisateur sur élevé. Cela entraîne l’application des actions de stratégie appropriées définies dans Azure AD. | Office |
 |Stratégie d’activité, Comptes | Compte | Révoquer les privilèges administratifs |Révoque les privilèges d’un compte Administrateur. Par exemple, la définition d’une stratégie d’activité qui révoque les privilèges Administrateur après 10 échecs de tentative de connexion. | G Suite|
 |Tableau de bord de l’application > Autorisations d’applications |Autorisations|Annuler l’exclusion de l’application| Dans Google et Salesforce : supprimez l’exclusion de l’application et permettez aux utilisateurs d’accorder des autorisations à l’application tierce avec Google et Salesforce. Dans Office 365 : restaure les autorisations d’accès de l’application tierce à Office. |G Suite, Salesforce, Office |
 |Tableau de bord de l’application > Autorisations d’applications |Autorisations| Désactiver les autorisations d’application | Révoquez les autorisations d’accès d’une application tierce à Google, Salesforce ou Office. Il s’agit d’une seule action qui se produit sur toutes les autorisations existantes, mais qui n’empêche pas les connexions futures.|G Suite, Salesforce, Office |
@@ -167,6 +170,7 @@ Pour plus d’informations sur la façon dont les actions de gouvernance sont tr
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)
+> [!div class="nextstepaction"]
+> [Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

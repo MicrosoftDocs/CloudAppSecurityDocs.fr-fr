@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1689bccc5c2dd55ca719159697986f7c317be1af
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 406851d56a484ee2b49104c813cd371952c10746
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74461372"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720686"
 ---
 # <a name="file-policies"></a>Stratégies de fichier
 
@@ -27,7 +27,7 @@ ms.locfileid: "74461372"
 
 Les stratégies de fichier vous permettent d’appliquer une large gamme de processus automatisés en utilisant les API du fournisseur de cloud. Vous pouvez définir des stratégies pour fournir des analyses de conformité en continu, des tâches eDiscovery réglementaires, une protection contre la perte de données (DLP, Data Loss Prevention) au contenu sensible partagé publiquement et de nombreux autres cas d’usage. Cloud App Security peut surveiller n’importe quel type de fichier en fonction de plus de 20 filtres de métadonnées (par exemple, niveau d’accès, type de fichier).
 
-### <a name="supported-file-types"></a>Types de fichiers pris en charge
+## <a name="supported-file-types"></a>Types de fichiers pris en charge
 
 Les moteurs intégrés de protection contre la perte de données (DLP) de Cloud App Security effectuent l’inspection du contenu en extrayant le texte de tous les types de fichiers courants (plus de 100), dont Office, Open Office, les fichiers compressés, différents formats de texte enrichi, XML, HTML et bien plus encore.
 
@@ -94,7 +94,7 @@ Pour créer une stratégie de fichier, procédez comme suit :
 
 1. Une fois que vous avez créé votre stratégie, vous pouvez l’afficher sous l’onglet **stratégie de fichier** . Vous pouvez toujours modifier une stratégie, étalonner ses filtres ou modifier les actions automatisées. La stratégie est automatiquement activée lors de la création et démarre immédiatement l’analyse de vos fichiers cloud.  Soyez vigilant quand vous définissez des actions de gouvernance. Elles peuvent entraîner une perte irréversible des autorisations d’accès à vos fichiers. Il est recommandé d’affiner les filtres pour représenter exactement les fichiers sur lesquels vous voulez agir, en utilisant plusieurs champs de recherche. Plus les filtres sont précis, mieux c’est. Pour obtenir des instructions, vous pouvez utiliser le bouton **Modifier et afficher un aperçu des résultats** dans la section Filtres.
 
-    ![stratégie de fichier, modifier et afficher un aperçu des résultats](./media/file-policy-edit-and-preview-results.png)
+    ![stratégie de fichier, modifier et afficher un aperçu des résultats](media/file-policy-edit-and-preview-results.png)
 
 1. Pour afficher les correspondances de stratégie de fichier, les fichiers qui sont suspectés d’enfreindre la stratégie, cliquez sur **Contrôle**, puis sur **Stratégies**. Filtrez les résultats pour afficher uniquement les stratégies de fichier avec le filtre **Type** en haut. Pour plus d’informations sur les correspondances pour chaque stratégie, cliquez sur une stratégie. Ceci affiche les fichiers « Mise en correspondance maintenant » pour la stratégie. Cliquez sur l’onglet **Historique** pour consulter un historique remontant jusqu’à six mois de fichiers correspondant à la stratégie.
 
@@ -128,6 +128,7 @@ Pour faciliter encore plus les recherches, vous pouvez désormais créer des req
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)
+> [!div class="nextstepaction"]
+> [Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

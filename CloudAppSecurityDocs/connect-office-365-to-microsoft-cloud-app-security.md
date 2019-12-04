@@ -11,16 +11,15 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: a79bf393-0d2c-44b6-8dab-86c740fd7333
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 67d424610e93f34ddacd1db2eb8e721ad0857bdf
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 86126d40279acd433066cc76db101061f1a03a93
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74458810"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720061"
 ---
 # <a name="connect-office-365-to-microsoft-cloud-app-security"></a>Connecter Office 365 à Microsoft Cloud App Security
 
@@ -37,7 +36,7 @@ Cloud App Security prend en charge les applications Office 365 suivantes :
 
 - Office 365
 - SharePoint
-- OneDrive
+- OneDrive Entreprise
 - Teams (apparaît uniquement une fois que des activités Teams sont détectées dans le portail)
 - Power BI (apparaît seulement une fois que des activités Power BI sont détectées dans le portail, et nécessite l’activation de l’audit)
 - Exchange (apparaît uniquement une fois que des activités Exchange sont détectées dans le portail et nécessite l’activation de l’audit)
@@ -58,11 +57,11 @@ Cloud App Security prend en charge les applications Office 365 suivantes :
 
 1. Dans la page **Applications connectées**, cliquez sur le bouton plus (+) et sélectionnez **Office 365**.  
 
-      ![connecter 0365](./media/connect-0365.png) 
+      ![connecter 0365](media/connect-0365.png) 
 
 2. Dans la fenêtre contextuelle Office 365, cliquez sur **Connecter Office 365**.
 
-      ![connecter 0365](./media/office-connect.png) 
+      ![connecter 0365](media/office-connect.png) 
 
 3. Une fois Office 365 affiché comme correctement connecté, cliquez sur **Fermer**.
 
@@ -71,6 +70,7 @@ Cloud App Security prend en charge les applications Office 365 suivantes :
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)
+> [!div class="nextstepaction"]
+> [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

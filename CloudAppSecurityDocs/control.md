@@ -11,97 +11,103 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: bc11bbfe-ec6c-458c-8302-8112c383199d
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d6c535c0ae8abb280265d5ae2f9b5c92fe462905
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 9930a45593f4d2dfba0310228d4576ac2ffd42f2
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74460907"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74719162"
 ---
-# <a name="control"></a>Contrôle
+# <a name="control"></a>Control
 
 *S’applique à : Microsoft Cloud App Security*
 
-Vous pouvez appliquer des actions de gouvernance aux fichiers des utilisateurs dans tout votre environnement cloud. Après avoir soigneusement examiné et étudié votre cloud, vous pouvez utiliser des actions de gouvernance pour protéger votre organisation.  
+Vous pouvez appliquer des actions de gouvernance aux fichiers des utilisateurs dans tout votre environnement cloud. Après avoir soigneusement examiné et étudié votre cloud, vous pouvez utiliser des actions de gouvernance pour protéger votre organisation.
 
-## <a name="use-policies-to-assess-risk"></a>Utiliser des stratégies pour évaluer les risques  
-Quand vous examinez vos alertes ouvertes, accédez au Centre de stratégie pour passer en revue les violations de stratégie qui n’ont pas déclenché d’alertes.  
+## <a name="use-policies-to-assess-risk"></a>Utiliser des stratégies pour évaluer les risques
 
--   Dans le tableau de bord Cloud App Security, cliquez sur **Contrôle**, puis sur **Stratégies**.  
+Quand vous examinez vos alertes ouvertes, accédez au Centre de stratégie pour passer en revue les violations de stratégie qui n’ont pas déclenché d’alertes.
 
--   Sélectionnez une stratégie spécifique pour afficher la liste **Mise en correspondance maintenant** des correspondances de stratégie qui n’ont pas déclenché d’alertes.  
+- Dans le tableau de bord Cloud App Security, cliquez sur **Contrôle**, puis sur **Stratégies**.
 
--   Cliquez sur les violations une à une, puis décidez ce qu’il faut faire pour chacune d’elles. Pour plus d’informations sur les actions de gouvernance, consultez les figures suivantes.  
+- Sélectionnez une stratégie spécifique pour afficher la liste **Mise en correspondance maintenant** des correspondances de stratégie qui n’ont pas déclenché d’alertes.
 
-     Si votre stratégie est définie pour rechercher des violations de conformité et qu’une personne enregistre des numéros de carte de crédit dans des fichiers sur OneDrive, vous obtenez une correspondance dans la stratégie.  
+- Cliquez sur les violations une à une, puis décidez ce qu’il faut faire pour chacune d’elles. Pour plus d’informations sur les actions de gouvernance, consultez les figures suivantes.
 
-     ![Correspondances PCI](./media/pci-matches.png "correspondances pci")  
+    Si votre stratégie est définie pour rechercher des violations de conformité et qu’une personne enregistre des numéros de carte de crédit dans des fichiers sur OneDrive, vous obtenez une correspondance dans la stratégie.
 
--   Sélectionnez la correspondance pour afficher les fichiers qui ont enfreint la stratégie.  
+    ![Correspondances PCI](media/pci-matches.png "correspondances pci")
 
-     ![Correspondances de contenu PCI](./media/pci-content-matches.png "pci, correspondances de contenu")  
+- Sélectionnez la correspondance pour afficher les fichiers qui ont enfreint la stratégie.
 
-     Vous pouvez sélectionner le fichier lui-même pour obtenir des informations sur les fichiers.  
+    ![Correspondances de contenu PCI](media/pci-content-matches.png "pci, correspondances de contenu")
 
-     Vous pouvez cliquer sur **Collaborateurs** pour voir qui a accès à ce fichier.  
+    Vous pouvez sélectionner le fichier lui-même pour obtenir des informations sur les fichiers.
 
-     Vous pouvez cliquer sur **Correspondances** pour voir les numéros de carte de crédit.  
+    Vous pouvez cliquer sur **Collaborateurs** pour voir qui a accès à ce fichier.
 
-     ![Le contenu correspond aux numéros de carte de crédit](./media/content-matches-ccn.png "le contenu correspond aux numéros de carte de crédit")  
+    Vous pouvez cliquer sur **Correspondances** pour voir les numéros de carte de crédit.
 
-## <a name="apply-governance-actions"></a>Appliquer des actions de gouvernance  
-Vous pouvez appliquer des actions de gouvernance depuis des stratégies, depuis des alertes et depuis le journal **Fichier**.  
+    ![Le contenu correspond aux numéros de carte de crédit](media/content-matches-ccn.png "le contenu correspond aux numéros de carte de crédit")
 
-À tout moment, vous pouvez passer en revue et voir l’état de toutes les actions de gouvernance appliquées en accédant à l’icône **Paramètres** (symbolisée par un engrenage) et en choisissant **Journal de gouvernance**. ![icône Paramètres](./media/settings-icon.png "sicône Tall»)
+## <a name="apply-governance-actions"></a>Appliquer des actions de gouvernance
 
-En cas d’échec d’une action de gouvernance, choisissez l’icône **Nouvelle tentative** pour l’appliquer à nouveau. ![Icône de nouvelle tentative](./media/retry-icon.png "retry icône»)   
+Vous pouvez appliquer des actions de gouvernance depuis des stratégies, depuis des alertes et depuis le journal **Fichier**.
 
-Selon le type de stratégie, violation et application, différentes actions de gouvernance sont disponibles.  
+À tout moment, vous pouvez passer en revue et voir l’état de toutes les actions de gouvernance appliquées en accédant à l’icône **Paramètres** (symbolisée par un engrenage) et en choisissant **Journal de gouvernance**. ![icône Paramètres](media/settings-icon.png "sicône Tall»)
 
-## <a name="move-from-detection-to-automatic-remediation"></a>Passer de la détection à la correction automatique  
-Après avoir défini et personnalisé vos filtres de stratégie, vous pouvez sélectionner des actions de gouvernance automatisées qui sont déclenchées à chaque violation de votre stratégie.  
-Étant donné que les actions de correction utilisent les API du fournisseur cloud, ces actions peuvent varier d’une application à l’autre.  
+En cas d’échec d’une action de gouvernance, choisissez l’icône **Nouvelle tentative** pour l’appliquer à nouveau. ![Icône de nouvelle tentative](media/retry-icon.png "retry icône»)
 
-> [!NOTE]  
->  Soyez spécialement prudent quand vous définissez des actions de gouvernance. Elles peuvent entraîner une perte irréversible des autorisations d’accès à vos fichiers.  
-> Il est recommandé d’affiner les filtres pour représenter exactement les fichiers sur lesquels vous voulez agir, en utilisant plusieurs champs de recherche. Plus les filtres sont précis, mieux c’est.  
->   
->  Pour obtenir des instructions, vous pouvez utiliser le bouton **Modifier et afficher un aperçu des résultats** dans la section **Filtres**.  
+Selon le type de stratégie, violation et application, différentes actions de gouvernance sont disponibles.
 
-![Modifier la stratégie de fichier et afficher un aperçu des résultats](./media/file-policy-edit-and-preview-results.png "stratégie de fichier, modifier et afficher un aperçu des résultats")  
+## <a name="move-from-detection-to-automatic-remediation"></a>Passer de la détection à la correction automatique
 
-## <a name="migration"></a>Migration  
-Cloud App Security vous permet d’introduire vos migrations en vous faisant savoir qui dans votre organisation utilise quelles applications et en vous donnant les outils nécessaires pour surveiller l’adoption de nouvelles applications. Ce composant peut également vous aider à déterminer quels types d’applications vous pouvez proposer dans votre organisation, en vous fournissant les outils nécessaires pour voir ce que tout le monde utilise déjà.  
+Après avoir défini et personnalisé vos filtres de stratégie, vous pouvez sélectionner des actions de gouvernance automatisées qui sont déclenchées à chaque violation de votre stratégie.
+Étant donné que les actions de correction utilisent les API du fournisseur cloud, ces actions peuvent varier d’une application à l’autre.
 
-### <a name="migrate-your-users-to-a-new-app"></a>Migrer vos utilisateurs vers une nouvelle application  
-Imaginons le scénario suivant : vous venez d’acheter Office 365 et vous voulez que tous les utilisateurs de votre organisation arrêtent d’utiliser toutes les autres applications de stockage cloud pour commencer à utiliser OneDrive. Voici comment vous pouvez procéder :  
+> [!NOTE]
+> Soyez spécialement prudent quand vous définissez des actions de gouvernance. Elles peuvent entraîner une perte irréversible des autorisations d’accès à vos fichiers.
+> Il est recommandé d’affiner les filtres pour représenter exactement les fichiers sur lesquels vous voulez agir, en utilisant plusieurs champs de recherche. Plus les filtres sont précis, mieux c’est.
+>
+> Pour obtenir des instructions, vous pouvez utiliser le bouton **Modifier et afficher un aperçu des résultats** dans la section **Filtres**.
 
-1. Accédez à votre **tableau de bord Cloud Discovery** et, sous **Catégories**, filtrez les applications par **Stockage cloud**. Triez les résultats par **Utilisateurs** ou par **Adresses IP**, et déterminez quelle est l’application la plus populaire.  
+![Modifier la stratégie de fichier et afficher un aperçu des résultats](media/file-policy-edit-and-preview-results.png "stratégie de fichier, modifier et afficher un aperçu des résultats")
+
+## <a name="migration"></a>Migration
+
+Cloud App Security vous permet d’introduire vos migrations en vous faisant savoir qui dans votre organisation utilise quelles applications et en vous donnant les outils nécessaires pour surveiller l’adoption de nouvelles applications. Ce composant peut également vous aider à déterminer quels types d’applications vous pouvez proposer dans votre organisation, en vous fournissant les outils nécessaires pour voir ce que tout le monde utilise déjà.
+
+### <a name="migrate-your-users-to-a-new-app"></a>Migrer vos utilisateurs vers une nouvelle application
+
+Imaginons le scénario suivant : vous venez d’acheter Office 365 et vous voulez que tous les utilisateurs de votre organisation arrêtent d’utiliser toutes les autres applications de stockage cloud pour commencer à utiliser OneDrive. Voici comment vous pouvez procéder :
+
+1. Accédez à votre **tableau de bord Cloud Discovery** et, sous **Catégories**, filtrez les applications par **Stockage cloud**. Triez les résultats par **Utilisateurs** ou par **Adresses IP**, et déterminez quelle est l’application la plus populaire.
 
 2. Vous pouvez voir quels utilisateurs utilisent d’autres applications. Vous pouvez également explorer ces applications de façon détaillée et avertir les utilisateurs que vous voulez qu’ils migrent vers OneDrive, comme suit :
 
-   1. Dans votre **tableau de bord Cloud Discovery**, choisissez **Dropbox**, puis choisissez l’onglet **Adresse IP** ou **Utilisateurs**.  
+    1. Dans votre **tableau de bord Cloud Discovery**, choisissez **Dropbox**, puis choisissez l’onglet **Adresse IP** ou **Utilisateurs**.
 
-   2. Choisissez l’icône de flèche **Exporter**, puis choisissez vos options d’exportation. ![Icône de flèche](./media/arrow-icon.png "arrow icône»)
+    2. Choisissez l’icône de flèche **Exporter**, puis choisissez vos options d’exportation. ![Icône de flèche](media/arrow-icon.png "arrow icône»)
 
-### <a name="find-more-secure-alternatives"></a>Trouver des alternatives plus sécurisées  
-Le catalogue de services Cloud App Security peut vous aider à trouver des alternatives satisfaisantes pour votre organisation et ainsi éviter les applications risquées auxquelles vos utilisateurs peuvent avoir recours.  
+### <a name="find-more-secure-alternatives"></a>Trouver des alternatives plus sécurisées
 
-Imaginons le scénario suivant : vous envisagez d’acheter une application de productivité mais vous n’êtes pas sûr que vos utilisateurs s’en serviront.  
+Le catalogue de services Cloud App Security peut vous aider à trouver des alternatives satisfaisantes pour votre organisation et ainsi éviter les applications risquées auxquelles vos utilisateurs peuvent avoir recours.
 
-1.   Accédez au **tableau de bord Cloud Discovery**.  
+Imaginons le scénario suivant : vous envisagez d’acheter une application de productivité mais vous n’êtes pas sûr que vos utilisateurs s’en serviront.
 
-2.   Sous **Catégories**, filtrez les applications par **Productivité**.  
+1. Accédez au **tableau de bord Cloud Discovery**.
 
-3.   Pour chaque application utilisée, consultez le **Score** pour voir si elle est fiable et, dans le cas contraire, pourquoi.  
+2. Sous **Catégories**, filtrez les applications par **Productivité**.
 
-4.   Si vous décidez que vous voulez acheter une licence d’entreprise pour toute l’organisation, vous pouvez examiner la colonne **Utilisateurs**. Vous pouvez voir ici ce qui est déjà le plus répandu parmi vos utilisateurs, si ces applications sont fiables et quelles sont leurs fonctionnalités de sécurité avant de prendre votre décision.  
+3. Pour chaque application utilisée, consultez le **Score** pour voir si elle est fiable et, dans le cas contraire, pourquoi.
+
+4. Si vous décidez que vous voulez acheter une licence d’entreprise pour toute l’organisation, vous pouvez examiner la colonne **Utilisateurs**. Vous pouvez voir ici ce qui est déjà le plus répandu parmi vos utilisateurs, si ces applications sont fiables et quelles sont leurs fonctionnalités de sécurité avant de prendre votre décision.
 
 ## <a name="next-steps"></a>Étapes suivantes
-Pour savoir comment utiliser et configurer des stratégies permettant de contrôler l’utilisation des applications cloud, consultez [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md).   
 
-[!INCLUDE [Open support ticket](includes/support.md)]  
+Pour savoir comment utiliser et configurer des stratégies permettant de contrôler l’utilisation des applications cloud, consultez [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md).
+
+[!INCLUDE [Open support ticket](includes/support.md)]

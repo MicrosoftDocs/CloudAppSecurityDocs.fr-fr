@@ -7,12 +7,12 @@ ms.service: cloud-app-security
 ms.topic: conceptual
 ms.date: 8/22/2019
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 32dde1dcb79f617863701c1dcce3d6d8254deff0
-ms.sourcegitcommit: e434c19fbbb67cf70bbf70729d03e38b4779ce25
+ms.openlocfilehash: 91a262f81dbcb49c81df869c869cd81d2ada9766
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2019
-ms.locfileid: "74143453"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74719988"
 ---
 # <a name="microsoft-cloud-app-security-e-books"></a>Microsoft Cloud App Security e-Books
 
@@ -22,12 +22,12 @@ Lisez nos livres électroniques pour en savoir plus sur Microsoft Cloud App Secu
 
 | Title | Description |
 | --- | --- |
-| **Vue d’ensemble**<br>[Lire maintenant](https://go.microsoft.com/fwlink/p/?linkid=2079728) | En savoir plus sur Cloud App Security et son intégration native avec les principales solutions Microsoft pour fournir un déploiement simple, une gestion centralisée et des fonctionnalités d’automatisation novatrices. |
-| **Shadow IT Discovery**<br>[Lire maintenant](https://go.microsoft.com/fwlink/p/?linkid=2079805) | Identifiez les applications et services Cloud utilisés par votre organisation. Évaluez les niveaux de risque et la préparation des entreprises de plus de 16 000 applications contre plus de 70 facteurs de risque, et commencez à les gérer pour garantir la sécurité et la conformité. |
-| **Protégez vos informations sensibles n’importe où dans le Cloud**<br>[Lire maintenant](https://go.microsoft.com/fwlink/p/?linkid=2079808) | Comprenez, classifiez et protégez l’exposition des informations sensibles à risque. Tirez parti des stratégies prêtes à l’emploi et des processus automatisés pour appliquer les contrôles en temps réel, dans toutes vos applications Cloud. |
-| **20 premiers cas d’utilisation CASB**<br>[Lire maintenant](https://go.microsoft.com/fwlink/p/?linkid=2099428) | Découvrez les 20 premiers cas d’utilisation CASB et comment Cloud App Security aide à protéger votre environnement. |
+| **Vue d’ensemble**<br />[Lire maintenant](https://go.microsoft.com/fwlink/p/?linkid=2079728) | En savoir plus sur Cloud App Security et son intégration native avec les principales solutions Microsoft pour fournir un déploiement simple, une gestion centralisée et des fonctionnalités d’automatisation novatrices. |
+| **Shadow IT Discovery**<br />[Lire maintenant](https://go.microsoft.com/fwlink/p/?linkid=2079805) | Identifiez les applications et services Cloud utilisés par votre organisation. Évaluez les niveaux de risque et la préparation des entreprises de plus de 16 000 applications contre plus de 70 facteurs de risque, et commencez à les gérer pour garantir la sécurité et la conformité. |
+| **Protégez vos informations sensibles n’importe où dans le Cloud**<br />[Lire maintenant](https://go.microsoft.com/fwlink/p/?linkid=2079808) | Comprenez, classifiez et protégez l’exposition des informations sensibles à risque. Tirez parti des stratégies prêtes à l’emploi et des processus automatisés pour appliquer les contrôles en temps réel, dans toutes vos applications Cloud. |
+| **20 premiers cas d’utilisation CASB**<br />[Lire maintenant](https://go.microsoft.com/fwlink/p/?linkid=2099428) | Découvrez les 20 premiers cas d’utilisation CASB et comment Cloud App Security aide à protéger votre environnement. |
 
 ## <a name="next-steps"></a>Étapes suivantes
 
 > [!div class="nextstepaction"]
-[Regardez nos webinaires](webinars.md)
+> [Regardez nos webinaires](webinars.md)

@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b9c354d752b9d960669223c4928453acf323d4bb
-ms.sourcegitcommit: 84d56e4953dd771b099261e10a59cf611dd6280a
-ms.translationtype: HT
+ms.openlocfilehash: 0fc036ab2a785157d0f37347ae691b1455eaa9a1
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74669318"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720298"
 ---
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>Obtenir instantanément une détection des anomalies et une analytique comportementale
 
@@ -46,7 +46,7 @@ Selon les résultats de la stratégie, des alertes de sécurité sont déclench�
 
 Vous pouvez afficher les stratégies de détection des anomalies dans le portail en cliquant sur **Contrôle**, puis sur **Stratégies**. Sélectionnez **Stratégie de détection d’anomalie** pour le type de stratégie.
 
- ![nouvelles stratégies de détection des anomalies](./media/new-anomaly-detection-policies.png)
+ ![nouvelles stratégies de détection des anomalies](media/new-anomaly-detection-policies.png)
 
 Les stratégies de détection d’anomalie suivantes sont disponibles :
 
@@ -64,12 +64,12 @@ Plus le niveau de sensibilité est élevé, plus le niveau de suppression appliq
 * Cette détection identifie les fichiers malveillants dans votre stockage cloud, qu’ils viennent de vos applications Microsoft ou tierces. Microsoft Cloud App Security utilise la Threat Intelligence de Microsoft pour savoir si certains fichiers sont associés à des attaques par programme malveillant connues et s’ils sont potentiellement dangereux. Cette stratégie intégrée est désactivée par défaut. Les fichiers ne sont pas tous analysés, mais des solutions sont utilisées pour rechercher les fichiers qui présentent un risque potentiel. Une fois que les fichiers sont détectés, vous pouvez voir une liste des **fichiers infectés**. Cliquez sur le nom du fichier malveillant dans le tiroir de fichier pour ouvrir un rapport sur les programmes malveillants qui vous fournit des informations sur le type de programme malveillant dont le fichier est infecté.
 
     > [!NOTE]
-    >- Pour la détection de programmes malveillants Office 365, vous avez besoin d’une licence valide pour Office 365-protection avancée contre les menaces P1.
-    >- Cloud App Security prend en charge la détection de programmes malveillants pour les applications suivantes :
-    >    - Zone
-    >    - Dropbox
-    >    - G Suite
-    >    - Office 365
+    > * Pour la détection de programmes malveillants Office 365, vous avez besoin d’une licence valide pour Office 365-protection avancée contre les menaces P1.
+    > * Cloud App Security prend en charge la détection de programmes malveillants pour les applications suivantes :
+    >   * Zone
+    >   * Dropbox
+    >   * G Suite
+    >   * Office 365
 
 ### <a name="activity-from-anonymous-ip-addresses"></a>Activité à partir d’adresses IP anonymes
 
@@ -164,7 +164,7 @@ Pour délimiter une stratégie de détection d’anomalie :
 1. Sélectionnez **Inclure** pour spécifier les utilisateurs et les groupes auxquels s’applique cette stratégie. Les utilisateurs ou les groupes qui ne sont pas sélectionnés ici ne seront pas considérés comme une menace et ne généreront pas d’alerte.
 1. Sélectionnez **Exclure** pour spécifier les utilisateurs pour lesquels cette stratégie ne s’applique pas. Les utilisateurs sélectionnés ici ne seront pas considérés comme une menace et ne généreront pas d’alerte, même s’ils sont membres de groupes qui ont été sélectionnés sous **Inclure**.
 
-    ![Délimitation des stratégies de détection d’anomalie](./media/anomaly-detection-scoping.png)
+    ![Délimitation des stratégies de détection d’anomalie](media/anomaly-detection-scoping.png)
 
 ## <a name="triage-anomaly-detection-alerts"></a>Alertes de détection des anomalies de triage
 
@@ -172,16 +172,17 @@ Vous pouvez trier rapidement les diverses alertes déclenchées par les nouvelle
 
 1. Dans le **journal d’activité**, vous pouvez ouvrir une activité afin d’afficher son contenu. Cliquez sur **utilisateur** pour afficher l’onglet Insights utilisateur. Cet onglet contient des informations telles que le nombre d’alertes, les activités et l’emplacement à partir duquel ils sont connectés, ce qui est important dans le cas d’une investigation.
 
-    ![détection des anomalies alert1](./media/anomaly-alert-user1.png) ![alert1 de détection des anomalies](./media/anomaly-alert-user2.png)
+    ![détection des anomalies alert1](media/anomaly-alert-user1.png) ![alert1 de détection des anomalies](media/anomaly-alert-user2.png)
 
 1. Cela vous permet d’identifier les activités suspectes que l’utilisateur a effectuées et d’obtenir ainsi plus d’indices démontrant que le compte a été compromis. Par exemple, une alerte sur plusieurs échecs de connexion peut en effet être suspecte et indiquer une éventuelle attaque par force brute, mais elle peut également signaler un problème de configuration d’application, transformant cette alerte en un « faux positif » bénin. Mais si vous voyez une alerte d’échecs de connexion pour d’autres activités suspectes, la probabilité que le compte est compromis augmente. Dans l’exemple ci-dessous, vous pouvez voir que l’alerte **Plusieurs tentatives de connexion infructueuses** a été suivie par les alertes **Activité à partir d’une adresse IP TOR** et **Activité de type Voyage impossible**, deux indicateurs flagrants d’une compromission (IOCs). Si cela n’était pas assez suspect, vous pouvez constater que le même utilisateur a effectué une **activité de téléchargement en masse**, ce qui est souvent un indicateur qu’une personne malveillante tente d’exfiltrer des données.
 
-    ![alerte 1 de la détection d’anomalie](./media/anomaly-alert-user3.png)
+    ![alerte 1 de la détection d’anomalie](media/anomaly-alert-user3.png)
 
 1. Une fois que les fichiers infectés sont détectés, vous pouvez voir une liste des **fichiers infectés**. Cliquez sur le nom du fichier malveillant dans le tiroir de fichier pour ouvrir un rapport sur les programmes malveillants qui vous fournit des informations sur le type de programme malveillant dont le fichier est infecté.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)
+> [!div class="nextstepaction"]
+> [Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

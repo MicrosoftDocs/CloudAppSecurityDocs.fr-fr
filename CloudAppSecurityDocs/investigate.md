@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6fc5d998bc174096d7530a37407137bfbf71d50d
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: c4f914fed75e30aca3b9d87d911c729dff0b77c0
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74461315"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74719931"
 ---
 # <a name="investigate"></a>Investiguer
 
@@ -31,7 +31,7 @@ Une fois que Microsoft Cloud App Security est exécuté dans votre environnement
 
 Les tableaux de bord suivants sont disponibles pour vous aider à étudier les applications de votre environnement cloud :
 
-|Tableau de bord|Description|
+|Dashboard|Description|
 |---------------|-----------------|
 |Tableau de bord principal|Vue d’ensemble de l’état du Cloud (utilisateurs, fichiers, activités) et actions requises (alertes, violations d’activité et violations de contenu).|
 |Tableau de bord de l’application : vue d’ensemble|Vue d’ensemble de l’utilisation de l’application par emplacement, graphiques d’utilisation par nombre d’utilisateurs.|
@@ -55,9 +55,9 @@ Le marquage des applications comme approuvées ou non est une étape importante 
 
 - Dans la console Cloud App Security, accédez au catalogue d’applications ou aux applications découvertes.
 
-- Dans la liste des applications, sur la ligne contenant l’application à marquer comme approuvée, cliquez sur les trois points à la fin de la ligne ![Points pour marquer comme approuvé](./media/sanction-three-dots.png "Marquer en tant que points approuvés") et choisissez **Marquer comme approuvé**.
+- Dans la liste des applications, sur la ligne contenant l’application à marquer comme approuvée, cliquez sur les trois points à la fin de la ligne ![Points pour marquer comme approuvé](media/sanction-three-dots.png "Marquer en tant que points approuvés") et choisissez **Marquer comme approuvé**.
 
-    ![Marquer comme approuvé](./media/mark-as-sanctioned.png "marquer comme approuvé")
+    ![Marquer comme approuvé](media/mark-as-sanctioned.png "marquer comme approuvé")
 
 ## <a name="use-the-investigation-tools"></a>Utiliser les outils d’examen
 
@@ -113,7 +113,7 @@ Le marquage des applications comme approuvées ou non est une étape importante 
 
     - Combien d’utilisateurs les ont déployées ? Quelle est la fréquence de ces applications en général ?
 
-    ![Tableau de bord de l’application](./media/investigate-app.png "examiner l’application")
+    ![Tableau de bord de l’application](media/investigate-app.png "examiner l’application")
 
 5. Accédez au **tableau de bord Cloud Discovery** et vérifiez les points suivants :
 
@@ -143,7 +143,7 @@ Partons du principe que vous pensez ne pas avoir d’accès à votre environneme
 
 5. Sous **Activités remplissant toutes les conditions suivantes**, choisissez **+** pour ajouter un filtre. Faites défiler jusqu’à **Balises IP**, puis choisissez **Tor**.
 
-    ![Exemple de stratégie pour les adresses IP à risque](./media/example-policy-risky-ips.png "exemple de stratégie, adresses IP risquées")
+    ![Exemple de stratégie pour les adresses IP à risque](media/example-policy-risky-ips.png "exemple de stratégie, adresses IP risquées")
 
 Maintenant que la stratégie est en place, vous vous étonnez de voir que vous recevez une alerte indiquant que la stratégie a été violée.
 

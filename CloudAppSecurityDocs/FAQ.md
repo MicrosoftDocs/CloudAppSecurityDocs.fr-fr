@@ -11,16 +11,15 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: 081c2cf4-2750-4546-9490-4b65e87ae48c
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6e2464988eb075e3dd3bd345716b5ec71dec8ba6
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 043615ccdde609f77f6804ee9040e1df55a321f4
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74460844"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74719860"
 ---
 # <a name="frequently-asked-questions"></a>Forum aux questions
 
@@ -39,13 +38,14 @@ Vous devez être administrateur général, administrateur de conformité ou admi
  Add-MsolRoleMember -RoleName "Compliance Administrator" -RoleMemberEmailAddress "XX@XX.XX"
 ```
 
- OU
+ ou
 
 ```powershell
  Add-MsolRoleMember -RoleName "Security Administrator" -RoleMemberEmailAddress “XX@XX.XX”
 ```
 
-## <a name="next-steps"></a>Étapes suivantes  
-Pour apprendre à configurer et utiliser les stratégies de contrôle des applications cloud, consultez [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md).   
+## <a name="next-steps"></a>Étapes suivantes
 
-[!INCLUDE [Open support ticket](includes/support.md)]  
+Pour apprendre à configurer et utiliser les stratégies de contrôle des applications cloud, consultez [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md).
+
+[!INCLUDE [Open support ticket](includes/support.md)]

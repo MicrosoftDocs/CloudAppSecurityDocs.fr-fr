@@ -11,16 +11,15 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 562dc886443a00ef4860286699d81ca433f7a345
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 26715a7600edc6dc4602dcc977ac164e5ae3f35c
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74461273"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720267"
 ---
 # <a name="azure-information-protection-integration"></a>Intégration d’Azure Information Protection
 
@@ -41,7 +40,7 @@ En intégrant Azure Information Protection à Cloud App Security, vous pouvez ut
 > [!NOTE]
 > Pour activer cette fonctionnalité, vous avez besoin d’une licence Cloud App Security et d’une licence pour Azure Information Protection Premium P1. Dès que ces deux licences sont en place, Cloud App Security synchronise les étiquettes des organisations à partir du service Azure Information Protection.
 
-## <a name="prerequisites"></a>Conditions préalables requises
+## <a name="prerequisites"></a>Conditions préalables
 
 - Pour utiliser l’intégration à Azure Information Protection, vous devez activer le [connecteur d’applications pour Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
 
@@ -86,9 +85,11 @@ Il vous suffit de cocher une seule case pour intégrer Azure Information Protect
 Pour permettre à Cloud App Security d’analyser des fichiers quand l’inspection du contenu est activée pour les étiquettes de classification :
 
 1. Dans Cloud App Security, sous l’icône de roue dentée des paramètres, sélectionnez la page **Paramètres** sous le titre **Système**.
-    ![Menu Paramètres](./media/azip-system-settings.png)
+
+    ![Menu paramètres](media/azip-system-settings.png)
 1. Sous **Azure Information Protection**, sélectionnez **Détecter automatiquement les étiquettes de classification Azure Information Protection dans les fichiers**.
-    ![Activer Azure Information Protection](./media/enable-azip.png)
+
+    ![activer azure information protection](media/enable-azip.png)
 
 Après avoir activé Azure Information Protection, vous pouvez voir les fichiers qui ont des étiquettes de classification et les filtrer par étiquette dans Cloud App Security. Une fois Cloud App Security connecté à l’application cloud, vous pouvez utiliser les fonctionnalités d’intégration Azure Information Protection pour appliquer des étiquettes de classification Azure Information Protection (avec ou sans protection) dans le portail Cloud App Security, en les ajoutant directement aux fichiers ou en configurant une stratégie de fichier pour appliquer automatiquement des étiquettes de classification en tant qu’action de gouvernance.
 
@@ -101,19 +102,20 @@ Par défaut, Cloud App Security analyse les étiquettes de classification qui on
 
 Pour ignorer les étiquettes de classification définies en externe à votre organisation, dans le portail Cloud App Security, accédez à **Paramètres** et **Azure Information Protection**. Sélectionnez **Analyser les fichiers uniquement pour détecter les étiquettes de classification Azure Information Protection et les avertissements émis suite à l'inspection du contenu de ce locataire**.
 
-![ignorer les étiquettes](./media/azip-ignore.png)
+![ignorer les étiquettes](media/azip-ignore.png)
 
 ### <a name="apply-labels-directly-to-files"></a>Appliquer des étiquettes directement à des fichiers
 
 1. Sur la page **Fichiers** sous **Investiguer**, sélectionnez le fichier que vous souhaitez protéger. Cliquez sur les points de suspension à la fin de la ligne du fichier, puis choisissez **Appliquer l’étiquette de classification**.  
 
-   ![protéger une application](./media/protect-app.png)
+    ![protéger une application](media/protect-app.png)
   
-   >[!NOTE]
-   > Cloud App Security peut appliquer Azure Information Protection sur des fichiers de 50 Mo maximum.  
+    >[!NOTE]
+    > Cloud App Security peut appliquer Azure Information Protection sur des fichiers de 50 Mo maximum.
 
 2. Vous êtes invité à choisir une des étiquettes de classification de votre organisation à appliquer au fichier. Cliquez ensuite sur **Appliquer**.
-   ![étiquette de classification de protection](./media/protect-template.png)
+
+    ![étiquette de classification de la protection](media/protect-template.png)
 
 3. Une fois que vous avez choisi une étiquette de classification et que vous avez cliqué sur Appliquer, Cloud App Security applique cette étiquette au fichier d’origine.
 
@@ -134,7 +136,7 @@ Suivez ces instructions pour créer la stratégie de fichier :
 2. Définissez la stratégie en incluant le type de fichier que vous voulez détecter. Par exemple, sélectionnez tous les fichiers où **Niveau d’accès** n’est pas égal à **Interne** et où **UO propriétaire** est égal à votre équipe Finance.
 3. Sous les actions de gouvernance pour l’application concernée, cliquez sur **Appliquer une étiquette de classification**, puis sélectionnez le type d’étiquette.
 
-   ![Appliquer une étiquette](./media/aip-gov-action.png)
+    ![Appliquer une étiquette](media/aip-gov-action.png)
 
 > [!NOTE]
 > La possibilité d’appliquer automatiquement une étiquette Azure Information Protection via la stratégie de fichier est une puissante fonctionnalité. Pour protéger les clients contre toute application par erreur d’une étiquette à un grand nombre de fichiers, il existe, pour des raisons de sécurité, une limite quotidienne de 100 actions **Appliquer une étiquette** par application et le client. Une fois la limite quotidienne atteinte, l’action Appliquer une étiquette est temporairement interrompue, puis reprend automatiquement le jour suivant (après 12:00 UTC). Pour augmenter la limite pour votre locataire, ouvrez un ticket de support.
@@ -143,15 +145,15 @@ Suivez ces instructions pour créer la stratégie de fichier :
 
 - Par exemple, si ce qui suit est un document que vous avez étiqueté avec une étiquette de classification Azure Information Protection :
 
-   ![exemple d’écran Azure Information Protection](./media/azip-screen.png)
+    ![exemple d’écran Azure Information Protection](media/azip-screen.png)
 
 - Vous pouvez voir ce document dans Cloud App Security en filtrant sur l’étiquette de classification pour Azure Information Protection dans la page **Fichiers**.
 
-   ![Comparaison de Cloud App Security et d’Azure Information Protection](./media/cas-compared-azip.png)
+    ![Comparaison de Cloud App Security et d’Azure Information Protection](media/cas-compared-azip.png)
 
 - Vous pouvez obtenir plus d’informations sur ces fichiers et leurs étiquettes de classification dans le tiroir des fichiers. Il vous suffit de cliquer sur le fichier approprié dans la page **Fichiers** pour voir s’il a une étiquette de classification.
 
-   ![tiroir du fichier](./media/azip-file-drawer.png)
+    ![tiroir du fichier](media/azip-file-drawer.png)
 
 - Vous pouvez ensuite créer des stratégies de fichiers dans Cloud App Security pour contrôler les fichiers qui sont partagés de façon inappropriée, et pour rechercher les fichiers étiquetés qui ont été modifiés récemment.
 
@@ -167,7 +169,7 @@ Suivez ces instructions pour créer la stratégie de fichier :
 2. Définissez le nom, la gravité et la catégorie de la stratégie.
 3. Ajoutez les filtres suivants pour rechercher toutes les données confidentielles qui sont partagées en externe sur Box :
 
-![stratégie confidentialité](./media/azip-confidentiality-policy.png)
+    ![stratégie confidentialité](media/azip-confidentiality-policy.png)
 
 **Exemple de stratégie : données restreintes qui ont été modifiées récemment en dehors du dossier Finance sur SharePoint :**
 
@@ -175,19 +177,21 @@ Suivez ces instructions pour créer la stratégie de fichier :
 2. Définissez le nom, la gravité et la catégorie de la stratégie.
 3. Ajoutez les filtres suivants pour rechercher tous les fichiers restreints qui ont été modifiés récemment tout en excluant le dossier Finance dans l’option de sélection de dossier :
 
-![stratégie données restreintes](./media/azip-restricted-data-policy.png)
+    ![stratégie données restreintes](media/azip-restricted-data-policy.png)
 
 Vous pouvez également définir des alertes ou une notification utilisateur ou encore prendre des mesures immédiates pour ces stratégies.
 En savoir plus sur les [actions de gouvernance](governance-actions.md).
 
 En savoir plus sur [Azure Information Protection](https://docs.microsoft.com/information-protection/understand-explore/what-is-information-protection) et suivre le [didacticiel de démarrage rapide](https://docs.microsoft.com/information-protection/get-started/infoprotect-quick-start-tutorial) pour Azure Information Protection.
 
-## <a name="related-videos"></a>Vidéos connexes
-
-[Intégrations de Cloud App Security + Azure Information Protection](https://channel9.msdn.com/Shows/Microsoft-Security/MCAS--AIP-Integrations)  
-
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)
+> [!div class="nextstepaction"]
+> [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)
+
+## <a name="related-videos"></a>Vidéos associées
+
+> [!div class="nextstepaction"]
+> [Intégrations de Cloud App Security + Azure Information Protection](https://channel9.msdn.com/Shows/Microsoft-Security/MCAS--AIP-Integrations)  
 
 [!INCLUDE [Open support ticket](includes/support.md)]

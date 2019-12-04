@@ -11,16 +11,15 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: 4b6ac04a-4653-4c4a-bd6f-5926743475cc
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2691be1e80bbeebf3c36f7cd25b2cb1df0dbc560
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 89c0c08ceeda2e9bcc8d541e060f593a4d357540
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74460015"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720945"
 ---
 # <a name="troubleshooting-app-connectors-using-error-messages"></a>Résolution des problèmes des connecteurs d’application à l’aide de messages d’erreur
 
@@ -32,17 +31,16 @@ Cet article fournit la liste des messages d’erreur relatifs aux connecteurs d�
 
 Quand vous tentez de connecter une application cloud à l’aide du connecteur d’application API, la boîte de dialogue du connecteur d’application peut afficher des erreurs.
 
-
 > [!div class="mx-tableFixed"]
 > 
-> |Message d’erreur|Application correspondante|Description|Résolution :|
+> |Message d'erreur|Application correspondante|Description|Solution|
 > |----|----|----|------------|
 > |HttpRequestFailure: 400 Requête incorrecte retourné par le serveur : {"error":{"code":"AF20012","message":"L’ID de client spécifié (emplacement de Tenant_ID) est configuré de façon incorrecte dans le système."|Office 365 |Aucune licence Office 365 attribuée n’a été trouvée. |Attribuez au moins une licence Office 365 à votre client.| 
-> |AuthFatalFailureException: com.box.boxjavalibv2.exceptions.BoxServerException: {"error":"invalid_grant","error_description":"Jeton d’actualisation non valide"}|Box|Le jeton d’actualisation Box n’est pas valide|Suivez le processus pour reconnecter Box à Cloud App Security.|
-> |BoxRestException: Échec de l’analyse de la réponse.|Box|Erreur interne|Cliquez à nouveau sur le lien Tester maintenant pour tester la connexion à Box.|
-> |ContextManagerServiceException: com.adallom.adalib.httputils.exceptions.TokenRefreshException: {"error":"invalid_grant","error_description":"Jeton d’actualisation non valide"}'|Box|Le jeton d’actualisation Box n’est pas valide|Suivez le processus pour reconnecter Box à Cloud App Security.|
-> |BoxServerException: L’utilisateur ne peut pas accéder à cette fonctionnalité sans avoir une entreprise|Box|Le compte Box n’est pas un compte d’entreprise.|Mettez à niveau votre licence Box vers la version d’entreprise de Box, puis suivez le processus pour reconnecter Box à Cloud App Security.|
-> |BoxServerException: Non autorisé - Autorisation impossible avec ce service|Box|L’administrateur Box a supprimé l’application Cloud App Security dans Box.|Suivez le processus pour reconnecter Box à Cloud App Security.|
+> |AuthFatalFailureException: com.box.boxjavalibv2.exceptions.BoxServerException: {"error":"invalid_grant","error_description":"Jeton d’actualisation non valide"}|Zone|Le jeton d’actualisation Box n’est pas valide|Suivez le processus pour reconnecter Box à Cloud App Security.|
+> |BoxRestException: Échec de l’analyse de la réponse.|Zone|Erreur interne|Cliquez à nouveau sur le lien Tester maintenant pour tester la connexion à Box.|
+> |ContextManagerServiceException: com.adallom.adalib.httputils.exceptions.TokenRefreshException: {"error":"invalid_grant","error_description":"Jeton d’actualisation non valide"}'|Zone|Le jeton d’actualisation Box n’est pas valide|Suivez le processus pour reconnecter Box à Cloud App Security.|
+> |BoxServerException: L’utilisateur ne peut pas accéder à cette fonctionnalité sans avoir une entreprise|Zone|Le compte Box n’est pas un compte d’entreprise.|Mettez à niveau votre licence Box vers la version d’entreprise de Box, puis suivez le processus pour reconnecter Box à Cloud App Security.|
+> |BoxServerException: Non autorisé - Autorisation impossible avec ce service|Zone|L’administrateur Box a supprimé l’application Cloud App Security dans Box.|Suivez le processus pour reconnecter Box à Cloud App Security.|
 > |HttpRequestFailure: 401 Non autorisé retourné par le serveur|Okta|Le jeton Okta n’est pas valide.|Suivez le processus pour reconnecter Okta à Cloud App Security.|
 > |IOException:|Okta|Erreur interne|Contactez le support technique|
 > |HttpRequestFailure: 404 Non trouvé retourné par le serveur|Okta|Erreur interne|Contactez le support technique|
@@ -63,11 +61,11 @@ Quand vous tentez de connecter une application cloud à l’aide du connecteur d
 > |HttpRequestFailure: 404 Non trouvé retourné par le serveur|Exchange Online|L’utilisateur que vous utilisez pour vous connecter à Exchange Online ne dispose pas d’une boîte aux lettres principale dans Exchange Online (par exemple, un utilisateur qui n’existe pas dans Azure AD ou un utilisateur qui existe dans Azure AD, mais ne dispose pas d’une licence Exchange Online).|Suivez le processus pour reconnecter Exchange Online à Cloud App Security à l’aide d’un nouveau compte d’administrateur.|
 > |NullPointerException|AWS|Erreur interne|Contactez le support technique|
 > |HttpRequestFailure: 500 Erreur interne au serveur retourné par le serveur|Toutes les applications|Une erreur s’est produite dans l’application.|Vérifiez l’état de l’application|
-> |Le service a expiré|Toutes les applications|Un délai d’attente a été détecté dans la connexion entre Cloud App Security et l’application. Un problème au niveau de l’application peut en être la cause.|Réessayez ultérieurement.|
+> |Le service a expiré|Toutes les applications|Un délai d’attente a été détecté dans la connexion entre Cloud App Security et l’application. Un problème au niveau de l’application peut en être la cause.|Réessayez plus tard.|
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)   
+> [!div class="nextstepaction"]
+> [Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)   
 
 [!INCLUDE [Open support ticket](includes/support.md)]  
-

@@ -11,16 +11,15 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: 76dfaebb-d477-4bdb-b3d7-04cc3fe6431d
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: cd11c5a35761f21cc928a3debbc05a58ef56b6d1
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: ad21cce1ffda835dc45badccc07689ca300cf377
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74459981"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74721076"
 ---
 # <a name="troubleshooting-cloud-discovery"></a>Dépannage de Cloud Discovery
 
@@ -32,14 +31,13 @@ Cet article fournit la liste des erreurs relatives à Cloud Discovery ainsi que 
 
 Si vous avez intégré Microsoft Defender ATP avec Cloud App Security et que vous ne voyez pas les résultats de l’intégration, cela indique qu’il n’y a pas de rapport d' **utilisateurs de point de terminaison Win10** . Assurez-vous que les machines auxquelles vous vous connectez sont Windows 10 version 1809 ou ultérieure et que vous avez attendu les deux heures nécessaires avant que vos données soient accessibles.
 
-
 ## <a name="log-parsing-errors"></a>Erreurs d’analyse du journal
 
 Vous pouvez suivre le traitement des journaux Cloud Discovery à l’aide du journal de gouvernance. Cet article fournit des actions de résolution à entreprendre pour chaque erreur qui peut s’afficher ici.
 
 ### <a name="governance-log-errors"></a>Erreurs du journal de gouvernance
 
-|Error|Description|Résolution :|
+|Erreur|Description|Solution|
 |----|----|----|
 |Type de fichier non pris en charge|Le fichier chargé n’est pas un fichier journal valide (par exemple, un fichier image).|Chargez un fichier **texte**, **zip ou **gzip** exporté directement à partir de votre pare-feu ou proxy.|
 |Le format de journal ne correspond pas|Le format de journal que vous avez chargé ne correspond pas au format attendu pour cette source de données.|1. Vérifiez que le journal n’est pas endommagé. <br /> 2. Comparez et associez votre journal à l’exemple de format affiché dans la page de chargement.|
@@ -60,13 +58,13 @@ Vous pouvez suivre le traitement des journaux Cloud Discovery à l’aide du jou
 
 ## <a name="discovery-dashboard-errors"></a>Erreurs du tableau de bord de découverte
 
-|Problème|Résolution :|
+|Problème|Solution|
 |----|----|
 |Les données de découverte ont été chargées et analysées correctement, mais le tableau de bord Cloud Discovery semble vide|Le tableau de bord est peut-être filtré sur des données qui ne sont pas présentes dans vos journaux. Dans ce cas, il n’y a aucune donnée à afficher. Essayez de changer les filtres du tableau de bord Cloud Discovery pour afficher différents types de données afin de voir les résultats.|
 
 ## <a name="next-steps"></a>Étapes suivantes
-  
-[Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)   
 
-[!INCLUDE [Open support ticket](includes/support.md)]  
+> [!div class="nextstepaction"]
+> [Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)
 
+[!INCLUDE [Open support ticket](includes/support.md)]

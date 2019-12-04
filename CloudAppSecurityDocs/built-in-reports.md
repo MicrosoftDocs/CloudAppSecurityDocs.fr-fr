@@ -11,16 +11,15 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: 0dcc3c35-f787-4822-84c6-d4dff897dd6c
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a9dfc6e859b28450d32fcb7ce925ad5209dd0c5f
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 3d87522306932229b9defd05e760672e875a28ab
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74458343"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720171"
 ---
 # <a name="generate-data-management-reports"></a>Générer des rapports de gestion de données
 
@@ -30,17 +29,18 @@ Microsoft Cloud App Security vous permet de générer des rapports qui fournisse
 
 Pour générer ces rapports
 
-1. Accédez à **Fichiers**. 
+1. Accédez à **Fichiers**.
 2. En haut à droite, cliquez sur les trois points et sous **Rapports de gestion de données**, sélectionnez un des rapports suivants.
 
- ![rapports](./media/reports.png)
+    ![rapports](media/reports.png)
 
-## <a name="data-sharing-overview"></a>Vue d’ensemble du partage de données 
+## <a name="data-sharing-overview"></a>Vue d’ensemble du partage de données
 
 Ce rapport liste le nombre de fichiers, par autorisation d’accès, qui sont stockés dans vos applications cloud. Le partage de fichiers est devenu facile avec les applications cloud en raison de la facilité d’accès et de l’omniprésence. Un **fichier privé** n’est partagé avec personne d’autre que son propriétaire. Si le fichier est partagé, Cloud App Security distingue quatre types d’états :
+
 - Un fichier en **Partage public (Internet)** est un fichier accessible sans aucune authentification, même par le biais d’un résultat de moteur de recherche.
- - Un fichier en **Partage public** est un fichier accessible sans aucune authentification, au moyen d’un lien.
- - Un fichier en **Partage externe** est un fichier auquel peuvent accéder des personnes n’appartenant pas à l’organisation une fois qu’elles se sont authentifiées auprès de l’application cloud.
+- Un fichier en **Partage public** est un fichier accessible sans aucune authentification, au moyen d’un lien.
+- Un fichier en **Partage externe** est un fichier auquel peuvent accéder des personnes n’appartenant pas à l’organisation une fois qu’elles se sont authentifiées auprès de l’application cloud.
 - Un fichier en **Partage interne** est un fichier accessible à la totalité ou à une partie des utilisateurs de votre organisation.
 
 ## <a name="outbound-sharing-by-domain"></a>Partage sortant par domaine
@@ -51,11 +51,9 @@ Ce rapport répertorie les domaines avec lesquels des fichiers d’entreprise so
 
 Ce rapport répertorie les utilisateurs qui partagent des fichiers d’entreprise avec le monde extérieur. Les fichiers en partage externe sont des fichiers partagés avec des collaborateurs externes spécifiques. Les fichiers en partage public sont accessibles à toute personne sur Internet, via une lien privé. Ces fichiers sont uniquement accessibles par des personnes qui ont explicitement le lien. Les fichiers partagés publiquement (Internet) sont accessibles à toute personne sur Internet, y compris par le biais d’un résultat de moteur de recherche. Si vous trouvez des utilisateurs qui partagent un nombre excessif de fichiers, il est recommandé d’en rechercher la raison. Vous pouvez regarder dans l’onglet Fichiers, puis contacter ces utilisateurs pour mieux comprendre leur utilisation du partage externe.
 
+## <a name="next-steps"></a>Étapes suivantes
 
-  
-## <a name="next-steps"></a>Étapes suivantes 
-[Contrôler](control.md)   
+> [!div class="nextstepaction"]
+> [Contrôler](control.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]  
-  
-  
+[!INCLUDE [Open support ticket](includes/support.md)]

@@ -14,19 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d4b800afa927b8a9151837cfbff76478c98bf71f
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 39b3721a2a19c59f7c8d1a1376aa54efee455f65
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74460541"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720467"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Protéger les applications avec le Contrôle d’accès conditionnel aux applications Microsoft Cloud App Security
 
 *S’applique à : Microsoft Cloud App Security*
-
->[!div class="step-by-step"]
-[Suivant : Déployer le Contrôle d’accès conditionnel aux applications »](proxy-deployment-aad.md)
 
 En entreprise, le fait de savoir ce qui s’est passé dans votre environnement cloud après coup n’est pas suffisant. En effet, vous devez pouvoir arrêter les violations et les fuites en temps réel, avant que les employés ne puissent, par inadvertance ou intentionnellement, compromettre vos données et votre organisation. Il est important d’autoriser les utilisateurs de votre organisation à accéder à la plupart des services et outils des applications cloud, et de leur permettre d’apporter leurs propres appareils au travail. En même temps, vous avez besoin d’outils pour protéger votre organisation contre les fuites et le vol de données, en temps réel. Avec Azure Active Directory, Microsoft Cloud App Security offre ces fonctionnalités dans une expérience globale et intégrée avec le Contrôle d’accès conditionnel aux applications.
 
@@ -78,7 +75,7 @@ Pour configurer une stratégie pour tirer parti de la gestion des appareils via 
 1. Charger un ou plusieurs certificats intermédiaires ou racines.
 1. Une fois le certificat chargé, vous pouvez créer des [stratégies d’accès](access-policy-aad.md) et des [stratégies de session](session-policy-aad.md) basées sur une **balise d’appareil** et un **certificat client valide**.
 
-    ![ID d’appareil du Contrôle d’application par accès conditionnel](./media/caac-device-id.png)
+    ![ID d’appareil du Contrôle d’application par accès conditionnel](media/caac-device-id.png)
 
 > [!NOTE]
 > Un certificat est uniquement demandé à un utilisateur si la session correspond à une stratégie qui utilise le filtre du certificat client valide.
@@ -131,7 +128,7 @@ Contrôle d’application par accès conditionnel prend actuellement en charge l
 - AWS
 - DevOps Azure (Visual Studio Team Services)
 - Portail Azure (préversion)
-- Box
+- Zone
 - Concur
 - CornerStone on Demand
 - DocuSign
@@ -143,7 +140,7 @@ Contrôle d’application par accès conditionnel prend actuellement en charge l
 - GitHub
 - HighQ
 - JIRA/Confluence
-- OneDrive Entreprise
+- OneDrive Entreprise
 - LinkedIn Learning
 - Power BI
 - Salesforce
@@ -162,7 +159,7 @@ Contrôle d’application par accès conditionnel prend actuellement en charge l
 La liste suivante répertorie les applications proposées qui sont prises en charge dans Office 365 Cloud App Security :
 
 - Exchange Online
-- OneDrive Entreprise
+- OneDrive Entreprise
 - Power BI
 - SharePodanst Onldanse
 - Microsoft Teams (préversion)
@@ -170,12 +167,12 @@ La liste suivante répertorie les applications proposées qui sont prises en cha
 
 Si vous êtes intéressé par une application spécifique, [envoyez-nous des informations sur l’application](mailto:casfeedback@microsoft.com). Envoyez-nous également le cas d’usage qui vous intéresse pour que nous puissions l’intégrer.
 
-> [!div class="step-by-step"]
-> [Suivant : Déployer le Contrôle d’accès conditionnel aux applications »](proxy-deployment-aad.md)
-
 ## <a name="next-steps"></a>Étapes suivantes
 
 > [!div class="nextstepaction"]
-> [Déployer le Contrôle d’applications par accès conditionnel pour les applications Azure AD](proxy-deployment-aad.md)
+> [Déployer des contrôle d’application par accès conditionnel pour les applications proposées](proxy-deployment-aad.md)
+
+> [!div class="nextstepaction"]
+> [Déployer des contrôle d’application par accès conditionnel pour n’importe quelle application»](proxy-deployment-any-app.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
