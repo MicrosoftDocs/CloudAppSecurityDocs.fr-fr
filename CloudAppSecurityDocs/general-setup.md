@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2708e8606e1838678e7d2b66fcb4e32584d475fc
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 07482404f8c3c374f8ebe8182512add5db64345b
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74458752"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74719250"
 ---
 # <a name="basic-setup-for-cloud-app-security"></a>Configuration de base pour Cloud App Security
 
@@ -27,7 +27,7 @@ ms.locfileid: "74458752"
 
 La procédure suivante contient des instructions pour personnaliser le portail Microsoft Cloud App Security.
 
-## <a name="prerequisites"></a>Conditions préalables requises
+## <a name="prerequisites"></a>Conditions préalables
 
 Pour l’accès au portail, il est nécessaire d’ajouter les adresses IP suivantes à la liste verte de votre pare-feu pour fournir l’accès au portail Cloud App Security :
 
@@ -43,7 +43,7 @@ Pour les clients du gouvernement des États-Unis, il est également nécessaire 
 
 ## <a name="set-up-the-portal"></a>Configurer le portail
 
-1. Dans le portail Cloud App Security, dans la barre de menus, cliquez sur l' ![icône](./media/settings-icon.png "icône des paramètres") paramètres roue dentée paramètres, puis sélectionnez **paramètres** pour configurer les détails de votre organisation.
+1. Dans le portail Cloud App Security, dans la barre de menus, cliquez sur l' ![icône](media/settings-icon.png "icône des paramètres") paramètres roue dentée paramètres, puis sélectionnez **paramètres** pour configurer les détails de votre organisation.
 
 1. Sous **Détails de l’organisation**, vous devez absolument fournir un **Nom d’affichage de l’organisation** pour votre organisation. Il apparaît dans les e-mails et les pages web envoyés par le système.
 
@@ -72,6 +72,7 @@ Pour les clients du gouvernement des États-Unis, il est également nécessaire 
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Configurer Cloud Discovery](set-up-cloud-discovery.md)
+> [!div class="nextstepaction"]
+> [Configurer Cloud Discovery](set-up-cloud-discovery.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

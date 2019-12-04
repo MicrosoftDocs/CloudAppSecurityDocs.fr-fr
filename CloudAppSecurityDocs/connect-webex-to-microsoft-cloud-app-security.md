@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2f35d499398f6d538b552678d5c30740e2f5d5ea
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: e3a3f99dd64526439c9c5f4967a2918c33dfdde9
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74460831"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74719756"
 ---
 # <a name="connect-cisco-webex-to-microsoft-cloud-app-security"></a>Connexion de Cisco Webex à Microsoft Cloud App Security
 
@@ -27,7 +27,7 @@ ms.locfileid: "74460831"
 
 Cet article fournit des instructions pour connecter Microsoft Cloud App Security à votre compte Cisco Webex existant à l’aide des API du connecteur. Cette connexion vous offre une visibilité et un contrôle sur les utilisateurs, les activités et les fichiers de WebEx.
 
-## <a name="prerequisites"></a>Conditions préalables requises
+## <a name="prerequisites"></a>Conditions préalables
 
 - Nous vous suggérons de créer un compte de service dédié pour la connexion. Cela vous permet de voir que les actions de gouvernance effectuées dans WebEx sont effectuées à partir de ce compte, telles que supprimer les messages envoyés dans WebEx. Dans le cas contraire, le nom de l’administrateur qui s’est connecté Cloud App Security à WebEx apparaîtra en tant qu’utilisateur qui a effectué les actions.
 - Vous devez disposer d’autorisations d’administrateur complet **et** de conformité dans WebEx.
@@ -38,7 +38,7 @@ Cet article fournit des instructions pour connecter Microsoft Cloud App Security
 
 1. Dans la page **connecteurs d’application** , cliquez sur le bouton plus (+), puis sur **Cisco Webex**.
 
-    ![connecter WebEx](./media/cisco-webex.png "connecter WebEx")
+    ![connecter WebEx](media/cisco-webex.png "connecter WebEx")
 
 1. Dans la fenêtre contextuelle, entrez le nom de l’instance de ce connecteur.
 
@@ -48,7 +48,7 @@ Cet article fournit des instructions pour connecter Microsoft Cloud App Security
 
 1. De retour dans la console Cloud App Security, vous devez recevoir un message indiquant que WebEx a été correctement connecté.
 
-1. Vérifiez la connexion en cliquant sur **Test API** (Tester l’API).
+1. Vérifiez que la connexion a réussi en cliquant sur **Tester l’API**.
 
     Le test peut prendre quelques minutes. Une fois que vous êtes averti que la connexion a réussi, cliquez sur **Fermer**.
 

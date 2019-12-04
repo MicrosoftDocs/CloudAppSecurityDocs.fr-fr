@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 8464851432d8fce81baa624738c6f73da1d68413
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 43ab4126445f8f0ef36c88253c93d8b89bfa4eda
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74461359"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720744"
 ---
 # <a name="govern-discovered-apps"></a>Gouverner les applications découvertes
 
@@ -31,7 +31,7 @@ Une fois que vous avez consulté la liste des applications découvertes dans vot
 
 Pour ne pas approuver une application présentant un risque spécifique, cliquez sur les points de suspension à la fin de la ligne. Ensuite, sélectionnez **Ne pas approuver**. Vous avez toujours la possibilité d’utiliser une application non approuvée, mais grâce aux filtres Cloud Discovery vous surveillez plus facilement son utilisation. Vous pouvez alors informer les utilisateurs de l’application non approuvée et leur suggérer d’utiliser une autre application sécurisée.
 
-![Marquer comme non approuvées](./media/tag-as-unsanctioned.png)
+![Marquer comme non approuvées](media/tag-as-unsanctioned.png)
 
 Si vous voulez approuver/ne pas approuver une liste d’applications, cochez les cases des applications que vous voulez gérer, puis sélectionnez l’action appropriée.
 
@@ -46,19 +46,19 @@ Cloud App Security vous permet de bloquer l’accès aux applications non approu
 
 1. Dans le tableau de bord Cloud Discovery, marquez toutes les applications que vous souhaitez bloquer comme **Non approuvées**.
 
-    ![Marquer comme non approuvées](./media/tag-as-unsanctioned.png)
+    ![Marquer comme non approuvées](media/tag-as-unsanctioned.png)
 
 2. Dans la barre de titre, cliquez sur les trois points et sélectionnez **Générer un script de blocage...** .
 
-    ![Générer un script de blocage](./media/generate-block-script.png)
+    ![Générer un script de blocage](media/generate-block-script.png)
 
 3. Dans **Générer un script de blocage**, sélectionnez l’appliance pour laquelle vous souhaitez générer le script de blocage.
 
-    ![Générer la fenêtre pop-up du script de blocage](./media/generate-block-script-popup.png)
+    ![Générer la fenêtre pop-up du script de blocage](media/generate-block-script-popup.png)
 
 4. Ensuite, cliquez sur le bouton Générer un script afin de créer un script de blocage pour toutes vos applications non approuvées. Par défaut, le fichier est renommé avec la date à laquelle il a été exporté et le type d’appliance sélectionné. *2017-02-19_CAS_Fortigate_block_script.txt* serait un exemple de nom de fichier.
 
-   ![Bouton Générer un script de blocage](./media/generate-block-script-button.png)
+   ![Bouton Générer un script de blocage](media/generate-block-script-button.png)
 
 5. Importez le fichier créé dans votre appliance.
 

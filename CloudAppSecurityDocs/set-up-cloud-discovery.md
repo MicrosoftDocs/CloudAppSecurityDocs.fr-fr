@@ -10,16 +10,16 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f6c3408b7887ac35924ff647bbe67d8525bef9ed
-ms.sourcegitcommit: 2e8488efcc2253e0b5fa33db308e4986a9cdefd5
+ms.openlocfilehash: fe21bbb39b52981d7aeba0839367d2fd54073983
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71997397"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74721100"
 ---
 # <a name="set-up-cloud-discovery"></a>Configurer Cloud Discovery
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Cloud Discovery analyse vos journaux de trafic en s’appuyant sur le catalogue d’applications cloud Microsoft Cloud App Security, qui contient plus de 16 000 applications cloud. Les applications sont classées et évaluées en fonction de plus de 80 facteurs de risque afin de vous offrir une visibilité permanente de l’utilisation du Cloud, de l’occulter et de l’ombre des risques qu’il représente dans votre organisation.
 
@@ -31,12 +31,12 @@ Il existe deux types de rapports que vous pouvez générer :
 
 - **Rapports continus** : ils analysent tous les journaux qui sont transférés à partir de votre réseau à l’aide de Cloud App Security. Ils offrent une meilleure visibilité sur toutes les données et identifient automatiquement toute utilisation anormale à l’aide du moteur de détection des anomalies Machine Learning ou des stratégies personnalisées que vous définissez. Ces rapports peuvent être créés en vous connectant des façons suivantes :
 
-     - [Intégration de Microsoft Defender ATP](wdatp-integration.md): Cloud App Security s’intègre à Microsoft Defender-protection avancée contre les menaces (ATP) en mode natif, afin de simplifier le déploiement des Cloud Discovery, d’étendre les fonctionnalités Cloud Discovery au-delà de votre réseau d’entreprise et d’activer l’investigation basée sur les machines.
-     - [Collecteur de journaux](discovery-docker.md) : Les collecteurs de journaux vous permettent d’automatiser facilement le chargement manuel des journaux de votre réseau. Le collecteur de journaux s’exécute sur votre réseau et reçoit les journaux par le biais de Syslog ou FTP.
-     - [Intégration de Zscaler](zscaler-integration.md) : Si vous travaillez avec Cloud App Security et Zscaler, vous pouvez intégrer les deux produits pour améliorer la sécurité de votre expérience Cloud Discovery. Ensemble, Cloud App Security et Zscaler offrent un déploiement fluide de Cloud Discovery, le blocage automatique des applications non approuvées et l’évaluation des risques directement dans le portail de Zscaler.
-     - [intégration de iboss](iboss-integration.md): Si vous utilisez Cloud App Security et iboss, vous pouvez intégrer ces deux produits pour rendre votre expérience Cloud Discovery encore plus sûre. Ensemble, Cloud App Security et iboss fournissent un déploiement transparent de Cloud Discovery, le blocage automatique des applications non approuvées et l’évaluation des risques directement dans le portail iboss.
+  - [Intégration de Microsoft Defender ATP](wdatp-integration.md): Cloud App Security s’intègre à Microsoft Defender-protection avancée contre les menaces (ATP) en mode natif, afin de simplifier le déploiement des Cloud Discovery, d’étendre les fonctionnalités de Cloud Discovery au-delà de votre réseau d’entreprise et d’activer l’investigation basée sur les machines.
+  - [Collecteur de journaux](discovery-docker.md) : les collecteurs de journaux vous permettent d’automatiser facilement le chargement manuel des journaux de votre réseau. Le collecteur de journaux s’exécute sur votre réseau et reçoit les journaux par le biais de Syslog ou FTP.
+  - [Intégration Zscaler](zscaler-integration.md) : si vous travaillez avec Cloud App Security et Zscaler, vous pouvez intégrer les deux produits pour améliorer la sécurité de votre expérience Cloud Discovery. Ensemble, Cloud App Security et Zscaler offrent un déploiement fluide de Cloud Discovery, le blocage automatique des applications non approuvées et l’évaluation des risques directement dans le portail de Zscaler.
+  - [intégration de iboss](iboss-integration.md): Si vous travaillez avec Cloud App Security et iboss, vous pouvez intégrer les deux produits pour améliorer votre expérience de Cloud Discovery de sécurité. Ensemble, Cloud App Security et iboss fournissent un déploiement transparent de Cloud Discovery, le blocage automatique des applications non approuvées et l’évaluation des risques directement dans le portail iboss.
 
-## <a name="log-process-flow-from-raw-data-to-risk-assessment"></a>Flux du processus de journalisation : Des données brutes à l’évaluation des risques
+## <a name="log-process-flow-from-raw-data-to-risk-assessment"></a>Flux du processus de journalisation : des données brutes à l’évaluation des risques
 
 Le processus de génération d’une évaluation des risques se compose des étapes suivantes. Le processus dure de quelques minutes à plusieurs heures en fonction de la quantité de données traitées.
 
@@ -91,7 +91,7 @@ Si votre journal n’est pas pris en charge, sélectionnez **Autre** comme **Sou
 
 Attributs de données (selon la documentation du fournisseur) :
 
-| Source de données | URL de l’application cible | Adresse IP de l’application cible | Nom d'utilisateur | Adresse IP d’origine | Total du trafic | Octets chargés |
+| Source de données | URL de l’application cible | Adresse IP de l’application cible | Utilisateur | Adresse IP d’origine | Total du trafic | Octets chargés |
 |----------------------------------------------|----------------------|----------------------|----------------------|----------------------|----------------------|----------------------|
 | Barracuda | **Oui** | **Oui** | **Oui** | **Oui** | Non | Non |
 | Blue Coat | **Oui** | Non | **Oui** | **Oui** | **Oui** | **Oui** |
@@ -126,8 +126,11 @@ Attributs de données (selon la documentation du fournisseur) :
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Créer des rapports d’instantanés Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
+> [!div class="nextstepaction"]
+> [Créer des rapports d’instantanés Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
 
-[Configurer le chargement automatique des journaux pour des rapports continus](configure-automatic-log-upload-for-continuous-reports.md)
+> [!div class="nextstepaction"]
+> [Configurer le chargement automatique des journaux pour des rapports continus](configure-automatic-log-upload-for-continuous-reports.md)
 
-[Utilisation des données Cloud Discovery](working-with-cloud-discovery-data.md)
+> [!div class="nextstepaction"]
+> [Utilisation des données Cloud Discovery](working-with-cloud-discovery-data.md)

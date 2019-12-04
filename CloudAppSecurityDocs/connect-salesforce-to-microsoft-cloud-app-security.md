@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4d4e3798b0b404a8c58317880c08e6c045389d45
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 6121851590f31189cbee7cbeab2efd77a842f964
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74461399"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720037"
 ---
 # <a name="connect-salesforce-to-microsoft-cloud-app-security"></a>Connecter Salesforce à Microsoft Cloud App Security
 
@@ -45,12 +45,12 @@ Cet article fournit des instructions pour connecter Microsoft Cloud App Security
 
     * Sous **Gérer les utilisateurs**, accédez à la page **Profils**.
 
-        ![profils Salesforce gérer les utilisateurs](./media/salesforce-manageusers-profiles.png "profils Salesforce gérer les utilisateurs")
+        ![profils Salesforce gérer les utilisateurs](media/salesforce-manageusers-profiles.png "profils Salesforce gérer les utilisateurs")
 
     * Créez un profil en cliquant sur **Nouveau**.
     * Choisissez le profil que vous venez de créer pour déployer Cloud App Security, puis cliquez sur **Modifier**. Ce profil sera utilisé pour le compte de service Cloud App Security pour configurer le connecteur d’applications.
 
-         ![Salesforce-modifier le profil](./media/salesforce-edit-profile.png "salesforce, modifier le profil")
+         ![Salesforce-modifier le profil](media/salesforce-edit-profile.png "salesforce, modifier le profil")
 
     * Vérifiez que les cases suivantes sont cochées :
       * **API activée**
@@ -65,11 +65,11 @@ Cet article fournit des instructions pour connecter Microsoft Cloud App Security
 
     1. Accédez à votre page de configuration de Salesforce.
 
-        ![configuration de Salesforce](./media/salesforce-setup.png "salesforce, configuration")
+        ![configuration de Salesforce](media/salesforce-setup.png "salesforce, configuration")
 
     1. Dans le menu latéral, sélectionnez **Manage Users** (Gérer les utilisateurs), puis cliquez sur **Utilisateurs**.
 
-        ![utilisateurs du menu Salesforce](./media/salesforce-menu-users.png "menu salesforce, utilisateurs")
+        ![utilisateurs du menu Salesforce](media/salesforce-menu-users.png "menu salesforce, utilisateurs")
 
     1. Sélectionnez l’utilisateur administratif actuel pour votre utilisateur Cloud App Security dédié.
 
@@ -77,21 +77,21 @@ Cet article fournit des instructions pour connecter Microsoft Cloud App Security
 
         Si ce n’est pas le cas, cliquez sur **Edit** (Modifier), puis cochez la case.
 
-        ![utilisateur de contenu CRM Salesforce](./media/salesforce-crm-content-user.png "salesforce, utilisateur de contenu crm")
+        ![utilisateur de contenu CRM Salesforce](media/salesforce-crm-content-user.png "salesforce, utilisateur de contenu crm")
 
-    1. Cliquez sur **Enregistrer**.
+    1. Cliquez sur **Save**.
 
 1. Dans la console Cloud App Security, cliquez sur **Examiner**, puis sur **Applications connectées**.
 
 1. Dans la page **Connecteurs d’application**, cliquez sur le bouton plus (+), puis sur **Salesforce**.
 
-    ![connecter Salesforce](./media/connect-salesforce.png "connecter salesforce")
+    ![connecter Salesforce](media/connect-salesforce.png "connecter salesforce")
 
 1. Dans la page des paramètres Salesforce, sous l’onglet API, cliquez sur **suivez ce lien**, en fonction de l’instance que vous souhaitez installer.
 
 1. Ceci ouvre la page de connexion à Salesforce. Entrez vos informations d’identification pour autoriser Cloud App Security à accéder à l’application Salesforce de votre équipe.
 
-    ![connexion Salesforce](./media/salesforce-logon.png "salesforce, connexion")
+    ![connexion Salesforce](media/salesforce-logon.png "salesforce, connexion")
 
 1. Salesforce vous demande si vous voulez autoriser Cloud App Security à accéder au journal d’informations et d’activité de votre équipe, et à effectuer toute activité en tant que membre de l’équipe. Pour continuer, cliquez sur **Autoriser**.
 
@@ -99,7 +99,7 @@ Cet article fournit des instructions pour connecter Microsoft Cloud App Security
 
 1. De retour dans la console Cloud App Security, vous devez recevoir un message indiquant que Salesforce a été correctement connecté.
 
-1. Vérifiez la connexion en cliquant sur **Test API** (Tester l’API).
+1. Vérifiez que la connexion a réussi en cliquant sur **Tester l’API**.
 
     Le test peut prendre quelques minutes. Une fois que vous avez reçu une notification de réussite, cliquez sur **Terminé**.
 
@@ -117,6 +117,7 @@ Les événements Salesforce sont traités par Cloud App Security de la façon su
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)
+> [!div class="nextstepaction"]
+> [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

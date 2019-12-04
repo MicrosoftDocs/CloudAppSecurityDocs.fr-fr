@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a9075aeedfb21f074bcbde1e9bf5ea136bb5d948
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 433488b7302d3f66255bb1bfa04b630d8dbb1b7d
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74460444"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74721050"
 ---
 # Déploiement étendu <a name="scoped-deployment"></a> 
 
@@ -33,22 +33,22 @@ Il est envisageable, dans certains cas, de ne pas utiliser Microsoft Cloud App S
 
 - Pour définir l’étendue de votre déploiement, vous devez commencer par [importer les groupes d’utilisateurs](user-groups.md) dans Microsoft Cloud App Security. Par défaut, vous voyez les groupes suivants :
 
-    - Groupe d’utilisateurs **Application** : un groupe intégré qui vous permet de voir les activités effectuées par les applications Office 365 et Azure AD.
+  - Groupe d’utilisateurs **Application** : un groupe intégré qui vous permet de voir les activités effectuées par les applications Office 365 et Azure AD.
 
-    - Groupe d' **utilisateurs externes** -tous les utilisateurs qui ne sont pas membres de l’un des domaines gérés que vous avez configurés pour votre organisation.
+  - Groupe d' **utilisateurs externes** -tous les utilisateurs qui ne sont pas membres de l’un des domaines gérés que vous avez configurés pour votre organisation.
 
 - La définition d’une règle d’inclusion a pour effet d’exclure automatiquement tous les groupes qui ne font pas partie du groupe inclus. Par exemple, si vous définissez une règle pour inclure tous les membres des groupes « Bureaux USA », les groupes qui n’en font pas partie ne sont pas surveillés.
 
 - Les groupes d’utilisateurs exclus écrasent les groupes d’utilisateurs inclus. Cela signifie que si vous incluez le groupe d’utilisateurs « Employés GB » mais que vous excluez « Marketing », les membres du service marketing au Royaume-Uni ne sont pas surveillés, alors qu’ils sont membres du groupe **Employés GB**.
 
-1. Dans la barre de menus, cliquez sur l’engrenage représentant les paramètres, puis sélectionnez **Déploiement étendu**.  
+1. Dans la barre de menus, cliquez sur l’engrenage représentant les paramètres, puis sélectionnez **Déploiement étendu**.
 
-    ![icône Paramètres](./media/settings-icon.png "icône des paramètres")
+    ![icône Paramètres](media/settings-icon.png "icône des paramètres")
 
 2. Pour délimiter votre déploiement en incluant ou en excluant des groupes spécifiques, vous devez d’abord [importer les groupes d’utilisateurs](user-groups.md) dans Microsoft Cloud App Security.
 
 3. Pour définir des groupes spécifiques à surveiller par Microsoft Cloud App Security, sous l’onglet **Inclure**, cliquez sur l’icône avec le signe Plus (+).
-    ![icône](./media/plus-icon.png)
+    ![icône](media/plus-icon.png)
 
 4. Dans la boîte de dialogue **Créer une règle d’inclusion**, effectuez les étapes suivantes :
 
@@ -56,11 +56,11 @@ Il est envisageable, dans certains cas, de ne pas utiliser Microsoft Cloud App S
     2. Sous **Sélectionner des groupes d’utilisateurs**, sélectionnez tous les groupes pour lesquels vous souhaitez effectuer un monitoring avec Cloud App Security.
     3. Indiquez si vous souhaitez appliquer cette règle à toutes les applications connectées, ou seulement à **Certaines applications**. Si vous sélectionnez **Certaines applications**, la règle n’affectera que le monitoring des applications sélectionnées. Par exemple, si vous sélectionnez le groupe **Utilisateurs de l’équipe IU** et **Box**, Cloud App Security surveille seulement l’activité Box pour les utilisateurs de votre groupe « Utilisateurs de l’équipe IU » et, pour toutes les autres applications, il surveille toutes les activités de tous les utilisateurs.
 
-        ![règle d’inclusion](./media/include-rule.png)
+        ![règle d’inclusion](media/include-rule.png)
 
 5. Pour définir des groupes à exclure de la surveillance, sous l’onglet **Exclure**, cliquez sur l’icône Plus (+).
 
-   ![icône](./media/plus-icon.png)
+   ![icône](media/plus-icon.png)
 
 6. Dans la boîte de dialogue **Créer une règle d’exclusion**, définissez les paramètres suivants :
 
@@ -68,7 +68,7 @@ Il est envisageable, dans certains cas, de ne pas utiliser Microsoft Cloud App S
     Sous **Sélectionner des groupes d’utilisateurs**, sélectionnez tous les groupes qui ne doivent pas être surveillés par Cloud App Security.
     2. Indiquez si vous souhaitez appliquer cette règle à toutes les applications connectées, ou seulement à **Certaines applications**. Si vous sélectionnez **Certaines applications**, Cloud App Security ne cessera le monitoring du groupe sélectionné que pour les applications sélectionnées. Cela signifie que si vous sélectionnez le groupe **utilisateurs** et **Active Directory**de l’équipe de l’interface utilisateur, Cloud App Security surveillera toutes les activités des utilisateurs, à l’exception des Active Directory les activités effectuées par les utilisateurs de l’équipe de l’interface utilisateur.
 
-       ![règle d’exclusion](./media/exclude-rule.png)
+       ![règle d’exclusion](media/exclude-rule.png)
 
 ## <a name="example-results-for-include-and-exclude-rules"></a>Exemples de résultats pour des règles d’inclusion et d’exclusion
 
@@ -85,9 +85,9 @@ Les activités suivantes des utilisateurs font l’objet d’un monitoring :
 
 |Utilisateur|Appartenance aux groupes|Activités faisant l’objet d’un monitoring|
 |----|----|----|
-|Adriana|Germany all users<br>Global sales<br>Sales managers|Aucun|
+|Adriana|Germany all users<br />Global sales<br />Sales managers|aucune.|
 |Alain|Global sales|Office 365 et toutes les sous-applications à l’exception de Power BI|
-|Cornel|Global sales<br>Sales managers|Office 365 et toutes les sous-applications|
+|Cornel|Global sales<br />Sales managers|Office 365 et toutes les sous-applications|
 |Raymond|Sales managers|Power BI uniquement|
 
 > [!NOTE]
@@ -96,6 +96,7 @@ Les activités suivantes des utilisateurs font l’objet d’un monitoring :
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Configurer Cloud Discovery](set-up-cloud-discovery.md)
+> [!div class="nextstepaction"]
+> [Configurer Cloud Discovery](set-up-cloud-discovery.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]  

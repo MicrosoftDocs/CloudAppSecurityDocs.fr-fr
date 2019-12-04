@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 62d7dc1d7dd9fc36c4c974afaad09b2659be5e51
-ms.sourcegitcommit: 02d63f48df393fa077bb16787c04dfae4be2f96d
+ms.openlocfilehash: e5853882b7f95a492f4d8647af154f855d4f1d19
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74553610"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720291"
 ---
 # <a name="oauth-app-policies"></a>Stratégies d’application OAuth
 
@@ -39,13 +39,13 @@ Pour créer une stratégie d’application OAuth :
 
 1. Filtrez les applications selon vos besoins, par exemple, vous pouvez afficher toutes les applications qui demandent une **Autorisation** pour **Modifier les calendriers dans votre boîte aux lettres**.
 1. Cliquez sur le bouton **Nouvelle stratégie à partir de la recherche**.
-    ![nouvelle stratégie à partir de la recherche](./media/app-permissions-filter.png)
+    ![nouvelle stratégie à partir de la recherche](media/app-permissions-filter.png)
 1. Vous pouvez utiliser le filtre **Utilisation communautaire** pour savoir si l’octroi d’autorisation à cette application est courant, peu courant ou rare. Ce filtre peut être utile si vous avez une application rare qui exige une autorisation avec un haut niveau de gravité ou qui exige une autorisation auprès de nombreux utilisateurs.
 1. Vous pouvez définir la stratégie en fonction du groupe auquel appartiennent les utilisateurs qui ont autorisé les applications. Par exemple, un administrateur peut décider de définir une stratégie qui révoque les applications rares si celles-ci nécessitent des autorisations élevées, uniquement si l’utilisateur qui a accordé les autorisations est un membre du groupe Administrateurs.
 
 Sinon, vous pouvez aussi créer la stratégie en cliquant sur **Contrôler** suivi de **Stratégies**. Cliquez ensuite sur **Créer une stratégie** suivi de **OAuth app policy** (Stratégie d’application OAuth).
 
-   ![Nouvelle stratégie d’application OAuth](./media/app-permissions-policy.png)
+   ![Nouvelle stratégie d’application OAuth](media/app-permissions-policy.png)
 
 ## <a name="oauth-app-anomaly-detection-policies"></a>Stratégies de détection des anomalies d’application OAuth
 

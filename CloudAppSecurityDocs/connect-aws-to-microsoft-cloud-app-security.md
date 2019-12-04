@@ -11,16 +11,15 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: a6b4c745-cd5c-4458-819c-80cbe8b25f29
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 387a9a9184bb805db7659d6f67eae26239f812f3
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 89a14c0fa629a0affd9fde58b1faf4c3716de143
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74461059"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74719534"
 ---
 # <a name="connect-aws-to-microsoft-cloud-app-security"></a>Connecter AWS à Microsoft Cloud App Security
 
@@ -143,7 +142,7 @@ Dans la mesure où vous pouvez ajouter une connexion ou les deux, les étapes d�
 
         ![Connecter l’audit de sécurité des applications AWS](media/aws-connect-app-edit-audit-creds.png "Connecter l’audit de sécurité des applications AWS")
 
-1. Vérifiez la connexion en cliquant sur **Test API** (Tester l’API).  
+1. Vérifiez que la connexion a réussi en cliquant sur **Tester l’API**.  
 
     Le test peut prendre quelques minutes. Quand il est terminé, vous recevez une notification de réussite ou d’échec. Une fois que vous avez reçu une notification de réussite, cliquez sur **Terminé**.
 
@@ -177,7 +176,8 @@ Suivez les étapes [de connexion de l’audit de sécurité AWS](#how-to-connect
 1. Dans la page **connecteurs d’application** , pour fournir les informations d’identification du connecteur AWS, effectuez l’une des opérations suivantes :
 
     **Pour un nouveau connecteur**
-    1. Cliquez sur le signe plus, puis sur **Amazon Web services**.<br>
+
+    1. Cliquez sur le signe plus, puis sur **Amazon Web services**.<br />
 
         ![connecter AWS](media/connect-aws.png "connecter AWS")
 
@@ -190,6 +190,7 @@ Suivez les étapes [de connexion de l’audit de sécurité AWS](#how-to-connect
         ![Connexion de la configuration de sécurité de l’application AWS](media/aws-connect-app-config.png "Connexion de la configuration de sécurité de l’application AWS")
 
     **Pour un connecteur existant**
+
     1. Dans la liste des connecteurs, sur la ligne dans laquelle le connecteur AWS s’affiche, cliquez sur **connecter la configuration**de la sécurité.
 
         ![Capture d’écran de la page applications connectées, montrant le lien modifier la configuration de la sécurité](media/aws-connect-app-edit-config.png)
@@ -198,12 +199,13 @@ Suivez les étapes [de connexion de l’audit de sécurité AWS](#how-to-connect
 
         ![Connexion de la configuration de sécurité de l’application AWS](media/aws-connect-app-edit-config-creds.png "Connexion de la configuration de sécurité de l’application AWS")
 
-1. Vérifiez la connexion en cliquant sur **Test API** (Tester l’API).  
+1. Vérifiez que la connexion a réussi en cliquant sur **Tester l’API**.  
 
     Le test peut prendre quelques minutes. Quand il est terminé, vous recevez une notification de réussite ou d’échec. Une fois que vous avez reçu une notification de réussite, cliquez sur **Terminé**.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)
+> [!div class="nextstepaction"]
+> [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
