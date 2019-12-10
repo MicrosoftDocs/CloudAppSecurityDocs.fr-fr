@@ -6,14 +6,14 @@ ms.author: shsagir
 ms.service: cloud-app-security
 ms.topic: tutorial
 ms.date: 9/8/2019
-ms.openlocfilehash: df591023c15990ec4c00060c34a9d5671b5da3b1
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: 06fe00d3a289aa32846be71509707aa384b2177f
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71084949"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74720538"
 ---
-# <a name="tutorial-extend-governance-to-endpoint-remediation"></a>Didacticiel : Étendre la gouvernance à la correction des points de terminaison
+# <a name="tutorial-extend-governance-to-endpoint-remediation"></a>Tutoriel : Étendre la gouvernance à la correction des points de terminaison
 
 Cloud App Security fournit des options de gouvernance prédéfinies pour les stratégies. Il permet notamment de suspendre un utilisateur ou de rendre un fichier privé. À l’aide de l’intégration native avec Microsoft Flow, vous pouvez utiliser un large écosystème de connecteurs SaaS (Software as a service) pour générer des workflows afin d’automatiser les processus, dont la correction.
 
@@ -22,6 +22,7 @@ Par exemple, lors de la détection d’une menace de programme malveillant possi
 Dans ce tutoriel, vous allez apprendre à configurer une action de gouvernance de stratégie pour utiliser un workflow afin d’exécuter une analyse antivirus sur un point de terminaison où un utilisateur montre des signes de comportement suspect.
 
 > [!div class="checklist"]
+>
 > * 1 : [Générer un jeton d’API Cloud App Security](#generate-token)
 > * 2 : [Créer un flux pour exécuter une analyse antivirus](#create-flow)
 > * 3 : [Configurer le flux](#configure-flow)
@@ -43,7 +44,7 @@ Si vous n’avez pas de plan Microsoft Flow, [inscrivez-vous pour un compte d’
 > [!NOTE]
 > Si vous avez déjà créé un workflow en utilisant un connecteur Cloud App Security, Microsoft Flow réutilise automatiquement le jeton et vous pouvez ignorer cette étape.
 
-1. Dans Cloud App Security, dans la barre de menus, cliquez sur la roue dentée des paramètres ![Icône des paramètres](./media/settings-icon.png "Icône des paramètres") et sélectionnez **Extensions de sécurité**.
+1. Dans Cloud App Security, dans la barre de menus, cliquez sur la roue dentée des paramètres ![Icône des paramètres](media/settings-icon.png "icône des paramètres") et sélectionnez **Extensions de sécurité**.
 
 1. Dans la page **Extensions de sécurité**, cliquez sur le bouton plus (+) pour générer un nouveau jeton d’API.
 1. Dans la fenêtre contextuelle **Générer un nouveau jeton**, entrez le nom du jeton (par exemple « Flow-Token »), puis cliquez sur **Générer**.
@@ -59,6 +60,7 @@ Si vous n’avez pas de plan Microsoft Flow, [inscrivez-vous pour un compte d’
 > Si vous avez déjà créé un flux en utilisant un connecteur Defender ATP, Flow réutilise automatiquement le connecteur et vous pouvez ignorer l’étape **Se connecter**.
 
 1. Accédez au [portail Microsoft Flow](https://flow.microsoft.com/)et sélectionnez Modèles.
+
     ![Capture d’écran de la page principale de Microsoft Flow, montrant la sélection de modèles.](media/tutorial-flow-templates.png)
 
 1. Recherchez « Cloud App Security » et sélectionnez **Exécuter l’analyse antivirus avec Windows Defender sur une alerte Cloud App Security**.
@@ -74,7 +76,7 @@ Si vous n’avez pas de plan Microsoft Flow, [inscrivez-vous pour un compte d’
 > [!NOTE]
 > Si vous avez déjà créé un flux en utilisant un connecteur Azure AD, Microsoft Flow réutilise automatiquement le jeton et vous pouvez ignorer cette étape.
 
-1. Cliquez sur **Créer**.
+1. Cliquez sur **Create (Créer)** .
 
     ![Capture d’écran de la page de modèles de Microsoft Flow, montrant le bouton Créer Cloud App Security.](media/tutorial-flow-templates-create.png)
 
@@ -88,7 +90,7 @@ Si vous n’avez pas de plan Microsoft Flow, [inscrivez-vous pour un compte d’
 
     ![Capture d’écran de la fenêtre HTTP avec Azure AD, montrant les champs des ressources et le bouton de connexion.](media/tutorial-flow-templates-azure.png)
 
-1. Cliquez sur **Continuer**.
+1. Cliquez sur **Continue** (Continuer).
 
     ![Capture d’écran de la fenêtre des modèles Microsoft Flow, montrant les actions effectuées et le bouton Continuer.](media/tutorial-flow-templates-continue.png)
 
@@ -113,4 +115,4 @@ Vous pouvez utiliser les étapes de ce tutoriel pour créer un large éventail d
 ## <a name="see-also"></a>Voir aussi
 
 > [!div class="nextstepaction"]
-[S’intégrer à Microsoft Flow pour l’automatisation des alertes personnalisées](flow-integration.md)
+> [S’intégrer à Microsoft Flow pour l’automatisation des alertes personnalisées](flow-integration.md)

@@ -11,16 +11,15 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 69c025162539ec43742732455a90f96cd3149cc8
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 77face48858ae577c4eb2aa4fd85f7fc39c81377
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74459672"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74720796"
 ---
 # <a name="tutorial-automatically-apply-azure-information-protection-classification-labels"></a>Tutoriel : Appliquer automatiquement des étiquettes de classification Azure Information Protection
 
@@ -31,9 +30,9 @@ Dans un monde parfait, tous les employés comprennent l’importance de la prote
 Ce tutoriel vous aide à identifier les autorisations publiques définies sur un document enregistré dans votre stockage cloud, afin de vous avertir en cas de violation. En outre, vous pouvez appliquer automatiquement votre étiquette de classification Azure Information Protection **Confidentiel** pour renforcer le chiffrement des fichiers.
 
 > [!div class="checklist"]
-> * Configurer la protection des données 
+>
+> * Configurer la protection des données
 > * Valider votre stratégie
-
 
 ## <a name="enhanced-data-level-encryption-protection"></a>Protection par chiffrement renforcé au niveau des données
 
@@ -51,8 +50,8 @@ Utilisez Cloud App Security avec Azure Information Protection pour incorporer de
 
 ## <a name="prerequisites"></a>Prérequis
 
-- [Activez Cloud App Security et Azure Information Protection](azip-integration.md) pour votre locataire.
-- [Connectez Box](connect-box-to-microsoft-cloud-app-security.md) à Cloud App Security.
+* [Activez Cloud App Security et Azure Information Protection](azip-integration.md) pour votre locataire.
+* [Connectez Box](connect-box-to-microsoft-cloud-app-security.md) à Cloud App Security.
 
 ## <a name="set-up-data-protection"></a>Configurer la protection des données
 
@@ -60,14 +59,14 @@ Définissons une stratégie qui recherche des numéros de carte de crédit dans 
 
 1. Commencez à protéger les données que vous stockez dans Box en définissant une stratégie qui chiffre toutes les données sensibles stockées dans Box :
 
-    1. Sous l’onglet **Contrôle**, cliquez sur [**Stratégies**](control-cloud-apps-with-policies.md). 
+    1. Sous l’onglet **Contrôle**, cliquez sur [**Stratégies**](control-cloud-apps-with-policies.md).
 
     2. Cliquez sur **Créer une stratégie** et sélectionnez **Stratégie de fichier**.
 
     3. Nommez la stratégie *Protection des données Box*.
 
     4. Sous **Créer un filtre pour les fichiers sur lesquels cette stratégie s’appliquera**, ciblez vos données sensibles et propriétaires.
-        - Par exemple, sélectionnez **Dossier parent** est égal à **Données client** dans Box, puis **Propriétaire** est égal au service financier.
+        * Par exemple, sélectionnez **Dossier parent** est égal à **Données client** dans Box, puis **Propriétaire** est égal au service financier.
 
     5. Dans ce dossier, recherchez les fichiers contenant des informations de carte de crédit. Sous **Méthode d’inspection du contenu**, sélectionnez **DLP intégré**, sélectionnez **Inclure les fichiers correspondant à une expression prédéfinie**, puis **Tous les pays:Finance:Numéro de carte de crédit**.
 
@@ -75,9 +74,9 @@ Définissons une stratégie qui recherche des numéros de carte de crédit dans 
 
     7. Étant donné que [Cloud App Security est intégré avec Azure Information Protection](azip-integration.md), vous pouvez effectuer une sélection dans votre liste d’étiquettes de classification que vous utiliserez pour protéger les données.
 
-    8. Cliquez sur **Create (Créer)** . 
+    8. Cliquez sur **Create (Créer)** .
 
-   ![Ajouter l’étiquette de classification à la stratégie](./media/aip-auto-policy.png)
+   ![Ajouter l’étiquette de classification à la stratégie](media/aip-auto-policy.png)
 
 2. Étudier les correspondances
 
@@ -88,18 +87,17 @@ Définissons une stratégie qui recherche des numéros de carte de crédit dans 
 ## <a name="validate-your-policy"></a>Valider votre stratégie
 
 1. Pour simuler une alerte, accédez à votre compte Box et tentez d’accéder à un fichier dans le dossier **Données client**.
-2. Accédez au rapport de stratégie. Une correspondance de stratégie de fichier devrait apparaître sous peu. 
+2. Accédez au rapport de stratégie. Une correspondance de stratégie de fichier devrait apparaître sous peu.
 3. Vous pouvez cliquer sur la correspondance pour voir quels fichiers ont été protégés. La correspondance elle-même est masquée pour protéger les données sensibles.
 
 >[!NOTE]
 >
-> - Cloud App Security prend actuellement en charge l’application automatique des étiquettes Azure Information Protection sur Box, GSuite, SharePoint et OneDrive Entreprise.
-> - Lorsqu’un document est étiqueté en utilisant Cloud App Security, les marquages visuels ne sont pas appliqués immédiatement. Ils le sont quand le document est ouvert dans une application Office et qu’il est enregistré pour la première fois. Pour plus d’informations, consultez [Comment configurer les marquages visuels d’une étiquette pour Azure Information Protection](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-markings#when-visual-markings-are-applied).
+> *- Cloud App Security prend actuellement en charge l’application automatique des étiquettes Azure Information Protection sur Box, GSuite, SharePoint et OneDrive Entreprise.
+> *- Lorsqu’un document est étiqueté en utilisant Cloud App Security, les marquages visuels ne sont pas appliqués immédiatement. Ils le sont quand le document est ouvert dans une application Office et qu’il est enregistré pour la première fois. Pour plus d’informations, consultez [Comment configurer les marquages visuels d’une étiquette pour Azure Information Protection](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-markings#when-visual-markings-are-applied).
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)   
+> [!div class="nextstepaction"]
+> [Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]  
-  
-  
+[!INCLUDE [Open support ticket](includes/support.md)]
