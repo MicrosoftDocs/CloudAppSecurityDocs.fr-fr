@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: e27aa1efc0abfa5af6d7005015062b7d8c43dcac
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 45d89b489fe017e0bc3f71c7785a4007b1a447e4
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74460693"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74720632"
 ---
 # <a name="tutorial-investigate-risky-oauth-apps"></a>Tutoriel : Examiner des applications OAuth à risque
 
@@ -29,13 +29,13 @@ OAuth est un standard ouvert pour l’authentification basée sur un jeton et su
 
 Par exemple, une application qui analyse le calendrier de l’utilisateur et lui donne des conseils sur la façon de devenir plus productif a besoin d’accéder au calendrier de l’utilisateur. Au lieu de fournir les informations d’identification de l’utilisateur, OAuth permet à l’application d’obtenir l’accès aux données avec uniquement un jeton, qui est généré lorsque l’utilisateur fournit son consentement sur une page, comme illustré dans l’image ci-dessous.
 
- ![Autorisation d’application OAuth](./media/oauth-permission.png)
+![Autorisation d’application OAuth](media/oauth-permission.png)
 
 Les applications tierces installées par des utilisateurs professionnels dans votre organisation ont souvent besoin d’une autorisation pour pouvoir accéder aux informations et données utilisateur et se connecter au nom de l’utilisateur à d’autres applications cloud. Lorsque les utilisateurs installent ces applications, ils cliquent souvent sur **Accepter** sans examiner attentivement les détails du message d’invite, notamment concernant l’octroi d’autorisations à l’application. Le fait d’accepter les autorisations d’applications tierces est un risque de sécurité potentiel pour votre organisation.
 
 Par exemple, la page de consentement d’application OAuth suivante peut paraître légitime à l’utilisateur moyen, toutefois, « l’Explorateur d’API Google » ne devrait pas avoir besoin de demander des autorisations à Google. Par conséquent, cela indique que l’application peut être une tentative de hameçonnage, non liée à Google.
 
-![Hameçonnage OAuth](./media/oauth-phishing.png)
+![Hameçonnage OAuth](media/oauth-phishing.png)
 
 En tant qu’administrateur de sécurité, vous avez besoin d’une visibilité et de contrôle sur les applications dans votre environnement et cela inclut leurs autorisations. Vous devez être en mesure d’empêcher l’utilisation d’applications qui demandent l’autorisation à des ressources que vous voulez révoquer. Par conséquent, Microsoft Cloud App Security vous offre la possibilité d’analyser et de surveiller les autorisations données à l’application par vos utilisateurs. Cet article vise à aider à examiner les applications OAuth dans votre organisation et à vous concentrer sur les applications plus susceptibles d’être suspectes.
 
@@ -59,7 +59,7 @@ Vous pouvez définir des stratégies pour vous envoyer automatiquement des notif
     - Définissez le filtre sur **Niveau d’autorisation de gravité élevée** et **Utilisation communautaire pas courante**. Ce filtre vous aide à vous concentrer sur les applications à risque potentiel très élevé pour lesquelles les utilisateurs peuvent avoir sous-estimé le risque.
     - Sous **Autorisations** sélectionnez toutes les options qui sont particulièrement risquées dans un contexte spécifique. Par exemple, vous pouvez sélectionner tous les filtres qui donnent l’autorisation d’accès aux e-mails, comme **Accès complet à toutes les boîtes aux lettres** puis passez en revue la liste des applications pour vous assurer qu’elles ont toutes besoin d’un accès relatif à la messagerie. Cela peut faciliter l’investigation dans un contexte spécifique et la recherche d’applications qui semblent légitimes, mais contiennent des autorisations inutiles. Ces applications sont plus susceptibles de présenter des risques.
 
-            ![OAuth phishing](./media/oauth-filters.png)
+        ![Hameçonnage OAuth](media/oauth-filters.png)
 
     - Sélectionnez la requête enregistrée **Applications autorisées par des utilisateurs externes**. Ce filtre vous aide à identifier les applications qui peuvent ne pas être conformes aux normes de sécurité de votre entreprise.
 1. Après les avoir examinées, vous pouvez vous concentrer sur les applications dans les requêtes qui semblent légitimes, mais peuvent en réalité présenter des risques. Utilisez les filtres pour les rechercher :
@@ -68,7 +68,7 @@ Vous pouvez définir des stratégies pour vous envoyer automatiquement des notif
 1. Cliquez sur chaque application pour ouvrir le tiroir des applications et vérifier si l’application a un nom, un éditeur ou un site web suspect.
 1. Examinez la liste des applications et ciblez celles qui ont une date sous **Dernière autorisation** qui n’est pas récente. Ces applications peuvent ne plus être nécessaires.
 
-    ![Tiroir d’application OAuth](./media/oauth-drawer.png)
+    ![Tiroir d’application OAuth](media/oauth-drawer.png)
 
 ## <a name="how-to-investigate"></a>Procédure d’examen
 
@@ -98,6 +98,7 @@ Après avoir déterminé qu’une application OAuth est risquée, Cloud App Secu
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)
+> [!div class="nextstepaction"]
+> [Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

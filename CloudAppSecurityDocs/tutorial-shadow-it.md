@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: 132e4860a1f69f23d92001b2390aa46b3fed2b05
-ms.sourcegitcommit: 71ce3747f3f29dd8133457e4b9efbe0f8734309d
+ms.openlocfilehash: 783e959fdda7b8e3b66171f20034985f9f993513
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74461780"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74720847"
 ---
 # <a name="tutorial-discover-and-manage-shadow-it-in-your-network"></a>Tutoriel : Découvrir et gérer l’informatique fantôme sur votre réseau
 
@@ -40,7 +40,7 @@ Ce didacticiel fournit des instructions sur l’utilisation de Cloud Discovery p
 
 Utilisez ce processus pour déployer la solution Cloud Discovery pour l’informatique fantôme dans votre organisation.
 
-![cycle de vie de l’informatique fantôme](./media/shadow-it-lifecycle.png)
+![cycle de vie de l’informatique fantôme](media/shadow-it-lifecycle.png)
 
 ### <a name="phase-1-discover-and-identify-shadow-it"></a>Phase 1 : Découvrir et identifier l’informatique fantôme
 
@@ -102,6 +102,7 @@ La nature des applications cloud implique qu’elles sont mises à jour quotidie
 
 ## <a name="see-also"></a>Voir aussi
 
-[Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)
+> [!div class="nextstepaction"]
+> [Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]  

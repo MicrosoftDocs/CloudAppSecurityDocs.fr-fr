@@ -14,10 +14,10 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 825a8532588cc479bcc37e5373bff23ccc841d8d
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74461041"
 ---
 # <a name="what-are-the-differences-in-discovery-capabilities-for-azure-active-directory-and-microsoft-cloud-app-security"></a>Quelles sont les différences qui existent entre les fonctionnalités de découverte d’Azure Active Directory et celles de Microsoft Cloud App Security ?

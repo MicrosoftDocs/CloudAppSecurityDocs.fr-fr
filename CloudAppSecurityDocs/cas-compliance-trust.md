@@ -9,12 +9,12 @@ ms.date: 11/01/2019
 ms.collection: M365-security-compliance
 ms.custom: seodec18
 ms.suite: ems
-ms.openlocfilehash: de625987873d60b99f39579ea6694dacccfd4479
-ms.sourcegitcommit: e7af22892c56d03490d1e6241c0a74d2e11e9fe2
+ms.openlocfilehash: c413409f71abcacd4fc74832a3617f6d6430c269
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2019
-ms.locfileid: "73462102"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74719825"
 ---
 # <a name="microsoft-cloud-app-security-data-security-and-privacy"></a>Sécurité et confidentialité des données Microsoft Cloud App Security
 
@@ -38,21 +38,21 @@ Microsoft Cloud App Security est conforme à de nombreuses normes de conformité
 
 | |Title|Description|
 |----|----|----|
-|![logo csa](./media/csastar-attest.png)|CSA STAR Attestation|Azure et Intune ont obtenu la certification CSA (Cloud Security Alliance) STAR basée sur un audit indépendant.|
-|![logo csa](./media/csastar.png)|CSA STAR Certification|Azure, Intune et Power BI ont obtenu la certification CSA (Cloud Security Alliance) STAR au niveau « Gold ».|
-|![logo des clauses contractuelles types de l’Union Européenne](./media/eu-model-icon.png)|[Clauses contractuelles types de l’Union Européenne](https://www.microsoft.com/en-us/trustcenter/compliance/eu-model-clauses)|Microsoft offre par le biais des Clauses contractuelles standard de l’Union Européenne des garanties pour les transferts de données personnelles.|
-|![logo privacy shield](./media/privacy_shield.png)|EU-U.S. Privacy Shield|Microsoft est conforme à cette infrastructure pour la protection des données personnelles transférées à partir de l'UE vers les États-Unis.|
-|![logo FISC](./media/logo_fisc.png)|FISC|Microsoft respecte les exigences de la norme Financial Industry Information Systems v8 du Japon.|
-|![logo HIPAA](./media/hipaa-logo.png)|[HIPAA/HI-TECH](https://www.microsoft.com/en-us/trustcenter/compliance/hipaa)|Microsoft propose des accords de partenariat sur la transférabilité de l'assurance maladie et la responsabilité des assureurs.|
-|![logo iso 9001](./media/iso-9001.png)|ISO 9001|Microsoft est certifié pour son implémentation en matière des normes de gestion de la qualité.|
-|![logo iso 27001](./media/iso-27001.png)|[ISO/IEC 27001](https://www.microsoft.com/en-us/trustcenter/compliance/iso-iec-27001)|Microsoft est certifié pour son implémentation de ces normes de gestion de la sécurité des informations.|
-|![logo iso 27018](./media/iso-27018.png)|[ISO/IEC 27018](https://www.microsoft.com/en-us/trustcenter/compliance/iso-iec-27018)|Microsoft a été le premier fournisseur de cloud à adhérer à ce code de pratique en matière de confidentialité du cloud.|
-|![logo PCI](./media/pci-logo.png)|PCI DSS|Azure est conforme aux PCI DSS (normes de sécurité des données de l'industrie des cartes de paiement) Niveau 1 version 3.1.|
-|![logo SOC](./media/soc-logo.png)|[Rapports SOC 1 et SOC 2 type 2](https://www.microsoft.com/en-us/trustcenter/compliance/soc)|Les services de cloud computing Microsoft sont conformes aux normes Service Organization Controls pour la sécurité opérationnelle.|
-|![logo SOC](./media/soc-logo.png)|SOC 3|Les services de cloud computing Microsoft sont conformes aux normes Service Organization Controls pour la sécurité opérationnelle.|
-|![logo g-cloud](./media/g-cloud.png)|UK G-Cloud|Crown Commercial Service a renouvelé la classification de services cloud Microsoft de la norme Government Cloud v6.|
+|![logo csa](media/csastar-attest.png)|CSA STAR Attestation|Azure et Intune ont obtenu la certification CSA (Cloud Security Alliance) STAR basée sur un audit indépendant.|
+|![logo csa](media/csastar.png)|CSA STAR Certification|Azure, Intune et Power BI ont obtenu la certification CSA (Cloud Security Alliance) STAR au niveau « Gold ».|
+|![logo des clauses contractuelles types de l’Union Européenne](media/eu-model-icon.png)|[Clauses contractuelles types de l’Union Européenne](https://www.microsoft.com/trustcenter/compliance/eu-model-clauses)|Microsoft offre par le biais des Clauses contractuelles standard de l’Union Européenne des garanties pour les transferts de données personnelles.|
+|![logo privacy shield](media/privacy_shield.png)|EU-U.S. Privacy Shield|Microsoft est conforme à cette infrastructure pour la protection des données personnelles transférées à partir de l'UE vers les États-Unis.|
+|![logo FISC](media/logo_fisc.png)|FISC|Microsoft respecte les exigences de la norme Financial Industry Information Systems v8 du Japon.|
+|![logo HIPAA](media/hipaa-logo.png)|[HIPAA/HI-TECH](https://www\.microsoft\.com/trustcenter/compliance/hipaa)|Microsoft propose des accords de partenariat sur la transférabilité de l'assurance maladie et la responsabilité des assureurs.|
+|![logo iso 9001](media/iso-9001.png)|ISO 9001|Microsoft est certifié pour son implémentation en matière des normes de gestion de la qualité.|
+|![logo iso 27001](media/iso-27001.png)|[ISO/IEC 27001](https://www\.microsoft\.com/trustcenter/compliance/iso-iec-27001)|Microsoft est certifié pour son implémentation de ces normes de gestion de la sécurité des informations.|
+|![logo iso 27018](media/iso-27018.png)|[ISO/IEC 27018](https://www\.microsoft\.com/trustcenter/compliance/iso-iec-27018)|Microsoft a été le premier fournisseur de cloud à adhérer à ce code de pratique en matière de confidentialité du cloud.|
+|![logo PCI](media/pci-logo.png)|PCI DSS|Azure est conforme aux PCI DSS (normes de sécurité des données de l'industrie des cartes de paiement) Niveau 1 version 3.1.|
+|![logo SOC](media/soc-logo.png)|[Rapports SOC 1 et SOC 2 type 2](https://www\.microsoft\.com/trustcenter/compliance/soc)|Les services de cloud computing Microsoft sont conformes aux normes Service Organization Controls pour la sécurité opérationnelle.|
+|![logo SOC](media/soc-logo.png)|SOC 3|Les services de cloud computing Microsoft sont conformes aux normes Service Organization Controls pour la sécurité opérationnelle.|
+|![logo g-cloud](media/g-cloud.png)|UK G-Cloud|Crown Commercial Service a renouvelé la classification de services cloud Microsoft de la norme Government Cloud v6.|
 
-Pour plus d’informations, accédez aux [produits de conformité Microsoft](https://www.microsoft.com/en-us/trustcenter/compliance/complianceofferings) et sélectionnez Cloud App Security.  
+Pour plus d’informations, accédez aux [produits de conformité Microsoft](https://www\.microsoft\.com/trustcenter/compliance/complianceofferings) et sélectionnez Cloud App Security.  
 
 ## <a name="privacy"></a>Confidentialité
 
@@ -69,7 +69,7 @@ Pour plus d’informations, accédez aux [produits de conformité Microsoft](htt
 
 - Cloud App Security utilise vos données uniquement à des fins cohérentes avec la fourniture des services auxquels vous vous abonnez.
 
-- Si un gouvernement se rapproche de Microsoft pour accéder à vos données, Microsoft redirigera la requête vers vous, le client, chaque fois que ce sera possible. Microsoft a contesté des exigences légales qui n’étaient pas valides, qui interdisaient la divulgation d’[une demande d’un gouvernement](https://www.microsoft.com/en-us/trustcenter/privacy/govt-requests-for-data) relative à des données d’un client. En savoir plus sur [qui peut accéder à vos données et sous quelles conditions](https://www.microsoft.com/en-us/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms).
+- Si un gouvernement se rapproche de Microsoft pour accéder à vos données, Microsoft redirigera la requête vers vous, le client, chaque fois que ce sera possible. Microsoft a contesté des exigences légales qui n’étaient pas valides, qui interdisaient la divulgation d’[une demande d’un gouvernement](https://www\.microsoft\.com/trustcenter/privacy/govt-requests-for-data) relative à des données d’un client. En savoir plus sur [qui peut accéder à vos données et sous quelles conditions](https://www\.microsoft\.com/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms).
 
 ### <a name="privacy-controls"></a>Contrôles de confidentialité
 
@@ -86,7 +86,7 @@ Microsoft Cloud App Security fonctionne actuellement dans des centres de donnée
 > [!NOTE]
 > Cloud App Security tire parti des centres de données Azure dans le monde entier pour offrir des performances optimisées grâce à la géolocalisation. Cela signifie que la session d’un utilisateur peut être hébergée en dehors d’une région particulière, en fonction des modèles de trafic et de leur emplacement. Toutefois, pour protéger votre confidentialité, aucune donnée de session n’est stockée dans ces centres de données.
 
-[En savoir plus sur la confidentialité](https://www.microsoft.com/en-us/trustcenter/privacy)
+[En savoir plus sur la confidentialité](https://www\.microsoft\.com/trustcenter/privacy)
 
 ## <a name="transparency"></a>Transparence
 
@@ -116,7 +116,7 @@ Microsoft Cloud App Security conserve les données comme suit :
 
 Vous pouvez en savoir plus sur les pratiques de Microsoft relatives aux données en lisant les  [termes du contrat de service en ligne](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
 
-[En savoir plus sur la transparence](https://www.microsoft.com/en-us/trustcenter/about/transparency)
+[En savoir plus sur la transparence](https://www\.microsoft\.com/trustcenter/about/transparency)
 
 ### <a name="deleting-personal-data"></a>Suppression des données personnelles
 
@@ -159,10 +159,13 @@ Pour avoir des informations sur les normes de conformité Cloud App Security et 
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Vue d’ensemble de Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security)
+> [!div class="nextstepaction"]
+> [Vue d’ensemble de Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security)
 
-[Documentation Cloud App Security](/cloud-app-security/)
+> [!div class="nextstepaction"]
+> [Documentation Cloud App Security](/cloud-app-security/)
 
-[S’inscrire à Cloud App Security](https://signup.microsoft.com/Signup?OfferId=757c4c34-d589-46e4-9579-120bba5c92ed&ali=1)
+> [!div class="nextstepaction"]
+> [S’inscrire à Cloud App Security](https://signup.microsoft.com/Signup?OfferId=757c4c34-d589-46e4-9579-120bba5c92ed&ali=1)
 
 Demandez une version d’évaluation gratuite de Cloud App Security et voyez dans quelle mesure ceci répond aux besoins de votre entreprise.

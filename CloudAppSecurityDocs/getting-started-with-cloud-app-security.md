@@ -11,12 +11,12 @@ ms.service: cloud-app-security
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0f79fea252ed16a603b75ea20e5641b3be2f963f
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 0b9f026c9509153cca5c51024616662983550ef7
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74460872"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74720675"
 ---
 # <a name="quickstart-get-started-with-microsoft-cloud-app-security"></a>Démarrage rapide : Bien démarrer avec Microsoft Cloud App Security
 
@@ -33,7 +33,7 @@ Votre organisation doit avoir une licence pour utiliser Cloud App Security. Pour
 
 - Votre organisation doit avoir une licence pour utiliser Cloud App Security. Pour plus d’informations sur les tarifs, consultez la [fiche technique sur les licences Cloud App Security](https://aka.ms/mcaslicensing).
 
-     Pour la prise en charge de l’activation client, consultez [Contacter le support Office 365 pour les entreprises - Aide de l’administrateur](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
+    Pour la prise en charge de l’activation client, consultez [Contacter le support Office 365 pour les entreprises - Aide de l’administrateur](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
 - Une fois que vous avez une licence Cloud App Security, vous recevez un e-mail contenant des informations sur l’activation et un lien vers le portail Cloud App Security.
 
 - Pour configurer Cloud App Security, vous devez être un administrateur général, de mise en conformité ou de la sécurité dans Azure Active Directory ou Office 365. Il est important de comprendre qu’un utilisateur auquel est attribué un rôle d’administrateur a les mêmes autorisations sur toutes les applications cloud auxquelles votre organisation s’est abonnée. Peu importe que vous attribuiez le rôle dans le centre d’administration Microsoft 365, dans le portail Azure Classic ou à l’aide du module Azure AD pour [Windows PowerShell](https://technet.microsoft.com/library/mt736914.aspx). Pour plus d’informations, consultez [Attribution de rôles d’administrateur dans Office 365](https://support.office.com/article/Assigning-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504) et [Attribution de rôles d’administrateur dans Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/).
@@ -87,10 +87,10 @@ Tâche obligatoire : Activer Cloud App Security pour afficher votre utilisation 
 1. Si vous utilisez [Zscaler, intégrez](zscaler-integration.md)-le à Cloud App Security.
 1. Pour obtenir une couverture complète, créez un rapport Cloud Discovery continu.
 
-   1. Dans la roue dentée des paramètres, sélectionnez **Paramètres Cloud Discovery**.
-   1. Choisissez **Chargement automatique des journaux**.
-   1. Sous l’onglet **Sources de données**, ajoutez vos sources.
-   1. Sous l’onglet **Collecteurs de journaux**, configurez le collecteur de journaux.
+    1. Dans la roue dentée des paramètres, sélectionnez **Paramètres Cloud Discovery**.
+    1. Choisissez **Chargement automatique des journaux**.
+    1. Sous l’onglet **Sources de données**, ajoutez vos sources.
+    1. Sous l’onglet **Collecteurs de journaux**, configurez le collecteur de journaux.
 
 ### <a name="to-create-a-snapshot-cloud-discovery-report"></a>Pour créer un rapport d’instantané Cloud Discovery
 
@@ -143,7 +143,7 @@ Tâche recommandée : Configurer des paramètres importants
 1. Entrez les **détails**, l’**emplacement**, les **étiquettes** et la **catégorie** de la plage d’adresses IP.
 1. Choisissez **Créer**.
 
-   Vous pouvez maintenant utiliser des étiquettes d’adresse IP quand vous créez des stratégies, et quand vous filtrez et créez des rapports continus.
+    Vous pouvez maintenant utiliser des étiquettes d’adresse IP quand vous créez des stratégies, et quand vous filtrez et créez des rapports continus.
 
 ### <a name="to-create-continuous-reports"></a>Pour créer des rapports continus
 
@@ -166,6 +166,7 @@ Ces paramètres permettent d’exercer un meilleur contrôle des fonctionnalité
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Définir des stratégies [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md).
+> [!div class="nextstepaction"]
+> [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md).
 
 [!INCLUDE [Open support ticket](includes/support.md)].
