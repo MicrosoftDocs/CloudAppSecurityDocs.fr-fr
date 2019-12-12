@@ -15,10 +15,10 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 542f3e37a7b5446b72d0be0dca273bb115339880
-ms.sourcegitcommit: 33ac7a8f1f3efcc100db84575c3e9d8c0ba28e02
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74656680"
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>Connecter G Suite à Microsoft Cloud App Security
@@ -89,16 +89,16 @@ Cet article fournit des instructions pour connecter Microsoft Cloud App Security
 
 1. Cliquez sur les points de suspension à droite du compte de service que vous avez créé et sélectionnez **Edit (Modifier)** .
 
-    ![modification Google](media/google11.png "google edit")
+    ![modification Google](media/google11.png "modification Google")
 
 1. Cliquez sur **afficher la délégation à l’ensemble du domaine**, sélectionnez Activer la **délégation à l’ensemble du domaine G suite**.
 
     ![ID client Google](media/google12.png "google12")
 
     1. Copiez l' **ID client** . vous en aurez besoin plus tard.
-    ![gérer l’accès client des API](media/google12-2.png "google12-2")
+    ![gérer l’accès client des API](media/google12-2.png "google12-2»)
 
-    1. Cliquez sur **Enregistrer**
+    1. Cliquez sur **ENREGISTRER**
 
     1. Accédez à [admin.google.com](https://admin.google.com/), puis choisissez **Sécurité**.
 
@@ -109,7 +109,7 @@ Cet article fournit des instructions pour connecter Microsoft Cloud App Security
     1. Dans la zone **une ou plusieurs étendues d’API** , entrez la liste suivante des étendues requises (copiez le texte et collez-le dans la zone) :  
 `https://www.googleapis.com/auth/admin.reports.audit.readonly,https://www.googleapis.com/auth/admin.reports.usage.readonly,https://www.googleapis.com/auth/drive,https://www.googleapis.com/auth/drive.appdata,https://www.googleapis.com/auth/drive.apps.readonly,https://www.googleapis.com/auth/drive.file,https://www.googleapis.com/auth/drive.metadata.readonly,https://www.googleapis.com/auth/drive.readonly,https://www.googleapis.com/auth/drive.scripts,https://www.googleapis.com/auth/admin.directory.user.readonly,https://www.googleapis.com/auth/admin.directory.user.security,https://www.googleapis.com/auth/admin.directory.user.alias,https://www.googleapis.com/auth/admin.directory.orgunit,https://www.googleapis.com/auth/admin.directory.notifications,https://www.googleapis.com/auth/admin.directory.group.member,https://www.googleapis.com/auth/admin.directory.group,https://www.googleapis.com/auth/admin.directory.device.mobile.action,https://www.googleapis.com/auth/admin.directory.device.mobile,https://www.googleapis.com/auth/admin.directory.user`
 
-    1. Cliquez sur **autoriser**.
+    1. Cliquez sur **Autoriser**.
 
 1. Dans le [Google Cloud Platform](https://console.cloud.google.com/), sélectionnez Menu et accédez à **api et services** > **tableau de bord**.
 
@@ -179,34 +179,34 @@ Dans **Application description** (Description de l’application), tapez « Mic
 
     * Sous **Visibilité**, sélectionnez **Mon domaine** (et non pas public).
     * Cliquez sur **Save Changes (Enregistrer les modifications)** .
-        ![google visibility](media/google-visibility.png)
-1. In the Google Admin console, go to [Manage App Access Control](https://admin.google.com/). Locate the **G Suite Admin** row and verify that it has **Unrestricted** access.
+        ![Google Visibility](media/google-visibility.png)
+1. Dans la console d’administration Google, accédez à [gérer l’application Access Control](https://admin.google.com/). Recherchez la ligne **administrateur G suite** et vérifiez qu’elle dispose d’un accès **illimité** .
 
-    ![google security](media/googlesec.png)
+    ![Google Security](media/googlesec.png)
 
 ## <a name="configure-cloud-app-security"></a>Configurer Cloud App Security
 
 1. Dans le portail Cloud App Security, cliquez sur **Examiner**, puis sur **Applications connectées**.
 
-1. To provide the G Suite connection details, under **App connectors**, do one of the following:
+1. Pour fournir les détails de connexion G suite, sous **connecteurs d’applications**, effectuez l’une des opérations suivantes :
 
-    **For a G Suite organization that already has a connected GCP instance**
+    **Pour une organisation G suite qui possède déjà une instance GCP connectée**
 
-    * In the list of connectors, at the end of row in which the GCP instance appears, click the three dots and then click **Add G Suite**.
+    * Dans la liste des connecteurs, à la fin de la ligne où l’instance GCP s’affiche, cliquez sur les trois points, puis sur **Ajouter G suite**.
 
-    **For a G Suite organization that does not already have a connected GCP instance**
+    **Pour une organisation G suite qui n’a pas encore d’instance GCP connectée**
 
     * Dans la page **Applications connectées**, cliquez sur le signe plus (+) et sélectionnez **G Suite**.
 
 1. Dans la fenêtre contextuelle, renseignez les informations suivantes :
 
-    ![G Suite Configuration in Cloud App Security](media/gsuite-config-cas.png "G Suite Configuration in Cloud App Security")
+    ![Configuration G suite dans Cloud App Security](media/gsuite-config-cas.png "Configuration G suite dans Cloud App Security")
 
-    1. Enter the **Service account ID**, the **Email** that you copied earlier.
+    1. Entrez l' **ID de compte de service**, l' **adresse de messagerie** que vous avez copiée précédemment.
 
-    1. Enter the **Project number (App ID)** that you copied earlier.
+    1. Entrez le **numéro de projet (ID d’application)** que vous avez copié précédemment.
 
-    1. Upload the P12 **Certificate** file that you saved earlier.
+    1. Téléchargez le fichier de **certificat** P12 que vous avez enregistré précédemment.
 
     1. Entrez un **e-mail du compte d’administrateur** de votre administrateur G Suite.
 

@@ -18,7 +18,7 @@ ms.openlocfilehash: 5ae82c1acddf3bbf1ee711a108234d6b69cd8ee4
 ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74733714"
 ---
 # <a name="governing-connected-apps"></a>Gouvernance des applications connectées
@@ -128,7 +128,7 @@ Pour plus d’informations sur la façon dont les actions de gouvernance sont tr
 |Comptes |File |Transférer la possession de tous les fichiers | Dans un compte, vous transférez les fichiers d’un utilisateur vers un nouveau propriétaire que vous sélectionnez. L’ancien propriétaire devient éditeur et ne peut plus changer les paramètres de partage. Le nouveau propriétaire reçoit une notification du transfert de possession par e-mail. | G Suite|
 |Comptes, Stratégie d’activité | Compte | Suspendre l’utilisateur| Empêche tout accès et toute connexion de l’utilisateur. Si elles sont connectées lorsque vous définissez cette action, elles sont immédiatement verrouillées. |G Suite, Box, Office, Salesforce|
 |Stratégie d’activité, Comptes | Compte |Demander à l’utilisateur de se reconnecter|Révoque tous les jetons d’actualisation et les cookies de session émis aux applications par l’utilisateur. Cette action empêche l’accès aux données de l’organisation et force l’utilisateur à se connecter à toutes les applications.| G suite, Office|
-|Stratégie d’activité, Comptes | Compte |Confirmer que l’utilisateur a été compromis|Définissez le niveau de risque de l’utilisateur sur élevé. Cela entraîne l’application des actions de stratégie appropriées définies dans Azure AD. | Office |
+|Stratégie d’activité, Comptes | Compte |Confirmer que l’utilisateur est compromis|Définissez le niveau de risque de l’utilisateur sur élevé. Cela entraîne l’application des actions de stratégie appropriées définies dans Azure AD. | Office |
 |Stratégie d’activité, Comptes | Compte | Révoquer les privilèges administratifs |Révoque les privilèges d’un compte Administrateur. Par exemple, la définition d’une stratégie d’activité qui révoque les privilèges Administrateur après 10 échecs de tentative de connexion. | G Suite|
 |Tableau de bord de l’application > Autorisations d’applications |Autorisations|Annuler l’exclusion de l’application| Dans Google et Salesforce : supprimez l’exclusion de l’application et permettez aux utilisateurs d’accorder des autorisations à l’application tierce avec Google et Salesforce. Dans Office 365 : restaure les autorisations d’accès de l’application tierce à Office. |G Suite, Salesforce, Office |
 |Tableau de bord de l’application > Autorisations d’applications |Autorisations| Désactiver les autorisations d’application | Révoquez les autorisations d’accès d’une application tierce à Google, Salesforce ou Office. Il s’agit d’une seule action qui se produit sur toutes les autorisations existantes, mais qui n’empêche pas les connexions futures.|G Suite, Salesforce, Office |

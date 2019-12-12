@@ -14,10 +14,10 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.openlocfilehash: 62757b46f40127bb8d312435cd420fdb1e2f3865
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74458502"
 ---
 # <a name="docker-on-windows-on-premises"></a>Docker sur Windows en local
@@ -26,7 +26,7 @@ ms.locfileid: "74458502"
 
 Vous pouvez configurer le chargement automatique des journaux pour des rapports continus dans Cloud App Security à l’aide d’un Docker sur Windows.
 
-## <a name="prerequisites"></a>Conditions préalables requises
+## <a name="prerequisites"></a>Conditions préalables
 
 * Système d’exploitation : **Windows 10** (mise à jour des créateurs de automne) ou Windows Server **version 1709 +**
 
@@ -141,7 +141,7 @@ Vous devez voir le message **Opération terminée**
 
 ### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>Étape 3 : Configuration locale de vos appliances réseau
 
-Configurez vos pare-feu et proxys réseau pour exporter régulièrement les journaux vers le port Syslog dédié du répertoire FTP conformément aux instructions données dans la boîte de dialogue. Par exemple :
+Configurez vos pare-feu et proxys réseau pour exporter régulièrement les journaux vers le port Syslog dédié du répertoire FTP conformément aux instructions données dans la boîte de dialogue. Exemple :
 
 ```console
 BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\

@@ -14,10 +14,10 @@ ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: f7664685204a2d2f1965800119c946c85f2cbe49
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74460391"
 ---
 # <a name="azure-sentinel-integration-preview"></a>Intégration d’Azure Sentinel (version préliminaire)
@@ -44,7 +44,7 @@ L’intégration à votre serveur SIEM s’effectue en deux étapes :
 1. Configurez-le dans Cloud App Security.
 1. Configurez-le dans Azure Sentinel.
 
-### <a name="prerequisites"></a>Conditions préalables requises
+### <a name="prerequisites"></a>Conditions préalables
 
 Pour une intégration avec Azure Sentinel :
 
@@ -81,7 +81,7 @@ Dans Azure Sentinel, sous **journaux**, sous **Insights de sécurité**, vous tr
 | Type de données | Table |
 | --- | --- |
 | Journaux de découverte | McasShadowItReporting |
-| Alertes | SecurityAlert |
+| Alerts | SecurityAlert |
 
 Le tableau suivant décrit chaque champ dans le schéma **McasShadowItReporting** :
 
@@ -96,12 +96,12 @@ Le tableau suivant décrit chaque champ dans le schéma **McasShadowItReporting*
 | UploadedBytes | Entier | Quantité de données chargées | 1 514 874 |
 | TotalBytes | Entier | Quantité totale de données | 4 067 785 |
 | DownloadedBytes | Entier | Quantité de données téléchargées | 2 552 911 |
-| IpAddress | String | Adresse IP source | 127.0.0.0 |
+| IpAddress | String | Adresse IP source | 127.0.0.0 |
 | UserName | String | Nom d’utilisateur | `Raegan@contoso.com` |
 | EnrichedUserName | String | Nom d’utilisateur enrichi avec Azure AD nom d’utilisateur | `Raegan@contoso.com` |
-| AppName | String | Nom de l’application Cloud | Microsoft OneDrive entreprise |
+| AppName | String | Nom de l’application Cloud | Microsoft OneDrive Entreprise |
 | AppId | Entier | Identificateur d’application Cloud | 15600 |
-| AppCategory | String | Catégorie d’application Cloud | Stockage cloud |
+| AppCategory | String | Catégorie d’application Cloud | Stockage dans le cloud |
 | AppTags | Table de chaînes | Balises intégrées et personnalisées définies pour l’application | [« approuvé »] |
 | AppScore | Entier | Le score de risque de l’application dans une échelle de 0-10, 10 étant un score pour une application non risquée | 10 |
 | Type | String | Type de journaux – valeur statique | McasShadowItReporting |

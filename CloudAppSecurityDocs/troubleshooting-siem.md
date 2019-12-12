@@ -15,10 +15,10 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: f3726c218be879e93495fb11b117974180bd3da7
-ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74720816"
 ---
 # <a name="troubleshooting-the-siem-agent"></a>Résolution des problèmes de l’agent SIEM
@@ -60,7 +60,7 @@ Si vous avez reçu une alerte système concernant un problème de remise d’act
 4. Dans le portail, accédez à la page de l’agent SIEM, puis supprimez l’agent SIEM de récupération.
 5. Vérifiez que votre agent SIEM d’origine est toujours en cours d’exécution correctement.
 
-## <a name="general-troubleshooting"></a>Résolution des problèmes généraux
+## <a name="general-troubleshooting"></a>Résolution générale des problèmes
 
 Vérifiez que l’agent SIEM n’affiche pas l’état **Erreur de connexion** ou **Déconnecté** dans le portail Microsoft Cloud App Security et qu’il ne fait pas l’objet de notifications. Si la connexion est interrompue pendant plus de deux heures, l’état affiché est le suivant : **Erreur de connexion**. Si la connexion est interrompue depuis plus de 12 heures, l’état passe à **Déconnecté**.
 

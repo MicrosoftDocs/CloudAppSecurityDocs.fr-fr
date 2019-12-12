@@ -15,10 +15,10 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: b31876240187e3f95ff2a8d10632b54de37e6ed6
-ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74720758"
 ---
 # <a name="connect-workday-to-microsoft-cloud-app-security-preview"></a>Connecter un jour ouvré à Microsoft Cloud App Security (version préliminaire)
@@ -36,7 +36,7 @@ Le compte de jour de travail utilisé pour la connexion à Cloud App Security do
 | d'exploitation | Configuration : configuration du locataire – général | Configuration : configuration du client – sécurité | Afficher, modifier | Acquérir, put |
 | d'exploitation | Administration de la sécurité | | Afficher, modifier | Acquérir, put |
 | d'exploitation | Audit du système | | Affichez | Obtenir |
-| Effectifs | Données de travail : personnel | Données de travail : rapports de travail public | Affichez | Obtenir |
+| Effectifs | Données de travail : personnel | Worker Data: Public Worker Reports | Affichez | Obtenir |
 
 > [!NOTE]
 >

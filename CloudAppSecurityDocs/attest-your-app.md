@@ -15,10 +15,10 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: d28257e073227c34a81577558ac2e7c149e373b2
-ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74720423"
 ---
 # <a name="attest-your-app"></a>Attester votre application
@@ -38,14 +38,14 @@ Suivez les attributs de service décrits ci-dessous pour terminer avec succès l
 | Centre de données| Général | Tableau de codes de pays * | Fermer la liste-fourni dans le questionnaire (sélection multiple) | Le pays dans lequel se trouve votre centre de données (peut être plusieurs emplacements) |
 | Société d’hébergement | Général | String | Texte libre | Nom de la société qui fournit l’hébergement de serveur pour l’application. |
 | Doutes | Général | Entier | AAAA (pas plus de 2019) | Année de Fondation du fournisseur. |
-| Détenteur | Général | String | Privé, public | Indique si le fournisseur est une société publique ou privée |
+| Holding | Général | String | Privé, public | Indique si le fournisseur est une société publique ou privée |
 | Domaine d’application | Général | Tableau d’URL * | Texte libre | Liste des domaines utilisés pour interagir avec le service (par exemple, « teams.microsoft.com » pour Microsoft Teams) |
-| Conditions d’accès | Général | une adresse URL | Texte libre | Cette application fournit-elle un ensemble de réglementations que les utilisateurs doivent accepter de suivre pour pouvoir utiliser l’application ? |
+| Conditions d'utilisation | Général | une adresse URL | Texte libre | Cette application fournit-elle un ensemble de réglementations que les utilisateurs doivent accepter de suivre pour pouvoir utiliser l’application ? |
 | Politique de confidentialité | Général | une adresse URL | Texte libre | Lien vers un document juridiquement contraignant relatif à la façon dont ce fournisseur gère les informations sur les clients, les clients ou les employés rassemblées dans le cadre de l’application. |
 | URL de connexion | Général | Tableau d’URL * | Texte libre | URL via laquelle les utilisateurs se connectent à l’application. |
 | Fabricant | Général | String | Texte libre | Nom du fournisseur qui fournit cette application. |
 | Types de données | Général | String | Fermer la liste-fourni dans le questionnaire | Quels types de données peuvent être téléchargés par l’utilisateur vers l’application ?|
-| Homepage | Général | une adresse URL | Texte libre | URL de la page d’hébergement du fournisseur. |
+| Page d’accueil | Général | une adresse URL | Texte libre | URL de la page d’hébergement du fournisseur. |
 | Plan de récupération d’urgence | Général | Booléen | True, False | Cette application a-t-elle un plan de récupération d’urgence qui comprend une stratégie de sauvegarde et de restauration ? |
 | Dernière violation | Sécurité | Date | MMM-jj-aaaa | Incident le plus récent dans lequel les données sensibles, protégées ou confidentielles détenues par l’application ont été affichées, volées ou utilisées par un individu non autorisé à cette fin. |
 | Méthode de chiffrement des données au repos | Sécurité | String | Fermer la liste-fourni dans le questionnaire | Type de chiffrement des données au repos effectuées sur l’application. |
@@ -70,7 +70,7 @@ Suivez les attributs de service décrits ci-dessous pour terminer avec succès l
 | En-têtes de sécurité HTTP : X-XSS-protection | Sécurité | Booléen | True, False | Les en-têtes HTTP X-XSS-protection sont-ils implémentés par l’application sur son site Web ? |
 | Prend en charge SAML | Sécurité | Booléen | True, False | Cette application prend-elle en charge la norme SAML pour l’échange de données d’authentification et d’autorisation ? |
 | Protégé contre les NOYERs | Sécurité | Booléen | True, False | Les serveurs d’applications sont-ils protégés contre les attaques par noyer ? |
-| Test d’intrusion | Sécurité | Booléen | True, False | Cette application effectue-t-elle des tests d’intrusion pour détecter et évaluer les vulnérabilités du réseau ? |
+| Test d'intrusion | Sécurité | Booléen | True, False | Cette application effectue-t-elle des tests d’intrusion pour détecter et évaluer les vulnérabilités du réseau ? |
 | Nécessite l’authentification de l’utilisateur | Sécurité | Booléen | True, False | Cette application nécessite-t-elle une authentification et interdit l’utilisation anonyme ? |
 | Stratégie de mot de passe : limite de longueur du mot de passe | Sécurité | Booléen | True, False | Cette application applique-t-elle une longueur limite à la création du mot de passe ? |
 | Stratégie de mot de passe : combinaison de caractères | Sécurité | Booléen | True, False | Cette application applique-t-elle une combinaison de caractères lors de la création du mot de passe ? |
@@ -97,7 +97,7 @@ Suivez les attributs de service décrits ci-dessous pour terminer avec succès l
 | Niveau FedRAMP | Compatibilité | String | Élevé, modéré, faible, N/A | Niveau de la solution conforme à FedRAMP fournie par cette application. |
 | Niveau CSA STAR | Compatibilité | String | Auto-évaluation, certification, attestation, évaluation C-STAR, surveillance continue, N/A | Niveau du programme CSA STAR sur lequel l’application est certifiée |
 | Bouclier de protection des données | Compatibilité | Booléen | True, false, N/A | Cette application est-elle conforme à l’infrastructure de protection de la confidentialité UE-US, qui impose des obligations plus fortes aux entreprises américaines pour protéger les données personnelles des européens ? |
-| ISO 27017 | Compatibilité | Booléen | True, false, N/A | Cette application est-elle conforme à la norme ISO 27017, qui établit des contrôles et des recommandations couramment acceptés pour le traitement et la protection des informations utilisateur dans un environnement de Cloud Computing public ? |
+| ISO 27017 | Compatibilité | Booléen | True, false, N/A | Cette application est-elle conforme à la norme ISO 27017, qui établit des contrôles et des recommandations couramment acceptés pour le traitement et la protection des informations utilisateur dans un environnement de Cloud Computing public ? |
 | COBIT | Compatibilité | Booléen | True, false, N/A | Cette application est-elle conforme à COBIT, qui définit les meilleures pratiques pour la gouvernance et le contrôle des systèmes d’information et de la technologie, et l’aligne sur les principes de l’entreprise ? |
 | COPPA | Compatibilité | Booléen | True, false, N/A | Cette application est-elle conforme à la réglementation COPPA, qui définit les exigences relatives au site Web et aux opérateurs de services en ligne qui fournissent du contenu aux enfants âgés de moins de 13 ans ? |
 | FERPA | Compatibilité | Booléen | True, false, N/A | Cette application est-elle conforme à FERPA, une loi fédérale qui protège la confidentialité des dossiers de formation des élèves ? |

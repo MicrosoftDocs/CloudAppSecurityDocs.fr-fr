@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.service: cloud-app-security
 ms.collection: M365-security-compliance
 ms.openlocfilehash: 65237f7be2218dad16c09f3940ca53c478d022bc
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74461207"
 ---
 # <a name="connect-google-cloud-platform-to-microsoft-cloud-app-security-preview"></a>Se connecter Google Cloud Platform à Microsoft Cloud App Security (version préliminaire)
@@ -33,7 +33,7 @@ Cet article fournit des instructions pour connecter Microsoft Cloud App Security
 
 Nous vous recommandons d’utiliser un projet dédié pour l’intégration et de restreindre l’accès au projet pour maintenir une intégration stable et empêcher les suppressions/modifications du processus d’installation. En outre, si votre instance GCP fait partie d’une instance G suite déjà connectée à Cloud App Security, nous vous recommandons de suivre le **pour une instance GCP qui fait partie d’une procédure d’organisation g suite connectée** lorsque vous ajoutez les détails de connexion GCP.
 
-## <a name="prerequisites"></a>Conditions préalables requises
+## <a name="prerequisites"></a>Conditions préalables
 
 L’utilisateur GCP d’intégration doit disposer des autorisations suivantes :
 
@@ -74,7 +74,7 @@ Créer un projet dédié dans GCP dans le cadre de votre organisation pour perme
 1. Sous **iam & admin**, cliquez sur **IAM**.
 
     1. Basculez vers le niveau de l’organisation.
-    1. Cliquez sur **Ajouter**.
+    1. Cliquez sur **AJOUTER**.
     1. Dans la zone **nouveaux membres** , collez la valeur de l' **e-mail** que vous avez copiée précédemment.
     1. Spécifiez le **rôle** en tant que **writer de configuration des journaux** , puis cliquez sur **Enregistrer**.
 
@@ -136,7 +136,7 @@ Pour fournir les détails de connexion GCP, sous **connecteurs d’applications*
 
 ### <a name="test-the-connection"></a>Tester la connexion
 
-Vérifiez la connexion en cliquant sur **Test API** (Tester l’API).
+Vérifiez que la connexion a réussi en cliquant sur **Tester l’API**.
 
 Le test peut prendre quelques minutes. Quand il est terminé, vous recevez une notification de réussite ou d’échec. Une fois que vous avez reçu une notification de réussite, cliquez sur **Terminé**.
 

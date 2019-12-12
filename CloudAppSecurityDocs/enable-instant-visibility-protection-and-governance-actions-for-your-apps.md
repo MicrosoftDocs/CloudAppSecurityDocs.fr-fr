@@ -15,10 +15,10 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 0aa55a99017a1768bf58fd2c2a40688c1a5c95e6
-ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74720249"
 ---
 # <a name="connect-apps"></a>Connecter des applications
@@ -68,7 +68,7 @@ Le tableau suivant répertorie, par application cloud, les fonctionnalités pris
 
 > [!div class="mx-tableFixed"]
 >
-> | | AWS | Zone | Dropbox | GCP | G Suite | Office 365 | Okta | Service maintenant | Salesforce | WebEx | Workday |
+> | | AWS | Zone | Dropbox | GCP | G Suite | Office 365 | Okta | ServiceNow | Salesforce | WebEx | Workday |
 > |-|-|-|-|-|-|-|-|-|-|-|-|
 > | **Répertorier les comptes** | ✔ | ✔ | ✔ | Connexion de l’objet G suite | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 > | **Liste des groupes** | ✔ | ✔ | ✔ | Connexion de l’objet G suite | ✔ | ✔ | ✔ | ✔ | ✔ | | Non prise en charge par le fournisseur |

@@ -10,10 +10,10 @@ ms.service: cloud-app-security
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 405bdd5636bdcdf93dbfc858ecc6578d1a43c402
-ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74720903"
 ---
 # <a name="threat-protection-policies"></a>Stratégies de protection contre les menaces
@@ -224,7 +224,7 @@ Si une règle de boîte de réception suspecte a été définie sur la boîte de
 
 ## <a name="detect-leaked-credentials"></a>Détecter les informations d’identification divulguées
 
-Lorsque les cybercriminels compromettent les mots de passe valides des utilisateurs légitimes, ils partagent souvent ces informations d’identification. Cette opération est généralement effectuée en les publiant publiquement sur le Web foncé ou les sites de collage, ou en vendant les informations d’identification sur le marché noir.
+Lorsque les cybercriminels compromettent les mots de passe valides des utilisateurs légitimes, ils partagent souvent ces informations d’identification. En général, les mots de passe volés sont publiés sur le « dark web », ou bien ils sont échangés ou vendus sur le marché noir.
 
 Cloud App Security utilise l’intelligence des menaces de Microsoft pour faire correspondre ces informations d’identification à celles utilisées au sein de votre organisation.
 

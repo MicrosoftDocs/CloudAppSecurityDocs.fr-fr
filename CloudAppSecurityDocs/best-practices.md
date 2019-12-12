@@ -8,10 +8,10 @@ ms.topic: best-practice
 ms.date: 10/24/2019
 ms.collection: M365-security-compliance
 ms.openlocfilehash: e90a340c206c0bfb1c01542dd184664d1fe87dfe
-ms.sourcegitcommit: e434c19fbbb67cf70bbf70729d03e38b4779ce25
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74143445"
 ---
 # <a name="cloud-app-security-best-practices"></a>Meilleures pratiques en matière de Cloud App Security
@@ -186,7 +186,7 @@ Cloud App Security vous offre la possibilité d’examiner et de surveiller les 
 **Détail**: utilisez contrôle d’application par accès conditionnel pour définir des contrôles sur vos applications SaaS. Vous pouvez créer des stratégies de session pour surveiller vos sessions à risque élevé et faible niveau de confiance. De même, vous pouvez créer des stratégies de session pour bloquer et protéger les téléchargements par les utilisateurs qui essaient d’accéder à des données sensibles à partir d’appareils non gérés ou risqués. Si vous ne créez pas de stratégies de session pour surveiller les sessions à haut risque, vous perdez la possibilité de bloquer et de protéger les téléchargements dans le client Web, ainsi que la possibilité de surveiller la session de faible confiance dans les applications Microsoft et tierces.  
 **Pour plus d’informations**:
 
-* [Protéger les applications avec Microsoft Cloud App Security contrôle d’application par accès conditionnel](proxy-intro-aad.md)
+* [Protéger les applications avec le contrôle d’application par accès conditionnel de Microsoft Cloud App Security](proxy-intro-aad.md)
 * [Stratégies de session](session-policy-aad.md)
 
 ---
@@ -200,7 +200,7 @@ Cloud App Security vous offre la possibilité d’examiner et de surveiller les 
 **Détails**: pour sécuriser la collaboration dans votre environnement, vous pouvez créer une stratégie de session pour surveiller les sessions entre vos utilisateurs internes et externes. Cela vous permet non seulement de surveiller la session entre vos utilisateurs (et de les informer que leurs activités de session sont surveillées), mais également de limiter les activités spécifiques. Lorsque vous créez des stratégies de session pour surveiller l’activité, vous pouvez choisir les applications et les utilisateurs que vous souhaitez analyser.  
 **Pour plus d’informations**:
 
-* [Protéger les applications avec Microsoft Cloud App Security contrôle d’application par accès conditionnel](proxy-intro-aad.md)
+* [Protéger les applications avec le contrôle d’application par accès conditionnel de Microsoft Cloud App Security](proxy-intro-aad.md)
 * [Stratégies de session](session-policy-aad.md)
 
 ---

@@ -13,10 +13,10 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
 ms.openlocfilehash: a4d58378bc8502a9022f51d3794d3175df8596de
-ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74720865"
 ---
 # <a name="onboard-and-deploy-conditional-access-app-control-for-any-app"></a>Intégration et déploiement de contrôle d’application par accès conditionnel pour n’importe quelle application
@@ -187,6 +187,6 @@ Une fois que vous êtes prêt à activer l’application en vue de son utilisati
 > [Utilisation avec le Contrôle d’accès conditionnel aux applications de Cloud App Security](proxy-intro-aad.md)
 
 > [!div class="nextstepaction"]
-> [Déployer des contrôle d’application par accès conditionnel pour les applications proposées](proxy-deployment-aad.md)
+> [Déployer le contrôle d’application par accès conditionnel pour les applications proposées](proxy-deployment-aad.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

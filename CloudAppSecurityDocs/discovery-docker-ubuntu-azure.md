@@ -15,10 +15,10 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 1c058f817e4fffa4f40060ad0bc865bb6798e771
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74460813"
 ---
 # <a name="set-up-and-configuration-on-ubuntu-or-rhel-in-azure"></a>Installation et configuration sur Ubuntu ou RHEL dans Azure
@@ -27,7 +27,7 @@ ms.locfileid: "74460813"
 
 Vous pouvez configurer le chargement automatique de journaux pour des rapports continus dans Cloud App Security à l’aide de Docker sur Ubuntu ou Red Hat Enterprise Linux (RHEL) dans Azure. Cet article décrit comment configurer le chargement automatique des journaux.
 
-## <a name="prerequisites"></a>Conditions préalables requises
+## <a name="prerequisites"></a>Conditions préalables
 
 * Système d’exploitation : Ubuntu 14,04 et 16,04 (pour les versions plus récentes, contactez le support technique), RHEL 7,2 ou une version ultérieure, ou CentOS 7,2 ou version ultérieure
 
@@ -116,7 +116,7 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
     1. Accédez à **règles de sécurité de trafic entrant** , puis cliquez sur **Ajouter**, ![Ubuntu Azure](media/ubuntu-azure.png)
     1. Ajoutez les règles suivantes (en mode **Avancé**) :
 
-    |Nom|Plages du port de destination|Protocol|`Source`|Destination|
+    |Nom|Plages du port de destination|Protocol|Source|Destination|
     |----|----|----|----|----|
     |caslogcollector_ftp|21|TCP|<Sous-réseau d’adresse IP de votre appliance>|Indifférent|
     |caslogcollector_ftp_passive|20000-20099|TCP|<Sous-réseau d’adresse IP de votre appliance>|Indifférent|
@@ -155,7 +155,7 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
 
 ### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>Étape 3 : Configuration locale de vos appliances réseau
 
-Configurez vos pare-feu et proxys réseau pour exporter régulièrement les journaux vers le port Syslog dédié du répertoire FTP conformément aux instructions données dans la boîte de dialogue. Par exemple :
+Configurez vos pare-feu et proxys réseau pour exporter régulièrement les journaux vers le port Syslog dédié du répertoire FTP conformément aux instructions données dans la boîte de dialogue. Exemple :
 
 ```bash
 BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\

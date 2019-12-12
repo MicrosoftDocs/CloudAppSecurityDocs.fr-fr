@@ -15,10 +15,10 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 39b3721a2a19c59f7c8d1a1376aa54efee455f65
-ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74720467"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Protéger les applications avec le Contrôle d’accès conditionnel aux applications Microsoft Cloud App Security
@@ -170,7 +170,7 @@ Si vous êtes intéressé par une application spécifique, [envoyez-nous des inf
 ## <a name="next-steps"></a>Étapes suivantes
 
 > [!div class="nextstepaction"]
-> [Déployer des contrôle d’application par accès conditionnel pour les applications proposées](proxy-deployment-aad.md)
+> [Déployer le contrôle d’application par accès conditionnel pour les applications proposées](proxy-deployment-aad.md)
 
 > [!div class="nextstepaction"]
 > [Déployer des contrôle d’application par accès conditionnel pour n’importe quelle application»](proxy-deployment-any-app.md)

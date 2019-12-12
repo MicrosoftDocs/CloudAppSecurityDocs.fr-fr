@@ -15,10 +15,10 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: a63546a3404cdf4c48a56b800f5d80d09ee5971e
-ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74719348"
 ---
 # <a name="working-with-discovered-apps"></a>Utilisation des applications découvertes
@@ -99,7 +99,7 @@ Pour générer un rapport Cloud Discovery efficace :
 
 1. Dans le **tableau de bord Cloud Discovery**, cliquez sur les trois points dans l’angle supérieur droit du tableau de bord, puis sélectionnez **générer Cloud Discovery rapport exécutif**.
 1. Si vous le souhaitez, modifiez le nom du rapport.
-1. Cliquez sur **générer**.
+1. Cliquez sur **Generate**.
 
 ## <a name="exclude-entities"></a>Exclure des entités
 

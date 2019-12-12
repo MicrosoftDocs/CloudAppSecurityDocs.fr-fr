@@ -15,10 +15,10 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 9ea1b9524fe262bc6364e5150426622d4efddfbc
-ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74721081"
 ---
 # <a name="working-with-app-risk-scores"></a>Utilisation des scores de risque d’application
@@ -116,7 +116,7 @@ Prenez le temps de passer en revue et d’éventuellement modifier les pondérat
 
 3. De plus, vous pouvez déterminer si certaines valeurs sont soit non disponibles, soit non applicables dans le calcul du score. Quand elles sont incluses, les valeurs N/A contribuent négativement au score calculé.
 
-    ![enjeu](media/score.png "évaluer les métriques")
+    ![score](media/score.png "évaluer les métriques")
 
 Toutes les informations nécessaires pour comprendre le fonctionnement des indices de risque Cloud App Security et leur empilement sont disponibles dans le portail Cloud App Security. Pour mieux comprendre la pondération d’un facteur de risque dans une catégorie donnée, utilisez le bouton « i » à droite d’un nom de champ, dans le profil de l’application. Il fournit des informations sur la façon dont Cloud App Security note précisément un facteur de risque. Ce score correspond à la valeur du facteur de risque sur une échelle de 1 à 10 et à son poids dans la catégorie de risque :
 

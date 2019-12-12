@@ -14,10 +14,10 @@ ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 0a80b5fa980e8ece344ca39092293d5b820f604b
-ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74721010"
 ---
 # <a name="generic-siem-integration"></a>Intégration de SIEM générique
@@ -169,7 +169,7 @@ Le texte suivant est un exemple de fichier journal d’alertes :
 |    Activités     |           dvc            |                                             Adresse IP de l’appareil client                                             |
 |    Activités     | requestClientApplication |                                         Agent utilisateur de l’appareil client                                         |
 |      Alerts       |       type d’alerte \<       |                                  Par exemple « ALERT_CABINET_EVENT_MATCH_AUDIT »                                  |
-|      Alerts       |          nom de l' \<          |                                             Nom de la stratégie correspondante                                             |
+|      Alerts       |          \<name>          |                                             Nom de la stratégie correspondante                                             |
 |      Alerts       |        externalId        |                                                    ID de l’alerte                                                     |
 
 ### <a name="step-3-validate-that-the-siem-agent-is-working"></a>Étape 3 : Vérifiez que l’agent SIEM fonctionne
