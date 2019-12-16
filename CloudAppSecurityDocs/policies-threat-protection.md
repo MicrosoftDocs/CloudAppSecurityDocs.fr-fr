@@ -9,18 +9,21 @@ ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 405bdd5636bdcdf93dbfc858ecc6578d1a43c402
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 8e4932b8e96638f4b645ee48ddd694b3c121a9e1
+ms.sourcegitcommit: 362ec5187cb13f152d240b75ed1ecebb5236b0ee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720903"
+ms.lasthandoff: 12/15/2019
+ms.locfileid: "75033342"
 ---
 # <a name="threat-protection-policies"></a>Stratégies de protection contre les menaces
 
 *S’applique à : Microsoft Cloud App Security*
 
 Cloud App Security vous permet d’identifier les problèmes d’utilisation et de sécurité du Cloud à haut risque, de détecter un comportement anormal des utilisateurs et d’éviter les menaces dans vos applications Cloud approuvées. Bénéficiez d’une visibilité sur les activités des utilisateurs et des administrateurs et définissez des stratégies pour alerter automatiquement lorsque des comportements suspects ou des activités spécifiques que vous considérez comme risquées sont détectés. Sortez de la grande quantité de données de Microsoft Threat Intelligence et de la recherche de sécurité pour vous assurer que vos applications approuvées disposent de tous les contrôles de sécurité dont vous avez besoin et que vous pouvez en garder le contrôle.
+
+> [!NOTE]
+> Lors de l’intégration d’Cloud App Security avec Azure-protection avancée contre les menaces (Azure ATP), les stratégies de Azure ATP s’affichent également dans la page stratégies. Pour obtenir la liste des stratégies de Azure ATP, consultez [alertes de sécurité](https://docs.microsoft.com/azure-advanced-threat-protection/suspicious-activity-guide).
 
 ## <a name="detect-and-control-user-activity-from-unfamiliar-locations"></a>Détecter et contrôler l’activité des utilisateurs à partir d’emplacements inconnus
 

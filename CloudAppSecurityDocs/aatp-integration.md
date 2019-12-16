@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5636c6a0aa51d17847560a122248e625137840cb
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 2278a7a156525450c2ad4d8e75ee7a1aeb98fb0b
+ms.sourcegitcommit: 362ec5187cb13f152d240b75ed1ecebb5236b0ee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74460934"
+ms.lasthandoff: 12/15/2019
+ms.locfileid: "75033369"
 ---
 # <a name="azure-advanced-threat-protection-integration"></a>Intégration d’Azure-protection avancée contre les menaces
 
@@ -38,7 +38,7 @@ Pour procéder à un examen complet d’un utilisateur dans un environnement hyb
 >[!NOTE]
 >Si vous n’avez pas d’abonnement pour Microsoft Cloud App Security, vous pouvez toujours utiliser le portail Cloud App Security pour obtenir Azure ATP Insights.
 
-## <a name="enable-azure-advanced-threat-protection"></a>Activer Azure-protection avancée contre les menaces
+## <a name="enable-azure-atp"></a>Activer Azure ATP
 
 Pour activer l’intégration de Cloud App Security avec Azure ATP :
 
@@ -55,9 +55,9 @@ Pour activer l’intégration de Cloud App Security avec Azure ATP :
 > [!NOTE]
 > Cela peut prendre jusqu’à 12 heures jusqu’à ce que l’intégration prenne effet.
 
-Après l’activation de l’intégration d’Azure-protection avancée contre les menaces, vous pouvez voir les activités locales pour tous les utilisateurs de votre organisation. Vous obtiendrez également des Insights avancés sur vos utilisateurs qui combinent des alertes et des activités suspectes dans vos environnements Cloud et locaux.
+Après l’activation de l’intégration de Azure ATP, vous pouvez voir les activités locales pour tous les utilisateurs de votre organisation. Vous obtiendrez également des Insights avancés sur vos utilisateurs qui combinent des alertes et des activités suspectes dans vos environnements Cloud et locaux. En outre, les stratégies de Azure ATP s’affichent sur la page stratégies Cloud App Security. Pour obtenir la liste des stratégies de Azure ATP, consultez [alertes de sécurité](https://docs.microsoft.com/azure-advanced-threat-protection/suspicious-activity-guide).
 
-## <a name="disable-azure-advanced-threat-protection"></a>Désactiver Azure-protection avancée contre les menaces
+## <a name="disable-azure-atp"></a>Désactiver les Azure ATP
 
 Pour désactiver l’intégration Cloud App Security avec Azure ATP :
 
