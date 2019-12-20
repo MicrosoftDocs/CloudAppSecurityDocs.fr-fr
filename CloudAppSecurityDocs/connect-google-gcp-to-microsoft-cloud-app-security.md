@@ -9,18 +9,18 @@ ms.date: 10/16/2019
 ms.topic: conceptual
 ms.service: cloud-app-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 65237f7be2218dad16c09f3940ca53c478d022bc
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: e03f24023968d9e3169aef8636061b8adf05d646
+ms.sourcegitcommit: db5ec79d219dd6674939c872ace7cd2ca80860a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74461207"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75189738"
 ---
 # <a name="connect-google-cloud-platform-to-microsoft-cloud-app-security-preview"></a>Se connecter Google Cloud Platform à Microsoft Cloud App Security (version préliminaire)
 
 *S’applique à : Microsoft Cloud App Security*
 
-Cet article fournit des instructions pour connecter Microsoft Cloud App Security à votre compte Google Cloud Platform existant (GCP) à l’aide des API du connecteur. Cette connexion vous donne une visibilité et un contrôle sur l’utilisation de GCP.
+Cet article fournit des instructions pour connecter Microsoft Cloud App Security à votre compte Google Cloud Platform existant (GCP) à l’aide des API du connecteur. Cette connexion vous donne une visibilité et un contrôle sur l’utilisation de GCP. Pour plus d’informations sur la façon dont Cloud App Security protège les GCP, consultez [protéger GCP](protect-gcp.md).
 
 > [!NOTE]
 > Les instructions pour connecter votre environnement GCP suivent les [recommandations de Google pour la](https://cloud.google.com/blog/products/gcp/best-practices-for-working-with-google-cloud-audit-logging) consommation des journaux agrégés. L’intégration s’appuie sur Google StackDriver et consomme des ressources supplémentaires susceptibles d’avoir un impact sur votre facturation. Les ressources consommées sont les suivantes :
@@ -74,7 +74,7 @@ Créer un projet dédié dans GCP dans le cadre de votre organisation pour perme
 1. Sous **iam & admin**, cliquez sur **IAM**.
 
     1. Basculez vers le niveau de l’organisation.
-    1. Cliquez sur **AJOUTER**.
+    1. Cliquez sur **Ajouter**.
     1. Dans la zone **nouveaux membres** , collez la valeur de l' **e-mail** que vous avez copiée précédemment.
     1. Spécifiez le **rôle** en tant que **writer de configuration des journaux** , puis cliquez sur **Enregistrer**.
 

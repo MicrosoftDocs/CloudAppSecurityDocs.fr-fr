@@ -14,18 +14,18 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 542f3e37a7b5446b72d0be0dca273bb115339880
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: f688c4ab78fc366518146e761cc01e2edfe5dc30
+ms.sourcegitcommit: db5ec79d219dd6674939c872ace7cd2ca80860a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74656680"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75189721"
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>Connecter G Suite à Microsoft Cloud App Security
 
 *S’applique à : Microsoft Cloud App Security*
 
-Cet article fournit des instructions pour connecter Microsoft Cloud App Security à votre compte G Suite existant à l’aide des API du connecteur. Cette connexion vous permet de bénéficier de plus de visibilité et de contrôle lors de l’utilisation de G Suite.
+Cet article fournit des instructions pour connecter Microsoft Cloud App Security à votre compte G Suite existant à l’aide des API du connecteur. Cette connexion vous permet de bénéficier de plus de visibilité et de contrôle lors de l’utilisation de G Suite. Pour plus d’informations sur la façon dont Cloud App Security protège G suite, consultez [protéger g suite](protect-gsuite.md).
 
 ## <a name="configure-g-suite"></a>Configurer G Suite
 
@@ -79,7 +79,7 @@ Cet article fournit des instructions pour connecter Microsoft Cloud App Security
 
     ![Informations d’identification Google](media/google7.png)
 
-1. Pour **compte de service**, choisissez **nouveau compte de service**, puis entrez un nom pour le compte, par exemple compte de **service 1**. Sous **Role** (Rôle), choisissez **Project** (Projet), puis **Editor** (Éditeur). Sous **Key type (Type de clé)** , choisissez **P12** et cliquez sur **Create (Créer)** . Un fichier de certificat P12 est enregistré sur votre ordinateur.
+1. Pour **compte de service**, choisissez **nouveau compte de service**, puis entrez un nom pour le compte, par exemple compte de **service 1**. Sous **Role** (Rôle), choisissez **Project** (Projet), puis **Editor** (Éditeur). Sous **Key type (Type de clé)**, choisissez **P12** et cliquez sur **Create (Créer)**. Un fichier de certificat P12 est enregistré sur votre ordinateur.
 
     ![Créer une clé de compte de service dans Google](media/google9.png)
 
@@ -87,7 +87,7 @@ Cet article fournit des instructions pour connecter Microsoft Cloud App Security
 
     ![Compte de service des informations d’identification G suite](media/google10.png)
 
-1. Cliquez sur les points de suspension à droite du compte de service que vous avez créé et sélectionnez **Edit (Modifier)** .
+1. Cliquez sur les points de suspension à droite du compte de service que vous avez créé et sélectionnez **Edit (Modifier)**.
 
     ![modification Google](media/google11.png "modification Google")
 
@@ -96,9 +96,9 @@ Cet article fournit des instructions pour connecter Microsoft Cloud App Security
     ![ID client Google](media/google12.png "google12")
 
     1. Copiez l' **ID client** . vous en aurez besoin plus tard.
-    ![gérer l’accès client des API](media/google12-2.png "google12-2»)
+    ![gérer l’accès client des API](media/google12-2.png "google12-2")
 
-    1. Cliquez sur **ENREGISTRER**
+    1. Cliquez sur **Enregistrer**
 
     1. Accédez à [admin.google.com](https://admin.google.com/), puis choisissez **Sécurité**.
 
@@ -109,7 +109,7 @@ Cet article fournit des instructions pour connecter Microsoft Cloud App Security
     1. Dans la zone **une ou plusieurs étendues d’API** , entrez la liste suivante des étendues requises (copiez le texte et collez-le dans la zone) :  
 `https://www.googleapis.com/auth/admin.reports.audit.readonly,https://www.googleapis.com/auth/admin.reports.usage.readonly,https://www.googleapis.com/auth/drive,https://www.googleapis.com/auth/drive.appdata,https://www.googleapis.com/auth/drive.apps.readonly,https://www.googleapis.com/auth/drive.file,https://www.googleapis.com/auth/drive.metadata.readonly,https://www.googleapis.com/auth/drive.readonly,https://www.googleapis.com/auth/drive.scripts,https://www.googleapis.com/auth/admin.directory.user.readonly,https://www.googleapis.com/auth/admin.directory.user.security,https://www.googleapis.com/auth/admin.directory.user.alias,https://www.googleapis.com/auth/admin.directory.orgunit,https://www.googleapis.com/auth/admin.directory.notifications,https://www.googleapis.com/auth/admin.directory.group.member,https://www.googleapis.com/auth/admin.directory.group,https://www.googleapis.com/auth/admin.directory.device.mobile.action,https://www.googleapis.com/auth/admin.directory.device.mobile,https://www.googleapis.com/auth/admin.directory.user`
 
-    1. Cliquez sur **Autoriser**.
+    1. Cliquez sur **autoriser**.
 
 1. Dans le [Google Cloud Platform](https://console.cloud.google.com/), sélectionnez Menu et accédez à **api et services** > **tableau de bord**.
 
@@ -124,7 +124,7 @@ Cet article fournit des instructions pour connecter Microsoft Cloud App Security
 
     * Google vous demande de charger au moins une icône d’application. Accédez à [ https://go.microsoft.com/fwlink/?linkid=862826 ](https://go.microsoft.com/fwlink/?linkid=862826) pour télécharger un fichier zip contenant les icônes de Cloud App Security. Ensuite, sous **Icône de l’application**, cliquez sur **Sélectionner** en regard de l’image 128 x 128 et faites-la glisser jusqu’à la fenêtre contextuelle. Cliquez sur **Sélectionner** en regard de l’image 32 x 32 et faites-la glisser jusqu’à la fenêtre contextuelle.
 
-    * Faites défiler vers le dessous, puis dans la section **intégration de lecteur** , tapez l’URL suivante sous **ouvrir l’url :** 
+    * Faites défiler vers le dessous, puis dans la section **intégration de lecteur** , tapez l’URL suivante sous **ouvrir l’url :**
     `https://portal.cloudappsecurity.com/#/services/11770?tab=files`
 
     ![Modifier Google Drive](media/google15.png)
@@ -146,7 +146,7 @@ Dans **Application description** (Description de l’application), tapez « Mic
 
     * Désactivez la case à cocher **activer l’installation individuelle** .
 
-    * Configurez les quatre images obligatoires sous **Application icons (Icônes de l’application)** .
+    * Configurez les quatre images obligatoires sous **Application icons (Icônes de l’application)**.
 
     Vous trouverez les images sur :  [https://go.microsoft.com/fwlink/?linkid=862826](https://go.microsoft.com/fwlink/?linkid=862826)
 
@@ -178,7 +178,7 @@ Dans **Application description** (Description de l’application), tapez « Mic
 `https://www.googleapis.com/auth/admin.directory.user`
 
     * Sous **Visibilité**, sélectionnez **Mon domaine** (et non pas public).
-    * Cliquez sur **Save Changes (Enregistrer les modifications)** .
+    * Cliquez sur **Save Changes (Enregistrer les modifications)**.
         ![Google Visibility](media/google-visibility.png)
 1. Dans la console d’administration Google, accédez à [gérer l’application Access Control](https://admin.google.com/). Recherchez la ligne **administrateur G suite** et vérifiez qu’elle dispose d’un accès **illimité** .
 

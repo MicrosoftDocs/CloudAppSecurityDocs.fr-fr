@@ -14,18 +14,18 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a1af86b66387d8bb4274c48e5b1ab0e449ed1aed
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 2606263d1a033d09116111d08ed7f69c96814f68
+ms.sourcegitcommit: db5ec79d219dd6674939c872ace7cd2ca80860a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74719219"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75189772"
 ---
 # <a name="connect-servicenow-to-microsoft-cloud-app-security"></a>Connecter ServiceNow à Microsoft Cloud App Security
 
 *S’applique à : Microsoft Cloud App Security*
 
-Cet article fournit des instructions pour connecter Microsoft Cloud App Security à un compte ServiceNow existant à l’aide de l’API de connecteur d’applications. Cette connexion vous permet de bénéficier de plus de visibilité et de contrôle lors de l’utilisation de ServiceNow.
+Cet article fournit des instructions pour connecter Microsoft Cloud App Security à un compte ServiceNow existant à l’aide de l’API de connecteur d’applications. Cette connexion vous permet de bénéficier de plus de visibilité et de contrôle lors de l’utilisation de ServiceNow. Pour plus d’informations sur la façon dont Cloud App Security protège les ServiceNow, consultez [protéger ServiceNow](protect-servicenow.md).
 
 > [!NOTE]
 > Nous vous recommandons de déployer ServiceNow à l’aide de jetons d’application OAuth, disponibles pour Fuji et versions ultérieures (consultez la [documentation ServiceNow](https://wiki.servicenow.com/index.php?title=OAuth_Applications#gsc.tab=0) appropriée).

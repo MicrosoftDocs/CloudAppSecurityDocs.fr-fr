@@ -14,18 +14,18 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9bd1b5af5d57327434874d7b7694cea1cad397dc
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: eb3ddf8c4bb35f00c8e43f52c8cf2f8850a94e15
+ms.sourcegitcommit: db5ec79d219dd6674939c872ace7cd2ca80860a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720220"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75189687"
 ---
 # <a name="connect-box-to-microsoft-cloud-app-security"></a>Connecter Box à Microsoft Cloud App Security
 
 *S’applique à : Microsoft Cloud App Security*
 
-Cet article fournit des instructions pour connecter Microsoft Cloud App Security à votre compte Box existant à l’aide des API du connecteur d’applications. Cette connexion vous permet de bénéficier de plus de visibilité et de contrôle lors de l’utilisation de Box.
+Cet article fournit des instructions pour connecter Microsoft Cloud App Security à votre compte Box existant à l’aide des API du connecteur d’applications. Cette connexion vous permet de bénéficier de plus de visibilité et de contrôle lors de l’utilisation de Box. Pour plus d’informations sur la façon dont Cloud App Security protège la boîte, consultez [protection Box](protect-box.md).
 
 ## <a name="how-to-connect-box-to-cloud-app-security"></a>Comment connecter Box à Cloud App Security
 

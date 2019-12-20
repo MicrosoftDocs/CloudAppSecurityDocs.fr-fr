@@ -14,18 +14,18 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 89a14c0fa629a0affd9fde58b1faf4c3716de143
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 2bf213f483e9ba29004c57952ae36ea058a4e077
+ms.sourcegitcommit: db5ec79d219dd6674939c872ace7cd2ca80860a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74719534"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75189636"
 ---
 # <a name="connect-aws-to-microsoft-cloud-app-security"></a>Connecter AWS à Microsoft Cloud App Security
 
 *S’applique à : Microsoft Cloud App Security*
 
-Cet article fournit des instructions pour connecter votre compte Amazon Web Services (AWS) existant à Microsoft Cloud App Security à l’aide des API du connecteur.
+Cet article fournit des instructions pour connecter votre compte Amazon Web Services (AWS) existant à Microsoft Cloud App Security à l’aide des API du connecteur. Pour plus d’informations sur la façon dont Cloud App Security protège AWS, consultez [protéger AWS](protect-aws.md).
 
 Vous pouvez connecter l’un des deux AWS suivants au Cloud App Security connexions suivantes :
 

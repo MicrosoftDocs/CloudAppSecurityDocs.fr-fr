@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 11/20/2019
+ms.date: 12/19/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,29 +14,28 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2278a7a156525450c2ad4d8e75ee7a1aeb98fb0b
-ms.sourcegitcommit: 362ec5187cb13f152d240b75ed1ecebb5236b0ee
+ms.openlocfilehash: c38ccba7b6d9729ebdd80f005d9630270726d209
+ms.sourcegitcommit: d493fc811a68387398615ff6288a300bb1f0fce7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2019
-ms.locfileid: "75033369"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75310393"
 ---
 # <a name="azure-advanced-threat-protection-integration"></a>Intégration d’Azure-protection avancée contre les menaces
 
-*S’applique à : Microsoft Cloud App Security*
-
-Microsoft Cloud App Security s’intègre à Azure-protection avancée contre les menaces (Azure ATP) pour fournir une analyse comportementale des entités utilisateur (UEBA) dans un environnement hybride (à la fois une application Cloud et une application en local). pour plus d’informations, consultez [Didacticiel : examiner les utilisateurs à risque](tutorial-ueba.md) pour plus d’informations sur les machine learning et l’analyse comportementale fournis par [Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)Azure ATP
+*S’applique à : Microsoft Cloud App Security* git Microsoft Cloud App Security s’intègre à Azure-protection avancée contre les menaces (Azure ATP) pour fournir l’analyse comportementale des entités utilisateur (UEBA) dans un environnement hybride (à la fois l’application Cloud et l’application locale). pour plus d’informations, consultez [Didacticiel : examiner les utilisateurs à risque](tutorial-ueba.md). Pour plus d’informations sur les Machine Learning et l’analyse comportementale fournis par Azure ATP, consultez [qu’est-ce que Azure ATP ?](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)
 
 ## <a name="prerequisites"></a>Conditions préalables
 
 Pour procéder à un examen complet d’un utilisateur dans un environnement hybride, les éléments suivants sont nécessaires :
 
 - Licence valide pour Azure ATP connectée à votre instance Active Directory
-- Vous devez être administrateur général pour activer l’intégration entre Azure ATP et Microsoft Cloud App Security
-- Si vous n’avez pas Azure ATP, essayez-le maintenant
+- Vous devez être un administrateur général Azure Active Directory pour permettre l’intégration entre Azure ATP et Cloud App Security
 
->[!NOTE]
->Si vous n’avez pas d’abonnement pour Microsoft Cloud App Security, vous pouvez toujours utiliser le portail Cloud App Security pour obtenir Azure ATP Insights.
+> [!NOTE]
+>
+> - Si vous n’avez pas d’abonnement pour Microsoft Cloud App Security, vous serez toujours en mesure d’utiliser Cloud App Security pour obtenir Azure ATP Insights.
+> - Azure ATP administrateurs peuvent avoir besoin de nouvelles autorisations pour accéder à Cloud App Security. Pour savoir comment assigner des autorisations à des Cloud App Security, consultez [gérer l’accès administrateur](manage-admins.md).
 
 ## <a name="enable-azure-atp"></a>Activer Azure ATP
 
@@ -44,7 +43,7 @@ Pour activer l’intégration de Cloud App Security avec Azure ATP :
 
 1. Dans Cloud App Security, sous l’roue dentée paramètres, sélectionnez **paramètres**.
 
-   ![menu Paramètres](media/azip-system-settings.png)
+    ![Menu paramètres](media/azip-system-settings.png)
 
 1. Sous **protection contre les menaces**, sélectionnez **Azure ATP**.
 

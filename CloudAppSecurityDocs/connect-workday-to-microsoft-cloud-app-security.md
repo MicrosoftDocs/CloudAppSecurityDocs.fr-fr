@@ -14,18 +14,18 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b31876240187e3f95ff2a8d10632b54de37e6ed6
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 697e0bf88d8373faa050c82f5c9e659df6310706
+ms.sourcegitcommit: db5ec79d219dd6674939c872ace7cd2ca80860a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720758"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75189789"
 ---
 # <a name="connect-workday-to-microsoft-cloud-app-security-preview"></a>Connecter un jour ouvré à Microsoft Cloud App Security (version préliminaire)
 
 *S’applique à : Microsoft Cloud App Security*
 
-Cet article fournit des instructions pour connecter Microsoft Cloud App Security à votre compte de jour de travail existant à l’aide de l’API du connecteur d’applications. Cette connexion vous donne une visibilité et un contrôle sur l’utilisation des jours de travail.
+Cet article fournit des instructions pour connecter Microsoft Cloud App Security à votre compte de jour de travail existant à l’aide de l’API du connecteur d’applications. Cette connexion vous donne une visibilité et un contrôle sur l’utilisation des jours de travail. Pour plus d’informations sur la façon dont Cloud App Security protège la journée de travail, consultez [protéger la journée de travail](protect-workday.md).
 
 ## <a name="prerequisites"></a>Conditions préalables
 
@@ -36,7 +36,7 @@ Le compte de jour de travail utilisé pour la connexion à Cloud App Security do
 | d'exploitation | Configuration : configuration du locataire – général | Configuration : configuration du client – sécurité | Afficher, modifier | Acquérir, put |
 | d'exploitation | Administration de la sécurité | | Afficher, modifier | Acquérir, put |
 | d'exploitation | Audit du système | | Affichez | Obtenir |
-| Effectifs | Données de travail : personnel | Worker Data: Public Worker Reports | Affichez | Obtenir |
+| Effectifs | Données de travail : personnel | Données de travail : rapports de travail public | Affichez | Obtenir |
 
 > [!NOTE]
 >
