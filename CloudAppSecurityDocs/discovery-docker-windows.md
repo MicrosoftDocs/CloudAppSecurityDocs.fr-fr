@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 62757b46f40127bb8d312435cd420fdb1e2f3865
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 7f436f36b5ab41b8b952dca7dc2534611eb8401a
+ms.sourcegitcommit: 010725c70ff7b3fc9abdad92203eec6e72bb7473
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74458502"
+ms.lasthandoff: 12/26/2019
+ms.locfileid: "75492101"
 ---
 # <a name="docker-on-windows-on-premises"></a>Docker sur Windows en local
 
@@ -26,9 +26,9 @@ ms.locfileid: "74458502"
 
 Vous pouvez configurer le chargement automatique des journaux pour des rapports continus dans Cloud App Security à l’aide d’un Docker sur Windows.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Configuration requise
 
-* Système d’exploitation : **Windows 10** (mise à jour des créateurs de automne) ou Windows Server **version 1709 +**
+* Système d’exploitation : **Windows 10** (mise à jour des créateurs de automne), Windows Server **version 1709 +** (sac) ou **Windows Server 2019 (LTSC)**
 
 * Espace disque : 250 Go
 
@@ -141,7 +141,7 @@ Vous devez voir le message **Opération terminée**
 
 ### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>Étape 3 : Configuration locale de vos appliances réseau
 
-Configurez vos pare-feu et proxys réseau pour exporter régulièrement les journaux vers le port Syslog dédié du répertoire FTP conformément aux instructions données dans la boîte de dialogue. Exemple :
+Configurez vos pare-feu et proxys réseau pour exporter régulièrement les journaux vers le port Syslog dédié du répertoire FTP conformément aux instructions données dans la boîte de dialogue. Exemple :
 
 ```console
 BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\

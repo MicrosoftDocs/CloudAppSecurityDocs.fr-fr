@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: db16695ffa6cc9c20d04616553256cba95de1550
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: c5d4132dd88f8bf7364a77ee8a3e282c1af7fa02
+ms.sourcegitcommit: 010725c70ff7b3fc9abdad92203eec6e72bb7473
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720524"
+ms.lasthandoff: 12/26/2019
+ms.locfileid: "75492086"
 ---
 # <a name="enable-the-log-collector-behind-a-proxy"></a>Activer le collecteur de journaux derrière un proxy
 
@@ -60,16 +60,16 @@ docker cp Proxy-CA.crt Ubuntu-LogCollector:/var/adallom/ftp/discovery
     docker exec -it Ubuntu-LogCollector /bin/bash
     ```
 
-2. À partir de bash dans le conteneur, accédez au répertoire jre Java. Pour éviter une erreur de chemin liée à la version, utilisez la commande suivante :
+2. À partir de l’bash dans le conteneur, accédez au dossier Java *JRE* . Pour éviter une erreur de chemin liée à la version, utilisez la commande suivante :
 
     ```bash
     cd 'find /opt/jdk/*/jre -iname bin'
     ```
 
-3. Importez le certificat racine, que vous avez copié précédemment, à partir du dossier *discovery* dans le magasin de clés Java et définissez un mot de passe. Le mot de passe par défaut est « changeit » :
+3. Importez le certificat racine que vous avez copié précédemment, à partir du dossier de *découverte* dans le magasin de clés Java et définissez un mot de passe. Le mot de passe par défaut est « changeit ». Pour plus d’informations sur la modification du mot de passe, consultez [Comment modifier le mot de passe du magasin de clés Java](#how-to-change-the-java-keystore-password).
 
     ```bash
-    ./keytool --import --noprompt --trustcacerts --alias SelfSignedCert --file /var/adallom/ftp/discovery/Proxy-CA.crt --keystore ../lib/security/cacerts --storepass changeit
+    ./keytool --import --noprompt --trustcacerts --alias SelfSignedCert --file /var/adallom/ftp/discovery/Proxy-CA.crt --keystore ../lib/security/cacerts --storepass <password>
     ```
 
 4. Confirmez que le certificat a été importé correctement dans le magasin de clés d’autorité de certification, en utilisant la commande suivante pour rechercher l’alias que vous avez fourni lors de l’importation (*SelfSignedCert*) :
@@ -104,6 +104,34 @@ Le collecteur de journaux est désormais en mesure de communiquer avec Cloud App
 
 >[!NOTE]
 > Si vous devez mettre à jour la configuration du collecteur de journaux, pour ajouter ou supprimer une source de données, par exemple, vous devez normalement **supprimer** le conteneur et effectuer de nouveau les étapes précédentes. Pour éviter cela, vous pouvez réexécuter l’outil *collector_config* avec le nouveau jeton d’API généré dans le portail Cloud App Security.
+
+## <a name="how-to-change-the-java-keystore-password"></a>Modification du mot de passe du magasin de clés Java
+
+1. Arrêtez le serveur keystore Java.
+1. Ouvrez un interpréteur de commandes bash dans le conteneur et accédez au dossier *AppData/conf* .
+1. Modifiez le mot de passe du magasin de clés du serveur à l’aide de la commande suivante :
+
+    ```bash
+    keytool -storepasswd -new newStorePassword -keystore server.keystore
+    -storepass changeit
+    ```
+
+    > [!NOTE]
+    > Le mot de passe du serveur par défaut est *changeit*.
+
+1. Modifiez le mot de passe du certificat à l’aide de la commande suivante :
+
+    ```bash
+    keytool -keypasswd -alias server -keypass changeit -new newKeyPassword -keystore server.keystore -storepass newStorePassword
+    ```
+
+    > [!NOTE]
+    > L’alias de serveur par défaut est *Server*.
+
+1. Dans un éditeur de texte, ouvrez le fichier *Server-install\conf\server\secured-installed.Properties* , puis ajoutez les lignes de code suivantes, puis enregistrez les modifications :
+    1. Spécifiez le nouveau mot de passe du magasin de clés Java pour le serveur : `server.keystore.password=newStorePassword`
+    1. Spécifiez le nouveau mot de passe du certificat pour le serveur : `server.key.password=newKeyPassword`
+1. Démarrez le serveur.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

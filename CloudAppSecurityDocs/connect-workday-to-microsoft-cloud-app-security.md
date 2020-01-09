@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 9/8/2019
+ms.date: 12/31/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 697e0bf88d8373faa050c82f5c9e659df6310706
-ms.sourcegitcommit: db5ec79d219dd6674939c872ace7cd2ca80860a4
+ms.openlocfilehash: 3b69525ff6db246a48fa639274c8e9dc8295f360
+ms.sourcegitcommit: 904407680e8657c6b83f8240abefeb66703e8807
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75189789"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75553666"
 ---
 # <a name="connect-workday-to-microsoft-cloud-app-security-preview"></a>Connecter un jour ouvré à Microsoft Cloud App Security (version préliminaire)
 
@@ -27,16 +27,24 @@ ms.locfileid: "75189789"
 
 Cet article fournit des instructions pour connecter Microsoft Cloud App Security à votre compte de jour de travail existant à l’aide de l’API du connecteur d’applications. Cette connexion vous donne une visibilité et un contrôle sur l’utilisation des jours de travail. Pour plus d’informations sur la façon dont Cloud App Security protège la journée de travail, consultez [protéger la journée de travail](protect-workday.md).
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="quick-start"></a>Démarrage rapide
+
+Regardez notre vidéo de démarrage rapide qui montre comment configurer les composants requis et effectuer les étapes de la journée de travail. Une fois que vous avez terminé les étapes de la vidéo, vous pouvez [Ajouter le connecteur de la journée de travail](#add-connector).
+
+<br />
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4n1ZO]
+
+## <a name="prerequisites"></a>Configuration requise
 
 Le compte de jour de travail utilisé pour la connexion à Cloud App Security doit être membre d’un groupe de sécurité (nouveau ou existant). Nous vous recommandons d’utiliser un utilisateur système d’intégration de jours ouvrables. Les autorisations suivantes doivent être sélectionnées pour le groupe de sécurité pour les stratégies de sécurité de domaine suivantes :
 
 | Zone fonctionnelle | Stratégie de sécurité du domaine | Stratégie de sécurité des sous-domaines | Autorisations de rapport/tâche | Autorisations d'intégration |
 | --- | --- | --- | --- | --- |
-| d'exploitation | Configuration : configuration du locataire – général | Configuration : configuration du client – sécurité | Afficher, modifier | Acquérir, put |
-| d'exploitation | Administration de la sécurité | | Afficher, modifier | Acquérir, put |
-| d'exploitation | Audit du système | | Affichez | Obtenir |
-| Effectifs | Données de travail : personnel | Données de travail : rapports de travail public | Affichez | Obtenir |
+| System | Configuration : configuration du locataire – général | Configuration : configuration du client – sécurité | Afficher, modifier | Acquérir, put |
+| System | Administration de la sécurité | | Afficher, modifier | Acquérir, put |
+| System | Audit du système | | Affichez | Obtenir |
+| Effectifs | Données de travail : personnel | Worker Data: Public Worker Reports | Affichez | Obtenir |
 
 > [!NOTE]
 >
@@ -60,7 +68,7 @@ Pour plus d’informations sur la configuration des utilisateurs d’intégratio
 
 1. Dans la page **inscrire le client** de l’API, renseignez les informations suivantes, puis cliquez sur **OK**.
 
-    | Nom de champ | Value |
+    | Nom de champ | valeur |
     | ---- | ---- |
     | Nom du client | Microsoft Cloud App Security |
     | Type d’octroi client | Octroi de code d’autorisation |
@@ -81,7 +89,7 @@ Pour plus d’informations sur la configuration des utilisateurs d’intégratio
 
     ![Capture d’écran de confirmation de l’inscription de l’API client](media/connect-workday-register-api-client-confirm.png)
 
-1. Dans le portail Cloud App Security, cliquez sur **examiner** , puis sur **applications connectées**.
+1. <a name="add-connector"></a>Dans le portail Cloud App Security, cliquez sur **examiner** , puis sur **applications connectées**.
 
 1. Dans la page **connecteurs d’application** , cliquez sur le bouton plus, puis sur jour de **travail**.
 
