@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 11/06/2019
+ms.date: 12/12/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 43ab4126445f8f0ef36c88253c93d8b89bfa4eda
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: bc95cb2272d996752c60c49c7f7402550325b208
+ms.sourcegitcommit: 6fd61d5f0953a5c1fc752091203b7dd0712f0cb3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720744"
+ms.lasthandoff: 12/24/2019
+ms.locfileid: "75333268"
 ---
 # <a name="govern-discovered-apps"></a>Gouverner les applications découvertes
 
@@ -38,7 +38,7 @@ Si vous voulez approuver/ne pas approuver une liste d’applications, cochez les
 Pour interroger une liste d’applications non approuvées, vous pouvez [générer un script de bloc en utilisant les API Cloud App Security](https://us.portal.cloudappsecurity.com/api-docs/#generate-block-script).
 
 > [!NOTE]
-> Si votre locataire utilise Zscaler NSS ou iboss, toute application que vous marquez comme non approuvée est automatiquement bloquée par Cloud App Security, et les sections suivantes relatives à la création de scripts de blocage ne sont pas nécessaires. Pour plus d’informations, consultez [intégration de avec Zscaler](zscaler-integration.md) et [intégration de Cloud App Security avec iboss](iboss-integration.md) , respectivement.
+> Si votre locataire utilise Microsoft Defender-protection avancée contre les menaces (ATP), Zscaler NSS ou iboss, toute application que vous marquez comme non approuvée est automatiquement bloquée par Cloud App Security, et les sections suivantes relatives à la création de scripts de blocage ne sont pas nécessaires. Pour plus d’informations, consultez [intégration à Microsoft Defender ATP](wdatp-integration.md), [intégration avec Zscaler](zscaler-integration.md)et [intégration avec iboss](iboss-integration.md) , respectivement.
 
 ## <a name="export-a-block-script-to-govern-discovered-apps"></a>Exporter un script de blocage pour gouverner les applications découvertes
 
