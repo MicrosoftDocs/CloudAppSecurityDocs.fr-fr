@@ -12,12 +12,12 @@ metadata:
   author: shsagir
   ms.author: shsagir
   ms.date: 09/24/2019
-  ms.openlocfilehash: 05dd9156cddd6c94f4523d100b275c1ced42ba17
-  ms.sourcegitcommit: f3a6e9c4367d0ddfe4a23f417eb14de246fccd03
+  ms.openlocfilehash: 36f40dda4b6c169dae50100ccf457fc0f5c99801
+  ms.sourcegitcommit: 446041f0e7adf6688bf63d402838844baa3342bb
   ms.translationtype: HT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/24/2019
-  ms.locfileid: "74457857"
+  ms.lasthandoff: 01/06/2020
+  ms.locfileid: "75667218"
 landingContent:
 - title: À propos de Cloud App Security
   linkLists:
@@ -49,7 +49,9 @@ landingContent:
       url: tutorial-ueba.md
     - text: Examiner des applications OAuth à risque
       url: investigate-risky-oauth.md
-    - text: Bloquer le téléchargement d’informations sensibles
+    - text: Protéger toutes les applications de votre organisation en temps réel
+      url: tutorial-proxy.md
+    - text: Bloquer le téléchargement des informations sensibles
       url: use-case-proxy-block-session-aad.md
     - text: Protéger les fichiers avec la mise en quarantaine administrateur
       url: use-case-admin-quarantine.md
@@ -61,7 +63,7 @@ landingContent:
   linkLists:
   - linkListType: concept
     links:
-    - text: Protéger les applications à l’aide du contrôle d’application par accès conditionnel
+    - text: Protéger des applications avec le contrôle d'application par accès conditionnel
       url: proxy-intro-aad.md
     - text: Utilisation du tableau de bord
       url: daily-activities-to-protect-your-cloud-environment.md
@@ -97,7 +99,7 @@ landingContent:
   linkLists:
   - linkListType: tutorial
     links:
-    - text: Découvrir et identifier l’informatique fantôme
+    - text: Découvrir et identifier Shadow IT
       url: tutorial-shadow-it.md#phase-1-discover-and-identify-shadow-it
     - text: Évaluer et analyser
       url: tutorial-shadow-it.md#phase-2-evaluate-and-analyze

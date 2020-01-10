@@ -1,4 +1,4 @@
-- name: Documentation de Microsoft Cloud App Security
+- name: Documentation Microsoft Cloud App Security
   href: index.yml
 - name: Vue d’ensemble
   items:
@@ -16,7 +16,7 @@
           href: editions-cloud-app-security-aad.md
         - name: US Government GCC High
           href: editions-cloud-app-security-gcc.md
-- name: Guides de démarrage rapide
+- name: Démarrages rapides
   expanded: true
   items:
     - name: Mise en route
@@ -25,23 +25,25 @@
       href: best-practices.md
 - name: Didacticiels
   items:
-    - name: Découvrir et gérer le shadow IT
+    - name: Découvrir et gérer Shadow IT
       href: tutorial-shadow-it.md
     - name: Examiner des utilisateurs à risque
       href: tutorial-ueba.md
     - name: Examiner des applications OAuth à risque
       href: investigate-risky-oauth.md
-    - name: Téléchargements en bloc d’informations sensibles
+    - name: Protéger toutes les applications de votre organisation en temps réel
+      href: tutorial-proxy.md
+    - name: Bloquer les téléchargements des informations sensibles
       href: use-case-proxy-block-session-aad.md
     - name: Protection de vos fichiers avec la mise en quarantaine administrateur
       href: use-case-admin-quarantine.md
-    - name: Appliquer automatiquement des étiquettes Azure Information Protection
+    - name: Appliquer des étiquettes Azure Information Protection automatiquement
       href: use-case-information-protection.md
     - name: Étendre la gouvernance à la correction des points de terminaison
       href: tutorial-flow.md
 - name: Concepts
   items:
-    - name: Protéger les applications à l’aide du contrôle d’application par accès conditionnel
+    - name: Protéger des applications avec le contrôle d'application par accès conditionnel
       href: proxy-intro-aad.md
     - name: Utilisation du tableau de bord
       href: daily-activities-to-protect-your-cloud-environment.md
@@ -89,7 +91,7 @@
               href: admin-settings.md
         - name: Paramètres de messagerie
           href: mail-settings.md
-        - name: Groupes d'utilisateurs
+        - name: Groupes d’utilisateurs
           href: user-groups.md
         - name: Déploiement étendu
           href: scoped-deployment.md
@@ -103,7 +105,7 @@
               href: set-up-cloud-discovery.md
             - name: Intégrer avec Microsoft Defender ATP
               href: wdatp-integration.md
-            - name: Intégrer avec Zscaler
+            - name: Intégrer à Zscaler
               href: zscaler-integration.md
             - name: Intégrer à iboss
               href: iboss-integration.md
@@ -113,7 +115,7 @@
               href: discovery-docker.md
             - name: Docker sur Windows
               href: discovery-docker-windows.md
-            - name: Docker sur Ubuntu et RHEL (local)
+            - name: Docker sur Ubuntu et RHEL localement
               href: discovery-docker-ubuntu.md
             - name: Docker sur Ubuntu dans Azure
               href: discovery-docker-ubuntu-azure.md
@@ -129,7 +131,7 @@
           href: cloud-discovery-anonymizer.md
         - name: Ajouter des applications personnalisées à Cloud Discovery
           href: cloud-discovery-custom-apps.md
-        - name: Filtres et requêtes d’applications découvertes
+        - name: Filtres et requêtes des applications découvertes
           href: discovered-app-queries.md
     - name: Connecter des applications
       items:
@@ -171,12 +173,12 @@
         - name: Activités
           href: activity-filters.md
           items:
-            - name: Filtres et requêtes d’activités
+            - name: Filtres et requêtes des activités
               href: activity-filters-queries.md
         - name: Fichiers
           href: file-filters.md
           items:
-            - name: Générer des rapports de gestion de données
+            - name: Générer des rapports de gestion des données
               href: built-in-reports.md
         - name: Comptes
           href: accounts.md
@@ -191,7 +193,7 @@
         - name: Surveiller les applications
           href: monitor-alerts.md
           items:
-            - name: Gérer les alertes
+            - name: Gérer des alertes
               href: managing-alerts.md
     - name: Control
       href: control.md
@@ -202,13 +204,13 @@
             - name: Stratégies Cloud Discovery
               href: cloud-discovery-policies.md
               items:
-                - name: Stratégie de détection des anomalies de Cloud Discovery
+                - name: Stratégie de détection des anomalies Cloud Discovery
                   href: cloud-discovery-anomaly-detection-policy.md
-            - name: Stratégies d’activité
+            - name: Stratégies des activités
               href: user-activity-policies.md
-            - name: Stratégies de détection des anomalies
+            - name: Stratégie de détection des anomalies
               href: anomaly-detection-policy.md
-            - name: Stratégies d’OAuth
+            - name: Stratégies OAuth
               href: app-permission-policy.md
             - name: Stratégies de fichier
               href: data-protection-policies.md
@@ -218,17 +220,17 @@
                   items:
                     - name: Inspection du contenu intégré
                       href: content-inspection-built-in.md
-                    - name: Intégration du Service de classification des données
+                    - name: Intégration du service de classification des données
                       href: dcs-inspection.md
-                    - name: En utilisant l’inspection du contenu
+                    - name: Utilisation du moteur RegEx
                       href: working-with-the-regex-engine.md
-            - name: Stratégies de contrôle d’application d’accès conditionnel
+            - name: Stratégies de contrôle d’application par accès conditionnel
               items:
-                - name: Stratégies d’accès
+                - name: Stratégies d'accès
                   href: access-policy-aad.md
                 - name: Stratégies de session
                   href: session-policy-aad.md
-            - name: Informations de référence sur les modèles de stratégie
+            - name: Référence sur les modèles de stratégie
               href: policy-template-reference.md
         - name: Gouverner les applications connectées
           href: governance-actions.md
@@ -246,7 +248,7 @@
               href: siem-sentinel.md
             - name: Intégration DLP externe
               href: icap-stunnel.md
-        - name: Automatiser les processus et les workflows
+        - name: Automatiser les processus et les flux de travail
           items:
             - name: Utiliser l’API REST
               href: api-tokens.md
@@ -268,7 +270,7 @@
           href: policies-information-protection.md
     - name: Résolution des problèmes
       items:
-        - name: Dépannage de Cloud Discovery
+        - name: Résolution des problèmes de Cloud Discovery
           href: troubleshooting-cloud-discovery.md
         - name: Résolution des problèmes des connecteurs API à l’aide de messages d’erreur
           href: troubleshooting-api-connectors-using-error-messages.md
@@ -276,7 +278,7 @@
           href: troubleshooting-content-inspection.md
         - name: Résolution des problèmes d’intégration de SIEM
           href: troubleshooting-siem.md
-        - name: Résolution des problèmes des stratégies
+        - name: Résolution des problèmes de stratégies
           href: troubleshoot-policies.md
 - name: Ressources
   items:
@@ -284,11 +286,11 @@
       href: webinars.md
     - name: Lisez nos livres électroniques
       href: e-books.md
-    - name: Archives des notes de publication
+    - name: Archive des notes de mise en production
       href: release-note-archive.md
-    - name: Fiche technique sur les licences
+    - name: Licences de la fiche technique
       href: 'https://aka.ms/mcaslicensing'
-    - name: Support et dépannage
+    - name: Support et résolution des problèmes
       href: support-and-ts.md
     - name: Portail Cloud App Security
       href: 'https://portal.cloudappsecurity.com'
