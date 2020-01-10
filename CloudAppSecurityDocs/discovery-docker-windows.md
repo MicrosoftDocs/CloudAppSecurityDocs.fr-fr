@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7f436f36b5ab41b8b952dca7dc2534611eb8401a
-ms.sourcegitcommit: 010725c70ff7b3fc9abdad92203eec6e72bb7473
+ms.openlocfilehash: 9122a5c5cdde5f2a1ed02946970825b75155acc2
+ms.sourcegitcommit: fb0d93ca2469a7941a098ae3b5564e7fc327e89f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/26/2019
-ms.locfileid: "75492101"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75777128"
 ---
 # <a name="docker-on-windows-on-premises"></a>Docker sur Windows en local
 
@@ -41,7 +41,7 @@ Vous pouvez configurer le chargement automatique des journaux pour des rapports 
 * La virtualisation du système d’exploitation doit être activée avec Hyper-V
 
 > [!IMPORTANT]
-> Un utilisateur doit être connecté pour que l’arrimeur collecte les journaux. Nous vous recommandons de vous informer de la déconnexion de l’utilisateur de l’ancrage.
+> Un utilisateur doit être connecté pour que l’arrimeur collecte les journaux. Nous vous recommandons de recommander aux utilisateurs de votre conseiller de se déconnecter sans fermer la session.
 
 > [!NOTE]
 > Si vous disposez d’un collecteur de journaux existant et que vous souhaitez le supprimer avant de le déployer à nouveau, ou si vous souhaitez simplement le supprimer, exécutez les commandes suivantes :
