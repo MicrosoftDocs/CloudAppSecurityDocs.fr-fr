@@ -5,25 +5,28 @@ author: shsagir
 ms.author: shsagir
 ms.service: cloud-app-security
 ms.topic: conceptual
-ms.date: 8/15/2019
+ms.date: 01/12/2020
 ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5272eec53b28fd55886586d06a035f36f70e6e8f
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 3ed582468edbfae7b180fdccc0ba110a1eb694df
+ms.sourcegitcommit: 38cca5e4f0e69bb33f89d1c4347a14c994d16b65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720446"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76123089"
 ---
-# <a name="activity-policies"></a>Stratégies d’activité
+# <a name="activity-policies"></a>Stratégies des activités
 
 *S’applique à : Microsoft Cloud App Security*
 
 Avec les stratégies d’activité, vous pouvez appliquer une large gamme de processus automatisés en utilisant les API du fournisseur d’application. Ces stratégies vous permettent de surveiller des activités spécifiques effectuées par différents utilisateurs ou de suivre les taux anormalement élevés d’un certain type d’activité.
 
 Après avoir défini une stratégie de détection d’activité, elle commence à générer des alertes ; les alertes sont générées uniquement sur les activités qui se produisent après avoir créé la stratégie.
+
+> [!NOTE]
+> Les stratégies qui déclenchent plus de 50 000 correspondances par jour, pour 3 des 7 derniers jours, sont automatiquement désactivées. Vous pouvez essayer d’affiner les stratégies en ajoutant des filtres supplémentaires ou, si vous utilisez des stratégies à des fins de création de rapports, pensez à [les enregistrer en tant que requêtes](activity-filters-queries.md#activity-queries) à la place.
 
 ## <a name="custom-alerts"></a>Alertes personnalisées
 
