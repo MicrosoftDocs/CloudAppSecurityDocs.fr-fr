@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9e7e77e0875d6eca37a8add22cb631fc86cf7138
-ms.sourcegitcommit: 6658e305313ab84c6df7632549af373ea2faec14
+ms.openlocfilehash: fbea8df8a5fb16fabde89a48d8ac8227fb37a1c5
+ms.sourcegitcommit: f81dd93841d7e5d01a1edaaf464c8656c4e7efda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76550205"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76814231"
 ---
 #  <a name="IPtagsandRanges"></a> Utilisation des balises et des plages d’adresses IP
 
@@ -33,9 +33,14 @@ Cloud App Security est préconfiguré avec des plages d’adresses IP intégrée
 >
 > - Pour utiliser ces balises intégrées dans le cadre d’une recherche, reportez-vous à leur ID dans la documentation des API Cloud App Security.
 > - Vous pouvez ajouter des plages d’adresses IP en bloc en créant un script à l’aide de l’**API des plages d’adresses IP**.
+> - Vous ne pouvez pas ajouter de plages IP avec des adresses IP qui se chevauchent.
 > - Pour afficher la documentation de l’API, dans la barre de menus du portail Cloud App Security, cliquez sur le point d’interrogation puis sur **Documentation sur les API**.
 
 Les balises d’adresse IP intégrées et les balises IP personnalisées sont considérées de manière hiérarchique. Les balises IP personnalisées sont prioritaires par rapport aux balises IP intégrées. Par exemple, si une adresse IP est marquée comme étant **Risquée** en fonction de l’intelligence des menaces, mais qu’il existe une balise IP personnalisée qui l’identifie comme appartenant à l’**Entreprise**, les balises et la catégorie personnalisées sont prioritaires.
+
+>[!NOTE]
+> Lorsqu’une adresse IP est marquée comme une adresse d’entreprise, elle est indiquée dans le portail, et les adresses IP sont exclues du déclenchement de détections spécifiques (par exemple, un déplacement impossible), car ces adresses IP sont considérées comme approuvées.
+>
 
 ## <a name="create-an-ip-address-range"></a>Créer une plage d’adresses IP
 

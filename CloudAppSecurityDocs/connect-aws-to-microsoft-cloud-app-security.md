@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 8/13/2019
+ms.date: 01/06/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2bf213f483e9ba29004c57952ae36ea058a4e077
-ms.sourcegitcommit: db5ec79d219dd6674939c872ace7cd2ca80860a4
+ms.openlocfilehash: 9763793948bb8c7109c9fb627e337189402d2f67
+ms.sourcegitcommit: f81dd93841d7e5d01a1edaaf464c8656c4e7efda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75189636"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76814248"
 ---
 # <a name="connect-aws-to-microsoft-cloud-app-security"></a>Connecter AWS à Microsoft Cloud App Security
 
@@ -148,7 +148,37 @@ Dans la mesure où vous pouvez ajouter une connexion ou les deux, les étapes d�
 
 ## <a name="how-to-connect-aws-security-configuration-to-cloud-app-security"></a>Comment connecter la configuration de sécurité AWS à Cloud App Security
 
-Suivez les étapes [de connexion de l’audit de sécurité AWS](#how-to-connect-aws-security-auditing-to-cloud-app-security) pour accéder à la page [autorisations](#set-permissions) .
+La connexion de la configuration de sécurité AWS vous donne des informations sur les recommandations de sécurité fondamentales basées sur le test de sécurité Center for Internet Security (CIS) pour AWS.
+
+Procédez comme suit pour connecter la configuration de sécurité AWS à Cloud App Security.
+
+> [!div class="checklist"]
+>
+> - [Configurer le concentrateur de sécurité AWS](#set-up-aws-security-hub)
+> - [Connexion de la configuration de sécurité AWS à Cloud App Security](#connect-aws-security-configuration-to-cloud-app-security)
+
+### <a name="set-up-aws-security-hub"></a>Configurer le concentrateur de sécurité AWS
+
+Pour afficher les recommandations de sécurité pour plusieurs régions, répétez les étapes suivantes pour chaque région pertinente.
+
+> [!NOTE]
+> Si vous utilisez un compte principal, répétez ces étapes pour configurer le compte principal et tous les comptes des membres connectés dans toutes les régions pertinentes.
+
+1. Activez la [configuration AWS](https://docs.aws.amazon.com/config/latest/developerguide/gs-console.html).
+1. Activez le [concentrateur de sécurité AWS](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-settingup.html).
+1. Vérifiez que les données sont transmises au hub de sécurité.
+
+    > [!NOTE]
+    > Lorsque vous activez pour la première fois Security Hub, plusieurs heures peuvent être nécessaires pour que les données soient disponibles.
+
+### <a name="connect-aws-security-configuration-to-cloud-app-security"></a>Connexion de la configuration de sécurité AWS à Cloud App Security
+
+Avant de pouvoir vous connecter à la configuration de la sécurité AWS, assurez-vous que vous avez [configuré votre environnement AWS](#set-up-aws-security-hub) pour collecter des recommandations fondamentales sur la sécurité et la conformité.
+
+> [!NOTE]
+> Si vous utilisez un [compte maître AWS](https://aws.amazon.com/security-hub/faqs/), procédez comme suit pour vous connecter au compte principal. La connexion de votre compte principal vous permet de recevoir des recommandations pour tous les comptes membres dans toutes les régions.
+
+1. Suivez les étapes *de connexion de l’audit de sécurité AWS* pour accéder à la page [autorisations](#set-permissions) .
 
 1. Sur la page autorisations, cliquez sur **attacher les stratégies existantes directement**, appliquez les stratégies **AWSSecurityHubReadOnlyAccess** et **SecurityAudit** , puis cliquez sur **balises suivantes**.
 
