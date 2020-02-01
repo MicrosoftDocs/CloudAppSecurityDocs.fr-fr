@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 8042b1dfe17410f6c32e81d9e4f10a4df2a5f339
-ms.sourcegitcommit: db5ec79d219dd6674939c872ace7cd2ca80860a4
+ms.openlocfilehash: 7a41ef688b956696a13052ba5603f0c2108f9357
+ms.sourcegitcommit: 00599ac6c64a4c62ed9ebdda3edb58f90f92c24d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75189755"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912056"
 ---
 # <a name="connect-salesforce-to-microsoft-cloud-app-security"></a>Connecter Salesforce à Microsoft Cloud App Security
 
@@ -114,6 +114,8 @@ Les événements Salesforce sont traités par Cloud App Security de la façon su
 * Événements de connexion toutes les 15 minutes
 * Piste d’audit d’installation toutes les 15 minutes
 * Les journaux de Salesforce suivent l’activité d’utilisation sur une période de 24 heures, de 00:00 à 23:59 heure UTC. Les événements dans Salesforce génèrent des données de journal en temps réel. Toutefois, les fichiers journaux sont générés par Salesforce le lendemain d’un événement, pendant les heures creuses. Par conséquent, les données du fichier journal ne sont disponibles qu’au moins un jour après l’événement. Pour plus d’informations sur les événements Salesforce, consultez [Using Event Monitoring](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/using_resources_event_log_files.htm) (Utilisation de la surveillance des événements).
+
+Si vous rencontrez des problèmes lors de la connexion de l’application, consultez [résolution des problèmes liés aux connecteurs d’application](troubleshooting-api-connectors-using-error-messages.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

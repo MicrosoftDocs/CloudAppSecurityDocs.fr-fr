@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f688c4ab78fc366518146e761cc01e2edfe5dc30
-ms.sourcegitcommit: db5ec79d219dd6674939c872ace7cd2ca80860a4
+ms.openlocfilehash: 06c6a2db19332bb49e86220464a7eff459657b4b
+ms.sourcegitcommit: 00599ac6c64a4c62ed9ebdda3edb58f90f92c24d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75189721"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912277"
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>Connecter G Suite à Microsoft Cloud App Security
 
@@ -79,7 +79,7 @@ Cet article fournit des instructions pour connecter Microsoft Cloud App Security
 
     ![Informations d’identification Google](media/google7.png)
 
-1. Pour **compte de service**, choisissez **nouveau compte de service**, puis entrez un nom pour le compte, par exemple compte de **service 1**. Sous **Role** (Rôle), choisissez **Project** (Projet), puis **Editor** (Éditeur). Sous **Key type (Type de clé)**, choisissez **P12** et cliquez sur **Create (Créer)**. Un fichier de certificat P12 est enregistré sur votre ordinateur.
+1. Pour **compte de service**, choisissez **nouveau compte de service**, puis entrez un nom pour le compte, par exemple compte de **service 1**. Sous **Role** (Rôle), choisissez **Project** (Projet), puis **Editor** (Éditeur). Sous **Key type (Type de clé)** , choisissez **P12** et cliquez sur **Create (Créer)** . Un fichier de certificat P12 est enregistré sur votre ordinateur.
 
     ![Créer une clé de compte de service dans Google](media/google9.png)
 
@@ -87,7 +87,7 @@ Cet article fournit des instructions pour connecter Microsoft Cloud App Security
 
     ![Compte de service des informations d’identification G suite](media/google10.png)
 
-1. Cliquez sur les points de suspension à droite du compte de service que vous avez créé et sélectionnez **Edit (Modifier)**.
+1. Cliquez sur les points de suspension à droite du compte de service que vous avez créé et sélectionnez **Edit (Modifier)** .
 
     ![modification Google](media/google11.png "modification Google")
 
@@ -122,9 +122,9 @@ Cet article fournit des instructions pour connecter Microsoft Cloud App Security
 
     * **Short Description & Long Description** (Description courte et description longue) (facultatif) : Microsoft Cloud App Security offre une visibilité sur les applications cloud, ce qui vous permet de contrôler, d’examiner et de régir l’utilisation de ces applications cloud, de sécuriser les données d’entreprise et de détecter les activités suspectes liées aux applications cloud.
 
-    * Google vous demande de charger au moins une icône d’application. Accédez à [ https://go.microsoft.com/fwlink/?linkid=862826 ](https://go.microsoft.com/fwlink/?linkid=862826) pour télécharger un fichier zip contenant les icônes de Cloud App Security. Ensuite, sous **Icône de l’application**, cliquez sur **Sélectionner** en regard de l’image 128 x 128 et faites-la glisser jusqu’à la fenêtre contextuelle. Cliquez sur **Sélectionner** en regard de l’image 32 x 32 et faites-la glisser jusqu’à la fenêtre contextuelle.
+    * Google vous demande de charger au moins une icône d’application. Accédez à [https://go.microsoft.com/fwlink/?linkid=862826](https://go.microsoft.com/fwlink/?linkid=862826) pour télécharger un fichier zip contenant les icônes de Cloud App Security. Ensuite, sous **Icône de l’application**, cliquez sur **Sélectionner** en regard de l’image 128 x 128 et faites-la glisser jusqu’à la fenêtre contextuelle. Cliquez sur **Sélectionner** en regard de l’image 32 x 32 et faites-la glisser jusqu’à la fenêtre contextuelle.
 
-    * Faites défiler vers le dessous, puis dans la section **intégration de lecteur** , tapez l’URL suivante sous **ouvrir l’url :**
+    * Faites défiler vers le dessous, puis dans la section **intégration de lecteur** , tapez l’URL suivante sous **ouvrir l’url :** 
     `https://portal.cloudappsecurity.com/#/services/11770?tab=files`
 
     ![Modifier Google Drive](media/google15.png)
@@ -146,7 +146,7 @@ Dans **Application description** (Description de l’application), tapez « Mic
 
     * Désactivez la case à cocher **activer l’installation individuelle** .
 
-    * Configurez les quatre images obligatoires sous **Application icons (Icônes de l’application)**.
+    * Configurez les quatre images obligatoires sous **Application icons (Icônes de l’application)** .
 
     Vous trouverez les images sur :  [https://go.microsoft.com/fwlink/?linkid=862826](https://go.microsoft.com/fwlink/?linkid=862826)
 
@@ -178,7 +178,7 @@ Dans **Application description** (Description de l’application), tapez « Mic
 `https://www.googleapis.com/auth/admin.directory.user`
 
     * Sous **Visibilité**, sélectionnez **Mon domaine** (et non pas public).
-    * Cliquez sur **Save Changes (Enregistrer les modifications)**.
+    * Cliquez sur **Save Changes (Enregistrer les modifications)** .
         ![Google Visibility](media/google-visibility.png)
 1. Dans la console d’administration Google, accédez à [gérer l’application Access Control](https://admin.google.com/). Recherchez la ligne **administrateur G suite** et vérifiez qu’elle dispose d’un accès **illimité** .
 
@@ -223,6 +223,8 @@ Dans **Application description** (Description de l’application), tapez « Mic
 Après avoir connecté G Suite, vous recevez les événements des 60 jours précédant la connexion.
 
 Après la connexion de G Suite, Cloud App Security effectue une analyse complète. Selon le nombre de fichiers et d’utilisateurs, l’exécution de l’analyse complète peut prendre du temps. Pour activer l’analyse en quasi temps réel, les fichiers sur lesquels une activité est détectée sont déplacés au début de la file d’attente d’analyse. Par exemple, un fichier qui est modifié, mis à jour ou partagé est analysé immédiatement. Ceci ne s’applique pas aux fichiers qui ne sont pas modifiés de façon intrinsèque. Par exemple, les fichiers qui sont affichés, prévisualisés, imprimés ou exportés sont analysés dans le cadre de l’analyse régulière.
+
+Si vous rencontrez des problèmes lors de la connexion de l’application, consultez [résolution des problèmes liés aux connecteurs d’application](troubleshooting-api-connectors-using-error-messages.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

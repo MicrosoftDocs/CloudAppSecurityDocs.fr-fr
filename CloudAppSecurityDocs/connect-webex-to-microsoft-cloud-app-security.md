@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f5a9915760822efe01c7d8c908a88e0a02e77ca3
-ms.sourcegitcommit: db5ec79d219dd6674939c872ace7cd2ca80860a4
+ms.openlocfilehash: f50ff4ae3b3a5a04ab9ffe052b0fb1e8ecdb2f7d
+ms.sourcegitcommit: 00599ac6c64a4c62ed9ebdda3edb58f90f92c24d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75189806"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912159"
 ---
 # <a name="connect-cisco-webex-to-microsoft-cloud-app-security"></a>Connexion de Cisco Webex à Microsoft Cloud App Security
 
@@ -27,7 +27,7 @@ ms.locfileid: "75189806"
 
 Cet article fournit des instructions pour connecter Microsoft Cloud App Security à votre compte Cisco Webex existant à l’aide des API du connecteur. Cette connexion vous offre une visibilité et un contrôle sur les utilisateurs, les activités et les fichiers de WebEx. Pour plus d’informations sur la façon dont Cloud App Security protège Cisco Webex, consultez [protection de Cisco Webex](protect-webex.md).
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prerequisites
 
 - Nous vous suggérons de créer un compte de service dédié pour la connexion. Cela vous permet de voir que les actions de gouvernance effectuées dans WebEx sont effectuées à partir de ce compte, telles que supprimer les messages envoyés dans WebEx. Dans le cas contraire, le nom de l’administrateur qui s’est connecté Cloud App Security à WebEx apparaîtra en tant qu’utilisateur qui a effectué les actions.
 - Vous devez disposer d’autorisations d’administrateur complet **et** de conformité dans WebEx.
@@ -53,6 +53,8 @@ Cet article fournit des instructions pour connecter Microsoft Cloud App Security
     Le test peut prendre quelques minutes. Une fois que vous êtes averti que la connexion a réussi, cliquez sur **Fermer**.
 
 Une fois que vous avez connecté WebEx, vous recevrez des événements pendant 7 jours avant la connexion. Cloud App Security analyse les événements au cours des trois derniers mois. Pour augmenter cela, vous devez disposer d’une licence Cisco Webex Pro et ouvrir un ticket avec Cloud App Security Support.
+
+Si vous rencontrez des problèmes lors de la connexion de l’application, consultez [résolution des problèmes liés aux connecteurs d’application](troubleshooting-api-connectors-using-error-messages.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

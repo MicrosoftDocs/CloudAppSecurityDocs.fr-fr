@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 12/10/2018
+ms.date: 01/29/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9b3b09d2bf374f4503e5559530c8f6bbc9a7b098
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 1a57355a76037a33072872ed18a7567587eae860
+ms.sourcegitcommit: 00599ac6c64a4c62ed9ebdda3edb58f90f92c24d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720127"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912142"
 ---
 # <a name="cloud-discovery-data-anonymization"></a>Anonymisation des données Cloud Discovery
 
@@ -48,9 +48,7 @@ Points clés :
     1. Sous l’icône Paramètres, sélectionnez **Paramètres Cloud Discovery**.
 
     2. Dans l’onglet Anonymisation, pour anonymiser les noms d’utilisateur par défaut, sélectionnez **Anonymiser les informations privées par défaut dans les nouveaux rapports et les nouvelles sources de données**. Vous pouvez aussi sélectionner **Anonymiser les informations de l'ordinateur par défaut dans le rapport « Utilisateurs du point de terminaison Win10 »** .
-
-    3. Sous Clé de chiffrement, choisissez si vous voulez **Utiliser la clé dédiée générée pour votre portail** ou **Utiliser une clé personnalisée**. Si vous voulez **Utiliser une clé personnalisée**, entrez une clé de chiffrement UTF8 de 16 octets.
-    4. Cliquez sur **Save**.
+    3. Cliquez sur **Save**.
 
     ![Anonymisation](media/anonymizer1.png)
 

@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2606263d1a033d09116111d08ed7f69c96814f68
-ms.sourcegitcommit: db5ec79d219dd6674939c872ace7cd2ca80860a4
+ms.openlocfilehash: 12a610f45555720f400dc238a09953698255a16c
+ms.sourcegitcommit: 00599ac6c64a4c62ed9ebdda3edb58f90f92c24d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75189772"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76911753"
 ---
 # <a name="connect-servicenow-to-microsoft-cloud-app-security"></a>Connecter ServiceNow à Microsoft Cloud App Security
 
@@ -114,6 +114,8 @@ Pour connecter ServiceNow à Cloud App Security, vous devez avoir des autorisati
     Le test peut prendre quelques minutes. Une fois averti que la connexion a réussi, cliquez sur **Fermer**.
 
 Après avoir connecté ServiceNow, vous recevrez les événements des 60 jours précédant la connexion.
+
+Si vous rencontrez des problèmes lors de la connexion de l’application, consultez [résolution des problèmes liés aux connecteurs d’application](troubleshooting-api-connectors-using-error-messages.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

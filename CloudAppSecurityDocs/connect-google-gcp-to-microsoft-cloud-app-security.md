@@ -9,12 +9,12 @@ ms.date: 10/16/2019
 ms.topic: conceptual
 ms.service: cloud-app-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: e03f24023968d9e3169aef8636061b8adf05d646
-ms.sourcegitcommit: db5ec79d219dd6674939c872ace7cd2ca80860a4
+ms.openlocfilehash: bf9260d0fc4c68ac27638fbefbfdd738a89ccd22
+ms.sourcegitcommit: 00599ac6c64a4c62ed9ebdda3edb58f90f92c24d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75189738"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912260"
 ---
 # <a name="connect-google-cloud-platform-to-microsoft-cloud-app-security-preview"></a>Se connecter Google Cloud Platform à Microsoft Cloud App Security (version préliminaire)
 
@@ -33,7 +33,7 @@ Cet article fournit des instructions pour connecter Microsoft Cloud App Security
 
 Nous vous recommandons d’utiliser un projet dédié pour l’intégration et de restreindre l’accès au projet pour maintenir une intégration stable et empêcher les suppressions/modifications du processus d’installation. En outre, si votre instance GCP fait partie d’une instance G suite déjà connectée à Cloud App Security, nous vous recommandons de suivre le **pour une instance GCP qui fait partie d’une procédure d’organisation g suite connectée** lorsque vous ajoutez les détails de connexion GCP.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prerequisites
 
 L’utilisateur GCP d’intégration doit disposer des autorisations suivantes :
 
@@ -139,6 +139,8 @@ Pour fournir les détails de connexion GCP, sous **connecteurs d’applications*
 Vérifiez que la connexion a réussi en cliquant sur **Tester l’API**.
 
 Le test peut prendre quelques minutes. Quand il est terminé, vous recevez une notification de réussite ou d’échec. Une fois que vous avez reçu une notification de réussite, cliquez sur **Terminé**.
+
+Si vous rencontrez des problèmes lors de la connexion de l’application, consultez [résolution des problèmes liés aux connecteurs d’application](troubleshooting-api-connectors-using-error-messages.md).
 
 ## <a name="aggregated-export-sink"></a>Récepteur d’exportation agrégé
 

@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 3b69525ff6db246a48fa639274c8e9dc8295f360
-ms.sourcegitcommit: 904407680e8657c6b83f8240abefeb66703e8807
+ms.openlocfilehash: 032ed68260e178c176c631b41eb7dc64e869cbd3
+ms.sourcegitcommit: 00599ac6c64a4c62ed9ebdda3edb58f90f92c24d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75553666"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912195"
 ---
 # <a name="connect-workday-to-microsoft-cloud-app-security-preview"></a>Connecter un jour ouvré à Microsoft Cloud App Security (version préliminaire)
 
@@ -35,7 +35,7 @@ Regardez notre vidéo de démarrage rapide qui montre comment configurer les com
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4n1ZO]
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Prerequisites
 
 Le compte de jour de travail utilisé pour la connexion à Cloud App Security doit être membre d’un groupe de sécurité (nouveau ou existant). Nous vous recommandons d’utiliser un utilisateur système d’intégration de jours ouvrables. Les autorisations suivantes doivent être sélectionnées pour le groupe de sécurité pour les stratégies de sécurité de domaine suivantes :
 
@@ -44,7 +44,7 @@ Le compte de jour de travail utilisé pour la connexion à Cloud App Security do
 | System | Configuration : configuration du locataire – général | Configuration : configuration du client – sécurité | Afficher, modifier | Acquérir, put |
 | System | Administration de la sécurité | | Afficher, modifier | Acquérir, put |
 | System | Audit du système | | Affichez | Obtenir |
-| Effectifs | Données de travail : personnel | Worker Data: Public Worker Reports | Affichez | Obtenir |
+| Effectifs | Données de travail : personnel | Données de travail : rapports de travail public | Affichez | Obtenir |
 
 > [!NOTE]
 >
@@ -113,6 +113,8 @@ Pour plus d’informations sur la configuration des utilisateurs d’intégratio
 
 > [!NOTE]
 > Après la connexion de la journée de travail, vous recevrez des événements pendant sept jours avant la connexion.
+
+Si vous rencontrez des problèmes lors de la connexion de l’application, consultez [résolution des problèmes liés aux connecteurs d’application](troubleshooting-api-connectors-using-error-messages.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 6/20/2019
+ms.date: 01/30/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d28257e073227c34a81577558ac2e7c149e373b2
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: f2149e984f56385acd4d4e90ec6ea50f18bcc611
+ms.sourcegitcommit: 00599ac6c64a4c62ed9ebdda3edb58f90f92c24d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720423"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912110"
 ---
 # <a name="attest-your-app"></a>Attester votre application
 
@@ -29,26 +29,26 @@ Si votre application est déjà listée dans le catalogue d’applications Cloud
 
 Suivez les attributs de service décrits ci-dessous pour terminer avec succès la soumission du questionnaire :
 
-| Champ | Catégorie d’informations | Type | Valeurs acceptées | Description |
+| Champ | Catégorie d’informations | Tapez | Valeurs acceptées | Description |
 |------|-------|------|---------|----------|
-| Nom de l’application | Général | String | Texte libre | Nom de votre application tel qu’il doit apparaître dans le catalogue d’applications Cloud. |
-| Description | Général | String | Texte libre | Brève explication de ce que votre application permet aux utilisateurs d’effectuer ou d’atteindre. |
-| Category| Général | String | Fermer la liste-fourni dans le questionnaire | Classification de l’application en fonction du champ auquel elle se rapporte. |
+| Nom de l’application | Général | Chaîne | Texte libre | Nom de votre application tel qu’il doit apparaître dans le catalogue d’applications Cloud. |
+| Description | Général | Chaîne | Texte libre | Brève explication de ce que votre application permet aux utilisateurs d’effectuer ou d’atteindre. |
+| Catégorie| Général | Chaîne | Fermer la liste-fourni dans le questionnaire | Classification de l’application en fonction du champ auquel elle se rapporte. |
 | Siège social | Général | Code du pays | Fermer la liste-fourni dans le questionnaire | Pays du siège du fournisseur.|
 | Centre de données| Général | Tableau de codes de pays * | Fermer la liste-fourni dans le questionnaire (sélection multiple) | Le pays dans lequel se trouve votre centre de données (peut être plusieurs emplacements) |
-| Société d’hébergement | Général | String | Texte libre | Nom de la société qui fournit l’hébergement de serveur pour l’application. |
+| Société d’hébergement | Général | Chaîne | Texte libre | Nom de la société qui fournit l’hébergement de serveur pour l’application. |
 | Doutes | Général | Entier | AAAA (pas plus de 2019) | Année de Fondation du fournisseur. |
-| Holding | Général | String | Privé, public | Indique si le fournisseur est une société publique ou privée |
-| Domaine d’application | Général | Tableau d’URL * | Texte libre | Liste des domaines utilisés pour interagir avec le service (par exemple, « teams.microsoft.com » pour Microsoft Teams) |
-| Conditions d'utilisation | Général | une adresse URL | Texte libre | Cette application fournit-elle un ensemble de réglementations que les utilisateurs doivent accepter de suivre pour pouvoir utiliser l’application ? |
-| Politique de confidentialité | Général | une adresse URL | Texte libre | Lien vers un document juridiquement contraignant relatif à la façon dont ce fournisseur gère les informations sur les clients, les clients ou les employés rassemblées dans le cadre de l’application. |
+| Détenteur | Général | Chaîne | Privé, public | Indique si le fournisseur est une société publique ou privée |
+| Domaine d’application | Général | Tableau d’URL * | Texte libre | Liste des domaines spécifiques qui sont utilisés pour interagir avec le service. Par exemple, « teams.microsoft.com » pour Microsoft teams et non le domaine générique « microsoft.com ». |
+| Conditions d’accès | Général | Adresse URL | Texte libre | Cette application fournit-elle un ensemble de réglementations que les utilisateurs doivent accepter de suivre pour pouvoir utiliser l’application ? |
+| Politique de confidentialité | Général | Adresse URL | Texte libre | Lien vers un document juridiquement contraignant relatif à la façon dont ce fournisseur gère les informations sur les clients, les clients ou les employés rassemblées dans le cadre de l’application. |
 | URL de connexion | Général | Tableau d’URL * | Texte libre | URL via laquelle les utilisateurs se connectent à l’application. |
-| Fabricant | Général | String | Texte libre | Nom du fournisseur qui fournit cette application. |
-| Types de données | Général | String | Fermer la liste-fourni dans le questionnaire | Quels types de données peuvent être téléchargés par l’utilisateur vers l’application ?|
-| Page d’accueil | Général | une adresse URL | Texte libre | URL de la page d’hébergement du fournisseur. |
+| Fabricant | Général | Chaîne | Texte libre | Nom du fournisseur qui fournit cette application. |
+| Types de données | Général | Chaîne | Fermer la liste-fourni dans le questionnaire | Quels types de données peuvent être téléchargés par l’utilisateur vers l’application ?|
+| Homepage | Général | Adresse URL | Texte libre | URL de la page d’hébergement du fournisseur. |
 | Plan de récupération d’urgence | Général | Booléen | True, False | Cette application a-t-elle un plan de récupération d’urgence qui comprend une stratégie de sauvegarde et de restauration ? |
 | Dernière violation | Sécurité | Date | MMM-jj-aaaa | Incident le plus récent dans lequel les données sensibles, protégées ou confidentielles détenues par l’application ont été affichées, volées ou utilisées par un individu non autorisé à cette fin. |
-| Méthode de chiffrement des données au repos | Sécurité | String | Fermer la liste-fourni dans le questionnaire | Type de chiffrement des données au repos effectuées sur l’application. |
+| Méthode de chiffrement des données au repos | Sécurité | Chaîne | Fermer la liste-fourni dans le questionnaire | Type de chiffrement des données au repos effectuées sur l’application. |
 | Authentification multifacteur | Sécurité | Booléen | True, False | Cette application prend-elle en charge les solutions multi-Factor Authentication ? |
 | Restriction d’adresse IP | Sécurité | Booléen | True, False | Cette application prend-elle en charge la restriction d’adresses IP spécifiques par l’application ? |
 | Piste d’audit de l’utilisateur | Sécurité | Booléen | True, False | Cette application prend-elle en charge la disponibilité de la piste d’audit par compte d’utilisateur ? |
@@ -61,7 +61,7 @@ Suivez les attributs de service décrits ci-dessous pour terminer avec succès l
 | Partage de fichiers | Sécurité | Booléen | True, False | Cette application inclut-elle des fonctionnalités qui permettent le partage de fichiers entre les utilisateurs ? |
 | Nom de certificat valide | Sécurité | Booléen | True, False | Le serveur fournit-il un certificat SSL correspondant au nom de domaine ? |
 | Certificat approuvé | Sécurité | Booléen | True, False | Le serveur fournit-il un certificat SSL approuvé (qui n’a pas expiré, vérifié, et une chaîne de signature approuvée, etc.) ? |
-| Protocole de chiffrement | Sécurité | String | Fermer la liste-fourni dans le questionnaire | La dernière version du protocole de chiffrement TLS (Transport Layer Security) prise en charge entre le point de terminaison de l’utilisateur et le fournisseur de l’application. Si le certificat du serveur n’existe pas ou n’est pas valide, le chiffrement est considéré comme non pris en charge.|
+| Protocole de chiffrement | Sécurité | Chaîne | Fermer la liste-fourni dans le questionnaire | La dernière version du protocole de chiffrement TLS (Transport Layer Security) prise en charge entre le point de terminaison de l’utilisateur et le fournisseur de l’application. Si le certificat du serveur n’existe pas ou n’est pas valide, le chiffrement est considéré comme non pris en charge.|
 | Heartbleed corrigé | Sécurité | Booléen | True, False | L’implémentation SSL du serveur a-t-elle été corrigée pour le bogue Heartbleed afin de réduire les vulnérabilités ? |
 | En-têtes de sécurité HTTP : strict-transport-Security | Sécurité | Booléen | True, False | Les en-têtes HTTP strict-transport-Security sont-ils implémentés par l’application sur son site Web ? |
 | En-têtes de sécurité HTTP : Content-Security-Policy | Sécurité | Booléen | True, False | Les en-têtes de stratégie de sécurité de contenu HTTP sont-ils implémentés par l’application sur son site Web ? |
@@ -70,7 +70,7 @@ Suivez les attributs de service décrits ci-dessous pour terminer avec succès l
 | En-têtes de sécurité HTTP : X-XSS-protection | Sécurité | Booléen | True, False | Les en-têtes HTTP X-XSS-protection sont-ils implémentés par l’application sur son site Web ? |
 | Prend en charge SAML | Sécurité | Booléen | True, False | Cette application prend-elle en charge la norme SAML pour l’échange de données d’authentification et d’autorisation ? |
 | Protégé contre les NOYERs | Sécurité | Booléen | True, False | Les serveurs d’applications sont-ils protégés contre les attaques par noyer ? |
-| Test d'intrusion | Sécurité | Booléen | True, False | Cette application effectue-t-elle des tests d’intrusion pour détecter et évaluer les vulnérabilités du réseau ? |
+| Test d’intrusion | Sécurité | Booléen | True, False | Cette application effectue-t-elle des tests d’intrusion pour détecter et évaluer les vulnérabilités du réseau ? |
 | Nécessite l’authentification de l’utilisateur | Sécurité | Booléen | True, False | Cette application nécessite-t-elle une authentification et interdit l’utilisation anonyme ? |
 | Stratégie de mot de passe : limite de longueur du mot de passe | Sécurité | Booléen | True, False | Cette application applique-t-elle une longueur limite à la création du mot de passe ? |
 | Stratégie de mot de passe : combinaison de caractères | Sécurité | Booléen | True, False | Cette application applique-t-elle une combinaison de caractères lors de la création du mot de passe ? |
@@ -91,13 +91,13 @@ Suivez les attributs de service décrits ci-dessous pour terminer avec succès l
 | SOX | Compatibilité | Booléen | True, false, N/A | Cette application est-elle conforme à la législation SOX et aux États-Unis visant à protéger les actionnaires et le grand public contre les erreurs et les fraudes comptables, ainsi qu’à améliorer la précision des divulgations d’entreprise ? |
 | SP 800-53 | Compatibilité | Booléen | True, false, N/A | Cette application est-elle conforme à SP80053, les contrôles de sécurité recommandés pour les organisations et les systèmes d’information fédéraux ? |
 | SSAE 16 | Compatibilité | Booléen | True, false, N/A | Cette application est-elle conforme à la norme SSAE 16 pour l’audit des contrôles de conformité internes et des processus de création de rapports d’une organisation de service ? |
-| Version de PCI DSS | Compatibilité | String | 1, 2, 3, 3,1, 3,2, N/A | Version du protocole PCI-DSS prise en charge par cette application. |
+| Version de PCI DSS | Compatibilité | Chaîne | 1, 2, 3, 3,1, 3,2, N/A | Version du protocole PCI-DSS prise en charge par cette application. |
 | ISO 27018 | Compatibilité | Booléen | True, false, N/A | Cette application est-elle conforme à la norme ISO 27018, qui établit des contrôles et des instructions couramment acceptés pour le traitement et la protection des informations d’identification personnelle (PII) dans un environnement de cloud computing public ? |
 | GLBA | Compatibilité | Booléen | True, false, N/A | Cette application est-elle conforme à la loi Gramm-Leach-Bliley Act (GLBA), qui exige que les institutions financières établissent des normes de protection de la sécurité et de la confidentialité des informations personnelles des clients ? |
-| Niveau FedRAMP | Compatibilité | String | Élevé, modéré, faible, N/A | Niveau de la solution conforme à FedRAMP fournie par cette application. |
-| Niveau CSA STAR | Compatibilité | String | Auto-évaluation, certification, attestation, évaluation C-STAR, surveillance continue, N/A | Niveau du programme CSA STAR sur lequel l’application est certifiée |
+| Niveau FedRAMP | Compatibilité | Chaîne | Élevé, modéré, faible, N/A | Niveau de la solution conforme à FedRAMP fournie par cette application. |
+| Niveau CSA STAR | Compatibilité | Chaîne | Auto-évaluation, certification, attestation, évaluation C-STAR, surveillance continue, N/A | Niveau du programme CSA STAR sur lequel l’application est certifiée |
 | Bouclier de protection des données | Compatibilité | Booléen | True, false, N/A | Cette application est-elle conforme à l’infrastructure de protection de la confidentialité UE-US, qui impose des obligations plus fortes aux entreprises américaines pour protéger les données personnelles des européens ? |
-| ISO 27017 | Compatibilité | Booléen | True, false, N/A | Cette application est-elle conforme à la norme ISO 27017, qui établit des contrôles et des recommandations couramment acceptés pour le traitement et la protection des informations utilisateur dans un environnement de Cloud Computing public ? |
+| ISO 27017 | Compatibilité | Booléen | True, false, N/A | Cette application est-elle conforme à la norme ISO 27017, qui établit des contrôles et des recommandations couramment acceptés pour le traitement et la protection des informations utilisateur dans un environnement de Cloud Computing public ? |
 | COBIT | Compatibilité | Booléen | True, false, N/A | Cette application est-elle conforme à COBIT, qui définit les meilleures pratiques pour la gouvernance et le contrôle des systèmes d’information et de la technologie, et l’aligne sur les principes de l’entreprise ? |
 | COPPA | Compatibilité | Booléen | True, false, N/A | Cette application est-elle conforme à la réglementation COPPA, qui définit les exigences relatives au site Web et aux opérateurs de services en ligne qui fournissent du contenu aux enfants âgés de moins de 13 ans ? |
 | FERPA | Compatibilité | Booléen | True, false, N/A | Cette application est-elle conforme à FERPA, une loi fédérale qui protège la confidentialité des dossiers de formation des élèves ? |
@@ -109,7 +109,7 @@ Suivez les attributs de service décrits ci-dessous pour terminer avec succès l
 | Propriété des données | Juridique | Booléen | True, False | Cette application conserve-t-elle entièrement la propriété des données téléchargées par l’utilisateur ? |
 | DMCA | Juridique | Booléen | True, False | Cette application est-elle conforme à la DMCA (Digital Millenium Copyright Act), qui criminalise toute tentative d’accès illégal à des documents protégés par des droits d’auteur ? |
 | Stratégie de conservation des données | Juridique | Booléen | True, False | Quelle est la stratégie de l’application pour la rétention des données utilisateur après l’arrêt du compte ? |
-| RGPD Readiness (instruction) | Juridique | une adresse URL | Texte libre | Un lien vers votre site Web, le cas échéant, lié à la façon dont ce fournisseur prévoit de gérer la conformité RGPD. |
+| RGPD Readiness (instruction) | Juridique | Adresse URL | Texte libre | Un lien vers votre site Web, le cas échéant, lié à la façon dont ce fournisseur prévoit de gérer la conformité RGPD. |
 | RGPD-droit d’effacement | Juridique | Booléen | True, false, N/A | Cette application arrête-t-elle le traitement et supprime les données personnelles d’un individu à la demande ? |
 | RGPD-violations de données de rapport | Juridique | Booléen | True, false, N/A | Cette application signale-t-elle les violations de données aux autorités de supervision et aux personnes concernées par la violation, dans un délai de 72 heures de détection de violation ? |
 | RGPD-impact de l’évaluation | Juridique | Booléen | True, false, N/A | Cette application effectue-t-elle des évaluations d’impact sur la protection des données pour identifier les risques pour les individus ? |
