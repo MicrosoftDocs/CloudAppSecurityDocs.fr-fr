@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 12/1/2019
+ms.date: 02/04/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0fc036ab2a785157d0f37347ae691b1455eaa9a1
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: aa1da4946f115a5cf53279d95d3c81c59bc63aef
+ms.sourcegitcommit: 63007af53dafe14ef335e761a723fcbcb1581476
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720298"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76992456"
 ---
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>Obtenir instantanément une détection des anomalies et une analytique comportementale
 
@@ -41,6 +41,13 @@ Ces anomalies sont détectées en analysant l’activité des utilisateurs. Le r
 * Fréquence d'activité
 
 Selon les résultats de la stratégie, des alertes de sécurité sont déclenchées. Cloud App Security examine chaque session utilisateur sur votre cloud et vous alerte en cas d’événement anormal par rapport aux activités de référence ou habituelles de votre organisation ou de l’utilisateur.
+
+Outre les alertes de Cloud App Security natives, vous obtiendrez également les alertes de détection suivantes basées sur les informations reçues de la protection d’identité des Azure Active Directory (AD) :
+
+* Informations d’identification divulguées : déclenché lorsque les informations d’identification valides d’un utilisateur ont été divulguées. Pour plus d’informations, consultez [détection des informations d’identification divulguées de Azure ad](/azure/active-directory/identity-protection/concept-identity-protection-risks#user-risk).
+* Connexion risquée : combine un certain nombre de détections de connexion Azure AD Identity Protection en une seule détection (désactivée par défaut). Pour plus d’informations, consultez [détection des risques de connexion de Azure ad](/azure/active-directory/identity-protection/concept-identity-protection-risks#sign-in-risk).
+
+Ces stratégies s’affichent dans la page Cloud App Security les stratégies et peuvent être activées ou désactivées, mais pas modifiées.
 
 ## <a name="anomaly-detection-policies"></a>Stratégies de détection des anomalies
 
