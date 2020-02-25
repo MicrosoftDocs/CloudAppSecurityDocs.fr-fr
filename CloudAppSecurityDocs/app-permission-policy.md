@@ -1,6 +1,6 @@
 ---
 title: Créer des stratégies pour contrôler les applications OAuth dans Cloud App Security
-description: Cet article fournit des instructions sur la création et l’utilisation de stratégies d’autorisation d’application dans Microsoft Cloud App Security.
+description: Cet article fournit des instructions sur la création et l’utilisation des stratégies d’autorisation d’application dans Microsoft Cloud App Security.
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -14,38 +14,38 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: e5853882b7f95a492f4d8647af154f855d4f1d19
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 9d007c4760ace7a4337e4738406016576fa04171
+ms.sourcegitcommit: 9fe879ce7f07933866191724de5f108f43e3f923
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720291"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77566816"
 ---
 # <a name="oauth-app-policies"></a>Stratégies d’application OAuth
 
 *S’applique à : Microsoft Cloud App Security*
 
-En plus de l’[investigation existante des applications OAuth](manage-app-permissions.md) connectées à votre environnement, vous pouvez définir des stratégies d’autorisation pour recevoir des notifications automatisées quand une application OAuth répond à certains critères. Par exemple, vous pouvez être automatiquement alerté quand des applications exigent un niveau d’autorisation élevé et que plus de 50 utilisateurs l’ont accordé.
+En plus de l' [investigation existante des applications OAuth](manage-app-permissions.md) connectées à votre environnement, vous pouvez définir des stratégies d’autorisation pour que vous obteniez des notifications automatisées quand une application OAuth répond à certains critères. Par exemple, vous pouvez automatiquement recevoir une alerte quand il existe des applications qui nécessitent un niveau d’autorisation élevé et qui étaient autorisées par plus de 50 utilisateurs.
 
-Les stratégies d’application OAuth vous permettent de rechercher les autorisations exigées par chaque application ainsi que les utilisateurs qui les ont accordées pour Office 365, G Suite et Salesforce. Vous pouvez également marquer ces autorisations comme approuvées ou interdites. Le fait de les marquer comme interdites révoque les autorisations de chaque application pour chaque utilisateur qui les a accordées.
+Les stratégies d’application OAuth vous permettent d’examiner les autorisations demandées par chaque application et les utilisateurs qui les ont autorisés pour Office 365, G suite et Salesforce. Vous pouvez également marquer ces autorisations comme approuvées ou interdites. Les marquer comme interdits révoquent les autorisations pour chaque application pour chaque utilisateur qui l’a autorisé.
 
 ## <a name="create-a-new-oauth-app-policy"></a>Créer une stratégie d’application OAuth
 
-Il existe deux façons de créer une stratégie d’application OAuth. La première se trouve sous **Examiner**, tandis que la seconde se trouve sous **Contrôler**.
+Il existe deux façons de créer une stratégie d’application OAuth. La première consiste à **examiner** et le second est sous **contrôle**.
 
 Pour créer une stratégie d’application OAuth :
 
-1. Sous **Examiner**, sélectionnez **OAuth app** (Application OAuth).
+1. Sous **examiner** , sélectionnez **application OAuth**.
 
-1. Filtrez les applications selon vos besoins, par exemple, vous pouvez afficher toutes les applications qui demandent une **Autorisation** pour **Modifier les calendriers dans votre boîte aux lettres**.
+1. Filtrer les applications en fonction de vos besoins, par exemple, vous pouvez afficher toutes les applications qui demandent l' **autorisation** de **modifier des calendriers dans votre boîte aux lettres**.
 1. Cliquez sur le bouton **Nouvelle stratégie à partir de la recherche**.
-    ![nouvelle stratégie à partir de la recherche](media/app-permissions-filter.png)
-1. Vous pouvez utiliser le filtre **Utilisation communautaire** pour savoir si l’octroi d’autorisation à cette application est courant, peu courant ou rare. Ce filtre peut être utile si vous avez une application rare qui exige une autorisation avec un haut niveau de gravité ou qui exige une autorisation auprès de nombreux utilisateurs.
-1. Vous pouvez définir la stratégie en fonction du groupe auquel appartiennent les utilisateurs qui ont autorisé les applications. Par exemple, un administrateur peut décider de définir une stratégie qui révoque les applications rares si celles-ci nécessitent des autorisations élevées, uniquement si l’utilisateur qui a accordé les autorisations est un membre du groupe Administrateurs.
+    ![de la nouvelle stratégie à partir de la recherche](media/app-permissions-filter.png)
+1. Vous pouvez utiliser le filtre **Community use** pour savoir si l’autorisation d’accès à cette application est courante, peu courante ou rare. Ce filtre peut être utile si vous avez une application qui est rare et qui demande une autorisation ayant un niveau de gravité élevé ou qui demande une autorisation à de nombreux utilisateurs.
+1. Vous pouvez définir la stratégie en fonction des appartenances aux groupes des utilisateurs qui ont autorisé les applications. Par exemple, un administrateur peut décider de définir une stratégie qui révoque les applications rares si elles demandent des autorisations élevées, uniquement si l’utilisateur qui a autorisé les autorisations est membre du groupe administrateurs.
 
-Sinon, vous pouvez aussi créer la stratégie en cliquant sur **Contrôler** suivi de **Stratégies**. Cliquez ensuite sur **Créer une stratégie** suivi de **OAuth app policy** (Stratégie d’application OAuth).
+Vous pouvez également créer la stratégie en cliquant sur **contrôle** , puis sur **stratégies**. Cliquez ensuite sur **créer une stratégie** , puis sur stratégie d' **application OAuth**.
 
-   ![Nouvelle stratégie d’application OAuth](media/app-permissions-policy.png)
+   ![nouvelle stratégie d’application OAuth](media/app-permissions-policy.png)
 
 ## <a name="oauth-app-anomaly-detection-policies"></a>Stratégies de détection des anomalies d’application OAuth
 
@@ -55,6 +55,7 @@ En plus des stratégies d’application OAuth que vous pouvez créer, les strat�
 | --- | --- |
 | Nom d’application OAuth trompeur | Analyse les applications OAuth connectées à votre environnement et déclenche une alerte lorsqu’une application avec un nom trompeur est détectée. Les noms trompeurs, tels que les lettres étrangères ressemblant à des lettres latines, peuvent indiquer une tentative de déguisage d’une application malveillante en tant qu’application connue et approuvée. |
 | Nom du serveur de publication trompeur pour une application OAuth | Analyse les applications OAuth connectées à votre environnement et déclenche une alerte lorsqu’une application avec un nom d’éditeur trompeur est détectée. Les noms de serveur de publication trompeurs, tels que les lettres étrangères ressemblant à des lettres latines, peuvent indiquer une tentative de déguisement d’application malveillante en tant qu’application provenant d’un éditeur connu et approuvé. |
+| Consentement de l’application OAuth malveillante | Analyse les applications OAuth connectées à votre environnement et déclenche une alerte lorsqu’une application potentiellement malveillante est autorisée. Les applications OAuth malveillantes peuvent être utilisées dans le cadre d’une campagne de hameçonnage pour tenter de compromettre les utilisateurs. Cette détection tire parti de l’expertise en matière de recherche et d’informations sur les menaces de Microsoft pour identifier les applications malveillantes. |
 
 <!--| Suspicious OAuth app name | Scans OAuth apps connected to your environment and triggers an alert when an app with a suspicious name is detected. Suspicious names, such as names of known apps published by unknown publishers, could indicate an attempt to disguise a malicious app as a known and trusted app. |
 | Non-secure redirect URL is used by an OAuth app | Scans OAuth apps connected to your environment and triggers an alert when an app uses a non-secure redirect URL (for example, does not use the HTTPS protocol), which exposes sensitive data to interception. |-->
@@ -62,7 +63,7 @@ En plus des stratégies d’application OAuth que vous pouvez créer, les strat�
 > [!NOTE]
 > Les stratégies de détection des anomalies sont uniquement disponibles pour les applications OAuth autorisées dans votre Azure Active Directory.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 > [!div class="nextstepaction"]
 > [Stratégies de protection des données](data-protection-policies.md)

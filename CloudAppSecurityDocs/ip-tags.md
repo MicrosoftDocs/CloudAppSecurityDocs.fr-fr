@@ -1,6 +1,6 @@
 ---
-title: Définir des plages d’adresses IP et des balises - Cloud App Security | Microsoft Docs
-description: Cet article fournit des instructions sur l’utilisation des balises et des catégories d’adresses IP.
+title: Définir des plages d’adresses IP et des balises-Cloud App Security | Microsoft Docs
+description: Cet article fournit des instructions sur l’utilisation des balises IP et des catégories d’adresses IP.
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -14,72 +14,71 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: fbea8df8a5fb16fabde89a48d8ac8227fb37a1c5
-ms.sourcegitcommit: f81dd93841d7e5d01a1edaaf464c8656c4e7efda
+ms.openlocfilehash: c26c5cea5a366220c5f8fdff030db1240a7e1a73
+ms.sourcegitcommit: 9fe879ce7f07933866191724de5f108f43e3f923
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76814231"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77566930"
 ---
-#  <a name="IPtagsandRanges"></a> Utilisation des balises et des plages d’adresses IP
+#  <a name="IPtagsandRanges"></a>Utilisation des balises et des plages d’adresses IP
 
 *S’applique à : Microsoft Cloud App Security*
 
-Pour identifier facilement les adresses IP connues, telles que celles de votre bureau, vous devez définir des plages d’adresses IP. Les plages d’adresses IP vous permettent de baliser, classer et personnaliser la façon dont les journaux et les alertes sont affichés et examinés. Chaque groupe de plages IP peut être classé selon une liste prédéfinie de catégories d’adresses IP. Vous pouvez également créer des balises IP personnalisées pour vos plages d’adresses IP. En outre, vous pouvez remplacer les informations de géolocalisation publiques en fonction de votre connaissance du réseau interne. IPv4 et IPv6 sont pris en charge.
+Pour identifier facilement les adresses IP connues, telles que les adresses IP de votre bureau physique, vous devez définir des plages d’adresses IP. Les plages d’adresses IP vous permettent d’étiqueter, de classer et de personnaliser la façon dont les journaux et les alertes sont affichés et examinés. Chaque groupe de plages IP peut être classé selon une liste prédéfinie de catégories d’adresses IP. Vous pouvez également créer des balises d’adresse IP personnalisées pour vos plages d’adresses IP. En outre, vous pouvez remplacer les informations de géolocalisation publiques en fonction de la connaissance de votre réseau interne. IPv4 et IPv6 sont pris en charge.
 
-Cloud App Security est préconfiguré avec des plages d’adresses IP intégrées pour les fournisseurs de cloud répandus comme Azure et Office 365. De plus, nous avons des balises intégrées basées sur Microsoft Threat Intelligence, notamment pour le proxy anonyme, Botnet et Tor. Vous pouvez voir la liste complète dans la liste déroulante de la page des plages d’adresses IP.
+Cloud App Security est préconfiguré avec des plages d’adresses IP intégrées pour les fournisseurs de Cloud populaires tels qu’Azure et Office 365. En outre, nous disposons d’un marquage intégré basé sur les informations sur les menaces de Microsoft, notamment le proxy anonyme, le botnet et les TDR. Vous pouvez voir la liste complète dans la liste déroulante de la page plages d’adresses IP.
 
 > [!NOTE]
 >
-> - Pour utiliser ces balises intégrées dans le cadre d’une recherche, reportez-vous à leur ID dans la documentation des API Cloud App Security.
-> - Vous pouvez ajouter des plages d’adresses IP en bloc en créant un script à l’aide de l’**API des plages d’adresses IP**.
+> - Pour utiliser ces balises intégrées dans le cadre d’une recherche, reportez-vous à leur ID dans la documentation de l’API Cloud App Security.
+> - Vous pouvez ajouter des plages IP en bloc en créant un script à l’aide de l' **API de plages d’adresses IP**.
 > - Vous ne pouvez pas ajouter de plages IP avec des adresses IP qui se chevauchent.
-> - Pour afficher la documentation de l’API, dans la barre de menus du portail Cloud App Security, cliquez sur le point d’interrogation puis sur **Documentation sur les API**.
+> - Pour afficher la documentation de l’API, dans la barre de menus Cloud App Security portail, cliquez sur le point d’interrogation, puis sur documentation de l' **API**.
 
-Les balises d’adresse IP intégrées et les balises IP personnalisées sont considérées de manière hiérarchique. Les balises IP personnalisées sont prioritaires par rapport aux balises IP intégrées. Par exemple, si une adresse IP est marquée comme étant **Risquée** en fonction de l’intelligence des menaces, mais qu’il existe une balise IP personnalisée qui l’identifie comme appartenant à l’**Entreprise**, les balises et la catégorie personnalisées sont prioritaires.
+Les balises d’adresse IP intégrées et les balises IP personnalisées sont considérées comme hiérarchiques. Les balises IP personnalisées sont prioritaires sur les balises IP intégrées. Par exemple, si une adresse IP est marquée comme **risquée** en fonction de l’intelligence des menaces, mais qu’il existe une balise IP personnalisée qui l’identifie en tant qu' **entreprise**, les balises et la catégorie personnalisées sont prioritaires.
 
 >[!NOTE]
-> Lorsqu’une adresse IP est marquée comme une adresse d’entreprise, elle est indiquée dans le portail, et les adresses IP sont exclues du déclenchement de détections spécifiques (par exemple, un déplacement impossible), car ces adresses IP sont considérées comme approuvées.
->
+> Quand une adresse IP est marquée comme entreprise, elle est reflétée dans le portail, et les adresses IP sont exclues du déclenchement de détections spécifiques (par exemple, [voyage impossible](anomaly-detection-policy.md#impossible-travel)), car ces adresses IP sont considérées comme approuvées.
 
 ## <a name="create-an-ip-address-range"></a>Créer une plage d’adresses IP
 
-Dans la barre de menus, cliquez sur l’icône des paramètres. Sélectionnez **Plage d’adresses IP**. Cliquez sur le signe + pour ajouter des plages d’adresses IP et définissez les champs suivants :
+Dans la barre de menus, cliquez sur l’icône Paramètres. Sélectionnez **plages d’adresses IP**. Cliquez sur le signe plus (+) pour ajouter des plages d’adresses IP et définir les champs suivants :
 
-1. Affectez un **Nom** à votre plage IP. Le nom n’apparaît pas dans le journal des activités ; il sert uniquement à gérer votre plage IP.
+1. **Nommez** votre plage d’adresses IP. Le nom n’apparaît pas dans le journal des activités, il est utilisé uniquement pour gérer votre plage d’adresses IP.
 
-    Pour inclure la plage IP dans une catégorie d’adresses IP, sélectionnez une catégorie dans le menu déroulant.
+    Pour inclure la plage d’adresses IP dans une catégorie d’adresses IP, sélectionnez une catégorie dans le menu déroulant.
 
-2. Entrez la **plage d’adresses IP** que vous souhaitez configurer, puis cliquez sur le bouton « + ». Vous pouvez ajouter autant d’adresses et de sous-réseaux IP que vous le souhaitez en utilisant la notation de préfixe réseau (également appelée notation CIDR), par exemple 192.168.1.0/32.
+2. Entrez la **plage d’adresses IP** que vous souhaitez configurer, puis cliquez sur le bouton « + ». Vous pouvez ajouter autant d’adresses IP et de sous-réseaux que vous le souhaitez à l’aide de la notation de préfixe réseau (également appelée notation CIDR), par exemple 192.168.1.0/32.
 
-3. Les **catégories** permettent d’identifier facilement les activités liées aux adresses IP intéressantes. Les catégories sont disponibles dans le portail. Toutefois, elles nécessitent généralement une configuration de la part de l’utilisateur afin de déterminer quelles adresses IP sont incluses dans chaque catégorie. L’exception à cette configuration est la catégorie « Risqué », qui comprend deux balises IP : proxy anonyme et Tor.
+3. Les **catégories** sont utilisées pour reconnaître facilement les activités à partir d’adresses IP intéressantes. Les catégories sont disponibles dans le portail. Toutefois, ils nécessitent généralement une configuration utilisateur pour déterminer les adresses IP qui sont incluses dans chaque catégorie. L’exception à cette configuration est la catégorie « risquée », qui comprend deux balises IP : proxy anonyme et TDR.
 
-    Les catégories IP suivantes sont disponibles :
+    Les catégories d’adresses IP suivantes sont disponibles :
 
-    - **Administratif** : toutes les adresses IP de vos administrateurs.
+    - **Administration**: ces adresses IP doivent correspondre à toutes les adresses IP de vos administrateurs.
 
-    - **Fournisseur de cloud** : adresses IP utilisées par votre fournisseur de cloud.
+    - **Fournisseur de Cloud**: ces adresses IP doivent être les adresses IP utilisées par votre fournisseur de Cloud.
 
-    - **Entreprise** : toutes les adresses IP de votre réseau interne, de vos succursales et de vos adresses d’itinérance Wi-Fi.
+    - **Entreprise**: ces adresses IP doivent être toutes les adresses IP de votre réseau interne, de vos succursales et de vos adresses d’itinérance Wi-Fi.
 
-    - **Risqué** : toutes les adresses IP que vous considérez comme risquées. Celles-ci peuvent inclure les adresses IP suspectes déjà constatées, les adresses IP appartenant aux réseaux de vos concurrents, et ainsi de suite.
+    - **Risqué**: ces adresses IP doivent être toutes les adresses IP que vous considérez comme risquées. Ils peuvent inclure des adresses IP suspectes que vous avez vues dans le passé, des adresses IP dans les réseaux de vos concurrents, et ainsi de suite.
 
-    - **VPN** : toutes les adresses IP que vous utilisez pour les télétravailleurs.
+    - **VPN**: ces adresses IP doivent être toutes les adresses IP que vous utilisez pour les travailleurs à distance.
 
-4. Pour **baliser** les activités liées à ces adresses IP, entrez une balise. Il suffit d’entrer un mot dans la zone pour créer la balise. Une fois la balise configurée, vous pouvez l’ajouter facilement à des plages IP supplémentaires en la sélectionnant dans la liste. Vous pouvez ajouter autant de balises IP que vous le souhaitez pour chaque plage. Vous pouvez utiliser des balises IP quand vous créez des stratégies.  En plus des balises IP que vous configurez, Cloud App Security a des balises intégrées qui ne sont pas configurables. Vous pouvez voir la liste des balises sous le [filtre de balises IP](activity-filters.md).
+4. Pour **baliser** les activités à partir de ces adresses IP, entrez une balise. La saisie d’un mot dans la zone crée la balise. Une fois que vous avez déjà configuré une étiquette, vous pouvez l’ajouter facilement à des plages d’adresses IP supplémentaires en la sélectionnant dans la liste. Vous pouvez ajouter autant de balises IP que vous le souhaitez pour chaque plage. Les balises IP peuvent être utilisées lors de la création de stratégies.  Avec les balises IP que vous configurez, Cloud App Security contient des balises intégrées qui ne sont pas configurables. Vous pouvez voir la liste des balises sous le [filtre des balises IP](activity-filters.md).
     > [!NOTE]
-    > - L’emplacement et l’ISP enregistré remplacent les valeurs par défaut.
+    > - L’emplacement et le fournisseur de services Internet inscrits remplacent les valeurs par défaut.
     > - Les balises IP sont ajoutées à l’activité sans remplacer les données.
 
-5. Dans les champs qui permettent de **remplacer l’emplacement** ou l’ISP de l’organisation associés à ces adresses, entrez la nouvelle valeur. Par exemple, supposez que vous avez une adresse IP considérée comme publique en Irlande. Toutefois, vous savez que cette adresse IP est aux États-Unis. Vous allez remplacer l’emplacement de cette plage d’adresses IP.
+5. Pour **remplacer les** champs d’emplacement ou d’organisation (ISP) pour ces adresses, entrez une nouvelle valeur. Par exemple, imaginons que vous avez une adresse IP qui est considérée publiquement en Irlande. Toutefois, vous savez que l’adresse IP se trouve aux États-Unis. Vous allez remplacer l’emplacement de cette plage d’adresses IP.
 
-6. Entrez un **ISP enregistré**. Ce paramètre remplace les données dans vos activités.
+6. Entrez un **fournisseur de services Internet inscrit**. Ce paramètre remplace les données dans vos activités.
 
-7. Quand vous avez terminé, cliquez sur **Créer**.
+7. Lorsque vous avez terminé, cliquez sur **créer**.
 
-    ![plage plage](media/newipaddress-range.png "plage de nouvelles adresses IP")
+    ![plage plage](media/newipaddress-range.png "plage plage")
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 > [!div class="nextstepaction"]
 > [Configurer Cloud Discovery](set-up-cloud-discovery.md)
