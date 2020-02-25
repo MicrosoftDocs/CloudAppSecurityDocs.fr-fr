@@ -7,12 +7,12 @@ ms.service: cloud-app-security
 ms.topic: article
 ms.date: 12/04/2019
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 40105f8e4a43f61d5f5c00c3fab1c6b58b03e940
-ms.sourcegitcommit: db5ec79d219dd6674939c872ace7cd2ca80860a4
+ms.openlocfilehash: e0fb859ee6036340c75d6062f1c62a9ad4a76840
+ms.sourcegitcommit: 9fe879ce7f07933866191724de5f108f43e3f923
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75190149"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77566900"
 ---
 # <a name="how-cloud-app-security-helps-protect-your-office-365-environment"></a>Comment Cloud App Security aide à protéger votre environnement Office 365
 
@@ -24,13 +24,13 @@ La connexion d’Office 365 à Cloud App Security vous permet d’améliorer l�
 
 L’utilisation du connecteur Office 365 fournit une protection pour les produits suivants :
 
-- Office 365
+- Office 365
 - Dynamics 365 CRM
 - Exchange
-- OneDrive Entreprise
+- OneDrive
 - Power BI
 - SharePoint
-- Personnel
+- Équipes
 
 ## <a name="main-threats"></a>Menaces principales
 
@@ -58,10 +58,10 @@ Vous pouvez utiliser les modèles de stratégie intégrés suivants pour détect
 
 | Type | Nom |
 | ---- | ---- |
-| Stratégie de détection des anomalies intégrée | [Activité depuis des adresses IP anonymes](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)<br />[Activité à partir de pays peu fréquents](anomaly-detection-policy.md#activity-from-infrequent-country)<br />[Activité à partir d’adresses IP suspectes](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)<br />[Voyage impossible](anomaly-detection-policy.md#impossible-travel)<br />[Activité effectuée par l’utilisateur terminé](anomaly-detection-policy.md#activity-performed-by-terminated-user) (requiert AAD comme IDP)<br />[Détection de programme malveillant](anomaly-detection-policy.md#malware-detection)<br />[Plusieurs tentatives de connexion infructueuses](anomaly-detection-policy.md#multiple-failed-login-attempts)<br />[Détection de ransomware](anomaly-detection-policy.md#ransomware-activity)<br />[Activité suspecte de suppression d’e-mails (préversion)](anomaly-detection-policy.md#suspicious-email-deletion-activity-preview)<br />[Boîte de réception suspecte transférant](anomaly-detection-policy.md#suspicious-inbox-forwarding)des[activités de suppression de fichiers inhabituels](anomaly-detection-policy.md#unusual-activities-by-user)<br />[Activités de partage de fichiers inhabituelles](anomaly-detection-policy.md#unusual-activities-by-user)<br />[Activités de téléchargement de plusieurs fichiers inhabituelles](anomaly-detection-policy.md#unusual-activities-by-user) |
-| Modèle de stratégie d’activité | Connexion à partir d’une adresse IP à risques<br />Téléchargement massif par un même utilisateur<br />Activité de ransomware potentielle |
+| Stratégie de détection des anomalies intégrée | [Activité à partir d’adresses IP anonymes](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)<br />[Activité à partir d’un pays peu fréquent](anomaly-detection-policy.md#activity-from-infrequent-country)<br />[Activité à partir d’adresses IP suspectes](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)<br />[Voyage impossible](anomaly-detection-policy.md#impossible-travel)<br />[Activité effectuée par l’utilisateur terminé](anomaly-detection-policy.md#activity-performed-by-terminated-user) (requiert AAD comme IDP)<br />[Détection de programmes malveillants](anomaly-detection-policy.md#malware-detection)<br />[Plusieurs tentatives de connexion ayant échoué](anomaly-detection-policy.md#multiple-failed-login-attempts)<br />[Détection de ransomware](anomaly-detection-policy.md#ransomware-activity)<br />[Activité suspecte de suppression d’e-mails (préversion)](anomaly-detection-policy.md#suspicious-email-deletion-activity-preview)<br />[Boîte de réception suspecte transférant](anomaly-detection-policy.md#suspicious-inbox-forwarding)des[activités de suppression de fichiers inhabituels](anomaly-detection-policy.md#unusual-activities-by-user)<br />[Activités de partage de fichiers inhabituelles](anomaly-detection-policy.md#unusual-activities-by-user)<br />[Activités de téléchargement de plusieurs fichiers inhabituelles](anomaly-detection-policy.md#unusual-activities-by-user) |
+| Modèle de stratégie d’activité | Connexion à partir d’une adresse IP à risque<br />Téléchargement en masse par un seul utilisateur<br />Activité potentielle de ransomware |
 | Modèle de stratégie de fichier | Détecter un fichier partagé avec un domaine non autorisé<br />Détecter un fichier partagé avec des adresses de messagerie personnelles<br />Détecter les fichiers avec PII/PCI/PHI |
-| Stratégie de détection des anomalies d’application OAuth | [Nom d’application OAuth trompeur](app-permission-policy.md#oauth-app-anomaly-detection-policies)<br />[Nom du serveur de publication trompeur pour une application OAuth](app-permission-policy.md#oauth-app-anomaly-detection-policies) |
+| Stratégie de détection des anomalies d’application OAuth | [Nom d’application OAuth trompeur](app-permission-policy.md#oauth-app-anomaly-detection-policies)<br />[Nom du serveur de publication trompeur pour une application OAuth](app-permission-policy.md#oauth-app-anomaly-detection-policies)<br />[Consentement de l’application OAuth malveillante](anomaly-detection-policy.md#unusual-activities-by-user) |
 
 Pour plus d’informations sur la création de stratégies, consultez [créer une stratégie](control-cloud-apps-with-policies.md#create-a-policy).
 
@@ -71,7 +71,7 @@ Outre la surveillance des menaces potentielles, vous pouvez appliquer et automat
 
 | Type | Action |
 | ---- | ---- |
-| Gouvernance des données | **OneDrive :**<br /> -Hériter des autorisations du dossier parent<br /> -Rendre privé le fichier/dossier<br /> -Placer le fichier/dossier dans la quarantaine administrateur<br /> -Placer le fichier/dossier en quarantaine utilisateur<br /> -Fichier/dossier de la corbeille<br /> -Supprimer un collaborateur spécifique<br /> -Supprimer les collaborateurs externes du fichier/dossier<br /> -Appliquer l’étiquette de classification Azure Information Protection<br /> -Supprimer Azure Information Protection étiquette de classification<br /> **SharePoint**<br /> -Hériter des autorisations du dossier parent<br /> -Rendre privé le fichier/dossier<br /> -Placer le fichier/dossier dans la quarantaine administrateur<br /> -Placer le fichier/dossier en quarantaine utilisateur<br /> -Placer le fichier/dossier en quarantaine utilisateur et ajouter des autorisations de propriétaire<br /> -Fichier/dossier de la corbeille<br /> -Supprimer les collaborateurs externes du fichier/dossier<br /> -Supprimer un collaborateur spécifique<br /> -Appliquer l’étiquette de classification Azure Information Protection<br /> -Supprimer Azure Information Protection étiquette de classification |
+| Gouvernance des données | **Espace**<br /> -Hériter des autorisations du dossier parent<br /> -Rendre privé le fichier/dossier<br /> -Placer le fichier/dossier dans la quarantaine administrateur<br /> -Placer le fichier/dossier en quarantaine utilisateur<br /> -Fichier/dossier de la corbeille<br /> -Supprimer un collaborateur spécifique<br /> -Supprimer les collaborateurs externes du fichier/dossier<br /> -Appliquer l’étiquette de classification Azure Information Protection<br /> -Supprimer Azure Information Protection étiquette de classification<br /> **SharePoint**<br /> -Hériter des autorisations du dossier parent<br /> -Rendre privé le fichier/dossier<br /> -Placer le fichier/dossier dans la quarantaine administrateur<br /> -Placer le fichier/dossier en quarantaine utilisateur<br /> -Placer le fichier/dossier en quarantaine utilisateur et ajouter des autorisations de propriétaire<br /> -Fichier/dossier de la corbeille<br /> -Supprimer les collaborateurs externes du fichier/dossier<br /> -Supprimer un collaborateur spécifique<br /> -Appliquer l’étiquette de classification Azure Information Protection<br /> -Supprimer Azure Information Protection étiquette de classification |
 | Gouvernance des utilisateurs | -Notifier l’utilisateur en cas d’alerte (via Azure AD)<br /> -Exiger que l’utilisateur se connecte à nouveau (via Azure AD)<br /> -Suspendre l’utilisateur (via Azure AD) |
 | Gouvernance des applications OAuth | -Revoke-révoquer l’autorisation d’application OAuth |
 
@@ -81,7 +81,7 @@ Pour plus d’informations sur la correction des menaces à partir des applicati
 
 Passez en revue nos meilleures pratiques en matière de [sécurisation et de collaboration avec les utilisateurs externes](best-practices.md#secure-collaboration-with-external-users-by-enforcing-real-time-session-controls) , [bloquant et protégeant le téléchargement de données sensibles sur des appareils non gérés ou risqués](best-practices.md#block-and-protect-download-of-sensitive-data-to-unmanaged-or-risky-devices).
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 > [!div class="nextstepaction"]
 > [Comment connecter Office 365 à Microsoft Cloud App Security](connect-office-365-to-microsoft-cloud-app-security.md)
