@@ -15,17 +15,17 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: d2dce554b959c14ba32c92f27579d5525069b1f3
-ms.sourcegitcommit: 9fe879ce7f07933866191724de5f108f43e3f923
+ms.sourcegitcommit: 445a7c208455e6ce2c4e13b028c811f4c3486290
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "77566857"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78342109"
 ---
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>Bénéficiez d’une analyse comportementale et d’une détection des anomalies instantanées
 
 *S’applique à : Microsoft Cloud App Security*
 
-Les stratégies de détection des anomalies d’Microsoft Cloud App Security fournissent une analyse comportementale des utilisateurs et des entités (UEBA) et des Machine Learning (ML) prêts à l’emploi afin que vous puissiez exécuter immédiatement la détection avancée des menaces dans votre environnement Cloud. Étant donné qu’elles sont automatiquement activées, les nouvelles stratégies de détection des anomalies fournissent des résultats immédiats en fournissant des détections immédiates, ciblant de nombreuses anomalies comportementales au sein de vos utilisateurs, ainsi que les ordinateurs et les appareils connectés à votre réseau.  En outre, les nouvelles stratégies exposent davantage de données à partir du moteur de détection Cloud App Security, pour vous aider à accélérer le processus d’investigation et à contenir des menaces continues.
+Les stratégies de détection des anomalies d’Microsoft Cloud App Security fournissent une analyse comportementale des utilisateurs et des entités (UEBA) et des Machine Learning (ML) prêts à l’emploi afin que vous puissiez exécuter immédiatement la détection avancée des menaces dans votre environnement Cloud. Étant donné qu’elles sont automatiquement activées, les nouvelles stratégies de détection des anomalies fournissent des résultats immédiats en fournissant des détections immédiates, ciblant de nombreuses anomalies comportementales au sein de vos utilisateurs, ainsi que les ordinateurs et les appareils connectés à votre réseau.  De plus, les nouvelles stratégies exposent davantage de données à partir du moteur de détection Cloud App Security pour vous aider à accélérer le processus d’investigation et à contenir des menaces continues.
 
 Les stratégies de détection des anomalies sont automatiquement activées, mais Cloud App Security présente une période d’apprentissage initiale de sept jours au cours de laquelle toutes les alertes de détection d’anomalie ne sont pas générées. Après cela, chaque session est comparée à l’activité, lorsque les utilisateurs étaient actifs, les adresses IP, les appareils, etc. détectés au cours du mois passé et le score de risque de ces activités.  Ces détections font partie du moteur de détection des anomalies heuristique qui Profile votre environnement et déclenche des alertes en ce qui concerne une ligne de base qui a été appris sur l’activité de votre organisation. Ces détections utilisent également des algorithmes de Machine Learning conçus pour profiler les utilisateurs et le modèle de connexion afin de réduire les faux positifs.
 
@@ -86,7 +86,7 @@ Les stratégies de détection des anomalies suivantes sont disponibles :
 
 ### <a name="ransomware-activity"></a>Activité de ransomware
 
-* Cloud App Security étendu ses fonctionnalités de détection de ransomwares à la détection d’anomalies pour garantir une couverture plus complète contre les attaques par ransomware sophistiquées. Grâce à notre expertise en matière de recherche en sécurité pour identifier les modèles de comportement qui reflètent l’activité des ransomware, Cloud App Security garantit une protection holistique et robuste. Si Cloud App Security identifie, par exemple, un taux élevé de chargements de fichiers ou d’activités de suppression de fichiers, il peut représenter un processus de chiffrement défavorable. Ces données sont collectées dans les journaux reçus à partir des API connectées et sont ensuite associées à des modèles comportementals appris et à des informations sur les menaces, par exemple, des extensions de ransomware connues. Pour plus d’informations sur la façon dont Cloud App Security détecte les ransomware, consultez [protection de votre organisation contre les ransomware](use-case-ransomware.md).
+* Cloud App Security a étendu ses fonctionnalités de détection de ransomware à la détection d’anomalies pour garantir une couverture plus complète contre les attaques par ransomware sophistiqué. Grâce à notre expertise en matière de recherche sur la sécurité pour identifier des modèles de comportement qui reflètent l’activité des ransomware, Cloud App Security garantit une protection holistique et robuste. Si Cloud App Security identifie, par exemple, un taux élevé de chargements de fichiers ou d’activités de suppression de fichiers, il peut représenter un processus de chiffrement défavorable. Ces données sont collectées dans les journaux reçus à partir des API connectées et sont ensuite associées à des modèles comportementals appris et à des informations sur les menaces, par exemple, des extensions de ransomware connues. Pour plus d’informations sur la façon dont Cloud App Security détecte les ransomware, consultez [protection de votre organisation contre les ransomware](use-case-ransomware.md).
 
 ### <a name="activity-performed-by-terminated-user"></a>Activité effectuée par l’utilisateur terminé
 
@@ -108,7 +108,7 @@ La détection recherche les utilisateurs dont le compte a été terminé dans Az
 
 ### <a name="suspicious-inbox-manipulation-rules"></a>Règles de manipulation de boîtes de réception suspectes
 
-* Cette détection Profile votre environnement et déclenche des alertes lorsque des règles suspectes qui suppriment ou déplacent des messages ou des dossiers sont définies dans la boîte de réception d’un utilisateur. Cela peut indiquer que le compte de l’utilisateur est compromis, que les messages sont intentionnellement masqués et que la boîte aux lettres est utilisée pour distribuer le courrier indésirable ou les logiciels malveillants dans votre organisation.
+* Cette détection Profile votre environnement et déclenche des alertes lorsque des règles suspectes qui suppriment ou déplacent des messages ou des dossiers sont définies dans la boîte de réception d’un utilisateur. Cela peut indiquer que le compte de l’utilisateur est compromis, que des messages sont intentionnellement masqués et que la boîte aux lettres est utilisée pour distribuer du courrier indésirable ou des logiciels malveillants dans votre organisation.
 
 ### <a name="suspicious-email-deletion-activity-preview"></a>Activité de suppression des e-mails suspects (version préliminaire)
 
@@ -153,7 +153,7 @@ Vous pouvez activer les actions de correction automatisées sur les alertes gén
 
 Pour affecter le moteur de détection des anomalies à la suppression ou à la surface des alertes en fonction de vos préférences :
 
-* Dans la stratégie de voyage impossible, vous pouvez définir le curseur de sensibilité pour déterminer le niveau de comportement anormal nécessaire avant qu’une alerte soit déclenchée. Par exemple, si vous la définissez sur faible, cela supprime les alertes de voyage impossibles à partir des emplacements communs d’un utilisateur et, si vous la définissez sur élevé, cela entraîne des alertes. Vous pouvez choisir parmi les niveaux de sensibilité suivants :
+* Dans la stratégie de voyage impossible, vous pouvez définir le curseur de sensibilité afin de déterminer le niveau de comportement anormal nécessaire pour déclencher une alerte. Par exemple, si vous la définissez sur faible, cela supprime les alertes de voyage impossibles à partir des emplacements communs d’un utilisateur et, si vous la définissez sur élevé, cela entraîne des alertes. Vous pouvez choisir parmi les niveaux de sensibilité suivants :
 
   * **Faible**: suppressions du système, du locataire et de l’utilisateur
   * **Moyenne**: suppressions du système et de l’utilisateur
@@ -167,7 +167,7 @@ Pour affecter le moteur de détection des anomalies à la suppression ou à la s
     | **Locataire** | Activités courantes basées sur l’activité précédente dans le locataire. Par exemple, la suppression d’activités d’un fournisseur de services Internet ayant précédemment été alerté au sein de votre organisation. |
     | **Utilisateur** | Activités courantes basées sur l’activité précédente de l’utilisateur spécifique. Par exemple, la suppression d’activités à partir d’un emplacement couramment utilisé par l’utilisateur. |
 
-* Vous pouvez également configurer si les alertes relatives à l’activité dans un pays peu fréquent, les adresses IP anonymes, les adresses IP suspectes et le voyage impossible doivent analyser les connexions ayant échoué ou réussi ou simplement les connexions.
+* Vous pouvez également configurer si les alertes d’activité dans un pays peu fréquent, les adresses IP anonymes, les adresses IP suspectes et le voyage impossible doivent analyser les connexions ayant échoué et celles ayant réussi, ou uniquement les connexions ayant réussi.
 
 > [!NOTE]
 > Par défaut, les protocoles de connexion hérités, tels que ceux qui n’utilisent pas multi-Factor Authentication (par exemple, WS-Trust), ne sont pas contrôlés par la stratégie de voyage impossible. Si votre organisation utilise des protocoles hérités, pour éviter les activités pertinentes manquantes, modifiez la stratégie et, sous **Configuration avancée**, définissez **analyser les activités de connexion** à **toutes les connexions**.
@@ -175,7 +175,7 @@ Pour affecter le moteur de détection des anomalies à la suppression ou à la s
 ## <a name="scope-anomaly-detection-policies"></a>Stratégies de détection des anomalies d’étendue
 
 Chaque stratégie de détection d’anomalie peut être étendue de manière indépendante pour s’appliquer uniquement aux utilisateurs et aux groupes que vous souhaitez inclure et exclure de la stratégie.
-Par exemple, vous pouvez définir l’activité à partir d’une détection de comté rare pour ignorer un utilisateur spécifique qui voyage fréquemment.
+Par exemple, sous Activité, vous pouvez définir la détection d’une région rare ou ignorer un utilisateur spécifique qui voyage fréquemment.
 
 Pour étendre une stratégie de détection d’anomalie :
 
