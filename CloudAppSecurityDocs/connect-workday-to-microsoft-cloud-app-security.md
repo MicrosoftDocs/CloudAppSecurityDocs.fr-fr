@@ -15,11 +15,11 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 032ed68260e178c176c631b41eb7dc64e869cbd3
-ms.sourcegitcommit: 00599ac6c64a4c62ed9ebdda3edb58f90f92c24d
+ms.sourcegitcommit: 445a7c208455e6ce2c4e13b028c811f4c3486290
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912195"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78342718"
 ---
 # <a name="connect-workday-to-microsoft-cloud-app-security-preview"></a>Connecter un jour ouvré à Microsoft Cloud App Security (version préliminaire)
 
@@ -35,16 +35,16 @@ Regardez notre vidéo de démarrage rapide qui montre comment configurer les com
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4n1ZO]
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Composants requis
 
 Le compte de jour de travail utilisé pour la connexion à Cloud App Security doit être membre d’un groupe de sécurité (nouveau ou existant). Nous vous recommandons d’utiliser un utilisateur système d’intégration de jours ouvrables. Les autorisations suivantes doivent être sélectionnées pour le groupe de sécurité pour les stratégies de sécurité de domaine suivantes :
 
 | Zone fonctionnelle | Stratégie de sécurité du domaine | Stratégie de sécurité des sous-domaines | Autorisations de rapport/tâche | Autorisations d'intégration |
 | --- | --- | --- | --- | --- |
 | System | Configuration : configuration du locataire – général | Configuration : configuration du client – sécurité | Afficher, modifier | Acquérir, put |
-| System | Administration de la sécurité | | Afficher, modifier | Acquérir, put |
-| System | Audit du système | | Affichez | Obtenir |
-| Effectifs | Données de travail : personnel | Données de travail : rapports de travail public | Affichez | Obtenir |
+| System | Gestion de la sécurité | | Afficher, modifier | Acquérir, put |
+| System | Audit du système | | Affichage | Télécharger |
+| Effectifs | Données de travail : personnel | Données de travail : rapports de travail public | Affichage | Télécharger |
 
 > [!NOTE]
 >
@@ -68,7 +68,7 @@ Pour plus d’informations sur la configuration des utilisateurs d’intégratio
 
 1. Dans la page **inscrire le client** de l’API, renseignez les informations suivantes, puis cliquez sur **OK**.
 
-    | Nom de champ | valeur |
+    | Nom de champ | Valeur |
     | ---- | ---- |
     | Nom du client | Microsoft Cloud App Security |
     | Type d’octroi client | Octroi de code d’autorisation |
@@ -81,8 +81,8 @@ Pour plus d’informations sur la configuration des utilisateurs d’intégratio
 
 1. Une fois inscrit, prenez note des paramètres suivants, puis cliquez sur **terminé**.
 
-    * ID de client
-    * Clé secrète client
+    * Client ID
+    * Secret du client
     * Point de terminaison de l’API REST de travail
     * Point de terminaison de jeton
     * Point de terminaison d’autorisation
@@ -107,16 +107,16 @@ Pour plus d’informations sur la configuration des utilisateurs d’intégratio
 
     ![Capture d’écran de l’autorisation d’accès à l’application](media/connect-workday-add-app-allow.png)
 
-1. De retour dans le portail Cloud App Security, vous devriez voir un message indiquant que la journée de travail a été correctement connectée. Vérifiez que la connexion a réussi en cliquant sur **Tester l’API**.
+1. De retour dans le portail Cloud App Security, vous devriez voir un message indiquant que la journée de travail a été correctement connectée. Vérifiez la connexion en cliquant sur **Test API** (Tester l’API).
 
-    Le test peut prendre quelques minutes. Une fois averti que la connexion a réussi, cliquez sur **Fermer**.
+    Le test peut prendre quelques minutes. Après avoir reçu un avis de réussite, cliquez sur **Fermer**.
 
 > [!NOTE]
 > Après la connexion de la journée de travail, vous recevrez des événements pendant sept jours avant la connexion.
 
 Si vous rencontrez des problèmes lors de la connexion de l’application, consultez [résolution des problèmes liés aux connecteurs d’application](troubleshooting-api-connectors-using-error-messages.md).
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 > [!div class="nextstepaction"]
 > [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)
