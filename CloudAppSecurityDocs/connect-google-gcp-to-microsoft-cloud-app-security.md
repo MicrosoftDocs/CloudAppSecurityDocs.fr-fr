@@ -10,11 +10,11 @@ ms.topic: conceptual
 ms.service: cloud-app-security
 ms.collection: M365-security-compliance
 ms.openlocfilehash: bf9260d0fc4c68ac27638fbefbfdd738a89ccd22
-ms.sourcegitcommit: 00599ac6c64a4c62ed9ebdda3edb58f90f92c24d
+ms.sourcegitcommit: 445a7c208455e6ce2c4e13b028c811f4c3486290
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912260"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78342717"
 ---
 # <a name="connect-google-cloud-platform-to-microsoft-cloud-app-security-preview"></a>Se connecter Google Cloud Platform à Microsoft Cloud App Security (version préliminaire)
 
@@ -33,7 +33,7 @@ Cet article fournit des instructions pour connecter Microsoft Cloud App Security
 
 Nous vous recommandons d’utiliser un projet dédié pour l’intégration et de restreindre l’accès au projet pour maintenir une intégration stable et empêcher les suppressions/modifications du processus d’installation. En outre, si votre instance GCP fait partie d’une instance G suite déjà connectée à Cloud App Security, nous vous recommandons de suivre le **pour une instance GCP qui fait partie d’une procédure d’organisation g suite connectée** lorsque vous ajoutez les détails de connexion GCP.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Composants requis
 
 L’utilisateur GCP d’intégration doit disposer des autorisations suivantes :
 
@@ -100,7 +100,7 @@ Prenez note de votre **ID d’organisation**. vous en aurez besoin plus tard. Po
 
 ## <a name="configure-cloud-app-security"></a>Configurer Cloud App Security
 
-* Dans le portail Cloud App Security, cliquez sur **Examiner**, puis sur **Applications connectées**.
+* Dans le portail Cloud App Security, cliquez sur **examiner** , puis sur **applications connectées**.
 
 ### <a name="add-the-gcp-connection-details"></a>Ajouter les détails de la connexion GCP
 
@@ -136,9 +136,9 @@ Pour fournir les détails de connexion GCP, sous **connecteurs d’applications*
 
 ### <a name="test-the-connection"></a>Tester la connexion
 
-Vérifiez que la connexion a réussi en cliquant sur **Tester l’API**.
+Vérifiez la connexion en cliquant sur **Test API** (Tester l’API).
 
-Le test peut prendre quelques minutes. Quand il est terminé, vous recevez une notification de réussite ou d’échec. Une fois que vous avez reçu une notification de réussite, cliquez sur **Terminé**.
+Le test peut prendre quelques minutes. Une fois l’opération terminée, vous recevez une notification de réussite ou d’échec. Une fois que vous avez reçu une notification de réussite, cliquez sur **Terminé**.
 
 Si vous rencontrez des problèmes lors de la connexion de l’application, consultez [résolution des problèmes liés aux connecteurs d’application](troubleshooting-api-connectors-using-error-messages.md).
 
@@ -155,7 +155,7 @@ La désactivation du récepteur d’exportation agrégé est actuellement possib
 | 3. répertoriez les récepteurs au niveau de l’organisation. | `gcloud logging sinks list --organization={ORGANIZATION_ID}` | [Liste des récepteurs de journalisation gcloud](https://cloud.google.com/sdk/gcloud/reference/logging/sinks/list) |
 | 4. Supprimez le récepteur approprié. | `gcloud logging sinks delete {SINK_NAME} --organization={ORGANIZATION_ID}` | [suppression des récepteurs de journalisation gcloud](https://cloud.google.com/sdk/gcloud/reference/logging/sinks/delete) |
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 > [!div class="nextstepaction"]
 > [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)
