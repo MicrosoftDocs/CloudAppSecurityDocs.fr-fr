@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 54db3f2b49150e37108fa7d376797df72f23a3d0
-ms.sourcegitcommit: be2c558eee71de02ec29632fc58256d49de0f86f
+ms.openlocfilehash: e9a2a4ecc10506a992ba4e01ad4fac09eef37275
+ms.sourcegitcommit: c303acdcb251c9b15930ab9ed701ab32dcaa6053
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78304863"
+ms.lasthandoff: 03/08/2020
+ms.locfileid: "78927956"
 ---
 # <a name="connect-box-to-microsoft-cloud-app-security"></a>Connecter la zone à Microsoft Cloud App Security
 
@@ -34,19 +34,16 @@ Cet article fournit des instructions pour connecter Microsoft Cloud App Security
 
 1. Si vous restreignez l’accès aux autorisations des applications, suivez cette étape. Sinon, passez à l’étape 2.
 
-    - Dans la console d’administration Box, cliquez sur l’icône des **paramètres,** puis sur paramètres d’entreprise ou **paramètres d’entreprise**.
-
-         ![paramètres d’entreprise Box](media/box-business-settings.png "paramètres d’entreprise Box")
-
-    - Cliquez sur l’onglet **applications** .
+    1. Connectez-vous avec un compte d’administrateur à votre compte Box.
+    1. Cliquez sur **applications** > **applications personnalisées** > **paramètres**.
 
          ![applications Box](media/box-apps.png "applications Box")
 
-    - Si l’option **applications non publiées** est sélectionnée, dans la zone de texte **à l’exception de** , ajoutez le Cloud App Security numéro de série de l’application :
+    1. Si l’option **Désactiver les applications non publiées par défaut** est sélectionnée, dans la zone **de texte à l’exception de** , ajoutez la clé d’API Cloud App Security :
 
-         |Centre de données|Numéro de série Microsoft Cloud App Security|
+         |Centre de données|Clé API Cloud App Security|
          |----|----|
-         |US1| `nduj1o3yavu30dii7e03c3n7p49cj2qh`|
+         |US1|`nduj1o3yavu30dii7e03c3n7p49cj2qh`|
          |Unis 2|`w0ouf1apiii9z8o0r6kpr4nu1pvyec75`|
          |US3|`dmcyvu1s9284i2u6gw9r2kb0hhve4a0r`|
          |EU1|`me9cm6n7kr4mfz135yt0ab9f5k4ze8qp`|
@@ -54,10 +51,10 @@ Cet article fournit des instructions pour connecter Microsoft Cloud App Security
 
         Cliquez ensuite sur **Enregistrer**. Pour plus d’informations sur la façon de déterminer à quel Cloud App Security Centre de données auquel vous êtes connecté, consultez [afficher votre centre de données](network-requirements.md#view-your-data-center).
 
-    ![paramètres Box à l’exception de](media/box-settings-except-for.png)
+        ![paramètres Box à l’exception de](media/box-settings-except-for.png)
 
-    > [!NOTE]
-    > Si vous êtes un client Adallom existant et que votre URL de console concerne Adallom et non Cloud App Security, utilisez ce numéro de série d’application : bwahmilhdlpbqy2ongkl119o3lrkoshc.
+        > [!NOTE]
+        > Si vous êtes un client Adallom existant et que votre URL de console concerne Adallom et non Cloud App Security, utilisez ce numéro de série d’application : `bwahmilhdlpbqy2ongkl119o3lrkoshc`.
 
 2. Dans le portail Cloud App Security, cliquez sur **examiner** , puis sur **applications connectées**.
 

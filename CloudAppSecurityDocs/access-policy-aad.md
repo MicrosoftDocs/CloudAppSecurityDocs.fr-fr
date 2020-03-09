@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4f0fc4fa4bef878f6b248357f8c9bae97e52bbce
-ms.sourcegitcommit: 11ae264d365e403f7761e880e82aad80afc31228
+ms.openlocfilehash: 5ab52bf417a6a0a6fea583fac9f64f70ea78e4a3
+ms.sourcegitcommit: 3f6ef6b97a0953470135d115323a00cf11441ab7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77674593"
+ms.lasthandoff: 03/08/2020
+ms.locfileid: "78927748"
 ---
 # <a name="access-policies"></a>Stratégies d'accès
 
@@ -80,14 +80,14 @@ Pour créer une nouvelle stratégie d’accès, procédez comme suit :
 ## <a name="next-steps"></a>Étapes suivantes :
 
 > [!div class="nextstepaction"]
-> [Blocage des téléchargements sur des appareils non gérés à l’aide de contrôles de session](use-case-proxy-block-session-aad.md)
+> [«PRÉCÉDENT : comment créer une stratégie de session](session-policy-aad.md)
+
+> [!div class="nextstepaction"]
+> [ENSUITE : Explorez les cas d’utilisation populaires»](use-case-proxy-block-session-aad.md)
 
 ## <a name="see-also"></a>Voir aussi
 
 > [!div class="nextstepaction"]
-> [Comment créer une stratégie de session](session-policy-aad.md)
-
-> [!div class="nextstepaction"]
-> [Explorez les cas d’utilisation populaires»](use-case-proxy-block-session-aad.md)
+> [Blocage des téléchargements sur des appareils non gérés à l’aide de contrôles de session](use-case-proxy-block-session-aad.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

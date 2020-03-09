@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: bedf7e135e0204427b492c8106f1db13fb538195
-ms.sourcegitcommit: 35749af5294c45a3d5ba8667f7a764fe4719575d
+ms.openlocfilehash: 8087effca6ceee2c65a9660391ac5606d8ef05e6
+ms.sourcegitcommit: 3f6ef6b97a0953470135d115323a00cf11441ab7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "77567172"
+ms.lasthandoff: 03/08/2020
+ms.locfileid: "78927800"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Protéger les applications avec Microsoft Cloud App Security contrôle d’application par accès conditionnel
 
@@ -54,7 +54,11 @@ Contrôle d’application par accès conditionnel permet de surveiller et de con
 
 La création d’une stratégie de session avec contrôle d’application par accès conditionnel vous permet de contrôler les sessions utilisateur en redirigeant l’utilisateur via un proxy inverse plutôt que directement vers l’application. À partir de là, les demandes et les réponses de l’utilisateur passent par Cloud App Security plutôt que directement à l’application.
 
-Quand une session est protégée par proxy, toutes les URL et cookies appropriés sont remplacés par Cloud App Security. Par exemple, si l’application retourne une page avec des liens dont les domaines se terminent par myapp.com, le lien est remplacé par des domaines se terminant par un nom semblable à celui-ci : myapp.com.us.cas.ms
+Quand une session est protégée par proxy, toutes les URL et cookies appropriés sont remplacés par Cloud App Security. Par exemple, si l’application retourne une page avec des liens dont les domaines se terminent par `myapp.com`, le domaine du lien est suivi d’un nom similaire à `*.cas.ms`, comme suit :
+
+|URL de l’application|URL remplacée|
+|---|---|
+|`myapp.com`|`myapp.com.us.cas.ms`|
 
 Cette méthode ne vous oblige à installer quoi que ce soit sur l’appareil, ce qui la rend idéale lors de l’analyse ou du contrôle des sessions à partir d’appareils non gérés ou d’utilisateurs partenaires.
 
