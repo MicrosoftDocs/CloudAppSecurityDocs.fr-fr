@@ -19,11 +19,11 @@
 - name: Démarrages rapides
   expanded: true
   items:
-    - name: Mise en route
+    - name: Bien démarrer
       href: getting-started-with-cloud-app-security.md
-    - name: meilleures pratiques recommandées.
+    - name: Bonnes pratiques
       href: best-practices.md
-- name: Didacticiels
+- name: Tutoriels
   items:
     - name: Découvrir et gérer Shadow IT
       href: tutorial-shadow-it.md
@@ -169,7 +169,7 @@
           href: proxy-deployment-aad.md
         - name: Intégrer et déployer le contrôle d’application par accès conditionnel pour tous les types d’applications
           href: proxy-deployment-any-app.md
-    - name: Examen
+    - name: Investigation
       href: investigate.md
       items:
         - name: Activités
@@ -197,7 +197,7 @@
           items:
             - name: Gérer des alertes
               href: managing-alerts.md
-    - name: Control
+    - name: Contrôler
       href: control.md
       items:
         - name: Contrôler les applications cloud avec des stratégies
@@ -282,13 +282,15 @@
           href: troubleshooting-siem.md
         - name: Résolution des problèmes de stratégies
           href: troubleshoot-policies.md
+        - name: "Résolution des problèmes - Qu’est-ce que cas.ms\_?"
+          href: troubleshooting-proxy-url.md
 - name: Ressources
   items:
     - name: Regardez nos webinaires
       href: webinars.md
     - name: Lisez nos livres électroniques
       href: e-books.md
-    - name: Archive des notes de mise en production
+    - name: Archive des notes de publication
       href: release-note-archive.md
     - name: Licences de la fiche technique
       href: 'https://aka.ms/mcaslicensing'
