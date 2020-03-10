@@ -11,15 +11,15 @@ ms.service: cloud-app-security
 ms.reviewer: dannyk
 ms.suite: ems
 ms.openlocfilehash: cafb971ae16b0c5bd48e041d36c16521b6e7e5d3
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.sourcegitcommit: 445a7c208455e6ce2c4e13b028c811f4c3486290
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74733692"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78342887"
 ---
 # <a name="tutorial-investigate-risky-users"></a>Tutoriel : Examiner des utilisateurs à risque
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Des équipes des opérations de sécurité sont mises au défi de surveiller l’activité de l’utilisateur, suspecte ou pas, dans toutes les dimensions de la surface d’attaque d’identité, à l’aide de plusieurs solutions de sécurité qui souvent ne sont pas connectées. Alors que de nombreuses sociétés ont maintenant des équipes de chasse pour identifier de façon proactive les menaces dans leurs environnements, le fait de connaître ce que vous recherchez dans la vaste quantité de données peut être un défi. Microsoft Cloud App Security simplifie désormais le problème en éliminant la nécessité de créer des règles de corrélation complexes et vous permet de détecter les attaques qui s’étendent sur votre cloud et réseau local.
 
@@ -99,7 +99,7 @@ Lorsque vous examinez un utilisateur, posez-vous ces questions sur les activité
 
 * Accédez au **journal d’activité** pour comprendre pourquoi cette activité a reçu un score élevé, tandis que d’autres n’ont pas reçu ce score. Vous pouvez définir la **Priorité d’examen** sur **Est défini** pour comprendre quelles activités sont suspectes. Par exemple, vous pouvez filtrer selon la Priorité d’examen pour toutes les activités qui se sont produites en Ukraine. Vous verrez alors si d’autres activités à risque se sont produites et à quel endroit l'utilisateur s'est connecté. Pour poursuivre l’examen, il est très facile de basculer vers d’autres aspects, par exemple les dernières activités non anormales dans le cloud et localement.
 
-## Phase 4 : Protéger votre organisation<a name="protect"></a>
+## Phase 4 : Protéger votre organisation<a name="protect"></a>
 
 Si votre enquête débouche sur la conclusion qu’un utilisateur est compromis, effectuez les étapes suivantes pour réduire le risque.
 
