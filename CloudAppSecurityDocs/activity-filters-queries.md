@@ -15,11 +15,11 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: f37fab4f9d611577deecb4884838431144f1647d
-ms.sourcegitcommit: 445a7c208455e6ce2c4e13b028c811f4c3486290
+ms.sourcegitcommit: 4f3883a9e85d0aaf2802b10433b221c3f1838d88
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78342826"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79285273"
 ---
 # <a name="activity-filters-and-queries"></a>Filtres et requêtes des activités
 

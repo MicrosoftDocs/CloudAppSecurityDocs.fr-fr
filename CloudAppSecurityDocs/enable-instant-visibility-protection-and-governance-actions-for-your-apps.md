@@ -15,11 +15,11 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 0aa55a99017a1768bf58fd2c2a40688c1a5c95e6
-ms.sourcegitcommit: 445a7c208455e6ce2c4e13b028c811f4c3486290
+ms.sourcegitcommit: 4f3883a9e85d0aaf2802b10433b221c3f1838d88
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78342719"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79285343"
 ---
 # <a name="connect-apps"></a>Connecter des applications
 

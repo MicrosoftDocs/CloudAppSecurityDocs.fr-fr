@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ca5fdade4d00e93d8adf6a79f3534be9e6ac7481
-ms.sourcegitcommit: 35749af5294c45a3d5ba8667f7a764fe4719575d
+ms.openlocfilehash: 06a9b0fc0a732f745d370fe28541b0a753bfe0cc
+ms.sourcegitcommit: 4f3883a9e85d0aaf2802b10433b221c3f1838d88
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "77567155"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79285723"
 ---
 # <a name="session-policies"></a>Stratégies de session
 
@@ -82,7 +82,7 @@ Pour créer une stratégie de session, procédez comme suit :
     >[!NOTE]
     >Les stratégies de session ne prennent pas en charge les applications mobiles et de bureau. Les applications mobiles et les applications de bureau peuvent également être bloquées ou autorisées par la création d’une stratégie d’accès.
 
-1. Si vous avez sélectionné l’option permettant de **contrôler le téléchargement de fichiers (avec DLP)**:
+1. Si vous avez sélectionné l’option permettant de **contrôler le téléchargement de fichiers (avec DLP)** :
 
     1. Sous **source** de l’activité dans la section **fichiers correspondant à toutes les conditions suivantes** , sélectionnez les filtres de fichiers supplémentaires à appliquer à la stratégie. Ces filtres peuvent inclure les options suivantes :
 
@@ -94,11 +94,11 @@ Pour créer une stratégie de session, procédez comme suit :
 
     3. Sous **actions**, sélectionnez l’un des éléments suivants :
 
-        * **Test (surveiller toutes les activités)**: définissez cette action pour autoriser explicitement le téléchargement en fonction des filtres de stratégie que vous définissez.
+        * **Test (surveiller toutes les activités)** : définissez cette action pour autoriser explicitement le téléchargement en fonction des filtres de stratégie que vous définissez.
 
-        * **Bloquer (bloquer le téléchargement de fichiers et surveiller toutes les activités)**: définissez cette action pour bloquer explicitement le téléchargement en fonction des filtres de stratégie que vous définissez. Pour plus d’informations, consultez fonctionnement du [téléchargement de blocs](#block-download).
+        * **Bloquer (bloquer le téléchargement de fichiers et surveiller toutes les activités)** : définissez cette action pour bloquer explicitement le téléchargement en fonction des filtres de stratégie que vous définissez. Pour plus d’informations, consultez fonctionnement du [téléchargement de blocs](#block-download).
 
-        * **Protéger (appliquer l’étiquette de classification pour télécharger et surveiller toutes les activités)**: cette option est disponible uniquement si vous avez sélectionné **contrôler le téléchargement du fichier (avec DLP)** sous **stratégie de session**. Si votre organisation utilise Azure Information Protection, vous pouvez définir une **action** pour appliquer un ensemble d’étiquettes de classification dans Azure information protection au fichier. Pour plus d’informations, consultez fonctionnement de [la protection du téléchargement](#protect-download).
+        * **Protéger (appliquer l’étiquette de classification pour télécharger et surveiller toutes les activités)** : cette option est disponible uniquement si vous avez sélectionné **contrôler le téléchargement du fichier (avec DLP)** sous **stratégie de session**. Si votre organisation utilise Azure Information Protection, vous pouvez définir une **action** pour appliquer un ensemble d’étiquettes de classification dans Azure information protection au fichier. Pour plus d’informations, consultez fonctionnement de [la protection du téléchargement](#protect-download).
 
 1. Vous pouvez **créer une alerte pour chaque événement correspondant avec la gravité de la stratégie** et définir une limite d’alerte. Indiquez si vous souhaitez que l’alerte soit envoyée par courrier électronique, message texte ou les deux.
 
@@ -168,11 +168,15 @@ Il est important d’informer les utilisateurs lorsqu’ils sont en violation d�
 
 Par exemple, si un utilisateur charge un fichier sans étiquette Azure Information Protection, un message peut s’afficher, expliquant que le fichier contient du contenu sensible nécessitant une étiquette appropriée. De même, si un utilisateur tente de télécharger un document à partir d’un appareil non géré, un message contenant des instructions sur la façon d’inscrire ce périphérique ou un message fournissant une explication supplémentaire de la raison pour laquelle l’appareil doit être inscrit peut s’afficher.
 
->[!div class="step-by-step"]
-> [« Précédent : intégration et déploiement contrôle d’application par accès conditionnel pour n’importe quelle application »](proxy-deployment-any-app.md)
-> [suivant : comment créer une stratégie d’accès»](access-policy-aad.md)
-
 ## <a name="next-steps"></a>Étapes suivantes :
+
+>[!div class="nextstepaction"]
+> [« PRÉCÉDENT : intégration et déploiement contrôle d’application par accès conditionnel pour une application »](proxy-deployment-any-app.md)
+
+>[!div class="nextstepaction"]
+> [Étape suivante : comment créer une stratégie d’accès»](access-policy-aad.md)
+
+## <a name="see-also"></a>Voir aussi
 
 > [!div class="nextstepaction"]
 > [Blocage des téléchargements sur des appareils non gérés à l’aide de Azure AD contrôle d’application par accès conditionnel](use-case-proxy-block-session-aad.md)

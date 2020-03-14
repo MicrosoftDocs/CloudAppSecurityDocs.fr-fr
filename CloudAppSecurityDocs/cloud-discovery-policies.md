@@ -15,11 +15,11 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: d3b5b62664abc9e82ad726e60c5105ef29ae0b16
-ms.sourcegitcommit: 445a7c208455e6ce2c4e13b028c811f4c3486290
+ms.sourcegitcommit: 4f3883a9e85d0aaf2802b10433b221c3f1838d88
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78342860"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79285483"
 ---
 # <a name="cloud-discovery-policies"></a>Stratégies Cloud Discovery
 

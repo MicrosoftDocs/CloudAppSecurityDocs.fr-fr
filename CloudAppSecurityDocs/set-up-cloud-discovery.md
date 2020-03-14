@@ -1,6 +1,6 @@
 ---
-title: Déployer Cloud Discovery - Cloud App Security | Microsoft Docs
-description: Cet article décrit la procédure de configuration pour rendre Cloud Discovery opérationnel.
+title: Déployer Cloud Discovery-Cloud App Security | Microsoft Docs
+description: Cet article décrit la procédure de configuration pour l’obtention de Cloud Discovery.
 author: shsagir
 ms.author: shsagir
 ms.service: cloud-app-security
@@ -11,104 +11,104 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: fe21bbb39b52981d7aeba0839367d2fd54073983
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.sourcegitcommit: 4f3883a9e85d0aaf2802b10433b221c3f1838d88
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74721100"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79285683"
 ---
 # <a name="set-up-cloud-discovery"></a>Configurer Cloud Discovery
 
 *S’applique à : Microsoft Cloud App Security*
 
-Cloud Discovery analyse vos journaux de trafic en s’appuyant sur le catalogue d’applications cloud Microsoft Cloud App Security, qui contient plus de 16 000 applications cloud. Les applications sont classées et évaluées en fonction de plus de 80 facteurs de risque afin de vous offrir une visibilité permanente de l’utilisation du Cloud, de l’occulter et de l’ombre des risques qu’il représente dans votre organisation.
+Cloud Discovery analyse vos journaux de trafic sur le catalogue d’applications Cloud de Microsoft Cloud App Security de plus de 16 000 applications Cloud. Les applications sont classées et évaluées en fonction de plus de 80 facteurs de risque afin de vous offrir une visibilité permanente de l’utilisation du Cloud, de l’occulter et de l’ombre des risques qu’il représente dans votre organisation.
 
-## <a name="snapshot-and-continuous-risk-assessment-reports"></a>Rapports d’instantanés et continus d’évaluation des risques
+## <a name="snapshot-and-continuous-risk-assessment-reports"></a>Rapports d’évaluation des risques et des instantanés
 
 Il existe deux types de rapports que vous pouvez générer :
 
-- **Rapports d’instantanés** : ils fournissent une visibilité ad hoc sur un ensemble de journaux de trafic que vous chargez manuellement à partir de vos pare-feu et proxys.
+- **Rapports d’instantané** : fournit une visibilité ad hoc sur un ensemble de journaux de trafic que vous chargez manuellement à partir de vos pare-feu et proxys.
 
-- **Rapports continus** : ils analysent tous les journaux qui sont transférés à partir de votre réseau à l’aide de Cloud App Security. Ils offrent une meilleure visibilité sur toutes les données et identifient automatiquement toute utilisation anormale à l’aide du moteur de détection des anomalies Machine Learning ou des stratégies personnalisées que vous définissez. Ces rapports peuvent être créés en vous connectant des façons suivantes :
+- **Rapports continus** : Analysez tous les journaux qui sont transférés à partir de votre réseau à l’aide de Cloud App Security. Ils offrent une meilleure visibilité sur toutes les données et identifient automatiquement l’utilisation anormale à l’aide du moteur de détection des anomalies Machine Learning ou à l’aide de stratégies personnalisées que vous définissez. Ces rapports peuvent être créés en se connectant des manières suivantes :
 
   - [Intégration de Microsoft Defender ATP](wdatp-integration.md): Cloud App Security s’intègre à Microsoft Defender-protection avancée contre les menaces (ATP) en mode natif, afin de simplifier le déploiement des Cloud Discovery, d’étendre les fonctionnalités de Cloud Discovery au-delà de votre réseau d’entreprise et d’activer l’investigation basée sur les machines.
-  - [Collecteur de journaux](discovery-docker.md) : les collecteurs de journaux vous permettent d’automatiser facilement le chargement manuel des journaux de votre réseau. Le collecteur de journaux s’exécute sur votre réseau et reçoit les journaux par le biais de Syslog ou FTP.
-  - [Intégration Zscaler](zscaler-integration.md) : si vous travaillez avec Cloud App Security et Zscaler, vous pouvez intégrer les deux produits pour améliorer la sécurité de votre expérience Cloud Discovery. Ensemble, Cloud App Security et Zscaler offrent un déploiement fluide de Cloud Discovery, le blocage automatique des applications non approuvées et l’évaluation des risques directement dans le portail de Zscaler.
+  - [Collecteur](discovery-docker.md)de journaux : les collecteurs de journaux vous permettent d’automatiser facilement le chargement du journal à partir de votre réseau. Le collecteur de journaux s’exécute sur votre réseau et reçoit les journaux par le biais de Syslog ou FTP.
+  - [Intégration de Zscaler](zscaler-integration.md): Si vous travaillez avec Cloud App Security et Zscaler, vous pouvez intégrer les deux produits pour améliorer votre expérience de Cloud Discovery de sécurité. Ensemble, Cloud App Security et Zscaler fournissent un déploiement transparent de Cloud Discovery, le blocage automatique des applications non approuvées et l’évaluation des risques directement dans le portail Zscaler.
   - [intégration de iboss](iboss-integration.md): Si vous travaillez avec Cloud App Security et iboss, vous pouvez intégrer les deux produits pour améliorer votre expérience de Cloud Discovery de sécurité. Ensemble, Cloud App Security et iboss fournissent un déploiement transparent de Cloud Discovery, le blocage automatique des applications non approuvées et l’évaluation des risques directement dans le portail iboss.
 
-## <a name="log-process-flow-from-raw-data-to-risk-assessment"></a>Flux du processus de journalisation : des données brutes à l’évaluation des risques
+## <a name="log-process-flow-from-raw-data-to-risk-assessment"></a>Journalisation du processus de journalisation : des données brutes à l’évaluation des risques
 
-Le processus de génération d’une évaluation des risques se compose des étapes suivantes. Le processus dure de quelques minutes à plusieurs heures en fonction de la quantité de données traitées.
+Le processus de génération d’une évaluation des risques se compose des étapes suivantes. Le processus prend entre quelques minutes et plusieurs heures selon la quantité de données traitées.
 
-- **Chargement** : Les journaux de trafic web de votre réseau sont chargés vers le portail.
+- **Upload** : les journaux de trafic Web de votre réseau sont chargés sur le portail.
 
-- **Extraction** : Cloud App Security analyse et extrait les données de trafic depuis les journaux de trafic à l’aide d’un analyseur dédié pour chaque source de données.
+- **Parse** : Cloud App Security analyse et extrait les données de trafic à partir des journaux de trafic à l’aide d’un analyseur dédié pour chaque source de données.
 
-- **Analyse** : Les données de trafic sont analysées par rapport au catalogue d’applications cloud dans le but d’identifier plus de 16 000 applications cloud et d’évaluer leur score de risque. Les utilisateurs et adresses IP actifs sont également identifiés dans le cadre de l’analyse.
+- **Analyser** : les données de trafic sont analysées par rapport au catalogue d’applications Cloud afin d’identifier plus de 16 000 applications Cloud et d’évaluer leur score de risque. Les utilisateurs actifs et les adresses IP sont également identifiés dans le cadre de l’analyse.
 
-- **Générer un rapport** : Un rapport d’évaluation des risques sur les données extraites des fichiers journaux est généré.
+- **Générer un rapport** : un rapport d’évaluation des risques des données extraites des fichiers journaux est généré.
 
 >[!NOTE]
-> Les données des rapports continus sont analysées deux fois par jour.
+> Les données de rapport continues sont analysées deux fois par jour.
 
-## Pare-feu et proxys pris en charge <a name="supported-firewalls-and-proxies"></a>
+## Pare-feu et proxys pris en charge<a name="supported-firewalls-and-proxies"></a>
 
-- Barracuda - Web Application Firewall (W3C)
-- Blue Coat Proxy SG - Journal d’accès (W3C)
+- Barracuda-pare-feu d’applications Web (W3C)
+- Proxy de couche bleue, SG-journal d’accès (W3C)
 - Check Point
-- Cisco ASA avec FirePOWER
-- Pare-feu Cisco ASA (pour les pare-feu Cisco ASA, il est nécessaire de définir le niveau d’informations sur 6)
+- Cisco ASA avec un niveau de puissance
+- Pare-feu Cisco ASA (pour les pare-feu Cisco ASA, il est nécessaire de définir le niveau d’information sur 6)
 - Cisco Cloud Web Security
 - Cisco FWSM
-- Cisco IronPort WSA
-- Cisco Meraki – Journal des URL
-- Clavister NGFW (Syslog)
+- WSA Cisco IronPort
+- Cisco Meraki – journal des URL
+- Clavister pare-feu (syslog)
 - ContentKeeper
 - Digital Arts i-FILTER
 - Forcepoint
-- Fortinet Fortigate
-- iboss Secure Cloud Gateway
+- Fortinet FortiGate
+- Passerelle Cloud sécurisée iboss
 - Juniper SRX
 - Juniper SSG
-- McAfee Secure Web Gateway
+- Passerelle Web sécurisée McAfee
 - Microsoft Forefront Threat Management Gateway (W3C)
 - Pare-feu de la série Palo Alto
-- SonicWall (anciennement Dell)
+- SonicWALL (anciennement Dell)
 - Sophos SG
 - Sophos XG
 - Sophos Cyberoam
 - Squid (commun)
 - Squid (natif)
 - Stormshield
-- Websense - Solutions de sécurité web - Rapport détaillé d’investigation (CSV)
-- Websense - Solutions de sécurité web - Journal d’activité Internet (CEF)
+- Websense-solutions de sécurité Web-rapport détaillé d’investigation (CSV)
+- Websense-solutions de sécurité Web-Journal d’activité Internet (CEF)
 - Zscaler
 
 > [!NOTE]
 > Cloud Discovery prend en charge les adresses IPv4 et IPv6.
 
-Si votre journal n’est pas pris en charge, sélectionnez **Autre** comme **Source de données**, et spécifiez l’appliance et le journal que vous essayez de charger. Votre journal est examiné par l’équipe d’analystes cloud de Cloud App Security et vous êtes averti si la prise en charge de votre type de journal est ajoutée. Vous pouvez également définir un analyseur personnalisé qui correspond à votre format. Pour plus d’informations, consultez [Utiliser un analyseur de journaux personnalisé](custom-log-parser.md).
+Si votre journal n’est pas pris en charge, sélectionnez **autre** comme **source de données** et spécifiez l’appliance et le journal que vous essayez de charger. Votre journal est examiné par l’équipe d’analystes du Cloud Cloud App Security et vous êtes averti si la prise en charge de votre type de journal est ajoutée. Vous pouvez également définir un analyseur personnalisé qui correspond à votre format. Pour plus d’informations, consultez [utiliser un analyseur de journal personnalisé](custom-log-parser.md).
 
 Attributs de données (selon la documentation du fournisseur) :
 
-| Source de données | URL de l’application cible | Adresse IP de l’application cible | Utilisateur | Adresse IP d’origine | Total du trafic | Octets chargés |
+| Source de données | URL de l’application cible | Adresse IP de l’application cible | Nom d'utilisateur | Adresse IP d’origine | Trafic total | Octets chargés |
 |----------------------------------------------|----------------------|----------------------|----------------------|----------------------|----------------------|----------------------|
 | Barracuda | **Oui** | **Oui** | **Oui** | **Oui** | Non | Non |
-| Blue Coat | **Oui** | Non | **Oui** | **Oui** | **Oui** | **Oui** |
+| Revêtement bleu | **Oui** | Non | **Oui** | **Oui** | **Oui** | **Oui** |
 | Point de contrôle | Non | **Oui** | Non | **Oui** | Non | Non |
-| Cisco ASA (Syslog) | Non | **Oui** | Non | **Oui** | **Oui** | Non |
-| Cisco ASA avec FirePOWER | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** |
+| Cisco ASA (syslog) | Non | **Oui** | Non | **Oui** | **Oui** | Non |
+| Cisco ASA avec un niveau de puissance | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** |
 | Cisco Cloud Web Security |**Oui**|**Oui**|**Oui**|**Oui**|**Oui**|**Oui**|
 | Cisco FWSM | Non | **Oui** | Non | **Oui** | **Oui** | Non |
-| Cisco Ironport WSA | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** |
+| WSA Cisco IronPort | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** |
 | Cisco Meraki | **Oui** | **Oui** | Non | **Oui** | Non | Non |
-| Clavister NGFW (Syslog) | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** |
+| Clavister pare-feu (syslog) | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** |
 | ContentKeeper | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** |
 | SonicWall (anciennement Dell) | **Oui** | **Oui** | Non | **Oui** | **Oui** | **Oui** |
 | Digital Arts i-FILTER | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** |
 | ForcePoint LEEF |**Oui**|**Oui**|**Oui**|**Oui**|**Oui**|**Oui**|
 | ForcePoint Web Security Cloud |**Oui**|**Oui**|**Oui**|**Oui**|**Oui**|**Oui**|
-| Fortigate | Non | **Oui** | Non | **Oui** | **Oui** | **Oui** |
+| FortiGate | Non | **Oui** | Non | **Oui** | **Oui** | **Oui** |
 | Fortinet FortiOS |**Oui**|**Oui**|Non|**Oui**|**Oui**|**Oui**|
 | iboss |**Oui**|**Oui**|**Oui**|**Oui**|**Oui**|**Oui**|
 | Juniper SRX | Non | **Oui** | Non | **Oui** | **Oui** | **Oui** |
@@ -120,11 +120,11 @@ Attributs de données (selon la documentation du fournisseur) :
 | Squid (commun) | **Oui** | Non | **Oui** | **Oui** | Non | **Oui** |
 | Squid (natif) | **Oui** | Non | **Oui** | **Oui** | Non | **Oui** |
 | Stormshield | Non | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** |
-| Websense - Rapport d’examen détaillé (CSV) | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** |
-| Websense - Journal d’activité Internet (CEF) | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** |
+| Websense-rapport détaillé d’investigation (CSV) | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** |
+| Websense-journal d’activité Internet (CEF) | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** |
 | Zscaler | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** |
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 > [!div class="nextstepaction"]
 > [Créer des rapports d’instantanés Cloud Discovery](create-snapshot-cloud-discovery-reports.md)

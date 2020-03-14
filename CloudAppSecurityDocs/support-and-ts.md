@@ -15,11 +15,11 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 770439dea68e73679ebf2fae7ed1eaf1af3f8005
-ms.sourcegitcommit: 7581611b4231fddbb3926a8dd1b0b16e6ea90ea5
+ms.sourcegitcommit: 4f3883a9e85d0aaf2802b10433b221c3f1838d88
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/01/2020
-ms.locfileid: "78204109"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79285673"
 ---
 # <a name="support-and-troubleshooting-microsoft-cloud-app-security"></a>Support et dépannage Microsoft Cloud App Security
 

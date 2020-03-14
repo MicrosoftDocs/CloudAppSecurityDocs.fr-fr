@@ -8,11 +8,11 @@ ms.topic: best-practice
 ms.date: 10/24/2019
 ms.collection: M365-security-compliance
 ms.openlocfilehash: e90a340c206c0bfb1c01542dd184664d1fe87dfe
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.sourcegitcommit: 4f3883a9e85d0aaf2802b10433b221c3f1838d88
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74143445"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79285323"
 ---
 # <a name="cloud-app-security-best-practices"></a>Meilleures pratiques en matière de Cloud App Security
 
@@ -44,7 +44,7 @@ L’intégration de Cloud App Security avec Microsoft Defender-protection avanc�
 
 * [Intégration de Microsoft Defender ATP à Cloud App Security](wdatp-integration.md)
 * [Configurer Cloud Discovery](set-up-cloud-discovery.md)
-* [Découvrir et gérer le Shadow IT sur votre réseau](tutorial-shadow-it.md)
+* [Détectez et gérez le cliché instantané de votre réseau](tutorial-shadow-it.md)
 
 ---
 
@@ -92,7 +92,7 @@ Cloud App Security vous offre la possibilité d’examiner et de surveiller les 
 **Pour plus d’informations**:
 
 * [Connecter des applications](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
-* [Connecter Office 365 à Microsoft Cloud App Security](connect-office-365-to-microsoft-cloud-app-security.md)
+* [Connectez Office 365 à Microsoft Cloud App Security](connect-office-365-to-microsoft-cloud-app-security.md)
 
 ---
 
@@ -186,7 +186,7 @@ Cloud App Security vous offre la possibilité d’examiner et de surveiller les 
 **Détail**: utilisez contrôle d’application par accès conditionnel pour définir des contrôles sur vos applications SaaS. Vous pouvez créer des stratégies de session pour surveiller vos sessions à risque élevé et faible niveau de confiance. De même, vous pouvez créer des stratégies de session pour bloquer et protéger les téléchargements par les utilisateurs qui essaient d’accéder à des données sensibles à partir d’appareils non gérés ou risqués. Si vous ne créez pas de stratégies de session pour surveiller les sessions à haut risque, vous perdez la possibilité de bloquer et de protéger les téléchargements dans le client Web, ainsi que la possibilité de surveiller la session de faible confiance dans les applications Microsoft et tierces.  
 **Pour plus d’informations**:
 
-* [Protéger les applications avec le contrôle d’application par accès conditionnel de Microsoft Cloud App Security](proxy-intro-aad.md)
+* [Protéger les applications avec Microsoft Cloud App Security contrôle d’application par accès conditionnel](proxy-intro-aad.md)
 * [Stratégies de session](session-policy-aad.md)
 
 ---
@@ -200,7 +200,7 @@ Cloud App Security vous offre la possibilité d’examiner et de surveiller les 
 **Détails**: pour sécuriser la collaboration dans votre environnement, vous pouvez créer une stratégie de session pour surveiller les sessions entre vos utilisateurs internes et externes. Cela vous permet non seulement de surveiller la session entre vos utilisateurs (et de les informer que leurs activités de session sont surveillées), mais également de limiter les activités spécifiques. Lorsque vous créez des stratégies de session pour surveiller l’activité, vous pouvez choisir les applications et les utilisateurs que vous souhaitez analyser.  
 **Pour plus d’informations**:
 
-* [Protéger les applications avec le contrôle d’application par accès conditionnel de Microsoft Cloud App Security](proxy-intro-aad.md)
+* [Protéger les applications avec Microsoft Cloud App Security contrôle d’application par accès conditionnel](proxy-intro-aad.md)
 * [Stratégies de session](session-policy-aad.md)
 
 ---
@@ -273,7 +273,7 @@ Lorsque vous ignorez des alertes, il est important d’examiner et de comprendre
 **Détail**: la connexion de chacune de ces applications de stockage cloud à Cloud App Security vous aide à améliorer vos fonctionnalités de détection des menaces. En surveillant les activités d’administration et de connexion pour ces services, vous pouvez détecter et être informé des éventuelles attaques par force brute, de l’utilisation malveillante d’un compte d’utilisateur privilégié et d’autres menaces dans votre environnement. Par exemple, vous pouvez identifier les risques tels que les suppressions inhabituelles de machines virtuelles ou même les activités d’emprunt d’identité dans ces applications.  
 **Pour plus d’informations**:
 
-* [Connecter Azure à Microsoft Cloud App Security](connect-azure-to-microsoft-cloud-app-security.md)
+* [Connexion d’Azure à Microsoft Cloud App Security](connect-azure-to-microsoft-cloud-app-security.md)
 * [Connecter AWS à Microsoft Cloud App Security](connect-aws-to-microsoft-cloud-app-security.md)
 
 ---

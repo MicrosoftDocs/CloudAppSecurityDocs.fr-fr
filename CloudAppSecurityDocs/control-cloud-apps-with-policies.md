@@ -1,6 +1,6 @@
 ---
-title: Contrôler l’utilisation des applications cloud en créant des stratégies - Cloud App Security | Microsoft Docs
-description: Cet article fournit des informations sur la façon dont les stratégies sont utilisées et configurées pour contrôler l’usage des applications cloud.
+title: Contrôler l’utilisation des applications Cloud en créant des stratégies-Cloud App Security | Microsoft Docs
+description: Cet article fournit des informations sur l’utilisation et la configuration des stratégies pour contrôler l’utilisation des applications Cloud.
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -15,132 +15,132 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: e4675430b45e92579cd4c692247c5a481bad233e
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.sourcegitcommit: 4f3883a9e85d0aaf2802b10433b221c3f1838d88
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720716"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79285613"
 ---
 # <a name="control-cloud-apps-with-policies"></a>Contrôler les applications cloud avec des stratégies
 
 *S’applique à : Microsoft Cloud App Security*
 
-Grâce aux stratégies, vous pouvez définir la façon dont vous souhaitez que vos utilisateurs se comportent dans le cloud. Elles vous permettent de détecter des comportements à risques, des violations, ou des points de données et des activités suspectes dans votre environnement cloud. Si nécessaire, vous pouvez intégrer des flux de travail de correction pour atténuer les risques. Il existe plusieurs types de stratégies suivant les différents types d’informations que vous voulez collecter sur votre environnement cloud et les types de mesures correctives que vous pouvez souhaiter prendre.
+Les stratégies vous permettent de définir la façon dont vous souhaitez que vos utilisateurs se comportent dans le Cloud. Elles vous permettent de détecter les comportements risqués, les violations, les points de données et les activités suspects dans votre environnement Cloud. Si nécessaire, vous pouvez intégrer des flux de travail de correction pour réaliser une atténuation des risques complète. Il existe plusieurs types de stratégies en corrélation avec les différents types d’informations que vous souhaitez collecter sur votre environnement Cloud et les types d’actions correctives que vous pouvez entreprendre.
 
-Par exemple, le type de stratégie à mettre en place diffère selon que vous souhaitez mettre en quarantaine une menace de violation de données ou empêcher votre organisation d’utiliser une application cloud à risque.
+Par exemple, si vous souhaitez mettre en quarantaine une menace de violation de données, vous avez besoin d’un autre type de stratégie en place que si vous souhaitez empêcher une application Cloud risquée d’être utilisée par votre organisation.
 
-## <a name="policy-types"></a>Types de stratégies
+## <a name="policy-types"></a>Types de stratégie
 
-Lorsque vous examinez la page **Stratégie**, les différentes stratégies et les différents modèles peuvent être distingués par type et par icône pour savoir quelles stratégies sont disponibles. Les stratégies disponibles dépendent de la source de données et de ce que vous avez activé dans Cloud App Security pour votre organisation. Par exemple, si vous avez chargé des journaux Cloud Discovery, les stratégies relatives à Cloud Discovery sont affichées.
+Lorsque vous examinez la page **stratégie** , les différentes stratégies et les différents modèles peuvent être distingués par type et par icône pour voir quelles stratégies sont disponibles. Les stratégies disponibles dépendent de la source de données et de ce que vous avez activé dans Cloud App Security pour votre organisation. Par exemple, si vous avez chargé Cloud Discovery journaux, les stratégies relatives à Cloud Discovery sont affichées.
 
-Vous pouvez créer les types de stratégies suivants :
+Vous pouvez créer les types de stratégies suivants :
 
-|Icône de type de stratégie|Type de stratégie|Utilisez les stratégies de gestion des applications mobiles|
+|Icône type de stratégie|Type de stratégie|Utilisez|
 |-----|-----------------|---------|
-|![icône de stratégie d’accès](media/proxy-policy.png)|Stratégie d’accès|Les stratégies d’accès vous offrent une surveillance et un contrôle en temps réel des connexions utilisateur à vos applications cloud.|
-|![Icône de stratégie d’activité](media/activity_policy.png)|Stratégie d’activité|Avec les stratégies d’activité, vous pouvez appliquer une large gamme de processus automatisés en utilisant les API du fournisseur d’application. Ces stratégies vous permettent de surveiller des activités spécifiques effectuées par différents utilisateurs ou de suivre les taux anormalement élevés d’un certain type d’activité.|
-|![Icône de stratégie de détection d’anomalie](media/anomaly_detection_policy.png)|Stratégie de détection d’anomalie|Les stratégies de détection des anomalies vous permettent de rechercher des activités inhabituelles sur votre cloud. La détection est basée sur les facteurs de risque que vous définissez pour vous alerter en cas d’événement anormal par rapport aux activités de référence ou habituelles de votre organisation ou des utilisateurs.|
-|![Icône de stratégie Cloud Discovery](media/discovery_policy.png)|Stratégie de découverte d’application|Grâce aux stratégies de découverte d’application, vous pouvez définir des alertes qui vous informent quand de nouvelles applications sont détectées au sein de votre organisation.|
-|![Icône de stratégie de détection d’anomalie](media/anomaly_detection_policy.png)|Stratégie de détection des anomalies de Cloud Discovery|Les stratégies de détection des anomalies de Cloud Discovery examinent les journaux que vous utilisez pour découvrir les applications cloud et recherchent les occurrences inhabituelles. À titre d’exemple, citons un utilisateur qui n’a jamais utilisé Dropbox et qui y charge soudainement 600 Go de données ou une application qui fait l’objet de transactions dans des proportions inhabituelles.|
-|![Icône de stratégie de fichier](media/file_policy.png)|Stratégie de fichier|Avec les stratégies de fichier, vous pouvez déterminer si vos applications cloud comportent certains fichiers ou types de fichiers (partagés, partagés avec des domaines externes), ou certaines données (informations propriétaires, informations personnelles, informations de carte de crédit et d’autres types de données), et appliquer des actions de gouvernance aux fichiers (les actions de gouvernance sont spécifiques aux applications cloud).|
-|![icône de stratégie de session](media/proxy-policy.png)|Stratégie de session|Les stratégies de session vous offrent une surveillance et un contrôle en temps réel des activités utilisateur dans vos applications cloud.|
+|![icône de stratégie d’accès](media/proxy-policy.png)|Stratégie d’accès|Les stratégies d’accès vous offrent une surveillance et un contrôle en temps réel des connexions utilisateur à vos applications Cloud.|
+|![icône stratégie d’activité](media/activity_policy.png)|Stratégie d’activité|Les stratégies d’activité vous permettent d’appliquer une large gamme de processus automatisés à l’aide des API du fournisseur d’applications. Ces stratégies vous permettent de surveiller des activités spécifiques effectuées par différents utilisateurs ou de suivre les taux inattendus d’un certain type d’activité.|
+|![icône de stratégie de détection d’anomalies](media/anomaly_detection_policy.png)|Stratégie de détection des anomalies|Les stratégies de détection des anomalies vous permettent de rechercher des activités inhabituelles dans votre Cloud. La détection est basée sur les facteurs de risque que vous définissez pour vous avertir en cas de problème qui diffère de la ligne de base de votre organisation ou de l’activité ordinaire de l’utilisateur.|
+|![icône de stratégie Cloud Discovery](media/discovery_policy.png)|Stratégie de découverte d’application|Les stratégies de détection d’application vous permettent de définir des alertes qui vous informent quand de nouvelles applications sont détectées au sein de votre organisation.|
+|![icône de stratégie de détection d’anomalies](media/anomaly_detection_policy.png)|Stratégie de détection des anomalies Cloud Discovery|Cloud Discovery stratégies de détection des anomalies examinent les journaux que vous utilisez pour découvrir les applications Cloud et recherche des occurrences inhabituelles. Par exemple, lorsqu’un utilisateur qui n’a jamais utilisé Dropbox pour télécharger 600 Go sur Dropbox, ou quand il y a beaucoup plus de transactions que d’habitude sur une application particulière.|
+|![icône de stratégie de fichier](media/file_policy.png)|Stratégie de fichier|Les stratégies de fichier vous permettent d’analyser vos applications Cloud à la recherche de fichiers ou de types de fichiers spécifiés (partagés, partagés avec des domaines externes), de données (informations propriétaires, données personnelles, informations de carte de crédit et autres types de données) et d’appliquer des actions de gouvernance aux fichiers ( les actions de gouvernance sont spécifiques à l’application Cloud).|
+|![icône de stratégie de session](media/proxy-policy.png)|Stratégie de session|Les stratégies de session vous permettent de surveiller et de contrôler en temps réel l’activité des utilisateurs dans vos applications Cloud.|
 
 ## <a name="identifying-risk"></a>Identification des risques
 
-Cloud App Security vous permet d’atténuer différents risques dans le cloud. Vous pouvez configurer n’importe quelles stratégie et alerte à associer à un des risques suivants :
+Cloud App Security vous aide à atténuer les différents risques dans le Cloud. Vous pouvez configurer toute stratégie et alerte à associer à l’un des risques suivants :
 
-- **Contrôle d’accès :** Qui accède à quoi à partir d’où ?
+- **Contrôle d’accès :** Qui accède à quoi ?
 
-    Surveillez le comportement et détectez les activités anormales en continu, notamment les attaques externes et internes à haut risque, et appliquez une stratégie d’alerte, de blocage ou de vérification d’identité pour toute application ou action spécifique dans une application. Cette approche permet de mettre en place des stratégies de contrôle d’accès locales et mobiles basées sur l’utilisateur, l’appareil et la zone géographique, avec un blocage grossier et des procédures d’affichage, de modification et de blocage précises. Détectez les événements de connexion suspects, notamment les échecs d’authentification multifacteur, les échecs de connexion de compte désactivé et les événements d’emprunt d’identité.
+    Surveillez le comportement et détectez les activités anormales, y compris les attaques externes et internes à haut risque, et appliquez une stratégie d’alerte, de blocage ou de vérification d’identité pour toute application ou action spécifique au sein d’une application. Active les stratégies de contrôle d’accès mobile et local en fonction de l’utilisateur, de l’appareil et de la géographie avec blocage grossiste et vue granulaire, modification et bloc. Détecte les événements de connexion suspects, notamment les échecs d’authentification multifacteur, les échecs de connexion aux comptes désactivés et les événements d’emprunt d’identité.
 
-- **Conformité :** Vos contraintes de conformité sont-elles enfreintes ?
+- **Conformité :** Vos exigences en matière de conformité sont-elles enfreintes ?
 
-    Classez et identifiez les données sensibles ou réglementées, notamment les autorisations de partage pour chaque fichier, stockées dans des services de synchronisation de fichier pour assurer la conformité aux réglementations telles que PCI, SOX et HIPAA
+    Cataloguez et identifiez les données sensibles ou réglementées, y compris les autorisations de partage pour chaque fichier, stockées dans les services de synchronisation de fichiers pour garantir la conformité avec les réglementations telles que PCI, SOX et HIPAA.
 
-- **Contrôle de configuration :**  Votre configuration fait-elle l’objet de modifications non autorisées ?
+- **Contrôle de configuration :** Des modifications non autorisées sont-elles apportées à votre configuration ?
 
-    Surveillez les modifications de configuration, notamment la manipulation de la configuration à distance.
+    Surveiller les modifications de configuration, notamment la manipulation de configuration à distance.
 
-- **Cloud Discovery :**  Des applications nouvelles sont-elles utilisées dans votre organisation ? Des applications Shadow IT que vous ignorez sont-elles utilisées ?
+- **Cloud Discovery :** Les nouvelles applications sont-elles utilisées dans votre organisation ? Avez-vous un problème d’utilisation d’applications informatiques fictives que vous ne connaissez pas ?
 
-    Évaluez le risque global pour chaque application cloud en fonction de la réglementation, et des bonnes pratiques et des certifications du secteur. Vous permet de surveiller le nombre d’utilisateurs, les activités, le volume de trafic et les heures d’utilisation habituelles pour chaque application cloud.
+    Évaluez le risque global pour chaque application Cloud en fonction des certifications et des pratiques recommandées. Vous permet de surveiller le nombre d’utilisateurs, les activités, le volume de trafic et les heures d’utilisation typiques pour chaque application Cloud.
 
-- **DLP :** Des fichiers propriétaires sont-ils partagés publiquement ? Devez-vous mettre des fichiers en quarantaine ?
+- **DLP :** Des fichiers propriétaires sont-ils partagés publiquement ? Avez-vous besoin de mettre en quarantaine les fichiers ?
 
-    L’intégration locale de DLP permet une intégration aux solutions DLP locales existantes et une correction en circuit fermé.
+    L’intégration DLP locale assure l’intégration et la correction de la boucle fermée avec les solutions DLP locales existantes.
 
-- **Comptes privilégiés :** Devez-vous surveiller les comptes d’administrateur ?
+- **Comptes privilégiés :** Avez-vous besoin de surveiller les comptes d’administrateur ?
 
-    Surveillez les activités des administrateurs et utilisateurs disposant de privilèges et créez des rapports associés en temps réel.
+    Surveillance de l’activité en temps réel et création de rapports d’utilisateurs et d’administrateurs privilégiés.
 
-- **Contrôle partagé :** Comment les données sont-elles partagées dans votre environnement cloud ?
+- **Contrôle de partage :** Comment les données sont-elles partagées dans votre environnement cloud ?
 
-    Inspectez le contenu des fichiers et du cloud et appliquez des stratégies de partage interne et externe. Surveillez la collaboration et appliquez des stratégies de partage, telles que l’interdiction de partager des fichiers à l’extérieur de votre organisation.
+    Inspectez le contenu des fichiers et du contenu dans le Cloud et appliquez des stratégies de partage interne et externe. Surveillez la collaboration et appliquez des stratégies de partage, telles que le partage de fichiers en dehors de votre organisation.
 
-- **Détection de menaces :** Des activités suspectes menacent-elles votre environnement cloud ?
+- **Détection des menaces :** Y a-t-il des activités suspectes menaçant votre environnement cloud ?
 
-    Recevez des notifications en temps réel pour toute violation de stratégie ou franchissement de seuil d’activité par SMS ou e-mail. En appliquant des algorithmes de Machine Learning, Cloud App Security vous permet de détecter un comportement qui peut indiquer qu’un utilisateur exploite des données de façon inappropriée.
+    Recevoir des notifications en temps réel pour toute violation de stratégie ou seuil d’activité via un message texte ou un e-mail. En appliquant Machine Learning algorithmes, Cloud App Security vous permet de détecter un comportement qui peut indiquer qu’un utilisateur utilise des données de manière inutilisée.
 
-## <a name="how-to-control-risk"></a>Comment contrôler le risque
+## <a name="how-to-control-risk"></a>Comment contrôler les risques
 
-Procédez comme suit pour contrôle le risque avec des stratégies :
+Suivez ce processus pour contrôler les risques liés aux stratégies :
 
-1. Créez une stratégie à partir d’un modèle ou d’une requête.
+1. Créer une stratégie à partir d’un modèle ou d’une requête.
 
-1. Affinez la stratégie pour atteindre les résultats attendus.
+1. Ajustez la stratégie pour obtenir les résultats attendus.
 
-1. Ajoutez des actions automatisées pour réagir et remédier aux risques automatiquement.
+1. Ajoutez des actions automatisées pour répondre et corriger automatiquement les risques.
 
 ### <a name="create-a-policy"></a>Créer une stratégie
 
-Vous pouvez baser toutes vos stratégies sur les modèles de stratégie de Cloud App Security ou créer des stratégies à partir d’une requête.
+Vous pouvez utiliser les modèles de stratégie d’Cloud App Security comme base pour toutes vos stratégies ou créer des stratégies à partir d’une requête.
 
-Les modèles de stratégie vous aident à définir les filtres et configurations nécessaires pour détecter dans votre environnement des événements spécifiques dignes d’intérêt. Les modèles comprennent des stratégies de tous types et peuvent s’appliquer à divers services.
+Les modèles de stratégie vous aident à définir les filtres et configurations appropriés nécessaires à la détection des événements spécifiques qui vous intéressent dans votre environnement. Les modèles incluent des stratégies de tous types et peuvent s’appliquer à divers services.
 
-Pour créer une stratégie à partir de **modèles de stratégie**, effectuez les étapes suivantes :
+Pour créer une stratégie à partir de **modèles de stratégie**, procédez comme suit :
 
-1. Dans la console, cliquez sur **Contrôle**, puis sur **Modèles**.
+1. Dans la console, cliquez sur **contrôle** , puis sur **modèles**.
 
     ![Créer la stratégie à partir d’un modèle](media/create-policy-from-template.png)
 
-1. Cliquez sur le signe **+** tout à droite de la ligne du modèle à utiliser. Une page de création de stratégie s’ouvre, avec la configuration prédéfinie du modèle.
+1. Cliquez sur l' **+** à l’extrême droite de la ligne du modèle que vous souhaitez utiliser. Une page créer une stratégie s’ouvre, avec la configuration prédéfinie du modèle.
 
-1. Modifiez le modèle en fonction des besoins de votre stratégie personnalisée. Vous pouvez modifier librement chaque propriété et champ de cette nouvelle stratégie basée sur un modèle.
+1. Modifiez le modèle en fonction des besoins de votre stratégie personnalisée. Chaque propriété et champ de cette nouvelle stratégie basée sur un modèle peut être modifié en fonction de vos besoins.
    > [!NOTE]
-   > Quand vous utilisez des filtres de stratégie, le filtre **Contains (Contient)** recherche uniquement des mots entiers, séparés par des virgules, points, espaces ou traits de soulignement. Par exemple, si vous recherchez **malware** ou **virus**, il trouve virus_malware_file.exe, mais pas malwarevirusfile.exe. Si vous recherchez *malware.exe*, vous obtenez TOUS les fichiers exe dont le nom contient malware ou exe, tandis que si vous recherchez **"malware.exe"** (avec les guillemets), vous n’obtenez que les fichiers dont le nom contient exactement « malware.exe ».  
-**Equals (Est égal à)** recherche uniquement la chaîne complète ; par exemple, si vous recherchez *malware.exe*, il trouve malware.exe, mais pas malware.exe.txt.
+   > Lorsque vous utilisez les filtres de stratégie, **contient** des recherches portant uniquement sur des mots entiers, séparés par des virgules, des points, des espaces ou des traits de soulignement. Par exemple, si vous recherchez un **programme malveillant** ou un **virus**, il trouve virus_malware_file. exe, mais il ne trouve pas malwarevirusfile. exe. Si vous recherchez *Malware. exe*, vous trouvez tous les fichiers avec programme malveillant ou exe dans leur nom de fichier, tandis que si vous recherchez **« Malware. exe »** (avec les guillemets), vous ne trouverez que les fichiers qui contiennent exactement « Malware. exe ».  
+**Égal** à recherche uniquement la chaîne complète, par exemple si vous recherchez *Malware. exe* , il trouve Malware. exe, mais pas Malware. exe. txt.
 
-1. Une fois la stratégie basée sur un modèle créée, un lien vers celle-ci s’affiche dans la colonne **Stratégies liées** de la table des modèles de stratégie, en regard du modèle à partir duquel la stratégie a été créée.
-    Vous pouvez créer autant de stratégies que vous le souhaitez à partir de chaque modèle : elles sont toutes liées au modèle d’origine. Cette liaison vous permet de suivre toutes les stratégies créées avec le même modèle.
+1. Une fois que vous avez créé la nouvelle stratégie basée sur un modèle, un lien vers la nouvelle stratégie s’affiche dans la colonne **stratégies liées** de la table des modèles de stratégie, en regard du modèle à partir duquel la stratégie a été créée.
+    Vous pouvez créer autant de stratégies que vous le souhaitez à partir de chaque modèle, et elles seront toutes liées au modèle d’origine. La liaison vous permet d’effectuer le suivi de toutes les stratégies générées à l’aide du même modèle.
 
-Vous pouvez également **créer une stratégie au cours d’un examen**. Si vous examinez le **Journal d’activité**, les **Fichiers** ou les **Comptes** à la recherche d’un élément spécifique, vous pouvez à tout moment créer une stratégie basée sur les résultats de votre examen.
+Vous pouvez également **créer une stratégie au cours de l’investigation**. Si vous examinez le **Journal d’activité**, les **fichiers** ou les **comptes**, et que vous explorez pour rechercher un objet spécifique, vous pouvez à tout moment créer une nouvelle stratégie basée sur les résultats de votre investigation.
 
-Cela peut arriver si vous examinez le **Journal d’activité** et que vous constatez qu’une activité d’administration ne provient pas de la plage d’adresses IP de votre bureau.
+Par exemple, si vous examinez le **Journal d’activité**et que vous voyez une activité d’administration à partir de l’extérieur des adresses IP de votre bureau.
 
-Pour créer une stratégie basée sur les résultats d’un examen, effectuez les étapes suivantes :
+Pour créer une stratégie basée sur les résultats de l’investigation, procédez comme suit :
 
-1. Dans la console, cliquez sur **Examiner**, puis sur **Journal d’activité**, **Fichiers** ou **Comptes**.
+1. Dans la console, cliquez sur **examiner** , puis sur **Journal d’activité**, **fichiers**ou **comptes**.
 
-1. Utilisez les filtres en haut de la page pour limiter les résultats de la recherche à la zone suspecte. Par exemple, dans la page Journal d’activité, cliquez sur **Type d’activité** et sélectionnez **Écrire - Administrateurs** sous Opération Azure. Ensuite, sous **Adresse IP**, sélectionnez **Catégorie** et définissez la valeur de manière à ne pas inclure les catégories d’adresses IP que vous avez créées pour vos domaines reconnus, notamment les adresses IP de l’administrateur, de l’entreprise et du réseau privé virtuel.
+1. Utilisez les filtres en haut de la page pour limiter les résultats de la recherche à la zone suspecte. Par exemple, dans la page Journal d’activité, cliquez sur **type d’activité** , puis sélectionnez **administrateurs d’écriture** sous opération Azure. Ensuite, sous **adresse IP**, sélectionnez **catégorie** et définissez la valeur sur ne pas inclure les catégories d’adresses IP que vous avez créées pour vos domaines reconnus, tels que les adresses IP de l’administrateur, de l’entreprise et du VPN.
 
-    ![Créer un fichier à la suite d’un examen](media/create-file-from-investigation.png)
+    ![Créer un fichier à partir de l’investigation](media/create-file-from-investigation.png)
 
-1. Dans le coin supérieur droit de la console, cliquez sur **Nouvelle stratégie à partir de la recherche**.
+1. Dans le coin supérieur droit de la console, cliquez sur **nouvelle stratégie à partir de la recherche**.
 
-    ![Bouton Nouvelle stratégie à partir de la recherche](media/new-policy-from-search-button.png)
+    ![Nouvelle stratégie à partir du bouton de recherche](media/new-policy-from-search-button.png)
 
-1. Une page de création de stratégie s’ouvre, contenant les filtres que vous avez utilisés dans votre examen.
+1. Une page de création de stratégie s’ouvre, contenant les filtres que vous avez utilisés dans votre investigation.
 
-1. Modifiez le modèle en fonction des besoins de votre stratégie personnalisée. Vous pouvez modifier librement chaque propriété et champ de cette nouvelle stratégie basée sur un examen.
-
-    > [!NOTE]
-    > Quand vous utilisez des filtres de stratégie, le filtre **Contains (Contient)** recherche uniquement des mots entiers, séparés par des virgules, points, espaces ou traits de soulignement. Par exemple, si vous recherchez **malware** ou **virus**, il trouve virus_malware_file.exe, mais pas malwarevirusfile.exe.  
-**Equals (Est égal à)** recherche uniquement la chaîne complète ; par exemple, si vous recherchez **malware.exe**, il trouve malware.exe, mais pas malware.exe.txt.
-
-    ![créer une stratégie d’activité basée sur un examen](media/create-activity-policy-from-investigation.png)
+1. Modifiez le modèle en fonction des besoins de votre stratégie personnalisée. Chaque propriété et champ de cette nouvelle stratégie basée sur l’investigation peut être modifié en fonction de vos besoins.
 
     > [!NOTE]
-    > Pour plus d’informations sur la définition des champs d’une stratégie, consultez la documentation de stratégie correspondante :
+    > Lorsque vous utilisez les filtres de stratégie, **contient** des recherches portant uniquement sur des mots entiers, séparés par des virgules, des points, des espaces ou des traits de soulignement. Par exemple, si vous recherchez un **programme malveillant** ou un **virus**, il trouve virus_malware_file. exe, mais il ne trouve pas malwarevirusfile. exe.  
+**Égal** à recherche uniquement la chaîne complète, par exemple si vous recherchez **Malware. exe** , il trouve Malware. exe, mais pas Malware. exe. txt.
+
+    ![créer une stratégie d’activité à partir de l’investigation](media/create-activity-policy-from-investigation.png)
+
+    > [!NOTE]
+    > Pour plus d’informations sur la définition des champs de stratégie, consultez la documentation de stratégie correspondante :
     >
     > [Stratégies d’activité utilisateur](user-activity-policies.md)
     >
@@ -148,30 +148,30 @@ Pour créer une stratégie basée sur les résultats d’un examen, effectuez le
     >
     > [Stratégies Cloud Discovery](cloud-discovery-policies.md)
 
-### <a name="add-automated-actions-to-respond-and-remediate-risks-automatically"></a>Ajouter des actions automatisées pour réagir et remédier aux risques automatiquement
+### <a name="add-automated-actions-to-respond-and-remediate-risks-automatically"></a>Ajouter des actions automatisées pour répondre et corriger automatiquement les risques
 
-Pour obtenir la liste des actions de gouvernance disponibles par application, consultez [Gouvernance des applications connectées](governance-actions.md).
+Pour obtenir la liste des actions de gouvernance disponibles par application, consultez la rubrique relative aux [applications connectées](governance-actions.md).
 
-Vous pouvez également définir la stratégie pour qu’elle vous envoie une alerte par e-mail ou message texte lors de la détection de correspondances.
+Vous pouvez également définir la stratégie pour qu’elle vous envoie une alerte par courrier électronique ou par message texte lorsque des correspondances sont détectées.
 
-Pour définir vos préférences de notification, vous devez [personnaliser le portail](general-setup.md)
+Pour définir vos préférences de notification, vous avez réussi à [personnaliser le portail](general-setup.md)
 
 > [!NOTE]
-> Le nombre maximal d’alertes envoyées via SMS est de 10 par numéro de téléphone par jour. Le jour est calculé selon le fuseau horaire UTC.
+> Le nombre maximal d’alertes envoyées via SMS est de 10 par numéro de téléphone par jour. Le jour est calculé en fonction du fuseau horaire UTC.
 
 ## <a name="enable-and-disable-policies"></a>Activer et désactiver des stratégies
 
-Une fois que vous avez créé une stratégie, vous pouvez l’activer ou la désactiver. La désactivation vous évite de devoir supprimer une stratégie pour l’arrêter. Donc, si vous souhaitez arrêter une stratégie pour une raison ou une autre, désactivez-la. Vous pouvez la réactiver à tout moment.
+Une fois que vous avez créé une stratégie, vous pouvez l’activer ou la désactiver. Si vous désactivez cette opération, vous n’avez plus besoin de supprimer une stratégie après l’avoir créée afin de l’arrêter. Au lieu de cela, si vous souhaitez arrêter la stratégie pour une raison quelconque, désactivez-la jusqu’à ce que vous choisissiez de la réactiver.
 
-- Pour activer une stratégie, dans la page **Stratégie**, cliquez sur les trois points situés à la fin de la ligne de la stratégie à activer. Sélectionnez **Activer**.
+- Pour activer une stratégie, dans la page **stratégie** , cliquez sur les trois points à la fin de la ligne de la stratégie que vous souhaitez activer. Sélectionnez **activer**.
 
-    ![Activer une stratégie](media/enable-policy.png)
+    ![Activer la stratégie](media/enable-policy.png)
 
-- Pour désactiver une stratégie, dans la page **Stratégie**, cliquez sur les trois points à la fin de la ligne de la stratégie à désactiver. Sélectionnez **Désactiver**.
+- Pour désactiver une stratégie, dans la page **stratégie** , cliquez sur les trois points à la fin de la ligne de la stratégie que vous souhaitez désactiver. Sélectionnez **Désactiver**.
 
-    ![Désactiver une stratégie](media/disable-policy.png)
+    ![Désactiver la stratégie](media/disable-policy.png)
 
-Quand vous créez une stratégie, celle-ci est activée par défaut.
+Par défaut, après avoir créé une nouvelle stratégie, elle est activée.
 
 ## <a name="policies-overview-report"></a>Rapport vue d’ensemble des stratégies
 
@@ -187,13 +187,13 @@ Pour exporter un journal, procédez comme suit :
 
 Pour télécharger le rapport exporté :
 
-1. Une fois que le rapport est prêt, accédez à **Paramètres**, puis à **Rapports exportés**.
+1. Une fois le rapport prêt, accédez à **paramètres** , puis **rapports exportés**.
 
 1. Dans le tableau, sélectionnez le rapport approprié dans le **rapport vue d’ensemble** de la liste des stratégies, puis cliquez sur Télécharger.
 
-    ![Bouton Télécharger](media/download-button.png)
+    ![bouton Télécharger](media/download-button.png)
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 > [!div class="nextstepaction"]
 > [Activités quotidiennes pour protéger votre environnement cloud](daily-activities-to-protect-your-cloud-environment.md)

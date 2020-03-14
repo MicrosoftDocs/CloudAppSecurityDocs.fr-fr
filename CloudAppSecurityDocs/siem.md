@@ -14,19 +14,19 @@ ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 0a80b5fa980e8ece344ca39092293d5b820f604b
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.sourcegitcommit: 4f3883a9e85d0aaf2802b10433b221c3f1838d88
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74721010"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79285663"
 ---
 # <a name="generic-siem-integration"></a>Intégration de SIEM générique
 
 *S’applique à : Microsoft Cloud App Security*
 
-Vous pouvez intégrer Microsoft Cloud App Security à votre serveur SIEM générique pour permettre une surveillance centralisée des alertes et des activités à partir d’applications connectées. Comme les nouveaux événements et nouvelles activités sont pris en charge par les applications connectées, ils deviennent visibles dans Microsoft Cloud App Security. L’intégration à un service SIEM vous permet de mieux protéger vos applications cloud tout en conservant votre workflow de sécurité habituel, en automatisant les procédures de sécurité et en établissant une corrélation entre les événements cloud et les événements locaux. L’agent SIEM de Microsoft Cloud App Security s’exécute sur votre serveur, extrait les alertes et les activités de Microsoft Cloud App Security et les envoie en flux continu au serveur SIEM.
+Vous pouvez intégrer Microsoft Cloud App Security à votre serveur SIEM générique pour permettre une surveillance centralisée des alertes et des activités à partir d’applications connectées. À mesure que les nouvelles activités et événements sont pris en charge par les applications connectées, leur visibilité est ensuite déployée dans Microsoft Cloud App Security. L’intégration à un service SIEM vous permet de mieux protéger vos applications Cloud tout en conservant votre flux de travail de sécurité habituel, en automatisant les procédures de sécurité et en mettant en corrélation les événements basés sur le Cloud et les événements locaux. Le Microsoft Cloud App Security Agent SIEM s’exécute sur votre serveur et extrait les alertes et les activités de Microsoft Cloud App Security et les diffuse dans le serveur SIEM.
 
-Quand vous intégrez pour la première fois votre serveur SIEM à Cloud App Security, les activités et les alertes des deux derniers jours sont transférées vers le serveur SIEM, ainsi que toutes les activités et alertes (en fonction du filtre que vous sélectionnez) à partir de ce moment-là. Si vous désactivez cette fonctionnalité pendant une période prolongée, au moment de la réactiver, celle-ci transférera les deux derniers jours d’alertes et d’activités, puis toutes les alertes et activités à partir de ce moment-là.
+Quand vous intégrez pour la première fois votre serveur SIEM à Cloud App Security, les activités et les alertes des deux derniers jours sont transférées vers le serveur SIEM, ainsi que toutes les activités et alertes (en fonction du filtre que vous sélectionnez) à partir de ce moment-là. Si vous désactivez cette fonctionnalité pendant une période prolongée, puis réactivez, les deux derniers jours d’alertes et d’activités sont transférés, puis toutes les alertes et activités à partir de ce dernier.
 
 Les solutions d’intégration supplémentaires sont les suivantes :
 
@@ -41,13 +41,13 @@ Les solutions d’intégration supplémentaires sont les suivantes :
 L’agent SIEM est déployé dans le réseau de votre organisation. Quand il est déployé et configuré, il extrait les types de données qui ont été configurés (alertes et activités) à l’aide des API RESTful de Cloud App Security.
 Le trafic est ensuite envoyé via un canal HTTPS chiffré sur le port 443.
 
-Une fois que l’agent SIEM a récupéré les données dans Cloud App Security, il envoie des messages Syslog à votre instance locale de SIEM. Cloud App Security utilise les configurations réseau que vous avez fournies lors de l’installation (TCP ou UDP avec un port personnalisé).
+Une fois que l’agent SIEM a récupéré les données de Cloud App Security, il envoie les messages syslog à votre SIEM local. Cloud App Security utilise les configurations réseau que vous avez fournies lors de l’installation (TCP ou UDP avec un port personnalisé).
 
 ![Architecture d'intégration SIEM](media/siem-architecture.png)
 
 ## <a name="supported-siems"></a>SIEM pris en charge
 
-Actuellement, Cloud App Security prend en charge Micro Focus ArcSight et le format CEF générique.
+Cloud App Security prend actuellement en charge micro focus ArcSight et CEF générique.
 
 ## <a name="how-to-integrate"></a>Procédure d’intégration
 
@@ -57,15 +57,15 @@ L’intégration à votre serveur SIEM s’effectue en trois étapes :
 2. Téléchargez le fichier JAR et exécutez-le sur votre serveur.
 3. Vérifiez que l’agent SIEM fonctionne.
 
-### <a name="prerequisites"></a>Conditions préalables
+### <a name="prerequisites"></a>Composants requis
 
 * Un serveur Windows ou Linux standard (il peut s’agir d’une machine virtuelle).
 * Système d’exploitation : Windows ou Linux
 * Processeur : 2
-* Espace disque : 20 Go
-* RAM : 2 Go
-* Le serveur doit exécuter Java 8. Les versions antérieures ne sont pas prises en charge.
-* Configurez votre pare-feu, comme décrit dans [Configuration réseau requise](network-requirements.md)
+* Espace disque : 20 Go
+* RAM : 2 GO
+* Le serveur doit exécuter Java 8. Les versions antérieures ne sont pas prises en charge.
+* Définir votre pare-feu comme décrit dans [Configuration réseau requise](network-requirements.md)
 
 ## <a name="integrating-with-your-siem"></a>Intégration à votre serveur SIEM
 
@@ -85,33 +85,33 @@ L’intégration à votre serveur SIEM s’effectue en trois étapes :
 1. Entrez l’adresse IP ou le nom d’hôte de **l’hôte Syslog distant** et le **numéro de port Syslog**. Sélectionnez TCP ou UDP comme protocole Syslog distant.
     Vous pouvez travailler avec votre administrateur de la sécurité pour obtenir ces informations si vous n’en disposez pas. Cliquez sur **Suivant**.
 
-    ![Paramètres Syslog distants](media/siem2.png)
+    ![Paramètres syslog distants](media/siem2.png)
 
-1. Sélectionnez les types de données (**Alertes** et **Activités**) que vous voulez exporter vers votre serveur SIEM. Utilisez le curseur pour les activer et les désactiver. Par défaut, tout est sélectionné. Vous pouvez utiliser la liste déroulante **Appliquer à** pour définir des filtres pour envoyer seulement des alertes et des activités spécifiques à votre serveur SIEM. Cliquez sur **Modifier et afficher un aperçu des résultats** pour vérifier que le filtre fonctionne comme prévu. Cliquez sur **Suivant**.
+1. Sélectionnez les types de données que vous souhaitez exporter vers votre serveur SIEM pour les **alertes** et les **activités**. Utilisez le curseur pour les activer et les désactiver. Par défaut, tout est sélectionné. Vous pouvez utiliser la liste déroulante **Appliquer à** pour définir des filtres pour envoyer seulement des alertes et des activités spécifiques à votre serveur SIEM. Cliquez sur **modifier et afficher un aperçu des résultats** pour vérifier que le filtre fonctionne comme prévu. Cliquez sur **Suivant**.
 
    ![Paramètres des types de données](media/siem3.png)
 
 1. Copiez le jeton et enregistrez-le pour l’utiliser ultérieurement.
-    Cliquez sur Terminer pour quitter l’Assistant. Revenez à la page SIEM pour voir l’agent SIEM que vous avez ajouté dans la tableau. Il indique qu’il est **créé** jusqu’à ce qu’il soit connecté.
+    Cliquez sur Terminer et quitter l’Assistant. Revenez à la page SIEM pour voir l’agent SIEM que vous avez ajouté dans le tableau. Il indique qu’il est **créé** jusqu’à ce qu’il soit connecté.
 
 > [!NOTE]
 > Tout jeton que vous créez est lié à l’administrateur qui l’a créé. Cela signifie que si l’utilisateur administrateur est supprimé de Cloud App Security, le jeton n’est plus valide.
 
 ### <a name="step-2-download-the-jar-file-and-run-it-on-your-server"></a>Étape 2 : Téléchargez le fichier JAR et exécutez-le sur votre serveur
 
-1. Dans le [Centre de téléchargement Microsoft](https://go.microsoft.com/fwlink/?linkid=838596), après avoir accepté les [termes du contrat de licence logiciel](https://go.microsoft.com/fwlink/?linkid=862491), téléchargez le fichier zip et décompressez-le.
+1. Dans le [Centre de téléchargement Microsoft](https://go.microsoft.com/fwlink/?linkid=838596), après avoir accepté les termes du contrat de [licence logicielle](https://go.microsoft.com/fwlink/?linkid=862491), téléchargez le fichier. zip et décompressez-le.
 
-1. Exécutez le fichier extrait sur votre serveur :
+1. Exécutez le fichier extrait sur votre serveur :
 
     `java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN`
 
 > [!NOTE]
 >
 > * Le nom de fichier peut différer selon la version de l’agent SIEM.
-> * Les paramètres entre crochets [ ] sont facultatifs et doivent être utilisés seulement si nécessaire.
+> * Les paramètres entre crochets [] sont facultatifs et doivent être utilisés uniquement s’ils sont pertinents.
 > * Il est recommandé d’exécuter le fichier JAR lors du démarrage du serveur.
 >   * Windows : exécutez en tant que tâche planifiée et assurez-vous que vous configurez la tâche pour **qu’elle s’exécute si l’utilisateur a ouvert une session ou non** et que vous désactivez la case à cocher **arrêter la tâche si elle s’exécute plus longtemps que** .
->   * Linux : Ajoutez la commande d’exécution avec un **&** au fichier rc.local. Par exemple : `java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN &`
+>   * Linux : ajoutez la commande exécuter avec un **&** au fichier RC. local. Exemple : `java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN &`.
 
 Où les variables suivantes sont utilisées :
 
@@ -121,9 +121,9 @@ Où les variables suivantes sont utilisées :
 
 Vous pouvez taper -h à tout moment pour obtenir de l’aide.
 
-#### Exemple de journaux d’activité<a name="siem-samples"></a>
+#### Exemples de journaux d’activité<a name="siem-samples"></a>
 
-Voici des exemples de journaux d’activité envoyés à votre serveur SIEM :
+Voici des exemples de journaux d’activité envoyés à votre serveur SIEM :
 
 >`2017-11-22T17:50:04.000Z CEF:0|MCAS|SIEM_Agent|0.111.85|EVENT_CATEGORY_LOGOUT|Log out|0|externalId=1511373015679_167ae3eb-ed33-454a-b548-c2ed6cea6ef0 rt=1511373004000 start=1511373004000 end=1511373004000 msg=Log out suser=admin@contoso.com destinationServiceName=ServiceNow dvc=13.82.149.151 requestClientApplication= cs1Label=portalURL cs1=https://contoso.portal.cloudappsecurity.com/#/audits?activity.id\=eq(1511373015679_167ae3eb-ed33-454a-b548-c2ed6cea6ef0,) cs2Label=uniqueServiceAppIds cs2=APPID_SERVICENOW cs3Label=targetObjects cs3=admin@contoso.com,admin@contoso.com,admin@contoso.com cs4Label=policyIDs cs4= c6a1Label="Device IPv6 Address" c6a1=`
 >
@@ -137,7 +137,7 @@ Voici des exemples de journaux d’activité envoyés à votre serveur SIEM :
 >
 >`2017-11-28T19:24:55.000Z LAB-EUW-ARCTEST CEF:0|MCAS|SIEM_Agent|0.112.68|EVENT_CATEGORY_DELETE_OBJECT|Delete object|0|externalId=1511897117617_5be018ee-f676-4473-a9b5-5982527409be rt=1511897095000 start=1511897095000 end=1511897095000 msg=Delete object: ServiceNow Object b1709c40db360300906ff34ebf961923 suser=admin@contoso.com destinationServiceName=ServiceNow dvc= requestClientApplication= cs1Label=portalURL cs1=https://contoso.portal.cloudappsecurity.com/#/audits?activity.id\=eq(1511897117617_5be018ee-f676-4473-a9b5-5982527409be,) cs2Label=uniqueServiceAppIds cs2=APPID_SERVICENOW cs3Label=targetObjects cs3=,,admin@contoso.com,admin@contoso.com,admin@contoso.com cs4Label=policyIDs cs4= c6a1Label="Device IPv6 Address" c6a1=`
 
-Le texte suivant est un exemple de fichier journal d’alertes :
+Le texte suivant est un exemple de fichier journal des alertes :
 
 >`2017-07-15T20:42:30.531Z CEF:0|MCAS|SIEM_Agent|0.102.17|ALERT_CABINET_EVENT_MATCH_AUDIT|myPolicy|3|externalId=596a7e360c204203a335a3fb start=1500151350531 end=1500151350531 msg=Activity policy ''myPolicy'' was triggered by ''admin@box-contoso.com'' suser=admin@box-contoso.com destinationServiceName=Box cn1Label=riskScore cn1= cs1Label=portalURL cs1=https://cloud-app-security.com/#/alerts/596a7e360c204203a335a3fb cs2Label=uniqueServiceAppIds cs2=APPID_BOX cs3Label=relatedAudits cs3=1500151288183_acc891bf-33e1-424b-a021-0d4370789660 cs4Label=policyIDs cs4=59f0ab82f797fa0681e9b1c7`
 >
@@ -151,58 +151,58 @@ Le texte suivant est un exemple de fichier journal d’alertes :
 >
 >`2017-07-16T09:41:04.369Z CEF:0|MCAS|SIEM_Agent|0.102.17|ALERT_CABINET_EVENT_MATCH_AUDIT|test-activity-policy2|3|externalId=596b34b10c204203a33a5240 start=1500198064369 end=1500198064369 msg=Activity policy ''test-activity-policy2'' was triggered by ''user2@test15-adallom.com'' suser=user2@test15-adallom.com destinationServiceName=Google cn1Label=riskScore cn1= cs1Label=portalURL cs1=https://cloud-app-security.com/#/alerts/596b34b10c204203a33a5240 cs2Label=uniqueServiceAppIds cs2=APPID_33626 cs3Label=relatedAudits cs3=1500197996117_fd71f265-1e46-4f04-b372-2e32ec874cd3 cs4Label=policyIDs cs4=`
 
-#### <a name="sample-cloud-app-security-alerts-in-cef-format"></a>Exemples d’alertes Cloud App Security au format CEF
+#### <a name="sample-cloud-app-security-alerts-in-cef-format"></a>Exemple d’Cloud App Security des alertes au format CEF
 
-|   Applicable à   |      Nom du champ CEF      |                                                   Description                                                   |
+|   S'applique à   |      Nom du champ CEF      |                                                   Description                                                   |
 |-------------------|--------------------------|-----------------------------------------------------------------------------------------------------------------|
-| Activités/Alertes |          start           |                                           Horodatage d’activité ou d’alerte                                           |
-| Activités/Alertes |           end            |                                           Horodatage d’activité ou d’alerte                                           |
-| Activités/Alertes |            rt            |                                           Horodatage d’activité ou d’alerte                                           |
-| Activités/Alertes |           msg            |                              Description de l’activité ou de l’alerte telle qu’elle apparaît dans le portail                               |
-| Activités/Alertes |          suser           |                                         Utilisateur de l’objet de l’activité ou de l’alerte                                          |
-| Activités/Alertes |  destinationServiceName  |                  Application à l’origine de l’activité ou de l’alerte, par exemple Office 365, Sharepoint, Box.                   |
-| Activités/Alertes |        Étiquette de >\<X CS        |        Chaque étiquette a une signification différente, mais l’étiquette elle-même l’explique, par exemple targetObjects.        |
-| Activités/Alertes |          >\<X CS           | Informations correspondant à l’étiquette (l’utilisateur cible de l’activité ou de l’alerte, selon l’exemple d’étiquette). |
-|    Activités     |     EVENT_CATEGORY_*     |                                       Catégorie générale de l’activité                                       |
-|    Activités     |         ACTION \<         |                                  Type d’activité, tel qu’il apparaît dans le portail                                  |
-|    Activités     |        externalId        |                                                    ID d’événement                                                     |
-|    Activités     |           dvc            |                                             Adresse IP de l’appareil client                                             |
+| Activités/alertes |          démarrer           |                                           Horodatage de l’activité ou de l’alerte                                           |
+| Activités/alertes |           end            |                                           Horodatage de l’activité ou de l’alerte                                           |
+| Activités/alertes |            t            |                                           Horodatage de l’activité ou de l’alerte                                           |
+| Activités/alertes |           msg            |                              Description de l’activité ou de l’alerte, comme indiqué dans le portail                               |
+| Activités/alertes |          suser           |                                         Utilisateur de l’activité ou de l’alerte                                          |
+| Activités/alertes |  destinationServiceName  |                  L’activité ou l’alerte, par exemple, Office 365, SharePoint, Box.                   |
+| Activités/alertes |        Étiquette de >\<X CS        |        Chaque étiquette a une signification différente, mais l’étiquette elle-même l’explique, par exemple targetObjects.        |
+| Activités/alertes |          >\<X CS           | Informations correspondant à l’étiquette (utilisateur cible de l’activité ou de l’alerte selon l’exemple d’étiquette). |
+|    Activités     |     EVENT_CATEGORY_ *     |                                       Catégorie de haut niveau de l’activité                                       |
+|    Activités     |         ACTION \<>         |                                  Type d’activité, tel qu’il est affiché dans le portail                                  |
+|    Activités     |        externalId        |                                                    ID de l'événement                                                     |
+|    Activités     |           DVC            |                                             Adresse IP de l’appareil client                                             |
 |    Activités     | requestClientApplication |                                         Agent utilisateur de l’appareil client                                         |
-|      Alerts       |       type d’alerte \<       |                                  Par exemple « ALERT_CABINET_EVENT_MATCH_AUDIT »                                  |
-|      Alerts       |          \<name>          |                                             Nom de la stratégie correspondante                                             |
-|      Alerts       |        externalId        |                                                    ID de l’alerte                                                     |
+|      Alertes       |       type d’alerte \<>       |                                  Par exemple, « ALERT_CABINET_EVENT_MATCH_AUDIT »                                  |
+|      Alertes       |          nom de l' \<>          |                                             Nom de la stratégie correspondante                                             |
+|      Alertes       |        externalId        |                                                    ID d'alerte                                                     |
 
 ### <a name="step-3-validate-that-the-siem-agent-is-working"></a>Étape 3 : Vérifiez que l’agent SIEM fonctionne
 
-1. Vérifiez que l’agent SIEM n’affiche pas l’état **Erreur de connexion** ou **Déconnecté** dans le portail Cloud App Security et qu’il ne fait pas l’objet de notifications. Si la connexion est interrompue pendant plus de deux heures, l’état affiché est le suivant : **Erreur de connexion**. Si la connexion est interrompue depuis plus de 12 heures, l’état affiché est **Déconnecté**.
+1. Assurez-vous que l’état de l’agent SIEM dans le portail Cloud App Security n’est pas **erreur de connexion** ou **déconnecté** et qu’il n’y a pas de notifications de l’agent. Il s’affiche en tant qu' **erreur de connexion** si la connexion est interrompue pendant plus de deux heures. L’état indique **déconnecté** si la connexion est interrompue pendant plus de 12 heures.
  ![SIEM déconnecté](media/siem-not-connected.png)
 
-    Au lieu de cela, l’état doit être connecté, comme illustré ici : ![SIEM connecté](media/siem-connected.png)
+    Au lieu de cela, l’état doit être connecté, comme illustré ici : ![SIEM connecté](media/siem-connected.png)
 
 1. Dans votre serveur Syslog/SIEM, vérifiez que vous voyez des activités et des alertes provenant de Cloud App Security.
 
 ## <a name="regenerating-your-token"></a>Régénération de votre jeton
 
-Si vous perdez le jeton, vous pouvez le restaurer en cliquant sur les trois points situés à la fin de la ligne de l’agent SIEM dans le tableau. Pour obtenir un nouveau jeton, sélectionnez **Régénérer le jeton**.
+Si vous perdez le jeton, vous pouvez toujours le régénérer en cliquant sur les trois points à la fin de la ligne pour l’agent SIEM dans le tableau. Sélectionnez **régénérer le jeton** pour obtenir un nouveau jeton.
 
 ![SIEM - Régénérer le jeton](media/siem-regenerate-token.png)
 
 ## <a name="editing-your-siem-agent"></a>Modification de votre agent SIEM
 
-Si vous devez modifier l’agent SIEM, cliquez sur les trois points situés à la fin de la ligne de l’agent SIEM dans le tableau, puis sélectionnez **Modifier**. Si vous modifiez l’agent SIEM, vous n’avez pas besoin de réexécuter le fichier .jar, car celui-ci se met à jour automatiquement.
+Pour modifier l’agent SIEM, cliquez sur les trois points à la fin de la ligne pour l’agent SIEM dans le tableau, puis sélectionnez **modifier**. Si vous modifiez l’agent SIEM, vous n’avez pas besoin de réexécuter le fichier. jar, il est mis à jour automatiquement.
 
 ![SIEM - Modifier](media/siem-edit.png)
 
 ## <a name="deleting-your-siem-agent"></a>Suppression de votre agent SIEM
 
-Si vous devez supprimer l’agent SIEM, cliquez sur les trois points situés à la fin de la ligne de l’agent SIEM dans le tableau, puis sélectionnez **Supprimer**.
+Pour supprimer l’agent SIEM, cliquez sur les trois points à la fin de la ligne pour l’agent SIEM dans le tableau, puis sélectionnez **supprimer**.
 
 ![SIEM - Supprimer](media/siem-delete.png)
 
 > [!NOTE]
-> Cette fonctionnalité est disponible dans la préversion publique.
+> Cette fonctionnalité est accessible à tous en version Preview.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 > [!div class="nextstepaction"]
 > [Résolution des problèmes d’intégration de SIEM](troubleshooting-siem.md)

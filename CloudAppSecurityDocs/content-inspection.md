@@ -1,6 +1,6 @@
 ---
-title: Comment Cloud App Security réalise l’inspection du contenu
-description: Cet article décrit le processus suivi par Cloud App Security lors de l’exécution de l’inspection du contenu DLP sur les données de votre cloud.
+title: Comment Cloud App Security effectue l’inspection du contenu
+description: Cet article décrit le processus Cloud App Security suit lorsque vous effectuez l’inspection du contenu DLP sur les données de votre Cloud.
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -15,36 +15,36 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 83969121e83bfa2efae352fc66de00766c23e5d9
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.sourcegitcommit: 4f3883a9e85d0aaf2802b10433b221c3f1838d88
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720240"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79285503"
 ---
 # <a name="content-inspection"></a>Inspection du contenu
 
 *S’applique à : Microsoft Cloud App Security*
 
-Une fois que l’inspection du contenu est activée, vous pouvez choisir d’utiliser des expressions prédéfinies ou de rechercher d’autres expressions personnalisées.
+Si vous activez l’inspection du contenu, vous pouvez choisir d’utiliser des expressions prédéfinies ou de rechercher d’autres expressions personnalisées.
 
-Vous pouvez spécifier une expression régulière pour exclure un fichier des résultats. Cette option s’avère très utile si vous avez un standard interne de mots clés de classification à exclure de la stratégie.
+Vous pouvez spécifier une expression régulière pour exclure un fichier des résultats. Cette option est très utile si vous avez un mot clé de classification interne standard que vous souhaitez exclure de la stratégie.
 
-Vous pouvez décider de définir le nombre minimal de violations de contenu à atteindre avant que le fichier ne soit considéré comme une violation. Par exemple, vous pouvez choisir 10 si vous souhaitez être alerté pour les fichiers comportant au moins 10 numéros de carte de crédit détectés dans leur contenu.
+Vous pouvez décider de définir le nombre minimal de violations de contenu que vous souhaitez faire correspondre avant que le fichier ne soit considéré comme une violation. Par exemple, vous pouvez choisir 10 si vous souhaitez être alerté sur des fichiers contenant au moins 10 numéros de carte de crédit trouvés dans son contenu.
 
-Quand du contenu correspond à l’expression sélectionnée, le texte de la violation est remplacé par des caractères « X ». Par défaut, les violations sont masquées. Seul leur contexte, 100 caractères avant et après la violation, est affiché. Les chiffres dans le contexte de l’expression sont remplacés par des caractères « # » et ne sont jamais stockés dans Cloud App Security. Vous pouvez sélectionner l’option **Montrer les quatre derniers caractères d’une violation** pour annuler le masquage des quatre derniers caractères de la violation elle-même. Il est nécessaire de définir les types de données que l’expression régulière recherche : contenu, métadonnées et/ou nom de fichier. Par défaut, elle recherche le contenu et les métadonnées.
+Lorsque le contenu est mis en correspondance avec l’expression sélectionnée, le texte de la violation est remplacé par des caractères « X ». Par défaut, les violations sont masquées et affichées dans leur contexte affichant 100 caractères avant et après la violation. Les nombres dans le contexte de l’expression sont remplacés par des caractères « # » et ne sont jamais stockés dans Cloud App Security. Vous pouvez sélectionner l’option pour afficher les **quatre derniers caractères d’une violation** afin de démasquer les quatre derniers caractères de la violation elle-même. Il est nécessaire de définir les types de données que l’expression régulière recherche : contenu, métadonnées et/ou nom de fichier. Par défaut, elle recherche le contenu et les métadonnées.
 
 ## <a name="content-inspection-for-protected-files"></a>Inspection du contenu pour les fichiers protégés
 
-Cloud App Security permet aux administrateurs d’accorder l’autorisation à Cloud App Security de déchiffrer les fichiers chiffrés et d’analyser leur contenu à la recherche de violations.
+Cloud App Security permet aux administrateurs d’accorder à Cloud App Security l’autorisation de déchiffrer des fichiers chiffrés et de rechercher les violations de leur contenu.
 
-Afin d’octroyer les autorisations nécessaires à Cloud App Security :
+Pour accorder à Cloud App Security les autorisations nécessaires :
 
-1. Accédez à **Paramètres**, puis **Azure Information Protection**.
-2. Activez **Inspecter les fichiers protégés**.
-3. Suivez les instructions pour accorder les autorisations requises dans Azure Active Directory.
-4. Vous pouvez configurer les paramètres pour chaque stratégie de fichier afin de déterminer quelles stratégies analyseront les fichiers protégés.
+1. Accédez à **paramètres** , puis **Azure information protection**.
+2. Activez **inspecter les fichiers protégés.**
+3. Suivez l’invite pour autoriser les autorisations requises dans Azure Active Directory.
+4. Vous pouvez configurer les paramètres par stratégie de fichier pour déterminer quelles stratégies vont analyser les fichiers protégés.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 > [!div class="nextstepaction"]
 > [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)

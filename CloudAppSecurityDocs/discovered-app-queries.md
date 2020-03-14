@@ -15,11 +15,11 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: ba9848bf0f9cbcee326cdebfaed09b95f38fe267
-ms.sourcegitcommit: 445a7c208455e6ce2c4e13b028c811f4c3486290
+ms.sourcegitcommit: 4f3883a9e85d0aaf2802b10433b221c3f1838d88
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78342282"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79285463"
 ---
 # <a name="discovered-app-filters-and-queries"></a>Filtres et requêtes des applications découvertes
 

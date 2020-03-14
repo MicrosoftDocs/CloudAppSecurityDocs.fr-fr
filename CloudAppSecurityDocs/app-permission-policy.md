@@ -15,11 +15,11 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 9d007c4760ace7a4337e4738406016576fa04171
-ms.sourcegitcommit: 445a7c208455e6ce2c4e13b028c811f4c3486290
+ms.sourcegitcommit: 4f3883a9e85d0aaf2802b10433b221c3f1838d88
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78342673"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79285303"
 ---
 # <a name="oauth-app-policies"></a>Stratégies d’application OAuth
 
