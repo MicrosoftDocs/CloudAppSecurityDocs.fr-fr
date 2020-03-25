@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0605d54b8af24b2b060e96788349e2cfe45abaac
-ms.sourcegitcommit: 661228206512c6c8dcb30fdce59b2c038cf2fe69
+ms.openlocfilehash: 44ede581e5f646695110975aa7a842e60e418bd4
+ms.sourcegitcommit: f396474ead281430c7a63d1172ab7288c9878f13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/01/2020
-ms.locfileid: "78204271"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80152001"
 ---
 # <a name="azure-advanced-threat-protection-integration"></a>Intégration d’Azure-protection avancée contre les menaces
 
@@ -75,6 +75,16 @@ Pour désactiver l’intégration Cloud App Security avec Azure ATP :
 
 > [!NOTE]
 > Lorsque l’intégration est désactivée, les données Azure ATP existantes sont conservées conformément aux stratégies de rétention de Cloud App Security, mais la section d’évaluation de l’état de la sécurité des identités est supprimée.
+
+## <a name="known-issues"></a>Problèmes connus
+
+### <a name="missing-siem-alert-updates"></a>Mises à jour des alertes SIEM manquantes
+
+Ce problème affecte plusieurs alertes déclenchées plusieurs fois. La première instance de l’alerte est envoyée à SIEM, mais les déclencheurs suivants de la même alerte ne sont pas envoyés.
+
+#### <a name="resolution"></a>Résolution
+
+Aucune solution connue.
 
 ## <a name="next-steps"></a>Étapes suivantes :
 
