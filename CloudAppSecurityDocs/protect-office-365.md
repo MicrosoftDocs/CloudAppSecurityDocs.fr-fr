@@ -7,12 +7,12 @@ ms.service: cloud-app-security
 ms.topic: article
 ms.date: 12/04/2019
 ms.collection: M365-security-compliance
-ms.openlocfilehash: eaf8218f45da787e361fe4e1627bb2cdfc4afeb1
-ms.sourcegitcommit: 27c45aa35c11c4ce54edbe10a9d22cf6b452fbe6
+ms.openlocfilehash: e4fd133978a4e10826b4b6d95ae7341c682d72dc
+ms.sourcegitcommit: 2cf3c78a1b45a5b6ca534fdd12fd97afc51726e3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78304796"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80291193"
 ---
 # <a name="how-cloud-app-security-helps-protect-your-office-365-environment"></a>Comment Cloud App Security aide à protéger votre environnement Office 365
 
@@ -64,8 +64,8 @@ Vous pouvez utiliser les modèles de stratégie intégrés suivants pour détect
 
 | Type | Nom |
 | ---- | ---- |
-| Stratégie de détection des anomalies intégrée | [Activité à partir d’adresses IP anonymes](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)<br />[Activité à partir d’un pays peu fréquent](anomaly-detection-policy.md#activity-from-infrequent-country)<br />[Activité à partir d’adresses IP suspectes](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)<br />[Voyage impossible](anomaly-detection-policy.md#impossible-travel)<br />[Activité effectuée par l’utilisateur terminé](anomaly-detection-policy.md#activity-performed-by-terminated-user) (requiert AAD comme IDP)<br />[Détection de logiciel malveillant](anomaly-detection-policy.md#malware-detection)<br />[Plusieurs tentatives de connexion ayant échoué](anomaly-detection-policy.md#multiple-failed-login-attempts)<br />[Détection de ransomware](anomaly-detection-policy.md#ransomware-activity)<br />[Activité suspecte de suppression d’e-mails (préversion)](anomaly-detection-policy.md#suspicious-email-deletion-activity-preview)<br />[Boîte de réception suspecte transférant](anomaly-detection-policy.md#suspicious-inbox-forwarding)des[activités de suppression de fichiers inhabituels](anomaly-detection-policy.md#unusual-activities-by-user)<br />[Activités de partage de fichiers inhabituelles](anomaly-detection-policy.md#unusual-activities-by-user)<br />[Activités de téléchargement de plusieurs fichiers inhabituelles](anomaly-detection-policy.md#unusual-activities-by-user) |
-| Modèle de stratégie d’activité | Connexion à partir d’une adresse IP à risque<br />Téléchargement en masse par un seul utilisateur<br />Activité potentielle de ransomware |
+| Stratégie de détection des anomalies intégrée | [Activité depuis des adresses IP anonymes](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)<br />[Activité à partir de pays peu fréquents](anomaly-detection-policy.md#activity-from-infrequent-country)<br />[Activité à partir d'adresses IP suspectes](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)<br />[Voyage impossible](anomaly-detection-policy.md#impossible-travel)<br />[Activité effectuée par l’utilisateur terminé](anomaly-detection-policy.md#activity-performed-by-terminated-user) (requiert AAD comme IDP)<br />[Détection de logiciel malveillant](anomaly-detection-policy.md#malware-detection)<br />[Plusieurs tentatives de connexion ayant échoué](anomaly-detection-policy.md#multiple-failed-login-attempts)<br />[Détection de ransomware](anomaly-detection-policy.md#ransomware-activity)<br />[Activité suspecte de suppression d’e-mails (préversion)](anomaly-detection-policy.md#suspicious-email-deletion-activity-preview)<br />[Boîte de réception suspecte transférant](anomaly-detection-policy.md#suspicious-inbox-forwarding)des[activités de suppression de fichiers inhabituels](anomaly-detection-policy.md#unusual-activities-by-user)<br />[Activités de partage de fichiers inhabituelles](anomaly-detection-policy.md#unusual-activities-by-user)<br />[Activités de téléchargement de plusieurs fichiers inhabituelles](anomaly-detection-policy.md#unusual-activities-by-user) |
+| Modèle de stratégie d’activité | Connexion à partir d’une adresse IP à risque<br />Téléchargement en masse par un seul utilisateur<br />Activité potentielle de ransomware<br />Modification du niveau d’accès (équipes)<br />Utilisateur externe ajouté (équipes)<br />Suppression en masse (équipes) |
 | Modèle de stratégie de fichier | Détecter un fichier partagé avec un domaine non autorisé<br />Détecter un fichier partagé avec des adresses de messagerie personnelles<br />Détecter les fichiers avec PII/PCI/PHI |
 | Stratégie de détection des anomalies d’application OAuth | [Nom d’application OAuth trompeur](app-permission-policy.md#oauth-app-anomaly-detection-policies)<br />[Nom du serveur de publication trompeur pour une application OAuth](app-permission-policy.md#oauth-app-anomaly-detection-policies)<br />[Consentement de l’application OAuth malveillante](app-permission-policy.md#oauth-app-anomaly-detection-policies) |
 

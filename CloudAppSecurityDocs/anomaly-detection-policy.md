@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 02/04/2020
+ms.date: 03/24/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d2dce554b959c14ba32c92f27579d5525069b1f3
-ms.sourcegitcommit: 4f3883a9e85d0aaf2802b10433b221c3f1838d88
+ms.openlocfilehash: dd637bc49d65452cedc13841686ea267134ef15e
+ms.sourcegitcommit: 2cf3c78a1b45a5b6ca534fdd12fd97afc51726e3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79285313"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80291238"
 ---
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>Bénéficiez d’une analyse comportementale et d’une détection des anomalies instantanées
 
@@ -108,7 +108,7 @@ La détection recherche les utilisateurs dont le compte a été terminé dans Az
 
 ### <a name="suspicious-inbox-manipulation-rules"></a>Règles de manipulation de boîtes de réception suspectes
 
-* Cette détection Profile votre environnement et déclenche des alertes lorsque des règles suspectes qui suppriment ou déplacent des messages ou des dossiers sont définies dans la boîte de réception d’un utilisateur. Cela peut indiquer que le compte de l’utilisateur est compromis, que des messages sont intentionnellement masqués et que la boîte aux lettres est utilisée pour distribuer du courrier indésirable ou des logiciels malveillants dans votre organisation.
+* Cette détection Profile votre environnement et déclenche des alertes lorsque des règles suspectes qui suppriment ou déplacent des messages ou des dossiers sont définies dans la boîte de réception d’un utilisateur. Cela peut indiquer que le compte de l’utilisateur est compromis, que les messages sont intentionnellement masqués et que la boîte aux lettres est utilisée pour distribuer le courrier indésirable ou les logiciels malveillants dans votre organisation.
 
 ### <a name="suspicious-email-deletion-activity-preview"></a>Activité de suppression des e-mails suspects (version préliminaire)
 
@@ -126,6 +126,7 @@ Ces détections identifient les utilisateurs qui effectuent les opérations suiv
 * Activités de partage de rapport Power BI inhabituelles (version préliminaire)
 * Activités de création de plusieurs machines virtuelles inhabituelles (version préliminaire)
 * Activités de suppression de plusieurs stockages inhabituelles (version préliminaire)
+* Région inhabituelle pour la ressource Cloud (version préliminaire)
 
 Ces stratégies recherchent les activités au sein d’une seule session par rapport à la ligne de base apprise, ce qui peut indiquer une tentative de violation. Ces détections tirent parti d’un algorithme de Machine Learning qui Profile le modèle de connexion des utilisateurs et réduit le nombre de faux positifs. Ces détections font partie du moteur de détection des anomalies heuristique qui Profile votre environnement et déclenche des alertes en ce qui concerne une ligne de base qui a été appris sur l’activité de votre organisation.
 
@@ -141,7 +142,7 @@ Ces stratégies recherchent les activités au sein d’une seule session par rap
 
 * Cette stratégie Profile votre environnement et déclenche des alertes lorsque les utilisateurs suppriment plusieurs machines virtuelles dans une seule session, par rapport à la ligne de base de votre organisation. Cela peut indiquer une tentative de violation.
 
-## Activer la gouvernance automatisée<a name="adp-automated-gov"></a>
+## <a name="enable-automated-governance"></a>Activer la gouvernance automatisée<a name="adp-automated-gov"></a>
 
 Vous pouvez activer les actions de correction automatisées sur les alertes générées par les stratégies de détection des anomalies.
 
