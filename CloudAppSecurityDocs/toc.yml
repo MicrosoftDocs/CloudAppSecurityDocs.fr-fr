@@ -19,11 +19,11 @@
 - name: Démarrages rapides
   expanded: true
   items:
-    - name: Bien démarrer
+    - name: Mise en route
       href: getting-started-with-cloud-app-security.md
     - name: Bonnes pratiques
       href: best-practices.md
-- name: Tutoriels
+- name: Didacticiels
   items:
     - name: Découvrir et gérer Shadow IT
       href: tutorial-shadow-it.md
@@ -169,7 +169,7 @@
           href: proxy-deployment-aad.md
         - name: Intégrer et déployer le contrôle d’application par accès conditionnel pour tous les types d’applications
           href: proxy-deployment-any-app.md
-    - name: Investigation
+    - name: Examen
       href: investigate.md
       items:
         - name: Activités
@@ -197,7 +197,7 @@
           items:
             - name: Gérer des alertes
               href: managing-alerts.md
-    - name: Contrôler
+    - name: Control
       href: control.md
       items:
         - name: Contrôler les applications cloud avec des stratégies
@@ -240,6 +240,8 @@
           href: governance-discovery.md
         - name: Intégration d’Azure ATP
           href: aatp-integration.md
+        - name: Intégration d’Azure AD Identity Protection
+          href: aadip-integration.md
         - name: Intégration d’Azure Information Protection
           href: azip-integration.md
         - name: Intégrer avec des solutions externes
@@ -290,7 +292,7 @@
       href: webinars.md
     - name: Lisez nos livres électroniques
       href: e-books.md
-    - name: Archive des notes de publication
+    - name: Archive des notes de mise en production
       href: release-note-archive.md
     - name: Licences de la fiche technique
       href: 'https://aka.ms/mcaslicensing'
