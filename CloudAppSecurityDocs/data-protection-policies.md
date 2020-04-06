@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2dcfbaa4cfb676aafcb996efaa243adeedaf93f7
-ms.sourcegitcommit: 06437f58d452294cf53d1ad86f7cb857569cd5ba
+ms.openlocfilehash: 7c309455b6c7c5a1d46421316eb589038f162726
+ms.sourcegitcommit: 288c279a0d2dd62a8ad8d7425c3e9e98857bf5f4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/16/2020
-ms.locfileid: "77369561"
+ms.lasthandoff: 04/05/2020
+ms.locfileid: "80666488"
 ---
 # <a name="file-policies"></a>Stratégies de fichier
 
@@ -29,7 +29,7 @@ Les stratégies de fichier vous permettent d’appliquer un large éventail de p
 
 ## <a name="supported-file-types"></a>Types de fichiers pris en charge
 
-Les moteurs DLP intégrés à Cloud App Security effectuent l’inspection du contenu en extrayant le texte de tous les types de fichiers courants (plus de 100), dont Office, Open Office, les fichiers compressés, différents formats de texte enrichi, XML, HTML et bien plus encore.
+Les moteurs DLP intégrés d’Cloud App Security effectuent l’inspection du contenu en extrayant le texte de tous les types de fichiers courants (plus de 100), y compris Office, Open Office, les fichiers compressés, différents formats de texte enrichi, XML, HTML et bien plus encore.
 
 ## <a name="policies"></a>Stratégies
 

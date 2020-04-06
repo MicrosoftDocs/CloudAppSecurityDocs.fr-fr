@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d45711d5dfd5f0a7a3ae30df1e5e90425ff631ff
-ms.sourcegitcommit: be2c558eee71de02ec29632fc58256d49de0f86f
+ms.openlocfilehash: f596bd5161a5c7e0603ff934848ab6fa110647bf
+ms.sourcegitcommit: 288c279a0d2dd62a8ad8d7425c3e9e98857bf5f4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78304880"
+ms.lasthandoff: 04/05/2020
+ms.locfileid: "80666506"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-integration-with-microsoft-cloud-app-security"></a>Intégration de Microsoft Defender-protection avancée contre les menaces avec Microsoft Cloud App Security
 
@@ -33,7 +33,7 @@ L’intégration ne nécessite pas de déploiement supplémentaire et est prête
 
 En outre, lorsque vous identifiez un utilisateur à risque, vous pouvez vérifier tous les ordinateurs auxquels l’utilisateur a accédé pour détecter les risques potentiels. Si vous identifiez un ordinateur à risque, cochez tous les utilisateurs qui l’ont utilisé pour détecter d’autres risques potentiels.
 
-Une fois les informations de trafic collectées, vous êtes prêt à approfondir l' [utilisation des applications Cloud](discovered-apps.md#deep-dive-into-discovered-apps) dans votre organisation. Cloud App Security tire parti des fonctionnalités de protection réseau de Microsoft Defender ATP pour bloquer l’accès des appareils de point de terminaison aux applications Cloud. Vous pouvez bloquer les applications en les [marquant comme non ](governance-discovery.md#BKMK_SanctionApp) approuvées dans le portail. En fonction de l’utilisation complète et de l’évaluation des risques de chaque application non approuvée, les domaines de l’application sont utilisés pour créer des [indicateurs de domaine](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators#create-indicators-for-ips-and-urlsdomains-preview) dans le portail Microsoft Defender ATP. L’antivirus Windows Defender, exécuté sur des appareils de point de terminaison, utilise les indicateurs de domaine pour bloquer l’accès à ces applications.
+Une fois les informations de trafic collectées, vous êtes prêt à approfondir l' [utilisation des applications Cloud](discovered-apps.md#deep-dive-into-discovered-apps) dans votre organisation. Cloud App Security tire parti des fonctionnalités de protection réseau de Microsoft Defender ATP pour bloquer l’accès des appareils de point de terminaison aux applications Cloud. Vous pouvez bloquer les applications en les [marquant comme non **Unsanctioned** ](governance-discovery.md#BKMK_SanctionApp) approuvées dans le portail. En fonction de l’utilisation complète et de l’évaluation des risques de chaque application non approuvée, les domaines de l’application sont utilisés pour créer des [indicateurs de domaine](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators#create-indicators-for-ips-and-urlsdomains-preview) dans le portail Microsoft Defender ATP. L’antivirus Windows Defender, exécuté sur des appareils de point de terminaison, utilise les indicateurs de domaine pour bloquer l’accès à ces applications.
 
 > [!NOTE]
 > Vous souhaitez découvrir Microsoft Defender ATP ? [Inscrivez-vous pour obtenir une version d’évaluation gratuite](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-assignaccess-abovefoldlink).
@@ -99,7 +99,7 @@ Comme pour toute autre source de Cloud Discovery, vous pouvez exporter les donn�
 >
 > - Microsoft Defender ATP transfère les données à Cloud App Security dans des segments de environ 4 Mo (environ 4000 transactions de point de terminaison)
 > - Si la limite de 4 Mo n’est pas atteinte dans un délai de 1 heure, Microsoft Defender ATP signale toutes les transactions effectuées au cours de la dernière heure.
-> - Si l’appareil de point de terminaison se trouve derrière un proxy direct, le volume de trafic n’est pas visible par Microsoft Defender ATP et ne sera donc pas inclus dans les rapports Cloud Discovery. Pour plus d’informations, consultez surveillance de la [connexion réseau derrière le proxy direct](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/MDATP-Monitoring-network-connection-behind-forward-proxy-Public/ba-p/758274).
+> - Si l’appareil de point de terminaison se trouve derrière un proxy direct, les données de trafic ne seront pas visibles par Microsoft Defender ATP et ne seront donc pas incluses dans les rapports de Cloud Discovery. Pour plus d’informations, consultez surveillance de la [connexion réseau derrière le proxy direct](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/MDATP-Monitoring-network-connection-behind-forward-proxy-Public/ba-p/758274).
 
 ## <a name="block-access-to-unsanctioned-cloud-apps"></a>Bloquer l’accès aux applications Cloud non approuvées
 
