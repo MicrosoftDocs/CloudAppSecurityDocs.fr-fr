@@ -15,10 +15,10 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 83bb7ac4d1b75a98f426f97f09d6019befc221ad
-ms.sourcegitcommit: 288c279a0d2dd62a8ad8d7425c3e9e98857bf5f4
+ms.sourcegitcommit: 0b929f7c8feed7dfb40d5294179fd5c6fc079614
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/05/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "80666430"
 ---
 # <a name="tutorial-protect-files-with-admin-quarantine"></a>Tutoriel : Protéger les fichiers avec la mise en quarantaine administrateur

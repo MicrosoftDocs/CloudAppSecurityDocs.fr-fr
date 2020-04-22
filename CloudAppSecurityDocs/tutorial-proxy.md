@@ -8,10 +8,10 @@ ms.topic: tutorial
 ms.date: 01/01/2020
 ms.collection: M365-security-compliance
 ms.openlocfilehash: fec6182d004b934f564291e4ca9f4fe06aa8d723
-ms.sourcegitcommit: 446041f0e7adf6688bf63d402838844baa3342bb
+ms.sourcegitcommit: 0b929f7c8feed7dfb40d5294179fd5c6fc079614
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "75667559"
 ---
 # <a name="tutorial-protect-any-apps-in-use-in-your-organization-in-real-time"></a>Tutoriel : Protéger toutes les applications utilisées dans votre organisation en temps réel
@@ -51,7 +51,7 @@ Une préoccupation majeure pour de nombreuses organisations est de savoir commen
 Maintenant que vos applications sont déployées, vous pouvez facilement configurer des stratégies pour atténuer ces deux risques en tirant parti de nos intégrations natives avec Microsoft Intune pour la gestion des appareils, Azure AD pour les groupes d’utilisateurs et Azure Information Protection pour la protection des données.
 
 * **Atténuer des appareils non gérés** : créer une [stratégie de session pour étiqueter](session-policy-aad.md#create-a-cloud-app-security-session-policy) et protéger les fichiers hautement confidentiels destinés aux utilisateurs de votre organisation uniquement.
-* **Atténuer les utilisateurs invités**: créez une [stratégie de session pour appliquer des autorisations personnalisées](session-policy-aad.md#protect-download) à n’importe quel fichier téléchargé par des utilisateurs invités. Par exemple, vous pouvez définir des autorisations pour que les utilisateurs invités puissent accéder à un fichier protégé uniquement.
+* **Atténuer les utilisateurs invités** : créez une [stratégie de session pour appliquer des autorisations personnalisées](session-policy-aad.md#protect-download) à n’importe quel fichier téléchargé par des utilisateurs invités. Par exemple, vous pouvez définir des autorisations pour que les utilisateurs invités puissent accéder à un fichier protégé uniquement.
 
 ### <a name="phase-3-prevent-unprotected-data-from-being-uploaded-to-your-apps"></a>Phase 3 : Empêcher le téléchargement de données non protégées vers vos applications
 

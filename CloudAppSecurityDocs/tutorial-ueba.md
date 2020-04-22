@@ -11,10 +11,10 @@ ms.service: cloud-app-security
 ms.reviewer: dannyk
 ms.suite: ems
 ms.openlocfilehash: cafb971ae16b0c5bd48e041d36c16521b6e7e5d3
-ms.sourcegitcommit: 4f3883a9e85d0aaf2802b10433b221c3f1838d88
+ms.sourcegitcommit: 0b929f7c8feed7dfb40d5294179fd5c6fc079614
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79241808"
 ---
 # <a name="tutorial-investigate-risky-users"></a>Tutoriel : Examiner des utilisateurs à risque
@@ -36,7 +36,7 @@ Ce tutoriel fournit des instructions sur l’utilisation de Cloud App Security p
 > * 3 : [Examiner davantage les utilisateurs](#investigate)
 > * 4 : [Protéger votre organisation](#protect)
 
-## Comprendre le score de priorité d’examen<a name="risk-score"></a>
+## <a name="understand-the-investigation-priority-score"></a>Comprendre le score de priorité d’examen<a name="risk-score"></a>
 
 Le score de priorité d’examen est fourni par Cloud App Security à chaque utilisateur pour vous permettre de savoir quel risque présente un utilisateur par rapport à d’autres utilisateurs de votre organisation.
 
@@ -58,13 +58,13 @@ Le score d'alerte représente l'impact potentiel d'une alerte spécifique sur ch
 * **Score d’activité**  
 Le score d'activité détermine la probabilité qu'un utilisateur donné effectue une activité spécifique, en fonction de l'apprentissage comportemental de l'utilisateur et de ses collègues. Les activités identifiées comme étant les plus anormales reçoivent les scores les plus élevés.
 
-## Phase 1 : Se connecter aux applications à protéger<a name="connect-apps-protect"></a>
+## <a name="phase-1-connect-to-the-apps-you-want-to-protect"></a>Phase 1 : Se connecter aux applications à protéger<a name="connect-apps-protect"></a>
 
 1. Connectez au moins une application à Microsoft Cloud App Security à l’aide de [connecteurs API](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md). Pour commencer, nous vous recommandons de connecter [Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
 1. Connectez des applications supplémentaires à l’aide du [proxy pour mettre en place le contrôle d’application par accès conditionnel](proxy-deployment-aad.md).
 1. Pour activer les insights sur votre environnement local, configurez Cloud App Security pour [s’intégrer à votre environnement Azure ATP](aatp-integration.md).
 
-## Phase 2 : Identifier les principaux utilisateurs à risque<a name="identify"></a>
+## <a name="phase-2-identify-top-risky-users"></a>Phase 2 : Identifier les principaux utilisateurs à risque<a name="identify"></a>
 
 Pour identifier vos utilisateurs présentant le plus de risques dans Cloud App Security :
 
@@ -89,7 +89,7 @@ La page Utilisateur vous aide à répondre aux questions suivantes :
   >[!NOTE]
   >Remarque importante : même si la page Utilisateur fournit des informations sur les appareils, les ressources et les comptes pour toutes les activités, le score de priorité d’examen correspond à la somme de toutes les activités et alertes à risque identifiées au cours des 7 derniers jours.
 
-## Phase 3 : Examiner davantage les utilisateurs<a name="investigate"></a>
+## <a name="phase-3-further-investigate-users"></a>Phase 3 : Examiner davantage les utilisateurs<a name="investigate"></a>
 
 Lorsque vous examinez un utilisateur en fonction d’une alerte ou si vous avez vu une alerte dans un système externe, il peut y avoir des activités qui peuvent ne pas être la cause d’une alerte seules, mais lorsque Cloud App Security les agrège avec d’autres activités, l’alerte peut indiquer un événement suspect.
 
@@ -99,7 +99,7 @@ Lorsque vous examinez un utilisateur, posez-vous ces questions sur les activité
 
 * Accédez au **journal d’activité** pour comprendre pourquoi cette activité a reçu un score élevé, tandis que d’autres n’ont pas reçu ce score. Vous pouvez définir la **Priorité d’examen** sur **Est défini** pour comprendre quelles activités sont suspectes. Par exemple, vous pouvez filtrer selon la Priorité d’examen pour toutes les activités qui se sont produites en Ukraine. Vous verrez alors si d’autres activités à risque se sont produites et à quel endroit l'utilisateur s'est connecté. Pour poursuivre l’examen, il est très facile de basculer vers d’autres aspects, par exemple les dernières activités non anormales dans le cloud et localement.
 
-## Phase 4 : Protéger votre organisation<a name="protect"></a>
+## <a name="phase-4-protect-your-organization"></a>Phase 4 : Protéger votre organisation<a name="protect"></a>
 
 Si votre enquête débouche sur la conclusion qu’un utilisateur est compromis, effectuez les étapes suivantes pour réduire le risque.
 
