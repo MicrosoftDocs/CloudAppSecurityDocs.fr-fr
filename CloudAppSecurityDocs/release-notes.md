@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 619bce7e6f3931a53a5891c6c5ff0db223c384cf
-ms.sourcegitcommit: 2cf3c78a1b45a5b6ca534fdd12fd97afc51726e3
+ms.openlocfilehash: d5e9d556131e0172255485801da39ee89aa97e06
+ms.sourcegitcommit: 0b929f7c8feed7dfb40d5294179fd5c6fc079614
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80291252"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81662388"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Nouveautés dans Microsoft Cloud App Security
 
@@ -25,6 +25,15 @@ ms.locfileid: "80291252"
 Cet article est mis à jour fréquemment pour vous informer des nouveautés de la dernière version de Cloud App Security.
 
 Flux RSS : Recevez une notification quand cette page est mise à jour en copiant et collant l’URL suivante dans votre lecteur de flux : `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
+
+## <a name="cloud-app-security-release-172"></a>Cloud App Security version 172
+
+Publication : 5 avril 2020
+
+- **Amélioration des contrôles d’accès et de session avec n’importe quel IdP (préversion)**  
+Les contrôles d’accès et de session prennent désormais en charge les applications SAML configurées avec n’importe quel fournisseur d’identité. La préversion publique de cette nouvelle fonctionnalité est désormais progressivement déployée. Pour configurer ces contrôles, consultez le [Guide de déploiement](proxy-deployment-aad.md).
+- **Nouvelle désanonymisation en bloc des utilisateurs et des ordinateurs**  
+Nous avons développé et simplifié le processus de désanonymisation d’un ou plusieurs utilisateurs et ordinateurs en cours d’investigation. Pour plus d’informations sur la désanonymisation en bloc, consultez [Fonctionnement de l’anonymisation des données](cloud-discovery-anonymizer.md#how-data-anonymization-works).
 
 ## <a name="cloud-app-security-release-170-and-171"></a>Cloud App Security versions 170 et 171
 
