@@ -1,6 +1,6 @@
 ---
-title: Différences entre Cloud App Security et Office 365 Cloud App Security
-description: Cet article décrit les différences entre Cloud App Security et Office 365 Cloud App Security.
+title: Différences entre Cloud App Security et la Sécurité des applications cloud Office 365
+description: Cet article décrit les différences entre Cloud App Security et la Sécurité des applications cloud Office 365.
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -15,51 +15,51 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: fcaf4dab75d85a392ad4b1f8607f9e43d2a9be4c
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.sourcegitcommit: 0b929f7c8feed7dfb40d5294179fd5c6fc079614
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "74459023"
 ---
-# <a name="what-are-the-differences-between-microsoft-cloud-app-security-and-office-365-cloud-app-security"></a>Quelles sont les différences entre Microsoft Cloud App Security et Office 365 Cloud App Security ?
+# <a name="what-are-the-differences-between-microsoft-cloud-app-security-and-office-365-cloud-app-security"></a>Différences entre Microsoft Cloud App Security et la Sécurité des applications cloud Office 365
 
 *S’applique à : Microsoft Cloud App Security*
 
-Cet article décrit les différences entre Cloud App Security et Office 365 Cloud App Security. Pour plus d’informations sur Office 365 Cloud App Security, consultez [Bien démarrer avec Office 365 Cloud App Security](https://support.office.com/article/Get-started-with-Advanced-Management-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a).
+Cet article décrit les différences entre Cloud App Security et la Sécurité des applications cloud Office 365. Pour plus d’informations sur la Sécurité des applications cloud Office 365, consultez [Bien démarrer avec la Sécurité des applications cloud Office 365](https://support.office.com/article/Get-started-with-Advanced-Management-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a).
 
-Pour plus d’informations sur les licences, consultez la [fiche technique sur les licences Microsoft Cloud App Security](https://aka.ms/mcaslicensing).
+Pour plus d’informations sur les licences, consultez la fiche [Licences Microsoft Cloud App Security](https://aka.ms/mcaslicensing).
 
 ## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
 
-Microsoft Cloud App Security est une solution complète multiSaaS qui offre à vos applications cloud une meilleure visibilité, des contrôles de données puissants et une protection améliorée contre les menaces. Avec ce service, votre visibilité de l’informatique fantôme est améliorée grâce à la découverte des applications cloud utilisées. Vous pouvez contrôler et protéger les données des applications une fois que vous les avez approuvées auprès du service.
+Microsoft Cloud App Security est une solution inter-SaaS complète qui offre une visibilité approfondie, des contrôles de données renforcés et une protection améliorée contre les menaces pour les applications cloud. Ce service permet de mieux visualiser l’informatique fantôme en détectant les applications cloud en cours d’utilisation. Vous pouvez contrôler et protéger les données des applications une fois celles-ci approuvées dans le service.
 
-## <a name="office-365-cloud-app-security"></a>Office 365 Cloud App Security
+## <a name="office-365-cloud-app-security"></a>Sécurité des applications cloud Office 365
 
-Office 365 Cloud App Security est une partie de Microsoft Cloud App Security qui offre une meilleure visibilité et un meilleur contrôle pour Office 365. Office 365 Cloud App Security comprend la détection des menaces basée sur les journaux d’activité des utilisateurs, la découverte de l’informatique fantôme pour les applications qui ont des fonctionnalités similaires aux produits Office 365, le contrôle des autorisations d’applications dans Office 365 ainsi que des contrôles d’application d’accès et de session.
+La Sécurité des applications cloud Office 365 est un sous-ensemble de Microsoft Cloud App Security qui assure une visibilité et un contrôle accrus pour Office 365. Office 365 Cloud App Security comprend la détection des menaces basée sur les journaux d’activité des utilisateurs, la découverte de l’informatique fantôme pour les applications qui ont des fonctionnalités similaires aux produits Office 365, le contrôle des autorisations d’applications dans Office 365 ainsi que des contrôles d’application d’accès et de session.
 
-### <a name="feature-support"></a>Prise en charge de la fonctionnalité
+### <a name="feature-support"></a>Prise en charge des fonctionnalités
 
-|Fonctionnalité|Fonctionnalité|Microsoft Cloud App Security|Office 365 Cloud App Security|
+|Fonctionnalité|Composant|Microsoft Cloud App Security|Sécurité des applications cloud Office 365|
 |----|----|----|----|
-|Cloud Discovery|Applications découvertes |Plus de 16 000 applications cloud  |Plus de 750 applications cloud avec des fonctionnalités similaires à celles d’Office 365|
-||Déploiement de l’analyse de découverte|Chargement de journaux manuel et automatique|Chargement de journaux manuel|
-||Anonymat des journaux pour la confidentialité de l’utilisateur|Oui||
-||Accès au catalogue d’applications cloud complet|Oui||
-||Évaluation des risques des applications cloud|Oui||
-||Analytique de l’utilisation du cloud par application, utilisateur, adresse IP|Oui||
-||Analytique et création de rapports en continu|Oui||
+|Cloud Discovery|Applications découvertes |> 16 000 applications cloud  |> 750 applications cloud avec des fonctionnalités similaires à Office 365|
+||Déploiement pour l’analyse de la découverte|Chargement manuel et automatique des journaux|Chargement manuel des journaux|
+||Anonymisation des journaux pour la protection des données personnelles des utilisateurs|Oui||
+||Accès à l’ensemble du catalogue d’applications cloud|Oui||
+||Analyse de risque des applications cloud|Oui||
+||Analyse de l’utilisation du cloud selon les applications, les utilisateurs et les adresses IP|Oui||
+||Analytique et rapports suivis|Oui||
 ||Détection d’anomalie pour les applications découvertes|Oui||
-|Protection des informations|Prise en charge de la protection contre la perte de données (DLP)|DLP multi-SaaS et contrôle du partage des données|Utilise la stratégie DLP Office existante (disponible dans Office E3 et versions ultérieures)|
-||Autorisations d’application et possibilité de révoquer l’accès|Oui|Oui|
-||Paramètre et application de stratégies|Oui||
-||Intégration à Azure Information Protection |Oui||
-||Intégration à des solutions DLP tierces|Oui||
-|Détection des menaces|Détection d’anomalies et analytique comportementale|Pour les applications multi-SaaS, notamment Office 365|Pour les applications Office 365 |
-||Correction d’alerte automatique et manuelle|Oui|Oui|
-||Connecteur SIEM|Oui. Alertes et journaux d’activité pour les applications multi-SaaS.|Pour les alertes Office 365 uniquement|
+|Protection des informations|Prise en charge de la protection contre la perte de données (DLP)|Contrôle du partage de données et DLP inter-SaaS|Utilisation de la fonctionnalité DLP existante d’Office (disponible dans Office E3 et les versions ultérieures)|
+||Permissions d’application et possibilité de révoquer l’accès|Oui|Oui|
+||Paramètre de stratégie et application|Oui||
+||Intégration avec Azure Information Protection |Oui||
+||Intégration avec des solutions DLP tierces|Oui||
+|Détection des menaces|Détection d’anomalie et analyse comportementale|Pour les applications inter-SaaS, y compris Office 365|Pour les applications Office 365 |
+||Correction manuelle et automatique des alertes|Oui|Oui|
+||Connecteur SIEM|Oui. Alertes et journaux d’activité pour les applications inter-SaaS|Pour les alertes Office 365 uniquement|
 ||Intégration à Microsoft Intelligent Security Graph|Oui|Oui|
-||Stratégies d’activité|Oui|Oui|
-|Contrôle d’application par accès conditionnel|Surveillance et contrôle des sessions en temps réel|Toute application cloud ou locale|Pour les applications Office 365|
+||Stratégies des activités|Oui|Oui|
+|Contrôle d’application par accès conditionnel|Surveillance et contrôle des sessions en temps réel|Toute application cloud ou locale|Pour les applications Office 365|
 
 ## <a name="next-steps"></a>Étapes suivantes
 

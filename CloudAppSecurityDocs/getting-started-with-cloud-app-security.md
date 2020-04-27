@@ -1,6 +1,6 @@
 ---
-title: Déployer Cloud App Security
-description: Ce démarrage rapide décrit le processus permettant d’opérationnaliser Cloud App Security afin que vous puissiez utiliser les applications cloud, les contrôler et obtenir des insights.
+title: Déploiement de Cloud App Security
+description: Ce guide de démarrage rapide décrit le processus de mise en route de Cloud App Security, qui permet d’utiliser les applications cloud, de les contrôler et d’obtenir des insights les concernant.
 author: shsagir
 ms.author: shsagir
 manager: shsagir
@@ -12,39 +12,39 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 0b9f026c9509153cca5c51024616662983550ef7
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.sourcegitcommit: 0b929f7c8feed7dfb40d5294179fd5c6fc079614
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "74720675"
 ---
-# <a name="quickstart-get-started-with-microsoft-cloud-app-security"></a>Démarrage rapide : Bien démarrer avec Microsoft Cloud App Security
+# <a name="quickstart-get-started-with-microsoft-cloud-app-security"></a>Démarrage rapide : Bien démarrer avec Microsoft Cloud App Security
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
-Ce démarrage rapide vous explique comment bien démarrer avec Cloud App Security. Microsoft Cloud App Security vous permet de tirer parti des avantages des applications cloud tout en conservant le contrôle des ressources d’entreprise. Il fonctionne en améliorant la visibilité de l’activité cloud et contribue à renforcer la protection des données d’entreprise. Dans cet article, nous vous guidons à travers les étapes à suivre pour configurer et utiliser Microsoft Cloud App Security.
+Ce guide de démarrage rapide présente la procédure de mise en route de Cloud App Security. Microsoft Cloud App Security vous permet de tirer parti des avantages des applications cloud tout en conservant le contrôle de vos ressources d’entreprise. Sa fonction est d’améliorer la visibilité de l’activité cloud et de contribuer à accroître la protection des données d’entreprise. Cet article présente la procédure à suivre pour configurer et utiliser Microsoft Cloud App Security.
 
-Votre organisation doit avoir une licence pour utiliser Cloud App Security. Pour plus d’informations sur les tarifs, consultez la [fiche technique sur les licences Cloud App Security](https://aka.ms/mcaslicensing).
+Votre organisation doit disposer d’une licence permettant d’utiliser Cloud App Security. Pour plus d’informations sur les tarifs, consultez la [fiche technique sur les licences Cloud App Security](https://aka.ms/mcaslicensing).
 
 >[!NOTE]
->Vous n’avez pas besoin d’une licence Office 365 pour utiliser Cloud App Security.
+>Il n’est pas nécessaire de disposer d’une licence Office 365 pour pouvoir utiliser Cloud App Security.
 
 ## <a name="prerequisites"></a>Prérequis
 
-- Votre organisation doit avoir une licence pour utiliser Cloud App Security. Pour plus d’informations sur les tarifs, consultez la [fiche technique sur les licences Cloud App Security](https://aka.ms/mcaslicensing).
+- Votre organisation doit disposer d’une licence permettant d’utiliser Cloud App Security. Pour plus d’informations sur les tarifs, consultez la [fiche technique sur les licences Cloud App Security](https://aka.ms/mcaslicensing).
 
-    Pour la prise en charge de l’activation client, consultez [Contacter le support Office 365 pour les entreprises - Aide de l’administrateur](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
-- Une fois que vous avez une licence Cloud App Security, vous recevez un e-mail contenant des informations sur l’activation et un lien vers le portail Cloud App Security.
+    Pour la prise en charge de l’activation client, consultez [Contacter le support Office 365 pour les entreprises – Aide de l’administrateur](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
+- Après avoir acquis une licence Cloud App Security, vous recevrez un e-mail contenant les informations d’activation et le lien du portail Cloud App Security.
 
-- Pour configurer Cloud App Security, vous devez être un administrateur général, de mise en conformité ou de la sécurité dans Azure Active Directory ou Office 365. Il est important de comprendre qu’un utilisateur auquel est attribué un rôle d’administrateur a les mêmes autorisations sur toutes les applications cloud auxquelles votre organisation s’est abonnée. Peu importe que vous attribuiez le rôle dans le centre d’administration Microsoft 365, dans le portail Azure Classic ou à l’aide du module Azure AD pour [Windows PowerShell](https://technet.microsoft.com/library/mt736914.aspx). Pour plus d’informations, consultez [Attribution de rôles d’administrateur dans Office 365](https://support.office.com/article/Assigning-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504) et [Attribution de rôles d’administrateur dans Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/).
+- Pour configurer Cloud App Security, vous devez être un administrateur général, de mise en conformité ou de la sécurité dans Azure Active Directory ou Office 365. Il est important de comprendre qu’un utilisateur possédant un rôle d’administrateur aura les mêmes autorisations sur toutes les applications cloud auxquelles votre organisation s’est abonnée, que ce rôle ait été attribué dans le Centre d’administration Microsoft 365, sur le Portail Azure Classic ou à l’aide du module Azure AD pour [Windows PowerShell](https://technet.microsoft.com/library/mt736914.aspx). Pour plus d’informations, consultez [Attribution des rôles d’administrateur dans Office 365](https://support.office.com/article/Assigning-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504) et [Attribution des rôles d’administrateur dans Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/).
 
-- Pour exécuter le portail Cloud App Security, utilisez Internet Explorer 11, Microsoft Edge (dernière version), Google Chrome (dernière version), Mozilla Firefox (dernière version) ou Apple Safari (dernière version).
+- Pour exécuter le portail Cloud App Security, utilisez Internet Explorer 11, Microsoft Edge (dernière version), Google Chrome (dernière version), Mozilla Firefox (dernière version) ou Apple Safari (dernière version).
 
-## <a name="to-access-the-portal"></a>Pour accéder au portail
+## <a name="to-access-the-portal"></a>Accès au portail
 
-Pour accéder au portail Cloud App Security, accédez à [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com). Vous pouvez également accéder au portail via le **centre d’administration Microsoft 365** comme suit :
+Pour accéder au portail Cloud App Security, suivez le lien [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com). Vous pouvez également accéder au portail via le **centre d’administration Microsoft 365** comme suit :
 
-1. Dans le centre d’administration Microsoft 365, cliquez sur l’icône du **lanceur d’applications** ![icône du lanceur d’applications Office 365](media/o365-admin-centers-icon.png), puis sélectionnez **Sécurité**.
+1. Dans le centre d’administration Microsoft 365, cliquez sur l’icône du **lanceur d’applications**![icône du lanceur d’applications Office 365](media/o365-admin-centers-icon.png), puis sélectionnez **Sécurité**.
 
     ![Accès à partir d’Office 365](media/access-from-o365.png)
 
@@ -52,121 +52,121 @@ Pour accéder au portail Cloud App Security, accédez à [https://portal.cloudap
 
     ![Sélectionner Cloud App Security](media/access-from-o365-s2.png)
 
-## <a name="step-1-set-instant-visibility-protection-and-governance-actions-for-your-appsenable-instant-visibility-protection-and-governance-actions-for-your-appsmd"></a>Étape 1. [Définir une visibilité instantanée, une protection et des actions de gouvernance pour vos applications](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
+## <a name="step-1-set-instant-visibility-protection-and-governance-actions-for-your-apps"></a>Étape 1. [Définir une visibilité instantanée, une protection et des actions de gouvernance pour vos applications](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
 
-Tâche obligatoire : Connecter des applications
+Tâche obligatoire : Connecter des applications
 
 1. Dans la roue dentée des paramètres, sélectionnez **Connecteurs d’application**.
-1. Cliquez sur le signe plus pour ajouter une application puis sélectionnez une application.
-1. Suivez les étapes de configuration pour connecter l’application.
+1. Cliquez sur le signe plus pour ajouter une application et sélectionnez une application.
+1. Suivez la procédure de configuration pour connecter l’application.
 
 **Pourquoi connecter une application ?**
-Après avoir connecté une application, vous pouvez obtenir une visibilité plus approfondie et ainsi examiner les activités, les fichiers et les comptes pour les applications de votre environnement cloud.
+Une fois les applications de votre environnement cloud connectées, vous bénéficierez d’une meilleure visibilité et pourrez ainsi examiner les activités, les fichiers et les comptes associés.
 
-## <a name="step-2-control-cloud-apps-with-policiescontrol-cloud-apps-with-policiesmd"></a>Étape 2. [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)
+## <a name="step-2-control-cloud-apps-with-policies"></a>Étape 2. [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)
 
-Tâche obligatoire : Créer des stratégies
+Tâche obligatoire : Créer des stratégies
 
-### <a name="to-create-policies"></a>Pour créer des stratégies
+### <a name="to-create-policies"></a>Création de stratégies
 
 1. Accédez à **Contrôle** > **Modèles**.
 1. Sélectionnez un modèle de stratégie dans la liste, puis choisissez (+) **Créer une stratégie**.
 1. Personnalisez la stratégie (sélectionnez des filtres, des actions et d’autres paramètres), puis choisissez **Créer**.
-1. Sous l’onglet **Stratégies**, choisissez la stratégie pour afficher les correspondances pertinentes (activités, fichiers, alertes).
+1. Dans l’onglet **Stratégies**, choisissez la stratégie pour afficher les correspondances pertinentes (activités, fichiers, alertes).
  Conseil : Pour couvrir tous les scénarios de sécurité de votre environnement cloud, créez une stratégie pour chaque **catégorie de risque**.
 
 ### <a name="how-can-policies-help-your-organization"></a>Comment les stratégies peuvent-elles aider votre organisation ?
 
-Vous pouvez utiliser des stratégies pour surveiller les tendances, identifier les menaces à la sécurité, et générer des alertes et des rapports personnalisés. Avec les stratégies, vous pouvez créer des actions de gouvernance, et définir une protection contre la perte de données et des contrôles sur les partages de fichiers.
+Vous pouvez utiliser des stratégies pour surveiller les tendances, voir les menaces de sécurité et générer des rapports et des alertes personnalisés. Elles permettent également de créer des actions de gouvernance et de définir des contrôles de protection contre la perte de données et de partage de fichiers.
 
-## <a name="step-3-set-up-cloud-discoveryset-up-cloud-discoverymd"></a>Étape 3. [Configurer Cloud Discovery](set-up-cloud-discovery.md)
+## <a name="step-3-set-up-cloud-discovery"></a>Étape 3. [Configuration de Cloud Discovery](set-up-cloud-discovery.md)
 
-Tâche obligatoire : Activer Cloud App Security pour afficher votre utilisation d’applications cloud
+Tâche obligatoire : Activer Cloud App Security pour voir l’utilisation de l’application cloud
 
 1. [Effectuez une intégration à Microsoft Defender ATP](wdatp-integration.md) pour activer automatiquement Cloud App Security afin de superviser vos appareils Windows 10 à l’intérieur et à l’extérieur de votre entreprise.
-1. Si vous utilisez [Zscaler, intégrez](zscaler-integration.md)-le à Cloud App Security.
-1. Pour obtenir une couverture complète, créez un rapport Cloud Discovery continu.
+1. Si vous utilisez [Zscaler](zscaler-integration.md), intégrez-le avec Cloud App Security.
+1. Pour obtenir une couverture complète, créez un rapport Cloud Discovery continu :
 
-    1. Dans la roue dentée des paramètres, sélectionnez **Paramètres Cloud Discovery**.
+    1. Dans la roue dentée Paramètres, sélectionnez **Paramètres de Cloud Discovery**.
     1. Choisissez **Chargement automatique des journaux**.
-    1. Sous l’onglet **Sources de données**, ajoutez vos sources.
-    1. Sous l’onglet **Collecteurs de journaux**, configurez le collecteur de journaux.
+    1. Dans l’onglet **Sources de données**, ajoutez vos sources.
+    1. Dans l’onglet **Collecteurs de journaux**, configurez le collecteur de journaux.
 
 ### <a name="to-create-a-snapshot-cloud-discovery-report"></a>Pour créer un rapport d’instantané Cloud Discovery
 
- Accédez à **Découvrir** > **Rapport d’instantané** et suivez les étapes indiquées.
+ Accédez à **Découvrir** > **Rapport d’instantané** et suivez la procédure indiquée.
 
 ### <a name="why-should-you-configure-cloud-discovery-reports"></a>Pourquoi configurer les rapports Cloud Discovery ?
 
-Obtenir une visibilité sur l’informatique fantôme dans votre organisation est critique.
-Une fois vos journaux analysés, vous pouvez facilement identifier les applications cloud utilisées, par quelles personnes et sur quels appareils.
+Il est essentiel de bénéficier d’une visibilité sur l’informatique fantôme dans l’organisation.
+Une fois vos journaux analysés, vous pourrez facilement identifier les applications cloud utilisées, les utilisateurs ainsi que les appareils dont ils se sont servis.
 
-## <a name="step-4-personalize-your-experiencemail-settingsmd"></a>Étape 4. [Personnaliser votre expérience](mail-settings.md)
+## <a name="step-4-personalize-your-experience"></a>Étape 4. [Personnaliser votre expérience](mail-settings.md)
 
-Tâche recommandée : Ajouter les détails de votre organisation
+Tâche recommandée : Ajouter les détails de l’organisation
 
 ### <a name="to-enter-email-settings"></a>Pour entrer les paramètres d’e-mail
 
-1. Dans la roue dentée des paramètres, sélectionnez **Paramètres de messagerie**.
-1. Sous **Identité de l’expéditeur de l’e-mail**, entrez vos adresses e-mail et votre nom d’affichage.
-1. Sous **Conception de l’e-mail**, chargez le modèle d’e-mail de votre organisation.
+1. Dans la roue dentée des paramètres, sélectionnez **Paramètres de courrier**.
+1. Sous **Identité de l’expéditeur des e-mails**, entrez vos adresses e-mail et votre nom complet.
+1. Sous **Conception des e-mails**, téléchargez le modèle d’e-mail de votre organisation.
 
 ### <a name="to-set-admin-notifications"></a>Pour définir des notifications d’administrateur
 
 1. Dans la barre de navigation, choisissez votre nom d’utilisateur, puis accédez à **Paramètres utilisateur**.
-1. Sous **Notifications**, configurez les méthodes à définir pour les notifications système.
+1. Sous **Notifications**, configurez les méthodes que vous souhaitez définir pour les notifications système.
 1. Choisissez **Enregistrer**.
 
 ### <a name="to-customize-the-score-metrics"></a>Pour personnaliser les métriques de score
 
-1. Dans la roue dentée des paramètres, sélectionnez **Paramètres Cloud Discovery**.
-1. Dans la roue dentée des paramètres, sélectionnez **Paramètres Cloud Discovery**.
+1. Dans la roue dentée Paramètres, sélectionnez **Paramètres de Cloud Discovery**.
+1. Dans la roue dentée Paramètres, sélectionnez **Paramètres de Cloud Discovery**.
 1. Sous **Métriques de score**, configurez l’importance des différentes valeurs de risque.
 1. Choisissez **Enregistrer**.
 
-Les scores de risque attribués aux applications découvertes sont maintenant configurés précisément selon les besoins et priorités de votre organisation.
+Les scores de risque attribués aux applications découvertes sont maintenant configurés précisément selon les besoins et les priorités de votre organisation.
 
 ### <a name="why-personalize-your-environment"></a>Pourquoi personnaliser votre environnement ?
 
-Certaines fonctionnalités sont plus efficaces quand elles sont adaptées à vos besoins.
-Offrez une meilleure expérience à vos utilisateurs avec vos propres modèles d’e-mail. Choisissez les notifications que vous recevez et personnalisez vos métriques de score de risque selon les préférences de votre organisation.
+Certaines fonctionnalités fonctionnent mieux quand elles sont adaptées à vos besoins.
+Offrez une meilleure expérience utilisateur avec vos propres modèles d’e-mail. Choisissez les notifications que vous recevez et personnalisez votre métrique de score de risque selon les préférences de votre organisation.
 
-## <a name="step-5-organize-the-data-according-to-your-needsip-tagsmd"></a>Étape 5. [Organiser les données selon vos besoins](ip-tags.md)
+## <a name="step-5-organize-the-data-according-to-your-needs"></a>Étape 5. [Organiser les données selon vos besoins](ip-tags.md)
 
-Tâche recommandée : Configurer des paramètres importants
+Tâche recommandée : Configurer les paramètres importants
 
 ### <a name="to-create-ip-address-tags"></a>Pour créer des étiquettes d’adresse IP
 
-1. Dans la roue dentée des paramètres, sélectionnez **Paramètres Cloud Discovery**.
+1. Dans la roue dentée Paramètres, sélectionnez **Paramètres de Cloud Discovery**.
 1. Dans la roue dentée des paramètres, sélectionnez **Plages d’adresses IP**.
 1. Cliquez sur le signe plus pour ajouter une plage d’adresses IP.
-1. Entrez les **détails**, l’**emplacement**, les **étiquettes** et la **catégorie** de la plage d’adresses IP.
+1. Entrez les **détails**, **l’emplacement**, les **étiquettes** et la **catégorie** de la plage d’adresses IP.
 1. Choisissez **Créer**.
 
-    Vous pouvez maintenant utiliser des étiquettes d’adresse IP quand vous créez des stratégies, et quand vous filtrez et créez des rapports continus.
+    Vous pouvez maintenant utiliser des balises IP lorsque vous créez des stratégies, et quand vous filtrez et créez des rapports continus.
 
 ### <a name="to-create-continuous-reports"></a>Pour créer des rapports continus
 
-1. Dans la roue dentée des paramètres, sélectionnez **Paramètres Cloud Discovery**.
+1. Dans la roue dentée Paramètres, sélectionnez **Paramètres de Cloud Discovery**.
 1. Sous **Rapports continus**, choisissez **Créer un rapport**.
-1. Suivez les étapes de configuration.
+1. Suivez la procédure de configuration.
 1. Choisissez **Créer**.
 
-Vous pouvez maintenant afficher les données découvertes selon vos propres préférences, comme des divisions ou des plages d’adresses IP.
+Vous pouvez maintenant afficher les données découvertes en fonction de vos propres préférences (par exemple, divisions ou plages d’adresses IP).
 
 ### <a name="to-add-domains"></a>Pour ajouter des domaines
 
 1. Dans la roue dentée des paramètres, sélectionnez **Paramètres**.
-1. Sous **Détails de l’organisation**, ajoutez les domaines internes de votre organisation.
+1. Sous **Informations sur l’organisation**, ajoutez les domaines internes de votre organisation.
 1. Choisissez **Enregistrer**.
 
 ### <a name="why-should-you-configure-these-settings"></a>Pourquoi devez-vous configurer ces paramètres ?
 
-Ces paramètres permettent d’exercer un meilleur contrôle des fonctionnalités dans la console. Avec les étiquettes d’adresse IP, il est plus facile de créer des stratégies qui répondent à vos besoins, de filtrer avec précision les données, etc. Utilisez des vues de données pour regrouper vos données dans des catégories logiques.
+Ces paramètres permettent de mieux contrôler les fonctionnalités de la console. Avec les balises IP, il est plus facile de créer des stratégies qui répondent à vos besoins, de filtrer avec précision les données, etc. Utilisez les Vues de données pour grouper vos données dans différentes catégories logiques.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
 > [!div class="nextstepaction"]
-> [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md).
+> [Contrôle des applications cloud avec des stratégies](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)].

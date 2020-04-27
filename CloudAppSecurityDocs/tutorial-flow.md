@@ -7,10 +7,10 @@ ms.service: cloud-app-security
 ms.topic: tutorial
 ms.date: 9/8/2019
 ms.openlocfilehash: 06fe00d3a289aa32846be71509707aa384b2177f
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.sourcegitcommit: 0b929f7c8feed7dfb40d5294179fd5c6fc079614
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "74720538"
 ---
 # <a name="tutorial-extend-governance-to-endpoint-remediation"></a>Tutoriel : Étendre la gouvernance à la correction des points de terminaison
@@ -35,16 +35,16 @@ Si vous n’avez pas de plan Microsoft Flow, [inscrivez-vous pour un compte d’
 
 ## <a name="prerequisites"></a>Prérequis
 
-* Vous devez avoir un [plan Microsoft Flow](https://flow.microsoft.com/pricing) valide.
+* Vous devez disposer d’un [plan Microsoft Flow](https://flow.microsoft.com/pricing) valide
 * Vous devez avoir un plan Microsoft Defender ATP valide
 * L’environnement Microsoft Flow doit être synchronisé avec Azure AD, supervisé par Defender ATP et joint au domaine
 
-## Phase 1 : Générer un jeton d’API Cloud App Security<a name="generate-token"></a>
+## <a name="phase-1-generate-a-cloud-app-security-api-token"></a>Phase 1 : Générer un jeton d’API Cloud App Security<a name="generate-token"></a>
 
 > [!NOTE]
 > Si vous avez déjà créé un workflow en utilisant un connecteur Cloud App Security, Microsoft Flow réutilise automatiquement le jeton et vous pouvez ignorer cette étape.
 
-1. Dans Cloud App Security, dans la barre de menus, cliquez sur la roue dentée des paramètres ![Icône des paramètres](media/settings-icon.png "icône des paramètres") et sélectionnez **Extensions de sécurité**.
+1. Dans Cloud App Security, dans la barre de menus, cliquez sur la roue dentée des paramètres ![Icône des paramètres](media/settings-icon.png "Icône des paramètres") et sélectionnez **Extensions de sécurité**.
 
 1. Dans la page **Extensions de sécurité**, cliquez sur le bouton plus (+) pour générer un nouveau jeton d’API.
 1. Dans la fenêtre contextuelle **Générer un nouveau jeton**, entrez le nom du jeton (par exemple « Flow-Token »), puis cliquez sur **Générer**.
@@ -54,7 +54,7 @@ Si vous n’avez pas de plan Microsoft Flow, [inscrivez-vous pour un compte d’
 
     ![Capture d’écran de la fenêtre de jeton, montrant le jeton et le processus de copie.](media/tutorial-flow-token-copy.png)
 
-## Phase 2 : Créer un flux pour exécuter une analyse antivirus<a name="create-flow"></a>
+## <a name="phase-2-create-a-flow-to-run-an-antivirus-scan"></a>Phase 2 : Créer un flux pour exécuter une analyse antivirus<a name="create-flow"></a>
 
 > [!NOTE]
 > Si vous avez déjà créé un flux en utilisant un connecteur Defender ATP, Flow réutilise automatiquement le connecteur et vous pouvez ignorer l’étape **Se connecter**.
@@ -71,12 +71,12 @@ Si vous n’avez pas de plan Microsoft Flow, [inscrivez-vous pour un compte d’
 
     ![Capture d’écran de la page de modèles de Microsoft Flow, montrant le processus de connexion.](media/tutorial-flow-templates-signin.png)
 
-## Phase 3 : Configurer le flux<a name="configure-flow"></a>
+## <a name="phase-3-configure-the-flow"></a>Phase 3 : Configurer le flux<a name="configure-flow"></a>
 
 > [!NOTE]
 > Si vous avez déjà créé un flux en utilisant un connecteur Azure AD, Microsoft Flow réutilise automatiquement le jeton et vous pouvez ignorer cette étape.
 
-1. Cliquez sur **Create (Créer)** .
+1. Cliquez sur **Créer**.
 
     ![Capture d’écran de la page de modèles de Microsoft Flow, montrant le bouton Créer Cloud App Security.](media/tutorial-flow-templates-create.png)
 
@@ -90,7 +90,7 @@ Si vous n’avez pas de plan Microsoft Flow, [inscrivez-vous pour un compte d’
 
     ![Capture d’écran de la fenêtre HTTP avec Azure AD, montrant les champs des ressources et le bouton de connexion.](media/tutorial-flow-templates-azure.png)
 
-1. Cliquez sur **Continue** (Continuer).
+1. Cliquez sur **Continuer**.
 
     ![Capture d’écran de la fenêtre des modèles Microsoft Flow, montrant les actions effectuées et le bouton Continuer.](media/tutorial-flow-templates-continue.png)
 
@@ -98,7 +98,7 @@ Si vous n’avez pas de plan Microsoft Flow, [inscrivez-vous pour un compte d’
 
     ![Capture d’écran de la page du flux, montrant la section des paramètres d’analyse.](media/tutorial-flow-templates-scan.png)
 
-## Phase 4 : Configurer une stratégie pour exécuter le flux<a name="configure-policy"></a>
+## <a name="phase-4-configure-a-policy-to-run-the-flow"></a>Phase 4 : Configurer une stratégie pour exécuter le flux<a name="configure-policy"></a>
 
 1. Dans Cloud App Security, cliquez sur **Contrôle**, puis sur **Stratégies**.
 

@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 1/24/2019
+ms.date: 03/31/2020
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 097f1dcdf7cb360dc38ce138ee373d6d506bdda8
-ms.sourcegitcommit: 3f6ef6b97a0953470135d115323a00cf11441ab7
+ms.openlocfilehash: e4dea21cdd9566781176a0d482bd2c45a6131ac5
+ms.sourcegitcommit: 0b929f7c8feed7dfb40d5294179fd5c6fc079614
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2020
-ms.locfileid: "78927769"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81228475"
 ---
 # <a name="tutorial-block-download-of-sensitive-information"></a>Tutoriel : Bloquer le téléchargement des informations sensibles
 
@@ -38,22 +38,29 @@ Un responsable de compte de votre organisation veut vérifier une information da
 
 ## <a name="the-solution"></a>La solution
 
-Protégez votre organisation en surveillant et en contrôlant l’utilisation des applications cloud à l’aide de l’accès conditionnel Azure AD et du contrôle d'application par accès conditionnel Microsoft Cloud App Security.
+Protégez votre organisation en surveillant et en contrôlant l’utilisation des applications cloud à l’aide d’une solution de fournisseur d’identité et du contrôle d’application par accès conditionnel de Microsoft Cloud App Security.
 
 ## <a name="prerequisites"></a>Prérequis
 
-* Une licence valide pour Azure AD Premium P1
-* Configurer une application cloud pour l’authentification unique dans Azure AD
+* Une licence valide Azure AD Premium licence P1 ou la licence requise par votre solution de fournisseur d’identité
+* Une application cloud configurée pour l’authentification unique suivant l’un des protocoles d’authentification suivants :
+
+    |Fournisseur d’identité|Protocoles|
+    |---|---|
+    |Azure AD|SAML 2.0 ou OpenID Connect|
+    |Autre|SAML 2.0|
 * S’assurer que [l’application est déployée sur Cloud App Security](proxy-deployment-aad.md)
 
 ## <a name="create-a-block-download-policy-for-unmanaged-devices"></a>Créer une stratégie de blocage des téléchargements pour les appareils non gérés
 
 Les stratégies de session Cloud App Security vous permettent de limiter une session en fonction de l’état de l’appareil. Pour contrôler une session en utilisant son appareil comme condition, créez à la fois une stratégie d’accès conditionnel ET une stratégie de session.
 
-### <a name="step-1-create-an-azure-ad-conditional-access-policy"></a>Étape 1 : Créer une stratégie d’accès conditionnel Azure AD
+### <a name="step-1-configure-your-idp-to-work-with-cloud-app-security"></a>Étape 1 : Configurer le fournisseur d’identité pour qu’il fonctionne avec Cloud App Security
 
-1. Créez une stratégie d’accès conditionnel Azure AD avec les utilisateurs et l’application affectés.
-2. Sélectionnez **Utiliser les restrictions appliquées par le contrôle d'application par accès conditionnel** sous les contrôles de session dans la stratégie d’accès conditionnel.
+Configurez votre solution de fournisseur d’identité pour qu’elle fonctionne avec Cloud App Security :
+
+* Pour [l’accès conditionnel Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal), consultez [Configuration de l’intégration avec Azure AD](proxy-deployment-aad.md#configure-integration-with-azure-ad).
+* Pour les autres solutions de fournisseur d’identité, consultez [Configuration de l’intégration avec d’autres solutions de fournisseur d’identité](proxy-deployment-aad.md#configure-integration-with-other-idp-solutions).
 
 Une fois cette tâche terminée, accédez au portail Cloud App Security et créez une stratégie de session pour surveiller et contrôler les téléchargements de fichiers dans la session.
 
@@ -107,7 +114,7 @@ Une fois cette tâche terminée, accédez au portail Cloud App Security et crée
 
 2. Ce fichier doit être bloqué et vous devez recevoir le message que vous avez défini sous **Personnaliser les messages de blocage**.
 
-3. Dans le portail Cloud App Security, cliquez sur **Contrôle**, **Stratégies**, puis cliquez sur la stratégie que vous avez créée pour afficher le rapport de stratégie. Une correspondance de stratégie de session doit apparaître rapidement.
+3. Sur le portail Cloud App Security, cliquez sur **Contrôle**, **Stratégies**, puis sur la stratégie que vous avez créée pour afficher le rapport de stratégie. Une correspondance de stratégie de session doit apparaître rapidement.
 
 4. Dans le rapport de stratégie, vous pouvez voir quelles connexions ont été redirigées vers Microsoft Cloud App Security pour le contrôle de session, et quels fichiers ont été téléchargés ou bloqués depuis les sessions surveillées.
 
