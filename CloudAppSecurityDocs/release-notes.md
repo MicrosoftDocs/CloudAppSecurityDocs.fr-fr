@@ -4,19 +4,19 @@ description: Cet article est mis à jour fréquemment pour vous informer des nou
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 03/24/2020
+ms.date: 04/26/2020
 ms.topic: overview
 ms.service: cloud-app-security
 ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d5e9d556131e0172255485801da39ee89aa97e06
-ms.sourcegitcommit: 0b929f7c8feed7dfb40d5294179fd5c6fc079614
+ms.openlocfilehash: 563710ad526f3030d4ef9db30dd855957d1db2a0
+ms.sourcegitcommit: f58ca0afb30e2db7e4e868f5df05651b42aede5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81662388"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "82161790"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Nouveautés dans Microsoft Cloud App Security
 
@@ -25,6 +25,20 @@ ms.locfileid: "81662388"
 Cet article est mis à jour fréquemment pour vous informer des nouveautés de la dernière version de Cloud App Security.
 
 Flux RSS : Recevez une notification quand cette page est mise à jour en copiant et collant l’URL suivante dans votre lecteur de flux : `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
+
+## <a name="cloud-app-security-release-173-and-174"></a>Cloud App Security versions 173 et 174
+
+Publication : 26 avril 2020
+
+- **Nouveau format CEF de l’agent SEIM pour les alertes**  
+Dans le cadre de notre effort pour enrichir les informations d’alerte fournies dans les fichiers CEF utilisés par les serveurs SIEM génériques, nous avons étendu le format pour inclure les champs client suivants :
+  - Adresse IPv4
+  - Adresse IPv6
+  - Emplacement d’adresse IP
+
+    Pour plus d’informations, voir [Format de fichier CEF](siem.md#sample-cloud-app-security-alerts-in-cef-format).
+- **Logique de détection améliorée : voyage impossible**  
+Nous avons mis à jour la logique de détection de Voyage impossible afin d’offrir une exactitude améliorée et un volume d’alertes réduit. Pour plus d’informations sur cette stratégie de détection des anomalies, consultez [Voyage impossible](anomaly-detection-policy.md#impossible-travel).
 
 ## <a name="cloud-app-security-release-172"></a>Cloud App Security version 172
 
