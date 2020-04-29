@@ -5,43 +5,48 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 9/23/2019
+ms.date: 03/31/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
-ms.openlocfilehash: 25bbe485406d0c5df0bb9f60b479e4e159d095ff
-ms.sourcegitcommit: 3f6ef6b97a0953470135d115323a00cf11441ab7
+ms.openlocfilehash: 32052630526fcd15114399e2295ca9a111233050
+ms.sourcegitcommit: ecb1835d1cd880de38f32ce7a7031b0015f3cae5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2020
-ms.locfileid: "78927734"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81241446"
 ---
 # <a name="onboard-and-deploy-conditional-access-app-control-for-any-app"></a>Intégration et déploiement de contrôle d’application par accès conditionnel pour n’importe quelle application
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Les contrôles de session dans Microsoft Cloud App Security peuvent être configurés pour fonctionner avec n’importe quelle application Web. Cet article explique comment intégrer et déployer des applications métier personnalisées, des applications SaaS non proposées et des applications locales hébergées via le proxy d’application Azure Active Directory (Azure AD) avec des contrôles de session.
 
-Pour obtenir la liste des applications qui sont proposées par Cloud App Security pour un travail prêt à l’emploi, consultez [protéger les applications avec Microsoft Cloud App Security contrôle d’application par accès conditionnel](proxy-intro-aad.md#featured-apps).
+Pour obtenir la liste des applications qui sont proposées par Cloud App Security pour un travail prêt à l’emploi, consultez [protéger les applications avec Cloud App Security contrôle d’application par accès conditionnel](proxy-intro-aad.md#featured-apps).
 
-## <a name="prerequisites"></a>Composants requis
+## <a name="prerequisites"></a>Prérequis
 
 - Votre organisation doit disposer des licences suivantes pour utiliser contrôle d’application par accès conditionnel :
 
-  - Azure Active Directory Premium P1 ou version ultérieure
+  - [Azure Active Directory (Azure AD) Premium P1](https://docs.microsoft.com/azure/active-directory/license-users-groups) ou supérieure, ou la licence requise par votre solution IDP (Identity Provider)
   - Microsoft Cloud App Security
 
-- Les applications doivent être configurées avec l’authentification unique dans Azure AD
-- Les applications doivent utiliser des protocoles SAML ou Open ID Connect 2,0
+- Les applications doivent être configurées avec l’authentification unique
+- Les applications doivent utiliser l’un des protocoles d’authentification suivants :
+
+    |Fournisseur d’identité (IdP)|Protocoles|
+    |---|---|
+    |Azure AD|SAML 2,0 ou OpenID Connect|
+    |Autres|SAML 2.0|
 
 ## <a name="to-deploy-any-app"></a>Pour déployer une application
 
 Procédez comme suit pour configurer une application devant être contrôlée par Cloud App Security contrôle d’application par accès conditionnel.
 
-**Étape 1 : [configurer Azure ad stratégie d’accès conditionnel pour acheminer les applications pertinentes vers Cloud App Security](#conf-azure-ad)**
+**Étape 1 : [configurer votre IDP pour qu’il fonctionne avec Cloud App Security](#conf-idp)**
 
 **Étape 2 : [configurer les utilisateurs qui déploieront l’application](#conf-users)**
 
@@ -56,13 +61,17 @@ Procédez comme suit pour configurer une application devant être contrôlée pa
 > [!NOTE]
 > Pour déployer contrôle d’application par accès conditionnel pour les applications Azure AD, vous avez besoin d’une [licence valide pour Azure Active Directory Premium P1 ou version ultérieure](https://docs.microsoft.com/azure/active-directory/license-users-groups) , ainsi qu’une licence Cloud App Security.
 
-## Étape 1 : configurer Azure AD stratégie d’accès conditionnel pour acheminer les applications pertinentes vers Cloud App Security<a name="conf-azure-ad"></a>  
+## <a name="step-1--configure-your-idp-to-work-with-cloud-app-security"></a>Étape 1 : configurer votre IdP pour qu’il fonctionne avec Cloud App Security<a name="conf-idp"></a><a name="conf-azure-ad"></a>
 
-1. Dans Azure AD, navigateur à **sécurité** > **accès conditionnel**.
+### <a name="configure-integration-with-azure-ad"></a>Configurer l’intégration avec Azure AD
 
-1. Dans le panneau **accès conditionnel** , dans la barre d’outils située en haut, cliquez sur **nouvelle stratégie**.
+Utilisez les étapes suivantes pour créer une stratégie d’accès conditionnel Azure AD qui achemine les sessions d’application vers Cloud App Security. Pour d’autres solutions IdP, consultez [configurer l’intégration avec d’autres solutions IDP](#configure-integration-with-other-idp-solutions).
 
-1. Dans le panneau **nouveau** , dans la zone de texte **nom** , entrez le nom de la stratégie.
+1. Dans Azure ad, accédez à **sécurité** > **accès conditionnel**.
+
+1. Dans le volet **accès conditionnel** , dans la barre d’outils située en haut, cliquez sur **nouvelle stratégie**.
+
+1. Dans le volet **nouveau** , dans la zone de texte **nom** , entrez le nom de la stratégie.
 
 1. Sous **affectations**, cliquez sur **utilisateurs et groupes**, affectez à l’application les utilisateurs qui seront intégrés (authentification initiale et vérification), puis cliquez sur **terminé**.
 
@@ -70,15 +79,85 @@ Procédez comme suit pour configurer une application devant être contrôlée pa
 
 1. Sous **contrôles d’accès**, cliquez sur **session**, sélectionnez **utiliser contrôle d’application par accès conditionnel** et choisissez des stratégies intégrées (**surveiller uniquement** ou **bloquer les téléchargements**) ou **Utilisez une stratégie personnalisée** pour définir une stratégie avancée dans Cloud App Security, puis cliquez sur **Sélectionner**.
 
-    ![Accès conditionnel Azure AD](media/azure-ad-caac-policy.png)
+    ![Accès conditionnel Azure AD](media/azure-ad-caac-policy.png)
 
-1. Facultatif : ajoutez des conditions et accordez des contrôles en fonction des besoins.
+1. Si vous le souhaitez, ajoutez des conditions et accordez des contrôles en fonction des besoins.
 
 1. Affectez à **activer la stratégie** la valeur **activé** , puis cliquez sur **créer**.
 
-## Étape 2 : configurer les utilisateurs qui déploieront l’application<a name="conf-users"></a>
+### <a name="configure-integration-with-other-idp-solutions"></a>Configurer l’intégration à d’autres solutions IdP
 
-1. Dans Cloud App Security, dans la barre de menus, cliquez sur l' ![icône](media/settings-icon.png "icône Paramètres") paramètres roue dentée paramètres, puis sélectionnez **paramètres**.
+Suivez les étapes ci-dessous pour acheminer des sessions d’application d’autres solutions IdP vers Cloud App Security. Pour Azure AD, consultez [configurer l’intégration avec Azure ad](#configure-integration-with-azure-ad).
+
+1. Dans > Cloud App Security, accédez à **examiner** > **applications connectées****contrôle d’application par accès conditionnel applications**.
+
+1. Cliquez sur le signe plus, puis dans la fenêtre contextuelle, sélectionnez l’application que vous souhaitez déployer, puis cliquez sur **Démarrer l’Assistant**.
+1. Sur la page informations sur l' **application** , remplissez le formulaire à l’aide des informations de la page Configuration de l’authentification unique de votre application, puis cliquez sur **suivant**.
+    - Si votre IdP fournit un fichier de métadonnées d’authentification unique pour l’application sélectionnée, sélectionnez **charger le fichier de métadonnées à partir de l’application** et téléchargez le fichier de métadonnées.
+    - Ou sélectionnez **remplir les données manuellement** et fournissez les informations suivantes :
+        - **URL du service consommateur d’assertion**
+        - Si votre application fournit un certificat SAML, sélectionnez **utiliser <app_name> certificat SAML** et chargez le fichier de certificat.
+
+    ![Capture d’écran montrant la page d’informations de l’application](media/proxy-deploy-add-idp-app-info.png)
+
+1. Dans la page **fournisseur d’identité** , utilisez les étapes fournies pour configurer une nouvelle application dans le portail de votre IDP, puis cliquez sur **suivant**.
+    1. Accédez au portail de votre IdP et créez une nouvelle application SAML personnalisée.
+    1. Copiez la configuration de l’authentification unique de l' `<app_name>` application existante dans la nouvelle application personnalisée.
+    1. Affecter des utilisateurs à la nouvelle application personnalisée.
+    1. Copiez les informations de configuration de l’authentification unique des applications. vous en aurez besoin à l’étape suivante.
+
+    ![Capture d’écran de la page rassembler les informations du fournisseur d’identité](media/proxy-deploy-add-idp-get-conf.png)
+
+    > [!NOTE]
+    > Ces étapes peuvent varier légèrement en fonction de votre fournisseur d’identité. Cette étape est recommandée pour les raisons suivantes :
+    >
+    > - Certains fournisseurs d’identité ne vous permettent pas de modifier les attributs SAML ou les propriétés URL d’une application de la Galerie
+    > - La configuration d’une application personnalisée vous permet de tester cette application avec des contrôles d’accès et de session sans modifier le comportement existant pour votre organisation.
+
+1. Sur la page suivante, remplissez le formulaire à l’aide des informations de la page de configuration de l’authentification unique de votre application, puis cliquez sur **suivant**.
+    - Si votre IdP fournit un fichier de métadonnées d’authentification unique pour l’application sélectionnée, sélectionnez **charger le fichier de métadonnées à partir de l’application** et téléchargez le fichier de métadonnées.
+    - Ou sélectionnez **remplir les données manuellement** et fournissez les informations suivantes :
+        - **URL du service consommateur d’assertion**
+        - Si votre application fournit un certificat SAML, sélectionnez **utiliser <app_name> certificat SAML** et chargez le fichier de certificat.
+
+    ![Capture d’écran de la page entrer les informations du fournisseur d’identité](media/proxy-deploy-add-idp-enter-conf.png)
+
+1. Sur la page suivante, copiez les informations suivantes, puis cliquez sur **suivant**. Vous aurez besoin des informations de l’étape suivante.
+
+    - URL d’authentification unique
+    - Attributs et valeurs
+
+    ![Capture d’écran de la page rassembler les informations SAML des fournisseurs d’identité](media/proxy-deploy-add-idp-ext-conf.png)
+
+1. Dans le portail de votre IdP, procédez comme suit :
+    > [!NOTE]
+    > Les paramètres se trouvent généralement dans la page Paramètres de l’application personnalisée du portail IdP.
+
+    1. Dans le champ URL d’authentification unique, entrez l’URL d’authentification unique que vous avez notée précédemment.
+        > [!NOTE]
+        > Certains fournisseurs peuvent faire référence à l’URL de l’authentification unique en tant qu' *URL de réponse*.
+    1. Ajoutez les attributs et les valeurs que vous avez notés précédemment aux propriétés des applications.
+        > [!NOTE]
+        > Certains fournisseurs peuvent y faire référence en tant qu' *attributs utilisateur* ou *revendications*.
+    1. Vérifiez que l’identificateur de nom est au format d’adresse de messagerie.
+    1. Enregistrez vos paramètres.
+1. Sur la page modifications de l' **application** , procédez comme suit, puis cliquez sur **suivant**. Vous aurez besoin des informations de l’étape suivante.
+
+    - Copier l’URL d’authentification unique
+    - Télécharger le certificat SAML Cloud App Security
+
+    ![Capture d’écran montrant la page de rassemblement Cloud App Security informations SAML](media/proxy-deploy-add-idp-app-changes.png)
+
+1. Dans le portail de votre application, sur les paramètres d’authentification unique, procédez comme suit :
+    1. Recommandations Créez une sauvegarde de vos paramètres actuels.
+    1. Dans le champ URL d’authentification unique, entrez l’URL d’authentification unique que vous avez notée précédemment.
+    1. Téléchargez le certificat Cloud App Security SAML que vous avez noté précédemment.
+    > [!NOTE]
+    > Une fois vos paramètres enregistrés, toutes les demandes de connexion associées à cette application sont acheminées via contrôle d’application par accès conditionnel.
+
+## <a name="step-2-configure-the-users-that-will-deploy-the-app"></a>Étape 2 : configurer les utilisateurs qui déploieront l’application<a name="conf-users"></a>
+
+1. Dans Cloud App Security, dans la barre de menus, cliquez sur l' ![icône](media/settings-icon.png "icône des paramètres") paramètres roue dentée paramètres, puis sélectionnez **paramètres**.
 
 1. Sous **contrôle d’application par accès conditionnel**, sélectionnez **intégration/maintenance**de l’application.
 
@@ -86,31 +165,31 @@ Procédez comme suit pour configurer une application devant être contrôlée pa
 
     ![Capture d’écran des paramètres d’intégration et de maintenance des applications.](media/app-onboarding-settings.png)
 
-## Étape 3 : configurer l’application que vous déployez<a name="conf-app"></a>
+## <a name="step-3-configure-the-app-that-you-are-deploying"></a>Étape 3 : configurer l’application que vous déployez<a name="conf-app"></a>
 
 Accédez à l’application que vous déployez. La page que vous voyez varie selon que l’application est reconnue ou non. Effectuez l'une des opérations suivantes :
 
 | État de l’application | Description | Étapes |
 | --- | --- | --- |
 | Non reconnu | Une page application non reconnue s’affiche et vous invite à configurer votre application. | 1. [Ajoutez l’application à contrôle d’application par accès conditionnel](#add-app).<br /> 2. [Ajoutez les domaines pour l’application](#add-domains), puis revenez à l’application et actualisez la page.<br /> 3. [Installez les certificats pour l’application](#install-certs). |
-| Reconnu | Une page d’intégration s’affiche pour vous inviter à poursuivre le processus de configuration de l’application. | - [installer les certificats pour l’application](#install-certs). <br /><br /> **Remarque :** Assurez-vous que l’application est configurée avec tous les domaines requis pour que l’application fonctionne correctement. Pour configurer des domaines supplémentaires, continuez à [Ajouter les domaines pour l’application](#add-domains), puis revenez à la page de l’application. |
+| Reconnu | Une page d’intégration s’affiche pour vous inviter à poursuivre le processus de configuration de l’application. | - [Installez les certificats pour l’application](#install-certs). <br /><br /> **Remarque :** Assurez-vous que l’application est configurée avec tous les domaines requis pour que l’application fonctionne correctement. Pour configurer des domaines supplémentaires, continuez à [Ajouter les domaines pour l’application](#add-domains), puis revenez à la page de l’application. |
 
-### Pour ajouter une nouvelle application<a name="add-app"></a>
+### <a name="to-add-a-new-app"></a>Pour ajouter une nouvelle application<a name="add-app"></a>
 
-1. Dans la barre de menus, cliquez sur l' ![icône](media/settings-icon.png "icône Paramètres")paramètres roue dentée paramètres, puis sélectionnez **contrôle d’application par accès conditionnel**.
+1. Dans la barre de menus, cliquez sur l' ![icône](media/settings-icon.png "icône des paramètres")paramètres roue dentée paramètres, puis sélectionnez **contrôle d’application par accès conditionnel**.
 
-1. Cliquez sur **afficher les nouvelles applications**.
+1. Cliquez sur **Afficher les nouvelles applications**.
 
-    ![Vue de contrôle d’accès conditionnel aux applications-nouvelles applications](media/caac-view-apps.png)
+    ![Afficher les nouvelles applications du Contrôle d’application par accès conditionnel](media/caac-view-apps.png)
 
-1. Dans l’écran qui s’ouvre, vous pouvez voir une liste de nouvelles applications. Pour chaque application que vous intégrez, cliquez sur le signe **+** , puis cliquez sur **Ajouter**.
+1. Dans l’écran qui s’ouvre, vous pouvez voir une liste de nouvelles applications. Pour chaque application que vous intégrez, cliquez sur le **+** signe, puis sur **Ajouter**.
 
     > [!NOTE]
-    > Si une application n’apparaît pas dans le catalogue d’applications Cloud App Security, elle apparaît dans la boîte de dialogue sous applications non identifiées avec l’URL de connexion. Lorsque vous cliquez sur le signe + pour ces applications, vous pouvez intégrer l’application en tant qu’application personnalisée.
+    > Si une application n’apparaît pas dans le catalogue d’applications Cloud App Security, elle figure, dans la boîte de dialogue, sous les applications non identifiées, avec son URL de connexion. Lorsque vous cliquez sur le signe + pour ces applications, vous pouvez intégrer l’application en tant qu’application personnalisée.
 
-    ![Contrôle d’application d’accès conditionnel découvert Azure AD apps](media/caac-discovered-aad-apps.png)
+    ![Applications Azure AD découvertes du Contrôle d’application par accès conditionnel](media/caac-discovered-aad-apps.png)
 
-### Pour ajouter des domaines pour une application<a name="add-domains"></a>
+### <a name="to-add-domains-for-an-app"></a>Pour ajouter des domaines pour une application<a name="add-domains"></a>
 
 L’Association des domaines appropriés à une application permet à Cloud App Security d’appliquer des stratégies et des activités d’audit.
 
@@ -124,15 +203,15 @@ Par exemple, si vous avez configuré une stratégie qui bloque le téléchargeme
 1. Dans le volet domaines découverts, prenez note des noms de domaine ou exportez la liste sous forme de fichier. csv.
     > [!NOTE]
     > Le volet affiche la liste des domaines détectés qui ne sont pas associés à l’application. Les noms de domaine sont qualifiés complets.
-1. Accédez à Cloud App Security, dans la barre de menus, cliquez sur l' ![icône](media/settings-icon.png "icône Paramètres") paramètres roue dentée paramètres, puis sélectionnez **contrôle d’application par accès conditionnel**.
+1. Accédez à Cloud App Security, dans la barre de menus, cliquez sur l' ![icône](media/settings-icon.png "icône des paramètres") paramètres roue dentée paramètres, puis sélectionnez **contrôle d’application par accès conditionnel**.
 1. Dans la liste des applications, sur la ligne dans laquelle l’application que vous déployez s’affiche, choisissez les trois points à la fin de la ligne, puis sous **Détails**de l’application, choisissez **modifier**.
     > [!TIP]
     > Pour afficher la liste des domaines configurés dans l’application, cliquez sur **afficher les domaines d’application**.
 1. Dans **domaines définis par l’utilisateur**, entrez tous les domaines que vous souhaitez associer à cette application, puis cliquez sur **Enregistrer**.
     > [!NOTE]
-    > Vous pouvez utiliser le caractère générique * en tant qu’espace réservé pour n’importe quel caractère. Lorsque vous ajoutez des domaines, déterminez si vous souhaitez ajouter des domaines spécifiques (`sub1.contoso.com`,`sub2.contoso.com`) ou plusieurs domaines (`*.contoso.com`).
+    > Vous pouvez utiliser le caractère générique * en tant qu’espace réservé pour n’importe quel caractère. Lorsque vous ajoutez des domaines, déterminez si vous souhaitez ajouter des`sub1.contoso.com`domaines`sub2.contoso.com`spécifiques (,) ou`*.contoso.com`plusieurs domaines ().
 
-### Pour installer des certificats racines<a name="install-certs"></a>
+### <a name="to-install-root-certificates"></a>Pour installer des certificats racines<a name="install-certs"></a>
 
 1. Répétez les étapes suivantes pour installer l' **autorité de certification actuelle** et les certificats racines auto-signés suivants de l' **autorité de certification** .
     1. Sélectionnez le certificat.
@@ -148,7 +227,7 @@ Par exemple, si vous avez configuré une stratégie qui bloque le téléchargeme
 
 1. Cliquez sur **Continuer**.
 
-## Étape 4 : vérifier que l’application fonctionne correctement<a name="verify-app"></a>
+## <a name="step-4-verify-that-the-app-is-working-correctly"></a>Étape 4 : vérifier que l’application fonctionne correctement<a name="verify-app"></a>
 
 1. Vérifiez que le processus de connexion fonctionne correctement.
     <!--
@@ -159,21 +238,21 @@ Par exemple, si vous avez configuré une stratégie qui bloque le téléchargeme
     1. Vérifiez que le comportement et les fonctionnalités de l’application ne sont pas affectés par l’exécution d’actions courantes telles que le téléchargement et le chargement de fichiers.
     1. Passez en revue la liste des domaines associés à l’application. Pour plus d’informations, consultez [Ajouter les domaines pour l’application](#add-domains).
 
-## Étape 5 : activer l’application en vue de son utilisation dans votre organisation<a name="enable-app"></a>
+## <a name="step-5-enable-the-app-for-use-in-your-organization"></a>Étape 5 : activer l’application en vue de son utilisation dans votre organisation<a name="enable-app"></a>
 
 Une fois que vous êtes prêt à activer l’application en vue de son utilisation dans l’environnement de production de votre organisation, procédez comme suit.
 
-1. Dans Cloud App Security, cliquez sur l’icône Paramètres roue dentée ![paramètres](media/settings-icon.png "icône Paramètres"), puis sélectionnez **contrôle d’application par accès conditionnel**.
+1. Dans Cloud App Security, cliquez sur l’icône Paramètres roue dentée ![paramètres](media/settings-icon.png "icône des paramètres"), puis sélectionnez **contrôle d’application par accès conditionnel**.
 1. Dans la liste des applications, sur la ligne dans laquelle l’application que vous déployez s’affiche, choisissez les trois points à la fin de la ligne, puis choisissez **modifier l’application**.
 1. Sélectionnez **utiliser avec contrôle d’application par accès conditionnel** , puis cliquez sur **Enregistrer**.
 
-## Étape 6 : mettre à jour la stratégie de Azure AD<a name="update-azure-ad"></a>
+## <a name="step-6-update-the-azure-ad-policy-azure-ad-only"></a>Étape 6 : mettre à jour la stratégie de Azure AD (Azure AD uniquement)<a name="update-azure-ad"></a>
 
 1. Dans Azure AD, sous **sécurité**, cliquez sur **accès conditionnel**.
 1. Mettez à jour la stratégie que vous avez créée précédemment pour inclure les utilisateurs, les groupes et les contrôles appropriés dont vous avez besoin.
-1. Sous **Session** > **utiliser contrôle d’application par accès conditionnel**, si vous avez sélectionné **utiliser une stratégie personnalisée**, accédez à Cloud App Security et créez une stratégie de session correspondante. Pour plus d’informations, consultez [Stratégies de session](session-policy-aad.md).
+1. Sous **session** > **utiliser contrôle d’application par accès conditionnel**, si vous avez sélectionné **utiliser une stratégie personnalisée**, accédez à Cloud App Security et créez une stratégie de session correspondante. Pour plus d’informations, consultez [Stratégies de session](session-policy-aad.md).
 
-## <a name="next-steps"></a>Étapes suivantes :
+## <a name="next-steps"></a>Étapes suivantes
 
 > [!div class="nextstepaction"]
 > [«PRÉCÉDENT : déployer contrôle d’application par accès conditionnel pour les applications proposées](proxy-deployment-aad.md)

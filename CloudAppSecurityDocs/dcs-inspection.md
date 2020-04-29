@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 7/30/2019
+ms.date: 04/16/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,21 +14,21 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: badb9427ba4a5eed267eb95f3b6d5c66ed058b98
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 75ee564e0001b76ea38f345cec24c02d567ed200
+ms.sourcegitcommit: f4845a6bbf39aea0504956bf23878f7e0adb8bcc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720666"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81477483"
 ---
 # <a name="microsoft-data-classification-services-integration"></a>Intégration du service de classification des données Microsoft
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Microsoft Cloud App Security vous permet d’utiliser le service de classification des données Microsoft en mode natif pour classer les fichiers de vos applications cloud. Le service de classification des données Microsoft fournit une expérience unifiée de protection des informations via Office 365, Azure Information Protection et Microsoft Cloud App Security. Le service de classification vous permet d’étendre votre travail de classification des données aux applications cloud tierces protégées par Microsoft Cloud App Security, en appliquant les décisions que vous avez déjà prises à un plus grand nombre d’applications.
 
 >[!NOTE]
-> Cette fonctionnalité est actuellement disponible aux États-Unis, en Europe (à l’exception de la France), en Australie, en Inde, au Canada, au Japon et à l’Asie-Pacifique.
+> Cette fonctionnalité est actuellement disponible aux États-Unis, en Europe, en Australie, en Inde, au Canada, au Japon et à l’Asie-Pacifique.
 
 ## <a name="enable-content-inspection-with-data-classification-services"></a>Activer l’inspection du contenu avec les services de classification des données
 
@@ -55,6 +55,6 @@ La définition de ces stratégies vous permet d’étendre facilement la puissan
 ## <a name="next-steps"></a>Étapes suivantes
 
 > [!div class="nextstepaction"]
-> [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)
+> [Contrôler les applications Cloud avec des stratégies](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 11/19/2019
+ms.date: 04/16/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,20 +14,20 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1c058f817e4fffa4f40060ad0bc865bb6798e771
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 09880e0702133fbca8ae0001d40aff098b2fa4d6
+ms.sourcegitcommit: f4845a6bbf39aea0504956bf23878f7e0adb8bcc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74460813"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81477554"
 ---
 # <a name="set-up-and-configuration-on-ubuntu-or-rhel-in-azure"></a>Installation et configuration sur Ubuntu ou RHEL dans Azure
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Vous pouvez configurer le chargement automatique de journaux pour des rapports continus dans Cloud App Security à l’aide de Docker sur Ubuntu ou Red Hat Enterprise Linux (RHEL) dans Azure. Cet article décrit comment configurer le chargement automatique des journaux.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 
 * Système d’exploitation : Ubuntu 14,04 et 16,04 (pour les versions plus récentes, contactez le support technique), RHEL 7,2 ou une version ultérieure, ou CentOS 7,2 ou version ultérieure
 
@@ -49,11 +49,14 @@ Vous pouvez configurer le chargement automatique de journaux pour des rapports c
 
 ## <a name="log-collector-performance"></a>Performances du collecteur de journaux
 
-Le collecteur de journaux peut gérer correctement une capacité allant jusqu’à 50 Go par heure. Les principaux goulots d’étranglement dans le processus de collecte des journaux sont les suivants :
+Le collecteur de journaux peut gérer correctement la capacité des journaux pouvant atteindre jusqu’à 50 Go par heure, comprenant jusqu’à 10 sources de données. Les principaux goulots d’étranglement dans le processus de collecte des journaux sont les suivants :
 
 * Bande passante réseau - Votre bande passante réseau détermine la vitesse de chargement des journaux.
 
-* Performances d’E/S de la machine virtuelle - Détermine la vitesse à laquelle les journaux sont écrits sur le disque du collecteur de journaux. Le collecteur de journaux dispose d’un mécanisme de sécurité intégré qui surveille le débit auquel les journaux arrivent et le compare au débit de chargement. En cas de congestion, le collecteur de journaux commence à supprimer des fichiers journaux. Si votre configuration dépasse généralement 50 Go par heure, nous vous recommandons de diviser le trafic entre plusieurs collecteurs de journaux.
+* Performances d’e/s de la machine virtuelle : détermine la vitesse à laquelle les journaux sont écrits sur le disque du collecteur de journaux. Le collecteur de journaux dispose d’un mécanisme de sécurité intégré qui surveille le débit auquel les journaux arrivent et le compare au débit de chargement. En cas de congestion, le collecteur de journaux commence à supprimer des fichiers journaux. Si votre configuration dépasse généralement 50 Go par heure, nous vous recommandons de fractionner le trafic entre plusieurs collecteurs de journaux.
+
+> [!NOTE]
+> Si vous avez besoin de plus de 10 sources de données, nous vous recommandons de fractionner les sources de données entre plusieurs collecteurs de journaux.
 
 ## <a name="set-up-and-configuration"></a>Installation et configuration  
 
@@ -68,7 +71,7 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
 1. Pour chaque pare-feu ou proxy à partir duquel vous souhaitez charger des journaux, créez une source de données correspondante.
 
     1. Cliquez sur **Ajouter une source de données**.  
-    ![ajouter une source de données](media/add-data-source.png)
+    ![Ajouter une source de données](media/add-data-source.png)
     1. **Nommez** votre proxy ou pare-feu.  
       ![ubuntu1](media/ubuntu1.png)
     1. Sélectionnez l’appareil dans la liste **Source**. Si vous sélectionnez **Format de journal personnalisé** pour utiliser une appliance réseau qui n’est pas listée, consultez [Utilisation de l’analyseur de journal personnalisé](custom-log-parser.md) pour obtenir des instructions de configuration.
@@ -86,7 +89,7 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
 1. Accédez à l’onglet **Collecteurs de journaux** en haut.
 
     1. Cliquez sur **Ajouter un collecteur de journaux**.
-    1. Donnez un **nom** au collecteur de journaux.
+    1. Donnez un **nom**au collecteur de journaux.
     1. Entrez l’**adresse IP de l’hôte** de la machine sur laquelle sera déployé le Docker. L’adresse IP de l’hôte peut être remplacée par le nom de l’ordinateur s’il existe un serveur DNS (ou un équivalent) qui résout le nom d’hôte.
     1. Sélectionnez toutes les **sources de données** que vous souhaitez connecter au collecteur, puis cliquez sur **mettre à jour** pour enregistrer la configuration.  
     ![ubuntu2](media/ubuntu2.png)
@@ -113,15 +116,15 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
 
     1. Dans l’affichage Ordinateur, accédez à **Réseau** et sélectionnez l’interface souhaitée en double-cliquant dessus.
     1. Accédez à **Groupe de sécurité réseau** et sélectionnez le groupe de sécurité réseau qui convient.
-    1. Accédez à **règles de sécurité de trafic entrant** , puis cliquez sur **Ajouter**, ![Ubuntu Azure](media/ubuntu-azure.png)
+    1. Accédez à **règles de sécurité de trafic entrant** , puis ![cliquez sur **Ajouter**, Ubuntu Azure](media/ubuntu-azure.png)
     1. Ajoutez les règles suivantes (en mode **Avancé**) :
 
-    |Nom|Plages du port de destination|Protocol|Source|Destination|
+    |Nom|Plages de ports de destination|Protocol|Source|Destination|
     |----|----|----|----|----|
-    |caslogcollector_ftp|21|TCP|<Sous-réseau d’adresse IP de votre appliance>|Indifférent|
-    |caslogcollector_ftp_passive|20000-20099|TCP|<Sous-réseau d’adresse IP de votre appliance>|Indifférent|
-    |caslogcollector_syslogs_tcp|601-700|TCP|<Sous-réseau d’adresse IP de votre appliance>|Indifférent|
-    |caslogcollector_syslogs_udp|514-600|UDP|<Sous-réseau d’adresse IP de votre appliance>|Indifférent|
+    |caslogcollector_ftp|21|TCP|<Sous-réseau d’adresse IP de votre appliance>|Quelconque|
+    |caslogcollector_ftp_passive|20000-20099|TCP|<Sous-réseau d’adresse IP de votre appliance>|Quelconque|
+    |caslogcollector_syslogs_tcp|601-700|TCP|<Sous-réseau d’adresse IP de votre appliance>|Quelconque|
+    |caslogcollector_syslogs_udp|514-600|UDP|<Sous-réseau d’adresse IP de votre appliance>|Quelconque|
 
     ![Règles Ubuntu Azure](media/inbound-rule.png)
 
@@ -155,7 +158,7 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
 
 ### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>Étape 3 : Configuration locale de vos appliances réseau
 
-Configurez vos pare-feu et proxys réseau pour exporter régulièrement les journaux vers le port Syslog dédié du répertoire FTP conformément aux instructions données dans la boîte de dialogue. Exemple :
+Configurez vos pare-feu et proxys réseau pour exporter régulièrement les journaux vers le port Syslog dédié du répertoire FTP conformément aux instructions données dans la boîte de dialogue. Par exemple :
 
 ```bash
 BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\

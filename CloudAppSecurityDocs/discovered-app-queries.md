@@ -1,6 +1,6 @@
 ---
-title: Cloud App Security les filtres et les requêtes d’application détectés
-description: Cet article fournit une liste de Cloud App Security filtres et requêtes d’application découverts et explique comment les utiliser.
+title: Filtres et requêtes d’applications découvertes de Cloud App Security
+description: Cet article fournit une liste de filtres et de requêtes d’applications découvertes de Cloud App Security, et explique comment les utiliser.
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -14,34 +14,34 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ba9848bf0f9cbcee326cdebfaed09b95f38fe267
-ms.sourcegitcommit: 4f3883a9e85d0aaf2802b10433b221c3f1838d88
+ms.openlocfilehash: 10faf7a844c64efb621e6b8e1cf14b79443b322d
+ms.sourcegitcommit: ecb1835d1cd880de38f32ce7a7031b0015f3cae5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79285463"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81241480"
 ---
-# <a name="discovered-app-filters-and-queries"></a>Filtres et requêtes des applications découvertes
+# <a name="discovered-app-filters-and-queries"></a>Filtres et requêtes d’applications découvertes
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
-Lorsque vous avez un grand nombre d’applications découvertes, il est utile de les filtrer et de les interroger. Cet article décrit les filtres disponibles et comment interroger vos applications découvertes.
+Quand vous avez un grand nombre d’applications découvertes, il est pratique de les filtrer et de leur appliquer des requêtes. Cet article décrit les filtres disponibles et comment faire des requêtes sur vos applications découvertes.
 
 ## <a name="discovered-app-filters"></a>Filtres d’application découverte
 
-Il existe des filtres d’application découverte de base et avancés. Pour obtenir un filtre complexe (comme dans l’exemple ci-dessus), utilisez l’option avancé, qui comprend tous les filtres suivants :
+Il existe des filtres d’application découverte de base et avancés. Pour obtenir un filtre complexe (comme dans l’exemple ci-dessus), utilisez l’option avancée qui inclut tous les filtres suivants :
 
 ![Applications découvertes](media/discovered-apps.png)
 
-- **Balise d’application** : Indiquez si l’application a été approuvée, non approuvée ou non marquée. En outre, vous pouvez créer une balise personnalisée pour votre application, puis l’utiliser pour filtrer des types spécifiques d’applications.
+- **Balise d’application** : Indiquez si l’application a été approuvée, non approuvée ou non marquée. Par ailleurs, vous pouvez créer une balise personnalisée pour votre application, puis l’utiliser pour filtrer des types spécifiques d’applications.
 - **Applications et domaines** : Permet de rechercher des applications spécifiques ou des applications utilisées dans des domaines spécifiques.
-- **Catégories**: le filtre catégories, situé à gauche de la page, vous permet de rechercher des types d’applications en fonction des catégories d’applications. Parmi les exemples de catégories, citons les applications de réseau social, les applications de stockage cloud et les services d’hébergement. Vous pouvez sélectionner plusieurs catégories à la fois, ou une seule catégorie, puis appliquer les filtres de base et avancés en plus.
-- **Facteur de risque de conformité**: vous permet de rechercher les normes, la certification et la conformité spécifiques auxquelles l’application peut se conformer (HIPAA, ISO 27001, SOC 2, PCI-DSS, etc.).
-- **Facteur de risque général**: vous permet de rechercher des facteurs de risque généraux tels que la popularité des consommateurs, les paramètres régionaux du centre de données et bien plus encore.
-- **Score de risque**: vous permet de filtrer les applications par score de risque pour que vous puissiez vous concentrer sur, par exemple, la consultation des applications à haut risque. Vous pouvez également remplacer le score de risque défini par Cloud App Security. Pour plus d’informations, consultez [utilisation du score de risque](risk-score.md).
+- **Catégories** : Le filtre de catégories, qui se trouve à gauche de la page, vous permet de rechercher des types d’applications selon des catégories d’applications. Voici des exemples de catégories : applications de réseaux sociaux, applications de stockage cloud et services d’hébergement. Vous pouvez sélectionner plusieurs catégories à la fois ou une seule catégorie, puis leur appliquer des filtres de base et des filtres avancés.
+- **Facteur de risque de conformité** : permet de rechercher un standard, une certification et une conformité spécifiques auxquels l’application doit être conforme (HIPAA, ISO 27001, SOC 2, PCI-DSS, etc.).
+- **Facteur de risque général** : permet de rechercher des facteurs de risque généraux, comme la popularité auprès des consommateurs, les paramètres régionaux du centre de données, etc.
+- **Score de risque** : permet de filtrer les applications par score de risque, et donc par exemple de se concentrer uniquement sur les applications très risquées. Vous pouvez également remplacer le score de risque défini par Cloud App Security. Pour plus d’informations, consultez [utilisation du score de risque](risk-score.md).
 - **Facteur de risque de sécurité** : Permet de filtrer en fonction de mesures de sécurité spécifiques (comme le chiffrement au repos, l’authentification multifacteur, etc.).
-- **Utilisation**: vous permet de filtrer en fonction des statistiques d’utilisation de cette application. Utilisation, comme les applications, avec un nombre d’utilisateurs inférieur ou égal à un nombre spécifié de **chargements de données**, les applications avec plus ou moins qu’un nombre spécifié d' **utilisateurs**.
-- **Facteur de risque légal**: vous permet de filtrer en fonction de toutes les réglementations et stratégies en place pour garantir la protection et la confidentialité des données des utilisateurs de l’application. Exemples : applications Cloud RGPD Ready, DMCA et stratégie de rétention des données.
+- **Utilisation** : permet de filtrer selon les statistiques d’utilisation de cette application. Il peut s’agir d’applications avec un nombre de **chargements de données** ou **d’utilisateurs** supérieur ou inférieur à une quantité spécifiée.
+- **Facteur de risque légal** : permet de filtrer selon l’ensemble des réglementations et des stratégies qui sont en place pour garantir la protection et la confidentialité des données des utilisateurs de l’application. Il peut s’agir par exemple des applications cloud prêtes pour le RGPD, de DMCA et de la stratégie de conservation des données.
 
 ### <a name="creating-and-managing-custom-app-tags"></a>Création et gestion des balises d’application personnalisées
 
@@ -50,35 +50,35 @@ Ces balises peuvent ensuite servir de filtres pour rechercher plus précisément
 
 Pour créer une balise d’application personnalisée :
 
-1. Dans la roue dentée **paramètres** , sélectionnez **paramètres Cloud Discovery**, puis l’onglet **balises d’application** . cliquez sur l’icône plus. icône ![plus](media/plus-icon.png)
+1. Dans la roue dentée **paramètres** , sélectionnez **paramètres Cloud Discovery**, puis l’onglet **balises d’application** . cliquez sur l’icône plus. ![Icône « Plus »](media/plus-icon.png)
 
    ![créer une balise d’application personnalisée](media/create-app-tag.png)
 
-2. Vous pouvez utiliser le tableau **balises d’application** pour afficher les applications qui sont actuellement marquées avec chaque balise d’application et vous pouvez supprimer les balises d’application inutilisées.
+2. Vous pouvez utiliser le tableau **Balises d’application** pour voir les applications qui sont actuellement marquées avec chaque balise d’application, et vous pouvez supprimer les balises d’application inutilisées.
 
-3. Pour appliquer une balise d’application, sous l’onglet **applications découvertes** , cliquez sur les trois points à l’extrême droite du nom de l’application. Sélectionnez la balise d’application à appliquer.
+3. Pour appliquer une balise d’application, sous l’onglet **Applications découvertes**, cliquez sur les points de suspension tout à droite du nom de l’application. Sélectionnez la balise d’application à appliquer.
 
 > [!NOTE]
->Vous pouvez également créer une balise d’application directement dans le tableau **Applications découvertes** en cliquant sur **Créer une balise d’application** après avoir sélectionné les points de suspension à droite de n’importe quelle application sélectionnée. Lorsque vous créez la balise à partir de l’application découverte, vous pouvez l’appliquer à l’application. Vous pouvez également accéder à l’écran **balises d’application** en cliquant sur le lien **gérer les balises** dans l’angle.
-> ![créer une balise d’application personnalisée à partir de l’application](media/create-app-tag-from-app.png)
+>Vous pouvez également créer une balise d’application directement dans le tableau **Applications découvertes** en cliquant sur **Créer une balise d’application** après avoir sélectionné les points de suspension à droite de n’importe quelle application sélectionnée. Quand vous créez la balise à partir de l’application découverte, vous pouvez l’appliquer à l’application. Vous pouvez également accéder à l’écran **Balises d’application** en cliquant sur le lien **Gérer les balises**.
+> ![Créer une balise d’application personnalisée à partir de l’application](media/create-app-tag-from-app.png)
 
-## <a name="discovered-app-queries"></a>Requêtes d’application découvertes
+## <a name="discovered-app-queries"></a>Requêtes d’applications découvertes
 
-Pour faciliter encore plus l’investigation, vous pouvez créer des requêtes personnalisées et les enregistrer pour une utilisation ultérieure.
+Pour faciliter encore plus les recherches, vous pouvez créer des requêtes personnalisées et les enregistrer pour les utiliser ultérieurement.
 
-1. Dans la page **applications découvertes** , utilisez les filtres comme décrit ci-dessus pour analyser en détail vos applications en fonction des besoins.
+1. Dans la page **Applications découvertes**, utilisez les filtres comme décrit ci-dessus pour explorer vos applications selon vos besoins.
 
-2. Une fois que vous avez obtenu les résultats souhaités, cliquez sur le bouton **Enregistrer sous** dans le coin supérieur droit des filtres.
+2. Une fois que vous avez obtenu les résultats souhaités, cliquez sur le bouton **Enregistrer sous** en haut à droite des filtres.
 
 3. Dans la fenêtre contextuelle **enregistrer la requête** , nommez votre requête.
 
     ![nouvelle requête](media/new-query.png)
 
-4. Pour réutiliser cette requête ultérieurement, sous **requêtes**, faites défiler jusqu’à **requêtes enregistrées** et sélectionnez votre requête.
+4. Pour réutiliser cette requête plus tard, sous **Requêtes**, faites défiler jusqu’à **Requêtes enregistrées** et sélectionnez votre requête.
 
-    ![ouvrir la requête](media/discovered-app-query.png)
+    ![ouvrir une requête](media/discovered-app-query.png)
 
-Cloud App Security vous fournit également des **suggestions de requêtes** et vous permet d’enregistrer des requêtes personnalisées que vous utilisez fréquemment. Les requêtes suggérées vous fournissent des voies d’investigation recommandées qui filtrent vos applications découvertes en utilisant les requêtes suggérées facultatives suivantes :
+Cloud App Security vous fournit également des **requêtes suggérées** et vous permet d’enregistrer des requêtes personnalisées que vous utilisez fréquemment. Les requêtes suggérées vous fournissent des zones de recherche recommandées qui filtrent vos applications découvertes en utilisant les requêtes suggérées facultatives suivantes :
 
 - **Applications Cloud qui autorisent une utilisation anonyme** : filtre toutes vos applications découvertes pour afficher uniquement les applications qui présentent des risques de sécurité, car elles ne nécessitent pas d’authentification utilisateur et permettent aux utilisateurs de télécharger des données.
 
@@ -86,7 +86,7 @@ Cloud App Security vous fournit également des **suggestions de requêtes** et v
 
 - **Applications Cloud compatibles FedRAMP** : filtre toutes vos applications découvertes pour afficher uniquement les applications dont le facteur de risque de conformité FedRAMP est élevé, moyen ou faible.
 
-- **Applications de stockage et de collaboration Cloud qui possèdent des données utilisateur** : filtre toutes vos applications découvertes pour afficher uniquement les applications risquées, car elles ne vous permettent pas de vous approprier vos données, mais elles conservent vos données.
+- **Applications de stockage et de collaboration cloud qui possèdent les données utilisateur** - Filtre toutes vos applications découvertes pour afficher uniquement les applications qui présentent un risque, car elles ne vous permettent pas d’être propriétaire de vos données alors qu’elles les conservent.
 
 - **Applications de stockage cloud risquées et non conformes** : filtre toutes vos applications découvertes pour afficher uniquement les applications pour lesquelles elles ne sont pas compatibles avec SOC 2 ou HIPAA. elles ne prennent pas en charge la version PCI DSS et elles ont un score de risque inférieur ou supérieur à 5.
 
@@ -94,13 +94,13 @@ Cloud App Security vous fournit également des **suggestions de requêtes** et v
 
 - **Applications Cloud d’entreprise avec un chiffrement faible** : filtre toutes vos applications découvertes pour afficher uniquement les applications risquées, car elles ne chiffrent pas les données au repos et ne prennent pas en charge les protocoles de chiffrement.
 
-- **Applications Cloud RGPD Ready** : filtre toutes vos applications découvertes pour afficher uniquement les applications qui sont RGPD prêtes. Étant donné que la conformité RGPD est la priorité la plus haute, cette requête vous aide à identifier facilement les applications qui sont RGPD prêtes et à atténuer les menaces en évaluant le risque de ceux qui ne le sont pas.
+- **Applications cloud prêtes pour le RGPD** - Filtre toutes vos applications découvertes pour afficher uniquement les applications qui sont prêtes pour le RGPD. Étant donné que la conformité au RGPD est une priorité absolue, cette requête vous aide à identifier les applications qui sont prêtes pour le RGPD et à atténuer les menaces en évaluant le risque de celles qui ne le sont pas.
 
 ![interroger les applications découvertes](media/queries-discovered-apps.png)
 
-En outre, vous pouvez utiliser les requêtes suggérées comme point de départ pour une nouvelle requête. Tout d’abord, sélectionnez l’une des requêtes suggérées. Ensuite, apportez les modifications nécessaires et cliquez enfin sur **Enregistrer sous** pour créer une **requête enregistrée**.
+De plus, vous pouvez utiliser les requêtes suggérées comme point de départ d’une nouvelle requête. Sélectionnez d’abord une des requêtes suggérées. Ensuite, apportez les modifications nécessaires et cliquez sur **Enregistrer sous** pour créer une **requête enregistrée**.
 
-## <a name="next-steps"></a>Étapes suivantes :
+## <a name="next-steps"></a>Étapes suivantes
 
 > [!div class="nextstepaction"]
 > [Créer des rapports d’instantanés Cloud Discovery](create-snapshot-cloud-discovery-reports.md)

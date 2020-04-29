@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 01/29/2020
+ms.date: 04/20/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,20 +14,20 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1a57355a76037a33072872ed18a7567587eae860
-ms.sourcegitcommit: 00599ac6c64a4c62ed9ebdda3edb58f90f92c24d
+ms.openlocfilehash: b4d8a2c91d87df35445615e36b5caeb7d89de4f4
+ms.sourcegitcommit: a166b85d5c91c48032cf133655471aec1ed88a0f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912142"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81662336"
 ---
 # <a name="cloud-discovery-data-anonymization"></a>Anonymisation des données Cloud Discovery
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 L’anonymisation de données Cloud Discovery vous permet de protéger la confidentialité des utilisateurs. Une fois que le journal des données est téléchargé sur le portail Microsoft Cloud App Security, il est purgé et toutes les informations des noms d’utilisateur sont remplacées par des noms d’utilisateur chiffrés. De cette façon, toutes les activités cloud restent anonymes. Quand c’est nécessaire, pour une enquête de sécurité spécifique (par exemple une violation de la sécurité ou une activité utilisateur suspecte), les administrateurs peuvent résoudre le nom d’utilisateur réel. Si un administrateur a une raison de suspecter un utilisateur spécifique, il peut également rechercher le nom d’utilisateur chiffré d’un nom d’utilisateur connu, puis commencer son investigation avec le nom d’utilisateur chiffré. La conversion de chaque nom d’utilisateur est auditée dans le **journal de gouvernance** du portail.
 
-Points clés :
+Points clés :
 
 - Aucune information privée n’est stockée ou affichée. Seulement des informations chiffrées.
 - Les données privées sont chiffrées en utilisant AES-128 avec une clé dédiée par client.
@@ -47,8 +47,8 @@ Points clés :
 
     1. Sous l’icône Paramètres, sélectionnez **Paramètres Cloud Discovery**.
 
-    2. Dans l’onglet Anonymisation, pour anonymiser les noms d’utilisateur par défaut, sélectionnez **Anonymiser les informations privées par défaut dans les nouveaux rapports et les nouvelles sources de données**. Vous pouvez aussi sélectionner **Anonymiser les informations de l'ordinateur par défaut dans le rapport « Utilisateurs du point de terminaison Win10 »** .
-    3. Cliquez sur **Save**.
+    2. Dans l’onglet Anonymisation, pour anonymiser les noms d’utilisateur par défaut, sélectionnez **Anonymiser les informations privées par défaut dans les nouveaux rapports et les nouvelles sources de données**. Vous pouvez aussi sélectionner **Anonymiser les informations de l'ordinateur par défaut dans le rapport « Utilisateurs du point de terminaison Win10 »**.
+    3. Cliquez sur **Enregistrer**.
 
     ![Anonymisation](media/anonymizer1.png)
 
@@ -58,14 +58,46 @@ Points clés :
 
     ![Anonymiser le tableau de bord Cloud Discovery](media/anonymize-dashboard.png)
 
-5. Pour des investigations spécifiques, comme pour une alerte d’utilisation anormale, vous pouvez résoudre le nom d’utilisateur spécifique dans le portail et spécifier une justification liée à l’activité de l’entreprise.
-   Cette page peut également être utilisée pour rechercher le nom d’utilisateur chiffré d’un nom d’utilisateur connu.
+5. Pour une investigation spécifique, telle que l’examen d’une alerte d’utilisation anormale, vous pouvez résoudre le nom d’utilisateur spécifique dans le portail et fournir une justification commerciale.
+
+    > [!NOTE]
+    > Les étapes suivantes fonctionnent également pour les noms de machine sous l’onglet **ordinateurs** .
+
+    **Pour résoudre un nom d’utilisateur unique**
+
+    1. Cliquez sur les trois points à la fin de la ligne de l’utilisateur que vous souhaitez résoudre, puis sélectionnez l’option de **désanonymisation**de l’utilisateur.
+
+        ![Anonymiser la table utilisateur](media/anonymize-user-table.png)
+
+    1. Dans la fenêtre contextuelle, entrez la justification de la résolution du nom d’utilisateur, puis cliquez sur **résoudre**. Dans la ligne appropriée, le nom d’utilisateur résolu s’affiche.
+
+        > [!NOTE]
+        > Cette action est auditée.
+
+        ![Rendre anonyme résoudre le menu contextuel](media/anonymize-resolve-dialog.png)
+
+    La méthode alternative suivante pour résoudre les noms d’utilisateur uniques peut également être utilisée pour rechercher le nom d’utilisateur chiffré d’un nom d’utilisateur connu.
 
     1. Sous l’icône Paramètres, sélectionnez **Paramètres Cloud Discovery**.
-    2. Sous l’onglet **Anonymisation**, sous **Anonymiser et résoudre les noms d’utilisateur**, entrez une justification expliquant pourquoi vous effectuez la résolution.
-    3. Sous **Entrer le nom d’utilisateur à résoudre**, sélectionnez **À partir du nom anonymisé** et entrez le nom d’utilisateur anonymisé, ou sélectionnez **À anonymiser** et entrez le nom d’utilisateur d’origine à résoudre. Cliquez sur **Résoudre**.
 
-    ![Anonymisation](media/anonymizer.png)
+    1. Sous l’onglet **Anonymisation**, sous **Anonymiser et résoudre les noms d’utilisateur**, entrez une justification expliquant pourquoi vous effectuez la résolution.
+    1. Sous **Entrer le nom d’utilisateur à résoudre**, sélectionnez **À partir du nom anonymisé** et entrez le nom d’utilisateur anonymisé, ou sélectionnez **À anonymiser** et entrez le nom d’utilisateur d’origine à résoudre. Cliquez sur **Résoudre**.
+
+        ![Anonymisation](media/anonymizer.png)
+
+    **Pour résoudre plusieurs noms d’utilisateur**
+
+    1. Activez les cases à cocher qui s’affichent lorsque vous pointez sur les icônes utilisateur par les utilisateurs que vous souhaitez résoudre ou, dans l’angle supérieur gauche, sélectionnez la case à cocher **sélection en bloc** .
+
+        ![Anonymiser la résolution en bloc](media/anonymize-bulk-resolve.png)
+
+    1. Cliquez sur **désanonymiser l’utilisateur**.
+    1. Dans la fenêtre contextuelle, entrez la justification de la résolution du nom d’utilisateur, puis cliquez sur **résoudre**. Dans les lignes pertinentes, les noms d’utilisateur résolus sont affichés.
+
+        > [!NOTE]
+        > Cette action est auditée.
+
+        ![Rendre anonyme résoudre le menu contextuel](media/anonymize-resolve-dialog.png)
 
 6. L’action est auditée dans le **journal de gouvernance** du portail.
 
@@ -74,6 +106,6 @@ Points clés :
 ## <a name="next-steps"></a>Étapes suivantes
 
 > [!div class="nextstepaction"]
-> [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)
+> [Contrôler les applications Cloud avec des stratégies](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9ea1b9524fe262bc6364e5150426622d4efddfbc
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 3c502e58ffcec4c99378bebcd9857368e0db41f0
+ms.sourcegitcommit: ecb1835d1cd880de38f32ce7a7031b0015f3cae5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74721081"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81235245"
 ---
 # <a name="working-with-app-risk-scores"></a>Utilisation des scores de risque d’application
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Le catalogue d’applications cloud vous donne une vue d’ensemble complète des éléments identifiés par Cloud Discovery. Cloud Discovery analyse vos journaux de trafic en s’appuyant sur le catalogue d’applications cloud Microsoft Cloud App Security, qui contient plus de 16 000 applications cloud. Les applications sont classées et évaluées selon plus de 70 facteurs de risque, afin de vous offrir une visibilité en continu de l’utilisation du cloud, du « Shadow IT » et du risque que celui-ci représente pour votre organisation. Cet article fournit des instructions sur l’utilisation et la personnalisation de l’indice de risque Cloud App Security.
 
@@ -76,9 +76,9 @@ Si vous trouvez une nouvelle application dans votre environnement qui n’a pas 
 
     ![Suggérer une application à Cloud App Security](media/suggest-new-app.png)
 
-2. Dans la fenêtre contextuelle **Suggérer une nouvelle application cloud**, entrez les informations concernant la nouvelle application. Mentionnez le nom et le domaine de l’application.
+2. Dans la fenêtre contextuelle **suggérer une nouvelle application Cloud** , renseignez les détails sur le nouveau. Mentionnez le nom et le domaine de l’application.
 
-    ![Fenêtre contextuelle Suggérer une application à Cloud App Security](media/suggest-new-app-popup.png)
+    ![Suggérer une fenêtre contextuelle d’application à Cloud App Security](media/suggest-new-app-pop-up.png)
 
 3. Nous vous recommandons de cocher la case qui permet aux analystes Cloud App Security de vous contacter au cas où des informations supplémentaires seraient nécessaires. Renseignez également vos coordonnées pour que nous puissions vous informer lorsque l’analyse sera terminée.
 
@@ -88,9 +88,9 @@ Si vous trouvez une nouvelle application dans votre environnement qui n’a pas 
 
     ![Demander une mise à jour du score](media/request-score-update.png)
 
-2. Dans la fenêtre contextuelle **Suggérer une amélioration**, indiquez si vous voulez demander une mise à jour de score, suggérer un nouveau facteur de risque ou mettre à jour des données d’application.
+2. Dans la fenêtre contextuelle **suggérer une amélioration** , indiquez si vous souhaitez demander une mise à jour des scores, suggérer un nouveau facteur de risque ou mettre à jour les données de l’application.
 
-    ![suggérer une amélioration à Cloud App Security](media/suggest-improvement-popup.png)
+    ![suggérer une amélioration à Cloud App Security](media/suggest-improvement-pop-up.png)
 
 3. Nous vous recommandons de cocher la case qui permet aux analystes Cloud App Security de vous contacter au cas où des informations supplémentaires seraient nécessaires. Renseignez également vos coordonnées pour que nous puissions vous informer lorsque l’analyse sera terminée.
 
@@ -98,7 +98,7 @@ Si vous trouvez une nouvelle application dans votre environnement qui n’a pas 
 
 Cloud Discovery vous fournit des données importantes sur la crédibilité et la fiabilité des applications cloud qui sont utilisées au sein de l’environnement. Dans le portail, chaque application découverte est présentée avec un score total. Ce score représente le niveau de maturité qui a été obtenu par cette application après son évaluation par Cloud App Security, en vue de son utilisation en entreprise. Le score total d’une application donnée est une moyenne pondérée de trois sous-scores liés à trois sous-catégories que Cloud App Security prend en compte pour évaluer la fiabilité :
 
-- **Général** : Cette catégorie fait référence à des informations basiques sur la société qui produit l’application, notamment son domaine, l’année de sa fondation et sa popularité. Ces champs ont vocation à illustrer la stabilité de la société au niveau le plus simple.
+- **Général** : cette catégorie fait référence à des faits de base sur la société qui produit l’application, notamment son domaine, son année de fondation et sa popularité. Ces champs ont vocation à illustrer la stabilité de la société au niveau le plus simple.
 
 - **Sécurité** : la catégorie Sécurité tient compte de toutes les normes liées à la sécurité physique des données utilisées par l’application découverte. Cette catégorie comprend des champs tels que l’authentification multifacteur, le chiffrement, la classification des données et la propriété des données.
 
@@ -116,7 +116,7 @@ Prenez le temps de passer en revue et d’éventuellement modifier les pondérat
 
 3. De plus, vous pouvez déterminer si certaines valeurs sont soit non disponibles, soit non applicables dans le calcul du score. Quand elles sont incluses, les valeurs N/A contribuent négativement au score calculé.
 
-    ![score](media/score.png "évaluer les métriques")
+    ![enjeu](media/score.png "évaluer les métriques")
 
 Toutes les informations nécessaires pour comprendre le fonctionnement des indices de risque Cloud App Security et leur empilement sont disponibles dans le portail Cloud App Security. Pour mieux comprendre la pondération d’un facteur de risque dans une catégorie donnée, utilisez le bouton « i » à droite d’un nom de champ, dans le profil de l’application. Il fournit des informations sur la façon dont Cloud App Security note précisément un facteur de risque. Ce score correspond à la valeur du facteur de risque sur une échelle de 1 à 10 et à son poids dans la catégorie de risque :
 
@@ -131,7 +131,7 @@ Pour comprendre la pondération d’une catégorie de risque dans le score total
 Pour remplacer l’indice de risque, dans le tableau **Applications découvertes** ou dans le **Catalogue d’applications cloud**, cliquez sur les points de suspension à droite d’une application, puis sélectionnez **Remplacer le score de l’application**.
 Vous pouvez remplacer l’indice de risque d’une application sans changer la façon dont elle est pondérée, afin d’obtenir des résultats immédiats pour votre organisation. Mettons, par exemple, que l’indice de risque d’une application métier que vous utilisez soit de 8. Pourtant, l’application est approuvée par votre organisation, qui encourage même son utilisation. Dans ce cas, il est souhaitable d’attribuer un indice de risque de 10 à votre application métier.
 
-![remplacer le score de risque de l’application Cloud App Security](media/override-risk-score.png)
+![Remplacer l’indice de risque d’une application dans Cloud App Security](media/override-risk-score.png)
 
 Une fois que vous avez mis à jour le score, vous pouvez ajouter des notes d’application pour justifier le changement du score de l’application aux autres administrateurs.
 
