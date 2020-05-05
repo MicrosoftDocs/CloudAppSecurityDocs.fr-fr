@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 04/16/2020
+ms.date: 05/04/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 09880e0702133fbca8ae0001d40aff098b2fa4d6
-ms.sourcegitcommit: f4845a6bbf39aea0504956bf23878f7e0adb8bcc
+ms.openlocfilehash: 5b952a924b7b26e4d45ffb981698f660e53a0558
+ms.sourcegitcommit: baa9cb55d9d82808602a58ee24eeba7d83e92742
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81477554"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "82739022"
 ---
 # <a name="set-up-and-configuration-on-ubuntu-or-rhel-in-azure"></a>Installation et configuration sur Ubuntu ou RHEL dans Azure
 
@@ -29,7 +29,7 @@ Vous pouvez configurer le chargement automatique de journaux pour des rapports c
 
 ## <a name="prerequisites"></a>Prérequis
 
-* Système d’exploitation : Ubuntu 14,04 et 16,04 (pour les versions plus récentes, contactez le support technique), RHEL 7,2 ou une version ultérieure, ou CentOS 7,2 ou version ultérieure
+* Système d’exploitation : Ubuntu 16,04 et 18,04, RHEL 7,2 ou version ultérieure, ou CentOS 7,2 ou version ultérieure
 
 * Espace disque : 250 Go
 
