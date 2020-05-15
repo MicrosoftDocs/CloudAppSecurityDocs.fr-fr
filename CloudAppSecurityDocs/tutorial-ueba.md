@@ -4,18 +4,18 @@ description: Ce tutoriel décrit le processus permettant d’examiner les utilis
 keywords: ''
 author: shsagir
 ms.author: shsagir
-ms.date: 12/03/2019
+ms.date: 04/28/2020
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: cafb971ae16b0c5bd48e041d36c16521b6e7e5d3
-ms.sourcegitcommit: 0b929f7c8feed7dfb40d5294179fd5c6fc079614
+ms.openlocfilehash: 7316a1b24e45219b55912e75b48b0c2e590bd34f
+ms.sourcegitcommit: 1288ef3b69b2fefc3015e61cb9f485c0c8e6c682
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "79241808"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82888291"
 ---
 # <a name="tutorial-investigate-risky-users"></a>Tutoriel : Examiner des utilisateurs à risque
 
@@ -85,6 +85,8 @@ La page Utilisateur vous aide à répondre aux questions suivantes :
     Consultez la partie supérieure du volet de droite pour savoir l’examen de cet utilisateur est justifié. Quel est le [score de risque](#risk-score) de l'employé ?
     * Quel risque l’utilisateur présente-t-il pour votre organisation ?  
     Consultez la liste dans le volet inférieur, qui vous indique chaque activité et chaque alerte liées à l'utilisateur. Cette liste vous aide à comprendre quel type de risque l'utilisateur représente. Dans la chronologie, cliquez sur chaque ligne afin de descendre encore plus dans la hiérarchie de l’activité ou de l’alerte elle-même. Vous pouvez cliquer également sur le numéro en regard de l’activité afin que vous puissiez comprendre la preuve qui influence le score lui-même.
+    * Quels sont les risques pour les autres ressources de votre organisation ?  
+    Sélectionnez l’onglet **Chemins de mouvement latéral** pour identifier les chemins qu’un attaquant peut utiliser pour prendre le contrôle d’autres ressources de votre organisation. Par exemple, même si le compte de l’utilisateur que vous examinez n’est pas sensible, l’attaquant peut se servir des connexions au compte pour découvrir et tenter de compromettre des comptes sensibles dans votre réseau. Pour plus d’informations, consultez [Utilisation des chemins de mouvement latéral](/azure-advanced-threat-protection/investigate-lateral-movement-path).
 
   >[!NOTE]
   >Remarque importante : même si la page Utilisateur fournit des informations sur les appareils, les ressources et les comptes pour toutes les activités, le score de priorité d’examen correspond à la somme de toutes les activités et alertes à risque identifiées au cours des 7 derniers jours.
@@ -99,13 +101,13 @@ Lorsque vous examinez un utilisateur, posez-vous ces questions sur les activité
 
 * Accédez au **journal d’activité** pour comprendre pourquoi cette activité a reçu un score élevé, tandis que d’autres n’ont pas reçu ce score. Vous pouvez définir la **Priorité d’examen** sur **Est défini** pour comprendre quelles activités sont suspectes. Par exemple, vous pouvez filtrer selon la Priorité d’examen pour toutes les activités qui se sont produites en Ukraine. Vous verrez alors si d’autres activités à risque se sont produites et à quel endroit l'utilisateur s'est connecté. Pour poursuivre l’examen, il est très facile de basculer vers d’autres aspects, par exemple les dernières activités non anormales dans le cloud et localement.
 
-## <a name="phase-4-protect-your-organization"></a>Phase 4 : Protéger votre organisation<a name="protect"></a>
+## <a name="phase-4-protect-your-organizationj"></a>Phase 4 : Protéger votre organisation<a name="protect"></a>
 
 Si votre enquête débouche sur la conclusion qu’un utilisateur est compromis, effectuez les étapes suivantes pour réduire le risque.
 
 * Contactez l’utilisateur : utilisez les informations de contact de l’utilisateur intégrées à Cloud App Security à partir d’Active Directory pour explorer au niveau du détail chaque alerte et activité afin de résoudre l’identité de l’utilisateur. Assurez-vous que l’utilisateur est familiarisé avec les activités.
 
-* Directement dans le portail Cloud App Security, cliquez sur le contrôle **Actions de l’utilisateur** et indiquez si vous souhaitez demander à l’utilisateur de se reconnecter, suspendre l’utilisateur ou confirmer que l’utilisateur est compromis.
+* Directement sur le portail Cloud App Security, cliquez sur le contrôle **Actions de l’utilisateur** et indiquez si vous souhaitez demander à l’utilisateur de se reconnecter, le suspendre ou confirmer qu’il est compromis.
 
 * Dans le cas d’une identité compromise, vous pouvez demander à l’utilisateur de réinitialiser son mot de passe et de vérifier que le mot de passe répond aux bonnes pratiques en matière de longueur et de complexité.
 * Si vous examinez une alerte et estimez que l'activité n'aurait pas dû déclencher cette alerte, dans le [tiroir Activité](activity-filters.md), cliquez sur le lien **Envoyez-nous des commentaires** pour nous permettre d'ajuster notre système d'alerte en fonction de votre organisation.
