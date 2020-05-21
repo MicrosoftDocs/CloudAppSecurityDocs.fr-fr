@@ -14,14 +14,14 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4ca67a5018aac268c5fefc96fe5d026c5f684125
-ms.sourcegitcommit: ecb1835d1cd880de38f32ce7a7031b0015f3cae5
+ms.openlocfilehash: 9a363ebb0c94735f4df8d2617f9d20c6bf7c8365
+ms.sourcegitcommit: e1a0d6a7d639a6d268b0104eb3e5532d2692288b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81228577"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "83551304"
 ---
-# <a name="activity-filters-and-queries"></a>Filtres et requêtes d’activités
+# <a name="activity-filters-and-queries"></a>Filtres et requêtes des activités
 
 *S’applique à : Microsoft Cloud App Security*
 
@@ -53,7 +53,7 @@ Vous trouverez ci-dessous une liste des filtres d’activité qui peuvent être 
 
 <!--- Description – Specific keyword in the activity description, for example, all activities that include the string **user** in their description.  -->
 
-- Balise de l’appareil : Recherchez par appareil conforme, géré ou vérifié.
+- Balise d’appareil : recherchez par **Intune conforme**, **Azure ad hybride joint** ou un **certificat de client valide**.
 
 - Type d’appareil : Recherchez uniquement les activités qui ont été effectuées à l’aide d’un type d’appareil spécifique. Par exemple, recherchez toutes les activités d’appareils mobiles, de PC ou de tablettes.
 

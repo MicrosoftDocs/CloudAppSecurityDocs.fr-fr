@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 12/03/2019
+ms.date: 05/20/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: fe538419f86076977b5484c5571d65623eb9cdd7
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 5a32b56b0ad310f5c7572f8113e4a9a33b722059
+ms.sourcegitcommit: d72c768e9a5fe087995ab1185ca33ef68168bee6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74733720"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83704274"
 ---
 # <a name="accounts"></a>Comptes
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Microsoft Cloud App Security vous donne une visibilité sur les comptes de vos applications connectées. Une fois connecté à une application à l’aide du connecteur d’applications, Cloud App Security lit les informations sur le compte qui sont associées aux applications connectées. La page Comptes vous permet d’examiner ces comptes, les autorisations, les groupes dont ils sont membres, leurs alias et les applications qu’ils utilisent. De plus, quand Cloud App Security détecte un nouveau compte qui n’a pas déjà été vu dans l’une des applications connectées (par exemple dans les activités ou le partage de fichiers), le compte est ajouté à la liste des comptes de cette application. Cela vous permet d’avoir une visibilité sur l’activité des utilisateurs externes interagissant avec vos applications cloud.
 
@@ -60,7 +60,7 @@ Vous trouverez ci-dessous une liste des filtres de comptes qui peuvent être app
 * **Dernière consultation** : le filtre **Dernière consultation** vous permet de rechercher des comptes qui sont sans mouvement et dont les utilisateurs n’ont effectué aucune activité depuis un certain temps.
 * **Organisation** : vous permet de filtrer les membres de groupes d’organisation spécifiques définis dans vos applications connectées.
 * **Afficher uniquement les administrateurs** : filtres pour les comptes et les utilisateurs qui sont des administrateurs.
-* **État** : filtre basé sur l’état de compte utilisateur N/A, intermédiaire, actif, suspendu ou supprimé.
+* **État** : filtre basé sur l’état de compte utilisateur N/A, intermédiaire, actif, suspendu ou supprimé. L’état non disponible (N/A) est normal et peut apparaître, par exemple, pour les comptes anonymes.
 * **Type** : vous permet de filtrer sur l’utilisateur ou sur le type de compte.
 * **Nom d’utilisateur** : vous permet de filtrer sur des utilisateurs spécifiques.
 

@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b34e201e45989ac8e13b92d39fb10b49f6be45ac
-ms.sourcegitcommit: 8e3657c47357bd30f3802fcf91e3060621a0c15b
+ms.openlocfilehash: a69ad97d1876bf881957ab2d7c79c8aa390d5e87
+ms.sourcegitcommit: e1a0d6a7d639a6d268b0104eb3e5532d2692288b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "82198316"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "83551321"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Protéger les applications avec le Contrôle d’accès conditionnel aux applications Microsoft Cloud App Security
 
@@ -53,7 +53,7 @@ Le contrôle d’application par accès conditionnel permet de superviser et de 
 
 La création d’une stratégie de session avec le Contrôle d’accès conditionnel aux applications vous permet de contrôler des sessions utilisateur en redirigeant l’utilisateur via un proxy inversé plutôt que directement vers l’application. À partir de là, les demandes et les réponses de l’utilisateur passent par Cloud App Security plutôt que directement à l’application.
 
-Quand une session est protégée par proxy, toutes les URL et cookies appropriés sont remplacés par Cloud App Security. Par exemple, si l’application retourne une page avec des liens dont les domaines `myapp.com`se terminent par, le domaine du lien est suivi `*.cas.ms`d’un suffixe similaire à ce qui suit :
+Quand une session est protégée par proxy, toutes les URL et cookies appropriés sont remplacés par Cloud App Security. Par exemple, si l’application retourne une page avec des liens dont les domaines se terminent par `myapp.com` , le domaine du lien est suivi d’un suffixe similaire à ce qui `*.cas.ms` suit :
 
 |URL de l’application|URL remplacée|
 |---|---|
@@ -70,7 +70,7 @@ Cette méthode ne vous oblige à installer quoi que ce soit sur l’appareil, ce
 
 Le Contrôle d’accès conditionnel aux applications vous permet de créer des stratégies qui déterminent si un appareil est géré ou non. Pour identifier l’état d’un appareil, vous pouvez configurer des stratégies d’accès et de session pour vérifier les éléments suivants :
 
-- Appareils conformes à Microsoft Intune (Intune) [disponible uniquement avec Azure AD]
+- Appareils conformes à Microsoft Intune [disponible uniquement avec Azure AD]
 - Azure AD Hybride des appareils joints [disponible uniquement avec Azure AD]
 - Présence de certificats clients dans une chaîne approuvée
 
@@ -179,7 +179,7 @@ Si vous êtes intéressé par une application spécifique, [envoyez-nous des inf
 ## <a name="next-steps"></a>Étapes suivantes
 
 > [!div class="nextstepaction"]
-> [Déployer le contrôle d’application par accès conditionnel pour les applications proposées](proxy-deployment-aad.md)
+> [Déployer le contrôle d’application par accès conditionnel pour les applications à la une](proxy-deployment-aad.md)
 
 > [!div class="nextstepaction"]
 > [Déployer le contrôle d’application par accès conditionnel pour tous les types d’applications](proxy-deployment-any-app.md)

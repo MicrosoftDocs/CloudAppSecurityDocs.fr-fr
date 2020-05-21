@@ -5,17 +5,17 @@ author: shsagir
 ms.author: shsagir
 ms.service: cloud-app-security
 ms.topic: conceptual
-ms.date: 8/15/2019
+ms.date: 05/17/2020
 ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a4ee042c3f24fe2fa5f15fa5ce3eb2ca0f7f2be1
-ms.sourcegitcommit: a693d0bc9102a8320f9933d80ab9357f449d5316
+ms.openlocfilehash: a88c3d90b96d173428ccd22c94731ca82f4f920b
+ms.sourcegitcommit: a6d6ab856bc06591d8ccdb5bf9dfd506dcd90e20
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83369323"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83579764"
 ---
 # <a name="set-up-cloud-discovery"></a>Configurer Cloud Discovery
 
@@ -35,6 +35,7 @@ Il existe deux types de rapports que vous pouvez générer :
   - [Collecteur de journaux](discovery-docker.md) : les collecteurs de journaux vous permettent d’automatiser facilement le chargement manuel des journaux de votre réseau. Le collecteur de journaux s’exécute sur votre réseau et reçoit les journaux par le biais de Syslog ou FTP.
   - [Intégration Zscaler](zscaler-integration.md) : si vous travaillez avec Cloud App Security et Zscaler, vous pouvez intégrer les deux produits pour améliorer la sécurité de votre expérience Cloud Discovery. Ensemble, Cloud App Security et Zscaler offrent un déploiement fluide de Cloud Discovery, le blocage automatique des applications non approuvées et l’évaluation des risques directement dans le portail de Zscaler.
   - [intégration de iboss](iboss-integration.md): Si vous travaillez avec Cloud App Security et iboss, vous pouvez intégrer les deux produits pour améliorer votre expérience de Cloud Discovery de sécurité. Ensemble, Cloud App Security et iboss fournissent un déploiement transparent de Cloud Discovery, le blocage automatique des applications non approuvées et l’évaluation des risques directement dans le portail iboss.
+  - [Intégration de Corrata](corrata-integration.md): Si vous travaillez avec Cloud App Security et Corrata, vous pouvez intégrer les deux produits pour améliorer votre expérience de Cloud Discovery de sécurité. Ensemble, Cloud App Security et Corrata fournissent un déploiement transparent de Cloud Discovery, le blocage automatique des applications non approuvées et l’évaluation des risques directement dans le portail Corrata.
 
 ## <a name="log-process-flow-from-raw-data-to-risk-assessment"></a>Flux du processus de journalisation : des données brutes à l’évaluation des risques
 
@@ -64,6 +65,7 @@ Le processus de génération d’une évaluation des risques se compose des éta
 - Cisco Meraki – journal des URL
 - Clavister NGFW (Syslog)
 - ContentKeeper
+- Corrata
 - Digital Arts i-FILTER
 - Forcepoint
 - Fortinet Fortigate
@@ -95,7 +97,7 @@ Attributs de données (selon la documentation du fournisseur) :
 |----------------------------------------------|----------------------|----------------------|----------------------|----------------------|----------------------|----------------------|
 | Barracuda | **Oui** | **Oui** | **Oui** | **Oui** | Non | Non  |
 | Blue Coat | **Oui** | Non | **Oui** | **Oui** | **Oui** | **Oui** |
-| Point de contrôle | Non | **Oui** | Non | **Oui** | Non | Non  |
+| Check Point | Non | **Oui** | Non | **Oui** | Non | Non  |
 | Cisco ASA (Syslog) | Non | **Oui** | Non | **Oui** | **Oui** | Non |
 | Cisco ASA avec FirePOWER | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** |
 | Cisco Cloud Web Security |**Oui**|**Oui**|**Oui**|**Oui**|**Oui**|**Oui**|
@@ -104,6 +106,7 @@ Attributs de données (selon la documentation du fournisseur) :
 | Cisco Meraki | **Oui** | **Oui** | Non | **Oui** | Non | Non  |
 | Clavister NGFW (Syslog) | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** |
 | ContentKeeper | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** |
+| Corrata | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** |
 | SonicWall (anciennement Dell) | **Oui** | **Oui** | Non | **Oui** | **Oui** | **Oui** |
 | Digital Arts i-FILTER | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** |
 | ForcePoint LEEF |**Oui**|**Oui**|**Oui**|**Oui**|**Oui**|**Oui**|
