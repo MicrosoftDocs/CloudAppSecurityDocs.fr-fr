@@ -14,43 +14,20 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 367778c25f0a56dd0db8f6457b884b02d382da6c
-ms.sourcegitcommit: e0c2a8fbdce9cc0fd0d6b85c92e112fd306ad950
+ms.openlocfilehash: c5c5dfb141347b1a08f850335c82e54393bbf4c6
+ms.sourcegitcommit: 7b6124e5ecb3fa8fc1176d89e06b052f2a53a310
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83203009"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83854250"
 ---
 # <a name="working-with-the-dashboard"></a>Utilisation du tableau de bord
 
 *S’applique à : Microsoft Cloud App Security*
 
-Cet article décrit la procédure à suivre au quotidien avec Cloud App Security.  Une fois que Microsoft Cloud App Security est opérationnel, vous devez :
-
-- Configurer les flux de données
-- Approuver les applications que vous voulez autoriser les utilisateurs à utiliser
-- Configurer des stratégies pour surveiller votre environnement cloud.
-
-Vous pouvez ensuite utiliser Cloud App Security pour contrôler et protéger votre cloud, et pour gérer les risques.
+Cet article décrit la procédure à suivre au quotidien avec Cloud App Security.  
 
 ## <a name="check-the-dashboard"></a>Consulter le tableau de bord
-
-![Tableau de bord Cloud App Security](media/dashboard.png "dashboard")
-
-Le tableau de bord Cloud App Security donne une vue d’ensemble des activités et des fonctionnalités, notamment :
-
-- Alertes ouvertes
-- Violations d’activité
-- Violations de contenu
-- Carte des activités qui représente l’origine de l’activité des utilisateurs
-- Tendances de l’utilisation des applications connectées dans votre environnement cloud
-- Utilisateurs principaux par détection de menace
-
-Nous vous recommandons de vérifier le tableau de bord tous les jours pour voir les nouvelles alertes déclenchées. C’est un bon endroit pour surveiller l’intégrité de votre environnement cloud. Le tableau de bord vous permet de vous faire une idée de ce qui se passe.
-
-## <a name="gradual-deployment-of-our-enhanced-dashboard"></a>Déploiement progressif de notre tableau de bord amélioré
-
-Dans le cadre de nos améliorations constantes de la conception du portail, le tableau de bord Cloud App Security a été amélioré en fonction de vos commentaires. Le tableau de bord offre une expérience utilisateur améliorée avec le contenu et les données mis à jour.
 
 Les informations présentées dans le tableau de bord sont une vue d’ensemble de toutes les informations les plus importantes concernant votre organisation. Chaque carte d’informations fournit des liens vers une investigation plus approfondie des informations présentées. Vous pouvez également choisir d’afficher les informations de tableau de bord pour une application spécifique à l’aide du filtre fourni.
 

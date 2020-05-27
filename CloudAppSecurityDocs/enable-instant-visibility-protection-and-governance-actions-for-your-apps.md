@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 11/12/2019
+ms.date: 05/24/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: fe0a057318f1b9a55d60e807c2bbaf8fd89aa682
-ms.sourcegitcommit: a166b85d5c91c48032cf133655471aec1ed88a0f
+ms.openlocfilehash: 5c12226c36cba270ad5b54ffdb76cb8b228c2480
+ms.sourcegitcommit: 7b6124e5ecb3fa8fc1176d89e06b052f2a53a310
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81662211"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83854199"
 ---
 # <a name="connect-apps"></a>Connecter des applications
 
@@ -52,7 +52,7 @@ Selon l’application à laquelle vous vous connectez, la connexion d’API acti
 
 - **Informations sur le compte** - Visibilité des utilisateurs, des comptes, des informations de profil, de l’état (suspendu, actif, désactivé), des groupes et des privilèges.
 
-- **Piste d’audit** - Visibilité des activités des utilisateurs, des administrateurs et des connexions.
+- Visibilité de la **piste d’audit** pour les activités de l’utilisateur, les activités d’administration et les activités de connexion.
 
 - **Analyse de données** - Analyse des données non structurées à l’aide de deux processus : analyse périodique (toutes les 12 heures) et analyse en temps réel (déclenchée chaque fois qu’un changement est détecté).
 
@@ -76,7 +76,7 @@ Le tableau suivant répertorie, par application cloud, les fonctionnalités pris
 | **Activité de l’utilisateur** | Non applicable | ✔ | ✔ | ✔ | ✔ - nécessite Google Business ou Entreprises | ✔ | ✔ | Partial | Prise en charge avec Salesforce Shield | ✔ | ✔ |
 | **Activité d’administration** | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | Partial | ✔ | ✔ | Non prise en charge par le fournisseur |
 | **DLP-analyse périodique** | | ✔ | Bientôt disponible | Non applicable | ✔ | ✔ | Non applicable | | | | Non prise en charge par le fournisseur |
-| **Analyse DLP en temps quasi réel** | | ✔ | ✔ | Non applicable | ✔-nécessite Google Business Enterprise | ✔ | Non applicable | ✔ | ✔ | ✔ | Non prise en charge par le fournisseur |
+| **DLP : analyse en temps quasi réel** | | ✔ | ✔ | Non applicable | ✔-nécessite Google Business Enterprise | ✔ | Non applicable | ✔ | ✔ | ✔ | Non prise en charge par le fournisseur |
 | **Contrôle partagé** | ✔ | ✔ | ✔ | Non applicable | ✔ | ✔ | Non applicable | Non applicable | | ✔ | Non prise en charge par le fournisseur |
 | **Gouvernance des fichiers** | ✔ | ✔ | ✔ | Non applicable | ✔ | ✔ | Non applicable | | ✔ | | Non prise en charge par le fournisseur |
 | **Voir les autorisations d’application** | Non applicable | Non prise en charge par le fournisseur | En provenance | Non applicable | ✔ | ✔ | Non applicable | | ✔ | Non applicable | Non applicable |
@@ -98,7 +98,7 @@ Pour utiliser des connecteurs d’applications, vous devez vérifier que vous av
 |-----|--------------|------|
 | Azure | | Administrateur général |
 | AWS | | Utilisateur récemment créé |
-| Box | Enterprise | Il est fortement recommandé de vous connecter à Box en tant qu’administrateur. La connexion en tant que coadministrateur entraînera uniquement une visibilité partielle des données. Si vous vous connectez en tant que coadministrateur, sélectionnez toutes les autorisations. |
+| Box | Entreprise | Il est fortement recommandé de vous connecter à Box en tant qu’administrateur. La connexion en tant que coadministrateur entraînera uniquement une visibilité partielle des données. Si vous vous connectez en tant que coadministrateur, sélectionnez toutes les autorisations. |
 | Dropbox | Business/Entreprises | Admin |
 | GCP | | Consultez les [conditions préalables Connect GCP](connect-google-gcp-to-microsoft-cloud-app-security.md#prerequisites) |
 | G Suite | Compte G Suite Business ou Entreprise<br /><br />G Suite Enterprise (au minimum) | Super administrateur |

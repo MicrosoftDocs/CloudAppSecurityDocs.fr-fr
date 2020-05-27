@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 556e47a29c33fa898082a8148e3f3b431b30ac2a
-ms.sourcegitcommit: ecb1835d1cd880de38f32ce7a7031b0015f3cae5
+ms.openlocfilehash: 652ab059cef9c911af4dc58a7cb4b79c679aed30
+ms.sourcegitcommit: 7b6124e5ecb3fa8fc1176d89e06b052f2a53a310
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81241276"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83854272"
 ---
 # <a name="connect-workday-to-microsoft-cloud-app-security-preview"></a>Connecter un jour ouvré à Microsoft Cloud App Security (version préliminaire)
 
@@ -74,6 +74,7 @@ Pour plus d’informations sur la configuration des utilisateurs d’intégratio
     | Type d’octroi client | Octroi de code d’autorisation |
     | Type de jeton d’accès | Support |
     | URI de redirection | `https://portal.cloudappsecurity.com/api/oauth/connect` |
+    | Jetons d’actualisation sans expiration | Oui |
     | Étendues OAuth2 | **Personnel** et **système** |
     | Étendue (zones fonctionnelles) | **Personnel** et **système** |
 
@@ -119,6 +120,6 @@ Si vous rencontrez des problèmes lors de la connexion de l’application, consu
 ## <a name="next-steps"></a>Étapes suivantes
 
 > [!div class="nextstepaction"]
-> [Contrôler les applications Cloud avec des stratégies](control-cloud-apps-with-policies.md)
+> [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

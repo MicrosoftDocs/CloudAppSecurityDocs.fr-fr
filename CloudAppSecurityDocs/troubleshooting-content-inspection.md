@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 12/10/2018
+ms.date: 05/25/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b0d1afdd63cc7c92f520cc17c1d90ff83bf4ec23
-ms.sourcegitcommit: 82aaa76581fa76e207c754bb0855c24c2233fb44
+ms.openlocfilehash: 3831d576d3ead9164924557a8b097b78f39808cf
+ms.sourcegitcommit: 7b6124e5ecb3fa8fc1176d89e06b052f2a53a310
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81738053"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83854198"
 ---
 # <a name="troubleshooting-content-inspection"></a>Résolution des problèmes d’inspection du contenu
 
@@ -41,7 +41,8 @@ Le tableau liste les états d’inspection du contenu et leur description.
 |Échec : le fichier est endommagé|Le fichier est endommagé et ne peut pas être inspecté.|
 |Échec : erreur interne|Un problème non identifié est survenu lors de la tentative d’inspection du fichier.|
 |Échec : erreur de la DLP externe|Un problème est survenu dans votre DLP externe et est à l’origine de l’échec de Cloud App Security lors de l’inspection du contenu.|
-|Failed: File size exceeded (Échec : taille maximale de fichier dépassée)|Le fichier a dépassé la taille maximale de fichier de 50 Mo ou 1 million caractères.|
+|Failed: File size exceeded (Échec : taille maximale de fichier dépassée)|Le fichier a dépassé la taille de fichier maximale de 50 Mo.|
+|Échec : le fichier est trop long et a été partiellement analysé|Le fichier dépasse la limite maximale de 1 million caractères. Pour la partie du contenu qui a été analysée, les correspondances de stratégie pertinentes ont été appliquées.|
 |Échec : accès au fichier refusé|Le fichier est externe à votre cloud et n’est pas accessible par Cloud App Security.|
 |Échec : le fichier a été supprimé|Le fichier n’existe plus dans votre cloud et ne peut pas être inspecté.|
 |Échec : type de fichier non pris en charge|Cloud App Security ne peut pas effectuer d’inspection du contenu sur ce type de fichier. Cet état peut apparaître si le type de fichier n’est pas pris en charge ou si le fichier n’est pas réellement au format du type attendu.|
