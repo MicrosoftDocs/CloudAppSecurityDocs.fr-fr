@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: e4dea21cdd9566781176a0d482bd2c45a6131ac5
-ms.sourcegitcommit: 0b929f7c8feed7dfb40d5294179fd5c6fc079614
+ms.openlocfilehash: 57fac7776efbb617a382a30f6bf68ac2578ad0a6
+ms.sourcegitcommit: e1a0d6a7d639a6d268b0104eb3e5532d2692288b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81228475"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "83551287"
 ---
 # <a name="tutorial-block-download-of-sensitive-information"></a>Tutoriel : Bloquer le téléchargement des informations sensibles
 
@@ -78,7 +78,7 @@ Une fois cette tâche terminée, accédez au portail Cloud App Security et crée
 
 6. Sous **Source de l’activité** dans la section **Activités remplissant toutes les conditions suivantes**, sélectionnez les filtres :
 
-   * **Balise de l'appareil** : Sélectionnez **Différent de**. Choisissez ensuite **Conforme**, **Joint au domaine** ou **Certificat client valide**. Votre sélection dépend de la méthode utilisée dans votre organisation pour identifier les appareils gérés.
+   * **Balise de l'appareil** : Sélectionnez **Différent de**. Sélectionnez ensuite **Conforme Intune**, **Joint à une version hybride d’Azure AD** ou **Certification client valide**. Votre sélection dépend de la méthode utilisée dans votre organisation pour identifier les appareils gérés.
 
    * **Application** : sélectionnez l’application que vous voulez contrôler.
 

@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: 7316a1b24e45219b55912e75b48b0c2e590bd34f
-ms.sourcegitcommit: 1288ef3b69b2fefc3015e61cb9f485c0c8e6c682
+ms.openlocfilehash: 89da56403cbd6239094e58bebdd2a78ef3558edc
+ms.sourcegitcommit: a6d6ab856bc06591d8ccdb5bf9dfd506dcd90e20
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82888291"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83579781"
 ---
 # <a name="tutorial-investigate-risky-users"></a>Tutoriel : Examiner des utilisateurs à risque
 
@@ -48,7 +48,7 @@ Le score de priorité d’examen est basé sur les alertes de sécurité, les ac
 
 Si vous cliquez sur le score d'une alerte ou d'une activité, vous pouvez voir les preuves sur lesquelles Cloud App Security s’est appuyé pour noter l'activité.
 
-Chaque utilisateur Azure AD dispose d’un score de priorité d’examen dynamique, constamment mis à jour en fonction du comportement et de l’impact récents, calculé à partir des données évaluées par Azure ATP, Microsoft Cloud App Security et Azure AD Identity Protection. Vous pouvez maintenant identifier immédiatement les principaux utilisateurs à risque en les filtrant par **score de priorité d’examen**, puis vérifier directement leur impact sur l’entreprise et examiner toutes les activités connexes, qu’il s’agisse d’informations compromises, de données exfiltrées ou de menaces provenant des employés.
+Chaque utilisateur Azure AD dispose d’un score de priorité d’examen dynamique, constamment mis à jour en fonction du comportement et de l’impact récents, calculé à partir des données évaluées par Azure ATP et Cloud App Security. Vous pouvez maintenant identifier immédiatement les principaux utilisateurs à risque en les filtrant par **score de priorité d’examen**, puis vérifier directement leur impact sur l’entreprise et examiner toutes les activités connexes, qu’il s’agisse d’informations compromises, de données exfiltrées ou de menaces provenant des employés.
 
 Cloud App Security utilise les fonctionnalités suivantes pour mesurer le risque :
 
@@ -101,7 +101,7 @@ Lorsque vous examinez un utilisateur, posez-vous ces questions sur les activité
 
 * Accédez au **journal d’activité** pour comprendre pourquoi cette activité a reçu un score élevé, tandis que d’autres n’ont pas reçu ce score. Vous pouvez définir la **Priorité d’examen** sur **Est défini** pour comprendre quelles activités sont suspectes. Par exemple, vous pouvez filtrer selon la Priorité d’examen pour toutes les activités qui se sont produites en Ukraine. Vous verrez alors si d’autres activités à risque se sont produites et à quel endroit l'utilisateur s'est connecté. Pour poursuivre l’examen, il est très facile de basculer vers d’autres aspects, par exemple les dernières activités non anormales dans le cloud et localement.
 
-## <a name="phase-4-protect-your-organizationj"></a>Phase 4 : Protéger votre organisation<a name="protect"></a>
+## <a name="phase-4-protect-your-organization"></a>Phase 4 : Protéger votre organisation<a name="protect"></a>
 
 Si votre enquête débouche sur la conclusion qu’un utilisateur est compromis, effectuez les étapes suivantes pour réduire le risque.
 
