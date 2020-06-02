@@ -14,24 +14,24 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 3c502e58ffcec4c99378bebcd9857368e0db41f0
-ms.sourcegitcommit: ecb1835d1cd880de38f32ce7a7031b0015f3cae5
+ms.openlocfilehash: 1b69c92be4a3e095b76eee3d458820dac5d218a9
+ms.sourcegitcommit: 6886d285601955f0efc7acf980c9d4740ff873fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81235245"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "84250687"
 ---
 # <a name="working-with-app-risk-scores"></a>Utilisation des scores de risque d’application
 
 *S’applique à : Microsoft Cloud App Security*
 
-Le catalogue d’applications cloud vous donne une vue d’ensemble complète des éléments identifiés par Cloud Discovery. Cloud Discovery analyse vos journaux de trafic en s’appuyant sur le catalogue d’applications cloud Microsoft Cloud App Security, qui contient plus de 16 000 applications cloud. Les applications sont classées et évaluées selon plus de 70 facteurs de risque, afin de vous offrir une visibilité en continu de l’utilisation du cloud, du « Shadow IT » et du risque que celui-ci représente pour votre organisation. Cet article fournit des instructions sur l’utilisation et la personnalisation de l’indice de risque Cloud App Security.
+Le catalogue d’applications cloud vous donne une vue d’ensemble complète des éléments identifiés par Cloud Discovery. Cloud Discovery analyse vos journaux de trafic en s’appuyant sur le catalogue d’applications cloud Microsoft Cloud App Security, qui contient plus de 16 000 applications cloud. Les applications sont classées et évaluées en fonction de plus de 80 facteurs de risque afin de vous offrir une visibilité permanente de l’utilisation du Cloud, de l’occulter et de l’ombre des risques qu’il représente pour votre organisation. Cet article fournit des instructions sur l’utilisation et la personnalisation de l’indice de risque Cloud App Security.
 
 ## <a name="the-cloud-app-catalog"></a>Catalogue d’applications cloud
 
 Le **catalogue d’applications cloud** évalue les risques pour vos applications cloud selon les certifications réglementaires, les normes du secteur et les bonnes pratiques. Quatre processus complémentaires s’exécutent dans le catalogue d’applications cloud pour le tenir à jour :
 
-1. Extraction de données automatisée directement à partir de l’application cloud. L’extraction est utilisée pour les attributs tels que la conformité SOC 2, les conditions d’utilisation du service, l’URL de connexion, la politique de confidentialité et l’emplacement du siège social.
+1. Extraction de données automatisée directement à partir de l’application cloud. L’extraction concerne des attributs tels que la conformité SOC 2, les conditions de service, l’URL de connexion, la politique de confidentialité et l’emplacement du siège social.
 2. Extraction de données avancée automatisée pour les données par les algorithmes de Cloud App Security (pour les attributs tels que les en-têtes de sécurité HTTP).
 3. Analyse en continu par l’équipe d’analystes cloud Cloud App Security (pour les attributs tels que le chiffrement au repos).
 4. Demandes de révisions basées sur le client, en fonction des demandes de soumissions du client des modifications à apporter au catalogue d’applications cloud. Toutes les demandes sont examinées par notre équipe d’analystes cloud et mises à jour en fonction de leurs conclusions.
@@ -108,7 +108,7 @@ Cloud Discovery vous fournit des données importantes sur la crédibilité et la
 
 Chacune de ces catégories comprend de nombreuses propriétés spécifiques. Selon notre algorithme de scoring Cloud App Security, chaque propriété reçoit un score préliminaire compris entre 0 et 10, selon sa valeur. Les valeurs True/False reçoivent 10 ou 0. Cependant, les propriétés continues, telles que l’âge du domaine, reçoivent une valeur comprise dans le spectre. Le score de chaque propriété est pondéré par rapport à tous les autres champs existants dans la catégorie, afin de créer le sous-score de la catégorie. Si vous rencontrez une application sans score, cela indique généralement que les propriétés de cette application sont inconnues et qu’elle n’a donc pas de score.
 
-Prenez le temps de passer en revue et d’éventuellement modifier les pondérations qui ont été attribuées par défaut à la configuration du score Cloud Discovery. Par défaut, tous les différents paramètres évalués reçoivent une pondération identique. Si certains paramètres sont plus ou moins importants pour votre organisation, il est important de les modifier comme suit :
+Prenez le temps de passer en revue et d’éventuellement modifier les pondérations qui ont été attribuées par défaut à la configuration du score Cloud Discovery. Par défaut, tous les différents paramètres évalués ont le même poids. Si certains paramètres sont plus ou moins importants pour votre organisation, il est important de les modifier comme suit :
 
 1. Dans le portail, sous l’icône Paramètres, sélectionnez **Paramètres Cloud Discovery**.
 
@@ -116,13 +116,13 @@ Prenez le temps de passer en revue et d’éventuellement modifier les pondérat
 
 3. De plus, vous pouvez déterminer si certaines valeurs sont soit non disponibles, soit non applicables dans le calcul du score. Quand elles sont incluses, les valeurs N/A contribuent négativement au score calculé.
 
-    ![enjeu](media/score.png "évaluer les métriques")
+    ![score](media/score.png "évaluer les métriques")
 
-Toutes les informations nécessaires pour comprendre le fonctionnement des indices de risque Cloud App Security et leur empilement sont disponibles dans le portail Cloud App Security. Pour mieux comprendre la pondération d’un facteur de risque dans une catégorie donnée, utilisez le bouton « i » à droite d’un nom de champ, dans le profil de l’application. Il fournit des informations sur la façon dont Cloud App Security note précisément un facteur de risque. Ce score correspond à la valeur du facteur de risque sur une échelle de 1 à 10 et à son poids dans la catégorie de risque :
+Toutes les informations nécessaires pour comprendre le fonctionnement des indices de risque Cloud App Security et leur empilement sont disponibles dans le portail Cloud App Security. Pour mieux comprendre le poids d’un facteur de risque dans une catégorie de risque spécifique, utilisez le bouton « i » à droite de chaque nom de champ dans le profil de l’application. Il fournit des informations sur la façon dont Cloud App Security note précisément un facteur de risque. Ce score correspond à la valeur du facteur de risque sur une échelle de 1 à 10 et à son poids dans la catégorie de risque :
 
 ![calcul du risque](media/cac-weight.png)
 
-Pour comprendre la pondération d’une catégorie de risque dans le score total d’une application, déplacez le curseur sur le score de catégorie de risque :
+Pour comprendre le poids d’une catégorie de risque dans le score total d’une application, pointez sur le score de la catégorie de risque :
 
 ![poids de la catégorie de risque](media/risk-category-weight.png)
 

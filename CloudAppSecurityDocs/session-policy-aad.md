@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1b6bd39d420b113a85d9d171ab076769240b9d00
-ms.sourcegitcommit: ecb1835d1cd880de38f32ce7a7031b0015f3cae5
+ms.openlocfilehash: 47aa53855f83a2898616d17e6d4b12786bc7d893
+ms.sourcegitcommit: 6886d285601955f0efc7acf980c9d4740ff873fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81228492"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "84250670"
 ---
 # <a name="session-policies"></a>Stratégies de session
 
@@ -40,9 +40,9 @@ Par exemple, vous pouvez décider que pour les appareils non gérés ou pour les
 
 * Azure AD Premium licence P1 ou la licence requise par votre solution de fournisseur d’identité (IdP)
 * Les applications appropriées doivent être [déployées avec le Contrôle d’accès conditionnel aux applications](proxy-deployment-aad.md)
-* Assurez-vous que vous avez configuré votre solution IdP pour qu’elle fonctionne avec Cloud App Security, comme suit :
-  * Pour [Azure ad l’accès conditionnel](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal), consultez [configurer l’intégration avec Azure ad](proxy-deployment-aad.md#configure-integration-with-azure-ad)
-  * Pour d’autres solutions IdP, consultez [configurer l’intégration avec d’autres solutions IDP](proxy-deployment-aad.md#configure-integration-with-other-idp-solutions) .
+* Configurez votre solution de fournisseur d’identité pour qu’elle fonctionne avec Cloud App Security :
+  * Pour [l’accès conditionnel Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal), consultez [Configuration de l’intégration avec Azure AD](proxy-deployment-aad.md#configure-integration-with-azure-ad).
+  * Pour les autres solutions de fournisseur d’identité, consultez [Configuration de l’intégration avec d’autres solutions de fournisseur d’identité](proxy-deployment-aad.md#configure-integration-with-other-idp-solutions).
 
 ## <a name="create-a-cloud-app-security-session-policy"></a>Créer une stratégie de session Cloud App Security
 
@@ -100,7 +100,7 @@ Si vous ne voulez pas en informer l’utilisateur, vous pouvez désactiver le me
 
 2. Puis, sous **Contrôle d’accès conditionnel aux applications**, sélectionnez **Suivi des utilisateurs** et décochez la case **Aviser les utilisateurs**.
 
-Pour garder l’utilisateur dans la session, le Contrôle d’accès conditionnel aux applications remplace tous les URL, scripts de Java et cookies appropriés dans la session de l’application par des URL de Contrôle d’accès conditionnel aux applications. Par exemple, si l’application retourne une page avec des liens dont les domaines se terminent par myapp.com, contrôle d’application par accès conditionnel remplace les liens par des domaines se terminant par un nom similaire à myapp.com.us.cas.ms. Ainsi, la session entière est surveillée par Microsoft Cloud App Security.
+Pour garder l’utilisateur dans la session, le Contrôle d’accès conditionnel aux applications remplace tous les URL, scripts de Java et cookies appropriés dans la session de l’application par des URL de Contrôle d’accès conditionnel aux applications. Par exemple, si l’application retourne une page avec des liens dont les domaines se terminent par myapp.com, contrôle d’application par accès conditionnel remplace les liens par des domaines se terminant par un nom similaire à `myapp.com.mcas.ms` . Ainsi, la session entière est surveillée par Microsoft Cloud App Security.
 
 Le Contrôle d’accès conditionnel aux applications enregistre les journaux de trafic de chaque session utilisateur acheminée vers lui. Les journaux de trafic incluent l’heure, l’adresse IP, l’agent utilisateur, les URL visitées et le nombre d’octets chargés et téléchargés. Ces journaux sont analysés et un rapport continu (**Contrôle d’application par accès conditionnel Cloud App Security**) est ajouté à la liste des rapports Cloud Discovery dans le tableau de bord Cloud Discovery.
 
@@ -110,7 +110,7 @@ Pour exporter ces journaux :
 2. Sur le côté droit du tableau, cliquez sur le bouton d’exportation.
 
     ![bouton exporter](./media/export-button.png)
-3. Sélectionnez la plage du rapport et cliquez sur **Exporter**. Ce processus peut prendre du temps.
+3. Sélectionnez la plage du rapport et cliquez sur **Exporter**. Ce processus peut prendre un certain temps.
 
 Pour télécharger le journal exporté :
 
