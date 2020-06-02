@@ -101,6 +101,8 @@
           href: user-groups.md
         - name: Déploiement étendu
           href: scoped-deployment.md
+        - name: Confidentialité de l’activité
+          href: activity-privacy.md
         - name: Balises et plages IP
           href: ip-tags.md
     - name: Cloud Discovery
