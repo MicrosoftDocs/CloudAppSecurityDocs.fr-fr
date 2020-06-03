@@ -1,11 +1,11 @@
 ---
 title: Configurer le chargement automatique de journal à l’aide de Docker dans Azure
-description: Cet article décrit la procédure de configuration du chargement automatique de journaux pour des rapports continus dans Cloud App Security à l’aide de Docker sur Ubuntu ou RHEL dans Azure.
+description: Cet article décrit le processus de configuration du chargement automatique des journaux pour les rapports continus dans Cloud App Security à l’aide d’un docker sur Linux dans Azure.
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 05/04/2020
+ms.date: 06/02/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,22 +14,25 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5b952a924b7b26e4d45ffb981698f660e53a0558
-ms.sourcegitcommit: baa9cb55d9d82808602a58ee24eeba7d83e92742
+ms.openlocfilehash: b481ff78df6c563512f867d53e906df9a7cfd0fb
+ms.sourcegitcommit: d159dbd8e1a35268468156eb9c5a5f218cdace4c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "82739022"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84274595"
 ---
-# <a name="set-up-and-configuration-on-ubuntu-or-rhel-in-azure"></a>Installation et configuration sur Ubuntu ou RHEL dans Azure
+# <a name="docker-on-linux-in-azure"></a>Docker sur Linux dans Azure
 
 *S’applique à : Microsoft Cloud App Security*
 
-Vous pouvez configurer le chargement automatique de journaux pour des rapports continus dans Cloud App Security à l’aide de Docker sur Ubuntu ou Red Hat Enterprise Linux (RHEL) dans Azure. Cet article décrit comment configurer le chargement automatique des journaux.
+Vous pouvez configurer le chargement automatique des journaux pour des rapports continus dans Cloud App Security à l’aide d’un docker sur Ubuntu, Red Hat Enterprise Linux (RHEL) ou CentOS dans Azure.
 
 ## <a name="prerequisites"></a>Prérequis
 
-* Système d’exploitation : Ubuntu 16,04 et 18,04, RHEL 7,2 ou version ultérieure, ou CentOS 7,2 ou version ultérieure
+* Système d’exploitation :
+    * Ubuntu 14,04, 16,04 et 18,04
+    * RHEL 7,2 ou version ultérieure
+    * CentOS 7,2 ou version ultérieure
 
 * Espace disque : 250 Go
 
@@ -116,7 +119,7 @@ Le collecteur de journaux peut gérer correctement la capacité des journaux pou
 
     1. Dans l’affichage Ordinateur, accédez à **Réseau** et sélectionnez l’interface souhaitée en double-cliquant dessus.
     1. Accédez à **Groupe de sécurité réseau** et sélectionnez le groupe de sécurité réseau qui convient.
-    1. Accédez à **règles de sécurité de trafic entrant** , puis ![cliquez sur **Ajouter**, Ubuntu Azure](media/ubuntu-azure.png)
+    1. Accédez à **règles de sécurité de trafic entrant** , puis cliquez sur **Ajouter**, ![ Ubuntu Azure](media/ubuntu-azure.png)
     1. Ajoutez les règles suivantes (en mode **Avancé**) :
 
     |Nom|Plages de ports de destination|Protocol|Source|Destination|

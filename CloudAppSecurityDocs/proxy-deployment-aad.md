@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: b2cc376ee93d4f052227cbc3a0e8e8f04e564ae3
-ms.sourcegitcommit: ecb1835d1cd880de38f32ce7a7031b0015f3cae5
+ms.openlocfilehash: bfa910c78201a63a6e18c6e30f345c1e4361b23c
+ms.sourcegitcommit: 5822fcdb1433a6a26195692b05aed160bc339656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81241340"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84275810"
 ---
 # <a name="deploy-conditional-access-app-control-for-featured-apps"></a>Déployer le contrôle d’application par accès conditionnel pour les applications à la une
 
@@ -33,10 +33,10 @@ Les contrôles de session dans Microsoft Cloud App Security fonctionner avec les
 - Les applications doivent être configurées avec l’authentification unique
 - Les applications doivent utiliser l’un des protocoles d’authentification suivants :
 
-    |Fournisseur d’identité (IdP)|Protocoles|
+    |Fournisseur d’identité|Protocoles|
     |---|---|
-    |Azure AD|SAML 2,0 ou OpenID Connect|
-    |Autres|SAML 2.0|
+    |Azure AD|SAML 2.0 ou OpenID Connect|
+    |Autre|SAML 2.0|
 
 ## <a name="to-deploy-featured-apps"></a>Pour déployer des applications proposées
 
@@ -56,7 +56,7 @@ Procédez comme suit pour configurer les applications proposées pour qu’elles
 
 Utilisez les étapes suivantes pour créer une stratégie d’accès conditionnel Azure AD qui achemine les sessions d’application vers Cloud App Security. Pour d’autres solutions IdP, consultez [configurer l’intégration avec d’autres solutions IDP](#configure-integration-with-other-idp-solutions).
 
-1. Dans Azure ad, accédez à **sécurité** > **accès conditionnel**.
+1. Dans Azure ad, accédez à **sécurité**  >  **accès conditionnel**.
 
 1. Dans le volet **accès conditionnel** , dans la barre d’outils située en haut, cliquez sur **nouvelle stratégie**.
 
@@ -78,7 +78,7 @@ Utilisez les étapes suivantes pour créer une stratégie d’accès conditionne
 
 Suivez les étapes ci-dessous pour acheminer des sessions d’application d’autres solutions IdP vers Cloud App Security. Pour Azure AD, consultez [configurer l’intégration avec Azure ad](#configure-integration-with-azure-ad).
 
-1. Dans > Cloud App Security, accédez à **examiner** > **applications connectées****contrôle d’application par accès conditionnel applications**.
+1. Dans Cloud App Security, accédez à **examiner**  >  **applications connectées**  >  **contrôle d’application par accès conditionnel applications**.
 
 1. Cliquez sur le signe plus, puis dans la fenêtre contextuelle, sélectionnez l’application que vous souhaitez déployer, puis cliquez sur **Démarrer l’Assistant**.
 1. Sur la page informations sur l' **application** , remplissez le formulaire à l’aide des informations de la page Configuration de l’authentification unique de votre application, puis cliquez sur **suivant**.
@@ -125,9 +125,11 @@ Suivez les étapes ci-dessous pour acheminer des sessions d’application d’au
     1. Dans le champ URL d’authentification unique, entrez l’URL d’authentification unique que vous avez notée précédemment.
         > [!NOTE]
         > Certains fournisseurs peuvent faire référence à l’URL de l’authentification unique en tant qu' *URL de réponse*.
-    1. Ajoutez les attributs et les valeurs que vous avez notés précédemment aux propriétés des applications.
+    1. Ajoutez les attributs et les valeurs que vous avez notés précédemment aux propriétés de l’application.
         > [!NOTE]
-        > Certains fournisseurs peuvent y faire référence en tant qu' *attributs utilisateur* ou *revendications*.
+        >
+        > - Certains fournisseurs peuvent y faire référence en tant qu' *attributs utilisateur* ou *revendications*.
+        > - Lors de la création d’une nouvelle application SAML, le fournisseur d’identité Okta limite les attributs à 1024 caractères. Pour atténuer cette limitation, commencez par créer l’application sans les attributs appropriés. Après avoir créé l’application, modifiez-la, puis ajoutez les attributs appropriés.
     1. Vérifiez que l’identificateur de nom est au format d’adresse de messagerie.
     1. Enregistrez vos paramètres.
 1. Sur la page modifications de l' **application** , procédez comme suit, puis cliquez sur **suivant**. Vous aurez besoin des informations de l’étape suivante.

@@ -1,11 +1,11 @@
 ---
-title: Configurer le chargement automatique de journal à l’aide de Docker en local
-description: Cet article décrit la procédure de configuration du chargement automatique des journaux pour des rapports continus dans Cloud App Security à l’aide d’un Docker sur un serveur Ubuntu ou RHEL local.
+title: Configurer le chargement automatique des journaux à l’aide de l’arrimeur local
+description: Cet article décrit le processus de configuration du chargement automatique des journaux pour les rapports continus dans Cloud App Security à l’aide d’un docker sur Linux sur un serveur local.
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 11/19/2019
+ms.date: 06/02/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,22 +14,25 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: baa86eb5a0d21a69fd747e0d7ef1c4d5863deddf
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: cbd419984f5b3cca55727b7795210edd9b4d5afe
+ms.sourcegitcommit: d159dbd8e1a35268468156eb9c5a5f218cdace4c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74460778"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84274612"
 ---
-# <a name="docker-on-ubuntu-and-rhel-on-premises"></a>Docker sur Ubuntu et RHEL (local)
+# <a name="docker-on-linux-on-premises"></a>Ancrage sur Linux sur site
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
-Vous pouvez configurer le chargement automatique des journaux pour des rapports continus dans Cloud App Security à l’aide d’un Docker sur un serveur Ubuntu ou RHEL local.
+Vous pouvez configurer le chargement automatique des journaux pour des rapports continus dans Cloud App Security à l’aide d’un Dockeur sur un serveur Ubuntu, Red Hat Enterprise Linux (RHEL) ou CentOS local.
 
-## <a name="technical-requirements"></a>Spécifications techniques
+## <a name="prerequisites"></a>Prérequis
 
-* Système d’exploitation : Ubuntu 14,04, 16,04 et 18,04 ; RHEL 7,2 ou version ultérieure, ou CentOS 7,2 ou version ultérieure 
+* Système d’exploitation :
+    * Ubuntu 14,04, 16,04 et 18,04
+    * RHEL 7,2 ou version ultérieure
+    * CentOS 7,2 ou version ultérieure
 
 * Espace disque : 250 Go
 
@@ -53,7 +56,7 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
 
 * Bande passante réseau - Votre bande passante réseau détermine la vitesse de chargement des journaux.
 
-* Performances d’E/S de la machine virtuelle - Détermine la vitesse à laquelle les journaux sont écrits sur le disque du collecteur de journaux. Le collecteur de journaux dispose d’un mécanisme de sécurité intégré qui surveille le débit auquel les journaux arrivent et le compare au débit de chargement. En cas de congestion, le collecteur de journaux commence à supprimer des fichiers journaux. Si votre configuration dépasse généralement 50 Go par heure, nous vous recommandons de diviser le trafic entre plusieurs collecteurs de journaux.
+* Performances d’e/s de la machine virtuelle : détermine la vitesse à laquelle les journaux sont écrits sur le disque du collecteur de journaux. Le collecteur de journaux dispose d’un mécanisme de sécurité intégré qui surveille le débit auquel les journaux arrivent et le compare au débit de chargement. En cas de congestion, le collecteur de journaux commence à supprimer des fichiers journaux. Si votre configuration dépasse généralement 50 Go par heure, nous vous recommandons de diviser le trafic entre plusieurs collecteurs de journaux.
 
 ## <a name="set-up-and-configuration"></a>Installation et configuration  
 
@@ -68,7 +71,7 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
 1. Pour chaque pare-feu ou proxy à partir duquel vous souhaitez charger des journaux, créez une source de données correspondante.
 
     1. Cliquez sur **Ajouter une source de données**.  
-    ![ajouter une source de données](media/add-data-source.png)
+    ![Ajouter une source de données](media/add-data-source.png)
     1. **Nommez** votre proxy ou pare-feu.  
     ![ubuntu1](media/ubuntu1.png)
     1. Sélectionnez l’appareil dans la liste **Source**. Si vous sélectionnez **Format de journal personnalisé** pour utiliser une appliance réseau qui n’est pas listée, consultez [Utilisation de l’analyseur de journal personnalisé](custom-log-parser.md) pour obtenir des instructions de configuration.
@@ -86,7 +89,7 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
 1. Accédez à l’onglet **Collecteurs de journaux** en haut.
 
     1. Cliquez sur **Ajouter un collecteur de journaux**.
-    1. Donnez un **nom** au collecteur de journaux.
+    1. Donnez un **nom**au collecteur de journaux.
     1. Entrez l’**adresse IP de l’hôte** de la machine sur laquelle sera déployé le Docker. L’adresse IP de l’hôte peut être remplacée par le nom de l’ordinateur s’il existe un serveur DNS (ou un équivalent) qui résout le nom d’hôte.
     1. Sélectionnez toutes les **sources de données** que vous souhaitez connecter au collecteur, puis cliquez sur **mettre à jour** pour enregistrer la configuration.
 
@@ -141,11 +144,11 @@ La procédure suivante décrit le déploiement dans Ubuntu. Les étapes de dépl
 1. Vérifiez que le collecteur s’exécute correctement à l’aide de la commande suivante : `docker logs <collector_name>`
 
 Le message suivant doit s’afficher : **terminé !** 
-![ubuntu8](media/ubuntu8.png)
+ ![ ubuntu8](media/ubuntu8.png)
 
 ### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>Étape 3 : Configuration locale de vos appliances réseau
 
-Configurez vos pare-feu et proxys réseau pour exporter régulièrement les journaux vers le port Syslog dédié du répertoire FTP conformément aux instructions données dans la boîte de dialogue. Exemple :
+Configurez vos pare-feu et proxys réseau pour exporter régulièrement les journaux vers le port Syslog dédié du répertoire FTP conformément aux instructions données dans la boîte de dialogue. Par exemple :
 
 ```bash
 BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\

@@ -12,12 +12,12 @@ ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
-ms.openlocfilehash: 32052630526fcd15114399e2295ca9a111233050
-ms.sourcegitcommit: ecb1835d1cd880de38f32ce7a7031b0015f3cae5
+ms.openlocfilehash: ddbcbbe72c83f926b8307904a9d5e2bb2731dcba
+ms.sourcegitcommit: 5822fcdb1433a6a26195692b05aed160bc339656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81241446"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84275793"
 ---
 # <a name="onboard-and-deploy-conditional-access-app-control-for-any-app"></a>Intégration et déploiement de contrôle d’application par accès conditionnel pour n’importe quelle application
 
@@ -37,10 +37,10 @@ Pour obtenir la liste des applications qui sont proposées par Cloud App Securit
 - Les applications doivent être configurées avec l’authentification unique
 - Les applications doivent utiliser l’un des protocoles d’authentification suivants :
 
-    |Fournisseur d’identité (IdP)|Protocoles|
+    |Fournisseur d’identité|Protocoles|
     |---|---|
-    |Azure AD|SAML 2,0 ou OpenID Connect|
-    |Autres|SAML 2.0|
+    |Azure AD|SAML 2.0 ou OpenID Connect|
+    |Autre|SAML 2.0|
 
 ## <a name="to-deploy-any-app"></a>Pour déployer une application
 
@@ -67,7 +67,7 @@ Procédez comme suit pour configurer une application devant être contrôlée pa
 
 Utilisez les étapes suivantes pour créer une stratégie d’accès conditionnel Azure AD qui achemine les sessions d’application vers Cloud App Security. Pour d’autres solutions IdP, consultez [configurer l’intégration avec d’autres solutions IDP](#configure-integration-with-other-idp-solutions).
 
-1. Dans Azure ad, accédez à **sécurité** > **accès conditionnel**.
+1. Dans Azure ad, accédez à **sécurité**  >  **accès conditionnel**.
 
 1. Dans le volet **accès conditionnel** , dans la barre d’outils située en haut, cliquez sur **nouvelle stratégie**.
 
@@ -89,7 +89,7 @@ Utilisez les étapes suivantes pour créer une stratégie d’accès conditionne
 
 Suivez les étapes ci-dessous pour acheminer des sessions d’application d’autres solutions IdP vers Cloud App Security. Pour Azure AD, consultez [configurer l’intégration avec Azure ad](#configure-integration-with-azure-ad).
 
-1. Dans > Cloud App Security, accédez à **examiner** > **applications connectées****contrôle d’application par accès conditionnel applications**.
+1. Dans Cloud App Security, accédez à **examiner**  >  **applications connectées**  >  **contrôle d’application par accès conditionnel applications**.
 
 1. Cliquez sur le signe plus, puis dans la fenêtre contextuelle, sélectionnez l’application que vous souhaitez déployer, puis cliquez sur **Démarrer l’Assistant**.
 1. Sur la page informations sur l' **application** , remplissez le formulaire à l’aide des informations de la page Configuration de l’authentification unique de votre application, puis cliquez sur **suivant**.
@@ -136,9 +136,11 @@ Suivez les étapes ci-dessous pour acheminer des sessions d’application d’au
     1. Dans le champ URL d’authentification unique, entrez l’URL d’authentification unique que vous avez notée précédemment.
         > [!NOTE]
         > Certains fournisseurs peuvent faire référence à l’URL de l’authentification unique en tant qu' *URL de réponse*.
-    1. Ajoutez les attributs et les valeurs que vous avez notés précédemment aux propriétés des applications.
+    1. Ajoutez les attributs et les valeurs que vous avez notés précédemment aux propriétés de l’application.
         > [!NOTE]
-        > Certains fournisseurs peuvent y faire référence en tant qu' *attributs utilisateur* ou *revendications*.
+        >
+        > - Certains fournisseurs peuvent y faire référence en tant qu' *attributs utilisateur* ou *revendications*.
+        > - Lors de la création d’une nouvelle application SAML, le fournisseur d’identité Okta limite les attributs à 1024 caractères. Pour atténuer cette limitation, commencez par créer l’application sans les attributs appropriés. Après avoir créé l’application, modifiez-la, puis ajoutez les attributs appropriés.
     1. Vérifiez que l’identificateur de nom est au format d’adresse de messagerie.
     1. Enregistrez vos paramètres.
 1. Sur la page modifications de l' **application** , procédez comme suit, puis cliquez sur **suivant**. Vous aurez besoin des informations de l’étape suivante.
@@ -167,7 +169,7 @@ Suivez les étapes ci-dessous pour acheminer des sessions d’application d’au
 
 ## <a name="step-3-configure-the-app-that-you-are-deploying"></a>Étape 3 : configurer l’application que vous déployez<a name="conf-app"></a>
 
-Accédez à l’application que vous déployez. La page que vous voyez varie selon que l’application est reconnue ou non. Effectuez l'une des opérations suivantes :
+Accédez à l’application que vous déployez. La page que vous voyez varie selon que l’application est reconnue ou non. Effectuez l’une des opérations suivantes :
 
 | État de l’application | Description | Étapes |
 | --- | --- | --- |
@@ -209,7 +211,7 @@ Par exemple, si vous avez configuré une stratégie qui bloque le téléchargeme
     > Pour afficher la liste des domaines configurés dans l’application, cliquez sur **afficher les domaines d’application**.
 1. Dans **domaines définis par l’utilisateur**, entrez tous les domaines que vous souhaitez associer à cette application, puis cliquez sur **Enregistrer**.
     > [!NOTE]
-    > Vous pouvez utiliser le caractère générique * en tant qu’espace réservé pour n’importe quel caractère. Lorsque vous ajoutez des domaines, déterminez si vous souhaitez ajouter des`sub1.contoso.com`domaines`sub2.contoso.com`spécifiques (,) ou`*.contoso.com`plusieurs domaines ().
+    > Vous pouvez utiliser le caractère générique * en tant qu’espace réservé pour n’importe quel caractère. Lorsque vous ajoutez des domaines, déterminez si vous souhaitez ajouter des domaines spécifiques ( `sub1.contoso.com` , `sub2.contoso.com` ) ou plusieurs domaines ( `*.contoso.com` ).
 
 ### <a name="to-install-root-certificates"></a>Pour installer des certificats racines<a name="install-certs"></a>
 
@@ -250,7 +252,7 @@ Une fois que vous êtes prêt à activer l’application en vue de son utilisati
 
 1. Dans Azure AD, sous **sécurité**, cliquez sur **accès conditionnel**.
 1. Mettez à jour la stratégie que vous avez créée précédemment pour inclure les utilisateurs, les groupes et les contrôles appropriés dont vous avez besoin.
-1. Sous **session** > **utiliser contrôle d’application par accès conditionnel**, si vous avez sélectionné **utiliser une stratégie personnalisée**, accédez à Cloud App Security et créez une stratégie de session correspondante. Pour plus d’informations, consultez [Stratégies de session](session-policy-aad.md).
+1. Sous **session**  >  **utiliser contrôle d’application par accès conditionnel**, si vous avez sélectionné **utiliser une stratégie personnalisée**, accédez à Cloud App Security et créez une stratégie de session correspondante. Pour plus d’informations, consultez [Stratégies de session](session-policy-aad.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 
