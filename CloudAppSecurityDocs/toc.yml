@@ -123,11 +123,11 @@
               href: create-snapshot-cloud-discovery-reports.md
             - name: Configurer le chargement automatique des journaux pour des rapports continus
               href: discovery-docker.md
-            - name: Docker sur Windows
+            - name: Docker sur Windows en local
               href: discovery-docker-windows.md
-            - name: Docker sur Ubuntu et RHEL localement
+            - name: Docker sur Linux en local
               href: discovery-docker-ubuntu.md
-            - name: Docker sur Ubuntu dans Azure
+            - name: Docker sur Linux dans Azure
               href: discovery-docker-ubuntu-azure.md
             - name: Configuration FTP du collecteur de journaux
               href: log-collector-ftp.md
