@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: 4c85117dfd4080946fa5e1a205ec9fc890dea199
-ms.sourcegitcommit: 0b929f7c8feed7dfb40d5294179fd5c6fc079614
+ms.openlocfilehash: dac3da3d91df0d75d57a29fa463705a1561f9ef9
+ms.sourcegitcommit: 6886d285601955f0efc7acf980c9d4740ff873fe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "79241818"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "84250641"
 ---
 # <a name="tutorial-discover-and-manage-shadow-it-in-your-network"></a>Tutoriel : Découvrir et gérer le Shadow IT
 
@@ -81,6 +81,10 @@ Maintenant que Cloud Discovery s’exécute sur votre réseau, examinez les rapp
 ### <a name="phase-3-manage-your-apps"></a>Phase 3 : Gérer vos applications
 
 * **Gérer les applications cloud** : Cloud App Security vous aide à gérer l’utilisation des applications dans votre organisation. Une fois que vous aurez identifié les différentes caractéristiques et les différents comportements qui ont cours dans votre organisation, vous pourrez créer de nouvelles balises d’application personnalisées afin de classifier chaque application en fonction de son statut ou de sa justification métier. Ces balises pourront ensuite être utilisées à des fins de supervision spécifiques, par exemple, pour identifier un trafic important à destination d’applications marquées comme étant des applications de stockage cloud risquées. Les balises d’application peuvent être gérées sous **Paramètres de Cloud Discovery** > **Balises d’application**. Ces balises peuvent servir par la suite à filtrer les pages Cloud Discovery et à créer des stratégies à partir de celles-ci.
+
+* **Gérer les applications découvertes à l’aide de la galerie Azure Active Directory (Azure AD)** <a name ="gallery-apps"></a> : Cloud App Security tire également parti de son intégration native avec Azure AD pour vous permettre de gérer vos applications découvertes dans la galerie Azure AD. Pour les applications qui figurent déjà dans la galerie Azure AD, vous pouvez appliquer l’authentification unique et gérer l’application avec Azure AD. Pour ce faire, sur la ligne où l’application appropriée s’affiche, choisissez les trois points à la fin de la ligne, puis **Gérer l’application avec Azure AD**.
+
+    ![Cycle de vie du Shadow IT](media/manage-app-in-azure-ad-gallery.png)
 
 * **Supervision continue** : Après avoir mené une enquête minutieuse sur les applications, vous pouvez souhaiter définir des stratégies en vue de superviser ces applications et en assurer le contrôle, si nécessaire.
 

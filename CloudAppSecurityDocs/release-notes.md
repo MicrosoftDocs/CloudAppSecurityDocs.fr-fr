@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0ab614ab612fc628b42780d11beba4e0f57f0ad4
-ms.sourcegitcommit: bea164d19469c0a7ef9bc47b128f3ba0b1b14591
+ms.openlocfilehash: 09c2f8ca89a53372f9d40190c430fd4be1615612
+ms.sourcegitcommit: 6886d285601955f0efc7acf980c9d4740ff873fe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83748022"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "84250704"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Nouveautés dans Microsoft Cloud App Security
 
@@ -25,6 +25,31 @@ ms.locfileid: "83748022"
 Cet article est mis à jour fréquemment pour vous informer des nouveautés de la dernière version de Cloud App Security.
 
 Flux RSS : Recevez une notification quand cette page est mise à jour en copiant et collant l’URL suivante dans votre lecteur de flux : `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
+
+## <a name="cloud-app-security-release-176"></a>Cloud App Security version 176
+
+Publication : 31 mai 2020
+
+- **Nouvelle fonctionnalité de confidentialité de l’activité**  
+Nous avons amélioré votre capacité à déterminer de manière granulaire les utilisateurs que vous souhaitez surveiller avec la possibilité de rendre les activités privées. Cette nouvelle fonctionnalité vous permet de spécifier des utilisateurs en fonction de l’appartenance à un groupe dont les activités seront masquées par défaut. Seuls les administrateurs autorisés ont la possibilité de choisir d’afficher ces activités privées, chaque instance étant auditée dans le journal de gouvernance. Pour plus d’informations, consultez [Confidentialité de l’activité](activity-privacy.md).
+
+- **Nouvelle intégration avec la galerie Azure Active Directory (Azure AD)**  
+Nous avons exploité notre intégration native avec Azure AD pour vous permettre d’accéder directement à une application depuis le catalogue d’applications cloud à son application de la galerie Azure AD correspondante, et de la gérer dans la galerie. Pour plus d’informations, consultez [Gérer des applications avec la galerie Azure AD](tutorial-shadow-it.md#gallery-apps).
+
+- **Nouvelle option de commentaires disponible dans les stratégies sélectionnées**  
+Nous souhaitons recevoir vos commentaires et découvrir comment nous pouvons vous aider. Désormais, une nouvelle boîte de dialogue de commentaires vous donne la possibilité de contribuer à améliorer Cloud App Security, lors de la création, de la modification ou de la suppression d’un fichier, de la détection d’anomalies ou d’une stratégie de session.
+
+- **Proxy de suffixe amélioré pour les contrôles de session (déploiement progressif)**  
+À partir du 7 juin 2020, nous déployons progressivement nos contrôles de session de proxy améliorés pour utiliser un suffixe unifié qui n’inclut pas de régions nommées. Par exemple, les utilisateurs verront le suffixe `<AppName>.mcas.ms` au lieu de `<AppName>.<Region>.cas.ms`. Si vous mettez régulièrement des domaines sur liste noire dans vos passerelles ou appliances réseau, assurez-vous d’autoriser tous les domaines répertoriés sous [Contrôles d’accès et de session](network-requirements.md#access-and-session-controls).
+
+- **Améliorations des performances pour les contrôles de session (déploiement progressif)**  
+Nous avons amélioré de manière significative les performances réseau de notre service proxy. Le service amélioré est encore plus rationalisé et fournit une réactivité accrue lors de l’utilisation de contrôles de session.
+
+- **Nouvelle détection d’activité à risque : échec de connexion inhabituel**  
+Nous avons étendu notre fonctionnalité actuelle pour détecter les comportements à risque. La nouvelle détection est désormais prête à l’emploi et automatiquement activée pour vous avertir en cas d’échec inhabituel d’une tentative de connexion. Les échecs inhabituels de tentatives de connexion peuvent indiquer une attaque par force brute potentielle de type *password-spray* (vaporisation) (également appelée méthode *low and slow*). Cette détection a un impact sur le [score de priorité d’investigation](tutorial-ueba.md) global de l’utilisateur.
+
+- **Expérience de tableau améliorée**  
+Nous avons ajouté la possibilité de redimensionner les largeurs de colonne de tableau, afin de pouvoir élargir ou réduire les colonnes, de personnaliser et d’améliorer la façon dont vous affichez les tableaux. Vous avez également la possibilité de restaurer la disposition d’origine en sélectionnant le menu Paramètres du tableau et en choisissant **Largeur par défaut**.
 
 ## <a name="cloud-app-security-release-175"></a>Cloud App Security version 175
 
@@ -36,7 +61,7 @@ Nous avons ajouté une intégration native à Corrata, ce qui vous fournit la vi
 - **Nouveaux analyseurs de journal Cloud Discovery**  
 Cloud App Security Cloud Discovery analyse une large gamme de journaux de trafic pour classer et noter les applications. Cloud Discovery comprend désormais un analyseur de journal intégré pour prendre en charge Corrata et Cisco ASA avec les formats de journaux FirePOWER 6.4. Consultez la liste des analyseurs de journal pris en charge dans [Pare-feu et proxys pris en charge](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
 
-- **Tableau de bord amélioré (lancement progressif)** Dans le cadre de nos améliorations continues de la conception du portail, nous déployons maintenant progressivement le tableau de bord Cloud App Security amélioré. Le tableau de bord, qui a été modernisé sur la base de vos commentaires, offre une expérience utilisateur améliorée avec du contenu et des données mis à jour. Pour plus d’informations, consultez [Déploiement progressif de notre tableau de bord amélioré](daily-activities-to-protect-your-cloud-environment.md#gradual-deployment-of-our-enhanced-dashboard).
+- **Tableau de bord amélioré (lancement progressif)** Dans le cadre de nos améliorations continues de la conception du portail, nous déployons maintenant progressivement le tableau de bord Cloud App Security amélioré. Le tableau de bord, qui a été modernisé sur la base de vos commentaires, offre une expérience utilisateur améliorée avec du contenu et des données mis à jour. Pour plus d’informations, consultez [Déploiement progressif de notre tableau de bord amélioré](daily-activities-to-protect-your-cloud-environment.md).
 
 - **Gouvernance améliorée : Confirmer que l’utilisateur est compromis pour les détections d’anomalies**  
 Nous avons développé nos actions de gouvernance actuelles pour les stratégies de détection des anomalies afin d’inclure **Confirmer que l’utilisateur est compromis** vous permettant de protéger de manière proactive votre environnement contre toute activité suspecte des utilisateurs. Pour plus d’informations, consultez [Actions de gouvernance des activités](governance-actions.md#activity-governance-actions).
