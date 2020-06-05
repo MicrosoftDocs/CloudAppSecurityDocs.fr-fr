@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 65919019460b71907b33ec841b6d7c7b9d4b7143
-ms.sourcegitcommit: 6886d285601955f0efc7acf980c9d4740ff873fe
+ms.openlocfilehash: 75a9c50b91b0aca0183af548bee6d6265be59e96
+ms.sourcegitcommit: b00cf17cc91d7a08cae5a602a6db05269643aa95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "84250738"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84415693"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Protéger les applications avec le Contrôle d’accès conditionnel aux applications Microsoft Cloud App Security
 
@@ -127,7 +127,7 @@ Vous pouvez bloquer l’accès aux applications clientes mobiles natives et de b
 
 ### <a name="session-controls"></a>Contrôles de session
 
-Alors que les contrôles de session sont créés pour fonctionner avec n’importe quel navigateur sur n’importe quelle plateforme principale sur tout système d’exploitation, nous prenons en charge Microsoft Edge (dernière version), Google Chrome (dernière version), Mozilla Firefox (dernière version) ou Apple Safari (dernière version). L’accès aux applications mobiles et de bureau peut également être bloqué ou autorisé.
+Alors que les contrôles de session sont créés pour fonctionner avec n’importe quel navigateur sur n’importe quelle plateforme principale sur tout système d’exploitation, nous prenons en charge [Microsoft Edge](https://www.microsoft.com/edge) (dernière version), Google Chrome (dernière version), Mozilla Firefox (dernière version) ou Apple Safari (dernière version). L’accès aux applications mobiles et de bureau peut également être bloqué ou autorisé.
 
 > [!NOTE]
 > Cloud App Security s’appuie sur les protocoles TLS (Transport Layer Security) 1.2+ pour fournir un chiffrement de pointe. Les applications clientes natives et les navigateurs qui ne prennent pas en charge TLS 1.2 + ne sont pas accessibles lorsqu’ils sont configurés avec le contrôle de session. Toutefois, les applications SaaS qui utilisent TLS 1.1 ou une version antérieure apparaissent dans le navigateur comme utilisant TLS 1.2+ lorsqu’elles sont configurées avec Cloud App Security.
@@ -163,7 +163,7 @@ Alors que les contrôles de session sont créés pour fonctionner avec n’impor
 - Workplace by Facebook
 - Yammer (préversion)
 
-### <a name="office-365-featured-apps"></a><a id="O365-apps" />Applications Office 365 proposées
+### <a name="office-365-featured-apps"></a><a name="O365-apps"></a>Applications Office 365 proposées
 
 La liste suivante répertorie les applications proposées qui sont prises en charge dans Office 365 Cloud App Security. Pour utiliser ces applications avec Cloud App Security, vous devez disposer d’une licence Office 365 E5.
 
@@ -179,7 +179,7 @@ Si vous êtes intéressé par une application spécifique, [envoyez-nous des inf
 ## <a name="next-steps"></a>Étapes suivantes
 
 > [!div class="nextstepaction"]
-> [Déployer le contrôle d’application par accès conditionnel pour les applications à la une](proxy-deployment-aad.md)
+> [Déployer le contrôle d’application par accès conditionnel pour les applications proposées](proxy-deployment-aad.md)
 
 > [!div class="nextstepaction"]
 > [Déployer le contrôle d’application par accès conditionnel pour tous les types d’applications](proxy-deployment-any-app.md)
