@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 06a85abdda78f4f3b160b63198871dfb7f68db84
-ms.sourcegitcommit: a166b85d5c91c48032cf133655471aec1ed88a0f
+ms.openlocfilehash: 6369646c8b4cd10e1b2c236369693f4e8c92d878
+ms.sourcegitcommit: ffc8f6053418d20f2394dc6645e043c9db582e6b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81662395"
+ms.lasthandoff: 06/07/2020
+ms.locfileid: "84486298"
 ---
 # <a name="azure-information-protection-integration"></a>Intégration d’Azure Information Protection
 
@@ -84,10 +84,10 @@ Il vous suffit de cocher une seule case pour intégrer Azure Information Protect
 
 Pour permettre à Cloud App Security d’analyser des fichiers quand l’inspection du contenu est activée pour les étiquettes de classification :
 
-1. Dans Cloud App Security, sous l’icône de roue dentée des paramètres, sélectionnez la page **Paramètres** sous le titre **Système**.
+1. Dans Cloud App Security, sous la roue dentée Paramètres, sélectionnez la page **Paramètres** sous l’en-tête **Système**.
 
-    ![Menu Paramètres](media/azip-system-settings.png)
-1. Sous **Azure information protection**, sélectionnez **analyser automatiquement les nouveaux fichiers pour Azure information protection étiquettes de classification**.
+    ![menu Paramètres](media/azip-system-settings.png)
+1. Sous **Azure Information Protection**, sélectionnez **Analyser automatiquement les nouveaux fichiers pour détecter les étiquettes de classification Azure Information Protection**.
 
     ![activer azure information protection](media/enable-azip.png)
 
@@ -124,7 +124,7 @@ Pour ignorer les étiquettes de classification définies en externe à votre org
 > [!NOTE]
 > Seules sont supprimables les étiquettes qui ne comportent pas de protection et ont été appliquées dans Cloud App Security, et non celles qui ont été appliquées directement dans Information Protection.
 
-Pour plus d’informations sur la façon dont Cloud App Security et Azure Information Protection fonctionnent ensemble, consultez [protéger les données contre les erreurs des utilisateurs](https://docs.microsoft.com/enterprise-mobility-security/solutions/protect-data-user-mistake).
+Pour plus d’informations sur la façon dont Cloud App Security et Azure Information Protection fonctionnent ensemble, consultez [appliquer automatiquement des étiquettes de classification Azure information protection](use-case-information-protection.md).
 
 ### <a name="automatically-label-files"></a>Étiqueter automatiquement des fichiers
 
@@ -187,7 +187,7 @@ En savoir plus sur [Azure Information Protection](https://docs.microsoft.com/inf
 ## <a name="next-steps"></a>Étapes suivantes
 
 > [!div class="nextstepaction"]
-> [Contrôler les applications Cloud avec des stratégies](control-cloud-apps-with-policies.md)
+> [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)
 
 ## <a name="related-videos"></a>Vidéos associées
 

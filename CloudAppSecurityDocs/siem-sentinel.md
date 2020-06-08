@@ -13,16 +13,16 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f7664685204a2d2f1965800119c946c85f2cbe49
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: efdfcab2e736abfc300dfdd673a078f340a647dd
+ms.sourcegitcommit: 96981740994aee3661dea8b64b72741099ca6fb9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74460391"
+ms.lasthandoff: 06/07/2020
+ms.locfileid: "84485975"
 ---
 # <a name="azure-sentinel-integration-preview"></a>Intégration d’Azure Sentinel (version préliminaire)
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Vous pouvez intégrer des Microsoft Cloud App Security avec Azure Sentinel (une SIEM et une dépassement en base de la base Cloud et de la décoller) pour permettre une surveillance centralisée des alertes et des données de découverte. L’intégration avec Azure Sentinel vous permet de mieux protéger vos applications Cloud tout en conservant votre flux de travail de sécurité habituel, en automatisant les procédures de sécurité et en mettant en corrélation les événements Cloud et locaux.
 
@@ -37,14 +37,14 @@ Les solutions d’intégration supplémentaires sont les suivantes :
 * **Siem génériques** : intégrez Cloud App Security à votre serveur Siem générique. Pour plus d’informations sur l’intégration à une SIEM générique, consultez [intégration Siem générique](siem.md).
 * **API Microsoft Security Graph** : service intermédiaire (ou répartiteur) qui fournit une interface de programmation unique pour connecter plusieurs fournisseurs de sécurité. Pour plus d’informations, consultez [intégration de solutions de sécurité à l’aide de l’API Microsoft Graph Security](https://docs.microsoft.com/graph/security-integration#list-of-connectors-from-microsoft).
 
-## <a name="how-to-integrate"></a>Procédure d’intégration
+## <a name="how-to-integrate"></a>Processus d’intégration
 
 L’intégration à votre serveur SIEM s’effectue en deux étapes :
 
 1. Configurez-le dans Cloud App Security.
 1. Configurez-le dans Azure Sentinel.
 
-### <a name="prerequisites"></a>Conditions préalables
+### <a name="prerequisites"></a>Prérequis
 
 Pour une intégration avec Azure Sentinel :
 
@@ -55,7 +55,7 @@ Pour une intégration avec Azure Sentinel :
 
 1. Dans le portail Cloud App Security, sous **paramètres** roue dentée, cliquez sur **extensions de sécurité**.
 
-1. Dans l’onglet **agents Siem** , cliquez sur ajouter ( **+** ), puis choisissez **Azure Sentinel**.
+1. Dans l’onglet **agents Siem** , cliquez sur Ajouter ( **+** ), puis choisissez **Azure Sentinel**.
 
     ![Capture d’écran montrant le menu Ajouter une intégration SIEM](media/siem0.png)
 
@@ -65,12 +65,12 @@ Pour une intégration avec Azure Sentinel :
 
     ![Capture d’écran montrant la page de démarrage de configurer l’intégration d’Azure Sentinel](media/siem-sentinel-configuration.png)
 
-1. Cliquez sur **suivant**, puis passez à Azure Sentinel pour finaliser l’intégration. Pour plus d’informations sur la configuration d’Azure Sentinel, consultez [https://docs.microsoft.com/azure/sentinel/connect-cloud-app-security](https://docs.microsoft.com/azure/sentinel/connect-cloud-app-security).
+1. Cliquez sur **suivant**, puis passez à Azure Sentinel pour finaliser l’intégration. Pour plus d’informations sur la configuration d’Azure Sentinel, consultez [https://docs.microsoft.com/azure/sentinel/connect-cloud-app-security](https://docs.microsoft.com/azure/sentinel/connect-cloud-app-security) .
 
     ![Capture d’écran montrant la page terminer de configurer l’intégration d’Azure Sentinel](media/siem-sentinel-configuration-complete.png)
 
 > [!NOTE]
-> Les journaux de découverte vont commencer à être transférés à Azure Sentinel dans les 15 minutes suivant leur configuration dans le portail Cloud App Security.
+> Les nouveaux journaux de découverte démarreront le transfert vers Azure Sentinel dans les 15 minutes qui vous permettront de les configurer dans le portail de Cloud App Security.
 
 ## <a name="alerts-and-discovery-logs-in-azure-sentinel"></a>Alertes et journaux de découverte dans Azure Sentinel
 
@@ -78,10 +78,10 @@ Une fois l’intégration terminée, vous pouvez afficher Cloud App Security les
 
 Dans Azure Sentinel, sous **journaux**, sous **Insights de sécurité**, vous trouverez les journaux des types de données Cloud App Security, comme suit :
 
-| Type de données | Table |
+| Type de données | Table de charge de travail |
 | --- | --- |
 | Journaux de découverte | McasShadowItReporting |
-| Alerts | SecurityAlert |
+| Alertes | SecurityAlert |
 
 Le tableau suivant décrit chaque champ dans le schéma **McasShadowItReporting** :
 
@@ -91,19 +91,19 @@ Le tableau suivant décrit chaque champ dans le schéma **McasShadowItReporting*
 | SourceSystem | String | Système source – valeur statique | Azure |
 | TimeGenerated [UTC] | DateTime | Date des données de découverte | 2019-07-23T11:00:35.858 Z |
 | StreamName | String | Nom du flux spécifique | Service marketing |
-| TotalEvents | Entier | Nombre total d’événements par session | 122 |
-| BlockedEvents | Entier | Nombre d’événements bloqués | 0 |
-| UploadedBytes | Entier | Quantité de données chargées | 1 514 874 |
-| TotalBytes | Entier | Quantité totale de données | 4 067 785 |
-| DownloadedBytes | Entier | Quantité de données téléchargées | 2 552 911 |
+| TotalEvents | Integer | Nombre total d’événements par session | 122 |
+| BlockedEvents | Integer | Nombre d’événements bloqués | 0 |
+| UploadedBytes | Integer | Quantité de données chargées | 1 514 874 |
+| TotalBytes | Integer | Quantité totale de données | 4 067 785 |
+| DownloadedBytes | Integer | Quantité de données téléchargées | 2 552 911 |
 | IpAddress | String | Adresse IP source | 127.0.0.0 |
-| UserName | String | Nom d’utilisateur | `Raegan@contoso.com` |
+| UserName | String | Nom d'utilisateur | `Raegan@contoso.com` |
 | EnrichedUserName | String | Nom d’utilisateur enrichi avec Azure AD nom d’utilisateur | `Raegan@contoso.com` |
 | AppName | String | Nom de l’application Cloud | Microsoft OneDrive Entreprise |
-| AppId | Entier | Identificateur d’application Cloud | 15600 |
-| AppCategory | String | Catégorie d’application Cloud | Stockage dans le cloud |
-| AppTags | Table de chaînes | Balises intégrées et personnalisées définies pour l’application | [« approuvé »] |
-| AppScore | Entier | Le score de risque de l’application dans une échelle de 0-10, 10 étant un score pour une application non risquée | 10 |
+| AppId | Integer | Identificateur d’application Cloud | 15600 |
+| AppCategory | String | Catégorie d’application Cloud | Stockage cloud |
+| AppTags | Tableau de chaînes | Balises intégrées et personnalisées définies pour l’application | [« approuvé »] |
+| AppScore | Integer | Le score de risque de l’application dans une échelle de 0-10, 10 étant un score pour une application non risquée | 10 |
 | Type | String | Type de journaux – valeur statique | McasShadowItReporting |
 
 ## <a name="use-power-bi-with-cloud-app-security-data-in-azure-sentinel"></a>Utiliser Power BI avec les données Cloud App Security dans Azure Sentinel

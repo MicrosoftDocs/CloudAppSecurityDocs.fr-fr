@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 04/19/2020
+ms.date: 06/07/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: e828181c52b10c80e2e94d5e871c13ef444d45c3
-ms.sourcegitcommit: a166b85d5c91c48032cf133655471aec1ed88a0f
+ms.openlocfilehash: 0965c492c7f837810bc68b2b97645e89bdd03e75
+ms.sourcegitcommit: ffc8f6053418d20f2394dc6645e043c9db582e6b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81662229"
+ms.lasthandoff: 06/07/2020
+ms.locfileid: "84486305"
 ---
 # <a name="manage-admin-access"></a>Gérer l’accès administrateur
 
@@ -54,6 +54,9 @@ Par défaut, les rôles d’administrateur Office 365 et [Azure Active Directory
   - Accès et modification de l’agent SIEM
 
 - **Lecteur global :** Dispose d’un accès complet en lecture seule à tous les aspects de Microsoft Cloud App Security. Impossible de modifier des paramètres ou d’effectuer des actions.
+
+> [!NOTE]
+> Les rôles Office 365 et Azure AD ne sont pas listés dans la page **gérer l’accès administrateur** .
 
 En outre, les Cloud App Security rôles d’administrateur spécifiques suivants peuvent être configurés dans le portail Cloud App Security :
 
@@ -129,7 +132,7 @@ Vous pouvez ajouter des administrateurs à Cloud App Security sans ajouter d’u
 
 ## <a name="admin-activity-auditing"></a>Audit des activités d’administration
 
-Cloud App Security vous permet d’exporter un journal de toutes les activités d’administration, y compris l’audit d’un administrateur qui examine un utilisateur spécifique ou affiche des alertes spécifiques.
+Cloud App Security vous permet d’exporter un journal des activités de connexion administrateur et un audit des affichages d’un utilisateur spécifique ou des alertes effectuées dans le cadre d’une investigation.
 
 Pour exporter un journal, procédez comme suit :
 

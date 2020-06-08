@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c4f914fed75e30aca3b9d87d911c729dff0b77c0
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: a4ea4e8e49cd2787a2c571cd8bbc9bc8f438e72b
+ms.sourcegitcommit: ffc8f6053418d20f2394dc6645e043c9db582e6b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74719931"
+ms.lasthandoff: 06/07/2020
+ms.locfileid: "84486326"
 ---
-# <a name="investigate"></a>Investiguer
+# <a name="investigate"></a>Examiner
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Une fois que Microsoft Cloud App Security est exécuté dans votre environnement cloud, vous avez besoin d’une phase d’apprentissage et d’investigation. Apprenez à utiliser les outils Microsoft Cloud App Security pour mieux comprendre ce qui se passe dans votre environnement cloud. Selon les spécificités de votre environnement et la façon dont il est utilisé, vous pouvez identifier les exigences relatives à la protection de votre organisation. Cet article décrit comment effectuer une investigation pour mieux comprendre l’environnement cloud.
 
@@ -31,7 +31,7 @@ Une fois que Microsoft Cloud App Security est exécuté dans votre environnement
 
 Les tableaux de bord suivants sont disponibles pour vous aider à étudier les applications de votre environnement cloud :
 
-|Dashboard|Description|
+|tableau de bord|Description|
 |---------------|-----------------|
 |Tableau de bord principal|Vue d’ensemble de l’état du Cloud (utilisateurs, fichiers, activités) et actions requises (alertes, violations d’activité et violations de contenu).|
 |Tableau de bord de l’application : vue d’ensemble|Vue d’ensemble de l’utilisation de l’application par emplacement, graphiques d’utilisation par nombre d’utilisateurs.|
@@ -49,7 +49,7 @@ Les tableaux de bord suivants sont disponibles pour vous aider à étudier les a
 *(Salesforce uniquement)*|Vue d’ensemble des utilisateurs par type d’utilisateur privilégié.|
 |Tableau de bord Utilisateur|Vue d’ensemble complète du profil utilisateur dans le Cloud, emplacements, activités récentes, alertes associées.|
 
-## <a name="a-namesanctionapp-tag-apps-as-sanctioned-or-unsanctioned"></a><a name="sanctionapp" />marquer les applications comme approuvées ou non approuvées
+## <a name="tag-apps-as-sanctioned-or-unsanctioned"></a><a name="sanctionapp"></a>Baliser les applications comme approuvées ou non approuvées
 
 Le marquage des applications comme approuvées ou non est une étape importante pour comprendre votre cloud. Une fois que vous avez approuvé une application, vous pouvez filtrer les applications qui ne sont pas approuvées et lancer une migration vers des applications approuvées du même type.
 
@@ -127,7 +127,7 @@ Le marquage des applications comme approuvées ou non est une étape importante 
 
     - Pour les solutions alternatives, voulez-vous rendre non approuvées des applications cloud dans votre organisation ?
 
-    - Certaines applications cloud sont-elles utilisées, alors qu’elles ne sont pas conformes à la stratégie de votre organisation ?
+    - Existe-t-il des applications Cloud qui sont utilisées mais qui ne sont pas conformes à la stratégie de votre organisation ?
 
 ## <a name="sample-investigation"></a>Exemple d’examen
 
@@ -137,13 +137,13 @@ Partons du principe que vous pensez ne pas avoir d’accès à votre environneme
 
 2. Choisissez la **stratégie d’activité** correspondant au **Type**.
 
-3. À la fin de la ligne **Connexion depuis une adresse IP à risque**, choisissez le signe plus ( **+** ) pour créer une stratégie.
+3. À la fin de la ligne **Connexion depuis une adresse IP à risque**, choisissez le signe plus (**+**) pour créer une stratégie.
 
 4. Changez le nom de la stratégie pour pouvoir l’identifier.
 
 5. Sous **Activités remplissant toutes les conditions suivantes**, choisissez **+** pour ajouter un filtre. Faites défiler jusqu’à **Balises IP**, puis choisissez **Tor**.
 
-    ![Exemple de stratégie pour les adresses IP à risque](media/example-policy-risky-ips.png "exemple de stratégie, adresses IP risquées")
+    ![Exemple de stratégie pour les adresses IP à risques](media/example-policy-risky-ips.png "exemple de stratégie, adresses IP risquées")
 
 Maintenant que la stratégie est en place, vous vous étonnez de voir que vous recevez une alerte indiquant que la stratégie a été violée.
 
