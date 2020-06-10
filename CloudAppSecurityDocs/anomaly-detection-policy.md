@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9ee57badde1ca055f3743a71cb9197e301cf724b
-ms.sourcegitcommit: ac4b95969a468a740a6d3606392151f1c019148e
+ms.openlocfilehash: 5b4691cdc29199d65b6ac0a2884b8b5a82263c5e
+ms.sourcegitcommit: 33e4b39d56256e54bc6e74ca45a03055484916d9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "82200570"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84566978"
 ---
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>Obtenir instantanément une détection des anomalies et une analytique comportementale
 
@@ -45,11 +45,11 @@ Selon les résultats de la stratégie, des alertes de sécurité sont déclench�
 Outre les alertes de Cloud App Security natives, vous obtiendrez également les alertes de détection suivantes basées sur les informations reçues de la protection d’identité des Azure Active Directory (AD) :
 
 * Informations d’identification divulguées : déclenché lorsque les informations d’identification valides d’un utilisateur ont été divulguées. Pour plus d’informations, consultez [détection des informations d’identification divulguées de Azure ad](/azure/active-directory/identity-protection/concept-identity-protection-risks#user-risk).
-* Connexion risquée : combine un certain nombre de détections de connexion Azure AD Identity Protection en une seule détection (désactivée par défaut). Pour plus d’informations, consultez [détection des risques de connexion de Azure ad](/azure/active-directory/identity-protection/concept-identity-protection-risks#sign-in-risk).
+* Connexion risquée : combine un certain nombre de détections de connexion Azure AD Identity Protection en une seule détection. Pour plus d’informations, consultez [détection des risques de connexion de Azure ad](/azure/active-directory/identity-protection/concept-identity-protection-risks#sign-in-risk).
 
 Ces stratégies s’affichent dans la page Cloud App Security les stratégies et peuvent être activées ou désactivées, mais pas modifiées.
 
-## <a name="anomaly-detection-policies"></a>Stratégies de détection des anomalies
+## <a name="anomaly-detection-policies"></a>Stratégie de détection des anomalies
 
 Vous pouvez afficher les stratégies de détection des anomalies dans le portail en cliquant sur **Contrôle**, puis sur **Stratégies**. Sélectionnez **Stratégie de détection d’anomalie** pour le type de stratégie.
 
@@ -84,7 +84,7 @@ Les stratégies de détection d’anomalie suivantes sont disponibles :
 
 * Cette détection identifie que les utilisateurs étaient actifs depuis une adresse IP qui a été identifiée comme une adresse IP de proxy anonyme. Ces proxys sont utilisés par les personnes qui souhaitent masquer l’adresse IP de leur appareil et peuvent être utilisés à des fins malveillantes. Cette détection utilise un algorithme d’apprentissage automatique qui réduit les « faux positifs », comme les adresses IP mal balisées qui sont couramment utilisées par les utilisateurs de l’organisation.
 
-### <a name="ransomware-activity"></a>Activité de ransomware
+### <a name="ransomware-activity"></a>Activité ransomware
 
 * Cloud App Security a étendu ses fonctionnalités de détection de ransomware à la détection d’anomalies pour garantir une couverture plus complète contre les attaques par ransomware sophistiqué. Grâce à notre expertise en matière de recherche sur la sécurité pour identifier des modèles de comportement qui reflètent l’activité des ransomware, Cloud App Security garantit une protection holistique et robuste. Si Cloud App Security identifie, par exemple, un taux élevé de chargements de fichiers ou d’activités de suppression de fichiers, cela peut représenter un processus de chiffrement indésirable. Ces données sont collectées dans les journaux reçus des API connectées, puis combinées avec des modèles comportementaux appris et des informations sur les menaces, par exemple, des extensions de ransomware. Pour plus d’informations sur la manière dont Cloud App Security détecte les ransomwares, consultez [Protection de votre organisation contre les ransomwares](use-case-ransomware.md).
 
@@ -150,23 +150,23 @@ Vous pouvez lancer des actions de correction automatisées sur les alertes gén�
 1. Dans la fenêtre **Modifier la stratégie de détection d’anomalie** qui s’ouvre, sous **Gouvernance**, définissez les actions de correction que vous souhaitez pour chaque application connectée ou pour toutes les applications.
 1. Cliquez sur **Update**.
 
-## <a name="tune-anomaly-detection-policies"></a>Paramétrer des stratégies de détection d’anomalie
+## <a name="tune-anomaly-detection-policies"></a>Paramétrage des stratégies de détection d’anomalie
 
 Pour que le moteur de détection d’anomalie supprime ou déclenche des alertes en fonction de vos préférences :
 
-* Dans la stratégie de voyage impossible, vous pouvez définir le curseur de sensibilité afin de déterminer le niveau de comportement anormal nécessaire pour déclencher une alerte. Par exemple, si vous la définissez sur faible, cela supprime les alertes de voyage impossibles à partir des emplacements communs d’un utilisateur et, si vous la définissez sur élevé, cela entraîne des alertes. Vous pouvez choisir parmi les niveaux de sensibilité suivants :
+* Dans la stratégie de voyage impossible, vous pouvez définir le curseur de sensibilité afin de déterminer le niveau de comportement anormal nécessaire pour déclencher une alerte. Par exemple, si vous la définissez sur faible, cela supprime les alertes de voyage impossibles à partir des emplacements communs d’un utilisateur et, si vous la définissez sur élevé, cela entraîne des alertes. Vous avez le choix entre les niveaux de sensibilité suivants :
 
   * **Faible**: suppressions du système, du locataire et de l’utilisateur
-  * **Moyenne**: suppressions du système et de l’utilisateur
-  * **Haute**: uniquement les suppressions du système
+  * **Moyenne** : Suppression du système et de l’utilisateur
+  * **Élevée** : Suppression du système uniquement
 
-    Où :
+    Où :
 
     | Type de suppression | Description |
     | --- | --- |
     | **Système** | Détections intégrées qui sont toujours supprimées. |
-    | **Locataire** | Activités courantes basées sur l’activité précédente dans le locataire. Par exemple, la suppression d’activités d’un fournisseur de services Internet ayant précédemment été alerté au sein de votre organisation. |
-    | **Utilisateur** | Activités courantes basées sur l’activité précédente de l’utilisateur spécifique. Par exemple, la suppression d’activités à partir d’un emplacement couramment utilisé par l’utilisateur. |
+    | **Locataire** | Activités courantes selon l’historique d’activité dans le locataire. Par exemple, la suppression d’activités d’un fournisseur de services Internet ayant déjà fait l’objet d’une alerte au sein de votre organisation. |
+    | **Utilisateur** | Activités courantes selon l’historique d’activité de l’utilisateur. Par exemple, la suppression d’activités provenant d’un emplacement couramment utilisé par l’utilisateur. |
 
 * Vous pouvez également configurer si les alertes d’activité dans un pays peu fréquent, les adresses IP anonymes, les adresses IP suspectes et le voyage impossible doivent analyser les connexions ayant échoué et celles ayant réussi, ou uniquement les connexions ayant réussi.
 
@@ -180,7 +180,7 @@ Par exemple, sous Activité, vous pouvez définir la détection d’une région 
 
 Pour délimiter une stratégie de détection d’anomalie :
 
-1. Cliquez sur**stratégies**de **contrôle** > et définissez le filtre de **type** sur la stratégie de **détection d’anomalie**.
+1. Cliquez sur stratégies de **contrôle**  >  **Policies**et définissez le filtre de **type** sur la **stratégie de détection d’anomalie**.
 1. Cliquez sur la stratégie que vous souhaitez délimiter.
 1. Sous **Étendue**, dans la liste déroulante, remplacez la valeur par défaut **Tous les utilisateurs et groupes** par **Utilisateurs et groupes spécifiques**.
 1. Sélectionnez **Inclure** pour spécifier les utilisateurs et les groupes auxquels s’applique cette stratégie. Les utilisateurs ou les groupes qui ne sont pas sélectionnés ici ne seront pas considérés comme une menace et ne généreront pas d’alerte.
@@ -194,7 +194,7 @@ Vous pouvez trier rapidement les diverses alertes déclenchées par les nouvelle
 
 1. Dans le **journal d’activité**, vous pouvez ouvrir une activité afin d’afficher son contenu. Cliquez sur **utilisateur** pour afficher l’onglet Insights utilisateur. Cet onglet contient des informations telles que le nombre d’alertes, les activités et l’emplacement à partir duquel ils sont connectés, ce qui est important dans le cas d’une investigation.
 
-    ![détection d’anomalie alert1](media/anomaly-alert-user1.png) ![détection d’anomalies alert1](media/anomaly-alert-user2.png)
+    ![détection d’anomalie alert1 ](media/anomaly-alert-user1.png) ![ détection d’anomalies alert1](media/anomaly-alert-user2.png)
 
 1. Cela vous permet d’identifier les activités suspectes que l’utilisateur a effectuées et d’obtenir ainsi plus d’indices démontrant que le compte a été compromis. Par exemple, une alerte sur plusieurs échecs de connexion peut en effet être suspecte et indiquer une éventuelle attaque par force brute, mais elle peut également signaler un problème de configuration d’application, transformant cette alerte en un « faux positif » bénin. Mais si vous voyez une alerte d’échecs de connexion pour d’autres activités suspectes, la probabilité que le compte est compromis augmente. Dans l’exemple ci-dessous, vous pouvez voir que l’alerte **Plusieurs tentatives de connexion infructueuses** a été suivie par les alertes **Activité à partir d’une adresse IP TOR** et **Activité de type Voyage impossible**, deux indicateurs flagrants d’une compromission (IOCs). Si cela n’était pas suffisamment suspect, vous pouvez voir que le même utilisateur a effectué une **activité de téléchargement de masse**, qui est souvent un indicateur de l’attaquant effectuant l’exfiltration des données.
 

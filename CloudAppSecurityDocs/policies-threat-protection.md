@@ -9,16 +9,16 @@ ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4d945a13f2cab9b11c74dae5aa6ff93eae5f3ba5
-ms.sourcegitcommit: dabfa885ebb82db25a92127d87e8d1283340e834
+ms.openlocfilehash: 0598b9f5131d38edc5b2a0f5683648a294e4db40
+ms.sourcegitcommit: 3f0693bf32fef5b4819c51ca7eeaee751eb03df6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "76020753"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84611220"
 ---
 # <a name="threat-protection-policies"></a>Stratégies de protection contre les menaces
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Cloud App Security vous permet d’identifier les problèmes d’utilisation et de sécurité du Cloud à haut risque, de détecter un comportement anormal des utilisateurs et d’éviter les menaces dans vos applications Cloud approuvées. Bénéficiez d’une visibilité sur les activités des utilisateurs et des administrateurs et définissez des stratégies pour alerter automatiquement lorsque des comportements suspects ou des activités spécifiques que vous considérez comme risquées sont détectés. Sortez de la grande quantité de données de Microsoft Threat Intelligence et de la recherche de sécurité pour vous assurer que vos applications approuvées disposent de tous les contrôles de sécurité dont vous avez besoin et que vous pouvez en garder le contrôle.
 
@@ -29,24 +29,24 @@ Cloud App Security vous permet d’identifier les problèmes d’utilisation et 
 
 Détection automatique de l’accès ou de l’activité des utilisateurs à partir d’emplacements inconnus qui n’ont jamais été visités par une autre personne de votre organisation.
 
-### <a name="prerequisites"></a>Configuration requise
+### <a name="prerequisites"></a>Prérequis
 
 Vous devez disposer d’au moins une application connectée à l’aide de [connecteurs d’application](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) ou intégrée à l’aide du [contrôle d’accès conditionnel aux applications avec des contrôles de session](proxy-deployment-aad.md).
 
 ### <a name="steps"></a>Étapes
 
-Cette détection est automatiquement configurée pour vous avertir en cas d’accès à partir de nouveaux emplacements. Vous n’avez aucune action à effectuer pour configurer cette stratégie. Pour plus d’informations, consultez [Stratégies de détection d’anomalie](anomaly-detection-policy.md).
+Cette détection est automatiquement configurée pour vous avertir en cas d’accès à partir de nouveaux emplacements. Vous n’avez aucune action à effectuer pour configurer cette stratégie. Pour plus d’informations, consultez [Stratégies de détection d'anomalies](anomaly-detection-policy.md).
 
 ## <a name="detect-compromised-account-by-impossible-location-impossible-travel"></a>Détection du compte compromis par emplacement impossible (voyage impossible)
 
 Détection automatique de l’accès ou de l’activité des utilisateurs à partir de 2 emplacements différents au cours d’une période de temps qui est plus rapide que le temps nécessaire pour se déplacer entre les deux.
 
-### <a name="prerequisites"></a>Configuration requise
+### <a name="prerequisites"></a>Prérequis
 
 Vous devez disposer d’au moins une application connectée à l’aide de [connecteurs d’application](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) ou intégrée à l’aide du [contrôle d’accès conditionnel aux applications avec des contrôles de session](proxy-deployment-aad.md).
 ### <a name="steps"></a>Étapes
 
-1. Cette détection est automatiquement configurée pour vous avertir en cas d’accès à partir d’emplacements impossibles. Vous n’avez aucune action à effectuer pour configurer cette stratégie. Pour plus d’informations, consultez [Stratégies de détection d’anomalie](anomaly-detection-policy.md).
+1. Cette détection est automatiquement configurée pour vous avertir en cas d’accès à partir d’emplacements impossibles. Vous n’avez aucune action à effectuer pour configurer cette stratégie. Pour plus d’informations, consultez [Stratégies de détection d'anomalies](anomaly-detection-policy.md).
 2. Facultatif : vous pouvez [personnaliser les stratégies de détection des anomalies](anomaly-detection-policy.md#scope-anomaly-detection-policies):
 
     - Personnaliser l’étendue de détection en termes d’utilisateurs et de groupes
@@ -61,7 +61,7 @@ Vous devez disposer d’au moins une application connectée à l’aide de [conn
 
 Détectez quand un utilisateur, qui est en congé non payé et ne doit pas être actif sur une ressource de l’organisation, accède à l’une des ressources de Cloud de votre organisation.
 
-### <a name="prerequisites"></a>Configuration requise
+### <a name="prerequisites"></a>Prérequis
 
 - Vous devez disposer d’au moins une application connectée à l’aide de [connecteurs d’application](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
@@ -83,7 +83,7 @@ Détectez quand un utilisateur, qui est en congé non payé et ne doit pas être
 
 Détecte quand un utilisateur utilise un navigateur avec une version obsolète du client qui peut poser des problèmes de conformité ou de sécurité à votre organisation.
 
-### <a name="prerequisites"></a>Configuration requise
+### <a name="prerequisites"></a>Prérequis
 
 Vous devez disposer d’au moins une application connectée à l’aide de [connecteurs d’application](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) ou intégrée à l’aide du [contrôle d’accès conditionnel aux applications avec des contrôles de session](proxy-deployment-aad.md).
 
@@ -101,7 +101,7 @@ Vous devez disposer d’au moins une application connectée à l’aide de [conn
 
 Détectez les activités d’administration effectuées à partir de et de l’adresse IP considérée comme une adresse IP à risque et avertissez l’administrateur système pour une investigation plus poussée ou définissez une action de gouvernance sur le compte de l’administrateur.
 
-### <a name="prerequisites"></a>Configuration requise
+### <a name="prerequisites"></a>Prérequis
 
 - Vous devez disposer d’au moins une application connectée à l’aide de [connecteurs d’application](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
@@ -125,7 +125,7 @@ Détectez les activités d’administration effectuées à partir de et de l’a
 
 Détecter les activités de compte de service provenant d’une adresse IP non interne. Cela peut indiquer un comportement suspect ou un compte compromis.
 
-### <a name="prerequisites"></a>Configuration requise
+### <a name="prerequisites"></a>Prérequis
 
 - Vous devez disposer d’au moins une application connectée à l’aide de [connecteurs d’application](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 - Dans la roue dentée paramètres, sélectionnez **plages d’adresses IP** , puis cliquez sur le signe + pour ajouter des plages d’adresses IP pour vos sous-réseaux internes et leurs adresses IP publiques de sortie. Définissez la **catégorie** sur **interne**.
@@ -148,7 +148,7 @@ Détecter les activités de compte de service provenant d’une adresse IP non i
 
 Détectez le moment où un utilisateur accède à un grand nombre de fichiers ou le télécharge sur une brève période.
 
-### <a name="prerequisites"></a>Configuration requise
+### <a name="prerequisites"></a>Prérequis
 
 Vous devez disposer d’au moins une application connectée à l’aide de [connecteurs d’application](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) ou intégrée à l’aide du [contrôle d’accès conditionnel aux applications avec des contrôles de session](proxy-deployment-aad.md).
 
@@ -167,13 +167,13 @@ Vous devez disposer d’au moins une application connectée à l’aide de [conn
 
 Détection automatique de l’activité de ransomware potentiel.
 
-### <a name="prerequisites"></a>Configuration requise
+### <a name="prerequisites"></a>Prérequis
 
 Vous devez disposer d’au moins une application connectée à l’aide de [connecteurs d’application](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
 ### <a name="steps"></a>Étapes
 
-1. Cette détection est automatiquement configurée pour vous avertir en cas de détection d’un risque de ransomware potentiel. Vous n’avez aucune action à effectuer pour configurer cette stratégie. Pour plus d’informations, consultez [Stratégies de détection d’anomalie](anomaly-detection-policy.md).
+1. Cette détection est automatiquement configurée pour vous avertir en cas de détection d’un risque de ransomware potentiel. Vous n’avez aucune action à effectuer pour configurer cette stratégie. Pour plus d’informations, consultez [Stratégies de détection d'anomalies](anomaly-detection-policy.md).
 
 2. Il est possible de configurer l' **étendue** de la détection et de personnaliser les actions de gouvernance à entreprendre lorsqu’une alerte est déclenchée. Pour plus d’informations sur la façon dont Cloud App Security identifie le ransomware, consultez [protection de votre organisation contre les ransomware](use-case-ransomware.md).
 
@@ -184,19 +184,20 @@ Vous devez disposer d’au moins une application connectée à l’aide de [conn
 
 Détectez les fichiers contenant des programmes malveillants dans vos environnements Cloud en utilisant l’intégration de Cloud App Security avec le moteur Threat Intelligence de Microsoft.
 
-### <a name="prerequisites"></a>Configuration requise
+### <a name="prerequisites"></a>Prérequis
 
-Vous devez disposer d’au moins une application connectée à l’aide de [connecteurs d’application](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+- Pour la détection de programmes malveillants Office 365, vous devez disposer d’une licence valide pour Office 365-protection avancée contre les menaces P1.
+- Vous devez disposer d’au moins une application connectée à l’aide de [connecteurs d’application](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
 ### <a name="steps"></a>Étapes
 
-- Cette détection est automatiquement configurée pour vous avertir lorsqu’un fichier peut contenir un programme malveillant. Vous n’avez aucune action à effectuer pour configurer cette stratégie. Pour plus d’informations, consultez [Stratégies de détection d’anomalie](anomaly-detection-policy.md).
+- Cette détection est automatiquement configurée pour vous avertir lorsqu’un fichier peut contenir un programme malveillant. Vous n’avez aucune action à effectuer pour configurer cette stratégie. Pour plus d’informations, consultez [Stratégies de détection d'anomalies](anomaly-detection-policy.md).
 
 ## <a name="detect-rogue-admin-takeover"></a>Détecter la prise en charge des administrateurs non autorisés
 
 Détectez les activités d’administration répétées qui peuvent indiquer des intentions malveillantes.
 
-### <a name="prerequisites"></a>Configuration requise
+### <a name="prerequisites"></a>Prérequis
 
 Vous devez disposer d’au moins une application connectée à l’aide de [connecteurs d’application](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
@@ -217,13 +218,13 @@ Vous devez disposer d’au moins une application connectée à l’aide de [conn
 
 Si une règle de boîte de réception suspecte a été définie sur la boîte de réception d’un utilisateur, cela peut signifier que le compte d’utilisateur est compromis et que la boîte aux lettres est utilisée pour distribuer le courrier indésirable et les logiciels malveillants dans votre organisation.
 
-### <a name="prerequisites"></a>Configuration requise
+### <a name="prerequisites"></a>Prérequis
 
 - Utilisation de Microsoft Exchange pour la messagerie électronique.
 
 ### <a name="steps"></a>Étapes
 
-- Cette détection est automatiquement configurée pour vous avertir lorsqu’il existe un ensemble de règles de boîte de réception suspectes. Vous n’avez aucune action à effectuer pour configurer cette stratégie. Pour plus d’informations, consultez [Stratégies de détection d’anomalie](anomaly-detection-policy.md).
+- Cette détection est automatiquement configurée pour vous avertir lorsqu’il existe un ensemble de règles de boîte de réception suspectes. Vous n’avez aucune action à effectuer pour configurer cette stratégie. Pour plus d’informations, consultez [Stratégies de détection d'anomalies](anomaly-detection-policy.md).
 
 ## <a name="detect-leaked-credentials"></a>Détecter les informations d’identification divulguées
 
@@ -231,25 +232,25 @@ Lorsque les cybercriminels compromettent les mots de passe valides des utilisate
 
 Cloud App Security utilise l’intelligence des menaces de Microsoft pour faire correspondre ces informations d’identification à celles utilisées au sein de votre organisation.
 
-### <a name="prerequisites"></a>Configuration requise
+### <a name="prerequisites"></a>Prérequis
 
 Vous devez disposer d’au moins une application connectée à l’aide de [connecteurs d’application](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
 ### <a name="steps"></a>Étapes
 
-Cette détection est automatiquement configurée pour vous avertir en cas de détection d’une fuite d’informations d’identification. Vous n’avez aucune action à effectuer pour configurer cette stratégie. Pour plus d’informations, consultez [Stratégies de détection d’anomalie](anomaly-detection-policy.md).
+Cette détection est automatiquement configurée pour vous avertir en cas de détection d’une fuite d’informations d’identification. Vous n’avez aucune action à effectuer pour configurer cette stratégie. Pour plus d’informations, consultez [Stratégies de détection d'anomalies](anomaly-detection-policy.md).
 
 ## <a name="detect-anomalous-file-downloads"></a>Détecter les téléchargements de fichiers anormaux
 
 Détecte quand les utilisateurs effectuent plusieurs activités de téléchargement de fichiers dans une seule session, par rapport à la ligne de base apprise. Cela peut indiquer une tentative de violation.
 
-### <a name="prerequisites"></a>Configuration requise
+### <a name="prerequisites"></a>Prérequis
 
 Vous devez disposer d’au moins une application connectée à l’aide de [connecteurs d’application](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) ou intégrée à l’aide du [contrôle d’accès conditionnel aux applications avec des contrôles de session](proxy-deployment-aad.md).
 
 ### <a name="steps"></a>Étapes
 
-1. Cette détection est automatiquement configurée pour vous avertir quand un téléchargement anormal se produit. Vous n’avez aucune action à effectuer pour configurer cette stratégie. Pour plus d’informations, consultez [Stratégies de détection d’anomalie](anomaly-detection-policy.md).
+1. Cette détection est automatiquement configurée pour vous avertir quand un téléchargement anormal se produit. Vous n’avez aucune action à effectuer pour configurer cette stratégie. Pour plus d’informations, consultez [Stratégies de détection d'anomalies](anomaly-detection-policy.md).
 
 2. Il est possible de configurer l’étendue de la détection et de personnaliser l’action à entreprendre lorsqu’une alerte est déclenchée.
 
@@ -257,13 +258,13 @@ Vous devez disposer d’au moins une application connectée à l’aide de [conn
 
 Détectez le moment où les utilisateurs effectuent plusieurs activités de partage de fichiers dans une seule session en ce qui concerne la ligne de base apprise, ce qui peut indiquer une tentative de violation.
 
-### <a name="prerequisites"></a>Configuration requise
+### <a name="prerequisites"></a>Prérequis
 
 Vous devez disposer d’au moins une application connectée à l’aide de [connecteurs d’application](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) ou intégrée à l’aide du [contrôle d’accès conditionnel aux applications avec des contrôles de session](proxy-deployment-aad.md).
 
 ### <a name="steps"></a>Étapes
 
-1. Cette détection est automatiquement configurée pour vous avertir lorsque les utilisateurs effectuent un partage de fichiers multiple. Vous n’avez aucune action à effectuer pour configurer cette stratégie. Pour plus d’informations, consultez [Stratégies de détection d’anomalie](anomaly-detection-policy.md).
+1. Cette détection est automatiquement configurée pour vous avertir lorsque les utilisateurs effectuent un partage de fichiers multiple. Vous n’avez aucune action à effectuer pour configurer cette stratégie. Pour plus d’informations, consultez [Stratégies de détection d'anomalies](anomaly-detection-policy.md).
 
 2. Il est possible de configurer l’étendue de la détection et de personnaliser l’action à entreprendre lorsqu’une alerte est déclenchée.
 
@@ -271,13 +272,13 @@ Vous devez disposer d’au moins une application connectée à l’aide de [conn
 
 Détectez les activités à partir d’un emplacement qui n’a pas été récemment visité ou qui n’a jamais été visité par l’utilisateur ou par un utilisateur de votre organisation.
 
-### <a name="prerequisites"></a>Configuration requise
+### <a name="prerequisites"></a>Prérequis
 
 Vous devez disposer d’au moins une application connectée à l’aide de [connecteurs d’application](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) ou intégrée à l’aide du [contrôle d’accès conditionnel aux applications avec des contrôles de session](proxy-deployment-aad.md).
 
 ### <a name="steps"></a>Étapes
 
-1. Cette détection est automatiquement configurée pour vous avertir quand une activité anormale se produit dans un pays peu fréquent. Vous n’avez aucune action à effectuer pour configurer cette stratégie. Pour plus d’informations, consultez [Stratégies de détection d’anomalie](anomaly-detection-policy.md).
+1. Cette détection est automatiquement configurée pour vous avertir quand une activité anormale se produit dans un pays peu fréquent. Vous n’avez aucune action à effectuer pour configurer cette stratégie. Pour plus d’informations, consultez [Stratégies de détection d'anomalies](anomaly-detection-policy.md).
 
 2. Il est possible de configurer l’étendue de la détection et de personnaliser l’action à entreprendre lorsqu’une alerte est déclenchée.
 
@@ -288,13 +289,13 @@ Vous devez disposer d’au moins une application connectée à l’aide de [conn
 
 Détecte quand un utilisateur qui n’est plus un employé de votre organisation effectue une activité dans une application approuvée. Cela peut indiquer une activité malveillante par un employé qui a terminé l’accès aux ressources de l’entreprise.
 
-### <a name="prerequisites"></a>Configuration requise
+### <a name="prerequisites"></a>Prérequis
 
 Vous devez disposer d’au moins une application connectée à l’aide de [connecteurs d’application](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
 ### <a name="steps"></a>Étapes
 
-1. Cette détection est automatiquement configurée pour vous avertir lorsqu’une activité est effectuée par un employé terminé. Vous n’avez aucune action à effectuer pour configurer cette stratégie. Pour plus d’informations, consultez [Stratégies de détection d’anomalie](anomaly-detection-policy.md).
+1. Cette détection est automatiquement configurée pour vous avertir lorsqu’une activité est effectuée par un employé terminé. Vous n’avez aucune action à effectuer pour configurer cette stratégie. Pour plus d’informations, consultez [Stratégies de détection d'anomalies](anomaly-detection-policy.md).
 
 2. Il est possible de configurer l’étendue de la détection et de personnaliser l’action à entreprendre lorsqu’une alerte est déclenchée.
 

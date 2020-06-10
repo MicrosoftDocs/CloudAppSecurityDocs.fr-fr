@@ -1,6 +1,6 @@
 ---
-title: Guide d’investigation des alertes Cloud App Security
-description: Cet article explique comment examiner les alertes de Cloud App Security émises lorsque des attaques sont détectées contre votre organisation.
+title: Cloud App Security Guide d’enquête sur les alertes de détection d’anomalie
+description: Cet article explique comment analyser les Cloud App Security alertes de détection d’anomalies émises lorsque des attaques sont détectées contre votre organisation.
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -14,14 +14,14 @@ ms.technology: ''
 ms.reviewer: itfalcon
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: e59acc35811b69d30616c32af5876e89e576a2e7
-ms.sourcegitcommit: 9538de5f3034a65626710648d22e2e186d77041a
+ms.openlocfilehash: 15b8a8eab3558443831b415c3d6ddef554879b09
+ms.sourcegitcommit: 33e4b39d56256e54bc6e74ca45a03055484916d9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84512054"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84566921"
 ---
-# <a name="how-to-investigate-anomaly-alerts"></a>Comment examiner les alertes d’anomalies
+# <a name="how-to-investigate-anomaly-detection-alerts"></a>Comment examiner les alertes de détection d’anomalies
 
 *S’applique à : Microsoft Cloud App Security*
 
@@ -29,7 +29,7 @@ Microsoft Cloud App Security fournit des détections et des alertes de sécurit�
 
 ## <a name="mitre-attck"></a>MITRE ATT \& CK
 
-Pour expliquer et faciliter le mappage de la relation entre Cloud App Security alertes et la matrice familière MITRE ATT&CK, nous avons catégorisé les alertes en fonction de la MITRE ATT \& CK correspondante. Grâce à cette référence supplémentaire, il est plus facile de comprendre la technique des attaques suspectes qui peut être utilisée lorsqu’une alerte Cloud App Security est déclenchée.
+Pour expliquer et faciliter le mappage de la relation entre Cloud App Security alertes et la matrice familière MITRE ATT \& CK, nous avons catégorisé les alertes en fonction de la mitre att \& CK correspondante. Grâce à cette référence supplémentaire, il est plus facile de comprendre la technique des attaques suspectes qui peut être utilisée lorsqu’une alerte Cloud App Security est déclenchée.
 
 Ce guide fournit des informations sur l’examen et la correction des Cloud App Security les alertes dans les catégories suivantes.
 
@@ -49,12 +49,12 @@ Ce guide fournit des informations sur l’examen et la correction des Cloud App 
 Après une investigation appropriée, toutes les alertes de Cloud App Security peuvent être classées comme l’un des types d’activité suivants :
 
 - **Vrai positif (TP)**: alerte sur une activité malveillante confirmée.
-- **Vrai positif sans gravité (B-TP)**: alerte sur une activité suspecte mais pas malveillante, comme un test de pénétration ou une autre action suspecte autorisée.
+- **Vrai positif sans gravité (B-TP)**: alerte signalant une activité suspecte, mais pas malveillante, comme un test de pénétration ou une autre action suspecte autorisée.
 - **Faux positif (FP)**: alerte sur une activité non malveillante.
 
 ## <a name="general-investigation-steps"></a>Étapes générales de l’investigation
 
-Vous pouvez utiliser les instructions générales suivantes lorsque vous examinez un type d’alerte pour mieux comprendre la menace potentielle.
+Vous devez suivre les instructions générales suivantes lorsque vous examinez un type d’alerte pour mieux comprendre la menace potentielle avant d’appliquer l’action recommandée.
 
 - Examinez le [score de priorité d’investigation](tutorial-ueba.md#understand-the-investigation-priority-score) de l’utilisateur et comparez-le au reste de l’organisation. Cela vous permettra d’identifier les utilisateurs de votre organisation qui présentent le plus grand risque.
 - Si vous identifiez un **TP**, passez en revue toutes les activités de l’utilisateur pour mieux comprendre l’impact.
@@ -139,7 +139,7 @@ Activité à partir d’une adresse IP qui a été identifiée comme dangereuse 
 
 Activité du même utilisateur dans différents emplacements au cours d’une période qui est plus petite que le temps de trajet attendu entre les deux emplacements. Cela peut indiquer une violation des informations d’identification. Toutefois, il est également possible que l’emplacement réel de l’utilisateur soit masqué, par exemple, à l’aide d’un VPN.
 
-Pour améliorer la précision et l’alerte uniquement lorsqu’il existe une indication forte pour une violation, Cloud App Security établit une ligne de base pour chaque utilisateur de l’organisation et alerte uniquement en cas de détection d’un comportement inhabituel. La stratégie de voyage impossible peut être ajustée à vos besoins.
+Pour améliorer la précision et l’alerte uniquement lorsqu’il existe une forte indication d’une violation, Cloud App Security établit une ligne de base pour chaque utilisateur de l’organisation et alerte uniquement en cas de détection d’un comportement inhabituel. La stratégie de voyage impossible peut être ajustée à vos besoins.
 
 **Période d’apprentissage**
 
@@ -250,7 +250,7 @@ L’établissement du modèle d’activité d’un nouvel utilisateur nécessite
 
 **TP**, **B-TP**ou **FP**?
 
-Pour améliorer la précision et l’alerte uniquement lorsqu’il existe une indication forte pour une violation, cette détection établit une ligne de base sur chaque environnement de l’organisation afin de réduire les incidents de **B-TP** , par exemple, un administrateur ayant légitimement créé plus de machines virtuelles que la base de référence établie et n’alerte que lorsque le comportement inhabituel est détecté.
+Pour améliorer la précision et l’alerte uniquement lorsqu’il existe une indication forte d’une violation, cette détection établit une ligne de base sur chaque environnement de l’organisation afin de réduire les incidents de **B-TP** , par exemple un administrateur ayant légitimement créé plus de machines virtuelles que la ligne de base établie, et alerte uniquement lorsque le comportement inhabituel est détecté.
 
 - **TP**: Si vous êtes en mesure de vérifier que les activités de création n’ont pas été effectuées par un utilisateur légitime.
 
@@ -264,6 +264,30 @@ Pour améliorer la précision et l’alerte uniquement lorsqu’il existe une in
 1. Examinez toutes les activités des utilisateurs pour d’autres indicateurs de compromission.
 1. Passez en revue les ressources créées ou modifiées par l’utilisateur et vérifiez qu’elles sont conformes aux stratégies de votre organisation.
 
+### <a name="suspicious-creation-activityfor-cloudregion-preview"></a>Activité de création suspecte pour la région du Cloud (version préliminaire)
+
+Activités indiquant qu’un utilisateur a effectué une action de création de ressource inhabituelle dans une région AWS rare par rapport à la ligne de base apprise. La création de ressources dans des régions de Cloud inhabituelles peut indiquer une tentative d’exécution d’une activité malveillante telle que des opérations d’exploration de données de chiffrement à partir de votre organisation.
+
+**Période d’apprentissage**
+
+L’établissement du modèle d’activité d’un nouvel utilisateur nécessite une période d’apprentissage initiale de sept jours pendant laquelle les alertes ne sont pas déclenchées pour les nouveaux emplacements.
+
+**TP**, **B-TP**ou **FP**?
+
+Pour améliorer la précision et l’alerte uniquement lorsqu’il existe une indication forte d’une violation, cette détection établit une ligne de base sur chaque environnement de l’organisation afin de réduire les incidents de **B-TP** .
+
+- **TP**: Si vous êtes en mesure de vérifier que les activités de création n’ont pas été effectuées par un utilisateur légitime.
+
+    **Action recommandée**: suspendre l’utilisateur, réinitialiser son mot de passe et analyser tous les appareils à la recherche de menaces malveillantes. Examinez toutes les activités des utilisateurs pour d’autres indicateurs de compromission et explorez l’étendue de l’impact. En outre, contactez l’utilisateur, confirmez ses actions légitimes, puis veillez à désactiver ou supprimer les ressources cloud compromises.
+- **B-TP**: si, après votre investigation, vous êtes en mesure de vérifier que l’administrateur a été autorisé à effectuer ces activités de création.
+
+    **Action recommandée**: ignorez l’alerte.
+
+**Comprendre l’étendue de la violation**
+
+1. Examinez toutes les activités des utilisateurs pour d’autres indicateurs de compromission.
+1. Passez en revue les ressources créées et vérifiez qu’elles sont conformes aux stratégies de votre organisation.
+
 ## <a name="persistence-alerts"></a>Alertes de persistance
 
 Cette section décrit les alertes indiquant qu’un acteur malveillant peut tenter de conserver son point de vue dans votre organisation.
@@ -276,7 +300,7 @@ L’activité effectuée par un utilisateur terminé peut indiquer qu’un emplo
 
 1. **TP**: Si vous êtes en mesure de vérifier que l’utilisateur terminé a toujours accès à certaines ressources de l’entreprise et exécute des activités.
 
-    **Action recommandée**: suspendez l’utilisateur et vérifiez que tous les accès sont supprimés.
+    **Action recommandée**: désactiver l’utilisateur.
 1. **B-TP**: Si vous êtes en mesure de déterminer que l’utilisateur a été temporairement désactivé ou a été supprimé puis réinscrit.
 
     **Action recommandée**: ignorez l’alerte.
@@ -369,7 +393,7 @@ L’établissement du modèle d’activité d’un nouvel utilisateur nécessite
 1. **TP**: Si vous êtes en mesure de vérifier que l’activité n’a pas été effectuée par un administrateur légitime.
 
     **Action recommandée**: suspendre l’utilisateur, marquer l’utilisateur comme compromis et réinitialiser son mot de passe.
-1. **FP**: Si vous êtes en mesure de confirmer qu’un administrateur a effectué des activités d’administration plus ou moins que la base de référence établie.
+1. **FP**: Si vous êtes en mesure de confirmer qu’un administrateur a réalisé légitimement le volume inhabituel d’activités d’administration.
 
     **Action recommandée**: ignorez l’alerte.
 
@@ -579,7 +603,7 @@ Activités dans une session unique indiquant qu’un utilisateur a effectué un 
 
 **TP**, **B-TP**ou **FP**?
 
-Pour améliorer la précision et l’alerte uniquement lorsqu’il existe une indication forte pour une violation, cette détection établit une ligne de base sur chaque environnement de l’organisation afin de réduire les incidents de **B-TP** et alerte uniquement lorsque le comportement inhabituel est détecté.
+Pour améliorer la précision et l’alerte uniquement lorsqu’il existe une indication forte d’une violation, cette détection établit une ligne de base sur chaque environnement de l’organisation afin de réduire les incidents de **B-TP** et alerte uniquement lorsque le comportement inhabituel est détecté.
 
 **Période d’apprentissage**
 

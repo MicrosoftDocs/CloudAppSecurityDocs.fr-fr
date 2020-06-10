@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0965c492c7f837810bc68b2b97645e89bdd03e75
-ms.sourcegitcommit: ffc8f6053418d20f2394dc6645e043c9db582e6b
+ms.openlocfilehash: face06e83dc57a3722298bf2e22846334ca811b2
+ms.sourcegitcommit: 33e4b39d56256e54bc6e74ca45a03055484916d9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2020
-ms.locfileid: "84486305"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84566822"
 ---
 # <a name="manage-admin-access"></a>Gérer l’accès administrateur
 
@@ -56,7 +56,7 @@ Par défaut, les rôles d’administrateur Office 365 et [Azure Active Directory
 - **Lecteur global :** Dispose d’un accès complet en lecture seule à tous les aspects de Microsoft Cloud App Security. Impossible de modifier des paramètres ou d’effectuer des actions.
 
 > [!NOTE]
-> Les rôles Office 365 et Azure AD ne sont pas listés dans la page **gérer l’accès administrateur** .
+> Les rôles Office 365 et Azure AD ne sont pas répertoriés dans la page **gérer l’accès administrateur** .
 
 En outre, les Cloud App Security rôles d’administrateur spécifiques suivants peuvent être configurés dans le portail Cloud App Security :
 
@@ -121,12 +121,15 @@ Vous pouvez ajouter des administrateurs à Cloud App Security sans ajouter d’u
 
 2. Cliquez sur le signe plus pour ajouter les administrateurs qui doivent avoir accès à Cloud App Security. Vous pouvez taper une adresse e-mail interne ou externe pour permettre aux administrateurs de votre organisation ou aux fournisseurs MSSP (Managed Security Service Provider) externes d’administrer vos alertes de sécurité.
 
+    > [!NOTE]
+    > Pour accorder l’accès du portail à MSSPs, vous devez ajouter des utilisateurs MSSP à votre Azure AD en tant qu’utilisateurs invités. Pour plus d’informations, consultez [Ajouter des utilisateurs Azure Active Directory B2B Collaboration dans le portail Azure](/azure/active-directory/b2b/add-users-administrator).
+
     ![ajouter des administrateurs](media/add-admin.png)
 
 3. Ensuite, cliquez sur la liste déroulante pour définir le type de rôle de l’administrateur, **administrateur général**, **lecteur de sécurité**, **administrateur de conformité**ou **administrateur d’application/d’instance**. Si vous sélectionnez **administrateur d’application/d’instance**, sélectionnez l’application et l’instance de pour l’administrateur pour lesquelles des autorisations doivent être définies.
 
     >[!NOTE]
-    >Tout administrateur dont l’accès est limité et qui tente d’accéder à une page restreinte ou d’effectuer une action restreinte reçoit une erreur indiquant qu’il ne dispose pas des autorisations nécessaires pour accéder à la page ou effectuer l’action.
+    > Tout administrateur dont l’accès est limité et qui tente d’accéder à une page restreinte ou d’effectuer une action restreinte reçoit une erreur indiquant qu’il ne dispose pas des autorisations nécessaires pour accéder à la page ou effectuer l’action.
 
 4. Cliquez sur **Ajouter un administrateur**.
 
