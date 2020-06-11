@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a88c3d90b96d173428ccd22c94731ca82f4f920b
-ms.sourcegitcommit: a6d6ab856bc06591d8ccdb5bf9dfd506dcd90e20
+ms.openlocfilehash: 7e7635cf2fd7400376ec5a57919d2804ab8ab6b1
+ms.sourcegitcommit: 211dcc2850a7b1513f93ccc83e8e152bc941f253
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83579764"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "84654411"
 ---
 # <a name="set-up-cloud-discovery"></a>Configurer Cloud Discovery
 
@@ -110,7 +110,7 @@ Attributs de données (selon la documentation du fournisseur) :
 | SonicWall (anciennement Dell) | **Oui** | **Oui** | Non | **Oui** | **Oui** | **Oui** |
 | Digital Arts i-FILTER | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** |
 | ForcePoint LEEF |**Oui**|**Oui**|**Oui**|**Oui**|**Oui**|**Oui**|
-| ForcePoint Web Security Cloud |**Oui**|**Oui**|**Oui**|**Oui**|**Oui**|**Oui**|
+| ForcePoint Web Security Cloud\* |**Oui**|**Oui**|**Oui**|**Oui**|**Oui**|**Oui**|
 | Fortigate | Non | **Oui** | Non | **Oui** | **Oui** | **Oui** |
 | Fortinet FortiOS |**Oui**|**Oui**|Non|**Oui**|**Oui**|**Oui**|
 | iboss |**Oui**|**Oui**|**Oui**|**Oui**|**Oui**|**Oui**|
@@ -126,6 +126,8 @@ Attributs de données (selon la documentation du fournisseur) :
 | Websense - Rapport d’examen détaillé (CSV) | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** |
 | Websense - Journal d’activité Internet (CEF) | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** |
 | Zscaler | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** |
+
+\*Les versions 8,5 et ultérieures du Cloud de sécurité Web Forcepoint ne sont pas prises en charge
 
 ## <a name="next-steps"></a>Étapes suivantes
 
