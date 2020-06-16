@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 75a9c50b91b0aca0183af548bee6d6265be59e96
-ms.sourcegitcommit: b00cf17cc91d7a08cae5a602a6db05269643aa95
+ms.openlocfilehash: 84d78ef48ed141c62934b8b91137d601c1fff666
+ms.sourcegitcommit: 826d2ec022647bce6c3135c115a41ee894ff8ecd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84415693"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84800830"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Protéger les applications avec le Contrôle d’accès conditionnel aux applications Microsoft Cloud App Security
 
@@ -42,6 +42,8 @@ Le contrôle d’application par accès conditionnel permet de superviser et de 
 - **Protéger au téléchargement**: au lieu de bloquer le téléchargement de documents sensibles, vous pouvez exiger que les documents soient étiquetés et protégés par Azure information protection. Cette action garantit que les documents sont protégés et que l’accès utilisateur est limité dans une session potentiellement à risque.
 
 - **Empêcher le téléchargement de fichiers sans étiquette**: avant qu’un fichier sensible ne soit téléchargé, distribué et utilisé par d’autres utilisateurs, il est important de s’assurer que le fichier a l’étiquette et la protection appropriées. Vous pouvez bloquer le chargement des fichiers sans étiquette qui ont du contenu sensible tant que l’utilisateur n’a pas classifié leur contenu.
+
+- **Bloquer les logiciels malveillants potentiels**: vous pouvez protéger votre environnement contre les logiciels malveillants en bloquant le chargement de fichiers potentiellement malveillants. Tout fichier téléchargé ou téléchargé peut être analysé par rapport à Microsoft Threat Intelligence et bloqué instantanément.
 
 - **Surveiller les sessions utilisateur pour la conformité**: les utilisateurs risqués sont analysés lorsqu’ils se connectent à des applications et que leurs actions sont journalisées depuis la session. Vous pouvez examiner et analyser le comportement des utilisateurs pour comprendre où et dans quelles conditions les stratégies de session doivent être appliquées à l’avenir.
 

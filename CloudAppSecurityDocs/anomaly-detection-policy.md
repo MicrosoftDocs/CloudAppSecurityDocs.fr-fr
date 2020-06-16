@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5b4691cdc29199d65b6ac0a2884b8b5a82263c5e
-ms.sourcegitcommit: 33e4b39d56256e54bc6e74ca45a03055484916d9
+ms.openlocfilehash: 85cf523e8cc733156c2365da114cc893b022e1e3
+ms.sourcegitcommit: 223c9e4cefe6986537dcfbd697a236a3cee1768c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84566978"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84801148"
 ---
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>Obtenir instantanément une détection des anomalies et une analytique comportementale
 
@@ -47,7 +47,7 @@ Outre les alertes de Cloud App Security natives, vous obtiendrez également les 
 * Informations d’identification divulguées : déclenché lorsque les informations d’identification valides d’un utilisateur ont été divulguées. Pour plus d’informations, consultez [détection des informations d’identification divulguées de Azure ad](/azure/active-directory/identity-protection/concept-identity-protection-risks#user-risk).
 * Connexion risquée : combine un certain nombre de détections de connexion Azure AD Identity Protection en une seule détection. Pour plus d’informations, consultez [détection des risques de connexion de Azure ad](/azure/active-directory/identity-protection/concept-identity-protection-risks#sign-in-risk).
 
-Ces stratégies s’affichent dans la page Cloud App Security les stratégies et peuvent être activées ou désactivées, mais pas modifiées.
+Ces stratégies s’affichent dans la page Cloud App Security les stratégies et peuvent être activées ou désactivées.
 
 ## <a name="anomaly-detection-policies"></a>Stratégie de détection des anomalies
 
@@ -70,9 +70,12 @@ Les stratégies de détection d’anomalie suivantes sont disponibles :
 
 ### <a name="malware-detection"></a>Détection de logiciel malveillant
 
-* Cette détection identifie les fichiers malveillants dans votre stockage cloud, qu’ils viennent de vos applications Microsoft ou tierces. Microsoft Cloud App Security utilise la Threat Intelligence de Microsoft pour savoir si certains fichiers sont associés à des attaques par programme malveillant connues et s’ils sont potentiellement dangereux. Cette stratégie intégrée est désactivée par défaut. Les fichiers ne sont pas tous analysés, mais des solutions sont utilisées pour rechercher les fichiers qui présentent un risque potentiel. Une fois que les fichiers sont détectés, vous pouvez voir une liste des **fichiers infectés**. Cliquez sur le nom du fichier malveillant dans le tiroir de fichier pour ouvrir un rapport sur les programmes malveillants qui vous fournit des informations sur le type de programme malveillant dont le fichier est infecté.
+* Cette détection identifie les fichiers malveillants dans votre stockage cloud, qu’ils viennent de vos applications Microsoft ou tierces. Microsoft Cloud App Security utilise la Threat Intelligence de Microsoft pour savoir si certains fichiers sont associés à des attaques par programme malveillant connues et s’ils sont potentiellement dangereux. Cette stratégie intégrée est désactivée par défaut. Les fichiers ne sont pas tous analysés, mais des solutions sont utilisées pour rechercher les fichiers qui présentent un risque potentiel. Une fois que les fichiers sont détectés, vous pouvez voir une liste des **fichiers infectés**. Cliquez sur le nom du fichier de programme malveillant dans le tiroir de fichier pour ouvrir un rapport de programmes malveillants qui vous fournit des informations sur le type de programme malveillant avec lequel le fichier est infecté.
+
+    Vous pouvez utiliser cette détection en temps réel à l’aide de stratégies de session pour contrôler les chargements de fichiers et les téléchargements.
 
     > [!NOTE]
+    >
     > * Pour la détection de programmes malveillants Office 365, vous avez besoin d’une licence valide pour Office 365-protection avancée contre les menaces P1.
     > * Cloud App Security prend en charge la détection de programmes malveillants pour les applications suivantes :
     >   * Box

@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 47aa53855f83a2898616d17e6d4b12786bc7d893
-ms.sourcegitcommit: 6886d285601955f0efc7acf980c9d4740ff873fe
+ms.openlocfilehash: 1578a945e461d69a78f56f000b494235245002b9
+ms.sourcegitcommit: 826d2ec022647bce6c3135c115a41ee894ff8ecd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "84250670"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84800790"
 ---
 # <a name="session-policies"></a>Stratégies de session
 
@@ -55,7 +55,7 @@ Pour créer une stratégie de session, suivez cette procédure :
 
     1. Sélectionnez **Surveiller uniquement** pour surveiller uniquement les activités des utilisateurs. De cette façon, vous créez une stratégie de type « Superviser uniquement », dans laquelle toutes les connexions, tous les téléchargements heuristiques et tous les types d’activités sont téléchargés pour les applications que vous avez sélectionnées.
 
-    1. Si vous souhaitez superviser les activités de l’utilisateur, sélectionnez **Contrôler le téléchargement du fichier (avec DLP)**. Vous pouvez exécuter des actions supplémentaires, comme bloquer ou protéger les téléchargements pour les utilisateurs.
+    1. Sélectionnez **contrôler le téléchargement du fichier (avec inspection)** si vous souhaitez surveiller les activités des utilisateurs. Vous pouvez exécuter des actions supplémentaires, comme bloquer ou protéger les téléchargements pour les utilisateurs.
     1. Sélectionnez **Bloquer les activités** pour bloquer certaines activités, que vous pouvez sélectionner à l’aide du filtre **Type d’activité**. Toutes les activités des applications sélectionnées sont surveillées (et signalées dans le journal d’activité). Les activités que vous sélectionnez sont bloquées si vous sélectionnez l’action **Bloquer**. Les activités que vous avez sélectionnées déclencheront des alertes si vous sélectionnez l’action **Tester** et si vous activez les alertes.
 1. Sous **Source de l’activité** dans la section **Activités remplissant toutes les conditions suivantes**, sélectionnez d’autres filtres d’activité à appliquer à la stratégie. Ces filtres peuvent inclure les options suivantes :
 
@@ -70,7 +70,7 @@ Pour créer une stratégie de session, suivez cette procédure :
     >[!NOTE]
     >Les stratégies de session ne prennent pas en charge les applications mobiles et de bureau. Les applications mobiles et les applications de bureau peuvent également être bloquées ou autorisées en créant une stratégie d’accès.
 
-1. Si vous avez sélectionné l’option **Contrôler le téléchargement du fichier (avec DLP)**  :
+1. Si vous avez sélectionné l’option permettant de **contrôler le téléchargement de fichiers (avec inspection)**:
 
     1. Sous **Source de l’activité** dans la section **Fichiers remplissant toutes les conditions suivantes**, sélectionnez d’autres filtres de fichiers à appliquer à la stratégie. Ces filtres peuvent inclure les options suivantes :
 
@@ -86,7 +86,7 @@ Pour créer une stratégie de session, suivez cette procédure :
 
         * **Bloquer (Bloquer le téléchargement de fichiers et surveiller toutes les activités)**  : définissez cette action pour bloquer explicitement le téléchargement selon les filtres de stratégie que vous définissez. Pour plus d’informations, consultez [Fonctionnement du blocage du téléchargement](#block-download).
 
-        * **Protéger (Appliquer l’étiquette de classification pour télécharger et superviser toutes les activités)**  : cette option est uniquement disponible si vous avez sélectionné **Contrôler le téléchargement du fichier (avec DLP)** sous **Stratégie de session**. Si votre organisation utilise Azure Information Protection, vous pouvez définir une **action** pour appliquer une étiquette de classification définie dans Azure Information Protection sur le fichier. Pour plus d’informations, consultez [Fonctionnement de la protection du téléchargement](#protect-download).
+        * **Protéger (appliquer l’étiquette de classification pour télécharger et surveiller toutes les activités)**: cette option est disponible uniquement si vous avez sélectionné **contrôler le téléchargement de fichiers (avec inspection)** sous **stratégie de session**. Si votre organisation utilise Azure Information Protection, vous pouvez définir une **action** pour appliquer une étiquette de classification définie dans Azure Information Protection sur le fichier. Pour plus d’informations, consultez [Fonctionnement de la protection du téléchargement](#protect-download).
 
 1. Vous pouvez **Créer une alerte pour chaque événement correspondant avec le niveau de gravité de la stratégie** et définir un seuil d’alerte. Choisissez si l’alerte doit être envoyée par e-mail, par SMS, ou les deux.
 
@@ -146,9 +146,17 @@ Cloud App Security prend actuellement en charge l’application d' [étiquettes 
 
 ## <a name="protect-uploads-of-sensitive-files"></a><a name="protect-upload"></a>Protéger les téléchargements de fichiers sensibles
 
-Lorsque l’opération **contrôler le téléchargement du fichier (avec DLP)** est définie en tant que **type de contrôle de session** dans la stratégie de session Cloud App Security, contrôle d’application par accès conditionnel empêche un utilisateur de télécharger un fichier en fonction des filtres de fichiers de la stratégie. Lorsqu’un événement de chargement est reconnu, contrôle d’application par accès conditionnel intervient en temps réel pour déterminer si le fichier est sensible et doit être protégé. Si le fichier contient des données sensibles et n’a pas d’étiquette appropriée, le téléchargement du fichier est bloqué.
+Lorsque le **chargement du fichier de contrôle (avec inspection)** est défini en tant que **type de contrôle de session** dans la stratégie de session Cloud App Security, contrôle d’application par accès conditionnel empêche un utilisateur de télécharger un fichier en fonction des filtres de fichiers de la stratégie. Lorsqu’un événement de chargement est reconnu, contrôle d’application par accès conditionnel intervient en temps réel pour déterminer si le fichier est sensible et doit être protégé. Si le fichier contient des données sensibles et n’a pas d’étiquette appropriée, le téléchargement du fichier est bloqué.
 
 Par exemple, vous pouvez créer une stratégie qui analyse le contenu d’un fichier pour déterminer si elle contient une correspondance de contenu sensible, telle qu’un numéro de sécurité sociale. S’il contient du contenu sensible et qu’il n’est pas étiqueté avec une étiquette confidentielle Azure Information Protection, le téléchargement du fichier est bloqué. Lorsque le fichier est bloqué, vous pouvez [afficher un message personnalisé destiné à l’utilisateur](#educate-protect) pour lui indiquer comment étiqueter le fichier afin de le télécharger. En procédant ainsi, vous vous assurez que les fichiers stockés dans vos applications Cloud sont conformes à vos stratégies.
+
+## <a name="block-malware-on-upload"></a>Bloquer les logiciels malveillants lors du téléchargement
+
+Lorsque le **contrôle de téléchargement de fichier (avec inspection)**   est défini comme **type de contrôle de session** et que la détection de **programmes malveillants** est définie comme **méthode d’inspection** dans la stratégie de session de Cloud App Security, contrôle d’application par accès conditionnel empêche un utilisateur de charger un fichier en temps réel si un logiciel malveillant est détecté. Les fichiers sont analysés à l’aide du moteur Microsoft Threat Intelligence.
+
+Vous pouvez afficher les fichiers signalés comme programmes malveillants potentiels à l’aide du filtre **potentiellement malveillant détecté** dans le journal d’activité.
+
+Vous pouvez également configurer des stratégies de session pour bloquer les logiciels malveillants au téléchargement.
 
 ## <a name="educate-users-to-protect-sensitive-files"></a><a name="educate-protect"></a>Informer les utilisateurs de la protection des fichiers sensibles
 

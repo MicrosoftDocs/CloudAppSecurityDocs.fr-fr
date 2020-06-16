@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e8a5863b0643ed99f5bd28f04b0634dc822602c7
-ms.sourcegitcommit: d159dbd8e1a35268468156eb9c5a5f218cdace4c
+ms.openlocfilehash: 99cdf5ec406287dd1458b75c8d5d76c2f027918b
+ms.sourcegitcommit: 223c9e4cefe6986537dcfbd697a236a3cee1768c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84274629"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84801182"
 ---
 # <a name="docker-on-windows-on-premises"></a>Docker sur Windows en local
 
@@ -44,7 +44,9 @@ Vous pouvez configurer le chargement automatique des journaux pour des rapports 
 * La virtualisation du système d’exploitation doit être activée avec Hyper-V
 
 > [!IMPORTANT]
-> Un utilisateur doit être connecté pour que l’arrimeur collecte les journaux. Nous vous recommandons de recommander aux utilisateurs de votre conseiller de se déconnecter sans fermer la session.
+>
+> * Un utilisateur doit être connecté pour que l’arrimeur collecte les journaux. Nous vous recommandons de recommander aux utilisateurs de votre conseiller de se déconnecter sans fermer la session.
+> * Docker pour Windows n’est pas officiellement pris en charge dans les scénarios de virtualisation imbriquée. Si vous envisagez toujours d’utiliser la virtualisation imbriquée, reportez-vous au [Guide officiel de l’ancrage](https://docs.docker.com/docker-for-windows/troubleshoot/#running-docker-desktop-in-nested-virtualization-scenarios).
 
 > [!NOTE]
 > Si vous disposez d’un collecteur de journaux existant et que vous souhaitez le supprimer avant de le déployer à nouveau, ou si vous souhaitez simplement le supprimer, exécutez les commandes suivantes :

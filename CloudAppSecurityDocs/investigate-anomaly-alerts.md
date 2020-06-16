@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: itfalcon
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 15b8a8eab3558443831b415c3d6ddef554879b09
-ms.sourcegitcommit: 33e4b39d56256e54bc6e74ca45a03055484916d9
+ms.openlocfilehash: 08eec9c9a8e684d53b0947ce186d661bf5e7d961
+ms.sourcegitcommit: 826d2ec022647bce6c3135c115a41ee894ff8ecd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84566921"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84800807"
 ---
 # <a name="how-to-investigate-anomaly-detection-alerts"></a>Comment examiner les alertes de détection d’anomalies
 
@@ -75,7 +75,7 @@ Activité à partir d’une adresse IP qui a été identifiée comme adresse IP 
 
 **TP**, **B-TP**ou **FP**?
 
-Cette détection utilise un algorithme de Machine Learning qui réduit les incidents de type **« B-TP »** , tels que les adresses IP avec balises qui sont largement utilisées par les utilisateurs de l’organisation.
+Cette détection utilise un algorithme de Machine Learning qui réduit les incidents de type **« B-TP** », tels que les adresses IP mal identifiées qui sont largement utilisées par les utilisateurs de l’organisation.
 
 1. **TP**: Si vous êtes en mesure de vérifier que l’activité a été effectuée à partir d’une adresse IP anonyme ou TDR.
 

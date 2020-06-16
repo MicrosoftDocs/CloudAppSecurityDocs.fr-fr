@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 7e7635cf2fd7400376ec5a57919d2804ab8ab6b1
-ms.sourcegitcommit: 211dcc2850a7b1513f93ccc83e8e152bc941f253
+ms.openlocfilehash: ca5d9d10b9c2270e3f8a8b391a42a8e2344a7aa7
+ms.sourcegitcommit: 223c9e4cefe6986537dcfbd697a236a3cee1768c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84654411"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84801165"
 ---
 # <a name="set-up-cloud-discovery"></a>Configurer Cloud Discovery
 
@@ -89,7 +89,10 @@ Le processus de génération d’une évaluation des risques se compose des éta
 > [!NOTE]
 > Cloud Discovery prend en charge les adresses IPv4 et IPv6.
 
-Si votre journal n’est pas pris en charge, sélectionnez **Autre** comme **Source de données**, et spécifiez l’appliance et le journal que vous essayez de charger. Votre journal est examiné par l’équipe d’analystes cloud de Cloud App Security et vous êtes averti si la prise en charge de votre type de journal est ajoutée. Vous pouvez également définir un analyseur personnalisé qui correspond à votre format. Pour plus d’informations, consultez [Utiliser un analyseur de journaux personnalisé](custom-log-parser.md).
+Si votre journal n’est pas pris en charge, ou si vous utilisez un format de journal nouvellement publié à partir de l’une des sources de données prises en charge et que le téléchargement échoue, sélectionnez **autre** comme **source de données** et spécifiez l’appliance et le journal que vous essayez de charger. Votre journal est examiné par l’équipe d’analystes cloud de Cloud App Security et vous êtes averti si la prise en charge de votre type de journal est ajoutée. Vous pouvez également définir un analyseur personnalisé qui correspond à votre format. Pour plus d’informations, consultez [Utiliser un analyseur de journaux personnalisé](custom-log-parser.md).
+
+> [!NOTE]
+> La liste suivante d’appliances prises en charge peut ne pas fonctionner avec les formats de journal récemment publiés. Si vous utilisez un format récemment publié et que le téléchargement échoue, [Utilisez un analyseur de journal personnalisé](custom-log-parser.md) et, si nécessaire, ouvrez un dossier de support.
 
 Attributs de données (selon la documentation du fournisseur) :
 

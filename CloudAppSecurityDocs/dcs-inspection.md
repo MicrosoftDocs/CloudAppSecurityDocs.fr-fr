@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 75ee564e0001b76ea38f345cec24c02d567ed200
-ms.sourcegitcommit: f4845a6bbf39aea0504956bf23878f7e0adb8bcc
+ms.openlocfilehash: 353cff79b3e76c3f63380194ea055a92f13c0ce8
+ms.sourcegitcommit: 826d2ec022647bce6c3135c115a41ee894ff8ecd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81477483"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84800773"
 ---
 # <a name="microsoft-data-classification-services-integration"></a>Intégration du service de classification des données Microsoft
 
@@ -34,7 +34,7 @@ Microsoft Cloud App Security vous permet d’utiliser le service de classificati
 
 Vous avez la possibilité de définir la **méthode d’inspection** pour qu’elle utilise le **service de classification des données Microsoft** sans aucune configuration supplémentaire. Cette option est utile quand vous créez une stratégie de prévention de fuite de données pour vos fichiers dans Microsoft Cloud App Security.
 
-1. Dans la page [Stratégie de fichier](data-protection-policies.md), sous **Méthode d’inspection**, sélectionnez **Service de classification des données**. Vous pouvez également définir la **méthode d’inspection** dans la page [stratégie de session](session-policy-aad.md) avec l’option **contrôler le téléchargement du fichier (avec DLP)** sélectionnée.
+1. Dans la page [Stratégie de fichier](data-protection-policies.md), sous **Méthode d’inspection**, sélectionnez **Service de classification des données**. Vous pouvez également définir la **méthode d’inspection** dans la page [stratégie de session](session-policy-aad.md) avec l’option **contrôler le téléchargement du fichier (avec inspection)** sélectionnée.
 
     ![définition du service de classification des données](media/dcs-enable.png)
 2. Indiquez si la stratégie doit s’appliquer quand **un** ou **tous** les critères sont remplis.
@@ -55,6 +55,6 @@ La définition de ces stratégies vous permet d’étendre facilement la puissan
 ## <a name="next-steps"></a>Étapes suivantes
 
 > [!div class="nextstepaction"]
-> [Contrôler les applications Cloud avec des stratégies](control-cloud-apps-with-policies.md)
+> [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
