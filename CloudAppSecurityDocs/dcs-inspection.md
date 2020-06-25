@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 04/16/2020
+ms.date: 06/24/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 353cff79b3e76c3f63380194ea055a92f13c0ce8
-ms.sourcegitcommit: 826d2ec022647bce6c3135c115a41ee894ff8ecd
+ms.openlocfilehash: 120c34fda9080a921b7a2a4cbcdb0563dd5b0777
+ms.sourcegitcommit: 33e4a3eae5852fb24531aee9e880a4c0c0520820
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84800773"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85311879"
 ---
 # <a name="microsoft-data-classification-services-integration"></a>Intégration du service de classification des données Microsoft
 
@@ -44,7 +44,7 @@ Vous avez la possibilité de définir la **méthode d’inspection** pour qu’e
 
 4. Vous pouvez utiliser les [types d’informations sensibles par défaut ](https://support.office.com/article/what-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b) pour définir ce qui se passe pour les fichiers protégés par Microsoft Cloud App Security. Vous pouvez également réutiliser vos [types d’informations sensibles personnalisés d’Office 365](https://support.office.com/article/create-a-custom-sensitive-information-type-82c382a5-b6db-44fd-995d-b333b3c7fc30).
     > [!NOTE]
-    > Vous pouvez configurer votre stratégie pour utiliser des types de classification avancés tels que les empreintes digitales et la correspondance exacte des données.
+    > Vous pouvez configurer votre stratégie pour utiliser des types de classification avancés tels que les [empreintes digitales](/microsoft-365/compliance/document-fingerprinting?view=o365-worldwide), les [correspondances de données exactes](/microsoft-365/compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification)et les [classifieurs](/microsoft-365/compliance/classifier-getting-started-with)pouvant être formés.
 
 5. Si vous le souhaitez, vous pouvez afficher les quatre derniers caractères d’une correspondance. Par défaut, les correspondances sont masquées et s’affichent dans leur contexte, avec 40 caractères avant et après la violation. Si vous activez cette case à cocher, les quatre derniers caractères de la correspondance elle-même seront affichés.
 
