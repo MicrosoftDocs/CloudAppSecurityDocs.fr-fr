@@ -4,19 +4,19 @@ description: Cet article est mis à jour fréquemment pour vous informer des nou
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 05/17/2020
+ms.date: 06/16/2020
 ms.topic: overview
 ms.service: cloud-app-security
 ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 09c2f8ca89a53372f9d40190c430fd4be1615612
-ms.sourcegitcommit: 6886d285601955f0efc7acf980c9d4740ff873fe
+ms.openlocfilehash: 2ec05e43341dbabb6c01219c150599d2245840b9
+ms.sourcegitcommit: 826d2ec022647bce6c3135c115a41ee894ff8ecd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "84250704"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84800858"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Nouveautés dans Microsoft Cloud App Security
 
@@ -25,6 +25,35 @@ ms.locfileid: "84250704"
 Cet article est mis à jour fréquemment pour vous informer des nouveautés de la dernière version de Cloud App Security.
 
 Flux RSS : Recevez une notification quand cette page est mise à jour en copiant et collant l’URL suivante dans votre lecteur de flux : `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
+
+## <a name="cloud-app-security-release-177"></a>Cloud App Security version 177
+
+Publication : 14 juin 2020
+
+- **Nouvelle détection de programmes malveillants en temps réel (préversion, déploiement progressif)**  
+Nous avons étendu nos contrôles de session afin de détecter les logiciels malveillants potentiels à l’aide de Microsoft Threat Intelligence lors du chargement ou du téléchargement de fichiers. La nouvelle détection est prête à l’emploi et peut être configurée pour bloquer automatiquement les fichiers identifiés comme des programmes malveillants potentiels. Pour plus d’informations, consultez [Bloquer les logiciels malveillants lors du chargement](session-policy-aad.md#block-malware-on-upload).
+
+- **Nouvelle prise en charge des jetons d’accès pour les contrôles d’accès et de session**  
+Nous avons ajouté la possibilité de traiter les demandes de jeton d’accès et de code en tant que connexions lors de l’intégration d’applications aux contrôles d’accès et de session. Pour utiliser des jetons, cliquez sur l’icône Paramètres représentée par une roue dentée, sélectionnez **Contrôle d’application par accès conditionnel**, modifiez l’application appropriée (cliquez sur le menu à trois points > **Modifier l’application**), sélectionnez **Traiter les demandes de jeton d’accès et de code en tant que connexions à l’application**, puis cliquez sur **Enregistrer**. Pour plus d’informations sur l’intégration des applications, consultez [Intégrer et déployer une application](proxy-deployment-any-app.md) et [Déployer des applications proposées](proxy-deployment-aad.md).
+
+<!--
+- **New OAuth app policy templates**  
+Cloud App Security now provides the following new OAuth app policy templates enabling you to detect potentially malicious apps:
+
+  - **OAuth apps authorized by external users**: Alert when an app was authorized by an external user.
+  - **OAuth apps with high permissions and rare community use – Google**: Alert for apps with high permissions and rare community use in Google.
+  - **OAuth apps with high permissions and rare community use – Office**: Alert for apps with high permissions and rare community use in Office
+  - **OAuth apps with rare community use - Salesforce**: Alert for apps with rare community use in Salesforce.
+-->
+
+- **Suffixe d’URL de proxy amélioré pour les contrôles de session (déploiement progressif)**  
+Le 7 juin 2020, nous avons commencé à déployer progressivement nos contrôles de session de proxy améliorés en vue d’utiliser un suffixe unifié qui n’inclut pas de régions nommées. Par exemple, les utilisateurs verront le suffixe `<AppName>.mcas.ms` au lieu de `<AppName>.<Region>.cas.ms`. Si vous mettez régulièrement des domaines sur liste noire dans vos passerelles ou appliances réseau, assurez-vous d’autoriser tous les domaines répertoriés sous [Contrôles d’accès et de session](network-requirements.md#access-and-session-controls).
+
+- **Nouvelle documentation**  
+Le contenu suivant a été ajouté à la documentation Cloud App Security :
+
+  - **[Utilisation de l’API REST Cloud App Security](api-introduction.md)**  : Découvrez nos fonctionnalités API et commencez à intégrer vos applications à Cloud App Security.
+  - **[Investiguer les alertes de détection d’anomalie](investigate-anomaly-alerts.md)**  : Familiarisez-vous avec les alertes UEBA disponibles, notamment avec leur signification, les risques qu’elles présentent, l’ampleur de la violation et l’action que vous pouvez entreprendre pour résoudre le problème.
 
 ## <a name="cloud-app-security-release-176"></a>Cloud App Security version 176
 
@@ -39,7 +68,7 @@ Nous avons exploité notre intégration native avec Azure AD pour vous permettre
 - **Nouvelle option de commentaires disponible dans les stratégies sélectionnées**  
 Nous souhaitons recevoir vos commentaires et découvrir comment nous pouvons vous aider. Désormais, une nouvelle boîte de dialogue de commentaires vous donne la possibilité de contribuer à améliorer Cloud App Security, lors de la création, de la modification ou de la suppression d’un fichier, de la détection d’anomalies ou d’une stratégie de session.
 
-- **Proxy de suffixe amélioré pour les contrôles de session (déploiement progressif)**  
+- **Suffixe d’URL de proxy amélioré pour les contrôles de session (déploiement progressif)**  
 À partir du 7 juin 2020, nous déployons progressivement nos contrôles de session de proxy améliorés pour utiliser un suffixe unifié qui n’inclut pas de régions nommées. Par exemple, les utilisateurs verront le suffixe `<AppName>.mcas.ms` au lieu de `<AppName>.<Region>.cas.ms`. Si vous mettez régulièrement des domaines sur liste noire dans vos passerelles ou appliances réseau, assurez-vous d’autoriser tous les domaines répertoriés sous [Contrôles d’accès et de session](network-requirements.md#access-and-session-controls).
 
 - **Améliorations des performances pour les contrôles de session (déploiement progressif)**  
@@ -201,7 +230,7 @@ Nous avons lancé la possibilité pour les administrateurs de personnaliser la p
 
 - **Nouvelles détections**  
 
-  - **Modifications suspectes du service de journalisation AWS (préversion)** : Vous avertit lorsqu’un utilisateur apporte des modifications au service de journalisation CloudTrail. Par exemple, les attaquants désactivent souvent l’audit dans CloudTrail pour masquer les empreintes de leur attaque.
+  - **Modifications suspectes du service de journalisation AWS (préversion)**  : Vous avertit lorsqu’un utilisateur apporte des modifications au service de journalisation CloudTrail. Par exemple, les attaquants désactivent souvent l’audit dans CloudTrail pour masquer les empreintes de leur attaque.
 
   - **Multiples activités de création de machines virtuelles** : Vous alerte lorsqu'un utilisateur effectue un nombre inhabituel d'activités de création de machines virtuelles par rapport à la référence apprise. S’applique désormais à AWS.
 

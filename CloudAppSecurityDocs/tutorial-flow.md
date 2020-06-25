@@ -1,21 +1,21 @@
 ---
 title: Étendre la gouvernance à la correction des points de terminaison | Microsoft Docs
-description: Ce tutoriel décrit le processus de configuration des alertes de stratégie Microsoft Cloud App Security pour déclencher des workflows Microsoft Flow afin d’exécuter des actions correctives Microsoft Defender Advanced Threat Protection.
+description: Ce tutoriel décrit le processus de configuration des alertes de stratégie Microsoft Cloud App Security pour déclencher des workflows Microsoft Power Automate en vue d’exécuter des actions correctives Microsoft Defender Advanced Threat Protection.
 author: shsagir
 ms.author: shsagir
 ms.service: cloud-app-security
 ms.topic: tutorial
-ms.date: 9/8/2019
-ms.openlocfilehash: 06fe00d3a289aa32846be71509707aa384b2177f
-ms.sourcegitcommit: 0b929f7c8feed7dfb40d5294179fd5c6fc079614
+ms.date: 04/27/2020
+ms.openlocfilehash: 689b40482c4064add4edc4a05d2dbcd768ccf53c
+ms.sourcegitcommit: 4e2b905c8770d411df68372c29154d30b2cf195e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "74720538"
+ms.lasthandoff: 06/21/2020
+ms.locfileid: "85123336"
 ---
 # <a name="tutorial-extend-governance-to-endpoint-remediation"></a>Tutoriel : Étendre la gouvernance à la correction des points de terminaison
 
-Cloud App Security fournit des options de gouvernance prédéfinies pour les stratégies. Il permet notamment de suspendre un utilisateur ou de rendre un fichier privé. À l’aide de l’intégration native avec Microsoft Flow, vous pouvez utiliser un large écosystème de connecteurs SaaS (Software as a service) pour générer des workflows afin d’automatiser les processus, dont la correction.
+Cloud App Security fournit des options de gouvernance prédéfinies pour les stratégies. Il permet notamment de suspendre un utilisateur ou de rendre un fichier privé. À l’aide de l’intégration native à Microsoft Power Automate, vous pouvez utiliser un large écosystème de connecteurs SaaS pour générer des workflows en vue d’automatiser les processus, dont la correction.
 
 Par exemple, lors de la détection d’une menace de programme malveillant possible, vous pouvez utiliser des workflows pour lancer des actions correctives Microsoft Defender Advanced Threat Protection (ATP), telles que l’exécution d’une analyse antivirus ou l’isolement d’un point de terminaison.
 
@@ -31,18 +31,18 @@ Dans ce tutoriel, vous allez apprendre à configurer une action de gouvernance d
 > [!NOTE]
 > Ces workflows sont pertinents seulement pour les stratégies qui contiennent l’activité de l’utilisateur. Par exemple, vous ne pouvez pas utiliser ces workflows avec des stratégies de découverte ou OAuth.
 
-Si vous n’avez pas de plan Microsoft Flow, [inscrivez-vous pour un compte d’essai gratuit](https://flow.microsoft.com/pricing).
+Si vous n’avez pas de plan Power Automate, [inscrivez-vous pour obtenir un compte d’essai gratuit](https://flow.microsoft.com/pricing).
 
 ## <a name="prerequisites"></a>Prérequis
 
-* Vous devez disposer d’un [plan Microsoft Flow](https://flow.microsoft.com/pricing) valide
+* Vous devez disposer d’un [plan Microsoft Power Automate](https://flow.microsoft.com/pricing) valide.
 * Vous devez avoir un plan Microsoft Defender ATP valide
-* L’environnement Microsoft Flow doit être synchronisé avec Azure AD, supervisé par Defender ATP et joint au domaine
+* L’environnement Power Automate doit être synchronisé avec Azure AD, supervisé par Defender ATP et joint au domaine.
 
 ## <a name="phase-1-generate-a-cloud-app-security-api-token"></a>Phase 1 : Générer un jeton d’API Cloud App Security<a name="generate-token"></a>
 
 > [!NOTE]
-> Si vous avez déjà créé un workflow en utilisant un connecteur Cloud App Security, Microsoft Flow réutilise automatiquement le jeton et vous pouvez ignorer cette étape.
+> Si vous avez déjà créé un workflow en utilisant un connecteur Cloud App Security, Power Automate réutilisera automatiquement le jeton. Vous pouvez donc ignorer cette étape.
 
 1. Dans Cloud App Security, dans la barre de menus, cliquez sur la roue dentée des paramètres ![Icône des paramètres](media/settings-icon.png "Icône des paramètres") et sélectionnez **Extensions de sécurité**.
 
@@ -57,34 +57,34 @@ Si vous n’avez pas de plan Microsoft Flow, [inscrivez-vous pour un compte d’
 ## <a name="phase-2-create-a-flow-to-run-an-antivirus-scan"></a>Phase 2 : Créer un flux pour exécuter une analyse antivirus<a name="create-flow"></a>
 
 > [!NOTE]
-> Si vous avez déjà créé un flux en utilisant un connecteur Defender ATP, Flow réutilise automatiquement le connecteur et vous pouvez ignorer l’étape **Se connecter**.
+> Si vous avez déjà créé un flux en utilisant un connecteur Defender ATP, Power Automate réutilisera automatiquement le connecteur. Vous pouvez donc ignorer l’étape de **connexion**.
 
-1. Accédez au [portail Microsoft Flow](https://flow.microsoft.com/)et sélectionnez Modèles.
+1. Accédez au [portail Power Automate](https://flow.microsoft.com/), puis sélectionnez **Modèles**.
 
-    ![Capture d’écran de la page principale de Microsoft Flow, montrant la sélection de modèles.](media/tutorial-flow-templates.png)
+    ![Capture d’écran de la page principale de Power Automate, montrant la sélection de modèles.](media/tutorial-flow-templates.png)
 
 1. Recherchez « Cloud App Security » et sélectionnez **Exécuter l’analyse antivirus avec Windows Defender sur une alerte Cloud App Security**.
 
-    ![Capture d’écran de la page de modèles de Microsoft Flow, montrant les résultats de la recherche.](media/tutorial-flow-templates-search.png)
+    ![Capture d’écran de la page de modèles de Power Automate, montrant les résultats de la recherche.](media/tutorial-flow-templates-search.png)
 
-1. Cliquez sur **Se connecter** et entrez les informations d’identification d’administrateur que vous voulez utiliser avec le connecteur Microsoft Defender ATP.
+1. Dans la liste des applications, sur la ligne où figure **Connecteur Microsoft Defender ATP**, cliquez sur **Se connecter**.
 
-    ![Capture d’écran de la page de modèles de Microsoft Flow, montrant le processus de connexion.](media/tutorial-flow-templates-signin.png)
+    ![Capture d’écran de la page de modèles de Power Automate, montrant le processus de connexion.](media/tutorial-flow-templates-signin.png)
 
 ## <a name="phase-3-configure-the-flow"></a>Phase 3 : Configurer le flux<a name="configure-flow"></a>
 
 > [!NOTE]
-> Si vous avez déjà créé un flux en utilisant un connecteur Azure AD, Microsoft Flow réutilise automatiquement le jeton et vous pouvez ignorer cette étape.
+> Si vous avez déjà créé un flux en utilisant un connecteur Azure AD, Power Automate réutilisera automatiquement le jeton. Vous pouvez donc ignorer cette étape.
 
-1. Cliquez sur **Créer**.
+1. Dans la liste des applications, sur la ligne où figure **Cloud App Security**, cliquez sur **Créer**.
 
-    ![Capture d’écran de la page de modèles de Microsoft Flow, montrant le bouton Créer Cloud App Security.](media/tutorial-flow-templates-create.png)
+    ![Capture d’écran de la page de modèles de Power Automate, montrant le bouton Créer pour Cloud App Security.](media/tutorial-flow-templates-create.png)
 
 1. Dans la fenêtre contextuelle **Cloud App Security**, entrez le nom de la connexion (par exemple « Cloud App Security Token »), collez le jeton d’API que vous avez copié ,puis cliquez sur **Créer**.
 
     ![Capture d’écran de la fenêtre Cloud App Security, montrant l’entrée du nom et de la clé, et le bouton Créer.](media/tutorial-flow-templates-create-window.png)
 
-1. Dans la liste des applications, sur la ligne où apparaît **HTTP avec Azure AD**, choisissez les trois points à la fin de la ligne, puis cliquez sur **Ajouter une nouvelle connexion**.
+1. Dans la liste des applications, sur la ligne où figure **HTTP avec Azure AD**, cliquez sur **Se connecter**.
 
 1. Dans la fenêtre contextuelle **HTTP avec Azure AD**, pour les deux champs **URL de ressource de base** et **URI de la ressource Azure AD**, entrez `https://graph.microsoft.com`, puis cliquez sur **Se connecter** et entrez les informations d’identification d’administrateur que vous voulez utiliser avec le connecteur HTTP avec Azure AD.
 
@@ -92,7 +92,7 @@ Si vous n’avez pas de plan Microsoft Flow, [inscrivez-vous pour un compte d’
 
 1. Cliquez sur **Continuer**.
 
-    ![Capture d’écran de la fenêtre des modèles Microsoft Flow, montrant les actions effectuées et le bouton Continuer.](media/tutorial-flow-templates-continue.png)
+    ![Capture d’écran de la fenêtre des modèles Power Automate, montrant les actions effectuées et le bouton Continuer.](media/tutorial-flow-templates-continue.png)
 
 1. Une fois que tous les connecteurs sont connectés, dans la page du flux, sous **Appliquer à chaque machine**, vous pouvez si vous le souhaitez modifier le commentaire et le type d’analyse, puis cliquer sur **Enregistrer**.
 
@@ -110,9 +110,9 @@ Si vous n’avez pas de plan Microsoft Flow, [inscrivez-vous pour un compte d’
 
 Désormais, toutes les alertes déclenchées pour cette stratégie lancent le flux permettant d’exécuter l’analyse antivirus.
 
-Vous pouvez utiliser les étapes de ce tutoriel pour créer un large éventail d’actions basées sur les workflows afin d’étendre les fonctions correctives Cloud App Security, notamment d’autres actions Defender ATP. Pour afficher la liste des workflows Cloud App Security prédéfinis, dans Microsoft Flow, [recherchez « Cloud App Security »](https://go.microsoft.com/fwlink/?linkid=2102574).
+Vous pouvez utiliser les étapes de ce tutoriel pour créer un large éventail d’actions basées sur les workflows afin d’étendre les fonctions correctives Cloud App Security, notamment d’autres actions Defender ATP. Pour afficher la liste des workflows Cloud App Security prédéfinis, dans Power Automate, [recherchez « Cloud App Security »](https://go.microsoft.com/fwlink/?linkid=2102574).
 
 ## <a name="see-also"></a>Voir aussi
 
 > [!div class="nextstepaction"]
-> [S’intégrer à Microsoft Flow pour l’automatisation des alertes personnalisées](flow-integration.md)
+> [Intégration à Power Automate pour l’automatisation des alertes personnalisées](flow-integration.md)

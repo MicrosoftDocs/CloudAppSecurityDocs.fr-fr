@@ -4,19 +4,19 @@ description: Ce guide de démarrage rapide décrit le processus de mise en route
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 9/23/2019
+ms.date: 06/07/2020
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0b9f026c9509153cca5c51024616662983550ef7
-ms.sourcegitcommit: 0b929f7c8feed7dfb40d5294179fd5c6fc079614
+ms.openlocfilehash: 0ba3ba9d063e35c0dc95def25c2c69d351e24f22
+ms.sourcegitcommit: 3f0693bf32fef5b4819c51ca7eeaee751eb03df6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "74720675"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84611203"
 ---
 # <a name="quickstart-get-started-with-microsoft-cloud-app-security"></a>Démarrage rapide : Bien démarrer avec Microsoft Cloud App Security
 
@@ -27,7 +27,7 @@ Ce guide de démarrage rapide présente la procédure de mise en route de Cloud 
 Votre organisation doit disposer d’une licence permettant d’utiliser Cloud App Security. Pour plus d’informations sur les tarifs, consultez la [fiche technique sur les licences Cloud App Security](https://aka.ms/mcaslicensing).
 
 >[!NOTE]
->Il n’est pas nécessaire de disposer d’une licence Office 365 pour pouvoir utiliser Cloud App Security.
+>Cloud App Security ne nécessite pas de licence Office 365.
 
 ## <a name="prerequisites"></a>Prérequis
 
@@ -42,9 +42,9 @@ Votre organisation doit disposer d’une licence permettant d’utiliser Cloud A
 
 ## <a name="to-access-the-portal"></a>Accès au portail
 
-Pour accéder au portail Cloud App Security, suivez le lien [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com). Vous pouvez également accéder au portail via le **centre d’administration Microsoft 365** comme suit :
+Pour accéder au portail Cloud App Security, suivez le lien [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com). Vous pouvez également accéder au portail via le **[Centre d’administration Microsoft 365](https://security.microsoft.com)** de la façon suivante :
 
-1. Dans le centre d’administration Microsoft 365, cliquez sur l’icône du **lanceur d’applications**![icône du lanceur d’applications Office 365](media/o365-admin-centers-icon.png), puis sélectionnez **Sécurité**.
+1. Dans le menu latéral du Centre d’administration Microsoft 365, cliquez sur **Tout afficher**, puis sélectionnez **Sécurité**.
 
     ![Accès à partir d’Office 365](media/access-from-o365.png)
 
@@ -129,7 +129,7 @@ Les scores de risque attribués aux applications découvertes sont maintenant co
 ### <a name="why-personalize-your-environment"></a>Pourquoi personnaliser votre environnement ?
 
 Certaines fonctionnalités fonctionnent mieux quand elles sont adaptées à vos besoins.
-Offrez une meilleure expérience utilisateur avec vos propres modèles d’e-mail. Choisissez les notifications que vous recevez et personnalisez votre métrique de score de risque selon les préférences de votre organisation.
+Offrez une meilleure expérience utilisateur avec vos propres modèles d’e-mail. Choisissez les notifications à recevoir, et personnalisez votre métrique de score de risque selon les préférences de votre organisation.
 
 ## <a name="step-5-organize-the-data-according-to-your-needs"></a>Étape 5. [Organiser les données selon vos besoins](ip-tags.md)
 

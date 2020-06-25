@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 57fac7776efbb617a382a30f6bf68ac2578ad0a6
-ms.sourcegitcommit: e1a0d6a7d639a6d268b0104eb3e5532d2692288b
+ms.openlocfilehash: d8208d654774aefd776da4ba1b3b1cbfda4caae7
+ms.sourcegitcommit: 826d2ec022647bce6c3135c115a41ee894ff8ecd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "83551287"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84800705"
 ---
 # <a name="tutorial-block-download-of-sensitive-information"></a>Tutoriel : Bloquer le téléchargement des informations sensibles
 
@@ -74,7 +74,7 @@ Une fois cette tâche terminée, accédez au portail Cloud App Security et crée
 
 4. Définissez la **gravité de la stratégie** et la **catégorie**.
 
-5. Pour le **type de contrôle de session**, sélectionnez **Contrôler le téléchargement du fichier (avec DLP)** . Ce paramètre vous permet de surveiller toutes les activités de vos utilisateurs dans une session Salesforce et de contrôler le blocage et la protection des téléchargements en temps réel.
+5. Pour le **type de contrôle de session**, sélectionnez **Contrôler le téléchargement du fichier (avec inspection)** . Ce paramètre vous permet de surveiller toutes les activités de vos utilisateurs dans une session Salesforce et de contrôler le blocage et la protection des téléchargements en temps réel.
 
 6. Sous **Source de l’activité** dans la section **Activités remplissant toutes les conditions suivantes**, sélectionnez les filtres :
 
