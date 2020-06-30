@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: fcaf4dab75d85a392ad4b1f8607f9e43d2a9be4c
-ms.sourcegitcommit: 0b929f7c8feed7dfb40d5294179fd5c6fc079614
+ms.openlocfilehash: e7b5a4f1e703afb09a819e37296d7f57f31cd6c4
+ms.sourcegitcommit: ce980a54370383fe09e45bbec6d41109b39b0386
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "74459023"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85241617"
 ---
 # <a name="what-are-the-differences-between-microsoft-cloud-app-security-and-office-365-cloud-app-security"></a>Différences entre Microsoft Cloud App Security et la Sécurité des applications cloud Office 365
 
@@ -60,6 +60,7 @@ La Sécurité des applications cloud Office 365 est un sous-ensemble de Microsof
 ||Intégration à Microsoft Intelligent Security Graph|Oui|Oui|
 ||Stratégies des activités|Oui|Oui|
 |Contrôle d’application par accès conditionnel|Surveillance et contrôle des sessions en temps réel|Toute application cloud ou locale|Pour les applications Office 365|
+|Sécurité des plateformes cloud|Configurations de la sécurité|Pour Azure, AWS et GCP|Pour Azure|
 
 ## <a name="next-steps"></a>Étapes suivantes
 
