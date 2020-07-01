@@ -1,5 +1,5 @@
 ---
-title: Stratégies de protection des informations-Cloud App Security | Microsoft Docs
+title: Stratégies de protection des informations-Cloud App Security
 description: Cette rubrique décrit les étapes permettant de configurer de nombreuses stratégies de protection des informations dans Cloud App Security.
 author: shsagir
 ms.author: shsagir
@@ -9,12 +9,12 @@ ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 681a2389b0a1a47013bdec2d4925cf47326330a9
-ms.sourcegitcommit: 826d2ec022647bce6c3135c115a41ee894ff8ecd
+ms.openlocfilehash: fcec14fa59661c2d1f066d531779f433dc257070
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84800829"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624898"
 ---
 # <a name="information-protection-policies"></a>Stratégies de protection des informations
 

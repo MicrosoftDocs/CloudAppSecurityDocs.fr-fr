@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b86f8ef6eef534301b21371021295587c6535786
-ms.sourcegitcommit: ecb1835d1cd880de38f32ce7a7031b0015f3cae5
+ms.openlocfilehash: f69522921f3bd9996e8a0146cdf6ea224691e1f8
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81229919"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85623264"
 ---
 # <a name="connect-okta-to-microsoft-cloud-app-security"></a>Connecter Okta à Microsoft Cloud App Security
 
@@ -59,7 +59,7 @@ Cet article fournit des instructions pour connecter Microsoft Cloud App Security
 
     ![connecter Okta](media/connect-okta.png "connecter Okta")
 
-1. Dans la fenêtre contextuelle qui s’affiche, dans le champ **Domaine**, entrez votre domaine Okta et collez votre jeton dans le champ **Jeton**.
+1. Dans la fenêtre contextuelle, dans le champ **domaine** , entrez votre domaine Okta et collez votre jeton dans le champ **jeton** .
 
 1. Cliquez sur **Connect** (Connecter) pour créer le jeton pour Okta dans Cloud App Security.
 
@@ -74,6 +74,6 @@ Si vous rencontrez des problèmes lors de la connexion de l’application, consu
 ## <a name="next-steps"></a>Étapes suivantes
 
 > [!div class="nextstepaction"]
-> [Contrôler les applications Cloud avec des stratégies](control-cloud-apps-with-policies.md)
+> [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

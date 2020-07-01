@@ -1,5 +1,5 @@
 ---
-title: Visibilité sur les comptes d’application cloud – Cloud App Security | Microsoft Docs
+title: Visibilité sur les comptes d’applications Cloud-Cloud App Security
 description: Cet article fournit des informations sur la vérification des comptes à partir de vos applications connectées.
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5a32b56b0ad310f5c7572f8113e4a9a33b722059
-ms.sourcegitcommit: d72c768e9a5fe087995ab1185ca33ef68168bee6
+ms.openlocfilehash: b9cde676dad0b86633124d1f485c1f2276cbb208
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "83704274"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624434"
 ---
 # <a name="accounts"></a>Comptes
 

@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 12/24/2019
+ms.date: 06/29/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0b2106faed750a2eba06ae505a6d7d9cf17ca1be
-ms.sourcegitcommit: f8d170b0da8e8d7f723ddc9e845595f64dc79a02
+ms.openlocfilehash: 3c0bb1f5a3ff0241067d23bd455865d40c29c652
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85323768"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624814"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-integration-with-microsoft-cloud-app-security"></a>Intégration de Microsoft Defender-protection avancée contre les menaces avec Microsoft Cloud App Security
 
@@ -54,6 +54,8 @@ Seul, Cloud App Security collecte des journaux de vos points de terminaison en u
 
 Pour vous permettre d’effectuer des Cloud Discovery sur d’autres plateformes, il est préférable d’utiliser le [collecteur de journaux](discovery-docker.md)Cloud App Security, ainsi que l’intégration de Microsoft Defender ATP pour surveiller vos ordinateurs Windows 10.
 
+[Regardez nos vidéos](#related-videos) présentant les avantages de l’utilisation de Microsoft Defender ATP avec Cloud App Security.
+
 ## <a name="how-to-integrate-microsoft-defender-atp-with-cloud-app-security"></a>Intégration de Microsoft Defender ATP à Cloud App Security
 
 Pour activer l’intégration de Microsoft Defender ATP avec Cloud App Security :
@@ -81,10 +83,11 @@ Une fois que vous avez intégré Microsoft Defender ATP à Cloud App Security, v
 5. Vous pouvez explorer chaque machine répertoriée et utiliser les onglets pour afficher les données de la recherche. Recherchez des corrélations entre les machines, les utilisateurs, les adresses IP et les applications qui ont été impliqués dans des incidents :
 
     - **Vue d’ensemble**
-        - Transactions : informations sur le nombre de transactions qui ont eu lieu sur l’ordinateur pendant la période sélectionnée.
-        - Trafic total : informations sur la quantité totale de trafic (en Mo) sur la période sélectionnée.
+        - **Niveau de risque**de l’ordinateur : indique le risque que le profil de l’ordinateur soit relatif à d’autres ordinateurs de votre organisation, comme indiqué par la gravité (haute, moyenne, faible, informations). Cloud App Security utilise les profils d’ordinateur de Microsoft Defender ATP pour chaque ordinateur en fonction de l’analytique avancée. L’activité qui est anormale pour la ligne de base d’une machine est évaluée et détermine le niveau de risque de la machine. Utilisez le niveau de risque de l’ordinateur pour déterminer les machines à examiner en premier.
+        - **Transactions**: informations sur le nombre de transactions qui ont eu lieu sur l’ordinateur pendant la période sélectionnée.
+        - **Trafic total**: informations sur la quantité totale de trafic (en Mo) sur la période sélectionnée.
         - Charge : informations sur la quantité totale de trafic (en Mo) téléchargée par l’ordinateur sur la période sélectionnée.
-        - Téléchargements : informations sur la quantité totale de trafic (en Mo) téléchargée par l’ordinateur sur la période sélectionnée.
+        - **Téléchargements**: informations sur la quantité totale de trafic (en Mo) téléchargée par l’ordinateur sur la période sélectionnée.
     - **Applications découvertes**  
   Répertorie toutes les applications découvertes qui ont fait l’objet d’un accès par l’ordinateur.
     - **Historique de l’utilisateur**  
@@ -144,6 +147,9 @@ Parfois, l’accès à une application non approuvée n’est pas bloqué, soit 
 > [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)
 
 ## <a name="related-videos"></a>Vidéos associées
+
+> [!div class="nextstepaction"]
+> [Découvrir et bloquer Shadow IT à l’aide de Microsoft Defender ATP](https://www.youtube.com/watch?v=MsHkTOoqSQo)
 
 > [!div class="nextstepaction"]
 > [Découverte de l’informatique fantôme au-delà du réseau d’entreprise](https://www.youtube.com/watch?v=f8hbvbY1Hnc)

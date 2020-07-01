@@ -1,11 +1,11 @@
 ---
-title: Connecter des applications pour obtenir visibilité et contrôle – Cloud App Security | Microsoft Docs
+title: Connectez les applications pour bénéficier d’une visibilité et d’un contrôle Cloud App Security
 description: Cet article décrit le processus de connexion d’applications à des applications dans le cloud de votre organisation avec des connecteurs d’API.
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 05/24/2020
+ms.date: 06/28/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5c12226c36cba270ad5b54ffdb76cb8b228c2480
-ms.sourcegitcommit: 7b6124e5ecb3fa8fc1176d89e06b052f2a53a310
+ms.openlocfilehash: 5c48fff030c1f008d9361796eafe4ba49b8b0b82
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83854199"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624540"
 ---
 # <a name="connect-apps"></a>Connecter des applications
 
@@ -100,6 +100,7 @@ Pour utiliser des connecteurs d’applications, vous devez vérifier que vous av
 | AWS | | Utilisateur récemment créé |
 | Box | Entreprise | Il est fortement recommandé de vous connecter à Box en tant qu’administrateur. La connexion en tant que coadministrateur entraînera uniquement une visibilité partielle des données. Si vous vous connectez en tant que coadministrateur, sélectionnez toutes les autorisations. |
 | Dropbox | Business/Entreprises | Admin |
+| GitHub | Cloud GitHub Enterprise | Propriétaire |
 | GCP | | Consultez les [conditions préalables Connect GCP](connect-google-gcp-to-microsoft-cloud-app-security.md#prerequisites) |
 | G Suite | Compte G Suite Business ou Entreprise<br /><br />G Suite Enterprise (au minimum) | Super administrateur |
 | Office 365 | | Administrateur général |
@@ -113,6 +114,15 @@ Pour utiliser des connecteurs d’applications, vous devez vérifier que vous av
 
 Cloud App Security est déployé dans Azure et entièrement intégré à [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/). Toutes les interactions avec les applications Cloud App Security et le trafic envoyé à Cloud App Security, y compris le chargement des journaux de découverte, sont acheminés via l' **homologation publique** ExpressRoute pour améliorer la latence, les performances et la sécurité. Aucune étape de configuration n’est nécessaire côté client.
 Pour plus d’informations sur le peering public, consultez [Circuits ExpressRoute et domaines de routage](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/).
+
+## <a name="disable-app-connectors"></a>Désactiver les connecteurs d’application
+
+Pour désactiver les applications connectées :
+
+1. Dans la page **applications connectées** , dans la ligne appropriée, cliquez sur les trois points et sélectionnez **désactiver le connecteur d’applications**.
+1. Dans la fenêtre contextuelle, cliquez sur **désactiver l’instance App Connector** pour confirmer l’action.
+
+Une fois désactivée, l’instance de connecteur cesse de consommer les données du connecteur.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

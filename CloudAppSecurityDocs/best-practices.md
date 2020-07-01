@@ -7,31 +7,31 @@ ms.service: cloud-app-security
 ms.topic: best-practice
 ms.date: 10/24/2019
 ms.collection: M365-security-compliance
-ms.openlocfilehash: e90a340c206c0bfb1c01542dd184664d1fe87dfe
-ms.sourcegitcommit: 4f3883a9e85d0aaf2802b10433b221c3f1838d88
+ms.openlocfilehash: 6b07d3dd484fba64b8feda1d5b5fb37a20cc09f3
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79285323"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624306"
 ---
 # <a name="cloud-app-security-best-practices"></a>Meilleures pratiques en matière de Cloud App Security
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Cet article présente les meilleures pratiques pour la protection de votre organisation à l’aide de Microsoft Cloud App Security. Ces meilleures pratiques sont issues de notre expérience avec les Cloud App Security et les expériences des clients comme vous.
 
 Les meilleures pratiques décrites dans cet article sont les suivantes :
 
 > [!div class="checklist"]
-> * [Découvrir et évaluer les applications Cloud](#discover-and-assess-cloud-apps)
-> * [Appliquer les stratégies de gouvernance Cloud](#apply-cloud-governance-policies)
+> * [Découvrir et évaluer des applications cloud](#discover-and-assess-cloud-apps)
+> * [Appliquer des stratégies de gouvernance cloud](#apply-cloud-governance-policies)
 > * [Limiter l’exposition des données partagées et appliquer des stratégies de collaboration](#limit-exposure-of-shared-data-and-enforce-collaboration-policies)
-> * [Découverte, classification, étiquetage et protection des données réglementées et sensibles stockées dans le Cloud](#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)
-> * [Appliquer des stratégies de conformité et DLP pour les données stockées dans le Cloud](#enforce-dlp-and-compliance-policies-for-data-stored-in-the-cloud)
-> * [Bloquer et protéger le téléchargement de données sensibles sur des appareils non gérés ou risqués](#block-and-protect-download-of-sensitive-data-to-unmanaged-or-risky-devices)
-> * [Sécuriser la collaboration avec les utilisateurs externes en appliquant des contrôles de session en temps réel](#secure-collaboration-with-external-users-by-enforcing-real-time-session-controls)
-> * [Détectez les menaces du Cloud, les comptes compromis, les Insiders malveillants et les ransomware](#detect-cloud-threats-compromised-accounts-malicious-insiders-and-ransomware)
-> * [Utiliser la piste d’audit des activités pour des investigations d’investigation](#use-the-audit-trail-of-activities-for-forensic-investigations)
+> * [Découvrir, classifier, étiqueter et protéger des données réglementées et sensibles stockées dans le cloud](#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)
+> * [Appliquer des stratégies de conformité et DLP aux données stockées dans le cloud](#enforce-dlp-and-compliance-policies-for-data-stored-in-the-cloud)
+> * [Bloquer et protéger le téléchargement de données sensibles sur des appareils non gérés ou à risque](#block-and-protect-download-of-sensitive-data-to-unmanaged-or-risky-devices)
+> * [Sécuriser votre collaboration avec les utilisateurs externes en appliquant des contrôles de session en temps réel](#secure-collaboration-with-external-users-by-enforcing-real-time-session-controls)
+> * [Détecter les menaces cloud, les comptes compromis, les insiders malveillants et les ransomware](#detect-cloud-threats-compromised-accounts-malicious-insiders-and-ransomware)
+> * [Utiliser la piste d’audit des activités pour des investigations forensiques](#use-the-audit-trail-of-activities-for-forensic-investigations)
 > * [Sécuriser les services IaaS et les applications personnalisées](#secure-iaas-services-and-custom-apps)
 
 ## <a name="discover-and-assess-cloud-apps"></a>Découvrir et évaluer des applications cloud
@@ -43,7 +43,7 @@ L’intégration de Cloud App Security avec Microsoft Defender-protection avanc�
 **Pour plus d’informations**:
 
 * [Intégration de Microsoft Defender ATP à Cloud App Security](wdatp-integration.md)
-* [Configurer Cloud Discovery](set-up-cloud-discovery.md)
+* [Configuration de Cloud Discovery](set-up-cloud-discovery.md)
 * [Détectez et gérez le cliché instantané de votre réseau](tutorial-shadow-it.md)
 
 ---
@@ -54,7 +54,7 @@ L’intégration de Cloud App Security avec Microsoft Defender-protection avanc�
 
 * [Stratégies Cloud Discovery](cloud-discovery-policies.md)
 * [Stratégie de détection des anomalies Cloud Discovery](cloud-discovery-anomaly-detection-policy.md)
-* [Bénéficiez d’une analyse comportementale et d’une détection des anomalies instantanées](anomaly-detection-policy.md)
+* [Obtenir instantanément une détection des anomalies et une analytique comportementale](anomaly-detection-policy.md)
 
 ---
 
@@ -92,7 +92,7 @@ Cloud App Security vous offre la possibilité d’examiner et de surveiller les 
 **Pour plus d’informations**:
 
 * [Connecter des applications](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
-* [Connectez Office 365 à Microsoft Cloud App Security](connect-office-365-to-microsoft-cloud-app-security.md)
+* [Connecter Office 365 à Microsoft Cloud App Security](connect-office-365-to-microsoft-cloud-app-security.md)
 
 ---
 
@@ -120,7 +120,7 @@ Cloud App Security vous offre la possibilité d’examiner et de surveiller les 
 **Détail**: la connexion d’Office 365 à Cloud App Security vous offre une visibilité immédiate des activités de vos utilisateurs, des fichiers auxquels ils accèdent et fournit des actions de gouvernance pour Office 365, SharePoint, OneDrive, teams, Power bi, Exchange et Dynamics.  
 **Pour plus d’informations**:
 
-* [Administration des applications connectées](governance-actions.md)
+* [Gouvernance des applications connectées](governance-actions.md)
 
 ---
 ---
@@ -173,7 +173,7 @@ Cloud App Security vous offre la possibilité d’examiner et de surveiller les 
 **Détails**: créez une stratégie de fichier qui détecte quand un utilisateur tente de partager un fichier avec l’étiquette classification **confidentielle** avec une personne externe à votre organisation et configure son action de gouvernance pour supprimer les utilisateurs externes. Cette stratégie garantit que vos données confidentielles ne laissent pas votre organisation et que les utilisateurs externes ne peuvent pas y accéder.  
 **Pour plus d’informations**:
 
-* [Administration des applications connectées](governance-actions.md)
+* [Gouvernance des applications connectées](governance-actions.md)
 
 ---
 ---
@@ -186,7 +186,7 @@ Cloud App Security vous offre la possibilité d’examiner et de surveiller les 
 **Détail**: utilisez contrôle d’application par accès conditionnel pour définir des contrôles sur vos applications SaaS. Vous pouvez créer des stratégies de session pour surveiller vos sessions à risque élevé et faible niveau de confiance. De même, vous pouvez créer des stratégies de session pour bloquer et protéger les téléchargements par les utilisateurs qui essaient d’accéder à des données sensibles à partir d’appareils non gérés ou risqués. Si vous ne créez pas de stratégies de session pour surveiller les sessions à haut risque, vous perdez la possibilité de bloquer et de protéger les téléchargements dans le client Web, ainsi que la possibilité de surveiller la session de faible confiance dans les applications Microsoft et tierces.  
 **Pour plus d’informations**:
 
-* [Protéger les applications avec Microsoft Cloud App Security contrôle d’application par accès conditionnel](proxy-intro-aad.md)
+* [Protéger les applications avec le contrôle d’application par accès conditionnel de Microsoft Cloud App Security](proxy-intro-aad.md)
 * [Stratégies de session](session-policy-aad.md)
 
 ---
@@ -200,7 +200,7 @@ Cloud App Security vous offre la possibilité d’examiner et de surveiller les 
 **Détails**: pour sécuriser la collaboration dans votre environnement, vous pouvez créer une stratégie de session pour surveiller les sessions entre vos utilisateurs internes et externes. Cela vous permet non seulement de surveiller la session entre vos utilisateurs (et de les informer que leurs activités de session sont surveillées), mais également de limiter les activités spécifiques. Lorsque vous créez des stratégies de session pour surveiller l’activité, vous pouvez choisir les applications et les utilisateurs que vous souhaitez analyser.  
 **Pour plus d’informations**:
 
-* [Protéger les applications avec Microsoft Cloud App Security contrôle d’application par accès conditionnel](proxy-intro-aad.md)
+* [Protéger les applications avec le contrôle d’application par accès conditionnel de Microsoft Cloud App Security](proxy-intro-aad.md)
 * [Stratégies de session](session-policy-aad.md)
 
 ---
@@ -225,7 +225,7 @@ Les stratégies de détection des anomalies sont déclenchées lorsque des activ
 
 **Pour plus d’informations**:
 
-* [Bénéficiez d’une analyse comportementale et d’une détection des anomalies instantanées](anomaly-detection-policy.md)
+* [Obtenir instantanément une détection des anomalies et une analytique comportementale](anomaly-detection-policy.md)
 * [Utilisation des balises et des plages d’adresses IP](ip-tags.md)
 * [Surveiller les alertes dans Cloud App Security](monitor-alerts.md)
 
@@ -269,23 +269,27 @@ Lorsque vous ignorez des alertes, il est important d’examiner et de comprendre
 
 ## <a name="secure-iaas-services-and-custom-apps"></a>Sécuriser les services IaaS et les applications personnalisées
 
-**Meilleure pratique**: connecter Azure et AWS  
+**Bonne pratique**: Connectez Azure, AWS et GCP  
 **Détail**: la connexion de chacune de ces applications de stockage cloud à Cloud App Security vous aide à améliorer vos fonctionnalités de détection des menaces. En surveillant les activités d’administration et de connexion pour ces services, vous pouvez détecter et être informé des éventuelles attaques par force brute, de l’utilisation malveillante d’un compte d’utilisateur privilégié et d’autres menaces dans votre environnement. Par exemple, vous pouvez identifier les risques tels que les suppressions inhabituelles de machines virtuelles ou même les activités d’emprunt d’identité dans ces applications.  
 **Pour plus d’informations**:
 
-* [Connexion d’Azure à Microsoft Cloud App Security](connect-azure-to-microsoft-cloud-app-security.md)
+* [Connecter Azure à Microsoft Cloud App Security](connect-azure-to-microsoft-cloud-app-security.md)
 * [Connecter AWS à Microsoft Cloud App Security](connect-aws-to-microsoft-cloud-app-security.md)
+* [Connecter GCP à Microsoft Cloud App Security (version préliminaire)](connect-google-gcp-to-microsoft-cloud-app-security.md)
 
 ---
 
-**Recommandation : examiner**les évaluations de la configuration de la sécurité pour Azure et AWS  
+**Recommandation : examiner**les évaluations de la configuration de la sécurité pour Azure, AWS et GCP  
 **Détail**: l’intégration à Azure Security Center vous fournit une évaluation de la configuration de la sécurité de votre environnement Azure. L’évaluation fournit des recommandations pour le contrôle de la configuration et de la sécurité manquant. L’examen de ces recommandations vous aide à identifier les anomalies et les vulnérabilités potentielles dans votre environnement, et à accéder directement à l’emplacement approprié dans le portail Azure Security pour les résoudre.
 
-AWS vous donne la possibilité d’obtenir une visibilité de vos recommandations en matière de configurations de sécurité sur la façon d’améliorer la sécurité du Cloud. Grâce à ces recommandations, vous pouvez surveiller l’état de conformité de vos comptes AWS.  
+AWS et GCP vous donnent la possibilité d’obtenir une visibilité de vos recommandations en matière de configurations de sécurité sur la façon d’améliorer la sécurité du Cloud.
+
+Utilisez ces recommandations pour surveiller l’état de conformité et la position de sécurité de toute votre organisation, y compris les abonnements Azure, les comptes AWS et les projets GCP.  
 **Pour plus d’informations**:
 
 * [Configuration de la sécurité pour Azure](security-config.md)
 * [Configuration de la sécurité pour AWS](security-config-aws.md)
+* [Configuration de la sécurité pour GCP](security-config-gcp.md)
 
 ---
 

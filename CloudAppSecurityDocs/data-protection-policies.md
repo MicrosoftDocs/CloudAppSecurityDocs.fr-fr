@@ -1,5 +1,5 @@
 ---
-title: Surveiller et protéger les fichiers dans les applications cloud - Cloud App Security | Microsoft Docs
+title: Surveiller et protéger des fichiers dans des applications Cloud-Cloud App Security
 description: Cet article décrit la procédure de configuration d’une stratégie de données pour superviser et contrôler les données ainsi que les fichiers durant l’usage des applications cloud de votre organisation.
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 345f3bea6e204598a3ce4af7c06d7c1540fec032
-ms.sourcegitcommit: ecb1835d1cd880de38f32ce7a7031b0015f3cae5
+ms.openlocfilehash: 317595b377d19b1d6f9a06b316cb14e4d1ad4c1c
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81241463"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624599"
 ---
 # <a name="file-policies"></a>Stratégies de fichier
 
@@ -75,7 +75,7 @@ Pour créer une stratégie de fichier, procédez comme suit :
 
 1. **Créez un filtre pour les fichiers sur lesquels cette stratégie s’appliquera** pour définir les applications découvertes qui déclenchent cette stratégie. Affinez les filtres de stratégie jusqu’à atteindre un ensemble précis de fichiers sur lesquels vous voulez agir. Soyez aussi restrictif que possible pour éviter les faux positifs. Par exemple, si vous souhaitez supprimer les autorisations publiques, n’oubliez pas d’ajouter le filtre **public** , si vous souhaitez supprimer un utilisateur externe, utilisez le filtre « externe », etc.
    > [!NOTE]
-   > Quand vous utilisez des filtres de stratégie, le filtre **Contains (Contient)** recherche uniquement des mots entiers, séparés par des virgules, points, espaces ou traits de soulignement. Par exemple, si vous recherchez **malware** ou **virus**, il trouve virus_malware_file.exe, mais pas malwarevirusfile.exe. Si vous recherchez **Malware. exe**, vous trouvez tous les fichiers avec programme malveillant ou exe dans leur nom de fichier, tandis que si vous recherchez **« Malware. exe »** (avec les guillemets), vous ne trouvez que les fichiers qui contiennent exactement « Malware. exe ». **Equals (Est égal à)** recherche uniquement la chaîne complète ; par exemple, si vous recherchez **malware.exe**, il trouve malware.exe, mais pas malware.exe.txt.
+   > Quand vous utilisez des filtres de stratégie, le filtre **Contains (Contient)** recherche uniquement des mots entiers, séparés par des virgules, points, espaces ou traits de soulignement. Par exemple, si vous recherchez **malware** ou **virus**, il trouve virus_malware_file.exe, mais pas malwarevirusfile.exe. Si vous recherchez **malware.exe**, vous trouvez tous les fichiers avec programme malveillant ou exe dans leur nom de fichier, tandis que si vous recherchez **« malware.exe »** (avec les guillemets), vous ne trouvez que les fichiers qui contiennent exactement « malware.exe ». **Equals (Est égal à)** recherche uniquement la chaîne complète ; par exemple, si vous recherchez **malware.exe**, il trouve malware.exe, mais pas malware.exe.txt.
 1. Sous le premier filtre **Appliquer à**, sélectionnez **tous les fichiers excepté les dossiers sélectionnés** ou **dossiers sélectionnés** pour Box, SharePoint, Dropbox, OneDrive. Vous pouvez ainsi appliquer votre stratégie de fichiers à tous les fichiers de l’application ou à des dossiers spécifiques. Votre êtes redirigé pour vous connecter à l’application cloud. Ajoutez ensuite les dossiers appropriés.
 
 1. Sous le deuxième filtre **Appliquer à**, sélectionnez **tous les propriétaires de fichiers**, **propriétaires de fichiers de groupes d’utilisateurs sélectionnés** ou **tous les propriétaires de fichiers à l’exception des groupes d’utilisateurs sélectionnés**. Sélectionnez ensuite les groupes d’utilisateurs appropriés pour déterminer les utilisateurs et les groupes à inclure dans la stratégie.

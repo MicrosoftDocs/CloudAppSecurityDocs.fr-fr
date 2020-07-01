@@ -1,5 +1,5 @@
 ---
-title: Forum Aux Questions - Cloud App Security | Microsoft Docs
+title: Forum aux questions (FAQ)-Cloud App Security
 description: Cet article fournit les réponses aux questions fréquentes sur Cloud App Security.
 keywords: ''
 author: shsagir
@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 043615ccdde609f77f6804ee9040e1df55a321f4
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 072a4205c62158f73922d4648d5d10890d73b82c
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74719860"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624470"
 ---
 # <a name="frequently-asked-questions"></a>Forum aux questions
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Cet article fournit les réponses aux questions fréquentes sur Cloud App Security.
 
@@ -38,7 +38,7 @@ Vous devez être administrateur général, administrateur de conformité ou admi
  Add-MsolRoleMember -RoleName "Compliance Administrator" -RoleMemberEmailAddress "XX@XX.XX"
 ```
 
- ou
+ OR
 
 ```powershell
  Add-MsolRoleMember -RoleName "Security Administrator" -RoleMemberEmailAddress “XX@XX.XX”

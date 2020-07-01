@@ -1,5 +1,5 @@
 ---
-title: Générer des rapports - Microsoft Cloud App Security | Microsoft Docs
+title: Générer des rapports-Microsoft Cloud App Security
 description: Cet article fournit des instructions pour générer des rapports de gestion des données dans Microsoft Cloud App Security.
 keywords: ''
 author: shsagir
@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 3d87522306932229b9defd05e760672e875a28ab
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 88cf54f981ef02b76cd3286f3171e98f5f33752b
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720171"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624323"
 ---
-# <a name="generate-data-management-reports"></a>Générer des rapports de gestion de données
+# <a name="generate-data-management-reports"></a>Générer des rapports de gestion des données
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Microsoft Cloud App Security vous permet de générer des rapports qui fournissent une vue d’ensemble des fichiers dans vos applications cloud.
 
@@ -32,7 +32,7 @@ Pour générer ces rapports
 1. Accédez à **Fichiers**.
 2. En haut à droite, cliquez sur les trois points et sous **Rapports de gestion de données**, sélectionnez un des rapports suivants.
 
-    ![rapports](media/reports.png)
+    ![reports](media/reports.png)
 
 ## <a name="data-sharing-overview"></a>Vue d’ensemble du partage de données
 
@@ -54,6 +54,6 @@ Ce rapport répertorie les utilisateurs qui partagent des fichiers d’entrepris
 ## <a name="next-steps"></a>Étapes suivantes
 
 > [!div class="nextstepaction"]
-> [Contrôler](control.md)
+> [Contrôle](control.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

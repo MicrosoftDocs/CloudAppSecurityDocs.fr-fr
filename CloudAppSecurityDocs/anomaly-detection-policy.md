@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 03/24/2020
+ms.date: 06/28/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 85cf523e8cc733156c2365da114cc893b022e1e3
-ms.sourcegitcommit: 223c9e4cefe6986537dcfbd697a236a3cee1768c
+ms.openlocfilehash: d5ebc12c77fa8e2a9b3b1ccb006493a02771c296
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84801148"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624354"
 ---
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>Obtenir instantanément une détection des anomalies et une analytique comportementale
 
@@ -83,7 +83,7 @@ Les stratégies de détection d’anomalie suivantes sont disponibles :
     >   * G Suite
     >   * Office 365
 
-### <a name="activity-from-anonymous-ip-addresses"></a>Activité depuis des adresses IP anonymes
+### <a name="activity-from-anonymous-ip-addresses"></a>Activité depuis des adresses IP anonymes
 
 * Cette détection identifie que les utilisateurs étaient actifs depuis une adresse IP qui a été identifiée comme une adresse IP de proxy anonyme. Ces proxys sont utilisés par les personnes qui souhaitent masquer l’adresse IP de leur appareil et peuvent être utilisés à des fins malveillantes. Cette détection utilise un algorithme d’apprentissage automatique qui réduit les « faux positifs », comme les adresses IP mal balisées qui sont couramment utilisées par les utilisateurs de l’organisation.
 
@@ -113,9 +113,14 @@ La détection recherche les utilisateurs dont le compte a été clôturé dans A
 
 * Cette détection dresse le profil de votre environnement et déclenche des alertes lorsque des règles suspectes qui suppriment ou déplacent des messages ou des dossiers sont définies dans la boîte de réception d'un utilisateur. Cela peut indiquer que le compte de l’utilisateur est compromis, que des messages sont intentionnellement masqués et que la boîte aux lettres est utilisée pour distribuer du courrier indésirable ou des programmes malveillants dans votre organisation.
 
-### <a name="suspicious-email-deletion-activity-preview"></a>Activité suspecte de suppression d’e-mails (préversion)
+### <a name="suspicious-email-deletion-activity-preview"></a>Activité de suppression des e-mails suspects (version préliminaire)
 
-* Cette stratégie Profile votre environnement et déclenche des alertes lorsqu’un utilisateur effectue des activités de suppression d’e-mails suspectes dans une seule session. Cette stratégie peut indiquer qu’une boîte aux lettres utilisateur peut être compromise par des vecteurs d’attaque potentiels, tels que la communication de commande et de contrôle (C&C/C2) par courrier électronique.
+* Cette stratégie Profile votre environnement et déclenche des alertes lorsqu’un utilisateur effectue des activités de suppression d’e-mails suspectes dans une seule session. Cette stratégie peut indiquer que les boîtes aux lettres d’un utilisateur peuvent être compromises par des vecteurs d’attaque potentiels tels que la communication de commande et de contrôle (C&C/C2) par courrier électronique.
+
+> [!NOTE]
+> Cloud App Security s’intègre à Office-protection avancée contre les menaces (Office ATP) pour assurer la protection d’Exchange Online, y compris la détonation d’URL, la protection contre les programmes malveillants, etc. Une fois qu’Office ATP est activé, vous pouvez commencer à voir les alertes dans le journal d’activité Cloud App Security.
+
+<!-- // MATP? Delay tile start appearing? -->
 
 ### <a name="unusual-activities-by-user"></a>Activités inhabituelles (par utilisateur)
 

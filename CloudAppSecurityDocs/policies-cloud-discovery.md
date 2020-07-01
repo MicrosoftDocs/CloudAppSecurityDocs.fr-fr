@@ -1,5 +1,5 @@
 ---
-title: Stratégies de Cloud Discovery-Cloud App Security | Microsoft Docs
+title: Stratégies de Cloud Discovery-Cloud App Security
 description: Cet article décrit les étapes permettant de configurer de nombreuses stratégies de Cloud Discovery dans Cloud App Security.
 author: shsagir
 ms.author: shsagir
@@ -9,26 +9,26 @@ ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 58208567133bf9c8257e456a415c60ab3dacee0b
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: f76e77edff81d8104ecafa3ba03d146400a86dea
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74719199"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624918"
 ---
 # <a name="cloud-discovery-policies"></a>Stratégies Cloud Discovery
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Cet article fournit une vue d’ensemble de la prise en main de l’utilisation de Cloud App Security pour obtenir une visibilité de l’ensemble de votre organisation en utilisant des Cloud Discovery.
 
 Cloud App Security vous permet de détecter et d’analyser les applications Cloud en cours d’utilisation dans l’environnement de votre organisation. Le tableau de bord Cloud Discovery affiche toutes les applications Cloud en cours d’exécution dans l’environnement et les classe par fonction et préparation de l’entreprise. Pour chaque application, Découvrez les utilisateurs, les adresses IP, les machines, les transactions et l’évaluation des risques associés sans avoir à installer un agent sur vos appareils de point de terminaison.
 
-## Détection d’une nouvelle utilisation d’applications volumineuses ou à grande quantité<a name= "detect-volume"></a>
+## <a name="detect-new-high-volume-or-wide-app-use"></a>Détection d’une nouvelle utilisation d’applications volumineuses ou à grande quantité<a name= "detect-volume"></a>
 
 Détectez les nouvelles applications qui sont fortement utilisées, en termes de nombre d’utilisateurs ou de volume de trafic dans votre organisation.
 
-### <a name="prerequisites"></a>Conditions préalables
+### <a name="prerequisites"></a>Prérequis
 
 Configurez le chargement automatique des journaux pour les rapports de Cloud Discovery continus, comme décrit dans [configurer le chargement automatique des journaux pour les rapports continus](configure-automatic-log-upload-for-continuous-reports.md).
 
@@ -49,7 +49,7 @@ Configurez le chargement automatique des journaux pour les rapports de Cloud Dis
 
 Détectez les risques potentiels de votre organisation dans les applications Cloud qui ne répondent pas à vos normes de sécurité.
 
-### <a name="prerequisites"></a>Conditions préalables
+### <a name="prerequisites"></a>Prérequis
 
 Configurez le chargement automatique des journaux pour les rapports de Cloud Discovery continus, comme décrit dans [configurer le chargement automatique des journaux pour les rapports continus](configure-automatic-log-upload-for-continuous-reports.md).
 
@@ -75,7 +75,7 @@ Configurez le chargement automatique des journaux pour les rapports de Cloud Dis
 
 Vous pouvez détecter quand vos employés continuent d’utiliser des applications non approuvées en remplacement des applications approuvées pour l’entreprise.
 
-### <a name="prerequisites"></a>Conditions préalables
+### <a name="prerequisites"></a>Prérequis
 
 - Configurez le chargement automatique des journaux pour les rapports de Cloud Discovery continus, comme décrit dans [configurer le chargement automatique des journaux pour les rapports continus](configure-automatic-log-upload-for-continuous-reports.md).
 
@@ -95,7 +95,7 @@ Vous pouvez détecter quand vos employés continuent d’utiliser des applicatio
 
 Détectez les modèles d’utilisation du trafic anormal (chargements/téléchargements) dans vos applications Cloud, qui proviennent d’utilisateurs ou d’adresses IP au sein du réseau de votre organisation.
 
-### <a name="prerequisites"></a>Conditions préalables
+### <a name="prerequisites"></a>Prérequis
 
 Configurez le chargement automatique des journaux pour les rapports de Cloud Discovery continus, comme décrit dans [configurer le chargement automatique des journaux pour les rapports continus](configure-automatic-log-upload-for-continuous-reports.md).
 
@@ -118,7 +118,7 @@ Configurez le chargement automatique des journaux pour les rapports de Cloud Dis
 
 Détection de l’exfiltration des données potentielles par un utilisateur vers une application de stockage cloud non approuvée.
 
-### <a name="prerequisites"></a>Conditions préalables
+### <a name="prerequisites"></a>Prérequis
 
 Configurez le chargement automatique des journaux pour les rapports de Cloud Discovery continus, comme décrit dans [configurer le chargement automatique des journaux pour les rapports continus](configure-automatic-log-upload-for-continuous-reports.md).
 
@@ -136,7 +136,7 @@ Configurez le chargement automatique des journaux pour les rapports de Cloud Dis
 
 Bénéficiez d’une visibilité et d’un contrôle sur les [applications OAuth](investigate-risky-oauth.md) installées dans des applications telles que G suite, Office 365 et Salesforce. Les applications OAuth qui demandent des autorisations élevées et qui ont une utilisation communautaire rare peuvent être considérées comme risquées.
 
-### <a name="prerequisites"></a>Conditions préalables
+### <a name="prerequisites"></a>Prérequis
 
 L’application G suite, Office 365 ou Salesforce doit être connectée à l’aide de [connecteurs d’application](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 

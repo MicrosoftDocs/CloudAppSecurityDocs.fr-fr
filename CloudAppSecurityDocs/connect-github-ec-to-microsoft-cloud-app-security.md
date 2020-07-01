@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 06/02/2020
+ms.date: 06/28/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,18 +15,16 @@ ROBOTS: NOINDEX
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 3941ea5141049f23ed8a187df5c29192883203c8
-ms.sourcegitcommit: 0e8065703810347c86567d636293bf6d41df1a84
+ms.openlocfilehash: f39ede3da1483acb4fd47c0708e3c244ff458aa5
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85256107"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85623329"
 ---
-# <a name="connect-github-enterprise-cloud-to-microsoft-cloud-app-security-preview"></a>Connecter GitHub Enterprise Cloud à Microsoft Cloud App Security (version préliminaire)
+# <a name="connect-github-enterprise-cloud-to-microsoft-cloud-app-security"></a>Connecter GitHub Enterprise Cloud à Microsoft Cloud App Security
 
 *S’applique à : Microsoft Cloud App Security*
-
-Le connecteur de l’API Cloud GitHub Enterprise est actuellement en version préliminaire privée et est progressivement déployé. Cette préversion est fournie sans contrat de niveau de service et n’est pas recommandée pour les charges de travail de production. Certaines fonctionnalités peuvent être limitées ou non prises en charge. Pour plus d’informations, consultez [Conditions d’Utilisation Supplémentaires relatives aux Évaluations Microsoft Azure](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
 
 Cet article fournit des instructions pour connecter Microsoft Cloud App Security à votre organisation Cloud GitHub Enterprise existante à l’aide des API du connecteur d’applications. Cette connexion vous donne une visibilité et un contrôle sur l’utilisation du Cloud d’entreprise GitHub de votre organisation. Pour plus d’informations sur la façon dont Cloud App Security protège le Cloud GitHub Enterprise, consultez [protéger GitHub Enterprise](protect-github.md).
 

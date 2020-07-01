@@ -1,5 +1,5 @@
 ---
-title: Définir les préférences de notification par e-mail – Cloud App Security | Microsoft Docs
+title: Définir les préférences de notification par e-mail-Cloud App Security
 description: Cet article fournit des informations sur la procédure de personnalisation des notifications par e-mail envoyées par Cloud App Security.
 keywords: ''
 author: shsagir
@@ -14,23 +14,23 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: e362314a62399c15e662e20d13ea660015666b3d
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 77bf7eeadf64108ca62a12d485aadba21e8d8848
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74719888"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624615"
 ---
 # <a name="email-notification-preferences"></a>Préférences de notification par e-mail
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Cet article fournit des informations sur la procédure de personnalisation des notifications par e-mail envoyées par Cloud App Security à vos utilisateurs quand une violation de la sécurité est détectée.
 
 > [!NOTE]
 > Cette personnalisation affecte uniquement les notifications envoyées à vos utilisateurs finaux, pas les notifications envoyées aux administrateurs Cloud App Security.
 
-## <a name="mailsettings"></a> Définir les préférences de notification par e-mail
+## <a name="set-email-notification-preferences"></a><a name="mailsettings"></a> Définir les préférences de notification par e-mail
 
  Microsoft Cloud App Security vous permet de personnaliser les notifications par e-mail envoyées aux utilisateurs finaux impliqués dans les violations. Pour définir les paramètres des notifications par e-mail, effectuez les étapes suivantes. Pour plus d’informations sur l’adresse IP du serveur de messagerie Microsoft Cloud App Security à ajouter à la liste verte de votre service antispam, consultez [Configuration requise pour le réseau](network-requirements.md).
 
@@ -125,6 +125,6 @@ Voici un exemple de modèle d’e-mail :
 ## <a name="next-steps"></a>Étapes suivantes
 
 > [!div class="nextstepaction"]
-> [Configurer Cloud Discovery](set-up-cloud-discovery.md)
+> [Configuration de Cloud Discovery](set-up-cloud-discovery.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

@@ -1,5 +1,5 @@
 ---
-title: Utiliser l’indice de risque – Cloud App Security | Microsoft Docs
+title: Utilisation du score de risque-Cloud App Security
 description: Cet article fournit des instructions sur l’utilisation et la personnalisation de l’indice de risque Cloud App Security.
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1b69c92be4a3e095b76eee3d458820dac5d218a9
-ms.sourcegitcommit: 6886d285601955f0efc7acf980c9d4740ff873fe
+ms.openlocfilehash: d3d292f7bedfdfd9d4569bb357b5c0dcaf48c69f
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "84250687"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85625081"
 ---
 # <a name="working-with-app-risk-scores"></a>Utilisation des scores de risque d’application
 
@@ -116,7 +116,7 @@ Prenez le temps de passer en revue et d’éventuellement modifier les pondérat
 
 3. De plus, vous pouvez déterminer si certaines valeurs sont soit non disponibles, soit non applicables dans le calcul du score. Quand elles sont incluses, les valeurs N/A contribuent négativement au score calculé.
 
-    ![score](media/score.png "évaluer les métriques")
+    ![enjeu](media/score.png "évaluer les métriques")
 
 Toutes les informations nécessaires pour comprendre le fonctionnement des indices de risque Cloud App Security et leur empilement sont disponibles dans le portail Cloud App Security. Pour mieux comprendre le poids d’un facteur de risque dans une catégorie de risque spécifique, utilisez le bouton « i » à droite de chaque nom de champ dans le profil de l’application. Il fournit des informations sur la façon dont Cloud App Security note précisément un facteur de risque. Ce score correspond à la valeur du facteur de risque sur une échelle de 1 à 10 et à son poids dans la catégorie de risque :
 

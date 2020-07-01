@@ -1,5 +1,5 @@
 ---
-title: Configurer le chargement automatique des journaux pour des rapports continus - Cloud App Security | Microsoft Docs
+title: Configurer le chargement automatique des journaux pour les rapports continus-Cloud App Security
 description: Cet article fournit des informations sur le chargement de journaux pour créer des rapports Cloud Discovery automatiques.
 keywords: ''
 author: shsagir
@@ -14,21 +14,21 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b718641a17860bf3edb8ffc5f78c07b805b38bab
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: ebbe2f53f184cf8668a9cf3443ade3dedb42733f
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720092"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85623351"
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance---deprecated"></a>Configurer le chargement automatique des journaux pour des rapports continus sur une appliance virtuelle - Déconseillé
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 > [!WARNING]
 > Il est fortement recommandé de configurer le chargement du journal avec [Docker](discovery-docker.md) pour une plus grande flexibilité de déploiement.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 
 - Hyperviseur : Hyper-V ou VMware
 - Espace disque : 250 Go
@@ -49,7 +49,7 @@ Le collecteur de journaux dispose d’un mécanisme de sécurité intégré qui 
 
 ### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>Étape 1 : configuration du portail web  - définir les sources de données et les lier à un collecteur de journaux
 
-1. Accédez à la page des paramètres de chargement automatisé : dans le portail Cloud App Security, cliquez sur l' ![icône](media/settings-icon.png "icône des paramètres")des paramètres icône des paramètres, puis sur **collecteurs de journaux**.
+1. Accédez à la page des paramètres de chargement automatisé : dans le portail Cloud App Security, cliquez sur l' ![icône](media/settings-icon.png "Icône des paramètres")des paramètres icône des paramètres, puis sur **collecteurs de journaux**.
 
 2. Pour chaque pare-feu ou proxy à partir desquels vous voulez charger des journaux, créez une source de données correspondante :
 
@@ -103,11 +103,11 @@ Le collecteur de journaux dispose d’un mécanisme de sécurité intégré qui 
 
 8. Choisissez **Utiliser un disque dur virtuel existant**. Sélectionnez le fichier **.vhd** qui était inclus dans le fichier zip que vous avez téléchargé.
 
-9. Cliquez sur **Suivant** , puis sur **Terminer**. La machine est ajoutée à votre environnement Hyper-V.
+9. Cliquez sur **Suivant**, puis sur **Terminer**. La machine est ajoutée à votre environnement Hyper-V.
 
 10. Cliquez sur la machine dans le tableau **Machines virtuelles** et cliquez sur **Démarrer**.
 
-11. Connectez-vous à la machine virtuelle du collecteur de journaux pour déterminer si une adresse DHCP lui a été attribuée : cliquez sur la machine virtuelle, puis sélectionnez **Connect** (Connecter). L’invite de connexion doit s’afficher. Si vous voyez une adresse IP, vous pouvez vous connecter à la machine virtuelle à l’aide d’un outil Terminal Server/SSH.  Si vous ne voyez pas d’adresse IP, connectez-vous à l’aide des outils de connexion Hyper-V/VMWare et des informations d’identification que vous avez copiées quand vous avez créé le collecteur de journaux. Vous pouvez modifier le mot de passe et configurer la machine virtuelle à l’aide de l’utilitaire de configuration réseau en exécutant la commande suivante : `sudo network_config`
+11. Connectez-vous à la machine virtuelle du collecteur de journaux pour déterminer si une adresse DHCP lui a été attribuée : cliquez sur la machine virtuelle, puis sélectionnez **Connect** (Connecter). L’invite de connexion doit s’afficher. Si vous voyez une adresse IP, vous pouvez vous connecter à la machine virtuelle à l’aide d’un outil Terminal Server/SSH.  Si vous ne voyez pas d’adresse IP, connectez-vous à l’aide des outils de connexion Hyper-V/VMWare et des informations d’identification que vous avez copiées quand vous avez créé le collecteur de journaux. Vous pouvez modifier le mot de passe et configurer la machine virtuelle à l’aide de l’utilitaire de configuration réseau en exécutant la commande suivante :`sudo network_config`
     > [!NOTE]
     > La machine virtuelle est préconfigurée pour obtenir une adresse IP d’un serveur DHCP. Si vous avez besoin de configurer une adresse IP statique, une passerelle par défaut, un nom d’hôte, des serveurs DNS et NTPS, vous pouvez utiliser l’utilitaire **network_config** ou effectuer les modifications manuellement.
 
@@ -129,7 +129,7 @@ La première fois que vous vous connectez au collecteur de journaux et que vous 
 
     c. Entrez le domaine de la console, par exemple : `contoso.portal.cloudappsecurity.com`
 
-    d. Entrez le nom du collecteur de journaux que vous souhaitez configurer, par exemple : `CloudAppSecurityLogCollector01`
+    d. Entrez le nom du collecteur de journaux que vous souhaitez configurer, par exemple :`CloudAppSecurityLogCollector01`
 
 ### <a name="step-4---on-premises-configuration-of-your-network-appliances"></a>Étape 4 : configuration locale de vos équipements de réseau
 
@@ -137,7 +137,7 @@ Configurez vos pare-feu réseau et proxys pour exporter régulièrement les jour
 
 `London Zscaler - Destination path: 614`
 
-BlueCoat_HQ-chemin de destination : \<< machine_name > > \ BlueCoat_HQ \
+BlueCoat_HQ-chemin de destination : \<<machine_name>> \ BlueCoat_HQ \
 
 ### <a name="step-5---verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>Étape 5 : vérifier la réussite du déploiement dans le portail Cloud App Security
 
@@ -153,7 +153,7 @@ Si vous rencontrez des problèmes lors du déploiement, consultez [Dépannage de
 
 Après avoir vérifié que les journaux sont bien chargés dans Cloud App Security et que les rapports sont générés, vous pouvez créer des rapports personnalisés. Vous pouvez maintenant créer des rapports de découverte personnalisés basés sur les groupes d’utilisateurs Azure Active Directory. Par exemple, si vous voulez afficher l’utilisation cloud de votre service marketing, vous pouvez importer le groupe marketing à l’aide de la fonctionnalité d’importation des groupes d’utilisateurs, puis créer un rapport personnalisé pour ce groupe. Vous pouvez également personnaliser un rapport en fonction d’une balise d’adresse IP ou de plages d’adresses IP.
 
-1. Dans le portail Cloud App Security, dans les Paramètres (roue crantée), sélectionnez **Paramètres Cloud Discovery**, puis **Rapports continus**.
+1. Dans le portail Cloud App Security, sous l’roue dentée paramètres, sélectionnez **Cloud Discovery paramètres**, puis sélectionnez **rapports continus**.
 2. Cliquez sur le bouton **Créer un rapport** et renseignez les champs.
 3. Sous **Filtres**, vous pouvez filtrer les données par source de données, par [groupe d’utilisateurs importé](user-groups.md) ou par [balises et plages d’adresses IP](ip-tags.md).
 

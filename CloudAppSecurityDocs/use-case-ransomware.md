@@ -1,5 +1,5 @@
 ---
-title: Vue d’ensemble du scénario de protection contre les menaces – Cloud App Security | Microsoft Docs
+title: Vue d’ensemble du scénario de protection contre les menaces-Cloud App Security
 description: Cette rubrique décrit le scénario de protection de votre organisation contre les menaces présentes dans l’environnement cloud.
 keywords: ''
 author: shsagir
@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 36cab094e0bd971ef9d36b0c9d7d3528a686e3da
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: d5080886b2b21c345b7ec65c3874ec0a3192b4fc
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720489"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624776"
 ---
 # <a name="protecting-your-organization-from-ransomware"></a>Protection de votre organisation contre les ransomwares
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Dans la dernière attaque massive par un ransomware, WannaCry a fortement frappé le cybermonde en infectant un nombre estimé de 200 000 ordinateurs dans 150 pays. Avec l’augmentation des attaques de ransomwares ces dernières années, en moyenne 25 000 attaques par mois en 2015 et 56 000 en 2016, il devient nécessaire de mettre en place une cybersécurité proactive pour garantir que votre réseau et votre cloud ne sont pas exposés. Cet article explique comment vous pouvez utiliser Cloud App Security pour surveiller votre cloud, détecter et atténuer les menaces, et appliquer les meilleures pratiques pour protéger votre environnement contre les ransomwares.
 
@@ -48,7 +48,7 @@ Détectez les ransomwares potentiels dans votre environnement cloud en créant u
 
 1. Par défaut, Cloud App Security analyse votre réseau pour établir une base de référence, où il découvre ce que font généralement les utilisateurs dans votre cloud et à quel moment.
 
-2. Les [stratégies de détection des menaces](anomaly-detection-policy.md) automatisées de Cloud App Security commencent à s’exécuter en arrière-plan à partir du moment où vous vous connectez. Une de ces stratégies permet de rechercher des activités de ransomware pour garantir une couverture complète contre des attaques de ransomware complexes. Fort de notre expertise en recherche dans la sécurité visant à identifier les modèles comportementaux qui reflètent des activités de ransomware, Cloud App Security assure une protection complète et solide. Si Cloud App Security identifie, par exemple, un taux élevé de chargements de fichiers ou d’activités de suppression de fichiers, cela peut représenter un processus de chiffrement indésirable. Ces données sont collectées dans les journaux reçus des API connectées, puis combinées avec des modèles comportementaux appris et des informations sur les menaces, par exemple, des extensions de ransomware.
+2. Les [stratégies de détection des menaces](anomaly-detection-policy.md) automatisées de Cloud App Security commencent à s’exécuter en arrière-plan à partir du moment où vous vous connectez. Une de ces stratégies permet de rechercher des activités de ransomware pour garantir une couverture complète contre des attaques de ransomware complexes. Grâce à notre expertise en matière de recherche sur la sécurité pour identifier des modèles de comportement qui reflètent l’activité des ransomware, Cloud App Security garantit une protection holistique et robuste. Si Cloud App Security identifie, par exemple, un taux élevé de chargements de fichiers ou d’activités de suppression de fichiers, cela peut représenter un processus de chiffrement indésirable. Ces données sont collectées dans les journaux reçus des API connectées, puis combinées avec des modèles comportementaux appris et des informations sur les menaces, par exemple, des extensions de ransomware.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

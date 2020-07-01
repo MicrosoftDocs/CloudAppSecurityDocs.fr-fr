@@ -1,5 +1,5 @@
 ---
-title: Utiliser les données Cloud Discovery pour détecter les comportements à risques - Cloud App Security | Microsoft Docs
+title: Utiliser Cloud Discovery données pour détecter un comportement risqué-Cloud App Security
 description: Cette rubrique fournit des instructions pour l’utilisation des données Cloud Discovery, notamment l’utilisation de l’indice de risque de l’application.
 keywords: ''
 author: shsagir
@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6e58d3a621f6384fcc011aeb293e01472ee082cc
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 05af62c1754484572ff36510aedca113cdae8d5e
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74721165"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624706"
 ---
 # <a name="working-with-discovery-data"></a>Utilisation des données de découverte
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Le tableau de bord Cloud Discovery est conçu pour vous donner plus d’informations sur l’utilisation des applications cloud dans votre organisation. Il fournit une vue d’ensemble en un clin d’œil des types d’applications utilisés, des alertes ouvertes et des niveaux de risque des applications dans votre organisation. Il vous montre également les principaux utilisateurs des applications et fournit un plan du lieu du siège social d’une application. Le tableau de bord Cloud Discovery a de nombreuses options pour filtrer les données. Le filtrage vous permet de générer des vues spécifiques selon ce qui vous intéresse le plus, avec des graphiques faciles à comprendre pour vous donner une vision globale en un clin d’œil.
 
@@ -55,7 +55,7 @@ Pour créer une exclusion :
 3. Choisissez l’onglet **Utilisateurs exclus**, **Adresses IP exclues** ou **Machines exclues**, puis cliquez sur le bouton + pour ajouter votre exclusion.
 4. Ajoutez un alias utilisateur, une adresse IP ou un nom de machine. Nous vous recommandons d’ajouter des informations sur les raisons de l’exclusion.
 
-    ![exclure un utilisateur](media/exclude-user.png "exclure l’utilisateur")
+    ![exclure l’utilisateur](media/exclude-user.png "exclure l’utilisateur")
 
 ## <a name="manage-continuous-reports"></a>Gérer les rapports continus
 
@@ -77,7 +77,7 @@ Pour créer un rapport continu :
 
 5. Sélectionnez les sources de données à inclure (toutes ou certaines).
 
-6. Définissez les filtres souhaités sur les données. Ces filtres peuvent être **Groupes d’utilisateurs**, **Balises d’adresse IP** ou **Plages d’adresses IP**. Pour plus d’informations sur l’utilisation de balises d’adresse IP et de plages d’adresses IP, voir [Organiser les données selon vos besoins](ip-tags.md).
+6. Définissez les filtres souhaités sur les données. Ces filtres peuvent être des **groupes d’utilisateurs**, des **balises d’adresse IP**ou des **plages d’adresses IP**. Pour plus d’informations sur l’utilisation de balises d’adresse IP et de plages d’adresses IP, voir [Organiser les données selon vos besoins](ip-tags.md).
 
     ![créer un rapport continu personnalisé](media/create-custom-continuous-report.png)
 
@@ -102,7 +102,7 @@ Pour supprimer des données Cloud Discovery :
 
     Il est important d’être sûr de vouloir supprimer les données avant de poursuivre : cette opération ne peut pas être annulée et **toutes** les données Cloud Discovery dans le système sont alors supprimées.
 
-3. Cliquez sur le bouton **Supprimer**.
+3. Cliquez sur le bouton **Supprimer** .
 
     ![supprimer des données](media/delete-data.png "supprimer des données")
 

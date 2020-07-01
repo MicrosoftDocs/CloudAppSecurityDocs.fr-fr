@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 03/24/2020
+ms.date: 06/28/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,24 +14,24 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f5603102aa393c676b82fc179094526933e93f68
-ms.sourcegitcommit: 2cf3c78a1b45a5b6ca534fdd12fd97afc51726e3
+ms.openlocfilehash: 5af7efa448e7d93902e9d8845dd97479b7c53df7
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80295780"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624389"
 ---
 # <a name="azure-active-directory-identity-protection-integration"></a>Intégration de Azure Active Directory Identity Protection
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Microsoft Cloud App Security s’intègre à Azure Active Directory Identity Protection (identity protection) pour fournir une analytique UEBA (Behavior-action Analytics) d’entité utilisateur dans un environnement hybride. Pour plus d’informations sur les Machine Learning et l’analyse comportementale fournis par Identity Protection, consultez [qu’est-ce qu’Identity Protection ?](/azure/active-directory/identity-protection/overview-identity-protection).
 
-## <a name="prerequisites"></a>Composants requis
+## <a name="prerequisites"></a>Prérequis
 
 - Un compte d’administrateur Cloud App Security pour permettre l’intégration entre la protection des identités et les Cloud App Security.
 
-## <a name="enable-identity-protection"></a>Activer la protection d’identité
+## <a name="enable-identity-protection"></a>Activer Identity Protection
 
 > [!NOTE]
 > La fonctionnalité de protection d’identité est activée par défaut. Toutefois, si la fonctionnalité a été désactivée, vous pouvez utiliser ces étapes pour l’activer.
@@ -40,7 +40,7 @@ Pour activer l’intégration de Cloud App Security avec Identity Protection :
 
 1. Dans Cloud App Security, sous l’roue dentée paramètres, sélectionnez **paramètres**.
 
-    ![Menu paramètres](media/azip-system-settings.png)
+    ![menu Paramètres](media/azip-system-settings.png)
 
 1. Sous **protection contre les menaces**, sélectionnez **Azure ad Identity Protection**.
 
@@ -69,12 +69,16 @@ Les stratégies de protection des identités peuvent être ajustées aux besoins
 
 Les stratégies suivantes sont disponibles :
 
-|Stratégie|Description|État par défaut|Gravité par défaut|
+|Policy|Description|État par défaut|Gravité par défaut|
 |---|---|---|---|
-|Informations d’identification divulguées|Affiche les alertes des informations d’identification divulguées, les informations d’identification valides de l’utilisateur ont été divulguées|Activé|Faible-recevoir toutes les alertes|
-|Connexion risquée|Agrège plusieurs détections de connexion risquée, les connexions qui n’ont pas été effectuées par l’utilisateur|Activé|Alertes haute réception uniquement de gravité élevée|
+|Informations d'identification divulguées|Affiche les alertes des informations d’identification divulguées, les informations d’identification valides de l’utilisateur ont été divulguées|activé|Faible-recevoir toutes les alertes|
+|Connexion risquée|Agrège plusieurs détections de connexion risquée, les connexions qui n’ont pas été effectuées par l’utilisateur|activé|Alertes haute réception uniquement de gravité élevée|
 
-## <a name="next-steps"></a>Étapes suivantes :
+## <a name="remediating-risky-users"></a>Correction des utilisateurs à risque
+
+Les stratégies de protection des identités peuvent être utilisées pour corriger automatiquement les utilisateurs risqués en définissant le niveau de risque de l’utilisateur sur élevé. Une fois qu’un utilisateur est défini sur élevé, l’algorithme d’analyse des risques de l’utilisateur avancé prend en compte le nouvel état de l’utilisateur, ainsi que l’état de *gestion des périphériques* de l’ordinateur. Cela entraîne l’application des actions de stratégie appropriées définies dans Azure AD, telles que la réinitialisation du mot de passe de l’utilisateur, la demande d’authentification MFA ou la force de l’utilisateur à utiliser un appareil géré. Pour plus d’informations, consultez [comment Azure ad utiliser mes](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-risk-feedback#how-does-azure-ad-use-my-risk-feedback) actions de commentaires et de [gouvernance](accounts.md#governance-actions).
+
+## <a name="next-steps"></a>Étapes suivantes
 
 > [!div class="nextstepaction"]
 > [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)

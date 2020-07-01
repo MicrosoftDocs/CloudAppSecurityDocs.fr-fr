@@ -1,5 +1,5 @@
 ---
-title: Examiner les activités à l’aide de l’API-Cloud App Security | Microsoft Docs
+title: Examiner les activités à l’aide de l’API-Cloud App Security
 description: Cet article fournit des informations sur l’utilisation de l’API pour examiner l’activité des utilisateurs dans Cloud App Security.
 keywords: ''
 author: shsagir
@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5e51cc05bed73650495fe3df3829c7a1fca08b79
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: b85675f31e6e306ae6f62b2c8f3b50053f3adeb0
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74719938"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624515"
 ---
 # <a name="investigate-activities-using-the-api"></a>Examiner les activités à l’aide de l’API
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Microsoft Cloud App Security vous fournit une API REST entièrement prise en charge pour vous permettre d’interagir par programmation avec le service.
 
@@ -37,14 +37,14 @@ Le mode API des activités de Cloud App Security est optimisé pour l’analyse 
 **Pour utiliser l’API d’analyse des activités :**
 
 1. Exécutez la requête sur vos données.
-1. S’il y a plus d’enregistrements qu’il n’est possible de répertorier dans une seule analyse, vous obtiendrez une commande de retour avec `nextQueryFilters` que vous devez exécuter. Vous obtiendrez cette commande chaque fois que vous analyserez jusqu’à ce que la requête retournait tous les résultats.
+1. S’il y a plus d’enregistrements qu’il n’est possible de répertorier dans une seule analyse, vous recevrez une commande de retour avec `nextQueryFilters` que vous devez exécuter. Vous obtiendrez cette commande chaque fois que vous analyserez jusqu’à ce que la requête retournait tous les résultats.
 
 **Paramètres du corps**de la demande :
 
 - « filters » : filtrez les objets avec tous les filtres de recherche de la demande. pour plus d’informations, consultez [filtres d’activité](activity-filters.md) . Pour éviter que vos demandes ne soient limitées, veillez à inclure une limitation sur votre requête, par exemple, à interroger les activités du dernier jour ou à filtrer une application particulière.
 - « isScan » : valeur booléenne. Active le mode d’analyse.
 - "sortDirection" : le sens de tri, les valeurs possibles sont "ASC" et "desc"
-- « sortField » : champs utilisés pour trier les activités. Les valeurs possibles sont les suivantes :
+- « sortField » : champs utilisés pour trier les activités. Les valeurs possibles sont les suivantes :
   - Date : date à laquelle l’activité s’est produite (valeur par défaut).
   - created : horodatage de l’enregistrement de l’activité.
 - « Limit » : entier. En mode d’analyse, entre 500 et 5000 (la valeur par défaut est 500). Contrôle le nombre d’itérations utilisées pour l’analyse de toutes les données.

@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 12/31/2019
+ms.date: 06/28/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,14 +14,14 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 652ab059cef9c911af4dc58a7cb4b79c679aed30
-ms.sourcegitcommit: 7b6124e5ecb3fa8fc1176d89e06b052f2a53a310
+ms.openlocfilehash: 0229d6ea079be49b9273840e628e1104c7dda53d
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83854272"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85623302"
 ---
-# <a name="connect-workday-to-microsoft-cloud-app-security-preview"></a>Connecter un jour ouvré à Microsoft Cloud App Security (version préliminaire)
+# <a name="connect-workday-to-microsoft-cloud-app-security"></a>Connecter un jour ouvré à Microsoft Cloud App Security
 
 *S’applique à : Microsoft Cloud App Security*
 
@@ -43,8 +43,8 @@ Le compte de jour de travail utilisé pour la connexion à Cloud App Security do
 | --- | --- | --- | --- | --- |
 | Système | Configuration : configuration du locataire – général | Configuration : configuration du client – sécurité | Afficher, modifier | Acquérir, put |
 | Système | Administration de la sécurité | | Afficher, modifier | Acquérir, put |
-| Système | Audit du système | | Affichage | Obtenir |
-| Effectifs | Données de travail : personnel | Worker Data: Public Worker Reports | Affichage | Obtenir |
+| Système | Audit du système | | Vue | Obtenir |
+| Effectifs | Données de travail : personnel | Worker Data: Public Worker Reports | Vue | Obtenir |
 
 > [!NOTE]
 >
@@ -72,7 +72,7 @@ Pour plus d’informations sur la configuration des utilisateurs d’intégratio
     | ---- | ---- |
     | Nom du client | Microsoft Cloud App Security |
     | Type d’octroi client | Octroi de code d’autorisation |
-    | Type de jeton d’accès | Support |
+    | Type de jeton d’accès | Porteur |
     | URI de redirection | `https://portal.cloudappsecurity.com/api/oauth/connect` |
     | Jetons d’actualisation sans expiration | Oui |
     | Étendues OAuth2 | **Personnel** et **système** |
@@ -104,7 +104,7 @@ Pour plus d’informations sur la configuration des utilisateurs d’intégratio
 
     ![Capture d’écran de remplissage des détails de l’application](media/connect-workday-add-app-connect-details.png)
 
-1. Dans la journée de travail, une fenêtre contextuelle vous demande si vous souhaitez autoriser Cloud App Security accès à votre compte de jours ouvrés. Pour continuer, cliquez sur **Autoriser**.
+1. Dans la journée de travail, une fenêtre contextuelle s’affiche pour vous demander si vous souhaitez autoriser Cloud App Security accès à votre compte de jours ouvrés. Pour continuer, cliquez sur **Autoriser**.
 
     ![Capture d’écran de l’autorisation d’accès à l’application](media/connect-workday-add-app-allow.png)
 

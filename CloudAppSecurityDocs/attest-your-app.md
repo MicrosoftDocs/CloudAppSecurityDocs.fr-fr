@@ -1,5 +1,5 @@
 ---
-title: Certifiez vos applications-Cloud App Security | Microsoft Docs
+title: Certifiez vos applications-Cloud App Security
 description: Cet article fournit des instructions pour l’attestation de vos applications dans Cloud App Security.
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 377a289b15d255db7a310eb7f49e42eb1e7af55f
-ms.sourcegitcommit: 7b6124e5ecb3fa8fc1176d89e06b052f2a53a310
+ms.openlocfilehash: 55bbd68f012dbfd8053154e8f3e44c1af8cce9ae
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83854197"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624344"
 ---
 # <a name="attest-your-app"></a>Attester votre application
 
@@ -31,24 +31,24 @@ Suivez les attributs de service décrits ci-dessous pour terminer avec succès l
 
 | Champ | Catégorie d’informations | Type | Valeurs acceptées | Description |
 |------|-------|------|---------|----------|
-| Nom de l’application | Général | Chaîne | Texte libre | Nom de votre application tel qu’il doit apparaître dans le catalogue d’applications Cloud. |
-| Description | Général | Chaîne | Texte libre | Brève explication de ce que votre application permet aux utilisateurs d’effectuer ou d’atteindre. |
-| Catégorie| Général | Chaîne | Fermer la liste-fourni dans le questionnaire | Classification de l’application en fonction du champ auquel elle se rapporte. |
-| Siège social | Général | Code du pays | Fermer la liste-fourni dans le questionnaire | Pays du siège du fournisseur.|
+| Nom de l’application | Général | String | Texte libre | Nom de votre application tel qu’il doit apparaître dans le catalogue d’applications Cloud. |
+| Description | Général | String | Texte libre | Brève explication de ce que votre application permet aux utilisateurs d’effectuer ou d’atteindre. |
+| Category| Général | String | Fermer la liste-fourni dans le questionnaire | Classification de l’application en fonction du champ auquel elle se rapporte. |
+| Siège social | Général | Code pays | Fermer la liste-fourni dans le questionnaire | Pays du siège du fournisseur.|
 | Centre de données| Général | Tableau de codes de pays * | Fermer la liste-fourni dans le questionnaire (sélection multiple) | Le pays dans lequel se trouve votre centre de données (peut être plusieurs emplacements) |
-| Société d’hébergement | Général | Chaîne | Texte libre | Nom de la société qui fournit l’hébergement de serveur pour l’application. |
+| Société d’hébergement | Général | String | Texte libre | Nom de la société qui fournit l’hébergement de serveur pour l’application. |
 | Doutes | Général | Integer | AAAA (pas plus de 2019) | Année de Fondation du fournisseur. |
-| Holding | Général | Chaîne | Privé, public | Indique si le fournisseur est une société publique ou privée |
+| Holding | Général | String | Privé, public | Indique si le fournisseur est une société publique ou privée |
 | Domaine d’application | Général | Tableau d’URL * | Texte libre | Liste des domaines spécifiques qui sont utilisés pour interagir avec le service. Par exemple, « teams.microsoft.com » pour Microsoft teams et non le domaine générique « microsoft.com ». |
 | Conditions d'utilisation | Général | URL | Texte libre | Cette application fournit-elle un ensemble de réglementations que les utilisateurs doivent accepter de suivre pour pouvoir utiliser l’application ? |
 | Politique de confidentialité | Général | URL | Texte libre | Lien vers un document juridiquement contraignant relatif à la façon dont ce fournisseur gère les informations sur les clients, les clients ou les employés rassemblées dans le cadre de l’application. |
 | URL de connexion | Général | Tableau d’URL * | Texte libre | URL via laquelle les utilisateurs se connectent à l’application. |
-| Fournisseur | Général | Chaîne | Texte libre | Nom du fournisseur qui fournit cette application. |
-| Types de données | Général | Chaîne | Fermer la liste-fourni dans le questionnaire | Quels types de données peuvent être téléchargés par l’utilisateur vers l’application ?|
+| Fournisseur | Général | String | Texte libre | Nom du fournisseur qui fournit cette application. |
+| Types de données | Général | String | Fermer la liste-fourni dans le questionnaire | Quels types de données peuvent être téléchargés par l’utilisateur vers l’application ?|
 | Page d’accueil | Général | URL | Texte libre | URL de la page d’hébergement du fournisseur. |
 | Plan de récupération d’urgence | Général | Booléen | True, False | Cette application a-t-elle un plan de récupération d’urgence qui comprend une stratégie de sauvegarde et de restauration ? |
 | Dernière violation | Sécurité | Date | MMM-jj-aaaa | Incident le plus récent dans lequel les données sensibles, protégées ou confidentielles détenues par l’application ont été affichées, volées ou utilisées par un individu non autorisé à cette fin. |
-| Méthode de chiffrement des données au repos | Sécurité | Chaîne | Fermer la liste-fourni dans le questionnaire | Type de chiffrement des données au repos effectuées sur l’application. |
+| Méthode de chiffrement des données au repos | Sécurité | String | Fermer la liste-fourni dans le questionnaire | Type de chiffrement des données au repos effectuées sur l’application. |
 | Authentification multifacteur | Sécurité | Booléen | True, False | Cette application prend-elle en charge les solutions multi-Factor Authentication ? |
 | Restriction d’adresse IP | Sécurité | Booléen | True, False | Cette application prend-elle en charge la restriction d’adresses IP spécifiques par l’application ? |
 | Piste d’audit de l’utilisateur | Sécurité | Booléen | True, False | Cette application prend-elle en charge la disponibilité de la piste d’audit par compte d’utilisateur ? |
@@ -69,34 +69,34 @@ Suivez les attributs de service décrits ci-dessous pour terminer avec succès l
 | Stratégie de mot de passe : historique et réutilisation des mots de passe | Sécurité | Booléen | True, False | Cette application interdit-t-elle la réutilisation des anciens mots de passe ? |
 | Stratégie de mot de passe : utilisation des informations personnelles | Sécurité | Booléen | True, False | Cette application interdit-t-elle l’utilisation d’informations personnelles dans les mots de passe ? |
 | Stratégie de mot de passe | Sécurité | Booléen | True, False | Cette application applique-t-elle une stratégie de mot de passe conforme aux meilleures pratiques ? |
-| FINRA | Conformité | Booléen | True, false, N/A | Cette application est-elle conforme à FINRA, un ensemble standard pour les organisations à but non lucratif autorisées par le Congrès, qui réglemente et applique l’amélioration de la protection des investisseurs et de l’intégrité du marché ? |
-| FISMA | Conformité | Booléen | True, false, N/A | Cette application est-elle conforme à FISMA, la législation américaine qui définit une infrastructure complète pour protéger les informations, les opérations et les ressources gouvernementales au sein des agences fédérales, contre les menaces ? |
-| PCGR | Conformité | Booléen | True, false, N/A | Cette application est-elle conforme à PCGR, une collection de règles et de normes de comptabilité couramment suivies pour la création de rapports financiers ? |
-| HIPAA | Conformité | Booléen | True, false, N/A | Cette application est-elle conforme à la loi HIPAA, la législation américaine qui définit des normes pour la protection de la confidentialité et de la sécurité des informations d’intégrité identifiables individuellement ? |
-| ISAE 3402 | Conformité | Booléen | True, false, N/A | Cette application est-elle conforme à ISAE 3402, la norme mondiale fournissant l’assurance qu’une organisation de service a des contrôles appropriés en place ? |
-| ISO 27001 | Conformité | Booléen | True, False | Cette application est-elle conforme à la norme ISO 27001, un certificat donné aux entreprises qui a fourni aux entreprises des directives et des principes généraux reconnus au niveau international pour initier, implémenter, maintenir et améliorer la gestion de la sécurité des informations au sein d’une organisation ? |
-| ITAR | Conformité | Booléen | True, false, N/A | Cette application est-elle conforme à ITAR, règlements contrôlant l’exportation et l’importation d’articles et de services liés à la défense figurant dans la liste des munitions des États-Unis ? |
-| SOC 1 | Conformité | Booléen | True, false, N/A | Cette application est-elle conforme à SOC 1 et signale-t-elle les contrôles d’une organisation de service qui sont pertinents pour le contrôle interne des entités utilisateur sur les rapports financiers ? |
-| SOC 2 | Conformité | Booléen | True, False | Cette application est-elle conforme à la société SOC 2, qui signale un traitement non financier basé sur un ou plusieurs des critères de service d’approbation relatifs à la sécurité, la confidentialité, la disponibilité, la confidentialité et l’intégrité du traitement ? |
-| SOC 3 | Conformité | Booléen | True, False | Cette application est-elle conforme à la société SOC 3, qui signale les critères du service d’approbation, qui peuvent être distribués librement et qui ne contiennent que l’assertion de la direction selon laquelle ils ont répondu aux exigences des critères choisis. |
-| SOX | Conformité | Booléen | True, false, N/A | Cette application est-elle conforme à la législation SOX et aux États-Unis visant à protéger les actionnaires et le grand public contre les erreurs et les fraudes comptables, ainsi qu’à améliorer la précision des divulgations d’entreprise ? |
-| SP 800-53 | Conformité | Booléen | True, False | Cette application est-elle conforme à SP80053, les contrôles de sécurité recommandés pour les organisations et les systèmes d’information fédéraux ? |
-| SSAE 16 | Conformité | Booléen | True, false, N/A | Cette application est-elle conforme à la norme SSAE 16 pour l’audit des contrôles de conformité internes et des processus de création de rapports d’une organisation de service ? |
-| Version de PCI DSS | Conformité | Chaîne | 1, 2, 3, 3,1, 3,2, N/A | Version du protocole PCI-DSS prise en charge par cette application. |
-| ISO 27018 | Conformité | Booléen | True, false, N/A | Cette application est-elle conforme à la norme ISO 27018, qui établit des contrôles et des instructions couramment acceptés pour le traitement et la protection des informations d’identification personnelle (PII) dans un environnement de cloud computing public ? |
-| GLBA | Conformité | Booléen | True, false, N/A | Cette application est-elle conforme à la loi Gramm-Leach-Bliley Act (GLBA), qui exige que les institutions financières établissent des normes de protection de la sécurité et de la confidentialité des informations personnelles des clients ? |
-| Niveau FedRAMP | Conformité | Chaîne | Haute, modéré, faible, Li-SaaS | Niveau de la solution conforme à FedRAMP fournie par cette application. |
-| Niveau CSA STAR | Conformité | Chaîne | Auto-évaluation, certification, attestation, évaluation C-STAR, surveillance continue | Niveau du programme CSA STAR sur lequel l’application est certifiée |
-| Bouclier de protection des données | Conformité | Booléen | True, false, N/A | Cette application est-elle conforme à l’infrastructure de protection de la confidentialité UE-US, qui impose des obligations plus fortes aux entreprises américaines pour protéger les données personnelles des européens ? |
-| ISO 27017 | Conformité | Booléen | True, False | Cette application est-elle conforme à la norme ISO 27017, qui établit des contrôles et des recommandations couramment acceptés pour le traitement et la protection des informations utilisateur dans un environnement de Cloud Computing public ? |
-| COBIT | Conformité | Booléen | True, False | Cette application est-elle conforme à COBIT, qui définit les meilleures pratiques pour la gouvernance et le contrôle des systèmes d’information et de la technologie, et l’aligne sur les principes de l’entreprise ? |
-| COPPA | Conformité | Booléen | True, false, N/A | Cette application est-elle conforme à la réglementation COPPA, qui définit les exigences relatives au site Web et aux opérateurs de services en ligne qui fournissent du contenu aux enfants âgés de moins de 13 ans ? |
-| FERPA | Conformité | Booléen | True, false, N/A | Cette application est-elle conforme à FERPA, une loi fédérale qui protège la confidentialité des dossiers de formation des élèves ? |
-| GAPP | Conformité | Booléen | True, false, N/A | Cette application est-elle conforme à GAPP, un ensemble de règles couramment suivies qui répondent aux risques de confidentialité dans une organisation ? |
-| CSF HITRUST | Conformité | Booléen | True, false, N/A | Cette application est-elle conforme à HITRUST CSF, un ensemble de contrôles qui harmonise les exigences des normes et des réglementations en matière de sécurité des informations ? |
-| Commandes du Forum Jéricho | Conformité | Booléen | True, False | Cette application suit-elle les commandes de Forum Jéricho, une série de principes à observer lors de l’architecture de systèmes pour une opération sécurisée dans des environnements désous-périmètres ? |
-| ISO 27002 | Conformité | Booléen | True, false, N/A | Cette application est-elle conforme à la norme ISO 27002, qui établit des recommandations communes pour les normes de sécurité des informations de l’organisation et les pratiques de gestion de la sécurité des informations ? |
-| FFIEC | Conformité | Booléen | True, false, N/A | Cette application est-elle conforme aux conseils du Conseil de l’examen des institutions financières fédérales sur les contrôles de gestion des risques nécessaires à l’authentification des services dans un environnement bancaire Internet ? |
+| FINRA | Compatibilité | Booléen | True, false, N/A | Cette application est-elle conforme à FINRA, un ensemble standard pour les organisations à but non lucratif autorisées par le Congrès, qui réglemente et applique l’amélioration de la protection des investisseurs et de l’intégrité du marché ? |
+| FISMA | Compatibilité | Booléen | True, false, N/A | Cette application est-elle conforme à FISMA, la législation américaine qui définit une infrastructure complète pour protéger les informations, les opérations et les ressources gouvernementales au sein des agences fédérales, contre les menaces ? |
+| PCGR | Compatibilité | Booléen | True, false, N/A | Cette application est-elle conforme à PCGR, une collection de règles et de normes de comptabilité couramment suivies pour la création de rapports financiers ? |
+| HIPAA | Compatibilité | Booléen | True, false, N/A | Cette application est-elle conforme à la loi HIPAA, la législation américaine qui définit des normes pour la protection de la confidentialité et de la sécurité des informations d’intégrité identifiables individuellement ? |
+| ISAE 3402 | Compatibilité | Booléen | True, false, N/A | Cette application est-elle conforme à ISAE 3402, la norme mondiale fournissant l’assurance qu’une organisation de service a des contrôles appropriés en place ? |
+| ISO 27001 | Compatibilité | Booléen | True, False | Cette application est-elle conforme à la norme ISO 27001, un certificat donné aux entreprises qui a fourni aux entreprises des directives et des principes généraux reconnus au niveau international pour initier, implémenter, maintenir et améliorer la gestion de la sécurité des informations au sein d’une organisation ? |
+| ITAR | Compatibilité | Booléen | True, false, N/A | Cette application est-elle conforme à ITAR, règlements contrôlant l’exportation et l’importation d’articles et de services liés à la défense figurant dans la liste des munitions des États-Unis ? |
+| SOC 1 | Compatibilité | Booléen | True, false, N/A | Cette application est-elle conforme à SOC 1 et signale-t-elle les contrôles d’une organisation de service qui sont pertinents pour le contrôle interne des entités utilisateur sur les rapports financiers ? |
+| SOC 2 | Compatibilité | Booléen | True, False | Cette application est-elle conforme à la société SOC 2, qui signale un traitement non financier basé sur un ou plusieurs des critères de service d’approbation relatifs à la sécurité, la confidentialité, la disponibilité, la confidentialité et l’intégrité du traitement ? |
+| SOC 3 | Compatibilité | Booléen | True, False | Cette application est-elle conforme à la société SOC 3, qui signale les critères du service d’approbation, qui peuvent être distribués librement et qui ne contiennent que l’assertion de la direction selon laquelle ils ont répondu aux exigences des critères choisis. |
+| SOX | Compatibilité | Booléen | True, false, N/A | Cette application est-elle conforme à la législation SOX et aux États-Unis visant à protéger les actionnaires et le grand public contre les erreurs et les fraudes comptables, ainsi qu’à améliorer la précision des divulgations d’entreprise ? |
+| SP 800-53 | Compatibilité | Booléen | True, False | Cette application est-elle conforme à SP80053, les contrôles de sécurité recommandés pour les organisations et les systèmes d’information fédéraux ? |
+| SSAE 16 | Compatibilité | Booléen | True, false, N/A | Cette application est-elle conforme à la norme SSAE 16 pour l’audit des contrôles de conformité internes et des processus de création de rapports d’une organisation de service ? |
+| Version de PCI DSS | Compatibilité | String | 1, 2, 3, 3,1, 3,2, N/A | Version du protocole PCI-DSS prise en charge par cette application. |
+| ISO 27018 | Compatibilité | Booléen | True, false, N/A | Cette application est-elle conforme à la norme ISO 27018, qui établit des contrôles et des instructions couramment acceptés pour le traitement et la protection des informations d’identification personnelle (PII) dans un environnement de cloud computing public ? |
+| GLBA | Compatibilité | Booléen | True, false, N/A | Cette application est-elle conforme à la loi Gramm-Leach-Bliley Act (GLBA), qui exige que les institutions financières établissent des normes de protection de la sécurité et de la confidentialité des informations personnelles des clients ? |
+| Niveau FedRAMP | Compatibilité | String | Haute, modéré, faible, Li-SaaS | Niveau de la solution conforme à FedRAMP fournie par cette application. |
+| Niveau CSA STAR | Compatibilité | String | Auto-évaluation, certification, attestation, évaluation C-STAR, surveillance continue | Niveau du programme CSA STAR sur lequel l’application est certifiée |
+| Bouclier de protection des données | Compatibilité | Booléen | True, false, N/A | Cette application est-elle conforme à l’infrastructure de protection de la confidentialité UE-US, qui impose des obligations plus fortes aux entreprises américaines pour protéger les données personnelles des européens ? |
+| ISO 27017 | Compatibilité | Booléen | True, False | Cette application est-elle conforme à la norme ISO 27017, qui établit des contrôles et des recommandations couramment acceptés pour le traitement et la protection des informations utilisateur dans un environnement de Cloud Computing public ? |
+| COBIT | Compatibilité | Booléen | True, False | Cette application est-elle conforme à COBIT, qui définit les meilleures pratiques pour la gouvernance et le contrôle des systèmes d’information et de la technologie, et l’aligne sur les principes de l’entreprise ? |
+| COPPA | Compatibilité | Booléen | True, false, N/A | Cette application est-elle conforme à la réglementation COPPA, qui définit les exigences relatives au site Web et aux opérateurs de services en ligne qui fournissent du contenu aux enfants âgés de moins de 13 ans ? |
+| FERPA | Compatibilité | Booléen | True, false, N/A | Cette application est-elle conforme à FERPA, une loi fédérale qui protège la confidentialité des dossiers de formation des élèves ? |
+| GAPP | Compatibilité | Booléen | True, false, N/A | Cette application est-elle conforme à GAPP, un ensemble de règles couramment suivies qui répondent aux risques de confidentialité dans une organisation ? |
+| CSF HITRUST | Compatibilité | Booléen | True, false, N/A | Cette application est-elle conforme à HITRUST CSF, un ensemble de contrôles qui harmonise les exigences des normes et des réglementations en matière de sécurité des informations ? |
+| Commandes du Forum Jéricho | Compatibilité | Booléen | True, False | Cette application suit-elle les commandes de Forum Jéricho, une série de principes à observer lors de l’architecture de systèmes pour une opération sécurisée dans des environnements désous-périmètres ? |
+| ISO 27002 | Compatibilité | Booléen | True, false, N/A | Cette application est-elle conforme à la norme ISO 27002, qui établit des recommandations communes pour les normes de sécurité des informations de l’organisation et les pratiques de gestion de la sécurité des informations ? |
+| FFIEC | Compatibilité | Booléen | True, false, N/A | Cette application est-elle conforme aux conseils du Conseil de l’examen des institutions financières fédérales sur les contrôles de gestion des risques nécessaires à l’authentification des services dans un environnement bancaire Internet ? |
 | Propriété des données | Informations juridiques | Booléen | True, False | Cette application conserve-t-elle entièrement la propriété des données téléchargées par l’utilisateur ? |
 | DMCA | Informations juridiques | Booléen | True, False | Cette application est-elle conforme à la DMCA (Digital Millenium Copyright Act), qui criminalise toute tentative d’accès illégal à des documents protégés par des droits d’auteur ? |
 | Stratégie de conservation des données | Informations juridiques | Booléen | True, False | Quelle est la stratégie de l’application pour la rétention des données utilisateur après l’arrêt du compte ? |

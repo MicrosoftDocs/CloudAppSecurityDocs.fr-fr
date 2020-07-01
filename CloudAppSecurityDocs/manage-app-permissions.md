@@ -1,5 +1,5 @@
 ---
-title: Contrôler quelles applications cloud tierces OAuth obtiennent des autorisations - Cloud App Security | Microsoft Docs
+title: Contrôler les applications OAuth Cloud tierces obtenant des autorisations-Cloud App Security
 description: Cet article fournit des informations sur la manière dont vous pouvez contrôler, bloquer et autoriser les applications OAuth tierces.
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 62968b15a69ec67a828c3512fe9718b2a48cc25e
-ms.sourcegitcommit: 9538de5f3034a65626710648d22e2e186d77041a
+ms.openlocfilehash: 084491b7c74019d2145439f66ce5a90482091ed9
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84507166"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624639"
 ---
 # <a name="manage-oauth-apps"></a>Gérer les applications OAuth
 

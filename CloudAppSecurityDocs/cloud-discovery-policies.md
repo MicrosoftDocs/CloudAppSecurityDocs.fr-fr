@@ -1,11 +1,11 @@
 ---
-title: Créer des stratégies sur des applications Cloud Discovery – Cloud App Security | Microsoft Docs
+title: Créer des stratégies sur des applications Cloud Discoveryes-Cloud App Security
 description: Cet article fournit des informations sur l’utilisation des stratégies Cloud Discovery.
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 04/16/2020
+ms.date: 06/29/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 72df9c27cd27fea1f35a67eb7ca3ab56209c6992
-ms.sourcegitcommit: f4845a6bbf39aea0504956bf23878f7e0adb8bcc
+ms.openlocfilehash: 4434bd5faf1ab8aa30391d3434df71e6db557096
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81477543"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85623324"
 ---
 # <a name="cloud-discovery-policies"></a>Stratégies Cloud Discovery
 
@@ -59,16 +59,18 @@ Grâce aux stratégies de découverte, vous pouvez définir des alertes qui vous
 
 9. Cliquez sur **Créer**.
 
+> [!NOTE]
+> Les stratégies de découverte nouvellement créées (ou les stratégies avec des rapports continus mis à jour) déclenchent une alerte une fois dans 90 jours par application par rapport continu, qu’il existe des alertes pour la même application ou non. Ainsi, par exemple, si vous créez une stratégie pour découvrir de nouvelles applications populaires, elle peut déclencher des alertes supplémentaires pour les applications qui ont déjà été découvertes et alerté.
+
 Par exemple, pour découvrir les applications d’hébergement à risque qui ont été détectées dans votre environnement cloud, définissez votre stratégie de la façon suivante :
 
 Définissez des filtres de stratégie afin de découvrir les services appartenant à la catégorie **Services d’hébergement** dont l’indice de risque est égal à 1, ce qui correspond à un risque élevé.
 
- Définissez les seuils qui doivent déclencher une alerte en cas de découverte d’une application donnée. Par exemple, déclenchez une alerte uniquement si plus de 100 utilisateurs de l’environnement ont utilisé l’application et s’ils ont téléchargé une certaine quantité de données à partir du service.
-En outre, vous pouvez définir la limite des alertes quotidiennes à recevoir.
+Définissez les seuils qui doivent déclencher une alerte en cas de découverte d’une application donnée. Par exemple, déclenchez une alerte uniquement si plus de 100 utilisateurs de l’environnement ont utilisé l’application et s’ils ont téléchargé une certaine quantité de données à partir du service. En outre, vous pouvez définir la limite des alertes quotidiennes à recevoir.
 
 ![exemple de stratégie de découverte d’application](media/app-discovery-policy-example.png "exemple de stratégie de découverte d’application")
 
-## <a name="cloud-discovery-anomaly-detection"></a>Détection d’anomalie de Cloud Discovery
+## <a name="cloud-discovery-anomaly-detection"></a>Détection d’anomalie Cloud Discovery
 
 Cloud App Security examine tous les journaux de votre environnement Cloud Discovery pour déterminer s’ils contiennent des anomalies. À titre d’exemple, citons un utilisateur qui n’a jamais utilisé Dropbox et qui y charge soudainement 600 Go de données ou une application qui fait l’objet de transactions dans des proportions inhabituelles. La stratégie de détection des anomalies est activée par défaut. Il n’est pas nécessaire de configurer une nouvelle stratégie pour que la détection fonctionne. Toutefois, dans la stratégie par défaut, vous pouvez choisir les types d’anomalies pour lesquels vous souhaitez être averti.
 
