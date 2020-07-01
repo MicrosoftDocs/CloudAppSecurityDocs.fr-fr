@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5af7efa448e7d93902e9d8845dd97479b7c53df7
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 13e1260fd86a4b252e56e43917fdd84fc67ebc01
+ms.sourcegitcommit: 7811a0d33e1756782222f20df02acae2f3ea4afe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624389"
+ms.locfileid: "85795785"
 ---
 # <a name="azure-active-directory-identity-protection-integration"></a>Intégration de Azure Active Directory Identity Protection
 
@@ -73,10 +73,6 @@ Les stratégies suivantes sont disponibles :
 |---|---|---|---|
 |Informations d'identification divulguées|Affiche les alertes des informations d’identification divulguées, les informations d’identification valides de l’utilisateur ont été divulguées|activé|Faible-recevoir toutes les alertes|
 |Connexion risquée|Agrège plusieurs détections de connexion risquée, les connexions qui n’ont pas été effectuées par l’utilisateur|activé|Alertes haute réception uniquement de gravité élevée|
-
-## <a name="remediating-risky-users"></a>Correction des utilisateurs à risque
-
-Les stratégies de protection des identités peuvent être utilisées pour corriger automatiquement les utilisateurs risqués en définissant le niveau de risque de l’utilisateur sur élevé. Une fois qu’un utilisateur est défini sur élevé, l’algorithme d’analyse des risques de l’utilisateur avancé prend en compte le nouvel état de l’utilisateur, ainsi que l’état de *gestion des périphériques* de l’ordinateur. Cela entraîne l’application des actions de stratégie appropriées définies dans Azure AD, telles que la réinitialisation du mot de passe de l’utilisateur, la demande d’authentification MFA ou la force de l’utilisateur à utiliser un appareil géré. Pour plus d’informations, consultez [comment Azure ad utiliser mes](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-risk-feedback#how-does-azure-ad-use-my-risk-feedback) actions de commentaires et de [gouvernance](accounts.md#governance-actions).
 
 ## <a name="next-steps"></a>Étapes suivantes
 
