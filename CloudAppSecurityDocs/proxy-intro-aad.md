@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 84d78ef48ed141c62934b8b91137d601c1fff666
-ms.sourcegitcommit: 826d2ec022647bce6c3135c115a41ee894ff8ecd
+ms.openlocfilehash: 0ba00548c014126414319fb5860d2c7fab9fb26d
+ms.sourcegitcommit: 9a35b4e96db80ac85a4c0244ef6abd468d5774a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84800830"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85853981"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Protéger les applications avec le Contrôle d’accès conditionnel aux applications Microsoft Cloud App Security
 
@@ -102,7 +102,7 @@ Lorsqu’une vérification de certificat client est effectuée, Cloud App Securi
 
 Pour configurer une stratégie pour tirer parti de la gestion des appareils via des certificats clients :
 
-1. Dans Cloud App Security, dans la barre de menus, cliquez sur l' ![icône](media/settings-icon.png "icône des paramètres") paramètres roue dentée paramètres, puis sélectionnez **paramètres**.
+1. Dans Cloud App Security, dans la barre de menus, cliquez sur l' ![icône](media/settings-icon.png "Icône des paramètres") paramètres roue dentée paramètres, puis sélectionnez **paramètres**.
 
 1. Sélectionnez l’onglet Identification de l' **appareil** .
 1. Chargez autant de certificats racine ou intermédiaires que vous le souhaitez.
@@ -132,7 +132,9 @@ Vous pouvez bloquer l’accès aux applications clientes mobiles natives et de b
 Alors que les contrôles de session sont créés pour fonctionner avec n’importe quel navigateur sur n’importe quelle plateforme principale sur tout système d’exploitation, nous prenons en charge [Microsoft Edge](https://www.microsoft.com/edge) (dernière version), Google Chrome (dernière version), Mozilla Firefox (dernière version) ou Apple Safari (dernière version). L’accès aux applications mobiles et de bureau peut également être bloqué ou autorisé.
 
 > [!NOTE]
-> Cloud App Security s’appuie sur les protocoles TLS (Transport Layer Security) 1.2+ pour fournir un chiffrement de pointe. Les applications clientes natives et les navigateurs qui ne prennent pas en charge TLS 1.2 + ne sont pas accessibles lorsqu’ils sont configurés avec le contrôle de session. Toutefois, les applications SaaS qui utilisent TLS 1.1 ou une version antérieure apparaissent dans le navigateur comme utilisant TLS 1.2+ lorsqu’elles sont configurées avec Cloud App Security.
+>
+> - Cloud App Security s’appuie sur les protocoles TLS (Transport Layer Security) 1.2 + pour offrir un chiffrement optimal. Les applications clientes natives et les navigateurs qui ne prennent pas en charge TLS 1.2 + ne sont pas accessibles lorsqu’ils sont configurés avec le contrôle de session. Toutefois, les applications SaaS qui utilisent TLS 1.1 ou une version antérieure apparaissent dans le navigateur comme utilisant TLS 1.2+ lorsqu’elles sont configurées avec Cloud App Security.
+> - Pour appliquer des contrôles de session à portal.office.com, vous devez intégrer le centre d’administration Microsoft Office 365. Pour plus d’informations sur l’intégration des applications, consultez [intégration et déploiement de contrôle d’application par accès conditionnel pour n’importe quelle application](proxy-deployment-any-app.md).
 
 <a name="featured-apps"></a>Toute application Web configurée à l’aide des [protocoles d’authentification mentionnés précédemment](#supported-apps-and-clients) peut être intégrée pour fonctionner avec les contrôles d’accès et de session. En outre, les applications suivantes sont proposées par Cloud App Security et sont déjà intégrées et prêtes à être utilisées dans n’importe quel locataire :
 
