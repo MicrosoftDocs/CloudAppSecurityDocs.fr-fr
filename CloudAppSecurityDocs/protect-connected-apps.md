@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c4bb689262eaf2784d3394aea9dd76723f452e07
-ms.sourcegitcommit: a14ce5fd805e2a470a03578f73114a818441e6c1
+ms.openlocfilehash: 9130c75680ec6cb095d3995cd4a5aee3329f3189
+ms.sourcegitcommit: 9395620dfc916b0954207c4fe26f58c76cdfe0d0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77519405"
+ms.lasthandoff: 07/05/2020
+ms.locfileid: "85953689"
 ---
 # <a name="protecting-connected-apps"></a>Protection des applications connectées
 
@@ -31,18 +31,19 @@ L’ampleur de la prise en charge de chaque application repose sur la richesse d
 
 - [Protéger AWS](protect-aws.md)
 - [Protéger Azure](protect-azure.md)
-- [Zone de protection](protect-box.md)
+- [Protéger Box](protect-box.md)
 - [Protéger Dropbox](protect-dropbox.md)
+- [Protéger GitHub Enterprise Cloud](protect-github.md)
 - [Protéger GCP](protect-gcp.md)
-- [Protéger G suite](protect-gsuite.md)
-- [Protéger Office 365](protect-office-365.md)
+- [Protéger G Suite](protect-gsuite.md)
+- [Protéger Office 365](protect-office-365.md)
 - [Protéger Okta](protect-okta.md)
 - [Protéger Salesforce](protect-salesforce.md)
 - [Protéger ServiceNow](protect-servicenow.md)
-- [Protéger WebEx](protect-webex.md)
-- [Jour de travail de protection](protect-workday.md)
+- [Protéger Webex](protect-webex.md)
+- [Protéger Workday](protect-workday.md)
 
-## <a name="next-steps"></a>Étapes suivantes :
+## <a name="next-steps"></a>Étapes suivantes
 
 > [!div class="nextstepaction"]
 > [Connecter des applications](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
