@@ -47,7 +47,7 @@ Cloud App Security now provides the following new OAuth app policy templates ena
 -->
 
 - **Suffixe d’URL de proxy amélioré pour les contrôles de session (déploiement progressif)**  
-Le 7 juin 2020, nous avons commencé à déployer progressivement nos contrôles de session de proxy améliorés en vue d’utiliser un suffixe unifié qui n’inclut pas de régions nommées. Par exemple, les utilisateurs verront le suffixe `<AppName>.mcas.ms` au lieu de `<AppName>.<Region>.cas.ms`. Si vous mettez régulièrement des domaines sur liste noire dans vos passerelles ou appliances réseau, assurez-vous d’autoriser tous les domaines répertoriés sous [Contrôles d’accès et de session](network-requirements.md#access-and-session-controls).
+Le 7 juin 2020, nous avons commencé à déployer progressivement nos contrôles de session de proxy améliorés en vue d’utiliser un suffixe unifié qui n’inclut pas de régions nommées. Par exemple, les utilisateurs verront le suffixe `<AppName>.mcas.ms` au lieu de `<AppName>.<Region>.cas.ms`. Si vous mettez régulièrement des domaines sur liste rouge dans vos passerelles ou appliances réseau, assurez-vous d’autoriser tous les domaines répertoriés sous [Contrôles d’accès et de session](network-requirements.md#access-and-session-controls).
 
 - **Nouvelle documentation**  
 Le contenu suivant a été ajouté à la documentation Cloud App Security :
@@ -69,7 +69,7 @@ Nous avons exploité notre intégration native avec Azure AD pour vous permettre
 Nous souhaitons recevoir vos commentaires et découvrir comment nous pouvons vous aider. Désormais, une nouvelle boîte de dialogue de commentaires vous donne la possibilité de contribuer à améliorer Cloud App Security, lors de la création, de la modification ou de la suppression d’un fichier, de la détection d’anomalies ou d’une stratégie de session.
 
 - **Suffixe d’URL de proxy amélioré pour les contrôles de session (déploiement progressif)**  
-À partir du 7 juin 2020, nous déployons progressivement nos contrôles de session de proxy améliorés pour utiliser un suffixe unifié qui n’inclut pas de régions nommées. Par exemple, les utilisateurs verront le suffixe `<AppName>.mcas.ms` au lieu de `<AppName>.<Region>.cas.ms`. Si vous mettez régulièrement des domaines sur liste noire dans vos passerelles ou appliances réseau, assurez-vous d’autoriser tous les domaines répertoriés sous [Contrôles d’accès et de session](network-requirements.md#access-and-session-controls).
+À partir du 7 juin 2020, nous déployons progressivement nos contrôles de session de proxy améliorés pour utiliser un suffixe unifié qui n’inclut pas de régions nommées. Par exemple, les utilisateurs verront le suffixe `<AppName>.mcas.ms` au lieu de `<AppName>.<Region>.cas.ms`. Si vous mettez régulièrement des domaines sur liste rouge dans vos passerelles ou appliances réseau, assurez-vous d’autoriser tous les domaines répertoriés sous [Contrôles d’accès et de session](network-requirements.md#access-and-session-controls).
 
 - **Améliorations des performances pour les contrôles de session (déploiement progressif)**  
 Nous avons amélioré de manière significative les performances réseau de notre service proxy. Le service amélioré est encore plus rationalisé et fournit une réactivité accrue lors de l’utilisation de contrôles de session.
