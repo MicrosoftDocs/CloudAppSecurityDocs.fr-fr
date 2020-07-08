@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 12/10/2018
+ms.date: 07/07/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,14 +14,14 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 10faf7a844c64efb621e6b8e1cf14b79443b322d
-ms.sourcegitcommit: ecb1835d1cd880de38f32ce7a7031b0015f3cae5
+ms.openlocfilehash: ff18286f75a3f5a306f7ac1c08ecff3ad98a01a5
+ms.sourcegitcommit: 15d80cde40df8a8d3a156764a6a99fad0e62a422
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81241480"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86046060"
 ---
-# <a name="discovered-app-filters-and-queries"></a>Filtres et requêtes d’applications découvertes
+# <a name="discovered-app-filters-and-queries"></a>Filtres et requêtes des applications découvertes
 
 *S’applique à : Microsoft Cloud App Security*
 
@@ -45,8 +45,7 @@ Il existe des filtres d’application découverte de base et avancés. Pour obte
 
 ### <a name="creating-and-managing-custom-app-tags"></a>Création et gestion des balises d’application personnalisées
 
-Vous pouvez créer une balise d’application personnalisée.
-Ces balises peuvent ensuite servir de filtres pour rechercher plus précisément des types spécifiques d’applications que vous voulez examiner. Par exemple, une liste de suivi personnalisée, l’attribution à une division spécifique ou des approbations personnalisées, comme « approuvé par le service juridique ».
+Vous pouvez créer une balise d’application personnalisée. Ces balises peuvent ensuite servir de filtres pour rechercher plus précisément des types spécifiques d’applications que vous voulez examiner. Par exemple, une liste de suivi personnalisée, une attribution à une division spécifique ou des approbations personnalisées, telles que « approuvé par légal ». Les balises d’application peuvent également être utilisées dans des stratégies de détection d’application dans des filtres ou en appliquant des balises aux applications dans le cadre des actions de gouvernance des stratégies.
 
 Pour créer une balise d’application personnalisée :
 
@@ -64,7 +63,7 @@ Pour créer une balise d’application personnalisée :
 
 ## <a name="discovered-app-queries"></a>Requêtes d’applications découvertes
 
-Pour faciliter encore plus les recherches, vous pouvez créer des requêtes personnalisées et les enregistrer pour les utiliser ultérieurement.
+Pour faciliter encore plus l’investigation, vous pouvez créer des requêtes personnalisées et les enregistrer pour une utilisation ultérieure.
 
 1. Dans la page **Applications découvertes**, utilisez les filtres comme décrit ci-dessus pour explorer vos applications selon vos besoins.
 
@@ -94,7 +93,7 @@ Cloud App Security vous fournit également des **requêtes suggérées** et vous
 
 - **Applications Cloud d’entreprise avec un chiffrement faible** : filtre toutes vos applications découvertes pour afficher uniquement les applications risquées, car elles ne chiffrent pas les données au repos et ne prennent pas en charge les protocoles de chiffrement.
 
-- **Applications cloud prêtes pour le RGPD** - Filtre toutes vos applications découvertes pour afficher uniquement les applications qui sont prêtes pour le RGPD. Étant donné que la conformité au RGPD est une priorité absolue, cette requête vous aide à identifier les applications qui sont prêtes pour le RGPD et à atténuer les menaces en évaluant le risque de celles qui ne le sont pas.
+- **Applications cloud prêtes pour le RGPD** - Filtre toutes vos applications découvertes pour afficher uniquement les applications qui sont prêtes pour le RGPD. Étant donné que la conformité RGPD est la priorité la plus haute, cette requête vous aide à identifier facilement les applications qui sont RGPD prêtes et à atténuer les menaces en évaluant le risque de ceux qui ne le sont pas.
 
 ![interroger les applications découvertes](media/queries-discovered-apps.png)
 

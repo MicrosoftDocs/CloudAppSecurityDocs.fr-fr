@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1578a945e461d69a78f56f000b494235245002b9
-ms.sourcegitcommit: 826d2ec022647bce6c3135c115a41ee894ff8ecd
+ms.openlocfilehash: 7ad7bc15a2ea70a9b1166f30024afc0bfe17ae27
+ms.sourcegitcommit: 15d80cde40df8a8d3a156764a6a99fad0e62a422
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84800790"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86046094"
 ---
 # <a name="session-policies"></a>Stratégies de session
 
@@ -34,6 +34,7 @@ Par exemple, vous pouvez décider que pour les appareils non gérés ou pour les
 * [Bloquer des activités spécifiques](#block-activities)
 * [Protéger les fichiers lors du téléchargement](#protect-download)
 * [Protéger les téléchargements de fichiers sensibles](#protect-upload)
+* [Bloquer les logiciels malveillants lors du téléchargement](#block-malware-on-upload)
 * [Informer les utilisateurs de la protection des fichiers sensibles](#educate-protect)
 
 ## <a name="prerequisites-to-using-session-policies"></a>Prérequis à l’utilisation de stratégies de session
