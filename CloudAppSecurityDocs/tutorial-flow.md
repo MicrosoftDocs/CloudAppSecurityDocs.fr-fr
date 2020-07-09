@@ -1,17 +1,17 @@
 ---
-title: Étendre la gouvernance à la correction des points de terminaison | Microsoft Docs
+title: Étendre la gouvernance à la correction des points de terminaison
 description: Ce tutoriel décrit le processus de configuration des alertes de stratégie Microsoft Cloud App Security pour déclencher des workflows Microsoft Power Automate en vue d’exécuter des actions correctives Microsoft Defender Advanced Threat Protection.
 author: shsagir
 ms.author: shsagir
 ms.service: cloud-app-security
 ms.topic: tutorial
 ms.date: 04/27/2020
-ms.openlocfilehash: 689b40482c4064add4edc4a05d2dbcd768ccf53c
-ms.sourcegitcommit: 4e2b905c8770d411df68372c29154d30b2cf195e
+ms.openlocfilehash: 2f06ed5a9eb5b029367b1ff05231b5a35fcc6d19
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/21/2020
-ms.locfileid: "85123336"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85625008"
 ---
 # <a name="tutorial-extend-governance-to-endpoint-remediation"></a>Tutoriel : Étendre la gouvernance à la correction des points de terminaison
 

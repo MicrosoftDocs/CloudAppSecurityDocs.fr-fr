@@ -1,11 +1,11 @@
 ---
-title: Découvrir et gérer le Shadow IT | Microsoft Docs
+title: Découvrir et gérer le Shadow IT
 description: Ce tutoriel décrit le processus d’application automatique d’étiquettes de classification Azure Information Protection dans Microsoft Cloud App Security.
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 11/11/2019
+ms.date: 06/29/2020
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: 66b70832dcdcc3c741a8eb330bc15050afbd70c8
-ms.sourcegitcommit: c981486f4ef211bce41dca1691aa0d47d180dd5e
+ms.openlocfilehash: 2a9ef4658cb363e98397341faffc69d6c961808f
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2020
-ms.locfileid: "84481736"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624928"
 ---
 # <a name="tutorial-discover-and-manage-shadow-it-in-your-network"></a>Tutoriel : Découvrir et gérer le Shadow IT
 
@@ -70,13 +70,16 @@ Maintenant que Cloud Discovery s’exécute sur votre réseau, examinez les rapp
 
     * Vous pouvez explorer une application pour en savoir plus sur sa conformité en cliquant sur le nom de l’application, puis sur l’onglet **Infos** pour afficher les détails sur les facteurs de risque de conformité de l’application.
 
+    > [!TIP]
+    > Recevez une notification lorsqu’une application découverte est associée à une violation de sécurité récemment publiée à l’aide de l’alerte intégrée **Violation de la sécurité de l’application découverte**. Investiguez tous les utilisateurs, les adresses IP et les appareils qui accèdent à l’application violée au cours des 90 derniers jours, puis appliquez les contrôles appropriés.
+
 1. **Analyser l’utilisation** : Maintenant que vous êtes décidé à autoriser l’utilisation de l’application dans votre organisation, vous devez déterminer qui l’utilise et de quelle façon. Si une utilisation limitée dans votre organisation n’est pas de nature à vous inquiéter, peut-être souhaiterez-vous être notifié d’une utilisation croissante de l’application de façon à la bloquer, le cas échéant.
 
     * Sur le portail Cloud App Security, sous **Découvrir**, cliquez sur **Applications découvertes**, puis explorez l’application qui vous intéresse en cliquant sur son nom. L’onglet **Utilisation** vous permet de déterminer le nombre d’utilisateurs actifs de l’application ainsi que la quantité de trafic qu’elle génère. Vous pouvez ainsi déjà vous faire une idée assez précise de l’activité liée à l’application. Ensuite, si vous voulez savoir précisément qui utilise l’application, vous pouvez faire une exploration plus poussée en cliquant sur **Nombre total d’utilisateurs actifs**. Cette étape importante peut vous livrer des informations intéressantes. Par exemple, si vous découvrez que les utilisateurs d’une même application font tous partie du service Marketing, vous pourrez en déduire qu’elle correspond à un besoin, et si elle présente un risque, vous pourrez leur proposer une solution alternative avant de bloquer l’application.
 
     * Explorez encore plus en détail lors de l’examen de l’utilisation des applications découvertes. Affichez les sous-domaines et les ressources pour en savoir plus sur les activités spécifiques, l’accès aux données et l’utilisation des ressources dans vos services cloud. Pour plus d’informations, consultez [Examen approfondi des applications découvertes](discovered-apps.md#deep-dive-into-discovered-apps) et [Découvrir les ressources et les applications personnalisées](discovered-apps.md#discover-resources-and-custom-apps).
 
-1. Utilisez le catalogue d’applications cloud et filtrez les applications qui appartiennent à la même catégorie d’applications. À l’aide des filtres avancés, identifiez les solutions conformes aux différents contrôles de sécurité requis pour respecter la stratégie de votre organisation.
+1. **Identifier les autres applications** : Utilisez le catalogue d’applications cloud et filtrez les applications qui appartiennent à la même catégorie d’applications. À l’aide des filtres avancés, identifiez les solutions conformes aux différents contrôles de sécurité requis pour respecter la stratégie de votre organisation.
 
 ### <a name="phase-3-manage-your-apps"></a>Phase 3 : Gérer vos applications
 

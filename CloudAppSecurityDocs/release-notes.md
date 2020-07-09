@@ -4,19 +4,19 @@ description: Cet article est mis à jour fréquemment pour vous informer des nou
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 06/16/2020
+ms.date: 06/28/2020
 ms.topic: overview
 ms.service: cloud-app-security
 ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2ec05e43341dbabb6c01219c150599d2245840b9
-ms.sourcegitcommit: 826d2ec022647bce6c3135c115a41ee894ff8ecd
+ms.openlocfilehash: ff7ac3fb2a6cda0a411ac02f161ce32f5b037a9e
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84800858"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85625069"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Nouveautés dans Microsoft Cloud App Security
 
@@ -25,6 +25,44 @@ ms.locfileid: "84800858"
 Cet article est mis à jour fréquemment pour vous informer des nouveautés de la dernière version de Cloud App Security.
 
 Flux RSS : Recevez une notification quand cette page est mise à jour en copiant et collant l’URL suivante dans votre lecteur de flux : `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
+
+## <a name="cloud-app-security-release-178"></a>Cloud App Security version 178
+
+Publication : 28 juin 2020
+
+- **Nouvelles configurations de sécurité pour Google Cloud Platform (déploiement graduel)**  
+Nous avons étendu nos configurations de sécurité multicloud afin de fournir des recommandations de sécurité pour Google Cloud Platform, basées sur le benchmark GCP CIS. Avec cette nouvelle fonctionnalité, Cloud App Security offre aux organisations une seule et même vue pour surveiller l’état de conformité sur toutes les plateformes cloud, notamment les [abonnements Azure](security-config-azure.md), les [comptes AWS](security-config-aws.md) et maintenant les [projets GCP](security-config-gcp.md).
+
+- **Nouveaux connecteurs d’application en GA**  
+Nous avons ajouté les connecteurs d’application suivants à notre portefeuille de connecteurs d’API en disponibilité générale pour vous donner plus de visibilité et de contrôle sur la façon dont vos applications sont utilisées dans votre organisation :
+  - [GitHub Enterprise Cloud](protect-github.md)
+  - [Google Cloud Platform](protect-gcp.md)
+  - [Workday](protect-workday.md)
+
+- **Nouvelle détection de programmes malveillants en temps réel en GA**  
+Nous avons étendu nos contrôles de session afin de détecter les logiciels malveillants potentiels à l’aide de Microsoft Threat Intelligence lors du chargement ou du téléchargement de fichiers. La nouvelle détection est en disponibilité générale et peut être configurée pour bloquer automatiquement les fichiers identifiés comme des programmes malveillants potentiels. Pour plus d’informations, consultez [Bloquer les logiciels malveillants lors du chargement](session-policy-aad.md#block-malware-on-upload).
+
+- **Amélioration des contrôles d’accès et de session avec n’importe quel IdP en GA**  
+La prise en charge des contrôles d’accès et de session pour les applications SAML configurées avec n’importe quel fournisseur d’identité est maintenant en disponibilité générale. Pour plus d’informations sur la configuration de ces contrôles, consultez le [Guide de déploiement](proxy-deployment-aad.md).
+
+- **Amélioration des investigations sur les ordinateurs à risque**  
+Cloud App Security permet d’identifier les ordinateurs à risque dans le cadre de votre investigation de découverte du Shadow IT. Nous avons ajouté le **Niveau de risque des ordinateurs** Microsoft Defender Advanced Threat Protection dans la page **Ordinateurs** pour donner aux analystes plus de contexte lors de l’investigation des ordinateurs de votre organisation. Pour plus d’informations, consultez [Investiguer les ordinateurs dans Cloud App Security](wdatp-integration.md#investigate-machines-in-cloud-app-security).
+
+- **Nouvelle fonctionnalité : Désactivation en libre-service des connecteurs d’application (déploiement progressif)**  
+Nous avons ajouté la possibilité de désactiver les connecteurs d’application directement dans Cloud App Security. Pour plus d’informations, consultez [Désactiver les connecteurs d’application](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md#disable-app-connectors).
+
+<!--
+- **Enhanced detection logic: Ransomware activity (gradual rollout)**  
+We've updated the detection logic for Ransomware activity to provide improved accuracy and reduced alert volume. For more information about this anomaly detection policy, see [Ransomware activity](anomaly-detection-policy.md#ransomware-activity).
+
+- **New OAuth app policy templates**  
+Cloud App Security now provides the following new OAuth app policy templates enabling you to detect potentially malicious apps:
+
+  - **OAuth apps authorized by external users**: Alert when an app was authorized by an external user.
+  - **OAuth apps with high permissions and rare community use – Google**: Alert for apps with high permissions and rare community use in Google.
+  - **OAuth apps with high permissions and rare community use – Office**: Alert for apps with high permissions and rare community use in Office
+  - **OAuth apps with rare community use - Salesforce**: Alert for apps with rare community use in Salesforce.
+-->
 
 ## <a name="cloud-app-security-release-177"></a>Cloud App Security version 177
 
@@ -35,16 +73,6 @@ Nous avons étendu nos contrôles de session afin de détecter les logiciels mal
 
 - **Nouvelle prise en charge des jetons d’accès pour les contrôles d’accès et de session**  
 Nous avons ajouté la possibilité de traiter les demandes de jeton d’accès et de code en tant que connexions lors de l’intégration d’applications aux contrôles d’accès et de session. Pour utiliser des jetons, cliquez sur l’icône Paramètres représentée par une roue dentée, sélectionnez **Contrôle d’application par accès conditionnel**, modifiez l’application appropriée (cliquez sur le menu à trois points > **Modifier l’application**), sélectionnez **Traiter les demandes de jeton d’accès et de code en tant que connexions à l’application**, puis cliquez sur **Enregistrer**. Pour plus d’informations sur l’intégration des applications, consultez [Intégrer et déployer une application](proxy-deployment-any-app.md) et [Déployer des applications proposées](proxy-deployment-aad.md).
-
-<!--
-- **New OAuth app policy templates**  
-Cloud App Security now provides the following new OAuth app policy templates enabling you to detect potentially malicious apps:
-
-  - **OAuth apps authorized by external users**: Alert when an app was authorized by an external user.
-  - **OAuth apps with high permissions and rare community use – Google**: Alert for apps with high permissions and rare community use in Google.
-  - **OAuth apps with high permissions and rare community use – Office**: Alert for apps with high permissions and rare community use in Office
-  - **OAuth apps with rare community use - Salesforce**: Alert for apps with rare community use in Salesforce.
--->
 
 - **Suffixe d’URL de proxy amélioré pour les contrôles de session (déploiement progressif)**  
 Le 7 juin 2020, nous avons commencé à déployer progressivement nos contrôles de session de proxy améliorés en vue d’utiliser un suffixe unifié qui n’inclut pas de régions nommées. Par exemple, les utilisateurs verront le suffixe `<AppName>.mcas.ms` au lieu de `<AppName>.<Region>.cas.ms`. Si vous mettez régulièrement des domaines sur liste rouge dans vos passerelles ou appliances réseau, assurez-vous d’autoriser tous les domaines répertoriés sous [Contrôles d’accès et de session](network-requirements.md#access-and-session-controls).
@@ -93,7 +121,7 @@ Cloud App Security Cloud Discovery analyse une large gamme de journaux de trafic
 - **Tableau de bord amélioré (lancement progressif)** Dans le cadre de nos améliorations continues de la conception du portail, nous déployons maintenant progressivement le tableau de bord Cloud App Security amélioré. Le tableau de bord, qui a été modernisé sur la base de vos commentaires, offre une expérience utilisateur améliorée avec du contenu et des données mis à jour. Pour plus d’informations, consultez [Déploiement progressif de notre tableau de bord amélioré](daily-activities-to-protect-your-cloud-environment.md).
 
 - **Gouvernance améliorée : Confirmer que l’utilisateur est compromis pour les détections d’anomalies**  
-Nous avons développé nos actions de gouvernance actuelles pour les stratégies de détection des anomalies afin d’inclure **Confirmer que l’utilisateur est compromis** vous permettant de protéger de manière proactive votre environnement contre toute activité suspecte des utilisateurs. Pour plus d’informations, consultez [Actions de gouvernance des activités](governance-actions.md#activity-governance-actions).
+Nous avons étendu nos actions de gouvernance actuelles pour les stratégies de détection des anomalies afin d’inclure **Confirmer que l’utilisateur est compromis** vous permettant de protéger de manière proactive votre environnement contre toute activité suspecte des utilisateurs. Pour plus d’informations, consultez [Actions de gouvernance des activités](governance-actions.md#activity-governance-actions).
 
 ## <a name="cloud-app-security-release-173-and-174"></a>Cloud App Security versions 173 et 174
 
@@ -116,7 +144,7 @@ Publication : 5 avril 2020
 - **Amélioration des contrôles d’accès et de session avec n’importe quel IdP (préversion)**  
 Les contrôles d’accès et de session prennent désormais en charge les applications SAML configurées avec n’importe quel fournisseur d’identité. La préversion publique de cette nouvelle fonctionnalité est désormais progressivement déployée. Pour configurer ces contrôles, consultez le [Guide de déploiement](proxy-deployment-aad.md).
 - **Nouvelle désanonymisation en bloc des utilisateurs et des ordinateurs**  
-Nous avons développé et simplifié le processus de désanonymisation d’un ou plusieurs utilisateurs et ordinateurs en cours d’investigation. Pour plus d’informations sur la désanonymisation en bloc, consultez [Fonctionnement de l’anonymisation des données](cloud-discovery-anonymizer.md#how-data-anonymization-works).
+Nous avons étendu et simplifié le processus de désanonymisation d’un ou plusieurs utilisateurs et ordinateurs en cours d’investigation. Pour plus d’informations sur la désanonymisation en bloc, consultez [Fonctionnement de l’anonymisation des données](cloud-discovery-anonymizer.md#how-data-anonymization-works).
 
 ## <a name="cloud-app-security-release-170-and-171"></a>Cloud App Security versions 170 et 171
 
@@ -139,7 +167,7 @@ Il est maintenant possible de contrôler la gravité des alertes Azure AD Identi
 Date de publication : 1er mars 2020
 
 - **Nouvelle détection pour Workday**  
-Nous avons développé nos alertes actuelles sur les comportements anormaux pour Workday. Les nouvelles alertes incluent les détections de géolocalisation d’utilisateur suivantes :
+Nous avons étendu nos alertes actuelles sur les comportements anormaux pour Workday. Les nouvelles alertes incluent les détections de géolocalisation d’utilisateur suivantes :
   - [Activité depuis des adresses IP anonymes](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)
   - [Activité à partir de pays peu fréquents](anomaly-detection-policy.md#activity-from-infrequent-country)
   - [Activité à partir d'adresses IP suspectes](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)

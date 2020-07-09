@@ -1,5 +1,5 @@
 ---
-title: Conformité Cloud App Security, sécurité des données, confidentialité, confiance | Microsoft Docs
+title: Conformité Cloud App Security, sécurité des données, confidentialité, confiance
 description: Cet article décrit l’offre de conformité Cloud App Security, le centre de confidentialité, la confidentialité et la sécurité des données.
 author: shsagir
 ms.author: shsagir
@@ -9,12 +9,12 @@ ms.date: 11/01/2019
 ms.collection: M365-security-compliance
 ms.custom: seodec18
 ms.suite: ems
-ms.openlocfilehash: 65a274b03492d0252e4ed617237159c685b1c131
-ms.sourcegitcommit: 0b929f7c8feed7dfb40d5294179fd5c6fc079614
+ms.openlocfilehash: 7cdc03bf2cc8bae19ef59cbe9ed926a28d81bb22
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "76977508"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624409"
 ---
 # <a name="microsoft-cloud-app-security-data-security-and-privacy"></a>Sécurité et confidentialité des données Microsoft Cloud App Security
 
