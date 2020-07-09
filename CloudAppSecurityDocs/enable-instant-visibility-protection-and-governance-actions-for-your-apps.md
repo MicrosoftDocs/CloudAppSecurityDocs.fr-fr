@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5c48fff030c1f008d9361796eafe4ba49b8b0b82
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 4b2d84c2c8f3260cf5e6048bc453a62c29cd95b9
+ms.sourcegitcommit: 14b6fe342aa06d5547d121522b1e2ae9525da8e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624540"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86122646"
 ---
 # <a name="connect-apps"></a>Connecter des applications
 
@@ -68,15 +68,15 @@ Le tableau suivant répertorie, par application cloud, les fonctionnalités pris
 
 | | AWS | Box | Dropbox | GCP | G Suite | Office 365 | Okta | ServiceNow | Salesforce | Webex | Workday |
 |-|-|-|-|-|-|-|-|-|-|-|-|
-| **Répertorier les comptes** | ✔ | ✔ | ✔ | Connexion de l’objet G suite | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| **Énumérer les comptes** | ✔ | ✔ | ✔ | Connexion de l’objet G suite | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 | **Liste des groupes** | ✔ | ✔ | ✔ | Connexion de l’objet G suite | ✔ | ✔ | ✔ | ✔ | ✔ | | Non prise en charge par le fournisseur |
 | **Liste des privilèges** | | ✔ | ✔ | Connexion de l’objet G suite | ✔ | ✔ | Non prise en charge par le fournisseur | ✔ | ✔ | ✔ | Non prise en charge par le fournisseur |
 | **Gouvernance des utilisateurs** | | ✔ | Bientôt disponible | Connexion de l’objet G suite | ✔ | ✔ | | Bientôt disponible | ✔ | Bientôt disponible | Non prise en charge par le fournisseur |
 | **Activité de connexion** | ✔ | ✔ | ✔ | Connexion de l’objet G suite | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 | **Activité de l’utilisateur** | Non applicable | ✔ | ✔ | ✔ | ✔ - nécessite Google Business ou Entreprises | ✔ | ✔ | Partial | Prise en charge avec Salesforce Shield | ✔ | ✔ |
 | **Activité d’administration** | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | Partial | ✔ | ✔ | Non prise en charge par le fournisseur |
-| **DLP-analyse périodique** | | ✔ | Bientôt disponible | Non applicable | ✔ | ✔ | Non applicable | | | | Non prise en charge par le fournisseur |
-| **DLP : analyse en temps quasi réel** | | ✔ | ✔ | Non applicable | ✔-nécessite Google Business Enterprise | ✔ | Non applicable | ✔ | ✔ | ✔ | Non prise en charge par le fournisseur |
+| **DLP-analyse périodique** | | ✔ | Bientôt disponible | Non applicable | ✔ | ✔ | Non applicable | ✔ | ✔ | ✔ | Non prise en charge par le fournisseur |
+| **DLP : analyse en temps quasi réel** | | ✔ | ✔ | Non applicable | ✔-nécessite Google Business Enterprise | ✔ | Non applicable | | | ✔ | Non prise en charge par le fournisseur |
 | **Contrôle partagé** | ✔ | ✔ | ✔ | Non applicable | ✔ | ✔ | Non applicable | Non applicable | | ✔ | Non prise en charge par le fournisseur |
 | **Gouvernance des fichiers** | ✔ | ✔ | ✔ | Non applicable | ✔ | ✔ | Non applicable | | ✔ | | Non prise en charge par le fournisseur |
 | **Voir les autorisations d’application** | Non applicable | Non prise en charge par le fournisseur | En provenance | Non applicable | ✔ | ✔ | Non applicable | | ✔ | Non applicable | Non applicable |
@@ -99,13 +99,13 @@ Pour utiliser des connecteurs d’applications, vous devez vérifier que vous av
 | Azure | | Administrateur général |
 | AWS | | Utilisateur récemment créé |
 | Box | Entreprise | Il est fortement recommandé de vous connecter à Box en tant qu’administrateur. La connexion en tant que coadministrateur entraînera uniquement une visibilité partielle des données. Si vous vous connectez en tant que coadministrateur, sélectionnez toutes les autorisations. |
-| Dropbox | Business/Entreprises | Admin |
-| GitHub | Cloud GitHub Enterprise | Propriétaire |
+| Dropbox | Business/Entreprises | Administrateur |
+| GitHub | GitHub Enterprise Cloud | Propriétaire |
 | GCP | | Consultez les [conditions préalables Connect GCP](connect-google-gcp-to-microsoft-cloud-app-security.md#prerequisites) |
 | G Suite | Compte G Suite Business ou Entreprise<br /><br />G Suite Enterprise (au minimum) | Super administrateur |
 | Office 365 | | Administrateur général |
-| Okta | Enterprise (pas la version d’essai) | Admin |
-| Salesforce | | Admin |
+| Okta | Enterprise (pas la version d’essai) | Administrateur |
+| Salesforce | | Administrateur |
 | ServiceNow | Eureka et au-dessus | Rôle admin + RestAPI |
 | Webex | | Admin + conformité administrateur |
 | Workday | | Consultez les [conditions préalables Connect](connect-workday-to-microsoft-cloud-app-security.md#prerequisites) de la journée de travail |

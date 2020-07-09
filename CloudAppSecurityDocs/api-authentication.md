@@ -1,5 +1,5 @@
 ---
-title: Gestion des jetons d’API dans Cloud App Security
+title: Gestion des jetons d’API
 description: Cet article fournit des informations sur la génération de jetons d’API pour Cloud App Security.
 keywords: ''
 author: shsagir
@@ -10,12 +10,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 933c2beb8285f4f76f61406ab4981153b81913cc
-ms.sourcegitcommit: 286f8d5d940d1bb9a09daa3070ac4fc3768208f8
+ms.openlocfilehash: e4dba7ef7ff73c7e4b6b784bce68d4e71b0b854e
+ms.sourcegitcommit: 14b6fe342aa06d5547d121522b1e2ae9525da8e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84505418"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86122616"
 ---
 # <a name="managing-api-tokens"></a>Gestion des jetons d’API
 
@@ -46,9 +46,6 @@ L’onglet Jetons d’API vous aide à gérer tous les jetons d’API de votre l
     ![Jeton d’API Cloud App Security](media/generate-api-token.png)
 
     L’URL du portail générique continue de fonctionner, mais est beaucoup plus lente que l’URL personnalisée fournie avec votre jeton. Si vous oubliez l’URL, vous pouvez la voir en accédant à l’icône **?** du menu et en sélectionnant **À propos de**.
-
-> [!NOTE]
-> Si vous utilisez Azure Active Directory Privileged Identity Management activation du rôle, votre jeton d’API ne sera effectif qu’une fois le rôle activé. Pour plus d’informations, consultez [activer mes Azure ad des rôles dans PIM](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-how-to-activate-role).
 
 ## <a name="api-token-management"></a>Gestion des jetons d’API
 

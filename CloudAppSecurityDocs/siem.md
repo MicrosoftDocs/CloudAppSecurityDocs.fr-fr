@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 546912761fb854adecc9d7626465b694f02b20b7
-ms.sourcegitcommit: f58ca0afb30e2db7e4e868f5df05651b42aede5e
+ms.openlocfilehash: 9b2b4cfc8c3807f5acd7540390a3b44604e49d84
+ms.sourcegitcommit: 45a23730c2beda00c32b0d6cb8da872dc2bf0e14
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82161807"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86137969"
 ---
 # <a name="generic-siem-integration"></a>Intégration de SIEM générique
 
@@ -73,7 +73,7 @@ L’intégration à votre serveur SIEM s’effectue en trois étapes :
 
 1. Dans le portail Cloud App Security, sous **paramètres** roue dentée, cliquez sur **extensions de sécurité**.
 
-1. Sous l’onglet **agents Siem** , cliquez sur Ajouter**+**(), puis choisissez **Siem générique**.
+1. Sous l’onglet **agents Siem** , cliquez sur Ajouter ( **+** ), puis choisissez **Siem générique**.
 
     ![Capture d’écran montrant le menu Ajouter une intégration SIEM](media/siem0.png)
 
@@ -116,7 +116,7 @@ L’intégration à votre serveur SIEM s’effectue en trois étapes :
 Où les variables suivantes sont utilisées :
 
 * NOM_RÉPERTOIRE est le chemin du répertoire à utiliser pour les journaux de débogage de l’agent local.
-* ADDRESS [ :P Trier] est l’adresse et le port du serveur proxy que le serveur utilise pour se connecter au * POI.
+* ADRESSE [ :P Trier] est l’adresse et le port du serveur proxy que le serveur utilise pour se connecter à Internet.
 * JETON est le jeton de l’agent SIEM que vous avez copié à l’étape précédente.
 
 Vous pouvez taper -h à tout moment pour obtenir de l’aide.
@@ -161,15 +161,15 @@ Le texte suivant est un exemple de fichier journal d’alertes :
 | Activités/Alertes | msg | Description de l’activité ou de l’alerte telle qu’elle apparaît dans le portail |
 | Activités/Alertes | suser | Utilisateur de l’objet de l’activité ou de l’alerte |
 | Activités/Alertes | destinationServiceName | Application à l’origine de l’activité ou de l’alerte, par exemple Office 365, Sharepoint, Box. |
-| Activités/Alertes | Étiquette\<de>CS X | Chaque étiquette a une signification différente, mais l’étiquette elle-même l’explique, par exemple targetObjects. |
-| Activités/Alertes | >\<CS X | Informations correspondant à l’étiquette (l’utilisateur cible de l’activité ou de l’alerte, selon l’exemple d’étiquette). |
+| Activités/Alertes | cs\<X>Label | Chaque étiquette a une signification différente, mais l’étiquette elle-même l’explique, par exemple targetObjects. |
+| Activités/Alertes | cs\<X> | Informations correspondant à l’étiquette (l’utilisateur cible de l’activité ou de l’alerte, selon l’exemple d’étiquette). |
 | Activités | EVENT_CATEGORY_* | Catégorie générale de l’activité |
-| Activités | \<> D’ACTION | Type d’activité, tel qu’il apparaît dans le portail |
-| Activités | externalId | ID de l'événement |
+| Activités | \<ACTION> | Type d’activité, tel qu’il apparaît dans le portail |
+| Activités | externalId | ID de l’événement |
 | Activités | dvc | Adresse IP de l’appareil client |
 | Activités | requestClientApplication | Agent utilisateur de l’appareil client |
-| Alertes | \<type d’alerte> | Par exemple « ALERT_CABINET_EVENT_MATCH_AUDIT » |
-| Alertes | \<nom> | Nom de la stratégie correspondante |
+| Alertes | \<alert type> | Par exemple « ALERT_CABINET_EVENT_MATCH_AUDIT » |
+| Alertes | \<name> | Nom de la stratégie correspondante |
 | Alertes | externalId | ID de l’alerte |
 | Alertes | src | Adresse IPv4 de l’appareil client |
 | Alertes | c6a1 | Adresse IPv6 de l’appareil client |

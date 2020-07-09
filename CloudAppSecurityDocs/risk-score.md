@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d3d292f7bedfdfd9d4569bb357b5c0dcaf48c69f
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 074ff2ae9e23cdcb351a34f937103e311441aa7f
+ms.sourcegitcommit: 45a23730c2beda00c32b0d6cb8da872dc2bf0e14
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85625081"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86137951"
 ---
 # <a name="working-with-app-risk-scores"></a>Utilisation des scores de risque d’application
 
@@ -76,7 +76,7 @@ Si vous trouvez une nouvelle application dans votre environnement qui n’a pas 
 
     ![Suggérer une application à Cloud App Security](media/suggest-new-app.png)
 
-2. Dans la fenêtre contextuelle **suggérer une nouvelle application Cloud** , renseignez les détails sur le nouveau. Mentionnez le nom et le domaine de l’application.
+2. Dans la fenêtre contextuelle **suggérer une nouvelle application Cloud** , renseignez les détails sur la nouvelle application. Mentionnez le nom et le domaine de l’application.
 
     ![Suggérer une fenêtre contextuelle d’application à Cloud App Security](media/suggest-new-app-pop-up.png)
 
