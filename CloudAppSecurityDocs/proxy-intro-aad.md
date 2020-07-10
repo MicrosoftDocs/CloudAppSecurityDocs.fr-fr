@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 04/27/2020
+ms.date: 07/09/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0ba00548c014126414319fb5860d2c7fab9fb26d
-ms.sourcegitcommit: 9a35b4e96db80ac85a4c0244ef6abd468d5774a9
+ms.openlocfilehash: c957afbd4b4fef2947b042c99b548edfacbcb5c0
+ms.sourcegitcommit: 5ae4c12ee43c9133b61731a95f81f771eeeb7d19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85853981"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86180555"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Protéger les applications avec le Contrôle d’accès conditionnel aux applications Microsoft Cloud App Security
 
@@ -31,7 +31,7 @@ Dans le lieu de travail actuel, il est souvent difficile de savoir ce qui se pas
 >
 > - Pour utiliser Cloud App Security contrôle d’application par accès conditionnel, vous avez besoin d’une [licence Azure Active Directory P1](https://azure.microsoft.com/pricing/details/active-directory/)ou de la licence requise par votre solution IDP, ainsi que d’une licence Cloud App Security.
 
-## <a name="how-it-works"></a>Fonctionnement
+## <a name="how-it-works"></a>Comment ça marche
 
 Contrôle d’application par accès conditionnel utilise une architecture de proxy inverse et s’intègre à votre IdP. Lors de l’intégration avec Azure AD accès conditionnel, vous pouvez configurer des applications pour qu’elles fonctionnent avec contrôle d’application par accès conditionnel en quelques clics, ce qui vous permet d’appliquer facilement et de manière sélective des contrôles d’accès et de session sur les applications de votre organisation en fonction des conditions de l’accès conditionnel. Les conditions définissent *qui* (utilisateur ou groupe d’utilisateurs) et *Quelles* (applications Cloud) et *où* (emplacements et réseaux) une stratégie d’accès conditionnel est appliquée. Une fois que vous avez déterminé les conditions, vous pouvez acheminer les utilisateurs vers Cloud App Security où vous pouvez protéger les données avec contrôle d’application par accès conditionnel en appliquant des contrôles d’accès et de session.
 
@@ -107,6 +107,13 @@ Pour configurer une stratégie pour tirer parti de la gestion des appareils via 
 1. Sélectionnez l’onglet Identification de l' **appareil** .
 1. Chargez autant de certificats racine ou intermédiaires que vous le souhaitez.
 
+    > [!TIP]
+    > Pour tester la façon dont cela fonctionne, vous pouvez utiliser notre exemple d’autorité de certification racine et de certificat client, comme suit :
+    >
+    > 1. Téléchargez l’exemple d' [autorité de certification racine](https://github.com/microsoft/Microsoft-Cloud-App-Security/blob/master/Doc%20Assets/Proxy/Samples/SampleRootCA.crt.pem) et le [certificat client](https://github.com/microsoft/Microsoft-Cloud-App-Security/blob/master/Doc%20Assets/Proxy/Samples/SampleClientCert.pfx).
+    > 1. Chargez l’autorité de certification racine sur Cloud App Security.
+    > 1. Installez le certificat client (Password = Microsoft) sur les appareils appropriés.
+
 Une fois les certificats téléchargés, vous pouvez créer des stratégies d’accès et de session basées sur une **balise d’appareil** et un **certificat client valide**.
 
 ## <a name="supported-apps-and-clients"></a>Applications et clients pris en charge
@@ -116,7 +123,7 @@ Les contrôles de session et d’accès peuvent être appliqués à n’importe 
 Cloud App Security identifie les applications à l’aide des informations disponibles dans son catalogue d’applications Cloud. Certaines organisations et utilisateurs personnalisent des applications en ajoutant des plug-ins. Toutefois, pour que les contrôles de session fonctionnent correctement avec ces plug-ins, les domaines personnalisés associés doivent être ajoutés à l’application correspondante dans le catalogue.
 
 > [!NOTE]
-> L’application Authenticator, parmi d’autres flux de connexion d’application cliente native, utilise un flux de connexion non interactif et ne peut pas être utilisée avec les contrôles d’accès.
+> L’application Authenticator, parmi d’autres flux de connexion d’application cliente native, utilise un flux de connexion non interactif et ne peut pas être utilisée avec des contrôles d’accès.
 
 ### <a name="access-controls"></a>Contrôles d’accès
 
@@ -141,7 +148,7 @@ Alors que les contrôles de session sont créés pour fonctionner avec n’impor
 - AWS
 - DevOps Azure (Visual Studio Team Services)
 - Portail Azure (préversion)
-- Box
+- Zone
 - Concur
 - CornerStone on Demand
 - DocuSign
