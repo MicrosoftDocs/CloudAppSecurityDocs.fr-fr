@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: 2a9ef4658cb363e98397341faffc69d6c961808f
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 6145c6dade8729c3572f9c491ad9743899b3b92e
+ms.sourcegitcommit: 5f3b3f11bfb6f677b8666a4566e7abbb873567d1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624928"
+ms.lasthandoff: 07/12/2020
+ms.locfileid: "86279995"
 ---
 # <a name="tutorial-discover-and-manage-shadow-it-in-your-network"></a>Tutoriel : Découvrir et gérer le Shadow IT
 
@@ -79,7 +79,7 @@ Maintenant que Cloud Discovery s’exécute sur votre réseau, examinez les rapp
 
     * Explorez encore plus en détail lors de l’examen de l’utilisation des applications découvertes. Affichez les sous-domaines et les ressources pour en savoir plus sur les activités spécifiques, l’accès aux données et l’utilisation des ressources dans vos services cloud. Pour plus d’informations, consultez [Examen approfondi des applications découvertes](discovered-apps.md#deep-dive-into-discovered-apps) et [Découvrir les ressources et les applications personnalisées](discovered-apps.md#discover-resources-and-custom-apps).
 
-1. **Identifier les autres applications** : Utilisez le catalogue d’applications cloud et filtrez les applications qui appartiennent à la même catégorie d’applications. À l’aide des filtres avancés, identifiez les solutions conformes aux différents contrôles de sécurité requis pour respecter la stratégie de votre organisation.
+1. **Identifier les autres applications** : Utilisez le catalogue d’applications cloud pour identifier de manière sécurisée les applications qui fournissent des fonctionnalités métier similaires aux applications à risque détectées, mais sont conformes à la politique de votre organisation. Pour ce faire, vous pouvez utiliser les filtres avancés afin de rechercher des applications de la même catégorie qui répondent à vos différents contrôles de sécurité.
 
 ### <a name="phase-3-manage-your-apps"></a>Phase 3 : Gérer vos applications
 
