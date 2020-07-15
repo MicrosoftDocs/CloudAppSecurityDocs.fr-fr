@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 06/28/2020
+ms.date: 07/14/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4b2d84c2c8f3260cf5e6048bc453a62c29cd95b9
-ms.sourcegitcommit: 14b6fe342aa06d5547d121522b1e2ae9525da8e4
+ms.openlocfilehash: bf6c12f3b41abf63ab3183f85d7dedcba21584c9
+ms.sourcegitcommit: b71546236cb97c0a22d0e82742a167f31555b275
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86122646"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86308256"
 ---
 # <a name="connect-apps"></a>Connecter des applications
 
@@ -66,7 +66,7 @@ Selon l’application à laquelle vous vous connectez, la connexion d’API acti
 
 Le tableau suivant répertorie, par application cloud, les fonctionnalités prises en charge avec les connecteurs d’applications :
 
-| | AWS | Box | Dropbox | GCP | G Suite | Office 365 | Okta | ServiceNow | Salesforce | Webex | Workday |
+| | AWS | Box | Dropbox | GCP | G Suite | Office 365. | Okta | ServiceNow | Salesforce | Webex | Workday |
 |-|-|-|-|-|-|-|-|-|-|-|-|
 | **Énumérer les comptes** | ✔ | ✔ | ✔ | Connexion de l’objet G suite | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 | **Liste des groupes** | ✔ | ✔ | ✔ | Connexion de l’objet G suite | ✔ | ✔ | ✔ | ✔ | ✔ | | Non prise en charge par le fournisseur |
@@ -75,8 +75,8 @@ Le tableau suivant répertorie, par application cloud, les fonctionnalités pris
 | **Activité de connexion** | ✔ | ✔ | ✔ | Connexion de l’objet G suite | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 | **Activité de l’utilisateur** | Non applicable | ✔ | ✔ | ✔ | ✔ - nécessite Google Business ou Entreprises | ✔ | ✔ | Partial | Prise en charge avec Salesforce Shield | ✔ | ✔ |
 | **Activité d’administration** | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | Partial | ✔ | ✔ | Non prise en charge par le fournisseur |
-| **DLP-analyse périodique** | | ✔ | Bientôt disponible | Non applicable | ✔ | ✔ | Non applicable | ✔ | ✔ | ✔ | Non prise en charge par le fournisseur |
-| **DLP : analyse en temps quasi réel** | | ✔ | ✔ | Non applicable | ✔-nécessite Google Business Enterprise | ✔ | Non applicable | | | ✔ | Non prise en charge par le fournisseur |
+| **DLP-analyse périodique** | | ✔ | ✔ | Non applicable | ✔ | ✔ | Non applicable | ✔ | ✔ | ✔ | Non prise en charge par le fournisseur |
+| **DLP : analyse en temps quasi réel** | | ✔ | | Non applicable | ✔-nécessite Google Business Enterprise | ✔ | Non applicable | | | ✔ | Non prise en charge par le fournisseur |
 | **Contrôle partagé** | ✔ | ✔ | ✔ | Non applicable | ✔ | ✔ | Non applicable | Non applicable | | ✔ | Non prise en charge par le fournisseur |
 | **Gouvernance des fichiers** | ✔ | ✔ | ✔ | Non applicable | ✔ | ✔ | Non applicable | | ✔ | | Non prise en charge par le fournisseur |
 | **Voir les autorisations d’application** | Non applicable | Non prise en charge par le fournisseur | En provenance | Non applicable | ✔ | ✔ | Non applicable | | ✔ | Non applicable | Non applicable |
@@ -103,7 +103,7 @@ Pour utiliser des connecteurs d’applications, vous devez vérifier que vous av
 | GitHub | GitHub Enterprise Cloud | Propriétaire |
 | GCP | | Consultez les [conditions préalables Connect GCP](connect-google-gcp-to-microsoft-cloud-app-security.md#prerequisites) |
 | G Suite | Compte G Suite Business ou Entreprise<br /><br />G Suite Enterprise (au minimum) | Super administrateur |
-| Office 365 | | Administrateur général |
+| Office 365. | | Administrateur général |
 | Okta | Enterprise (pas la version d’essai) | Administrateur |
 | Salesforce | | Administrateur |
 | ServiceNow | Eureka et au-dessus | Rôle admin + RestAPI |
@@ -117,12 +117,22 @@ Pour plus d’informations sur le peering public, consultez [Circuits ExpressRou
 
 ## <a name="disable-app-connectors"></a>Désactiver les connecteurs d’application
 
+> [!NOTE]
+> Avant de désactiver un connecteur d’applications, assurez-vous que les détails de connexion sont disponibles, car vous en aurez besoin si vous souhaitez réactiver le connecteur.
+
 Pour désactiver les applications connectées :
 
 1. Dans la page **applications connectées** , dans la ligne appropriée, cliquez sur les trois points et sélectionnez **désactiver le connecteur d’applications**.
 1. Dans la fenêtre contextuelle, cliquez sur **désactiver l’instance App Connector** pour confirmer l’action.
 
 Une fois désactivée, l’instance de connecteur cesse de consommer les données du connecteur.
+
+## <a name="re-enable-app-connectors"></a>Réactiver les connecteurs d’application
+
+Pour réactiver les applications connectées :
+
+1. Dans la page **applications connectées** , dans la ligne appropriée, cliquez sur les trois points et sélectionnez **modifier l’application**. Cela démarre le processus pour ajouter un connecteur.
+1. Ajoutez le connecteur à l’aide des étapes décrites dans le Guide du connecteur d’API approprié. Par exemple, si vous réactivez GitHub, suivez les étapes décrites dans [Connect GitHub Enterprise Cloud to Cloud App Security](connect-github-ec-to-microsoft-cloud-app-security.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

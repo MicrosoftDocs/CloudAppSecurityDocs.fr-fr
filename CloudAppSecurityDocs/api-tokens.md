@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 12/10/2018
+ms.date: 07/14/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b19fdd34425218cbeff284bb16962723e027e914
-ms.sourcegitcommit: 14b6fe342aa06d5547d121522b1e2ae9525da8e4
+ms.openlocfilehash: 81c44eb4527b19e1f3f42929028791f1ae48715d
+ms.sourcegitcommit: b71546236cb97c0a22d0e82742a167f31555b275
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86122619"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86308239"
 ---
 # <a name="api-tokens"></a>Jetons d’API
 
@@ -32,7 +32,7 @@ L’API Microsoft Cloud App Security fournit l’accès par programmation à Clo
 - Répertorier des activités, des alertes et des rapports de stratégie
 - Ignorer ou résoudre les alertes
 
-Pour consulter la documentation complète de l’API, dans le portail Cloud App Security, accédez à Aide > **Documentation de l’API**.
+Pour plus d’informations sur l’utilisation de notre API, consultez [Cloud App Security API REST](api-introduction.md).
 
 Pour accéder à l’API, vous devez créer un jeton d’API et l’utiliser dans votre logiciel pour vous connecter à l’API Cloud App Security.
 
@@ -75,6 +75,9 @@ Une fois qu’un jeton est révoqué, il est supprimé du tableau, et le logicie
 > - Les jetons d’API d’annulation d’approvisionnement sont conservés dans Cloud App Security mais ne peuvent pas être utilisés. Toute tentative d’utilisation de ceux-ci entraînera une réponse de refus d’autorisation. Toutefois, nous vous recommandons de révoquer ces jetons sur la page **jetons d’API** .
 
 ## <a name="next-steps"></a>Étapes suivantes
+
+> [!div class="nextstepaction"]
+> [API REST Cloud App Security](api-introduction.md)
 
 > [!div class="nextstepaction"]
 > [Résolution des problèmes d’intégration de SIEM](troubleshooting-siem.md)
