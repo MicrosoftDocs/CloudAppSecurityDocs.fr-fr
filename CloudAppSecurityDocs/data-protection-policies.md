@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 317595b377d19b1d6f9a06b316cb14e4d1ad4c1c
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: b833af37dae275ff9ecdf382eeacc12d59ef3aed
+ms.sourcegitcommit: 1dec09a56cc44148393f103c96fc24c59adc2f8f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624599"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86402186"
 ---
 # <a name="file-policies"></a>Stratégies de fichier
 
@@ -41,7 +41,7 @@ Le moteur combine trois aspects sous chaque stratégie :
 
 * Actions automatisées pour la gouvernance et la correction. Pour plus d’informations, consultez [Contrôle](control.md).
     > [!NOTE]
-    > Seule l’action de gouvernance de la première stratégie déclenchée est garantie d’être appliquée. Par exemple, si une stratégie de fichier a déjà appliqué une étiquette AIP à un fichier, une deuxième stratégie de fichier ne peut pas lui appliquer une autre étiquette AIP.
+    > Seule l’action de gouvernance de la première stratégie déclenchée est garantie d’être appliquée. Par exemple, si une stratégie de fichier a déjà appliqué une étiquette Azure Information Protection (AIP) à un fichier, une deuxième stratégie de fichier ne peut pas lui appliquer une autre étiquette AIP.
 
 Une fois activée, la stratégie analyse en permanence votre environnement cloud et identifie les fichiers qui correspondent aux filtres de contenu et de contexte, puis applique les actions automatisées demandées. Ces stratégies détectent et corrigent toutes les violations concernant les informations au repos ou le contenu nouvellement créé. Les stratégies peuvent être surveillées avec des alertes en temps réel ou des rapports générés sur une console.
 

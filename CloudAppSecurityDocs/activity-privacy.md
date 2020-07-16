@@ -1,6 +1,6 @@
 ---
-title: Définir l’étendue d’un déploiement Microsoft Cloud App Security
-description: Cet article donne des informations sur la marche à suivre pour définir l’étendue d’un déploiement Cloud App Security, en incluant et en excluant certains utilisateurs ou certains groupes.
+title: Confidentialité de l’activité
+description: Cet article fournit des informations sur la façon de configurer votre analyse d’activité pour qu’elle soit conforme à votre politique de confidentialité des utilisateurs.
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -13,14 +13,14 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6cfc4421569a59c49c9a980af3ce2e0876d90bce
-ms.sourcegitcommit: 6886d285601955f0efc7acf980c9d4740ff873fe
+ms.openlocfilehash: 6de413cc6067ea43f5c2d677e421c09ffddcd94d
+ms.sourcegitcommit: 3464ce8ed73d1bfaf02e4e78007766ea18350d9f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "84253816"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86402666"
 ---
-# <a name="activity-privacy"></a>Confidentialité des activités
+# <a name="activity-privacy"></a>Confidentialité de l’activité
 
 *S’applique à : Microsoft Cloud App Security*
 
@@ -38,7 +38,7 @@ Pour configurer vos groupes de confidentialité d’utilisateur, vous devez d’
 
 1. Dans la barre de menus, cliquez sur les paramètres roue dentée et sélectionnez **déploiement étendu et confidentialité**.
 
-    ![icône des paramètres](media/settings-icon.png)
+    ![Icône des paramètres](media/settings-icon.png)
 
 1. Pour définir des groupes spécifiques qui doivent être analysés par Cloud App Security, dans l’onglet confidentialité de l' **activité** , cliquez sur l’icône plus.
     ![icon](media/plus-icon.png)
@@ -54,7 +54,7 @@ Pour configurer vos groupes de confidentialité d’utilisateur, vous devez d’
 
 1. Dans la barre de menus, cliquez sur les paramètres roue dentée et sélectionnez **gérer l’accès administrateur**.
 
-    ![icône des paramètres](media/settings-icon.png)
+    ![Icône des paramètres](media/settings-icon.png)
 
 1. Pour accorder à des administrateurs spécifiques l’autorisation d’afficher les activités privées, sous l’onglet **autorisations de confidentialité** de l’activité, cliquez sur l’icône plus.
     ![icon](media/plus-icon.png)
