@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ff7ac3fb2a6cda0a411ac02f161ce32f5b037a9e
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 55e66016098e6b844686f539c7280b40e60ab993
+ms.sourcegitcommit: 1dec09a56cc44148393f103c96fc24c59adc2f8f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85625069"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86402271"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Nouveautés dans Microsoft Cloud App Security
 
@@ -485,7 +485,7 @@ Dans le cadre de cette modification, les stratégies de détection de programmes
 
 - **Mises à jour de l’accès conditionnel**  
 Avec le contrôle d’application par accès conditionnel, vous avez maintenant la possibilité de superviser et de bloquer les activités suivantes :
-  - Chargez des fichiers dans n’importe quelle application : activez des scénarios tels qu’empêcher le chargement d’extensions de programmes malveillants connus et garantir que les utilisateurs protègent les fichiers avec AIP avant le chargement.
+  - Chargez des fichiers dans n’importe quelle application : activez des scénarios tels qu’empêcher le chargement d’extensions de programmes malveillants connus et garantir que les utilisateurs protègent les fichiers avec Azure Information Protection avant le chargement.
   - Copiez et collez dans n’importe quelle application : renforcez les contrôles robustes de l’exfiltration des données, qui incluaient déjà le téléchargement, l’impression et les activités personnalisées telles que le partage.
   - Envoyez un message : assurez-vous que les données des informations d'identification personnelle telles que les mots de passe ne sont pas partagées dans des outils de collaboration populaires comme Slack, Salesforce et Workplace by Facebook.
   - Les stratégies des sessions incluent maintenant des modèles intégrés. Ils permettent à votre organisation d’activer sans effort une surveillance et un contrôle en temps réel populaires, tels que **Bloquer le chargement sur la base de l’inspection du contenu en temps réel**.
