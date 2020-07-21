@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 14ef18bb57d979dc5ddabc3ef8a7ff0c724ff619
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: bf3d80fbea1847fc22d07164d25db0ec7c4149f6
+ms.sourcegitcommit: 4d2ebbd68a48876825e663375ea2b17dc6b58d03
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624561"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86865450"
 ---
 # <a name="governing-connected-apps"></a>Gouvernance des applications connectées
 
@@ -75,7 +75,7 @@ Vous pouvez effectuer les actions de gouvernance suivantes sur un fichier ou un 
 
   - **Corbeille** : déplacez le fichier vers le dossier Corbeille. (Box, Dropbox, Google Drive, OneDrive, SharePoint)
 
-   ![alertes policy_create](media/policy_create-alerts.png "alertes policy_create")
+   ![alertes policy_create](media/policy_create-alerts.png)
 
 ## <a name="activity-governance-actions"></a>Actions de gouvernance des activités
 
@@ -97,7 +97,7 @@ Vous pouvez effectuer les actions de gouvernance suivantes sur un fichier ou un 
 
   - **Confirmer** que l’utilisateur est compromis-définir le niveau de risque de l’utilisateur sur élevé. Cela entraîne l’application des actions de stratégie appropriées définies dans Azure AD. Pour plus d’informations sur le fonctionnement de Azure AD avec les niveaux de risque, consultez [comment Azure ad utiliser mes commentaires](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-risk-feedback#how-does-azure-ad-use-my-risk-feedback)sur les risques.
 
-  ![Cloud App Security les actions de gouvernance des stratégies d’activité](media/activity-policy-ref6.png "stratégie d’activité ref6")
+  ![Cloud App Security les actions de gouvernance des stratégies d’activité](media/activity-policy-ref6.png)
 
 ## <a name="governance-conflicts"></a>Conflits de gouvernance
 
@@ -149,11 +149,11 @@ Pour plus d’informations sur la façon dont les actions de gouvernance sont tr
 |Stratégie de fichiers et fichiers|Fichier | Appliquer l’étiquette de classification|Applique automatiquement une étiquette de classification Azure Information Protection à des fichiers, en fonction des conditions définies dans la stratégie.| Box, One Drive, G Suite, SharePoint |
 |Stratégie de fichiers et fichiers|Fichier | Supprimer l’étiquette de classement | Supprime automatiquement une étiquette de classification Azure Information Protection pour des fichiers, en fonction des conditions définies dans la stratégie. Seules sont supprimables les étiquettes qui ne comportent pas de protection et ont été appliquées dans Cloud App Security, et non celles qui ont été appliquées directement dans Information Protection.| Box, One Drive, G Suite, SharePoint |
 |Stratégie de fichier, Stratégie d’activité, Alertes | Application |Demander aux utilisateurs de se reconnecter| Vous pouvez demander aux utilisateurs de se reconnecter à toutes les applications Office 365 et Azure AD pour corriger de manière rapide et efficace les alertes d’activité suspecte de l’utilisateur et les comptes corrompus. La nouvelle gouvernance se trouve dans les paramètres de stratégie et les pages d’alerte, à côté de l’option Interrompre la synchronisation de l’utilisateur. | Office 365, Azure AD |
-|Files |Fichier |Restaurer des fichiers mis en quarantaine utilisateur |Restaure un utilisateur mis en quarantaine. |Box |
-|Files |Fichier | M’auto-attribuer des permissions de lecture| Vous accorde des permissions de lecture pour le fichier afin de vous permettre d’y accéder et de déterminer s’il y a eu violation ou non.| G Suite|
-|Files |Fichier | Autoriser les éditeurs à partager | Dans Google Drive, l’autorisation de l’éditeur par défaut d’un fichier autorise également le partage. Cette action de gouvernance est l’opposé de la capacité de l’éditeur à partager et permet à l’éditeur de partager le fichier. | G Suite|
-|Files |Fichier | Protéger | Protégez un fichier avec Azure Information Protection en appliquant un modèle d’organisation. | Office 365 (SharePoint et OneDrive) |
-|Files |Fichier | Révoquer les permissions de lecture pour moi-même | Révoque les permissions de lecture pour le fichier pour vous-même. Cette option est utile lorsque vous vous êtes attribué des permissions pour examiner si un fichier comprend une violation ou non.| G Suite|
+|Fichiers |Fichier |Restaurer des fichiers mis en quarantaine utilisateur |Restaure un utilisateur mis en quarantaine. |Box |
+|Fichiers |Fichier | M’auto-attribuer des permissions de lecture| Vous accorde des permissions de lecture pour le fichier afin de vous permettre d’y accéder et de déterminer s’il y a eu violation ou non.| G Suite|
+|Fichiers |Fichier | Autoriser les éditeurs à partager | Dans Google Drive, l’autorisation de l’éditeur par défaut d’un fichier autorise également le partage. Cette action de gouvernance est l’opposé de la capacité de l’éditeur à partager et permet à l’éditeur de partager le fichier. | G Suite|
+|Fichiers |Fichier | Protéger | Protégez un fichier avec Azure Information Protection en appliquant un modèle d’organisation. | Office 365 (SharePoint et OneDrive) |
+|Fichiers |Fichier | Révoquer les permissions de lecture pour moi-même | Révoque les permissions de lecture pour le fichier pour vous-même. Cette option est utile lorsque vous vous êtes attribué des permissions pour examiner si un fichier comprend une violation ou non.| G Suite|
 |Fichiers, Stratégie de fichier|Fichier | Transférer la possession de fichier | Modifie le propriétaire (vous choisissez un propriétaire spécifique dans la stratégie). | G Suite|
 |Fichiers, Stratégie de fichier|Fichier | Réduire l’accès public|Cette action vous permet de définir les fichiers disponibles publiquement comme étant accessibles uniquement avec un lien partagé.| G Suite|
 |Fichiers, Stratégie de fichier|Fichier | Supprimer un collaborateur | Supprime un collaborateur donné d’un fichier. | G Suite, Box, One Drive, SharePoint|
@@ -161,8 +161,8 @@ Pour plus d’informations sur la façon dont les actions de gouvernance sont tr
 |Fichiers, Stratégie de fichier|Fichier | Supprimer les utilisateurs externes | Supprime tous les collaborateurs externes - configurés comme internes dans les paramètres en dehors des domaines. |G Suite, Box, One Drive, SharePoint|
 |Fichiers, Stratégie de fichier|Fichier |Attribuer une permission de lecture au domaine|Accorde une permission de lecture pour le fichier sur le domaine spécifié pour tout votre domaine ou un domaine spécifique. Cet accès est utile si vous souhaitez supprimer l’accès public après l’octroi d’un accès au domaine des personnes qui doivent y travailler.| G Suite|
 |Fichiers, Stratégie de fichier|Fichier | Mettre en quarantaine utilisateur | Supprime toutes les autorisations du fichier et déplace le fichier vers un dossier de quarantaine sur le lecteur racine de l’utilisateur. Cette action permet à l’utilisateur d’examiner le fichier et de le déplacer. S’il est déplacé manuellement, le partage de fichiers n’est pas restauré. | Box, One Drive, SharePoint |
-|Files|Fichier|Faire expirer le lien partagé| Définit la date d’expiration d’un lien partagé, après laquelle il ne sera plus actif.|Box|
-|Files|Fichier|Modifier le niveau d’accès du lien de partage|Modifie le niveau d’accès du lien partagé (entreprise uniquement, collaborateurs uniquement ou public).| Box|
+|Fichiers|Fichier|Faire expirer le lien partagé| Définit la date d’expiration d’un lien partagé, après laquelle il ne sera plus actif.|Box|
+|Fichiers|Fichier|Modifier le niveau d’accès du lien de partage|Modifie le niveau d’accès du lien partagé (entreprise uniquement, collaborateurs uniquement ou public).| Box|
 |Fichiers, Stratégie de fichier|Fichier | Supprimer l’accès public| Si vous êtes propriétaire d’un fichier auquel vous autorisez un accès public, il devient accessible uniquement aux autres personnes disposant d’un droit d’accès au fichier (selon le genre d’accès au fichier). | G Suite|
 |Fichiers, Stratégie de fichier|Fichier |Supprimer le lien partagé direct| Supprime un lien créé pour le fichier qui est public, mais partagé uniquement avec des personnes spécifiques.|Box |
 |Paramètres> Paramètres de Cloud Discovery| Cloud Discovery | Recalculer les scores Cloud Discovery |Recalcule les scores dans le catalogue d’applications cloud après une modification d’une mesure de score.| découverte, |
