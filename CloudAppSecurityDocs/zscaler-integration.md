@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f4f7b05caa3c516294f08864b0a711b71be047f3
-ms.sourcegitcommit: 3f0693bf32fef5b4819c51ca7eeaee751eb03df6
+ms.openlocfilehash: 0e7f32bd4f6213b4bce86232e40d15cf06e12c18
+ms.sourcegitcommit: c737a1ad67b4f7efa302d1aa92fce50f75c94d2d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84611169"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86926721"
 ---
 # <a name="integrate-cloud-app-security-with-zscaler"></a>Intégrer Cloud App Security à Zscaler
 
@@ -52,7 +52,7 @@ Si vous travaillez avec Cloud App Security et Zscaler, vous pouvez intégrer les
         ![source de données Zscaler](media/data-source-zscaler.png)
 
         > [!NOTE]
-        > Assurez-vous que le nom de la source de données est identique au nom de flux utilisé lors de la création du flux NSS Cloud App Security. Pour plus d’informations, consultez [Ajout de Cloud App Security flux NSS](https://help.zscaler.com/zia/adding-mcas-nss-feeds).
+        > Assurez-vous que le nom de la source de données est **NSS.** Pour plus d’informations sur la configuration des flux NSS, consultez [Ajout de Cloud App Security flux NSS](https://help.zscaler.com/zia/adding-mcas-nss-feeds).
 
     4. Cliquez sur **Afficher un exemple du fichier journal attendu**. Puis cliquez sur **Télécharger l’exemple de journal** pour afficher un exemple de journal Discovery et vous assurer qu’il correspond à vos journaux.<br />
 

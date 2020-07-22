@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 14d8789d4be3aac4199470e8ae60f5505b4fae3b
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 7756d238514b786321ee5c0c4ba91910c3b3dfcf
+ms.sourcegitcommit: 8dbdfab8bb07f1bf128dfc85894a448b63a78148
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624974"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86928013"
 ---
 # <a name="set-up-cloud-discovery"></a>Configurer Cloud Discovery
 
@@ -123,8 +123,8 @@ Attributs de données (selon la documentation du fournisseur) :
 | MS TMG | **Oui** | Non | **Oui** | **Oui** | **Oui** | **Oui** |
 | Palo Alto Networks | Non | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** |
 | Sophos | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** | Non |
-| Squid (commun) | **Oui** | Non | **Oui** | **Oui** | Non | **Oui** |
-| Squid (natif) | **Oui** | Non | **Oui** | **Oui** | Non | **Oui** |
+| Squid (commun) | **Oui** | Non | **Oui** | **Oui** | **Oui** | Non |
+| Squid (natif) | **Oui** | Non | **Oui** | **Oui** | Non | Non  |
 | Stormshield | Non | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** |
 | Websense - Rapport d’examen détaillé (CSV) | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** |
 | Websense - Journal d’activité Internet (CEF) | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** |
