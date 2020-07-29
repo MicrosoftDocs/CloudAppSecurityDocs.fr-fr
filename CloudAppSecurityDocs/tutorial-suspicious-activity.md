@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.reviewer: galz
 ms.suite: ems
-ms.openlocfilehash: 3b42c103d1c9143217c76fa9c8f3d346ae8f3252
-ms.sourcegitcommit: 5e8dd22b6c9a5c18dbb704ccc8d8b12b33b66955
+ms.openlocfilehash: 00646b44cb9c2095e3beaaa98f3528c6eb7b31db
+ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2020
-ms.locfileid: "83006203"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87254820"
 ---
 # <a name="tutorial-detect-suspicious-user-activity-with-ueba"></a>Tutoriel : Détection des activités suspectes des utilisateurs avec UEBA
 
@@ -139,10 +139,10 @@ Pour empêcher la multiplication des alertes, configurez leur sensibilité. Vous
 
 ## <a name="phase-4-tune-rule-based-detection-activity-policies"></a>Phase 4 : Paramétrage des stratégies (d’activité) de détection basées sur les règles
 
-Les [stratégies de détection basée sur les règles](user-activity-policies.md) offrent la possibilité de compléter les stratégies de détection d’anomalie avec des exigences propres à l’organisation. Nous recommandons, pour créer des stratégies de ce type, d’utiliser l’un de nos modèles de stratégie d’activité (accédez à **Contrôle** > **Modèles** et définissez le filtre **Type** sur **Stratégie d’activité**), puis de [le configurer](activity-filters-queries.md) de façon à détecter les comportements qui ne sont pas normaux pour votre environnement. Par exemple, dans le cas d’une organisation non présente dans un pays particulier, il peut être judicieux de créer une stratégie qui détecte les activités anormales provenant de ce pays et envoie une alerte à ce sujet. Pour d’autres, qui disposent de grandes succursales dans ce pays, les activités de ce pays sont normales ; il n’est donc pas pertinent de les détecter.
+Les [stratégies de détection basée sur les règles](user-activity-policies.md) offrent la possibilité de compléter les stratégies de détection d’anomalie avec des exigences propres à l’organisation. Nous recommandons, pour créer des stratégies de ce type, d’utiliser l’un de nos modèles de stratégie d’activité (accédez à **Contrôle** > **Modèles** et définissez le filtre **Type** sur **Stratégie d’activité**), puis de [le configurer](activity-filters-queries.md) de façon à détecter les comportements qui ne sont pas normaux pour votre environnement. Par exemple, dans le cas d’une organisation non présente dans un pays ou une région spécifique, il peut être judicieux de créer une stratégie qui détecte les activités anormales provenant de ce pays et envoie une alerte à ce sujet. Pour d’autres, qui disposent de grandes succursales dans ce pays, les activités de ce pays sont normales ; il n’est donc pas pertinent de les détecter.
 
 1. **Paramétrer le volume d’activité**  
-Choisissez le volume d’activité nécessaire pour que la détection déclenche une alerte. Dans notre exemple, si votre organisation n’est pas présente dans un pays, même une seule activité est importante et justifie une alerte. Toutefois, un seul échec de connexion peut provenir d’une erreur humaine et ne présenter d’intérêt que si de nombreux échecs surviennent sur une courte période.
+Choisissez le volume d’activité nécessaire pour que la détection déclenche une alerte. Dans notre exemple, si votre organisation n’est pas présente dans un pays ou une région, même une seule activité est importante et justifie une alerte. Toutefois, un seul échec de connexion peut provenir d’une erreur humaine et ne présenter d’intérêt que si de nombreux échecs surviennent sur une courte période.
 2. **Paramétrer les [filtres d’activité](activity-filters-queries.md)**  
 Définissez les filtres dont vous avez besoin pour détecter le type d’activité sur lequel vous souhaitez recevoir une alerte. Par exemple, pour détecter l’activité provenant d’un pays, utilisez le paramètre **Emplacement**.
 3. **Paramétrer les alertes**  

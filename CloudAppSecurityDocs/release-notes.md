@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 55e66016098e6b844686f539c7280b40e60ab993
-ms.sourcegitcommit: 1dec09a56cc44148393f103c96fc24c59adc2f8f
+ms.openlocfilehash: fcf90957167b9e51522e2f9f77a3c29958f6c9a2
+ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86402271"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87254651"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Nouveautés dans Microsoft Cloud App Security
 
@@ -75,7 +75,7 @@ Nous avons étendu nos contrôles de session afin de détecter les logiciels mal
 Nous avons ajouté la possibilité de traiter les demandes de jeton d’accès et de code en tant que connexions lors de l’intégration d’applications aux contrôles d’accès et de session. Pour utiliser des jetons, cliquez sur l’icône Paramètres représentée par une roue dentée, sélectionnez **Contrôle d’application par accès conditionnel**, modifiez l’application appropriée (cliquez sur le menu à trois points > **Modifier l’application**), sélectionnez **Traiter les demandes de jeton d’accès et de code en tant que connexions à l’application**, puis cliquez sur **Enregistrer**. Pour plus d’informations sur l’intégration des applications, consultez [Intégrer et déployer une application](proxy-deployment-any-app.md) et [Déployer des applications proposées](proxy-deployment-aad.md).
 
 - **Suffixe d’URL de proxy amélioré pour les contrôles de session (déploiement progressif)**  
-Le 7 juin 2020, nous avons commencé à déployer progressivement nos contrôles de session de proxy améliorés en vue d’utiliser un suffixe unifié qui n’inclut pas de régions nommées. Par exemple, les utilisateurs verront le suffixe `<AppName>.mcas.ms` au lieu de `<AppName>.<Region>.cas.ms`. Si vous mettez régulièrement des domaines sur liste rouge dans vos passerelles ou appliances réseau, assurez-vous d’autoriser tous les domaines répertoriés sous [Contrôles d’accès et de session](network-requirements.md#access-and-session-controls).
+Le 7 juin 2020, nous avons commencé à déployer progressivement nos contrôles de session de proxy améliorés en vue d’utiliser un suffixe unifié qui n’inclut pas de régions nommées. Par exemple, les utilisateurs verront le suffixe `<AppName>.mcas.ms` au lieu de `<AppName>.<Region>.cas.ms`. Si vous mettez régulièrement des domaines sur liste noire dans vos passerelles ou appliances réseau, assurez-vous d’autoriser tous les domaines répertoriés sous [Contrôles d’accès et de session](network-requirements.md#access-and-session-controls).
 
 - **Nouvelle documentation**  
 Le contenu suivant a été ajouté à la documentation Cloud App Security :
@@ -454,7 +454,7 @@ Cloud App Security Cloud Discovery inclut désormais un analyseur de journal int
 Date de publication : 31 mars 2019
 
 - **Amélioration du voyage impossible**  
-La détection d’un voyage impossible a été améliorée avec une prise en charge dédiée pour les pays voisins.
+La détection d’un voyage impossible a été améliorée avec une prise en charge dédiée pour les pays/régions voisin(e)s.
 - **Prise en charge d’attributs supplémentaires pour l’analyseur CEF générique**  
 La prise en charge de l’analyseur du journal Cloud Discovery pour le format CEF générique a été améliorée pour prendre en charge des attributs supplémentaires.
 - **Accès étendu aux rapports Cloud Discovery**  
@@ -776,7 +776,7 @@ Microsoft Cloud App Security étend ses fonctionnalités de surveillance IaaS au
 
 - **Déploiements étendus** (déploiement progressif)  
 Microsoft Cloud App Security permet aux entreprises de déterminer de façon granulaire quels utilisateurs ils souhaitent surveiller et protéger en fonction de l’appartenance à un groupe. Cette fonctionnalité vous permet de sélectionner des utilisateurs dont les activités ne s’afficheront pour aucune des applications protégées. La fonctionnalité de surveillance étendue est particulièrement utile dans les cas suivants :
-  - Conformité : si vos réglementations de conformité vous imposent de ne pas surveiller les utilisateurs de certains pays en raison des réglementations locales.
+  - Conformité : si vos réglementations de conformité vous imposent de ne pas surveiller les utilisateurs de certains pays ou certaines régions en raison des réglementations locales.
   - Gestion des licences : si vous souhaitez surveiller moins d’utilisateurs pour rester dans les limites de vos licences Microsoft Cloud App Security.
   Pour plus d'informations, consultez [Déploiement étendu](scoped-deployment.md).
 

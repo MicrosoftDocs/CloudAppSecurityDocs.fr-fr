@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 77face48858ae577c4eb2aa4fd85f7fc39c81377
-ms.sourcegitcommit: 0b929f7c8feed7dfb40d5294179fd5c6fc079614
+ms.openlocfilehash: 341bc297d31f53cf446baec553e3abd6eec1c6df
+ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "74720796"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87254718"
 ---
 # <a name="tutorial-automatically-apply-azure-information-protection-classification-labels"></a>Tutoriel : Application automatique d’étiquettes de classification Azure Information Protection
 
@@ -42,7 +42,7 @@ Ce niveau élevé de protection suit le fichier, qui reste protégé en cas d’
 
 ## <a name="the-threat"></a>La menace
 
-Un utilisateur de votre organisation enregistre des fichiers d’informations client confidentielles dans Box et définit des paramètres de partage avec tous les collaborateurs. Il ne se rend pas compte que non seulement sa propre équipe, mais aussi tout le personnel du support a accès à ce compte Box. Cet accès comprend les fournisseurs, les partenaires et les visiteurs qui se rendent occasionnellement au bureau. Toute personne ayant accès au compte Box de votre organisation a maintenant accès à ces informations. Cet accès est à la fois dangereux pour votre organisation et contraire aux réglementations relatives aux informations personnelles de nombreux pays, ce qui peut potentiellement causer des problèmes juridiques.
+Un utilisateur de votre organisation enregistre des fichiers d’informations client confidentielles dans Box et définit des paramètres de partage avec tous les collaborateurs. Il ne se rend pas compte que non seulement sa propre équipe, mais aussi tout le personnel du support a accès à ce compte Box. Cet accès comprend les fournisseurs, les partenaires et les visiteurs qui se rendent occasionnellement au bureau. Toute personne ayant accès au compte Box de votre organisation a maintenant accès à ces informations. Cet accès est à la fois dangereux pour votre organisation et contraire aux réglementations relatives aux informations personnelles de multiples pays/régions, ce qui peut potentiellement causer des problèmes juridiques.
 
 ## <a name="the-solution"></a>La solution
 

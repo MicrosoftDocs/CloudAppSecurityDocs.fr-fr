@@ -9,12 +9,12 @@ ms.date: 11/01/2019
 ms.collection: M365-security-compliance
 ms.custom: seodec18
 ms.suite: ems
-ms.openlocfilehash: 7cdc03bf2cc8bae19ef59cbe9ed926a28d81bb22
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 44880f4e19fc317d09dbc091c2c4a4e9c9399a43
+ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624409"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87254684"
 ---
 # <a name="microsoft-cloud-app-security-data-security-and-privacy"></a>Sécurité et confidentialité des données Microsoft Cloud App Security
 
@@ -82,7 +82,7 @@ Les données personnelles relatives aux utilisateurs sont dérivées de l’obje
 
 ## <a name="data-location"></a>Emplacement des données
 
-Microsoft Cloud App Security fonctionne actuellement dans les centres de données des États-Unis et de l’Europe (chaque « zone géographique »). Votre compte d’abonné sera créé dans une zone géographique basée sur le pays que vous avez choisi lors de votre inscription. Plus précisément, vos données sont stockées dans un centre de données dans la zone géographique la plus proche de cet emplacement.
+Microsoft Cloud App Security fonctionne actuellement dans les centres de données des États-Unis et de l’Europe (chaque « zone géographique »). Votre compte d’abonné sera créé dans une zone géographique basée sur le pays ou la région que vous avez choisi(e) lors de votre inscription. Plus précisément, vos données sont stockées dans un centre de données dans la zone géographique la plus proche de cet emplacement.
 
 > [!NOTE]
 > Cloud App Security tire parti des centres de données Azure dans le monde entier pour offrir des performances optimisées grâce à la géolocalisation. Cela signifie que la session d’un utilisateur peut être hébergée en dehors d’une région particulière, en fonction des modèles de trafic et de leur emplacement. Toutefois, pour protéger votre confidentialité, aucune donnée de session n’est stockée dans ces centres de données.
