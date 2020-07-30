@@ -14,22 +14,22 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 433488b7302d3f66255bb1bfa04b630d8dbb1b7d
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 5f0aa6f32f964d1f0bb5f2ad404bae65e9e95e0c
+ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74721050"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87254735"
 ---
-# Déploiement étendu <a name="scoped-deployment"></a> 
+# <a name="scoped-deployment"></a>Déploiement étendu<a name="scoped-deployment"></a> 
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
-Microsoft Cloud App Security vous permet de délimiter votre déploiement. La délimitation vous permet de sélectionner certains groupes d’utilisateurs à surveiller pour des applications ou à exclure de la surveillance.
+Microsoft Cloud App Security vous permet d’étendre votre déploiement. La délimitation vous permet de sélectionner certains groupes d’utilisateurs à surveiller pour des applications ou à exclure de la surveillance.
 
 ## <a name="include-or-exclude-user-groups"></a>Inclure ou exclure des groupes d’utilisateurs
 
-Il est envisageable, dans certains cas, de ne pas utiliser Microsoft Cloud App Security pour tous les utilisateurs de l’organisation. La délimitation est particulièrement utile quand vous voulez limiter votre déploiement en raison de restrictions des licences. Une limitation peut aussi être nécessaire en raison de réglementations de conformité vous imposant de ne pas surveiller les utilisateurs de certains pays. Par exemple, utilisez des déploiements délimités pour surveiller seulement les employés basés aux États-Unis. À l’inverse, vous pouvez éviter de montrer les activités pour vos utilisateurs basés en Allemagne.
+Il est envisageable, dans certains cas, de ne pas utiliser Microsoft Cloud App Security pour tous les utilisateurs de l’organisation. La délimitation est particulièrement utile quand vous voulez limiter votre déploiement en raison de restrictions des licences. Vous devrez peut-être également limiter en raison des réglementations de conformité nécessitant que vous n’analysez pas les utilisateurs de certains pays ou régions. Par exemple, utilisez des déploiements délimités pour surveiller seulement les employés basés aux États-Unis. À l’inverse, vous pouvez éviter de montrer les activités pour vos utilisateurs basés en Allemagne.
 
 - Pour définir l’étendue de votre déploiement, vous devez commencer par [importer les groupes d’utilisateurs](user-groups.md) dans Microsoft Cloud App Security. Par défaut, vous voyez les groupes suivants :
 
@@ -43,12 +43,12 @@ Il est envisageable, dans certains cas, de ne pas utiliser Microsoft Cloud App S
 
 1. Dans la barre de menus, cliquez sur l’engrenage représentant les paramètres, puis sélectionnez **Déploiement étendu**.
 
-    ![icône Paramètres](media/settings-icon.png "icône des paramètres")
+    ![Icône des paramètres](media/settings-icon.png "Icône des paramètres")
 
 2. Pour délimiter votre déploiement en incluant ou en excluant des groupes spécifiques, vous devez d’abord [importer les groupes d’utilisateurs](user-groups.md) dans Microsoft Cloud App Security.
 
-3. Pour définir des groupes spécifiques à surveiller par Microsoft Cloud App Security, sous l’onglet **Inclure**, cliquez sur l’icône avec le signe Plus (+).
-    ![icône](media/plus-icon.png)
+3. Pour définir des groupes spécifiques qui doivent être analysés par Microsoft Cloud App Security, dans l’onglet **inclure** , cliquez sur l’icône plus.
+    ![icon](media/plus-icon.png)
 
 4. Dans la boîte de dialogue **Créer une règle d’inclusion**, effectuez les étapes suivantes :
 
@@ -60,7 +60,7 @@ Il est envisageable, dans certains cas, de ne pas utiliser Microsoft Cloud App S
 
 5. Pour définir des groupes à exclure de la surveillance, sous l’onglet **Exclure**, cliquez sur l’icône Plus (+).
 
-   ![icône](media/plus-icon.png)
+   ![icon](media/plus-icon.png)
 
 6. Dans la boîte de dialogue **Créer une règle d’exclusion**, définissez les paramètres suivants :
 
@@ -83,9 +83,9 @@ Si l’on crée les règles suivantes :
 
 Les activités suivantes des utilisateurs font l’objet d’un monitoring :
 
-|Utilisateur|Appartenance aux groupes|Activités faisant l’objet d’un monitoring|
+|Utilisateur|Appartenance au groupe|Activités faisant l’objet d’un monitoring|
 |----|----|----|
-|Adriana|Germany all users<br />Global sales<br />Sales managers|aucune.|
+|Adriana|Germany all users<br />Global sales<br />Sales managers|None|
 |Alain|Global sales|Office 365 et toutes les sous-applications à l’exception de Power BI|
 |Cornel|Global sales<br />Sales managers|Office 365 et toutes les sous-applications|
 |Raymond|Sales managers|Power BI uniquement|
@@ -97,6 +97,6 @@ Les activités suivantes des utilisateurs font l’objet d’un monitoring :
 ## <a name="next-steps"></a>Étapes suivantes
 
 > [!div class="nextstepaction"]
-> [Configurer Cloud Discovery](set-up-cloud-discovery.md)
+> [Configuration de Cloud Discovery](set-up-cloud-discovery.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]  

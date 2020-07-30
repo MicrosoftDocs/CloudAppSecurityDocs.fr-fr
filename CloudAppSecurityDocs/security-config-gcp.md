@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6c2c4e5d48af1650dce4744568f9bdb3df051a07
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 12af451c7d5e808baf09598e263ef582c975ebbf
+ms.sourcegitcommit: 97563af6076ccbad0d994ac69a85a998a625d06a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85716483"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87296936"
 ---
 # <a name="security-configuration-for-google-cloud-platform"></a>Configuration de la sécurité pour Google Cloud Platform
 
@@ -43,7 +43,10 @@ Cette évaluation fournit une vue d’ensemble de la configuration de la sécuri
 
     ![menu de configuration de la sécurité](media/security-configuration-menu.png)
 
-1. Vous pouvez filtrer les recommandations par type, par ressource et par abonnement. En outre, vous pouvez cliquer sur l’icône de configuration de la sécurité ![Icône de configuration de la sécurité](media/asc-icon.png) pour ouvrir la recommandation dans le centre de commandes de sécurité GCP pour plus d’informations et pour approfondir la recommandation.
+1. Vous pouvez filtrer les recommandations par type, par ressource et par abonnement. En outre, vous pouvez cliquer sur l’icône de configuration de la sécurité ![Icône ASC](media/asc-icon.png) pour ouvrir la recommandation dans le centre de commandes de sécurité GCP pour plus d’informations et pour approfondir la recommandation.
+
+    > [!NOTE]
+    > Pour faciliter encore plus les recherches, vous pouvez créer des requêtes personnalisées et les enregistrer pour les utiliser ultérieurement. Une fois que vous avez terminé de générer votre requête, cliquez sur le bouton **Enregistrer sous** en haut à droite des filtres. Dans la fenêtre contextuelle **enregistrer la requête** , nommez votre requête.
 
     ![Configuration de la sécurité](media/security-configuration-gcp.png)
 

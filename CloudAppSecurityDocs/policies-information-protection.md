@@ -9,12 +9,12 @@ ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5485b179fe3a5bccfe969b93cd32a0954bd89bf6
-ms.sourcegitcommit: 1dec09a56cc44148393f103c96fc24c59adc2f8f
+ms.openlocfilehash: b4be7d9e31f2fc0bf71175a9c7fb3d07c38262a4
+ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86402203"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87254803"
 ---
 # <a name="information-protection-policies"></a>Stratégies de protection des informations
 
@@ -129,9 +129,9 @@ Vous devez disposer d’au moins une application connectée à l’aide de [conn
 
 2. Définissez le **type d’activité** de filtre sur les activités de fichier et de dossier qui vous intéressent, telles que l' **affichage**, le **Téléchargement**, **l’accès**et la **modification**.
 
-3. Définissez l' **emplacement** du filtre n’est pas égal à, puis entrez les pays à partir desquels votre organisation attend une activité.
+3. Définissez l' **emplacement** du filtre n’est pas égal à, puis entrez les pays ou les régions à partir desquels votre organisation attend une activité.
 
-    1. Facultatif : vous pouvez utiliser l’approche opposée et définir le filtre sur **emplacement** égal si votre organisation bloque l’accès à partir de pays spécifiques.
+    1. Facultatif : vous pouvez utiliser l’approche opposée et définir le filtre sur **emplacement** égal si votre organisation bloque l’accès à partir de pays ou régions spécifiques.
 
 4. Facultatif : créez des actions de **gouvernance** à appliquer à une violation détectée (la disponibilité varie d’un service à l’autre), par exemple **suspendre l’utilisateur**.
 

@@ -7,12 +7,12 @@ ms.service: cloud-app-security
 ms.topic: best-practice
 ms.date: 10/24/2019
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 6b07d3dd484fba64b8feda1d5b5fb37a20cc09f3
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 0815432cf7410ab4e122ab52a136b978d6dec430
+ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624306"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87254599"
 ---
 # <a name="cloud-app-security-best-practices"></a>Meilleures pratiques en matière de Cloud App Security
 
@@ -134,7 +134,7 @@ Cloud App Security vous offre la possibilité d’examiner et de surveiller les 
 **Pour plus d’informations**:
 
 * [Intégration d’Azure Information Protection](azip-integration.md)
-* [Didacticiel : appliquer automatiquement des étiquettes de classification Azure Information Protection](use-case-information-protection.md)
+* [Tutoriel : Application automatique d’étiquettes de classification Azure Information Protection](use-case-information-protection.md)
 
 ---
 
@@ -232,7 +232,7 @@ Les stratégies de détection des anomalies sont déclenchées lorsque des activ
 ---
 
 **Meilleure pratique**: détecter l’activité à partir d’emplacements ou de pays inattendus  
-**Détails**: créez une stratégie d’activité pour vous avertir quand des utilisateurs se connectent à partir d’emplacements ou de pays inattendus. Ces notifications peuvent vous avertir des sessions potentiellement compromises dans votre environnement afin que vous puissiez détecter et corriger les menaces avant qu’elles ne se produisent.  
+**Détails**: créez une stratégie d’activité pour vous avertir quand des utilisateurs se connectent à partir d’emplacements ou de pays/régions inattendus. Ces notifications peuvent vous avertir des sessions potentiellement compromises dans votre environnement afin que vous puissiez détecter et corriger les menaces avant qu’elles ne se produisent.  
 **Pour plus d’informations**:
 
 * [Stratégies de protection contre les menaces](policies-threat-protection.md)
