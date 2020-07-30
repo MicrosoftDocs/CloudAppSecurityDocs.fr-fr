@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: dec6b720804716df8ac275b6f6f641832e4cec17
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: f92d94c18ba8f91fd616fe00baeeb38b79a4354c
+ms.sourcegitcommit: 97563af6076ccbad0d994ac69a85a998a625d06a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85716486"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87296895"
 ---
 # <a name="security-configuration-for-azure"></a>Configuration de la sécurité pour Azure
 
@@ -56,11 +56,14 @@ Pour obtenir des recommandations sur la configuration de la sécurité dans Micr
 
     ![menu de configuration de la sécurité](media/security-configuration-menu.png)
 
-1. Vous pouvez filtrer les recommandations par type, par ressource et par abonnement. En outre, vous pouvez cliquer sur l’icône de configuration de la sécurité ![Icône de configuration de la sécurité](media/asc-icon.png) pour ouvrir la recommandation dans Azure Security Center et l’analyser.
+1. Vous pouvez filtrer les recommandations par type, par ressource et par abonnement. En outre, vous pouvez cliquer sur l’icône de configuration de la sécurité ![Icône ASC](media/asc-icon.png) pour ouvrir la recommandation dans Azure Security Center et l’analyser.
+
+    > [!NOTE]
+    > Pour faciliter encore plus les recherches, vous pouvez créer des requêtes personnalisées et les enregistrer pour les utiliser ultérieurement. Une fois que vous avez terminé de générer votre requête, cliquez sur le bouton **Enregistrer sous** en haut à droite des filtres.  Dans la fenêtre contextuelle **enregistrer la requête** , nommez votre requête.
+
+    ![Configuration de la sécurité](media/security-configuration-azure.png)
 
 Pour plus d’informations sur l’implémentation des recommandations de sécurité, consultez [Gestion des recommandations de sécurité dans Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-recommendations).
-
-![Configuration de la sécurité](media/security-configuration-azure.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
 

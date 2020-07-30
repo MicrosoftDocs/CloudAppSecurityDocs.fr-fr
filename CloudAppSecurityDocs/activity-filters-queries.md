@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9a363ebb0c94735f4df8d2617f9d20c6bf7c8365
-ms.sourcegitcommit: e1a0d6a7d639a6d268b0104eb3e5532d2692288b
+ms.openlocfilehash: 70631351dc068d1932b1a97f77402bacd307b509
+ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "83551304"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87254582"
 ---
 # <a name="activity-filters-and-queries"></a>Filtres et requêtes des activités
 
@@ -82,7 +82,7 @@ Vous trouverez ci-dessous une liste des filtres d’activité qui peuvent être 
 
 - Instance : instance d’application où l’activité a été ou n’a pas été effectuée.
 
-- Emplacement : Pays à partir duquel l’activité a été effectuée.
+- Emplacement : pays/région à partir duquel l’activité a été effectuée.
 
 - Stratégie correspondante : Recherchez les activités qui correspondent à une stratégie spécifique qui a été définie dans le portail.
 

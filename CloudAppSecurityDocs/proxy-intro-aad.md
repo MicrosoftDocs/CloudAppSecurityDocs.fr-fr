@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c957afbd4b4fef2947b042c99b548edfacbcb5c0
-ms.sourcegitcommit: 5ae4c12ee43c9133b61731a95f81f771eeeb7d19
+ms.openlocfilehash: 68b2f2a6bc1c8350510c54dc505593c35b5de0b0
+ms.sourcegitcommit: 5cf263c4094f5ac91210b03d085ca3dbca50f32d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86180555"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87388675"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Protéger les applications avec le Contrôle d’accès conditionnel aux applications Microsoft Cloud App Security
 
@@ -31,7 +31,7 @@ Dans le lieu de travail actuel, il est souvent difficile de savoir ce qui se pas
 >
 > - Pour utiliser Cloud App Security contrôle d’application par accès conditionnel, vous avez besoin d’une [licence Azure Active Directory P1](https://azure.microsoft.com/pricing/details/active-directory/)ou de la licence requise par votre solution IDP, ainsi que d’une licence Cloud App Security.
 
-## <a name="how-it-works"></a>Comment ça marche
+## <a name="how-it-works"></a>Fonctionnement
 
 Contrôle d’application par accès conditionnel utilise une architecture de proxy inverse et s’intègre à votre IdP. Lors de l’intégration avec Azure AD accès conditionnel, vous pouvez configurer des applications pour qu’elles fonctionnent avec contrôle d’application par accès conditionnel en quelques clics, ce qui vous permet d’appliquer facilement et de manière sélective des contrôles d’accès et de session sur les applications de votre organisation en fonction des conditions de l’accès conditionnel. Les conditions définissent *qui* (utilisateur ou groupe d’utilisateurs) et *Quelles* (applications Cloud) et *où* (emplacements et réseaux) une stratégie d’accès conditionnel est appliquée. Une fois que vous avez déterminé les conditions, vous pouvez acheminer les utilisateurs vers Cloud App Security où vous pouvez protéger les données avec contrôle d’application par accès conditionnel en appliquant des contrôles d’accès et de session.
 
@@ -67,13 +67,14 @@ Cette méthode ne vous oblige à installer quoi que ce soit sur l’appareil, ce
 >
 > - Notre technologie utilise des heuristiques brevetées de meilleure qualité pour identifier et contrôler les activités effectuées par l’utilisateur dans l’application cible. Nos heuristiques sont conçues pour optimiser et équilibrer la sécurité grâce à la facilité d’utilisation. Dans certains scénarios rares, lorsque les activités bloquantes côté serveur rendent l’application inutilisable, nous sécurisons ces activités uniquement côté client, ce qui les rend potentiellement susceptibles d’être exploitées par des personnes malveillantes.
 > - Cloud App Security tire parti des centres de données Azure dans le monde entier pour offrir des performances optimisées grâce à la géolocalisation. Cela signifie que la session d’un utilisateur peut être hébergée en dehors d’une région particulière, en fonction des modèles de trafic et de leur emplacement. Toutefois, pour protéger votre confidentialité, aucune donnée de session n’est stockée dans ces centres de données.
+> - Nos serveurs proxy ne stockent pas de données au repos. Lors de la mise en cache du contenu, nous suivons les exigences énoncées dans la [norme RFC 7234 (mise en cache http)](https://tools.ietf.org/html/rfc7234) et mettons uniquement le contenu public en cache.
 
 ## <a name="managed-device-identification"></a>Identification des appareils gérés
 
-Le Contrôle d’accès conditionnel aux applications vous permet de créer des stratégies qui déterminent si un appareil est géré ou non. Pour identifier l’état d’un appareil, vous pouvez configurer des stratégies d’accès et de session pour vérifier les éléments suivants :
+Le contrôle d’application par accès conditionnel vous permet de créer des stratégies qui tiennent compte du fait qu’un appareil est géré ou non. Pour identifier l’état d’un appareil, vous pouvez configurer des stratégies d’accès et de session afin de vérifier les éléments suivants :
 
 - Appareils conformes à Microsoft Intune [disponible uniquement avec Azure AD]
-- Azure AD Hybride des appareils joints [disponible uniquement avec Azure AD]
+- Appareils joints à Azure AD Hybride [disponible uniquement avec Azure AD]
 - Présence de certificats clients dans une chaîne approuvée
 
 ### <a name="intune-compliant-and-hybrid-azure-ad-joined-devices"></a>Appareils conformes à Intune et Azure AD Hybride joints
@@ -148,7 +149,7 @@ Alors que les contrôles de session sont créés pour fonctionner avec n’impor
 - AWS
 - DevOps Azure (Visual Studio Team Services)
 - Portail Azure (préversion)
-- Zone
+- Box
 - Concur
 - CornerStone on Demand
 - DocuSign
@@ -194,5 +195,8 @@ Si vous êtes intéressé par une application spécifique, [envoyez-nous des inf
 
 > [!div class="nextstepaction"]
 > [Déployer le contrôle d’application par accès conditionnel pour tous les types d’applications](proxy-deployment-any-app.md)
+
+> [!div class="nextstepaction"]
+> [Résolution des problèmes de contrôles d’accès et de session](troubleshooting-proxy.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

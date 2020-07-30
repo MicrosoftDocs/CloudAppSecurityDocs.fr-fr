@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: itfalcon
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 08eec9c9a8e684d53b0947ce186d661bf5e7d961
-ms.sourcegitcommit: 826d2ec022647bce6c3135c115a41ee894ff8ecd
+ms.openlocfilehash: 00a4152258b27c6d992e4d7e5b0e4583cefad758
+ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84800807"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87254769"
 ---
 # <a name="how-to-investigate-anomaly-detection-alerts"></a>Comment examiner les alertes de détection d’anomalies
 
@@ -90,7 +90,7 @@ Cette détection utilise un algorithme de Machine Learning qui réduit les incid
 
 ### <a name="activity-from-infrequent-country"></a>Activité à partir de pays peu fréquents
 
-Activité d’un pays qui peut indiquer une activité malveillante. Cette stratégie Profile votre environnement et déclenche des alertes lorsque l’activité est détectée à partir d’un emplacement qui n’a pas été récemment ou n’a jamais été visité par un utilisateur de l’organisation.
+Activité à partir d’un pays ou d’une région qui peut indiquer une activité malveillante. Cette stratégie Profile votre environnement et déclenche des alertes lorsque l’activité est détectée à partir d’un emplacement qui n’a pas été récemment ou n’a jamais été visité par un utilisateur de l’organisation.
 
 Par défaut, la stratégie est configurée pour inclure uniquement les activités de connexion réussies, mais peut être configurée de manière à inclure toutes les activités de connexion. La stratégie peut être étendue à un sous-ensemble d’utilisateurs ou peut exclure des utilisateurs connus pour se déplacer vers des emplacements distants.
 
@@ -204,13 +204,13 @@ Le nom de l’éditeur OAuth trompeur pour une application OAuth identifie les a
 
 **Comprendre l’étendue de la violation**
 
-1. Dans la page **applications OAuth** , cliquez sur l’application pour ouvrir le **tiroir**de l’application, puis cliquez sur **activité associée**. Cela ouvre la page **Journal d’activité** filtrée pour les activités effectuées par l’application. N’oubliez pas que certaines applications effectuent des activités qui sont inscrites comme ayant été effectuées par un utilisateur. Ces activités sont automatiquement filtrées en dehors des résultats dans le journal d’activité. Pour une investigation poussée avec le journal d’activité, consultez [Journal d’activité](activity-filters.md).
+1. Dans la page **applications OAuth** , cliquez sur l’application pour ouvrir le **tiroir**de l’application, puis cliquez sur **activité associée**. Cela ouvre la page **Journal d’activité** filtrée pour les activités effectuées par l’application. N’oubliez pas que certaines applications effectuent des activités qui sont enregistrées comme ayant été effectuées par un utilisateur. Ces activités sont automatiquement filtrées en dehors des résultats dans le journal d’activité. Pour plus d’informations sur l’utilisation du journal d’activité, consultez [Journal d’activité](activity-filters.md).
 1. Si vous soupçonnez qu’une application est suspecte, nous vous recommandons d’examiner le nom et le serveur de publication de l’application dans différents magasins d’applications. Lorsque vous vérifiez les magasins d’applications, vous vous concentrez sur les types d’applications suivants :
     - Applications avec un faible nombre de téléchargements.
-    - Applications avec une évaluation médiocre, un faible score ou des commentaires négatifs.
+    - Applications avec une évaluation faible, un faible score ou de mauvais commentaires.
     - Applications avec un éditeur ou un site web suspect.
     - Applications qui n’ont pas été mises à jour récemment. Cela peut indiquer une application qui n’est plus prise en charge.
-    - Applications avec des autorisations sans intérêt. Cela peut indiquer qu’une application est à risque.
+    - Applications avec des autorisations inadaptées. Cela peut indiquer qu’une application est à risque.
 1. Si vous pensez toujours qu’une application est suspecte, vous pouvez rechercher le nom de l’application, l’éditeur et l’URL en ligne.
 
 ## <a name="execution-alerts"></a>Alertes d’exécution
@@ -420,7 +420,7 @@ Cette stratégie est basée sur l’apprentissage du comportement de connexion n
 
 1. **TP** (MFA échoue) : Si vous êtes en mesure de vérifier que l’authentification multifacteur fonctionne correctement, il peut s’agir d’une tentative d’attaque par force brute.
 
-    **Actions recommandées**:
+    **Actions recommandées** :
     1. Interrompez l’utilisateur, marquez l’utilisateur comme compromis et réinitialisez son mot de passe.
     1. Recherchez l’application qui a effectué les authentifications ayant échoué et reconfigurez-la.
     1. Recherchez d’autres utilisateurs connectés à l’heure de l’activité, car ils peuvent également être compromis. Interrompez l’utilisateur, marquez l’utilisateur comme compromis et réinitialisez son mot de passe.
@@ -676,4 +676,4 @@ L’établissement du modèle d’activité d’un nouvel utilisateur nécessite
 ## <a name="see-also"></a>Voir aussi
 
 > [!div class="nextstepaction"]
-> [Examiner des utilisateurs à risque](tutorial-ueba.md)
+> [Enquêter sur les utilisateurs à risque](tutorial-ueba.md)

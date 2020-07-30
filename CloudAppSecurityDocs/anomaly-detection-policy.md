@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d5ebc12c77fa8e2a9b3b1ccb006493a02771c296
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: dff363a63cab2760cc953f7493a38b8ffda0d02f
+ms.sourcegitcommit: 97563af6076ccbad0d994ac69a85a998a625d06a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624354"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87296794"
 ---
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>Obtenir instantanément une détection des anomalies et une analytique comportementale
 
@@ -120,7 +120,9 @@ La détection recherche les utilisateurs dont le compte a été clôturé dans A
 > [!NOTE]
 > Cloud App Security s’intègre à Office-protection avancée contre les menaces (Office ATP) pour assurer la protection d’Exchange Online, y compris la détonation d’URL, la protection contre les programmes malveillants, etc. Une fois qu’Office ATP est activé, vous pouvez commencer à voir les alertes dans le journal d’activité Cloud App Security.
 
-<!-- // MATP? Delay tile start appearing? -->
+### <a name="suspicious-oauth-app-file-download-activities"></a>Activités suspectes de téléchargement de fichiers d’application OAuth
+
+* Analyse les applications OAuth connectées à votre environnement et déclenche une alerte lorsqu’une application télécharge plusieurs fichiers à partir de Microsoft SharePoint ou Microsoft OneDrive d’une manière inhabituelle pour l’utilisateur. Cela peut indiquer que le compte d’utilisateur est compromis.
 
 ### <a name="unusual-activities-by-user"></a>Activités inhabituelles (par utilisateur)
 
@@ -176,7 +178,7 @@ Pour que le moteur de détection d’anomalie supprime ou déclenche des alertes
     | **Locataire** | Activités courantes selon l’historique d’activité dans le locataire. Par exemple, la suppression d’activités d’un fournisseur de services Internet ayant déjà fait l’objet d’une alerte au sein de votre organisation. |
     | **Utilisateur** | Activités courantes selon l’historique d’activité de l’utilisateur. Par exemple, la suppression d’activités provenant d’un emplacement couramment utilisé par l’utilisateur. |
 
-* Vous pouvez également configurer si les alertes d’activité dans un pays peu fréquent, les adresses IP anonymes, les adresses IP suspectes et le voyage impossible doivent analyser les connexions ayant échoué et celles ayant réussi, ou uniquement les connexions ayant réussi.
+* Vous pouvez également configurer si les alertes relatives à l’activité à partir d’un pays/d’une région peu fréquent, d’adresses IP anonymes, d’adresses IP suspectes et de voyages impossibles doivent analyser les connexions ayant échoué ou réussi ou simplement les connexions.
 
 > [!NOTE]
 > Par défaut, les protocoles de connexion hérités, tels que ceux qui n’utilisent pas multi-Factor Authentication (par exemple, WS-Trust), ne sont pas contrôlés par la stratégie de voyage impossible. Si votre organisation utilise des protocoles hérités, pour éviter les activités pertinentes manquantes, modifiez la stratégie et, sous **Configuration avancée**, définissez **analyser les activités de connexion** à **toutes les connexions**.

@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 23763911724e802d31e848ee1f8d6c42e346ffa4
-ms.sourcegitcommit: ecb1835d1cd880de38f32ce7a7031b0015f3cae5
+ms.openlocfilehash: 88a86e60e632f781428f307c4e1cf6653f87836b
+ms.sourcegitcommit: 97563af6076ccbad0d994ac69a85a998a625d06a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81232256"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87296774"
 ---
 # <a name="access-policies"></a>Stratégies d’accès
 
@@ -34,9 +34,9 @@ Les stratégies d’accès Microsoft Cloud App Security permettent la surveillan
 
 - Azure AD Premium licence P1 ou la licence requise par votre solution de fournisseur d’identité (IdP)
 - Les applications appropriées doivent être [déployées avec le Contrôle d’accès conditionnel aux applications](proxy-deployment-aad.md)
-- Assurez-vous que vous avez configuré votre solution IdP pour qu’elle fonctionne avec Cloud App Security, comme suit :
-  - Pour [Azure ad l’accès conditionnel](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal), consultez [configurer l’intégration avec Azure ad](proxy-deployment-aad.md#configure-integration-with-azure-ad)
-  - Pour d’autres solutions IdP, consultez [configurer l’intégration avec d’autres solutions IDP](proxy-deployment-aad.md#configure-integration-with-other-idp-solutions) .
+- Configurez votre solution de fournisseur d’identité pour qu’elle fonctionne avec Cloud App Security :
+  - Pour [l’accès conditionnel Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal), consultez [Configuration de l’intégration avec Azure AD](proxy-deployment-aad.md#configure-integration-with-azure-ad).
+  - Pour les autres solutions de fournisseur d’identité, consultez [Configuration de l’intégration avec d’autres solutions de fournisseur d’identité](proxy-deployment-aad.md#configure-integration-with-other-idp-solutions).
 
 ## <a name="create-a-cloud-app-security-access-policy"></a>Créer une stratégie d’accès Cloud App Security
 
@@ -77,5 +77,8 @@ Pour créer une stratégie d’activité, suivez cette procédure :
 
 > [!div class="nextstepaction"]
 > [Blocage des téléchargements sur des appareils non gérés à l’aide de contrôles de session](use-case-proxy-block-session-aad.md)
+
+> [!div class="nextstepaction"]
+> [Résolution des problèmes de contrôles d’accès et de session](troubleshooting-proxy.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5cea905e2d7e0b157d757fef1056c2e7a289153c
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 62606ecb86d3e475fcf5c98de64ac497ae49ee75
+ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74719609"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87254837"
 ---
 # <a name="monitor-alerts-in-cloud-app-security"></a>Surveiller les alertes dans Cloud App Security
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Les alertes constituent un bon point de départ pour comprendre votre environnement cloud de façon plus approfondie. Cet article fournit une liste et une description de toutes les alertes.
 
@@ -50,19 +50,19 @@ Nous vous incitons à examiner vos alertes. En comprenant le déclenchement des 
 
 Les types d’alertes suivants sont affichés.
 
-|Nom d'alerte|ID d’alerte|Description|
+|Nom de l’alerte|ID d’alerte|Description|
 |----|----|----|
-|Nouvel emplacement|ALERT_GEOLOCATION_NEW_COUNTRY|Un nouvel emplacement a été détecté depuis le début de l’analyse (jusqu’à 6 mois). Cette alerte ne s’affiche qu’une fois pour chaque pays pour toute votre organisation. |
+|Nouvel emplacement|ALERT_GEOLOCATION_NEW_COUNTRY|Un nouvel emplacement a été détecté depuis le début de l’analyse (jusqu’à 6 mois). Cette alerte ne s’affiche qu’une seule fois pour chaque pays/région de l’ensemble de votre organisation. |
 |Nouvel utilisateur administrateur|ALERT_ADMIN_USER|Un nouvel administrateur a été détecté pour une application spécifique. Il se peut que cette personne soit l’administrateur d’une application et maintenant l’administrateur d’une autre application. Cette alerte concernant le type d’administrateur spécifique, elle s’affiche chaque fois que le type de l’administrateur est modifié. Si un utilisateur perd, puis récupère des privilèges d’administrateur, cette alerte s’affiche.|
 |Compte inactif|ALERT_ZOMBIE_USER|Si un utilisateur est inactif pendant 60 jours par application, par exemple si une personne est active dans Box, mais n’a pas utilisé G Suite pendant 60 jours, l’utilisateur est considéré comme inactif dans G Suite. Une balise est ajoutée à ces utilisateurs pour que vous puissiez rechercher les comptes inactifs.|
-|Emplacement de l’administrateur inattendu|ALERT_NEW_ADMIN_LOCATION|Un nouvel emplacement a été détecté pour les administrateurs depuis le début de l’analyse (jusqu’à 6 mois). Cette alerte ne s’affiche qu’une fois pour chaque pays et pour tout administrateur de votre organisation. |
+|Emplacement de l’administrateur inattendu|ALERT_NEW_ADMIN_LOCATION|Un nouvel emplacement a été détecté pour les administrateurs depuis le début de l’analyse (jusqu’à 6 mois). Cette alerte ne s’affiche qu’une seule fois pour chaque pays/région de l’administrateur de votre organisation. |
 |Compte compromis|ALERT_COMPROMISED_ACCOUNT|Si une violation s’est produite dans une application et que la liste des comptes affectés est publiée, Cloud App Security télécharge la liste et la compare à votre liste d’utilisateurs. La liste d’utilisateurs comprend notamment les utilisateurs internes, les utilisateurs externes et les comptes personnels. |
 
 ## <a name="custom-alerts"></a>Alertes personnalisées
 
 Les types d’alertes suivants sont affichés.
 
-|Nom d'alerte|ID d’alerte|Description|
+|Nom de l’alerte|ID d’alerte|Description|
 |----|----|----|
 |Alerte d’activité suspecte|ALERT_SUSPICIOUS_ACTIVITY|Les activités suspectes sont évaluées en fonction du degré de suspicion de l’activité anormale (Un compte inactif est-il impliqué ? S’agit-il d’un nouvel emplacement ?) Ces critères sont tous calculés ensemble pour fournir un score de risque en fonction des facteurs de risque suivants : <br />L’utilisateur est administrateur <br />Utilisateur strictement à distance<br />Proxy anonyme<br /> Toute la session ne compte que des échecs de connexion<br />Nombreux échecs de connexion<br />Nouveau (administrateur)<br />IP/ISP/pays/agent utilisateur pour utilisateur/client<br /> IP/ISP/pays/agent utilisateur utilisé uniquement par utilisateur (administrateur)<br />Première activité utilisateur (administrateur) depuis un certain temps<br />Première fois que cette activité administrative particulière est exécutée depuis un certain temps<br />Cette activité administrative particulière n’est pas courante/n’a jamais été exécutée auparavant<br />Cette adresse IP ne présentait que des échecs de connexion dans le passé<br />Voyage impossible|
 |Alerte d’utilisation suspecte du cloud|ALERT_DISCOVERY_ANOMALY_DETECTION|La détection des anomalies Cloud Discovery vérifie le modèle du comportement normal et recherche des utilisateurs ou des applications qui sont utilisés de façon inhabituelle. |

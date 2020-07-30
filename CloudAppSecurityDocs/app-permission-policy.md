@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 25809c1ace00b31df32c225f6b72a2b4e98a70d8
-ms.sourcegitcommit: 826d2ec022647bce6c3135c115a41ee894ff8ecd
+ms.openlocfilehash: c67e950b2d3227e8c0e261d346dcd1eec5f22d89
+ms.sourcegitcommit: 97563af6076ccbad0d994ac69a85a998a625d06a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84800722"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87296705"
 ---
 # <a name="oauth-app-policies"></a>Stratégies d’application OAuth
 
@@ -56,6 +56,7 @@ En plus des stratégies d’application OAuth que vous pouvez créer, les strat�
 | Nom d’application OAuth trompeur | Analyse les applications OAuth connectées à votre environnement et déclenche une alerte lorsqu’une application avec un nom trompeur est détectée. Les noms trompeurs, tels que les lettres étrangères ressemblant à des lettres latines, peuvent indiquer une tentative de déguisage d’une application malveillante en tant qu’application connue et approuvée. |
 | Nom du serveur de publication trompeur pour une application OAuth | Analyse les applications OAuth connectées à votre environnement et déclenche une alerte lorsqu’une application avec un nom d’éditeur trompeur est détectée. Les noms de serveur de publication trompeurs, tels que les lettres étrangères ressemblant à des lettres latines, peuvent indiquer une tentative de déguisement d’application malveillante en tant qu’application provenant d’un éditeur connu et approuvé. |
 | Consentement de l’application OAuth malveillante | Analyse les applications OAuth connectées à votre environnement et déclenche une alerte lorsqu’une application potentiellement malveillante est autorisée. Les applications OAuth malveillantes peuvent être utilisées dans le cadre d’une campagne de hameçonnage pour tenter de compromettre les utilisateurs. Cette détection tire parti de l’expertise en matière de recherche et de renseignement sur les menaces de Microsoft pour identifier les applications malveillantes. |
+| Activités suspectes de téléchargement de fichiers d’application OAuth | Voir [stratégies de détection des anomalies](anomaly-detection-policy.md#suspicious-oauth-app-file-download-activities) |
 
 <!--
 | OAuth apps authorized by external users | Scans OAuth apps connected to your environment and triggers an alert when an app was authorized by an external user. |

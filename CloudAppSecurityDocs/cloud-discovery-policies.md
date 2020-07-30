@@ -14,14 +14,14 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4434bd5faf1ab8aa30391d3434df71e6db557096
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 8a434520f3e0ca3baa01167cae13856085e9a318
+ms.sourcegitcommit: 859934f13d0f7f7a24a5fb21856d415ef0f6889a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85623324"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87378231"
 ---
-# <a name="cloud-discovery-policies"></a>Stratégies Cloud Discovery
+# <a name="create-cloud-discovery-policies"></a>Créer des stratégies de Cloud Discovery
 
 *S’applique à : Microsoft Cloud App Security*
 
@@ -60,7 +60,9 @@ Grâce aux stratégies de découverte, vous pouvez définir des alertes qui vous
 9. Cliquez sur **Créer**.
 
 > [!NOTE]
-> Les stratégies de découverte nouvellement créées (ou les stratégies avec des rapports continus mis à jour) déclenchent une alerte une fois dans 90 jours par application par rapport continu, qu’il existe des alertes pour la même application ou non. Ainsi, par exemple, si vous créez une stratégie pour découvrir de nouvelles applications populaires, elle peut déclencher des alertes supplémentaires pour les applications qui ont déjà été découvertes et alerté.
+>
+> - Les stratégies de découverte nouvellement créées (ou les stratégies avec des rapports continus mis à jour) déclenchent une alerte une fois dans 90 jours par application par rapport continu, qu’il existe des alertes pour la même application ou non. Ainsi, par exemple, si vous créez une stratégie pour découvrir de nouvelles applications populaires, elle peut déclencher des alertes supplémentaires pour les applications qui ont déjà été découvertes et alerté.
+> - Les données des **rapports d’instantané** ne déclenchent pas d’alertes dans les stratégies de détection d’application.
 
 Par exemple, pour découvrir les applications d’hébergement à risque qui ont été détectées dans votre environnement cloud, définissez votre stratégie de la façon suivante :
 

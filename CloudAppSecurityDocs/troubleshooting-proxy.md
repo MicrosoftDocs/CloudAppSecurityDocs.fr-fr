@@ -1,5 +1,5 @@
 ---
-title: Résolution des problèmes de contrôle d’accès et de session
+title: Résolution des problèmes de contrôles d’accès et de session
 description: Cet article fournit aux administrateurs des conseils sur la façon d’examiner et de résoudre les contrôles d’accès et de session courants.
 keywords: ''
 author: shsagir
@@ -11,14 +11,14 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: c473128c22f0369725260077b642d75ac50f559f
-ms.sourcegitcommit: 1dec09a56cc44148393f103c96fc24c59adc2f8f
+ms.openlocfilehash: 6d2996fb77912b04d5a6d4aefe7edc8c77f27a21
+ms.sourcegitcommit: 84eafb4926bf0d4db27bed7df55dc83ca48f9192
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86402348"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87377845"
 ---
-# <a name="troubleshooting-access-and-session-controls"></a>Résolution des problèmes de contrôle d’accès et de session
+# <a name="troubleshooting-access-and-session-controls"></a>Résolution des problèmes de contrôles d’accès et de session
 
 Cet article fournit aux administrateurs des conseils sur la façon d’examiner et de résoudre les problèmes courants d’accès et de contrôle de session tels qu’ils sont rencontrés par les [administrateurs](#issues-experienced-by-admins) et [les utilisateurs finaux](#issues-experienced-by-end-users).
 
@@ -67,7 +67,7 @@ Quand vous configurez en premier lieu des contrôles d’accès et de session Cl
     > - Cloud App Security exploite les protocoles TLS (Transport Layer Security) 1.2 + pour fournir un chiffrement optimal. Les applications clientes natives et les navigateurs qui ne prennent pas en charge TLS 1.2 + ne sont pas accessibles lorsqu’ils sont configurés avec le contrôle de session. Toutefois, les applications SaaS qui utilisent TLS 1.1 ou une version antérieure apparaissent dans le navigateur comme utilisant TLS 1.2+ lorsqu’elles sont configurées avec Cloud App Security.
     > - Alors que les contrôles de session sont créés pour fonctionner avec n’importe quel navigateur sur n’importe quelle plateforme principale sur tout système d’exploitation, nous prenons en charge Microsoft Edge (dernière version), Google Chrome (dernière version), Mozilla Firefox (dernière version) ou Apple Safari (dernière version). L’accès aux applications mobiles et de bureau peut également être bloqué ou autorisé.
 
-    | Navigateur | Étapes |
+    | Browser | Étapes |
     |---|---|
     | Microsoft Internet Explorer | 1. Ouvrez Internet Explorer<br />2. Sélectionnez **Outils**  >  **Options Internet**  >  onglet**avancé**<br />3. sous **sécurité**, sélectionnez **TLS 1,2**<br />4. Sélectionnez **appliquer**, puis cliquez sur **OK** .<br />5. Redémarrez votre navigateur et vérifiez que vous pouvez accéder à l’application |
     | Chrome Microsoft Edge/Edge | 1. Ouvrez la recherche à partir de la barre des tâches et recherchez « Options Internet »<br />2. sélectionner les **Options Internet**<br />3. sous **sécurité**, sélectionnez **TLS 1,2**<br />4. Sélectionnez **appliquer**, puis cliquez sur **OK** .<br />5. Redémarrez votre navigateur et vérifiez que vous pouvez accéder à l’application |
@@ -154,7 +154,7 @@ Azure AD l’accès conditionnel permet de transmettre directement les informati
 1. Si les activités ne sont pas renseignées dans le journal d’activité Cloud App Security, accédez à Azure AD et procédez comme suit :
     1. Sous **surveillance**des  >  **connexions**, vérifiez qu’il existe des activités de connexion dans les journaux.
     1. Sélectionnez l’entrée de journal appropriée pour l’appareil auquel vous vous êtes connecté.
-    1. Dans le volet d' **informations** , sous l’onglet informations sur l' **appareil** , vérifiez que l’appareil est **géré** (Azure ad hybride joint) ou **conforme** (conforme à Intune). Si vous ne pouvez pas vérifier l’un des deux États, essayez une autre entrée du journal ou assurez-vous que les données de votre appareil sont correctement configurées dans Azure AD.
+    1. Dans le volet **Détails**, sous l’onglet **Informations sur l’appareil**, vérifiez que l’appareil est **Géré** (joint à Azure AD Hybride) ou **Conforme** (conforme à Intune). Si vous ne pouvez pas vérifier l’un ou l’autre état, essayez une autre entrée de journal ou vérifiez que les données de votre appareil sont configurées correctement dans Azure AD.
     1. Pour l’accès conditionnel, certains navigateurs peuvent nécessiter une configuration supplémentaire telle que l’installation d’une extension. Utilisez les informations du Guide de [prise en charge du navigateur d’accès conditionnel](/azure/active-directory/conditional-access/concept-conditional-access-conditions#supported-browsers) pour configurer votre navigateur.
     1. Si vous ne voyez toujours pas les informations sur l’appareil dans la page **connexions** , ouvrez un ticket de support pour Azure ad.
 
@@ -188,7 +188,7 @@ Le mécanisme d’identification des appareils peut exiger une authentification 
 
 Si vous rencontrez le certificat client qui s’ouvre après l’ouverture d’un nouvel onglet, cela peut être dû à des paramètres masqués dans les **Options Internet**.
 
-| Navigateur | Étapes |
+| Browser | Étapes |
 |---|---|
 | Microsoft Internet Explorer | 1. Ouvrez Internet Explorer<br />2. Sélectionnez **Outils**  >  **Options Internet**  >  onglet**avancé**<br />3. sous **sécurité**, sélectionnez **ne pas demander la sélection d’un certificat client lorsqu’il n’existe qu’un seul certificat**<br />4. Sélectionnez **appliquer**, puis cliquez sur **OK** .<br />5. Redémarrez votre navigateur et vérifiez que vous pouvez accéder à l’application sans les invites supplémentaires |
 | Chrome Microsoft Edge/Edge | 1. Ouvrez la recherche à partir de la barre des tâches et recherchez « Options Internet »<br />2. sélectionner les **Options Internet**<br />3. sous **sécurité**, sélectionnez **ne pas demander la sélection d’un certificat client lorsqu’il n’existe qu’un seul certificat**<br />4. Sélectionnez **appliquer**, puis cliquez sur **OK** .<br />5. Redémarrez votre navigateur et vérifiez que vous pouvez accéder à l’application sans les invites supplémentaires |
@@ -291,7 +291,7 @@ Après avoir ajouté une application, vous pouvez voir l’option de **contrôle
 1. Dans Cloud App Security, dans la barre de menus, cliquez sur paramètres roue dentée, puis sélectionnez **paramètres**.
 1. Sous **contrôle d’application par accès conditionnel**, sélectionnez **intégration/maintenance**de l’application.
 1. Entrez le nom d’utilisateur principal ou l’adresse de messagerie des utilisateurs qui intégreront l’application, puis cliquez sur **Enregistrer**.
-1. Accédez à l’application que vous déployez. La page que vous voyez varie selon que l’application est reconnue ou non. Effectuez l’une des actions suivantes :
+1. Accédez à l’application que vous déployez. La page que vous voyez varie selon que l’application est reconnue ou non. Effectuez l’une des opérations suivantes :
 
     | État de l’application | Description | Étapes |
     | --- | --- | --- |
@@ -382,7 +382,7 @@ Dans les stratégies de session, lors de l’utilisation du type de contrôle de
 
 **Étapes recommandées**
 
-1. Si l’action de **protection** n’est pas disponible ou est grisée, vérifiez que vous disposez de la licence Premium P1 de l’Azure information protection (AIP). Pour plus d’informations, consultez [Azure Information Protection integration](azip-integration.md) (Intégration d’Azure Information Protection).
+1. Si l’action de **protection** n’est pas disponible ou est grisée, vérifiez que vous disposez de la licence Premium P1 de l’Azure information protection (AIP). Pour plus d’informations, consultez [Intégration d’Azure Information Protection](azip-integration.md).
 1. Si l’action de **protection** est disponible, mais ne voit pas les étiquettes appropriées.
     1. Dans Cloud App Security, dans la barre de menus, cliquez sur paramètres roue dentée, sélectionnez **Azure information protection**, puis vérifiez que l’intégration aip est activée.
     1. Pour les étiquettes Office, dans le portail AIP, assurez-vous que l' **étiquetage unifié** est sélectionné.
@@ -410,6 +410,7 @@ Cette section est destinée aux utilisateurs finaux qui utilisent des applicatio
 - [**Une page incorrecte** s’affiche](#something-went-wrong-page-appears)
 - [Les actions du presse-papiers ou les contrôles de fichier ne sont pas bloqués](#clipboard-actions-or-file-controls-are-not-being-blocked)
 - [Les téléchargements ne sont pas protégés](#downloads-are-not-being-protected)
+- [Navigation vers une URL particulière d’une application avec suffixe et atterrissage sur une page générique](#navigating-to-a-particular-url-of-a-suffixed-app-and-landing-on-a-generic-page)
 - [Considérations supplémentaires](#app-additional-considerations)
 
 ### <a name="user-monitoring-page-is-not-appearing"></a>La page d’analyse utilisateur n’apparaît pas
@@ -502,6 +503,20 @@ En tant qu’utilisateur final, il peut être nécessaire de télécharger des d
         - PDF * Si l’étiquetage unifié est activé
     - Si le type de fichier n’est pas pris en charge, dans la stratégie de session, vous pouvez sélectionner **bloquer le téléchargement de tout fichier qui n’est pas pris en charge par la protection native ou lorsque la protection native est infructueuse**.
 1. Si vous ne parvenez toujours pas à voir l’activité bloquée, ouvrez un [ticket de support](support-and-ts.md).
+
+### <a name="navigating-to-a-particular-url-of-a-suffixed-app-and-landing-on-a-generic-page"></a>Navigation vers une URL particulière d’une application avec suffixe et atterrissage sur une page générique
+
+Tous les proxies qui suffixent des URL sont susceptibles de perdre du contexte. un problème où la navigation vers un lien perd le chemin d’accès complet du lien et se trouve généralement sur la page d’origine de l’application. Cloud App Security est positionnée de manière unique pour répondre à cette limitation et résoudre les pertes de contexte en partenariat avec les fournisseurs Microsoft et non-Microsoft.
+
+Les applications de notre page applications proposées marquées comme (préversion **)** peuvent être sujettes à une perte de contexte. Pour les applications non proposées qui rencontrent une perte de contexte, envoyez un ticket de support. Nous travaillons en collaboration avec chaque fournisseur d’applications individuellement pour résoudre ces problèmes fondamentaux.
+
+En guise d’atténuation temporaire, vous pouvez contourner les problèmes de perte de contexte, comme suit :
+
+1. Accédez à une URL où le contexte est perdu.
+1. Prenez note du domaine URL avec suffixe, y compris le suffixe ajouté par Cloud App Security, par exemple `https://www.yammer.com.us2.cas.ms` .
+1. Copiez le chemin d’accès à partir de l’URL d’origine, par exemple, si l’URL spécifique d’origine était `https://www.yammer.com/organization/threads/threadnumber` , copiez `/organization/threads/threadnumber` .
+1. Ajoutez le chemin d’accès copié au domaine avec suffixe, par exemple `https://www.yammer.com.us2.cas.ms/organization/threads/threadnumber` .
+1. Accédez à la nouvelle URL avec suffixe.
 
 <a name="app-additional-considerations"></a>
 

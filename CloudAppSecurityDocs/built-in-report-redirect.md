@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5f149c3f1eeb960169feac803db7cd2e7f2e62c2
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 0c5cb9d6604fead5090c68ae74d9919d4ab0b3e4
+ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720208"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87254616"
 ---
 # <a name="how-to-find-built-in-deprecating-reports"></a>Guide pratique pour rechercher des rapports intégrés dépréciés
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Nous mettons à jour la fonctionnalité de rapports intégrés en l’incorporant à d’autres parties du portail. La mise à jour de cette fonctionnalité est en cours afin d’améliorer les rapports de Microsoft Cloud App Security.
 
@@ -33,7 +33,7 @@ Ce tableau vous permet de voir les informations que fournissaient les rapports d
 
 | Type de rapport | Nom du rapport intégré | Description | Nouvel emplacement des données |
 |----|----|----|----|
-| Sécurité | Activité | Ce rapport vous permet d’afficher la liste des pays depuis lesquels des activités ont été effectuées dans vos applications cloud. Le rapport montre différents paramètres révélant le volume d’activités en provenance de chaque pays, tels que le nombre d’événements, le nombre d’utilisateurs et ainsi de suite. Il permet d’obtenir une vue d’ensemble de la distribution géographique de vos utilisateurs. | Ces informations sont disponibles pour des applications, utilisateurs et adresses IP spécifiques. Pour chaque application, cliquez sur l’application. À partir de là, vous pouvez voir la carte des activités avec tous les emplacements. Pour chaque utilisateur, cliquez sur l’utilisateur, puis sur son tiroir d’insight. Vous pouvez y voir les emplacements récemment utilisés et le nombre d’adresses IP et d’ISP utilisés. Pour chaque adresse IP, cliquez sur l’adresse IP spécifique. Dans le tiroir de l’adresse IP, vous pouvez voir combien d’utilisateurs et d’administrateurs l’ont utilisée. |
+| Sécurité | Activité | Ce rapport vous permet d’afficher la liste des pays/régions à partir desquels l’activité provient de vos applications Cloud. Le rapport affiche différents paramètres révélant le volume d’activité de chaque pays/région, comme le nombre d’événements, le nombre d’utilisateurs, etc. Il permet d’obtenir une vue d’ensemble de la distribution géographique de vos utilisateurs. | Ces informations sont disponibles pour des applications, utilisateurs et adresses IP spécifiques. Pour chaque application, cliquez sur l’application. À partir de là, vous pouvez voir la carte des activités avec tous les emplacements. Pour chaque utilisateur, cliquez sur l’utilisateur, puis sur son tiroir d’insight. Vous pouvez y voir les emplacements récemment utilisés et le nombre d’adresses IP et d’ISP utilisés. Pour chaque adresse IP, cliquez sur l’adresse IP spécifique. Dans le tiroir de l’adresse IP, vous pouvez voir combien d’utilisateurs et d’administrateurs l’ont utilisée. |
 | Sécurité | Utilisation du navigateur | Les attaques par navigateur font partie des vecteurs d’attaque les plus courants. Les fournisseurs investissent des ressources énormes dans la sécurisation des logiciels de navigation, créant un mécanisme de mise à jour efficace pour publier les mises à jour vers les points de terminaison. L’utilisation de navigateurs dépréciés longtemps après leur dernière mise à jour en fait des cibles de choix pour les entités malveillantes qui recourent à des kits d’attaque. Cette fonctionnalité permet d’obtenir la liste des navigateurs obsolètes utilisés au cours des sept derniers jours par les utilisateurs qui accèdent à vos applications cloud. Il vous permet également de savoir si l’utilisation du navigateur obsolète a été effectuée par un robot. | Accédez au **journal d’activité**, puis ouvrez **Filtres avancés**. Ensuite, définissez le filtre **Étiquette agent utilisateur** est égal à **Navigateur obsolète** et **Système d’exploitation obsolète** pour voir la liste de tous les navigateurs et systèmes d’exploitation obsolètes en cours d’utilisation. |
 | Sécurité | Adresses IP - comptes disposant de privilèges| Ce rapport répertorie les adresses IP utilisées par les appareils ayant effectué des activités administratives au cours des sept derniers jours dans votre environnement cloud protégé par Cloud App Security. La date se base sur les journaux d’audit accumulés par Cloud App Security. Les adresses IP sont associées à un emplacement géographique et à une organisation source. Ces information vous permettent d’identifier les adresses IP suspectes qui se connectent à vos applications protégées. Vous pouvez afficher les journaux d’audit propres à une adresse IP en cliquant sur celle-ci. | Cliquez sur un utilisateur spécifique. Ensuite, dans le tiroir d’insight de l’utilisateur, vous pouvez voir les emplacements récemment utilisés et le nombre d’adresses IP et d’ISP utilisés. |
 | Gestion des utilisateurs | Comptes inactifs | Les comptes inactifs sont des comptes qui ont accès à votre instance cloud, mais qui ne sont à l’origine d’aucun événement au cours des 60 derniers jours. L’absence d’action suggère que ces comptes ne sont plus actifs et qu’ils doivent être suspendus afin d’empêcher tout accès ultérieur par des entités malveillantes ou des employés sur le départ. Le respect de cette bonne pratique non seulement améliore votre posture de sécurité, mais permet également de réduire les coûts d’exploitation. | Accédez à la page **Utilisateurs et comptes** et utilisez le filtre **Dernière consultation** pour générer la liste de tous les utilisateurs qui n’ont pas effectué d’activités récemment. |
@@ -46,6 +46,6 @@ Ce tableau vous permet de voir les informations que fournissaient les rapports d
 ## <a name="next-steps"></a>Étapes suivantes
 
 > [!div class="nextstepaction"]
-> [Contrôler](control.md)
+> [Contrôle](control.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

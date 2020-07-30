@@ -12,12 +12,12 @@ ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
-ms.openlocfilehash: 41c2617226653564398836ce7326521afde19f82
-ms.sourcegitcommit: 1dec09a56cc44148393f103c96fc24c59adc2f8f
+ms.openlocfilehash: c0676bf371e13be602fcbeea1625b19480a348a1
+ms.sourcegitcommit: 97563af6076ccbad0d994ac69a85a998a625d06a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86402254"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87296970"
 ---
 # <a name="onboard-and-deploy-conditional-access-app-control-for-any-app"></a>Intégration et déploiement de contrôle d’application par accès conditionnel pour n’importe quelle application
 
@@ -169,7 +169,7 @@ Suivez les étapes ci-dessous pour acheminer des sessions d’application d’au
 
 ## <a name="step-3-configure-the-app-that-you-are-deploying"></a>Étape 3 : configurer l’application que vous déployez<a name="conf-app"></a>
 
-Accédez à l’application que vous déployez. La page que vous voyez varie selon que l’application est reconnue ou non. Effectuez l’une des actions suivantes :
+Accédez à l’application que vous déployez. La page que vous voyez varie selon que l’application est reconnue ou non. Effectuez l’une des opérations suivantes :
 
 | État de l’application | Description | Étapes |
 | --- | --- | --- |
@@ -266,5 +266,8 @@ Une fois que vous êtes prêt à activer l’application en vue de son utilisati
 
 > [!div class="nextstepaction"]
 > [Présentation de contrôle d’application par accès conditionnel](proxy-intro-aad.md)
+
+> [!div class="nextstepaction"]
+> [Résolution des problèmes de contrôles d’accès et de session](troubleshooting-proxy.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

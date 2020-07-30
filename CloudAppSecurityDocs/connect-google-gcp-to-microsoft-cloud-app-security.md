@@ -9,12 +9,12 @@ ms.date: 06/28/2020
 ms.topic: conceptual
 ms.service: cloud-app-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 275e81a80124f95131ee110f4dce33a5ba3dac13
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: a792ae503fda51e69d162cec0b5e32cd3710780f
+ms.sourcegitcommit: 84eafb4926bf0d4db27bed7df55dc83ca48f9192
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85623661"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87377862"
 ---
 # <a name="connect-google-cloud-platform-to-microsoft-cloud-app-security"></a>Connectez Google Cloud Platform à Microsoft Cloud App Security
 
@@ -71,10 +71,15 @@ Créer un projet dédié dans GCP dans le cadre de votre organisation pour perme
 
     ![Capture d’écran montrant la boîte de dialogue de création de projet GCP](media/connect-gcp-create-project.png)
 
-#### <a name="enable-the-pubsub-api"></a>Activer l’API Pub/Sub
+#### <a name="enable-required-apis"></a>Activer les API requises
 
 1. Basculez vers le projet dédié.
-1. Accédez à l’onglet Pub/Sub. Un message d’activation de service doit s’afficher.
+1. Accédez à l’onglet **bibliothèque** .
+1. Recherchez et sélectionnez **API de journalisation Cloud**, puis dans la page API, cliquez sur **activer**.
+1. Recherchez et sélectionnez l' **API Cloud Pub/Sub**, puis dans la page API, cliquez sur **activer**.
+
+    > [!NOTE]
+    > Veillez à ne pas sélectionner l' **API Pub/Sub Lite**.
 
 #### <a name="create-a-dedicated-service-account-for-the-security-auditing-integration"></a>Créer un compte de service dédié pour l’intégration de l’audit de sécurité
 

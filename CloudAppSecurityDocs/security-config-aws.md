@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 904dc2c6a86d135502c81fd3037b9b8ca4459d99
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: d8c3da684fefed2a1aadef2e33d734deaad56fcc
+ms.sourcegitcommit: 97563af6076ccbad0d994ac69a85a998a625d06a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85625042"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87296835"
 ---
 # <a name="security-configuration-for-aws"></a>Configuration de la sécurité pour AWS
 
@@ -43,7 +43,10 @@ Microsoft Cloud App Security vous fournit une évaluation de la configuration de
 
     ![menu de configuration de la sécurité](media/security-configuration-menu.png)
 
-1. Vous pouvez filtrer les recommandations par type, par ressource et par compte. En outre, vous pouvez cliquer sur l’icône de configuration de la sécurité ![Icône de configuration de la sécurité](media/asc-icon.png) pour ouvrir la recommandation dans Amazon Security Hub pour plus d’informations et pour approfondir la recommandation.
+1. Vous pouvez filtrer les recommandations par type, par ressource et par compte. En outre, vous pouvez cliquer sur l’icône de configuration de la sécurité ![Icône ASC](media/asc-icon.png) pour ouvrir la recommandation dans Amazon Security Hub pour plus d’informations et pour approfondir la recommandation.
+
+    > [!NOTE]
+    > Pour faciliter encore plus les recherches, vous pouvez créer des requêtes personnalisées et les enregistrer pour les utiliser ultérieurement. Une fois que vous avez terminé de générer votre requête, cliquez sur le bouton **Enregistrer sous** en haut à droite des filtres. Dans la fenêtre contextuelle **enregistrer la requête** , nommez votre requête.
 
     ![Configuration de la sécurité](media/security-configuration-aws.png)
 

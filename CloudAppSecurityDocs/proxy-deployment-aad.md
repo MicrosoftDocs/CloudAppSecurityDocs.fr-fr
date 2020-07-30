@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 11236b48d153e32166e3a12a4b13eb200479cbf9
-ms.sourcegitcommit: 1dec09a56cc44148393f103c96fc24c59adc2f8f
+ms.openlocfilehash: 9e75c101bf55dd86f4d787c9a6e3ea6500e04f1b
+ms.sourcegitcommit: 97563af6076ccbad0d994ac69a85a998a625d06a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86402237"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87296965"
 ---
 # <a name="deploy-conditional-access-app-control-for-featured-apps"></a>Déployer le contrôle d’application par accès conditionnel pour les applications à la une
 
@@ -191,5 +191,8 @@ Pour vérifier que l’activité est correctement capturée, cliquez sur une act
 
 > [!div class="nextstepaction"]
 > [Étape suivante : intégration et déploiement de contrôle d’application par accès conditionnel pour une application»](proxy-deployment-any-app.md)
+
+> [!div class="nextstepaction"]
+> [Résolution des problèmes de contrôles d’accès et de session](troubleshooting-proxy.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

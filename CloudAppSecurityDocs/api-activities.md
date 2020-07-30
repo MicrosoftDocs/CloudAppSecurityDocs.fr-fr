@@ -10,12 +10,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: c3459843fc2a432f664ac09ebc67ec7c52a01fe4
-ms.sourcegitcommit: 286f8d5d940d1bb9a09daa3070ac4fc3768208f8
+ms.openlocfilehash: 0f6528074003d43777d21e956961739a19584742
+ms.sourcegitcommit: 84eafb4926bf0d4db27bed7df55dc83ca48f9192
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84505588"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87377828"
 ---
 # <a name="activities-api"></a>API d’activités
 
@@ -25,8 +25,8 @@ L’API d’activité vous donne une visibilité sur toutes les actions effectu�
 
 La liste suivante répertorie les requêtes prises en charge :
 
-- [Répertorier les activités](api-activities-list.md)
-- [Activité Fetch](api-activities-fetch.md)
+- [Lister les activités](api-activities-list.md)
+- [Récupérer l’activité](api-activities-fetch.md)
 - [Commentaires sur l’activité](api-activities-feedback.md)
 
 ## <a name="filters"></a>Filtres
@@ -37,7 +37,7 @@ Le tableau suivant décrit les filtres pris en charge :
 
 | Filtrer | Type | Opérateurs | Description |
 | --- | --- | --- | --- |
-| service | entier | eq | NEQ filtre les activités liées à l’appID de service spécifié, par exemple : 11770 |
+| service | entier | EQ, NEQ | Filtrer les activités liées à l’appID de service spécifié, par exemple : 11770 |
 | instance | entier | EQ, NEQ | Filtrer les activités à partir d’instances spécifiées |
 | User. unité | string | EQ, NEQ, isset, isnotset | Filtrer les activités par l’unité d’organisation de l’utilisateur effectuant l’opération |
 | Activity. eventType | string | EQ, NEQ | Filtrer les activités par type d’événement |
@@ -68,7 +68,6 @@ Le tableau suivant décrit les filtres pris en charge :
 | entité | CP d’entité | EQ, NEQ, isset, isnotset, StartsWith | Filtrer les activités par l’entité qui a effectué l’activité. Exemple : `[{ "id": "entity-id", "saas": 11161, "inst": 0 }]` |
 | User. UserName | string | EQ, NEQ, isset, isnotset, StartsWith | Filtrer les activités par l’utilisateur qui a effectué l’activité |
 | User. Tags | string | EQ, NEQ, isset, isnotset, StartsWith | Filtrer les activités par balises appartenant à l’utilisateur en cours d’exécution. Requiert des ID de groupe |
-| Activity. azureSubscriptions | string | EQ, NEQ | Filtrer les activités d’abonnements Azure |
 | User. Domain | string | EQ, NEQ, isset, isnotset | Filtrer les activités en effectuant le domaine de l’utilisateur |
 
 [!INCLUDE [Open support ticket](includes/support.md)]

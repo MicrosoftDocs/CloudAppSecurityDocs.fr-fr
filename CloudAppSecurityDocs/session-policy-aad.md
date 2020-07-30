@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 7ad7bc15a2ea70a9b1166f30024afc0bfe17ae27
-ms.sourcegitcommit: 15d80cde40df8a8d3a156764a6a99fad0e62a422
+ms.openlocfilehash: eabbad5f2ce6ca4649f0923e9bce248a6d28781f
+ms.sourcegitcommit: 97563af6076ccbad0d994ac69a85a998a625d06a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86046094"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87296882"
 ---
 # <a name="session-policies"></a>Stratégies de session
 
@@ -138,9 +138,9 @@ Lorsque l’action **protéger** est définie en tant qu' **action** à effectue
 
 Cloud App Security prend actuellement en charge l’application d' [étiquettes de classification Azure information protection](azip-integration.md) pour les types de fichiers suivants :
 
-* Word : docm, docx, dotm, dotx
-* Excel : xlam, xlsm, xlsx, xltx
-* PowerPoint : potm, potx, ppsx, ppsm, pptm, pptx
+* Word : docm, docx, dotm, dotx
+* Excel : xlam, xlsm, xlsx, xltx
+* PowerPoint : potm, potx, ppsx, ppsm, pptm, pptx
 * PDF
   > [!NOTE]
   > Pour PDF, vous devez utiliser des étiquettes unifiées.
@@ -172,6 +172,9 @@ Par exemple, si un utilisateur charge un fichier sans étiquette Azure Informati
 
 >[!div class="nextstepaction"]
 > [SUIVANT : Guide pratique pour créer une stratégie d’accès »](access-policy-aad.md)
+
+> [!div class="nextstepaction"]
+> [Résolution des problèmes de contrôles d’accès et de session](troubleshooting-proxy.md)
 
 ## <a name="see-also"></a>Voir aussi
 
