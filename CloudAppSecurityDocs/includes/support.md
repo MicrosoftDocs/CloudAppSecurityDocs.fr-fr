@@ -1,6 +1,6 @@
 ---
-title: fichier descriptif
-description: fichier descriptif
+title: Fichier Include
+description: Fichier include
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 author: shsagir
