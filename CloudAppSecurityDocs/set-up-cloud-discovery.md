@@ -5,17 +5,17 @@ author: shsagir
 ms.author: shsagir
 ms.service: cloud-app-security
 ms.topic: conceptual
-ms.date: 05/17/2020
+ms.date: 08/09/2020
 ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 7756d238514b786321ee5c0c4ba91910c3b3dfcf
-ms.sourcegitcommit: 8dbdfab8bb07f1bf128dfc85894a448b63a78148
+ms.openlocfilehash: 87d0aa487e71e308bddccfcf504356423e485584
+ms.sourcegitcommit: 4450119e1c7e2c54357dca955621327f9c343422
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86928013"
+ms.lasthandoff: 08/09/2020
+ms.locfileid: "88026953"
 ---
 # <a name="set-up-cloud-discovery"></a>Configurer Cloud Discovery
 
@@ -73,6 +73,7 @@ Le processus de génération d’une évaluation des risques se compose des éta
 - Juniper SRX
 - Juniper SSG
 - McAfee Secure Web Gateway
+- Sécurité Menlo (CEF)
 - Microsoft Forefront Threat Management Gateway (W3C)
 - Pare-feu de la série Palo Alto
 - SonicWall (anciennement Dell)
@@ -98,15 +99,15 @@ Attributs de données (selon la documentation du fournisseur) :
 
 | Source de données | URL de l’application cible | Adresse IP de l’application cible | Nom d’utilisateur | Adresse IP d’origine | Total du trafic | Octets chargés |
 |----------------------------------------------|----------------------|----------------------|----------------------|----------------------|----------------------|----------------------|
-| Barracuda | **Oui** | **Oui** | **Oui** | **Oui** | Non | Non  |
+| Barracuda | **Oui** | **Oui** | **Oui** | **Oui** | Non | Non |
 | Blue Coat | **Oui** | Non | **Oui** | **Oui** | **Oui** | **Oui** |
-| Check Point | Non | **Oui** | Non | **Oui** | Non | Non  |
+| Check Point | Non | **Oui** | Non | **Oui** | Non | Non |
 | Cisco ASA (Syslog) | Non | **Oui** | Non | **Oui** | **Oui** | Non |
 | Cisco ASA avec FirePOWER | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** |
 | Cisco Cloud Web Security |**Oui**|**Oui**|**Oui**|**Oui**|**Oui**|**Oui**|
 | Cisco FWSM | Non | **Oui** | Non | **Oui** | **Oui** | Non |
 | Cisco Ironport WSA | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** |
-| Cisco Meraki | **Oui** | **Oui** | Non | **Oui** | Non | Non  |
+| Cisco Meraki | **Oui** | **Oui** | Non | **Oui** | Non | Non |
 | Clavister NGFW (Syslog) | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** |
 | ContentKeeper | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** |
 | Corrata | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** |
@@ -120,11 +121,12 @@ Attributs de données (selon la documentation du fournisseur) :
 | Juniper SRX | Non | **Oui** | Non | **Oui** | **Oui** | **Oui** |
 | Juniper SSG | Non | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** |
 | McAfee SWG | **Oui** | Non | Non | **Oui** | **Oui** | **Oui** |
+| Sécurité Menlo (CEF) | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** |
 | MS TMG | **Oui** | Non | **Oui** | **Oui** | **Oui** | **Oui** |
 | Palo Alto Networks | Non | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** |
 | Sophos | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** | Non |
 | Squid (commun) | **Oui** | Non | **Oui** | **Oui** | **Oui** | Non |
-| Squid (natif) | **Oui** | Non | **Oui** | **Oui** | Non | Non  |
+| Squid (natif) | **Oui** | Non | **Oui** | **Oui** | Non | Non |
 | Stormshield | Non | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** |
 | Websense - Rapport d’examen détaillé (CSV) | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** |
 | Websense - Journal d’activité Internet (CEF) | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** |

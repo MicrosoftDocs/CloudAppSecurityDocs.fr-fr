@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 9/1/2019
+ms.date: 08/05/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 084491b7c74019d2145439f66ce5a90482091ed9
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: faf3be962650316a1c16f1b3db884dc16a0dc552
+ms.sourcegitcommit: 4450119e1c7e2c54357dca955621327f9c343422
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624639"
+ms.lasthandoff: 08/09/2020
+ms.locfileid: "88027055"
 ---
 # <a name="manage-oauth-apps"></a>Gérer les applications OAuth
 
@@ -28,6 +28,9 @@ ms.locfileid: "85624639"
 Les applications de productivité tierces installées par des utilisateurs professionnels dans votre organisation ont souvent besoin d’une autorisation pour pouvoir accéder aux informations et données utilisateur, et se connecter au nom de l’utilisateur à d’autres applications cloud, comme Office 365, G Suite et Salesforce. Lorsque les utilisateurs installent ces applications, ils cliquent souvent sur Accepter sans examiner attentivement les détails du message d’invite, notamment concernant l’octroi d’autorisations à l’application. Ce problème est d’autant plus complexe que le service informatique ne dispose pas toujours d’informations suffisantes pour mettre en balance le risque de sécurité d’une application et les avantages qu’elle offre en termes de productivité. Dans la mesure où l’acceptation des autorisations d’applications tierces représente un risque de sécurité potentiel pour votre organisation, la surveillance des autorisations d’applications accordées par vos utilisateurs, vous donne la visibilité et le contrôle nécessaires pour protéger vos utilisateurs et vos applications. Les autorisations d’applications Microsoft Cloud App Security vous permettent de savoir quelles applications OAuth installées par l’utilisateur ont accès aux données Office 365, G Suite et Salesforce. Cloud App Security vous indique de quelles autorisations les applications disposent, et quels utilisateurs ont accordé à ces applications l’accès à leurs comptes Office 365, G Suite et Salesforce. Avec les autorisations d’applications, vous décidez à quelles applications vous autorisez les utilisateurs à accéder, et quelles autres vous voulez exclure.
 
 Pour plus d’informations sur l’examen des applications OAuth, consultez [examiner les applications OAuth risquées](investigate-risky-oauth.md).
+
+> [!NOTE]
+> Cloud App Security identifie uniquement les applications qui demandent des autorisations « déléguées ». Pour plus d’informations, consultez [autorisations des applications clientes](/azure/active-directory/develop/developer-glossary#permissions).
 
 ## <a name="working-with-the-oauth-apps-page"></a>Utilisation de la page Applications OAuth
 
