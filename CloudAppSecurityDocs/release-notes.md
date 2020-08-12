@@ -4,19 +4,19 @@ description: Cet article est mis à jour fréquemment pour vous informer des nou
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 07/20/2020
+ms.date: 08/09/2020
 ms.topic: overview
 ms.service: cloud-app-security
 ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: de7d3e9c0da31dc6331df344673628c127a8805d
-ms.sourcegitcommit: 97563af6076ccbad0d994ac69a85a998a625d06a
+ms.openlocfilehash: b53977404f44c56fade4808e8d7668eb8b810373
+ms.sourcegitcommit: 4450119e1c7e2c54357dca955621327f9c343422
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87297002"
+ms.lasthandoff: 08/09/2020
+ms.locfileid: "88027004"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Nouveautés dans Microsoft Cloud App Security
 
@@ -25,6 +25,16 @@ ms.locfileid: "87297002"
 Cet article est mis à jour fréquemment pour vous informer des nouveautés de la dernière version de Cloud App Security.
 
 Flux RSS : Recevez une notification quand cette page est mise à jour en copiant et collant l’URL suivante dans votre lecteur de flux : `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
+
+## <a name="cloud-app-security-release-181"></a>Cloud App Security version 181
+
+Publication : 9 août 2020
+
+- **Nouvel analyseur de journal Menlo Security Cloud Discovery**  
+Cloud App Security Cloud Discovery analyse une large gamme de journaux de trafic pour classer et noter les applications. Cloud Discovery comprend désormais un analyseur de journal intégré pour prendre en charge le format CEF Menlo Security. Consultez la liste des analyseurs de journal pris en charge dans [Pare-feu et proxys pris en charge](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
+
+- **Le nom Azure Active Directory (AD) Cloud App Discovery s’affiche dans le portail**  
+Pour les licences Azure AD P1 et P2, nous avons remplacé le nom du produit par **Cloud App Discovery** dans le portail. En savoir plus sur [Cloud App Discovery](editions-cloud-app-security-aad.md).
 
 ## <a name="cloud-app-security-release-179-and-180"></a>Cloud App Security versions 179 et 180
 
@@ -84,7 +94,7 @@ Nous avons étendu nos contrôles de session afin de détecter les logiciels mal
 Nous avons ajouté la possibilité de traiter les demandes de jeton d’accès et de code en tant que connexions lors de l’intégration d’applications aux contrôles d’accès et de session. Pour utiliser des jetons, cliquez sur l’icône Paramètres représentée par une roue dentée, sélectionnez **Contrôle d’application par accès conditionnel**, modifiez l’application appropriée (cliquez sur le menu à trois points > **Modifier l’application**), sélectionnez **Traiter les demandes de jeton d’accès et de code en tant que connexions à l’application**, puis cliquez sur **Enregistrer**. Pour plus d’informations sur l’intégration des applications, consultez [Intégrer et déployer une application](proxy-deployment-any-app.md) et [Déployer des applications proposées](proxy-deployment-aad.md).
 
 - **Suffixe d’URL de proxy amélioré pour les contrôles de session (déploiement progressif)**  
-Le 7 juin 2020, nous avons commencé à déployer progressivement nos contrôles de session de proxy améliorés en vue d’utiliser un suffixe unifié qui n’inclut pas de régions nommées. Par exemple, les utilisateurs verront le suffixe `<AppName>.mcas.ms` au lieu de `<AppName>.<Region>.cas.ms`. Si vous mettez régulièrement des domaines sur liste noire dans vos passerelles ou appliances réseau, assurez-vous d’autoriser tous les domaines répertoriés sous [Contrôles d’accès et de session](network-requirements.md#access-and-session-controls).
+Le 7 juin 2020, nous avons commencé à déployer progressivement nos contrôles de session de proxy améliorés en vue d’utiliser un suffixe unifié qui n’inclut pas de régions nommées. Par exemple, les utilisateurs verront le suffixe `<AppName>.mcas.ms` au lieu de `<AppName>.<Region>.cas.ms`. Si vous mettez régulièrement des domaines sur liste rouge dans vos passerelles ou appliances réseau, assurez-vous d’autoriser tous les domaines répertoriés sous [Contrôles d’accès et de session](network-requirements.md#access-and-session-controls).
 
 - **Nouvelle documentation**  
 Le contenu suivant a été ajouté à la documentation Cloud App Security :
@@ -848,7 +858,7 @@ Publication : 4 mars 2018
 
 - La fonctionnalité de recherche des pages Utilisateur et Adresses IP permet maintenant l’autocomplétion, ce qui vous aide à trouver ce que vous cherchez.
 
-- Vous pouvez maintenant effectuer des actions en bloc dans les pages de paramètres Exclure des entités et Exclure une adresse IP. Cela vous permet de sélectionner plus facilement plusieurs utilisateurs et groupes ou adresses IP et de les exclure de la surveillance dans le cadre de Cloud Discovery de votre organisation.
+- Vous pouvez maintenant effectuer des actions en bloc dans les pages de paramètres Exclure des entités et Exclure une adresse IP. Cela vous permet de sélectionner facilement plusieurs utilisateurs ou adresses IP, et de les exclure de la supervision Cloud Discovery de votre organisation.
 
 ## <a name="cloud-app-security-release-117"></a>Cloud App Security version 117
 

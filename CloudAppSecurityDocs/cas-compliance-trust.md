@@ -9,12 +9,12 @@ ms.date: 11/01/2019
 ms.collection: M365-security-compliance
 ms.custom: seodec18
 ms.suite: ems
-ms.openlocfilehash: 44880f4e19fc317d09dbc091c2c4a4e9c9399a43
-ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
+ms.openlocfilehash: 6aa884bf83e71964173b69d9ca11a5a86e3cef9f
+ms.sourcegitcommit: 4450119e1c7e2c54357dca955621327f9c343422
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87254684"
+ms.lasthandoff: 08/09/2020
+ms.locfileid: "88027038"
 ---
 # <a name="microsoft-cloud-app-security-data-security-and-privacy"></a>Sécurité et confidentialité des données Microsoft Cloud App Security
 
@@ -30,13 +30,13 @@ La sécurité des applications Microsoft Cloud possède des outils qui permetten
 
 Dans un monde où les violations de données et les attaques se produisent tous les jours, il est primordial que les organisations choisissent un fournisseur de service cloud qui met tout en œuvre pour protéger leurs données. Comme tous les produits et services cloud Microsoft, Microsoft Cloud App Security est conçu en vue de répondre aux demandes les plus rigoureuses de tous nos clients en matière de sécurité et de confidentialité.
 
-Pour aider les organisations à se conformer aux exigences nationales, régionales et spécifiques au secteur régissant la collecte et l'utilisation de données individuelles, Microsoft Cloud App Security propose l'ensemble le plus complet d'offres de conformité. Les offres de conformité incluent des certifications et des attestations.
+Pour aider les organisations à se conformer aux exigences nationales, régionales et propres au secteur régissant la collecte et l’utilisation de données individuelles, Microsoft Cloud App Security propose l’ensemble le plus complet d’offres de conformité. Les offres de conformité incluent des certifications et des attestations.
 
 ### <a name="compliance-framework-and-offerings"></a>Infrastructure et offres de conformité
 
 Microsoft Cloud App Security est conforme à de nombreuses normes de conformité internationales et sectorielles, notamment :
 
-| |Titre|Description|
+| Organisation |Intitulé|Description|
 |----|----|----|
 |![logo csa](media/csastar-attest.png)|CSA STAR Attestation|Azure et Intune ont obtenu la certification CSA (Cloud Security Alliance) STAR basée sur un audit indépendant.|
 |![logo csa](media/csastar.png)|CSA STAR Certification|Azure, Intune et Power BI ont obtenu la certification CSA (Cloud Security Alliance) STAR au niveau « Gold ».|
@@ -51,7 +51,9 @@ Microsoft Cloud App Security est conforme à de nombreuses normes de conformité
 |![logo SOC](media/soc-logo.png)|SOC 3|Les services cloud Microsoft respectent les normes SOC (Service Organization Controls) en matière de sécurité opérationnelle.|
 |![logo g-cloud](media/g-cloud.png)|UK G-Cloud|Le Crown Commercial Service a renouvelé la classification des services cloud Microsoft à la norme Government Cloud v6.|
 
-<!--|![logo FISC](media/logo_fisc.png)|FISC|Microsoft meets the requirements of the Financial Industry Information Systems v8 standard in Japan.|-->
+<!--
+|![logo FISC](media/logo_fisc.png)|FISC|Microsoft meets the requirements of the Financial Industry Information Systems v8 standard in Japan.|
+-->
 
 Pour plus d’informations, accédez à [Offres Microsoft relatives à la conformité](https://www\.microsoft\.com/trustcenter/compliance/complianceofferings) puis sélectionnez Cloud App Security.  
 
@@ -60,7 +62,7 @@ Pour plus d’informations, accédez à [Offres Microsoft relatives à la confor
 ### <a name="youre-the-owner-of-your-data"></a>Vous êtes le propriétaire de vos données
 
 - Dans Microsoft Cloud App Security, vos administrateurs peuvent afficher les données personnelles identifiables stockées dans le service à partir du portail à l’aide de la barre de recherche.
-- Les administrateurs peuvent rechercher les métadonnées d’un utilisateur spécifique ou l’activité de l’utilisateur. En cliquant sur une entité, vous ouvrez [**Utilisateurs et comptes**](accounts.md). La page **Utilisateurs et comptes** fournit des détails complets sur l’entité qui sont tirés des applications cloud connectées. Il fournit également l’historique des activités de l’utilisateur et les alertes de sécurité liées à l’utilisateur.
+- Les administrateurs peuvent rechercher les métadonnées ou l’activité d’un utilisateur. En cliquant sur une entité, vous ouvrez [**Utilisateurs et comptes**](accounts.md). La page **Utilisateurs et comptes** fournit des détails complets sur l’entité qui sont tirés des applications cloud connectées. Elle fournit également l’historique des activités de l’utilisateur et les alertes de sécurité associées à l’utilisateur.
 
 - Vous possédez vos données et vous pouvez annuler les abonnements et demander la suppression de vos données à tout moment. Si vous ne renouvelez pas votre abonnement, vos données seront supprimées dans la chronologie spécifiée dans  [Conditions des services en ligne](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
 
@@ -82,7 +84,7 @@ Les données personnelles relatives aux utilisateurs sont dérivées de l’obje
 
 ## <a name="data-location"></a>Emplacement des données
 
-Microsoft Cloud App Security fonctionne actuellement dans les centres de données des États-Unis et de l’Europe (chaque « zone géographique »). Votre compte d’abonné sera créé dans une zone géographique basée sur le pays ou la région que vous avez choisi(e) lors de votre inscription. Plus précisément, vos données sont stockées dans un centre de données dans la zone géographique la plus proche de cet emplacement.
+Microsoft Cloud App Security fonctionne dans les centres de données situés aux États-Unis et en Europe (chacune de ces régions constituant une zone géographique). Votre compte d’abonné sera créé dans une zone géographique basée sur le pays ou la région que vous avez choisi(e) lors de votre inscription. Plus précisément, vos données sont stockées dans un centre de données dans la zone géographique la plus proche de cet emplacement.
 
 > [!NOTE]
 > Cloud App Security tire parti des centres de données Azure dans le monde entier pour offrir des performances optimisées grâce à la géolocalisation. Cela signifie que la session d’un utilisateur peut être hébergée en dehors d’une région particulière, en fonction des modèles de trafic et de leur emplacement. Toutefois, pour protéger votre confidentialité, aucune donnée de session n’est stockée dans ces centres de données.
