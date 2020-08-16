@@ -14,18 +14,18 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 02b3ebfdb6def927e7f3bde55fe76ef74e65406b
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 8e79d605aa56afebea59088df43abb9894d6b409
+ms.sourcegitcommit: 684feff0782ed30f23f3d7fd9f3e063368f46b47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624627"
+ms.lasthandoff: 08/16/2020
+ms.locfileid: "88256739"
 ---
 #  <a name="working-with-ip-ranges-and-tags"></a><a name="IPtagsandRanges"></a> Utilisation des balises et des plages d’adresses IP
 
 *S’applique à : Microsoft Cloud App Security*
 
-Pour identifier facilement les adresses IP connues, telles que celles de votre bureau, vous devez définir des plages d’adresses IP. Les plages d’adresses IP vous permettent de baliser, classer et personnaliser la façon dont les journaux et les alertes sont affichés et examinés. Chaque groupe de plages IP peut être classé selon une liste prédéfinie de catégories d’adresses IP. Vous pouvez également créer des balises IP personnalisées pour vos plages d’adresses IP. En outre, vous pouvez remplacer les informations de géolocalisation publiques en fonction de votre connaissance du réseau interne. IPv4 et IPv6 sont pris en charge.
+Pour identifier facilement les adresses IP connues, telles que celles de votre bureau, vous devez définir des plages d’adresses IP. Les plages d’adresses IP vous permettent de baliser, classer et personnaliser la façon dont les journaux et les alertes sont affichés et examinés. Chaque groupe de plages IP peut être classé selon une liste prédéfinie de catégories d’adresses IP. Vous pouvez également créer des balises IP personnalisées pour vos plages d’adresses IP. En outre, vous pouvez remplacer les informations de géolocalisation publiques en fonction de la connaissance de votre réseau interne. IPv4 et IPv6 sont pris en charge.
 
 Cloud App Security est préconfiguré avec des plages d’adresses IP intégrées pour les fournisseurs de cloud répandus comme Azure et Office 365. De plus, nous avons des balises intégrées basées sur Microsoft Threat Intelligence, notamment pour le proxy anonyme, Botnet et Tor. Vous pouvez voir la liste complète dans la liste déroulante de la page des plages d’adresses IP.
 
@@ -81,6 +81,6 @@ Dans la barre de menus, cliquez sur l’icône des paramètres. Sélectionnez **
 ## <a name="next-steps"></a>Étapes suivantes
 
 > [!div class="nextstepaction"]
-> [Configuration de Cloud Discovery](set-up-cloud-discovery.md)
+> [Configurer Cloud Discovery](set-up-cloud-discovery.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

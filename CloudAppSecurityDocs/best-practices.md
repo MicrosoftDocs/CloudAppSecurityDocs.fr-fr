@@ -7,12 +7,12 @@ ms.service: cloud-app-security
 ms.topic: best-practice
 ms.date: 10/24/2019
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 0815432cf7410ab4e122ab52a136b978d6dec430
-ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
+ms.openlocfilehash: de72f525d7188b4fac360f3ad910c3078a8de2e7
+ms.sourcegitcommit: 684feff0782ed30f23f3d7fd9f3e063368f46b47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87254599"
+ms.lasthandoff: 08/16/2020
+ms.locfileid: "88256750"
 ---
 # <a name="cloud-app-security-best-practices"></a>Meilleures pratiques en matière de Cloud App Security
 
@@ -43,7 +43,7 @@ L’intégration de Cloud App Security avec Microsoft Defender-protection avanc�
 **Pour plus d’informations**:
 
 * [Intégration de Microsoft Defender ATP à Cloud App Security](wdatp-integration.md)
-* [Configuration de Cloud Discovery](set-up-cloud-discovery.md)
+* [Configurer Cloud Discovery](set-up-cloud-discovery.md)
 * [Détectez et gérez le cliché instantané de votre réseau](tutorial-shadow-it.md)
 
 ---
@@ -270,7 +270,7 @@ Lorsque vous ignorez des alertes, il est important d’examiner et de comprendre
 ## <a name="secure-iaas-services-and-custom-apps"></a>Sécuriser les services IaaS et les applications personnalisées
 
 **Bonne pratique**: Connectez Azure, AWS et GCP  
-**Détail**: la connexion de chacune de ces applications de stockage cloud à Cloud App Security vous aide à améliorer vos fonctionnalités de détection des menaces. En surveillant les activités d’administration et de connexion pour ces services, vous pouvez détecter et être informé des éventuelles attaques par force brute, de l’utilisation malveillante d’un compte d’utilisateur privilégié et d’autres menaces dans votre environnement. Par exemple, vous pouvez identifier les risques tels que les suppressions inhabituelles de machines virtuelles ou même les activités d’emprunt d’identité dans ces applications.  
+**Détail**: la connexion de chacune de ces plateformes cloud à Cloud App Security vous aide à améliorer vos fonctionnalités de détection des menaces. En surveillant les activités d’administration et de connexion pour ces services, vous pouvez détecter et être informé des éventuelles attaques par force brute, de l’utilisation malveillante d’un compte d’utilisateur privilégié et d’autres menaces dans votre environnement. Par exemple, vous pouvez identifier les risques tels que les suppressions inhabituelles de machines virtuelles ou même les activités d’emprunt d’identité dans ces applications.  
 **Pour plus d’informations**:
 
 * [Connecter Azure à Microsoft Cloud App Security](connect-azure-to-microsoft-cloud-app-security.md)
