@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ed9b4a8b34f0a6b0d4e0ecab3977c97cf0ec1491
-ms.sourcegitcommit: 5ea18a81e5fffacf81cda6eb545ed95d822426da
+ms.openlocfilehash: 85cfe50bd9fefc2b7ace059340a8aea8ed39c2ac
+ms.sourcegitcommit: 61e9579ebe2c1ca02c7a56e32781e145f6612879
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85846021"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "88261417"
 ---
 # <a name="manage-admin-access"></a>Gérer l’accès administrateur
 
@@ -33,9 +33,9 @@ Par défaut, les rôles d’administrateur Office 365 et [Azure Active Directory
 
 - **Administrateur général et Administrateur de la sécurité :** les administrateurs avec un **Accès total** disposent d’autorisations complètes dans Cloud App Security. Ils peuvent ajouter des administrateurs, ajouter des stratégies et des paramètres, charger des journaux et effectuer des actions de gouvernance.
 
-- **Administrateur de conformité** : dispose d’autorisations en lecture seule et peut gérer les alertes. Peut créer et modifier des stratégies de fichier, autoriser des actions de gouvernance de fichier et afficher tous les rapports intégrés sous Gestion des données.
+- **Administrateur de conformité** : dispose d’autorisations en lecture seule et peut gérer les alertes. Impossible d’accéder aux recommandations de sécurité pour les plateformes Cloud. Peut créer et modifier des stratégies de fichier, autoriser des actions de gouvernance de fichier et afficher tous les rapports intégrés sous Gestion des données.
 
-- **Administrateur des données de conformité :** Possède des autorisations en lecture seule, peut créer et modifier des stratégies de fichier, autoriser des actions de gouvernance de fichiers et afficher tous les rapports de découverte.
+- **Administrateur des données de conformité :** Possède des autorisations en lecture seule, peut créer et modifier des stratégies de fichier, autoriser des actions de gouvernance de fichiers et afficher tous les rapports de découverte. Impossible d’accéder aux recommandations de sécurité pour les plateformes Cloud.
 
 - **Opérateur de sécurité :** Possède des autorisations en lecture seule et peut gérer les alertes.
 
@@ -72,6 +72,7 @@ En outre, les Cloud App Security rôles d’administrateur spécifiques suivants
   - Activité Cloud Discovery : aucune autorisation
   - Extensions de sécurité : autorisations uniquement pour un jeton d’API avec des autorisations utilisateur
   - Actions de gouvernance : uniquement pour l’application/instance spécifique
+  - Recommandations de sécurité pour les plateformes Cloud-aucune autorisation
 
 - **Administrateur du groupe d’utilisateurs :** Dispose d’autorisations complètes ou en lecture seule pour toutes les données de Microsoft Cloud App Security qui traitent exclusivement du groupe spécifique sélectionné ici. Par exemple, si vous accordez à un utilisateur l’autorisation d’administrateur sur le groupe « Allemagne - tous les utilisateurs », l’administrateur peut visualiser et modifier les informations dans Microsoft Cloud App Security uniquement pour ce groupe d’utilisateurs :
 
@@ -85,6 +86,7 @@ En outre, les Cloud App Security rôles d’administrateur spécifiques suivants
   - Activité Cloud Discovery : aucune autorisation
   - Extensions de sécurité : autorisations uniquement pour un jeton d’API avec les utilisateurs dans le groupe
   - Actions de gouvernance : uniquement pour les utilisateurs spécifiques dans le groupe
+  - Recommandations de sécurité pour les plateformes Cloud-aucune autorisation
 
 - **Cloud Discovery administrateur général :**  A l’autorisation d’afficher et de modifier tous les paramètres et données de Cloud Discovery. L’administrateur Global Discovery a accès comme suit :
 
@@ -101,14 +103,13 @@ En outre, les Cloud App Security rôles d’administrateur spécifiques suivants
   - Contrôle d’accès conditionnel aux applications : aucune autorisation
   - Extensions de sécurité - Aucune autorisation
   - Actions liées à la gouvernance - Cloud Discovery uniquement
+  - Recommandations de sécurité pour les plateformes Cloud-aucune autorisation
 
-- **Cloud Discovery l’administrateur du rapport :** Dispose des autorisations pour afficher toutes les données dans Microsoft Cloud App Security qui traitent exclusivement des rapports Cloud Discovery spécifiques sélectionnés. Par exemple, vous pouvez accorder une autorisation d’administrateur à un rapport continu à partir de Microsoft Defender ATP. L’administrateur de la découverte verra uniquement les données de Cloud Discovery relatives à cette source de données et au catalogue d’applications.
-Cet administrateur n’aura pas accès aux pages des **activités** ou des **fichiers** et à un accès limité aux stratégies.
+- **Cloud Discovery l’administrateur du rapport :** Dispose des autorisations pour afficher toutes les données dans Cloud App Security qui traitent exclusivement des rapports Cloud Discovery spécifiques sélectionnés. Par exemple, vous pouvez accorder une autorisation d’administrateur à un rapport continu à partir de Microsoft Defender ATP. L’administrateur de la découverte verra uniquement les données de Cloud Discovery relatives à cette source de données et au catalogue d’applications. Cet administrateur n’aura pas accès aux pages des **activités**, des **fichiers**ou des **recommandations de sécurité** et un accès limité aux stratégies.
 
 ## <a name="override-admin-permissions"></a>Remplacer les autorisations d’administrateur
 
-Si vous souhaitez remplacer une autorisation d’administrateur dans Azure Active Directory ou Office 365, vous pouvez le faire manuellement en ajoutant l’utilisateur à Cloud App Security et en lui affectant des autorisations.
-Par exemple, pour affecter à Stéphanie, qui est titulaire du rôle Lecteur Sécurité dans Azure Active Directory, un **accès total** à Cloud App Security, vous pouvez l’ajouter manuellement à Cloud App Security et lui accorder un **accès total**. Son rôle est ainsi remplacé, et elle dispose des autorisations nécessaires dans Cloud App Security.
+Si vous souhaitez remplacer une autorisation d’administrateur dans Azure Active Directory ou Office 365, vous pouvez le faire manuellement en ajoutant l’utilisateur à Cloud App Security et en lui affectant des autorisations. Par exemple, pour affecter à Stéphanie, qui est titulaire du rôle Lecteur Sécurité dans Azure Active Directory, un **accès total** à Cloud App Security, vous pouvez l’ajouter manuellement à Cloud App Security et lui accorder un **accès total**. Son rôle est ainsi remplacé, et elle dispose des autorisations nécessaires dans Cloud App Security.
 
 ## <a name="add-additional-admins"></a>Ajouter des administrateurs supplémentaires
 
@@ -123,7 +124,7 @@ Vous pouvez ajouter des administrateurs à Cloud App Security sans ajouter d’u
 
     ![ajouter des administrateurs](media/add-admin.png)
 
-3. Ensuite, cliquez sur la liste déroulante pour définir le type de rôle de l’administrateur, **administrateur général**, **lecteur de sécurité**, **administrateur de conformité**ou **administrateur d’application/d’instance**. Si vous sélectionnez **administrateur d’application/d’instance**, sélectionnez l’application et l’instance de pour l’administrateur pour lesquelles des autorisations doivent être définies.
+3. Ensuite, cliquez sur la liste déroulante pour définir le type de rôle de l’administrateur, l' **administrateur général**, le **lecteur de sécurité**, l’administrateur de la **conformité**, l’administrateur de l' **application/** de l’instance, l’administrateur du **groupe d’utilisateurs**, l’administrateur général de l' **Cloud Discovery**ou l’administrateur du **rapport Cloud Discovery**. Si vous sélectionnez **administrateur d’application/d’instance**, sélectionnez l’application et l’instance de pour l’administrateur pour lesquelles des autorisations doivent être définies.
 
     >[!NOTE]
     > Tout administrateur dont l’accès est limité et qui tente d’accéder à une page restreinte ou d’effectuer une action restreinte reçoit une erreur indiquant qu’il ne dispose pas des autorisations nécessaires pour accéder à la page ou effectuer l’action.
@@ -153,4 +154,4 @@ De plus, pour autoriser les fournisseurs MSSP à offrir des services sur plusieu
 ## <a name="next-steps"></a>Étapes suivantes  
 
 > [!div class="nextstepaction"]
-> [Configuration de Cloud Discovery](set-up-cloud-discovery.md)
+> [Configurer Cloud Discovery](set-up-cloud-discovery.md)
