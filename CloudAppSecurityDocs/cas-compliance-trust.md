@@ -9,12 +9,12 @@ ms.date: 11/01/2019
 ms.collection: M365-security-compliance
 ms.custom: seodec18
 ms.suite: ems
-ms.openlocfilehash: 6aa884bf83e71964173b69d9ca11a5a86e3cef9f
-ms.sourcegitcommit: 4450119e1c7e2c54357dca955621327f9c343422
+ms.openlocfilehash: 842f29242a2b15cc6bf41b72f5b894c06400634b
+ms.sourcegitcommit: 684feff0782ed30f23f3d7fd9f3e063368f46b47
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2020
-ms.locfileid: "88027038"
+ms.lasthandoff: 08/16/2020
+ms.locfileid: "88256784"
 ---
 # <a name="microsoft-cloud-app-security-data-security-and-privacy"></a>Sécurité et confidentialité des données Microsoft Cloud App Security
 
@@ -41,7 +41,6 @@ Microsoft Cloud App Security est conforme à de nombreuses normes de conformité
 |![logo csa](media/csastar-attest.png)|CSA STAR Attestation|Azure et Intune ont obtenu la certification CSA (Cloud Security Alliance) STAR basée sur un audit indépendant.|
 |![logo csa](media/csastar.png)|CSA STAR Certification|Azure, Intune et Power BI ont obtenu la certification CSA (Cloud Security Alliance) STAR au niveau « Gold ».|
 |![logo clauses type UE](media/eu-model-icon.png)|[Clauses contractuelles types de l'UE](https://www.microsoft.com/trustcenter/compliance/eu-model-clauses)|Microsoft offre des clauses contractuelles standard de l'Union européenne qui fournissent des garanties concernant les transferts de données personnelles.|
-|![logo privacy shield](media/privacy_shield.png)|EU-U.S. Privacy Shield|Microsoft est conforme à cette infrastructure pour la protection des données personnelles transférées à partir de l'UE vers les États-Unis.|
 |![logo HIPAA](media/hipaa-logo.png)|[HIPAA/HITECH](https://www\.microsoft\.com/trustcenter/compliance/hipaa)|Microsoft propose des accords de partenariat en matière de HIPAA (Health Insurance Portability & Accountability Act).|
 |![logo iso 9001](media/iso-9001.png)|ISO 9001|Microsoft est certifié pour son implémentation en matière des normes de gestion de la qualité.|
 |![logo iso 27001](media/iso-27001.png)|[ISO/IEC 27001](https://www\.microsoft\.com/trustcenter/compliance/iso-iec-27001)|Microsoft est certifié pour son implémentation en matière des normes de gestion de la sécurité des informations.|

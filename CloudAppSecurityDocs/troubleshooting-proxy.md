@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 6d2996fb77912b04d5a6d4aefe7edc8c77f27a21
-ms.sourcegitcommit: 84eafb4926bf0d4db27bed7df55dc83ca48f9192
+ms.openlocfilehash: f9d29046b0a63b89926d3ba95bab75aba5964cad
+ms.sourcegitcommit: 75cdc376a0aea79dc7f339af52a90f0ec6dfc526
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87377845"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88514352"
 ---
 # <a name="troubleshooting-access-and-session-controls"></a>Résolution des problèmes de contrôles d’accès et de session
 
@@ -173,7 +173,7 @@ Le mécanisme d’identification des appareils peut exiger une authentification 
     - installé dans le magasin de l’utilisateur, et non dans le magasin de l’appareil, de l’ordinateur que vous utilisez pour le test
 1. Redémarrez votre session de navigateur
 1. Lors de la connexion à l’application protégée
-    - Vérifiez que vous êtes redirigé vers l’URL`<https://*.managed.access-control.cas.ms/aad_login>`
+    - Vérifiez que vous êtes redirigé vers l’URL `<https://*.managed.access-control.cas.ms/aad_login>`
     - Si vous utilisez iOS, vérifiez que vous utilisez le navigateur Safari
     - Si vous utilisez Firefox, vous devez également ajouter le certificat au magasin de certificats de Firefox. Tous les autres navigateurs utilisent le même magasin de certificats par défaut. Découvrez [comment ajouter un certificat au magasin de certificats Firefox](http://www.jscape.com/blog/firefox-client-certificate).
 1. Vérifiez que le certificat client est demandé dans votre navigateur.
@@ -291,7 +291,7 @@ Après avoir ajouté une application, vous pouvez voir l’option de **contrôle
 1. Dans Cloud App Security, dans la barre de menus, cliquez sur paramètres roue dentée, puis sélectionnez **paramètres**.
 1. Sous **contrôle d’application par accès conditionnel**, sélectionnez **intégration/maintenance**de l’application.
 1. Entrez le nom d’utilisateur principal ou l’adresse de messagerie des utilisateurs qui intégreront l’application, puis cliquez sur **Enregistrer**.
-1. Accédez à l’application que vous déployez. La page que vous voyez varie selon que l’application est reconnue ou non. Effectuez l’une des opérations suivantes :
+1. Accédez à l’application que vous déployez. La page que vous voyez varie selon que l’application est reconnue ou non. Effectuez l’une des actions suivantes :
 
     | État de l’application | Description | Étapes |
     | --- | --- | --- |
@@ -444,7 +444,7 @@ Si un utilisateur final reçoit une défaillance générale après s’être con
 1. Dans la liste des applications, sur la ligne dans laquelle l’application à laquelle vous n’êtes pas en mesure d’accéder apparaît, choisissez les trois points à la fin de la ligne, puis choisissez **modifier** l’application.
     1. Vérifier que le certificat SAML téléchargé est correct
     1. Vérifier que les URL SSO valides ont été fournies dans la configuration de l’application
-    1. Vérifiez que les attributs et les valeurs de l’application personnalisée sont reflétés dans la capture d’écran des paramètres du fournisseur d’identité ![ indiquant rassembler les fournisseurs d’identité SAML information page](media/proxy-deploy-add-idp-ext-conf.png)
+    1. Vérifiez que les attributs et les valeurs de l’application personnalisée sont reflétés dans la capture d’écran des paramètres du fournisseur d’identité  ![ indiquant rassembler les fournisseurs d’identité SAML information page](media/proxy-deploy-add-idp-ext-conf.png)
 1. Si vous ne pouvez toujours pas accéder à l’application, ouvrez un [ticket de support](support-and-ts.md).
 
 ### <a name="something-went-wrong-page-appears"></a>Une page incorrecte s’affiche
@@ -508,7 +508,7 @@ En tant qu’utilisateur final, il peut être nécessaire de télécharger des d
 
 Tous les proxies qui suffixent des URL sont susceptibles de perdre du contexte. un problème où la navigation vers un lien perd le chemin d’accès complet du lien et se trouve généralement sur la page d’origine de l’application. Cloud App Security est positionnée de manière unique pour répondre à cette limitation et résoudre les pertes de contexte en partenariat avec les fournisseurs Microsoft et non-Microsoft.
 
-Les applications de notre page applications proposées marquées comme (préversion **)** peuvent être sujettes à une perte de contexte. Pour les applications non proposées qui rencontrent une perte de contexte, envoyez un ticket de support. Nous travaillons en collaboration avec chaque fournisseur d’applications individuellement pour résoudre ces problèmes fondamentaux.
+Les applications de notre page applications proposées marquées comme (préversion **)** peuvent être sujettes à une perte de contexte. De même, la perte de contexte peut être due à des stratégies globales qui bloquent les cookies tiers ou le suivi inter-site. Vous pouvez corriger le problème en désactivant ces options. Pour les applications non proposées qui rencontrent une perte de contexte, envoyez un ticket de support. Nous travaillons en collaboration avec chaque fournisseur d’applications individuellement pour résoudre ces problèmes fondamentaux.
 
 En guise d’atténuation temporaire, vous pouvez contourner les problèmes de perte de contexte, comme suit :
 
