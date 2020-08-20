@@ -10,12 +10,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 22f19d6d1b03cec31f36f37a0b1bd112927af781
-ms.sourcegitcommit: 3172d6bd5e9d7a08f5cd2aa2e36980ef21bf0235
+ms.openlocfilehash: 998fe96459147f621e407130fb0f726e26a5f1f1
+ms.sourcegitcommit: 6e47d0348283d105614d81db4e7737fc837ed20b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84563880"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88657790"
 ---
 # <a name="create-ip-address-range---data-enrichment-api"></a>Créer une plage d’adresses IP-API d’enrichissement des données
 
@@ -46,8 +46,8 @@ Les catégories suivantes sont actuellement prises en charge :
 | Administratif | 2 |
 | Déconseillé | 3 |
 | VPN | 4 |
-| Fournisseur de Cloud | 5 |
-| Autres | 6 |
+| Fournisseur de cloud | 5 |
+| Autre | 6 |
 
 ## <a name="example"></a>Exemple
 
@@ -56,7 +56,7 @@ Les catégories suivantes sont actuellement prises en charge :
 Voici un exemple de la requête.
 
 ```rest
-curl -XPOST -H "Authorization:<your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/subnet/create_rule/" -d '{
+curl -XPOST -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/subnet/create_rule/" -d '{
   "name":"range name",
   "category":5,
   "organization":"Microsoft",

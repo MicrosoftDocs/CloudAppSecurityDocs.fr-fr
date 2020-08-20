@@ -10,12 +10,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: df70a9408b88692b9faf789a00b5f307c0af24ee
-ms.sourcegitcommit: 3172d6bd5e9d7a08f5cd2aa2e36980ef21bf0235
+ms.openlocfilehash: aa5b3d4488a8e62f965900593169e899f90829b2
+ms.sourcegitcommit: 6e47d0348283d105614d81db4e7737fc837ed20b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84563897"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88657648"
 ---
 # <a name="cloud-app-security-rest-api"></a>API REST Cloud App Security
 
@@ -61,7 +61,7 @@ Pour plus d’informations sur les jetons d’API, consultez [gestion des jetons
 ### <a name="example"></a>Exemple
 
 ```rest
-curl -XGET -H "Authorization:<your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/example-endpoint"
+curl -XGET -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/example-endpoint"
 ```
 
 ## <a name="what-actions-are-supported"></a>Quelles sont les actions prises en charge ?
@@ -70,12 +70,12 @@ Le tableau suivant décrit les actions prises en charge :
 
 |Ressource|Verbes HTTP|Itinéraires URI|
 |---|---|---|
-|découverte,|Obtient, publie ou PUT|/api/v1/discovery/|
+|Découverte|Obtient, publie ou PUT|/api/v1/discovery/|
 |Enrichissement des données|POST|/api/subnet/|
 |Activités|GET ou POST|/api/v1/activities/|
 |Alertes|GET ou POST|/api/v1/alerts/|
 |Entités|GET ou POST|/api/v1/entities/|
-|Fichiers|GET ou POST|/api/v1/files/|
+|Files|GET ou POST|/api/v1/files/|
 
 Où la **ressource** représente un groupe d’entités associées.
 
@@ -118,7 +118,7 @@ La plupart des filtres prennent en charge plusieurs valeurs pour vous fournir de
 ### <a name="example"></a>Exemple
 
 ```rest
-curl -XGET -H "Authorization:<your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/example-endpoint" -d '{
+curl -XGET -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/example-endpoint" -d '{
   "filters": {
     "some.field": {
       "eq": ["value1", "value2"],

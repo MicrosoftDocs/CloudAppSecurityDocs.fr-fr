@@ -10,12 +10,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: dec1065d4e2559a6ae080e90f6634528ed2132b7
-ms.sourcegitcommit: 286f8d5d940d1bb9a09daa3070ac4fc3768208f8
+ms.openlocfilehash: f6cea4b9697489aa979de029ab5d12e897a8f94b
+ms.sourcegitcommit: 6e47d0348283d105614d81db4e7737fc837ed20b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84505258"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88657637"
 ---
 # <a name="list---entities-api"></a>API List-Entities
 
@@ -41,7 +41,7 @@ POST /api/v1/entities/
 | Paramètre | Description |
 | --- | --- |
 | filtres | Filtrer les objets avec tous les filtres de recherche pour la demande, consultez [filtres d’entité](api-entities.md#filters) pour plus d’informations |
-| sortDirection | Sens du tri. Les valeurs possibles sont : `asc` et`desc` |
+| sortDirection | Sens du tri. Les valeurs possibles sont : `asc` et `desc` |
 | sortField | Champs utilisés pour trier les entités. Les valeurs possibles sont les suivantes :<br /><br />**Date**: date de création de l’entité<br /><br />**gravité**: gravité de l’entité |
 | skip | Ignore le nombre spécifié d’enregistrements |
 | limit | Nombre maximal d’enregistrements retournés par la requête |
@@ -53,7 +53,7 @@ POST /api/v1/entities/
 Voici un exemple de la requête.
 
 ```rest
-curl -XPOST -H "Authorization:<your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/entities/" -d '{
+curl -XPOST -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/entities/" -d '{
   "filters": {
     // some filters
   },
