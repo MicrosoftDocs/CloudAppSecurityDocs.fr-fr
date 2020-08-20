@@ -10,12 +10,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 998fe96459147f621e407130fb0f726e26a5f1f1
-ms.sourcegitcommit: 6e47d0348283d105614d81db4e7737fc837ed20b
+ms.openlocfilehash: 8739566fb2bd9413651c9f1e14257e62e6f4589e
+ms.sourcegitcommit: c114a9e04589e1a3e0b5350862b3e6daf18e3d30
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 08/20/2020
-ms.locfileid: "88657790"
+ms.locfileid: "88658862"
 ---
 # <a name="create-ip-address-range---data-enrichment-api"></a>Créer une plage d’adresses IP-API d’enrichissement des données
 
@@ -26,7 +26,7 @@ Exécutez la demande de publication pour ajouter une nouvelle plage d’adresses
 ## <a name="http-request"></a>Demande HTTP
 
 ```rest
-POST /api/subnet/
+POST /api/v1/subnet/
 ```
 
 ## <a name="request-body-parameters"></a>Paramètres du corps de la demande
@@ -34,7 +34,7 @@ POST /api/subnet/
 | Paramètre | Description |
 | --- | --- |
 | catégorie | ID de la catégorie de plage |
-| subnetMasks | Tableau de masques sous forme de chaînes (IPv4/IPv6) |
+| Sous-réseaux | Tableau de masques sous forme de chaînes (IPv4/IPv6) |
 | Organisation (facultatif) | Fournisseur de services Internet inscrit |
 | balises (facultatif) | Tableau de balises (objets dont la propriété « Text » est définie avec le nom de la balise)-New ou Existing |
 
@@ -56,7 +56,7 @@ Les catégories suivantes sont actuellement prises en charge :
 Voici un exemple de la requête.
 
 ```rest
-curl -XPOST -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/subnet/create_rule/" -d '{
+curl -XPOST -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/subnet/create_rule/" -d '{
   "name":"range name",
   "category":5,
   "organization":"Microsoft",
