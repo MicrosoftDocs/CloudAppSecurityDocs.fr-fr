@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 06/28/2020
+ms.date: 08/20/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,20 +14,20 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 586836d517a458639c0b669108c7d359b8d02ba4
-ms.sourcegitcommit: 61e9579ebe2c1ca02c7a56e32781e145f6612879
+ms.openlocfilehash: 445465491a2f5a047cd73bd03bb467ce58e20e6b
+ms.sourcegitcommit: 02b91dd1c51161c9d627d977eb37fa925b0328d0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88261434"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88647801"
 ---
-# <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>Obtenir instantanément une détection des anomalies et une analytique comportementale
+# <a name="get-behavioral-analytics-and-anomaly-detection"></a>Bénéficiez d’une analyse comportementale et d’une détection des anomalies
 
 *S’applique à : Microsoft Cloud App Security*
 
-Les stratégies de détection des anomalies de Microsoft Cloud App Security intègrent une analytique comportementale des utilisateurs et des entités (UEBA) et un apprentissage automatique (ML) pour vous permettre de lancer immédiatement une détection avancée des menaces dans tout votre environnement cloud. Comme ces stratégies sont automatiquement activées, les nouvelles stratégies de détection des anomalies fournissent des résultats immédiats grâce à des détections immédiates, le ciblage de nombreuses anomalies comportementales entre vos utilisateurs et les ordinateurs et appareils connectés à votre réseau.  De plus, les nouvelles stratégies exposent davantage de données à partir du moteur de détection Cloud App Security pour vous aider à accélérer le processus d’investigation et à contenir des menaces continues.
+Les stratégies de détection des anomalies d’Microsoft Cloud App Security fournissent une analyse comportementale des utilisateurs et des entités (UEBA) et des Machine Learning (ML) prêts à l’emploi pour vous permettre d’exécuter la détection avancée des menaces dans votre environnement Cloud. Dans la mesure où elles sont automatiquement activées, les nouvelles stratégies de détection des anomalies démarrent immédiatement le processus de détection et de classement des résultats, ciblant de nombreuses anomalies comportementales au sein de vos utilisateurs, ainsi que les ordinateurs et les appareils connectés à votre réseau. En outre, les stratégies exposent plus de données à partir du moteur de détection Cloud App Security, afin de vous aider à accélérer le processus d’investigation et à contenir des menaces continues.
 
-Les stratégies de détection des anomalies sont automatiquement activées, mais Cloud App Security comporte une période d’apprentissage initiale de sept jours, pendant laquelle les alertes de détection des anomalies ne sont pas toutes déclenchées. Ensuite, chaque session est comparée à l’activité (quand les utilisateurs étaient actifs, les adresses IP, les appareils, etc.) détectée au cours du mois précédent et au score de risque de ces activités.  Ces détections font partie du moteur de détection des anomalies heuristique qui Profile votre environnement et déclenche des alertes en ce qui concerne une ligne de base qui a été appris sur l’activité de votre organisation. Ces détections utilisent également les algorithmes d’apprentissage automatique conçus pour profiler les utilisateurs et le modèle de connexion afin de réduire les faux positifs.
+Les stratégies de détection des anomalies sont automatiquement activées, mais Cloud App Security comporte une période d’apprentissage initiale de sept jours, pendant laquelle les alertes de détection des anomalies ne sont pas toutes déclenchées. Après cela, à mesure que les données sont collectées à partir de vos connecteurs API configurés, chaque session est comparée à l’activité, lorsque les utilisateurs étaient actifs, les adresses IP, les appareils, etc. ont été détectés au cours du mois passé et le score de risque de ces activités. Sachez que la disponibilité des données à partir des connecteurs d’API peut prendre plusieurs heures. Ces détections font partie du moteur de détection des anomalies heuristique qui Profile votre environnement et déclenche des alertes en ce qui concerne une ligne de base qui a été appris sur l’activité de votre organisation. Ces détections utilisent également les algorithmes d’apprentissage automatique conçus pour profiler les utilisateurs et le modèle de connexion afin de réduire les faux positifs.
 
 Ces anomalies sont détectées en analysant l’activité des utilisateurs. Le risque est évalué en examinant plus de 30 indicateurs de risque différents, regroupés en facteurs de risque, comme suit :
 
