@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 8/25/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,14 +14,14 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5f0aa6f32f964d1f0bb5f2ad404bae65e9e95e0c
-ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
+ms.openlocfilehash: 0d4d046b406e0849437d02f1abba87948e488473
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87254735"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88779183"
 ---
-# <a name="scoped-deployment"></a>Déploiement étendu<a name="scoped-deployment"></a> 
+# <a name="scoped-deployment"></a>Déploiement étendu <a name="scoped-deployment"></a> 
 
 *S’applique à : Microsoft Cloud App Security*
 
@@ -85,7 +85,7 @@ Les activités suivantes des utilisateurs font l’objet d’un monitoring :
 
 |Utilisateur|Appartenance au groupe|Activités faisant l’objet d’un monitoring|
 |----|----|----|
-|Adriana|Germany all users<br />Global sales<br />Sales managers|None|
+|Adriana|Germany all users<br />Global sales<br />Sales managers|Aucun|
 |Alain|Global sales|Office 365 et toutes les sous-applications à l’exception de Power BI|
 |Cornel|Global sales<br />Sales managers|Office 365 et toutes les sous-applications|
 |Raymond|Sales managers|Power BI uniquement|
@@ -97,6 +97,6 @@ Les activités suivantes des utilisateurs font l’objet d’un monitoring :
 ## <a name="next-steps"></a>Étapes suivantes
 
 > [!div class="nextstepaction"]
-> [Configuration de Cloud Discovery](set-up-cloud-discovery.md)
+> [Configurer Cloud Discovery](set-up-cloud-discovery.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]  

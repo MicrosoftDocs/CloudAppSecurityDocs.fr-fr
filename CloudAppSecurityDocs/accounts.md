@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 05/20/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b9cde676dad0b86633124d1f485c1f2276cbb208
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: ed0d53a3a71e03dab31ad179e293ae1b7dbc43b6
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624434"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88779489"
 ---
 # <a name="accounts"></a>Comptes
 
@@ -27,7 +27,7 @@ ms.locfileid: "85624434"
 
 Microsoft Cloud App Security vous donne une visibilité sur les comptes de vos applications connectées. Une fois connecté à une application à l’aide du connecteur d’applications, Cloud App Security lit les informations sur le compte qui sont associées aux applications connectées. La page Comptes vous permet d’examiner ces comptes, les autorisations, les groupes dont ils sont membres, leurs alias et les applications qu’ils utilisent. De plus, quand Cloud App Security détecte un nouveau compte qui n’a pas déjà été vu dans l’une des applications connectées (par exemple dans les activités ou le partage de fichiers), le compte est ajouté à la liste des comptes de cette application. Cela vous permet d’avoir une visibilité sur l’activité des utilisateurs externes interagissant avec vos applications cloud.
 
-Les administrateurs peuvent rechercher les métadonnées ou l’activité d’un utilisateur spécifique. La page **utilisateurs et comptes** fournit des détails complets sur les entités qui sont extraites des applications Cloud connectées. Elle fournit également l’historique d’activité de l’utilisateur et les alertes de sécurité liées à l’utilisateur.
+Les administrateurs peuvent rechercher les métadonnées d’un utilisateur spécifique ou l’activité de l’utilisateur. La page **utilisateurs et comptes** fournit des détails complets sur les entités qui sont extraites des applications Cloud connectées. Il fournit également l’historique des activités de l’utilisateur et les alertes de sécurité liées à l’utilisateur.
 
 [!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 

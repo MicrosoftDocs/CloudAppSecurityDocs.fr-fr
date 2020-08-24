@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 06/24/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 120c34fda9080a921b7a2a4cbcdb0563dd5b0777
-ms.sourcegitcommit: 33e4a3eae5852fb24531aee9e880a4c0c0520820
+ms.openlocfilehash: 18e4aa471a5223234b961e62742f69b2f93d03ae
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85311879"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88780322"
 ---
 # <a name="microsoft-data-classification-services-integration"></a>Intégration du service de classification des données Microsoft
 
@@ -40,7 +40,7 @@ Vous avez la possibilité de définir la **méthode d’inspection** pour qu’e
 2. Indiquez si la stratégie doit s’appliquer quand **un** ou **tous** les critères sont remplis.
 3. **Choisissez un type d’inspection** en sélectionnant les **types d’informations sensibles**.
 
-    ![définition du service de classification des données](media/dcs-sensitive-information-type.png)
+    ![Choisir le type d’inspection du service de classification des données](media/dcs-sensitive-information-type.png)
 
 4. Vous pouvez utiliser les [types d’informations sensibles par défaut ](https://support.office.com/article/what-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b) pour définir ce qui se passe pour les fichiers protégés par Microsoft Cloud App Security. Vous pouvez également réutiliser vos [types d’informations sensibles personnalisés d’Office 365](https://support.office.com/article/create-a-custom-sensitive-information-type-82c382a5-b6db-44fd-995d-b333b3c7fc30).
     > [!NOTE]

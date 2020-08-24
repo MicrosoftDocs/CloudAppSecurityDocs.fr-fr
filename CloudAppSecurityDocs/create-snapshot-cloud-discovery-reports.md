@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 04/07/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a5a2184cb908af4bff010fced5bd28d8b1d2504d
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 4bfa89a9794df5cbce0c361e1b2a7d8071cd303c
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720017"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88780526"
 ---
 # <a name="create-snapshot-cloud-discovery-reports"></a>Créer des rapports d’instantanés Cloud Discovery
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Il est important de charger un journal manuellement et de laisser Microsoft Cloud App Security l’analyser avant d’essayer d’utiliser le collecteur de journaux automatique. Pour plus d’informations sur le fonctionnement du collecteur de journaux et le format de journal attendu, consultez [Utilisation de journaux de trafic pour Cloud Discovery](#log-format).
 
@@ -35,13 +35,13 @@ Pour créer un rapport d’instantané :
 
 2. Dans le portail Cloud App Security, cliquez sur **Découvrir**, puis sur **Créer un rapport d’instantané**.
 
-    ![Créer un rapport de capture instantanée](media/create-new-snapshot-report.png)
+    ![Créer un rapport d’instantané](media/create-new-snapshot-report.png)
 
-3. Renseignez **Nom du rapport** et **Description**
+3. Entrer un **nom de rapport** et une **Description**
 
     ![Nouveau rapport d’instantané](media/new-snapshot-report.png)
 
-4. Sélectionnez la **source de données** à partir de laquelle vous voulez charger les fichiers journaux.
+4. Sélectionnez la **source de données** à partir de laquelle vous souhaitez charger les fichiers journaux.
 
 5. Examinez le format de votre journal pour vérifier qu’il est mis en forme correctement en vous basant sur l’exemple de journal que vous pouvez télécharger. Cliquez sur **Afficher et vérifier**, puis sur **Télécharger l’exemple de journal**. Comparez votre journal à l’exemple fourni pour vérifier qu’il est compatible.
 
@@ -51,9 +51,9 @@ Pour créer un rapport d’instantané :
     > L’exemple de format FTP est pris en charge dans les instantanés et les téléchargements automatisés alors que syslog est pris en charge dans le téléchargement automatisé uniquement.  
     Le téléchargement d’un exemple de journal télécharge un exemple de journal FTP.
 
-6. **Choisissez les journaux de trafic** à charger. Vous pouvez charger jusqu’à 20 fichiers à la fois. Les fichiers compressés et zippés sont également pris en charge.
+6. **Choisissez les journaux d’activité de trafic** que vous souhaitez charger. Vous pouvez charger jusqu’à 20 fichiers à la fois. Les fichiers compressés et zippés sont également pris en charge.
 
-7. Cliquez sur **Create (Créer)** .
+7. Cliquez sur **Créer**.
 
 8. Une fois le chargement terminé, un message d’état s’affiche dans le coin supérieur droit de votre écran pour vous informer que le journal a correctement été chargé.
 
@@ -70,18 +70,18 @@ Pour créer un rapport d’instantané :
 
     ![gestion des rapports d’instantanés](media/snapshot-report-managment.png)
 
-## Utilisation de journaux de trafic pour Cloud Discovery <a name="log-format"></a>
+## <a name="using-traffic-logs-for-cloud-discovery"></a>Utilisation des journaux de trafic pour Cloud Discovery <a name="log-format"></a>
 
 Cloud Discovery utilise les données de vos journaux de trafic. Plus le journal est détaillé, meilleure est la visibilité. Cloud Discovery nécessite des données de trafic web avec les attributs suivants :
 
 - Date de la transaction
-- Adresse IP source
+- IP Source
 - Utilisateur source (vivement recommandé)
-- Adresse IP de destination
+- Adresse IP de destination
 - URL de destination **recommandée** (les URL assurent une meilleure précision pour la détection d’applications cloud que les adresses IP)
 - Quantité totale de données (les informations de données sont extrêmement précieuses)
 - Quantité de données chargées ou téléchargées (fournit des informations sur les modèles d’utilisation des applications cloud)
-- Action effectuée (autorisation/blocage)
+- Action effectuée (autorisée/bloquée)
 
 Cloud Discovery ne peut pas afficher ni analyser des attributs qui ne se trouvent pas dans vos journaux.
 Par exemple, le format de journal standard **Pare-feu Cisco ASA** ne contient pas le **nombre d’octets chargés par transaction**, le **nom d’utilisateur** et **l’URL cible** (il contient seulement l’adresse IP cible).
@@ -92,7 +92,7 @@ Pour générer correctement un rapport Cloud Discovery, vos journaux de trafic d
 1. La [source de données est prise en charge](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
 2. Le format de journal correspond au format standard attendu (le format est vérifié lors du chargement par l’outil Log).
 3. Les événements ne datent pas de plus de 90 jours.
-4. Le fichier journal est valide et comprend des informations sur le trafic sortant.
+4. Le fichier journal est valide et inclut des informations sur le trafic sortant.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

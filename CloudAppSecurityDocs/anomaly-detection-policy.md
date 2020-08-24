@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 08/20/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 445465491a2f5a047cd73bd03bb467ce58e20e6b
-ms.sourcegitcommit: 02b91dd1c51161c9d627d977eb37fa925b0328d0
+ms.openlocfilehash: 4bc31fda0e2e647e386d2ce1d5b55e8d2fff6174
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88647801"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88779727"
 ---
 # <a name="get-behavioral-analytics-and-anomaly-detection"></a>Bénéficiez d’une analyse comportementale et d’une détection des anomalies
 
@@ -83,7 +83,7 @@ Les stratégies de détection d’anomalie suivantes sont disponibles :
     > * G Suite
     > * Office 365 (nécessite une licence valide pour Office 365-protection avancée contre les menaces P1)
 
-### <a name="activity-from-anonymous-ip-addresses"></a>Activité depuis des adresses IP anonymes
+### <a name="activity-from-anonymous-ip-addresses"></a>Activité depuis des adresses IP anonymes
 
 * Cette détection identifie que les utilisateurs étaient actifs depuis une adresse IP qui a été identifiée comme une adresse IP de proxy anonyme. Ces proxys sont utilisés par les personnes qui souhaitent masquer l’adresse IP de leur appareil et peuvent être utilisés à des fins malveillantes. Cette détection utilise un algorithme d’apprentissage automatique qui réduit les « faux positifs », comme les adresses IP mal balisées qui sont couramment utilisées par les utilisateurs de l’organisation.
 
@@ -204,11 +204,11 @@ Vous pouvez trier rapidement les diverses alertes déclenchées par les nouvelle
 
 1. Dans le **journal d’activité**, vous pouvez ouvrir une activité afin d’afficher son contenu. Cliquez sur **utilisateur** pour afficher l’onglet Insights utilisateur. Cet onglet contient des informations telles que le nombre d’alertes, les activités et l’emplacement à partir duquel ils sont connectés, ce qui est important dans le cas d’une investigation.
 
-    ![détection d’anomalie alert1 ](media/anomaly-alert-user1.png) ![ détection d’anomalies alert1](media/anomaly-alert-user2.png)
+    ![détection d’anomalie alert1 ](media/anomaly-alert-user1.png) ![ détection d’anomalies alert2](media/anomaly-alert-user2.png)
 
 1. Cela vous permet d’identifier les activités suspectes que l’utilisateur a effectuées et d’obtenir ainsi plus d’indices démontrant que le compte a été compromis. Par exemple, une alerte sur plusieurs échecs de connexion peut en effet être suspecte et indiquer une éventuelle attaque par force brute, mais elle peut également signaler un problème de configuration d’application, transformant cette alerte en un « faux positif » bénin. Mais si vous voyez une alerte d’échecs de connexion pour d’autres activités suspectes, la probabilité que le compte est compromis augmente. Dans l’exemple ci-dessous, vous pouvez voir que l’alerte **Plusieurs tentatives de connexion infructueuses** a été suivie par les alertes **Activité à partir d’une adresse IP TOR** et **Activité de type Voyage impossible**, deux indicateurs flagrants d’une compromission (IOCs). Si cela n’était pas suffisamment suspect, vous pouvez voir que le même utilisateur a effectué une **activité de téléchargement de masse**, qui est souvent un indicateur de l’attaquant effectuant l’exfiltration des données.
 
-    ![alerte 1 de la détection d’anomalie](media/anomaly-alert-user3.png)
+    ![détection des anomalies alert3](media/anomaly-alert-user3.png)
 
 1. Une fois que les fichiers infectés sont détectés, vous pouvez voir une liste des **fichiers infectés**. Cliquez sur le nom du fichier malveillant dans le tiroir de fichier pour ouvrir un rapport sur les programmes malveillants qui vous fournit des informations sur le type de programme malveillant dont le fichier est infecté.
 

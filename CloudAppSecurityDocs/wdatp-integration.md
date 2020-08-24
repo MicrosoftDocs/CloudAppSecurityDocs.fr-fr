@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 06/29/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 3c0bb1f5a3ff0241067d23bd455865d40c29c652
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 0ea29fe115c4235f926ae2d64e3a377bc02949f0
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624814"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88780050"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-integration-with-microsoft-cloud-app-security"></a>Intégration de Microsoft Defender-protection avancée contre les menaces avec Microsoft Cloud App Security
 
@@ -82,7 +82,7 @@ Une fois que vous avez intégré Microsoft Defender ATP à Cloud App Security, v
 4. Cliquez sur l’onglet **Ordinateurs**.
 5. Vous pouvez explorer chaque machine répertoriée et utiliser les onglets pour afficher les données de la recherche. Recherchez des corrélations entre les machines, les utilisateurs, les adresses IP et les applications qui ont été impliqués dans des incidents :
 
-    - **Vue d’ensemble**
+    - **Vue d'ensemble**
         - **Niveau de risque**de l’ordinateur : indique le risque que le profil de l’ordinateur soit relatif à d’autres ordinateurs de votre organisation, comme indiqué par la gravité (haute, moyenne, faible, informations). Cloud App Security utilise les profils d’ordinateur de Microsoft Defender ATP pour chaque ordinateur en fonction de l’analytique avancée. L’activité qui est anormale pour la ligne de base d’une machine est évaluée et détermine le niveau de risque de la machine. Utilisez le niveau de risque de l’ordinateur pour déterminer les machines à examiner en premier.
         - **Transactions**: informations sur le nombre de transactions qui ont eu lieu sur l’ordinateur pendant la période sélectionnée.
         - **Trafic total**: informations sur la quantité totale de trafic (en Mo) sur la période sélectionnée.

@@ -6,19 +6,19 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 11/19/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ce6525373c8cb9be6a1e70085f5f3bda3dbd11fa
-ms.sourcegitcommit: 1f8f19312ce70e62b6aa0b94db06af07f881fefa
+ms.openlocfilehash: ae59702910ca7c36a03f3a05b73b9747906fce99
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84811267"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88780254"
 ---
 # <a name="docker-on-windows-on-premises"></a>Docker sur Windows en local
 
@@ -73,14 +73,14 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
 
     1. Dans le portail Cloud App Security, cliquez sur l’icône des paramètres, puis sur **Collecteurs de journaux**.
 
-    ![icône des paramètres](media/settings-icon.png)
+    ![Icône des paramètres](media/settings-icon.png)
 
 1. Pour chaque pare-feu ou proxy à partir duquel vous souhaitez charger des journaux, créez une source de données correspondante.
 
     1. Cliquez sur **Ajouter une source de données**.  
     ![Ajouter une source de données](media/add-data-source.png)
     1. **Nommez** votre proxy ou pare-feu.  
-    ![ubuntu1](media/ubuntu1.png)
+    ![Ajouter un nom pour la source de données](media/ubuntu1.png)
     1. Sélectionnez l’appareil dans la liste **Source**. Si vous sélectionnez **Format de journal personnalisé** pour utiliser une appliance réseau qui n’est pas listée, consultez [Utilisation de l’analyseur de journal personnalisé](custom-log-parser.md) pour obtenir des instructions de configuration.
     1. Comparez votre journal à l’exemple de format de journal attendu. Si le format de votre fichier journal ne correspond pas à cet exemple, vous devez ajouter votre source de données en sélectionnant **Autre**.
     1. Définissez le **Type de récepteur** sur **FTP**, **FTPS**, **Syslog – UDP** ou **Syslog – TCP** ou **Syslog – TLS**.
@@ -99,7 +99,7 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
     1. Donnez un **nom**au collecteur de journaux.
     1. Entrez l’**adresse IP de l’hôte** de la machine sur laquelle sera déployé le Docker. L’adresse IP de l’hôte peut être remplacée par le nom de l’ordinateur s’il existe un serveur DNS (ou un équivalent) qui résout le nom d’hôte.
     1. Sélectionnez toutes les **sources de données** que vous souhaitez connecter au collecteur, puis cliquez sur **mettre à jour** pour enregistrer la configuration.
-    ![ubuntu2](media/ubuntu2.png)
+    ![Sélectionner la source de données à connecter](media/ubuntu2.png)
 
 1. Des informations supplémentaires sur le déploiement s’affichent. **Copiez** la commande d’exécution à partir de la boîte de dialogue. Vous pouvez utiliser l’icône copier dans le presse-papiers, ![ copier dans le presse-papiers ](media/copy-icon.png) . Vous en aurez besoin ultérieurement.
 
@@ -119,15 +119,15 @@ La procédure suivante décrit le déploiement dans Windows. Les étapes de dép
 
 1. Ouvrez un terminal PowerShell en tant qu’administrateur sur votre ordinateur Windows.
 
-1. Exécutez la commande suivante pour télécharger le fichier de script PowerShell du programme d’installation de Windows Dockr :`Invoke-WebRequest https://adaprodconsole.blob.core.windows.net/public-files/LogCollectorInstaller.ps1 -OutFile (Join-Path $Env:Temp LogCollectorInstaller.ps1)`
+1. Exécutez la commande suivante pour télécharger le fichier de script PowerShell du programme d’installation de Windows Dockr : `Invoke-WebRequest https://adaprodconsole.blob.core.windows.net/public-files/LogCollectorInstaller.ps1 -OutFile (Join-Path $Env:Temp LogCollectorInstaller.ps1)`
 
     Pour vérifier que le programme d’installation est signé par Microsoft, consultez [valider la signature du programme d’installation](#validate-signature)
 
-1. Pour activer l’exécution du script PowerShell, exécutez`Set-ExecutionPolicy RemoteSigned`
+1. Pour activer l’exécution du script PowerShell, exécutez `Set-ExecutionPolicy RemoteSigned`
 
 1. Exécuter : `& (Join-Path $Env:Temp LogCollectorInstaller.ps1)` installe le client docker sur votre ordinateur. L’installation du conteneur de collecteur de journaux redémarre deux fois l’ordinateur et vous oblige à vous reconnecter. **Assurez-vous que le client Dockr est configuré pour utiliser des conteneurs Linux.**
 
-1. Après chaque redémarrage, ouvrez un terminal PowerShell en tant qu’administrateur sur votre ordinateur, puis réexécutez :`& (Join-Path $Env:Temp LogCollectorInstaller.ps1)`
+1. Après chaque redémarrage, ouvrez un terminal PowerShell en tant qu’administrateur sur votre ordinateur, puis réexécutez : `& (Join-Path $Env:Temp LogCollectorInstaller.ps1)`
 
 1. Avant la fin de l’installation, vous devez coller la commande d’exécution copiée précédemment.
 
@@ -143,7 +143,7 @@ La procédure suivante décrit le déploiement dans Windows. Les étapes de dép
 
 Le message suivant doit s’afficher : **terminé !**
 
-![ubuntu8](media/ubuntu8.png)
+![Vérifier que le collecteur s’exécute correctement](media/ubuntu8.png)
 
 ### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>Étape 3 : Configuration locale de vos appliances réseau
 
@@ -157,13 +157,13 @@ BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
 
 Consultez l’état du collecteur dans le tableau **Collecteur de journaux** et vérifiez que l’état est **Connecté**. Si l’état est **Créé**, il est possible que la connexion du collecteur de journaux et l’analyse n’aient pas été effectuées.
 
-![ubuntu9](media/ubuntu9.png)
+![Vérifier que le collecteur a été correctement déployé](media/ubuntu9.png)
 
 Vous pouvez aussi accéder au **journal de gouvernance** et vérifier que les journaux sont régulièrement chargés sur le portail.
 
 Si vous rencontrez des problèmes lors du déploiement, consultez [Dépannage de Cloud Discovery](troubleshooting-cloud-discovery.md).
 
-### <a name="optional---create-custom-continuous-reports"></a>Facultatif : créer des rapports continus personnalisés<a name="continuous-reports"></a>
+### <a name="optional---create-custom-continuous-reports"></a>Facultatif : créer des rapports continus personnalisés <a name="continuous-reports"></a>
 
 Vérifiez que les journaux sont chargés sur Cloud App Security et que les rapports sont générés. Après vérification, créez des rapports personnalisés. Vous pouvez créer des rapports de découverte personnalisés basés sur les groupes d’utilisateurs Azure Active Directory. Par exemple, pour voir l’utilisation cloud de votre service marketing, importez le groupe marketing à l’aide de la fonctionnalité d’importation des groupes d’utilisateurs. Créez ensuite un rapport personnalisé pour ce groupe. Vous pouvez également personnaliser un rapport en fonction d’une balise d’adresse IP ou de plages d’adresses IP.
 

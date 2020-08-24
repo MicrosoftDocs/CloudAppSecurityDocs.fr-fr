@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 12/14/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5c055cebf7bf63f50fcea997648316f25a7b4429
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 5f418760ec40d8d93dce623acb81f5ebf015dc27
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74721157"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88779931"
 ---
-# <a name="working-with-the-regex-engine"></a>En utilisant l’inspection du contenu
+# <a name="working-with-the-regex-engine"></a>Utilisation du moteur RegEx
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Cet article fournit des instructions d’utilisation du moteur RegEx pour la correspondance au modèle dans les stratégies Cloud App Security.
 
@@ -35,9 +35,9 @@ Les stratégies d’inspection du contenu de Microsoft Cloud App Security utilis
 
 Pour tester des expressions régulières, vous pouvez utiliser les sites web suivants :
 
-- [https://regexpal.com/](https://regexpal.com/) - Veillez à sélectionner **Casse non prise en compte**.
+- [https://regexpal.com/](https://regexpal.com/) -Veillez à sélectionner ne pas respecter la **casse**.
 
-- [https://regex101.com/](https://regex101.com/) - Fournit une analyse détaillée de RegEx.
+- [https://regex101.com/](https://regex101.com/) -Fournit une analyse détaillée de l’expression régulière.
 
 ### <a name="limitations-of-regular-expressions-in-cloud-app-security"></a>Limitations des expressions régulières dans Cloud App Security
 
@@ -57,13 +57,13 @@ Les limitations suivantes sont imposées sur les expressions régulières person
 
     Au lieu de +, utilisez {1,9}
 
-- Références arrière non autorisées : \\<nombre\> ou \k\<nom>
+- Références arrière non autorisées : \\<nombre \> ou \k\<name>
 
 ### <a name="example-expressions"></a>Exemples d’expressions
 
 Le tableau suivant vous présente des exemples d’expressions et si elles correspondraient ou non.
 
-|              Regular expression              |                     Niveau                     |      Correspond à      |
+|              Expression régulière              |                     Données                     |      Correspond à      |
 |---------------------------------------------------------------|---------------------------------------------------------------|------------------------------------|
 |            Colou?r (?:black&#124;blue&#124;white)             |   Noir<br /><br /> Blanc<br /><br /> Rouge   | Oui<br /><br /> Oui<br /><br /> Non |
 |           [a-z0-9]{1,9}@[a-z0-9]{1,9}\\.[a-z]{2,3}            | Some1@abc.com<br /><br /> user@host.org<br /><br /> @bad.com  | Oui<br /><br /> Oui<br /><br /> Non |
@@ -73,7 +73,7 @@ Le tableau suivant vous présente des exemples d’expressions et si elles corre
 ## <a name="check-out-this-video"></a>Regardez cette vidéo !
 
 > [!div class="nextstepaction"]
-> [Utilisation du moteur RegEx](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security-Working-with-the-Regex-Engine)
+> [Utilisation du moteur Regex](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security-Working-with-the-Regex-Engine)
 
 ## <a name="next-steps"></a>Étapes suivantes
 

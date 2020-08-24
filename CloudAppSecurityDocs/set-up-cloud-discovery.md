@@ -4,18 +4,18 @@ description: Cet article décrit la procédure de configuration pour rendre Clou
 author: shsagir
 ms.author: shsagir
 ms.service: cloud-app-security
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 08/09/2020
 ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 87d0aa487e71e308bddccfcf504356423e485584
-ms.sourcegitcommit: 4450119e1c7e2c54357dca955621327f9c343422
+ms.openlocfilehash: 83bb26da4ff034f36053d3152575a29cb8399bc6
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2020
-ms.locfileid: "88026953"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88779268"
 ---
 # <a name="set-up-cloud-discovery"></a>Configurer Cloud Discovery
 
@@ -52,7 +52,7 @@ Le processus de génération d’une évaluation des risques se compose des éta
 >[!NOTE]
 > Les données des rapports continus sont analysées deux fois par jour.
 
-## <a name="supported-firewalls-and-proxies"></a>Pare-feu et proxys pris en charge<a name="supported-firewalls-and-proxies"></a>
+## <a name="supported-firewalls-and-proxies"></a>Pare-feu et proxys pris en charge <a name="supported-firewalls-and-proxies"></a>
 
 - Barracuda - Pare-feu d’application web (W3C)
 - Blue Coat Proxy SG - Journal d’accès (W3C)
@@ -132,7 +132,7 @@ Attributs de données (selon la documentation du fournisseur) :
 | Websense - Journal d’activité Internet (CEF) | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** |
 | Zscaler | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** |
 
-\*Les versions 8,5 et ultérieures du Cloud de sécurité Web Forcepoint ne sont pas prises en charge
+\* Les versions 8,5 et ultérieures du Cloud de sécurité Web Forcepoint ne sont pas prises en charge
 
 ## <a name="next-steps"></a>Étapes suivantes
 

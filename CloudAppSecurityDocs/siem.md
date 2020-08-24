@@ -6,19 +6,19 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 10/28/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9b2b4cfc8c3807f5acd7540390a3b44604e49d84
-ms.sourcegitcommit: 45a23730c2beda00c32b0d6cb8da872dc2bf0e14
+ms.openlocfilehash: 32a4b3542a7abc7d96ae6ca111fbfba7a6a5fbff
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86137969"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88779132"
 ---
 # <a name="generic-siem-integration"></a>Intégration de SIEM générique
 
@@ -111,7 +111,7 @@ L’intégration à votre serveur SIEM s’effectue en trois étapes :
 > * Les paramètres entre crochets [ ] sont facultatifs et doivent être utilisés seulement si nécessaire.
 > * Il est recommandé d’exécuter le fichier JAR lors du démarrage du serveur.
 >   * Windows : exécutez en tant que tâche planifiée et assurez-vous que vous configurez la tâche pour **qu’elle s’exécute si l’utilisateur a ouvert une session ou non** et que vous désactivez la case à cocher **arrêter la tâche si elle s’exécute plus longtemps que** .
->   * Linux : ajoutez la commande exécuter avec un **&** au fichier RC. local. Par exemple : `java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN &`
+>   * Linux : ajoutez la commande exécuter avec un **&** au fichier RC. local. Par exemple : `java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN &`
 
 Où les variables suivantes sont utilisées :
 

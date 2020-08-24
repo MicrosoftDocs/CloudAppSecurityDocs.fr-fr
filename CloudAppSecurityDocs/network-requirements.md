@@ -6,19 +6,19 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 11/01/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0aff022a162dc099b5a6402570a832de1afcb074
-ms.sourcegitcommit: c37923e69f52ee0e755cca16b4ce88cbc5b01c0b
+ms.openlocfilehash: ffc479ee603ddc6e38b7ba0167fff6f20d9decad
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86473503"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88779472"
 ---
 # <a name="network-requirements"></a>Configuration requise pour le réseau
 
@@ -69,7 +69,7 @@ Pour les clients du gouvernement des États-Unis, il est également nécessaire 
 
 En outre, les éléments suivants doivent figurer dans la liste verte, en fonction du centre de données que vous utilisez :
 
-|Centre de données|Adresses IP|Nom DNS|
+|Centre de données|Adresses IP|Nom DNS|
 |----|----|----|
 |US1|13.64.26.88, 13.64.29.32, 13.80.125.22, 13.91.91.243, 40.74.1.235, 40.74.6.204, 51.143.58.207, 52.137.89.147, 52.183.75.62|\*.us.portal.cloudappsecurity.com|
 |US2|13.80.125.22, 20.36.222.59, 20.36.222.60, 40.74.1.235, 40.74.6.204, 51.143.58.207, 52.137.89.147, 52.183.75.62, 52.184.165.82|\*.us2.portal.cloudappsecurity.com|
@@ -98,7 +98,7 @@ Pour les clients commerciaux, pour activer Cloud App Security proxy inverse, ajo
 
 En outre, les éléments suivants doivent figurer dans la liste verte, en fonction du centre de données que vous utilisez :
 
-|Centre de données|Adresses IP|Nom DNS|
+|Centre de données|Adresses IP|Nom DNS|
 |----|----|----|----|----|
 |US1|20.40.134.94, 20.40.161.119, 20.40.161.135, 20.40.163.97, 20.40.163.133, 20.184.63.216, 20.184.63.232, 40.65.169.46, 40.65.169.97, 40.65.169.196, 40.65.169.236, 40.65.170.17, 40.66.59.41, 40.66.60.118, 40.66.60.180, 40.66.60.185, 40.66.60.200, 40.66.60.206, 40.66.60.207, 40.66.60.208, 40.66.62.78, 40.81.62.255, 40.81.63.1, 40.81.63.2, 40.81.63.4, 40.81.63.5, 40.81.63.8, 40.81.120.187, 40.81.121.107, 40.81.121.108, 40.81.121.111, 40.81.121.127, 40.81.122.76, 40.81.123.124, 40.81.127.140, 40.81.227.134, 40.81.227.152, 40.81.227.160, 40.81.227.163, 40.90.220.37, 40.91.114.44, 40.91.114.45, 40.91.114.46, 40.91.114.47, 40.91.114.48, 40.91.114.49, 40.91.126.157, 40.91.127.44, 40.119.215.167, 51.105.163.8, 51.105.163.43, 51.105.164.8, 51.105.165.31, 51.105.165.37, 51.105.165.63, 51.105.165.116, 51.105.166.102, 51.105.166.103, 51.105.166.106, 51.137.136.13, 51.137.136.14, 51.143.111.58, 52.142.112.145, 52.142.112.146, 52.142.116.135, 52.142.116.174, 52.142.116.250, 52.142.117.183, 52.142.121.6, 52.142.121.75, 52.148.115.238, 52.148.116.37, 52.156.197.254, 52.156.198.196|\*. us.cas.ms, \* . us.Access-Control.cas.ms, \* . us.SAML.cas.ms|
 |US2|20.40.132.195, 20.40.161.140, 20.40.161.141, 20.40.163.88, 20.40.163.96, 40.65.170.26, 40.65.170.123, 40.65.170.125, 40.65.170.128, 40.65.170.133, 40.65.170.137, 40.66.56.158, 40.66.60.209, 40.66.60.210, 40.66.60.215, 40.66.60.216, 40.66.60.217, 40.66.60.219, 40.66.62.130, 40.66.63.148, 40.67.251.0, 40.81.58.180, 40.81.58.184, 40.81.58.193, 40.81.59.90, 40.81.59.93, 40.81.63.7, 40.81.121.135, 40.81.121.140, 40.81.122.62, 40.81.124.185, 40.81.127.25, 40.81.127.139, 40.81.127.141, 40.81.127.230, 40.119.207.131, 40.119.207.144, 51.137.137.118, 51.137.137.121, 52.139.245.40, 52.139.245.48, 52.142.127.127, 52.149.59.151, 52.149.60.12, 52.149.61.128, 52.149.61.214, 52.149.63.211, 52.151.237.243, 52.151.238.5, 52.155.166.50, 52.156.88.69, 52.156.88.173, 52.156.89.175, 52.156.89.188, 52.156.90.38, 52.156.197.208, 52.156.204.99, 52.156.205.222, 52.156.205.226, 52.156.206.45, 52.156.206.46, 52.156.206.47, 52.191.237.188, 52.191.238.65, 104.45.170.182, 104.45.170.184, 104.45.170.185, 104.45.170.188, 104.45.170.194, 104.45.170.196, 191.235.117.31, 191.235.119.253, 191.235.120.17, 191.235.121.69, 191.235.121.164, 191.235.122.60, 191.235.122.101, 191.235.122.224, 191.235.123.114, 191.235.123.242|\*. us2.cas.ms, \* . US2.Access-Control.cas.ms, \* . US2.SAML.cas.ms|
@@ -120,7 +120,7 @@ Pour les clients des États-Unis, GCC High Customers, pour activer Cloud App Sec
 
 Pour permettre à Cloud App Security de se connecter à votre serveur SIEM, ajoutez le **port de sortie 443** pour les adresses IP suivantes à la liste verte de votre pare-feu :
 
-|Centre de données|Adresses IP|
+|Centre de données|Adresses IP|
 |----|----|
 |US1|13.64.26.88, 13.64.29.32, 13.80.125.22, 13.91.91.243, 40.74.1.235, 40.74.6.204, 51.143.58.207, 52.137.89.147, 52.183.75.62|
 |US2|13.80.125.22, 20.36.222.59, 20.36.222.60, 40.74.1.235, 40.74.6.204, 51.143.58.207, 52.137.89.147, 52.183.75.62, 52.184.165.82|
@@ -141,7 +141,7 @@ Pour que certaines applications tierces soient accessibles par Cloud App Securit
 
 Pour se connecter à des applications tierces, autorisez Cloud App Security à se connecter à partir de ces adresses IP :
 
-|Centre de données|Adresses IP|
+|Centre de données|Adresses IP|
 |----|----|----|
 |US1|13.64.26.88, 13.64.29.32, 13.64.30.76, 13.64.30.117, 13.64.30.118, 13.64.31.116, 13.64.196.27, 13.64.198.19, 13.64.198.97, 13.64.199.41, 13.68.76.47, 13.86.176.189, 13.86.176.211, 13.91.61.249, 13.91.91.243, 13.91.98.185, 13.93.216.68, 13.93.233.42, 40.118.211.172, 104.42.54.148, 104.209.35.177|
 |US2|13.68.76.47, 20.36.222.59, 20.36.222.60, 40.67.152.91, 40.67.154.160, 40.67.155.146, 40.67.159.55, 40.84.2.83, 40.84.4.93, 40.84.4.119, 52.184.165.82, 52.232.224.227, 52.232.225.84, 104.42.54.148, 104.46.116.211, 104.46.116.211, 104.46.121.72, 104.46.121.72, 104.46.122.189, 104.46.122.189|
@@ -166,7 +166,7 @@ Pour que Cloud App Security puisse envoyer des données via votre stunnel à vot
 
 Pour se connecter à des applications tierces et s’intégrer à des solutions DLP externes, autorisez Cloud App Security à se connecter à partir de ces adresses IP :
 
-|Centre de données|Adresses IP|
+|Centre de données|Adresses IP|
 |----|----|----|
 |US1|13.64.26.88, 13.64.29.32, 13.64.30.76, 13.64.30.117, 13.64.30.118, 13.64.31.116, 13.64.196.27, 13.64.198.19, 13.64.198.97, 13.64.199.41, 13.86.176.189, 13.86.176.211, 13.91.61.249, 13.91.91.243, 13.91.98.185, 13.93.216.68, 13.93.233.42, 40.118.211.172, 104.209.35.177|
 |US2|20.36.222.59, 20.36.222.60, 40.67.152.91, 40.67.154.160, 40.67.155.146, 40.67.159.55, 40.84.2.83, 40.84.4.93, 40.84.4.119, 52.184.165.82, 52.232.224.227, 52.232.225.84, 104.46.116.211, 104.46.116.211, 104.46.121.72, 104.46.121.72, 104.46.122.189, 104.46.122.189|
@@ -199,7 +199,7 @@ Pour activer les fonctionnalités Cloud Discovery à l’aide d’un collecteur 
 - Autorisez le collecteur de journaux à lancer le trafic sortant sur le portail (par exemple, contoso.cloudappsecurity.com) sur le port 443.
 - Autorisez le collecteur de journaux à initier le trafic sortant vers le stockage Blob Azure sur le port 443 :
 
-  | Centre de données |                        URL                                 |
+  | Centre de données |                        Adresse URL                                 |
   |-------------|------------------------------------------------------------|
   |     US1     | https : \/ /adaprodconsole.blob.Core.Windows.net/             |
   |     US2     | https : \/ /prod03use2console1.blob.Core.Windows.net/         |

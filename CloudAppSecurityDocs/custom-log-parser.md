@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 12/10/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 941190ed45518d72dabde02582d0ee19f40f38f5
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 6ea6a6c8d544fe3dbfc4ceaf63f7d5c91d98054a
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74719266"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88780390"
 ---
 # <a name="use-a-custom-log-parser"></a>Utiliser un analyseur de journal personnalisé
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Cloud App Security vous permet de configurer un analyseur personnalisé correspondant au format de vos journaux et de traiter le format de vos journaux pour qu’ils soient utilisables avec Cloud Discovery. En règle générale, vous utilisez un analyseur personnalisé si le pare-feu ou l’appareil n’est pas explicitement pris en charge par Cloud App Security. Il peut s’agir d’un analyseur CSV ou d’un analyseur Clé-Valeur personnalisé.
 
@@ -33,9 +33,9 @@ Pour configurer un analyseur personnalisé :
 
 1. Dans le portail Cloud App Security, cliquez sur **Découvrir**, puis sur **Créer un rapport de capture instantanée**.
 
-    ![Créer un rapport de capture instantanée](media/create-new-snapshot-report.png)
+    ![Créer un rapport d’instantané](media/create-new-snapshot-report.png)
 
-2. Renseignez **Nom du rapport** et **Description**
+2. Entrer un **nom de rapport** et une **Description**
 
 3. Sous **Source de données**, sélectionnez **Format de journal personnalisé**.
 
@@ -45,20 +45,20 @@ Pour configurer un analyseur personnalisé :
 
 5. Ouvrez les journaux que vous voulez traiter dans un éditeur de texte. Examinez leur format pour vérifier que les noms des colonnes dans le journal correspondent aux champs de l’écran **Format de journal personnalisé**.
 
-    ![analyseur de journal personnalisé](media/log-data.png)
+    ![Champ de révision dans l’analyseur de journal personnalisé](media/log-data.png)
 
 6. Renseignez ensuite les champs en fonction de vos données pour définir les colonnes dans les données à mettre en corrélation avec des champs spécifiques dans Cloud App Security. Vous devrez peut-être modifier les noms des colonnes dans votre fichier journal pour effectuer correctement la corrélation.
 
     > [!NOTE]
     > Les champs respectent la casse. Vérifiez que les noms des colonnes sont identiques dans Cloud App Security et dans le fichier journal. Veillez également à ce que le format de date choisi soit le même.
 
-    ![analyseur de journal personnalisé](media/custom-log-parser.png)
+    ![Renseignez les champs de l’analyseur de journal personnalisé](media/custom-log-parser.png)
 
-7. Cliquez sur **Save**. Le format de journal personnalisé que vous configurez est enregistré comme analyseur personnalisé par défaut. Vous pouvez le modifier à tout moment en cliquant sur **Modifier**.
+7. Cliquez sur **Enregistrer**. Le format de journal personnalisé que vous configurez est enregistré comme analyseur personnalisé par défaut. Vous pouvez le modifier à tout moment en cliquant sur **Modifier**.
 
-8. Sous **Choisir les journaux de trafic**, sélectionnez le fichier journal que vous avez modifié et chargez-le. Vous pouvez charger jusqu’à 20 fichiers à la fois. Les fichiers compressés et zippés sont également pris en charge.
+8. Sous **Choisir les journaux de trafic**, sélectionnez le fichier journal que vous avez modifié et chargez-le. Vous pouvez charger jusqu’à 20 fichiers à la fois. Les fichiers compressés et zippés sont également pris en charge.
 
-9. Cliquez sur **Create (Créer)** .
+9. Cliquez sur **Créer**.
 
 10. Une fois le chargement terminé, un message d’état s’affiche dans le coin supérieur droit de votre écran pour vous informer que le journal a correctement été chargé.
 

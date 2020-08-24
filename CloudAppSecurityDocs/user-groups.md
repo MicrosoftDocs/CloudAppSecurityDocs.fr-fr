@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 11/17/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,23 +14,23 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 777e672436220642df6ea739c0f2e381487dd9ee
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 0b61dbeb47b4f63a5dff01cc372b52a81a21dd01
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720367"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88778928"
 ---
 # <a name="importing-user-groups-from-connected-apps"></a>Importation de groupes d’utilisateurs à partir d’applications connectées
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Quand vous connectez des applications à l’aide de connecteurs API, Microsoft Cloud App Security vous permet d’importer des groupes d’utilisateurs, par exemple à partir d’Office 365 et d’Azure Active Directory. Il existe deux types de groupes d’utilisateurs :
 
 - Groupes automatiques  
 Les groupes automatiques sont créés par défaut par Microsoft Cloud App Security. Par exemple, il existe un groupe d’utilisateurs automatique appelé **Externe** qui combine tous les utilisateurs de toutes les applications qui sont externes à votre organisation. Ces utilisateurs ont accès aux fichiers ou participaient aux activités dans votre client. Les groupes automatiques suivants existent dans Cloud App Security :
 
-  - External
+  - Externe
   - Administrateur Dropbox
   - Administrateur Office 365
   - Administrateur G Suite
@@ -48,7 +48,7 @@ Vous pouvez importer n’importe quel groupe à partir de vos applications conne
 
 ## <a name="how-to-import-user-groups"></a>Importer des groupes d’utilisateurs
 
-1. Dans la barre de menus, cliquez sur l' ![icône](media/settings-icon.png "icône des paramètres") des paramètres icône des paramètres et sélectionnez **groupes d’utilisateurs**.
+1. Dans la barre de menus, cliquez sur l' ![icône](media/settings-icon.png "Icône des paramètres") des paramètres icône des paramètres et sélectionnez **groupes d’utilisateurs**.
 1. Cliquez sur **Importer le groupe d’utilisateurs**.
 
     ![Importer des groupes d’utilisateurs](media/user-groups-add.png)

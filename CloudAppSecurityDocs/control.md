@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 12/10/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9930a45593f4d2dfba0310228d4576ac2ffd42f2
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: a0b884f08fcf743faf2c37fe3ff065535aefb77a
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74719162"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88780594"
 ---
 # <a name="control"></a>Control
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Vous pouvez appliquer des actions de gouvernance aux fichiers des utilisateurs dans tout votre environnement cloud. Après avoir soigneusement examiné et étudié votre cloud, vous pouvez utiliser des actions de gouvernance pour protéger votre organisation.
 
@@ -57,9 +57,9 @@ Quand vous examinez vos alertes ouvertes, accédez au Centre de stratégie pour 
 
 Vous pouvez appliquer des actions de gouvernance depuis des stratégies, depuis des alertes et depuis le journal **Fichier**.
 
-À tout moment, vous pouvez passer en revue et voir l’état de toutes les actions de gouvernance appliquées en accédant à l’icône **Paramètres** (symbolisée par un engrenage) et en choisissant **Journal de gouvernance**. ![icône Paramètres](media/settings-icon.png "sicône Tall»)
+À tout moment, vous pouvez passer en revue et voir l’état de toutes les actions de gouvernance appliquées en accédant à l’icône **Paramètres** (symbolisée par un engrenage) et en choisissant **Journal de gouvernance**. ![Icône des paramètres](media/settings-icon.png "Icône des paramètres")
 
-En cas d’échec d’une action de gouvernance, choisissez l’icône **Nouvelle tentative** pour l’appliquer à nouveau. ![Icône de nouvelle tentative](media/retry-icon.png "retry icône»)
+En cas d’échec d’une action de gouvernance, choisissez l’icône **Nouvelle tentative** pour l’appliquer à nouveau. ![Icône de nouvelle tentative](media/retry-icon.png "icône de nouvelle tentative")
 
 Selon le type de stratégie, violation et application, différentes actions de gouvernance sont disponibles.
 
@@ -74,7 +74,7 @@ Après avoir défini et personnalisé vos filtres de stratégie, vous pouvez sé
 >
 > Pour obtenir des instructions, vous pouvez utiliser le bouton **Modifier et afficher un aperçu des résultats** dans la section **Filtres**.
 
-![Modifier la stratégie de fichier et afficher un aperçu des résultats](media/file-policy-edit-and-preview-results.png "stratégie de fichier, modifier et afficher un aperçu des résultats")
+![Modification et aperçu des résultats des stratégies de fichiers](media/file-policy-edit-and-preview-results.png "stratégie de fichier, modifier et afficher un aperçu des résultats")
 
 ## <a name="migration"></a>Migration
 
@@ -90,7 +90,7 @@ Imaginons le scénario suivant : vous venez d’acheter Office 365 et vous vou
 
     1. Dans votre **tableau de bord Cloud Discovery**, choisissez **Dropbox**, puis choisissez l’onglet **Adresse IP** ou **Utilisateurs**.
 
-    2. Choisissez l’icône de flèche **Exporter**, puis choisissez vos options d’exportation. ![Icône de flèche](media/arrow-icon.png "arrow icône»)
+    2. Choisissez l’icône de flèche **Exporter**, puis choisissez vos options d’exportation. ![Icône en forme de flèche](media/arrow-icon.png "Icône en forme de flèche")
 
 ### <a name="find-more-secure-alternatives"></a>Trouver des alternatives plus sécurisées
 

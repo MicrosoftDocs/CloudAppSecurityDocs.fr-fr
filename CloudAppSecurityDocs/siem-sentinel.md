@@ -1,24 +1,24 @@
 ---
 title: Intégration d’Azure Sentinel à Cloud App Security
-description: Cet article fournit des informations sur l’intégration de votre SIEM générique avec Cloud App Security.
+description: Cet article fournit des informations sur l’intégration d’Azure Sentinel avec Cloud App Security.
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 10/28/2019
-ms.topic: conceptual
+ms.date: 08/23/2020
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5e291ec3e659b4c9a44f60f5ef05134951e94235
-ms.sourcegitcommit: 75cdc376a0aea79dc7f339af52a90f0ec6dfc526
+ms.openlocfilehash: 4f0bf993a1e0306035c9b75a215873532eb17c5f
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88514250"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88779217"
 ---
 # <a name="azure-sentinel-integration-preview"></a>Intégration d’Azure Sentinel (version préliminaire)
 
@@ -100,7 +100,7 @@ Le tableau suivant décrit chaque champ dans le schéma **McasShadowItReporting*
 | TotalBytes | Integer | Quantité totale de données | 4 067 785 |
 | DownloadedBytes | Integer | Quantité de données téléchargées | 2 552 911 |
 | IpAddress | String | Adresse IP source | 127.0.0.0 |
-| UserName | String | Nom d'utilisateur | `Raegan@contoso.com` |
+| UserName | String | Nom d’utilisateur | `Raegan@contoso.com` |
 | EnrichedUserName | String | Nom d’utilisateur enrichi avec Azure AD nom d’utilisateur | `Raegan@contoso.com` |
 | AppName | String | Nom de l’application Cloud | Microsoft OneDrive Entreprise |
 | AppId | Integer | Identificateur d’application Cloud | 15600 |
