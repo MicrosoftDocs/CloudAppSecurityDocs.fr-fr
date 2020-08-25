@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 07/14/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 84ba90f5959980815caa7170ab7bee9d11db263c
-ms.sourcegitcommit: 4d2ebbd68a48876825e663375ea2b17dc6b58d03
+ms.openlocfilehash: 2e37846ab6e3daea68358834df20a6ce2ee1ee8c
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86865490"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88781478"
 ---
 # <a name="connect-apps"></a>Connecter des applications
 
@@ -73,8 +73,8 @@ Le tableau suivant répertorie, par application cloud, les fonctionnalités pris
 | **Liste des privilèges** | | ✔ | ✔ | Connexion de l’objet G suite | ✔ | ✔ | Non prise en charge par le fournisseur | ✔ | ✔ | ✔ | Non prise en charge par le fournisseur |
 | **Gouvernance des utilisateurs** | | ✔ | Bientôt disponible | Connexion de l’objet G suite | ✔ | ✔ | | Bientôt disponible | ✔ | Bientôt disponible | Non prise en charge par le fournisseur |
 | **Activité de connexion** | ✔ | ✔ | ✔ | Connexion de l’objet G suite | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-| **Activité de l’utilisateur** | Non applicable | ✔ | ✔ | ✔ | ✔ - nécessite Google Business ou Entreprises | ✔ | ✔ | Partiel | Prise en charge avec Salesforce Shield | ✔ | ✔ |
-| **Activité d’administration** | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | Partiel | ✔ | ✔ | Non prise en charge par le fournisseur |
+| **Activité de l’utilisateur** | Non applicable | ✔ | ✔ | ✔ | ✔ - nécessite Google Business ou Entreprises | ✔ | ✔ | Partial | Prise en charge avec Salesforce Shield | ✔ | ✔ |
+| **Activité d’administration** | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | Partial | ✔ | ✔ | Non prise en charge par le fournisseur |
 | **DLP-analyse périodique** | | ✔ | ✔ | Non applicable | ✔ | ✔ | Non applicable | ✔ | ✔ | ✔ | Non prise en charge par le fournisseur |
 | **DLP : analyse en temps quasi réel** | | ✔ | | Non applicable | ✔-nécessite Google Business Enterprise | ✔ | Non applicable | | | ✔ | Non prise en charge par le fournisseur |
 | **Contrôle partagé** | ✔ | ✔ | ✔ | Non applicable | ✔ | ✔ | Non applicable | Non applicable | | ✔ | Non prise en charge par le fournisseur |
@@ -98,14 +98,14 @@ Pour utiliser des connecteurs d’applications, vous devez vérifier que vous av
 |-----|--------------|------|
 | Azure | | Administrateur général |
 | AWS | | Utilisateur récemment créé |
-| Box | Entreprise | Il est fortement recommandé de vous connecter à Box en tant qu’administrateur. La connexion en tant que coadministrateur entraînera uniquement une visibilité partielle des données. Si vous vous connectez en tant que coadministrateur, sélectionnez toutes les autorisations. |
-| Dropbox | Business/Entreprises | Admin |
+| Box | Enterprise | Il est fortement recommandé de vous connecter à Box en tant qu’administrateur. La connexion en tant que coadministrateur entraînera uniquement une visibilité partielle des données. Si vous vous connectez en tant que coadministrateur, sélectionnez toutes les autorisations. |
+| Dropbox | Business/Entreprises | Administrateur |
 | GitHub | GitHub Enterprise Cloud | Propriétaire |
 | GCP | | Consultez les [conditions préalables Connect GCP](connect-google-gcp-to-microsoft-cloud-app-security.md#prerequisites) |
 | G Suite | Compte G Suite Business ou Entreprise<br /><br />G Suite Enterprise (au minimum) | Super administrateur |
 | Office 365 | | Administrateur général |
-| Okta | Enterprise (pas la version d’essai) | Admin |
-| Salesforce | | Admin |
+| Okta | Enterprise (pas la version d’essai) | Administrateur |
+| Salesforce | | Administrateur |
 | ServiceNow | Eureka et au-dessus | Rôle admin + RestAPI |
 | Webex | | Admin + conformité administrateur |
 | Workday | | Consultez les [conditions préalables Connect](connect-workday-to-microsoft-cloud-app-security.md#prerequisites) de la journée de travail |

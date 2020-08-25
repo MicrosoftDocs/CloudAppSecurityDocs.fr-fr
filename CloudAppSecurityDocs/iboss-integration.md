@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 2/2/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f60f4ec7dc9ff241cc4d4ba45bca9a50a2e50a00
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 8d849ed2b95577a805355eaae744ff81d2eb8176
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74719963"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88781716"
 ---
 # <a name="integrate-cloud-app-security-with-iboss"></a>Intégrer Cloud App Security à iboss
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Si vous utilisez Cloud App Security et iboss, vous pouvez intégrer ces deux produits pour rendre votre expérience Cloud Discovery encore plus sûre. iboss est une passerelle cloud sécurisée autonome qui supervise le trafic de votre organisation et vous permet de définir des stratégies de blocage des transactions. Utilisés ensemble, Cloud App Security et iboss offrent les avantages suivants :
 
@@ -31,7 +31,7 @@ Si vous utilisez Cloud App Security et iboss, vous pouvez intégrer ces deux pro
 - Les fonctionnalités de blocage d’iboss sont automatiquement activées pour les applications que vous définissez comme non approuvées dans Cloud App Security.
 - Améliorez votre portail d’administration d’iboss en activant l’évaluation des risques de Cloud App Security pour les 100 applications cloud les plus utilisées dans votre organisation. Vous pouvez ainsi voir toutes ces applications directement dans le portail d’administration d’iboss.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 
 - Licence valide pour Microsoft Cloud App Security
 - Licence valide pour la passerelle iboss Secure Cloud Gateway (version 9.1.100.0 ou ultérieure)

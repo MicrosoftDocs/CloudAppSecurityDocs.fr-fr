@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 12/09/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6369646c8b4cd10e1b2c236369693f4e8c92d878
-ms.sourcegitcommit: ffc8f6053418d20f2394dc6645e043c9db582e6b
+ms.openlocfilehash: 05a2263427f30bcfcd1fdc0fb3b402e115dc3d9e
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2020
-ms.locfileid: "84486298"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88781325"
 ---
 # <a name="azure-information-protection-integration"></a>Intégration d’Azure Information Protection
 
@@ -48,9 +48,9 @@ Pour utiliser des étiquettes dans Cloud App Security, les étiquettes doivent �
 
 Cloud App Security prend actuellement en charge l’application d’étiquettes de classification Azure Information Protection pour les types de fichiers suivants :
 
-- Word : docm, docx, dotm, dotx
-- Excel : xlam, xlsm, xlsx, xltx
-- PowerPoint : potm, potx, ppsx, ppsm, pptm, pptx
+- Word : docm, docx, dotm, dotx
+- Excel : xlam, xlsm, xlsx, xltx
+- PowerPoint : potm, potx, ppsx, ppsm, pptm, pptx
 - PDF
   > [!NOTE]
   > Pour PDF, vous devez utiliser des étiquettes unifiées.

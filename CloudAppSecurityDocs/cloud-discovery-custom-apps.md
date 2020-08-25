@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 12/10/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 768248178042ecc7c3af5289ea1b6c27aa92b37e
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 97430e2428a8ec87a7694bc98c662ec779385495
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74719240"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88781172"
 ---
 # <a name="add-custom-apps-to-cloud-discovery"></a>Ajouter des applications personnalisées à Cloud Discovery
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Cloud Discovery analyse vos journaux de trafic en s’appuyant sur le catalogue d’applications cloud Microsoft Cloud App Security. Ce catalogue comprend plus de 16 000 applications. Le catalogue contient uniquement des applications cloud disponibles publiquement et pour lesquelles Cloud App Security fournit des informations sur la visibilité et les risques.
 
@@ -48,7 +48,7 @@ En ajoutant une nouvelle application cloud personnalisée, Cloud App Security pe
 4. Sous **Domaines**, renseignez les domaines uniques utilisés lors de l’accès à l’application personnalisée. Ces domaines servent à faire correspondre des messages du journal de trafic avec cette application. Si la source de données que vous utilisez ne contient pas d’informations sur l’URL de l’application, renseignez les champs d’adresse **IPv4** et **IPv6**.
 5. Renseignez les champs **Plateforme d’hébergement** et **ID d’abonnement Azure**. Si vous le souhaitez, spécifiez une **Unité commerciale** pour l’application.
 6. Attribuez un **Score** relatif au risque et ajoutez des informations dans **Notes de l’application** pour faciliter le suivi des modifications de cet enregistrement.
-7. Cliquez sur **Create (Créer)** .
+7. Cliquez sur **Créer**.
 
 Une fois créée, l’application est disponible dans le catalogue d’applications cloud.
 

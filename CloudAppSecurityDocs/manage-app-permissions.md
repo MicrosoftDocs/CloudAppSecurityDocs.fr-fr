@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 08/05/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: faf3be962650316a1c16f1b3db884dc16a0dc552
-ms.sourcegitcommit: 4450119e1c7e2c54357dca955621327f9c343422
+ms.openlocfilehash: b9d3f26232a1d17478da50260904495a9881648c
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2020
-ms.locfileid: "88027055"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88781614"
 ---
 # <a name="manage-oauth-apps"></a>Gérer les applications OAuth
 
@@ -56,7 +56,7 @@ La page Applications OAuth fournit les informations suivantes sur chaque applica
 |État de l’application|Un administrateur peut marquer une application comme approuvée, exclue ou laisser le statut non défini.|Office 365, G Suite, Salesforce|
 |Utilisation communautaire|Indique la cote de popularité de l’application parmi tous vos utilisateurs (utilisation courante, peu courante, rare)|Office 365, G Suite, Salesforce|
 |Dernière autorisation|Date la plus récente à laquelle un utilisateur a accordé des autorisations pour cette application.|Office 365, Salesforce|
-|Publisher|Nom du fournisseur qui fournit l’application.|Office 365|
+|Serveur de publication|Nom du fournisseur qui fournit l’application.|Office 365|
 |Dernière utilisation|Date la plus récente à laquelle cette application a été utilisée par une personne de votre organisation.|Salesforce|
 
 ## <a name="ban-or-approve-an-app"></a>Exclure ou approuver une application
@@ -89,7 +89,7 @@ La page Applications OAuth fournit les informations suivantes sur chaque applica
 
 Pour G Suite et Salesforce, vous pouvez révoquer l’autorisation d’une application ou avertir l’utilisateur qu’il doit la changer. Quand vous révoquez l’autorisation, elle supprime toutes les autorisations qui ont été accordées à l’application sous « applications d’entreprise » dans Azure AD.
 
-1. Dans la page **Applications OAuth**, cliquez sur les points de suspension à la fin de la ligne de l’application et sélectionnez **Notifier l’utilisateur**. Par défaut, l’utilisateur est averti comme suit : *vous avez autorisé l’application à accéder à votre compte G suite. Cette application est en conflit avec la stratégie de sécurité de votre organisation. Réessayez d’attribuer ou de révoquer les autorisations que vous avez attribuées à cette application dans votre compte G suite. Pour révoquer l’accès aux applications, accédez à : https://security.google.com/settings/security/permissions?hl=en&pli=1 Sélectionnez l’application et cliquez sur « révoquer l’accès » dans la barre de menus de droite.* Vous pouvez personnaliser le message envoyé.
+1. Dans la page **Applications OAuth**, cliquez sur les points de suspension à la fin de la ligne de l’application et sélectionnez **Notifier l’utilisateur**. Par défaut, l’utilisateur est averti comme suit : *vous avez autorisé l’application à accéder à votre compte G suite. Cette application est en conflit avec la stratégie de sécurité de votre organisation. Réessayez d’attribuer ou de révoquer les autorisations que vous avez attribuées à cette application dans votre compte G suite. Pour révoquer l’accès aux applications, accédez à : https://security.google.com/settings/security/permissions?hl=en&pli=1  Sélectionnez l’application et cliquez sur « révoquer l’accès » dans la barre de menus de droite.* Vous pouvez personnaliser le message envoyé.
 2. Vous pouvez également révoquer des autorisations d’utilisation de l’application pour l’utilisateur. Cliquez sur l’icône à la fin de la ligne de l’application dans le tableau et sélectionnez **Révoquer l’application**.
 
     ![révoquer l’application](media/revoke-app.png)

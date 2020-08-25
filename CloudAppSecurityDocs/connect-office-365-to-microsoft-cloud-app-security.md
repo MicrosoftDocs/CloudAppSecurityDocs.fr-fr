@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 08/17/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ea89ea91de2cccaf0fc52d6f97d4973a178f18ba
-ms.sourcegitcommit: 75cdc376a0aea79dc7f339af52a90f0ec6dfc526
+ms.openlocfilehash: 1123002a60f5764a6a909932b0326217738a5ed8
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88514282"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88781036"
 ---
 # <a name="connect-office-365-to-microsoft-cloud-app-security"></a>Connecter Office 365 à Microsoft Cloud App Security
 
@@ -65,11 +65,11 @@ Cloud App Security prend en charge les applications Office 365 suivantes :
 
 1. Dans la page **Applications connectées**, cliquez sur le bouton plus (+) et sélectionnez **Office 365**.
 
-    ![connecter 0365](media/connect-o365.png)
+    ![option de menu Connect O365](media/connect-o365.png)
 
 1. Dans la fenêtre contextuelle Office 365, cliquez sur **Connecter Office 365**.
 
-    ![connecter 0365](media/office-connect.png)
+    ![ouvrir la fenêtre contextuelle O365](media/office-connect.png)
 
 1. Dans la page composants Office 365, sélectionnez les options dont vous avez besoin, puis cliquez sur **se connecter**.
 
@@ -78,7 +78,7 @@ Cloud App Security prend en charge les applications Office 365 suivantes :
     > - Pour une protection optimale, nous vous recommandons de sélectionner tous les composants Office 365.
     > - Le composant **Office 365 Files** requiert le composant **Office 365 Activities** et l’analyse de fichiers Cloud App Security (les fichiers de**paramètres**  >  **Files**  >  **permettent l’analyse des fichiers**).
 
-    ![connecter les composants 0365](media/connect-o365-components.png)
+    ![connecter les composants O365](media/connect-o365-components.png)
 
 1. Une fois Office 365 affiché comme correctement connecté, cliquez sur **Fermer**.
 

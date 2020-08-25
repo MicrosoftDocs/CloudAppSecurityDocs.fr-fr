@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 01/22/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,14 +14,14 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1ccd5a4bfedbad5edf1ee2e398b0da480f20fb38
-ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
+ms.openlocfilehash: 41495095be323743f44d7822283cc08b8b9afbfb
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87254752"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88781563"
 ---
-# <a name="manage-alerts"></a>Gérer des alertes
+# <a name="manage-alerts"></a>Gérer les alertes
 
 *S’applique à : Microsoft Cloud App Security*
 
@@ -40,7 +40,7 @@ Il est judicieux d’examiner toutes vos alertes et de vous en servir pour modif
 
     Cette section du tableau de bord fournit une visibilité totale de toute activité suspecte ou des violations de vos stratégies établies. Elle peut vous aider à préserver le plan de sécurité que vous avez défini pour votre environnement cloud.
 
-    ![Alertes](media/alerts.png "alertes")
+    ![Page État de résolution des alertes](media/alerts.png "alertes")
 
 2. Pour chaque alerte, vous devez examiner et déterminer la nature de la violation et la réponse requise.
 

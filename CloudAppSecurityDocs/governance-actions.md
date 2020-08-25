@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 06/28/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: bf3d80fbea1847fc22d07164d25db0ec7c4149f6
-ms.sourcegitcommit: 4d2ebbd68a48876825e663375ea2b17dc6b58d03
+ms.openlocfilehash: e424a3dd483e762a1fb3f589116ea362b1e1fb27
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86865450"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88781631"
 ---
 # <a name="governing-connected-apps"></a>Gouvernance des applications connectées
 
@@ -138,7 +138,7 @@ Pour plus d’informations sur la façon dont les actions de gouvernance sont tr
 |Tableau de bord de l’application > Autorisations d’applications |Autorisations| Exclure l’application | Dans Google et Salesforce : révoquent les autorisations d’accès d’une application tierce à Google ou Salesforce et lui interdisent de recevoir des autorisations dans le futur. Dans Office 365 : n’autorise pas l’autorisation des applications tierces à accéder à Office, mais ne les révoque pas. |G Suite, Salesforce, Office |
 |Tableau de bord de l’application > Autorisations d’applications |Autorisations|Révoquer l’application|Révoque les autorisations d’accès d’une application tierce à Google, Salesforce ou Office. Il s’agit d’une seule action qui se produit sur toutes les autorisations existantes, mais qui n’empêche pas les connexions futures. | G Suite, Salesforce|
 |Tableau de bord de l’application > Autorisations d’applications | Compte | Révoquer l’utilisateur de cette application|Vous pouvez révoquer des utilisateurs spécifiques en cliquant sur le nombre sous Utilisateurs. L’écran affiche des utilisateurs spécifiques, et vous pouvez utiliser la croix (X) pour supprimer les autorisations d’un utilisateur.| G Suite, Salesforce|
-|Découverte > Applications découvertes/Adresses IP/Utilisateurs| Cloud Discovery | Exporter les données de découverte | Crée un fichier CSV à partir de données de découverte. | découverte, |
+|Découverte > Applications découvertes/Adresses IP/Utilisateurs| Cloud Discovery | Exporter les données de découverte | Crée un fichier CSV à partir de données de découverte. | Découverte |
 |Stratégie de fichier|Fichier |Mettre à la corbeille|Déplace le fichier dans la corbeille de l’utilisateur.| Box, Dropbox, Google Drive, OneDrive, SharePoint |
 |Stratégie de fichier|Fichier | Notifier le dernier éditeur du fichier |Envoie un e-mail pour notifier la dernière personne qui a modifié le fichier qu’il viole une stratégie. |G Suite, Box|
 |Stratégie de fichier|Fichier |Notifier le propriétaire du fichier|Envoie un e-mail au propriétaire quand un fichier ne respecte pas une stratégie. Dans Dropbox, si aucun propriétaire n’est associé à un fichier, la notification est envoyée à l’utilisateur spécifique que vous définissez. | Toutes les applications |
@@ -165,10 +165,10 @@ Pour plus d’informations sur la façon dont les actions de gouvernance sont tr
 |Fichiers|Fichier|Modifier le niveau d’accès du lien de partage|Modifie le niveau d’accès du lien partagé (entreprise uniquement, collaborateurs uniquement ou public).| Box|
 |Fichiers, Stratégie de fichier|Fichier | Supprimer l’accès public| Si vous êtes propriétaire d’un fichier auquel vous autorisez un accès public, il devient accessible uniquement aux autres personnes disposant d’un droit d’accès au fichier (selon le genre d’accès au fichier). | G Suite|
 |Fichiers, Stratégie de fichier|Fichier |Supprimer le lien partagé direct| Supprime un lien créé pour le fichier qui est public, mais partagé uniquement avec des personnes spécifiques.|Box |
-|Paramètres> Paramètres de Cloud Discovery| Cloud Discovery | Recalculer les scores Cloud Discovery |Recalcule les scores dans le catalogue d’applications cloud après une modification d’une mesure de score.| découverte, |
-|Paramètres> Paramètres de Cloud Discovery > Gérer les vues de données| Cloud Discovery | Créer une vue de données de filtre Cloud Discovery|Crée une nouvelle vue de données pour une vue plus détaillée des résultats de découverte. Par exemple, des plages d’adresses IP spécifiques. | découverte, |
-|Paramètres> Paramètres de Cloud Discovery > Supprimer les données| Cloud Discovery | Supprimer les données Cloud Discovery |Supprime toutes les données collectées à partir de sources de découverte.| découverte, |
-|Paramètres> Paramètres de Cloud Discovery > Charger les journaux manuellement/Charger les journaux automatiquement | Cloud Discovery | Analyser les données Cloud Discovery| Notification que toutes les données de journal ont été analysées. | découverte, |
+|Paramètres> Paramètres de Cloud Discovery| Cloud Discovery | Recalculer les scores Cloud Discovery |Recalcule les scores dans le catalogue d’applications cloud après une modification d’une mesure de score.| Découverte |
+|Paramètres> Paramètres de Cloud Discovery > Gérer les vues de données| Cloud Discovery | Créer une vue de données de filtre Cloud Discovery|Crée une nouvelle vue de données pour une vue plus détaillée des résultats de découverte. Par exemple, des plages d’adresses IP spécifiques. | Découverte |
+|Paramètres> Paramètres de Cloud Discovery > Supprimer les données| Cloud Discovery | Supprimer les données Cloud Discovery |Supprime toutes les données collectées à partir de sources de découverte.| Découverte |
+|Paramètres> Paramètres de Cloud Discovery > Charger les journaux manuellement/Charger les journaux automatiquement | Cloud Discovery | Analyser les données Cloud Discovery| Notification que toutes les données de journal ont été analysées. | Découverte |
 
 ## <a name="next-steps"></a>Étapes suivantes
 

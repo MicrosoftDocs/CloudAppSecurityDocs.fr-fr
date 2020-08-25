@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 07/09/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 38b142121f4d14d2fb07017e764a2a57bd1ceee0
-ms.sourcegitcommit: 1dec09a56cc44148393f103c96fc24c59adc2f8f
+ms.openlocfilehash: a80d54546b93545b65082115c939190f65b3801d
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86402135"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88781444"
 ---
 # <a name="external-dlp-integration"></a>Intégration DLP externe
 
@@ -66,7 +66,7 @@ Dans cette étape, vous configurez le stunnel connecté à votre serveur ICAP.
 
 ### <a name="install-stunnel-on-a-server"></a>Installer le stunnel sur un serveur
 
-**Composants requis**
+**Conditions préalables**
 
 - **Un serveur**, Windows Server ou serveur Linux basé sur une distribution majeure.
 
@@ -253,7 +253,7 @@ Si le processus n’est toujours pas en cours d’exécution, consultez la [docu
     - **ICAP générique – REQMOD** : utiliser d’autres appliances DLP qui utilisent [Modification de la demande](https://tools.ietf.org/html/rfc3507).
     - **ICAP générique – RESPMOD** : utiliser d’autres appliances DLP qui utilisent [Modification de la réponse](https://tools.ietf.org/html/rfc3507).
 
-        ![Connexion ICAP de Cloud App Security](media/icap-wizard1.png)
+        ![Type de connexion ICAP Cloud App Security](media/icap-wizard1.png)
 
 5. Accédez à pour sélectionner le certificat public que vous avez généré au cours des étapes précédentes, « CERT. pem », pour vous connecter à votre stunnel. Cliquez sur **Suivant**.
 
@@ -262,7 +262,7 @@ Si le processus n’est toujours pas en cours d’exécution, consultez la [docu
 
 6. Dans l’écran **Configuration du serveur**, indiquez **l’Adresse IP** et le **Port** du serveur stunnel que vous avez configuré à l’étape 2. Pour des raisons d’équilibrage de charge, vous pouvez configurer l’**Adresse IP** et le **Port** d’un serveur supplémentaire. Les adresses IP fournies doivent être les adresses IP statiques externes de vos serveurs.
 
-    ![Connexion ICAP de Cloud App Security](media/icap-wizard2.png)
+    ![Cloud App Security l’adresse IP et le port de connexion ICAP](media/icap-wizard2.png)
 
 7. Cliquez sur **Suivant**. Cloud App Security teste la connectivité au serveur que vous avez configuré. Si vous recevez une erreur, passez en revue les instructions et les paramètres réseau. Une fois connecté, vous pouvez cliquer sur **Quitter**.
 
@@ -305,7 +305,7 @@ Le serveur de détection utilisé par Cloud App Security est un Network Prevent 
 
     1. Désactivez le **mode d’évaluation**.
 
-        ![désactiver le mode d’évaluation](media/icap-disable-trial-mode.png)
+        ![désactiver la fenêtre contextuelle du mode d’évaluation](media/icap-disable-trial-mode.png)
 
 2. Sous **ICAP**  >  **filtrage de réponse**ICAP, remplacez la valeur **Ignorer les réponses inférieures** à par 1.
 
@@ -341,7 +341,7 @@ Ajoutez la règle que vous avez créée aux stratégies existantes :
 
 3. Enregistrez la stratégie.
 
-    ![désactiver le mode d’évaluation](media/icap-add-policy.png)
+    ![désactiver le mode d’évaluation dans la stratégie](media/icap-add-policy.png)
 
 Cette règle doit être ajoutée à toutes les stratégies existantes.
 

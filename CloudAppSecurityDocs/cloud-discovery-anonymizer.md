@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 04/20/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,18 +14,18 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b4d8a2c91d87df35445615e36b5caeb7d89de4f4
-ms.sourcegitcommit: a166b85d5c91c48032cf133655471aec1ed88a0f
+ms.openlocfilehash: 44bc98ec887b8a2d601961a65115b7d7a50f3128
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81662336"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88781223"
 ---
 # <a name="cloud-discovery-data-anonymization"></a>Anonymisation des données Cloud Discovery
 
 *S’applique à : Microsoft Cloud App Security*
 
-L’anonymisation de données Cloud Discovery vous permet de protéger la confidentialité des utilisateurs. Une fois que le journal des données est téléchargé sur le portail Microsoft Cloud App Security, il est purgé et toutes les informations des noms d’utilisateur sont remplacées par des noms d’utilisateur chiffrés. De cette façon, toutes les activités cloud restent anonymes. Quand c’est nécessaire, pour une enquête de sécurité spécifique (par exemple une violation de la sécurité ou une activité utilisateur suspecte), les administrateurs peuvent résoudre le nom d’utilisateur réel. Si un administrateur a une raison de suspecter un utilisateur spécifique, il peut également rechercher le nom d’utilisateur chiffré d’un nom d’utilisateur connu, puis commencer son investigation avec le nom d’utilisateur chiffré. La conversion de chaque nom d’utilisateur est auditée dans le **journal de gouvernance** du portail.
+L’anonymisation de données Cloud Discovery vous permet de protéger la confidentialité des utilisateurs. Une fois que le journal des données est téléchargé sur le portail Microsoft Cloud App Security, il est purgé et toutes les informations des noms d’utilisateur sont remplacées par des noms d’utilisateur chiffrés. De cette façon, toutes les activités cloud restent anonymes. Quand c’est nécessaire, pour une enquête de sécurité spécifique (par exemple une violation de la sécurité ou une activité utilisateur suspecte), les administrateurs peuvent résoudre le nom d’utilisateur réel. Si un administrateur a une raison de suspecter un utilisateur spécifique, il peut également rechercher le nom d’utilisateur chiffré d’un nom d’utilisateur connu, puis commencer son investigation avec le nom d’utilisateur chiffré. Chaque conversion de nom d’utilisateur est auditée dans le **Journal de gouvernance**du portail.
 
 Points clés :
 
@@ -45,12 +45,12 @@ Points clés :
 
     - Vous pouvez définir le comportement par défaut dans Cloud App Security pour anonymiser toutes les données des rapports de capture instantanée des fichiers journaux chargés et celles des rapports continus du collecteur de journaux comme suit :
 
-    1. Sous l’icône Paramètres, sélectionnez **Paramètres Cloud Discovery**.
+    1. Sous l’roue dentée paramètres, sélectionnez **paramètres de Cloud Discovery**.
 
-    2. Dans l’onglet Anonymisation, pour anonymiser les noms d’utilisateur par défaut, sélectionnez **Anonymiser les informations privées par défaut dans les nouveaux rapports et les nouvelles sources de données**. Vous pouvez aussi sélectionner **Anonymiser les informations de l'ordinateur par défaut dans le rapport « Utilisateurs du point de terminaison Win10 »**.
+    2. Sous l’onglet Anonymisation, pour anonymiser les noms d’utilisateur par défaut, sélectionnez **Rendre anonyme les informations privées par défaut dans les nouveaux rapports et les nouvelles sources de données**. Vous pouvez également sélectionner **rendre les informations d’ordinateur anonymes par défaut dans le rapport « utilisateurs du point de terminaison Win10 »**.
     3. Cliquez sur **Enregistrer**.
 
-    ![Anonymisation](media/anonymizer1.png)
+    ![Page Paramètres d’anonymisation](media/anonymizer1.png)
 
 2. Quand l’anonymisation est sélectionnée, Cloud App Security analyse le journal du trafic et extrait les attributs de données spécifiques.
 3. Cloud App Security remplace le nom d’utilisateur par un nom d’utilisateur chiffré.
@@ -78,12 +78,12 @@ Points clés :
 
     La méthode alternative suivante pour résoudre les noms d’utilisateur uniques peut également être utilisée pour rechercher le nom d’utilisateur chiffré d’un nom d’utilisateur connu.
 
-    1. Sous l’icône Paramètres, sélectionnez **Paramètres Cloud Discovery**.
+    1. Sous l’roue dentée paramètres, sélectionnez **paramètres de Cloud Discovery**.
 
     1. Sous l’onglet **Anonymisation**, sous **Anonymiser et résoudre les noms d’utilisateur**, entrez une justification expliquant pourquoi vous effectuez la résolution.
     1. Sous **Entrer le nom d’utilisateur à résoudre**, sélectionnez **À partir du nom anonymisé** et entrez le nom d’utilisateur anonymisé, ou sélectionnez **À anonymiser** et entrez le nom d’utilisateur d’origine à résoudre. Cliquez sur **Résoudre**.
 
-        ![Anonymisation](media/anonymizer.png)
+        ![Résoudre la fenêtre contextuelle d’anonymisation](media/anonymizer.png)
 
     **Pour résoudre plusieurs noms d’utilisateur**
 
@@ -99,13 +99,13 @@ Points clés :
 
         ![Rendre anonyme résoudre le menu contextuel](media/anonymize-resolve-dialog.png)
 
-6. L’action est auditée dans le **journal de gouvernance** du portail.
+6. L’action est auditée dans le journal de **gouvernance**du portail.
 
-    ![Anonymisation](media/anonymize-gov-log.png)
+    ![Action d’anonymisation dans le journal de gouvernance](media/anonymize-gov-log.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
 
 > [!div class="nextstepaction"]
-> [Contrôler les applications Cloud avec des stratégies](control-cloud-apps-with-policies.md)
+> [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

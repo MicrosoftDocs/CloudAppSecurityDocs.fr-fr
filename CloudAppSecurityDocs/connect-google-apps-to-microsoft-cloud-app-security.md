@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 11/27/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9310313e23f307915f707c839d1a379f212c14ce
-ms.sourcegitcommit: ecb1835d1cd880de38f32ce7a7031b0015f3cae5
+ms.openlocfilehash: 707bdbe5e5be0ad506451257f7364197b77e5079
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81241293"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88781189"
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>Connecter G Suite à Microsoft Cloud App Security
 
@@ -29,21 +29,21 @@ Cet article fournit des instructions pour connecter Microsoft Cloud App Security
 
 ## <a name="configure-g-suite"></a>Configurer G Suite
 
-1. En tant que Super administrateur G suite, connectez- <a href="https://cloud.google.com/console/project" target="_blank">https://cloud.google.com/console/project</a>vous à.
+1. En tant que Super administrateur G suite, connectez-vous à <a href="https://cloud.google.com/console/project" target="_blank">https://cloud.google.com/console/project</a> .
 
 1. Cliquez sur **Créer un projet** pour démarrer un nouveau projet.
 
-    ![google1](media/google1.png)
+    ![Google créer un projet](media/google1.png)
 
 1. Dans l’écran **nouveau projet** , nommez votre projet comme suit : **Cloud App Security** , puis cliquez sur **créer**.
 
-    ![google2](media/google2.png)
+    ![Fenêtre contextuelle Google New Project](media/google2.png)
 
 1. Une fois le projet créé, dans la barre d’outils, cliquez sur **Google Cloud Platform**. Vérifiez que le projet approprié est sélectionné dans la liste déroulante du haut.
 
-    ![projet Google](media/googleverify-project.png)
+    ![Cliquer sur Google Cloud Platform dans la barre d’outils](media/googleverify-project.png)
 
-1. Sélectionnez Menu, accédez à **API & services** > **bibliothèque** et activez les API suivantes (utilisez la ligne de recherche si l’API n’est pas listée) :
+1. Sélectionnez Menu, accédez à **API & services**  >  **bibliothèque** et activez les API suivantes (utilisez la ligne de recherche si l’API n’est pas listée) :
 
     * Admin SDK
 
@@ -61,7 +61,7 @@ Cet article fournit des instructions pour connecter Microsoft Cloud App Security
     >
     > Ignorez l’avertissement sur les **informations d’identification** pour l’instant.
 
-1. Sélectionnez Menu, accédez à **API &** > **tableau de bord**des services et assurez-vous que les API suivantes sont activées :
+1. Sélectionnez Menu, accédez à **API &**  >  **tableau de bord**des services et assurez-vous que les API suivantes sont activées :
 
     ![API Google activé](media/google5.png)
 
@@ -111,7 +111,7 @@ Cet article fournit des instructions pour connecter Microsoft Cloud App Security
 
     1. Cliquez sur **Autoriser**.
 
-1. Dans le [Google Cloud Platform](https://console.cloud.google.com/), sélectionnez Menu et accédez au**tableau de bord** **API et services** > .
+1. Dans le [Google Cloud Platform](https://console.cloud.google.com/), sélectionnez Menu et accédez au tableau de bord **API et services**  >  **Dashboard**.
 
 1. Dans le tableau de bord, faites défiler jusqu’à la liste des API activées et cliquez sur **API Google Drive**.
     ![Sélectionner Google Drive](media/google14.png)
@@ -148,13 +148,13 @@ Dans **Application description** (Description de l’application), tapez « Mic
 
     * Configurez les quatre images obligatoires sous **Application icons (Icônes de l’application)**.
 
-    Les images se trouvent à l’adresse :[https://go.microsoft.com/fwlink/?linkid=862826](https://go.microsoft.com/fwlink/?linkid=862826)
+    Les images se trouvent à l’adresse :  [https://go.microsoft.com/fwlink/?linkid=862826](https://go.microsoft.com/fwlink/?linkid=862826)
 
     * Renseignez les valeurs **Support URLs (URL d’assistance)** suivantes :
 
-    * **URL des conditions d’accès**:https://go.microsoft.com/fwlink/?LinkID=733268
+    * **URL des conditions d’accès**: https://go.microsoft.com/fwlink/?LinkID=733268
 
-    * **URL**de la politique de confidentialité :https://go.microsoft.com/fwlink/?LinkId=512132
+    * **URL**de la politique de confidentialité : https://go.microsoft.com/fwlink/?LinkId=512132
 
     * Sous **OAuth 2.0 scopes** (Étendues OAuth 2.0), copiez et collez les URL suivantes (copiez-les une à la fois et appuyez sur Entrée après chacune d’elles) :  
 `https://www.googleapis.com/auth/admin.reports.audit.readonly`  
@@ -229,6 +229,6 @@ Si vous rencontrez des problèmes lors de la connexion de l’application, consu
 ## <a name="next-steps"></a>Étapes suivantes
 
 > [!div class="nextstepaction"]
-> [Contrôler les applications Cloud avec des stratégies](control-cloud-apps-with-policies.md)
+> [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

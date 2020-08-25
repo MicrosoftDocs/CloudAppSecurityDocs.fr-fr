@@ -1,6 +1,6 @@
 ---
 title: Gestion des jetons d’API
-description: Cet article fournit des informations sur la génération de jetons d’API pour Cloud App Security.
+description: Cet article fournit des informations sur la génération et la gestion des jetons d’API pour Cloud App Security.
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -10,12 +10,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: e4dba7ef7ff73c7e4b6b784bce68d4e71b0b854e
-ms.sourcegitcommit: 14b6fe342aa06d5547d121522b1e2ae9525da8e4
+ms.openlocfilehash: 7eeeea75c084acddac195021d7ee7a6f3d533da6
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86122616"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88781410"
 ---
 # <a name="managing-api-tokens"></a>Gestion des jetons d’API
 

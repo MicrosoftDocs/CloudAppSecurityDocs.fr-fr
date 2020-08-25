@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 12/10/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c8fc0a705a88d65922368356721d4c9b61b98cb6
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: b85d234a05741dd7a158259c111a60bed3e6f524
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74719792"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88781240"
 ---
-# <a name="cloud-discovery-anomaly-detection-policy"></a>Stratégie de détection des anomalies de Cloud Discovery
+# <a name="cloud-discovery-anomaly-detection-policy"></a>Stratégie de détection des anomalies Cloud Discovery
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Cet article vous fournit des détails de référence sur les stratégies. Les explications relatives à chaque type de stratégie et aux champs que vous pouvez configurer pour chaque stratégie sont listées.
 
@@ -40,11 +40,11 @@ Pour chaque stratégie, définissez les paramètres suivants :
 2. Spécifiez un **Nom de stratégie** et une **Description**.
 
 3. Créez un filtre pour les applications que vous voulez surveiller en cliquant sur **Ajouter un filtre**.
-   Vous pouvez sélectionner une application spécifique, une **Catégorie** d’applications ou filtrer par **Nom**, par **Domaine et par **Facteur de risque**, et cliquer sur **Enregistrer**.
+   Vous pouvez sélectionner une application spécifique, une **catégorie**d’application ou filtrer par **nom**, * * domaine et **facteur de risque**, puis cliquer sur **Enregistrer**.
 
 4. Sous **Appliquer à**, définissez comment vous voulez que l’utilisation soit filtrée. L’utilisation en cours de surveillance peut être filtrée de deux manières différentes :
 
-    - **Rapports continus** - Choisissez si vous souhaitez superviser **Tous les rapports continus** (par défaut) ou des **Rapports continus spécifiques**.
+    - **Rapports continus** : indiquez si vous souhaitez surveiller **tous les rapports continus** (par défaut) ou choisir **des rapports continus spécifiques** à surveiller.
 
         - Quand vous sélectionnez **Tous les rapports continus**, chaque accroissement de l’utilisation est comparé au modèle d’utilisation normale, telle qu’elle est déterminée à partir de toutes les vues de données.
         - Quand vous sélectionnez **Rapports continus spécifiques**, chaque augmentation de l’utilisation est comparée au modèle d’utilisation normale. Le modèle est déterminé à partir de la même vue de données que celle dans laquelle l’augmentation a été observée.
@@ -57,9 +57,9 @@ Pour chaque stratégie, définissez les paramètres suivants :
 
         - La sélection de l’option **Utilisateurs et adresses IP** (part défaut) prend en compte les deux associations, mais elle peut produire des alertes en doublon quand une correspondance étroite existe entre les utilisateurs et les adresses IP.
 
-    - **Déclencher des alertes seulement pour les activités suspectes après la date** - Toute augmentation de l’utilisation de l’application avant la date sélectionnée est ignorée. Toutefois, les activités avant la date sélectionnée sont prises en compte pour établir le modèle d’utilisation normale.
+    - **Déclencher des alertes uniquement pour les activités suspectes qui se produisent après la date** : toute augmentation de l’utilisation de l’application avant la date sélectionnée est ignorée. Toutefois, les activités avant la date sélectionnée sont prises en compte pour établir le modèle d’utilisation normale.
 
-5. Sous **Alertes**, vous pouvez définir la sensibilité des alertes. Il existe plusieurs façons de contrôler le nombre d’alertes déclenchées par la stratégie :
+5. Sous **alertes**, vous pouvez définir la sensibilité des alertes. Il existe plusieurs façons de contrôler le nombre d’alertes déclenchées par la stratégie :
 
     - Curseur **Sélectionnez la sensibilité de la détection d’anomalies** : déclenche des alertes pour les X activités anormales les plus fréquentes par 1 000 utilisateurs par semaine. Les alertes sont déclenchées pour les activités dont le risque est le plus élevé.
 
@@ -67,7 +67,7 @@ Pour chaque stratégie, définissez les paramètres suivants :
 
     - Vous pouvez également sélectionner l’option pour **Utiliser les paramètres par défaut de votre organisation**. Cette option permet d’affecter des valeurs aux paramètres de **Limite d’alerte quotidienne**, d’e-mail et de SMS à partir des paramètres par défaut de votre organisation. Pour définir la valeur par défaut, complétez la **Configuration des alertes**, puis cliquez sur **Enregistrer ces paramètres d’alerte comme valeurs par défaut pour votre organisation**.
 
-6. Cliquez sur **Create (Créer)** .
+6. Cliquez sur **Créer**.
 
 7. Comme avec toutes les stratégies, vous pouvez **Modifier**, **Désactiver** et **Activer** la stratégie en cliquant sur les trois points à la fin de la ligne dans la page **Stratégies**. Par défaut, quand vous créez une stratégie, celle-ci est activée.
 

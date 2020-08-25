@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 8/7/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: aba19263cafbc1d91a4a650d4cb67e9e748947db
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 53eaa7b96a22c7574a63b6051dce64076fafaa39
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74719909"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88781665"
 ---
 # <a name="log-collector-ftp-configuration"></a>Configuration FTP du collecteur de journaux
 
-*S’applique à : Microsoft Cloud App Security*
+*S’applique à : Microsoft Cloud App Security*
 
 Cet article décrit comment modifier la configuration du docker Cloud Discovery Cloud App Security.
 
@@ -55,14 +55,14 @@ Suivez cette procédure pour personnaliser les fichiers de certificats que vous 
 2. Accédez au répertoire `ssl_update`.
 3. Chargez les nouveaux fichiers de certificats dans le répertoire `ssl_update` (les noms sont obligatoires).
 
-    ![Modifier le mot de passe FTP](media/new-certs.png)
+    ![Charger les fichiers de certificat](media/new-certs.png)
 
     - **Pour FTP :** un seul fichier est nécessaire. Le fichier a la clé et les données de certificat, dans cet ordre, et est nommé **pure-ftpd.pem**.
     - **Pour Syslog :** trois fichiers sont nécessaires (**ca.pem**, **server-key.pem et **server-cert.pem**). Si l’un des fichiers est absent, la mise à jour n’a pas lieu.
 
 4. Sur un terminal, exécutez : `docker exec -t <collector name> update_certs`. La commande doit produire une sortie semblable à celle illustrée dans la capture d’écran suivante.
 
-    ![Modifier le mot de passe FTP](media/update-certs.png)
+    ![Mettre à jour les fichiers de certificat](media/update-certs.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
 

@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 12/12/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ad9f158a1e81a9aeaf7bb59a23da56e27260a6c5
-ms.sourcegitcommit: a76d7b8837a5ad17348eb1b2e1dcbe0bf8a2d0a2
+ms.openlocfilehash: c7e63522634f6048ad9ae13ce00298638fe7b070
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "86282436"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88781750"
 ---
 # <a name="govern-discovered-apps"></a>Gouverner les applications découvertes
 

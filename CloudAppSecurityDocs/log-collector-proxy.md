@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 8/6/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2b62a1344f4277f58ebff09dded12497238705bf
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 665d7435399c37a1d9683f004b0996f9ea5d263f
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624670"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88781699"
 ---
 # <a name="enable-the-log-collector-behind-a-proxy"></a>Activer le collecteur de journaux derrière un proxy
 
@@ -129,8 +129,8 @@ Le collecteur de journaux est désormais en mesure de communiquer avec Cloud App
     > L’alias de serveur par défaut est *Server*.
 
 1. Dans un éditeur de texte, ouvrez le fichier *Server-install\conf\server\secured-installed.Properties* , puis ajoutez les lignes de code suivantes, puis enregistrez les modifications :
-    1. Spécifiez le nouveau mot de passe du magasin de clés Java pour le serveur :`server.keystore.password=newStorePassword`
-    1. Spécifiez le nouveau mot de passe du certificat pour le serveur :`server.key.password=newKeyPassword`
+    1. Spécifiez le nouveau mot de passe du magasin de clés Java pour le serveur : `server.keystore.password=newStorePassword`
+    1. Spécifiez le nouveau mot de passe du certificat pour le serveur : `server.key.password=newKeyPassword`
 1. Démarrez le serveur.
 
 ## <a name="next-steps"></a>Étapes suivantes
