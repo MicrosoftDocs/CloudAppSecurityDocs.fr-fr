@@ -68,13 +68,13 @@ Pour plus d’informations sur la configuration des utilisateurs d’intégratio
 
 1. Dans la page **inscrire le client** de l’API, renseignez les informations suivantes, puis cliquez sur **OK**.
 
-    | Nom du champ | Value |
+    | Nom du champ | Valeur |
     | ---- | ---- |
     | Nom du client | Microsoft Cloud App Security |
     | Type d’octroi client | Octroi de code d’autorisation |
     | Type de jeton d’accès | Porteur |
     | URI de redirection | `https://portal.cloudappsecurity.com/api/oauth/connect` |
-    | Jetons d’actualisation sans expiration | Oui |
+    | Jetons d’actualisation sans expiration | Yes |
     | Étendues OAuth2 | **Personnel** et **système** |
     | Étendue (zones fonctionnelles) | **Personnel** et **système** |
 

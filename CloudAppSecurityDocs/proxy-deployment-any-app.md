@@ -12,12 +12,12 @@ ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
-ms.openlocfilehash: 2eaa965e8925a67945b3524e9b0a61b0e139df26
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 0f5fbf5668d49ced48b2a1afe0fc1893e077bf43
+ms.sourcegitcommit: f4ed1283e73af88201dd85fc6a59300cd31341d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88779761"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88807616"
 ---
 # <a name="onboard-and-deploy-conditional-access-app-control-for-any-app"></a>Intégration et déploiement de contrôle d’application par accès conditionnel pour n’importe quelle application
 
@@ -244,9 +244,11 @@ Par exemple, si vous avez configuré une stratégie qui bloque le téléchargeme
 
 Une fois que vous êtes prêt à activer l’application en vue de son utilisation dans l’environnement de production de votre organisation, procédez comme suit.
 
-1. Dans Cloud App Security, cliquez sur l’icône Paramètres roue dentée ![paramètres](media/settings-icon.png "Icône des paramètres"), puis sélectionnez **contrôle d’application par accès conditionnel**.
+1. Dans Cloud App Security, cliquez sur l’icône Paramètres roue dentée ![ paramètres ](media/settings-icon.png) , puis sélectionnez **contrôle d’application par accès conditionnel**.
 1. Dans la liste des applications, sur la ligne dans laquelle l’application que vous déployez s’affiche, choisissez les trois points à la fin de la ligne, puis choisissez **modifier l’application**.
 1. Sélectionnez **utiliser avec contrôle d’application par accès conditionnel** , puis cliquez sur **Enregistrer**.
+
+    ![Activer le menu contextuel des contrôles de session](media/edit-app-enable-session-controls.png)
 
 ## <a name="step-6-update-the-azure-ad-policy-azure-ad-only"></a>Étape 6 : mettre à jour la stratégie de Azure AD (Azure AD uniquement)<a name="update-azure-ad"></a>
 

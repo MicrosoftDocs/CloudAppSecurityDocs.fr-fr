@@ -69,7 +69,7 @@ Les stratégies de protection des identités peuvent être ajustées aux besoins
 
 Les stratégies suivantes sont disponibles :
 
-|Policy|Description|État par défaut|Gravité par défaut|
+|Stratégie|Description|État par défaut|Gravité par défaut|
 |---|---|---|---|
 |Informations d'identification divulguées|Affiche les alertes des informations d’identification divulguées, les informations d’identification valides de l’utilisateur ont été divulguées|activé|Faible-recevoir toutes les alertes|
 |Connexion risquée|Agrège plusieurs détections de connexion risquée, les connexions qui n’ont pas été effectuées par l’utilisateur|activé|Alertes haute réception uniquement de gravité élevée|
