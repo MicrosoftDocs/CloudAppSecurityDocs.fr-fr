@@ -14,22 +14,22 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: dbebb807cc04751057eeaa4c62b863dafc0096bc
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 7480a6eb0fdcd887637a1ed98411b0496f3b312f
+ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88781597"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88963860"
 ---
 # <a name="manage-admin-access"></a>Gérer l’accès administrateur
 
 *S’applique à : Microsoft Cloud App Security*
 
-Microsoft Cloud App Security prend en charge le contrôle d’accès basé sur les rôles. Cet article explique comment définir l’accès au portail Cloud App Security pour vos administrateurs. Pour plus d’informations sur l’attribution de rôles d’administrateur, consultez les articles pour [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles) et [Office 365](https://docs.microsoft.com/office365/admin/add-users/assign-admin-roles).
+Microsoft Cloud App Security prend en charge le contrôle d’accès basé sur les rôles. Cet article explique comment définir l’accès au portail Cloud App Security pour vos administrateurs. Pour plus d’informations sur l’attribution de rôles d’administrateur, consultez les articles pour [Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles) et [Office 365](/office365/admin/add-users/assign-admin-roles).
 
 ## <a name="office-365-and-azure-ad-roles-with-access-to-cloud-app-security"></a>Rôles Office 365 et Azure AD avec accès à Cloud App Security
 
-Par défaut, les rôles d’administrateur Office 365 et [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) suivants ont accès aux Cloud App Security :
+Par défaut, les rôles d’administrateur Office 365 et [Azure Active Directory (Azure AD)](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) suivants ont accès aux Cloud App Security :
 
 - **Administrateur général et Administrateur de la sécurité :** les administrateurs avec un **Accès total** disposent d’autorisations complètes dans Cloud App Security. Ils peuvent ajouter des administrateurs, ajouter des stratégies et des paramètres, charger des journaux et effectuer des actions de gouvernance.
 

@@ -14,18 +14,18 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0ea29fe115c4235f926ae2d64e3a377bc02949f0
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 85a2c8a97406cd65ca5c60cfeac36b92660b2b1f
+ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88780050"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88963877"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-integration-with-microsoft-cloud-app-security"></a>Intégration de Microsoft Defender-protection avancée contre les menaces avec Microsoft Cloud App Security
 
 *S’applique à : Microsoft Cloud App Security*
 
-Microsoft Cloud App Security s’intègre à Microsoft Defender-protection avancée contre les menaces (ATP) en mode natif. L’intégration simplifie le lancement de Cloud Discovery, étend les fonctionnalités de Cloud Discovery au-delà de votre réseau d’entreprise et permet d’effectuer des recherches basées sur la machine. [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) est une plateforme de sécurité pour la protection, la détection, l’investigation et la réponse intelligentes. Microsoft Defender ATP protège les points de terminaison contre les menaces informatiques, détecte les attaques avancées et les violations de données, automatise les incidents de sécurité et améliore la sécurité.
+Microsoft Cloud App Security s’intègre à Microsoft Defender-protection avancée contre les menaces (ATP) en mode natif. L’intégration simplifie le lancement de Cloud Discovery, étend les fonctionnalités de Cloud Discovery au-delà de votre réseau d’entreprise et permet d’effectuer des recherches basées sur la machine. [Microsoft Defender ATP](/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) est une plateforme de sécurité pour la protection, la détection, l’investigation et la réponse intelligentes. Microsoft Defender ATP protège les points de terminaison contre les menaces informatiques, détecte les attaques avancées et les violations de données, automatise les incidents de sécurité et améliore la sécurité.
 
 Cloud App Security utilise les informations de trafic collectées par Microsoft Defender ATP sur les applications Cloud et les services accessibles à partir d’ordinateurs Windows 10 gérés par le service informatique. L’intégration native vous permet d’exécuter des Cloud Discovery sur n’importe quel ordinateur du réseau d’entreprise, à l’aide du Wi-Fi public, de l’itinérance et de l’accès à distance. Elle permet également d’effectuer des recherches basées sur la machine.
 
@@ -33,7 +33,7 @@ L’intégration est prête à l’emploi et ne nécessite pas de déploiement s
 
 En outre, lorsque vous identifiez un utilisateur à risque, vous pouvez vérifier tous les ordinateurs auxquels l’utilisateur a accédé pour détecter les risques potentiels. Si vous identifiez un ordinateur à risque, cochez tous les utilisateurs qui l’ont utilisé pour détecter d’autres risques potentiels.
 
-Une fois les informations de trafic collectées, vous êtes prêt à approfondir l' [utilisation des applications Cloud](discovered-apps.md#deep-dive-into-discovered-apps) dans votre organisation. Cloud App Security tire parti des fonctionnalités de protection réseau de Microsoft Defender ATP pour bloquer l’accès des appareils de point de terminaison aux applications Cloud. Vous pouvez bloquer les applications en les [marquant comme non **Unsanctioned** ](governance-discovery.md#BKMK_SanctionApp) approuvées dans le portail. En fonction de l’utilisation complète et de l’évaluation des risques de chaque application non approuvée, les domaines de l’application sont utilisés pour créer des [indicateurs de domaine](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators#create-indicators-for-ips-and-urlsdomains-preview) dans le portail Microsoft Defender ATP. L’antivirus Microsoft Defender, exécuté sur les appareils de point de terminaison, utilise les indicateurs de domaine pour bloquer l’accès à ces applications.
+Une fois les informations de trafic collectées, vous êtes prêt à approfondir l' [utilisation des applications Cloud](discovered-apps.md#deep-dive-into-discovered-apps) dans votre organisation. Cloud App Security tire parti des fonctionnalités de protection réseau de Microsoft Defender ATP pour bloquer l’accès des appareils de point de terminaison aux applications Cloud. Vous pouvez bloquer les applications en les [marquant comme non **Unsanctioned** ](governance-discovery.md#BKMK_SanctionApp) approuvées dans le portail. En fonction de l’utilisation complète et de l’évaluation des risques de chaque application non approuvée, les domaines de l’application sont utilisés pour créer des [indicateurs de domaine](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators#create-indicators-for-ips-and-urlsdomains-preview) dans le portail Microsoft Defender ATP. L’antivirus Microsoft Defender, exécuté sur les appareils de point de terminaison, utilise les indicateurs de domaine pour bloquer l’accès à ces applications.
 
 > [!NOTE]
 > Vous souhaitez découvrir Microsoft Defender ATP ? [Inscrivez-vous pour un essai gratuit](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-assignaccess-abovefoldlink).
@@ -44,9 +44,9 @@ Une fois les informations de trafic collectées, vous êtes prêt à approfondir
 - Licence Microsoft Defender ATP
 - Windows 10 version 1709 (version du système d’exploitation 16299,1085 avec KB4493441), Windows 10 version 1803 (version du système d’exploitation 17134,704 avec KB4493464), Windows 10 version 1809 (système d’exploitation version 17763,379 avec KB4489899) ou versions ultérieures de Windows 10
 - Antivirus Microsoft Defender
-  - [protection en temps réel activée](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus)
-  - [protection fournie par le Cloud activée](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus)
-  - [Protection réseau activée et configurée pour bloquer le mode](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-network-protection)
+  - [protection en temps réel activée](/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus)
+  - [protection fournie par le Cloud activée](/windows/security/threat-protection/windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus)
+  - [Protection réseau activée et configurée pour bloquer le mode](/windows/security/threat-protection/microsoft-defender-atp/enable-network-protection)
 
 ## <a name="how-it-works"></a>Fonctionnement
 
@@ -120,7 +120,7 @@ Pour activer le contrôle d’accès pour les applications Cloud, procédez comm
 
     ![Capture d’écran montrant comment activer le blocage avec Microsoft Defender ATP](media/defender-atp-integration.png)
 
-1. Dans Microsoft Defender Security Center, accédez à **paramètres**  >  **fonctionnalités avancées**, puis sélectionnez indicateurs de **réseau personnalisés**. Pour plus d’informations sur les indicateurs réseau, consultez [créer des indicateurs pour les adresses IP et les URL/domaines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators#create-indicators-for-ips-and-urlsdomains-preview).
+1. Dans Microsoft Defender Security Center, accédez à **paramètres**  >  **fonctionnalités avancées**, puis sélectionnez indicateurs de **réseau personnalisés**. Pour plus d’informations sur les indicateurs réseau, consultez [créer des indicateurs pour les adresses IP et les URL/domaines](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators#create-indicators-for-ips-and-urlsdomains-preview).
 
     Cela vous permet de tirer parti des fonctionnalités de protection réseau antivirus de Microsoft Defender pour bloquer l’accès à un ensemble prédéfini d’URL à l’aide de Cloud App Security, soit en attribuant manuellement des [balises d’application](governance-discovery.md#BKMK_SanctionApp) à des applications spécifiques, soit en utilisant automatiquement une [stratégie de découverte d’application](cloud-discovery-policies.md#creating-an-app-discovery-policy).
 

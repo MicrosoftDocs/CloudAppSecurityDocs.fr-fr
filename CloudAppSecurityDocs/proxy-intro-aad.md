@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 68b2f2a6bc1c8350510c54dc505593c35b5de0b0
-ms.sourcegitcommit: 5cf263c4094f5ac91210b03d085ca3dbca50f32d
+ms.openlocfilehash: a1d6abfc92a1678f954c4a332dc4c7e5e82536b8
+ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87388675"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88963962"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Protéger les applications avec le Contrôle d’accès conditionnel aux applications Microsoft Cloud App Security
 
@@ -79,7 +79,7 @@ Le contrôle d’application par accès conditionnel vous permet de créer des s
 
 ### <a name="intune-compliant-and-hybrid-azure-ad-joined-devices"></a>Appareils conformes à Intune et Azure AD Hybride joints
 
-Azure AD l’accès conditionnel permet de transmettre directement les informations d’appareil jointes et conformes à Intune et Azure AD Hybride à Cloud App Security. À partir de là, vous pouvez développer une stratégie d’accès ou de session qui utilise l’état de l’appareil comme filtre. Pour plus d’informations, consultez la [Présentation de la gestion des appareils dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction).
+Azure AD l’accès conditionnel permet de transmettre directement les informations d’appareil jointes et conformes à Intune et Azure AD Hybride à Cloud App Security. À partir de là, vous pouvez développer une stratégie d’accès ou de session qui utilise l’état de l’appareil comme filtre. Pour plus d’informations, consultez la [Présentation de la gestion des appareils dans Azure Active Directory](/azure/active-directory/device-management-introduction).
 
 > [!NOTE]
 > Certains navigateurs peuvent nécessiter une configuration supplémentaire telle que l’installation d’une extension. Pour plus d’informations, consultez [prise en charge du navigateur d’accès conditionnel](https://go.microsoft.com/fwlink/?linkid=2102732).
@@ -119,7 +119,7 @@ Une fois les certificats téléchargés, vous pouvez créer des stratégies d’
 
 ## <a name="supported-apps-and-clients"></a>Applications et clients pris en charge
 
-Les contrôles de session et d’accès peuvent être appliqués à n’importe quelle authentification unique interactive, en utilisant le protocole d’authentification SAML 2,0 ou, si vous utilisez Azure AD, le protocole d’authentification Open ID Connect. En outre, si vos applications sont configurées avec Azure AD, vous pouvez également appliquer ces contrôles aux applications hébergées localement configurées avec le [Proxy Azure ad App](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy). En outre, les contrôles d’accès peuvent être appliqués aux applications clientes natives et de bureau.
+Les contrôles de session et d’accès peuvent être appliqués à n’importe quelle authentification unique interactive, en utilisant le protocole d’authentification SAML 2,0 ou, si vous utilisez Azure AD, le protocole d’authentification Open ID Connect. En outre, si vos applications sont configurées avec Azure AD, vous pouvez également appliquer ces contrôles aux applications hébergées localement configurées avec le [Proxy Azure ad App](/azure/active-directory/manage-apps/application-proxy). En outre, les contrôles d’accès peuvent être appliqués aux applications clientes natives et de bureau.
 
 Cloud App Security identifie les applications à l’aide des informations disponibles dans son catalogue d’applications Cloud. Certaines organisations et utilisateurs personnalisent des applications en ajoutant des plug-ins. Toutefois, pour que les contrôles de session fonctionnent correctement avec ces plug-ins, les domaines personnalisés associés doivent être ajoutés à l’application correspondante dans le catalogue.
 
@@ -149,7 +149,7 @@ Alors que les contrôles de session sont créés pour fonctionner avec n’impor
 - AWS
 - DevOps Azure (Visual Studio Team Services)
 - Portail Azure (préversion)
-- Box
+- Zone
 - Concur
 - CornerStone on Demand
 - DocuSign

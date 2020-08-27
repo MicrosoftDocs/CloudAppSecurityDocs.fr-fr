@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1123002a60f5764a6a909932b0326217738a5ed8
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: e46982d06a21aa07625a00162893c2b52ecf841e
+ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88781036"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88963809"
 ---
 # <a name="connect-office-365-to-microsoft-cloud-app-security"></a>Connecter Office 365 à Microsoft Cloud App Security
 
@@ -46,7 +46,7 @@ Cloud App Security prend en charge les applications Office 365 suivantes :
 - Yammer
 
 > [!NOTE]
-> Cloud App Security s’intègre directement avec les [journaux d’audit d’Office 365](https://docs.microsoft.com/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log?view=o365-worldwide) et reçoit tous les événements audités de **tous les services pris en charge**, tels que powerapps, Forms, Sway et Stream.
+> Cloud App Security s’intègre directement avec les [journaux d’audit d’Office 365](/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log?view=o365-worldwide) et reçoit tous les événements audités de **tous les services pris en charge**, tels que powerapps, Forms, Sway et Stream.
 
 ## <a name="how-to-connect-office-365-to-cloud-app-security"></a>Comment connecter Office 365 à Cloud App Security  
 
@@ -54,11 +54,11 @@ Cloud App Security prend en charge les applications Office 365 suivantes :
 >
 >- Vous devez disposer d’au moins une licence Office 365 pour connecter Office 365 à Cloud App Security.
 >- Pour activer l’analyse des activités Office 365 dans Cloud App Security, vous devez activer l’audit dans le [Centre de sécurité et conformité Office](https://support.microsoft.com/help/4026501/office-auditing-in-office-365-for-admins).
->- La journalisation d’audit de l’administrateur Exchange, qui est activée par défaut dans Office 365, consigne un événement dans le journal d’audit Office 365 quand un administrateur (ou un utilisateur qui a reçu des privilèges d’administrateur) apporte une modification dans votre organisation Exchange Online. Les modifications apportées en utilisant le Centre d’administration Exchange ou en exécutant une applet de commande dans Windows PowerShell sont enregistrées dans le journal d’audit d’administrateur Exchange. Pour plus d’informations sur la journalisation d’audit de l’administrateur dans Exchange, voir [Gestion de la journalisation d’audit de l’administrateur](https://docs.microsoft.com/exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log).
+>- La journalisation d’audit de l’administrateur Exchange, qui est activée par défaut dans Office 365, consigne un événement dans le journal d’audit Office 365 quand un administrateur (ou un utilisateur qui a reçu des privilèges d’administrateur) apporte une modification dans votre organisation Exchange Online. Les modifications apportées en utilisant le Centre d’administration Exchange ou en exécutant une applet de commande dans Windows PowerShell sont enregistrées dans le journal d’audit d’administrateur Exchange. Pour plus d’informations sur la journalisation d’audit de l’administrateur dans Exchange, voir [Gestion de la journalisation d’audit de l’administrateur](/exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log).
 >- L’enregistrement d’audit pour les boîtes aux lettres Exchange doit être activé pour chaque boîte aux lettres utilisateur avant de consigner toute activité de l’utilisateur dans Exchange Online ; voir [Activités de la boîte aux lettres Exchange](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c).
 >- Si des applications Office sont activées, les groupes qui font partie d’Office 365 sont aussi importés dans Cloud App Security à partir d’applications Office spécifiques : par exemple, si SharePoint est activé, les groupes Office 365 sont importés également comme groupes SharePoint.
 >- Vous devez [activer l’audit dans Power BI](https://powerbi.microsoft.com/documentation/powerbi-admin-auditing/) pour obtenir les journaux. Une fois l’audit activé, Cloud App Security commence à obtenir les journaux (avec un délai de 24 à 72 heures).
->- Vous devez [activer l’audit dans Dynamics 365](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-use-comprehensive-auditing#enable-auditing) pour récupérer les journaux à partir de là. Une fois l’audit activé, Cloud App Security commence à obtenir les journaux (avec un délai de 24 à 72 heures).
+>- Vous devez [activer l’audit dans Dynamics 365](/dynamics365/customer-engagement/admin/enable-use-comprehensive-auditing#enable-auditing) pour récupérer les journaux à partir de là. Une fois l’audit activé, Cloud App Security commence à obtenir les journaux (avec un délai de 24 à 72 heures).
 >- Si votre Azure Active Directory est défini pour se synchroniser automatiquement avec les utilisateurs de votre environnement local Active Directory, les paramètres de l’environnement local remplacent les paramètres Azure AD et l’utilisation de l’action de gouvernance **Interrompre la synchronisation de l’utilisateur** est rétablie.
 >- Pour les activités de connexion Azure AD, Cloud App Security ne couvre que les activités de connexion interactives et les activités de connexion à partir de protocoles hérités tels qu’ActiveSync. Les activités de connexion non interactives peuvent être affichées dans le journal d’audit Azure AD.
 > - Les [déploiements multigéographiques](/office365/enterprise/office-365-multi-geo) sont uniquement pris en charge pour OneDrive

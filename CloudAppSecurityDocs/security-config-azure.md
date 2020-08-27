@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0d821e574dc241097d70814cf854c46e4db2664b
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 1a066955c2a832f46f38c128a908c9f772f0dbe3
+ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88781546"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88963979"
 ---
 # <a name="security-configuration-for-azure"></a>Configuration de la sécurité pour Azure
 
@@ -63,7 +63,7 @@ Pour obtenir des recommandations sur la configuration de la sécurité dans Micr
 
     ![Configuration de la sécurité](media/security-configuration-azure.png)
 
-Pour plus d’informations sur l’implémentation des recommandations de sécurité, consultez [Gestion des recommandations de sécurité dans Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-recommendations).
+Pour plus d’informations sur l’implémentation des recommandations de sécurité, consultez [Gestion des recommandations de sécurité dans Azure Security Center](/azure/security-center/security-center-recommendations).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ed0d53a3a71e03dab31ad179e293ae1b7dbc43b6
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 6dbba6a8be8f0292d924baabb3fc670e3521c5b4
+ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88779489"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88963435"
 ---
 # <a name="accounts"></a>Comptes
 
@@ -43,7 +43,7 @@ La page **Utilisateurs et comptes** vous permet d’examiner facilement certains
 * Vous pouvez voir les comptes qui sont inclus dans chaque groupe d’utilisateurs  
 * Vous pouvez voir les applications qui sont consultées par chaque compte et les applications qui sont supprimées pour des comptes spécifiques
 
-    ![écran des comptes](./media/accounts-page.png)
+    ![écran des comptes](media/accounts-page.png)
 
 ## <a name="users-and-accounts-filters"></a>Filtres d’utilisateurs et de comptes
 
@@ -51,7 +51,7 @@ Vous trouverez ci-dessous une liste des filtres de comptes qui peuvent être app
   
 <!--- **Account name**: The account name is the primary alias of the user, but other identifiers from other Microsoft accounts (Office 365 and Azure Active Directory) such as proxy addresses, aliases, SID are supported and consolidated beneath the primary alias. -->
 
-* **Affiliation** : l’affiliation est **interne** ou **externe**. Pour définir les utilisateurs et les comptes qui sont internes, sous **Paramètres**, veillez à définir la **plage d’adresses IP** de votre organisation interne. Dans le cas où le compte dispose d’autorisations d’administrateur, l’icône dans la table Comptes s’affiche avec l’ajout de la cravate rouge. ![icône d’administration des comptes](./media/accounts-admin-icon.png)
+* **Affiliation** : l’affiliation est **interne** ou **externe**. Pour définir les utilisateurs et les comptes qui sont internes, sous **Paramètres**, veillez à définir la **plage d’adresses IP** de votre organisation interne. Dans le cas où le compte dispose d’autorisations d’administrateur, l’icône dans la table Comptes s’affiche avec l’ajout de la cravate rouge. ![icône d’administration des comptes](media/accounts-admin-icon.png)
 
 * **Application** : vous pouvez filtrer n’importe quelle application connectée à l’API utilisée par les comptes de votre organisation.
 * **Domaine** : vous permet de filtrer des utilisateurs dans des domaines spécifiques.

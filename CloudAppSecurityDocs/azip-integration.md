@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 05a2263427f30bcfcd1fdc0fb3b402e115dc3d9e
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: b8bb6205a2e1e8e1e9f27a8e67158c9b25a4648b
+ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88781325"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88963503"
 ---
 # <a name="azure-information-protection-integration"></a>Intégration d’Azure Information Protection
 
@@ -28,7 +28,7 @@ ms.locfileid: "88781325"
 Microsoft Cloud App Security vous permet d’appliquer des étiquettes de classification Azure Information Protection automatiquement, avec ou sans protection, à des fichiers, en tant qu’action de gouvernance de stratégie de fichier. Vous pouvez également rechercher des fichiers en filtrant sur l’étiquette de classification appliquée dans le portail Cloud App Security. L’utilisation de classifications accroît la visibilité et le contrôle de vos données sensibles dans le cloud. Pour intégrer Azure Information Protection à Cloud App Security, il suffit de cocher une seule case.
 
 > [!NOTE]
-> Cet article s’applique également aux étiquettes de sensibilité unifiée d’Office 365 si vous avez déjà [migré vos étiquettes de classification pour le centre de sécurité et conformité office 365](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels). Si vous n’avez pas migré vos étiquettes de classification existantes et que vous commencez à créer de nouvelles étiquettes dans le centre de sécurité et conformité Office 365, Cloud App Security utilisera uniquement les étiquettes préexistantes configurées dans le portail Azure Information Protection.
+> Cet article s’applique également aux étiquettes de sensibilité unifiée d’Office 365 si vous avez déjà [migré vos étiquettes de classification pour le centre de sécurité et conformité office 365](/azure/information-protection/configure-policy-migrate-labels). Si vous n’avez pas migré vos étiquettes de classification existantes et que vous commencez à créer de nouvelles étiquettes dans le centre de sécurité et conformité Office 365, Cloud App Security utilisera uniquement les étiquettes préexistantes configurées dans le portail Azure Information Protection.
 
 En intégrant Azure Information Protection à Cloud App Security, vous pouvez utiliser toute la puissance des services et des fichiers sécurisés dans votre cloud, notamment :
 
@@ -61,7 +61,7 @@ Les fichiers qui ont été étiquetés avec une protection en dehors de Cloud Ap
 
 ## <a name="how-it-works"></a>Fonctionnement
 
-Vous connaissez probablement déjà les étiquettes de classification des fichiers dans [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection). Vous pouvez voir les étiquettes de classification d’Azure Information Protection dans Cloud App Security. Dès que vous intégrez Cloud App Security à Azure Information Protection, Cloud App Security analyse les fichiers comme suit :
+Vous connaissez probablement déjà les étiquettes de classification des fichiers dans [Azure Information Protection](/azure/information-protection/what-is-information-protection). Vous pouvez voir les étiquettes de classification d’Azure Information Protection dans Cloud App Security. Dès que vous intégrez Cloud App Security à Azure Information Protection, Cloud App Security analyse les fichiers comme suit :
 
 1. Cloud App Security récupère la liste de toutes les étiquettes de classification utilisées dans votre locataire (tenant). Cette action est effectuée toutes les heures pour maintenir la liste à jour.
 
@@ -182,7 +182,7 @@ Suivez ces instructions pour créer la stratégie de fichier :
 Vous pouvez également définir des alertes ou une notification utilisateur ou encore prendre des mesures immédiates pour ces stratégies.
 En savoir plus sur les [actions de gouvernance](governance-actions.md).
 
-En savoir plus sur [Azure Information Protection](https://docs.microsoft.com/information-protection/understand-explore/what-is-information-protection) et suivre le [didacticiel de démarrage rapide](https://docs.microsoft.com/information-protection/get-started/infoprotect-quick-start-tutorial) pour Azure Information Protection.
+En savoir plus sur [Azure Information Protection](/information-protection/understand-explore/what-is-information-protection) et suivre le [didacticiel de démarrage rapide](/information-protection/get-started/infoprotect-quick-start-tutorial) pour Azure Information Protection.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

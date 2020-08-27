@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 80ae1af2a0f40adbaa1e989de8ec644d721a7f88
-ms.sourcegitcommit: 4450119e1c7e2c54357dca955621327f9c343422
+ms.openlocfilehash: fa42e9e481bd815d3bf8ebc8505bde8712eed59f
+ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2020
-ms.locfileid: "88026987"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88963834"
 ---
 # <a name="support-and-troubleshooting-microsoft-cloud-app-security"></a>Support et résolution des problèmes pour Microsoft Cloud App Security
 
@@ -31,7 +31,7 @@ Cet article décrit les options de support et de résolution des problèmes disp
 
 Microsoft fournit un support global pour Microsoft Cloud App Security (support technique, prévente, facturation et abonnement), Un support technique est disponible en ligne et par téléphone pour les abonnements payants et d’évaluation. Le support technique en ligne est disponible en anglais et en japonais. Le support téléphonique et le support de facturation en ligne sont disponibles dans d’autres langues.
 
-En tant qu’administrateur, vous pouvez utiliser l’option **Aide + support** afin de formuler une demande de support en ligne pour Cloud App Security sur le Portail Azure. Pour ce faire, votre compte doit avoir l’un des [rôles d’administrateur suivants dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) :
+En tant qu’administrateur, vous pouvez utiliser l’option **Aide + support** afin de formuler une demande de support en ligne pour Cloud App Security sur le Portail Azure. Pour ce faire, votre compte doit avoir l’un des [rôles d’administrateur suivants dans Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles-azure-portal) :
 
 * Administrateur général
 
@@ -52,7 +52,7 @@ Sélectionnez **Demande de support** pour créer une demande de support qui s’
 
     * **Type de problème** : **Technique**
 
-    * **Abonnement**:\<*your subscription*\>
+    * **Abonnement**: \<*your subscription*\>
 
     * **Service**: **sécurité des applications Cloud**
 
@@ -80,7 +80,7 @@ Vous pouvez afficher une demande de support sur le Portail Azure. Pour ce faire 
 
 Consultez [l’état actuel de Microsoft Cloud App Security](https://status.cloudappsecurity.com/).
 
-## <a name="additional-resources"></a>Ressources complémentaires
+## <a name="additional-resources"></a>Ressources supplémentaires
 
 * [Échanger avec une communauté de pairs](https://techcommunity.microsoft.com/t5/Microsoft-Cloud-App-Security/bd-p/MicrosoftCloudAppSecurity)
 
@@ -97,7 +97,7 @@ L’équipe Cloud App Security est toujours intéressée par vos commentaires su
 
 * **Commentaires**sur le produit : Envoyez vos commentaires à [casfeedback@microsoft.com](mailto:casfeedback@microsoft.com) .
 
-* **Commentaires sur la documentation**: notre nouveau système de commentaires repose sur les problèmes github. Pour faire des commentaires sur la documentation, vous devez tout d’abord créer un compte GitHub. Pour plus d’informations sur cette modification, lisez [notre billet de blog](https://docs.microsoft.com/teamblog/a-new-feedback-system-is-coming-to-docs).
+* **Commentaires sur la documentation**: notre nouveau système de commentaires repose sur les problèmes github. Pour faire des commentaires sur la documentation, vous devez tout d’abord créer un compte GitHub. Pour plus d’informations sur cette modification, lisez [notre billet de blog](/teamblog/a-new-feedback-system-is-coming-to-docs).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

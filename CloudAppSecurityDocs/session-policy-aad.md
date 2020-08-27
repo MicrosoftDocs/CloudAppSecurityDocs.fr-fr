@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f7231db6910964dfb6fbaacb4467db7c89a2f681
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 3fc036277fac599f3075cd3c9cf765a0623e79a9
+ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88781529"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88963928"
 ---
 # <a name="session-policies"></a>Stratégies de session
 
@@ -42,7 +42,7 @@ Par exemple, vous pouvez décider que pour les appareils non gérés ou pour les
 * Azure AD Premium licence P1 ou la licence requise par votre solution de fournisseur d’identité (IdP)
 * Les applications appropriées doivent être [déployées avec le Contrôle d’accès conditionnel aux applications](proxy-deployment-aad.md)
 * Configurez votre solution de fournisseur d’identité pour qu’elle fonctionne avec Cloud App Security :
-  * Pour [l’accès conditionnel Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal), consultez [Configuration de l’intégration avec Azure AD](proxy-deployment-aad.md#configure-integration-with-azure-ad).
+  * Pour [l’accès conditionnel Azure AD](/azure/active-directory/active-directory-conditional-access-azure-portal), consultez [Configuration de l’intégration avec Azure AD](proxy-deployment-aad.md#configure-integration-with-azure-ad).
   * Pour les autres solutions de fournisseur d’identité, consultez [Configuration de l’intégration avec d’autres solutions de fournisseur d’identité](proxy-deployment-aad.md#configure-integration-with-other-idp-solutions).
 
 ## <a name="create-a-cloud-app-security-session-policy"></a>Créer une stratégie de session Cloud App Security
@@ -110,7 +110,7 @@ Pour exporter ces journaux :
 1. Accédez à la roue dentée des paramètres et cliquez sur **Contrôle d’accès conditionnel aux applications**.
 2. Sur le côté droit du tableau, cliquez sur le bouton d’exportation.
 
-    ![bouton exporter](./media/export-button.png)
+    ![bouton exporter](media/export-button.png)
 3. Sélectionnez la plage du rapport et cliquez sur **Exporter**. Ce processus peut prendre un certain temps.
 
 Pour télécharger le journal exporté :
@@ -118,7 +118,7 @@ Pour télécharger le journal exporté :
 1. Une fois que le rapport est prêt, accédez à **Paramètres**, puis à **Rapports exportés**.
 2. Dans le tableau, sélectionnez le rapport approprié dans la liste des **journaux du trafic du Contrôle d’application par accès conditionnel**, puis cliquez sur Télécharger.
 
-    ![bouton de téléchargement](./media/download-button.png)
+    ![bouton de téléchargement](media/download-button.png)
 
 ## <a name="block-all-downloads"></a><a name="block-download"></a>Bloquer tous les téléchargements
 
@@ -181,4 +181,4 @@ Par exemple, si un utilisateur charge un fichier sans étiquette Azure Informati
 > [!div class="nextstepaction"]
 > [Blocage des téléchargements sur des appareils non gérés à l’aide de Azure AD contrôle d’application par accès conditionnel](use-case-proxy-block-session-aad.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]  
+[!INCLUDE [Open support ticket](includes/support.md)]

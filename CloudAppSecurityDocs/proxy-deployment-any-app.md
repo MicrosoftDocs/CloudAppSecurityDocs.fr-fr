@@ -12,12 +12,12 @@ ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
-ms.openlocfilehash: 0f5fbf5668d49ced48b2a1afe0fc1893e077bf43
-ms.sourcegitcommit: f4ed1283e73af88201dd85fc6a59300cd31341d7
+ms.openlocfilehash: 830eae43a1bd33df1669bc05e9cbc125794af75b
+ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88807616"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88964013"
 ---
 # <a name="onboard-and-deploy-conditional-access-app-control-for-any-app"></a>Intégration et déploiement de contrôle d’application par accès conditionnel pour n’importe quelle application
 
@@ -31,7 +31,7 @@ Pour obtenir la liste des applications qui sont proposées par Cloud App Securit
 
 - Votre organisation doit disposer des licences suivantes pour utiliser contrôle d’application par accès conditionnel :
 
-  - [Azure Active Directory (Azure AD) Premium P1](https://docs.microsoft.com/azure/active-directory/license-users-groups) ou supérieure, ou la licence requise par votre solution IDP (Identity Provider)
+  - [Azure Active Directory (Azure AD) Premium P1](/azure/active-directory/license-users-groups) ou supérieure, ou la licence requise par votre solution IDP (Identity Provider)
   - Microsoft Cloud App Security
 
 - Les applications doivent être configurées avec l’authentification unique
@@ -59,7 +59,7 @@ Procédez comme suit pour configurer une application devant être contrôlée pa
 **Étape 6 : [mettre à jour la stratégie de Azure ad](#update-azure-ad)**
 
 > [!NOTE]
-> Pour déployer contrôle d’application par accès conditionnel pour les applications Azure AD, vous avez besoin d’une [licence valide pour Azure Active Directory Premium P1 ou version ultérieure](https://docs.microsoft.com/azure/active-directory/license-users-groups) , ainsi qu’une licence Cloud App Security.
+> Pour déployer contrôle d’application par accès conditionnel pour les applications Azure AD, vous avez besoin d’une [licence valide pour Azure Active Directory Premium P1 ou version ultérieure](/azure/active-directory/license-users-groups) , ainsi qu’une licence Cloud App Security.
 
 ## <a name="step-1--configure-your-idp-to-work-with-cloud-app-security"></a>Étape 1 : configurer votre IdP pour qu’il fonctionne avec Cloud App Security<a name="conf-idp"></a><a name="conf-azure-ad"></a>
 

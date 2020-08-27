@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2e37846ab6e3daea68358834df20a6ce2ee1ee8c
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 2d3c3b7b3cc3b9984b19cfe1685ab8660d039e2d
+ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88781478"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88963792"
 ---
 # <a name="connect-apps"></a>Connecter des applications
 
@@ -66,7 +66,7 @@ Selon l’application à laquelle vous vous connectez, la connexion d’API acti
 
 Le tableau suivant répertorie, par application cloud, les fonctionnalités prises en charge avec les connecteurs d’applications :
 
-| | AWS | Box | Dropbox | GCP | G Suite | Office 365 | Okta | ServiceNow | Salesforce | Webex | Workday |
+| | AWS | Zone | Dropbox | GCP | G Suite | Office 365 | Okta | ServiceNow | Salesforce | Webex | Workday |
 |-|-|-|-|-|-|-|-|-|-|-|-|
 | **Énumérer les comptes** | ✔ | ✔ | ✔ | Connexion de l’objet G suite | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 | **Liste des groupes** | ✔ | ✔ | ✔ | Connexion de l’objet G suite | ✔ | ✔ | ✔ | ✔ | ✔ | | Non prise en charge par le fournisseur |
@@ -98,22 +98,22 @@ Pour utiliser des connecteurs d’applications, vous devez vérifier que vous av
 |-----|--------------|------|
 | Azure | | Administrateur général |
 | AWS | | Utilisateur récemment créé |
-| Box | Enterprise | Il est fortement recommandé de vous connecter à Box en tant qu’administrateur. La connexion en tant que coadministrateur entraînera uniquement une visibilité partielle des données. Si vous vous connectez en tant que coadministrateur, sélectionnez toutes les autorisations. |
-| Dropbox | Business/Entreprises | Administrateur |
+| Zone | Entreprise | Il est fortement recommandé de vous connecter à Box en tant qu’administrateur. La connexion en tant que coadministrateur entraînera uniquement une visibilité partielle des données. Si vous vous connectez en tant que coadministrateur, sélectionnez toutes les autorisations. |
+| Dropbox | Business/Entreprises | Admin |
 | GitHub | GitHub Enterprise Cloud | Propriétaire |
 | GCP | | Consultez les [conditions préalables Connect GCP](connect-google-gcp-to-microsoft-cloud-app-security.md#prerequisites) |
 | G Suite | Compte G Suite Business ou Entreprise<br /><br />G Suite Enterprise (au minimum) | Super administrateur |
 | Office 365 | | Administrateur général |
-| Okta | Enterprise (pas la version d’essai) | Administrateur |
-| Salesforce | | Administrateur |
+| Okta | Enterprise (pas la version d’essai) | Admin |
+| Salesforce | | Admin |
 | ServiceNow | Eureka et au-dessus | Rôle admin + RestAPI |
 | Webex | | Admin + conformité administrateur |
 | Workday | | Consultez les [conditions préalables Connect](connect-workday-to-microsoft-cloud-app-security.md#prerequisites) de la journée de travail |
 
 ### <a name="expressroute"></a>ExpressRoute
 
-Cloud App Security est déployé dans Azure et entièrement intégré à [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/). Toutes les interactions avec les applications Cloud App Security et le trafic envoyé à Cloud App Security, y compris le chargement des journaux de découverte, sont acheminés via l' **homologation publique** ExpressRoute pour améliorer la latence, les performances et la sécurité. Aucune étape de configuration n’est nécessaire côté client.
-Pour plus d’informations sur le peering public, consultez [Circuits ExpressRoute et domaines de routage](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/).
+Cloud App Security est déployé dans Azure et entièrement intégré à [ExpressRoute](/azure/expressroute/expressroute-introduction). Toutes les interactions avec les applications Cloud App Security et le trafic envoyé à Cloud App Security, y compris le chargement des journaux de découverte, sont acheminés via l' **homologation publique** ExpressRoute pour améliorer la latence, les performances et la sécurité. Aucune étape de configuration n’est nécessaire côté client.
+Pour plus d’informations sur le peering public, consultez [Circuits ExpressRoute et domaines de routage](/azure/expressroute/expressroute-circuit-peerings).
 
 ## <a name="disable-app-connectors"></a>Désactiver les connecteurs d’application
 

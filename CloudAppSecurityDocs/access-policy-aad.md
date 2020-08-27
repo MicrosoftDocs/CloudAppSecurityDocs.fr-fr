@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2256703ee2c92774635f7ce04dfa0c08694bd627
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 9fdea4bcf8db70a1f8eed023cb8af81d328b8771
+ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88779506"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88963520"
 ---
 # <a name="access-policies"></a>Stratégies d’accès
 
@@ -35,7 +35,7 @@ Les stratégies d’accès Microsoft Cloud App Security permettent la surveillan
 - Azure AD Premium licence P1 ou la licence requise par votre solution de fournisseur d’identité (IdP)
 - Les applications appropriées doivent être [déployées avec le Contrôle d’accès conditionnel aux applications](proxy-deployment-aad.md)
 - Configurez votre solution de fournisseur d’identité pour qu’elle fonctionne avec Cloud App Security :
-  - Pour [l’accès conditionnel Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal), consultez [Configuration de l’intégration avec Azure AD](proxy-deployment-aad.md#configure-integration-with-azure-ad).
+  - Pour [l’accès conditionnel Azure AD](/azure/active-directory/active-directory-conditional-access-azure-portal), consultez [Configuration de l’intégration avec Azure AD](proxy-deployment-aad.md#configure-integration-with-azure-ad).
   - Pour les autres solutions de fournisseur d’identité, consultez [Configuration de l’intégration avec d’autres solutions de fournisseur d’identité](proxy-deployment-aad.md#configure-integration-with-other-idp-solutions).
 
 ## <a name="create-a-cloud-app-security-access-policy"></a>Créer une stratégie d’accès Cloud App Security

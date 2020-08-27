@@ -13,18 +13,18 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 991d71778e08aa7c5200a5f719d5df6867653367
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: c2d208fa3570f32719e247b006c831755ab80173
+ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88781495"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88963775"
 ---
 # <a name="integrate-with-microsoft-power-automate-for-custom-alert-automation"></a>Intégration avec Microsoft Power automate pour l’automatisation des alertes personnalisée
 
 *S’applique à : Microsoft Cloud App Security*
 
-Cloud App Security s’intègre à [Microsoft Power automate](https://docs.microsoft.com/flow/getting-started) pour fournir une automatisation des alertes personnalisée et des règles d’orchestration. À l’aide [de l’écosystème de connecteurs](https://docs.microsoft.com/connectors/) disponibles dans Power automate, vous pouvez automatiser le déclenchement des règles lorsque Cloud App Security génère des alertes. Vous pouvez par exemple créer automatiquement un problème dans un système de gestion de tickets à l’aide du [connecteur ServiceNow](https://docs.microsoft.com/connectors/service-now/) ou envoyer un e-mail d’approbation pour exécuter une action de gouvernance personnalisée quand une alerte est déclenchée dans Cloud App Security.
+Cloud App Security s’intègre à [Microsoft Power automate](/flow/getting-started) pour fournir une automatisation des alertes personnalisée et des règles d’orchestration. À l’aide [de l’écosystème de connecteurs](/connectors/) disponibles dans Power automate, vous pouvez automatiser le déclenchement des règles lorsque Cloud App Security génère des alertes. Vous pouvez par exemple créer automatiquement un problème dans un système de gestion de tickets à l’aide du [connecteur ServiceNow](/connectors/service-now/) ou envoyer un e-mail d’approbation pour exécuter une action de gouvernance personnalisée quand une alerte est déclenchée dans Cloud App Security.
 
 ## <a name="prerequisites"></a>Prérequis
 
@@ -34,7 +34,7 @@ Cloud App Security s’intègre à [Microsoft Power automate](https://docs.micro
 
 En soi, Cloud App Security fournit des options de gouvernance prédéfinies, telles que la suspension d’un utilisateur ou la création d’un fichier privé lors de la définition de stratégies. En créant un manuel dans Power automatiser à l’aide du connecteur Cloud App Security, vous pouvez créer des flux de travail pour activer des options de gouvernance personnalisées pour vos stratégies. Une fois le manuel créé dans Power automate, associez-le simplement à une stratégie dans Cloud App Security pour envoyer des alertes à Power automate. Microsoft Power automate offre plusieurs connecteurs et conditions pour créer un flux de travail personnalisé pour votre organisation.
 
-Le [connecteur Cloud App Security](https://docs.microsoft.com/connectors/cloudappsecurity/) dans Power automate prend en charge les déclencheurs et les actions automatisés. Power automate est déclenché automatiquement quand Cloud App Security génère une alerte. Les actions incluent le changement de l’état de l’alerte dans Cloud App Security.
+Le [connecteur Cloud App Security](/connectors/cloudappsecurity/) dans Power automate prend en charge les déclencheurs et les actions automatisés. Power automate est déclenché automatiquement quand Cloud App Security génère une alerte. Les actions incluent le changement de l’état de l’alerte dans Cloud App Security.
 
 ## <a name="how-to-create-playbooks-with-power-automate"></a>Comment créer des règles avec Power automate
 

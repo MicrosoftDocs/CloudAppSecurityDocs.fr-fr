@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: itfalcon
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f117092ebdae230eae473bf4bbfd2d53b05fa3eb
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 7b93a60c42b024b03a048848d048f4ed93d13f17
+ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88781376"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88963469"
 ---
 # <a name="how-to-investigate-anomaly-detection-alerts"></a>Comment examiner les alertes de détection d’anomalies
 
@@ -350,7 +350,7 @@ Activités dans une session unique indiquant qu’un utilisateur a effectué des
 - Examinez toutes les activités des utilisateurs pour obtenir des indicateurs supplémentaires de compromission, tels que l’alerte de [transfert de boîte de réception suspecte](#suspicious-inbox-forwarding) , suivie d’une alerte de [voyage impossible](#impossible-travel) . Rechercher :
 
     1. Nouvelles règles de transfert SMTP, comme suit :
-        - Vérifiez les noms des règles de transfert malveillants. Les noms de règle peuvent varier par rapport à des noms simples, tels que « transférer tous les E-mails » et « transfert automatique », ou des noms trompeurs, tels qu’un « . » à peine visible. Les noms de règle de transfert peuvent même être vides et le destinataire de transfert peut être un compte de messagerie unique ou une liste entière. Des règles malveillantes peuvent également être masquées à partir de l’interface utilisateur. Une fois détectés, vous pouvez utiliser ce billet de [blog](https://blogs.msdn.microsoft.com/hkong/2015/02/27/how-to-delete-corrupted-hidden-inbox-rules-from-a-mailbox-using-mfcmapi/) utile pour savoir comment supprimer des règles masquées des boîtes aux lettres.
+        - Vérifiez les noms des règles de transfert malveillants. Les noms de règle peuvent varier par rapport à des noms simples, tels que « transférer tous les E-mails » et « transfert automatique », ou des noms trompeurs, tels qu’un « . » à peine visible. Les noms de règle de transfert peuvent même être vides et le destinataire de transfert peut être un compte de messagerie unique ou une liste entière. Des règles malveillantes peuvent également être masquées à partir de l’interface utilisateur. Une fois détectés, vous pouvez utiliser ce billet de [blog](/archive/blogs/hkong/how-to-delete-corrupted-hidden-inbox-rules-from-a-mailbox-using-mfcmapi) utile pour savoir comment supprimer des règles masquées des boîtes aux lettres.
         - Si vous détectez une règle de transfert non reconnue sur une adresse de messagerie interne ou externe inconnue, vous pouvez supposer que le compte de la boîte de réception a été compromis.
     1. Nouvelles règles de boîte de réception, telles que « supprimer tout », « déplacer les messages vers un autre dossier » ou avec des conventions d’affectation des noms obscures, par exemple « ... ».
     1. Augmentation des e-mails envoyés.
@@ -539,7 +539,7 @@ Activités indiquant qu’une personne malveillante a obtenu l’accès à la bo
 1. Passez en revue toutes les activités des utilisateurs pour obtenir des indicateurs supplémentaires de compromission, tels que l’alerte, suivie d’une alerte de [voyage impossible](#impossible-travel) . Rechercher :
 
     1. Nouvelles règles de transfert SMTP, comme suit :
-        - Vérifiez les noms des règles de transfert malveillants. Les noms de règle peuvent varier par rapport à des noms simples, tels que « transférer tous les E-mails » et « transfert automatique », ou des noms trompeurs, tels qu’un « . » à peine visible. Les noms de règle de transfert peuvent même être vides et le destinataire de transfert peut être un compte de messagerie unique ou une liste entière. Des règles malveillantes peuvent également être masquées à partir de l’interface utilisateur. Une fois détectés, vous pouvez utiliser ce billet de [blog](https://blogs.msdn.microsoft.com/hkong/2015/02/27/how-to-delete-corrupted-hidden-inbox-rules-from-a-mailbox-using-mfcmapi/) utile pour savoir comment supprimer des règles masquées des boîtes aux lettres.
+        - Vérifiez les noms des règles de transfert malveillants. Les noms de règle peuvent varier par rapport à des noms simples, tels que « transférer tous les E-mails » et « transfert automatique », ou des noms trompeurs, tels qu’un « . » à peine visible. Les noms de règle de transfert peuvent même être vides et le destinataire de transfert peut être un compte de messagerie unique ou une liste entière. Des règles malveillantes peuvent également être masquées à partir de l’interface utilisateur. Une fois détectés, vous pouvez utiliser ce billet de [blog](/archive/blogs/hkong/how-to-delete-corrupted-hidden-inbox-rules-from-a-mailbox-using-mfcmapi) utile pour savoir comment supprimer des règles masquées des boîtes aux lettres.
         - Si vous détectez une règle de transfert non reconnue sur une adresse de messagerie interne ou externe inconnue, vous pouvez supposer que le compte de la boîte de réception a été compromis.
     1. Nouvelles règles de boîte de réception, telles que « supprimer tout », « déplacer les messages vers un autre dossier » ou avec des conventions d’affectation des noms obscures, par exemple « ... ».
 1. Examinez les activités effectuées à partir de l’adresse IP utilisée pour créer la règle pour détecter d’autres utilisateurs compromis.

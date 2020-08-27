@@ -9,12 +9,12 @@ ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1fa2a1e9d0c46531284b674cf20dd512ecba292c
-ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
+ms.openlocfilehash: 5efaa862e32264005fa3b469218c4aad041b12b7
+ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87254786"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88963996"
 ---
 # <a name="threat-protection-policies"></a>Stratégies de protection contre les menaces
 
@@ -23,7 +23,7 @@ ms.locfileid: "87254786"
 Cloud App Security vous permet d’identifier les problèmes d’utilisation et de sécurité du Cloud à haut risque, de détecter un comportement anormal des utilisateurs et d’éviter les menaces dans vos applications Cloud approuvées. Bénéficiez d’une visibilité sur les activités des utilisateurs et des administrateurs et définissez des stratégies pour alerter automatiquement lorsque des comportements suspects ou des activités spécifiques que vous considérez comme risquées sont détectés. Sortez de la grande quantité de données de Microsoft Threat Intelligence et de la recherche de sécurité pour vous assurer que vos applications approuvées disposent de tous les contrôles de sécurité dont vous avez besoin et que vous pouvez en garder le contrôle.
 
 > [!NOTE]
-> Lors de l’intégration d’Cloud App Security avec Azure-protection avancée contre les menaces (Azure ATP), les stratégies de Azure ATP s’affichent également dans la page stratégies. Pour obtenir la liste des stratégies de Azure ATP, consultez [alertes de sécurité](https://docs.microsoft.com/azure-advanced-threat-protection/suspicious-activity-guide).
+> Lors de l’intégration d’Cloud App Security avec Azure-protection avancée contre les menaces (Azure ATP), les stratégies de Azure ATP s’affichent également dans la page stratégies. Pour obtenir la liste des stratégies de Azure ATP, consultez [alertes de sécurité](/azure-advanced-threat-protection/suspicious-activity-guide).
 
 ## <a name="detect-and-control-user-activity-from-unfamiliar-locations"></a>Détecter et contrôler l’activité des utilisateurs à partir d’emplacements inconnus
 
