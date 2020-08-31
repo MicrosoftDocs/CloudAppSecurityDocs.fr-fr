@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9130c75680ec6cb095d3995cd4a5aee3329f3189
-ms.sourcegitcommit: 9395620dfc916b0954207c4fe26f58c76cdfe0d0
+ms.openlocfilehash: 6e970d0ef3d2d89fecdbc224c9f56f5dbc29f33b
+ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/05/2020
-ms.locfileid: "85953689"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89150228"
 ---
 # <a name="protecting-connected-apps"></a>Protection des applications connectées
 
@@ -36,7 +36,7 @@ L’ampleur de la prise en charge de chaque application repose sur la richesse d
 - [Protéger GitHub Enterprise Cloud](protect-github.md)
 - [Protéger GCP](protect-gcp.md)
 - [Protéger G Suite](protect-gsuite.md)
-- [Protéger Office 365](protect-office-365.md)
+- [Protéger Microsoft 365](protect-office-365.md)
 - [Protéger Okta](protect-okta.md)
 - [Protéger Salesforce](protect-salesforce.md)
 - [Protéger ServiceNow](protect-servicenow.md)

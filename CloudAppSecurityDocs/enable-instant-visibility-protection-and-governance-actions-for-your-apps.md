@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2d3c3b7b3cc3b9984b19cfe1685ab8660d039e2d
-ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
+ms.openlocfilehash: 230aa68ca85e2c31fa866ed44183986152847224
+ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88963792"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89150092"
 ---
 # <a name="connect-apps"></a>Connecter des applications
 
@@ -34,7 +34,7 @@ Microsoft Cloud App Security tire profit des API proposées par le fournisseur d
 Cloud App Security prend en charge plusieurs instances de la même application connectée. Par exemple, si vous avez plusieurs instances de Salesforce (une pour les ventes, une pour le marketing), vous pouvez vous connecter à Cloud App Security. Vous pouvez gérer les différentes instances à partir de la même console pour créer des stratégies granulaires et mener une investigation plus approfondie. Cette prise en charge s’applique uniquement aux applications connectées à des API, pas aux applications découvertes dans le cloud ni aux applications connectées à des proxys.
 
 > [!NOTE]
-> Multi-instance n’est pas pris en charge pour Office 365 et Azure.
+> Multi-instance n’est pas pris en charge pour Microsoft 365 et Azure.
 
 ## <a name="how-it-works"></a>Fonctionnement
 
@@ -66,7 +66,7 @@ Selon l’application à laquelle vous vous connectez, la connexion d’API acti
 
 Le tableau suivant répertorie, par application cloud, les fonctionnalités prises en charge avec les connecteurs d’applications :
 
-| | AWS | Zone | Dropbox | GCP | G Suite | Office 365 | Okta | ServiceNow | Salesforce | Webex | Workday |
+| | AWS | Zone | Dropbox | GCP | G Suite | Microsoft 365 | Okta | ServiceNow | Salesforce | Webex | Workday |
 |-|-|-|-|-|-|-|-|-|-|-|-|
 | **Énumérer les comptes** | ✔ | ✔ | ✔ | Connexion de l’objet G suite | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 | **Liste des groupes** | ✔ | ✔ | ✔ | Connexion de l’objet G suite | ✔ | ✔ | ✔ | ✔ | ✔ | | Non prise en charge par le fournisseur |
@@ -85,7 +85,7 @@ Le tableau suivant répertorie, par application cloud, les fonctionnalités pris
 
 ## <a name="prerequisites"></a>Prérequis
 
-- Pour certaines applications, vous pouvez être amené à ajouter des adresses IP à la liste verte pour permettre à Cloud App Security de collecter les journaux et de fournir un accès pour la console Cloud App Security. Pour plus d’informations, consultez [Configuration exigée pour le réseau](network-requirements.md).
+- Pour certaines applications, il peut être nécessaire d’autoriser les adresses IP de liste pour permettre à Cloud App Security de collecter des journaux et de fournir un accès pour la console Cloud App Security. Pour plus d’informations, consultez [Configuration exigée pour le réseau](network-requirements.md).
 
 - Pour chaque application à connecter avec l’intégration de l’API Cloud App Security, nous recommandons de créer un compte de service d’administration dédié à Cloud App Security.
 
@@ -98,12 +98,12 @@ Pour utiliser des connecteurs d’applications, vous devez vérifier que vous av
 |-----|--------------|------|
 | Azure | | Administrateur général |
 | AWS | | Utilisateur récemment créé |
-| Zone | Entreprise | Il est fortement recommandé de vous connecter à Box en tant qu’administrateur. La connexion en tant que coadministrateur entraînera uniquement une visibilité partielle des données. Si vous vous connectez en tant que coadministrateur, sélectionnez toutes les autorisations. |
+| Zone | Entreprise | Il est fortement recommandé de vous connecter à Box en tant qu’administrateur. Si vous vous connectez en tant que coadministrateur, vous obtiendrez uniquement une visibilité partielle des données. Si vous vous connectez en tant que coadministrateur, sélectionnez toutes les autorisations. |
 | Dropbox | Business/Entreprises | Admin |
 | GitHub | GitHub Enterprise Cloud | Propriétaire |
 | GCP | | Consultez les [conditions préalables Connect GCP](connect-google-gcp-to-microsoft-cloud-app-security.md#prerequisites) |
 | G Suite | Compte G Suite Business ou Entreprise<br /><br />G Suite Enterprise (au minimum) | Super administrateur |
-| Office 365 | | Administrateur général |
+| Microsoft 365 | | Administrateur général |
 | Okta | Enterprise (pas la version d’essai) | Admin |
 | Salesforce | | Admin |
 | ServiceNow | Eureka et au-dessus | Rôle admin + RestAPI |

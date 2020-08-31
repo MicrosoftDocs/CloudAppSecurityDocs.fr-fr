@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 534c12f66d52c1085477c90fc36d43f004324fb1
-ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
+ms.openlocfilehash: ab60b9237af0d2dadbfbe6c48b6e2f17ff80df3b
+ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88963911"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89150279"
 ---
 # <a name="generic-siem-integration"></a>Intégration de SIEM générique
 
@@ -160,7 +160,7 @@ Le texte suivant est un exemple de fichier journal d’alertes :
 | Activités/Alertes | rt | Horodatage d’activité ou d’alerte |
 | Activités/Alertes | msg | Description de l’activité ou de l’alerte telle qu’elle apparaît dans le portail |
 | Activités/Alertes | suser | Utilisateur de l’objet de l’activité ou de l’alerte |
-| Activités/Alertes | destinationServiceName | Application à l’origine de l’activité ou de l’alerte, par exemple Office 365, Sharepoint, Box. |
+| Activités/Alertes | destinationServiceName | L’activité ou l’alerte à l’origine de l’application, par exemple, Microsoft 365, SharePoint, Box. |
 | Activités/Alertes | cs\<X>Label | Chaque étiquette a une signification différente, mais l’étiquette elle-même l’explique, par exemple targetObjects. |
 | Activités/Alertes | cs\<X> | Informations correspondant à l’étiquette (l’utilisateur cible de l’activité ou de l’alerte, selon l’exemple d’étiquette). |
 | Activités | EVENT_CATEGORY_* | Catégorie générale de l’activité |

@@ -1,32 +1,32 @@
 ---
-title: Comment Cloud App Security aide à protéger votre environnement Office 365
-description: Cet article fournit des informations sur les avantages de la connexion de votre application Office 365 à Cloud App Security à l’aide du connecteur d’API pour la visibilité et le contrôle de l’utilisation.
+title: Comment Cloud App Security aide à protéger votre environnement Microsoft 365
+description: Découvrez les avantages de la connexion de votre application Microsoft 365 à Cloud App Security à l’aide du connecteur API pour la visibilité et le contrôle de l’utilisation.
 author: shsagir
 ms.author: shsagir
 ms.service: cloud-app-security
 ms.topic: article
 ms.date: 12/04/2019
 ms.collection: M365-security-compliance
-ms.openlocfilehash: caf2ed9e4d6dd979c5f75610593af6eac630c230
-ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
+ms.openlocfilehash: b892d96b2cf7329613b21b6134e33ae6fd62ea29
+ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88963486"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89150058"
 ---
-# <a name="how-cloud-app-security-helps-protect-your-office-365-environment"></a>Comment Cloud App Security aide à protéger votre environnement Office 365
+# <a name="how-cloud-app-security-helps-protect-your-microsoft-365-environment"></a>Comment Cloud App Security aide à protéger votre environnement Microsoft 365
 
 *S’applique à : Microsoft Cloud App Security*
 
-En tant que suite de productivité majeure fournissant un stockage de fichiers Cloud, des outils de collaboration, DÉCISIONNELs et CRM, Office 365 permet à vos utilisateurs de partager leurs documents au sein de votre organisation et de vos partenaires de manière rationalisée et efficace. L’utilisation d’Office 365 peut exposer vos données sensibles non seulement en interne, mais également aux collaborateurs externes, ou encore pire les rendre accessibles au public via un lien partagé. De tels incidents peuvent se produire en raison d’un acteur malveillant ou d’un employé ne connaissant pas. Office 365 fournit également un grand système d’écosystème d’applications tiers pour améliorer la productivité. L’utilisation de ces applications peut exposer votre organisation au risque d’applications malveillantes ou d’utilisation d’applications avec des autorisations excessives.
+En tant que suite de productivité majeure fournissant des outils de stockage de fichiers Cloud, de collaboration, de décisionnel et de CRM, Microsoft 365 permet à vos utilisateurs de partager leurs documents au sein de votre organisation et de vos partenaires de façon rationalisée et efficace. L’utilisation de Microsoft 365 peut exposer vos données sensibles non seulement en interne, mais également aux collaborateurs externes, ou encore pire les rendre accessibles au public via un lien partagé. De tels incidents peuvent se produire en raison d’un acteur malveillant ou d’un employé ne connaissant pas. Microsoft 365 fournit également un grand système d’écosystème d’applications tiers pour améliorer la productivité. L’utilisation de ces applications peut exposer votre organisation au risque d’applications malveillantes ou d’utilisation d’applications avec des autorisations excessives.
 
-La connexion d’Office 365 à Cloud App Security vous permet d’améliorer l’analyse des activités de vos utilisateurs, de détecter les menaces à l’aide de détections d’anomalies basées sur Machine Learning, de détections de protection des informations (telles que la détection du partage d’informations externes), d’activer des contrôles de correction automatisée et de détecter les menaces des applications tierces activées dans votre organisation.
+La connexion de Microsoft 365 à Cloud App Security vous donne des informations améliorées sur les activités de vos utilisateurs, fournit une détection des menaces à l’aide de détections d’anomalies Machine Learning, des détections de protection des informations (telles que la détection du partage d’informations externes), active les contrôles de correction automatisée et détecte les menaces des applications tierces activées dans votre organisation.
 
-L’utilisation du connecteur Office 365 fournit une protection pour les produits suivants :
+L’utilisation du connecteur Microsoft 365 fournit une protection pour les produits suivants :
 
 - Dynamics 365 CRM
 - Exchange
-- Office 365
+- Microsoft 365
 - OneDrive
 - Power Automate
 - Power BI
@@ -36,7 +36,7 @@ L’utilisation du connecteur Office 365 fournit une protection pour les produit
 - Yammer
 
 > [!NOTE]
-> Cloud App Security s’intègre directement avec les [journaux d’audit d’Office 365](/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log?view=o365-worldwide) et reçoit tous les événements audités de **tous les services pris en charge**, tels que powerapps, Forms, Sway et Stream.
+> Cloud App Security s’intègre directement avec les [journaux d’audit d’Microsoft 365](/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log?view=o365-worldwide) et reçoit tous les événements audités de **tous les services pris en charge**, tels que powerapps, Forms, Sway et Stream.
 
 ## <a name="main-threats"></a>Menaces principales
 
@@ -58,13 +58,13 @@ L’utilisation du connecteur Office 365 fournit une protection pour les produit
 - [Limiter l’exposition des données partagées et appliquer des stratégies de collaboration](best-practices.md#limit-exposure-of-shared-data-and-enforce-collaboration-policies)
 - [Utiliser la piste d’audit des activités pour des investigations forensiques](best-practices.md#use-the-audit-trail-of-activities-for-forensic-investigations)
 
-## <a name="control-office-365-with-built-in-policies-and-policy-templates"></a>Contrôler Office 365 avec des stratégies intégrées et des modèles de stratégie
+## <a name="control-microsoft-365-with-built-in-policies-and-policy-templates"></a>Microsoft 365 de contrôle avec des stratégies intégrées et des modèles de stratégie
 
 Vous pouvez utiliser les modèles de stratégie intégrés suivants pour détecter et vous avertir des menaces potentielles :
 
 | Type | Nom |
 | ---- | ---- |
-| Stratégie de détection des anomalies intégrée | [Activité depuis des adresses IP anonymes](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)<br />[Activité à partir de pays peu fréquents](anomaly-detection-policy.md#activity-from-infrequent-country)<br />[Activité à partir d'adresses IP suspectes](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)<br />[Voyage impossible](anomaly-detection-policy.md#impossible-travel)<br />[Activité effectuée par l’utilisateur terminé](anomaly-detection-policy.md#activity-performed-by-terminated-user) (requiert AAD comme IDP)<br />[Détection de logiciel malveillant](anomaly-detection-policy.md#malware-detection)<br />[Plusieurs tentatives de connexion infructueuses](anomaly-detection-policy.md#multiple-failed-login-attempts)<br />[Détection de ransomware](anomaly-detection-policy.md#ransomware-activity)<br />[Activité suspecte de suppression d’e-mails (préversion)](anomaly-detection-policy.md#suspicious-email-deletion-activity-preview)<br />[Boîte de réception suspecte transférant](anomaly-detection-policy.md#suspicious-inbox-forwarding)des[activités de suppression de fichiers inhabituels](anomaly-detection-policy.md#unusual-activities-by-user)<br />[Activités inhabituelles de partage de fichiers](anomaly-detection-policy.md#unusual-activities-by-user)<br />[Activités inhabituelles de téléchargement de plusieurs fichiers](anomaly-detection-policy.md#unusual-activities-by-user) |
+| Stratégie de détection des anomalies intégrée | [Activité depuis des adresses IP anonymes](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)<br />[Activité à partir de pays peu fréquents](anomaly-detection-policy.md#activity-from-infrequent-country)<br />[Activité à partir d'adresses IP suspectes](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)<br />[Voyage impossible](anomaly-detection-policy.md#impossible-travel)<br />[Activité effectuée par l’utilisateur terminé](anomaly-detection-policy.md#activity-performed-by-terminated-user) (nécessite Azure AD comme IDP)<br />[Détection de logiciel malveillant](anomaly-detection-policy.md#malware-detection)<br />[Plusieurs tentatives de connexion infructueuses](anomaly-detection-policy.md#multiple-failed-login-attempts)<br />[Détection de ransomware](anomaly-detection-policy.md#ransomware-activity)<br />[Activité suspecte de suppression d’e-mails (préversion)](anomaly-detection-policy.md#suspicious-email-deletion-activity-preview)<br />[Boîte de réception suspecte transférant](anomaly-detection-policy.md#suspicious-inbox-forwarding)des[activités de suppression de fichiers inhabituels](anomaly-detection-policy.md#unusual-activities-by-user)<br />[Activités inhabituelles de partage de fichiers](anomaly-detection-policy.md#unusual-activities-by-user)<br />[Activités inhabituelles de téléchargement de plusieurs fichiers](anomaly-detection-policy.md#unusual-activities-by-user) |
 | Modèle de stratégie d’activité | Connexion à partir d’une adresse IP à risques<br />Téléchargement massif par un même utilisateur<br />Activité de ransomware potentielle<br />Modification du niveau d’accès (équipes)<br />Utilisateur externe ajouté (équipes)<br />Suppression en masse (équipes) |
 | Modèle de stratégie de fichier | Détecter un fichier partagé avec un domaine non autorisé<br />Détecter un fichier partagé avec des adresses de messagerie personnelles<br />Détecter les fichiers avec PII/PCI/PHI |
 | Stratégie de détection des anomalies d’application OAuth | [Nom d’application OAuth trompeur](app-permission-policy.md#oauth-app-anomaly-detection-policies)<br />[Nom du serveur de publication trompeur pour une application OAuth](app-permission-policy.md#oauth-app-anomaly-detection-policies)<br />[Consentement de l’application OAuth malveillante](app-permission-policy.md#oauth-app-anomaly-detection-policies) |
@@ -73,7 +73,7 @@ Pour plus d’informations sur la création de stratégies, consultez [créer un
 
 ## <a name="automate-governance-controls"></a>Automatiser les contrôles de gouvernance
 
-Outre la surveillance des menaces potentielles, vous pouvez appliquer et automatiser les actions de gouvernance Office 365 suivantes pour corriger les menaces détectées :
+Outre la surveillance des menaces potentielles, vous pouvez appliquer et automatiser les actions de gouvernance Microsoft 365 suivantes pour corriger les menaces détectées :
 
 | Type | Action |
 | ---- | ---- |
@@ -83,11 +83,11 @@ Outre la surveillance des menaces potentielles, vous pouvez appliquer et automat
 
 Pour plus d’informations sur la correction des menaces à partir des applications, consultez la rubrique relative aux [applications connectées](governance-actions.md).
 
-## <a name="protect-office-365-in-real-time"></a>Protégez Office 365 en temps réel
+## <a name="protect-microsoft-365-in-real-time"></a>Protégez Microsoft 365 en temps réel
 
 Passez en revue nos meilleures pratiques en matière de [sécurisation et de collaboration avec les utilisateurs externes](best-practices.md#secure-collaboration-with-external-users-by-enforcing-real-time-session-controls) , [bloquant et protégeant le téléchargement de données sensibles sur des appareils non gérés ou risqués](best-practices.md#block-and-protect-download-of-sensitive-data-to-unmanaged-or-risky-devices).
 
 ## <a name="next-steps"></a>Étapes suivantes
 
 > [!div class="nextstepaction"]
-> [Comment connecter Office 365 à Microsoft Cloud App Security](connect-office-365-to-microsoft-cloud-app-security.md)
+> [Comment connecter Microsoft 365 à Microsoft Cloud App Security](connect-office-365-to-microsoft-cloud-app-security.md)

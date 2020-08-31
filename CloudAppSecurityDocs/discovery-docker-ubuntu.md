@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6fa59bf106e41aa0f0dbc9ea2252c7053f22245f
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 575028a9df41f8340c4a7a398fb05b5264ee93bb
+ms.sourcegitcommit: 1554e381acc1e58de113d3b427f4e9de91b98488
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88780339"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89148724"
 ---
 # <a name="docker-on-linux-on-premises"></a>Docker sur Linux en local
 
@@ -148,7 +148,7 @@ Le message suivant doit s’afficher : **terminé !**
 
 ### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>Étape 3 : Configuration locale de vos appliances réseau
 
-Configurez vos pare-feu et proxys réseau pour exporter régulièrement les journaux vers le port Syslog dédié du répertoire FTP conformément aux instructions données dans la boîte de dialogue. Par exemple :
+Configurez vos pare-feu réseau et proxys pour exporter régulièrement les journaux vers le port syslog dédié ou le répertoire FTP selon les instructions de la boîte de dialogue. Par exemple :
 
 ```bash
 BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\

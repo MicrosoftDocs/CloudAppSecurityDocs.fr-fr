@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a1d6abfc92a1678f954c4a332dc4c7e5e82536b8
-ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
+ms.openlocfilehash: a8793a96269f42dce827d101e717543ad873dacd
+ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88963962"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89150150"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Protéger les applications avec le Contrôle d’accès conditionnel aux applications Microsoft Cloud App Security
 
@@ -130,7 +130,7 @@ Cloud App Security identifie les applications à l’aide des informations dispo
 
 De nombreuses organisations qui choisissent d’utiliser des contrôles de session pour les applications Cloud pour contrôler les activités en session, appliquent également des contrôles d’accès pour bloquer le même ensemble d’applications clientes mobiles et de bureau natives, offrant ainsi une sécurité complète pour les applications.
 
-Vous pouvez bloquer l’accès aux applications clientes mobiles natives et de bureau à l’aide de stratégies d’accès, en définissant le filtre d' **application client** sur **mobile et Desktop**. Certaines applications clientes natives peuvent être reconnues individuellement, tandis que d’autres qui font partie d’une suite d’applications ne peuvent être identifiées qu’en tant qu’application de niveau supérieur. Par exemple, les applications telles que SharePoint Online peuvent uniquement être reconnues en créant une stratégie d’accès appliquée aux applications Office 365.
+Vous pouvez bloquer l’accès aux applications clientes mobiles natives et de bureau à l’aide de stratégies d’accès, en définissant le filtre d' **application client** sur **mobile et Desktop**. Certaines applications clientes natives peuvent être reconnues individuellement, tandis que d’autres qui font partie d’une suite d’applications ne peuvent être identifiées qu’en tant qu’application de niveau supérieur. Par exemple, les applications telles que SharePoint Online peuvent uniquement être reconnues en créant une stratégie d’accès appliquée à Microsoft 365 applications.
 
 > [!NOTE]
 > À moins que le filtre d' **application cliente** ne soit spécifiquement défini sur **mobile et Desktop**, la stratégie d’accès résultante s’appliquera uniquement aux sessions de navigateur. Cela a pour but d’empêcher le proxy par inadvertance des sessions utilisateur, qui peut être un sous-utilisateur de l’utilisation de ce filtre. Tandis que la plupart des principaux navigateurs prennent en charge l’exécution d’une vérification de certificat client, certaines applications mobiles et de bureau utilisent des navigateurs intégrés qui peuvent ne pas prendre en charge cette vérification. Par conséquent, l’utilisation de ce filtre peut affecter l’authentification pour ces applications.
@@ -142,7 +142,7 @@ Alors que les contrôles de session sont créés pour fonctionner avec n’impor
 > [!NOTE]
 >
 > - Cloud App Security s’appuie sur les protocoles TLS (Transport Layer Security) 1.2 + pour offrir un chiffrement optimal. Les applications clientes natives et les navigateurs qui ne prennent pas en charge TLS 1.2 + ne sont pas accessibles lorsqu’ils sont configurés avec le contrôle de session. Toutefois, les applications SaaS qui utilisent TLS 1.1 ou une version antérieure apparaissent dans le navigateur comme utilisant TLS 1.2+ lorsqu’elles sont configurées avec Cloud App Security.
-> - Pour appliquer des contrôles de session à portal.office.com, vous devez intégrer le centre d’administration Microsoft Office 365. Pour plus d’informations sur l’intégration des applications, consultez [intégration et déploiement de contrôle d’application par accès conditionnel pour n’importe quelle application](proxy-deployment-any-app.md).
+> - Pour appliquer des contrôles de session à portal.office.com, vous devez intégrer Microsoft 365 Centre d’administration. Pour plus d’informations sur l’intégration des applications, consultez [intégration et déploiement de contrôle d’application par accès conditionnel pour n’importe quelle application](proxy-deployment-any-app.md).
 
 <a name="featured-apps"></a>Toute application Web configurée à l’aide des [protocoles d’authentification mentionnés précédemment](#supported-apps-and-clients) peut être intégrée pour fonctionner avec les contrôles d’accès et de session. En outre, les applications suivantes sont proposées par Cloud App Security et sont déjà intégrées et prêtes à être utilisées dans n’importe quel locataire :
 
@@ -175,9 +175,9 @@ Alors que les contrôles de session sont créés pour fonctionner avec n’impor
 - Workplace by Facebook
 - Yammer (préversion)
 
-### <a name="office-365-featured-apps"></a><a name="O365-apps"></a>Applications Office 365 proposées
+### <a name="microsoft-365-featured-apps"></a><a name="O365-apps"></a>Applications Microsoft 365 proposées
 
-La liste suivante répertorie les applications proposées qui sont prises en charge dans Office 365 Cloud App Security. Pour utiliser ces applications avec Cloud App Security, vous devez disposer d’une licence Office 365 E5.
+La liste suivante répertorie les applications proposées qui sont prises en charge dans Microsoft 365 Cloud App Security. Pour utiliser ces applications avec Cloud App Security, vous devez disposer d’une licence Office 365 E5.
 
 - Exchange Online
 - OneDrive Entreprise

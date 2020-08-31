@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0d4d046b406e0849437d02f1abba87948e488473
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 2f9a2d504eded5f57f415aac2841c4e78cda7e2a
+ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88779183"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89149854"
 ---
 # <a name="scoped-deployment"></a>Déploiement étendu <a name="scoped-deployment"></a> 
 
@@ -33,7 +33,7 @@ Il est envisageable, dans certains cas, de ne pas utiliser Microsoft Cloud App S
 
 - Pour définir l’étendue de votre déploiement, vous devez commencer par [importer les groupes d’utilisateurs](user-groups.md) dans Microsoft Cloud App Security. Par défaut, vous voyez les groupes suivants :
 
-  - Groupe d’utilisateurs **Application** : un groupe intégré qui vous permet de voir les activités effectuées par les applications Office 365 et Azure AD.
+  - Groupe d’utilisateurs d' **application** : groupe intégré qui vous permet de voir les activités effectuées par les applications Microsoft 365 et Azure ad.
 
   - Groupe d' **utilisateurs externes** -tous les utilisateurs qui ne sont pas membres de l’un des domaines gérés que vous avez configurés pour votre organisation.
 
@@ -77,7 +77,7 @@ Les règles d’inclusion et d’exclusion créées fonctionnent conjointement p
 Si l’on crée les règles suivantes :
 
 - Exclure le groupe d’utilisateurs « Germany all users » (« Tous les utilisateurs d’Allemagne »)
-- Pour le groupe d’utilisateurs « Global sales » (« Ventes à l’international »), inclure seulement les activités Office 365
+- Inclure pour le groupe d’utilisateurs « ventes globales » uniquement Microsoft 365 activités
 - Pour le groupe d’utilisateurs « Sales managers » (« Directeurs commerciaux »), inclure seulement les activités Power BI
 - Salesforce est connecté à Microsoft Cloud App Security et aucune règle n’est définie pour celui-ci
 
@@ -85,9 +85,9 @@ Les activités suivantes des utilisateurs font l’objet d’un monitoring :
 
 |Utilisateur|Appartenance au groupe|Activités faisant l’objet d’un monitoring|
 |----|----|----|
-|Adriana|Germany all users<br />Global sales<br />Sales managers|Aucun|
-|Alain|Global sales|Office 365 et toutes les sous-applications à l’exception de Power BI|
-|Cornel|Global sales<br />Sales managers|Office 365 et toutes les sous-applications|
+|Adriana|Germany all users<br />Global sales<br />Sales managers|Aucune|
+|Alain|Global sales|Microsoft 365 et toutes les sous-applications, à l’exception de Power BI|
+|Cornel|Global sales<br />Sales managers|Microsoft 365 et toutes les sous-applications|
 |Raymond|Sales managers|Power BI uniquement|
 
 > [!NOTE]

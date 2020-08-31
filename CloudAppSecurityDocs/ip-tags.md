@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c952539aaa864c6634bc45cdbb1589bec42a175e
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: a9080e92adf919d0f6a96299db69ad34f55cee5d
+ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88781682"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89150147"
 ---
 #  <a name="working-with-ip-ranges-and-tags"></a><a name="IPtagsandRanges"></a> Utilisation des balises et des plages d’adresses IP
 
@@ -27,7 +27,7 @@ ms.locfileid: "88781682"
 
 Pour identifier facilement les adresses IP connues, telles que celles de votre bureau, vous devez définir des plages d’adresses IP. Les plages d’adresses IP vous permettent de baliser, classer et personnaliser la façon dont les journaux et les alertes sont affichés et examinés. Chaque groupe de plages IP peut être classé selon une liste prédéfinie de catégories d’adresses IP. Vous pouvez également créer des balises IP personnalisées pour vos plages d’adresses IP. En outre, vous pouvez remplacer les informations de géolocalisation publiques en fonction de la connaissance de votre réseau interne. IPv4 et IPv6 sont pris en charge.
 
-Cloud App Security est préconfiguré avec des plages d’adresses IP intégrées pour les fournisseurs de cloud répandus comme Azure et Office 365. De plus, nous avons des balises intégrées basées sur Microsoft Threat Intelligence, notamment pour le proxy anonyme, Botnet et Tor. Vous pouvez voir la liste complète dans la liste déroulante de la page des plages d’adresses IP.
+Cloud App Security est préconfiguré avec des plages d’adresses IP intégrées pour les fournisseurs de Cloud populaires tels qu’Azure et Microsoft 365. De plus, nous avons des balises intégrées basées sur Microsoft Threat Intelligence, notamment pour le proxy anonyme, Botnet et Tor. Vous pouvez voir la liste complète dans la liste déroulante de la page des plages d’adresses IP.
 
 > [!NOTE]
 >

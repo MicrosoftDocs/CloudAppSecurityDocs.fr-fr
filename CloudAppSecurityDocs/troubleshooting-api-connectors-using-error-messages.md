@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 29e45b98cc4ff3a853149d90154fa64ec971ef2c
-ms.sourcegitcommit: 684feff0782ed30f23f3d7fd9f3e063368f46b47
+ms.openlocfilehash: 2afdf89e5ccbb42e9cdfb14673e07ce6e0e97de9
+ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2020
-ms.locfileid: "88256768"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89149191"
 ---
 # <a name="troubleshooting-app-connectors-using-error-messages"></a>Résolution des problèmes des connecteurs d’application à l’aide de messages d’erreur
 
@@ -27,7 +27,7 @@ ms.locfileid: "88256768"
 
 Cet article fournit la liste des messages d’erreur relatifs aux connecteurs d’application API ainsi que les solutions recommandées pour chacun d’eux.
 
-## <a name="troubleshooting"></a>Résolution des problèmes
+## <a name="troubleshooting"></a>Dépannage
 
 Quand vous tentez de connecter une application cloud à l’aide du connecteur d’application API, la boîte de dialogue du connecteur d’application peut afficher des erreurs.
 
@@ -52,7 +52,7 @@ Quand vous tentez de connecter une application cloud à l’aide du connecteur d
 > |IOException:|Okta|Erreur interne|Contacter le support technique|
 > |HttpRequestFailure: 404 Non trouvé retourné par le serveur|Okta|Erreur interne|Contacter le support technique|
 > |HttpRequestFailure: 400 Requête incorrecte retourné par le serveur : {"error":{"code":"AF20012","message":"L’ID de client spécifié (emplacement de Tenant_ID) est configuré de façon incorrecte dans le système."|Office 365 |Aucune licence Office 365 attribuée n’a été trouvée. |Attribuez au moins une licence Office 365 à votre client.|
-> |Microsoft. Office. Compliance. audit. DataServiceException : le locataire 998cea7e-35cd-46a5-ab3c-8ec88a45d7d5 n’existe pas ou {"Error" : "code" : "AF20023", "message" : "l’abonnement a été désactivé."|Office 365|La journalisation d’audit n’est pas activée dans Office 365|Activez la journalisation d’audit dans Office 365. [En savoir plus](connect-office-365-to-microsoft-cloud-app-security.md#how-to-connect-office-365-to-cloud-app-security)|
+> |Microsoft. Office. Compliance. audit. DataServiceException : le locataire 998cea7e-35cd-46a5-ab3c-8ec88a45d7d5 n’existe pas ou {"Error" : "code" : "AF20023", "message" : "l’abonnement a été désactivé."|Office 365|La journalisation d’audit n’est pas activée dans Office 365|Activez la journalisation d’audit dans Office 365. [En savoir plus](connect-office-365-to-microsoft-cloud-app-security.md#how-to-connect-microsoft-365-to-cloud-app-security)|
 > |HttpRequestFailure: 401 Non autorisé retourné par le serveur|Office 365|Problème interne|Cliquez à nouveau sur le lien Tester maintenant|
 > |TokenRefreshException: {"error":"invalid_grant","error_description":"AADSTS70002: Erreur de validation des informations d’identification. AADSTS70008: Le jeton d’actualisation ou le code d’autorisation fourni a expiré. Envoyez une nouvelle demande d’autorisation interactive pour cet utilisateur et cette ressource.|Office 365|Jeton expiré.|Suivez le processus pour reconnecter Office 365 à Cloud App Security.|
 > |SocketTimeoutException: Expiration du délai d’attente de lecture|Office 365|Erreur interne|Cliquez à nouveau sur le lien Tester maintenant|

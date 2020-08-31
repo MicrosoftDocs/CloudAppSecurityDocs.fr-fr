@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1b0e6f838435b84d285881353c6a7b0f371b7670
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 25020539ecc5a0ae48e8cb3d6b1c6ce0387a7d2a
+ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88779370"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89149735"
 ---
 # <a name="activity-filters-and-queries"></a>Filtres et requêtes des activités
 
@@ -95,7 +95,7 @@ Vous trouverez ci-dessous une liste des filtres d’activité qui peuvent être 
 - Utilisateur : utilisateur qui a exécuté l’activité, qui peut être filtré en domaine, groupe, nom ou organisation. Pour filtrer les activités sans utilisateur spécifique, vous pouvez utiliser l’opérateur « n’est pas défini ».
   - Domaine de l’utilisateur : Recherchez un domaine utilisateur spécifique.
   - Organisation utilisateur : Unité d’organisation de l’utilisateur qui a effectué l’activité, par exemple toutes les activités effectuées par les utilisateurs EMEA_marketing. Cela s’applique uniquement aux instances G suite connectées qui utilisent des unités d’organisation.
-  - Groupe d’utilisateurs : Groupes d’utilisateurs spécifiques que vous pouvez importer à partir d’applications connectées, par exemple, les administrateurs Office 365.
+  - Groupe d’utilisateurs : groupes d’utilisateurs spécifiques que vous pouvez importer à partir d’applications connectées, par exemple, Microsoft 365 administrateurs.
   - Nom d’utilisateur : Recherchez un nom d’utilisateur spécifique. Pour afficher la liste des utilisateurs membres d’un groupe d’utilisateurs spécifique, dans le **tiroir Activité**, cliquez sur le nom du groupe d’utilisateurs. Le fait de cliquer vous permet d’accéder à la page Comptes qui répertorie tous les utilisateurs figurant dans le groupe. À partir de cette page, vous pouvez explorer plus en détail les comptes d’utilisateurs spécifiques dans le groupe.
   - Vous pouvez affiner les filtres **Groupe d’utilisateurs** et **Nom d’utilisateur** en choisissant le filtre **En tant que**, puis en sélectionnant le rôle de l’utilisateur parmi les rôles suivants :
     - Objet d’activité uniquement : signifie que l’utilisateur ou le groupe d’utilisateurs sélectionné n’a pas effectué l’activité en question, mais qu’il était l’objet de l’activité.
@@ -132,7 +132,7 @@ Cloud App Security vous fournit également des **requêtes suggérées**. Les re
 
 - Activités de téléchargement : filtre toutes vos activités pour afficher uniquement les activités de téléchargement, notamment le téléchargement de la liste des utilisateurs sous forme de fichier .csv, le téléchargement de contenu partagé et le téléchargement d’un dossier.
 
-- Connexion ayant échoué : filtre toutes vos activités pour afficher uniquement les ouvertures de session et les connexions en échec via l’authentification unique
+- Échec de la connexion : filtre toutes vos activités pour afficher uniquement les échecs de connexion et les échecs de connexion via SSO
 
 - Activités liées au fichier et au dossier : filtre toutes vos activités pour afficher uniquement les activités liées à des fichiers et des dossiers. Le filtre inclut le chargement, le téléchargement et l’accès aux dossiers, ainsi que la création, la suppression, le chargement, le téléchargement, la mise en quarantaine, l’accès aux fichiers et le transfert de contenu.
 
@@ -146,7 +146,7 @@ Cloud App Security vous fournit également des **requêtes suggérées**. Les re
 
 - Activités de partage : filtre toutes vos activités pour afficher uniquement les activités qui impliquent le partage de dossiers et de fichiers, notamment la création d’un lien d’entreprise, la création d’un lien anonyme et l’octroi d’autorisations de lecture/écriture.
 
-- Connexion réussie : filtre toutes vos activités pour afficher uniquement les activités impliquant des connexions réussies, notamment une action avec emprunt d’identité, une ouverture de session avec emprunt d’identité, une ouverture de session avec authentification unique et l’ouverture de session à partir d’un nouvel appareil.
+- Connexion réussie : filtre toutes vos activités pour afficher uniquement les activités qui impliquent des connexions réussies, y compris l’action d’emprunt d’identité, l’emprunt d’identité pour l’ouverture de session, l’authentification unique et la connexion à partir d’un nouvel appareil.
 
 ![activités de requête](media/queries-activity.png)
 

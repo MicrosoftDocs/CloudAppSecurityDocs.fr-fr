@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c7c32807e7135e310cfe14d976b1f3d5bfec1792
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 419670f6e1e1a82a7c1fd9eaaa38ac7fe35c4ab9
+ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88779523"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89149769"
 ---
 # <a name="activities"></a>Activités
 
@@ -28,7 +28,7 @@ ms.locfileid: "88779523"
 Microsoft Cloud App Security vous donne une visibilité sur toutes les activités de vos applications connectées. Une fois connecté à une application à l’aide du connecteur d’applications, Cloud App Security analyse toutes les activités passées (la période d’analyse rétroactive varie par application). Cloud App Security est ensuite mis à jour en continu avec les nouvelles activités.
 
 > [!NOTE]
-> Pour obtenir une liste complète des activités Office 365 surveillées par Cloud App Security, voir [Rechercher le journal d’audit dans le Centre de sécurité et conformité Office 365](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US#ID0EABAAA=Audited_activities).
+> Pour obtenir la liste complète des activités de Microsoft 365 surveillées par Cloud App Security, consultez [Rechercher dans le journal d’audit dans le centre de conformité Microsoft 365 Security &](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US#ID0EABAAA=Audited_activities)
 
 Le **journal d’activité** peut être filtré pour vous permettre de trouver des activités spécifiques. Vous créez des stratégies basées sur les activités, puis définissez ce sur quoi vous voulez être alerté pour y réagir. Vous êtes en mesure de rechercher des activités effectuées sur certains fichiers. Les types d’activités et les informations que nous obtenons pour chaque activité varient selon l’application et le genre de données que l’application peut fournir.
 

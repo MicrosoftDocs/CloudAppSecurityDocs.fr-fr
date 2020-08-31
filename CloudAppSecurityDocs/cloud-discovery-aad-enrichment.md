@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1e6f89d896612c48b567435e06ecf2fa475e119e
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 0f7ce34e19fa1b4a62b8d3786eae6898a19a428f
+ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88781274"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89149599"
 ---
 # <a name="cloud-discovery-enrichment"></a>Enrichissement de Cloud Discovery
 
@@ -34,7 +34,7 @@ Les données Cloud Discovery peuvent maintenant être enrichies avec des donnée
 ## <a name="prerequisites"></a>Prérequis
 
 - La source de données doit fournir les informations de nom d’utilisateur
-- Le connecteur d’applications Office 365 doit être connecté
+- Connecteur d’application Microsoft 365 connecté
 
 ## <a name="enabling-user-data-enrichment"></a>Activation de l’enrichissement des données utilisateur
 

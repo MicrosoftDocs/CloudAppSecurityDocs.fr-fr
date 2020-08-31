@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0fbb487695c395fe7fddbd6bc84855d74e060497
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 2d642a834111a1b8cadc3e997bdb63a19426aac1
+ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88779982"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89149905"
 ---
 # <a name="activity-privacy"></a>Confidentialité de l’activité
 
@@ -32,7 +32,7 @@ Vous pouvez avoir des utilisateurs dans Cloud App Security que vous souhaitez an
 
 Pour configurer vos groupes de confidentialité d’utilisateur, vous devez d’abord [importer des groupes d’utilisateurs](user-groups.md) vers Cloud App Security. Par défaut, vous voyez les groupes suivants :
 
-- Groupe d’utilisateurs **Application** : un groupe intégré qui vous permet de voir les activités effectuées par les applications Office 365 et Azure AD.
+- Groupe d’utilisateurs d' **application** : groupe intégré qui vous permet de voir les activités effectuées par les applications Microsoft 365 et Azure ad.
 
 - Groupe d' **utilisateurs externes** -tous les utilisateurs qui ne sont pas membres de l’un des domaines gérés que vous avez configurés pour votre organisation.
 

@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b8bb6205a2e1e8e1e9f27a8e67158c9b25a4648b
-ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
+ms.openlocfilehash: 0759c218b1125fa6c383e861228f6c6606841072
+ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88963503"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89149612"
 ---
 # <a name="azure-information-protection-integration"></a>Intégration d’Azure Information Protection
 
@@ -28,7 +28,7 @@ ms.locfileid: "88963503"
 Microsoft Cloud App Security vous permet d’appliquer des étiquettes de classification Azure Information Protection automatiquement, avec ou sans protection, à des fichiers, en tant qu’action de gouvernance de stratégie de fichier. Vous pouvez également rechercher des fichiers en filtrant sur l’étiquette de classification appliquée dans le portail Cloud App Security. L’utilisation de classifications accroît la visibilité et le contrôle de vos données sensibles dans le cloud. Pour intégrer Azure Information Protection à Cloud App Security, il suffit de cocher une seule case.
 
 > [!NOTE]
-> Cet article s’applique également aux étiquettes de sensibilité unifiée d’Office 365 si vous avez déjà [migré vos étiquettes de classification pour le centre de sécurité et conformité office 365](/azure/information-protection/configure-policy-migrate-labels). Si vous n’avez pas migré vos étiquettes de classification existantes et que vous commencez à créer de nouvelles étiquettes dans le centre de sécurité et conformité Office 365, Cloud App Security utilisera uniquement les étiquettes préexistantes configurées dans le portail Azure Information Protection.
+> Cet article s’applique également à Microsoft 365 des étiquettes de sensibilité unifiée si vous avez déjà [migré vos étiquettes de classification pour le centre de sécurité et conformité Office 365](/azure/information-protection/configure-policy-migrate-labels). Si vous n’avez pas migré vos étiquettes de classification existantes et que vous commencez à créer de nouvelles étiquettes dans le centre de sécurité et conformité Office 365, Cloud App Security utilisera uniquement les étiquettes préexistantes configurées dans le portail Azure Information Protection.
 
 En intégrant Azure Information Protection à Cloud App Security, vous pouvez utiliser toute la puissance des services et des fichiers sécurisés dans votre cloud, notamment :
 
@@ -42,7 +42,7 @@ En intégrant Azure Information Protection à Cloud App Security, vous pouvez ut
 
 ## <a name="prerequisites"></a>Prérequis
 
-- Pour utiliser l’intégration à Azure Information Protection, vous devez activer le [connecteur d’applications pour Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
+- Pour utiliser l’intégration de Azure Information Protection, vous devez activer le [connecteur d’application pour Microsoft 365](connect-office-365-to-microsoft-cloud-app-security.md).
 
 Pour utiliser des étiquettes dans Cloud App Security, les étiquettes doivent être publiées dans le cadre de la stratégie. Si vous utilisez Azure Information Protection, les étiquettes doivent être publiées via le portail Azure Information Protection. Si vous avez migré vers des étiquettes unifiées, les étiquettes doivent être publiées via le centre de sécurité et conformité Office 365.
 
@@ -77,10 +77,10 @@ Vous connaissez probablement déjà les étiquettes de classification des fichie
 5. Vous pouvez créer des stratégies dans Cloud App Security qui appliquent automatiquement vos étiquettes de classification.
 
 ## <a name="how-to-integrate-azure-information-protection-with-cloud-app-security"></a>Comment intégrer Azure Information Protection à Cloud App Security
-  
+
 ### <a name="enable-azure-information-protection"></a>Activer Azure Information Protection
 
-Il vous suffit de cocher une seule case pour intégrer Azure Information Protection à Cloud App Security. Le fait d’activer l’analyse automatique vous permet d’activer la recherche des étiquettes de classification Azure Information Protection dans vos fichiers Office 365 sans devoir créer de stratégie. Après avoir activé cette option, si des fichiers de votre environnement cloud sont étiquetés avec des étiquettes de classification Azure Information Protection, vous les voyez dans Cloud App Security.
+Il vous suffit de cocher une seule case pour intégrer Azure Information Protection à Cloud App Security. En activant l’analyse automatique, vous activez la recherche de Azure Information Protection étiquettes de classification sur vos fichiers de Microsoft 365 sans avoir besoin de créer une stratégie. Après avoir activé cette option, si des fichiers de votre environnement cloud sont étiquetés avec des étiquettes de classification Azure Information Protection, vous les voyez dans Cloud App Security.
 
 Pour permettre à Cloud App Security d’analyser des fichiers quand l’inspection du contenu est activée pour les étiquettes de classification :
 
@@ -98,7 +98,7 @@ Après avoir activé Azure Information Protection, vous pouvez voir les fichiers
 
 #### <a name="set-internal-and-external-tags"></a>Définir des étiquettes internes et externes
 
-Par défaut, Cloud App Security analyse les étiquettes de classification qui ont été définies dans votre organisation, ainsi que les étiquettes externes définies par d’autres organisations. 
+Par défaut, Cloud App Security analyse les étiquettes de classification qui ont été définies dans votre organisation, ainsi que les étiquettes externes définies par d’autres organisations.
 
 Pour ignorer les étiquettes de classification définies en externe à votre organisation, dans le portail Cloud App Security, accédez à **Paramètres** et **Azure Information Protection**. Sélectionnez **Analyser les fichiers uniquement pour détecter les étiquettes de classification Azure Information Protection et les avertissements émis suite à l'inspection du contenu de ce locataire**.
 
@@ -106,10 +106,10 @@ Pour ignorer les étiquettes de classification définies en externe à votre org
 
 ### <a name="apply-labels-directly-to-files"></a>Appliquer des étiquettes directement à des fichiers
 
-1. Sur la page **Fichiers** sous **Investiguer**, sélectionnez le fichier que vous souhaitez protéger. Cliquez sur les points de suspension à la fin de la ligne du fichier, puis choisissez **Appliquer l’étiquette de classification**.  
+1. Sur la page **Fichiers** sous **Investiguer**, sélectionnez le fichier que vous souhaitez protéger. Cliquez sur les points de suspension à la fin de la ligne du fichier, puis choisissez **Appliquer l’étiquette de classification**.
 
     ![protéger une application](media/protect-app.png)
-  
+
     >[!NOTE]
     > Cloud App Security peut appliquer Azure Information Protection sur des fichiers de 50 Mo maximum.
 
@@ -192,6 +192,6 @@ En savoir plus sur [Azure Information Protection](/information-protection/unders
 ## <a name="related-videos"></a>Vidéos associées
 
 > [!div class="nextstepaction"]
-> [Intégrations de Cloud App Security + Azure Information Protection](https://channel9.msdn.com/Shows/Microsoft-Security/MCAS--AIP-Integrations)  
+> [Intégrations de Cloud App Security + Azure Information Protection](https://channel9.msdn.com/Shows/Microsoft-Security/MCAS--AIP-Integrations)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4bc31fda0e2e647e386d2ce1d5b55e8d2fff6174
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 5bf75b479f3568b7c6451880f3a2774104d8115a
+ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88779727"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89149642"
 ---
 # <a name="get-behavioral-analytics-and-anomaly-detection"></a>Bénéficiez d’une analyse comportementale et d’une détection des anomalies
 
@@ -78,10 +78,10 @@ Les stratégies de détection d’anomalie suivantes sont disponibles :
     >
     > Cloud App Security prend en charge la détection de programmes malveillants pour les applications suivantes :
     >
-    > * Box
+    > * Zone
     > * Dropbox
     > * G Suite
-    > * Office 365 (nécessite une licence valide pour Office 365-protection avancée contre les menaces P1)
+    > * Microsoft 365 (nécessite une licence valide pour Office 365-protection avancée contre les menaces P1)
 
 ### <a name="activity-from-anonymous-ip-addresses"></a>Activité depuis des adresses IP anonymes
 
