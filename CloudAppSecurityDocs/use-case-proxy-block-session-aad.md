@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d8208d654774aefd776da4ba1b3b1cbfda4caae7
-ms.sourcegitcommit: 826d2ec022647bce6c3135c115a41ee894ff8ecd
+ms.openlocfilehash: e3b170d932c66532d421604f63f956a891d17663
+ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84800705"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88963826"
 ---
 # <a name="tutorial-block-download-of-sensitive-information"></a>Tutoriel : Bloquer le téléchargement des informations sensibles
 
@@ -59,7 +59,7 @@ Les stratégies de session Cloud App Security vous permettent de limiter une ses
 
 Configurez votre solution de fournisseur d’identité pour qu’elle fonctionne avec Cloud App Security :
 
-* Pour [l’accès conditionnel Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal), consultez [Configuration de l’intégration avec Azure AD](proxy-deployment-aad.md#configure-integration-with-azure-ad).
+* Pour [l’accès conditionnel Azure AD](/azure/active-directory/active-directory-conditional-access-azure-portal), consultez [Configuration de l’intégration avec Azure AD](proxy-deployment-aad.md#configure-integration-with-azure-ad).
 * Pour les autres solutions de fournisseur d’identité, consultez [Configuration de l’intégration avec d’autres solutions de fournisseur d’identité](proxy-deployment-aad.md#configure-integration-with-other-idp-solutions).
 
 Une fois cette tâche terminée, accédez au portail Cloud App Security et créez une stratégie de session pour surveiller et contrôler les téléchargements de fichiers dans la session.

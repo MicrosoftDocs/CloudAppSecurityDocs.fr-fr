@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: 89da56403cbd6239094e58bebdd2a78ef3558edc
-ms.sourcegitcommit: a6d6ab856bc06591d8ccdb5bf9dfd506dcd90e20
+ms.openlocfilehash: 7252a7c18278a6e536c26b3f84f5c51d09c72efe
+ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83579781"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88964064"
 ---
 # <a name="tutorial-investigate-risky-users"></a>Tutoriel : Examiner des utilisateurs à risque
 
@@ -71,10 +71,10 @@ Pour identifier vos utilisateurs présentant le plus de risques dans Cloud App S
 1. Accédez au tableau de bord Cloud App Security et recherchez les personnes identifiées dans la mosaïque **Top users by investigation priority** (Principaux utilisateurs par priorité d’examen), puis examinez une à une la page de ces utilisateurs.  
 Le **numéro de priorité d’examen**, affiché en regard du nom d’utilisateur, correspond à la somme de toutes les activités à risque de l’utilisateur au cours de la semaine dernière.
 
-   ![Tableau de bord des principaux utilisateurs](./media/dashboard-top-users.png)
+   ![Tableau de bord des principaux utilisateurs](media/dashboard-top-users.png)
 
 1. Cliquez sur un utilisateur pour accéder à la page **Utilisateur**.
-    ![Page Utilisateur](./media/user-page.png)
+    ![Page Utilisateur](media/user-page.png)
 
 1. Passez en revue les informations de la page Utilisateur pour obtenir une vue d’ensemble de l’utilisateur et vérifier s’il existe des cas où l’utilisateur a effectué des activités inhabituelles pour lui ou si elles ont été réalisées à un moment inhabituel. Le **score de l’utilisateur par rapport à l’organisation** représente le centile de cet utilisateur dans le classement dans votre organisation, c’est-à-dire à quel niveau il figure sur la liste des utilisateurs que vous devriez examiner, par rapport aux autres utilisateurs de votre organisation. Le chiffre s’affiche en rouge si un utilisateur se situe dans ou au-dessus du 90e centile des utilisateurs à risque de votre organisation.  
 La page Utilisateur vous aide à répondre aux questions suivantes :

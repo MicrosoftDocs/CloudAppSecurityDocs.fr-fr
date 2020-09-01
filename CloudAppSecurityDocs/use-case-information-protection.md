@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 341bc297d31f53cf446baec553e3abd6eec1c6df
-ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
+ms.openlocfilehash: 4f8e5c59de4dd05730dc6970ae1cbebe8f941356
+ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87254718"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88964047"
 ---
 # <a name="tutorial-automatically-apply-azure-information-protection-classification-labels"></a>Tutoriel : Application automatique d’étiquettes de classification Azure Information Protection
 
@@ -93,7 +93,7 @@ Configurons une stratégie qui recherche des numéros de carte de crédit au sei
 >[!NOTE]
 >
 > *- Cloud App Security prend actuellement en charge l’application automatique des étiquettes Azure Information Protection sur Box, GSuite, SharePoint et OneDrive Entreprise.
-> *- Lorsqu’un document est étiqueté en utilisant Cloud App Security, les marquages visuels ne sont pas appliqués immédiatement. Ils le sont quand le document est ouvert dans une application Office et qu’il est enregistré pour la première fois. Pour plus d’informations, consultez [Guide pratique pour configurer les marquages visuels d’une étiquette pour Azure Information Protection](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-markings#when-visual-markings-are-applied).
+> *- Lorsqu’un document est étiqueté en utilisant Cloud App Security, les marquages visuels ne sont pas appliqués immédiatement. Ils le sont quand le document est ouvert dans une application Office et qu’il est enregistré pour la première fois. Pour plus d’informations, consultez [Guide pratique pour configurer les marquages visuels d’une étiquette pour Azure Information Protection](/information-protection/deploy-use/configure-policy-markings#when-visual-markings-are-applied).
 
 ## <a name="next-steps"></a>Étapes suivantes
 
