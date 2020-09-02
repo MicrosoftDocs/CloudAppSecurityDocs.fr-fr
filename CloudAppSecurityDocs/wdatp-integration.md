@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 06/29/2020
+ms.date: 09/02/2020
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 85a2c8a97406cd65ca5c60cfeac36b92660b2b1f
-ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
+ms.openlocfilehash: 55c3a9f1edfadcaa686a54a3b69f95e319a55320
+ms.sourcegitcommit: 740357159d8bc405412ca3c36757647b5f1c7623
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88963877"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89316951"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-integration-with-microsoft-cloud-app-security"></a>Intégration de Microsoft Defender-protection avancée contre les menaces avec Microsoft Cloud App Security
 
@@ -75,7 +75,7 @@ Pour activer l’intégration de Microsoft Defender ATP avec Cloud App Security�
 
 Une fois que vous avez intégré Microsoft Defender ATP à Cloud App Security, vous pouvez examiner les données d’ordinateur découvertes dans le tableau de bord Cloud Discovery.
 
-1. Dans le portail Cloud App Security, cliquez sur **Cloud Discovery**, puis sur **Tableau de bord Cloud Discovery**.
+1. Dans Cloud App Security, cliquez sur **Cloud Discovery** puis **Cloud Discovery tableau de bord**.
 2. Dans la barre de navigation supérieure, sous **Rapports continus**, sélectionnez **Utilisateurs de point de terminaison Win10**.
   ![Rapport WD ATP](media/win10-dashboard-report.png)
 3. En haut, vous voyez le nombre de machines détectées ajoutées après l’intégration.
@@ -89,7 +89,7 @@ Une fois que vous avez intégré Microsoft Defender ATP à Cloud App Security, v
         - Charge : informations sur la quantité totale de trafic (en Mo) téléchargée par l’ordinateur sur la période sélectionnée.
         - **Téléchargements**: informations sur la quantité totale de trafic (en Mo) téléchargée par l’ordinateur sur la période sélectionnée.
     - **Applications découvertes**  
-  Répertorie toutes les applications découvertes qui ont fait l’objet d’un accès par l’ordinateur.
+    Répertorie toutes les applications découvertes qui ont fait l’objet d’un accès par l’ordinateur.
     - **Historique de l’utilisateur**  
     Répertorie tous les utilisateurs qui se sont connectés à l’ordinateur.
     - **Historique de l’adresse IP**  
@@ -104,11 +104,43 @@ Comme avec n’importe quelle autre source Cloud Discovery, vous pouvez exporter
 > - Si la limite de 4 Mo n’est pas atteinte dans un délai de 1 heure, Microsoft Defender ATP signale toutes les transactions effectuées au cours de la dernière heure.
 > - Si l’appareil de point de terminaison se trouve derrière un proxy direct, les données de trafic ne seront pas visibles par Microsoft Defender ATP et ne seront donc pas incluses dans les rapports de Cloud Discovery. Pour plus d’informations, consultez surveillance de la [connexion réseau derrière le proxy direct](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/MDATP-Monitoring-network-connection-behind-forward-proxy-Public/ba-p/758274).
 
+## <a name="investigate-device-network-events-in-microsoft-defender-atp"></a>Examiner les événements réseau de l’appareil dans Microsoft Defender ATP
+
+Utilisez les étapes suivantes pour obtenir une visibilité plus granulaire de l’activité réseau de l’appareil dans Microsoft Defender ATP :
+
+1. Dans Cloud App Security, sous **détection** , puis sélectionnez **ordinateurs**.
+1. Sélectionnez l’ordinateur que vous souhaitez examiner, puis dans le coin supérieur droit, cliquez sur **affichage dans Microsoft Defender ATP**.
+1. Dans Microsoft Defender Security Center, sous **appareils** > {appareil sélectionné}, sélectionnez **chronologie**.
+1. Sous **filtres**, sélectionnez **événements réseau**.
+1. Examinez les événements réseau de l’appareil en fonction des besoins.
+
+![Capture d’écran montrant la chronologie de l’appareil dans Microsoft Defender Security Center](media/mdatp-selected-device.png)
+
+## <a name="investigate-app-usage-in-microsoft-defender-atp-with-advanced-hunting"></a>Examiner l’utilisation des applications dans Microsoft Defender ATP avec la chasse avancée
+
+Utilisez les étapes suivantes pour obtenir une visibilité plus granulaire sur les événements réseau liés aux applications dans Microsoft Defender ATP :
+
+1. Dans Cloud App Security, sous **détection** , puis sélectionnez **découvert**.
+1. Cliquez sur l’application que vous souhaitez examiner pour ouvrir son tiroir.
+1. Cliquez sur la liste **domaine** de l’application, puis copiez la liste des domaines.
+1. Dans Microsoft Defender Security Center, sous **appareils**, sélectionnez sélection **avancée**.
+1. Collez la requête suivante et remplacez `<DOMAIN_LIST>` par la liste des domaines que vous avez copiés précédemment.
+
+    ```kusto
+    DeviceNetworkEvents
+    | where RemoteUrl in ("<DOMAIN_LIST>")
+    | order by Timestamp desc
+    ```
+
+1. Exécutez la requête et examinez les événements réseau pour cette application.
+
+![Capture d’écran montrant Microsoft Defender Security Center la chasse avancée](media/mdatp-advanced-hunting.png)
+
 ## <a name="block-access-to-unsanctioned-cloud-apps"></a>Bloquer l’accès aux applications Cloud non approuvées
 
 Cloud App Security utilise la balise d' [**application non**](governance-discovery.md#BKMK_SanctionApp) approuvée intégrée pour marquer les applications Cloud comme étant interdites en vue de leur utilisation, disponible dans les pages du catalogue d’applications Cloud Discovery et Cloud. En activant l’intégration à Microsoft Defender ATP, vous pouvez bloquer en toute transparence l’accès aux applications non approuvées en un seul clic dans le portail Cloud App Security.
 
-### <a name="how-it-works"></a>Fonctionnement
+### <a name="how-blocking-works"></a>Fonctionnement du blocage
 
 Les applications marquées comme non approuvées dans Cloud App Security sont synchronisées automatiquement avec Microsoft Defender ATP, **généralement en quelques** minutes. Plus précisément, les domaines utilisés par ces applications non approuvées sont propagés aux appareils de point de terminaison pour être bloqués par l’antivirus Microsoft Defender dans le contrat SLA de protection réseau.
 

@@ -9,12 +9,12 @@ ms.date: 11/01/2019
 ms.collection: M365-security-compliance
 ms.custom: seodec18
 ms.suite: ems
-ms.openlocfilehash: 842f29242a2b15cc6bf41b72f5b894c06400634b
-ms.sourcegitcommit: 684feff0782ed30f23f3d7fd9f3e063368f46b47
+ms.openlocfilehash: 202cdd57f4d2b56849f4a718de94e5197fb03d2b
+ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2020
-ms.locfileid: "88256784"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89149582"
 ---
 # <a name="microsoft-cloud-app-security-data-security-and-privacy"></a>Sécurité et confidentialité des données Microsoft Cloud App Security
 
@@ -38,8 +38,8 @@ Microsoft Cloud App Security est conforme à de nombreuses normes de conformité
 
 | Organisation |Intitulé|Description|
 |----|----|----|
-|![logo csa](media/csastar-attest.png)|CSA STAR Attestation|Azure et Intune ont obtenu la certification CSA (Cloud Security Alliance) STAR basée sur un audit indépendant.|
-|![logo csa](media/csastar.png)|CSA STAR Certification|Azure, Intune et Power BI ont obtenu la certification CSA (Cloud Security Alliance) STAR au niveau « Gold ».|
+|![Logo de l’attestation CSA](media/csastar-attest.png)|CSA STAR Attestation|Azure et Intune ont obtenu la certification CSA (Cloud Security Alliance) STAR basée sur un audit indépendant.|
+|![Logo de la certification CSA](media/csastar.png)|CSA STAR Certification|Azure, Intune et Power BI ont obtenu la certification CSA (Cloud Security Alliance) STAR au niveau « Gold ».|
 |![logo clauses type UE](media/eu-model-icon.png)|[Clauses contractuelles types de l'UE](https://www.microsoft.com/trustcenter/compliance/eu-model-clauses)|Microsoft offre des clauses contractuelles standard de l'Union européenne qui fournissent des garanties concernant les transferts de données personnelles.|
 |![logo HIPAA](media/hipaa-logo.png)|[HIPAA/HITECH](https://www\.microsoft\.com/trustcenter/compliance/hipaa)|Microsoft propose des accords de partenariat en matière de HIPAA (Health Insurance Portability & Accountability Act).|
 |![logo iso 9001](media/iso-9001.png)|ISO 9001|Microsoft est certifié pour son implémentation en matière des normes de gestion de la qualité.|
@@ -63,7 +63,7 @@ Pour plus d’informations, accédez à [Offres Microsoft relatives à la confor
 - Dans Microsoft Cloud App Security, vos administrateurs peuvent afficher les données personnelles identifiables stockées dans le service à partir du portail à l’aide de la barre de recherche.
 - Les administrateurs peuvent rechercher les métadonnées ou l’activité d’un utilisateur. En cliquant sur une entité, vous ouvrez [**Utilisateurs et comptes**](accounts.md). La page **Utilisateurs et comptes** fournit des détails complets sur l’entité qui sont tirés des applications cloud connectées. Elle fournit également l’historique des activités de l’utilisateur et les alertes de sécurité associées à l’utilisateur.
 
-- Vous possédez vos données et vous pouvez annuler les abonnements et demander la suppression de vos données à tout moment. Si vous ne renouvelez pas votre abonnement, vos données seront supprimées dans la chronologie spécifiée dans  [Conditions des services en ligne](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
+- Vous possédez vos données et vous pouvez annuler les abonnements et demander la suppression de vos données à tout moment. Si vous ne renouvelez pas votre abonnement, vos données seront supprimées selon la chronologie spécifiée dans [Conditions des services en ligne](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
 
 - Si vous choisissez de mettre fin au service, vous pouvez emporter vos données avec vous.
 
@@ -113,7 +113,7 @@ Microsoft Cloud App Security conserve les données comme suit :
 - Alertes : 180 jours
 - Journal de gouvernance : 120 jours
 
-Pour en savoir plus sur les pratiques de données Microsoft, lisez les  [Conditions du service en ligne](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
+Vous pouvez en savoir plus sur les pratiques de Microsoft relatives aux données en lisant les [des termes du contrat de service en ligne](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
 
 [En savoir plus sur la transparence](https://www\.microsoft\.com/trustcenter/about/transparency)
 
@@ -128,10 +128,10 @@ Le tableau suivant indique les données qui sont exposées pour chaque intégrat
 | Produit | Données exposées | Configuration |
 | --- | --- | --- |
 | Protection Microsoft contre les menaces | Alertes et activités des utilisateurs | Activé automatiquement sur la protection Microsoft contre les menaces lors de l’intégration |
-| Azure Sentinel | Alertes et données de découverte | [Activé dans Cloud App Security](siem-sentinel.md) et [configurés dans Azure Sentinel](https://docs.microsoft.com/azure/sentinel/connect-cloud-app-security) |
+| Azure Sentinel | Alertes et données de découverte | [Activé dans Cloud App Security](siem-sentinel.md) et [configurés dans Azure Sentinel](/azure/sentinel/connect-cloud-app-security) |
 | Centre de sécurité et de conformité Office | Alertes pour Office 365 | Diffusé automatique dans le centre de sécurité et de conformité Office |
 | Azure Security Center | Alertes pour Azure | Activé par défaut dans Cloud App Security ; peut être désactivé dans Azure Security Center |
-| API de sécurité Microsoft Graph | Alertes | [Disponible via l’API de sécurité Microsoft Graph](https://docs.microsoft.com/graph/api/resources/security-api-overview) |
+| API de sécurité Microsoft Graph | Alertes | [Disponible via l’API de sécurité Microsoft Graph](/graph/api/resources/security-api-overview) |
 | Microsoft Power Automate | Alertes envoyées pour déclencher un flux automatisé | [Configuré dans Cloud App Security](flow-integration.md) |
 
 #### <a name="third-party-products"></a>Produits tiers
@@ -168,7 +168,7 @@ Microsoft Cloud App Security vous permet de limiter l’accès des administrateu
 
 ### <a name="permissions"></a>Autorisations
 
-Microsoft Cloud App Security prend en charge le contrôle d’accès basé sur les rôles. Les rôles administrateur général et administrateur général d’Office 365 et d’Azure Active Directory ont un accès complet à Cloud App Security et les lecteurs de sécurité ont un accès en lecture. [Pour plus d'informations](/cloud-app-security/manage-admins).
+Microsoft Cloud App Security prend en charge le contrôle d’accès basé sur les rôles. Dans Microsoft 365 et Azure Active Directory, les rôles Administrateur général et Administrateur de la sécurité ont un accès complet à Cloud App Security, et les lecteurs de sécurité ont un accès en lecture. [Pour plus d'informations](manage-admins.md).
 
 ## <a name="customer-controls-for-organizational-compliance"></a>Contrôles client pour la conformité de l’organisation
 
@@ -178,7 +178,7 @@ Microsoft Cloud App Security vous permet d’étendre votre déploiement. L’é
 
 ### <a name="anonymization"></a>Anonymisation
 
-Vous pouvez choisir de conserver les rapports anonymes **Cloud Discovery**. Une fois que vos fichiers journaux sont téléchargés vers **Microsoft** Cloud App Security, toutes les informations de nom d’utilisateur sont remplacées par des noms d’utilisateur chiffrés. Pour des investigations de sécurité spécifiques, vous pouvez résoudre le nom d’utilisateur réel. Les données privées sont chiffrées en utilisant AES-128 avec une clé dédiée par client. [Pour plus d'informations](/cloud-app-security/cloud-discovery-anonymizer).
+Vous pouvez choisir de conserver les rapports anonymes **Cloud Discovery**. Une fois que vos fichiers journaux sont téléchargés vers **Microsoft** Cloud App Security, toutes les informations de nom d’utilisateur sont remplacées par des noms d’utilisateur chiffrés. Pour des investigations de sécurité spécifiques, vous pouvez résoudre le nom d’utilisateur réel. Les données privées sont chiffrées en utilisant AES-128 avec une clé dédiée par client. [Pour plus d'informations](cloud-discovery-anonymizer.md).
 
 ## <a name="security-and-privacy-for-cloud-app-security-us-government-gcc-high-customers"></a>Sécurité et confidentialité pour les clients US Government GCC High de Cloud App Security
 
@@ -190,7 +190,7 @@ Pour avoir des informations sur les normes de conformité Cloud App Security et 
 > [Vue d'ensemble de Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security)
 
 > [!div class="nextstepaction"]
-> [Documentation Cloud App Security](/cloud-app-security/)
+> [Documentation Cloud App Security](index.yml)
 
 > [!div class="nextstepaction"]
 > [S’inscrire à Cloud App Security](https://signup.microsoft.com/Signup?OfferId=757c4c34-d589-46e4-9579-120bba5c92ed&ali=1)
