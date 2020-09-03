@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: cc27146979efcf090ef4f4596ec1c4a5840892ed
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 7b3757c49d4f72acbc4daf04f3c7fcecec2241cb
+ms.sourcegitcommit: 03c7cbed4207f06b5d49cf19d690114a59916f9c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624747"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89422769"
 ---
 # <a name="troubleshooting-the-siem-agent"></a>Résolution des problèmes de l’agent SIEM
 
@@ -27,7 +27,9 @@ ms.locfileid: "85624747"
 
 Cet article liste les problèmes qui peuvent se produire lors de la connexion de votre SIEM à Cloud App Security et propose des solutions possibles.
 
-## <a name="recover-missing-activity-events-in-mcas-siem-agent"></a>Récupérer les événements d’activité manquants dans MCAS SIEM agent
+## <a name="recover-missing-activity-events-in-cloud-app-security-siem-agent"></a>Récupérer les événements d’activité manquants dans Cloud App Security Agent SIEM
+
+Avant de continuer, vérifiez que votre [licence Cloud App Security](https://aka.ms/mcaslicensing) prend en charge l’intégration Siem que vous essayez de configurer.
 
 Si vous avez reçu une alerte système concernant un problème de remise d’activité par le biais de l’agent SIEM, suivez les étapes ci-dessous pour récupérer les événements d’activité dans le laps de temps du problème. Ces étapes vous guident dans la configuration d’un nouvel agent SIEM de récupération qui s’exécute en parallèle et renvoient les événements d’activité à votre serveur SIEM.
 
@@ -37,10 +39,13 @@ Si vous avez reçu une alerte système concernant un problème de remise d’act
 ### <a name="step-1--configure-a-new-siem-agent-in-parallel-to-your-existing-agent"></a>Étape 1 : configurer un nouvel agent SIEM en parallèle à votre agent existant
 
 1. Dans le portail Cloud App Security, accédez à la page extensions de sécurité.
-1. Dans l’onglet agents SIEM, cliquez sur [Ajouter un nouvel agent Siem](siem.md)et utilisez l’Assistant pour configurer les détails de connexion à votre serveur Siem.
+1. Dans l’onglet agents SIEM, cliquez sur [Ajouter un nouvel agent Siem](siem.md)et utilisez l’Assistant pour configurer les détails de connexion à votre serveur Siem. Par exemple, vous pouvez créer un agent SIEM avec la configuration suivante :
+    - **Protocole**: TCP
+    - **Hôte distant**: tout ordinateur sur lequel vous pouvez écouter un port. Par exemple, une solution simple consiste à utiliser le même ordinateur que l’agent et à définir l’adresse IP de l’hôte distant sur 127.0.0.1.
+    - **Port**: tout port sur lequel vous pouvez écouter sur l’ordinateur hôte distant
 
-    >[!NOTE]
-    >Cet agent doit s’exécuter en parallèle avec le nom existant. la configuration du réseau peut donc ne pas être identique.
+    > [!NOTE]
+    > Cet agent doit s’exécuter en parallèle avec le nom existant. la configuration du réseau peut donc ne pas être identique.
 
 1. Dans l’Assistant, configurez les types de données pour inclure **uniquement les activités** et appliquez le même filtre d’activité que celui utilisé dans votre agent Siem d’origine (s’il existe).
 1. Enregistrez les paramètres.
@@ -48,15 +53,26 @@ Si vous avez reçu une alerte système concernant un problème de remise d’act
 
 ### <a name="step-2--validate-the-successful-data-delivery-to-your-siem"></a>Étape 2 : valider la réussite de la remise des données à votre serveur SIEM
 
+Pour valider votre configuration, procédez comme suit :
+
 1. Connectez-vous à votre serveur SIEM et vérifiez que de nouvelles données sont reçues du nouvel agent SIEM que vous avez configuré.
-1. L’agent enverra uniquement des activités à partir de la période du problème sur lequel vous avez été alerté.
+
+> [!NOTE]
+> L’agent enverra uniquement des activités dans le délai du problème sur lequel vous avez été alerté.
+
+1. Si les données ne sont pas reçues par votre serveur SIEM, sur le nouvel ordinateur de l’agent SIEM, essayez d’écouter le port que vous avez configuré pour transférer les activités pour voir si les données sont envoyées de l’agent à la SIEM. Par exemple, exécutez `netcat -l <port>` où `<port>` est le numéro de port configuré précédemment.
+
+> [!NOTE]
+> Si vous utilisez, assurez- `ncat` vous que vous spécifiez l’indicateur IPv4 `-4` .
+
+1. Si des données sont envoyées par l’agent mais non reçues par votre serveur SIEM, consultez le journal de l’agent SIEM. Si vous pouvez voir les messages « connexion refusée », vérifiez que votre agent SIEM est configuré pour utiliser TLS 1,2 ou une version plus récente.
 
 ### <a name="step-3--remove-the-recovery-siem-agent"></a>Étape 3 : supprimer l’agent SIEM de récupération
 
 1. L’agent SIEM de récupération arrête automatiquement l’envoi des données et est désactivé une fois qu’il a atteint la date de fin.
 1. Vérifiez dans votre SIEM qu’aucune nouvelle donnée n’est envoyée par l’agent SIEM de récupération.
 1. Arrêtez l’exécution de l’agent sur votre ordinateur.
-1. Dans le portail, accédez à la page de l’agent SIEM, puis supprimez l’agent SIEM de récupération.
+1. Dans le portail, accédez à la page de l’agent SIEM et supprimez l’agent SIEM de récupération.
 1. Vérifiez que votre agent SIEM d’origine est toujours en cours d’exécution correctement.
 
 ## <a name="general-troubleshooting"></a>Résolution générale des problèmes
