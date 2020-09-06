@@ -10,12 +10,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: aa5b3d4488a8e62f965900593169e899f90829b2
-ms.sourcegitcommit: 6e47d0348283d105614d81db4e7737fc837ed20b
+ms.openlocfilehash: 31190fd4df5dc9c3bac19794ff1fd78c4982100d
+ms.sourcegitcommit: 5ace3437d49c7bbde2266a6f1565a65a379b9c2c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88657648"
+ms.lasthandoff: 09/06/2020
+ms.locfileid: "89499490"
 ---
 # <a name="cloud-app-security-rest-api"></a>API REST Cloud App Security
 
@@ -75,7 +75,7 @@ Le tableau suivant décrit les actions prises en charge :
 |Activités|GET ou POST|/api/v1/activities/|
 |Alertes|GET ou POST|/api/v1/alerts/|
 |Entités|GET ou POST|/api/v1/entities/|
-|Files|GET ou POST|/api/v1/files/|
+|Fichiers|GET ou POST|/api/v1/files/|
 
 Où la **ressource** représente un groupe d’entités associées.
 
@@ -87,10 +87,10 @@ Le tableau suivant décrit les types de champs pris en charge :
 |---|---|
 |string|Chaîne textuelle|
 |boolean|Valeur booléenne représentant true/false|
-|entier|Entier 32 bits signé|
+|integer|Entier 32 bits signé|
 |timestamp|Millisecondes écoulées depuis l’époque|
 
-## <a name="limits"></a>limites
+## <a name="limits"></a>Limites
 
 Vous pouvez choisir de limiter vos demandes en fournissant un paramètre Limit dans la demande.
 
@@ -104,6 +104,7 @@ Les méthodes suivantes sont prises en charge pour fournir le paramètre Limit 
 >
 > - Si aucune limite n’est spécifiée, la valeur par défaut 100 est définie.
 > - Les réponses pour toutes les requêtes effectuées avec le jeton d’API sont limitées à un maximum de 100 éléments.
+> - La limite de limitation pour toutes les demandes d’API est de 30 demandes par minute par client.
 
 ## <a name="filters"></a>Filtres
 
@@ -142,7 +143,7 @@ Le tableau suivant décrit les opérateurs pris en charge :
 
 | Opérateur | Type de réponse | Description |
 | --- | --- | --- |
-| contient | Liste de chaînes | Retourne tous les enregistrements pertinents contenant l’une des chaînes fournies. |
+| contains | Liste de chaînes | Retourne tous les enregistrements pertinents contenant l’une des chaînes fournies. |
 | deq | liste de valeurs | Retourne tous les enregistrements qui contiennent une valeur qui n’est pas égale à l’une des valeurs fournies. |
 | descendantof | liste de valeurs | Retourne tous les enregistrements pertinents correspondant aux valeurs ou descendants de ceux-ci |
 | doesnotstartwith | Liste de chaînes | Retourne tous les enregistrements pertinents ne commençant pas par chacune des chaînes fournies |
