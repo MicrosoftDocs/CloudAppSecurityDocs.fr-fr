@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4bfa89a9794df5cbce0c361e1b2a7d8071cd303c
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 8cfefb76ec1c464ace29717ba069f82a456554ad
+ms.sourcegitcommit: 30bd09cd5a05bf19818a3f3a7e1b2ac0dc25d420
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88780526"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89598266"
 ---
 # <a name="create-snapshot-cloud-discovery-reports"></a>Créer des rapports d’instantanés Cloud Discovery
 
@@ -33,17 +33,17 @@ Pour créer un rapport d’instantané :
 
 1. Collectez les fichiers journaux de votre pare-feu et de votre proxy, via lesquels les utilisateurs de votre organisation accèdent à Internet. Veillez à collecter les journaux pendant les heures de pointe représentatives de toute l’activité utilisateur dans votre organisation.
 
-2. Dans le portail Cloud App Security, cliquez sur **Découvrir**, puis sur **Créer un rapport d’instantané**.
+1. Dans le portail Cloud App Security, cliquez sur **Découvrir**, puis sur **Créer un rapport d’instantané**.
 
     ![Créer un rapport d’instantané](media/create-new-snapshot-report.png)
 
-3. Entrer un **nom de rapport** et une **Description**
+1. Entrer un **nom de rapport** et une **Description**
 
     ![Nouveau rapport d’instantané](media/new-snapshot-report.png)
 
-4. Sélectionnez la **source de données** à partir de laquelle vous souhaitez charger les fichiers journaux.
+1. Sélectionnez la **source de données** à partir de laquelle vous souhaitez charger les fichiers journaux.
 
-5. Examinez le format de votre journal pour vérifier qu’il est mis en forme correctement en vous basant sur l’exemple de journal que vous pouvez télécharger. Cliquez sur **Afficher et vérifier**, puis sur **Télécharger l’exemple de journal**. Comparez votre journal à l’exemple fourni pour vérifier qu’il est compatible.
+1. Examinez le format de votre journal pour vérifier qu’il est mis en forme correctement en vous basant sur l’exemple de journal que vous pouvez télécharger. Cliquez sur **Afficher et vérifier**, puis sur **Télécharger l’exemple de journal**. Comparez votre journal à l’exemple fourni pour vérifier qu’il est compatible.
 
     ![Vérifier le format de votre journal](media/cloud-discovery-snapshot-verify.png)
 
@@ -51,22 +51,21 @@ Pour créer un rapport d’instantané :
     > L’exemple de format FTP est pris en charge dans les instantanés et les téléchargements automatisés alors que syslog est pris en charge dans le téléchargement automatisé uniquement.  
     Le téléchargement d’un exemple de journal télécharge un exemple de journal FTP.
 
-6. **Choisissez les journaux d’activité de trafic** que vous souhaitez charger. Vous pouvez charger jusqu’à 20 fichiers à la fois. Les fichiers compressés et zippés sont également pris en charge.
+1. **Choisissez les journaux d’activité de trafic** que vous souhaitez charger. Vous pouvez charger jusqu’à 20 fichiers à la fois. Les fichiers compressés et zippés sont également pris en charge.
 
-7. Cliquez sur **Créer**.
+1. Cliquez sur **Créer**.
 
-8. Une fois le chargement terminé, un message d’état s’affiche dans le coin supérieur droit de votre écran pour vous informer que le journal a correctement été chargé.
+1. Une fois le chargement terminé, un message d’état s’affiche dans le coin supérieur droit de votre écran pour vous informer que le journal a correctement été chargé.
 
-9. Une fois que vos fichiers journaux sont chargés, un certain temps est nécessaire pour leur extraction et leur analyse.
+1. Une fois que vos fichiers journaux sont chargés, un certain temps est nécessaire pour leur extraction et leur analyse.
     Après le traitement de vos fichiers journaux, vous recevez un e-mail pour vous avertir que l’opération est terminée.
 
-10. Une bannière de notification apparaît dans la barre d’état en haut du **tableau de bord Cloud Discovery**. La bannière se met à jour avec l’état du traitement de vos fichiers journaux.
+1. Une bannière de notification apparaît dans la barre d’état en haut du **tableau de bord Cloud Discovery**. La bannière se met à jour avec l’état du traitement de vos fichiers journaux.
     ![barre de menus du traitement des fichiers journaux](media/processing-log-file-menu-bar.png)
 
-11. Une fois les journaux téléchargés, une notification vous informant que le traitement du fichier journal s’est terminé correctement doit s’afficher. À ce stade, vous pouvez afficher le rapport en cliquant sur le lien dans la barre d’état, ou en accédant à l’icône d’engrenage Paramètres et en sélectionnant **Paramètres Cloud Discovery**.
+1. Une fois les journaux téléchargés, une notification vous informant que le traitement du fichier journal s’est terminé correctement doit s’afficher. À ce stade, vous pouvez afficher le rapport en cliquant sur le lien dans la barre d’État, ou en cliquant sur l' ![icône](media/settings-icon.png "Icône des paramètres")paramètres roue dentée paramètres, puis sélectionnez **paramètres**.
 
-    ![onglet Paramètres Cloud Discovery](media/discovery-settings-tab.png)
-12. Sélectionnez ensuite **Rapports d’instantanés**, puis votre rapport d’instantané.
+1. Ensuite, sous **Cloud Discovery**, sélectionnez **instantané rapports**, puis sélectionnez votre rapport d’instantané.
 
     ![gestion des rapports d’instantanés](media/snapshot-report-managment.png)
 

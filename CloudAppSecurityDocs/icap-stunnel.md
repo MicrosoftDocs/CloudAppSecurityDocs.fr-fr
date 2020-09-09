@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a80d54546b93545b65082115c939190f65b3801d
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 4a774d5f642def30fffd4b29c9973f925257eb55
+ms.sourcegitcommit: 30bd09cd5a05bf19818a3f3a7e1b2ac0dc25d420
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88781444"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89598278"
 ---
 # <a name="external-dlp-integration"></a>Intégration DLP externe
 
@@ -27,7 +27,7 @@ ms.locfileid: "88781444"
 
 Microsoft Cloud App Security peut s’intégrer à des solutions DLP existantes pour étendre ces contrôles au cloud tout en conservant une stratégie cohérente et unifiée pour les activités locales et dans le cloud. La plateforme exporte des interfaces faciles à utiliser, notamment l’API REST et ICAP, qui permettent d’intégrer des systèmes de classification du contenu comme Symantec Data Loss Prevention (anciennement Vontu Data Loss Prevention) ou Forcepoint DLP.
 
-L’intégration s’effectue en utilisant le protocole ICAP standard, un protocole de type http décrit dans [RFC 3507](https://tools.ietf.org/html/rfc3507). Afin de sécuriser le protocole ICAP pour la transmission de vos données, vous devez configurer un tunnel SSL sécurisé (stunnel) entre votre solution DLP et Cloud App Security. La configuration d’un stunnel fournit des fonctionnalités de chiffrement TLS à vos données pendant leur transit entre votre serveur DLP et Cloud App Security.
+L’intégration s’effectue en utilisant le protocole ICAP standard, un protocole de type http décrit dans [RFC 3507](https://tools.ietf.org/html/rfc3507). Pour sécuriser le protocole ICAP pour la transmission de vos données, il est nécessaire de configurer un tunnel TLS sécurisé (stunnel) entre votre solution DLP et Cloud App Security. La configuration d’un stunnel fournit des fonctionnalités de chiffrement TLS à vos données pendant leur transit entre votre serveur DLP et Cloud App Security.
 
 Ce guide décrit les étapes nécessaires pour configurer la connexion ICAP dans Cloud App Security ainsi que le stunnel qui permet de sécuriser la communication.
 
@@ -66,7 +66,7 @@ Dans cette étape, vous configurez le stunnel connecté à votre serveur ICAP.
 
 ### <a name="install-stunnel-on-a-server"></a>Installer le stunnel sur un serveur
 
-**Conditions préalables**
+**Composants requis**
 
 - **Un serveur**, Windows Server ou serveur Linux basé sur une distribution majeure.
 
@@ -82,7 +82,7 @@ Consultez le [site web du stunnel](https://www.stunnel.org/index.html) pour plus
 
 4. Créez un certificat de l’une des façons suivantes :
 
-    - Utilisez votre serveur de gestion de certificat pour créer un certificat SSL sur votre serveur ICAP. Copiez ensuite les clés sur le serveur que vous avez préparé pour l’installation du stunnel.
+    - Utilisez votre serveur de gestion de certificats pour créer un certificat TLS sur votre serveur ICAP. Copiez ensuite les clés sur le serveur que vous avez préparé pour l’installation du stunnel.
     - Sinon, sur le serveur stunnel, utilisez les commandes OpenSSL suivantes pour générer une clé privée et un certificat auto-signé. Remplacez ces variables :
         - **key.pem** par le nom de votre clé privée
         - **CERT. pem** avec le nom de votre certificat
@@ -153,7 +153,7 @@ Vérifiez que vous créez la clé privée sans phrase secrète pour que le stunn
 
 Vous pouvez créer les certificats de l’une des façons suivantes :
 
-- Utilisez votre serveur de gestion de certificat pour créer un certificat SSL sur votre serveur ICAP. Copiez ensuite les clés sur le serveur que vous avez préparé pour l’installation du stunnel.
+- Utilisez votre serveur de gestion de certificats pour créer un certificat TLS sur votre serveur ICAP. Copiez ensuite les clés sur le serveur que vous avez préparé pour l’installation du stunnel.
 - Sinon, sur le serveur stunnel, utilisez les commandes OpenSSL suivantes pour générer une clé privée et un certificat auto-signé.
 Remplacez ces variables :
   - **key.pem** par le nom de votre clé privée
