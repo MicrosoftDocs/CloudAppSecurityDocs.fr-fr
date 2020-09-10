@@ -9,12 +9,12 @@ ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 01becaab45d0276599bcdf5b42d3aadcfe31b259
-ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
+ms.openlocfilehash: e8f60e2412ab32fd5cb22adb78e482d6359697f6
+ms.sourcegitcommit: 98c8dd439d1183af3d8598c676c8ff041a88bd88
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89149831"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89667154"
 ---
 # <a name="cloud-discovery-policies"></a>Stratégies Cloud Discovery
 
@@ -134,26 +134,26 @@ Configurez le chargement automatique des journaux pour les rapports de Cloud Dis
 
 ## <a name="detect-risky-oauth-apps"></a>Détecter les applications OAuth risquées
 
-Bénéficiez d’une visibilité et d’un contrôle sur les [applications OAuth](investigate-risky-oauth.md) installées dans des applications telles que G Suite, Microsoft 365 et Salesforce. Les applications OAuth qui demandent des autorisations élevées et qui ont une utilisation communautaire rare peuvent être considérées comme risquées.
+Bénéficiez d’une visibilité et d’un contrôle sur les [applications OAuth](investigate-risky-oauth.md) installées dans des applications telles que G suite, Office 365 et Salesforce. Les applications OAuth qui demandent des autorisations élevées et qui ont une utilisation communautaire rare peuvent être considérées comme risquées.
 
 ### <a name="prerequisites"></a>Prérequis
 
-L’application G suite, Microsoft 365 ou Salesforce doit être connectée à l’aide de [connecteurs d’application](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+L’application G suite, Office 365 ou Salesforce doit être connectée à l’aide de [connecteurs d’application](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
 ### <a name="steps"></a>Étapes
 
 1. Dans la page **stratégies** , créez une nouvelle **stratégie d’application OAuth**.
 
-2. Sélectionnez l' **application** de filtre et définissez l’application que la stratégie doit couvrir, G Suite, Microsoft 365 ou Salesforce.
+2. Sélectionnez l' **application** de filtre et définissez l’application que la stratégie doit couvrir, G suite, Office 365 ou Salesforce.
 
-3. Sélectionnez le filtre de **niveau d’autorisation** est égal à **élevé** (disponible pour G suite et Microsoft 365).
+3. Sélectionnez le filtre de **niveau d’autorisation** est égal à **élevé** (disponible pour G suite et Office 365).
 
 4. Ajoutez le filtre l’utilisation de la **communauté** est égale à **rare**.
 
-5. Configurez les actions à entreprendre lorsqu’une alerte est déclenchée. Par exemple, pour Microsoft 365, cochez la case **révoquer l’application** pour les applications OAuth détectées par la stratégie.
+5. Configurez les actions à entreprendre lorsqu’une alerte est déclenchée. Par exemple, pour Office 365, activez la case à cocher **révoquer l’application** pour les applications OAuth détectées par la stratégie.
 
 > [!NOTE]
-> Pris en charge pour les magasins d’applications G suite, Microsoft 365 et Salesforce.
+> Pris en charge pour les magasins d’applications G suite, Office 365 et Salesforce.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

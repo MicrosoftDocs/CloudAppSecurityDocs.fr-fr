@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ab60b9237af0d2dadbfbe6c48b6e2f17ff80df3b
-ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
+ms.openlocfilehash: b0b928f095769a1051f825748941ed818401e6d3
+ms.sourcegitcommit: 98c8dd439d1183af3d8598c676c8ff041a88bd88
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89150279"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89667093"
 ---
 # <a name="generic-siem-integration"></a>Intégration de SIEM générique
 
@@ -78,21 +78,21 @@ L’intégration à votre serveur SIEM s’effectue en trois étapes :
     ![Capture d’écran montrant le menu Ajouter une intégration SIEM](media/siem0.png)
 
 1. Dans l’Assistant, cliquez sur **Démarrer l’Assistant**.
-1. Dans l’Assistant, entrez un nom, **sélectionner votre format SIEM** et définissez les **paramètres avancés** appropriés pour ce format. Cliquez sur **Next**.
+1. Dans l’Assistant, entrez un nom, **sélectionner votre format SIEM** et définissez les **paramètres avancés** appropriés pour ce format. Cliquez sur **Suivant**.
 
     ![Paramètres SIEM généraux](media/siem1.png)
 
 1. Entrez l’adresse IP ou le nom d’hôte de **l’hôte Syslog distant** et le **numéro de port Syslog**. Sélectionnez TCP ou UDP comme protocole Syslog distant.
-    Vous pouvez travailler avec votre administrateur de la sécurité pour obtenir ces informations si vous n’en disposez pas. Cliquez sur **Next**.
+    Vous pouvez travailler avec votre administrateur de la sécurité pour obtenir ces informations si vous n’en disposez pas. Cliquez sur **Suivant**.
 
     ![Paramètres Syslog distants](media/siem2.png)
 
-1. Sélectionnez les types de données (**Alertes** et **Activités**) que vous voulez exporter vers votre serveur SIEM. Utilisez le curseur pour les activer et les désactiver. Par défaut, tout est sélectionné. Vous pouvez utiliser la liste déroulante **appliquer à** pour définir des filtres afin d’envoyer uniquement des alertes et des activités spécifiques à votre serveur Siem. Cliquez sur **Modifier et afficher un aperçu des résultats** pour vérifier que le filtre fonctionne comme prévu. Cliquez sur **Next**.
+1. Sélectionnez les types de données (**Alertes** et **Activités**) que vous voulez exporter vers votre serveur SIEM. Utilisez le curseur pour les activer et les désactiver. Par défaut, tout est sélectionné. Vous pouvez utiliser la liste déroulante **appliquer à** pour définir des filtres afin d’envoyer uniquement des alertes et des activités spécifiques à votre serveur Siem. Cliquez sur **Modifier et afficher un aperçu des résultats** pour vérifier que le filtre fonctionne comme prévu. Cliquez sur **Suivant**.
 
    ![Paramètres des types de données](media/siem3.png)
 
 1. Copiez le jeton et enregistrez-le pour l’utiliser ultérieurement.
-    Cliquez sur Terminer pour quitter l’Assistant. Revenez à la page SIEM pour voir l’agent SIEM que vous avez ajouté dans la tableau. Il indique qu’il est **créé** jusqu’à ce qu’il soit connecté.
+    Cliquez sur Terminer pour quitter l’Assistant. Revenez à la page SIEM pour voir l’agent SIEM que vous avez ajouté dans la tableau. Il indique qu’il est **créé** jusqu’à ce qu’il soit connecté ultérieurement.
 
 > [!NOTE]
 > Tout jeton que vous créez est lié à l’administrateur qui l’a créé. Cela signifie que si l’utilisateur administrateur est supprimé de Cloud App Security, le jeton n’est plus valide.
@@ -111,7 +111,7 @@ L’intégration à votre serveur SIEM s’effectue en trois étapes :
 > * Les paramètres entre crochets [ ] sont facultatifs et doivent être utilisés seulement si nécessaire.
 > * Il est recommandé d’exécuter le fichier JAR lors du démarrage du serveur.
 >   * Windows : exécutez en tant que tâche planifiée et assurez-vous que vous configurez la tâche pour **qu’elle s’exécute si l’utilisateur a ouvert une session ou non** et que vous désactivez la case à cocher **arrêter la tâche si elle s’exécute plus longtemps que** .
->   * Linux : ajoutez la commande exécuter avec un **&** au fichier RC. local. Par exemple : `java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN &`
+>   * Linux : ajoutez la commande exécuter avec un **&** au fichier RC. local. Par exemple : `java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN &`
 
 Où les variables suivantes sont utilisées :
 
@@ -160,7 +160,7 @@ Le texte suivant est un exemple de fichier journal d’alertes :
 | Activités/Alertes | rt | Horodatage d’activité ou d’alerte |
 | Activités/Alertes | msg | Description de l’activité ou de l’alerte telle qu’elle apparaît dans le portail |
 | Activités/Alertes | suser | Utilisateur de l’objet de l’activité ou de l’alerte |
-| Activités/Alertes | destinationServiceName | L’activité ou l’alerte à l’origine de l’application, par exemple, Microsoft 365, SharePoint, Box. |
+| Activités/Alertes | destinationServiceName | Application à l’origine de l’activité ou de l’alerte, par exemple Office 365, Sharepoint, Box. |
 | Activités/Alertes | cs\<X>Label | Chaque étiquette a une signification différente, mais l’étiquette elle-même l’explique, par exemple targetObjects. |
 | Activités/Alertes | cs\<X> | Informations correspondant à l’étiquette (l’utilisateur cible de l’activité ou de l’alerte, selon l’exemple d’étiquette). |
 | Activités | EVENT_CATEGORY_* | Catégorie générale de l’activité |
@@ -168,7 +168,7 @@ Le texte suivant est un exemple de fichier journal d’alertes :
 | Activités | externalId | ID de l’événement |
 | Activités | dvc | Adresse IP de l’appareil client |
 | Activités | requestClientApplication | Agent utilisateur de l’appareil client |
-| Alertes | \<alert type> | Par exemple « ALERT_CABINET_EVENT_MATCH_AUDIT » |
+| Alertes | \<alert type> | Par exemple, « ALERT_CABINET_EVENT_MATCH_AUDIT » |
 | Alertes | \<name> | Nom de la stratégie correspondante |
 | Alertes | externalId | ID de l’alerte |
 | Alertes | src | Adresse IPv4 de l’appareil client |

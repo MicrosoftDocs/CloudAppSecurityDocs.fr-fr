@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a8793a96269f42dce827d101e717543ad873dacd
-ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
+ms.openlocfilehash: 80d7b83c49d3e2ebbd5ffc13ff82b414ccf67718
+ms.sourcegitcommit: 98c8dd439d1183af3d8598c676c8ff041a88bd88
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89150150"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89667173"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Protéger les applications avec le Contrôle d’accès conditionnel aux applications Microsoft Cloud App Security
 
@@ -130,7 +130,7 @@ Cloud App Security identifie les applications à l’aide des informations dispo
 
 De nombreuses organisations qui choisissent d’utiliser des contrôles de session pour les applications Cloud pour contrôler les activités en session, appliquent également des contrôles d’accès pour bloquer le même ensemble d’applications clientes mobiles et de bureau natives, offrant ainsi une sécurité complète pour les applications.
 
-Vous pouvez bloquer l’accès aux applications clientes mobiles natives et de bureau à l’aide de stratégies d’accès, en définissant le filtre d' **application client** sur **mobile et Desktop**. Certaines applications clientes natives peuvent être reconnues individuellement, tandis que d’autres qui font partie d’une suite d’applications ne peuvent être identifiées qu’en tant qu’application de niveau supérieur. Par exemple, les applications telles que SharePoint Online peuvent uniquement être reconnues en créant une stratégie d’accès appliquée à Microsoft 365 applications.
+Vous pouvez bloquer l’accès aux applications clientes mobiles natives et de bureau à l’aide de stratégies d’accès, en définissant le filtre d' **application client** sur **mobile et Desktop**. Certaines applications clientes natives peuvent être reconnues individuellement, tandis que d’autres qui font partie d’une suite d’applications ne peuvent être identifiées qu’en tant qu’application de niveau supérieur. Par exemple, les applications telles que SharePoint Online peuvent uniquement être reconnues en créant une stratégie d’accès appliquée aux applications Office 365.
 
 > [!NOTE]
 > À moins que le filtre d' **application cliente** ne soit spécifiquement défini sur **mobile et Desktop**, la stratégie d’accès résultante s’appliquera uniquement aux sessions de navigateur. Cela a pour but d’empêcher le proxy par inadvertance des sessions utilisateur, qui peut être un sous-utilisateur de l’utilisation de ce filtre. Tandis que la plupart des principaux navigateurs prennent en charge l’exécution d’une vérification de certificat client, certaines applications mobiles et de bureau utilisent des navigateurs intégrés qui peuvent ne pas prendre en charge cette vérification. Par conséquent, l’utilisation de ce filtre peut affecter l’authentification pour ces applications.
@@ -149,7 +149,7 @@ Alors que les contrôles de session sont créés pour fonctionner avec n’impor
 - AWS
 - DevOps Azure (Visual Studio Team Services)
 - Portail Azure (préversion)
-- Zone
+- Box
 - Concur
 - CornerStone on Demand
 - DocuSign
@@ -175,9 +175,9 @@ Alors que les contrôles de session sont créés pour fonctionner avec n’impor
 - Workplace by Facebook
 - Yammer (préversion)
 
-### <a name="microsoft-365-featured-apps"></a><a name="O365-apps"></a>Applications Microsoft 365 proposées
+### <a name="office-365-featured-apps"></a><a name="O365-apps"></a>Applications Office 365 proposées
 
-La liste suivante répertorie les applications proposées qui sont prises en charge dans Microsoft 365 Cloud App Security. Pour utiliser ces applications avec Cloud App Security, vous devez disposer d’une licence Office 365 E5.
+La liste suivante répertorie les applications proposées qui sont prises en charge dans Office 365 Cloud App Security. Pour utiliser ces applications avec Cloud App Security, vous devez disposer d’une licence Office 365 E5.
 
 - Exchange Online
 - OneDrive Entreprise

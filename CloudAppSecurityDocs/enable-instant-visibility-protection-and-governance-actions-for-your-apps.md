@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 230aa68ca85e2c31fa866ed44183986152847224
-ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
+ms.openlocfilehash: 1275d29f301f407dfd9198e5278bd4bd75ce7d39
+ms.sourcegitcommit: 98c8dd439d1183af3d8598c676c8ff041a88bd88
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89150092"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89666910"
 ---
 # <a name="connect-apps"></a>Connecter des applications
 
@@ -34,7 +34,7 @@ Microsoft Cloud App Security tire profit des API proposées par le fournisseur d
 Cloud App Security prend en charge plusieurs instances de la même application connectée. Par exemple, si vous avez plusieurs instances de Salesforce (une pour les ventes, une pour le marketing), vous pouvez vous connecter à Cloud App Security. Vous pouvez gérer les différentes instances à partir de la même console pour créer des stratégies granulaires et mener une investigation plus approfondie. Cette prise en charge s’applique uniquement aux applications connectées à des API, pas aux applications découvertes dans le cloud ni aux applications connectées à des proxys.
 
 > [!NOTE]
-> Multi-instance n’est pas pris en charge pour Microsoft 365 et Azure.
+> Multi-instance n’est pas pris en charge pour Office 365 et Azure.
 
 ## <a name="how-it-works"></a>Fonctionnement
 
@@ -66,15 +66,15 @@ Selon l’application à laquelle vous vous connectez, la connexion d’API acti
 
 Le tableau suivant répertorie, par application cloud, les fonctionnalités prises en charge avec les connecteurs d’applications :
 
-| | AWS | Zone | Dropbox | GCP | G Suite | Microsoft 365 | Okta | ServiceNow | Salesforce | Webex | Workday |
+| | AWS | Box | Dropbox | GCP | G Suite | Office 365 | Okta | ServiceNow | Salesforce | Webex | Workday |
 |-|-|-|-|-|-|-|-|-|-|-|-|
 | **Énumérer les comptes** | ✔ | ✔ | ✔ | Connexion de l’objet G suite | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 | **Liste des groupes** | ✔ | ✔ | ✔ | Connexion de l’objet G suite | ✔ | ✔ | ✔ | ✔ | ✔ | | Non prise en charge par le fournisseur |
 | **Liste des privilèges** | | ✔ | ✔ | Connexion de l’objet G suite | ✔ | ✔ | Non prise en charge par le fournisseur | ✔ | ✔ | ✔ | Non prise en charge par le fournisseur |
 | **Gouvernance des utilisateurs** | | ✔ | Bientôt disponible | Connexion de l’objet G suite | ✔ | ✔ | | Bientôt disponible | ✔ | Bientôt disponible | Non prise en charge par le fournisseur |
 | **Activité de connexion** | ✔ | ✔ | ✔ | Connexion de l’objet G suite | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-| **Activité de l’utilisateur** | Non applicable | ✔ | ✔ | ✔ | ✔ - nécessite Google Business ou Entreprises | ✔ | ✔ | Partial | Prise en charge avec Salesforce Shield | ✔ | ✔ |
-| **Activité d’administration** | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | Partial | ✔ | ✔ | Non prise en charge par le fournisseur |
+| **Activité de l’utilisateur** | Non applicable | ✔ | ✔ | ✔ | ✔ - nécessite Google Business ou Entreprises | ✔ | ✔ | Partiel | Prise en charge avec Salesforce Shield | ✔ | ✔ |
+| **Activité d’administration** | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | Partiel | ✔ | ✔ | Non prise en charge par le fournisseur |
 | **DLP-analyse périodique** | | ✔ | ✔ | Non applicable | ✔ | ✔ | Non applicable | ✔ | ✔ | ✔ | Non prise en charge par le fournisseur |
 | **DLP : analyse en temps quasi réel** | | ✔ | | Non applicable | ✔-nécessite Google Business Enterprise | ✔ | Non applicable | | | ✔ | Non prise en charge par le fournisseur |
 | **Contrôle partagé** | ✔ | ✔ | ✔ | Non applicable | ✔ | ✔ | Non applicable | Non applicable | | ✔ | Non prise en charge par le fournisseur |
@@ -98,12 +98,12 @@ Pour utiliser des connecteurs d’applications, vous devez vérifier que vous av
 |-----|--------------|------|
 | Azure | | Administrateur général |
 | AWS | | Utilisateur récemment créé |
-| Zone | Entreprise | Il est fortement recommandé de vous connecter à Box en tant qu’administrateur. Si vous vous connectez en tant que coadministrateur, vous obtiendrez uniquement une visibilité partielle des données. Si vous vous connectez en tant que coadministrateur, sélectionnez toutes les autorisations. |
+| Box | Entreprise | Il est fortement recommandé de vous connecter à Box en tant qu’administrateur. Si vous vous connectez en tant que coadministrateur, vous obtiendrez uniquement une visibilité partielle des données. Si vous vous connectez en tant que coadministrateur, sélectionnez toutes les autorisations. |
 | Dropbox | Business/Entreprises | Admin |
 | GitHub | GitHub Enterprise Cloud | Propriétaire |
 | GCP | | Consultez les [conditions préalables Connect GCP](connect-google-gcp-to-microsoft-cloud-app-security.md#prerequisites) |
 | G Suite | Compte G Suite Business ou Entreprise<br /><br />G Suite Enterprise (au minimum) | Super administrateur |
-| Microsoft 365 | | Administrateur général |
+| Office 365 | | Administrateur général |
 | Okta | Enterprise (pas la version d’essai) | Admin |
 | Salesforce | | Admin |
 | ServiceNow | Eureka et au-dessus | Rôle admin + RestAPI |

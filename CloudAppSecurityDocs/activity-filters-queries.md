@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 25020539ecc5a0ae48e8cb3d6b1c6ce0387a7d2a
-ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
+ms.openlocfilehash: 8dd243af267de7bd598505771554675832560e37
+ms.sourcegitcommit: 98c8dd439d1183af3d8598c676c8ff041a88bd88
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89149735"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89666856"
 ---
 # <a name="activity-filters-and-queries"></a>Filtres et requêtes des activités
 
@@ -95,7 +95,7 @@ Vous trouverez ci-dessous une liste des filtres d’activité qui peuvent être 
 - Utilisateur : utilisateur qui a exécuté l’activité, qui peut être filtré en domaine, groupe, nom ou organisation. Pour filtrer les activités sans utilisateur spécifique, vous pouvez utiliser l’opérateur « n’est pas défini ».
   - Domaine de l’utilisateur : Recherchez un domaine utilisateur spécifique.
   - Organisation utilisateur : Unité d’organisation de l’utilisateur qui a effectué l’activité, par exemple toutes les activités effectuées par les utilisateurs EMEA_marketing. Cela s’applique uniquement aux instances G suite connectées qui utilisent des unités d’organisation.
-  - Groupe d’utilisateurs : groupes d’utilisateurs spécifiques que vous pouvez importer à partir d’applications connectées, par exemple, Microsoft 365 administrateurs.
+  - Groupe d’utilisateurs : Groupes d’utilisateurs spécifiques que vous pouvez importer à partir d’applications connectées, par exemple, les administrateurs Office 365.
   - Nom d’utilisateur : Recherchez un nom d’utilisateur spécifique. Pour afficher la liste des utilisateurs membres d’un groupe d’utilisateurs spécifique, dans le **tiroir Activité**, cliquez sur le nom du groupe d’utilisateurs. Le fait de cliquer vous permet d’accéder à la page Comptes qui répertorie tous les utilisateurs figurant dans le groupe. À partir de cette page, vous pouvez explorer plus en détail les comptes d’utilisateurs spécifiques dans le groupe.
   - Vous pouvez affiner les filtres **Groupe d’utilisateurs** et **Nom d’utilisateur** en choisissant le filtre **En tant que**, puis en sélectionnant le rôle de l’utilisateur parmi les rôles suivants :
     - Objet d’activité uniquement : signifie que l’utilisateur ou le groupe d’utilisateurs sélectionné n’a pas effectué l’activité en question, mais qu’il était l’objet de l’activité.
