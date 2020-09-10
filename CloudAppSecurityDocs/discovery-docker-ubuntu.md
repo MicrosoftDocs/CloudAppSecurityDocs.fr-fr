@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 575028a9df41f8340c4a7a398fb05b5264ee93bb
-ms.sourcegitcommit: 1554e381acc1e58de113d3b427f4e9de91b98488
+ms.openlocfilehash: 706bdf5d49c044f5fe9015e65eb57bf34e325e32
+ms.sourcegitcommit: c31df5ab5f2c1ee1dbfdabc83294b425a48dba70
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89148724"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89654393"
 ---
 # <a name="docker-on-linux-on-premises"></a>Docker sur Linux en local
 
@@ -109,7 +109,10 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
 
 ### <a name="step-2--on-premises-deployment-of-your-machine"></a>Étape 2 : Déploiement local de votre ordinateur
 
-La procédure suivante décrit le déploiement dans Ubuntu. Les étapes de déploiement pour d’autres plateformes sont légèrement différentes.
+La procédure suivante décrit le déploiement dans Ubuntu.
+
+> [!NOTE]
+> Les étapes de déploiement pour les autres plateformes prises en charge peuvent être légèrement différentes.
 
 1. Ouvrez un terminal sur votre ordinateur Ubuntu.
 
