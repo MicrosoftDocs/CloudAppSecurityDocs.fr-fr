@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 06/29/2020
+ms.date: 09/15/2020
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,38 +14,26 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1a066955c2a832f46f38c128a908c9f772f0dbe3
-ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
+ms.openlocfilehash: 31fb5ddc618ce1600e41a1437759b2558b3350c1
+ms.sourcegitcommit: 7d05b81a839286d2afae4cdad2c2d59e7becc1f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88963979"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90524189"
 ---
 # <a name="security-configuration-for-azure"></a>Configuration de la sécurité pour Azure
 
 *S’applique à : Microsoft Cloud App Security*
 
-Microsoft Cloud App Security vous permet d’évaluer la configuration de la sécurité de votre environnement Azure. L’évaluation, permise par Azure Security Center, fournit des recommandations concernant les configurations et les contrôles de sécurité manquants.
+Microsoft Cloud App Security vous permet d’évaluer la configuration de la sécurité de votre environnement Azure. L’évaluation, optimisée par Azure Security Center, fournit des recommandations pour les contrôles de sécurité et de configuration manquants.
 
-## <a name="enable-security-configuration-recommendations"></a>Activer les recommandations de configuration de la sécurité
+## <a name="prerequisites"></a>Prérequis
 
-Pour utiliser cette fonctionnalité, vous devez avoir les autorisations appropriées dans Azure AD et dans le portail Azure. Par défaut, le rôle d’administrateur général Azure AD ne vous donne pas accès aux abonnements Azure. Élevez vos autorisations dans le but d’accorder l’accès aux abonnements Azure à vous-même et aux autres utilisateurs.
-
-> [!IMPORTANT]
-> Nous vous recommandons de désactiver l’élévation après avoir terminé la procédure suivante.
+Votre organisation doit disposer de licences Azure Security Center pour tous les abonnements pour lesquels vous souhaitez fournir des évaluations de configuration de sécurité Azure.
 
 ## <a name="how-to-enable-azure-security-recommendations"></a>Comment activer les recommandations de sécurité Azure
 
-Pour obtenir des recommandations sur la configuration de la sécurité dans Microsoft Cloud App Security :
-
-1. <a href="https://docs.microsoft.com/azure/security-center/security-center-management-groups" target="_blank">Bénéficiez d’une visibilité à l’niveau du locataire pour Azure Security Center</a>. Ce processus comprend :
-
-    - L’attribution du rôle Lecteur à vous-même ainsi qu’à tous les administrateurs Microsoft Cloud App Security de votre choix, pour tous les abonnements
-    - L’attribution du rôle au groupe d’administration racine dans Azure Security Center
-    - L’élévation de votre administrateur général Azure AD pour accorder l’accès aux abonnements Azure
-    - L’article décrit la procédure permettant de devenir administrateur de la sécurité. Pour que cette intégration fonctionne, les autorisations minimales dont vous avez besoin sont **Reader**.
-
-1. Veillez à ouvrir <a href="https://ms.portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/0" target="_blank">Azure Security Center</a> pour que les changements entrent en vigueur.
+Pour activer les recommandations de configuration de la sécurité dans Cloud App Security, activez votre abonnement Azure Security Center en accédant au <a href="https://ms.portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/0" target="_blank">portail</a>.
 
 ## <a name="how-to-view-azure-security-recommendations"></a>Comment afficher les recommandations de sécurité Azure
 
