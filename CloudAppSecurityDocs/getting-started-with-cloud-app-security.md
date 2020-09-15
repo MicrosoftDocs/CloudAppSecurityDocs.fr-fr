@@ -11,12 +11,12 @@ ms.service: cloud-app-security
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: cb99000e5ca2ae04cf933d60b91440e55f4079c2
-ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
+ms.openlocfilehash: 1b9da95ccef98320314ccedd646be757b29dced5
+ms.sourcegitcommit: 98c8dd439d1183af3d8598c676c8ff041a88bd88
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89150177"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89667019"
 ---
 # <a name="quickstart-get-started-with-microsoft-cloud-app-security"></a>Démarrage rapide : Bien démarrer avec Microsoft Cloud App Security
 
@@ -27,7 +27,7 @@ Ce guide de démarrage rapide présente la procédure de mise en route de Cloud 
 Votre organisation doit disposer d’une licence permettant d’utiliser Cloud App Security. Pour plus d’informations sur les tarifs, consultez la [fiche technique sur les licences Cloud App Security](https://aka.ms/mcaslicensing).
 
 >[!NOTE]
->Cloud App Security ne nécessite pas de licence Microsoft 365.
+>Cloud App Security ne nécessite pas de licence Office 365.
 
 ## <a name="prerequisites"></a>Prérequis
 
@@ -36,7 +36,7 @@ Votre organisation doit disposer d’une licence permettant d’utiliser Cloud A
     Pour la prise en charge de l’activation du locataire, consultez [Comment contacter le support relatif aux produits d’entreprises - Aide de l’administrateur](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
 - Après avoir acquis une licence Cloud App Security, vous recevrez un e-mail contenant les informations d’activation et le lien du portail Cloud App Security.
 
-- Pour configurer Cloud App Security, vous devez être administrateur général ou administrateur de la sécurité dans Azure Active Directory ou Microsoft 365. Il est important de comprendre qu’un utilisateur possédant un rôle d’administrateur aura les mêmes autorisations sur toutes les applications cloud auxquelles votre organisation s’est abonnée, que ce rôle ait été attribué dans le Centre d’administration Microsoft 365, sur le Portail Azure Classic ou à l’aide du module Azure AD pour [Windows PowerShell](/microsoft-365/enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell?view=o365-worldwide). Pour plus d’informations, consultez [Attribuer des rôles d’administrateur](https://support.office.com/article/Assigning-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504) et [Attribution des rôles d’administrateur dans Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
+- Pour configurer Cloud App Security, vous devez être un administrateur général, de mise en conformité ou de la sécurité dans Azure Active Directory ou Office 365. Il est important de comprendre qu’un utilisateur possédant un rôle d’administrateur aura les mêmes autorisations sur toutes les applications cloud auxquelles votre organisation s’est abonnée, que ce rôle ait été attribué dans le Centre d’administration Microsoft 365, sur le Portail Azure Classic ou à l’aide du module Azure AD pour [Windows PowerShell](/microsoft-365/enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell?view=o365-worldwide&preserve-view=true). Pour plus d’informations, consultez [Attribuer des rôles d’administrateur](https://support.office.com/article/Assigning-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504) et [Attribution des rôles d’administrateur dans Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
 
 - Pour exécuter le portail Cloud App Security, utilisez Internet Explorer 11, Microsoft Edge (dernière version), Google Chrome (dernière version), Mozilla Firefox (dernière version) ou Apple Safari (dernière version).
 
