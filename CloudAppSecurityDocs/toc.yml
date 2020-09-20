@@ -21,7 +21,7 @@
   items:
     - name: Mise en route
       href: getting-started-with-cloud-app-security.md
-    - name: Bonnes pratiques
+    - name: meilleures pratiques recommandées.
       href: best-practices.md
 - name: Didacticiels
   items:
@@ -39,6 +39,8 @@
       href: tutorial-proxy.md
     - name: Bloquer les téléchargements des informations sensibles
       href: use-case-proxy-block-session-aad.md
+    - name: Gérer la sécurité des plateformes cloud
+      href: tutorial-cloud-platform-security.md
     - name: Protection de vos fichiers avec la mise en quarantaine administrateur
       href: use-case-admin-quarantine.md
     - name: Appliquer des étiquettes Azure Information Protection automatiquement
@@ -73,7 +75,7 @@
           href: protect-gcp.md
         - name: Protéger G Suite
           href: protect-gsuite.md
-        - name: "Protéger Microsoft\_365"
+        - name: "Protéger Office\_365"
           href: protect-office-365.md
         - name: Protéger Okta
           href: protect-okta.md
@@ -163,7 +165,7 @@
           href: connect-google-apps-to-microsoft-cloud-app-security.md
         - name: Connecter GCP
           href: connect-google-gcp-to-microsoft-cloud-app-security.md
-        - name: "Se connecter à Microsoft\_365"
+        - name: "Connecter Office\_365"
           href: connect-office-365-to-microsoft-cloud-app-security.md
         - name: Connecter Okta
           href: connect-okta-to-microsoft-cloud-app-security.md
