@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9e8b9060163e9756660719ab390f260337f14192
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 28b78dfb0a295d341d9f43d9bd6cc6efacda0aa7
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88779115"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90880494"
 ---
 # <a name="policy-template-reference"></a>Référence sur les modèles de stratégie
 
-*S’applique à : Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Cet article fournit des informations sur les modèles de stratégie inclus dans Microsoft Cloud App Security.
 

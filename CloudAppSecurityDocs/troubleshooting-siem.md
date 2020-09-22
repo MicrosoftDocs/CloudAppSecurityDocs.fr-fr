@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 7b3757c49d4f72acbc4daf04f3c7fcecec2241cb
-ms.sourcegitcommit: 03c7cbed4207f06b5d49cf19d690114a59916f9c
+ms.openlocfilehash: effcab71a9b359aeb5d97ab2dc889e10133f7b9e
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89422769"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90876992"
 ---
 # <a name="troubleshooting-the-siem-agent"></a>Résolution des problèmes de l’agent SIEM
 
-*S’applique à : Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Cet article liste les problèmes qui peuvent se produire lors de la connexion de votre SIEM à Cloud App Security et propose des solutions possibles.
 

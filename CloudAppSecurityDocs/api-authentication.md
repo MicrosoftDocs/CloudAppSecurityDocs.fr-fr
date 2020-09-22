@@ -10,16 +10,16 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 7eeeea75c084acddac195021d7ee7a6f3d533da6
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: b651ce17b8bcda01047cbb84be61eb1137864a4f
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88781410"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90880642"
 ---
 # <a name="managing-api-tokens"></a>Gestion des jetons d’API
 
-*S’applique à : Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Pour accéder à l’API Cloud App Security, vous devez créer un jeton d’API et l’utiliser dans votre logiciel pour vous connecter à l’API. Ce jeton sera inclus dans l’en-tête lorsque Cloud App Security effectue des demandes d’API.
 

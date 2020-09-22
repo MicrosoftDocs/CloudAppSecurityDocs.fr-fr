@@ -11,16 +11,16 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: bd4becdf1d2f7cbeb7dff529302405b19881cc3a
-ms.sourcegitcommit: 9395620dfc916b0954207c4fe26f58c76cdfe0d0
+ms.openlocfilehash: c62229f209dc1a7862a2f4b4442a663aacce58bc
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/05/2020
-ms.locfileid: "85953672"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90877125"
 ---
 # <a name="troubleshooting---what-is-casms-mcasms-or-mcas-govus"></a>Résolution des problèmes-qu’est-ce que `*.cas.ms` , `*.mcas.ms` ou `*.mcas-gov.us` ?
 
-*S’applique à : Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Cet article fournit des informations sur `cas.ms` les `mcas.ms` `mcas-gov.us` suffixes d’URL, et utilisés par contrôle d’application par accès conditionnel.
 

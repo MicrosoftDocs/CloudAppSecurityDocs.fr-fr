@@ -10,16 +10,16 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 3a1d9ef4412ddecf2117722b6c060a9f86023814
-ms.sourcegitcommit: 04811ae308bcc3cd25b18c5e2379ca92920d9e60
+ms.openlocfilehash: 542f4a010aa5ca5051dedb5bc3ca8f97913c4a4e
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88876548"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90879817"
 ---
 # <a name="generate-block-script---cloud-discovery-api"></a>Générer un script de bloc-API Cloud Discovery
 
-*S’applique à : Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 > [!NOTE]
 > Cette demande n’est pas disponible pour Office 365 Cloud App Security.
@@ -57,7 +57,7 @@ Les formats suivants sont actuellement pris en charge :
 
 Cette requête renvoie le script de bloc sous forme de texte.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 
 ### <a name="request"></a>Requête
 

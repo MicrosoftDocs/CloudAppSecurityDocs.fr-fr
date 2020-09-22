@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6ea6a6c8d544fe3dbfc4ceaf63f7d5c91d98054a
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 0c18810e5fc6c4aa94fecd2db5e6b8a03d82ae20
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88780390"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90880760"
 ---
 # <a name="use-a-custom-log-parser"></a>Utiliser un analyseur de journal personnalisé
 
-*S’applique à : Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Cloud App Security vous permet de configurer un analyseur personnalisé correspondant au format de vos journaux et de traiter le format de vos journaux pour qu’ils soient utilisables avec Cloud Discovery. En règle générale, vous utilisez un analyseur personnalisé si le pare-feu ou l’appareil n’est pas explicitement pris en charge par Cloud App Security. Il peut s’agir d’un analyseur CSV ou d’un analyseur Clé-Valeur personnalisé.
 

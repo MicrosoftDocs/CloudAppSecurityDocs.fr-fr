@@ -7,16 +7,16 @@ ms.service: cloud-app-security
 ms.topic: article
 ms.date: 09/15/2020
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 24f4598958361d2ea705f08bc0fb3d5fa8a19324
-ms.sourcegitcommit: 7d05b81a839286d2afae4cdad2c2d59e7becc1f9
+ms.openlocfilehash: bdf597d8cd387d2d062a96cb18e80a71d4c2926b
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90524138"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90880487"
 ---
 # <a name="how-cloud-app-security-helps-protect-your-amazon-web-services-aws-environment"></a>Comment Cloud App Security contribue à la protection de votre environnement AWS (Amazon Web Services)
 
-*S’applique à : Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Amazon Web Services est un fournisseur IaaS qui permet à votre organisation d’héberger et de gérer leurs charges de travail entières dans le Cloud. Outre les avantages liés à l’utilisation de l’infrastructure dans le Cloud, les ressources les plus critiques de votre organisation peuvent être exposées aux menaces. Les ressources exposées incluent des instances de stockage avec des informations potentiellement sensibles, des ressources de calcul qui exploitent certaines de vos applications, ports et réseaux privés virtuels les plus critiques, qui permettent d’accéder à votre organisation.
 

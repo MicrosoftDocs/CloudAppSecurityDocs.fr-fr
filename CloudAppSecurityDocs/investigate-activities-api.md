@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a2465690efe239e3a420a1fe6f651346e7730c81
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 7eabf167dacf06a51a8c78951a89923a5c8d01bd
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88781427"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90879399"
 ---
 # <a name="investigate-activities-using-the-api"></a>Examiner les activités à l’aide de l’API
 
-*S’applique à : Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Microsoft Cloud App Security vous fournit une API REST entièrement prise en charge pour vous permettre d’interagir par programmation avec le service.
 

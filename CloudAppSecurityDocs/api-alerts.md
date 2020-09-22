@@ -10,25 +10,25 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 0363d275c764d1e92d8d3f295de82e0c5bd2143a
-ms.sourcegitcommit: 286f8d5d940d1bb9a09daa3070ac4fc3768208f8
+ms.openlocfilehash: 54aa8efa3ad214ff55f3800ffb95126766e549e4
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84505438"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90880653"
 ---
 # <a name="alerts-api"></a>API alertes
 
-*S’applique à : Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 L’API Alerts vous fournit des informations sur les risques immédiats identifiés par Cloud App Security et nécessitant votre attention. Les alertes peuvent provenir de modèles d’utilisation suspects ou de fichiers contenant du contenu qui ne respecte pas la stratégie de l’entreprise.
 
 La liste suivante répertorie les requêtes prises en charge :
 
-- [Répertorier les alertes](api-alerts-list.md)
+- [Lister les alertes](api-alerts-list.md)
 - [Ignorer en bloc](api-alerts-bulk-dismiss.md)
-- [Résolution en bloc](api-alerts-bulk-resolve.md)
-- [Extraire une alerte](api-alerts-fetch.md)
+- [Résoudre en bloc](api-alerts-bulk-resolve.md)
+- [Récupérer l’alerte](api-alerts-fetch.md)
 - [Ignorer l’alerte](api-alerts-dismiss.md)
 - [Marquer l’alerte comme lue](api-alerts-mark-read.md)
 - [Marquer l’alerte comme non lue](api-alerts-mark-unread.md)

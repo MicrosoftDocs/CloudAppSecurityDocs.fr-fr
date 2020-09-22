@@ -14,18 +14,18 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 8ce7a23e95bfaf0195453e22afe8f547ab8837b8
-ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
+ms.openlocfilehash: 0f6aebe10c147a6be1250ce5f15a208570947edc
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89149871"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90879264"
 ---
 # <a name="manage-oauth-apps"></a>Gérer les applications OAuth
 
-*S’applique à : Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-De nombreuses applications de productivité tierces qui peuvent être installées par les utilisateurs de votre organisation demandent l’autorisation d’accéder aux informations et données utilisateur et de se connecter au nom de l’utilisateur dans d’autres applications Cloud, telles que Microsoft 365, G suite et Salesforce. Lorsque les utilisateurs installent ces applications, ils cliquent souvent sur Accepter sans examiner attentivement les détails du message d’invite, notamment concernant l’octroi d’autorisations à l’application. Ce problème est d’autant plus complexe que le service informatique ne dispose pas toujours d’informations suffisantes pour mettre en balance le risque de sécurité d’une application et les avantages qu’elle offre en termes de productivité. Dans la mesure où l’acceptation des autorisations d’applications tierces représente un risque de sécurité potentiel pour votre organisation, la surveillance des autorisations d’applications accordées par vos utilisateurs, vous donne la visibilité et le contrôle nécessaires pour protéger vos utilisateurs et vos applications. Les autorisations Microsoft Cloud App Security application vous permettent de voir quelles applications OAuth installées par l’utilisateur ont accès aux données Microsoft 365, aux données G suite et aux données Salesforce. Cloud App Security indique les autorisations dont disposent les applications et les utilisateurs qui ont accordé à ces applications l’accès à leurs comptes Microsoft 365, G suite et Salesforce. Avec les autorisations d’applications, vous décidez à quelles applications vous autorisez les utilisateurs à accéder, et quelles autres vous voulez exclure.
+Les applications de productivité tierces installées par des utilisateurs professionnels dans votre organisation ont souvent besoin d’une autorisation pour pouvoir accéder aux informations et données utilisateur, et se connecter au nom de l’utilisateur à d’autres applications cloud, comme Office 365, G Suite et Salesforce. Lorsque les utilisateurs installent ces applications, ils cliquent souvent sur Accepter sans examiner attentivement les détails du message d’invite, notamment concernant l’octroi d’autorisations à l’application. Ce problème est d’autant plus complexe que le service informatique ne dispose pas toujours d’informations suffisantes pour mettre en balance le risque de sécurité d’une application et les avantages qu’elle offre en termes de productivité. Dans la mesure où l’acceptation des autorisations d’applications tierces représente un risque de sécurité potentiel pour votre organisation, la surveillance des autorisations d’applications accordées par vos utilisateurs, vous donne la visibilité et le contrôle nécessaires pour protéger vos utilisateurs et vos applications. Les autorisations d’applications Microsoft Cloud App Security vous permettent de savoir quelles applications OAuth installées par l’utilisateur ont accès aux données Office 365, G Suite et Salesforce. Cloud App Security vous indique de quelles autorisations les applications disposent, et quels utilisateurs ont accordé à ces applications l’accès à leurs comptes Office 365, G Suite et Salesforce. Avec les autorisations d’applications, vous décidez à quelles applications vous autorisez les utilisateurs à accéder, et quelles autres vous voulez exclure.
 
 Pour plus d’informations sur l’examen des applications OAuth, consultez [examiner les applications OAuth risquées](investigate-risky-oauth.md).
 
@@ -46,17 +46,17 @@ La page Applications OAuth fournit les informations suivantes sur chaque applica
 
 |Élément|Signification|S’applique à|
 |-------|-------|-------|
-|Icône De base dans la barre de requête d’application  |Basculer vers la requête dans la vue de base.|Microsoft 365, G suite, Salesforce|
-|Icône Avancé dans la barre de requête d’application  |Basculer vers la requête dans la vue avancée.|Microsoft 365, G suite, Salesforce|
+|Icône De base dans la barre de requête d’application  |Basculer vers la requête dans la vue de base.|Office 365, G Suite, Salesforce|
+|Icône Avancé dans la barre de requête d’application  |Basculer vers la requête dans la vue avancée.|Office 365, G Suite, Salesforce|
 |Icône d’ouverture ou de fermeture de tous les détails dans la liste des applications  |Afficher plus ou moins d’informations sur chaque application.|
-|Icône d’exportation dans la liste des applications  |Exporter un fichier CSV contenant une liste d’applications, le nombre d’utilisateurs pour chaque application, les autorisations associées à l’application, le niveau d’autorisation, l’état de l’application et le niveau d’utilisation communautaire.|Microsoft 365, G suite, Salesforce|
-|Application|Nom de l’application. Sélectionnez le nom pour afficher plus d’informations, y compris la description, l’éditeur (pour Microsoft 365), le site Web de l’application et l’ID.|Microsoft 365, G suite, Salesforce|
-|Autorisé par|Le nombre d’utilisateurs ayant autorisé cette application à accéder à leur compte d’application et ayant accordé les autorisations d’applications. Sélectionnez le nombre pour afficher des informations supplémentaires, notamment une liste d’e-mails d’utilisateurs ou une mention indiquant si un administrateur a précédemment autorisé l’application.|Microsoft 365, G suite, Salesforce|
-|Niveau d’autorisation  |Icône de niveau d’autorisation et texte indiquant Élevé, Moyen ou Bas. Le niveau indique le degré d’accès de cette application aux données d’application. Par exemple, Faible peut indiquer que l’application a uniquement accès au nom et au profil utilisateur. Sélectionnez le niveau pour afficher des informations supplémentaires, notamment les autorisations accordées à l’application, l’utilisation communautaire ou l’activité associée dans [Journal de gouvernance](governance-actions.md).|Microsoft 365, G suite|
-|État de l’application|Un administrateur peut marquer une application comme approuvée, exclue ou laisser le statut non défini.|Microsoft 365, G suite, Salesforce|
-|Utilisation communautaire|Indique la cote de popularité de l’application parmi tous vos utilisateurs (utilisation courante, peu courante, rare)|Microsoft 365, G suite, Salesforce|
-|Dernière autorisation|Date la plus récente à laquelle un utilisateur a accordé des autorisations pour cette application.|Microsoft 365, Salesforce|
-|Serveur de publication|Nom du fournisseur qui fournit l’application.|Microsoft 365|
+|Icône d’exportation dans la liste des applications  |Exporter un fichier CSV contenant une liste d’applications, le nombre d’utilisateurs pour chaque application, les autorisations associées à l’application, le niveau d’autorisation, l’état de l’application et le niveau d’utilisation communautaire.|Office 365, G Suite, Salesforce|
+|Application|Nom de l’application. Sélectionnez le nom pour afficher plus d’informations, notamment la description, l’éditeur (pour Office 365), le site web de l’application et son ID.|Office 365, G Suite, Salesforce|
+|Autorisé par|Le nombre d’utilisateurs ayant autorisé cette application à accéder à leur compte d’application et ayant accordé les autorisations d’applications. Sélectionnez le nombre pour afficher des informations supplémentaires, notamment une liste d’e-mails d’utilisateurs ou une mention indiquant si un administrateur a précédemment autorisé l’application.|Office 365, G Suite, Salesforce|
+|Niveau d’autorisation  |Icône de niveau d’autorisation et texte indiquant Élevé, Moyen ou Bas. Le niveau indique le degré d’accès de cette application aux données d’application. Par exemple, Faible peut indiquer que l’application a uniquement accès au nom et au profil utilisateur. Sélectionnez le niveau pour afficher des informations supplémentaires, notamment les autorisations accordées à l’application, l’utilisation communautaire ou l’activité associée dans [Journal de gouvernance](governance-actions.md).|Office 365, G Suite|
+|État de l’application|Un administrateur peut marquer une application comme approuvée, exclue ou laisser le statut non défini.|Office 365, G Suite, Salesforce|
+|Utilisation communautaire|Indique la cote de popularité de l’application parmi tous vos utilisateurs (utilisation courante, peu courante, rare)|Office 365, G Suite, Salesforce|
+|Dernière autorisation|Date la plus récente à laquelle un utilisateur a accordé des autorisations pour cette application.|Office 365, Salesforce|
+|Serveur de publication|Nom du fournisseur qui fournit l’application.|Office 365|
 |Dernière utilisation|Date la plus récente à laquelle cette application a été utilisée par une personne de votre organisation.|Salesforce|
 
 ## <a name="ban-or-approve-an-app"></a>Exclure ou approuver une application

@@ -10,16 +10,16 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 61a8c7edb0533d4b7c6cf2228ef7a83c54541bd7
-ms.sourcegitcommit: 6e47d0348283d105614d81db4e7737fc837ed20b
+ms.openlocfilehash: d3469f45ed36ea2089ef659e9181fef1857454b2
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88657843"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90880684"
 ---
 # <a name="mark-as-read---alerts-api"></a>Marquer en tant qu’API lecture-alertes
 
-*S’applique à : Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Exécutez la demande de publication pour marquer l’alerte correspondant à la clé primaire spécifiée comme lue.
 
@@ -35,7 +35,7 @@ POST /api/v1/alerts/<pk>/read/
 | --- | --- |
 | pk | ID de l’alerte |
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 
 ### <a name="request"></a>Requête
 

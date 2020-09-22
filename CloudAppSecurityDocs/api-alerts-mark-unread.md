@@ -10,16 +10,16 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 262163c5063e856957477166c6989a9bc5ae8e72
-ms.sourcegitcommit: 6e47d0348283d105614d81db4e7737fc837ed20b
+ms.openlocfilehash: ef438a397c06b1232a90e9a6b291721f6d93a270
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88657807"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90880667"
 ---
 # <a name="mark-as-unread---alerts-api"></a>Marquer comme non lu-API alertes
 
-*S’applique à : Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Exécutez la demande de publication pour marquer l’alerte correspondant à la clé primaire spécifiée comme non lue.
 
@@ -35,7 +35,7 @@ POST /api/v1/alerts/<pk>/unread/
 | --- | --- |
 | pk | ID de l’alerte |
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 
 ### <a name="request"></a>Requête
 

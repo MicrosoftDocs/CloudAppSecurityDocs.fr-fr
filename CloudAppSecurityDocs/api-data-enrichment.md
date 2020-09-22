@@ -10,16 +10,16 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 8739566fb2bd9413651c9f1e14257e62e6f4589e
-ms.sourcegitcommit: c114a9e04589e1a3e0b5350862b3e6daf18e3d30
+ms.openlocfilehash: 2da4b992d0c9eab2830793d026c0fd37ccd390be
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88658862"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90880622"
 ---
 # <a name="create-ip-address-range---data-enrichment-api"></a>Créer une plage d’adresses IP-API d’enrichissement des données
 
-*S’applique à : Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Exécutez la demande de publication pour ajouter une nouvelle plage d’adresses IP.
 
@@ -47,9 +47,9 @@ Les catégories suivantes sont actuellement prises en charge :
 | Déconseillé | 3 |
 | VPN | 4 |
 | Fournisseur de cloud | 5 |
-| Autre | 6 |
+| Autres | 6 |
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 
 ### <a name="request"></a>Requête
 

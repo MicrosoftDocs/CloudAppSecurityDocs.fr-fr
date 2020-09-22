@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 7143b8a8b98e95dffdd5e27cc56ba9e9b6c6ded5
-ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
+ms.openlocfilehash: f2825f1a423f6739e397a497684b930aad7cf3bd
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89149822"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90880825"
 ---
 # <a name="control"></a>Control
 
-*S’applique à : Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Vous pouvez appliquer des actions de gouvernance aux fichiers des utilisateurs dans tout votre environnement cloud. Après avoir soigneusement examiné et étudié votre cloud, vous pouvez utiliser des actions de gouvernance pour protéger votre organisation.
 
@@ -82,7 +82,7 @@ Cloud App Security vous permet d’introduire vos migrations en vous faisant sav
 
 ### <a name="migrate-your-users-to-a-new-app"></a>Migrer vos utilisateurs vers une nouvelle application
 
-Imaginez ce scénario : vous avez récemment acheté Microsoft 365, et vous souhaitez que tous les utilisateurs de votre organisation arrêtent d’utiliser toutes les autres applications de stockage cloud et commencent à utiliser OneDrive. Voici comment vous pouvez procéder :
+Imaginons le scénario suivant : vous venez d’acheter Office 365 et vous voulez que tous les utilisateurs de votre organisation arrêtent d’utiliser toutes les autres applications de stockage cloud pour commencer à utiliser OneDrive. Voici comment vous pouvez procéder :
 
 1. Accédez à votre **tableau de bord Cloud Discovery** et, sous **Catégories**, filtrez les applications par **Stockage cloud**. Triez les résultats par **Utilisateurs** ou par **Adresses IP**, et déterminez quelle est l’application la plus populaire.
 

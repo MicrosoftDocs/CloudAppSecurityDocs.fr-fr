@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 082ca682594dbb8902605993d8ccfa1721d1c0ae
-ms.sourcegitcommit: c737a1ad67b4f7efa302d1aa92fce50f75c94d2d
+ms.openlocfilehash: fd54a610c074bc69b4d9f78dd46d32978f93a75e
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86926738"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90877208"
 ---
 # <a name="troubleshooting-cloud-discovery"></a>Résolution des problèmes de Cloud Discovery
 
-*S’applique à : Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Cet article fournit la liste des erreurs relatives à Cloud Discovery ainsi que des solutions recommandées pour chacune.
 
@@ -42,7 +42,7 @@ Vous pouvez suivre le traitement des journaux Cloud Discovery à l’aide du jou
 
 ### <a name="governance-log-errors"></a>Erreurs du journal de gouvernance
 
-|Erreur|Description|Résolution|
+|Error|Description|Résolution|
 |----|----|----|
 |Type de fichier non pris en charge|Le fichier chargé n’est pas un fichier journal valide (par exemple, un fichier image).|Chargez un fichier **texte**, **zip ou **gzip** exporté directement à partir de votre pare-feu ou proxy.|
 |Le format de journal ne correspond pas|Le format de journal que vous avez chargé ne correspond pas au format attendu pour cette source de données.|1. Vérifiez que le journal n’est pas endommagé. <br /> 2. Comparez et associez votre journal à l’exemple de format affiché dans la page de chargement.|

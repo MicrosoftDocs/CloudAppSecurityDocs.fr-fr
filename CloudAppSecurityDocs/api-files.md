@@ -10,16 +10,16 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 486455bb28d49514e1e3926796425411fa147e45
-ms.sourcegitcommit: 286f8d5d940d1bb9a09daa3070ac4fc3768208f8
+ms.openlocfilehash: f8ad5aa24bb927f545133e0912ec4c6ccff50596
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84505238"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90880873"
 ---
 # <a name="files-api"></a>API de fichiers
 
-*S’applique à : Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 > [!NOTE]
 > Cette API n’est pas disponible pour Office 365 Cloud App Security.
@@ -28,7 +28,7 @@ L’API Files vous fournit des métadonnées sur les fichiers et dossiers stock�
 
 La liste suivante répertorie les requêtes prises en charge :
 
-- [Énumérer des fichiers](api-files-list.md)
+- [Répertorier les fichiers](api-files-list.md)
 - [Fichier d’extraction](api-files-fetch.md)
 
 ## <a name="filters"></a>Filtres
