@@ -10,16 +10,16 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 73045177f79bb17c5adbf2d19c9c41875e135b51
-ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
+ms.openlocfilehash: 9ba5e83c10406308a1faf6e323fcfb9837da4b12
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89149718"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90880037"
 ---
 # <a name="activities-api"></a>API d’activités
 
-*S’applique à : Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 L’API d’activité vous donne une visibilité sur toutes les actions effectuées dans vos applications Cloud. Les données de cette API peuvent fournir des informations sur les personnes qui se connectent à quelle application et quand, quels fichiers sont téléchargés à partir d’emplacements suspects, et ainsi de suite.
 
@@ -53,7 +53,7 @@ Le tableau suivant décrit les filtres pris en charge :
 | emplacement. organisations | string | EQ, NEQ, isset, isnotset, Contains | Filtrer les activités provenant de l’organisation spécifiée |
 | IP. adresse | string | EQ, StartsWith, doesnotstartwith, isset, isnotset, NEQ | Filtrer les activités provenant de l’adresse IP donnée |
 | fileSelector | fichier | EQ, NEQ | Filtrer les activités contenant le fichier/dossier spécifié |
-| office365url | string | StartsWith, EQ, EndsWith | Filtrer les activités par Microsoft 365 URL |
+| office365url | string | StartsWith, EQ, EndsWith | Filtrer les activités par URL Office 365 |
 | fileId | string | eq | Rechercher un fichier par ID |
 | IP. Category | entier | EQ, NEQ | Filtrer les activités avec les catégories de sous-réseau spécifiées. Les valeurs possibles incluent :<br /><br />**1**: entreprise<br />**2**: administration<br />**3**: risqué<br />**4**: VPN<br />**5**: fournisseur de Cloud<br />**6**: autres |
 | IP. Tags | string | EQ, NEQ | Filtrer les activités par ID de balise IP |

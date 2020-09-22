@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 074ff2ae9e23cdcb351a34f937103e311441aa7f
-ms.sourcegitcommit: 45a23730c2beda00c32b0d6cb8da872dc2bf0e14
+ms.openlocfilehash: 4cbc15f85c40d8a36750df20c701900df7a0b8c8
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86137951"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90879140"
 ---
 # <a name="working-with-app-risk-scores"></a>Utilisation des scores de risque d’application
 
-*S’applique à : Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Le catalogue d’applications cloud vous donne une vue d’ensemble complète des éléments identifiés par Cloud Discovery. Cloud Discovery analyse vos journaux de trafic en s’appuyant sur le catalogue d’applications cloud Microsoft Cloud App Security, qui contient plus de 16 000 applications cloud. Les applications sont classées et évaluées en fonction de plus de 80 facteurs de risque afin de vous offrir une visibilité permanente de l’utilisation du Cloud, de l’occulter et de l’ombre des risques qu’il représente pour votre organisation. Cet article fournit des instructions sur l’utilisation et la personnalisation de l’indice de risque Cloud App Security.
 
@@ -116,7 +116,7 @@ Prenez le temps de passer en revue et d’éventuellement modifier les pondérat
 
 3. De plus, vous pouvez déterminer si certaines valeurs sont soit non disponibles, soit non applicables dans le calcul du score. Quand elles sont incluses, les valeurs N/A contribuent négativement au score calculé.
 
-    ![enjeu](media/score.png "évaluer les métriques")
+    ![évaluer les métriques](media/score.png)
 
 Toutes les informations nécessaires pour comprendre le fonctionnement des indices de risque Cloud App Security et leur empilement sont disponibles dans le portail Cloud App Security. Pour mieux comprendre le poids d’un facteur de risque dans une catégorie de risque spécifique, utilisez le bouton « i » à droite de chaque nom de champ dans le profil de l’application. Il fournit des informations sur la façon dont Cloud App Security note précisément un facteur de risque. Ce score correspond à la valeur du facteur de risque sur une échelle de 1 à 10 et à son poids dans la catégorie de risque :
 
