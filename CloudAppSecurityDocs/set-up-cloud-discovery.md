@@ -10,16 +10,16 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 83bb26da4ff034f36053d3152575a29cb8399bc6
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 38c342c56d808adf9737c5be25da88547b25ad69
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88779268"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90878594"
 ---
 # <a name="set-up-cloud-discovery"></a>Configurer Cloud Discovery
 
-*S’applique à : Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Cloud Discovery analyse vos journaux de trafic en s’appuyant sur le catalogue d’applications cloud Microsoft Cloud App Security, qui contient plus de 16 000 applications cloud. Les applications sont classées et évaluées en fonction de plus de 80 facteurs de risque afin de vous offrir une visibilité permanente de l’utilisation du Cloud, de l’occulter et de l’ombre des risques qu’il représente dans votre organisation.
 

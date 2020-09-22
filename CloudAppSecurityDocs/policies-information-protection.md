@@ -9,16 +9,16 @@ ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b4be7d9e31f2fc0bf71175a9c7fb3d07c38262a4
-ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
+ms.openlocfilehash: d5b42984d8e0f1b16db5a92116e4d7835d3882b8
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87254803"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90877865"
 ---
 # <a name="information-protection-policies"></a>Stratégies de protection des informations
 
-*S’applique à : Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Cloud App Security les stratégies de fichiers vous permettent d’appliquer un large éventail de processus automatisés. Les stratégies peuvent être définies de manière à fournir une protection des informations, notamment des analyses de conformité continue, des tâches eDiscovery juridiques et la protection contre la perte de contenu sensible partagée publiquement.
 
@@ -133,7 +133,7 @@ Vous devez disposer d’au moins une application connectée à l’aide de [conn
 
     1. Facultatif : vous pouvez utiliser l’approche opposée et définir le filtre sur **emplacement** égal si votre organisation bloque l’accès à partir de pays ou régions spécifiques.
 
-4. Facultatif : créez des actions de **gouvernance** à appliquer à une violation détectée (la disponibilité varie d’un service à l’autre), par exemple **suspendre l’utilisateur**.
+4. Facultatif : créez des actions de **gouvernance** à appliquer à une violation détectée (la disponibilité varie d’un service à l’autre), par exemple  **suspendre l’utilisateur**.
 
 5. Créez la stratégie d’activité.
 

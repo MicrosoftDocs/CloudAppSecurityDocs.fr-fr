@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b6ad9583cd250f438be0cf2d29e171777eaf8fb4
-ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
+ms.openlocfilehash: de58d785d221876ac92cd1d2b600def4e6c4a647
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89150194"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90879486"
 ---
 # <a name="governing-connected-apps"></a>Gouvernance des applications connectées
 
-*S’applique à : Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 La gouvernance vous permet de contrôler en temps réel les actions des utilisateurs dans les applications. Pour les applications connectées, vous pouvez appliquer des actions de gouvernance aux fichiers ou aux activités. Les actions de gouvernance sont des actions intégrées que vous pouvez exécuter sur des fichiers ou des activités directement à partir de Microsoft Cloud App Security. Les actions de gouvernance contrôlent en temps réel les actions de vos utilisateurs dans les applications connectées. Pour plus d’informations sur l’emplacement où vous pouvez utiliser des actions de gouvernance, consultez [apply Government actions](control.md#apply-governance-actions).
 
@@ -71,7 +71,7 @@ Vous pouvez effectuer les actions de gouvernance suivantes sur un fichier ou un 
 
     - **Mettre en quarantaine administrateur** : le fichier est déplacé vers la quarantaine dans le lecteur d’administration, et l’administrateur doit l’approuver.
 
-  - **Hériter des autorisations du parent** : cette action de gouvernance vous permet de supprimer des autorisations spécifiques définies pour un fichier ou un dossier dans Microsoft 365. Rétablissez ensuite les autorisations définies pour le dossier parent.
+  - **Hériter des autorisations du parent** - Cette action de gouvernance vous permet de supprimer un ensemble d’autorisations spécifiques pour un fichier ou un dossier dans Office 365. Rétablissez ensuite les autorisations définies pour le dossier parent.
 
   - **Corbeille** : déplacez le fichier vers le dossier Corbeille. (Box, Dropbox, Google Drive, OneDrive, SharePoint)
 
@@ -132,10 +132,10 @@ Pour plus d’informations sur la façon dont les actions de gouvernance sont tr
 |Stratégie d’activité, Comptes | Compte |Demander à l’utilisateur de se reconnecter|Révoque tous les jetons d’actualisation et les cookies de session émis aux applications par l’utilisateur. Cette action empêche l’accès aux données de l’organisation et force l’utilisateur à se connecter à toutes les applications.| G suite, Office|
 |Stratégie d’activité, Comptes | Compte |Confirmer que l’utilisateur est compromis|Définissez le niveau de risque de l’utilisateur sur élevé. Cela entraîne l’application des actions de stratégie appropriées définies dans Azure AD. | Office |
 |Stratégie d’activité, Comptes | Compte | Révoquer les privilèges administratifs |Révoque les privilèges d’un compte Administrateur. Par exemple, la définition d’une stratégie d’activité qui révoque les privilèges Administrateur après 10 échecs de tentative de connexion. | G Suite|
-|Tableau de bord de l’application > Autorisations d’applications |Autorisations|Annuler l’exclusion de l’application| Dans Google et Salesforce : supprimez l’exclusion de l’application et permettez aux utilisateurs d’accorder des autorisations à l’application tierce avec Google et Salesforce. Dans Microsoft 365 : restaure les autorisations de l’application tierce à Office. |G Suite, Salesforce, Office |
+|Tableau de bord de l’application > Autorisations d’applications |Autorisations|Annuler l’exclusion de l’application| Dans Google et Salesforce : supprimez l’exclusion de l’application et permettez aux utilisateurs d’accorder des autorisations à l’application tierce avec Google et Salesforce. Dans Office 365 : restaure les autorisations de l’application tierce à Office. |G Suite, Salesforce, Office |
 |Tableau de bord de l’application > Autorisations d’applications |Autorisations| Désactiver les autorisations d’application | Révoquez les autorisations d’accès d’une application tierce à Google, Salesforce ou Office. Il s’agit d’une seule action qui se produit sur toutes les autorisations existantes, mais qui n’empêche pas les connexions futures.|G Suite, Salesforce, Office |
 |Tableau de bord de l’application > Autorisations d’applications |Autorisations| Activer les autorisations d’application |Accordez les autorisations d’accès d’une application tierce à Google, Salesforce ou Office. Il s’agit d’une seule action qui se produit sur toutes les autorisations existantes, mais qui n’empêche pas les connexions futures.|G Suite, Salesforce, Office |
-|Tableau de bord de l’application > Autorisations d’applications |Autorisations| Exclure l’application | Dans Google et Salesforce : révoquent les autorisations d’accès d’une application tierce à Google ou Salesforce et lui interdisent de recevoir des autorisations dans le futur. Dans Microsoft 365 : n’autorise pas l’autorisation des applications tierces à accéder à Office, mais ne les révoque pas. |G Suite, Salesforce, Office |
+|Tableau de bord de l’application > Autorisations d’applications |Autorisations| Exclure l’application | Dans Google et Salesforce : révoquent les autorisations d’accès d’une application tierce à Google ou Salesforce et lui interdisent de recevoir des autorisations dans le futur. Dans Office 365 : n’autorise pas l’autorisation des applications tierces à accéder à Office, mais ne les révoque pas. |G Suite, Salesforce, Office |
 |Tableau de bord de l’application > Autorisations d’applications |Autorisations|Révoquer l’application|Révoque les autorisations d’accès d’une application tierce à Google, Salesforce ou Office. Il s’agit d’une seule action qui se produit sur toutes les autorisations existantes, mais qui n’empêche pas les connexions futures. | G Suite, Salesforce|
 |Tableau de bord de l’application > Autorisations d’applications | Compte | Révoquer l’utilisateur de cette application|Vous pouvez révoquer des utilisateurs spécifiques en cliquant sur le nombre sous Utilisateurs. L’écran affiche des utilisateurs spécifiques, et vous pouvez utiliser la croix (X) pour supprimer les autorisations d’un utilisateur.| G Suite, Salesforce|
 |Découverte > Applications découvertes/Adresses IP/Utilisateurs| Cloud Discovery | Exporter les données de découverte | Crée un fichier CSV à partir de données de découverte. | Découverte |
@@ -145,14 +145,14 @@ Pour plus d’informations sur la façon dont les actions de gouvernance sont tr
 |Stratégie de fichier, Stratégie d’activité | Fichier, Activité | Notifier des utilisateurs spécifiques |Envoie un e-mail pour notifier des utilisateurs spécifiques qu’un fichier viole une stratégie.| Toutes les applications |
 |Stratégie de fichier et Stratégie d’activité | Fichier, Activité |Notifier l’utilisateur|Envoie un e-mail aux utilisateurs pour les informer qu’une de leurs actions ou qu’un fichier qu’ils possèdent viole une stratégie. Vous pouvez ajouter une notification personnalisée lui indiquant la violation. |Tous |
 |Stratégie de fichiers et fichiers|Fichier | Supprimer la capacité des éditeurs à partager|Dans Google Drive, les autorisations de l’éditeur par défaut d’un fichier permettent également le partage. Cette action de gouvernance restreint cette option et restreint le partage de fichiers au propriétaire.| G Suite|
-|Stratégie de fichiers et fichiers|Fichier | [Mettre en quarantaine administrateur](use-case-admin-quarantine.md) |Supprime toutes les autorisations du fichier et déplace le fichier vers un dossier de quarantaine dans un emplacement pour l’administrateur. Cette action permet à l’administrateur de consulter le fichier et de le supprimer.| Microsoft 365 SharePoint, OneDrive entreprise, Box|
+|Stratégie de fichiers et fichiers|Fichier | [Mettre en quarantaine administrateur](use-case-admin-quarantine.md) |Supprime toutes les autorisations du fichier et déplace le fichier vers un dossier de quarantaine dans un emplacement pour l’administrateur. Cette action permet à l’administrateur de consulter le fichier et de le supprimer.| Office 365 SharePoint, OneDrive Entreprise, Box|
 |Stratégie de fichiers et fichiers|Fichier | Appliquer l’étiquette de classification|Applique automatiquement une étiquette de classification Azure Information Protection à des fichiers, en fonction des conditions définies dans la stratégie.| Box, One Drive, G Suite, SharePoint |
 |Stratégie de fichiers et fichiers|Fichier | Supprimer l’étiquette de classement | Supprime automatiquement une étiquette de classification Azure Information Protection pour des fichiers, en fonction des conditions définies dans la stratégie. Seules sont supprimables les étiquettes qui ne comportent pas de protection et ont été appliquées dans Cloud App Security, et non celles qui ont été appliquées directement dans Information Protection.| Box, One Drive, G Suite, SharePoint |
-|Stratégie de fichier, Stratégie d’activité, Alertes | Application |Demander aux utilisateurs de se reconnecter| Vous pouvez demander aux utilisateurs de se reconnecter à toutes les applications Microsoft 365 et Azure AD en guise de correction rapide et efficace pour les alertes d’activité utilisateur suspectes et les comptes compromis. La nouvelle gouvernance se trouve dans les paramètres de stratégie et les pages d’alerte, à côté de l’option Interrompre la synchronisation de l’utilisateur. | Microsoft 365, Azure AD |
-|Files |Fichier |Restaurer des fichiers mis en quarantaine utilisateur |Restaure un utilisateur mis en quarantaine. |Zone |
+|Stratégie de fichier, Stratégie d’activité, Alertes | Application |Demander aux utilisateurs de se reconnecter| Vous pouvez demander aux utilisateurs de se reconnecter à toutes les applications Office 365 et Azure AD pour corriger de manière rapide et efficace les alertes d’activité suspecte de l’utilisateur et les comptes corrompus. La nouvelle gouvernance se trouve dans les paramètres de stratégie et les pages d’alerte, à côté de l’option Interrompre la synchronisation de l’utilisateur. | Office 365, Azure AD |
+|Files |Fichier |Restaurer des fichiers mis en quarantaine utilisateur |Restaure un utilisateur mis en quarantaine. |Box |
 |Files |Fichier | M’auto-attribuer des permissions de lecture| Vous accorde des permissions de lecture pour le fichier afin de vous permettre d’y accéder et de déterminer s’il y a eu violation ou non.| G Suite|
 |Files |Fichier | Autoriser les éditeurs à partager | Dans Google Drive, l’autorisation de l’éditeur par défaut d’un fichier autorise également le partage. Cette action de gouvernance est l’opposé de la capacité de l’éditeur à partager et permet à l’éditeur de partager le fichier. | G Suite|
-|Files |Fichier | Protéger | Protégez un fichier avec Azure Information Protection en appliquant un modèle d’organisation. | Microsoft 365 (SharePoint et OneDrive) |
+|Files |Fichier | Protéger | Protégez un fichier avec Azure Information Protection en appliquant un modèle d’organisation. | Office 365 (SharePoint et OneDrive) |
 |Files |Fichier | Révoquer les permissions de lecture pour moi-même | Révoque les permissions de lecture pour le fichier pour vous-même. Cette option est utile lorsque vous vous êtes attribué des permissions pour examiner si un fichier comprend une violation ou non.| G Suite|
 |Fichiers, Stratégie de fichier|Fichier | Transférer la possession de fichier | Modifie le propriétaire (vous choisissez un propriétaire spécifique dans la stratégie). | G Suite|
 |Fichiers, Stratégie de fichier|Fichier | Réduire l’accès public|Cette action vous permet de définir les fichiers disponibles publiquement comme étant accessibles uniquement avec un lien partagé.| G Suite|
@@ -161,10 +161,10 @@ Pour plus d’informations sur la façon dont les actions de gouvernance sont tr
 |Fichiers, Stratégie de fichier|Fichier | Supprimer les utilisateurs externes | Supprime tous les collaborateurs externes - configurés comme internes dans les paramètres en dehors des domaines. |G Suite, Box, One Drive, SharePoint|
 |Fichiers, Stratégie de fichier|Fichier |Attribuer une permission de lecture au domaine|Accorde une permission de lecture pour le fichier sur le domaine spécifié pour tout votre domaine ou un domaine spécifique. Cet accès est utile si vous souhaitez supprimer l’accès public après l’octroi d’un accès au domaine des personnes qui doivent y travailler.| G Suite|
 |Fichiers, Stratégie de fichier|Fichier | Mettre en quarantaine utilisateur | Supprime toutes les autorisations du fichier et déplace le fichier vers un dossier de quarantaine sur le lecteur racine de l’utilisateur. Cette action permet à l’utilisateur d’examiner le fichier et de le déplacer. S’il est déplacé manuellement, le partage de fichiers n’est pas restauré. | Box, One Drive, SharePoint |
-|Files|Fichier|Faire expirer le lien partagé| Définit la date d’expiration d’un lien partagé, après laquelle il ne sera plus actif.|Zone|
-|Files|Fichier|Modifier le niveau d’accès du lien de partage|Modifie le niveau d’accès du lien partagé (entreprise uniquement, collaborateurs uniquement ou public).| Zone|
+|Files|Fichier|Faire expirer le lien partagé| Définit la date d’expiration d’un lien partagé, après laquelle il ne sera plus actif.|Box|
+|Files|Fichier|Modifier le niveau d’accès du lien de partage|Modifie le niveau d’accès du lien partagé (entreprise uniquement, collaborateurs uniquement ou public).| Box|
 |Fichiers, Stratégie de fichier|Fichier | Supprimer l’accès public| Si vous êtes propriétaire d’un fichier auquel vous autorisez un accès public, il devient accessible uniquement aux autres personnes disposant d’un droit d’accès au fichier (selon le genre d’accès au fichier). | G Suite|
-|Fichiers, Stratégie de fichier|Fichier |Supprimer le lien partagé direct| Supprime un lien créé pour le fichier qui est public, mais partagé uniquement avec des personnes spécifiques.|Zone |
+|Fichiers, Stratégie de fichier|Fichier |Supprimer le lien partagé direct| Supprime un lien créé pour le fichier qui est public, mais partagé uniquement avec des personnes spécifiques.|Box |
 |Paramètres> Paramètres de Cloud Discovery| Cloud Discovery | Recalculer les scores Cloud Discovery |Recalcule les scores dans le catalogue d’applications cloud après une modification d’une mesure de score.| Découverte |
 |Paramètres> Paramètres de Cloud Discovery > Gérer les vues de données| Cloud Discovery | Créer une vue de données de filtre Cloud Discovery|Crée une nouvelle vue de données pour une vue plus détaillée des résultats de découverte. Par exemple, des plages d’adresses IP spécifiques. | Découverte |
 |Paramètres> Paramètres de Cloud Discovery > Supprimer les données| Cloud Discovery | Supprimer les données Cloud Discovery |Supprime toutes les données collectées à partir de sources de découverte.| Découverte |

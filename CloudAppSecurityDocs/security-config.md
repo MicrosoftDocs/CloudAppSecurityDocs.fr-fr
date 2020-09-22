@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0a78f81a81c1482c4c2da8aab0ab14f62238da83
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 3103a55484ec094948cef1bb457632d28e661c73
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88781512"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90878817"
 ---
 # <a name="security-configuration-overview"></a>Présentation de la configuration de la sécurité
 
-*S’applique à : Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Microsoft Cloud App Security vous fournit des évaluations de la configuration de la sécurité pour Azure, Amazon Web Services (AWS) et Google Cloud Platform (GCP). Les recommandations couvrent tous les abonnements Azure, les comptes AWS, y compris les comptes membres et tous les projets GCP connectés à votre organisation. Cette vue multicloud de toutes les recommandations de configuration de la sécurité de la plateforme Cloud permet aux administrateurs de sécurité d’examiner tous les écarts de configuration de la sécurité dans Cloud App Security.
 

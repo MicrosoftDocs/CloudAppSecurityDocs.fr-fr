@@ -9,16 +9,16 @@ ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c6f43ef44d01f422bd0416ca99448e6f77ef6233
-ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
+ms.openlocfilehash: 4860dc37a2d0ad8fab903ec852e5e21074672a81
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89150245"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90877825"
 ---
 # <a name="threat-protection-policies"></a>Stratégies de protection contre les menaces
 
-*S’applique à : Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Cloud App Security vous permet d’identifier les problèmes d’utilisation et de sécurité du Cloud à haut risque, de détecter un comportement anormal des utilisateurs et d’éviter les menaces dans vos applications Cloud approuvées. Bénéficiez d’une visibilité sur les activités des utilisateurs et des administrateurs et définissez des stratégies pour alerter automatiquement lorsque des comportements suspects ou des activités spécifiques que vous considérez comme risquées sont détectés. Sortez de la grande quantité de données de Microsoft Threat Intelligence et de la recherche de sécurité pour vous assurer que vos applications approuvées disposent de tous les contrôles de sécurité dont vous avez besoin et que vous pouvez en garder le contrôle.
 
@@ -178,7 +178,7 @@ Vous devez disposer d’au moins une application connectée à l’aide de [conn
 2. Il est possible de configurer l' **étendue** de la détection et de personnaliser les actions de gouvernance à entreprendre lorsqu’une alerte est déclenchée. Pour plus d’informations sur la façon dont Cloud App Security identifie le ransomware, consultez [protection de votre organisation contre les ransomware](use-case-ransomware.md).
 
 > [!NOTE]
-> Cela s’applique à Microsoft 365, G suite, Box et Dropbox.
+> Cela s’applique à Office 365, G suite, Box et Dropbox.
 
 ## <a name="detect-malware-in-the-cloud"></a>Détecter les logiciels malveillants dans le Cloud
 
@@ -186,7 +186,7 @@ Détectez les fichiers contenant des programmes malveillants dans vos environnem
 
 ### <a name="prerequisites"></a>Prérequis
 
-- Pour Microsoft 365 la détection de programmes malveillants, vous devez disposer d’une licence valide pour Office 365-protection avancée contre les menaces P1.
+- Pour la détection de programmes malveillants Office 365, vous devez disposer d’une licence valide pour Office 365-protection avancée contre les menaces P1.
 - Vous devez disposer d’au moins une application connectée à l’aide de [connecteurs d’application](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
 ### <a name="steps"></a>Étapes
