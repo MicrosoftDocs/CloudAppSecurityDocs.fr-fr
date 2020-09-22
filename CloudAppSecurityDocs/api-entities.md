@@ -10,16 +10,16 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: d55eb6d29586ba68cb46bd97b6718529da87ea51
-ms.sourcegitcommit: 286f8d5d940d1bb9a09daa3070ac4fc3768208f8
+ms.openlocfilehash: 9b6d7c4428b8383a4107a824a6113fcd3362dfa1
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84505218"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90881089"
 ---
-# <a name="entities-api"></a>API des entités
+# <a name="entities-api"></a>API Entités
 
-*S’applique à : Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 > [!NOTE]
 > Cette API n’est pas disponible pour Office 365 Cloud App Security.
@@ -29,8 +29,8 @@ L’API Entities fournit des informations de base sur les utilisateurs et les co
 La liste suivante répertorie les requêtes prises en charge :
 
 - [Répertorier des entités](api-entities-list.md)
-- [Extraire l’entité](api-entities-fetch.md)
-- [Extraire l’arborescence d’entités](api-entities-fetch-tree.md)
+- [Récupérer l’entité](api-entities-fetch.md)
+- [Récupérer l’arborescence des entités](api-entities-fetch-tree.md)
 
 ## <a name="filters"></a>Filtres
 

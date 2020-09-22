@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5bf75b479f3568b7c6451880f3a2774104d8115a
-ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
+ms.openlocfilehash: 7aa2b2ac172608d445860c1ddce4b9125657e18e
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89149642"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90880129"
 ---
 # <a name="get-behavioral-analytics-and-anomaly-detection"></a>Bénéficiez d’une analyse comportementale et d’une détection des anomalies
 
-*S’applique à : Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Les stratégies de détection des anomalies d’Microsoft Cloud App Security fournissent une analyse comportementale des utilisateurs et des entités (UEBA) et des Machine Learning (ML) prêts à l’emploi pour vous permettre d’exécuter la détection avancée des menaces dans votre environnement Cloud. Dans la mesure où elles sont automatiquement activées, les nouvelles stratégies de détection des anomalies démarrent immédiatement le processus de détection et de classement des résultats, ciblant de nombreuses anomalies comportementales au sein de vos utilisateurs, ainsi que les ordinateurs et les appareils connectés à votre réseau. En outre, les stratégies exposent plus de données à partir du moteur de détection Cloud App Security, afin de vous aider à accélérer le processus d’investigation et à contenir des menaces continues.
 
@@ -78,12 +78,12 @@ Les stratégies de détection d’anomalie suivantes sont disponibles :
     >
     > Cloud App Security prend en charge la détection de programmes malveillants pour les applications suivantes :
     >
-    > * Zone
+    > * Box
     > * Dropbox
     > * G Suite
-    > * Microsoft 365 (nécessite une licence valide pour Office 365-protection avancée contre les menaces P1)
+    > * Office 365 (nécessite une licence valide pour Office 365-protection avancée contre les menaces P1)
 
-### <a name="activity-from-anonymous-ip-addresses"></a>Activité depuis des adresses IP anonymes
+### <a name="activity-from-anonymous-ip-addresses"></a>Activité depuis des adresses IP anonymes
 
 * Cette détection identifie que les utilisateurs étaient actifs depuis une adresse IP qui a été identifiée comme une adresse IP de proxy anonyme. Ces proxys sont utilisés par les personnes qui souhaitent masquer l’adresse IP de leur appareil et peuvent être utilisés à des fins malveillantes. Cette détection utilise un algorithme d’apprentissage automatique qui réduit les « faux positifs », comme les adresses IP mal balisées qui sont couramment utilisées par les utilisateurs de l’organisation.
 

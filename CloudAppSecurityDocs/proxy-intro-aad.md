@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 93b285abfbbffad4a9a033e39cb226100ecd519a
-ms.sourcegitcommit: c9b7aa05694a1825f0b32b677b5a6549b846c554
+ms.openlocfilehash: 0964983a0e91ff7ee0b8fb33c0f42d6f76c08c1e
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2020
-ms.locfileid: "90056742"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90880316"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Protéger les applications avec le Contrôle d’accès conditionnel aux applications Microsoft Cloud App Security
 
-*S’applique à : Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Dans le lieu de travail actuel, il est souvent difficile de savoir ce qui se passe dans votre environnement Cloud après le fait. En effet, vous devez pouvoir arrêter les violations et les fuites en temps réel, avant que les employés ne puissent, par inadvertance ou intentionnellement, compromettre vos données et votre organisation. Il est important de permettre aux utilisateurs de votre organisation de tirer le meilleur parti des services et outils disponibles dans les applications Cloud et de leur permettre de faire fonctionner leurs propres appareils. En même temps, vous avez besoin d’outils pour protéger votre organisation contre les fuites et le vol de données, en temps réel. Microsoft Cloud App Security s’intègre à n’importe quel fournisseur d’identité (IdP) pour fournir ces fonctionnalités avec des contrôles d’accès et de session. Si vous utilisez Azure Active Directory (Azure AD) comme IdP, ces contrôles sont intégrés et rationalisés pour un déploiement plus simple et plus personnalisé, basé sur l' [outil d’accès conditionnel](/azure/active-directory/conditional-access/overview)de Azure ad.
 

@@ -7,16 +7,16 @@ ms.service: cloud-app-security
 ms.topic: article
 ms.date: 12/04/2019
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 9ee405188d0f338bfe43ca9a08730baa6054a844
-ms.sourcegitcommit: 582779b75be41e57fb1d773d1cf01f6b8598521e
+ms.openlocfilehash: 2ff5f5ffb2dfe58833f556a6aebe1d4b99b8c061
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78274641"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90880359"
 ---
 # <a name="how-cloud-app-security-helps-protect-your-workday-environment"></a>Comment Cloud App Security aide à protéger votre environnement de jours ouvrés
 
-*S’applique à : Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 En tant que solution HCM majeure, la journée de travail contient certaines des informations les plus sensibles de votre organisation, telles que les données personnelles des employés, les contrats, les détails des fournisseurs, etc. La prévention de l’exposition de ces données nécessite une surveillance continue pour empêcher les acteurs malveillants ou les Insiders de sécurité de dévoiler les informations sensibles.
 
@@ -32,7 +32,7 @@ La connexion de la journée de travail à Cloud App Security vous permet d’obt
 ## <a name="how-cloud-app-security-helps-to-protect-your-environment"></a>Comment Cloud App Security aide à protéger votre environnement
 
 - [Détectez les menaces du Cloud, les comptes compromis et les Insiders malveillants](best-practices.md#detect-cloud-threats-compromised-accounts-malicious-insiders-and-ransomware)
-- [Utiliser la piste d’audit des activités pour des investigations d’investigation](best-practices.md#use-the-audit-trail-of-activities-for-forensic-investigations)
+- [Utiliser la piste d’audit des activités pour des investigations forensiques](best-practices.md#use-the-audit-trail-of-activities-for-forensic-investigations)
 
 ## <a name="control-workday-with-built-in-policies-and-policy-templates"></a>Contrôle de la journée de travail avec des stratégies intégrées et des modèles de stratégie
 
@@ -40,8 +40,8 @@ Vous pouvez utiliser les modèles de stratégie intégrés suivants pour détect
 
 | Type | Nom |
 | ---- | ---- |
-| Stratégie de détection des anomalies intégrée | [Activité à partir d’adresses IP anonymes](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)<br />[Activité à partir d’un pays peu fréquent](anomaly-detection-policy.md#activity-from-infrequent-country)<br />[Activité à partir d’adresses IP suspectes](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)<br />[Voyage impossible](anomaly-detection-policy.md#impossible-travel) |
-| Modèle de stratégie d’activité | Connexion à partir d’une adresse IP à risque |
+| Stratégie de détection des anomalies intégrée | [Activité depuis des adresses IP anonymes](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)<br />[Activité à partir de pays peu fréquents](anomaly-detection-policy.md#activity-from-infrequent-country)<br />[Activité à partir d'adresses IP suspectes](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)<br />[Voyage impossible](anomaly-detection-policy.md#impossible-travel) |
+| Modèle de stratégie d’activité | Connexion à partir d’une adresse IP à risques |
 
 Pour plus d’informations sur la création de stratégies, consultez [créer une stratégie](control-cloud-apps-with-policies.md#create-a-policy).
 
@@ -55,7 +55,7 @@ Pour plus d’informations sur la correction des menaces à partir des applicati
 
 Passez en revue nos meilleures pratiques en matière de [sécurisation et de collaboration avec les utilisateurs externes](best-practices.md#secure-collaboration-with-external-users-by-enforcing-real-time-session-controls) , [bloquant et protégeant le téléchargement de données sensibles sur des appareils non gérés ou risqués](best-practices.md#block-and-protect-download-of-sensitive-data-to-unmanaged-or-risky-devices).
 
-## <a name="next-steps"></a>Étapes suivantes :
+## <a name="next-steps"></a>Étapes suivantes
 
 > [!div class="nextstepaction"]
 > [Connexion de la journée de travail à Microsoft Cloud App Security](connect-workday-to-microsoft-cloud-app-security.md)

@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2afdf89e5ccbb42e9cdfb14673e07ce6e0e97de9
-ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
+ms.openlocfilehash: 9b99e5477c96752f65e4b20a1f9d7f977a5b4ad7
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89149191"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90880983"
 ---
 # <a name="troubleshooting-app-connectors-using-error-messages"></a>Résolution des problèmes des connecteurs d’application à l’aide de messages d’erreur
 
-*S’applique à : Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Cet article fournit la liste des messages d’erreur relatifs aux connecteurs d’application API ainsi que les solutions recommandées pour chacun d’eux.
 
@@ -36,7 +36,7 @@ Quand vous tentez de connecter une application cloud à l’aide du connecteur d
 > |Message d’erreur|Application correspondante|Description|Résolution|
 > |----|----|----|------------|
 > |HttpRequestFailure: 500 Erreur interne au serveur retourné par le serveur|Toutes les applications|Une erreur s’est produite dans l’application.|Vérifiez l’état de l’application|
-> |Le service a expiré|Toutes les applications|Un délai d’attente a été détecté dans la connexion entre Cloud App Security et l’application. Un problème au niveau de l’application peut en être la cause.|Réessayez plus tard.|
+> |Le service a expiré|Toutes les applications|Un délai d’attente a été détecté dans la connexion entre Cloud App Security et l’application. Un problème au niveau de l’application peut en être la cause.|Réessayez ultérieurement.|
 > |NullPointerException|AWS|Erreur interne|Contacter le support technique|
 > |AuthFatalFailureException: com.box.boxjavalibv2.exceptions.BoxServerException: {"error":"invalid_grant","error_description":"Jeton d’actualisation non valide"}|Box|Le jeton d’actualisation Box n’est pas valide|Suivez le processus pour reconnecter Box à Cloud App Security.|
 > |BoxRestException: Échec de l’analyse de la réponse.|Box|Erreur interne|Cliquez à nouveau sur le lien Tester maintenant pour tester la connexion à Box.|
@@ -52,7 +52,7 @@ Quand vous tentez de connecter une application cloud à l’aide du connecteur d
 > |IOException:|Okta|Erreur interne|Contacter le support technique|
 > |HttpRequestFailure: 404 Non trouvé retourné par le serveur|Okta|Erreur interne|Contacter le support technique|
 > |HttpRequestFailure: 400 Requête incorrecte retourné par le serveur : {"error":{"code":"AF20012","message":"L’ID de client spécifié (emplacement de Tenant_ID) est configuré de façon incorrecte dans le système."|Office 365 |Aucune licence Office 365 attribuée n’a été trouvée. |Attribuez au moins une licence Office 365 à votre client.|
-> |Microsoft. Office. Compliance. audit. DataServiceException : le locataire 998cea7e-35cd-46a5-ab3c-8ec88a45d7d5 n’existe pas ou {"Error" : "code" : "AF20023", "message" : "l’abonnement a été désactivé."|Office 365|La journalisation d’audit n’est pas activée dans Office 365|Activez la journalisation d’audit dans Office 365. [En savoir plus](connect-office-365-to-microsoft-cloud-app-security.md#how-to-connect-microsoft-365-to-cloud-app-security)|
+> |Microsoft. Office. Compliance. audit. DataServiceException : le locataire 998cea7e-35cd-46a5-ab3c-8ec88a45d7d5 n’existe pas ou {"Error" : "code" : "AF20023", "message" : "l’abonnement a été désactivé."|Office 365|La journalisation d’audit n’est pas activée dans Office 365|Activez la journalisation d’audit dans Office 365. [En savoir plus](connect-office-365-to-microsoft-cloud-app-security.md#how-to-connect-office-365-to-cloud-app-security)|
 > |HttpRequestFailure: 401 Non autorisé retourné par le serveur|Office 365|Problème interne|Cliquez à nouveau sur le lien Tester maintenant|
 > |TokenRefreshException: {"error":"invalid_grant","error_description":"AADSTS70002: Erreur de validation des informations d’identification. AADSTS70008: Le jeton d’actualisation ou le code d’autorisation fourni a expiré. Envoyez une nouvelle demande d’autorisation interactive pour cet utilisateur et cette ressource.|Office 365|Jeton expiré.|Suivez le processus pour reconnecter Office 365 à Cloud App Security.|
 > |SocketTimeoutException: Expiration du délai d’attente de lecture|Office 365|Erreur interne|Cliquez à nouveau sur le lien Tester maintenant|

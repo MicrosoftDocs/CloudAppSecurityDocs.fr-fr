@@ -10,16 +10,16 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: a4b86ef7bdda32e66744960dd3902aaef7e3034a
-ms.sourcegitcommit: 6e47d0348283d105614d81db4e7737fc837ed20b
+ms.openlocfilehash: 027f9df535f3dc660879d622d0658587eef65338
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88657773"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90880589"
 ---
 # <a name="initiate-file-upload---cloud-discovery-api"></a>Lancer le chargement de fichiers-API Cloud Discovery
 
-*S’applique à : Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Exécutez la requête d’extraction pour initier le processus de chargement. Cet appel, le premier des trois, retourne une URL qui sera utilisée ultérieurement pour effectuer la demande de chargement (PUT).
 
@@ -93,7 +93,7 @@ Les types de sources suivants sont actuellement pris en charge :
 | url | URL cible qui effectuera votre chargement de Cloud Discovery. |
 | provider | « Azure » ou « AWS », indication précisant si le chargement est ciblé vers le stockage Windows Azure et le stockage de l’AWS à l’autre. |
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 
 ### <a name="request"></a>Requête
 

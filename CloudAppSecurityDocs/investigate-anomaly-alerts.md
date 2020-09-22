@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: itfalcon
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 7b93a60c42b024b03a048848d048f4ed93d13f17
-ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
+ms.openlocfilehash: 60314be5b2dba1ec3ff5a35eb7d4e836a2a9d34d
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88963469"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90881651"
 ---
 # <a name="how-to-investigate-anomaly-detection-alerts"></a>Comment examiner les alertes de détection d’anomalies
 
-*S’applique à : Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Microsoft Cloud App Security fournit des détections et des alertes de sécurité pour les activités malveillantes. L’objectif de ce guide est de vous fournir des informations générales et pratiques sur chaque alerte, afin de faciliter vos investigations et vos tâches de correction. Ce guide contient des informations générales sur les conditions de déclenchement d’alertes. Toutefois, il est important de noter que dans la mesure où les détections d’anomalies ne sont pas déterministes par nature, elles ne sont déclenchées que lorsqu’il y a un comportement qui dévie de la norme. Enfin, certaines alertes peuvent être en préversion. consultez régulièrement la documentation officielle pour obtenir l’état des alertes mises à jour.
 
@@ -493,7 +493,7 @@ Activités indiquant qu’un utilisateur a partagé un rapport Power BI qui peut
 
 ### <a name="unusual-impersonated-activity-by-user"></a>Activité inhabituelle empruntée (par l’utilisateur)
 
-Dans certains logiciels, il existe des options permettant d’autoriser d’autres utilisateurs à emprunter l’identité d’autres utilisateurs. Par exemple, les services de messagerie permettent aux utilisateurs d’autoriser d’autres utilisateurs à envoyer des e-mails en leur nom. Cette activité est couramment utilisée par les attaquants pour créer des e-mails de hameçonnage en vue d’extraire des informations sur votre organisation. Cloud App Security crée une ligne de base basée sur le comportement de l’utilisateur et crée une activité quand une activité d’emprunt d’identité inhabituelle est détectée.
+Dans certains logiciels, il existe des options permettant d’autoriser d’autres utilisateurs à emprunter l’identité d’autres utilisateurs. Par exemple, les services de courrier permettent aux utilisateurs d’autoriser d’autres utilisateurs à envoyer des e-mails en leur nom. Cette activité est couramment utilisée par les attaquants pour créer des e-mails de hameçonnage en vue d’extraire des informations sur votre organisation. Cloud App Security crée une ligne de base basée sur le comportement de l’utilisateur et crée une activité quand une activité d’emprunt d’identité inhabituelle est détectée.
 
 **Période d’apprentissage**
 

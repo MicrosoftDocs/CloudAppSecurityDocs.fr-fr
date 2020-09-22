@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 31fb5ddc618ce1600e41a1437759b2558b3350c1
-ms.sourcegitcommit: 7d05b81a839286d2afae4cdad2c2d59e7becc1f9
+ms.openlocfilehash: 6f1b55e3675b9419ca1e53ddeea9189e260b8022
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90524189"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90880192"
 ---
 # <a name="security-configuration-for-azure"></a>Configuration de la sécurité pour Azure
 
-*S’applique à : Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Microsoft Cloud App Security vous permet d’évaluer la configuration de la sécurité de votre environnement Azure. L’évaluation, optimisée par Azure Security Center, fournit des recommandations pour les contrôles de sécurité et de configuration manquants.
 

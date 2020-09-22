@@ -7,16 +7,16 @@ ms.service: cloud-app-security
 ms.topic: quickstart
 ms.date: 10/24/2019
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 83b84e4839044cd16ec37a4ecd121ada1f702212
-ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
+ms.openlocfilehash: 2202c6ab86d6cf68e6ddf5588f09134284e5219e
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89149514"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90881686"
 ---
 # <a name="cloud-app-security-best-practices"></a>Meilleures pratiques pour Cloud App Security
 
-*S’applique à : Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Cet article présente les meilleures pratiques pour la protection de votre organisation à l’aide de Microsoft Cloud App Security. Ces meilleures pratiques sont issues de notre expérience avec Cloud App Security et des expériences de clients comme vous.
 
@@ -87,12 +87,12 @@ Cloud App Security vous offre la possibilité d’analyser et de surveiller les 
 
 ## <a name="limit-exposure-of-shared-data-and-enforce-collaboration-policies"></a>Limiter l’exposition des données partagées et appliquer des stratégies de collaboration
 
-**Meilleure pratique** : Se connecter à Microsoft 365  
-**Détail** : La connexion de Microsoft 365 à Cloud App Security vous offre une visibilité immédiate des activités de vos utilisateurs, des fichiers auxquels ils accèdent et fournit des actions de gouvernance pour Microsoft 365, SharePoint, OneDrive, Teams, Power BI, Exchange et Dynamics.  
+**Meilleure pratique** : Connecter Office 365  
+**Détail** : La connexion d’Office 365 à Cloud App Security vous offre une visibilité immédiate des activités de vos utilisateurs, des fichiers auxquels ils accèdent et fournit des actions de gouvernance pour Office 365, SharePoint, OneDrive, Teams, Power BI, Exchange et Dynamics.  
 **Pour plus d’informations** :
 
 * [Connecter des applications](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
-* [Connecter Microsoft 365 à Microsoft Cloud App Security](connect-office-365-to-microsoft-cloud-app-security.md)
+* [Connecter Office 365 à Microsoft Cloud App Security](connect-office-365-to-microsoft-cloud-app-security.md)
 
 ---
 
@@ -117,7 +117,7 @@ Cloud App Security vous offre la possibilité d’analyser et de surveiller les 
 ---
 
 **Meilleure pratique** : Créer des stratégies pour supprimer le partage avec des comptes personnels  
-**Détail** : La connexion de Microsoft 365 à Cloud App Security vous offre une visibilité immédiate des activités de vos utilisateurs, des fichiers auxquels ils accèdent et fournit des actions de gouvernance pour Microsoft 365, SharePoint, OneDrive, Teams, Power BI, Exchange et Dynamics.  
+**Détail** : La connexion d’Office 365 à Cloud App Security vous offre une visibilité immédiate des activités de vos utilisateurs, des fichiers auxquels ils accèdent et fournit des actions de gouvernance pour Office 365, SharePoint, OneDrive, Teams, Power BI, Exchange et Dynamics.  
 **Pour plus d’informations** :
 
 * [Gouvernance des applications connectées](governance-actions.md)

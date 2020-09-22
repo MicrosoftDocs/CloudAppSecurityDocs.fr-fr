@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: e80e2530ec5f2a157287661403e429817f8e36a3
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 2561017dec734db588b31789a078156fbe4bc59e
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88781206"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90881464"
 ---
 # <a name="create-cloud-discovery-policies"></a>Créer des stratégies de Cloud Discovery
 
-*S’applique à : Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Vous pouvez créer des stratégies de découverte d’applications afin d’être averti lorsque de nouvelles applications sont détectées. Cloud App Security examine également tous les journaux de votre environnement Cloud Discovery pour déterminer s’ils contiennent des anomalies.
 

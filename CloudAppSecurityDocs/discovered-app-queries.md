@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f31b8937d1eeb9781b677da154880ab699ef131e
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: ef61d90f23eb9e15b8b84f926b0b4424f4b3b36b
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88780305"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90881680"
 ---
 # <a name="discovered-app-filters-and-queries"></a>Filtres et requêtes des applications découvertes
 
-*S’applique à : Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Quand vous avez un grand nombre d’applications découvertes, il est pratique de les filtrer et de leur appliquer des requêtes. Cet article décrit les filtres disponibles et comment faire des requêtes sur vos applications découvertes.
 
@@ -49,7 +49,7 @@ Vous pouvez créer une balise d’application personnalisée. Ces balises peuven
 
 Pour créer une balise d’application personnalisée :
 
-1. Dans la roue dentée **paramètres** , sélectionnez **paramètres Cloud Discovery**, puis l’onglet **balises d’application** . cliquez sur l’icône plus. ![Icône « Plus »](media/plus-icon.png)
+1. Dans la roue dentée **paramètres** , sélectionnez **paramètres Cloud Discovery**, puis l’onglet **balises d’application** . Cliquez sur l’icône plus. ![Icône « Plus »](media/plus-icon.png)
 
    ![créer une balise d’application personnalisée](media/create-app-tag.png)
 

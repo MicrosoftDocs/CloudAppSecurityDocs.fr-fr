@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0c5cb9d6604fead5090c68ae74d9919d4ab0b3e4
-ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
+ms.openlocfilehash: f7f3fe7ba1df0a62950f88d1053c8f9709cae8c6
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87254616"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90881605"
 ---
 # <a name="how-to-find-built-in-deprecating-reports"></a>Guide pratique pour rechercher des rapports intégrés dépréciés
 
-*S’applique à : Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Nous mettons à jour la fonctionnalité de rapports intégrés en l’incorporant à d’autres parties du portail. La mise à jour de cette fonctionnalité est en cours afin d’améliorer les rapports de Microsoft Cloud App Security.
 

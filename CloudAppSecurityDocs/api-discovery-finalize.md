@@ -10,16 +10,16 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 509f0c1096d22492a93683a31309e5cf6584987c
-ms.sourcegitcommit: 6e47d0348283d105614d81db4e7737fc837ed20b
+ms.openlocfilehash: a30fd3f257089d8d3aeda125f63ae2c695d6344c
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88657824"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90880594"
 ---
 # <a name="finalize-file-upload---cloud-discovery-api"></a>Finaliser le chargement des fichiers-API Cloud Discovery
 
-*S’applique à : Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Une fois le téléchargement du contenu du fichier terminé, signalez-le afin de commencer le traitement du fichier.
 
@@ -37,7 +37,7 @@ POST /api/v1/discovery/done_upload/
 | inputStreamName | Nom de la source de données à partir de laquelle les données sont envoyées (représente l’appareil). |
 | uploadAsSnapshot | Téléchargez les données sous la forme d’un rapport d’instantané au lieu de les charger dans un rapport continu. Si ce paramètre est défini, le rapport est créé avec le nom spécifié dans inputStreamName. |
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 
 ### <a name="request"></a>Requête
 

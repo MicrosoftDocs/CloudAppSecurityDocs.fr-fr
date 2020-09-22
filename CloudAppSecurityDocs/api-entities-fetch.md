@@ -10,16 +10,16 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: c81aada8a76613ae7f2b2447f4cdbe5830967057
-ms.sourcegitcommit: 6e47d0348283d105614d81db4e7737fc837ed20b
+ms.openlocfilehash: 001f0ec02b22f33a57ee6a860b376bbee0c983d0
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88657722"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90880883"
 ---
 # <a name="fetch---entities-api"></a>API FETCH-Entities
 
-*S’applique à : Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 > [!NOTE]
 > Cette demande n’est pas disponible pour Office 365 Cloud App Security.
@@ -38,7 +38,7 @@ GET /api/v1/entities/<pk>/
 | --- | --- |
 | pk | Dictionnaire avec les détails de l’ID d’entité, du SaaS et de l’instance encodés sous la forme d’une chaîne base64. Par exemple : `{"id":"3fa9f28b-eb0e-463a-ba7b-8089fe9991e2","saas":11161,"inst":0}` encodée sous forme de chaîne base64. |
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 
 ### <a name="request"></a>Requête
 

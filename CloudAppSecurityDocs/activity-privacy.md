@@ -13,16 +13,16 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2d642a834111a1b8cadc3e997bdb63a19426aac1
-ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
+ms.openlocfilehash: 89a5f95512a2cfd3eb64c181b5e805944c0275eb
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89149905"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90880921"
 ---
 # <a name="activity-privacy"></a>Confidentialité de l’activité
 
-*S’applique à : Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Microsoft Cloud App Security offre aux entreprises la possibilité de déterminer de façon précise les utilisateurs qu’ils souhaitent surveiller en fonction de l’appartenance à un groupe. La confidentialité des activités ajoute la possibilité de suivre les réglementations de conformité de votre organisation sans compromettre la confidentialité des utilisateurs. Cela est possible en vous permettant de surveiller les utilisateurs tout en conservant leur confidentialité en masquant leurs activités dans le journal d’activité. Seuls les administrateurs autorisés ont la possibilité de choisir d’afficher ces activités privées, chaque instance étant auditée dans le journal de gouvernance.
 
@@ -32,7 +32,7 @@ Vous pouvez avoir des utilisateurs dans Cloud App Security que vous souhaitez an
 
 Pour configurer vos groupes de confidentialité d’utilisateur, vous devez d’abord [importer des groupes d’utilisateurs](user-groups.md) vers Cloud App Security. Par défaut, vous voyez les groupes suivants :
 
-- Groupe d’utilisateurs d' **application** : groupe intégré qui vous permet de voir les activités effectuées par les applications Microsoft 365 et Azure ad.
+- Groupe d’utilisateurs **Application** : un groupe intégré qui vous permet de voir les activités effectuées par les applications Office 365 et Azure AD.
 
 - Groupe d' **utilisateurs externes** -tous les utilisateurs qui ne sont pas membres de l’un des domaines gérés que vous avez configurés pour votre organisation.
 

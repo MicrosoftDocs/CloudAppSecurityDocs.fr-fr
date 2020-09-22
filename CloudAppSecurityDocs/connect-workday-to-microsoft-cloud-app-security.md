@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: e10c3c838e52c3616a7bc550880526f722897e00
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: d06817890b94ddc5f37742fcff70654feb494d17
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88780900"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90881296"
 ---
 # <a name="connect-workday-to-microsoft-cloud-app-security"></a>Connecter un jour ouvré à Microsoft Cloud App Security
 
-*S’applique à : Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Cet article fournit des instructions pour connecter Microsoft Cloud App Security à votre compte de jour de travail existant à l’aide de l’API du connecteur d’applications. Cette connexion vous donne une visibilité et un contrôle sur l’utilisation des jours de travail. Pour plus d’informations sur la façon dont Cloud App Security protège la journée de travail, consultez [protéger la journée de travail](protect-workday.md).
 
@@ -43,8 +43,8 @@ Le compte de jour de travail utilisé pour la connexion à Cloud App Security do
 | --- | --- | --- | --- | --- |
 | Système | Configuration : configuration du locataire – général | Configuration : configuration du client – sécurité | Afficher, modifier | Acquérir, put |
 | Système | Administration de la sécurité | | Afficher, modifier | Acquérir, put |
-| Système | Audit du système | | Vue | Obtenir |
-| Effectifs | Données de travail : personnel | Worker Data: Public Worker Reports | Vue | Obtenir |
+| Système | Audit du système | | Affichage | Obtenir |
+| Effectifs | Données de travail : personnel | Worker Data: Public Worker Reports | Affichage | Obtenir |
 
 > [!NOTE]
 >
@@ -74,7 +74,7 @@ Pour plus d’informations sur la configuration des utilisateurs d’intégratio
     | Type d’octroi client | Octroi de code d’autorisation |
     | Type de jeton d’accès | Porteur |
     | URI de redirection | `https://portal.cloudappsecurity.com/api/oauth/connect` |
-    | Jetons d’actualisation sans expiration | Yes |
+    | Jetons d’actualisation sans expiration | Oui |
     | Étendues OAuth2 | **Personnel** et **système** |
     | Étendue (zones fonctionnelles) | **Personnel** et **système** |
 

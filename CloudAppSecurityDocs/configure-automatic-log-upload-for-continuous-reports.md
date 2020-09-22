@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ebbe2f53f184cf8668a9cf3443ade3dedb42733f
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 8711209823bdb2ea010dbb734fc67c03561122ed
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85623351"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90881444"
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance---deprecated"></a>Configurer le chargement automatique des journaux pour des rapports continus sur une appliance virtuelle - Déconseillé
 
-*S’applique à : Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 > [!WARNING]
 > Il est fortement recommandé de configurer le chargement du journal avec [Docker](discovery-docker.md) pour une plus grande flexibilité de déploiement.
@@ -49,7 +49,7 @@ Le collecteur de journaux dispose d’un mécanisme de sécurité intégré qui 
 
 ### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>Étape 1 : configuration du portail web  - définir les sources de données et les lier à un collecteur de journaux
 
-1. Accédez à la page des paramètres de chargement automatisé : dans le portail Cloud App Security, cliquez sur l' ![icône](media/settings-icon.png "Icône des paramètres")des paramètres icône des paramètres, puis sur **collecteurs de journaux**.
+1. Accédez à la page des paramètres de chargement automatisé : dans le portail Cloud App Security, cliquez sur l' ![icône](media/settings-icon.png "Icône des paramètres")des paramètres icône des paramètres, puis sur  **collecteurs de journaux**.
 
 2. Pour chaque pare-feu ou proxy à partir desquels vous voulez charger des journaux, créez une source de données correspondante :
 
@@ -107,7 +107,7 @@ Le collecteur de journaux dispose d’un mécanisme de sécurité intégré qui 
 
 10. Cliquez sur la machine dans le tableau **Machines virtuelles** et cliquez sur **Démarrer**.
 
-11. Connectez-vous à la machine virtuelle du collecteur de journaux pour déterminer si une adresse DHCP lui a été attribuée : cliquez sur la machine virtuelle, puis sélectionnez **Connect** (Connecter). L’invite de connexion doit s’afficher. Si vous voyez une adresse IP, vous pouvez vous connecter à la machine virtuelle à l’aide d’un outil Terminal Server/SSH.  Si vous ne voyez pas d’adresse IP, connectez-vous à l’aide des outils de connexion Hyper-V/VMWare et des informations d’identification que vous avez copiées quand vous avez créé le collecteur de journaux. Vous pouvez modifier le mot de passe et configurer la machine virtuelle à l’aide de l’utilitaire de configuration réseau en exécutant la commande suivante :`sudo network_config`
+11. Connectez-vous à la machine virtuelle du collecteur de journaux pour déterminer si une adresse DHCP lui a été attribuée : cliquez sur la machine virtuelle, puis sélectionnez **Connect** (Connecter). L’invite de connexion doit s’afficher. Si vous voyez une adresse IP, vous pouvez vous connecter à la machine virtuelle à l’aide d’un outil Terminal Server/SSH.  Si vous ne voyez pas d’adresse IP, connectez-vous à l’aide des outils de connexion Hyper-V/VMWare et des informations d’identification que vous avez copiées quand vous avez créé le collecteur de journaux. Vous pouvez modifier le mot de passe et configurer la machine virtuelle à l’aide de l’utilitaire de configuration réseau en exécutant la commande suivante : `sudo network_config`
     > [!NOTE]
     > La machine virtuelle est préconfigurée pour obtenir une adresse IP d’un serveur DHCP. Si vous avez besoin de configurer une adresse IP statique, une passerelle par défaut, un nom d’hôte, des serveurs DNS et NTPS, vous pouvez utiliser l’utilitaire **network_config** ou effectuer les modifications manuellement.
 
@@ -129,7 +129,7 @@ La première fois que vous vous connectez au collecteur de journaux et que vous 
 
     c. Entrez le domaine de la console, par exemple : `contoso.portal.cloudappsecurity.com`
 
-    d. Entrez le nom du collecteur de journaux que vous souhaitez configurer, par exemple :`CloudAppSecurityLogCollector01`
+    d. Entrez le nom du collecteur de journaux que vous souhaitez configurer, par exemple : `CloudAppSecurityLogCollector01`
 
 ### <a name="step-4---on-premises-configuration-of-your-network-appliances"></a>Étape 4 : configuration locale de vos équipements de réseau
 

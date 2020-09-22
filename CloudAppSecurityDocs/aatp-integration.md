@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 33ccea97fd5b41802d7f8b12fe7413c5bd76d8a6
-ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
+ms.openlocfilehash: 5ed5d8c23a231d058b79c0d945a954a8afb6533d
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88963588"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90880283"
 ---
 # <a name="azure-advanced-threat-protection-integration"></a>Intégration d’Azure-protection avancée contre les menaces
 
-*S’applique à : Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Microsoft Cloud App Security s’intègre à Azure-protection avancée contre les menaces (Azure ATP) pour fournir une analyse comportementale des entités utilisateur (UEBA) dans un environnement hybride (à la fois dans l’application Cloud et localement). pour plus d’informations, consultez [Didacticiel : étudier les utilisateurs à risque](tutorial-ueba.md). Pour plus d’informations sur les Machine Learning et l’analyse comportementale fournis par Azure ATP, consultez [qu’est-ce que Azure ATP ?](/azure-advanced-threat-protection/what-is-atp)
 
@@ -84,7 +84,7 @@ Pour désactiver l’intégration Cloud App Security avec Azure ATP :
 
 Ce problème affecte plusieurs alertes déclenchées plusieurs fois. La première instance de l’alerte est envoyée à SIEM, mais les déclencheurs suivants de la même alerte ne sont pas envoyés.
 
-#### <a name="resolution"></a>Solution
+#### <a name="resolution"></a>Résolution
 
 Aucune solution connue.
 

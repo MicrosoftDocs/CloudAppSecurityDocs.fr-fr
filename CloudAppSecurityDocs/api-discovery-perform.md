@@ -10,16 +10,16 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: b187b8cfa7b9df0610523baeb02410b76bcf00f4
-ms.sourcegitcommit: 286f8d5d940d1bb9a09daa3070ac4fc3768208f8
+ms.openlocfilehash: a943bf41934a6f90bd8d23b1b6bb358d673f35e7
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84505378"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90880565"
 ---
 # <a name="perform-file-upload---cloud-discovery-api"></a>Effectuer le chargement de fichiers-API Cloud Discovery
 
-*S’applique à : Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Chargez le contenu du fichier en effectuant une requête HTTP PUT. Vous devez utiliser l’URL renvoyée par la demande de [chargement de fichier](api-discovery-initiate.md) .
 
@@ -42,7 +42,7 @@ PUT https://<initiate_file_upload_response_url>
 > - Si votre fichier se trouve sous 64 Mo, ajoutez l’en-tête « x-ms-blob-type : BlockBlob » à votre demande.
 > - Si la taille de votre fichier est supérieure à 64 Mo, téléchargez-le en bloc. le moyen le plus simple de procéder consiste à utiliser le [Kit de développement logiciel (SDK) Azure](https://azure.microsoft.com/downloads/).
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 
 ### <a name="request"></a>Requête
 
