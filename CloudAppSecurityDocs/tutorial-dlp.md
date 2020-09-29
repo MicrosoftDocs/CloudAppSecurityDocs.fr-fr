@@ -12,16 +12,16 @@ ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
-ms.openlocfilehash: c0ba4e4271b39adf3fa574459c15641bce5b3c26
-ms.sourcegitcommit: 7b6124e5ecb3fa8fc1176d89e06b052f2a53a310
+ms.openlocfilehash: 4a75a256f8d4fa2e9483a153fce7ba1e1ab28376
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83856092"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90880948"
 ---
 # <a name="tutorial-discover-and-protect-sensitive-information-in-your-organization"></a>Tutoriel : Découvrir et protéger les informations sensibles dans votre organisation
 
-*S’applique à : Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Dans un monde idéal, tous vos employés comprennent l’importance de la protection des données et respectent vos stratégies. Dans le monde réel, il est probable qu’un partenaire occupé qui travaille fréquemment avec des informations de comptabilité charge par inadvertance un document sensible sur votre référentiel Box avec des autorisations incorrectes. Une semaine plus tard, vous réalisez que les informations confidentielles de votre entreprise ont été divulguées à la concurrence.
 

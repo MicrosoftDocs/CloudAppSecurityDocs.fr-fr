@@ -13,16 +13,16 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.reviewer: galz
 ms.suite: ems
-ms.openlocfilehash: 00646b44cb9c2095e3beaaa98f3528c6eb7b31db
-ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
+ms.openlocfilehash: bdf58b83e01dc6ab088d3956f2a71ef52f368438
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87254820"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90881183"
 ---
 # <a name="tutorial-detect-suspicious-user-activity-with-ueba"></a>Tutoriel : Détection des activités suspectes des utilisateurs avec UEBA
 
-*S’applique à : Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Microsoft Cloud App Security assure des détections optimales sur toute la chaîne cybercriminelle des attaques pour les utilisateurs compromis, les menaces internes, les exfiltrations, les ransomware et plus encore. Notre solution complète combine plusieurs méthodes de détection, notamment la détection d’anomalie, l’analyse comportementale (UEBA) et des détections d’activités basées sur les règles, pour fournir une vue d’ensemble de l’usage que font vos utilisateurs des applications de votre environnement.
 

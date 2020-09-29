@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: e3b170d932c66532d421604f63f956a891d17663
-ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
+ms.openlocfilehash: f145c8f76e205e24703742d4162c8766b2785588
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88963826"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90877052"
 ---
 # <a name="tutorial-block-download-of-sensitive-information"></a>Tutoriel : Bloquer le téléchargement des informations sensibles
 
-*S’applique à : Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Aujourd’hui, l’administrateur informatique se retrouve confronté à un véritable dilemme. Vous souhaitez augmenter la productivité de vos employés. Cela signifie que les employés peuvent accéder aux applications à tout moment et depuis n’importe quel appareil. Mais vous souhaitez protéger les ressources de l’entreprise, y compris les informations propriétaires et les informations privilégiées. Comment permettre aux employés d’accéder à vos applications cloud tout en protégeant vos données ? **Ce tutoriel vous permet de bloquer les téléchargements effectués par les utilisateurs qui ont accès à vos données sensibles dans les applications cloud d’entreprise à partir d’appareils non gérés ou d’emplacements réseau hors de l’entreprise.**
 

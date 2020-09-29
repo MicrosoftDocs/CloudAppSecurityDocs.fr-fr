@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4f8e5c59de4dd05730dc6970ae1cbebe8f941356
-ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
+ms.openlocfilehash: 33078d72d6bbcb5430f207a029c3352d776958ba
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88964047"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90881132"
 ---
 # <a name="tutorial-automatically-apply-azure-information-protection-classification-labels"></a>Tutoriel : Application automatique d’étiquettes de classification Azure Information Protection
 
-*S’applique à : Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Dans un monde idéal, tous vos employés comprennent l’importance de la protection des données et respectent vos stratégies. Cependant, il est probable que dans la réalité un partenaire du service comptabilité charge un document dans votre référentiel Box avec des autorisations inappropriées. Une semaine plus tard, vous réalisez que les informations confidentielles de votre entreprise ont été divulguées à la concurrence. Microsoft Cloud App Security vous aide à éviter que ce type d’incident ne se produise. Cette fonctionnalité est disponible pour Box, SharePoint et OneDrive Entreprise. L’application d’une étiquette Azure Information Protection fait partie des très nombreuses [actions de gouvernance](governance-actions.md) disponibles.
 

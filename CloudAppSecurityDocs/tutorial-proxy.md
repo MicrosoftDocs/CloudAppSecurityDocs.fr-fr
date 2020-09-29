@@ -7,16 +7,16 @@ ms.service: cloud-app-security
 ms.topic: tutorial
 ms.date: 01/01/2020
 ms.collection: M365-security-compliance
-ms.openlocfilehash: fec6182d004b934f564291e4ca9f4fe06aa8d723
-ms.sourcegitcommit: 0b929f7c8feed7dfb40d5294179fd5c6fc079614
+ms.openlocfilehash: bb0ae32a16d9ea9a8f36a0bd0ae0405b1d28b273
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "75667559"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90881204"
 ---
 # <a name="tutorial-protect-any-apps-in-use-in-your-organization-in-real-time"></a>Tutoriel : Protéger toutes les applications utilisées dans votre organisation en temps réel
 
-*S’applique à : Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 L’utilisation approuvée des applications par les employés, stockent souvent certaines de vos données d’entreprise et secrets les plus sensibles. Dans l’espace de travail moderne, les utilisateurs accèdent à ces applications dans de nombreuses situations risquées. Ces utilisateurs peuvent être des partenaires de votre organisation qui ne disposent que d’un peu de visibilité ou d’employés utilisant des appareils non gérés ou provenant d’adresses IP publiques. En raison de la diversité des risques dans ce paysage, une stratégie de confiance nulle doit être employée. Souvent, il n’y a pas assez de connaissance des violations et de la perte de données dans ces applications après le fait ; par conséquent, de nombreux scénarios de protection et contre les cybermenaces des informations doivent être traités ou bloqués en temps réel.
 
