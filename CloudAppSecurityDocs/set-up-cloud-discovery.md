@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 38c342c56d808adf9737c5be25da88547b25ad69
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 38592b682d7ac0684fc7db6197b884530556333b
+ms.sourcegitcommit: 438ba105224aa2673a004e6ae2999d0bccfc47c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90878594"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91450818"
 ---
 # <a name="set-up-cloud-discovery"></a>Configurer Cloud Discovery
 
@@ -31,11 +31,12 @@ Il existe deux types de rapports que vous pouvez générer :
 
 - **Rapports continus** : ils analysent tous les journaux qui sont transférés à partir de votre réseau à l’aide de Cloud App Security. Ils offrent une meilleure visibilité sur toutes les données et identifient automatiquement toute utilisation anormale à l’aide du moteur de détection des anomalies Machine Learning ou des stratégies personnalisées que vous définissez. Ces rapports peuvent être créés en vous connectant des façons suivantes :
 
-  - [Intégration de Microsoft Defender ATP](wdatp-integration.md): Cloud App Security s’intègre à Microsoft Defender-protection avancée contre les menaces (ATP) en mode natif, afin de simplifier le déploiement des Cloud Discovery, d’étendre les fonctionnalités de Cloud Discovery au-delà de votre réseau d’entreprise et d’activer l’investigation basée sur les machines.
-  - [Collecteur de journaux](discovery-docker.md) : les collecteurs de journaux vous permettent d’automatiser facilement le chargement manuel des journaux de votre réseau. Le collecteur de journaux s’exécute sur votre réseau et reçoit les journaux par le biais de Syslog ou FTP.
-  - [Intégration Zscaler](zscaler-integration.md) : si vous travaillez avec Cloud App Security et Zscaler, vous pouvez intégrer les deux produits pour améliorer la sécurité de votre expérience Cloud Discovery. Ensemble, Cloud App Security et Zscaler offrent un déploiement fluide de Cloud Discovery, le blocage automatique des applications non approuvées et l’évaluation des risques directement dans le portail de Zscaler.
-  - [intégration de iboss](iboss-integration.md): Si vous travaillez avec Cloud App Security et iboss, vous pouvez intégrer les deux produits pour améliorer votre expérience de Cloud Discovery de sécurité. Ensemble, Cloud App Security et iboss fournissent un déploiement transparent de Cloud Discovery, le blocage automatique des applications non approuvées et l’évaluation des risques directement dans le portail iboss.
-  - [Intégration de Corrata](corrata-integration.md): Si vous travaillez avec Cloud App Security et Corrata, vous pouvez intégrer les deux produits pour améliorer votre expérience de Cloud Discovery de sécurité. Ensemble, Cloud App Security et Corrata fournissent un déploiement transparent de Cloud Discovery, le blocage automatique des applications non approuvées et l’évaluation des risques directement dans le portail Corrata.
+  - [**Intégration de Microsoft Defender ATP**](wdatp-integration.md): Cloud App Security s’intègre à Microsoft Defender-protection avancée contre les menaces (ATP) en mode natif, afin de simplifier le déploiement des Cloud Discovery, d’étendre les fonctionnalités de Cloud Discovery au-delà de votre réseau d’entreprise et d’activer l’investigation basée sur les machines.
+  - [**Collecteur**](discovery-docker.md)de journaux : les collecteurs de journaux vous permettent d’automatiser facilement le chargement du journal à partir de votre réseau. Le collecteur de journaux s’exécute sur votre réseau et reçoit les journaux par le biais de Syslog ou FTP.
+  - **Secure Web Gateway (SWG)**: Si vous travaillez avec Cloud App Security et l’un des SWGs suivants, vous pouvez intégrer les produits pour améliorer votre expérience de Cloud Discovery de sécurité. Ensemble, Cloud App Security et SWGs offrent un déploiement transparent de Cloud Discovery, le blocage automatique des applications non approuvées et l’évaluation des risques directement sur le portail de SWG.
+    - [Intégration de Zscaler](zscaler-integration.md)
+    - [intégration de iboss](iboss-integration.md)
+    - [Intégration de Corrata](corrata-integration.md)
 
 ## <a name="log-process-flow-from-raw-data-to-risk-assessment"></a>Flux du processus de journalisation : des données brutes à l’évaluation des risques
 
