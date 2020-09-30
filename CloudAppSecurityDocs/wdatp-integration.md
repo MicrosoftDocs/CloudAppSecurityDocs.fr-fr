@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 84aed2a0a5fc96ee3c8ca06723fe3ee0028bf275
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 2f267febaa980964b26685fb7aa6d64af08a607a
+ms.sourcegitcommit: 9aae0f85debf0c9b8c3e26770c0c285ac251c008
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90878416"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91570956"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-integration-with-microsoft-cloud-app-security"></a>Intégration de Microsoft Defender-protection avancée contre les menaces avec Microsoft Cloud App Security
 
@@ -102,7 +102,7 @@ Comme avec n’importe quelle autre source Cloud Discovery, vous pouvez exporter
 >
 > - Microsoft Defender ATP transfère les données à Cloud App Security dans des segments de environ 4 Mo (environ 4000 transactions de point de terminaison)
 > - Si la limite de 4 Mo n’est pas atteinte dans un délai de 1 heure, Microsoft Defender ATP signale toutes les transactions effectuées au cours de la dernière heure.
-> - Si l’appareil de point de terminaison se trouve derrière un proxy direct, les données de trafic ne seront pas visibles par Microsoft Defender ATP et ne seront donc pas incluses dans les rapports de Cloud Discovery. Pour plus d’informations, consultez surveillance de la [connexion réseau derrière le proxy direct](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/MDATP-Monitoring-network-connection-behind-forward-proxy-Public/ba-p/758274).
+> - Si l’appareil de point de terminaison se trouve derrière un proxy direct, les données de trafic ne seront pas visibles par Microsoft Defender ATP et ne seront donc pas incluses dans les rapports de Cloud Discovery. Pour obtenir un autre moyen d’afficher ce trafic, consultez surveillance de la [connexion réseau derrière le proxy direct](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/MDATP-Monitoring-network-connection-behind-forward-proxy-Public/ba-p/758274).
 
 ## <a name="investigate-device-network-events-in-microsoft-defender-atp"></a>Examiner les événements réseau de l’appareil dans Microsoft Defender ATP
 
