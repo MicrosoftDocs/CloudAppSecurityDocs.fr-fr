@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0964983a0e91ff7ee0b8fb33c0f42d6f76c08c1e
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: d180b65125316fe4f5f630166002d0675589ae43
+ms.sourcegitcommit: d44833cbc0cb264a244819b8a3be67aa142d2cc8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880316"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91614476"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Protéger les applications avec le Contrôle d’accès conditionnel aux applications Microsoft Cloud App Security
 
@@ -29,7 +29,7 @@ Dans le lieu de travail actuel, il est souvent difficile de savoir ce qui se pas
 
 > [!NOTE]
 >
-> - Pour utiliser Cloud App Security contrôle d’application par accès conditionnel, vous avez besoin d’une [licence Azure Active Directory P1](https://azure.microsoft.com/pricing/details/active-directory/)ou de la licence requise par votre solution IDP, ainsi que d’une licence Cloud App Security.
+> - En plus d’une licence Cloud App Security valide, pour utiliser Cloud App Security contrôle d’application par accès conditionnel, vous avez également besoin d’une [licence Azure Active Directory P1](https://azure.microsoft.com/pricing/details/active-directory/), ou de la licence requise par votre solution IDP, ainsi que d’une licence Cloud App Security.
 
 ## <a name="how-it-works"></a>Fonctionnement
 
