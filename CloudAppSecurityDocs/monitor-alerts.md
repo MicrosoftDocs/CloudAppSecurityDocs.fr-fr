@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6bb43764f9a8e200b79a81dfe0dc97db557b6fe0
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: e5effef1c69cf3a8ce44218a8838bbb4d0ef1614
+ms.sourcegitcommit: b173d24dba412e81801c498cc0c3623ad9e31601
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90878024"
+ms.lasthandoff: 10/11/2020
+ms.locfileid: "91941567"
 ---
 # <a name="monitor-alerts-in-cloud-app-security"></a>Surveiller les alertes dans Cloud App Security
 
@@ -45,6 +45,37 @@ Nous vous incitons à examiner vos alertes. En comprenant le déclenchement des 
   - **Marquez l’alerte comme non lue** si vous avez commencé à vous y intéresser et que vous poursuivrez vos recherches plus tard.
   - **Ajustez la stratégie** correspondant à l’alerte pour améliorer les prochaines correspondances d’alerte.
   - La résolution d’une alerte vous donne la possibilité d’entrer un commentaire et d’**Envoyer des commentaires à l’équipe de Cloud App Security**.
+
+## <a name="deployment-of-our-enhanced-alert-monitoring-and-management-experience"></a>Déploiement de notre expérience de gestion et de surveillance des alertes améliorée
+
+Dans le cadre de nos améliorations constantes de la surveillance et de la gestion des alertes, la page Cloud App Security des alertes a été améliorée en fonction de vos commentaires. Dans l’expérience améliorée, les États **résolus** et **rejetés** sont remplacés par l’état **fermé** , et les alertes fermées ont l’un des types de résolution suivants :
+
+- **Vrai positif**: une alerte sur une activité malveillante confirmée
+- **Bénigne**: alerte sur une activité suspecte mais pas malveillante, comme un test de pénétration ou une autre action suspecte autorisée
+- **Faux positif**: alerte sur une activité non malveillante
+
+> [!NOTE]
+> L’expérience améliorée s’applique uniquement aux nouvelles alertes et n’affecte pas l’état des alertes existantes (héritées) qui ont été **résolues** ou **ignorées**.
+
+![Page alertes améliorées](media/monitor-alerts/enhanced-alerts.png)
+
+### <a name="enhanced-alert-monitoring"></a>Analyse améliorée des alertes
+
+Dans la page alertes améliorées, la colonne **État** indique si une alerte est ouverte ou fermée et que la colonne **type de résolution** affiche le type de résolution utilisé lors de la fermeture d’une alerte. Vous pouvez utiliser le filtre d' **État** pour vous aider à identifier les alertes ouvertes ou fermées, puis à utiliser le filtre **avancé** , vous pouvez examiner plus en détail les alertes fermées par **type de résolution** à l’aide des types de résolution améliorés et hérités.
+
+![Page alertes améliorées avec filtre avancé](media/monitor-alerts/enhanced-alerts-advanced-filter.png)
+
+### <a name="enhanced-alert-management"></a>Gestion améliorée des alertes
+
+Lors de la fermeture des alertes, choisissez l’une des options de résolution suivantes :
+
+- **Fermer comme vrai positif**: si l’activité est confirmée comme malveillante
+- **Fermer comme Bénin**: si l’activité est suspecte, mais pas comme une activité malveillante, comme un test de pénétration ou une autre action suspecte autorisée
+- **Fermer comme faux positif**: si l’activité est confirmée comme non malveillante
+
+Dans la fenêtre contextuelle qui s’affiche, indiquez la raison de la fermeture de l’alerte et renseignez le reste des détails en fonction des besoins, puis cliquez sur **Fermer l’alerte**.
+
+![Fenêtre contextuelle des alertes améliorées](media/monitor-alerts/enhanced-alerts-close-resolution.png)
 
 ## <a name="built-in-alerts"></a>Alertes intégrées
 
