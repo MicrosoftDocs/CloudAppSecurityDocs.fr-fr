@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 10/12/2020
+ms.date: 10/13/2020
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 804380fd242acd33f45176da0d1394c79ca5f24c
-ms.sourcegitcommit: 2602cae9e6b31c549e5232762beb136843c0d011
+ms.openlocfilehash: b95b38aadc1d8794b1c8cab927e2735415172421
+ms.sourcegitcommit: 56d63e09b48bb9d34218b30f1776e25499517e30
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91947062"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91997098"
 ---
 # <a name="manage-admin-access"></a>Gérer l’accès administrateur
 
@@ -58,7 +58,9 @@ Par défaut, les rôles d’administrateur Office 365 et [Azure Active Directory
 > [!NOTE]
 > Les rôles Office 365 et Azure AD ne sont pas répertoriés dans la page **gérer l’accès administrateur** .
 
-En outre, les Cloud App Security rôles d’administrateur spécifiques suivants peuvent être configurés dans le portail Cloud App Security :
+## <a name="built-in-cloud-app-security-admin-roles"></a>Rôles d’administrateur Cloud App Security intégrés
+
+Les Cloud App Security rôles d’administrateur spécifiques suivants peuvent être configurés dans le portail Cloud App Security :
 
 - **Administrateur d’application/d’instance :** Dispose d’autorisations complètes ou en lecture seule pour toutes les données de Cloud App Security qui traitent exclusivement de l’application ou de l’instance spécifique d’une application sélectionnée. Par exemple, vous accordez à un utilisateur l’autorisation d’administrateur sur votre instance de Box European. L’administrateur verra uniquement les données qui sont liées à l’instance de Box European, qu’il s’agisse de fichiers, d’activités, de stratégies ou d’alertes :
 
@@ -111,6 +113,9 @@ En outre, les Cloud App Security rôles d’administrateur spécifiques suivants
   - Recommandations de sécurité pour les plateformes Cloud-aucune autorisation
 
 - **Cloud Discovery l’administrateur du rapport :** Dispose des autorisations pour afficher toutes les données dans Cloud App Security qui traitent exclusivement des rapports Cloud Discovery spécifiques sélectionnés. Par exemple, vous pouvez accorder une autorisation d’administrateur à un rapport continu à partir de Microsoft Defender ATP. L’administrateur de la découverte verra uniquement les données de Cloud Discovery relatives à cette source de données et au catalogue d’applications. Cet administrateur n’aura pas accès aux pages des **activités**, des **fichiers**ou des **recommandations de sécurité** et un accès limité aux stratégies.
+
+> [!NOTE]
+> Les rôles d’administrateur de Cloud App Security intégrés fournissent uniquement des autorisations d’accès à Cloud App Security.
 
 ## <a name="override-admin-permissions"></a>Remplacer les autorisations d’administrateur
 
