@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: f9d29046b0a63b89926d3ba95bab75aba5964cad
-ms.sourcegitcommit: 75cdc376a0aea79dc7f339af52a90f0ec6dfc526
+ms.openlocfilehash: b5efb0ebc30167f98c5361dbc037ef139836889f
+ms.sourcegitcommit: 52875173d3528cc8ae1121cf9f3acde2126d9e52
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88514352"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91990830"
 ---
 # <a name="troubleshooting-access-and-session-controls"></a>Résolution des problèmes de contrôles d’accès et de session
 
@@ -25,7 +25,7 @@ Cet article fournit aux administrateurs des conseils sur la façon d’examiner 
 Avant de continuer, assurez-vous que votre environnement répond aux conditions générales minimales suivantes pour les contrôles d’accès et de session.
 
 - **Licence**: Vérifiez que vous disposez d’une [licence](https://aka.ms/mcaslicensing)valide.
-- Authentification **unique (SSO)**: les applications doivent être configurées avec l’une des solutions SSO prises en charge.
+- **Sign-On unique (SSO)**: les applications doivent être configurées avec l’une des solutions SSO prises en charge.
   - Azure Active Directory (Azure AD) à l’aide de SAML 2,0 ou OpenID Connect 2,0
   - IdP tiers utilisant SAML 2,0
 - **Prise en charge des navigateurs**: les contrôles de session sont disponibles pour les sessions basées sur un navigateur sur les navigateurs pris en charge suivants : Microsoft Edge (dernière version), Google Chrome (dernière version), Mozilla Firefox (dernière version) ou Apple Safari (dernière version)
@@ -67,7 +67,7 @@ Quand vous configurez en premier lieu des contrôles d’accès et de session Cl
     > - Cloud App Security exploite les protocoles TLS (Transport Layer Security) 1.2 + pour fournir un chiffrement optimal. Les applications clientes natives et les navigateurs qui ne prennent pas en charge TLS 1.2 + ne sont pas accessibles lorsqu’ils sont configurés avec le contrôle de session. Toutefois, les applications SaaS qui utilisent TLS 1.1 ou une version antérieure apparaissent dans le navigateur comme utilisant TLS 1.2+ lorsqu’elles sont configurées avec Cloud App Security.
     > - Alors que les contrôles de session sont créés pour fonctionner avec n’importe quel navigateur sur n’importe quelle plateforme principale sur tout système d’exploitation, nous prenons en charge Microsoft Edge (dernière version), Google Chrome (dernière version), Mozilla Firefox (dernière version) ou Apple Safari (dernière version). L’accès aux applications mobiles et de bureau peut également être bloqué ou autorisé.
 
-    | Browser | Étapes |
+    | Navigateur | Étapes |
     |---|---|
     | Microsoft Internet Explorer | 1. Ouvrez Internet Explorer<br />2. Sélectionnez **Outils**  >  **Options Internet**  >  onglet**avancé**<br />3. sous **sécurité**, sélectionnez **TLS 1,2**<br />4. Sélectionnez **appliquer**, puis cliquez sur **OK** .<br />5. Redémarrez votre navigateur et vérifiez que vous pouvez accéder à l’application |
     | Chrome Microsoft Edge/Edge | 1. Ouvrez la recherche à partir de la barre des tâches et recherchez « Options Internet »<br />2. sélectionner les **Options Internet**<br />3. sous **sécurité**, sélectionnez **TLS 1,2**<br />4. Sélectionnez **appliquer**, puis cliquez sur **OK** .<br />5. Redémarrez votre navigateur et vérifiez que vous pouvez accéder à l’application |
@@ -188,12 +188,12 @@ Le mécanisme d’identification des appareils peut exiger une authentification 
 
 Si vous rencontrez le certificat client qui s’ouvre après l’ouverture d’un nouvel onglet, cela peut être dû à des paramètres masqués dans les **Options Internet**.
 
-| Browser | Étapes |
+| Navigateur | Étapes |
 |---|---|
 | Microsoft Internet Explorer | 1. Ouvrez Internet Explorer<br />2. Sélectionnez **Outils**  >  **Options Internet**  >  onglet**avancé**<br />3. sous **sécurité**, sélectionnez **ne pas demander la sélection d’un certificat client lorsqu’il n’existe qu’un seul certificat**<br />4. Sélectionnez **appliquer**, puis cliquez sur **OK** .<br />5. Redémarrez votre navigateur et vérifiez que vous pouvez accéder à l’application sans les invites supplémentaires |
-| Chrome Microsoft Edge/Edge | 1. Ouvrez la recherche à partir de la barre des tâches et recherchez « Options Internet »<br />2. sélectionner les **Options Internet**<br />3. sous **sécurité**, sélectionnez **ne pas demander la sélection d’un certificat client lorsqu’il n’existe qu’un seul certificat**<br />4. Sélectionnez **appliquer**, puis cliquez sur **OK** .<br />5. Redémarrez votre navigateur et vérifiez que vous pouvez accéder à l’application sans les invites supplémentaires |
+| Chrome Microsoft Edge/Edge | 1. Ouvrez la recherche à partir de la barre des tâches et recherchez « Options Internet »<br />2. sélectionner les **Options Internet**<br />3. Sélectionnez **sécurité**, sélectionnez **Intranet local**, puis cliquez sur **personnaliser le niveau**<br />4. sous **divers**  >  ,**ne pas demander la sélection du certificat client lorsqu’il n’existe qu’un seul certificat**, sélectionnez **Désactiver** .<br />5. cliquez sur **OK** pour fermer la boîte de dialogue Personnaliser le niveau<br />6. cliquez sur **appliquer**, puis sélectionnez **OK** pour fermer options Internet.<br />7. Redémarrez votre navigateur et vérifiez que vous pouvez accéder à l’application sans les invites supplémentaires |
 
-<a name="device-identification-additional-considerations"></a>
+<a name="device-identification-additional-considerations"></a>s
 
 #### <a name="additional-considerations"></a>Considérations supplémentaires
 
@@ -382,7 +382,7 @@ Dans les stratégies de session, lors de l’utilisation du type de contrôle de
 
 **Étapes recommandées**
 
-1. Si l’action de **protection** n’est pas disponible ou est grisée, vérifiez que vous disposez de la licence Premium P1 de l’Azure information protection (AIP). Pour plus d’informations, consultez [Intégration d’Azure Information Protection](azip-integration.md).
+1. Si l’action de **protection** n’est pas disponible ou est grisée, vérifiez que vous disposez de la licence Premium P1 de l’Azure information protection (AIP). Pour plus d’informations, consultez [Azure Information Protection integration](azip-integration.md) (Intégration d’Azure Information Protection).
 1. Si l’action de **protection** est disponible, mais ne voit pas les étiquettes appropriées.
     1. Dans Cloud App Security, dans la barre de menus, cliquez sur paramètres roue dentée, sélectionnez **Azure information protection**, puis vérifiez que l’intégration aip est activée.
     1. Pour les étiquettes Office, dans le portail AIP, assurez-vous que l' **étiquetage unifié** est sélectionné.
