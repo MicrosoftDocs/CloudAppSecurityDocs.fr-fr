@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 07/09/2020
+ms.date: 10/14/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d180b65125316fe4f5f630166002d0675589ae43
-ms.sourcegitcommit: d44833cbc0cb264a244819b8a3be67aa142d2cc8
+ms.openlocfilehash: f9b273f2e89bd3cff380fbdcd2c183827f58f903
+ms.sourcegitcommit: 5041a8bfae9c9a1a3425c0a0fd75ac60ed1fe9cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91614476"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92053844"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Protéger les applications avec le Contrôle d’accès conditionnel aux applications Microsoft Cloud App Security
 
@@ -144,7 +144,7 @@ Alors que les contrôles de session sont créés pour fonctionner avec n’impor
 > - Cloud App Security s’appuie sur les protocoles TLS (Transport Layer Security) 1.2 + pour offrir un chiffrement optimal. Les applications clientes natives et les navigateurs qui ne prennent pas en charge TLS 1.2 + ne sont pas accessibles lorsqu’ils sont configurés avec le contrôle de session. Toutefois, les applications SaaS qui utilisent TLS 1.1 ou une version antérieure apparaissent dans le navigateur comme utilisant TLS 1.2+ lorsqu’elles sont configurées avec Cloud App Security.
 > - Pour appliquer des contrôles de session à portal.office.com, vous devez intégrer Microsoft 365 Centre d’administration. Pour plus d’informations sur l’intégration des applications, consultez [intégration et déploiement de contrôle d’application par accès conditionnel pour n’importe quelle application](proxy-deployment-any-app.md).
 
-<a name="featured-apps"></a>Toute application Web configurée à l’aide des [protocoles d’authentification mentionnés précédemment](#supported-apps-and-clients) peut être intégrée pour fonctionner avec les contrôles d’accès et de session. En outre, les applications suivantes sont proposées par Cloud App Security et sont déjà intégrées et prêtes à être utilisées dans n’importe quel locataire :
+<a name="featured-apps"></a>Toute application Web configurée à l’aide des [protocoles d’authentification mentionnés précédemment](#supported-apps-and-clients) peut être intégrée pour fonctionner avec les contrôles d’accès et de session. En outre, les applications suivantes sont déjà intégrées aux contrôles d’accès et de session :
 
 - AWS
 - DevOps Azure (Visual Studio Team Services)
@@ -175,9 +175,9 @@ Alors que les contrôles de session sont créés pour fonctionner avec n’impor
 - Workplace by Facebook
 - Yammer (préversion)
 
-### <a name="office-365-featured-apps"></a><a name="O365-apps"></a>Applications Office 365 proposées
+### <a name="office-365-cloud-app-security-featured-apps"></a><a name="O365-apps"></a>Office 365 Cloud App Security applications proposées
 
-La liste suivante répertorie les applications proposées qui sont prises en charge dans Office 365 Cloud App Security. Pour utiliser ces applications avec Cloud App Security, vous devez disposer d’une licence Office 365 E5.
+La liste suivante répertorie les applications proposées qui sont prises en charge dans [Office 365 Cloud App Security](editions-cloud-app-security-o365.md).
 
 - Exchange Online
 - OneDrive Entreprise
