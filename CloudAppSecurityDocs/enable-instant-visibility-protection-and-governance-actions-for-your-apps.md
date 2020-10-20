@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2e23caa4e0ca986bb17d9e5014b328b214d0aeef
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 729dec5de9bb349927e3cd60f331f61b31b65864
+ms.sourcegitcommit: 812cb1e24ec18de2c4818970f3042ac06acea14c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880208"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "92211998"
 ---
 # <a name="connect-apps"></a>Connecter des applications
 
@@ -99,13 +99,13 @@ Pour utiliser des connecteurs d’applications, vous devez vérifier que vous av
 | Azure | | Administrateur général |
 | AWS | | Utilisateur récemment créé |
 | Box | Entreprise | Il est fortement recommandé de vous connecter à Box en tant qu’administrateur. Si vous vous connectez en tant que coadministrateur, vous obtiendrez uniquement une visibilité partielle des données. Si vous vous connectez en tant que coadministrateur, sélectionnez toutes les autorisations. |
-| Dropbox | Business/Entreprises | Administrateur |
+| Dropbox | Business/Entreprises | Admin |
 | GitHub | GitHub Enterprise Cloud | Propriétaire |
 | GCP | | Consultez les [conditions préalables Connect GCP](connect-google-gcp-to-microsoft-cloud-app-security.md#prerequisites) |
 | G Suite | Compte G Suite Business ou Entreprise<br /><br />G Suite Enterprise (au minimum) | Super administrateur |
 | Office 365 | | Administrateur général |
-| Okta | Enterprise (pas la version d’essai) | Administrateur |
-| Salesforce | | Administrateur |
+| Okta | Enterprise (pas la version d’essai) | Admin |
+| Salesforce | | Admin |
 | ServiceNow | Eureka et au-dessus | Rôle admin + RestAPI |
 | Webex | | Admin + conformité administrateur |
 | Workday | | Consultez les [conditions préalables Connect](connect-workday-to-microsoft-cloud-app-security.md#prerequisites) de la journée de travail |
@@ -121,6 +121,7 @@ Pour plus d’informations sur le peering public, consultez [Circuits ExpressRou
 >
 > - Avant de désactiver un connecteur d’applications, assurez-vous que les détails de connexion sont disponibles, car vous en aurez besoin si vous souhaitez réactiver le connecteur.
 > - Ces étapes ne peuvent pas être utilisées pour désactiver le connecteur Azure.
+> - Ces étapes ne peuvent pas être utilisées pour désactiver les applications de contrôle d’application par accès conditionnel et les applications de configuration de sécurité.
 
 Pour désactiver les applications connectées :
 

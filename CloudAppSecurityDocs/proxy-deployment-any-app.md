@@ -12,12 +12,12 @@ ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
-ms.openlocfilehash: 6ccaf32072dd012ab694457f7a4fb89a34a01965
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 13505c22de0751041bc42f2891248163a51e6239
+ms.sourcegitcommit: 812cb1e24ec18de2c4818970f3042ac06acea14c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880387"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "92212032"
 ---
 # <a name="onboard-and-deploy-conditional-access-app-control-for-any-app"></a>Intégrer et déployer le Contrôle d’application par accès conditionnel pour tous les types d’applications
 
@@ -87,7 +87,7 @@ Utilisez les étapes suivantes pour créer une stratégie d’accès conditionne
 
 ### <a name="configure-integration-with-other-idp-solutions"></a>Configurer l’intégration à d’autres solutions IdP
 
-Suivez les étapes ci-dessous pour acheminer des sessions d’application d’autres solutions IdP vers Cloud App Security. Pour Azure AD, consultez [configurer l’intégration avec Azure ad](#configure-integration-with-azure-ad).
+Suivez les étapes ci-dessous pour acheminer des sessions d’application d’autres solutions IdP vers Cloud App Security. Pour Azure AD, consultez [configurer l’intégration avec Azure ad](#configure-integration-with-azure-ad). Pour obtenir des exemples de configuration des solutions IdP, consultez [configuration de votre](proxy-idp-examples.md)fournisseur d’identité.
 
 1. Dans Cloud App Security, accédez à **examiner**  >  **applications connectées**  >  **contrôle d’application par accès conditionnel applications**.
 
@@ -141,6 +141,7 @@ Suivez les étapes ci-dessous pour acheminer des sessions d’application d’au
         >
         > - Certains fournisseurs peuvent y faire référence en tant qu' *attributs utilisateur* ou *revendications*.
         > - Lors de la création d’une nouvelle application SAML, le fournisseur d’identité Okta limite les attributs à 1024 caractères. Pour atténuer cette limitation, commencez par créer l’application sans les attributs appropriés. Après avoir créé l’application, modifiez-la, puis ajoutez les attributs appropriés.
+
     1. Vérifiez que l’identificateur de nom est au format d’adresse de messagerie.
     1. Enregistrez vos paramètres.
 1. Sur la page modifications de l' **application** , procédez comme suit, puis cliquez sur **suivant**. Vous aurez besoin des informations de l’étape suivante.
@@ -152,8 +153,8 @@ Suivez les étapes ci-dessous pour acheminer des sessions d’application d’au
 
 1. Dans le portail de votre application, sur les paramètres d’authentification unique, procédez comme suit :
     1. Recommandations Créez une sauvegarde de vos paramètres actuels.
-    1. Dans le champ URL d’authentification unique, entrez l’URL d’authentification unique que vous avez notée précédemment.
-    1. Téléchargez le certificat Cloud App Security SAML que vous avez noté précédemment.
+    1. Dans le champ URL d’authentification unique, entrez l’Cloud App Security URL d’authentification unique que vous avez notée précédemment.
+    1. Téléchargez le certificat SAML Cloud App Security que vous avez téléchargé précédemment.
     > [!NOTE]
     > Une fois vos paramètres enregistrés, toutes les demandes de connexion associées à cette application sont acheminées via contrôle d’application par accès conditionnel.
 
