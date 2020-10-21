@@ -5,17 +5,17 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 03/27/2020
+ms.date: 10/20/2020
 ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 54aa8efa3ad214ff55f3800ffb95126766e549e4
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: c5b927cf1cfaa1038b4b2ab1aa096978ec9c964c
+ms.sourcegitcommit: ee40375712d2cc4090bd4e9cb58df486ec02aa62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880653"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92326940"
 ---
 # <a name="alerts-api"></a>API alertes
 
@@ -26,12 +26,25 @@ L’API Alerts vous fournit des informations sur les risques immédiats identifi
 La liste suivante répertorie les requêtes prises en charge :
 
 - [Lister les alertes](api-alerts-list.md)
-- [Ignorer en bloc](api-alerts-bulk-dismiss.md)
-- [Résoudre en bloc](api-alerts-bulk-resolve.md)
+- [Fermer sans gravité](api-alerts-close-benign.md)
+- [Fermer le faux positif](api-alerts-close-false-positive.md)
+- [Fermer le positif réel](api-alerts-close-true-positive.md)
 - [Récupérer l’alerte](api-alerts-fetch.md)
-- [Ignorer l’alerte](api-alerts-dismiss.md)
 - [Marquer l’alerte comme lue](api-alerts-mark-read.md)
 - [Marquer l’alerte comme non lue](api-alerts-mark-unread.md)
+
+## <a name="deprecated-requests"></a>Demandes déconseillées
+
+Le tableau suivant répertorie les requêtes déconseillées comme obsolètes et les requêtes qui les remplacent.
+
+| Demande obsolète | Alternative |
+| --- | --- |
+| Ignorer en bloc | [Fermer le faux positif](api-alerts-close-false-positive.md) |
+| Résoudre en bloc | [Fermer le positif réel](api-alerts-close-true-positive.md) |
+| Ignorer l’alerte | [Fermer le faux positif](api-alerts-close-false-positive.md) |
+
+> [!NOTE]
+> Les demandes déconseillées ont été mappées à leurs alternatives afin d’éviter toute interruption. Toutefois, si vous utilisez des requêtes obsolètes dans votre environnement, nous vous recommandons de les mettre à jour vers leurs alternatives.
 
 ## <a name="filters"></a>Filtres
 
@@ -49,7 +62,7 @@ Le tableau suivant décrit les filtres pris en charge :
 | entité. fichier | string | EQ, NEQ | Filtrer les alertes liées au fichier spécifié |
 | severity | entier | EQ, NEQ | Filtrez par gravité. Les valeurs possibles incluent :<br /><br />**0**: faible<br />**1**: moyenne<br/>**2**: élevé |
 | resolutionStatus | entier | EQ, NEQ | Filtrer par État de résolution d’alerte, les valeurs possibles sont les suivantes :<br /><br />**0**: ouvrir<br />**1**: ignoré<br />**2**: résolu |
-| read | boolean | eq | Si la valeur est définie sur « true », retourne uniquement les alertes de lecture, si la valeur est « false », retourne des alertes non lues |
+| lire | boolean | eq | Si la valeur est définie sur « true », retourne uniquement les alertes de lecture, si la valeur est « false », retourne des alertes non lues |
 | Date | timestamp | ETL, GTE, plage, lte_ndays, gte_ndays | Filtrer en fonction de l’heure à laquelle une alerte a été déclenchée |
 | resolutionDate | timestamp | ETL, GTE, plage | Filtrer en fonction de l’heure à laquelle une alerte a été résolue |
 | risquent | entier | EQ, NEQ | Filtrer par risque |
