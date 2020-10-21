@@ -5,17 +5,17 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 03/27/2020
+ms.date: 10/21/2020
 ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 027f9df535f3dc660879d622d0658587eef65338
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: e9ce97ebd5a9bb3e57b6ed6d0a54d91ad54d6039
+ms.sourcegitcommit: ce4c0c03292c75a515938433951bdb78270d75a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880589"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92333585"
 ---
 # <a name="initiate-file-upload---cloud-discovery-api"></a>Lancer le chargement de fichiers-API Cloud Discovery
 
@@ -53,6 +53,7 @@ Les types de sources suivants sont actuellement pris en charge :
 - CISCO_SCAN_SAFE
 - CLAVISTER
 - CORRATA
+- CUSTOM_PARSER
 - FORCEPOINT
 - FORCEPOINT_LEEF
 - FORTIGATE
@@ -84,7 +85,9 @@ Les types de sources suivants sont actuellement pris en charge :
 - ZSCALER_QRADAR
 
 > [!NOTE]
-> Si vous ne trouvez pas votre format de fichier, effectuez un téléchargement manuel à l’aide du portail.
+>
+> - Quand vous utilisez un analyseur personnalisé, Cloud App Security utilise l’analyseur personnalisé attaché à la source de données sélectionnée.
+> - Si vous ne trouvez pas votre format de fichier, effectuez un téléchargement manuel à l’aide du portail.
 
 ## <a name="response-parameters"></a>Paramètres de réponse
 
