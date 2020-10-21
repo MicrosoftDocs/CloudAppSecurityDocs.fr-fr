@@ -5,16 +5,16 @@ author: shsagir
 ms.author: shsagir
 ms.service: cloud-app-security
 ms.topic: overview
-ms.date: 11/01/2019
+ms.date: 10/18/2020
 ms.collection: M365-security-compliance
 ms.custom: seodec18
 ms.suite: ems
-ms.openlocfilehash: 32eabdee9ce08102e630b7a7643a162148c17442
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 411d3005a04949b083947a07d0c2a2c493e55f35
+ms.sourcegitcommit: 956139c1dbc47ab6c61b4a1725a174f41de58cae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90881552"
+ms.lasthandoff: 10/18/2020
+ms.locfileid: "92163698"
 ---
 # <a name="microsoft-cloud-app-security-data-security-and-privacy"></a>Sécurité et confidentialité des données Microsoft Cloud App Security
 
@@ -83,10 +83,10 @@ Les données personnelles relatives aux utilisateurs sont dérivées de l’obje
 
 ## <a name="data-location"></a>Emplacement des données
 
-Microsoft Cloud App Security fonctionne dans les centres de données situés aux États-Unis et en Europe (chacune de ces régions constituant une zone géographique). Votre compte d’abonné sera créé dans une zone géographique basée sur le pays ou la région que vous avez choisi(e) lors de votre inscription. Plus précisément, vos données sont stockées dans un centre de données dans la zone géographique la plus proche de cet emplacement.
+Microsoft Cloud App Security fonctionne actuellement dans les centres de données qui se trouvent dans l’Union européenne, au Royaume-Uni et aux États-Unis (chacune de ces régions constituant une zone géographique). Les données client collectées par le service sont stockées au repos comme suit (a) pour les clients dont les locataires sont provisionnés dans l’Union européenne ou au Royaume-Uni, soit dans l’Union européenne soit au Royaume-Uni ; (b) sinon, un centre de données dans la zone géographique qui est la plus proche de là où le locataire Azure Active Directory du client a été provisionné ; ou (c) si Microsoft Cloud App Security utilise un autre service en ligne Microsoft (comme Azure Active Directory ou Azure CDN) pour traiter ces données, la géolocalisation des données sera définie par les règles de stockage des données de cet autre service en ligne.
 
 > [!NOTE]
-> Cloud App Security tire parti des centres de données Azure dans le monde entier pour offrir des performances optimisées grâce à la géolocalisation. Cela signifie que la session d’un utilisateur peut être hébergée en dehors d’une région particulière, en fonction des modèles de trafic et de leur emplacement. Toutefois, pour protéger votre confidentialité, aucune donnée de session n’est stockée dans ces centres de données.
+> Cloud App Security utilise les centres de données Azure dans le monde entier pour offrir des performances optimisées grâce à la géolocalisation. Cela signifie que la session d’un utilisateur peut être hébergée en dehors d’une région particulière, en fonction des modèles de trafic et de leur emplacement. Toutefois, pour protéger votre confidentialité, aucune donnée de session n’est stockée dans ces centres de données.
 
 [En savoir plus sur la confidentialité](https://www\.microsoft\.com/trustcenter/privacy)
 
