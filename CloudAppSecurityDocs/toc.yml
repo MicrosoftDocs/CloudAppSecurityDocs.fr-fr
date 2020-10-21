@@ -21,9 +21,9 @@
   items:
     - name: Mise en route
       href: getting-started-with-cloud-app-security.md
-    - name: meilleures pratiques recommandées.
+    - name: Bonnes pratiques
       href: best-practices.md
-- name: Didacticiels
+- name: Tutoriels
   items:
     - name: Découvrir et gérer Shadow IT
       href: tutorial-shadow-it.md
@@ -183,6 +183,8 @@
           href: proxy-deployment-aad.md
         - name: Intégrer et déployer le contrôle d’application par accès conditionnel pour tous les types d’applications
           href: proxy-deployment-any-app.md
+        - name: Configuration de votre IdP PingOne
+          href: proxy-idp-examples.md
     - name: Examen
       href: investigate.md
       items:
