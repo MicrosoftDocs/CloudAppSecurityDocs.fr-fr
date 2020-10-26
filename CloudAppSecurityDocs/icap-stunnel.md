@@ -15,10 +15,10 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: fd2898fe31d9f282e0893aa0b689f4d86c8f2918
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.sourcegitcommit: ce4c0c03292c75a515938433951bdb78270d75a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
+ms.lasthandoff: 10/26/2020
 ms.locfileid: "90881019"
 ---
 # <a name="external-dlp-integration"></a>Intégration DLP externe
@@ -53,7 +53,7 @@ Pour que Cloud App Security envoie des données via votre stunnel à votre serve
 
 ## <a name="step-1--set-up-icap-server"></a>ÉTAPE 1 : Configurer le serveur ICAP
 
-Configurez un serveur ICAP, en prenant note du numéro de port, et assurez-vous que vous définissez le **mode** sur **blocage**. Le mode blocage définit le serveur ICAP pour qu’il relaie le verdict de classification vers Cloud App Security.
+Configurez un serveur ICAP, en prenant note du numéro de port, et assurez-vous que vous définissez le **mode** sur **blocage** . Le mode blocage définit le serveur ICAP pour qu’il relaie le verdict de classification vers Cloud App Security.
 
 Consultez la documentation de votre produit DLP externe pour obtenir des instructions sur la manière de procéder à cette configuration. Consultez par exemple l’[Annexe A : Configuration du serveur ICAP Forcepoint](#forcepoint) et l’[Annexe B : Guide de déploiement de Symantec](#symantec).
 
@@ -66,9 +66,9 @@ Dans cette étape, vous configurez le stunnel connecté à votre serveur ICAP.
 
 ### <a name="install-stunnel-on-a-server"></a>Installer le stunnel sur un serveur
 
-**Composants requis**
+**Conditions préalables**
 
-- **Un serveur**, Windows Server ou serveur Linux basé sur une distribution majeure.
+- **Un serveur** , Windows Server ou serveur Linux basé sur une distribution majeure.
 
 Consultez le [site web du stunnel](https://www.stunnel.org/index.html) pour plus d’informations sur les types de serveurs qui prennent en charge l’installation d’un stunnel. Si vous utilisez Linux, vous pouvez utiliser le gestionnaire de distribution Linux pour l’installer.
 
@@ -78,7 +78,7 @@ Consultez le [site web du stunnel](https://www.stunnel.org/index.html) pour plus
 
 2. Pendant l’installation, ne créez pas de nouveau certificat auto-signé. Vous créerez un certificat lors d’une étape ultérieure.
 
-3. Cliquez sur **Démarrer le serveur après l’installation**.
+3. Cliquez sur **Démarrer le serveur après l’installation** .
 
 4. Créez un certificat de l’une des façons suivantes :
 
@@ -98,7 +98,7 @@ Consultez le [site web du stunnel](https://www.stunnel.org/index.html) pour plus
 
 7. Concaténez les variables cert.pem et key.pem et enregistrez-les dans le fichier : `type cert.pem key.pem >> stunnel-key.pem`
 
-8. [Téléchargez la clé publique](https://adaprodconsole.blob.core.windows.net/icap/publicCert.pem) et enregistrez-la à cet emplacement **C:\Program Files (x86)\stunnel\config\MCASca.pem**.
+8. [Téléchargez la clé publique](https://adaprodconsole.blob.core.windows.net/icap/publicCert.pem) et enregistrez-la à cet emplacement **C:\Program Files (x86)\stunnel\config\MCASca.pem** .
 
 9. Ajoutez les règles suivantes pour ouvrir le port dans le pare-feu Windows :
 
@@ -110,7 +110,7 @@ Consultez le [site web du stunnel](https://www.stunnel.org/index.html) pour plus
 
 10. Exécutez `c:\Program Files (x86)\stunnel\bin\stunnel.exe` pour ouvrir l’application de stunnel.
 
-11. Cliquez sur **Configuration**, puis **Modifier la configuration**.
+11. Cliquez sur **Configuration** , puis **Modifier la configuration** .
 
     ![Modifier la configuration de Windows Server](media/stunnel-windows.png)
 
@@ -126,7 +126,7 @@ Consultez le [site web du stunnel](https://www.stunnel.org/index.html) pour plus
     client = no
     ```
 
-13. Enregistrez le fichier, puis cliquez sur **Recharger la configuration**.
+13. Enregistrez le fichier, puis cliquez sur **Recharger la configuration** .
 
 14. Pour vérifier que tout s’exécute comme prévu, à partir d’une invite de commandes, exécutez `netstat -nao  | findstr 11344`
 
@@ -241,46 +241,46 @@ Si le processus n’est toujours pas en cours d’exécution, consultez la [docu
 
 ## <a name="step-3--connect-to-cloud-app-security"></a>ÉTAPE 3 : Se connecter à Cloud App Security
 
-1. Dans Cloud App Security, sous **Paramètres**, sélectionnez **Extensions de sécurité**, puis l’onglet **DLP externe**.
+1. Dans Cloud App Security, sous **Paramètres** , sélectionnez **Extensions de sécurité** , puis l’onglet **DLP externe** .
 
 2. Cliquez sur le signe plus pour ajouter une nouvelle connexion.
 
-3. Dans l’Assistant **Ajouter une nouvelle DLP externe**, indiquez un **Nom de connexion** (par exemple, My Forcepoint connector) qui est utilisé pour identifier le connecteur.
+3. Dans l’Assistant **Ajouter une nouvelle DLP externe** , indiquez un **Nom de connexion** (par exemple, My Forcepoint connector) qui est utilisé pour identifier le connecteur.
 
-4. Sélectionnez le **type de connexion**:
-    - **Symantec Vontu** : utiliser l’intégration personnalisée des appliances DLP Vontu.
-    - **DLP Forcepoint** : utiliser l’intégration personnalisée des appliances DLP Forcepoint.
-    - **ICAP générique – REQMOD** : utiliser d’autres appliances DLP qui utilisent [Modification de la demande](https://tools.ietf.org/html/rfc3507).
-    - **ICAP générique – RESPMOD** : utiliser d’autres appliances DLP qui utilisent [Modification de la réponse](https://tools.ietf.org/html/rfc3507).
+4. Sélectionnez le **type de connexion** :
+    - **Symantec Vontu**  : utiliser l’intégration personnalisée des appliances DLP Vontu.
+    - **DLP Forcepoint**  : utiliser l’intégration personnalisée des appliances DLP Forcepoint.
+    - **ICAP générique – REQMOD**  : utiliser d’autres appliances DLP qui utilisent [Modification de la demande](https://tools.ietf.org/html/rfc3507).
+    - **ICAP générique – RESPMOD**  : utiliser d’autres appliances DLP qui utilisent [Modification de la réponse](https://tools.ietf.org/html/rfc3507).
 
         ![Type de connexion ICAP Cloud App Security](media/icap-wizard1.png)
 
-5. Accédez à pour sélectionner le certificat public que vous avez généré au cours des étapes précédentes, « CERT. pem », pour vous connecter à votre stunnel. Cliquez sur **Suivant**.
+5. Accédez à pour sélectionner le certificat public que vous avez généré au cours des étapes précédentes, « CERT. pem », pour vous connecter à votre stunnel. Cliquez sur **Suivant** .
 
    > [!NOTE]
    > Il est vivement recommandé de cocher la case **Utiliser ICAP sécurisé** pour configurer une passerelle stunnel chiffrée. Si vous n’avez pas de serveur stunnel ou que vous effectuez des tests, vous pouvez décocher cette case pour une intégration directe à votre serveur DLP.
 
-6. Dans l’écran **Configuration du serveur**, indiquez **l’Adresse IP** et le **Port** du serveur stunnel que vous avez configuré à l’étape 2. Pour des raisons d’équilibrage de charge, vous pouvez configurer l’**Adresse IP** et le **Port** d’un serveur supplémentaire. Les adresses IP fournies doivent être les adresses IP statiques externes de vos serveurs.
+6. Dans l’écran **Configuration du serveur** , indiquez **l’Adresse IP** et le **Port** du serveur stunnel que vous avez configuré à l’étape 2. Pour des raisons d’équilibrage de charge, vous pouvez configurer l’ **Adresse IP** et le **Port** d’un serveur supplémentaire. Les adresses IP fournies doivent être les adresses IP statiques externes de vos serveurs.
 
     ![Cloud App Security l’adresse IP et le port de connexion ICAP](media/icap-wizard2.png)
 
-7. Cliquez sur **Suivant**. Cloud App Security teste la connectivité au serveur que vous avez configuré. Si vous recevez une erreur, passez en revue les instructions et les paramètres réseau. Une fois connecté, vous pouvez cliquer sur **Quitter**.
+7. Cliquez sur **Suivant** . Cloud App Security teste la connectivité au serveur que vous avez configuré. Si vous recevez une erreur, passez en revue les instructions et les paramètres réseau. Une fois connecté, vous pouvez cliquer sur **Quitter** .
 
-8. Maintenant, pour diriger le trafic vers ce serveur DLP externe, lorsque vous créez une **stratégie de fichier** sous méthode d’inspection du **contenu**, sélectionnez la connexion que vous avez créée. En savoir plus sur la [création d’une stratégie de fichier](data-protection-policies.md).
+8. Maintenant, pour diriger le trafic vers ce serveur DLP externe, lorsque vous créez une **stratégie de fichier** sous méthode d’inspection du **contenu** , sélectionnez la connexion que vous avez créée. En savoir plus sur la [création d’une stratégie de fichier](data-protection-policies.md).
 
 ## <a name="appendix-a-forcepoint-icap-server-setup"></a>Annexe A : Configuration du serveur ICAP Forcepoint<a name="forcepoint"></a>
 
 Dans ForcePoint, définissez votre appliance en suivant ces étapes :
 
-1. Dans votre appliance DLP, accédez à **Deployment**  >  **modules du système**de déploiement.
+1. Dans votre appliance DLP, accédez à **Deployment**  >  **modules du système** de déploiement.
 
     ![Déploiement ICAP](media/icap-system-modules.png)
 
-2. Sous l’onglet **Général**, vérifiez que **Serveur ICAP** est **activé** et que le **Port** par défaut a la valeur **1344**. Par ailleurs, sous **Autoriser la connexion à ce serveur ICAP à partir des adresses IP suivantes**, sélectionnez **Toute adresse IP**.
+2. Sous l’onglet **Général** , vérifiez que **Serveur ICAP** est **activé** et que le **Port** par défaut a la valeur **1344** . Par ailleurs, sous **Autoriser la connexion à ce serveur ICAP à partir des adresses IP suivantes** , sélectionnez **Toute adresse IP** .
 
     ![Configuration ICAP](media/icap-ip-address.png)
 
-3. Sous l’onglet HTTP/HTTPS, définissez **Mode** sur **Blocage**.
+3. Sous l’onglet HTTP/HTTPS, définissez **Mode** sur **Blocage** .
 
     ![Blocage ICAP](media/icap-blocking.png)
 
@@ -295,25 +295,25 @@ Comme indiqué ci-dessus, vous devez déployer un serveur de détection dans le 
 Le serveur de détection utilisé par Cloud App Security est un Network Prevent standard pour serveur web. Plusieurs options de configuration doivent être changées :
 
 1. Désactivez le **Mode d’évaluation** :
-    1. Sous **System**  >  **serveurs système et détecteurs**, cliquez sur la cible ICAP.
+    1. Sous **System**  >  **serveurs système et détecteurs** , cliquez sur la cible ICAP.
 
         ![Cible ICAP](media/icap-target.png)
 
-    1. Cliquez sur **Configurer**.
+    1. Cliquez sur **Configurer** .
 
         ![Configurer la cible ICAP](media/configure-icap-target.png)
 
-    1. Désactivez le **mode d’évaluation**.
+    1. Désactivez le **mode d’évaluation** .
 
         ![désactiver la fenêtre contextuelle du mode d’évaluation](media/icap-disable-trial-mode.png)
 
-2. Sous **ICAP**  >  **filtrage de réponse**ICAP, remplacez la valeur **Ignorer les réponses inférieures** à par 1.
+2. Sous **ICAP**  >  **filtrage de réponse** ICAP, remplacez la valeur **Ignorer les réponses inférieures** à par 1.
 
-3. Et ajouter « application/ \* » à la liste de **type </em> inspecter le contenu**.
+3. Et ajouter « application/ \* » à la liste de **type </em> inspecter le contenu** .
 
     ![inspecter le type de contenu](media/icap-inspect-content-type.png)
 
-4. Cliquez sur **Enregistrer**.
+4. Cliquez sur **Enregistrer** .
 
 ### <a name="policy-configuration"></a>Configuration de la stratégie
 
@@ -321,21 +321,21 @@ Cloud App Security prend en charge tous les types de règle de détection inclus
 
 Ajoutez la modification de configuration à votre Vontu :
 
-1. Accédez à **gérer**  >  **Policies**  >  les**règles de réponse** des stratégies, puis cliquez sur Ajouter une règle de **réponse**.
+1. Accédez à **gérer**  >  **Policies**  >  les **règles de réponse** des stratégies, puis cliquez sur Ajouter une règle de **réponse** .
 
     ![ajouter une règle de réponse](media/icap-add-response-rule.png)
 
-2. Vérifiez que **Réponse automatique** est sélectionné et cliquez sur **Suivant**.
+2. Vérifiez que **Réponse automatique** est sélectionné et cliquez sur **Suivant** .
 
     ![réponse automatique](media/icap-automated-response.png)
 
-3. Tapez un nom de règle, par exemple, **Bloquer HTTP/HTTPS**. Sous **actions**, sélectionnez **bloquer http/https** et cliquez sur **Enregistrer**.
+3. Tapez un nom de règle, par exemple, **Bloquer HTTP/HTTPS** . Sous **actions** , sélectionnez **bloquer http/https** et cliquez sur **Enregistrer** .
 
     ![bloquer http](media/icap-block-http.png)
 
 Ajoutez la règle que vous avez créée aux stratégies existantes :
 
-1. Dans chaque stratégie, basculez vers l’onglet **Réponse**.
+1. Dans chaque stratégie, basculez vers l’onglet **Réponse** .
 
 2. Dans la liste déroulante **règle de réponse** , sélectionnez la règle de réponse de bloc que vous avez créée précédemment.
 
