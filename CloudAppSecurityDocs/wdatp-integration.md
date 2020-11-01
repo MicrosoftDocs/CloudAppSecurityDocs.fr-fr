@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 118f0047640b3b062ba5cd66d5601fec99ea8477
-ms.sourcegitcommit: b0ad9e8e6b5668849e1c292c43084480f229d981
+ms.openlocfilehash: 11cba0aa39fc55ba8ce28544bcddc0d82afac467
+ms.sourcegitcommit: a9b26f2ef0db18910ae7cdf7b34e9028bff7b576
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/01/2020
-ms.locfileid: "93147490"
+ms.locfileid: "93147781"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-integration-with-microsoft-cloud-app-security"></a>Intégration de Microsoft Defender-protection avancée contre les menaces avec Microsoft Cloud App Security
 
@@ -102,7 +102,7 @@ Comme avec n’importe quelle autre source Cloud Discovery, vous pouvez exporter
 >
 > - Microsoft Defender pour le point de terminaison transfère les données à Cloud App Security dans des segments de environ 4 Mo (environ 4000 transactions de point de terminaison)
 > - Si la limite de 4 Mo n’est pas atteinte dans un délai de 1 heure, Microsoft Defender for Endpoint signale toutes les transactions effectuées au cours de la dernière heure.
-> - Nous vous recommandons de router les journaux du proxy direct vers Cloud App Security à l’aide du **chargement automatisé des journaux** afin d’obtenir une visibilité complète. Pour obtenir un autre moyen d’afficher ce trafic et d’examiner les URL accessibles par les appareils qui se trouvent derrière le proxy de transfert, consultez surveillance de la [connexion réseau derrière le proxy direct](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/MDATP-Monitoring-network-connection-behind-forward-proxy-Public/ba-p/758274).
+> - Si l’appareil de point de terminaison se trouve derrière un proxy de transfert, les données de trafic ne seront pas visibles par Microsoft Defender pour les points de terminaison et ne seront donc pas incluses dans les rapports de Cloud Discovery. Nous vous recommandons de router les journaux du proxy direct vers Cloud App Security à l’aide du **chargement automatisé des journaux** afin d’obtenir une visibilité complète. Pour obtenir un autre moyen d’afficher ce trafic et d’examiner les URL accessibles par les appareils qui se trouvent derrière le proxy de transfert, consultez surveillance de la [connexion réseau derrière le proxy direct](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/MDATP-Monitoring-network-connection-behind-forward-proxy-Public/ba-p/758274).
 
 ## <a name="investigate-device-network-events-in-microsoft-defender-for-endpoint"></a>Examiner les événements réseau de l’appareil dans Microsoft Defender pour le point de terminaison
 
