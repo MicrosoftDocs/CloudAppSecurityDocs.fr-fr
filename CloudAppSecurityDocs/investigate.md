@@ -15,10 +15,10 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 46a2493d86650a0040eb3a5664b99ed5fc9fe799
-ms.sourcegitcommit: ce4c0c03292c75a515938433951bdb78270d75a3
+ms.sourcegitcommit: b0ad9e8e6b5668849e1c292c43084480f229d981
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
+ms.lasthandoff: 11/01/2020
 ms.locfileid: "90879452"
 ---
 # <a name="investigate"></a>Examiner
@@ -55,13 +55,13 @@ Le marquage des applications comme approuvées ou non est une étape importante 
 
 - Dans la console Cloud App Security, accédez au catalogue d’applications ou aux applications découvertes.
 
-- Dans la liste des applications, sur la ligne contenant l’application à marquer comme approuvée, cliquez sur les trois points à la fin de la ligne ![Points pour marquer comme approuvé](media/sanction-three-dots.png "Marquer en tant que points approuvés") et choisissez **Marquer comme approuvé**.
+- Dans la liste des applications, sur la ligne contenant l’application à marquer comme approuvée, cliquez sur les trois points à la fin de la ligne ![Points pour marquer comme approuvé](media/sanction-three-dots.png "Marquer en tant que points approuvés") et choisissez **Marquer comme approuvé** .
 
     ![Marquer comme approuvé](media/mark-as-sanctioned.png "marquer comme approuvé")
 
 ## <a name="use-the-investigation-tools"></a>Utiliser les outils d’examen
 
-1. Dans le portail Cloud App Security, accédez à **Examiner**, puis consultez le **journal d’activité** et filtrez sur une application spécifique. Vérifiez les points suivants :
+1. Dans le portail Cloud App Security, accédez à **Examiner** , puis consultez le **journal d’activité** et filtrez sur une application spécifique. Vérifiez les points suivants :
 
     - Qui accède à votre environnement cloud ?
 
@@ -75,7 +75,7 @@ Le marquage des applications comme approuvées ou non est une étape importante 
 
     - Les échecs de connexion proviennent-ils d’adresses IP attendues ?
 
-2. Accédez à **Examiner**, **Fichiers**, puis vérifiez les points suivants :
+2. Accédez à **Examiner** , **Fichiers** , puis vérifiez les points suivants :
 
     - Combien de fichiers sont partagés publiquement pour permettre à toute personne d’y accéder sans aucun lien ?
 
@@ -85,7 +85,7 @@ Le marquage des applications comme approuvées ou non est une étape importante 
 
     - Certains fichiers partagés le sont-ils avec le compte personnel de quelqu’un ?
 
-3. Accédez à **Examiner**, **Utilisateurs et comptes**, puis vérifiez les points suivants :
+3. Accédez à **Examiner** , **Utilisateurs et comptes** , puis vérifiez les points suivants :
 
     - Des comptes ont-ils été inactifs dans un service particulier pendant une longue période de temps ? Pouvez-vous révoquer la licence de cet utilisateur pour ce service ?
 
@@ -95,9 +95,9 @@ Le marquage des applications comme approuvées ou non est une étape importante 
 
     - Voulez-vous révoquer l’autorisation d’un utilisateur pour une application spécifique ou obliger un utilisateur spécifique à effectuer une authentification multifacteur ?
 
-    - Vous pouvez explorer le compte de l’utilisateur en cliquant sur les trois points à la fin de la ligne du compte de l’utilisateur, et en sélectionnant une action à effectuer. Vous pouvez **Suspendre l’utilisateur** ou **Supprimer les collaborations de l’utilisateur**. Si l’utilisateur a été importé depuis Azure Active Directory, vous pouvez également cliquer sur **Paramètres du compte Azure AD** pour accéder facilement aux fonctionnalités d’administration avancée de l’utilisateur. Exemples de fonctionnalités d’administration : administration de groupes, MFA, détails relatifs aux connexions de l’utilisateur et blocage de la connexion.
+    - Vous pouvez explorer le compte de l’utilisateur en cliquant sur les trois points à la fin de la ligne du compte de l’utilisateur, et en sélectionnant une action à effectuer. Vous pouvez **Suspendre l’utilisateur** ou **Supprimer les collaborations de l’utilisateur** . Si l’utilisateur a été importé depuis Azure Active Directory, vous pouvez également cliquer sur **Paramètres du compte Azure AD** pour accéder facilement aux fonctionnalités d’administration avancée de l’utilisateur. Exemples de fonctionnalités d’administration : administration de groupes, MFA, détails relatifs aux connexions de l’utilisateur et blocage de la connexion.
 
-4. Accédez à **Investiguer**, **Applications connectées**, puis sélectionnez une application. Le tableau de bord Application s’ouvre et vous donne des informations. Vous pouvez utiliser les onglets en haut pour vérifier :
+4. Accédez à **Investiguer** , **Applications connectées** , puis sélectionnez une application. Le tableau de bord Application s’ouvre et vous donne des informations. Vous pouvez utiliser les onglets en haut pour vérifier :
 
     - Quels types d’appareils vos utilisateurs utilisent-ils pour se connecter à l’application ?
 
@@ -133,15 +133,15 @@ Le marquage des applications comme approuvées ou non est une étape importante 
 
 Partons du principe que vous pensez ne pas avoir d’accès à votre environnement cloud via des adresses IP présentant un risque. Prenons l’exemple de Tor. Vous créez cependant une stratégie pour les adresses IP à risques simplement pour vous en assurer :
 
-1. Dans le portail, accédez à **Contrôle**, puis choisissez **Modèles**.
+1. Dans le portail, accédez à **Contrôle** , puis choisissez **Modèles** .
 
-2. Choisissez la **stratégie d’activité** correspondant au **Type**.
+2. Choisissez la **stratégie d’activité** correspondant au **Type** .
 
-3. À la fin de la ligne **Connexion depuis une adresse IP à risque**, choisissez le signe plus (**+**) pour créer une stratégie.
+3. À la fin de la ligne **Connexion depuis une adresse IP à risque** , choisissez le signe plus ( **+** ) pour créer une stratégie.
 
 4. Changez le nom de la stratégie pour pouvoir l’identifier.
 
-5. Sous **Activités remplissant toutes les conditions suivantes**, choisissez **+** pour ajouter un filtre. Faites défiler jusqu’à **Balises IP**, puis choisissez **Tor**.
+5. Sous **Activités remplissant toutes les conditions suivantes** , choisissez **+** pour ajouter un filtre. Faites défiler jusqu’à **Balises IP** , puis choisissez **Tor** .
 
     ![Exemple de stratégie pour les adresses IP à risques](media/example-policy-risky-ips.png "exemple de stratégie, adresses IP risquées")
 
