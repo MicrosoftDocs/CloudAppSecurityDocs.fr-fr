@@ -9,12 +9,12 @@ ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4860dc37a2d0ad8fab903ec852e5e21074672a81
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 92a02c1810c427de10719193bd0b75249c9e6c21
+ms.sourcegitcommit: e711727f2f00ee3b54e08337a5040449e352ca46
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90877825"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "93186075"
 ---
 # <a name="threat-protection-policies"></a>Stratégies de protection contre les menaces
 
@@ -71,11 +71,11 @@ Détectez quand un utilisateur, qui est en congé non payé et ne doit pas être
 
 1. Dans l’écran [groupes d’utilisateurs](user-groups.md) , cliquez sur créer un groupe d' **utilisateurs** et importez le groupe de Azure ad approprié.
 
-2. Dans la page **stratégies** , créez une nouvelle **stratégie d’activité**.
+2. Dans la page **stratégies** , créez une nouvelle **stratégie d’activité** .
 
 3. Définissez le **groupe d’utilisateurs** de filtre sur le nom des groupes d’utilisateurs que vous avez créés dans Azure AD pour les utilisateurs de congé sans paiement.
 
-4. Facultatif : définissez les actions de **gouvernance** à effectuer sur les fichiers lorsqu’une violation est détectée. Les actions de gouvernance disponibles varient d’un service à l’autre. Vous pouvez choisir **suspendre l’utilisateur**.
+4. Facultatif : définissez les actions de **gouvernance** à effectuer sur les fichiers lorsqu’une violation est détectée. Les actions de gouvernance disponibles varient d’un service à l’autre. Vous pouvez choisir **suspendre l’utilisateur** .
 
 5. Créez la stratégie de fichier.
 
@@ -89,11 +89,11 @@ Vous devez disposer d’au moins une application connectée à l’aide de [conn
 
 ### <a name="steps"></a>Étapes
 
-1. Dans la page **stratégies** , créez une nouvelle **stratégie d’activité**.
+1. Dans la page **stratégies** , créez une nouvelle **stratégie d’activité** .
 
-2. Définissez la **balise filtre agent utilisateur** sur égal à **navigateur obsolète** et **système d’exploitation obsolète**.
+2. Définissez la **balise filtre agent utilisateur** sur égal à **navigateur obsolète** et **système d’exploitation obsolète** .
 
-3. Définissez les actions de **gouvernance** à effectuer sur les fichiers lorsqu’une violation est détectée. Les actions de gouvernance disponibles varient d’un service à l’autre. Sous **toutes les applications**, sélectionnez **notifier l’utilisateur**pour que vos utilisateurs puissent agir sur l’alerte et mettre à jour les composants nécessaires.
+3. Définissez les actions de **gouvernance** à effectuer sur les fichiers lorsqu’une violation est détectée. Les actions de gouvernance disponibles varient d’un service à l’autre. Sous **toutes les applications** , sélectionnez **notifier l’utilisateur** pour que vos utilisateurs puissent agir sur l’alerte et mettre à jour les composants nécessaires.
 
 4. Créez la stratégie d’activité.
 
@@ -105,19 +105,19 @@ Détectez les activités d’administration effectuées à partir de et de l’a
 
 - Vous devez disposer d’au moins une application connectée à l’aide de [connecteurs d’application](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
-- Dans la roue dentée paramètres, sélectionnez **plages d’adresses IP** , puis cliquez sur le signe + pour ajouter des plages d’adresses IP pour vos sous-réseaux internes et leurs adresses IP publiques de sortie. Définissez la **catégorie** sur **interne**.
+- Dans la roue dentée paramètres, sélectionnez **plages d’adresses IP** , puis cliquez sur le signe + pour ajouter des plages d’adresses IP pour vos sous-réseaux internes et leurs adresses IP publiques de sortie. Définissez la **catégorie** sur **interne** .
 
 ### <a name="steps"></a>Étapes
 
-1. Dans la page **stratégies** , créez une nouvelle **stratégie d’activité**.
+1. Dans la page **stratégies** , créez une nouvelle **stratégie d’activité** .
 
-2. Affectez à **agir sur** **une seule activité**.
+2. Affectez à **agir sur** **une seule activité** .
 
 3. Définir le filtre **adresse IP** sur **catégorie** est égal à **risqué**
 
 4. Définir l' **activité d’administration** de filtre sur **true**
 
-5. Définissez les actions de **gouvernance** à effectuer sur les fichiers lorsqu’une violation est détectée. Les actions de gouvernance disponibles varient d’un service à l’autre. Sous **toutes les applications**, sélectionnez **notifier l’utilisateur**pour que vos utilisateurs puissent agir sur l’alerte et mettre à jour les composants nécessaires en **copient le responsable de l’utilisateur**.
+5. Définissez les actions de **gouvernance** à effectuer sur les fichiers lorsqu’une violation est détectée. Les actions de gouvernance disponibles varient d’un service à l’autre. Sous **toutes les applications** , sélectionnez **notifier l’utilisateur** pour que vos utilisateurs puissent agir sur l’alerte et mettre à jour les composants nécessaires en **copient le responsable de l’utilisateur** .
 
 6. Créez la stratégie d’activité.
 
@@ -128,17 +128,17 @@ Détecter les activités de compte de service provenant d’une adresse IP non i
 ### <a name="prerequisites"></a>Prérequis
 
 - Vous devez disposer d’au moins une application connectée à l’aide de [connecteurs d’application](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
-- Dans la roue dentée paramètres, sélectionnez **plages d’adresses IP** , puis cliquez sur le signe + pour ajouter des plages d’adresses IP pour vos sous-réseaux internes et leurs adresses IP publiques de sortie. Définissez la **catégorie** sur **interne**.
+- Dans la roue dentée paramètres, sélectionnez **plages d’adresses IP** , puis cliquez sur le signe + pour ajouter des plages d’adresses IP pour vos sous-réseaux internes et leurs adresses IP publiques de sortie. Définissez la **catégorie** sur **interne** .
 
 - Standardisez les conventions d’affectation de noms pour les comptes de service dans votre environnement, par exemple, définissez tous les noms de comptes sur Démarrer avec « SVC ».
 
 ### <a name="steps"></a>Étapes
 
-1. Dans la page **stratégies** , créez une nouvelle **stratégie d’activité**.
+1. Dans la page **stratégies** , créez une nouvelle **stratégie d’activité** .
 
 2. Définissez l' **utilisateur** du filtre sur **Name** , puis **commencez par** et entrez votre convention d’affectation de noms, par exemple SVC.
 
-3. Définissez l' **adresse IP** de filtre **sur catégorie** n’est pas égale à **autre** et **entreprise**.
+3. Définissez l' **adresse IP** de filtre **sur catégorie** n’est pas égale à **autre** et **entreprise** .
 
 4. Définissez les actions de **gouvernance** à effectuer sur les fichiers lorsqu’une violation est détectée. Les actions de gouvernance disponibles varient d’un service à l’autre.
 
@@ -154,9 +154,9 @@ Vous devez disposer d’au moins une application connectée à l’aide de [conn
 
 ### <a name="steps"></a>Étapes
 
-1. Dans la page **stratégies** , créez une nouvelle **stratégie d’activité**.
+1. Dans la page **stratégies** , créez une nouvelle **stratégie d’activité** .
 
-2. Définissez la **balise** les **adresses IP** de filtre sur n’est pas égale **Microsoft Azure**. Cela exclut les activités non interactives basées sur l’ordinateur.
+2. Définissez la **balise** les **adresses IP** de filtre sur n’est pas égale **Microsoft Azure** . Cela exclut les activités non interactives basées sur les appareils.
 
 3. Définissez les **types d’activité** de filtre sur, puis sélectionnez toutes les activités de téléchargement pertinentes.
 
@@ -203,11 +203,11 @@ Vous devez disposer d’au moins une application connectée à l’aide de [conn
 
 ### <a name="steps"></a>Étapes
 
-1. Dans la page **stratégies** , créez une nouvelle **stratégie d’activité**.
+1. Dans la page **stratégies** , créez une nouvelle **stratégie d’activité** .
 
 2. Définissez **agir sur** une **activité répétée** et personnalisez les **activités répétitives minimales** et définissez une **plage** de temps pour la conformité à la stratégie de votre organisation.
 
-3. Affectez à l' **utilisateur** du filtre la valeur **à partir du groupe** égal et sélectionnez tout le groupe d’administration associé en tant qu' **acteur uniquement**.
+3. Affectez à l' **utilisateur** du filtre la valeur **à partir du groupe** égal et sélectionnez tout le groupe d’administration associé en tant qu' **acteur uniquement** .
 
 4. Définissez le **type d’activité** de filtre sur toutes les activités en rapport avec les mises à jour de mot de passe, les modifications et les réinitialisations.
 

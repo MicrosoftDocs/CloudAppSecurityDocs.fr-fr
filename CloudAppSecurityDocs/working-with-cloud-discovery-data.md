@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1406212b95a790aea489f4580fa821206139d5ae
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: a2ea0158a6fb0a1c1b6252a2cf2e14a149d917c0
+ms.sourcegitcommit: e711727f2f00ee3b54e08337a5040449e352ca46
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90878116"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "93185915"
 ---
 # <a name="working-with-discovery-data"></a>Utilisation des données de découverte
 
@@ -33,27 +33,27 @@ Le tableau de bord Cloud Discovery est conçu pour vous donner plus d’informat
 
 La première chose à faire pour obtenir une vue d’ensemble de vos applications Cloud Discovery consiste à examiner les informations suivantes du tableau de bord Cloud Discovery :
 
-1. Examinez d’abord l’utilisation globale des applications cloud dans votre organisation dans la **Vue d’ensemble de l’utilisation générale**.
+1. Examinez d’abord l’utilisation globale des applications cloud dans votre organisation dans la **Vue d’ensemble de l’utilisation générale** .
 
 2. Approfondissez ensuite cet examen pour identifier les **principales catégories** utilisées dans votre organisation pour chacun des différents paramètres d’utilisation. Vous pouvez voir la part d’utilisation des applications approuvées.
 
-3. Allez encore plus loin et affichez toutes les applications d’une catégorie spécifique sous l’onglet **Applications découvertes**.
+3. Allez encore plus loin et affichez toutes les applications d’une catégorie spécifique sous l’onglet **Applications découvertes** .
 
 4. Vous pouvez voir les **principaux utilisateurs et adresses IP sources** pour identifier les utilisateurs qui emploient le plus les applications cloud dans votre organisation.
-5. Vérifiez comment les applications découvertes sont réparties en fonction de l’emplacement géographique (d’après le siège social) dans le **Plan des sièges sociaux des applications**.
+5. Vérifiez comment les applications découvertes sont réparties en fonction de l’emplacement géographique (d’après le siège social) dans le **Plan des sièges sociaux des applications** .
 
-6. Enfin, n’oubliez pas de consulter le score de risque de l’application découverte dans la **vue d’ensemble des risques de l’application**. Vérifiez **l’état des alertes de découverte** pour voir le nombre d’alertes ouvertes à passer en revue.
+6. Enfin, n’oubliez pas de consulter le score de risque de l’application découverte dans la **vue d’ensemble des risques des applications** . Vérifiez **l’état des alertes de découverte** pour voir le nombre d’alertes ouvertes à passer en revue.
 
 ## <a name="exclude-entities"></a>Exclure des entités
 
-Si des utilisateurs, des adresses IP ou des machines génèrent du bruit mais ne sont pas intéressants, ou si des applications ne sont pas pertinentes, vous pouvez exclure leurs données des données Cloud Discovery qui sont analysées. Par exemple, vous pouvez exclure toutes les informations provenant de 127.0.0.1 ou de l’hôte local.
+Si vous avez des utilisateurs système, des adresses IP ou des appareils bruyants, mais non intéressants, ou des applications qui ne sont pas pertinents, vous souhaiterez peut-être exclure leurs données des données Cloud Discovery qui sont analysées. Par exemple, vous pouvez exclure toutes les informations provenant de 127.0.0.1 ou de l’hôte local.
 
 Pour créer une exclusion :
 
-1. Dans le portail, sous l’icône Paramètres, sélectionnez **Paramètres Cloud Discovery**.
-2. Cliquez sur l’onglet **Exclure des entités**.
-3. Choisissez l’onglet **Utilisateurs exclus**, **Adresses IP exclues** ou **Machines exclues**, puis cliquez sur le bouton + pour ajouter votre exclusion.
-4. Ajoutez un alias utilisateur, une adresse IP ou un nom de machine. Nous vous recommandons d’ajouter des informations sur les raisons de l’exclusion.
+1. Dans le portail, sous l’icône Paramètres, sélectionnez **Paramètres Cloud Discovery** .
+2. Cliquez sur l’onglet **Exclure des entités** .
+3. Choisissez l’onglet **utilisateurs exclus** , **adresses IP exclues** ou **périphérique exclu** , puis cliquez sur le bouton + pour ajouter votre exclusion.
+4. Ajoutez un alias d’utilisateur, une adresse IP ou un nom de périphérique. Nous vous recommandons d’ajouter des informations sur les raisons de l’exclusion.
 
     ![exclure l’utilisateur](media/exclude-user.png "exclure l’utilisateur")
 
@@ -61,23 +61,23 @@ Pour créer une exclusion :
 
 Les rapports continus personnalisés vous apportent une plus grande granularité lors de la surveillance des données de journaux Cloud Discovery de votre organisation. En créant des rapports personnalisés, vous pouvez filtrer sur des emplacements géographiques, des réseaux, des sites ou des unités d’organisation spécifiques. Par défaut, seuls les rapports suivants apparaissent dans votre sélecteur de rapports Cloud Discovery :
 
-- Le **rapport global** regroupe toutes les informations du portail provenant de toutes les sources de données que vous avez incluses dans vos journaux.  Le rapport global n’inclut pas de données de Microsoft Defender ATP.
+- Le **rapport global** regroupe toutes les informations du portail provenant de toutes les sources de données que vous avez incluses dans vos journaux.  Le rapport global n’inclut pas les données de Microsoft Defender ATP.
 
 - Le **rapport spécifique à la source de données** affiche uniquement les informations d’une source de données spécifique.
 
 Pour créer un rapport continu :
 
-1. Dans le portail, sous l’icône Paramètres, sélectionnez **Paramètres Cloud Discovery**.
+1. Dans le portail, sous l’icône Paramètres, sélectionnez **Paramètres Cloud Discovery** .
 
-2. Cliquez sur l’onglet **Rapport continu**.
+2. Cliquez sur l’onglet **Rapport continu** .
 
-3. Cliquez sur le bouton **Créer un rapport**.
+3. Cliquez sur le bouton **Créer un rapport** .
 
 4. Entrez un nom de rapport.
 
 5. Sélectionnez les sources de données à inclure (toutes ou certaines).
 
-6. Définissez les filtres souhaités sur les données. Ces filtres peuvent être des **groupes d’utilisateurs**, des **balises d’adresse IP**ou des **plages d’adresses IP**. Pour plus d’informations sur l’utilisation de balises d’adresse IP et de plages d’adresses IP, voir [Organiser les données selon vos besoins](ip-tags.md).
+6. Définissez les filtres souhaités sur les données. Ces filtres peuvent être des **groupes d’utilisateurs** , des **balises d’adresse IP** ou des **plages d’adresses IP** . Pour plus d’informations sur l’utilisation de balises d’adresse IP et de plages d’adresses IP, voir [Organiser les données selon vos besoins](ip-tags.md).
 
     ![créer un rapport continu personnalisé](media/create-custom-continuous-report.png)
 
@@ -96,13 +96,13 @@ Plusieurs raisons peuvent vous amener à supprimer vos données Cloud Discovery.
 
 Pour supprimer des données Cloud Discovery :
 
-1. Dans le portail, sous l’icône Paramètres, sélectionnez **Paramètres Cloud Discovery**.
+1. Dans le portail, sous l’icône Paramètres, sélectionnez **Paramètres Cloud Discovery** .
 
-2. Cliquez sur l’onglet **Supprimer les données**.
+2. Cliquez sur l’onglet **Supprimer les données** .
 
     Il est important d’être sûr de vouloir supprimer les données avant de poursuivre : cette opération ne peut pas être annulée et **toutes** les données Cloud Discovery dans le système sont alors supprimées.
 
-3. Cliquez sur le bouton **Supprimer**.
+3. Cliquez sur le bouton **Supprimer** .
 
     ![supprimer des données](media/delete-data.png "supprimer des données")
 

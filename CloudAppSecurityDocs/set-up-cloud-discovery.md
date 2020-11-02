@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1744a906a89f8627f7d208b85a0ceda09edf0ae5
-ms.sourcegitcommit: b0ad9e8e6b5668849e1c292c43084480f229d981
+ms.openlocfilehash: 706a90ff21e4dde66ed0b221e4fc5c94a7663368
+ms.sourcegitcommit: e711727f2f00ee3b54e08337a5040449e352ca46
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "93147456"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "93186125"
 ---
 # <a name="set-up-cloud-discovery"></a>Configurer Cloud Discovery
 
@@ -31,7 +31,7 @@ Vous pouvez générer les types de rapports suivants :
 
 - **Rapports continus**  : ils analysent tous les journaux qui sont transférés à partir de votre réseau à l’aide de Cloud App Security. Ils offrent une meilleure visibilité sur toutes les données et identifient automatiquement toute utilisation anormale à l’aide du moteur de détection des anomalies Machine Learning ou des stratégies personnalisées que vous définissez. Ces rapports peuvent être créés en vous connectant des façons suivantes :
 
-  - [**Intégration de Microsoft Defender pour les points de terminaison**](wdatp-integration.md): Cloud App Security s’intègre à Defender pour le point de terminaison en mode natif, afin de simplifier le déploiement des Cloud Discovery, d’étendre les fonctionnalités Cloud Discovery au-delà de votre réseau d’entreprise et d’activer l’investigation basée sur les machines.
+  - [**Intégration de Microsoft Defender pour les points de terminaison**](mde-integration.md): Cloud App Security s’intègre à Defender pour le point de terminaison en mode natif, afin de simplifier le déploiement des Cloud Discovery, d’étendre les fonctionnalités Cloud Discovery au-delà de votre réseau d’entreprise et d’activer l’investigation basée sur les machines.
   - [**Collecteur**](discovery-docker.md)de journaux : les collecteurs de journaux vous permettent d’automatiser facilement le chargement du journal à partir de votre réseau. Le collecteur de journaux s’exécute sur votre réseau et reçoit les journaux par le biais de Syslog ou FTP.
   - **Secure Web Gateway (SWG)** : Si vous travaillez avec Cloud App Security et l’un des SWGs suivants, vous pouvez intégrer les produits pour améliorer votre expérience de Cloud Discovery de sécurité. Ensemble, Cloud App Security et SWGs offrent un déploiement transparent de Cloud Discovery, le blocage automatique des applications non approuvées et l’évaluation des risques directement sur le portail de SWG.
     - [Intégration de Zscaler](zscaler-integration.md)

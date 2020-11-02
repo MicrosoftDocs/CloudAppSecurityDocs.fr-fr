@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1542e3c10adcb3df2c58fefb0e2e9e62ca985cb8
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: c3551532dbd9e436369cae913e74a743bfadc8d6
+ms.sourcegitcommit: e711727f2f00ee3b54e08337a5040449e352ca46
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90877988"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "93186152"
 ---
 # <a name="network-requirements"></a>Configuration requise pour le réseau
 
@@ -32,7 +32,7 @@ Certaines exigences stipulées ci-dessous varient en fonction du centre de donn�
 
 Pour savoir à quel centre de données vous vous connectez, effectuez les étapes suivantes :
 
-1. Dans le portail Cloud App Security, cliquez sur l’**icône de point d’interrogation** dans la barre de menus. Ensuite, sélectionnez **À propos de**.
+1. Dans le portail Cloud App Security, cliquez sur l’ **icône de point d’interrogation** dans la barre de menus. Ensuite, sélectionnez **À propos de** .
 
     ![cliquez sur À propos de](media/about-menu.png)
 
@@ -154,10 +154,10 @@ Pour se connecter à des applications tierces, autorisez Cloud App Security à s
 
 Pour que Cloud App Security puisse envoyer des données via votre stunnel à votre serveur ICAP, ouvrez votre pare-feu DMZ à ces adresses IP avec un numéro de port source dynamique.
 
-1. **Adresses sources** : ces adresses doivent figurer sur la liste verte, comme mentionné ci-dessus pour les applications tierces du connecteur d’API
-2. **Port TCP source** : dynamique
-3. **Adresse(s) de destination** : une ou deux adresses IP du stunnel connecté au serveur ICAP externe
-4. **Port TCP de destination** : comme défini dans votre réseau
+1. **Adresses sources**  : ces adresses doivent figurer sur la liste verte, comme mentionné ci-dessus pour les applications tierces du connecteur d’API
+2. **Port TCP source**  : dynamique
+3. **Adresse(s) de destination**  : une ou deux adresses IP du stunnel connecté au serveur ICAP externe
+4. **Port TCP de destination**  : comme défini dans votre réseau
 
 > [!NOTE]
 >
@@ -185,7 +185,7 @@ Pour permettre l’envoi de notifications à partir du modèle et des paramètre
 - 111.221.26.0/27
 - 207.46.200.0/27
 
-Si vous souhaitez personnaliser l’identité de l’expéditeur du courrier électronique, Microsoft Cloud App Security active la personnalisation à l’aide de MailChimp &reg; , un service de messagerie tiers. Pour cela, dans le portail Microsoft Cloud App Security, accédez à **Paramètres**. Sélectionnez **paramètres de messagerie** et passez en revue les conditions d’entretien et la déclaration de confidentialité de MailChimp. Ensuite, autorisez Microsoft à utiliser MailChimp en votre nom.
+Si vous souhaitez personnaliser l’identité de l’expéditeur du courrier électronique, Microsoft Cloud App Security active la personnalisation à l’aide de MailChimp &reg; , un service de messagerie tiers. Pour cela, dans le portail Microsoft Cloud App Security, accédez à **Paramètres** . Sélectionnez **paramètres de messagerie** et passez en revue les conditions d’entretien et la déclaration de confidentialité de MailChimp. Ensuite, autorisez Microsoft à utiliser MailChimp en votre nom.
 
 Si vous ne personnalisez pas l’identité de l’expéditeur, vos notifications par courrier électronique sont envoyées à l’aide de tous les paramètres par défaut.
 
@@ -210,7 +210,7 @@ Pour activer les fonctionnalités Cloud Discovery à l’aide d’un collecteur 
 
 > [!NOTE]
 >
-> - Si votre pare-feu nécessite une liste d’accès à une adresse IP statique et ne prend pas en charge la liste verte basée sur l’URL, autorisez le collecteur de journaux à initier le trafic sortant vers les [plages IP du centre de Microsoft Azure Datacenter](https://www.microsoft.com/download/details.aspx?id=56519) sur le port 443.
+> - Si votre pare-feu nécessite une liste d’accès à une adresse IP statique et ne prend pas en charge l’autorisation basée sur l’URL, autorisez le collecteur de journaux à initier le trafic sortant vers les [plages IP du centre de Microsoft Azure Datacenter](https://www.microsoft.com/download/details.aspx?id=56519) sur le port 443.
 > - Autorisez le collecteur de journaux à diriger le trafic sortant vers le portail Cloud App Security.
 > - Si vous n’avez pas spécifié de proxy lors de la configuration du collecteur de journaux, vous devez autoriser les connexions http à http://ocsp.msocsp.com/ et OCSP.DigiCert.com sur le port 80. Il est utilisé pour vérifier l’état de révocation du certificat lorsque vous vous connectez au portail Cloud App Security.
 

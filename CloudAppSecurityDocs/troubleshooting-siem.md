@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: effcab71a9b359aeb5d97ab2dc889e10133f7b9e
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: c7d2a5357273bcefd74db69208b874b21e8169a0
+ms.sourcegitcommit: e711727f2f00ee3b54e08337a5040449e352ca46
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90876992"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "93186187"
 ---
 # <a name="troubleshooting-the-siem-agent"></a>Résolution des problèmes de l’agent SIEM
 
@@ -40,9 +40,9 @@ Si vous avez reçu une alerte système concernant un problème de remise d’act
 
 1. Dans le portail Cloud App Security, accédez à la page extensions de sécurité.
 1. Dans l’onglet agents SIEM, cliquez sur [Ajouter un nouvel agent Siem](siem.md)et utilisez l’Assistant pour configurer les détails de connexion à votre serveur Siem. Par exemple, vous pouvez créer un agent SIEM avec la configuration suivante :
-    - **Protocole**: TCP
-    - **Hôte distant**: tout ordinateur sur lequel vous pouvez écouter un port. Par exemple, une solution simple consiste à utiliser le même ordinateur que l’agent et à définir l’adresse IP de l’hôte distant sur 127.0.0.1.
-    - **Port**: tout port sur lequel vous pouvez écouter sur l’ordinateur hôte distant
+    - **Protocole** : TCP
+    - **Hôte distant** : tout appareil sur lequel vous pouvez écouter un port. Par exemple, une solution simple consiste à utiliser le même appareil que l’agent et à définir l’adresse IP de l’hôte distant sur 127.0.0.1.
+    - **Port** : tout port sur lequel vous pouvez écouter sur l’appareil hôte distant
 
     > [!NOTE]
     > Cet agent doit s’exécuter en parallèle avec le nom existant. la configuration du réseau peut donc ne pas être identique.
@@ -60,7 +60,7 @@ Pour valider votre configuration, procédez comme suit :
 > [!NOTE]
 > L’agent enverra uniquement des activités dans le délai du problème sur lequel vous avez été alerté.
 
-1. Si les données ne sont pas reçues par votre serveur SIEM, sur le nouvel ordinateur de l’agent SIEM, essayez d’écouter le port que vous avez configuré pour transférer les activités pour voir si les données sont envoyées de l’agent à la SIEM. Par exemple, exécutez `netcat -l <port>` où `<port>` est le numéro de port configuré précédemment.
+1. Si les données ne sont pas reçues par votre serveur SIEM, sur le nouvel appareil SIEM agent, essayez d’écouter le port que vous avez configuré pour transférer les activités pour voir si les données sont envoyées de l’agent à la SIEM. Par exemple, exécutez `netcat -l <port>` où `<port>` est le numéro de port configuré précédemment.
 
 > [!NOTE]
 > Si vous utilisez, assurez- `ncat` vous que vous spécifiez l’indicateur IPv4 `-4` .
@@ -71,17 +71,17 @@ Pour valider votre configuration, procédez comme suit :
 
 1. L’agent SIEM de récupération arrête automatiquement l’envoi des données et est désactivé une fois qu’il a atteint la date de fin.
 1. Vérifiez dans votre SIEM qu’aucune nouvelle donnée n’est envoyée par l’agent SIEM de récupération.
-1. Arrêtez l’exécution de l’agent sur votre ordinateur.
+1. Arrêtez l’exécution de l’agent sur votre appareil.
 1. Dans le portail, accédez à la page de l’agent SIEM et supprimez l’agent SIEM de récupération.
 1. Vérifiez que votre agent SIEM d’origine est toujours en cours d’exécution correctement.
 
 ## <a name="general-troubleshooting"></a>Résolution générale des problèmes
 
-Vérifiez que l’agent SIEM n’affiche pas l’état **Erreur de connexion** ou **Déconnecté** dans le portail Microsoft Cloud App Security et qu’il ne fait pas l’objet de notifications. Si la connexion est interrompue pendant plus de deux heures, l’état affiché est le suivant : **Erreur de connexion**. Si la connexion est interrompue depuis plus de 12 heures, l’état passe à **Déconnecté**.
+Vérifiez que l’agent SIEM n’affiche pas l’état **Erreur de connexion** ou **Déconnecté** dans le portail Microsoft Cloud App Security et qu’il ne fait pas l’objet de notifications. Si la connexion est interrompue pendant plus de deux heures, l’état affiché est le suivant : **Erreur de connexion** . Si la connexion est interrompue depuis plus de 12 heures, l’état passe à **Déconnecté** .
 
 Si vous voyez une des erreurs suivantes dans l’invite de commandes lors de l’exécution de l’agent, procédez comme suit pour corriger le problème :
 
-|Error|Description|Résolution|
+|Erreur|Description|Résolution|
 |----|----|----|
 |Erreur générale pendant l’amorçage|Erreur inattendue pendant le démarrage de l’agent.|Contactez le support technique.|
 |Trop d’erreurs critiques|Trop d’erreurs critiques se sont produites lors de la connexion de la console. Arrêt.|Contactez le support technique.|
@@ -90,7 +90,7 @@ Si vous voyez une des erreurs suivantes dans l’invite de commandes lors de l�
 
 Après avoir créé l’agent, consultez la page de l’agent SIEM dans le portail Cloud App Security. Si vous voyez l’une des **Notifications de l’agent** suivantes, procédez comme suit pour corriger le problème :
 
-|Error|Description|Résolution|
+|Erreur|Description|Résolution|
 |----|----|----|
 |**Erreur interne**|Quelque chose d’inconnu s’est produit avec votre agent SIEM.|Contactez le support technique.|
 |**Erreur d’envoi du serveur de données**|Vous pouvez recevoir cette erreur si vous travaillez avec un serveur Syslog sur TCP. L’agent SIEM ne peut pas se connecter à votre serveur Syslog.  Si vous recevez cette erreur, l’agent cesse d’extraire les nouvelles activités jusqu’à ce qu’elles soient corrigées. Veillez à suivre les étapes de correction jusqu’à ce que l’erreur n’apparaisse plus.|1. Assurez-vous que vous avez correctement défini votre serveur Syslog : dans l’interface utilisateur Cloud App Security, modifiez votre agent SIEM comme décrit ci-dessus. Vérifiez que vous avez écrit correctement le nom du serveur et défini le port approprié. </br>2. Vérifiez la connectivité à votre serveur Syslog : Assurez-vous que votre pare-feu ne bloque pas les communications.|

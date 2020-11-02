@@ -9,12 +9,12 @@ ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 54df0eef56e31d8391d2bb7cfa80a98650dfdd9e
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 028df24a9efbd88337727032df3941e8b086f6e1
+ms.sourcegitcommit: e711727f2f00ee3b54e08337a5040449e352ca46
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90877918"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "93186096"
 ---
 # <a name="cloud-discovery-policies"></a>Stratégies Cloud Discovery
 
@@ -22,7 +22,7 @@ ms.locfileid: "90877918"
 
 Cet article fournit une vue d’ensemble de la prise en main de l’utilisation de Cloud App Security pour obtenir une visibilité de l’ensemble de votre organisation en utilisant des Cloud Discovery.
 
-Cloud App Security vous permet de détecter et d’analyser les applications Cloud en cours d’utilisation dans l’environnement de votre organisation. Le tableau de bord Cloud Discovery affiche toutes les applications Cloud en cours d’exécution dans l’environnement et les classe par fonction et préparation de l’entreprise. Pour chaque application, Découvrez les utilisateurs, les adresses IP, les machines, les transactions et l’évaluation des risques associés sans avoir à installer un agent sur vos appareils de point de terminaison.
+Cloud App Security vous permet de détecter et d’analyser les applications Cloud en cours d’utilisation dans l’environnement de votre organisation. Le tableau de bord Cloud Discovery affiche toutes les applications Cloud en cours d’exécution dans l’environnement et les classe par fonction et préparation de l’entreprise. Pour chaque application, Découvrez les utilisateurs, les adresses IP, les appareils, les transactions et les opérations d’évaluation des risques associés sans avoir à installer un agent sur vos appareils de point de terminaison.
 
 ## <a name="detect-new-high-volume-or-wide-app-use"></a>Détection d’une nouvelle utilisation d’applications volumineuses ou à grande quantité <a name= "detect-volume"></a>
 
@@ -67,7 +67,7 @@ Configurez le chargement automatique des journaux pour les rapports de Cloud Dis
 
     3. Sélectionnez **le trafic quotidien** supérieur à 2000 Go (ou autre).
 
-4. Configurez les actions de gouvernance à entreprendre lorsqu’une alerte est déclenchée. Sous **gouvernance**, sélectionnez **baliser l’application comme** non approuvée.<br />L’accès à l’application est automatiquement bloqué lorsque la stratégie est mise en correspondance.
+4. Configurez les actions de gouvernance à entreprendre lorsqu’une alerte est déclenchée. Sous **gouvernance** , sélectionnez **baliser l’application comme** non approuvée.<br />L’accès à l’application est automatiquement bloqué lorsque la stratégie est mise en correspondance.
 
 5. Facultatif : Tirez parti de [Cloud App Security intégration native](set-up-cloud-discovery.md) avec des passerelles Web sécurisées pour bloquer l’accès aux applications.
 
@@ -87,7 +87,7 @@ Vous pouvez détecter quand vos employés continuent d’utiliser des applicatio
 
 3. Ajoutez un filtre d' **étiquette d’application** et choisissez les balises d’application que vous avez créées pour vos applications professionnelles.
 
-4. Configurez les actions de gouvernance à entreprendre lorsqu’une alerte est déclenchée. Sous gouvernance, sélectionnez **baliser l’application comme**non approuvée.<br />L’accès à l’application est automatiquement bloqué lorsque la stratégie est mise en correspondance.
+4. Configurez les actions de gouvernance à entreprendre lorsqu’une alerte est déclenchée. Sous gouvernance, sélectionnez **baliser l’application comme** non approuvée.<br />L’accès à l’application est automatiquement bloqué lorsque la stratégie est mise en correspondance.
 
 5. Facultatif : Tirez parti de [Cloud App Security intégration native](set-up-cloud-discovery.md) avec des passerelles Web sécurisées pour bloquer l’accès aux applications.
 
@@ -101,15 +101,15 @@ Configurez le chargement automatique des journaux pour les rapports de Cloud Dis
 
 ### <a name="steps"></a>Étapes
 
-1. Dans la page **stratégies** , créez une **stratégie de détection des anomalies Cloud Discovery**.
+1. Dans la page **stratégies** , créez une **stratégie de détection des anomalies Cloud Discovery** .
 
-2. Dans le champ **modèle de stratégie** , sélectionnez **comportement anormal dans les utilisateurs découverts** ou **comportement anormal dans les adresses IP découvertes**.
+2. Dans le champ **modèle de stratégie** , sélectionnez **comportement anormal dans les utilisateurs découverts** ou **comportement anormal dans les adresses IP découvertes** .
 
 3. Personnalisez les filtres pour répondre aux besoins de votre organisation.
 
 4. Si vous souhaitez être alerté uniquement lorsqu’il existe des anomalies impliquant des applications risquées, utilisez les filtres de **score de risque** et définissez la plage dans laquelle les applications sont considérées comme risquées.
 
-5. Utilisez le curseur pour sélectionner la sensibilité de la **détection des anomalies**.
+5. Utilisez le curseur pour sélectionner la sensibilité de la **détection des anomalies** .
 
 > [!NOTE]
 > Une fois le chargement continu du journal établi, le moteur de détection des anomalies prend quelques jours jusqu’à ce qu’une ligne de base (période d’apprentissage) soit établie pour le comportement attendu de votre organisation. Après avoir établi une ligne de base, vous commencez à recevoir des alertes en fonction des différences par rapport au comportement de trafic attendu sur les applications Cloud effectuées par les utilisateurs ou à partir d’adresses IP.
@@ -124,11 +124,11 @@ Configurez le chargement automatique des journaux pour les rapports de Cloud Dis
 
 ### <a name="steps"></a>Étapes
 
-1. Sur la page **stratégies** , modifiez l' **exfiltration des données**de stratégie intégrée en applications non approuvées.
+1. Sur la page **stratégies** , modifiez l' **exfiltration des données** de stratégie intégrée en applications non approuvées.
 
-2. Sélectionnez la catégorie de l' **application** de filtre est égale à **stockage cloud**.
+2. Sélectionnez la catégorie de l' **application** de filtre est égale à **stockage cloud** .
 
-3. Cochez la case pour **créer une alerte pour chaque événement correspondant avec la gravité de la stratégie**.
+3. Cochez la case pour **créer une alerte pour chaque événement correspondant avec la gravité de la stratégie** .
 
 4. Configurez les actions à entreprendre lorsqu’une alerte est déclenchée.
 
@@ -142,13 +142,13 @@ L’application G suite, Office 365 ou Salesforce doit être connectée à l’a
 
 ### <a name="steps"></a>Étapes
 
-1. Dans la page **stratégies** , créez une nouvelle **stratégie d’application OAuth**.
+1. Dans la page **stratégies** , créez une nouvelle **stratégie d’application OAuth** .
 
 2. Sélectionnez l' **application** de filtre et définissez l’application que la stratégie doit couvrir, G suite, Office 365 ou Salesforce.
 
 3. Sélectionnez le filtre de **niveau d’autorisation** est égal à **élevé** (disponible pour G suite et Office 365).
 
-4. Ajoutez le filtre l’utilisation de la **communauté** est égale à **rare**.
+4. Ajoutez le filtre l’utilisation de la **communauté** est égale à **rare** .
 
 5. Configurez les actions à entreprendre lorsqu’une alerte est déclenchée. Par exemple, pour Office 365, activez la case à cocher **révoquer l’application** pour les applications OAuth détectées par la stratégie.
 

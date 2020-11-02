@@ -9,12 +9,12 @@ ms.date: 06/28/2020
 ms.topic: how-to
 ms.service: cloud-app-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 2729785ec2de681c422c0fd8b9442a7a41886307
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: c9390b6a74c51e684109e5f3c4d3cb25abf00120
+ms.sourcegitcommit: e711727f2f00ee3b54e08337a5040449e352ca46
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90881400"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "93186040"
 ---
 # <a name="connect-google-cloud-platform-to-microsoft-cloud-app-security"></a>Connectez Google Cloud Platform à Microsoft Cloud App Security
 
@@ -33,8 +33,8 @@ L’utilisateur GCP d’intégration doit disposer des autorisations suivantes 
 
 Vous pouvez connecter l’un des GCP suivants, ou les deux, aux connexions Cloud App Security :
 
-- **Audit de sécurité**: cette connexion vous offre une visibilité et un contrôle de l’utilisation des applications GCP.
-- **Configuration**de la sécurité : cette connexion vous donne des recommandations de sécurité fondamentales basées sur le benchmarking Center for Internet Security (CIS) pour GCP.
+- **Audit de sécurité** : cette connexion vous offre une visibilité et un contrôle de l’utilisation des applications GCP.
+- **Configuration** de la sécurité : cette connexion vous donne des recommandations de sécurité fondamentales basées sur le benchmarking Center for Internet Security (CIS) pour GCP.
 
 Dans la mesure où vous pouvez ajouter une connexion ou les deux, les étapes décrites dans cet article sont écrites en tant qu’instructions indépendantes. Si vous avez déjà ajouté une des connexions, le cas échéant, modifiez les configurations existantes.
 
@@ -67,7 +67,7 @@ Créer un projet dédié dans GCP dans le cadre de votre organisation pour perme
 
 1. Connectez-vous à votre portail GCP à l’aide de votre compte d’utilisateur intégré GCP.
 1. Cliquez sur **créer un projet** pour démarrer un nouveau.
-1. Dans l’écran **nouveau projet** , nommez votre projet et cliquez sur **créer**.
+1. Dans l’écran **nouveau projet** , nommez votre projet et cliquez sur **créer** .
 
     ![Capture d’écran montrant la boîte de dialogue de création de projet GCP](media/connect-gcp-create-project.png)
 
@@ -75,18 +75,18 @@ Créer un projet dédié dans GCP dans le cadre de votre organisation pour perme
 
 1. Basculez vers le projet dédié.
 1. Accédez à l’onglet **bibliothèque** .
-1. Recherchez et sélectionnez **API de journalisation Cloud**, puis dans la page API, cliquez sur **activer**.
-1. Recherchez et sélectionnez l' **API Cloud Pub/Sub**, puis dans la page API, cliquez sur **activer**.
+1. Recherchez et sélectionnez **API de journalisation Cloud** , puis dans la page API, cliquez sur **activer** .
+1. Recherchez et sélectionnez l' **API Cloud Pub/Sub** , puis dans la page API, cliquez sur **activer** .
 
     > [!NOTE]
-    > Veillez à ne pas sélectionner l' **API Pub/Sub Lite**.
+    > Veillez à ne pas sélectionner l' **API Pub/Sub Lite** .
 
 #### <a name="create-a-dedicated-service-account-for-the-security-auditing-integration"></a>Créer un compte de service dédié pour l’intégration de l’audit de sécurité
 
-1. Sous **IAM & admin**, cliquez sur **comptes de service**.
+1. Sous **IAM & admin** , cliquez sur **comptes de service** .
 1. Cliquez sur **créer un compte de service** pour créer un compte de service dédié.
-1. Entrez un nom de compte, puis cliquez sur **créer**.
-1. Spécifiez le **rôle** en tant que **Pub/Sub admin** , puis cliquez sur **Enregistrer**.
+1. Entrez un nom de compte, puis cliquez sur **créer** .
+1. Spécifiez le **rôle** en tant que **Pub/Sub admin** , puis cliquez sur **Enregistrer** .
 
     ![Capture d’écran montrant GCP ajouter un rôle IAM](media/connect-gcp-iam-role.PNG)
 
@@ -94,31 +94,31 @@ Créer un projet dédié dans GCP dans le cadre de votre organisation pour perme
 
     ![Capture d’écran montrant la boîte de dialogue compte de service GCP](media/connect-gcp-create-service-account.png)
 
-1. Sous **iam & admin**, cliquez sur **IAM**.
+1. Sous **iam & admin** , cliquez sur **IAM** .
 
     1. Basculez vers le niveau de l’organisation.
-    1. Cliquez sur **AJOUTER**.
+    1. Cliquez sur **ADD** (Ajouter).
     1. Dans la zone **nouveaux membres** , collez la valeur de l' **e-mail** que vous avez copiée précédemment.
-    1. Spécifiez le **rôle** en tant que **writer de configuration des journaux** , puis cliquez sur **Enregistrer**.
+    1. Spécifiez le **rôle** en tant que **writer de configuration des journaux** , puis cliquez sur **Enregistrer** .
 
         ![Capture d’écran montrant la boîte de dialogue Ajouter un membre](media/connect-gcp-add-member.png)
 
 #### <a name="create-a-private-key-for-the-dedicated-service-account"></a>Créer une clé privée pour le compte de service dédié
 
 1. Passez au niveau du projet.
-1. Sous **IAM & admin**, cliquez sur **comptes de service**.
-1. Ouvrez le compte de service dédié, puis cliquez sur **modifier**.
-1. Cliquez sur **créer une clé**.
-1. Dans l’écran **créer une clé privée** , sélectionnez **JSON**, puis cliquez sur **créer**.
+1. Sous **IAM & admin** , cliquez sur **comptes de service** .
+1. Ouvrez le compte de service dédié, puis cliquez sur **modifier** .
+1. Cliquez sur **créer une clé** .
+1. Dans l’écran **créer une clé privée** , sélectionnez **JSON** , puis cliquez sur **créer** .
 
     ![Capture d’écran montrant la boîte de dialogue créer une clé privée](media/connect-gcp-create-private-key.png)
 
     > [!NOTE]
-    > Vous aurez besoin du fichier JSON téléchargé sur votre ordinateur ultérieurement.
+    > Vous aurez besoin du fichier JSON téléchargé sur votre appareil ultérieurement.
 
 #### <a name="retrieve-your-organization-id"></a>Récupérer votre ID d’organisation
 
-Prenez note de votre **ID d’organisation**. vous en aurez besoin plus tard. Pour plus d’informations, consultez [obtention de votre ID d’organisation](https://cloud.google.com/resource-manager/docs/creating-managing-organization#retrieving_your_organization_id).
+Prenez note de votre **ID d’organisation** . vous en aurez besoin plus tard. Pour plus d’informations, consultez [obtention de votre ID d’organisation](https://cloud.google.com/resource-manager/docs/creating-managing-organization#retrieving_your_organization_id).
 
 ![Capture d’écran montrant la boîte de dialogue ID d’organisation](media/connect-gcp-org-id.png)
 
@@ -126,7 +126,7 @@ Prenez note de votre **ID d’organisation**. vous en aurez besoin plus tard. Po
 
 #### <a name="add-the-gcp-connection-details"></a>Ajouter les détails de la connexion GCP
 
-1. Dans le portail Cloud App Security, cliquez sur **Examiner**, puis sur **Applications connectées**.
+1. Dans le portail Cloud App Security, cliquez sur **Examiner** , puis sur **Applications connectées** .
 
 1. Dans la page **connecteurs d’application** , pour fournir les informations d’identification du connecteur AWS, effectuez l’une des opérations suivantes :
 
@@ -135,15 +135,15 @@ Prenez note de votre **ID d’organisation**. vous en aurez besoin plus tard. Po
 
     **Pour un nouveau connecteur**
 
-    1. Cliquez sur le signe plus, puis sur **Google Cloud Platform**.
+    1. Cliquez sur le signe plus, puis sur **Google Cloud Platform** .
 
         ![connecter GCP](media/connect-gcp-add.png)
 
-    1. Dans la fenêtre contextuelle, fournissez un nom pour le connecteur, puis cliquez sur **se connecter Google Cloud Platform**.
+    1. Dans la fenêtre contextuelle, fournissez un nom pour le connecteur, puis cliquez sur **se connecter Google Cloud Platform** .
 
         ![Nom du connecteur GCP](media/connect-gcp-name.png)
 
-    1. Dans la page **Détails du projet** , effectuez les opérations suivantes, puis cliquez sur **se connecter Google Cloud Platform**.
+    1. Dans la page **Détails du projet** , effectuez les opérations suivantes, puis cliquez sur **se connecter Google Cloud Platform** .
         1. Dans la zone ID de l' **organisation** , entrez l’organisation que vous avez notée précédemment.
         1. Dans la zone **fichier de clé privée** , accédez au fichier JSON que vous avez téléchargé précédemment.
 
@@ -151,11 +151,11 @@ Prenez note de votre **ID d’organisation**. vous en aurez besoin plus tard. Po
 
     **Pour un connecteur existant**
 
-    1. Dans la liste des connecteurs, sur la ligne dans laquelle le connecteur AWS s’affiche, cliquez sur **connecter l’audit de sécurité**.
+    1. Dans la liste des connecteurs, sur la ligne dans laquelle le connecteur AWS s’affiche, cliquez sur **connecter l’audit de sécurité** .
 
         ![Capture d’écran de la page applications connectées, montrant le lien modifier l’audit de sécurité](media/connect-gcp-app-edit-audit.png)
 
-    1. Dans la page **Détails du projet** , effectuez les opérations suivantes, puis cliquez sur **se connecter Google Cloud Platform**.
+    1. Dans la page **Détails du projet** , effectuez les opérations suivantes, puis cliquez sur **se connecter Google Cloud Platform** .
         1. Dans la zone ID de l' **organisation** , entrez l’organisation que vous avez notée précédemment.
         1. Dans la zone **fichier de clé privée** , accédez au fichier JSON que vous avez téléchargé précédemment.
 
@@ -163,7 +163,7 @@ Prenez note de votre **ID d’organisation**. vous en aurez besoin plus tard. Po
 
 1. Cliquez sur **tester l’API** pour vérifier que la connexion a réussi.
 
-    Le test peut prendre quelques minutes. Une fois l’opération terminée, vous recevez une notification de réussite ou d’échec. Une fois que vous avez reçu une notification de réussite, cliquez sur **Terminé**.
+    Le test peut prendre quelques minutes. Une fois l’opération terminée, vous recevez une notification de réussite ou d’échec. Une fois que vous avez reçu une notification de réussite, cliquez sur **Terminé** .
 
 Si vous rencontrez des problèmes lors de la connexion de l’application, consultez [résolution des problèmes liés aux connecteurs d’application](troubleshooting-api-connectors-using-error-messages.md).
 
@@ -188,35 +188,35 @@ Procédez comme suit pour connecter la configuration de sécurité GCP à Cloud 
 
 > [!div class="checklist"]
 >
-> - [Configurer le centre de commandes de sécurité GCP avec l’analyse d’intégrité de la sécurité](#set-up-gcp-security-command-center-with-security-health-analytics)
+> - [Configurer la sécurité de GCP et Command Center avec Security Health Analytics](#set-up-gcp-security-command-center-with-security-health-analytics)
 > - [Activer l’API du centre de commandes de sécurité](#enable-security-command-center-api)
 > - [Créer un compte de service dédié pour l’intégration de la configuration de la sécurité](#create-a-dedicated-service-account-for-the-security-configuration-integration)
 > - [Connectez-vous Google Cloud Platform Configuration de sécurité à Cloud App Security](#connect-google-cloud-platform-security-configuration-to-cloud-app-security)
 
-### <a name="set-up-gcp-security-command-center-with-security-health-analytics"></a>Configurer le centre de commandes de sécurité GCP avec l’analyse d’intégrité de la sécurité
+### <a name="set-up-gcp-security-command-center-with-security-health-analytics"></a>Configurer la sécurité de GCP et Command Center avec Security Health Analytics
 
 1. Configurez le [Centre de commandes de sécurité](https://cloud.google.com/security-command-center/docs/quickstart-security-command-center).
 1. [Activez GCP Security Health Analytics](https://cloud.google.com/security-command-center/docs/how-to-use-security-health-analytics).
-1. Vérifiez que les données sont transmises au centre de commandes de sécurité.
+1. Vérifier que les données sont transmises à Security Command Center.
 
     > [!NOTE]
     >
-    > - Les instructions de connexion de votre environnement GCP pour la configuration de sécurité suivent les [recommandations de Google pour l'](https://cloud.google.com/security-command-center/docs/how-to-notifications#enable-scc-api) utilisation des recommandations de configuration de sécurité. L’intégration s’appuie sur le centre de commandes de sécurité de Google et consomme des ressources supplémentaires susceptibles d’avoir un impact sur votre facturation.
+    > - Les instructions de connexion de votre environnement GCP pour la configuration de sécurité suivent les [recommandations de Google pour l'](https://cloud.google.com/security-command-center/docs/how-to-notifications#enable-scc-api) utilisation des recommandations de configuration de sécurité. L’intégration s’appuie sur Google Security Command Center et consomme des ressources supplémentaires susceptibles d’avoir un impact sur votre facturation.
     > - Lorsque vous activez pour la première fois l’analyse de l’intégrité de la sécurité, plusieurs heures peuvent être nécessaires pour que les données soient disponibles.
 
 ### <a name="enable-security-command-center-api"></a>Activer l’API du centre de commandes de sécurité
 
 1. Dans Bibliothèque de l’API de la console Cloud, sélectionnez le projet auquel vous souhaitez vous connecter Cloud App Security.
 1. Dans la bibliothèque d’API, recherchez et sélectionnez l’API Centre de commandes de sécurité.
-1. Dans la page API, cliquez sur **activer**.
+1. Dans la page API, cliquez sur **activer** .
 
 ### <a name="create-a-dedicated-service-account-for-the-security-configuration-integration"></a>Créer un compte de service dédié pour l’intégration de la configuration de la sécurité
 
 1. Dans le centre de commandes de sécurité GCP, sélectionnez le projet auquel vous souhaitez vous connecter Cloud App Security.
-1. Sous **IAM & admin**, cliquez sur **comptes de service**.
+1. Sous **IAM & admin** , cliquez sur **comptes de service** .
 1. Cliquez sur **créer un compte de service** pour créer un compte de service dédié.
-1. Entrez un nom de compte, puis cliquez sur **créer**.
-1. Spécifiez **Role** le rôle **Security Center la visionneuse d’administration** , puis cliquez sur **Enregistrer**.
+1. Entrez un nom de compte, puis cliquez sur **créer** .
+1. Spécifiez **Role** le rôle **Security Center la visionneuse d’administration** , puis cliquez sur **Enregistrer** .
 
     ![Capture d’écran montrant l’élément de menu Ajouter GCP pour la visionneuse d’administration Security Center](media/connect-gcp-security-configuration-1.png)
 
@@ -224,42 +224,42 @@ Procédez comme suit pour connecter la configuration de sécurité GCP à Cloud 
 
     ![Capture d’écran montrant le compte de service Copy GCP](media/connect-gcp-security-configuration-2.png)
 
-1. Sous **iam & admin**, cliquez sur **IAM**.
+1. Sous **iam & admin** , cliquez sur **IAM** .
 
     1. Basculez vers le niveau de l’organisation.
-    1. Cliquez sur **AJOUTER**.
+    1. Cliquez sur **ADD** (Ajouter).
     1. Dans la zone **nouveaux membres** , collez la valeur de l' **e-mail** que vous avez copiée précédemment.
-    1. Spécifiez **Role** le rôle **Security Center la visionneuse d’administration** , puis cliquez sur **Enregistrer**.
+    1. Spécifiez **Role** le rôle **Security Center la visionneuse d’administration** , puis cliquez sur **Enregistrer** .
 
         ![Capture d’écran montrant la boîte de dialogue Ajouter un membre au projet](media/connect-gcp-security-configuration-3.png)
 
 #### <a name="create-a-private-key-for-the-dedicated-service-account"></a>Créer une clé privée pour le compte de service dédié
 
 1. Passez au niveau du projet.
-1. Sous **IAM & admin**, cliquez sur **comptes de service**.
-1. Ouvrez le compte de service dédié, puis cliquez sur **modifier**.
-1. Cliquez sur **créer une clé**.
-1. Dans l’écran **créer une clé privée** , sélectionnez **JSON**, puis cliquez sur **créer**.
+1. Sous **IAM & admin** , cliquez sur **comptes de service** .
+1. Ouvrez le compte de service dédié, puis cliquez sur **modifier** .
+1. Cliquez sur **créer une clé** .
+1. Dans l’écran **créer une clé privée** , sélectionnez **JSON** , puis cliquez sur **créer** .
 
     ![Capture d’écran montrant la boîte de dialogue créer une clé privée pour un compte de service dédié](media/connect-gcp-security-configuration-4.png)
 
     > [!NOTE]
-    > Vous aurez besoin du fichier JSON téléchargé sur votre ordinateur ultérieurement.
+    > Vous aurez besoin du fichier JSON téléchargé sur votre appareil ultérieurement.
 
 #### <a name="retrieve-your-organization-id"></a>Récupérer votre ID d’organisation
 
-Prenez note de votre **ID d’organisation**. vous en aurez besoin plus tard. Pour plus d’informations, consultez [obtention de votre ID d’organisation](https://cloud.google.com/resource-manager/docs/creating-managing-organization#retrieving_your_organization_id).
+Prenez note de votre **ID d’organisation** . vous en aurez besoin plus tard. Pour plus d’informations, consultez [obtention de votre ID d’organisation](https://cloud.google.com/resource-manager/docs/creating-managing-organization#retrieving_your_organization_id).
     ![Capture d’écran montrant la boîte de dialogue ID d’organisation](media/connect-gcp-org-id.png)
 
 ### <a name="connect-google-cloud-platform-security-configuration-to-cloud-app-security"></a>Connectez-vous Google Cloud Platform Configuration de sécurité à Cloud App Security
 
-1. Dans Cloud App Security, cliquez sur **examiner**, puis sélectionnez **applications connectées**.
+1. Dans Cloud App Security, cliquez sur **examiner** , puis sélectionnez **applications connectées** .
 
-1. Dans l’onglet **applications de configuration** de la sécurité, cliquez sur le bouton plus, puis sélectionnez **Google Cloud Platform**.
+1. Dans l’onglet **applications de configuration** de la sécurité, cliquez sur le bouton plus, puis sélectionnez **Google Cloud Platform** .
 
     ![Capture d’écran montrant l’option de menu Ajouter GCP](media/connect-gcp-security-configuration-5.png)
 
-1. Dans la page nom de l' **instance** , choisissez le type d’instance, puis cliquez sur **suivant**.
+1. Dans la page nom de l' **instance** , choisissez le type d’instance, puis cliquez sur **suivant** .
 
     - Pour un connecteur existant, choisissez l’instance appropriée.
 
@@ -269,13 +269,13 @@ Prenez note de votre **ID d’organisation**. vous en aurez besoin plus tard. Po
 
         ![Nom du nouveau connecteur GCP](media/connect-gcp-new-instance.png)
 
-1. Dans la page **Détails du projet** , effectuez les opérations suivantes, puis cliquez sur **suivant**.
+1. Dans la page **Détails du projet** , effectuez les opérations suivantes, puis cliquez sur **suivant** .
     1. Dans la zone ID de l' **organisation** , entrez l’organisation que vous avez notée précédemment.
     1. Dans la zone **fichier de clé privée** , accédez au fichier JSON que vous avez téléchargé précédemment.
 
     ![Ajouter les détails du projet GCP](media/connect-gcp-security-configuration-6.png)
 
-1. Dans la page **terminé** , assurez-vous que la connexion a réussi, puis cliquez sur **terminé**.
+1. Dans la page **terminé** , assurez-vous que la connexion a réussi, puis cliquez sur **terminé** .
 
 Si vous rencontrez des problèmes lors de la connexion de l’application, consultez [résolution des problèmes liés aux connecteurs d’application](troubleshooting-api-connectors-using-error-messages.md).
 

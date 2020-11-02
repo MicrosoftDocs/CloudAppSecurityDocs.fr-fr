@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: fd54a610c074bc69b4d9f78dd46d32978f93a75e
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 7f693684e34892dc70a09f28a18fd4035993b7f1
+ms.sourcegitcommit: e711727f2f00ee3b54e08337a5040449e352ca46
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90877208"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "93186253"
 ---
 # <a name="troubleshooting-cloud-discovery"></a>Résolution des problèmes de Cloud Discovery
 
@@ -33,7 +33,7 @@ Si vous avez intégré Microsoft Defender ATP avec Cloud App Security, et que vo
 
 |Problème|Résolution|
 |----|----|
-|Les rapports **utilisateurs du point de terminaison Win10** n’apparaissent pas dans la liste|Assurez-vous que les machines auxquelles vous vous connectez sont Windows 10 version 1809 ou ultérieure, et que vous avez attendu les deux heures nécessaires pour que vos données soient accessibles.|
+|Les rapports **utilisateurs du point de terminaison Win10** n’apparaissent pas dans la liste|Assurez-vous que les appareils auxquels vous vous connectez sont Windows 10 version 1809 ou ultérieure, et que vous avez attendu les deux heures nécessaires pour que vos données soient accessibles.|
 |Les rapports de découverte sont vides|Si l’appareil de point de terminaison se trouve derrière un proxy direct, vous pouvez envoyer des journaux à partir de votre proxy direct à l’aide d’un collecteur de journaux|
 
 ## <a name="log-parsing-errors"></a>Erreurs d’analyse du journal
@@ -42,9 +42,9 @@ Vous pouvez suivre le traitement des journaux Cloud Discovery à l’aide du jou
 
 ### <a name="governance-log-errors"></a>Erreurs du journal de gouvernance
 
-|Error|Description|Résolution|
+|Erreur|Description|Résolution|
 |----|----|----|
-|Type de fichier non pris en charge|Le fichier chargé n’est pas un fichier journal valide (par exemple, un fichier image).|Chargez un fichier **texte**, **zip ou **gzip** exporté directement à partir de votre pare-feu ou proxy.|
+|Type de fichier non pris en charge|Le fichier chargé n’est pas un fichier journal valide (par exemple, un fichier image).|Chargez un fichier **texte** , **zip ou **gzip** exporté directement à partir de votre pare-feu ou proxy.|
 |Le format de journal ne correspond pas|Le format de journal que vous avez chargé ne correspond pas au format attendu pour cette source de données.|1. Vérifiez que le journal n’est pas endommagé. <br /> 2. Comparez et associez votre journal à l’exemple de format affiché dans la page de chargement.|
 |Les transaction datent de plus de 90 jours|Toutes les transactions datent de plus de 90 jours et sont ignorées.|Exportez un nouveau journal avec des événements récents et rechargez-le.|
 |Aucune transaction pour les applications cloud cataloguées|Aucune transaction pour les applications cloud reconnues ne figure dans le journal.|Vérifiez que le journal contient des informations sur le trafic sortant.|
