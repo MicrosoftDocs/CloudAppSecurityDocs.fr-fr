@@ -116,7 +116,7 @@
             - name: Configurer Cloud Discovery
               href: set-up-cloud-discovery.md
             - name: Intégrer avec Microsoft Defender ATP
-              href: wdatp-integration.md
+              href: mde-integration.md
             - name: Intégrer à Zscaler
               href: zscaler-integration.md
             - name: Intégrer à iboss
