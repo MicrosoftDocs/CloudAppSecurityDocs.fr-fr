@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f9b273f2e89bd3cff380fbdcd2c183827f58f903
-ms.sourcegitcommit: 5041a8bfae9c9a1a3425c0a0fd75ac60ed1fe9cc
+ms.openlocfilehash: ad681b763233a84d63cb11a98e6f709e72816080
+ms.sourcegitcommit: 138d435905eaf29584f50d6dac30489d2104189a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92053844"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93415451"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Protéger les applications avec le Contrôle d’accès conditionnel aux applications Microsoft Cloud App Security
 
@@ -37,19 +37,19 @@ Contrôle d’application par accès conditionnel utilise une architecture de pr
 
 Le contrôle d’application par accès conditionnel permet de superviser et de contrôler en temps réel les sessions et accès utilisateur aux applications en fonction des stratégies d’accès et de session. Les stratégies d’accès et de session s’utilisent dans le portail Cloud App Security pour affiner davantage les filtres et définir les actions à effectuer sur un utilisateur. Avec les stratégies d’accès et de session, vous pouvez :
 
-- **Empêcher l’exfiltration de données**: vous pouvez bloquer le téléchargement, couper, copier et imprimer des documents sensibles sur, par exemple les appareils non gérés.
+- **Empêcher l’exfiltration de données** : vous pouvez bloquer le téléchargement, couper, copier et imprimer des documents sensibles sur, par exemple les appareils non gérés.
 
-- **Protéger au téléchargement**: au lieu de bloquer le téléchargement de documents sensibles, vous pouvez exiger que les documents soient étiquetés et protégés par Azure information protection. Cette action garantit que les documents sont protégés et que l’accès utilisateur est limité dans une session potentiellement à risque.
+- **Protéger au téléchargement** : au lieu de bloquer le téléchargement de documents sensibles, vous pouvez exiger que les documents soient étiquetés et protégés par Azure information protection. Cette action garantit que les documents sont protégés et que l’accès utilisateur est limité dans une session potentiellement à risque.
 
-- **Empêcher le téléchargement de fichiers sans étiquette**: avant qu’un fichier sensible ne soit téléchargé, distribué et utilisé par d’autres utilisateurs, il est important de s’assurer que le fichier a l’étiquette et la protection appropriées. Vous pouvez bloquer le chargement des fichiers sans étiquette qui ont du contenu sensible tant que l’utilisateur n’a pas classifié leur contenu.
+- **Empêcher le téléchargement de fichiers sans étiquette** : avant qu’un fichier sensible ne soit téléchargé, distribué et utilisé par d’autres utilisateurs, il est important de s’assurer que le fichier a l’étiquette et la protection appropriées. Vous pouvez bloquer le chargement des fichiers sans étiquette qui ont du contenu sensible tant que l’utilisateur n’a pas classifié leur contenu.
 
-- **Bloquer les logiciels malveillants potentiels**: vous pouvez protéger votre environnement contre les logiciels malveillants en bloquant le chargement de fichiers potentiellement malveillants. Tout fichier téléchargé ou téléchargé peut être analysé par rapport à Microsoft Threat Intelligence et bloqué instantanément.
+- **Bloquer les logiciels malveillants potentiels** : vous pouvez protéger votre environnement contre les logiciels malveillants en bloquant le chargement de fichiers potentiellement malveillants. Tout fichier téléchargé ou téléchargé peut être analysé par rapport à Microsoft Threat Intelligence et bloqué instantanément.
 
-- **Surveiller les sessions utilisateur pour la conformité**: les utilisateurs risqués sont analysés lorsqu’ils se connectent à des applications et que leurs actions sont journalisées depuis la session. Vous pouvez examiner et analyser le comportement des utilisateurs pour comprendre où et dans quelles conditions les stratégies de session doivent être appliquées à l’avenir.
+- **Surveiller les sessions utilisateur pour la conformité** : les utilisateurs risqués sont analysés lorsqu’ils se connectent à des applications et que leurs actions sont journalisées depuis la session. Vous pouvez examiner et analyser le comportement des utilisateurs pour comprendre où et dans quelles conditions les stratégies de session doivent être appliquées à l’avenir.
 
-- **Bloquer l’accès**: vous pouvez bloquer l’accès de façon granulaire pour des applications et des utilisateurs spécifiques en fonction de plusieurs facteurs de risque. Par exemple, vous pouvez les bloquer s’ils utilisent des certificats clients comme moyen de gérer les appareils.
+- **Bloquer l’accès** : vous pouvez bloquer l’accès de façon granulaire pour des applications et des utilisateurs spécifiques en fonction de plusieurs facteurs de risque. Par exemple, vous pouvez les bloquer s’ils utilisent des certificats clients comme moyen de gérer les appareils.
 
-- **Bloquer les activités personnalisées**: certaines applications ont des scénarios uniques qui comportent un risque, par exemple, l’envoi de messages avec du contenu sensible dans des applications telles que Microsoft teams ou la marge. Dans ce genre de scénarios, vous pouvez analyser les messages pour rechercher la présence de contenu sensible et les bloquer en temps réel.
+- **Bloquer les activités personnalisées** : certaines applications ont des scénarios uniques qui comportent un risque, par exemple, l’envoi de messages avec du contenu sensible dans des applications telles que Microsoft teams ou la marge. Dans ce genre de scénarios, vous pouvez analyser les messages pour rechercher la présence de contenu sensible et les bloquer en temps réel.
 
 ### <a name="how-session-control-works"></a>Fonctionnement du contrôle de session
 
@@ -82,7 +82,7 @@ Le contrôle d’application par accès conditionnel vous permet de créer des s
 Azure AD l’accès conditionnel permet de transmettre directement les informations d’appareil jointes et conformes à Intune et Azure AD Hybride à Cloud App Security. À partir de là, vous pouvez développer une stratégie d’accès ou de session qui utilise l’état de l’appareil comme filtre. Pour plus d’informations, consultez la [Présentation de la gestion des appareils dans Azure Active Directory](/azure/active-directory/device-management-introduction).
 
 > [!NOTE]
-> Certains navigateurs peuvent nécessiter une configuration supplémentaire telle que l’installation d’une extension. Pour plus d’informations, consultez [prise en charge du navigateur d’accès conditionnel](https://go.microsoft.com/fwlink/?linkid=2102732).
+> Certains navigateurs peuvent nécessiter une configuration supplémentaire telle que l’installation d’une extension. Pour plus d’informations, consultez [prise en charge du navigateur d’accès conditionnel](/azure/active-directory/conditional-access/concept-conditional-access-conditions).
 
 ### <a name="client-certificate-authenticated-devices"></a>Appareils authentifiés par certificat client
 
@@ -133,7 +133,7 @@ De nombreuses organisations qui choisissent d’utiliser des contrôles de sessi
 Vous pouvez bloquer l’accès aux applications clientes mobiles natives et de bureau à l’aide de stratégies d’accès, en définissant le filtre d' **application client** sur **mobile et Desktop**. Certaines applications clientes natives peuvent être reconnues individuellement, tandis que d’autres qui font partie d’une suite d’applications ne peuvent être identifiées qu’en tant qu’application de niveau supérieur. Par exemple, les applications telles que SharePoint Online peuvent uniquement être reconnues en créant une stratégie d’accès appliquée aux applications Office 365.
 
 > [!NOTE]
-> À moins que le filtre d' **application cliente** ne soit spécifiquement défini sur **mobile et Desktop**, la stratégie d’accès résultante s’appliquera uniquement aux sessions de navigateur. Cela a pour but d’empêcher le proxy par inadvertance des sessions utilisateur, qui peut être un sous-utilisateur de l’utilisation de ce filtre. Tandis que la plupart des principaux navigateurs prennent en charge l’exécution d’une vérification de certificat client, certaines applications mobiles et de bureau utilisent des navigateurs intégrés qui peuvent ne pas prendre en charge cette vérification. Par conséquent, l’utilisation de ce filtre peut affecter l’authentification pour ces applications.
+> À moins que le filtre d' **application cliente** ne soit spécifiquement défini sur **mobile et Desktop** , la stratégie d’accès résultante s’appliquera uniquement aux sessions de navigateur. Cela a pour but d’empêcher le proxy par inadvertance des sessions utilisateur, qui peut être un sous-utilisateur de l’utilisation de ce filtre. Tandis que la plupart des principaux navigateurs prennent en charge l’exécution d’une vérification de certificat client, certaines applications mobiles et de bureau utilisent des navigateurs intégrés qui peuvent ne pas prendre en charge cette vérification. Par conséquent, l’utilisation de ce filtre peut affecter l’authentification pour ces applications.
 
 ### <a name="session-controls"></a>Contrôles de session
 
