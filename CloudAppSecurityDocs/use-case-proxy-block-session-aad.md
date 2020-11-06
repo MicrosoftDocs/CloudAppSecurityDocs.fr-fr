@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f145c8f76e205e24703742d4162c8766b2785588
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 3dec3c1729d63649a754098ace7f638ccc3029bc
+ms.sourcegitcommit: e711727f2f00ee3b54e08337a5040449e352ca46
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90877052"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "93185935"
 ---
 # <a name="tutorial-block-download-of-sensitive-information"></a>Tutoriel : Bloquer le téléchargement des informations sensibles
 
@@ -34,7 +34,7 @@ Aujourd’hui, l’administrateur informatique se retrouve confronté à un vér
 
 ## <a name="the-threat"></a>La menace
 
-Un responsable de compte de votre organisation veut vérifier une information dans Salesforce de chez lui pendant le week-end, sur son ordinateur portable personnel. Les données Salesforce peuvent inclure des informations sur la carte de crédit du client ou des données personnelles. Le PC du domicile n’est pas géré. S’il télécharge des documents de Salesforce sur le PC, il risque d’être infecté par des logiciels malveillants. Si la machine est perdue ou volée, elle risque de ne pas être protégée par un mot de passe, et toute personne qui la trouve peut avoir accès à des informations sensibles.
+Un responsable de compte de votre organisation veut vérifier une information dans Salesforce de chez lui pendant le week-end, sur son ordinateur portable personnel. Les données Salesforce peuvent inclure des informations sur la carte de crédit du client ou des données personnelles. Le PC du domicile n’est pas géré. S’il télécharge des documents de Salesforce sur le PC, il risque d’être infecté par des logiciels malveillants. En cas de perte ou de vol de l’appareil, la personne qui le trouve aura accès à des informations sensibles s’il n’est pas protégé par un mot de passe.
 
 ## <a name="the-solution"></a>La solution
 
@@ -66,43 +66,43 @@ Une fois cette tâche terminée, accédez au portail Cloud App Security et crée
 
 ### <a name="step-2-create-a-session-policy"></a>Étape 2 : Créer une stratégie de session
 
-1. Dans le portail Cloud App Security, sélectionnez **Contrôle**, puis **Stratégies**.
+1. Dans le portail Cloud App Security, sélectionnez **Contrôle** , puis **Stratégies**.
 
-2. Dans la page **stratégies**, cliquez sur **créer une stratégie**, puis sur **Stratégie de session**.
+2. Dans la page **stratégies** , cliquez sur **créer une stratégie** , puis sur **Stratégie de session**.
 
-3. Dans la page **Créer une stratégie de session**, attribuez un nom et une description à votre stratégie. Par exemple, **Bloquer les téléchargements à partir de Salesforce pour les appareils non gérés**.
+3. Dans la page **Créer une stratégie de session** , attribuez un nom et une description à votre stratégie. Par exemple, **Bloquer les téléchargements à partir de Salesforce pour les appareils non gérés**.
 
 4. Définissez la **gravité de la stratégie** et la **catégorie**.
 
-5. Pour le **type de contrôle de session**, sélectionnez **Contrôler le téléchargement du fichier (avec inspection)** . Ce paramètre vous permet de surveiller toutes les activités de vos utilisateurs dans une session Salesforce et de contrôler le blocage et la protection des téléchargements en temps réel.
+5. Pour le **type de contrôle de session** , sélectionnez **Contrôler le téléchargement du fichier (avec inspection)** . Ce paramètre vous permet de surveiller toutes les activités de vos utilisateurs dans une session Salesforce et de contrôler le blocage et la protection des téléchargements en temps réel.
 
-6. Sous **Source de l’activité** dans la section **Activités remplissant toutes les conditions suivantes**, sélectionnez les filtres :
+6. Sous **Source de l’activité** dans la section **Activités remplissant toutes les conditions suivantes** , sélectionnez les filtres :
 
-   * **Balise de l'appareil** : Sélectionnez **Différent de**. Sélectionnez ensuite **Conforme Intune**, **Joint à une version hybride d’Azure AD** ou **Certification client valide**. Votre sélection dépend de la méthode utilisée dans votre organisation pour identifier les appareils gérés.
+   * **Balise de l'appareil**  : Sélectionnez **Différent de**. Sélectionnez ensuite **Conforme Intune** , **Joint à une version hybride d’Azure AD** ou **Certification client valide**. Votre sélection dépend de la méthode utilisée dans votre organisation pour identifier les appareils gérés.
 
-   * **Application** : sélectionnez l’application que vous voulez contrôler.
+   * **Application**  : sélectionnez l’application que vous voulez contrôler.
 
-   * **Utilisateurs** : sélectionnez les utilisateurs que vous souhaitez surveiller.
+   * **Utilisateurs**  : sélectionnez les utilisateurs que vous souhaitez surveiller.
 
-7. Vous pouvez également bloquer les téléchargements pour les emplacements qui ne font pas partie de votre réseau d’entreprise. Sous **Source de l’activité** dans la section **Activités remplissant toutes les conditions suivantes**, définissez les filtres suivants :
+7. Vous pouvez également bloquer les téléchargements pour les emplacements qui ne font pas partie de votre réseau d’entreprise. Sous **Source de l’activité** dans la section **Activités remplissant toutes les conditions suivantes** , définissez les filtres suivants :
 
-   * **Adresse IP** ou **Emplacement** : Vous pouvez utiliser l’un de ces deux paramètres pour identifier les emplacements externes à l’entreprise ou inconnus, à partir desquels un utilisateur peut tenter d’accéder à des données sensibles.
+   * **Adresse IP** ou **Emplacement**  : Vous pouvez utiliser l’un de ces deux paramètres pour identifier les emplacements externes à l’entreprise ou inconnus, à partir desquels un utilisateur peut tenter d’accéder à des données sensibles.
 
      > [!NOTE]
      > Si vous souhaitez bloquer les téléchargements À LA FOIS à partir d’appareils non gérés et d’emplacements externes à l’entreprise, vous devez créer deux stratégies de session. Une stratégie définit la **source de l’activité** à l’aide de l’emplacement. L’autre stratégie définit la **source de l’activité** sur des appareils non gérés.
 
-   * **Application** : sélectionnez l’application que vous voulez contrôler.
+   * **Application**  : sélectionnez l’application que vous voulez contrôler.
 
-   * **Utilisateurs** : sélectionnez les utilisateurs que vous souhaitez surveiller.
+   * **Utilisateurs**  : sélectionnez les utilisateurs que vous souhaitez surveiller.
 
-8. Sous **Source de l’activité** dans la section **Fichiers remplissant toutes les conditions suivantes**, définissez les filtres suivants :
+8. Sous **Source de l’activité** dans la section **Fichiers remplissant toutes les conditions suivantes** , définissez les filtres suivants :
 
-   * **Étiquettes de classification** : Si vous utilisez les étiquettes de classification Azure Information Protection, filtrez les fichiers en fonction d’une étiquette de classification Azure Information Protection spécifique.
+   * **Étiquettes de classification**  : Si vous utilisez les étiquettes de classification Azure Information Protection, filtrez les fichiers en fonction d’une étiquette de classification Azure Information Protection spécifique.
 
    * Sélectionnez **Nom du fichier** ou **Type de fichier** pour appliquer des restrictions basées sur le nom ou le type de fichier.
 9. Activez **Inspection du contenu** pour permettre au moteur DLP interne d’analyser vos fichiers à la recherche de contenu sensible.
 
-10. Sous **Actions**, sélectionnez **bloquer**. Personnalisez le message de blocage que recevront vos utilisateurs lorsqu’ils ne parviennent pas à télécharger des fichiers.
+10. Sous **Actions** , sélectionnez **bloquer**. Personnalisez le message de blocage que recevront vos utilisateurs lorsqu’ils ne parviennent pas à télécharger des fichiers.
 
 11. Définissez les alertes que vous souhaitez recevoir lorsque la stratégie est mise en correspondance. Vous pouvez définir une limite pour ne pas recevoir trop d’alertes. Indiquez si vous souhaitez recevoir les alertes sous la forme d’un e-mail, d’un message texte, ou les deux.
 
@@ -114,7 +114,7 @@ Une fois cette tâche terminée, accédez au portail Cloud App Security et crée
 
 2. Ce fichier doit être bloqué et vous devez recevoir le message que vous avez défini sous **Personnaliser les messages de blocage**.
 
-3. Sur le portail Cloud App Security, cliquez sur **Contrôle**, **Stratégies**, puis sur la stratégie que vous avez créée pour afficher le rapport de stratégie. Une correspondance de stratégie de session doit apparaître rapidement.
+3. Sur le portail Cloud App Security, cliquez sur **Contrôle** , **Stratégies** , puis sur la stratégie que vous avez créée pour afficher le rapport de stratégie. Une correspondance de stratégie de session doit apparaître rapidement.
 
 4. Dans le rapport de stratégie, vous pouvez voir quelles connexions ont été redirigées vers Microsoft Cloud App Security pour le contrôle de session, et quels fichiers ont été téléchargés ou bloqués depuis les sessions surveillées.
 

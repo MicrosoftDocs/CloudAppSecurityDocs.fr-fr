@@ -6,12 +6,12 @@ ms.author: shsagir
 ms.service: cloud-app-security
 ms.topic: tutorial
 ms.date: 04/27/2020
-ms.openlocfilehash: 2f06ed5a9eb5b029367b1ff05231b5a35fcc6d19
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 9b8cb1021c3aca223edf4f8b9b2e98d67e014480
+ms.sourcegitcommit: e711727f2f00ee3b54e08337a5040449e352ca46
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85625008"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "93186266"
 ---
 # <a name="tutorial-extend-governance-to-endpoint-remediation"></a>Tutoriel : Étendre la gouvernance à la correction des points de terminaison
 
@@ -46,8 +46,8 @@ Si vous n’avez pas de plan Power Automate, [inscrivez-vous pour obtenir un com
 
 1. Dans Cloud App Security, dans la barre de menus, cliquez sur la roue dentée des paramètres ![Icône des paramètres](media/settings-icon.png "Icône des paramètres") et sélectionnez **Extensions de sécurité**.
 
-1. Dans la page **Extensions de sécurité**, cliquez sur le bouton plus (+) pour générer un nouveau jeton d’API.
-1. Dans la fenêtre contextuelle **Générer un nouveau jeton**, entrez le nom du jeton (par exemple « Flow-Token »), puis cliquez sur **Générer**.
+1. Dans la page **Extensions de sécurité** , cliquez sur le bouton plus (+) pour générer un nouveau jeton d’API.
+1. Dans la fenêtre contextuelle **Générer un nouveau jeton** , entrez le nom du jeton (par exemple « Flow-Token »), puis cliquez sur **Générer**.
 
     ![Capture d’écran de la fenêtre de jeton, montrant l’entrée du nom et le bouton Générer.](media/tutorial-flow-token-generate.png)
 1. Une fois le jeton généré, cliquez sur l’icône de copie à droite du jeton généré, puis cliquez sur **Fermer**. Vous aurez besoin du jeton ultérieurement.
@@ -67,7 +67,7 @@ Si vous n’avez pas de plan Power Automate, [inscrivez-vous pour obtenir un com
 
     ![Capture d’écran de la page de modèles de Power Automate, montrant les résultats de la recherche.](media/tutorial-flow-templates-search.png)
 
-1. Dans la liste des applications, sur la ligne où figure **Connecteur Microsoft Defender ATP**, cliquez sur **Se connecter**.
+1. Dans la liste des applications, sur la ligne où figure **Connecteur Microsoft Defender ATP** , cliquez sur **Se connecter**.
 
     ![Capture d’écran de la page de modèles de Power Automate, montrant le processus de connexion.](media/tutorial-flow-templates-signin.png)
 
@@ -76,17 +76,17 @@ Si vous n’avez pas de plan Power Automate, [inscrivez-vous pour obtenir un com
 > [!NOTE]
 > Si vous avez déjà créé un flux en utilisant un connecteur Azure AD, Power Automate réutilisera automatiquement le jeton. Vous pouvez donc ignorer cette étape.
 
-1. Dans la liste des applications, sur la ligne où figure **Cloud App Security**, cliquez sur **Créer**.
+1. Dans la liste des applications, sur la ligne où figure **Cloud App Security** , cliquez sur **Créer**.
 
     ![Capture d’écran de la page de modèles de Power Automate, montrant le bouton Créer pour Cloud App Security.](media/tutorial-flow-templates-create.png)
 
-1. Dans la fenêtre contextuelle **Cloud App Security**, entrez le nom de la connexion (par exemple « Cloud App Security Token »), collez le jeton d’API que vous avez copié ,puis cliquez sur **Créer**.
+1. Dans la fenêtre contextuelle **Cloud App Security** , entrez le nom de la connexion (par exemple « Cloud App Security Token »), collez le jeton d’API que vous avez copié ,puis cliquez sur **Créer**.
 
     ![Capture d’écran de la fenêtre Cloud App Security, montrant l’entrée du nom et de la clé, et le bouton Créer.](media/tutorial-flow-templates-create-window.png)
 
-1. Dans la liste des applications, sur la ligne où figure **HTTP avec Azure AD**, cliquez sur **Se connecter**.
+1. Dans la liste des applications, sur la ligne où figure **HTTP avec Azure AD** , cliquez sur **Se connecter**.
 
-1. Dans la fenêtre contextuelle **HTTP avec Azure AD**, pour les deux champs **URL de ressource de base** et **URI de la ressource Azure AD**, entrez `https://graph.microsoft.com`, puis cliquez sur **Se connecter** et entrez les informations d’identification d’administrateur que vous voulez utiliser avec le connecteur HTTP avec Azure AD.
+1. Dans la fenêtre contextuelle **HTTP avec Azure AD** , pour les deux champs **URL de ressource de base** et **URI de la ressource Azure AD** , entrez `https://graph.microsoft.com`, puis cliquez sur **Se connecter** et entrez les informations d’identification d’administrateur que vous voulez utiliser avec le connecteur HTTP avec Azure AD.
 
     ![Capture d’écran de la fenêtre HTTP avec Azure AD, montrant les champs des ressources et le bouton de connexion.](media/tutorial-flow-templates-azure.png)
 
@@ -94,17 +94,17 @@ Si vous n’avez pas de plan Power Automate, [inscrivez-vous pour obtenir un com
 
     ![Capture d’écran de la fenêtre des modèles Power Automate, montrant les actions effectuées et le bouton Continuer.](media/tutorial-flow-templates-continue.png)
 
-1. Une fois que tous les connecteurs sont connectés, dans la page du flux, sous **Appliquer à chaque machine**, vous pouvez si vous le souhaitez modifier le commentaire et le type d’analyse, puis cliquer sur **Enregistrer**.
+1. Une fois tous les connecteurs connectés, modifiez si vous le souhaitez le commentaire et le type d’analyse sous **Appliquer à chaque appareil** sur la page du flux, puis cliquez sur **Enregistrer**.
 
     ![Capture d’écran de la page du flux, montrant la section des paramètres d’analyse.](media/tutorial-flow-templates-scan.png)
 
 ## <a name="phase-4-configure-a-policy-to-run-the-flow"></a>Phase 4 : Configurer une stratégie pour exécuter le flux<a name="configure-policy"></a>
 
-1. Dans Cloud App Security, cliquez sur **Contrôle**, puis sur **Stratégies**.
+1. Dans Cloud App Security, cliquez sur **Contrôle** , puis sur **Stratégies**.
 
 1. Dans la liste des stratégies, sur la ligne où la stratégie appropriée s’affiche, choisissez les trois points à la fin de la ligne, puis **Modifier la stratégie**.
 
-1. Sous **Alertes**, sélectionnez **Envoyer des alertes à Flow**, puis **Exécuter l’analyse antivirus avec Windows Defender sur une alerte Cloud App Security**.
+1. Sous **Alertes** , sélectionnez **Envoyer des alertes à Flow** , puis **Exécuter l’analyse antivirus avec Windows Defender sur une alerte Cloud App Security**.
 
     ![Capture d’écran de la page de stratégie, montrant la section des paramètres des alertes.](media/tutorial-flow-templates-alerts.png)
 
