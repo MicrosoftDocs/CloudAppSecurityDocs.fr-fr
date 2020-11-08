@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: itfalcon
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 60314be5b2dba1ec3ff5a35eb7d4e836a2a9d34d
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 57d27e6cda7f4750464b4f1c4330c4776aa79467
+ms.sourcegitcommit: 5367d8fdf99d61719a395728f2ef4b014604e3bc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90881651"
+ms.lasthandoff: 11/08/2020
+ms.locfileid: "94371124"
 ---
 # <a name="how-to-investigate-anomaly-detection-alerts"></a>Comment examiner les alertes de détection d’anomalies
 
@@ -48,16 +48,16 @@ Ce guide fournit des informations sur l’examen et la correction des Cloud App 
 
 Après une investigation appropriée, toutes les alertes de Cloud App Security peuvent être classées comme l’un des types d’activité suivants :
 
-- **Vrai positif (TP)**: alerte sur une activité malveillante confirmée.
-- **Vrai positif sans gravité (B-TP)**: alerte signalant une activité suspecte, mais pas malveillante, comme un test de pénétration ou une autre action suspecte autorisée.
-- **Faux positif (FP)**: alerte sur une activité non malveillante.
+- **Vrai positif (TP)** : alerte sur une activité malveillante confirmée.
+- **Vrai positif sans gravité (B-TP)** : alerte signalant une activité suspecte, mais pas malveillante, comme un test de pénétration ou une autre action suspecte autorisée.
+- **Faux positif (FP)** : alerte sur une activité non malveillante.
 
 ## <a name="general-investigation-steps"></a>Étapes générales de l’investigation
 
 Vous devez suivre les instructions générales suivantes lorsque vous examinez un type d’alerte pour mieux comprendre la menace potentielle avant d’appliquer l’action recommandée.
 
 - Examinez le [score de priorité d’investigation](tutorial-ueba.md#understand-the-investigation-priority-score) de l’utilisateur et comparez-le au reste de l’organisation. Cela vous permettra d’identifier les utilisateurs de votre organisation qui présentent le plus grand risque.
-- Si vous identifiez un **TP**, passez en revue toutes les activités de l’utilisateur pour mieux comprendre l’impact.
+- Si vous identifiez un **TP** , passez en revue toutes les activités de l’utilisateur pour mieux comprendre l’impact.
 - Examinez toutes les activités des utilisateurs pour d’autres indicateurs de compromission et explorez la source et l’étendue de l’impact. Par exemple, passez en revue les informations suivantes sur l’appareil utilisateur et comparez-les aux informations d’appareil connues :
   - Système d’exploitation et version
   - Navigateur et version
@@ -73,16 +73,16 @@ Cette section décrit les alertes indiquant qu’un acteur malveillant peut tent
 
 Activité à partir d’une adresse IP qui a été identifiée comme adresse IP de proxy anonyme par Microsoft Threat Intelligence ou par votre organisation. Ces proxies peuvent être utilisés pour masquer l’adresse IP d’un appareil et peuvent être utilisés pour les activités malveillantes.
 
-**TP**, **B-TP**ou **FP**?
+**TP** , **B-TP** ou **FP** ?
 
 Cette détection utilise un algorithme de Machine Learning qui réduit les incidents de type **« B-TP** », tels que les adresses IP mal identifiées qui sont largement utilisées par les utilisateurs de l’organisation.
 
-1. **TP**: Si vous êtes en mesure de vérifier que l’activité a été effectuée à partir d’une adresse IP anonyme ou TDR.
+1. **TP** : Si vous êtes en mesure de vérifier que l’activité a été effectuée à partir d’une adresse IP anonyme ou TDR.
 
-    **Action recommandée**: suspendre l’utilisateur, marquer l’utilisateur comme compromis et réinitialiser son mot de passe.
-1. **B-TP**: si un utilisateur est connu pour utiliser des adresses IP anonymes dans le cadre de ses tâches. Par exemple, lorsqu’un analyste de la sécurité effectue des tests de sécurité ou d’intrusion pour le compte de l’organisation.
+    **Action recommandée** : suspendre l’utilisateur, marquer l’utilisateur comme compromis et réinitialiser son mot de passe.
+1. **B-TP** : si un utilisateur est connu pour utiliser des adresses IP anonymes dans le cadre de ses tâches. Par exemple, lorsqu’un analyste de la sécurité effectue des tests de sécurité ou d’intrusion pour le compte de l’organisation.
 
-    **Action recommandée**: ignorez l’alerte.
+    **Action recommandée** : ignorez l’alerte.
 
 **Comprendre l’étendue de la violation**
 
@@ -98,16 +98,16 @@ Par défaut, la stratégie est configurée pour inclure uniquement les activité
 
 La détection des emplacements anormaux nécessite une période d’apprentissage initiale de sept jours pendant laquelle les alertes ne sont pas déclenchées pour les nouveaux emplacements.
 
-**TP**, **B-TP**ou **FP**?
+**TP** , **B-TP** ou **FP** ?
 
-1. **TP**: Si vous êtes en mesure de vérifier que l’activité n’a pas été effectuée par un utilisateur légitime.
+1. **TP** : Si vous êtes en mesure de vérifier que l’activité n’a pas été effectuée par un utilisateur légitime.
 
-    **Action recommandée**:
+    **Action recommandée** :
     1. Interrompez l’utilisateur, réinitialisez son mot de passe et identifiez le moment opportun pour réactiver le compte en toute sécurité.
     1. Facultatif : créer un manuel à l’aide de Power automate pour contacter les utilisateurs détectés comme se connectant à des emplacements peu fréquents, ainsi que leurs responsables, pour vérifier leur activité.
-1. **B-TP**: si un utilisateur est connu pour être à cet emplacement. Par exemple, lorsqu’un utilisateur voyage fréquemment et se trouve actuellement dans l’emplacement spécifié.
+1. **B-TP** : si un utilisateur est connu pour être à cet emplacement. Par exemple, lorsqu’un utilisateur voyage fréquemment et se trouve actuellement dans l’emplacement spécifié.
 
-    **Action recommandée**:
+    **Action recommandée** :
     1. Ignorez l’alerte et modifiez la stratégie pour exclure l’utilisateur.
     1. Créez un groupe d’utilisateurs pour les voyageurs fréquents, importez le groupe dans Cloud App Security et excluez les utilisateurs de cette alerte.
     1. Facultatif : créer un manuel à l’aide de Power automate pour contacter les utilisateurs détectés comme se connectant à des emplacements peu fréquents, ainsi que leurs responsables, pour vérifier leur activité.
@@ -120,14 +120,14 @@ La détection des emplacements anormaux nécessite une période d’apprentissag
 
 Activité à partir d’une adresse IP qui a été identifiée comme dangereuse par Microsoft Threat Intelligence ou par votre organisation. Ces adresses IP ont été identifiées comme étant impliquées dans des activités malveillantes, telles que la commande et le contrôle du botnet (C&C) et peuvent indiquer un compte compromis.
 
-**TP**, **B-TP**ou **FP**?
+**TP** , **B-TP** ou **FP** ?
 
-1. **TP**: Si vous êtes en mesure de vérifier que l’activité n’a pas été effectuée par un utilisateur légitime.
+1. **TP** : Si vous êtes en mesure de vérifier que l’activité n’a pas été effectuée par un utilisateur légitime.
 
-    **Action recommandée**: suspendre l’utilisateur, marquer l’utilisateur comme compromis et réinitialiser son mot de passe.
-1. **B-TP**: si un utilisateur est connu pour utiliser l’adresse IP dans le cadre de ses tâches. Par exemple, lorsqu’un analyste de la sécurité effectue des tests de sécurité ou d’intrusion pour le compte de l’organisation.
+    **Action recommandée** : suspendre l’utilisateur, marquer l’utilisateur comme compromis et réinitialiser son mot de passe.
+1. **B-TP** : si un utilisateur est connu pour utiliser l’adresse IP dans le cadre de ses tâches. Par exemple, lorsqu’un analyste de la sécurité effectue des tests de sécurité ou d’intrusion pour le compte de l’organisation.
 
-    **Action recommandée**: ignorez l’alerte.
+    **Action recommandée** : ignorez l’alerte.
 
 **Comprendre l’étendue de la violation**
 
@@ -145,19 +145,19 @@ Pour améliorer la précision et l’alerte uniquement lorsqu’il existe une fo
 
 L’établissement du modèle d’activité d’un nouvel utilisateur nécessite une période d’apprentissage initiale de sept jours pendant laquelle les alertes ne sont pas déclenchées pour les nouveaux emplacements.
 
-**TP**, **B-TP**ou **FP**?
+**TP** , **B-TP** ou **FP** ?
 
 Cette détection utilise un algorithme de Machine Learning qui ignore les conditions de **TP (B-TP** ) évidentes, par exemple lorsque les adresses IP des deux côtés du trajet sont considérées comme sûres, que le voyage est approuvé et exclu du déclenchement de la détection de voyage impossible. Par exemple, les deux côtés sont considérés comme sécurisés s’ils sont [marqués comme entreprise](ip-tags.md). Toutefois, si l’adresse IP d’un seul côté du trajet est considérée comme sécurisée, la détection est déclenchée normalement.
 
-1. **TP**: Si vous êtes en mesure de vérifier que l’emplacement dans l’alerte de voyage impossible est improbable pour l’utilisateur.
+1. **TP** : Si vous êtes en mesure de vérifier que l’emplacement dans l’alerte de voyage impossible est improbable pour l’utilisateur.
 
-    **Action recommandée**: suspendre l’utilisateur, marquer l’utilisateur comme compromis et réinitialiser son mot de passe.
+    **Action recommandée** : suspendre l’utilisateur, marquer l’utilisateur comme compromis et réinitialiser son mot de passe.
 1. **FP** (voyages utilisateur non détectés) : Si vous êtes en mesure de vérifier que l’utilisateur a récemment réussi à accéder à la destination indiquée dans l’alerte. Par exemple, si le téléphone d’un utilisateur en mode avion reste connecté à des services tels qu’Exchange Online sur votre réseau d’entreprise tout en se déplaçant vers un autre emplacement. Lorsque l’utilisateur arrive au nouvel emplacement, le téléphone se connecte à Exchange Online pour déclencher l’alerte de voyage impossible.
 
-    **Action recommandée**: ignorez l’alerte.
+    **Action recommandée** : ignorez l’alerte.
 1. **FP** (sans balise VPN) : Si vous êtes en mesure de vérifier que la plage d’adresses IP provient d’un VPN approuvé.
 
-    **Action recommandée**: ignorez l’alerte et [Ajoutez la plage d’adresses IP du VPN](ip-tags.md#create-an-ip-address-range) à Cloud App Security puis utilisez-la pour baliser la plage d’adresses IP du VPN.
+    **Action recommandée** : ignorez l’alerte et [Ajoutez la plage d’adresses IP du VPN](ip-tags.md#create-an-ip-address-range) à Cloud App Security puis utilisez-la pour baliser la plage d’adresses IP du VPN.
 
 **Comprendre l’étendue de la violation**
 
@@ -171,19 +171,19 @@ Cette détection utilise un algorithme de Machine Learning qui ignore les condit
 
 Le nom d’application OAuth trompeur identifie les applications avec des caractères, tels que des lettres étrangères, qui ressemblent à des lettres latines. Cela peut indiquer une tentative de déguisement d’une application malveillante en tant qu’application connue et approuvée afin que les attaquants puissent tromper les utilisateurs pour qu’ils téléchargent leur application malveillante.
 
-**TP**, **B-TP**ou **FP**?
+**TP** , **B-TP** ou **FP** ?
 
-1. **TP**: Si vous êtes en mesure de vérifier que l’application a un nom trompeur.
+1. **TP** : Si vous êtes en mesure de vérifier que l’application a un nom trompeur.
 
-    **Action recommandée**: passez en revue le niveau d’autorisation demandé par cette application et les utilisateurs qui ont accordé l’accès. En fonction de votre investigation, vous pouvez choisir d’interdire l’accès à cette application.
+    **Action recommandée** : passez en revue le niveau d’autorisation demandé par cette application et les utilisateurs qui ont accordé l’accès. En fonction de votre investigation, vous pouvez choisir d’interdire l’accès à cette application.
 
 Pour interdire l’accès à l’application, dans la page **applications OAuth** , sur la ligne dans laquelle l’application que vous souhaitez interdire s’affiche, cliquez sur l’icône d’interdiction.
     - Vous pouvez choisir de signaler aux utilisateurs que l’application qu’ils ont installée et autorisée a été interdite. La notification signale aux utilisateurs que l’application sera désactivée et qu’ils n’auront pas accès à l’application connectée. Si vous ne souhaitez pas les en informer, désélectionnez **Avertir les utilisateurs qui ont accordé l’accès à cette application interdite** dans la boîte de dialogue.
     - Nous vous recommandons d’avertir les utilisateurs que leur application est sur le point d’être exclue.
 
-1. **FP**: Si vous devez confirmer que l’application a un nom trompeur, mais qu’elle a une utilisation professionnelle légitime dans l’organisation.
+1. **FP** : Si vous devez confirmer que l’application a un nom trompeur, mais qu’elle a une utilisation professionnelle légitime dans l’organisation.
 
-    **Action recommandée**: ignorez l’alerte.
+    **Action recommandée** : ignorez l’alerte.
 
 **Comprendre l’étendue de la violation**
 
@@ -193,18 +193,18 @@ Pour interdire l’accès à l’application, dans la page **applications OAuth*
 
 Le nom de l’éditeur OAuth trompeur pour une application OAuth identifie les applications avec des caractères, tels que des lettres étrangères, qui ressemblent à des lettres latines. Cela peut indiquer une tentative de déguisement d’une application malveillante en tant qu’application connue et approuvée afin que les attaquants puissent tromper les utilisateurs pour qu’ils téléchargent leur application malveillante.
 
-**TP**, **B-TP**ou **FP**?
+**TP** , **B-TP** ou **FP** ?
 
-1. **TP**: Si vous êtes en mesure de vérifier que l’application a un nom d’éditeur trompeur.
+1. **TP** : Si vous êtes en mesure de vérifier que l’application a un nom d’éditeur trompeur.
 
-    **Action recommandée**: passez en revue le niveau d’autorisation demandé par cette application et les utilisateurs qui ont accordé l’accès. En fonction de votre investigation, vous pouvez choisir d’interdire l’accès à cette application.
-1. **FP**: Si vous devez confirmer que l’application a un nom d’éditeur trompeur, mais qu’il s’agit d’un éditeur légitime.
+    **Action recommandée** : passez en revue le niveau d’autorisation demandé par cette application et les utilisateurs qui ont accordé l’accès. En fonction de votre investigation, vous pouvez choisir d’interdire l’accès à cette application.
+1. **FP** : Si vous devez confirmer que l’application a un nom d’éditeur trompeur, mais qu’il s’agit d’un éditeur légitime.
 
-    **Action recommandée**: ignorez l’alerte.
+    **Action recommandée** : ignorez l’alerte.
 
 **Comprendre l’étendue de la violation**
 
-1. Dans la page **applications OAuth** , cliquez sur l’application pour ouvrir le **tiroir**de l’application, puis cliquez sur **activité associée**. Cela ouvre la page **Journal d’activité** filtrée pour les activités effectuées par l’application. N’oubliez pas que certaines applications effectuent des activités qui sont enregistrées comme ayant été effectuées par un utilisateur. Ces activités sont automatiquement filtrées en dehors des résultats dans le journal d’activité. Pour plus d’informations sur l’utilisation du journal d’activité, consultez [Journal d’activité](activity-filters.md).
+1. Dans la page **applications OAuth** , cliquez sur l’application pour ouvrir le **tiroir** de l’application, puis cliquez sur **activité associée**. Cela ouvre la page **Journal d’activité** filtrée pour les activités effectuées par l’application. N’oubliez pas que certaines applications effectuent des activités qui sont enregistrées comme ayant été effectuées par un utilisateur. Ces activités sont automatiquement filtrées en dehors des résultats dans le journal d’activité. Pour plus d’informations sur l’utilisation du journal d’activité, consultez [Journal d’activité](activity-filters.md).
 1. Si vous soupçonnez qu’une application est suspecte, nous vous recommandons d’examiner le nom et le serveur de publication de l’application dans différents magasins d’applications. Lorsque vous vérifiez les magasins d’applications, vous vous concentrez sur les types d’applications suivants :
     - Applications avec un faible nombre de téléchargements.
     - Applications avec une évaluation faible, un faible score ou de mauvais commentaires.
@@ -225,14 +225,14 @@ Activités dans une session unique indiquant qu’un utilisateur a effectué un 
 
 L’établissement du modèle d’activité d’un nouvel utilisateur nécessite une période d’apprentissage initiale de sept jours pendant laquelle les alertes ne sont pas déclenchées pour les nouveaux emplacements.
 
-**TP**, **B-TP**ou **FP**?
+**TP** , **B-TP** ou **FP** ?
 
-1. **TP**: Si vous devez confirmer que les suppressions n’ont pas été autorisées.
+1. **TP** : Si vous devez confirmer que les suppressions n’ont pas été autorisées.
 
-    **Action recommandée**: suspendre l’utilisateur, réinitialiser son mot de passe et analyser tous les appareils à la recherche de menaces malveillantes. Examinez toutes les activités des utilisateurs pour d’autres indicateurs de compromission et explorez l’étendue de l’impact.
-1. **FP**: si, après votre investigation, vous êtes en mesure de vérifier que l’administrateur a été autorisé à effectuer ces activités de suppression.
+    **Action recommandée** : suspendre l’utilisateur, réinitialiser son mot de passe et analyser tous les appareils à la recherche de menaces malveillantes. Examinez toutes les activités des utilisateurs pour d’autres indicateurs de compromission et explorez l’étendue de l’impact.
+1. **FP** : si, après votre investigation, vous êtes en mesure de vérifier que l’administrateur a été autorisé à effectuer ces activités de suppression.
 
-    **Action recommandée**: ignorez l’alerte.
+    **Action recommandée** : ignorez l’alerte.
 
 **Comprendre l’étendue de la violation**
 
@@ -248,16 +248,16 @@ Activités dans une session unique indiquant qu’un utilisateur a effectué un 
 
 L’établissement du modèle d’activité d’un nouvel utilisateur nécessite une période d’apprentissage initiale de sept jours pendant laquelle les alertes ne sont pas déclenchées pour les nouveaux emplacements.
 
-**TP**, **B-TP**ou **FP**?
+**TP** , **B-TP** ou **FP** ?
 
 Pour améliorer la précision et l’alerte uniquement lorsqu’il existe une indication forte d’une violation, cette détection établit une ligne de base sur chaque environnement de l’organisation afin de réduire les incidents de **B-TP** , par exemple un administrateur ayant légitimement créé plus de machines virtuelles que la ligne de base établie, et alerte uniquement lorsque le comportement inhabituel est détecté.
 
-- **TP**: Si vous êtes en mesure de vérifier que les activités de création n’ont pas été effectuées par un utilisateur légitime.
+- **TP** : Si vous êtes en mesure de vérifier que les activités de création n’ont pas été effectuées par un utilisateur légitime.
 
-    **Action recommandée**: suspendre l’utilisateur, réinitialiser son mot de passe et analyser tous les appareils à la recherche de menaces malveillantes. Examinez toutes les activités des utilisateurs pour d’autres indicateurs de compromission et explorez l’étendue de l’impact. En outre, contactez l’utilisateur, confirmez les actions légitimes, puis veillez à désactiver ou supprimer les machines virtuelles compromises.
-- **B-TP**: si, après votre investigation, vous êtes en mesure de vérifier que l’administrateur a été autorisé à effectuer ces activités de création.
+    **Action recommandée** : suspendre l’utilisateur, réinitialiser son mot de passe et analyser tous les appareils à la recherche de menaces malveillantes. Examinez toutes les activités des utilisateurs pour d’autres indicateurs de compromission et explorez l’étendue de l’impact. En outre, contactez l’utilisateur, confirmez les actions légitimes, puis veillez à désactiver ou supprimer les machines virtuelles compromises.
+- **B-TP** : si, après votre investigation, vous êtes en mesure de vérifier que l’administrateur a été autorisé à effectuer ces activités de création.
 
-    **Action recommandée**: ignorez l’alerte.
+    **Action recommandée** : ignorez l’alerte.
 
 **Comprendre l’étendue de la violation**
 
@@ -272,16 +272,16 @@ Activités indiquant qu’un utilisateur a effectué une action de création de 
 
 L’établissement du modèle d’activité d’un nouvel utilisateur nécessite une période d’apprentissage initiale de sept jours pendant laquelle les alertes ne sont pas déclenchées pour les nouveaux emplacements.
 
-**TP**, **B-TP**ou **FP**?
+**TP** , **B-TP** ou **FP** ?
 
 Pour améliorer la précision et l’alerte uniquement lorsqu’il existe une indication forte d’une violation, cette détection établit une ligne de base sur chaque environnement de l’organisation afin de réduire les incidents de **B-TP** .
 
-- **TP**: Si vous êtes en mesure de vérifier que les activités de création n’ont pas été effectuées par un utilisateur légitime.
+- **TP** : Si vous êtes en mesure de vérifier que les activités de création n’ont pas été effectuées par un utilisateur légitime.
 
-    **Action recommandée**: suspendre l’utilisateur, réinitialiser son mot de passe et analyser tous les appareils à la recherche de menaces malveillantes. Examinez toutes les activités des utilisateurs pour d’autres indicateurs de compromission et explorez l’étendue de l’impact. En outre, contactez l’utilisateur, confirmez ses actions légitimes, puis veillez à désactiver ou supprimer les ressources cloud compromises.
-- **B-TP**: si, après votre investigation, vous êtes en mesure de vérifier que l’administrateur a été autorisé à effectuer ces activités de création.
+    **Action recommandée** : suspendre l’utilisateur, réinitialiser son mot de passe et analyser tous les appareils à la recherche de menaces malveillantes. Examinez toutes les activités des utilisateurs pour d’autres indicateurs de compromission et explorez l’étendue de l’impact. En outre, contactez l’utilisateur, confirmez ses actions légitimes, puis veillez à désactiver ou supprimer les ressources cloud compromises.
+- **B-TP** : si, après votre investigation, vous êtes en mesure de vérifier que l’administrateur a été autorisé à effectuer ces activités de création.
 
-    **Action recommandée**: ignorez l’alerte.
+    **Action recommandée** : ignorez l’alerte.
 
 **Comprendre l’étendue de la violation**
 
@@ -296,14 +296,14 @@ Cette section décrit les alertes indiquant qu’un acteur malveillant peut tent
 
 L’activité effectuée par un utilisateur terminé peut indiquer qu’un employé terminé qui a toujours accès aux ressources de l’entreprise tente d’effectuer une activité malveillante. Cloud App Security Profile les utilisateurs de l’organisation et déclenche une alerte lorsqu’un utilisateur terminé effectue une activité.
 
-**TP**, **B-TP**ou **FP**?
+**TP** , **B-TP** ou **FP** ?
 
-1. **TP**: Si vous êtes en mesure de vérifier que l’utilisateur terminé a toujours accès à certaines ressources de l’entreprise et exécute des activités.
+1. **TP** : Si vous êtes en mesure de vérifier que l’utilisateur terminé a toujours accès à certaines ressources de l’entreprise et exécute des activités.
 
-    **Action recommandée**: désactiver l’utilisateur.
-1. **B-TP**: Si vous êtes en mesure de déterminer que l’utilisateur a été temporairement désactivé ou a été supprimé puis réinscrit.
+    **Action recommandée** : désactiver l’utilisateur.
+1. **B-TP** : Si vous êtes en mesure de déterminer que l’utilisateur a été temporairement désactivé ou a été supprimé puis réinscrit.
 
-    **Action recommandée**: ignorez l’alerte.
+    **Action recommandée** : ignorez l’alerte.
 
 **Comprendre l’étendue de la violation**
 
@@ -318,14 +318,14 @@ L’activité effectuée par un utilisateur terminé peut indiquer qu’un emplo
 
 Activités dans une session unique indiquant qu’un utilisateur a effectué des modifications suspectes dans le service de journalisation AWS CloudTrail. Cela peut indiquer une tentative de violation de votre organisation. Lors de la désactivation de CloudTrail, les modifications opérationnelles ne sont plus enregistrées. Une personne malveillante peut effectuer des activités malveillantes tout en évitant un événement d’audit CloudTrail, tel que la modification d’un compartiment S3 de privé à public.
 
-**TP**, **B-TP**ou **FP**?
+**TP** , **B-TP** ou **FP** ?
 
-1. **TP**: Si vous êtes en mesure de vérifier que l’activité n’a pas été effectuée par un utilisateur légitime.
+1. **TP** : Si vous êtes en mesure de vérifier que l’activité n’a pas été effectuée par un utilisateur légitime.
 
-    **Action recommandée**: suspendre l’utilisateur, réinitialiser son mot de passe et inverser l’activité CloudTrail.
-1. **FP**: Si vous êtes en mesure de vérifier que l’utilisateur a désactivé le service CloudTrail de manière légitime.
+    **Action recommandée** : suspendre l’utilisateur, réinitialiser son mot de passe et inverser l’activité CloudTrail.
+1. **FP** : Si vous êtes en mesure de vérifier que l’utilisateur a désactivé le service CloudTrail de manière légitime.
 
-    **Action recommandée**: ignorez l’alerte.
+    **Action recommandée** : ignorez l’alerte.
 
 **Comprendre l’étendue de la violation**
 
@@ -336,14 +336,14 @@ Activités dans une session unique indiquant qu’un utilisateur a effectué des
 
 Activités dans une session unique indiquant qu’un utilisateur a effectué des suppressions suspectes d’un courrier électronique. Cela peut indiquer une tentative de violation de votre organisation, par exemple des attaquants tentant de masquer des opérations en supprimant des e-mails relatifs à des activités de courrier indésirable.
 
-**TP**, **B-TP**ou **FP**?
+**TP** , **B-TP** ou **FP** ?
 
-1. **TP**: Si vous êtes en mesure de vérifier que l’activité n’a pas été effectuée par un utilisateur légitime.
+1. **TP** : Si vous êtes en mesure de vérifier que l’activité n’a pas été effectuée par un utilisateur légitime.
 
-    **Action recommandée**: suspendre l’utilisateur, marquer l’utilisateur comme compromis et réinitialiser son mot de passe.
-1. **FP**: Si vous êtes en mesure de vérifier que l’utilisateur a légitimement créé une règle pour supprimer des messages.
+    **Action recommandée** : suspendre l’utilisateur, marquer l’utilisateur comme compromis et réinitialiser son mot de passe.
+1. **FP** : Si vous êtes en mesure de vérifier que l’utilisateur a légitimement créé une règle pour supprimer des messages.
 
-    **Action recommandée**: ignorez l’alerte.
+    **Action recommandée** : ignorez l’alerte.
 
 **Comprendre l’étendue de la violation**
 
@@ -359,14 +359,14 @@ Activités dans une session unique indiquant qu’un utilisateur a effectué des
 
 Activités indiquant qu’une personne malveillante a obtenu l’accès à la boîte de réception d’un utilisateur et créé une règle suspecte. Les règles de manipulation, telles que la suppression ou le déplacement de messages ou de dossiers, à partir de la boîte de réception d’un utilisateur peuvent être une tentative d’exfiltrer les informations de votre organisation. De même, ils peuvent indiquer une tentative de manipulation d’informations qu’un utilisateur voit ou d’utiliser dans sa boîte de réception pour distribuer le courrier indésirable, les e-mails hameçons ou les logiciels malveillants. Cloud App Security Profile votre environnement et déclenche des alertes lorsque des règles de manipulation de boîtes de réception suspectes sont détectées dans la boîte de réception d’un utilisateur. Cela peut indiquer que le compte de l’utilisateur est compromis.
 
-**TP**, **B-TP**ou **FP**?
+**TP** , **B-TP** ou **FP** ?
 
-1. **TP**: Si vous êtes en mesure de confirmer qu’une règle de la boîte de réception malveillante a été créée et que le compte a été compromis.
+1. **TP** : Si vous êtes en mesure de confirmer qu’une règle de la boîte de réception malveillante a été créée et que le compte a été compromis.
 
-    **Action recommandée**: suspendre l’utilisateur, réinitialiser son mot de passe et supprimer la règle de transfert.
-1. **FP**: Si vous êtes en mesure de confirmer qu’un utilisateur a créé la règle de manière légitime.
+    **Action recommandée** : suspendre l’utilisateur, réinitialiser son mot de passe et supprimer la règle de transfert.
+1. **FP** : Si vous êtes en mesure de confirmer qu’un utilisateur a créé la règle de manière légitime.
 
-    **Action recommandée**: ignorez l’alerte.
+    **Action recommandée** : ignorez l’alerte.
 
 **Comprendre l’étendue de la violation**
 
@@ -388,14 +388,14 @@ Activités indiquant qu’un attaquant a compromis un compte d’utilisateur et 
 
 L’établissement du modèle d’activité d’un nouvel utilisateur nécessite une période d’apprentissage initiale de sept jours pendant laquelle les alertes ne sont pas déclenchées pour les nouveaux emplacements.
 
-**TP**, **B-TP**ou **FP**?
+**TP** , **B-TP** ou **FP** ?
 
-1. **TP**: Si vous êtes en mesure de vérifier que l’activité n’a pas été effectuée par un administrateur légitime.
+1. **TP** : Si vous êtes en mesure de vérifier que l’activité n’a pas été effectuée par un administrateur légitime.
 
-    **Action recommandée**: suspendre l’utilisateur, marquer l’utilisateur comme compromis et réinitialiser son mot de passe.
-1. **FP**: Si vous êtes en mesure de confirmer qu’un administrateur a réalisé légitimement le volume inhabituel d’activités d’administration.
+    **Action recommandée** : suspendre l’utilisateur, marquer l’utilisateur comme compromis et réinitialiser son mot de passe.
+1. **FP** : Si vous êtes en mesure de confirmer qu’un administrateur a réalisé légitimement le volume inhabituel d’activités d’administration.
 
-    **Action recommandée**: ignorez l’alerte.
+    **Action recommandée** : ignorez l’alerte.
 
 **Comprendre l’étendue de la violation**
 
@@ -414,28 +414,28 @@ Les tentatives de connexion ayant échoué peuvent indiquer une tentative de vio
 
 L’établissement du modèle d’activité d’un nouvel utilisateur nécessite une période d’apprentissage initiale de sept jours pendant laquelle les alertes ne sont pas déclenchées pour les nouveaux emplacements.
 
-**TP**, **B-TP**ou **FP**?
+**TP** , **B-TP** ou **FP** ?
 
 Cette stratégie est basée sur l’apprentissage du comportement de connexion normal d’un utilisateur. Lorsqu’un écart par rapport à la norme est détecté, une alerte est déclenchée. Si la détection commence à voir que le même comportement continue, l’alerte est déclenchée une seule fois.
 
 1. **TP** (MFA échoue) : Si vous êtes en mesure de vérifier que l’authentification multifacteur fonctionne correctement, il peut s’agir d’une tentative d’attaque par force brute.
 
-    **Actions recommandées** :
+    **Actions recommandées**  :
     1. Interrompez l’utilisateur, marquez l’utilisateur comme compromis et réinitialisez son mot de passe.
     1. Recherchez l’application qui a effectué les authentifications ayant échoué et reconfigurez-la.
     1. Recherchez d’autres utilisateurs connectés à l’heure de l’activité, car ils peuvent également être compromis. Interrompez l’utilisateur, marquez l’utilisateur comme compromis et réinitialisez son mot de passe.
 1. **B-TP** (MFA échoue) : Si vous êtes en mesure de vérifier que l’alerte est due à un problème d’authentification mfa.
 
-    **Action recommandée**: créez un manuel à l’aide de Power automate pour contacter l’utilisateur et vérifier s’il rencontre des problèmes avec mfa.
+    **Action recommandée** : créez un manuel à l’aide de Power automate pour contacter l’utilisateur et vérifier s’il rencontre des problèmes avec mfa.
 1. **B-TP** (application mal configurée) : Si vous êtes en mesure de confirmer qu’une application mal configurée tente de se connecter à un service à plusieurs moments avec des informations d’identification expirées.
 
-    **Action recommandée**: ignorez l’alerte.
+    **Action recommandée** : ignorez l’alerte.
 1. **B-TP** (mot de passe modifié) : Si vous êtes en mesure de confirmer qu’un utilisateur a modifié son mot de passe récemment, mais qu’il n’a pas affecté les informations d’identification sur les partages réseau.
 
-    **Action recommandée**: ignorez l’alerte.
+    **Action recommandée** : ignorez l’alerte.
 1. **B-TP** (test de sécurité) : Si vous êtes en mesure de confirmer qu’un test de sécurité ou d’intrusion est effectué par des analystes de la sécurité au nom de l’organisation.
 
-    **Action recommandée**: ignorez l’alerte.
+    **Action recommandée** : ignorez l’alerte.
 
 **Comprendre l’étendue de la violation**
 
@@ -459,14 +459,14 @@ Activités dans une session unique indiquant qu’un utilisateur a effectué un 
 
 L’établissement du modèle d’activité d’un nouvel utilisateur nécessite une période d’apprentissage initiale de sept jours pendant laquelle les alertes ne sont pas déclenchées pour les nouveaux emplacements.
 
-**TP**, **B-TP**ou **FP**?
+**TP** , **B-TP** ou **FP** ?
 
-1. **TP**: Si vous êtes en mesure de vérifier que l’activité n’a pas été effectuée par un utilisateur légitime.
+1. **TP** : Si vous êtes en mesure de vérifier que l’activité n’a pas été effectuée par un utilisateur légitime.
 
-    **Action recommandée**: supprimer l’accès de partage de Power bi. Si vous êtes en mesure de vérifier que le compte est compromis, interrompez l’utilisateur, marquez l’utilisateur comme compromis et réinitialisez son mot de passe.
-1. **FP**: Si vous êtes en mesure de vérifier que l’utilisateur a une justification pour partager ces rapports.
+    **Action recommandée** : supprimer l’accès de partage de Power bi. Si vous êtes en mesure de vérifier que le compte est compromis, interrompez l’utilisateur, marquez l’utilisateur comme compromis et réinitialisez son mot de passe.
+1. **FP** : Si vous êtes en mesure de vérifier que l’utilisateur a une justification pour partager ces rapports.
 
-    **Action recommandée**: ignorez l’alerte.
+    **Action recommandée** : ignorez l’alerte.
 
 **Comprendre l’étendue de la violation**
 
@@ -477,14 +477,14 @@ L’établissement du modèle d’activité d’un nouvel utilisateur nécessite
 
 Activités indiquant qu’un utilisateur a partagé un rapport Power BI qui peut contenir des informations sensibles identifiées à l’aide de NLP pour analyser les métadonnées du rapport. Le rapport a été partagé avec une adresse de messagerie externe, publiée sur le Web, ou un instantané a été remis à une adresse de messagerie abonnée en externe. Cela peut indiquer une tentative de violation de votre organisation.
 
-**TP**, **B-TP**ou **FP**?
+**TP** , **B-TP** ou **FP** ?
 
-1. **TP**: Si vous êtes en mesure de vérifier que l’activité n’a pas été effectuée par un utilisateur légitime.
+1. **TP** : Si vous êtes en mesure de vérifier que l’activité n’a pas été effectuée par un utilisateur légitime.
 
-    **Action recommandée**: supprimer l’accès de partage de Power bi. Si vous êtes en mesure de vérifier que le compte est compromis, interrompez l’utilisateur, marquez l’utilisateur comme compromis et réinitialisez son mot de passe.
-1. **FP**: Si vous êtes en mesure de vérifier que l’utilisateur a une justification pour partager ces rapports.
+    **Action recommandée** : supprimer l’accès de partage de Power bi. Si vous êtes en mesure de vérifier que le compte est compromis, interrompez l’utilisateur, marquez l’utilisateur comme compromis et réinitialisez son mot de passe.
+1. **FP** : Si vous êtes en mesure de vérifier que l’utilisateur a une justification pour partager ces rapports.
 
-    **Action recommandée**: ignorez l’alerte.
+    **Action recommandée** : ignorez l’alerte.
 
 **Comprendre l’étendue de la violation**
 
@@ -499,17 +499,17 @@ Dans certains logiciels, il existe des options permettant d’autoriser d’autr
 
 L’établissement du modèle d’activité d’un nouvel utilisateur nécessite une période d’apprentissage initiale de sept jours pendant laquelle les alertes ne sont pas déclenchées pour les nouveaux emplacements.
 
-**TP**, **B-TP**ou **FP**?
+**TP** , **B-TP** ou **FP** ?
 
-1. **TP**: Si vous êtes en mesure de vérifier que l’activité n’a pas été effectuée par un utilisateur légitime.
+1. **TP** : Si vous êtes en mesure de vérifier que l’activité n’a pas été effectuée par un utilisateur légitime.
 
-    **Action recommandée**: suspendre l’utilisateur, marquer l’utilisateur comme compromis et réinitialiser son mot de passe.
+    **Action recommandée** : suspendre l’utilisateur, marquer l’utilisateur comme compromis et réinitialiser son mot de passe.
 1. **FP** (comportement inhabituel) : Si vous êtes en mesure de confirmer que l’utilisateur a effectué des activités inhabituelles ou plus d’activités que la base de référence établie.
 
-    **Action recommandée**: ignorez l’alerte.
-1. **FP**: Si vous êtes en mesure de vérifier que les applications, telles que les équipes, empruntent l’identité de l’utilisateur.
+    **Action recommandée** : ignorez l’alerte.
+1. **FP** : Si vous êtes en mesure de vérifier que les applications, telles que les équipes, empruntent l’identité de l’utilisateur.
 
-    **Action recommandée**: passez en revue les actions et ignorez l’alerte si nécessaire.
+    **Action recommandée** : passez en revue les actions et ignorez l’alerte si nécessaire.
 
 **Comprendre l’étendue de la violation**
 
@@ -525,14 +525,14 @@ Cette section décrit les alertes indiquant qu’un acteur malveillant peut tent
 
 Activités indiquant qu’une personne malveillante a obtenu l’accès à la boîte de réception d’un utilisateur et créé une règle suspecte. Les règles de manipulation, telles que transférer l’ensemble ou des e-mails spécifiques à un autre compte de messagerie, peuvent être une tentative d’exfiltrer les informations de votre organisation. Cloud App Security Profile votre environnement et déclenche des alertes lorsque des règles de manipulation de boîtes de réception suspectes sont détectées dans la boîte de réception d’un utilisateur. Cela peut indiquer que le compte de l’utilisateur est compromis.
 
-**TP**, **B-TP**ou **FP**?
+**TP** , **B-TP** ou **FP** ?
 
-1. **TP**: Si vous êtes en mesure de confirmer qu’une règle de transfert de boîte de réception malveillante a été créée et que le compte a été compromis.
+1. **TP** : Si vous êtes en mesure de confirmer qu’une règle de transfert de boîte de réception malveillante a été créée et que le compte a été compromis.
 
-    **Action recommandée**: suspendre l’utilisateur, réinitialiser son mot de passe et supprimer la règle de transfert.
-1. **FP**: Si vous êtes en mesure de vérifier que l’utilisateur a créé une règle de transfert vers un compte de messagerie externe nouveau ou personnel pour des raisons légitimes.
+    **Action recommandée** : suspendre l’utilisateur, réinitialiser son mot de passe et supprimer la règle de transfert.
+1. **FP** : Si vous êtes en mesure de vérifier que l’utilisateur a créé une règle de transfert vers un compte de messagerie externe nouveau ou personnel pour des raisons légitimes.
 
-    **Action recommandée**: ignorez l’alerte.
+    **Action recommandée** : ignorez l’alerte.
 
 **Comprendre l’étendue de la violation**
 
@@ -553,17 +553,17 @@ Activités indiquant qu’un utilisateur a effectué un nombre inhabituel de té
 
 L’établissement du modèle d’activité d’un nouvel utilisateur nécessite une période d’apprentissage initiale de sept jours pendant laquelle les alertes ne sont pas déclenchées pour les nouveaux emplacements.
 
-**TP**, **B-TP**ou **FP**?
+**TP** , **B-TP** ou **FP** ?
 
-1. **TP**: Si vous êtes en mesure de vérifier que l’activité n’a pas été effectuée par un utilisateur légitime.
+1. **TP** : Si vous êtes en mesure de vérifier que l’activité n’a pas été effectuée par un utilisateur légitime.
 
-    **Action recommandée**: suspendre l’utilisateur, marquer l’utilisateur comme compromis et réinitialiser son mot de passe.
+    **Action recommandée** : suspendre l’utilisateur, marquer l’utilisateur comme compromis et réinitialiser son mot de passe.
 1. **FP** (comportement inhabituel) : Si vous pouvez vérifier que l’utilisateur a effectué légitimement plus d’activités de téléchargement de fichiers que la base de référence établie.
 
-    **Action recommandée**: ignorez l’alerte.
+    **Action recommandée** : ignorez l’alerte.
 1. **FP** (synchronisation logicielle) : Si vous êtes en mesure de vérifier que le logiciel, tel que OneDrive, est synchronisé avec une sauvegarde externe qui a provoqué l’alerte.
 
-    **Action recommandée**: ignorez l’alerte.
+    **Action recommandée** : ignorez l’alerte.
 
 **Comprendre l’étendue de la violation**
 
@@ -578,14 +578,14 @@ Activités indiquant qu’un utilisateur a effectué un nombre inhabituel d’ac
 
 L’établissement du modèle d’activité d’un nouvel utilisateur nécessite une période d’apprentissage initiale de sept jours pendant laquelle les alertes ne sont pas déclenchées pour les nouveaux emplacements.
 
-**TP**, **B-TP**ou **FP**?
+**TP** , **B-TP** ou **FP** ?
 
-1. **TP**: Si vous êtes en mesure de vérifier que l’activité n’a pas été effectuée par un utilisateur légitime.
+1. **TP** : Si vous êtes en mesure de vérifier que l’activité n’a pas été effectuée par un utilisateur légitime.
 
-    **Action recommandée**: suspendre l’utilisateur, marquer l’utilisateur comme compromis et réinitialiser son mot de passe.
+    **Action recommandée** : suspendre l’utilisateur, marquer l’utilisateur comme compromis et réinitialiser son mot de passe.
 1. **FP** (comportement inhabituel) : Si vous êtes en mesure de vérifier que l’utilisateur a effectué des opérations de partage de fichiers plus légitimes que la base de référence établie.
 
-    **Action recommandée**: ignorez l’alerte.
+    **Action recommandée** : ignorez l’alerte.
 
 **Comprendre l’étendue de la violation**
 
@@ -601,7 +601,7 @@ Cette section décrit les alertes indiquant qu’un acteur malveillant peut tent
 
 Activités dans une session unique indiquant qu’un utilisateur a effectué un nombre inhabituel de suppressions de machines virtuelles par rapport à la ligne de base apprise. Plusieurs suppressions de machines virtuelles peuvent indiquer une tentative d’interruption ou de destruction d’un environnement. Toutefois, il existe de nombreux scénarios normaux où les machines virtuelles sont supprimées.
 
-**TP**, **B-TP**ou **FP**?
+**TP** , **B-TP** ou **FP** ?
 
 Pour améliorer la précision et l’alerte uniquement lorsqu’il existe une indication forte d’une violation, cette détection établit une ligne de base sur chaque environnement de l’organisation afin de réduire les incidents de **B-TP** et alerte uniquement lorsque le comportement inhabituel est détecté.
 
@@ -609,12 +609,12 @@ Pour améliorer la précision et l’alerte uniquement lorsqu’il existe une in
 
 L’établissement du modèle d’activité d’un nouvel utilisateur nécessite une période d’apprentissage initiale de sept jours pendant laquelle les alertes ne sont pas déclenchées pour les nouveaux emplacements.
 
-- **TP**: Si vous êtes en mesure de vérifier que les suppressions n’ont pas été autorisées.
+- **TP** : Si vous êtes en mesure de vérifier que les suppressions n’ont pas été autorisées.
 
-    **Action recommandée**: suspendre l’utilisateur, réinitialiser son mot de passe et analyser tous les appareils à la recherche de menaces malveillantes. Examinez toutes les activités des utilisateurs pour d’autres indicateurs de compromission et explorez l’étendue de l’impact.
-- **B-TP**: si, après votre investigation, vous êtes en mesure de vérifier que l’administrateur a été autorisé à effectuer ces activités de suppression.
+    **Action recommandée** : suspendre l’utilisateur, réinitialiser son mot de passe et analyser tous les appareils à la recherche de menaces malveillantes. Examinez toutes les activités des utilisateurs pour d’autres indicateurs de compromission et explorez l’étendue de l’impact.
+- **B-TP** : si, après votre investigation, vous êtes en mesure de vérifier que l’administrateur a été autorisé à effectuer ces activités de suppression.
 
-    **Action recommandée**: ignorez l’alerte.
+    **Action recommandée** : ignorez l’alerte.
 
 **Comprendre l’étendue de la violation**
 
@@ -633,22 +633,22 @@ Les stratégies de détection des menaces automatisées de Cloud App Security co
 
 L’établissement du modèle d’activité d’un nouvel utilisateur nécessite une période d’apprentissage initiale de sept jours pendant laquelle les alertes ne sont pas déclenchées pour les nouveaux emplacements.
 
-**TP**, **B-TP**ou **FP**?
+**TP** , **B-TP** ou **FP** ?
 
-1. **TP**: Si vous êtes en mesure de vérifier que l’activité n’a pas été effectuée par l’utilisateur.
+1. **TP** : Si vous êtes en mesure de vérifier que l’activité n’a pas été effectuée par l’utilisateur.
 
-    **Action recommandée**: suspendre l’utilisateur, marquer l’utilisateur comme compromis et réinitialiser son mot de passe.
+    **Action recommandée** : suspendre l’utilisateur, marquer l’utilisateur comme compromis et réinitialiser son mot de passe.
 1. **FP** (comportement inhabituel) : l’utilisateur a effectué en toute légitimité plusieurs activités de suppression et de chargement de fichiers similaires dans un laps de temps réduit.
 
-    **Action recommandée**: après avoir vérifié le journal d’activité et confirmé que les extensions de fichier ne sont pas suspectes, fermez l’alerte.
+    **Action recommandée** : après avoir vérifié le journal d’activité et confirmé que les extensions de fichier ne sont pas suspectes, fermez l’alerte.
 1. **FP** (extension de fichier de ransomware commun) : Si vous êtes en mesure de vérifier que les extensions des fichiers affectés correspondent à une extension connue de ransomware.
 
-    **Action recommandée**: contactez l’utilisateur et vérifiez que les fichiers sont sûrs, puis ignorez l’alerte.
+    **Action recommandée** : contactez l’utilisateur et vérifiez que les fichiers sont sûrs, puis ignorez l’alerte.
 
 **Comprendre l’étendue de la violation**
 
 1. Examinez le journal d’activité pour rechercher d’autres indicateurs de compromission, tels que le téléchargement en masse, ou la suppression de masse, des fichiers.
-1. Si vous utilisez Microsoft Defender-protection avancée contre les menaces, passez en revue les alertes de l’ordinateur de l’utilisateur pour voir si des fichiers malveillants ont été détectés.
+1. Si vous utilisez Microsoft Defender pour le point de terminaison, passez en revue les alertes de l’ordinateur de l’utilisateur pour voir si des fichiers malveillants ont été détectés.
 1. Recherchez dans le journal d’activité des activités de chargement et de partage de fichiers malveillants.
 
 ### <a name="unusual-file-deletion-activity-by-user"></a>Activité inhabituelle de suppression de fichier (par l’utilisateur)
@@ -659,14 +659,14 @@ Activités indiquant qu’un utilisateur a effectué une opération de suppressi
 
 L’établissement du modèle d’activité d’un nouvel utilisateur nécessite une période d’apprentissage initiale de sept jours pendant laquelle les alertes ne sont pas déclenchées pour les nouveaux emplacements.
 
-**TP**, **B-TP**ou **FP**?
+**TP** , **B-TP** ou **FP** ?
 
-1. **TP**: Si vous êtes en mesure de vérifier que l’activité n’a pas été effectuée par un utilisateur légitime.
+1. **TP** : Si vous êtes en mesure de vérifier que l’activité n’a pas été effectuée par un utilisateur légitime.
 
-    **Action recommandée**: suspendre l’utilisateur, marquer l’utilisateur comme compromis et réinitialiser son mot de passe.
-1. **FP**: Si vous êtes en mesure de vérifier que l’utilisateur a effectué une opération de suppression de fichiers plus grande que la base de référence établie.
+    **Action recommandée** : suspendre l’utilisateur, marquer l’utilisateur comme compromis et réinitialiser son mot de passe.
+1. **FP** : Si vous êtes en mesure de vérifier que l’utilisateur a effectué une opération de suppression de fichiers plus grande que la base de référence établie.
 
-    **Action recommandée**: ignorez l’alerte.
+    **Action recommandée** : ignorez l’alerte.
 
 **Comprendre l’étendue de la violation**
 

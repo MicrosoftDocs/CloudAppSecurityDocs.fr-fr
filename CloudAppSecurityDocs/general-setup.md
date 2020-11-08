@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 11/01/2019
+ms.date: 11/08/2020
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c2f478c48280fb9fce63d23af0662cec59d61abf
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: ed63850fb9f2f9f5d949a1c5890a6a5b2d2c7be1
+ms.sourcegitcommit: 5367d8fdf99d61719a395728f2ef4b014604e3bc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90881053"
+ms.lasthandoff: 11/08/2020
+ms.locfileid: "94370878"
 ---
 # <a name="basic-setup-for-cloud-app-security"></a>Configuration de base pour Cloud App Security
 
@@ -45,7 +45,7 @@ Pour les clients du gouvernement des États-Unis, il est également nécessaire 
 
 1. Dans le portail Cloud App Security, dans la barre de menus, cliquez sur l' ![icône](media/settings-icon.png "Icône des paramètres") paramètres roue dentée paramètres, puis sélectionnez **paramètres** pour configurer les détails de votre organisation.
 
-1. Sous **Détails de l’organisation**, vous devez absolument fournir un **Nom d’affichage de l’organisation** pour votre organisation. Il apparaît dans les e-mails et les pages web envoyés par le système.
+1. Sous **Détails de l’organisation** , vous devez absolument fournir un **Nom d’affichage de l’organisation** pour votre organisation. Il apparaît dans les e-mails et les pages web envoyés par le système.
 
 1. Fournissez un **Nom de l’environnement** (client). Ces informations sont particulièrement importantes si vous gérez plusieurs locataires.
 
@@ -55,13 +55,13 @@ Pour les clients du gouvernement des États-Unis, il est également nécessaire 
 
     * Les utilisateurs dans des domaines qui ne sont pas configurés comme internes sont marqués comme externes. Aucune recherche d’activités ou de fichiers n’est exécutée sur les utilisateurs externes.
 
-1. Sous **déconnexion automatique**, spécifiez la durée pendant laquelle une session peut rester inactive avant que la session ne soit déconnectée automatiquement.
+1. Sous **déconnexion automatique** , spécifiez la durée pendant laquelle une session peut rester inactive avant que la session ne soit déconnectée automatiquement.
 
 1. En cas d’intégration à Azure Information Protection, consultez [Intégration d’Azure Information Protection](azip-integration.md) pour obtenir des informations.
 
     * Pour utiliser l’intégration à Azure Information Protection, vous devez activer le [connecteur d’applications pour Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
 
-1. Si vous effectuez l’intégration avec l’intégration d’Azure-protection avancée contre les menaces, consultez [intégration d’Azure-protection avancée contre les menaces](azip-integration.md) pour plus d’informations.
+1. Si vous effectuez l’intégration à Microsoft Defender pour l’intégration des identités, consultez [Microsoft Defender for Identity Integration](azip-integration.md) pour plus d’informations.
 
 1. Grâce à cet écran, vous pouvez à tout moment sauvegarder vos paramètres de portail. Cliquez sur **Exporter les paramètres du portail** pour créer un fichier JSON de tous vos paramètres de portail, y compris les règles de stratégie, les groupes d’utilisateurs et les plages d’adresses IP.
 
@@ -73,6 +73,6 @@ Pour les clients du gouvernement des États-Unis, il est également nécessaire 
 ## <a name="next-steps"></a>Étapes suivantes
 
 > [!div class="nextstepaction"]
-> [Configuration de Cloud Discovery](set-up-cloud-discovery.md)
+> [Configurer Cloud Discovery](set-up-cloud-discovery.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

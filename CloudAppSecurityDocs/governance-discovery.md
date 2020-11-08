@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 73309d7edba1493c941af201aef300deed6b0314
-ms.sourcegitcommit: e711727f2f00ee3b54e08337a5040449e352ca46
+ms.openlocfilehash: dc6eb398526c416af306881d9fd17c71992b8c86
+ms.sourcegitcommit: 5367d8fdf99d61719a395728f2ef4b014604e3bc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "93185980"
+ms.lasthandoff: 11/08/2020
+ms.locfileid: "94370921"
 ---
 # <a name="govern-discovered-apps"></a>Gouverner les applications découvertes
 
@@ -29,7 +29,7 @@ Une fois que vous avez consulté la liste des applications découvertes dans vot
 
 ## <a name="sanctioningunsanctioning-an-app"></a><a name="BKMK_SanctionApp"></a> Approbation/non-approbation d’une application
 
-Pour ne pas approuver une application présentant un risque spécifique, cliquez sur les points de suspension à la fin de la ligne. Ensuite, sélectionnez **Ne pas approuver** . Vous avez toujours la possibilité d’utiliser une application non approuvée, mais grâce aux filtres Cloud Discovery vous surveillez plus facilement son utilisation. Vous pouvez alors informer les utilisateurs de l’application non approuvée et leur suggérer d’utiliser une autre application sécurisée.
+Pour ne pas approuver une application présentant un risque spécifique, cliquez sur les points de suspension à la fin de la ligne. Ensuite, sélectionnez **Ne pas approuver**. Vous avez toujours la possibilité d’utiliser une application non approuvée, mais grâce aux filtres Cloud Discovery vous surveillez plus facilement son utilisation. Vous pouvez alors informer les utilisateurs de l’application non approuvée et leur suggérer d’utiliser une autre application sécurisée.
 
 ![Marquer comme non approuvées](media/tag-as-unsanctioned.png)
 
@@ -38,17 +38,17 @@ Si vous voulez approuver/ne pas approuver une liste d’applications, cochez les
 Pour interroger une liste d’applications non approuvées, vous pouvez [générer un script de bloc en utilisant les API Cloud App Security](api-discovery-script.md).
 
 > [!NOTE]
-> Si votre locataire utilise Microsoft Defender-protection avancée contre les menaces (ATP), Zscaler NSS ou iboss, toute application que vous marquez comme non approuvée est automatiquement bloquée par Cloud App Security, et les sections suivantes relatives à la création de scripts de blocage ne sont pas nécessaires. Pour plus d’informations, consultez [intégration à Microsoft Defender ATP](mde-integration.md), [intégration avec Zscaler](zscaler-integration.md)et [intégration avec iboss](iboss-integration.md) , respectivement.
+> Si votre locataire utilise Microsoft Defender for Endpoint, Zscaler NSS ou iboss, toute application que vous marquez comme non approuvée est automatiquement bloquée par Cloud App Security, et les sections suivantes relatives à la création de scripts de blocage ne sont pas nécessaires. Pour plus d’informations, consultez [intégration à Microsoft Defender pour les points de terminaison](mde-integration.md), [intégration avec Zscaler](zscaler-integration.md)et [intégration avec iboss](iboss-integration.md) , respectivement.
 
 ## <a name="export-a-block-script-to-govern-discovered-apps"></a>Exporter un script de blocage pour gouverner les applications découvertes
 
 Cloud App Security vous permet de bloquer l’accès aux applications non approuvées en utilisant vos appliances de sécurité locales existantes. Vous pouvez générer un script de blocage dédié et l’importer dans votre appliance. Pour cette solution, vous n’avez pas besoin de rediriger tout le trafic web de l’organisation vers un proxy.
 
-1. Dans le tableau de bord Cloud Discovery, marquez toutes les applications que vous souhaitez bloquer comme **Non approuvées** .
+1. Dans le tableau de bord Cloud Discovery, marquez toutes les applications que vous souhaitez bloquer comme **Non approuvées**.
 
     ![Marquer comme non approuvées](media/tag-as-unsanctioned.png)
 
-2. Dans la barre de titre, cliquez sur les trois points et sélectionnez **Générer un script de blocage...** .
+2. Dans la barre de titre, cliquez sur les trois points et sélectionnez **Générer un script de blocage...**.
 
     ![Générer un script de bloc](media/generate-block-script.png)
 
