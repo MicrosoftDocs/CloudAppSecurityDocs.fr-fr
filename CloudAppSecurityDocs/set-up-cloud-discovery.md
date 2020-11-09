@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 706a90ff21e4dde66ed0b221e4fc5c94a7663368
-ms.sourcegitcommit: e711727f2f00ee3b54e08337a5040449e352ca46
+ms.openlocfilehash: 8a5d2d5ee97677482be80a44b33f832cfaee6ddf
+ms.sourcegitcommit: 288f3011c0ce0e5f2d8cbaa9057a63be044465f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "93186125"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94375089"
 ---
 # <a name="set-up-cloud-discovery"></a>Configurer Cloud Discovery
 
@@ -37,6 +37,7 @@ Vous pouvez générer les types de rapports suivants :
     - [Intégration de Zscaler](zscaler-integration.md)
     - [intégration de iboss](iboss-integration.md)
     - [Intégration de Corrata](corrata-integration.md)
+    - [Intégration de la sécurité Menlo](menlo-integration.md)
 
 - **[Api Cloud Discovery](api-discovery.md)** : utilisez l’API Cloud Discovery de Cloud App Security pour automatiser le chargement des journaux de trafic et les rapports automatisés Cloud Discovery et l’évaluation des risques. Vous pouvez également utiliser l’API pour [générer des scripts de bloc](api-discovery-script.md) et rationaliser les contrôles d’application directement sur votre appliance réseau.
 
@@ -100,7 +101,7 @@ Si votre journal n’est pas pris en charge, ou si vous utilisez un format de jo
 
 Attributs de données (selon la documentation du fournisseur) :
 
-| Source de données | URL de l’application cible | Adresse IP de l’application cible | Nom d’utilisateur | Adresse IP d’origine | Total du trafic | Octets chargés |
+| Paramètres | URL de l’application cible | Adresse IP de l’application cible | Nom d’utilisateur | Adresse IP d’origine | Total du trafic | Octets chargés |
 |----------------------------------------------|----------------------|----------------------|----------------------|----------------------|----------------------|----------------------|
 | Barracuda | **Oui** | **Oui** | **Oui** | **Oui** | Non | Non |
 | Blue Coat | **Oui** | Non | **Oui** | **Oui** | **Oui** | **Oui** |
