@@ -260,8 +260,8 @@
           href: governance-actions.md
         - name: Gouverner les applications découvertes
           href: governance-discovery.md
-        - name: Intégration d’Azure ATP
-          href: aatp-integration.md
+        - name: Intégration de Microsoft Defender pour Identity
+          href: mdi-integration.md
         - name: Intégration d’Azure AD Identity Protection
           href: aadip-integration.md
         - name: Intégration d’Azure Information Protection
@@ -284,7 +284,7 @@
               href: investigate-activities-api.md
             - name: Utiliser Microsoft Power Automate
               href: flow-integration.md
-- name: Référence
+- name: Informations de référence
   items:
     - name: Attester votre application
       href: attest-your-app.md
