@@ -14,14 +14,14 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f7c12272b89beb27f6740d6ffed106840bcfe417
-ms.sourcegitcommit: 5367d8fdf99d61719a395728f2ef4b014604e3bc
+ms.openlocfilehash: 0c5bb0d20a4e82280841d95352181739be8ea4fa
+ms.sourcegitcommit: 66d818441eaae1e07c4bb2ce35bbcb833febf622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/08/2020
-ms.locfileid: "94371352"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94428106"
 ---
-# <a name="microsoft-defender-for-identity-integration"></a>Microsoft Defender pour l’intégration des identités
+# <a name="microsoft-defender-for-identity-integration"></a>Intégration de Microsoft Defender pour Identity
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
@@ -56,7 +56,7 @@ Pour activer l’intégration d’Cloud App Security à Defender pour l’identi
 > [!NOTE]
 > Cela peut prendre jusqu’à 12 heures jusqu’à ce que l’intégration prenne effet.
 
-Après avoir activé Defender pour l’intégration des identités, vous pouvez voir les activités locales pour tous les utilisateurs de votre organisation. Vous obtiendrez également des Insights avancés sur vos utilisateurs qui combinent des alertes et des activités suspectes dans vos environnements Cloud et locaux. En outre, les stratégies de Defender pour l’identité s’affichent sur la page stratégies de Cloud App Security. Pour obtenir la liste des stratégies de protection des identités, consultez [alertes de sécurité](/defender-for-identity/suspicious-activity-guide).
+Après avoir activé Defender pour l’intégration des identités, vous pouvez voir les activités locales pour tous les utilisateurs de votre organisation. Vous obtiendrez également des Insights avancés sur vos utilisateurs qui combinent des alertes et des activités suspectes dans vos environnements Cloud et locaux. En outre, les stratégies de Defender pour l’identité s’affichent sur la page stratégies de Cloud App Security. Pour obtenir la liste des stratégies de protection des identités, consultez [alertes de sécurité](/defender-for-identity/suspicious-activity-guide). Pour modifier ces stratégies, consultez [exclusion d’entités des détections](/defender-for-identity/excluding-entities-from-detections).
 
 Vous devez également utiliser les liens de **configuration Defender for Identity** pour configurer Defender pour les paramètres d’identité qui sont pertinents pour Cloud App Security. Utilisez les informations suivantes pour en savoir plus sur ces paramètres :
 
