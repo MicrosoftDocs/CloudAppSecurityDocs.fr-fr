@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: fa30bef49788834233a8aa44b9e6d165c1b83658
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 8acd6889c8c5f3a1a8a1c4610b2ba990ec4cd13c
+ms.sourcegitcommit: 1349f6d9c8f4994cd2ec722d3def227153d93397
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90877777"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94551627"
 ---
 # <a name="activity-filters-and-queries"></a>Filtres et requêtes des activités
 
@@ -37,7 +37,7 @@ Vous trouverez ci-dessous une liste des filtres d’activité qui peuvent être 
   - ID de l’objet d’activité : ID de l’objet (ID de fichier, de dossier, d’utilisateur ou d’application).
   <!-- - File, folder or site URL - Enables you to select files, folders and URLs that start with a specific string.-->
   <!-- - Target object (file/folder) - Enables you to select a specific file or folder. -->
-  - Élément : vous permet de rechercher par nom ou par ID d’objet d’activité (par exemple des noms d’utilisateur, des fichiers, des paramètres, des sites). Pour le filtre **élément d’objet d’activité** , vous pouvez choisir de filtrer les éléments qui **contiennent**, sont **égaux**ou qui **commencent par** l’élément spécifique.
+  - Élément : vous permet de rechercher par nom ou par ID d’objet d’activité (par exemple des noms d’utilisateur, des fichiers, des paramètres, des sites). Pour le filtre **élément d’objet d’activité** , vous pouvez choisir de filtrer les éléments qui **contiennent** , sont **égaux** ou qui **commencent par** l’élément spécifique.
 
 - Type d’activité : Recherchez l’activité de l’application.
 
@@ -53,14 +53,14 @@ Vous trouverez ci-dessous une liste des filtres d’activité qui peuvent être 
 
 <!--- Description – Specific keyword in the activity description, for example, all activities that include the string **user** in their description.  -->
 
-- Balise d’appareil : recherchez par **Intune conforme**, **Azure ad hybride joint** ou un **certificat de client valide**.
+- Balise d’appareil : recherchez par **Intune conforme** , **Azure ad hybride joint** ou un **certificat de client valide**.
 
 - Type d’appareil : Recherchez uniquement les activités qui ont été effectuées à l’aide d’un type d’appareil spécifique. Par exemple, recherchez toutes les activités d’appareils mobiles, de PC ou de tablettes.
 
 - Fichiers et dossiers : recherchez les fichiers et les dossiers sur lesquels l’activité a été effectuée.
   - ID de fichier : vous permet d’effectuer des recherches par l’ID de fichier sur lequel l’activité a été effectuée.
-  - Nom : filtre sur le nom des fichiers ou des dossiers. Vous pouvez spécifier si le nom **se termine par**, **est égal à** ou **commence par** votre valeur de recherche.
-  - Fichiers ou dossiers spécifiques : vous permet d’inclure ou d’exclure des fichiers ou des dossiers spécifiques. Lors de la sélection de fichiers ou de dossiers, vous pouvez filtrer la liste par **Application**, par **Propriétaire** ou par **Nom de fichier** partiel.
+  - Nom : filtre sur le nom des fichiers ou des dossiers. Vous pouvez spécifier si le nom **se termine par** , **est égal à** ou **commence par** votre valeur de recherche.
+  - Fichiers ou dossiers spécifiques : vous permet d’inclure ou d’exclure des fichiers ou des dossiers spécifiques. Lors de la sélection de fichiers ou de dossiers, vous pouvez filtrer la liste par **Application** , par **Propriétaire** ou par **Nom de fichier** partiel.
 
 - Adresse IP : adresse IP brute, catégorie IP ou balise IP à partir de laquelle l’activité a été réalisée.
   - Adresse IP brute : vous permet de rechercher des activités qui ont été réalisées sur ou par des adresses IP brutes. Les adresses IP brutes peuvent être égales à, ne pas être égales à, commencer par ou ne pas commencer par une séquence spécifique.
@@ -96,8 +96,8 @@ Vous trouverez ci-dessous une liste des filtres d’activité qui peuvent être 
   - Domaine de l’utilisateur : Recherchez un domaine utilisateur spécifique.
   - Organisation utilisateur : Unité d’organisation de l’utilisateur qui a effectué l’activité, par exemple toutes les activités effectuées par les utilisateurs EMEA_marketing. Cela s’applique uniquement aux instances G suite connectées qui utilisent des unités d’organisation.
   - Groupe d’utilisateurs : Groupes d’utilisateurs spécifiques que vous pouvez importer à partir d’applications connectées, par exemple, les administrateurs Office 365.
-  - Nom d’utilisateur : Recherchez un nom d’utilisateur spécifique. Pour afficher la liste des utilisateurs membres d’un groupe d’utilisateurs spécifique, dans le **tiroir Activité**, cliquez sur le nom du groupe d’utilisateurs. Le fait de cliquer vous permet d’accéder à la page Comptes qui répertorie tous les utilisateurs figurant dans le groupe. À partir de cette page, vous pouvez explorer plus en détail les comptes d’utilisateurs spécifiques dans le groupe.
-  - Vous pouvez affiner les filtres **Groupe d’utilisateurs** et **Nom d’utilisateur** en choisissant le filtre **En tant que**, puis en sélectionnant le rôle de l’utilisateur parmi les rôles suivants :
+  - Nom d’utilisateur : Recherchez un nom d’utilisateur spécifique. Pour afficher la liste des utilisateurs membres d’un groupe d’utilisateurs spécifique, dans le **tiroir Activité** , cliquez sur le nom du groupe d’utilisateurs. Le fait de cliquer vous permet d’accéder à la page Comptes qui répertorie tous les utilisateurs figurant dans le groupe. À partir de cette page, vous pouvez explorer plus en détail les comptes d’utilisateurs spécifiques dans le groupe.
+  - Vous pouvez affiner les filtres **Groupe d’utilisateurs** et **Nom d’utilisateur** en choisissant le filtre **En tant que** , puis en sélectionnant le rôle de l’utilisateur parmi les rôles suivants :
     - Objet d’activité uniquement : signifie que l’utilisateur ou le groupe d’utilisateurs sélectionné n’a pas effectué l’activité en question, mais qu’il était l’objet de l’activité.
     - Acteur uniquement : signifie que l’utilisateur ou le groupe d’utilisateurs a effectué l’activité.
     - N’importe quel rôle : signifie que l’utilisateur ou le groupe d’utilisateurs a participé à l’activité, soit en effectuant l’activité, soit en étant l’objet de l’activité.
@@ -114,7 +114,7 @@ Vous trouverez ci-dessous une liste des filtres d’activité qui peuvent être 
 
 Pour faciliter encore plus les recherches, vous pouvez désormais créer des requêtes personnalisées et les enregistrer pour les utiliser ultérieurement.
 
-1. Dans la page **Journal d’activité**, utilisez les filtres comme décrit ci-dessus pour explorer vos applications selon vos besoins.
+1. Dans la page **Journal d’activité** , utilisez les filtres comme décrit ci-dessus pour explorer vos applications selon vos besoins.
 
 2. Une fois que vous avez terminé de générer votre requête, cliquez sur le bouton **Enregistrer sous** en haut à droite des filtres.
 
@@ -122,7 +122,7 @@ Pour faciliter encore plus les recherches, vous pouvez désormais créer des req
 
    ![nouvelle requête](media/new-activity-query.png)
 
-4. Pour réutiliser cette requête plus tard, sous **Requêtes**, faites défiler jusqu’à **Requêtes enregistrées** et sélectionnez votre requête.
+4. Pour réutiliser cette requête plus tard, sous **Requêtes** , faites défiler jusqu’à **Requêtes enregistrées** et sélectionnez votre requête.
 
    ![ouvrir une requête](media/select-activity-query.png)
 
@@ -130,7 +130,7 @@ Cloud App Security vous fournit également des **requêtes suggérées**. Les re
 
 - Activités d’administration : filtre toutes vos activités pour afficher uniquement les activités ayant impliqué des administrateurs.
 
-- Activités de téléchargement : filtre toutes vos activités pour afficher uniquement les activités de téléchargement, notamment le téléchargement de la liste des utilisateurs sous forme de fichier .csv, le téléchargement de contenu partagé et le téléchargement d’un dossier.
+- Télécharger des activités : filtre toutes vos activités pour afficher uniquement les activités qui ont été téléchargées, y compris le téléchargement de la liste des utilisateurs en tant que fichier. csv, le téléchargement de contenu partagé et le téléchargement d’un dossier.
 
 - Échec de la connexion : filtre toutes vos activités pour afficher uniquement les échecs de connexion et les échecs de connexion via SSO
 
@@ -138,7 +138,7 @@ Cloud App Security vous fournit également des **requêtes suggérées**. Les re
 
 - Activités d’emprunt d’identité : filtre toutes vos activités pour afficher uniquement les activités d’emprunt d’identité.
 
-- Activités de boîte aux lettres : filtre toutes vos activités pour afficher uniquement les activités en ligne de Microsoft Exchange Online, comme créer un élément, vider les messages d’une boîte aux lettres, mettre à jour un message et envoyer un message en utilisant des autorisations Envoyer en tant que (emprunt d’identité).
+- Activités de boîte aux lettres : filtre toutes vos activités pour afficher uniquement les activités Microsoft Exchange Online, telles que créer un élément, purger les messages de la boîte aux lettres, mettre à jour le message et envoyer un message à l’aide des autorisations Envoyer en tant que (emprunt d’identité).
 
 - Modifications du mot de passe et requêtes réinitialisées : filtre toutes vos activités pour afficher uniquement celles impliquant la réinitialisation de mot de passe, le changement de mot de passe et l’obligation faite à l’utilisateur de changer le mot de passe à la prochaine connexion.
 
@@ -146,7 +146,7 @@ Cloud App Security vous fournit également des **requêtes suggérées**. Les re
 
 - Activités de partage : filtre toutes vos activités pour afficher uniquement les activités qui impliquent le partage de dossiers et de fichiers, notamment la création d’un lien d’entreprise, la création d’un lien anonyme et l’octroi d’autorisations de lecture/écriture.
 
-- Connexion réussie : filtre toutes vos activités pour afficher uniquement les activités qui impliquent des connexions réussies, y compris l’action d’emprunt d’identité, l’emprunt d’identité pour l’ouverture de session, l’authentification unique et la connexion à partir d’un nouvel appareil.
+- Connexion réussie : filtre toutes vos activités pour afficher uniquement les activités qui impliquent des connexions réussies, y compris l’action d’emprunt d’identité, l’emprunt d’identité d’ouverture de session, l’authentification unique et la connexion à partir d’un nouvel appareil.
 
 ![activités de requête](media/queries-activity.png)
 
