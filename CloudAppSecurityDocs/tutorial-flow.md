@@ -1,23 +1,23 @@
 ---
 title: Étendre la gouvernance à la correction des points de terminaison
-description: Ce tutoriel décrit le processus de configuration des alertes de stratégie Microsoft Cloud App Security pour déclencher des workflows Microsoft Power Automate en vue d’exécuter des actions correctives Microsoft Defender Advanced Threat Protection.
+description: Ce tutoriel décrit le processus de configuration des alertes de stratégie Microsoft Cloud App Security pour déclencher des workflows Microsoft Power Automate en vue d’exécuter des actions correctives Microsoft Defender pour point de terminaison.
 author: shsagir
 ms.author: shsagir
 ms.service: cloud-app-security
 ms.topic: tutorial
 ms.date: 04/27/2020
-ms.openlocfilehash: 9b8cb1021c3aca223edf4f8b9b2e98d67e014480
-ms.sourcegitcommit: e711727f2f00ee3b54e08337a5040449e352ca46
+ms.openlocfilehash: 213b041630a1367a4f505643e73482490456682d
+ms.sourcegitcommit: 5367d8fdf99d61719a395728f2ef4b014604e3bc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "93186266"
+ms.lasthandoff: 11/08/2020
+ms.locfileid: "94370668"
 ---
 # <a name="tutorial-extend-governance-to-endpoint-remediation"></a>Tutoriel : Étendre la gouvernance à la correction des points de terminaison
 
 Cloud App Security fournit des options de gouvernance prédéfinies pour les stratégies. Il permet notamment de suspendre un utilisateur ou de rendre un fichier privé. À l’aide de l’intégration native à Microsoft Power Automate, vous pouvez utiliser un large écosystème de connecteurs SaaS pour générer des workflows en vue d’automatiser les processus, dont la correction.
 
-Par exemple, lors de la détection d’une menace de programme malveillant possible, vous pouvez utiliser des workflows pour lancer des actions correctives Microsoft Defender Advanced Threat Protection (ATP), telles que l’exécution d’une analyse antivirus ou l’isolement d’un point de terminaison.
+Par exemple, lors de la détection d’une menace de programme malveillant possible, vous pouvez utiliser des workflows pour lancer des actions correctives Microsoft Defender pour point de terminaison, telles que l’exécution d’une analyse antivirus ou l’isolement d’un point de terminaison.
 
 Dans ce tutoriel, vous allez apprendre à configurer une action de gouvernance de stratégie pour utiliser un workflow afin d’exécuter une analyse antivirus sur un point de terminaison où un utilisateur montre des signes de comportement suspect.
 
@@ -36,8 +36,8 @@ Si vous n’avez pas de plan Power Automate, [inscrivez-vous pour obtenir un com
 ## <a name="prerequisites"></a>Prérequis
 
 * Vous devez disposer d’un [plan Microsoft Power Automate](https://flow.microsoft.com/pricing) valide.
-* Vous devez avoir un plan Microsoft Defender ATP valide
-* L’environnement Power Automate doit être synchronisé avec Azure AD, supervisé par Defender ATP et joint au domaine.
+* Vous devez avoir un plan Microsoft Defender pour point de terminaison valide.
+* L’environnement Power Automate doit être synchronisé avec Azure AD, supervisé par Defender pour point de terminaison et joint au domaine.
 
 ## <a name="phase-1-generate-a-cloud-app-security-api-token"></a>Phase 1 : Générer un jeton d’API Cloud App Security<a name="generate-token"></a>
 
@@ -57,7 +57,7 @@ Si vous n’avez pas de plan Power Automate, [inscrivez-vous pour obtenir un com
 ## <a name="phase-2-create-a-flow-to-run-an-antivirus-scan"></a>Phase 2 : Créer un flux pour exécuter une analyse antivirus<a name="create-flow"></a>
 
 > [!NOTE]
-> Si vous avez déjà créé un flux en utilisant un connecteur Defender ATP, Power Automate réutilisera automatiquement le connecteur. Vous pouvez donc ignorer l’étape de **connexion**.
+> Si vous avez déjà créé un flux en utilisant un connecteur Defender pour point de terminaison, Power Automate réutilisera automatiquement le connecteur. Vous pouvez donc ignorer l’étape de **connexion**.
 
 1. Accédez au [portail Power Automate](https://flow.microsoft.com/), puis sélectionnez **Modèles**.
 
@@ -67,7 +67,7 @@ Si vous n’avez pas de plan Power Automate, [inscrivez-vous pour obtenir un com
 
     ![Capture d’écran de la page de modèles de Power Automate, montrant les résultats de la recherche.](media/tutorial-flow-templates-search.png)
 
-1. Dans la liste des applications, sur la ligne où figure **Connecteur Microsoft Defender ATP** , cliquez sur **Se connecter**.
+1. Dans la liste des applications, sur la ligne où figure **Connecteur Microsoft Defender pour point de terminaison** , cliquez sur **Se connecter**.
 
     ![Capture d’écran de la page de modèles de Power Automate, montrant le processus de connexion.](media/tutorial-flow-templates-signin.png)
 
@@ -110,7 +110,7 @@ Si vous n’avez pas de plan Power Automate, [inscrivez-vous pour obtenir un com
 
 Désormais, toutes les alertes déclenchées pour cette stratégie lancent le flux permettant d’exécuter l’analyse antivirus.
 
-Vous pouvez utiliser les étapes de ce tutoriel pour créer un large éventail d’actions basées sur les workflows afin d’étendre les fonctions correctives Cloud App Security, notamment d’autres actions Defender ATP. Pour afficher la liste des workflows Cloud App Security prédéfinis, dans Power Automate, [recherchez « Cloud App Security »](https://go.microsoft.com/fwlink/?linkid=2102574).
+Vous pouvez utiliser les étapes de ce tutoriel pour créer un large éventail d’actions basées sur les workflows afin d’étendre les fonctions correctives Cloud App Security, notamment d’autres actions Defender pour point de terminaison. Pour afficher la liste des workflows Cloud App Security prédéfinis, dans Power Automate, [recherchez « Cloud App Security »](https://go.microsoft.com/fwlink/?linkid=2102574).
 
 ## <a name="see-also"></a>Voir aussi
 

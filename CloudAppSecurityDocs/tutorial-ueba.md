@@ -1,21 +1,21 @@
 ---
 title: Examiner des utilisateurs à risque | Microsoft Docs
-description: Ce tutoriel décrit le processus permettant d’examiner les utilisateurs à risque dans Microsoft Cloud App Security, dans des environnements hybrides, en utilisant une intégration à Azure ATP.
+description: Ce tutoriel décrit le processus permettant d’examiner les utilisateurs à risque dans Microsoft Cloud App Security, dans des environnements hybrides, en utilisant une intégration à Microsoft Defender pour Identity.
 keywords: ''
 author: shsagir
 ms.author: shsagir
-ms.date: 04/28/2020
+ms.date: 11/08/2020
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: 48b5c30fe95e75a68e896b1d366f8a1bdeec4665
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: b8dace138aeab11fdd334514bf0dd8850a983f37
+ms.sourcegitcommit: 5367d8fdf99d61719a395728f2ef4b014604e3bc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90881142"
+ms.lasthandoff: 11/08/2020
+ms.locfileid: "94371316"
 ---
 # <a name="tutorial-investigate-risky-users"></a>Tutoriel : Examiner des utilisateurs à risque
 
@@ -23,7 +23,7 @@ ms.locfileid: "90881142"
 
 Des équipes des opérations de sécurité sont mises au défi de surveiller l’activité de l’utilisateur, suspecte ou pas, dans toutes les dimensions de la surface d’attaque d’identité, à l’aide de plusieurs solutions de sécurité qui souvent ne sont pas connectées. Alors que de nombreuses sociétés ont maintenant des équipes de chasse pour identifier de façon proactive les menaces dans leurs environnements, le fait de connaître ce que vous recherchez dans la vaste quantité de données peut être un défi. Microsoft Cloud App Security simplifie désormais le problème en éliminant la nécessité de créer des règles de corrélation complexes et vous permet de détecter les attaques qui s’étendent sur votre cloud et réseau local.
 
-Pour vous aider à vous concentrer sur l’identité des utilisateurs, Microsoft Cloud App Security fournit l’analyse comportementale des utilisateurs et des entités (UEBA) dans le cloud. Vous pouvez l’étendre à votre environnement local en l’intégrant à Azure Advanced Threat Protection (ATP). Une fois l’intégration à Azure ATP terminée, vous obtiendrez également le contexte de l’identité de l’utilisateur grâce à son intégration native à Active Directory.
+Pour vous aider à vous concentrer sur l’identité des utilisateurs, Microsoft Cloud App Security fournit l’analyse comportementale des utilisateurs et des entités (UEBA) dans le cloud. Vous pouvez l’étendre à votre environnement local en l’intégrant à Microsoft Defender pour Identity. Une fois l’intégration à Defender pour Identity terminée, vous obtiendrez également le contexte de l’identité de l’utilisateur grâce à son intégration native à Active Directory.
 
 Que votre déclencheur soit une alerte visible dans le tableau de bord Cloud App Security ou que vous disposiez d’informations provenant d’un service de sécurité tiers, démarrez votre enquête à partir du tableau de bord Cloud App Security pour explorer en profondeur les utilisateurs à risque.
 
@@ -48,7 +48,7 @@ Le score de priorité d’examen est basé sur les alertes de sécurité, les ac
 
 Si vous cliquez sur le score d'une alerte ou d'une activité, vous pouvez voir les preuves sur lesquelles Cloud App Security s’est appuyé pour noter l'activité.
 
-Chaque utilisateur Azure AD dispose d’un score de priorité d’examen dynamique, constamment mis à jour en fonction du comportement et de l’impact récents, calculé à partir des données évaluées par Azure ATP et Cloud App Security. Vous pouvez maintenant identifier immédiatement les principaux utilisateurs à risque en les filtrant par **score de priorité d’examen**, puis vérifier directement leur impact sur l’entreprise et examiner toutes les activités connexes, qu’il s’agisse d’informations compromises, de données exfiltrées ou de menaces provenant des employés.
+Chaque utilisateur Azure AD dispose d’un score de priorité d’examen dynamique, constamment mis à jour en fonction du comportement et de l’impact récents, calculé à partir des données évaluées par Defender pour Identity et Cloud App Security. Vous pouvez maintenant identifier immédiatement les principaux utilisateurs à risque en les filtrant par **score de priorité d’examen** , puis vérifier directement leur impact sur l’entreprise et examiner toutes les activités connexes, qu’il s’agisse d’informations compromises, de données exfiltrées ou de menaces provenant des employés.
 
 Cloud App Security utilise les fonctionnalités suivantes pour mesurer le risque :
 
@@ -62,14 +62,14 @@ Le score d'activité détermine la probabilité qu'un utilisateur donné effectu
 
 1. Connectez au moins une application à Microsoft Cloud App Security à l’aide de [connecteurs API](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md). Pour commencer, nous vous recommandons de connecter [Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
 1. Connectez des applications supplémentaires à l’aide du [proxy pour mettre en place le contrôle d’application par accès conditionnel](proxy-deployment-aad.md).
-1. Pour activer les insights sur votre environnement local, configurez Cloud App Security pour [s’intégrer à votre environnement Azure ATP](aatp-integration.md).
+1. Pour activer les insights sur votre environnement local, configurez Cloud App Security pour [s’intégrer à votre environnement Defender pour Identity](mdi-integration.md).
 
 ## <a name="phase-2-identify-top-risky-users"></a>Phase 2 : Identifier les principaux utilisateurs à risque<a name="identify"></a>
 
 Pour identifier vos utilisateurs présentant le plus de risques dans Cloud App Security :
 
 1. Accédez au tableau de bord Cloud App Security et recherchez les personnes identifiées dans la mosaïque **Top users by investigation priority** (Principaux utilisateurs par priorité d’examen), puis examinez une à une la page de ces utilisateurs.  
-Le **numéro de priorité d’examen**, affiché en regard du nom d’utilisateur, correspond à la somme de toutes les activités à risque de l’utilisateur au cours de la semaine dernière.
+Le **numéro de priorité d’examen** , affiché en regard du nom d’utilisateur, correspond à la somme de toutes les activités à risque de l’utilisateur au cours de la semaine dernière.
 
    ![Tableau de bord des principaux utilisateurs](media/dashboard-top-users.png)
 
@@ -86,7 +86,7 @@ La page Utilisateur vous aide à répondre aux questions suivantes :
     * Quel risque l’utilisateur présente-t-il pour votre organisation ?  
     Consultez la liste dans le volet inférieur, qui vous indique chaque activité et chaque alerte liées à l'utilisateur. Cette liste vous aide à comprendre quel type de risque l'utilisateur représente. Dans la chronologie, cliquez sur chaque ligne afin de descendre encore plus dans la hiérarchie de l’activité ou de l’alerte elle-même. Vous pouvez cliquer également sur le numéro en regard de l’activité afin que vous puissiez comprendre la preuve qui influence le score lui-même.
     * Quels sont les risques pour les autres ressources de votre organisation ?  
-    Sélectionnez l’onglet **Chemins de mouvement latéral** pour identifier les chemins qu’un attaquant peut utiliser pour prendre le contrôle d’autres ressources de votre organisation. Par exemple, même si le compte de l’utilisateur que vous examinez n’est pas sensible, l’attaquant peut se servir des connexions au compte pour découvrir et tenter de compromettre des comptes sensibles dans votre réseau. Pour plus d’informations, consultez [Utilisation des chemins de mouvement latéral](/azure-advanced-threat-protection/investigate-lateral-movement-path).
+    Sélectionnez l’onglet **Chemins de mouvement latéral** pour identifier les chemins qu’un attaquant peut utiliser pour prendre le contrôle d’autres ressources de votre organisation. Par exemple, même si le compte de l’utilisateur que vous examinez n’est pas sensible, l’attaquant peut se servir des connexions au compte pour découvrir et tenter de compromettre des comptes sensibles dans votre réseau. Pour plus d’informations, consultez [Utilisation des chemins de mouvement latéral](/defender-for-identity/investigate-lateral-movement-path).
 
   >[!NOTE]
   >Remarque importante : même si la page Utilisateur fournit des informations sur les appareils, les ressources et les comptes pour toutes les activités, le score de priorité d’examen correspond à la somme de toutes les activités et alertes à risque identifiées au cours des 7 derniers jours.

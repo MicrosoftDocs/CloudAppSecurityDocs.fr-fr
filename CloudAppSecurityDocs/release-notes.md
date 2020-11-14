@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: aae8887a3a71d9b63c9af7464a8da75977120b07
-ms.sourcegitcommit: e711727f2f00ee3b54e08337a5040449e352ca46
+ms.openlocfilehash: faf7d4fcfbdf37d7a38d155deb65aa2693e846af
+ms.sourcegitcommit: 5367d8fdf99d61719a395728f2ef4b014604e3bc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "93186171"
+ms.lasthandoff: 11/08/2020
+ms.locfileid: "94371282"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Nouveautés dans Microsoft Cloud App Security
 
@@ -38,7 +38,7 @@ Publication : 25 octobre 2020
 Dans le cadre de l’amélioration continue de la supervision et de la gestion des alertes, la page Alertes de Cloud App Security a été optimisée sur la base de vos commentaires. Dans l’expérience améliorée, les états **Résolu** et **Ignoré** sont remplacés par l’état **Fermé** , accompagné d’un type de résolution. [En savoir plus](monitor-alerts.md#deployment-of-our-enhanced-alert-monitoring-and-management-experience)
 
 - **Nouveau paramètre de gravité globale des signaux envoyés à 	Microsoft Defender pour point de terminaison**  
-Nous avons ajouté la possibilité de définir le paramètre de gravité globale des signaux envoyés à Microsoft Defender pour point de terminaison. Pour plus d’informations, consultez [Guide pratique pour intégrer Defender pour point de terminaison avec Cloud App Security](mde-integration.md#how-to-integrate-defender-for-endpoint-with-cloud-app-security).
+Nous avons ajouté la possibilité de définir le paramètre de gravité globale des signaux envoyés à Microsoft Defender pour point de terminaison. Pour plus d’informations, consultez [Comment intégrer Microsoft Defender pour point de terminaison à Cloud App Security](mde-integration.md#how-to-integrate-microsoft-defender-for-endpoint-with-cloud-app-security).
 
 - **Nouveau rapport sur les recommandations de sécurité**  
 Cloud App Security effectue des évaluations de la configuration de la sécurité des environnements Azure, Amazon Web Services (AWS) et Google Cloud Platform (GCP). Il offre ainsi des insights sur les lacunes de la configuration de la sécurité dans un environnement multicloud. Vous pouvez à présent exporter des rapports détaillés sur les recommandations de sécurité pour superviser, comprendre et personnaliser vos environnements cloud, et ainsi mieux protéger votre organisation. Pour plus d’informations sur l’exportation du rapport, consultez [Rapport sur les recommandations de sécurité](security-config.md#security-recommendations-report).
@@ -447,7 +447,7 @@ Vous pouvez désormais configurer la déconnexion automatique des sessions admin
 Publication : 9 juin 2019
 
 - **UEBA hybride - Intégration native avec Azure ATP (préversion)**  
-Cloud App Security s’intègre maintenant en mode natif dans Azure ATP pour fournir une vue unique des activités d’identité dans les applications cloud et votre réseau local. Pour plus d’informations, consultez [Intégration d’Azure Advanced Threat Protection](aatp-integration.md).
+Cloud App Security s’intègre maintenant en mode natif dans Azure ATP pour fournir une vue unique des activités d’identité dans les applications cloud et votre réseau local. Pour plus d’informations, consultez [Intégration d’Azure Advanced Threat Protection](mdi-integration.md).
 - **Améliorations apportées à UEBA**  
 Pour vous aider à identifier les menaces qui échappent aux contrôles, Cloud App Security utilise désormais le profilage unique afin de fournir des indices de risque pour les alertes et activités individuelles. Les scores de risque peuvent être utilisés pour identifier des activités qui ne sont pas assez suspectes en elles-mêmes pour déclencher des alertes. Toutefois, en regroupant les indices de risque dans un **indice de priorité d’examen** pour l’utilisateur, Cloud App Security vous permet d’identifier des comportements à risques et de concentrer votre examen. Ces fonctionnalités sont désormais disponibles dans la nouvelle page utilisateur.
 - **Nouveau facteur de risque ajouté au catalogue d’applications cloud**  
