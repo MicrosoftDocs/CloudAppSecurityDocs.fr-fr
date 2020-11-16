@@ -21,9 +21,9 @@
   items:
     - name: Mise en route
       href: getting-started-with-cloud-app-security.md
-    - name: meilleures pratiques recommandées.
+    - name: Bonnes pratiques
       href: best-practices.md
-- name: Tutoriels
+- name: Didacticiels
   items:
     - name: Découvrir et gérer Shadow IT
       href: tutorial-shadow-it.md
@@ -115,7 +115,7 @@
           items:
             - name: Configurer Cloud Discovery
               href: set-up-cloud-discovery.md
-            - name: Intégrer avec Microsoft Defender ATP
+            - name: Intégrer avec Microsoft Defender pour point de terminaison
               href: mde-integration.md
             - name: Intégrer à Zscaler
               href: zscaler-integration.md
@@ -284,7 +284,7 @@
               href: investigate-activities-api.md
             - name: Utiliser Microsoft Power Automate
               href: flow-integration.md
-- name: Informations de référence
+- name: Référence
   items:
     - name: Attester votre application
       href: attest-your-app.md
