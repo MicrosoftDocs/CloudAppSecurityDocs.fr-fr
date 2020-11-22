@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 7eabf167dacf06a51a8c78951a89923a5c8d01bd
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 180c7fac97d4ff275c61da48e3f5125432d826d2
+ms.sourcegitcommit: d1bb3a7ecc062e452c051790898c59ee85689c82
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90879399"
+ms.lasthandoff: 11/22/2020
+ms.locfileid: "95216885"
 ---
 # <a name="investigate-activities-using-the-api"></a>Examiner les activités à l’aide de l’API
 
@@ -39,9 +39,9 @@ Le mode API des activités de Cloud App Security est optimisé pour l’analyse 
 1. Exécutez la requête sur vos données.
 1. S’il y a plus d’enregistrements qu’il n’est possible de répertorier dans une seule analyse, vous recevrez une commande de retour avec `nextQueryFilters` que vous devez exécuter. Vous obtiendrez cette commande chaque fois que vous analyserez jusqu’à ce que la requête retournait tous les résultats.
 
-**Paramètres du corps**de la demande :
+**Paramètres du corps** de la demande :
 
-- « filters » : filtrez les objets avec tous les filtres de recherche de la demande. pour plus d’informations, consultez [filtres d’activité](activity-filters.md) . Pour éviter que vos demandes ne soient limitées, veillez à inclure une limitation sur votre requête, par exemple, à interroger les activités du dernier jour ou à filtrer une application particulière.
+- « filters » : filtrez les objets avec tous les filtres de recherche de la demande. pour plus d’informations, consultez [filtres d’activité](activity-filters-queries.md) . Pour éviter que vos demandes ne soient limitées, veillez à inclure une limitation sur votre requête, par exemple, à interroger les activités du dernier jour ou à filtrer une application particulière.
 - « isScan » : valeur booléenne. Active le mode d’analyse.
 - "sortDirection" : le sens de tri, les valeurs possibles sont "ASC" et "desc"
 - « sortField » : champs utilisés pour trier les activités. Les valeurs possibles sont les suivantes :
