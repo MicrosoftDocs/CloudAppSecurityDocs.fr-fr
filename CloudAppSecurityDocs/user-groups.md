@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ed844bd996cbf6b9b5a4119999f95ae6209c6207
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: ae8a3383cb1a7c56dae06217c372b2edb6027288
+ms.sourcegitcommit: faf7c8f85721dd143ca81c6854ad5c4e8fa50e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90878398"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96025367"
 ---
 # <a name="importing-user-groups-from-connected-apps"></a>Importation de groupes d’utilisateurs à partir d’applications connectées
 
@@ -63,6 +63,7 @@ L’importation de groupes vous permet de sélectionner ces groupes comme filtre
 
 > [!NOTE]
 >
+> - Le nombre maximal de groupes d’utilisateurs importés est de 500.
 > - Il peut y avoir un bref délai jusqu’à ce que les groupes d’utilisateurs importés soient disponibles dans les filtres.
 > - Seules les activités effectuées après l’importation d’un groupe d’utilisateurs sont marquées comme ayant été effectuées par un membre du groupe d’utilisateurs.
 > - Après la synchronisation initiale, les groupes sont mis à jour toutes les heures.
@@ -72,6 +73,6 @@ Pour plus d’informations sur l’utilisation des filtres Groupe d’utilisateu
 ## <a name="next-steps"></a>Étapes suivantes
 
 > [!div class="nextstepaction"]
-> [Configuration de Cloud Discovery](set-up-cloud-discovery.md)
+> [Configurer Cloud Discovery](set-up-cloud-discovery.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

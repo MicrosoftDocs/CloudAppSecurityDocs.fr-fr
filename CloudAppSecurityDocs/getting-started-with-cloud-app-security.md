@@ -12,11 +12,11 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: d7e32b00bc555dd5c9fb58bc874a3f149521d390
-ms.sourcegitcommit: e711727f2f00ee3b54e08337a5040449e352ca46
+ms.sourcegitcommit: faf7c8f85721dd143ca81c6854ad5c4e8fa50e69
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "93185892"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96025322"
 ---
 # <a name="quickstart-get-started-with-microsoft-cloud-app-security"></a>Démarrage rapide : Bien démarrer avec Microsoft Cloud App Security
 
@@ -44,11 +44,11 @@ Votre organisation doit disposer d’une licence permettant d’utiliser Cloud A
 
 Pour accéder au portail Cloud App Security, suivez le lien [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com). Vous pouvez également accéder au portail via le **[Centre d’administration Microsoft 365](https://security.microsoft.com)** de la façon suivante :
 
-1. Dans le menu latéral du Centre d’administration Microsoft 365, cliquez sur **Tout afficher** , puis sélectionnez **Sécurité**.
+1. Dans le menu latéral du Centre d’administration Microsoft 365, cliquez sur **Tout afficher**, puis sélectionnez **Sécurité**.
 
     ![Accès à partir du centre d’administration Microsoft 365](media/access-from-o365.png)
 
-1. Dans la page sécurité de Microsoft 365, cliquez sur **Plus de ressources** , puis sélectionnez **Cloud App Security**.
+1. Dans la page sécurité de Microsoft 365, cliquez sur **Plus de ressources**, puis sélectionnez **Cloud App Security**.
 
     ![Sélectionner Cloud App Security](media/access-from-o365-s2.png)
 
@@ -72,7 +72,7 @@ Tâche obligatoire : Créer des stratégies
 1. Accédez à **Contrôle** > **Modèles**.
 1. Sélectionnez un modèle de stratégie dans la liste, puis choisissez (+) **Créer une stratégie**.
 1. Personnalisez la stratégie (sélectionnez des filtres, des actions et d’autres paramètres), puis choisissez **Créer**.
-1. Dans l’onglet **Stratégies** , choisissez la stratégie pour afficher les correspondances pertinentes (activités, fichiers, alertes).
+1. Dans l’onglet **Stratégies**, choisissez la stratégie pour afficher les correspondances pertinentes (activités, fichiers, alertes).
  Conseil : Pour couvrir tous les scénarios de sécurité de votre environnement cloud, créez une stratégie pour chaque **catégorie de risque**.
 
 ### <a name="how-can-policies-help-your-organization"></a>Comment les stratégies peuvent-elles aider votre organisation ?
@@ -89,8 +89,8 @@ Tâche obligatoire : Activer Cloud App Security pour voir l’utilisation de l�
 
     1. Dans la roue dentée Paramètres, sélectionnez **Paramètres de Cloud Discovery**.
     1. Choisissez **Chargement automatique des journaux**.
-    1. Dans l’onglet **Sources de données** , ajoutez vos sources.
-    1. Dans l’onglet **Collecteurs de journaux** , configurez le collecteur de journaux.
+    1. Dans l’onglet **Sources de données**, ajoutez vos sources.
+    1. Dans l’onglet **Collecteurs de journaux**, configurez le collecteur de journaux.
 
 ### <a name="to-create-a-snapshot-cloud-discovery-report"></a>Pour créer un rapport d’instantané Cloud Discovery
 
@@ -108,20 +108,20 @@ Tâche recommandée : Ajouter les détails de l’organisation
 ### <a name="to-enter-email-settings"></a>Pour entrer les paramètres d’e-mail
 
 1. Dans la roue dentée des paramètres, sélectionnez **Paramètres de courrier**.
-1. Sous **Identité de l’expéditeur des e-mails** , entrez vos adresses e-mail et votre nom complet.
-1. Sous **Conception des e-mails** , téléchargez le modèle d’e-mail de votre organisation.
+1. Sous **Identité de l’expéditeur des e-mails**, entrez vos adresses e-mail et votre nom complet.
+1. Sous **Conception des e-mails**, téléchargez le modèle d’e-mail de votre organisation.
 
 ### <a name="to-set-admin-notifications"></a>Pour définir des notifications d’administrateur
 
 1. Dans la barre de navigation, choisissez votre nom d’utilisateur, puis accédez à **Paramètres utilisateur**.
-1. Sous **Notifications** , configurez les méthodes que vous souhaitez définir pour les notifications système.
+1. Sous **Notifications**, configurez les méthodes que vous souhaitez définir pour les notifications système.
 1. Choisissez **Enregistrer**.
 
 ### <a name="to-customize-the-score-metrics"></a>Pour personnaliser les métriques de score
 
 1. Dans la roue dentée Paramètres, sélectionnez **Paramètres de Cloud Discovery**.
 1. Dans la roue dentée Paramètres, sélectionnez **Paramètres de Cloud Discovery**.
-1. Sous **Métriques de score** , configurez l’importance des différentes valeurs de risque.
+1. Sous **Métriques de score**, configurez l’importance des différentes valeurs de risque.
 1. Choisissez **Enregistrer**.
 
 Les scores de risque attribués aux applications découvertes sont maintenant configurés précisément selon les besoins et les priorités de votre organisation.
@@ -140,7 +140,7 @@ Tâche recommandée : Configurer les paramètres importants
 1. Dans la roue dentée Paramètres, sélectionnez **Paramètres de Cloud Discovery**.
 1. Dans la roue dentée des paramètres, sélectionnez **Plages d’adresses IP**.
 1. Cliquez sur le signe plus pour ajouter une plage d’adresses IP.
-1. Entrez les **détails** , **l’emplacement** , les **étiquettes** et la **catégorie** de la plage d’adresses IP.
+1. Entrez les **détails**, **l’emplacement**, les **étiquettes** et la **catégorie** de la plage d’adresses IP.
 1. Choisissez **Créer**.
 
     Vous pouvez maintenant utiliser des balises IP lorsque vous créez des stratégies, et quand vous filtrez et créez des rapports continus.
@@ -148,7 +148,7 @@ Tâche recommandée : Configurer les paramètres importants
 ### <a name="to-create-continuous-reports"></a>Pour créer des rapports continus
 
 1. Dans la roue dentée Paramètres, sélectionnez **Paramètres de Cloud Discovery**.
-1. Sous **Rapports continus** , choisissez **Créer un rapport**.
+1. Sous **Rapports continus**, choisissez **Créer un rapport**.
 1. Suivez la procédure de configuration.
 1. Choisissez **Créer**.
 
@@ -157,7 +157,7 @@ Vous pouvez maintenant afficher les données découvertes en fonction de vos pro
 ### <a name="to-add-domains"></a>Pour ajouter des domaines
 
 1. Dans la roue dentée des paramètres, sélectionnez **Paramètres**.
-1. Sous **Informations sur l’organisation** , ajoutez les domaines internes de votre organisation.
+1. Sous **Informations sur l’organisation**, ajoutez les domaines internes de votre organisation.
 1. Choisissez **Enregistrer**.
 
 ### <a name="why-should-you-configure-these-settings"></a>Pourquoi devez-vous configurer ces paramètres ?
