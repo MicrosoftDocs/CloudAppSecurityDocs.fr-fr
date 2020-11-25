@@ -1,5 +1,5 @@
 ---
-title: Configurer le chargement automatique des journaux pour les rapports continus-Cloud App Security
+title: Configurer le chargement automatique des journaux pour des rapports continus
 description: Cet article fournit des informations sur le chargement de journaux pour créer des rapports Cloud Discovery automatiques.
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 8711209823bdb2ea010dbb734fc67c03561122ed
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 98e5a260a3b0af3e2aeb8998f3845fc9076c7cc3
+ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90881444"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96033801"
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance---deprecated"></a>Configurer le chargement automatique des journaux pour des rapports continus sur une appliance virtuelle - Déconseillé
 
@@ -103,7 +103,7 @@ Le collecteur de journaux dispose d’un mécanisme de sécurité intégré qui 
 
 8. Choisissez **Utiliser un disque dur virtuel existant**. Sélectionnez le fichier **.vhd** qui était inclus dans le fichier zip que vous avez téléchargé.
 
-9. Cliquez sur **Suivant**, puis sur **Terminer**. La machine est ajoutée à votre environnement Hyper-V.
+9. Cliquez sur **Suivant** , puis sur **Terminer**. La machine est ajoutée à votre environnement Hyper-V.
 
 10. Cliquez sur la machine dans le tableau **Machines virtuelles** et cliquez sur **Démarrer**.
 

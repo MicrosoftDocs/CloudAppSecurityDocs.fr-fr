@@ -1,5 +1,5 @@
 ---
-title: Résolution des problèmes d’intégration de SIEM-Cloud App Security
+title: Résolution des problèmes d’intégration de SIEM
 description: Cet article liste les problèmes qui peuvent se produire lors de la connexion de votre SIEM à Cloud App Security et propose des solutions pour chacun d’eux.
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c7d2a5357273bcefd74db69208b874b21e8169a0
-ms.sourcegitcommit: e711727f2f00ee3b54e08337a5040449e352ca46
+ms.openlocfilehash: ae2f83f04557342122b733600daba11c3fbe7d58
+ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "93186187"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96034073"
 ---
 # <a name="troubleshooting-the-siem-agent"></a>Résolution des problèmes de l’agent SIEM
 
@@ -41,8 +41,8 @@ Si vous avez reçu une alerte système concernant un problème de remise d’act
 1. Dans le portail Cloud App Security, accédez à la page extensions de sécurité.
 1. Dans l’onglet agents SIEM, cliquez sur [Ajouter un nouvel agent Siem](siem.md)et utilisez l’Assistant pour configurer les détails de connexion à votre serveur Siem. Par exemple, vous pouvez créer un agent SIEM avec la configuration suivante :
     - **Protocole** : TCP
-    - **Hôte distant** : tout appareil sur lequel vous pouvez écouter un port. Par exemple, une solution simple consiste à utiliser le même appareil que l’agent et à définir l’adresse IP de l’hôte distant sur 127.0.0.1.
-    - **Port** : tout port sur lequel vous pouvez écouter sur l’appareil hôte distant
+    - **Hôte distant**: tout appareil sur lequel vous pouvez écouter un port. Par exemple, une solution simple consiste à utiliser le même appareil que l’agent et à définir l’adresse IP de l’hôte distant sur 127.0.0.1.
+    - **Port**: tout port sur lequel vous pouvez écouter sur l’appareil hôte distant
 
     > [!NOTE]
     > Cet agent doit s’exécuter en parallèle avec le nom existant. la configuration du réseau peut donc ne pas être identique.
@@ -77,7 +77,7 @@ Pour valider votre configuration, procédez comme suit :
 
 ## <a name="general-troubleshooting"></a>Résolution générale des problèmes
 
-Vérifiez que l’agent SIEM n’affiche pas l’état **Erreur de connexion** ou **Déconnecté** dans le portail Microsoft Cloud App Security et qu’il ne fait pas l’objet de notifications. Si la connexion est interrompue pendant plus de deux heures, l’état affiché est le suivant : **Erreur de connexion** . Si la connexion est interrompue depuis plus de 12 heures, l’état passe à **Déconnecté** .
+Vérifiez que l’agent SIEM n’affiche pas l’état **Erreur de connexion** ou **Déconnecté** dans le portail Microsoft Cloud App Security et qu’il ne fait pas l’objet de notifications. Si la connexion est interrompue pendant plus de deux heures, l’état affiché est le suivant : **Erreur de connexion**. Si la connexion est interrompue depuis plus de 12 heures, l’état passe à **Déconnecté**.
 
 Si vous voyez une des erreurs suivantes dans l’invite de commandes lors de l’exécution de l’agent, procédez comme suit pour corriger le problème :
 

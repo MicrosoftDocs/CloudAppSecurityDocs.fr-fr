@@ -1,5 +1,5 @@
 ---
-title: Définir des plages d’adresses IP et des balises-Cloud App Security
+title: Définir des plages d’adresses IP et des balises
 description: Cet article fournit des instructions sur l’utilisation des balises et des catégories d’adresses IP.
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 09eff7b997b8c2745d58d4de6db37a549816bae3
-ms.sourcegitcommit: 70c31de91753184a2f8d16b4a9f050231a71f3ad
+ms.openlocfilehash: 4d0faa31b04294156265cbf5ccd5b7691cad93fd
+ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383851"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96033996"
 ---
 # <a name="working-with-ip-ranges-and-tags"></a><a name="IPtagsandRanges"></a> Utilisation des balises et des plages d’adresses IP
 
@@ -36,7 +36,7 @@ Cloud App Security est préconfiguré avec des plages d’adresses IP intégrée
 > - Vous ne pouvez pas ajouter de plages IP avec des adresses IP qui se chevauchent.
 > - Pour afficher la documentation de l’API, dans la barre de menus du portail Cloud App Security, cliquez sur le point d’interrogation puis sur **Documentation sur les API**.
 
-Les balises d’adresse IP intégrées et les balises IP personnalisées sont considérées de manière hiérarchique. Les balises IP personnalisées sont prioritaires par rapport aux balises IP intégrées. Par exemple, si une adresse IP est marquée comme étant **Risquée** en fonction de l’intelligence des menaces, mais qu’il existe une balise IP personnalisée qui l’identifie comme appartenant à l’ **Entreprise** , les balises et la catégorie personnalisées sont prioritaires.
+Les balises d’adresse IP intégrées et les balises IP personnalisées sont considérées de manière hiérarchique. Les balises IP personnalisées sont prioritaires par rapport aux balises IP intégrées. Par exemple, si une adresse IP est marquée comme étant **Risquée** en fonction de l’intelligence des menaces, mais qu’il existe une balise IP personnalisée qui l’identifie comme appartenant à l’**Entreprise**, les balises et la catégorie personnalisées sont prioritaires.
 
 >[!NOTE]
 > Quand une adresse IP est marquée comme entreprise, elle est reflétée dans le portail, et les adresses IP sont exclues du déclenchement de détections spécifiques (par exemple, [voyage impossible](anomaly-detection-policy.md#impossible-travel)), car ces adresses IP sont considérées comme approuvées.
@@ -55,15 +55,15 @@ Dans la barre de menus, cliquez sur l’icône des paramètres. Sélectionnez **
 
     Les catégories IP suivantes sont disponibles :
 
-    - **Administratif**  : toutes les adresses IP de vos administrateurs.
+    - **Administratif** : toutes les adresses IP de vos administrateurs.
 
-    - **Fournisseur de cloud**  : adresses IP utilisées par votre fournisseur de cloud.
+    - **Fournisseur de cloud** : adresses IP utilisées par votre fournisseur de cloud.
 
-    - **Entreprise** : ces adresses IP doivent correspondre à toutes les adresses IP publiques de votre réseau interne, à vos succursales et à vos adresses d’itinérance Wi-Fi.
+    - **Entreprise**: ces adresses IP doivent correspondre à toutes les adresses IP publiques de votre réseau interne, à vos succursales et à vos adresses d’itinérance Wi-Fi.
 
-    - **Risqué**  : toutes les adresses IP que vous considérez comme risquées. Celles-ci peuvent inclure les adresses IP suspectes déjà constatées, les adresses IP appartenant aux réseaux de vos concurrents, et ainsi de suite.
+    - **Risqué** : toutes les adresses IP que vous considérez comme risquées. Celles-ci peuvent inclure les adresses IP suspectes déjà constatées, les adresses IP appartenant aux réseaux de vos concurrents, et ainsi de suite.
 
-    - **VPN**  : toutes les adresses IP que vous utilisez pour les télétravailleurs.
+    - **VPN** : toutes les adresses IP que vous utilisez pour les télétravailleurs.
 
 4. Pour **étiqueter** les activités liées à ces adresses IP, entrez une étiquette. Il suffit d’entrer un mot dans la zone pour créer l’étiquette. Une fois la balise configurée, vous pouvez l’ajouter facilement à des plages IP supplémentaires en la sélectionnant dans la liste. Vous pouvez ajouter autant d’étiquettes IP que vous le souhaitez pour chaque plage. Vous pouvez utiliser des étiquettes IP quand vous créez des stratégies.  En plus des balises IP que vous configurez, Cloud App Security a des balises intégrées qui ne sont pas configurables. Vous pouvez voir la liste des étiquettes sous le [filtre d’étiquettes IP](activity-filters.md).
     > [!NOTE]

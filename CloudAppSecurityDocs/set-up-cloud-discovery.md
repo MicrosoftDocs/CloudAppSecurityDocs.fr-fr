@@ -1,5 +1,5 @@
 ---
-title: Déployer Cloud Discovery Cloud App Security
+title: Déployer Cloud Discovery
 description: Cet article décrit la procédure de configuration pour rendre Cloud Discovery opérationnel.
 author: shsagir
 ms.author: shsagir
@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 8a5d2d5ee97677482be80a44b33f832cfaee6ddf
-ms.sourcegitcommit: 288f3011c0ce0e5f2d8cbaa9057a63be044465f7
+ms.openlocfilehash: 72a1d6f1d7dfdf88460dceddf62a6277226cfe66
+ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94375089"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96033954"
 ---
 # <a name="set-up-cloud-discovery"></a>Configurer Cloud Discovery
 
@@ -27,13 +27,13 @@ Cloud Discovery analyse vos journaux de trafic en s’appuyant sur le catalogue 
 
 Vous pouvez générer les types de rapports suivants :
 
-- **Rapports d’instantanés**  : ils fournissent une visibilité ad hoc sur un ensemble de journaux de trafic que vous chargez manuellement à partir de vos pare-feu et proxys.
+- **Rapports d’instantanés** : ils fournissent une visibilité ad hoc sur un ensemble de journaux de trafic que vous chargez manuellement à partir de vos pare-feu et proxys.
 
-- **Rapports continus**  : ils analysent tous les journaux qui sont transférés à partir de votre réseau à l’aide de Cloud App Security. Ils offrent une meilleure visibilité sur toutes les données et identifient automatiquement toute utilisation anormale à l’aide du moteur de détection des anomalies Machine Learning ou des stratégies personnalisées que vous définissez. Ces rapports peuvent être créés en vous connectant des façons suivantes :
+- **Rapports continus** : ils analysent tous les journaux qui sont transférés à partir de votre réseau à l’aide de Cloud App Security. Ils offrent une meilleure visibilité sur toutes les données et identifient automatiquement toute utilisation anormale à l’aide du moteur de détection des anomalies Machine Learning ou des stratégies personnalisées que vous définissez. Ces rapports peuvent être créés en vous connectant des façons suivantes :
 
   - [**Intégration de Microsoft Defender pour les points de terminaison**](mde-integration.md): Cloud App Security s’intègre à Defender pour le point de terminaison en mode natif, afin de simplifier le déploiement des Cloud Discovery, d’étendre les fonctionnalités Cloud Discovery au-delà de votre réseau d’entreprise et d’activer l’investigation basée sur les machines.
   - [**Collecteur**](discovery-docker.md)de journaux : les collecteurs de journaux vous permettent d’automatiser facilement le chargement du journal à partir de votre réseau. Le collecteur de journaux s’exécute sur votre réseau et reçoit les journaux par le biais de Syslog ou FTP.
-  - **Secure Web Gateway (SWG)** : Si vous travaillez avec Cloud App Security et l’un des SWGs suivants, vous pouvez intégrer les produits pour améliorer votre expérience de Cloud Discovery de sécurité. Ensemble, Cloud App Security et SWGs offrent un déploiement transparent de Cloud Discovery, le blocage automatique des applications non approuvées et l’évaluation des risques directement sur le portail de SWG.
+  - **Secure Web Gateway (SWG)**: Si vous travaillez avec Cloud App Security et l’un des SWGs suivants, vous pouvez intégrer les produits pour améliorer votre expérience de Cloud Discovery de sécurité. Ensemble, Cloud App Security et SWGs offrent un déploiement transparent de Cloud Discovery, le blocage automatique des applications non approuvées et l’évaluation des risques directement sur le portail de SWG.
     - [Intégration de Zscaler](zscaler-integration.md)
     - [intégration de iboss](iboss-integration.md)
     - [Intégration de Corrata](corrata-integration.md)
@@ -45,13 +45,13 @@ Vous pouvez générer les types de rapports suivants :
 
 Le processus de génération d’une évaluation des risques se compose des étapes suivantes. Le processus dure de quelques minutes à plusieurs heures en fonction de la quantité de données traitées.
 
-- **Chargement**  : Les journaux de trafic web de votre réseau sont chargés vers le portail.
+- **Chargement** : Les journaux de trafic web de votre réseau sont chargés vers le portail.
 
-- **Extraction**  : Cloud App Security analyse et extrait les données de trafic depuis les journaux de trafic à l’aide d’un analyseur dédié pour chaque source de données.
+- **Extraction** : Cloud App Security analyse et extrait les données de trafic depuis les journaux de trafic à l’aide d’un analyseur dédié pour chaque source de données.
 
 - **Analyse** : Les données de trafic sont analysées par rapport au catalogue d’applications cloud dans le but d’identifier plus de 16 000 applications cloud et d’évaluer leur score de risque. Les adresses IP et les utilisateurs actifs sont également identifiés dans le cadre de l’analyse.
 
-- **Générer un rapport**  : Un rapport d’évaluation des risques sur les données extraites des fichiers journaux est généré.
+- **Générer un rapport** : Un rapport d’évaluation des risques sur les données extraites des fichiers journaux est généré.
 
 >[!NOTE]
 > Les données de rapport continues sont analysées quatre fois par jour.

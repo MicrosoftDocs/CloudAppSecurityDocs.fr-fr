@@ -1,5 +1,5 @@
 ---
-title: Stratégies de protection des informations-Cloud App Security
+title: Stratégies de protection des informations
 description: Cette rubrique décrit les étapes permettant de configurer de nombreuses stratégies de protection des informations dans Cloud App Security.
 author: shsagir
 ms.author: shsagir
@@ -9,12 +9,12 @@ ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d5b42984d8e0f1b16db5a92116e4d7835d3882b8
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 379ff12d418ec6ec928817eff45da5b59b25f13f
+ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90877865"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96033852"
 ---
 # <a name="information-protection-policies"></a>Stratégies de protection des informations
 
@@ -127,7 +127,7 @@ Vous devez disposer d’au moins une application connectée à l’aide de [conn
 
 1. Dans la page **stratégies** , créez une nouvelle **stratégie d’activité**.
 
-2. Définissez le **type d’activité** de filtre sur les activités de fichier et de dossier qui vous intéressent, telles que l' **affichage**, le **Téléchargement**, **l’accès**et la **modification**.
+2. Définissez le **type d’activité** de filtre sur les activités de fichier et de dossier qui vous intéressent, telles que l' **affichage**, le **Téléchargement**, **l’accès** et la **modification**.
 
 3. Définissez l' **emplacement** du filtre n’est pas égal à, puis entrez les pays ou les régions à partir desquels votre organisation attend une activité.
 
@@ -193,7 +193,7 @@ Vous devez disposer d’au moins une application connectée à l’aide de [conn
 
 2. Sous **agir sur** sélectionner une **activité répétée** et personnaliser les **activités répétitives minimales** et définir une **plage** de temps conforme à la stratégie de votre organisation.
 
-3. Définissez le **type d’activité** de filtre sur les activités de fichier et de dossier qui vous intéressent, telles que l' **affichage**, le **Téléchargement**, **l’accès**et la **modification**.
+3. Définissez le **type d’activité** de filtre sur les activités de fichier et de dossier qui vous intéressent, telles que l' **affichage**, le **Téléchargement**, **l’accès** et la **modification**.
 
 4. Affectez à l' **utilisateur** du filtre la valeur **à partir du groupe** égal, puis sélectionnez les groupes d’utilisateurs appropriés.
 

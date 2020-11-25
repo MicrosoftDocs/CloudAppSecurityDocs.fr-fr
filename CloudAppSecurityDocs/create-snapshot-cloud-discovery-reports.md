@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0f74f1ad1cec5a8a3f57298378ef00e6f89c71ca
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: e458859d0eea99efa6e99c0d1a2f97a50980fe59
+ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880782"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96033529"
 ---
 # <a name="create-snapshot-cloud-discovery-reports"></a>Créer des rapports d’instantanés Cloud Discovery
 
@@ -33,7 +33,7 @@ Pour créer un rapport d’instantané :
 
 1. Collectez les fichiers journaux de votre pare-feu et de votre proxy, via lesquels les utilisateurs de votre organisation accèdent à Internet. Veillez à collecter les journaux pendant les heures de pointe représentatives de toute l’activité utilisateur dans votre organisation.
 
-1. Dans le portail Cloud App Security, cliquez sur **Découvrir**, puis sur **Créer un rapport d’instantané**.
+1. Dans le portail Cloud App Security, cliquez sur **découvrir**, puis sur **créer un rapport d’instantané**.
 
     ![Créer un rapport d’instantané](media/create-new-snapshot-report.png)
 
@@ -43,13 +43,12 @@ Pour créer un rapport d’instantané :
 
 1. Sélectionnez la **source de données** à partir de laquelle vous souhaitez charger les fichiers journaux.
 
-1. Examinez le format de votre journal pour vérifier qu’il est mis en forme correctement en vous basant sur l’exemple de journal que vous pouvez télécharger. Cliquez sur **Afficher et vérifier**, puis sur **Télécharger l’exemple de journal**. Comparez votre journal à l’exemple fourni pour vérifier qu’il est compatible.
+1. Examinez le format de votre journal pour vérifier qu’il est mis en forme correctement en vous basant sur l’exemple de journal que vous pouvez télécharger. Cliquez sur **afficher et vérifier** , puis sur **Télécharger l’exemple de journal**. Comparez votre journal à l’exemple fourni pour vérifier qu’il est compatible.
 
     ![Vérifier le format de votre journal](media/cloud-discovery-snapshot-verify.png)
 
     > [!NOTE]
-    > L’exemple de format FTP est pris en charge dans les instantanés et les téléchargements automatisés alors que syslog est pris en charge dans le téléchargement automatisé uniquement.  
-    Le téléchargement d’un exemple de journal télécharge un exemple de journal FTP.
+    > L’exemple de format FTP est pris en charge dans les instantanés et dans le chargement automatique, tandis que syslog n’est pris en charge que dans le chargement automatique. Le téléchargement d’un exemple de journal télécharge un exemple de journal FTP.
 
 1. **Choisissez les journaux d’activité de trafic** que vous souhaitez charger. Vous pouvez charger jusqu’à 20 fichiers à la fois. Les fichiers compressés et zippés sont également pris en charge.
 

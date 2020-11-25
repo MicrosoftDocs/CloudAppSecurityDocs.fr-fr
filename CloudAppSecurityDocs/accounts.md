@@ -1,5 +1,5 @@
 ---
-title: Visibilité sur les comptes d’applications Cloud-Cloud App Security
+title: Visibilité sur les comptes d’applications Cloud
 description: Cet article fournit des informations sur la vérification des comptes à partir de vos applications connectées.
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9d59c944fb2467eef98ac13f8d6a3673b2049a8c
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 434e68484dad0ef3d372760242282b5e5c5826af
+ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880239"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96033223"
 ---
 # <a name="accounts"></a>Comptes
 
@@ -76,7 +76,7 @@ Vous pouvez appliquer manuellement l’action **confirmer l’utilisateur compro
 
 * Dans la page **utilisateurs et compte** , sur la ligne où l’utilisateur ou le compte approprié apparaît, choisissez les trois points à la fin de la ligne, puis choisissez **confirmer l’utilisateur compromis**.
 
-* Dans la **page utilisateur**, sélectionnez **actions**de l’utilisateur, puis choisissez **confirmer l’utilisateur compromis**.
+* Dans la **page utilisateur**, sélectionnez **actions** de l’utilisateur, puis choisissez **confirmer l’utilisateur compromis**.
 
 * **Nom d’utilisateur** : vous permet de filtrer sur des utilisateurs spécifiques.
 

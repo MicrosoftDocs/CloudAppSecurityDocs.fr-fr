@@ -1,5 +1,5 @@
 ---
-title: Stratégies de protection contre les menaces-Cloud App Security
+title: Stratégies de protection contre les menaces
 description: Cette rubrique décrit les étapes permettant de configurer de nombreuses stratégies de protection contre les menaces dans Cloud App Security.
 author: shsagir
 ms.author: shsagir
@@ -9,12 +9,12 @@ ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 50e9e52ba245520f25f3b014d6fc63325dd1dbb9
-ms.sourcegitcommit: 5367d8fdf99d61719a395728f2ef4b014604e3bc
+ms.openlocfilehash: 97bb8c60dfc04858d20ee4bc0a12236ea060eb65
+ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/08/2020
-ms.locfileid: "94371116"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96034158"
 ---
 # <a name="threat-protection-policies"></a>Stratégies de protection contre les menaces
 
@@ -94,7 +94,7 @@ Vous devez disposer d’au moins une application connectée à l’aide de [conn
 
 2. Définissez la **balise filtre agent utilisateur** sur égal à **navigateur obsolète** et **système d’exploitation obsolète**.
 
-3. Définissez les actions de **gouvernance** à effectuer sur les fichiers lorsqu’une violation est détectée. Les actions de gouvernance disponibles varient d’un service à l’autre. Sous **toutes les applications** , sélectionnez **notifier l’utilisateur** pour que vos utilisateurs puissent agir sur l’alerte et mettre à jour les composants nécessaires.
+3. Définissez les actions de **gouvernance** à effectuer sur les fichiers lorsqu’une violation est détectée. Les actions de gouvernance disponibles varient d’un service à l’autre. Sous **toutes les applications**, sélectionnez **notifier l’utilisateur** pour que vos utilisateurs puissent agir sur l’alerte et mettre à jour les composants nécessaires.
 
 4. Créez la stratégie d’activité.
 
@@ -118,7 +118,7 @@ Détectez les activités d’administration effectuées à partir de et de l’a
 
 4. Définir l' **activité d’administration** de filtre sur **true**
 
-5. Définissez les actions de **gouvernance** à effectuer sur les fichiers lorsqu’une violation est détectée. Les actions de gouvernance disponibles varient d’un service à l’autre. Sous **toutes les applications** , sélectionnez **notifier l’utilisateur** pour que vos utilisateurs puissent agir sur l’alerte et mettre à jour les composants nécessaires en **copient le responsable de l’utilisateur**.
+5. Définissez les actions de **gouvernance** à effectuer sur les fichiers lorsqu’une violation est détectée. Les actions de gouvernance disponibles varient d’un service à l’autre. Sous **toutes les applications**, sélectionnez **notifier l’utilisateur** pour que vos utilisateurs puissent agir sur l’alerte et mettre à jour les composants nécessaires en **copient le responsable de l’utilisateur**.
 
 6. Créez la stratégie d’activité.
 

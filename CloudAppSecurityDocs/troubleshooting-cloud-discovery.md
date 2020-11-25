@@ -1,5 +1,5 @@
 ---
-title: Dépannage des erreurs de Cloud Discovery-Cloud App Security
+title: Résolution des erreurs de Cloud Discovery
 description: Cet article fournit la liste des erreurs fréquentes relatives à Cloud Discovery ainsi que des solutions recommandées pour chacune.
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 7f693684e34892dc70a09f28a18fd4035993b7f1
-ms.sourcegitcommit: e711727f2f00ee3b54e08337a5040449e352ca46
+ms.openlocfilehash: 7ec0338c725ccee9656984fbdcdd4bf2fd39d132
+ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "93186253"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96034107"
 ---
 # <a name="troubleshooting-cloud-discovery"></a>Résolution des problèmes de Cloud Discovery
 
@@ -44,7 +44,7 @@ Vous pouvez suivre le traitement des journaux Cloud Discovery à l’aide du jou
 
 |Erreur|Description|Résolution|
 |----|----|----|
-|Type de fichier non pris en charge|Le fichier chargé n’est pas un fichier journal valide (par exemple, un fichier image).|Chargez un fichier **texte** , **zip ou **gzip** exporté directement à partir de votre pare-feu ou proxy.|
+|Type de fichier non pris en charge|Le fichier chargé n’est pas un fichier journal valide (par exemple, un fichier image).|Chargez un fichier **texte**, **zip ou **gzip** exporté directement à partir de votre pare-feu ou proxy.|
 |Le format de journal ne correspond pas|Le format de journal que vous avez chargé ne correspond pas au format attendu pour cette source de données.|1. Vérifiez que le journal n’est pas endommagé. <br /> 2. Comparez et associez votre journal à l’exemple de format affiché dans la page de chargement.|
 |Les transaction datent de plus de 90 jours|Toutes les transactions datent de plus de 90 jours et sont ignorées.|Exportez un nouveau journal avec des événements récents et rechargez-le.|
 |Aucune transaction pour les applications cloud cataloguées|Aucune transaction pour les applications cloud reconnues ne figure dans le journal.|Vérifiez que le journal contient des informations sur le trafic sortant.|
@@ -59,7 +59,7 @@ Vous pouvez suivre le traitement des journaux Cloud Discovery à l’aide du jou
 |Les journaux envoyés au collecteur n’apparaissent pas dans le portail | 1. Vérifiez si des tâches d’analyse ont échoué dans le journal de gouvernance.  <br />  &nbsp;&nbsp;&nbsp;&nbsp;Si tel est le cas, corrigez l’erreur avec le tableau des erreurs d’analyse du journal ci-dessus.<br /> 2. si ce n’est pas le cas, vérifiez la configuration des sources de données et du collecteur de journaux dans le portail. <br /> &nbsp;&nbsp;&nbsp;&nbsp;a. Dans la page source de données, vérifiez que le nom de la source de données est **NSS** et qu’il est correctement configuré. <br />&nbsp;&nbsp;&nbsp;&nbsp;b. Dans la page des collecteurs de journaux, vérifiez que la source de données est liée au collecteur de journaux approprié. <br /> 3. Vérifiez la configuration locale de l’ordinateur du collecteur de journaux local.  <br />&nbsp;&nbsp;&nbsp;&nbsp;a. Connectez-vous au collecteur de journaux via SSH et exécutez l’utilitaire collector_config.<br/>&nbsp;&nbsp;&nbsp;&nbsp;b. Vérifiez que votre pare-feu ou proxy envoie des journaux au collecteur de journaux en utilisant le protocole que vous avez défini (Syslog/TCP, Syslog/UDP ou FTP) et qu’il les envoie au port et au répertoire corrects.<br /> &nbsp;&nbsp;&nbsp;&nbsp;c. Exécutez netstat sur l’ordinateur et vérifiez qu’il reçoit les connexions entrantes à partir de votre pare-feu ou proxy <br /> 4. Vérifiez que le collecteur de journaux est autorisé à initier le trafic sortant sur le port 443. |
 |État du collecteur de journaux : Créé | Le déploiement du collecteur de journaux n’a pas été effectué. Effectuez les étapes de déploiement local conformément au guide de déploiement.|
 |État du collecteur de journaux : Déconnecté | Aucune donnée n’a été reçue au cours des dernières 24 heures à partir des sources de données liées. |
-|Échec de l’extraction de la dernière image du collecteur| Si vous recevez cette erreur pendant le déploiement de l’amarrage, cela peut être que vous n’avez pas suffisamment de mémoire sur l’ordinateur hôte. Pour vérifier cela, exécutez la commande suivante sur l’hôte : `docker pull microsoft/caslogcollector` . Si elle retourne cette erreur, `failed to register layer: Error processing tar file(exist status 1): write /opt/jdk/jdk1.8.0_152/src.zip: no space left on device` Contactez l’administrateur de votre ordinateur hôte pour fournir davantage d’espace.|
+|Échec de l’extraction de la dernière image du collecteur| Si vous recevez cette erreur pendant le déploiement de l’amarrage, cela peut être que vous n’avez pas suffisamment de mémoire sur l’ordinateur hôte. Pour vérifier cela, exécutez la commande suivante sur l’hôte : `docker pull mcr.microsoft.com/mcas/logcollector` . Si elle retourne cette erreur, `failed to register layer: Error processing tar file(exist status 1): write /opt/jdk/jdk1.8.0_152/src.zip: no space left on device` Contactez l’administrateur de votre ordinateur hôte pour fournir davantage d’espace.|
 
 ## <a name="discovery-dashboard-errors"></a>Erreurs du tableau de bord de découverte
 

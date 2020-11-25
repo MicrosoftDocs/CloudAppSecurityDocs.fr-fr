@@ -1,5 +1,5 @@
 ---
-title: Visibilité des activités de l’application Cloud-Cloud App Security
+title: Visibilité des activités de l’application Cloud
 description: Cet article fournit la liste des activités, des filtres et des paramètres de correspondance qui peuvent être appliqués aux stratégies d’activité.
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4a77fca73283f203ecb3ec1f542422c1de843862
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 4e79fd469ea9f59d9c0c4c5428ea73f2e9a31d77
+ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880322"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96033121"
 ---
 # <a name="activities"></a>Activités
 
@@ -110,7 +110,7 @@ Cette opération ouvre l’onglet **Adresse IP** du tiroir Activité qui fournit
     - **Activités** : Nombre d’activités effectuées par l’adresse IP au cours des 30 derniers jours.
     - **Emplacement IP** : Emplacements géographiques à partir desquels l’adresse IP s’est connectée au cours des 30 derniers jours.
     - **Activités** : Nombre d’activités effectuées à partir de l’adresse IP au cours des 30 derniers jours.
-    - **Activités administratives ** : Nombre d’activités administratives effectuées à partir de l’adresse IP au cours des 30 derniers jours.
+    - **Activités administratives** : Nombre d’activités administratives effectuées à partir de l’adresse IP au cours des 30 derniers jours.
     - Vous pouvez effectuer les actions d’adresse IP suivantes :
         - Marquer comme adresse IP d’entreprise et ajouter à la liste autorisée
         - Marquer comme adresse IP VPN et ajouter à la liste autorisée

@@ -1,5 +1,5 @@
 ---
-title: Examiner les activités à l’aide de l’API-Cloud App Security
+title: Examiner les activités à l’aide de l’API
 description: Cet article fournit des informations sur l’utilisation de l’API pour examiner l’activité des utilisateurs dans Cloud App Security.
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 180c7fac97d4ff275c61da48e3f5125432d826d2
-ms.sourcegitcommit: d1bb3a7ecc062e452c051790898c59ee85689c82
+ms.openlocfilehash: c4c522302c87342b10fb055cfd26e14a4b0c4e74
+ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/22/2020
-ms.locfileid: "95216885"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96033155"
 ---
 # <a name="investigate-activities-using-the-api"></a>Examiner les activités à l’aide de l’API
 

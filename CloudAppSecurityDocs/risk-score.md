@@ -1,5 +1,5 @@
 ---
-title: Utilisation du score de risque-Cloud App Security
+title: Utilisation du score de risque
 description: Cet article fournit des instructions sur l’utilisation et la personnalisation de l’indice de risque Cloud App Security.
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4cbc15f85c40d8a36750df20c701900df7a0b8c8
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 769198b2adc7846e237d82c922c8dbd6a7faeead
+ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90879140"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96034192"
 ---
 # <a name="working-with-app-risk-scores"></a>Utilisation des scores de risque d’application
 

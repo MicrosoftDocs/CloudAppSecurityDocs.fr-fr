@@ -1,5 +1,5 @@
 ---
-title: Résolution des erreurs d’inspection du contenu-Cloud App Security
+title: Résolution des erreurs d’inspection du contenu
 description: Cet article fournit la liste des états d’inspection du contenu et leur signification.
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9ac46552691fd3298ab8ffb81355aed48a680c45
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 50c240d70492b9db22e584a1fdc2c438e982bb01
+ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90877221"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96034090"
 ---
 # <a name="troubleshooting-content-inspection"></a>Résolution des problèmes d’inspection du contenu
 

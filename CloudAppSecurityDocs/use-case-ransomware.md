@@ -1,5 +1,5 @@
 ---
-title: Vue d’ensemble du scénario de protection contre les menaces-Cloud App Security
+title: Vue d’ensemble du scénario de protection contre les menaces
 description: Cette rubrique décrit le scénario de protection de votre organisation contre les menaces présentes dans l’environnement cloud.
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 63d4e269287f8f8f58722e11fe3b80cfe3252e5d
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 4097c0b6ea118a547acc2eb90c1be738fdf03523
+ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90878446"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96034039"
 ---
 # <a name="protecting-your-organization-from-ransomware"></a>Protection de votre organisation contre les ransomwares
 

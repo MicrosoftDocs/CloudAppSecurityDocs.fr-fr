@@ -1,5 +1,5 @@
 ---
-title: Certifiez vos applications-Cloud App Security
+title: Sanctionner vos applications
 description: Cet article fournit des instructions pour l’attestation de vos applications dans Cloud App Security.
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 296b4a4b882c15fe716eebe7b8975a938a34ca97
-ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
+ms.openlocfilehash: 59cdb1de028d0aed6c85d0df2a057b02d0489c0b
+ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87254701"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96033835"
 ---
 # <a name="attest-your-app"></a>Attester votre application
 
@@ -34,7 +34,7 @@ Suivez les attributs de service décrits ci-dessous pour terminer avec succès l
 | Nom de l’application | Général | String | Texte libre | Nom de votre application tel qu’il doit apparaître dans le catalogue d’applications Cloud. |
 | Description | Général | String | Texte libre | Brève explication de ce que votre application permet aux utilisateurs d’effectuer ou d’atteindre. |
 | Category| Général | String | Fermer la liste-fourni dans le questionnaire | Classification de l’application en fonction du champ auquel elle se rapporte. |
-| Siège social | Général | Code pays | Fermer la liste-fourni dans le questionnaire | Pays/région du siège du fournisseur.|
+| Siège social | Général | Indicatif du pays | Fermer la liste-fourni dans le questionnaire | Pays/région du siège du fournisseur.|
 | Centre de données| Général | Tableau de codes de pays * | Fermer la liste-fourni dans le questionnaire (sélection multiple) | Le pays ou la région où se trouve votre centre de données (peut être plusieurs emplacements) |
 | Société d’hébergement | Général | String | Texte libre | Nom de la société qui fournit l’hébergement de serveur pour l’application. |
 | Doutes | Général | Integer | AAAA (pas plus de 2019) | Année de Fondation du fournisseur. |
@@ -85,7 +85,7 @@ Suivez les attributs de service décrits ci-dessous pour terminer avec succès l
 | Version de PCI DSS | Conformité | String | 1, 2, 3, 3,1, 3,2, N/A | Version du protocole PCI-DSS prise en charge par cette application. |
 | ISO 27018 | Conformité | Boolean | True, false, N/A | Cette application est-elle conforme à la norme ISO 27018, qui établit des contrôles et des instructions couramment acceptés pour le traitement et la protection des informations d’identification personnelle (PII) dans un environnement de cloud computing public ? |
 | GLBA | Conformité | Boolean | True, false, N/A | Cette application est-elle conforme à la loi Gramm-Leach-Bliley Act (GLBA), qui exige que les institutions financières établissent des normes de protection de la sécurité et de la confidentialité des informations personnelles des clients ? |
-| Niveau FedRAMP | Conformité | String | Haute, modéré, faible, Li-SaaS | Niveau de la solution conforme à FedRAMP fournie par cette application. |
+| Niveau FedRAMP | Conformité | String | Élevé, modéré, faible Li-SaaS | Niveau de la solution conforme à FedRAMP fournie par cette application. |
 | Niveau CSA STAR | Conformité | String | Auto-évaluation, certification, attestation, évaluation C-STAR, surveillance continue | Niveau du programme CSA STAR sur lequel l’application est certifiée |
 | Bouclier de protection des données | Conformité | Boolean | True, false, N/A | Cette application est-elle conforme à l’infrastructure de protection de la confidentialité UE-US, qui impose des obligations plus fortes aux entreprises américaines pour protéger les données personnelles des européens ? |
 | ISO 27017 | Conformité | Boolean | True, False | Cette application est-elle conforme à la norme ISO 27017, qui établit des contrôles et des recommandations couramment acceptés pour le traitement et la protection des informations utilisateur dans un environnement de Cloud Computing public ? |
@@ -97,7 +97,7 @@ Suivez les attributs de service décrits ci-dessous pour terminer avec succès l
 | Commandes du Forum Jéricho | Conformité | Boolean | True, False | Cette application suit-elle les commandes de Forum Jéricho, une série de principes à observer lors de l’architecture de systèmes pour une opération sécurisée dans des environnements désous-périmètres ? |
 | ISO 27002 | Conformité | Boolean | True, false, N/A | Cette application est-elle conforme à la norme ISO 27002, qui établit des recommandations communes pour les normes de sécurité des informations de l’organisation et les pratiques de gestion de la sécurité des informations ? |
 | FFIEC | Conformité | Boolean | True, false, N/A | Cette application est-elle conforme aux conseils du Conseil de l’examen des institutions financières fédérales sur les contrôles de gestion des risques nécessaires à l’authentification des services dans un environnement bancaire Internet ? |
-| Propriétaire des données | Informations juridiques | Boolean | True, False | Cette application conserve-t-elle entièrement la propriété des données téléchargées par l’utilisateur ? |
+| Propriété des données | Informations juridiques | Boolean | True, False | Cette application conserve-t-elle entièrement la propriété des données téléchargées par l’utilisateur ? |
 | DMCA | Informations juridiques | Boolean | True, False | Cette application est-elle conforme à la DMCA (Digital Millenium Copyright Act), qui criminalise toute tentative d’accès illégal à des documents protégés par des droits d’auteur ? |
 | Stratégie de conservation des données | Informations juridiques | Boolean | True, False | Quelle est la stratégie de l’application pour la rétention des données utilisateur après l’arrêt du compte ? |
 | RGPD Readiness (instruction) | Informations juridiques | URL | Texte libre | Un lien vers votre site Web, le cas échéant, lié à la façon dont ce fournisseur prévoit de gérer la conformité RGPD. |
@@ -115,7 +115,7 @@ Suivez les attributs de service décrits ci-dessous pour terminer avec succès l
 | RGPD-licite pour le traitement | Informations juridiques | Boolean | True, false, N/A | Cette application traite-t-elle les données personnelles licitement conformément à l’accord, au contrat, à l’obligation légale, aux intérêts essentiels, aux intérêts légitimes, aux catégories spéciales, aux données et au délit criminel ? |
 | RGPD-droit à rectification | Informations juridiques | Boolean | True, false, N/A | Cette application fournit-elle aux individus la possibilité de corriger leurs données personnelles ? Le contrôleur doit répondre à toutes les demandes de ses sujets de données dans un délai d’un mois. |
 
-\*Les champs de type *tableau* doivent être séparés par un point-virgule (;).
+\* Les champs de type *tableau* doivent être séparés par un point-virgule (;).
 
 ## <a name="next-steps"></a>Étapes suivantes
 
