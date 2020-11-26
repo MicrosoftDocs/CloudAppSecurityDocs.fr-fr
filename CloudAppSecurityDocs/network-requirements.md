@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: cd4138ad0bad611e38c382ab0151b8964a55ce3d
-ms.sourcegitcommit: 06471b9b3d20868d36e76e4b1cc9c61feab19f64
+ms.openlocfilehash: 0dc03caf55a6d45f2698d3e9c56d8d15bee42d11
+ms.sourcegitcommit: dbc41414e828f27ae9bee8dc057f2e15727ddad8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/26/2020
-ms.locfileid: "96231278"
+ms.locfileid: "96295789"
 ---
 # <a name="network-requirements"></a>Configuration requise pour le réseau
 
@@ -45,26 +45,26 @@ Pour savoir à quel centre de données vous vous connectez, effectuez les étape
 Pour accéder au portail Cloud App Security, ajoutez le **port de sortie 443** pour les adresses IP et les noms DNS suivants à la liste verte de votre pare-feu :
 
 ```ini
-    portal.cloudappsecurity.com
-    *.portal.cloudappsecurity.com
-    cdn.cloudappsecurity.com
-    https://adaproddiscovery.azureedge.net
-    *.s-microsoft.com
-    *.msecnd.net
-    dev.virtualearth.net
-    *.cloudappsecurity.com
-    flow.microsoft.com
-    static2.sharepointonline.com
-    dc.services.visualstudio.com
-    *.blob.core.windows.net
+portal.cloudappsecurity.com
+*.portal.cloudappsecurity.com
+cdn.cloudappsecurity.com
+https://adaproddiscovery.azureedge.net
+*.s-microsoft.com
+*.msecnd.net
+dev.virtualearth.net
+*.cloudappsecurity.com
+flow.microsoft.com
+static2.sharepointonline.com
+dc.services.visualstudio.com
+*.blob.core.windows.net
 ```
 
 Pour les clients du gouvernement des États-Unis, il est également nécessaire d’ajouter les noms DNS suivants à la liste verte de votre pare-feu pour fournir l’accès au portail Cloud App Security GCC High :
 
 ```ini
-    portal.cloudappsecurity.us
-    *.portal.cloudappsecurity.us
-    cdn.cloudappsecurity.com
+portal.cloudappsecurity.us
+*.portal.cloudappsecurity.us
+cdn.cloudappsecurity.com
 ```
 
 En outre, les éléments suivants doivent être autorisés, en fonction du centre de données que vous utilisez :
@@ -90,10 +90,10 @@ Configurez votre pare-feu pour le proxy inverse à l’aide des paramètres rela
 Pour les clients commerciaux, pour activer Cloud App Security proxy inverse, ajoutez le **port de sortie 443** pour les adresses IP et les noms DNS suivants à la liste verte de votre pare-feu :
 
 ```ini
-    *.cas.ms
-    *.mcas.ms
-    *.admin-mcas.ms
-    mcasproxy.azureedge.net
+*.cas.ms
+*.mcas.ms
+*.admin-mcas.ms
+mcasproxy.azureedge.net
 ```
 
 En outre, les éléments suivants doivent être autorisés, en fonction du centre de données que vous utilisez :
@@ -111,9 +111,9 @@ En outre, les éléments suivants doivent être autorisés, en fonction du centr
 Pour les clients des États-Unis, GCC High Customers, pour activer Cloud App Security proxy inverse, ajoutez le **port de sortie 443** pour les noms DNS suivants à la liste verte de votre pare-feu :
 
 ```ini
-    *.mcas-gov.us
-    *.admin-mcas-gov.us
-    mcasproxy.azureedge.net
+*.mcas-gov.us
+*.admin-mcas-gov.us
+mcasproxy.azureedge.net
 ```
 
 ## <a name="siem-agent-connection"></a>Connexion de l’agent SIEM
@@ -130,7 +130,7 @@ Pour permettre à Cloud App Security de se connecter à votre serveur SIEM, ajou
 |Gov US1|13.72.19.4, 52.227.143.223|
 
 > [!NOTE]
-> Si vous n’avez pas spécifié de proxy lors de la configuration de l’agent SIEM Cloud App Security, vous devez autoriser les connexions http à http://ocsp.msocsp.com/ et OCSP.DigiCert.com sur le port 80. Il est utilisé pour vérifier l’état de révocation du certificat lorsque vous vous connectez au portail Cloud App Security.
+> Si vous n’avez pas spécifié de proxy lors de la configuration de l’agent SIEM Cloud App Security, vous devez autoriser les connexions http sur le port 80 pour les URL listées dans la page [modifications du certificat TLS Azure](/azure/security/fundamentals/tls-certificate-changes#will-this-change-affect-me) . Il est utilisé pour vérifier l’état de révocation du certificat lorsque vous vous connectez au portail Cloud App Security.
 
 ## <a name="app-connector"></a>Connecteur d’applications
 
@@ -212,7 +212,7 @@ Pour activer les fonctionnalités Cloud Discovery à l’aide d’un collecteur 
 >
 > - Si votre pare-feu nécessite une liste d’accès à une adresse IP statique et ne prend pas en charge l’autorisation basée sur l’URL, autorisez le collecteur de journaux à initier le trafic sortant vers les [plages IP du centre de Microsoft Azure Datacenter](https://www.microsoft.com/download/details.aspx?id=56519) sur le port 443.
 > - Autorisez le collecteur de journaux à diriger le trafic sortant vers le portail Cloud App Security.
-> - Si vous n’avez pas spécifié de proxy lors de la configuration du collecteur de journaux, vous devez autoriser les connexions http à http://ocsp.msocsp.com/ et OCSP.DigiCert.com sur le port 80. Il est utilisé pour vérifier l’état de révocation du certificat lorsque vous vous connectez au portail Cloud App Security.
+> - Si vous n’avez pas spécifié de proxy lors de la configuration du collecteur de journaux, vous devez autoriser les connexions http sur le port 80 pour les URL listées dans la page [modifications du certificat TLS Azure](/azure/security/fundamentals/tls-certificate-changes#will-this-change-affect-me) . Il est utilisé pour vérifier l’état de révocation du certificat lorsque vous vous connectez au portail Cloud App Security.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
