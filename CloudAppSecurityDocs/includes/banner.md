@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: fdc1a6aea36d152728d3e74415fe001d4519901a
-ms.sourcegitcommit: faf7c8f85721dd143ca81c6854ad5c4e8fa50e69
+ms.sourcegitcommit: 06471b9b3d20868d36e76e4b1cc9c61feab19f64
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96025321"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96231222"
 ---
 *S’applique à : Microsoft Cloud App Security*
 
