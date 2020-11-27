@@ -1,5 +1,5 @@
 ---
-title: Examiner les risques liés à l’application Cloud & activité suspecte-Cloud App Security
+title: Examen des risques liés aux applications cloud et des activités suspectes
 description: Cet article décrit le processus d’investigation des alertes, des problèmes et des activités suspectes à l’aide de Cloud App Security.
 keywords: ''
 author: shsagir
@@ -14,14 +14,14 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 46a2493d86650a0040eb3a5664b99ed5fc9fe799
-ms.sourcegitcommit: b0ad9e8e6b5668849e1c292c43084480f229d981
-ms.translationtype: MT
+ms.openlocfilehash: 0d4062a046d121e1698b7bc9bf5c1f9409a8f8f2
+ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "90879452"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96033991"
 ---
-# <a name="investigate"></a>Examiner
+# <a name="investigate"></a>Étudier
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
@@ -33,35 +33,35 @@ Les tableaux de bord suivants sont disponibles pour vous aider à étudier les a
 
 |tableau de bord|Description|
 |---------------|-----------------|
-|Tableau de bord principal|Vue d’ensemble de l’état du Cloud (utilisateurs, fichiers, activités) et actions requises (alertes, violations d’activité et violations de contenu).|
-|Tableau de bord de l’application : vue d’ensemble|Vue d’ensemble de l’utilisation de l’application par emplacement, graphiques d’utilisation par nombre d’utilisateurs.|
-|Tableau de bord de l’application : info|Informations sur les détails de l’application, la sécurité et la conformité.|
-|Tableau de bord de l’application : Insights  
+|Tableau de bord principal|Vue d’ensemble de l’état du cloud (utilisateurs, fichiers et activités) et des actions nécessaires (alertes, violations d’activité et violations de contenu).|
+|Tableau de bord de l’application : vue d’ensemble|Vue d’ensemble de l’utilisation de l’application selon l’emplacement, graphes de l’utilisation en fonction de nombre d’utilisateurs.|
+|Tableau de bord de l’application : informations|Informations sur l’application, la sécurité et la conformité.|
+|Tableau de bord de l’application : insights  
 *(le cas échéant)*|Analyse des données stockées dans l’application, ventilées par type de fichier et niveau de partage de fichiers.|
 |Tableau de bord de l’application : fichiers  
-*(le cas échéant)*|Explorez les fichiers ; possibilité de filtrer en fonction du propriétaire, du niveau de partage, etc. Effectuer des actions de gouvernance comme la mise en quarantaine.|
-|Tableau de bord d’application : comptes|Vue d’ensemble de tous les comptes/utilisateurs liés à l’application.|
-|Tableau de bord d’application : applications OAuth  
-*(le cas échéant)*|Explorez les applications OAuth actuellement déployées, comme G suite, et définissez des stratégies.|
-|Tableau de bord d’application : journal d’activité|Explorez l’ensemble de l’activité de l’application ; possibilité de filtrer en fonction des utilisateurs, de l’adresse IP, etc.|
-|Tableau de bord de l’application : alertes|Explorez toutes les alertes d’application ; possibilité de filtrer en fonction de l’État, de la catégorie, de la gravité et bien plus encore.|
-|Tableau de bord d’application : comptes avec privilèges spéciaux  
+*(le cas échéant)*|Exploration des fichiers au niveau du détail ; possibilité de filtrer en fonction du propriétaire, du niveau de partage, etc. Actions de gouvernance (par exemple, mise en quarantaine).|
+|Tableau de bord de l’application : comptes|Vue d’ensemble de tous les comptes/utilisateurs liés à l’application.|
+|Tableau de bord de l’application : applications OAuth  
+*(le cas échéant)*|Exploration au niveau du détail des applications OAuth actuellement déployées (par exemple, G Suite) et définition de stratégies.|
+|Tableau de bord de l’application : journal d’activité|Exploration au niveau du détail de l’ensemble de l’activité de l’application ; possibilité de filtrer en fonction des utilisateurs, de l’adresse IP, etc.|
+|Tableau de bord de l’application : alertes|Exploration au niveau du détail de l’ensemble des alertes de l’application ; possibilité de filtrer en fonction de l’état, de la catégorie, de la gravité, etc.|
+|Tableau de bord de l’application : comptes avec privilèges spéciaux  
 *(Salesforce uniquement)*|Vue d’ensemble des utilisateurs par type d’utilisateur privilégié.|
-|Tableau de bord Utilisateur|Vue d’ensemble complète du profil utilisateur dans le Cloud, emplacements, activités récentes, alertes associées.|
+|Tableau de bord Utilisateur|Vue d’ensemble complète du profil utilisateur dans le cloud, des emplacements, des activités récentes et des alertes associées.|
 
-## <a name="tag-apps-as-sanctioned-or-unsanctioned"></a><a name="sanctionapp"></a>Baliser les applications comme approuvées ou non approuvées
+## <a name="tag-apps-as-sanctioned-or-unsanctioned"></a><a name="sanctionapp"></a>Marquage des applications comme approuvées ou non approuvées
 
 Le marquage des applications comme approuvées ou non est une étape importante pour comprendre votre cloud. Une fois que vous avez approuvé une application, vous pouvez filtrer les applications qui ne sont pas approuvées et lancer une migration vers des applications approuvées du même type.
 
 - Dans la console Cloud App Security, accédez au catalogue d’applications ou aux applications découvertes.
 
-- Dans la liste des applications, sur la ligne contenant l’application à marquer comme approuvée, cliquez sur les trois points à la fin de la ligne ![Points pour marquer comme approuvé](media/sanction-three-dots.png "Marquer en tant que points approuvés") et choisissez **Marquer comme approuvé** .
+- Dans la liste des applications, sur la ligne contenant l’application à marquer comme approuvée, cliquez sur les trois points à la fin de la ligne ![Points pour marquer comme approuvé](media/sanction-three-dots.png "Marquer comme approuvé, points") et choisissez **Marquer comme approuvé**.
 
-    ![Marquer comme approuvé](media/mark-as-sanctioned.png "marquer comme approuvé")
+    ![Marquer comme approuvé](media/mark-as-sanctioned.png "Marquer comme approuvé")
 
 ## <a name="use-the-investigation-tools"></a>Utiliser les outils d’examen
 
-1. Dans le portail Cloud App Security, accédez à **Examiner** , puis consultez le **journal d’activité** et filtrez sur une application spécifique. Vérifiez les points suivants :
+1. Dans le portail Cloud App Security, accédez à **Examiner**, puis consultez le **journal d’activité** et filtrez sur une application spécifique. Vérifiez les points suivants :
 
     - Qui accède à votre environnement cloud ?
 
@@ -75,7 +75,7 @@ Le marquage des applications comme approuvées ou non est une étape importante 
 
     - Les échecs de connexion proviennent-ils d’adresses IP attendues ?
 
-2. Accédez à **Examiner** , **Fichiers** , puis vérifiez les points suivants :
+2. Accédez à **Examiner**, **Fichiers**, puis vérifiez les points suivants :
 
     - Combien de fichiers sont partagés publiquement pour permettre à toute personne d’y accéder sans aucun lien ?
 
@@ -85,7 +85,7 @@ Le marquage des applications comme approuvées ou non est une étape importante 
 
     - Certains fichiers partagés le sont-ils avec le compte personnel de quelqu’un ?
 
-3. Accédez à **Examiner** , **Utilisateurs et comptes** , puis vérifiez les points suivants :
+3. Accédez à **Examiner**, **Utilisateurs et comptes**, puis vérifiez les points suivants :
 
     - Des comptes ont-ils été inactifs dans un service particulier pendant une longue période de temps ? Pouvez-vous révoquer la licence de cet utilisateur pour ce service ?
 
@@ -95,9 +95,9 @@ Le marquage des applications comme approuvées ou non est une étape importante 
 
     - Voulez-vous révoquer l’autorisation d’un utilisateur pour une application spécifique ou obliger un utilisateur spécifique à effectuer une authentification multifacteur ?
 
-    - Vous pouvez explorer le compte de l’utilisateur en cliquant sur les trois points à la fin de la ligne du compte de l’utilisateur, et en sélectionnant une action à effectuer. Vous pouvez **Suspendre l’utilisateur** ou **Supprimer les collaborations de l’utilisateur** . Si l’utilisateur a été importé depuis Azure Active Directory, vous pouvez également cliquer sur **Paramètres du compte Azure AD** pour accéder facilement aux fonctionnalités d’administration avancée de l’utilisateur. Exemples de fonctionnalités d’administration : administration de groupes, MFA, détails relatifs aux connexions de l’utilisateur et blocage de la connexion.
+    - Vous pouvez explorer le compte de l’utilisateur en cliquant sur les trois points à la fin de la ligne du compte de l’utilisateur, et en sélectionnant une action à effectuer. Vous pouvez **Suspendre l’utilisateur** ou **Supprimer les collaborations de l’utilisateur**. Si l’utilisateur a été importé depuis Azure Active Directory, vous pouvez également cliquer sur **Paramètres du compte Azure AD** pour accéder facilement aux fonctionnalités d’administration avancée de l’utilisateur. Exemples de fonctionnalités d’administration : administration de groupes, MFA, détails relatifs aux connexions de l’utilisateur et blocage de la connexion.
 
-4. Accédez à **Investiguer** , **Applications connectées** , puis sélectionnez une application. Le tableau de bord Application s’ouvre et vous donne des informations. Vous pouvez utiliser les onglets en haut pour vérifier :
+4. Accédez à **Investiguer**, **Applications connectées**, puis sélectionnez une application. Le tableau de bord Application s’ouvre et vous donne des informations. Vous pouvez utiliser les onglets en haut pour vérifier :
 
     - Quels types d’appareils vos utilisateurs utilisent-ils pour se connecter à l’application ?
 
@@ -127,21 +127,21 @@ Le marquage des applications comme approuvées ou non est une étape importante 
 
     - Pour les solutions alternatives, voulez-vous rendre non approuvées des applications cloud dans votre organisation ?
 
-    - Existe-t-il des applications Cloud qui sont utilisées mais qui ne sont pas conformes à la stratégie de votre organisation ?
+    - Existe-t-il des applications cloud utilisées mais non conformes à la stratégie de votre organisation ?
 
 ## <a name="sample-investigation"></a>Exemple d’examen
 
 Partons du principe que vous pensez ne pas avoir d’accès à votre environnement cloud via des adresses IP présentant un risque. Prenons l’exemple de Tor. Vous créez cependant une stratégie pour les adresses IP à risques simplement pour vous en assurer :
 
-1. Dans le portail, accédez à **Contrôle** , puis choisissez **Modèles** .
+1. Dans le portail, accédez à **Contrôle**, puis choisissez **Modèles**.
 
-2. Choisissez la **stratégie d’activité** correspondant au **Type** .
+2. Choisissez la **stratégie d’activité** correspondant au **Type**.
 
-3. À la fin de la ligne **Connexion depuis une adresse IP à risque** , choisissez le signe plus ( **+** ) pour créer une stratégie.
+3. À la fin de la ligne **Connexion depuis une adresse IP à risque**, choisissez le signe plus (**+**) pour créer une stratégie.
 
 4. Changez le nom de la stratégie pour pouvoir l’identifier.
 
-5. Sous **Activités remplissant toutes les conditions suivantes** , choisissez **+** pour ajouter un filtre. Faites défiler jusqu’à **Balises IP** , puis choisissez **Tor** .
+5. Sous **Activités remplissant toutes les conditions suivantes**, choisissez **+** pour ajouter un filtre. Faites défiler jusqu’à **Balises IP**, puis choisissez **Tor**.
 
     ![Exemple de stratégie pour les adresses IP à risques](media/example-policy-risky-ips.png "exemple de stratégie, adresses IP risquées")
 
