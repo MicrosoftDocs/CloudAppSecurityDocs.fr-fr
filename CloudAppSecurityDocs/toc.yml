@@ -133,10 +133,8 @@
               href: discovery-docker-ubuntu.md
             - name: Docker sur Linux dans Azure
               href: discovery-docker-ubuntu-azure.md
-            - name: Configuration FTP du collecteur de journaux
-              href: log-collector-ftp.md
-            - name: Collecteur de journaux derrière un proxy
-              href: log-collector-proxy.md
+            - name: Gestion avancée des collecteurs de journaux
+              href: log-collector-advanced-management.md
             - name: Utiliser l’analyseur de journal personnalisé
               href: custom-log-parser.md
         - name: Enrichissement de Cloud Discovery
@@ -284,7 +282,7 @@
               href: investigate-activities-api.md
             - name: Utiliser Microsoft Power Automate
               href: flow-integration.md
-- name: Référence
+- name: Informations de référence
   items:
     - name: Attester votre application
       href: attest-your-app.md
