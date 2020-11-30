@@ -1,25 +1,14 @@
 ---
 title: Contrôler quelles sont les applications OAuth Cloud tierces obtenant des autorisations
 description: Cet article fournit des informations sur la manière dont vous pouvez contrôler, bloquer et autoriser les applications OAuth tierces.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 08/05/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: e95e22231d54a83c2bc9e24159aaabaa432d6ffe
-ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
+ms.openlocfilehash: e83f65e562fc0a587a7e6169acae6d3930d03dce
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96033937"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315019"
 ---
 # <a name="manage-oauth-apps"></a>Gérer les applications OAuth
 
@@ -56,7 +45,7 @@ La page Applications OAuth fournit les informations suivantes sur chaque applica
 |État de l’application|Un administrateur peut marquer une application comme approuvée, exclue ou laisser le statut non défini.|Office 365, G Suite, Salesforce|
 |Utilisation communautaire|Indique la cote de popularité de l’application parmi tous vos utilisateurs (utilisation courante, peu courante, rare)|Office 365, G Suite, Salesforce|
 |Dernière autorisation|Date la plus récente à laquelle un utilisateur a accordé des autorisations pour cette application.|Office 365, Salesforce|
-|Serveur de publication|Nom du fournisseur qui fournit l’application.|Office 365|
+|Publisher|Nom du fournisseur qui fournit l’application.|Office 365|
 |Dernière utilisation|Date la plus récente à laquelle cette application a été utilisée par une personne de votre organisation.|Salesforce|
 
 ## <a name="ban-or-approve-an-app"></a>Exclure ou approuver une application

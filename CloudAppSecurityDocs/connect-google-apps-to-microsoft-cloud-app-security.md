@@ -1,25 +1,14 @@
 ---
 title: Connecter G Suite à Cloud App Security
 description: Cet article vous explique comment connecter votre application G Suite à Cloud App Security à l’aide du connecteur d’API, afin de bénéficier de plus de contrôle et de visibilité lors de l’utilisation.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 11/27/2019
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 89342994a408ae1b03bd50c3c1fa4adc9dd12bc4
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 1f406c75039cccf81df75b8e6589bb4f63ad2710
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90881434"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96313072"
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>Connecter G Suite à Microsoft Cloud App Security
 
@@ -61,13 +50,13 @@ Cet article fournit des instructions pour connecter Microsoft Cloud App Security
     >
     > Ignorez l’avertissement sur les **informations d’identification** pour l’instant.
 
-1. Sélectionnez Menu, accédez à **API &**  >  **tableau de bord**des services et assurez-vous que les API suivantes sont activées :
+1. Sélectionnez Menu, accédez à **API &**  >  **tableau de bord** des services et assurez-vous que les API suivantes sont activées :
 
     ![API Google activé](media/google5.png)
 
 1. Accédez à l’onglet de l' **écran de consentement OAuth** .
 
-    * Dans **nom**de l’application, tapez **Microsoft Cloud App Security**.
+    * Dans **nom** de l’application, tapez **Microsoft Cloud App Security**.
 
     * Tous les autres champs sont facultatifs.
 
@@ -154,7 +143,7 @@ Dans **Application description** (Description de l’application), tapez « Mic
 
     * **URL des conditions d’accès**: https://go.microsoft.com/fwlink/?LinkID=733268
 
-    * **URL**de la politique de confidentialité : https://go.microsoft.com/fwlink/?LinkId=512132
+    * **URL** de la politique de confidentialité : https://go.microsoft.com/fwlink/?LinkId=512132
 
     * Sous **OAuth 2.0 scopes** (Étendues OAuth 2.0), copiez et collez les URL suivantes (copiez-les une à la fois et appuyez sur Entrée après chacune d’elles) :  
 `https://www.googleapis.com/auth/admin.reports.audit.readonly`  

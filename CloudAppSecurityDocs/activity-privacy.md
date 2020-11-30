@@ -1,24 +1,14 @@
 ---
 title: Confidentialité de l’activité
 description: Cet article fournit des informations sur la façon de configurer votre analyse d’activité pour qu’elle soit conforme à votre politique de confidentialité des utilisateurs.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 05/27/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 89a5f95512a2cfd3eb64c181b5e805944c0275eb
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: d43913861adbc06ef59ac463e9cb187967941635
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880921"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96314815"
 ---
 # <a name="activity-privacy"></a>Confidentialité de l’activité
 

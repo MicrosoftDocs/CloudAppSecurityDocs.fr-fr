@@ -1,21 +1,14 @@
 ---
 title: Marquer en tant qu’API lecture-alertes
 description: Cet article décrit la case à cocher en tant que requête de lecture dans l’API des alertes de Cloud App Security.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 03/27/2020
 ms.topic: reference
-ms.collection: M365-security-compliance
-ms.service: cloud-app-security
-ms.suite: ems
-ms.openlocfilehash: d3469f45ed36ea2089ef659e9181fef1857454b2
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: ecf314300e59371fc6cddaeddc0ab4b78efbaaa0
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880684"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96314589"
 ---
 # <a name="mark-as-read---alerts-api"></a>Marquer en tant qu’API lecture-alertes
 

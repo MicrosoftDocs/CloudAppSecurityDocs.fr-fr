@@ -1,25 +1,14 @@
 ---
 title: Configurer le chargement automatique des journaux pour des rapports continus
 description: Cet article fournit des informations sur le chargement de journaux pour créer des rapports Cloud Discovery automatiques.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 12/10/2018
 ms.topic: conceptual
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 98e5a260a3b0af3e2aeb8998f3845fc9076c7cc3
-ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
+ms.openlocfilehash: 1cae2f61af80348156090afe7b1058462dcab58d
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96033801"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96313067"
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance---deprecated"></a>Configurer le chargement automatique des journaux pour des rapports continus sur une appliance virtuelle - Déconseillé
 
@@ -42,7 +31,7 @@ Le collecteur de journaux peut gérer correctement une capacité allant jusqu’
 Les principaux goulots d’étranglement dans le processus de collecte des journaux sont les suivants :
 
 - Bande passante réseau : votre bande passante réseau détermine la vitesse de chargement des journaux.
-- Performances d’E/S de la machine virtuelle : détermine la vitesse à laquelle les journaux sont écrits sur le disque du collecteur de journaux.
+- Performances d’e/s de la machine virtuelle : détermine la vitesse à laquelle les journaux sont écrits sur le disque du collecteur de journaux.
 Le collecteur de journaux dispose d’un mécanisme de sécurité intégré qui surveille le débit auquel les journaux arrivent et le compare au débit de chargement. En cas de congestion, le collecteur de journaux commence à supprimer des fichiers journaux. Si votre configuration dépasse généralement 50 Go par heure, il est recommandé de répartir le trafic entre plusieurs collecteurs de journaux.
 
 ## <a name="set-up-and-configuration"></a>Installation et configuration

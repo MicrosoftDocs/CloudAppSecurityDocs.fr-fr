@@ -1,25 +1,14 @@
 ---
 title: Actions de gouvernance pour contrôler les applications connectées
 description: Cet article liste et décrit toutes les actions de gouvernance qui peuvent être effectuées dans Cloud App Security ainsi que les messages de journal qui les suivent.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 06/28/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 7b507e8bb11be67fada9e0e29b6e50eb415a5459
-ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
+ms.openlocfilehash: d782e94c59ebb1df993cf9d761c1939fa35ecc84
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96033292"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96314832"
 ---
 # <a name="governing-connected-apps"></a>Gouvernance des applications connectées
 

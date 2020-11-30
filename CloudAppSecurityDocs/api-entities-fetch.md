@@ -1,21 +1,14 @@
 ---
 title: API FETCH-Entities
 description: Cet article décrit la requête d’extraction dans l’API des entités de Cloud App Security.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 03/27/2020
 ms.topic: reference
-ms.collection: M365-security-compliance
-ms.service: cloud-app-security
-ms.suite: ems
-ms.openlocfilehash: 001f0ec02b22f33a57ee6a860b376bbee0c983d0
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 34db1003dd3ac23f7bc4d5f14100b6c1ff4f6a2e
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880883"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96314271"
 ---
 # <a name="fetch---entities-api"></a>API FETCH-Entities
 

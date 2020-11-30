@@ -1,21 +1,14 @@
 ---
 title: API Cloud App Security des activités
 description: Cet article fournit des informations sur l’utilisation de l’API des activités.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 03/27/2020
 ms.topic: reference
-ms.collection: M365-security-compliance
-ms.service: cloud-app-security
-ms.suite: ems
-ms.openlocfilehash: 9ba5e83c10406308a1faf6e323fcfb9837da4b12
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 501d8a5ccaad1673c34aa0367f06531de94035b5
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880037"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96314679"
 ---
 # <a name="activities-api"></a>API d’activités
 

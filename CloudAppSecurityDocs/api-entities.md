@@ -1,21 +1,14 @@
 ---
 title: API Cloud App Security Entities
 description: Cet article fournit des informations sur l’utilisation de l’API Entities.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 03/27/2020
 ms.topic: reference
-ms.collection: M365-security-compliance
-ms.service: cloud-app-security
-ms.suite: ems
-ms.openlocfilehash: 9b6d7c4428b8383a4107a824a6113fcd3362dfa1
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: ac5135136dac13af2ebbfc47e786804094cecd59
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90881089"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96314067"
 ---
 # <a name="entities-api"></a>API Entités
 

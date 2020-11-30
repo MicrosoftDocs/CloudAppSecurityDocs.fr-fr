@@ -1,25 +1,14 @@
 ---
 title: Anonymisation des données d’utilisateur dans Cloud App Security
 description: Cet article fournit des informations sur la façon de protéger la confidentialité des utilisateurs en anonymisant les noms d’utilisateur dans vos données Cloud Discovery.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 04/20/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: da5092903eb11d73726fe7f2f73da1ffd94b57b9
-ms.sourcegitcommit: e711727f2f00ee3b54e08337a5040449e352ca46
+ms.openlocfilehash: bb8befb8c65f766118f6a3221b382c6699b17a0e
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "93185902"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96313523"
 ---
 # <a name="cloud-discovery-data-anonymization"></a>Anonymisation des données Cloud Discovery
 
@@ -37,7 +26,7 @@ Points clés :
 
 1. Il existe trois façons d’appliquer l’anonymisation des données :
 
-    - Vous pouvez anonymiser les données d’un fichier journal spécifique en [créant un rapport de capture instantanée](create-snapshot-cloud-discovery-reports.md) et en sélectionnant **Anonymiser les informations privées** .  
+    - Vous pouvez anonymiser les données d’un fichier journal spécifique en [créant un rapport de capture instantanée](create-snapshot-cloud-discovery-reports.md) et en sélectionnant **Anonymiser les informations privées**.  
     ![Anonymiser des données de capture instantanée](media/anonymize-log.png)
 
     - Vous pouvez anonymiser les données d’un [chargement automatisé d’une nouvelle source de données](configure-automatic-log-upload-for-continuous-reports.md) en sélectionnant **Anonymiser les informations privées** quand vous ajoutez la nouvelle source de données.  
@@ -45,10 +34,10 @@ Points clés :
 
     - Vous pouvez définir le comportement par défaut dans Cloud App Security pour anonymiser toutes les données des rapports de capture instantanée des fichiers journaux chargés et celles des rapports continus du collecteur de journaux comme suit :
 
-    1. Sélectionnez **paramètres**  >  **Cloud Discovery paramètres** .
+    1. Sélectionnez **paramètres**  >  **Cloud Discovery paramètres**.
 
-    2. Dans l’onglet **anonymisation** , pour anonymiser les noms d’utilisateur par défaut, sélectionnez **anonymiser les informations privées par défaut dans les nouveaux rapports et les nouvelles sources de données** . Vous pouvez également sélectionner **rendre les informations d’appareil anonymes par défaut dans le rapport « utilisateurs du point de terminaison Win10 »** .
-    3. Cliquez sur **Enregistrer** .
+    2. Dans l’onglet **anonymisation** , pour anonymiser les noms d’utilisateur par défaut, sélectionnez **anonymiser les informations privées par défaut dans les nouveaux rapports et les nouvelles sources de données**. Vous pouvez également sélectionner **rendre les informations d’appareil anonymes par défaut dans le rapport « utilisateurs du point de terminaison Win10 »**.
+    3. Cliquez sur **Enregistrer**.
 
     ![Page Paramètres d’anonymisation](media/anonymizer1.png)
 
@@ -69,7 +58,7 @@ Points clés :
 
         ![Anonymiser la table utilisateur](media/anonymize-user-table.png)
 
-    1. Dans la fenêtre contextuelle, entrez la justification de la résolution du nom d’utilisateur, puis cliquez sur **résoudre** . Dans la ligne appropriée, le nom d’utilisateur résolu s’affiche.
+    1. Dans la fenêtre contextuelle, entrez la justification de la résolution du nom d’utilisateur, puis cliquez sur **résoudre**. Dans la ligne appropriée, le nom d’utilisateur résolu s’affiche.
 
         > [!NOTE]
         > Cette action est auditée.
@@ -78,10 +67,10 @@ Points clés :
 
     La méthode alternative suivante pour résoudre les noms d’utilisateur uniques peut également être utilisée pour rechercher le nom d’utilisateur chiffré d’un nom d’utilisateur connu.
 
-    1. Sous l’roue dentée paramètres, sélectionnez **paramètres de Cloud Discovery** .
+    1. Sous l’roue dentée paramètres, sélectionnez **paramètres de Cloud Discovery**.
 
-    1. Sous l’onglet **Anonymisation** , sous **Anonymiser et résoudre les noms d’utilisateur** , entrez une justification expliquant pourquoi vous effectuez la résolution.
-    1. Sous **Entrer le nom d’utilisateur à résoudre** , sélectionnez **À partir du nom anonymisé** et entrez le nom d’utilisateur anonymisé, ou sélectionnez **À anonymiser** et entrez le nom d’utilisateur d’origine à résoudre. Cliquez sur **Résoudre** .
+    1. Sous l’onglet **Anonymisation**, sous **Anonymiser et résoudre les noms d’utilisateur**, entrez une justification expliquant pourquoi vous effectuez la résolution.
+    1. Sous **Entrer le nom d’utilisateur à résoudre**, sélectionnez **À partir du nom anonymisé** et entrez le nom d’utilisateur anonymisé, ou sélectionnez **À anonymiser** et entrez le nom d’utilisateur d’origine à résoudre. Cliquez sur **Résoudre**.
 
         ![Résoudre la fenêtre contextuelle d’anonymisation](media/anonymizer.png)
 
@@ -91,8 +80,8 @@ Points clés :
 
         ![Anonymiser la résolution en bloc](media/anonymize-bulk-resolve.png)
 
-    1. Cliquez sur **désanonymiser l’utilisateur** .
-    1. Dans la fenêtre contextuelle, entrez la justification de la résolution du nom d’utilisateur, puis cliquez sur **résoudre** . Dans les lignes pertinentes, les noms d’utilisateur résolus sont affichés.
+    1. Cliquez sur **désanonymiser l’utilisateur**.
+    1. Dans la fenêtre contextuelle, entrez la justification de la résolution du nom d’utilisateur, puis cliquez sur **résoudre**. Dans les lignes pertinentes, les noms d’utilisateur résolus sont affichés.
 
         > [!NOTE]
         > Cette action est auditée.

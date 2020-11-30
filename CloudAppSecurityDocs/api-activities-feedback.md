@@ -1,21 +1,14 @@
 ---
 title: API de commentaires-activités
 description: Cet article décrit la demande de commentaires dans l’API des activités de Cloud App Security.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 03/27/2020
 ms.topic: reference
-ms.collection: M365-security-compliance
-ms.service: cloud-app-security
-ms.suite: ems
-ms.openlocfilehash: b9d073d3b39fbfeee7ee43b18ab05ddf2969c7bf
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: f21dbee6d43236710f6a5846962c8444c52cddc7
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880096"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96314730"
 ---
 # <a name="feedback-on-activity---activities-api"></a>Commentaires sur l’API activité-activités
 

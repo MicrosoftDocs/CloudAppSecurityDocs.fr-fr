@@ -1,22 +1,14 @@
 ---
 title: Déploiement de Cloud App Security
 description: Ce guide de démarrage rapide décrit le processus de mise en route de Cloud App Security, qui permet d’utiliser les applications cloud, de les contrôler et d’obtenir des insights les concernant.
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 06/07/2020
 ms.topic: quickstart
-ms.collection: M365-security-compliance
-ms.service: cloud-app-security
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: d7e32b00bc555dd5c9fb58bc874a3f149521d390
-ms.sourcegitcommit: faf7c8f85721dd143ca81c6854ad5c4e8fa50e69
+ms.openlocfilehash: 17a6416c7af8a6da814ad267307eea603e50604b
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96025322"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96314883"
 ---
 # <a name="quickstart-get-started-with-microsoft-cloud-app-security"></a>Démarrage rapide : Bien démarrer avec Microsoft Cloud App Security
 

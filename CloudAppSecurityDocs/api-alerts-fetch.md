@@ -1,21 +1,14 @@
 ---
 title: API FETCH-Alerts
 description: Cet article décrit la requête d’extraction dans l’API des alertes de Cloud App Security.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 03/27/2020
 ms.topic: reference
-ms.collection: M365-security-compliance
-ms.service: cloud-app-security
-ms.suite: ems
-ms.openlocfilehash: 78ef3b8d2982a6f5228344b35f5d67dca9a6aec1
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 8332805803dc05d991ef153b8402afb39b7b0cc1
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90879836"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96314611"
 ---
 # <a name="fetch---alerts-api"></a>API FETCH-Alerts
 

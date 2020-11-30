@@ -1,21 +1,14 @@
 ---
 title: Finaliser le chargement des fichiers-API Cloud Discovery
 description: Cet article décrit la demande de done_upload dans l’API Cloud Discovery de Cloud App Security.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 03/27/2020
 ms.topic: reference
-ms.collection: M365-security-compliance
-ms.service: cloud-app-security
-ms.suite: ems
-ms.openlocfilehash: a30fd3f257089d8d3aeda125f63ae2c695d6344c
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 52adeb1b0a9f858a5c4251ff9a79cb4a24656a14
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880594"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96314475"
 ---
 # <a name="finalize-file-upload---cloud-discovery-api"></a>Finaliser le chargement des fichiers-API Cloud Discovery
 

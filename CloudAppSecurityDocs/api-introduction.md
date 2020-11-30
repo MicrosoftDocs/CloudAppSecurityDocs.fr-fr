@@ -1,21 +1,14 @@
 ---
 title: API REST Cloud App Security
 description: Cet article explique comment interagir avec Cloud App Security via HTTPs.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 03/27/2020
 ms.topic: reference
-ms.collection: M365-security-compliance
-ms.service: cloud-app-security
-ms.suite: ems
-ms.openlocfilehash: cb66e8d45d74d57adf71a095851c40087d102ce4
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 468d039f6bc620616e86b98b4967a055c7d0e380
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880552"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96313982"
 ---
 # <a name="cloud-app-security-rest-api"></a>API REST Cloud App Security
 
@@ -58,7 +51,7 @@ Où `<your_token_key>` est votre jeton d’API personnel.
 
 Pour plus d’informations sur les jetons d’API, consultez [gestion des jetons d’API](api-authentication.md).
 
-### <a name="example"></a>Exemple
+### <a name="example"></a> Exemple
 
 ```rest
 curl -XGET -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/example-endpoint"
@@ -116,7 +109,7 @@ Certains de nos points de terminaison d’API prennent en charge les filtres lor
 
 La plupart des filtres prennent en charge plusieurs valeurs pour vous fournir des requêtes puissantes. Lors de la combinaison des filtres et des opérateurs, nous utilisons et comme opérateur logique entre les filtres.
 
-### <a name="example"></a>Exemple
+### <a name="example"></a> Exemple
 
 ```rest
 curl -XGET -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/example-endpoint" -d '{
@@ -155,7 +148,7 @@ Le tableau suivant décrit les opérateurs pris en charge :
 | isnotset | boolean | Quand la valeur est définie sur « true », retourne tous les enregistrements pertinents qui n’ont pas de valeur dans le champ spécifié |
 | isset | boolean | Quand la valeur est définie sur « true », retourne tous les enregistrements pertinents qui ont une valeur dans le champ spécifié |
 | lt | valeur unique | Retourne tous les enregistrements dont la valeur est inférieure à la valeur fournie. |
-| LTE | valeur unique | Retourne tous les enregistrements dont la valeur est inférieure ou égale à la valeur fournie. |
+| lte | valeur unique | Retourne tous les enregistrements dont la valeur est inférieure ou égale à la valeur fournie. |
 | lte_ndays | nombre | Retourne tous les enregistrements dont la date est antérieure à N jours |
 | ncontains | Liste de chaînes | Retourne tous les enregistrements pertinents qui ne contiennent pas l’une des chaînes fournies. |
 | ndescendantof | liste de valeurs | Retourne tous les enregistrements pertinents qui ne correspondent pas à des valeurs ou descendants de ceux-ci |

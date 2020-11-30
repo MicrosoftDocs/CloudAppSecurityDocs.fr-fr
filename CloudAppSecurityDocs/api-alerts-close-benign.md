@@ -1,21 +1,14 @@
 ---
 title: Fermer l’API bénigne-Alerts
 description: Cet article décrit la tentative de fermeture en bloc d’une alerte en tant que demande bénigne dans l’API des alertes de Cloud App Security.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/20/2020
 ms.topic: reference
-ms.collection: M365-security-compliance
-ms.service: cloud-app-security
-ms.suite: ems
-ms.openlocfilehash: aa28010c10702b917ebbfc3996b52161e0c66a46
-ms.sourcegitcommit: ee40375712d2cc4090bd4e9cb58df486ec02aa62
+ms.openlocfilehash: cf137f0476b588e66493fabde7bfae354cf41f15
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92327025"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96314662"
 ---
 # <a name="close-benign---alerts-api"></a>Fermer l’API bénigne-Alerts
 

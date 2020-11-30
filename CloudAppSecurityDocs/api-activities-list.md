@@ -1,21 +1,14 @@
 ---
 title: API List-Activities
 description: Cet article décrit la requête de liste dans l’API des activités de Cloud App Security.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 03/27/2020
 ms.topic: reference
-ms.collection: M365-security-compliance
-ms.service: cloud-app-security
-ms.suite: ems
-ms.openlocfilehash: f2a0f245994852c0e48f6c334a7172ffa14950a1
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: d36f18f3cc19b726ce84ae75b4a19427a78dba17
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880074"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96314696"
 ---
 # <a name="list---activities-api"></a>API List-Activities
 

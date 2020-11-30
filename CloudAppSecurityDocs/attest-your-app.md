@@ -1,25 +1,14 @@
 ---
 title: Sanctionner vos applications
 description: Cet article fournit des instructions pour l’attestation de vos applications dans Cloud App Security.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 01/30/2020
 ms.topic: conceptual
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 59cdb1de028d0aed6c85d0df2a057b02d0489c0b
-ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
+ms.openlocfilehash: 3c2c1b392bdd4f1640b76c80ce227ad9379f4902
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96033835"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96313744"
 ---
 # <a name="attest-your-app"></a>Attester votre application
 

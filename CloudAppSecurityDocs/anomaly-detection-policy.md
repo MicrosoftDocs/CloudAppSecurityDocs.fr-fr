@@ -1,25 +1,14 @@
 ---
 title: Créer une stratégie de détection des anomalies dans Cloud App Security
 description: Cet article fournit une description des stratégies de détection des anomalies ainsi que des informations de référence sur les composantes d’une stratégie de détection des anomalies.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 08/20/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 1d2fb570be2c764bbd439821377e27f182d1fb60
-ms.sourcegitcommit: 5367d8fdf99d61719a395728f2ef4b014604e3bc
+ms.openlocfilehash: 6cddeb16149a61aa1099d4fe74c3423dbd45042f
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/08/2020
-ms.locfileid: "94371084"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96314747"
 ---
 # <a name="get-behavioral-analytics-and-anomaly-detection"></a>Bénéficiez d’une analyse comportementale et d’une détection des anomalies
 
@@ -51,7 +40,7 @@ Ces stratégies s’affichent dans la page Cloud App Security les stratégies et
 
 ## <a name="anomaly-detection-policies"></a>Stratégie de détection des anomalies
 
-Vous pouvez afficher les stratégies de détection des anomalies dans le portail en cliquant sur **Contrôle** , puis sur **Stratégies**. Sélectionnez **Stratégie de détection d’anomalie** pour le type de stratégie.
+Vous pouvez afficher les stratégies de détection des anomalies dans le portail en cliquant sur **Contrôle**, puis sur **Stratégies**. Sélectionnez **Stratégie de détection d’anomalie** pour le type de stratégie.
 
  ![nouvelles stratégies de détection des anomalies](media/new-anomaly-detection-policies.png)
 
@@ -157,7 +146,7 @@ Ces stratégies recherchent les activités dans une seule session en prenant en 
 Vous pouvez lancer des actions de correction automatisées sur les alertes générées par les stratégies de détection d’anomalie.
 
 1. Cliquez sur le nom de la stratégie de détection dans la page **Stratégie**.
-1. Dans la fenêtre **Modifier la stratégie de détection d’anomalie** qui s’ouvre, sous **Gouvernance** , définissez les actions de correction que vous souhaitez pour chaque application connectée ou pour toutes les applications.
+1. Dans la fenêtre **Modifier la stratégie de détection d’anomalie** qui s’ouvre, sous **Gouvernance**, définissez les actions de correction que vous souhaitez pour chaque application connectée ou pour toutes les applications.
 1. Cliquez sur **Update**.
 
 ## <a name="tune-anomaly-detection-policies"></a>Paramétrage des stratégies de détection d’anomalie
@@ -166,9 +155,9 @@ Pour que le moteur de détection d’anomalie supprime ou déclenche des alertes
 
 * Dans la stratégie de voyage impossible, vous pouvez définir le curseur de sensibilité afin de déterminer le niveau de comportement anormal nécessaire pour déclencher une alerte. Par exemple, si vous la définissez sur faible, cela supprime les alertes de voyage impossibles à partir des emplacements communs d’un utilisateur et, si vous la définissez sur élevé, cela entraîne des alertes. Vous avez le choix entre les niveaux de sensibilité suivants :
 
-  * **Faible** : suppressions du système, du locataire et de l’utilisateur
-  * **Moyenne**  : Suppression du système et de l’utilisateur
-  * **Élevée**  : Suppression du système uniquement
+  * **Faible**: suppressions du système, du locataire et de l’utilisateur
+  * **Moyenne** : Suppression du système et de l’utilisateur
+  * **Élevée** : Suppression du système uniquement
 
     Où :
 
@@ -181,7 +170,7 @@ Pour que le moteur de détection d’anomalie supprime ou déclenche des alertes
 * Vous pouvez également configurer si les alertes relatives à l’activité à partir d’un pays/d’une région peu fréquent, d’adresses IP anonymes, d’adresses IP suspectes et de voyages impossibles doivent analyser les connexions ayant échoué ou réussi ou simplement les connexions.
 
 > [!NOTE]
-> Par défaut, les protocoles de connexion hérités, tels que ceux qui n’utilisent pas multi-Factor Authentication (par exemple, WS-Trust), ne sont pas contrôlés par la stratégie de voyage impossible. Si votre organisation utilise des protocoles hérités, pour éviter les activités pertinentes manquantes, modifiez la stratégie et, sous **Configuration avancée** , définissez **analyser les activités de connexion** à **toutes les connexions**.
+> Par défaut, les protocoles de connexion hérités, tels que ceux qui n’utilisent pas multi-Factor Authentication (par exemple, WS-Trust), ne sont pas contrôlés par la stratégie de voyage impossible. Si votre organisation utilise des protocoles hérités, pour éviter les activités pertinentes manquantes, modifiez la stratégie et, sous **Configuration avancée**, définissez **analyser les activités de connexion** à **toutes les connexions**.
 
 ## <a name="scope-anomaly-detection-policies"></a>Délimiter des stratégies de détection d’anomalie
 
@@ -192,7 +181,7 @@ Pour délimiter une stratégie de détection d’anomalie :
 
 1. Cliquez sur stratégies de **contrôle**  >  **Policies** et définissez le filtre de **type** sur la **stratégie de détection d’anomalie**.
 1. Cliquez sur la stratégie que vous souhaitez délimiter.
-1. Sous **Étendue** , dans la liste déroulante, remplacez la valeur par défaut **Tous les utilisateurs et groupes** par **Utilisateurs et groupes spécifiques**.
+1. Sous **Étendue**, dans la liste déroulante, remplacez la valeur par défaut **Tous les utilisateurs et groupes** par **Utilisateurs et groupes spécifiques**.
 1. Sélectionnez **Inclure** pour spécifier les utilisateurs et les groupes auxquels s’applique cette stratégie. Les utilisateurs ou les groupes qui ne sont pas sélectionnés ici ne seront pas considérés comme une menace et ne généreront pas d’alerte.
 1. Sélectionnez **Exclure** pour spécifier les utilisateurs pour lesquels cette stratégie ne s’applique pas. Les utilisateurs sélectionnés ici ne seront pas considérés comme une menace et ne généreront pas d’alerte, même s’ils sont membres de groupes qui ont été sélectionnés sous **Inclure**.
 
@@ -202,11 +191,11 @@ Pour délimiter une stratégie de détection d’anomalie :
 
 Vous pouvez trier rapidement les diverses alertes déclenchées par les nouvelles stratégies de détection des anomalies afin de déterminer celles qui doivent être prises en charge en priorité. Pour cela, vous avez besoin du contexte de l’alerte, afin de pouvoir obtenir une vue plus globale et identifier si une action malveillante se produit effectivement.
 
-1. Dans le **journal d’activité** , vous pouvez ouvrir une activité afin d’afficher son contenu. Cliquez sur **utilisateur** pour afficher l’onglet Insights utilisateur. Cet onglet contient des informations telles que le nombre d’alertes, les activités et l’emplacement à partir duquel ils sont connectés, ce qui est important dans le cas d’une investigation.
+1. Dans le **journal d’activité**, vous pouvez ouvrir une activité afin d’afficher son contenu. Cliquez sur **utilisateur** pour afficher l’onglet Insights utilisateur. Cet onglet contient des informations telles que le nombre d’alertes, les activités et l’emplacement à partir duquel ils sont connectés, ce qui est important dans le cas d’une investigation.
 
     ![détection d’anomalie alert1 ](media/anomaly-alert-user1.png) ![ détection d’anomalies alert2](media/anomaly-alert-user2.png)
 
-1. Cela vous permet d’identifier les activités suspectes que l’utilisateur a effectuées et d’obtenir ainsi plus d’indices démontrant que le compte a été compromis. Par exemple, une alerte sur plusieurs échecs de connexion peut en effet être suspecte et indiquer une éventuelle attaque par force brute, mais elle peut également signaler un problème de configuration d’application, transformant cette alerte en un « faux positif » bénin. Mais si vous voyez une alerte d’échecs de connexion pour d’autres activités suspectes, la probabilité que le compte est compromis augmente. Dans l’exemple ci-dessous, vous pouvez voir que l’alerte **Plusieurs tentatives de connexion infructueuses** a été suivie par les alertes **Activité à partir d’une adresse IP TOR** et **Activité de type Voyage impossible** , deux indicateurs flagrants d’une compromission (IOCs). Si cela n’était pas suffisamment suspect, vous pouvez voir que le même utilisateur a effectué une **activité de téléchargement de masse** , qui est souvent un indicateur de l’attaquant effectuant l’exfiltration des données.
+1. Cela vous permet d’identifier les activités suspectes que l’utilisateur a effectuées et d’obtenir ainsi plus d’indices démontrant que le compte a été compromis. Par exemple, une alerte sur plusieurs échecs de connexion peut en effet être suspecte et indiquer une éventuelle attaque par force brute, mais elle peut également signaler un problème de configuration d’application, transformant cette alerte en un « faux positif » bénin. Mais si vous voyez une alerte d’échecs de connexion pour d’autres activités suspectes, la probabilité que le compte est compromis augmente. Dans l’exemple ci-dessous, vous pouvez voir que l’alerte **Plusieurs tentatives de connexion infructueuses** a été suivie par les alertes **Activité à partir d’une adresse IP TOR** et **Activité de type Voyage impossible**, deux indicateurs flagrants d’une compromission (IOCs). Si cela n’était pas suffisamment suspect, vous pouvez voir que le même utilisateur a effectué une **activité de téléchargement de masse**, qui est souvent un indicateur de l’attaquant effectuant l’exfiltration des données.
 
     ![détection des anomalies alert3](media/anomaly-alert-user3.png)
 

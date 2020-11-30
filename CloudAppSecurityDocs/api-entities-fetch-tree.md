@@ -1,21 +1,14 @@
 ---
 title: API d’extraction d’arborescence d’entités
 description: Cet article décrit la demande d’extraction d’arborescence d’entités dans l’API des entités de Cloud App Security.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 03/27/2020
 ms.topic: reference
-ms.collection: M365-security-compliance
-ms.service: cloud-app-security
-ms.suite: ems
-ms.openlocfilehash: 8d01066d6195b3541045b15094432999dab98cc5
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 70e01ffa31ddfe13434c0a1705f2af98b43de6b5
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90879737"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96314288"
 ---
 # <a name="fetch-entity-tree---entities-api"></a>API d’extraction d’arborescence d’entités
 

@@ -1,21 +1,14 @@
 ---
 title: Fermer l’API fausses alertes positives
 description: Cet article décrit la demande de fermeture en bloc d’une alerte en tant que faux positif dans l’API des alertes de Cloud App Security.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/20/2020
 ms.topic: reference
-ms.collection: M365-security-compliance
-ms.service: cloud-app-security
-ms.suite: ems
-ms.openlocfilehash: 2783c414a7df2832136fbbbcbd2e319c2ac5ef02
-ms.sourcegitcommit: ee40375712d2cc4090bd4e9cb58df486ec02aa62
+ms.openlocfilehash: 309e0fc4b7c89ab4f24ace1dd0b790b73a66bf6f
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92327029"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96314645"
 ---
 # <a name="close-false-positive---alerts-api"></a>Fermer l’API fausses alertes positives
 

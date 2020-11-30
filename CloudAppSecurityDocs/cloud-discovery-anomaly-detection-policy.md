@@ -1,25 +1,14 @@
 ---
 title: Créer une stratégie de détection des anomalies Cloud Discovery dans Cloud App Security
 description: Cette rubrique fournit des informations sur l’utilisation des stratégies de détection des anomalies Cloud Discovery.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 12/10/2018
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 7eaa223ba6c9f7bcf1c789fdce59b75739a0bc12
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 371f7b53de7f77d4743df39f1957bb1c411ad14c
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90881519"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96313421"
 ---
 # <a name="cloud-discovery-anomaly-detection-policy"></a>Stratégie de détection des anomalies Cloud Discovery
 
@@ -40,7 +29,7 @@ Pour chaque stratégie, définissez les paramètres suivants :
 2. Spécifiez un **Nom de stratégie** et une **Description**.
 
 3. Créez un filtre pour les applications que vous voulez surveiller en cliquant sur **Ajouter un filtre**.
-   Vous pouvez sélectionner une application spécifique, une **catégorie**d’application ou filtrer par **nom**, * * domaine et **facteur de risque**, puis cliquer sur **Enregistrer**.
+   Vous pouvez sélectionner une application spécifique, une **catégorie** d’application ou filtrer par **nom**, * * domaine et **facteur de risque**, puis cliquer sur **Enregistrer**.
 
 4. Sous **Appliquer à**, définissez comment vous voulez que l’utilisation soit filtrée. L’utilisation en cours de surveillance peut être filtrée de deux manières différentes :
 

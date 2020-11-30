@@ -1,25 +1,14 @@
 ---
 title: Ajouter des applications personnalisées à Cloud Discovery dans Cloud App Security
 description: Cette rubrique fournit des informations sur la façon d’ajouter des applications personnalisées à Cloud Discovery dans Cloud App Security pour surveiller le Shadow IT.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 12/10/2018
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: fb2086ea657b54ee5b8b072072779d88dd3031b4
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: c757d320b242a8cccdde312835ec9e35299f6bdf
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90881488"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96313251"
 ---
 # <a name="add-custom-apps-to-cloud-discovery"></a>Ajouter des applications personnalisées à Cloud Discovery
 
@@ -45,7 +34,7 @@ En ajoutant une nouvelle application cloud personnalisée, Cloud App Security pe
 
     ![application personnalisée](media/add-custom-app.png)
 
-4. Sous **Domaines**, renseignez les domaines uniques utilisés lors de l’accès à l’application personnalisée. Ces domaines servent à faire correspondre des messages du journal de trafic avec cette application. Si la source de données que vous utilisez ne contient pas d’informations sur l’URL de l’application, renseignez les champs d’adresse **IPv4** et **IPv6**.
+4. Sous **Domaines**, renseignez les domaines uniques utilisés lors de l’accès à l’application personnalisée. Ces domaines servent à faire correspondre des messages du journal de trafic avec cette application. Si la source de données que vous utilisez ne contient pas d’informations sur l’URL de l’application, veillez à renseigner les champs d’adresse **IPv4** et **IPv6** .
 5. Renseignez les champs **Plateforme d’hébergement** et **ID d’abonnement Azure**. Si vous le souhaitez, spécifiez une **Unité commerciale** pour l’application.
 6. Attribuez un **Score** relatif au risque et ajoutez des informations dans **Notes de l’application** pour faciliter le suivi des modifications de cet enregistrement.
 7. Cliquez sur **Créer**.
@@ -56,7 +45,7 @@ Vous pouvez à tout moment cliquer sur les trois points à la fin de la ligne po
 
 >[!NOTE]
 > Les applications personnalisées affichent automatiquement une balise **Application personnalisée** lorsque vous les ajoutez. Cette balise d’application ne peut pas être supprimée.
-Pour afficher toutes vos applications personnalisées, définissez le filtre **Balise d’application** sur « Application personnalisée ».
+Pour afficher toutes vos applications personnalisées, définissez le filtre des **balises d’application** sur « application personnalisée ».
 <!-- - By default, custom apps have a risk score of 10, but you can use the **Override app score** action to change it at any time.-->
 
 ## <a name="next-steps"></a>Étapes suivantes
