@@ -1,25 +1,14 @@
 ---
 title: Filtres et requêtes d’applications découvertes de Cloud App Security
 description: Cet article fournit une liste de filtres et de requêtes d’applications découvertes de Cloud App Security, et explique comment les utiliser.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 07/07/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: ef61d90f23eb9e15b8b84f926b0b4424f4b3b36b
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 3503790663866ee737fe70937517ae2663cabf21
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90881680"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96311738"
 ---
 # <a name="discovered-app-filters-and-queries"></a>Filtres et requêtes des applications découvertes
 

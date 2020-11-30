@@ -1,25 +1,14 @@
 ---
 title: Connecter Salesforce à Cloud App Security
 description: Cet article vous explique comment connecter votre application Salesforce à Cloud App Security à l’aide du connecteur d’API, afin de bénéficier de plus de contrôle et de visibilité lors de l’utilisation.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/06/2019
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 9809f3f2d95497b1813d44f82261cf0d2fb11213
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: c2a1514fcb5fc02823f8d365a21fd1f154ab0e86
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880853"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96312503"
 ---
 # <a name="connect-salesforce-to-microsoft-cloud-app-security"></a>Connecter Salesforce à Microsoft Cloud App Security
 
@@ -35,7 +24,7 @@ Cet article fournit des instructions pour connecter Microsoft Cloud App Security
 
     Votre compte Salesforce doit correspondre à l’une des éditions suivantes prenant en charge l’API REST :
 
-    **Performance**, **Enterprise**, **Unlimited**ou **Developer**.
+    **Performance**, **Enterprise**, **Unlimited** ou **Developer**.
 
     L’édition **Professional** ne comprend pas l’API REST par défaut, mais elle peut être ajoutée sur demande.
 

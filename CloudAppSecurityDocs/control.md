@@ -1,25 +1,14 @@
 ---
 title: Comment utiliser des actions de gouvernance dans Cloud App Security
 description: Cet article fournit des informations sur les actions de gouvernance à entreprendre dans Cloud App Security pour contrôler l’usage des applications cloud de votre organisation.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 12/10/2018
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: f2825f1a423f6739e397a497684b930aad7cf3bd
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: d3326bcaca154084b113745359abe382ca47970d
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880825"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96312231"
 ---
 # <a name="control"></a>Control
 
@@ -90,7 +79,7 @@ Imaginons le scénario suivant : vous venez d’acheter Office 365 et vous vou
 
     1. Dans votre **tableau de bord Cloud Discovery**, choisissez **Dropbox**, puis choisissez l’onglet **Adresse IP** ou **Utilisateurs**.
 
-    2. Choisissez l’icône de flèche **Exporter**, puis choisissez vos options d’exportation. ![Icône en forme de flèche](media/arrow-icon.png "Icône en forme de flèche")
+    2. Choisissez l’icône de flèche **Exporter**, puis choisissez vos options d’exportation. ![Icône de flèche](media/arrow-icon.png "Icône en forme de flèche")
 
 ### <a name="find-more-secure-alternatives"></a>Trouver des alternatives plus sécurisées
 

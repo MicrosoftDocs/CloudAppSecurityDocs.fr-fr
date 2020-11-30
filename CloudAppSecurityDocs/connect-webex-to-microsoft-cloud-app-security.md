@@ -1,25 +1,14 @@
 ---
 title: Connectez les équipes WebEx à Cloud App Security
 description: Cet article fournit des informations sur la connexion de votre application WebEx apps à Cloud App Security à l’aide du connecteur API pour la visibilité et le contrôle de l’utilisation.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 04/16/2019
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 6b995b6ec4e7ba4cf04407df9f4badb08b303931
-ms.sourcegitcommit: 9391853beca4bd62e0f05bd457faac97e7dec646
+ms.openlocfilehash: 32e440f86ad78537066336f339eb41fb6bb5461f
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93278510"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96312469"
 ---
 # <a name="connect-cisco-webex-teams-to-microsoft-cloud-app-security"></a>Connectez les équipes Cisco Webex à Microsoft Cloud App Security
 
@@ -34,7 +23,7 @@ Cet article fournit des instructions pour connecter Microsoft Cloud App Security
 
 ## <a name="how-to-connect-webex-to-cloud-app-security"></a>Comment connecter WebEx à Cloud App Security
 
-1. Dans la console Cloud App Security, cliquez sur **Examiner** , puis sur **Applications connectées**.
+1. Dans la console Cloud App Security, cliquez sur **Examiner**, puis sur **Applications connectées**.
 
 1. Dans la page **connecteurs d’application** , cliquez sur le bouton plus (+), puis sur **Cisco Webex**.
 

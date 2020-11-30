@@ -1,25 +1,14 @@
 ---
 title: Comment Cloud App Security effectue l’inspection intégrée du contenu DLP
 description: Cet article décrit le processus suivi par Microsoft Cloud App Security lors de l’exécution de l’inspection du contenu DLP intégrée sur les données de votre cloud.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 12/10/2018
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 57cb12ae47b153dfd637bd568a2e6e447d264cf5
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 54d8018eb74aa03f6488359893b2d6e35e4d264b
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90881246"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96312418"
 ---
 # <a name="built-in-content-inspection"></a>Inspection du contenu intégré
 
@@ -40,7 +29,7 @@ Une fois qu’un fichier est analysé, les actions suivantes se produisent :
 
 2. Si une stratégie nécessite une inspection du contenu et que le fichier répond aux critères d’inspection du contenu, le contenu est mis en file d’attente pour inspection. La longueur de la file d’attente dépend de la taille du client et du nombre de fichiers qui nécessitent une analyse.
 
-3. À ce stade, vous pouvez afficher l’état de l’inspection du contenu en accédant à **examiner**les  >  **fichiers** et en cliquant sur un fichier. Dans le tiroir de fichier qui s’ouvre avec les détails du fichier, **l’état d’inspection du contenu** indique **Terminé**, **En attente**, **Non applicable** (si le type de fichier n’est pas pris en charge) ou un message d’échec. Pour plus d’informations sur les messages d’échec relatifs à l’analyse du contenu, consultez [Résolution des problèmes d’inspection du contenu](troubleshooting-content-inspection.md).
+3. À ce stade, vous pouvez afficher l’état de l’inspection du contenu en accédant à **examiner** les  >  **fichiers** et en cliquant sur un fichier. Dans le tiroir de fichier qui s’ouvre avec les détails du fichier, **l’état d’inspection du contenu** indique **Terminé**, **En attente**, **Non applicable** (si le type de fichier n’est pas pris en charge) ou un message d’échec. Pour plus d’informations sur les messages d’échec relatifs à l’analyse du contenu, consultez [Résolution des problèmes d’inspection du contenu](troubleshooting-content-inspection.md).
 
 > [!NOTE]
 > Si vous voyez un tiret dans l’état d’analyse, cela signifie que le fichier ne figure pas dans une file d’attente en vue d’être analysé. Pour plus d’informations sur la définition de stratégies d’inspection du contenu, consultez [Stratégies de fichier](data-protection-policies.md).

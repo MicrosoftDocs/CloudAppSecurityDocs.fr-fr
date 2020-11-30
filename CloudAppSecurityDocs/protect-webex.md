@@ -1,18 +1,14 @@
 ---
 title: Comment Cloud App Security aide à protéger votre environnement d’équipes Cisco Webex
 description: Cet article fournit des informations sur les avantages de la connexion de votre application Cisco Webex teams à Cloud App Security à l’aide du connecteur API pour la visibilité et le contrôle de l’utilisation.
-author: shsagir
-ms.author: shsagir
-ms.service: cloud-app-security
-ms.topic: article
 ms.date: 12/04/2019
-ms.collection: M365-security-compliance
-ms.openlocfilehash: 4061efcd3a0c03f8f57f8e9c0d36d7d1dfa5a678
-ms.sourcegitcommit: 9391853beca4bd62e0f05bd457faac97e7dec646
+ms.topic: article
+ms.openlocfilehash: 49b62e54723df0e8fb16f3c34af2de93df353d12
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93278527"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96310837"
 ---
 # <a name="how-cloud-app-security-helps-protect-your-cisco-webex-teams-environment"></a>Comment Cloud App Security aide à protéger votre environnement d’équipes Cisco Webex
 

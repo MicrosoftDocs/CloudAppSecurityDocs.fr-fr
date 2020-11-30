@@ -1,19 +1,14 @@
 ---
 title: Comment Cloud App Security contribue à la protection de votre environnement GitHub Enterprise
 description: Cet article fournit des informations sur les avantages de la connexion de votre application GitHub Enterprise à Cloud App Security à l’aide du connecteur API pour la visibilité et le contrôle de l’utilisation.
-author: shsagir
-ms.author: shsagir
-ms.service: cloud-app-security
-ms.topic: article
 ms.date: 06/23/2020
-ROBOTS: NOINDEX
-ms.collection: M365-security-compliance
-ms.openlocfilehash: f9a9e8782e331e472d76da768366bab3c2278316
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.topic: article
+ms.openlocfilehash: be2be8e2b9b7616e2effb3bbec0b977df4b07fa3
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90877174"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96310701"
 ---
 # <a name="how-cloud-app-security-helps-protect-your-github-enterprise-environment"></a>Comment Cloud App Security contribue à la protection de votre environnement GitHub Enterprise
 

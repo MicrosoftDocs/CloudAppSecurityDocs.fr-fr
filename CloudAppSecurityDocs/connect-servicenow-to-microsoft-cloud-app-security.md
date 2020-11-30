@@ -1,25 +1,14 @@
 ---
 title: Connecter ServiceNow à Cloud App Security
 description: Cet article vous explique comment connecter votre application ServiceNow à Cloud App Security à l’aide du connecteur d’API, afin de bénéficier de plus de visibilité et de contrôle lors de l’utilisation.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 6/24/2019
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 5274e9d4d358730d8e2e44d02c886aa637b3409a
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 29243ffb26ff008b72bfad2d2d7b3b386df9cd38
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90881270"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96312485"
 ---
 # <a name="connect-servicenow-to-microsoft-cloud-app-security"></a>Connecter ServiceNow à Microsoft Cloud App Security
 
@@ -75,7 +64,7 @@ Cet article fournit des instructions pour connecter Microsoft Cloud App Security
 
     ![ID d’utilisateur ServiceNow](media/servicenow-userid.png)
 
-9. Cliquez sur **Connecter**.
+9. Cliquez sur **Se connecter**.
 
     ![ServiceNow se connecter aux autorités de certification](media/servicenow-portal-connect.png "ServiceNow se connecter dans le portail")
 
@@ -105,7 +94,7 @@ Pour connecter ServiceNow à Cloud App Security, vous devez avoir des autorisati
 
 6. Dans la page Paramètres ServiceNow, sous l’onglet API, ajoutez vos ID d’utilisateur, mot de passe et URL d’instance ServiceNow dans les zones appropriées.
 
-7. Cliquez sur **Connecter**.
+7. Cliquez sur **Se connecter**.
 
     ![ServiceNow mettre à jour le mot de passe](media/servicenow-update-password.png "ServiceNow mettre à jour le mot de passe")
 

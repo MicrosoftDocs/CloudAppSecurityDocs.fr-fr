@@ -1,25 +1,14 @@
 ---
 title: Connecter Office 365 à Cloud App Security
 description: Cet article vous explique comment connecter votre application Office 365 à Cloud App Security à l’aide du connecteur d’API, afin de bénéficier de plus de contrôle et de visibilité lors de l’utilisation.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 08/17/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: d50d185ce75b5ca301dd55681c11fbca8039491e
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 8edb45ffab805edc6c8bc5e3c4b9f4828a28886f
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90881337"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96312741"
 ---
 # <a name="connect-office-365-to-microsoft-cloud-app-security"></a>Connecter Office 365 à Microsoft Cloud App Security
 
@@ -76,7 +65,7 @@ Cloud App Security prend en charge les applications Office 365 suivantes :
     > [!NOTE]
     >
     > - Pour une protection optimale, nous vous recommandons de sélectionner tous les composants Office 365.
-    > - Le composant **Office 365 Files** requiert le composant **Office 365 Activities** et l’analyse de fichiers Cloud App Security (les fichiers de**paramètres**  >  **Files**  >  **permettent l’analyse des fichiers**).
+    > - Le composant **Office 365 Files** requiert le composant **Office 365 Activities** et l’analyse de fichiers Cloud App Security (les fichiers de **paramètres**  >  **Files**  >  **permettent l’analyse des fichiers**).
 
     ![connecter les composants O365](media/connect-o365-components.png)
 

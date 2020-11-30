@@ -1,25 +1,14 @@
 ---
 title: Configurer le chargement automatique des journaux à l’aide de l’arrimeur local
 description: Cet article décrit le processus de configuration du chargement automatique des journaux pour les rapports continus dans Cloud App Security à l’aide d’un docker sur Linux sur un serveur local.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 06/02/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 886dd763aaf6213267f25ac65667cc9ba114e696
-ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
+ms.openlocfilehash: 4a339361b232cee1ee85758f4545856d4674e847
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96033444"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96311857"
 ---
 # <a name="docker-on-linux-on-premises"></a>Docker sur Linux en local
 
@@ -30,9 +19,9 @@ Vous pouvez configurer le chargement automatique des journaux pour des rapports 
 ## <a name="prerequisites"></a>Prérequis
 
 * Système d’exploitation :
-    * Ubuntu 14,04, 16,04 et 18,04
-    * RHEL 7,2 ou version ultérieure
-    * CentOS 7,2 ou version ultérieure
+  * Ubuntu 14,04, 16,04 et 18,04
+  * RHEL 7,2 ou version ultérieure
+  * CentOS 7,2 ou version ultérieure
 
 * Espace disque : 250 Go
 

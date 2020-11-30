@@ -1,25 +1,14 @@
 ---
 title: Utilisation des filtres et des requêtes d’activités Cloud App Security
 description: Cet article fournit une liste de filtres et de requêtes d’activité de Cloud App Security, et explique comment les utiliser.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 12/10/2018
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 8acd6889c8c5f3a1a8a1c4610b2ba990ec4cd13c
-ms.sourcegitcommit: 1349f6d9c8f4994cd2ec722d3def227153d93397
+ms.openlocfilehash: b3557c67ea4ac899f2a9c96525b26c039cd52c47
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94551627"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96311177"
 ---
 # <a name="activity-filters-and-queries"></a>Filtres et requêtes des activités
 
@@ -37,7 +26,7 @@ Vous trouverez ci-dessous une liste des filtres d’activité qui peuvent être 
   - ID de l’objet d’activité : ID de l’objet (ID de fichier, de dossier, d’utilisateur ou d’application).
   <!-- - File, folder or site URL - Enables you to select files, folders and URLs that start with a specific string.-->
   <!-- - Target object (file/folder) - Enables you to select a specific file or folder. -->
-  - Élément : vous permet de rechercher par nom ou par ID d’objet d’activité (par exemple des noms d’utilisateur, des fichiers, des paramètres, des sites). Pour le filtre **élément d’objet d’activité** , vous pouvez choisir de filtrer les éléments qui **contiennent** , sont **égaux** ou qui **commencent par** l’élément spécifique.
+  - Élément : vous permet de rechercher par nom ou par ID d’objet d’activité (par exemple des noms d’utilisateur, des fichiers, des paramètres, des sites). Pour le filtre **élément d’objet d’activité** , vous pouvez choisir de filtrer les éléments qui **contiennent**, sont **égaux** ou qui **commencent par** l’élément spécifique.
 
 - Type d’activité : Recherchez l’activité de l’application.
 
@@ -53,14 +42,14 @@ Vous trouverez ci-dessous une liste des filtres d’activité qui peuvent être 
 
 <!--- Description – Specific keyword in the activity description, for example, all activities that include the string **user** in their description.  -->
 
-- Balise d’appareil : recherchez par **Intune conforme** , **Azure ad hybride joint** ou un **certificat de client valide**.
+- Balise d’appareil : recherchez par **Intune conforme**, **Azure ad hybride joint** ou un **certificat de client valide**.
 
 - Type d’appareil : Recherchez uniquement les activités qui ont été effectuées à l’aide d’un type d’appareil spécifique. Par exemple, recherchez toutes les activités d’appareils mobiles, de PC ou de tablettes.
 
 - Fichiers et dossiers : recherchez les fichiers et les dossiers sur lesquels l’activité a été effectuée.
   - ID de fichier : vous permet d’effectuer des recherches par l’ID de fichier sur lequel l’activité a été effectuée.
-  - Nom : filtre sur le nom des fichiers ou des dossiers. Vous pouvez spécifier si le nom **se termine par** , **est égal à** ou **commence par** votre valeur de recherche.
-  - Fichiers ou dossiers spécifiques : vous permet d’inclure ou d’exclure des fichiers ou des dossiers spécifiques. Lors de la sélection de fichiers ou de dossiers, vous pouvez filtrer la liste par **Application** , par **Propriétaire** ou par **Nom de fichier** partiel.
+  - Nom : filtre sur le nom des fichiers ou des dossiers. Vous pouvez spécifier si le nom **se termine par**, **est égal à** ou **commence par** votre valeur de recherche.
+  - Fichiers ou dossiers spécifiques : vous permet d’inclure ou d’exclure des fichiers ou des dossiers spécifiques. Lors de la sélection de fichiers ou de dossiers, vous pouvez filtrer la liste par **Application**, par **Propriétaire** ou par **Nom de fichier** partiel.
 
 - Adresse IP : adresse IP brute, catégorie IP ou balise IP à partir de laquelle l’activité a été réalisée.
   - Adresse IP brute : vous permet de rechercher des activités qui ont été réalisées sur ou par des adresses IP brutes. Les adresses IP brutes peuvent être égales à, ne pas être égales à, commencer par ou ne pas commencer par une séquence spécifique.
@@ -96,8 +85,8 @@ Vous trouverez ci-dessous une liste des filtres d’activité qui peuvent être 
   - Domaine de l’utilisateur : Recherchez un domaine utilisateur spécifique.
   - Organisation utilisateur : Unité d’organisation de l’utilisateur qui a effectué l’activité, par exemple toutes les activités effectuées par les utilisateurs EMEA_marketing. Cela s’applique uniquement aux instances G suite connectées qui utilisent des unités d’organisation.
   - Groupe d’utilisateurs : Groupes d’utilisateurs spécifiques que vous pouvez importer à partir d’applications connectées, par exemple, les administrateurs Office 365.
-  - Nom d’utilisateur : Recherchez un nom d’utilisateur spécifique. Pour afficher la liste des utilisateurs membres d’un groupe d’utilisateurs spécifique, dans le **tiroir Activité** , cliquez sur le nom du groupe d’utilisateurs. Le fait de cliquer vous permet d’accéder à la page Comptes qui répertorie tous les utilisateurs figurant dans le groupe. À partir de cette page, vous pouvez explorer plus en détail les comptes d’utilisateurs spécifiques dans le groupe.
-  - Vous pouvez affiner les filtres **Groupe d’utilisateurs** et **Nom d’utilisateur** en choisissant le filtre **En tant que** , puis en sélectionnant le rôle de l’utilisateur parmi les rôles suivants :
+  - Nom d’utilisateur : Recherchez un nom d’utilisateur spécifique. Pour afficher la liste des utilisateurs membres d’un groupe d’utilisateurs spécifique, dans le **tiroir Activité**, cliquez sur le nom du groupe d’utilisateurs. Le fait de cliquer vous permet d’accéder à la page Comptes qui répertorie tous les utilisateurs figurant dans le groupe. À partir de cette page, vous pouvez explorer plus en détail les comptes d’utilisateurs spécifiques dans le groupe.
+  - Vous pouvez affiner les filtres **Groupe d’utilisateurs** et **Nom d’utilisateur** en choisissant le filtre **En tant que**, puis en sélectionnant le rôle de l’utilisateur parmi les rôles suivants :
     - Objet d’activité uniquement : signifie que l’utilisateur ou le groupe d’utilisateurs sélectionné n’a pas effectué l’activité en question, mais qu’il était l’objet de l’activité.
     - Acteur uniquement : signifie que l’utilisateur ou le groupe d’utilisateurs a effectué l’activité.
     - N’importe quel rôle : signifie que l’utilisateur ou le groupe d’utilisateurs a participé à l’activité, soit en effectuant l’activité, soit en étant l’objet de l’activité.
@@ -114,7 +103,7 @@ Vous trouverez ci-dessous une liste des filtres d’activité qui peuvent être 
 
 Pour faciliter encore plus les recherches, vous pouvez désormais créer des requêtes personnalisées et les enregistrer pour les utiliser ultérieurement.
 
-1. Dans la page **Journal d’activité** , utilisez les filtres comme décrit ci-dessus pour explorer vos applications selon vos besoins.
+1. Dans la page **Journal d’activité**, utilisez les filtres comme décrit ci-dessus pour explorer vos applications selon vos besoins.
 
 2. Une fois que vous avez terminé de générer votre requête, cliquez sur le bouton **Enregistrer sous** en haut à droite des filtres.
 
@@ -122,7 +111,7 @@ Pour faciliter encore plus les recherches, vous pouvez désormais créer des req
 
    ![nouvelle requête](media/new-activity-query.png)
 
-4. Pour réutiliser cette requête plus tard, sous **Requêtes** , faites défiler jusqu’à **Requêtes enregistrées** et sélectionnez votre requête.
+4. Pour réutiliser cette requête plus tard, sous **Requêtes**, faites défiler jusqu’à **Requêtes enregistrées** et sélectionnez votre requête.
 
    ![ouvrir une requête](media/select-activity-query.png)
 

@@ -1,25 +1,14 @@
 ---
 title: Créer des stratégies d’accès Cloud App Security pour autoriser et bloquer l’accès
 description: Cet article décrit la procédure de configuration d’une stratégie d’accès Cloud App Security avec contrôle d’application par accès conditionnel pour autoriser et bloquer l’accès aux applications connectées via Azure AD, à l’aide de fonctionnalités de proxy.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 03/31/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 49f61cbad04b6c4f559ec47bc9bdc6047f016b1a
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 21ecae14e030b731028975cc4c72dcd3252adf81
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90877608"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96311500"
 ---
 # <a name="access-policies"></a>Stratégies d'accès
 

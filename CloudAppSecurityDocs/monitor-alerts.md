@@ -1,25 +1,14 @@
 ---
 title: Surveiller les alertes déclenchées dans Cloud App Security
 description: Cet article fournit une liste et une description de toutes les alertes.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 12/10/2018
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: e5effef1c69cf3a8ce44218a8838bbb4d0ef1614
-ms.sourcegitcommit: b173d24dba412e81801c498cc0c3623ad9e31601
+ms.openlocfilehash: f6346180c3a45fb1c7ae2e885d90732f4a269be3
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/11/2020
-ms.locfileid: "91941567"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96311194"
 ---
 # <a name="monitor-alerts-in-cloud-app-security"></a>Surveiller les alertes dans Cloud App Security
 
@@ -48,7 +37,7 @@ Nous vous incitons à examiner vos alertes. En comprenant le déclenchement des 
 
 ## <a name="deployment-of-our-enhanced-alert-monitoring-and-management-experience"></a>Déploiement de notre expérience de gestion et de surveillance des alertes améliorée
 
-Dans le cadre de nos améliorations constantes de la surveillance et de la gestion des alertes, la page Cloud App Security des alertes a été améliorée en fonction de vos commentaires. Dans l’expérience améliorée, les États **résolus** et **rejetés** sont remplacés par l’état **fermé** , et les alertes fermées ont l’un des types de résolution suivants :
+Dans le cadre de l’amélioration continue de la supervision et de la gestion des alertes, la page Alertes de Cloud App Security a été optimisée sur la base de vos commentaires. Dans l’expérience améliorée, les États **résolus** et **rejetés** sont remplacés par l’état **fermé** , et les alertes fermées ont l’un des types de résolution suivants :
 
 - **Vrai positif**: une alerte sur une activité malveillante confirmée
 - **Bénigne**: alerte sur une activité suspecte mais pas malveillante, comme un test de pénétration ou une autre action suspecte autorisée

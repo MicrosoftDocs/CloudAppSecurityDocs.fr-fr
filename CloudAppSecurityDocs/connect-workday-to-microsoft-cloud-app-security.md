@@ -1,25 +1,14 @@
 ---
 title: Connecter un jour ouvré à Cloud App Security (version préliminaire)
 description: Cet article fournit des informations sur la connexion de votre application de jour de travail à Cloud App Security à l’aide du connecteur API pour la visibilité et le contrôle de l’utilisation.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 11/10/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: c849aace75d1d4268a44e02feaecdcd032a53888
-ms.sourcegitcommit: 98f1b892294beb74157cb3452aa5d489e78bbef4
+ms.openlocfilehash: 5b9a1e75ab20999d36f18500dfb6037cdf1aeabd
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94424535"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96312571"
 ---
 # <a name="connect-workday-to-microsoft-cloud-app-security"></a>Connecter un jour ouvré à Microsoft Cloud App Security
 
@@ -43,8 +32,8 @@ Le compte de jour de travail utilisé pour la connexion à Cloud App Security do
 | --- | --- | --- | --- | --- |
 | Système | Configuration : configuration du locataire – général | Configuration : configuration du client – sécurité | Afficher, modifier | Acquérir, put |
 | Système | Administration de la sécurité | | Afficher, modifier | Acquérir, put |
-| Système | Audit du système | | Vue | Obtenir |
-| Effectifs | Données de travail : personnel | Worker Data: Public Worker Reports | Vue | Obtenir |
+| Système | Audit du système | | Affichage | Obtenir |
+| Effectifs | Données de travail : personnel | Worker Data: Public Worker Reports | Affichage | Obtenir |
 
 > [!NOTE]
 >
@@ -58,11 +47,11 @@ Pour plus d’informations sur la configuration des utilisateurs d’intégratio
 
 1. Connectez-vous à la journée de travail à l’aide d’un compte membre du groupe de sécurité mentionné dans les conditions préalables.
 
-1. Recherchez « modifier le paramétrage du locataire – système », puis, sous **Journal d’activité utilisateur** , sélectionnez **activer la journalisation** de l’activité des utilisateurs.
+1. Recherchez « modifier le paramétrage du locataire – système », puis, sous **Journal d’activité utilisateur**, sélectionnez **activer la journalisation** de l’activité des utilisateurs.
 
     ![Capture d’écran de l’autorisation de la journalisation des activités des utilisateurs](media/connect-workday-enable-logging.png)
 
-1. Recherchez « modifier le paramétrage du locataire – sécurité », puis sous **paramètres oauth 2,0** , sélectionnez **clients OAuth 2,0 activés**.
+1. Recherchez « modifier le paramétrage du locataire – sécurité », puis sous **paramètres oauth 2,0**, sélectionnez **clients OAuth 2,0 activés**.
 
 1. Recherchez « Register API client » et sélectionnez **Register API client-Task**.
 
@@ -73,8 +62,8 @@ Pour plus d’informations sur la configuration des utilisateurs d’intégratio
     | Nom du client | Microsoft Cloud App Security |
     | Type d’octroi client | Octroi de code d’autorisation |
     | Type de jeton d’accès | Porteur |
-    | URI de redirection | `https://portal.cloudappsecurity.com/api/oauth/connect`<br /><br />**Remarque** : pour les clients du gouvernement des États-Unis, entrez la valeur suivante : `https://portal.cloudappsecurity.us/api/oauth/connect` |
-    | Jetons d’actualisation sans expiration | Yes |
+    | URI de redirection | `https://portal.cloudappsecurity.com/api/oauth/connect`<br /><br />**Remarque**: pour les clients du gouvernement des États-Unis, entrez la valeur suivante : `https://portal.cloudappsecurity.us/api/oauth/connect` |
+    | Jetons d’actualisation sans expiration | Oui |
     | Étendues OAuth2 | **Personnel** et **système** |
     | Étendue (zones fonctionnelles) | **Personnel** et **système** |
 

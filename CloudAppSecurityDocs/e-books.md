@@ -1,18 +1,14 @@
 ---
 title: Lisez nos livres électroniques
 description: Affiche la liste des livres électroniques, y compris une description.
-author: shsagir
-ms.author: shsagir
-ms.service: cloud-app-security
-ms.topic: conceptual
 ms.date: 8/22/2019
-ms.collection: M365-security-compliance
-ms.openlocfilehash: 0c4630bcff941e44dcbe290b1c4feaef4a475e05
-ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
+ms.topic: conceptual
+ms.openlocfilehash: 8c424f28aeef825d24d15877e59ff93942ee49e2
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96033359"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96311534"
 ---
 # <a name="microsoft-cloud-app-security-e-books"></a>Microsoft Cloud App Security e-Books
 
@@ -20,7 +16,7 @@ ms.locfileid: "96033359"
 
 Lisez nos livres électroniques pour en savoir plus sur Microsoft Cloud App Security, ses principaux cas d’utilisation et les meilleures pratiques de déploiement pour vous aider à mieux sécuriser vos environnements Cloud.
 
-| Intitulé | Description |
+| Titre | Description |
 | --- | --- |
 | **Vue d'ensemble**<br />[Lire maintenant](https://go.microsoft.com/fwlink/p/?linkid=2079728) | En savoir plus sur Cloud App Security et son intégration native avec les principales solutions Microsoft pour fournir un déploiement simple, une gestion centralisée et des fonctionnalités d’automatisation novatrices. |
 | **Shadow IT Discovery**<br />[Lire maintenant](https://go.microsoft.com/fwlink/p/?linkid=2079805) | Identifiez les applications et services Cloud utilisés par votre organisation. Évaluez les niveaux de risque et la préparation des entreprises de plus de 16 000 applications contre plus de 70 facteurs de risque, et commencez à les gérer pour garantir la sécurité et la conformité. |

@@ -1,25 +1,14 @@
 ---
 title: Contrôler l’utilisation des applications Cloud en créant des stratégies
 description: Cet article fournit des informations sur la façon dont les stratégies sont utilisées et configurées pour contrôler l’usage des applications cloud.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 09/26/2019
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 93b4acdbf27c39b0918fe6765ec33427e7050080
-ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
+ms.openlocfilehash: 695737038f0c45e366581c0262550b4c769039a5
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96033682"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96312299"
 ---
 # <a name="control-cloud-apps-with-policies"></a>Contrôler les applications cloud avec des stratégies
 
@@ -38,7 +27,7 @@ Vous pouvez créer les types de stratégies suivants :
 |Icône de type de stratégie|Type de stratégie|Utilisation|
 |-----|-----------------|---------|
 |![icône de stratégie d’accès](media/proxy-policy.png)|Stratégie d’accès|Les stratégies d’accès vous offrent une surveillance et un contrôle en temps réel des connexions utilisateur à vos applications cloud.|
-|![Icône de stratégie d’activité](media/activity_policy.png)|Stratégie d’activité|Avec les stratégies d’activité, vous pouvez appliquer une large gamme de processus automatisés en utilisant les API du fournisseur d’application. Ces stratégies vous permettent de surveiller des activités spécifiques effectuées par différents utilisateurs ou de suivre les taux anormalement élevés d’un certain type d’activité.|
+|![Icône de stratégie d’activité](media/activity_policy.png)|Stratégie d’activité|Les stratégies d’activité vous permettent d’appliquer une large gamme de processus automatisés à l’aide des API du fournisseur d’applications. Ces stratégies vous permettent de surveiller des activités spécifiques effectuées par différents utilisateurs ou de suivre les taux anormalement élevés d’un certain type d’activité.|
 |![Icône de stratégie de détection d’anomalie](media/anomaly_detection_policy.png)|Stratégie de détection d’anomalie|Les stratégies de détection des anomalies vous permettent de rechercher des activités inhabituelles sur votre cloud. La détection est basée sur les facteurs de risque que vous définissez pour vous alerter en cas d’événement anormal par rapport aux activités de référence ou habituelles de votre organisation ou des utilisateurs.|
 |![Icône de stratégie Cloud Discovery](media/discovery_policy.png)|Stratégie de découverte d’application|Grâce aux stratégies de découverte d’application, vous pouvez définir des alertes qui vous informent quand de nouvelles applications sont détectées au sein de votre organisation.|
 |![Icône de stratégie de détection d’anomalie](media/anomaly_detection_policy.png)|Stratégie de détection des anomalies Cloud Discovery|Les stratégies de détection des anomalies de Cloud Discovery examinent les journaux que vous utilisez pour découvrir les applications cloud et recherchent les occurrences inhabituelles. À titre d’exemple, citons un utilisateur qui n’a jamais utilisé Dropbox et qui y charge soudainement 600 Go de données ou une application qui fait l’objet de transactions dans des proportions inhabituelles.|
@@ -93,7 +82,7 @@ Procédez comme suit pour contrôle le risque avec des stratégies :
 
 ### <a name="create-a-policy"></a>Créer une stratégie
 
-Vous pouvez baser toutes vos stratégies sur les modèles de stratégie de Cloud App Security ou créer des stratégies à partir d’une requête.
+Vous pouvez utiliser les modèles de stratégie d’Cloud App Security comme base pour toutes vos stratégies ou créer des stratégies à partir d’une requête.
 
 Les modèles de stratégie vous aident à définir les filtres et configurations nécessaires pour détecter dans votre environnement des événements spécifiques dignes d’intérêt. Les modèles comprennent des stratégies de tous types et peuvent s’appliquer à divers services.
 
@@ -107,7 +96,7 @@ Pour créer une stratégie à partir de **modèles de stratégie**, effectuez le
 
 1. Modifiez le modèle en fonction des besoins de votre stratégie personnalisée. Vous pouvez modifier librement chaque propriété et champ de cette nouvelle stratégie basée sur un modèle.
    > [!NOTE]
-   > Quand vous utilisez des filtres de stratégie, le filtre **Contains (Contient)** recherche uniquement des mots entiers, séparés par des virgules, points, espaces ou traits de soulignement. Par exemple, si vous recherchez **malware** ou **virus**, il trouve virus_malware_file.exe, mais pas malwarevirusfile.exe. Si vous recherchez *malware.exe*, vous obtenez TOUS les fichiers exe dont le nom contient malware ou exe, tandis que si vous recherchez **"malware.exe"** (avec les guillemets), vous n’obtenez que les fichiers dont le nom contient exactement « malware.exe ».  
+   > Quand vous utilisez des filtres de stratégie, le filtre **Contains (Contient)** recherche uniquement des mots entiers, séparés par des virgules, points, espaces ou traits de soulignement. Par exemple, si vous recherchez **malware** ou **virus**, il trouve virus_malware_file.exe, mais pas malwarevirusfile.exe. Si vous recherchez *malware.exe*, vous trouvez tous les fichiers avec programme malveillant ou exe dans leur nom de fichier, tandis que si vous recherchez **« malware.exe »** (avec les guillemets), vous trouverez uniquement les fichiers qui contiennent exactement « malware.exe ».  
 **Equals (Est égal à)** recherche uniquement la chaîne complète ; par exemple, si vous recherchez *malware.exe*, il trouve malware.exe, mais pas malware.exe.txt.
 
 1. Une fois la stratégie basée sur un modèle créée, un lien vers celle-ci s’affiche dans la colonne **Stratégies liées** de la table des modèles de stratégie, en regard du modèle à partir duquel la stratégie a été créée.
@@ -115,7 +104,7 @@ Pour créer une stratégie à partir de **modèles de stratégie**, effectuez le
 
 Vous pouvez également **créer une stratégie au cours d’un examen**. Si vous examinez le **Journal d’activité**, les **Fichiers** ou les **Comptes** à la recherche d’un élément spécifique, vous pouvez à tout moment créer une stratégie basée sur les résultats de votre examen.
 
-Cela peut arriver si vous examinez le **Journal d’activité** et que vous constatez qu’une activité d’administration ne provient pas de la plage d’adresses IP de votre bureau.
+Par exemple, si vous examinez le **Journal d’activité** et que vous voyez une activité d’administration à partir de l’extérieur des adresses IP de votre bureau.
 
 Pour créer une stratégie basée sur les résultats d’un examen, effectuez les étapes suivantes :
 

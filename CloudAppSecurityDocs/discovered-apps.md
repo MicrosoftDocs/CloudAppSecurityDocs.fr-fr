@@ -1,25 +1,14 @@
 ---
 title: Utilisation des applications découvertes dans Cloud App Security
 description: Cet article décrit le processus d’identification et de correction des applications Cloud Discovery à risque dans Cloud App Security.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 09/25/2019
 ms.topic: conceptual
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 7d9c81b173da0c08d9d2c251514a0fbc151ac799
-ms.sourcegitcommit: e711727f2f00ee3b54e08337a5040449e352ca46
+ms.openlocfilehash: f23c7fff644a3f2d8572a91dea560cd6ffbe8457
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "93185708"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96311772"
 ---
 # <a name="working-with-discovered-apps"></a>Utilisation des applications découvertes
 
@@ -33,16 +22,16 @@ Le tableau de bord Cloud Discovery est conçu pour vous donner plus d’informat
 
 La première chose à faire pour obtenir une vue d’ensemble de vos applications Cloud Discovery consiste à examiner les informations suivantes du tableau de bord Cloud Discovery :
 
-1. Examinez d’abord l’utilisation globale des applications cloud dans votre organisation dans la **Vue d’ensemble de l’utilisation générale** .
+1. Examinez d’abord l’utilisation globale des applications cloud dans votre organisation dans la **Vue d’ensemble de l’utilisation générale**.
 
 1. Approfondissez ensuite cet examen pour identifier les **principales catégories** utilisées dans votre organisation pour chacun des différents paramètres d’utilisation. Vous pouvez voir la part d’utilisation des applications approuvées.
 
-1. Allez encore plus loin et affichez toutes les applications d’une catégorie spécifique sous l’onglet **Applications découvertes** .
+1. Allez encore plus loin et affichez toutes les applications d’une catégorie spécifique sous l’onglet **Applications découvertes**.
 
 1. Vous pouvez voir les **principaux utilisateurs et adresses IP sources** pour identifier les utilisateurs qui emploient le plus les applications cloud dans votre organisation.
-1. Vérifiez comment les applications découvertes sont réparties en fonction de l’emplacement géographique (d’après le siège social) dans le **Plan des sièges sociaux des applications** .
+1. Vérifiez comment les applications découvertes sont réparties en fonction de l’emplacement géographique (d’après le siège social) dans le **Plan des sièges sociaux des applications**.
 
-1. Enfin, n’oubliez pas de consulter le score de risque de l’application découverte dans la **vue d’ensemble des risques des applications** . Vérifiez **l’état des alertes de découverte** pour voir le nombre d’alertes ouvertes à passer en revue.
+1. Enfin, n’oubliez pas de consulter le score de risque de l’application découverte dans la **vue d’ensemble des risques des applications**. Vérifiez **l’état des alertes de découverte** pour voir le nombre d’alertes ouvertes à passer en revue.
 
 ## <a name="deep-dive-into-discovered-apps"></a>Examen approfondi des applications découvertes
 
@@ -50,13 +39,13 @@ Si vous voulez examiner en détail les données fournies par Cloud Discovery, ut
 
 Par exemple, si vous voulez identifier les applications de collaboration et de stockage cloud à risque couramment utilisées, vous pouvez utiliser la page Applications découvertes pour rechercher les applications souhaitées. Vous pouvez par la suite [ne pas approuver ou bloquer](governance-discovery.md) ces applications, comme suit :
 
-1. Dans la page **Applications découvertes** , sous **Parcourir par catégorie** , sélectionnez **Stockage cloud** et **Collaboration** .
+1. Dans la page **Applications découvertes**, sous **Parcourir par catégorie**, sélectionnez **Stockage cloud** et **Collaboration**.
 
 1. Ensuite, utilisez les filtres avancés et définissez **Facteur de risque de conformité** sur **SOC 2** égal à **False**
 
-1. Pour **Utilisation** , définissez **Utilisateurs** sur une valeur supérieure à 50 et **Utilisation** pour **Transactions** sur une valeur supérieure à 100.
+1. Pour **Utilisation**, définissez **Utilisateurs** sur une valeur supérieure à 50 et **Utilisation** pour **Transactions** sur une valeur supérieure à 100.
 
-1. Définissez le **Facteur de risque de sécurité** pour **Chiffrement des données au repos** sur **Non pris en charge** . Définissez ensuite **Score de risque** sur une valeur inférieure ou égale à 6.
+1. Définissez le **Facteur de risque de sécurité** pour **Chiffrement des données au repos** sur **Non pris en charge**. Définissez ensuite **Score de risque** sur une valeur inférieure ou égale à 6.
 
 ![Filtres d’application découverte](media/discovered-app-filters.png)
 
@@ -81,7 +70,7 @@ Par exemple, à partir de Cloud App Security, vous pouvez superviser l’activit
 
 Pour voir les ressources découvertes :
 
-1. Dans le portail Cloud App Security, sélectionnez **Découvrir** , puis **Ressources découvertes** .
+1. Dans le portail Cloud App Security, sélectionnez **Découvrir**, puis **Ressources découvertes**.
 
     ![Menu des ressources découvertes](media/discovered-resources-menu.png)
 
@@ -89,7 +78,7 @@ Pour voir les ressources découvertes :
 
    ![Découverte de ressources](media/discovery-resources.png)
 
-1. Pour les applications personnalisées, vous pouvez cliquer sur les trois boutons à la fin de la ligne et sélectionnez **Ajouter une application personnalisée** . Cette opération ouvre la fenêtre **Ajouter une application personnalisée** qui vous permet de nommer et identifier l’application afin de pouvoir l’inclure dans le tableau de bord Cloud Discovery.
+1. Pour les applications personnalisées, vous pouvez cliquer sur les trois boutons à la fin de la ligne et sélectionnez **Ajouter une application personnalisée**. Cette opération ouvre la fenêtre **Ajouter une application personnalisée** qui vous permet de nommer et identifier l’application afin de pouvoir l’inclure dans le tableau de bord Cloud Discovery.
 
 ## <a name="generate-cloud-discovery-executive-report"></a>Générer un rapport exécutif Cloud Discovery
 
@@ -97,9 +86,9 @@ La meilleure façon d’obtenir une vue d’ensemble de l’utilisation du Shado
 
 Pour générer un rapport Cloud Discovery efficace :
 
-1. Dans le **tableau de bord Cloud Discovery** , cliquez sur les trois points dans l’angle supérieur droit du tableau de bord, puis sélectionnez **générer Cloud Discovery rapport exécutif** .
+1. Dans le **tableau de bord Cloud Discovery**, cliquez sur les trois points dans l’angle supérieur droit du tableau de bord, puis sélectionnez **générer Cloud Discovery rapport exécutif**.
 1. Si vous le souhaitez, modifiez le nom du rapport.
-1. Cliquez sur **Générer** .
+1. Cliquez sur **Générer**.
 
 ## <a name="exclude-entities"></a>Exclure des entités
 
@@ -107,11 +96,11 @@ Si vous avez des utilisateurs système, des adresses IP ou des appareils bruyant
 
 Pour créer une exclusion :
 
-1. Dans le portail, sous l’icône Paramètres, sélectionnez **Paramètres Cloud Discovery** .
+1. Dans le portail, sous l’icône Paramètres, sélectionnez **Paramètres Cloud Discovery**.
 
-1. Cliquez sur l’onglet **Exclure des entités** .
+1. Cliquez sur l’onglet **Exclure des entités**.
 
-1. Choisissez l’onglet **utilisateurs exclus** , **adresses IP exclues** ou **périphériques exclus** , puis cliquez sur le bouton + pour ajouter votre exclusion.
+1. Choisissez l’onglet **utilisateurs exclus**, **adresses IP exclues** ou **périphériques exclus** , puis cliquez sur le bouton + pour ajouter votre exclusion.
 
 1. Ajoutez un alias d’utilisateur, une adresse IP ou un nom de périphérique. Nous vous recommandons d’ajouter des informations sur les raisons de l’exclusion.
 
@@ -127,17 +116,17 @@ Les rapports continus personnalisés vous apportent une plus grande granularité
 
 Pour créer un rapport continu :
 
-1. Dans le portail, sous l’icône Paramètres, sélectionnez **Paramètres Cloud Discovery** .
+1. Dans le portail, sous l’icône Paramètres, sélectionnez **Paramètres Cloud Discovery**.
 
-1. Cliquez sur l’onglet **Rapport continu** .
+1. Cliquez sur l’onglet **Rapport continu**.
 
-1. Cliquez sur le bouton **Créer un rapport** .
+1. Cliquez sur le bouton **Créer un rapport**.
 
 1. Entrez un nom de rapport.
 
 1. Sélectionnez les sources de données à inclure (toutes ou certaines).
 
-1. Définissez les filtres souhaités sur les données. Ces filtres peuvent être des **groupes d’utilisateurs** , des **balises d’adresse IP** ou des **plages d’adresses IP** . Pour plus d’informations sur l’utilisation de balises d’adresse IP et de plages d’adresses IP, voir [Organiser les données selon vos besoins](ip-tags.md).
+1. Définissez les filtres souhaités sur les données. Ces filtres peuvent être des **groupes d’utilisateurs**, des **balises d’adresse IP** ou des **plages d’adresses IP**. Pour plus d’informations sur l’utilisation de balises d’adresse IP et de plages d’adresses IP, voir [Organiser les données selon vos besoins](ip-tags.md).
 
     ![créer un rapport continu personnalisé](media/create-custom-continuous-report.png)
 
@@ -156,13 +145,13 @@ Plusieurs raisons peuvent vous amener à supprimer vos données Cloud Discovery.
 
 Pour supprimer des données Cloud Discovery :
 
-1. Dans le portail, sous l’icône Paramètres, sélectionnez **Paramètres Cloud Discovery** .
+1. Dans le portail, sous l’icône Paramètres, sélectionnez **Paramètres Cloud Discovery**.
 
-1. Cliquez sur l’onglet **Supprimer les données** .
+1. Cliquez sur l’onglet **Supprimer les données**.
 
     Il est important d’être sûr de vouloir supprimer les données avant de poursuivre : cette opération ne peut pas être annulée et **toutes** les données Cloud Discovery dans le système sont alors supprimées.
 
-1. Cliquez sur le bouton **Supprimer** .
+1. Cliquez sur le bouton **Supprimer**.
 
     ![supprimer des données](media/delete-data.png "supprimer des données")
 
