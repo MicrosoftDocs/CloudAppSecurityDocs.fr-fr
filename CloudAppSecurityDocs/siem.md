@@ -1,24 +1,14 @@
 ---
 title: Intégration de SIEM générique avec Cloud App Security
 description: Cet article fournit des informations sur l’intégration de votre SIEM générique avec Cloud App Security.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 11/08/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: c5fc424ece0dd777760e3d63ab5c41219330f2fe
-ms.sourcegitcommit: 5367d8fdf99d61719a395728f2ef4b014604e3bc
+ms.openlocfilehash: a0c4fffdec7c870254baf0d20cdbaf7f0e40b39c
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/08/2020
-ms.locfileid: "94371299"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315410"
 ---
 # <a name="generic-siem-integration"></a>Intégration de SIEM générique
 
@@ -87,7 +77,7 @@ L’intégration à votre serveur SIEM s’effectue en trois étapes :
 
     ![Paramètres Syslog distants](media/siem2.png)
 
-1. Sélectionnez les types de données ( **Alertes** et **Activités** ) que vous voulez exporter vers votre serveur SIEM. Utilisez le curseur pour les activer et les désactiver. Par défaut, tout est sélectionné. Vous pouvez utiliser la liste déroulante **appliquer à** pour définir des filtres afin d’envoyer uniquement des alertes et des activités spécifiques à votre serveur Siem. Cliquez sur **Modifier et afficher un aperçu des résultats** pour vérifier que le filtre fonctionne comme prévu. Cliquez sur **Suivant**.
+1. Sélectionnez les types de données (**Alertes** et **Activités**) que vous voulez exporter vers votre serveur SIEM. Utilisez le curseur pour les activer et les désactiver. Par défaut, tout est sélectionné. Vous pouvez utiliser la liste déroulante **appliquer à** pour définir des filtres afin d’envoyer uniquement des alertes et des activités spécifiques à votre serveur Siem. Cliquez sur **Modifier et afficher un aperçu des résultats** pour vérifier que le filtre fonctionne comme prévu. Cliquez sur **Suivant**.
 
    ![Paramètres des types de données](media/siem3.png)
 
@@ -111,7 +101,7 @@ L’intégration à votre serveur SIEM s’effectue en trois étapes :
 > * Les paramètres entre crochets [ ] sont facultatifs et doivent être utilisés seulement si nécessaire.
 > * Il est recommandé d’exécuter le fichier JAR lors du démarrage du serveur.
 >   * Windows : exécutez en tant que tâche planifiée et assurez-vous que vous configurez la tâche pour **qu’elle s’exécute si l’utilisateur a ouvert une session ou non** et que vous désactivez la case à cocher **arrêter la tâche si elle s’exécute plus longtemps que** .
->   * Linux : ajoutez la commande exécuter avec un **&** au fichier RC. local. Par exemple : `java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN &`
+>   * Linux : ajoutez la commande exécuter avec un **&** au fichier RC. local. Par exemple : `java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN &`
 
 Où les variables suivantes sont utilisées :
 

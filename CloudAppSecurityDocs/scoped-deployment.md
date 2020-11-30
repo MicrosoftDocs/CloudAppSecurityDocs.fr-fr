@@ -1,25 +1,14 @@
 ---
 title: Définir l’étendue d’un déploiement Microsoft Cloud App Security
 description: Cet article donne des informations sur la marche à suivre pour définir l’étendue d’un déploiement Cloud App Security, en incluant et en excluant certains utilisateurs ou certains groupes.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 8/25/2019
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: d2074b58a4f0411f8272ff3f10241604d06a893b
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 94aec27172d83c2884ea91c944ecd80898ae0381
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90879015"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315563"
 ---
 # <a name="scoped-deployment"></a>Déploiement étendu <a name="scoped-deployment"></a> 
 
@@ -66,7 +55,7 @@ Il est envisageable, dans certains cas, de ne pas utiliser Microsoft Cloud App S
 
     1. Sous **Taper le nom de la règle**, donnez un nom descriptif à la règle.
     Sous **Sélectionner des groupes d’utilisateurs**, sélectionnez tous les groupes qui ne doivent pas être surveillés par Cloud App Security.
-    2. Indiquez si vous souhaitez appliquer cette règle à toutes les applications connectées, ou seulement à **Certaines applications**. Si vous sélectionnez **Certaines applications**, Cloud App Security ne cessera le monitoring du groupe sélectionné que pour les applications sélectionnées. Cela signifie que si vous sélectionnez le groupe **utilisateurs** et **Active Directory**de l’équipe de l’interface utilisateur, Cloud App Security surveillera toutes les activités des utilisateurs, à l’exception des Active Directory les activités effectuées par les utilisateurs de l’équipe de l’interface utilisateur.
+    2. Indiquez si vous souhaitez appliquer cette règle à toutes les applications connectées, ou seulement à **Certaines applications**. Si vous sélectionnez **Certaines applications**, Cloud App Security ne cessera le monitoring du groupe sélectionné que pour les applications sélectionnées. Cela signifie que si vous sélectionnez le groupe **utilisateurs** et **Active Directory** de l’équipe de l’interface utilisateur, Cloud App Security surveillera toutes les activités des utilisateurs, à l’exception des Active Directory les activités effectuées par les utilisateurs de l’équipe de l’interface utilisateur.
 
        ![règle d’exclusion](media/exclude-rule.png)
 
@@ -85,7 +74,7 @@ Les activités suivantes des utilisateurs font l’objet d’un monitoring :
 
 |Utilisateur|Appartenance au groupe|Activités faisant l’objet d’un monitoring|
 |----|----|----|
-|Adriana|Germany all users<br />Global sales<br />Sales managers|None|
+|Adriana|Germany all users<br />Global sales<br />Sales managers|Aucun|
 |Alain|Global sales|Office 365 et toutes les sous-applications à l’exception de Power BI|
 |Cornel|Global sales<br />Sales managers|Office 365 et toutes les sous-applications|
 |Raymond|Sales managers|Power BI uniquement|
@@ -97,6 +86,6 @@ Les activités suivantes des utilisateurs font l’objet d’un monitoring :
 ## <a name="next-steps"></a>Étapes suivantes
 
 > [!div class="nextstepaction"]
-> [Configuration de Cloud Discovery](set-up-cloud-discovery.md)
+> [Configurer Cloud Discovery](set-up-cloud-discovery.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]  

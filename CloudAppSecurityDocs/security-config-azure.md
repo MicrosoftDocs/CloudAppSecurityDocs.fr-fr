@@ -1,25 +1,14 @@
 ---
 title: Obtenir des recommandations en matière de configuration de la sécurité pour Azure
 description: Cet article fournit des informations sur la façon d’obtenir des recommandations en matière de configuration de la sécurité dans Cloud App Security en s’intégrant à Azure Security Center.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 09/15/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 6f1b55e3675b9419ca1e53ddeea9189e260b8022
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: e34cd55f3e09b36c1bbb4641a7842e525f3c56d7
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880192"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315512"
 ---
 # <a name="security-configuration-for-azure"></a>Configuration de la sécurité pour Azure
 
@@ -37,7 +26,7 @@ Pour activer les recommandations de configuration de la sécurité dans Cloud Ap
 
 ## <a name="how-to-view-azure-security-recommendations"></a>Comment afficher les recommandations de sécurité Azure
 
-1. Dans Cloud App Security, accédez à **examiner**  >  la configuration de la**sécurité**, puis sélectionnez l’onglet **Azure** .
+1. Dans Cloud App Security, accédez à **examiner**  >  la configuration de la **sécurité**, puis sélectionnez l’onglet **Azure** .
 
     > [!NOTE]
     > Il peut prendre jusqu’à 15 minutes avant que vos changements prennent effet.

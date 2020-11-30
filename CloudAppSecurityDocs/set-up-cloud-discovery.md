@@ -1,21 +1,14 @@
 ---
 title: Déployer Cloud Discovery
 description: Cet article décrit la procédure de configuration pour rendre Cloud Discovery opérationnel.
-author: shsagir
-ms.author: shsagir
-ms.service: cloud-app-security
-ms.topic: how-to
 ms.date: 08/09/2020
-ms.collection: M365-security-compliance
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 72a1d6f1d7dfdf88460dceddf62a6277226cfe66
-ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
+ms.topic: how-to
+ms.openlocfilehash: bdb4438c18b82b7426de09b73e1ce8c2753d21a1
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96033954"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315580"
 ---
 # <a name="set-up-cloud-discovery"></a>Configurer Cloud Discovery
 
@@ -89,6 +82,7 @@ Le processus de génération d’une évaluation des risques se compose des éta
 - Stormshield
 - Websense - Solutions de sécurité web - Rapport détaillé d’investigation (CSV)
 - Websense - Solutions de sécurité web - Journal d’activité Internet (CEF)
+- WatchGuard
 - Zscaler
 
 > [!NOTE]
@@ -101,7 +95,7 @@ Si votre journal n’est pas pris en charge, ou si vous utilisez un format de jo
 
 Attributs de données (selon la documentation du fournisseur) :
 
-| Paramètres | URL de l’application cible | Adresse IP de l’application cible | Nom d’utilisateur | Adresse IP d’origine | Total du trafic | Octets chargés |
+| Source de données | URL de l’application cible | Adresse IP de l’application cible | Nom d’utilisateur | Adresse IP d’origine | Total du trafic | Octets chargés |
 |----------------------------------------------|----------------------|----------------------|----------------------|----------------------|----------------------|----------------------|
 | Barracuda | **Oui** | **Oui** | **Oui** | **Oui** | Non | Non |
 | Blue Coat | **Oui** | Non | **Oui** | **Oui** | **Oui** | **Oui** |
@@ -134,6 +128,7 @@ Attributs de données (selon la documentation du fournisseur) :
 | Stormshield | Non | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** |
 | Websense - Rapport d’examen détaillé (CSV) | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** |
 | Websense - Journal d’activité Internet (CEF) | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** |
+| WatchGuard | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** |
 | Zscaler | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** |
 
 \* Les versions 8,5 et ultérieures du Cloud de sécurité Web Forcepoint ne sont pas prises en charge

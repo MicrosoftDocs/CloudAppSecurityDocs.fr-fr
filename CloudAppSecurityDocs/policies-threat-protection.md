@@ -1,20 +1,14 @@
 ---
 title: Stratégies de protection contre les menaces
 description: Cette rubrique décrit les étapes permettant de configurer de nombreuses stratégies de protection contre les menaces dans Cloud App Security.
-author: shsagir
-ms.author: shsagir
 ms.date: 11/08/2020
 ms.topic: conceptual
-ms.collection: M365-security-compliance
-ms.service: cloud-app-security
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 97bb8c60dfc04858d20ee4bc0a12236ea060eb65
-ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
+ms.openlocfilehash: 0bb2b12a528569a8a444a2273ed34154b996804d
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96034158"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315325"
 ---
 # <a name="threat-protection-policies"></a>Stratégies de protection contre les menaces
 

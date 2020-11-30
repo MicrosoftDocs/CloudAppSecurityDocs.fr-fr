@@ -1,22 +1,14 @@
 ---
 title: Résolution des problèmes-qu’est-ce que cas.ms, mcas.ms ou mcas-gov.us ?
 description: Cet article fournit des informations sur le suffixe d’URL cas.ms, mcas.ms ou mcas-gov.us utilisé par contrôle d’application par accès conditionnel.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 03/18/2020
 ms.topic: conceptual
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.suite: ems
-ms.openlocfilehash: c62229f209dc1a7862a2f4b4442a663aacce58bc
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: a6dd901f5ed191f6c6a02514a7ddf44adf2b81ac
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90877125"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315903"
 ---
 # <a name="troubleshooting---what-is-casms-mcasms-or-mcas-govus"></a>Résolution des problèmes-qu’est-ce que `*.cas.ms` , `*.mcas.ms` ou `*.mcas-gov.us` ?
 

@@ -1,18 +1,14 @@
 ---
 title: Comment Cloud App Security aide à protéger votre environnement de jours ouvrés
 description: Cet article fournit des informations sur les avantages de la connexion de votre application de jour de travail à Cloud App Security à l’aide du connecteur d’API pour la visibilité et le contrôle de l’utilisation.
-author: shsagir
-ms.author: shsagir
-ms.service: cloud-app-security
-ms.topic: article
 ms.date: 12/04/2019
-ms.collection: M365-security-compliance
-ms.openlocfilehash: 2ff5f5ffb2dfe58833f556a6aebe1d4b99b8c061
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.topic: article
+ms.openlocfilehash: 21c999d5f83392fdccb50d6ebe8996fcea95c5c2
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880359"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315172"
 ---
 # <a name="how-cloud-app-security-helps-protect-your-workday-environment"></a>Comment Cloud App Security aide à protéger votre environnement de jours ouvrés
 

@@ -1,25 +1,14 @@
 ---
 title: Obtenir des recommandations en matière de configuration de la sécurité pour AWS
 description: Cet article fournit des informations sur la façon d’obtenir des recommandations en matière de configuration de la sécurité dans Cloud App Security en s’intégrant à Amazon Web Services.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 06/28/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 87a3eb690c81930baaa0cee5dba02f5d9fe62e59
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 3d35ffdaeaf858407fd324464383faa2a343f301
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90878946"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315529"
 ---
 # <a name="security-configuration-for-aws"></a>Configuration de la sécurité pour AWS
 
@@ -36,7 +25,7 @@ Microsoft Cloud App Security vous fournit une évaluation de la configuration de
 
 ## <a name="how-to-view-aws-security-recommendations"></a>Comment afficher les recommandations de sécurité AWS
 
-1. Dans Cloud App Security, accédez à **examiner**  >  la configuration de la**sécurité**, puis sélectionnez l’onglet **Amazon Web services** .
+1. Dans Cloud App Security, accédez à **examiner**  >  la configuration de la **sécurité**, puis sélectionnez l’onglet **Amazon Web services** .
 
     > [!NOTE]
     > Il peut prendre jusqu’à 15 minutes avant que vos changements prennent effet.

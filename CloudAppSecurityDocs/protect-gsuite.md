@@ -1,18 +1,14 @@
 ---
 title: Comment Cloud App Security aide à protéger votre environnement G suite
 description: Cet article fournit des informations sur les avantages de la connexion de votre application G suite à Cloud App Security à l’aide du connecteur d’API pour la visibilité et le contrôle de l’utilisation.
-author: shsagir
-ms.author: shsagir
-ms.service: cloud-app-security
-ms.topic: article
 ms.date: 12/04/2019
-ms.collection: M365-security-compliance
-ms.openlocfilehash: 7eb22c2cb6ee0839f41bca963ec0e8c29a1a4905
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.topic: article
+ms.openlocfilehash: 46f9e8fb28aa27b102af1edbf0026f5bdd4f4ed3
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90877156"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315223"
 ---
 # <a name="how-cloud-app-security-helps-protect-your-g-suite-environment"></a>Comment Cloud App Security aide à protéger votre environnement G suite
 

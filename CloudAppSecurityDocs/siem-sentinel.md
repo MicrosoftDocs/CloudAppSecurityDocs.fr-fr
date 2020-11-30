@@ -1,24 +1,14 @@
 ---
 title: Intégration d’Azure Sentinel à Cloud App Security
 description: Cet article fournit des informations sur l’intégration d’Azure Sentinel avec Cloud App Security.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 08/23/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 154cb0eda5a223c31813e1753b9dc0bcb8836436
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: e30981259f1ee0c6894918f12ebfa2c370e72564
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90878713"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315461"
 ---
 # <a name="azure-sentinel-integration-preview"></a>Intégration d’Azure Sentinel (version préliminaire)
 
@@ -93,20 +83,20 @@ Le tableau suivant décrit chaque champ dans le schéma **McasShadowItReporting*
 | TenantId | String | ID de l’espace de travail | b459b4u5-912x-46d5-9cb1-p43069212nb4 |
 | SourceSystem | String | Système source – valeur statique | Azure |
 | TimeGenerated [UTC] | DateTime | Date des données de découverte | 2019-07-23T11:00:35.858 Z |
-| StreamName | Chaîne | Nom du flux spécifique | Service marketing |
-| TotalEvents | Entier | Nombre total d’événements par session | 122 |
-| BlockedEvents | Entier | Nombre d’événements bloqués | 0 |
-| UploadedBytes | Entier | Quantité de données chargées | 1 514 874 |
-| TotalBytes | Entier | Quantité totale de données | 4 067 785 |
-| DownloadedBytes | Entier | Quantité de données téléchargées | 2 552 911 |
-| IpAddress | Chaîne | Adresse IP source | 127.0.0.0 |
-| UserName | Chaîne | Nom d’utilisateur | `Raegan@contoso.com` |
-| EnrichedUserName | Chaîne | Nom d’utilisateur enrichi avec Azure AD nom d’utilisateur | `Raegan@contoso.com` |
-| AppName | Chaîne | Nom de l’application Cloud | Microsoft OneDrive Entreprise |
-| AppId | Entier | Identificateur d’application Cloud | 15600 |
-| AppCategory | Chaîne | Catégorie d’application Cloud | Stockage cloud |
+| StreamName | String | Nom du flux spécifique | Service marketing |
+| TotalEvents | Integer | Nombre total d’événements par session | 122 |
+| BlockedEvents | Integer | Nombre d’événements bloqués | 0 |
+| UploadedBytes | Integer | Quantité de données chargées | 1 514 874 |
+| TotalBytes | Integer | Quantité totale de données | 4 067 785 |
+| DownloadedBytes | Integer | Quantité de données téléchargées | 2 552 911 |
+| IpAddress | String | Adresse IP source | 127.0.0.0 |
+| UserName | String | Nom d'utilisateur | `Raegan@contoso.com` |
+| EnrichedUserName | String | Nom d’utilisateur enrichi avec Azure AD nom d’utilisateur | `Raegan@contoso.com` |
+| AppName | String | Nom de l’application Cloud | Microsoft OneDrive Entreprise |
+| AppId | Integer | Identificateur d’application Cloud | 15600 |
+| AppCategory | String | Catégorie d’application Cloud | Stockage cloud |
 | AppTags | Tableau de chaînes | Balises intégrées et personnalisées définies pour l’application | [« approuvé »] |
-| AppScore | Entier | Le score de risque de l’application dans une échelle de 0-10, 10 étant un score pour une application non risquée | 10 |
+| AppScore | Integer | Le score de risque de l’application dans une échelle de 0-10, 10 étant un score pour une application non risquée | 10 |
 | Type | String | Type de journaux – valeur statique | McasShadowItReporting |
 
 ## <a name="use-power-bi-with-cloud-app-security-data-in-azure-sentinel"></a>Utiliser Power BI avec les données Cloud App Security dans Azure Sentinel

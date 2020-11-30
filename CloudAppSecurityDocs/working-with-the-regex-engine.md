@@ -1,25 +1,14 @@
 ---
 title: Utiliser le moteur RegEx dans Cloud App Security pour les stratégies d’inspection du contenu
 description: Cet article fournit des instructions d’utilisation du moteur RegEx pour la correspondance au modèle dans les stratégies Cloud App Security.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 12/14/2018
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 87d08111ba38590dfa4c1b32986a15a556e258ae
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 0f9d2aafded05ac8f06f1408080ab8bd0da550b5
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90881114"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96316940"
 ---
 # <a name="working-with-the-regex-engine"></a>Utilisation du moteur RegEx
 

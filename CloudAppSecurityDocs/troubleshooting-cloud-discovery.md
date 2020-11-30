@@ -1,25 +1,14 @@
 ---
 title: Résolution des erreurs de Cloud Discovery
 description: Cet article fournit la liste des erreurs fréquentes relatives à Cloud Discovery ainsi que des solutions recommandées pour chacune.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 04/19/2019
 ms.topic: conceptual
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 7ec0338c725ccee9656984fbdcdd4bf2fd39d132
-ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
+ms.openlocfilehash: 96ff00be024688a025d30c03dca8194a99413038
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96034107"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315937"
 ---
 # <a name="troubleshooting-cloud-discovery"></a>Résolution des problèmes de Cloud Discovery
 
@@ -42,7 +31,7 @@ Vous pouvez suivre le traitement des journaux Cloud Discovery à l’aide du jou
 
 ### <a name="governance-log-errors"></a>Erreurs du journal de gouvernance
 
-|Erreur|Description|Résolution|
+|Error|Description|Résolution|
 |----|----|----|
 |Type de fichier non pris en charge|Le fichier chargé n’est pas un fichier journal valide (par exemple, un fichier image).|Chargez un fichier **texte**, **zip ou **gzip** exporté directement à partir de votre pare-feu ou proxy.|
 |Le format de journal ne correspond pas|Le format de journal que vous avez chargé ne correspond pas au format attendu pour cette source de données.|1. Vérifiez que le journal n’est pas endommagé. <br /> 2. Comparez et associez votre journal à l’exemple de format affiché dans la page de chargement.|

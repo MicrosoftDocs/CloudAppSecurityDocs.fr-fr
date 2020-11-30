@@ -1,25 +1,14 @@
 ---
 title: Vue d’ensemble du scénario de protection contre les menaces
 description: Cette rubrique décrit le scénario de protection de votre organisation contre les menaces présentes dans l’environnement cloud.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 12/14/2018
 ms.topic: conceptual
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 4097c0b6ea118a547acc2eb90c1be738fdf03523
-ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
+ms.openlocfilehash: 0476e4ac0066e3f3584b12646e9c0143b9d64e04
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96034039"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315682"
 ---
 # <a name="protecting-your-organization-from-ransomware"></a>Protection de votre organisation contre les ransomwares
 

@@ -1,23 +1,14 @@
 ---
 title: Déployer Cloud App Security contrôle d’application par accès conditionnel pour toute application Web à l’aide de PingOne
 description: Cet article fournit des informations sur le déploiement du contrôle d’application par accès conditionnel Microsoft Cloud App Security pour toute application Web à l’aide du fournisseur d’identité PingOne.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 09/29/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.suite: ems
-ms.openlocfilehash: d0f36a9abb5b7a1fefed9b32683b926995d3dcd4
-ms.sourcegitcommit: 812cb1e24ec18de2c4818970f3042ac06acea14c
+ms.openlocfilehash: d49d7994e577321cfc276f642f77f7c81e4c9d9f
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92214658"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315240"
 ---
 # <a name="onboard-and-deploy-conditional-access-app-control-for-any-web-app-using-pingone-identity-provider-idp"></a>Intégrer et déployer des contrôle d’application par accès conditionnel pour n’importe quelle application Web à l’aide du fournisseur d’identité PingOne (IdP)
 
@@ -74,7 +65,7 @@ Suivez les étapes ci-dessous pour acheminer vos sessions d’application Web de
 
     ![Sélectionner les paramètres d’authentification unique Salesforce](media/proxy-idp-examples/idp-pingone-sf-select-sso-settings.png)
 
-1. Sur la page du **paramètre de Sign-On unique SAML** , notez l’URL de **connexion**Salesforce. Vous en aurez besoin plus tard.
+1. Sur la page du **paramètre de Sign-On unique SAML** , notez l’URL de **connexion** Salesforce. Vous en aurez besoin plus tard.
 
     ![Sélectionner l’URL de connexion d’authentification unique Salesforce](media/proxy-idp-examples/idp-pingone-sf-copy-saml-sso-login-url.png)
 

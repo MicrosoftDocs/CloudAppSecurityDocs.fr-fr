@@ -1,18 +1,14 @@
 ---
 title: Regardez nos webinaires
 description: Affiche la liste des webinaires précédents, y compris une description.
-author: shsagir
-ms.author: shsagir
-ms.service: cloud-app-security
-ms.topic: conceptual
 ms.date: 8/25/2019
-ms.collection: M365-security-compliance
-ms.openlocfilehash: 23e7462818adcacda42c20f24369366f45524b5d
-ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
+ms.topic: conceptual
+ms.openlocfilehash: a536967ac77355dc45c3ab2fde262067bbab9644
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96034022"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315631"
 ---
 # <a name="microsoft-cloud-app-security-webinars"></a>Webinaires Microsoft Cloud App Security
 
@@ -26,7 +22,7 @@ Pour découvrir nos prochains webinaires et autres développements, [Rejoignez l
 
 Regardez les sessions enregistrées à tout moment
 
-| Intitulé | Découvrir |
+| Titre | Découvrir |
 | --- | --- |
 | **Protection des informations**<br />[Regarder maintenant](https://go.microsoft.com/fwlink/?linkid=2101487) | -Protection de vos données Cloud<br />-Surveillance et contrôle en temps réel<br />-Meilleures pratiques pour connecter vos applications, identifier les types de données, auditer votre environnement et corriger les actions de gouvernance |
 | **Détection de menaces**<br />[Regarder maintenant](https://go.microsoft.com/fwlink/?linkid=2101574) | -Protection contre les menaces du Cloud<br />-Détection des menaces sur les applications Cloud<br />-Détection des programmes malveillants<br />-Autorisations d’application OAuth<br />-Configuration des alertes dans les stratégies |

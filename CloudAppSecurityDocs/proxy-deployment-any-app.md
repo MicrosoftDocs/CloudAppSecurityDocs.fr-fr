@@ -1,23 +1,14 @@
 ---
 title: Déployer des contrôle d’application par accès conditionnel Cloud App Security pour toutes les applications
 description: Cet article fournit des informations sur le déploiement de la Microsoft Cloud App Security contrôle d’application par accès conditionnel les fonctionnalités de proxy inverse pour toutes les applications.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 03/31/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.suite: ems
-ms.openlocfilehash: 13505c22de0751041bc42f2891248163a51e6239
-ms.sourcegitcommit: 812cb1e24ec18de2c4818970f3042ac06acea14c
+ms.openlocfilehash: 32aa858eca58f8b76cc90bd96f5ebe17516af1e7
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92212032"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315393"
 ---
 # <a name="onboard-and-deploy-conditional-access-app-control-for-any-app"></a>Intégrer et déployer le Contrôle d’application par accès conditionnel pour tous les types d’applications
 
@@ -162,7 +153,7 @@ Suivez les étapes ci-dessous pour acheminer des sessions d’application d’au
 
 1. Dans Cloud App Security, dans la barre de menus, cliquez sur l' ![icône](media/settings-icon.png "Icône des paramètres") paramètres roue dentée paramètres, puis sélectionnez **paramètres**.
 
-1. Sous **contrôle d’application par accès conditionnel**, sélectionnez **intégration/maintenance**de l’application.
+1. Sous **contrôle d’application par accès conditionnel**, sélectionnez **intégration/maintenance** de l’application.
 
 1. Entrez le nom d’utilisateur principal ou l’adresse de messagerie des utilisateurs qui intégreront l’application, puis cliquez sur **Enregistrer**.
 
@@ -170,7 +161,7 @@ Suivez les étapes ci-dessous pour acheminer des sessions d’application d’au
 
 ## <a name="step-3-configure-the-app-that-you-are-deploying"></a>Étape 3 : configurer l’application que vous déployez<a name="conf-app"></a>
 
-Accédez à l’application que vous déployez. La page que vous voyez varie selon que l’application est reconnue ou non. Effectuez l’une des actions suivantes :
+Accédez à l’application que vous déployez. La page que vous voyez varie selon que l’application est reconnue ou non. Effectuez l’une des opérations suivantes :
 
 | État de l’application | Description | Étapes |
 | --- | --- | --- |
@@ -207,7 +198,7 @@ Par exemple, si vous avez configuré une stratégie qui bloque le téléchargeme
     > [!NOTE]
     > Le volet affiche la liste des domaines détectés qui ne sont pas associés à l’application. Les noms de domaine sont qualifiés complets.
 1. Accédez à Cloud App Security, dans la barre de menus, cliquez sur l' ![icône](media/settings-icon.png "Icône des paramètres") paramètres roue dentée paramètres, puis sélectionnez **contrôle d’application par accès conditionnel**.
-1. Dans la liste des applications, sur la ligne dans laquelle l’application que vous déployez s’affiche, choisissez les trois points à la fin de la ligne, puis sous **Détails**de l’application, choisissez **modifier**.
+1. Dans la liste des applications, sur la ligne dans laquelle l’application que vous déployez s’affiche, choisissez les trois points à la fin de la ligne, puis sous **Détails** de l’application, choisissez **modifier**.
     > [!TIP]
     > Pour afficher la liste des domaines configurés dans l’application, cliquez sur **afficher les domaines d’application**.
 1. Dans **domaines définis par l’utilisateur**, entrez tous les domaines que vous souhaitez associer à cette application, puis cliquez sur **Enregistrer**.

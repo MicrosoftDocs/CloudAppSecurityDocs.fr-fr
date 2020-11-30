@@ -1,27 +1,20 @@
 ---
 title: Créer des stratégies pour contrôler les activités dans Cloud App Security
 description: Cet article fournit des instructions sur la création et l’utilisation de stratégies d’activité.
-author: shsagir
-ms.author: shsagir
-ms.service: cloud-app-security
-ms.topic: how-to
 ms.date: 03/01/2020
-ms.collection: M365-security-compliance
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: fe73288981009f8fe1f94126d39522d2730d0a6d
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.topic: how-to
+ms.openlocfilehash: 26f7b171f0a2addad3c480914c8c7845e452f9ac
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90878428"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315718"
 ---
 # <a name="activity-policies"></a>Stratégies des activités
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Avec les stratégies d’activité, vous pouvez appliquer une large gamme de processus automatisés en utilisant les API du fournisseur d’application. Ces stratégies vous permettent de surveiller des activités spécifiques effectuées par différents utilisateurs ou de suivre les taux anormalement élevés d’un certain type d’activité.
+Les stratégies d’activité vous permettent d’appliquer une large gamme de processus automatisés à l’aide des API du fournisseur d’applications. Ces stratégies vous permettent de surveiller des activités spécifiques effectuées par différents utilisateurs ou de suivre les taux anormalement élevés d’un certain type d’activité.
 
 Après avoir défini une stratégie de détection d’activité, elle commence à générer des alertes ; les alertes sont générées uniquement sur les activités qui se produisent après avoir créé la stratégie.
 

@@ -1,25 +1,14 @@
 ---
 title: Créer des stratégies de session dans Cloud App Security
 description: Cet article décrit la procédure de configuration d’une stratégie de session du contrôle d'application par accès conditionnel de Cloud App Security pour améliorer la visibilité des activités de session utilisateur et bloquer les téléchargements à l’aide des fonctionnalités de proxy inverse.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 03/31/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: c1b33c82b74f9b7b648bcae3c9bdc20949319fc8
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 9e755da569c6d90274a6fd347408587a1a6732f7
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90878780"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315427"
 ---
 # <a name="session-policies"></a>Stratégies de session
 
@@ -153,7 +142,7 @@ Par exemple, vous pouvez créer une stratégie qui analyse le contenu d’un fic
 
 ## <a name="block-malware-on-upload"></a>Bloquer les logiciels malveillants lors du téléchargement
 
-Lorsque le **contrôle de téléchargement de fichier (avec inspection)**   est défini comme **type de contrôle de session** et que la détection de **programmes malveillants** est définie comme **méthode d’inspection** dans la stratégie de session de Cloud App Security, contrôle d’application par accès conditionnel empêche un utilisateur de charger un fichier en temps réel si un logiciel malveillant est détecté. Les fichiers sont analysés à l’aide du moteur Microsoft Threat Intelligence.
+Lorsque le  **contrôle de téléchargement de fichier (avec inspection)**   est défini comme  **type de contrôle de session** et que la détection de **programmes malveillants** est définie comme **méthode d’inspection** dans la stratégie de session de Cloud App Security, contrôle d’application par accès conditionnel empêche un utilisateur de charger un fichier en temps réel si un logiciel malveillant est détecté. Les fichiers sont analysés à l’aide du moteur Microsoft Threat Intelligence.
 
 Vous pouvez afficher les fichiers signalés comme programmes malveillants potentiels à l’aide du filtre **potentiellement malveillant détecté** dans le journal d’activité.
 

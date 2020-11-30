@@ -1,25 +1,14 @@
 ---
 title: Gestion avancée des collecteurs de journaux
 description: Cet article fournit des informations sur la façon dont les tâches de gestion avancées pour Cloud App Security Cloud Discovery des collecteurs de journaux.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 11/25/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: b003f47c33ef2ed749df3138ed1b6cd2a83232d3
-ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
+ms.openlocfilehash: f9edb4d76f105293574551ba1ef9c7d2ba7d1838
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96034956"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315155"
 ---
 # <a name="advanced-log-collector-management"></a>Gestion avancée des collecteurs de journaux
 
@@ -160,7 +149,7 @@ collector_config abcd1234abcd1234abcd1234abcd1234 ${CONSOLE} ${COLLECTOR}
 
 Le collecteur de journaux est désormais en mesure de communiquer avec Cloud App Security. Après lui avoir envoyé des données, l’état passe de **Sain** à **Connecté** dans le portail Cloud App Security.
 
-![État](media/log-collector-advanced-tasks/docker-5.png "Statut")
+![Statut](media/log-collector-advanced-tasks/docker-5.png "Statut")
 
 >[!NOTE]
 > Si vous devez mettre à jour la configuration du collecteur de journaux, pour ajouter ou supprimer une source de données, par exemple, vous devez normalement **supprimer** le conteneur et effectuer de nouveau les étapes précédentes. Pour éviter cela, vous pouvez réexécuter l’outil *collector_config* avec le nouveau jeton d’API généré dans le portail Cloud App Security.
