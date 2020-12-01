@@ -21,9 +21,9 @@
   items:
     - name: Mise en route
       href: getting-started-with-cloud-app-security.md
-    - name: Bonnes pratiques
+    - name: meilleures pratiques recommandées.
       href: best-practices.md
-- name: Didacticiels
+- name: Tutoriels
   items:
     - name: Découvrir et gérer Shadow IT
       href: tutorial-shadow-it.md
@@ -123,6 +123,8 @@
               href: iboss-integration.md
             - name: Intégrer à Corrata
               href: corrata-integration.md
+            - name: Intégrer à Menlo
+              href: menlo-integration.md
             - name: Créer des rapports d’instantanés Cloud Discovery
               href: create-snapshot-cloud-discovery-reports.md
             - name: Configurer le chargement automatique des journaux pour des rapports continus
