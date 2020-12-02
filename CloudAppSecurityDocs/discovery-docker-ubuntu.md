@@ -1,14 +1,14 @@
 ---
 title: Configurer le chargement automatique des journaux à l’aide de l’arrimeur local
 description: Cet article décrit le processus de configuration du chargement automatique des journaux pour les rapports continus dans Cloud App Security à l’aide d’un docker sur Linux sur un serveur local.
-ms.date: 06/02/2020
+ms.date: 12/02/2020
 ms.topic: how-to
-ms.openlocfilehash: 4a339361b232cee1ee85758f4545856d4674e847
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 311839a4af2ba1c445253a094d07bdaf47cb8700
+ms.sourcegitcommit: c2c9bd46229ebe9e22bb03d43487d4c544f5e5f4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96311857"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96509976"
 ---
 # <a name="docker-on-linux-on-premises"></a>Docker sur Linux en local
 
@@ -153,6 +153,11 @@ Consultez l’état du collecteur dans le tableau **Collecteur de journaux** et 
 ![Vérifier le déploiement réussi du collecteur de journaux](media/ubuntu9.png)
 
 Vous pouvez aussi accéder au **journal de gouvernance** et vérifier que les journaux sont régulièrement chargés sur le portail.
+
+Vous pouvez également vérifier l’état du collecteur de journaux à partir du conteneur de l’ancrage à l’aide des commandes suivantes :
+
+1. Connectez-vous au conteneur à l’aide de la commande suivante : `docker exec -it <Container Name> bash`
+1. Vérifiez l’état du collecteur de journaux à l’aide de cette commande : `collector_status -p`
 
 Si vous rencontrez des problèmes lors du déploiement, consultez [Dépannage de Cloud Discovery](troubleshooting-cloud-discovery.md).
 

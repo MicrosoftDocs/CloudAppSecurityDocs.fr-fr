@@ -1,14 +1,14 @@
 ---
 title: Configurer le chargement automatique de journal à l’aide de Docker dans Azure
 description: Cet article décrit le processus de configuration du chargement automatique des journaux pour les rapports continus dans Cloud App Security à l’aide d’un docker sur Linux dans Azure.
-ms.date: 06/02/2020
+ms.date: 12/02/2020
 ms.topic: how-to
-ms.openlocfilehash: 0e34ebfc6d4afcb8ecf0967ddecc7b8dbd0b885f
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: a8f82a550e7ea203b3144f995d3df33446a533c2
+ms.sourcegitcommit: c2c9bd46229ebe9e22bb03d43487d4c544f5e5f4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96311874"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96509993"
 ---
 # <a name="docker-on-linux-in-azure"></a>Docker sur Linux dans Azure
 
@@ -163,6 +163,11 @@ Consultez l’état du collecteur dans le tableau **Collecteur de journaux** et 
 ![Vérifier l’état du collecteur dans le collecteur de journaux](media/ubuntu9.png)
 
 Vous pouvez aussi accéder au **journal de gouvernance** et vérifier que les journaux sont régulièrement chargés sur le portail.
+
+Vous pouvez également vérifier l’état du collecteur de journaux à partir du conteneur de l’ancrage à l’aide des commandes suivantes :
+
+1. Connectez-vous au conteneur à l’aide de la commande suivante : `docker exec -it <Container Name> bash`
+1. Vérifiez l’état du collecteur de journaux à l’aide de cette commande : `collector_status -p`
 
 Si vous rencontrez des problèmes lors du déploiement, consultez [Dépannage de Cloud Discovery](troubleshooting-cloud-discovery.md).
 

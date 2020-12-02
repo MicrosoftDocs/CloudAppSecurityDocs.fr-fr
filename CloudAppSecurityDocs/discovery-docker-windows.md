@@ -1,14 +1,14 @@
 ---
 title: Déployer des rapports continus pour des Cloud App Security à l’aide d’un ancrage sur Windows
 description: Cet article décrit la procédure de configuration du chargement automatique des journaux pour des rapports continus dans Cloud App Security à l’aide d’un Docker sur Windows dans une serveur local.
-ms.date: 11/19/2019
+ms.date: 12/02/2020
 ms.topic: how-to
-ms.openlocfilehash: 3fe411948dd2f0fe64917d69047351d835744ac0
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 7164cdb91664e131915c489d00085c164321afbb
+ms.sourcegitcommit: c2c9bd46229ebe9e22bb03d43487d4c544f5e5f4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96311806"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96509959"
 ---
 # <a name="docker-on-windows-on-premises"></a>Docker sur Windows en local
 
@@ -150,6 +150,11 @@ Consultez l’état du collecteur dans le tableau **Collecteur de journaux** et 
 ![Vérifier que le collecteur a été correctement déployé](media/ubuntu9.png)
 
 Vous pouvez aussi accéder au **journal de gouvernance** et vérifier que les journaux sont régulièrement chargés sur le portail.
+
+Vous pouvez également vérifier l’état du collecteur de journaux à partir du conteneur de l’ancrage à l’aide des commandes suivantes :
+
+1. Connectez-vous au conteneur à l’aide de la commande suivante : `docker exec -it <Container Name> bash`
+1. Vérifiez l’état du collecteur de journaux à l’aide de cette commande : `collector_status -p`
 
 Si vous rencontrez des problèmes lors du déploiement, consultez [Dépannage de Cloud Discovery](troubleshooting-cloud-discovery.md).
 
