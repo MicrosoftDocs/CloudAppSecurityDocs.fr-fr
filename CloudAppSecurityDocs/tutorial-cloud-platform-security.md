@@ -1,23 +1,14 @@
 ---
 title: Gérer la sécurité des plateformes cloud utilisées par votre organisation
 description: Ce tutoriel explique comment utiliser Microsoft Cloud App Security pour sécuriser vos plateformes cloud Azure, AWS et GCP.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 09/17/2020
 ms.topic: tutorial
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.suite: ems
-ms.openlocfilehash: 069ed5a6182c88bef89c792793c9bab2e0700f56
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 7711285b895d63e47e770a9079ef50bf8a091808
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90881002"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315869"
 ---
 # <a name="tutorial-manage-cloud-platform-security"></a>Tutoriel : Gérer la sécurité des plateformes cloud
 

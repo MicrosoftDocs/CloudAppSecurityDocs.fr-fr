@@ -1,25 +1,14 @@
 ---
 title: Bloquer les téléchargements des appareils non gérés avec le contrôle d'application par accès conditionnel Cloud App Security
 description: Ce tutoriel décrit le scénario permettant de protéger votre organisation contre les téléchargements de données sensibles par des appareils non gérés à l’aide des fonctionnalités de proxy inverse Azure AD.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 03/31/2020
 ms.topic: tutorial
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 3dec3c1729d63649a754098ace7f638ccc3029bc
-ms.sourcegitcommit: e711727f2f00ee3b54e08337a5040449e352ca46
+ms.openlocfilehash: 7817b7309483556b961eb00d6c267249a1ff07c5
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "93185935"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315699"
 ---
 # <a name="tutorial-block-download-of-sensitive-information"></a>Tutoriel : Bloquer le téléchargement des informations sensibles
 
@@ -66,43 +55,43 @@ Une fois cette tâche terminée, accédez au portail Cloud App Security et crée
 
 ### <a name="step-2-create-a-session-policy"></a>Étape 2 : Créer une stratégie de session
 
-1. Dans le portail Cloud App Security, sélectionnez **Contrôle** , puis **Stratégies**.
+1. Dans le portail Cloud App Security, sélectionnez **Contrôle**, puis **Stratégies**.
 
-2. Dans la page **stratégies** , cliquez sur **créer une stratégie** , puis sur **Stratégie de session**.
+2. Dans la page **stratégies**, cliquez sur **créer une stratégie**, puis sur **Stratégie de session**.
 
-3. Dans la page **Créer une stratégie de session** , attribuez un nom et une description à votre stratégie. Par exemple, **Bloquer les téléchargements à partir de Salesforce pour les appareils non gérés**.
+3. Dans la page **Créer une stratégie de session**, attribuez un nom et une description à votre stratégie. Par exemple, **Bloquer les téléchargements à partir de Salesforce pour les appareils non gérés**.
 
 4. Définissez la **gravité de la stratégie** et la **catégorie**.
 
-5. Pour le **type de contrôle de session** , sélectionnez **Contrôler le téléchargement du fichier (avec inspection)** . Ce paramètre vous permet de surveiller toutes les activités de vos utilisateurs dans une session Salesforce et de contrôler le blocage et la protection des téléchargements en temps réel.
+5. Pour le **type de contrôle de session**, sélectionnez **Contrôler le téléchargement du fichier (avec inspection)** . Ce paramètre vous permet de surveiller toutes les activités de vos utilisateurs dans une session Salesforce et de contrôler le blocage et la protection des téléchargements en temps réel.
 
-6. Sous **Source de l’activité** dans la section **Activités remplissant toutes les conditions suivantes** , sélectionnez les filtres :
+6. Sous **Source de l’activité** dans la section **Activités remplissant toutes les conditions suivantes**, sélectionnez les filtres :
 
-   * **Balise de l'appareil**  : Sélectionnez **Différent de**. Sélectionnez ensuite **Conforme Intune** , **Joint à une version hybride d’Azure AD** ou **Certification client valide**. Votre sélection dépend de la méthode utilisée dans votre organisation pour identifier les appareils gérés.
+   * **Balise de l'appareil** : Sélectionnez **Différent de**. Sélectionnez ensuite **Conforme Intune**, **Joint à une version hybride d’Azure AD** ou **Certification client valide**. Votre sélection dépend de la méthode utilisée dans votre organisation pour identifier les appareils gérés.
 
-   * **Application**  : sélectionnez l’application que vous voulez contrôler.
+   * **Application** : sélectionnez l’application que vous voulez contrôler.
 
-   * **Utilisateurs**  : sélectionnez les utilisateurs que vous souhaitez surveiller.
+   * **Utilisateurs** : sélectionnez les utilisateurs que vous souhaitez surveiller.
 
-7. Vous pouvez également bloquer les téléchargements pour les emplacements qui ne font pas partie de votre réseau d’entreprise. Sous **Source de l’activité** dans la section **Activités remplissant toutes les conditions suivantes** , définissez les filtres suivants :
+7. Vous pouvez également bloquer les téléchargements pour les emplacements qui ne font pas partie de votre réseau d’entreprise. Sous **Source de l’activité** dans la section **Activités remplissant toutes les conditions suivantes**, définissez les filtres suivants :
 
-   * **Adresse IP** ou **Emplacement**  : Vous pouvez utiliser l’un de ces deux paramètres pour identifier les emplacements externes à l’entreprise ou inconnus, à partir desquels un utilisateur peut tenter d’accéder à des données sensibles.
+   * **Adresse IP** ou **Emplacement** : Vous pouvez utiliser l’un de ces deux paramètres pour identifier les emplacements externes à l’entreprise ou inconnus, à partir desquels un utilisateur peut tenter d’accéder à des données sensibles.
 
      > [!NOTE]
      > Si vous souhaitez bloquer les téléchargements À LA FOIS à partir d’appareils non gérés et d’emplacements externes à l’entreprise, vous devez créer deux stratégies de session. Une stratégie définit la **source de l’activité** à l’aide de l’emplacement. L’autre stratégie définit la **source de l’activité** sur des appareils non gérés.
 
-   * **Application**  : sélectionnez l’application que vous voulez contrôler.
+   * **Application** : sélectionnez l’application que vous voulez contrôler.
 
-   * **Utilisateurs**  : sélectionnez les utilisateurs que vous souhaitez surveiller.
+   * **Utilisateurs** : sélectionnez les utilisateurs que vous souhaitez surveiller.
 
-8. Sous **Source de l’activité** dans la section **Fichiers remplissant toutes les conditions suivantes** , définissez les filtres suivants :
+8. Sous **Source de l’activité** dans la section **Fichiers remplissant toutes les conditions suivantes**, définissez les filtres suivants :
 
-   * **Étiquettes de classification**  : Si vous utilisez les étiquettes de classification Azure Information Protection, filtrez les fichiers en fonction d’une étiquette de classification Azure Information Protection spécifique.
+   * **Étiquettes de classification** : Si vous utilisez les étiquettes de classification Azure Information Protection, filtrez les fichiers en fonction d’une étiquette de classification Azure Information Protection spécifique.
 
    * Sélectionnez **Nom du fichier** ou **Type de fichier** pour appliquer des restrictions basées sur le nom ou le type de fichier.
 9. Activez **Inspection du contenu** pour permettre au moteur DLP interne d’analyser vos fichiers à la recherche de contenu sensible.
 
-10. Sous **Actions** , sélectionnez **bloquer**. Personnalisez le message de blocage que recevront vos utilisateurs lorsqu’ils ne parviennent pas à télécharger des fichiers.
+10. Sous **Actions**, sélectionnez **bloquer**. Personnalisez le message de blocage que recevront vos utilisateurs lorsqu’ils ne parviennent pas à télécharger des fichiers.
 
 11. Définissez les alertes que vous souhaitez recevoir lorsque la stratégie est mise en correspondance. Vous pouvez définir une limite pour ne pas recevoir trop d’alertes. Indiquez si vous souhaitez recevoir les alertes sous la forme d’un e-mail, d’un message texte, ou les deux.
 
@@ -114,7 +103,7 @@ Une fois cette tâche terminée, accédez au portail Cloud App Security et crée
 
 2. Ce fichier doit être bloqué et vous devez recevoir le message que vous avez défini sous **Personnaliser les messages de blocage**.
 
-3. Sur le portail Cloud App Security, cliquez sur **Contrôle** , **Stratégies** , puis sur la stratégie que vous avez créée pour afficher le rapport de stratégie. Une correspondance de stratégie de session doit apparaître rapidement.
+3. Sur le portail Cloud App Security, cliquez sur **Contrôle**, **Stratégies**, puis sur la stratégie que vous avez créée pour afficher le rapport de stratégie. Une correspondance de stratégie de session doit apparaître rapidement.
 
 4. Dans le rapport de stratégie, vous pouvez voir quelles connexions ont été redirigées vers Microsoft Cloud App Security pour le contrôle de session, et quels fichiers ont été téléchargés ou bloqués depuis les sessions surveillées.
 

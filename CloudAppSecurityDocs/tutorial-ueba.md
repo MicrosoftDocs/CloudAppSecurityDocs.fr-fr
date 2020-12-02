@@ -1,21 +1,14 @@
 ---
 title: Examiner des utilisateurs à risque | Microsoft Docs
 description: Ce tutoriel décrit le processus permettant d’examiner les utilisateurs à risque dans Microsoft Cloud App Security, dans des environnements hybrides, en utilisant une intégration à Microsoft Defender pour Identity.
-keywords: ''
-author: shsagir
-ms.author: shsagir
 ms.date: 11/08/2020
 ms.topic: tutorial
-ms.collection: M365-security-compliance
-ms.service: cloud-app-security
-ms.reviewer: dannyk
-ms.suite: ems
-ms.openlocfilehash: b8dace138aeab11fdd334514bf0dd8850a983f37
-ms.sourcegitcommit: 5367d8fdf99d61719a395728f2ef4b014604e3bc
+ms.openlocfilehash: 9ef0555a8fc7fa82a87fd7238d0abc2ec85e4540
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/08/2020
-ms.locfileid: "94371316"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315835"
 ---
 # <a name="tutorial-investigate-risky-users"></a>Tutoriel : Examiner des utilisateurs à risque
 
@@ -48,7 +41,7 @@ Le score de priorité d’examen est basé sur les alertes de sécurité, les ac
 
 Si vous cliquez sur le score d'une alerte ou d'une activité, vous pouvez voir les preuves sur lesquelles Cloud App Security s’est appuyé pour noter l'activité.
 
-Chaque utilisateur Azure AD dispose d’un score de priorité d’examen dynamique, constamment mis à jour en fonction du comportement et de l’impact récents, calculé à partir des données évaluées par Defender pour Identity et Cloud App Security. Vous pouvez maintenant identifier immédiatement les principaux utilisateurs à risque en les filtrant par **score de priorité d’examen** , puis vérifier directement leur impact sur l’entreprise et examiner toutes les activités connexes, qu’il s’agisse d’informations compromises, de données exfiltrées ou de menaces provenant des employés.
+Chaque utilisateur Azure AD dispose d’un score de priorité d’examen dynamique, constamment mis à jour en fonction du comportement et de l’impact récents, calculé à partir des données évaluées par Defender pour Identity et Cloud App Security. Vous pouvez maintenant identifier immédiatement les principaux utilisateurs à risque en les filtrant par **score de priorité d’examen**, puis vérifier directement leur impact sur l’entreprise et examiner toutes les activités connexes, qu’il s’agisse d’informations compromises, de données exfiltrées ou de menaces provenant des employés.
 
 Cloud App Security utilise les fonctionnalités suivantes pour mesurer le risque :
 
@@ -69,7 +62,7 @@ Le score d'activité détermine la probabilité qu'un utilisateur donné effectu
 Pour identifier vos utilisateurs présentant le plus de risques dans Cloud App Security :
 
 1. Accédez au tableau de bord Cloud App Security et recherchez les personnes identifiées dans la mosaïque **Top users by investigation priority** (Principaux utilisateurs par priorité d’examen), puis examinez une à une la page de ces utilisateurs.  
-Le **numéro de priorité d’examen** , affiché en regard du nom d’utilisateur, correspond à la somme de toutes les activités à risque de l’utilisateur au cours de la semaine dernière.
+Le **numéro de priorité d’examen**, affiché en regard du nom d’utilisateur, correspond à la somme de toutes les activités à risque de l’utilisateur au cours de la semaine dernière.
 
    ![Tableau de bord des principaux utilisateurs](media/dashboard-top-users.png)
 

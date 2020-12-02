@@ -1,26 +1,14 @@
 ---
 title: Qu’est-ce que Cloud App Security ?
 description: Cet article décrit Microsoft Cloud App Security et son fonctionnement.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 09/23/2020
 ms.topic: overview
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 8b9614a9eeb611316cb1add9175c0289f53726d9
-ms.sourcegitcommit: 032894148e2f15af09bdfe3db06c64eae7c1657b
+ms.openlocfilehash: 58018c866c18a89f4114f0c69d763ba7dfc4f042
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91056601"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315648"
 ---
 # <a name="microsoft-cloud-app-security-overview"></a>Vue d’ensemble de Microsoft Cloud App Security
 

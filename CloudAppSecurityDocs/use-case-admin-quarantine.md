@@ -1,25 +1,14 @@
 ---
 title: Protéger les fichiers avec la mise en quarantaine administrateur Cloud App Security
 description: Ce tutoriel décrit le scénario d’utilisation de la mise en quarantaine administrateur pour contrôler les violations de données.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 7/30/2019
 ms.topic: tutorial
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 2835a0f8bc66f937d8569c327c5fd61c0e6ebac9
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 5d0a9e666b415806a0cb6a3a047f0b81e2b2a4fc
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90881161"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315767"
 ---
 # <a name="tutorial-protect-files-with-admin-quarantine"></a>Tutoriel : Protéger les fichiers avec la mise en quarantaine administrateur
 
@@ -27,7 +16,7 @@ ms.locfileid: "90881161"
 
 Les [stratégies de fichier](data-protection-policies.md) sont un excellent outil pour rechercher les menaces sur vos stratégies de protection des informations. Par exemple, créez des stratégies de fichier qui recherchent les emplacements où les utilisateurs ont stocké des informations sensibles, des numéros de carte de crédit et des fichiers ICAP tiers dans votre cloud.
 
-Ce tutoriel vous aide à utiliser Microsoft Cloud App Security pour détecter les fichiers indésirables stockés dans votre cloud qui vous rendent vulnérable, et vous aider à prendre des mesures immédiates pour les arrêter et verrouiller les fichiers qui représentent une menace à l’aide de la **mise en quarantaine administrateur ** pour protéger vos fichiers dans le cloud, corriger les problèmes et empêcher les fuites futures.
+Ce tutoriel vous aide à utiliser Microsoft Cloud App Security pour détecter les fichiers indésirables stockés dans votre cloud qui vous rendent vulnérable, et vous aider à prendre des mesures immédiates pour les arrêter et verrouiller les fichiers qui représentent une menace à l’aide de la **mise en quarantaine administrateur** pour protéger vos fichiers dans le cloud, corriger les problèmes et empêcher les fuites futures.
 
 > [!div class="checklist"]
 >
