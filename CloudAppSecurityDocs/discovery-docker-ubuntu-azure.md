@@ -3,12 +3,12 @@ title: Configurer le chargement automatique de journal à l’aide de Docker dan
 description: Cet article décrit le processus de configuration du chargement automatique des journaux pour les rapports continus dans Cloud App Security à l’aide d’un docker sur Linux dans Azure.
 ms.date: 12/02/2020
 ms.topic: how-to
-ms.openlocfilehash: a8f82a550e7ea203b3144f995d3df33446a533c2
-ms.sourcegitcommit: c2c9bd46229ebe9e22bb03d43487d4c544f5e5f4
+ms.openlocfilehash: 6c4f7243758dce46e5469d503ec572a18a7a2afe
+ms.sourcegitcommit: 53e485ed8460f1123b3b55277fa5991b427b5302
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/02/2020
-ms.locfileid: "96509993"
+ms.locfileid: "96512948"
 ---
 # <a name="docker-on-linux-in-azure"></a>Docker sur Linux dans Azure
 
@@ -124,13 +124,85 @@ Le collecteur de journaux peut gérer correctement la capacité des journaux pou
 
 1. Appliquez les privilèges racines avec `sudo -i`.
 
-1. Si vous acceptez les [termes du contrat de licence logiciel](https://go.microsoft.com/fwlink/?linkid=862492), désinstallez les anciennes versions et installez Docker CE en exécutant la commande suivante :
+1. Si vous acceptez les termes du contrat de [licence logicielle](https://go.microsoft.com/fwlink/?linkid=862492), désinstallez les anciennes versions et installez dockr ce en exécutant les commandes appropriées pour votre environnement :
+
+#### <a name="centos"></a>[CentOS](#tab/centos)
+
+1. Supprimer les anciennes versions de l’arrimeur : `yum erase docker docker-engine docker.io`
+1. Installez les composants requis du moteur de l’ancrage : `yum install -y yum-utils`
+1. Ajouter un référentiel d’ancrage :
 
     ```bash
-    curl -o /tmp/MCASInstallDocker.sh https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh && chmod +x /tmp/MCASInstallDocker.sh; /tmp/MCASInstallDocker.sh
+    yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+    yum makecache
     ```
 
-    ![Commande Ubuntu Azure](media/ubuntu-azure-command.png)
+1. Installer le moteur de l’amarrage : `yum -y install docker-ce`
+1. Démarrer l’ancrage
+
+    ```bash
+    systemctl start docker
+    systemctl enable docker
+    ```
+
+1. Installation de l’amarrage de test : `docker run hello-world`
+
+#### <a name="red-hat"></a>[Red Hat](#tab/red-hat)
+
+1. Supprimer les anciennes versions de l’arrimeur : `yum erase docker docker-engine docker.io`
+1. Installez les composants requis du moteur de l’ancrage :
+
+    ```bash
+    yum install -y yum-utils
+    yum install -y https://download.docker.com/linux/centos/7/x86_64/stable/Packages/containerd.io-1.3.7-3.1.el7.x86_64.rpm
+    ```
+
+1. Ajouter un référentiel d’ancrage :
+
+    ```bash
+    yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+    yum makecache
+    ```
+
+1. Installer le moteur de l’amarrage : `yum -y install docker-ce`
+1. Démarrer l’ancrage
+
+    ```bash
+    systemctl start docker
+    systemctl enable docker
+    ```
+
+1. Installation de l’amarrage de test : `docker run hello-world`
+
+#### <a name="ubuntu"></a>[Ubuntu](#tab/ubuntu)
+
+1. Supprimer les anciennes versions de l’arrimeur : `apt-get remove docker docker-engine docker.io`
+1. Si vous installez sur Ubuntu 14,04, installez le package linux-image-extra.
+
+    ```bash
+    apt-get update -y
+    apt-get install -y linux-image-extra-$(uname -r) linux-image-extra-virtual
+    ```
+
+1. Installez les composants requis du moteur de l’ancrage :
+
+    ```bash
+    apt-get update -y
+    (apt-get install -y apt-transport-https ca-certificates curl software-properties-common && curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add - )
+    ```
+
+1. Vérifier que l’UID de l’empreinte digitale de clé apt est docker@docker.com:`apt-key fingerprint | grep uid`
+1. Installer le moteur de l’amarrage :
+
+    ```bash
+    add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+    apt-get update -y
+    apt-get install -y docker-ce
+    ```
+
+1. Installation de l’amarrage de test : `docker run hello-world`
+
+---
 
 1. Dans la fenêtre **Créer un collecteur de journaux** du portail Cloud App Security, copiez la commande pour importer la configuration du collecteur sur la machine hôte :
 

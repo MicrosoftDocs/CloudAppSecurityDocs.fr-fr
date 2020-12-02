@@ -3,12 +3,12 @@ title: Configurer le chargement automatique des journaux à l’aide de l’arri
 description: Cet article décrit le processus de configuration du chargement automatique des journaux pour les rapports continus dans Cloud App Security à l’aide d’un docker sur Linux sur un serveur local.
 ms.date: 12/02/2020
 ms.topic: how-to
-ms.openlocfilehash: 311839a4af2ba1c445253a094d07bdaf47cb8700
-ms.sourcegitcommit: c2c9bd46229ebe9e22bb03d43487d4c544f5e5f4
+ms.openlocfilehash: 710afdc9c50ece74d9040b76e8a55d36651df0fd
+ms.sourcegitcommit: 53e485ed8460f1123b3b55277fa5991b427b5302
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/02/2020
-ms.locfileid: "96509976"
+ms.locfileid: "96512931"
 ---
 # <a name="docker-on-linux-on-premises"></a>Docker sur Linux en local
 
@@ -114,18 +114,87 @@ La procédure suivante décrit le déploiement dans Ubuntu.
     export https_proxy='<IP>:<PORT>'
     ```
 
-1. Si vous acceptez les [termes du contrat de licence logiciel](https://go.microsoft.com/fwlink/?linkid=862492), désinstallez les anciennes versions et installez Docker CE en exécutant la commande suivante :
+1. Si vous acceptez les termes du contrat de [licence logicielle](https://go.microsoft.com/fwlink/?linkid=862492), désinstallez les anciennes versions et installez dockr ce en exécutant les commandes appropriées pour votre environnement :
+
+#### <a name="centos"></a>[CentOS](#tab/centos)
+
+1. Supprimer les anciennes versions de l’arrimeur : `yum erase docker docker-engine docker.io`
+1. Installez les composants requis du moteur de l’ancrage : `yum install -y yum-utils`
+1. Ajouter un référentiel d’ancrage :
 
     ```bash
-    curl -o /tmp/MCASInstallDocker.sh https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh && chmod +x /tmp/MCASInstallDocker.sh; /tmp/MCASInstallDocker.sh
+    yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+    yum makecache
     ```
 
-    > [!NOTE]
-    > Si cette commande ne parvient pas à valider votre certificat de proxy, exécutez la commande en ajoutant `curl -k` au début.
+1. Installer le moteur de l’amarrage : `yum -y install docker-ce`
+1. Démarrer l’ancrage
 
-    ![Commande pour installer l’ancrage](media/ubuntu5.png)
+    ```bash
+    systemctl start docker
+    systemctl enable docker
+    ```
 
-1. Déployez l’image du collecteur sur la machine hôte en important la configuration du collecteur. Importez la configuration en copiant la commande d’exécution générée dans le portail. Si vous devez configurer un proxy, ajoutez l’adresse IP et le numéro de port du proxy. Par exemple, si les détails de votre proxy sont 192.168.10.1:8080, votre commande d’exécution mise à jour est :
+1. Installation de l’amarrage de test : `docker run hello-world`
+
+#### <a name="red-hat"></a>[Red Hat](#tab/red-hat)
+
+1. Supprimer les anciennes versions de l’arrimeur : `yum erase docker docker-engine docker.io`
+1. Installez les composants requis du moteur de l’ancrage :
+
+    ```bash
+    yum install -y yum-utils
+    yum install -y https://download.docker.com/linux/centos/7/x86_64/stable/Packages/containerd.io-1.3.7-3.1.el7.x86_64.rpm
+    ```
+
+1. Ajouter un référentiel d’ancrage :
+
+    ```bash
+    yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+    yum makecache
+    ```
+
+1. Installer le moteur de l’amarrage : `yum -y install docker-ce`
+1. Démarrer l’ancrage
+
+    ```bash
+    systemctl start docker
+    systemctl enable docker
+    ```
+
+1. Installation de l’amarrage de test : `docker run hello-world`
+
+#### <a name="ubuntu"></a>[Ubuntu](#tab/ubuntu)
+
+1. Supprimer les anciennes versions de l’arrimeur : `apt-get remove docker docker-engine docker.io`
+1. Si vous installez sur Ubuntu 14,04, installez le package linux-image-extra.
+
+    ```bash
+    apt-get update -y
+    apt-get install -y linux-image-extra-$(uname -r) linux-image-extra-virtual
+    ```
+
+1. Installez les composants requis du moteur de l’ancrage :
+
+    ```bash
+    apt-get update -y
+    (apt-get install -y apt-transport-https ca-certificates curl software-properties-common && curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add - )
+    ```
+
+1. Vérifier que l’UID de l’empreinte digitale de clé apt est docker@docker.com:`apt-key fingerprint | grep uid`
+1. Installer le moteur de l’amarrage :
+
+    ```bash
+    add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+    apt-get update -y
+    apt-get install -y docker-ce
+    ```
+
+1. Installation de l’amarrage de test : `docker run hello-world`
+
+---
+
+5. Déployez l’image du collecteur sur la machine hôte en important la configuration du collecteur. Importez la configuration en copiant la commande d’exécution générée dans le portail. Si vous devez configurer un proxy, ajoutez l’adresse IP et le numéro de port du proxy. Par exemple, si les détails de votre proxy sont 192.168.10.1:8080, votre commande d’exécution mise à jour est :
 
     ```bash
     (echo 6f19225ea69cf5f178139551986d3d797c92a5a43bef46469fcc997aec2ccc6f) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.2.2.2'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=tenant2.eu1-rs.adallom.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i mcr.microsoft.com/mcas/logcollector starter
