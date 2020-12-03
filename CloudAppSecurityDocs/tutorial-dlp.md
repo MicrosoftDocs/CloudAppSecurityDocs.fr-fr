@@ -1,23 +1,14 @@
 ---
 title: Découvrir et protéger les informations sensibles dans votre organisation
 description: Ce tutoriel décrit le processus de découverte et de protection des informations sensibles dans Microsoft Cloud App Security.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 05/26/2020
 ms.topic: tutorial
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.suite: ems
-ms.openlocfilehash: 4a75a256f8d4fa2e9483a153fce7ba1e1ab28376
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 0d449fb9df31e86572b47093cb173be9d7227fc9
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880948"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315818"
 ---
 # <a name="tutorial-discover-and-protect-sensitive-information-in-your-organization"></a>Tutoriel : Découvrir et protéger les informations sensibles dans votre organisation
 
@@ -49,7 +40,7 @@ Notre approche de la protection des informations peut être divisée selon les p
     * **Utiliser un connecteur d’application** : Nos connecteurs d’applications utilisent les API fournies par les fournisseurs d’applications. Ils offrent une visibilité et un contrôle améliorés sur les applications utilisées dans votre organisation. Les analyses sont effectuées périodiquement (toutes les 12 heures) et en temps réel (déclenchées à chaque fois qu’une modification est détectée). Pour plus d’informations et pour obtenir des instructions sur l’ajout d’applications, consultez [Connexion d’applications](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
     * **Utiliser le contrôle d’application par accès conditionnel** : Notre solution de contrôle d’application par accès conditionnel utilise une architecture de proxy inverse qui est intégrée de manière unique avec l’accès conditionnel Azure Active Directory (AD). Une fois configurés dans Azure AD, les utilisateurs sont acheminés vers Cloud App Security où les stratégies d’accès et de session sont appliquées pour protéger les données que les applications tentent d’utiliser. Cette méthode de connexion vous permet d’appliquer des contrôles à [n’importe quelle application](proxy-deployment-any-app.md). Pour plus d’informations, consultez [Protéger des applications avec le contrôle d’application par accès conditionnel Cloud App Security](proxy-intro-aad.md).
 
-1. **Examiner** : Une fois qu’une application est connectée à Cloud App Security avec son connecteur d’API, Cloud App Security analyse tous les fichiers qu’elle utilise. Vous pouvez alors accéder à la page d’investigation du fichier ( **Examiner** > **Fichiers** ) pour obtenir une vue d’ensemble des fichiers partagés par vos applications cloud, leur accessibilité et leur état. Pour plus d’informations, consultez [Examiner des fichiers](file-filters.md).
+1. **Examiner** : Une fois qu’une application est connectée à Cloud App Security avec son connecteur d’API, Cloud App Security analyse tous les fichiers qu’elle utilise. Vous pouvez alors accéder à la page d’investigation du fichier (**Examiner** > **Fichiers**) pour obtenir une vue d’ensemble des fichiers partagés par vos applications cloud, leur accessibilité et leur état. Pour plus d’informations, consultez [Examiner des fichiers](file-filters.md).
 
 ### <a name="phase-2-classify-sensitive-information"></a>Phase 2 : Classer les informations sensibles
 
@@ -58,7 +49,7 @@ Notre approche de la protection des informations peut être divisée selon les p
     Pour ceux d’entre vous qui ont déjà effectué le travail difficile consistant à identifier les informations sensibles et à appliquer les étiquettes de sensibilité appropriées, vous pouvez utiliser ces étiquettes dans vos stratégies sans avoir à relancer l’analyse du contenu.
 1. **Activer l’intégration Azure Information Protection**
     1. Dans Cloud App Security, sous la roue dentée Paramètres, sélectionnez la page **Paramètres** sous l’en-tête **Système**.
-    1. Sous **Azure Information Protection** , sélectionnez **Analyser automatiquement les nouveaux fichiers pour détecter les étiquettes de classification Azure Information Protection**.
+    1. Sous **Azure Information Protection**, sélectionnez **Analyser automatiquement les nouveaux fichiers pour détecter les étiquettes de classification Azure Information Protection**.
 
     Pour plus d’informations, consultez [Intégration d’Azure Information Protection](azip-integration.md).
 1. **Créer des stratégies pour identifier les informations sensibles dans les fichiers** : Une fois que vous connaissez les types d’informations que vous souhaitez protéger, il est temps de créer des stratégies pour les détecter. Commencez par créer les stratégies suivantes :
@@ -66,8 +57,8 @@ Notre approche de la protection des informations peut être divisée selon les p
     **Stratégie de fichier**  
     Utilisez ce type de stratégie pour analyser le contenu des fichiers stockés dans vos applications cloud connectées par API en temps quasi réel et les données au repos. Les fichiers sont analysés à l’aide de l’une de nos méthodes d’inspection prises en charge, notamment **Contenu chiffré Azure Information Protection** grâce à son **intégration native** avec Cloud App Security.
 
-    1. Accédez à **Contrôle** > **Stratégies** , cliquez sur **Créer une stratégie** , puis sélectionnez **Stratégie de fichier**.
-    1. Sous **Méthode d’inspection** , choisissez et configurez l’un des services de classification suivants :
+    1. Accédez à **Contrôle** > **Stratégies**, cliquez sur **Créer une stratégie**, puis sélectionnez **Stratégie de fichier**.
+    1. Sous **Méthode d’inspection**, choisissez et configurez l’un des services de classification suivants :
 
         * **[Services de classification des données](dcs-inspection.md)** : Utilise les décisions de classification que vous avez prises dans Office 365, Azure Information Protection et Cloud App Security pour fournir une expérience d’étiquetage unifiée. Il s’agit de la méthode d’inspection de contenu par défaut, car elle offre une expérience cohérente et unifiée pour les produits Microsoft.
         * **[DLP intégré](content-inspection-built-in.md)** : Inspecte les fichiers pour obtenir des informations sensibles à l’aide de notre moteur d’inspection de contenu DLP intégré.
@@ -83,9 +74,9 @@ Notre approche de la protection des informations peut être divisée selon les p
     * **Protéger les fichiers lors du téléchargement** : Exiger l’étiquetage et la protection des documents avec Azure Information Protection. Cette action garantit que le document est protégé et que l’accès utilisateur est limité dans une session potentiellement risquée.
     * **Empêcher le chargement de fichiers sans étiquette** : Exiger qu’un fichier dispose de l’étiquette et de la protection appropriées avant qu’un fichier sensible soit chargé, distribué et utilisé par d’autres personnes. Avec cette action, vous pouvez vous assurer que le chargement des fichiers sans étiquette avec du contenu sensible est bloqué jusqu’à ce que l’utilisateur puisse classifier le contenu.
 
-    1. Accédez à **Contrôle** > **Stratégies** , cliquez sur **Créer une stratégie** , puis sélectionnez **Stratégie de session**.
-    1. Sous **Type de contrôle de session** , choisissez l’une des options avec DLP.
-    1. Sous **Méthode d’inspection** , choisissez et configurez l’un des services de classification suivants :
+    1. Accédez à **Contrôle** > **Stratégies**, cliquez sur **Créer une stratégie**, puis sélectionnez **Stratégie de session**.
+    1. Sous **Type de contrôle de session**, choisissez l’une des options avec DLP.
+    1. Sous **Méthode d’inspection**, choisissez et configurez l’un des services de classification suivants :
 
         * **[Services de classification des données](dcs-inspection.md)** : Utilise les décisions de classification que vous avez prises dans Office 365, Azure Information Protection et Cloud App Security pour fournir une expérience d’étiquetage unifiée. Il s’agit de la méthode d’inspection de contenu par défaut, car elle offre une expérience cohérente et unifiée pour les produits Microsoft.
         * **[DLP intégré](content-inspection-built-in.md)** : Inspecte les fichiers pour obtenir des informations sensibles à l’aide de notre moteur d’inspection de contenu DLP intégré.
@@ -117,7 +108,7 @@ Désormais, vous pouvez détecter des fichiers contenant des informations sensib
 
 Vos stratégies sont toutes en place pour inspecter et protéger vos données. À présent, vous souhaitez [vérifier votre tableau de bord](daily-activities-to-protect-your-cloud-environment.md#check-the-dashboard) quotidiennement pour voir quelles nouvelles alertes ont été déclenchées. C’est un bon endroit pour garder un œil sur l’intégrité de votre environnement cloud. Votre tableau de bord vous permet de vous faire une idée de ce qui se passe et, si nécessaire, de lancer une [investigation](investigate.md).
 
-L’une des méthodes les plus efficaces pour analyser les incidents de fichiers sensibles consiste à passer à la page **Stratégies** et à vérifier les correspondances pour les stratégies que vous avez configurées. En outre, si vous avez configuré des alertes, vous devez également envisager de surveiller régulièrement les alertes de fichier en accédant à la page **Alertes** , en spécifiant la catégorie comme **DLP** et en vérifiant les stratégies liées aux fichiers qui sont déclenchées. L’examen de ces incidents peut vous aider à affiner vos stratégies afin de vous concentrer sur les menaces qui présentent un intérêt pour votre organisation.
+L’une des méthodes les plus efficaces pour analyser les incidents de fichiers sensibles consiste à passer à la page **Stratégies** et à vérifier les correspondances pour les stratégies que vous avez configurées. En outre, si vous avez configuré des alertes, vous devez également envisager de surveiller régulièrement les alertes de fichier en accédant à la page **Alertes**, en spécifiant la catégorie comme **DLP** et en vérifiant les stratégies liées aux fichiers qui sont déclenchées. L’examen de ces incidents peut vous aider à affiner vos stratégies afin de vous concentrer sur les menaces qui présentent un intérêt pour votre organisation.
 
 En conclusion, la gestion des informations sensibles de cette façon garantit que les données enregistrées dans le cloud bénéficient d’une protection maximale contre les exfiltrations et les infiltrations malveillantes. En outre, en cas de perte ou de partage d’un fichier, seuls les utilisateurs autorisés peuvent y accéder.
 

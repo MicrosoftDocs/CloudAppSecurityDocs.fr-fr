@@ -1,25 +1,14 @@
 ---
 title: Application automatique d’étiquettes de classification Azure Information Protection
 description: Ce tutoriel explique comment appliquer automatiquement des étiquettes de classification Azure Information Protection dans Microsoft Cloud App Security.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 3/5/2019
 ms.topic: tutorial
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 33078d72d6bbcb5430f207a029c3352d776958ba
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 997de343a151ccfc5e91f0935b63229a1afb389c
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90881132"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315750"
 ---
 # <a name="tutorial-automatically-apply-azure-information-protection-classification-labels"></a>Tutoriel : Application automatique d’étiquettes de classification Azure Information Protection
 
@@ -46,7 +35,7 @@ Un utilisateur de votre organisation enregistre des fichiers d’informations cl
 
 ## <a name="the-solution"></a>La solution
 
-Utilisez Cloud App Security avec Azure Information Protection pour intégrer des informations de classification et de protection permanente à vos données, afin qu’elles restent sécurisées, quel que soit l’emplacement où elles sont stockées et quelles que soient les personnes avec qui elles sont partagées : collègues, clients et partenaires. Définissez qui peut y accéder et quels sont les usages permis. Par exemple, autorisez les utilisateurs à afficher et à modifier des fichiers, mais pas à les imprimer ni à les transférer. Vous pouvez également ajouter aux fichiers d’autres [actions de gouvernance](governance-actions.md) prises en charge par Cloud App Security, comme supprimer des collaborateurs ou des capacités de partage.
+Utilisez Cloud App Security avec Azure Information Protection pour intégrer des informations de classification et de protection permanente à vos données, afin qu’elles restent sécurisées, quel que soit l’emplacement où elles sont stockées et quelles que soient les personnes avec qui elles sont partagées : collègues, clients et partenaires. Définissez qui peut y accéder et quels sont les usages permis. Par exemple, autorisez les utilisateurs à afficher et à modifier des fichiers, mais pas à les imprimer ni à les transférer. Vous pouvez également ajouter aux fichiers d’autres [actions de gouvernance](governance-actions.md) prises en charge par Cloud App Security, comme supprimer des collaborateurs ou des capacités de partage.
 
 ## <a name="prerequisites"></a>Prérequis
 

@@ -1,24 +1,14 @@
 ---
 title: Détection des activités suspectes des utilisateurs avec l’analyse comportementale (UEBA)
 description: Ce tutoriel décrit le processus de paramétrage des détections d’activité utilisateur dans Microsoft Cloud App Security.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 05/10/2020
 ms.topic: tutorial
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: galz
-ms.suite: ems
-ms.openlocfilehash: bdf58b83e01dc6ab088d3956f2a71ef52f368438
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: b8b971af09a2ae245999ddcae5f503912aec4d9f
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90881183"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315784"
 ---
 # <a name="tutorial-detect-suspicious-user-activity-with-ueba"></a>Tutoriel : Détection des activités suspectes des utilisateurs avec UEBA
 
@@ -139,7 +129,7 @@ Pour empêcher la multiplication des alertes, configurez leur sensibilité. Vous
 
 ## <a name="phase-4-tune-rule-based-detection-activity-policies"></a>Phase 4 : Paramétrage des stratégies (d’activité) de détection basées sur les règles
 
-Les [stratégies de détection basée sur les règles](user-activity-policies.md) offrent la possibilité de compléter les stratégies de détection d’anomalie avec des exigences propres à l’organisation. Nous recommandons, pour créer des stratégies de ce type, d’utiliser l’un de nos modèles de stratégie d’activité (accédez à **Contrôle** > **Modèles** et définissez le filtre **Type** sur **Stratégie d’activité**), puis de [le configurer](activity-filters-queries.md) de façon à détecter les comportements qui ne sont pas normaux pour votre environnement. Par exemple, dans le cas d’une organisation non présente dans un pays ou une région spécifique, il peut être judicieux de créer une stratégie qui détecte les activités anormales provenant de ce pays et envoie une alerte à ce sujet. Pour d’autres, qui disposent de grandes succursales dans ce pays, les activités de ce pays sont normales ; il n’est donc pas pertinent de les détecter.
+Les [stratégies de détection basée sur les règles](user-activity-policies.md) offrent la possibilité de compléter les stratégies de détection d’anomalie avec des exigences propres à l’organisation. Nous recommandons, pour créer des stratégies de ce type, d’utiliser l’un de nos modèles de stratégie d’activité (accédez à **Contrôle** > **Modèles** et définissez le filtre **Type** sur **Stratégie d’activité**), puis de [le configurer](activity-filters-queries.md) de façon à détecter les comportements qui ne sont pas normaux pour votre environnement. Par exemple, dans le cas d’une organisation non présente dans un pays ou une région spécifique, il peut être judicieux de créer une stratégie qui détecte les activités anormales provenant de ce pays et envoie une alerte à ce sujet. Par exemple, dans le cas d’une organisation non présente dans un pays ou une région spécifique, il peut être judicieux de créer une stratégie qui détecte les activités anormales provenant de ce pays et envoie une alerte à ce sujet.
 
 1. **Paramétrer le volume d’activité**  
 Choisissez le volume d’activité nécessaire pour que la détection déclenche une alerte. Dans notre exemple, si votre organisation n’est pas présente dans un pays ou une région, même une seule activité est importante et justifie une alerte. Toutefois, un seul échec de connexion peut provenir d’une erreur humaine et ne présenter d’intérêt que si de nombreux échecs surviennent sur une courte période.
