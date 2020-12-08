@@ -3,14 +3,14 @@ title: Intégration de SIEM générique avec Cloud App Security
 description: Cet article fournit des informations sur l’intégration de votre SIEM générique avec Cloud App Security.
 ms.date: 11/08/2020
 ms.topic: how-to
-ms.openlocfilehash: a0c4fffdec7c870254baf0d20cdbaf7f0e40b39c
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: ed69404df787a9c439c3e433b00b0f06fbd8769a
+ms.sourcegitcommit: 605ab52545796cff9b0f6392ceff12c310c7fe2d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315410"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96851868"
 ---
-# <a name="generic-siem-integration"></a>Intégration de SIEM générique
+# <a name="generic-siem-integration-preview"></a>Intégration SIEM générique (version préliminaire)
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
