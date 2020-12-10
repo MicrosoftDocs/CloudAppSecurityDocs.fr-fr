@@ -1,14 +1,14 @@
 ---
 title: Différences entre les fonctionnalités de découverte de Cloud App Security et d’Azure AD
 description: Cet article décrit les différences entre les fonctionnalités de découverte de Microsoft Cloud App Security et d’Azure AD.
-ms.date: 8/29/2019
+ms.date: 12/03/2020
 ms.topic: overview
-ms.openlocfilehash: 4a5374294407d1b3011f4b7fcd4edca1254e0532
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: c66173dc28d0e0f9d349327583afa30a328912db
+ms.sourcegitcommit: 4177401f2f7948f230a6cb1f7af8ceeceb844fad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96311483"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96544698"
 ---
 # <a name="what-are-the-differences-in-discovery-capabilities-for-azure-active-directory-and-microsoft-cloud-app-security"></a>Différences entre les fonctionnalités de découverte d’Azure Active Directory et de Microsoft Cloud App Security
 
@@ -33,7 +33,7 @@ Le tableau suivant compare les fonctionnalités de découverte de Microsoft Clou
 |Fonctionnalité|Composant|Microsoft Cloud App Security|Azure AD Cloud App Discovery|
 |----|----|----|----|
 |Cloud Discovery|Applications découvertes|> 16 000 applications cloud|> 16 000 applications cloud|
-||Déploiement pour l’analyse de la découverte|Chargement manuel et automatique des journaux|Chargement manuel et automatique des journaux|
+||Déploiement pour l’analyse de la découverte|Chargement manuel et automatique des journaux|Chargement manuel et automatique des journaux. [En savoir plus sur la configuration de Cloud Discovery](set-up-cloud-discovery.md)|
 ||Anonymisation des journaux pour la protection des données personnelles des utilisateurs|Oui|Oui|
 ||Accès à l’ensemble du catalogue d’applications cloud|Oui|Oui|
 ||Analyse de risque des applications cloud|Oui|Oui|
