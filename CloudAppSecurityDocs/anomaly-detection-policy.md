@@ -1,14 +1,25 @@
 ---
 title: Créer une stratégie de détection des anomalies dans Cloud App Security
 description: Cet article fournit une description des stratégies de détection des anomalies ainsi que des informations de référence sur les composantes d’une stratégie de détection des anomalies.
+keywords: ''
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 08/20/2020
 ms.topic: how-to
-ms.openlocfilehash: 6cddeb16149a61aa1099d4fe74c3423dbd45042f
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.collection: M365-security-compliance
+ms.prod: ''
+ms.service: cloud-app-security
+ms.technology: ''
+ms.reviewer: reutam
+ms.suite: ems
+ms.custom: seodec18
+ms.openlocfilehash: 43490c416d1d19882321343c18e3e4417a6110f4
+ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96314747"
+ms.lasthandoff: 12/13/2020
+ms.locfileid: "97369890"
 ---
 # <a name="get-behavioral-analytics-and-anomaly-detection"></a>Bénéficiez d’une analyse comportementale et d’une détection des anomalies
 
@@ -69,7 +80,7 @@ Les stratégies de détection d’anomalie suivantes sont disponibles :
     >
     > * Box
     > * Dropbox
-    > * G Suite
+    > * Espace de travail Google
     > * Office 365 (nécessite une licence valide pour Microsoft Defender pour Office 365 P1)
 
 ### <a name="activity-from-anonymous-ip-addresses"></a>Activité depuis des adresses IP anonymes
@@ -179,7 +190,7 @@ Par exemple, sous Activité, vous pouvez définir la détection d’une région 
 
 Pour délimiter une stratégie de détection d’anomalie :
 
-1. Cliquez sur stratégies de **contrôle**  >  **Policies** et définissez le filtre de **type** sur la **stratégie de détection d’anomalie**.
+1. Cliquez sur stratégies de **contrôle**  >  et définissez le filtre de **type** sur la **stratégie de détection d’anomalie**.
 1. Cliquez sur la stratégie que vous souhaitez délimiter.
 1. Sous **Étendue**, dans la liste déroulante, remplacez la valeur par défaut **Tous les utilisateurs et groupes** par **Utilisateurs et groupes spécifiques**.
 1. Sélectionnez **Inclure** pour spécifier les utilisateurs et les groupes auxquels s’applique cette stratégie. Les utilisateurs ou les groupes qui ne sont pas sélectionnés ici ne seront pas considérés comme une menace et ne généreront pas d’alerte.

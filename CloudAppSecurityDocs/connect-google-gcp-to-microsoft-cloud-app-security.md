@@ -3,12 +3,12 @@ title: Connectez Google Cloud Platform à Cloud App Security
 description: Cet article fournit des informations sur la façon de connecter votre Google Cloud Platform à Cloud App Security à l’aide du connecteur API pour la visibilité et le contrôle de l’utilisation.
 ms.date: 06/28/2020
 ms.topic: how-to
-ms.openlocfilehash: bc000751610829d07e0ebd477a716255fdff2fa1
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: b6776796491d957a15a5246bac97144494e5789d
+ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96313098"
+ms.lasthandoff: 12/13/2020
+ms.locfileid: "97369971"
 ---
 # <a name="connect-google-cloud-platform-to-microsoft-cloud-app-security"></a>Connectez Google Cloud Platform à Microsoft Cloud App Security
 
@@ -16,7 +16,7 @@ ms.locfileid: "96313098"
 
 Cet article fournit des instructions pour connecter Microsoft Cloud App Security à votre compte Google Cloud Platform existant (GCP) à l’aide des API du connecteur. Cette connexion vous donne une visibilité et un contrôle sur l’utilisation de GCP. Pour plus d’informations sur la façon dont Cloud App Security protège les GCP, consultez [protéger GCP](protect-gcp.md).
 
-Nous vous recommandons d’utiliser un projet dédié pour l’intégration et de restreindre l’accès au projet pour maintenir une intégration stable et empêcher les suppressions/modifications du processus d’installation. En outre, si votre instance GCP fait partie d’une instance G suite déjà connectée à Cloud App Security, nous vous recommandons de suivre le **pour une instance GCP qui fait partie d’une procédure d’organisation g suite connectée** lorsque vous ajoutez les détails de connexion GCP.
+Nous vous recommandons d’utiliser un projet dédié pour l’intégration et de restreindre l’accès au projet pour maintenir une intégration stable et empêcher les suppressions/modifications du processus d’installation. En outre, si votre instance GCP fait partie d’une instance de l’espace de travail Google déjà connectée à Cloud App Security, nous vous recommandons de suivre la procédure **pour une instance GCP qui fait partie d’une organisation de l’espace de travail Google connectée** lorsque vous ajoutez les détails de la connexion GCP.
 
 ## <a name="prerequisites"></a>Prérequis
 
@@ -125,7 +125,7 @@ Prenez note de votre **ID d’organisation**. vous en aurez besoin plus tard. Po
 1. Dans la page **connecteurs d’application** , pour fournir les informations d’identification du connecteur AWS, effectuez l’une des opérations suivantes :
 
     > [!NOTE]
-    > Nous vous recommandons de connecter votre instance G suite pour bénéficier d’une gestion et d’une gouvernance des utilisateurs unifiées. Il s’agit de l’option recommandée même si vous n’utilisez pas de produits G suite et que les utilisateurs GCP sont gérés par le biais du système de gestion des utilisateurs G suite.
+    > Nous vous recommandons de connecter votre instance Google Workspace pour bénéficier d’une gestion et d’une gouvernance des utilisateurs unifiées. Il s’agit de l’option recommandée même si vous n’utilisez aucun produit de l’espace de travail Google et que les utilisateurs GCP sont gérés via le système de gestion des utilisateurs de l’espace de travail Google.
 
     **Pour un nouveau connecteur**
 
@@ -210,7 +210,7 @@ Procédez comme suit pour connecter la configuration de sécurité GCP à Cloud 
 1. Sous **IAM & admin**, cliquez sur **comptes de service**.
 1. Cliquez sur **créer un compte de service** pour créer un compte de service dédié.
 1. Entrez un nom de compte, puis cliquez sur **créer**.
-1. Spécifiez **Role** le rôle **Security Center la visionneuse d’administration** , puis cliquez sur **Enregistrer**.
+1. Spécifiez  le rôle **Security Center la visionneuse d’administration** , puis cliquez sur **Enregistrer**.
 
     ![Capture d’écran montrant l’élément de menu Ajouter GCP pour la visionneuse d’administration Security Center](media/connect-gcp-security-configuration-1.png)
 
@@ -223,7 +223,7 @@ Procédez comme suit pour connecter la configuration de sécurité GCP à Cloud 
     1. Basculez vers le niveau de l’organisation.
     1. Cliquez sur **ADD** (Ajouter).
     1. Dans la zone **nouveaux membres** , collez la valeur de l' **e-mail** que vous avez copiée précédemment.
-    1. Spécifiez **Role** le rôle **Security Center la visionneuse d’administration** , puis cliquez sur **Enregistrer**.
+    1. Spécifiez  le rôle **Security Center la visionneuse d’administration** , puis cliquez sur **Enregistrer**.
 
         ![Capture d’écran montrant la boîte de dialogue Ajouter un membre au projet](media/connect-gcp-security-configuration-3.png)
 

@@ -3,12 +3,12 @@ title: Surveiller et protéger des fichiers dans des applications Cloud
 description: Cet article décrit la procédure de configuration d’une stratégie de données pour superviser et contrôler les données ainsi que les fichiers durant l’usage des applications cloud de votre organisation.
 ms.date: 10/7/2019
 ms.topic: how-to
-ms.openlocfilehash: 215606ce154ea47f850b247cbfa60c73a93ac676
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 1fd1ae1d09838a9db5e481f3f34f546996e6a76c
+ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96311959"
+ms.lasthandoff: 12/13/2020
+ms.locfileid: "97369546"
 ---
 # <a name="file-policies"></a>Stratégies de fichier
 
@@ -42,7 +42,7 @@ Voici quelques exemples de stratégies de fichier que vous pouvez créer :
 
 * **Partage avec des domaines externes** - Recevez une alerte quand un fichier est partagé avec des comptes appartenant à des domaines externes spécifiques. Par exemple, les fichiers partagés avec le domaine d’un concurrent. Sélectionnez le domaine externe avec lequel vous voulez limiter le partage.
 
-* **Mettez en quarantaine les fichiers partagés qui n’ont pas été modifiés pendant la dernière période** - Recevez une alerte sur les fichiers partagés que personne n’a modifié dernièrement, pour les mettre en quarantaine ou activer une action automatisée. Excluez tous les fichiers privés qui n’ont pas été modifiés pendant une plage de dates spécifiée. Sur G suite, vous pouvez choisir de mettre en quarantaine ces fichiers à l’aide de la case à cocher « fichier en quarantaine » dans la page de création de la stratégie.
+* **Mettez en quarantaine les fichiers partagés qui n’ont pas été modifiés pendant la dernière période** - Recevez une alerte sur les fichiers partagés que personne n’a modifié dernièrement, pour les mettre en quarantaine ou activer une action automatisée. Excluez tous les fichiers privés qui n’ont pas été modifiés pendant une plage de dates spécifiée. Dans Google Workspace, vous pouvez choisir de mettre en quarantaine ces fichiers à l’aide de la case à cocher « fichier en quarantaine » dans la page de création de la stratégie.
 
 * **Partage avec des utilisateurs non autorisés** - Recevez une alerte quand des fichiers sont partagés avec un groupe d’utilisateurs non autorisés dans votre organisation. Sélectionnez les utilisateurs pour lesquels le partage n’est pas autorisé.
 

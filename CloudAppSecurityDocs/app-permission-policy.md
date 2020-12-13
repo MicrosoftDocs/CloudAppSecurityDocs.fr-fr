@@ -3,12 +3,12 @@ title: Créer des stratégies pour contrôler les applications OAuth dans Cloud 
 description: Cet article fournit des instructions sur la création et l’utilisation de stratégies d’autorisation d’application dans Microsoft Cloud App Security.
 ms.date: 11/27/2019
 ms.topic: how-to
-ms.openlocfilehash: c97fbd615432b2c1579f406bc57427b261124848
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 53b3c8d10bdc11714cffcc4bcd9402ee3a0e0adb
+ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96313829"
+ms.lasthandoff: 12/13/2020
+ms.locfileid: "97369935"
 ---
 # <a name="oauth-app-policies"></a>Stratégies d’application OAuth
 
@@ -16,7 +16,7 @@ ms.locfileid: "96313829"
 
 En plus de l’[investigation existante des applications OAuth](manage-app-permissions.md) connectées à votre environnement, vous pouvez définir des stratégies d’autorisation pour recevoir des notifications automatisées quand une application OAuth répond à certains critères. Par exemple, vous pouvez être alerté automatiquement quand des applications nécessitent un niveau d’autorisation élevé et ont été autorisées par plus de 50 utilisateurs.
 
-Les stratégies d’application OAuth vous permettent de rechercher les autorisations exigées par chaque application ainsi que les utilisateurs qui les ont accordées pour Office 365, G Suite et Salesforce. Vous pouvez également marquer ces autorisations comme approuvées ou interdites. Le fait de les marquer comme interdites révoque les autorisations de chaque application pour chaque utilisateur qui les a accordées.
+Les stratégies d’application OAuth vous permettent d’examiner les autorisations demandées par chaque application et les utilisateurs qui les ont autorisés pour Office 365, Google Workspace et Salesforce. Vous pouvez également marquer ces autorisations comme approuvées ou interdites. Le fait de les marquer comme interdites révoque les autorisations de chaque application pour chaque utilisateur qui les a accordées.
 
 ## <a name="create-a-new-oauth-app-policy"></a>Créer une stratégie d’application OAuth
 

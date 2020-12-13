@@ -3,12 +3,12 @@ title: Importer des groupes d’utilisateurs à partir d’applications connect�
 description: Cet article fournit des instructions sur l’importation de groupes d’utilisateurs issus d’applications connectées vers Cloud App Security.
 ms.date: 11/17/2019
 ms.topic: how-to
-ms.openlocfilehash: d441e28280df81e8f34a73e28e56797b2826f867
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 92b72e4269355743b4a325a1ab4f0a8b22da2dda
+ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315726"
+ms.lasthandoff: 12/13/2020
+ms.locfileid: "97370124"
 ---
 # <a name="importing-user-groups-from-connected-apps"></a>Importation de groupes d’utilisateurs à partir d’applications connectées
 
@@ -22,7 +22,7 @@ Les groupes automatiques sont créés par défaut par Microsoft Cloud App Securi
   - Externe
   - Administrateur Dropbox
   - Administrateur Office 365
-  - Administrateur G Suite
+  - Administrateur d’espace de travail Google
   - Administrateur Box
   - Tous les profils standard et personnalisés Salesforce, par exemple Administrateur système Salesforce. Consultez la liste complète [ici](https://help.salesforce.com/articleView?id=standard_profiles.htm&language=en&type=0).
 

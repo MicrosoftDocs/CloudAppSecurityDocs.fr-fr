@@ -3,12 +3,12 @@ title: Protéger avec le contrôle d’application par accès conditionnel Micro
 description: Cet article fournit des informations sur le fonctionnement du proxy inverse du contrôle d’application par accès conditionnel de Cloud App Security.
 ms.date: 10/14/2020
 ms.topic: conceptual
-ms.openlocfilehash: 04671ddb9225a3fc1330b7b33b1eb3010805a221
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 18caaec466ec7d79102661705037870f70a7b15f
+ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315342"
+ms.lasthandoff: 12/13/2020
+ms.locfileid: "97370005"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Protéger les applications avec le Contrôle d’accès conditionnel aux applications Microsoft Cloud App Security
 
@@ -146,8 +146,8 @@ Alors que les contrôles de session sont créés pour fonctionner avec n’impor
 - Dynamics 365 CRM (version préliminaire)
 - Egnyte
 - Exchange Online
-- G Suite
 - GitHub
+- Espace de travail Google
 - HighQ
 - JIRA/Confluence
 - OneDrive Entreprise

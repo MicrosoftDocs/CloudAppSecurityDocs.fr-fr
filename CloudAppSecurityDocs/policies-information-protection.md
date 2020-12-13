@@ -3,12 +3,12 @@ title: Stratégies de protection des informations
 description: Cette rubrique décrit les étapes permettant de configurer de nombreuses stratégies de protection des informations dans Cloud App Security.
 ms.date: 06/13/2019
 ms.topic: conceptual
-ms.openlocfilehash: daa61b471ea37a7f3bb7c9271357ceebc8185936
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: baa218a101742f1c8e6188fd0771df16ce49cebd
+ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96310735"
+ms.lasthandoff: 12/13/2020
+ms.locfileid: "97370056"
 ---
 # <a name="information-protection-policies"></a>Stratégies de protection des informations
 
@@ -34,7 +34,7 @@ Vous devez disposer d’au moins une application connectée à l’aide de [conn
 
 3. Sous **méthode d’inspection**, sélectionnez **service de classification des données (DC)**, puis sous sélectionner un **type** , sélectionnez le type d’informations sensibles que vous voulez que les contrôleurs de service inspectent.
 
-4. Configurez les actions de **gouvernance** à entreprendre lorsqu’une alerte est déclenchée. Par exemple, vous pouvez créer une action de gouvernance qui s’exécute sur les violations de fichiers détectés dans G suite dans laquelle vous sélectionnez l’option permettant de **Supprimer les utilisateurs externes** et de **Supprimer l’accès public**.
+4. Configurez les actions de **gouvernance** à entreprendre lorsqu’une alerte est déclenchée. Par exemple, vous pouvez créer une action de gouvernance qui s’exécute sur les violations de fichiers détectés dans l’espace de travail Google dans lequel vous sélectionnez l’option permettant de **Supprimer les utilisateurs externes** et de **Supprimer l’accès public**.
 
 5. Créez la stratégie de fichier.
 
@@ -81,7 +81,7 @@ Détectez les fichiers contenant des informations d’identification personnelle
 4. Créez la stratégie de fichier.
 
 > [!NOTE]
-> La possibilité d’appliquer une étiquette de classification directement dans Cloud App Security n’est actuellement prise en charge que pour Box, G suite, SharePoint Online et OneDrive entreprise.
+> La possibilité d’appliquer une étiquette de classification directement dans Cloud App Security n’est actuellement prise en charge que pour Box, Google Workspace, SharePoint Online et OneDrive entreprise.
 
 ## <a name="detect-stale-externally-shared-data"></a>Détecter les données partagées en externe obsolètes
 
@@ -101,7 +101,7 @@ Vous devez disposer d’au moins une application connectée à l’aide de [conn
 
 4. Facultatif : définissez des actions de **gouvernance** à effectuer sur les fichiers lorsqu’une violation est détectée. Les actions de gouvernance disponibles varient d’un service à l’autre. Par exemple :
 
-    - G suite : rendre le fichier privé et notifier le dernier éditeur de fichier
+    - Google Workspace : rendre le fichier privé et notifier le dernier éditeur de fichier
 
     - Box : notifier le dernier éditeur de fichier
 
@@ -239,7 +239,7 @@ Détectez les fichiers qui sont partagés dans les applications de stockage clou
 4. Créer la stratégie de fichier
 
 > [!NOTE]
-> Actuellement, l' **étiquette de classification appliquer** est uniquement prise en charge pour Box, G suite, SharePoint Online et OneDrive entreprise.
+> Actuellement, l' **étiquette de classification appliquer** est uniquement prise en charge pour Box, Google Workspace, SharePoint Online et OneDrive entreprise.
 
 ## <a name="block-downloads-for-external-users-in-real-time"></a>Bloquer les téléchargements pour les utilisateurs externes en temps réel
 

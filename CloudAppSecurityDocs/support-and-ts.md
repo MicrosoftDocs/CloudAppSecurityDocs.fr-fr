@@ -3,12 +3,12 @@ title: Informations de support et de résolution des problèmes pour Cloud App S
 description: Cet article décrit les options de support et de résolution des problèmes disponibles pour Microsoft Cloud App Security.
 ms.date: 11/14/2019
 ms.topic: conceptual
-ms.openlocfilehash: 5a7e3a184b99dcc3c1e1d763566c73cf3d9d700f
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: fb4791559129a8a95ff998954aafbea72367886c
+ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315376"
+ms.lasthandoff: 12/13/2020
+ms.locfileid: "97370073"
 ---
 # <a name="support-and-troubleshooting-microsoft-cloud-app-security"></a>Support et résolution des problèmes pour Microsoft Cloud App Security
 
@@ -29,7 +29,7 @@ En tant qu’administrateur, vous pouvez utiliser l’option **Aide + support** 
 Sélectionnez **Demande de support** pour créer une demande de support qui s’ouvre sur l’onglet **Informations de base** de la page *Aide + support* Azure en suivant le protocole ci-dessous.
 
 >[!NOTE]
-> Pour un support technique sur des produits tiers qui fonctionnent avec Microsoft Cloud App Security (par exemple, Box, Salesforce et G Suite), contactez d’abord le fournisseur du produit.
+> Pour obtenir un support technique sur les produits tiers qui fonctionnent avec Microsoft Cloud App Security (par exemple, Box, Salesforce et Google Workspace), contactez d’abord le fournisseur de ce produit.
 
 ### <a name="create-an-online-support-request"></a>Créer une demande de support en ligne
 

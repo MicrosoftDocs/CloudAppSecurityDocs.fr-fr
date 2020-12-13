@@ -3,12 +3,12 @@ title: Connecter des applications pour bénéficier d’une visibilité et d’u
 description: Cet article décrit le processus de connexion d’applications à des applications dans le cloud de votre organisation avec des connecteurs d’API.
 ms.date: 07/14/2020
 ms.topic: how-to
-ms.openlocfilehash: 3750fe01f774dd81ada1ebdb6b60c6bf6dfbb370
-ms.sourcegitcommit: 1bea874c7531c1926b6e46b96eac00ceeeeb69f2
+ms.openlocfilehash: 1bbdf2933bc2495ba397e3d78fb1ca1efcd3ffff
+ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96749823"
+ms.lasthandoff: 12/13/2020
+ms.locfileid: "97369529"
 ---
 # <a name="connect-apps"></a>Connecter des applications
 
@@ -55,13 +55,13 @@ Selon l’application à laquelle vous vous connectez, la connexion d’API acti
 
 Le tableau suivant répertorie, par application cloud, les fonctionnalités prises en charge avec les connecteurs d’applications :
 
-| | AWS | Box | Dropbox | GCP | G Suite | Office 365 | Okta | ServiceNow | Salesforce | Webex | Workday |
+| | AWS | Box | Dropbox | GCP | Espace de travail Google | Office 365 | Okta | ServiceNow | Salesforce | Webex | Workday |
 |-|-|-|-|-|-|-|-|-|-|-|-|
-| **Énumérer les comptes** | ✔ | ✔ | ✔ | Connexion de l’objet G suite | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-| **Liste des groupes** | ✔ | ✔ | ✔ | Connexion de l’objet G suite | ✔ | ✔ | ✔ | ✔ | ✔ | | Non prise en charge par le fournisseur |
-| **Liste des privilèges** | | ✔ | ✔ | Connexion de l’objet G suite | ✔ | ✔ | Non prise en charge par le fournisseur | ✔ | ✔ | ✔ | Non prise en charge par le fournisseur |
-| **Gouvernance des utilisateurs** | | ✔ | Bientôt disponible | Connexion de l’objet G suite | ✔ | ✔ | | Bientôt disponible | ✔ | Bientôt disponible | Non prise en charge par le fournisseur |
-| **Activité de connexion** | ✔ | ✔ | ✔ | Connexion de l’objet G suite | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| **Énumérer les comptes** | ✔ | ✔ | ✔ | Sujet de la connexion à l’espace de travail Google | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| **Liste des groupes** | ✔ | ✔ | ✔ | Sujet de la connexion à l’espace de travail Google | ✔ | ✔ | ✔ | ✔ | ✔ | | Non prise en charge par le fournisseur |
+| **Liste des privilèges** | | ✔ | ✔ | Sujet de la connexion à l’espace de travail Google | ✔ | ✔ | Non prise en charge par le fournisseur | ✔ | ✔ | ✔ | Non prise en charge par le fournisseur |
+| **Gouvernance des utilisateurs** | | ✔ | Bientôt disponible | Sujet de la connexion à l’espace de travail Google | ✔ | ✔ | | Bientôt disponible | ✔ | Bientôt disponible | Non prise en charge par le fournisseur |
+| **Activité de connexion** | ✔ | ✔ | ✔ | Sujet de la connexion à l’espace de travail Google | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 | **Activité de l’utilisateur** | Non applicable | ✔ | ✔ | ✔ | ✔ - nécessite Google Business ou Entreprises | ✔ | ✔ | Partiel | Prise en charge avec Salesforce Shield | ✔ | ✔ |
 | **Activité d’administration** | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | Partiel | ✔ | ✔ | Non prise en charge par le fournisseur |
 | **DLP-analyse périodique** | | ✔ | ✔ | Non applicable | ✔ | ✔ | Non applicable | ✔ | ✔ | ✔ | Non prise en charge par le fournisseur |
@@ -87,11 +87,11 @@ Pour utiliser des connecteurs d’applications, vous devez vérifier que vous av
 |-----|--------------|------|
 | Azure | | Administrateur général |
 | AWS | | Utilisateur récemment créé |
-| Box | Enterprise | Il est fortement recommandé de vous connecter à Box en tant qu’administrateur. Si vous vous connectez en tant que coadministrateur, vous obtiendrez uniquement une visibilité partielle des données. Si vous vous connectez en tant que coadministrateur, sélectionnez toutes les autorisations. |
+| Box | Entreprise | Il est fortement recommandé de vous connecter à Box en tant qu’administrateur. Si vous vous connectez en tant que coadministrateur, vous obtiendrez uniquement une visibilité partielle des données. Si vous vous connectez en tant que coadministrateur, sélectionnez toutes les autorisations. |
 | Dropbox | Business/Entreprises | Administrateur |
 | GitHub | GitHub Enterprise Cloud | Propriétaire |
 | GCP | | Consultez les [conditions préalables Connect GCP](connect-google-gcp-to-microsoft-cloud-app-security.md#prerequisites) |
-| G Suite | Compte G Suite Business ou Entreprise<br /><br />G Suite Enterprise (au minimum) | Super administrateur |
+| Espace de travail Google | Google Workspace Business ou Enterprise préféré<br /><br />Google Workspace Enterprise (au minimum) | Super administrateur |
 | Office 365 | | Administrateur général |
 | Okta | Enterprise (pas la version d’essai) | Administrateur |
 | Salesforce | | Administrateur |

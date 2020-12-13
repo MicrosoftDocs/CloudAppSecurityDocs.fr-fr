@@ -3,12 +3,12 @@ title: Comment Cloud App Security aide à protéger votre environnement Google C
 description: Cet article fournit des informations sur les avantages de la connexion de votre application Google Cloud Platform à Cloud App Security à l’aide du connecteur API pour la visibilité et le contrôle de l’utilisation.
 ms.date: 09/15/2020
 ms.topic: article
-ms.openlocfilehash: 461d6c0c883c84892a049de7193dd5f28e1a0a99
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 0c1a34171fab84b845e4fb996d4c9dc18cb0d92c
+ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315257"
+ms.lasthandoff: 12/13/2020
+ms.locfileid: "97370017"
 ---
 # <a name="how-cloud-app-security-helps-protect-your-google-cloud-platform-gcp-environment"></a>Comment Cloud App Security contribue à la protection de votre environnement Google Cloud Platform (GCP)
 
@@ -48,7 +48,7 @@ Outre la surveillance des menaces potentielles, vous pouvez appliquer et automat
 
 | Type | Action |
 | ---- | ---- |
-| Gouvernance des utilisateurs | -Demander à l’utilisateur de réinitialiser le mot de passe pour Google (nécessite une instance de G suite liée connectée)<br />-Suspend User (nécessite une instance de G suite liée connectée)<br />-Notifier l’utilisateur en cas d’alerte (via Azure AD)<br />-Exiger que l’utilisateur se connecte à nouveau (via Azure AD)<br />-Suspendre l’utilisateur (via Azure AD) |
+| Gouvernance des utilisateurs | -Demander à l’utilisateur de réinitialiser le mot de passe pour Google (nécessite une instance de l’espace de travail Google lié connecté)<br />-Suspend User (nécessite une instance de l’espace de travail Google lié connecté)<br />-Notifier l’utilisateur en cas d’alerte (via Azure AD)<br />-Exiger que l’utilisateur se connecte à nouveau (via Azure AD)<br />-Suspendre l’utilisateur (via Azure AD) |
 
 Pour plus d’informations sur la correction des menaces à partir des applications, consultez la rubrique relative aux [applications connectées](governance-actions.md).
 

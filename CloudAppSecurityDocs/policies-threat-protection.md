@@ -3,12 +3,12 @@ title: Stratégies de protection contre les menaces
 description: Cette rubrique décrit les étapes permettant de configurer de nombreuses stratégies de protection contre les menaces dans Cloud App Security.
 ms.date: 11/08/2020
 ms.topic: conceptual
-ms.openlocfilehash: 0bb2b12a528569a8a444a2273ed34154b996804d
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 9c394fae7ccb76e54a8b188129eaca0c3bff109a
+ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315325"
+ms.lasthandoff: 12/13/2020
+ms.locfileid: "97369920"
 ---
 # <a name="threat-protection-policies"></a>Stratégies de protection contre les menaces
 
@@ -173,7 +173,7 @@ Vous devez disposer d’au moins une application connectée à l’aide de [conn
 2. Il est possible de configurer l' **étendue** de la détection et de personnaliser les actions de gouvernance à entreprendre lorsqu’une alerte est déclenchée. Pour plus d’informations sur la façon dont Cloud App Security identifie le ransomware, consultez [protection de votre organisation contre les ransomware](use-case-ransomware.md).
 
 > [!NOTE]
-> Cela s’applique à Office 365, G suite, Box et Dropbox.
+> Cela s’applique à Office 365, Google Workspace, Box et Dropbox.
 
 ## <a name="detect-malware-in-the-cloud"></a>Détecter les logiciels malveillants dans le Cloud
 

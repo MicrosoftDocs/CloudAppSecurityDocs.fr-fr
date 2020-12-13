@@ -3,12 +3,12 @@ title: Surveiller les alertes déclenchées dans Cloud App Security
 description: Cet article fournit une liste et une description de toutes les alertes.
 ms.date: 12/10/2018
 ms.topic: how-to
-ms.openlocfilehash: f6346180c3a45fb1c7ae2e885d90732f4a269be3
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 23a1ea16cb0f733d82b38d0191fed929fbc515d4
+ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96311194"
+ms.lasthandoff: 12/13/2020
+ms.locfileid: "97369954"
 ---
 # <a name="monitor-alerts-in-cloud-app-security"></a>Surveiller les alertes dans Cloud App Security
 
@@ -74,7 +74,7 @@ Les types d’alertes suivants sont affichés.
 |----|----|----|
 |Nouvel emplacement|ALERT_GEOLOCATION_NEW_COUNTRY|Un nouvel emplacement a été détecté depuis le début de l’analyse (jusqu’à 6 mois). Cette alerte ne s’affiche qu’une seule fois pour chaque pays/région de l’ensemble de votre organisation. |
 |Nouvel utilisateur administrateur|ALERT_ADMIN_USER|Un nouvel administrateur a été détecté pour une application spécifique. Il se peut que cette personne soit l’administrateur d’une application et maintenant l’administrateur d’une autre application. Cette alerte concernant le type d’administrateur spécifique, elle s’affiche chaque fois que le type de l’administrateur est modifié. Si un utilisateur perd, puis récupère des privilèges d’administrateur, cette alerte s’affiche.|
-|Compte inactif|ALERT_ZOMBIE_USER|Si un utilisateur est inactif pendant 60 jours par application, par exemple si une personne est active dans Box, mais n’a pas utilisé G Suite pendant 60 jours, l’utilisateur est considéré comme inactif dans G Suite. Une balise est ajoutée à ces utilisateurs pour que vous puissiez rechercher les comptes inactifs.|
+|Compte inactif|ALERT_ZOMBIE_USER|Si un utilisateur est inactif pendant 60 jours par application, par exemple, si une personne est active dans Box, mais n’a pas touché l’espace de travail Google pendant 60 jours, l’utilisateur est considéré comme inactif dans Google Workspace. Une balise est ajoutée à ces utilisateurs pour que vous puissiez rechercher les comptes inactifs.|
 |Emplacement de l’administrateur inattendu|ALERT_NEW_ADMIN_LOCATION|Un nouvel emplacement a été détecté pour les administrateurs depuis le début de l’analyse (jusqu’à 6 mois). Cette alerte ne s’affiche qu’une seule fois pour chaque pays/région de l’administrateur de votre organisation. |
 |Compte compromis|ALERT_COMPROMISED_ACCOUNT|Si une violation s’est produite dans une application et que la liste des comptes affectés est publiée, Cloud App Security télécharge la liste et la compare à votre liste d’utilisateurs. La liste d’utilisateurs comprend notamment les utilisateurs internes, les utilisateurs externes et les comptes personnels. |
 

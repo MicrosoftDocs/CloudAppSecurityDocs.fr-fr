@@ -3,12 +3,12 @@ title: Intégrer Azure Information Protection à Cloud App Security
 description: Cet article fournit des informations sur la façon de tirer parti de vos balises Azure Information Protection dans Cloud App Security afin de renforcer le contrôle de l’utilisation des applications cloud de votre organisation.
 ms.date: 12/09/2019
 ms.topic: how-to
-ms.openlocfilehash: 864111ba6d1877c24a70f0de83aa66104fb8c1f4
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 32d157877fa71c12c4ea515316b160cbcfe59396
+ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96313710"
+ms.lasthandoff: 12/13/2020
+ms.locfileid: "97369869"
 ---
 # <a name="azure-information-protection-integration"></a>Intégration d’Azure Information Protection
 
@@ -44,7 +44,7 @@ Cloud App Security prend actuellement en charge l’application d’étiquettes 
   > [!NOTE]
   > Pour PDF, vous devez utiliser des étiquettes unifiées.
 
-Cette fonctionnalité est actuellement disponible pour les fichiers stockés dans Box, G Suite, SharePoint Online et OneDrive Entreprise. D’autres applications cloud seront prises en charge dans les prochaines versions.
+Cette fonctionnalité est actuellement disponible pour les fichiers stockés dans Box, Google Workspace, SharePoint Online et OneDrive entreprise. D’autres applications cloud seront prises en charge dans les prochaines versions.
 
 Les fichiers qui ont été étiquetés avec une protection en dehors de Cloud App Security ne peuvent pas être modifiés par Cloud App Security. Toutefois, vous pouvez analyser ces fichiers en accordant des autorisations pour [inspecter le contenu des fichiers protégés](content-inspection.md#content-inspection-for-protected-files).
 
