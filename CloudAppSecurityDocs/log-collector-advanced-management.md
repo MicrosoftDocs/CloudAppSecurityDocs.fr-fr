@@ -1,14 +1,14 @@
 ---
 title: Gestion avancée des collecteurs de journaux
 description: Cet article fournit des informations sur la façon dont les tâches de gestion avancées pour Cloud App Security Cloud Discovery des collecteurs de journaux.
-ms.date: 11/25/2020
+ms.date: 12/14/2020
 ms.topic: how-to
-ms.openlocfilehash: f9edb4d76f105293574551ba1ef9c7d2ba7d1838
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: dd8ab619f7284bde404bbe90a44d346595e2b99a
+ms.sourcegitcommit: d3f243593f86e0f13a1fbc67702a99c23af5a45a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315155"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97386558"
 ---
 # <a name="advanced-log-collector-management"></a>Gestion avancée des collecteurs de journaux
 
@@ -149,7 +149,7 @@ collector_config abcd1234abcd1234abcd1234abcd1234 ${CONSOLE} ${COLLECTOR}
 
 Le collecteur de journaux est désormais en mesure de communiquer avec Cloud App Security. Après lui avoir envoyé des données, l’état passe de **Sain** à **Connecté** dans le portail Cloud App Security.
 
-![Statut](media/log-collector-advanced-tasks/docker-5.png "Statut")
+![État](media/log-collector-advanced-tasks/docker-5.png "Statut")
 
 >[!NOTE]
 > Si vous devez mettre à jour la configuration du collecteur de journaux, pour ajouter ou supprimer une source de données, par exemple, vous devez normalement **supprimer** le conteneur et effectuer de nouveau les étapes précédentes. Pour éviter cela, vous pouvez réexécuter l’outil *collector_config* avec le nouveau jeton d’API généré dans le portail Cloud App Security.
@@ -263,7 +263,7 @@ Procédez comme suit pour télécharger l’image du collecteur de journaux à l
 >   - https://download.docker.com/linux/centos/
 >   - https://download.docker.com/linux/rhel/
 >
-> Après le téléchargement, utilisez le [Guide d’installation hors connexion](https://docs.docker.com/datacenter/dtr/2.0/install/install-dtr-offline/#download-the-offline-package) pour installer le système d’exploitation.
+> Après le téléchargement, utilisez le [Guide d’installation hors connexion](https://docs.docker.com/engine/install/binaries/) pour installer le système d’exploitation.
 
 Démarrez le processus en [exportant l’image du collecteur de journaux](#export-the-log-collector-image-from-your-docker-hub) , puis [importez l’image sur votre ordinateur hôte de destination](#import-and-load-the-log-collector-image-to-your-destination-host).
 

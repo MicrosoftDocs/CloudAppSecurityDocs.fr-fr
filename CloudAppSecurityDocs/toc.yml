@@ -21,7 +21,7 @@
   items:
     - name: Mise en route
       href: getting-started-with-cloud-app-security.md
-    - name: meilleures pratiques recommandées.
+    - name: Bonnes pratiques
       href: best-practices.md
 - name: Tutoriels
   items:
@@ -73,8 +73,8 @@
           href: protect-github.md
         - name: Protéger GCP
           href: protect-gcp.md
-        - name: Protéger G Suite
-          href: protect-gsuite.md
+        - name: Protéger l’espace de travail Google
+          href: protect-google-workspace.md
         - name: "Protéger Office\_365"
           href: protect-office-365.md
         - name: Protéger Okta
@@ -165,8 +165,8 @@
           href: connect-dropbox-to-microsoft-cloud-app-security.md
         - name: Connecter GitHub
           href: connect-github-ec-to-microsoft-cloud-app-security.md
-        - name: Connecter G Suite
-          href: connect-google-apps-to-microsoft-cloud-app-security.md
+        - name: Connecter l’espace de travail Google
+          href: connect-google-workspace-to-microsoft-cloud-app-security.md
         - name: Connecter GCP
           href: connect-google-gcp-to-microsoft-cloud-app-security.md
         - name: "Connecter Office\_365"
