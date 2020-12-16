@@ -3,12 +3,12 @@ title: Gérer la sécurité des plateformes cloud utilisées par votre organisat
 description: Ce tutoriel explique comment utiliser Microsoft Cloud App Security pour sécuriser vos plateformes cloud Azure, AWS et GCP.
 ms.date: 09/17/2020
 ms.topic: tutorial
-ms.openlocfilehash: 7711285b895d63e47e770a9079ef50bf8a091808
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: dfdff2b5b124ee9ea9d5fe4822196fa42cbe9f0a
+ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315869"
+ms.lasthandoff: 12/13/2020
+ms.locfileid: "97370158"
 ---
 # <a name="tutorial-manage-cloud-platform-security"></a>Tutoriel : Gérer la sécurité des plateformes cloud
 
@@ -22,7 +22,7 @@ Le travail à distance conduit souvent à une utilisation intensive d’applicat
 
 La mise en place d’outils de sécurité appropriés pour protéger les ressources qui n’ont peut-être pas été correctement protégées est essentielle. Les organisations doivent bénéficier d’une visibilité sur la posture de leurs ressources cloud, disposer de fonctionnalités de découverte pour connaître l’utilisation réelle de chaque plateforme, pouvoir superviser les activités suspectes ainsi qu’évaluer et examiner les configurations et états de conformité, et être en mesure de déployer des mécanismes de protection en temps réel.
 
-La gestion de la posture de sécurité cloud (CSPM, Cloud Security Posture Management) s’étend au-delà de la posture de sécurité IaaS et PaaS pour couvrir également les configurations SaaS. Citons par exemple un dépôt GitHub avec un niveau d’accès public ou des applications OAuth ayant accès à des applications SaaS comme Office 365, G Suite ou Sales Force. Le CSPM SaaS est un nouveau domaine en pleine croissance de CSPM, qui est une extension native du produit Cloud App Security.
+La gestion de la posture de sécurité cloud (CSPM, Cloud Security Posture Management) s’étend au-delà de la posture de sécurité IaaS et PaaS pour couvrir également les configurations SaaS. Citons par exemple un référentiel GitHub avec un niveau d’accès public ou des applications OAuth ayant accès à des applications SaaS comme Office 365, Google Workspace ou Sales Force. Le CSPM SaaS est un nouveau domaine en pleine croissance de CSPM, qui est une extension native du produit Cloud App Security.
 
 ## <a name="protecting-multiple-clouds-from-a-single-management-portal"></a>Protection de plusieurs clouds à partir d’un seul portail de gestion
 
