@@ -1,14 +1,14 @@
 ---
 title: Actions de gouvernance pour contrôler les applications connectées
 description: Cet article liste et décrit toutes les actions de gouvernance qui peuvent être effectuées dans Cloud App Security ainsi que les messages de journal qui les suivent.
-ms.date: 06/28/2020
+ms.date: 12/16/2020
 ms.topic: how-to
-ms.openlocfilehash: dfb0a829caf2e31ecd556c351fad8a5b95f19ae2
-ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
+ms.openlocfilehash: 0742759a3a4f8c220123040b21f81886b9ef3276
+ms.sourcegitcommit: bc154649585ca95590e82423aa411ab6d922bf83
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2020
-ms.locfileid: "97369563"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97582858"
 ---
 # <a name="governing-connected-apps"></a>Gouvernance des applications connectées
 
@@ -40,7 +40,7 @@ Vous pouvez effectuer les actions de gouvernance suivantes sur un fichier ou un 
     - **Supprimer une étiquette** – Capacité à supprimer une étiquette de classification Azure Information Protection.
   - **Partage de modifications**
 
-    - **Supprimer le partage public** : autoriser l’accès uniquement aux collaborateurs nommés, par exemple : supprimer l’accès public pour l’espace de travail Google et supprimer le lien partagé direct pour Box.
+    - **Supprimer le partage public** : autoriser l’accès uniquement aux collaborateurs nommés, par exemple : *Supprimer l’accès public pour l'* espace de travail Google et *supprimer le lien partagé direct* pour Box et Dropbox.
 
     - **Supprimer les utilisateurs externes** : autorisez l’accès uniquement aux utilisateurs de l’entreprise.
 
@@ -138,11 +138,11 @@ Pour plus d’informations sur la façon dont les actions de gouvernance sont tr
 |Stratégie de fichiers et fichiers|Fichier | Appliquer l’étiquette de classification|Applique automatiquement une étiquette de classification Azure Information Protection à des fichiers, en fonction des conditions définies dans la stratégie.| Box, un lecteur, Google Workspace, SharePoint |
 |Stratégie de fichiers et fichiers|Fichier | Supprimer l’étiquette de classement | Supprime automatiquement une étiquette de classification Azure Information Protection pour des fichiers, en fonction des conditions définies dans la stratégie. Seules sont supprimables les étiquettes qui ne comportent pas de protection et ont été appliquées dans Cloud App Security, et non celles qui ont été appliquées directement dans Information Protection.| Box, un lecteur, Google Workspace, SharePoint |
 |Stratégie de fichier, Stratégie d’activité, Alertes | Application |Demander aux utilisateurs de se reconnecter| Vous pouvez demander aux utilisateurs de se reconnecter à toutes les applications Office 365 et Azure AD pour corriger de manière rapide et efficace les alertes d’activité suspecte de l’utilisateur et les comptes corrompus. La nouvelle gouvernance se trouve dans les paramètres de stratégie et les pages d’alerte, à côté de l’option Interrompre la synchronisation de l’utilisateur. | Office 365, Azure AD |
-|Fichiers |Fichier |Restaurer des fichiers mis en quarantaine utilisateur |Restaure un utilisateur mis en quarantaine. |Box |
-|Fichiers |Fichier | M’auto-attribuer des permissions de lecture| Vous accorde des permissions de lecture pour le fichier afin de vous permettre d’y accéder et de déterminer s’il y a eu violation ou non.| Espace de travail Google|
-|Fichiers |Fichier | Autoriser les éditeurs à partager | Dans Google Drive, l’autorisation de l’éditeur par défaut d’un fichier autorise également le partage. Cette action de gouvernance est l’opposé de la capacité de l’éditeur à partager et permet à l’éditeur de partager le fichier. | Espace de travail Google|
-|Fichiers |Fichier | Protéger | Protégez un fichier avec Azure Information Protection en appliquant un modèle d’organisation. | Office 365 (SharePoint et OneDrive) |
-|Fichiers |Fichier | Révoquer les permissions de lecture pour moi-même | Révoque les permissions de lecture pour le fichier pour vous-même. Cette option est utile lorsque vous vous êtes attribué des permissions pour examiner si un fichier comprend une violation ou non.| Espace de travail Google|
+|Files |Fichier |Restaurer des fichiers mis en quarantaine utilisateur |Restaure un utilisateur mis en quarantaine. |Box |
+|Files |Fichier | M’auto-attribuer des permissions de lecture| Vous accorde des permissions de lecture pour le fichier afin de vous permettre d’y accéder et de déterminer s’il y a eu violation ou non.| Espace de travail Google|
+|Files |Fichier | Autoriser les éditeurs à partager | Dans Google Drive, l’autorisation de l’éditeur par défaut d’un fichier autorise également le partage. Cette action de gouvernance est l’opposé de la capacité de l’éditeur à partager et permet à l’éditeur de partager le fichier. | Espace de travail Google|
+|Files |Fichier | Protéger | Protégez un fichier avec Azure Information Protection en appliquant un modèle d’organisation. | Office 365 (SharePoint et OneDrive) |
+|Files |Fichier | Révoquer les permissions de lecture pour moi-même | Révoque les permissions de lecture pour le fichier pour vous-même. Cette option est utile lorsque vous vous êtes attribué des permissions pour examiner si un fichier comprend une violation ou non.| Espace de travail Google|
 |Fichiers, Stratégie de fichier|Fichier | Transférer la possession de fichier | Modifie le propriétaire (vous choisissez un propriétaire spécifique dans la stratégie). | Espace de travail Google|
 |Fichiers, Stratégie de fichier|Fichier | Réduire l’accès public|Cette action vous permet de définir les fichiers disponibles publiquement comme étant accessibles uniquement avec un lien partagé.| Espace de travail Google|
 |Fichiers, Stratégie de fichier|Fichier | Supprimer un collaborateur | Supprime un collaborateur donné d’un fichier. | Google Workspace, Box, un lecteur, SharePoint|
@@ -150,10 +150,10 @@ Pour plus d’informations sur la façon dont les actions de gouvernance sont tr
 |Fichiers, Stratégie de fichier|Fichier | Supprimer les utilisateurs externes | Supprime tous les collaborateurs externes - configurés comme internes dans les paramètres en dehors des domaines. |Google Workspace, Box, un lecteur, SharePoint|
 |Fichiers, Stratégie de fichier|Fichier |Attribuer une permission de lecture au domaine|Accorde une permission de lecture pour le fichier sur le domaine spécifié pour tout votre domaine ou un domaine spécifique. Cet accès est utile si vous souhaitez supprimer l’accès public après l’octroi d’un accès au domaine des personnes qui doivent y travailler.| Espace de travail Google|
 |Fichiers, Stratégie de fichier|Fichier | Mettre en quarantaine utilisateur | Supprime toutes les autorisations du fichier et déplace le fichier vers un dossier de quarantaine sur le lecteur racine de l’utilisateur. Cette action permet à l’utilisateur d’examiner le fichier et de le déplacer. S’il est déplacé manuellement, le partage de fichiers n’est pas restauré. | Box, One Drive, SharePoint |
-|Fichiers|Fichier|Faire expirer le lien partagé| Définit la date d’expiration d’un lien partagé, après laquelle il ne sera plus actif.|Box|
-|Fichiers|Fichier|Modifier le niveau d’accès du lien de partage|Modifie le niveau d’accès du lien partagé (entreprise uniquement, collaborateurs uniquement ou public).| Box|
+|Files|Fichier|Faire expirer le lien partagé| Définit la date d’expiration d’un lien partagé, après laquelle il ne sera plus actif.|Box|
+|Files|Fichier|Modifier le niveau d’accès du lien de partage|Modifie le niveau d’accès du lien partagé (entreprise uniquement, collaborateurs uniquement ou public).| Box|
 |Fichiers, Stratégie de fichier|Fichier | Supprimer l’accès public| Si vous êtes propriétaire d’un fichier auquel vous autorisez un accès public, il devient accessible uniquement aux autres personnes disposant d’un droit d’accès au fichier (selon le genre d’accès au fichier). | Espace de travail Google|
-|Fichiers, Stratégie de fichier|Fichier |Supprimer le lien partagé direct| Supprime un lien créé pour le fichier qui est public, mais partagé uniquement avec des personnes spécifiques.|Box |
+|Fichiers, Stratégie de fichier|Fichier |Supprimer le lien partagé direct| Supprime un lien créé pour le fichier qui est public, mais partagé uniquement avec des personnes spécifiques.|Box, Dropbox |
 |Paramètres> Paramètres de Cloud Discovery| Cloud Discovery | Recalculer les scores Cloud Discovery |Recalcule les scores dans le catalogue d’applications cloud après une modification d’une mesure de score.| Découverte |
 |Paramètres> Paramètres de Cloud Discovery > Gérer les vues de données| Cloud Discovery | Créer une vue de données de filtre Cloud Discovery|Crée une nouvelle vue de données pour une vue plus détaillée des résultats de découverte. Par exemple, des plages d’adresses IP spécifiques. | Découverte |
 |Paramètres> Paramètres de Cloud Discovery > Supprimer les données| Cloud Discovery | Supprimer les données Cloud Discovery |Supprime toutes les données collectées à partir de sources de découverte.| Découverte |
