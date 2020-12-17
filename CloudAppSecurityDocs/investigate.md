@@ -3,12 +3,12 @@ title: Examen des risques liés aux applications cloud et des activités suspect
 description: Cet article décrit le processus d’investigation des alertes, des problèmes et des activités suspectes à l’aide de Cloud App Security.
 ms.date: 11/18/2019
 ms.topic: how-to
-ms.openlocfilehash: 8227ac61b16bcac8211e3714f19569e3924db7c6
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 16e08a919af058ba3ee38f35fdc4af9a5e85aa8e
+ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315121"
+ms.lasthandoff: 12/13/2020
+ms.locfileid: "97370039"
 ---
 # <a name="investigate"></a>Étudier
 
@@ -31,7 +31,7 @@ Les tableaux de bord suivants sont disponibles pour vous aider à étudier les a
 *(le cas échéant)*|Exploration des fichiers au niveau du détail ; possibilité de filtrer en fonction du propriétaire, du niveau de partage, etc. Actions de gouvernance (par exemple, mise en quarantaine).|
 |Tableau de bord de l’application : comptes|Vue d’ensemble de tous les comptes/utilisateurs liés à l’application.|
 |Tableau de bord de l’application : applications OAuth  
-*(le cas échéant)*|Exploration au niveau du détail des applications OAuth actuellement déployées (par exemple, G Suite) et définition de stratégies.|
+*(le cas échéant)*|Exploration au niveau du détail des applications OAuth actuellement déployées (par exemple Google Workspace) et définition de stratégies|
 |Tableau de bord de l’application : journal d’activité|Exploration au niveau du détail de l’ensemble de l’activité de l’application ; possibilité de filtrer en fonction des utilisateurs, de l’adresse IP, etc.|
 |Tableau de bord de l’application : alertes|Exploration au niveau du détail de l’ensemble des alertes de l’application ; possibilité de filtrer en fonction de l’état, de la catégorie, de la gravité, etc.|
 |Tableau de bord de l’application : comptes avec privilèges spéciaux  

@@ -3,12 +3,12 @@ title: Meilleures pratiques pour la protection de votre organisation
 description: Cet article fournit un ensemble de meilleures pratiques pour la protection de votre organisation.
 ms.date: 10/24/2019
 ms.topic: quickstart
-ms.openlocfilehash: b0639bb79c9aed35086c3e8dea084f1e1c823628
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: eaaf98b47e4cadfdbd784548454c79710b822da3
+ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96313642"
+ms.lasthandoff: 12/13/2020
+ms.locfileid: "97369835"
 ---
 # <a name="cloud-app-security-best-practices"></a>Meilleures pratiques pour Cloud App Security
 
@@ -94,7 +94,7 @@ Cloud App Security vous offre la possibilité d’analyser et de surveiller les 
 ---
 
 **Meilleure pratique** : Connecter des applications tierces  
-**Détail** : La connexion d’applications tierces à Cloud App Security vous offre des insights améliorés sur les activités des utilisateurs, la détection des menaces et les fonctionnalités de gouvernance. Les API d’applications tierces suivantes sont prises en charge : [Amazon Web Services (AWS)](connect-aws-to-microsoft-cloud-app-security.md), [Box](connect-box-to-microsoft-cloud-app-security.md), [Dropbox](connect-dropbox-to-microsoft-cloud-app-security.md), [G Suite](connect-google-apps-to-microsoft-cloud-app-security.md), [Okta](connect-okta-to-microsoft-cloud-app-security.md), [Salesforce](connect-salesforce-to-microsoft-cloud-app-security.md), [ServiceNow](connect-servicenow-to-microsoft-cloud-app-security.md), [WebEx](connect-webex-to-microsoft-cloud-app-security.md) et [Workday](connect-workday-to-microsoft-cloud-app-security.md).  
+**Détail** : La connexion d’applications tierces à Cloud App Security vous offre des insights améliorés sur les activités des utilisateurs, la détection des menaces et les fonctionnalités de gouvernance. Les API d’applications tierces suivantes sont prises en charge : [Amazon Web Services (AWS)](connect-aws-to-microsoft-cloud-app-security.md), [Box](connect-box-to-microsoft-cloud-app-security.md), [Dropbox](connect-dropbox-to-microsoft-cloud-app-security.md), [Google Workspace](connect-google-workspace-to-microsoft-cloud-app-security.md), [Okta](connect-okta-to-microsoft-cloud-app-security.md), [Salesforce](connect-salesforce-to-microsoft-cloud-app-security.md), [ServiceNow](connect-servicenow-to-microsoft-cloud-app-security.md), [Webex](connect-webex-to-microsoft-cloud-app-security.md) et [Workday](connect-workday-to-microsoft-cloud-app-security.md).  
 **Pour plus d’informations** :
 
 * [Connecter des applications](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
