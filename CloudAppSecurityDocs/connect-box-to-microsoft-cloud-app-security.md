@@ -3,12 +3,12 @@ title: Connecter Box à Cloud App Security
 description: Cet article vous explique comment connecter votre application Box à Cloud App Security à l’aide du connecteur d’API, afin de bénéficier de plus de contrôle et de visibilité lors de l’utilisation.
 ms.date: 12/10/2018
 ms.topic: how-to
-ms.openlocfilehash: 775653ae7beacbba69fb55fd6934bae44d7e31f5
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 9de9d9cfdaefc80beb8d5f9bcf4059cb39fe9178
+ms.sourcegitcommit: 16a65ab2c8ca778d0b3cfa97b847af4c812363b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96312996"
+ms.lasthandoff: 01/03/2021
+ms.locfileid: "97855655"
 ---
 # <a name="connect-box-to-microsoft-cloud-app-security"></a>Connecter Box à Microsoft Cloud App Security
 
@@ -24,7 +24,7 @@ Cet article fournit des instructions pour connecter Microsoft Cloud App Security
 1. Si vous restreignez l’accès aux autorisations des applications, suivez cette étape. Sinon, passez à l’étape 2.
 
     1. Connectez-vous avec un compte d’administrateur à votre compte Box.
-    1. Cliquez sur les **Apps**  >  paramètres applications **personnalisées** des applications  >  **Settings**.
+    1. Cliquez sur les   >  paramètres applications **personnalisées** des applications  >  .
 
          ![box, applications](media/box-apps.png "box, applications")
 
@@ -47,7 +47,7 @@ Cet article fournit des instructions pour connecter Microsoft Cloud App Security
 
 2. Dans le portail Cloud App Security, cliquez sur **Examiner**, puis sur **Applications connectées**.
 
-3. Dans la page **Connecteurs d’application**, cliquez sur le bouton plus (+), puis sélectionnez **Box**.
+3. Dans la page **connecteurs d’application** , cliquez sur le bouton signe plus ( **+** ) et sélectionnez **Box**.
 
     ![zone de connexion](media/connect-box.png "connecter box")
 

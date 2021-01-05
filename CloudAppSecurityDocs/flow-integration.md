@@ -1,14 +1,14 @@
 ---
 title: Intégrer Microsoft Power automate avec Microsoft Cloud App Security pour recevoir une automatisation des alertes personnalisée
 description: Cet article fournit des informations sur la façon d’obtenir une automatisation des alertes personnalisée en intégrant Microsoft Power Automated avec Cloud App Security.
-ms.date: 04/27/2020
+ms.date: 01/05/2021
 ms.topic: how-to
-ms.openlocfilehash: 015657815c2fde3904807363c9e0e6db3d45b3a5
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: fc178428b74a77772e9d366bcdd8051fdc1a62b6
+ms.sourcegitcommit: ee66e70f711aa11501e308e53b1a4b46f2175e4e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96314917"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97894720"
 ---
 # <a name="integrate-with-microsoft-power-automate-for-custom-alert-automation"></a>Intégration avec Microsoft Power automate pour l’automatisation des alertes personnalisée
 
@@ -52,6 +52,11 @@ Le [connecteur Cloud App Security](/connectors/cloudappsecurity/) dans Power aut
 8. Cloud App Security les règles que vous avez créées ou auxquelles vous avez accès peuvent être consultées dans l’écran **extensions de sécurité** .
 
     ![afficher des playbooks dans Cloud App Security](media/flow-extensions.png)
+
+## <a name="related-videos"></a>Vidéos associées
+
+> [!div class="nextstepaction"]
+> [Automatisation et intégration avec Power automate webinaire](webinars.md#on-demand-webinars)
 
 ## <a name="next-steps"></a>Étapes suivantes
 

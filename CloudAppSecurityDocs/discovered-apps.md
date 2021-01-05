@@ -3,12 +3,12 @@ title: Utilisation des applications découvertes dans Cloud App Security
 description: Cet article décrit le processus d’identification et de correction des applications Cloud Discovery à risque dans Cloud App Security.
 ms.date: 09/25/2019
 ms.topic: conceptual
-ms.openlocfilehash: f23c7fff644a3f2d8572a91dea560cd6ffbe8457
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 4f3cae41623c352c957640ce2fc4002e0d1f09e0
+ms.sourcegitcommit: 16a65ab2c8ca778d0b3cfa97b847af4c812363b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96311772"
+ms.lasthandoff: 01/03/2021
+ms.locfileid: "97855393"
 ---
 # <a name="working-with-discovered-apps"></a>Utilisation des applications découvertes
 
@@ -151,7 +151,7 @@ Pour supprimer des données Cloud Discovery :
 
     Il est important d’être sûr de vouloir supprimer les données avant de poursuivre : cette opération ne peut pas être annulée et **toutes** les données Cloud Discovery dans le système sont alors supprimées.
 
-1. Cliquez sur le bouton **Supprimer**.
+1. Cliquez sur le bouton **Supprimer** .
 
     ![supprimer des données](media/delete-data.png "supprimer des données")
 

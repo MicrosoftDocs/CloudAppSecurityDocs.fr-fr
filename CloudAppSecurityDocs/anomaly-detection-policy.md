@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 08/20/2020
+ms.date: 01/05/2021
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 43490c416d1d19882321343c18e3e4417a6110f4
-ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
+ms.openlocfilehash: 1c84882ec04d72ef24d9fe044c0fabbb355a15bb
+ms.sourcegitcommit: ee66e70f711aa11501e308e53b1a4b46f2175e4e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2020
-ms.locfileid: "97369890"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97894672"
 ---
 # <a name="get-behavioral-analytics-and-anomaly-detection"></a>Bénéficiez d’une analyse comportementale et d’une détection des anomalies
 
@@ -211,6 +211,11 @@ Vous pouvez trier rapidement les diverses alertes déclenchées par les nouvelle
     ![détection des anomalies alert3](media/anomaly-alert-user3.png)
 
 1. Une fois que les fichiers infectés sont détectés, vous pouvez voir une liste des **fichiers infectés**. Cliquez sur le nom du fichier malveillant dans le tiroir de fichier pour ouvrir un rapport sur les programmes malveillants qui vous fournit des informations sur le type de programme malveillant dont le fichier est infecté.
+
+## <a name="related-videos"></a>Vidéos associées
+
+> [!div class="nextstepaction"]
+> [Webinaire sur la protection contre les menaces](webinars.md#on-demand-webinars)
 
 ## <a name="next-steps"></a>Étapes suivantes
 

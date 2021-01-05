@@ -3,12 +3,12 @@ title: Résoudre les messages d’erreur du connecteur d’applications
 description: Cet article fournit la liste des messages d’erreur relatifs aux connecteurs d’application API ainsi que les solutions recommandées pour chacun d’eux.
 ms.date: 01/29/2020
 ms.topic: conceptual
-ms.openlocfilehash: bc15d27ce42d8bd691897d7b0a3eed78b7691d64
-ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
+ms.openlocfilehash: 5848e0286d6d99ed3699652e3a44ef5fe1cf359b
+ms.sourcegitcommit: 40d17309b8729eb914ea91ba5fa7017340231488
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2020
-ms.locfileid: "97370141"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "97808995"
 ---
 # <a name="troubleshooting-app-connectors-using-error-messages"></a>Résolution des problèmes des connecteurs d’application à l’aide de messages d’erreur
 
@@ -51,6 +51,7 @@ Quand vous tentez de connecter une application cloud à l’aide du connecteur d
 > |HttpRequestFailure: 400 Requête incorrecte retourné par le serveur|Office 365|Erreur interne|Cliquez à nouveau sur le lien Tester maintenant dans quelques minutes et, s’il ne fonctionne pas, suivez le processus pour reconnecter Office 365 à Cloud App Security.|
 > |SocketTimeoutException: Expiration du délai d’attente de lecture|Salesforce|Erreur interne|Cliquez à nouveau sur le lien Tester maintenant pour tester la connexion à Salesforce.|
 > |HttpRequestFailure: 400 Requête incorrecte retourné par le serveur|Salesforce|La connexion à Salesforce n’a pas été établie ou a expiré.|Suivez le processus pour reconnecter Salesforce à Cloud App Security.|
+> |Autorisations d’extraction : NoHttpResponseException : `*******.salesforce.com:443` échec de la réponse|Salesforce|Restriction d’adresse IP sur le client ENV.|Dans le portail Salesforce, sous paramètres de session **d’installation**  >  , désactivez la case à cocher **verrouiller les sessions sur l’adresse IP à partir de laquelle elles proviennent** .|
 > |RuntimeException: com.adallom.adalib.httputils.exceptions.HttpRequestFailure: 403 Interdit retourné par le serveur|ServiceNow|Les autorisations sont incorrectes|Suivez le processus pour reconnecter ServiceNow à Cloud App Security à l’aide d’un compte d’administrateur.|
 > |Événements d’extraction : {"code" : 403, "serverResponse"<br />Obtient les utilisateurs : {"code" : 403, "serverResponse"<br />…<br />« Body » : « { » error» : « autorisation refusée »}»|Workday|Autorisations insuffisantes pour accéder aux journaux d’audit et/ou aux points de terminaison d’utilisateur|Vérifiez que toutes les autorisations sont en place. [En savoir plus](connect-workday-to-microsoft-cloud-app-security.md#prerequisites)|
 > |"code" : 400, "serverResponse"<br />…<br />corps " :" {"Error" : "invalid_grant"}|Workday|Problème d’authentification|Le compte utilisé pour configurer l’instance est peut-être verrouillé ou désactivé. Pour vérifier, affichez le compte de jour ouvré et sélectionnez **afficher l’historique de connexion**. Vous pouvez voir un message d’échec d’authentification dans le rapport en spécifiant que le compte système est désactivé. [En savoir plus](connect-workday-to-microsoft-cloud-app-security.md#how-to-connect-workday-to-cloud-app-security-using-oauth)|

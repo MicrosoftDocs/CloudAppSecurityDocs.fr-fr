@@ -1,14 +1,14 @@
 ---
 title: Intégrer Azure Information Protection à Cloud App Security
 description: Cet article fournit des informations sur la façon de tirer parti de vos balises Azure Information Protection dans Cloud App Security afin de renforcer le contrôle de l’utilisation des applications cloud de votre organisation.
-ms.date: 12/09/2019
+ms.date: 12/27/2020
 ms.topic: how-to
-ms.openlocfilehash: 32d157877fa71c12c4ea515316b160cbcfe59396
-ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
+ms.openlocfilehash: 2b5d3399479850d04caba7f6e7f0411c4429b4a6
+ms.sourcegitcommit: 243baad1adeb32d157c7f6165c08df2136b28db0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2020
-ms.locfileid: "97369869"
+ms.lasthandoff: 12/27/2020
+ms.locfileid: "97792771"
 ---
 # <a name="azure-information-protection-integration"></a>Intégration d’Azure Information Protection
 
@@ -26,10 +26,10 @@ En intégrant Azure Information Protection à Cloud App Security, vous pouvez ut
 - La possibilité d’investiguer en fonction du niveau de classification et de quantifier l’exposition des données sensibles sur vos applications cloud.
 - La possibilité de créer des stratégies pour que les fichiers classifiés soient gérés correctement.
 
-> [!NOTE]
-> Pour activer cette fonctionnalité, vous avez besoin d’une licence Cloud App Security et d’une licence pour Azure Information Protection Premium P1. Dès que ces deux licences sont en place, Cloud App Security synchronise les étiquettes des organisations à partir du service Azure Information Protection.
-
 ## <a name="prerequisites"></a>Prérequis
+
+> [!NOTE]
+> Pour activer cette fonctionnalité, vous avez besoin d’une licence Cloud App Security et d’une licence pour Azure Information Protection Premium P1. Dès que les deux licences sont en place, Cloud App Security synchronise les étiquettes de l’organisation à partir du service Azure Information Protection.
 
 - Pour utiliser l’intégration à Azure Information Protection, vous devez activer le [connecteur d’applications pour Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
 
@@ -45,8 +45,6 @@ Cloud App Security prend actuellement en charge l’application d’étiquettes 
   > Pour PDF, vous devez utiliser des étiquettes unifiées.
 
 Cette fonctionnalité est actuellement disponible pour les fichiers stockés dans Box, Google Workspace, SharePoint Online et OneDrive entreprise. D’autres applications cloud seront prises en charge dans les prochaines versions.
-
-Les fichiers qui ont été étiquetés avec une protection en dehors de Cloud App Security ne peuvent pas être modifiés par Cloud App Security. Toutefois, vous pouvez analyser ces fichiers en accordant des autorisations pour [inspecter le contenu des fichiers protégés](content-inspection.md#content-inspection-for-protected-files).
 
 ## <a name="how-it-works"></a>Fonctionnement
 
@@ -64,6 +62,11 @@ Vous connaissez probablement déjà les étiquettes de classification des fichie
 4. Une fois que vous avez activé Azure Information Protection sur Cloud App Security, tous les nouveaux fichiers ajoutés à vos applications Cloud connectées sont analysés pour rechercher les étiquettes de classification.
 
 5. Vous pouvez créer des stratégies dans Cloud App Security qui appliquent automatiquement vos étiquettes de classification.
+
+> [!NOTE]
+>
+> - Les fichiers qui ont été étiquetés avec une protection en dehors de Cloud App Security ne peuvent pas être modifiés par Cloud App Security. Toutefois, vous pouvez analyser ces fichiers en accordant des autorisations pour [inspecter le contenu des fichiers protégés](content-inspection.md#content-inspection-for-protected-files).
+> - À l’inverse, les fichiers étiquetés par Cloud App Security et téléchargés sur SharePoint ou OneDrive et l’étiquette a appliqué le chiffrement à l’aide d’un compte d’un nom principal de service, les fichiers ne peuvent pas être ouverts dans Office sur le Web. Voici quelques exemples de scénarios : Cloud App Security et un fichier envoyé aux équipes par courrier électronique.
 
 ## <a name="how-to-integrate-azure-information-protection-with-cloud-app-security"></a>Comment intégrer Azure Information Protection à Cloud App Security
 
@@ -128,7 +131,9 @@ Suivez ces instructions pour créer la stratégie de fichier :
     ![Appliquer une étiquette](media/aip-gov-action.png)
 
 > [!NOTE]
-> La possibilité d’appliquer automatiquement une étiquette Azure Information Protection via la stratégie de fichier est une puissante fonctionnalité. Pour protéger les clients contre toute application par erreur d’une étiquette à un grand nombre de fichiers, il existe, pour des raisons de sécurité, une limite quotidienne de 100 actions **Appliquer une étiquette** par application et le client. Une fois la limite quotidienne atteinte, l’action Appliquer une étiquette est temporairement interrompue, puis reprend automatiquement le jour suivant (après 12:00 UTC). Pour augmenter la limite pour votre locataire, ouvrez un ticket de support.
+>
+> - La possibilité d’appliquer automatiquement une étiquette Azure Information Protection via la stratégie de fichier est une puissante fonctionnalité. Pour protéger les clients contre toute application par erreur d’une étiquette à un grand nombre de fichiers, il existe, pour des raisons de sécurité, une limite quotidienne de 100 actions **Appliquer une étiquette** par application et le client. Une fois la limite quotidienne atteinte, l’action Appliquer une étiquette est temporairement interrompue, puis reprend automatiquement le jour suivant (après 12:00 UTC). Pour augmenter la limite pour votre locataire, ouvrez un ticket de support.
+> - Lorsqu’une stratégie est désactivée, toutes les tâches d’étiquetage en attente pour cette stratégie sont suspendues.
 
 ### <a name="control-file-exposure"></a>Contrôler l’exposition des fichiers
 

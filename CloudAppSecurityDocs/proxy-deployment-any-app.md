@@ -3,12 +3,12 @@ title: Déployer des contrôle d’application par accès conditionnel Cloud App
 description: Cet article fournit des informations sur le déploiement de la Microsoft Cloud App Security contrôle d’application par accès conditionnel les fonctionnalités de proxy inverse pour toutes les applications.
 ms.date: 03/31/2020
 ms.topic: how-to
-ms.openlocfilehash: 32aa858eca58f8b76cc90bd96f5ebe17516af1e7
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 52eb9874a5b80fa22f957f855374a0f3444d7101
+ms.sourcegitcommit: 16a65ab2c8ca778d0b3cfa97b847af4c812363b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315393"
+ms.lasthandoff: 01/03/2021
+ms.locfileid: "97855844"
 ---
 # <a name="onboard-and-deploy-conditional-access-app-control-for-any-app"></a>Intégrer et déployer le Contrôle d’application par accès conditionnel pour tous les types d’applications
 
@@ -82,7 +82,7 @@ Suivez les étapes ci-dessous pour acheminer des sessions d’application d’au
 
 1. Dans Cloud App Security, accédez à **examiner**  >  **applications connectées**  >  **contrôle d’application par accès conditionnel applications**.
 
-1. Cliquez sur le signe plus, puis dans la fenêtre contextuelle, sélectionnez l’application que vous souhaitez déployer, puis cliquez sur **Démarrer l’Assistant**.
+1. Cliquez sur le signe plus ( **+** ), puis dans la fenêtre contextuelle, sélectionnez l’application que vous souhaitez déployer, puis cliquez sur **Démarrer l’Assistant**.
 1. Sur la page informations sur l' **application** , remplissez le formulaire à l’aide des informations de la page Configuration de l’authentification unique de votre application, puis cliquez sur **suivant**.
     - Si votre IdP fournit un fichier de métadonnées d’authentification unique pour l’application sélectionnée, sélectionnez **charger le fichier de métadonnées à partir de l’application** et téléchargez le fichier de métadonnées.
     - Ou sélectionnez **remplir les données manuellement** et fournissez les informations suivantes :
@@ -161,7 +161,7 @@ Suivez les étapes ci-dessous pour acheminer des sessions d’application d’au
 
 ## <a name="step-3-configure-the-app-that-you-are-deploying"></a>Étape 3 : configurer l’application que vous déployez<a name="conf-app"></a>
 
-Accédez à l’application que vous déployez. La page que vous voyez varie selon que l’application est reconnue ou non. Effectuez l’une des opérations suivantes :
+Accédez à l’application que vous déployez. La page que vous voyez varie selon que l’application est reconnue ou non. Effectuez l’une des actions suivantes :
 
 | État de l’application | Description | Étapes |
 | --- | --- | --- |

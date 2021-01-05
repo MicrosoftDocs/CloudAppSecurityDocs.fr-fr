@@ -3,12 +3,12 @@ title: Archivage des mises à jour précédentes dans Cloud App Security
 description: Cet article est une archive qui décrit les mises à jour effectuées dans les versions précédentes de Cloud App Security.
 ms.date: 11/25/2020
 ms.topic: conceptual
-ms.openlocfilehash: 50f8bc735743d1506ac9ad18e6b10b659de7ab6e
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: d64c12289025ef7270ae94f922cea187e8ca5dbf
+ms.sourcegitcommit: 16a65ab2c8ca778d0b3cfa97b847af4c812363b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315546"
+ms.lasthandoff: 01/03/2021
+ms.locfileid: "97855756"
 ---
 # <a name="past-release-archive-of-microsoft-cloud-app-security"></a>Archive des versions précédentes de Microsoft Cloud App Security
 
@@ -728,13 +728,13 @@ Publiée le 12 novembre 2017
 
 - Grâce au nouveau point d’interrogation bleu dans l’angle, vous avez maintenant accès à la page de documentation Cloud App Security correspondante sur docs.microsoft.com, sur les pages du portail. Chaque lien est sensible au contexte et vous permet d’accéder aux informations dont vous avez besoin en fonction de la page sur laquelle vous vous connectez.
 - Vous pouvez maintenant envoyer des commentaires sur chaque page du portail Cloud App Security. Le feedback vous permet de signaler des bogues, de demander de nouvelles fonctionnalités et de partager votre expérience directement avec l’équipe Cloud App Security.
-- Des améliorations ont été apportées à la capacité Cloud Discovery à reconnaître des sous-domaines pour des investigations approfondies dans l’utilisation du Cloud de votre organisation. Pour plus d’informations, consultez la page [Utiliser les applications découvertes](discovered-apps.md).
+- Des améliorations ont été apportées à la Cloud Discovery capacité de reconnaître des sous-domaines pour des investigations approfondies dans l’utilisation du Cloud de votre organisation. Pour plus d’informations, consultez la page [Utiliser les applications découvertes](discovered-apps.md).
 
 ### <a name="cloud-app-security-release-109"></a>Cloud App Security version 109
 
 Publication : 29 octobre 2017
 
-- Le lancement de la fonctionnalité de proxy Microsoft Cloud App Security est en cours. Le proxy Microsoft Cloud App Security vous fournit les outils dont vous avez besoin pour obtenir une visibilité et un contrôle en temps réel de l’accès à votre environnement cloud et des activités qui y sont effectuées. Par exemple :
+- Le lancement de la fonctionnalité de proxy Microsoft Cloud App Security est en cours. Le proxy Microsoft Cloud App Security vous fournit les outils dont vous avez besoin pour obtenir une visibilité et un contrôle en temps réel de l’accès à votre environnement cloud et des activités qui y sont effectuées. Exemple :
 
   - Évitez les fuites de données en bloquant les téléchargements avant qu’ils ne se produisent.
   - Définissez des règles qui forcent le chiffrement des données stockées dans le cloud et téléchargées à partir du cloud.
@@ -745,7 +745,7 @@ Publication : 29 octobre 2017
 
 - Nous lançons progressivement la possibilité de filtrer en fonction de noms d’activité de service spécifiques. Ce nouveau filtre de type d’activité est plus précis pour vous permettre de surveiller des activités d’application spécifiques, plutôt que des types d’activité plus généraux. Par exemple, vous pouviez filtrer la commande **Exécuter**, mais maintenant, vous pouvez aussi filtrer des applets de commande EXO spécifiques. Le nom de l’activité peut également être vu dans le tiroir Activité sous **Type (dans l’application)**. À terme, cette fonctionnalité va remplacer le filtre de type d’activité.
 
-- Cloud Discovery prend désormais en charge Cisco ASA avec FirePOWER.
+- Cloud Discovery prend désormais en charge Cisco ASA avec un niveau de puissance.
 
 - Des améliorations des performances ont été apportées aux pages des utilisateurs et adresses IP de Cloud Discovery afin d’améliorer l’expérience utilisateur.
 
@@ -755,7 +755,7 @@ Publication : septembre/octobre 2017
 
 - Cloud App Security compte désormais un centre de données situé dans l’Union européenne. En complément de notre centre de données aux États-Unis, le centre de données de l’Union européenne permettra aux clients Cloud App Security de se mettre en totale conformité avec les certifications et normes européennes nouvelles et à venir.
 - De nouveaux filtres ont été ajoutés à la page **Connecteurs d’application** qui vous propose un filtrage plus simple et d’autres informations.
-- La découverte cloud sur les fichiers journaux qui contiennent seulement des informations sur les adresses IP de destination a été améliorée.
+- Cloud Discovery sur les fichiers journaux qui ont uniquement des informations IP de destination a été amélioré.
 
 ### <a name="cloud-app-security-release-104"></a>Cloud App Security version 104
 

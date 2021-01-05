@@ -3,12 +3,12 @@ title: Cloud App Security Guide d’enquête sur les alertes de détection d’a
 description: Cet article explique comment analyser les Cloud App Security alertes de détection d’anomalies émises lorsque des attaques sont détectées contre votre organisation.
 ms.date: 06/08/2020
 ms.topic: how-to
-ms.openlocfilehash: 69490396c2669307372c0073e8f0ad58e3bf09c5
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 6c3a099153da4ac69961fd759a26c08a31e6867b
+ms.sourcegitcommit: 40d17309b8729eb914ea91ba5fa7017340231488
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315070"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "97808978"
 ---
 # <a name="how-to-investigate-anomaly-detection-alerts"></a>Comment examiner les alertes de détection d’anomalies
 
@@ -158,7 +158,7 @@ Cette détection utilise un algorithme de Machine Learning qui ignore les condit
 
 ### <a name="misleading-oauth-app-name"></a>Nom d’application OAuth trompeur
 
-Le nom d’application OAuth trompeur identifie les applications avec des caractères, tels que des lettres étrangères, qui ressemblent à des lettres latines. Cela peut indiquer une tentative de déguisement d’une application malveillante en tant qu’application connue et approuvée afin que les attaquants puissent tromper les utilisateurs pour qu’ils téléchargent leur application malveillante.
+Cette détection identifie les applications avec des caractères, tels que des lettres étrangères, qui ressemblent à des lettres latines. Cela peut indiquer une tentative de déguisement d’une application malveillante en tant qu’application connue et approuvée afin que les attaquants puissent tromper les utilisateurs pour qu’ils téléchargent leur application malveillante.
 
 **TP**, **B-TP** ou **FP**?
 
@@ -180,7 +180,7 @@ Pour interdire l’accès à l’application, dans la page **applications OAuth*
 
 ### <a name="misleading-publisher-name-for-an-oauth-app"></a>Nom du serveur de publication trompeur pour une application OAuth
 
-Le nom de l’éditeur OAuth trompeur pour une application OAuth identifie les applications avec des caractères, tels que des lettres étrangères, qui ressemblent à des lettres latines. Cela peut indiquer une tentative de déguisement d’une application malveillante en tant qu’application connue et approuvée afin que les attaquants puissent tromper les utilisateurs pour qu’ils téléchargent leur application malveillante.
+Cette détection identifie les applications avec des caractères, tels que des lettres étrangères, qui ressemblent à des lettres latines. Cela peut indiquer une tentative de déguisement d’une application malveillante en tant qu’application connue et approuvée afin que les attaquants puissent tromper les utilisateurs pour qu’ils téléchargent leur application malveillante.
 
 **TP**, **B-TP** ou **FP**?
 
@@ -201,6 +201,18 @@ Le nom de l’éditeur OAuth trompeur pour une application OAuth identifie les a
     - Applications qui n’ont pas été mises à jour récemment. Cela peut indiquer une application qui n’est plus prise en charge.
     - Applications avec des autorisations inadaptées. Cela peut indiquer qu’une application est à risque.
 1. Si vous pensez toujours qu’une application est suspecte, vous pouvez rechercher le nom de l’application, l’éditeur et l’URL en ligne.
+
+### <a name="unusual-addition-of-credentials-to-an-oauth-app"></a>Ajout inhabituel des informations d’identification à une application OAuth
+
+Cette détection identifie l’ajout suspect des informations d’identification privilégiées à une application OAuth. Cela peut indiquer qu’un attaquant a compromis l’application et l’utilise pour une activité malveillante.
+
+> [!NOTE]
+> Étant donné que le risque lié à une attaque réussie est élevé, Cloud App Security vous avertit également des détections de la mise à jour à la mi-septembre 2020.
+> Les alertes pour les événements passés ont le titre « alerte système : ajout inhabituel des informations d’identification à une application OAuth » et le type d’alerte est MCAS_ALERT_MANAGEMENT_GENERIC.
+
+**Période d’apprentissage**
+
+L’apprentissage de l’environnement de votre organisation nécessite une période de sept jours au cours de laquelle vous pouvez vous attendre à un volume élevé d’alertes.
 
 ## <a name="execution-alerts"></a>Alertes d’exécution
 

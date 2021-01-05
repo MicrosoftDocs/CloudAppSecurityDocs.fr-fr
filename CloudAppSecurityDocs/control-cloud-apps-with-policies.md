@@ -1,14 +1,14 @@
 ---
 title: Contrôler l’utilisation des applications Cloud en créant des stratégies
 description: Cet article fournit des informations sur la façon dont les stratégies sont utilisées et configurées pour contrôler l’usage des applications cloud.
-ms.date: 09/26/2019
+ms.date: 01/03/2021
 ms.topic: how-to
-ms.openlocfilehash: 695737038f0c45e366581c0262550b4c769039a5
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: d7d3bc90de1db4e2ec474c111b4799ad5a2078c8
+ms.sourcegitcommit: 16a65ab2c8ca778d0b3cfa97b847af4c812363b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96312299"
+ms.lasthandoff: 01/03/2021
+ms.locfileid: "97855449"
 ---
 # <a name="control-cloud-apps-with-policies"></a>Contrôler les applications cloud avec des stratégies
 
@@ -20,19 +20,21 @@ Par exemple, le type de stratégie à mettre en place diffère selon que vous so
 
 ## <a name="policy-types"></a>Types de stratégie
 
-Lorsque vous examinez la page **Stratégie**, les différentes stratégies et les différents modèles peuvent être distingués par type et par icône pour savoir quelles stratégies sont disponibles. Les stratégies disponibles dépendent de la source de données et de ce que vous avez activé dans Cloud App Security pour votre organisation. Par exemple, si vous avez chargé des journaux Cloud Discovery, les stratégies relatives à Cloud Discovery sont affichées.
+Lorsque vous examinez la page **Stratégie**, les différentes stratégies et les différents modèles peuvent être distingués par type et par icône pour savoir quelles stratégies sont disponibles. Les stratégies peuvent être affichées ensemble sous l’onglet **toutes les stratégies** ou dans leurs onglets de catégorie respectifs. Les stratégies disponibles dépendent de la source de données et de ce que vous avez activé dans Cloud App Security pour votre organisation. Par exemple, si vous avez chargé des journaux Cloud Discovery, les stratégies relatives à Cloud Discovery sont affichées.
 
 Vous pouvez créer les types de stratégies suivants :
 
-|Icône de type de stratégie|Type de stratégie|Utilisation|
-|-----|-----------------|---------|
-|![icône de stratégie d’accès](media/proxy-policy.png)|Stratégie d’accès|Les stratégies d’accès vous offrent une surveillance et un contrôle en temps réel des connexions utilisateur à vos applications cloud.|
-|![Icône de stratégie d’activité](media/activity_policy.png)|Stratégie d’activité|Les stratégies d’activité vous permettent d’appliquer une large gamme de processus automatisés à l’aide des API du fournisseur d’applications. Ces stratégies vous permettent de surveiller des activités spécifiques effectuées par différents utilisateurs ou de suivre les taux anormalement élevés d’un certain type d’activité.|
-|![Icône de stratégie de détection d’anomalie](media/anomaly_detection_policy.png)|Stratégie de détection d’anomalie|Les stratégies de détection des anomalies vous permettent de rechercher des activités inhabituelles sur votre cloud. La détection est basée sur les facteurs de risque que vous définissez pour vous alerter en cas d’événement anormal par rapport aux activités de référence ou habituelles de votre organisation ou des utilisateurs.|
-|![Icône de stratégie Cloud Discovery](media/discovery_policy.png)|Stratégie de découverte d’application|Grâce aux stratégies de découverte d’application, vous pouvez définir des alertes qui vous informent quand de nouvelles applications sont détectées au sein de votre organisation.|
-|![Icône de stratégie de détection d’anomalie](media/anomaly_detection_policy.png)|Stratégie de détection des anomalies Cloud Discovery|Les stratégies de détection des anomalies de Cloud Discovery examinent les journaux que vous utilisez pour découvrir les applications cloud et recherchent les occurrences inhabituelles. À titre d’exemple, citons un utilisateur qui n’a jamais utilisé Dropbox et qui y charge soudainement 600 Go de données ou une application qui fait l’objet de transactions dans des proportions inhabituelles.|
-|![Icône de stratégie de fichier](media/file_policy.png)|Stratégie de fichier|Avec les stratégies de fichier, vous pouvez déterminer si vos applications cloud comportent certains fichiers ou types de fichiers (partagés, partagés avec des domaines externes), ou certaines données (informations propriétaires, informations personnelles, informations de carte de crédit et d’autres types de données), et appliquer des actions de gouvernance aux fichiers (les actions de gouvernance sont spécifiques aux applications cloud).|
-|![icône de stratégie de session](media/proxy-policy.png)|Stratégie de session|Les stratégies de session vous permettent de surveiller et de contrôler en temps réel l’activité des utilisateurs dans vos applications cloud.|
+|Icône de type de stratégie|Type de stratégie|Category|Utilisation|
+|-----|---------|--------|---------|
+|![Icône de stratégie d’activité](media/activity-policy.png)|Stratégie d’activité|Détection de menaces|Les stratégies d’activité vous permettent d’appliquer une large gamme de processus automatisés à l’aide des API du fournisseur d’applications. Ces stratégies vous permettent de surveiller des activités spécifiques effectuées par différents utilisateurs ou de suivre les taux anormalement élevés d’un certain type d’activité. [En savoir plus](user-activity-policies.md)|
+|![Icône de stratégie de détection d’anomalie](media/anomaly-detection-policy.png)|Stratégie de détection d’anomalie|Détection de menaces|Les stratégies de détection des anomalies vous permettent de rechercher des activités inhabituelles sur votre cloud. La détection est basée sur les facteurs de risque que vous définissez pour vous alerter en cas d’événement anormal par rapport aux activités de référence ou habituelles de votre organisation ou des utilisateurs. [En savoir plus](anomaly-detection-policy.md)|
+|![Icône de stratégie d’application OAuth](media/oauth-policy.png)|Stratégie d’application OAuth|Détection de menaces|Les stratégies d’application OAuth vous permettent d’examiner les autorisations que chaque application OAuth a demandée et de l’approuver ou de la révoquer automatiquement. Il s’agit de stratégies intégrées qui sont fournies avec Cloud App Security et qui ne peuvent pas être créées. [En savoir plus](app-permission-policy.md)|
+|![Icône de stratégie de détection de programmes malveillants](media/malware-detection-policy.png)|Stratégie de détection des programmes malveillants|Détection de menaces|Les stratégies de détection de programmes malveillants vous permettent d’identifier les fichiers malveillants dans votre stockage cloud et de les approuver ou révoquer automatiquement. Il s’agit d’une stratégie intégrée qui est fournie avec Cloud App Security et qui ne peut pas être créée. [En savoir plus](anomaly-detection-policy.md#malware-detection)|
+|![Icône de stratégie de fichier](media/file-policy.png)|Stratégie de fichier|Information Protection|Avec les stratégies de fichier, vous pouvez déterminer si vos applications cloud comportent certains fichiers ou types de fichiers (partagés, partagés avec des domaines externes), ou certaines données (informations propriétaires, informations personnelles, informations de carte de crédit et d’autres types de données), et appliquer des actions de gouvernance aux fichiers (les actions de gouvernance sont spécifiques aux applications cloud). [En savoir plus](data-protection-policies.md)|
+|![icône de stratégie d’accès](media/proxy-policy.png)|Stratégie d’accès|Accès conditionnel|Les stratégies d’accès vous offrent une surveillance et un contrôle en temps réel des connexions utilisateur à vos applications cloud. [En savoir plus](access-policy-aad.md)|
+|![icône de stratégie de session](media/proxy-policy.png)|Stratégie de session|Accès conditionnel|Les stratégies de session vous permettent de surveiller et de contrôler en temps réel l’activité des utilisateurs dans vos applications cloud. [En savoir plus](session-policy-aad.md)|
+|![Icône de stratégie Cloud Discovery](media/discovery-policy.png)|Stratégie de découverte d’application|Shadow IT|Grâce aux stratégies de découverte d’application, vous pouvez définir des alertes qui vous informent quand de nouvelles applications sont détectées au sein de votre organisation. [En savoir plus](cloud-discovery-policies.md)|
+|![Icône de stratégie de détection d’anomalie](media/anomaly-detection-policy.png)|Stratégie de détection des anomalies Cloud Discovery|Shadow IT|Les stratégies de détection des anomalies de Cloud Discovery examinent les journaux que vous utilisez pour découvrir les applications cloud et recherchent les occurrences inhabituelles. À titre d’exemple, citons un utilisateur qui n’a jamais utilisé Dropbox et qui y charge soudainement 600 Go de données ou une application qui fait l’objet de transactions dans des proportions inhabituelles. [En savoir plus](cloud-discovery-anomaly-detection-policy.md)|
 
 ## <a name="identifying-risk"></a>Identification des risques
 
@@ -92,7 +94,7 @@ Pour créer une stratégie à partir de **modèles de stratégie**, effectuez le
 
     ![Créer la stratégie à partir d’un modèle](media/create-policy-from-template.png)
 
-1. Cliquez **+** à l’extrême droite de la ligne du modèle que vous souhaitez utiliser. Une page de création de stratégie s’ouvre, avec la configuration prédéfinie du modèle.
+1. Cliquez sur le signe plus ( **+** ) à l’extrême droite de la ligne du modèle que vous souhaitez utiliser. Une page de création de stratégie s’ouvre, avec la configuration prédéfinie du modèle.
 
 1. Modifiez le modèle en fonction des besoins de votre stratégie personnalisée. Vous pouvez modifier librement chaque propriété et champ de cette nouvelle stratégie basée sur un modèle.
    > [!NOTE]

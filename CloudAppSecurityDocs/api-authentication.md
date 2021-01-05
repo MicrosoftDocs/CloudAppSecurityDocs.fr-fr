@@ -3,12 +3,12 @@ title: Gestion des jetons d’API
 description: Cet article fournit des informations sur la génération et la gestion des jetons d’API pour Cloud App Security.
 ms.date: 03/27/2020
 ms.topic: reference
-ms.openlocfilehash: e42efe3d5f530772cfdb2ae4030c294ae054b1b4
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: cd577565cb67b51dd93c649e69cd00a551736789
+ms.sourcegitcommit: 421870fac566642809eff0a545ec1981be1c9165
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96314526"
+ms.lasthandoff: 12/20/2020
+ms.locfileid: "97705880"
 ---
 # <a name="managing-api-tokens"></a>Gestion des jetons d’API
 
@@ -51,7 +51,9 @@ Le tableau fournit des détails sur la date à laquelle le jeton a été génér
 Une fois qu’un jeton est révoqué, il est supprimé du tableau, et le logiciel qui l’utilisait ne peut plus appeler l’API tant qu’un nouveau jeton n’est pas fourni.
 
 > [!NOTE]
-> Les collecteurs de journaux et les connecteurs SIEM utilisent également des jetons d’API. Ces jetons doivent être gérés à partir des sections des collecteurs de journaux et de l’agent SIEM, et n’apparaissent pas dans ce tableau.
+>
+> - Les collecteurs de journaux et les connecteurs SIEM utilisent également des jetons d’API. Ces jetons doivent être gérés à partir des sections des collecteurs de journaux et de l’agent SIEM, et n’apparaissent pas dans ce tableau.
+> - Les jetons d’API d’annulation d’approvisionnement sont conservés dans Cloud App Security mais ne peuvent pas être utilisés. Toute tentative d’utilisation de ceux-ci entraînera une réponse de refus d’autorisation. Toutefois, nous vous recommandons de révoquer ces jetons sur la page **jetons d’API** .
 
 [!INCLUDE [Open support ticket](includes/support.md)]
 

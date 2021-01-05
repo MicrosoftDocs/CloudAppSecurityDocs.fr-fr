@@ -3,12 +3,12 @@ title: Connecter Office 365 à Cloud App Security
 description: Cet article vous explique comment connecter votre application Office 365 à Cloud App Security à l’aide du connecteur d’API, afin de bénéficier de plus de contrôle et de visibilité lors de l’utilisation.
 ms.date: 08/17/2020
 ms.topic: how-to
-ms.openlocfilehash: 8edb45ffab805edc6c8bc5e3c4b9f4828a28886f
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 4d0735251469641c3e268eda2e99a791c6d05d2e
+ms.sourcegitcommit: 243baad1adeb32d157c7f6165c08df2136b28db0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96312741"
+ms.lasthandoff: 12/27/2020
+ms.locfileid: "97792788"
 ---
 # <a name="connect-office-365-to-microsoft-cloud-app-security"></a>Connecter Office 365 à Microsoft Cloud App Security
 
@@ -45,14 +45,14 @@ Cloud App Security prend en charge les applications Office 365 suivantes :
 >- Pour activer l’analyse des activités Office 365 dans Cloud App Security, vous devez activer l’audit dans le [Centre de sécurité et conformité Office](https://support.microsoft.com/help/4026501/office-auditing-in-office-365-for-admins).
 >- La journalisation d’audit de l’administrateur Exchange, qui est activée par défaut dans Office 365, consigne un événement dans le journal d’audit Office 365 quand un administrateur (ou un utilisateur qui a reçu des privilèges d’administrateur) apporte une modification dans votre organisation Exchange Online. Les modifications apportées en utilisant le Centre d’administration Exchange ou en exécutant une applet de commande dans Windows PowerShell sont enregistrées dans le journal d’audit d’administrateur Exchange. Pour plus d’informations sur la journalisation d’audit de l’administrateur dans Exchange, voir [Gestion de la journalisation d’audit de l’administrateur](/exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log).
 >- L’enregistrement d’audit pour les boîtes aux lettres Exchange doit être activé pour chaque boîte aux lettres utilisateur avant de consigner toute activité de l’utilisateur dans Exchange Online ; voir [Activités de la boîte aux lettres Exchange](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c).
->- Si des applications Office sont activées, les groupes qui font partie d’Office 365 sont aussi importés dans Cloud App Security à partir d’applications Office spécifiques : par exemple, si SharePoint est activé, les groupes Office 365 sont importés également comme groupes SharePoint.
+>- Si les applications Office sont activées, les groupes qui font partie d’Office 365 sont également importés dans Cloud App Security à partir des applications Office spécifiques, par exemple, si SharePoint est activé, les groupes Office 365 sont également importés en tant que groupes SharePoint.
 >- Vous devez [activer l’audit dans Power BI](https://powerbi.microsoft.com/documentation/powerbi-admin-auditing/) pour obtenir les journaux. Une fois l’audit activé, Cloud App Security commence à obtenir les journaux (avec un délai de 24 à 72 heures).
 >- Vous devez [activer l’audit dans Dynamics 365](/dynamics365/customer-engagement/admin/enable-use-comprehensive-auditing#enable-auditing) pour récupérer les journaux à partir de là. Une fois l’audit activé, Cloud App Security commence à obtenir les journaux (avec un délai de 24 à 72 heures).
 >- Si votre Azure Active Directory est défini pour se synchroniser automatiquement avec les utilisateurs de votre environnement local Active Directory, les paramètres de l’environnement local remplacent les paramètres Azure AD et l’utilisation de l’action de gouvernance **Interrompre la synchronisation de l’utilisateur** est rétablie.
 >- Pour les activités de connexion Azure AD, Cloud App Security ne couvre que les activités de connexion interactives et les activités de connexion à partir de protocoles hérités tels qu’ActiveSync. Les activités de connexion non interactives peuvent être affichées dans le journal d’audit Azure AD.
 > - Les [déploiements multigéographiques](/office365/enterprise/office-365-multi-geo) sont uniquement pris en charge pour OneDrive
 
-1. Dans la page **Applications connectées**, cliquez sur le bouton plus (+) et sélectionnez **Office 365**.
+1. Dans la page **applications connectées** , cliquez sur le bouton plus et sélectionnez **Office 365**.
 
     ![option de menu Connect O365](media/connect-o365.png)
 
@@ -65,7 +65,7 @@ Cloud App Security prend en charge les applications Office 365 suivantes :
     > [!NOTE]
     >
     > - Pour une protection optimale, nous vous recommandons de sélectionner tous les composants Office 365.
-    > - Le composant **Office 365 Files** requiert le composant **Office 365 Activities** et l’analyse de fichiers Cloud App Security (les fichiers de **paramètres**  >  **Files**  >  **permettent l’analyse des fichiers**).
+    > - Le composant **Office 365 Files** requiert le composant **Office 365 Activities** et l’analyse de fichiers Cloud App Security (les fichiers de **paramètres**  >    >  **permettent l’analyse des fichiers**).
 
     ![connecter les composants O365](media/connect-o365-components.png)
 

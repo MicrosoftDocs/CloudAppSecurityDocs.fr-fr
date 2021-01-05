@@ -3,12 +3,12 @@ title: API List-Alerts
 description: Cet article décrit la requête de liste dans l’API des alertes de Cloud App Security.
 ms.date: 03/27/2020
 ms.topic: reference
-ms.openlocfilehash: a4a24db5bab13a12fdeb7ecbe88ad45c41b90577
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 3c3dec04dff5369120decdfc6142d0517eca4e2a
+ms.sourcegitcommit: 90df07ce9cd64fd9c46fb6563f0249079204e174
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96314577"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97859035"
 ---
 # <a name="list---alerts-api"></a>API List-Alerts
 
@@ -32,7 +32,7 @@ POST /api/v1/alerts/
 | --- | --- |
 | filtres | Filtrer les objets avec tous les filtres de recherche pour la demande, consultez [filtres d’alerte](api-alerts.md#filters) pour plus d’informations |
 | sortDirection | Sens du tri. Les valeurs possibles sont : `asc` et `desc` |
-| sortField | Champs utilisés pour trier les alertes. Les valeurs possibles sont les suivantes :<br /><br />**Date**: date à laquelle l’alerte a été créée<br /><br />**gravité**: gravité de l’alerte |
+| sortField | Champs utilisés pour trier les alertes. Les valeurs possibles sont les suivantes :<br />- **Date**: date à laquelle l’alerte a été créée<br />- **gravité**: gravité de l’alerte |
 | skip | Ignore le nombre spécifié d’enregistrements |
 | limit | Nombre maximal d’enregistrements retournés par la requête |
 

@@ -3,12 +3,12 @@ title: Déployer le contrôle d’application par accès conditionnel Cloud App 
 description: Cet article fournit des informations sur le déploiement du proxy inversé du Contrôle d’application par accès conditionnel Microsoft Cloud App Security pour les applications Azure AD.
 ms.date: 03/31/2020
 ms.topic: how-to
-ms.openlocfilehash: 66063b54ce774612431d74aef2b1b045b7bf9d9f
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 3fecc4eca9b867aba72dc625151ec915906075eb
+ms.sourcegitcommit: 16a65ab2c8ca778d0b3cfa97b847af4c812363b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96310939"
+ms.lasthandoff: 01/03/2021
+ms.locfileid: "97855521"
 ---
 # <a name="deploy-conditional-access-app-control-for-featured-apps"></a>Déployer le contrôle d’application par accès conditionnel pour les applications à la une
 
@@ -73,7 +73,7 @@ Suivez les étapes ci-dessous pour acheminer des sessions d’application d’au
 
 1. Dans Cloud App Security, accédez à **examiner**  >  **applications connectées**  >  **contrôle d’application par accès conditionnel applications**.
 
-1. Cliquez sur le signe plus, puis dans la fenêtre contextuelle, sélectionnez l’application que vous souhaitez déployer, puis cliquez sur **Démarrer l’Assistant**.
+1. Cliquez sur le signe plus ( **+** ), puis dans la fenêtre contextuelle, sélectionnez l’application que vous souhaitez déployer, puis cliquez sur **Démarrer l’Assistant**.
 1. Sur la page informations sur l' **application** , remplissez le formulaire à l’aide des informations de la page Configuration de l’authentification unique de votre application, puis cliquez sur **suivant**.
     - Si votre IdP fournit un fichier de métadonnées d’authentification unique pour l’application sélectionnée, sélectionnez **charger le fichier de métadonnées à partir de l’application** et téléchargez le fichier de métadonnées.
     - Ou sélectionnez **remplir les données manuellement** et fournissez les informations suivantes :

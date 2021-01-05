@@ -1,14 +1,14 @@
 ---
 title: Surveiller et protéger des fichiers dans des applications Cloud
 description: Cet article décrit la procédure de configuration d’une stratégie de données pour superviser et contrôler les données ainsi que les fichiers durant l’usage des applications cloud de votre organisation.
-ms.date: 10/7/2019
+ms.date: 01/05/2021
 ms.topic: how-to
-ms.openlocfilehash: 1fd1ae1d09838a9db5e481f3f34f546996e6a76c
-ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
+ms.openlocfilehash: a69f618b324fcdcc93077e22e54c354bf3665082
+ms.sourcegitcommit: ee66e70f711aa11501e308e53b1a4b46f2175e4e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2020
-ms.locfileid: "97369546"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97894676"
 ---
 # <a name="file-policies"></a>Stratégies de fichier
 
@@ -52,9 +52,11 @@ Voici quelques exemples de stratégies de fichier que vous pouvez créer :
 
 Pour créer une stratégie de fichier, procédez comme suit :
 
-1. Dans la console, cliquez sur **Contrôle**, puis sur **Stratégies**.
+1. Accédez à **contrôle**  >  **stratégies**  >  **information protection**.
 
-1. Cliquez sur **créer une stratégie** et sélectionnez stratégie de **fichier** .
+1. Cliquez sur **Créer une stratégie**, puis sélectionnez **Stratégie de fichier**.
+
+    ![Créer une stratégie de Information Protection](media/create-policy-from-information-protection-tab.png)
 
 1. Donnez à votre stratégie un nom et une description. Si vous le souhaitez, vous pouvez la baser sur un modèle ; pour plus d’informations sur les modèles de stratégie, consultez [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md).
 
@@ -114,6 +116,11 @@ Pour faciliter encore plus les recherches, vous pouvez désormais créer des req
 1. Dans la fenêtre contextuelle **enregistrer la requête** , nommez votre requête.
 
 1. Pour réutiliser cette requête plus tard, sous **Requêtes**, faites défiler jusqu’à **Requêtes enregistrées** et sélectionnez votre requête.
+
+## <a name="related-videos"></a>Vidéos associées
+
+> [!div class="nextstepaction"]
+> [Webinaire sur la protection des informations](webinars.md#on-demand-webinars)
 
 ## <a name="next-steps"></a>Étapes suivantes
 

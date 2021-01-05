@@ -3,12 +3,12 @@ title: Déployer Cloud App Security contrôle d’application par accès conditi
 description: Cet article fournit des informations sur le déploiement du contrôle d’application par accès conditionnel Microsoft Cloud App Security pour toute application Web à l’aide du fournisseur d’identité PingOne.
 ms.date: 09/29/2020
 ms.topic: how-to
-ms.openlocfilehash: d49d7994e577321cfc276f642f77f7c81e4c9d9f
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: ef55a9a52c67a4329533caaa2a7e5700cec87796
+ms.sourcegitcommit: 16a65ab2c8ca778d0b3cfa97b847af4c812363b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315240"
+ms.lasthandoff: 01/03/2021
+ms.locfileid: "97855827"
 ---
 # <a name="onboard-and-deploy-conditional-access-app-control-for-any-web-app-using-pingone-identity-provider-idp"></a>Intégrer et déployer des contrôle d’application par accès conditionnel pour n’importe quelle application Web à l’aide du fournisseur d’identité PingOne (IdP)
 
@@ -75,7 +75,7 @@ Suivez les étapes ci-dessous pour acheminer vos sessions d’application Web de
 
 1. Dans Cloud App Security, accédez à **examiner**  >  **applications connectées**  >  **contrôle d’application par accès conditionnel applications**.
 
-1. Cliquez sur le signe plus, puis dans la fenêtre contextuelle, sélectionnez l’application que vous souhaitez déployer, puis cliquez sur **Démarrer l’Assistant**.
+1. Cliquez sur le signe plus ( **+** ), puis dans la fenêtre contextuelle, sélectionnez l’application que vous souhaitez déployer, puis cliquez sur **Démarrer l’Assistant**.
 1. Dans la page **informations** sur l’application, sélectionnez **remplir les données manuellement**, dans l’URL du **service consommateur d’assertion** , entrez l’URL de **connexion** Salesforce que vous avez notée précédemment, puis cliquez sur **suivant**.
 
     > [!NOTE]

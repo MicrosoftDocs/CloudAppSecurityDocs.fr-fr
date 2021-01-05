@@ -3,12 +3,12 @@ title: Actions de gouvernance pour contrôler les applications connectées
 description: Cet article liste et décrit toutes les actions de gouvernance qui peuvent être effectuées dans Cloud App Security ainsi que les messages de journal qui les suivent.
 ms.date: 12/16/2020
 ms.topic: how-to
-ms.openlocfilehash: 0742759a3a4f8c220123040b21f81886b9ef3276
-ms.sourcegitcommit: bc154649585ca95590e82423aa411ab6d922bf83
+ms.openlocfilehash: 29acf61d6832f38c049eb7fa85f44d2e9e3075fe
+ms.sourcegitcommit: 16a65ab2c8ca778d0b3cfa97b847af4c812363b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97582858"
+ms.lasthandoff: 01/03/2021
+ms.locfileid: "97855334"
 ---
 # <a name="governing-connected-apps"></a>Gouvernance des applications connectées
 
@@ -154,10 +154,10 @@ Pour plus d’informations sur la façon dont les actions de gouvernance sont tr
 |Files|Fichier|Modifier le niveau d’accès du lien de partage|Modifie le niveau d’accès du lien partagé (entreprise uniquement, collaborateurs uniquement ou public).| Box|
 |Fichiers, Stratégie de fichier|Fichier | Supprimer l’accès public| Si vous êtes propriétaire d’un fichier auquel vous autorisez un accès public, il devient accessible uniquement aux autres personnes disposant d’un droit d’accès au fichier (selon le genre d’accès au fichier). | Espace de travail Google|
 |Fichiers, Stratégie de fichier|Fichier |Supprimer le lien partagé direct| Supprime un lien créé pour le fichier qui est public, mais partagé uniquement avec des personnes spécifiques.|Box, Dropbox |
-|Paramètres> Paramètres de Cloud Discovery| Cloud Discovery | Recalculer les scores Cloud Discovery |Recalcule les scores dans le catalogue d’applications cloud après une modification d’une mesure de score.| Découverte |
-|Paramètres> Paramètres de Cloud Discovery > Gérer les vues de données| Cloud Discovery | Créer une vue de données de filtre Cloud Discovery|Crée une nouvelle vue de données pour une vue plus détaillée des résultats de découverte. Par exemple, des plages d’adresses IP spécifiques. | Découverte |
-|Paramètres> Paramètres de Cloud Discovery > Supprimer les données| Cloud Discovery | Supprimer les données Cloud Discovery |Supprime toutes les données collectées à partir de sources de découverte.| Découverte |
-|Paramètres> Paramètres de Cloud Discovery > Charger les journaux manuellement/Charger les journaux automatiquement | Cloud Discovery | Analyser les données Cloud Discovery| Notification que toutes les données de journal ont été analysées. | Découverte |
+|Paramètres> Cloud Discovery paramètres| Cloud Discovery | Recalculer les scores Cloud Discovery |Recalcule les scores dans le catalogue d’applications cloud après une modification d’une mesure de score.| Découverte |
+|Paramètres> paramètres de Cloud Discovery > gérer les vues de données| Cloud Discovery | Créer une vue de données de filtre Cloud Discovery|Crée une nouvelle vue de données pour une vue plus détaillée des résultats de découverte. Par exemple, des plages d’adresses IP spécifiques. | Découverte |
+|Paramètres> paramètres de Cloud Discovery > supprimer des données| Cloud Discovery | Supprimer les données Cloud Discovery |Supprime toutes les données collectées à partir de sources de découverte.| Découverte |
+|Paramètres> Cloud Discovery paramètres > charger les journaux manuellement/charger les journaux automatiquement | Cloud Discovery | Analyser les données Cloud Discovery| Notification que toutes les données de journal ont été analysées. | Découverte |
 
 ## <a name="next-steps"></a>Étapes suivantes
 

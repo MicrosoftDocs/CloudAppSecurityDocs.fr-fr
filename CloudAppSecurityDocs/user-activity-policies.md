@@ -1,14 +1,14 @@
 ---
 title: Créer des stratégies pour contrôler les activités dans Cloud App Security
 description: Cet article fournit des instructions sur la création et l’utilisation de stratégies d’activité.
-ms.date: 03/01/2020
+ms.date: 01/03/2021
 ms.topic: how-to
-ms.openlocfilehash: 26f7b171f0a2addad3c480914c8c7845e452f9ac
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 6619c9e0a39e2d59585a8c1b73df048840a646ad
+ms.sourcegitcommit: 16a65ab2c8ca778d0b3cfa97b847af4c812363b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315718"
+ms.lasthandoff: 01/03/2021
+ms.locfileid: "97855866"
 ---
 # <a name="activity-policies"></a>Stratégies des activités
 
@@ -33,24 +33,24 @@ Lorsque ces événements se produisent, vous pouvez choisir de recevoir vous-mê
 
 Pour créer une stratégie d’activité, procédez comme suit :
 
-1. Dans la console, cliquez sur **Contrôle**, puis sur **Stratégies**.
+1. Accédez à **contrôle**  >  **stratégies**  >  **détections de menaces**.
 
-2. Cliquez sur **Créer une stratégie** et sélectionnez **Stratégie d’activité**.
+1. Cliquez sur **Créer une stratégie** et sélectionnez **Stratégie d’activité**.
 
-     ![menu Stratégie d’activité](media/activity-policy-menu.png)
+    ![Créer une stratégie de détection des menaces](media/create-policy-from-threat-detection-tab.png)
 
-3. Donnez à votre stratégie un nom et une description. Si vous le souhaitez, vous pouvez la baser sur un modèle ; pour plus d’informations sur les modèles de stratégie, consultez [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md).
+1. Donnez à votre stratégie un nom et une description. Si vous le souhaitez, vous pouvez la baser sur un modèle ; pour plus d’informations sur les modèles de stratégie, consultez [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md).
 
-4. Pour définir les actions ou autres mesures susceptibles de déclencher cette stratégie, utilisez les **Filtres d’activité**.
+1. Pour définir les actions ou autres mesures susceptibles de déclencher cette stratégie, utilisez les **Filtres d’activité**.
     > [!NOTE]
     > Pour vous assurer que vous incluez uniquement les résultats où le champ de filtre spécifié a une valeur, nous vous recommandons d’ajouter à nouveau le même champ à l’aide de l' **ensemble** de tests. Par exemple, lorsque le filtrage par **emplacement** *n’est pas égal* à une liste de pays spécifiée, ajoutez également un filtre pour l' **emplacement** *est défini*. Vous pouvez également afficher un aperçu des résultats du filtre en sélectionnant **modifier et afficher un aperçu des résultats**.
     >
     > ![Capture d’écran des paramètres de filtre, indication du champ d’emplacement défini](media/activity-example-location-isset.png)
 
-5. Sous **Paramètres de correspondance de l’activité**, sélectionnez le moment auquel la violation de stratégie est déclenchée. Vous pouvez choisir de déclencher l’action lorsqu’une seule activité correspond aux filtres, ou lorsqu’un certain nombre d’**activités répétées** sont détectées.
+1. Sous **Paramètres de correspondance de l’activité**, sélectionnez le moment auquel la violation de stratégie est déclenchée. Vous pouvez choisir de déclencher l’action lorsqu’une seule activité correspond aux filtres, ou lorsqu’un certain nombre d’**activités répétées** sont détectées.
     - Si vous choisissez **Activité répétée**, vous pouvez également définir **Dans une seule application**. Ce paramètre déclenchera une correspondance de stratégie uniquement lorsque les activités répétées se produisent dans la même application. Par exemple, 5 téléchargements depuis Box en 30 minutes déclenchent une correspondance de stratégie.
 
-6. Configurez les **Actions** à effectuer quand une correspondance est trouvée.
+1. Configurez les **Actions** à effectuer quand une correspondance est trouvée.
 
 Jetez un œil aux exemples suivants :
 

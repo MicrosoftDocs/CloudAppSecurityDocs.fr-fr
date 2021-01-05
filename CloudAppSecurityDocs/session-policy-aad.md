@@ -1,14 +1,14 @@
 ---
 title: Créer des stratégies de session dans Cloud App Security
 description: Cet article décrit la procédure de configuration d’une stratégie de session du contrôle d'application par accès conditionnel de Cloud App Security pour améliorer la visibilité des activités de session utilisateur et bloquer les téléchargements à l’aide des fonctionnalités de proxy inverse.
-ms.date: 03/31/2020
+ms.date: 01/05/2021
 ms.topic: how-to
-ms.openlocfilehash: 9e755da569c6d90274a6fd347408587a1a6732f7
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 7d3c2c2fbea1b5cae9013b84b07e59ea1c07ee83
+ms.sourcegitcommit: ee66e70f711aa11501e308e53b1a4b46f2175e4e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315427"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97894618"
 ---
 # <a name="session-policies"></a>Stratégies de session
 
@@ -38,8 +38,12 @@ Par exemple, vous pouvez décider que pour les appareils non gérés ou pour les
 
 Pour créer une stratégie de session, suivez cette procédure :
 
-1. Dans le portail, sélectionnez **Contrôle**, puis **Stratégies**.
-1. Dans la page **Stratégies**, cliquez sur **Créer une stratégie** et sélectionnez **Stratégie de session**.
+1. Accédez à **contrôle**  >  **stratégies**  >  **accès conditionnel**.
+
+1. Cliquez sur **Créer une stratégie** et sélectionnez la **Stratégie de session**.
+
+    ![Créer une stratégie d’accès conditionnel](media/create-policy-from-conditional-access-tab.png)
+
 1. Dans la fenêtre **Stratégie de session**, donnez un nom à votre stratégie, comme *Bloquer le téléchargement des documents sensibles dans Box pour les utilisateurs du service marketing*.
 1. Dans le champ **Type de contrôle de session** :
 
@@ -153,6 +157,11 @@ Vous pouvez également configurer des stratégies de session pour bloquer les lo
 Il est important d’informer les utilisateurs lorsqu’ils sont en violation d’une stratégie, afin qu’ils apprennent à se conformer aux stratégies de votre organisation. Étant donné que chaque entreprise a des besoins et des stratégies uniques, Cloud App Security vous permet de personnaliser les filtres d’une stratégie et le message qu’elle affiche à l’utilisateur lorsqu’une violation est détectée. Vous pouvez fournir des conseils spécifiques à vos utilisateurs, comme fournir des instructions sur l’étiquetage approprié d’un fichier, ou l’inscription d’un appareil non géré, pour s’assurer que les fichiers sont correctement téléchargés.
 
 Par exemple, si un utilisateur charge un fichier sans étiquette Azure Information Protection, un message peut s’afficher, expliquant que le fichier contient du contenu sensible nécessitant une étiquette appropriée. De même, si un utilisateur tente de télécharger un document à partir d’un appareil non géré, un message contenant des instructions sur la façon d’inscrire ce périphérique ou un message fournissant une explication supplémentaire de la raison pour laquelle l’appareil doit être inscrit peut s’afficher.
+
+## <a name="related-videos"></a>Vidéos associées
+
+> [!div class="nextstepaction"]
+> [Webinaire contrôle d’application par accès conditionnel](webinars.md#on-demand-webinars)
 
 ## <a name="next-steps"></a>Étapes suivantes
 

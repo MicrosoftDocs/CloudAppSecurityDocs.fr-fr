@@ -3,12 +3,12 @@ title: API List-Entities
 description: Cet article décrit la requête de liste dans l’API des entités de Cloud App Security.
 ms.date: 03/27/2020
 ms.topic: reference
-ms.openlocfilehash: bbe7e57bb50be9ca9b55fc48c1906811f8460d72
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: a93fa00db40720d8b8bf31a8494ce949402bca0b
+ms.sourcegitcommit: 90df07ce9cd64fd9c46fb6563f0249079204e174
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96314101"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97858967"
 ---
 # <a name="list---entities-api"></a>API List-Entities
 
@@ -35,7 +35,7 @@ POST /api/v1/entities/
 | --- | --- |
 | filtres | Filtrer les objets avec tous les filtres de recherche pour la demande, consultez [filtres d’entité](api-entities.md#filters) pour plus d’informations |
 | sortDirection | Sens du tri. Les valeurs possibles sont : `asc` et `desc` |
-| sortField | Champs utilisés pour trier les entités. Les valeurs possibles sont les suivantes :<br /><br />**Date**: date de création de l’entité<br /><br />**gravité**: gravité de l’entité |
+| sortField | Champs utilisés pour trier les entités. Les valeurs possibles sont les suivantes :<br />- **Date**: date de création de l’entité<br />- **gravité**: gravité de l’entité |
 | skip | Ignore le nombre spécifié d’enregistrements |
 | limit | Nombre maximal d’enregistrements retournés par la requête |
 

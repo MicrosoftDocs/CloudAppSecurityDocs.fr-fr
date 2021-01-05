@@ -3,12 +3,12 @@ title: Déployer Cloud Discovery
 description: Cet article décrit la procédure de configuration pour rendre Cloud Discovery opérationnel.
 ms.date: 08/09/2020
 ms.topic: how-to
-ms.openlocfilehash: bdb4438c18b82b7426de09b73e1ce8c2753d21a1
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: e4ac4ce0e6148ca37c4c666b94da6779578ca77a
+ms.sourcegitcommit: 16a65ab2c8ca778d0b3cfa97b847af4c812363b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315580"
+ms.lasthandoff: 01/03/2021
+ms.locfileid: "97855232"
 ---
 # <a name="set-up-cloud-discovery"></a>Configurer Cloud Discovery
 
@@ -32,7 +32,7 @@ Vous pouvez générer les types de rapports suivants :
     - [Intégration de Corrata](corrata-integration.md)
     - [Intégration de la sécurité Menlo](menlo-integration.md)
 
-- **[Api Cloud Discovery](api-discovery.md)** : utilisez l’API Cloud Discovery de Cloud App Security pour automatiser le chargement des journaux de trafic et les rapports automatisés Cloud Discovery et l’évaluation des risques. Vous pouvez également utiliser l’API pour [générer des scripts de bloc](api-discovery-script.md) et rationaliser les contrôles d’application directement sur votre appliance réseau.
+- **[Api Cloud Discovery](api-discovery.md)** : utilisez l’API Cloud Discovery de Cloud App Security pour automatiser le chargement du journal du trafic et bénéficier d’une évaluation automatisée des Cloud Discovery et des rapports. Vous pouvez également utiliser l’API pour [générer des scripts de bloc](api-discovery-script.md) et rationaliser les contrôles d’application directement sur votre appliance réseau.
 
 ## <a name="log-process-flow-from-raw-data-to-risk-assessment"></a>Flux du processus de journalisation : des données brutes à l’évaluation des risques
 

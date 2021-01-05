@@ -1,16 +1,16 @@
 ---
 title: Créer des stratégies d’accès Cloud App Security pour autoriser et bloquer l’accès
 description: Cet article décrit la procédure de configuration d’une stratégie d’accès Cloud App Security avec contrôle d’application par accès conditionnel pour autoriser et bloquer l’accès aux applications connectées via Azure AD, à l’aide de fonctionnalités de proxy.
-ms.date: 03/31/2020
+ms.date: 01/05/2021
 ms.topic: how-to
-ms.openlocfilehash: 21ecae14e030b731028975cc4c72dcd3252adf81
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 951cde88df62054cf005d26e602d27acfb5aba23
+ms.sourcegitcommit: ee66e70f711aa11501e308e53b1a4b46f2175e4e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96311500"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97894601"
 ---
-# <a name="access-policies"></a>Stratégies d'accès
+# <a name="access-policies"></a>Stratégies d’accès
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
@@ -31,12 +31,15 @@ Les stratégies d’accès Microsoft Cloud App Security permettent la surveillan
 
 Pour créer une stratégie d’activité, suivez cette procédure :
 
-1. Dans le portail, sélectionnez **Contrôle**, puis **Stratégies**.
-2. Dans la page **Stratégies**, cliquez sur **Créer une stratégie** et sélectionnez **Stratégie d’accès**.
+1. Accédez à **contrôle**  >  **stratégies**  >  **accès conditionnel**.
 
-3. Dans la fenêtre **Stratégie d’accès**, affectez un nom à votre stratégie, comme *Bloquer l’accès à partir des appareils non gérés*.
+1. Cliquez sur **Créer une stratégie** et sélectionnez **Stratégie d’accès**.
 
-4. Dans la section **Activités remplissant toutes les conditions suivantes**, sous **Source de l’activité**, sélectionnez des filtres d’activité supplémentaires à appliquer à la stratégie. Les filtres incluent les options suivantes :
+    ![Créer une stratégie d’accès conditionnel](media/create-policy-from-conditional-access-tab.png)
+
+1. Dans la fenêtre **Stratégie d’accès**, affectez un nom à votre stratégie, comme *Bloquer l’accès à partir des appareils non gérés*.
+
+1. Dans la section **Activités remplissant toutes les conditions suivantes**, sous **Source de l’activité**, sélectionnez des filtres d’activité supplémentaires à appliquer à la stratégie. Les filtres incluent les options suivantes :
 
     - **Balise de l’appareil** : Utilisez ce filtre pour identifier les appareils non gérés.
 
@@ -46,13 +49,18 @@ Pour créer une stratégie d’activité, suivez cette procédure :
 
     - **Étiquette agent utilisateur** : Utilisez ce filtre pour activer l’heuristique afin d’identifier les applications mobiles et de bureau. Ce filtre peut avoir la valeur est égal à ou n’est pas égal à. Vous devez tester ces valeurs par rapport à vos applications mobiles et vos applications de bureau pour chaque application cloud.
 
-5. Sous **Actions**, sélectionnez l’une des options suivantes :
+1. Sous **Actions**, sélectionnez l’une des options suivantes :
 
     - **Test**: définissez cette action pour autoriser explicitement l’accès en fonction des filtres de stratégie que vous définissez.
 
     - **Bloquer** : Définissez cette action pour bloquer explicitement l’accès en fonction des filtres de stratégie que vous définissez.
 
-6. Vous pouvez **Créer une alerte pour chaque événement correspondant avec le niveau de gravité de la stratégie** et définissez une limite d’alerte, puis déterminez si vous voulez que l’alerte prenne la forme d’un e-mail, d’un SMS ou des deux.
+1. Vous pouvez **Créer une alerte pour chaque événement correspondant avec le niveau de gravité de la stratégie** et définissez une limite d’alerte, puis déterminez si vous voulez que l’alerte prenne la forme d’un e-mail, d’un SMS ou des deux.
+
+## <a name="related-videos"></a>Vidéos associées
+
+> [!div class="nextstepaction"]
+> [Webinaire contrôle d’application par accès conditionnel](webinars.md#on-demand-webinars)
 
 ## <a name="next-steps"></a>Étapes suivantes
 

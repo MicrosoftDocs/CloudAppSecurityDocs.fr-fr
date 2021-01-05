@@ -1,70 +1,56 @@
 ---
-title: Créer une plage d’adresses IP-API d’enrichissement des données
-description: Cet article décrit la demande de création d’une plage d’adresses IP dans l’API d’enrichissement des données de Cloud App Security.
-ms.date: 03/27/2020
+title: API d’enrichissement des données Cloud App Security
+description: Cet article fournit des informations sur l’utilisation de l’API d’enrichissement des données.
+ms.date: 12/13/2020
 ms.topic: reference
-ms.openlocfilehash: ec84185e0523b8b9f9f172e1940302656f10316b
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 814f4e038c129576377aea9fe5e7c3e74a4b09d1
+ms.sourcegitcommit: 90df07ce9cd64fd9c46fb6563f0249079204e174
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96314509"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97859007"
 ---
-# <a name="create-ip-address-range---data-enrichment-api"></a>Créer une plage d’adresses IP-API d’enrichissement des données
+# <a name="data-enrichment-api"></a>API d’enrichissement des données
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Exécutez la demande de publication pour ajouter une nouvelle plage d’adresses IP.
+L’API enrichissement de données vous permet de créer des plages d’adresses IP identifiables, telles que les adresses IP physiques de votre bureau. Les plages d’adresses IP vous permettent de baliser, classer et personnaliser la façon dont les journaux et les alertes sont affichés et examinés. Pour plus d’informations, consultez [utilisation de plages d’adresses IP et de balises](ip-tags.md).
 
-## <a name="http-request"></a>Demande HTTP
+La liste suivante répertorie les requêtes prises en charge :
 
-```rest
-POST /api/v1/subnet/
-```
+- [Liste des plages d’adresses IP](api-data-enrichment-list.md)
+- [Créer une plage d’adresses IP](api-data-enrichment-create.md)
+- [Mettre à jour la plage d’adresses IP](api-data-enrichment-update.md)
+- [Supprimer la plage d’adresses IP](api-data-enrichment-delete.md)
 
-## <a name="request-body-parameters"></a>Paramètres du corps de la demande
+## <a name="properties"></a>Propriétés
 
-| Paramètre | Description |
-| --- | --- |
-| catégorie | ID de la catégorie de plage |
-| Sous-réseaux | Tableau de masques sous forme de chaînes (IPv4/IPv6) |
-| Organisation (facultatif) | Fournisseur de services Internet inscrit |
-| balises (facultatif) | Tableau de balises (objets dont la propriété « Text » est définie avec le nom de la balise)-New ou Existing |
+L’objet Response définit les propriétés suivantes.
 
-Les catégories suivantes sont actuellement prises en charge :
+| Propriété | Type | Description |
+| --- | --- | --- |
+| total | int | Nombre total d’enregistrements |
+| hasNext | bool | Indique s’il existe des enregistrements supplémentaires |
+| data | list | Liste des enregistrements existants |
+| _id | string | ID unique de la plage d’adresses IP |
+| name | string | Nom unique de la plage |
+| Sous-réseaux | list | Tableau de masques, d’adresses IP (IPv4/IPv6) et de chaînes d’origine |
+| location | string | Objet incluant le nom de l’emplacement, la latitude, la longitude, le code du pays et le nom du pays |
+| organization | string | Fournisseur de services Internet inscrit |
+| tags| list | Tableau d’objets nouveaux ou existants, y compris le nom de la balise, l’ID, la description, le modèle de nom et l’ID de locataire. |
+| catégorie | int | Catégorie de la plage d’adresses IP. La fourniture d’une catégorie vous permet de reconnaître facilement les activités à partir d’adresses IP intéressantes. Les valeurs possibles incluent :<br /><br />**1**: entreprise<br />**2**: administration<br />**3**: risqué<br />**4**: VPN<br />**5**: fournisseur de Cloud<br />**6**: autres |
+| lastModified | long | Horodateur de la dernière règle modifiée |
 
-| Category | Id |
-| --- | -- |
-| Entreprise | 1 |
-| Administratif | 2 |
-| Déconseillé | 3 |
-| VPN | 4 |
-| Fournisseur de cloud | 5 |
-| Autres | 6 |
+## <a name="filters"></a>Filtres
 
-## <a name="example"></a> Exemple
+Pour plus d’informations sur le fonctionnement des filtres, consultez [filtres](api-introduction.md#filters).
 
-### <a name="request"></a>Requête
+Le tableau suivant décrit les filtres pris en charge :
 
-Voici un exemple de la requête.
-
-```rest
-curl -XPOST -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/subnet/create_rule/" -d '{
-  "name":"range name",
-  "category":5,
-  "organization":"Microsoft",
-  "subnets":[
-    "192.168.1.0/24",
-    "192.168.2.0/16"
-  ],
-  "tags":[
-    "existing tag"
-  ]
-}'
-```
-
-### <a name="response"></a>response
-
-Retourne l’ID de la nouvelle plage sous la forme d’une chaîne.
+| Filtrer | Type | Opérateurs | Description |
+| --- | --- | --- | --- |
+| catégorie | entier | EQ, NEQ | Filtrez les plages d’adresses IP par catégorie. Les valeurs possibles incluent :<br /><br />**1**: entreprise<br />**2**: administration<br />**3**: risqué<br />**4**: VPN<br />**5**: fournisseur de Cloud<br />**6**: autres |
+| tags | string | EQ, NEQ | Filtrer les plages d’adresses IP par ID de balise |
+| builtIn | bool | eq | Filtrez les plages d’adresses IP par type. Les valeurs possibles sont les suivantes : **true** (intégré) ou **false** (personnalisé) |
 
 [!INCLUDE [Open support ticket](includes/support.md)]

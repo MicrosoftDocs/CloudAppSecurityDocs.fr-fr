@@ -1,14 +1,14 @@
 ---
 title: Créer des stratégies sur les applications Cloud Discovery
 description: Cet article fournit des informations sur l’utilisation des stratégies Cloud Discovery.
-ms.date: 06/29/2020
+ms.date: 01/05/2021
 ms.topic: how-to
-ms.openlocfilehash: 9e875a2d5f18696c025d3d68b578b6bdc43557e0
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 9c892eed6b1200fb658a9ea03a77eeb0a98078f8
+ms.sourcegitcommit: ee66e70f711aa11501e308e53b1a4b46f2175e4e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96313200"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97894703"
 ---
 # <a name="create-cloud-discovery-policies"></a>Créer des stratégies de Cloud Discovery
 
@@ -20,19 +20,19 @@ Vous pouvez créer des stratégies de découverte d’applications afin d’êtr
 
 Grâce aux stratégies de découverte, vous pouvez définir des alertes qui vous informent quand de nouvelles applications sont détectées au sein de votre organisation.
 
-1. Dans la console, cliquez sur **Contrôle**, puis sur **Stratégies**.
+1. Accédez à **Control**  >  **Policies**  >  **Shadow IT**.
 
-2. Cliquez sur **créer une stratégie** et sélectionnez stratégie de découverte d' **application**.
+1. Cliquez sur **créer une stratégie** et sélectionnez stratégie de découverte d' **application**.
 
-    ![menu de stratégie de découverte d’application](media/app-discovery-policy-menu.png "menu de stratégie de découverte d’application")
+    ![Créer une stratégie de Cloud Discovery](media/create-policy-from-shadow-it-tab.png)
 
-3. Attribuez un nom et une description à votre stratégie. Si vous le souhaitez, vous pouvez baser votre stratégie sur un modèle. Pour plus d’informations sur les modèles de stratégies, consultez [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md).
+1. Attribuez un nom et une description à votre stratégie. Si vous le souhaitez, vous pouvez baser votre stratégie sur un modèle. Pour plus d’informations sur les modèles de stratégies, consultez [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md).
 
-4. Définissez la **Gravité** de la stratégie.
+1. Définissez la **Gravité** de la stratégie.
 
-5. Pour définir les applications découvertes qui doivent déclencher cette stratégie, ajoutez des filtres.
+1. Pour définir les applications découvertes qui doivent déclencher cette stratégie, ajoutez des filtres.
 
-6. Vous pouvez définir un seuil pour la sensibilité de la stratégie. Activez l’option **Déclencher une correspondance de stratégie si tous les éléments suivants se produisent le même jour**. Vous pouvez définir les critères que l’application doit remplir quotidiennement pour respecter la stratégie. Sélectionnez l’un des critères suivants :
+1. Vous pouvez définir un seuil pour la sensibilité de la stratégie. Activez l’option **Déclencher une correspondance de stratégie si tous les éléments suivants se produisent le même jour**. Vous pouvez définir les critères que l’application doit remplir quotidiennement pour respecter la stratégie. Sélectionnez l’un des critères suivants :
     - Trafic quotidien
     - Données téléchargées
     - Nombre d’adresses IP
@@ -40,13 +40,13 @@ Grâce aux stratégies de découverte, vous pouvez définir des alertes qui vous
     - Nombre d’utilisateurs
     - Données chargées
 
-7. Définissez une **Limite d’alerte quotidienne** sous **Alertes**. Choisissez si l’alerte doit être envoyée par e-mail, par SMS, ou les deux. Ensuite, entrez les numéros de téléphone et les adresses e-mail des destinataires.
+1. Définissez une **Limite d’alerte quotidienne** sous **Alertes**. Choisissez si l’alerte doit être envoyée par e-mail, par SMS, ou les deux. Ensuite, entrez les numéros de téléphone et les adresses e-mail des destinataires.
     - Si vous cliquez sur **Enregistrer ces paramètres d’alerte en tant que paramètres par défaut pour votre organisation**, les prochaines stratégies qui seront définies utiliseront ces paramètres.
     - Si vous avez déjà configuré des paramètres par défaut, vous pouvez sélectionner **Utiliser les paramètres par défaut de votre organisation**.
 
-8. Sélectionnez les actions de **gouvernance** à appliquer quand une application remplit tous les critères de cette stratégie. Vous pouvez étiqueter les stratégies comme étant **Approuvées** ou **Non approuvées**, ou bien utiliser une étiquette personnalisée.
+1. Sélectionnez les actions de **gouvernance** à appliquer quand une application remplit tous les critères de cette stratégie. Vous pouvez étiqueter les stratégies comme étant **Approuvées** ou **Non approuvées**, ou bien utiliser une étiquette personnalisée.
 
-9. Cliquez sur **Créer**.
+1. Cliquez sur **Créer**.
 
 > [!NOTE]
 >
@@ -67,27 +67,32 @@ Cloud App Security examine tous les journaux de votre environnement Cloud Discov
 
 1. Dans la console, cliquez sur **Contrôle**, puis sur **Stratégies**.
 
-2. Cliquez sur **Créer une stratégie** et sélectionnez **Créer une stratégie de détection des anomalies de Cloud Discovery**.
+1. Cliquez sur **Créer une stratégie** et sélectionnez **Créer une stratégie de détection des anomalies de Cloud Discovery**.
 
     ![menu de stratégie de détection des anomalies cloud discovery](media/cloud-discovery-anomaly-detection-policy-menu.png "menu de stratégie de détection des anomalies cloud discovery")
 
-3. Attribuez un nom et une description à votre stratégie. Si vous le souhaitez, vous pouvez baser la stratégie sur un modèle. Pour plus d’informations sur les modèles de stratégie, consultez [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md).
+1. Attribuez un nom et une description à votre stratégie. Si vous le souhaitez, vous pouvez baser la stratégie sur un modèle. Pour plus d’informations sur les modèles de stratégie, consultez [Contrôler les applications cloud avec des stratégies](control-cloud-apps-with-policies.md).
 
-4. Pour définir les applications découvertes qui doivent déclencher cette stratégie, cliquez sur **Ajouter des filtres**.
+1. Pour définir les applications découvertes qui doivent déclencher cette stratégie, cliquez sur **Ajouter des filtres**.
 
     Les filtres peuvent être sélectionnés dans des listes déroulantes. Pour ajouter des filtres, cliquez sur le bouton plus (+). Pour supprimer un filtre, cliquez sur le « X » en regard de celui-ci.
 
-5. Sous **Appliquer à**, choisissez si cette stratégie doit s’appliquer à **Tous les rapports continus** ou à des **Rapports continus spécifiques**. Indiquez si la stratégie s’applique à des **Utilisateurs**, à des **Adresses IP**, ou aux deux.
+1. Sous **Appliquer à**, choisissez si cette stratégie doit s’appliquer à **Tous les rapports continus** ou à des **Rapports continus spécifiques**. Indiquez si la stratégie s’applique à des **Utilisateurs**, à des **Adresses IP**, ou aux deux.
 
-6. Sous **Générer des alertes uniquement en cas d’activités suspectes après la date**, sélectionnez les dates pendant lesquelles l’occurrence d’une activité anormale doit déclencher une alerte.
+1. Sous **Générer des alertes uniquement en cas d’activités suspectes après la date**, sélectionnez les dates pendant lesquelles l’occurrence d’une activité anormale doit déclencher une alerte.
 
-7. Définissez une **Limite d’alerte quotidienne** sous **Alertes**. Choisissez si l’alerte doit être envoyée par e-mail, par SMS, ou les deux. Ensuite, entrez les numéros de téléphone et les adresses e-mail des destinataires.
+1. Définissez une **Limite d’alerte quotidienne** sous **Alertes**. Choisissez si l’alerte doit être envoyée par e-mail, par SMS, ou les deux. Ensuite, entrez les numéros de téléphone et les adresses e-mail des destinataires.
     - Si vous cliquez sur **Enregistrer ces paramètres d’alerte en tant que paramètres par défaut pour votre organisation**, les prochaines stratégies qui seront définies utiliseront ces paramètres.
     - Si vous avez déjà configuré des paramètres par défaut, vous pouvez sélectionner **Utiliser les paramètres par défaut de votre organisation**.
 
-8. Cliquez sur **Créer**.
+1. Cliquez sur **Créer**.
 
-![nouvelle stratégie de détection d’anomalie](media/new-discovery-anomaly-policy.png "nouvelle stratégie de détection d’anomalie")
+    ![nouvelle stratégie de détection d’anomalie](media/new-discovery-anomaly-policy.png "nouvelle stratégie de détection d’anomalie")
+
+## <a name="related-videos"></a>Vidéos associées
+
+> [!div class="nextstepaction"]
+> [Webinaire sur la configuration de la découverte d’application et du collecteur de journaux](webinars.md#on-demand-webinars)
 
 ## <a name="next-steps"></a>Étapes suivantes
 

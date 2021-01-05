@@ -3,12 +3,12 @@ title: Définir des plages d’adresses IP et des balises
 description: Cet article fournit des instructions sur l’utilisation des balises et des catégories d’adresses IP.
 ms.date: 11/09/2020
 ms.topic: how-to
-ms.openlocfilehash: 80058d36ecf7496c9dad2fe8253efa9775076452
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 295b4b812679600254cb2a82b8efef57aa71757b
+ms.sourcegitcommit: 16a65ab2c8ca778d0b3cfa97b847af4c812363b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315053"
+ms.lasthandoff: 01/03/2021
+ms.locfileid: "97855742"
 ---
 # <a name="working-with-ip-ranges-and-tags"></a><a name="IPtagsandRanges"></a>Utilisation des balises et des plages d’adresses IP
 
@@ -32,7 +32,7 @@ Les balises d’adresse IP intégrées et les balises IP personnalisées sont co
 
 ## <a name="create-an-ip-address-range"></a>Créer une plage d’adresses IP
 
-Dans la barre de menus, cliquez sur l’icône des paramètres. Sélectionnez **Plage d’adresses IP**. Cliquez sur le signe + pour ajouter des plages d’adresses IP et définissez les champs suivants :
+Dans la barre de menus, cliquez sur l’icône des paramètres. Sélectionnez **Plage d’adresses IP**. Cliquez sur le signe plus ( **+** ) pour ajouter des plages d’adresses IP et définir les champs suivants :
 
 1. Affectez un **Nom** à votre plage IP. Le nom n’apparaît pas dans le journal des activités ; il sert uniquement à gérer votre plage IP.
 

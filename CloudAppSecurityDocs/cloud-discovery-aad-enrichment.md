@@ -3,18 +3,18 @@ title: Enrichir les données Cloud App Security Discovery avec des noms d’util
 description: Cet article fournit des informations sur la façon d’enrichir les données Cloud App Security Discovery avec des noms d’utilisateur Azure AD.
 ms.date: 12/10/2018
 ms.topic: how-to
-ms.openlocfilehash: bcedf73defb825bf3188592f719814755de89a25
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 88564fe5b0ee719d06557942da647dbe828a0713
+ms.sourcegitcommit: 16a65ab2c8ca778d0b3cfa97b847af4c812363b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96313472"
+ms.lasthandoff: 01/03/2021
+ms.locfileid: "97855725"
 ---
 # <a name="cloud-discovery-enrichment"></a>Enrichissement de Cloud Discovery
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Les données Cloud Discovery peuvent maintenant être enrichies avec des données de nom d’utilisateur Azure Active Directory. Quand vous activez cette fonctionnalité, le nom d’utilisateur reçu dans les journaux de trafic de découverte est mis en correspondance et remplacé par le nom d’utilisateur Azure AD. Avez l’enrichissement de Cloud Discovery, vous disposez des fonctionnalités suivantes :
+Les données Cloud Discovery peuvent maintenant être enrichies avec des données de nom d’utilisateur Azure Active Directory. Quand vous activez cette fonctionnalité, le nom d’utilisateur reçu dans les journaux de trafic de découverte est mis en correspondance et remplacé par le nom d’utilisateur Azure AD. Cloud Discovery enrichissement active les fonctionnalités suivantes :
 
 - Vous pouvez examiner l’utilisation de l’informatique fantôme par l’utilisateur Azure Active Directory.
 - Vous pouvez mettre en corrélation l’utilisation de l’application cloud découverte avec les activités collectées par l’API.

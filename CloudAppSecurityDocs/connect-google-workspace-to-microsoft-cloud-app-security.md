@@ -3,12 +3,12 @@ title: Connexion de l’espace de travail Google à Cloud App Security
 description: Cet article fournit des informations sur la connexion de votre espace de travail Google à Cloud App Security à l’aide du connecteur API pour la visibilité et le contrôle de l’utilisation.
 ms.date: 11/27/2019
 ms.topic: how-to
-ms.openlocfilehash: 5c2385f59572434b07730213232c6701589a654f
-ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
+ms.openlocfilehash: 0d9d99d650ab0d68f8bd6dd129f6b01c78fb2cc5
+ms.sourcegitcommit: 16a65ab2c8ca778d0b3cfa97b847af4c812363b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2020
-ms.locfileid: "97370409"
+ms.lasthandoff: 01/03/2021
+ms.locfileid: "97855572"
 ---
 # <a name="connect-google-workspace-to-microsoft-cloud-app-security"></a>Connexion de l’espace de travail Google à Microsoft Cloud App Security
 
@@ -116,7 +116,7 @@ Cet article fournit des instructions pour connecter Microsoft Cloud App Security
 
     **Pour une organisation de l’espace de travail Google qui n’a pas encore d’instance GCP connectée**
 
-    - Dans la page **applications connectées** , cliquez sur le signe plus, puis sélectionnez **espace de travail Google**.
+    - Dans la page **applications connectées** , cliquez sur le signe plus ( **+** ), puis sélectionnez **espace de travail Google**.
 
 1. Dans la fenêtre contextuelle, renseignez les informations suivantes :
 

@@ -1,14 +1,14 @@
 ---
 title: Intégrer Azure Active Directory Identity Protection avec Cloud App Security
 description: Cet article fournit des informations sur la façon de tirer parti des alertes de protection des identités dans Cloud App Security pour la détection hybride des risques.
-ms.date: 06/28/2020
+ms.date: 12/27/2020
 ms.topic: how-to
-ms.openlocfilehash: f699809c340dfbb45a5c6ee0aae98da13b815fff
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: f71e73dfd3ca8be7d6ed5e03847ac6e11e290818
+ms.sourcegitcommit: 4900168878f42e9fa79873df4b7c2d81991b5b27
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96311381"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97857952"
 ---
 # <a name="azure-active-directory-identity-protection-integration"></a>Intégration de Azure Active Directory Identity Protection
 
@@ -50,7 +50,9 @@ Pour désactiver l’intégration de Cloud App Security avec Identity Protection
 1. Désactivez la case à **coAzure AD Identity Protection activer l’intégration des alertes** , puis cliquez sur **Enregistrer**.
 
 > [!NOTE]
-> Lorsque l’intégration est désactivée, les alertes de protection des identités existantes sont conservées conformément aux stratégies de rétention de Cloud App Security.
+>
+> - Lorsque l’intégration est désactivée, les alertes de protection des identités existantes sont conservées conformément aux stratégies de rétention de Cloud App Security.
+> - Étant donné que Cloud App Security consomme uniquement des connexions interactives à partir de Azure AD, certaines alertes risquent de ne pas afficher les activités associées. Vous pouvez examiner ces activités dans le portail Azure AD.
 
 ## <a name="configure-identity-protection-policies"></a>Configurer des stratégies de protection des identités
 
@@ -62,6 +64,9 @@ Les stratégies suivantes sont disponibles :
 |---|---|---|---|
 |Informations d'identification divulguées|Affiche les alertes des informations d’identification divulguées, les informations d’identification valides de l’utilisateur ont été divulguées|activé|Faible-recevoir toutes les alertes|
 |Connexion risquée|Agrège plusieurs détections de connexion risquée, les connexions qui n’ont pas été effectuées par l’utilisateur|activé|Alertes haute réception uniquement de gravité élevée|
+
+> [!NOTE]
+> Cloud App Security n’envoie pas de notifications par courrier électronique pour les alertes de protection d’identité. Toutefois, vous pouvez configurer des notifications par courrier électronique pour eux dans le portail identity protection.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
