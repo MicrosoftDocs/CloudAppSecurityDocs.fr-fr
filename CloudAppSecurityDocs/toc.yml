@@ -21,7 +21,7 @@
   items:
     - name: Mise en route
       href: getting-started-with-cloud-app-security.md
-    - name: Bonnes pratiques
+    - name: meilleures pratiques recommandées.
       href: best-practices.md
 - name: Tutoriels
   items:
@@ -229,20 +229,18 @@
         - name: Contrôler les applications cloud avec des stratégies
           href: control-cloud-apps-with-policies.md
           items:
-            - name: Stratégies Cloud Discovery
-              href: cloud-discovery-policies.md
+            - name: Détection de menaces
               items:
-                - name: Stratégie de détection des anomalies Cloud Discovery
-                  href: cloud-discovery-anomaly-detection-policy.md
-            - name: Stratégies des activités
-              href: user-activity-policies.md
-            - name: Stratégie de détection des anomalies
-              href: anomaly-detection-policy.md
-            - name: Stratégies OAuth
-              href: app-permission-policy.md
-            - name: Stratégies de fichier
-              href: data-protection-policies.md
+                - name: Stratégies des activités
+                  href: user-activity-policies.md
+                - name: Stratégie de détection des anomalies
+                  href: anomaly-detection-policy.md
+                - name: Stratégies OAuth
+                  href: app-permission-policy.md
+            - name: Information Protection
               items:
+                - name: Stratégies de fichier
+                  href: data-protection-policies.md
                 - name: Inspection du contenu
                   href: content-inspection.md
                   items:
@@ -252,12 +250,18 @@
                       href: dcs-inspection.md
                     - name: Utilisation du moteur RegEx
                       href: working-with-the-regex-engine.md
-            - name: Stratégies de contrôle d’application par accès conditionnel
+            - name: Stratégies d’accès conditionnel
               items:
                 - name: Stratégies d'accès
                   href: access-policy-aad.md
                 - name: Stratégies de session
                   href: session-policy-aad.md
+            - name: Stratégies informatiques fantômes
+              items:
+                - name: Stratégies Cloud Discovery
+                  href: cloud-discovery-policies.md
+                - name: Stratégie de détection des anomalies Cloud Discovery
+                  href: cloud-discovery-anomaly-detection-policy.md
             - name: Référence sur les modèles de stratégie
               href: policy-template-reference.md
         - name: Gouverner les applications connectées
@@ -280,15 +284,9 @@
               href: icap-stunnel.md
             - name: Intégrations supplémentaires
               href: additional-integrations.md
-        - name: Automatiser les processus et les flux de travail
-          items:
-            - name: Utiliser l’API REST
-              href: api-tokens.md
-            - name: Examiner les activités avec des API
-              href: investigate-activities-api.md
-            - name: Utiliser Microsoft Power Automate
-              href: flow-integration.md
-- name: Informations de référence
+        - name: Automatiser les processus à l’aide de Microsoft Power Automate
+          href: flow-integration.md
+- name: Référence
   items:
     - name: Attester votre application
       href: attest-your-app.md
@@ -318,14 +316,26 @@
               href: api-discovery-finalize.md
             - name: Générer un script de bloc
               href: api-discovery-script.md
-        - name: Amélioration des données
+        - name: Enrichissement des données
           items:
-            - name: Créer une plage d’adresses IP
+            - name: Vue d’ensemble
               href: api-data-enrichment.md
+            - name: Gérer les plages d’adresses IP à l’aide de l’API
+              href: api-data-enrichment-manage-script.md
+            - name: Répertorier les plages d’adresses iP
+              href: api-data-enrichment-list.md
+            - name: Créer une plage d’adresses IP
+              href: api-data-enrichment-create.md
+            - name: Mettre à jour une plage d’adresses IP
+              href: api-data-enrichment-update.md
+            - name: Supprimer une plage d’adresses IP
+              href: api-data-enrichment-delete.md
         - name: Activités
           items:
             - name: Vue d’ensemble
               href: api-activities.md
+            - name: Examiner les activités avec des API
+              href: api-activities-investigate-script.md
             - name: Lister les activités
               href: api-activities-list.md
             - name: Récupérer l’activité
