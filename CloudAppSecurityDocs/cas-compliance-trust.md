@@ -1,14 +1,14 @@
 ---
 title: Conformité Cloud App Security, sécurité des données, confidentialité, confiance
 description: Cet article décrit l’offre de conformité Cloud App Security, le centre de confidentialité, la confidentialité et la sécurité des données.
-ms.date: 10/18/2020
+ms.date: 01/04/2021
 ms.topic: overview
-ms.openlocfilehash: 33aa4d7693357cef452cee14974b6892e00f338a
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 752e5b8134179993076b2e61c2e5b44ab0d29b61
+ms.sourcegitcommit: 4900168878f42e9fa79873df4b7c2d81991b5b27
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96313506"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97857969"
 ---
 # <a name="microsoft-cloud-app-security-data-security-and-privacy"></a>Sécurité et confidentialité des données Microsoft Cloud App Security
 
@@ -151,7 +151,7 @@ Microsoft Cloud App Security vous offre la possibilité d'[exporter](activity-fi
 
 ### <a name="encryption"></a>Chiffrement
 
-Microsoft utilise la technologie de chiffrement pour protéger vos données pendant qu’elles sont au repos dans une base de données Microsoft et lorsqu’elles transitent entre les appareils des utilisateurs et les centres de données de Cloud App Security.
+Microsoft utilise la technologie de chiffrement pour protéger vos données pendant qu’elles sont au repos dans une base de données Microsoft et lorsqu’elles transitent entre les appareils des utilisateurs et les centres de données de Cloud App Security. En outre, toutes les communications entre Cloud App Security et les applications connectées sont chiffrées à l’aide du protocole HTTPS.
 
 > [!NOTE]
 > Cloud App Security s’appuie sur les protocoles TLS (Transport Layer Security) 1.2+ pour fournir un chiffrement de pointe. Les applications clientes natives et les navigateurs qui ne prennent pas en charge TLS 1.2+ ne sont pas accessibles lorsqu’ils sont configurés avec le contrôle de session. Toutefois, les applications SaaS qui utilisent TLS 1.1 ou une version antérieure apparaissent dans le navigateur comme utilisant TLS 1.2+ lorsqu’elles sont configurées avec Cloud App Security.

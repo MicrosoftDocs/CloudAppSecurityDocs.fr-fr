@@ -3,12 +3,12 @@ title: Déploiement de Cloud App Security
 description: Ce guide de démarrage rapide décrit le processus de mise en route de Cloud App Security, qui permet d’utiliser les applications cloud, de les contrôler et d’obtenir des insights les concernant.
 ms.date: 06/07/2020
 ms.topic: quickstart
-ms.openlocfilehash: 17a6416c7af8a6da814ad267307eea603e50604b
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: f17608329facabe6f48ae20938c44f3e8ef1b05a
+ms.sourcegitcommit: 16a65ab2c8ca778d0b3cfa97b847af4c812363b2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96314883"
+ms.lasthandoff: 01/03/2021
+ms.locfileid: "97855536"
 ---
 # <a name="quickstart-get-started-with-microsoft-cloud-app-security"></a>Démarrage rapide : Bien démarrer avec Microsoft Cloud App Security
 
@@ -49,7 +49,7 @@ Pour accéder au portail Cloud App Security, suivez le lien [https://portal.clou
 Tâche obligatoire : Connecter des applications
 
 1. Dans la roue dentée des paramètres, sélectionnez **Connecteurs d’application**.
-1. Cliquez sur le signe plus pour ajouter une application et sélectionnez une application.
+1. Cliquez sur le signe plus ( **+** ) pour ajouter une application et sélectionnez une application.
 1. Suivez la procédure de configuration pour connecter l’application.
 
 **Pourquoi connecter une application ?**
@@ -131,7 +131,7 @@ Tâche recommandée : Configurer les paramètres importants
 
 1. Dans la roue dentée Paramètres, sélectionnez **Paramètres de Cloud Discovery**.
 1. Dans la roue dentée des paramètres, sélectionnez **Plages d’adresses IP**.
-1. Cliquez sur le signe plus pour ajouter une plage d’adresses IP.
+1. Cliquez sur le signe plus ( **+** ) pour ajouter une plage d’adresses IP.
 1. Entrez les **détails**, **l’emplacement**, les **étiquettes** et la **catégorie** de la plage d’adresses IP.
 1. Choisissez **Créer**.
 
