@@ -1,14 +1,14 @@
 ---
 title: Créer des stratégies pour contrôler les applications OAuth dans Cloud App Security
 description: Cet article fournit des instructions sur la création et l’utilisation de stratégies d’autorisation d’application dans Microsoft Cloud App Security.
-ms.date: 11/27/2019
+ms.date: 01/11/2021
 ms.topic: how-to
-ms.openlocfilehash: 53b3c8d10bdc11714cffcc4bcd9402ee3a0e0adb
-ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
+ms.openlocfilehash: 3fe565607f59834cf1b4a6931b087b597c3f5c8d
+ms.sourcegitcommit: 04d8731dce2a3b3b2d10bbfa27e5dc80b0a3e0f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2020
-ms.locfileid: "97369935"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98062700"
 ---
 # <a name="oauth-app-policies"></a>Stratégies d’application OAuth
 
@@ -55,7 +55,9 @@ En plus des stratégies d’application OAuth que vous pouvez créer, les strat�
 -->
 
 > [!NOTE]
-> Les stratégies de détection des anomalies sont uniquement disponibles pour les applications OAuth autorisées dans votre Azure Active Directory.
+>
+> - Les stratégies de détection des anomalies sont uniquement disponibles pour les applications OAuth autorisées dans votre Azure Active Directory.
+> - Impossible de modifier la gravité des stratégies de détection des anomalies des applications OAuth.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

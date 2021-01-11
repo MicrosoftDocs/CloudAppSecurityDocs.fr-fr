@@ -1,14 +1,14 @@
 ---
 title: Gérer l’accès administrateur au portail Cloud App Security
 description: Cet article explique comment définir l’accès au portail Cloud App Security pour vos administrateurs.
-ms.date: 11/25/2020
+ms.date: 01/11/2021
 ms.topic: how-to
-ms.openlocfilehash: ef72326fd8c02b40230074c9029a091b8d0cc24a
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: b715ccf3495978ab2c7359507562347091a100a6
+ms.sourcegitcommit: 04d8731dce2a3b3b2d10bbfa27e5dc80b0a3e0f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315002"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98062785"
 ---
 # <a name="manage-admin-access"></a>Gérer l’accès administrateur
 
@@ -20,15 +20,13 @@ Microsoft Cloud App Security prend en charge le contrôle d’accès basé sur l
 
 Par défaut, les rôles d’administrateur Office 365 et [Azure Active Directory (Azure AD)](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) suivants ont accès aux Cloud App Security :
 
-- **Administrateur général et Administrateur de la sécurité :** les administrateurs avec un **Accès total** disposent d’autorisations complètes dans Cloud App Security. Ils peuvent ajouter des administrateurs, ajouter des stratégies et des paramètres, charger des journaux et effectuer des actions de gouvernance.
+- Administrateur **général et administrateur de sécurité**: les administrateurs disposant d’un **accès complet** disposent d’autorisations complètes dans Cloud App Security. Ils peuvent ajouter des administrateurs, ajouter des stratégies et des paramètres, charger des journaux et effectuer des actions de gouvernance.
 
-- **Administrateur de conformité** : dispose d’autorisations en lecture seule et peut gérer les alertes. Impossible d’accéder aux recommandations de sécurité pour les plateformes Cloud. Peut créer et modifier des stratégies de fichier, autoriser des actions de gouvernance de fichier et afficher tous les rapports intégrés sous Gestion des données.
+- **Administrateur de conformité**: dispose d’autorisations en lecture seule et peut gérer les alertes. Impossible d’accéder aux recommandations de sécurité pour les plateformes Cloud. Peut créer et modifier des stratégies de fichier, autoriser des actions de gouvernance de fichier et afficher tous les rapports intégrés sous Gestion des données.
 
-- **Administrateur des données de conformité :** Possède des autorisations en lecture seule, peut créer et modifier des stratégies de fichier, autoriser des actions de gouvernance de fichiers et afficher tous les rapports de découverte. Impossible d’accéder aux recommandations de sécurité pour les plateformes Cloud.
+- **Administrateur des données de conformité**: dispose d’autorisations en lecture seule, peut créer et modifier des stratégies de fichier, autoriser des actions de gouvernance de fichiers et afficher tous les rapports de découverte. Impossible d’accéder aux recommandations de sécurité pour les plateformes Cloud.
 
-- **Opérateur de sécurité :** Possède des autorisations en lecture seule et peut gérer les alertes.
-
-- **Lecteur Sécurité** : dispose d’autorisations en lecture seule et peut gérer les alertes. Le Lecteur Sécurité ne peut pas effectuer les actions suivantes :
+- **Opérateur de sécurité et lecteur de sécurité**: disposent d’autorisations en lecture seule et peuvent gérer les alertes. Ces administrateurs ne sont pas autorisés à exécuter les actions suivantes :
 
   - Créer des stratégies ou modifier et changer des stratégies existantes
   - Effectuer des actions de gouvernance
@@ -42,7 +40,7 @@ Par défaut, les rôles d’administrateur Office 365 et [Azure Active Directory
   - Accéder à la page Gérer des rapports d’instantanés
   - Accès et modification de l’agent SIEM
 
-- **Lecteur global :** Dispose d’un accès complet en lecture seule à tous les aspects de Cloud App Security. Impossible de modifier des paramètres ou d’effectuer des actions.
+- **Lecteur global**: dispose d’un accès complet en lecture seule à tous les aspects de Cloud App Security. Impossible de modifier des paramètres ou d’effectuer des actions.
 
 > [!NOTE]
 > Les rôles Office 365 et Azure AD ne sont pas répertoriés dans la page **gérer l’accès administrateur** .
@@ -51,7 +49,7 @@ Par défaut, les rôles d’administrateur Office 365 et [Azure Active Directory
 
 Les Cloud App Security rôles d’administrateur spécifiques suivants peuvent être configurés dans le portail Cloud App Security :
 
-- **Administrateur d’application/d’instance :** Dispose d’autorisations complètes ou en lecture seule pour toutes les données de Cloud App Security qui traitent exclusivement de l’application ou de l’instance spécifique d’une application sélectionnée. Par exemple, vous accordez à un utilisateur l’autorisation d’administrateur sur votre instance de Box European. L’administrateur verra uniquement les données qui sont liées à l’instance de Box European, qu’il s’agisse de fichiers, d’activités, de stratégies ou d’alertes :
+- **Administrateur d’application/d’instance**: dispose d’autorisations complètes ou en lecture seule pour toutes les données de Cloud App Security qui traitent exclusivement de l’application ou de l’instance spécifique d’une application sélectionnée. Par exemple, vous accordez à un utilisateur l’autorisation d’administrateur sur votre instance de Box European. L’administrateur verra uniquement les données qui sont liées à l’instance de Box European, qu’il s’agisse de fichiers, d’activités, de stratégies ou d’alertes :
 
   - Page des activités : seules les activités concernant l’application spécifique
   - Alertes : seules les alertes relatives à l’application spécifique
@@ -65,7 +63,7 @@ Les Cloud App Security rôles d’administrateur spécifiques suivants peuvent �
   - Actions de gouvernance : uniquement pour l’application/instance spécifique
   - Recommandations de sécurité pour les plateformes Cloud-aucune autorisation
 
-- **Administrateur du groupe d’utilisateurs :** Dispose d’autorisations complètes ou en lecture seule pour toutes les données de Cloud App Security qui traitent exclusivement des groupes spécifiques qui leur sont affectés. Par exemple, si vous attribuez des autorisations d’administrateur d’utilisateur au groupe « Germany-tous les utilisateurs », l’administrateur peut afficher et modifier les informations dans Cloud App Security uniquement pour ce groupe d’utilisateurs. L’administrateur du groupe d’utilisateurs a l’accès suivant :
+- **Administrateur du groupe d’utilisateurs**: dispose d’autorisations complètes ou en lecture seule pour toutes les données de Cloud App Security qui traitent exclusivement des groupes spécifiques qui leur sont affectés. Par exemple, si vous attribuez des autorisations d’administrateur d’utilisateur au groupe « Germany-tous les utilisateurs », l’administrateur peut afficher et modifier les informations dans Cloud App Security uniquement pour ce groupe d’utilisateurs. L’administrateur du groupe d’utilisateurs a l’accès suivant :
 
   - Page des activités : seules les activités concernant les utilisateurs dans le groupe
   - Alertes : seules les alertes relatives aux utilisateurs dans le groupe
@@ -84,7 +82,7 @@ Les Cloud App Security rôles d’administrateur spécifiques suivants peuvent �
     > - Pour affecter des groupes aux administrateurs de groupe d’utilisateurs, vous devez d’abord [importer des groupes d’utilisateurs](user-groups.md) à partir d’applications connectées.
     > - Vous pouvez uniquement affecter des autorisations Admins du groupe d’utilisateurs aux groupes de Azure AD importés.
 
-- **Cloud Discovery administrateur général :** A l’autorisation d’afficher et de modifier tous les paramètres et données de Cloud Discovery. L’administrateur de la découverte globale a l’accès suivant :
+- **Cloud Discovery administrateur général**: a l’autorisation d’afficher et de modifier tous les paramètres et données Cloud Discovery. L’administrateur de la découverte globale a l’accès suivant :
 
   - Paramètres
     - Paramètres du système - Affichage uniquement
@@ -101,7 +99,7 @@ Les Cloud App Security rôles d’administrateur spécifiques suivants peuvent �
   - Actions liées à la gouvernance - Cloud Discovery uniquement
   - Recommandations de sécurité pour les plateformes Cloud-aucune autorisation
 
-- **Cloud Discovery l’administrateur du rapport :** Dispose des autorisations pour afficher toutes les données dans Cloud App Security qui traitent exclusivement des rapports Cloud Discovery spécifiques sélectionnés. Par exemple, vous pouvez accorder une autorisation d’administrateur à un rapport continu à partir de Microsoft Defender ATP. L’administrateur de la découverte verra uniquement les données de Cloud Discovery relatives à cette source de données et au catalogue d’applications. Cet administrateur n’aura pas accès aux pages des **activités**, des **fichiers** ou des **recommandations de sécurité** et un accès limité aux stratégies.
+- **Cloud Discovery administrateur de rapports**: dispose des autorisations pour afficher toutes les données dans Cloud App Security qui traitent exclusivement des rapports d’Cloud Discovery spécifiques sélectionnés. Par exemple, vous pouvez accorder une autorisation d’administrateur à un rapport continu à partir de Microsoft Defender ATP. L’administrateur de la découverte verra uniquement les données de Cloud Discovery relatives à cette source de données et au catalogue d’applications. Cet administrateur n’aura pas accès aux pages des **activités**, des **fichiers** ou des **recommandations de sécurité** et un accès limité aux stratégies.
 
 > [!NOTE]
 > Les rôles d’administrateur de Cloud App Security intégrés fournissent uniquement des autorisations d’accès à Cloud App Security.
@@ -153,4 +151,4 @@ De plus, pour autoriser les fournisseurs MSSP à offrir des services sur plusieu
 ## <a name="next-steps"></a>Étapes suivantes
 
 > [!div class="nextstepaction"]
-> [Configurer Cloud Discovery](set-up-cloud-discovery.md)
+> [Configuration de Cloud Discovery](set-up-cloud-discovery.md)

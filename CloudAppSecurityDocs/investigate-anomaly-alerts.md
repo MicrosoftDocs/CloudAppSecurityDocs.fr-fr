@@ -3,12 +3,12 @@ title: Cloud App Security Guide d’enquête sur les alertes de détection d’a
 description: Cet article explique comment analyser les Cloud App Security alertes de détection d’anomalies émises lorsque des attaques sont détectées contre votre organisation.
 ms.date: 06/08/2020
 ms.topic: how-to
-ms.openlocfilehash: 6c3a099153da4ac69961fd759a26c08a31e6867b
-ms.sourcegitcommit: 40d17309b8729eb914ea91ba5fa7017340231488
+ms.openlocfilehash: 06920ce7812adc3d2a3ac98ecda86b9becbe7141
+ms.sourcegitcommit: 04d8731dce2a3b3b2d10bbfa27e5dc80b0a3e0f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "97808978"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98062768"
 ---
 # <a name="how-to-investigate-anomaly-detection-alerts"></a>Comment examiner les alertes de détection d’anomalies
 
@@ -201,18 +201,6 @@ Cette détection identifie les applications avec des caractères, tels que des l
     - Applications qui n’ont pas été mises à jour récemment. Cela peut indiquer une application qui n’est plus prise en charge.
     - Applications avec des autorisations inadaptées. Cela peut indiquer qu’une application est à risque.
 1. Si vous pensez toujours qu’une application est suspecte, vous pouvez rechercher le nom de l’application, l’éditeur et l’URL en ligne.
-
-### <a name="unusual-addition-of-credentials-to-an-oauth-app"></a>Ajout inhabituel des informations d’identification à une application OAuth
-
-Cette détection identifie l’ajout suspect des informations d’identification privilégiées à une application OAuth. Cela peut indiquer qu’un attaquant a compromis l’application et l’utilise pour une activité malveillante.
-
-> [!NOTE]
-> Étant donné que le risque lié à une attaque réussie est élevé, Cloud App Security vous avertit également des détections de la mise à jour à la mi-septembre 2020.
-> Les alertes pour les événements passés ont le titre « alerte système : ajout inhabituel des informations d’identification à une application OAuth » et le type d’alerte est MCAS_ALERT_MANAGEMENT_GENERIC.
-
-**Période d’apprentissage**
-
-L’apprentissage de l’environnement de votre organisation nécessite une période de sept jours au cours de laquelle vous pouvez vous attendre à un volume élevé d’alertes.
 
 ## <a name="execution-alerts"></a>Alertes d’exécution
 
@@ -447,6 +435,18 @@ Cette stratégie est basée sur l’apprentissage du comportement de connexion n
     - Adresse IP et emplacement
 1. Identifiez l’adresse IP source ou l’emplacement où la tentative d’authentification s’est produite.
 1. Identifiez si l’utilisateur a récemment modifié son mot de passe et que tous les appareils et applications ont le mot de passe mis à jour.
+
+### <a name="unusual-addition-of-credentials-to-an-oauth-app"></a>Ajout inhabituel des informations d’identification à une application OAuth
+
+Cette détection identifie l’ajout suspect des informations d’identification privilégiées à une application OAuth. Cela peut indiquer qu’un attaquant a compromis l’application et l’utilise pour une activité malveillante.
+
+> [!NOTE]
+> Étant donné que le risque lié à une attaque réussie est élevé, Cloud App Security vous avertit également des détections de la mise à jour à la mi-septembre 2020.
+> Les alertes pour les événements passés ont le titre « alerte système : ajout inhabituel des informations d’identification à une application OAuth » et le type d’alerte est MCAS_ALERT_MANAGEMENT_GENERIC.
+
+**Période d’apprentissage**
+
+L’apprentissage de l’environnement de votre organisation nécessite une période de sept jours au cours de laquelle vous pouvez vous attendre à un volume élevé d’alertes.
 
 ## <a name="collection-alerts"></a>Alertes de collection
 
