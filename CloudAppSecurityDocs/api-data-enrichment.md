@@ -3,25 +3,25 @@ title: API d’enrichissement des données Cloud App Security
 description: Cet article fournit des informations sur l’utilisation de l’API d’enrichissement des données.
 ms.date: 12/13/2020
 ms.topic: reference
-ms.openlocfilehash: 814f4e038c129576377aea9fe5e7c3e74a4b09d1
-ms.sourcegitcommit: 90df07ce9cd64fd9c46fb6563f0249079204e174
+ms.openlocfilehash: d2050afec68bc29b0f401188b60c3dbb631a4a1b
+ms.sourcegitcommit: 0768aa1992819e2651a14a731f79e178fdececc5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97859007"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98114749"
 ---
 # <a name="data-enrichment-api"></a>API d’enrichissement des données
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-L’API enrichissement de données vous permet de créer des plages d’adresses IP identifiables, telles que les adresses IP physiques de votre bureau. Les plages d’adresses IP vous permettent de baliser, classer et personnaliser la façon dont les journaux et les alertes sont affichés et examinés. Pour plus d’informations, consultez [utilisation de plages d’adresses IP et de balises](ip-tags.md).
+L’API enrichissement de données vous permet de gérer des plages d’adresses IP identifiables, telles que les adresses IP physiques de votre bureau. Les plages d’adresses IP vous permettent de baliser, classer et personnaliser la façon dont les journaux et les alertes sont affichés et examinés. Pour plus d’informations, consultez [utilisation de plages d’adresses IP et de balises](ip-tags.md).
 
 La liste suivante répertorie les requêtes prises en charge :
 
 - [Liste des plages d’adresses IP](api-data-enrichment-list.md)
 - [Créer une plage d’adresses IP](api-data-enrichment-create.md)
-- [Mettre à jour la plage d’adresses IP](api-data-enrichment-update.md)
-- [Supprimer la plage d’adresses IP](api-data-enrichment-delete.md)
+- [Mettre à jour une plage d’adresses IP](api-data-enrichment-update.md)
+- [Supprimer une plage d’adresses IP](api-data-enrichment-delete.md)
 
 ## <a name="properties"></a>Propriétés
 

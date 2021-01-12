@@ -3,12 +3,12 @@ title: Archivage des mises à jour précédentes dans Cloud App Security
 description: Cet article est une archive qui décrit les mises à jour effectuées dans les versions précédentes de Cloud App Security.
 ms.date: 11/25/2020
 ms.topic: conceptual
-ms.openlocfilehash: d64c12289025ef7270ae94f922cea187e8ca5dbf
-ms.sourcegitcommit: 16a65ab2c8ca778d0b3cfa97b847af4c812363b2
+ms.openlocfilehash: bf9cc9d4d4a3e12931ba78b74eefb2ec04868d37
+ms.sourcegitcommit: 0768aa1992819e2651a14a731f79e178fdececc5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/03/2021
-ms.locfileid: "97855756"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98114783"
 ---
 # <a name="past-release-archive-of-microsoft-cloud-app-security"></a>Archive des versions précédentes de Microsoft Cloud App Security
 
@@ -734,7 +734,7 @@ Publiée le 12 novembre 2017
 
 Publication : 29 octobre 2017
 
-- Le lancement de la fonctionnalité de proxy Microsoft Cloud App Security est en cours. Le proxy Microsoft Cloud App Security vous fournit les outils dont vous avez besoin pour obtenir une visibilité et un contrôle en temps réel de l’accès à votre environnement cloud et des activités qui y sont effectuées. Exemple :
+- Le lancement de la fonctionnalité de proxy Microsoft Cloud App Security est en cours. Le proxy Microsoft Cloud App Security vous fournit les outils dont vous avez besoin pour obtenir une visibilité et un contrôle en temps réel de l’accès à votre environnement cloud et des activités qui y sont effectuées. Par exemple :
 
   - Évitez les fuites de données en bloquant les téléchargements avant qu’ils ne se produisent.
   - Définissez des règles qui forcent le chiffrement des données stockées dans le cloud et téléchargées à partir du cloud.
@@ -806,7 +806,7 @@ Publication : 3 juillet 2017
 
 - **Extensions de sécurité :** Extensions de sécurité est un nouveau tableau de bord pour la gestion centralisée de toutes les extensions de sécurité de Cloud App Security.  Les extensions incluent la gestion des jetons d’API, les agents SIEM et les connecteurs DLP externes. Le nouveau tableau de bord est disponible dans Cloud App Security sous « paramètres ».
 
-  - Jetons d’API : Générez et gérez vos propres [Jetons d’API](api-tokens.md) pour intégrer Cloud App Security à des logiciels tiers à l’aide de nos API RESTful.
+  - Jetons d’API : Générez et gérez vos propres [Jetons d’API](api-authentication.md) pour intégrer Cloud App Security à des logiciels tiers à l’aide de nos API RESTful.
   - Agents SIEM : l' [intégration Siem](siem.md) était précédemment située directement sous « paramètres », maintenant disponible sous forme d’onglet dans extensions de sécurité.
   - DLP externe (préversion) : Cloud App Security vous permet de [tirer parti des investissements existants dans les systèmes de classification tiers](icap-stunnel.md), comme les solutions DLP (Data Loss Prevention), et vous permet d’analyser le contenu d’applications cloud à l’aide de déploiements existants en cours d’exécution dans votre environnement. Contactez votre responsable de compte pour participer à la préversion.
 
@@ -1196,7 +1196,7 @@ Publication : 4 septembre 2016
 
 **Améliorations :**
 
-- Quand l’analyse DLP échoue, vous recevez maintenant une explication des raisons pour lesquelles Cloud App Security n’a pas pu analyser le fichier. Pour plus d’informations, voir [Inspection du contenu](./content-inspection.md).
+- Quand l’analyse DLP échoue, vous recevez maintenant une explication des raisons pour lesquelles Cloud App Security n’a pas pu analyser le fichier. Pour plus d’informations, voir [Inspection du contenu](content-inspection.md).
 - Des améliorations ont été apportées aux moteurs de détection des anomalies, notamment pour les alertes de voyage impossible.
 - Des améliorations ont été apportées à l’expérience qui permet d’ignorer les alertes. Vous pouvez également ajouter un feedback qui permet à l’équipe Cloud App Security de savoir si l’alerte était intéressante et pourquoi. Votre feedback est utilisé pour améliorer les détections de Cloud App Security.
 - Les analyseurs Cloud Discovery Cisco ASA ont été améliorés.

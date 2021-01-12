@@ -3,12 +3,12 @@ title: Intégrer Microsoft Power automate avec Microsoft Cloud App Security pour
 description: Cet article fournit des informations sur la façon d’obtenir une automatisation des alertes personnalisée en intégrant Microsoft Power Automated avec Cloud App Security.
 ms.date: 01/05/2021
 ms.topic: how-to
-ms.openlocfilehash: fc178428b74a77772e9d366bcdd8051fdc1a62b6
-ms.sourcegitcommit: ee66e70f711aa11501e308e53b1a4b46f2175e4e
+ms.openlocfilehash: 8b2575764470bb444c2bb7a36e37cf80dc6251ce
+ms.sourcegitcommit: 0768aa1992819e2651a14a731f79e178fdececc5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97894720"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98114732"
 ---
 # <a name="integrate-with-microsoft-power-automate-for-custom-alert-automation"></a>Intégration avec Microsoft Power automate pour l’automatisation des alertes personnalisée
 
@@ -28,7 +28,7 @@ Le [connecteur Cloud App Security](/connectors/cloudappsecurity/) dans Power aut
 
 ## <a name="how-to-create-playbooks-with-power-automate"></a>Comment créer des règles avec Power automate
 
-1. [Créez un jeton d’API](api-tokens.md) dans Cloud App Security.
+1. [Créez un jeton d’API](api-authentication.md) dans Cloud App Security.
 
 2. Accédez au [portail Power automate](https://flow.microsoft.com), sélectionnez **mes flux**, sélectionnez **nouveau**, puis dans la liste déroulante, sélectionnez **automatisé-à partir de vide**.
 

@@ -7,16 +7,16 @@ ms.topic: conceptual
 ms.date: 12/03/2020
 ms.author: mbaldwin
 ms.custom: subject-security-benchmark
-ms.openlocfilehash: f15795dcc7dca6454a63ee9a430ba70c7046b87c
-ms.sourcegitcommit: e69f6e9705c3cf90a3a6b0c60d8adc9ad4818310
+ms.openlocfilehash: 0c659e0682cef4239bb5fe6d07b1cea84247b1a5
+ms.sourcegitcommit: 0768aa1992819e2651a14a731f79e178fdececc5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96583864"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98114681"
 ---
 # <a name="azure-security-baseline-for-microsoft-cloud-app-security"></a>Ligne de base de sécurité Azure pour Microsoft Cloud App Security
 
-Cette ligne de base de sécurité applique des instructions du [test de sécurité Azure version 2,0](https://docs.microsoft.com/azure/security/benchmarks/overview) à Microsoft Cloud App Security. Le benchmark de sécurité Azure fournit des recommandations sur la façon dont vous pouvez sécuriser vos solutions cloud sur Azure. Le contenu est regroupé en fonction des **contrôles de sécurité** définis par le test de sécurité Azure et des conseils associés à Microsoft Cloud App Security. Les **contrôles** non applicables aux Microsoft Cloud App Security ont été exclus.
+Cette ligne de base de sécurité applique des instructions du [test de sécurité Azure version 2,0](/azure/security/benchmarks/overview) à Microsoft Cloud App Security. Le benchmark de sécurité Azure fournit des recommandations sur la façon dont vous pouvez sécuriser vos solutions cloud sur Azure. Le contenu est regroupé en fonction des **contrôles de sécurité** définis par le test de sécurité Azure et des conseils associés à Microsoft Cloud App Security. Les **contrôles** non applicables aux Microsoft Cloud App Security ont été exclus.
 
 Pour voir comment Microsoft Cloud App Security est entièrement mappé au test de sécurité Azure, consultez le fichier de mappage de la [ligne de base de sécurité Microsoft Cloud App Security complète](https://github.com/MicrosoftDocs/SecurityBenchmarks/tree/master/Azure%20Offer%20Security%20Baselines).
 
@@ -28,7 +28,7 @@ Pour voir comment Microsoft Cloud App Security est entièrement mappé au test d
 
 **Aide**: utilisez les balises de service de réseau virtuel Azure pour définir les contrôles d’accès réseau sur les groupes de sécurité réseau ou le pare-feu Azure configuré pour vos ressources cloud App Security. Vous pouvez utiliser des balises de service à la place des adresses IP spécifiques lors de la création de règles de sécurité. En spécifiant le nom de balise de service (par exemple : « MicrosoftCloudAppSecurity ») dans le champ source ou de destination approprié d’une règle, vous pouvez autoriser ou refuser le trafic pour le service correspondant. Microsoft gère les préfixes d’adresse englobés par la balise de service et met à jour automatiquement la balise de service quand les adresses changent.
 
-- [Présentation et usage des balises de service](https://docs.microsoft.com/azure/virtual-network/service-tags-overview)
+- [Présentation et usage des balises de service](/azure/virtual-network/service-tags-overview)
 
 **Supervision d’Azure Security Center** : actuellement non disponible
 
@@ -50,13 +50,13 @@ La sécurisation d’Azure AD doit être d’une priorité élevée dans les pra
 
 Remarque : Azure AD prend en charge l’identité externe, ce qui permet aux utilisateurs sans compte Microsoft de se connecter à leurs applications et ressources avec leur identité externe.
 
-- [Locataires dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/single-and-multi-tenant-apps) 
+- [Locataires dans Azure Active Directory](/azure/active-directory/develop/single-and-multi-tenant-apps) 
 
-- [Création et configuration d’une instance Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-access-create-new-tenant) 
+- [Création et configuration d’une instance Azure AD](/azure/active-directory/fundamentals/active-directory-access-create-new-tenant) 
 
-- [Utilisez des fournisseurs d'identité externes pour l’application](https://docs.microsoft.com/azure/active-directory/b2b/identity-providers) 
+- [Utilisez des fournisseurs d'identité externes pour l’application](/azure/active-directory/b2b/identity-providers) 
 
-- [Qu’est-ce que le degré de sécurisation Identity Secure Score dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/identity-secure-score)
+- [Qu’est-ce que le degré de sécurisation Identity Secure Score dans Azure Active Directory](/azure/active-directory/fundamentals/identity-secure-score)
 
 **Supervision d’Azure Security Center** : Non applicable
 
@@ -66,7 +66,7 @@ Remarque : Azure AD prend en charge l’identité externe, ce qui permet aux ut
 
 **Guide**: Cloud App Security utilise Azure Active Directory (Azure AD) pour assurer la gestion des identités et des accès aux ressources Azure, aux applications Cloud et aux applications locales. Cela inclut les identités d’entreprise, comme les employés, ainsi que les identités externes, comme les partenaires et les fournisseurs. Cela permet à l’authentification unique de gérer et sécuriser l’accès aux données et ressources de votre organisation localement et dans le cloud. Connectez tous vos utilisateurs, applications et appareils au Azure AD pour un accès transparent et sécurisé, ainsi qu’une visibilité et un contrôle accrus.
 
-- [Comprendre l’authentification unique des applications avec Azure AD](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on)
+- [Comprendre l’authentification unique des applications avec Azure AD](/azure/active-directory/manage-apps/what-is-single-sign-on)
 
 **Supervision d’Azure Security Center** : Non applicable
 
@@ -82,13 +82,13 @@ Remarque : Azure AD prend en charge l’identité externe, ce qui permet aux ut
 
 Pour les utilisateurs administrateurs et privilégiés, assurez-vous que le niveau le plus élevé de méthode d’authentification forte est utilisé, puis déployez la stratégie d’authentification forte appropriée pour les autres utilisateurs.
 
-- [Comment activer l’authentification multifacteur dans Azure](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted) 
+- [Comment activer l’authentification multifacteur dans Azure](/azure/active-directory/authentication/howto-mfa-getstarted) 
 
-- [Introduction aux options d’authentification sans mot de passe pour Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-passwordless) 
+- [Introduction aux options d’authentification sans mot de passe pour Azure Active Directory](/azure/active-directory/authentication/concept-authentication-passwordless) 
 
-- [Stratégie de mot de passe par défaut d’Azure AD](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-policy#password-policies-that-only-apply-to-cloud-user-accounts) 
+- [Stratégie de mot de passe par défaut d’Azure AD](/azure/active-directory/authentication/concept-sspr-policy#password-policies-that-only-apply-to-cloud-user-accounts) 
 
-- [Éliminer les mauvais mots de passe à l’aide de Protection de mots de passe d’Azure AD](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad)
+- [Éliminer les mauvais mots de passe à l’aide de Protection de mots de passe d’Azure AD](/azure/active-directory/authentication/concept-password-ban-bad)
 
 **Supervision d’Azure Security Center** : Oui
 
@@ -98,13 +98,13 @@ Pour les utilisateurs administrateurs et privilégiés, assurez-vous que le nive
 
 **Guide**: Cloud App Security prend en charge l’accès conditionnel Azure Active Directory (Azure AD) pour un contrôle d’accès plus granulaire en fonction des conditions définies par l’utilisateur, telles que les connexions utilisateur de certaines plages d’adresses IP doivent utiliser l’authentification multifacteur pour la connexion. Vous pouvez également utiliser des stratégies de gestion des sessions d’authentification granulaires pour différents cas d’usage.
 
-- [Protection du Contrôle d’accès conditionnel aux applications](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security#conditional-access-app-control-protection)
+- [Protection du Contrôle d’accès conditionnel aux applications](what-is-cloud-app-security.md#conditional-access-app-control-protection)
 
-- [Présentation de l’accès conditionnel Azure](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) 
+- [Présentation de l’accès conditionnel Azure](/azure/active-directory/conditional-access/overview) 
 
-- [Stratégies d’accès conditionnel courantes](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common) 
+- [Stratégies d’accès conditionnel courantes](/azure/active-directory/conditional-access/concept-conditional-access-policy-common) 
 
-- [Configurer la gestion des sessions d’authentification avec l’accès conditionnel](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime)
+- [Configurer la gestion des sessions d’authentification avec l’accès conditionnel](/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime)
 
 **Supervision d’Azure Security Center** : Non applicable
 
@@ -150,7 +150,7 @@ Limitez le nombre de comptes ou de rôles à privilèges élevés et protégez c
 
 Vous pouvez activer l’accès privilégié juste-à-temps (JAT) aux ressources Azure et Azure AD en utilisant Azure AD Privileged Identity Management (PIM). JAT accorde des autorisations temporaires pour effectuer des tâches privilégiées uniquement lorsque les utilisateurs en ont besoin. PIM peut également générer des alertes de sécurité en cas d’activité suspecte ou non sécurisée dans votre organisation Azure AD.
 
-- [Gérer l’accès administrateur dans les Cloud App Security](https://docs.microsoft.com/cloud-app-security/manage-admins)
+- [Gérer l’accès administrateur dans les Cloud App Security](manage-admins.md)
 
 **Supervision d’Azure Security Center** : Oui
 
@@ -160,7 +160,7 @@ Vous pouvez activer l’accès privilégié juste-à-temps (JAT) aux ressources 
 
 **Guide**: Cloud App Security offre un contrôle d’accès en fonction du rôle pour les administrateurs.
 
-- [Gérer l’accès administrateur Cloud App Security](https://docs.microsoft.com/cloud-app-security/manage-admins)
+- [Gérer l’accès administrateur Cloud App Security](manage-admins.md)
 
 **Supervision d’Azure Security Center** : Oui
 
@@ -174,9 +174,9 @@ En outre, Azure Privileged Identity Management peut être configuré pour décle
 
 Remarque : Certains services Azure prennent en charge des utilisateurs et des rôles locaux qui ne sont pas gérés par le biais d’Azure AD. Vous devrez gérer ces utilisateurs séparément.
 
-- [Créer une révision d’accès des rôles de ressources Azure dans Privileged Identity Management (PIM)](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-resource-roles-start-access-review) 
+- [Créer une révision d’accès des rôles de ressources Azure dans Privileged Identity Management (PIM)](/azure/active-directory/privileged-identity-management/pim-resource-roles-start-access-review) 
 
-- [Utilisation des révisions d’accès et des identités Azure AD](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overvie)
+- [Utilisation des révisions d’accès et des identités Azure AD](/azure/active-directory/governance/access-reviews-overvie)
 
 **Supervision d’Azure Security Center** : Oui
 
@@ -188,7 +188,7 @@ Remarque : Certains services Azure prennent en charge des utilisateurs et des r
 
 Vous devez vous assurer que les informations d’identification (telles que le mot de passe, le certificat ou la carte à puce) des comptes d’accès d’urgence restent sécurisées et connues uniquement des personnes autorisées à les utiliser en cas d’urgence.
 
-- [Gérer des comptes d’accès d’urgence dans Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-emergency-access)
+- [Gérer des comptes d’accès d’urgence dans Azure AD](/azure/active-directory/users-groups-roles/directory-emergency-access)
 
 **Supervision d’Azure Security Center** : Non applicable
 
@@ -198,9 +198,9 @@ Vous devez vous assurer que les informations d’identification (telles que le m
 
 **Guide**: Cloud App Security est intégré à Azure Active Directory (Azure AD) pour gérer ses ressources. Utilisez les fonctionnalités de gestion des droits d’utilisation d’Azure AD pour automatiser les workflows de demandes d’accès, notamment les attributions, les révisions et l’expiration des accès. L’approbation en deux ou plusieurs étapes est également prise en charge.
 
-- [Présentation des révisions d’accès Azure AD](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview) 
+- [Présentation des révisions d’accès Azure AD](/azure/active-directory/governance/access-reviews-overview) 
 
-- [Présentation de la gestion des droits d’utilisation Azure AD](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-overview)
+- [Présentation de la gestion des droits d’utilisation Azure AD](/azure/active-directory/governance/entitlement-management-overview)
 
 **Supervision d’Azure Security Center** : Non applicable
 
@@ -210,15 +210,15 @@ Vous devez vous assurer que les informations d’identification (telles que le m
 
 **Guide**: Cloud App Security est intégré au contrôle d’accès en fonction du rôle (RBAC) Azure pour gérer ses ressources. Azure RBAC vous permet de gérer l’accès aux ressources Azure via des attributions de rôles. Vous pouvez affecter ces rôles à des utilisateurs et regrouper des principaux de service et des identités managées. Les rôles intégrés prédéfinis pour certaines ressources peuvent être inventoriés ou interrogés par le biais d’outils tels qu’Azure CLI, Azure PowerShell ou le portail Azure. Les privilèges que vous affectez aux ressources via Azure RBAC doivent toujours être limités à ce qui est requis par les rôles. Ils complètent l’approche juste-à-temps (JIT) d’Azure AD Privileged Identity Management (PIM) et doivent être révisés régulièrement.
 
-Utilisez des rôles intégrés pour allouer les autorisations. Ne créez des rôles personnalisés que si nécessaire.
+Utilisez les rôles intégrés pour allouer des autorisations et ne créez des rôles personnalisés que si nécessaire.
 
-- [Rôles Office 365 et Azure AD avec accès à Cloud App Security](https://docs.microsoft.com/cloud-app-security/manage-admins)
+- [Rôles Office 365 et Azure AD avec accès à Cloud App Security](manage-admins.md)
 
 Qu’est-ce que le contrôle d’accès en fonction du rôle Azure (Azure RBAC) ? https://docs.microsoft.com/azure/role-based-access-control/overview 
 
-- [Configurer le contrôle d'accès en fonction du rôle dans Azure](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal) 
+- [Configurer le contrôle d'accès en fonction du rôle dans Azure](/azure/role-based-access-control/role-assignments-portal) 
 
-- [Utilisation des révisions d’accès et des identités Azure AD](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview)
+- [Utilisation des révisions d’accès et des identités Azure AD](/azure/active-directory/governance/access-reviews-overview)
 
 **Supervision d’Azure Security Center** : Oui
 
@@ -232,7 +232,7 @@ Qu’est-ce que le contrôle d’accès en fonction du rôle Azure (Azure RBAC)�
 
 **Guide**: Cloud App Security gère les données sensibles et utilise Azure ad rôles pour contrôler les autorisations pour différents types de données.
 
-- [Azure AD des rôles ayant accès à Cloud App Security](https://docs.microsoft.com/cloud-app-security/manage-admins#office-365-and-azure-ad-roles-with-access-to-cloud-app-security)
+- [Azure AD des rôles ayant accès à Cloud App Security](manage-admins.md#office-365-and-azure-ad-roles-with-access-to-cloud-app-security)
 
 **Supervision d’Azure Security Center** : Oui
 
@@ -246,13 +246,13 @@ C’est certes facultatif pour le trafic sur les réseaux privés, mais essentie
 
 Par défaut, Azure assure le chiffrement des données en transit entre les centres de données Azure.
 
-- [Sécurité et confidentialité des données Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/cas-compliance-trust#encryption)
+- [Sécurité et confidentialité des données Microsoft Cloud App Security](cas-compliance-trust.md#encryption)
 
-- [Présentation du chiffrement en transit avec Azure](https://docs.microsoft.com/azure/security/fundamentals/encryption-overview#encryption-of-data-in-transit) 
+- [Présentation du chiffrement en transit avec Azure](/azure/security/fundamentals/encryption-overview#encryption-of-data-in-transit) 
 
-- [Informations sur la sécurité TLS](https://docs.microsoft.com/security/engineering/solving-tls1-problem) 
+- [Informations sur la sécurité TLS](/security/engineering/solving-tls1-problem) 
 
-- [Double chiffrement pour les données Azure en transit](https://docs.microsoft.com/azure/security/fundamentals/double-encryption#data-in-transit)
+- [Double chiffrement pour les données Azure en transit](/azure/security/fundamentals/double-encryption#data-in-transit)
 
 **Supervision d’Azure Security Center** : Non applicable
 
@@ -272,9 +272,9 @@ Les autorisations de lecteur de sécurité peuvent être appliquées globalement
 
 Remarque : Des autorisations supplémentaires peuvent être nécessaires pour obtenir une visibilité sur les charges de travail et services. 
 
-- [Vue d’ensemble du rôle lecteur de sécurité](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#security-reader)
+- [Vue d’ensemble du rôle lecteur de sécurité](/azure/role-based-access-control/built-in-roles#security-reader)
 
-- [Vue d'ensemble des groupes d'administration Azure](https://docs.microsoft.com/azure/governance/management-groups/overview)
+- [Vue d'ensemble des groupes d'administration Azure](/azure/governance/management-groups/overview)
 
 **Supervision Azure Security Center** : actuellement non disponible
 
@@ -288,12 +288,12 @@ Remarque : Des autorisations supplémentaires peuvent être nécessaires pour o
 
 **Guide**: transférer tous les journaux de Cloud App Security à votre serveur Siem qui peuvent être utilisés pour configurer des détections de menaces personnalisées. Veillez à surveiller les différents types de ressources Azure pour identifier les menaces et anomalies potentielles. Concentrez-vous sur l’obtention d’alertes de haute qualité afin de réduire les faux positifs que les analystes doivent trier. Les alertes peuvent provenir de données de journal, d’agents ou d’autres données.
 
-- [Intégration d’Azure Sentinel](https://docs.microsoft.com/cloud-app-security/siem-sentinel)
-- [Intégration de SIEM générique](https://docs.microsoft.com/cloud-app-security/siem)
+- [Intégration d’Azure Sentinel](siem-sentinel.md)
+- [Intégration de SIEM générique](siem.md)
 
-- [Créer des règles d’analytique personnalisées pour détecter des menaces](https://docs.microsoft.com/azure/sentinel/tutorial-detect-threats-custom) 
+- [Créer des règles d’analytique personnalisées pour détecter des menaces](/azure/sentinel/tutorial-detect-threats-custom) 
 
-- [Renseignement sur les menaces informatiques dans Azure Sentinel](https://docs.microsoft.com/azure/architecture/example-scenario/data/sentinel-threat-intelligence)
+- [Renseignement sur les menaces informatiques dans Azure Sentinel](/azure/architecture/example-scenario/data/sentinel-threat-intelligence)
 
 **Supervision d’Azure Security Center** : Non applicable
 
@@ -307,9 +307,9 @@ Remarque : Des autorisations supplémentaires peuvent être nécessaires pour o
 
 **Conseils** : Assurez-vous que votre organisation dispose de processus pour répondre aux incidents de sécurité, qu’elle a mis à jour ces processus pour Azure et qu’elle les exerce régulièrement pour garantir la préparation.
 
-- [Implémenter la sécurité dans l’environnement de l’entreprise](https://docs.microsoft.com/azure/cloud-adoption-framework/security/security-top-10#4-process-update-incident-response-ir-processes-for-cloud)
+- [Implémenter la sécurité dans l’environnement de l’entreprise](/azure/cloud-adoption-framework/security/security-top-10#4-process-update-incident-response-ir-processes-for-cloud)
 
-- [Guide de référence sur les réponses aux incidents](https://docs.microsoft.com/microsoft-365/downloads/IR-Reference-Guide.pdf)
+- [Guide de référence sur les réponses aux incidents](/microsoft-365/downloads/IR-Reference-Guide.pdf)
 
 **Supervision d’Azure Security Center** : Non applicable
 
@@ -319,7 +319,7 @@ Remarque : Des autorisations supplémentaires peuvent être nécessaires pour o
 
 **Conseils** : Configurez les coordonnées des personnes à contacter en cas d’incident de sécurité dans Azure Security Center. Microsoft utilisera ces coordonnées afin de vous contacter si le Microsoft Security Response Center (MSRC) découvre que vos données ont été consultées de manière illégale ou par un tiers non autorisé. Vous disposez également d’options pour personnaliser les alertes d’incident et les notifications dans différents services Azure en fonction de vos besoins en matière de réponse aux incidents. 
 
-- [Comment définir le contact de sécurité d’Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-provide-security-contact-details)
+- [Comment définir le contact de sécurité d’Azure Security Center](/azure/security-center/security-center-provide-security-contact-details)
 
 **Supervision d’Azure Security Center** : Oui
 
@@ -335,9 +335,9 @@ Azure Security Center (ASC) fournit des alertes de haute qualité sur de nombreu
 
 Exportez vos alertes et recommandations Azure Security Center en utilisant la fonctionnalité d’exportation pour identifier les risques pesant sur les ressources Azure. Exportez les alertes et les recommandations manuellement ou automatiquement de manière continue.
 
-- [Procédure de configuration de l’exportation](https://docs.microsoft.com/azure/security-center/continuous-export)
+- [Procédure de configuration de l’exportation](/azure/security-center/continuous-export)
 
-- [Comment envoyer des alertes à Azure Sentinel](https://docs.microsoft.com/azure/sentinel/connect-azure-security-center)
+- [Comment envoyer des alertes à Azure Sentinel](/azure/sentinel/connect-azure-security-center)
 
 **Supervision Azure Security Center** : actuellement non disponible
 
@@ -361,13 +361,13 @@ Les sources de données à des fins d’investigation incluent les sources de jo
 
 Azure Sentinel fournit des analyses de données approfondies sur pratiquement toutes les sources de journal et un portail de gestion des cas pour gérer le cycle de vie complet des incidents. Les renseignements obtenus au cours d’une enquête peuvent être associés à un incident à des fins de suivi et de rapport. 
 
-- [Capture instantanée du disque d’un ordinateur Windows](https://docs.microsoft.com/azure/virtual-machines/windows/snapshot-copy-managed-disk)
+- [Capture instantanée du disque d’un ordinateur Windows](/azure/virtual-machines/windows/snapshot-copy-managed-disk)
 
-- [Capture instantanée du disque d’un ordinateur Linux](https://docs.microsoft.com/azure/virtual-machines/linux/snapshot-copy-managed-disk)
+- [Capture instantanée du disque d’un ordinateur Linux](/azure/virtual-machines/linux/snapshot-copy-managed-disk)
 
 - [Collecte de l’image mémoire et des informations de diagnostic par le support Microsoft Azure](https://azure.microsoft.com/support/legal/support-diagnostic-information-collection/) 
 
-- [Examiner les incidents avec Azure Sentinel](https://docs.microsoft.com/azure/sentinel/tutorial-investigate-cases)
+- [Examiner les incidents avec Azure Sentinel](/azure/sentinel/tutorial-investigate-cases)
 
 **Supervision d’Azure Security Center** : Non applicable
 
@@ -381,9 +381,9 @@ Azure Security Center attribue un niveau de gravité à chaque alerte pour vous 
 
 En outre, marquez les ressources à l’aide d’étiquettes et créez un système de nommage pour identifier et classer les ressources Azure, en particulier celles qui traitent des données sensibles.  Il vous incombe de hiérarchiser le traitement des alertes en fonction de la criticité des ressources et de l’environnement Azure où l’incident s’est produit.
 
-- [Alertes de sécurité dans le Centre de sécurité Azure](https://docs.microsoft.com/azure/security-center/security-center-alerts-overview)
+- [Alertes de sécurité dans le Centre de sécurité Azure](/azure/security-center/security-center-alerts-overview)
 
-- [Organisation des ressources Azure à l’aide de catégories](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags)
+- [Organisation des ressources Azure à l’aide de catégories](/azure/azure-resource-manager/resource-group-using-tags)
 
 **Supervision Azure Security Center** : actuellement non disponible
 
@@ -393,11 +393,11 @@ En outre, marquez les ressources à l’aide d’étiquettes et créez un systè
 
 **Conseils** : Automatisez les tâches manuelles répétitives pour accélérer le temps de réponse et réduire la charge de travail des analystes. Les tâches manuelles prennent plus de temps à s’exécuter, ralentissant chaque incident et réduisant le nombre d’incidents qu’un analyste peut gérer. Les tâches manuelles augmentent également la fatigue des analystes, ce qui accroît le risque d’erreur humaine entraînant des retards et dégrade la capacité des analystes à se concentrer efficacement sur des tâches complexes. Utilisez les fonctionnalités d’automatisation des workflows dans Azure Security Center et Azure Sentinel pour déclencher automatiquement des actions ou exécuter un playbook pour répondre aux alertes de sécurité entrantes. Le playbook prend des mesures, telles que l’envoi de notifications, la désactivation de comptes et l’isolement des réseaux problématiques. 
 
-- [Configurer l’automatisation du workflow dans Security Center](https://docs.microsoft.com/azure/security-center/workflow-automation)
+- [Configurer l’automatisation du workflow dans Security Center](/azure/security-center/workflow-automation)
 
-- [Configurer des réponses automatisées aux menaces dans Azure Security Center](https://docs.microsoft.com/azure/security-center/tutorial-security-incident#triage-security-alerts)
+- [Configurer des réponses automatisées aux menaces dans Azure Security Center](/azure/security-center/tutorial-security-incident#triage-security-alerts)
 
-- [Configurer des réponses automatisées aux menaces dans Azure Sentinel](https://docs.microsoft.com/azure/sentinel/tutorial-respond-threats-playbook)
+- [Configurer des réponses automatisées aux menaces dans Azure Sentinel](/azure/sentinel/tutorial-respond-threats-playbook)
 
 **Supervision Azure Security Center** : actuellement non disponible
 
@@ -412,7 +412,7 @@ En outre, marquez les ressources à l’aide d’étiquettes et créez un systè
 **Conseils** : Selon les besoins, effectuez un test d’intrusion ou des activités Red Team sur vos ressources Azure et résolvez tous les problèmes de sécurité critiques détectés.
 Suivez les règles d’engagement de pénétration du cloud Microsoft pour vous assurer que vos tests d’intrusion sont conformes aux stratégies de Microsoft. Utilisez la stratégie et l’exécution de Red Teaming de Microsoft ainsi que les tests d’intrusion de site actif sur l’infrastructure cloud, les services et les applications gérés par Microsoft.
 
-- [Test d’intrusion dans Azure](https://docs.microsoft.com/azure/security/fundamentals/pen-testing)
+- [Test d’intrusion dans Azure](/azure/security/fundamentals/pen-testing)
 
 - [Règles d’engagement des tests d’intrusion](https://www.microsoft.com/msrc/pentest-rules-of-engagement?rtc=1) 
 
@@ -449,15 +449,15 @@ Cette stratégie doit inclure les recommandations, stratégies et normes documen
 -   Normes de chiffrement appropriées
 
 Pour plus d’informations, consultez les références suivantes :
-- [Recommandation d’architecture de sécurité Azure - Stockage, données et chiffrement](https://docs.microsoft.com/azure/architecture/framework/security/storage-data-encryption?toc=/security/compass/toc.json&amp;bc=/security/compass/breadcrumb/toc.json)
+- [Recommandation d’architecture de sécurité Azure - Stockage, données et chiffrement](/azure/architecture/framework/security/storage-data-encryption?amp;bc=%2fsecurity%2fcompass%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fcompass%2ftoc.json)
 
-- [Notions de base de la sécurité Azure - Sécurité, chiffrement et stockage des données Azure](https://docs.microsoft.com/azure/security/fundamentals/encryption-overview)
+- [Notions de base de la sécurité Azure - Sécurité, chiffrement et stockage des données Azure](/azure/security/fundamentals/encryption-overview)
 
-- [Cloud Adoption Framework - Meilleures pratiques en matière de chiffrement et de sécurité des données Azure](https://docs.microsoft.com/azure/security/fundamentals/data-encryption-best-practices?toc=/azure/cloud-adoption-framework/toc.json&amp;bc=/azure/cloud-adoption-framework/_bread/toc.json)
+- [Cloud Adoption Framework - Meilleures pratiques en matière de chiffrement et de sécurité des données Azure](/azure/security/fundamentals/data-encryption-best-practices?amp;bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)
 
-- [Benchmark de sécurité Azure - Gestion des ressources](https://docs.microsoft.com/azure/security/benchmarks/security-benchmark-v2-asset-management)
+- [Benchmark de sécurité Azure - Gestion des ressources](/azure/security/benchmarks/security-benchmark-v2-asset-management)
 
-- [Benchmark de sécurité Azure - Protection des données](https://docs.microsoft.com/azure/security/benchmarks/security-benchmark-v2-data-protection)
+- [Benchmark de sécurité Azure - Protection des données](/azure/security/benchmarks/security-benchmark-v2-data-protection)
 
 **Supervision d’Azure Security Center** : Non applicable
 
@@ -471,11 +471,11 @@ Trouvez le bon équilibre entre la nécessité de séparation sur le plan de la 
 
 Veillez à ce que la stratégie de segmentation soit implémentée de manière cohérente pour tous les types de contrôle, y compris pour les modèles d'identité, d'accès et de sécurité du réseau, les modèles d'autorisation/d'accès aux applications et les contrôles des processus humains.
 
-- [Aide relative à la stratégie de segmentation dans Azure (vidéo)](https://docs.microsoft.com/security/compass/microsoft-security-compass-introduction#azure-components-and-reference-model-2151)
+- [Aide relative à la stratégie de segmentation dans Azure (vidéo)](/security/compass/microsoft-security-compass-introduction#azure-components-and-reference-model-2151)
 
-- [Aide relative à la stratégie de segmentation dans Azure (document)](https://docs.microsoft.com/security/compass/governance#enterprise-segmentation-strategy)
+- [Aide relative à la stratégie de segmentation dans Azure (document)](/security/compass/governance#enterprise-segmentation-strategy)
 
-- [Aligner la segmentation du réseau avec la stratégie de segmentation d’entreprise](https://docs.microsoft.com/security/compass/network-security-containment#align-network-segmentation-with-enterprise-segmentation-strategy)
+- [Aligner la segmentation du réseau avec la stratégie de segmentation d’entreprise](/security/compass/network-security-containment#align-network-segmentation-with-enterprise-segmentation-strategy)
 
 **Supervision d’Azure Security Center** : Non applicable
 
@@ -485,7 +485,7 @@ Veillez à ce que la stratégie de segmentation soit implémentée de manière c
 
 **Conseils** : Mesurez et atténuez en permanence les risques liés à vos ressources individuelles et à l’environnement dans lequel elles sont hébergées. Hiérarchisez les ressources à valeur élevée et les surfaces d’attaque hautement exposées, telles que les applications publiées, les points d’entrée et de sortie du réseau, les points de terminaison utilisateur et administrateur, etc.
 
-- [Benchmark de sécurité Azure - Gestion de la posture et des vulnérabilités](https://docs.microsoft.com/azure/security/benchmarks/security-benchmark-v2-posture-vulnerability-management)
+- [Benchmark de sécurité Azure - Gestion de la posture et des vulnérabilités](/azure/security/benchmarks/security-benchmark-v2-posture-vulnerability-management)
 
 **Supervision d’Azure Security Center** : Non applicable
 
@@ -495,11 +495,11 @@ Veillez à ce que la stratégie de segmentation soit implémentée de manière c
 
 **Conseils** : Veillez à documenter et à communiquer une stratégie claire pour les rôles et les responsabilités de votre organisation de sécurité. Veillez à définir clairement les responsabilités pour les décisions relatives à la sécurité, à former tout le monde au modèle de responsabilité partagée et à former les équipes techniques à la technologie permettant de sécuriser le cloud.
 
-- [Meilleures pratiques pour la sécurité Azure 1 – Personnes : Former les équipes pour le parcours vers la sécurité dans le cloud](https://docs.microsoft.com/azure/cloud-adoption-framework/security/security-top-10#1-people-educate-teams-about-the-cloud-security-journey)
+- [Meilleures pratiques pour la sécurité Azure 1 – Personnes : Former les équipes pour le parcours vers la sécurité dans le cloud](/azure/cloud-adoption-framework/security/security-top-10#1-people-educate-teams-about-the-cloud-security-journey)
 
-- [Meilleures pratiques pour la sécurité Azure 2 – Personnes : Former les équipes pour les technologies de sécurité dans le cloud](https://docs.microsoft.com/azure/cloud-adoption-framework/security/security-top-10#2-people-educate-teams-on-cloud-security-technology)
+- [Meilleures pratiques pour la sécurité Azure 2 – Personnes : Former les équipes pour les technologies de sécurité dans le cloud](/azure/cloud-adoption-framework/security/security-top-10#2-people-educate-teams-on-cloud-security-technology)
 
-- [Meilleures pratiques pour la sécurité Azure 3 – Processus : Affecter les responsabilités pour les décisions de sécurité dans le cloud](https://docs.microsoft.com/azure/cloud-adoption-framework/security/security-top-10#4-process-update-incident-response-ir-processes-for-cloud)
+- [Meilleures pratiques pour la sécurité Azure 3 – Processus : Affecter les responsabilités pour les décisions de sécurité dans le cloud](/azure/cloud-adoption-framework/security/security-top-10#4-process-update-incident-response-ir-processes-for-cloud)
 
 **Supervision d’Azure Security Center** : Non applicable
 
@@ -524,13 +524,13 @@ Cette stratégie doit inclure les recommandations, stratégies et normes documen
 -   Artefacts de sécurité réseau à jour (par exemple diagrammes réseau, architecture de réseau de référence)
 
 Pour plus d’informations, consultez les références suivantes :
-- [Meilleures pratiques pour la sécurité Azure 11 – Architecture. Stratégie de sécurité unifiée unique](https://docs.microsoft.com/azure/cloud-adoption-framework/security/security-top-10#11-architecture-establish-a-single-unified-security-strategy)
+- [Meilleures pratiques pour la sécurité Azure 11 – Architecture. Stratégie de sécurité unifiée unique](/azure/cloud-adoption-framework/security/security-top-10#11-architecture-establish-a-single-unified-security-strategy)
 
-- [Benchmark de sécurité Azure – Sécurité réseau](https://docs.microsoft.com/azure/security/benchmarks/security-benchmark-v2-network-security)
+- [Benchmark de sécurité Azure – Sécurité réseau](/azure/security/benchmarks/security-benchmark-v2-network-security)
 
-- [Vue d’ensemble de la sécurité réseau d’Azure](https://docs.microsoft.com/azure/security/fundamentals/network-overview)
+- [Vue d’ensemble de la sécurité réseau d’Azure](/azure/security/fundamentals/network-overview)
 
-- [Stratégie d’architecture de réseau d’entreprise](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/enterprise-scale/architecture)
+- [Stratégie d’architecture de réseau d’entreprise](/azure/cloud-adoption-framework/ready/enterprise-scale/architecture)
 
 **Supervision d’Azure Security Center** : Non applicable
 
@@ -554,13 +554,13 @@ Cette stratégie doit inclure les recommandations, stratégies et normes documen
 
 Pour plus d’informations, consultez les références suivantes :
 
-- [Benchmark de sécurité Azure - Gestion des identités](https://docs.microsoft.com/azure/security/benchmarks/security-benchmark-v2-identity-management)
+- [Benchmark de sécurité Azure - Gestion des identités](/azure/security/benchmarks/security-benchmark-v2-identity-management)
 
-- [Benchmark de sécurité Azure - Accès privilégié](https://docs.microsoft.com/azure/security/benchmarks/security-benchmark-v2-privileged-access)
+- [Benchmark de sécurité Azure - Accès privilégié](/azure/security/benchmarks/security-benchmark-v2-privileged-access)
 
-- [Meilleures pratiques pour la sécurité Azure 11 – Architecture. Stratégie de sécurité unifiée unique](https://docs.microsoft.com/azure/cloud-adoption-framework/security/security-top-10#11-architecture-establish-a-single-unified-security-strategy)
+- [Meilleures pratiques pour la sécurité Azure 11 – Architecture. Stratégie de sécurité unifiée unique](/azure/cloud-adoption-framework/security/security-top-10#11-architecture-establish-a-single-unified-security-strategy)
 
-- [Vue d’ensemble de la sécurité et de la gestion des identités Azure](https://docs.microsoft.com/azure/security/fundamentals/identity-management-overview)
+- [Vue d’ensemble de la sécurité et de la gestion des identités Azure](/azure/security/fundamentals/identity-management-overview)
 
 **Supervision d’Azure Security Center** : Non applicable
 
@@ -588,15 +588,15 @@ Cette stratégie doit inclure les recommandations, stratégies et normes documen
 
 Pour plus d’informations, consultez les références suivantes :
 
-- [Benchmark de sécurité Azure - Journalisation et détection des menaces](https://docs.microsoft.com/azure/security/benchmarks/security-benchmark-v2-logging-threat-detection)
+- [Benchmark de sécurité Azure - Journalisation et détection des menaces](/azure/security/benchmarks/security-benchmark-v2-logging-threat-detection)
 
-- [Benchmark de sécurité Azure - Réponse aux incidents](https://docs.microsoft.com/azure/security/benchmarks/security-benchmark-v2-incident-response)
+- [Benchmark de sécurité Azure - Réponse aux incidents](/azure/security/benchmarks/security-benchmark-v2-incident-response)
 
-- [Meilleures pratiques pour la sécurité Azure 4 - Processus. Mise à jour des processus de réponse aux incidents pour le cloud](https://docs.microsoft.com/azure/cloud-adoption-framework/security/security-top-10#4-process-update-incident-response-ir-processes-for-cloud)
+- [Meilleures pratiques pour la sécurité Azure 4 - Processus. Mise à jour des processus de réponse aux incidents pour le cloud](/azure/cloud-adoption-framework/security/security-top-10#4-process-update-incident-response-ir-processes-for-cloud)
 
-- [Guide pour le cadre d’adoption d’Azure, la journalisation et la prise de décision pour les rapports](https://docs.microsoft.com/azure/cloud-adoption-framework/decision-guides/logging-and-reporting/)
+- [Guide pour le cadre d’adoption d’Azure, la journalisation et la prise de décision pour les rapports](/azure/cloud-adoption-framework/decision-guides/logging-and-reporting/)
 
-- [Mise à l’échelle, gestion et surveillance d’entreprise Azure](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/enterprise-scale/management-and-monitoring)
+- [Mise à l’échelle, gestion et surveillance d’entreprise Azure](/azure/cloud-adoption-framework/ready/enterprise-scale/management-and-monitoring)
 
 **Supervision d’Azure Security Center** : Non applicable
 
