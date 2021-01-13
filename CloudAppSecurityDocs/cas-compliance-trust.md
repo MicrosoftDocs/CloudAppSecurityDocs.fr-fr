@@ -3,12 +3,12 @@ title: Conformité Cloud App Security, sécurité des données, confidentialité
 description: Cet article décrit l’offre de conformité Cloud App Security, le centre de confidentialité, la confidentialité et la sécurité des données.
 ms.date: 01/04/2021
 ms.topic: overview
-ms.openlocfilehash: 752e5b8134179993076b2e61c2e5b44ab0d29b61
-ms.sourcegitcommit: 4900168878f42e9fa79873df4b7c2d81991b5b27
+ms.openlocfilehash: 624b4acab4564a73d85ff1f223b00587037bcf5b
+ms.sourcegitcommit: 0768aa1992819e2651a14a731f79e178fdececc5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97857969"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98114698"
 ---
 # <a name="microsoft-cloud-app-security-data-security-and-privacy"></a>Sécurité et confidentialité des données Microsoft Cloud App Security
 
@@ -133,7 +133,7 @@ Le tableau suivant indique les données qui sont exposées pour chaque intégrat
 | Type d'intégration | Données exposées | Configuration |
 | --- | --- | --- |
 | Utilisation d’un agent SIEM | Alertes et événements | [Activé et configuré dans Cloud App Security](siem.md) |
-| Utilisation de l’API REST de Cloud App Security | Alertes et événements | [Activé et configuré dans Cloud App Security](api-tokens.md) |
+| Utilisation de l’API REST de Cloud App Security | Alertes et événements | [Activé et configuré dans Cloud App Security](api-authentication.md) |
 | Connecteur ICAP | Fichier pour l’analyse DLP | [Activé et configuré dans Cloud App Security](icap-stunnel.md) |
 
 > [!NOTE]
