@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1c84882ec04d72ef24d9fe044c0fabbb355a15bb
-ms.sourcegitcommit: ee66e70f711aa11501e308e53b1a4b46f2175e4e
+ms.openlocfilehash: 0fce6bbf6e13b34c904d88a34fe858f1586d9d90
+ms.sourcegitcommit: 7fc4d916a43d188b1aa4e3cee2e8bd1de230d135
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97894672"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98206472"
 ---
 # <a name="get-behavioral-analytics-and-anomaly-detection"></a>Bénéficiez d’une analyse comportementale et d’une détection des anomalies
 
@@ -118,7 +118,7 @@ La détection recherche les utilisateurs dont le compte a été clôturé dans A
 * Cette stratégie Profile votre environnement et déclenche des alertes lorsqu’un utilisateur effectue des activités de suppression d’e-mails suspectes dans une seule session. Cette stratégie peut indiquer que les boîtes aux lettres d’un utilisateur peuvent être compromises par des vecteurs d’attaque potentiels tels que la communication de commande et de contrôle (C&C/C2) par courrier électronique.
 
 > [!NOTE]
-> Cloud App Security s’intègre à Office-protection avancée contre les menaces (Office ATP) pour assurer la protection d’Exchange Online, y compris la détonation d’URL, la protection contre les programmes malveillants, etc. Une fois qu’Office ATP est activé, vous pouvez commencer à voir les alertes dans le journal d’activité Cloud App Security.
+> Cloud App Security s’intègre à Microsoft Defender pour Office 365 pour assurer la protection d’Exchange Online, y compris la détonation d’URL, la protection contre les programmes malveillants, etc. Une fois que Defender pour Office 365 est activé, vous commencez à voir les alertes dans le journal d’activité Cloud App Security.
 
 ### <a name="suspicious-oauth-app-file-download-activities"></a>Activités suspectes de téléchargement de fichiers d’application OAuth
 

@@ -3,12 +3,12 @@ title: Utilisation des applications découvertes dans Cloud App Security
 description: Cet article décrit le processus d’identification et de correction des applications Cloud Discovery à risque dans Cloud App Security.
 ms.date: 09/25/2019
 ms.topic: conceptual
-ms.openlocfilehash: 4f3cae41623c352c957640ce2fc4002e0d1f09e0
-ms.sourcegitcommit: 16a65ab2c8ca778d0b3cfa97b847af4c812363b2
+ms.openlocfilehash: 72cc84a98f61649ba7b1f15251e001a372d3a56b
+ms.sourcegitcommit: 7fc4d916a43d188b1aa4e3cee2e8bd1de230d135
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/03/2021
-ms.locfileid: "97855393"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98206455"
 ---
 # <a name="working-with-discovered-apps"></a>Utilisation des applications découvertes
 
@@ -110,7 +110,7 @@ Pour créer une exclusion :
 
 Les rapports continus personnalisés vous apportent une plus grande granularité lors de la surveillance des données de journaux Cloud Discovery de votre organisation. En créant des rapports personnalisés, vous pouvez filtrer sur des emplacements géographiques, des réseaux, des sites ou des unités d’organisation spécifiques. Par défaut, seuls les rapports suivants apparaissent dans votre sélecteur de rapports Cloud Discovery :
 
-- Le **rapport global** regroupe toutes les informations du portail provenant de toutes les sources de données que vous avez incluses dans vos journaux.  Le rapport global n’inclut pas les données de Microsoft Defender ATP.
+- Le **rapport global** regroupe toutes les informations du portail provenant de toutes les sources de données que vous avez incluses dans vos journaux.  Le rapport global n’inclut pas de données de Microsoft Defender pour le point de terminaison.
 
 - Le **rapport spécifique à la source de données** affiche uniquement les informations d’une source de données spécifique.
 
@@ -151,7 +151,7 @@ Pour supprimer des données Cloud Discovery :
 
     Il est important d’être sûr de vouloir supprimer les données avant de poursuivre : cette opération ne peut pas être annulée et **toutes** les données Cloud Discovery dans le système sont alors supprimées.
 
-1. Cliquez sur le bouton **Supprimer** .
+1. Cliquez sur le bouton **Supprimer**.
 
     ![supprimer des données](media/delete-data.png "supprimer des données")
 

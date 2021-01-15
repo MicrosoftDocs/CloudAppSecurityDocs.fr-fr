@@ -3,12 +3,12 @@ title: Résolution des erreurs de Cloud Discovery
 description: Cet article fournit la liste des erreurs fréquentes relatives à Cloud Discovery ainsi que des solutions recommandées pour chacune.
 ms.date: 04/19/2019
 ms.topic: conceptual
-ms.openlocfilehash: 96ff00be024688a025d30c03dca8194a99413038
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: c8c34f6d08fa0ba360988a11dd5501546c8ec318
+ms.sourcegitcommit: 7fc4d916a43d188b1aa4e3cee2e8bd1de230d135
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315937"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98206520"
 ---
 # <a name="troubleshooting-cloud-discovery"></a>Résolution des problèmes de Cloud Discovery
 
@@ -16,9 +16,9 @@ ms.locfileid: "96315937"
 
 Cet article fournit la liste des erreurs relatives à Cloud Discovery ainsi que des solutions recommandées pour chacune.
 
-## <a name="microsoft-defender-atp-integration"></a>Intégration de Microsoft Defender ATP
+## <a name="microsoft-defender-for-endpoint-integration"></a>Intégration de Microsoft Defender for Endpoint
 
-Si vous avez intégré Microsoft Defender ATP avec Cloud App Security, et que vous ne voyez pas les résultats de l’intégration.
+Si vous avez intégré Microsoft Defender for Endpoint avec Cloud App Security, et que vous ne voyez pas les résultats de l’intégration.
 
 |Problème|Résolution|
 |----|----|
@@ -31,7 +31,7 @@ Vous pouvez suivre le traitement des journaux Cloud Discovery à l’aide du jou
 
 ### <a name="governance-log-errors"></a>Erreurs du journal de gouvernance
 
-|Error|Description|Résolution|
+|Erreur|Description|Résolution|
 |----|----|----|
 |Type de fichier non pris en charge|Le fichier chargé n’est pas un fichier journal valide (par exemple, un fichier image).|Chargez un fichier **texte**, **zip ou **gzip** exporté directement à partir de votre pare-feu ou proxy.|
 |Le format de journal ne correspond pas|Le format de journal que vous avez chargé ne correspond pas au format attendu pour cette source de données.|1. Vérifiez que le journal n’est pas endommagé. <br /> 2. Comparez et associez votre journal à l’exemple de format affiché dans la page de chargement.|

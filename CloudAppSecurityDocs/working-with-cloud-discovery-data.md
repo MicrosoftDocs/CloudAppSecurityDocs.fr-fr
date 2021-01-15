@@ -3,12 +3,12 @@ title: Utiliser Cloud Discovery données pour détecter un comportement risqué
 description: Cette rubrique fournit des instructions pour l’utilisation des données Cloud Discovery, notamment l’utilisation de l’indice de risque de l’application.
 ms.date: 05/06/2019
 ms.topic: conceptual
-ms.openlocfilehash: 0ae744dcdc777ab806654abb7862ec27730be143
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: df1cd5bb2a75f8d68c8ec6822960c96dfc848ea9
+ms.sourcegitcommit: 7fc4d916a43d188b1aa4e3cee2e8bd1de230d135
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315597"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98206540"
 ---
 # <a name="working-with-discovery-data"></a>Utilisation des données de découverte
 
@@ -50,7 +50,7 @@ Pour créer une exclusion :
 
 Les rapports continus personnalisés vous apportent une plus grande granularité lors de la surveillance des données de journaux Cloud Discovery de votre organisation. En créant des rapports personnalisés, vous pouvez filtrer sur des emplacements géographiques, des réseaux, des sites ou des unités d’organisation spécifiques. Par défaut, seuls les rapports suivants apparaissent dans votre sélecteur de rapports Cloud Discovery :
 
-- Le **rapport global** regroupe toutes les informations du portail provenant de toutes les sources de données que vous avez incluses dans vos journaux.  Le rapport global n’inclut pas les données de Microsoft Defender ATP.
+- Le **rapport global** regroupe toutes les informations du portail provenant de toutes les sources de données que vous avez incluses dans vos journaux.  Le rapport global n’inclut pas de données de Microsoft Defender pour le point de terminaison.
 
 - Le **rapport spécifique à la source de données** affiche uniquement les informations d’une source de données spécifique.
 
