@@ -1,14 +1,14 @@
 ---
 title: Déployer Cloud Discovery
 description: Cet article décrit la procédure de configuration pour rendre Cloud Discovery opérationnel.
-ms.date: 08/09/2020
+ms.date: 01/17/2021
 ms.topic: how-to
-ms.openlocfilehash: e4ac4ce0e6148ca37c4c666b94da6779578ca77a
-ms.sourcegitcommit: 16a65ab2c8ca778d0b3cfa97b847af4c812363b2
+ms.openlocfilehash: 2ac879d1cd4ac75aebdf080599f77b0bedba640e
+ms.sourcegitcommit: e9d295ba27d0797e970d10b3effaff4961cbf556
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/03/2021
-ms.locfileid: "97855232"
+ms.lasthandoff: 01/17/2021
+ms.locfileid: "98540894"
 ---
 # <a name="set-up-cloud-discovery"></a>Configurer Cloud Discovery
 
@@ -95,7 +95,7 @@ Si votre journal n’est pas pris en charge, ou si vous utilisez un format de jo
 
 Attributs de données (selon la documentation du fournisseur) :
 
-| Source de données | URL de l’application cible | Adresse IP de l’application cible | Nom d’utilisateur | Adresse IP d’origine | Total du trafic | Octets chargés |
+| Paramètres | URL de l’application cible | Adresse IP de l’application cible | Nom d’utilisateur | Adresse IP d’origine | Total du trafic | Octets chargés |
 |----------------------------------------------|----------------------|----------------------|----------------------|----------------------|----------------------|----------------------|
 | Barracuda | **Oui** | **Oui** | **Oui** | **Oui** | Non | Non |
 | Blue Coat | **Oui** | Non | **Oui** | **Oui** | **Oui** | **Oui** |
@@ -113,8 +113,8 @@ Attributs de données (selon la documentation du fournisseur) :
 | Digital Arts i-FILTER | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** |
 | ForcePoint LEEF |**Oui**|**Oui**|**Oui**|**Oui**|**Oui**|**Oui**|
 | ForcePoint Web Security Cloud\* |**Oui**|**Oui**|**Oui**|**Oui**|**Oui**|**Oui**|
-| Fortigate | Non | **Oui** | Non | **Oui** | **Oui** | **Oui** |
-| Fortinet FortiOS |**Oui**|**Oui**|Non|**Oui**|**Oui**|**Oui**|
+| Fortinet Fortigate | Non | **Oui** | Non | **Oui** | **Oui** | **Oui** |
+| FortiOS |**Oui**|**Oui**|Non|**Oui**|**Oui**|**Oui**|
 | iboss |**Oui**|**Oui**|**Oui**|**Oui**|**Oui**|**Oui**|
 | Juniper SRX | Non | **Oui** | Non | **Oui** | **Oui** | **Oui** |
 | Juniper SSG | Non | **Oui** | **Oui** | **Oui** | **Oui** | **Oui** |
