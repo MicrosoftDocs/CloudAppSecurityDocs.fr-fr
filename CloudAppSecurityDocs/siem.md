@@ -1,16 +1,16 @@
 ---
 title: Intégration de SIEM générique avec Cloud App Security
 description: Cet article fournit des informations sur l’intégration de votre SIEM générique avec Cloud App Security.
-ms.date: 11/08/2020
+ms.date: 01/17/2021
 ms.topic: how-to
-ms.openlocfilehash: ed69404df787a9c439c3e433b00b0f06fbd8769a
-ms.sourcegitcommit: 605ab52545796cff9b0f6392ceff12c310c7fe2d
+ms.openlocfilehash: aa2ba2bf7a43f2140724e47e82e9f5018d79c342
+ms.sourcegitcommit: 7a7c0c0fa0ca78a1f3538933eb136a17c57dfb9a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96851868"
+ms.lasthandoff: 01/17/2021
+ms.locfileid: "98537601"
 ---
-# <a name="generic-siem-integration-preview"></a>Intégration SIEM générique (version préliminaire)
+# <a name="generic-siem-integration"></a>Intégration de SIEM générique
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
@@ -190,9 +190,6 @@ Si vous devez modifier l’agent SIEM, cliquez sur les trois points situés à 
 Si vous devez supprimer l’agent SIEM, cliquez sur les trois points situés à la fin de la ligne de l’agent SIEM dans le tableau, puis sélectionnez **Supprimer**.
 
 ![SIEM - Supprimer](media/siem-delete.png)
-
-> [!NOTE]
-> Cette fonctionnalité est en version préliminaire publique.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
