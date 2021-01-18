@@ -3,12 +3,12 @@ title: Intégration de SIEM générique avec Cloud App Security
 description: Cet article fournit des informations sur l’intégration de votre SIEM générique avec Cloud App Security.
 ms.date: 01/17/2021
 ms.topic: how-to
-ms.openlocfilehash: aa2ba2bf7a43f2140724e47e82e9f5018d79c342
-ms.sourcegitcommit: 7a7c0c0fa0ca78a1f3538933eb136a17c57dfb9a
+ms.openlocfilehash: 4e0facf906597ec4f66f77d8a2be3dd0001d8bda
+ms.sourcegitcommit: bc0bfb2882ebc9f942197544707c987e36650035
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2021
-ms.locfileid: "98537601"
+ms.lasthandoff: 01/18/2021
+ms.locfileid: "98544223"
 ---
 # <a name="generic-siem-integration"></a>Intégration de SIEM générique
 
@@ -55,6 +55,7 @@ L’intégration à votre serveur SIEM s’effectue en trois étapes :
 * Espace disque : 20 Go
 * RAM : 2 Go
 * Le serveur doit exécuter Java 8. Les versions antérieures ne sont pas prises en charge.
+* TLS (Transport Layer Security) 1.2 +. Les versions antérieures ne sont pas prises en charge.
 * Configurez votre pare-feu, comme décrit dans [Configuration réseau requise](network-requirements.md)
 
 ## <a name="integrating-with-your-siem"></a>Intégration à votre serveur SIEM
