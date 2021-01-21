@@ -3,12 +3,12 @@ title: Découvrir et gérer Shadow IT
 description: Ce tutoriel décrit le processus d’application automatique d’étiquettes de classification Azure Information Protection dans Microsoft Cloud App Security.
 ms.date: 06/29/2020
 ms.topic: tutorial
-ms.openlocfilehash: d7e3db3ca7f648b966ef9fbe3948eb345a710c10
-ms.sourcegitcommit: 4900168878f42e9fa79873df4b7c2d81991b5b27
+ms.openlocfilehash: 2f6da5a282aea312fa08be91be4b1195d36ffd50
+ms.sourcegitcommit: 7fc4d916a43d188b1aa4e3cee2e8bd1de230d135
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97857986"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98206557"
 ---
 # <a name="tutorial-discover-and-manage-shadow-it-in-your-network"></a>Tutoriel : Découvrir et gérer le Shadow IT
 
@@ -36,7 +36,7 @@ Utilisez ce processus pour déployer le Shadow IT Cloud Discovery dans votre org
 
 1. **Découvrir le Shadow IT** : Déterminez quelle est la situation de votre organisation sur le plan de la sécurité en exécutant Cloud Discovery dans votre organisation et voyez ce qu’il se passe réellement dans votre réseau. Pour plus d’informations, voir [Configurer Cloud Discovery](set-up-cloud-discovery.md). Pour cela, utilisez l’une des méthodes suivantes :
 
-    * Soyez opérationnel rapidement avec Cloud Discovery en l’intégrant à [Microsoft Defender ATP](mde-integration.md). Cette intégration native vous permet de commencer immédiatement à collecter des données sur le trafic cloud pour l’ensemble de vos appareils Windows 10, à l’intérieur et à l’extérieur de votre réseau.
+    * Soyez opérationnel rapidement avec Cloud Discovery en l’intégrant à [Microsoft Defender pour point de terminaison](mde-integration.md). Cette intégration native vous permet de commencer immédiatement à collecter des données sur le trafic cloud pour l’ensemble de vos appareils Windows 10, à l’intérieur et à l’extérieur de votre réseau.
 
     * Pour englober tous les appareils connectés à votre réseau, il est important de déployer le [collecteur de journaux Cloud App Security](discovery-docker.md) sur vos pare-feu et autres proxys pour collecter les données de vos points de terminaison et les envoyer à Cloud App Security à des fins d’analyse.
 
@@ -83,7 +83,7 @@ Maintenant que Cloud Discovery s’exécute sur votre réseau, examinez les rapp
 
 Le moment est venu de créer des stratégies qui vous alerteront automatiquement dès que des événements préoccupants se produiront. Par exemple, vous pouvez souhaiter créer une **stratégie de découverte d’application** qui vous informe qu’un pic de téléchargements ou de trafic a été atteint par une application dont vous vous souciez. Pour cela, vous devez activer les fonctions **Comportement anormal par des utilisateurs découverts**, **Vérification de conformité des applications de stockage cloud** et **Nouvelle application à risques**. Vous devez également définir la stratégie pour être averti par e-mail ou SMS. Pour plus d’informations, voir la [référence de modèle de stratégie](policy-template-reference.md), les informations complémentaires sur les [stratégies Cloud Discovery](cloud-discovery-policies.md), et configurer les [Stratégies Cloud Discovery](cloud-discovery-policies.md).
 
-Accédez à la page d’alertes et utilisez le filtre **Type de stratégie** pour examiner les alertes de découverte d’application. Pour les applications qui ont été trouvées par vos stratégies de découverte d’application, il est recommandé d’effectuer une analyse approfondie pour en savoir plus sur les raisons professionnelles qui justifient l’utilisation de l’application, par exemple en contactant les utilisateurs de l’application. Répétez ensuite les étapes de la Phase 2 pour évaluer le risque de l’application. Décidez ensuite des prochaines étapes concernant l’application, que vous approuviez son utilisation future ou que vous décidiez de la bloquer la prochaine fois qu’un utilisateur y accédera. Auquel cas, vous devrez la marquer comme étant non approuvée pour qu’elle puisse être bloquée par le pare-feu, le proxy ou la passerelle web sécurisée de votre organisation. Pour plus d’informations, consultez [Intégrer avec Microsoft Defender ATP](mde-integration.md#block-access-to-unsanctioned-cloud-apps), [Intégrer avec Zscaler](zscaler-integration.md), [Intégrer à iboss](iboss-integration.md)et [Exporter un script de blocage pour gouverner les applications découvertes](governance-discovery.md#export-a-block-script-to-govern-discovered-apps).
+Accédez à la page d’alertes et utilisez le filtre **Type de stratégie** pour examiner les alertes de découverte d’application. Pour les applications qui ont été trouvées par vos stratégies de découverte d’application, il est recommandé d’effectuer une analyse approfondie pour en savoir plus sur les raisons professionnelles qui justifient l’utilisation de l’application, par exemple en contactant les utilisateurs de l’application. Répétez ensuite les étapes de la Phase 2 pour évaluer le risque de l’application. Décidez ensuite des prochaines étapes concernant l’application, que vous approuviez son utilisation future ou que vous décidiez de la bloquer la prochaine fois qu’un utilisateur y accédera. Auquel cas, vous devrez la marquer comme étant non approuvée pour qu’elle puisse être bloquée par le pare-feu, le proxy ou la passerelle web sécurisée de votre organisation. Pour plus d’informations, consultez [Intégrer avec Microsoft Defender pour point de terminaison](mde-integration.md#block-access-to-unsanctioned-cloud-apps), [Intégrer à Zscaler](zscaler-integration.md), [Intégrer à iboss](iboss-integration.md) et [Exporter un script de bloc pour gouverner les applications découvertes](governance-discovery.md#export-a-block-script-to-govern-discovered-apps).
 
 ### <a name="phase-4-advanced-shadow-it-discovery-reporting"></a>Phase 4 : Génération de rapports Shadow IT Discovery avancés
 
