@@ -304,32 +304,6 @@
           href: api-introduction.md
         - name: Authentification
           href: api-authentication.md
-        - name: Cloud Discovery
-          items:
-            - name: Vue d’ensemble
-              href: api-discovery.md
-            - name: Lancer le chargement d’un fichier
-              href: api-discovery-initiate.md
-            - name: Effectuer le chargement d’un fichier
-              href: api-discovery-perform.md
-            - name: Finaliser le chargement d’un fichier
-              href: api-discovery-finalize.md
-            - name: Générer un script de bloc
-              href: api-discovery-script.md
-        - name: Enrichissement des données
-          items:
-            - name: Vue d’ensemble
-              href: api-data-enrichment.md
-            - name: Gérer les plages d’adresses IP à l’aide de l’API
-              href: api-data-enrichment-manage-script.md
-            - name: Répertorier les plages d’adresses iP
-              href: api-data-enrichment-list.md
-            - name: Créer une plage d’adresses IP
-              href: api-data-enrichment-create.md
-            - name: Mettre à jour une plage d’adresses IP
-              href: api-data-enrichment-update.md
-            - name: Supprimer une plage d’adresses IP
-              href: api-data-enrichment-delete.md
         - name: Activités
           items:
             - name: Vue d’ensemble
@@ -360,6 +334,36 @@
               href: api-alerts-mark-read.md
             - name: Marquer l’alerte comme non lue
               href: api-alerts-mark-unread.md
+        - name: Cloud Discovery
+          items:
+            - name: Vue d’ensemble
+              href: api-discovery.md
+            - name: Lancer le chargement d’un fichier
+              href: api-discovery-initiate.md
+            - name: Effectuer le chargement d’un fichier
+              href: api-discovery-perform.md
+            - name: Finaliser le chargement d’un fichier
+              href: api-discovery-finalize.md
+            - name: Répertorier les rapports continus
+              href: api-discovery-list-streams.md
+            - name: Répertorier les catégories de rapports continues
+              href: api-discovery-list-categories.md
+            - name: Générer un script de bloc
+              href: api-discovery-script.md
+        - name: Enrichissement des données
+          items:
+            - name: Vue d’ensemble
+              href: api-data-enrichment.md
+            - name: Gérer les plages d’adresses IP à l’aide de l’API
+              href: api-data-enrichment-manage-script.md
+            - name: Répertorier les plages d’adresses iP
+              href: api-data-enrichment-list.md
+            - name: Créer une plage d’adresses IP
+              href: api-data-enrichment-create.md
+            - name: Mettre à jour une plage d’adresses IP
+              href: api-data-enrichment-update.md
+            - name: Supprimer une plage d’adresses IP
+              href: api-data-enrichment-delete.md
         - name: Entities
           items:
             - name: Vue d’ensemble
