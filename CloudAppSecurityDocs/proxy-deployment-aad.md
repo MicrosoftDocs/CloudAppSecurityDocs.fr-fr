@@ -1,14 +1,14 @@
 ---
 title: Déployer le contrôle d’application par accès conditionnel Cloud App Security pour les applications Azure AD
 description: Cet article fournit des informations sur le déploiement du proxy inversé du Contrôle d’application par accès conditionnel Microsoft Cloud App Security pour les applications Azure AD.
-ms.date: 03/31/2020
+ms.date: 01/26/2021
 ms.topic: how-to
-ms.openlocfilehash: 3fecc4eca9b867aba72dc625151ec915906075eb
-ms.sourcegitcommit: 16a65ab2c8ca778d0b3cfa97b847af4c812363b2
+ms.openlocfilehash: e4a913c3da802b58180f3611f19ff62c6f0c4ad4
+ms.sourcegitcommit: f56a2060b99ab087b8637606a1fb66e5577aded8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/03/2021
-ms.locfileid: "97855521"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98794971"
 ---
 # <a name="deploy-conditional-access-app-control-for-featured-apps"></a>Déployer le contrôle d’application par accès conditionnel pour les applications à la une
 
@@ -69,7 +69,13 @@ Utilisez les étapes suivantes pour créer une stratégie d’accès conditionne
 
 ### <a name="configure-integration-with-other-idp-solutions"></a>Configurer l’intégration à d’autres solutions IdP
 
-Suivez les étapes ci-dessous pour acheminer des sessions d’application d’autres solutions IdP vers Cloud App Security. Pour Azure AD, consultez [configurer l’intégration avec Azure ad](#configure-integration-with-azure-ad). Pour obtenir des exemples de configuration des solutions IdP, consultez [configuration de votre](proxy-idp-examples.md)fournisseur d’identité.
+Suivez les étapes ci-dessous pour acheminer des sessions d’application d’autres solutions IdP vers Cloud App Security. Pour Azure AD, consultez [configurer l’intégration avec Azure ad](#configure-integration-with-azure-ad).
+
+> [!NOTE]
+> Pour obtenir des exemples de configuration des solutions IdP, consultez :
+>
+> - [Configuration de votre IdP PingOne](proxy-idp-pingone.md)
+> - [Configuration de votre AD FS IdP](proxy-idp-adfs.md)
 
 1. Dans Cloud App Security, accédez à **examiner**  >  **applications connectées**  >  **contrôle d’application par accès conditionnel applications**.
 

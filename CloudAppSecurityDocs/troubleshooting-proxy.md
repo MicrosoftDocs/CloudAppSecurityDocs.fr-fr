@@ -3,12 +3,12 @@ title: Résolution des problèmes de contrôles d’accès et de session
 description: Cet article fournit aux administrateurs des conseils sur la façon d’examiner et de résoudre les contrôles d’accès et de session courants.
 ms.date: 07/15/2020
 ms.topic: conceptual
-ms.openlocfilehash: 9d327449ba51871f2277f521ddd6ec6f1ba47ade
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 6de4bfea4892328871661819411a2be5e8d4b568
+ms.sourcegitcommit: f56a2060b99ab087b8637606a1fb66e5577aded8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315886"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98794888"
 ---
 # <a name="troubleshooting-access-and-session-controls"></a>Résolution des problèmes de contrôles d’accès et de session
 
@@ -59,7 +59,7 @@ Quand vous configurez en premier lieu des contrôles d’accès et de session Cl
     > - Cloud App Security exploite les protocoles TLS (Transport Layer Security) 1.2 + pour fournir un chiffrement optimal. Les applications clientes natives et les navigateurs qui ne prennent pas en charge TLS 1.2 + ne sont pas accessibles lorsqu’ils sont configurés avec le contrôle de session. Toutefois, les applications SaaS qui utilisent TLS 1.1 ou une version antérieure apparaissent dans le navigateur comme utilisant TLS 1.2+ lorsqu’elles sont configurées avec Cloud App Security.
     > - Alors que les contrôles de session sont créés pour fonctionner avec n’importe quel navigateur sur n’importe quelle plateforme principale sur tout système d’exploitation, nous prenons en charge Microsoft Edge (dernière version), Google Chrome (dernière version), Mozilla Firefox (dernière version) ou Apple Safari (dernière version). L’accès aux applications mobiles et de bureau peut également être bloqué ou autorisé.
 
-    | Navigateur | Étapes |
+    | Browser | Étapes |
     |---|---|
     | Microsoft Internet Explorer | 1. Ouvrez Internet Explorer<br />2. Sélectionnez **Outils**  >  **Options Internet**  >  onglet **avancé**<br />3. sous **sécurité**, sélectionnez **TLS 1,2**<br />4. Sélectionnez **appliquer**, puis cliquez sur **OK** .<br />5. Redémarrez votre navigateur et vérifiez que vous pouvez accéder à l’application |
     | Chrome Microsoft Edge/Edge | 1. Ouvrez la recherche à partir de la barre des tâches et recherchez « Options Internet »<br />2. sélectionner les **Options Internet**<br />3. sous **sécurité**, sélectionnez **TLS 1,2**<br />4. Sélectionnez **appliquer**, puis cliquez sur **OK** .<br />5. Redémarrez votre navigateur et vérifiez que vous pouvez accéder à l’application |
@@ -180,12 +180,12 @@ Le mécanisme d’identification des appareils peut exiger une authentification 
 
 Si vous rencontrez le certificat client qui s’ouvre après l’ouverture d’un nouvel onglet, cela peut être dû à des paramètres masqués dans les **Options Internet**.
 
-| Navigateur | Étapes |
+| Browser | Étapes |
 |---|---|
 | Microsoft Internet Explorer | 1. Ouvrez Internet Explorer<br />2. Sélectionnez **Outils**  >  **Options Internet**  >  onglet **avancé**<br />3. sous **sécurité**, sélectionnez **ne pas demander la sélection d’un certificat client lorsqu’il n’existe qu’un seul certificat**<br />4. Sélectionnez **appliquer**, puis cliquez sur **OK** .<br />5. Redémarrez votre navigateur et vérifiez que vous pouvez accéder à l’application sans les invites supplémentaires |
 | Chrome Microsoft Edge/Edge | 1. Ouvrez la recherche à partir de la barre des tâches et recherchez « Options Internet »<br />2. sélectionner les **Options Internet**<br />3. Sélectionnez **sécurité**, sélectionnez **Intranet local**, puis cliquez sur **personnaliser le niveau**<br />4. sous **divers**  >  ,**ne pas demander la sélection du certificat client lorsqu’il n’existe qu’un seul certificat**, sélectionnez **Désactiver** .<br />5. cliquez sur **OK** pour fermer la boîte de dialogue Personnaliser le niveau<br />6. cliquez sur **appliquer**, puis sélectionnez **OK** pour fermer options Internet.<br />7. Redémarrez votre navigateur et vérifiez que vous pouvez accéder à l’application sans les invites supplémentaires |
 
-<a name="device-identification-additional-considerations"></a>s
+<a name="device-identification-additional-considerations"></a>
 
 #### <a name="additional-considerations"></a>Considérations supplémentaires
 
@@ -283,7 +283,7 @@ Après avoir ajouté une application, vous pouvez voir l’option de **contrôle
 1. Dans Cloud App Security, dans la barre de menus, cliquez sur paramètres roue dentée, puis sélectionnez **paramètres**.
 1. Sous **contrôle d’application par accès conditionnel**, sélectionnez **intégration/maintenance** de l’application.
 1. Entrez le nom d’utilisateur principal ou l’adresse de messagerie des utilisateurs qui intégreront l’application, puis cliquez sur **Enregistrer**.
-1. Accédez à l’application que vous déployez. La page que vous voyez varie selon que l’application est reconnue ou non. Effectuez l’une des opérations suivantes :
+1. Accédez à l’application que vous déployez. La page que vous voyez varie selon que l’application est reconnue ou non. Effectuez l’une des actions suivantes :
 
     | État de l’application | Description | Étapes |
     | --- | --- | --- |
