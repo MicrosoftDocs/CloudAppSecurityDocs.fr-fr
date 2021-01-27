@@ -1,6 +1,6 @@
 - name: Documentation Microsoft Cloud App Security
   href: index.yml
-- name: Vue d’ensemble
+- name: Vue d'ensemble
   items:
     - name: "Qu’est-ce que Microsoft Cloud App Security\_?"
       href: what-is-cloud-app-security.md
@@ -21,7 +21,7 @@
   items:
     - name: Mise en route
       href: getting-started-with-cloud-app-security.md
-    - name: meilleures pratiques recommandées.
+    - name: Bonnes pratiques
       href: best-practices.md
 - name: Tutoriels
   items:
@@ -188,7 +188,9 @@
         - name: Intégrer et déployer le contrôle d’application par accès conditionnel pour tous les types d’applications
           href: proxy-deployment-any-app.md
         - name: Configuration de votre IdP PingOne
-          href: proxy-idp-examples.md
+          href: proxy-idp-pingone.md
+        - name: Configuration de votre IdP AD FS
+          href: proxy-idp-adfs.md
     - name: Examen
       href: investigate.md
       items:
