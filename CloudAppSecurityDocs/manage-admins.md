@@ -3,12 +3,12 @@ title: Gérer l’accès administrateur au portail Cloud App Security
 description: Cet article explique comment définir l’accès au portail Cloud App Security pour vos administrateurs.
 ms.date: 01/11/2021
 ms.topic: how-to
-ms.openlocfilehash: a9ab36e788d74493059187bc043d701283b1969f
-ms.sourcegitcommit: 7fc4d916a43d188b1aa4e3cee2e8bd1de230d135
+ms.openlocfilehash: f25524e7190a8ac75bdf0b467bba2e98c0b23b10
+ms.sourcegitcommit: 2294a61e636b436ac96a02eb7d4969f445b4aebb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98206505"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98949518"
 ---
 # <a name="manage-admin-access"></a>Gérer l’accès administrateur
 
@@ -20,7 +20,7 @@ Microsoft Cloud App Security prend en charge le contrôle d’accès basé sur l
 
 Par défaut, les rôles d’administrateur Office 365 et [Azure Active Directory (Azure AD)](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) suivants ont accès aux Cloud App Security :
 
-- Administrateur **général et administrateur de sécurité**: les administrateurs disposant d’un **accès complet** disposent d’autorisations complètes dans Cloud App Security. Ils peuvent ajouter des administrateurs, ajouter des stratégies et des paramètres, charger des journaux et effectuer des actions de gouvernance.
+- Administrateur **général et administrateur de sécurité**: les administrateurs disposant d’un **accès complet** disposent d’autorisations complètes dans Cloud App Security. Ils peuvent ajouter des administrateurs, ajouter des stratégies et des paramètres, charger des journaux et effectuer des actions de gouvernance, accéder aux agents SIEM et les gérer.
 
 - **Administrateur de conformité**: dispose d’autorisations en lecture seule et peut gérer les alertes. Impossible d’accéder aux recommandations de sécurité pour les plateformes Cloud. Peut créer et modifier des stratégies de fichier, autoriser des actions de gouvernance de fichier et afficher tous les rapports intégrés sous Gestion des données.
 
@@ -38,7 +38,7 @@ Par défaut, les rôles d’administrateur Office 365 et [Azure Active Directory
   - Accéder à la page de connecteurs d’application
   - Accéder au journal de gouvernance
   - Accéder à la page Gérer des rapports d’instantanés
-  - Accès et modification de l’agent SIEM
+  - Accès et affichage des agents SIEM
 
 - **Lecteur global**: dispose d’un accès complet en lecture seule à tous les aspects de Cloud App Security. Impossible de modifier des paramètres ou d’effectuer des actions.
 
