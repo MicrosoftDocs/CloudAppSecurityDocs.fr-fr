@@ -1,14 +1,14 @@
 ---
 title: Connecter des applications pour bénéficier d’une visibilité et d’un contrôle
 description: Cet article décrit le processus de connexion d’applications à des applications dans le cloud de votre organisation avec des connecteurs d’API.
-ms.date: 01/05/2021
+ms.date: 02/04/2021
 ms.topic: how-to
-ms.openlocfilehash: 1df724883ff1944e0ff5c1e62c1fe6fbcaef233a
-ms.sourcegitcommit: ee66e70f711aa11501e308e53b1a4b46f2175e4e
+ms.openlocfilehash: 77343c172002accb7eaf7e657e518c5f0e0aaa10
+ms.sourcegitcommit: 2cb91556060d61fa378047aebf81b71dff5ff19d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97894652"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99551707"
 ---
 # <a name="connect-apps"></a>Connecter des applications
 
@@ -55,22 +55,22 @@ Selon l’application à laquelle vous vous connectez, la connexion d’API acti
 
 Le tableau suivant répertorie, par application cloud, les fonctionnalités prises en charge avec les connecteurs d’applications :
 
-| | AWS | Box | Dropbox | GitHub | GCP | Espace de travail Google | Office 365 | Okta | ServiceNow | Salesforce | Webex | Workday |
-|-|-|-|-|-|-|-|-|-|-|-|-|-|
-| **Énumérer les comptes** | ✔ | ✔ | ✔ | ✔ | Sujet de la connexion à l’espace de travail Google | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-| **Liste des groupes** | ✔ | ✔ | ✔ | ✔ | Sujet de la connexion à l’espace de travail Google | ✔ | ✔ | ✔ | ✔ | ✔ | | Non prise en charge par le fournisseur |
-| **Liste des privilèges** | | ✔ | ✔ | ✔ | Sujet de la connexion à l’espace de travail Google | ✔ | ✔ | Non prise en charge par le fournisseur | ✔ | ✔ | ✔ | Non prise en charge par le fournisseur |
-| **Gouvernance des utilisateurs** | | ✔ | Bientôt disponible | | Sujet de la connexion à l’espace de travail Google | ✔ | ✔ | | | ✔ | | Non prise en charge par le fournisseur |
-| **Activité de connexion** | ✔ | ✔ | ✔ | | Sujet de la connexion à l’espace de travail Google | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-| **Activité de l’utilisateur** | Non applicable | ✔ | ✔ | ✔ | ✔ | ✔ - nécessite Google Business ou Entreprises | ✔ | ✔ | Partiel | Prise en charge avec Salesforce Shield | ✔ | ✔ |
-| **Activité d’administration** | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | Partiel | ✔ | ✔ | Non prise en charge par le fournisseur |
-| **DLP-analyse périodique** | | ✔ | ✔ | | Non applicable | ✔ | ✔ | Non applicable | ✔ | ✔ | ✔ | Non prise en charge par le fournisseur |
-| **DLP : analyse en temps quasi réel** | | ✔ | | | Non applicable | ✔-nécessite Google Business Enterprise | ✔ | Non applicable | | | ✔ | Non prise en charge par le fournisseur |
-| **Contrôle partagé** | ✔ | ✔ | ✔ | | Non applicable | ✔ | ✔ | Non applicable | Non applicable | | ✔ | Non prise en charge par le fournisseur |
-| **Gouvernance des fichiers** | ✔ | ✔ | ✔ | | Non applicable | ✔ | ✔ | Non applicable | | ✔ | | Non prise en charge par le fournisseur |
-| **Voir les autorisations d’application** | Non applicable | Non prise en charge par le fournisseur | Bientôt disponible | ✔ | Non applicable | ✔ | ✔ | Non applicable | | ✔ | Non applicable | Non applicable |
-| **Révoquer les autorisations d’application** | Non applicable | Non prise en charge par le fournisseur | Bientôt disponible | | Non applicable | ✔ | ✔ | Non applicable | | ✔ | Non applicable | Non applicable |
-| **Appliquer des étiquettes Azure Information Protection** | Non applicable | ✔ | | | Non applicable | ✔ | ✔ | Non applicable | | | Non applicable | Non applicable |
+| | AWS | Azure| Box | Dropbox | GitHub | GCP | Espace de travail Google | Office 365 | Okta | ServiceNow | Salesforce | Webex | Workday |
+| - | - | - | - | - | - | - | - | - | - | - | - | - | - |
+| **Énumérer les comptes** | ✔ | ✔ | ✔ | ✔ | ✔ | Sujet de la connexion à l’espace de travail Google | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| **Liste des groupes** | ✔ | ✔ | ✔ | ✔ | ✔ | Sujet de la connexion à l’espace de travail Google | ✔ | ✔ | ✔ | ✔ | ✔ | | Non prise en charge par le fournisseur |
+| **Liste des privilèges** | | | ✔ | ✔ | ✔ | Sujet de la connexion à l’espace de travail Google | ✔ | ✔ | Non prise en charge par le fournisseur | ✔ | ✔ | ✔ | Non prise en charge par le fournisseur |
+| **Gouvernance des utilisateurs** | | | ✔ | Bientôt disponible | | Sujet de la connexion à l’espace de travail Google | ✔ | ✔ | | | ✔ | | Non prise en charge par le fournisseur |
+| **Activité de connexion** | ✔ | ✔ | ✔ | ✔ | | Sujet de la connexion à l’espace de travail Google | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| **Activité de l’utilisateur** | Non applicable | | ✔ | ✔ | ✔ | ✔ | ✔ - nécessite Google Business ou Entreprises | ✔ | ✔ | Partielle | Prise en charge avec Salesforce Shield | ✔ | ✔ |
+| **Activité d’administration** | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | Partielle | ✔ | ✔ | Non prise en charge par le fournisseur |
+| **DLP-analyse périodique** | | | ✔ | ✔ | | Non applicable | ✔ | ✔ | Non applicable | ✔ | ✔ | ✔ | Non prise en charge par le fournisseur |
+| **DLP : analyse en temps quasi réel** | | | ✔ | | | Non applicable | ✔-nécessite Google Business Enterprise | ✔ | Non applicable | | | ✔ | Non prise en charge par le fournisseur |
+| **Contrôle partagé** | ✔ | | ✔ | ✔ | | Non applicable | ✔ | ✔ | Non applicable | Non applicable | | ✔ | Non prise en charge par le fournisseur |
+| **Gouvernance des fichiers** | ✔ | | ✔ | ✔ | | Non applicable | ✔ | ✔ | Non applicable | | ✔ | | Non prise en charge par le fournisseur |
+| **Voir les autorisations d’application** | Non applicable | | Non prise en charge par le fournisseur | Bientôt disponible | ✔ | Non applicable | ✔ | ✔ | Non applicable | | ✔ | Non applicable | Non applicable |
+| **Révoquer les autorisations d’application** | Non applicable | Non prise en charge par le fournisseur | | Bientôt disponible | | Non applicable | ✔ | ✔ | Non applicable | | ✔ | Non applicable | Non applicable |
+| **Appliquer des étiquettes Azure Information Protection** | Non applicable | | ✔ | | | Non applicable | ✔ | ✔ | Non applicable | | | Non applicable | Non applicable |
 
 ## <a name="prerequisites"></a>Prérequis
 
@@ -87,14 +87,14 @@ Pour utiliser des connecteurs d’applications, vous devez vérifier que vous av
 |-----|--------------|------|
 | Azure | | Administrateur général |
 | AWS | | Utilisateur récemment créé |
-| Box | Enterprise | Il est fortement recommandé de vous connecter à Box en tant qu’administrateur. Si vous vous connectez en tant que coadministrateur, vous obtiendrez uniquement une visibilité partielle des données. Si vous vous connectez en tant que coadministrateur, sélectionnez toutes les autorisations. |
-| Dropbox | Business/Entreprises | Admin |
+| Box | Entreprise | Il est fortement recommandé de vous connecter à Box en tant qu’administrateur. Si vous vous connectez en tant que coadministrateur, vous obtiendrez uniquement une visibilité partielle des données. Si vous vous connectez en tant que coadministrateur, sélectionnez toutes les autorisations. |
+| Dropbox | Business/Entreprises | Administrateur |
 | GitHub | GitHub Enterprise Cloud | Propriétaire |
 | GCP | | Consultez les [conditions préalables Connect GCP](connect-google-gcp-to-microsoft-cloud-app-security.md#prerequisites) |
 | Espace de travail Google | Google Workspace Business ou Enterprise préféré<br /><br />Google Workspace Enterprise (au minimum) | Super administrateur |
 | Office 365 | | Administrateur général |
-| Okta | Enterprise (pas la version d’essai) | Admin |
-| Salesforce | | Admin |
+| Okta | Enterprise (pas la version d’essai) | Administrateur |
+| Salesforce | | Administrateur |
 | ServiceNow | Eureka et au-dessus | Rôle admin + RestAPI |
 | Webex | | Admin + conformité administrateur |
 | Workday | | Consultez les [conditions préalables Connect](connect-workday-to-microsoft-cloud-app-security.md#prerequisites) de la journée de travail |

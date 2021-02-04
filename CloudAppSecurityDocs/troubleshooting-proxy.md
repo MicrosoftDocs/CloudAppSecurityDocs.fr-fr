@@ -3,12 +3,12 @@ title: Résolution des problèmes de contrôles d’accès et de session
 description: Cet article fournit aux administrateurs des conseils sur la façon d’examiner et de résoudre les contrôles d’accès et de session courants.
 ms.date: 07/15/2020
 ms.topic: conceptual
-ms.openlocfilehash: 6de4bfea4892328871661819411a2be5e8d4b568
-ms.sourcegitcommit: f56a2060b99ab087b8637606a1fb66e5577aded8
+ms.openlocfilehash: 3dc2826de9e46eae43d3d4a2200f0a56ae3ee9da
+ms.sourcegitcommit: 2cb91556060d61fa378047aebf81b71dff5ff19d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98794888"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99551722"
 ---
 # <a name="troubleshooting-access-and-session-controls"></a>Résolution des problèmes de contrôles d’accès et de session
 
@@ -59,7 +59,7 @@ Quand vous configurez en premier lieu des contrôles d’accès et de session Cl
     > - Cloud App Security exploite les protocoles TLS (Transport Layer Security) 1.2 + pour fournir un chiffrement optimal. Les applications clientes natives et les navigateurs qui ne prennent pas en charge TLS 1.2 + ne sont pas accessibles lorsqu’ils sont configurés avec le contrôle de session. Toutefois, les applications SaaS qui utilisent TLS 1.1 ou une version antérieure apparaissent dans le navigateur comme utilisant TLS 1.2+ lorsqu’elles sont configurées avec Cloud App Security.
     > - Alors que les contrôles de session sont créés pour fonctionner avec n’importe quel navigateur sur n’importe quelle plateforme principale sur tout système d’exploitation, nous prenons en charge Microsoft Edge (dernière version), Google Chrome (dernière version), Mozilla Firefox (dernière version) ou Apple Safari (dernière version). L’accès aux applications mobiles et de bureau peut également être bloqué ou autorisé.
 
-    | Browser | Étapes |
+    | Navigateur | Étapes |
     |---|---|
     | Microsoft Internet Explorer | 1. Ouvrez Internet Explorer<br />2. Sélectionnez **Outils**  >  **Options Internet**  >  onglet **avancé**<br />3. sous **sécurité**, sélectionnez **TLS 1,2**<br />4. Sélectionnez **appliquer**, puis cliquez sur **OK** .<br />5. Redémarrez votre navigateur et vérifiez que vous pouvez accéder à l’application |
     | Chrome Microsoft Edge/Edge | 1. Ouvrez la recherche à partir de la barre des tâches et recherchez « Options Internet »<br />2. sélectionner les **Options Internet**<br />3. sous **sécurité**, sélectionnez **TLS 1,2**<br />4. Sélectionnez **appliquer**, puis cliquez sur **OK** .<br />5. Redémarrez votre navigateur et vérifiez que vous pouvez accéder à l’application |
@@ -180,7 +180,7 @@ Le mécanisme d’identification des appareils peut exiger une authentification 
 
 Si vous rencontrez le certificat client qui s’ouvre après l’ouverture d’un nouvel onglet, cela peut être dû à des paramètres masqués dans les **Options Internet**.
 
-| Browser | Étapes |
+| Navigateur | Étapes |
 |---|---|
 | Microsoft Internet Explorer | 1. Ouvrez Internet Explorer<br />2. Sélectionnez **Outils**  >  **Options Internet**  >  onglet **avancé**<br />3. sous **sécurité**, sélectionnez **ne pas demander la sélection d’un certificat client lorsqu’il n’existe qu’un seul certificat**<br />4. Sélectionnez **appliquer**, puis cliquez sur **OK** .<br />5. Redémarrez votre navigateur et vérifiez que vous pouvez accéder à l’application sans les invites supplémentaires |
 | Chrome Microsoft Edge/Edge | 1. Ouvrez la recherche à partir de la barre des tâches et recherchez « Options Internet »<br />2. sélectionner les **Options Internet**<br />3. Sélectionnez **sécurité**, sélectionnez **Intranet local**, puis cliquez sur **personnaliser le niveau**<br />4. sous **divers**  >  ,**ne pas demander la sélection du certificat client lorsqu’il n’existe qu’un seul certificat**, sélectionnez **Désactiver** .<br />5. cliquez sur **OK** pour fermer la boîte de dialogue Personnaliser le niveau<br />6. cliquez sur **appliquer**, puis sélectionnez **OK** pour fermer options Internet.<br />7. Redémarrez votre navigateur et vérifiez que vous pouvez accéder à l’application sans les invites supplémentaires |
@@ -422,7 +422,7 @@ Lors du routage d’un utilisateur via l’Cloud App Security, vous pouvez infor
     | type de message | Détails |
     | --- | --- |
     | Default | **En-tête**:<br />L’accès à [nom de l’application s’affiche ici] est analysé<br />**Corps du message**:<br />Pour améliorer la sécurité, votre organisation autorise l’accès à [le nom de l’application s’affiche ici] en mode analyse. L’accès est disponible uniquement à partir d’un navigateur Web. |
-    | Custom | **En-tête**:<br />Utilisez cette zone pour fournir un titre personnalisé pour informer les utilisateurs qu’ils sont surveillés.<br />**Corps du message**:<br />Utilisez cette zone pour ajouter des informations personnalisées supplémentaires à l’utilisateur, telles que les personnes à contacter avec les questions, et prend en charge les entrées suivantes : texte brut, texte enrichi, liens hypertexte. |
+    | Personnalisé | **En-tête**:<br />Utilisez cette zone pour fournir un titre personnalisé pour informer les utilisateurs qu’ils sont surveillés.<br />**Corps du message**:<br />Utilisez cette zone pour ajouter des informations personnalisées supplémentaires à l’utilisateur, telles que les personnes à contacter avec les questions, et prend en charge les entrées suivantes : texte brut, texte enrichi, liens hypertexte. |
 1. Cliquez sur **Aperçu** pour vérifier la page surveillance de l’utilisateur qui s’affiche avant d’accéder à une application.
 1. Cliquez sur **Enregistrer**.
 
@@ -505,9 +505,9 @@ Les applications de notre page applications proposées marquées comme (prévers
 En guise d’atténuation temporaire, vous pouvez contourner les problèmes de perte de contexte, comme suit :
 
 1. Accédez à une URL où le contexte est perdu.
-1. Prenez note du domaine URL avec suffixe, y compris le suffixe ajouté par Cloud App Security, par exemple `https://www.yammer.com.us2.cas.ms` .
+1. Prenez note du domaine URL avec suffixe, y compris le suffixe ajouté par Cloud App Security, par exemple `https://www.yammer.com.mcas.ms` .
 1. Copiez le chemin d’accès à partir de l’URL d’origine, par exemple, si l’URL spécifique d’origine était `https://www.yammer.com/organization/threads/threadnumber` , copiez `/organization/threads/threadnumber` .
-1. Ajoutez le chemin d’accès copié au domaine avec suffixe, par exemple `https://www.yammer.com.us2.cas.ms/organization/threads/threadnumber` .
+1. Ajoutez le chemin d’accès copié au domaine avec suffixe, par exemple `https://www.yammer.com.mcas.ms/organization/threads/threadnumber` .
 1. Accédez à la nouvelle URL avec suffixe.
 
 <a name="app-additional-considerations"></a>
