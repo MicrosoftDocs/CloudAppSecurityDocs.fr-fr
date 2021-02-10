@@ -1,14 +1,14 @@
 ---
 title: Connecter un jour ouvré à Cloud App Security (version préliminaire)
 description: Cet article fournit des informations sur la connexion de votre application de jour de travail à Cloud App Security à l’aide du connecteur API pour la visibilité et le contrôle de l’utilisation.
-ms.date: 11/10/2020
+ms.date: 02/09/2021
 ms.topic: how-to
-ms.openlocfilehash: 5b9a1e75ab20999d36f18500dfb6037cdf1aeabd
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 482b606f5d21e53f4fe514ced0ebdee509146a93
+ms.sourcegitcommit: 91cd536019579c022b877ab7f0687cef8fb8209d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96312571"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100105376"
 ---
 # <a name="connect-workday-to-microsoft-cloud-app-security"></a>Connecter un jour ouvré à Microsoft Cloud App Security
 
@@ -19,6 +19,9 @@ Cet article fournit des instructions pour connecter Microsoft Cloud App Security
 ## <a name="quick-start"></a>Démarrage rapide
 
 Regardez notre vidéo de démarrage rapide qui montre comment configurer les composants requis et effectuer les étapes de la journée de travail. Une fois que vous avez terminé les étapes de la vidéo, vous pouvez [Ajouter le connecteur de la journée de travail](#add-connector).
+
+> [!NOTE]
+> La vidéo n’indique pas l’étape requise pour la configuration du groupe de sécurité **configuré : client setup-permission System** . Assurez-vous également de le configurer.
 
 <br />
 
@@ -31,6 +34,7 @@ Le compte de jour de travail utilisé pour la connexion à Cloud App Security do
 | Zone fonctionnelle | Stratégie de sécurité du domaine | Stratégie de sécurité des sous-domaines | Autorisations de rapport/tâche | Autorisations d'intégration |
 | --- | --- | --- | --- | --- |
 | Système | Configuration : configuration du locataire – général | Configuration : configuration du client – sécurité | Afficher, modifier | Acquérir, put |
+| Système | Configuration : configuration du locataire – général | Configuration : configuration du client – système | Modifier | Aucun |
 | Système | Administration de la sécurité | | Afficher, modifier | Acquérir, put |
 | Système | Audit du système | | Affichage | Obtenir |
 | Effectifs | Données de travail : personnel | Worker Data: Public Worker Reports | Affichage | Obtenir |
