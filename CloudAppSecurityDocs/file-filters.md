@@ -1,14 +1,14 @@
 ---
 title: Présentation des données et des filtres de fichiers disponibles dans Cloud App Security
 description: Cet article de référence fournit des informations sur les types de fichier et les filtres de fichiers utilisés par Cloud App Security.
-ms.date: 01/11/2021
+ms.date: 02/14/2021
 ms.topic: how-to
-ms.openlocfilehash: 381710d324dcb3e118a729d7c78c852c61351fbd
-ms.sourcegitcommit: 04d8731dce2a3b3b2d10bbfa27e5dc80b0a3e0f6
+ms.openlocfilehash: 106b3455811e0616c1594abc5f364241ea547cf3
+ms.sourcegitcommit: 97bb78d140be3e87ecfa29b7db67e8863f88a520
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98062739"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100514856"
 ---
 # <a name="files"></a>Fichiers
 
@@ -123,6 +123,9 @@ Vous trouverez ci-dessous la liste des filtres de fichiers qui peuvent être app
 - **UO propriétaire** - Incluez ou excluez les propriétaires de fichiers qui appartiennent à certains groupes d’organisation. Par exemple, tous les fichiers publics à l’exception de ceux partagés par EMEA_marketing. S’applique uniquement aux fichiers stockés dans Google Drive.
 
 - **Dossier parent** - Incluez ou excluez des éléments en fonction du dossier parent. Par exemple, tous les fichiers partagés publiquement à l’exception des fichiers contenus dans ce dossier.
+
+    > [!NOTE]
+    > Cloud App Security détecte uniquement les nouveaux dossiers SharePoint et OneDrive après l’exécution d’une activité de fichier.
 
 - En **quarantaine** : le fichier est-il mis en quarantaine par le service, par exemple, affiche tous les fichiers mis en quarantaine.
 
