@@ -1,14 +1,14 @@
 ---
 title: Déployer le contrôle d’application par accès conditionnel Cloud App Security pour les applications Azure AD
 description: Cet article fournit des informations sur le déploiement du proxy inversé du Contrôle d’application par accès conditionnel Microsoft Cloud App Security pour les applications Azure AD.
-ms.date: 01/26/2021
+ms.date: 02/14/2021
 ms.topic: how-to
-ms.openlocfilehash: e4a913c3da802b58180f3611f19ff62c6f0c4ad4
-ms.sourcegitcommit: f56a2060b99ab087b8637606a1fb66e5577aded8
+ms.openlocfilehash: 85a29e73311116de86eb97dda76a982232c939a8
+ms.sourcegitcommit: 63a7e18c91371c91b920e6e09722eeee08bd2920
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98794971"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100515255"
 ---
 # <a name="deploy-conditional-access-app-control-for-featured-apps"></a>Déployer le contrôle d’application par accès conditionnel pour les applications à la une
 
@@ -41,7 +41,9 @@ Procédez comme suit pour configurer les applications proposées pour qu’elles
 
 **Étape 3 : [vérifier que les applications sont configurées pour utiliser les contrôles d’accès et de session](#portal)**
 
-**Étape 4 : [tester le déploiement](#test)**
+**Étape 4 : [activer l’application en vue de son utilisation dans votre organisation](#enable-app)**
+
+**Étape 5 : [tester le déploiement](#test)**
 
 ## <a name="step-1--configure-your-idp-to-work-with-cloud-app-security"></a>Étape 1 : configurer votre IdP pour qu’il fonctionne avec Cloud App Security<a name="conf-idp"></a><a name="add-azure-ad"></a>
 
@@ -75,7 +77,7 @@ Suivez les étapes ci-dessous pour acheminer des sessions d’application d’au
 > Pour obtenir des exemples de configuration des solutions IdP, consultez :
 >
 > - [Configuration de votre IdP PingOne](proxy-idp-pingone.md)
-> - [Configuration de votre AD FS IdP](proxy-idp-adfs.md)
+> - [Configuration de votre IdP AD FS](proxy-idp-adfs.md)
 
 1. Dans Cloud App Security, accédez à **examiner**  >  **applications connectées**  >  **contrôle d’application par accès conditionnel applications**.
 
@@ -167,7 +169,17 @@ Les instructions ci-dessus vous ont aidé à créer une stratégie Cloud App Sec
     >
     >![Demande du Contrôle d’application par accès conditionnel](media/caac-request.png)
 
-## <a name="step-4-test-the-deployment"></a>Étape 4 : tester le déploiement<a name="test"></a>
+## <a name="step-4-enable-the-app-for-use-in-your-organization"></a>Étape 4 : activer l’application en vue de son utilisation dans votre organisation<a name="enable-app"></a>
+
+Une fois que vous êtes prêt à activer l’application en vue de son utilisation dans l’environnement de production de votre organisation, procédez comme suit.
+
+1. Dans Cloud App Security, cliquez sur l’icône Paramètres roue dentée ![ paramètres ](media/settings-icon.png) , puis sélectionnez **contrôle d’application par accès conditionnel**.
+1. Dans la liste des applications, sur la ligne dans laquelle l’application que vous déployez s’affiche, choisissez les trois points à la fin de la ligne, puis choisissez **modifier l’application**.
+1. Sélectionnez **utiliser avec contrôle d’application par accès conditionnel** , puis cliquez sur **Enregistrer**.
+
+    ![Activer le menu contextuel des contrôles de session](media/edit-app-enable-session-controls.png)
+
+## <a name="step-5-test-the-deployment"></a>Étape 5 : tester le déploiement<a name="test"></a>
 
 1. Tout d’abord, déconnectez-vous de toutes les sessions existantes. Ensuite, essayez de vous connecter à chaque application qui a été déployée avec succès. Connectez-vous à l’aide d’un utilisateur qui correspond à la stratégie configurée dans Azure AD ou pour une application SAML configurée avec votre fournisseur d’identité.
 
