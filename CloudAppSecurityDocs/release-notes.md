@@ -1,14 +1,14 @@
 ---
 title: Nouveautés dans Cloud App Security
 description: Cet article est mis à jour fréquemment pour vous informer des nouveautés de la dernière version de Cloud App Security.
-ms.date: 01/10/2021
+ms.date: 02/7/2021
 ms.topic: overview
-ms.openlocfilehash: 891e01d44a8a76c3f3194ad817445690b80def8c
-ms.sourcegitcommit: 0768aa1992819e2651a14a731f79e178fdececc5
+ms.openlocfilehash: 394e0fe3a6aa7287a9b60fbd15d26f999009a9eb
+ms.sourcegitcommit: e3c960256e951ac2349ce92a6320326af8435bb7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98114715"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100568114"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Nouveautés dans Microsoft Cloud App Security
 
@@ -21,6 +21,19 @@ Flux RSS : Recevez une notification quand cette page est mise à jour en copian
 > [!IMPORTANT]
 >
 > Les noms des produits Microsoft de protection contre les menaces changent. Vous trouverez [ici](https://www.microsoft.com/security/blog/?p=91813) plus d’informations sur ce sujet et sur les autres mises à jour. Nous utiliserons les nouveaux noms dans les prochaines versions.
+
+## <a name="cloud-app-security-release-192-193-and-194"></a>Cloud App Security versions 192, 193 et 194
+
+Date de publication : 7 février 2021
+
+- **Mises à jour de la page Stratégies**  
+Nous avons mis à jour la page **Stratégies** en ajoutant un onglet pour chaque catégorie de stratégie. Nous avons également ajouté un onglet **Toutes les stratégies** pour vous donner une liste complète de toutes vos stratégies. Pour plus d’informations sur la catégorisation des stratégies, consultez [Types de stratégie](control-cloud-apps-with-policies.md#policy-types).
+
+- **Amélioration de l’exportation des applications OAuth Office 365**  
+Nous avons amélioré l’exportation des activités des applications OAuth Office 365 dans un fichier CSV avec l’*URL de redirection* des applications OAuth. Pour plus d’informations sur l’exportation des activités des applications OAuth, consultez [Audit des applications OAuth](manage-app-permissions.md#oauth-app-auditing).
+
+- **Mises à jour de l’interface du portail**  
+Dans les prochains mois, l’interface utilisateur de Cloud App Security va être mise à jour pour offrir une expérience plus cohérente sur les portails de sécurité Microsoft 365. [En savoir plus](https://techcommunity.microsoft.com/t5/microsoft-security-and/microsoft-cloud-app-security-user-interface-updates/ba-p/2083113)
 
 ## <a name="cloud-app-security-release-189-190-and-191"></a>Cloud App Security versions 189, 190 et 191
 
