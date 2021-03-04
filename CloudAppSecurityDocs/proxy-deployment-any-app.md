@@ -1,14 +1,14 @@
 ---
 title: Déployer des contrôle d’application par accès conditionnel Cloud App Security pour toutes les applications
 description: Cet article fournit des informations sur le déploiement de la Microsoft Cloud App Security contrôle d’application par accès conditionnel les fonctionnalités de proxy inverse pour toutes les applications.
-ms.date: 01/26/2021
+ms.date: 02/18/2021
 ms.topic: how-to
-ms.openlocfilehash: ac99dee3b145a8d77c4eaaba8c5624a572aec86b
-ms.sourcegitcommit: f56a2060b99ab087b8637606a1fb66e5577aded8
+ms.openlocfilehash: 2657bb5226ca0a0b33620a2d036535b42f1d8e09
+ms.sourcegitcommit: 859594eee0b0bdfab86930f91c994ce609f8debe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98794986"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101829872"
 ---
 # <a name="onboard-and-deploy-conditional-access-app-control-for-any-app"></a>Intégrer et déployer le Contrôle d’application par accès conditionnel pour tous les types d’applications
 
@@ -83,8 +83,9 @@ Suivez les étapes ci-dessous pour acheminer des sessions d’application d’au
 > [!NOTE]
 > Pour obtenir des exemples de configuration des solutions IdP, consultez :
 >
-> - [Configuration de votre IdP PingOne](proxy-idp-pingone.md)
-> - [Configuration de votre AD FS IdP](proxy-idp-adfs.md)
+> - [Configurer votre IdP PingOne](proxy-idp-pingone.md)
+> - [Configurer votre AD FS IdP](proxy-idp-adfs.md)
+> - [Configurer votre IdP Okta](proxy-idp-okta.md)
 
 1. Dans Cloud App Security, accédez à **examiner**  >  **applications connectées**  >  **contrôle d’application par accès conditionnel applications**.
 
@@ -130,7 +131,8 @@ Suivez les étapes ci-dessous pour acheminer des sessions d’application d’au
     > [!NOTE]
     > Les paramètres se trouvent généralement dans la page Paramètres de l’application personnalisée du portail IdP.
 
-    1. Dans le champ URL d’authentification unique, entrez l’URL d’authentification unique que vous avez notée précédemment.
+    1. Recommandations Créez une sauvegarde de vos paramètres actuels.
+    1. Remplacez la valeur du champ URL d’authentification unique par le Cloud App Security URL d’authentification unique SAML que vous avez notée précédemment.
         > [!NOTE]
         > Certains fournisseurs peuvent faire référence à l’URL de l’authentification unique en tant qu' *URL de réponse*.
     1. Ajoutez les attributs et les valeurs que vous avez notés précédemment aux propriétés de l’application.
@@ -153,7 +155,9 @@ Suivez les étapes ci-dessous pour acheminer des sessions d’application d’au
     1. Dans le champ URL d’authentification unique, entrez l’Cloud App Security URL d’authentification unique que vous avez notée précédemment.
     1. Téléchargez le certificat SAML Cloud App Security que vous avez téléchargé précédemment.
     > [!NOTE]
-    > Une fois vos paramètres enregistrés, toutes les demandes de connexion associées à cette application sont acheminées via contrôle d’application par accès conditionnel.
+    >
+    > - Une fois vos paramètres enregistrés, toutes les demandes de connexion associées à cette application sont acheminées via contrôle d’application par accès conditionnel.
+    > - Le certificat SAML Cloud App Security est valide pendant un an. Après son expiration, un nouveau certificat doit être généré.
 
 ## <a name="step-2-configure-the-users-that-will-deploy-the-app"></a>Étape 2 : configurer les utilisateurs qui déploieront l’application<a name="conf-users"></a>
 
@@ -167,7 +171,7 @@ Suivez les étapes ci-dessous pour acheminer des sessions d’application d’au
 
 ## <a name="step-3-configure-the-app-that-you-are-deploying"></a>Étape 3 : configurer l’application que vous déployez<a name="conf-app"></a>
 
-Accédez à l’application que vous déployez. La page que vous voyez varie selon que l’application est reconnue ou non. Effectuez l’une des actions suivantes :
+Accédez à l’application que vous déployez. La page que vous voyez varie selon que l’application est reconnue ou non. Effectuez l’une des opérations suivantes :
 
 | État de l’application | Description | Étapes |
 | --- | --- | --- |

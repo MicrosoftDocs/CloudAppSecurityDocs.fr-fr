@@ -1,14 +1,14 @@
 ---
 title: Déployer le contrôle d’application par accès conditionnel Cloud App Security pour les applications Azure AD
 description: Cet article fournit des informations sur le déploiement du proxy inversé du Contrôle d’application par accès conditionnel Microsoft Cloud App Security pour les applications Azure AD.
-ms.date: 02/14/2021
+ms.date: 02/18/2021
 ms.topic: how-to
-ms.openlocfilehash: 85a29e73311116de86eb97dda76a982232c939a8
-ms.sourcegitcommit: 63a7e18c91371c91b920e6e09722eeee08bd2920
+ms.openlocfilehash: a22ffdcf7f6d04c837e88cbca9de8af8a46216f4
+ms.sourcegitcommit: 859594eee0b0bdfab86930f91c994ce609f8debe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100515255"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101829889"
 ---
 # <a name="deploy-conditional-access-app-control-for-featured-apps"></a>Déployer le contrôle d’application par accès conditionnel pour les applications à la une
 
@@ -76,8 +76,9 @@ Suivez les étapes ci-dessous pour acheminer des sessions d’application d’au
 > [!NOTE]
 > Pour obtenir des exemples de configuration des solutions IdP, consultez :
 >
-> - [Configuration de votre IdP PingOne](proxy-idp-pingone.md)
-> - [Configuration de votre IdP AD FS](proxy-idp-adfs.md)
+> - [Configurer votre IdP PingOne](proxy-idp-pingone.md)
+> - [Configurer votre AD FS IdP](proxy-idp-adfs.md)
+> - [Configurer votre IdP Okta](proxy-idp-okta.md)
 
 1. Dans Cloud App Security, accédez à **examiner**  >  **applications connectées**  >  **contrôle d’application par accès conditionnel applications**.
 
@@ -142,10 +143,14 @@ Suivez les étapes ci-dessous pour acheminer des sessions d’application d’au
 
 1. Dans le portail de votre application, sur les paramètres d’authentification unique, procédez comme suit :
     1. Recommandations Créez une sauvegarde de vos paramètres actuels.
-    1. Dans le champ URL d’authentification unique, entrez l’URL d’authentification unique que vous avez notée précédemment.
-    1. Téléchargez le certificat Cloud App Security SAML que vous avez noté précédemment.
+    1. Remplacez la valeur du champ **URL de connexion du fournisseur d’identité** par la Cloud App Security URL d’authentification unique SAML que vous avez notée précédemment.
+    1. Téléchargez le certificat SAML Cloud App Security que vous avez téléchargé précédemment.
+    1. Cliquez sur **Enregistrer**.
+
     > [!NOTE]
-    > Une fois vos paramètres enregistrés, toutes les demandes de connexion associées à cette application sont acheminées via contrôle d’application par accès conditionnel.
+    >
+    > - Une fois vos paramètres enregistrés, toutes les demandes de connexion associées à cette application sont acheminées via contrôle d’application par accès conditionnel.
+    > - Le certificat SAML Cloud App Security est valide pendant un an. Après son expiration, un nouveau certificat doit être généré.
 
 ## <a name="step-2-sign-in-to-each-app-using-a-user-scoped-to-the-policy"></a>Étape 2 : se connecter à chaque application à l’aide d’un utilisateur dont l’étendue est limitée à la stratégie<a name="sign-in-scoped"></a>
 
