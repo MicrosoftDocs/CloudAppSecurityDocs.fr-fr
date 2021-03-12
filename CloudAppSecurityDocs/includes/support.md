@@ -1,5 +1,5 @@
 ---
-title: Fichier include
+title: Fichier Include
 description: Fichier include
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security

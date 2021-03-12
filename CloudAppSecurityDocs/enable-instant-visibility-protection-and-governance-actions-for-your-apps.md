@@ -1,14 +1,14 @@
 ---
 title: Connecter des applications pour bénéficier d’une visibilité et d’un contrôle
 description: Cet article décrit le processus de connexion d’applications à des applications dans le cloud de votre organisation avec des connecteurs d’API.
-ms.date: 02/04/2021
+ms.date: 03/10/2021
 ms.topic: how-to
-ms.openlocfilehash: 77343c172002accb7eaf7e657e518c5f0e0aaa10
-ms.sourcegitcommit: 2cb91556060d61fa378047aebf81b71dff5ff19d
+ms.openlocfilehash: 5ca5b4f624f40739716ec9aaa6ead592672b8ae9
+ms.sourcegitcommit: fc893308c35a4bf1d2d9a0c332e4ed974fde3a0e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99551707"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102603574"
 ---
 # <a name="connect-apps"></a>Connecter des applications
 
@@ -25,15 +25,16 @@ Cloud App Security prend en charge plusieurs instances de la même application c
 > [!NOTE]
 > Multi-instance n’est pas pris en charge pour Office 365 et Azure.
 
-## <a name="how-it-works"></a>Fonctionnement
+## <a name="how-it-works"></a>Comment ça marche
 
 Cloud App Security est déployé avec des privilèges d’administrateur système qui autorisent un accès complet à tous les objets de votre environnement.
 
 Le flux de connecteur d’applications est le suivant :
 
 1. Cloud App Security analyse et enregistre les autorisations d’authentification.
-2. Cloud App Security demande la liste d’utilisateurs. La première fois que la demande est effectuée, l’analyse peut prendre un certain temps. Une fois l’analyse des utilisateurs terminée, Cloud App Security passe aux activités et aux fichiers. Dès que l’analyse démarre, certaines activités sont disponibles dans Cloud App Security.
-3. Une fois la demande de liste d’utilisateurs effectuée, Cloud App Security analyse périodiquement les utilisateurs, les groupes, les activités et les fichiers. Toutes les activités sont disponibles après la première analyse complète.
+
+1. Cloud App Security demande la liste d’utilisateurs. La première fois que la demande est effectuée, l’analyse peut prendre un certain temps. Une fois l’analyse des utilisateurs terminée, Cloud App Security passe aux activités et aux fichiers. Dès que l’analyse démarre, certaines activités sont disponibles dans Cloud App Security.
+1. Une fois la demande de liste d’utilisateurs effectuée, Cloud App Security analyse périodiquement les utilisateurs, les groupes, les activités et les fichiers. Toutes les activités sont disponibles après la première analyse complète.
 
 Cette connexion peut prendre du temps, en fonction de la taille du locataire, du nombre d’utilisateurs ainsi que de la taille et du nombre de fichiers à analyser.
 
@@ -58,14 +59,14 @@ Le tableau suivant répertorie, par application cloud, les fonctionnalités pris
 | | AWS | Azure| Box | Dropbox | GitHub | GCP | Espace de travail Google | Office 365 | Okta | ServiceNow | Salesforce | Webex | Workday |
 | - | - | - | - | - | - | - | - | - | - | - | - | - | - |
 | **Énumérer les comptes** | ✔ | ✔ | ✔ | ✔ | ✔ | Sujet de la connexion à l’espace de travail Google | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-| **Liste des groupes** | ✔ | ✔ | ✔ | ✔ | ✔ | Sujet de la connexion à l’espace de travail Google | ✔ | ✔ | ✔ | ✔ | ✔ | | Non prise en charge par le fournisseur |
+| **Liste des groupes** | | ✔ | ✔ | ✔ | | Sujet de la connexion à l’espace de travail Google | ✔ | ✔ | | ✔ | ✔ | | Non prise en charge par le fournisseur |
 | **Liste des privilèges** | | | ✔ | ✔ | ✔ | Sujet de la connexion à l’espace de travail Google | ✔ | ✔ | Non prise en charge par le fournisseur | ✔ | ✔ | ✔ | Non prise en charge par le fournisseur |
 | **Gouvernance des utilisateurs** | | | ✔ | Bientôt disponible | | Sujet de la connexion à l’espace de travail Google | ✔ | ✔ | | | ✔ | | Non prise en charge par le fournisseur |
 | **Activité de connexion** | ✔ | ✔ | ✔ | ✔ | | Sujet de la connexion à l’espace de travail Google | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 | **Activité de l’utilisateur** | Non applicable | | ✔ | ✔ | ✔ | ✔ | ✔ - nécessite Google Business ou Entreprises | ✔ | ✔ | Partielle | Prise en charge avec Salesforce Shield | ✔ | ✔ |
 | **Activité d’administration** | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | Partielle | ✔ | ✔ | Non prise en charge par le fournisseur |
 | **DLP-analyse périodique** | | | ✔ | ✔ | | Non applicable | ✔ | ✔ | Non applicable | ✔ | ✔ | ✔ | Non prise en charge par le fournisseur |
-| **DLP : analyse en temps quasi réel** | | | ✔ | | | Non applicable | ✔-nécessite Google Business Enterprise | ✔ | Non applicable | | | ✔ | Non prise en charge par le fournisseur |
+| **DLP : analyse en temps quasi réel** | ✔ | | ✔ | ✔ | | Non applicable | ✔-nécessite Google Business Enterprise | ✔ | Non applicable | ✔ | ✔ | ✔ | Non prise en charge par le fournisseur |
 | **Contrôle partagé** | ✔ | | ✔ | ✔ | | Non applicable | ✔ | ✔ | Non applicable | Non applicable | | ✔ | Non prise en charge par le fournisseur |
 | **Gouvernance des fichiers** | ✔ | | ✔ | ✔ | | Non applicable | ✔ | ✔ | Non applicable | | ✔ | | Non prise en charge par le fournisseur |
 | **Voir les autorisations d’application** | Non applicable | | Non prise en charge par le fournisseur | Bientôt disponible | ✔ | Non applicable | ✔ | ✔ | Non applicable | | ✔ | Non applicable | Non applicable |
@@ -87,7 +88,7 @@ Pour utiliser des connecteurs d’applications, vous devez vérifier que vous av
 |-----|--------------|------|
 | Azure | | Administrateur général |
 | AWS | | Utilisateur récemment créé |
-| Box | Entreprise | Il est fortement recommandé de vous connecter à Box en tant qu’administrateur. Si vous vous connectez en tant que coadministrateur, vous obtiendrez uniquement une visibilité partielle des données. Si vous vous connectez en tant que coadministrateur, sélectionnez toutes les autorisations. |
+| Box | Enterprise | Il est fortement recommandé de vous connecter à Box en tant qu’administrateur. Si vous vous connectez en tant que coadministrateur, vous obtiendrez uniquement une visibilité partielle des données. Si vous vous connectez en tant que coadministrateur, sélectionnez toutes les autorisations. |
 | Dropbox | Business/Entreprises | Administrateur |
 | GitHub | GitHub Enterprise Cloud | Propriétaire |
 | GCP | | Consultez les [conditions préalables Connect GCP](connect-google-gcp-to-microsoft-cloud-app-security.md#prerequisites) |
